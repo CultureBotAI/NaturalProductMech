@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-8c91e163c7
+identifier: CHEBI:18165
 label: isopenicillin N
 chemical_structure:
   smiles: '[H][C@]12SC(C)(C)[C@@H](N1C(=O)[C@H]2NC(=O)CCC[C@H](N)C(O)=O)C(O)=O'
@@ -18,6 +18,12 @@ np_classification:
   class_results:
   - Penicillins
   is_glycoside: false
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:18165
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 xrefs:
@@ -57,12 +63,15 @@ source_concepts:
   source_label: isopenicillin N
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-8c91e163c7
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:18165
+  source_label: isopenicillin N
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-ae2516370f
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:02:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

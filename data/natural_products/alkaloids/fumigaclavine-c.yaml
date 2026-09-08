@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-5e0cf24dae
+identifier: CHEBI:64673
 label: fumigaclavine C
 chemical_structure:
   smiles: C[C@H]1CN(C)[C@@H]2CC3=C(NC4=CC=CC([C@H]2[C@H]1OC(C)=O)=C34)C(C)(C)C=C
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000811
 np_pathway: ALKALOIDS
+definition: An ergot alkaloid produced by the fungus <em>Aspergillus fumigatus</em>
+  that is ergoline which is substituted by a 2-methylbut-3-en-2-yl group at position
+  2, methyl groups at the 6 and 8β positions, and by an acetoxy group at the 9β position.
+definition_source: CHEBI:64673
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -60,12 +64,15 @@ source_concepts:
   source_label: fumigaclavine C
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-5e0cf24dae
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:64673
+  source_label: fumigaclavine C
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-83c74d83a9
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:02:01Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

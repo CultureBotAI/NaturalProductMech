@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-dd3bbbc20c
+identifier: CHEBI:133763
 label: YWA1
 chemical_structure:
   smiles: CC1(O)CC(=O)C2=C(O)C3=C(O)C=C(O)C=C3C=C2O1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002175
 np_pathway: POLYKETIDES
+definition: A heptaketide that is 2,3-dihydro-4<em>H</em>-benzo[<em>g</em>]chromen-4-one
+  bearing a methyl substituent at position 2 and four hydroxy substituents at positions
+  2, 5, 6 and 8.
+definition_source: CHEBI:133763
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +22,23 @@ np_classification:
   class_results:
   - Naphthalenes and derivatives
   is_glycoside: false
+occurrences:
+- taxon_label: Aspergillus fumigatus
+  source: CHEBI
+  evidence:
+  - reference: PMID:23557488
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:133763
+  taxon_id: NCBITaxon:746128
+  taxon_source: NCBITaxon
+- taxon_label: Aspergillus nidulans
+  source: CHEBI
+  evidence:
+  - reference: PMID:11251292
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:133763
+  taxon_id: NCBITaxon:162425
+  taxon_source: NCBITaxon
 bgc_class:
 - PKS
 xrefs:
@@ -58,12 +79,15 @@ source_concepts:
   source_label: YWA1
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-dd3bbbc20c
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:133763
+  source_label: YWA1
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-bf7ebc857f
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:02:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

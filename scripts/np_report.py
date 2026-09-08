@@ -126,6 +126,10 @@ def render(summary: dict[str, Any]) -> str:
     for key, count in summary["by_curation_status"].items():
         lines.append(f"  {key:<34} {count:>6}")
     lines.append("")
+    lines.append("by grounding status:")
+    for key, count in summary["by_grounding_status"].items():
+        lines.append(f"  {key:<34} {count:>6}")
+    lines.append("")
     lines.append("field coverage (records carrying at least one item):")
     for key, count in summary["field_coverage"].items():
         lines.append(f"  {key:<34} {count:>6}")

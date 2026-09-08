@@ -314,3 +314,90 @@ def test_paper_internal_names_are_detected_narrowly():
     assert not seed.PAPER_INTERNAL_NAME.match("BAA")
     assert not seed.PAPER_INTERNAL_NAME.match("erythromycin A")
     assert not seed.PAPER_INTERNAL_NAME.match("A-74528")
+
+
+# --- ChEBI grounding and occurrences -----------------------------------------
+
+MIBIG_ROW = {
+    "mibig_accession": "BGC0000055", "entry_version": "3", "entry_status": "active",
+    "entry_quality": "questionable", "entry_completeness": "unknown",
+    "compound_name": "erythromycin", "compound_index": "1",
+    "smiles": "CCO", "standard_inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+    "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "stereo_complete": "true",
+    "compound_classes": "", "database_ids": "", "taxon_id": "NCBITaxon:1836",
+    "taxon_label": "Saccharopolyspora erythraea", "bgc_classes": "PKS", "bgc_subclasses": "",
+    "genome_accession": "", "locus_from": "0", "locus_to": "0",
+    "locus_evidence_methods": "Knock-out studies",
+    "producer_evidence_basis": "BGC_CHARACTERIZED",
+    "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+    "primary_reference": "PMID:1", "reference_basis": "ENTRY",
+}
+CHEBI_ROW = {
+    "chebi_id": "CHEBI:42355", "name": "erythromycin A", "definition": "An erythromycin that ...",
+    "stars": "3", "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "smiles": "CCO",
+}
+
+
+def test_a_matching_chebi_entry_grounds_the_record():
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "chebi_structures": [CHEBI_ROW],
+    })[0]
+    assert doc["identifier"] == "CHEBI:42355"
+    assert doc["grounding_status"] == "EXACT"
+    assert doc["definition_source"] == "CHEBI:42355"
+    # ChEBI's name joins the candidates rather than overriding them, so the
+    # specificity rule still decides: the congener beats the family name.
+    assert doc["label"] == "erythromycin A"
+    assert "erythromycin" in [s["value"] for s in doc["synonyms"]]
+
+
+def test_two_chebi_entries_sharing_a_structure_are_not_resolved_by_the_seeder():
+    """ChEBI keeps a compound and its zwitterion separate on purpose. Picking
+    one would overrule the people who own the identifiers."""
+    second = dict(CHEBI_ROW, chebi_id="CHEBI:42356", name="erythromycin A zwitterion")
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "chebi_structures": [CHEBI_ROW, second],
+    })[0]
+    assert doc["grounding_status"] == "REVIEW_NEEDED"
+    assert doc["identifier"].startswith("naturalproductmech:")
+    assert "CHEBI:42355" in doc["grounding_notes"] and "CHEBI:42356" in doc["grounding_notes"]
+
+
+def test_no_chebi_match_keeps_the_record_minted():
+    doc = seed.build_records({"mibig_compounds": [MIBIG_ROW], "chebi_structures": []})[0]
+    assert doc["grounding_status"] == "MINTED"
+
+
+def test_a_chebi_origin_becomes_an_occurrence_and_never_a_producer():
+    """The distinction the corpus exists to keep. ChEBI records where a
+    compound was FOUND; it is not asserting that the organism makes it."""
+    origin = {
+        "chebi_id": "CHEBI:42355", "species_text": "Homo sapiens",
+        "species_accession": "9606", "component_text": "urine", "strain_text": "",
+        "source_accession": "12194923", "comments": "",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "chebi_structures": [CHEBI_ROW],
+        "chebi_origins": [origin],
+    })[0]
+    occurrence = doc["occurrences"][0]
+    assert occurrence["taxon_id"] == "NCBITaxon:9606"
+    assert occurrence["evidence"][0]["reference"] == "PMID:12194923"
+    # The producer list must still contain only the MIBiG organism.
+    assert [p["taxon_label"] for p in doc["producer_organisms"]] == ["Saccharopolyspora erythraea"]
+
+
+def test_a_shared_structure_links_to_the_sibling_corpus_rather_than_copying_it():
+    sibling = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "identifier": "CHEBI:42355",
+        "label": "erythromycin A", "slug": "erythromycin-a", "corpus_commit": "c5cfe06ce7a3ff",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "antibioticmech_inchikeys": [sibling],
+    })[0]
+    link = doc["related_records"][0]
+    assert link["corpus"] == "AntibioticMech"
+    assert link["relation"] == "SAME_STRUCTURE"
+    assert link["basis"] == "SAME_INCHIKEY"
+    # Nothing from the sibling's mechanism layer is copied across.
+    assert "molecular_targets" not in doc

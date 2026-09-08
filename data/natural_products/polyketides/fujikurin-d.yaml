@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-bd79d3f315
+identifier: CHEBI:156547
 label: fujikurin D
 chemical_structure:
   smiles: CCC(C)C(\O)=C1/C(=O)OC(C)C(C)C1=O
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001305
 np_pathway: POLYKETIDES
+definition: A pyrandione that is dihydro-2<em>H</em>-pyran-2,4(3<em>H</em>)-dione
+  in which the hydrogens at positions 3, 5 and 6 are substituted by 1-hydroxy-2-methylbutylidene,
+  methyl, and methyl groups, respectively. It is a natural product isolated from the
+  fungus <em>Fusarium fujikuroi</em>.
+definition_source: CHEBI:156547
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -17,6 +22,16 @@ np_classification:
   - Cyclic polyketides
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Fusarium fujikuroi
+  source: CHEBI
+  evidence:
+  - reference: PMID:26192387
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156547
+  taxon_id: NCBITaxon:5127
+  taxon_source: NCBITaxon
+  detection_context: IMI58289
 bgc_class:
 - PKS
 xrefs:
@@ -57,12 +72,15 @@ source_concepts:
   source_label: fujikurin D
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-bd79d3f315
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:156547
+  source_label: fujikurin D
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-ac3dd02664
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:01:59Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

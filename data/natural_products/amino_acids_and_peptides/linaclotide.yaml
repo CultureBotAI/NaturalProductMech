@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-f9e87679c6
+identifier: CHEBI:68551
 label: linaclotide
 chemical_structure:
   smiles: C[C@H]1C(=O)N[C@H]2CSSC[C@H]3C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@@H](CSSC[C@H](NC(=O)CNC(=O)[C@@H](NC2=O)[C@@H](C)O)C(=O)N[C@@H](CC4=CC=C(C=C4)O)C(=O)O)C(=O)N[C@@H](CSSC[C@@H](C(=O)N3)N)C(=O)N[C@H](C(=O)N5CCC[C@H]5C(=O)N1)CC(=O)N)CC6=CC=C(C=C6)O)CCC(=O)O
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000621
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+definition: 'A fourteen-membered heterodetic cyclic peptide consisting of Cys, Cys,
+  Glu, Tyr, Cys, Cys, Asn, Pro, Ala, Cys, Thr, Gly, Cys and Tyr residues joined in
+  sequence and cyclised by three disulfide bonds: between Cys<small><sup>1</small></sup>
+  and Cys<small><sup>6</small></sup>, between Cys<small><sup>2</small></sup> and Cys<small><sup>10</small></sup>,
+  and between Cys<small><sup>5</small></sup> and Cys<small><sup>13</small></sup>.
+  Used for treatment of irritable bowel syndrome accompanied by constipation.'
+definition_source: CHEBI:68551
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -55,12 +62,15 @@ source_concepts:
   source_label: linaclotide
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-f9e87679c6
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:68551
+  source_label: linaclotide
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-0643e3ae16
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:02:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

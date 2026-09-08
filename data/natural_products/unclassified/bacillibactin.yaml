@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-758d76eb17
+identifier: CHEBI:31432
 label: bacillibactin
 chemical_structure:
   smiles: C[C@@H]1[C@@H](C(=O)O[C@@H]([C@@H](C(=O)O[C@@H]([C@@H](C(=O)O1)NC(=O)CNC(=O)C2=C(C(=CC=C2)O)O)C)NC(=O)CNC(=O)C3=C(C(=CC=C3)O)O)C)NC(=O)CNC(=O)C4=C(C(=CC=C4)O)O
@@ -8,6 +8,16 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001185
 np_pathway: UNCLASSIFIED
+definition: A crown compound that is enterobactin in which the <em>pro</em>-<i>R</i>
+  hydrogens at positions 2, 6 and 10 of the trilactone backbone are replaced by methyl
+  groups, and in which a glycine spacer separates the trilactone backbone from each
+  of the catecholamide arms. It is the endogenous siderophore of <em>Bacillus subtilis</em>,
+  used for the acquisition of iron.
+definition_source: CHEBI:31432
+synonyms:
+- value: corynebactin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001185
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -17,6 +27,15 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Bacillus subtilis
+  source: CHEBI
+  evidence:
+  - reference: PMID:11112781
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:31432
+  taxon_id: NCBITaxon:1423
+  taxon_source: NCBITaxon
 bgc_class:
 - NRPS
 xrefs:
@@ -90,9 +109,12 @@ source_concepts:
   source_label: bacillibactin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-ec0783c5ab
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:31432
+  source_label: corynebactin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-c34a2d945f
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -102,7 +124,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:02:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

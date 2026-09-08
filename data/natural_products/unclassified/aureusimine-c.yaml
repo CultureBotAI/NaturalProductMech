@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-fc28cebcd5
+identifier: CHEBI:167321
 label: aureusimine C
 chemical_structure:
   smiles: CC(C)CC1=CN=C(C(=O)N1)C(C)C
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002287
 np_pathway: UNCLASSIFIED
+definition: A member of the class of pyrazinones that is pyrazin-2(1<em>H</em>)-one
+  substituted by isopropyl and isobutyl groups at positions 3 and 6, respectively.
+  It is a natural product found in <em>Staphylococcus aureus</em>.
+definition_source: CHEBI:167321
 synonyms:
 - value: leuvalin
   synonym_type: RELATED_SYNONYM
@@ -24,6 +28,15 @@ np_classification:
   class_results:
   - Pyrazine and Piperazine alkaloids
   is_glycoside: false
+occurrences:
+- taxon_label: Staphylococcus aureus
+  source: CHEBI
+  evidence:
+  - reference: PMID:20851341
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:167321
+  taxon_id: NCBITaxon:1280
+  taxon_source: NCBITaxon
 bgc_class:
 - NRPS
 xrefs:
@@ -99,9 +112,12 @@ source_concepts:
   source_label: aureusimine C
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-9797d0d567
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:167321
+  source_label: leuvalin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-c48d79f055
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -111,7 +127,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:02:04Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

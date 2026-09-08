@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-dd58ae1331
+identifier: CHEBI:152052
 label: agnestin A
 chemical_structure:
   smiles: CC1=CC2=C(C(=O)C3=C(C=CC=C3O)O2)[C@@H](C(=O)O)[C@H]1O
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002062
 np_pathway: POLYKETIDES
+definition: A member of the class of xanthones that is 1,2-dihydro-9<em>H</em>-xanthen-9-one
+  substituted by a carboxy group at position 1<i>R</i>, hydroxy groups at positions
+  2<i>R</i> and 8, and a methyl group at position 3. It has been isolated from the
+  fungus <em>Paecilomyces variotti</em>.
+definition_source: CHEBI:152052
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -17,6 +22,16 @@ np_classification:
   - Chromanes
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Paecilomyces variotti
+  source: CHEBI
+  evidence:
+  - reference: PMID:30746079
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:152052
+  taxon_id: NCBITaxon:264951
+  taxon_source: NCBITaxon
+  detection_context: K5103
 bgc_class:
 - PKS
 xrefs:
@@ -59,12 +74,15 @@ source_concepts:
   source_label: agnestin A
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-dd58ae1331
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:152052
+  source_label: agnestin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-c4939208bc
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:02:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

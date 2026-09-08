@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-e6dba536d2
+identifier: CHEBI:66676
 label: marineosin A
 chemical_structure:
   smiles: '[H][C@]12C[C@H](C)O[C@]3(N=C(C[C@H]3OC)C3=CC=CN3)[C@]1([H])C1=CC=C(CCCCCCC2)N1'
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000091
 np_pathway: ALKALOIDS
+definition: A macrocycle isolated from a marine sediment-derived actinomycete, <em>Streptomyces</em>
+  sp. It exhibits cytotoxicity against colon tumour cell lines.
+definition_source: CHEBI:66676
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +21,15 @@ np_classification:
   class_results:
   - Prodigiosins
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:19007176
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:66676
+  taxon_id: NCBITaxon:1931
+  taxon_source: NCBITaxon
 bgc_class:
 - PKS
 xrefs:
@@ -55,12 +67,15 @@ source_concepts:
   source_label: marineosin A
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-e6dba536d2
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:66676
+  source_label: marineosin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-e45616303b
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:57Z'
+- timestamp: '2026-09-08T06:01:59Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

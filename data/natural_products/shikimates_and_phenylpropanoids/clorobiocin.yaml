@@ -18,6 +18,12 @@ np_classification:
   class_results:
   - Simple coumarins
   is_glycoside: true
+related_records:
+- corpus: AntibioticMech
+  identifier: antibioticmech:aro-e44e701df2
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - SACCHARIDE
 - OTHER
@@ -65,11 +71,11 @@ source_concepts:
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-619480541f
 grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
+  a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:01:58Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

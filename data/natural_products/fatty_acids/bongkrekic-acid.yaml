@@ -1,13 +1,23 @@
-identifier: naturalproductmech:mibig-5240e25646
+identifier: CHEBI:77742
 label: bongkrekic acid
 chemical_structure:
-  smiles: C[C@@H](C/C=C/CC/C=C/C=C\C[C@H](/C(=C\C=C(/C)\C(=O)O)/C)OC)/C=C/C(=C\C(=O)O)\CC(=O)O
-  standard_inchi: InChI=1S/C28H38O7/c1-21(15-18-24(19-26(29)30)20-27(31)32)13-11-9-7-5-6-8-10-12-14-25(35-4)22(2)16-17-23(3)28(33)34/h6,8-12,15-19,21,25H,5,7,13-14,20H2,1-4H3,(H,29,30)(H,31,32)(H,33,34)/b8-6+,11-9+,12-10-,18-15+,22-16-,23-17+,24-19?/t21-,25+/m0/s1
-  standard_inchi_key: SHCXABJSXUACKU-SWUBLTBSSA-N
+  smiles: C[C@@H](C/C=C/CC/C=C/C=C\C[C@H](/C(=C\C=C(/C)\C(=O)O)/C)OC)/C=C/C(=C\C(=O)O)/CC(=O)O
+  standard_inchi: InChI=1S/C28H38O7/c1-21(15-18-24(19-26(29)30)20-27(31)32)13-11-9-7-5-6-8-10-12-14-25(35-4)22(2)16-17-23(3)28(33)34/h6,8-12,15-19,21,25H,5,7,13-14,20H2,1-4H3,(H,29,30)(H,31,32)(H,33,34)/b8-6+,11-9+,12-10-,18-15+,22-16-,23-17+,24-19+/t21-,25+/m0/s1
+  standard_inchi_key: SHCXABJSXUACKU-WUTQZGRKSA-N
   stereo_complete: true
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000173
 np_pathway: FATTY_ACIDS
+definition: A tricarboxylic acid that is docosa-2,4,8,10,14,18,20-heptaenedioic acid
+  substituted at positions 2 ,5 and 17 by methyl groups, at positions 6 by a methoxy
+  group and at position 20 by a carboxymethyl group. It is produced by the bacterium
+  <em>Burkholderia gladioli</em> and implicated in outbreaks of food-borne illness
+  involving coconut and corn-based products in Indonesia and China.
+definition_source: CHEBI:77742
+synonyms:
+- value: isobongkrekic acid
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000173
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,8 +28,20 @@ np_classification:
   class_results:
   - Branched fatty acids
   is_glycoside: false
+occurrences:
+- taxon_label: Burkholderia gladioli
+  source: CHEBI
+  evidence:
+  - reference: PMID:28105575
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:77742
+  taxon_id: NCBITaxon:28095
+  taxon_source: NCBITaxon
+  notes: Species also known as Pseudomonas cocovenenans.
 bgc_class:
 - PKS
+xrefs:
+- npatlas:NPA017560
 producer_organisms:
 - taxon_id: NCBITaxon:28095
   taxon_label: Burkholderia gladioli
@@ -54,15 +76,18 @@ biosynthetic_gene_clusters:
 source_concepts:
 - source: MIBIG
   source_id: BGC0000173
-  source_label: bongkrekic acid
+  source_label: isobongkrekic acid
   source_version: '5'
-  minted_identifier: naturalproductmech:mibig-5240e25646
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+  minted_identifier: naturalproductmech:mibig-f5b31a31a1
+- source: CHEBI
+  source_id: CHEBI:77742
+  source_label: bongkrekic acid
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-4eef03471f
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:02:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

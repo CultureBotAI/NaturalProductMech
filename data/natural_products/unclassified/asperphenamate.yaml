@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-d36d1fbc84
+identifier: CHEBI:145105
 label: asperphenamate
 chemical_structure:
   smiles: C1=CC=C(C=C1)C[C@@H](COC(=O)[C@H](CC2=CC=CC=C2)NC(=O)C3=CC=CC=C3)NC(=O)C4=CC=CC=C4
@@ -8,6 +8,12 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001517
 np_pathway: UNCLASSIFIED
+definition: A carboxylic ester resulting from the formal condensation of the carboxy
+  group of <em>N</em>-benzoyl-<small>L</small>-phenylalanine with the hydroxy group
+  of <em>N</em>-benzoyl-<small>L</small>-phenylalaninol. A metabolite found in several
+  <em>Pencillium</em> and <em>Aspergillus</em> species, as well as in plants as a
+  product of endophytic fungi.
+definition_source: CHEBI:145105
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -15,6 +21,52 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Aspergillus flavipes
+  source: CHEBI
+  evidence:
+  - reference: PMID:875642
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:145105
+  taxon_id: NCBITaxon:41900
+  taxon_source: NCBITaxon
+  detection_context: ATCC 11013
+  notes: cell suspension culture
+- taxon_label: Ficus mucuso
+  source: CHEBI
+  evidence:
+  - reference: PMID:21139276
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:145105
+  taxon_id: NCBITaxon:309328
+  taxon_source: NCBITaxon
+  notes: bark Isolated from stem bark.
+- taxon_label: Penicillium brevicompactum
+  source: CHEBI
+  evidence:
+  - reference: PMID:16345939
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:145105
+  taxon_id: NCBITaxon:5074
+  taxon_source: NCBITaxon
+- taxon_label: Penicillium spathulatum
+  source: CHEBI
+  evidence:
+  - reference: PMID:27399232
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:145105
+  taxon_id: NCBITaxon:1263194
+  taxon_source: NCBITaxon
+  detection_context: B35
+- taxon_label: Piptadenia gonoacantha
+  source: CHEBI
+  evidence:
+  - reference: PMID:21562684
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:145105
+  taxon_id: NCBITaxon:397634
+  taxon_source: NCBITaxon
+  notes: Found in branches and leaves.
 bgc_class:
 - NRPS
 producer_organisms:
@@ -54,12 +106,15 @@ source_concepts:
   source_label: asperphenamate
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-d36d1fbc84
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:145105
+  source_label: asperphenamate
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-261dab5bad
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:01:57Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-05c13f3c58
+identifier: CHEBI:34907
 label: Paxilline
 chemical_structure:
   smiles: CC(C)(O)[C@H]1O[C@H]2CC[C@@]3(C)[C@@](O)(CC[C@H]4CC5=C([NH]C6=CC=CC=C56)[C@@]43C)C2=CC1=O
@@ -8,6 +8,15 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001082
 np_pathway: UNCLASSIFIED
+definition: An indole diterpene alkaloid with formula C<small><sub>27</sub></small>H<small><sub>33</sub></small>NO<small><sub>4</sub></small>
+  isolated from <em>Penicillium paxilli</em>. It is a potent inhibitor of large conductance
+  Ca<small><sub>2</sub></small><small><sup>+</small></sup>- and voltage-activated
+  K<small><sup>+</small></sup> (BK)-type channels.
+definition_source: CHEBI:34907
+synonyms:
+- value: paxilline
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001082
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +28,32 @@ np_classification:
   class_results:
   - Indole-Diterpenoid alkaloids (Penitrems)
   is_glycoside: false
+occurrences:
+- taxon_label: Aspergillus oryzae
+  source: CHEBI
+  evidence:
+  - reference: PMID:23311903
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:34907
+  taxon_id: NCBITaxon:5062
+  taxon_source: NCBITaxon
+- taxon_label: Penicillium paxilli
+  source: CHEBI
+  evidence:
+  - reference: PMID:17428785
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:34907
+  taxon_id: NCBITaxon:70109
+  taxon_source: NCBITaxon
+- taxon_label: Penicillium shearii
+  source: CHEBI
+  evidence:
+  - reference: PMID:24894186
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:34907
+  taxon_id: NCBITaxon:904690
+  taxon_source: NCBITaxon
+  notes: Species also known as Eupenicillium shearii.
 bgc_class:
 - TERPENE
 compound_classes:
@@ -65,12 +100,15 @@ source_concepts:
   source_label: Paxilline
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-05c13f3c58
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:34907
+  source_label: paxilline
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-9cd2565ff3
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:54Z'
+- timestamp: '2026-09-08T06:01:56Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-ff0efc67b3
+identifier: CHEBI:232090
 label: peramine
 chemical_structure:
   smiles: CN1C(=CN2C=CC=C2C1=O)CCCN=C(N)N
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002164
 np_pathway: ALKALOIDS
+definition: A pyrrolopyrazine that is pyrrolo[1,2-<em>a</em>]pyrazin-1(2<em>H</em>)-one
+  substituted by methyl and 3-carbamimidamidopropyl groups at positions 2 and 3, respectively.
+  It is isolated from perennial ryegrass infected with the endophytic fungus <em>Acremonium
+  lolia</em> and exhibits antifeedant activity.
+definition_source: CHEBI:232090
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -16,6 +21,16 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Epichloe festucae var. lolii
+  source: CHEBI
+  evidence:
+  - reference: PMID:24263837
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:232090
+  taxon_id: NCBITaxon:73839
+  taxon_source: NCBITaxon
+  notes: Species also known as Acremonium lolii.
 bgc_class:
 - NRPS
 xrefs:
@@ -55,12 +70,15 @@ source_concepts:
   source_label: peramine
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-ff0efc67b3
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:232090
+  source_label: peramine
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-6f44207634
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:01:58Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

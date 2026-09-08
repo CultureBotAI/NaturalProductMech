@@ -1,0 +1,80 @@
+identifier: CHEBI:64921
+label: 3,4-dihydroxy-5-polyprenylbenzoic acid
+chemical_structure:
+  smiles: C/C(C)=C/CC1=C(O)C(O)=CC(C(O)=O)=C1
+  standard_inchi: InChI=1S/C12H14O4/c1-7(2)3-4-8-5-9(12(15)16)6-10(13)11(8)14/h3,5-6,13-14H,4H2,1-2H3,(H,15,16)
+  standard_inchi_key: NMAKQSXJWYBYRF-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002290
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+definition: Benzoic acid substituted with hydroxy groups at C-3 and -4 and with a
+  polyprenyl chain of unspecified length at C-5.
+definition_source: CHEBI:64921
+synonyms:
+- value: compound 3
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002290
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Phenolic acids (C6-C1)
+  class_results:
+  - Shikimic acids and derivatives
+  - Simple phenolic acids
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1896107
+  taxon_label: Biscogniauxia sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002290
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:32364293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002290 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002290
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1896107
+  organism_label: Biscogniauxia sp.
+  evidence:
+  - reference: PMID:32364293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002290 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT109335.1
+  locus_from: 1
+  locus_to: 37984
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002290
+  source_label: compound 3
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-9a848b6184
+- source: CHEBI
+  source_id: CHEBI:64921
+  source_label: 3,4-dihydroxy-5-polyprenylbenzoic acid
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-0306b3c287
+grounding_status: EXACT
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T06:02:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

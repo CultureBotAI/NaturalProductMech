@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-fc76948e5b
+identifier: CHEBI:31856
 label: mithramycin
 chemical_structure:
   smiles: C[C@@H]1[C@H]([C@@H](C[C@@H](O1)O[C@@H]2C[C@@H](O[C@@H]([C@H]2O)C)OC3=CC4=CC5=C(C(=O)[C@H]([C@@H](C5)[C@@H](C(=O)[C@H]([C@@H](C)O)O)OC)O[C@H]6C[C@H]([C@@H]([C@H](O6)C)O)O[C@H]7C[C@H]([C@H]([C@H](O7)C)O)O[C@H]8C[C@]([C@@H]([C@H](O8)C)O)(C)O)C(=C4C(=C3C)O)O)O)O
@@ -16,6 +16,21 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: true
+occurrences:
+- taxon_label: Streptomyces plicatus
+  source: CHEBI
+  evidence:
+  - reference: 10.1016/S1054-3589(08)60218-5
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:31856
+  taxon_id: NCBITaxon:1922
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:31856
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 - SACCHARIDE
@@ -57,12 +72,15 @@ source_concepts:
   source_label: mithramycin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-fc76948e5b
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:31856
+  source_label: mithramycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-cac1e8587c
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:54Z'
+- timestamp: '2026-09-08T06:01:57Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

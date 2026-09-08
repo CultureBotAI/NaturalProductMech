@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-8fe2278f37
+identifier: CHEBI:84366
 label: caldoniamide A
 chemical_structure:
   smiles: COC1=C2N(C3=C1C=CC=C3)[C@]1(O)C(=O)N(C)C(=O)[C@]1(O)C1=C2NC2=C1C=C(Cl)C=C2
@@ -8,6 +8,14 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001334
 np_pathway: ALKALOIDS
+definition: An organic heterohexacyclic compound that is cladoniamide B in which the
+  chlorine attached to the methoxy-bearing indole moiety is replaced by a hydrogen.
+  It has been isolated from the culture broth of <em>Streptomyces uncialis</em>.
+definition_source: CHEBI:84366
+synonyms:
+- value: cladoniamide A
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001334
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +26,15 @@ np_classification:
   class_results:
   - Carbazole alkaloids
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces uncialis
+  source: CHEBI
+  evidence:
+  - reference: PMID:18646774
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:84366
+  taxon_id: NCBITaxon:1048205
+  taxon_source: NCBITaxon
 bgc_class:
 - OTHER
 xrefs:
@@ -61,12 +78,15 @@ source_concepts:
   source_label: caldoniamide A
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-8fe2278f37
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:84366
+  source_label: cladoniamide A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-9166100511
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:01:57Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

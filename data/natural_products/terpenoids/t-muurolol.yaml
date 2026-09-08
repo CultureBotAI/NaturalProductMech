@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-405f61fa70
+identifier: CHEBI:63704
 label: (+)-T-muurolol
 chemical_structure:
   smiles: CC1=C[C@@H]2[C@H](CC[C@@]([C@@H]2CC1)(C)O)C(C)C
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000675
 np_pathway: TERPENOIDS
+definition: A cadinane sesquiterpenoid that consists of 4-isopropyl-1,6-dimethyl-1,2,3,4,4a,7,8,8a-octahydronaphthalene
+  having a hydroxy substituent at position 1 and (1<i>R</i>,4<i>R</i>,4a<i>S</i>,8a<i>R</i>)-configuration.
+definition_source: CHEBI:63704
+synonyms:
+- value: (+)-Τ-muurolol
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000675
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -57,12 +64,15 @@ source_concepts:
   source_label: (+)-T-muurolol
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-405f61fa70
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:63704
+  source_label: (+)-Τ-muurolol
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-6466e43f26
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:02:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

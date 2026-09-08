@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-1825ff5ef7
+identifier: CHEBI:27953
 label: physostigmine
 chemical_structure:
   smiles: '[H][C@]12N(C)CC[C@@]1(C)C1=C(C=CC(OC(=O)NC)=C1)N2C'
@@ -63,12 +63,15 @@ source_concepts:
   source_label: physostigmine
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-1825ff5ef7
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:27953
+  source_label: physostigmine
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-5a5e8360d7
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:02:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-c4d57f78ac
+identifier: CHEBI:31550
 label: epothilone B
 chemical_structure:
   smiles: C[C@H]1CCC[C@@]2(C)O[C@H]2C[C@H](OC(=O)C[C@H](O)C(C)(C)C(=O)[C@H](C)[C@H]1O)C(\C)=C\C1=CSC(C)=N1
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000988
 np_pathway: UNCLASSIFIED
+definition: An epithilone that is epithilone D in which the double bond in the macrocyclic
+  ring has been oxidised to the corresponding epoxide (the <i>S</i>,<i>S</i> stereoisomer).
+definition_source: CHEBI:31550
 synonyms:
 - value: epothilone
   synonym_type: RELATED_SYNONYM
@@ -156,9 +159,12 @@ source_concepts:
   source_label: epothilone
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-27a5259b48
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:31550
+  source_label: epothilone B
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-bd6499fa9a
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -168,7 +174,7 @@ discussions:
     BGC0000990, BGC0000991. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:02:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

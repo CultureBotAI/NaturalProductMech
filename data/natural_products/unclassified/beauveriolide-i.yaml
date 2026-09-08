@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-f57b463988
+identifier: CHEBI:180490
 label: beauveriolide I
 chemical_structure:
   smiles: CCCC[C@H](C)[C@@H]1CC(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@@H](C(=O)O1)CC(C)C)C)CC2=CC=CC=C2
@@ -8,6 +8,12 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002259
 np_pathway: UNCLASSIFIED
+definition: 'A cyclodepsipeptide with formula C<small><sub>27</sub></small>H<small><sub>41</sub></small>N<small><sub>3</sub></small>O<small><sub>5</sub></small>.
+  It was originally isolated from the fungus <em>Beauveria sp.</em> FO-6979 during
+  a screening program for inhibitors of lipid droplet accumulation in murine macrophages.
+  It is an inhibitor of acyl-CoA: cholesterol acyltransferase (ACAT) and effective
+  at reducing atherogenic lesions of the artery and heart in mouse models.'
+definition_source: CHEBI:180490
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -20,6 +26,25 @@ np_classification:
   - Cyclic peptides
   - Depsipeptides
   is_glycoside: false
+occurrences:
+- taxon_label: Beauveria sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:10092189
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:180490
+  taxon_id: NCBITaxon:1891652
+  taxon_source: NCBITaxon
+  detection_context: FO-6979
+  notes: cell suspension culture
+- taxon_label: Cordyceps militaris
+  source: CHEBI
+  evidence:
+  - reference: PMID:31926180
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:180490
+  taxon_id: NCBITaxon:73501
+  taxon_source: NCBITaxon
 bgc_class:
 - PKS
 - NRPS
@@ -64,12 +89,15 @@ source_concepts:
   source_label: beauveriolide I
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-f57b463988
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:180490
+  source_label: beauveriolide I
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-10473c9106
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:03Z'
+- timestamp: '2026-09-08T06:02:05Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

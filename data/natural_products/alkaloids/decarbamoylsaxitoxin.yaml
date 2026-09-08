@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-e73445ef38
+identifier: CHEBI:133919
 label: decarbamoylsaxitoxin
 chemical_structure:
   smiles: C1CN2C(=N[C@H]([C@H]3[C@]2(C1(O)O)N=C(N3)N)CO)N
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000188
 np_pathway: ALKALOIDS
+definition: A pyrrolopurine that is 2,6-diiminodecahydropyrrolo[1,2-<em>c</em>]purine
+  carrying an additional hydroxymethyl substituent at position 4 as well as two hydroxy
+  substituents at position 10. A toxin that is isolated from marine dinoflagellates
+  and cyanobacteria and is known to cause paralytic shellfish poisoning.
+definition_source: CHEBI:133919
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +23,79 @@ np_classification:
   class_results:
   - Saxitoxins
   is_glycoside: false
+occurrences:
+- taxon_label: Acanthocardia tuberculata
+  source: CHEBI
+  evidence:
+  - reference: PMID:16192070
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:133919
+  taxon_id: NCBITaxon:385555
+  taxon_source: NCBITaxon
+- taxon_label: Alexandrium tamarense
+  source: CHEBI
+  evidence:
+  - reference: PMID:16544882
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:133919
+  taxon_id: NCBITaxon:2926
+  taxon_source: NCBITaxon
+- taxon_label: Aphanizomenon gracile
+  source: CHEBI
+  evidence:
+  - reference: PMID:20048055
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:133919
+  taxon_id: NCBITaxon:54296
+  taxon_source: NCBITaxon
+- taxon_label: Apis cerana
+  source: CHEBI
+  evidence:
+  - reference: MTBLS379
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:133919
+  taxon_id: NCBITaxon:7461
+  taxon_source: NCBITaxon
+- taxon_label: Aulacomya ater
+  source: CHEBI
+  evidence:
+  - reference: PMID:15019474
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:133919
+  taxon_id: NCBITaxon:373637
+  taxon_source: NCBITaxon
+- taxon_label: Cylindrospermopsis raciborskii
+  source: CHEBI
+  evidence:
+  - reference: PMID:12740803
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:133919
+  taxon_id: NCBITaxon:77022
+  taxon_source: NCBITaxon
+- taxon_label: Gymnodinium catenatum
+  source: CHEBI
+  evidence:
+  - reference: PMID:12924931
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:133919
+  taxon_id: NCBITaxon:39447
+  taxon_source: NCBITaxon
+- taxon_label: Microseira wollei
+  source: CHEBI
+  evidence:
+  - reference: PMID:22960450
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:133919
+  taxon_id: NCBITaxon:467598
+  taxon_source: NCBITaxon
+- taxon_label: Pao turgidus
+  source: CHEBI
+  evidence:
+  - reference: PMID:17996918
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:133919
+  taxon_id: NCBITaxon:1220761
+  taxon_source: NCBITaxon
 bgc_class:
 - OTHER
 xrefs:
@@ -55,12 +133,15 @@ source_concepts:
   source_label: decarbamoylsaxitoxin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-e73445ef38
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:133919
+  source_label: decarbamoylsaxitoxin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-25e352fde6
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:02:04Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

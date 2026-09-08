@@ -268,6 +268,25 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         for row in inventories.get("npclassifier") or []
     }
 
+    # ChEBI, keyed by structure. A key matching more than one 3-star entry is
+    # NOT a resolution failure: ChEBI keeps a compound and its zwitterion as
+    # separate entries sharing an InChIKey, deliberately. Picking one would
+    # overrule the people who own the identifiers, so the record stays minted
+    # and says the identity needs adjudicating.
+    chebi_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in inventories.get("chebi_structures") or []:
+        chebi_by_key[row["standard_inchi_key"]].append(row)
+
+    origins_by_chebi: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in inventories.get("chebi_origins") or []:
+        origins_by_chebi[row["chebi_id"]].append(row)
+
+    # The sibling corpus, pinned. A compound in both keeps its antimicrobial
+    # mechanism there and is linked from here, never copied.
+    sibling_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in inventories.get("antibioticmech_inchikeys") or []:
+        sibling_by_key[row["standard_inchi_key"]].append(row)
+
     records: list[dict[str, Any]] = []
     for key, rows in sorted(group_by_structure(mibig_rows).items()):
         # Prefer the row with the strongest producer evidence as the record's
@@ -279,9 +298,38 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             r["mibig_accession"],
         ))
         lead = rows[0]
-        label, synonyms = choose_label([r["compound_name"] for r in rows])
+        minted = mint_identifier("MIBIG", lead["mibig_accession"] + ":" + lead["compound_index"])
+
+        chebi_matches = chebi_by_key.get(key) or []
+        name_candidates = [r["compound_name"] for r in rows]
+        if len(chebi_matches) == 1:
+            # ChEBI is the identity authority. Its name joins the candidates
+            # rather than overriding them, so the same specificity rule decides.
+            name_candidates.append(chebi_matches[0]["name"])
+        label, synonyms = choose_label(name_candidates)
         label = label or key
-        identifier = mint_identifier("MIBIG", lead["mibig_accession"] + ":" + lead["compound_index"])
+
+        if len(chebi_matches) == 1:
+            identifier = chebi_matches[0]["chebi_id"]
+            grounding = "EXACT"
+            grounding_notes = ""
+        elif len(chebi_matches) > 1:
+            identifier = minted
+            grounding = "REVIEW_NEEDED"
+            grounding_notes = (
+                "This structure matches more than one 3-star ChEBI entry: "
+                + ", ".join(m["chebi_id"] for m in chebi_matches)
+                + ". ChEBI keeps such entries separate on purpose — a compound and "
+                "its zwitterion share an InChIKey — so the identity is not picked "
+                "here. A curator decides which term this record is."
+            )
+        else:
+            identifier = minted
+            grounding = "MINTED"
+            grounding_notes = (
+                "No 3-star ChEBI entry shares this structure, so the record keeps a "
+                "content-hashed identifier."
+            )
 
         classified = classification.get(key)
         pathway_results = [
@@ -302,6 +350,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             },
             "np_pathway": pathway,
         }
+        if len(chebi_matches) == 1 and chebi_matches[0]["definition"]:
+            doc["definition"] = chebi_matches[0]["definition"]
+            doc["definition_source"] = chebi_matches[0]["chebi_id"]
         if synonyms:
             doc["synonyms"] = [{"value": value, "synonym_type": "RELATED_SYNONYM",
                                 "source": "mibig:" + lead["mibig_accession"]}
@@ -388,6 +439,53 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 cluster["link_evidence_basis"] = row["cluster_link_evidence_basis"]
             clusters.append(cluster)
 
+        for match in chebi_matches:
+            source_concepts.append({
+                "source": "CHEBI",
+                "source_id": match["chebi_id"],
+                "source_label": match["name"],
+                "source_version": f"{match['stars']}-star",
+                "minted_identifier": mint_identifier("CHEBI", match["chebi_id"]),
+            })
+
+        # ChEBI's compound_origins records where a compound was FOUND. That is
+        # an occurrence and never a producer claim: ChEBI is not asserting that
+        # the organism biosynthesizes it, and the seeder does not promote.
+        occurrences: list[dict[str, Any]] = []
+        for match in chebi_matches:
+            for origin in origins_by_chebi.get(match["chebi_id"]) or []:
+                occurrence: dict[str, Any] = {
+                    "taxon_label": origin["species_text"],
+                    "source": "CHEBI",
+                    "evidence": [{
+                        "reference": f"PMID:{origin['source_accession']}"
+                        if origin["source_accession"].isdigit() else origin["source_accession"],
+                        "evidence_type": "DATABASE_ASSERTION",
+                        "notes": f"ChEBI compound origin for {match['chebi_id']}",
+                    }],
+                }
+                if origin["species_accession"].isdigit():
+                    occurrence["taxon_id"] = f"NCBITaxon:{origin['species_accession']}"
+                    occurrence["taxon_source"] = "NCBITaxon"
+                if origin["strain_text"]:
+                    occurrence["detection_context"] = origin["strain_text"]
+                context = " ".join(x for x in (origin["component_text"], origin["comments"]) if x)
+                if context:
+                    occurrence["notes"] = context[:400]
+                occurrences.append(occurrence)
+        if occurrences:
+            doc["occurrences"] = occurrences
+
+        links = [{
+            "corpus": "AntibioticMech",
+            "identifier": sibling["identifier"],
+            "relation": "SAME_STRUCTURE",
+            "basis": "SAME_INCHIKEY",
+            "source_version": sibling["corpus_commit"][:12],
+        } for sibling in sibling_by_key.get(key) or []]
+        if links:
+            doc["related_records"] = links
+
         if bgc_classes:
             doc["bgc_class"] = bgc_classes
         if compound_classes:
@@ -400,11 +498,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             doc["biosynthetic_gene_clusters"] = clusters
 
         doc["source_concepts"] = source_concepts
-        doc["grounding_status"] = "MINTED"
-        doc["grounding_notes"] = (
-            "Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG "
-            "compounds carry no ChEBI cross-reference."
-        )
+        doc["grounding_status"] = grounding
+        if grounding_notes:
+            doc["grounding_notes"] = grounding_notes
         doc["curation_status"] = "SEEDED"
 
         discussions: list[dict[str, Any]] = []

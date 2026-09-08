@@ -45,6 +45,33 @@ npclassifier:
   # Pinned per release; recorded on every record in `np_classification`.
   model_version: null
 
+chebi:
+  name: ChEBI
+  description: >-
+    Chemical Entities of Biological Interest. Identity, structures, definitions,
+    synonyms, and the specialized-metabolite roles that admit a compound.
+  flat_files_base: https://ftp.ebi.ac.uk/pub/databases/chebi/flat_files/
+  homepage: https://www.ebi.ac.uk/chebi/
+  license: CC BY 4.0
+  # 3-star entries are manually curated; 2-star entries are automatically
+  # imported and are NOT seeded, because an automatic import is exactly where an
+  # unreviewed role assertion enters.
+  min_stars: 3
+  # Which roles admit a compound to this corpus. The bare `metabolite` roles are
+  # deliberately absent: glucose and ATP are bacterial metabolites.
+  role_allow_list: conf/np_roles.tsv
+
+antibioticmech:
+  name: AntibioticMech
+  description: >-
+    The sibling Mech corpus, pinned at a commit. Supplies the InChIKey
+    inventory that computes cross-corpus links, so a compound present in both
+    keeps its antimicrobial mechanism there and is linked from here rather than
+    duplicated.
+  homepage: https://github.com/CultureBotAI/AntibioticMech
+  license: CC BY 4.0
+  fills: related_records
+
 # ---------------------------------------------------------------------------
 # Scope
 # ---------------------------------------------------------------------------

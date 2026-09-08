@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-15d5566506
+identifier: CHEBI:63468
 label: tirucalla
 chemical_structure:
   smiles: C[C@@H](CCC=C(C)C)[C@@H]1CC[C@]2([C@]1(CC[C@H]3C2=CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001314
 np_pathway: TERPENOIDS
+definition: A  tirucallane triterpenoid that is tirucalla-7,24-diene substituted by
+  a β-hydroxy group at position 3.
+definition_source: CHEBI:63468
+synonyms:
+- value: tirucalla-7,24-dien-3β-ol
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001314
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -57,12 +64,15 @@ source_concepts:
   source_label: tirucalla
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-15d5566506
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:63468
+  source_label: tirucalla-7,24-dien-3β-ol
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-7fd591e38f
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:01:57Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

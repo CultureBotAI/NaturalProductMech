@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-531f7c1998
+identifier: CHEBI:50432
 label: putrebactin
 chemical_structure:
   smiles: C1CCN(C(=O)CCC(=O)NCCCCN(C(=O)CCC(=O)NC1)O)O
@@ -59,12 +59,15 @@ source_concepts:
   source_label: putrebactin
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-531f7c1998
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:50432
+  source_label: putrebactin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-bc0a2405e5
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:02:01Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

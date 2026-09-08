@@ -1,0 +1,180 @@
+identifier: CHEBI:138511
+label: piericidin A
+chemical_structure:
+  smiles: C/C=C(\C)/[C@@H]([C@H](C)/C=C(\C)/C=C/C/C(=C/CC1=C(C(=O)C(=C(N1)OC)OC)C)/C)O
+  standard_inchi: InChI=1S/C25H37NO4/c1-9-18(4)22(27)19(5)15-17(3)12-10-11-16(2)13-14-21-20(6)23(28)24(29-7)25(26-21)30-8/h9-10,12-13,15,19,22,27H,11,14H2,1-8H3,(H,26,28)/b12-10+,16-13+,17-15+,18-9+/t19-,22+/m1/s1
+  standard_inchi_key: BBLGCDSLCDDALX-LKGBESRRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001169
+np_pathway: POLYKETIDES
+definition: A member of the class of monohydroxypyridines that acts as an irreversible
+  mitochondrial Complex I inhibitor that strongly associates with ubiquinone binding
+  sites in both mitochondrial and bacterial forms of NADH:ubiquinone oxidoreductase
+definition_source: CHEBI:138511
+synonyms:
+- value: piericidin A1
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001169
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Meroterpenoids
+  class_results: []
+  is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces piomogenes
+  source: CHEBI
+  evidence:
+  - reference: PMID:22365607
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:138511
+  taxon_id: NCBITaxon:285508
+  taxon_source: NCBITaxon
+- taxon_label: Streptomyces sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:17721005
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:138511
+  taxon_id: NCBITaxon:1931
+  taxon_source: NCBITaxon
+  detection_context: ML55
+- taxon_label: Streptomyces xanthocidicus
+  source: CHEBI
+  evidence:
+  - reference: PMID:26856451
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:138511
+  taxon_id: NCBITaxon:83382
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:138511
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6437838
+- npatlas:NPA05338
+producer_organisms:
+- taxon_id: NCBITaxon:2878388
+  taxon_label: Streptomyces sp. SCSIO 03032
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001169
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
+  evidence:
+  - reference: PMID:24409990
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001169 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:285508
+  taxon_label: Streptomyces piomogenus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000124
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22365607
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000124 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:371632
+  taxon_label: Candidatus Streptomyces philanthi bv. triangulum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001742
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29444867
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001742 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001169
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2878388
+  organism_label: Streptomyces sp. SCSIO 03032
+  evidence:
+  - reference: PMID:24409990
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001169 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF874660.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0000124
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:285508
+  organism_label: Streptomyces piomogenus
+  evidence:
+  - reference: PMID:22365607
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000124 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HQ840721.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001742
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:371632
+  organism_label: Candidatus Streptomyces philanthi bv. triangulum
+  evidence:
+  - reference: PMID:29444867
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001742 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KX098584.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001169
+  source_label: piericidin A1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7cfe1341a6
+- source: MIBIG
+  source_id: BGC0000124
+  source_label: piericidin A1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1a88408d1f
+- source: MIBIG
+  source_id: BGC0001742
+  source_label: piericidin A1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f5b4612851
+- source: CHEBI
+  source_id: CHEBI:138511
+  source_label: piericidin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-513272a1e5
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000124, BGC0001169,
+    BGC0001742. Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T06:01:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

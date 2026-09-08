@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-33e897ed3f
+identifier: CHEBI:9519
 label: thebaine
 chemical_structure:
   smiles: CN1CC[C@]23[C@@H]4C(=CC=C2[C@H]1CC5=C3C(=C(C=C5)OC)O4)OC
@@ -56,12 +56,15 @@ source_concepts:
   source_label: thebaine
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-33e897ed3f
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:9519
+  source_label: thebaine
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-a0ba6b6539
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:01:58Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-15ed0bd790
+identifier: CHEBI:189095
 label: conidiogenone
 chemical_structure:
   smiles: C[C@H]1[C@@H](CC(=O)[C@]2([C@@]13C[C@]4(CCC([C@H]4[C@@H]3CC2)(C)C)C)C)O
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002320
 np_pathway: TERPENOIDS
+definition: A diterpenoid with formula C<small><sub>20</sub></small>H<small><sub>32</sub></small>O<small><sub>2</sub></small>.
+  It is isolated from <em>Penicillium cyclopium</em> and exhibits potent conidiation
+  inducing activity.
+definition_source: CHEBI:189095
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +22,15 @@ np_classification:
   class_results:
   - Cyclopiane diterpenoids
   is_glycoside: false
+occurrences:
+- taxon_label: Penicillium cyclopium
+  source: CHEBI
+  evidence:
+  - reference: 10.1016/S0040-4039(02)01493-4
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:189095
+  taxon_id: NCBITaxon:60167
+  taxon_source: NCBITaxon
 bgc_class:
 - TERPENE
 xrefs:
@@ -60,12 +73,15 @@ source_concepts:
   source_label: conidiogenone
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-15ed0bd790
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:189095
+  source_label: conidiogenone
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-3d5ca63698
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:02:04Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

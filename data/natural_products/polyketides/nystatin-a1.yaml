@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-aad972ff85
+identifier: CHEBI:473992
 label: nystatin A1
 chemical_structure:
   smiles: C[C@H]1/C=C/C=C/CC/C=C/C=C/C=C/C=C/[C@@H](C[C@H]2[C@@H]([C@H](C[C@](O2)(C[C@H]([C@@H](CC[C@H](C[C@H](C[C@H](CC(=O)O[C@H]([C@@H]([C@@H]1O)C)C)O)O)O)O)O)O)O)C(=O)O)O[C@H]3[C@H]([C@H]([C@@H]([C@H](O3)C)O)N)O
@@ -8,6 +8,15 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000115
 np_pathway: POLYKETIDES
+definition: A polyene macrolide antibiotic; part of the nystatin complex produced
+  by several <em>Streptomyces</em> species. It is an antifungal antibiotic used for
+  the treatment of topical fungal infections caused by a broad spectrum of fungal
+  pathogens comprising yeast-like and filamentous species.
+definition_source: CHEBI:473992
+synonyms:
+- value: nystatin A<small><sub>1</sub></small>
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000115
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +27,46 @@ np_classification:
   class_results:
   - Polyene macrolides
   is_glycoside: true
+occurrences:
+- taxon_label: Amycolatopsis aidingensis
+  source: CHEBI
+  evidence:
+  - reference: PMID:34938275
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:473992
+  taxon_id: NCBITaxon:2842453
+  taxon_source: NCBITaxon
+  notes: Species also known as Amycolatopsis sp. YIM 96748.
+- taxon_label: Streptomyces ahygroscopicus
+  source: CHEBI
+  evidence:
+  - reference: PMID:24231162
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:473992
+  taxon_id: NCBITaxon:387846
+  taxon_source: NCBITaxon
+- taxon_label: Streptomyces noursei
+  source: CHEBI
+  evidence:
+  - reference: 10.1016/S0040-4039(01)96531-1
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:473992
+  taxon_id: NCBITaxon:1971
+  taxon_source: NCBITaxon
+- taxon_label: Streptomyces sp. HSG2
+  source: CHEBI
+  evidence:
+  - reference: PMID:33932153
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:473992
+  taxon_id: NCBITaxon:2797167
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:473992
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 - SACCHARIDE
@@ -59,12 +108,15 @@ source_concepts:
   source_label: nystatin A1
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-aad972ff85
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:473992
+  source_label: nystatin A<small><sub>1</sub></small>
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-63c98789be
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:02:04Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

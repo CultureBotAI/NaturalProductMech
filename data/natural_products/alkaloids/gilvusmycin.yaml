@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-5ff8415702
+identifier: CHEBI:65964
 label: gilvusmycin
 chemical_structure:
   smiles: COC1=C(O)C2=C(CCN2C(C)=O)C2=C1NC(=C2)C(=O)N1CCC2=C1C(O)=C(OC)C1=C2C=C(N1)C(=O)N1CC2CC22C1=CC(=O)C1=C2C(C)=CN1
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001607
 np_pathway: ALKALOIDS
+definition: An antibiotic isolated from the culture broth of <em>Streptomyces</em>
+  sp. QM16 with potent cytotoxic activity against the human tumor cells.
+definition_source: CHEBI:65964
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +21,22 @@ np_classification:
   class_results:
   - Corynanthe type
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:10348041
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:65964
+  taxon_id: NCBITaxon:1931
+  taxon_source: NCBITaxon
+  detection_context: QM16
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:65964
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - OTHER
 xrefs:
@@ -57,12 +76,15 @@ source_concepts:
   source_label: gilvusmycin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-5ff8415702
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:65964
+  source_label: gilvusmycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-e81afd22e1
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:02:05Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

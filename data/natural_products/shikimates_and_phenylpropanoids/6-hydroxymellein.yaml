@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-813ae8f714
+identifier: CHEBI:16368
 label: 6-hydroxymellein
 chemical_structure:
   smiles: C[C@@H]1CC2=CC(=CC(=C2C(=O)O1)O)O
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001489
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+definition: An isochromane that is mellein bearing an additional hydroxy substituent
+  at the 6-position.
+definition_source: CHEBI:16368
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -59,12 +62,15 @@ source_concepts:
   source_label: 6-hydroxymellein
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-813ae8f714
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:16368
+  source_label: 6-hydroxymellein
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-2201afdd5c
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:01:57Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

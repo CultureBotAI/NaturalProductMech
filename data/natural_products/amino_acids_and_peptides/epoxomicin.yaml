@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-d19c75b6ee
+identifier: CHEBI:42265
 label: epoxomicin
 chemical_structure:
   smiles: CC[C@H](C)[C@@H](C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CC(C)C)C(=O)[C@]1(CO1)C)NC(=O)[C@H]([C@@H](C)CC)N(C)C(=O)C
@@ -8,6 +8,12 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000346
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+definition: A tripeptide consisting of an Ile-Ile-Thr-NH<small><sub>2</sub></small>
+  sequence N-substituted on the threonamide amidic nitrogen with a (2<i>S</i>)-4-methyl-1-[(2<i>R</i>)-2-methyloxiran-2-yl]-1-oxopentan-2-yl
+  group and with acetyl and methyl groups on the nitrogen of the isoleucine residue
+  distal to the threonamide; a naturally occurring selective proteasome inhibitor
+  with anti-inflammatory activity.
+definition_source: CHEBI:42265
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -61,12 +67,15 @@ source_concepts:
   source_label: epoxomicin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-d19c75b6ee
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:42265
+  source_label: epoxomicin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-0509f26444
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:01:57Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,5 +1,5 @@
-identifier: naturalproductmech:mibig-696056c46a
-label: eremophilene
+identifier: CHEBI:137562
+label: (+)-eremophilene
 chemical_structure:
   smiles: C[C@@H]1CCC=C2CC[C@@H](C[C@@]12C)C(C)=C
   standard_inchi: InChI=1S/C15H24/c1-11(2)13-8-9-14-7-5-6-12(3)15(14,4)10-13/h7,12-13H,1,5-6,8-10H2,2-4H3/t12-,13+,15+/m1/s1
@@ -8,6 +8,15 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001201
 np_pathway: TERPENOIDS
+definition: A member of the classs of octahydronaphthalenes and a sesquiterpene that
+  is 1,2,3,4,4a,5,6,7-octahydronaphthalene which is substituted by an isopropenyl
+  group at position 3 and by methyl groups at positions 4a and 5 (the 3<i>S</i>,4a<i>S</i>,5<i>R</i>-
+  diastereoisomer).
+definition_source: CHEBI:137562
+synonyms:
+- value: eremophilene
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001201
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -57,12 +66,15 @@ source_concepts:
   source_label: eremophilene
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-696056c46a
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:137562
+  source_label: (+)-eremophilene
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-b8fb64354f
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:02:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

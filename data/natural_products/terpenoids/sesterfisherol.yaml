@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-ee4df90725
+identifier: CHEBI:138046
 label: sesterfisherol
 chemical_structure:
   smiles: C/C1=C2\CC[C@@H](C)[C@@H]2CC[C@H](C)[C@H]2C[C@@]3(C)CC[C@H](C(C)C)[C@@H]3C[C@]12O
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002162
 np_pathway: TERPENOIDS
+definition: A tetracyclic sesterterpenoid obtained by by expressing a small gene cluster
+  consisting of a terpene synthase (Nf SS) and a cytochrome P450 monooxygenase (Nf
+  P450).
+definition_source: CHEBI:138046
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -62,12 +66,15 @@ source_concepts:
   source_label: sesterfisherol
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-ee4df90725
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:138046
+  source_label: sesterfisherol
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-01c1a911d9
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:02:04Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

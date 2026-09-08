@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-eec20c2ce9
+identifier: CHEBI:134612
 label: staphyloferrin B
 chemical_structure:
   smiles: C(CC(=O)NCCNC(=O)C[C@](CC(=O)NC[C@@H](C(=O)O)N)(C(=O)O)O)C(=O)C(=O)O
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000943
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+definition: A siderophore composed from <small>L</small>-2,3-diaminopropionic acid,
+  citric acid, 1,2-diaminoethane and α-ketoglutaric acid units.
+definition_source: CHEBI:134612
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +21,23 @@ np_classification:
   class_results:
   - Aminoacids
   is_glycoside: false
+occurrences:
+- taxon_label: Staphylococcus aureus
+  source: CHEBI
+  evidence:
+  - reference: PMID:26030732
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:134612
+  taxon_id: NCBITaxon:1280
+  taxon_source: NCBITaxon
+- taxon_label: Staphylococcus hyicus
+  source: CHEBI
+  evidence:
+  - reference: PMID:8138126
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:134612
+  taxon_id: NCBITaxon:1284
+  taxon_source: NCBITaxon
 bgc_class:
 - OTHER
 xrefs:
@@ -61,12 +81,15 @@ source_concepts:
   source_label: staphyloferrin B
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-eec20c2ce9
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:134612
+  source_label: staphyloferrin B
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-35f66360a9
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:02:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

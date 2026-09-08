@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-e0623e48f1
+identifier: CHEBI:48741
 label: β-phellandrene
 chemical_structure:
   smiles: CC(C)C1CCC(=C)C=C1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001322
 np_pathway: TERPENOIDS
+definition: One of a pair of phellandrene cyclic monoterpene double-bond isomers in
+  which one double bond is exocyclic (<em>cf</em>. α-phellandrene, where both of them
+  are endoocyclic).
+definition_source: CHEBI:48741
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -61,12 +65,15 @@ source_concepts:
   source_label: β-phellandrene
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-e0623e48f1
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:48741
+  source_label: β-phellandrene
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-10a52537be
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:02:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

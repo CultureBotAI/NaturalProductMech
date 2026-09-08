@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-ba21e99a5d
+identifier: CHEBI:17579
 label: β-carotein
 chemical_structure:
   smiles: CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C2=C(CCCC2(C)C)C)\C)\C)/C)/C
@@ -8,6 +8,14 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000646
 np_pathway: TERPENOIDS
+definition: A cyclic carotene obtained by dimerisation of <i>all</i>-<i>trans</i>-retinol.
+  A strongly-coloured red-orange pigment abundant in plants and fruit and the most
+  active and important provitamin A carotenoid.
+definition_source: CHEBI:17579
+synonyms:
+- value: β-carotene
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000646
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +26,24 @@ np_classification:
   class_results:
   - Carotenoids (C40, β-β)
   is_glycoside: false
+occurrences:
+- taxon_label: Homo sapiens
+  source: CHEBI
+  evidence:
+  - reference: 10.1038/nbt.2488
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:17579
+  taxon_id: NCBITaxon:9606
+  taxon_source: NCBITaxon
+- taxon_label: Mus musculus
+  source: CHEBI
+  evidence:
+  - reference: PMID:19425150
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:17579
+  taxon_id: NCBITaxon:10090
+  taxon_source: NCBITaxon
+  notes: 'Source: BioModels - MODEL1507180067'
 bgc_class:
 - TERPENE
 xrefs:
@@ -58,12 +84,15 @@ source_concepts:
   source_label: β-carotein
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-ba21e99a5d
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:17579
+  source_label: β-carotene
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-d71b5a0646
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:02:01Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

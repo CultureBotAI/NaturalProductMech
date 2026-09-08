@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-41b176c91f
+identifier: CHEBI:75926
 label: 2,4-Quinolinediol
 chemical_structure:
   smiles: OC1=CC(O)=NC2=CC=CC=C12
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000922
 np_pathway: ALKALOIDS
+definition: A heteroaryl hydroxy compound that is 2-quinolone substituted at position
+  4 by a hydroxy group.
+definition_source: CHEBI:75926
+synonyms:
+- value: 4-hydroxy-2-quinolone
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000922
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -62,12 +69,15 @@ source_concepts:
   source_label: 2,4-Quinolinediol
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-41b176c91f
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:75926
+  source_label: 4-hydroxy-2-quinolone
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-79707d2ea6
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:01:58Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-805afb8728
+identifier: CHEBI:41977
 label: daunorubicin
 chemical_structure:
   smiles: C[C@H]1[C@H]([C@H](C[C@@H](O1)O[C@H]2C[C@@](CC3=C(C4=C(C(=C23)O)C(=O)C5=C(C4=O)C=CC=C5OC)O)(C(=O)C)O)N)O
@@ -8,6 +8,8 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000217
 np_pathway: POLYKETIDES
+definition: A natural product found in <em>Actinomadura roseola</em>.
+definition_source: CHEBI:41977
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +20,22 @@ np_classification:
   class_results:
   - Anthracyclines
   is_glycoside: true
+occurrences:
+- taxon_label: Actinomadura roseola
+  source: CHEBI
+  evidence:
+  - reference: PMID:10820108
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:41977
+  taxon_id: NCBITaxon:46179
+  taxon_source: NCBITaxon
+  detection_context: Ao108
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:41977
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 xrefs:
@@ -55,12 +73,15 @@ source_concepts:
   source_label: daunorubicin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-805afb8728
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:41977
+  source_label: daunorubicin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-2e75a3117d
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:02:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

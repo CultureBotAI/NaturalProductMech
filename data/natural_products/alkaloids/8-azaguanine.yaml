@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-c4cff4607d
+identifier: CHEBI:63486
 label: 8-azaguanine
 chemical_structure:
   smiles: C12=NNN=C1N=C(NC2=O)N
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002508
 np_pathway: ALKALOIDS
+definition: A triazolopyrimidine that consists of 3,6-dihydro-7<em>H</em>-[1,2,3]triazolo[4,5-<em>d</em>]pyrimidine
+  bearing amino and oxo substituents at positions 5 and 7 respectively.
+definition_source: CHEBI:63486
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -60,12 +63,15 @@ source_concepts:
   source_label: 8-azaguanine
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-c4cff4607d
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:63486
+  source_label: 8-azaguanine
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-9c2e971d70
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:02:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

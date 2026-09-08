@@ -1,12 +1,12 @@
-identifier: naturalproductmech:mibig-c1cc3dc439
+identifier: naturalproductmech:mibig-73ba44dafe
 label: lasalocid
 chemical_structure:
-  smiles: '[H][C@@](C)(CCC1=C(C(O)=O)C(O)=C(C)C=C1)[C@]([H])(O)[C@]([H])(C)C(=O)[C@]([H])(CC)[C@@]1([H])O[C@@](CC)(C[C@@H]1C)[C@@]1([H])CC[C@](O)(CC)[C@H](C)O1'
-  standard_inchi: InChI=1S/C34H54O8/c1-9-25(31-21(6)18-34(11-3,42-31)26-16-17-33(40,10-2)23(8)41-26)30(37)22(7)28(35)19(4)12-14-24-15-13-20(5)29(36)27(24)32(38)39/h13,15,19,21-23,25-26,28,31,35-36,40H,9-12,14,16-18H2,1-8H3,(H,38,39)/t19-,21+,22+,23+,25+,26-,28+,31+,33-,34+/m1/s1
-  standard_inchi_key: BBMULGJBVDDDNI-OWKLGTHSSA-N
-  stereo_complete: true
+  smiles: CCC(C1C(CC(O1)(CC)C2CCC(C(O2)C)(CC)O)C)C(=O)C(C)C(C(C)CCC3=C(C(=C(C=C3)C)O)C(=O)[O-])O.[Na+]
+  standard_inchi: InChI=1S/C34H54O8.Na/c1-9-25(31-21(6)18-34(11-3,42-31)26-16-17-33(40,10-2)23(8)41-26)30(37)22(7)28(35)19(4)12-14-24-15-13-20(5)29(36)27(24)32(38)39;/h13,15,19,21-23,25-26,28,31,35-36,40H,9-12,14,16-18H2,1-8H3,(H,38,39);/q;+1/p-1
+  standard_inchi_key: RDHDUYAKDYQPEW-UHFFFAOYSA-M
+  stereo_complete: false
   structure_source: MIBIG
-  structure_source_id: mibig:BGC0001648
+  structure_source_id: mibig:BGC0000086
 np_pathway: POLYKETIDES
 np_classification:
   tool: NPClassifier
@@ -22,45 +22,84 @@ np_classification:
   is_glycoside: false
 bgc_class:
 - PKS
+xrefs:
+- pubchem:2724110
 producer_organisms:
-- taxon_id: NCBITaxon:1931
-  taxon_label: Streptomyces sp.
+- taxon_id: NCBITaxon:324833
+  taxon_label: Streptomyces lasaliensis
   evidence_basis: SOURCE_ASSERTION
-  biosynthetic_gene_cluster: mibig:BGC0001648
+  biosynthetic_gene_cluster: mibig:BGC0000086
   source: MIBIG
   source_version: '5'
   notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
     this field grades the taxon claim, which is a different question.'
   evidence:
-  - reference: PMID:19129623
+  - reference: PMID:18710235
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0001648 entry version 5; citation taken from the entry level
+    notes: MIBiG BGC0000086 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:324833
+  taxon_label: Streptomyces lasaliensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000087
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19025863
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000087 entry version 5; citation taken from the entry level
 biosynthetic_gene_clusters:
-- accession: mibig:BGC0001648
+- accession: mibig:BGC0000086
   entry_version: '5'
   entry_status: active
-  organism_taxon_id: NCBITaxon:1931
-  organism_label: Streptomyces sp.
+  organism_taxon_id: NCBITaxon:324833
+  organism_label: Streptomyces lasaliensis
   evidence:
-  - reference: PMID:19129623
+  - reference: PMID:18710235
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0001648 entry version 5; citation taken from the entry level
-  genome_accession: genbank:KT591188.1
+    notes: MIBiG BGC0000086 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB449340.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000087
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:324833
+  organism_label: Streptomyces lasaliensis
+  evidence:
+  - reference: PMID:19025863
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000087 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FM173265.1
   bgc_class:
   - PKS
   link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
-  source_id: BGC0001648
+  source_id: BGC0000086
   source_label: lasalocid
   source_version: '5'
-  minted_identifier: naturalproductmech:mibig-c1cc3dc439
+  minted_identifier: naturalproductmech:mibig-73ba44dafe
+- source: MIBIG
+  source_id: BGC0000087
+  source_label: lasalocid
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d45cb87a92
 grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
+  a content-hashed identifier.
 curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000086, BGC0000087.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:54Z'
+- timestamp: '2026-09-08T06:02:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

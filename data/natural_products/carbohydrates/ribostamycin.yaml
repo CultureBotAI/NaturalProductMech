@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-5d6a37f683
+identifier: CHEBI:45257
 label: ribostamycin
 chemical_structure:
   smiles: C1[C@H]([C@@H]([C@H]([C@@H]([C@H]1N)O[C@@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CN)O)O)N)O[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O)O)N
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000713
 np_pathway: CARBOHYDRATES
+definition: An amino cyclitol glycoside that is 4,6-diaminocyclohexane-1,2,3-triol
+  having a 2,6-diamino-2,6-dideoxy-α-<small>D</small>-glucosyl residue attached at
+  position 1 and a β-<small>D</small>-ribosyl residue attached at position 2. It is
+  an antibiotic produced by <em>Streptomyces ribosidificus</em> (formerly <em>S. thermoflavus</em>).
+definition_source: CHEBI:45257
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +23,12 @@ np_classification:
   class_results:
   - Amino cyclitols
   is_glycoside: true
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:45257
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - SACCHARIDE
 xrefs:
@@ -55,12 +66,15 @@ source_concepts:
   source_label: ribostamycin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-5d6a37f683
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:45257
+  source_label: ribostamycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-9ed5633802
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:02:01Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

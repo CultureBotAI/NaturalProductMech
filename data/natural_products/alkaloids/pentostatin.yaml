@@ -1,0 +1,89 @@
+identifier: CHEBI:27834
+label: pentostatin
+chemical_structure:
+  smiles: C1[C@@H]([C@H](O[C@H]1N2C=NC3=C2NC=NC[C@H]3O)CO)O
+  standard_inchi: InChI=1S/C11H16N4O4/c16-3-8-6(17)1-9(19-8)15-5-14-10-7(18)2-12-4-13-11(10)15/h4-9,16-18H,1-3H2,(H,12,13)/t6-,7+,8+,9+/m0/s1
+  standard_inchi_key: FPVKHBSQESCIEP-JQCXWYLXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001735
+np_pathway: ALKALOIDS
+definition: A member of the class of coformycins that is coformycin in which the hydroxy
+  group at position 2' is replaced with a hydrogen. It is a drug used for the treatment
+  of hairy cell leukaemia.
+definition_source: CHEBI:27834
+synonyms:
+- value: pentostatine
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001735
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+occurrences:
+- taxon_label: Aspergillus nidulans
+  source: CHEBI
+  evidence:
+  - reference: 10.1080/00021369.1979.10863817
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:27834
+  taxon_id: NCBITaxon:162425
+  taxon_source: NCBITaxon
+  detection_context: Y 176-2
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:27834
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1890
+  taxon_label: Streptomyces antibioticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001735
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28111097
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001735 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001735
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1890
+  organism_label: Streptomyces antibioticus
+  evidence:
+  - reference: PMID:28111097
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001735 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KJ856912.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001735
+  source_label: pentostatine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-392652bc06
+- source: CHEBI
+  source_id: CHEBI:27834
+  source_label: pentostatin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-ab41c76fee
+grounding_status: EXACT
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T06:01:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

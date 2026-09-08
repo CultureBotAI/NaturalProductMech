@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-aec7953c7d
+identifier: CHEBI:65474
 label: BE-24566B
 chemical_structure:
   smiles: CC1=CC(O)=CC2=C1C1OC(C)(CC3=C1C(O)=C1C(=O)C4=C(C=C(O)C=C4O)C(C)(C)C1=C3)O2
@@ -8,6 +8,12 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001366
 np_pathway: POLYKETIDES
+definition: An organic heterohexacyclic compound that is 6,7,9,16-tetrahydro-14<em>H</em>-6,16-epoxyanthra[2,3-<em>e</em>]benzo[<em>b</em>]oxocin-14-one
+  substituted by hydroxy groups at positions 3, 11, 13 and 15, methyl groups at positions
+  1 and 4 and geminal methyl groups at position 9 respectively. It is isolated from
+  the fermentation broth of <em>Streptomyces violaceusniger</em> and exhibits moderate
+  antibacterial activity.
+definition_source: CHEBI:65474
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +24,21 @@ np_classification:
   class_results:
   - Fasamycins and derivatives
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces violaceusniger
+  source: CHEBI
+  evidence:
+  - reference: PMID:8557611
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:65474
+  taxon_id: NCBITaxon:68280
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:65474
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 xrefs:
@@ -88,9 +109,12 @@ source_concepts:
   source_label: BE-24566B
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-4257f44c74
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:65474
+  source_label: BE-24566B
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-429aee940d
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -100,7 +124,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:02:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

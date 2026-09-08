@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-71efaa1aba
+identifier: CHEBI:65915
 label: FR901464
 chemical_structure:
   smiles: C[C@H]1C[C@H]([C@H](O[C@H]1C/C=C(\C)/C=C/[C@@H]2[C@H]([C@@]3(C[C@@](O2)(C)O)CO3)O)C)NC(=O)/C=C\[C@H](C)OC(=O)C
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001113
 np_pathway: FATTY_ACIDS
+definition: A spiro-epoxide with potent anticancer activity that lowers the mRNA levels
+  of oncogenes and tumour supressor genes. It is isolated from <em>Pseudomonas</em>
+  sp. no.2663.
+definition_source: CHEBI:65915
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +22,22 @@ np_classification:
   class_results:
   - N-acyl amines
   is_glycoside: true
+occurrences:
+- taxon_label: Pseudomonas sp. 2663
+  source: CHEBI
+  evidence:
+  - reference: PMID:9031664
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:65915
+  taxon_id: NCBITaxon:764483
+  taxon_source: NCBITaxon
+  detection_context: '2663'
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:65915
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 - PKS
@@ -57,12 +77,15 @@ source_concepts:
   source_label: FR901464
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-71efaa1aba
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:65915
+  source_label: FR901464
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-64ccbb813e
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:02:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

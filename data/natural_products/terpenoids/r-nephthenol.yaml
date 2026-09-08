@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-7f223af5c5
+identifier: CHEBI:82799
 label: (-)-(R)-nephthenol
 chemical_structure:
   smiles: C/C/1=C\CC/C(=C/C[C@@H](CC/C(=C/CC1)/C)C(C)(C)O)/C
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002219
 np_pathway: TERPENOIDS
+definition: A cembrane diterpenoid obtained by regio- and stereoselective hydration
+  of the exocyclic double bond of cembrene C.
+definition_source: CHEBI:82799
+synonyms:
+- value: (<i>R</i>)-nephthenol
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002219
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -60,12 +67,15 @@ source_concepts:
   source_label: (-)-(R)-nephthenol
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-7f223af5c5
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:82799
+  source_label: (<i>R</i>)-nephthenol
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-951e81c48a
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:03Z'
+- timestamp: '2026-09-08T06:02:05Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

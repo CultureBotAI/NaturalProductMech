@@ -1,0 +1,205 @@
+identifier: CHEBI:88049
+label: 7-<em>epi</em>-cylindrospermopsin
+chemical_structure:
+  smiles: C[C@H]1[C@H](C[C@@H]2C[C@@H](NC3=NC[C@H]1N23)[C@@H](C4=CC(=O)NC(=O)N4)O)OS(=O)(=O)O
+  standard_inchi: InChI=1S/C15H21N5O7S/c1-6-10-5-16-14-17-8(13(22)9-4-12(21)19-15(23)18-9)2-7(20(10)14)3-11(6)27-28(24,25)26/h4,6-8,10-11,13,22H,2-3,5H2,1H3,(H,16,17)(H,24,25,26)(H2,18,19,21,23)/t6-,7+,8-,10-,11+,13+/m1/s1
+  standard_inchi_key: LHJPHMKIGRLKDR-YUQKHPEDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000978
+np_pathway: ALKALOIDS
+definition: A triazaacenaphthylene that is 2,2a,3,4,5,5a,6,7-octahydro-1<em>H</em>-1,8,8b-triazaacenaphthylene
+  which is substituted at positions 3, 4, and 7 by methyl, sulfooxy, and (2,6-dioxo-1,2,3,6-tetrahydropyrimidin-4-yl)(hydroxy)methyl
+  groups, respectively (the 2a<i>S</i>,3<i>R</i>,4<i>S</i>,5a<i>S</i>,7<i>R</i> stereoisomer
+  in which the carbon bearing the hydroxy group has <i>S</i> configuration). It is
+  a cyanotoxin produced by several species of freshwater cyanobacteria, such as <em>Aphanizomenon
+  ovalisporum</em>.
+definition_source: CHEBI:88049
+synonyms:
+- value: cylindrospermopsin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000978
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Guanidine alkaloids
+  class_results:
+  - Tricyclic guanidine alkaloids
+  is_glycoside: false
+occurrences:
+- taxon_label: Aphanizomenon ovalisporum
+  source: CHEBI
+  evidence:
+  - reference: PMID:10757726
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:88049
+  taxon_id: NCBITaxon:75695
+  taxon_source: NCBITaxon
+- taxon_label: Oscillatoria sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:20525864
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:88049
+  taxon_id: NCBITaxon:1159
+  taxon_source: NCBITaxon
+  detection_context: PCC 6506
+bgc_class:
+- NRPS
+- PKS
+- OTHER
+xrefs:
+- pubchem:115005
+producer_organisms:
+- taxon_id: NCBITaxon:478021
+  taxon_label: Cylindrospermopsis raciborskii AWT205
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000978
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18065631
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000978 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:459665
+  taxon_label: Aphanizomenon sp. 10E9
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000979
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20430808
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000979 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:459668
+  taxon_label: Aphanizomenon sp. 22D11
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000980
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20430808
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000980 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:459664
+  taxon_label: Aphanizomenon sp. 10E6
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000981
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20430808
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000981 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000978
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:478021
+  organism_label: Cylindrospermopsis raciborskii AWT205
+  evidence:
+  - reference: PMID:18065631
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000978 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EU140798.1
+  bgc_class:
+  - NRPS
+  - PKS
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000979
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:459665
+  organism_label: Aphanizomenon sp. 10E9
+  evidence:
+  - reference: PMID:20430808
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000979 entry version 3; citation taken from the entry level
+  genome_accession: genbank:GQ385959.1
+  bgc_class:
+  - NRPS
+  - PKS
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000980
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:459668
+  organism_label: Aphanizomenon sp. 22D11
+  evidence:
+  - reference: PMID:20430808
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000980 entry version 3; citation taken from the entry level
+  genome_accession: genbank:GQ385960.1
+  bgc_class:
+  - NRPS
+  - PKS
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000981
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:459664
+  organism_label: Aphanizomenon sp. 10E6
+  evidence:
+  - reference: PMID:20430808
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000981 entry version 3; citation taken from the entry level
+  genome_accession: genbank:GQ385961.1
+  bgc_class:
+  - NRPS
+  - PKS
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000978
+  source_label: cylindrospermopsin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ebced941a3
+- source: MIBIG
+  source_id: BGC0000979
+  source_label: cylindrospermopsin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-90bceac68c
+- source: MIBIG
+  source_id: BGC0000980
+  source_label: cylindrospermopsin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-49d9dde307
+- source: MIBIG
+  source_id: BGC0000981
+  source_label: cylindrospermopsin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1c276cf60b
+- source: CHEBI
+  source_id: CHEBI:88049
+  source_label: 7-<em>epi</em>-cylindrospermopsin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-9d1c129468
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000978, BGC0000979,
+    BGC0000980, BGC0000981. Confirm they describe the same compound rather than an
+    upstream cross-reference error.'
+curation_history:
+- timestamp: '2026-09-08T06:02:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

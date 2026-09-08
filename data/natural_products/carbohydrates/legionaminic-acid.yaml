@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-2ac156cb3e
+identifier: CHEBI:68676
 label: legionaminic acid
 chemical_structure:
   smiles: C[C@H]([C@H]([C@H]1[C@@H]([C@H](C[C@](O1)(C(=O)O)O)O)N)N)O
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001651
 np_pathway: CARBOHYDRATES
+definition: A ketoaldonic acid derivative that is β-neuraminic acid in which the hydroxy
+  groups at positions 7 and 9 are substituted by an amino group and hydrogen respectively.
+definition_source: CHEBI:68676
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -57,12 +60,15 @@ source_concepts:
   source_label: legionaminic acid
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-2ac156cb3e
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:68676
+  source_label: legionaminic acid
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-84cea1919e
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:03Z'
+- timestamp: '2026-09-08T06:02:05Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

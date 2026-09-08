@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-3f38fcf916
+identifier: CHEBI:141338
 label: sporothriolide
 chemical_structure:
   smiles: CCCCCC[C@@H]1[C@H]2[C@H](C(=C)C(=O)O2)C(=O)O1
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002262
 np_pathway: POLYKETIDES
+definition: A furofuran that is (3a<i>R</i>,6a<i>R</i>)-hexahydrofuro[3,4-<em>b</em>]furan
+  substituted by an oxo group at positions 2 and 4, methylene group at position 3
+  and by an hexyl group at position 6. It is a metabolite isolated from several species
+  of fungi.
+definition_source: CHEBI:141338
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -16,6 +21,39 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Hypoxylon monticulosum
+  source: CHEBI
+  evidence:
+  - reference: PMID:29043802
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:141338
+  taxon_id: NCBITaxon:326669
+  taxon_source: NCBITaxon
+  detection_context: CLL-205
+- taxon_label: Nodulisporium sp. A21
+  source: CHEBI
+  evidence:
+  - reference: PMID:27017876
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:141338
+  taxon_id: NCBITaxon:1647372
+  taxon_source: NCBITaxon
+- taxon_label: Sporothrix sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:8119853
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:141338
+  taxon_id: NCBITaxon:1902615
+  taxon_source: NCBITaxon
+  detection_context: '700'
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:141338
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 xrefs:
@@ -54,12 +92,15 @@ source_concepts:
   source_label: sporothriolide
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-3f38fcf916
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:141338
+  source_label: sporothriolide
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-c84a39259d
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:54Z'
+- timestamp: '2026-09-08T06:01:56Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

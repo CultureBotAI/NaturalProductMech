@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-2000bd8726
+identifier: CHEBI:145071
 label: compound 9
 chemical_structure:
   smiles: '[H][C@]12[C@@](C[C@](C)(O)C[C@H]2C)([H])C([C@@](C)(O)[C@]([H])([C@H](CO)CC)[C@]1(C)C(CCO)=O)=O'
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002165
 np_pathway: POLYKETIDES
+definition: An octahydronaphthalene that is stemphyloxin I in which the C=C bond of
+  the enol moiety has been reduced to a C‒C bond.
+definition_source: CHEBI:145071
+synonyms:
+- value: dihydrostemphyloxin I
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002165
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -55,9 +62,12 @@ source_concepts:
   source_label: compound 9
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-2000bd8726
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:145071
+  source_label: dihydrostemphyloxin I
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-cf0d4df49b
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: needs-a-name
@@ -67,7 +77,7 @@ discussions:
     own numbering rather than a compound name. Resolve a name from the literature
     or a structure registry.
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:02:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

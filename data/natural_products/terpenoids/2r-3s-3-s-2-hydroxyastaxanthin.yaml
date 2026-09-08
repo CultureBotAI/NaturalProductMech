@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-f8da97c9d7
+identifier: CHEBI:40968
 label: (2R,3S,3'S)-2-hydroxyastaxanthin
 chemical_structure:
   smiles: C\C(\C=C\C=C(/C)\C=C\C1=C(C)C(=O)[C@@H](O)CC1(C)C)=C/C=C/C=C(\C)/C=C/C=C(\C)/C=C/C1=C(C)C(=O)[C@@H](O)CC1(C)C
@@ -8,6 +8,16 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000630
 np_pathway: TERPENOIDS
+definition: A carotenone that consists of β,β-carotene-4,4'-dione bearing two hydroxy
+  substituents at positions 3 and 3' (the 3<i>S</i>,3'<i>S</i> diastereomer). A carotenoid
+  pigment found mainly in animals (crustaceans, echinoderms) but also occurring in
+  plants. It can occur free (as a red pigment), as an ester, or as a blue, brown or
+  green chromoprotein.
+definition_source: CHEBI:40968
+synonyms:
+- value: astaxanthin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000630
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -55,12 +65,15 @@ source_concepts:
   source_label: (2R,3S,3'S)-2-hydroxyastaxanthin
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-f8da97c9d7
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:40968
+  source_label: astaxanthin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-7a5e0419ac
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:02:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

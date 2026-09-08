@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-5aa05be218
+identifier: CHEBI:156320
 label: mangicol A
 chemical_structure:
   smiles: '[H][C@@]12CC[C@H](C)[C@@]11[C@H](O)C[C@H](C)C1=C[C@@]1(C)CC[C@](C)(C[C@H](O)[C@H](O)[C@@](C)(O)CO)[C@@]21[H]'
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001659
 np_pathway: TERPENOIDS
+definition: A sesterterpenoid natural product found in the fungus <i>Fusarium heterosporum</i>.
+  It exhibits significant antiinflammatory activity in the PMA-induced mouse ear edema
+  model.
+definition_source: CHEBI:156320
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +22,24 @@ np_classification:
   class_results:
   - Mangicol-type sesterterpenoids
   is_glycoside: false
+occurrences:
+- taxon_label: Fusarium equiseti
+  source: CHEBI
+  evidence:
+  - reference: 10.1055/s-0035-1556229
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156320
+  taxon_id: NCBITaxon:61235
+  taxon_source: NCBITaxon
+  detection_context: CNC-477
+- taxon_label: Fusarium heterosporum
+  source: CHEBI
+  evidence:
+  - reference: PMID:10956462
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156320
+  taxon_id: NCBITaxon:42747
+  taxon_source: NCBITaxon
 bgc_class:
 - TERPENE
 xrefs:
@@ -57,12 +79,15 @@ source_concepts:
   source_label: mangicol A
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-5aa05be218
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:156320
+  source_label: mangicol A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-b47ad3efaf
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:57Z'
+- timestamp: '2026-09-08T06:02:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

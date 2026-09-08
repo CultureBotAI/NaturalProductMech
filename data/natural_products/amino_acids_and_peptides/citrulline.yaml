@@ -18,6 +18,81 @@ np_classification:
   class_results:
   - Aminoacids
   is_glycoside: false
+occurrences:
+- taxon_label: Arabidopsis thaliana
+  source: CHEBI
+  evidence:
+  - reference: PMID:8278506
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:16349
+  taxon_id: NCBITaxon:3702
+  taxon_source: NCBITaxon
+- taxon_label: Escherichia coli
+  source: CHEBI
+  evidence:
+  - reference: PMID:179975
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:16349
+  taxon_id: NCBITaxon:562
+  taxon_source: NCBITaxon
+- taxon_label: Escherichia coli
+  source: CHEBI
+  evidence:
+  - reference: PMID:21988831
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:16349
+  taxon_id: NCBITaxon:562
+  taxon_source: NCBITaxon
+- taxon_label: Homo sapiens
+  source: CHEBI
+  evidence:
+  - reference: 10.1038/nbt.2488
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:16349
+  taxon_id: NCBITaxon:9606
+  taxon_source: NCBITaxon
+- taxon_label: Mus musculus
+  source: CHEBI
+  evidence:
+  - reference: PMID:19425150
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:16349
+  taxon_id: NCBITaxon:10090
+  taxon_source: NCBITaxon
+  notes: 'Source: BioModels - MODEL1507180067'
+- taxon_label: Saccharomyces cerevisiae
+  source: CHEBI
+  evidence:
+  - reference: PMID:24678285
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:16349
+  taxon_id: NCBITaxon:4932
+  taxon_source: NCBITaxon
+  notes: 'Source: yeast.sf.net'
+- taxon_label: Arabidopsis thaliana
+  source: CHEBI
+  evidence:
+  - reference: PMID:8278506
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:57743
+  taxon_id: NCBITaxon:3702
+  taxon_source: NCBITaxon
+- taxon_label: Escherichia coli
+  source: CHEBI
+  evidence:
+  - reference: PMID:179975
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:57743
+  taxon_id: NCBITaxon:562
+  taxon_source: NCBITaxon
+- taxon_label: Homo sapiens
+  source: CHEBI
+  evidence:
+  - reference: 10.1038/nbt.2488
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:57743
+  taxon_id: NCBITaxon:9606
+  taxon_source: NCBITaxon
 bgc_class:
 - OTHER
 xrefs:
@@ -55,12 +130,24 @@ source_concepts:
   source_label: citrulline
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-6a9399d351
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:16349
+  source_label: <small>L</small>-citrulline
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-e7ed85871e
+- source: CHEBI
+  source_id: CHEBI:57743
+  source_label: <small>L</small>-citrulline zwitterion
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-0c6c9cec78
+grounding_status: REVIEW_NEEDED
+grounding_notes: 'This structure matches more than one 3-star ChEBI entry: CHEBI:16349,
+  CHEBI:57743. ChEBI keeps such entries separate on purpose — a compound and its zwitterion
+  share an InChIKey — so the identity is not picked here. A curator decides which
+  term this record is.'
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:02:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

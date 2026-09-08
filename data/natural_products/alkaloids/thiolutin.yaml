@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-0cd9c2e2d2
+identifier: CHEBI:156450
 label: thiolutin
 chemical_structure:
   smiles: CN1C(=O)C(NC(C)=O)=C2SSC=C12
@@ -8,6 +8,12 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001193
 np_pathway: ALKALOIDS
+definition: A dithiolopyrrolone antibiotic that is 4,5-dihydro[1,2]dithiolo[4,3-<em>b</em>]pyrrole
+  in which the hydrogens at positions 4,5 and 6 have been replaced by methyl, oxo
+  and acetamido groups, respectively. It is a potent inhibitor of RNA polymerases,
+  inhibits the angiogenesis of human umbilical vein endothelial cells, and also inhibits
+  JAMM metalloproteases.
+definition_source: CHEBI:156450
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -16,6 +22,31 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Saccharothrix algeriensis
+  source: CHEBI
+  evidence:
+  - reference: PMID:24723205
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156450
+  taxon_id: NCBITaxon:173560
+  taxon_source: NCBITaxon
+  detection_context: NRRL B-24137
+- taxon_label: Streptomyces kasugaensis
+  source: CHEBI
+  evidence:
+  - reference: PMID:2262169
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156450
+  taxon_id: NCBITaxon:1946
+  taxon_source: NCBITaxon
+  detection_context: IFO 13851
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:156450
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 xrefs:
@@ -54,12 +85,15 @@ source_concepts:
   source_label: thiolutin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-0cd9c2e2d2
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:156450
+  source_label: thiolutin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-be4fa4877c
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:02:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

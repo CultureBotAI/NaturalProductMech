@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-915f49adbd
+identifier: CHEBI:145066
 label: stemphyloxin II
 chemical_structure:
   smiles: CC[C@@H](CO)[C@H]1[C@](C)(O)[C@@]2(O)/C(=C/O)C(=O)[C@]1(C)[C@@H]1[C@@H]2C[C@](C)(O)C[C@H]1C
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002165
 np_pathway: POLYKETIDES
+definition: A carbotricyclic compound that is betaenone A in which the butan-2-yl
+  side-chain has been hydroxylated at position 1. A phytotoxin isolated from the endophytic
+  fungus <em>Stemphylium botryosum</em>, it shows high affinity for ferric (but not
+  ferrous) ions.
+definition_source: CHEBI:145066
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -58,12 +63,15 @@ source_concepts:
   source_label: stemphyloxin II
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-915f49adbd
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:145066
+  source_label: stemphyloxin II
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-89d7a2708a
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:57Z'
+- timestamp: '2026-09-08T06:01:59Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

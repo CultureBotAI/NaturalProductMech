@@ -1,0 +1,88 @@
+identifier: CHEBI:32806
+label: <i>trans</i>-aconitic acid
+chemical_structure:
+  smiles: C(/C(=C\C(=O)O)/C(=O)O)C(=O)O
+  standard_inchi: InChI=1S/C6H6O6/c7-4(8)1-3(6(11)12)2-5(9)10/h1H,2H2,(H,7,8)(H,9,10)(H,11,12)/b3-1+
+  standard_inchi_key: GTZCVFVGUGFEME-HNQUOIGGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001809
+np_pathway: FATTY_ACIDS
+definition: The <i>trans</i>-isomer of aconitic acid.
+definition_source: CHEBI:32806
+synonyms:
+- value: trans-aconitic acid
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001809
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty Acids and Conjugates
+  class_results:
+  - Dicarboxylic acids
+  is_glycoside: false
+occurrences:
+- taxon_label: Daphnia magna
+  source: CHEBI
+  evidence:
+  - reference: 'Mixtures of similarly acting compounds in Daphnia magna: From gene
+      to metabolite and beyondTine Vandenbrouck, Oliver A.H. Jones, Nathalie Dom,
+      Julian L. Griffin, Wim De CoenEnvironment International 36 (2010) 254-268'
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:32806
+  taxon_id: NCBITaxon:35525
+  taxon_source: NCBITaxon
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:444212
+producer_organisms:
+- taxon_id: NCBITaxon:541229
+  taxon_label: Bacillus thuringiensis serovar chinensis CT-43
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001809
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28087696
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001809 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001809
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:541229
+  organism_label: Bacillus thuringiensis serovar chinensis CT-43
+  evidence:
+  - reference: PMID:28087696
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001809 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NC_017203.1
+  locus_from: 220988
+  locus_to: 223084
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001809
+  source_label: trans-aconitic acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-e168c5031b
+- source: CHEBI
+  source_id: CHEBI:32806
+  source_label: <i>trans</i>-aconitic acid
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-7a9dff79ab
+grounding_status: EXACT
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T06:01:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

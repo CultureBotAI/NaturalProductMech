@@ -1,0 +1,77 @@
+identifier: CHEBI:145895
+label: (<i>S</i>,<i>S</i>)-2,5-di-(<em>p</em>-hydroxybenzyl)piperazine
+chemical_structure:
+  smiles: OC1=CC=C(C[C@H]2CN[C@@H](CC3=CC=C(O)C=C3)CN2)C=C1
+  standard_inchi: InChI=1S/C18H22N2O2/c21-17-5-1-13(2-6-17)9-15-11-20-16(12-19-15)10-14-3-7-18(22)8-4-14/h1-8,15-16,19-22H,9-12H2/t15-,16-/m0/s1
+  standard_inchi_key: CMWOCHXOAOFYCY-HOTGVXAUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002167
+np_pathway: ALKALOIDS
+definition: A member of the class of piperazines that is piperazine in which the <em>pro</em>-<i>S</i>
+  hydrogens at positions 2 and 5 have each been replaced by a <em>p</em>-hydroxybenzyl
+  group.
+definition_source: CHEBI:145895
+synonyms:
+- value: piperazine compound 1
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002167
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Pyrrolidine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:332952
+  taxon_label: Aspergillus flavus NRRL3357
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002167
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23281040
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002167 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002167
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:332952
+  organism_label: Aspergillus flavus NRRL3357
+  evidence:
+  - reference: PMID:23281040
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002167 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP059871.1
+  locus_from: 1196775
+  locus_to: 1211873
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002167
+  source_label: piperazine compound 1
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-01cce43dd4
+- source: CHEBI
+  source_id: CHEBI:145895
+  source_label: (<i>S</i>,<i>S</i>)-2,5-di-(<em>p</em>-hydroxybenzyl)piperazine
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-dcdaff4ed9
+grounding_status: EXACT
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T06:01:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

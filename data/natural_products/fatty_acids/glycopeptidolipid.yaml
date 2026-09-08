@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-a4f2e02869
+identifier: CHEBI:59646
 label: glycopeptidolipid
 chemical_structure:
   smiles: CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC(CC(=O)N[C@H](CC1=CC=CC=C1)C(=O)N[C@H]([C@@H](C)OC2[C@@H]([C@@H]([C@@H]([C@@H](O2)C)O)O)O[C@H]3[C@@H]([C@@H]([C@H]([C@@H](O3)C)O)O[C@H]4[C@@H]([C@H]([C@H]5[C@H](O4)CO[C@](O5)(C)C(=O)O)OC)O)O)C(=O)N[C@H](C)C(=O)N[C@@H](C)COC6[C@@H]([C@@H]([C@H]([C@@H](O6)C)OC)OC)O)O.O
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000362
 np_pathway: FATTY_ACIDS
+definition: A glycopeptidolipid antigen from clinically prominent members of the <em>Mycobacterium</em>
+  <em>avium</em> serocomplex
+definition_source: CHEBI:59646
+synonyms:
+- value: GPL-21
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000362
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -53,12 +60,15 @@ source_concepts:
   source_label: glycopeptidolipid
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-a4f2e02869
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:59646
+  source_label: GPL-21
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-6d205f5db4
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:02:01Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

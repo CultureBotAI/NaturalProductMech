@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-65d2ef6682
+identifier: CHEBI:29656
 label: neomethymycin
 chemical_structure:
   smiles: C[C@H]1C[C@H](C(=O)/C=C/[C@H]([C@H](OC(=O)[C@@H]([C@H]1O[C@H]2[C@@H]([C@H](C[C@H](O2)C)N(C)C)O)C)[C@@H](C)O)C)C
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000898
 np_pathway: POLYKETIDES
+definition: A twelve-membered macrolide antibiotic that is biosynthesised by <em>Streptomyces
+  venezuelae</em>.
+definition_source: CHEBI:29656
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +22,12 @@ np_classification:
   - Erythromycins
   - Tylosins
   is_glycoside: true
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:29656
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - SACCHARIDE
 producer_organisms:
@@ -54,12 +63,15 @@ source_concepts:
   source_label: neomethymycin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-65d2ef6682
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:29656
+  source_label: neomethymycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-334bcd2078
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:02:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-eec6b84859
+identifier: CHEBI:167319
 label: aureusimine A
 chemical_structure:
   smiles: OC1=CC=C(CC(N2)=CN=C(C(C)C)C2=O)C=C1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002287
 np_pathway: UNCLASSIFIED
+definition: A member of the class of pyrazinones that is pyrazin-2(1<em>H</em>)-one
+  substituted by an isopropyl and (4-hydroxyphenyl)methyl groups at positions 3 and
+  6, respectively. It is a natural product found in <em>Staphylococcus aureus</em>.
+definition_source: CHEBI:167319
 synonyms:
 - value: tyrvalin
   synonym_type: RELATED_SYNONYM
@@ -26,6 +30,16 @@ np_classification:
   - Pyrazine and Piperazine alkaloids
   - Pyridine alkaloids
   is_glycoside: false
+occurrences:
+- taxon_label: Staphylococcus aureus
+  source: CHEBI
+  evidence:
+  - reference: PMID:20851341
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:167319
+  taxon_id: NCBITaxon:1280
+  taxon_source: NCBITaxon
+  detection_context: RN4220
 bgc_class:
 - NRPS
 xrefs:
@@ -101,9 +115,12 @@ source_concepts:
   source_label: aureusimine A
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-c2de21ea89
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:167319
+  source_label: tyrvalin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-38125ecef7
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -113,7 +130,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:02:01Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

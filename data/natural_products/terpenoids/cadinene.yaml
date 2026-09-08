@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-5b7b0396df
+identifier: CHEBI:63703
 label: (-)-δ-cadinene
 chemical_structure:
   smiles: CC1=C[C@@H]2[C@H](CCC(=C2CC1)C)C(C)C
@@ -8,6 +8,15 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000674
 np_pathway: TERPENOIDS
+definition: A member of the cadinene family of sesquiterpenes in which the double
+  bonds are located at the 4-4a and 7-8 positions, and in which the isopropyl group
+  at position 1 is <i>cis</i> to the hydrogen at the adjacent bridgehead carbon (the
+  1<i>R</i>,8a<i>S</i>-enantiomer).
+definition_source: CHEBI:63703
+synonyms:
+- value: (−)-δ-cadinene
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000674
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -57,12 +66,15 @@ source_concepts:
   source_label: (-)-δ-cadinene
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-5b7b0396df
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:63703
+  source_label: (−)-δ-cadinene
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-afab573ff9
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:01:58Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

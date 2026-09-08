@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-ebe3ab477f
+identifier: CHEBI:64503
 label: 1-nonadecene
 chemical_structure:
   smiles: CCCCCCCCCCCCCCCCCC=C
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001160
 np_pathway: FATTY_ACIDS
+definition: An unbranched nineteen-carbon alkene with one double bond between C-1
+  and C-2.
+definition_source: CHEBI:64503
+synonyms:
+- value: nonadec-1-ene
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001160
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -62,12 +69,15 @@ source_concepts:
   source_label: 1-nonadecene
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-ebe3ab477f
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:64503
+  source_label: nonadec-1-ene
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-36ec2b1c29
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:02:01Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

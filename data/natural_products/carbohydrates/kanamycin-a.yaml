@@ -1,0 +1,210 @@
+identifier: CHEBI:17630
+label: kanamycin A
+chemical_structure:
+  smiles: C1[C@H]([C@@H]([C@H]([C@@H]([C@H]1N)O[C@@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CN)O)O)O)O)O[C@@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)N)O)N
+  standard_inchi: InChI=1S/C18H36N4O11/c19-2-6-10(25)12(27)13(28)18(30-6)33-16-5(21)1-4(20)15(14(16)29)32-17-11(26)8(22)9(24)7(3-23)31-17/h4-18,23-29H,1-3,19-22H2/t4-,5+,6-,7-,8+,9-,10-,11-,12+,13-,14-,15+,16-,17-,18-/m1/s1
+  standard_inchi_key: SBUJHOSQTJFQJX-NOAMYHISSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000702
+np_pathway: CARBOHYDRATES
+synonyms:
+- value: kanamycin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000702
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Aminosugars and aminoglycosides
+  - Polyols
+  class_results:
+  - Amino cyclitols
+  - Aminoglycosides
+  is_glycoside: true
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:17630
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
+bgc_class:
+- SACCHARIDE
+xrefs:
+- pubchem:6032
+producer_organisms:
+- taxon_id: NCBITaxon:1967
+  taxon_label: Streptomyces kanamyceticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000702
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15303497
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000702 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1967
+  taxon_label: Streptomyces kanamyceticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000703
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16766657
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000703 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:1967
+  taxon_label: Streptomyces kanamyceticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000704
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15313224
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000704 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:1967
+  taxon_label: Streptomyces kanamyceticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000705
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19362651
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000705 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:1967
+  taxon_label: Streptomyces kanamyceticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000706
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16766657
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000706 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000702
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1967
+  organism_label: Streptomyces kanamyceticus
+  evidence:
+  - reference: PMID:15303497
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000702 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB164642.1
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000703
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1967
+  organism_label: Streptomyces kanamyceticus
+  evidence:
+  - reference: PMID:16766657
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000703 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP023699.1
+  locus_from: 1695607
+  locus_to: 1729284
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000704
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1967
+  organism_label: Streptomyces kanamyceticus
+  evidence:
+  - reference: PMID:15313224
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000704 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AJ582817.3
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000705
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1967
+  organism_label: Streptomyces kanamyceticus
+  evidence:
+  - reference: PMID:19362651
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000705 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AJ628422.2
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000706
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1967
+  organism_label: Streptomyces kanamyceticus
+  evidence:
+  - reference: PMID:16766657
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000706 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AB254081.1
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000702
+  source_label: kanamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-571436b06a
+- source: MIBIG
+  source_id: BGC0000703
+  source_label: kanamycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-d0721c400f
+- source: MIBIG
+  source_id: BGC0000704
+  source_label: kanamycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b61578f03d
+- source: MIBIG
+  source_id: BGC0000705
+  source_label: kanamycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b994470b50
+- source: MIBIG
+  source_id: BGC0000706
+  source_label: kanamycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3cb36a7b51
+- source: CHEBI
+  source_id: CHEBI:17630
+  source_label: kanamycin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-3e1b80f929
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000702, BGC0000703,
+    BGC0000704, BGC0000705, BGC0000706. Confirm they describe the same compound rather
+    than an upstream cross-reference error.'
+curation_history:
+- timestamp: '2026-09-08T06:02:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

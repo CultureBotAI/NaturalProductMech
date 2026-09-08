@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-4eac76b469
+identifier: CHEBI:38225
 label: Fumonisin B2
 chemical_structure:
   smiles: CCCC[C@@H](C)[C@H]([C@H](C[C@@H](C)CCCCCC[C@H](C[C@@H]([C@H](C)N)O)O)OC(=O)C[C@@H](CC(=O)O)C(=O)O)OC(=O)C[C@@H](CC(=O)O)C(=O)O
@@ -8,8 +8,16 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002502
 np_pathway: POLYKETIDES
+definition: A fumonisin that is (2S,3S,12S,14S,15R,16R)-2-amino-12,16-dimethylicosane-3,14,15-triol
+  in which the hydroxy groups at positions 14 and 15 have each been esterified by
+  condensation with the 1-carboxy group of 3-carboxyglutaric acid (giving a 3-carboxyglutarate
+  ester group with <i>R</i> configuration in each case).
+definition_source: CHEBI:38225
 synonyms:
 - value: fumonisin B2
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002502
+- value: fumonisin B<small><sub>2</sub></small>
   synonym_type: RELATED_SYNONYM
   source: mibig:BGC0002502
 np_classification:
@@ -22,6 +30,16 @@ np_classification:
   class_results:
   - Open-chain polyketides
   is_glycoside: false
+occurrences:
+- taxon_label: Aspergillus niger
+  source: CHEBI
+  evidence:
+  - reference: PMID:20014861
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:38225
+  taxon_id: NCBITaxon:5061
+  taxon_source: NCBITaxon
+  notes: From Aspergillus niger on grapes and raisins.
 bgc_class:
 - PKS
 compound_classes:
@@ -100,9 +118,12 @@ source_concepts:
   source_label: Fumonisin B2
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-a898805a30
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:38225
+  source_label: fumonisin B<small><sub>2</sub></small>
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-a2068fe5c9
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -112,7 +133,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:02:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

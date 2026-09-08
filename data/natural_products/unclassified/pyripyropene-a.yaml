@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-2fe902a6e5
+identifier: CHEBI:64695
 label: pyripyropene A
 chemical_structure:
   smiles: '[H][C@@]12C[C@H](OC(C)=O)[C@@]3(C)OC4=C([C@H](O)[C@]3([H])[C@@]1(C)CC[C@H](OC(C)=O)[C@@]2(C)COC(C)=O)C(=O)OC(=C4)C1=CN=CC=C1'
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000129
 np_pathway: UNCLASSIFIED
+definition: A sesquiterpenoid that consists of (3<i>S</i>,4<i>R</i>,4a<i>R</i>,6<i>S</i>,6a<i>S</i>,12<i>R</i>,12a<i>S</i>,12b<i>S</i>)-4-(acetoxymethyl)-12-hydroxy-4,6a,12b-trimethyl-11-oxo-9-(pyridin-3-yl)-1,3,4,4a,5,6,6a,12,12a,12b-decahydro-2<em>H</em>,11<em>H</em>-benzo[<em>f</em>]pyrano[4,3-<em>b</em>]chromene-3,6-diol
+  in which the hydrogens of the 3- and 6-hydroxy functions are substituted by acetyl
+  groups.
+definition_source: CHEBI:64695
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -58,12 +62,15 @@ source_concepts:
   source_label: pyripyropene A
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-2fe902a6e5
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:64695
+  source_label: pyripyropene A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-d61afcdc26
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:02:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

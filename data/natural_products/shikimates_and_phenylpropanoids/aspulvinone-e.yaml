@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-d8c69aaf6f
+identifier: CHEBI:17704
 label: aspulvinone E
 chemical_structure:
   smiles: C1=CC(=CC=C1/C=C\2/C(=C(C(=O)O2)C3=CC=C(C=C3)O)O)O
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002348
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+definition: A 4-hydroxy-5-(4-hydroxybenzylidene)-3-(4-hydroxyphenyl)furan-2(5<em>H</em>)-one
+  in which the double bond adopts a <i>Z</i>-configuration. It is a marine metabolite
+  isolated from the fungus <em>Aspergillus terreus</em> and exhibits antiviral activity.
+definition_source: CHEBI:17704
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +22,32 @@ np_classification:
   class_results:
   - Pulvinones
   is_glycoside: false
+occurrences:
+- taxon_label: Aspergillus terreus
+  source: CHEBI
+  evidence:
+  - reference: 10.1007/s00044-014-1164-0
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:17704
+  taxon_id: NCBITaxon:33178
+  taxon_source: NCBITaxon
+  detection_context: RCC1
+  notes: cell suspension culture
+- taxon_label: Aspergillus terreus
+  source: CHEBI
+  evidence:
+  - reference: PMID:23411074
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:17704
+  taxon_id: NCBITaxon:33178
+  taxon_source: NCBITaxon
+  detection_context: Gwq-48
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:17704
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 xrefs:
@@ -61,12 +91,15 @@ source_concepts:
   source_label: aspulvinone E
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-d8c69aaf6f
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:17704
+  source_label: aspulvinone E
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-4606a1364d
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:54Z'
+- timestamp: '2026-09-08T06:01:56Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

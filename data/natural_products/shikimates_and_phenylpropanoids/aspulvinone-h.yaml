@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-0004766167
+identifier: CHEBI:17099
 label: aspulvinone H
 chemical_structure:
   smiles: CC(=CCC1=C(C=CC(=C1)/C=C\2/C(=C(C(=O)O2)C3=CC(=C(C=C3)O)CC=C(C)C)O)O)C
@@ -59,12 +59,15 @@ source_concepts:
   source_label: aspulvinone H
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-0004766167
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:17099
+  source_label: aspulvinone H
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-18a4e809f9
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:02:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

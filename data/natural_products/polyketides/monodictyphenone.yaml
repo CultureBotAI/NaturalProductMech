@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-288ae85ac6
+identifier: CHEBI:64398
 label: monodictyphenone
 chemical_structure:
   smiles: CC1=CC(C(O)=O)=C(C(=O)C2=C(O)C=CC=C2O)C(O)=C1
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000101
 np_pathway: POLYKETIDES
+definition: A member of the class of benzophenones in which one phenyl group is substituted
+  at positions 2 and 6 by hydroxy groups while the other is substituted at positions
+  2, 4, and 6 by hydroxy, methyl, and carboxy groups, respectively. First obtained
+  from the fungal strain <em>Monodictys putredinis</em>, isolated from the inner tissue
+  of a marine green alga, it was subsequently obtained from the fungus <em>Aspergillus
+  nidulans</em>.
+definition_source: CHEBI:64398
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -63,12 +70,15 @@ source_concepts:
   source_label: monodictyphenone
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-288ae85ac6
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:64398
+  source_label: monodictyphenone
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-4b4a18903c
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:02:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

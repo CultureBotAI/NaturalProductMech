@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-c5ddcdb09e
+identifier: CHEBI:131712
 label: shinorine
 chemical_structure:
   smiles: O[C@](CC(NCC(O)=O)=C/1OC)(CO)CC1=N/[C@@H](CO)C(O)=O
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000427
 np_pathway: UNCLASSIFIED
+definition: A mycosporine-like amino acid that is the ketimine resulting from the
+  formal condensation of the amino group of <small>L</small>-serine with the keto
+  group of (5<i>S</i>)-5-hydroxy-5-(hydroxymethyl)-2-methoxycyclohex-2-en-1-one and
+  in which the hydrogen at position 3 of the cyclohexenone moiety has been replaced
+  by the amino group of glycine. It is an active ingredient found in environmentally
+  friendly sunscreen creams.
+definition_source: CHEBI:131712
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +26,47 @@ np_classification:
   class_results:
   - Mycosporine and Mycosporine-like amino acids
   is_glycoside: false
+occurrences:
+- taxon_label: Chondrus crispus
+  source: CHEBI
+  evidence:
+  - reference: 'ISBN: 9789401773218'
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:131712
+  taxon_id: NCBITaxon:2769
+  taxon_source: NCBITaxon
+  notes: See The Algae World, Dinabandhu Sahoo, Joseph Seckbach (Springer, 16 Dec
+    2015) p. 396
+- taxon_label: Curdiea racovitzia
+  source: CHEBI
+  evidence:
+  - reference: 'ISBN: 9789401773218'
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:131712
+  taxon_id: NCBITaxon:172984
+  taxon_source: NCBITaxon
+  notes: See The Algae World, Dinabandhu Sahoo, Joseph Seckbach (Springer, 16 Dec
+    2015) p. 396
+- taxon_label: Palmaria palmata
+  source: CHEBI
+  evidence:
+  - reference: 'ISBN: 9789401773218'
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:131712
+  taxon_id: NCBITaxon:2822
+  taxon_source: NCBITaxon
+  notes: See The Algae World, Dinabandhu Sahoo, Joseph Seckbach (Springer, 16 Dec
+    2015) p. 396
+- taxon_label: Pyropia columbina
+  source: CHEBI
+  evidence:
+  - reference: 'ISBN: 9789401773218'
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:131712
+  taxon_id: NCBITaxon:688709
+  taxon_source: NCBITaxon
+  notes: See The Algae World, Dinabandhu Sahoo, Joseph Seckbach (Springer, 16 Dec
+    2015) p. 396
 bgc_class:
 - NRPS
 producer_organisms:
@@ -60,12 +108,15 @@ source_concepts:
   source_label: shinorine
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-c5ddcdb09e
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:131712
+  source_label: shinorine
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-19e7f75fd9
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:02:04Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

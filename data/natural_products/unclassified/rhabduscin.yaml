@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-5457d8436e
+identifier: CHEBI:140651
 label: rhabduscin
 chemical_structure:
   smiles: C[C@H]1[C@H]([C@H]([C@@H]([C@H](O1)OC2=CC=C(C=C2)/C=C/[N+]#[C-])O)O)NC(=O)C
@@ -8,6 +8,12 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001757
 np_pathway: UNCLASSIFIED
+definition: An isocyanide that is the 4-acetamido-4,6-dideoxy-β-<small>L</small>-galactopyranoside
+  of <em>p</em>-[(<i>E</i>)-2-isocyanovinyl]phenol. Produced by the gram-negative
+  insect pathogens, <em>Xenorhabdus nematophila</em> and <em>Photorhabdus luminescens</em>,
+  it is a potent nanomolar-level inhibitor of phenoloxidase, a key component of the
+  insect's innate immune system.
+definition_source: CHEBI:140651
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -15,6 +21,23 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: true
+occurrences:
+- taxon_label: Photorhabdus luminescens
+  source: CHEBI
+  evidence:
+  - reference: PMID:22711807
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:140651
+  taxon_id: NCBITaxon:29488
+  taxon_source: NCBITaxon
+- taxon_label: Xenorhabdus nematophila
+  source: CHEBI
+  evidence:
+  - reference: PMID:22711807
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:140651
+  taxon_id: NCBITaxon:628
+  taxon_source: NCBITaxon
 bgc_class:
 - OTHER
 xrefs:
@@ -54,12 +77,15 @@ source_concepts:
   source_label: rhabduscin
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-5457d8436e
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:140651
+  source_label: rhabduscin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-78aa73def7
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:02:04Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-c8b055ed61
+identifier: CHEBI:167050
 label: biscognienyne B
 chemical_structure:
   smiles: CC(=CC[C@@]12[C@@H](O1)[C@@H](C=C([C@H]2O)C#CC(=C)C)O)C
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002290
 np_pathway: TERPENOIDS
+definition: A member of the class of epoxides that is (1<i>R</i>,6<i>S</i>)-7-oxabicyclo[4.1.0]hept-3-ene
+  substituted by 3-methylbut-2-en-1-yl, hydroxy, 2-methylbut-1-en-3-yn-4-yl, and hydroxy
+  groups at positions 1, 2<i>R</i>, 3 and 5<i>R</i>. It is a meroterpenoid natural
+  product synthesized by the Ascomycota fungus <em>Biscogniauxia sp</em>.
+definition_source: CHEBI:167050
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +23,17 @@ np_classification:
   class_results:
   - Miscellaneous meroterpenoids
   is_glycoside: false
+occurrences:
+- taxon_label: Biscogniauxia sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:32364293
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:167050
+  taxon_id: NCBITaxon:1896107
+  taxon_source: NCBITaxon
+  detection_context: 71-10-1-1
+  notes: 'GenBank: MT109335.1'
 bgc_class:
 - OTHER
 xrefs:
@@ -60,12 +76,15 @@ source_concepts:
   source_label: biscognienyne B
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-c8b055ed61
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:167050
+  source_label: biscognienyne B
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-2139c28e1f
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:02:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

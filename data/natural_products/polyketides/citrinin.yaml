@@ -1,5 +1,5 @@
-identifier: naturalproductmech:mibig-8d9c1b4feb
-label: citrinin
+identifier: CHEBI:48712
+label: (+)-citrinin
 chemical_structure:
   smiles: C[C@@H]1OC=C2C(O)=C(C(O)=O)C(=O)C(C)=C2[C@H]1C
   standard_inchi: InChI=1S/C13H14O5/c1-5-7(3)18-4-8-9(5)6(2)11(14)10(12(8)15)13(16)17/h4-5,7,15H,1-3H3,(H,16,17)/t5-,7-/m0/s1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001338
 np_pathway: POLYKETIDES
+synonyms:
+- value: citrinin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001338
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -97,9 +101,12 @@ source_concepts:
   source_label: citrinin
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-602d1da50d
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:48712
+  source_label: (+)-citrinin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-ff790259c8
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -109,7 +116,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:01:57Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

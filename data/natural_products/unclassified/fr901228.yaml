@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-f448a1968b
+identifier: CHEBI:61080
 label: FR901228
 chemical_structure:
   smiles: C\C=C1/NC(=O)[C@H]2CSSCC\C=C\[C@H](CC(=O)N[C@H](C(C)C)C(=O)N2)OC(=O)[C@@H](NC1=O)C(C)C
@@ -8,6 +8,15 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000993
 np_pathway: UNCLASSIFIED
+definition: A cyclodepsipeptide consisting of the cyclic disulfide of (2<i>Z</i>)-2-aminobut-2-enoyl,
+  <small>L</small>-valyl, (3<i>S</i>,4<i>E</i>)-3-hydroxy-7-sulfanylhept-4-enoyl,
+  <small>D</small>-valyl and <small>D</small>-cysteinyl residues coupled in sequence
+  and cyclised head-to tail.
+definition_source: CHEBI:61080
+synonyms:
+- value: romidepsin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000993
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -20,6 +29,30 @@ np_classification:
   - Cyclic peptides
   - Depsipeptides
   is_glycoside: false
+occurrences:
+- taxon_label: Chromobacterium violaceum
+  source: CHEBI
+  evidence:
+  - reference: PMID:21793558
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:61080
+  taxon_id: NCBITaxon:536
+  taxon_source: NCBITaxon
+  detection_context: '968'
+- taxon_label: Chromobacterium violaceum
+  source: CHEBI
+  evidence:
+  - reference: PMID:21967146
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:61080
+  taxon_id: NCBITaxon:536
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:61080
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 - PKS
@@ -64,12 +97,15 @@ source_concepts:
   source_label: FR901228
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-f448a1968b
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:61080
+  source_label: romidepsin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-88a55f2221
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:02:01Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

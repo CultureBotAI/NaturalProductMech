@@ -1,5 +1,5 @@
-identifier: naturalproductmech:mibig-07da14a68b
-label: microperfuranone
+identifier: CHEBI:64974
+label: (−)-microperfuranone
 chemical_structure:
   smiles: OC1OC(=O)C(=C1CC1=CC=CC=C1)C1=CC=CC=C1
   standard_inchi: InChI=1S/C17H14O3/c18-16-14(11-12-7-3-1-4-8-12)15(17(19)20-16)13-9-5-2-6-10-13/h1-10,16,18H,11H2
@@ -8,6 +8,15 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001668
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+definition: A butenolide that is furan-2(5<em>H</em>)-one which is substituted by
+  a phenyl group at position 3, a benzyl group at position 4, and a hydroxy group
+  at position 5 (the (−)-enantiomer). A secondary metabolite obtained from <em>Aspergillus
+  nidulans</em>.
+definition_source: CHEBI:64974
+synonyms:
+- value: microperfuranone
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001668
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -57,12 +66,15 @@ source_concepts:
   source_label: microperfuranone
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-07da14a68b
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:64974
+  source_label: (−)-microperfuranone
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-7769572ecf
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:02:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

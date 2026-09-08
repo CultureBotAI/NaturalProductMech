@@ -1,0 +1,85 @@
+identifier: CHEBI:138165
+label: (+)-(2<i>S</i>,3<i>R</i>,9<i>R</i>)-pristinol
+chemical_structure:
+  smiles: C[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\C
+  standard_inchi: InChI=1S/C15H26O/c1-10-5-6-13-11(2)7-12(16)8-15(3,4)9-14(10)13/h10,12,14,16H,5-9H2,1-4H3/b13-11-/t10-,12+,14+/m1/s1
+  standard_inchi_key: PXKJCWZAMAFFIW-GLBIRDDMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001746
+np_pathway: TERPENOIDS
+definition: A bicyclic sesquiterpenoid that is 2,3,5,6,7,8,9,9a-octahydro-1<em>H</em>-cyclopenta[8]annulen-6-ol
+  carrying four additional methyl substiuents at positions 1, 4, 8 and 8.
+definition_source: CHEBI:138165
+synonyms:
+- value: pristinol
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001746
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Tremulane sesquiterpenoids
+  is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces pristinaespiralis
+  source: CHEBI
+  evidence:
+  - reference: PMID:27403888
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:138165
+  taxon_id: NCBITaxon:38300
+  taxon_source: NCBITaxon
+bgc_class:
+- TERPENE
+producer_organisms:
+- taxon_id: NCBITaxon:457429
+  taxon_label: Streptomyces pristinaespiralis ATCC 25486
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001746
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27403888
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001746 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001746
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:457429
+  organism_label: Streptomyces pristinaespiralis ATCC 25486
+  evidence:
+  - reference: PMID:27403888
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001746 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NZ_CM000950.1
+  locus_from: 7136895
+  locus_to: 7138013
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001746
+  source_label: pristinol
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-9e6ff12f48
+- source: CHEBI
+  source_id: CHEBI:138165
+  source_label: (+)-(2<i>S</i>,3<i>R</i>,9<i>R</i>)-pristinol
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-56aa14617e
+grounding_status: EXACT
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T06:02:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

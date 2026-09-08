@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-61dd9346d6
+identifier: CHEBI:156451
 label: holomycin
 chemical_structure:
   smiles: CC(=O)NC1=C2C(=CSS2)NC1=O
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002091
 np_pathway: ALKALOIDS
+definition: A dithiolopyrrolone antibiotic that is 4,5-dihydro[1,2]dithiolo[4,3-<em>b</em>]pyrrole
+  in which the hydrogens at positions 5 and 6 have been replaced by oxo and acetamido
+  groups, respectively. It is an inhibitor of DNA-dependent RNA polymerase, and exhibits
+  antibacterial and antitumour properties.
+definition_source: CHEBI:156451
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -16,6 +21,73 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Photobacterium halotolerans
+  source: CHEBI
+  evidence:
+  - reference: PMID:21339958
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156451
+  taxon_id: NCBITaxon:265726
+  taxon_source: NCBITaxon
+  detection_context: S2753
+- taxon_label: Saccharothrix algeriensis
+  source: CHEBI
+  evidence:
+  - reference: PMID:32642829
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156451
+  taxon_id: NCBITaxon:173560
+  taxon_source: NCBITaxon
+  detection_context: NRRL B-24137
+- taxon_label: Streptomyces clavuligerus
+  source: CHEBI
+  evidence:
+  - reference: PMID:21041678
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156451
+  taxon_id: NCBITaxon:1901
+  taxon_source: NCBITaxon
+- taxon_label: Streptomyces clavuligerus
+  source: CHEBI
+  evidence:
+  - reference: PMID:468729
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156451
+  taxon_id: NCBITaxon:1901
+  taxon_source: NCBITaxon
+- taxon_label: Streptomyces flavogriseus
+  source: CHEBI
+  evidence:
+  - reference: PMID:28740758
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156451
+  taxon_id: NCBITaxon:67299
+  taxon_source: NCBITaxon
+  detection_context: NJ-4
+- taxon_label: Streptomyces sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:28627048
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156451
+  taxon_id: NCBITaxon:1931
+  taxon_source: NCBITaxon
+  detection_context: DT-A37
+- taxon_label: Yersinia ruckeri ATCC 29473
+  source: CHEBI
+  evidence:
+  - reference: PMID:23572522
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156451
+  taxon_id: NCBITaxon:527005
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:156451
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 xrefs:
@@ -129,9 +201,12 @@ source_concepts:
   source_label: holomycin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-f64a800641
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:156451
+  source_label: holomycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-7a86ac0436
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -141,7 +216,7 @@ discussions:
     BGC0002412. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:01:58Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

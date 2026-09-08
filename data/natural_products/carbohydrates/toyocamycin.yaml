@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-2fa3d96924
+identifier: CHEBI:134606
 label: toyocamycin
 chemical_structure:
   smiles: NC1=NC=NC2=C1C(=CN2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O)C#N
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000879
 np_pathway: CARBOHYDRATES
+definition: An <em>N</em>-glycosylpyrrolopyrimidine that is tubercidin in which the
+  hydrogen at position 5 of the pyrrolopyrimidine moiety has been replaced by a cyano
+  group.
+definition_source: CHEBI:134606
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +22,21 @@ np_classification:
   class_results:
   - Purine nucleos(t)ides
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces diastatochromogenes
+  source: CHEBI
+  evidence:
+  - reference: PMID:23775805
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:134606
+  taxon_id: NCBITaxon:1628
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:134606
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - OTHER
 xrefs:
@@ -116,9 +135,12 @@ source_concepts:
   source_label: toyocamycin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-6b0622fbc7
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:134606
+  source_label: toyocamycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-859b79218d
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -128,7 +150,7 @@ discussions:
     BGC0001808. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:02:05Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

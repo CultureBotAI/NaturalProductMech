@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-2682f7f50f
+identifier: CHEBI:17637
 label: 6-methylsalicyclic acid
 chemical_structure:
   smiles: CC1=C(C(=CC=C1)O)C(=O)O
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001275
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+definition: A monohydroxybenzoic acid that is salicylic acid in which the hydrogen
+  <em>ortho</em> to the carboxylic acid group is substituted by a methyl group.
+definition_source: CHEBI:17637
+synonyms:
+- value: 6-methylsalicylic acid
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001275
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +25,23 @@ np_classification:
   class_results:
   - Simple phenolic acids
   is_glycoside: false
+occurrences:
+- taxon_label: Leibnitzia anandria
+  source: CHEBI
+  evidence:
+  - reference: PMID:24699147
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:17637
+  taxon_id: NCBITaxon:41596
+  taxon_source: NCBITaxon
+- taxon_label: Penicillium griseofulvum
+  source: CHEBI
+  evidence:
+  - reference: PMID:16345795
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:17637
+  taxon_id: NCBITaxon:5078
+  taxon_source: NCBITaxon
 bgc_class:
 - PKS
 xrefs:
@@ -85,9 +109,12 @@ source_concepts:
   source_label: 6-methylsalicyclic acid
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-7f002a8ed7
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:17637
+  source_label: 6-methylsalicylic acid
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-b37a7dbd6c
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -97,7 +124,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:01:58Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

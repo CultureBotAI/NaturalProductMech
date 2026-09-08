@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-4fba2c0555
+identifier: CHEBI:29630
 label: desosamine
 chemical_structure:
   smiles: CC[C@H]1OC(=O)[C@H](C)[C@@H](O[C@@H]2O[C@H](C)C[C@@H]([C@H]2O)N(C)C)[C@@H](C)C[C@@H](C)C(=O)\C=C\[C@]1(C)O
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000094
 np_pathway: POLYKETIDES
+definition: A twelve-membered macrolide antibiotic that is biosynthesised by <em>Streptomyces
+  venezuelae</em>.
+definition_source: CHEBI:29630
 synonyms:
 - value: methymycin
   synonym_type: RELATED_SYNONYM
@@ -22,6 +25,12 @@ np_classification:
   class_results:
   - Erythromycins
   is_glycoside: true
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:29630
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 - SACCHARIDE
@@ -95,9 +104,12 @@ source_concepts:
   source_label: desosamine
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-9787d70812
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:29630
+  source_label: methymycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-3b92b0c7d7
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -107,7 +119,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:01:59Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

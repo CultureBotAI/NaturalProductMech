@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-b6e27543a4
+identifier: CHEBI:64450
 label: Endocrocin
 chemical_structure:
   smiles: CC1=C(C(=C2C(=C1)C(=O)C3=CC(=CC(=C3C2=O)O)O)O)C(=O)O
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001118
 np_pathway: POLYKETIDES
+definition: A trihydroxyanthraquinone that is 9,10-anthraquinone which is substituted
+  by a carboxy group at position 2, a methyl group at position 3, and hydroxy groups
+  at positions 1, 6, and 8.
+definition_source: CHEBI:64450
 synonyms:
 - value: endocrocin
   synonym_type: RELATED_SYNONYM
@@ -101,9 +105,12 @@ source_concepts:
   source_label: Endocrocin
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-86a6c099e6
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:64450
+  source_label: endocrocin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-9df9a39704
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -113,7 +120,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:02:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
