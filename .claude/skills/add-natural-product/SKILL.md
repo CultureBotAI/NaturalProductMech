@@ -178,7 +178,10 @@ curator-entry lane. Add only fields supported by the source path:
 - `bgc_class`, `compound_classes` and `ecological_roles` come from a source
   assertion. `np_pathway`, the filing value, is computed by NPClassifier and is
   recorded with its model version; it is never a source assertion, and it never
-  admits a record.
+  admits a record. If the classifier returns more than one pathway, file the
+  record `UNCLASSIFIED` and let it queue, but keep every returned label in
+  `npclassifier_superclass` and `npclassifier_class` — the filing value is
+  single, the classification is not.
 - `producer_organisms`, `occurrences`, `biosynthetic_gene_clusters`,
   `bioactivities`, `molecular_targets`, `biosynthetic_pathway` and
   `causal_graphs` need claim-level evidence on each object. A MIBiG-seeded

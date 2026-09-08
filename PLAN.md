@@ -153,6 +153,24 @@ promises, and will be made against `just report` numbers after A ships. The
 taxon filter is a committed configuration (`conf/sources.yaml` → `producer_scope`)
 so widening it is a diff, not a rewrite.
 
+**`producer_scope` filters producers, not occurrences (#6).** The corpus has two
+taxon-bearing fields and the phases are defined by producer, so the filter
+applies to `producer_organisms` alone. A compound whose MIBiG producer is a
+bacterium is admitted to Phase A, and its cited isolation from a sponge is kept
+as an `occurrences` row.
+
+The consequence is worth saying out loud, because it looks like scope creep and
+is not: **Phase A will contain non-microbial taxa in `occurrences`.** That is
+correct. Dropping a cited isolation report because its host is out of phase
+would discard evidence about a compound the corpus has already decided to hold,
+and the evidence is the thing this repository exists to keep.
+
+Phase B is therefore not about first contact with invertebrate taxa. It is about
+admitting compounds whose *only* origin evidence is invertebrate — the sponge,
+tunicate and lichen metabolites with no identified microbial producer. That
+boundary is exactly where §2.3's host-versus-symbiont problem lives, which is
+why it is a later decision rather than a wider filter.
+
 ### 2.5 Explicitly out of scope
 
 - Synthetic compounds and semisynthetic derivatives without a natural parent
@@ -188,7 +206,7 @@ Replaced:
 | — | `bgc_class` (multivalued) — MIBiG 4.0's cluster vocabulary: `PKS`, `NRPS`, `RIBOSOMAL`, `TERPENE`, `SACCHARIDE`, `OTHER`, with `bgc_subclass` free text | The class of the *gene cluster* is a different claim from the class of the *molecule*, and MIBiG 4.0 separated them deliberately — it removed `alkaloid` as a biosynthetic class for exactly this reason. Asserted, only where a BGC exists. |
 | `activity_roles` | `ecological_roles` (ChEBI roles: siderophore, toxin, pigment, signal…) + `compound_classes` (every asserted molecule-level class, e.g. MIBiG's Dewick-based ontology, unreduced) | Filing is one decision; the evidence stays |
 | `structural_class` | `structural_class` (kept) + `npclassifier_superclass` / `npclassifier_class` (computed, versioned) | Structure and biosynthesis are different axes. ChemOnt/ClassyFire terms are **not** carried: ClassyFire's terms restrict commercial redistribution, so a ChemOnt string arriving inside an otherwise-CC BY record is dropped. |
-| `mode_of_action` (antimicrobial enum) | `bioactivity_summary` (multivalued `BioactivityClassEnum`: ANTIBACTERIAL, ANTIFUNGAL, CYTOTOXIC, ANTIVIRAL, ANTIPARASITIC, ENZYME_INHIBITOR, SIGNALLING, TOXIN, IMMUNOMODULATOR, …) | A natural product's activities are plural; each summary value must be backed by at least one `bioactivities` item or a source assertion |
+| `mode_of_action` (antimicrobial enum) | `bioactivity_summary` (multivalued `BioactivityClassEnum`: ANTIBACTERIAL, ANTIFUNGAL, CYTOTOXIC, ANTIVIRAL, ANTIPARASITIC, ENZYME_INHIBITOR, SIGNALLING, TOXIN, IMMUNOMODULATOR, …) | A natural product's activities are plural. It is a derived field and never floats: §3.5 states the one backing rule |
 | `activity_spectrum` (MIC observations) | `bioactivities` (`BioactivityObservation`: target organism / cell line / enzyme, assay, value, units, qualifier, evidence) | Generalised beyond MIC; the "an MIC without units is not a measurement" rule generalises to every value |
 | `resistance_mechanisms` | dropped (AntibioticMech owns it) | Section 4 |
 | `producer_organisms` (MIBiG slice) | `producer_organisms` (first-class, with `evidence_basis`: `BGC_CHARACTERIZED` / `BGC_CORRELATED` / `HETEROLOGOUS_EXPRESSION` / `ISOTOPE_FEEDING` / `AXENIC_CULTURE` / `SOURCE_ASSERTION`) + `occurrences` | Section 2.3, which grades the first two from MIBiG's own locus-evidence vocabulary |
@@ -252,6 +270,46 @@ The cost is honest and worth stating: the corpus can carry filing decisions
 made by an older model than the one in `data/raw/`. That is the right trade for
 a published site, and the drift is visible in one command rather than invisible
 in a diff of several thousand moved files.
+
+**A multi-label result never picks a winner by accident (#4).** NPClassifier
+returns arrays — `pathway_results`, `superclass_results`, `class_results` — and
+a glycosylated or hybrid compound can legitimately come back with several
+pathways. The filing value is single, so the rule is explicit:
+
+- **One pathway returned** → that is `np_pathway`.
+- **Several returned** → `np_pathway` is `UNCLASSIFIED`, and the record lands on
+  `just worklist --queue pathway-ambiguous` for a curator to file by hand.
+- **None returned** → `UNCLASSIFIED` and the same queue.
+
+Every returned label is kept regardless, in `npclassifier_superclass` and
+`npclassifier_class`: a multi-label result is information, not noise, and only
+the *filing* decision has to be single.
+
+This follows AntibioticMech's precedent rather than inventing one. When two ARO
+class ancestors sit at the same depth it leaves `structural_class` empty rather
+than resolving by file order, because picking the first line of `aro.obo` once
+asserted that lassomycin is a rifamycin, which it is not. An empty filing value
+is visibly unresolved; a wrong one is invisible, and every gate stays green
+either way.
+
+### 3.5 What may back a `bioactivity_summary` value (#5)
+
+`bioactivity_summary` is derived, so it carries no evidence of its own and must
+never float. Exactly one rule governs it, stated here and referenced everywhere
+else. A value is permitted when at least one of these supports it, and the
+record says which:
+
+1. a `bioactivities` item — a measurement, with units and method;
+2. a `molecular_targets` item whose target implies that activity class;
+3. a `related_records` link to a sibling corpus that carries the mechanism —
+   this is the whole point of §4, and it is how an antibacterial value is
+   backed without duplicating AntibioticMech's target and resistance content;
+4. a source assertion, such as MIBiG's own `bioactivities` labels, cited as the
+   database assertion it is and never dressed as a measurement.
+
+No value without one of the four. This was previously stated three times in
+three different forms across the plan and the review checklist, which meant a
+validator and a curator could disagree about a legitimate record.
 
 ## 4. Joining AntibioticMech and the rest of the fleet
 
