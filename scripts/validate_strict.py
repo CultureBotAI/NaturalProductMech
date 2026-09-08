@@ -38,6 +38,7 @@ from linkml.validator.report import Severity
 _REPO_ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_PATH = _REPO_ROOT / "src" / "naturalproductmech" / "schema" / "naturalproductmech.yaml"
 DEFAULT_ROOTS = [_REPO_ROOT / "data" / "natural_products"]
+LOCKFILE_PATH = _REPO_ROOT / "data" / "natural_products" / "PATHS.tsv"
 TARGET_CLASS = "NaturalProductRecord"
 
 # Per-worker singleton — built lazily after fork so the schema parses once per
@@ -182,6 +183,17 @@ def main() -> int:
         missing = [str(root) for root in roots if not Path(root).exists()]
         if missing:
             print(f"No YAML files found; these paths do not exist: {missing}", file=sys.stderr)
+            return 2
+        # Conditioned on the lockfile, not on nothing: PATHS.tsv is the corpus's
+        # own claim about what should exist. Rows there with no records on disk
+        # is a wiped corpus, and "expected state" would be a lie about it (#10).
+        locked = 0
+        if LOCKFILE_PATH.exists():
+            with LOCKFILE_PATH.open(newline="", encoding="utf-8") as fh:
+                locked = sum(1 for _ in csv.DictReader(fh, delimiter="\t"))
+        if locked:
+            print(f"No records found, but {LOCKFILE_PATH.name} lists {locked}. "
+                  f"The corpus is missing, not empty.", file=sys.stderr)
             return 2
         print(f"No records to validate yet in {[str(r) for r in roots]}. "
               f"That is the expected state until seeding lands (PLAN.md section 7).",

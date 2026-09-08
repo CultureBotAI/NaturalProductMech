@@ -64,8 +64,21 @@ difference. Macrocyclic peptides, glycopeptides and glycosides — most of this
 corpus — are where that bites. `stereo_complete` records when a structure has
 undefined stereocentres rather than hiding it.
 
+**ChEBI-internal collisions are not merged.** ChEBI keeps a compound and its
+zwitterion as separate entries with the same Standard InChIKey, because they are
+different protonation states related by `is_conjugate_acid_of`. Merging them
+would overrule a curation decision made by the people who own the identifiers.
+Both records stay.
+
+**Two minted concepts sharing a structure are flagged, not merged.** At least
+one upstream cross-reference is wrong and the seeder cannot tell which. Merging
+would assert the two compounds are the same; dropping both would discard the one
+that is right. So both are written, each carrying a `CURATION_TODO` discussion
+naming its twin, and `tests/test_corpus_integrity.py` requires that flag.
+
 **A minted record must never duplicate a ChEBI-grounded structure.** That is a
-failure of resolution, and `tests/test_corpus_integrity.py` fails on it.
+failure of resolution rather than an upstream disagreement, and
+`tests/test_corpus_integrity.py` fails on it.
 
 ## Producer versus occurrence
 

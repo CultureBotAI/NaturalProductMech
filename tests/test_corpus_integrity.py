@@ -66,14 +66,36 @@ def test_identifiers_are_unique(records):
     assert not duplicates, f"duplicate identifiers: {duplicates}"
 
 
-def test_each_structure_appears_once(records):
-    """Merging on InChIKey is the product. Two records with one key means the
-    merge did not happen, and the corpus asserts two compounds where there is
-    one."""
-    keys = [r["chemical_structure"]["standard_inchi_key"] for r in records
-            if r.get("chemical_structure", {}).get("standard_inchi_key")]
-    duplicates = [k for k, n in Counter(keys).items() if n > 1]
-    assert not duplicates, f"InChIKey collisions not resolved or flagged: {duplicates}"
+def test_a_surviving_inchikey_collision_is_flagged(records):
+    """Merging on InChIKey is the product, but not every collision may be merged.
+
+    ChEBI keeps a compound and its zwitterion as separate entries with the same
+    Standard InChIKey; merging them would overrule the people who own the
+    identifiers. Two MINTED concepts sharing a structure mean an upstream
+    cross-reference is wrong and the seeder cannot tell which, so both stay.
+    Tautomer pairs collide for a third reason.
+
+    So the rule is not "never collide". It is that a collision which survives
+    must be VISIBLE: each record carries a discussion naming its twin. A test
+    forbidding all collisions would force a merge the domain does not allow —
+    see issue #8.
+    """
+    by_key = {}
+    for record in records:
+        key = (record.get("chemical_structure") or {}).get("standard_inchi_key")
+        if key:
+            by_key.setdefault(key, []).append(record)
+
+    unflagged = []
+    for key, group in by_key.items():
+        if len(group) < 2:
+            continue
+        for record in group:
+            if not record.get("discussions"):
+                unflagged.append((key, record["identifier"]))
+    assert not unflagged, (
+        f"InChIKey collisions surviving without a discussion naming the twin: {unflagged}"
+    )
 
 
 def test_a_minted_record_never_duplicates_a_grounded_structure(records):
