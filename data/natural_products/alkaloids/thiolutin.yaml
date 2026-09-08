@@ -32,6 +32,8 @@ occurrences:
   taxon_id: NCBITaxon:173560
   taxon_source: NCBITaxon
   detection_context: NRRL B-24137
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 - taxon_label: Streptomyces kasugaensis
   source: CHEBI
   evidence:
@@ -50,7 +52,9 @@ occurrences:
     evidence_type: DATABASE_ASSERTION
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q26283533
+  notes: Wikidata organism http://www.wikidata.org/entity/Q26283533 This taxon is
+    also recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
 - taxon_id: NCBITaxon:1946
   taxon_label: Streptomyces kasugaensis
   taxon_source: NCBITaxon
@@ -123,7 +127,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:29:14Z'
+- timestamp: '2026-09-08T06:36:50Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

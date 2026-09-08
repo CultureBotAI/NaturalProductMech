@@ -73,6 +73,8 @@ cluster link claims: 3449 (1352 demonstrated)
   CLUSTER_PREDICTED                       2
   CLUSTER_UNSTATED                     1985
 
+records where a producer taxon is independently corroborated by a cited occurrence: 729
+
 These grade two different questions and they come apart. A producer
 claim says this TAXON makes the compound; a cluster link says this
 LOCUS does. Heterologous expression settles the second and leaves the

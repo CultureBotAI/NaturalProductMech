@@ -48,6 +48,8 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:156455
   taxon_id: NCBITaxon:391619
   taxon_source: NCBITaxon
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 - taxon_id: NCBITaxon:221822
   taxon_label: Phaeobacter inhibens
   taxon_source: NCBITaxon
@@ -131,7 +133,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:29:09Z'
+- timestamp: '2026-09-08T06:36:44Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

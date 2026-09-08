@@ -29,6 +29,8 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:29665
   taxon_id: NCBITaxon:54571
   taxon_source: NCBITaxon
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 - taxon_id: NCBITaxon:1888
   taxon_label: Streptomyces albus
   taxon_source: NCBITaxon
@@ -88,7 +90,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:29:19Z'
+- timestamp: '2026-09-08T06:36:55Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

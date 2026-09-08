@@ -560,8 +560,37 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 occurrence["notes"] = f"Wikidata organism {row['organism_wikidata']}"
             occurrences.append(occurrence)
 
-        if occurrences:
-            doc["occurrences"] = occurrences
+        # De-duplicate on (taxon, reference). Two routes produce exact
+        # duplicates: a REVIEW_NEEDED record pulling origins from several ChEBI
+        # entries that share one, and ChEBI and LOTUS citing the same paper
+        # (#26). The same taxon from two DIFFERENT references is not a
+        # duplicate — it is two independent reports, which is more evidence.
+        deduped: list[dict[str, Any]] = []
+        seen_occurrence: set[tuple[str, str]] = set()
+        for occurrence in occurrences:
+            signature = (
+                occurrence.get("taxon_id") or occurrence["taxon_label"],
+                occurrence["evidence"][0]["reference"],
+            )
+            if signature in seen_occurrence:
+                continue
+            seen_occurrence.add(signature)
+            deduped.append(occurrence)
+
+        # A taxon that is also a producer is CORROBORATION, not redundancy: the
+        # occurrence carries its own independent citation. Said on the record so
+        # a reader does not mistake it for a failure to deduplicate (#27).
+        producer_taxa = {p["taxon_id"] for p in producers}
+        for occurrence in deduped:
+            if occurrence.get("taxon_id") in producer_taxa:
+                note = ("This taxon is also recorded as a producer, from a different source "
+                        "and citation. The two corroborate each other rather than duplicating.")
+                occurrence["notes"] = (
+                    f"{occurrence['notes']} {note}" if occurrence.get("notes") else note
+                )
+
+        if deduped:
+            doc["occurrences"] = deduped
 
         targets: list[dict[str, Any]] = []
         for row in targets_by_key.get(key) or []:

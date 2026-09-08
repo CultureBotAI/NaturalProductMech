@@ -206,3 +206,37 @@ def test_no_record_carries_html_markup(records):
         if tag.search(r.get(field) or "")
     ]
     assert not offenders, f"records carrying HTML markup: {offenders[:5]}"
+
+
+def test_no_record_repeats_an_occurrence(records):
+    """Same taxon, same citation, twice. Small at first — 10 of 10,041 — and it
+    grows with every occurrence source, because CyanoMetDB and NPAtlas would
+    both overlap LOTUS heavily (#26).
+
+    Note what is NOT a duplicate: the same taxon from two different references
+    is two independent reports, which is more evidence rather than less.
+    """
+    offenders = []
+    for record in records:
+        seen = Counter(
+            (o.get("taxon_id") or o.get("taxon_label"), o["evidence"][0]["reference"])
+            for o in record.get("occurrences") or []
+        )
+        offenders.extend(
+            (record["identifier"], key) for key, n in seen.items() if n > 1
+        )
+    assert not offenders, f"repeated occurrences: {offenders[:5]}"
+
+
+def test_a_taxon_in_both_fields_says_it_is_corroboration(records):
+    """A producer that is also an occurrence looks like a failure to
+    deduplicate and is the opposite: two claims, two citations, two sources
+    (#27). The record has to say so, or a reader draws the wrong conclusion."""
+    offenders = []
+    for record in records:
+        producers = {p.get("taxon_id") for p in record.get("producer_organisms") or []}
+        for occurrence in record.get("occurrences") or []:
+            if occurrence.get("taxon_id") in producers and \
+                    "corroborate" not in (occurrence.get("notes") or ""):
+                offenders.append((record["identifier"], occurrence.get("taxon_id")))
+    assert not offenders, f"uncommented producer/occurrence overlap: {offenders[:5]}"

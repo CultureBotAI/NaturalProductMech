@@ -35,42 +35,6 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:3252
   taxon_id: NCBITaxon:1908
   taxon_source: NCBITaxon
-- taxon_label: Streptomyces globisporus
-  source: CHEBI
-  evidence:
-  - reference: PMID:21250756
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:3252
-  taxon_id: NCBITaxon:1908
-  taxon_source: NCBITaxon
-  detection_context: SB 1022
-- taxon_label: Streptomyces globisporus
-  source: CHEBI
-  evidence:
-  - reference: PMID:21250756
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:3252
-  taxon_id: NCBITaxon:1908
-  taxon_source: NCBITaxon
-  detection_context: SB 1023
-- taxon_label: Streptomyces globisporus
-  source: CHEBI
-  evidence:
-  - reference: PMID:21250756
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:3252
-  taxon_id: NCBITaxon:1908
-  taxon_source: NCBITaxon
-  detection_context: SB 1014
-- taxon_label: Streptomyces globisporus
-  source: CHEBI
-  evidence:
-  - reference: PMID:21250756
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:3252
-  taxon_id: NCBITaxon:1908
-  taxon_source: NCBITaxon
-  detection_context: SB 1021
 - taxon_label: Streptomyces globisporus C-1027
   source: CHEBI
   evidence:
@@ -79,6 +43,8 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:3252
   taxon_id: NCBITaxon:1172567
   taxon_source: NCBITaxon
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 - taxon_label: Streptomyces sp. CB00657
   source: CHEBI
   evidence:
@@ -223,7 +189,7 @@ discussions:
     They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:29:10Z'
+- timestamp: '2026-09-08T06:36:45Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -39,7 +39,8 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:167561
   taxon_id: NCBITaxon:398006
   taxon_source: NCBITaxon
-  notes: 'GenBank: DQ787200.1'
+  notes: 'GenBank: DQ787200.1 This taxon is also recorded as a producer, from a different
+    source and citation. The two corroborate each other rather than duplicating.'
 - taxon_label: Heteroscytonema crispum
   source: CHEBI
   evidence:
@@ -49,15 +50,6 @@ occurrences:
   taxon_id: NCBITaxon:439476
   taxon_source: NCBITaxon
   detection_context: CAWBG72
-- taxon_label: Heteroscytonema crispum
-  source: CHEBI
-  evidence:
-  - reference: PMID:30296060
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:167561
-  taxon_id: NCBITaxon:439476
-  taxon_source: NCBITaxon
-  detection_context: CAWBG524
 - taxon_id: NCBITaxon:1129274
   taxon_label: Saxidomus nuttalli
   taxon_source: NCBITaxon
@@ -263,7 +255,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:29:17Z'
+- timestamp: '2026-09-08T06:36:52Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
