@@ -142,6 +142,18 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q26827369 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+- taxon_id: NCBITaxon:1216
+  taxon_label: Prochloron didemni
+  taxon_source: NCBITaxon
+  source: CYANOMETDB
+  evidence:
+  - reference: DOI:10.1073/pnas.0501424102
+    evidence_type: DATABASE_ASSERTION
+    notes: CyanoMetDB isolation report, manually curated from the primary literature;
+      structure confirmed by no.
+  detection_context: strain n.a. collected in the Republic of Palau in 2002
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 bgc_class:
 - RIBOSOMAL
 xrefs:
@@ -184,7 +196,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:48:26Z'
+- timestamp: '2026-09-08T07:14:33Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

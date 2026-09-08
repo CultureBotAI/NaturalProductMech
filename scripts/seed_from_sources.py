@@ -349,6 +349,13 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     for row in inventories.get("lotus_occurrences") or []:
         lotus_by_key[row["standard_inchi_key"]].append(row)
 
+    # CyanoMetDB isolation reports. Occurrences, not producers: a strain
+    # designation says the compound was FOUND in material from that strain, not
+    # that anyone showed the strain makes it.
+    cyano_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in inventories.get("cyanometdb_occurrences") or []:
+        cyano_by_key[row["standard_inchi_key"]].append(row)
+
     # BindingDB's own-curated affinities. Only rows its Curation/DataSource
     # column marks as BindingDB's own reach this inventory; the ChEMBL-derived
     # rows in the same file are share-alike and were filtered at extraction.
@@ -565,6 +572,33 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             }
             if row["organism_wikidata"]:
                 occurrence["notes"] = f"Wikidata organism {row['organism_wikidata']}"
+            occurrences.append(occurrence)
+
+        for row in cyano_by_key.get(key) or []:
+            occurrence: dict[str, Any] = {
+                "taxon_id": row["taxon_id"],
+                "taxon_label": row["taxon_label"],
+                "taxon_source": "NCBITaxon",
+                "source": "CYANOMETDB",
+                "evidence": [{
+                    "reference": row["reference"],
+                    "evidence_type": "DATABASE_ASSERTION",
+                    "notes": (
+                        "CyanoMetDB isolation report, manually curated from the primary "
+                        "literature"
+                        + (f"; structure confirmed by {row['nmr_used']}" if row["nmr_used"] else "")
+                        + "."
+                    ),
+                }],
+            }
+            context = " ".join(
+                x for x in (
+                    f"strain {row['strain']}" if row["strain"] else "",
+                    row["field_sample"] if row["field_sample"] else "",
+                ) if x
+            )
+            if context:
+                occurrence["detection_context"] = context[:200]
             occurrences.append(occurrence)
 
         # De-duplicate on (taxon, reference). Two routes produce exact

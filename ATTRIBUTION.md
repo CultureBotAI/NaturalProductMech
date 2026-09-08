@@ -73,6 +73,15 @@ Jones MR, Pinto E, Torres MA, et al. CyanoMetDB, a comprehensive public
 database of secondary metabolites from cyanobacteria. *Water Res.*
 2021;196:117017. doi:10.1016/j.watres.2021.117017
 
+**CyanoMetDB** — Eawag and an international consortium. CC BY 4.0. Supplies
+manually curated cyanobacterial metabolite isolation reports with genus,
+species, strain and primary references.
+<https://www.eawag.ch/en/department/uchem/projects/cyanometdb/>
+
+Jones MR, Pinto E, Torres MA, et al. CyanoMetDB, a comprehensive public
+database of secondary metabolites from cyanobacteria. *Water Res.*
+2021;196:117017. doi:10.1016/j.watres.2021.117017
+
 **PubChem** — NCBI, NLM, NIH. Public domain (US Government work), with reuse
 conditions set by each contributing source, so only structures for identifiers
 an adopted source already cross-references are used.
