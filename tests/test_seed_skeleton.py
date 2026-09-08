@@ -551,3 +551,18 @@ def test_a_cyanometdb_row_is_an_occurrence_with_its_strain_as_context():
     assert "PCC 7806" in occurrence["detection_context"]
     # It must not have become a producer claim.
     assert [p["taxon_label"] for p in doc["producer_organisms"]] == ["Saccharopolyspora erythraea"]
+
+
+def test_the_genus_fallback_is_for_counting_and_never_for_resolving():
+    """CyanoMetDB has no taxids, and a genus match under a species label would
+    put an id and a label denoting different things on one occurrence. The
+    genus set exists so the two rejection reasons can be told apart (#32)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        "extract_cyanometdb", REPO_ROOT / "scripts" / "extract_cyanometdb.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    known = {"microcystis aeruginosa": "1126", "nostoc punctiforme": "272131"}
+    assert module.resolved_genera(known) == {"microcystis", "nostoc"}
+    # The header spelling trap: reading the correct spelling yields nothing.
+    assert module.INCHIKEY_COLUMN == "InChlKey"

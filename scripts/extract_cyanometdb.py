@@ -98,6 +98,21 @@ def corpus_keys() -> set[str]:
         return {row["standard_inchi_key"] for row in csv.DictReader(fh, delimiter="\t")}
 
 
+def resolved_genera(known: dict[str, str]) -> set[str]:
+    """Genus names the corpus can resolve, for counting only.
+
+    Deliberately NOT used to resolve a row: a genus match under a species label
+    would put an identifier and a label that denote different things on one
+    occurrence. It exists so the two rejection reasons can be told apart —
+    "only the genus is known" is a different gap from "nothing is known", and
+    the first is what adopting a taxonomy source would close.
+
+    Hoisted out of the row loop, where it was rebuilt over all resolved names
+    on every unresolved row (#32).
+    """
+    return {name.split()[0] for name in known}
+
+
 def resolved_taxa() -> dict[str, str]:
     """Organism name -> NCBI taxid, from taxa the corpus already resolved.
 
@@ -131,6 +146,7 @@ def first_reference(row: dict[str, str]) -> str:
 def extract(path: Path, keys: set[str], known: dict[str, str]) -> tuple[list[dict], Counter]:
     counts: Counter[str] = Counter()
     rows: list[dict] = []
+    genera = resolved_genera(known)
     with path.open(newline="", encoding="utf-8", errors="replace") as fh:
         for row in csv.DictReader(fh):
             counts["rows_total"] += 1
@@ -148,9 +164,7 @@ def extract(path: Path, keys: set[str], known: dict[str, str]) -> tuple[list[dic
                 # is an organism nothing has resolved, the other is one only a
                 # genus is known for, and approximating the second would put a
                 # genus id under a species label.
-                if genus and genus.split("/")[0].lower() in {
-                    n.split()[0] for n in known
-                }:
+                if genus and genus.split("/")[0].lower() in genera:
                     counts["rejected_genus_level_only"] += 1
                 else:
                     counts["rejected_unresolvable_taxon"] += 1
