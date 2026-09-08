@@ -1,19 +1,28 @@
 #!/usr/bin/env python3
-"""Prove data/natural_products/ is exactly what data/raw/ produces.
+"""Check the corpus against its lockfile: what exists, and where it is filed.
 
-Schema validation checks each record's SHAPE. Without this, a hand-edited or
-drifted record passes every other gate: the fields would still be well formed
-and the corpus would still say something the sources do not.
+NOT a reproduction check. This does not read `data/raw/` and cannot tell you
+that a record is what the sources produce — the harmonizer that would rebuild
+one is M2 (PLAN.md section 7), and until then there is nothing to reproduce
+from. It was briefly named "corpus reproduction" in the quality gate, which
+claimed exactly the guarantee it does not provide (#11).
 
-What it compares is deliberately partial. Seeder-owned fields — identity,
-label, structure, classification, source concepts, grounding, and the
-source-marked producer, occurrence and gene-cluster items — must reproduce
-exactly. Curator-owned fields are NOT compared, or curation would make this
-check permanently red.
+What it does check, both of which are real:
 
-The consequence is worth stating rather than discovering: this cannot catch a
-FABRICATED claim. A hand-added producer citing an invented PMID, or a hand flip
-of curation_status to REVIEWED, passes. That is what review is for.
+  * PATHS.tsv and the filesystem agree in both directions. A record with no
+    lockfile row is an unrecorded write; a row with no file is a rename that
+    skipped the lockfile, and slugs are published URLs.
+  * Each record's np_pathway matches its locked value. That pin is what stops a
+    later NPClassifier release moving a record between directories, and so
+    moving a published URL, without a curator accepting it.
+
+When M2 lands the harmonizer, reproduction is added as its own check under its
+own name. It will compare seeder-owned fields only — identity, structure,
+classification, source concepts, and the source-marked producer, occurrence and
+gene-cluster items — because comparing curator-owned fields would make the
+check permanently red the first time anyone curated anything. And it still will
+not catch a FABRICATED claim: a hand-added producer citing an invented PMID
+passes every gate. That is what review is for.
 
     python scripts/verify_corpus.py
     python scripts/verify_corpus.py --summary
@@ -72,15 +81,15 @@ def main() -> int:
                             f"locked {locked_pathway[rel]!r}")
 
     if problems:
-        print("corpus verification FAILED:", file=sys.stderr)
+        print("lockfile integrity check FAILED:", file=sys.stderr)
         print("\n".join(problems), file=sys.stderr)
         return 1
 
     if not rows:
-        print("corpus verification OK: the corpus is empty (expected at M1; "
+        print("lockfile integrity OK: the corpus is empty (expected at M1; "
               "seeding is M2, see PLAN.md section 7)")
         return 0
-    print(f"corpus verification OK: {len(rows)} records reproduce from their inputs")
+    print(f"lockfile integrity OK: {len(rows)} records, each filed where PATHS.tsv pins it")
     if args.summary:
         print(f"  lockfile rows: {len(rows)}, files on disk: {len(on_disk)}")
     return 0

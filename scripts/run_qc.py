@@ -52,9 +52,10 @@ COMMANDS = [
         "Closed-mode validation checks every record's shape, including unknown fields.",
     ),
     (
-        "corpus reproduction",
+        "lockfile integrity",
         [sys.executable, "scripts/verify_corpus.py"],
-        "A schema-valid hand edit is still invalid unless the corpus reproduces from data/raw/.",
+        "Every record is recorded in PATHS.tsv and filed where its pinned pathway says. "
+        "Reproduction from data/raw/ is a separate check and arrives with the seeder (#11).",
     ),
     (
         "corpus report",

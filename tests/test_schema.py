@@ -99,9 +99,35 @@ def test_source_concepts_are_required_because_attribution_is_per_record(schema):
     assert record["source_concepts"]["required"] is True
 
 
+# sha256 of the claw-governed modules at the pinned ref in
+# scripts/.vendored_canon_ref. Pinned here rather than only compared against a
+# sibling checkout, because CI checks out one repository and the sibling
+# comparison therefore always skipped there — guarding drift exactly where it
+# could not see it (#12). Changing a vendored file means changing it in claw and
+# advancing the pin; updating a hash without that is the mistake this catches.
+VENDORED_SHA256 = {
+    "mech_shared.yaml": "1a5e21eb2ee9f3584ff6af3a6906b1d442e18c41de405b1bf907c20f44eafa2a",
+    "history.yaml": "b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d",
+}
+
+
+@pytest.mark.parametrize("name", sorted(VENDORED_SHA256))
+def test_vendored_schema_modules_match_the_pinned_hash(name):
+    """Runs everywhere, including CI. No sibling checkout required."""
+    actual = hashlib.sha256((SCHEMA_DIR / name).read_bytes()).hexdigest()
+    assert actual == VENDORED_SHA256[name], (
+        f"{name} has drifted from the vendored copy at "
+        f"{(Path(__file__).resolve().parents[1] / 'scripts' / '.vendored_canon_ref').read_text().strip()}; "
+        f"edit it in claw and advance the pin, do not edit it here"
+    )
+
+
 def test_shared_mech_modules_are_byte_identical_to_the_fleet():
-    """mech_shared.yaml and history.yaml are vendored from claw and must not be
-    edited here. Compared against AntibioticMech, which carries the same pin."""
+    """The extra fleet-wide check, when a sibling checkout is available.
+
+    A pinned hash proves this repository has not drifted. This proves the fleet
+    has not drifted apart, which a pinned hash cannot.
+    """
     if not ANTIBIOTICMECH_SHARED.exists():
         pytest.skip("sibling AntibioticMech checkout not present")
     for name in ("mech_shared.yaml", "history.yaml"):

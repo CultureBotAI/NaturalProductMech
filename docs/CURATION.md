@@ -110,3 +110,26 @@ write_validated_natural_product(doc, path)
 ```
 
 If no substantive field changed, do not write and do not append an event.
+
+## Opening a Discussion
+
+`Discussion` and `Dataset` come from the vendored `mech_shared.yaml`, and their
+field names are not guessable from prose — it is `discussion_id`, not
+`local_id`, and `prompt` is required beside it. `tests/conftest.py` carries
+schema-valid fixtures for both; copy those shapes rather than inventing one.
+
+```yaml
+discussions:
+- discussion_id: producer-attribution
+  kind: CURATION_TODO          # OPEN_QUESTION | KNOWLEDGE_GAP | CONTROVERSY | ...
+  status: OPEN                 # OPEN | UNDER_DISCUSSION | RESOLVED | ARCHIVED
+  prompt: >-
+    Is the sponge the producer, or its bacterial symbiont? The isolation report
+    describes a whole-animal extract and does not distinguish them.
+  rationale: >-
+    Recorded as an occurrence rather than a producer claim until an axenic
+    culture, a characterized cluster, or a feeding study separates them.
+```
+
+A discussion is for a concrete unresolved question whose answer would change
+the record. It is not a placeholder for every empty optional field.

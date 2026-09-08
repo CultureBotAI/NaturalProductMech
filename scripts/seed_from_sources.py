@@ -143,7 +143,13 @@ def choose_pathway(pathway_results: list[str]) -> str:
     return "UNCLASSIFIED"
 
 
-def record_path(identifier: str, pathway: str, slug: str) -> Path:
+# Keys the seeder uses internally and strips before writing. A record's YAML
+# must contain only schema fields, and closed validation would reject the rest.
+INTERNAL_PREFIX = "_"
+
+
+def record_path(pathway: str, slug: str) -> Path:
+    """Where a record lives. The directory IS the filing decision."""
     return CORPUS_DIR / PATHWAY_DIRS.get(pathway, "unclassified") / f"{slug}.yaml"
 
 
@@ -177,16 +183,19 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     )
 
 
-def write_records(records: list[dict[str, Any]], *, only: str | None = None) -> int:
+def write_records(records: list[dict[str, Any]], *, only: str | None = None,
+                  limit: int | None = None) -> int:
     written = 0
     rows: list[dict[str, str]] = []
     for doc in records:
         if only and doc["identifier"] != only:
             continue
+        if limit is not None and written >= limit:
+            break
         slug = doc["_slug"]
         pathway = doc["np_pathway"]
-        path = record_path(doc["identifier"], pathway, slug)
-        payload = {k: v for k, v in doc.items() if not k.startswith("_")}
+        path = record_path(pathway, slug)
+        payload = {k: v for k, v in doc.items() if not k.startswith(INTERNAL_PREFIX)}
         record_curation_event(
             payload,
             curator="seed_from_sources",
@@ -205,8 +214,14 @@ def write_records(records: list[dict[str, Any]], *, only: str | None = None) -> 
             "path": str(path.relative_to(REPO_ROOT)),
         })
         written += 1
-    if rows:
+    # A partial run must not rewrite the whole lockfile: it would drop every
+    # record the run did not touch. `--prune` is already refused on a partial
+    # run for the same reason.
+    if rows and only is None and limit is None:
         write_lockfile(rows)
+    elif rows:
+        print(f"partial run: wrote {len(rows)} record(s) but left PATHS.tsv alone",
+              file=sys.stderr)
     return written
 
 
@@ -266,7 +281,7 @@ def main() -> int:
         print(f"dry run: {len(records)} records would be written")
         return 0
 
-    written = write_records(records, only=args.only)
+    written = write_records(records, only=args.only, limit=args.limit)
     print(f"wrote {written} records")
     return 0
 

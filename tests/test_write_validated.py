@@ -106,3 +106,24 @@ def test_emission_options_are_shared_not_reimplemented(minimal_record):
     actually write, and then prove nothing."""
     assert EMIT_OPTS["sort_keys"] is False
     assert emit_natural_product_yaml(minimal_record) == yaml.safe_dump(minimal_record, **EMIT_OPTS)
+
+
+def test_a_record_carrying_a_discussion_and_a_dataset_validates(
+    minimal_record, host_symbiont_discussion, producer_genome_dataset
+):
+    """The vendored shared classes are reachable from a record, and the shapes
+    the fixtures document are the ones that pass (#14).
+
+    Nothing exercised `Discussion` or `Dataset` before, while both the curation
+    doc and an integrity test depend on them — so the requirement and the shape
+    it requires had never been checked together.
+    """
+    minimal_record["discussions"] = [host_symbiont_discussion]
+    minimal_record["datasets"] = [producer_genome_dataset]
+    assert validate_natural_product(minimal_record) == []
+
+
+def test_a_discussion_without_its_required_fields_is_refused(minimal_record):
+    """`local_id` is the plausible guess and it is wrong."""
+    minimal_record["discussions"] = [{"local_id": "d1", "prompt": "who makes it?"}]
+    assert validate_natural_product(minimal_record)

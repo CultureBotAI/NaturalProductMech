@@ -59,3 +59,43 @@ def minimal_record() -> dict[str, Any]:
         "grounding_status": "EXACT",
         "curation_status": "SEEDED",
     }
+
+
+@pytest.fixture
+def host_symbiont_discussion() -> dict[str, Any]:
+    """A schema-valid `Discussion`, in the shape docs/CURATION.md asks for.
+
+    The field names come from the vendored `mech_shared.yaml` and are not
+    guessable: it is `discussion_id`, not `local_id`, and `prompt` is required
+    alongside it. Writing one by hand from the prose instructions produces
+    validation errors, which is why this fixture exists (#14).
+
+    The content is the corpus's signature open question: a compound isolated
+    from an invertebrate whose real producer may be a symbiont.
+    """
+    return {
+        "discussion_id": "producer-attribution",
+        "kind": "CURATION_TODO",
+        "status": "OPEN",
+        "prompt": (
+            "Is the sponge the producer, or its bacterial symbiont? The isolation "
+            "report describes a whole-animal extract and does not distinguish them."
+        ),
+        "rationale": (
+            "Recorded as an occurrence rather than a producer claim until an "
+            "axenic culture, a characterized cluster, or a feeding study separates "
+            "host from symbiont."
+        ),
+    }
+
+
+@pytest.fixture
+def producer_genome_dataset() -> dict[str, Any]:
+    """A schema-valid `Dataset`: the producer's genome assembly."""
+    return {
+        "accession": "GCF_000010725.1",
+        "title": "Saccharopolyspora erythraea NRRL 2338 genome assembly",
+        "dataset_type": "GENOMICS",
+        "repository": "NCBI_ASSEMBLY",
+        "organism": "Saccharopolyspora erythraea NRRL 2338",
+    }
