@@ -107,13 +107,25 @@ a curator or a producer-grade source supports it. The seeder never promotes.
 
 MIBiG makes the producer grade machine-readable, which is why it anchors the
 corpus: each locus carries `evidence[].method` from a controlled vocabulary.
-The 4.0 release's distribution across entries is knockout studies 542,
-heterologous expression 638, enzymatic assays 284, expression correlated with
-production 219, genomic–metabolomic correlation 82, in-vitro expression 25, and
-homology-based prediction 31. Everything but the last is producer-grade;
-`Homology-based prediction` is not, and lands in the worklist. That mapping
-lives in `conf/producer_evidence.tsv` so it can be argued with rather than
-buried in the extractor.
+That vocabulary does not divide in two, so neither does the mapping (#3). Three
+tiers, written in `conf/producer_evidence.tsv` so they can be argued with rather
+than buried in the extractor:
+
+| `evidence_basis` | MIBiG methods | 4.0 entries | What it shows |
+|---|---|---:|---|
+| `BGC_CHARACTERIZED` | Heterologous expression; Knock-out studies; Enzymatic assays; In vitro expression | 638 / 542 / 284 / 25 | This cluster makes this compound — sufficiency or necessity, shown experimentally |
+| `BGC_CORRELATED` | Gene expression correlated with compound production; Correlation of genomic and metabolomic data | 219 / 82 | Expression and production move together. Consistent with this cluster being responsible, and equally consistent with co-regulation, a neighbouring cluster, or a shared precursor |
+| not producer-grade | Homology-based prediction | 31 | A prediction. Goes to the worklist, never to `producer_organisms` |
+
+Both of the first two tiers are producer claims and both are written to
+`producer_organisms`. The distinction is not decoration: roughly 300 entries sit
+in the correlational tier, and collapsing them into the characterized tier would
+reintroduce, one level down and harder to see, exactly the overstatement the
+producer-versus-occurrence split exists to prevent. A consumer who needs
+causal evidence filters on `BGC_CHARACTERIZED`; one who needs coverage takes
+both. Curator-supplied bases — `HETEROLOGOUS_EXPRESSION`, `ISOTOPE_FEEDING`,
+`AXENIC_CULTURE`, `SOURCE_ASSERTION` — sit alongside these for claims that come
+from literature rather than from MIBiG.
 
 ### 2.4 Phased scope, by producer kingdom
 
@@ -172,14 +184,14 @@ Replaced:
 
 | AntibioticMech | NaturalProductMech | Why |
 |---|---|---|
-| `antimicrobial_class` (filing) | `np_pathway` (filing) — NPClassifier's seven pathways: `ALKALOIDS`, `AMINO_ACIDS_AND_PEPTIDES`, `CARBOHYDRATES`, `FATTY_ACIDS`, `POLYKETIDES`, `SHIKIMATES_AND_PHENYLPROPANOIDS`, `TERPENOIDS`, plus `UNCLASSIFIED` | Directory and report row. Chosen because it is computable from the structure alone, so **every** record can be filed — most records have no gene cluster. NPClassifier's ontology, models and data are CC0. Computed, and the record says so with model version. |
+| `antimicrobial_class` (filing) | `np_pathway` (filing) — NPClassifier's seven pathways: `ALKALOIDS`, `AMINO_ACIDS_AND_PEPTIDES`, `CARBOHYDRATES`, `FATTY_ACIDS`, `POLYKETIDES`, `SHIKIMATES_AND_PHENYLPROPANOIDS`, `TERPENOIDS`, plus `UNCLASSIFIED` | Directory and report row. Chosen because it is computable from the structure alone, so **every** record can be filed — most records have no gene cluster. NPClassifier's ontology, models and data are CC0. Computed, pinned, and versioned: see §3.4. |
 | — | `bgc_class` (multivalued) — MIBiG 4.0's cluster vocabulary: `PKS`, `NRPS`, `RIBOSOMAL`, `TERPENE`, `SACCHARIDE`, `OTHER`, with `bgc_subclass` free text | The class of the *gene cluster* is a different claim from the class of the *molecule*, and MIBiG 4.0 separated them deliberately — it removed `alkaloid` as a biosynthetic class for exactly this reason. Asserted, only where a BGC exists. |
 | `activity_roles` | `ecological_roles` (ChEBI roles: siderophore, toxin, pigment, signal…) + `compound_classes` (every asserted molecule-level class, e.g. MIBiG's Dewick-based ontology, unreduced) | Filing is one decision; the evidence stays |
 | `structural_class` | `structural_class` (kept) + `npclassifier_superclass` / `npclassifier_class` (computed, versioned) | Structure and biosynthesis are different axes. ChemOnt/ClassyFire terms are **not** carried: ClassyFire's terms restrict commercial redistribution, so a ChemOnt string arriving inside an otherwise-CC BY record is dropped. |
 | `mode_of_action` (antimicrobial enum) | `bioactivity_summary` (multivalued `BioactivityClassEnum`: ANTIBACTERIAL, ANTIFUNGAL, CYTOTOXIC, ANTIVIRAL, ANTIPARASITIC, ENZYME_INHIBITOR, SIGNALLING, TOXIN, IMMUNOMODULATOR, …) | A natural product's activities are plural; each summary value must be backed by at least one `bioactivities` item or a source assertion |
 | `activity_spectrum` (MIC observations) | `bioactivities` (`BioactivityObservation`: target organism / cell line / enzyme, assay, value, units, qualifier, evidence) | Generalised beyond MIC; the "an MIC without units is not a measurement" rule generalises to every value |
 | `resistance_mechanisms` | dropped (AntibioticMech owns it) | Section 4 |
-| `producer_organisms` (MIBiG slice) | `producer_organisms` (first-class, with `evidence_basis`: BGC_CHARACTERIZED / HETEROLOGOUS_EXPRESSION / ISOTOPE_FEEDING / AXENIC_CULTURE / SOURCE_ASSERTION) + `occurrences` | Section 2.3 |
+| `producer_organisms` (MIBiG slice) | `producer_organisms` (first-class, with `evidence_basis`: `BGC_CHARACTERIZED` / `BGC_CORRELATED` / `HETEROLOGOUS_EXPRESSION` / `ISOTOPE_FEEDING` / `AXENIC_CULTURE` / `SOURCE_ASSERTION`) + `occurrences` | Section 2.3, which grades the first two from MIBiG's own locus-evidence vocabulary |
 | — | `biosynthetic_gene_clusters` (`BiosyntheticGeneCluster`: MIBiG accession + version, organism, genome accession, locus coordinates, biosynthetic class, `reviewed`, evidence) | The origin layer this corpus exists for |
 | — | `biosynthetic_pathway` (`PathwayStep` list: enzyme (UniProt / EC / Rhea), substrate, product, evidence) — optional, curated | Feeds biosynthesis causal graphs |
 | — | `congener_of` / `derivatives` | Family relations without merging |
@@ -208,6 +220,38 @@ Same as AntibioticMech and stated in `docs/CURATION.md`:
 and `BIOACTIVITY` (compound → target engagement → cellular effect). AntibioticMech's
 antimicrobial mode-of-action graphs are not duplicated; a `related_records`
 link points at them.
+
+### 3.4 The filing pathway is computed, so it is pinned and versioned (#2)
+
+Filing by a model's output creates a hazard the fleet has already been bitten
+by: a model upgrade could move records between directories, changing published
+URLs, for compounds whose chemistry has not changed. AntibioticMech#9 is the
+same failure from a different trigger — a re-seed discarding curated fields
+because a record moved directory. Three rules remove it.
+
+**The classifier runs at extraction time, not seed time.** NPClassifier output
+is a committed inventory, `data/raw/npclassifier.tsv`, keyed by Standard
+InChIKey and carrying pathway, superclass, class, the glycoside flag and the
+model version, with its sha256 in `data/raw/MANIFEST.yaml` like every other
+inventory. This is not a special case; it is what makes the pipeline offline and
+`verify-corpus` meaningful. A seed-time network call to a classifier API would
+break both.
+
+**The pathway is pinned per record at first seed.** `PATHS.tsv` already locks
+the identifier-to-slug mapping; it carries the filing pathway alongside it. A
+later inventory that disagrees does **not** move the file.
+
+**Disagreement is a curation queue, not a migration.** `just worklist --queue
+pathway-drift` lists records whose committed pathway differs from the current
+inventory. A curator accepts or rejects each one, and accepting moves the record
+through the ordinary rename path, with `RETIRED.tsv` reserving the old slug so
+the published URL keeps resolving. So a model upgrade produces a reviewable list
+and zero silent moves.
+
+The cost is honest and worth stating: the corpus can carry filing decisions
+made by an older model than the one in `data/raw/`. That is the right trade for
+a published site, and the drift is visible in one command rather than invisible
+in a diff of several thousand moved files.
 
 ## 4. Joining AntibioticMech and the rest of the fleet
 
@@ -303,6 +347,17 @@ MassBank (CC BY, per-record), Paired Omics Data Platform (CC BY, but only 117
 BGC-to-spectrum links), BiG-FAM (CC BY, frozen on 2020 data), antiSMASH-DB (no
 data licence published, and no compound assignment anyway), Rhea (CC BY, for
 pathway steps), NP-KG.
+
+**Two sources proceed with their licence deferred** (owner decision,
+2026-09-07). NPASS and CO-ADD are the landscape's two best licence-ask targets,
+and both are parked for a batched resolution later. They move to `EVALUATING`:
+the technical work proceeds now — coverage against Phase A, InChIKey join rates,
+the extractor and its dry run — and seeding does not.
+`check_source_queue.py` refuses an ADOPTED row under unverified terms, which is
+the gate the corpus's CC BY 4.0 promise rests on, so nothing here weakens it.
+For CO-ADD the evaluation is additionally bounded by its own terms, which forbid
+systematic download; that slice is evaluated through ChEMBL and published
+summaries instead.
 
 **Refused for seeding, kept as reference:** Norine (CC BY-NC-SA), NP-MRD
 (CC BY-NC), CMNPD (CC BY-NC-SA), NPBS Atlas (CC BY-NC), KNApSAcK (redistribution

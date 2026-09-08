@@ -99,9 +99,14 @@ versioned input. Pick the narrowest reproducible path that covers the compound:
     is the placeholder `AAAA…` in essentially every entry; only 25 of 3,013
     carry a real reviewer id. AntibioticMech's reviewer gate does not transfer.
     The producer-evidence gate replaces it: map `loci[].evidence[].method`
-    through `conf/producer_evidence.tsv`. `Homology-based prediction` is not
-    producer-grade and goes to the worklist; knockouts, heterologous
-    expression, enzymatic assays and the rest are.
+    through `conf/producer_evidence.tsv`, which grades in three tiers.
+    Heterologous expression, knockouts, enzymatic assays and in-vitro
+    expression are `BGC_CHARACTERIZED`. The two correlation methods — expression
+    correlated with production, and genomic–metabolomic correlation — are
+    `BGC_CORRELATED`: still producer claims, but consistent with co-regulation
+    or a neighbouring cluster, so they are marked rather than promoted.
+    `Homology-based prediction` is not producer-grade at all and goes to the
+    worklist.
 
   MIBiG stores SMILES and never an InChIKey, so the extractor computes the
   Standard InChIKey locally with the pinned RDKit. A compound record with no

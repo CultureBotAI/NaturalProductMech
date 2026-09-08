@@ -154,7 +154,13 @@ adds the extractor path, the committed inventory, its manifest entry and its
 - **A compound class, extract, fraction or preparation is never a record.**
 - **Occurrence is not production.** `producer_organisms` requires
   biosynthesis-grade evidence; `occurrences` requires a citation; the seeder
-  never promotes one to the other.
+  never promotes one to the other. Within `producer_organisms`,
+  `BGC_CORRELATED` is not `BGC_CHARACTERIZED`: correlation between expression
+  and production is a weaker claim than a knockout, and it stays marked as one.
+- **The filing pathway is pinned, not recomputed.** `np_pathway` comes from a
+  committed, version-pinned NPClassifier inventory and is locked per record in
+  `PATHS.tsv`. A newer model that disagrees produces a `pathway-drift` worklist
+  entry for a curator, never a silent directory move.
 - **Computed is not asserted.** NPClassifier, ClassyFire and NP-likeness carry
   tool and version and never pose as a source assertion.
 - **`np_pathway` is a filing decision, and it is computed.** It is

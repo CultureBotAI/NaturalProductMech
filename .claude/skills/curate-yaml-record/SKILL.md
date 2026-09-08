@@ -123,7 +123,11 @@ relationship, organism, and strength of wording. Distinguish:
 **Producer claims.** For each `producer_organisms` item, the cited evidence
 must show biosynthesis by that taxon: a characterized gene cluster, heterologous
 expression, isotope feeding, or production in axenic culture. "Isolated from"
-is an occurrence. If the source only supports occurrence, move the claim to
+is an occurrence. Check that `evidence_basis` matches what the source actually
+shows — `BGC_CHARACTERIZED` needs sufficiency or necessity demonstrated, while
+a cluster whose only support is that expression and production correlate is
+`BGC_CORRELATED`, and quietly upgrading one to the other is the same
+overstatement as writing an occurrence into the producer field. If the source only supports occurrence, move the claim to
 `occurrences` (through the guarded path) and say so. Watch for the host–symbiont
 trap: a compound isolated from a sponge, tunicate, lichen or plant whose actual
 producer is a bacterium or fungus. Watch for strain: a species-level producer
