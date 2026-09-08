@@ -1,0 +1,22 @@
+# Which ChEBI roles admit a compound to this corpus.
+#
+# INCOMPLETE BY DESIGN. The YES rows are a starting set, not a survey: ChEBI's
+# role hierarchy has many more specialized-metabolite roles and each needs its
+# own decision. Adding one is a reviewed change measured by what ELSE that role
+# admits corpus-wide, never a one-compound tweak — a role is a lever on
+# thousands of records.
+#
+# The NO rows are as important as the YES rows and are kept rather than omitted,
+# because "why is bacterial metabolite refused?" is the question that separates
+# this corpus from a metabolite dump. See PLAN.md 2.2 and issue #9.
+role_id	role_label	admits	rationale
+CHEBI:26672	siderophore	YES	An iron-scavenging secondary metabolite. Specialized by definition, and a core Phase A class for bacteria and fungi.
+CHEBI:25540	mycotoxin	YES	A fungal secondary metabolite defined by its toxicity to other organisms. Never a primary metabolite.
+CHEBI:25938	phytotoxin	YES	A secondary metabolite toxic to plants, including the microbial ones this corpus is for.
+CHEBI:73190	antimicrobial agent	YES	Admits natural antibiotics. Overlaps AntibioticMech by design; the two corpora join on InChIKey rather than duplicating.
+CHEBI:75835	quorum sensing signal	YES	A signalling secondary metabolite. Small, well-curated, and squarely in scope.
+CHEBI:25212	metabolite	NO	Admits glucose and ATP. The bare metabolite roles are the reason this allow-list exists.
+CHEBI:75768	bacterial metabolite	NO	Same: every primary metabolite of every bacterium.
+CHEBI:76946	fungal metabolite	NO	Same.
+CHEBI:76924	plant metabolite	NO	Same, and out of Phase A scope besides.
+CHEBI:76507	marine metabolite	NO	A statement about where a compound was found, not about it being a specialized metabolite.

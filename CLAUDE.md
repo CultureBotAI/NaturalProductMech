@@ -2,12 +2,17 @@
 
 Operational guidance for Claude Code and other editing agents in this repository.
 
-**Status (2026-09-07): pre-scaffold.** This repository holds the plan, the
-data-source research, the seeded source queue and the skills. There is no
-schema, seeder, corpus or QC runner yet; `PLAN.md` §7 says in what order they
-arrive. Commands below are the ones the scaffold will provide, named to match
-AntibioticMech so the fleet's tooling and habits carry over. Until they exist,
-a skill that calls one should say so rather than improvise.
+**Status (2026-09-07): scaffolded, corpus empty.** The schema, the guarded
+write path, the gates, the docs and the seeder skeleton exist, and `just qc` is
+green. What does not exist yet is the corpus, because the extractors that
+produce `data/raw/` are M2 (`PLAN.md` §7). Commands marked below as M2 will
+fail or report an empty plan until then, honestly rather than silently.
+
+One gate is deliberately outside `just qc`: `just vendored-sync`. Its checker
+resolves this repository's identity through claw's consumer registry, and
+NaturalProductMech is not admitted to the fleet manifest until M4. The governed
+files ARE vendored byte-identical at the pinned ref, so the failure is on
+identity, not content. Admission adds it to the gate.
 
 ## Repository purpose
 

@@ -1,0 +1,91 @@
+# Sources this repository PLANS to read, staged for M2.
+#
+# Deliberately NOT conf/sources.yaml. That file lists what the pipeline
+# actually reads, and scripts/check_source_queue.py enforces the pair of
+# invariants that makes it meaningful: every source in it needs an ADOPTED
+# queue row, and every ADOPTED row needs a section in it. At M1 the pipeline
+# reads nothing, so putting these blocks there would make both claims false on
+# the first commit.
+#
+# Adopting a source is one pull request that moves its block from here to
+# conf/sources.yaml, moves its queue row to ADOPTED with verified terms, adds
+# the extractor and the committed inventory with its manifest entry, and names
+# it in ATTRIBUTION.md. See CLAUDE.md, "Adopting a data source".
+
+# NOTHING IS ADOPTED YET. This file declares the Phase A intent that M2 will
+# implement; `curation/source_queue.tsv` is the ranked candidate list and
+# `scripts/check_source_queue.py` refuses a queue row claiming ADOPTED that
+# this file does not read.
+
+mibig:
+  name: MIBiG
+  description: >-
+    Minimum Information about a Biosynthetic Gene cluster. Producer organisms
+    with NCBI taxonomy identifiers, gene clusters with GenBank loci and an
+    experimental-evidence vocabulary, cluster class, compound structures and
+    primary references.
+  homepage: https://mibig.secondarymetabolites.org/
+  archive_url: https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz
+  archive_name: mibig_json_4.0.tar.gz
+  version: "4.0"
+  license: CC BY 4.0
+  # Only active entries are read. The release dump also ships retired and
+  # pending entries.
+  status_allowed: [active]
+  # DO NOT gate on `quality`: it reads `questionable` for 2,710 of 3,013 entries
+  # and marks legacy-format entries awaiting re-curation, not doubtful science.
+  # DO NOT gate on the changelog reviewer id: it is the AAAA... placeholder in
+  # 2,988 of 3,013 entries, so a reviewer gate admits 25 entries.
+  # The producer grade comes from conf/producer_evidence.tsv instead.
+  producer_evidence_map: conf/producer_evidence.tsv
+
+chebi:
+  name: ChEBI
+  description: >-
+    Chemical Entities of Biological Interest. Identity, structures, definitions,
+    synonyms, and the specialized-metabolite roles that admit a compound.
+  flat_files_base: https://ftp.ebi.ac.uk/pub/databases/chebi/flat_files/
+  homepage: https://www.ebi.ac.uk/chebi/
+  license: CC BY 4.0
+  # 3-star entries are manually curated; 2-star entries are automatically
+  # imported and are NOT seeded, because an automatic import is exactly where an
+  # unreviewed role assertion enters.
+  min_stars: 3
+  # Which roles admit a compound to this corpus. The bare `metabolite` roles are
+  # deliberately absent: glucose and ATP are bacterial metabolites.
+  role_allow_list: conf/np_roles.tsv
+
+lotus:
+  name: LOTUS
+  description: >-
+    Referenced structure-organism occurrence triples. Fills `occurrences` and
+    never `producer_organisms`: an occurrence may reflect biosynthesis,
+    symbiosis, diet, uptake or contamination, and does not say which.
+  homepage: https://lotus.nprod.net/
+  # CC0 via the Wikidata route (main-namespace structured data). The Zenodo
+  # frozen export is tagged CC BY 4.0 instead, so the route decides the terms
+  # and data/raw/MANIFEST.yaml must record which one was fetched.
+  route: wikidata
+  license: CC0
+  fills: occurrences
+
+pubchem:
+  name: PubChem
+  description: >-
+    Structures for concepts an adopted source names without one. PubChem is an
+    aggregator whose reuse conditions are set per depositor, so this is narrow
+    by design: only CIDs an adopted source already cross-references.
+  homepage: https://pubchem.ncbi.nlm.nih.gov/
+  license: public domain (per-source conditions respected)
+
+npclassifier:
+  name: NPClassifier
+  description: >-
+    The computed filing classification. Runs at EXTRACTION time into a
+    committed, manifest-pinned inventory keyed by Standard InChIKey — never at
+    seed time, which would put a network call inside the offline pipeline.
+  homepage: https://github.com/mwang87/NP-Classifier
+  license: CC0
+  # Pinned per release; recorded on every record in `np_classification`.
+  model_version: null
+
