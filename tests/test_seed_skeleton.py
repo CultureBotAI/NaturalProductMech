@@ -533,3 +533,36 @@ def test_only_bindingdb_curated_rows_may_be_seeded():
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     assert module.CURATED_BY_BINDINGDB == "Curated from the literature by BindingDB"
+
+
+def test_a_cyanometdb_row_is_an_occurrence_with_its_strain_as_context():
+    """A strain designation says where a compound was FOUND. Reading it as
+    production by an axenic culture would make it a producer claim, which the
+    source does not support."""
+    row = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "compound_name": "microcystin-LR",
+        "taxon_id": "NCBITaxon:1126", "taxon_label": "Microcystis aeruginosa",
+        "strain": "PCC 7806", "field_sample": "", "nmr_used": "NMR",
+        "reference": "PMID:12345678",
+    }
+    doc = seed.build_records({"mibig_compounds": [MIBIG_ROW], "cyanometdb_occurrences": [row]})[0]
+    occurrence = next(o for o in doc["occurrences"] if o["source"] == "CYANOMETDB")
+    assert occurrence["taxon_id"] == "NCBITaxon:1126"
+    assert "PCC 7806" in occurrence["detection_context"]
+    # It must not have become a producer claim.
+    assert [p["taxon_label"] for p in doc["producer_organisms"]] == ["Saccharopolyspora erythraea"]
+
+
+def test_the_genus_fallback_is_for_counting_and_never_for_resolving():
+    """CyanoMetDB has no taxids, and a genus match under a species label would
+    put an id and a label denoting different things on one occurrence. The
+    genus set exists so the two rejection reasons can be told apart (#32)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        "extract_cyanometdb", REPO_ROOT / "scripts" / "extract_cyanometdb.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    known = {"microcystis aeruginosa": "1126", "nostoc punctiforme": "272131"}
+    assert module.resolved_genera(known) == {"microcystis", "nostoc"}
+    # The header spelling trap: reading the correct spelling yields nothing.
+    assert module.INCHIKEY_COLUMN == "InChlKey"

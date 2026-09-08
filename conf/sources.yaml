@@ -112,6 +112,24 @@ bindingdb:
   curation_source: Curated from the literature by BindingDB
   fills: molecular_targets
 
+cyanometdb:
+  name: CyanoMetDB
+  description: >-
+    Manually curated cyanobacterial secondary metabolites, from the primary
+    isolation literature, with genus, species, strain and a reference. Fills
+    OCCURRENCES: an isolation report says where a compound was found, and a
+    strain designation is not a demonstration that the strain makes it.
+  homepage: https://www.eawag.ch/en/department/uchem/projects/cyanometdb/
+  zenodo_record: "13854577"
+  version: "v03 (2024-09-28)"
+  license: CC BY 4.0
+  # No NCBI taxonomy identifiers upstream, and Occurrence.taxon_id is required.
+  # Names are resolved against taxa the corpus already resolved through MIBiG
+  # and LOTUS, SPECIES-LEVEL ONLY: a genus fallback would put a genus id under
+  # a species label.
+  taxon_resolution: species-level, from committed inventories
+  fills: occurrences
+
 # ---------------------------------------------------------------------------
 # Scope
 # ---------------------------------------------------------------------------

@@ -66,6 +66,19 @@ extract-bindingdb-dry *args:
 extract-bindingdb *args:
     uv run python scripts/extract_bindingdb.py {{args}}
 
+# Free check once cached: CyanoMetDB rows touching corpus structures.
+extract-cyanometdb-dry *args:
+    uv run python scripts/extract_cyanometdb.py --dry-run {{args}}
+
+# Write cyanometdb_occurrences.tsv, species-level taxon resolution only.
+extract-cyanometdb *args:
+    uv run python scripts/extract_cyanometdb.py {{args}}
+
+# Measure what NPASS would add, without redistributing any of it. Writes a
+# report, never an inventory: NPASS states no licence, so the gate stays shut.
+evaluate-npass:
+    uv run python scripts/evaluate_npass.py
+
 # --- seeding -----------------------------------------------------------------
 # Dry run: harmonize the committed inventories and report the records that WOULD
 # be written, per pathway. No files touched. Empty until M2 adds the extractors.

@@ -43,6 +43,16 @@ occurrences:
 - taxon_id: NCBITaxon:457083
   taxon_label: Tolypothrix tenuis
   taxon_source: NCBITaxon
+  source: CYANOMETDB
+  evidence:
+  - reference: DOI:10.1021/ja01004a076
+    evidence_type: DATABASE_ASSERTION
+    notes: CyanoMetDB isolation report, manually curated from the primary literature;
+      structure confirmed by Yes.
+  detection_context: strain n.a. Palolo Valley, Oahu; Sacred Falls, Oahu, Sabie River
+- taxon_id: NCBITaxon:457083
+  taxon_label: Tolypothrix tenuis
+  taxon_source: NCBITaxon
   source: LOTUS
   evidence:
   - reference: DOI:10.7164/ANTIBIOTICS.41.1048
@@ -297,7 +307,7 @@ discussions:
     BGC0001808. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T06:48:26Z'
+- timestamp: '2026-09-08T07:14:32Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

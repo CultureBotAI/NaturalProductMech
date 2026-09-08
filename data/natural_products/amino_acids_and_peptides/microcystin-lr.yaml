@@ -146,6 +146,16 @@ occurrences:
 - taxon_id: NCBITaxon:1126
   taxon_label: Microcystis aeruginosa
   taxon_source: NCBITaxon
+  source: CYANOMETDB
+  evidence:
+  - reference: DOI:10.1039/p19850002747
+    evidence_type: DATABASE_ASSERTION
+    notes: CyanoMetDB isolation report, manually curated from the primary literature;
+      structure confirmed by yes.
+  detection_context: strain n.a.
+- taxon_id: NCBITaxon:1126
+  taxon_label: Microcystis aeruginosa
+  taxon_source: NCBITaxon
   source: LOTUS
   evidence:
   - reference: DOI:10.1073/PNAS.86.3.770
@@ -390,7 +400,7 @@ discussions:
     BGC0001667. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T06:48:27Z'
+- timestamp: '2026-09-08T07:14:34Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
