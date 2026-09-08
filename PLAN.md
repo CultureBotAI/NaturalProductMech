@@ -233,7 +233,9 @@ refuse to write a record without. Rules:
    BacDive strain data), CultureMech (media in which production was observed),
    ProteinTraitsMech (PKS/NRPS domain records for pathway enzymes). Each is a
    `CrossCorpusLink` with a pinned inventory, none is in the first release.
-5. **KG-Microbe** consumes the corpus through a KGX export (`kgx_export`
+5. **KG-Microbe** ingests no natural-product structure source today — no
+   MIBiG, no NPAtlas, no LOTUS in its current `download.yaml`, measured
+   2026-09-07. It consumes the corpus through a KGX export (`kgx_export`
    capability in claw's fleet manifest) — `Chemical → produced_by → Taxon`,
    `Chemical → has_bgc → Gene cluster`, with Biolink predicates chosen when the
    export is designed. Not in the first release, but the schema keeps the taxon
@@ -258,6 +260,15 @@ terms are curate-only or reference, and an unverified licence blocks adoption.
 | NPClassifier | computed pathway/superclass/class, and the filing decision | CC0 for ontology, models and data (code MIT) | run locally with a pinned model version; stored as computed |
 | CyanoMetDB v3 | manually curated cyanobacterial metabolites with producer and primary reference | CC BY 4.0 on the Zenodo record | small, high quality; cite the record as it asks |
 | AntibioticMech (pinned) | cross-corpus links | CC BY 4.0 (fleet) | pin a commit |
+
+NP-KG, the resource this plan was asked to evaluate, is **not** among them,
+and the reason is not licence but content: it carries no chemical structures at
+all. Its natural-product layer is 613 named phytoconstituents, 153 of which
+have no chemical parent beyond "chemical entity", and no InChIKey, SMILES or
+PubChem identifier appears anywhere in it. It is a curator reference for
+plant–constituent–enzyme pharmacokinetic mechanism, filtered by edge
+provenance, and its merged upstreams make it restricted for redistribution
+regardless. See the research report §6.
 
 **Queued behind licence or identity gates:** COCONUT (its download page claims
 CC0 "without any restrictions" while its own README says every source keeps its

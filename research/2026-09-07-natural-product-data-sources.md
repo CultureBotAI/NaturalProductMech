@@ -14,8 +14,8 @@ authority for detail:
   — MIBiG, antiSMASH-DB, BiG-FAM, Norine, Paired Omics Data Platform, GNPS,
   NP-MRD, MoNA, MassBank, NPClassifier, ClassyFire, MetaCyc, KEGG, Rhea.
 - [np-knowledge-graph-sources](2026-09-07-np-knowledge-graph-sources.md)
-  — NP-KG (Taneja et al.), the NaPDI Center, PheKnowLator, and other
-  natural-product knowledge graphs.
+  — NP-KG (Taneja et al.), the NaPDI Center, PheKnowLator, ENPKG, and the
+  general biomedical knowledge graphs.
 - [np-bioactivity-target-sources](2026-09-07-np-bioactivity-target-sources.md)
   — ChEMBL, BindingDB, PubChem BioAssay, NPASS activities, DrugBank,
   DrugCentral, IUPHAR, Open Targets, and the ethnopharmacology resources.
@@ -235,7 +235,84 @@ links — and no licence on the site, with an "All Rights Reserved" footer over 
 CC BY paper. Both StreptomeDB and antiSMASH-DB are worth an explicit ask; the
 antiSMASH team also maintains MIBiG under CC BY.
 
-### 6. Predicted gene clusters cannot ground a compound record
+### 6. NP-KG carries no chemical structures, and its licence is the most restrictive of its inputs
+
+**Confidence: high** on the structure finding, computed directly from the
+primary OWL and TSV files; **medium** on one licence link, noted below.
+
+NP-KG was the specific resource this research was asked to assess, so the
+finding matters: **it cannot seed a structure-keyed corpus, because it does not
+identify natural products as structures at all.**
+
+Version 3.0.0, June 2024, 1,089,139 nodes and 7,836,115 edges. (The widely
+cited 745,512-node figure is the 2023 paper's earlier build.) Its entire
+natural-product layer is a 651-class OWL extension:
+
+- **613 phytoconstituents**, of which 460 map to a ChEBI class and **153 carry
+  only a minted `napdi.org` name URI whose sole superclass is `CHEBI:24431`,
+  "chemical entity"** — a lowercased name with no chemical parent of any
+  information content.
+- 68 plant or plant-part entities under `PO:0025131`, linked to 34 NCBI
+  Taxonomy identifiers.
+- 716 plant-has-component-constituent edges.
+- **No InChI, InChIKey, SMILES, PubChem CID, UNII, CAS or formula anywhere**,
+  confirmed by grep over the extension file.
+
+So every join from NP-KG to a structure runs through ChEBI, and only for the
+460 constituents that received a ChEBI id — which this corpus can obtain from
+ChEBI directly. The 153 name-only constituents are precisely the compounds
+ChEBI lacks, and NP-KG adds nothing about them beyond a name string and a plant
+association.
+
+The licence position is the second reason. The Zenodo dataset is stamped
+CC BY 4.0 and the code is Apache-2.0, but NP-KG is a merge built on
+PheKnowLator, whose declared inputs include **CTD**, whose terms prohibit
+commercial reproduction without written permission, and **DisGeNET**, which was
+CC BY-NC-SA and has since moved to a commercial model. A merged graph's
+effective terms are the most restrictive of its inputs, so the CC BY 4.0 stamp
+does not describe the whole graph. Classification: RESTRICTED. The CTD terms
+could not be read from the primary page — `ctdbase.org/about/legal.jsp` sits
+behind a human-verification gate that returned only the gate text — so that
+specific link is medium confidence and deserves a browser check before anyone
+relies on the conclusion in either direction.
+
+What NP-KG genuinely offers is curator reference: a plant → constituent →
+CYP/transporter → interacting drug evidence trail for 31 heavily studied
+botanicals, with PubMed identifiers, plus roughly 1,270 hand-curated
+chemical–enzyme edges. Note that its literature layer is machine-read by
+relation extraction and merged into the same flat triple list as curated edges,
+and the paper's own evaluation reports 38.98% congruence for green tea and 50%
+for kratom against ground truth. Anything read out of it must be filtered by
+edge provenance.
+
+Three adjacent findings from the same cluster:
+
+- **All NaPDI Center domains fail DNS as of 2026-09-07.** `repo.napdi.org`
+  returns NXDOMAIN, `napdicenter.org` SERVFAIL, `napdi.org` no A record.
+  Internet Archive has June 2026 snapshots, so this is recent. The NaPDI
+  repository cannot currently be used as a live source.
+- **PrimeKG's Harvard Dataverse record is stamped CC0** while carrying DrugBank-
+  and DisGeNET-derived content. The same licence-laundering pattern as COCONUT,
+  in a different community.
+- **KG-Microbe ingests no natural-product structure source** — no MIBiG, no
+  NPAtlas, no LOTUS in its current `download.yaml`. That is the consumer-side
+  case for this corpus existing, stated as a measurement rather than an
+  assumption.
+
+The one genuinely natural-product-specific knowledge graph found is **ENPKG**,
+which is sample-centric LC-MS/MS annotation: its compound nodes are *putative*
+structural annotations of mass features, ranked by score. That is
+hypothesis-grade chemistry — what was probably in one extract, not what an
+organism is known to produce — so it is a curation lead, not a seed. Its
+deposits are individually licensed, CC BY on some and CC0 on others, so a
+per-deposit check would be required even for reference use.
+
+The useful lead out of this cluster is not a knowledge graph at all. It is
+**GSRS**, the FDA/NCATS Global Substance Registration System, which supplied
+NP-KG's constituent names, is US government public domain, and does carry
+structures and UNIIs. AntibioticMech already reads it.
+
+### 7. Predicted gene clusters cannot ground a compound record
 
 **Confidence: high.** Verified from the live statistics API and both papers.
 
