@@ -40,6 +40,7 @@ bioactivities:
   value: 10.0
   units: uM
   target_enzyme: UniProtKB:1NC3_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -51,6 +52,7 @@ bioactivities:
   value: 10.0
   units: uM
   target_enzyme: UniProtKB:1NC3_B
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -62,6 +64,7 @@ bioactivities:
   value: 48.0
   units: uM
   target_enzyme: UniProtKB:2QTT_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -73,6 +76,7 @@ bioactivities:
   value: 48.0
   units: uM
   target_enzyme: UniProtKB:2QTT_B
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data derived from PDB
   evidence:
   - reference: PMID:12496243
@@ -81,6 +85,9 @@ bioactivities:
       assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:1NC3_A
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:42452
@@ -213,7 +220,7 @@ discussions:
     BGC0002282. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:29Z'
+- timestamp: '2026-09-08T22:37:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

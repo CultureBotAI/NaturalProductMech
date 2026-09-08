@@ -320,6 +320,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202551, deposited by NCGC; assay type Confirmatory.
   value: 5.5059
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Confirmatory qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
   evidence:
   - reference: pubchem.aid:1964105
@@ -327,6 +328,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory.
   value: 8.9552
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: High Throughput Screening for Foot and Mouth Disease Virus Antivirals
   evidence:
   - reference: pubchem.aid:1159524
@@ -334,6 +336,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1159524, deposited by NCGC; assay type Confirmatory.
   value: 5.0119
   units: uM
+  activity_class: ANTIVIRAL
 - assay: 'Late stage assay provider counterscreen results for the probe development
     effort to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization:
     Absorbance-based cell-based assay to identify compounds that are cytotoxic to
@@ -345,6 +348,7 @@ bioactivities:
       Molecular Screening Center; assay type Confirmatory.
   value: 24.7
   units: uM
+  activity_class: CYTOTOXIC
 - assay: 'Late stage assay provider counterscreen results for the probe development
     effort to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization:
     Luminescence-based biochemical AlphaScreen assay to identify inhibitors of HCV
@@ -358,6 +362,7 @@ bioactivities:
   value: 34.8
   units: uM
   target_enzyme: UniProtKB:ABC47431
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Late stage results for the probe development effort to identify inhibitors
     of Hepatitis C Virus (HCV) core protein dimerization: TR-FRET-based biochemical
     dose response assay for HCV core inhibitors'
@@ -370,6 +375,7 @@ bioactivities:
   value: 49.751
   units: uM
   target_enzyme: UniProtKB:ABC47431
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
   evidence:
   - reference: pubchem.aid:1964107
@@ -378,6 +384,7 @@ bioactivities:
   value: 6.2365
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an RCH-ACV wild type WT cells (2C)
   evidence:
@@ -386,6 +393,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
   value: 18.6429
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an RCH-ACV wild type WT cells (2C)
   evidence:
@@ -395,6 +403,7 @@ bioactivities:
   value: 18.6429
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -403,6 +412,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
   value: 23.47
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -412,6 +422,7 @@ bioactivities:
   value: 23.47
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS to identify anti-liver cancer compounds using libraries of approved
     drugs and bioactive compounds
   evidence:
@@ -420,6 +431,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.
   value: 35.4813
   units: uM
+  activity_class: CYTOTOXIC
 - assay: S16 Schwann cell PMP22 intronic element beta-lactamase assay
   evidence:
   - reference: pubchem.aid:624044
@@ -437,6 +449,7 @@ bioactivities:
   value: 18.3362
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
     Papain Counterscreen'
   evidence:
@@ -446,6 +459,7 @@ bioactivities:
   value: 18.3362
   units: uM
   target_enzyme: UniProtKB:P00784
+  activity_class: ENZYME_INHIBITOR
 - assay: TR-FRET-based biochemical high-throughput dose response assay to identify
     inhibitors of Hepatitis C Virus (HCV) core protein dimerization.
   evidence:
@@ -457,6 +471,7 @@ bioactivities:
   value: 29.693
   units: uM
   target_enzyme: UniProtKB:ABC47431
+  activity_class: ENZYME_INHIBITOR
 - assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug
     resistant MV4-11 cells
   evidence:
@@ -499,8 +514,13 @@ bioactivities:
   value: 35.4813
   units: uM
   target_enzyme: UniProtKB:AAP35567
+  activity_class: ENZYME_INHIBITOR
   notes: 14 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ANTIVIRAL
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - TERPENE
 xrefs:
@@ -556,7 +576,7 @@ discussions:
     They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T22:31:31Z'
+- timestamp: '2026-09-08T22:37:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

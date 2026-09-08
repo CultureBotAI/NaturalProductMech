@@ -91,6 +91,7 @@ bioactivities:
   value: 0.5
   units: uM
   target_enzyme: UniProtKB:P02829
+  activity_class: ENZYME_INHIBITOR
 - assay: 'FP Assay from Article 10.1016/j.chembiol.2006.09.015: "Inhibition of Hsp90
     with synthetic macrolactones: synthesis and structural and biological evaluation
     of ring and conformational analogs of radicicol."'
@@ -102,6 +103,7 @@ bioactivities:
   value: 0.54
   units: uM
   target_enzyme: UniProtKB:P02829
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Malachite Green Assay from Article 10.1016/j.chembiol.2006.09.015: "Inhibition
     of Hsp90 with synthetic macrolactones: synthesis and structural and biological
     evaluation of ring and conformational analogs of radicicol."'
@@ -113,6 +115,7 @@ bioactivities:
   value: 3.2
   units: uM
   target_enzyme: UniProtKB:P02829
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Malachite Green Assay from Article 10.1016/j.chembiol.2006.09.015: "Inhibition
     of Hsp90 with synthetic macrolactones: synthesis and structural and biological
     evaluation of ring and conformational analogs of radicicol."'
@@ -124,6 +127,9 @@ bioactivities:
   value: 4.0
   units: uM
   target_enzyme: UniProtKB:P02829
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -171,7 +177,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:35Z'
+- timestamp: '2026-09-08T22:37:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

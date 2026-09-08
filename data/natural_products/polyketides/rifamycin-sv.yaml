@@ -76,6 +76,7 @@ bioactivities:
   value: 0.02
   units: uM
   target_enzyme: UniProtKB:P0A8V2
+  activity_class: ANTIBACTERIAL
 - assay: 'RNAP-Inhibition Assay from Article 10.1021/acschembio.6b01133: "Affinity
     Selection-Mass Spectrometry Identifies a Novel Antibacterial RNA Polymerase Inhibitor."'
   evidence:
@@ -86,6 +87,7 @@ bioactivities:
   value: 0.03
   units: uM
   target_enzyme: UniProtKB:P0A8V2
+  activity_class: ANTIBACTERIAL
 - assay: 'RNAP-Inhibition Assay from Article 10.1021/acschembio.6b01133: "Affinity
     Selection-Mass Spectrometry Identifies a Novel Antibacterial RNA Polymerase Inhibitor."'
   evidence:
@@ -96,6 +98,7 @@ bioactivities:
   value: 70.0
   units: uM
   target_enzyme: UniProtKB:Q3YUZ7
+  activity_class: ANTIBACTERIAL
 - assay: 'RNAP-Inhibition Assay from Article 10.1021/acschembio.6b01133: "Affinity
     Selection-Mass Spectrometry Identifies a Novel Antibacterial RNA Polymerase Inhibitor."'
   evidence:
@@ -106,6 +109,7 @@ bioactivities:
   value: 80.0
   units: uM
   target_enzyme: UniProtKB:Q3YUZ7
+  activity_class: ANTIBACTERIAL
 - assay: 'RNAP-Inhibition Assay from Article 10.1021/acschembio.6b01133: "Affinity
     Selection-Mass Spectrometry Identifies a Novel Antibacterial RNA Polymerase Inhibitor."'
   evidence:
@@ -116,6 +120,7 @@ bioactivities:
   value: 100.0
   units: uM
   target_enzyme: UniProtKB:Q3YUZ7
+  activity_class: ANTIBACTERIAL
 - assay: Human OATP1A2 (SLCO family of organic anion transporting polypeptides)
   evidence:
   - reference: PMID:12085361
@@ -130,6 +135,8 @@ bioactivities:
     notes: PubChem BioAssay AID 1345178, deposited by IUPHAR-DB; assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_006437
+bioactivity_summary:
+- ANTIBACTERIAL
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:29673
@@ -220,7 +227,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:28Z'
+- timestamp: '2026-09-08T22:37:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

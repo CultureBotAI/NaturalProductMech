@@ -207,6 +207,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1671193, deposited by NCGC; assay type Confirmatory.
   value: 0.63
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line,
     qHTS therapeutic library screen
   evidence:
@@ -231,6 +232,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1845191, deposited by NCGC; assay type Confirmatory.
   value: 0.7592
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
     Peroxidase 1 (GPX1)
   evidence:
@@ -240,6 +242,7 @@ bioactivities:
   value: 0.7592
   units: uM
   target_enzyme: UniProtKB:P07203
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an RCH-ACV wild type WT cells (2C)
   evidence:
@@ -248,6 +251,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
   value: 4.826
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an RCH-ACV wild type WT cells (2C)
   evidence:
@@ -257,6 +261,7 @@ bioactivities:
   value: 4.826
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -265,6 +270,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
   value: 6.8169
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -274,6 +280,7 @@ bioactivities:
   value: 6.8169
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha
     (in N-terminal) cells.
   evidence:
@@ -299,6 +306,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.
   value: 1.9953
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Primary redox qHTS assay for identification of artifact compounds.
   evidence:
   - reference: pubchem.aid:1845223
@@ -347,6 +355,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1296008, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: Primary qHTS to identify gynecologic anti-cancer compounds using libraries
     of approved drugs and bioactive compounds
   evidence:
@@ -354,6 +363,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1345084, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: qHTS assay to identify novel small-molecules to repurpose for Merkel cell
     carcinoma treatment
   evidence:
@@ -361,6 +371,9 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1296009, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - NRPS
 xrefs:
@@ -406,7 +419,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:27Z'
+- timestamp: '2026-09-08T22:37:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

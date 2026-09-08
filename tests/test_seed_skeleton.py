@@ -604,3 +604,45 @@ def test_only_asserting_name_classes_are_usable():
     assert "synonym" in module.USABLE_NAME_CLASSES
     for excluded in ("includes", "in-part", "blast name"):
         assert excluded not in module.USABLE_NAME_CLASSES
+
+
+def test_activity_classification_is_narrow_and_leaves_the_unclear_unset():
+    """An unset class is honest; a guessed one is `computed presented as
+    asserted` in a new place (#39)."""
+    assert seed.classify_activity("Antibacterial activity against E. coli") == "ANTIBACTERIAL"
+    assert seed.classify_activity("NCI-60 growth inhibition") == "CYTOTOXIC"
+    assert seed.classify_activity("CCRIS mutagenicity studies") == "TOXIN"
+    assert seed.classify_activity("Fluorescence assay to identify inhibitors of SIAE") == \
+        "ENZYME_INHIBITOR"
+    assert seed.classify_activity("qHTS profiling") is None
+    assert seed.classify_activity("") is None
+
+
+def test_bioactivity_summary_is_derived_only_from_classified_observations():
+    """PLAN.md 3.5: the summary never floats. Every value must trace to an
+    observation actually written on the record."""
+    row = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "cid": "702", "aid": "1",
+        "assay_name": "NCI-60 growth inhibition", "assay_type": "Confirmatory",
+        "depositor": "DTP/NCI", "activity_outcome": "Active", "activity_name": "IC50",
+        "activity_value_um": "2.5", "target_accession": "", "reference": "PMID:1",
+    }
+    doc = seed.build_records({"mibig_compounds": [MIBIG_ROW], "pubchem_bioassay": [row]})[0]
+    assert doc["bioactivity_summary"] == ["CYTOTOXIC"]
+    observation = doc["bioactivities"][0]
+    assert observation["activity_class"] == "CYTOTOXIC"
+    assert observation["measurement_type"] == "IC50"
+    assert observation["units"] == "uM"
+
+
+def test_an_unclassifiable_assay_yields_no_summary_rather_than_a_guess():
+    row = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "cid": "702", "aid": "1",
+        "assay_name": "qHTS profiling", "assay_type": "Screening", "depositor": "NCGC",
+        "activity_outcome": "Active", "activity_name": "", "activity_value_um": "",
+        "target_accession": "", "reference": "",
+    }
+    doc = seed.build_records({"mibig_compounds": [MIBIG_ROW], "pubchem_bioassay": [row]})[0]
+    assert doc["bioactivities"][0]["call"] == "ACTIVE"
+    assert "activity_class" not in doc["bioactivities"][0]
+    assert "bioactivity_summary" not in doc

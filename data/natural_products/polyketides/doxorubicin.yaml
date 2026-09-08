@@ -281,6 +281,7 @@ bioactivities:
     notes: PubChem BioAssay AID 743472, deposited by Broad Institute; assay type Confirmatory.
   value: 0.333
   units: uM
+  activity_class: CYTOTOXIC
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
     (r) AML: AML-191 cell line'
   evidence:
@@ -360,6 +361,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.
   value: 7.0795
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13
   evidence:
   - reference: pubchem.aid:1963989
@@ -367,6 +369,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963989, deposited by NCGC; assay type Confirmatory.
   value: 0.8913
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C
   evidence:
   - reference: pubchem.aid:2202553
@@ -374,6 +377,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202553, deposited by NCGC; assay type Confirmatory.
   value: 0.3474
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-11T
   evidence:
   - reference: pubchem.aid:2202552
@@ -381,6 +385,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202552, deposited by NCGC; assay type Confirmatory.
   value: 0.4907
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T
   evidence:
   - reference: pubchem.aid:2202551
@@ -388,6 +393,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202551, deposited by NCGC; assay type Confirmatory.
   value: 0.1099
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Confirmatory qHTS to identify inhibitors of SARS-CoV-2 cell entry
   evidence:
   - reference: pubchem.aid:1645844
@@ -395,6 +401,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645844, deposited by NCGC; assay type Confirmatory.
   value: 0.1918
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Cytotoxicity counterscreen for NFkB agonists and antagonists
   evidence:
   - reference: pubchem.aid:624476
@@ -402,6 +409,7 @@ bioactivities:
     notes: PubChem BioAssay AID 624476, deposited by NCGC; assay type Confirmatory.
   value: 0.0332
   units: uM
+  activity_class: CYTOTOXIC
 - assay: HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader
     - 7071-02_Inhibitor_Dose_DryPowder_Activity_Set12
   evidence:
@@ -410,6 +418,7 @@ bioactivities:
     notes: PubChem BioAssay AID 743471, deposited by Broad Institute; assay type Confirmatory.
   value: 0.0577
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Identifying Small Molecule Inhibitors of Pancreatic Cancer Stem Cells (A2780,
     Spheroid)
   evidence:
@@ -418,6 +427,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1259357, deposited by NCGC; assay type Confirmatory.
   value: 1.6626
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Identifying Small Molecule Inhibitors of Pancreatic Cancer Stem Cells (Panc1,
     Adherent)
   evidence:
@@ -426,6 +436,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1259362, deposited by NCGC; assay type Confirmatory.
   value: 9.3495
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Identifying Small Molecule Inhibitors of Pancreatic Cancer Stem Cells (Panc1,
     Spheroid)
   evidence:
@@ -434,6 +445,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1259359, deposited by NCGC; assay type Confirmatory.
   value: 5.8992
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Identifying Small Molecule Inhibitors of Pancreatic Cancer Stem Cells (SN12C,
     Adherent)
   evidence:
@@ -442,6 +454,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1259358, deposited by NCGC; assay type Confirmatory.
   value: 3.3173
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Identifying Small Molecule Inhibitors of Pancreatic Cancer Stem Cells (SN12C,
     Spheroid)
   evidence:
@@ -450,6 +463,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1259360, deposited by NCGC; assay type Confirmatory.
   value: 18.6548
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Immunotoxin (HA22) sensitization/mitigation study - treatment arm (High Dose)
   evidence:
   - reference: pubchem.aid:1159530
@@ -466,6 +480,9 @@ bioactivities:
   units: uM
   notes: 84 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:28748
@@ -517,7 +534,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:24Z'
+- timestamp: '2026-09-08T22:37:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

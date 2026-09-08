@@ -274,6 +274,7 @@ bioactivities:
   value: 3700.0
   units: uM
   target_enzyme: UniProtKB:O94760
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibition Assay from Article 10.1021/bi9007098: "Developing dual and specific
     inhibitors of dimethylarginine dimethylaminohydrolase-1 and nitric oxide synthase:
     toward a targeted polypharmacology to control nitric oxide."'
@@ -285,6 +286,9 @@ bioactivities:
   value: 1000.0
   units: uM
   target_enzyme: UniProtKB:P29476
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -339,7 +343,7 @@ grounding_notes: 'This structure matches more than one 3-star ChEBI entry: CHEBI
   term this record is.'
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:33Z'
+- timestamp: '2026-09-08T22:37:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -80,6 +80,7 @@ bioactivities:
       Biocontainment Screening Center; assay type Confirmatory.
   value: 7.979
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A High Throughput Confirmatory Assay used to Identify Novel Compounds that
     Inhibit Mycobacterium Tuberculosis in the absence of Glycerol
   evidence:
@@ -100,6 +101,7 @@ bioactivities:
   measurement_type: IC50
   value: 2.53
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: A cytotoxicity screen of small molecule inhibitors of the PhoP regulon in
     Salmonella typhi identified in the primary screen
   evidence:
@@ -110,6 +112,7 @@ bioactivities:
   measurement_type: EC50
   value: 1.38
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A quantitative high throughput screen for small molecules that induce DNA
     re-replication in MCF 10a normal breast cells.
   evidence:
@@ -129,6 +132,7 @@ bioactivities:
   measurement_type: IC50
   value: 0.741
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: A small molecule screen for inhibitors of the PhoP regulon in Salmonella
     typhi
   evidence:
@@ -139,6 +143,7 @@ bioactivities:
   measurement_type: IC50
   value: 1.29
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: ATP-based Luminescence in the Absence of Cytokines Measured in Cell-Based
     System Using Plate Reader - 2061-06_Inhibitor_Dose_CherryPick
   evidence:
@@ -158,6 +163,7 @@ bioactivities:
   value: 3.65
   units: uM
   target_enzyme: UniProtKB:P15884
+  activity_class: ENZYME_INHIBITOR
 - assay: 'AlphaScreen Assay from US Patent US9284299: "Substituted 1H-indazol-1-ol
     analogs as inhibitors of beta catenin/Tcf protein-protein interactions"'
   evidence:
@@ -168,6 +174,7 @@ bioactivities:
   value: 3.65
   units: uM
   target_enzyme: UniProtKB:P35222
+  activity_class: ENZYME_INHIBITOR
 - assay: 'AlphaScreen Assay from US Patent US9284299: "Substituted 1H-indazol-1-ol
     analogs as inhibitors of beta catenin/Tcf protein-protein interactions"'
   evidence:
@@ -178,6 +185,7 @@ bioactivities:
   value: 19.94
   units: uM
   target_enzyme: UniProtKB:P12830
+  activity_class: ENZYME_INHIBITOR
 - assay: 'AlphaScreen Assay from US Patent US9284299: "Substituted 1H-indazol-1-ol
     analogs as inhibitors of beta catenin/Tcf protein-protein interactions"'
   evidence:
@@ -188,6 +196,7 @@ bioactivities:
   value: 66.23
   units: uM
   target_enzyme: UniProtKB:P25054
+  activity_class: ENZYME_INHIBITOR
 - assay: 'AlphaScreen Assay from US Patent US9284299: "Substituted 1H-indazol-1-ol
     analogs as inhibitors of beta catenin/Tcf protein-protein interactions"'
   evidence:
@@ -198,6 +207,7 @@ bioactivities:
   value: 19.94
   units: uM
   target_enzyme: UniProtKB:P35222
+  activity_class: ENZYME_INHIBITOR
 - assay: 'AlphaScreen Assay from US Patent US9284299: "Substituted 1H-indazol-1-ol
     analogs as inhibitors of beta catenin/Tcf protein-protein interactions"'
   evidence:
@@ -208,6 +218,7 @@ bioactivities:
   value: 66.23
   units: uM
   target_enzyme: UniProtKB:P35222
+  activity_class: ENZYME_INHIBITOR
 - assay: 'AlphaScreen Assay from US Patent US9738628: "Substituted 1H-indazol-1-OL
     analogs as inhibitors of beta catenin/Tcf protein-protein interactions"'
   evidence:
@@ -218,6 +229,7 @@ bioactivities:
   value: 5.82
   units: uM
   target_enzyme: UniProtKB:P35222
+  activity_class: ENZYME_INHIBITOR
 - assay: Cathepsin B dose-response confirmation
   evidence:
   - reference: pubchem.aid:820
@@ -294,6 +306,7 @@ bioactivities:
   value: 0.4449
   units: uM
   target_enzyme: UniProtKB:NP_035411
+  activity_class: ENZYME_INHIBITOR
 - assay: Concentration response confirmation assay for inhibitors of ROR gamma transcriptional
     activity
   evidence:
@@ -303,6 +316,7 @@ bioactivities:
   value: 0.996
   units: uM
   target_enzyme: UniProtKB:NP_035411
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Concentration-Response Counterscreen for Redox Active Inhibitors of Caspase-1:
     Catalase'
   evidence:
@@ -312,8 +326,12 @@ bioactivities:
   value: 1.122
   units: uM
   target_enzyme: UniProtKB:P29466
+  activity_class: ENZYME_INHIBITOR
   notes: 336 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:80729
@@ -409,7 +427,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:34Z'
+- timestamp: '2026-09-08T22:37:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

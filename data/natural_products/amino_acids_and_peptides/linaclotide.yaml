@@ -46,6 +46,7 @@ bioactivities:
   value: 3.0458
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of SARS-S pseudo-typed particle cell entry
   evidence:
   - reference: pubchem.aid:1479145
@@ -54,6 +55,7 @@ bioactivities:
   value: 19.9526
   units: uM
   target_enzyme: UniProtKB:P59594
+  activity_class: ENZYME_INHIBITOR
 - assay: Human Guanylyl cyclase-C (Receptor Guanylyl Cyclase (RGC) family)
   evidence:
   - reference: PMID:17694454
@@ -75,6 +77,8 @@ bioactivities:
     notes: PubChem BioAssay AID 1345496, deposited by IUPHAR-DB; assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_037302
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - RIBOSOMAL
 xrefs:
@@ -120,7 +124,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:29Z'
+- timestamp: '2026-09-08T22:37:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -157,6 +157,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.
   value: 1.9953
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13
   evidence:
   - reference: pubchem.aid:1963989
@@ -164,6 +165,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963989, deposited by NCGC; assay type Confirmatory.
   value: 0.7943
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C
   evidence:
   - reference: pubchem.aid:2202553
@@ -171,6 +173,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202553, deposited by NCGC; assay type Confirmatory.
   value: 0.5506
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-11T
   evidence:
   - reference: pubchem.aid:2202552
@@ -178,6 +181,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202552, deposited by NCGC; assay type Confirmatory.
   value: 0.0778
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T
   evidence:
   - reference: pubchem.aid:2202551
@@ -185,6 +189,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202551, deposited by NCGC; assay type Confirmatory.
   value: 0.3474
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Counterscreen qHTS for Inhibitors of Tau Fibril Formation, Fluorescence Polarization
   evidence:
   - reference: pubchem.aid:1463
@@ -192,6 +197,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1463, deposited by NCGC; assay type Confirmatory.
   value: 12.5893
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: High-throughput drug toxicity screening in the BPDCN cell line Cal-1
   evidence:
   - reference: pubchem.aid:1224825
@@ -239,6 +245,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
   value: 25.4789
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
     Peroxidase 4 (GPX4)
   evidence:
@@ -248,6 +255,7 @@ bioactivities:
   value: 25.4789
   units: uM
   target_enzyme: UniProtKB:P36969
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for Identification of Small Molecule Activators of Huntingtin-Antisense
     Promoter Activity
   evidence:
@@ -273,6 +281,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1508623, deposited by NCGC; assay type Confirmatory.
   value: 0.0863
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for Identification of Small Molecule Inhibitors of Huntingtin
     Promoter Activity
   evidence:
@@ -282,6 +291,7 @@ bioactivities:
   value: 0.0863
   units: uM
   target_enzyme: UniProtKB:P42858
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for Inhibitors of ATXN expression
   evidence:
   - reference: PMID:35787375
@@ -289,6 +299,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1745845, deposited by NCGC; assay type Confirmatory.
   value: 30.6114
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for Inhibitors of ATXN expression
   evidence:
   - reference: PMID:35787375
@@ -297,6 +308,7 @@ bioactivities:
   value: 30.6114
   units: uM
   target_enzyme: UniProtKB:Q99700
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo
     Assay'
   evidence:
@@ -305,8 +317,12 @@ bioactivities:
     notes: PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.
   value: 15.2369
   units: uM
+  activity_class: ENZYME_INHIBITOR
   notes: 147 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:2762
@@ -369,7 +385,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:34Z'
+- timestamp: '2026-09-08T22:37:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

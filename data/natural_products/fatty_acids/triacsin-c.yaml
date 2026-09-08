@@ -58,6 +58,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
   value: 50.1187
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
     (ALOX12): Round 2'
   evidence:
@@ -67,6 +68,7 @@ bioactivities:
   value: 50.1187
   units: uM
   target_enzyme: UniProtKB:P18054
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Secondary Assay for lipid storage modulators: AML12 cell LDSA assay for
     probe SAR'
   evidence:
@@ -91,6 +93,8 @@ bioactivities:
     notes: PubChem BioAssay AID 492960, deposited by NCGC; assay type Confirmatory.
   value: 0.3965
   units: uM
+bioactivity_summary:
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:144441
@@ -142,7 +146,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:31Z'
+- timestamp: '2026-09-08T22:37:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

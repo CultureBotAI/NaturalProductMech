@@ -111,6 +111,7 @@ bioactivities:
       Screening Center; assay type Confirmatory.
   value: 4.61
   units: uM
+  activity_class: ANTIVIRAL
 - assay: A Cell-Based Confirmatory Screen for Compounds that Inhibit VEEV, TC-83
   evidence:
   - reference: pubchem.aid:588727
@@ -217,6 +218,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.
   value: 0.7308
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for adrenocortical cancer (ACC) cell line NCI-H295R
   evidence:
   - reference: pubchem.aid:1963990
@@ -224,6 +226,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.
   value: 3.1623
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13
   evidence:
   - reference: pubchem.aid:1963989
@@ -231,6 +234,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963989, deposited by NCGC; assay type Confirmatory.
   value: 14.1254
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C
   evidence:
   - reference: pubchem.aid:2202553
@@ -238,6 +242,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202553, deposited by NCGC; assay type Confirmatory.
   value: 0.2897
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C
   evidence:
   - reference: pubchem.aid:2202553
@@ -245,6 +250,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202553, deposited by NCGC; assay type Confirmatory.
   value: 3.0962
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-11T
   evidence:
   - reference: pubchem.aid:2202552
@@ -252,6 +258,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202552, deposited by NCGC; assay type Confirmatory.
   value: 0.4592
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-11T
   evidence:
   - reference: pubchem.aid:2202552
@@ -259,6 +266,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202552, deposited by NCGC; assay type Confirmatory.
   value: 3.0962
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T
   evidence:
   - reference: pubchem.aid:2202551
@@ -266,6 +274,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202551, deposited by NCGC; assay type Confirmatory.
   value: 0.3251
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T
   evidence:
   - reference: pubchem.aid:2202551
@@ -273,6 +282,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202551, deposited by NCGC; assay type Confirmatory.
   value: 2.1919
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Confirmation Concentration-Response Assay for Enhancers of SMN2 Splice Variant
     Expression
   evidence:
@@ -302,6 +312,9 @@ bioactivities:
   target_enzyme: UniProtKB:NP_059107
   notes: 318 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ANTIVIRAL
+- CYTOTOXIC
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:168396
@@ -474,7 +487,7 @@ discussions:
     BGC0002616, BGC0002619. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:28Z'
+- timestamp: '2026-09-08T22:37:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -281,6 +281,9 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 101, deposited by DTP/NCI; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
+bioactivity_summary:
+- CYTOTOXIC
 bgc_class:
 - NRPS
 - PKS
@@ -408,7 +411,7 @@ discussions:
     BGC0001667. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:37Z'
+- timestamp: '2026-09-08T22:37:23Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

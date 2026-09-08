@@ -63,6 +63,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
   value: 0.0003
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an RCH-ACV wild type WT cells (2C)
   evidence:
@@ -72,6 +73,7 @@ bioactivities:
   value: 0.0003
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -80,6 +82,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
   value: 0.0011
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -89,6 +92,7 @@ bioactivities:
   value: 0.0011
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug
     resistant MV4-11 cells
   evidence:
@@ -130,6 +134,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1296008, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: P-glycoprotein substrates identified in KB-3-1 adenocarcinoma cell line,
     qHTS therapeutic library screen
   evidence:
@@ -144,6 +149,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1345084, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: Primary qHTS to identify gynecologic anti-cancer compounds using libraries
     of approved drugs and bioactive compounds
   evidence:
@@ -151,6 +157,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1345084, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: Primary qHTS to identify gynecologic anti-cancer compounds using libraries
     of approved drugs and bioactive compounds
   evidence:
@@ -158,6 +165,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1345084, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: qHTS assay to identify novel small-molecules to repurpose for Merkel cell
     carcinoma treatment
   evidence:
@@ -165,6 +173,9 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1296009, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - NRPS
 - PKS
@@ -248,7 +259,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:28Z'
+- timestamp: '2026-09-08T22:37:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

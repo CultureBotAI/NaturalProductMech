@@ -41,6 +41,7 @@ bioactivities:
   value: 0.0012
   units: uM
   target_enzyme: UniProtKB:1KZN_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data derived from PDB
   evidence:
   - reference: PMID:12044152
@@ -49,6 +50,9 @@ bioactivities:
       assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:1KZN_A
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: antibioticmech:aro-e44e701df2
@@ -106,7 +110,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:26Z'
+- timestamp: '2026-09-08T22:37:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

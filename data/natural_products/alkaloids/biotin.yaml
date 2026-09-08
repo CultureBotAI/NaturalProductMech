@@ -285,6 +285,7 @@ bioactivities:
   measurement_type: IC50
   value: 89.251
   units: uM
+  activity_class: CYTOTOXIC
 - assay: 'Counterscreen for inhibitors of the interaction of the Ras and Rab interactor
     1 protein (Rin1) and the c-abl oncogene 1, non-receptor tyrosine kinase (Abl):
     Fluorescence-based biochemical high throughput dose response assay to identify
@@ -298,6 +299,7 @@ bioactivities:
   value: 67.588
   units: uM
   target_enzyme: UniProtKB:CAA58789
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule
     antagonists: luciferase reporter qHTS assay'
   evidence:
@@ -359,6 +361,7 @@ bioactivities:
   value: 0.2
   units: uM
   target_enzyme: UniProtKB:ACP44172
+  activity_class: ANTIVIRAL
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -370,6 +373,7 @@ bioactivities:
   value: 1.0e-09
   units: uM
   target_enzyme: UniProtKB:1AVD_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -381,6 +385,7 @@ bioactivities:
   value: 0.0002
   units: uM
   target_enzyme: UniProtKB:1DF8_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -392,6 +397,7 @@ bioactivities:
   value: 0.0002
   units: uM
   target_enzyme: UniProtKB:1DF8_B
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -403,6 +409,7 @@ bioactivities:
   value: 2.8e-05
   units: uM
   target_enzyme: UniProtKB:1N43_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -414,6 +421,7 @@ bioactivities:
   value: 2.8e-05
   units: uM
   target_enzyme: UniProtKB:1N43_D
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -425,6 +433,7 @@ bioactivities:
   value: 1.1e-05
   units: uM
   target_enzyme: UniProtKB:1N9M_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -436,6 +445,7 @@ bioactivities:
   value: 1.1e-05
   units: uM
   target_enzyme: UniProtKB:1N9M_D
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -447,6 +457,7 @@ bioactivities:
   value: 6.9e-07
   units: uM
   target_enzyme: UniProtKB:1NDJ_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -458,6 +469,7 @@ bioactivities:
   value: 6.9e-07
   units: uM
   target_enzyme: UniProtKB:1NDJ_D
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -469,6 +481,7 @@ bioactivities:
   value: 4.0e-08
   units: uM
   target_enzyme: UniProtKB:1STP_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -480,6 +493,7 @@ bioactivities:
   value: 0.0439
   units: uM
   target_enzyme: UniProtKB:1SWG_D
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -491,6 +505,7 @@ bioactivities:
   value: 1.0e-06
   units: uM
   target_enzyme: UniProtKB:1SWK_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -502,6 +517,7 @@ bioactivities:
   value: 1.0e-06
   units: uM
   target_enzyme: UniProtKB:1SWK_D
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -513,8 +529,13 @@ bioactivities:
   value: 1.0e-06
   units: uM
   target_enzyme: UniProtKB:1SWN_A
+  activity_class: ENZYME_INHIBITOR
   notes: 78 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ANTIVIRAL
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -598,7 +619,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:36Z'
+- timestamp: '2026-09-08T22:37:22Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -55,6 +55,9 @@ bioactivities:
   value: 1.0
   units: uM
   target_enzyme: UniProtKB:3NYN_A
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -101,7 +104,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:31Z'
+- timestamp: '2026-09-08T22:37:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

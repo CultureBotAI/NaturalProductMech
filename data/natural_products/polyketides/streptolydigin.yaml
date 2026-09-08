@@ -188,6 +188,7 @@ bioactivities:
   value: 1.8
   units: uM
   target_enzyme: UniProtKB:1ZYR_C
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -199,6 +200,9 @@ bioactivities:
   value: 1.8
   units: uM
   target_enzyme: UniProtKB:1ZYR_D
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:45773
@@ -256,7 +260,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:29Z'
+- timestamp: '2026-09-08T22:37:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

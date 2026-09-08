@@ -295,6 +295,7 @@ bioactivities:
   measurement_type: IC50
   value: 118.575
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Counterscreen for AddAB inhibitors: absorbance-based bacterial cell-based
     high throughput dose response assay for inhibitors of bacterial viability'
   evidence:
@@ -305,6 +306,7 @@ bioactivities:
   measurement_type: IC50
   value: 118.575
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Counterscreen for AddAB inhibitors: absorbance-based bacterial cell-based
     high throughput dose response assay to identify inhibitors of RecBCD'
   evidence:
@@ -316,6 +318,7 @@ bioactivities:
   value: 118.575
   units: uM
   target_enzyme: UniProtKB:NP_417296
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Counterscreen for AddAB inhibitors: absorbance-based bacterial cell-based
     high throughput dose response assay to identify inhibitors of RecBCD'
   evidence:
@@ -327,6 +330,7 @@ bioactivities:
   value: 118.575
   units: uM
   target_enzyme: UniProtKB:NP_417297
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Counterscreen for AddAB inhibitors: absorbance-based bacterial cell-based
     high throughput dose response assay to identify inhibitors of RecBCD'
   evidence:
@@ -338,6 +342,7 @@ bioactivities:
   value: 118.575
   units: uM
   target_enzyme: UniProtKB:NP_417299
+  activity_class: ENZYME_INHIBITOR
 - assay: Dose respone, multiplexed high-throughput screen for small molecule regulators
     of RGS family protein interactions, specifically RGS16-Galphao.
   evidence:
@@ -387,6 +392,7 @@ bioactivities:
   value: 63.0957
   units: uM
   target_enzyme: UniProtKB:NP_001120700
+  activity_class: ENZYME_INHIBITOR
 - assay: Nrf2 qHTS screen for inhibitors
   evidence:
   - reference: pubchem.aid:504444
@@ -402,6 +408,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1745845, deposited by NCGC; assay type Confirmatory.
   value: 35.4813
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for Inhibitors of ATXN expression
   evidence:
   - reference: PMID:35787375
@@ -410,6 +417,7 @@ bioactivities:
   value: 35.4813
   units: uM
   target_enzyme: UniProtKB:Q99700
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     48 hour incubation
   evidence:
@@ -418,6 +426,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory.
   value: 5.8584
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     96 hour incubation
   evidence:
@@ -426,6 +435,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
   value: 10.4179
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of BAZ2B
   evidence:
   - reference: pubchem.aid:504333
@@ -434,6 +444,7 @@ bioactivities:
   value: 79.4328
   units: uM
   target_enzyme: UniProtKB:BAA89212
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase
     (PPTase)
   evidence:
@@ -443,6 +454,7 @@ bioactivities:
   value: 89.1251
   units: uM
   target_enzyme: UniProtKB:AAG24257
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of DNA Polymerase Beta
   evidence:
   - reference: pubchem.aid:485314
@@ -451,6 +463,7 @@ bioactivities:
   value: 1.4125
   units: uM
   target_enzyme: UniProtKB:NP_002681
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Human Jumonji Domain Containing 2E (JMJD2E)
   evidence:
   - reference: pubchem.aid:2147
@@ -459,6 +472,7 @@ bioactivities:
   value: 7.9433
   units: uM
   target_enzyme: UniProtKB:2W2I_A
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS for Inhibitors of AMA1-RON; Towards Development of Antimalarial Drug
     Lead: Primary Screen'
   evidence:
@@ -468,6 +482,7 @@ bioactivities:
   value: 6.3096
   units: uM
   target_enzyme: UniProtKB:AAN35928
+  activity_class: ANTIPARASITIC
 - assay: qHTS for Inhibitors of Polymerase Iota
   evidence:
   - reference: pubchem.aid:588590
@@ -476,6 +491,7 @@ bioactivities:
   value: 89.1251
   units: uM
   target_enzyme: UniProtKB:NP_009126
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of TGF-b
   evidence:
   - reference: pubchem.aid:588855
@@ -484,6 +500,7 @@ bioactivities:
   value: 14.1254
   units: uM
   target_enzyme: UniProtKB:AAL68976
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS
     in cells in absence of CPT'
   evidence:
@@ -493,6 +510,7 @@ bioactivities:
   value: 29.0929
   units: uM
   target_enzyme: UniProtKB:AAI07878
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS
     in cells in presence of CPT'
   evidence:
@@ -502,8 +520,12 @@ bioactivities:
   value: 29.0929
   units: uM
   target_enzyme: UniProtKB:AAI07878
+  activity_class: ENZYME_INHIBITOR
   notes: 43 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ANTIPARASITIC
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:50437
@@ -628,7 +650,7 @@ discussions:
     BGC0001572. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:31Z'
+- timestamp: '2026-09-08T22:37:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

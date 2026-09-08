@@ -239,6 +239,7 @@ bioactivities:
   measurement_type: EC50
   value: 26.77
   units: uM
+  activity_class: CYTOTOXIC
 - assay: ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen
   evidence:
   - reference: pubchem.aid:1963315
@@ -296,6 +297,7 @@ bioactivities:
   value: 0.0015
   units: uM
   target_enzyme: UniProtKB:P31749
+  activity_class: CYTOTOXIC
 - assay: 'Akt Kinase Assay from Article 10.1016/j.bmcl.2005.12.065: "Synthesis and
     structure-activity relationship of 3,4''-bispyridinylethylenes: discovery of a
     potent 3-isoquinolinylpyridine inhibitor of protein kinase B (PKB/Akt) for the
@@ -308,6 +310,7 @@ bioactivities:
   value: 0.0065
   units: uM
   target_enzyme: UniProtKB:P31751
+  activity_class: CYTOTOXIC
 - assay: 'Akt Kinase Assay from Article 10.1016/j.bmcl.2005.12.065: "Synthesis and
     structure-activity relationship of 3,4''-bispyridinylethylenes: discovery of a
     potent 3-isoquinolinylpyridine inhibitor of protein kinase B (PKB/Akt) for the
@@ -320,6 +323,7 @@ bioactivities:
   value: 0.01
   units: uM
   target_enzyme: UniProtKB:Q9Y243
+  activity_class: CYTOTOXIC
 - assay: 'Assay for Inhibitors of the ERK Signaling Pathway using a Homogeneous Screening
     Assay: EGFR Kinase Inhibition'
   evidence:
@@ -329,6 +333,7 @@ bioactivities:
   value: 0.3981
   units: uM
   target_enzyme: UniProtKB:NP_005219
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Assay for Inhibitors of the ERK Signaling Pathway using a Homogeneous Screening
     Assay: EGFR L858R Kinase Inhibition'
   evidence:
@@ -338,6 +343,7 @@ bioactivities:
   value: 0.3548
   units: uM
   target_enzyme: UniProtKB:NP_005219
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Assay for Inhibitors of the ERK Signaling Pathway using a Homogeneous Screening
     Assay: EGFR T790M Kinase Inhibition'
   evidence:
@@ -347,6 +353,7 @@ bioactivities:
   value: 0.0056
   units: uM
   target_enzyme: UniProtKB:NP_005219
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Assay for Inhibitors of the ERK Signaling Pathway using a Homogeneous Screening
     Assay: EGFR T790M/L858R Kinase Inhibition'
   evidence:
@@ -356,6 +363,7 @@ bioactivities:
   value: 0.0398
   units: uM
   target_enzyme: UniProtKB:NP_005219
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Assay for Inhibitors of the ERK Signaling Pathway using a Homogeneous Screening
     Assay: MEK Inhibition'
   evidence:
@@ -365,6 +373,7 @@ bioactivities:
   value: 0.1
   units: uM
   target_enzyme: UniProtKB:NP_002746
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Assay for Inhibitors of the ERK Signaling Pathway using a Homogeneous Screening
     Assay: c-Raf Inhibition'
   evidence:
@@ -374,6 +383,7 @@ bioactivities:
   value: 0.1778
   units: uM
   target_enzyme: UniProtKB:NP_002871
+  activity_class: ENZYME_INHIBITOR
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
     (r) AML: AML-191 cell line'
   evidence:
@@ -452,6 +462,9 @@ bioactivities:
   target_enzyme: UniProtKB:P21802
   notes: 523 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 molecular_targets:
 - target_label: 3-phosphoinositide-dependent protein kinase 1 [51-359]
   target_type: PROTEIN
@@ -1309,7 +1322,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:28Z'
+- timestamp: '2026-09-08T22:37:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

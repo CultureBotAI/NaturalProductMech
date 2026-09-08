@@ -200,6 +200,9 @@ bioactivities:
   value: 0.04
   units: uM
   target_enzyme: UniProtKB:3RE4_A
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:134606
@@ -319,7 +322,7 @@ discussions:
     BGC0001808. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:36Z'
+- timestamp: '2026-09-08T22:37:22Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -35,6 +35,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.
   value: 28.1838
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo
     Assay'
   evidence:
@@ -44,6 +45,7 @@ bioactivities:
   value: 28.1838
   units: uM
   target_enzyme: UniProtKB:Q9BV86
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha
     (in N-terminal) cells.
   evidence:
@@ -69,6 +71,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.
   value: 15.8489
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Primary redox qHTS assay for identification of artifact compounds.
   evidence:
   - reference: pubchem.aid:1845223
@@ -84,6 +87,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202376, deposited by NCGC; assay type Confirmatory.
   value: 1.5849
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis
     H37Rv
   evidence:
@@ -92,6 +96,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1332, deposited by Southern Research Institute; assay
       type Confirmatory.
   call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH1A2) Confirmation
     screens
   evidence:
@@ -99,6 +104,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2061314, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH1A2) Confirmation
     screens
   evidence:
@@ -107,6 +113,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2061314, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
   target_enzyme: UniProtKB:O60503
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH3A1) Primary
     screen
   evidence:
@@ -114,6 +121,10 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2202377, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -156,7 +167,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:26Z'
+- timestamp: '2026-09-08T22:37:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

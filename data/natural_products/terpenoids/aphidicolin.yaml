@@ -272,6 +272,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.839
   units: uM
+  activity_class: CYTOTOXIC
 - assay: High Throughput Screen to Identify Compounds that Suppress the Growth of
     Human Colon Tumor Cells Lacking Oncogenic Beta Catenin Expression - Dose Response
   evidence:
@@ -281,6 +282,7 @@ bioactivities:
   measurement_type: EC50
   value: 1.731
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Leishmania major promastigote EC50 determinations
   evidence:
   - reference: pubchem.aid:2008
@@ -290,6 +292,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.136
   units: uM
+  activity_class: ANTIPARASITIC
 - assay: Luminescence Cell-Based Dose Confirmation HTS to Identify Compounds Cytotoxic
     to BJeLR RAS-Dependent Fibroblast
   evidence:
@@ -299,6 +302,7 @@ bioactivities:
   measurement_type: EC50
   value: 28.62
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic
     to BJ-TERT RAS-Independent Fibroblast
   evidence:
@@ -308,6 +312,7 @@ bioactivities:
   measurement_type: EC50
   value: 38.639
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic
     to BJ-TERT-LT-ST RAS-Independent Fibroblast
   evidence:
@@ -317,6 +322,7 @@ bioactivities:
   measurement_type: EC50
   value: 150.0
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic
     to DRD Non-Viral Oncogenic Fibroblast
   evidence:
@@ -326,6 +332,7 @@ bioactivities:
   measurement_type: EC50
   value: 150.0
   units: uM
+  activity_class: CYTOTOXIC
 - assay: P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line,
     qHTS therapeutic library screen
   evidence:
@@ -342,6 +349,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
   value: 141.254
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
     (ALOX12): Round 2'
   evidence:
@@ -351,6 +359,7 @@ bioactivities:
   value: 141.254
   units: uM
   target_enzyme: UniProtKB:P18054
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     48 hour incubation
   evidence:
@@ -359,6 +368,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory.
   value: 0.5221
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     96 hour incubation
   evidence:
@@ -367,6 +377,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
   value: 0.5858
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an RCH-ACV wild type WT cells (2C)
   evidence:
@@ -375,6 +386,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
   value: 2.8403
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an RCH-ACV wild type WT cells (2C)
   evidence:
@@ -384,6 +396,7 @@ bioactivities:
   value: 2.8403
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -392,6 +405,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
   value: 3.1868
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -401,6 +415,7 @@ bioactivities:
   value: 3.1868
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
     factor 3 (EPAC1)
   evidence:
@@ -479,6 +494,10 @@ bioactivities:
   units: uM
   notes: 46 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ANTIPARASITIC
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:2766
@@ -536,7 +555,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:31Z'
+- timestamp: '2026-09-08T22:37:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

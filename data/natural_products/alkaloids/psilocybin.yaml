@@ -319,6 +319,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224879, deposited by 824; assay type Confirmatory.
   value: 0.0121
   units: uM
+  activity_class: CYTOTOXIC
 - assay: 'Cytochrome P450 family 2 subfamily D member 6 (CYP2D6) small molecule antagonists:
     luciferase cell-based qHTS assay'
   evidence:
@@ -490,6 +491,8 @@ bioactivities:
   call: ACTIVE
   notes: 3 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
 bgc_class:
 - OTHER
 xrefs:
@@ -537,7 +540,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:33Z'
+- timestamp: '2026-09-08T22:37:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

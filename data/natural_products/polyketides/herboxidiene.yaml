@@ -26,66 +26,77 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347353, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: G06 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347368, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: HEK-293 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347355, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: HPAF-II Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347346, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: J3T Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347371, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: KB-3-1 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347366, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: KB-8-5-11 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347364, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: MCF7 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347369, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: Panc-1005 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347349, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: SDT Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347365, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: UWB1.289 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347347, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: Viability qHTS for inhibitors of the SERCaMP assay screened against the NCATS
     CANVASS Library
   evidence:
@@ -93,6 +104,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347400, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for ATAD5 Agonist screened against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
@@ -142,6 +154,9 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347391, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -187,7 +202,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:28Z'
+- timestamp: '2026-09-08T22:37:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

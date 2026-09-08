@@ -301,6 +301,7 @@ bioactivities:
   value: 76.0
   units: uM
   target_enzyme: UniProtKB:1E55_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data derived from PDB
   evidence:
   - reference: PMID:11106394
@@ -309,6 +310,9 @@ bioactivities:
       assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:1E55_A
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - SACCHARIDE
 xrefs:
@@ -364,7 +368,7 @@ discussions:
     denote different compounds then one upstream record has the wrong structure. Check
     which.
 curation_history:
-- timestamp: '2026-09-08T22:31:31Z'
+- timestamp: '2026-09-08T22:37:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

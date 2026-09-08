@@ -74,6 +74,7 @@ bioactivities:
   value: 5.0119
   units: uM
   target_enzyme: UniProtKB:AAP35567
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a
   evidence:
   - reference: pubchem.aid:504332
@@ -82,6 +83,7 @@ bioactivities:
   value: 79.4328
   units: uM
   target_enzyme: UniProtKB:CAQ07474
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Human Jumonji Domain Containing 2E (JMJD2E)
   evidence:
   - reference: pubchem.aid:2147
@@ -90,6 +92,7 @@ bioactivities:
   value: 39.8107
   units: uM
   target_enzyme: UniProtKB:2W2I_A
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Lipid Storage Modulators in Drosophila S3 Cells
   evidence:
   - reference: pubchem.aid:2685
@@ -112,6 +115,10 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1259408, deposited by 22071; assay type Other.
   call: ACTIVE
+  activity_class: TOXIN
+bioactivity_summary:
+- ENZYME_INHIBITOR
+- TOXIN
 bgc_class:
 - PKS
 compound_classes:
@@ -171,7 +178,7 @@ discussions:
     They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T22:31:27Z'
+- timestamp: '2026-09-08T22:37:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

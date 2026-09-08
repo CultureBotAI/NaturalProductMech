@@ -48,6 +48,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
   value: 8.9285
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an RCH-ACV wild type WT cells (2C)
   evidence:
@@ -57,6 +58,7 @@ bioactivities:
   value: 8.9285
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary redox qHTS assay for identification of artifact compounds.
   evidence:
   - reference: pubchem.aid:1845223
@@ -81,6 +83,8 @@ bioactivities:
   value: 0.2516
   units: uM
   target_enzyme: UniProtKB:P43405
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - NRPS
 xrefs:
@@ -130,7 +134,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:37Z'
+- timestamp: '2026-09-08T22:37:23Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

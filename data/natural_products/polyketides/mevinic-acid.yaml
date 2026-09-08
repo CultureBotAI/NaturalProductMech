@@ -169,6 +169,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.
   value: 17.7828
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C
   evidence:
   - reference: pubchem.aid:2202553
@@ -176,6 +177,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202553, deposited by NCGC; assay type Confirmatory.
   value: 4.9071
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-11T
   evidence:
   - reference: pubchem.aid:2202552
@@ -183,6 +185,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202552, deposited by NCGC; assay type Confirmatory.
   value: 9.791
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T
   evidence:
   - reference: pubchem.aid:2202551
@@ -190,6 +193,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202551, deposited by NCGC; assay type Confirmatory.
   value: 9.791
   units: uM
+  activity_class: CYTOTOXIC
 - assay: 'Confirmatory qHTS for small molecule stabilizers of the endoplasmic reticulum
     resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay'
   evidence:
@@ -205,6 +209,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645844, deposited by NCGC; assay type Confirmatory.
   value: 1.9182
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Counterscreen for inhibitors of NLG for Luciferase Activators Measured in
     Cell-Based System Using Plate Reader - 2146-03_Inhibitor_Dose_CherryPick_Activity
   evidence:
@@ -213,6 +218,7 @@ bioactivities:
     notes: PubChem BioAssay AID 624404, deposited by Broad Institute; assay type Confirmatory.
   value: 1.26
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Counterscreen qHTS for small molecule stabilizers of the endoplasmic reticulum
     resident proteome: GLuc-NoTag assay'
   evidence:
@@ -230,6 +236,7 @@ bioactivities:
   value: 9.2683
   units: uM
   target_enzyme: UniProtKB:NP_004949
+  activity_class: ENZYME_INHIBITOR
 - assay: 'HTS Assay for Allosteric Agonists of the Human D1 Dopamine Receptor: Primary
     Screen for Potentiators'
   evidence:
@@ -248,6 +255,7 @@ bioactivities:
   value: 16.4816
   units: uM
   target_enzyme: UniProtKB:NP_004949
+  activity_class: ENZYME_INHIBITOR
 - assay: Luciferase Reporter Cell Based HTS to identify inhibitors of N-linked Glycosylation
     Measured in Cell-Based System Using Plate Reader - 2146-01_Inhibitor_Dose_CherryPick_Activity
   evidence:
@@ -256,6 +264,7 @@ bioactivities:
     notes: PubChem BioAssay AID 624491, deposited by Broad Institute; assay type Confirmatory.
   value: 0.18
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Nrf2 qHTS screen for inhibitors
   evidence:
   - reference: pubchem.aid:504444
@@ -266,6 +275,9 @@ bioactivities:
   target_enzyme: UniProtKB:NP_001138884
   notes: 115 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -319,7 +331,7 @@ discussions:
     They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T22:31:25Z'
+- timestamp: '2026-09-08T22:37:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

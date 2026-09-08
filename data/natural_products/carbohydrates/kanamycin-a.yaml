@@ -284,12 +284,15 @@ bioactivities:
   value: 3.9811
   units: uM
   target_enzyme: UniProtKB:P59594
+  activity_class: ENZYME_INHIBITOR
 - assay: DSSTox (FDAMDD) FDA Maximum (Recommended) Daily Dose Database
   evidence:
   - reference: pubchem.aid:1195
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1195, deposited by EPA DSSTox; assay type Other.
   call: ACTIVE
+bioactivity_summary:
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:17630
@@ -470,7 +473,7 @@ discussions:
     BGC0000704, BGC0000705, BGC0000706. Confirm they describe the same compound rather
     than an upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:33Z'
+- timestamp: '2026-09-08T22:37:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

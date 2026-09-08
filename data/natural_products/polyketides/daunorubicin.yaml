@@ -300,6 +300,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224869, deposited by 824; assay type Confirmatory.
   value: 26.8325
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
     - 16 hour
   evidence:
@@ -308,6 +309,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224888, deposited by 824; assay type Confirmatory.
   value: 26.8325
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
     - 8 hour
   evidence:
@@ -316,6 +318,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224884, deposited by 824; assay type Confirmatory.
   value: 26.8325
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 0 hour
   evidence:
@@ -324,6 +327,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224882, deposited by 824; assay type Confirmatory.
   value: 26.8325
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 16 hour
   evidence:
@@ -332,6 +336,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224876, deposited by 824; assay type Confirmatory.
   value: 26.8325
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 24 hour
   evidence:
@@ -340,6 +345,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224878, deposited by 824; assay type Confirmatory.
   value: 26.8325
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 32 hour
   evidence:
@@ -348,6 +354,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224883, deposited by 824; assay type Confirmatory.
   value: 0.0301
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 40 hour
   evidence:
@@ -356,6 +363,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224879, deposited by 824; assay type Confirmatory.
   value: 0.0239
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 8 hour
   evidence:
@@ -364,6 +372,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224890, deposited by 824; assay type Confirmatory.
   value: 26.8325
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A High-Content qHTS Against Drug Library for the Identification of Small
     Molecules that Inhibit DYT1 Early Onset Primary Dystonia-Associated Cell Pathology
   evidence:
@@ -484,6 +493,8 @@ bioactivities:
   units: uM
   notes: 589 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:41977
@@ -535,7 +546,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:34Z'
+- timestamp: '2026-09-08T22:37:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

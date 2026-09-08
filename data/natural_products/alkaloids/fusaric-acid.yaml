@@ -117,6 +117,7 @@ bioactivities:
   value: 10.0
   units: uM
   target_enzyme: UniProtKB:AAA60529
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Cytochrome P450 family 3 subfamily A member 4 (CYP3A4) small molecule antagonists:
     luciferase cell-based qHTS assay'
   evidence:
@@ -157,6 +158,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory.
   value: 18.526
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     96 hour incubation
   evidence:
@@ -165,6 +167,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
   value: 5.2213
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     96 hour incubation
   evidence:
@@ -173,6 +176,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
   value: 4.7755
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Thermal shift assay to identify compound binding to Kelch domain of Keap1
     protein Measured in Biochemical System Using RT-PCR - 2119-02_Inhibitor_Dose_CherryPick_Activity
   evidence:
@@ -182,6 +186,7 @@ bioactivities:
   value: 0.38
   units: uM
   target_enzyme: UniProtKB:NP_987096
+  activity_class: ENZYME_INHIBITOR
 - assay: VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2546
@@ -190,6 +195,7 @@ bioactivities:
   value: 8.9125
   units: uM
   target_enzyme: UniProtKB:NP_035411
+  activity_class: ENZYME_INHIBITOR
 - assay: VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2546
@@ -198,6 +204,7 @@ bioactivities:
   value: 7.0795
   units: uM
   target_enzyme: UniProtKB:NP_035411
+  activity_class: ENZYME_INHIBITOR
 - assay: VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2546
@@ -206,6 +213,7 @@ bioactivities:
   value: 25.1189
   units: uM
   target_enzyme: UniProtKB:NP_035411
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Activators of Cytochrome P450 3A4
   evidence:
   - reference: pubchem.aid:885
@@ -304,6 +312,8 @@ bioactivities:
   target_enzyme: UniProtKB:AAP88778
   notes: 73 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -350,7 +360,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:26Z'
+- timestamp: '2026-09-08T22:37:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -90,6 +90,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224875, deposited by 824; assay type Confirmatory.
   value: 26.8325
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
     - 32 hour
   evidence:
@@ -98,6 +99,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224881, deposited by 824; assay type Confirmatory.
   value: 23.9145
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A quantitative high throughput screen for small molecules that induce DNA
     re-replication in SW480 colon adenocarcinoma cells.
   evidence:
@@ -274,6 +276,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory.
   value: 14.193
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists:
     luciferase reporter qHTS assay'
   evidence:
@@ -318,6 +321,9 @@ bioactivities:
   units: uM
   notes: 109 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -371,7 +377,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:32Z'
+- timestamp: '2026-09-08T22:37:18Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

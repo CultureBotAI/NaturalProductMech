@@ -231,6 +231,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645845, deposited by NCGC; assay type Confirmatory.
   value: 39.8107
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Human pregnane X receptor (PXR) activation by small molecules, qHTS assay
   evidence:
   - reference: pubchem.aid:1346985
@@ -247,6 +248,7 @@ bioactivities:
   value: 39.8107
   units: uM
   target_enzyme: UniProtKB:AAH18745
+  activity_class: ENZYME_INHIBITOR
 - assay: P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line,
     qHTS therapeutic library screen
   evidence:
@@ -263,6 +265,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
   value: 100.0
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
     (ALOX12): Round 2'
   evidence:
@@ -272,6 +275,7 @@ bioactivities:
   value: 100.0
   units: uM
   target_enzyme: UniProtKB:P18054
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of MERS-S pseudo-typed particle cell entry
   evidence:
   - reference: pubchem.aid:1479149
@@ -279,6 +283,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1479149, deposited by NCGC; assay type Confirmatory.
   value: 39.8107
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of SARS-S pseudo-typed particle cell entry
   evidence:
   - reference: pubchem.aid:1479145
@@ -287,6 +292,7 @@ bioactivities:
   value: 39.8107
   units: uM
   target_enzyme: UniProtKB:P59594
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS to identify inhibitors of SARS-CoV-2 cell entry
   evidence:
   - reference: pubchem.aid:1645846
@@ -294,6 +300,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645846, deposited by NCGC; assay type Confirmatory.
   value: 39.8107
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2546
@@ -302,6 +309,7 @@ bioactivities:
   value: 12.5893
   units: uM
   target_enzyme: UniProtKB:NP_035411
+  activity_class: ENZYME_INHIBITOR
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
     factor 3 (EPAC1)
   evidence:
@@ -344,6 +352,7 @@ bioactivities:
   value: 3.5481
   units: uM
   target_enzyme: UniProtKB:CAQ07474
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Small Molecule Inhibitors of the Human hERG Channel Activity
   evidence:
   - reference: pubchem.aid:588834
@@ -352,6 +361,7 @@ bioactivities:
   value: 35.4813
   units: uM
   target_enzyme: UniProtKB:NP_001191727
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS assay for identifying genotoxic compounds that show differential cytotoxicity
     against isogenic chicken DT40 cell lines with known DNA damage response pathways
     - Rad54/Ku70 mutant cell line
@@ -361,6 +371,7 @@ bioactivities:
     notes: PubChem BioAssay AID 743015, deposited by 824; assay type Confirmatory.
   value: 26.6032
   units: uM
+  activity_class: CYTOTOXIC
 - assay: qHTS assay for identifying genotoxic compounds that show differential cytotoxicity
     against isogenic chicken DT40 cell lines with known DNA damage response pathways
     - Rev3 mutant cell line
@@ -370,6 +381,7 @@ bioactivities:
     notes: PubChem BioAssay AID 743014, deposited by 824; assay type Confirmatory.
   value: 23.7101
   units: uM
+  activity_class: CYTOTOXIC
 - assay: qHTS assay for identifying genotoxic compounds that show differential cytotoxicity
     against isogenic chicken DT40 cell lines with known DNA damage response pathways
     - wild type cell line
@@ -379,6 +391,7 @@ bioactivities:
     notes: PubChem BioAssay AID 743012, deposited by 824; assay type Confirmatory.
   value: 18.8336
   units: uM
+  activity_class: CYTOTOXIC
 - assay: qHTS assay for small molecule agonists of the p53 signaling pathway
   evidence:
   - reference: pubchem.aid:651631
@@ -412,6 +425,9 @@ bioactivities:
   units: uM
   notes: 38 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:32079
@@ -464,7 +480,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:32Z'
+- timestamp: '2026-09-08T22:37:18Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

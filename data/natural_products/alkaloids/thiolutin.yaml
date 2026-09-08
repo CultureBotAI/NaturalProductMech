@@ -84,6 +84,7 @@ bioactivities:
   value: 39.8107
   units: uM
   target_enzyme: UniProtKB:NP_001017535
+  activity_class: ENZYME_INHIBITOR
 - assay: VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2546
@@ -92,6 +93,7 @@ bioactivities:
   value: 0.2512
   units: uM
   target_enzyme: UniProtKB:NP_035411
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Compounds Blocking the Interaction Between CBF-beta and RUNX1
     for the Treatment of Acute Myeloid Leukemia
   evidence:
@@ -116,6 +118,7 @@ bioactivities:
   value: 17.7828
   units: uM
   target_enzyme: UniProtKB:AAG24257
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of the Human Apurinic/apyrimidinic Endonuclease
     1 (APE1)
   evidence:
@@ -125,6 +128,7 @@ bioactivities:
   value: 0.005
   units: uM
   target_enzyme: UniProtKB:1DE9_A
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of Tau Fibril Formation, Fluorescence Polarization
   evidence:
   - reference: pubchem.aid:1468
@@ -133,6 +137,7 @@ bioactivities:
   value: 17.7828
   units: uM
   target_enzyme: UniProtKB:AAI14949
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of Tau Fibril Formation, Thioflavin T Binding
   evidence:
   - reference: pubchem.aid:1460
@@ -141,6 +146,7 @@ bioactivities:
   value: 15.8489
   units: uM
   target_enzyme: UniProtKB:AAI14949
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of binding or entry into cells for Lassa Virus
   evidence:
   - reference: pubchem.aid:720533
@@ -148,6 +154,7 @@ bioactivities:
     notes: PubChem BioAssay AID 720533, deposited by NCGC; assay type Confirmatory.
   value: 10.0
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of binding or entry into cells for Marburg Virus
   evidence:
   - reference: pubchem.aid:720532
@@ -156,6 +163,7 @@ bioactivities:
   value: 11.2202
   units: uM
   target_enzyme: UniProtKB:B45705
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for inhibitors of ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2551
@@ -164,6 +172,7 @@ bioactivities:
   value: 0.3981
   units: uM
   target_enzyme: UniProtKB:NP_035411
+  activity_class: ENZYME_INHIBITOR
 - assay: A qHTS for Small Molecule Inhibitors of Shiga Toxin
   evidence:
   - reference: pubchem.aid:2315
@@ -171,6 +180,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2315, deposited by NCGC; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:BAC78637
+  activity_class: ENZYME_INHIBITOR
 - assay: A qHTS for Small Molecule Inhibitors of Shiga Toxin
   evidence:
   - reference: pubchem.aid:2315
@@ -178,6 +188,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2315, deposited by NCGC; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:BAC78638
+  activity_class: ENZYME_INHIBITOR
 - assay: Cycloheximide Counterscreen for Small Molecule Inhibitors of Shiga Toxin
   evidence:
   - reference: pubchem.aid:2314
@@ -185,6 +196,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2314, deposited by NCGC; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:BAC78637
+  activity_class: ENZYME_INHIBITOR
 - assay: Cycloheximide Counterscreen for Small Molecule Inhibitors of Shiga Toxin
   evidence:
   - reference: pubchem.aid:2314
@@ -192,6 +204,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2314, deposited by NCGC; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:BAC78638
+  activity_class: ENZYME_INHIBITOR
 - assay: NCATS Parallel Artificial Membrane Permeability Assay (PAMPA) - Blood-Brain
     Barrier (BBB) Permeability Screen
   evidence:
@@ -205,36 +218,42 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 167, deposited by DTP/NCI; assay type Other.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI Yeast Anticancer Drug Screen. Data for the cln2 rad14 strain
   evidence:
   - reference: pubchem.aid:165
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 165, deposited by DTP/NCI; assay type Other.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI Yeast Anticancer Drug Screen. Data for the mec2-1 strain
   evidence:
   - reference: pubchem.aid:157
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 157, deposited by DTP/NCI; assay type Other.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI Yeast Anticancer Drug Screen. Data for the mlh1 rad18 strain
   evidence:
   - reference: pubchem.aid:175
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 175, deposited by DTP/NCI; assay type Other.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI Yeast Anticancer Drug Screen. Data for the rad50 strain
   evidence:
   - reference: pubchem.aid:155
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 155, deposited by DTP/NCI; assay type Other.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI Yeast Anticancer Drug Screen. Data for the sgs1 mgt1 strain
   evidence:
   - reference: pubchem.aid:161
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 161, deposited by DTP/NCI; assay type Other.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI human tumor cell line growth inhibition assay. Data for the 786-0 Non-Small
     Cell Lung cell line, single concentration
   evidence:
@@ -242,6 +261,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1794775, deposited by DTP/NCI; assay type Screening.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI human tumor cell line growth inhibition assay. Data for the A498 Non-Small
     Cell Lung cell line, single concentration
   evidence:
@@ -249,6 +269,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1794774, deposited by DTP/NCI; assay type Screening.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI human tumor cell line growth inhibition assay. Data for the A549/ATCC
     Non-Small Cell Lung cell line, single concentration
   evidence:
@@ -256,8 +277,12 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1794740, deposited by DTP/NCI; assay type Screening.
   call: ACTIVE
+  activity_class: CYTOTOXIC
   notes: 57 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:156450
@@ -310,7 +335,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:30Z'
+- timestamp: '2026-09-08T22:37:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -239,6 +239,7 @@ bioactivities:
       Facility, Harvard Medical School; assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_371243
+  activity_class: ANTIBACTERIAL
 - assay: Cell-based high throughput primary assay to identify activators of GPR151
   evidence:
   - reference: pubchem.aid:1508602
@@ -261,6 +262,10 @@ bioactivities:
     notes: PubChem BioAssay AID 1332, deposited by Southern Research Institute; assay
       type Confirmatory.
   call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ANTIBACTERIAL
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:28864
@@ -379,7 +384,7 @@ discussions:
     BGC0000721. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:31Z'
+- timestamp: '2026-09-08T22:37:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

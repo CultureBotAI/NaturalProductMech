@@ -222,6 +222,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.
   value: 0.0282
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13
   evidence:
   - reference: pubchem.aid:1963989
@@ -229,6 +230,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963989, deposited by NCGC; assay type Confirmatory.
   value: 0.0282
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C
   evidence:
   - reference: pubchem.aid:2202553
@@ -236,6 +238,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202553, deposited by NCGC; assay type Confirmatory.
   value: 0.039
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-11T
   evidence:
   - reference: pubchem.aid:2202552
@@ -243,6 +246,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202552, deposited by NCGC; assay type Confirmatory.
   value: 0.0693
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T
   evidence:
   - reference: pubchem.aid:2202551
@@ -250,6 +254,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202551, deposited by NCGC; assay type Confirmatory.
   value: 0.0219
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Confirmatory qHTS to identify inhibitors of SARS-CoV-2 cell entry
   evidence:
   - reference: pubchem.aid:1645844
@@ -257,6 +262,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645844, deposited by NCGC; assay type Confirmatory.
   value: 0.0541
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Human pregnane X receptor (PXR) activation by small molecules, qHTS assay
   evidence:
   - reference: pubchem.aid:1346985
@@ -281,6 +287,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory.
   value: 0.0013
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     96 hour incubation
   evidence:
@@ -289,6 +296,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
   value: 0.0013
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an RCH-ACV wild type WT cells (2C)
   evidence:
@@ -297,6 +305,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
   value: 0.0059
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an RCH-ACV wild type WT cells (2C)
   evidence:
@@ -306,6 +315,7 @@ bioactivities:
   value: 0.0059
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -314,6 +324,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
   value: 0.0066
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -323,6 +334,7 @@ bioactivities:
   value: 0.0066
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Rat pregnane X receptor (rPXR) activation by small molecules, qHTS assay
   evidence:
   - reference: pubchem.aid:1346983
@@ -349,6 +361,9 @@ bioactivities:
   target_enzyme: UniProtKB:NP_058733
   notes: 92 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - NRPS
 - PKS
@@ -497,7 +512,7 @@ discussions:
     BGC0000990, BGC0000991. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:33Z'
+- timestamp: '2026-09-08T22:37:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

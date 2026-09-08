@@ -288,6 +288,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory.
   value: 8.1905
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (IC50) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -299,6 +300,7 @@ bioactivities:
   value: 4.0
   units: uM
   target_enzyme: UniProtKB:3GWX_A
+  activity_class: ENZYME_INHIBITOR
 - assay: 'HepG2 viability counterscreen (readout 1: protease activity) against the
     NCATS DSHEA and TCM libraries'
   evidence:
@@ -315,6 +317,7 @@ bioactivities:
   value: 8.4368
   units: uM
   target_enzyme: UniProtKB:ABC94591
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibitors of USP1/UAF1: Pilot qHTS'
   evidence:
   - reference: pubchem.aid:504865
@@ -323,6 +326,7 @@ bioactivities:
   value: 79.4328
   units: uM
   target_enzyme: UniProtKB:AAH18745
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibitors of the vitamin D receptor (VDR): qHTS'
   evidence:
   - reference: pubchem.aid:504847
@@ -331,6 +335,7 @@ bioactivities:
   value: 39.8107
   units: uM
   target_enzyme: UniProtKB:NP_001017535
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
     Peroxidase 4 (GPX4)
   evidence:
@@ -339,6 +344,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
   value: 11.2202
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
     Peroxidase 4 (GPX4)
   evidence:
@@ -348,6 +354,7 @@ bioactivities:
   value: 11.2202
   units: uM
   target_enzyme: UniProtKB:P36969
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for agonist of constitutive androstane receptor (CAR) against
     the NCATS DSHEA and TCM libraries
   evidence:
@@ -372,6 +379,7 @@ bioactivities:
   value: 7.8513
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
     Endogenous NS2/3 peptide Counterscreen'
   evidence:
@@ -381,6 +389,7 @@ bioactivities:
   value: 37.5444
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
     Full length NSP2 enzyme counterscreen (CHIKV-NSP2)'
   evidence:
@@ -390,6 +399,7 @@ bioactivities:
   value: 6.6764
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
     Papain Counterscreen'
   evidence:
@@ -399,6 +409,7 @@ bioactivities:
   value: 33.4615
   units: uM
   target_enzyme: UniProtKB:P00784
+  activity_class: ENZYME_INHIBITOR
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
     factor 3 (EPAC1)
   evidence:
@@ -458,6 +469,7 @@ bioactivities:
   value: 39.8107
   units: uM
   target_enzyme: UniProtKB:AAP35567
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase
     (PPTase)
   evidence:
@@ -467,6 +479,7 @@ bioactivities:
   value: 89.1251
   units: uM
   target_enzyme: UniProtKB:AAG24257
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase
     (PPTase)
   evidence:
@@ -476,6 +489,7 @@ bioactivities:
   value: 70.7946
   units: uM
   target_enzyme: UniProtKB:AAG24257
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a
   evidence:
   - reference: pubchem.aid:504332
@@ -484,6 +498,7 @@ bioactivities:
   value: 5.0119
   units: uM
   target_enzyme: UniProtKB:CAQ07474
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Fluorescence Polarization Assay for Inhibitors of MLL CXXC domain -
     DNA interaction
   evidence:
@@ -493,8 +508,11 @@ bioactivities:
   value: 50.1187
   units: uM
   target_enzyme: UniProtKB:NP_005924
+  activity_class: ENZYME_INHIBITOR
   notes: 12 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -634,8 +652,8 @@ discussions:
   kind: CONTROVERSY
   status: OPEN
   prompt: ChEBI calls this structure 'all-cis-5,8,11,14,17-icosapentaenoic acid' and
-    MIBiG calls it 'eicoseicosapentaenoic acid'. They share a Standard InChIKey, so
-    if the two names denote different compounds then one upstream record has the wrong
+    MIBiG calls it 'eicosapentaenoic acid'. They share a Standard InChIKey, so if
+    the two names denote different compounds then one upstream record has the wrong
     structure. Check which.
 - discussion_id: shared-structure
   kind: CURATION_TODO
@@ -644,7 +662,7 @@ discussions:
     BGC0000863, BGC0000865. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:28Z'
+- timestamp: '2026-09-08T22:37:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

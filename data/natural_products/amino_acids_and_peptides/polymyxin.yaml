@@ -73,6 +73,7 @@ bioactivities:
   value: 2.8184
   units: uM
   target_enzyme: UniProtKB:2WWY_A
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Counterscreen for BLMA Inhibitors: ADP Fluorescence Polarization Displacement
     Assay'
   evidence:
@@ -97,6 +98,7 @@ bioactivities:
   value: 50.1187
   units: uM
   target_enzyme: UniProtKB:AAH18745
+  activity_class: ENZYME_INHIBITOR
 - assay: S16 Schwann cell viability assay (CellTiter-Glo assay)
   evidence:
   - reference: pubchem.aid:624031
@@ -120,6 +122,7 @@ bioactivities:
   value: 8.9125
   units: uM
   target_enzyme: UniProtKB:NP_000688
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of 15-hLO-2 (15-human lipoxygenase 2)
   evidence:
   - reference: pubchem.aid:881
@@ -128,6 +131,7 @@ bioactivities:
   value: 0.631
   units: uM
   target_enzyme: UniProtKB:O15296
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase
     (PPTase)
   evidence:
@@ -137,6 +141,7 @@ bioactivities:
   value: 28.1838
   units: uM
   target_enzyme: UniProtKB:AAG24257
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Bloom's syndrome helicase (BLM)
   evidence:
   - reference: pubchem.aid:2528
@@ -145,6 +150,7 @@ bioactivities:
   value: 7.9433
   units: uM
   target_enzyme: UniProtKB:NP_000048
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of RecQ-Like Dna Helicase 1 (RECQ1)
   evidence:
   - reference: pubchem.aid:2549
@@ -153,6 +159,7 @@ bioactivities:
   value: 5.0119
   units: uM
   target_enzyme: UniProtKB:2WWY_A
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Lipid Storage Modulators
   evidence:
   - reference: pubchem.aid:1519
@@ -168,6 +175,7 @@ bioactivities:
   value: 3.9811
   units: uM
   target_enzyme: UniProtKB:XP_843920
+  activity_class: ENZYME_INHIBITOR
 - assay: A screen for compounds that inhibit replication of Vibrio cholerae chromosome
     II
   evidence:
@@ -177,6 +185,8 @@ bioactivities:
       Facility, Harvard Medical School; assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:AAF95916
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - NRPS
 xrefs:
@@ -219,7 +229,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:27Z'
+- timestamp: '2026-09-08T22:37:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -210,6 +210,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1671193, deposited by NCGC; assay type Confirmatory.
   value: 21.1923
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line,
     qHTS therapeutic library screen
   evidence:
@@ -234,6 +235,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
   value: 0.2582
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an RCH-ACV wild type WT cells (2C)
   evidence:
@@ -243,6 +245,7 @@ bioactivities:
   value: 0.2582
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -251,6 +254,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
   value: 0.4093
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -260,6 +264,7 @@ bioactivities:
   value: 0.4093
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha
     (in N-terminal) cells.
   evidence:
@@ -285,6 +290,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.
   value: 1.2589
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug
     resistant MV4-11 cells
   evidence:
@@ -326,12 +332,14 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1296008, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: GENE-TOX mutagenicity studies
   evidence:
   - reference: pubchem.aid:1259408
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1259408, deposited by 22071; assay type Other.
   call: ACTIVE
+  activity_class: TOXIN
 - assay: High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis
     H37Rv
   evidence:
@@ -340,6 +348,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1332, deposited by Southern Research Institute; assay
       type Confirmatory.
   call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence Cell-Based Primary HTS to Identify Inhibitors of MITF
   evidence:
   - reference: pubchem.aid:2240
@@ -347,6 +356,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2240, deposited by Broad Institute; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_937802
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence Cell-Based Primary HTS to Identify Inhibitors of STK33
   evidence:
   - reference: pubchem.aid:2330
@@ -354,8 +364,13 @@ bioactivities:
     notes: PubChem BioAssay AID 2330, deposited by Broad Institute; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:CAC29064
+  activity_class: ENZYME_INHIBITOR
   notes: 12 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
+- TOXIN
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:17939
@@ -408,7 +423,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:33Z'
+- timestamp: '2026-09-08T22:37:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

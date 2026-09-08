@@ -59,6 +59,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.393
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: '7124-02: inhibition of TNFa signaling in B cell lineage, counterscreen'
   evidence:
   - reference: pubchem.aid:1259334
@@ -68,6 +69,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.199
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: '7124-04: Celltiter Glo, Cytotoxicity assay'
   evidence:
   - reference: pubchem.aid:1259333
@@ -77,6 +79,7 @@ bioactivities:
   measurement_type: EC50
   value: 20.0
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
     - 40 hour
   evidence:
@@ -85,6 +88,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224871, deposited by 824; assay type Confirmatory.
   value: 19.4938
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
     - 40 hour
   evidence:
@@ -93,6 +97,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224871, deposited by 824; assay type Confirmatory.
   value: 3.0107
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A High-Content qHTS Against Drug Library for the Identification of Small
     Molecules that Inhibit DYT1 Early Onset Primary Dystonia-Associated Cell Pathology
   evidence:
@@ -192,6 +197,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1745847, deposited by NCGC; assay type Confirmatory.
   value: 2.8184
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: CMV-Luciferase Counterscreen for Inhibitors of ATXN expression
   evidence:
   - reference: PMID:35787375
@@ -200,6 +206,7 @@ bioactivities:
   value: 2.8184
   units: uM
   target_enzyme: UniProtKB:Q99700
+  activity_class: ENZYME_INHIBITOR
 - assay: Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability
     counter screen
   evidence:
@@ -257,6 +264,9 @@ bioactivities:
   units: uM
   notes: 935 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -302,7 +312,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:36Z'
+- timestamp: '2026-09-08T22:37:22Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -310,6 +310,7 @@ bioactivities:
   value: 0.0002
   units: uM
   target_enzyme: UniProtKB:1FKB_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -321,6 +322,7 @@ bioactivities:
   value: 0.0009
   units: uM
   target_enzyme: UniProtKB:1PBK_A
+  activity_class: ENZYME_INHIBITOR
 - assay: 'FKBP12 Assay from Article 10.1016/1074-5521(95)90264-3: "Structure-activity
     studies of rapamycin analogs: evidence that the C-7 methoxy group is part of the
     effector domain and positioned at the FKBP12-FRAP interface."'
@@ -340,6 +342,7 @@ bioactivities:
   value: 35.4813
   units: uM
   target_enzyme: UniProtKB:AAH18745
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     48 hour incubation
   evidence:
@@ -348,6 +351,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory.
   value: 1.5101
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     96 hour incubation
   evidence:
@@ -356,6 +360,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
   value: 1.5101
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: S16 Schwann cell viability assay (CellTiter-Glo assay)
   evidence:
   - reference: pubchem.aid:624031
@@ -373,6 +378,7 @@ bioactivities:
   value: 0.0003
   units: uM
   target_enzyme: UniProtKB:P62942
+  activity_class: ENZYME_INHIBITOR
 - assay: 'SPR Assay to Determine Binding Affinity to FKBP51 from US Patent US11603377:
     "MTORC1 modulators and uses thereof"'
   evidence:
@@ -383,6 +389,7 @@ bioactivities:
   value: 0.01
   units: uM
   target_enzyme: UniProtKB:Q13451
+  activity_class: ENZYME_INHIBITOR
 - assay: VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2546
@@ -391,6 +398,7 @@ bioactivities:
   value: 31.6228
   units: uM
   target_enzyme: UniProtKB:NP_035411
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of TGF-b
   evidence:
   - reference: pubchem.aid:588855
@@ -399,6 +407,7 @@ bioactivities:
   value: 12.5893
   units: uM
   target_enzyme: UniProtKB:AAL68976
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS for Inhibitors of TGF-b: Cytotox Counterscreen'
   evidence:
   - reference: pubchem.aid:588856
@@ -406,6 +415,7 @@ bioactivities:
     notes: PubChem BioAssay AID 588856, deposited by NCGC; assay type Confirmatory.
   value: 35.4813
   units: uM
+  activity_class: CYTOTOXIC
 - assay: 'qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS
     in cells in absence of CPT'
   evidence:
@@ -415,6 +425,7 @@ bioactivities:
   value: 8.9125
   units: uM
   target_enzyme: UniProtKB:AAI07878
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS
     in cells in presence of CPT'
   evidence:
@@ -424,6 +435,7 @@ bioactivities:
   value: 4.4668
   units: uM
   target_enzyme: UniProtKB:AAI07878
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS for Stage-Specific Inhibitors of Vaccinia Orthopoxvirus: Venus Reporter
     Primary qHTS'
   evidence:
@@ -433,6 +445,7 @@ bioactivities:
   value: 10.0
   units: uM
   target_enzyme: UniProtKB:BAA01847
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS for Stage-Specific Inhibitors of Vaccinia Orthopoxvirus: mCherry Reporter
     Primary qHTS'
   evidence:
@@ -442,6 +455,7 @@ bioactivities:
   value: 8.9125
   units: uM
   target_enzyme: UniProtKB:BAA01847
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for inhibitors of ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2551
@@ -450,6 +464,7 @@ bioactivities:
   value: 35.4813
   units: uM
   target_enzyme: UniProtKB:NP_035411
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS of alpha-syn Inhibitors
   evidence:
   - reference: pubchem.aid:652106
@@ -472,6 +487,7 @@ bioactivities:
       assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:1FKB_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data derived from PDB
   evidence:
   - reference: pubchem.aid:1811
@@ -480,6 +496,7 @@ bioactivities:
       assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:1PBK_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Expression of GFP-tagged protein in TOR C1 bypass strains and wild type Saccharomyces
     cerevisiae
   evidence:
@@ -498,6 +515,9 @@ bioactivities:
   target_enzyme: UniProtKB:NP_009641
   notes: 66 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:9168
@@ -559,7 +579,7 @@ discussions:
     share a Standard InChIKey, so if the two names denote different compounds then
     one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T22:31:32Z'
+- timestamp: '2026-09-08T22:37:18Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

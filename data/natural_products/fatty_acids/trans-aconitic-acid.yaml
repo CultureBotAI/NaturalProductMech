@@ -290,6 +290,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.
   value: 0.3981
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo
     Assay'
   evidence:
@@ -299,6 +300,7 @@ bioactivities:
   value: 0.3981
   units: uM
   target_enzyme: UniProtKB:Q9BV86
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -307,6 +309,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
   value: 26.6086
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -316,6 +319,7 @@ bioactivities:
   value: 26.6086
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
     factor 3 (EPAC1)
   evidence:
@@ -395,6 +399,7 @@ bioactivities:
   value: 12.5594
   units: uM
   target_enzyme: UniProtKB:2ISV_A
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Human Jumonji Domain Containing 2E (JMJD2E)
   evidence:
   - reference: pubchem.aid:2147
@@ -403,6 +408,7 @@ bioactivities:
   value: 39.8107
   units: uM
   target_enzyme: UniProtKB:2W2I_A
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS assay for small molecule agonists of the p53 signaling pathway
   evidence:
   - reference: pubchem.aid:651631
@@ -434,6 +440,10 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1345199, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -481,7 +491,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:27Z'
+- timestamp: '2026-09-08T22:37:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

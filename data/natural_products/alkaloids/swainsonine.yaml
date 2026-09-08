@@ -303,6 +303,7 @@ bioactivities:
   value: 0.02
   units: uM
   target_enzyme: UniProtKB:1HWW_A
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Golgi &#945;-Mannosidase II (alpha-hGMII) and &#945;-Mannosidase (alpha-hLM)
     Activity Assay from US Patent US20240190866: "POLYHYDROXYLATED INDOLIZIDINE AND
     PYRROLIZIDINE DERIVATIVES AND USES THEREOF"'
@@ -336,6 +337,7 @@ bioactivities:
   value: 0.003
   units: uM
   target_enzyme: UniProtKB:Q24451
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     96 hour incubation
   evidence:
@@ -344,6 +346,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
   value: 9.5283
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS assay for identifying genotoxic compounds that show differential cytotoxicity
     against isogenic chicken DT40 cell lines with known DNA damage response pathways
     - Rev3 mutant cell line
@@ -353,6 +356,7 @@ bioactivities:
     notes: PubChem BioAssay AID 743014, deposited by 824; assay type Confirmatory.
   value: 26.6032
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Experimentally measured binding affinity data derived from PDB
   evidence:
   - reference: PMID:11406577
@@ -361,6 +365,10 @@ bioactivities:
       assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:1HWW_A
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - NRPS
 - PKS
@@ -483,7 +491,7 @@ discussions:
     BGC0002270. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:27Z'
+- timestamp: '2026-09-08T22:37:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -27,6 +27,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1671193, deposited by NCGC; assay type Confirmatory.
   value: 0.0998
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader
     - 7071-02_Inhibitor_Dose_CherryPick_Activity_Set3
   evidence:
@@ -35,6 +36,7 @@ bioactivities:
     notes: PubChem BioAssay AID 720589, deposited by Broad Institute; assay type Confirmatory.
   value: 0.506
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Primary HTS to identify inhibitors of the oncoprotein
     EWS/Fli transcriptional activity Measured in Cell-Based System Using Plate Reader
     - 7014-01_Inhibitor_Dose_CherryPick_Activity
@@ -44,6 +46,7 @@ bioactivities:
     notes: PubChem BioAssay AID 686920, deposited by Broad Institute; assay type Confirmatory.
   value: 0.0992
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence cell-based Retest at Dose assay to determine EWS/Fli1 dependent
     A673 mammalian cell cytotoxity Measured in Cell-Based System Using Plate Reader
     - 7014-03_Inhibitor_Dose_CherryPick_Activity
@@ -53,6 +56,7 @@ bioactivities:
     notes: PubChem BioAssay AID 720587, deposited by Broad Institute; assay type Confirmatory.
   value: 0.243
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Luminescence cell-based Retest at Dose assay to determine EWS/Fli1 dependent
     TC71 mammalian cell cytotoxity Measured in Cell-Based System Using Plate Reader
     - 7014-04_Inhibitor_Dose_CherryPick_Activity
@@ -62,6 +66,7 @@ bioactivities:
     notes: PubChem BioAssay AID 720570, deposited by Broad Institute; assay type Confirmatory.
   value: 26.0
   units: uM
+  activity_class: CYTOTOXIC
 - assay: P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line,
     qHTS therapeutic library screen
   evidence:
@@ -85,6 +90,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1671188, deposited by NCGC; assay type Confirmatory.
   value: 2.8184
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS assay for inhibitors of Glutamate pyruvate transaminase 2 (GPT2)
   evidence:
   - reference: pubchem.aid:1671188
@@ -93,6 +99,7 @@ bioactivities:
   value: 2.8184
   units: uM
   target_enzyme: UniProtKB:Q8TD30
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
   evidence:
   - reference: pubchem.aid:1964107
@@ -101,6 +108,7 @@ bioactivities:
   value: 0.2329
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an RCH-ACV wild type WT cells (2C)
   evidence:
@@ -109,6 +117,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
   value: 0.0242
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an RCH-ACV wild type WT cells (2C)
   evidence:
@@ -118,6 +127,7 @@ bioactivities:
   value: 0.0242
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -126,6 +136,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
   value: 0.0216
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
     2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)
   evidence:
@@ -135,6 +146,7 @@ bioactivities:
   value: 0.0216
   units: uM
   target_enzyme: UniProtKB:O96028
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS to identify anti-liver cancer compounds using libraries of approved
     drugs and bioactive compounds
   evidence:
@@ -143,6 +155,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.
   value: 0.2818
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug
     resistant MV4-11 cells
   evidence:
@@ -187,6 +200,7 @@ bioactivities:
       Molecular Screening Center; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_044650
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Counterscreen for inhibitors of cell surface Prion Protein (PrPc): Luminescence-based
     cell-based high throughput assay to identify compounds that are cytotoxic to LD9
     cells'
@@ -197,6 +211,7 @@ bioactivities:
       Molecular Screening Center; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_000302
+  activity_class: CYTOTOXIC
 - assay: Cytotoxic Profiling of Annotated Libraries Using Quantitative High-Throughput
     Screening
   evidence:
@@ -204,6 +219,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1296008, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Primary HTS to identify inhibitors of the oncoprotein
     EWS/Fli transcriptional activity Measured in Cell-Based System Using Plate Reader
     - 7014-01_Inhibitor_SinglePoint_HTS_Activity
@@ -212,6 +228,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 651661, deposited by Broad Institute; assay type Screening.
   call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence-based cell-based high throughput confirmation assay to identify
     inhibitors of COUP-TFII (NR2F2)
   evidence:
@@ -221,6 +238,7 @@ bioactivities:
       Molecular Screening Center; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_066285
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence-based cell-based primary high throughput screening assay to
     identify inhibitors of COUP-TFII (NR2F2)
   evidence:
@@ -230,8 +248,12 @@ bioactivities:
       Molecular Screening Center; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_066285
+  activity_class: ENZYME_INHIBITOR
   notes: 10 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -311,7 +333,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:36Z'
+- timestamp: '2026-09-08T22:37:22Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

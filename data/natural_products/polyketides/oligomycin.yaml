@@ -291,6 +291,7 @@ bioactivities:
   value: 33.5875
   units: uM
   target_enzyme: UniProtKB:ABC94591
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibitors of the vitamin D receptor (VDR): qHTS'
   evidence:
   - reference: pubchem.aid:504847
@@ -299,6 +300,7 @@ bioactivities:
   value: 56.2341
   units: uM
   target_enzyme: UniProtKB:NP_001017535
+  activity_class: ENZYME_INHIBITOR
 - assay: Total Fluorescence Counterscreen for Inhibitors of the Interaction of Thyroid
     Hormone Receptor and Steroid Receptor Coregulator 2
   evidence:
@@ -308,6 +310,7 @@ bioactivities:
   value: 44.6684
   units: uM
   target_enzyme: UniProtKB:NP_001121649
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Compounds Blocking the Interaction Between CBF-beta and RUNX1
     for the Treatment of Acute Myeloid Leukemia
   evidence:
@@ -332,6 +335,7 @@ bioactivities:
   value: 19.9526
   units: uM
   target_enzyme: UniProtKB:AAP35567
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase
     (PPTase)
   evidence:
@@ -341,6 +345,7 @@ bioactivities:
   value: 0.0006
   units: uM
   target_enzyme: UniProtKB:AAG24257
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of Tau Fibril Formation, Thioflavin T Binding
   evidence:
   - reference: pubchem.aid:1460
@@ -349,6 +354,7 @@ bioactivities:
   value: 17.7828
   units: uM
   target_enzyme: UniProtKB:AAI14949
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of binding or entry into cells for Lassa Virus
   evidence:
   - reference: pubchem.aid:720533
@@ -356,6 +362,7 @@ bioactivities:
     notes: PubChem BioAssay AID 720533, deposited by NCGC; assay type Confirmatory.
   value: 39.8107
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of binding or entry into cells for Marburg Virus
   evidence:
   - reference: pubchem.aid:720532
@@ -364,6 +371,7 @@ bioactivities:
   value: 10.0
   units: uM
   target_enzyme: UniProtKB:B45705
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of the Interaction of Thyroid Hormone Receptor and Steroid
     Receptor Coregulator 2
   evidence:
@@ -373,6 +381,7 @@ bioactivities:
   value: 39.8107
   units: uM
   target_enzyme: UniProtKB:NP_001121649
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS screen for small molecules that inhibit ELG1-dependent DNA repair in
     human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1: Hit
     Confirmation using MMS Stimulated ELG1'
@@ -428,6 +437,8 @@ bioactivities:
   value: 0.0315
   units: uM
   target_enzyme: UniProtKB:AAH15051
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -470,7 +481,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:30Z'
+- timestamp: '2026-09-08T22:37:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

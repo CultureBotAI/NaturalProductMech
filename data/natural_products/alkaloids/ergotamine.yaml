@@ -142,6 +142,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory.
   value: 0.8955
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
     Peroxidase 4 (GPX4)
   evidence:
@@ -150,6 +151,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
   value: 35.4813
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
     Peroxidase 4 (GPX4)
   evidence:
@@ -159,6 +161,7 @@ bioactivities:
   value: 35.4813
   units: uM
   target_enzyme: UniProtKB:P36969
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
   evidence:
   - reference: pubchem.aid:1964107
@@ -167,6 +170,7 @@ bioactivities:
   value: 9.8843
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
     Endogenous NS2/3 peptide Counterscreen'
   evidence:
@@ -176,6 +180,7 @@ bioactivities:
   value: 12.981
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
     Full length NSP2 enzyme counterscreen (CHIKV-NSP2)'
   evidence:
@@ -185,6 +190,7 @@ bioactivities:
   value: 2.5901
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
     Papain Counterscreen'
   evidence:
@@ -194,6 +200,7 @@ bioactivities:
   value: 25.9005
   units: uM
   target_enzyme: UniProtKB:P00784
+  activity_class: ENZYME_INHIBITOR
 - assay: Agonists at Human 5-Hydroxytryptamine receptor 5-HT1F
   evidence:
   - reference: PMID:8380639
@@ -322,6 +329,8 @@ bioactivities:
   target_enzyme: UniProtKB:NP_076917
   notes: 15 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - TERPENE
 - OTHER
@@ -417,7 +426,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:36Z'
+- timestamp: '2026-09-08T22:37:22Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

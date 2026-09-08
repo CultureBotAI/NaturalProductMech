@@ -329,6 +329,7 @@ bioactivities:
   value: 18300.0
   units: uM
   target_enzyme: UniProtKB:P27169
+  activity_class: ANTIBACTERIAL
 - assay: A screen for compounds that inhibit the activity of LtaS in Staphylococcus
     aureus
   evidence:
@@ -338,12 +339,15 @@ bioactivities:
       Facility, Harvard Medical School; assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_371243
+  activity_class: ANTIBACTERIAL
 - assay: DSSTox (FDAMDD) FDA Maximum (Recommended) Daily Dose Database
   evidence:
   - reference: pubchem.aid:1195
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1195, deposited by EPA DSSTox; assay type Other.
   call: ACTIVE
+bioactivity_summary:
+- ANTIBACTERIAL
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:6472
@@ -396,7 +400,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:31Z'
+- timestamp: '2026-09-08T22:37:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

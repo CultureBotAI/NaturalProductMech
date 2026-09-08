@@ -42,6 +42,7 @@ bioactivities:
   measurement_type: KD
   value: 1.2
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Fluorescence Polarization Assay (FPA) from Article 10.1111/cbdd.12371: "Discovery
     of novel 17-phenylethylaminegeldanamycin derivatives as potent Hsp90 inhibitors."'
   evidence:
@@ -70,6 +71,7 @@ bioactivities:
   value: 79.4328
   units: uM
   target_enzyme: UniProtKB:NP_001017535
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia
     Lamblia
   evidence:
@@ -79,6 +81,7 @@ bioactivities:
   value: 3.5397
   units: uM
   target_enzyme: UniProtKB:2ISV_A
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS for Inducers of the Endoplasmic Reticulum Stress Response (ERSR) in
     Human Glioma: qHTS'
   evidence:
@@ -95,6 +98,7 @@ bioactivities:
     notes: PubChem BioAssay AID 720533, deposited by NCGC; assay type Confirmatory.
   value: 17.7828
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of binding or entry into cells for Marburg Virus
   evidence:
   - reference: pubchem.aid:720532
@@ -103,6 +107,7 @@ bioactivities:
   value: 15.8489
   units: uM
   target_enzyme: UniProtKB:B45705
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for inhibitors of ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2551
@@ -111,6 +116,7 @@ bioactivities:
   value: 4.4668
   units: uM
   target_enzyme: UniProtKB:NP_035411
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS screen for small molecules that inhibit ELG1-dependent DNA repair in
     human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1: Hit
     Confirmation using MMS Stimulated ELG1'
@@ -156,6 +162,9 @@ bioactivities:
     notes: PubChem BioAssay AID 2472, deposited by NCGC; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_002037
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -199,7 +208,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:32Z'
+- timestamp: '2026-09-08T22:37:18Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

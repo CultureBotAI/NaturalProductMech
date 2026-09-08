@@ -76,6 +76,7 @@ bioactivities:
   value: 0.12
   units: uM
   target_enzyme: UniProtKB:2O9J_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -87,6 +88,7 @@ bioactivities:
   value: 0.12
   units: uM
   target_enzyme: UniProtKB:2OA0_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data derived from PDB
   evidence:
   - reference: PMID:17259168
@@ -95,6 +97,7 @@ bioactivities:
       assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:2O9J_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data derived from PDB
   evidence:
   - reference: PMID:17259168
@@ -103,6 +106,7 @@ bioactivities:
       assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:2OA0_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary Screen for Target Class Profiling of Small Molecule Inhibitors of
     Methyltransferases
   evidence:
@@ -111,6 +115,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1745853, deposited by NCGC; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:P11086
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary Screen for Target Class Profiling of Small Molecule Inhibitors of
     Methyltransferases
   evidence:
@@ -119,6 +124,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1745853, deposited by NCGC; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:P21964
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary Screen for Target Class Profiling of Small Molecule Inhibitors of
     Methyltransferases
   evidence:
@@ -127,6 +133,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1745853, deposited by NCGC; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:P40261
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary Screen for Target Class Profiling of Small Molecule Inhibitors of
     Methyltransferases
   evidence:
@@ -135,6 +142,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1745853, deposited by NCGC; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:P50135
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary Screen for Target Class Profiling of Small Molecule Inhibitors of
     Methyltransferases
   evidence:
@@ -143,6 +151,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1745853, deposited by NCGC; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:Q14353
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary Screen for Target Class Profiling of Small Molecule Inhibitors of
     Methyltransferases
   evidence:
@@ -151,6 +160,9 @@ bioactivities:
     notes: PubChem BioAssay AID 1745853, deposited by NCGC; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:Q14749
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - NRPS
 - PKS
@@ -211,7 +223,7 @@ discussions:
     the two names denote different compounds then one upstream record has the wrong
     structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T22:31:34Z'
+- timestamp: '2026-09-08T22:37:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

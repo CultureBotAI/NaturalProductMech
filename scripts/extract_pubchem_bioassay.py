@@ -212,6 +212,13 @@ def add_depositors(rows: list[dict[str, str]], *, limit: int = 100) -> Counter:
     for row in rows:
         row["depositor"] = resolved.get(row["aid"], "")
     counts["rows_with_depositor"] = sum(1 for r in rows if r["depositor"])
+    # A bare numeric id is not an answer: nobody can say from `depositor: 824`
+    # whether those results may be redistributed, and the ChEMBL exclusion
+    # matches on a NAME, so a source registered numerically is never evaluated.
+    # Counted so the inventory does not look uniformly traceable when a quarter
+    # of it is not (#38).
+    counts["rows_with_unverifiable_depositor"] = sum(
+        1 for r in rows if r["depositor"].strip().isdigit())
     return counts
 
 

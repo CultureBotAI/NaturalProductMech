@@ -285,6 +285,7 @@ bioactivities:
   value: 3.5481
   units: uM
   target_enzyme: UniProtKB:1DE9_A
+  activity_class: ENZYME_INHIBITOR
 - assay: DSSTox (FDAMDD) FDA Maximum (Recommended) Daily Dose Database
   evidence:
   - reference: pubchem.aid:1195
@@ -327,6 +328,9 @@ bioactivities:
     notes: PubChem BioAssay AID 1332, deposited by Southern Research Institute; assay
       type Confirmatory.
   call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:9215
@@ -378,7 +382,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:34Z'
+- timestamp: '2026-09-08T22:37:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

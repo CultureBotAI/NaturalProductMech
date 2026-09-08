@@ -50,6 +50,7 @@ bioactivities:
   measurement_type: IC50
   value: 0.01
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -61,6 +62,7 @@ bioactivities:
   value: 0.0045
   units: uM
   target_enzyme: UniProtKB:3M6P_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -72,6 +74,7 @@ bioactivities:
   value: 0.048
   units: uM
   target_enzyme: UniProtKB:3M6Q_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -83,6 +86,7 @@ bioactivities:
   value: 0.032
   units: uM
   target_enzyme: UniProtKB:3M6R_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -93,6 +97,7 @@ bioactivities:
   measurement_type: KD
   value: 0.395
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -104,6 +109,7 @@ bioactivities:
   value: 0.14
   units: uM
   target_enzyme: UniProtKB:3PN4_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -114,6 +120,7 @@ bioactivities:
   measurement_type: KI
   value: 0.0003
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibitors of Regulator of G Protein Signaling (RGS) 4: qHTS'
   evidence:
   - reference: pubchem.aid:504845
@@ -122,6 +129,7 @@ bioactivities:
   value: 2.6654
   units: uM
   target_enzyme: UniProtKB:ABC94591
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Nrf2 qHTS screen for inhibitors: Validation'
   evidence:
   - reference: pubchem.aid:493153
@@ -144,6 +152,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1671194, deposited by NCGC; assay type Confirmatory.
   value: 3.5481
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS assay for inhibitors of alpha-synuclein gene (SNCA) expression
   evidence:
   - reference: pubchem.aid:1671194
@@ -152,6 +161,7 @@ bioactivities:
   value: 3.5481
   units: uM
   target_enzyme: UniProtKB:P37840
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
     (ALOX12): Round 2'
   evidence:
@@ -160,6 +170,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
   value: 12.5893
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
     (ALOX12): Round 2'
   evidence:
@@ -169,6 +180,7 @@ bioactivities:
   value: 12.5893
   units: uM
   target_enzyme: UniProtKB:P18054
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS to identify anti-liver cancer compounds using libraries of approved
     drugs and bioactive compounds
   evidence:
@@ -177,6 +189,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.
   value: 11.2202
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Quantitative high throughput screen for delayed death inhibitors of the malarial
     parasite plastid, 48 hour incubation
   evidence:
@@ -185,6 +198,7 @@ bioactivities:
     notes: PubChem BioAssay AID 488752, deposited by NCGC; assay type Confirmatory.
   value: 2.9362
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Quantitative high throughput screen for delayed death inhibitors of the malarial
     parasite plastid, 96 hour incubation
   evidence:
@@ -193,6 +207,7 @@ bioactivities:
     notes: PubChem BioAssay AID 488745, deposited by NCGC; assay type Confirmatory.
   value: 1.1689
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Total Fluorescence Counterscreen for Inhibitors of the Interaction of Thyroid
     Hormone Receptor and Steroid Receptor Coregulator 2
   evidence:
@@ -202,6 +217,7 @@ bioactivities:
   value: 2.2387
   units: uM
   target_enzyme: UniProtKB:NP_001121649
+  activity_class: ENZYME_INHIBITOR
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
     factor 4 (EPAC2)
   evidence:
@@ -228,6 +244,7 @@ bioactivities:
   value: 9.1962
   units: uM
   target_enzyme: UniProtKB:AAH15051
+  activity_class: TOXIN
 - assay: Validation screen for small molecules that inhibit ELG1-dependent DNA repair
     in human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1
   evidence:
@@ -253,6 +270,7 @@ bioactivities:
   value: 39.8107
   units: uM
   target_enzyme: UniProtKB:NP_066564
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a
   evidence:
   - reference: pubchem.aid:504332
@@ -261,8 +279,13 @@ bioactivities:
   value: 9.4662
   units: uM
   target_enzyme: UniProtKB:CAQ07474
+  activity_class: ENZYME_INHIBITOR
   notes: 35 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
+- TOXIN
 bgc_class:
 - NRPS
 xrefs:
@@ -306,7 +329,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:36Z'
+- timestamp: '2026-09-08T22:37:22Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

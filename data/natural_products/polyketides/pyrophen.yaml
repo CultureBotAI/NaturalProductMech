@@ -49,6 +49,7 @@ bioactivities:
   value: 15.8489
   units: uM
   target_enzyme: UniProtKB:1DE9_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Fluorescent Polarization Homogeneous Dose Response HTS to Indentify Inhibitors
     of Mex-5 Binding to TCR-2
   evidence:
@@ -59,6 +60,7 @@ bioactivities:
   value: 27.938
   units: uM
   target_enzyme: UniProtKB:Q9XUB2
+  activity_class: ENZYME_INHIBITOR
 - assay: Fluorescent Polarization Homogeneous Dose Response HTS to Indentify Inhibitors
     of POS-1 Binding to mex-3-RNA
   evidence:
@@ -69,6 +71,7 @@ bioactivities:
   value: 38.668
   units: uM
   target_enzyme: UniProtKB:NP_505172
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibitors of DNA Polymerase Beta: Hit validation'
   evidence:
   - reference: pubchem.aid:540280
@@ -77,6 +80,7 @@ bioactivities:
   value: 28.1838
   units: uM
   target_enzyme: UniProtKB:NP_002681
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence-based Microorganism Dose Response HTS to Identify Inhibitors
     of E. Coli Growth
   evidence:
@@ -86,6 +90,7 @@ bioactivities:
   measurement_type: EC50
   value: 110.0
   units: uM
+  activity_class: ANTIBACTERIAL
 - assay: Nrf2 qHTS screen for inhibitors
   evidence:
   - reference: pubchem.aid:504444
@@ -102,6 +107,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory.
   value: 9.285
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     96 hour incubation
   evidence:
@@ -110,6 +116,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
   value: 2.9362
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2546
@@ -118,6 +125,7 @@ bioactivities:
   value: 11.2202
   units: uM
   target_enzyme: UniProtKB:NP_035411
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS Assay for Inhibitors Targeting the Menin-MLL Interaction in MLL Related
     Leukemias: Competition With Fluorescein Labeled MLL-derived Peptide'
   evidence:
@@ -162,6 +170,7 @@ bioactivities:
   value: 79.4328
   units: uM
   target_enzyme: UniProtKB:BAA89212
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of DNA Polymerase Beta
   evidence:
   - reference: pubchem.aid:485314
@@ -170,6 +179,7 @@ bioactivities:
   value: 17.7828
   units: uM
   target_enzyme: UniProtKB:NP_002681
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia
     Lamblia
   evidence:
@@ -179,6 +189,7 @@ bioactivities:
   value: 19.9054
   units: uM
   target_enzyme: UniProtKB:2ISV_A
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of JMJD2A-Tudor Domain
   evidence:
   - reference: pubchem.aid:504339
@@ -187,6 +198,7 @@ bioactivities:
   value: 63.0957
   units: uM
   target_enzyme: UniProtKB:2QQS_A
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Rango (Ran-regulated importin-beta cargo) -
     Importin beta complex formation
   evidence:
@@ -196,6 +208,7 @@ bioactivities:
   value: 50.1187
   units: uM
   target_enzyme: UniProtKB:NP_002256
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Rango (Ran-regulated importin-beta cargo) -
     Importin beta complex formation
   evidence:
@@ -205,6 +218,7 @@ bioactivities:
   value: 50.1187
   units: uM
   target_enzyme: UniProtKB:NP_005692
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Tyrosyl-DNA Phosphodiesterase (TDP1)
   evidence:
   - reference: pubchem.aid:485290
@@ -213,6 +227,7 @@ bioactivities:
   value: 0.2512
   units: uM
   target_enzyme: UniProtKB:1JY1_A
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of the Human Apurinic/apyrimidinic Endonuclease
     1 (APE1)
   evidence:
@@ -222,6 +237,7 @@ bioactivities:
   value: 28.1838
   units: uM
   target_enzyme: UniProtKB:1DE9_A
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Lipid Storage Modulators in Drosophila S3 Cells
   evidence:
   - reference: pubchem.aid:2685
@@ -237,6 +253,7 @@ bioactivities:
   value: 19.9526
   units: uM
   target_enzyme: UniProtKB:NP_056293
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS Assay for the Inhibitors of L3MBTL1: Hit Validation'
   evidence:
   - reference: pubchem.aid:540279
@@ -245,6 +262,7 @@ bioactivities:
   value: 6.7016
   units: uM
   target_enzyme: UniProtKB:NP_056293
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS Assay for the Inhibitors of L3MBTL1: Hit Validationin AlphaScreen Counterscreen'
   evidence:
   - reference: pubchem.aid:602224
@@ -252,8 +270,12 @@ bioactivities:
     notes: PubChem BioAssay AID 602224, deposited by NCGC; assay type Confirmatory.
   value: 37.6858
   units: uM
+  activity_class: ENZYME_INHIBITOR
   notes: 28 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ANTIBACTERIAL
+- ENZYME_INHIBITOR
 bgc_class:
 - NRPS
 - PKS
@@ -347,7 +369,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:35Z'
+- timestamp: '2026-09-08T22:37:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

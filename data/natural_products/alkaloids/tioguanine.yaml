@@ -55,6 +55,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224888, deposited by 824; assay type Confirmatory.
   value: 15.089
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A High-Content qHTS Against Drug Library for the Identification of Small
     Molecules that Inhibit DYT1 Early Onset Primary Dystonia-Associated Cell Pathology
   evidence:
@@ -82,6 +83,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.32
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A quantitative high throughput screen for small molecules that induce DNA
     re-replication in MCF 10a normal breast cells.
   evidence:
@@ -101,6 +103,7 @@ bioactivities:
   measurement_type: IC50
   value: 6.297
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based
     qHTS assay'
   evidence:
@@ -229,6 +232,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.
   value: 0.7308
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for adrenocortical cancer (ACC) cell line NCI-H295R
   evidence:
   - reference: pubchem.aid:1963990
@@ -236,6 +240,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.
   value: 1.122
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13
   evidence:
   - reference: pubchem.aid:1963989
@@ -243,6 +248,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963989, deposited by NCGC; assay type Confirmatory.
   value: 3.2643
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13
   evidence:
   - reference: pubchem.aid:1963989
@@ -250,8 +256,12 @@ bioactivities:
     notes: PubChem BioAssay AID 1963989, deposited by NCGC; assay type Confirmatory.
   value: 2.8184
   units: uM
+  activity_class: CYTOTOXIC
   notes: 775 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:9555
@@ -312,7 +322,7 @@ discussions:
     They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T22:31:36Z'
+- timestamp: '2026-09-08T22:37:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

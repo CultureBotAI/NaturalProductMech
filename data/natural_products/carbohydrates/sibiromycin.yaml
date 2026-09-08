@@ -39,6 +39,9 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1259408, deposited by 22071; assay type Other.
   call: ACTIVE
+  activity_class: TOXIN
+bioactivity_summary:
+- TOXIN
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:90941
@@ -91,7 +94,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:33Z'
+- timestamp: '2026-09-08T22:37:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -116,6 +116,7 @@ bioactivities:
       Molecular Screening Center; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_001123617
+  activity_class: ENZYME_INHIBITOR
 - assay: 'USP30 deubiquitinase inhibition: Primary qHTS'
   evidence:
   - reference: pubchem.aid:1645860
@@ -123,6 +124,8 @@ bioactivities:
     notes: PubChem BioAssay AID 1645860, deposited by 24642; assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:Q70CQ3
+bioactivity_summary:
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:7569
@@ -222,7 +225,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:26Z'
+- timestamp: '2026-09-08T22:37:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

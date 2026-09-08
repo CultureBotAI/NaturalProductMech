@@ -296,6 +296,7 @@ bioactivities:
   value: 148.0
   units: uM
   target_enzyme: UniProtKB:H9TB17
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Aromatase Assay from Article 10.1111/j.1747-0285.2012.01439.x: "Neoflavonoids
     and Tetrahydroquinolones as Possible Cancer Chemopreventive Agents."'
   evidence:
@@ -306,6 +307,7 @@ bioactivities:
   value: 1.09662e-06
   units: uM
   target_enzyme: UniProtKB:P11511
+  activity_class: CYTOTOXIC
 - assay: 'Competition-Based Ligand Binding Assay. from Article 10.1021/jm060692n:
     "Subtle side-chain modifications of the hop phytoestrogen 8-prenylnaringenin result
     in distinct agonist/antagonist activity profiles for estrogen receptors alpha
@@ -318,6 +320,7 @@ bioactivities:
   value: 72.302
   units: uM
   target_enzyme: UniProtKB:P03372
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Competition-Based Ligand Binding Assay. from Article 10.1021/jm060692n:
     "Subtle side-chain modifications of the hop phytoestrogen 8-prenylnaringenin result
     in distinct agonist/antagonist activity profiles for estrogen receptors alpha
@@ -330,6 +333,7 @@ bioactivities:
   value: 13.473
   units: uM
   target_enzyme: UniProtKB:Q92731
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Esterase Activity Assay from Article 10.3109/14756366.2011.651464: "Analysis
     of saponins and phenolic compounds as inhibitors of a-carbonic anhydrase isoenzymes."'
   evidence:
@@ -340,6 +344,7 @@ bioactivities:
   value: 0.97
   units: uM
   target_enzyme: UniProtKB:P00915
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Esterase Activity Assay from Article 10.3109/14756366.2011.651464: "Analysis
     of saponins and phenolic compounds as inhibitors of a-carbonic anhydrase isoenzymes."'
   evidence:
@@ -350,6 +355,7 @@ bioactivities:
   value: 0.113
   units: uM
   target_enzyme: UniProtKB:P00918
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Esterase Activity Assay from Article 10.3109/14756366.2011.651464: "Analysis
     of saponins and phenolic compounds as inhibitors of a-carbonic anhydrase isoenzymes."'
   evidence:
@@ -360,6 +366,7 @@ bioactivities:
   value: 1.12
   units: uM
   target_enzyme: UniProtKB:P22748
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Esterase Activity Assay from Article 10.3109/14756366.2011.651464: "Analysis
     of saponins and phenolic compounds as inhibitors of a-carbonic anhydrase isoenzymes."'
   evidence:
@@ -370,6 +377,7 @@ bioactivities:
   value: 1.49
   units: uM
   target_enzyme: UniProtKB:P23280
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Esterase Activity Assay from Article 10.3109/14756366.2011.651464: "Analysis
     of saponins and phenolic compounds as inhibitors of a-carbonic anhydrase isoenzymes."'
   evidence:
@@ -380,6 +388,7 @@ bioactivities:
   value: 2.21
   units: uM
   target_enzyme: UniProtKB:Q3SZX4
+  activity_class: ENZYME_INHIBITOR
 - assay: High Throughput Screening for Foot and Mouth Disease Virus Antivirals
   evidence:
   - reference: pubchem.aid:1159524
@@ -387,6 +396,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1159524, deposited by NCGC; assay type Confirmatory.
   value: 14.1254
   units: uM
+  activity_class: ANTIVIRAL
 - assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
     (ALOX12): Round 2'
   evidence:
@@ -395,6 +405,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
   value: 44.6684
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
     (ALOX12): Round 2'
   evidence:
@@ -404,6 +415,7 @@ bioactivities:
   value: 44.6684
   units: uM
   target_enzyme: UniProtKB:P18054
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     48 hour incubation
   evidence:
@@ -412,6 +424,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory.
   value: 2.6169
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     96 hour incubation
   evidence:
@@ -420,6 +433,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
   value: 6.5733
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Activators of Cytochrome P450 3A4
   evidence:
   - reference: pubchem.aid:885
@@ -505,6 +519,10 @@ bioactivities:
   target_enzyme: UniProtKB:BAA02545
   notes: 19 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ANTIVIRAL
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 molecular_targets:
 - target_label: Aldehyde oxidase 1
   target_type: PROTEIN
@@ -681,7 +699,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:27Z'
+- timestamp: '2026-09-08T22:37:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

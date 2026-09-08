@@ -65,24 +65,28 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347353, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: COV-362 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347352, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: OV-SAHO Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347348, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: Panc-1005 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347349, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: Primary screen NINDS Rhodamine qHTS for Zika virus inhibitors
   evidence:
   - reference: PMID:33229545
@@ -102,18 +106,21 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347350, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: UWB1.289 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347347, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: UWB1.289-WTBRCA1 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347354, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: qHTS for Antimalaria activity screened against the NCATS CANVASS Library
   evidence:
   - reference: PMID:30648156
@@ -135,6 +142,8 @@ bioactivities:
     notes: PubChem BioAssay AID 1347374, deposited by NCGC; assay type Confirmatory.
   call: ACTIVE
   target_enzyme: UniProtKB:AAC68568
+bioactivity_summary:
+- CYTOTOXIC
 bgc_class:
 - OTHER
 xrefs:
@@ -179,7 +188,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:36Z'
+- timestamp: '2026-09-08T22:37:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -105,6 +105,7 @@ bioactivities:
   value: 0.187
   units: uM
   target_enzyme: UniProtKB:P22185
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibitory Effects on Recombinant AOX Protein from US Patent US11565996:
     "Compounds for use as inhibitors of alternative oxidase or cytochrome bc1 complex"'
   evidence:
@@ -115,6 +116,9 @@ bioactivities:
   value: 0.5
   units: uM
   target_enzyme: UniProtKB:P22185
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:156148
@@ -168,7 +172,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:35Z'
+- timestamp: '2026-09-08T22:37:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

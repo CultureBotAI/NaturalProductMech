@@ -74,6 +74,7 @@ bioactivities:
       Facility, Harvard Medical School; assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_371243
+  activity_class: ANTIBACTERIAL
 - assay: A screen for compounds that inhibit viral RNA polymerase binding and polymerization
     activities
   evidence:
@@ -83,6 +84,7 @@ bioactivities:
       Facility, Harvard Medical School; assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:1RA7_A
+  activity_class: ENZYME_INHIBITOR
 - assay: High-throughput screen for inhibitors of the GIV GBA-motif interaction with
     Galpha-i G protein subunits
   evidence:
@@ -92,6 +94,7 @@ bioactivities:
       Facility, Harvard Medical School; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:BAE44387
+  activity_class: ENZYME_INHIBITOR
 - assay: High-throughput screen for inhibitors of the GIV GBA-motif interaction with
     Galpha-i G protein subunits
   evidence:
@@ -101,6 +104,7 @@ bioactivities:
       Facility, Harvard Medical School; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:P08753
+  activity_class: ENZYME_INHIBITOR
 - assay: High-throughput screen for inhibitors of the GIV GBA-motif interaction with
     Galpha-i G protein subunits, FP Hit Confirmation
   evidence:
@@ -109,6 +113,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1259350, deposited by ICCB-Longwood/NSRB Screening
       Facility, Harvard Medical School; assay type Other.
   call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
 - assay: NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal)
     in B6D2F1 (BDF1) mice
   evidence:
@@ -116,6 +121,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 328, deposited by DTP/NCI; assay type Other.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: 'OTUD3 deubiquitinase inhibition: Primary qHTS'
   evidence:
   - reference: pubchem.aid:1645858
@@ -186,6 +192,10 @@ bioactivities:
     notes: PubChem BioAssay AID 1645853, deposited by 24642; assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:P40818
+bioactivity_summary:
+- ANTIBACTERIAL
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -228,7 +238,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:33Z'
+- timestamp: '2026-09-08T22:37:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

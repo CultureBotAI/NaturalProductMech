@@ -116,6 +116,7 @@ bioactivities:
   measurement_type: IC50
   value: 4.7
   units: uM
+  activity_class: ANTIPARASITIC
 - assay: 'DNA-Dependent ATPase Assay from Article 10.1186/1471-2091-15-9: "Plasmodium
     falciparum UvrD activities are downregulated by DNA-interacting compounds and
     its dsRNA inhibits malaria parasite growth."'
@@ -126,6 +127,9 @@ bioactivities:
   measurement_type: IC50
   value: 3.1
   units: uM
+  activity_class: ANTIPARASITIC
+bioactivity_summary:
+- ANTIPARASITIC
 molecular_targets:
 - target_label: DNA helicase [35-727]
   target_type: PROTEIN
@@ -267,7 +271,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:28Z'
+- timestamp: '2026-09-08T22:37:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

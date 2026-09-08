@@ -179,6 +179,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.
   value: 4.6109
   units: uM
+  activity_class: CYTOTOXIC
 - assay: 'Enzymatic Activity Assay from Article 10.1016/j.bioorg.2015.10.003: "Development
     of hydroxylated naphthylchalcones as polyphenol oxidase inhibitors: Synthesis,
     biochemistry and molecular docking studies."'
@@ -248,6 +249,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.
   value: 0.0447
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo
     Assay'
   evidence:
@@ -257,6 +259,7 @@ bioactivities:
   value: 0.0447
   units: uM
   target_enzyme: UniProtKB:Q9BV86
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
   evidence:
   - reference: pubchem.aid:1964107
@@ -265,6 +268,7 @@ bioactivities:
   value: 0.0101
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
   evidence:
   - reference: pubchem.aid:1964107
@@ -273,6 +277,7 @@ bioactivities:
   value: 11.0903
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS for small molecule stabilizers of the endoplasmic reticulum
     resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay'
   evidence:
@@ -341,6 +346,7 @@ bioactivities:
   value: 29.0
   units: uM
   target_enzyme: UniProtKB:Q00024
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen
     2 blue channel
   evidence:
@@ -403,8 +409,12 @@ bioactivities:
   value: 25.1189
   units: uM
   target_enzyme: UniProtKB:2W2I_A
+  activity_class: ENZYME_INHIBITOR
   notes: 13 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 molecular_targets:
 - target_label: Polyphenol oxidase 1
   target_type: PROTEIN
@@ -558,7 +568,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:25Z'
+- timestamp: '2026-09-08T22:37:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

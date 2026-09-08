@@ -88,6 +88,31 @@ BGC_CLASS_MAP = {
 # PubChem's activity names to the schema's measurement vocabulary. An
 # unmapped name keeps its value and units without claiming a type, rather
 # than being coerced into the nearest one.
+# Assay-name patterns that name an activity class unambiguously. Deliberately
+# narrow: an unset class is honest, a guessed one is "computed presented as
+# asserted" in a new place (#39).
+ACTIVITY_CLASS_PATTERNS = [
+    (re.compile(r"antibacterial|anti-bacterial|\bE\. ?coli\b|staphylococc|"
+                r"antibiotic", re.I), "ANTIBACTERIAL"),
+    (re.compile(r"antifungal|anti-fungal|candida|aspergillus", re.I), "ANTIFUNGAL"),
+    (re.compile(r"antivir|anti-viral|hiv|influenza", re.I), "ANTIVIRAL"),
+    (re.compile(r"antimalarial|plasmodium|trypanosom|leishman", re.I), "ANTIPARASITIC"),
+    (re.compile(r"cytotox|tumor|tumour|cancer|nci-?60|growth inhibition|"
+                r"antiproliferat", re.I), "CYTOTOXIC"),
+    (re.compile(r"mutagen|carcinogen|ccris|genotox", re.I), "TOXIN"),
+    (re.compile(r"inhibitors? of|inhibition of|\bIC50\b|\bKi\b|binding", re.I),
+     "ENZYME_INHIBITOR"),
+]
+
+
+def classify_activity(assay_name: str) -> str | None:
+    """A BioactivityClassEnum value when the assay name says one plainly."""
+    for pattern, label in ACTIVITY_CLASS_PATTERNS:
+        if pattern.search(assay_name or ""):
+            return label
+    return None
+
+
 MEASUREMENT_TYPES = {
     "IC50": "IC50", "EC50": "EC50", "KI": "KI", "KD": "KD",
     "MIC": "MIC", "GI50": "GI50", "AC50": "EC50",
@@ -703,6 +728,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 observation["call"] = "ACTIVE"
             if row["target_accession"]:
                 observation["target_enzyme"] = f"UniProtKB:{row['target_accession']}"
+            activity_class = classify_activity(row["assay_name"])
+            if activity_class:
+                observation["activity_class"] = activity_class
             bioactivities.append(observation)
 
         if bioactivities:
@@ -718,6 +746,15 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                     f"data/raw/pubchem_bioassay.tsv but not written here."
                 )
             doc["bioactivities"] = bioactivities
+
+            # bioactivity_summary is derived and must never float: PLAN.md 3.5
+            # accepts a bioactivities item as backing, and there are now
+            # classified items to derive from. Only classes actually present on
+            # a written observation are summarised.
+            summary = sorted({b["activity_class"] for b in bioactivities
+                              if b.get("activity_class")})
+            if summary:
+                doc["bioactivity_summary"] = summary
 
         targets: list[dict[str, Any]] = []
         for row in targets_by_key.get(key) or []:

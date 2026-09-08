@@ -202,6 +202,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.0912
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Bursicon-induced LGR2 mediated cAMP production in LGR-2/CRE6x-Luciferase
     co-transfected HEK293 cells Inhibition Measured in Cell-Based System Using Plate
     Reader - 7011-01_Antagonist_Dose_CherryPick_Activity_Set2
@@ -223,6 +224,7 @@ bioactivities:
   measurement_type: IC50
   value: 1.01
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Dose response confirmation of uHTS of chemical inhibitors of both B-cell
     and T-cell specific antigen receptor-induced NF-kB activation in a Jurkat cell
     line using a luminescence assay
@@ -234,6 +236,7 @@ bioactivities:
   measurement_type: IC50
   value: 7.83
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Dose response counterscreen of uHTS chemical inhibitors of both B-cell and
     T-cell specific antigen receptor-induced NF-kB activation in a HEK-293T cell line
     using a luminescence assay
@@ -245,6 +248,7 @@ bioactivities:
   measurement_type: IC50
   value: 7.42
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Dose response cytoxicity of uHTS chemical inhibitors of both B-cell and T-cell
     specific antigen receptor-induced NF-kB activation in a HEK-293T cell line using
     a luminescence assay
@@ -256,6 +260,7 @@ bioactivities:
   measurement_type: IC50
   value: 80.0
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -267,6 +272,7 @@ bioactivities:
   value: 120.0
   units: uM
   target_enzyme: UniProtKB:1PR5_A
+  activity_class: ENZYME_INHIBITOR
 - assay: Fluorescence Cell-Based Dose Response to Characterize Compounds Cytotoxic
     to RAS-Dependent BJ-TERT-LT-ST Fibroblast
   evidence:
@@ -276,6 +282,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.104
   units: uM
+  activity_class: CYTOTOXIC
 - assay: HEK293 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader
     - 7071-01_Antagonist_Dose_CherryPick_Activity
   evidence:
@@ -285,6 +292,7 @@ bioactivities:
   measurement_type: EC50
   value: 1.6
   units: uM
+  activity_class: CYTOTOXIC
 - assay: HSF-1 induced GFP reporter and Doxycycline induced RFP reporter Measured
     in Cell-Based System Using Plate Reader - 2038-03_Inhibitor_DoseNoFile_CherryPick_Activity_Set3
   evidence:
@@ -314,6 +322,7 @@ bioactivities:
   value: 11.2202
   units: uM
   target_enzyme: UniProtKB:NP_001120700
+  activity_class: ENZYME_INHIBITOR
 - assay: HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader
     - 7071-02_Antagonist_Dose_CherryPick_Activity
   evidence:
@@ -323,6 +332,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.25
   units: uM
+  activity_class: CYTOTOXIC
 - assay: High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis
     H37Rv
   evidence:
@@ -332,6 +342,7 @@ bioactivities:
   measurement_type: IC50
   value: 2.438
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: High Throughput Screening for Foot and Mouth Disease Virus Antivirals
   evidence:
   - reference: pubchem.aid:1159524
@@ -339,6 +350,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1159524, deposited by NCGC; assay type Confirmatory.
   value: 28.1838
   units: uM
+  activity_class: ANTIVIRAL
 - assay: LGR2:Counterscreen with MC4R Measured in Cell-Based System Using Plate Reader
     - 7011-02_Antagonist_Dose_CherryPick_Activity
   evidence:
@@ -359,6 +371,7 @@ bioactivities:
   value: 3.057
   units: uM
   target_enzyme: UniProtKB:AAH94064
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of of
     5'UTR Stem-Loop Driven Alpha-Synuclein mRNA Translation in H4 Neuroglioblastoma
     Cells
@@ -369,6 +382,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.1
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence Cell-Based Dose Confirmation HTS to Identify Compounds Cytotoxic
     to BJeLR RAS-Dependent Fibroblast
   evidence:
@@ -378,6 +392,7 @@ bioactivities:
   measurement_type: EC50
   value: 5.45
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic
     to BJ-TERT RAS-Independent Fibroblast
   evidence:
@@ -387,6 +402,7 @@ bioactivities:
   measurement_type: EC50
   value: 2.082
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic
     to BJ-TERT-LT-ST RAS-Independent Fibroblast
   evidence:
@@ -396,6 +412,7 @@ bioactivities:
   measurement_type: EC50
   value: 5.044
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic
     to DRD Non-Viral Oncogenic Fibroblast
   evidence:
@@ -405,6 +422,7 @@ bioactivities:
   measurement_type: EC50
   value: 4.118
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Dose Response HTS to Identify Inhibitors of Luciferase
     Translation or Activity in H4 Neuroglioblastoma Cells
   evidence:
@@ -414,8 +432,13 @@ bioactivities:
   measurement_type: EC50
   value: 0.1
   units: uM
+  activity_class: ENZYME_INHIBITOR
   notes: 109 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ANTIVIRAL
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:48267
@@ -469,7 +492,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:27Z'
+- timestamp: '2026-09-08T22:37:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

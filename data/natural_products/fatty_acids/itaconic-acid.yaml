@@ -355,6 +355,7 @@ bioactivities:
     notes: PubChem BioAssay AID 743014, deposited by 824; assay type Confirmatory.
   value: 78.4482
   units: uM
+  activity_class: CYTOTOXIC
 - assay: qHTS assay to identify small molecule agonists of the farnesoid-X-receptor
     (FXR) signaling pathway - cell viability counter screen
   evidence:
@@ -389,6 +390,8 @@ bioactivities:
   value: 56.0183
   units: uM
   target_enzyme: UniProtKB:BAH02282
+bioactivity_summary:
+- CYTOTOXIC
 bgc_class:
 - OTHER
 xrefs:
@@ -436,7 +439,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:30Z'
+- timestamp: '2026-09-08T22:37:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

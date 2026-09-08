@@ -111,6 +111,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2240, deposited by Broad Institute; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_937802
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence Cell-Based Primary HTS to Identify Inhibitors of STK33
   evidence:
   - reference: pubchem.aid:2330
@@ -118,6 +119,9 @@ bioactivities:
     notes: PubChem BioAssay AID 2330, deposited by Broad Institute; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:CAC29064
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:138511
@@ -247,7 +251,7 @@ discussions:
     BGC0001742. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:25Z'
+- timestamp: '2026-09-08T22:37:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

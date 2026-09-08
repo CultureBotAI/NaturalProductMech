@@ -72,6 +72,7 @@ bioactivities:
   measurement_type: IC50
   value: 2.56
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Dose response confirmation of uHTS chemical inhibitors of T-cell specific
     antigen receptor-induced NF-kB activation in a Jurkat cell line using a luminescence
     assay
@@ -83,6 +84,7 @@ bioactivities:
   measurement_type: IC50
   value: 80.0
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Dose response counterscreen of uHTS chemical inhibitors of T-cell specific
     antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence
     assay
@@ -94,6 +96,7 @@ bioactivities:
   measurement_type: IC50
   value: 80.0
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Dose response cytotoxicity of uHTS chemical inhibitors of T-cell specific
     antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence
     assay
@@ -105,6 +108,7 @@ bioactivities:
   measurement_type: IC50
   value: 80.0
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Dose Response HTS Screen to Identify Cytotoxic Compounds
     of NIH3T3 cells.
   evidence:
@@ -114,6 +118,7 @@ bioactivities:
   measurement_type: EC50
   value: 10.345
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based/Microorganism Dose Confirmation HTS to Identify Inhibitors
     of T.Cruzi Replication.
   evidence:
@@ -123,6 +128,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.1
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence Cell-Based/Microorganism Primary HTS to Identify Inhibitors
     of T.Cruzi Infection
   evidence:
@@ -132,6 +138,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.153
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence-based cell-based high throughput dose response assay to identify
     activators of the function of SWI/SNF related, matrix associated, actin dependent
     regulator of chromatin, subfamily a, member 2 (SMARCA2, BRM)
@@ -188,6 +195,7 @@ bioactivities:
   value: 79.4328
   units: uM
   target_enzyme: UniProtKB:NP_001121649
+  activity_class: ENZYME_INHIBITOR
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
     factor 3 (EPAC1)
   evidence:
@@ -246,6 +254,7 @@ bioactivities:
     notes: PubChem BioAssay AID 651635, deposited by NCGC; assay type Confirmatory.
   value: 0.1259
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Viability Counterscreen for Primary qHTS for Inhibitors of ATXN expression
   evidence:
   - reference: PMID:35787375
@@ -254,8 +263,12 @@ bioactivities:
   value: 0.1259
   units: uM
   target_enzyme: UniProtKB:Q99700
+  activity_class: ENZYME_INHIBITOR
   notes: 98 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -306,7 +319,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:30Z'
+- timestamp: '2026-09-08T22:37:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

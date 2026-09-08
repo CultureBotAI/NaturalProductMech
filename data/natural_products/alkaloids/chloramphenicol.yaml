@@ -74,6 +74,7 @@ bioactivities:
   measurement_type: IC50
   value: 9.59
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: A High-Content qHTS Against Drug Library for the Identification of Small
     Molecules that Inhibit DYT1 Early Onset Primary Dystonia-Associated Cell Pathology
   evidence:
@@ -101,6 +102,7 @@ bioactivities:
   measurement_type: IC50
   value: 1.57
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: A quantitative high throughput screen for small molecules that induce DNA
     re-replication in MCF 10a normal breast cells.
   evidence:
@@ -129,6 +131,7 @@ bioactivities:
   measurement_type: IC50
   value: 2.713
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: A screen for inhibitors of the PhoP regulon in Salmonella Typhimurium using
     a modified counterscreen.
   evidence:
@@ -139,6 +142,7 @@ bioactivities:
   measurement_type: IC50
   value: 8.46
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: A small molecule screen for inhibitors of the PhoP regulon in Salmonella
     Typhimurium
   evidence:
@@ -149,6 +153,7 @@ bioactivities:
   measurement_type: IC50
   value: 9.52
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: A small molecule screen for inhibitors of the PhoP regulon in Salmonella
     typhi
   evidence:
@@ -159,6 +164,7 @@ bioactivities:
   measurement_type: IC50
   value: 4.85
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS
     assay
   evidence:
@@ -254,6 +260,8 @@ bioactivities:
   target_enzyme: UniProtKB:AGS09764
   notes: 166 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - NRPS
 xrefs:
@@ -306,7 +314,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:35Z'
+- timestamp: '2026-09-08T22:37:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

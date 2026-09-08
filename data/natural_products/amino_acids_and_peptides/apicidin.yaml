@@ -91,6 +91,7 @@ bioactivities:
   value: 0.044
   units: uM
   target_enzyme: UniProtKB:Q13547
+  activity_class: CYTOTOXIC
 - assay: 'pfHDAC-1 Enzyme Assay from Article 10.1021/jm801654y: "Identification and
     characterization of small molecule inhibitors of a class I histone deacetylase
     from Plasmodium falciparum."'
@@ -101,6 +102,10 @@ bioactivities:
   measurement_type: IC50
   value: 0.001
   units: uM
+  activity_class: ANTIPARASITIC
+bioactivity_summary:
+- ANTIPARASITIC
+- CYTOTOXIC
 bgc_class:
 - NRPS
 xrefs:
@@ -146,7 +151,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:29Z'
+- timestamp: '2026-09-08T22:37:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

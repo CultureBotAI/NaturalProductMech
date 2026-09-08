@@ -130,6 +130,7 @@ bioactivities:
   value: 31.6228
   units: uM
   target_enzyme: UniProtKB:AAH18745
+  activity_class: ENZYME_INHIBITOR
 - assay: Quantitative High-Throughput Screen for Regulators of Epigenetic Control
   evidence:
   - reference: pubchem.aid:1865
@@ -194,6 +195,7 @@ bioactivities:
   value: 39.8107
   units: uM
   target_enzyme: UniProtKB:AAP35567
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Ubiquitin-specific Protease USP2a
   evidence:
   - reference: pubchem.aid:927
@@ -202,6 +204,7 @@ bioactivities:
   value: 10.0
   units: uM
   target_enzyme: UniProtKB:NP_004196
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of the Human Apurinic/apyrimidinic Endonuclease
     1 (APE1)
   evidence:
@@ -211,6 +214,7 @@ bioactivities:
   value: 17.7828
   units: uM
   target_enzyme: UniProtKB:1DE9_A
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Promiscuous and Specific Inhibitors of Cruzain (without detergent)
   evidence:
   - reference: pubchem.aid:1476
@@ -219,6 +223,7 @@ bioactivities:
   value: 39.8107
   units: uM
   target_enzyme: UniProtKB:3I06_A
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of Tau Fibril Formation, Thioflavin T Binding
   evidence:
   - reference: pubchem.aid:1460
@@ -227,6 +232,7 @@ bioactivities:
   value: 28.1838
   units: uM
   target_enzyme: UniProtKB:AAI14949
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of binding or entry into cells for Lassa Virus
   evidence:
   - reference: pubchem.aid:720533
@@ -234,6 +240,7 @@ bioactivities:
     notes: PubChem BioAssay AID 720533, deposited by NCGC; assay type Confirmatory.
   value: 35.4813
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of binding or entry into cells for Marburg Virus
   evidence:
   - reference: pubchem.aid:720532
@@ -242,6 +249,7 @@ bioactivities:
   value: 31.6228
   units: uM
   target_enzyme: UniProtKB:B45705
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS
     in cells in absence of CPT'
   evidence:
@@ -251,6 +259,7 @@ bioactivities:
   value: 5.1735
   units: uM
   target_enzyme: UniProtKB:AAI07878
+  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS
     in cells in presence of CPT'
   evidence:
@@ -260,6 +269,7 @@ bioactivities:
   value: 4.1095
   units: uM
   target_enzyme: UniProtKB:AAI07878
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for inhibitors of ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2551
@@ -268,6 +278,7 @@ bioactivities:
   value: 31.6228
   units: uM
   target_enzyme: UniProtKB:NP_035411
+  activity_class: ENZYME_INHIBITOR
 - assay: A screen for compounds that inhibit the activity of LtaS in Staphylococcus
     aureus
   evidence:
@@ -277,6 +288,7 @@ bioactivities:
       Facility, Harvard Medical School; assay type Other.
   call: ACTIVE
   target_enzyme: UniProtKB:NP_371243
+  activity_class: ANTIBACTERIAL
 - assay: AlphaScreen-based biochemical high throughput primary assay to identify inhibitors
     of Unc-51 Like Autophagy Activating Kinase 1 (ULK1).
   evidence:
@@ -285,6 +297,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1259251, deposited by The Scripps Research Institute
       Molecular Screening Center; assay type Screening.
   call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
 - assay: High Throughput Screening of small molecules that kill Mycobacterium tuberculosis
   evidence:
   - reference: pubchem.aid:1259343
@@ -298,6 +311,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1794775, deposited by DTP/NCI; assay type Screening.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI human tumor cell line growth inhibition assay. Data for the A498 Non-Small
     Cell Lung cell line, single concentration
   evidence:
@@ -305,6 +319,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1794774, deposited by DTP/NCI; assay type Screening.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI human tumor cell line growth inhibition assay. Data for the BT-549 Non-Small
     Cell Lung cell line, single concentration
   evidence:
@@ -312,6 +327,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1794793, deposited by DTP/NCI; assay type Screening.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI human tumor cell line growth inhibition assay. Data for the CCRF-CEM
     Non-Small Cell Lung cell line, single concentration
   evidence:
@@ -319,8 +335,13 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1794778, deposited by DTP/NCI; assay type Screening.
   call: ACTIVE
+  activity_class: CYTOTOXIC
   notes: 19 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ANTIBACTERIAL
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - RIBOSOMAL
 compound_classes:
@@ -367,7 +388,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:31Z'
+- timestamp: '2026-09-08T22:37:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -51,6 +51,7 @@ bioactivities:
   measurement_type: IC50
   value: 0.0002
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibitory Effects on Recombinant AOX Protein from US Patent US11565996:
     "Compounds for use as inhibitors of alternative oxidase or cytochrome bc1 complex"'
   evidence:
@@ -61,6 +62,7 @@ bioactivities:
   value: 0.515
   units: uM
   target_enzyme: UniProtKB:P22185
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibitory Effects on Recombinant AOX Protein from US Patent US11565996:
     "Compounds for use as inhibitors of alternative oxidase or cytochrome bc1 complex"'
   evidence:
@@ -71,6 +73,9 @@ bioactivities:
   value: 0.75
   units: uM
   target_enzyme: UniProtKB:P22185
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 - TERPENE
@@ -126,7 +131,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:34Z'
+- timestamp: '2026-09-08T22:37:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

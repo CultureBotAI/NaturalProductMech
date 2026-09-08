@@ -270,6 +270,7 @@ bioactivities:
   measurement_type: EC50
   value: 15.15
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: '7124-02: inhibition of TNFa signaling in B cell lineage, counterscreen'
   evidence:
   - reference: pubchem.aid:1259334
@@ -279,6 +280,7 @@ bioactivities:
   measurement_type: EC50
   value: 13.27
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
     - 24 hour
   evidence:
@@ -287,6 +289,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224875, deposited by 824; assay type Confirmatory.
   value: 47.1995
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
     - 32 hour
   evidence:
@@ -295,6 +298,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224881, deposited by 824; assay type Confirmatory.
   value: 52.9587
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
     - 40 hour
   evidence:
@@ -303,6 +307,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224871, deposited by 824; assay type Confirmatory.
   value: 47.1995
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 40 hour
   evidence:
@@ -311,6 +316,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224879, deposited by 824; assay type Confirmatory.
   value: 52.9587
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 40 hour
   evidence:
@@ -319,6 +325,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1224879, deposited by 824; assay type Confirmatory.
   value: 20.1579
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS
     assay
   evidence:
@@ -431,6 +438,9 @@ bioactivities:
   units: uM
   notes: 411 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - NRPS
 - PKS
@@ -480,7 +490,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:30Z'
+- timestamp: '2026-09-08T22:37:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

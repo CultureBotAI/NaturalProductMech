@@ -142,6 +142,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2330, deposited by Broad Institute; assay type Screening.
   call: ACTIVE
   target_enzyme: UniProtKB:CAC29064
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence Cell-Based Primary HTS to Identify Inhibitors of the Sonic Hedgehog
     Signaling Pathway
   evidence:
@@ -149,6 +150,9 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2313, deposited by Broad Institute; assay type Screening.
   call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:156219
@@ -204,7 +208,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:33Z'
+- timestamp: '2026-09-08T22:37:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -61,6 +61,7 @@ bioactivities:
   value: 100.0
   units: uM
   target_enzyme: UniProtKB:AAB03573
+  activity_class: ANTIVIRAL
 - assay: A cell based assay for assessing THP-1 cell cytotoxicity of Inhibitors Targeting
     HIV-1 Vif-dependent Degradation of Human APOBEC3G
   evidence:
@@ -70,6 +71,7 @@ bioactivities:
       assay type Confirmatory.
   value: 3.08
   units: uM
+  activity_class: ANTIVIRAL
 - assay: A counter screen for small molecule screen for inhibitors of the PhoP regulon
     in Salmonella typhi
   evidence:
@@ -80,6 +82,7 @@ bioactivities:
   measurement_type: IC50
   value: 28.55
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: A cytotoxicity screen of small molecule inhibitors of the PhoP regulon in
     Salmonella typhi identified in the primary screen
   evidence:
@@ -90,6 +93,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.1
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A quantitative high throughput screen for small molecules that induce DNA
     re-replication in MCF 10a normal breast cells.
   evidence:
@@ -118,6 +122,7 @@ bioactivities:
   measurement_type: IC50
   value: 26.958
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: A small molecule screen for inhibitors of the PhoP regulon in Salmonella
     typhi
   evidence:
@@ -128,6 +133,7 @@ bioactivities:
   measurement_type: IC50
   value: 27.33
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: ATP-based Luminescence in the Absence of Cytokines Measured in Cell-Based
     System Using Plate Reader - 2061-06_Inhibitor_Dose_CherryPick
   evidence:
@@ -147,6 +153,7 @@ bioactivities:
   value: 150.0
   units: uM
   target_enzyme: UniProtKB:NP_269944
+  activity_class: ENZYME_INHIBITOR
 - assay: An HIV-1 Tat-TAR Fluorescence Polarization (FP) Counter Screen to evaluate
     Inhibitors Targeting HIV-1 Vif-dependent Degradation of Human APOBEC3G
   evidence:
@@ -158,6 +165,7 @@ bioactivities:
   value: 7.618
   units: uM
   target_enzyme: UniProtKB:NP_057853
+  activity_class: ANTIVIRAL
 - assay: Confirmation qHTS Assay for Inhibitors of the Human Apurinic/apyrimidinic
     Endonuclease 1 (APE1)
   evidence:
@@ -167,6 +175,7 @@ bioactivities:
   value: 19.9526
   units: uM
   target_enzyme: UniProtKB:1DE9_A
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Counterscreen for APE1 Inhibitors: Confirmatory Fluorescent Dye Displacement
     Assay'
   evidence:
@@ -191,6 +200,7 @@ bioactivities:
   value: 10.0
   units: uM
   target_enzyme: UniProtKB:AAA60529
+  activity_class: ENZYME_INHIBITOR
 - assay: Counterscreen qHTS for Inhibitors of Tau Fibril Formation, Fluorescence Polarization
   evidence:
   - reference: pubchem.aid:1463
@@ -198,6 +208,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1463, deposited by NCGC; assay type Confirmatory.
   value: 1.122
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: Dose Response Confirmation for Mcl-1/Noxa Interaction Inhibitors
   evidence:
   - reference: pubchem.aid:1417
@@ -263,6 +274,7 @@ bioactivities:
   value: 43.86
   units: uM
   target_enzyme: UniProtKB:AAI21795
+  activity_class: ENZYME_INHIBITOR
 - assay: Fluorescence Cell-Free Homogeneous Counter Screen to Identify Inhibitors
     of GFP Chromophore Formation
   evidence:
@@ -273,6 +285,7 @@ bioactivities:
   value: 2.499
   units: uM
   target_enzyme: UniProtKB:NP_217253
+  activity_class: ENZYME_INHIBITOR
 - assay: Fluorescence Cell-Free Homogeneous Dose Retest to Identify Inhibitors of
     RecA-Intein Splicing Activity
   evidence:
@@ -283,6 +296,7 @@ bioactivities:
   value: 1.57
   units: uM
   target_enzyme: UniProtKB:NP_217253
+  activity_class: ENZYME_INHIBITOR
 - assay: Fluorescence Cell-Free Homogeneous Secondary Screen to Identify Inhibitors
     of DnaB-Intein Splicing Activity
   evidence:
@@ -293,8 +307,13 @@ bioactivities:
   value: 1.781
   units: uM
   target_enzyme: UniProtKB:NP_214572
+  activity_class: ENZYME_INHIBITOR
   notes: 177 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- ANTIVIRAL
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -342,7 +361,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:29Z'
+- timestamp: '2026-09-08T22:37:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

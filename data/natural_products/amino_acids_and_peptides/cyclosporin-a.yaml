@@ -58,6 +58,7 @@ bioactivities:
       Biocontainment Screening Center; assay type Confirmatory.
   value: 22.12
   units: uM
+  activity_class: CYTOTOXIC
 - assay: A High Throughput Confirmatory Assay used to Identify Novel Compounds that
     Inhibit Mycobacterium Tuberculosis in the absence of Glycerol
   evidence:
@@ -168,6 +169,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.
   value: 23.1093
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13
   evidence:
   - reference: pubchem.aid:1963989
@@ -175,6 +177,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1963989, deposited by NCGC; assay type Confirmatory.
   value: 29.0929
   units: uM
+  activity_class: CYTOTOXIC
 - assay: 'Confirmatory qHTS for small molecule stabilizers of the endoplasmic reticulum
     resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay'
   evidence:
@@ -264,6 +267,8 @@ bioactivities:
   target_enzyme: UniProtKB:AAV41877
   notes: 318 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:4031
@@ -319,7 +324,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:31:32Z'
+- timestamp: '2026-09-08T22:37:18Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

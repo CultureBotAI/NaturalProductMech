@@ -231,6 +231,7 @@ bioactivities:
   value: 80.0
   units: uM
   target_enzyme: UniProtKB:NP_004291
+  activity_class: ENZYME_INHIBITOR
 - assay: Dose response confirmation of small molecule inhibitors of Low Molecular
     Weight Protein Tyrosine Phosphatase, LMPTP, via a fluorescence intensity assay
   evidence:
@@ -242,6 +243,7 @@ bioactivities:
   value: 47.1
   units: uM
   target_enzyme: UniProtKB:P24666
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibitors of Secretory Acid Sphingomyelinase (S-ASM): qHTS'
   evidence:
   - reference: pubchem.aid:504937
@@ -250,6 +252,7 @@ bioactivities:
   value: 70.7946
   units: uM
   target_enzyme: UniProtKB:AAA58377
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence Microorganism-Based Dose Confirmation HTS to Identify Compounds
     Cytotoxic to SK(-)GAS Group A Streptococcus
   evidence:
@@ -259,6 +262,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.06
   units: uM
+  activity_class: CYTOTOXIC
 - assay: Luminescence Microorganism-Based Dose Confirmation HTS to Identify Inhibitors
     of Streptokinase Promotor Activity
   evidence:
@@ -269,6 +273,7 @@ bioactivities:
   value: 0.06
   units: uM
   target_enzyme: UniProtKB:NP_269944
+  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence Microorganism-Based Dose Response HTS to Identify Compounds
     Cytotoxic to Streptococcus
   evidence:
@@ -278,6 +283,7 @@ bioactivities:
   measurement_type: EC50
   value: 0.06
   units: uM
+  activity_class: CYTOTOXIC
 - assay: 'Oatp1d1 Transport Assay from Article 10.1074/jbc.M113.518506: "Molecular
     characterization of zebrafish Oatp1d1 (Slco1d1), a novel organic anion-transporting
     polypeptide."'
@@ -296,6 +302,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
   value: 9.285
   units: uM
+  activity_class: ENZYME_INHIBITOR
 - assay: 'Surface Plasmon Resonance (SPR) from US Patent US20240118263: "TARGET FOR
     SCREENING ANTI-TUMOR DRUG, USE THEREOF AND SCREENING METHOD THEREFOR"'
   evidence:
@@ -306,6 +313,7 @@ bioactivities:
   value: 10.4
   units: uM
   target_enzyme: UniProtKB:Q8IZQ5
+  activity_class: CYTOTOXIC
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
     factor 3 (EPAC1)
   evidence:
@@ -365,6 +373,7 @@ bioactivities:
   value: 1.9953
   units: uM
   target_enzyme: UniProtKB:2HDS_A
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Inhibitors of AmpC Beta-Lactamase (assay without detergent)
   evidence:
   - reference: pubchem.aid:485341
@@ -373,6 +382,7 @@ bioactivities:
   value: 39.8107
   units: uM
   target_enzyme: UniProtKB:2HDS_A
+  activity_class: ENZYME_INHIBITOR
 - assay: qHTS assay for small molecule activators of the heat shock response signaling
     pathway - cell viability counter screen
   evidence:
@@ -391,6 +401,9 @@ bioactivities:
   units: uM
   notes: 46 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:42355
@@ -493,7 +506,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:34Z'
+- timestamp: '2026-09-08T22:37:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

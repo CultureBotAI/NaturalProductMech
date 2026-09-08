@@ -274,18 +274,21 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1259411, deposited by 22070; assay type Other.
   call: ACTIVE
+  activity_class: TOXIN
 - assay: CCRIS mutagenicity studies
   evidence:
   - reference: pubchem.aid:1259407
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1259407, deposited by 22070; assay type Other.
   call: ACTIVE
+  activity_class: TOXIN
 - assay: GENE-TOX mutagenicity studies
   evidence:
   - reference: pubchem.aid:1259408
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1259408, deposited by 22071; assay type Other.
   call: ACTIVE
+  activity_class: TOXIN
 - assay: NCI In Vivo Anticancer Drug Screen. Data for tumor model L1210 Leukemia (intraperitoneal)
     in B6D2F1 (BDF1) mice
   evidence:
@@ -293,6 +296,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 248, deposited by DTP/NCI; assay type Other.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal)
     in B6D2F1 (BDF1) mice
   evidence:
@@ -300,6 +304,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 328, deposited by DTP/NCI; assay type Other.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal)
     in CD2F1 (CDF1) mice
   evidence:
@@ -307,6 +312,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 330, deposited by DTP/NCI; assay type Other.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI human tumor cell line growth inhibition assay. Data for the MCF7 Breast
     cell line
   evidence:
@@ -314,6 +320,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 83, deposited by DTP/NCI; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI human tumor cell line growth inhibition assay. Data for the P388 Leukemia
     cell line
   evidence:
@@ -321,6 +328,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 111, deposited by DTP/NCI; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
 - assay: NCI human tumor cell line growth inhibition assay. Data for the P388/ADR
     Leukemia cell line
   evidence:
@@ -328,6 +336,10 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 117, deposited by DTP/NCI; assay type Confirmatory.
   call: ACTIVE
+  activity_class: CYTOTOXIC
+bioactivity_summary:
+- CYTOTOXIC
+- TOXIN
 bgc_class:
 - PKS
 compound_classes:
@@ -416,7 +428,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T22:31:34Z'
+- timestamp: '2026-09-08T22:37:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
