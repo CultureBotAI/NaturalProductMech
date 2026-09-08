@@ -167,12 +167,13 @@ The first emitted record keeps the `curation_status` set by its emitter:
 `SEEDED` for adopted-source inventories and `PROPOSED` only for a direct
 curator-entry lane. Add only fields supported by the source path:
 
-- `label`, `identifier`, `biosynthetic_class`, `source_concepts`,
+- `label`, `identifier`, `np_pathway`, `source_concepts`,
   `chemical_structure.standard_inchi_key`, `grounding_status`, and
   `curation_status` are required for a usable first record.
-- `biosynthetic_classes` and `ecological_roles` come from a source assertion.
-  A computed NPClassifier pathway is recorded with tool and version and is not
-  a source assertion.
+- `bgc_class`, `compound_classes` and `ecological_roles` come from a source
+  assertion. `np_pathway`, the filing value, is computed by NPClassifier and is
+  recorded with its model version; it is never a source assertion, and it never
+  admits a record.
 - `producer_organisms`, `occurrences`, `biosynthetic_gene_clusters`,
   `bioactivities`, `molecular_targets`, `biosynthetic_pathway` and
   `causal_graphs` need claim-level evidence on each object. A MIBiG-seeded

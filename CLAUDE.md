@@ -13,12 +13,13 @@ a skill that calls one should say so rather than improvise.
 
 NaturalProductMech is a LinkML knowledge base of **individual natural product
 structures**: one generated YAML record per Standard InChIKey at
-`data/natural_products/<biosynthetic_class>/<slug>.yaml`, harmonized from
+`data/natural_products/<np_pathway>/<slug>.yaml`, harmonized from
 ChEBI (3-star entries bearing an allow-listed specialized-metabolite role),
-MIBiG (reviewed entries: structures, producers, gene clusters) and LOTUS
-(cited occurrences, microbial taxa first), with structures for uncovered
-concepts fetched from PubChem. The committed inventories in `data/raw/` are
-the reproducible inputs.
+MIBiG (active entries: structures, producers, gene clusters, graded by each
+locus's experimental evidence) and LOTUS (cited occurrences, microbial taxa
+first), with structures for uncovered concepts fetched from PubChem and the
+filing classification computed by NPClassifier. The committed inventories in
+`data/raw/` are the reproducible inputs.
 
 Read these before changing domain behavior:
 
@@ -156,9 +157,12 @@ adds the extractor path, the committed inventory, its manifest entry and its
   never promotes one to the other.
 - **Computed is not asserted.** NPClassifier, ClassyFire and NP-likeness carry
   tool and version and never pose as a source assertion.
-- **`biosynthetic_class` is a filing decision; `biosynthetic_classes` and
-  `ecological_roles` are the evidence.** Never drop a value because the class
-  was assigned.
+- **`np_pathway` is a filing decision, and it is computed.** It is
+  NPClassifier's pathway, so it says which model version produced it. The
+  asserted classifications live beside it in `bgc_class` (the gene cluster's,
+  from MIBiG), `compound_classes` (the molecule's, where a source asserts one)
+  and `ecological_roles`. Never drop a value because the filing class was
+  assigned, and never present the filing class as an assertion.
 - **Merge on InChIKey, with two exceptions** (ChEBI-internal collisions stay
   separate; two minted concepts sharing a structure are flagged, not merged).
   `stereo_complete` is recorded because this chemistry is where the InChIKey's

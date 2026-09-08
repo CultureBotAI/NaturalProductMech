@@ -47,7 +47,7 @@ One `NaturalProductRecord` is one chemical structure with a Standard InChIKey.
 Inherited unchanged from AntibioticMech, including its consequences:
 
 - A compound class ("macrolide", "indole alkaloid") is never a record. It is a
-  `structural_class` / `biosynthetic_class` on the records it covers.
+  `structural_class` / `bgc_class` on the records it covers.
 - An extract, fraction, essential oil, herbal preparation or "crude
   supernatant" is never a record. Activity measured on a mixture is not
   evidence about any single constituent.
@@ -285,7 +285,7 @@ NaturalProductMech/
   curation/decisions.tsv       # GROUND / EXCLUDE / KEEP_MINTED per source concept
   curation/source_queue.tsv    # ranked candidate sources
   data/raw/                    # committed inventories + MANIFEST.yaml (sha256, versions)
-  data/natural_products/<biosynthetic_class>/<slug>.yaml
+  data/natural_products/<np_pathway>/<slug>.yaml
   data/natural_products/PATHS.tsv  RETIRED.tsv
   src/naturalproductmech/{schema,curate,validation,templates}/
   scripts/  tests/  pages/  research/  docs/{HARMONIZATION,CURATION}.md

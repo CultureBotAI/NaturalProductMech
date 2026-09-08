@@ -35,7 +35,7 @@ requirement to populate every optional slot.
 | Identity | `identifier`, label, synonyms, `grounding_status`, source concepts, and exact chemical form agree; congener, glycoside and stereoisomer boundaries respected. | The record denotes one individual structure and any minted identity has an explicit rationale or queued decision. |
 | Structure | SMILES, Standard InChI, InChIKey, formula, charge, masses, source, retrieval date and `stereo_complete` are mutually consistent and match the cited isolation/biosynthesis source at its stereochemical resolution. | The InChIKey is valid, the source record is the same form, and undefined stereocentres are flagged rather than invented. |
 | Equivalence | Every `xref` denotes the same structure; every `parent_compounds` value is strictly broader; `congener_of` names a sibling, not a parent. | No class, conjugate, salt, stereoisomer, glycoside, patent, article, or macromolecular structure is asserted as exact chemical identity without a documented allowed exception. |
-| Classification | `biosynthetic_class` is a filing choice with stated provenance (asserted by MIBiG/ChEBI or computed by a named tool and version); `biosynthetic_classes` and `ecological_roles` preserve every source-supported value. | The class follows repository priority without erasing additional assertions; nothing computed is presented as asserted; no record was admitted by a computed signal. |
+| Classification | `np_pathway` is the filing choice, computed by NPClassifier, and carries its model version; `bgc_class`, `compound_classes` and `ecological_roles` preserve every source-asserted value on their own axes. | Filing follows repository priority without erasing assertions; nothing computed is presented as asserted; no record was admitted by a computed signal. |
 | Producer organisms | Each taxon has an NCBITaxon id, a strain where the source gives one, an `evidence_basis` (BGC_CHARACTERIZED / HETEROLOGOUS_EXPRESSION / ISOTOPE_FEEDING / AXENIC_CULTURE / SOURCE_ASSERTION) and evidence that actually shows biosynthesis by that taxon. | No item rests on "isolated from"; host–symbiont ambiguity is a `Discussion`, not a producer claim; species-level claims are not generalized from one strain without saying so. |
 | Occurrences | Each taxon has an id and a citation to an isolation or detection report; the compound in the report is this structure. | Every occurrence is cited; none has been promoted to producer without new evidence. |
 | Gene clusters | MIBiG accession and entry version exist, have active status, name this compound rather than a class, and the entry's organism matches the record's producer; the locus evidence method is recorded and is not homology-only where a production claim rests on it. | Each BGC has evidence; a class-level, retired or homology-only entry is queued, not asserted. MIBiG's `quality` and reviewer fields are not used as truth signals. |
@@ -77,7 +77,7 @@ import yaml
 from naturalproductmech.curate.curation_event import record_curation_event
 from naturalproductmech.validation.write_validated import write_validated_natural_product
 
-path = Path("data/natural_products/<class>/<slug>.yaml")
+path = Path("data/natural_products/<np_pathway>/<slug>.yaml")
 doc = yaml.safe_load(path.read_text(encoding="utf-8"))
 assert doc["identifier"] == "<expected CURIE>"
 

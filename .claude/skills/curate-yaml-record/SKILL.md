@@ -23,7 +23,7 @@ written as production and a computed classification written as an assertion.
 
 ## Boundaries
 
-- Resolve one target under `data/natural_products/<class>/<slug>.yaml`. If a
+- Resolve one target under `data/natural_products/<np_pathway>/<slug>.yaml`. If a
   name matches multiple structures (congeners, glycosides, stereoisomers),
   stop and disambiguate before changing anything.
 - A request to review or assess is read-only. A request to curate, improve,
@@ -138,9 +138,11 @@ MIBiG's `quality` and reviewer fields do not mean what their names suggest —
 `questionable` marks a legacy-format entry, and the reviewer id is a
 placeholder in almost every entry. Neither is a truth signal to lean on.
 
-**Classification.** `biosynthetic_class` is a filing decision. If it came from
-NPClassifier, the provenance says so with tool and version; if it came from
-MIBiG, the entry says so. A computed class disagreeing with an asserted one is
+**Classification.** `np_pathway` is the filing decision and is computed by
+NPClassifier, so its provenance must name the model version. `bgc_class` is
+MIBiG's claim about the gene cluster and `compound_classes` are asserted claims
+about the molecule; these are different axes and MIBiG 4.0 separated them
+deliberately. A computed pathway disagreeing with an asserted compound class is
 a `Discussion`, not a silent pick.
 
 **Activities and targets.** Prefer primary experimental papers. Verify that
