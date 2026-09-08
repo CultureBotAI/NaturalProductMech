@@ -23,17 +23,6 @@ np_classification:
   - Purine nucleos(t)ides
   is_glycoside: false
 occurrences:
-- taxon_label: Bacillus megaterium
-  source: CHEBI
-  evidence:
-  - reference: PMID:3025147
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:86012
-  taxon_id: NCBITaxon:1404
-  taxon_source: NCBITaxon
-  detection_context: NK84-0218
-  notes: This taxon is also recorded as a producer, from a different source and citation.
-    The two corroborate each other rather than duplicating.
 - taxon_id: NCBITaxon:1404
   taxon_label: Bacillus megaterium
   taxon_source: NCBITaxon
@@ -46,6 +35,17 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q148703 This taxon is also
     recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+- taxon_label: Bacillus megaterium
+  source: CHEBI
+  evidence:
+  - reference: PMID:3025147
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:86012
+  taxon_id: NCBITaxon:1404
+  taxon_source: NCBITaxon
+  detection_context: NK84-0218
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:86012
@@ -97,7 +97,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:36:50Z'
+- timestamp: '2026-09-08T06:48:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

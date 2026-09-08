@@ -22,16 +22,6 @@ np_classification:
   - Open-chain polyketides
   is_glycoside: false
 occurrences:
-- taxon_label: Chondromyces crocatus
-  source: CHEBI
-  evidence:
-  - reference: PMID:19171307
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:132426
-  taxon_id: NCBITaxon:52
-  taxon_source: NCBITaxon
-  notes: This taxon is also recorded as a producer, from a different source and citation.
-    The two corroborate each other rather than duplicating.
 - taxon_id: NCBITaxon:52
   taxon_label: Chondromyces crocatus
   taxon_source: NCBITaxon
@@ -44,6 +34,16 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q25841315 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+- taxon_label: Chondromyces crocatus
+  source: CHEBI
+  evidence:
+  - reference: PMID:19171307
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:132426
+  taxon_id: NCBITaxon:52
+  taxon_source: NCBITaxon
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:132426
@@ -99,7 +99,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:36:46Z'
+- timestamp: '2026-09-08T06:48:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

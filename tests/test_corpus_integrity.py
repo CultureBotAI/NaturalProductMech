@@ -240,3 +240,40 @@ def test_a_taxon_in_both_fields_says_it_is_corroboration(records):
                     "corroborate" not in (occurrence.get("notes") or ""):
                 offenders.append((record["identifier"], occurrence.get("taxon_id")))
     assert not offenders, f"uncommented producer/occurrence overlap: {offenders[:5]}"
+
+
+# Taxon ids that legitimately carry two labels: nomenclatural synonyms, where
+# sources recorded the name their own reference used. Listed rather than
+# allowed silently, so a genuine mislabelling — which looks identical — shows
+# up as a change in this number instead of hiding among them (#30).
+KNOWN_SYNONYM_TAXA = 8
+
+
+def test_taxon_labels_stay_consistent_for_an_id(records):
+    """The id is the identity and the label is decoration, so nothing breaks.
+    But two names for one identifier is also exactly what a source mislabelling
+    a taxid would look like, and there is otherwise nothing to tell them apart.
+    """
+    labels = {}
+    for record in records:
+        for occurrence in record.get("occurrences") or []:
+            taxon = occurrence.get("taxon_id")
+            if taxon:
+                labels.setdefault(taxon, set()).add(occurrence["taxon_label"])
+    conflicting = {k: sorted(v) for k, v in labels.items() if len(v) > 1}
+    assert len(conflicting) <= KNOWN_SYNONYM_TAXA, (
+        f"taxon ids carrying several labels rose to {len(conflicting)}: "
+        f"{list(conflicting.items())[:4]}"
+    )
+
+
+def test_no_record_is_too_large_to_review(record_paths):
+    """`curate-yaml-record` tells a curator to read the entire YAML. Lupeol
+    carried 925 occurrences in a 397 KB file, which is not readable — the
+    inventories keep every one of them, the record keeps a bounded subset
+    and says how many it omitted (#28)."""
+    oversized = [
+        (str(path), path.stat().st_size // 1024)
+        for path in record_paths if path.stat().st_size > 64 * 1024
+    ]
+    assert not oversized, f"records too large to review: {oversized[:5]}"

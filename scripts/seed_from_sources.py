@@ -88,6 +88,13 @@ BGC_CLASS_MAP = {
 # Only cross-references whose prefix this corpus declares are carried through.
 DB_ID_RE = re.compile(r"^(npatlas|pubchem|chembl|chebi|cyanometdb|lotus):[A-Za-z0-9._-]+$")
 
+# How many occurrences reach a record. The INVENTORY keeps all of them, so
+# nothing is lost and the corpus still reproduces; this bounds what a curator
+# has to read. Without it lupeol carried 925 occurrences in a 397 KB file,
+# while the median record has one — and `curate-yaml-record` instructs a
+# curator to read the entire YAML (#28).
+MAX_OCCURRENCES_PER_RECORD = 25
+
 # One directory per NPClassifier pathway. UNCLASSIFIED is a real bucket, not an
 # error state: it is where a multi-label result lands until a curator files it.
 PATHWAY_DIRS = {
@@ -590,6 +597,29 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 )
 
         if deduped:
+            # Prefer occurrences that ADD something: a taxon not already
+            # asserted as a producer carries information the record does not
+            # otherwise have. Ordering is otherwise stable so the cap is
+            # deterministic rather than dependent on source order.
+            deduped.sort(key=lambda o: (
+                o.get("taxon_id") in producer_taxa,
+                o.get("taxon_id") or "",
+                o["evidence"][0]["reference"],
+            ))
+            omitted = len(deduped) - MAX_OCCURRENCES_PER_RECORD
+            if omitted > 0:
+                kept_occurrences = deduped[:MAX_OCCURRENCES_PER_RECORD]
+                note = (
+                    f"{omitted} further cited occurrences are recorded in "
+                    f"data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv "
+                    f"but not written here: a record carrying hundreds of them cannot "
+                    f"be reviewed. The inventories are the complete record."
+                )
+                kept_occurrences[-1]["notes"] = (
+                    f"{kept_occurrences[-1]['notes']} {note}"
+                    if kept_occurrences[-1].get("notes") else note
+                )
+                deduped = kept_occurrences
             doc["occurrences"] = deduped
 
         targets: list[dict[str, Any]] = []

@@ -35,6 +35,7 @@ import csv
 import hashlib
 import re
 import sys
+import time
 import urllib.request
 import zipfile
 from collections import Counter
@@ -233,6 +234,11 @@ def main() -> int:
         writer.writerows(rows)
 
     manifest = yaml.safe_load(MANIFEST_PATH.read_text(encoding="utf-8")) or {}
+
+    # The one piece of provenance that cannot be recovered later: a sha256
+    # says WHAT was fetched, nothing says WHEN. ChEBI replaces its flat files
+    # in place, so for those the date is the only handle on the release (#29).
+    manifest["retrieved_on"] = time.strftime("%Y-%m-%d")
     manifest.setdefault("upstream", {})[ARCHIVE] = {
         "url": URL, "sha256": sha256_of(archive), "bytes": archive.stat().st_size,
     }

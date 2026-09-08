@@ -24,6 +24,15 @@ np_classification:
   class_results: []
   is_glycoside: false
 occurrences:
+- taxon_label: Klebsiella pneumoniae
+  source: CHEBI
+  evidence:
+  - reference: PMID:28409125
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156303
+  taxon_id: NCBITaxon:573
+  taxon_source: NCBITaxon
+  detection_context: K1 CC23
 - taxon_label: Escherichia coli
   source: CHEBI
   evidence:
@@ -34,15 +43,6 @@ occurrences:
   taxon_source: NCBITaxon
   notes: This taxon is also recorded as a producer, from a different source and citation.
     The two corroborate each other rather than duplicating.
-- taxon_label: Klebsiella pneumoniae
-  source: CHEBI
-  evidence:
-  - reference: PMID:28409125
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:156303
-  taxon_id: NCBITaxon:573
-  taxon_source: NCBITaxon
-  detection_context: K1 CC23
 bgc_class:
 - NRPS
 - PKS
@@ -99,7 +99,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:36:57Z'
+- timestamp: '2026-09-08T06:48:27Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

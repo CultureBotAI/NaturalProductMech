@@ -25,23 +25,6 @@ np_classification:
   - Catechols with side chains
   is_glycoside: false
 occurrences:
-- taxon_label: Ginkgo biloba
-  source: CHEBI
-  evidence:
-  - reference: PMID:21462031
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:2120
-  taxon_id: NCBITaxon:3311
-  taxon_source: NCBITaxon
-  notes: fruit
-- taxon_label: Streptomyces cyaneus
-  source: CHEBI
-  evidence:
-  - reference: PMID:21462031
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:2120
-  taxon_id: NCBITaxon:1904
-  taxon_source: NCBITaxon
 - taxon_id: NCBITaxon:1045806
   taxon_label: Merulius incarnatus
   taxon_source: NCBITaxon
@@ -152,6 +135,14 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q7623382
+- taxon_label: Streptomyces cyaneus
+  source: CHEBI
+  evidence:
+  - reference: PMID:21462031
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:2120
+  taxon_id: NCBITaxon:1904
+  taxon_source: NCBITaxon
 - taxon_id: NCBITaxon:213405
   taxon_label: Ardisia gigantifolia
   taxon_source: NCBITaxon
@@ -232,6 +223,15 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q43284
+- taxon_label: Ginkgo biloba
+  source: CHEBI
+  evidence:
+  - reference: PMID:21462031
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:2120
+  taxon_id: NCBITaxon:3311
+  taxon_source: NCBITaxon
+  notes: fruit
 - taxon_id: NCBITaxon:357850
   taxon_label: Angelica keiskei
   taxon_source: NCBITaxon
@@ -271,87 +271,10 @@ occurrences:
     evidence_type: DATABASE_ASSERTION
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q12099
-- taxon_id: NCBITaxon:4550
-  taxon_label: Secale cereale
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1016/0889-1575(92)90040-Q
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q12099
-- taxon_id: NCBITaxon:4550
-  taxon_label: Secale cereale
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1021/JF0340456
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q12099
-- taxon_id: NCBITaxon:4565
-  taxon_label: Triticum aestivum
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1016/0889-1575(92)90040-Q
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q161098
-- taxon_id: NCBITaxon:4565
-  taxon_label: Triticum aestivum
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1021/JF0340456
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q161098
-- taxon_id: NCBITaxon:459629
-  taxon_label: Embelia ribes
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1021/NP060284M
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q3595673
-- taxon_id: NCBITaxon:587397
-  taxon_label: Ardisia brevicaulis
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1002/CBDV.200900349
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q10878984
-- taxon_id: NCBITaxon:693367
-  taxon_label: Ardisia elliptica
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1080/13880200490886157
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q2716675
-- taxon_id: NCBITaxon:98760
-  taxon_label: Gloeostereum incarnatum
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1021/NP050520D
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q5221288
+  notes: 'Wikidata organism http://www.wikidata.org/entity/Q12099 8 further cited
+    occurrences are recorded in data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv
+    but not written here: a record carrying hundreds of them cannot be reviewed. The
+    inventories are the complete record.'
 bgc_class:
 - PKS
 compound_classes:
@@ -412,7 +335,7 @@ discussions:
     They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:36:49Z'
+- timestamp: '2026-09-08T06:48:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

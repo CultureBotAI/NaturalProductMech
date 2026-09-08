@@ -65,6 +65,10 @@ def main() -> int:
         if actual_rows != entry.get("rows"):
             problems.append(f"  {name}: {actual_rows} rows != manifest {entry.get('rows')}")
 
+    if not manifest.get("retrieved_on"):
+        problems.append("  MANIFEST.yaml has no retrieved_on; provenance without a date is "
+                        "weaker than it looks, and the extractors stamp it (#29)")
+
     for name, entry in sorted(manifest.get("downloads", {}).items()):
         for key in ("url", "sha256", "bytes"):
             if not entry.get(key):
@@ -77,7 +81,7 @@ def main() -> int:
 
     print(f"provenance OK: {len(recorded)} inventories, "
           f"{len(manifest.get('downloads', {}))} upstream files, "
-          f"retrieved {manifest.get('retrieved_on')}")
+          f"retrieved {manifest['retrieved_on']}")
     return 0
 
 

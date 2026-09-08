@@ -29,27 +29,6 @@ np_classification:
   - Depsipeptides
   is_glycoside: false
 occurrences:
-- taxon_label: Chromobacterium violaceum
-  source: CHEBI
-  evidence:
-  - reference: PMID:21793558
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:61080
-  taxon_id: NCBITaxon:536
-  taxon_source: NCBITaxon
-  detection_context: '968'
-  notes: This taxon is also recorded as a producer, from a different source and citation.
-    The two corroborate each other rather than duplicating.
-- taxon_label: Chromobacterium violaceum
-  source: CHEBI
-  evidence:
-  - reference: PMID:21967146
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:61080
-  taxon_id: NCBITaxon:536
-  taxon_source: NCBITaxon
-  notes: This taxon is also recorded as a producer, from a different source and citation.
-    The two corroborate each other rather than duplicating.
 - taxon_id: NCBITaxon:112175
   taxon_label: Humicola fuscoatra
   taxon_source: NCBITaxon
@@ -84,6 +63,27 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q3498295 This taxon is also
     recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+- taxon_label: Chromobacterium violaceum
+  source: CHEBI
+  evidence:
+  - reference: PMID:21793558
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:61080
+  taxon_id: NCBITaxon:536
+  taxon_source: NCBITaxon
+  detection_context: '968'
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
+- taxon_label: Chromobacterium violaceum
+  source: CHEBI
+  evidence:
+  - reference: PMID:21967146
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:61080
+  taxon_id: NCBITaxon:536
+  taxon_source: NCBITaxon
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:61080
@@ -149,7 +149,7 @@ discussions:
     share a Standard InChIKey, so if the two names denote different compounds then
     one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:36:52Z'
+- timestamp: '2026-09-08T06:48:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

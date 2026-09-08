@@ -22,16 +22,6 @@ np_classification:
   - Angucyclines
   is_glycoside: false
 occurrences:
-- taxon_label: Streptomyces ravidus
-  source: CHEBI
-  evidence:
-  - reference: PMID:20140934
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:84037
-  taxon_id: NCBITaxon:691266
-  taxon_source: NCBITaxon
-  notes: This taxon is also recorded as a producer, from a different source and citation.
-    The two corroborate each other rather than duplicating.
 - taxon_id: NCBITaxon:691266
   taxon_label: Streptomyces ravidus
   taxon_source: NCBITaxon
@@ -92,6 +82,16 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q104394354 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+- taxon_label: Streptomyces ravidus
+  source: CHEBI
+  evidence:
+  - reference: PMID:20140934
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:84037
+  taxon_id: NCBITaxon:691266
+  taxon_source: NCBITaxon
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:84037
@@ -143,7 +143,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:36:47Z'
+- timestamp: '2026-09-08T06:48:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

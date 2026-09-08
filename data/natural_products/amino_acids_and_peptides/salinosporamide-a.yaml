@@ -25,17 +25,6 @@ np_classification:
   - Salinosporamides
   is_glycoside: false
 occurrences:
-- taxon_label: Salinispora tropica
-  source: CHEBI
-  evidence:
-  - reference: PMID:12548698
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:48045
-  taxon_id: NCBITaxon:168695
-  taxon_source: NCBITaxon
-  detection_context: CNB-392
-  notes: This taxon is also recorded as a producer, from a different source and citation.
-    The two corroborate each other rather than duplicating.
 - taxon_id: NCBITaxon:168694
   taxon_label: Salinispora
   taxon_source: NCBITaxon
@@ -94,6 +83,17 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q16992381 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+- taxon_label: Salinispora tropica
+  source: CHEBI
+  evidence:
+  - reference: PMID:12548698
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:48045
+  taxon_id: NCBITaxon:168695
+  taxon_source: NCBITaxon
+  detection_context: CNB-392
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 bgc_class:
 - NRPS
 - PKS
@@ -189,7 +189,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T06:36:51Z'
+- timestamp: '2026-09-08T06:48:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

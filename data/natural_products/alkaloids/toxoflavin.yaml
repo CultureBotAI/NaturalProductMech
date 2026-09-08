@@ -34,18 +34,6 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:80729
   taxon_id: NCBITaxon:28095
   taxon_source: NCBITaxon
-- taxon_label: Burkholderia glumae
-  source: CHEBI
-  evidence:
-  - reference: Jeong, Y., Kim, J., Kim, S., and  Kang, Y (2003). Toxoflavin Produced
-      by Burkholderia glumae Causing Rice Grain Rot Is Responsible for Inducing Bacterial
-      Wilt in Many Field Crops. Plant Disease,  Vol. 87 (8). p 890-895.
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:80729
-  taxon_id: NCBITaxon:337
-  taxon_source: NCBITaxon
-  notes: This taxon is also recorded as a producer, from a different source and citation.
-    The two corroborate each other rather than duplicating.
 - taxon_id: NCBITaxon:337
   taxon_label: Burkholderia glumae
   taxon_source: NCBITaxon
@@ -58,6 +46,18 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q4999017 This taxon is also
     recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+- taxon_label: Burkholderia glumae
+  source: CHEBI
+  evidence:
+  - reference: Jeong, Y., Kim, J., Kim, S., and  Kang, Y (2003). Toxoflavin Produced
+      by Burkholderia glumae Causing Rice Grain Rot Is Responsible for Inducing Bacterial
+      Wilt in Many Field Crops. Plant Disease,  Vol. 87 (8). p 890-895.
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:80729
+  taxon_id: NCBITaxon:337
+  taxon_source: NCBITaxon
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 - taxon_id: NCBITaxon:66424
   taxon_label: Streptomyces hiroshimensis
   taxon_source: NCBITaxon
@@ -165,7 +165,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T06:36:54Z'
+- timestamp: '2026-09-08T06:48:23Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

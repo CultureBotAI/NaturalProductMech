@@ -26,16 +26,6 @@ np_classification:
   - Carbazole alkaloids
   is_glycoside: false
 occurrences:
-- taxon_label: Streptomyces uncialis
-  source: CHEBI
-  evidence:
-  - reference: PMID:18646774
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:65639
-  taxon_id: NCBITaxon:1048205
-  taxon_source: NCBITaxon
-  notes: This taxon is also recorded as a producer, from a different source and citation.
-    The two corroborate each other rather than duplicating.
 - taxon_id: NCBITaxon:1048205
   taxon_label: Streptomyces uncialis
   taxon_source: NCBITaxon
@@ -48,6 +38,16 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q103811340 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+- taxon_label: Streptomyces uncialis
+  source: CHEBI
+  evidence:
+  - reference: PMID:18646774
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:65639
+  taxon_id: NCBITaxon:1048205
+  taxon_source: NCBITaxon
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 bgc_class:
 - OTHER
 xrefs:
@@ -100,7 +100,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:36:48Z'
+- timestamp: '2026-09-08T06:48:18Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

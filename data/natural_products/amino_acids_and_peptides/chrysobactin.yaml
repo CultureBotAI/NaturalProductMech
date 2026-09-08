@@ -26,16 +26,6 @@ np_classification:
   - Dipeptides
   is_glycoside: false
 occurrences:
-- taxon_label: Dickeya chrysanthemi
-  source: CHEBI
-  evidence:
-  - reference: PMID:18803373
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:61345
-  taxon_id: NCBITaxon:556
-  taxon_source: NCBITaxon
-  notes: This taxon is also recorded as a producer, from a different source and citation.
-    The two corroborate each other rather than duplicating.
 - taxon_id: NCBITaxon:47886
   taxon_label: Pseudomonas luteola
   taxon_source: NCBITaxon
@@ -94,6 +84,16 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q25841960 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+- taxon_label: Dickeya chrysanthemi
+  source: CHEBI
+  evidence:
+  - reference: PMID:18803373
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:61345
+  taxon_id: NCBITaxon:556
+  taxon_source: NCBITaxon
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 bgc_class:
 - NRPS
 xrefs:
@@ -141,7 +141,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:36:51Z'
+- timestamp: '2026-09-08T06:48:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

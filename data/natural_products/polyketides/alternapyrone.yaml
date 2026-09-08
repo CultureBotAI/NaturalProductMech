@@ -25,16 +25,6 @@ np_classification:
   - Open-chain polyketides
   is_glycoside: false
 occurrences:
-- taxon_label: Alternaria solani
-  source: CHEBI
-  evidence:
-  - reference: PMID:16356847
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:156318
-  taxon_id: NCBITaxon:48100
-  taxon_source: NCBITaxon
-  notes: This taxon is also recorded as a producer, from a different source and citation.
-    The two corroborate each other rather than duplicating.
 - taxon_id: NCBITaxon:48100
   taxon_label: Alternaria solani
   taxon_source: NCBITaxon
@@ -47,6 +37,16 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q2715597 This taxon is also
     recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+- taxon_label: Alternaria solani
+  source: CHEBI
+  evidence:
+  - reference: PMID:16356847
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156318
+  taxon_id: NCBITaxon:48100
+  taxon_source: NCBITaxon
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
 bgc_class:
 - PKS
 xrefs:
@@ -94,7 +94,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:36:57Z'
+- timestamp: '2026-09-08T06:48:27Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

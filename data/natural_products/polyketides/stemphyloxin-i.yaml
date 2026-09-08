@@ -31,14 +31,6 @@ np_classification:
   - Decalins with side chains
   is_glycoside: false
 occurrences:
-- taxon_label: Stemphylium botryosum
-  source: CHEBI
-  evidence:
-  - reference: PMID:16662165
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:145070
-  taxon_id: NCBITaxon:120510
-  taxon_source: NCBITaxon
 - taxon_id: NCBITaxon:120510
   taxon_label: Stemphylium botryosum
   taxon_source: NCBITaxon
@@ -59,6 +51,14 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q7204611
+- taxon_label: Stemphylium botryosum
+  source: CHEBI
+  evidence:
+  - reference: PMID:16662165
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:145070
+  taxon_id: NCBITaxon:120510
+  taxon_source: NCBITaxon
 bgc_class:
 - PKS
 producer_organisms:
@@ -111,7 +111,7 @@ discussions:
     7'. They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:36:57Z'
+- timestamp: '2026-09-08T06:48:26Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
