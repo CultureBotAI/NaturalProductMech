@@ -50,6 +50,16 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q4275211
+- taxon_id: NCBITaxon:215229
+  taxon_label: Papaver setigerum
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1055/S-2007-969106
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7132528
 - taxon_id: NCBITaxon:22694
   taxon_label: Papaver orientale
   taxon_source: NCBITaxon
@@ -60,6 +70,16 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q149279
+- taxon_id: NCBITaxon:3117443
+  taxon_label: Papaver fugax
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1016/S0031-9422(00)81705-7
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q15352457
 - taxon_id: NCBITaxon:33128
   taxon_label: Papaver rhoeas
   taxon_source: NCBITaxon
@@ -70,6 +90,26 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q130201
+- taxon_id: NCBITaxon:3736021
+  taxon_label: Papaver oreophilum
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/NP070099O
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q17814053
+- taxon_id: NCBITaxon:3736784
+  taxon_label: Roemeria carica
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.3987/R-1986-05-1227
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q17813440
 - taxon_id: NCBITaxon:38907
   taxon_label: Corydalis ochotensis
   taxon_source: NCBITaxon
@@ -265,45 +305,12 @@ occurrences:
     evidence_type: DATABASE_ASSERTION
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q131584 This taxon is also
+  notes: 'Wikidata organism http://www.wikidata.org/entity/Q131584 This taxon is also
     recorded as a producer, from a different source and citation. The two corroborate
-    each other rather than duplicating.
-- taxon_id: NCBITaxon:3469
-  taxon_label: Papaver somniferum
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.2116/BUNSEKIKAGAKU.35.3_173
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q131584 This taxon is also
-    recorded as a producer, from a different source and citation. The two corroborate
-    each other rather than duplicating.
-- taxon_id: NCBITaxon:3469
-  taxon_label: Papaver somniferum
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.3109/13880209509065368
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q131584 This taxon is also
-    recorded as a producer, from a different source and citation. The two corroborate
-    each other rather than duplicating.
-- taxon_id: NCBITaxon:3469
-  taxon_label: Papaver somniferum
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.5740/JAOACINT.11-102
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q131584 This taxon is also
-    recorded as a producer, from a different source and citation. The two corroborate
-    each other rather than duplicating.
+    each other rather than duplicating. 3 further cited occurrences are recorded in
+    data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv but not written
+    here: a record carrying hundreds of them cannot be reviewed. The inventories are
+    the complete record.'
 bgc_class:
 - OTHER
 xrefs:
@@ -351,7 +358,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T07:14:21Z'
+- timestamp: '2026-09-08T20:28:23Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

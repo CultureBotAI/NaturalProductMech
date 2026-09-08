@@ -35,6 +35,10 @@ upstream:
     doi: 10.5281/zenodo.13854577
     sha256: 91aa57146c9e803d5eeef656fc0e5cfc8f804531b1b83718757e96aa848a4121
     bytes: 3689880
+  taxdump.tar.gz:
+    url: https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz
+    sha256: 492e71dcc66599b8c20113789f1418b278ef3da2fa3041dc04d343dfc3b1c13d
+    bytes: 79086589
 inventories:
   mibig_compounds.tsv:
     rows: 3449
@@ -52,9 +56,9 @@ inventories:
     sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
     source: ChEBI flat files, 3-star entries
   chebi_origins.tsv:
-    rows: 17356
-    bytes: 1106002
-    sha256: ce7425f0df43650cadbfbe076011a482ee9b233ba9f53123e575836c725338e4
+    rows: 18159
+    bytes: 1174245
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
     source: ChEBI flat files, 3-star entries
   antibioticmech_inchikeys.tsv:
     rows: 2909
@@ -62,9 +66,9 @@ inventories:
     sha256: 4280e69e98b9eb45b69d3e30ced0fbf8c286310632d55cf66ccf2a05106ca369
     source: CultureBotAI/AntibioticMech at c5cfe06ce7a393222fb32f865f042b4eae1efcbf
   lotus_occurrences.tsv:
-    rows: 9695
-    bytes: 1648130
-    sha256: 763fa75e79985153a038c6d4da071a91566d50c2b14060d878f647a0a667be1b
+    rows: 10226
+    bytes: 1739208
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
     source: LOTUS frozen export, Zenodo 19360665 (CC BY 4.0)
   bindingdb_targets.tsv:
     rows: 123
@@ -72,8 +76,13 @@ inventories:
     sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
     source: BindingDB 202609, own-curated articles only (CC BY 3.0)
   cyanometdb_occurrences.tsv:
-    rows: 69
-    bytes: 9033
-    sha256: af1286bb73c8502d7891697501b6fb9774b787b68cd137fffe23bd94279dc37a
+    rows: 97
+    bytes: 12398
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
     source: CyanoMetDB v03, Zenodo 13854577 (CC BY 4.0)
+  taxon_names.tsv:
+    rows: 5346
+    bytes: 310566
+    sha256: b89f8afb667e510d65835498746907ca9e31a6c4812e5aa4da9c90d604ffe582
+    source: NCBI Taxonomy taxdump, names.dmp (public domain)
 retrieved_on: '2026-09-08'

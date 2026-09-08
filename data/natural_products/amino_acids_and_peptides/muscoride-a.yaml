@@ -16,6 +16,17 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_id: NCBITaxon:1179
+  taxon_label: Nostoc muscorum
+  taxon_source: NCBITaxon
+  source: CYANOMETDB
+  evidence:
+  - reference: DOI:10.1016/0040-4039(95)00724-Q
+    evidence_type: DATABASE_ASSERTION
+    notes: CyanoMetDB isolation report, manually curated from the primary literature;
+      structure confirmed by yes.
+  detection_context: strain IAM M-14
 bgc_class:
 - RIBOSOMAL
 - OTHER
@@ -109,7 +120,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T07:14:28Z'
+- timestamp: '2026-09-08T20:28:31Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

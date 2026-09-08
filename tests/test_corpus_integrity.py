@@ -246,7 +246,16 @@ def test_a_taxon_in_both_fields_says_it_is_corroboration(records):
 # sources recorded the name their own reference used. Listed rather than
 # allowed silently, so a genuine mislabelling — which looks identical — shows
 # up as a change in this number instead of hiding among them (#30).
-KNOWN_SYNONYM_TAXA = 8
+#
+# Rose from 8 to 22 when NCBI Taxonomy was adopted, and the rise is the source
+# working as intended: resolving a name class of `synonym` is precisely how
+# `Penicillium notatum` and `Penicillium chrysogenum` reach the same taxid.
+# Every pair at 22 was checked and is a real synonym or a reclassification —
+# Acremonium chrysogenum / Cephalosporium acremonium, Burkholderia /
+# Paraburkholderia rhizoxinica, Clostridium / Ruminiclostridium cellulolyticum.
+# The number moving is the signal; raising the bound without reading the new
+# pairs would throw that away.
+KNOWN_SYNONYM_TAXA = 22
 
 
 def test_taxon_labels_stay_consistent_for_an_id(records):
@@ -277,3 +286,27 @@ def test_no_record_is_too_large_to_review(record_paths):
         for path in record_paths if path.stat().st_size > 64 * 1024
     ]
     assert not oversized, f"records too large to review: {oversized[:5]}"
+
+
+# Organism labels resolving to more than one taxon id. The inverse of
+# KNOWN_SYNONYM_TAXA, and the failure mode name-based resolution actually
+# introduces: a source supplies an id for one row and none for another, and the
+# fallback resolves the same name to a different id (#34).
+KNOWN_AMBIGUOUS_LABELS = 8
+
+
+def test_an_organism_label_resolves_to_one_taxon_id(records):
+    """`Scytonema hofmannii` has two ids upstream — one strain-level, one
+    species. Where a source gives an id for one row and none for another, the
+    corpus can carry both under one name, and nothing else checks for it."""
+    ids = {}
+    for record in records:
+        for occurrence in record.get("occurrences") or []:
+            label = (occurrence.get("taxon_label") or "").strip().lower()
+            if label and occurrence.get("taxon_id"):
+                ids.setdefault(label, set()).add(occurrence["taxon_id"])
+    ambiguous = {k: sorted(v) for k, v in ids.items() if len(v) > 1}
+    assert len(ambiguous) <= KNOWN_AMBIGUOUS_LABELS, (
+        f"organism labels resolving to several taxon ids rose to {len(ambiguous)}: "
+        f"{list(ambiguous.items())[:4]}"
+    )

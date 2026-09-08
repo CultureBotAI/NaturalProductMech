@@ -130,6 +130,27 @@ cyanometdb:
   taxon_resolution: species-level, from committed inventories
   fills: occurrences
 
+ncbi_taxonomy:
+  name: NCBI Taxonomy
+  description: >-
+    Resolves the organism names other sources leave unresolved. Occurrence.taxon_id
+    is required, so ~2,000 cited occurrences were being dropped over a missing
+    identifier rather than missing evidence. Emits taxon_names.tsv, restricted to
+    the names the adopted sources actually use — the full names.dmp is ~250 MB of
+    organisms this corpus will never mention.
+  homepage: https://www.ncbi.nlm.nih.gov/taxonomy
+  archive_url: https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz
+  license: public domain (US government work)
+  # Only name classes that ASSERT the name denotes the taxon. `includes`,
+  # `in-part` and `blast name` group or approximate, so a match on one would
+  # resolve a name to a taxon nobody claimed it was.
+  name_classes: [scientific name, synonym, equivalent name, genbank synonym,
+                 genbank anamorph, anamorph]
+  # No genus fallback, at any tier. Adopting a taxonomy source raises how many
+  # names resolve; it does not lower the bar for what counts as resolved.
+  genus_fallback: false
+  fills: taxon resolution for chebi, lotus and cyanometdb
+
 # ---------------------------------------------------------------------------
 # Scope
 # ---------------------------------------------------------------------------

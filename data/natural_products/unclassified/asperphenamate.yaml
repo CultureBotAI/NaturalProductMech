@@ -79,6 +79,26 @@ occurrences:
   taxon_id: NCBITaxon:309328
   taxon_source: NCBITaxon
   notes: bark Isolated from stem bark.
+- taxon_id: NCBITaxon:3749087
+  taxon_label: Anaphalis subumbellata
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/NP50025A017
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q15583106
+- taxon_id: NCBITaxon:3877711
+  taxon_label: Sapium rigidifolium
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1016/0031-9422(93)85112-5
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q110371898
 - taxon_label: Piptadenia gonoacantha
   source: CHEBI
   evidence:
@@ -136,6 +156,16 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:145105
   taxon_id: NCBITaxon:5074
   taxon_source: NCBITaxon
+- taxon_id: NCBITaxon:69778
+  taxon_label: Penicillium megasporum
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1016/0031-9422(89)80145-1
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q10622984
 - taxon_id: NCBITaxon:714449
   taxon_label: Artemisia anomala
   taxon_source: NCBITaxon
@@ -213,7 +243,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T07:14:22Z'
+- timestamp: '2026-09-08T20:28:25Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

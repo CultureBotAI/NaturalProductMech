@@ -25,8 +25,28 @@ np_classification:
   - Catechols with side chains
   is_glycoside: false
 occurrences:
+- taxon_id: NCBITaxon:1009002
+  taxon_label: Ardisia colorata
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1248/CPB.49.1664
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q15978950
+- taxon_id: NCBITaxon:1009002
+  taxon_label: Ardisia colorata
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1248/CPB.50.1484
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q15978950
 - taxon_id: NCBITaxon:1045806
-  taxon_label: Merulius incarnatus
+  taxon_label: Byssomerulius incarnatus
   taxon_source: NCBITaxon
   source: LOTUS
   evidence:
@@ -34,7 +54,7 @@ occurrences:
     evidence_type: DATABASE_ASSERTION
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q49601886
+  notes: Wikidata organism http://www.wikidata.org/entity/Q49601057
 - taxon_id: NCBITaxon:105748
   taxon_label: Grevillea robusta
   taxon_source: NCBITaxon
@@ -242,36 +262,16 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q4805168
-- taxon_id: NCBITaxon:4513
-  taxon_label: Hordeum vulgare
+- taxon_id: NCBITaxon:3815947
+  taxon_label: Hakea amplexicaulis
   taxon_source: NCBITaxon
   source: LOTUS
   evidence:
-  - reference: DOI:10.1021/JF0340456
+  - reference: DOI:10.1021/TX00004A003
     evidence_type: DATABASE_ASSERTION
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q11577
-- taxon_id: NCBITaxon:4530
-  taxon_label: Oryza sativa
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1016/S0031-9422(00)90602-2
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q161426
-- taxon_id: NCBITaxon:4550
-  taxon_label: Secale cereale
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1016/0304-3835(96)04294-2
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: 'Wikidata organism http://www.wikidata.org/entity/Q12099 8 further cited
+  notes: 'Wikidata organism http://www.wikidata.org/entity/Q3013132 14 further cited
     occurrences are recorded in data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv
     but not written here: a record carrying hundreds of them cannot be reviewed. The
     inventories are the complete record.'
@@ -335,7 +335,7 @@ discussions:
     They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T07:14:26Z'
+- timestamp: '2026-09-08T20:28:29Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -566,3 +566,41 @@ def test_the_genus_fallback_is_for_counting_and_never_for_resolving():
     assert module.resolved_genera(known) == {"microcystis", "nostoc"}
     # The header spelling trap: reading the correct spelling yields nothing.
     assert module.INCHIKEY_COLUMN == "InChlKey"
+
+
+# --- taxon resolution -------------------------------------------------------
+
+def test_taxon_resolution_is_exact_and_has_no_genus_fallback():
+    """Adopting a taxonomy source raises how many names resolve; it does not
+    lower the bar for what counts as resolved. A genus id under a species label
+    would put an identifier and a label denoting different things on one
+    occurrence."""
+    from naturalproductmech.taxonomy import resolve_name
+    table = {"microcystis aeruginosa": "NCBITaxon:1126"}
+    assert resolve_name("Microcystis aeruginosa", table) == "NCBITaxon:1126"
+    assert resolve_name("  microcystis   aeruginosa ", table) == "NCBITaxon:1126"
+    # A species the table does not hold must NOT fall back to its genus.
+    assert resolve_name("Microcystis viridis", table) is None
+    assert resolve_name("Microcystis", table) is None
+    assert resolve_name("", table) is None
+
+
+def test_a_missing_taxonomy_inventory_resolves_nothing_rather_than_failing():
+    """An extractor must run before the taxonomy source is adopted, resolving
+    nothing extra — which is the state the corpus was in before it."""
+    from naturalproductmech.taxonomy import load_taxon_names
+    assert load_taxon_names(REPO_ROOT / "data" / "raw" / "does-not-exist.tsv") == {}
+
+
+def test_only_asserting_name_classes_are_usable():
+    """`includes`, `in-part` and `blast name` group or approximate. A match on
+    one would resolve a name to a taxon nobody claimed it was."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        "extract_ncbi_taxonomy", REPO_ROOT / "scripts" / "extract_ncbi_taxonomy.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    assert "scientific name" in module.USABLE_NAME_CLASSES
+    assert "synonym" in module.USABLE_NAME_CLASSES
+    for excluded in ("includes", "in-part", "blast name"):
+        assert excluded not in module.USABLE_NAME_CLASSES

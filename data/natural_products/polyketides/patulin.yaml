@@ -235,6 +235,16 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q80855103
+- taxon_id: NCBITaxon:303672
+  taxon_label: Cylindrocarpon ianthothele
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/JF00034A040
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q5199292
 - taxon_id: NCBITaxon:33198
   taxon_label: Drechslera
   taxon_source: NCBITaxon
@@ -264,17 +274,7 @@ occurrences:
     evidence_type: DATABASE_ASSERTION
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q20721314
-- taxon_id: NCBITaxon:36655
-  taxon_label: Penicillium aurantiogriseum
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1021/JF00034A040
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: 'Wikidata organism http://www.wikidata.org/entity/Q7162856 42 further cited
+  notes: 'Wikidata organism http://www.wikidata.org/entity/Q20721314 45 further cited
     occurrences are recorded in data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv
     but not written here: a record carrying hundreds of them cannot be reviewed. The
     inventories are the complete record.'
@@ -332,7 +332,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T07:14:33Z'
+- timestamp: '2026-09-08T20:28:36Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

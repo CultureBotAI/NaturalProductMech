@@ -79,6 +79,15 @@ extract-cyanometdb *args:
 evaluate-npass:
     uv run python scripts/evaluate_npass.py
 
+# Free check once cached: how many unresolved names NCBI Taxonomy would resolve.
+extract-taxonomy-dry *args:
+    uv run python scripts/extract_ncbi_taxonomy.py --dry-run {{args}}
+
+# Write taxon_names.tsv. Run BEFORE the ChEBI, LOTUS and CyanoMetDB extractors,
+# which consult it to resolve organisms their own sources leave unidentified.
+extract-taxonomy *args:
+    uv run python scripts/extract_ncbi_taxonomy.py {{args}}
+
 # --- seeding -----------------------------------------------------------------
 # Dry run: harmonize the committed inventories and report the records that WOULD
 # be written, per pathway. No files touched. Empty until M2 adds the extractors.

@@ -48,6 +48,14 @@ from pathlib import Path
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+
+from naturalproductmech.taxonomy import (  # noqa: E402
+    load_taxon_names,
+    report_taxonomy_table,
+    resolve_name,
+)
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 RAW_DIR = REPO_ROOT / "data" / "raw"
 DOWNLOAD_DIR = REPO_ROOT / "downloads"
@@ -216,10 +224,20 @@ def main() -> int:
         print(f"  {key:<40} {counts[key]:>8}", file=sys.stderr)
 
     taxids = resolve_taxids(paths[METADATA], organisms) if rows else {}
+    taxon_names = load_taxon_names()
+    report_taxonomy_table(taxon_names)
     kept: list[dict] = []
     unresolved = 0
+    recovered = 0
     for row in rows:
         taxid = taxids.get(row["organism_wikidata"])
+        if not taxid:
+            # LOTUS's metadata has no NCBI id for this organism. Ask the
+            # taxonomy inventory by name before dropping the row.
+            by_name = resolve_name(row["organism_name"], taxon_names)
+            if by_name:
+                taxid = by_name.split(":", 1)[1]
+                recovered += 1
         if not taxid:
             # Occurrence.taxon_id is required: a name-only organism is a
             # name-only join, which is a curation project rather than an
@@ -233,6 +251,7 @@ def main() -> int:
     structures = {r["standard_inchi_key"] for r in kept}
     print(f"\n  organisms needing a taxid : {len(organisms)}", file=sys.stderr)
     print(f"  resolved to an NCBI taxid : {len(taxids)}", file=sys.stderr)
+    print(f"  recovered by NCBI Taxonomy: {recovered}", file=sys.stderr)
     print(f"  rows dropped, unresolvable: {unresolved}", file=sys.stderr)
     print(f"  occurrences kept          : {len(kept)}", file=sys.stderr)
     print(f"  corpus structures covered : {len(structures)} of {len(keys)}", file=sys.stderr)

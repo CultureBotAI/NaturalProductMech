@@ -46,6 +46,14 @@ from pathlib import Path
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+
+from naturalproductmech.taxonomy import (  # noqa: E402
+    load_taxon_names,
+    report_taxonomy_table,
+    resolve_name,
+)
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 RAW_DIR = REPO_ROOT / "data" / "raw"
 DOWNLOAD_DIR = REPO_ROOT / "downloads"
@@ -147,6 +155,8 @@ def extract(path: Path, keys: set[str], known: dict[str, str]) -> tuple[list[dic
     counts: Counter[str] = Counter()
     rows: list[dict] = []
     genera = resolved_genera(known)
+    taxon_names = load_taxon_names()
+    report_taxonomy_table(taxon_names)
     with path.open(newline="", encoding="utf-8", errors="replace") as fh:
         for row in csv.DictReader(fh):
             counts["rows_total"] += 1
@@ -159,6 +169,11 @@ def extract(path: Path, keys: set[str], known: dict[str, str]) -> tuple[list[dic
             species = (row.get("Species") or "").strip()
             label = f"{genus} {species}".strip()
             taxid = known.get(label.lower())
+            if not taxid:
+                resolved = resolve_name(label, taxon_names)
+                if resolved:
+                    taxid = resolved
+                    counts["resolved_via_ncbi_taxonomy"] += 1
             if not taxid:
                 # Counted separately because the two say different things: one
                 # is an organism nothing has resolved, the other is one only a

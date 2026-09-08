@@ -99,6 +99,14 @@ Gilson MK, Liu T, Baitaluk M, et al. BindingDB in 2015: A public database for
 medicinal chemistry, computational chemistry and systems pharmacology.
 *Nucleic Acids Res.* 2016;44(D1):D1045-53. doi:10.1093/nar/gkv1072
 
+**NCBI Taxonomy** — NCBI, NLM, NIH. Public domain (US Government work).
+Resolves organism names to taxonomy identifiers for sources that name organisms
+without identifying them. <https://www.ncbi.nlm.nih.gov/taxonomy>
+
+Schoch CL, Ciufo S, Domrachev M, et al. NCBI Taxonomy: a comprehensive update on
+curation, resources and tools. *Database.* 2020;2020:baaa062.
+doi:10.1093/database/baaa062
+
 **AntibioticMech** — CultureBotAI. CC BY 4.0. Supplies the pinned InChIKey
 inventory that computes cross-corpus links.
 <https://github.com/CultureBotAI/AntibioticMech>
