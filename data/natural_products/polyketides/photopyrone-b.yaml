@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-2f61bd46e5
+label: photopyrone B
+chemical_structure:
+  smiles: CC(C)CCCCC1=C(C=C(OC1=O)CC(C)C)O
+  standard_inchi: InChI=1S/C16H26O3/c1-11(2)7-5-6-8-14-15(17)10-13(9-12(3)4)19-16(14)18/h10-12,17H,5-9H2,1-4H3
+  standard_inchi_key: LKYYYYVANTYGSO-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001134
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 2-pyrone derivatives
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:71576815
+producer_organisms:
+- taxon_id: NCBITaxon:243265
+  taxon_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001134
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:23851573
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001134 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001134
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:243265
+  organism_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence:
+  - reference: PMID:23851573
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001134 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NC_005126.1
+  locus_from: 4843318
+  locus_to: 4844043
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001134
+  source_label: photopyrone B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2f61bd46e5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

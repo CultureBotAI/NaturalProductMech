@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-c40afd598c
+label: tunicamycin B1
+chemical_structure:
+  smiles: CCCCCCCCCCCC/C=C/C(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O[C@@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)NC(=O)C)C[C@H]([C@@H]3[C@H]([C@H]([C@@H](O3)N4C=CC(=O)NC4=O)O)O)O)O)O
+  standard_inchi: InChI=1S/C38H62N4O16/c1-3-4-5-6-7-8-9-10-11-12-13-14-15-24(46)40-27-31(51)28(48)22(55-37(27)58-36-26(39-20(2)44)30(50)29(49)23(19-43)56-36)18-21(45)34-32(52)33(53)35(57-34)42-17-16-25(47)41-38(42)54/h14-17,21-23,26-37,43,45,48-53H,3-13,18-19H2,1-2H3,(H,39,44)(H,40,46)(H,41,47,54)/b15-14+/t21-,22-,23-,26-,27-,28+,29-,30-,31-,32+,33-,34-,35-,36-,37+/m1/s1
+  standard_inchi_key: QYVMTFXNKNWWFX-YGTZKZKGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000880
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Pyrimidine nucleos(t)ides
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:56927834
+producer_organisms:
+- taxon_id: NCBITaxon:1079985
+  taxon_label: Streptomyces chartreusis NRRL 3882
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000880
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.
+    That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the
+    taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22717438
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000880 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000880
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1079985
+  organism_label: Streptomyces chartreusis NRRL 3882
+  evidence:
+  - reference: PMID:22717438
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000880 entry version 4; citation taken from the entry level
+  genome_accession: genbank:HQ172897.1
+  locus_from: 8616
+  locus_to: 20609
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000880
+  source_label: tunicamycin B1
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-c40afd598c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

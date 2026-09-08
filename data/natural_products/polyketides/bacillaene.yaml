@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-6734685bb3
+label: bacillaene
+chemical_structure:
+  smiles: CC(C)CC(C(=O)NCCC/C=C\C=C\C(=C\C=C/C=C(/C)\C(CC(=O)N/C(=C\C=C\C=C\C(C)C(=O)O)/C)O)\C)O
+  standard_inchi: InChI=1S/C34H50N2O6/c1-25(2)23-31(38)33(40)35-22-16-9-7-8-11-17-26(3)18-14-15-19-27(4)30(37)24-32(39)36-29(6)21-13-10-12-20-28(5)34(41)42/h7-8,10-15,17-21,25,28,30-31,37-38H,9,16,22-24H2,1-6H3,(H,35,40)(H,36,39)(H,41,42)/b8-7-,13-10+,15-14-,17-11+,20-12+,26-18+,27-19-,29-21-
+  standard_inchi_key: VGZNPOHVJNZAOU-OISZERLPSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001089
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:44227768
+- pubchem:25144999
+- npatlas:NPA024792
+producer_organisms:
+- taxon_id: NCBITaxon:326423
+  taxon_label: Bacillus velezensis FZB42
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001089
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1073/pnas.0610503104
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001089 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001089
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:326423
+  organism_label: Bacillus velezensis FZB42
+  evidence:
+  - reference: DOI:10.1073/pnas.0610503104
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001089 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AJ634060.2
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001089
+  source_label: bacillaene
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6734685bb3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

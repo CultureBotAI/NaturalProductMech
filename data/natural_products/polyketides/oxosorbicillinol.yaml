@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-592e9d971b
+label: oxosorbicillinol
+chemical_structure:
+  smiles: C/C=C/C=C/C(=C\1/C(=C(C(=O)[C@@](C1=O)(C)O)C)O)/O
+  standard_inchi: InChI=1S/C14H16O5/c1-4-5-6-7-9(15)10-11(16)8(2)12(17)14(3,19)13(10)18/h4-7,15-16,19H,1-3H3/b5-4+,7-6+,10-9+/t14-/m1/s1
+  standard_inchi_key: JSSFRHLBNRCOAQ-KGAWMYLDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002190
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Sorbicilinoids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:10015650
+- npatlas:NPA001693
+producer_organisms:
+- taxon_id: NCBITaxon:857340
+  taxon_label: Acremonium chrysogenum ATCC 11550
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002190
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.3390/molecules21060715
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002190 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002190
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:857340
+  organism_label: Acremonium chrysogenum ATCC 11550
+  evidence:
+  - reference: DOI:10.3390/molecules21060715
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002190 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:JPKY01000049.1
+  locus_from: 38594
+  locus_to: 73209
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002190
+  source_label: oxosorbicillinol
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-592e9d971b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

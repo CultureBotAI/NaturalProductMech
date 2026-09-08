@@ -1,0 +1,102 @@
+identifier: naturalproductmech:mibig-42f1e90dfe
+label: gobichelin A
+chemical_structure:
+  smiles: C1C[C@@H](C(=O)N(C1)O)NC(=O)[C@H](CO)NC(=O)[C@@H](CCCCN)NC(=O)[C@H](CC2=CN=CN2)NC(=O)[C@@H]3COC(=N3)C4=CC=CC=C4O
+  standard_inchi: InChI=1S/C30H41N9O9/c31-10-4-3-7-19(25(42)37-22(14-40)27(44)35-20-8-5-11-39(47)30(20)46)34-26(43)21(12-17-13-32-16-33-17)36-28(45)23-15-48-29(38-23)18-6-1-2-9-24(18)41/h1-2,6,9,13,16,19-23,40-41,47H,3-5,7-8,10-12,14-15,31H2,(H,32,33)(H,34,43)(H,35,44)(H,36,45)(H,37,42)/t19-,20+,21+,22+,23+/m1/s1
+  standard_inchi_key: LRVQAPVXSPHVLF-QCBQRGATSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000366
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+synonyms:
+- value: gobichelin B
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000366
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  - Small peptides
+  class_results:
+  - Linear peptides
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA014123
+producer_organisms:
+- taxon_id: NCBITaxon:1286194
+  taxon_label: Streptomyces sp. NRRL F-4415
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000366
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23336063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000366 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1286194
+  taxon_label: Streptomyces sp. NRRL F-4415
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000366
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23336063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000366 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000366
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1286194
+  organism_label: Streptomyces sp. NRRL F-4415
+  evidence:
+  - reference: PMID:23336063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000366 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KC215181.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000366
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1286194
+  organism_label: Streptomyces sp. NRRL F-4415
+  evidence:
+  - reference: PMID:23336063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000366 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KC215181.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000366
+  source_label: gobichelin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-42f1e90dfe
+- source: MIBIG
+  source_id: BGC0000366
+  source_label: gobichelin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c9d0cc0a16
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

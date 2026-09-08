@@ -1,0 +1,149 @@
+identifier: naturalproductmech:mibig-2d49c2c4bf
+label: group 1 methanobactin
+chemical_structure:
+  smiles: CSCC[C@H](NC(=O)[C@@H]1CSSC[C@H](NC(=O)[C@H](CO)NC(=O)CNC(=O)SC2=C(O)[NH]C(C(=O)OC(C)C)=N2)C(=O)N[C@@H](CC2=CC=C(O)C=C2)C(=O)N2CCCC2C2=NC(O)=C([NH]2)C(=S)N[C@@H](CO)C(=O)N1)C(=O)O
+  standard_inchi: InChI=1S/C44H58N12O16S5/c1-19(2)72-43(70)32-54-38(66)40(55-32)77-44(71)45-14-29(60)46-24(15-57)33(61)49-27-18-76-75-17-26(35(63)47-22(42(68)69)10-12-74-3)50-34(62)25(16-58)51-39(73)30-37(65)53-31(52-30)28-5-4-11-56(28)41(67)23(48-36(27)64)13-20-6-8-21(59)9-7-20/h6-9,19,22-28,57-59,65-66H,4-5,10-18H2,1-3H3,(H,45,71)(H,46,60)(H,47,63)(H,48,64)(H,49,61)(H,50,62)(H,51,73)(H,52,53)(H,54,55)(H,68,69)/t22-,23-,24-,25-,26-,27-,28?/m0/s1
+  standard_inchi_key: XOADWJQVJWCREC-DZHAIUNBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002132
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+synonyms:
+- value: methanobactin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002132
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA033449
+- pubchem:135659045
+producer_organisms:
+- taxon_id: NCBITaxon:136993
+  taxon_label: Methylosinus sp. LW4
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002132
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:27527063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002132 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:595536
+  taxon_label: Methylosinus trichosporium OB3b
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002004
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.2991/meici-15.2015.56
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002004 entry version 3; citation taken from the compound bioactivity
+      level
+- taxon_id: NCBITaxon:107635
+  taxon_label: Methylosinus sp. LW3
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002133
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:34510894
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002133 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002132
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:136993
+  organism_label: Methylosinus sp. LW4
+  evidence:
+  - reference: PMID:27527063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002132 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NZ_KB900627.1
+  locus_from: 367500
+  locus_to: 375954
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+- accession: mibig:BGC0002004
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:595536
+  organism_label: Methylosinus trichosporium OB3b
+  evidence:
+  - reference: DOI:10.2991/meici-15.2015.56
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002004 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:NZ_CP023737.1
+  locus_from: 1498747
+  locus_to: 1508549
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0002133
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:107635
+  organism_label: Methylosinus sp. LW3
+  evidence:
+  - reference: PMID:34510894
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002133 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NZ_AZUO01000002.1
+  locus_from: 68380
+  locus_to: 79542
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002132
+  source_label: group 1 methanobactin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-2d49c2c4bf
+- source: MIBIG
+  source_id: BGC0002004
+  source_label: methanobactin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-12110dc24b
+- source: MIBIG
+  source_id: BGC0002133
+  source_label: group 1 methanobactin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-331c3610cb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002004, BGC0002132,
+    BGC0002133. Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

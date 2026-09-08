@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-ee754353ac
+label: A33853
+chemical_structure:
+  smiles: C1=CC(=C(C(=C1)O)NC(=O)C2=C(C=CC=N2)O)C3=NC4=C(C=CC=C4O3)C(=O)O
+  standard_inchi: InChI=1S/C20H13N3O6/c24-12-6-1-4-10(15(12)22-18(26)17-13(25)7-3-9-21-17)19-23-16-11(20(27)28)5-2-8-14(16)29-19/h1-9,24-25H,(H,22,26)(H,27,28)
+  standard_inchi_key: LJVDLJDWXVPUAB-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001292
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:133379
+producer_organisms:
+- taxon_id: NCBITaxon:1715678
+  taxon_label: Streptomyces sp. NRRL 12068
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001292
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26496684
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001292 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001292
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1715678
+  organism_label: Streptomyces sp. NRRL 12068
+  evidence:
+  - reference: PMID:26496684
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001292 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KR476659.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001292
+  source_label: A33853
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ee754353ac
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

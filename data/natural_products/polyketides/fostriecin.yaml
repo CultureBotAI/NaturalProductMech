@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-7328f79763
+label: fostriecin
+chemical_structure:
+  smiles: C[C@@](/C=C/[C@@H]1CC=CC(=O)O1)([C@@H](C[C@H](/C=C\C=C/C=C/CO)O)OP(=O)(O)O)O
+  standard_inchi: InChI=1S/C19H27O9P/c1-19(23,12-11-16-9-7-10-18(22)27-16)17(28-29(24,25)26)14-15(21)8-5-3-2-4-6-13-20/h2-8,10-12,15-17,20-21,23H,9,13-14H2,1H3,(H2,24,25,26)/b3-2-,6-4+,8-5-,12-11+/t15-,16-,17+,19+/m0/s1
+  standard_inchi_key: ZMQRJWIYMXZORG-GZIFKOAOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000060
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Phoslactomycins or Phosphazomycins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6436285
+producer_organisms:
+- taxon_id: NCBITaxon:68258
+  taxon_label: Streptomyces pulveraceus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000060
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23352138
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000060 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000060
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68258
+  organism_label: Streptomyces pulveraceus
+  evidence:
+  - reference: PMID:23352138
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000060 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HQ434551.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000060
+  source_label: fostriecin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7328f79763
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

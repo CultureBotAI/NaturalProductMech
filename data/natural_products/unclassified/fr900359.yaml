@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-9c39e79d9c
+label: FR900359
+chemical_structure:
+  smiles: CCC(=O)N[C@@H]([C@@H](C(C)C)O)C(=O)O[C@@H]([C@H]1C(=O)N([C@H](C(=O)O[C@@H]([C@@H](C(=O)O[C@@H](C(=O)N(C(=C)C(=O)N[C@H](C(=O)N([C@H](C(=O)N1)C)C)C)C)CC2=CC=CC=C2)NC(=O)C)C(C)C)[C@@H](C)OC)C)C(C)C
+  standard_inchi: InChI=1S/C49H75N7O15/c1-17-34(58)52-35(39(59)24(2)3)47(65)70-40(25(4)5)36-46(64)56(15)38(30(11)68-16)49(67)71-41(26(6)7)37(51-31(12)57)48(66)69-33(23-32-21-19-18-20-22-32)45(63)55(14)28(9)42(60)50-27(8)44(62)54(13)29(10)43(61)53-36/h18-22,24-27,29-30,33,35-41,59H,9,17,23H2,1-8,10-16H3,(H,50,60)(H,51,57)(H,52,58)(H,53,61)/t27-,29-,30+,33+,35-,36-,37-,38-,39+,40+,41+/m0/s1
+  standard_inchi_key: IMXKHFILKMPFGB-ZWYWTTNJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001451
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:14101198
+producer_organisms:
+- taxon_id: NCBITaxon:1074049
+  taxon_label: Candidatus Burkholderia crenata
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001451
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26663534
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001451 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001451
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1074049
+  organism_label: Candidatus Burkholderia crenata
+  evidence:
+  - reference: PMID:26663534
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001451 entry version 4; citation taken from the entry level
+  genome_accession: genbank:NZ_LGTG01000643.1
+  locus_from: 62709
+  locus_to: 98508
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001451
+  source_label: FR900359
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-9c39e79d9c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-08d0762edb
+label: mycemycin A
+chemical_structure:
+  smiles: COC(=O)C1=C2C(=CC=C1)OC3=CC=CC=C3C(=O)N2
+  standard_inchi: InChI=1S/C15H11NO4/c1-19-15(18)10-6-4-8-12-13(10)16-14(17)9-5-2-3-7-11(9)20-12/h2-8H,1H3,(H,16,17)
+  standard_inchi_key: HWBSGLPTDQMCRK-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002443
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Depsidones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA002608
+producer_organisms:
+- taxon_id: NCBITaxon:47716
+  taxon_label: Streptomyces olivaceus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002443
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:29558441
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002443 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002443
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:47716
+  organism_label: Streptomyces olivaceus
+  evidence:
+  - reference: PMID:29558441
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002443 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MG837055.1
+  locus_from: 1
+  locus_to: 32300
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002443
+  source_label: mycemycin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-08d0762edb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

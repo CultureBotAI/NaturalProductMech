@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-9597c978b5
+label: ulleungdin
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]1NC(=O)[C@H](CC2=CC=CC=C2)NC(=O)CNC(=O)C[C@@H](C(=O)N[C@H](C(=O)N[C@@H](CC2=CC=CC=C2)C(=O)NCC(=O)N[C@@H](CC2=CN=C[NH]2)C(=O)N[C@@H](CC2=CC=C(O)C=C2)C(=O)NCC(=O)NCC(=O)O)[C@@H](C)CC)NC(=O)[C@H](CCCCN)NC(=O)CNC(=O)[C@H](CC2=C[NH]C3=CC=CC=C23)NC(=O)CNC1=O
+  standard_inchi: InChI=1S/C78H101N19O18/c1-5-44(3)68-77(114)87-41-66(104)91-58(32-49-35-81-53-22-14-13-21-52(49)53)72(109)86-39-64(102)89-54(23-15-16-28-79)73(110)94-60(34-61(99)82-38-63(101)90-57(75(112)96-68)30-47-19-11-8-12-20-47)76(113)97-69(45(4)6-2)78(115)95-56(29-46-17-9-7-10-18-46)71(108)85-40-65(103)92-59(33-50-36-80-43-88-50)74(111)93-55(31-48-24-26-51(98)27-25-48)70(107)84-37-62(100)83-42-67(105)106/h7-14,17-22,24-27,35-36,43-45,54-60,68-69,81,98H,5-6,15-16,23,28-34,37-42,79H2,1-4H3,(H,80,88)(H,82,99)(H,83,100)(H,84,107)(H,85,108)(H,86,109)(H,87,114)(H,89,102)(H,90,101)(H,91,104)(H,92,103)(H,93,111)(H,94,110)(H,95,115)(H,96,112)(H,97,113)(H,105,106)/t44-,45-,54-,55-,56-,57-,58-,59-,60-,68-,69-/m0/s1
+  standard_inchi_key: IKMBHYDVZYDFLO-CUDJSNFSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002053
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lasso peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA032873
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002053
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:33712632
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002053 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002053
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:33712632
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002053 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT149903.1
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002053
+  source_label: ulleungdin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-9597c978b5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

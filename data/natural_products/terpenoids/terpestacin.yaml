@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-cad744f6f6
+label: terpestacin
+chemical_structure:
+  smiles: C/C/1=C/CC/C(=C\C[C@]2([C@H](C/C=C(\[C@H](CC1)O)/C)C(=C(C2=O)O)[C@H](C)CO)C)/C
+  standard_inchi: InChI=1S/C25H38O4/c1-16-7-6-8-17(2)13-14-25(5)20(11-10-18(3)21(27)12-9-16)22(19(4)15-26)23(28)24(25)29/h7,10,13,19-21,26-28H,6,8-9,11-12,14-15H2,1-5H3/b16-7-,17-13-,18-10-/t19-,20-,21+,25+/m1/s1
+  standard_inchi_key: UTGBBPSEQPITLF-QMDQJFAJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002245
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Cembrane diterpenoids
+  - Dolabellane diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA017440
+producer_organisms:
+- taxon_id: NCBITaxon:701091
+  taxon_label: Bipolaris maydis C5
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002245
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:29417814
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002245 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002245
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:701091
+  organism_label: Bipolaris maydis C5
+  evidence:
+  - reference: PMID:29417814
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002245 entry version 2; citation taken from the entry level
+  genome_accession: genbank:KB445573.1
+  locus_from: 1492430
+  locus_to: 1503522
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002245
+  source_label: terpestacin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-cad744f6f6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

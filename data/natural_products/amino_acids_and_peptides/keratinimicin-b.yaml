@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-3d8ff34000
+label: keratinimicin B
+chemical_structure:
+  smiles: C[C@H]1[C@@H]([C@H](C[C@@H](O1)O[C@@H]2[C@H]([C@@H]([C@H](O[C@H]2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)[C@H]([C@H]7C(=O)N[C@@H](C8=C(C(=CC(=C8)O)O)C9=C(C=CC(=C9)[C@H](C(=O)N7)NC(=O)[C@@H]5NC(=O)[C@@H](NC(=O)[C@@H]([C@@H](C1=CC=C(O4)C=C1)O)NC(=O)[C@@H](C1=CC(=C(C=C1)O)Cl)N)CC1=CC=CC=C1)O)C(=O)O)O[C@H]1C[C@@H]([C@H]([C@@H](O1)C)OC)N)Cl)CO)O)O)N)O
+  standard_inchi: InChI=1S/C78H83Cl2N9O26/c1-30-63(95)44(81)27-54(108-30)114-70-66(98)65(97)53(29-90)112-78(70)115-69-51-23-37-24-52(69)111-50-18-13-36(22-43(50)80)68(113-55-28-45(82)67(107-3)31(2)109-55)62-76(104)87-60(77(105)106)41-25-38(91)26-49(94)56(41)40-20-35(12-16-47(40)92)58(73(101)89-62)86-74(102)59(37)85-71(99)46(19-32-7-5-4-6-8-32)84-75(103)61(64(96)33-9-14-39(110-51)15-10-33)88-72(100)57(83)34-11-17-48(93)42(79)21-34/h4-18,20-26,30-31,44-46,53-55,57-68,70,78,90-98H,19,27-29,81-83H2,1-3H3,(H,84,103)(H,85,99)(H,86,102)(H,87,104)(H,88,100)(H,89,101)(H,105,106)/t30-,31-,44-,45-,46-,53+,54-,55-,57+,58+,59+,60-,61+,62-,63-,64+,65+,66-,67-,68+,70+,78-/m0/s1
+  standard_inchi_key: OTZKSODHAKYYOG-ZMKDHLFFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001955
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Vancomycins and Teicoplanins
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+- NRPS
+xrefs:
+- pubchem:134822036
+producer_organisms:
+- taxon_id: NCBITaxon:129921
+  taxon_label: Amycolatopsis keratiniphila NRRL B24117
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0001955
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Correlation of genomic and metabolomic data|Homology-based
+    prediction. That evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades
+    the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:30617293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001955 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001955
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:129921
+  organism_label: Amycolatopsis keratiniphila NRRL B24117
+  evidence:
+  - reference: PMID:30617293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001955 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MH428036.1
+  locus_from: 1
+  locus_to: 71301
+  bgc_class:
+  - SACCHARIDE
+  - NRPS
+  locus_evidence_methods:
+  - Correlation of genomic and metabolomic data
+  - Homology-based prediction
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001955
+  source_label: keratinimicin B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-3d8ff34000
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

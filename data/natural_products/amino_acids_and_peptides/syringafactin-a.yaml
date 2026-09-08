@@ -1,0 +1,111 @@
+identifier: naturalproductmech:mibig-15541061e0
+label: syringafactin A
+chemical_structure:
+  smiles: CCCCCCCC(O)CC(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)NC(CCC(N)=O)C(=O)NC(CC(C)C)C(=O)NC(C(=O)NC(C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)O)C(C)C)C(C)O
+  standard_inchi: InChI=1S/C54H99N9O13/c1-15-16-17-18-19-20-36(65)28-44(67)56-38(23-29(2)3)48(69)59-39(24-30(4)5)49(70)57-37(21-22-43(55)66)47(68)58-41(26-32(8)9)51(72)63-46(35(14)64)53(74)62-45(34(12)13)52(73)60-40(25-31(6)7)50(71)61-42(54(75)76)27-33(10)11/h29-42,45-46,64-65H,15-28H2,1-14H3,(H2,55,66)(H,56,67)(H,57,70)(H,58,68)(H,59,69)(H,60,73)(H,61,71)(H,62,74)(H,63,72)(H,75,76)
+  standard_inchi_key: OZNSZJGTTJTCMJ-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002518
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Lipopeptide
+xrefs:
+- npatlas:NPA032805
+producer_organisms:
+- taxon_id: NCBITaxon:2662259
+  taxon_label: Pseudomonas sp. SZ57
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002518
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:3526668
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002518 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:223283
+  taxon_label: Pseudomonas syringae pv. tomato str. DC3000
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000435
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17601782
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000435 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002518
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2662259
+  organism_label: Pseudomonas sp. SZ57
+  evidence:
+  - reference: PMID:3526668
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002518 entry version 3; citation taken from the entry level
+  genome_accession: genbank:WIBD01000002.1
+  locus_from: 152549
+  locus_to: 163109
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0000435
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:223283
+  organism_label: Pseudomonas syringae pv. tomato str. DC3000
+  evidence:
+  - reference: PMID:17601782
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000435 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AE016853.1
+  locus_from: 3151815
+  locus_to: 3184002
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002518
+  source_label: syringafactin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-15541061e0
+- source: MIBIG
+  source_id: BGC0000435
+  source_label: syringafactin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5e1b721cf0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000435, BGC0002518.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

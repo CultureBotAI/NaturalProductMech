@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-d5bf3767ca
+label: phenguignardic acid
+chemical_structure:
+  smiles: C1=CC=C(C=C1)CC2(OC(=CC3=CC=CC=C3)C(=O)O2)C(=O)O
+  standard_inchi: InChI=1S/C18H14O5/c19-16-15(11-13-7-3-1-4-8-13)22-18(23-16,17(20)21)12-14-9-5-2-6-10-14/h1-11H,12H2,(H,20,21)
+  standard_inchi_key: OLOMGTHWMBYIQH-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002193
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA011282
+- pubchem:60200369
+producer_organisms:
+- taxon_id: NCBITaxon:341663
+  taxon_label: Aspergillus terreus NIH2624
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002193
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26851300
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002193 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002193
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:341663
+  organism_label: Aspergillus terreus NIH2624
+  evidence:
+  - reference: PMID:26851300
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002193 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CH476606.1
+  locus_from: 1123696
+  locus_to: 1127423
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002193
+  source_label: phenguignardic acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-d5bf3767ca
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

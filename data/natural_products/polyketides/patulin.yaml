@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-8b7aadc257
+label: patulin
+chemical_structure:
+  smiles: C1C=C2C(=CC(=O)O2)C(O1)O
+  standard_inchi: InChI=1S/C7H6O4/c8-6-3-4-5(11-6)1-2-10-7(4)9/h1,3,7,9H,2H2
+  standard_inchi_key: ZRWPUFFVAOMMNM-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000120
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Miscellaneous polyketides
+  class_results:
+  - Miscellaneous polyketides
+  is_glycoside: true
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:27334
+  taxon_label: Penicillium expansum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000120
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25120234
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000120 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000120
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:27334
+  organism_label: Penicillium expansum
+  evidence:
+  - reference: PMID:25120234
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000120 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF899892.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000120
+  source_label: patulin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8b7aadc257
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

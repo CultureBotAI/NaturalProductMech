@@ -1,0 +1,118 @@
+identifier: naturalproductmech:mibig-6a7a204282
+label: schizokinen
+chemical_structure:
+  smiles: CC(=O)N(O)CCCNC(=O)CC(O)(CC(=O)NCCCN(O)C(C)=O)C(=O)O
+  standard_inchi: InChI=1S/C16H28N4O9/c1-11(21)19(28)7-3-5-17-13(23)9-16(27,15(25)26)10-14(24)18-6-4-8-20(29)12(2)22/h27-29H,3-10H2,1-2H3,(H,17,23)(H,18,24)(H,25,26)
+  standard_inchi_key: YILWWVUXGMGOAM-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002633
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Polyamines
+  is_glycoside: false
+bgc_class:
+- OTHER
+- NRPS
+xrefs:
+- pubchem:3082425
+- cyanometdb:CyanoMetDB_1678
+- npatlas:NPA027582
+producer_organisms:
+- taxon_id: NCBITaxon:111781
+  taxon_label: Leptolyngbya sp. PCC 7376
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002633
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1128/aem.02373-21
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002633 entry version 2; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:103690
+  taxon_label: Nostoc sp. PCC 7120 = FACHB-418
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002683
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1111/j.1529-8817.1976.tb02824.x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002683 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002633
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:111781
+  organism_label: Leptolyngbya sp. PCC 7376
+  evidence:
+  - reference: DOI:10.1128/aem.02373-21
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002633 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP003946.1
+  locus_from: 4615604
+  locus_to: 4627177
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0002683
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:103690
+  organism_label: Nostoc sp. PCC 7120 = FACHB-418
+  evidence:
+  - reference: DOI:10.1111/j.1529-8817.1976.tb02824.x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002683 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:BA000019.2
+  locus_from: 452145
+  locus_to: 466155
+  bgc_class:
+  - OTHER
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002633
+  source_label: schizokinen
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-6a7a204282
+- source: MIBIG
+  source_id: BGC0002683
+  source_label: schizokinen
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-62f6709e6d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002633, BGC0002683.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

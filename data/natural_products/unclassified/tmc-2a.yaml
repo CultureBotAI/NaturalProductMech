@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-967cb45404
+label: TMC-2A
+chemical_structure:
+  smiles: COC1=C(O)C=C2C[C@H](N(CC2=C1O)C(=O)[C@@H](N)CC1=CNC2=CC=CC=C12)C(=O)N[C@@H](CC(CO)CO)C(O)=O
+  standard_inchi: InChI=1S/C28H34N4O9/c1-41-25-23(35)9-15-8-22(26(37)31-21(28(39)40)6-14(12-33)13-34)32(11-18(15)24(25)36)27(38)19(29)7-16-10-30-20-5-3-2-4-17(16)20/h2-5,9-10,14,19,21-22,30,33-36H,6-8,11-13,29H2,1H3,(H,31,37)(H,39,40)/t19-,21-,22-/m0/s1
+  standard_inchi_key: ODKDMMTXTVCCLJ-BVSLBCMMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001621
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA02280
+producer_organisms:
+- taxon_id: NCBITaxon:332952
+  taxon_label: Aspergillus flavus NRRL3357
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001621
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29182847
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001621 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001621
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:332952
+  organism_label: Aspergillus flavus NRRL3357
+  evidence:
+  - reference: PMID:29182847
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001621 entry version 4; citation taken from the entry level
+  genome_accession: genbank:NW_002477244.1
+  locus_from: 25905
+  locus_to: 53073
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001621
+  source_label: TMC-2A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-967cb45404
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

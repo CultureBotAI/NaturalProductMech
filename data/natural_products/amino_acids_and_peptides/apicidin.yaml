@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-f6e5a95e78
+label: apicidin
+chemical_structure:
+  smiles: '[H][C@]12CCCCN1C(=O)[C@@H](NC(=O)[C@H](CC1=CN(OC)C3=C1C=CC=C3)NC(=O)[C@H](CCCCCC(=O)CC)NC2=O)C(C)CC'
+  standard_inchi: InChI=1S/C34H49N5O6/c1-5-22(3)30-34(44)38-19-13-12-18-29(38)33(43)35-26(16-9-7-8-14-24(40)6-2)31(41)36-27(32(42)37-30)20-23-21-39(45-4)28-17-11-10-15-25(23)28/h10-11,15,17,21-22,26-27,29-30H,5-9,12-14,16,18-20H2,1-4H3,(H,35,43)(H,36,41)(H,37,42)/t22?,26-,27-,29+,30-/m0/s1
+  standard_inchi_key: JWOGUUIOCYMBPV-LQJYRIKDSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000304
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA013880
+- pubchem:467801
+producer_organisms:
+- taxon_id: NCBITaxon:298378
+  taxon_label: Fusarium incarnatum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000304
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1073/pnas.93.23.13143
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000304 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000304
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:298378
+  organism_label: Fusarium incarnatum
+  evidence:
+  - reference: DOI:10.1073/pnas.93.23.13143
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000304 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:GQ331953.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000304
+  source_label: apicidin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-f6e5a95e78
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

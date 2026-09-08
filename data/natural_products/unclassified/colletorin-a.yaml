@@ -1,0 +1,79 @@
+identifier: naturalproductmech:mibig-9dc1c51ea5
+label: Colletorin A
+chemical_structure:
+  smiles: CC1=CC(=C(C(=C1C=O)O)C/C=C(\C)/CCC(C(C)(C)O)O)O
+  standard_inchi: InChI=1S/C18H26O5/c1-11(6-8-16(21)18(3,4)23)5-7-13-15(20)9-12(2)14(10-19)17(13)22/h5,9-10,16,20-23H,6-8H2,1-4H3/b11-5+
+  standard_inchi_key: QXFKEGZSZLPBGD-VZUCSPMQSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002812
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Tetraketide meroterpenoids
+  is_glycoside: false
+bgc_class:
+- PKS
+- TERPENE
+compound_classes:
+- Alkylresorcinol/phloroglucinol polyketide
+- Meroterpenoid
+xrefs:
+- pubchem:90473293
+producer_organisms:
+- taxon_id: NCBITaxon:759273
+  taxon_label: Colletotrichum higginsianum IMI 349063
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002812
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Correlation of genomic and metabolomic data. That evidence
+    grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: DOI:10.1080/00021369.1974.10861322
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002812 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002812
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:759273
+  organism_label: Colletotrichum higginsianum IMI 349063
+  evidence:
+  - reference: DOI:10.1080/00021369.1974.10861322
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002812 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:LTAN01000004.1
+  locus_from: 389265
+  locus_to: 404974
+  bgc_class:
+  - PKS
+  - TERPENE
+  locus_evidence_methods:
+  - Correlation of genomic and metabolomic data
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002812
+  source_label: Colletorin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-9dc1c51ea5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

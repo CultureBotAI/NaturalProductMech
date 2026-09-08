@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-afe480396a
+label: holrhizin B
+chemical_structure:
+  smiles: CCCCCCCC(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CC1=CC=CC=C1)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](C)C(=O)N[C@H](C(C)C)C(O)=O
+  standard_inchi: InChI=1S/C41H66N6O10/c1-9-11-12-13-17-20-31(48)45-33(24(3)4)39(54)44-30(23-28-18-15-14-16-19-28)38(53)43-29(21-22-32(49)50)37(52)47-35(26(7)10-2)40(55)42-27(8)36(51)46-34(25(5)6)41(56)57/h14-16,18-19,24-27,29-30,33-35H,9-13,17,20-23H2,1-8H3,(H,42,55)(H,43,53)(H,44,54)(H,45,48)(H,46,51)(H,47,52)(H,49,50)(H,56,57)/t26-,27-,29-,30-,33-,34+,35-/m0/s1
+  standard_inchi_key: LQVPMUGBAJMPEB-NKHATCEVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001844
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Lipopeptide
+producer_organisms:
+- taxon_id: NCBITaxon:882378
+  taxon_label: Paraburkholderia rhizoxinica HKI 454
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001844
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1039/c8ob01515e
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001844 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001844
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:882378
+  organism_label: Paraburkholderia rhizoxinica HKI 454
+  evidence:
+  - reference: DOI:10.1039/c8ob01515e
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001844 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:NC_014718.1
+  locus_from: 510846
+  locus_to: 531583
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001844
+  source_label: holrhizin B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-afe480396a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

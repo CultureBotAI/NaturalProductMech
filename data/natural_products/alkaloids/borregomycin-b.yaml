@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-93b93ea3fe
+label: borregomycin B
+chemical_structure:
+  smiles: CN1C(=O)C2(C3=C(C4=C(C2(C1=O)OC)C5=C(N4)C=C(C=C5)Cl)NC6=C3C=CC(=C6)Cl)OC
+  standard_inchi: InChI=1S/C23H17Cl2N3O4/c1-28-20(29)22(31-2)16-12-6-4-10(24)8-14(12)26-18(16)19-17(23(22,32-3)21(28)30)13-7-5-11(25)9-15(13)27-19/h4-9,26-27H,1-3H3
+  standard_inchi_key: BWXHBPKKPBUIRE-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001335
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carboline alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:102196434
+producer_organisms:
+- taxon_id: NCBITaxon:77133
+  taxon_label: uncultured bacterium
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001335
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:23302687
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001335 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001335
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:77133
+  organism_label: uncultured bacterium
+  evidence:
+  - reference: PMID:23302687
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001335 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JX827455.1
+  locus_from: 9991
+  locus_to: 36113
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001335
+  source_label: borregomycin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-93b93ea3fe
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

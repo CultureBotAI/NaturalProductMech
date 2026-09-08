@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-eb25c9b521
+label: ambiguine H isonitrile
+chemical_structure:
+  smiles: '[H][C@@]12CC[C@@](C)(C=C)[C@@H]([N+]#[C-])[C@@]1([H])C1=C(NC3=CC=CC(=C13)C2(C)C)C(C)(C)C=C'
+  standard_inchi: InChI=1S/C26H32N2/c1-9-24(3,4)22-21-19-16(12-11-13-18(19)28-22)25(5,6)17-14-15-26(7,10-2)23(27-8)20(17)21/h9-13,17,20,23,28H,1-2,14-15H2,3-7H3/t17-,20-,23+,26-/m1/s1
+  standard_inchi_key: DBOXZAYTFKDLHJ-KPQBMEGNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001612
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Hapalindole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA018261
+producer_organisms:
+- taxon_id: NCBITaxon:230521
+  taxon_label: Fischerella ambigua UTEX 1903
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001612
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26629885
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001612 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001612
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:230521
+  organism_label: Fischerella ambigua UTEX 1903
+  evidence:
+  - reference: PMID:26629885
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001612 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KX451322.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001612
+  source_label: ambiguine H isonitrile
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-eb25c9b521
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

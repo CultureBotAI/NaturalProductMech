@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-9b040d7e03
+label: Norbotrydialone acetate
+chemical_structure:
+  smiles: C[C@@H]1C[C@@H]([C@@H]2C3=C1C(=O)O[C@@]3(CC2(C)C)C)OC(=O)C
+  standard_inchi: InChI=1S/C16H22O4/c1-8-6-10(19-9(2)17)12-13-11(8)14(18)20-16(13,5)7-15(12,3)4/h8,10,12H,6-7H2,1-5H3/t8-,10+,12-,16-/m1/s1
+  standard_inchi_key: OMZUEHMZFLBHNI-PCKWUFTNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000631
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Botryane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA019353
+producer_organisms:
+- taxon_id: NCBITaxon:332648
+  taxon_label: Botrytis cinerea B05.10
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000631
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/np020107v
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000631 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000631
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:332648
+  organism_label: Botrytis cinerea B05.10
+  evidence:
+  - reference: DOI:10.1021/np020107v
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000631 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP009816.1
+  locus_from: 2216500
+  locus_to: 2246000
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000631
+  source_label: Norbotrydialone acetate
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-9b040d7e03
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

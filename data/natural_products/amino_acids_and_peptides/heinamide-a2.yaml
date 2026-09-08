@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-48432214c0
+label: heinamide A2
+chemical_structure:
+  smiles: C/C=C1/NC(=O)[C@H](CO)NC(=O)C[C@@H](CCCCC)NC(=O)CNC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@@H](CC2=CC=CC=C2)NC(=O)[C@H]([C@@H](C)CC)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](CC2=CC=C(O)C=C2)NC(=O)[C@H](CO)NC(=O)[C@@H]2CCCN2C1=O
+  standard_inchi: InChI=1S/C60H87N11O15/c1-7-10-12-18-38-28-49(76)63-45(32-72)54(80)64-41(9-3)59(85)70-24-15-19-47(70)57(83)68-46(33-73)55(81)66-43(26-37-20-22-39(74)23-21-37)52(78)65-42(25-34(4)5)53(79)69-51(35(6)8-2)58(84)67-44(27-36-16-13-11-14-17-36)60(86)71-31-40(75)29-48(71)56(82)61-30-50(77)62-38/h9,11,13-14,16-17,20-23,34-35,38,40,42-48,51,72-75H,7-8,10,12,15,18-19,24-33H2,1-6H3,(H,61,82)(H,62,77)(H,63,76)(H,64,80)(H,65,78)(H,66,81)(H,67,84)(H,68,83)(H,69,79)/b41-9+/t35-,38+,40+,42+,43+,44+,45-,46-,47-,48-,51-/m0/s1
+  standard_inchi_key: HYJDKTCLVOVFBX-AJKNKOHSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002572
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA033110
+producer_organisms:
+- taxon_id: NCBITaxon:2814655
+  taxon_label: Nostoc sp. UHCC 0702
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002572
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1039/d1ob00772f
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002572 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002572
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2814655
+  organism_label: Nostoc sp. UHCC 0702
+  evidence:
+  - reference: DOI:10.1039/d1ob00772f
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002572 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CP071065.1
+  locus_from: 3593724
+  locus_to: 3685135
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002572
+  source_label: heinamide A2
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-48432214c0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-38657362df
+label: cytoglobosin X
+chemical_structure:
+  smiles: CC1=C(C)[C@@H](O)[C@@H]2/C=C/C[C@H](C)/C=C(\C)[C@H](O)[C@H](O)CC[C@H](O)[C@]23C(=O)N[C@@H](CC2=C[NH]C4=CC=CC=C24)C13
+  standard_inchi: InChI=1S/C32H42N2O5/c1-17-8-7-10-23-30(38)20(4)19(3)28-25(15-21-16-33-24-11-6-5-9-22(21)24)34-31(39)32(23,28)27(36)13-12-26(35)29(37)18(2)14-17/h5-7,9-11,14,16-17,23,25-30,33,35-38H,8,12-13,15H2,1-4H3,(H,34,39)/b10-7+,18-14+/t17-,23-,25-,26+,27-,28?,29-,30+,32+/m0/s1
+  standard_inchi_key: MCAPWUBVQVASDE-MMMJEWCYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002546
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Pseudoalkaloids
+  class_results:
+  - Cytochalasan alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA032942
+producer_organisms:
+- taxon_id: NCBITaxon:38033
+  taxon_label: Chaetomium globosum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002546
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31897521
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002546 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002546
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:38033
+  organism_label: Chaetomium globosum
+  evidence:
+  - reference: PMID:31897521
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002546 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MN367318.1
+  locus_from: 1
+  locus_to: 37704
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002546
+  source_label: cytoglobosin X
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-38657362df
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

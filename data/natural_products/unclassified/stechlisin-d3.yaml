@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-9327399d6d
+label: stechlisin D3
+chemical_structure:
+  smiles: CCCCCCC[C@H](O)CC(=O)N[C@H](CC(C)C)C(=O)N[C@H](CC(=O)O)C(=O)N[C@H]1C(=O)N[C@H](CC(C)C)C(=O)N[C@H](CC(C)C)C(=O)N[C@H](CO)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CCC(N)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCC(=O)O)C(=O)O[C@@H]1C
+  standard_inchi: InChI=1S/C67H116N12O20/c1-15-16-17-18-19-20-41(81)31-53(83)69-44(25-34(2)3)58(89)76-50(32-55(86)87)64(95)79-56-40(14)99-67(98)43(22-24-54(84)85)71-60(91)46(27-36(6)7)73-61(92)47(28-37(8)9)72-57(88)42(21-23-52(68)82)70-59(90)45(26-35(4)5)75-65(96)51(33-80)78-63(94)48(29-38(10)11)74-62(93)49(30-39(12)13)77-66(56)97/h34-51,56,80-81H,15-33H2,1-14H3,(H2,68,82)(H,69,83)(H,70,90)(H,71,91)(H,72,88)(H,73,92)(H,74,93)(H,75,96)(H,76,89)(H,77,97)(H,78,94)(H,79,95)(H,84,85)(H,86,87)/t40-,41+,42-,43+,44-,45+,46+,47+,48-,49-,50-,51-,56-/m1/s1
+  standard_inchi_key: HXUJSZUFTCICIQ-HDBYJYEHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002092
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA029349
+producer_organisms:
+- taxon_id: NCBITaxon:306
+  taxon_label: Pseudomonas sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002092
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/acs.jnatprod.0c00263
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002092 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002092
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:306
+  organism_label: Pseudomonas sp.
+  evidence:
+  - reference: DOI:10.1021/acs.jnatprod.0c00263
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002092 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT080808.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002092
+  source_label: stechlisin D3
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-9327399d6d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-1383252107
+label: bacillopaline
+chemical_structure:
+  smiles: O=C(O)CCC(NC(CCNC(CC1=CN=C[NH]1)C(=O)O)C(=O)O)C(=O)O
+  standard_inchi: InChI=1S/C15H22N4O8/c20-12(21)2-1-9(13(22)23)19-10(14(24)25)3-4-17-11(15(26)27)5-8-6-16-7-18-8/h6-7,9-11,17,19H,1-5H2,(H,16,18)(H,20,21)(H,22,23)(H,24,25)(H,26,27)
+  standard_inchi_key: RLSXUJSGKUUKFH-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002488
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Aminoacids
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA032932
+producer_organisms:
+- taxon_id: NCBITaxon:1036673
+  taxon_label: Paenibacillus mucilaginosus KNP414
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002488
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32817386
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002488 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002488
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1036673
+  organism_label: Paenibacillus mucilaginosus KNP414
+  evidence:
+  - reference: PMID:32817386
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002488 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP002869.1
+  locus_from: 1977285
+  locus_to: 1986533
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002488
+  source_label: bacillopaline
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1383252107
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

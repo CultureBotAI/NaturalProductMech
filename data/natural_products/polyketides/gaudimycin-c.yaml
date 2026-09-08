@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-862d8324db
+label: gaudimycin C
+chemical_structure:
+  smiles: O=C1C2=C([C@@H](O)C[C@](O)(CC(C)=C3)[C@]2(O)C3=O)C(C4=C(O)C=CC=C41)=O
+  standard_inchi: InChI=1S/C19H16O7/c1-8-5-12(22)19(26)15-14(11(21)7-18(19,25)6-8)17(24)13-9(16(15)23)3-2-4-10(13)20/h2-5,11,20-21,25-26H,6-7H2,1H3/t11-,18+,19-/m0/s1
+  standard_inchi_key: XKRMMVFULPCHPV-SYURPWHHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000262
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:161235
+  taxon_label: Streptomyces sp. PGA64
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000262
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression|Gene expression
+    correlated with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12654660
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000262 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000262
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:161235
+  organism_label: Streptomyces sp. PGA64
+  evidence:
+  - reference: PMID:12654660
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000262 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY034378.2
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000262
+  source_label: gaudimycin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-862d8324db
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

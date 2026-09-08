@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-7cc773adf1
+label: 8-methyldiaporthin
+chemical_structure:
+  smiles: O=C1OC(C[C@@H](O)C)=CC2=CC(OC)=CC(OC)=C21
+  standard_inchi: InChI=1S/C14H16O5/c1-8(15)4-11-6-9-5-10(17-2)7-12(18-3)13(9)14(16)19-11/h5-8,15H,4H2,1-3H3/t8-/m0/s1
+  standard_inchi_key: MXEZBPCVRNMVLQ-QMMMGPOBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002236
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Coumarins
+  class_results:
+  - Isocoumarins
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:510516
+  taxon_label: Aspergillus oryzae RIB40
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002236
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22447538
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002236 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002236
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:510516
+  organism_label: Aspergillus oryzae RIB40
+  evidence:
+  - reference: PMID:22447538
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002236 entry version 2; citation taken from the entry level
+  genome_accession: genbank:AP007175.1
+  locus_from: 110000
+  locus_to: 122000
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002236
+  source_label: 8-methyldiaporthin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-7cc773adf1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-8a55524478
+label: 12-epi-hapalindole J isonitrile
+chemical_structure:
+  smiles: '[H][C@]12CC[C@@](C)(C=C)[C@H]([N+]#[C-])[C@@]1([H])C1=CNC3=C1C(=CC=C3)C2(C)C'
+  standard_inchi: InChI=1S/C21H24N2/c1-6-21(4)11-10-15-18(19(21)22-5)13-12-23-16-9-7-8-14(17(13)16)20(15,2)3/h6-9,12,15,18-19,23H,1,10-11H2,2-4H3/t15-,18-,19+,21+/m0/s1
+  standard_inchi_key: SLUFHMQYBPOTFZ-XJRBWHPUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001126
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Hapalindole alkaloids
+  - Simple indole alkaloids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+- OTHER
+xrefs:
+- npatlas:NPA03400
+producer_organisms:
+- taxon_id: NCBITaxon:230521
+  taxon_label: Fischerella ambigua UTEX 1903
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001126
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24180436
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001126 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001126
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:230521
+  organism_label: Fischerella ambigua UTEX 1903
+  evidence:
+  - reference: PMID:24180436
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001126 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KF664586.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001126
+  source_label: 12-epi-hapalindole J isonitrile
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-8a55524478
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-e6b8bf6abd
+label: Leepeptin
+chemical_structure:
+  smiles: CC[C@H](C)C(NC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H]1CCC(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC2=CC=C(O)C=C2)C(=O)NCC(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CC(=O)O)C(=O)N1)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CC1=C[NH]C2=CC=CC=C12)C(=O)N[C@@H](CC1=CN=C[NH]1)C(=O)N[C@@H](CC1=CC=CC=C1)C(=O)N[C@@H](CC(=O)O)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(=O)N[C@@H](CC1=C[NH]C2=CC=CC=C12)C(=O)NC(C(=O)O)[C@@H](C)O
+  standard_inchi: InChI=1S/C110H143N27O31/c1-8-55(6)91(136-96(154)71(33-35-87(145)146)122-95(153)70-32-34-85(143)121-72(37-53(2)3)97(155)125-73(39-58-24-28-63(139)29-25-58)93(151)119-51-86(144)135-90(54(4)5)107(165)124-69(23-16-36-116-110(113)114)94(152)131-79(44-83(111)141)102(160)133-81(46-88(147)148)104(162)123-70)108(166)134-80(45-84(112)142)103(161)128-76(41-60-48-117-67-21-14-12-19-65(60)67)100(158)130-78(43-62-50-115-52-120-62)101(159)126-74(38-57-17-10-9-11-18-57)99(157)132-82(47-89(149)150)105(163)127-75(40-59-26-30-64(140)31-27-59)98(156)129-77(106(164)137-92(56(7)138)109(167)168)42-61-49-118-68-22-15-13-20-66(61)68/h9-15,17-22,24-31,48-50,52-56,69-82,90-92,117-118,138-140H,8,16,23,32-47,51H2,1-7H3,(H2,111,141)(H2,112,142)(H,115,120)(H,119,151)(H,121,143)(H,122,153)(H,123,162)(H,124,165)(H,125,155)(H,126,159)(H,127,163)(H,128,161)(H,129,156)(H,130,158)(H,131,152)(H,132,157)(H,133,160)(H,134,166)(H,135,144)(H,136,154)(H,137,164)(H,145,146)(H,147,148)(H,149,150)(H,167,168)(H4,113,114,116)/t55-,56+,69-,70-,71-,72-,73-,74-,75-,76-,77-,78-,79-,80-,81-,82-,90-,91?,92?/m0/s1
+  standard_inchi_key: UDBDQVQDKZANRU-GYZZVETDSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002289
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lasso peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+compound_classes:
+- Macrocyclic
+xrefs:
+- npatlas:NPA027201
+producer_organisms:
+- taxon_id: NCBITaxon:1437453
+  taxon_label: Streptomyces leeuwenhoekii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002289
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1128/aem.01752-19
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002289 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002289
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1437453
+  organism_label: Streptomyces leeuwenhoekii
+  evidence:
+  - reference: DOI:10.1128/aem.01752-19
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002289 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:LN831790.1
+  locus_from: 648370
+  locus_to: 654833
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002289
+  source_label: Leepeptin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-e6b8bf6abd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

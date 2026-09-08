@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-8252d9cf90
+label: chlortetracycline
+chemical_structure:
+  smiles: C[C@@]1(C2C[C@H]3[C@@H](C(=O)C(=C([C@]3(C(=O)C2=C(C4=C(C=CC(=C41)Cl)O)O)O)O)C(=O)N)N(C)C)O
+  standard_inchi: InChI=1S/C22H23ClN2O8/c1-21(32)7-6-8-15(25(2)3)17(28)13(20(24)31)19(30)22(8,33)18(29)11(7)16(27)12-10(26)5-4-9(23)14(12)21/h4-5,7-8,15,26-27,30,32-33H,6H2,1-3H3,(H2,24,31)/t7?,8-,15-,21-,22-/m0/s1
+  standard_inchi_key: DHPRQBPJLMKORJ-RQWFMOQPSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000209
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Tetracyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:54676345
+producer_organisms:
+- taxon_id: NCBITaxon:1894
+  taxon_label: Kitasatospora aureofaciens
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000209
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23800859
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000209 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000209
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1894
+  organism_label: Kitasatospora aureofaciens
+  evidence:
+  - reference: PMID:23800859
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000209 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HM627755.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000209
+  source_label: chlortetracycline
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8252d9cf90
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

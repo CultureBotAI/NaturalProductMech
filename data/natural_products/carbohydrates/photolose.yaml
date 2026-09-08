@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-083e785437
+label: photolose
+chemical_structure:
+  smiles: OC[C@@H]1[C@@H](O)[C@H](O)[C@@H](NC(C)=O)C(O[C@@H]2[C@@H]3O[C@@H](OC3)[C@H](NC(C)=O)[C@H]2OC(CN)=O)O1
+  standard_inchi: InChI=1S/C18H29N3O11/c1-6(23)20-11-14(27)13(26)8(4-22)29-18(11)32-15-9-5-28-17(30-9)12(21-7(2)24)16(15)31-10(25)3-19/h8-9,11-18,22,26-27H,3-5,19H2,1-2H3,(H,20,23)(H,21,24)/t8-,9-,11-,12-,13-,14-,15-,16-,17-,18?/m1/s1
+  standard_inchi_key: QDUWETIVZFOXDU-HIQBFJNSSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002020
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Aminosugars and aminoglycosides
+  class_results:
+  - Aminosugars
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:243265
+  taxon_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002020
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/acs.biochem.8b01120
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002020 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002020
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:243265
+  organism_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence:
+  - reference: DOI:10.1021/acs.biochem.8b01120
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002020 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:BX470251.1
+  locus_from: 2827500
+  locus_to: 2832003
+  bgc_class:
+  - SACCHARIDE
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002020
+  source_label: photolose
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-083e785437
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

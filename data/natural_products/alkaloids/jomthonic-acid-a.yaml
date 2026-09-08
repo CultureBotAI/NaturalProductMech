@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-5fba30a40d
+label: jomthonic acid A
+chemical_structure:
+  smiles: C\C=C(/C)\C=C\C(=O)N[C@@H]([C@H](C)C1=CC=CC=C1)C(=O)O[C@H](C)[C@@H](C)C(O)=O
+  standard_inchi: InChI=1S/C22H29NO5/c1-6-14(2)12-13-19(24)23-20(16(4)18-10-8-7-9-11-18)22(27)28-17(5)15(3)21(25)26/h6-13,15-17,20H,1-5H3,(H,23,24)(H,25,26)/b13-12+,14-6+/t15-,16-,17-,20+/m1/s1
+  standard_inchi_key: VVPVXDHEFAYPAR-ZZSCLJTRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001457
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Simple amide alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA010628
+producer_organisms:
+- taxon_id: NCBITaxon:285557
+  taxon_label: Streptomyces caniferus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001457
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:30065171
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001457 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001457
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:285557
+  organism_label: Streptomyces caniferus
+  evidence:
+  - reference: PMID:30065171
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001457 entry version 4; citation taken from the entry level
+  genome_accession: genbank:LT990689.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001457
+  source_label: jomthonic acid A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-5fba30a40d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-7a0a19126a
+label: ristomycin A
+chemical_structure:
+  smiles: CC1C(C(CC(O1)OC2C3C(=O)NC(C4=CC(=CC(=C4C5=C(C=CC(=C5)C(C(=O)N3)NC(=O)C6C7=CC(=C(C(=C7)OC8=CC=C2C=C8)OC9C(C(C(C(O9)COC1C(C(C(C(O1)C)O)O)O)O)O)OC1C(C(C(C(O1)CO)O)O)OC1C(C(C(CO1)O)O)O)OC1=CC=C(C=C1)C(C1C(=O)NC(C2=CC(=C(C(=C2)O)C)OC2=C(C=CC(=C2)C(C(=O)N1)N)O)C(=O)N6)O)O)OC1C(C(C(C(O1)CO)O)O)O)O)C(=O)OC)N)O
+  standard_inchi: InChI=1S/C95H110N8O44/c1-30-47(109)18-37-20-49(30)139-50-19-35(9-16-46(50)108)59(97)84(125)102-64-68(113)33-5-11-40(12-6-33)137-52-21-38-22-53(81(52)145-95-83(76(121)72(117)56(143-95)29-134-91-78(123)73(118)67(112)32(3)136-91)147-94-82(75(120)71(116)55(27-105)142-94)146-92-77(122)69(114)48(110)28-133-92)138-41-13-7-34(8-14-41)80(144-57-25-44(96)66(111)31(2)135-57)65-89(130)101-63(90(131)132-4)43-23-39(106)24-51(140-93-79(124)74(119)70(115)54(26-104)141-93)58(43)42-17-36(10-15-45(42)107)60(85(126)103-65)98-87(128)62(38)99-86(127)61(37)100-88(64)129/h5-24,31-32,44,48,54-57,59-80,82-83,91-95,104-124H,25-29,96-97H2,1-4H3,(H,98,128)(H,99,127)(H,100,129)(H,101,130)(H,102,125)(H,103,126)
+  standard_inchi_key: VUOPFFVAZTUEGW-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000419
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Vancomycins and Teicoplanins
+  is_glycoside: true
+bgc_class:
+- NRPS
+- SACCHARIDE
+xrefs:
+- pubchem:16131418
+producer_organisms:
+- taxon_id: NCBITaxon:208439
+  taxon_label: Amycolatopsis japonica
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000419
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:25114137
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000419 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000419
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:208439
+  organism_label: Amycolatopsis japonica
+  evidence:
+  - reference: PMID:25114137
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000419 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP008953.1
+  locus_from: 6816619
+  locus_to: 6885328
+  bgc_class:
+  - NRPS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000419
+  source_label: ristomycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7a0a19126a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-350f9389f0
+label: fusaoctaxin A
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H](CC(=O)[C@H](C)NC(=O)CCCN)C(=O)N[C@H](CO)C(=O)N[C@@H](C(=O)N[C@H](CO)C(=O)N[C@H](CC(C)C)C(=O)N[C@H](CO)CC(C)C)C(C)C
+  standard_inchi: InChI=1S/C37H69N7O10/c1-10-23(8)26(16-30(48)24(9)39-31(49)12-11-13-38)33(50)42-29(19-47)36(53)44-32(22(6)7)37(54)43-28(18-46)35(52)41-27(15-21(4)5)34(51)40-25(17-45)14-20(2)3/h20-29,32,45-47H,10-19,38H2,1-9H3,(H,39,49)(H,40,51)(H,41,52)(H,42,50)(H,43,54)(H,44,53)/t23-,24-,25-,26+,27+,28+,29+,32+/m0/s1
+  standard_inchi_key: IYNDWBXTRNUZEP-SZODUKSCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002172
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA032876
+producer_organisms:
+- taxon_id: NCBITaxon:229533
+  taxon_label: Fusarium graminearum PH-1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002172
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31100892
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002172 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002172
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:229533
+  organism_label: Fusarium graminearum PH-1
+  evidence:
+  - reference: PMID:31100892
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002172 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CM000576.1
+  locus_from: 6023471
+  locus_to: 6078385
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002172
+  source_label: fusaoctaxin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-350f9389f0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

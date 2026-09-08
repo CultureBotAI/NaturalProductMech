@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-01731d46ec
+label: feglymycin
+chemical_structure:
+  smiles: CC(C)C(NC(=O)C(NC(=O)C(N)C1=CC=C(O)C=C1)C1=CC(O)=CC(O)=C1)C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(C)C)C(=O)NC(C(=O)NC(C(=O)NC(CC1=CC=CC=C1)C(=O)NC(CC(O)=O)C(O)=O)C1=CC=C(O)C=C1)C1=CC(O)=CC(O)=C1)C1=CC(O)=CC(O)=C1)C1=CC=C(O)C=C1)C1=CC(O)=CC(O)=C1)C1=CC=C(O)C=C1)C1=CC(O)=CC(O)=C1
+  standard_inchi: InChI=1S/C95H97N13O30/c1-43(2)73(99-90(132)78(50-27-59(113)37-60(114)28-50)101-84(126)72(96)46-10-18-55(109)19-11-46)85(127)106-81(53-33-65(119)40-66(120)34-53)93(135)103-77(49-16-24-58(112)25-17-49)89(131)108-82(54-35-67(121)41-68(122)36-54)94(136)104-76(48-14-22-57(111)23-15-48)88(130)107-79(51-29-61(115)38-62(116)30-51)91(133)100-74(44(3)4)86(128)105-80(52-31-63(117)39-64(118)32-52)92(134)102-75(47-12-20-56(110)21-13-47)87(129)97-69(26-45-8-6-5-7-9-45)83(125)98-70(95(137)138)42-71(123)124/h5-25,27-41,43-44,69-70,72-82,109-122H,26,42,96H2,1-4H3,(H,97,129)(H,98,125)(H,99,132)(H,100,133)(H,101,126)(H,102,134)(H,103,135)(H,104,136)(H,105,128)(H,106,127)(H,107,130)(H,108,131)(H,123,124)(H,137,138)
+  standard_inchi_key: QJQKBRUTBCTBKE-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001233
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA02530
+producer_organisms:
+- taxon_id: NCBITaxon:1740725
+  taxon_label: Streptomyces sp. DSM 11171
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001233
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26515424
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001233 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001233
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1740725
+  organism_label: Streptomyces sp. DSM 11171
+  evidence:
+  - reference: PMID:26515424
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001233 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KT809366.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001233
+  source_label: feglymycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-01731d46ec
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-4e6a4b882b
+label: macrobrevin
+chemical_structure:
+  smiles: CCC(C)C(O)/C=C/C(C)=C/C=C/C(C)CC(C)C(O1)CC(O)C(C)/C=C/C=C/C(C)C/C=C(C)/C(O)/C=C/CC(O)C(C)/C=C/C1=O
+  standard_inchi: InChI=1S/C42H66O6/c1-10-32(5)39(45)25-22-30(3)16-13-17-31(4)27-36(9)41-28-40(46)33(6)18-12-11-15-29(2)21-23-34(7)37(43)19-14-20-38(44)35(8)24-26-42(47)48-41/h11-19,22-26,29,31-33,35-41,43-46H,10,20-21,27-28H2,1-9H3/b15-11+,17-13+,18-12+,19-14+,25-22+,26-24+,30-16+,34-23+
+  standard_inchi_key: HIQQTBOXDUIOIH-NYWBANMMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001470
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1736290
+  taxon_label: Brevibacillus sp. Leaf182
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001470
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:30038309
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001470 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001470
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1736290
+  organism_label: Brevibacillus sp. Leaf182
+  evidence:
+  - reference: PMID:30038309
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001470 entry version 5; citation taken from the entry level
+  genome_accession: genbank:LMPN02000017.1
+  locus_from: 223174
+  locus_to: 318348
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001470
+  source_label: macrobrevin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4e6a4b882b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

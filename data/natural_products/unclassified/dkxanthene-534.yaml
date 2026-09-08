@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-f4453008bb
+label: dkxanthene 534
+chemical_structure:
+  smiles: C[C@@H]1[C@H](N=C(O1)/C=C/C2=CC=CN2)/C=C(\C)/C=C/C=C/C=C/C=C/C=C(\C)/C(=O)NC(C(C(=O)N)O)C(=O)O
+  standard_inchi: InChI=1S/C29H34N4O6/c1-19(18-23-21(3)39-24(32-23)16-15-22-14-11-17-31-22)12-9-7-5-4-6-8-10-13-20(2)28(36)33-25(29(37)38)26(34)27(30)35/h4-18,21,23,25-26,31,34H,1-3H3,(H2,30,35)(H,33,36)(H,37,38)/b6-4+,7-5+,10-8+,12-9+,16-15+,19-18+,20-13+/t21-,23-,25?,26?/m1/s1
+  standard_inchi_key: FUDJQSGQMGPRDW-MQXFELJLSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000986
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Peptide alkaloids
+  - Linear polyketides
+  class_results:
+  - DKXanthenes and derivatives
+  - Simple amide alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:378806
+  taxon_label: Stigmatella aurantiaca DW4/3-1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000986
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18721748
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000986 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000986
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:378806
+  organism_label: Stigmatella aurantiaca DW4/3-1
+  evidence:
+  - reference: PMID:18721748
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000986 entry version 5; citation taken from the entry level
+  genome_accession: genbank:BN001209.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000986
+  source_label: dkxanthene 534
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f4453008bb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

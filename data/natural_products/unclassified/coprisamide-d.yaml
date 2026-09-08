@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-cd9b189a1b
+label: coprisamide D
+chemical_structure:
+  smiles: CC(C)C/C=C/C=C/C1=CC=CC=C1/C=C/C(=O)N[C@H](C)C(=O)N[C@@H]1COC(=O)[C@H]([C@H](C)C(=O)O)NC(=O)[C@H](CNC(=O)[C@@H](N)C(C)C)NC(=O)[C@H](C(C)C)NC(=O)[C@@H](CC(C)C)NC1=O
+  standard_inchi: InChI=1S/C47H70N8O11/c1-25(2)16-12-11-13-17-31-18-14-15-19-32(31)20-21-36(56)50-30(10)40(57)53-35-24-66-47(65)39(29(9)46(63)64)55-42(59)34(23-49-44(61)37(48)27(5)6)52-45(62)38(28(7)8)54-41(58)33(22-26(3)4)51-43(35)60/h11-15,17-21,25-30,33-35,37-39H,16,22-24,48H2,1-10H3,(H,49,61)(H,50,56)(H,51,60)(H,52,62)(H,53,57)(H,54,58)(H,55,59)(H,63,64)/b12-11+,17-13+,21-20+/t29-,30+,33+,34-,35+,37-,38-,39-/m0/s1
+  standard_inchi_key: JMSMUKSEAVWMLS-DILUDIFQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002378
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033319
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002378
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:33497210
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002378 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002378
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:33497210
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002378 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT813120.1
+  locus_from: 1
+  locus_to: 41818
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002378
+  source_label: coprisamide D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-cd9b189a1b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-7aff864d10
+label: nogalamycin
+chemical_structure:
+  smiles: CO[C@H]1C[C@](C)(O)[C@H](C(=O)OC)C2=C1C(O)=C1C(=O)C3=C(O)C=C4C(O[C@@H]5O[C@@]4(C)[C@H](O)[C@H]([C@@H]5O)N(C)C)=C3C(=O)C1=C2
+  standard_inchi: InChI=1S/C30H33NO12/c1-29(39)9-14(40-5)15-10(19(29)27(38)41-6)7-11-16(22(15)34)23(35)17-13(32)8-12-25(18(17)21(11)33)42-28-24(36)20(31(3)4)26(37)30(12,2)43-28/h7-8,14,19-20,24,26,28,32,34,36-37,39H,9H2,1-6H3/t14-,19-,20-,24-,26+,28+,29-,30+/m0/s1
+  standard_inchi_key: HXCSJGHKDZKLKV-KCTIBYJUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000249
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthracyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA07304
+- pubchem:5289019
+producer_organisms:
+- taxon_id: NCBITaxon:38314
+  taxon_label: Streptomyces nogalater
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000249
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:8668120
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000249 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000249
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:38314
+  organism_label: Streptomyces nogalater
+  evidence:
+  - reference: PMID:8668120
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000249 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF323753.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000249
+  source_label: nogalamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7aff864d10
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

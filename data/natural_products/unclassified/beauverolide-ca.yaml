@@ -1,0 +1,80 @@
+identifier: naturalproductmech:mibig-cf747c2501
+label: beauverolide Ca
+chemical_structure:
+  smiles: CCCCCC[C@H]([C@@H]1CC(N[C@@H](CC2=CC=CC=C2)C(N[C@@H](CC3=CC=CC=C3)C(N[C@H]([C@@H](CC)C)C(O1)=O)=O)=O)=O)C
+  standard_inchi: InChI=1S/C35H49N3O5/c1-5-7-8-11-16-25(4)30-23-31(39)36-28(21-26-17-12-9-13-18-26)33(40)37-29(22-27-19-14-10-15-20-27)34(41)38-32(24(3)6-2)35(42)43-30/h9-10,12-15,17-20,24-25,28-30,32H,5-8,11,16,21-23H2,1-4H3,(H,36,39)(H,37,40)(H,38,41)/t24-,25-,28+,29+,30+,32-/m1/s1
+  standard_inchi_key: WBVNIXQEIJHNJC-YRLSNRNNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002203
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+- OTHER
+compound_classes:
+- Lipopeptide
+- Macrocyclic
+producer_organisms:
+- taxon_id: NCBITaxon:655819
+  taxon_label: Beauveria bassiana ARSEF 2860
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002203
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1128/msphere.00667-20
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002203 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002203
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:655819
+  organism_label: Beauveria bassiana ARSEF 2860
+  evidence:
+  - reference: DOI:10.1128/msphere.00667-20
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002203 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:JH725181.1
+  locus_from: 140202
+  locus_to: 173968
+  bgc_class:
+  - NRPS
+  - PKS
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002203
+  source_label: beauverolide Ca
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-cf747c2501
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

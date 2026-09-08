@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-2116a58d54
+label: pristinin A3
+chemical_structure:
+  smiles: C=C1NC(=O)C(NC(=O)C(C)NC(=O)C(NC(=O)C(C)NC(=O)C(C)NC(=O)C(C)NC(=O)C2CSC(C)C(N(C)C)C(=O)N/C(=C\C)C(=O)C3CCCC3C(=O)NC(C(C)C)C(=O)N2)C(C)C)CSCC(C(=O)NC(C)C(=O)NC(C)C(=O)NC(C)C(=O)NC(C)C(=O)NC(C)C(=O)NC(C)C(=O)NC(C(=O)NC(C)C(=O)NCC(=O)NC(C)C(=O)NC2C(=O)NC(CC3=CC=C(O)C=C3)C(=O)NC(CCC(=O)O)C(=O)NC(C)C(=O)NCC(=O)N/C=C\SC2C)C(C)CC)NC(=O)C(CC2=C[NH]C3=CC=CC=C23)NC(=O)/C(=C/C)NC1=O
+  standard_inchi: InChI=1S/C122H179N31O33S3/c1-27-55(8)92(120(184)139-57(10)97(161)126-49-88(156)127-58(11)107(171)152-93-70(23)188-44-43-123-87(155)48-125-96(160)56(9)135-112(176)81(41-42-89(157)158)143-113(177)82(145-121(93)185)45-72-37-39-74(154)40-38-72)151-109(173)69(22)134-102(166)62(15)130-99(163)60(13)128-98(162)59(12)129-100(164)61(14)131-103(167)64(17)136-116(180)85-51-187-50-84(115(179)138-66(19)105(169)142-79(29-3)111(175)144-83(114(178)147-85)46-73-47-124-80-36-31-30-33-75(73)80)146-106(170)67(20)140-118(182)90(53(4)5)149-108(172)68(21)133-101(165)63(16)132-104(168)65(18)137-117(181)86-52-189-71(24)94(153(25)26)122(186)141-78(28-2)95(159)76-34-32-35-77(76)110(174)150-91(54(6)7)119(183)148-86/h28-31,33,36-40,43-44,47,53-65,67-71,76-77,81-86,90-94,124,154H,19,27,32,34-35,41-42,45-46,48-52H2,1-18,20-26H3,(H,123,155)(H,125,160)(H,126,161)(H,127,156)(H,128,162)(H,129,164)(H,130,163)(H,131,167)(H,132,168)(H,133,165)(H,134,166)(H,135,176)(H,136,180)(H,137,181)(H,138,179)(H,139,184)(H,140,182)(H,141,186)(H,142,169)(H,143,177)(H,144,175)(H,145,185)(H,146,170)(H,147,178)(H,148,183)(H,149,172)(H,150,174)(H,151,173)(H,152,171)(H,157,158)/b44-43-,78-28-,79-29-
+  standard_inchi_key: XKZLKDYMCFLUDM-BUODZYAESA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002303
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA032995
+producer_organisms:
+- taxon_id: NCBITaxon:38300
+  taxon_label: Streptomyces pristinaespiralis
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002303
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:33351797
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002303 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002303
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:38300
+  organism_label: Streptomyces pristinaespiralis
+  evidence:
+  - reference: PMID:33351797
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002303 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP011340.1
+  locus_from: 4374106
+  locus_to: 4390172
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002303
+  source_label: pristinin A3
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-2116a58d54
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

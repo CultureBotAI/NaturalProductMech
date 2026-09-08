@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-5bee3b54de
+label: tautomycin
+chemical_structure:
+  smiles: C[C@@H]1CC[C@@]2(CC[C@@H]([C@@H](O2)[C@H](C)CC[C@@H]([C@H](C)C(=O)C[C@H]([C@@H]([C@@H](C(C)C)OC(=O)C[C@H](C3=C(C(=O)OC3=O)C)O)OC)O)O)C)O[C@H]1CC[C@H](C)C(=O)C
+  standard_inchi: InChI=1S/C41H66O13/c1-21(2)36(51-34(47)20-31(45)35-27(8)39(48)52-40(35)49)38(50-10)32(46)19-30(44)26(7)29(43)13-11-24(5)37-25(6)16-18-41(54-37)17-15-23(4)33(53-41)14-12-22(3)28(9)42/h21-26,29,31-33,36-38,43,45-46H,11-20H2,1-10H3/t22-,23+,24+,25-,26-,29-,31+,32+,33-,36+,37-,38-,41+/m0/s1
+  standard_inchi_key: RFCWHQNNCOJYTR-QKIDKDKQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000159
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:3034761
+producer_organisms:
+- taxon_id: NCBITaxon:67366
+  taxon_label: Streptomyces spiroverticillatus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000159
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16707708
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000159 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000159
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67366
+  organism_label: Streptomyces spiroverticillatus
+  evidence:
+  - reference: PMID:16707708
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000159 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF990140.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000159
+  source_label: tautomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5bee3b54de
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-ad77698de4
+label: lyngbyatoxin
+chemical_structure:
+  smiles: CC(C)[C@H]1C(=O)N[C@@H](CC2=CNC3=C(C=CC(=C23)N1C)[C@](C)(CCC=C(C)C)C=C)CO
+  standard_inchi: InChI=1S/C27H39N3O2/c1-8-27(6,13-9-10-17(2)3)21-11-12-22-23-19(15-28-24(21)23)14-20(16-31)29-26(32)25(18(4)5)30(22)7/h8,10-12,15,18,20,25,28,31H,1,9,13-14,16H2,2-7H3,(H,29,32)/t20-,25-,27-/m0/s1
+  standard_inchi_key: KISDGNGREAJPQR-OICBGKIFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000384
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:91706
+- chebi:80050
+producer_organisms:
+- taxon_id: NCBITaxon:158786
+  taxon_label: Lyngbya majuscula
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000384
+  source: MIBIG
+  source_version: '6'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:107586
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000384 entry version 6; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000384
+  entry_version: '6'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:158786
+  organism_label: Lyngbya majuscula
+  evidence:
+  - reference: PMID:107586
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000384 entry version 6; citation taken from the entry level
+  genome_accession: genbank:AY588942.1
+  locus_from: 2740
+  locus_to: 13999
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000384
+  source_label: lyngbyatoxin
+  source_version: '6'
+  minted_identifier: naturalproductmech:mibig-ad77698de4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

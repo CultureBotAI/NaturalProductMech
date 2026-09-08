@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-c12262ec06
+label: diazaquinomycin E
+chemical_structure:
+  smiles: CCCCCC1=CC(=O)NC2=C1C(=O)C3=C(C2=O)NC(=O)C=C3CCCCC
+  standard_inchi: InChI=1S/C22H26N2O4/c1-3-5-7-9-13-11-15(25)23-19-17(13)21(27)18-14(10-8-6-4-2)12-16(26)24-20(18)22(19)28/h11-12H,3-10H2,1-2H3,(H,23,25)(H,24,26)
+  standard_inchi_key: JTXSSZYKSHIXRS-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001850
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:134814868
+producer_organisms:
+- taxon_id: NCBITaxon:1510026
+  taxon_label: Streptomyces sp. F001
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001850
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.3390/md12063574
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001850 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001850
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1510026
+  organism_label: Streptomyces sp. F001
+  evidence:
+  - reference: DOI:10.3390/md12063574
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001850 entry version 4; citation taken from the entry level
+  genome_accession: genbank:QZWF01000007.1
+  locus_from: 257859
+  locus_to: 281361
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001850
+  source_label: diazaquinomycin E
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-c12262ec06
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

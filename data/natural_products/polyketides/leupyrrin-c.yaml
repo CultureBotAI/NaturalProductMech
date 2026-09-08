@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-7d2ed1bf30
+label: Leupyrrin C
+chemical_structure:
+  smiles: C/C/1=C\CC2=CC=C(N2)C3=NC(C(O3)COC(=O)[C@H](CC(=O)OC4C1OC(=O)C4(C)CO)CC(C)C)/C=C/5\C(OC\C5=C(\C)/CCCO)CC(C)C
+  standard_inchi: InChI=1S/C40H56N2O10/c1-22(2)15-26-17-34(45)51-36-35(52-39(47)40(36,7)21-44)25(6)10-11-27-12-13-30(41-27)37-42-31(33(50-37)20-49-38(26)46)18-28-29(24(5)9-8-14-43)19-48-32(28)16-23(3)4/h10,12-13,18,22-23,26,31-33,35-36,41,43-44H,8-9,11,14-17,19-21H2,1-7H3/b25-10+,28-18-,29-24+/t26-,31?,32?,33?,35?,36?,40?/m0/s1
+  standard_inchi_key: XLXHKRNRAZZHCX-OXBRVNNASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000380
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA006074
+producer_organisms:
+- taxon_id: NCBITaxon:56
+  taxon_label: Sorangium cellulosum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000380
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1039/c0mb00240b
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000380 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000380
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:56
+  organism_label: Sorangium cellulosum
+  evidence:
+  - reference: DOI:10.1039/c0mb00240b
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000380 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:HM639990.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000380
+  source_label: Leupyrrin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7d2ed1bf30
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

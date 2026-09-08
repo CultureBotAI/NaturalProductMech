@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-3d3752f09e
+label: myxalamid
+chemical_structure:
+  smiles: C[C@@H](CO)NC(=O)/C(=C/C=C/C=C\C=C\C(=C\[C@@H](C)[C@H](/C(=C/C(C)C)/C)O)\C)/C
+  standard_inchi: InChI=1S/C25H39NO3/c1-18(2)15-21(5)24(28)22(6)16-19(3)13-11-9-8-10-12-14-20(4)25(29)26-23(7)17-27/h8-16,18,22-24,27-28H,17H2,1-7H3,(H,26,29)/b9-8-,12-10+,13-11+,19-16+,20-14+,21-15+/t22-,23+,24+/m1/s1
+  standard_inchi_key: QQZJCNSHAVQKIC-DDKJXSSXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001022
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:5282085
+producer_organisms:
+- taxon_id: NCBITaxon:41
+  taxon_label: Stigmatella aurantiaca
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001022
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:11182319
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001022 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001022
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:41
+  organism_label: Stigmatella aurantiaca
+  evidence:
+  - reference: PMID:11182319
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001022 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF319998.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001022
+  source_label: myxalamid
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3d3752f09e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

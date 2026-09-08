@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-7da0aed3a0
+label: necroxime D
+chemical_structure:
+  smiles: CON=C/C=C\C(=O)NC=CC[C@H]1C[C@@H](O)[C@H]2O[C@H]2[C@@H](O)C=CC2=C(C(=O)O1)C(O)=CC=C2
+  standard_inchi: InChI=1S/C23H26N2O8/c1-31-25-12-4-8-19(29)24-11-3-6-15-13-18(28)22-21(33-22)17(27)10-9-14-5-2-7-16(26)20(14)23(30)32-15/h2-5,7-12,15,17-18,21-22,26-28H,6,13H2,1H3,(H,24,29)/b8-4-,10-9?,11-3?,25-12?/t15-,17-,18+,21-,22+/m0/s1
+  standard_inchi_key: WMEKNEKHVSSIHM-ZNNZSDNQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002050
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Zearalenones
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA031546
+producer_organisms:
+- taxon_id: NCBITaxon:2713619
+  taxon_label: Burkholderia sp. B8(2020)
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002050
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1002/anie.201916007
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002050 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002050
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2713619
+  organism_label: Burkholderia sp. B8(2020)
+  evidence:
+  - reference: DOI:10.1002/anie.201916007
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002050 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MN734804.1
+  locus_from: 20001
+  locus_to: 86009
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002050
+  source_label: necroxime D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7da0aed3a0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

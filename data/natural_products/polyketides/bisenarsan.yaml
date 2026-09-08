@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-f66b310326
+label: Bisenarsan
+chemical_structure:
+  smiles: C/C(C(OCC[As](O)(O)=O)=O)=C/C(C)CC(C)CCC
+  standard_inchi: InChI=1S/C14H27AsO5/c1-5-6-11(2)9-12(3)10-13(4)14(16)20-8-7-15(17,18)19/h10-12H,5-9H2,1-4H3,(H2,17,18,19)/b13-10-
+  standard_inchi_key: XRHDWTJKPDPLFR-RAXLEYEMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001283
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1200984
+  taxon_label: Streptomyces lividans 1326
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001283
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/jacs.3c04978
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001283 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001283
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1200984
+  organism_label: Streptomyces lividans 1326
+  evidence:
+  - reference: DOI:10.1021/jacs.3c04978
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001283 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:NZ_CM001889.1
+  locus_from: 1080808
+  locus_to: 1113162
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001283
+  source_label: Bisenarsan
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f66b310326
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

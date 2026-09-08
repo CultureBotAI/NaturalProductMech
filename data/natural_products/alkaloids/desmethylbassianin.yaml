@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-2439f38772
+label: desmethylbassianin
+chemical_structure:
+  smiles: OC1=CC=C(C2=CN(O)C(C(C(/C=C/C=C/C=C/[C@H](C)CC)=O)=C2O)=O)C=C1
+  standard_inchi: InChI=1S/C22H23NO5/c1-3-15(2)8-6-4-5-7-9-19(25)20-21(26)18(14-23(28)22(20)27)16-10-12-17(24)13-11-16/h4-15,24,26,28H,3H2,1-2H3/b5-4+,8-6+,9-7+/t15-/m1/s1
+  standard_inchi_key: GPKLYJPPSDXTEH-OYOGBVJSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001136
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Nicotinic acid alkaloids
+  class_results:
+  - Pyridine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:91820224
+producer_organisms:
+- taxon_id: NCBITaxon:176275
+  taxon_label: Beauveria bassiana
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001136
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:21899331
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001136 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001136
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:176275
+  organism_label: Beauveria bassiana
+  evidence:
+  - reference: PMID:21899331
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001136 entry version 4; citation taken from the entry level
+  genome_accession: genbank:HM243222.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001136
+  source_label: desmethylbassianin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-2439f38772
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-867d2111b7
+label: squalestatin S1
+chemical_structure:
+  smiles: CC[C@H](C)C[C@H](C)\C=C\C(=O)O[C@@H]1C[C@]2(CCC(=C)[C@@H](OC(C)=O)[C@H](C)CC3=CC=CC=C3)O[C@@]1(C(O)=O)[C@@](O)([C@H](O2)C(O)=O)C(O)=O
+  standard_inchi: InChI=1S/C35H46O13/c1-7-20(2)17-21(3)13-14-27(37)46-26-19-33(47-29(30(38)39)34(44,31(40)41)35(26,48-33)32(42)43)16-15-22(4)28(45-24(6)36)23(5)18-25-11-9-8-10-12-25/h8-14,20-21,23,26,28-29,44H,4,7,15-19H2,1-3,5-6H3,(H,38,39)(H,40,41)(H,42,43)/b14-13+/t20-,21+,23+,26+,28+,29+,33-,34+,35-/m0/s1
+  standard_inchi_key: KKQOCSPYLTUDES-KVBVMKTNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001339
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA011630
+producer_organisms:
+- taxon_id: NCBITaxon:1828523
+  taxon_label: Phoma sp. MF5453
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001339
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.
+    That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the
+    taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1039/c6cc02130a
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001339 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001339
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1828523
+  organism_label: Phoma sp. MF5453
+  evidence:
+  - reference: DOI:10.1039/c6cc02130a
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001339 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KU946987.1
+  locus_from: 1
+  locus_to: 69700
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001339
+  source_label: squalestatin S1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-867d2111b7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

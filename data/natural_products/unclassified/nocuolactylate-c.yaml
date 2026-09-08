@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-8b7d98a72d
+label: Nocuolactylate C
+chemical_structure:
+  smiles: CCCCCCCC/C=C/CC(=O)O[C@@H](C)C(=O)OCCC(=O)N1N=C(CCCCC)C[C@@H](CCCCC)O1
+  standard_inchi: InChI=1S/C31H54N2O6/c1-5-8-11-12-13-14-15-16-19-22-30(35)38-26(4)31(36)37-24-23-29(34)33-32-27(20-17-9-6-2)25-28(39-33)21-18-10-7-3/h16,19,26,28H,5-15,17-18,20-25H2,1-4H3/b19-16+/t26-,28+/m0/s1
+  standard_inchi_key: DPCLMFFAHQYQQZ-UQFUQSBQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002597
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Fatty acid derivate
+xrefs:
+- npatlas:NPA033257
+producer_organisms:
+- taxon_id: NCBITaxon:2777965
+  taxon_label: Nodularia sp. LEGE 06071
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002597
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1002/anie.202015105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002597 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002597
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2777965
+  organism_label: Nodularia sp. LEGE 06071
+  evidence:
+  - reference: DOI:10.1002/anie.202015105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002597 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MW071172.1
+  locus_from: 1
+  locus_to: 36795
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002597
+  source_label: Nocuolactylate C
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-8b7d98a72d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

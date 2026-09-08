@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-a9b484b3e1
+label: lactocin S
+chemical_structure:
+  smiles: CSCCC(NC(=O)C(C)NC(=O)C(NC(=O)C(C)NC(=O)C(NC(=O)C(C)NC(=O)C(C)NC(=O)C(CC(C)C)NC(=O)C(NC(=O)C1CCCN1C(=O)C(\NC(=O)C(C)=O)=C/C)C(C)C)C(C)C)C(C)C)C(=O)NC(CCC(O)=O)C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)N1CCCC1C(=O)NC(C(C)O)C(=O)NC(C)C(=O)NC(C)C(=O)NC(C(C)C)C(=O)NC(CC(C)C)C(=O)NC(CC1=CC=C(O)C=C1)C(=O)NC1CSCC(NC(=O)CNC(=O)C(C)NC(=O)C(NC(=O)C(CC(O)=O)NC1=O)C(C)C)C(=O)NC(CC1=CC=CC=C1)C(=O)NC(CCCCN)C(=O)NC(CC1=CC=C(O)C=C1)C(=O)NC1CSCC(NC(=O)C(CC2=CNC=N2)NC(=O)C(CC2=CNC=N2)NC(=O)C(CCCCN)NC(=O)C(C)NC1=O)C(O)=O
+  standard_inchi: InChI=1S/C173H264N42O46S3/c1-31-108(190-146(233)100(29)217)171(258)214-60-39-45-127(214)163(250)212-136(90(18)19)169(256)202-113(63-82(2)3)151(238)183-92(21)139(226)181-96(25)143(230)208-133(87(12)13)166(253)187-98(27)145(232)209-132(86(10)11)165(252)186-95(24)142(229)192-112(57-62-262-30)150(237)194-111(55-56-130(221)222)149(236)195-114(64-83(4)5)153(240)204-122(66-85(8)9)172(259)215-61-40-46-128(215)164(251)213-137(99(28)216)170(257)188-93(22)140(227)182-97(26)144(231)210-135(89(16)17)168(255)203-115(65-84(6)7)152(239)197-118(69-103-49-53-107(219)54-50-103)156(243)206-125-78-263-76-123(189-129(220)75-178-138(225)91(20)185-167(254)134(88(14)15)211-159(246)121(72-131(223)224)201-162(125)249)161(248)198-116(67-101-41-33-32-34-42-101)154(241)193-110(44-36-38-59-175)148(235)196-117(68-102-47-51-106(218)52-48-102)155(242)205-124-77-264-79-126(173(260)261)207-158(245)120(71-105-74-177-81-180-105)200-157(244)119(70-104-73-176-80-179-104)199-147(234)109(43-35-37-58-174)191-141(228)94(23)184-160(124)247/h31-34,41-42,47-54,73-74,80-99,109-128,132-137,216,218-219H,35-40,43-46,55-72,75-79,174-175H2,1-30H3,(H,176,179)(H,177,180)(H,178,225)(H,181,226)(H,182,227)(H,183,238)(H,184,247)(H,185,254)(H,186,252)(H,187,253)(H,188,257)(H,189,220)(H,190,233)(H,191,228)(H,192,229)(H,193,241)(H,194,237)(H,195,236)(H,196,235)(H,197,239)(H,198,248)(H,199,234)(H,200,244)(H,201,249)(H,202,256)(H,203,255)(H,204,240)(H,205,242)(H,206,243)(H,207,245)(H,208,230)(H,209,232)(H,210,231)(H,211,246)(H,212,250)(H,213,251)(H,221,222)(H,223,224)(H,260,261)/b108-31+
+  standard_inchi_key: CIZDQDSLIGFEDH-WPKKHXINSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000523
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA09670
+producer_organisms:
+- taxon_id: NCBITaxon:1599
+  taxon_label: Lactobacillus sakei
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000523
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:7521995
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000523 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000523
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1599
+  organism_label: Lactobacillus sakei
+  evidence:
+  - reference: PMID:7521995
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000523 entry version 3; citation taken from the entry level
+  genome_accession: genbank:Z54312.2
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000523
+  source_label: lactocin S
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-a9b484b3e1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

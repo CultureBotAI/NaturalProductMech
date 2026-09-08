@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-d02aa1e8bc
+label: caryoynencin
+chemical_structure:
+  smiles: C#CC#CC#CC#C/C=C/C=C/C(CCCCC(=O)O)O
+  standard_inchi: InChI=1S/C18H16O3/c1-2-3-4-5-6-7-8-9-10-11-14-17(19)15-12-13-16-18(20)21/h1,9-11,14,17,19H,12-13,15-16H2,(H,20,21)/b10-9+,14-11+
+  standard_inchi_key: GOOGOKNSXZDSND-QDCWQMMGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000892
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty Acids and Conjugates
+  class_results:
+  - Unsaturated fatty acids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:6474912
+producer_organisms:
+- taxon_id: NCBITaxon:999541
+  taxon_label: Burkholderia gladioli BSR3
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000892
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24898429
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000892 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000892
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:999541
+  organism_label: Burkholderia gladioli BSR3
+  evidence:
+  - reference: PMID:24898429
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000892 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP002599.1
+  locus_from: 2260844
+  locus_to: 2274030
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000892
+  source_label: caryoynencin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-d02aa1e8bc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

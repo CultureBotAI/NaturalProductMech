@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-88c999f5e5
+label: A-90289 B
+chemical_structure:
+  smiles: COC1C(C)OC(OC(=O)CC(C)CC(=O)OC(CCCCCCCCCCC(C)C)CC(=O)OC2CN(C)C(C(OC3OC(CN)C(O)C3O)C3OC(C(OS(O)(=O)=O)C3O)N3C=CC(=O)NC3=O)C(=O)N(C)C2C(O)=O)C(OC)C1OC
+  standard_inchi: InChI=1S/C53H87N5O25S/c1-27(2)18-16-14-12-10-11-13-15-17-19-30(77-34(60)22-28(3)23-35(61)80-52-47(75-9)46(74-8)42(73-7)29(4)76-52)24-36(62)78-32-26-56(5)38(48(66)57(6)37(32)50(67)68)43(82-51-40(64)39(63)31(25-54)79-51)44-41(65)45(83-84(70,71)72)49(81-44)58-21-20-33(59)55-53(58)69/h20-21,27-32,37-47,49,51-52,63-65H,10-19,22-26,54H2,1-9H3,(H,67,68)(H,55,59,69)(H,70,71,72)
+  standard_inchi_key: ICPWKXYVIFCCOW-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000872
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Pyrimidine nucleos(t)ides
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA013934
+producer_organisms:
+- taxon_id: NCBITaxon:689687
+  taxon_label: Streptomyces sp. SANK 60405
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000872
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20043306
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000872 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000872
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:689687
+  organism_label: Streptomyces sp. SANK 60405
+  evidence:
+  - reference: PMID:20043306
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000872 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB530986.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000872
+  source_label: A-90289 B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-88c999f5e5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

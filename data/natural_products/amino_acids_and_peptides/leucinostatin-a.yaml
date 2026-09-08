@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-5ff806da31
+label: leucinostatin A
+chemical_structure:
+  smiles: CCC(C)/C=C/C(=O)N1CC(CC1C(=O)NC(CC(C)CC(CC(=O)CC)O)C(=O)NC(C(C(C)C)O)C(=O)NC(C)(C)C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)NC(C)(C)C(=O)NC(C)(C)C(=O)NCCC(=O)NC(C)CN(C)C)C
+  standard_inchi: InChI=1S/C62H111N11O13/c1-21-38(9)23-24-49(77)73-33-40(11)31-47(73)55(82)66-46(30-39(10)29-43(75)32-42(74)22-2)53(80)68-50(51(78)37(7)8)56(83)70-61(15,16)58(85)67-44(27-35(3)4)52(79)65-45(28-36(5)6)54(81)69-62(17,18)59(86)71-60(13,14)57(84)63-26-25-48(76)64-41(12)34-72(19)20/h23-24,35-41,43-47,50-51,75,78H,21-22,25-34H2,1-20H3,(H,63,84)(H,64,76)(H,65,79)(H,66,82)(H,67,85)(H,68,80)(H,69,81)(H,70,83)(H,71,86)/b24-23+
+  standard_inchi_key: FOAIGCPESMNWQP-WCWDXBQESA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001358
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Peptaibols
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:5477807
+producer_organisms:
+- taxon_id: NCBITaxon:33203
+  taxon_label: Purpureocillium lilacinum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001358
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.3390/molecules25215077
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001358 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001358
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33203
+  organism_label: Purpureocillium lilacinum
+  evidence:
+  - reference: DOI:10.3390/molecules25215077
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001358 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:LSBH01000002.1
+  locus_from: 1034990
+  locus_to: 1134564
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001358
+  source_label: leucinostatin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-5ff806da31
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

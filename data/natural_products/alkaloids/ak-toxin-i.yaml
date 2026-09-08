@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-1a4db46ddd
+label: AK-toxin I
+chemical_structure:
+  smiles: CC(C1=CC=CC=C1)C(C(=O)OC(/C=C/C=C\C=C\C(=O)O)C2(CO2)C)NC(=O)C
+  standard_inchi: InChI=1S/C23H27NO6/c1-16(18-11-7-6-8-12-18)21(24-17(2)25)22(28)30-19(23(3)15-29-23)13-9-4-5-10-14-20(26)27/h4-14,16,19,21H,15H2,1-3H3,(H,24,25)(H,26,27)/b5-4-,13-9+,14-10+
+  standard_inchi_key: HGSOUJPIFSDBKJ-OUYMFVGOSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001262
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Simple amide alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA08756
+producer_organisms:
+- taxon_id: NCBITaxon:5599
+  taxon_label: Alternaria alternata
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001262
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24611558
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001262 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001262
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5599
+  organism_label: Alternaria alternata
+  evidence:
+  - reference: PMID:24611558
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001262 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AB872924.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001262
+  source_label: AK-toxin I
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1a4db46ddd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

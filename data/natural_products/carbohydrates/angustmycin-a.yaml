@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-f4c861024c
+label: angustmycin A
+chemical_structure:
+  smiles: C=C1O[C@@](CO)(N2C=NC3=C(N)N=CN=C32)[C@H](O)[C@@H]1O
+  standard_inchi: InChI=1S/C11H13N5O4/c1-5-7(18)8(19)11(2-17,20-5)16-4-15-6-9(12)13-3-14-10(6)16/h3-4,7-8,17-19H,1-2H2,(H2,12,13,14)/t7-,8-,11-/m1/s1
+  standard_inchi_key: UZSSGAOAYPICBZ-SOCHQFKDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002407
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Purine nucleos(t)ides
+  is_glycoside: false
+bgc_class:
+- SACCHARIDE
+- OTHER
+xrefs:
+- npatlas:NPA033066
+producer_organisms:
+- taxon_id: NCBITaxon:285578
+  taxon_label: Streptomyces angustmyceticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002407
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:34404922
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002407 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002407
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:285578
+  organism_label: Streptomyces angustmyceticus
+  evidence:
+  - reference: PMID:34404922
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002407 entry version 3; citation taken from the entry level
+  genome_accession: genbank:BLAG01000004.1
+  locus_from: 872452
+  locus_to: 878589
+  bgc_class:
+  - SACCHARIDE
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002407
+  source_label: angustmycin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f4c861024c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

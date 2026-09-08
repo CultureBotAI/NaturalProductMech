@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-81f3b94459
+label: naphthyridinomycin
+chemical_structure:
+  smiles: COC1=C(C)C(=O)C2=C(C(CO)N3C(O)C4CC5C6OCCN6C2C3C5N4C)C1=O
+  standard_inchi: InChI=1S/C21H27N3O6/c1-8-17(26)13-12(18(27)19(8)29-3)11(7-25)24-16-14-9(6-10(20(24)28)22(14)2)21-23(15(13)16)4-5-30-21/h9-11,14-16,20-21,25,28H,4-7H2,1-3H3
+  standard_inchi_key: SXDWNOFDSOXRRM-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000394
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tyrosine alkaloids
+  class_results:
+  - Tetrahydroisoquinoline alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA05217
+- pubchem:3085238
+producer_organisms:
+- taxon_id: NCBITaxon:68232
+  taxon_label: Streptomyces lusitanus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000394
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23841701
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000394 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000394
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68232
+  organism_label: Streptomyces lusitanus
+  evidence:
+  - reference: PMID:23841701
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000394 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JQ996389.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000394
+  source_label: naphthyridinomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-81f3b94459
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

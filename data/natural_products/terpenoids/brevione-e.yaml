@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-6295b1addd
+label: brevione E
+chemical_structure:
+  smiles: CC1=C[C@](O2)([H])[C@@]3([H])[C@]4([C@]15[C@@](C/C(O5)=C(C)\C(C)=O)([H])O[C@H]4OC(C)=O)CC[C@]6([H])[C@]3(C)[C@]2([H])CC(C=C6C)=O
+  standard_inchi: InChI=1S/C28H34O7/c1-13-9-18(31)11-22-26(6)19(13)7-8-27-24(26)21(33-22)10-14(2)28(27)23(34-25(27)32-17(5)30)12-20(35-28)15(3)16(4)29/h9-10,19,21-25H,7-8,11-12H2,1-6H3/b20-15+/t19-,21+,22-,23-,24+,25+,26+,27+,28+/m0/s1
+  standard_inchi_key: JNDQPDZQDHPEAE-WTAVCZOCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002759
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Breviane diterpenoids
+  is_glycoside: true
+bgc_class:
+- TERPENE
+- PKS
+xrefs:
+- npatlas:NPA019168
+- pubchem:101092881
+producer_organisms:
+- taxon_id: NCBITaxon:293381
+  taxon_label: Penicillium bialowiezense CBS 227.28
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002759
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1002/anie.202210938
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002759 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002759
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:293381
+  organism_label: Penicillium bialowiezense CBS 227.28
+  evidence:
+  - reference: DOI:10.1002/anie.202210938
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002759 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LC719581.1
+  locus_from: 1
+  locus_to: 41588
+  bgc_class:
+  - TERPENE
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002759
+  source_label: brevione E
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-6295b1addd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-3a7c795f88
+label: cystomanamide B
+chemical_structure:
+  smiles: CC(C)CCCCC[C@@H](N)CC(=O)N[C@H](CC(N)=O)C(=O)N[C@@H]([C@@H](O)C(N)=O)C(=O)N[C@H]([C@@H](O)C1=CC=CC=C1)C(=O)OC[C@@H](O)C(=O)N[C@H](CC1=CC=C(O)C=C1)C(O)=O
+  standard_inchi: InChI=1S/C40H57N7O14/c1-21(2)9-5-3-8-12-24(41)18-30(51)44-26(19-29(42)50)36(55)46-31(34(53)35(43)54)38(57)47-32(33(52)23-10-6-4-7-11-23)40(60)61-20-28(49)37(56)45-27(39(58)59)17-22-13-15-25(48)16-14-22/h4,6-7,10-11,13-16,21,24,26-28,31-34,48-49,52-53H,3,5,8-9,12,17-20,41H2,1-2H3,(H2,42,50)(H2,43,54)(H,44,51)(H,45,56)(H,46,55)(H,47,57)(H,58,59)/t24-,26-,27-,28-,31+,32-,33+,34-/m1/s1
+  standard_inchi_key: XVVKSDYJVOKNQB-YUSBRPJASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000335
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA09617
+producer_organisms:
+- taxon_id: NCBITaxon:43
+  taxon_label: Cystobacter fuscus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000335
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24735013
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000335 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000335
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:43
+  organism_label: Cystobacter fuscus
+  evidence:
+  - reference: PMID:24735013
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000335 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KJ710244.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000335
+  source_label: cystomanamide B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-3a7c795f88
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

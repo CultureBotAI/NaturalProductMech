@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-f2f849b16f
+label: fervenulin
+chemical_structure:
+  smiles: CN1C2=C(C(=O)N(C1=O)C)N=CN=N2
+  standard_inchi: InChI=1S/C7H7N5O2/c1-11-5-4(8-3-9-10-5)6(13)12(2)7(11)14/h3H,1-2H3
+  standard_inchi_key: RRTKVYSLIGQWCO-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001972
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Pseudoalkaloids
+  class_results:
+  - pteridine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:249646
+producer_organisms:
+- taxon_id: NCBITaxon:66424
+  taxon_label: Streptomyces hiroshimensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001972
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:30565634
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001972 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001972
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:66424
+  organism_label: Streptomyces hiroshimensis
+  evidence:
+  - reference: PMID:30565634
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001972 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MK256951.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001972
+  source_label: fervenulin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-f2f849b16f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

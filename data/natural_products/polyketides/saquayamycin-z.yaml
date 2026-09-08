@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-12e78217a1
+label: saquayamycin Z
+chemical_structure:
+  smiles: C[C@@H]1O[C@H](CC[C@@H]1O)O[C@@H]1C[C@H](O[C@H]2CC[C@H](O[C@@H]3C[C@H](O[C@H]4CC[C@H](O[C@@]5(C)CC(=O)[C@]6(O)C7=C(OC8=C(C=CC([C@H]9C[C@@H](O)[C@H](O[C@H]%10C[C@H](O)C(O[C@H]%11CC[C@H](O[C@@H]%12O[C@@H](C)C(=O)C=C%12)[C@H](C)O%11)[C@H](C)O%10)[C@@H](C)O9)=C8O)C7=O)C=C[C@]6(O)C5)O[C@H]4C)O[C@H](C)[C@H]3O)O[C@H]2C)O[C@H](C)[C@H]1O
+  standard_inchi: InChI=1S/C72H102O29/c1-31-42(73)13-18-54(85-31)93-46-16-21-57(88-33(46)3)99-68-39(9)92-59(26-45(68)76)100-67-38(8)84-50(25-44(67)75)40-11-12-41-65(80)62-49(98-69(41)66(40)81)23-24-71(82)30-70(10,29-53(77)72(62,71)83)101-58-22-17-48(35(5)89-58)95-61-28-52(64(79)37(7)91-61)97-56-20-15-47(34(4)87-56)94-60-27-51(63(78)36(6)90-60)96-55-19-14-43(74)32(2)86-55/h11-13,18,23-24,31-39,43-48,50-52,54-61,63-64,67-68,74-76,78-79,81-83H,14-17,19-22,25-30H2,1-10H3/t31-,32-,33-,34-,35-,36+,37+,38+,39-,43-,44+,45-,46-,47-,48-,50+,51+,52+,54-,55-,56-,57-,58-,59-,60-,61-,63+,64+,67+,68?,70-,71-,72-/m0/s1
+  standard_inchi_key: HXKIEUQACANSNK-SBCHTQRNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000267
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+xrefs:
+- npatlas:NPA02196
+producer_organisms:
+- taxon_id: NCBITaxon:428986
+  taxon_label: Micromonospora sp. Tu 6368
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000267
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19384899
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000267 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000267
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:428986
+  organism_label: Micromonospora sp. Tu 6368
+  evidence:
+  - reference: PMID:19384899
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000267 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FJ670504.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000267
+  source_label: saquayamycin Z
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-12e78217a1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

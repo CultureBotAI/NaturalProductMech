@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-ff0efc67b3
+label: peramine
+chemical_structure:
+  smiles: CN1C(=CN2C=CC=C2C1=O)CCCN=C(N)N
+  standard_inchi: InChI=1S/C12H17N5O/c1-16-9(4-2-6-15-12(13)14)8-17-7-3-5-10(17)11(16)18/h3,5,7-8H,2,4,6H2,1H3,(H4,13,14,15)
+  standard_inchi_key: GQWWGRUJOCIUKI-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002164
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:114748
+producer_organisms:
+- taxon_id: NCBITaxon:35717
+  taxon_label: Epichloe festucae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002164
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16091042
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002164 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002164
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:35717
+  organism_label: Epichloe festucae
+  evidence:
+  - reference: PMID:16091042
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002164 entry version 2; citation taken from the entry level
+  genome_accession: genbank:AB205145.1
+  locus_from: 14489
+  locus_to: 22810
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002164
+  source_label: peramine
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-ff0efc67b3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

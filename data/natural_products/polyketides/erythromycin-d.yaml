@@ -1,0 +1,78 @@
+identifier: naturalproductmech:mibig-b4de4d24b0
+label: erythromycin D
+chemical_structure:
+  smiles: CC[C@@H]1[C@@H]([C@@H]([C@H](C(=O)[C@@H](C[C@@]([C@@H]([C@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2C[C@@]([C@H]([C@@H](O2)C)O)(C)O)C)O[C@H]3[C@@H]([C@H](C[C@H](O3)C)N(C)C)O)(C)O)C)C)O)C
+  standard_inchi: InChI=1S/C36H65NO12/c1-13-25-19(4)28(39)20(5)27(38)17(2)15-36(10,44)32(49-34-29(40)24(37(11)12)14-18(3)45-34)21(6)30(22(7)33(42)47-25)48-26-16-35(9,43)31(41)23(8)46-26/h17-26,28-32,34,39-41,43-44H,13-16H2,1-12H3/t17-,18-,19+,20+,21+,22-,23+,24+,25-,26+,28+,29-,30+,31+,32-,34+,35-,36-/m1/s1
+  standard_inchi_key: CLQUUOKNEOQBSW-KEGKUKQHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000055
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Erythromycins
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+xrefs:
+- pubchem:24755489
+- chebi:28331
+producer_organisms:
+- taxon_id: NCBITaxon:405948
+  taxon_label: Saccharopolyspora erythraea NRRL 2338
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000055
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
+    expression correlated with compound production. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:11336289
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000055 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000055
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:405948
+  organism_label: Saccharopolyspora erythraea NRRL 2338
+  evidence:
+  - reference: PMID:11336289
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000055 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM420293.1
+  locus_from: 778214
+  locus_to: 832825
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000055
+  source_label: erythromycin D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b4de4d24b0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

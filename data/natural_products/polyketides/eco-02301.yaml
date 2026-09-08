@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-c643b6fc7b
+label: ECO-02301
+chemical_structure:
+  smiles: C[C@H](\C=C\CC\C=C\C=C\C=C\C=C\C(=O)NC1=C(O)CCC1=O)C(O)[C@@H](C)C(O)\C=C\C=C\C=C\C=C\C=C\CC(OC1OC(C)C(O)C(O)C1O)C(C)C(=O)CC(O)CC(O)CC(O)\C=C\CC(O)CC(O)CC(O)CC(O)\C=C\CC(O)CC(O)CCCN
+  standard_inchi: InChI=1S/C70H108N2O20/c1-46(27-20-16-12-8-5-6-11-15-19-23-35-64(86)72-65-60(83)36-37-61(65)84)66(87)48(3)59(82)33-21-17-13-9-7-10-14-18-22-34-63(92-70-69(90)68(89)67(88)49(4)91-70)47(2)62(85)45-58(81)44-57(80)42-53(76)31-25-30-52(75)41-56(79)43-55(78)40-51(74)29-24-28-50(73)39-54(77)32-26-38-71/h5-11,13-15,17-25,27,29,31,33,35,46-59,63,66-70,73-83,87-90H,12,16,26,28,30,32,34,36-45,71H2,1-4H3,(H,72,86)/b8-5+,9-7+,11-6+,14-10+,17-13+,19-15+,22-18+,27-20+,29-24+,31-25+,33-21+,35-23+/t46-,47?,48+,49?,50?,51?,52?,53?,54?,55?,56?,57?,58?,59?,63?,66?,67?,68?,69?,70?/m1/s1
+  standard_inchi_key: NLVFTSADLUSKGV-PJVYZREHSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000052
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA03626
+- pubchem:23724554
+producer_organisms:
+- taxon_id: NCBITaxon:255848
+  taxon_label: Streptomyces aizunensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000052
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15844935
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000052 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000052
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:255848
+  organism_label: Streptomyces aizunensis
+  evidence:
+  - reference: PMID:15844935
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000052 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY899214.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000052
+  source_label: ECO-02301
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c643b6fc7b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,114 @@
+identifier: naturalproductmech:mibig-69efeec0be
+label: pentalenolactone
+chemical_structure:
+  smiles: '[H][C@@]12COC(=O)[C@]3(CO3)[C@@]11C=C(C)[C@@H](C)[C@@]1([H])C=C2C(O)=O'
+  standard_inchi: InChI=1S/C15H16O5/c1-7-4-14-10(8(7)2)3-9(12(16)17)11(14)5-19-13(18)15(14)6-20-15/h3-4,8,10-11H,5-6H2,1-2H3,(H,16,17)/t8-,10-,11+,14-,15-/m1/s1
+  standard_inchi_key: NUPNVWUYFVEAIT-UJJBCWTCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000653
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Pentalenane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+compound_classes:
+- Higher terpenoid
+- Lactone
+xrefs:
+- pubchem:24199350
+- chebi:70816
+- npatlas:NPA014531
+producer_organisms:
+- taxon_id: NCBITaxon:29301
+  taxon_label: Streptomyces arenae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000653
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(01)88256-3
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000653 entry version 5; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:227882
+  taxon_label: Streptomyces avermitilis MA-4680 = NBRC 14893
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000678
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(01)88256-3
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000678 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000653
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:29301
+  organism_label: Streptomyces arenae
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(01)88256-3
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000653 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:HQ292065.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000678
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:227882
+  organism_label: Streptomyces avermitilis MA-4680 = NBRC 14893
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(01)88256-3
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000678 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:BA000030.3
+  locus_from: 3745497
+  locus_to: 3758933
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000653
+  source_label: pentalenolactone
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-69efeec0be
+- source: MIBIG
+  source_id: BGC0000678
+  source_label: pentalenolactone
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8d8fc196e8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000653, BGC0000678.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

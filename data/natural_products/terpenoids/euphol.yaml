@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-21e4f2495f
+label: euphol
+chemical_structure:
+  smiles: C[C@H](CCC=C(C)C)[C@@H]1CC[C@]2([C@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C
+  standard_inchi: InChI=1S/C30H50O/c1-20(2)10-9-11-21(3)22-14-18-30(8)24-12-13-25-27(4,5)26(31)16-17-28(25,6)23(24)15-19-29(22,30)7/h10,21-22,25-26,31H,9,11-19H2,1-8H3/t21-,22+,25+,26+,28-,29+,30-/m1/s1
+  standard_inchi_key: CAHGCLMLTWQZNJ-WZLOIPHISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002401
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Triterpenoids
+  class_results:
+  - Lanostane, Tirucallane and Euphane triterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:441678
+- chebi:4940
+producer_organisms:
+- taxon_id: NCBITaxon:3702
+  taxon_label: Arabidopsis thaliana
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002401
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: DOI:10.1111/nph.16338
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002401 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002401
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:3702
+  organism_label: Arabidopsis thaliana
+  evidence:
+  - reference: DOI:10.1111/nph.16338
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002401 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP002686.1
+  locus_from: 19428888
+  locus_to: 19461706
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002401
+  source_label: euphol
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-21e4f2495f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

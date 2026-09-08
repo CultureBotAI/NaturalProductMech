@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-ac342ce038
+label: ferroverdin
+chemical_structure:
+  smiles: C=CC1=CC=C(C=C1)OC(=O)C2=CC(=C(C=C2)[O-])N=O.C=CC1=CC=C(C=C1)OC(=O)C2=CC(=C(C=C2)[O-])N=O.C=CC1=CC=C(C=C1)OC(=O)C2=CC(=C(C=C2)[O-])N=O.[Na+].[Fe+2]
+  standard_inchi: InChI=1S/3C15H11NO4.Fe.Na/c3*1-2-10-3-6-12(7-4-10)20-15(18)11-5-8-14(17)13(9-11)16-19;;/h3*2-9,17H,1H2;;/q;;;+2;+1/p-3
+  standard_inchi_key: OVMCOCUPINBXRQ-UHFFFAOYSA-K
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001592
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Phenolic acids (C6-C1)
+  class_results:
+  - Bagremycins
+  - Shikimic acids and derivatives
+  - Simple phenolic acids
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1535768
+  taxon_label: Streptomyces lunaelactis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001592
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31409675
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001592 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001592
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1535768
+  organism_label: Streptomyces lunaelactis
+  evidence:
+  - reference: PMID:31409675
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001592 entry version 5; citation taken from the entry level
+  genome_accession: genbank:MG708299.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001592
+  source_label: ferroverdin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ac342ce038
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-78fa72b792
+label: rakicidin D
+chemical_structure:
+  smiles: CN(CC(N[C@@H]([C@@H](C(N)=O)O)C(OC([C@H](C)CCCCCC)[C@H](C)C(N1)=O)=O)=O)C(/C=C/C1=C)=O
+  standard_inchi: InChI=1S/C24H38N4O7/c1-6-7-8-9-10-14(2)21-16(4)23(33)26-15(3)11-12-18(30)28(5)13-17(29)27-19(24(34)35-21)20(31)22(25)32/h11-12,14,16,19-21,31H,3,6-10,13H2,1-2,4-5H3,(H2,25,32)(H,26,33)(H,27,29)/b12-11+/t14-,16+,19+,20+,21?/m1/s1
+  standard_inchi_key: CIRMNTDTIYXVDA-HQWXCZLASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001329
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:68228
+  taxon_label: Streptomyces lilacinus
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0001329
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:24242000
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001329 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001329
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68228
+  organism_label: Streptomyces lilacinus
+  evidence:
+  - reference: PMID:24242000
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001329 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KL569388.1
+  locus_from: 1
+  locus_to: 36804
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001329
+  source_label: rakicidin D
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-78fa72b792
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

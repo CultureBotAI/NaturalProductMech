@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-b37b4ebb26
+label: linearmycin B
+chemical_structure:
+  smiles: CC(/C=C/CC/C=C/C=C/C=C/C=C/C=C(\C)/C(=O)O)C(C(C)C(/C=C/C=C/C=C/C=C/C=C/CC(C(C)C(=O)CC(CC(CC(/C=C/CC(CC(CC(CC(/C=C/CC(/C=C/CC(CC(CCCN)O)O)O)O)O)O)O)O)O)O)O)O)O
+  standard_inchi: InChI=1S/C66H103NO16/c1-48(29-21-17-13-9-6-5-7-10-14-18-22-30-49(2)66(82)83)65(81)51(4)63(79)39-24-20-16-12-8-11-15-19-23-38-62(78)50(3)64(80)47-61(77)46-60(76)44-56(72)36-27-35-55(71)43-59(75)45-58(74)42-54(70)34-26-32-52(68)31-25-33-53(69)41-57(73)37-28-40-67/h5-12,14-16,18-27,29-31,34,36,39,48,50-63,65,68-79,81H,13,17,28,32-33,35,37-38,40-47,67H2,1-4H3,(H,82,83)/b7-5+,9-6+,12-8+,14-10+,15-11+,20-16+,22-18+,23-19+,29-21+,31-25+,34-26+,36-27+,39-24+,49-30+
+  standard_inchi_key: DHFLEVLIHWJIAE-OTPULODUSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002072
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:10328913
+- npatlas:NPA005208
+producer_organisms:
+- taxon_id: NCBITaxon:465541
+  taxon_label: Streptomyces sp. Mg1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002072
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28919037
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002072 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002072
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:465541
+  organism_label: Streptomyces sp. Mg1
+  evidence:
+  - reference: PMID:28919037
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002072 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP011664.1
+  locus_from: 1061319
+  locus_to: 1236790
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002072
+  source_label: linearmycin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b37b4ebb26
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

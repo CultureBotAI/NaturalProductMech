@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-533ddeefb5
+label: Cryptophycin A
+chemical_structure:
+  smiles: C[C@@H]1CNC(=O)[C@@H](NC(=O)/C=C/C[C@H](OC(=O)[C@@H](OC1=O)CC(C)C)[C@H](C)[C@@H]2[C@H](O2)C3=CC=CC=C3)CC4=CC(=C(C=C4)OC)Cl
+  standard_inchi: InChI=1S/C35H43ClN2O8/c1-20(2)16-29-35(42)44-27(22(4)31-32(46-31)24-10-7-6-8-11-24)12-9-13-30(39)38-26(33(40)37-19-21(3)34(41)45-29)18-23-14-15-28(43-5)25(36)17-23/h6-11,13-15,17,20-22,26-27,29,31-32H,12,16,18-19H2,1-5H3,(H,37,40)(H,38,39)/b13-9+/t21-,22+,26+,27+,29+,31-,32-/m1/s1
+  standard_inchi_key: PSNOPSMXOBPNNV-XUMGCJJFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000975
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cryptophycins
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- cyanometdb:CyanoMetDB_1104
+- npatlas:NPA013071
+producer_organisms:
+- taxon_id: NCBITaxon:76335
+  taxon_label: Nostoc sp. ATCC 53789
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000975
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/cb6004307
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000975 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000975
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:76335
+  organism_label: Nostoc sp. ATCC 53789
+  evidence:
+  - reference: DOI:10.1021/cb6004307
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000975 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:EF159954.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000975
+  source_label: Cryptophycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-533ddeefb5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

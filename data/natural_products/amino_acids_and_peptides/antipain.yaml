@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-268e43a43c
+label: antipain
+chemical_structure:
+  smiles: CC(C)[C@H](C(=O)N[C@@H](CCCN=C(N)N)C=O)NC(=O)[C@H](CCCN=C(N)N)NC(=O)N[C@H](CC1=CC=CC=C1)C(=O)O
+  standard_inchi: InChI=1S/C27H44N10O6/c1-16(2)21(23(40)34-18(15-38)10-6-12-32-25(28)29)37-22(39)19(11-7-13-33-26(30)31)35-27(43)36-20(24(41)42)14-17-8-4-3-5-9-17/h3-5,8-9,15-16,18-21H,6-7,10-14H2,1-2H3,(H,34,40)(H,37,39)(H,41,42)(H4,28,29,32)(H4,30,31,33)(H2,35,36,43)/t18-,19-,20+,21+/m0/s1
+  standard_inchi_key: SDNYTAYICBFYFH-UWHLTILDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002051
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA021186
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002051
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:33712632
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002051 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002051
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:33712632
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002051 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT149901.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002051
+  source_label: antipain
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-268e43a43c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-c60386127d
+label: tacrolimus
+chemical_structure:
+  smiles: '[H][C@]1(CC[C@@H](O)[C@@H](C1)OC)\C=C(/C)[C@@H]1OC(=O)[C@]2([H])CCCCN2C(=O)C(=O)[C@]2(O)O[C@@]([H])([C@H](C[C@H]2C)OC)[C@H](C[C@@H](C)C\C(C)=C\[C@@H](CC=C)C(=O)C[C@H](O)[C@H]1C)OC'
+  standard_inchi: InChI=1S/C44H69NO12/c1-10-13-31-19-25(2)18-26(3)20-37(54-8)40-38(55-9)22-28(5)44(52,57-40)41(49)42(50)45-17-12-11-14-32(45)43(51)56-39(29(6)34(47)24-35(31)48)27(4)21-30-15-16-33(46)36(23-30)53-7/h10,19,21,26,28-34,36-40,46-47,52H,1,11-18,20,22-24H2,2-9H3/b25-19+,27-21+/t26-,28+,29+,30-,31+,32-,33+,34-,36+,37-,38-,39-,40+,44+/m0/s1
+  standard_inchi_key: QJJXYPPXXYFBGM-ONLNQCGCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000353
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ascomycins and Rapamycins
+  is_glycoside: true
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA019402
+producer_organisms:
+- taxon_id: NCBITaxon:82632
+  taxon_label: Streptomyces sp. MA6548
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000353
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:9780228
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000353 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000353
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:82632
+  organism_label: Streptomyces sp. MA6548
+  evidence:
+  - reference: PMID:9780228
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000353 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF082100.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000353
+  source_label: tacrolimus
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c60386127d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-b5e5564831
+label: gibepyrone-A
+chemical_structure:
+  smiles: C\C=C(/C)C1=CC=C(C)C(=O)O1
+  standard_inchi: InChI=1S/C10H12O2/c1-4-7(2)9-6-5-8(3)10(11)12-9/h4-6H,1-3H3/b7-4+
+  standard_inchi_key: FEEGMVBAILJAQO-QPJJXVBHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001606
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 2-pyrone derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA019445
+producer_organisms:
+- taxon_id: NCBITaxon:1279085
+  taxon_label: Fusarium fujikuroi IMI 58289
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001606
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27856636
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001606 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001606
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1279085
+  organism_label: Fusarium fujikuroi IMI 58289
+  evidence:
+  - reference: PMID:27856636
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001606 entry version 3; citation taken from the entry level
+  genome_accession: genbank:HF679033.1
+  locus_from: 2066369
+  locus_to: 2088912
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001606
+  source_label: gibepyrone-A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b5e5564831
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

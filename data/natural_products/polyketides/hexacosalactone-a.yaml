@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-32acf1decd
+label: hexacosalactone A
+chemical_structure:
+  smiles: CO[C@@H]1C[C@H](O)[C@@H](C)[C@H](O)[C@@H](C)C[C@@H](C)C(=O)C[C@H](C(C)C)OC(=O)/C(C)=C/C=C/C(C)=C/C=C/C(C)=C\C[C@H](OC(=O)/C=C/C(=O)NC2=C(O)CCC2=O)[C@@H]1C
+  standard_inchi: InChI=1S/C45H65NO11/c1-26(2)39-24-36(49)30(6)23-31(7)44(53)32(8)37(50)25-40(55-10)33(9)38(56-42(52)22-21-41(51)46-43-34(47)18-19-35(43)48)20-17-28(4)14-11-13-27(3)15-12-16-29(5)45(54)57-39/h11-17,21-22,26,30-33,37-40,44,47,50,53H,18-20,23-25H2,1-10H3,(H,46,51)/b14-11+,15-12+,22-21+,27-13+,28-17-,29-16+/t30-,31+,32-,33+,37+,38+,39-,40-,44-/m1/s1
+  standard_inchi_key: XLVNGASIPGZSDP-XXPFVUKHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002497
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA033097
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002497
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:34170140
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002497 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002497
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:34170140
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002497 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT994316.1
+  locus_from: 1
+  locus_to: 131383
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002497
+  source_label: hexacosalactone A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-32acf1decd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-afdd774b74
+label: F9775B
+chemical_structure:
+  smiles: CC1=CC2=C(C(=C1)O)OC3=C(O2)C(=O)C(=C4C3(C5C(=CC(=O)C5(C4=O)O)C)C)O
+  standard_inchi: InChI=1S/C21H16O8/c1-7-4-9(22)15-10(5-7)28-16-14(25)13(24)12-18(26)21(27)11(23)6-8(2)17(21)20(12,3)19(16)29-15/h4-6,17,22,24,27H,1-3H3
+  standard_inchi_key: ZFYMCYAXXOXUHT-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000057
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Depsidones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:25235989
+producer_organisms:
+- taxon_id: NCBITaxon:227321
+  taxon_label: Aspergillus nidulans FGSC A4
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000057
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20174687
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000057 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000057
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:227321
+  organism_label: Aspergillus nidulans FGSC A4
+  evidence:
+  - reference: PMID:20174687
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000057 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AACD01000135.1
+  locus_from: 122623
+  locus_to: 149174
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000057
+  source_label: F9775B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-afdd774b74
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

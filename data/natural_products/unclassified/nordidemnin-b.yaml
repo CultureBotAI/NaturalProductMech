@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-c1ebcd7dc0
+label: nordidemnin B
+chemical_structure:
+  smiles: C[C@@H]1[C@@H](C(=O)N[C@@H]([C@H](CC(=O)O[C@H](C(=O)[C@@H](C(=O)N[C@H](C(=O)N2CCC[C@H]2C(=O)N([C@H](C(=O)O1)CC3=CC=C(C=C3)OC)C)CC(C)C)C)C(C)C)O)C(C)C)NC(=O)C(CC(C)C)N(C)C(=O)[C@@H]4CCCN4C(=O)[C@H](C)O
+  standard_inchi: InChI=1S/C56H87N7O15/c1-29(2)25-38-53(72)63-24-16-18-40(63)55(74)61(13)42(27-36-19-21-37(76-14)22-20-36)56(75)77-35(11)46(59-50(69)41(26-30(3)4)60(12)54(73)39-17-15-23-62(39)52(71)34(10)64)51(70)58-45(31(5)6)43(65)28-44(66)78-48(32(7)8)47(67)33(9)49(68)57-38/h19-22,29-35,38-43,45-46,48,64-65H,15-18,23-28H2,1-14H3,(H,57,68)(H,58,70)(H,59,69)/t33-,34-,35+,38-,39-,40-,41?,42-,43-,45+,46-,48-/m0/s1
+  standard_inchi_key: CKVQLVKUIHIXIC-WSWSWPEESA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000985
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:70698166
+- pubchem:164049
+producer_organisms:
+- taxon_id: NCBITaxon:1110502
+  taxon_label: Tistrella mobilis KA081020-065
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000985
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22458477
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000985 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000985
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1110502
+  organism_label: Tistrella mobilis KA081020-065
+  evidence:
+  - reference: PMID:22458477
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000985 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP003239.1
+  locus_from: 674941
+  locus_to: 729697
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000985
+  source_label: nordidemnin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c1ebcd7dc0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,168 @@
+identifier: naturalproductmech:mibig-82041a5d45
+label: myxochromide A
+chemical_structure:
+  smiles: CN([C@H]1[C@@H](C)OC(=O)CC[C@H](NC(=O)[C@H](NC(=O)[C@H]2CCCN2C(=O)[C@H](CC(C)C)NC(=O)[C@@H](NC1=O)C)C)C(=O)N)C(=O)/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C
+  standard_inchi: InChI=1S/C45H63N7O9/c1-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-25-37(53)51(7)39-33(6)61-38(54)27-26-34(40(46)55)49-41(56)31(4)47-43(58)36-24-23-28-52(36)45(60)35(29-30(2)3)50-42(57)32(5)48-44(39)59/h8-22,25,30-36,39H,23-24,26-29H2,1-7H3,(H2,46,55)(H,47,58)(H,48,59)(H,49,56)(H,50,57)/b9-8+,11-10+,13-12+,15-14+,17-16+,19-18+,21-20+,25-22+/t31-,32+,33-,34+,35+,36-,39+/m1/s1
+  standard_inchi_key: NDLATPRQLJTXJX-OBQOMHFNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001425
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:246197
+  taxon_label: Myxococcus xanthus DK 1622
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001425
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001425 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:34
+  taxon_label: Myxococcus xanthus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001426
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001426 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:34
+  taxon_label: Myxococcus xanthus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001427
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001427 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:34
+  taxon_label: Myxococcus xanthus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001428
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001428 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001425
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:246197
+  organism_label: Myxococcus xanthus DK 1622
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001425 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622595.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0001426
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:34
+  organism_label: Myxococcus xanthus
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001426 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622596.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001427
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:34
+  organism_label: Myxococcus xanthus
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001427 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622597.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001428
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:34
+  organism_label: Myxococcus xanthus
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001428 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622598.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001425
+  source_label: myxochromide A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-82041a5d45
+- source: MIBIG
+  source_id: BGC0001426
+  source_label: myxochromide A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-be91eeb356
+- source: MIBIG
+  source_id: BGC0001427
+  source_label: myxochromide A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-a56700c9e6
+- source: MIBIG
+  source_id: BGC0001428
+  source_label: myxochromide A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-7866a72bba
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001425, BGC0001426,
+    BGC0001427, BGC0001428. Confirm they describe the same compound rather than an
+    upstream cross-reference error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

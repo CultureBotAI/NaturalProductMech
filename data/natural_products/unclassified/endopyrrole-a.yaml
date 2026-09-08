@@ -1,0 +1,113 @@
+identifier: naturalproductmech:mibig-3749610d08
+label: endopyrrole A
+chemical_structure:
+  smiles: CC(C)[C@H](NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)C1=CC=C[NH]1)C(C)C)C(=O)N[C@@H](C(=O)N[C@@H]1C(=O)N[C@H](CO)C(=O)N[C@@H](CC2=CC=C(O)C=C2)C(=O)N[C@@H](CC2=CC=C(O)C=C2)C(=O)O[C@@H]1C)C(C)C
+  standard_inchi: InChI=1S/C50H67N9O13/c1-25(2)38(55-45(66)37-11-9-21-59(37)49(70)40(27(5)6)57-42(63)33-10-8-20-51-33)46(67)56-39(26(3)4)47(68)58-41-28(7)72-50(71)35(23-30-14-18-32(62)19-15-30)53-43(64)34(22-29-12-16-31(61)17-13-29)52-44(65)36(24-60)54-48(41)69/h8,10,12-20,25-28,34-41,51,60-62H,9,11,21-24H2,1-7H3,(H,52,65)(H,53,64)(H,54,69)(H,55,66)(H,56,67)(H,57,63)(H,58,68)/t28-,34+,35+,36-,37+,38+,39-,40+,41+/m1/s1
+  standard_inchi_key: KRMWEQCPKUMYBI-DKKFUSLWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002048
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA032899
+producer_organisms:
+- taxon_id: NCBITaxon:882378
+  taxon_label: Mycetohabitans rhizoxinica HKI 454
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002048
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:21131495
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002048 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:412963
+  taxon_label: Mycetohabitans rhizoxinica
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002326
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31283172
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002326 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002048
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:882378
+  organism_label: Mycetohabitans rhizoxinica HKI 454
+  evidence:
+  - reference: PMID:21131495
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002048 entry version 3; citation taken from the entry level
+  genome_accession: genbank:FR687359.1
+  locus_from: 1835600
+  locus_to: 1866150
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0002326
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:412963
+  organism_label: Mycetohabitans rhizoxinica
+  evidence:
+  - reference: PMID:31283172
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002326 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MN081797.1
+  locus_from: 1
+  locus_to: 40068
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002048
+  source_label: endopyrrole A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3749610d08
+- source: MIBIG
+  source_id: BGC0002326
+  source_label: endopyrrole A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c8fd5017fa
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002048, BGC0002326.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

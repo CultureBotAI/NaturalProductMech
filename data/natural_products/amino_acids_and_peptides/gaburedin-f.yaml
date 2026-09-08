@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-c15e540a38
+label: gaburedin F
+chemical_structure:
+  smiles: CSCC[C@H](NC(=O)NCCCC(=O)O)C(=O)O
+  standard_inchi: InChI=1S/C10H18N2O5S/c1-18-6-4-7(9(15)16)12-10(17)11-5-2-3-8(13)14/h7H,2-6H2,1H3,(H,13,14)(H,15,16)(H2,11,12,17)/t7-/m0/s1
+  standard_inchi_key: MULDYIFYASLLHX-ZETCQYMHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002578
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA028622
+producer_organisms:
+- taxon_id: NCBITaxon:953739
+  taxon_label: Streptomyces venezuelae ATCC 10712
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002578
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1039/c3sc52536h
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002578 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002578
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:953739
+  organism_label: Streptomyces venezuelae ATCC 10712
+  evidence:
+  - reference: DOI:10.1039/c3sc52536h
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002578 entry version 2; citation taken from the entry level
+  genome_accession: genbank:FR845719.1
+  locus_from: 4521431
+  locus_to: 4531575
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002578
+  source_label: gaburedin F
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c15e540a38
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

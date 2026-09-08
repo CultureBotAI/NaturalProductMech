@@ -1,0 +1,78 @@
+identifier: naturalproductmech:mibig-ea4dc2a26d
+label: epidechlorogriseofulvin
+chemical_structure:
+  smiles: COC1=CC(OC)=C2C(OC3(C(C)CC(=O)C=C3OC)C2=O)=C1
+  standard_inchi: InChI=1S/C17H18O6/c1-9-5-10(18)6-14(22-4)17(9)16(19)15-12(21-3)7-11(20-2)8-13(15)23-17/h6-9H,5H2,1-4H3
+  standard_inchi_key: QPCYNIYZPDJCMB-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000070
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Griseofulvins
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Cyclic polyketide
+- Polycyclic polyketide
+xrefs:
+- npatlas:NPA019749
+producer_organisms:
+- taxon_id: NCBITaxon:36650
+  taxon_label: Penicillium aethiopicum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000070
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
+    expression correlated with compound production. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1021/cb400541z
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000070 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000070
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:36650
+  organism_label: Penicillium aethiopicum
+  evidence:
+  - reference: DOI:10.1021/cb400541z
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000070 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:GU574478.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000070
+  source_label: epidechlorogriseofulvin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ea4dc2a26d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

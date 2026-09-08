@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-aabd9fea32
+label: thailandamide lactone
+chemical_structure:
+  smiles: CO[C@H]1[C@@H](C)C(=O)O[C@@]1(C)\C=C\C=C\C(\C)=C\C=C\C(\O)=C\C(=O)\C=C\C=C(/C)\C=C\C(C)NC(=O)C(C)C\C=C\CC(O)CC1=CC=C(O)C=C1
+  standard_inchi: InChI=1S/C43H55NO8/c1-30(14-10-11-27-43(6)40(51-7)34(5)42(50)52-43)15-12-19-38(47)29-39(48)20-13-16-31(2)21-22-33(4)44-41(49)32(3)17-8-9-18-37(46)28-35-23-25-36(45)26-24-35/h8-16,19-27,29,32-34,37,40,45-47H,17-18,28H2,1-7H3,(H,44,49)/b9-8+,14-10+,19-12+,20-13+,22-21+,27-11+,30-15+,31-16+,38-29-/t32?,33?,34-,37?,40+,43+/m1/s1
+  standard_inchi_key: TXLZSYDNMDHWLZ-HOZUMRSTSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000186
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA0586
+producer_organisms:
+- taxon_id: NCBITaxon:271848
+  taxon_label: Burkholderia thailandensis E264
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000186
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18223641
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000186 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000186
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:271848
+  organism_label: Burkholderia thailandensis E264
+  evidence:
+  - reference: PMID:18223641
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000186 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000085.1
+  locus_from: 1950416
+  locus_to: 2036975
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000186
+  source_label: thailandamide lactone
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-aabd9fea32
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

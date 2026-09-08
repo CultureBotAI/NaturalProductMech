@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-5458ad4d20
+label: cytochalasin K
+chemical_structure:
+  smiles: '[H][C@]12[C@H](CC3=CC=CC=C3)NC(=O)[C@]11C(=O)\C=C\C(=O)[C@H](OC(C)=O)\C(C)=C\[C@@H](C)C\C=C\[C@@]1([H])[C@@H]1O[C@]1(C)[C@H]2C'
+  standard_inchi: InChI=1S/C32H37NO6/c1-18-10-9-13-23-29-31(5,39-29)20(3)27-24(17-22-11-7-6-8-12-22)33-30(37)32(23,27)26(36)15-14-25(35)28(19(2)16-18)38-21(4)34/h6-9,11-16,18,20,23-24,27-29H,10,17H2,1-5H3,(H,33,37)/b13-9+,15-14+,19-16+/t18-,20-,23-,24-,27-,28+,29-,31+,32+/m0/s1
+  standard_inchi_key: AZWOSJCABFILKS-JTQCMLDWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000983
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Pseudoalkaloids
+  class_results:
+  - Cytochalasan alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:44583793
+- npatlas:NPA017129
+producer_organisms:
+- taxon_id: NCBITaxon:344612
+  taxon_label: Aspergillus clavatus NRRL 1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000983
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(01)92975-2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000983 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000983
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:344612
+  organism_label: Aspergillus clavatus NRRL 1
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(01)92975-2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000983 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:DS027057.1
+  locus_from: 334675
+  locus_to: 379692
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000983
+  source_label: cytochalasin K
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5458ad4d20
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

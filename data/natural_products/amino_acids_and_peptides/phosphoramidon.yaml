@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-b4e35a3037
+label: phosphoramidon
+chemical_structure:
+  smiles: C[C@@H]1[C@@H]([C@H]([C@@H]([C@@H](O1)OP(=O)(N[C@@H](CC(C)C)C(=O)N[C@@H](CC2=CNC3=CC=CC=C32)C(=O)O)O)O)O)O
+  standard_inchi: InChI=1S/C23H34N3O10P/c1-11(2)8-16(26-37(33,34)36-23-20(29)19(28)18(27)12(3)35-23)21(30)25-17(22(31)32)9-13-10-24-15-7-5-4-6-14(13)15/h4-7,10-12,16-20,23-24,27-29H,8-9H2,1-3H3,(H,25,30)(H,31,32)(H2,26,33,34)/t12-,16+,17+,18+,19-,20+,23+/m1/s1
+  standard_inchi_key: ZPHBZEQOLSRPAK-IWOPNAARSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002573
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA021178
+producer_organisms:
+- taxon_id: NCBITaxon:2577050
+  taxon_label: Streptomyces mozunensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002573
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression|Knock-out studies. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:31057776
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002573 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002573
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2577050
+  organism_label: Streptomyces mozunensis
+  evidence:
+  - reference: PMID:31057776
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002573 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MK644118.1
+  locus_from: 1
+  locus_to: 7021
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002573
+  source_label: phosphoramidon
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-b4e35a3037
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,150 @@
+identifier: naturalproductmech:mibig-be1bb908b0
+label: fischerindole L
+chemical_structure:
+  smiles: '[C]=NC1C2c3c([nH]c4ccccc34)C(C)(C)C2CC(Cl)C1(C)C=C'
+  standard_inchi: InChI=1S/C21H23ClN2/c1-6-21(4)15(22)11-13-17(19(21)23-5)16-12-9-7-8-10-14(12)24-18(16)20(13,2)3/h6-10,13,15,17,19,24H,1,11H2,2-4H3
+  standard_inchi_key: ADPQVXWEVQETCB-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000668
+np_pathway: ALKALOIDS
+synonyms:
+- value: fischerindole
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000668
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Hapalindole alkaloids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+- OTHER
+xrefs:
+- cyanometdb:CyanoMetDB_1557
+- npatlas:NPA018655
+producer_organisms:
+- taxon_id: NCBITaxon:1433842
+  taxon_label: Hapalosiphon welwitschii UTEX B 1830
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000668
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(00)92061-6
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000668 entry version 5; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:83542
+  taxon_label: Fischerella muscicola UTEX 1829
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001594
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.bmc.2012.06.030
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001594 entry version 3; citation taken from the compound bioactivity
+      level
+- taxon_id: NCBITaxon:1930929
+  taxon_label: Fischerella sp. SAG 46.79
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001595
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28288107
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001595 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000668
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1433842
+  organism_label: Hapalosiphon welwitschii UTEX B 1830
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(00)92061-6
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000668 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KF811479.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0001594
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:83542
+  organism_label: Fischerella muscicola UTEX 1829
+  evidence:
+  - reference: DOI:10.1016/j.bmc.2012.06.030
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001594 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KY026487.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001595
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1930929
+  organism_label: Fischerella sp. SAG 46.79
+  evidence:
+  - reference: PMID:28288107
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001595 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KY026489.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000668
+  source_label: fischerindole L
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-be1bb908b0
+- source: MIBIG
+  source_id: BGC0001594
+  source_label: fischerindole L
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7d55e7a2e2
+- source: MIBIG
+  source_id: BGC0001595
+  source_label: fischerindole
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1e1f42132b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000668, BGC0001594,
+    BGC0001595. Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-5240e25646
+label: bongkrekic acid
+chemical_structure:
+  smiles: C[C@@H](C/C=C/CC/C=C/C=C\C[C@H](/C(=C\C=C(/C)\C(=O)O)/C)OC)/C=C/C(=C\C(=O)O)\CC(=O)O
+  standard_inchi: InChI=1S/C28H38O7/c1-21(15-18-24(19-26(29)30)20-27(31)32)13-11-9-7-5-6-8-10-12-14-25(35-4)22(2)16-17-23(3)28(33)34/h6,8-12,15-19,21,25H,5,7,13-14,20H2,1-4H3,(H,29,30)(H,31,32)(H,33,34)/b8-6+,11-9+,12-10-,18-15+,22-16-,23-17+,24-19?/t21-,25+/m0/s1
+  standard_inchi_key: SHCXABJSXUACKU-SWUBLTBSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000173
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty Acids and Conjugates
+  class_results:
+  - Branched fatty acids
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:28095
+  taxon_label: Burkholderia gladioli
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000173
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22999884
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000173 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000173
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:28095
+  organism_label: Burkholderia gladioli
+  evidence:
+  - reference: PMID:22999884
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000173 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JX173632.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000173
+  source_label: bongkrekic acid
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5240e25646
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

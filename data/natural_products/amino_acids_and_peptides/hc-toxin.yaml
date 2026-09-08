@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-c95e8061c5
+label: HC-toxin
+chemical_structure:
+  smiles: C[C@@H]1C(=O)N[C@H](C(=O)N2CCC[C@@H]2C(=O)N[C@H](C(=O)N1)C)CCCCCC(=O)C3CO3
+  standard_inchi: InChI=1S/C21H32N4O6/c1-12-18(27)22-13(2)19(28)24-14(7-4-3-5-9-16(26)17-11-31-17)21(30)25-10-6-8-15(25)20(29)23-12/h12-15,17H,3-11H2,1-2H3,(H,22,27)(H,23,29)(H,24,28)/t12-,13+,14-,15+,17?/m0/s1
+  standard_inchi_key: GNYCTMYOHGBSBI-KVUCBBCISA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001166
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:107864
+producer_organisms:
+- taxon_id: NCBITaxon:378183
+  taxon_label: Alternaria jesenskae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001166
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23865912
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001166 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001166
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:378183
+  organism_label: Alternaria jesenskae
+  evidence:
+  - reference: PMID:23865912
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001166 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KC862269.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001166
+  source_label: HC-toxin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c95e8061c5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

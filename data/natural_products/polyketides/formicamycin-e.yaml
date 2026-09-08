@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-e825f061c3
+label: formicamycin E
+chemical_structure:
+  smiles: CC1=C(C(=CC(=C1Cl)OC)OC)C2=CC(=C(C3=C2C(=O)[C@@]4([C@H](C3)C(C5=C(C4=O)C(=CC(=C5Cl)O)O)(C)C)O)Cl)OC
+  standard_inchi: InChI=1S/C30H27Cl3O8/c1-11-20(16(39-4)10-18(41-6)24(11)31)12-7-17(40-5)25(32)13-8-19-29(2,3)23-22(14(34)9-15(35)26(23)33)28(37)30(19,38)27(36)21(12)13/h7,9-10,19,34-35,38H,8H2,1-6H3/t19-,30-/m1/s1
+  standard_inchi_key: ITMXZWXSZNBZAO-HZAQMHFWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001590
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Fasamycins and derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Polycyclic polyketide
+xrefs:
+- pubchem:146684585
+producer_organisms:
+- taxon_id: NCBITaxon:1958824
+  taxon_label: Streptomyces sp. KY5
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001590
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2020.12.011
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001590 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001590
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1958824
+  organism_label: Streptomyces sp. KY5
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2020.12.011
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001590 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KX859301.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001590
+  source_label: formicamycin E
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e825f061c3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

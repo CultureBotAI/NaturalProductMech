@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-137c619e9f
+label: A50926 B
+chemical_structure:
+  smiles: CN[C@@H]1C2=CC(OC3=CC([C@H]4C(N[C@@H]5C6=CC(OC7=CC=C(C=C7)C[C@@H](NC1=O)C(N4)=O)=C(O[C@H]8[C@H](NC(CCCCCCCCCCC)=O)[C@@H](O)[C@H](O)[C@@H](CO)O8)C(OC9=C(Cl)C=C(C(O)C%10C(N[C@H](C(O)=O)C%11=C(C(O[C@@H]%12[C@@H](O)[C@@H](O)[C@H](O)[C@@H](CO)O%12)=CC(O)=C%11)C%13=CC([C@@H](NC5=O)C(N%10)=O)=CC=C%13)=O)C=C9)=C6)=O)=C(Cl)C(O)=C3)=C(O)C=C2
+  standard_inchi: InChI=1S/C83H90Cl2N8O27/c1-3-4-5-6-7-8-9-10-11-15-58(99)88-67-71(103)69(101)56(34-94)118-82(67)120-74-54-28-41-29-55(74)116-51-23-19-40(26-47(51)84)68(100)66-80(111)92-65(81(112)113)45-30-42(96)31-53(117-83-73(105)72(104)70(102)57(35-95)119-83)59(45)37-13-12-14-38(25-37)62(77(108)93-66)89-78(109)63(41)90-79(110)64-46-32-44(33-50(98)60(46)85)115-52-27-39(18-22-49(52)97)61(86-2)76(107)87-48(75(106)91-64)24-36-16-20-43(114-54)21-17-36/h12-14,16-23,25-33,48,56-57,61-73,82-83,86,94-98,100-105H,3-11,15,24,34-35H2,1-2H3,(H,87,107)(H,88,99)(H,89,109)(H,90,110)(H,91,106)(H,92,111)(H,93,108)(H,112,113)/t48-,56-,57-,61-,62-,63-,64+,65+,66?,67-,68?,69-,70-,71-,72+,73+,82+,83+/m1/s1
+  standard_inchi_key: LZOGQRAIPFZIRV-PPRVBKARSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002344
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Vancomycins and Teicoplanins
+  is_glycoside: true
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:1122611
+  taxon_label: Nonomuraea coxensis DSM 45129
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002344
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:33913701
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002344 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002344
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1122611
+  organism_label: Nonomuraea coxensis DSM 45129
+  evidence:
+  - reference: PMID:33913701
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002344 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP068985.1
+  locus_from: 2825582
+  locus_to: 2894646
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002344
+  source_label: A50926 B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-137c619e9f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

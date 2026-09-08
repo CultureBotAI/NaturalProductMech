@@ -1,0 +1,109 @@
+identifier: naturalproductmech:mibig-7571577e94
+label: azotochelin
+chemical_structure:
+  smiles: O=C(NCCCC[C@H](NC(=O)C1=C(O)C(O)=CC=C1)C(=O)O)C1=C(O)C(O)=CC=C1
+  standard_inchi: InChI=1S/C20H22N2O8/c23-14-8-3-5-11(16(14)25)18(27)21-10-2-1-7-13(20(29)30)22-19(28)12-6-4-9-15(24)17(12)26/h3-6,8-9,13,23-26H,1-2,7,10H2,(H,21,27)(H,22,28)(H,29,30)/t13-/m0/s1
+  standard_inchi_key: KQPFLOCEYZIIRD-ZDUSSCGKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002528
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Polyamines
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA032747
+producer_organisms:
+- taxon_id: NCBITaxon:1283330
+  taxon_label: Azotobacter vinelandii CA
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002528
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1099/00221287-134-2-453
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002528 entry version 3; citation taken from the compound bioactivity
+      level
+- taxon_id: NCBITaxon:1283330
+  taxon_label: Azotobacter vinelandii CA
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002529
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26452553
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002529 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002528
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1283330
+  organism_label: Azotobacter vinelandii CA
+  evidence:
+  - reference: DOI:10.1099/00221287-134-2-453
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002528 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CP005094.1
+  locus_from: 2108873
+  locus_to: 2121364
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0002529
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1283330
+  organism_label: Azotobacter vinelandii CA
+  evidence:
+  - reference: PMID:26452553
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002529 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP005094.1
+  locus_from: 910020
+  locus_to: 925603
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002528
+  source_label: azotochelin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7571577e94
+- source: MIBIG
+  source_id: BGC0002529
+  source_label: azotochelin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3d00ac73a0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002528, BGC0002529.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

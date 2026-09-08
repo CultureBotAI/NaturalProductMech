@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-bf5595dbba
+label: dynemicin A
+chemical_structure:
+  smiles: COC1=C([C@H](C)[C@@]23O[C@@]22[C@@H]1C#C\C=C/C#C[C@@H]3NC1=C2C=C(O)C2=C1C(=O)C1=C(C(O)=CC=C1O)C2=O)C(O)=O
+  standard_inchi: InChI=1S/C30H19NO9/c1-12-19(28(37)38)27(39-2)13-7-5-3-4-6-8-18-29(12)30(13,40-29)14-11-17(34)22-23(24(14)31-18)26(36)21-16(33)10-9-15(32)20(21)25(22)35/h3-4,9-13,18,31-34H,1-2H3,(H,37,38)/b4-3-/t12-,13+,18-,29-,30+/m0/s1
+  standard_inchi_key: AFMYMMXSQGUCBK-AKMKHHNQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001060
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthraquinones and anthrones
+  - Enediynes
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA0412
+producer_organisms:
+- taxon_id: NCBITaxon:47854
+  taxon_label: Micromonospora chersina
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001060
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18328078
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001060 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001060
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:47854
+  organism_label: Micromonospora chersina
+  evidence:
+  - reference: PMID:18328078
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001060 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF552206.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001060
+  source_label: dynemicin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-bf5595dbba
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,76 @@
+identifier: naturalproductmech:mibig-b8a397b96a
+label: fusaristatin A
+chemical_structure:
+  smiles: CCCCCCC(C)CC/C=C(\C)/C=C/C(=O)C(C)CCC1C(C(=O)NC(=C)C(=O)NCC(C(=O)NC(C(=O)O1)CCC(=O)N)C)C
+  standard_inchi: InChI=1S/C36H58N4O7/c1-8-9-10-11-13-23(2)14-12-15-24(3)16-19-30(41)25(4)17-20-31-27(6)34(44)39-28(7)35(45)38-22-26(5)33(43)40-29(36(46)47-31)18-21-32(37)42/h15-16,19,23,25-27,29,31H,7-14,17-18,20-22H2,1-6H3,(H2,37,42)(H,38,45)(H,39,44)(H,40,43)/b19-16+,24-15+
+  standard_inchi_key: MNMRSBPSTNMOQK-MAUBWLBLSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002186
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA004181
+- pubchem:76327984
+producer_organisms:
+- taxon_id: NCBITaxon:229533
+  taxon_label: Fusarium graminearum PH-1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002186
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1038/ja.2007.39
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002186 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002186
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:229533
+  organism_label: Fusarium graminearum PH-1
+  evidence:
+  - reference: DOI:10.1038/ja.2007.39
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002186 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CM000575.1
+  locus_from: 2579299
+  locus_to: 2608773
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002186
+  source_label: fusaristatin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-b8a397b96a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

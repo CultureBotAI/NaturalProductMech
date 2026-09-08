@@ -1,0 +1,115 @@
+identifier: naturalproductmech:mibig-e9eefc994f
+label: fusarin C
+chemical_structure:
+  smiles: C/C=C(/C)\C=C(/C)\C=C(/C)\C=C\C=C(/C)\C(=O)[C@@]12[C@@H](O1)[C@](NC2=O)(CCO)O
+  standard_inchi: InChI=1S/C22H29NO5/c1-6-14(2)12-16(4)13-15(3)8-7-9-17(5)18(25)22-19(28-22)21(27,10-11-24)23-20(22)26/h6-9,12-13,19,24,27H,10-11H2,1-5H3,(H,23,26)/b8-7+,14-6-,15-13+,16-12+,17-9+/t19-,21-,22-/m0/s1
+  standard_inchi_key: RCJADKVBRBVIEX-YAMKEULKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000064
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tetramate alkaloids
+  class_results:
+  - Simple tetramate alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Tetramate alkaloid
+- Linear polyketide
+xrefs:
+- pubchem:15942871
+producer_organisms:
+- taxon_id: NCBITaxon:117187
+  taxon_label: Fusarium verticillioides
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000064
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1002/cbic.200400138
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000064 entry version 4; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:5127
+  taxon_label: Fusarium fujikuroi
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001268
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.toxlet.2011.05.1029
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001268 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000064
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:117187
+  organism_label: Fusarium verticillioides
+  evidence:
+  - reference: DOI:10.1002/cbic.200400138
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000064 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AY604568.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0001268
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5127
+  organism_label: Fusarium fujikuroi
+  evidence:
+  - reference: DOI:10.1016/j.toxlet.2011.05.1029
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001268 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:JX308619.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000064
+  source_label: fusarin C
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-e9eefc994f
+- source: MIBIG
+  source_id: BGC0001268
+  source_label: fusarin C
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-5f8c40f60a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000064, BGC0001268.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

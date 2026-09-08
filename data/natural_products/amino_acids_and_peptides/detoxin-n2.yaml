@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-2f505e94e3
+label: detoxin N2
+chemical_structure:
+  smiles: '[H]C1CCN(C(=O)[C@@H](N)C(C)CC)[C@]1([H])C(CC(O)=O)OC(=O)[C@H](CC1=CC=C(O)C=C1)NC([H])=O'
+  standard_inchi: InChI=1S/C23H33N3O7/c1-3-14(2)21(24)22(31)26-10-4-5-18(26)19(12-20(29)30)33-23(32)17(25-13-27)11-15-6-8-16(28)9-7-15/h6-9,13-14,17-19,21,28H,3-5,10-12,24H2,1-2H3,(H,25,27)(H,29,30)/t14?,17-,18-,19?,21-/m0/s1
+  standard_inchi_key: YHZYLDIUZSZOOB-PYBZOPHZSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001878
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1476877
+  taxon_label: Streptomyces sp. NRRL B-1347
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001878
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1038/s41589-019-0400-9
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001878 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001878
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1476877
+  organism_label: Streptomyces sp. NRRL B-1347
+  evidence:
+  - reference: DOI:10.1038/s41589-019-0400-9
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001878 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:BK010852.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001878
+  source_label: detoxin N2
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-2f505e94e3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

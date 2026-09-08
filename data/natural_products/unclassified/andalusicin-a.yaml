@@ -1,0 +1,76 @@
+identifier: naturalproductmech:mibig-1d37bf9b31
+label: andalusicin A
+chemical_structure:
+  smiles: C/C=C(\NC(=O)/C(=C\C)NC(=O)CNC(=O)C(NC(=O)C(CC1=C[NH]C2=CC=CC=C12)NC(=O)C(C)NC1CC2(CSCC(C(=O)O)NC(=O)C(CC(N)=O)NC(=O)C(CC(N)=O)NC2=O)NC(=O)C(C(C)CC)NC(=O)/C(=C/C)NC1=O)C(C)C)C(=O)N/C(=C/C)C(=O)NC(C(=O)N/C(=C/C)C(=O)NC(CC1=C[NH]C2=CC=CC=C12)C(=O)N/C(=C/C)C(=O)N/C(=C\C)C(=O)N/C(=C/C)C(=O)NC(C(=O)N/C(=C/C)C(=O)NC(C)C(=O)N(C)C)C(C)CC)C(C)C
+  standard_inchi: InChI=1S/C107H147N27O26S/c1-22-53(16)83(102(155)123-62(25-4)86(139)114-56(19)104(157)134(20)21)131-93(146)68(31-10)119-89(142)64(27-6)117-90(143)65(28-7)120-95(148)72(41-57-46-110-70-39-35-33-37-59(57)70)125-91(144)66(29-8)122-101(154)82(52(14)15)130-92(145)67(30-9)118-88(141)63(26-5)116-87(140)61(24-3)115-80(137)48-112-100(153)81(51(12)13)129-98(151)73(42-58-47-111-71-40-36-34-38-60(58)71)124-85(138)55(18)113-76-45-107(133-103(156)84(54(17)23-2)132-94(147)69(32-11)121-99(76)152)50-161-49-77(105(158)159)127-96(149)74(43-78(108)135)126-97(150)75(44-79(109)136)128-106(107)160/h24-40,46-47,51-56,72-77,81-84,110-111,113H,22-23,41-45,48-50H2,1-21H3,(H2,108,135)(H2,109,136)(H,112,153)(H,114,139)(H,115,137)(H,116,140)(H,117,143)(H,118,141)(H,119,142)(H,120,148)(H,121,152)(H,122,154)(H,123,155)(H,124,138)(H,125,144)(H,126,150)(H,127,149)(H,128,160)(H,129,151)(H,130,145)(H,131,146)(H,132,147)(H,133,156)(H,158,159)/b61-24+,62-25+,63-26-,64-27-,65-28+,66-29+,67-30+,68-31+,69-32-
+  standard_inchi_key: HNFCMZRTSDWBCX-FFVXNQHYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002111
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA033226
+producer_organisms:
+- taxon_id: NCBITaxon:257985
+  taxon_label: Bacillus thuringiensis serovar andalousiensis NRRL B-23139
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002111
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
+    expression correlated with compound production. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:34113822
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002111 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002111
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:257985
+  organism_label: Bacillus thuringiensis serovar andalousiensis NRRL B-23139
+  evidence:
+  - reference: PMID:34113822
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002111 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP035727.2
+  locus_from: 3149977
+  locus_to: 3156657
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002111
+  source_label: andalusicin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1d37bf9b31
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-1b40629585
+label: diazaquinomycin J
+chemical_structure:
+  smiles: CC1=CC(=O)NC2=C1C(=O)C3=C(C2=O)NC(=O)C=C3CCCCCCCC(C)C
+  standard_inchi: InChI=1S/C23H28N2O4/c1-13(2)9-7-5-4-6-8-10-15-12-17(27)25-21-19(15)22(28)18-14(3)11-16(26)24-20(18)23(21)29/h11-13H,4-10H2,1-3H3,(H,24,26)(H,25,27)
+  standard_inchi_key: KFKOTHCXRDTJMM-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001848
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Quinoline alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:134815172
+producer_organisms:
+- taxon_id: NCBITaxon:2201999
+  taxon_label: Micromonospora sp. B006
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001848
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/acs.jnatprod.8b00394
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001848 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001848
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2201999
+  organism_label: Micromonospora sp. B006
+  evidence:
+  - reference: DOI:10.1021/acs.jnatprod.8b00394
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001848 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP030865.1
+  locus_from: 3038865
+  locus_to: 3097062
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001848
+  source_label: diazaquinomycin J
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-1b40629585
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

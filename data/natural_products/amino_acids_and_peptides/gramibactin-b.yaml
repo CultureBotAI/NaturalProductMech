@@ -1,0 +1,112 @@
+identifier: naturalproductmech:mibig-82a62a3a81
+label: gramibactin B
+chemical_structure:
+  smiles: CCCCCCCC(=O)N[C@H]([C@H](C(=O)O)O)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@H]([C@@H](C)O)C(=O)N[C@H](CCC[N+](=NO)[O-])C(=O)NCC(=O)N[C@H](CCC[N+](=NO)[O-])C(=O)O
+  standard_inchi: InChI=1S/C32H56N10O17/c1-4-5-6-7-8-13-21(45)36-25(26(47)32(54)55)30(51)38-24(18(3)44)29(50)37-23(17(2)43)28(49)35-19(11-9-14-41(58)39-56)27(48)33-16-22(46)34-20(31(52)53)12-10-15-42(59)40-57/h17-20,23-26,43-44,47,56-57H,4-16H2,1-3H3,(H,33,48)(H,34,46)(H,35,49)(H,36,45)(H,37,50)(H,38,51)(H,52,53)(H,54,55)/t17-,18-,19-,20-,23-,24+,25-,26-/m1/s1
+  standard_inchi_key: DGRANLNYVKAJEA-DDAPDXDOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002329
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+synonyms:
+- value: trinickiabactin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002329
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA024966
+producer_organisms:
+- taxon_id: NCBITaxon:28094
+  taxon_label: Trinickia caryophylli
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002329
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31605027
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002329 entry version 2; citation taken from the entry level
+- taxon_id: NCBITaxon:134536
+  taxon_label: Paraburkholderia caledonica
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002563
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31276269
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002563 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002329
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:28094
+  organism_label: Trinickia caryophylli
+  evidence:
+  - reference: PMID:31605027
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002329 entry version 2; citation taken from the entry level
+  genome_accession: genbank:VJZF01000001.1
+  locus_from: 930564
+  locus_to: 971769
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0002563
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:134536
+  organism_label: Paraburkholderia caledonica
+  evidence:
+  - reference: PMID:31276269
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002563 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP024905.1
+  locus_from: 2376667
+  locus_to: 2418959
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002329
+  source_label: trinickiabactin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-82a62a3a81
+- source: MIBIG
+  source_id: BGC0002563
+  source_label: gramibactin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7c5bb59edd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002329, BGC0002563.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

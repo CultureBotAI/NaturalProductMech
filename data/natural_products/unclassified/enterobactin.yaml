@@ -1,0 +1,109 @@
+identifier: naturalproductmech:mibig-864f62763e
+label: enterobactin
+chemical_structure:
+  smiles: C1C(C(=O)OCC(C(=O)OCC(C(=O)O1)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)C3=C(C(=CC=C3)O)O)NC(=O)C4=C(C(=CC=C4)O)O
+  standard_inchi: InChI=1S/C30H27N3O15/c34-19-7-1-4-13(22(19)37)25(40)31-16-10-46-29(44)18(33-27(42)15-6-3-9-21(36)24(15)39)12-48-30(45)17(11-47-28(16)43)32-26(41)14-5-2-8-20(35)23(14)38/h1-9,16-18,34-39H,10-12H2,(H,31,40)(H,32,41)(H,33,42)
+  standard_inchi_key: SERBHKJMVBATSJ-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000343
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA018623
+- pubchem:34231
+producer_organisms:
+- taxon_id: NCBITaxon:674034
+  taxon_label: Pseudomonas sp. J465
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000343
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19710707
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000343 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:511145
+  taxon_label: Escherichia coli str. K-12 substr. MG1655
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002476
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression|Enzymatic assays. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:12655062
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002476 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000343
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:674034
+  organism_label: Pseudomonas sp. J465
+  evidence:
+  - reference: PMID:19710707
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000343 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GQ370384.1
+  locus_from: 27847
+  locus_to: 34054
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0002476
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:511145
+  organism_label: Escherichia coli str. K-12 substr. MG1655
+  evidence:
+  - reference: PMID:12655062
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002476 entry version 2; citation taken from the entry level
+  genome_accession: genbank:U00096.3
+  locus_from: 619384
+  locus_to: 629713
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000343
+  source_label: enterobactin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-864f62763e
+- source: MIBIG
+  source_id: BGC0002476
+  source_label: enterobactin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-3b60580b9b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000343, BGC0002476.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

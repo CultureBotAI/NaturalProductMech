@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-08273545fa
+label: sessilin A
+chemical_structure:
+  smiles: O=C(N[C@@H]([C@@H](C)CC)C(N[C@@H](CCO)C(N[C@H](CCN)C(N[C@@H](CCCCN)C(O)=O)=O)=O)=O)[C@@H]([C@H](O)C)NC(/C(NC([C@@H](C(C)C)NC([C@H](CC(C)C)NC([C@@H](CCC(N)=O)NC([C@H](C(C)C)NC([C@@H](C(C)C)NC([C@@H](CC(C)C)NC([C@@H](CCC(N)=O)NC([C@@H](C(C)C)NC([C@@H](CC(C)C)NC([C@@H](CO)NC([C@]1(C(CC(O)CCCCC)=O)N(C(/C(N)=C/C)=O)CCC1)=O)=O)=O)=O)=O)=O)=O)=O)=O)=O)=O)=C\C)=O
+  standard_inchi: InChI=1S/C96H168N22O26/c1-21-25-26-30-57(122)46-69(123)96(38-29-41-118(96)93(141)58(99)23-3)95(144)111-68(47-120)86(134)110-67(45-50(9)10)85(133)113-73(52(13)14)88(136)104-60(32-34-70(100)124)79(127)109-66(44-49(7)8)84(132)114-75(54(17)18)90(138)115-74(53(15)16)89(137)105-61(33-35-71(101)125)80(128)108-65(43-48(5)6)83(131)112-72(51(11)12)87(135)102-59(24-4)78(126)117-77(56(20)121)92(140)116-76(55(19)22-2)91(139)106-63(37-42-119)82(130)103-62(36-40-98)81(129)107-64(94(142)143)31-27-28-39-97/h23-24,48-57,60-68,72-77,119-122H,21-22,25-47,97-99H2,1-20H3,(H2,100,124)(H2,101,125)(H,102,135)(H,103,130)(H,104,136)(H,105,137)(H,106,139)(H,107,129)(H,108,128)(H,109,127)(H,110,134)(H,111,144)(H,112,131)(H,113,133)(H,114,132)(H,115,138)(H,116,140)(H,117,126)(H,142,143)/b58-23-,59-24+/t55-,56+,57?,60+,61+,62+,63-,64-,65-,66+,67+,68+,72+,73+,74-,75+,76-,77+,96-/m0/s1
+  standard_inchi_key: AVQWHWQXKOYHSL-WFICUNRFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000425
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:658629
+  taxon_label: Pseudomonas sp. CMR12a
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000425
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24673852
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000425 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000425
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:658629
+  organism_label: Pseudomonas sp. CMR12a
+  evidence:
+  - reference: PMID:24673852
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000425 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JQ309920.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000425
+  source_label: sessilin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-08273545fa
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

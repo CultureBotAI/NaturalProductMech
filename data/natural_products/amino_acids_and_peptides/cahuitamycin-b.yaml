@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-19d04b1f10
+label: cahuitamycin B
+chemical_structure:
+  smiles: '[H]C(=O)N(O)CCC[C@@H](NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)C1=CC=CC=C1O)C(=O)N1NCCC[C@@H]1C(=O)NCCC(O)=O'
+  standard_inchi: InChI=1S/C27H39N7O12/c35-13-18(31-23(41)16-5-1-2-8-21(16)38)25(43)32-19(14-36)24(42)30-17(6-4-12-33(46)15-37)27(45)34-20(7-3-10-29-34)26(44)28-11-9-22(39)40/h1-2,5,8,15,17-20,29,35-36,38,46H,3-4,6-7,9-14H2,(H,28,44)(H,30,42)(H,31,41)(H,32,43)(H,39,40)/t17-,18+,19+,20-/m1/s1
+  standard_inchi_key: XGZZLYNXFASBPQ-FUMNGEBKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001351
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  - Small peptides
+  class_results:
+  - Depsipeptides
+  - Linear peptides
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA030137
+producer_organisms:
+- taxon_id: NCBITaxon:1649596
+  taxon_label: Streptomyces gandocaensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001351
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26880271
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001351 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001351
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1649596
+  organism_label: Streptomyces gandocaensis
+  evidence:
+  - reference: PMID:26880271
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001351 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KU363800.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001351
+  source_label: cahuitamycin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-19d04b1f10
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

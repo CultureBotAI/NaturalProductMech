@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-8b9bc078cd
+label: anthramycin
+chemical_structure:
+  smiles: CC1=C(O)C2=C(C=C1)C(=O)N1C=C(CC1C(O)N2)\C=C\C(N)=O
+  standard_inchi: InChI=1S/C16H17N3O4/c1-8-2-4-10-13(14(8)21)18-15(22)11-6-9(3-5-12(17)20)7-19(11)16(10)23/h2-5,7,11,15,18,21-22H,6H2,1H3,(H2,17,20)/b5-3+
+  standard_inchi_key: VGQOVCHZGQWAOI-HWKANZROSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000303
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA08987
+- pubchem:5311005
+producer_organisms:
+- taxon_id: NCBITaxon:223297
+  taxon_label: Streptomyces refuineus subsp. thermotolerans
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000303
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17584616
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000303 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000303
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:223297
+  organism_label: Streptomyces refuineus subsp. thermotolerans
+  evidence:
+  - reference: PMID:17584616
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000303 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EU195114.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000303
+  source_label: anthramycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8b9bc078cd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

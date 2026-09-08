@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-6648129ec3
+label: neolymphostin b
+chemical_structure:
+  smiles: NC1=C(N=C2)C(C2=CC(C(/C=C/OC)=O)=N3)=C3C(NC(CC)=O)=C1
+  standard_inchi: InChI=1S/C17H16N4O3/c1-3-14(23)20-12-7-10(18)16-15-9(8-19-16)6-11(21-17(12)15)13(22)4-5-24-2/h4-8H,3,18H2,1-2H3,(H,20,23)/b5-4+
+  standard_inchi_key: OGZSTTCVCWTRRH-SNAWJCMRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001007
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:391037
+  taxon_label: Salinispora arenicola CNS-205
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001007
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19474814
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001007 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001007
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:391037
+  organism_label: Salinispora arenicola CNS-205
+  evidence:
+  - reference: PMID:19474814
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001007 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000850.1
+  locus_from: 3781645
+  locus_to: 3805331
+  bgc_class:
+  - PKS
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001007
+  source_label: neolymphostin b
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6648129ec3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

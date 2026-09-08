@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-63bd8ae7bd
+label: retimycin A
+chemical_structure:
+  smiles: O=C(NC1C(NC(C)C(N(C)C2C(N(C)C3(C(C)C3)C(OC(C)C(NC(C4=NC5=CC=CC=C5C=C4O)=O)C(NC(C)C(N(C)C(C(S(C)=O)SC2)C(N(C)C6(C(C)C6)C(OC1C)=O)=O)=O)=O)=O)=O)=O)=O)C7=NC8=CC=CC=C8C=C7O
+  standard_inchi: InChI=1S/C55H66N10O15S2/c1-25-22-54(25)52(76)79-29(5)39(61-46(71)41-37(67)21-32-17-13-15-19-34(32)59-41)44(69)57-28(4)48(73)63(8)42-50(75)65(10)55(23-26(55)2)53(77)80-30(6)38(60-45(70)40-36(66)20-31-16-12-14-18-33(31)58-40)43(68)56-27(3)47(72)62(7)35(49(74)64(54)9)24-81-51(42)82(11)78/h12-21,25-30,35,38-39,42,51,66-67H,22-24H2,1-11H3,(H,56,68)(H,57,69)(H,60,70)(H,61,71)
+  standard_inchi_key: KDRVEKPMWVHCOU-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001228
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:1137255
+  taxon_label: Salinispora arenicola CNT005
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001228
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25865308
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001228 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001228
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1137255
+  organism_label: Salinispora arenicola CNT005
+  evidence:
+  - reference: PMID:25865308
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001228 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_KI911494.1
+  locus_from: 180856
+  locus_to: 218636
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001228
+  source_label: retimycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-63bd8ae7bd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

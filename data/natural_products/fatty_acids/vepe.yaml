@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-a76cb10921
+label: VEPE
+chemical_structure:
+  smiles: NCCOP([O-])(OCC(OC(CCCCCCCCCCCC(C)C)=O)CO/C=C\CCCCCCCCCCC(C)C)=O
+  standard_inchi: InChI=1S/C35H70NO7P/c1-32(2)24-20-16-12-8-5-6-11-15-19-23-28-40-30-34(31-42-44(38,39)41-29-27-36)43-35(37)26-22-18-14-10-7-9-13-17-21-25-33(3)4/h23,28,32-34H,5-22,24-27,29-31,36H2,1-4H3,(H,38,39)/p-1/b28-23-
+  standard_inchi_key: WFCKUURGYDSXHH-NFFVHWSESA-M
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000871
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Glycerophospholipids
+  class_results:
+  - Glycerophosphoethanolamines
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:246197
+  taxon_label: Myxococcus xanthus DK 1622
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000871
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24814673
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000871 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000871
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:246197
+  organism_label: Myxococcus xanthus DK 1622
+  evidence:
+  - reference: PMID:24814673
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000871 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP000113.1
+  locus_from: 1789113
+  locus_to: 1797919
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000871
+  source_label: VEPE
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-a76cb10921
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

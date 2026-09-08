@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-8801a278be
+label: desmethyl TAN-1612
+chemical_structure:
+  smiles: O=C1C2=C(O)C3=C(O)C=C(O)C=C3C=C2CC4(O)C1(O)C(C(C(C)=O)=C(O)C4)=O
+  standard_inchi: InChI=1S/C20H16O9/c1-7(21)13-12(24)6-19(28)5-9-2-8-3-10(22)4-11(23)14(8)16(25)15(9)18(27)20(19,29)17(13)26/h2-4,22-25,28-29H,5-6H2,1H3
+  standard_inchi_key: QUQTYIYOYNVOJS-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000156
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Tetracyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:5061
+  taxon_label: Aspergillus niger
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000156
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this
+    field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:21866960
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000156 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000156
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5061
+  organism_label: Aspergillus niger
+  evidence:
+  - reference: PMID:21866960
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000156 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JN257714.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000156
+  source_label: desmethyl TAN-1612
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8801a278be
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

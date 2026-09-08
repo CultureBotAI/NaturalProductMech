@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-2f5f003d07
+label: polymyxin
+chemical_structure:
+  smiles: CCC(C)CCCCC(=O)NC(CCN)C(=O)NC(C(C)O)C(=O)NC(CCN)C(=O)NC1CCNC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC1=O)CCN)CC2=CC=CC=C2)CC(C)C)CCN)CCN)C(C)O.OS(=O)(=O)O
+  standard_inchi: InChI=1S/C56H98N16O13.H2O4S/c1-7-32(4)13-11-12-16-44(75)63-36(17-23-57)51(80)72-46(34(6)74)56(85)68-39(20-26-60)48(77)67-41-22-28-62-55(84)45(33(5)73)71-52(81)40(21-27-61)65-47(76)37(18-24-58)66-53(82)42(29-31(2)3)69-54(83)43(30-35-14-9-8-10-15-35)70-49(78)38(19-25-59)64-50(41)79;1-5(2,3)4/h8-10,14-15,31-34,36-43,45-46,73-74H,7,11-13,16-30,57-61H2,1-6H3,(H,62,84)(H,63,75)(H,64,79)(H,65,76)(H,66,82)(H,67,77)(H,68,85)(H,69,83)(H,70,78)(H,71,81)(H,72,80);(H2,1,2,3,4)
+  standard_inchi_key: HFMDLUQUEXNBOP-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000408
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:5702105
+producer_organisms:
+- taxon_id: NCBITaxon:1406
+  taxon_label: Paenibacillus polymyxa
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000408
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19304848
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000408 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000408
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1406
+  organism_label: Paenibacillus polymyxa
+  evidence:
+  - reference: PMID:19304848
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000408 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EU371992.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000408
+  source_label: polymyxin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2f5f003d07
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,117 @@
+identifier: naturalproductmech:mibig-7645690317
+label: pulcherriminic acid
+chemical_structure:
+  smiles: CC(C)CC1=C(O)N(=O)=C(CC(C)C)C(O)=N1=O
+  standard_inchi: InChI=1S/C12H20N2O4/c1-7(2)5-9-11(15)14(18)10(6-8(3)4)12(16)13(9)17/h7-8,15-16H,5-6H2,1-4H3
+  standard_inchi_key: WXWWNANFOZVVLD-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002321
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Tetramate alkaloids
+  - Peptide alkaloids
+  class_results:
+  - Pyrazine and Piperazine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA012181
+producer_organisms:
+- taxon_id: NCBITaxon:2163413
+  taxon_label: Metschnikowia aff. pulcherrima
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002321
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:31081214
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002321 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:224308
+  taxon_label: Bacillus subtilis subsp. subtilis str. 168
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002103
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1038/s41522-023-00418-z
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002103 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002321
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2163413
+  organism_label: Metschnikowia aff. pulcherrima
+  evidence:
+  - reference: PMID:31081214
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002321 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP034458.1
+  locus_from: 1429481
+  locus_to: 1436146
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+- accession: mibig:BGC0002103
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:224308
+  organism_label: Bacillus subtilis subsp. subtilis str. 168
+  evidence:
+  - reference: DOI:10.1038/s41522-023-00418-z
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002103 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:NC_000964.3
+  locus_from: 3598040
+  locus_to: 3606734
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002321
+  source_label: pulcherriminic acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7645690317
+- source: MIBIG
+  source_id: BGC0002103
+  source_label: pulcherriminic acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-d233e965fe
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002103, BGC0002321.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

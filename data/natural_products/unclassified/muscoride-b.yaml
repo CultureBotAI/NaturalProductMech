@@ -1,0 +1,116 @@
+identifier: naturalproductmech:mibig-f4bf230570
+label: muscoride B
+chemical_structure:
+  smiles: CC[C@H](C)[C@H](NCC=C(C)C)C(=O)N1CCC[C@H]1C1=NC(C2=NC(C3=NC(C(=O)OCC=C(C)C)=CO3)=C(C)O2)=CO1
+  standard_inchi: InChI=1S/C31H41N5O6/c1-8-20(6)25(32-13-11-18(2)3)30(37)36-14-9-10-24(36)28-33-22(16-40-28)27-35-26(21(7)42-27)29-34-23(17-41-29)31(38)39-15-12-19(4)5/h11-12,16-17,20,24-25,32H,8-10,13-15H2,1-7H3/t20-,24-,25-/m0/s1
+  standard_inchi_key: RYLVRVUEEVJKJO-OPXMRZJTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002485
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+- OTHER
+- TERPENE
+xrefs:
+- npatlas:NPA025875
+producer_organisms:
+- taxon_id: NCBITaxon:1181
+  taxon_label: Desmonostoc sp. PCC 7906
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002485
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:31674754
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002485 entry version 2; citation taken from the entry level
+- taxon_id: NCBITaxon:2665154
+  taxon_label: Nostoc sp. UHCC-0398
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002551
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31674754
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002551 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002485
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1181
+  organism_label: Desmonostoc sp. PCC 7906
+  evidence:
+  - reference: PMID:31674754
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002485 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MK806443.1
+  locus_from: 1
+  locus_to: 14448
+  bgc_class:
+  - RIBOSOMAL
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0002551
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2665154
+  organism_label: Nostoc sp. UHCC-0398
+  evidence:
+  - reference: PMID:31674754
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002551 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MK806444.1
+  locus_from: 1
+  locus_to: 13360
+  bgc_class:
+  - RIBOSOMAL
+  - OTHER
+  - TERPENE
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002485
+  source_label: muscoride B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-f4bf230570
+- source: MIBIG
+  source_id: BGC0002551
+  source_label: muscoride B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-4124ad31d2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002485, BGC0002551.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

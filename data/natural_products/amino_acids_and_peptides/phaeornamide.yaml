@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-36da3363a1
+label: phaeornamide
+chemical_structure:
+  smiles: NCC(N[C@@H](C[C@H](O)CNC(C[C@@H](O)CCCCCCC)=O)C(N[C@@H](CO)C(N[C@@H]1C(N[C@H](C(N[C@@H](C(C)C)C(N[C@H](C(N[C@H](C(N[C@H](C(O)=O)CCSC)=O)[C@@H](C)CC)=O)[C@H](SC1)C)=O)=O)[C@H](O)C)=O)=O)=O)=O
+  standard_inchi: InChI=1S/C47H84N10O15S2/c1-9-11-12-13-14-15-28(60)19-34(62)49-21-29(61)18-31(50-35(63)20-48)40(64)52-32(22-58)41(65)53-33-23-74-27(7)39(57-43(67)36(24(3)4)54-45(69)38(26(6)59)56-42(33)66)46(70)55-37(25(5)10-2)44(68)51-30(47(71)72)16-17-73-8/h24-33,36-39,58-61H,9-23,48H2,1-8H3,(H,49,62)(H,50,63)(H,51,68)(H,52,64)(H,53,65)(H,54,69)(H,55,70)(H,56,66)(H,57,67)(H,71,72)/t25-,26+,27+,28-,29-,30-,31-,32-,33-,36-,37-,38-,39-/m0/s1
+  standard_inchi_key: PFEDQCDWQAYHCI-FJKBZWHWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002698
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+compound_classes:
+- Lipopeptide
+producer_organisms:
+- taxon_id: NCBITaxon:999550
+  taxon_label: Pseudophaeobacter arcticus DSM 23566
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002698
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1073/pnas.2113120119
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002698 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002698
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:999550
+  organism_label: Pseudophaeobacter arcticus DSM 23566
+  evidence:
+  - reference: DOI:10.1073/pnas.2113120119
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002698 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:NZ_KI421507.1
+  locus_from: 626503
+  locus_to: 639333
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002698
+  source_label: phaeornamide
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-36da3363a1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

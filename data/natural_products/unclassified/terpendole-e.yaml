@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-b1d38b6039
+label: terpendole E
+chemical_structure:
+  smiles: '[H][C@]12CC3=C(NC4=CC=CC=C34)[C@]1(C)[C@@]1(C)CC[C@]3([H])O[C@@H](C[C@@H](O)[C@@]3(C)[C@]1([H])CC2)C(C)(C)O'
+  standard_inchi: InChI=1S/C28H39NO3/c1-25(2,31)23-15-21(30)27(4)20-11-10-16-14-18-17-8-6-7-9-19(17)29-24(18)28(16,5)26(20,3)13-12-22(27)32-23/h6-9,16,20-23,29-31H,10-15H2,1-5H3/t16-,20+,21+,22-,23-,26-,27+,28+/m0/s1
+  standard_inchi_key: SVYIMXYKHRBHSG-KYYKPQATSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001260
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Terpenoids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Indole-Diterpenoid alkaloids (Penitrems)
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA016267
+- pubchem:10094631
+producer_organisms:
+- taxon_id: NCBITaxon:124418
+  taxon_label: Tolypocladium album
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001260
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1002/cbic.201300808
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001260 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001260
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:124418
+  organism_label: Tolypocladium album
+  evidence:
+  - reference: DOI:10.1002/cbic.201300808
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001260 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:AB725916.1
+  locus_from: 3424
+  locus_to: 18699
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001260
+  source_label: terpendole E
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b1d38b6039
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

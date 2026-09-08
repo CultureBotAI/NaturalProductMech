@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-5f2fad2a0d
+label: chaxamycin A
+chemical_structure:
+  smiles: C[C@H]1\C=C\C=C/C(=O)NC2=C(C)C(=O)C3=C(C(O)=C(C)C(O)=C3C2=O)C(=O)\C(C)=C\[C@H](C)[C@H](O)[C@@H](C)[C@@H](O)[C@H](C)[C@H](O)[C@H](C)[C@H]1O
+  standard_inchi: InChI=1S/C35H45NO10/c1-14-11-9-10-12-22(37)36-26-17(4)32(43)23-24(33(44)21(8)34(45)25(23)35(26)46)29(40)16(3)13-15(2)28(39)19(6)31(42)20(7)30(41)18(5)27(14)38/h9-15,18-20,27-28,30-31,38-39,41-42,44-45H,1-8H3,(H,36,37)/b11-9+,12-10-,16-13+/t14-,15-,18+,19+,20+,27-,28-,30+,31+/m0/s1
+  standard_inchi_key: OWRAZHDHNJAEKU-NMCWGSMOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001287
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA015733
+- pubchem:53344650
+producer_organisms:
+- taxon_id: NCBITaxon:1437453
+  taxon_label: Streptomyces leeuwenhoekii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001287
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26092459
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001287 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001287
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1437453
+  organism_label: Streptomyces leeuwenhoekii
+  evidence:
+  - reference: PMID:26092459
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001287 entry version 5; citation taken from the entry level
+  genome_accession: genbank:LN831790.1
+  locus_from: 1211049
+  locus_to: 1289829
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001287
+  source_label: chaxamycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5f2fad2a0d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

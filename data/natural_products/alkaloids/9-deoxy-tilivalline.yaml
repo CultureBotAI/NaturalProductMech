@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-2b1c996e00
+label: 9-deoxy tilivalline
+chemical_structure:
+  smiles: O=C1C2=C(C=CC=C2)N[C@@H](C3=CNC4=C3C=CC=C4)[C@@]5([H])N1CCC5
+  standard_inchi: InChI=1S/C20H19N3O/c24-20-14-7-2-4-9-17(14)22-19(18-10-5-11-23(18)20)15-12-21-16-8-3-1-6-13(15)16/h1-4,6-9,12,18-19,21-22H,5,10-11H2/t18-,19-/m0/s1
+  standard_inchi_key: CAWZYUQNVABYFN-OALUTQOASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000446
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Benzodiazepine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:571
+  taxon_label: Klebsiella oxytoca
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000446
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:25157164
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000446 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000446
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:571
+  organism_label: Klebsiella oxytoca
+  evidence:
+  - reference: PMID:25157164
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000446 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HG425356.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000446
+  source_label: 9-deoxy tilivalline
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2b1c996e00
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

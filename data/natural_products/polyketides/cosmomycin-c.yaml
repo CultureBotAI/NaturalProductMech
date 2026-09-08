@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-12602acb75
+label: cosmomycin C
+chemical_structure:
+  smiles: CC[C@@]1(O)C[C@H](O[C@H]2C[C@@H]([C@H](O[C@H]3C[C@H](O)[C@H](O[C@H]4CC[C@H](O)[C@H](C)O4)[C@H](C)O3)[C@H](C)O2)N(C)C)C2=C(O)C3=C(C(O)=C2[C@H]1O[C@H]1C[C@@H]([C@H](O[C@H]2CC[C@H](O[C@H]4CC[C@H](O)[C@H](C)O4)[C@H](C)O2)[C@H](C)O1)N(C)C)C(=O)C1=C(C(O)=CC=C1)C3=O
+  standard_inchi: InChI=1S/C60H88N2O21/c1-12-60(71)25-40(79-44-22-33(61(8)9)57(30(6)75-44)82-46-24-38(66)58(31(7)77-46)81-42-20-17-36(64)27(3)73-42)48-51(55(70)49-50(54(48)69)53(68)47-32(52(49)67)14-13-15-37(47)65)59(60)83-45-23-34(62(10)11)56(29(5)76-45)80-43-21-18-39(28(4)74-43)78-41-19-16-35(63)26(2)72-41/h13-15,26-31,33-36,38-46,56-59,63-66,69-71H,12,16-25H2,1-11H3/t26-,27-,28-,29-,30-,31-,33-,34-,35-,36-,38-,39-,40-,41-,42-,43-,44-,45-,46-,56+,57+,58+,59+,60+/m0/s1
+  standard_inchi_key: JRCMJKKALYUURJ-OVYBONNASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001558
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthracyclines
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA02230
+producer_organisms:
+- taxon_id: NCBITaxon:1169155
+  taxon_label: Streptomyces sp. CNT302
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001558
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28333450
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001558 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001558
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1169155
+  organism_label: Streptomyces sp. CNT302
+  evidence:
+  - reference: PMID:28333450
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001558 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_KB898282.1
+  locus_from: 104106
+  locus_to: 158376
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001558
+  source_label: cosmomycin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-12602acb75
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-8b2fd1a243
+label: dehydrophos
+chemical_structure:
+  smiles: CC(CC(NC(CN)=O)C(NC(P(O)(OC)=O)=C)=O)C
+  standard_inchi: InChI=1S/C11H22N3O5P/c1-7(2)5-9(14-10(15)6-12)11(16)13-8(3)20(17,18)19-4/h7,9H,3,5-6,12H2,1-2,4H3,(H,13,16)(H,14,15)(H,17,18)
+  standard_inchi_key: AEMANCFFPKYKRB-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000897
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:67320
+  taxon_label: Streptomyces luridus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000897
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20416511
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000897 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000897
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67320
+  organism_label: Streptomyces luridus
+  evidence:
+  - reference: PMID:20416511
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000897 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GU199252.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000897
+  source_label: dehydrophos
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8b2fd1a243
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-89c208b99a
+label: laidlomycin
+chemical_structure:
+  smiles: CCC(=O)OC(C(C)C1OC2(CCC(C)(O2)C2CCC(C)(O2)C2OC(CC2C)C2OC(O)(CO)C(C)CC2C)CC(O)C1C)C(C)C(O)=O
+  standard_inchi: InChI=1S/C37H62O12/c1-10-28(40)45-30(24(7)33(41)42)23(6)31-22(5)25(39)17-36(47-31)14-13-34(8,49-36)27-11-12-35(9,46-27)32-20(3)16-26(44-32)29-19(2)15-21(4)37(43,18-38)48-29/h19-27,29-32,38-39,43H,10-18H2,1-9H3,(H,41,42)
+  standard_inchi_key: ZNBNBTIDJSKEAM-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000084
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polyethers
+  class_results:
+  - Polyether ionophores
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA016744
+- pubchem:91790
+producer_organisms:
+- taxon_id: NCBITaxon:272618
+  taxon_label: Streptomyces sp. CS684
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000084
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17342048
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000084 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000084
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:272618
+  organism_label: Streptomyces sp. CS684
+  evidence:
+  - reference: PMID:17342048
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000084 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JQ793783.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000084
+  source_label: laidlomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-89c208b99a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

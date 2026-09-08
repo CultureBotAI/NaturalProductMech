@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-e73daf12fe
+label: Tryptorubin A
+chemical_structure:
+  smiles: '[H][C@@]12CC3=CC=C(O)C(=C3)N3C=C(C[C@H](NC(=O)[C@H](C)N)C(=O)N1)C1=C3C=CC(=C1)C13C[C@H](N([C@H]1NC1=C3C=CC=C1)C(=O)[C@@H](NC2=O)[C@@H](C)CC)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(O)=O'
+  standard_inchi: InChI=1S/C49H52N8O9/c1-4-24(2)41-46(64)57-39(45(63)53-36(47(65)66)17-26-9-13-30(58)14-10-26)22-49(32-7-5-6-8-33(32)54-48(49)57)29-12-15-37-31(21-29)28-20-35(51-42(60)25(3)50)43(61)52-34(44(62)55-41)18-27-11-16-40(59)38(19-27)56(37)23-28/h5-16,19,21,23-25,34-36,39,41,48,54,58-59H,4,17-18,20,22,50H2,1-3H3,(H,51,60)(H,52,61)(H,53,63)(H,55,62)(H,65,66)/t24-,25-,34-,35-,36-,39-,41-,48+,49?/m0/s1
+  standard_inchi_key: GKGJGIYXAKOIQL-WRLNOBJFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002750
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA022838
+producer_organisms:
+- taxon_id: NCBITaxon:1984801
+  taxon_label: Streptomyces sp. CLI2509
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002750
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1002/anie.202208361
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002750 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002750
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1984801
+  organism_label: Streptomyces sp. CLI2509
+  evidence:
+  - reference: DOI:10.1002/anie.202208361
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002750 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP021118.1
+  locus_from: 965782
+  locus_to: 965969
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002750
+  source_label: Tryptorubin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-e73daf12fe
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

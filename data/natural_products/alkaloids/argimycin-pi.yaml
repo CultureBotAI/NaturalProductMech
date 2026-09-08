@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-e4440d353a
+label: argimycin PI
+chemical_structure:
+  smiles: O=C(O)[C@@H](NC(C)=O)CS/C(C)=C([H])/C([H])=C1C=CC2=C\1C=CC=N2
+  standard_inchi: InChI=1S/C17H18N2O3S/c1-11(23-10-16(17(21)22)19-12(2)20)5-6-13-7-8-15-14(13)4-3-9-18-15/h3-9,16H,10H2,1-2H3,(H,19,20)(H,21,22)/b11-5+,13-6+/t16-/m0/s1
+  standard_inchi_key: RDOAILCTQUQNDX-KPHVXAMESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001433
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Nicotinic acid alkaloids
+  class_results:
+  - Pyridine alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:41951
+  taxon_label: Streptomyces argillaceus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001433
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.3389/fmicb.2017.00194
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001433 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001433
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:41951
+  organism_label: Streptomyces argillaceus
+  evidence:
+  - reference: DOI:10.3389/fmicb.2017.00194
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001433 entry version 5; citation taken from the entry level
+  genome_accession: genbank:LT615255.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001433
+  source_label: argimycin PI
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e4440d353a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

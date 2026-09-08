@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-6a16688698
+label: 10,11-dihydro-8-deoxy-12,13-deepoxy-12,13-dihydrochalcomycin
+chemical_structure:
+  smiles: C[C@H]1C[C@H](C(=O)CCCC[C@H]([C@H](OC(=O)/C=C/[C@@H]([C@H]1O[C@H]2[C@@H]([C@H](C[C@H](O2)C)OC)O)C)C)O[C@H]3[C@@H]([C@@H]([C@@H]([C@H](O3)C)O)OC)OC)C
+  standard_inchi: InChI=1S/C34H58O12/c1-18-14-15-27(36)43-22(5)25(45-34-32(41-9)31(40-8)28(37)23(6)44-34)13-11-10-12-24(35)19(2)16-20(3)30(18)46-33-29(38)26(39-7)17-21(4)42-33/h14-15,18-23,25-26,28-34,37-38H,10-13,16-17H2,1-9H3/b15-14+/t18-,19+,20-,21+,22+,23+,25+,26-,28+,29+,30+,31+,32+,33-,34-/m0/s1
+  standard_inchi_key: GACUILYHCBCNRP-YIBQJUBRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000047
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Tylosins
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:102274629
+producer_organisms:
+- taxon_id: NCBITaxon:201500
+  taxon_label: Streptomyces sp. KCTC 0041BP
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000047
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17053005
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000047 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000047
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:201500
+  organism_label: Streptomyces sp. KCTC 0041BP
+  evidence:
+  - reference: PMID:17053005
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000047 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY118081.2
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000047
+  source_label: 10,11-dihydro-8-deoxy-12,13-deepoxy-12,13-dihydrochalcomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6a16688698
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

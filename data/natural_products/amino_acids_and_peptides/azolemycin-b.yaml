@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-45c1747c4f
+label: azolemycin B
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H](C(=O)OC)NC(=O)C1=C(OC(=N1)C2=CSC(=N2)C3=C(OC(=N3)C4=COC(=N4)[C@H](C(C)C)NC(=O)/C(=N/O)/C(C)C)C)C
+  standard_inchi: InChI=1S/C31H39N7O8S/c1-10-15(6)22(31(41)43-9)35-26(40)23-16(7)45-28(36-23)19-12-47-30(33-19)24-17(8)46-27(37-24)18-11-44-29(32-18)21(14(4)5)34-25(39)20(38-42)13(2)3/h11-15,21-22,42H,10H2,1-9H3,(H,34,39)(H,35,40)/b38-20+/t15-,21-,22-/m0/s1
+  standard_inchi_key: OGPVNMCZOXNJEF-JIXNLBNFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002584
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA002151
+producer_organisms:
+- taxon_id: NCBITaxon:634337
+  taxon_label: Streptomyces sp. FXJ1.264
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002584
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:28791101
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002584 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002584
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:634337
+  organism_label: Streptomyces sp. FXJ1.264
+  evidence:
+  - reference: PMID:28791101
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002584 entry version 2; citation taken from the entry level
+  genome_accession: genbank:KT336319.1
+  locus_from: 1
+  locus_to: 13427
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002584
+  source_label: azolemycin B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-45c1747c4f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

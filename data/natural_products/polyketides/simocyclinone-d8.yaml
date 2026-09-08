@@ -1,0 +1,113 @@
+identifier: naturalproductmech:mibig-e03313fa44
+label: simocyclinone D8
+chemical_structure:
+  smiles: C[C@H]1O[C@H](C[C@@H](OC(=O)\C=C\C=C\C=C\C=C\C(=O)NC2=C(O)C3=C(OC2=O)C(Cl)=C(O)C=C3)[C@@H]1OC(C)=O)C1=CC=C2C(=O)C34OC3(C(O)CC3(O)CC(C)=CC(=O)C43O)C(O)C2=C1O
+  standard_inchi: InChI=1S/C46H42ClNO18/c1-20-16-29(51)45(61)43(60,18-20)19-30(52)44-41(58)33-24(40(57)46(44,45)66-44)13-12-23(36(33)55)27-17-28(38(21(2)62-27)63-22(3)49)64-32(54)11-9-7-5-4-6-8-10-31(53)48-35-37(56)25-14-15-26(50)34(47)39(25)65-42(35)59/h4-16,21,27-28,30,38,41,50,52,55-56,58,60-61H,17-19H2,1-3H3,(H,48,53)/b6-4+,7-5+,10-8+,11-9+/t21-,27-,28-,30?,38-,41?,43?,44?,45?,46?/m1/s1
+  standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001072
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+- SACCHARIDE
+- OTHER
+xrefs:
+- npatlas:NPA08898
+- pubchem:54736483
+- chembl:CHEMBL1235969
+producer_organisms:
+- taxon_id: NCBITaxon:1890
+  taxon_label: Streptomyces antibioticus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001072
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24594357
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001072 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1890
+  taxon_label: Streptomyces antibioticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000270
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12115055
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000270 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001072
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1890
+  organism_label: Streptomyces antibioticus
+  evidence:
+  - reference: PMID:24594357
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001072 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF324838.2
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0000270
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1890
+  organism_label: Streptomyces antibioticus
+  evidence:
+  - reference: PMID:12115055
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000270 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF322256.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001072
+  source_label: simocyclinone D8
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e03313fa44
+- source: MIBIG
+  source_id: BGC0000270
+  source_label: simocyclinone D8
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7327c31dfe
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000270, BGC0001072.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-fb87f28c4d
+label: roseoflavin
+chemical_structure:
+  smiles: CC1=CC2=C(C=C1N(C)C)N(C3=NC(=O)NC(=O)C3=N2)CC(C(C(CO)O)O)O
+  standard_inchi: InChI=1S/C18H23N5O6/c1-8-4-9-11(5-10(8)22(2)3)23(6-12(25)15(27)13(26)7-24)16-14(19-9)17(28)21-18(29)20-16/h4-5,12-13,15,24-27H,6-7H2,1-3H3,(H,21,28,29)
+  standard_inchi_key: IGQLDUYTWDABFK-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000927
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Pseudoalkaloids
+  class_results:
+  - pteridine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:170973
+producer_organisms:
+- taxon_id: NCBITaxon:1214101
+  taxon_label: Streptomyces davaonensis JCM 4913
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000927
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23043000
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000927 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000927
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1214101
+  organism_label: Streptomyces davaonensis JCM 4913
+  evidence:
+  - reference: PMID:23043000
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000927 entry version 3; citation taken from the entry level
+  genome_accession: genbank:HE971709.1
+  locus_from: 5263727
+  locus_to: 5266176
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000927
+  source_label: roseoflavin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-fb87f28c4d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

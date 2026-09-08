@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-83a1fc1265
+label: avermitilol
+chemical_structure:
+  smiles: '[H][C@@]12CC[C@]3(C)[C@@H](O)CC[C@@H](C)[C@@]3([H])[C@]1([H])C2(C)C'
+  standard_inchi: InChI=1S/C15H26O/c1-9-5-6-11(16)15(4)8-7-10-13(12(9)15)14(10,2)3/h9-13,16H,5-8H2,1-4H3/t9-,10-,11+,12+,13-,15-/m1/s1
+  standard_inchi_key: BLGPPSRDEKNCLT-CDWXYHGHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000683
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Cycloeudesmane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA019411
+producer_organisms:
+- taxon_id: NCBITaxon:227882
+  taxon_label: Streptomyces avermitilis MA-4680 = NBRC 14893
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000683
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20536237
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000683 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000683
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:227882
+  organism_label: Streptomyces avermitilis MA-4680 = NBRC 14893
+  evidence:
+  - reference: PMID:20536237
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000683 entry version 3; citation taken from the entry level
+  genome_accession: genbank:BA000030.3
+  locus_from: 86073
+  locus_to: 87080
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000683
+  source_label: avermitilol
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-83a1fc1265
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

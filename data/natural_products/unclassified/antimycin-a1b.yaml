@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-a1391b5f90
+label: antimycin A1B
+chemical_structure:
+  smiles: CCCCCCC1C(C(OC(=O)C(C(OC1=O)C)NC(=O)C2=C(C(=CC=C2)NC=O)O)C)OC(=O)CC(C)C
+  standard_inchi: InChI=1S/C28H40N2O9/c1-6-7-8-9-11-20-25(39-22(32)14-16(2)3)18(5)38-28(36)23(17(4)37-27(20)35)30-26(34)19-12-10-13-21(24(19)33)29-15-31/h10,12-13,15-18,20,23,25,33H,6-9,11,14H2,1-5H3,(H,29,31)(H,30,34)
+  standard_inchi_key: UIFFUZWRFRDZJC-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001455
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Antimycins
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:12550
+producer_organisms:
+- taxon_id: NCBITaxon:41951
+  taxon_label: Streptomyces argillaceus
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0001455
+  source: MIBIG
+  source_version: '6'
+  notes: 'Locus evidence: Correlation of genomic and metabolomic data. That evidence
+    grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:29795673
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001455 entry version 6; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001455
+  entry_version: '6'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:41951
+  organism_label: Streptomyces argillaceus
+  evidence:
+  - reference: PMID:29795673
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001455 entry version 6; citation taken from the entry level
+  genome_accession: genbank:LT989885.1
+  locus_from: 1
+  locus_to: 26743
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Correlation of genomic and metabolomic data
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001455
+  source_label: antimycin A1B
+  source_version: '6'
+  minted_identifier: naturalproductmech:mibig-a1391b5f90
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-8c8a57f2e1
+label: 7-prenylisatin
+chemical_structure:
+  smiles: CC(C)=CCC1=CC=CC2=C1NC(=O)C2=O
+  standard_inchi: InChI=1S/C13H13NO2/c1-8(2)6-7-9-4-3-5-10-11(9)14-13(16)12(10)15/h3-6H,7H2,1-2H3,(H,14,15,16)
+  standard_inchi_key: PNLFSENKVNKKSE-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001294
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Simple indole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA014784
+producer_organisms:
+- taxon_id: NCBITaxon:1488357
+  taxon_label: Streptomyces sp. MBT28
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001294
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26438963
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001294 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001294
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1488357
+  organism_label: Streptomyces sp. MBT28
+  evidence:
+  - reference: PMID:26438963
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001294 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_LARV01000172.1
+  locus_from: 26868
+  locus_to: 35886
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001294
+  source_label: 7-prenylisatin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8c8a57f2e1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

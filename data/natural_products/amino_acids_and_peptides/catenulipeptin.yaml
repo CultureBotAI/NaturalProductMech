@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-5fc8c318a5
+label: catenulipeptin
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]1NC(=O)CNC(=O)[C@H](C[C@@]2(CSC[C@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC2=O)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CC(C)C)C(O)=O)NC1=O)NC(=O)[C@H](CC1=CN=CN1)NC(=O)CNC(=O)[C@H](CC(N)=O)NC(=O)[C@@H]1CSC[C@@]2(C[C@H](NC(=O)[C@H](CC(O)=O)NC(=O)CNC(=O)CNC(=O)CNC(=O)CNC(=O)[C@H](CC3=CN=CN3)NC(=O)CN)C(=O)NCC(=O)N[C@@H](CC(C)C)C(=O)N2)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H]([C@@H](C)O)C(=O)NCC(=O)N1
+  standard_inchi: InChI=1S/C99H152N32O34S2/c1-14-48(12)78-94(161)131-98(39-167-38-64(90(157)121-59(23-76(145)146)88(155)122-60(95(162)163)18-46(8)9)125-84(151)52(15-43(2)3)119-85(152)53(16-44(4)5)126-96(98)164)24-61(83(150)110-36-74(142)127-78)123-86(153)56(20-51-28-103-42-113-51)116-72(140)33-108-81(148)57(21-65(101)133)120-89(156)63-37-166-40-99(97(165)129-77(47(10)11)93(160)128-79(49(13)132)92(159)111-35-73(141)118-63)25-62(82(149)109-34-71(139)115-54(17-45(6)7)91(158)130-99)124-87(154)58(22-75(143)144)117-70(138)32-106-68(136)30-104-67(135)29-105-69(137)31-107-80(147)55(114-66(134)26-100)19-50-27-102-41-112-50/h27-28,41-49,52-64,77-79,132H,14-26,29-40,100H2,1-13H3,(H2,101,133)(H,102,112)(H,103,113)(H,104,135)(H,105,137)(H,106,136)(H,107,147)(H,108,148)(H,109,149)(H,110,150)(H,111,159)(H,114,134)(H,115,139)(H,116,140)(H,117,138)(H,118,141)(H,119,152)(H,120,156)(H,121,157)(H,122,155)(H,123,153)(H,124,154)(H,125,151)(H,126,164)(H,127,142)(H,128,160)(H,129,165)(H,130,158)(H,131,161)(H,143,144)(H,145,146)(H,162,163)/t48-,49+,52-,53-,54-,55-,56-,57-,58-,59-,60-,61-,62-,63-,64-,77-,78-,79-,98-,99-/m0/s1
+  standard_inchi_key: AXDPBAOMGSGZMT-PMTSSQHDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000501
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA07476
+producer_organisms:
+- taxon_id: NCBITaxon:479433
+  taxon_label: Catenulispora acidiphila DSM 44928
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000501
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22725258
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000501 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000501
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:479433
+  organism_label: Catenulispora acidiphila DSM 44928
+  evidence:
+  - reference: PMID:22725258
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000501 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP001700.1
+  locus_from: 4809160
+  locus_to: 4816367
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000501
+  source_label: catenulipeptin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-5fc8c318a5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

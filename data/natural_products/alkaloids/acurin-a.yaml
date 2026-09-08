@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-c28826707b
+label: acurin A
+chemical_structure:
+  smiles: C/C=C(\C=C(C)\C=C\C=C\C=C(/C)C(=O)[C@H]1C[C@H](CO)NC1=O)C(=O)OC
+  standard_inchi: InChI=1S/C21H27NO5/c1-5-16(21(26)27-4)11-14(2)9-7-6-8-10-15(3)19(24)18-12-17(13-23)22-20(18)25/h5-11,17-18,23H,12-13H2,1-4H3,(H,22,25)/b8-6+,9-7+,14-11+,15-10+,16-5+/t17-,18-/m1/s1
+  standard_inchi_key: JZIMOTIFZOTFPM-OJDRRNJJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002169
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tetramate alkaloids
+  class_results:
+  - Simple tetramate alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA032971
+producer_organisms:
+- taxon_id: NCBITaxon:690307
+  taxon_label: Aspergillus aculeatus ATCC 16872
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002169
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32234543
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002169 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002169
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:690307
+  organism_label: Aspergillus aculeatus ATCC 16872
+  evidence:
+  - reference: PMID:32234543
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002169 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KV878980.1
+  locus_from: 937594
+  locus_to: 982528
+  bgc_class:
+  - PKS
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002169
+  source_label: acurin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-c28826707b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

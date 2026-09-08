@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-b9286d993c
+label: roquefortine D
+chemical_structure:
+  smiles: CC(C)(C=C)C12CC3N(C1NC1=CC=CC=C21)C(=O)C(CC1=CN=CN1)NC3=O
+  standard_inchi: InChI=1S/C22H25N5O2/c1-4-21(2,3)22-10-17-18(28)25-16(9-13-11-23-12-24-13)19(29)27(17)20(22)26-15-8-6-5-7-14(15)22/h4-8,11-12,16-17,20,26H,1,9-10H2,2-3H3,(H,23,24)(H,25,28)
+  standard_inchi_key: IQVNREJWRXOHEO-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000420
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Other indole diketopiperazine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Peptide alkaloid
+xrefs:
+- npatlas:NPA010085
+producer_organisms:
+- taxon_id: NCBITaxon:500485
+  taxon_label: Penicillium rubens Wisconsin 54-1255
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000420
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1371/journal.pone.0065328
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000420 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000420
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:500485
+  organism_label: Penicillium rubens Wisconsin 54-1255
+  evidence:
+  - reference: DOI:10.1371/journal.pone.0065328
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000420 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AM920436.1
+  locus_from: 3638081
+  locus_to: 3658739
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000420
+  source_label: roquefortine D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b9286d993c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

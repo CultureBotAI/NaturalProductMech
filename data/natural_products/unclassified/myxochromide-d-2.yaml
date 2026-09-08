@@ -1,0 +1,168 @@
+identifier: naturalproductmech:mibig-def3ba2d92
+label: myxochromide D
+chemical_structure:
+  smiles: C1(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](CCC(=O)N)C(=O)O[C@H](C)[C@H](N(C)C(=O)/C=C/C=C/C=C/C=C/C=C/C=C/C=C/CC)C(=O)N[C@@H]1C
+  standard_inchi: InChI=1S/C39H56N6O8/c1-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-33(47)45(7)34-29(6)53-39(52)30(23-24-32(40)46)43-35(48)27(4)41-37(50)31(25-26(2)3)44-36(49)28(5)42-38(34)51/h9-22,26-31,34H,8,23-25H2,1-7H3,(H2,40,46)(H,41,50)(H,42,51)(H,43,48)(H,44,49)/b10-9+,12-11+,14-13+,16-15+,18-17+,20-19+,22-21+/t27-,28+,29+,30-,31-,34-/m0/s1
+  standard_inchi_key: CKLSQBHYSVQHIP-RNOUXJFASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001417
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1934914
+  taxon_label: Cystobacterineae bacterium
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001417
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001417 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:394096
+  taxon_label: Hyalangium minutum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001418
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001418 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:394096
+  taxon_label: Hyalangium minutum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001419
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001419 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:394096
+  taxon_label: Hyalangium minutum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001420
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001420 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001417
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1934914
+  organism_label: Cystobacterineae bacterium
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001417 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622587.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001418
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:394096
+  organism_label: Hyalangium minutum
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001418 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622588.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001419
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:394096
+  organism_label: Hyalangium minutum
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001419 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622589.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001420
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:394096
+  organism_label: Hyalangium minutum
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001420 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622590.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001417
+  source_label: myxochromide D
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-def3ba2d92
+- source: MIBIG
+  source_id: BGC0001418
+  source_label: myxochromide D
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-30c3bd7bad
+- source: MIBIG
+  source_id: BGC0001419
+  source_label: myxochromide D
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-f1c90e2365
+- source: MIBIG
+  source_id: BGC0001420
+  source_label: myxochromide D
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-ceac59b587
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001417, BGC0001418,
+    BGC0001419, BGC0001420. Confirm they describe the same compound rather than an
+    upstream cross-reference error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

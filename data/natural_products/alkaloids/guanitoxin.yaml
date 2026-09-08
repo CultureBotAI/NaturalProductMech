@@ -1,0 +1,78 @@
+identifier: naturalproductmech:mibig-973a5e64e8
+label: guanitoxin
+chemical_structure:
+  smiles: CN(C)C[C@H]1CN=C(N1OP(=O)(O)OC)N
+  standard_inchi: InChI=1S/C7H17N4O4P/c1-10(2)5-6-4-9-7(8)11(6)15-16(12,13)14-3/h6H,4-5H2,1-3H3,(H2,8,9)(H,12,13)/t6-/m1/s1
+  standard_inchi_key: FYXHGVMFJYHPFX-ZCFIWIBFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002148
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Histidine alkaloids
+  class_results:
+  - Imidazole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+compound_classes:
+- Arginine-derived
+xrefs:
+- cyanometdb:CyanoMetDB_0313
+- pubchem:114989
+producer_organisms:
+- taxon_id: NCBITaxon:984208
+  taxon_label: Sphaerospermopsis torques-reginae ITEP-024
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002148
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Enzymatic assays|Gene expression correlated with compound
+    production|Heterologous expression. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/jacs.2c01424
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002148 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002148
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:984208
+  organism_label: Sphaerospermopsis torques-reginae ITEP-024
+  evidence:
+  - reference: DOI:10.1021/jacs.2c01424
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002148 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP080598.1
+  locus_from: 3534861
+  locus_to: 3547442
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Gene expression correlated with compound production
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002148
+  source_label: guanitoxin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-973a5e64e8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

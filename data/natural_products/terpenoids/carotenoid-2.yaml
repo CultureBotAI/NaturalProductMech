@@ -1,0 +1,523 @@
+identifier: naturalproductmech:mibig-8426508598
+label: carotenoid
+chemical_structure:
+  smiles: C[C@H](CCCCC(C)CCC[C@@H](C)CCCC(C)CCC=C(C)C)CCC[C@H](C)CCC[C@H](C)CCCC(C)(C)O[C@@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O
+  standard_inchi: InChI=1S/C46H90O6/c1-34(2)19-13-22-37(5)25-16-28-38(6)26-14-23-35(3)20-11-12-21-36(4)24-15-27-39(7)29-17-30-40(8)31-18-32-46(9,10)52-45-44(50)43(49)42(48)41(33-47)51-45/h19,35-45,47-50H,11-18,20-33H2,1-10H3/t35?,36-,37?,38-,39+,40+,41-,42-,43+,44-,45-/m1/s1
+  standard_inchi_key: MQXYWDPDLKUSFB-HOOXQTDMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000633
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:446841
+producer_organisms:
+- taxon_id: NCBITaxon:33903
+  taxon_label: Streptomyces avermitilis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000633
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:11572948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000633 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:1113698
+  taxon_label: Brevundimonas sp. SD212
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000634
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16085816
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000634 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:81397
+  taxon_label: Paracoccus sp. N81106
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000635
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:7733978
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000635 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:1703
+  taxon_label: Brevibacterium linens
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000636
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:10821176
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000636 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:1718
+  taxon_label: Corynebacterium glutamicum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000637
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:11432736
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000637 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:553
+  taxon_label: Pantoea ananatis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000638
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:2254247
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000638 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:338904
+  taxon_label: Enterobacteriaceae bacterium DC260
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000639
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16332796
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000639 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:338905
+  taxon_label: Enterobacteriaceae bacterium DC404
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000640
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16332796
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000640 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:338906
+  taxon_label: Enterobacteriaceae bacterium DC416
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000641
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16332796
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000641 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:338907
+  taxon_label: Enterobacteriaceae bacterium DC413
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000642
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16332796
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000642 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:41276
+  taxon_label: Brevundimonas vesicularis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000643
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16781830
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000643 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:370437
+  taxon_label: Dietzia sp. CQ4
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000644
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17008032
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000644 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:866895
+  taxon_label: Halobacillus halophilus DSM 2266
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000645
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18820900
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000645 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:1063
+  taxon_label: Rhodobacter sphaeroides
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000647
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:8021167
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000647 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:34
+  taxon_label: Myxococcus xanthus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000648
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:7588751
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000648 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:455632
+  taxon_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000649
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:11200234
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000649 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000633
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33903
+  organism_label: Streptomyces avermitilis
+  evidence:
+  - reference: PMID:11572948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000633 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AB070934.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000634
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1113698
+  organism_label: Brevundimonas sp. SD212
+  evidence:
+  - reference: PMID:16085816
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000634 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AB181388.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000635
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:81397
+  organism_label: Paracoccus sp. N81106
+  evidence:
+  - reference: PMID:7733978
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000635 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AB206672.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000636
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1703
+  organism_label: Brevibacterium linens
+  evidence:
+  - reference: PMID:10821176
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000636 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AF139916.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000637
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1718
+  organism_label: Corynebacterium glutamicum
+  evidence:
+  - reference: PMID:11432736
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000637 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AF159510.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000638
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:553
+  organism_label: Pantoea ananatis
+  evidence:
+  - reference: PMID:2254247
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000638 entry version 3; citation taken from the entry level
+  genome_accession: genbank:D90087.2
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000639
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:338904
+  organism_label: Enterobacteriaceae bacterium DC260
+  evidence:
+  - reference: PMID:16332796
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000639 entry version 3; citation taken from the entry level
+  genome_accession: genbank:DQ090833.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000640
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:338905
+  organism_label: Enterobacteriaceae bacterium DC404
+  evidence:
+  - reference: PMID:16332796
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000640 entry version 3; citation taken from the entry level
+  genome_accession: genbank:DQ090834.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000641
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:338906
+  organism_label: Enterobacteriaceae bacterium DC416
+  evidence:
+  - reference: PMID:16332796
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000641 entry version 3; citation taken from the entry level
+  genome_accession: genbank:DQ090835.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000642
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:338907
+  organism_label: Enterobacteriaceae bacterium DC413
+  evidence:
+  - reference: PMID:16332796
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000642 entry version 3; citation taken from the entry level
+  genome_accession: genbank:DQ090836.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000643
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:41276
+  organism_label: Brevundimonas vesicularis
+  evidence:
+  - reference: PMID:16781830
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000643 entry version 3; citation taken from the entry level
+  genome_accession: genbank:DQ309446.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000644
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:370437
+  organism_label: Dietzia sp. CQ4
+  evidence:
+  - reference: PMID:17008032
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000644 entry version 3; citation taken from the entry level
+  genome_accession: genbank:DQ369754.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000645
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:866895
+  organism_label: Halobacillus halophilus DSM 2266
+  evidence:
+  - reference: PMID:18820900
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000645 entry version 3; citation taken from the entry level
+  genome_accession: genbank:FJ040212.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000647
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1063
+  organism_label: Rhodobacter sphaeroides
+  evidence:
+  - reference: PMID:8021167
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000647 entry version 3; citation taken from the entry level
+  genome_accession: genbank:S71770.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000648
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:34
+  organism_label: Myxococcus xanthus
+  evidence:
+  - reference: PMID:7588751
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000648 entry version 3; citation taken from the entry level
+  genome_accession: genbank:Z21955.2
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000649
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455632
+  organism_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence:
+  - reference: PMID:11200234
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000649 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AF272737.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000633
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-8426508598
+- source: MIBIG
+  source_id: BGC0000634
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-cdd7d84372
+- source: MIBIG
+  source_id: BGC0000635
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-bddbfdc0d2
+- source: MIBIG
+  source_id: BGC0000636
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-bb1e03529b
+- source: MIBIG
+  source_id: BGC0000637
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-639fb26f02
+- source: MIBIG
+  source_id: BGC0000638
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3322a5c65b
+- source: MIBIG
+  source_id: BGC0000639
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-726202271b
+- source: MIBIG
+  source_id: BGC0000640
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b8e634b327
+- source: MIBIG
+  source_id: BGC0000641
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-459e1bdd15
+- source: MIBIG
+  source_id: BGC0000642
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-e3cbaaaa3c
+- source: MIBIG
+  source_id: BGC0000643
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-47ec914f16
+- source: MIBIG
+  source_id: BGC0000644
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b98ed5e19e
+- source: MIBIG
+  source_id: BGC0000645
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-df9dca82c6
+- source: MIBIG
+  source_id: BGC0000647
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f8edccf767
+- source: MIBIG
+  source_id: BGC0000648
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3c7bfe7c02
+- source: MIBIG
+  source_id: BGC0000649
+  source_label: carotenoid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b6b0d2dee4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000633, BGC0000634,
+    BGC0000635, BGC0000636, BGC0000637, BGC0000638, BGC0000639, BGC0000640, BGC0000641,
+    BGC0000642, BGC0000643, BGC0000644, BGC0000645, BGC0000647, BGC0000648, BGC0000649.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

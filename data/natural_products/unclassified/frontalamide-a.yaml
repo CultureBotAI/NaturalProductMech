@@ -1,0 +1,114 @@
+identifier: naturalproductmech:mibig-09c929043b
+label: frontalamide A
+chemical_structure:
+  smiles: C[C@H]1[C@H](C[C@H]2[C@@]1([C@H]3[C@H](C2)[C@H]4C/C=C\C(=O)NCCC(C5C(=O)C(=C(/C=C/[C@@H]4CC3=O)O)C(=O)N5)O)O)C=C
+  standard_inchi: InChI=1S/C29H36N2O7/c1-3-15-11-17-13-19-18-5-4-6-23(35)30-10-9-21(33)26-27(36)24(28(37)31-26)20(32)8-7-16(18)12-22(34)25(19)29(17,38)14(15)2/h3-4,6-8,14-19,21,25-26,32-33,38H,1,5,9-13H2,2H3,(H,30,35)(H,31,37)/b6-4-,8-7+,24-20?/t14-,15-,16+,17+,18-,19+,21?,25-,26?,29-/m0/s1
+  standard_inchi_key: FZFGBLTUJOOTPO-QRHYNJGYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000996
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrocyclic tetramic acids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA024804
+- pubchem:101515037
+producer_organisms:
+- taxon_id: NCBITaxon:591157
+  taxon_label: Streptomyces sp. SPB78
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000996
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20547882
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000996 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002509
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.6023/cjoc201912017
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002509 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000996
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:591157
+  organism_label: Streptomyces sp. SPB78
+  evidence:
+  - reference: PMID:20547882
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000996 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GG657742.1
+  locus_from: 4892742
+  locus_to: 4909316
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0002509
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: DOI:10.6023/cjoc201912017
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002509 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MN817126.1
+  locus_from: 1
+  locus_to: 22084
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000996
+  source_label: frontalamide A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-09c929043b
+- source: MIBIG
+  source_id: BGC0002509
+  source_label: frontalamide A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-2eda21209c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000996, BGC0002509.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

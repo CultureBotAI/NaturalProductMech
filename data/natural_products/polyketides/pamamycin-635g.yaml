@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-3a0d13e305
+label: pamamycin-635G
+chemical_structure:
+  smiles: CC[C@H]([C@H]1O[C@H](CC1)C[C@@H](N(C)C)CCC)[C@H]2C[C@H]3O[C@@H]([C@H](C(O[C@H](C[C@H]4O[C@H](CC4)[C@@H](C(O2)=O)CC)CCC)=O)CC)CC3
+  standard_inchi: InChI=1S/C37H65NO7/c1-8-13-24(38(6)7)21-26-15-18-32(41-26)29(10-3)35-23-28-17-20-33(43-28)30(11-4)36(39)44-25(14-9-2)22-27-16-19-34(42-27)31(12-5)37(40)45-35/h24-35H,8-23H2,1-7H3/t24-,25-,26+,27-,28-,29+,30+,31-,32-,33+,34+,35+/m0/s1
+  standard_inchi_key: KGVXHJZLIVSWEE-GBICOACTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001150
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polyethers
+  class_results:
+  - Macrotetrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Macrocyclic polyketide
+producer_organisms:
+- taxon_id: NCBITaxon:132473
+  taxon_label: Streptomyces alboniger
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001150
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
+    expression correlated with compound production. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1186/s12934-023-02231-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001150 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001150
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:132473
+  organism_label: Streptomyces alboniger
+  evidence:
+  - reference: DOI:10.1186/s12934-023-02231-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001150 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KM923741.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001150
+  source_label: pamamycin-635G
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3a0d13e305
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

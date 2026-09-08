@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-7b5fde4f37
+label: rhodochelin
+chemical_structure:
+  smiles: CC(OC(=O)[C@@H](N)CCCN(O)C=O)[C@H](NC(=O)C1=C(O)C(O)=CC=C1)C(=O)N[C@@H](CCCN(O)C=O)C(O)=O
+  standard_inchi: InChI=1S/C23H33N5O12/c1-13(40-23(37)15(24)6-3-9-27(38)11-29)18(26-20(33)14-5-2-8-17(31)19(14)32)21(34)25-16(22(35)36)7-4-10-28(39)12-30/h2,5,8,11-13,15-16,18,31-32,38-39H,3-4,6-7,9-10,24H2,1H3,(H,25,34)(H,26,33)(H,35,36)/t13?,15-,16-,18-/m0/s1
+  standard_inchi_key: JFONHXNWLVUYOJ-XGSMPJOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000417
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  - Small peptides
+  class_results:
+  - Depsipeptides
+  - Linear peptides
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA08134
+producer_organisms:
+- taxon_id: NCBITaxon:101510
+  taxon_label: Rhodococcus jostii RHA1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000417
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:21381663
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000417 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000417
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:101510
+  organism_label: Rhodococcus jostii RHA1
+  evidence:
+  - reference: PMID:21381663
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000417 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000431.1
+  locus_from: 2443456
+  locus_to: 2455531
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000417
+  source_label: rhodochelin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7b5fde4f37
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,63 @@
+identifier: naturalproductmech:mibig-4ea966a727
+label: CC-1065
+chemical_structure:
+  smiles: CC1=CNC2=C1[C@@]34C[C@@H]3CN(C4=CC2=O)C(=O)C5=CC6=C7CCN(C7=C(C(=C6N5)OC)O)C(=O)C8=CC9=C1CCN(C1=C(C(=C9N8)OC)O)C(=O)N
+  standard_inchi: InChI=1S/C37H33N7O8/c1-14-12-39-27-22(45)10-23-37(24(14)27)11-15(37)13-44(23)35(49)21-9-18-16-4-6-42(28(16)30(46)32(51-2)25(18)41-21)34(48)20-8-19-17-5-7-43(36(38)50)29(17)31(47)33(52-3)26(19)40-20/h8-10,12,15,39-41,46-47H,4-7,11,13H2,1-3H3,(H2,38,50)/t15-,37+/m1/s1
+  standard_inchi_key: UOWVMDUEMSNCAV-WYENRQIDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001540
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1981977
+  taxon_label: Streptomyces zelensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001540
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28426198
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001540 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001540
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1981977
+  organism_label: Streptomyces zelensis
+  evidence:
+  - reference: PMID:28426198
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001540 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY379149.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001540
+  source_label: CC-1065
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4ea966a727
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-94d1374f4a
+label: fabclavine Ib
+chemical_structure:
+  smiles: CC(CCCCCCCC(CCCCCCCC(CCCCCCCC(CCCCCCCC(CCNC(CC(C1CCCN1C(C2NC(C(NC(C(CC(NC2C)=O)NC([C@@H](NC(CC(C(O)=O)N)=O)Cc3ccccc3)=O)=O)CC(N)=O)=O)=O)O)=O)O)N)N)N)N
+  standard_inchi: InChI=1S/C68H121N13O12/c1-46(69)27-16-7-3-8-19-30-49(70)31-20-9-4-10-21-32-50(71)33-22-11-5-12-23-34-51(72)35-24-13-6-14-25-36-52(82)38-39-75-60(85)45-58(83)57-37-26-40-81(57)67(91)63-47(2)76-62(87)44-56(65(89)78-55(43-59(74)84)66(90)80-63)79-64(88)54(41-48-28-17-15-18-29-48)77-61(86)42-53(73)68(92)93/h15,17-18,28-29,46-47,49-58,63,82-83H,3-14,16,19-27,30-45,69-73H2,1-2H3,(H2,74,84)(H,75,85)(H,76,87)(H,77,86)(H,78,89)(H,79,88)(H,80,90)(H,92,93)/t46?,47?,49?,50?,51?,52?,53?,54-,55?,56?,57?,58?,63?/m0/s1
+  standard_inchi_key: IZSKWNSKICNTCU-KBXWAUECSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001130
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:290110
+  taxon_label: Xenorhabdus budapestensis
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0001130
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:24532262
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001130 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001130
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:290110
+  organism_label: Xenorhabdus budapestensis
+  evidence:
+  - reference: PMID:24532262
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001130 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NIBS01000014.1
+  locus_from: 52424
+  locus_to: 100650
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001130
+  source_label: fabclavine Ib
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-94d1374f4a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

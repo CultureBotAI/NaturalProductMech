@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-b01754c03a
+label: solanapyrone D
+chemical_structure:
+  smiles: '[H][C@@]12CCCC[C@@]1([H])[C@@H]([C@H](C)C=C2)C1=CC(OC)=C(C=O)C(=O)O1'
+  standard_inchi: InChI=1S/C18H22O4/c1-11-7-8-12-5-3-4-6-13(12)17(11)16-9-15(21-2)14(10-19)18(20)22-16/h7-13,17H,3-6H2,1-2H3/t11-,12+,13-,17-/m1/s1
+  standard_inchi_key: AWQLNKJBXASXDU-IPJQOSJUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000146
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 2-pyrone derivatives
+  - Decalins with 2-pyrones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA019901
+producer_organisms:
+- taxon_id: NCBITaxon:48100
+  taxon_label: Alternaria solani
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000146
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20486243
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000146 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000146
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:48100
+  organism_label: Alternaria solani
+  evidence:
+  - reference: PMID:20486243
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000146 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AB514562.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000146
+  source_label: solanapyrone D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b01754c03a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

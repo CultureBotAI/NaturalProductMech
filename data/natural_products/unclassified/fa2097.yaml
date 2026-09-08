@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-0acc87a2e5
+label: FA2097
+chemical_structure:
+  smiles: COC1=C(OC)C(O)=C([C@H]2SS[C@@]34C[C@]56O[C@H]5C=C[C@@H](O)[C@@H]6ON3C(=O)[C@@H]2N(C)C4=O)C=C1
+  standard_inchi: InChI=1S/C21H22N2O8S2/c1-22-13-16(9-4-6-11(28-2)15(29-3)14(9)25)32-33-21(19(22)27)8-20-12(30-20)7-5-10(24)17(20)31-23(21)18(13)26/h4-7,10,12-13,16-17,24-25H,8H2,1-3H3/t10-,12+,13-,16-,17+,20+,21-/m1/s1
+  standard_inchi_key: XOFUALCAHMHEHU-KWOIXVLLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002501
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Thiodiketopiperazine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA032768
+producer_organisms:
+- taxon_id: NCBITaxon:303698
+  taxon_label: Penicillium steckii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002501
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32816319
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002501 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002501
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:303698
+  organism_label: Penicillium steckii
+  evidence:
+  - reference: PMID:32816319
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002501 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT489695.1
+  locus_from: 1
+  locus_to: 53110
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002501
+  source_label: FA2097
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0acc87a2e5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

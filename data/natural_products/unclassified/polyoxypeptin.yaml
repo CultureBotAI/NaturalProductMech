@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-25247adfea
+label: polyoxypeptin
+chemical_structure:
+  smiles: '[H][C@]1(NC(=O)[C@@](C)(O)[C@@]2(O)CC[C@H](C[C@@H](C)CC)[C@@H](CC)O2)[C@@H](OC(=O)[C@]([H])(C(C)C)N(O)C(=O)[C@H]2N(CC[C@@]2(C)O)C(=O)[C@H]2C[C@@H](O)CNN2C(=O)[C@H](C)N(O)C(=O)[C@H]2CCCNN2C1=O)C(C)C'
+  standard_inchi: InChI=1S/C45H76N8O15/c1-11-25(7)20-27-15-16-45(64,68-31(27)12-2)44(10,63)42(61)48-32-34(24(5)6)67-41(60)33(23(3)4)53(66)40(59)35-43(9,62)17-19-49(35)37(56)30-21-28(54)22-47-51(30)36(55)26(8)52(65)38(57)29-14-13-18-46-50(29)39(32)58/h23-35,46-47,54,62-66H,11-22H2,1-10H3,(H,48,61)/t25-,26-,27+,28+,29+,30+,31+,32-,33-,34-,35+,43+,44+,45+/m0/s1
+  standard_inchi_key: IHVXCLXQTOSBMJ-FINQWCIQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001036
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA016176
+producer_organisms:
+- taxon_id: NCBITaxon:1414447
+  taxon_label: Streptomyces sp. MK498-98F14
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001036
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24506891
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001036 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001036
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1414447
+  organism_label: Streptomyces sp. MK498-98F14
+  evidence:
+  - reference: PMID:24506891
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001036 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF386858.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001036
+  source_label: polyoxypeptin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-25247adfea
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

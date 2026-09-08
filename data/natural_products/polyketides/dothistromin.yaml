@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-2647c7f88c
+label: dothistromin
+chemical_structure:
+  smiles: C1[C@@H](O[C@H]2[C@@]1(C3=C(O2)C=C4C(=C3O)C(=O)C5=C(C=CC(=C5C4=O)O)O)O)O
+  standard_inchi: InChI=1S/C18H12O9/c19-6-1-2-7(20)12-11(6)14(22)5-3-8-13(16(24)10(5)15(12)23)18(25)4-9(21)27-17(18)26-8/h1-3,9,17,19-21,24-25H,4H2/t9-,17+,18-/m1/s1
+  standard_inchi_key: FBPGRTYADYGYRG-AHBCHLHISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000048
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthraquinones and anthrones
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:108014
+producer_organisms:
+- taxon_id: NCBITaxon:64363
+  taxon_label: Dothistroma septosporum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000048
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1039/p29720002375
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000048 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000048
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:64363
+  organism_label: Dothistroma septosporum
+  evidence:
+  - reference: DOI:10.1039/p29720002375
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000048 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:DQ149246.3
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000048
+  source_label: dothistromin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-2647c7f88c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

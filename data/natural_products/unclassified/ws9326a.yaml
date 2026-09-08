@@ -1,0 +1,115 @@
+identifier: naturalproductmech:mibig-f329415ee7
+label: WS9326A
+chemical_structure:
+  smiles: CCC/C=C\C1=CC=CC=C1/C=C/C(=O)N[C@H]2[C@H](OC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC(=O)/C(=C\C3=CC=C(C=C3)O)/N(C2=O)C)CC(C)C)CC4=CC=CC=C4)[C@H](C)O)CC(=O)N)CO)C
+  standard_inchi: InChI=1S/C54H68N8O13/c1-7-8-10-17-36-18-13-14-19-37(36)22-25-45(67)60-47-33(5)75-54(74)42(30-63)59-49(69)41(29-44(55)66)58-52(72)46(32(4)64)61-50(70)40(27-34-15-11-9-12-16-34)56-48(68)39(26-31(2)3)57-51(71)43(62(6)53(47)73)28-35-20-23-38(65)24-21-35/h9-25,28,31-33,39-42,46-47,63-65H,7-8,26-27,29-30H2,1-6H3,(H2,55,66)(H,56,68)(H,57,71)(H,58,72)(H,59,69)(H,60,67)(H,61,70)/b17-10-,25-22+,43-28+/t32-,33+,39-,40+,41-,42-,46-,47-/m0/s1
+  standard_inchi_key: BVVWVQZZLUNSNV-QMXPZCTJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001297
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Depsipeptide
+xrefs:
+- chembl:CHEMBL3740058
+- pubchem:6918144
+- chebi:210268
+- npatlas:NPA018526
+- pubchem:6441210
+producer_organisms:
+- taxon_id: NCBITaxon:67282
+  taxon_label: Streptomyces calvus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001297
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:1381344
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001297 entry version 4; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:1571707
+  taxon_label: Streptomyces sp. SNM55
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002377
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:33963654
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002377 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001297
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67282
+  organism_label: Streptomyces calvus
+  evidence:
+  - reference: PMID:1381344
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001297 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KT362217.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0002377
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1571707
+  organism_label: Streptomyces sp. SNM55
+  evidence:
+  - reference: PMID:33963654
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002377 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MH243323.1
+  locus_from: 1
+  locus_to: 58067
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001297
+  source_label: WS9326A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-f329415ee7
+- source: MIBIG
+  source_id: BGC0002377
+  source_label: WS9326A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-fd11a0904f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001297, BGC0002377.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

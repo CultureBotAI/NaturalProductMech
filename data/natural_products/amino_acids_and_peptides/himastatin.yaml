@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-379a9bc917
+label: himastatin
+chemical_structure:
+  smiles: '[H][C@@]12NC3=CC=C(C=C3[C@]1(O)C[C@@H]1N2C(=O)[C@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H]2C[C@@H](O)CNN2C(=O)[C@@H](OC(=O)[C@H](NC1=O)C(C)C)C(C)C)[C@H](C)O)C1=CC=C2N[C@@]3([H])N4[C@@H](C[C@@]3(O)C2=C1)C(=O)N[C@H](C(C)C)C(=O)O[C@@H](C(C)C)C(=O)N1NC[C@H](O)C[C@@H]1C(=O)N[C@@H](CC(C)C)C(=O)N[C@H]([C@H](C)O)C4=O'
+  standard_inchi: InChI=1S/C72H104N14O20/c1-29(2)19-45-57(91)81-53(35(13)87)63(97)83-49(61(95)79-51(31(5)6)67(101)105-55(33(9)10)65(99)85-47(59(93)75-45)23-39(89)27-73-85)25-71(103)41-21-37(15-17-43(41)77-69(71)83)38-16-18-44-42(22-38)72(104)26-50-62(96)80-52(32(7)8)68(102)106-56(34(11)12)66(100)86-48(24-40(90)28-74-86)60(94)76-46(20-30(3)4)58(92)82-54(36(14)88)64(98)84(50)70(72)78-44/h15-18,21-22,29-36,39-40,45-56,69-70,73-74,77-78,87-90,103-104H,19-20,23-28H2,1-14H3,(H,75,93)(H,76,94)(H,79,95)(H,80,96)(H,81,91)(H,82,92)/t35-,36-,39+,40+,45-,46-,47+,48+,49-,50-,51+,52+,53+,54+,55-,56-,69-,70-,71+,72+/m0/s1
+  standard_inchi_key: OZPNLJQULOIOGU-UPABGHPRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001117
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA016115
+producer_organisms:
+- taxon_id: NCBITaxon:457427
+  taxon_label: Streptomyces himastatinicus ATCC 53653
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001117
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:21726028
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001117 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001117
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:457427
+  organism_label: Streptomyces himastatinicus ATCC 53653
+  evidence:
+  - reference: PMID:21726028
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001117 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FR823394.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001117
+  source_label: himastatin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-379a9bc917
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

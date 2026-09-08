@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-3fe146ce04
+label: CJ-15,696
+chemical_structure:
+  smiles: C/C=C(\C)/[C@@H]1[C@](C2=C(O1)NC=C(C2=O)C3=CC=CC=C3)(C)C=O
+  standard_inchi: InChI=1S/C19H19NO3/c1-4-12(2)17-19(3,11-21)15-16(22)14(10-20-18(15)23-17)13-8-6-5-7-9-13/h4-11,17H,1-3H3,(H,20,22)/b12-4+/t17-,19-/m1/s1
+  standard_inchi_key: ULWIXPFVMCMTFC-LTVUSIFUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002268
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Nicotinic acid alkaloids
+  class_results:
+  - Pyridine alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA009900
+producer_organisms:
+- taxon_id: NCBITaxon:5081
+  taxon_label: Penicillium sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002268
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:32779306
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002268 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002268
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5081
+  organism_label: Penicillium sp.
+  evidence:
+  - reference: PMID:32779306
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002268 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT603584.1
+  locus_from: 1
+  locus_to: 26854
+  bgc_class:
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002268
+  source_label: CJ-15,696
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3fe146ce04
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-95bd5cbf76
+label: 5-acetyl-5,10-dihydrophenazine-1-carboxylic acid
+chemical_structure:
+  smiles: CC(=O)N1C2=CC=CC=C2NC2=C1C=CC=C2C(O)=O
+  standard_inchi: InChI=1S/C15H12N2O3/c1-9(18)17-12-7-3-2-6-11(12)16-14-10(15(19)20)5-4-8-13(14)17/h2-8,16H,1H3,(H,19,20)
+  standard_inchi_key: OTRRZLYYKZUVRM-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000934
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Phenazine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA014023
+producer_organisms:
+- taxon_id: NCBITaxon:1485014
+  taxon_label: Kitasatospora sp. HKI 714
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000934
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24617951
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000934 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000934
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1485014
+  organism_label: Kitasatospora sp. HKI 714
+  evidence:
+  - reference: PMID:24617951
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000934 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KJ207079.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000934
+  source_label: 5-acetyl-5,10-dihydrophenazine-1-carboxylic acid
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-95bd5cbf76
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

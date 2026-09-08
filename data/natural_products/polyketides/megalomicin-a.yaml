@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-55d5b3a5d6
+label: megalomicin A
+chemical_structure:
+  smiles: CC[C@@H]1[C@@]([C@@H]([C@H](C(=O)[C@@H](C[C@@]([C@@H]([C@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2C[C@@]([C@H]([C@@H](O2)C)O)(C)O)C)O[C@H]3[C@@H]([C@H](C[C@H](O3)C)N(C)C)O)(C)O[C@H]4C[C@H]([C@H]([C@@H](O4)C)O)N(C)C)C)C)O)(C)O
+  standard_inchi: InChI=1S/C44H80N2O15/c1-16-30-44(11,54)37(50)23(4)33(47)21(2)19-43(10,61-31-18-29(46(14)15)34(48)26(7)56-31)39(60-41-35(49)28(45(12)13)17-22(3)55-41)24(5)36(25(6)40(52)58-30)59-32-20-42(9,53)38(51)27(8)57-32/h21-32,34-39,41,48-51,53-54H,16-20H2,1-15H3/t21-,22-,23+,24+,25-,26+,27+,28+,29-,30-,31+,32+,34+,35-,36+,37-,38+,39-,41+,42-,43-,44-/m1/s1
+  standard_inchi_key: LRWRQTMTYVZKQW-WWDNQWNISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000092
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Erythromycins
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:31864
+producer_organisms:
+- taxon_id: NCBITaxon:136926
+  taxon_label: Micromonospora megalomicea subsp. nigra
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000092
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:10972798
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000092 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000092
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:136926
+  organism_label: Micromonospora megalomicea subsp. nigra
+  evidence:
+  - reference: PMID:10972798
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000092 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF263245.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000092
+  source_label: megalomicin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-55d5b3a5d6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

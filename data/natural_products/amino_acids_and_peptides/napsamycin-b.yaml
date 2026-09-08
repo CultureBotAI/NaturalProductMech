@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-1cfc336944
+label: napsamycin B
+chemical_structure:
+  smiles: CSCCC(C(NC(C(N/C=C1CC(C(N2C=CC(NC2=O)=O)O/1)O)=O)C(N(C(C3CC4=CC(O)=CC=C4C(N3)C)=O)C)C)=O)NC(NC(C(O)=O)CC5=CC=CC(O)=C5)=O
+  standard_inchi: InChI=1S/C40H50N8O12S/c1-20-27-9-8-25(50)16-23(27)17-29(42-20)36(55)47(3)21(2)33(35(54)41-19-26-18-31(51)37(60-26)48-12-10-32(52)45-40(48)59)46-34(53)28(11-13-61-4)43-39(58)44-30(38(56)57)15-22-6-5-7-24(49)14-22/h5-10,12,14,16,19-21,28-31,33,37,42,49-51H,11,13,15,17-18H2,1-4H3,(H,41,54)(H,46,53)(H,56,57)(H2,43,44,58)(H,45,52,59)/b26-19-
+  standard_inchi_key: UTIFRWPUJPPZEZ-XHPQRKPJSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000950
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- OTHER
+xrefs:
+- pubchem:3037710
+producer_organisms:
+- taxon_id: NCBITaxon:991132
+  taxon_label: Streptomyces sp. DSM 5940
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000950
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:21290549
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000950 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000950
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:991132
+  organism_label: Streptomyces sp. DSM 5940
+  evidence:
+  - reference: PMID:21290549
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000950 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HQ287563.1
+  bgc_class:
+  - NRPS
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000950
+  source_label: napsamycin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1cfc336944
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

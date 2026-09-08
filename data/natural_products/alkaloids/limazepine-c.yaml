@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-b685570efa
+label: limazepine C
+chemical_structure:
+  smiles: '[H][C@@]12CC(CC)=CN1C(=O)C1=CC=C(OC)C(O)=C1N=C2'
+  standard_inchi: InChI=1S/C15H16N2O3/c1-3-9-6-10-7-16-13-11(15(19)17(10)8-9)4-5-12(20-2)14(13)18/h4-5,7-8,10,18H,3,6H2,1-2H3/t10-/m0/s1
+  standard_inchi_key: FLGURYUVNVBBFP-JTQLQIEISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001652
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Benzodiazepine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA016210
+producer_organisms:
+- taxon_id: NCBITaxon:563922
+  taxon_label: Streptomyces sp. ICBB 8177
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001652
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29517100
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001652 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001652
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:563922
+  organism_label: Streptomyces sp. ICBB 8177
+  evidence:
+  - reference: PMID:29517100
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001652 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KT381463.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001652
+  source_label: limazepine C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b685570efa
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

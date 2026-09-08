@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-056cf0154d
+label: chlorflavonin
+chemical_structure:
+  smiles: COC1=C(C2=C(C(=C1)O)C(=O)C(=C(O2)C3=C(C(=CC=C3)Cl)O)OC)OC
+  standard_inchi: InChI=1S/C18H15ClO7/c1-23-11-7-10(20)12-14(22)18(25-3)15(26-17(12)16(11)24-2)8-5-4-6-9(19)13(8)21/h4-7,20-21H,1-3H3
+  standard_inchi_key: JLSQXYITDXJTKL-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001544
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Flavonoids
+  class_results:
+  - Flavonols
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1392248
+  taxon_label: Aspergillus campestris IBT 28561
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001544
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/acsinfecdis.7b00055
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001544 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001544
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1392248
+  organism_label: Aspergillus campestris IBT 28561
+  evidence:
+  - reference: DOI:10.1021/acsinfecdis.7b00055
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001544 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MSFM01000001.1
+  locus_from: 576138
+  locus_to: 603864
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001544
+  source_label: chlorflavonin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-056cf0154d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

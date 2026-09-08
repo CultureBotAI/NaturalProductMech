@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-e51d198181
+label: spliceostatin L
+chemical_structure:
+  smiles: CCC(=O)OC(C)/C=C\C(=O)NC1CC(C)C(C(O)/C=C(C)/C=C/C2CC3(CO3)CC(C)(O)O2)OC1C
+  standard_inchi: InChI=1S/C28H43NO8/c1-7-25(32)35-19(4)9-11-24(31)29-22-13-18(3)26(36-20(22)5)23(30)12-17(2)8-10-21-14-28(16-34-28)15-27(6,33)37-21/h8-12,18-23,26,30,33H,7,13-16H2,1-6H3,(H,29,31)/b10-8+,11-9-,17-12+
+  standard_inchi_key: CRBOYJLBVMNLJI-LNWLULPESA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002059
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty amides
+  class_results:
+  - N-acyl amines
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA033157
+producer_organisms:
+- taxon_id: NCBITaxon:1885894
+  taxon_label: Xanthomonas cannabis pv. cannabis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002059
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:33658492
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002059 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002059
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1885894
+  organism_label: Xanthomonas cannabis pv. cannabis
+  evidence:
+  - reference: PMID:33658492
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002059 entry version 3; citation taken from the entry level
+  genome_accession: genbank:BK010647.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002059
+  source_label: spliceostatin L
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-e51d198181
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-766ef1e698
+label: vatiamide C
+chemical_structure:
+  smiles: C#CCCCC(=CCl)CC[C@@H](C)C=CCCC(=O)NCC1(O)OC(CC2CC(OC)=CC(=O)O2)CC(OC)C1C
+  standard_inchi: InChI=1S/C31H46ClNO7/c1-6-7-8-12-24(20-32)15-14-22(2)11-9-10-13-29(34)33-21-31(36)23(3)28(38-5)18-27(40-31)17-26-16-25(37-4)19-30(35)39-26/h1,9,11,19-20,22-23,26-28,36H,7-8,10,12-18,21H2,2-5H3,(H,33,34)/t22-,23?,26?,27?,28?,31?/m0/s1
+  standard_inchi_key: UOAUHJWVKNXERD-XPKNVKJBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002296
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA025672
+producer_organisms:
+- taxon_id: NCBITaxon:2546228
+  taxon_label: Moorena producens ASI16Jul14-2
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002296
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31071229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002296 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002296
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2546228
+  organism_label: Moorena producens ASI16Jul14-2
+  evidence:
+  - reference: PMID:31071229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002296 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MK618714.1
+  locus_from: 1
+  locus_to: 97932
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002296
+  source_label: vatiamide C
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-766ef1e698
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

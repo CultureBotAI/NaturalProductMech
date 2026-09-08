@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-f3dc57bf36
+label: variochelin B
+chemical_structure:
+  smiles: CCCCCCCCCCCCCC(=O)N[C@@H](CCCN=C(N)N)[C@@H](O)[C@H](C)C(=O)N[C@H](C(=O)N[C@H](CO)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CCCN(O)C(C)=O)C(=O)N[C@@H](CCCN(O)C(C)=O)C(=O)O)[C@H](O)C(=O)O
+  standard_inchi: InChI=1S/C49H87N11O17/c1-5-6-7-8-9-10-11-12-13-14-15-24-38(64)53-33(20-16-25-52-49(50)51)40(65)30(2)42(67)57-39(41(66)48(74)75)45(70)56-36(29-61)46(71)58-26-19-23-37(58)44(69)54-34(21-17-27-59(76)31(3)62)43(68)55-35(47(72)73)22-18-28-60(77)32(4)63/h30,33-37,39-41,61,65-66,76-77H,5-29H2,1-4H3,(H,53,64)(H,54,69)(H,55,68)(H,56,70)(H,57,67)(H,72,73)(H,74,75)(H4,50,51,52)/t30-,33-,34-,35-,36+,37-,39-,40-,41-/m0/s1
+  standard_inchi_key: KAFRRCNQGFIZFI-WKKVWVOWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002417
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA032837
+producer_organisms:
+- taxon_id: NCBITaxon:1246301
+  taxon_label: Variovorax paradoxus B4
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002417
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27023373
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002417 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002417
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1246301
+  organism_label: Variovorax paradoxus B4
+  evidence:
+  - reference: PMID:27023373
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002417 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP003911.1
+  locus_from: 4072277
+  locus_to: 4110613
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002417
+  source_label: variochelin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f3dc57bf36
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

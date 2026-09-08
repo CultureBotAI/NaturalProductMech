@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-124d23f1e5
+label: dehydrocurvularin
+chemical_structure:
+  smiles: CC1CCC\C=C\C(=O)C2=C(O)C=C(O)C=C2CC(=O)O1
+  standard_inchi: InChI=1S/C16H18O5/c1-10-5-3-2-4-6-13(18)16-11(8-15(20)21-10)7-12(17)9-14(16)19/h4,6-7,9-10,17,19H,2-3,5,8H2,1H3/b6-4+
+  standard_inchi_key: AVIRMQMUBGNCKS-GQCTYLIASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000045
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Zearalenones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA04907
+- pubchem:6438143
+producer_organisms:
+- taxon_id: NCBITaxon:33178
+  taxon_label: Aspergillus terreus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000045
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1007/s10495-023-01811-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000045 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000045
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33178
+  organism_label: Aspergillus terreus
+  evidence:
+  - reference: DOI:10.1007/s10495-023-01811-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000045 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:JX971534.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000045
+  source_label: dehydrocurvularin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-124d23f1e5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

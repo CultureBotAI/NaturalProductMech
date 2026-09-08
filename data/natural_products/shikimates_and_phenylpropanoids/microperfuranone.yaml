@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-07da14a68b
+label: microperfuranone
+chemical_structure:
+  smiles: OC1OC(=O)C(=C1CC1=CC=CC=C1)C1=CC=CC=C1
+  standard_inchi: InChI=1S/C17H14O3/c18-16-14(11-12-7-3-1-4-8-12)15(17(19)20-16)13-9-5-2-6-10-13/h1-10,16,18H,11H2
+  standard_inchi_key: MFURXTOJWOOSEM-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001668
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Diazotetronic acids and derivatives
+  class_results:
+  - Pulvinones
+  is_glycoside: true
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA016720
+producer_organisms:
+- taxon_id: NCBITaxon:227321
+  taxon_label: Aspergillus nidulans FGSC A4
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001668
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22627757
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001668 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001668
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:227321
+  organism_label: Aspergillus nidulans FGSC A4
+  evidence:
+  - reference: PMID:22627757
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001668 entry version 4; citation taken from the entry level
+  genome_accession: genbank:BN001306.1
+  locus_from: 790405
+  locus_to: 797948
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001668
+  source_label: microperfuranone
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-07da14a68b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,80 @@
+identifier: naturalproductmech:mibig-b871989a54
+label: viridicatumtoxin
+chemical_structure:
+  smiles: COC1=C2C3=C(C(O)=C1)C(O)=C1C(=O)[C@]4(O)C(=O)C(C(N)=O)=C(O)C[C@]4(O)[C@@H](O)C1=C3C[C@]21C(C)=CCCC1(C)C
+  standard_inchi: InChI=1S/C30H31NO10/c1-11-6-5-7-27(2,3)28(11)9-12-16-18(13(32)8-15(41-4)21(16)28)22(34)20-17(12)23(35)29(39)10-14(33)19(26(31)38)24(36)30(29,40)25(20)37/h6,8,23,32-35,39-40H,5,7,9-10H2,1-4H3,(H2,31,38)/t23-,28-,29-,30+/m0/s1
+  standard_inchi_key: SUWQGLGDFGHZNH-WBWZXODPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000168
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Other polyketide meroterpenoids
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Cyclic polyketide
+- Polycyclic polyketide
+- Meroterpenoid
+- Monoterpenoid
+xrefs:
+- npatlas:NPA03651
+- pubchem:54679209
+producer_organisms:
+- taxon_id: NCBITaxon:36650
+  taxon_label: Penicillium aethiopicum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000168
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Gene expression correlated
+    with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2010.03.015
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000168 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000168
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:36650
+  organism_label: Penicillium aethiopicum
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2010.03.015
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000168 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:GU574477.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000168
+  source_label: viridicatumtoxin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b871989a54
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

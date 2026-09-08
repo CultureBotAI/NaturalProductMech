@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-99cf50fc74
+label: rifamorpholine C
+chemical_structure:
+  smiles: C[C@@H]1[C@H](/C=C/O[C@@]2(C(=O)C3=C(O2)C(=C(C4=C5C(=CC(=C43)O)NC(=O)[C@@](O5)(CC(=O)[C@@H]6C[C@@H]6[C@@H]([C@H]([C@H]([C@H]([C@@H]1OC(=O)C)C)O)C)O)C)O)C)C)OC
+  standard_inchi: InChI=1S/C37H45NO13/c1-14-24(47-8)9-10-48-37(7)34(45)27-25-22(40)12-21-33(26(25)30(44)17(4)32(27)51-37)50-36(6,35(46)38-21)13-23(41)19-11-20(19)29(43)15(2)28(42)16(3)31(14)49-18(5)39/h9-10,12,14-16,19-20,24,28-29,31,40,42-44H,11,13H2,1-8H3,(H,38,46)/b10-9+/t14-,15+,16-,19-,20+,24+,28-,29-,31-,36+,37+/m1/s1
+  standard_inchi_key: YGKOWXWMOFTQTG-VWQQNYFNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001759
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:132507843
+producer_organisms:
+- taxon_id: NCBITaxon:37632
+  taxon_label: Amycolatopsis sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001759
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28422262
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001759 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001759
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:37632
+  organism_label: Amycolatopsis sp.
+  evidence:
+  - reference: PMID:28422262
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001759 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MF773686.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001759
+  source_label: rifamorpholine C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-99cf50fc74
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

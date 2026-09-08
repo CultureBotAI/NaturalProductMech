@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-3ea93f8f98
+label: penifulvin A
+chemical_structure:
+  smiles: C[C@@]12CC(=O)O[C@@H]3[C@@]14[C@@H](CC[C@H]4C(C2)(C)C)C(=O)O3
+  standard_inchi: InChI=1S/C15H20O4/c1-13(2)7-14(3)6-10(16)18-12-15(14)8(11(17)19-12)4-5-9(13)15/h8-9,12H,4-7H2,1-3H3/t8-,9-,12-,14-,15-/m0/s1
+  standard_inchi_key: NGAMYGLHRNCUQC-AWPZLMCQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002557
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Silphinane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA013937
+producer_organisms:
+- taxon_id: NCBITaxon:5078
+  taxon_label: Penicillium griseofulvum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002557
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Gene expression correlated with compound production|Knock-out
+    studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades
+    the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:30908782
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002557 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002557
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5078
+  organism_label: Penicillium griseofulvum
+  evidence:
+  - reference: PMID:30908782
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002557 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MK692947.1
+  locus_from: 807
+  locus_to: 15633
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002557
+  source_label: penifulvin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-3ea93f8f98
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-2803ab3773
+label: fabrubactin A
+chemical_structure:
+  smiles: CCCCCCCC(O)CC(O)(C(=O)O)C(=O)NCCC(=O)NCCC(O)(C(=O)O)C(=O)NC(C)C1=NC(C(=O)NCC(=O)NC(C)C(=O)NCC(=O)NC2CC3=CC(O)=C(O)C=C3[N+](C)(C)C2)=CS1
+  standard_inchi: InChI=1S/C44H65N9O16S/c1-6-7-8-9-10-11-28(54)19-44(69,42(66)67)39(62)46-14-12-33(57)45-15-13-43(68,41(64)65)40(63)50-25(3)38-52-29(23-70-38)37(61)48-20-34(58)49-24(2)36(60)47-21-35(59)51-27-16-26-17-31(55)32(56)18-30(26)53(4,5)22-27/h17-18,23-25,27-28,54,68-69H,6-16,19-22H2,1-5H3,(H10-,45,46,47,48,49,50,51,55,56,57,58,59,60,61,62,63,64,65,66,67)/p+1
+  standard_inchi_key: SXOKUPQNHVTMPJ-UHFFFAOYSA-O
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002107
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA033168
+producer_organisms:
+- taxon_id: NCBITaxon:176299
+  taxon_label: Agrobacterium fabrum str. C58
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002107
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/acschembio.0c00809
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002107 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002107
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:176299
+  organism_label: Agrobacterium fabrum str. C58
+  evidence:
+  - reference: DOI:10.1021/acschembio.0c00809
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002107 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:AE007870.2
+  locus_from: 715559
+  locus_to: 769035
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002107
+  source_label: fabrubactin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-2803ab3773
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

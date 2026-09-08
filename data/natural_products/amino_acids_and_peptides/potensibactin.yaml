@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-7a6cba59e1
+label: potensibactin
+chemical_structure:
+  smiles: O=C(NCC(NCC(NC(CO)C(NC(CO)C(NC(CCCN(O)C(C)=O)C(NC(CCCN1O)C1=O)=O)=O)=O)=O)=O)C2=CC=CC(O)=C2O
+  standard_inchi: InChI=1S/C29H42N8O14/c1-15(40)36(50)9-3-6-17(26(46)34-18-7-4-10-37(51)29(18)49)33-28(48)20(14-39)35-27(47)19(13-38)32-23(43)12-30-22(42)11-31-25(45)16-5-2-8-21(41)24(16)44/h2,5,8,17-20,38-39,41,44,50-51H,3-4,6-7,9-14H2,1H3,(H,30,42)(H,31,45)(H,32,43)(H,33,48)(H,34,46)(H,35,47)
+  standard_inchi_key: ZOFVRDQQGQLYFI-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002017
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  - Small peptides
+  class_results:
+  - Linear peptides
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Linear
+producer_organisms:
+- taxon_id: NCBITaxon:570268
+  taxon_label: Nocardiopsis potens DSM 45234
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002017
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27694801
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002017 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002017
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:570268
+  organism_label: Nocardiopsis potens DSM 45234
+  evidence:
+  - reference: PMID:27694801
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002017 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:ANBB01000074.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002017
+  source_label: potensibactin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7a6cba59e1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-1b9429254e
+label: lipopeptide 8D1-1
+chemical_structure:
+  smiles: CCCC1OC1C(=O)N[C@@H](CO)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CC1=CNC2=C1C=CC=C2)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](C(=O)N[C@@H](CC(O)=O)C(=O)NCC(=O)N[C@H](C(O)CON)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CC1=CNC2=C1C=CC=C2)C(O)=O)C1=CC=C(O)C=C1
+  standard_inchi: InChI=1S/C66H82N14O27/c1-3-8-46-55(107-46)65(103)77-44(27-81)61(99)79-52(29(2)82)62(100)74-39(19-31-24-68-36-11-6-4-9-34(31)36)58(96)72-41(22-50(90)91)59(97)73-42(23-51(92)93)60(98)80-53(30-13-15-33(83)16-14-30)63(101)75-40(21-49(88)89)56(94)70-26-47(85)78-54(45(84)28-106-67)64(102)71-38(17-18-48(86)87)57(95)76-43(66(104)105)20-32-25-69-37-12-7-5-10-35(32)37/h4-7,9-16,24-25,29,38-46,52-55,68-69,81-84H,3,8,17-23,26-28,67H2,1-2H3,(H,70,94)(H,71,102)(H,72,96)(H,73,97)(H,74,100)(H,75,101)(H,76,95)(H,77,103)(H,78,85)(H,79,99)(H,80,98)(H,86,87)(H,88,89)(H,90,91)(H,92,93)(H,104,105)/t29-,38+,39+,40+,41+,42+,43+,44+,45?,46?,52+,53-,54-,55?/m1/s1
+  standard_inchi_key: QNGZHJMCVSLSCC-ZSUMOKISSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001370
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:1928
+  taxon_label: Streptomyces rochei
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001370
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27451447
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001370 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001370
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1928
+  organism_label: Streptomyces rochei
+  evidence:
+  - reference: PMID:27451447
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001370 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KT362047.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001370
+  source_label: lipopeptide 8D1-1
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-1b9429254e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

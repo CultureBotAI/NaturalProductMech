@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-4011e10aea
+label: mayamycin
+chemical_structure:
+  smiles: CN[C@@H]1C[C@@H](O[C@H](C)[C@H]1O)C1=C(O)C2=C(C(=O)C3=CC=CC(O)=C3C2=O)C2=C(O)C=C(C)C=C12
+  standard_inchi: InChI=1S/C26H25NO7/c1-10-7-13-18(16(29)8-10)21-22(25(32)19-12(24(21)31)5-4-6-15(19)28)26(33)20(13)17-9-14(27-3)23(30)11(2)34-17/h4-8,11,14,17,23,27-30,33H,9H2,1-3H3/t11-,14-,17-,23-/m1/s1
+  standard_inchi_key: ZVIQDPQQFMVLGU-XTCBYOQUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001661
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA01659
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001661
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29515228
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001661 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001661
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:29515228
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001661 entry version 5; citation taken from the entry level
+  genome_accession: genbank:MG601230.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001661
+  source_label: mayamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4011e10aea
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

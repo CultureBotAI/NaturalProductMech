@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-810fe3c337
+label: cladoniamide D
+chemical_structure:
+  smiles: CNC(=O)[C@@]1(O)N2C3=C(C=CC=C3)C(OC)=C2C2=C(C3=C(N2)C=CC(Cl)=C3)C1=O
+  standard_inchi: InChI=1S/C21H16ClN3O4/c1-23-20(27)21(28)19(26)15-12-9-10(22)7-8-13(12)24-16(15)17-18(29-2)11-5-3-4-6-14(11)25(17)21/h3-9,24,28H,1-2H3,(H,23,27)/t21-/m1/s1
+  standard_inchi_key: DAWUJAMYFBLITO-OAQYLSRUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001334
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA013171
+- pubchem:25053152
+producer_organisms:
+- taxon_id: NCBITaxon:1048205
+  taxon_label: Streptomyces uncialis
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0001334
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:21876764
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001334 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001334
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1048205
+  organism_label: Streptomyces uncialis
+  evidence:
+  - reference: PMID:21876764
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001334 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JN165773.1
+  locus_from: 9571
+  locus_to: 30347
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001334
+  source_label: cladoniamide D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-810fe3c337
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

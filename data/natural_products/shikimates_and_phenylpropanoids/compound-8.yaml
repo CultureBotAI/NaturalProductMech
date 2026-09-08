@@ -1,0 +1,76 @@
+identifier: naturalproductmech:mibig-007406ddf9
+label: compound 8
+chemical_structure:
+  smiles: CC(C(C(O)C1=C(O)C=CC(C(O)=O)=C1)=O)C
+  standard_inchi: InChI=1S/C12H14O5/c1-6(2)10(14)11(15)8-5-7(12(16)17)3-4-9(8)13/h3-6,11,13,15H,1-2H3,(H,16,17)
+  standard_inchi_key: HHJKLMAAAQXSLU-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002290
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Phenolic acids (C6-C1)
+  class_results:
+  - Simple phenolic acids
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1896107
+  taxon_label: Biscogniauxia sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002290
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:32364293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002290 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002290
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1896107
+  organism_label: Biscogniauxia sp.
+  evidence:
+  - reference: PMID:32364293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002290 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT109335.1
+  locus_from: 1
+  locus_to: 37984
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002290
+  source_label: compound 8
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-007406ddf9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: needs-a-name
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: This record is labelled 'compound 8', which is a label from the cited paper's
+    own numbering rather than a compound name. Resolve a name from the literature
+    or a structure registry.
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

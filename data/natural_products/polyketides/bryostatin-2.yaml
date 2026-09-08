@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-7e373b3a47
+label: bryostatin
+chemical_structure:
+  smiles: CCC(C)C(=O)OC1CC2CC(CC(=O)OC(CC3C/C(=C\C(=O)OC)/CC(O3)(C(/C=C/C4C/C(=C/C(=O)OC)/CC(O4)CC(C1(C)C)(O2)O)(C)C)O)C(C)O)O
+  standard_inchi: InChI=1S/C42H64O15/c1-10-24(2)38(48)55-34-21-31-18-28(44)19-37(47)54-33(25(3)43)20-30-15-27(17-36(46)52-9)22-41(49,56-30)39(4,5)12-11-29-13-26(16-35(45)51-8)14-32(53-29)23-42(50,57-31)40(34,6)7/h11-12,16-17,24-25,28-34,43-44,49-50H,10,13-15,18-23H2,1-9H3/b12-11+,26-16-,27-17+
+  standard_inchi_key: NJMZVUZEDLKEGZ-XMADZBCLSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000205
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Bryostatins
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6438934
+producer_organisms:
+- taxon_id: NCBITaxon:62101
+  taxon_label: Candidatus Endobugula sertula
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000205
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17253852
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000205 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000205
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:62101
+  organism_label: Candidatus Endobugula sertula
+  evidence:
+  - reference: PMID:17253852
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000205 entry version 3; citation taken from the entry level
+  genome_accession: genbank:DQ889942.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000205
+  source_label: bryostatin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7e373b3a47
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

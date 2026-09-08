@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-387dff4052
+label: zwittermicin A
+chemical_structure:
+  smiles: NC(CO)C(O)CC(O)[C@@H](N)[C@@H](O)[C@H](O)C(=O)NC(CNC(N)=O)C(N)=O
+  standard_inchi: InChI=1S/C13H28N6O8/c14-4(3-20)6(21)1-7(22)8(15)9(23)10(24)12(26)19-5(11(16)25)2-18-13(17)27/h4-10,20-24H,1-3,14-15H2,(H2,16,25)(H,19,26)(H3,17,18,27)/t4?,5?,6?,7?,8-,9-,10+/m1/s1
+  standard_inchi_key: FYIPKJHNWFVEIR-WMNLMFOASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001059
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Simple amide alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA02819
+producer_organisms:
+- taxon_id: NCBITaxon:1396
+  taxon_label: Bacillus cereus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001059
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:8763956
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001059 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001059
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1396
+  organism_label: Bacillus cereus
+  evidence:
+  - reference: PMID:8763956
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001059 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FJ430564.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001059
+  source_label: zwittermicin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-387dff4052
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

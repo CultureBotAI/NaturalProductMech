@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-3f35f559e8
+label: neoantimycin
+chemical_structure:
+  smiles: '[H][C@]1(OC(=O)C(C)(C)[C@@H](O)[C@@H](CC2=CC=CC=C2)OC(=O)[C@@H](OC(=O)[C@@H](NC(=O)C2=C(O)C(NC=O)=CC=C2)[C@H](C)OC1=O)C(C)C)[C@@H](C)CC'
+  standard_inchi: InChI=1S/C36H46N2O12/c1-8-20(4)29-34(45)47-21(5)26(38-31(42)23-15-12-16-24(27(23)40)37-18-39)32(43)49-28(19(2)3)33(44)48-25(17-22-13-10-9-11-14-22)30(41)36(6,7)35(46)50-29/h9-16,18-21,25-26,28-30,40-41H,8,17H2,1-7H3,(H,37,39)(H,38,42)/t20-,21-,25+,26-,28-,29-,30-/m0/s1
+  standard_inchi_key: JIJATTFJYJZEBT-MDDNAQDNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001695
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Antimycins
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA010703
+producer_organisms:
+- taxon_id: NCBITaxon:1653203
+  taxon_label: Streptomyces conglobatus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001695
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29979567
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001695 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001695
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1653203
+  organism_label: Streptomyces conglobatus
+  evidence:
+  - reference: PMID:29979567
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001695 entry version 5; citation taken from the entry level
+  genome_accession: genbank:MH128122.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001695
+  source_label: neoantimycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3f35f559e8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

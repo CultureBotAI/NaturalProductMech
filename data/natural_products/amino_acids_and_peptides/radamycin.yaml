@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-0a46a0ec04
+label: radamycin
+chemical_structure:
+  smiles: CC(C)C1NC(=O)C2=CSC(=N2)C2=C(N=C(C=C2)C(=O)NC(=C)C(=O)NC(=C)C(N)=O)C2=C(C)OC(=N2)C(=C)NC(=O)C(=C)NC(=O)C2=CSC(=N2)C(C)NC(=O)C2=CSC(=N2)C(C)NC(=O)C2=C(C)OC(CNC1=O)=N2
+  standard_inchi: InChI=1S/C48H47N15O11S3/c1-17(2)32-43(71)50-13-31-61-34(25(10)73-31)44(72)56-23(8)47-59-29(15-76-47)41(69)55-22(7)46-58-28(14-75-46)40(68)53-20(5)38(66)54-21(6)45-63-33(24(9)74-45)35-26(48-60-30(16-77-48)42(70)62-32)11-12-27(57-35)39(67)52-19(4)37(65)51-18(3)36(49)64/h11-12,14-17,22-23,32H,3-6,13H2,1-2,7-10H3,(H2,49,64)(H,50,71)(H,51,65)(H,52,67)(H,53,68)(H,54,66)(H,55,69)(H,56,72)(H,62,70)
+  standard_inchi_key: NDNYFEHDYFDAPS-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001753
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA09696
+producer_organisms:
+- taxon_id: NCBITaxon:66858
+  taxon_label: Streptomyces globisporus subsp. globisporus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001753
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.tetlet.2017.12.056
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001753 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001753
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:66858
+  organism_label: Streptomyces globisporus subsp. globisporus
+  evidence:
+  - reference: DOI:10.1016/j.tetlet.2017.12.056
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001753 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NZ_JNZK01000003.1
+  locus_from: 134923
+  locus_to: 155574
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001753
+  source_label: radamycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0a46a0ec04
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

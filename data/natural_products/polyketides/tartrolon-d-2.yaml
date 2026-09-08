@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-94cd08e7f8
+label: tartrolon D
+chemical_structure:
+  smiles: C[C@H]1[C@@]2(O)O[C@H](CC(C[C@H](CC/C=C/C=C\CC[C@H](C)OC(C([C@@]3(O)[C@H](C)CC[C@@H](CC(C[C@H](CC/C=C/C=C\CC[C@H](C)OC(C2O)=O)O)=O)O3)O)=O)O)=O)CC1
+  standard_inchi: InChI=1S/C44H68O14/c1-29-21-23-37-27-35(47)25-33(45)19-15-11-8-6-10-14-18-32(4)56-42(52)40(50)44(54)30(2)22-24-38(58-44)28-36(48)26-34(46)20-16-12-7-5-9-13-17-31(3)55-41(51)39(49)43(29,53)57-37/h5-12,29-34,37-40,45-46,49-50,53-54H,13-28H2,1-4H3/b9-5-,10-6-,11-8+,12-7+/t29-,30-,31+,32+,33+,34+,37+,38+,39?,40?,43-,44-/m1/s1
+  standard_inchi_key: OHYKIDCHGZQVCM-ZMXWBCPCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001836
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Boromycins
+  is_glycoside: true
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1445510
+  taxon_label: Gynuella sunshinyii YC6258
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001836
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23288898
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001836 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001836
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1445510
+  organism_label: Gynuella sunshinyii YC6258
+  evidence:
+  - reference: PMID:23288898
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001836 entry version 3; citation taken from the entry level
+  genome_accession: genbank:BK010667.1
+  locus_from: 3696140
+  locus_to: 3777880
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001836
+  source_label: tartrolon D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-94cd08e7f8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-d89447dbcf
+label: hygrocin A
+chemical_structure:
+  smiles: CCC1CCC(=O)C2=C(O)C(C)=CC3=C2C(=O)C=C(NC(=O)C\C=C(C)\C(=O)O[C@@H](C)[C@@H](O)\C=C\1)C3=O
+  standard_inchi: InChI=1S/C28H31NO8/c1-5-17-7-9-20(30)16(4)37-28(36)14(2)6-11-23(33)29-19-13-22(32)24-18(27(19)35)12-15(3)26(34)25(24)21(31)10-8-17/h6-7,9,12-13,16-17,20,30,34H,5,8,10-11H2,1-4H3,(H,29,33)/b9-7+,14-6+/t16-,17?,20-/m0/s1
+  standard_inchi_key: ZLKHATAJGWAFJX-MSSMFAQOSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000075
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  - Lactam bearing macrolide lactones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA04945
+- pubchem:5326374
+producer_organisms:
+- taxon_id: NCBITaxon:1245024
+  taxon_label: Streptomyces sp. LZ35
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000075
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24501776
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000075 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000075
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1245024
+  organism_label: Streptomyces sp. LZ35
+  evidence:
+  - reference: PMID:24501776
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000075 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JX504844.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000075
+  source_label: hygrocin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d89447dbcf
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

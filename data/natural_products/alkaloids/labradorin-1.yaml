@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-38730f70ef
+label: labradorin 1
+chemical_structure:
+  smiles: CC(C)CC1=NC=C(O1)C2=CNC3=CC=CC=C32
+  standard_inchi: InChI=1S/C15H16N2O/c1-10(2)7-15-17-9-14(18-15)12-8-16-13-6-4-3-5-11(12)13/h3-6,8-10,16H,7H2,1-2H3
+  standard_inchi_key: DJGNEEKCRPWTKI-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002331
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tyrosine alkaloids
+  class_results:
+  - Pimprinine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA004194
+producer_organisms:
+- taxon_id: NCBITaxon:384676
+  taxon_label: Pseudomonas entomophila L48
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002331
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression|Knock-out studies. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:33460275
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002331 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002331
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:384676
+  organism_label: Pseudomonas entomophila L48
+  evidence:
+  - reference: PMID:33460275
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002331 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CT573326.1
+  locus_from: 2922595
+  locus_to: 2924700
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002331
+  source_label: labradorin 1
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-38730f70ef
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

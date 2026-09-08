@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-e41c9c6e94
+label: quinolidomicin A
+chemical_structure:
+  smiles: C[C@H]1CCCC[C@@H](C[C@@H](C[C@@H](OC(=O)C[C@]2(C[C@@H]([C@@H]([C@H](O2)[C@H]([C@@H]([C@H](/C=C\C=C(\[C@H]([C@@H]([C@@H](C[C@H]([C@H](CC[C@@H](C[C@H](C[C@@H](/C=C/C=C\C[C@H](CC(=O)C[C@H](/C=C/C=C\C=C/C[C@@H](C[C@@H](CC1)O)O)O)O)O)O)O)C)O)O)C)O)/C)C)O)C)C)O)O)/C=C/C=C/[C@H](C)CC[C@H](C3=C(C(=O)C=C(C3=O)O)SC)OC)O)O
+  standard_inchi: InChI=1S/C83H132O23S/c1-51-24-19-21-32-63(88)44-68(93)46-69(33-22-20-25-52(2)35-39-75(104-9)77-80(102)72(96)48-73(97)82(77)107-10)105-76(99)50-83(103)49-74(98)57(7)81(106-83)58(8)79(101)55(5)27-23-26-54(4)78(100)56(6)71(95)47-70(94)53(3)36-38-65(90)45-67(92)43-62(87)31-18-14-17-30-61(86)42-66(91)41-60(85)29-16-13-11-12-15-28-59(84)40-64(89)37-34-51/h11-18,20,22-23,25-27,29,31,33,48,51-53,55-65,67-71,74-75,78-79,81,84-90,92-96,98,100-101,103H,19,21,24,28,30,32,34-47,49-50H2,1-10H3/b13-11-,15-12-,17-14-,25-20+,27-23-,29-16+,31-18+,33-22+,54-26+/t51-,52-,53-,55-,56+,57-,58-,59-,60-,61+,62+,63-,64+,65-,67-,68-,69-,70+,71+,74-,75+,78+,79+,81-,83+/m0/s1
+  standard_inchi_key: ICRSVVBHIOAZHM-ORLNCPKUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002520
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA020601
+producer_organisms:
+- taxon_id: NCBITaxon:1876
+  taxon_label: Micromonospora sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002520
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.46.1557
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002520 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002520
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1876
+  organism_label: Micromonospora sp.
+  evidence:
+  - reference: DOI:10.7164/antibiotics.46.1557
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002520 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:LC572270.1
+  locus_from: 1
+  locus_to: 231984
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002520
+  source_label: quinolidomicin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-e41c9c6e94
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

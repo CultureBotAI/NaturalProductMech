@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-af0375092a
+label: AbT1
+chemical_structure:
+  smiles: '[H][C@@](C)(CC)[C@]1([H])NC(=O)[C@]2([H])CCCN2C(=O)[C@]([H])(CC2=CC=CC=C2)N(C)C(=O)[C@]([H])(CC2=CC=CC=C2)NC(=O)[C@]([H])(C(C)C)N(C)C(=O)[C@]([H])(OC(=O)[C@@]([H])(N(C)C(=O)[C@]([H])(CC(C)C)NC(=O)[C@]([H])(C(C)C)N(C)C1=O)C(C)(C)O)[C@@]([H])(C)CC'
+  standard_inchi: InChI=1S/C60H92N8O11/c1-17-38(9)46-57(75)65(14)47(36(5)6)52(70)61-42(32-35(3)4)55(73)67(16)50(60(11,12)78)59(77)79-49(39(10)18-2)58(76)66(15)48(37(7)8)53(71)62-43(33-40-26-21-19-22-27-40)54(72)64(13)45(34-41-28-23-20-24-29-41)56(74)68-31-25-30-44(68)51(69)63-46/h19-24,26-29,35-39,42-50,78H,17-18,25,30-34H2,1-16H3,(H,61,70)(H,62,71)(H,63,69)/t38-,39+,42+,43+,44+,45+,46+,47+,48+,49-,50-/m1/s1
+  standard_inchi_key: RLMLFADXHJLPSQ-QLLGQPFOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000307
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Macrocyclic
+xrefs:
+- npatlas:NPA018632
+producer_organisms:
+- taxon_id: NCBITaxon:5580
+  taxon_label: Aureobasidium pullulans
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000307
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.44.919
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000307 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000307
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5580
+  organism_label: Aureobasidium pullulans
+  evidence:
+  - reference: DOI:10.7164/antibiotics.44.919
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000307 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:EU886741.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000307
+  source_label: AbT1
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-af0375092a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

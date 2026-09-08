@@ -1,0 +1,77 @@
+identifier: naturalproductmech:mibig-827514e357
+label: phytocassane
+chemical_structure:
+  smiles: C[C@@H]1[C@@H]2CC[C@@H]3[C@@]([C@H]2C(=O)C=C1C=C)(C[C@@H](C(=O)C3(C)C)O)C
+  standard_inchi: InChI=1S/C20H28O3/c1-6-12-9-14(21)17-13(11(12)2)7-8-16-19(3,4)18(23)15(22)10-20(16,17)5/h6,9,11,13,15-17,22H,1,7-8,10H2,2-5H3/t11-,13-,15-,16-,17+,20-/m0/s1
+  standard_inchi_key: XVEOIKIXOSKAFL-GARNVBSBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000672
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Cassane diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+compound_classes:
+- Diterpenoid
+xrefs:
+- pubchem:10313699
+producer_organisms:
+- taxon_id: NCBITaxon:39947
+  taxon_label: Oryza sativa Japonica Group
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000672
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production|Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1105/tpc.108.063677
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000672 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000672
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:39947
+  organism_label: Oryza sativa Japonica Group
+  evidence:
+  - reference: DOI:10.1105/tpc.108.063677
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000672 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AP008208.2
+  locus_from: 22520469
+  locus_to: 22764099
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000672
+  source_label: phytocassane
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-827514e357
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

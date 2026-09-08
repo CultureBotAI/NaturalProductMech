@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-6112bc1e65
+label: chrysogine
+chemical_structure:
+  smiles: C[C@H](O)C1=NC2=C(C=CC=C2)C(=O)N1
+  standard_inchi: InChI=1S/C10H10N2O2/c1-6(13)9-11-8-5-3-2-4-7(8)10(14)12-9/h2-6,13H,1H3,(H,11,12,14)/t6-/m0/s1
+  standard_inchi_key: BMBSGGZMJQTQSO-LURJTMIESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001545
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Quinazoline alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA09507
+producer_organisms:
+- taxon_id: NCBITaxon:229533
+  taxon_label: Fusarium graminearum PH-1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001545
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28708398
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001545 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001545
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:229533
+  organism_label: Fusarium graminearum PH-1
+  evidence:
+  - reference: PMID:28708398
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001545 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NC_026476.1
+  locus_from: 7266100
+  locus_to: 7283610
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001545
+  source_label: chrysogine
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-6112bc1e65
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

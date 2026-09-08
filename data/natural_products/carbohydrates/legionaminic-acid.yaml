@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-2ac156cb3e
+label: legionaminic acid
+chemical_structure:
+  smiles: C[C@H]([C@H]([C@H]1[C@@H]([C@H](C[C@](O1)(C(=O)O)O)O)N)N)O
+  standard_inchi: InChI=1S/C9H18N2O6/c1-3(12)5(10)7-6(11)4(13)2-9(16,17-7)8(14)15/h3-7,12-13,16H,2,10-11H2,1H3,(H,14,15)/t3-,4+,5-,6-,7+,9+/m1/s1
+  standard_inchi_key: ZFZFJUIKYIVPNP-OWTNSLFHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001651
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Aminosugars and aminoglycosides
+  class_results:
+  - Aminosugars
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:70678967
+producer_organisms:
+- taxon_id: NCBITaxon:203275
+  taxon_label: Tannerella forsythia 92A2
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001651
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27986835
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001651 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001651
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:203275
+  organism_label: Tannerella forsythia 92A2
+  evidence:
+  - reference: PMID:27986835
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001651 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP003191.1
+  locus_from: 1153920
+  locus_to: 1164630
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001651
+  source_label: legionaminic acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-2ac156cb3e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

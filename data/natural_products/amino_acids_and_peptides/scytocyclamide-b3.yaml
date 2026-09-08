@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-80acf3886c
+label: scytocyclamide B3
+chemical_structure:
+  smiles: CCCCCC1CC(=O)N[C@@H](C(C)C)C(=O)N[C@H](C(O)C(C)C)C(=O)N[C@@H](C)C(=O)N[C@H](CC(C)C)C(=O)N[C@@H](CCC(N)=O)C(=O)N(C)[C@@H]([C@@H](C)CC)C(=O)N[C@H](CC(N)=O)C(=O)N[C@H]([C@H](C)O)C(=O)N2CCC[C@H]2C(=O)N[C@H](CC(C)C)C(=O)N[C@@H]([C@@H](C)O)C(=O)N1
+  standard_inchi: InChI=1S/C63H110N14O17/c1-16-18-19-21-38-28-46(82)72-47(32(7)8)58(89)75-50(52(83)33(9)10)60(91)66-35(12)53(84)69-40(26-30(3)4)54(85)68-39(23-24-44(64)80)62(93)76(15)51(34(11)17-2)61(92)71-42(29-45(65)81)56(87)74-49(37(14)79)63(94)77-25-20-22-43(77)57(88)70-41(27-31(5)6)55(86)73-48(36(13)78)59(90)67-38/h30-43,47-52,78-79,83H,16-29H2,1-15H3,(H2,64,80)(H2,65,81)(H,66,91)(H,67,90)(H,68,85)(H,69,84)(H,70,88)(H,71,92)(H,72,82)(H,73,86)(H,74,87)(H,75,89)/t34-,35-,36+,37-,38?,39-,40+,41+,42+,43-,47-,48-,49+,50+,51-,52?/m0/s1
+  standard_inchi_key: FIBARFWLQNLEOK-LYMHVENWSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002484
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Lipopeptide
+- Macrocyclic
+xrefs:
+- npatlas:NPA032956
+producer_organisms:
+- taxon_id: NCBITaxon:128403
+  taxon_label: Scytonema hofmannii PCC 7110
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002484
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.3389/fmicb.2020.578878
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002484 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002484
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:128403
+  organism_label: Scytonema hofmannii PCC 7110
+  evidence:
+  - reference: DOI:10.3389/fmicb.2020.578878
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002484 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KQ976354.1
+  locus_from: 3716086
+  locus_to: 3812822
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002484
+  source_label: scytocyclamide B3
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-80acf3886c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

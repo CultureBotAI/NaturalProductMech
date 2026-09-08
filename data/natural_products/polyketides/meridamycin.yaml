@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-0f74c2ae70
+label: meridamycin
+chemical_structure:
+  smiles: CC\C1=C/CC(OC(=O)C2CCCCN2C(=O)C(=O)C2(O)OC(CCC2C)CC(O)C(C)C(O)CC(O)CC(O)\C(C)=C\C(C)CC(C)C1O)C(\C)=C\C(C)C(C)O
+  standard_inchi: InChI=1S/C45H75NO12/c1-10-33-15-17-40(28(5)21-26(3)32(9)47)57-44(55)36-13-11-12-18-46(36)43(54)42(53)45(56)30(7)14-16-35(58-45)24-39(51)31(8)38(50)23-34(48)22-37(49)27(4)19-25(2)20-29(6)41(33)52/h15,19,21,25-26,29-32,34-41,47-52,56H,10-14,16-18,20,22-24H2,1-9H3/b27-19+,28-21+,33-15+
+  standard_inchi_key: DGKUOWHAUIWQTM-AWHOCNIOSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001011
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ascomycins and Rapamycins
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA013430
+producer_organisms:
+- taxon_id: NCBITaxon:367779
+  taxon_label: Streptomyces sp. NRRL 30748
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001011
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16806745
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001011 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001011
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:367779
+  organism_label: Streptomyces sp. NRRL 30748
+  evidence:
+  - reference: PMID:16806745
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001011 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ351275.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001011
+  source_label: meridamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0f74c2ae70
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

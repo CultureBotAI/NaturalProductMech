@@ -1,0 +1,63 @@
+identifier: naturalproductmech:mibig-fd6c769099
+label: 5-isoprenylindole-3-carboxylate β-D-glycosyl ester
+chemical_structure:
+  smiles: CC(=CCC1=CC2=C(C=C1)C(=CN2)C(=O)O[C@H]3[C@@H]([C@H](C=C(O3)C(=O)O)O)O)C
+  standard_inchi: InChI=1S/C20H21NO7/c1-10(2)3-4-11-5-6-12-13(9-21-14(12)7-11)19(26)28-20-17(23)15(22)8-16(27-20)18(24)25/h3,5-9,15,17,20-23H,4H2,1-2H3,(H,24,25)/t15-,17+,20-/m0/s1
+  standard_inchi_key: ABLCZPDNHVQCBP-VPWXQRGCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001483
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:123132247
+producer_organisms:
+- taxon_id: NCBITaxon:1429103
+  taxon_label: Streptomyces sp. RM-5-8
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001483
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28166207
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001483 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001483
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1429103
+  organism_label: Streptomyces sp. RM-5-8
+  evidence:
+  - reference: PMID:28166207
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001483 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KT895008.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001483
+  source_label: 5-isoprenylindole-3-carboxylate β-D-glycosyl ester
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-fd6c769099
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-203cdcce8f
+label: viriditoxin
+chemical_structure:
+  smiles: COC1=C(C2=C(C(=C1)O)C(=C3C(=C2)C[C@H](OC3=O)CC(=O)OC)O)C4=C(C=C(C5=C4C=C6C[C@H](OC(=O)C6=C5O)CC(=O)OC)O)OC
+  standard_inchi: InChI=1S/C34H30O14/c1-43-21-11-19(35)27-17(7-13-5-15(9-23(37)45-3)47-33(41)25(13)31(27)39)29(21)30-18-8-14-6-16(10-24(38)46-4)48-34(42)26(14)32(40)28(18)20(36)12-22(30)44-2/h7-8,11-12,15-16,35-36,39-40H,5-6,9-10H2,1-4H3/t15-,16-/m0/s1
+  standard_inchi_key: GMCZVCXZGZGZPX-HOTGVXAUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001866
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Naphthalenes
+  class_results:
+  - Bisnaphthalenes
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:53343291
+producer_organisms:
+- taxon_id: NCBITaxon:264951
+  taxon_label: Byssochlamys spectabilis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001866
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:31045362
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001866 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001866
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:264951
+  organism_label: Byssochlamys spectabilis
+  evidence:
+  - reference: PMID:31045362
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001866 entry version 4; citation taken from the entry level
+  genome_accession: genbank:NW_021167153.1
+  locus_from: 394575
+  locus_to: 427864
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001866
+  source_label: viriditoxin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-203cdcce8f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

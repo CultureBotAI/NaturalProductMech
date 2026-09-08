@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-5b7add408c
+label: phosphonoacetic Acid
+chemical_structure:
+  smiles: C(C(=O)O)P(=O)(O)O
+  standard_inchi: InChI=1S/C2H5O5P/c3-2(4)1-8(5,6)7/h1H2,(H,3,4)(H2,5,6,7)
+  standard_inchi_key: XUYJLQHKOGNDPB-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001739
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1463861
+  taxon_label: Streptomyces sp. NRRL F-525
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001739
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1111/j.1749-6632.1977.tb21966.x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001739 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001739
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1463861
+  organism_label: Streptomyces sp. NRRL F-525
+  evidence:
+  - reference: DOI:10.1111/j.1749-6632.1977.tb21966.x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001739 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:NZ_JNXE01000019.1
+  locus_from: 94228
+  locus_to: 109122
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001739
+  source_label: phosphonoacetic Acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-5b7add408c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

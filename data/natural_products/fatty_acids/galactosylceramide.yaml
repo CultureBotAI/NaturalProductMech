@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-0a1c9f30af
+label: α-galactosylceramide
+chemical_structure:
+  smiles: CC(C)CCCCCCCCCCC[C@@H](O)CC(=O)N[C@@H](CO[C@@H]1OC(CO)[C@H](O)C(O)C1O)[C@H](O)CCCCCCCCCCCC(C)C
+  standard_inchi: InChI=1S/C40H79NO9/c1-30(2)23-19-15-11-7-5-9-13-17-21-25-32(43)27-36(45)41-33(29-49-40-39(48)38(47)37(46)35(28-42)50-40)34(44)26-22-18-14-10-6-8-12-16-20-24-31(3)4/h30-35,37-40,42-44,46-48H,5-29H2,1-4H3,(H,41,45)/t32-,33+,34-,35?,37+,38?,39?,40-/m1/s1
+  standard_inchi_key: TVSWUEMHNUKUAZ-FQMLERHQSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000948
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Sphingolipids
+  class_results:
+  - Neutral glycosphingolipids
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:2826713
+producer_organisms:
+- taxon_id: NCBITaxon:272559
+  taxon_label: Bacteroides fragilis NCTC 9343
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000948
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23874157
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000948 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000948
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:272559
+  organism_label: Bacteroides fragilis NCTC 9343
+  evidence:
+  - reference: PMID:23874157
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000948 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CR626927.1
+  locus_from: 2860810
+  locus_to: 2863272
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000948
+  source_label: α-galactosylceramide
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0a1c9f30af
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

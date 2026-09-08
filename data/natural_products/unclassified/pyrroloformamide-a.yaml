@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-95e1d7bb84
+label: pyrroloformamide A
+chemical_structure:
+  smiles: CC(=O)N(C)C1C(=O)NC2=CSSC21
+  standard_inchi: InChI=1S/C8H10N2O2S2/c1-4(11)10(2)6-7-5(3-13-14-7)9-8(6)12/h3,6-7H,1-2H3,(H,9,12)
+  standard_inchi_key: SVTAHLMEBUJVPG-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002340
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- OTHER
+xrefs:
+- npatlas:NPA021225
+producer_organisms:
+- taxon_id: NCBITaxon:2542736
+  taxon_label: Streptomyces sp. CB02980
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002340
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32049520
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002340 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002340
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2542736
+  organism_label: Streptomyces sp. CB02980
+  evidence:
+  - reference: PMID:32049520
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002340 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JACSCH020000013.1
+  locus_from: 1
+  locus_to: 28112
+  bgc_class:
+  - NRPS
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002340
+  source_label: pyrroloformamide A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-95e1d7bb84
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

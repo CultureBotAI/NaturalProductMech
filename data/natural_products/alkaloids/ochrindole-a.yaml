@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-3fc157d948
+label: ochrindole A
+chemical_structure:
+  smiles: COC1=C(O)C(C2=CNC3=CC=CC=C23)=C(OC)C(CC=C(C)C)=C1C1=CNC2=C1C=CC=C2
+  standard_inchi: InChI=1S/C29H28N2O3/c1-17(2)13-14-20-25(21-15-30-23-11-7-5-9-18(21)23)29(34-4)27(32)26(28(20)33-3)22-16-31-24-12-8-6-10-19(22)24/h5-13,15-16,30-32H,14H2,1-4H3
+  standard_inchi_key: YVQFFNCNPFQQKW-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001712
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Simple indole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA01610
+producer_organisms:
+- taxon_id: NCBITaxon:1392250
+  taxon_label: Aspergillus steynii IBT 23096
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001712
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.3390/molecules27196759
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001712 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001712
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1392250
+  organism_label: Aspergillus steynii IBT 23096
+  evidence:
+  - reference: DOI:10.3390/molecules27196759
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001712 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MSFO01000007.1
+  locus_from: 2783445
+  locus_to: 2824507
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001712
+  source_label: ochrindole A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3fc157d948
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

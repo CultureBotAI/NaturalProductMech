@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-db2f3dd6ef
+label: tiancilactone G
+chemical_structure:
+  smiles: C[C@@H]1[C@H](C[C@@H]2[C@]3(CC[C@@H]([C@@]([C@@H]3CC[C@@]2([C@H]1CCO)C)(C)COC(=O)C4=C(C=CC(=C4)Cl)NC)O)C)OC
+  standard_inchi: InChI=1S/C30H46ClNO5/c1-18-21(11-14-33)28(2)12-9-24-29(3,25(28)16-23(18)36-6)13-10-26(34)30(24,4)17-37-27(35)20-15-19(31)7-8-22(20)32-5/h7-8,15,18,21,23-26,32-34H,9-14,16-17H2,1-6H3/t18-,21-,23-,24+,25-,26-,28+,29-,30-/m0/s1
+  standard_inchi_key: WRGXHKIMQGIAGX-CTSXJKPTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002019
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Labdane diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:156582170
+producer_organisms:
+- taxon_id: NCBITaxon:1703937
+  taxon_label: Streptomyces sp. CB03234
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002019
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29806086
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002019 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002019
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1703937
+  organism_label: Streptomyces sp. CB03234
+  evidence:
+  - reference: PMID:29806086
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002019 entry version 3; citation taken from the entry level
+  genome_accession: genbank:BK010469.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002019
+  source_label: tiancilactone G
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-db2f3dd6ef
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

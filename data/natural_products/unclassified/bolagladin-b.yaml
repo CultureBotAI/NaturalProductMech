@@ -1,0 +1,120 @@
+identifier: naturalproductmech:mibig-f9aa045875
+label: bolagladin B
+chemical_structure:
+  smiles: CC[C@@H](C)[C@H]1NC(=O)[C@@H](NC(=O)/C=C/NC(=O)/C=C\CCCCCCC/C=C\CCCCC(CC(=O)O)(OC)C(=O)O)COC(=O)[C@H](CO)NC(=O)[C@H](CCO)NC1=O
+  standard_inchi: InChI=1S/C40H63N5O14/c1-4-27(2)34-37(54)43-28(20-23-46)35(52)44-29(25-47)38(55)59-26-30(36(53)45-34)42-32(49)19-22-41-31(48)18-16-14-12-10-8-6-5-7-9-11-13-15-17-21-40(58-3,39(56)57)24-33(50)51/h9,11,16,18-19,22,27-30,34,46-47H,4-8,10,12-15,17,20-21,23-26H2,1-3H3,(H,41,48)(H,42,49)(H,43,54)(H,44,52)(H,45,53)(H,50,51)(H,56,57)/b11-9-,18-16-,22-19+/t27-,28+,29+,30+,34-,40?/m1/s1
+  standard_inchi_key: BPAWMVDVEWZKAP-GQZVVMBSSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002327
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Lipopeptide
+xrefs:
+- npatlas:NPA033056
+producer_organisms:
+- taxon_id: NCBITaxon:28095
+  taxon_label: Burkholderia gladioli
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002327
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32780428
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002327 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:28095
+  taxon_label: Burkholderia gladioli
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002336
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
+  evidence:
+  - reference: DOI:10.1002/ange.202009110
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002336 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002327
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:28095
+  organism_label: Burkholderia gladioli
+  evidence:
+  - reference: PMID:32780428
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002327 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT844061.1
+  locus_from: 1
+  locus_to: 43824
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0002336
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:28095
+  organism_label: Burkholderia gladioli
+  evidence:
+  - reference: DOI:10.1002/ange.202009110
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002336 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:NZ_CADEQC010000001.1
+  locus_from: 2674967
+  locus_to: 2728619
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002327
+  source_label: bolagladin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f9aa045875
+- source: MIBIG
+  source_id: BGC0002336
+  source_label: bolagladin B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c8c8da4875
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002327, BGC0002336.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

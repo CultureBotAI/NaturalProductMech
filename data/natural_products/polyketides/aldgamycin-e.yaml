@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-85126698ac
+label: aldgamycin E
+chemical_structure:
+  smiles: C[C@@H]1C[C@]2([C@@H](OC(=O)O2)C)[C@H]([C@@H](O1)OC3C(CC(C(=O)CCC4C(O4)C(C(OC(=O)/C=C/C3C)C)CO[C@H]5[C@@H]([C@@H]([C@@H]([C@H](O5)C)O)OC)OC)C)C)O
+  standard_inchi: InChI=1S/C37H58O15/c1-17-10-13-27(39)47-21(5)24(16-45-34-32(44-9)31(43-8)28(40)22(6)48-34)30-26(50-30)12-11-25(38)18(2)14-19(3)29(17)51-35-33(41)37(15-20(4)46-35)23(7)49-36(42)52-37/h10,13,17-24,26,28-35,40-41H,11-12,14-16H2,1-9H3/b13-10+/t17?,18?,19?,20-,21?,22-,23+,24?,26?,28-,29?,30?,31-,32-,33+,34-,35+,37+/m1/s1
+  standard_inchi_key: OQBVBRTUEKMEAX-LKOMEXITSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001396
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Tylosins
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:102425548
+producer_organisms:
+- taxon_id: NCBITaxon:1846204
+  taxon_label: Streptomyces sp. A1(2016)
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001396
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27191535
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001396 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001396
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1846204
+  organism_label: Streptomyces sp. A1(2016)
+  evidence:
+  - reference: PMID:27191535
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001396 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KU568466.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001396
+  source_label: aldgamycin E
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-85126698ac
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

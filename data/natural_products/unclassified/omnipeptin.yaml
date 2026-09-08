@@ -1,0 +1,115 @@
+identifier: naturalproductmech:mibig-c50bccc3e6
+label: omnipeptin
+chemical_structure:
+  smiles: CC1CN2C(=O)[C@H](CC3=CC=CC=C3)NC(=O)[C@@H](C(C)C)NC(=O)[C@H](CC3=C[NH]C4=C3C=CC(Cl)=C4)NC(=O)[C@H](C(C)C(N)=O)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](CCC(=O)O)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)C[C@H](N)C(=O)O)C(O)C3=CC=C(O)C=C3)C(C)O)COC(=O)[C@@H]2C1O
+  standard_inchi: InChI=1S/C64H82ClN13O22/c1-27(2)46-58(92)71-41(19-31-9-7-6-8-10-31)62(96)78-24-28(3)51(85)50(78)64(99)100-26-43(57(91)76-47(29(4)53(67)87)59(93)70-40(55(89)75-46)20-33-23-68-39-21-34(65)13-16-36(33)39)73-60(94)48(30(5)80)77-54(88)38(17-18-45(83)84)69-56(90)42(25-79)72-61(95)49(74-44(82)22-37(66)63(97)98)52(86)32-11-14-35(81)15-12-32/h6-16,21,23,27-30,37-38,40-43,46-52,68,79-81,85-86H,17-20,22,24-26,66H2,1-5H3,(H2,67,87)(H,69,90)(H,70,93)(H,71,92)(H,72,95)(H,73,94)(H,74,82)(H,75,89)(H,76,91)(H,77,88)(H,83,84)(H,97,98)/t28?,29?,30?,37-,38+,40-,41-,42-,43-,46+,47-,48-,49-,50-,51?,52?/m0/s1
+  standard_inchi_key: TVZYKKNRWFVGID-XMQDSMCMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002078
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA027196
+producer_organisms:
+- taxon_id: NCBITaxon:77133
+  taxon_label: uncultured bacterium
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002078
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:31451725
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002078 entry version 2; citation taken from the entry level
+- taxon_id: NCBITaxon:77133
+  taxon_label: uncultured bacterium
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002079
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:31451725
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002079 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002078
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:77133
+  organism_label: uncultured bacterium
+  evidence:
+  - reference: PMID:31451725
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002078 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MN161665.1
+  locus_from: 66069
+  locus_to: 147602
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0002079
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:77133
+  organism_label: uncultured bacterium
+  evidence:
+  - reference: PMID:31451725
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002079 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MN161666.1
+  locus_from: 20541
+  locus_to: 101692
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002078
+  source_label: omnipeptin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c50bccc3e6
+- source: MIBIG
+  source_id: BGC0002079
+  source_label: omnipeptin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-f2cd85ad6b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002078, BGC0002079.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

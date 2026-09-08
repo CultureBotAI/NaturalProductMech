@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-5005ff3a20
+label: crocacin
+chemical_structure:
+  smiles: COC(\C=C\C1=CC=CC=C1)C(C)C(OC)C(C)\C=C\C(\C)=C\C(=O)N\C=C/C\C=C/C(=O)NCC(=O)OC
+  standard_inchi: InChI=1S/C31H42N2O6/c1-23(21-29(35)32-20-12-8-11-15-28(34)33-22-30(36)38-5)16-17-24(2)31(39-6)25(3)27(37-4)19-18-26-13-9-7-10-14-26/h7,9-21,24-25,27,31H,8,22H2,1-6H3,(H,32,35)(H,33,34)/b15-11-,17-16+,19-18+,20-12-,23-21+
+  standard_inchi_key: XHTUDGVBJDVOEZ-WKRSYQPHSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000974
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA011357
+- pubchem:6476008
+producer_organisms:
+- taxon_id: NCBITaxon:52
+  taxon_label: Chondromyces crocatus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000974
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24981773
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000974 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000974
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:52
+  organism_label: Chondromyces crocatus
+  evidence:
+  - reference: PMID:24981773
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000974 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FN547928.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000974
+  source_label: crocacin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5005ff3a20
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

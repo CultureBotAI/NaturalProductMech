@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-a826f4c2ec
+label: naringenin
+chemical_structure:
+  smiles: C1C(OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O
+  standard_inchi: InChI=1S/C15H12O5/c16-9-3-1-8(2-4-9)13-7-12(19)15-11(18)5-10(17)6-14(15)20-13/h1-6,13,16-18H,7H2
+  standard_inchi_key: FTVWIRXFELQLPI-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001310
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Flavonoids
+  class_results:
+  - Flavanones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:932
+producer_organisms:
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus ATCC 27064
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001310
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26553209
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001310 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001310
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1901
+  organism_label: Streptomyces clavuligerus ATCC 27064
+  evidence:
+  - reference: PMID:26553209
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001310 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CM000913.1
+  locus_from: 6460418
+  locus_to: 6463122
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001310
+  source_label: naringenin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a826f4c2ec
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

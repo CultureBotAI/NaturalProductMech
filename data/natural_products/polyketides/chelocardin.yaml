@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-3b0a47e4fd
+label: chelocardin
+chemical_structure:
+  smiles: '[H][C@@]12CC3=C(C(O)=C4C(O)=C(C)C=CC4=C3C)C(=O)[C@]1(O)C(=O)C(C(C)=O)=C(O)[C@@H]2N'
+  standard_inchi: InChI=1S/C22H21NO7/c1-7-4-5-10-8(2)11-6-12-16(23)19(27)13(9(3)24)20(28)22(12,30)21(29)15(11)18(26)14(10)17(7)25/h4-5,12,16,25-27,30H,6,23H2,1-3H3/t12-,16+,22+/m0/s1
+  standard_inchi_key: IRCLZBUBOWPFCH-ONJZCGHCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000208
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Tetracyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA018131
+- pubchem:71402
+producer_organisms:
+- taxon_id: NCBITaxon:76022
+  taxon_label: Amycolatopsis sulphurea
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000208
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24043447
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000208 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000208
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:76022
+  organism_label: Amycolatopsis sulphurea
+  evidence:
+  - reference: PMID:24043447
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000208 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KC870000.2
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000208
+  source_label: chelocardin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3b0a47e4fd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

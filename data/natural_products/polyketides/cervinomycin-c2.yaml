@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-0266645c57
+label: cervinomycin C2
+chemical_structure:
+  smiles: COC1=C(O)C=C2C(=O)C3=C(OC2=C1)C(=O)C1=C(C3=O)C2=C(C=C3C=C(C)N(CCO)C(=O)C3=C2O)CC1
+  standard_inchi: InChI=1S/C28H21NO9/c1-11-7-13-8-12-3-4-14-21(19(12)25(34)20(13)28(36)29(11)5-6-30)26(35)22-23(32)15-9-16(31)18(37-2)10-17(15)38-27(22)24(14)33/h7-10,30-31,34H,3-6H2,1-2H3
+  standard_inchi_key: YHKNJVBTWBBGKF-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002556
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Ericamycins
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA029135
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002556
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1038/s41429-020-0342-1
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002556 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002556
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: DOI:10.1038/s41429-020-0342-1
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002556 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MK410434.1
+  locus_from: 1
+  locus_to: 42471
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002556
+  source_label: cervinomycin C2
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-0266645c57
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

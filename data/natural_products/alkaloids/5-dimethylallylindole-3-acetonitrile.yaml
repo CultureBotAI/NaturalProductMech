@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-380600c810
+label: 5-dimethylallylindole-3-acetonitrile
+chemical_structure:
+  smiles: CC(C)=CCC1=CC2=C(C=C1)[NH]C=C2CC#N
+  standard_inchi: InChI=1S/C15H16N2/c1-11(2)3-4-12-5-6-15-14(9-12)13(7-8-16)10-17-15/h3,5-6,9-10,17H,4,7H2,1-2H3
+  standard_inchi_key: OTLRZZMUVKJCDO-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002128
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Simple indole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA032817
+producer_organisms:
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002128
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:23430264
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002128 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002128
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:100226
+  organism_label: Streptomyces coelicolor A3(2)
+  evidence:
+  - reference: PMID:23430264
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002128 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AL645882.2
+  locus_from: 8279373
+  locus_to: 8288044
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002128
+  source_label: 5-dimethylallylindole-3-acetonitrile
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-380600c810
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

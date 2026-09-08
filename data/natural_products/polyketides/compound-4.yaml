@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-a36913e102
+label: compound 4
+chemical_structure:
+  smiles: O=C1C(C)(OC(CC(C)O)=O)C(C(C(O)OC(/C=C/C=C/C)=C2)(O)C2=C1)=O
+  standard_inchi: InChI=1S/C19H22O8/c1-4-5-6-7-13-9-12-10-14(21)18(3,27-15(22)8-11(2)20)16(23)19(12,25)17(24)26-13/h4-7,9-11,17,20,24-25H,8H2,1-3H3/b5-4+,7-6+
+  standard_inchi_key: UEUHYXZLWDMKRG-YTXTXJHMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002206
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Chromanes
+  class_results:
+  - Azaphilones
+  is_glycoside: true
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1491466
+  taxon_label: Trichoderma guizhouense
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002206
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32985773
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002206 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002206
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1491466
+  organism_label: Trichoderma guizhouense
+  evidence:
+  - reference: PMID:32985773
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002206 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LVVK01000021.1
+  locus_from: 688390
+  locus_to: 727863
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002206
+  source_label: compound 4
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-a36913e102
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: needs-a-name
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: This record is labelled 'compound 4', which is a label from the cited paper's
+    own numbering rather than a compound name. Resolve a name from the literature
+    or a structure registry.
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

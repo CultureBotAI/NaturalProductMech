@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-3d5a319a7d
+label: efomycin L
+chemical_structure:
+  smiles: CC[C@@H](/C=C/C(=O)[C@@H](C)[C@H](O)[C@H](C)[C@H]1OC(=O)/C=C/C=C/[C@H](C)[C@@H]([C@@H](C)[C@@H](O)[C@H](C)C(=O)/C=C/[C@H](C)[C@@H](C)O)OC(=O)/C=C/C=C/[C@@H]1C)[C@@H](C)O
+  standard_inchi: InChI=1S/C41H62O10/c1-11-33(32(10)43)21-23-35(45)28(6)39(49)30(8)41-26(4)17-13-15-18-36(46)50-40(25(3)16-12-14-19-37(47)51-41)29(7)38(48)27(5)34(44)22-20-24(2)31(9)42/h12-33,38-43,48-49H,11H2,1-10H3/b16-12+,17-13+,18-15+,19-14+,22-20+,23-21+/t24-,25-,26-,27+,28+,29-,30-,31+,32+,33-,38-,39-,40-,41-/m0/s1
+  standard_inchi_key: DINAQJFWVQUWBF-IVEAAZELSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002291
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA032891
+producer_organisms:
+- taxon_id: NCBITaxon:1495638
+  taxon_label: Streptomyces sp. M56
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002291
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31447803
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002291 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002291
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1495638
+  organism_label: Streptomyces sp. M56
+  evidence:
+  - reference: PMID:31447803
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002291 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP025018.1
+  locus_from: 2046004
+  locus_to: 2109226
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002291
+  source_label: efomycin L
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3d5a319a7d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

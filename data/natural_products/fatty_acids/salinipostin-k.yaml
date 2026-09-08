@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-caaa6fb247
+label: Salinipostin K
+chemical_structure:
+  smiles: CCCCCCCCCCCCCO[P@]1(=O)OC[C@@H]2COC(=O)C2=C(O1)CC
+  standard_inchi: InChI=1S/C21H37O6P/c1-3-5-6-7-8-9-10-11-12-13-14-15-25-28(23)26-17-18-16-24-21(22)20(18)19(4-2)27-28/h18H,3-17H2,1-2H3/t18-,28+/m0/s1
+  standard_inchi_key: XTJJTQLRWAFCJL-XDBZFTIUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001458
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Glycerophospholipids
+  class_results:
+  - Long-Chain Bicyclic Phosphotriester
+  is_glycoside: false
+bgc_class:
+- OTHER
+compound_classes:
+- Lactone
+xrefs:
+- npatlas:NPA009946
+producer_organisms:
+- taxon_id: NCBITaxon:369723
+  taxon_label: Salinispora tropica CNB-440
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001458
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/jo5024409
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001458 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001458
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:369723
+  organism_label: Salinispora tropica CNB-440
+  evidence:
+  - reference: DOI:10.1021/jo5024409
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001458 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:NC_009380.1
+  locus_from: 4714378
+  locus_to: 4725672
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001458
+  source_label: Salinipostin K
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-caaa6fb247
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,77 @@
+identifier: naturalproductmech:mibig-0c4bcd09ec
+label: brasiliamide D
+chemical_structure:
+  smiles: CC(=O)N1C[C@@H](N(CC1CC2=CC3=C(C(=C2)OC)OCO3)C(=O)C)CC4=CC=CC=C4
+  standard_inchi: InChI=1S/C24H28N2O5/c1-16(27)25-14-21(10-19-11-22(29-3)24-23(12-19)30-15-31-24)26(17(2)28)13-20(25)9-18-7-5-4-6-8-18/h4-8,11-12,20-21H,9-10,13-15H2,1-3H3/t20-,21?/m0/s1
+  standard_inchi_key: LGVCEIBVKNARBM-BGERDNNASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002278
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Tetramate alkaloids
+  - Peptide alkaloids
+  class_results:
+  - Pyrazine and Piperazine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+- NRPS
+xrefs:
+- npatlas:NPA009301
+producer_organisms:
+- taxon_id: NCBITaxon:104259
+  taxon_label: Penicillium brasilianum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002278
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Gene expression correlated
+    with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32436033
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002278 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002278
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:104259
+  organism_label: Penicillium brasilianum
+  evidence:
+  - reference: PMID:32436033
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002278 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CDHK01000003.1
+  locus_from: 3030630
+  locus_to: 3059149
+  bgc_class:
+  - OTHER
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002278
+  source_label: brasiliamide D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0c4bcd09ec
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

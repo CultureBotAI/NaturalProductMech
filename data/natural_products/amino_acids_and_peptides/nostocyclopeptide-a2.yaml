@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-517478b183
+label: nostocyclopeptide A2
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]1NC(=O)[C@@H](CCC(N)=O)NC(=O)CNC(=O)[C@H](CC2=CC=C(O)C=C2)\N=C\[C@H](CC2=CC=CC=C2)NC(=O)[C@@H]2C[C@H](C)CN2C(=O)[C@H](CO)NC1=O
+  standard_inchi: InChI=1S/C40H54N8O9/c1-4-24(3)35-39(56)46-31(22-49)40(57)48-21-23(2)16-32(48)38(55)44-27(17-25-8-6-5-7-9-25)19-42-30(18-26-10-12-28(50)13-11-26)36(53)43-20-34(52)45-29(37(54)47-35)14-15-33(41)51/h5-13,19,23-24,27,29-32,35,49-50H,4,14-18,20-22H2,1-3H3,(H2,41,51)(H,43,53)(H,44,55)(H,45,52)(H,46,56)(H,47,54)/b42-19+/t23-,24-,27-,29+,30-,31-,32-,35-/m0/s1
+  standard_inchi_key: OYHPNVXZUBWKJE-ZYAMHZMNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000397
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA04801
+producer_organisms:
+- taxon_id: NCBITaxon:76335
+  taxon_label: Nostoc sp. ATCC 53789
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000397
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12515465
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000397 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000397
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:76335
+  organism_label: Nostoc sp. ATCC 53789
+  evidence:
+  - reference: PMID:12515465
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000397 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY167420.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000397
+  source_label: nostocyclopeptide A2
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-517478b183
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

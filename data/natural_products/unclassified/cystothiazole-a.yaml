@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-3500c31033
+label: cystothiazole A
+chemical_structure:
+  smiles: CO[C@@H](\C=C\C1=CSC(=N1)C1=CSC(=N1)C(C)C)[C@@H](C)C(\OC)=C/C(=O)OC
+  standard_inchi: InChI=1S/C20H26N2O4S2/c1-12(2)19-22-15(11-28-19)20-21-14(10-27-20)7-8-16(24-4)13(3)17(25-5)9-18(23)26-6/h7-13,16H,1-6H3/b8-7+,17-9+/t13-,16+/m1/s1
+  standard_inchi_key: LRTJMINIVSPVMX-ZVJWTWILSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000982
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Melithiazole and Myxothiazole derivatives
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA07000
+- pubchem:5470965
+producer_organisms:
+- taxon_id: NCBITaxon:43
+  taxon_label: Cystobacter fuscus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000982
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16041144
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000982 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000982
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:43
+  organism_label: Cystobacter fuscus
+  evidence:
+  - reference: PMID:16041144
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000982 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY834753.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000982
+  source_label: cystothiazole A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3500c31033
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

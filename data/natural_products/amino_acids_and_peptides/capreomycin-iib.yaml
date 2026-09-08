@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-b8a604b836
+label: capreomycin IIB
+chemical_structure:
+  smiles: C[C@H]1C(=O)N[C@H](C(=O)N/C(=C\NC(=O)N)/C(=O)N[C@H](C(=O)NC[C@@H](C(=O)N1)N)[C@H]2CCN=C(N2)N)CN
+  standard_inchi: InChI=1S/C19H32N12O6/c1-7-13(32)28-10(4-20)15(34)29-11(6-26-19(23)37)16(35)31-12(9-2-3-24-18(22)30-9)17(36)25-5-8(21)14(33)27-7/h6-10,12H,2-5,20-21H2,1H3,(H,25,36)(H,27,33)(H,28,32)(H,29,34)(H,31,35)(H3,22,24,30)(H3,23,26,37)/b11-6-/t7-,8-,9+,10-,12-/m0/s1
+  standard_inchi_key: MHBQQDNEPQYCOS-CBQPQWBASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000316
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:3034237
+producer_organisms:
+- taxon_id: NCBITaxon:66854
+  taxon_label: Saccharothrix mutabilis subsp. capreolus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000316
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17496129
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000316 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000316
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:66854
+  organism_label: Saccharothrix mutabilis subsp. capreolus
+  evidence:
+  - reference: PMID:17496129
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000316 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF472579.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000316
+  source_label: capreomycin IIB
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b8a604b836
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

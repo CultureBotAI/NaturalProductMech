@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-7d310d5766
+label: fusaridione A
+chemical_structure:
+  smiles: C/C=C(\C)/C=C(\C)/C=C/C=C(\C)/C=C/C(=O)[C@@]1(C(=O)[C@@H](NC1=O)CC2=CC=C(C=C2)O)C
+  standard_inchi: InChI=1S/C27H31NO4/c1-6-18(2)16-20(4)9-7-8-19(3)10-15-24(30)27(5)25(31)23(28-26(27)32)17-21-11-13-22(29)14-12-21/h6-16,23,29H,17H2,1-5H3,(H,28,32)/b9-7+,15-10+,18-6+,19-8+,20-16+/t23-,27+/m0/s1
+  standard_inchi_key: VXYKTSLHEMJALI-ABULEIRLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000992
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tetramate alkaloids
+  class_results:
+  - Simple tetramate alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:5458342
+- pubchem:91819845
+producer_organisms:
+- taxon_id: NCBITaxon:42747
+  taxon_label: Fusarium heterosporum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000992
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15724180
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000992 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000992
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:42747
+  organism_label: Fusarium heterosporum
+  evidence:
+  - reference: PMID:15724180
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000992 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AY700570.3
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000992
+  source_label: fusaridione A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-7d310d5766
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

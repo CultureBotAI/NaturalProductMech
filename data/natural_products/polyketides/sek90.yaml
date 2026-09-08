@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-7bbaea7ef9
+label: SEK90
+chemical_structure:
+  smiles: CCCC(C1=C(O)C=C(CC2=CC=CC(O)=C2C(=O)C2=C(O)C=C(O)C=C2C)OC1=O)C1=C(O)C=C(CC2=CC=CC(O)=C2C(=O)C2=C(O)C=C(O)C=C2C)OC1=O
+  standard_inchi: InChI=1S/C44H38O14/c1-4-7-28(39-33(51)18-26(57-43(39)55)14-22-8-5-10-29(47)37(22)41(53)35-20(2)12-24(45)16-31(35)49)40-34(52)19-27(58-44(40)56)15-23-9-6-11-30(48)38(23)42(54)36-21(3)13-25(46)17-32(36)50/h5-6,8-13,16-19,28,45-52H,4,7,14-15H2,1-3H3
+  standard_inchi_key: GDGNAEZVFSCFGX-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002070
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA033499
+producer_organisms:
+- taxon_id: NCBITaxon:1179773
+  taxon_label: Saccharothrix espanaensis DSM 44229
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002070
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Knock-out studies|Gene expression
+    correlated with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:33352664
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002070 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002070
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1179773
+  organism_label: Saccharothrix espanaensis DSM 44229
+  evidence:
+  - reference: PMID:33352664
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002070 entry version 3; citation taken from the entry level
+  genome_accession: genbank:HE804045.1
+  locus_from: 6124164
+  locus_to: 6148184
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002070
+  source_label: SEK90
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7bbaea7ef9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-1d752846d9
+label: ripostatin C
+chemical_structure:
+  smiles: C/C(=C\CC1=CC=CC=C1)/CCC(=O)/C=C/C[C@@H](C/C(=C/C/C=C/C/C(=C\C(=O)O)/CC(=O)O)/C)O
+  standard_inchi: InChI=1S/C30H38O6/c1-23(16-18-25-11-6-4-7-12-25)17-19-27(31)14-9-15-28(32)20-24(2)10-5-3-8-13-26(21-29(33)34)22-30(35)36/h3-4,6-12,14,16,21,28,32H,5,13,15,17-20,22H2,1-2H3,(H,33,34)(H,35,36)/b8-3+,14-9+,23-16+,24-10+,26-21+/t28-/m0/s1
+  standard_inchi_key: DLWDWAOHZVEUQO-LAUMHEIDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001761
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:56
+  taxon_label: Sorangium cellulosum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001761
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28098952
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001761 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001761
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:56
+  organism_label: Sorangium cellulosum
+  evidence:
+  - reference: PMID:28098952
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001761 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KY646190.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001761
+  source_label: ripostatin C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1d752846d9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

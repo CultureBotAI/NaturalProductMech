@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-45aa4eac2a
+label: metathramycin
+chemical_structure:
+  smiles: CO[C@H](C(=O)[C@@H](O)[C@@H](C)O)C1CC2=C(C(=O)[C@H]1O[C@H]1CC(O[C@H]3C[C@@H](O[C@H]4C[C@](C)(O)[C@H](O)[C@@H](C)O4)[C@@H](O)[C@@H](C)O3)[C@H](O)[C@@H](C)O1)C(O)=C1C(O)=C(C)C(O[C@H]3C[C@](C)(O)[C@H](O)[C@@H](C)O3)=CC1=C2
+  standard_inchi: InChI=1S/C47H68O21/c1-17-26(65-31-15-46(7,58)44(56)21(5)63-31)12-24-10-23-11-25(42(60-9)41(55)36(50)18(2)48)43(40(54)34(23)39(53)33(24)35(17)49)68-30-14-27(37(51)20(4)62-30)66-29-13-28(38(52)19(3)61-29)67-32-16-47(8,59)45(57)22(6)64-32/h10,12,18-22,25,27-32,36-38,42-45,48-53,56-59H,11,13-16H2,1-9H3/t18-,19-,20-,21-,22-,25?,27?,28-,29+,30+,31+,32+,36+,37-,38+,42+,43+,44-,45-,46+,47+/m1/s1
+  standard_inchi_key: UGZFIQNLDRORAN-LZCAKTMZSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002129
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA033018
+producer_organisms:
+- taxon_id: NCBITaxon:77133
+  taxon_label: uncultured bacterium
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002129
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this
+    field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:34458799
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002129 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002129
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:77133
+  organism_label: uncultured bacterium
+  evidence:
+  - reference: PMID:34458799
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002129 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MW512268.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002129
+  source_label: metathramycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-45aa4eac2a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

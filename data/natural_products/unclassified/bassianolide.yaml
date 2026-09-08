@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-35b72425b8
+label: bassianolide
+chemical_structure:
+  smiles: CC(C)CC1C(=O)OC(C(=O)N(C(C(=O)OC(C(=O)N(C(C(=O)OC(C(=O)N(C(C(=O)OC(C(=O)N1C)C(C)C)CC(C)C)C)C(C)C)CC(C)C)C)C(C)C)CC(C)C)C)C(C)C
+  standard_inchi: InChI=1S/C48H84N4O12/c1-25(2)21-33-45(57)61-38(30(11)12)42(54)50(18)35(23-27(5)6)47(59)63-40(32(15)16)44(56)52(20)36(24-28(7)8)48(60)64-39(31(13)14)43(55)51(19)34(22-26(3)4)46(58)62-37(29(9)10)41(53)49(33)17/h25-40H,21-24H2,1-20H3
+  standard_inchi_key: QVZZPLDJERFENQ-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000312
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:163065
+producer_organisms:
+- taxon_id: NCBITaxon:176275
+  taxon_label: Beauveria bassiana
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000312
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19285149
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000312 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000312
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:176275
+  organism_label: Beauveria bassiana
+  evidence:
+  - reference: PMID:19285149
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000312 entry version 4; citation taken from the entry level
+  genome_accession: genbank:FJ439897.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000312
+  source_label: bassianolide
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-35b72425b8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

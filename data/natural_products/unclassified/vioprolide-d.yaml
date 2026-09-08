@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-65d55e1251
+label: vioprolide D
+chemical_structure:
+  smiles: C/C=C/1\C(=O)N2CCC[C@H]2C(=O)N[C@H](C(=O)N([C@H](C(=O)OC[C@@H](C(=O)N[C@H](C(=O)N[C@@H](C(=O)N3CCC[C@H]3C4=N[C@@H](CS4)C(=O)N1)CC(C)C)C)O)C(C)C)C)
+  standard_inchi: InChI=1S/C37H55N8O10S/c1-8-22-35(52)44-13-9-11-25(44)32(50)38-16-28(47)43(7)29(20(4)5)37(54)55-17-27(46)33(51)39-21(6)30(48)41-23(15-19(2)3)36(53)45-14-10-12-26(45)34-42-24(18-56-34)31(49)40-22/h8,16,19-21,23-27,29,46H,9-15,17-18H2,1-7H3,(H,38,50)(H,39,51)(H,40,49)(H,41,48)/b22-8+/t21-,23+,24-,25-,26-,27-,29-/m0/s1
+  standard_inchi_key: WEVFPBZIWNINHC-FUGRQLTRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001822
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:10533574
+producer_organisms:
+- taxon_id: NCBITaxon:1965334
+  taxon_label: Cystobacter sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001822
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1002/anie.201911158
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001822 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001822
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1965334
+  organism_label: Cystobacter sp.
+  evidence:
+  - reference: DOI:10.1002/anie.201911158
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001822 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MH108942.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001822
+  source_label: vioprolide D
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-65d55e1251
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

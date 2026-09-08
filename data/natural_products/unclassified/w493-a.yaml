@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-a2612403c2
+label: W493 A
+chemical_structure:
+  smiles: CCCCCCCCCC[C@@H](C)[C@@H]1CC(=O)N[C@H]([C@@H](C)O)C(=O)N[C@@H](C)C(=O)N[C@H](C)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@H](CC2=CC=C(O)C=C2)C(=O)N[C@@H](C(C)C)C(=O)O1
+  standard_inchi: InChI=1S/C44H71N7O11/c1-8-9-10-11-12-13-14-15-16-26(4)34-24-36(55)50-38(29(7)52)43(60)47-27(5)39(56)46-28(6)40(57)48-32(21-22-35(45)54)41(58)49-33(23-30-17-19-31(53)20-18-30)42(59)51-37(25(2)3)44(61)62-34/h17-20,25-29,32-34,37-38,52-53H,8-16,21-24H2,1-7H3,(H2,45,54)(H,46,56)(H,47,60)(H,48,57)(H,49,58)(H,50,55)(H,51,59)/t26-,27+,28-,29-,32+,33-,34+,37+,38-/m1/s1
+  standard_inchi_key: BRLXWEGCLDQJEL-OOQNKUTCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002188
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA032794
+producer_organisms:
+- taxon_id: NCBITaxon:1028729
+  taxon_label: Fusarium pseudograminearum CS3096
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002188
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1271/bbb.62.858
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002188 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002188
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1028729
+  organism_label: Fusarium pseudograminearum CS3096
+  evidence:
+  - reference: DOI:10.1271/bbb.62.858
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002188 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CM003198.1
+  locus_from: 6351323
+  locus_to: 6403921
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002188
+  source_label: W493 A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-a2612403c2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

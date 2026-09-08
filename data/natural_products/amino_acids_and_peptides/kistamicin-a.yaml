@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-213b96e278
+label: kistamicin A
+chemical_structure:
+  smiles: NC(CC1=CC=C(O)C=C1)C(=O)NC1CC2=CNC3=C2C=CC(=C3)C2=CC3=CC(OC4=CC=C(CC5NC(=O)C(NC(=O)C3NC(=O)C(NC1=O)C1=CC(O)=CC(O)=C1)C1=CC=C(OC3=C(O)C=CC(=C3)C(NC5=O)C(O)=O)C(Cl)=C1)C=C4)=C2O
+  standard_inchi: InChI=1S/C61H51ClN8O15/c62-41-20-30-7-14-47(41)85-48-23-31(6-13-46(48)74)53(61(82)83)70-56(77)44-16-28-3-10-38(11-4-28)84-49-24-33-19-40(54(49)75)29-5-12-39-34(26-64-43(39)21-29)22-45(65-55(76)42(63)15-27-1-8-35(71)9-2-27)57(78)67-51(32-17-36(72)25-37(73)18-32)59(80)69-52(33)60(81)68-50(30)58(79)66-44/h1-14,17-21,23-26,42,44-45,50-53,64,71-75H,15-16,22,63H2,(H,65,76)(H,66,79)(H,67,78)(H,68,81)(H,69,80)(H,70,77)(H,82,83)
+  standard_inchi_key: UFHMIPMOTWJTKL-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001635
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Vancomycins and Teicoplanins
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA017605
+producer_organisms:
+- taxon_id: NCBITaxon:1909395
+  taxon_label: Nonomuraea sp. ATCC 55076
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001635
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28626548
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001635 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001635
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1909395
+  organism_label: Nonomuraea sp. ATCC 55076
+  evidence:
+  - reference: PMID:28626548
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001635 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP017717.1
+  locus_from: 11980264
+  locus_to: 12029697
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001635
+  source_label: kistamicin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-213b96e278
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

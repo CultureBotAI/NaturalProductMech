@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-5fb9c4200c
+label: sartorypyrone A
+chemical_structure:
+  smiles: CC1=CC(=C(C(=O)O1)C/C=C(\C)/CC/C=C(\C)/CC[C@@H]2C(=C)CC[C@@H](C2(C)C)OC(=O)C)O
+  standard_inchi: InChI=1S/C28H40O5/c1-18(11-14-23-25(30)17-21(4)32-27(23)31)9-8-10-19(2)12-15-24-20(3)13-16-26(28(24,6)7)33-22(5)29/h10-11,17,24,26,30H,3,8-9,12-16H2,1-2,4-7H3/b18-11+,19-10+/t24-,26+/m1/s1
+  standard_inchi_key: VDURTFXVMLMCFA-GISJPLNESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002604
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Triketide meroterpenoids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA007035
+producer_organisms:
+- taxon_id: NCBITaxon:1287682
+  taxon_label: Aspergillus felis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002604
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.3390/md12020822
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002604 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002604
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1287682
+  organism_label: Aspergillus felis
+  evidence:
+  - reference: DOI:10.3390/md12020822
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002604 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:LC428283.1
+  locus_from: 1835
+  locus_to: 19731
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002604
+  source_label: sartorypyrone A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-5fb9c4200c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

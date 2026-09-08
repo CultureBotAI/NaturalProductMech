@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-d7152699ce
+label: eupenifeldin
+chemical_structure:
+  smiles: CC1=C2CC3CC(C4(C(CC5=C(C=C(C(=O)C=C5O4)O)C)CC(/C=C/CC3(OC2=CC(=O)C(=C1)O)C)(C)C)C)O
+  standard_inchi: InChI=1S/C33H40O7/c1-18-10-24(34)26(36)15-28-22(18)12-20-14-30(38)33(6)21(17-31(3,4)8-7-9-32(20,5)39-28)13-23-19(2)11-25(35)27(37)16-29(23)40-33/h7-8,10-11,15-16,20-21,30,38H,9,12-14,17H2,1-6H3,(H,34,36)(H,35,37)/b8-7+
+  standard_inchi_key: BWTQHPFSWXJOGP-BQYQJAHWSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001976
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Tetraketide meroterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA016468
+- pubchem:135612713
+producer_organisms:
+- taxon_id: NCBITaxon:1707701
+  taxon_label: Phoma sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001976
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:30980906
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001976 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001976
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1707701
+  organism_label: Phoma sp.
+  evidence:
+  - reference: PMID:30980906
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001976 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MK400120.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001976
+  source_label: eupenifeldin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-d7152699ce
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-b2ae90066f
+label: heronamide B
+chemical_structure:
+  smiles: CCC/C=C/C=C/C[C@@H]1C[C@@H]2/C=C/C(=C\[C@@H]3C=C[C@@H]([C@@H]([C@H]3/C(=C/C=C/[C@H]2C(=O)N1)/C)O)O)/C
+  standard_inchi: InChI=1S/C29H39NO3/c1-4-5-6-7-8-9-12-24-19-22-15-14-20(2)18-23-16-17-26(31)28(32)27(23)21(3)11-10-13-25(22)29(33)30-24/h6-11,13-18,22-28,31-32H,4-5,12,19H2,1-3H3,(H,30,33)/b7-6+,9-8+,13-10+,15-14+,20-18-,21-11+/t22-,23-,24+,25+,26-,27-,28-/m0/s1
+  standard_inchi_key: SBSRDDBYEIPHHD-IVCUCATHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001349
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactams
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:102257462
+producer_organisms:
+- taxon_id: NCBITaxon:2878388
+  taxon_label: Streptomyces sp. SCSIO 03032
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001349
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26194087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001349 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001349
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2878388
+  organism_label: Streptomyces sp. SCSIO 03032
+  evidence:
+  - reference: PMID:26194087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001349 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KP742963.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001349
+  source_label: heronamide B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b2ae90066f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

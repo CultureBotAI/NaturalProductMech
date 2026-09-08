@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-6423a58d95
+label: tenuecyclamide A
+chemical_structure:
+  smiles: C[C@@H]1NC(=O)C2=CSC(=N2)[C@@H](C)NC(=O)C2=CSC(=N2)[C@H](C)NC(=O)C2=C(C)OC1=N2
+  standard_inchi: InChI=1S/C19H20N6O4S2/c1-7-17-25-13(10(4)29-17)16(28)22-9(3)19-24-12(6-31-19)15(27)21-8(2)18-23-11(5-30-18)14(26)20-7/h5-9H,1-4H3,(H,20,26)(H,21,27)(H,22,28)/t7-,8+,9-/m0/s1
+  standard_inchi_key: VSHFFGIAFGCZHA-YIZRAAEISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000480
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Cyanobactins
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA017309
+- pubchem:24762151
+producer_organisms:
+- taxon_id: NCBITaxon:503013
+  taxon_label: Nostoc spongiaeforme var. tenue str. Carmeli
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000480
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18425112
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000480 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000480
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:503013
+  organism_label: Nostoc spongiaeforme var. tenue str. Carmeli
+  evidence:
+  - reference: PMID:18425112
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000480 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EU290741.1
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000480
+  source_label: tenuecyclamide A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6423a58d95
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

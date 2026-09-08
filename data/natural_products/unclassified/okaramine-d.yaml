@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-153236a4d1
+label: okaramine D
+chemical_structure:
+  smiles: CO[C@@H]1[C@@]2(O)N(C(=O)\C3=C\C4=C(NC5=C4C=CC=C5)C(C)(C)\C=C/N3C2=O)[C@]23[C@H](CO)C(C)(C)N2C2=C(C=CC=C2)[C@]13O
+  standard_inchi: InChI=1S/C33H34N4O6/c1-29(2)14-15-35-23(16-19-18-10-6-8-12-21(18)34-25(19)29)26(39)37-32(42,28(35)40)27(43-5)31(41)20-11-7-9-13-22(20)36-30(3,4)24(17-38)33(31,36)37/h6-16,24,27,34,38,41-42H,17H2,1-5H3/b15-14-,23-16-/t24-,27+,31+,32+,33+/m1/s1
+  standard_inchi_key: VIKRIYAAOWJXCT-ZLMSUABPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001718
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Indole diketopiperazine alkaloids (L-Trp, L-Trp)
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA09135
+producer_organisms:
+- taxon_id: NCBITaxon:690307
+  taxon_label: Aspergillus aculeatus ATCC 16872
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001718
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28631282
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001718 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001718
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:690307
+  organism_label: Aspergillus aculeatus ATCC 16872
+  evidence:
+  - reference: PMID:28631282
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001718 entry version 4; citation taken from the entry level
+  genome_accession: genbank:NW_017962980.1
+  locus_from: 582792
+  locus_to: 598007
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001718
+  source_label: okaramine D
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-153236a4d1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

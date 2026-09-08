@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-1b4e668a78
+label: carbamidocyclophane R
+chemical_structure:
+  smiles: '[H]C([H])CCC[C@H]1CCCC[C@H](C)[C@@H](O)C2=CC(O)=C([C@@H](CCCC([H])Br)CCCC[C@H](C)[C@@H](OC(N)=O)C3=CC(O)=C1C(O)=C3)C(O)=C2'
+  standard_inchi: InChI=1S/C37H56BrNO7/c1-4-5-14-25-15-8-6-12-23(2)35(44)27-19-29(40)34(30(41)20-27)26(17-10-11-18-38)16-9-7-13-24(3)36(46-37(39)45)28-21-31(42)33(25)32(43)22-28/h19-26,35-36,40-44H,4-18H2,1-3H3,(H2,39,45)/t23-,24-,25-,26+,35+,36+/m0/s1
+  standard_inchi_key: ABRCNJSDUYUPRX-YXTQZPCGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001357
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Alkylresorcinols
+  class_results:
+  - Dialkylresorcinols
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1510471
+  taxon_label: Nostoc sp. CAVN2
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001357
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26805858
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001357 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001357
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1510471
+  organism_label: Nostoc sp. CAVN2
+  evidence:
+  - reference: PMID:26805858
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001357 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KT826756.1
+  locus_from: 1406
+  locus_to: 28337
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001357
+  source_label: carbamidocyclophane R
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1b4e668a78
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

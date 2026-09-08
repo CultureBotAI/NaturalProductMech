@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-0004766167
+label: aspulvinone H
+chemical_structure:
+  smiles: CC(=CCC1=C(C=CC(=C1)/C=C\2/C(=C(C(=O)O2)C3=CC(=C(C=C3)O)CC=C(C)C)O)O)C
+  standard_inchi: InChI=1S/C27H28O5/c1-16(2)5-8-19-13-18(7-11-22(19)28)14-24-26(30)25(27(31)32-24)21-10-12-23(29)20(15-21)9-6-17(3)4/h5-7,10-15,28-30H,8-9H2,1-4H3/b24-14-
+  standard_inchi_key: LFDYHAWYVIBCDT-OYKKKHCWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002274
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Diazotetronic acids and derivatives
+  class_results:
+  - Pulvinones
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA006062
+producer_organisms:
+- taxon_id: NCBITaxon:341663
+  taxon_label: Aspergillus terreus NIH2624
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002274
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23841722
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002274 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002274
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:341663
+  organism_label: Aspergillus terreus NIH2624
+  evidence:
+  - reference: PMID:23841722
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002274 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CH476596.1
+  locus_from: 327913
+  locus_to: 330691
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002274
+  source_label: aspulvinone H
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-0004766167
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

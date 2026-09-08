@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-066fb5437f
+label: closoxazole B
+chemical_structure:
+  smiles: Nc1ccc(cc1)-c1nc2cc(ccc2o1)C(=O)Nc1cc(ccc1O)C(O)=O
+  standard_inchi: InChI=1S/C21H15N3O5/c22-14-5-1-11(2-6-14)20-24-16-9-12(4-8-18(16)29-20)19(26)23-15-10-13(21(27)28)3-7-17(15)25/h1-10,25H,22H2,(H,23,26)(H,27,28)
+  standard_inchi_key: HGLRJWFVXKHIAO-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002826
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1121302
+  taxon_label: Clostridium cavendishii DSM 21758
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002826
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: DOI:10.1002/anie.202205409
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002826 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002826
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1121302
+  organism_label: Clostridium cavendishii DSM 21758
+  evidence:
+  - reference: DOI:10.1002/anie.202205409
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002826 entry version 2; citation taken from the entry level
+  genome_accession: genbank:FQZB01000008.1
+  locus_from: 98901
+  locus_to: 104384
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002826
+  source_label: closoxazole B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-066fb5437f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

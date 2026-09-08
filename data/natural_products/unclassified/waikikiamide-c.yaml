@@ -1,0 +1,108 @@
+identifier: naturalproductmech:mibig-689f97d555
+label: waikikiamide C
+chemical_structure:
+  smiles: CO[C@H]1C2=C(N(O)C3=C2C=CC2=C3[C@@H](OC)[C@H](ON3C(=O)[C@@]4(C[C@@]56NC(=O)[C@]7(CCCN7C5=O)C[C@H]6C4(C)C)C4=C3C3=C(C=C4)OC(C)(C)C=C3)C(C)(C)O2)C(C)(C)[C@@H]2C[C@]34CCCN3C(=O)[C@]12NC4=O
+  standard_inchi: InChI=1S/C54H62N6O11/c1-46(2)20-17-26-29(69-46)16-14-28-35(26)60(43(63)52(28)25-53-32(48(52,5)6)24-51(41(61)55-53)19-11-21-57(51)44(53)64)71-40-37(67-9)34-30(70-49(40,7)8)15-13-27-33-38(59(66)36(27)34)47(3,4)31-23-50-18-12-22-58(50)45(65)54(31,39(33)68-10)56-42(50)62/h13-17,20,31-32,37,39-40,66H,11-12,18-19,21-25H2,1-10H3,(H,55,61)(H,56,62)/t31-,32-,37+,39-,40-,50-,51-,52+,53-,54+/m0/s1
+  standard_inchi_key: GKOOPMJBANLQKC-DXXYEOPISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002253
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Indole diketopiperazine alkaloids (L-Trp, L-Pro)
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA032308
+producer_organisms:
+- taxon_id: NCBITaxon:2741095
+  taxon_label: Aspergillus sp. FM242
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002253
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32433885
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002253 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:2741095
+  taxon_label: Aspergillus sp. FM242
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002254
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32433885
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002254 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002253
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2741095
+  organism_label: Aspergillus sp. FM242
+  evidence:
+  - reference: PMID:32433885
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002253 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT457560.1
+  locus_from: 1
+  locus_to: 33994
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0002254
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2741095
+  organism_label: Aspergillus sp. FM242
+  evidence:
+  - reference: PMID:32433885
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002254 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT457561.1
+  locus_from: 1
+  locus_to: 46989
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002253
+  source_label: waikikiamide C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-689f97d555
+- source: MIBIG
+  source_id: BGC0002254
+  source_label: waikikiamide C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f04727c7b7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002253, BGC0002254.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

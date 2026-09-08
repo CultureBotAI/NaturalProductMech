@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-0dc63932d0
+label: syringomycin
+chemical_structure:
+  smiles: CCCCCCCCC[C@@H](CC(=O)N[C@H]1COC(=O)[C@@H](NC(=O)[C@@H](NC(=O)/C(=C/C)/NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@H](NC1=O)CO)CCN)CCN)CCCN=C(N)N)CC2=CC=CC=C2)[C@@H](C(=O)O)O)[C@@H](CCl)O)O
+  standard_inchi: InChI=1S/C53H85ClN14O17/c1-3-5-6-7-8-9-13-17-30(70)25-39(72)60-37-28-85-52(84)40(38(71)26-54)67-50(81)41(42(73)51(82)83)68-43(74)31(4-2)61-47(78)35(24-29-15-11-10-12-16-29)65-44(75)32(18-14-23-59-53(57)58)62-45(76)33(19-21-55)63-46(77)34(20-22-56)64-48(79)36(27-69)66-49(37)80/h4,10-12,15-16,30,32-38,40-42,69-71,73H,3,5-9,13-14,17-28,55-56H2,1-2H3,(H,60,72)(H,61,78)(H,62,76)(H,63,77)(H,64,79)(H,65,75)(H,66,80)(H,67,81)(H,68,74)(H,82,83)(H4,57,58,59)/b31-4-/t30-,32-,33-,34+,35-,36+,37-,38+,40-,41-,42-/m0/s1
+  standard_inchi_key: ZQVJBRJGDVZANE-MXDMHAPNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000437
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:11966095
+producer_organisms:
+- taxon_id: NCBITaxon:205918
+  taxon_label: Pseudomonas syringae pv. syringae B728a
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000437
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:11277431
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000437 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000437
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:205918
+  organism_label: Pseudomonas syringae pv. syringae B728a
+  evidence:
+  - reference: PMID:11277431
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000437 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000075.1
+  locus_from: 3060225
+  locus_to: 3182922
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000437
+  source_label: syringomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0dc63932d0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

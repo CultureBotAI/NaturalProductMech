@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-78ff5d80de
+label: epipyriculol
+chemical_structure:
+  smiles: C\C=C\[C@H](O)[C@@H](O)\C=C\C1=CC=CC(O)=C1C=O
+  standard_inchi: InChI=1S/C14H16O4/c1-2-4-13(17)14(18)8-7-10-5-3-6-12(16)11(10)9-15/h2-9,13-14,16-18H,1H3/b4-2+,8-7+/t13-,14-/m0/s1
+  standard_inchi_key: YUQDGJSYYKKISE-BUJAFJOKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001749
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Miscellaneous polyketides
+  class_results:
+  - Miscellaneous polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA012998
+producer_organisms:
+- taxon_id: NCBITaxon:242507
+  taxon_label: Pyricularia oryzae 70-15
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001749
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27902426
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001749 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001749
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:242507
+  organism_label: Pyricularia oryzae 70-15
+  evidence:
+  - reference: PMID:27902426
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001749 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CM001233.1
+  locus_from: 3633847
+  locus_to: 3688831
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001749
+  source_label: epipyriculol
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-78ff5d80de
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

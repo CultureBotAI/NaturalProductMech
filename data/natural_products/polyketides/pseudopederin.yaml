@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-41d46f87ca
+label: pseudopederin
+chemical_structure:
+  smiles: CC1C(OC(CC1=C)(C(C(=O)NC(C2CC(C(C(O2)CC(COC)OC)(C)C)O)OC)O)O)C
+  standard_inchi: InChI=1S/C24H43NO9/c1-13-11-24(29,34-15(3)14(13)2)20(27)21(28)25-22(32-8)17-10-18(26)23(4,5)19(33-17)9-16(31-7)12-30-6/h14-20,22,26-27,29H,1,9-12H2,2-8H3,(H,25,28)
+  standard_inchi_key: NNNVJFAPLNIYPF-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001108
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:12314693
+producer_organisms:
+- taxon_id: NCBITaxon:77133
+  taxon_label: Uncultured bacterium
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001108
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12381784
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001108 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001108
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:77133
+  organism_label: Uncultured bacterium
+  evidence:
+  - reference: PMID:12381784
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001108 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY328023.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001108
+  source_label: pseudopederin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-41d46f87ca
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,79 @@
+identifier: naturalproductmech:mibig-af54e8c2ea
+label: tasikamide C
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C(=O)N([C@H](C(=O)N[C@@H](C(=O)N[C@H](CC(=O)O[C@@H]([C@@H](C(=O)N1)NC(=O)C(=NNC2=C(C=C(C=C2)O)C(=O)OCCCCCCCC(C)C)C)C3=CC=CC=C3)C)CC4=CNC5=C4C=CC=C5OC)[C@H](C6=CC=CC=C6)O)C
+  standard_inchi: InChI=1S/C61H78N8O12/c1-9-37(4)50-60(77)69(7)53(54(72)40-23-16-13-17-24-40)59(76)64-47(33-42-35-62-51-44(42)27-21-28-48(51)79-8)57(74)63-38(5)32-49(71)81-55(41-25-18-14-19-26-41)52(58(75)65-50)66-56(73)39(6)67-68-46-30-29-43(70)34-45(46)61(78)80-31-20-12-10-11-15-22-36(2)3/h13-14,16-19,21,23-30,34-38,47,50,52-55,62,68,70,72H,9-12,15,20,22,31-33H2,1-8H3,(H,63,74)(H,64,76)(H,65,75)(H,66,73)/t37-,38-,47+,50-,52-,53-,54-,55+/m0/s1
+  standard_inchi_key: DIWCSROTVGTFRT-QATYYFFQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002661
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Macrocyclic
+xrefs:
+- chebi:222526
+- npatlas:NPA033372
+- pubchem:169492495
+producer_organisms:
+- taxon_id: NCBITaxon:2919940
+  taxon_label: Streptomyces tasikensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002661
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
+  evidence:
+  - reference: DOI:10.1021/jacs.1c10369
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002661 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002661
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2919940
+  organism_label: Streptomyces tasikensis
+  evidence:
+  - reference: DOI:10.1021/jacs.1c10369
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002661 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MZ964597.1
+  locus_from: 1
+  locus_to: 34057
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002661
+  source_label: tasikamide C
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-af54e8c2ea
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

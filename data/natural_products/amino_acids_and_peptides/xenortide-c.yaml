@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-be278114c7
+label: xenortide C
+chemical_structure:
+  smiles: CN[C@@H](C(C)C)C(N([C@H](C(NCCC1=CC=CC=C1)=O)CC2=CC=CC=C2)C)=O
+  standard_inchi: InChI=1S/C24H33N3O2/c1-18(2)22(25-3)24(29)27(4)21(17-20-13-9-6-10-14-20)23(28)26-16-15-19-11-7-5-8-12-19/h5-14,18,21-22,25H,15-17H2,1-4H3,(H,26,28)/t21-,22-/m0/s1
+  standard_inchi_key: MXXFZXJSHIUFOL-VXKWHMMOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000465
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:406817
+  taxon_label: Xenorhabdus nematophila ATCC 19061
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000465
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25080196
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000465 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000465
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:406817
+  organism_label: Xenorhabdus nematophila ATCC 19061
+  evidence:
+  - reference: PMID:25080196
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000465 entry version 4; citation taken from the entry level
+  genome_accession: genbank:FN667742.1
+  locus_from: 2235579
+  locus_to: 2245621
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000465
+  source_label: xenortide C
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-be278114c7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

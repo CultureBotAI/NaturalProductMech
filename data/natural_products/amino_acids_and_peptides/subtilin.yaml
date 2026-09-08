@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-a1b941cf4c
+label: subtilin
+chemical_structure:
+  smiles: NC(CC1=CNC2=C1C=CC=C2)C(NC(CCCCN)C(NC(CSCC(C(NC(C5C)C(N4C(C(NC([H])C(NC(CS5)C(NC(C(C)C)C(NC(C6C)C(NC([H])C(NC(C)C(NC(CC(C)C)C(NC(CCC(N)=O)C(NC(C(NC(CS6)C(NC(CC7=CC=CC=C7)C(NC(CC(C)C)C(NC(CCC(N)=O)C(NC(C8C)C(NC(CC(C)C)C(NC(C9C)C(NC(CS8)C(NC(CC(N)=O)C(NC(CS9)C(NC(CCCCN)C(NC(C(CC)C)C(NC(C(NC(CCCCN)C(O)=O)=O)=C)=O)=O)=O)=O)=O)=O)=O)=O)=O)=O)=O)=O)=O)=CC)=O)=O)=O)=O)=O)=O)=O)=O)=O)CCC4)=O)=O)NC3=O)C(NC(CCC(O)=O)C(NC(C(NC3CC(C)C)=O)=C)=O)=O)=O)=O
+  standard_inchi: InChI=1S/C148H227N39O38S5/c1-21-74(13)114(144(220)161-77(16)120(196)169-93(148(224)225)41-30-33-51-151)182-127(203)89(40-29-32-50-150)165-136(212)103-66-228-80(19)117-146(222)180-105(138(214)174-99(59-109(155)190)133(209)179-103)68-229-79(18)116(145(221)175-97(56-72(9)10)134(210)184-117)183-128(204)91(44-47-108(154)189)167-130(206)96(55-71(7)8)172-132(208)98(57-82-35-24-23-25-36-82)173-137(213)104-67-227-78(17)115(142(218)158-61-110(191)159-75(14)119(195)170-94(53-69(3)4)129(205)166-90(43-46-107(153)188)126(202)163-86(22-2)123(199)178-104)185-143(219)113(73(11)12)181-140(216)102-65-230-81(20)118(147(223)187-52-34-42-106(187)141(217)157-62-111(192)162-102)186-139(215)101-64-226-63-100(135(211)168-92(45-48-112(193)194)124(200)160-76(15)121(197)171-95(54-70(5)6)131(207)177-101)176-125(201)88(39-28-31-49-149)164-122(198)85(152)58-83-60-156-87-38-27-26-37-84(83)87/h22-27,35-38,60,69-75,78-81,85,88-106,113-118,156H,15-16,21,28-34,39-59,61-68,149-152H2,1-14,17-20H3,(H2,153,188)(H2,154,189)(H2,155,190)(H,157,217)(H,158,218)(H,159,191)(H,160,200)(H,161,220)(H,162,192)(H,163,202)(H,164,198)(H,165,212)(H,166,205)(H,167,206)(H,168,211)(H,169,196)(H,170,195)(H,171,197)(H,172,208)(H,173,213)(H,174,214)(H,175,221)(H,176,201)(H,177,207)(H,178,199)(H,179,209)(H,180,222)(H,181,216)(H,182,203)(H,183,204)(H,184,210)(H,185,219)(H,186,215)(H,193,194)(H,224,225)
+  standard_inchi_key: WPLOVIFNBMNBPD-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000559
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:703612
+  taxon_label: Bacillus subtilis subsp. spizizenii ATCC 6633
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000559
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
+    expression correlated with compound production. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:195183
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000559 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000559
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:703612
+  organism_label: Bacillus subtilis subsp. spizizenii ATCC 6633
+  evidence:
+  - reference: PMID:195183
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000559 entry version 4; citation taken from the entry level
+  genome_accession: genbank:U09819.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000559
+  source_label: subtilin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-a1b941cf4c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

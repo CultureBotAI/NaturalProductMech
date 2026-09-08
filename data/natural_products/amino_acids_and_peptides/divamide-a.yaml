@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-c7bdd5a501
+label: divamide A
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C(=O)N[C@H](C(=O)N[C@@H]2[C@@H](SC[C@H]3C(=O)N[C@@H](CNCCCC[C@H](NC(=O)[C@H]4[C@@H](SC[C@@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H]([C@@H](SC[C@@H](C(=O)N[C@H](C(=O)NCC(=O)N[C@H](C(=O)N4)[C@@H](C)O)[C@H](C(=O)O)O)NC(=O)[C@@H](NC(=O)[C@@H](NC2=O)[C@@H](C)CC)C(C)C)C)C(=O)N3)CO)C)NC(=O)[C@H](CCC(=O)O)[N+](C)(C)C)C)C(=O)O)C(=O)N[C@H](C(=O)NCC(=O)N1)CC5=CC=CC=C5)C)C(C)C
+  standard_inchi: InChI=1S/C87H137N21O28S3/c1-17-40(7)61-80(127)102-60(39(5)6)79(126)105-66-46(13)138-36-53-74(121)94-50(71(118)93-49(30-47-24-20-19-21-25-47)70(117)89-32-56(111)99-61)31-88-29-23-22-26-48(86(133)134)92-83(130)65-45(12)137-35-52(96-76(123)55(108(14,15)16)27-28-58(113)114)73(120)91-42(9)69(116)95-51(34-109)72(119)104-64(84(131)98-53)44(11)139-37-54(97-78(125)59(38(3)4)101-81(128)62(41(8)18-2)103-85(66)132)75(122)107-67(68(115)87(135)136)77(124)90-33-57(112)100-63(43(10)110)82(129)106-65/h19-21,24-25,38-46,48-55,59-68,88,109-110,115H,17-18,22-23,26-37H2,1-16H3,(H21-,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,111,112,113,114,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136)/p+1/t40-,41-,42-,43+,44-,45-,46-,48-,49-,50-,51-,52-,53-,54-,55-,59-,60-,61-,62-,63-,64+,65+,66+,67-,68+/m0/s1
+  standard_inchi_key: UCUCWKJHBRGGFM-FIKWHDLOSA-O
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001576
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:131801640
+producer_organisms:
+- taxon_id: NCBITaxon:1216
+  taxon_label: Prochloron didemni
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001576
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29291350
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001576 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001576
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1216
+  organism_label: Prochloron didemni
+  evidence:
+  - reference: PMID:29291350
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001576 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KY115608.1
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001576
+  source_label: divamide A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-c7bdd5a501
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

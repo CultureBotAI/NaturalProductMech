@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-7db420f4a3
+label: iturin
+chemical_structure:
+  smiles: CCCCCCCCCCCC1CC(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N2CCCC2C(=O)NC(C(=O)NC(C(=O)N1)CO)CC(=O)N)CCC(=O)N)CC(=O)N)CC3=CC=C(C=C3)O)CC(=O)N
+  standard_inchi: InChI=1S/C48H74N12O14/c1-2-3-4-5-6-7-8-9-10-12-28-22-41(67)54-32(23-38(50)64)43(69)56-31(21-27-14-16-29(62)17-15-27)42(68)57-33(24-39(51)65)44(70)55-30(18-19-37(49)63)48(74)60-20-11-13-36(60)47(73)58-34(25-40(52)66)45(71)59-35(26-61)46(72)53-28/h14-17,28,30-36,61-62H,2-13,18-26H2,1H3,(H2,49,63)(H2,50,64)(H2,51,65)(H2,52,66)(H,53,72)(H,54,67)(H,55,70)(H,56,69)(H,57,68)(H,58,73)(H,59,71)
+  standard_inchi_key: HNAPWDKFUSLFFE-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001098
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:158570
+producer_organisms:
+- taxon_id: NCBITaxon:1423
+  taxon_label: Bacillus subtilis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001098
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:11591669
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001098 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001098
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1423
+  organism_label: Bacillus subtilis
+  evidence:
+  - reference: PMID:11591669
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001098 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB050629.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001098
+  source_label: iturin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7db420f4a3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

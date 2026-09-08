@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-9005f502cc
+label: icosalide B
+chemical_structure:
+  smiles: CCCCC[C@H](CC(N[C@@H](C(N[C@@H](C(O[C@H](CCCCC)CC1=O)=O)CC(C)C)=O)CO)=O)OC([C@H](CO)NC([C@@H](CC(C)C)N1)=O)=O
+  standard_inchi: InChI=1S/C34H60N4O10/c1-7-9-11-13-23-17-29(41)35-25(15-21(3)4)31(43)38-28(20-40)34(46)48-24(14-12-10-8-2)18-30(42)36-27(19-39)32(44)37-26(16-22(5)6)33(45)47-23/h21-28,39-40H,7-20H2,1-6H3,(H,35,41)(H,36,42)(H,37,44)(H,38,43)/t23-,24-,25-,26-,27-,28+/m1/s1
+  standard_inchi_key: HZQBTVDHJQJQOP-PYFBZWTESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001833
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:28095
+  taxon_label: Burkholderia gladioli
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001833
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/acschembio.8b00600
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001833 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001833
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:28095
+  organism_label: Burkholderia gladioli
+  evidence:
+  - reference: DOI:10.1021/acschembio.8b00600
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001833 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MH790860.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001833
+  source_label: icosalide B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-9005f502cc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

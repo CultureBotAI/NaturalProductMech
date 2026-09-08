@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-c63bce6e4e
+label: Yossoside II
+chemical_structure:
+  smiles: OC([C@H]1O[C@@H](O[C@H]2[C@](C(O)=O)(C)C(CC[C@]3(C)C4CC=C5[C@@]3(C)CC[C@]6(C(O[C@H]7[C@H](O[C@H]8[C@H](O)[C@H](O)[C@@H](O)[C@H](C)O8)[C@@H](O)[C@@H](O)[C@@H](C)O7)=O)C5CC(C)(C)CC6)[C@]4(C)C[C@@H]2O)[C@H](O)[C@@H](O)[C@@H]1O)=O
+  standard_inchi: InChI=1S/C48H74O20/c1-19-26(50)28(52)32(56)38(63-19)66-35-30(54)27(51)20(2)64-40(35)68-42(62)48-15-13-43(3,4)17-22(48)21-9-10-24-44(5)18-23(49)36(67-39-33(57)29(53)31(55)34(65-39)37(58)59)47(8,41(60)61)25(44)11-12-46(24,7)45(21,6)14-16-48/h9,19-20,22-36,38-40,49-57H,10-18H2,1-8H3,(H,58,59)(H,60,61)/t19-,20+,22?,23-,24?,25?,26-,27-,28+,29-,30-,31-,32+,33+,34-,35+,36+,38-,39-,40-,44+,45+,46+,47-,48-/m0/s1
+  standard_inchi_key: PKXIVFANYVXVML-SARPBFRTSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002402
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Triterpenoids
+  class_results:
+  - Oleanane triterpenoids
+  is_glycoside: true
+bgc_class:
+- TERPENE
+producer_organisms:
+- taxon_id: NCBITaxon:3562
+  taxon_label: Spinacia oleracea
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002402
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: DOI:10.1038/s41589-020-0541-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002402 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002402
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:3562
+  organism_label: Spinacia oleracea
+  evidence:
+  - reference: DOI:10.1038/s41589-020-0541-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002402 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KQ150485.1
+  locus_from: 6311
+  locus_to: 44201
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002402
+  source_label: Yossoside II
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c63bce6e4e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

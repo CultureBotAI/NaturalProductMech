@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-801a93942c
+label: ambiguine K isonitrile
+chemical_structure:
+  smiles: CC1(C)[C@H]2C[C@@H](Cl)[C@](C)(C=C)[C@]3(C=CC(C)(C)C4=C(C5=C1C=CC=C5N4)[C@]23O)[N+]#[C-]
+  standard_inchi: InChI=1S/C26H29ClN2O/c1-8-24(6)18(27)14-17-23(4,5)15-10-9-11-16-19(15)20-21(29-16)22(2,3)12-13-25(24,28-7)26(17,20)30/h8-13,17-18,29-30H,1,14H2,2-6H3/t17-,18-,24+,25+,26-/m1/s1
+  standard_inchi_key: RSUTYZFOFIAHFY-OWINPNOJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001126
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Hapalindole alkaloids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+- OTHER
+xrefs:
+- npatlas:NPA01055
+- pubchem:44139368
+producer_organisms:
+- taxon_id: NCBITaxon:230521
+  taxon_label: Fischerella ambigua UTEX 1903
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001126
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24180436
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001126 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001126
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:230521
+  organism_label: Fischerella ambigua UTEX 1903
+  evidence:
+  - reference: PMID:24180436
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001126 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KF664586.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001126
+  source_label: ambiguine K isonitrile
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-801a93942c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

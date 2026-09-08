@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-418891ce5b
+label: quinomycin
+chemical_structure:
+  smiles: CC1C(=O)N(C2CSC(C(C(=O)N(C(C(=O)OCC(C(=O)N1)NC(=O)C3=NC4=CC=CC=C4N=C3)C(C)C)C)N(C(=O)C(NC(=O)C(COC(=O)C(N(C2=O)C)C(C)C)NC(=O)C5=NC6=CC=CC=C6N=C5)C)C)SC)C
+  standard_inchi: InChI=1S/C51H64N12O12S2/c1-25(2)38-49(72)74-22-36(59-42(65)34-21-53-30-17-13-15-19-32(30)57-34)44(67)55-28(6)46(69)63(10)40-48(71)62(9)39(26(3)4)50(73)75-23-35(58-41(64)33-20-52-29-16-12-14-18-31(29)56-33)43(66)54-27(5)45(68)60(7)37(47(70)61(38)8)24-77-51(40)76-11/h12-21,25-28,35-40,51H,22-24H2,1-11H3,(H,54,66)(H,55,67)(H,58,64)(H,59,65)
+  standard_inchi_key: AUJXLBOHYWTPFV-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000415
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  - Tetramate alkaloids
+  - Peptide alkaloids
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Pyrazine and Piperazine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:3197
+producer_organisms:
+- taxon_id: NCBITaxon:284637
+  taxon_label: Streptomyces griseovariabilis subsp. bandungensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000415
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23437232
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000415 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000415
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:284637
+  organism_label: Streptomyces griseovariabilis subsp. bandungensis
+  evidence:
+  - reference: PMID:23437232
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000415 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JN852959.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000415
+  source_label: quinomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-418891ce5b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

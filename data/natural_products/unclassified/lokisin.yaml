@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-42af3387f5
+label: lokisin
+chemical_structure:
+  smiles: CCCCCCC[C@H](CC(=O)N[C@H](CC(C)C)C(=O)N[C@H](CC(=O)O)C(=O)N[C@@H]1[C@H](OC(=O)[C@@H](NC(=O)[C@H](NC(=O)C(NC(=O)[C@H](NC(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC1=O)CC(C)C)CC(C)C)CO)CC(C)C)CO)CC(C)C)[C@H](C)CC)CC(=O)O)C)O
+  standard_inchi: InChI=1S/C64H111N11O20/c1-15-17-18-19-20-21-39(78)27-49(79)65-40(22-32(3)4)54(84)69-45(28-50(80)81)59(89)75-53-38(14)95-64(94)46(29-51(82)83)71-62(92)52(37(13)16-2)74-58(88)44(26-36(11)12)68-61(91)48(31-77)73-57(87)42(24-34(7)8)67-60(90)47(30-76)72-56(86)41(23-33(5)6)66-55(85)43(25-35(9)10)70-63(53)93/h32-48,52-53,76-78H,15-31H2,1-14H3,(H,65,79)(H,66,85)(H,67,90)(H,68,91)(H,69,84)(H,70,93)(H,71,92)(H,72,86)(H,73,87)(H,74,88)(H,75,89)(H,80,81)(H,82,83)/t37-,38-,39-,40-,41+,42-,43+,44?,45-,46+,47+,48-,52-,53-/m1/s1
+  standard_inchi_key: GHXLBZVIYYOQOC-ASVOGJOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001980
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:101182636
+producer_organisms:
+- taxon_id: NCBITaxon:306
+  taxon_label: Pseudomonas sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001980
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31354771
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001980 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001980
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:306
+  organism_label: Pseudomonas sp.
+  evidence:
+  - reference: PMID:31354771
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001980 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MK534107.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001980
+  source_label: lokisin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-42af3387f5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-99cd5bbe42
+label: albomycin delta1
+chemical_structure:
+  smiles: CC(=O)N1CCC[C@H](N)C(=O)N[C@H]2CCCN(O[Fe](O1)ON(CCC[C@H](NC2=O)C(=O)N[C@@H](CO)C(=O)N[C@H]([C@H](O)[C@H]1S[C@H]([C@H](O)[C@H]1O)n1ccc(=O)n(C)c1=O)C(O)=O)C(C)=O)C(C)=O
+  standard_inchi: InChI=1S/C36H55N10O18S.Fe/c1-17(48)44(62)12-5-8-20(37)30(55)38-21(9-6-13-45(63)18(2)49)31(56)39-22(10-7-14-46(64)19(3)50)32(57)40-23(16-47)33(58)41-25(35(59)60)26(52)29-27(53)28(54)34(65-29)43-15-11-24(51)42(4)36(43)61;/h11,15,20-23,25-29,34,47,52-54H,5-10,12-14,16,37H2,1-4H3,(H,38,55)(H,39,56)(H,40,57)(H,41,58)(H,59,60);/q-3;+3/t20-,21-,22-,23-,25+,26-,27+,28+,29+,34+;/m0./s1
+  standard_inchi_key: KKRRFZFRCNSVCL-DFBZBFILSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002300
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:668825
+  taxon_label: Streptomyces sp. ATCC 700974
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002300
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22704654
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002300 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002300
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:668825
+  organism_label: Streptomyces sp. ATCC 700974
+  evidence:
+  - reference: PMID:22704654
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002300 entry version 2; citation taken from the entry level
+  genome_accession: genbank:JN252488.1
+  locus_from: 6184
+  locus_to: 34320
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002300
+  source_label: albomycin delta1
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-99cd5bbe42
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

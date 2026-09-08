@@ -1,0 +1,76 @@
+identifier: naturalproductmech:mibig-4246f43bb8
+label: fijimycin A
+chemical_structure:
+  smiles: '[H][C@]12C[C@@H](O)CN1C(=O)[C@@H](CC(C)C)NC(=O)[C@@H](NC(=O)C1=NC=CC=C1O)[C@@H](C)OC(=O)[C@H](N(C)C(=O)[C@H](C)NC(=O)[C@H](C(C)C(C)C)N(C)C(=O)CN(C)C2=O)C1=CC=CC=C1'
+  standard_inchi: InChI=1S/C44H62N8O11/c1-23(2)19-30-42(60)52-21-29(53)20-31(52)43(61)49(8)22-33(55)50(9)36(25(5)24(3)4)40(58)46-26(6)41(59)51(10)37(28-15-12-11-13-16-28)44(62)63-27(7)34(38(56)47-30)48-39(57)35-32(54)17-14-18-45-35/h11-18,23-27,29-31,34,36-37,53-54H,19-22H2,1-10H3,(H,46,58)(H,47,56)(H,48,57)/t25?,26-,27+,29+,30+,31+,34-,36-,37+/m0/s1
+  standard_inchi_key: SATIISJKSAELDC-AHJOMIGRSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000459
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA019593
+producer_organisms:
+- taxon_id: NCBITaxon:45398
+  taxon_label: Streptomyces griseoviridis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000459
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.bmc.2011.06.053
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000459 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000459
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:45398
+  organism_label: Streptomyces griseoviridis
+  evidence:
+  - reference: DOI:10.1016/j.bmc.2011.06.053
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000459 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:JX508597.1
+  locus_from: 13530
+  locus_to: 118200
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000459
+  source_label: fijimycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4246f43bb8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

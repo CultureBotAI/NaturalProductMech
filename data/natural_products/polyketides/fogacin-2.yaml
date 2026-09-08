@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-b99eff59ad
+label: fogacin
+chemical_structure:
+  smiles: C[C@H]1C2=C(C3=C(C=C2C[C@@H](O1)CC(=O)O)C(CCC3=O)O)O
+  standard_inchi: InChI=1S/C16H18O6/c1-7-14-8(4-9(22-7)6-13(19)20)5-10-11(17)2-3-12(18)15(10)16(14)21/h5,7,9,11,17,21H,2-4,6H2,1H3,(H,19,20)/t7-,9+,11?/m0/s1
+  standard_inchi_key: WGMNUJNCGZFZPD-GZALTDKGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002021
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Naphthalenes
+  class_results:
+  - Naphthoquinones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:11493248
+producer_organisms:
+- taxon_id: NCBITaxon:512565
+  taxon_label: Actinoplanes missouriensis 431
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002021
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:30556239
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002021 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002021
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:512565
+  organism_label: Actinoplanes missouriensis 431
+  evidence:
+  - reference: PMID:30556239
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002021 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AP012319.1
+  locus_from: 5336641
+  locus_to: 5376856
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002021
+  source_label: fogacin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b99eff59ad
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

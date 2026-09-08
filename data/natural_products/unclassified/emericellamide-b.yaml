@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-05ec4086a1
+label: emericellamide B
+chemical_structure:
+  smiles: CCCCCC[C@H](C)C[C@H](C)[C@H]1OC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H]1C)C(C)C
+  standard_inchi: InChI=1S/C34H61N5O7/c1-11-12-13-14-15-21(6)17-22(7)29-23(8)30(41)35-18-27(40)39-28(20(4)5)33(44)38-26(16-19(2)3)32(43)36-24(9)31(42)37-25(10)34(45)46-29/h19-26,28-29H,11-18H2,1-10H3,(H,35,41)(H,36,43)(H,37,42)(H,38,44)(H,39,40)/t21-,22-,23+,24-,25-,26-,28-,29+/m0/s1
+  standard_inchi_key: MBENBNLUEFQFSL-BFKPYXRSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001290
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:16216152
+- npatlas:NPA010689
+producer_organisms:
+- taxon_id: NCBITaxon:227321
+  taxon_label: Aspergillus nidulans FGSC A4
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001290
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.tetasy.2013.07.012
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001290 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001290
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:227321
+  organism_label: Aspergillus nidulans FGSC A4
+  evidence:
+  - reference: DOI:10.1016/j.tetasy.2013.07.012
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001290 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:BN001307.1
+  locus_from: 4230453
+  locus_to: 4267876
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001290
+  source_label: emericellamide B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-05ec4086a1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-fbe61393a1
+label: zeamine
+chemical_structure:
+  smiles: CCCCCC(N)CCCCCCCC(N)CCCCCCCC(N)CCCCCCCC(N)CCCCCCCC(O)CCNC(=O)CC(O)CC(O)C(N)C(C)C
+  standard_inchi: InChI=1S/C49H104N6O4/c1-4-5-18-27-41(50)28-19-10-6-11-20-29-42(51)30-21-12-7-13-22-31-43(52)32-23-14-8-15-24-33-44(53)34-25-16-9-17-26-35-45(56)36-37-55-48(59)39-46(57)38-47(58)49(54)40(2)3/h40-47,49,56-58H,4-39,50-54H2,1-3H3,(H,55,59)
+  standard_inchi_key: VLJURIPGVYZMCR-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001056
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Sphingolipids
+  class_results:
+  - Sphingoid bases
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA09575
+producer_organisms:
+- taxon_id: NCBITaxon:1006598
+  taxon_label: Serratia plymuthica RVH1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001056
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
+  evidence:
+  - reference: PMID:23349809
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001056 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001056
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1006598
+  organism_label: Serratia plymuthica RVH1
+  evidence:
+  - reference: PMID:23349809
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001056 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HE995400.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001056
+  source_label: zeamine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fbe61393a1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

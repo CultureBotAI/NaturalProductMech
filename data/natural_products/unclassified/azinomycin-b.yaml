@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-115d7582e0
+label: azinomycin B
+chemical_structure:
+  smiles: '[H][C@@]12CN1\C([C@@H](OC(C)=O)[C@@H]2O)=C(\NC(=O)[C@@H](OC(=O)C1=C2C=CC=C(C)C2=CC(OC)=C1)[C@]1(C)CO1)C(=O)N\C(=C\O)C(C)=O'
+  standard_inchi: InChI=1S/C31H33N3O11/c1-14-7-6-8-18-19(14)9-17(42-5)10-20(18)30(41)45-27(31(4)13-43-31)29(40)33-23(28(39)32-21(12-35)15(2)36)24-26(44-16(3)37)25(38)22-11-34(22)24/h6-10,12,22,25-27,35,38H,11,13H2,1-5H3,(H,32,39)(H,33,40)/b21-12+,24-23+/t22-,25+,26+,27+,31-,34?/m0/s1
+  standard_inchi_key: QIKVYJOCQXXRSJ-TWEUQPGKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000960
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA011599
+- pubchem:3032396
+producer_organisms:
+- taxon_id: NCBITaxon:285525
+  taxon_label: Streptomyces sahachiroi
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000960
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18635006
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000960 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000960
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:285525
+  organism_label: Streptomyces sahachiroi
+  evidence:
+  - reference: PMID:18635006
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000960 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EU240558.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000960
+  source_label: azinomycin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-115d7582e0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

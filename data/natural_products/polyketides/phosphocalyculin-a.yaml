@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-93eec4abe8
+label: phosphocalyculin A
+chemical_structure:
+  smiles: COC[C@H](N(C)C)[C@H](O)[C@H](O)C(NCC[C@H](C)C1=NC(/C=C/C[C@H]2[C@@H](C)[C@H](O)CC3(C(C)(C)[C@@H](OP(O)(OP(O)(O)=O)=O)[C@@H]([C@@H](OC)C[C@H](O)[C@H](C)[C@H](O)[C@H](C)/C=C(C)/C(C)=C/C=C/C(C)=C\[N+]#[C-])O3)O2)=CO1)=O
+  standard_inchi: InChI=1S/C50H82N4O18P2/c1-29(26-51-10)17-15-18-30(2)32(4)23-33(5)42(57)35(7)38(55)24-41(67-14)45-46(71-74(64,65)72-73(61,62)63)49(8,9)50(70-45)25-39(56)34(6)40(69-50)20-16-19-36-27-68-48(53-36)31(3)21-22-52-47(60)44(59)43(58)37(28-66-13)54(11)12/h15-19,23,26-27,31,33-35,37-46,55-59H,20-22,24-25,28H2,1-9,11-14H3,(H,52,60)(H,64,65)(H2,61,62,63)/b17-15+,19-16+,29-26-,30-18+,32-23+/t31-,33+,34-,35-,37-,38-,39+,40-,41-,42+,43-,44-,45+,46-,50?/m0/s1
+  standard_inchi_key: VURQSRZHWNCHNU-CNTALBEGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000967
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:312019
+  taxon_label: uncultured Candidatus Entotheonella sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000967
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24974231
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000967 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000967
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:312019
+  organism_label: uncultured Candidatus Entotheonella sp.
+  evidence:
+  - reference: PMID:24974231
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000967 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB933566.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000967
+  source_label: phosphocalyculin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-93eec4abe8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

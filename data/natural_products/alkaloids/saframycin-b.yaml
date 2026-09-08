@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-e368af9c2a
+label: saframycin B
+chemical_structure:
+  smiles: CC1=C(C(=O)C2=C(C1=O)C[C@@H]3CN4[C@H]([C@H]2N3C)CC5=C([C@@H]4CNC(=O)C(=O)C)C(=O)C(=C(C5=O)C)OC)OC
+  standard_inchi: InChI=1S/C28H31N3O8/c1-11-22(33)15-7-14-10-31-17(21(30(14)4)20(15)25(36)27(11)39-6)8-16-19(18(31)9-29-28(37)13(3)32)24(35)26(38-5)12(2)23(16)34/h14,17-18,21H,7-10H2,1-6H3,(H,29,37)/t14-,17+,18+,21-/m1/s1
+  standard_inchi_key: KOHPLTGVBZMVDW-BBTHKVSRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000422
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tyrosine alkaloids
+  class_results:
+  - Tetrahydroisoquinoline alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:171748
+producer_organisms:
+- taxon_id: NCBITaxon:1914
+  taxon_label: Streptomyces lavendulae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000422
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17981978
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000422 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000422
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1914
+  organism_label: Streptomyces lavendulae
+  evidence:
+  - reference: PMID:17981978
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000422 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ838002.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000422
+  source_label: saframycin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e368af9c2a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

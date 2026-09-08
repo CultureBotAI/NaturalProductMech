@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-fdb38897cc
+label: ECO-0501
+chemical_structure:
+  smiles: CC(CCC/C=C/C(C)C/C=C/CCCN(C)C(=N)N)/C=C(\C)/C(C(C)/C=C/C=C/C=C/C=C/C=C(\C)/C(=O)NC1=C(CCC1=O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O
+  standard_inchi: InChI=1S/C46H68N4O10/c1-30(21-15-12-13-20-28-50(6)46(47)48)22-16-14-17-23-31(2)29-34(5)41(59-45-40(55)38(53)39(54)42(60-45)44(57)58)32(3)24-18-10-8-7-9-11-19-25-33(4)43(56)49-37-35(51)26-27-36(37)52/h7-12,15-16,18-19,22,24-25,29-32,38-42,45,51,53-55H,13-14,17,20-21,23,26-28H2,1-6H3,(H3,47,48)(H,49,56)(H,57,58)/b9-7+,10-8+,15-12+,19-11+,22-16+,24-18+,33-25+,34-29+/t30?,31?,32?,38-,39-,40+,41?,42-,45+/m0/s1
+  standard_inchi_key: JZUVOAOWVXOKMW-BRUGUNMHSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002098
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA015568
+producer_organisms:
+- taxon_id: NCBITaxon:129921
+  taxon_label: Amycolatopsis keratiniphila
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002098
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1128/aem.01838-22
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002098 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002098
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:129921
+  organism_label: Amycolatopsis keratiniphila
+  evidence:
+  - reference: DOI:10.1128/aem.01838-22
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002098 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CP003410.1
+  locus_from: 3150830
+  locus_to: 3251873
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002098
+  source_label: ECO-0501
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-fdb38897cc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

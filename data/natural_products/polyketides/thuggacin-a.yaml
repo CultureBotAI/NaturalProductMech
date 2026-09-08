@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-5e6c7bf5e9
+label: thuggacin A
+chemical_structure:
+  smiles: CCCCCC\C1=C/C2=CSC(=N2)C(C)C(O)CC(O)\C=C\C=C/CC(OC1=O)C(O)C(O)C(C)C(O)C(\C)=C\C(\C)=C\C
+  standard_inchi: InChI=1S/C35H53NO7S/c1-7-9-10-12-15-26-19-27-21-44-34(36-27)24(5)29(38)20-28(37)16-13-11-14-17-30(43-35(26)42)33(41)32(40)25(6)31(39)23(4)18-22(3)8-2/h8,11,13-14,16,18-19,21,24-25,28-33,37-41H,7,9-10,12,15,17,20H2,1-6H3/b14-11-,16-13+,22-8+,23-18+,26-19+
+  standard_inchi_key: CGUNOWXWUXNOPE-HGDLVAKTSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001051
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA09721
+producer_organisms:
+- taxon_id: NCBITaxon:56
+  taxon_label: Sorangium cellulosum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001051
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20416506
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001051 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001051
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:56
+  organism_label: Sorangium cellulosum
+  evidence:
+  - reference: PMID:20416506
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001051 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GQ981380.1
+  locus_from: 17491
+  locus_to: 76320
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001051
+  source_label: thuggacin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5e6c7bf5e9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

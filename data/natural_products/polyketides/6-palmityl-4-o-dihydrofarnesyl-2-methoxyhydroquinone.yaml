@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-9c1beabea6
+label: 6-palmityl-4-O-dihydrofarnesyl-2-methoxyhydroquinone
+chemical_structure:
+  smiles: OC1=C(CCCCCCCCCCCCCCC)C=C(OC/C=C(CCCC(CC/C=C(C)/C)C)\C)C=C1OC
+  standard_inchi: InChI=1S/C37H64O3/c1-7-8-9-10-11-12-13-14-15-16-17-18-19-26-34-29-35(30-36(39-6)37(34)38)40-28-27-33(5)25-21-24-32(4)23-20-22-31(2)3/h22,27,29-30,32,38H,7-21,23-26,28H2,1-6H3/b33-27+
+  standard_inchi_key: CEACUCBTLUKKIY-MUGXBBEHSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001077
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Catechols with side chains
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Alkylresorcinol/phloroglucinol polyketide
+- Sesquiterpenoid
+producer_organisms:
+- taxon_id: NCBITaxon:512565
+  taxon_label: Actinoplanes missouriensis 431
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001077
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1002/cbic.201000628
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001077 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001077
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:512565
+  organism_label: Actinoplanes missouriensis 431
+  evidence:
+  - reference: DOI:10.1002/cbic.201000628
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001077 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AP012319.1
+  locus_from: 8379670
+  locus_to: 8386219
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001077
+  source_label: 6-palmityl-4-O-dihydrofarnesyl-2-methoxyhydroquinone
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-9c1beabea6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

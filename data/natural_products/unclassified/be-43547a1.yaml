@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-7025b12525
+label: BE-43547A1
+chemical_structure:
+  smiles: CC1C(OC(=O)CN(C(=O)/C=C/C(=C)NC(=O)CNC(=O)C(C1=O)(C)O)C)CCCCCCCCCCC(C)C
+  standard_inchi: InChI=1S/C30H49N3O7/c1-21(2)15-13-11-9-7-8-10-12-14-16-24-23(4)28(37)30(5,39)29(38)31-19-25(34)32-22(3)17-18-26(35)33(6)20-27(36)40-24/h17-18,21,23-24,39H,3,7-16,19-20H2,1-2,4-6H3,(H,31,38)(H,32,34)/b18-17+
+  standard_inchi_key: YHMLVTRWZBFDAT-ISLYRVAYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001330
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:9959574
+producer_organisms:
+- taxon_id: NCBITaxon:1661387
+  taxon_label: Micromonospora sp. RV43
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001330
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26637117
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001330 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001330
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1661387
+  organism_label: Micromonospora sp. RV43
+  evidence:
+  - reference: PMID:26637117
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001330 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_LEKG01000004.1
+  locus_from: 20144
+  locus_to: 63730
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001330
+  source_label: BE-43547A1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7025b12525
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

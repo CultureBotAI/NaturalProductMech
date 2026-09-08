@@ -1,0 +1,108 @@
+identifier: naturalproductmech:mibig-39d1c4dde2
+label: trunkamide
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C(=O)N[C@H](C(=O)N2CCC[C@H]2C(=O)N[C@H](C3=N[C@@H](CS3)C(=O)N[C@H](C(=O)N[C@H](C(=O)N1)COC(C)(C)C=C)[C@@H](C)OC(C)(C)C=C)CC4=CC=CC=C4)C
+  standard_inchi: InChI=1S/C43H63N7O8S/c1-11-25(4)33-38(54)44-26(5)41(56)50-21-17-20-32(50)37(53)45-29(22-28-18-15-14-16-19-28)40-47-31(24-59-40)36(52)49-34(27(6)58-43(9,10)13-3)39(55)46-30(35(51)48-33)23-57-42(7,8)12-2/h12-16,18-19,25-27,29-34H,2-3,11,17,20-24H2,1,4-10H3,(H,44,54)(H,45,53)(H,46,55)(H,48,51)(H,49,52)/t25-,26-,27+,29-,30-,31-,32-,33-,34-/m0/s1
+  standard_inchi_key: UTERRJKSLJLXTA-LVPVHDLMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000478
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:9811230
+producer_organisms:
+- taxon_id: NCBITaxon:259942
+  taxon_label: uncultured Prochloron sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000478
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:18425112
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000478 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:259942
+  taxon_label: uncultured Prochloron sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000482
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/jo026464s
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000482 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000478
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:259942
+  organism_label: uncultured Prochloron sp.
+  evidence:
+  - reference: PMID:18425112
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000478 entry version 4; citation taken from the entry level
+  genome_accession: genbank:EU290743.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0000482
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:259942
+  organism_label: uncultured Prochloron sp.
+  evidence:
+  - reference: DOI:10.1021/jo026464s
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000482 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:EU290744.1
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000478
+  source_label: trunkamide
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-39d1c4dde2
+- source: MIBIG
+  source_id: BGC0000482
+  source_label: trunkamide
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-65df18ef86
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000478, BGC0000482.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

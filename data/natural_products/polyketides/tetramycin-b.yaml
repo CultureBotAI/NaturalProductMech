@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-b60072a678
+label: tetramycin B
+chemical_structure:
+  smiles: CCC1/C=C/C=C/C=C/C=C/C(OC2O[C@H](C)[C@@H](O)[C@H](N)[C@@H]2O)CC2OC(O)(CC(O)CC(O)C(O)/C=C/C(=O)OC1C)CC(O)C2C(=O)O
+  standard_inchi: InChI=1S/C35H53NO14/c1-4-21-11-9-7-5-6-8-10-12-23(49-34-32(43)30(36)31(42)20(3)48-34)16-27-29(33(44)45)26(40)18-35(46,50-27)17-22(37)15-25(39)24(38)13-14-28(41)47-19(21)2/h5-14,19-27,29-32,34,37-40,42-43,46H,4,15-18,36H2,1-3H3,(H,44,45)/b7-5+,8-6+,11-9+,12-10+,14-13+/t19?,20-,21?,22?,23?,24?,25?,26?,27?,29?,30+,31-,32+,34?,35?/m1/s1
+  standard_inchi_key: ZWRUZDWTNUEYFO-QPFHQBAMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002540
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA032769
+producer_organisms:
+- taxon_id: NCBITaxon:2719566
+  taxon_label: Streptomyces hygrospinosus subsp. beijingensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002540
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.3390/antibiotics10030289
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002540 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002540
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2719566
+  organism_label: Streptomyces hygrospinosus subsp. beijingensis
+  evidence:
+  - reference: DOI:10.3390/antibiotics10030289
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002540 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MN604040.1
+  locus_from: 1
+  locus_to: 108563
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002540
+  source_label: tetramycin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b60072a678
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

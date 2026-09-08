@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-f9a5694198
+label: rhabdopeptide 1
+chemical_structure:
+  smiles: CC(C)C[C@H](NC)C(=O)N(C)[C@@H](C(C)C)C(=O)N[C@@H](C(C)C)C(=O)N(C)[C@@H](C(C)C)C(=O)NCCc1ccccc1
+  standard_inchi: InChI=1S/C32H55N5O4/c1-20(2)19-25(33-9)31(40)36(10)28(23(7)8)30(39)35-26(21(3)4)32(41)37(11)27(22(5)6)29(38)34-18-17-24-15-13-12-14-16-24/h12-16,20-23,25-28,33H,17-19H2,1-11H3,(H,34,38)(H,35,39)/t25-,26-,27-,28-/m0/s1
+  standard_inchi_key: CKNBFSIURUOKMN-LJWNLINESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000416
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:406817
+  taxon_label: Xenorhabdus nematophila ATCC 19061
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000416
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24038745
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000416 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000416
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:406817
+  organism_label: Xenorhabdus nematophila ATCC 19061
+  evidence:
+  - reference: PMID:24038745
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000416 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FN667742.1
+  locus_from: 2154724
+  locus_to: 2170060
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000416
+  source_label: rhabdopeptide 1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f9a5694198
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

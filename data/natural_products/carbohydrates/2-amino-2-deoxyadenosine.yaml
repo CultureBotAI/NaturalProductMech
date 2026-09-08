@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-92f786b464
+label: 2'-amino-2'-deoxyadenosine
+chemical_structure:
+  smiles: N[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1N1C=NC2=C1N=CN=C2N
+  standard_inchi: InChI=1S/C10H14N6O3/c11-5-7(18)4(1-17)19-10(5)16-3-15-6-8(12)13-2-14-9(6)16/h2-5,7,10,17-18H,1,11H2,(H2,12,13,14)/t4-,5-,7-,10-/m1/s1
+  standard_inchi_key: CQKMBZHLOYVGHW-QYYRPYCUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001484
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Purine nucleos(t)ides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA01164
+producer_organisms:
+- taxon_id: NCBITaxon:1676613
+  taxon_label: Actinomadura sp. ATCC 39365
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001484
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.38.1008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001484 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001484
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1676613
+  organism_label: Actinomadura sp. ATCC 39365
+  evidence:
+  - reference: DOI:10.7164/antibiotics.38.1008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001484 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KP025768.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001484
+  source_label: 2'-amino-2'-deoxyadenosine
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-92f786b464
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

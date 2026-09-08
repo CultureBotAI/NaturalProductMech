@@ -1,0 +1,98 @@
+identifier: naturalproductmech:mibig-5f6e775235
+label: N-tetradecanoyl tyrosine
+chemical_structure:
+  smiles: CCCCCCCCCCCC(=O)N[C@@H](Cc1ccc(O)cc1)C(O)O
+  standard_inchi: InChI=1S/C21H35NO4/c1-2-3-4-5-6-7-8-9-10-11-20(24)22-19(21(25)26)16-17-12-14-18(23)15-13-17/h12-15,19,21,23,25-26H,2-11,16H2,1H3,(H,22,24)/t19-/m0/s1
+  standard_inchi_key: JJNOOOPGJKEVQC-IBGZPJMESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001591
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1091571
+  taxon_label: uncultured bacterium CSLC2
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001591
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12188643
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001591 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:1091567
+  taxon_label: uncultured bacterium CSL12
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001687
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15528554
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001687 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001591
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1091571
+  organism_label: uncultured bacterium CSLC2
+  evidence:
+  - reference: PMID:12188643
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001591 entry version 4; citation taken from the entry level
+  genome_accession: genbank:JF429413.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001687
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1091567
+  organism_label: uncultured bacterium CSL12
+  evidence:
+  - reference: PMID:15528554
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001687 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JF429409.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001591
+  source_label: N-tetradecanoyl tyrosine
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-5f6e775235
+- source: MIBIG
+  source_id: BGC0001687
+  source_label: N-tetradecanoyl tyrosine
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-775bd69434
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001591, BGC0001687.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-45d8467be8
+label: hatomarubigin D
+chemical_structure:
+  smiles: C[C@@H]1C[C@@H](C2=C(C1)C=CC3=C2C(=O)C4=C(C(=CC(=C4C3=O)OC)CC5=CC(=C6C(=C5O)C(=O)C7=C(C6=O)C=CC8=C7[C@H](C[C@H](C8)C)O)OC)O)O
+  standard_inchi: InChI=1S/C41H36O10/c1-16-9-18-5-7-22-30(28(18)24(42)11-16)40(48)34-32(38(22)46)26(50-3)14-20(36(34)44)13-21-15-27(51-4)33-35(37(21)45)41(49)31-23(39(33)47)8-6-19-10-17(2)12-25(43)29(19)31/h5-8,14-17,24-25,42-45H,9-13H2,1-4H3/t16-,17-,24-,25-/m0/s1
+  standard_inchi_key: AASPEXAITKEFPE-SEMUBUJISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000232
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:681626
+  taxon_label: Streptomyces sp. 2238-SVT4
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000232
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20453135
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000232 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000232
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:681626
+  organism_label: Streptomyces sp. 2238-SVT4
+  evidence:
+  - reference: PMID:20453135
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000232 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB524586.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000232
+  source_label: hatomarubigin D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-45d8467be8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

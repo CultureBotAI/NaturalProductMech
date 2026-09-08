@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-e45a0be092
+label: spiruchostatin A
+chemical_structure:
+  smiles: '[H][C@]12CSSCC\C=C\C(CC(=O)N[C@H](C)C(=O)N1)OC(=O)CC(O)C(NC2=O)C(C)C'
+  standard_inchi: InChI=1S/C20H31N3O6S2/c1-11(2)18-15(24)9-17(26)29-13-6-4-5-7-30-31-10-14(20(28)23-18)22-19(27)12(3)21-16(25)8-13/h4,6,11-15,18,24H,5,7-10H2,1-3H3,(H,21,25)(H,22,27)(H,23,28)/b6-4+/t12-,13?,14-,15?,18?/m1/s1
+  standard_inchi_key: XFLBOEMFLGLWFF-RCYPOCGFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001045
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA07276
+- pubchem:60209141
+producer_organisms:
+- taxon_id: NCBITaxon:1231908
+  taxon_label: Pseudomonas sp. Q71576
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001045
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24973954
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001045 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001045
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1231908
+  organism_label: Pseudomonas sp. Q71576
+  evidence:
+  - reference: PMID:24973954
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001045 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JQ045344.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001045
+  source_label: spiruchostatin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e45a0be092
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

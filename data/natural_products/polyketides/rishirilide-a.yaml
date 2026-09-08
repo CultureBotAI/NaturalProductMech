@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-9731285d87
+label: rishirilide A
+chemical_structure:
+  smiles: CC1C(=O)c2cc3cccc(c3cc2C(C1(C(=O)O)O)(CCC(C)C)O)O.CC1C(=O)C2=Cc3cccc(c3C(C24C(C1(C(=O)O4)O)(CCC(C)C)O)O)O
+  standard_inchi: InChI=1S/C21H24O7.C21H24O6/c1-10(2)7-8-19(26)20(27)11(3)16(23)13-9-12-5-4-6-14(22)15(12)17(24)21(13,19)28-18(20)25;1-11(2)7-8-20(26)16-10-14-13(5-4-6-17(14)22)9-15(16)18(23)12(3)21(20,27)19(24)25/h4-6,9-11,17,22,24,26-27H,7-8H2,1-3H3;4-6,9-12,22,26-27H,7-8H2,1-3H3,(H,24,25)
+  standard_inchi_key: KFUZDFHQEIKECB-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001179
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthraquinones and anthrones
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:42235
+  taxon_label: Streptomyces bottropensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001179
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:22162248
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001179 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001179
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:42235
+  organism_label: Streptomyces bottropensis
+  evidence:
+  - reference: PMID:22162248
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001179 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KJ437438.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001179
+  source_label: rishirilide A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-9731285d87
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-dd58ae1331
+label: agnestin A
+chemical_structure:
+  smiles: CC1=CC2=C(C(=O)C3=C(C=CC=C3O)O2)[C@@H](C(=O)O)[C@H]1O
+  standard_inchi: InChI=1S/C15H12O6/c1-6-5-9-11(12(13(6)17)15(19)20)14(18)10-7(16)3-2-4-8(10)21-9/h2-5,12-13,16-17H,1H3,(H,19,20)/t12-,13+/m1/s1
+  standard_inchi_key: PFGOJDXPCPCBJM-OLZOCXBDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002062
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Chromanes
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA026367
+- pubchem:146672232
+producer_organisms:
+- taxon_id: NCBITaxon:644132
+  taxon_label: Paecilomyces divaricatus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002062
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:30746079
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002062 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002062
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:644132
+  organism_label: Paecilomyces divaricatus
+  evidence:
+  - reference: PMID:30746079
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002062 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MH898872.1
+  locus_from: 1
+  locus_to: 34222
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002062
+  source_label: agnestin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-dd58ae1331
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

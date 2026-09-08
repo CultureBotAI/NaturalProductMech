@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-a27f568cc1
+label: tolaasin F
+chemical_structure:
+  smiles: O=C(N[C@@H](C(N[C@@H](CC(C)C)C(N[C@H](C(N1)=O)CCO)=O)=O)[C@@H](C)OC([C@H](CCCCN)NC([C@H]1CCN)=O)=O)/C(NC([C@@H](C(C)C)NC([C@H](CC(C)C)NC([C@@H](CCC(N)=O)NC([C@@H](C(C)C)NC([C@@H](C(C)C)NC([C@@H](CC(C)C)NC([C@@H](CO)NC([C@@H](C(C)C)NC([C@@H](CC(C)C)NC([C@@H](CO)NC([C@H]2N(C(/C(NC(CC(CCCCC)O)=O)=C/C)=O)CCC2)=O)=O)=O)=O)=O)=O)=O)=O)=O)=O)=O)=C/C
+  standard_inchi: InChI=1S/C94H163N21O25/c1-21-24-25-29-56(119)44-71(121)98-58(23-3)93(138)115-38-28-31-69(115)87(132)108-67(45-117)85(130)105-65(42-49(8)9)83(128)111-73(52(14)15)90(135)109-68(46-118)86(131)106-66(43-50(10)11)84(129)112-75(54(18)19)91(136)113-74(53(16)17)89(134)102-59(32-33-70(97)120)78(123)104-64(41-48(6)7)82(127)110-72(51(12)13)88(133)99-57(22-2)77(122)114-76-55(20)140-94(139)62(30-26-27-36-95)103-79(124)60(34-37-96)100-80(125)61(35-39-116)101-81(126)63(40-47(4)5)107-92(76)137/h22-23,47-56,59-69,72-76,116-119H,21,24-46,95-96H2,1-20H3,(H2,97,120)(H,98,121)(H,99,133)(H,100,125)(H,101,126)(H,102,134)(H,103,124)(H,104,123)(H,105,130)(H,106,131)(H,107,137)(H,108,132)(H,109,135)(H,110,127)(H,111,128)(H,112,129)(H,113,136)(H,114,122)/b57-22-,58-23-/t55-,56?,59-,60-,61+,62+,63+,64+,65-,66-,67-,68-,69+,72-,73-,74-,75-,76-/m1/s1
+  standard_inchi_key: GNSYIOGOBDUEMK-HGHFYUPGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000447
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:168469
+  taxon_label: Pseudomonas costantinii
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000447
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24222604
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000447 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000447
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:168469
+  organism_label: Pseudomonas costantinii
+  evidence:
+  - reference: PMID:24222604
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000447 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HE967327.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000447
+  source_label: tolaasin F
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a27f568cc1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

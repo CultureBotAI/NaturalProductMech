@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-37eef9afb2
+label: emerimicin VII
+chemical_structure:
+  smiles: CC[C@@](C)(NC(=O)[C@H](CC(C)C)NC(=O)CNC(=O)[C@@](C)(CC)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)[C@H](CC(C)C)NC(C)=O)C(=O)NC(C)(C)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(CCC(N)=O)C(=O)N[C@](C)(CC)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(C)(C)C(=O)N[C@H](CO)CC1=CC=CC=C1
+  standard_inchi: InChI=1S/C75H124N16O19/c1-22-73(19,89-63(106)71(15,16)87-62(105)70(13,14)86-61(104)69(11,12)82-56(99)49(32-41(4)5)78-43(8)93)64(107)77-37-54(97)80-50(33-42(6)7)57(100)84-74(20,23-2)65(108)88-72(17,18)66(109)90-38-46(94)35-51(90)58(101)81-48(30-31-53(76)96)55(98)85-75(21,24-3)67(110)91-39-47(95)36-52(91)59(102)83-68(9,10)60(103)79-45(40-92)34-44-28-26-25-27-29-44/h25-29,41-42,45-52,92,94-95H,22-24,30-40H2,1-21H3,(H2,76,96)(H,77,107)(H,78,93)(H,79,103)(H,80,97)(H,81,101)(H,82,99)(H,83,102)(H,84,100)(H,85,98)(H,86,104)(H,87,105)(H,88,108)(H,89,106)/t45-,46+,47+,48?,49-,50-,51-,52-,73+,74+,75+/m0/s1
+  standard_inchi_key: XNZNCJQPJKHTPR-TYIXHQEYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002555
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  - Peptaibols
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA033103
+producer_organisms:
+- taxon_id: NCBITaxon:2046025
+  taxon_label: Acremonium sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002555
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:33617244
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002555 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002555
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2046025
+  organism_label: Acremonium sp.
+  evidence:
+  - reference: PMID:33617244
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002555 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT050462.1
+  locus_from: 1
+  locus_to: 64157
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002555
+  source_label: emerimicin VII
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-37eef9afb2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

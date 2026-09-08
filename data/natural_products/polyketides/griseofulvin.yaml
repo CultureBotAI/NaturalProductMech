@@ -1,0 +1,79 @@
+identifier: naturalproductmech:mibig-e59592cca0
+label: griseofulvin
+chemical_structure:
+  smiles: COC1=CC(OC)=C(Cl)C2=C1C(=O)C1(O2)[C@H](C)CC(=O)C=C1OC
+  standard_inchi: InChI=1S/C17H17ClO6/c1-8-5-9(19)6-12(23-4)17(8)16(20)13-10(21-2)7-11(22-3)14(18)15(13)24-17/h6-8H,5H2,1-4H3/t8-,17?/m1/s1
+  standard_inchi_key: DDUHZTYCFQRHIY-OEWHWVHBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000070
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Griseofulvins
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Cyclic polyketide
+- Polycyclic polyketide
+xrefs:
+- pubchem:441140
+- npatlas:NPA02483
+producer_organisms:
+- taxon_id: NCBITaxon:36650
+  taxon_label: Penicillium aethiopicum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000070
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
+    expression correlated with compound production. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1021/cb400541z
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000070 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000070
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:36650
+  organism_label: Penicillium aethiopicum
+  evidence:
+  - reference: DOI:10.1021/cb400541z
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000070 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:GU574478.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000070
+  source_label: griseofulvin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e59592cca0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

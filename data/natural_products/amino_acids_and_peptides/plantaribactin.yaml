@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-7efe746be0
+label: plantaribactin
+chemical_structure:
+  smiles: CCCCCCCCCCCC(=O)N[C@H](C(=O)N[C@@H](CO)C(=O)N[C@H](CO)C(=O)N[C@H]1CCCNC(=O)[C@@H](CCCN(O)N=O)NC(=O)CNC(=O)[C@H](CCC(N)=O)NC(=O)[C@@H](CCCN(O)N=O)NC1=O)[C@@H](O)C(=O)O
+  standard_inchi: InChI=1S/C44H76N14O19/c1-2-3-4-5-6-7-8-9-10-17-33(62)54-35(36(64)44(72)73)43(71)53-31(25-60)42(70)52-30(24-59)41(69)50-27-14-11-20-46-37(65)26(15-12-21-57(76)55-74)48-34(63)23-47-38(66)29(18-19-32(45)61)51-40(68)28(49-39(27)67)16-13-22-58(77)56-75/h26-31,35-36,59-60,64,76-77H,2-25H2,1H3,(H2,45,61)(H,46,65)(H,47,66)(H,48,63)(H,49,67)(H,50,69)(H,51,68)(H,52,70)(H,53,71)(H,54,62)(H,72,73)/t26-,27+,28-,29+,30-,31+,35+,36-/m1/s1
+  standard_inchi_key: LZKYOIUQAOXDOE-KXPMJRMKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002565
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA025689
+producer_organisms:
+- taxon_id: NCBITaxon:41899
+  taxon_label: Burkholderia plantarii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002565
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31276269
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002565 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002565
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:41899
+  organism_label: Burkholderia plantarii
+  evidence:
+  - reference: PMID:31276269
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002565 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP002581.1
+  locus_from: 2124675
+  locus_to: 2170130
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002565
+  source_label: plantaribactin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-7efe746be0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-83150f9cbe
+label: kalimantacin A
+chemical_structure:
+  smiles: CC(C\C=C\C=C/CCC(=C)CC(C)C\C(C)=C\C(O)=O)CC(=O)CC(O)CNC(=O)C(C)C(C)OC(N)=O
+  standard_inchi: InChI=1S/C30H48N2O7/c1-20(14-22(3)15-23(4)17-28(35)36)12-10-8-7-9-11-13-21(2)16-26(33)18-27(34)19-32-29(37)24(5)25(6)39-30(31)38/h7-9,11,17,21-22,24-25,27,34H,1,10,12-16,18-19H2,2-6H3,(H2,31,38)(H,32,37)(H,35,36)/b8-7-,11-9+,23-17+
+  standard_inchi_key: GENAAYFYLGYPIQ-JOPGMDTFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001099
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA015478
+- pubchem:197707
+producer_organisms:
+- taxon_id: NCBITaxon:294
+  taxon_label: Pseudomonas fluorescens
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001099
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20189105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001099 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001099
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:294
+  organism_label: Pseudomonas fluorescens
+  evidence:
+  - reference: PMID:20189105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001099 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GU479979.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001099
+  source_label: kalimantacin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-83150f9cbe
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

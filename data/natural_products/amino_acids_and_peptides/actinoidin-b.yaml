@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-4e89e4df7a
+label: Actinoidin B
+chemical_structure:
+  smiles: O=C(O)C1NC(=O)C2NC(=O)C(NC(=O)C3NC(=O)C(NC(=O)C(NC(=O)C(N)C4=CC=C(O)C(Cl)=C4)C(O)C5=CC=C(OC=6C=C3C=C(OC7=CC=C(C=C7Cl)C2OC8OC(C)C(OC)C(N)C8)C6OC9OC(CO)C(O)C(O)C9OC%10OC(C)C(O)C(N)C%10)C=C5)CC=%11C=CC=CC%11)C=%12C=CC(O)=C(C%12)C%13=C(OC%14OC(CO)C(O)C(O)C%14O)C=C(O)C=C%131
+  standard_inchi: InChI=1S/C84H93Cl2N9O31/c1-31-65(101)45(87)27-56(117-31)125-75-70(106)68(104)55(30-97)123-84(75)126-74-52-23-38-24-53(74)120-50-18-13-37(22-44(50)86)73(124-57-28-46(88)72(116-3)32(2)118-57)64-81(113)93-62(82(114)115)42-25-39(98)26-51(121-83-71(107)69(105)67(103)54(29-96)122-83)58(42)41-20-36(12-16-48(41)99)60(78(110)95-64)92-79(111)61(38)91-76(108)47(19-33-7-5-4-6-8-33)90-80(112)63(66(102)34-9-14-40(119-52)15-10-34)94-77(109)59(89)35-11-17-49(100)43(85)21-35/h4-18,20-26,31-32,45-47,54-57,59-73,75,83-84,96-107H,19,27-30,87-89H2,1-3H3,(H,90,112)(H,91,108)(H,92,111)(H,93,113)(H,94,109)(H,95,110)(H,114,115)
+  standard_inchi_key: VLQQRKXPWDSMMH-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001461
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Vancomycins and Teicoplanins
+  is_glycoside: true
+bgc_class:
+- NRPS
+compound_classes:
+- Glycopeptide
+producer_organisms:
+- taxon_id: NCBITaxon:208442
+  taxon_label: Amycolatopsis keratiniphila subsp. nogabecina
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001461
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.38.713
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001461 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001461
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:208442
+  organism_label: Amycolatopsis keratiniphila subsp. nogabecina
+  evidence:
+  - reference: DOI:10.7164/antibiotics.38.713
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001461 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MQUP01000022.1
+  locus_from: 97566
+  locus_to: 165358
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001461
+  source_label: Actinoidin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4e89e4df7a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

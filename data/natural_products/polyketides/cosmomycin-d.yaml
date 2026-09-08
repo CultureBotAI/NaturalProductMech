@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-41c6be88f1
+label: cosmomycin D
+chemical_structure:
+  smiles: CC[C@@]1(O)C[C@H](O[C@H]2C[C@@H]([C@H](O[C@H]3C[C@H](O)[C@H](O[C@H]4CC[C@H](O)[C@H](C)O4)[C@H](C)O3)[C@H](C)O2)N(C)C)C2=C(O)C3=C(C(O)=C2[C@H]1O[C@H]1C[C@@H]([C@H](O[C@H]2C[C@H](O)[C@H](O[C@H]4CC[C@H](O)[C@H](C)O4)[C@H](C)O2)[C@H](C)O1)N(C)C)C(=O)C1=C(C(O)=CC=C1)C3=O
+  standard_inchi: InChI=1S/C60H88N2O22/c1-12-60(72)24-39(79-42-20-32(61(8)9)55(27(4)75-42)82-44-22-37(66)57(29(6)77-44)80-40-18-16-34(63)25(2)73-40)47-50(54(71)48-49(53(47)70)52(69)46-31(51(48)68)14-13-15-36(46)65)59(60)84-43-21-33(62(10)11)56(28(5)76-43)83-45-23-38(67)58(30(7)78-45)81-41-19-17-35(64)26(3)74-41/h13-15,25-30,32-35,37-45,55-59,63-67,70-72H,12,16-24H2,1-11H3/t25-,26-,27-,28-,29-,30-,32-,33-,34-,35-,37-,38-,39-,40-,41-,42-,43-,44-,45-,55+,56+,57+,58+,59+,60+/m0/s1
+  standard_inchi_key: DKWBRHNUUTWKAG-JNZMSYBZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001074
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthracyclines
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+- PKS
+xrefs:
+- npatlas:NPA01627
+- pubchem:125715
+producer_organisms:
+- taxon_id: NCBITaxon:358823
+  taxon_label: Streptomyces olindensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001074
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24970824
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001074 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001074
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:358823
+  organism_label: Streptomyces olindensis
+  evidence:
+  - reference: PMID:24970824
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001074 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JJOH01000002.1
+  locus_from: 297513
+  locus_to: 339455
+  bgc_class:
+  - SACCHARIDE
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001074
+  source_label: cosmomycin D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-41c6be88f1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,109 @@
+identifier: naturalproductmech:mibig-c5a4f915e6
+label: rimocidin
+chemical_structure:
+  smiles: CCC[C@@H]1C/C=C/C=C/C=C/C=C/[C@@H](C[C@H]2[C@@H]([C@H](C[C@](O2)(C[C@H](CCCC(=O)C[C@H]([C@@H](C(=O)O1)CC)O)O)O)O)C(=O)O)O[C@H]3[C@H]([C@H]([C@@H]([C@H](O3)C)O)N)O
+  standard_inchi: InChI=1S/C39H61NO14/c1-4-14-26-17-11-9-7-6-8-10-12-18-27(53-38-35(46)33(40)34(45)23(3)51-38)20-31-32(36(47)48)30(44)22-39(50,54-31)21-25(42)16-13-15-24(41)19-29(43)28(5-2)37(49)52-26/h6-12,18,23,25-35,38,42-46,50H,4-5,13-17,19-22,40H2,1-3H3,(H,47,48)/b7-6+,10-8+,11-9+,18-12+/t23-,25+,26-,27+,28+,29-,30+,31+,32-,33+,34-,35+,38+,39-/m1/s1
+  standard_inchi_key: AWGBZRVEGDNLDZ-JCUCCFEFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002106
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6440843
+- npatlas:NPA020400
+producer_organisms:
+- taxon_id: NCBITaxon:132474
+  taxon_label: Streptomyces rimosus subsp. rimosus NRRL WC-3558
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002106
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:33057790
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002106 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:1956
+  taxon_label: Streptomyces diastaticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000138
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15123265
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000138 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002106
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:132474
+  organism_label: Streptomyces rimosus subsp. rimosus NRRL WC-3558
+  evidence:
+  - reference: PMID:33057790
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002106 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NZ_JOBS01000013.1
+  locus_from: 102018
+  locus_to: 198711
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+- accession: mibig:BGC0000138
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1956
+  organism_label: Streptomyces diastaticus
+  evidence:
+  - reference: PMID:15123265
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000138 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY442225.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002106
+  source_label: rimocidin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-c5a4f915e6
+- source: MIBIG
+  source_id: BGC0000138
+  source_label: rimocidin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f15fd87657
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000138, BGC0002106.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-8b07d4e5d9
+label: citrocin
+chemical_structure:
+  smiles: CCC(C)[C@@H]1NC(=O)C([C@H](C)CC)NC(=O)C(CCCCCN)NC(=O)CNC(=O)[C@H](C(C)C)NC(=O)CNC(=O)CNC(=O)CC[C@@H](C(=O)N[C@@H](CC2=CC=C(O)C=C2)C(=O)N[C@@H](CC2=CC=CC=C2)C(=O)N[C@H](C(=O)NCC(=O)NCC(=O)NCC(=O)N[C@H](C(=O)NCC(=O)N[C@@H](CCNC(=N)N)C(=O)N[C@@H](CC2=CC=C(O)C=C2)C(=O)NCC(=O)O)C(C)C)[C@H](C)CC)NC1=O
+  standard_inchi: InChI=1S/C88H133N23O23/c1-11-49(8)74(85(132)97-41-66(117)94-40-65(116)96-43-70(121)108-73(48(6)7)84(131)99-45-68(119)102-59(33-35-92-88(90)91)79(126)104-60(77(124)100-46-71(122)123)37-53-23-27-55(112)28-24-53)109-82(129)62(36-52-20-16-14-17-21-52)106-81(128)61(38-54-25-29-56(113)30-26-54)105-78(125)58-31-32-63(114)93-39-64(115)95-42-69(120)107-72(47(4)5)83(130)98-44-67(118)101-57(22-18-15-19-34-89)80(127)110-76(51(10)13-3)87(134)111-75(50(9)12-2)86(133)103-58/h14,16-17,20-21,23-30,47-51,57-62,72-76,112-113H,11-13,15,18-19,22,31-46,89H2,1-10H3,(H,93,114)(H,94,117)(H,95,115)(H,96,116)(H,97,132)(H,98,130)(H,99,131)(H,100,124)(H,101,118)(H,102,119)(H,103,133)(H,104,126)(H,105,125)(H,106,128)(H,107,120)(H,108,121)(H,109,129)(H,110,127)(H,111,134)(H,122,123)(H4,90,91,92)/t49-,50?,51-,57?,58+,59+,60+,61+,62+,72+,73+,74+,75+,76?/m1/s1
+  standard_inchi_key: CNUGGUJSKKNENX-NCROSIFOSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002322
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lasso peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+compound_classes:
+- Macrocyclic
+xrefs:
+- npatlas:NPA033464
+producer_organisms:
+- taxon_id: NCBITaxon:1563222
+  taxon_label: Citrobacter pasteurii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002322
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1074/jbc.ra118.006494
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002322 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002322
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1563222
+  organism_label: Citrobacter pasteurii
+  evidence:
+  - reference: DOI:10.1074/jbc.ra118.006494
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002322 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CDHL01000044.1
+  locus_from: 4368
+  locus_to: 8473
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002322
+  source_label: citrocin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-8b07d4e5d9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

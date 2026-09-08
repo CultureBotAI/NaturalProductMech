@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-0a7091b76f
+label: burkholdac A
+chemical_structure:
+  smiles: O=C(NC(C(C)C)C(O)CC1=O)C(CSSCC/C=C/C2O1)NC(C(NC(C2)=O)CCSC)=O
+  standard_inchi: InChI=1S/C22H35N3O6S3/c1-13(2)20-17(26)11-19(28)31-14-6-4-5-8-33-34-12-16(22(30)25-20)24-21(29)15(7-9-32-3)23-18(27)10-14/h4,6,13-17,20,26H,5,7-12H2,1-3H3,(H,23,27)(H,24,29)(H,25,30)/b6-4+
+  standard_inchi_key: ZRJPMGCEOCZSQC-GQCTYLIASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000964
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:271848
+  taxon_label: Burkholderia thailandensis E264
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000964
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:21348454
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000964 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000964
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:271848
+  organism_label: Burkholderia thailandensis E264
+  evidence:
+  - reference: PMID:21348454
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000964 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000086.1
+  locus_from: 2655707
+  locus_to: 2694284
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000964
+  source_label: burkholdac A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0a7091b76f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

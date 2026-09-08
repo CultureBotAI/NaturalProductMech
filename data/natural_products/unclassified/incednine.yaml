@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-ae6def2c20
+label: incednine
+chemical_structure:
+  smiles: CN[C@H]1CC[C@H](O[C@@H]2CO[C@@H](O[C@H]3\C=C/C=C/C(/C)=C/C=C/C(/C)=C/C[C@H](C)NC(=O)\C(OC)=C\C(\C)=C\C=C\C=C\[C@@]3(C)O)[C@H](NC)[C@H]2O)O[C@@H]1C
+  standard_inchi: InChI=1S/C42H63N3O8/c1-28-16-12-13-20-36(53-41-38(44-8)39(46)35(27-50-41)52-37-24-23-33(43-7)32(5)51-37)42(6,48)25-14-10-11-17-30(3)26-34(49-9)40(47)45-31(4)22-21-29(2)19-15-18-28/h10-21,25-26,31-33,35-39,41,43-44,46,48H,22-24,27H2,1-9H3,(H,45,47)/b11-10+,16-12+,19-15+,20-13-,25-14+,28-18+,29-21+,30-17+,34-26-/t31-,32+,33-,35+,36-,37-,38+,39-,41-,42+/m0/s1
+  standard_inchi_key: VTEKRFJHUHAGJO-WNETYGQVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000078
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactams
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA014992
+producer_organisms:
+- taxon_id: NCBITaxon:1265536
+  taxon_label: Streptomyces sp. ML694-90F3
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000078
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23921821
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000078 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000078
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1265536
+  organism_label: Streptomyces sp. ML694-90F3
+  evidence:
+  - reference: PMID:23921821
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000078 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB767280.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000078
+  source_label: incednine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ae6def2c20
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

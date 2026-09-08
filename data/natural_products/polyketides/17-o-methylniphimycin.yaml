@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-51b6ae3659
+label: 17-O-methylniphimycin
+chemical_structure:
+  smiles: C[C@H]1CC[C@@H]([C@H]([C@H](C[C@H]([C@H](/C=C/[C@H]([C@H](C(=O)O[C@@H]([C@H](/C=C/C=C/[C@H]([C@H]([C@@H](C[C@H](C[C@@H](C[C@@H]2C[C@@H]([C@H]([C@@](O2)(C[C@H]1O)OC)O)O)OC(=O)CC(=O)O)O)O)C)O)C)[C@@H](C)C[C@@H](C)CCC/C=C/CCCNC(=NC)N)C)O)C)O)O)C)O
+  standard_inchi: InChI=1S/C60H105N3O18/c1-35(19-15-13-11-12-14-18-26-63-59(61)62-9)27-39(5)56-38(4)20-16-17-21-46(65)40(6)50(69)29-43(64)28-44(79-55(75)33-54(73)74)30-45-31-52(71)57(76)60(78-10,81-45)34-53(72)37(3)23-24-47(66)41(7)51(70)32-49(68)36(2)22-25-48(67)42(8)58(77)80-56/h11-12,16-17,20-22,25,35-53,56-57,64-72,76H,13-15,18-19,23-24,26-34H2,1-10H3,(H,73,74)(H3,61,62,63)/b12-11+,20-16+,21-17+,25-22+/t35-,36-,37-,38-,39-,40+,41+,42+,43-,44-,45+,46+,47-,48+,49+,50+,51-,52-,53+,56-,57+,60-/m0/s1
+  standard_inchi_key: RLSMFTAMWBMTGW-IBQANEQOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001700
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactones
+  is_glycoside: true
+bgc_class:
+- PKS
+compound_classes:
+- Macrocyclic polyketide
+xrefs:
+- npatlas:NPA022541
+producer_organisms:
+- taxon_id: NCBITaxon:2070498
+  taxon_label: Streptomyces sp. IMB7-145
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001700
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29308897
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001700 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001700
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2070498
+  organism_label: Streptomyces sp. IMB7-145
+  evidence:
+  - reference: PMID:29308897
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001700 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MF671979.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001700
+  source_label: 17-O-methylniphimycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-51b6ae3659
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

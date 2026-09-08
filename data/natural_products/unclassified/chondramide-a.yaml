@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-d944ef34a1
+label: chondramide A
+chemical_structure:
+  smiles: CO[C@H]1C(NC(=O)[C@@H](CC2=CNC3=CC=CC=C23)N(C)C(=O)[C@H](C)NC(=O)[C@@H](C)CC(C)=C[C@H](C)[C@@H](C)OC1=O)C1=CC=C(O)C=C1
+  standard_inchi: InChI=1S/C36H46N4O7/c1-20-16-21(2)24(5)47-36(45)32(46-7)31(25-12-14-27(41)15-13-25)39-34(43)30(18-26-19-37-29-11-9-8-10-28(26)29)40(6)35(44)23(4)38-33(42)22(3)17-20/h8-16,19,21-24,30-32,37,41H,17-18H2,1-7H3,(H,38,42)(H,39,43)/t21-,22-,23-,24+,30+,31?,32-/m0/s1
+  standard_inchi_key: IEKCRWAFVYJECW-TYVWEWQESA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000969
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA07953
+producer_organisms:
+- taxon_id: NCBITaxon:52
+  taxon_label: Chondromyces crocatus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000969
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16793524
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000969 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000969
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:52
+  organism_label: Chondromyces crocatus
+  evidence:
+  - reference: PMID:16793524
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000969 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM179409.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000969
+  source_label: chondramide A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d944ef34a1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

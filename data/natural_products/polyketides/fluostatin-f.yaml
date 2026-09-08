@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-5099894cd7
+label: fluostatin F
+chemical_structure:
+  smiles: '[H][C@@]12O[C@]1(C)C(=O)C1=CC(O)=C3C4=C(C=CC=C4O)C(=O)C3=C1[C@H]2OC'
+  standard_inchi: InChI=1S/C19H14O6/c1-19-17(23)8-6-10(21)13-11-7(4-3-5-9(11)20)15(22)14(13)12(8)16(24-2)18(19)25-19/h3-6,16,18,20-21H,1-2H3/t16-,18+,19-/m1/s1
+  standard_inchi_key: CDBWDMSUWPFBMG-NZSAHSFTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000223
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA05841
+- pubchem:71460594
+producer_organisms:
+- taxon_id: NCBITaxon:1037453
+  taxon_label: uncultured bacterium BAC AB649/1850
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000223
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:20690632
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000223 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000223
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1037453
+  organism_label: uncultured bacterium BAC AB649/1850
+  evidence:
+  - reference: PMID:20690632
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000223 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HM193369.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000223
+  source_label: fluostatin F
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5099894cd7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

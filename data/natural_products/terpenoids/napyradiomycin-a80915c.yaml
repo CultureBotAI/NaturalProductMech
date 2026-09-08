@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-5e50053f05
+label: napyradiomycin A80915C
+chemical_structure:
+  smiles: C[C@]1(O)CC[C@H](Cl)C(C)(C)C1C[C@]23C(C4=C(C([C@@]2(Cl)C[C@@H](Cl)C(C)(C)O3)=O)C(O)=C(C)C(O)=C4)=O
+  standard_inchi: InChI=1S/C26H33Cl3O6/c1-12-14(30)9-13-18(19(12)31)21(33)25(29)11-17(28)23(4,5)35-26(25,20(13)32)10-15-22(2,3)16(27)7-8-24(15,6)34/h9,15-17,30-31,34H,7-8,10-11H2,1-6H3/t15?,16-,17+,24-,25-,26-/m0/s1
+  standard_inchi_key: XGGIVXWAYKZBIV-JBPAMENMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001079
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+- TERPENE
+producer_organisms:
+- taxon_id: NCBITaxon:270689
+  taxon_label: Streptomyces aculeolatus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001079
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:17392281
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001079 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001079
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:270689
+  organism_label: Streptomyces aculeolatus
+  evidence:
+  - reference: PMID:17392281
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001079 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF397638.1
+  bgc_class:
+  - PKS
+  - TERPENE
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001079
+  source_label: napyradiomycin A80915C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5e50053f05
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

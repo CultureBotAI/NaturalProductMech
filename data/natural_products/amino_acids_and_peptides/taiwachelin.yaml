@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-50d3b9ca5e
+label: taiwachelin
+chemical_structure:
+  smiles: CCCCCCCCCCCC(=O)N[C@@H]([C@@H](C(=O)O)O)C(=O)N[C@H]([C@@H](C)O)C(=O)N[C@@H](CC(=O)O)C(=O)N[C@H](CCCN(C(=O)C[C@H](C)O)O)C(=O)N[C@@H](CO)C(=O)N[C@H]1CCCN(C1=O)O
+  standard_inchi: InChI=1S/C41H70N8O18/c1-4-5-6-7-8-9-10-11-12-17-29(53)46-33(34(57)41(64)65)39(62)47-32(24(3)52)38(61)44-27(21-31(55)56)36(59)42-25(15-13-18-48(66)30(54)20-23(2)51)35(58)45-28(22-50)37(60)43-26-16-14-19-49(67)40(26)63/h23-28,32-34,50-52,57,66-67H,4-22H2,1-3H3,(H,42,59)(H,43,60)(H,44,61)(H,45,58)(H,46,53)(H,47,62)(H,55,56)(H,64,65)/t23-,24+,25+,26-,27-,28-,32+,33-,34-/m0/s1
+  standard_inchi_key: DSEHLJGXEXFDGA-UVWMAGHCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001189
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Depsipeptides
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:71492379
+producer_organisms:
+- taxon_id: NCBITaxon:977880
+  taxon_label: Cupriavidus taiwanensis LMG 19424
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001189
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22972004
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001189 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001189
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:977880
+  organism_label: Cupriavidus taiwanensis LMG 19424
+  evidence:
+  - reference: PMID:22972004
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001189 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CU633750.1
+  locus_from: 1278232
+  locus_to: 1320161
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001189
+  source_label: taiwachelin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-50d3b9ca5e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

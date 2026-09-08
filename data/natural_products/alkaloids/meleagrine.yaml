@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-8e2ea0f5fa
+label: meleagrine
+chemical_structure:
+  smiles: CON1C2=C(C=CC=C2)[C@]2(C=C(O)C(=O)N3\C(=C\C4=CNC=N4)C(=O)N[C@]123)C(C)(C)C=C
+  standard_inchi: InChI=1S/C23H23N5O4/c1-5-21(2,3)22-11-18(29)20(31)27-17(10-14-12-24-13-25-14)19(30)26-23(22,27)28(32-4)16-9-7-6-8-15(16)22/h5-13,29H,1H2,2-4H3,(H,24,25)(H,26,30)/b17-10+/t22-,23-/m1/s1
+  standard_inchi_key: JTJJJLSLKZFEPJ-WSHSOXHMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000420
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Histidine alkaloids
+  class_results:
+  - Imidazole alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA010351
+producer_organisms:
+- taxon_id: NCBITaxon:500485
+  taxon_label: Penicillium rubens Wisconsin 54-1255
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000420
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1371/journal.pone.0078922
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000420 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000420
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:500485
+  organism_label: Penicillium rubens Wisconsin 54-1255
+  evidence:
+  - reference: DOI:10.1371/journal.pone.0078922
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000420 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AM920436.1
+  locus_from: 3638081
+  locus_to: 3658739
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000420
+  source_label: meleagrine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8e2ea0f5fa
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-d5b13fe163
+label: micrococcin P1
+chemical_structure:
+  smiles: C/C=C/1\C2=NC(=CS2)C(=O)NC(C3=NC(=CS3)C(=O)NC(C4=NC(=CS4)C5=C(C=CC(=N5)C6=NC(=CS6)C7=NC(=CS7)C(=O)N/C(=C/C)/C(=O)NCC(C)O)C8=NC(=CS8)C(=O)NC(C(=O)N1)C(C)O)C(C)O)C(C)C
+  standard_inchi: InChI=1S/C48H49N13O9S6/c1-8-24(37(65)49-12-20(5)62)51-38(66)28-15-73-46(56-28)32-18-74-45(58-32)26-11-10-23-36(50-26)27-13-75-48(53-27)35(22(7)64)61-41(69)31-17-76-47(57-31)33(19(3)4)59-39(67)30-16-72-44(55-30)25(9-2)52-42(70)34(21(6)63)60-40(68)29-14-71-43(23)54-29/h8-11,13-22,33-35,62-64H,12H2,1-7H3,(H,49,65)(H,51,66)(H,52,70)(H,59,67)(H,60,68)(H,61,69)/b24-8+,25-9+
+  standard_inchi_key: MQGFYNRGFWXAKA-IQEGOQEASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000607
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:6446886
+producer_organisms:
+- taxon_id: NCBITaxon:69966
+  taxon_label: Macrococcus caseolyticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000607
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25313391
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000607 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000607
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:69966
+  organism_label: Macrococcus caseolyticus
+  evidence:
+  - reference: PMID:25313391
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000607 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KM613043.1
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000607
+  source_label: micrococcin P1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d5b13fe163
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

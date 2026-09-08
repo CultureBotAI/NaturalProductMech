@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-559e9d03ee
+label: aculeximycin
+chemical_structure:
+  smiles: CCCC(O[C@H]1C[C@](C)(N)[C@H](O)[C@H](C)O1)C(C)C(O)C(CC)\C=C\C(O)C(C)C1C\C=C(C)\C(O)C(C)C(CC(O)C(C)C(O)CC2CC(O)C(O)C(O)(CC(O[C@@H]3O[C@H](C)[C@@H](O)[C@H](O[C@H]4C[C@@H](N)[C@H](O)[C@@H](C)O4)[C@H]3O[C@@H]3O[C@H](C)[C@@H](O)[C@H](O)[C@H]3O)C(C)CCC(O)CC(O)C\C=C(CC)\C(=O)O1)O2)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]1O
+  standard_inchi: InChI=1S/C81H144N2O33/c1-15-18-55(109-61-33-80(14,83)74(101)44(13)106-61)39(8)63(92)45(16-2)22-25-51(87)38(7)56-26-20-36(5)62(91)40(9)57(111-78-71(100)69(98)67(96)59(34-84)113-78)31-53(89)37(6)52(88)28-49-29-54(90)75(102)81(104,116-49)32-58(35(4)19-23-47(85)27-48(86)24-21-46(17-3)76(103)110-56)112-79-73(115-77-70(99)68(97)65(94)42(11)107-77)72(66(95)43(12)108-79)114-60-30-50(82)64(93)41(10)105-60/h20-22,25,35,37-45,47-75,77-79,84-102,104H,15-19,23-24,26-34,82-83H2,1-14H3/b25-22+,36-20+,46-21+/t35?,37?,38?,39?,40?,41-,42-,43-,44+,45?,47?,48?,49?,50-,51?,52?,53?,54?,55?,56?,57?,58?,59-,60+,61+,62?,63?,64-,65-,66-,67-,68+,69+,70-,71+,72+,73-,74-,75?,77+,78-,79+,80+,81?/m1/s1
+  standard_inchi_key: VJKZKLDZOAFAEE-QIESNYARSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000002
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA09222
+- pubchem:6449919
+producer_organisms:
+- taxon_id: NCBITaxon:1449976
+  taxon_label: Kutzneria albida DSM 43870
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000002
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25301375
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000002 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000002
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1449976
+  organism_label: Kutzneria albida DSM 43870
+  evidence:
+  - reference: PMID:25301375
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000002 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP007155.1
+  locus_from: 7362971
+  locus_to: 7504512
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000002
+  source_label: aculeximycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-559e9d03ee
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

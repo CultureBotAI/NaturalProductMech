@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-d817d6f62a
+label: Abyssomicin 4
+chemical_structure:
+  smiles: C[C@H]1C[C@@]23OC(=O)C4=C2O[C@]1(C)[C@@H](O)[C@@H]3[C@H](O)CC(=O)[C@H](C)CCC4=O
+  standard_inchi: InChI=1S/C19H24O7/c1-8-4-5-10(20)13-16-19(26-17(13)24)7-9(2)18(3,25-16)15(23)14(19)12(22)6-11(8)21/h8-9,12,14-15,22-23H,4-7H2,1-3H3/t8-,9+,12-,14+,15+,18+,19+/m1/s1
+  standard_inchi_key: ZKEUCRCOSHYEPI-DDODTQTESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001694
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Spirotetronate macrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA028395
+producer_organisms:
+- taxon_id: NCBITaxon:188770
+  taxon_label: Streptomyces koyangensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001694
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: url:https://doi.org/10.1016/j.tet.2017.07.034
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001694 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001694
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:188770
+  organism_label: Streptomyces koyangensis
+  evidence:
+  - reference: url:https://doi.org/10.1016/j.tet.2017.07.034
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001694 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MG243704.1
+  locus_from: 1
+  locus_to: 73870
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001694
+  source_label: Abyssomicin 4
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-d817d6f62a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

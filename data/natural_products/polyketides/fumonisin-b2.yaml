@@ -1,0 +1,118 @@
+identifier: naturalproductmech:mibig-4eac76b469
+label: Fumonisin B2
+chemical_structure:
+  smiles: CCCC[C@@H](C)[C@H]([C@H](C[C@@H](C)CCCCCC[C@H](C[C@@H]([C@H](C)N)O)O)OC(=O)C[C@@H](CC(=O)O)C(=O)O)OC(=O)C[C@@H](CC(=O)O)C(=O)O
+  standard_inchi: InChI=1S/C34H59NO14/c1-5-6-12-21(3)32(49-31(43)18-24(34(46)47)16-29(40)41)27(48-30(42)17-23(33(44)45)15-28(38)39)14-20(2)11-9-7-8-10-13-25(36)19-26(37)22(4)35/h20-27,32,36-37H,5-19,35H2,1-4H3,(H,38,39)(H,40,41)(H,44,45)(H,46,47)/t20-,21+,22-,23+,24+,25+,26-,27-,32+/m0/s1
+  standard_inchi_key: UXDPXZQHTDAXOZ-STOIETHLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002502
+np_pathway: POLYKETIDES
+synonyms:
+- value: fumonisin B2
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002502
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Linear polyketide
+xrefs:
+- npatlas:NPA006013
+producer_organisms:
+- taxon_id: NCBITaxon:5127
+  taxon_label: Fusarium fujikuroi
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002502
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:30987138
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002502 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:117187
+  taxon_label: Fusarium verticillioides
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000062
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1006/fgbi.1999.1141
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000062 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002502
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5127
+  organism_label: Fusarium fujikuroi
+  evidence:
+  - reference: PMID:30987138
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002502 entry version 3; citation taken from the entry level
+  genome_accession: genbank:HQ622717.1
+  locus_from: 1
+  locus_to: 50387
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+- accession: mibig:BGC0000062
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:117187
+  organism_label: Fusarium verticillioides
+  evidence:
+  - reference: DOI:10.1006/fgbi.1999.1141
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000062 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AF155773.5
+  locus_from: 18228
+  locus_to: 64838
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002502
+  source_label: fumonisin B2
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-4eac76b469
+- source: MIBIG
+  source_id: BGC0000062
+  source_label: Fumonisin B2
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-a898805a30
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000062, BGC0002502.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

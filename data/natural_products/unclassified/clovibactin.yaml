@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-31e2535fae
+label: clovibactin
+chemical_structure:
+  smiles: CC(C)C[C@@H](NC(=O)[C@@H](N)Cc1ccccc1)C(=O)N[C@H](CCCCN)C(=O)N[C@@H](CO)C(=O)N[C@H]1C(=O)N[C@@H](C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)O[C@H]1C(N)=O
+  standard_inchi: InChI=1S/C43H70N10O11/c1-22(2)17-29-40(60)51-31(19-24(5)6)43(63)64-34(35(46)55)33(42(62)47-25(7)36(56)49-29)53-41(61)32(21-54)52-38(58)28(15-11-12-16-44)48-39(59)30(18-23(3)4)50-37(57)27(45)20-26-13-9-8-10-14-26/h8-10,13-14,22-25,27-34,54H,11-12,15-21,44-45H2,1-7H3,(H2,46,55)(H,47,62)(H,48,59)(H,49,56)(H,50,57)(H,51,60)(H,52,58)(H,53,61)/t25-,27-,28+,29-,30+,31-,32-,33+,34+/m0/s1
+  standard_inchi_key: SMQAHGKBWXPEHB-HHHSQLJLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002755
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:1597781
+  taxon_label: Eleftheria terrae P9846
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002755
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Homology-based prediction. That evidence grades the LOCUS
+    as CLUSTER_PREDICTED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1016/j.cell.2023.07.038
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002755 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002755
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1597781
+  organism_label: Eleftheria terrae P9846
+  evidence:
+  - reference: DOI:10.1016/j.cell.2023.07.038
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002755 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP106952.1
+  locus_from: 449079
+  locus_to: 514739
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Homology-based prediction
+  link_evidence_basis: CLUSTER_PREDICTED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002755
+  source_label: clovibactin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-31e2535fae
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

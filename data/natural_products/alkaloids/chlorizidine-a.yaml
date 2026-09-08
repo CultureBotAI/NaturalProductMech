@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-65382fd66e
+label: chlorizidine A
+chemical_structure:
+  smiles: OC1=CC2=C(C(=O)N3C(Cl)=C(Cl)C=C23)C(O)=C1[C@@H]1CCC2=CC(Cl)=C(Cl)N12
+  standard_inchi: InChI=1S/C18H10Cl4N2O3/c19-8-3-6-1-2-10(23(6)16(8)21)14-12(25)4-7-11-5-9(20)17(22)24(11)18(27)13(7)15(14)26/h3-5,10,25-26H,1-2H2/t10-/m0/s1
+  standard_inchi_key: PNWJMZXCEYWQFJ-JTQLQIEISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001172
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Pyrrolizidine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA08760
+producer_organisms:
+- taxon_id: NCBITaxon:1288082
+  taxon_label: Streptomyces sp. CNH-287
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001172
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.
+    That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the
+    taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24246014
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001172 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001172
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1288082
+  organism_label: Streptomyces sp. CNH-287
+  evidence:
+  - reference: PMID:24246014
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001172 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF585133.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001172
+  source_label: chlorizidine A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-65382fd66e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

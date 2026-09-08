@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-5780b79a20
+label: hypeptin
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C(=O)O[C@@H]([C@H](C(=O)NC(C(=O)N[C@@H](C(=O)N1)[C@H](C(C)C)O)[C@@H](C2=CC=C(C=C2)O)O)NC(=O)[C@H]([C@@H](C(=O)N)O)NC(=O)[C@H](CCCN=C(N)N)NC(=O)[C@@H](CC(C)C)NC(=O)[C@H](C)N)C(=O)N
+  standard_inchi: InChI=1S/C44H71N13O15/c1-8-19(6)25-43(71)72-33(35(47)63)29(42(70)56-27(31(60)21-11-13-22(58)14-12-21)40(68)55-26(39(67)53-25)30(59)18(4)5)57-41(69)28(32(61)34(46)62)54-37(65)23(10-9-15-50-44(48)49)51-38(66)24(16-17(2)3)52-36(64)20(7)45/h11-14,17-20,23-33,58-61H,8-10,15-16,45H2,1-7H3,(H2,46,62)(H2,47,63)(H,51,66)(H,52,64)(H,53,67)(H,54,65)(H,55,68)(H,56,70)(H,57,69)(H4,48,49,50)/t19-,20-,23-,24+,25-,26+,27?,28-,29+,30-,31+,32-,33-/m0/s1
+  standard_inchi_key: FZKVQDUEWNYBMS-LEGGSXHMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002126
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:121225236
+- npatlas:NPA020717
+producer_organisms:
+- taxon_id: NCBITaxon:2820808
+  taxon_label: Lysobacter sp. K5869
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002126
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:33768646
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002126 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002126
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2820808
+  organism_label: Lysobacter sp. K5869
+  evidence:
+  - reference: PMID:33768646
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002126 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP072597.1
+  locus_from: 3896012
+  locus_to: 3931610
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002126
+  source_label: hypeptin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-5780b79a20
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

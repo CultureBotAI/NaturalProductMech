@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-2ae39e1a11
+label: myxothiazol
+chemical_structure:
+  smiles: COC(\C=C\C1=CSC(=N1)C1=CSC(=N1)C(C)\C=C\C=C\C(C)C)C(C)C(\OC)=C/C(N)=O
+  standard_inchi: InChI=1S/C25H33N3O3S2/c1-16(2)9-7-8-10-17(3)24-28-20(15-33-24)25-27-19(14-32-25)11-12-21(30-5)18(4)22(31-6)13-23(26)29/h7-18,21H,1-6H3,(H2,26,29)/b9-7+,10-8+,12-11+,22-13+
+  standard_inchi_key: XKTFQMCPGMTBMD-ARYLOLAOSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001024
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Melithiazole and Myxothiazole derivatives
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA01854
+producer_organisms:
+- taxon_id: NCBITaxon:378806
+  taxon_label: Stigmatella aurantiaca DW4/3-1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001024
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:10601310
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001024 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001024
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:378806
+  organism_label: Stigmatella aurantiaca DW4/3-1
+  evidence:
+  - reference: PMID:10601310
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001024 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF188287.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001024
+  source_label: myxothiazol
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2ae39e1a11
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

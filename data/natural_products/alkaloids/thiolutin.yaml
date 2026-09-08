@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-0cd9c2e2d2
+label: thiolutin
+chemical_structure:
+  smiles: CN1C(=O)C(NC(C)=O)=C2SSC=C12
+  standard_inchi: InChI=1S/C8H8N2O2S2/c1-4(11)9-6-7-5(3-13-14-7)10(2)8(6)12/h3H,1-2H3,(H,9,11)
+  standard_inchi_key: MHMRAFONCSQAIA-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001193
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA05113
+- pubchem:6870
+producer_organisms:
+- taxon_id: NCBITaxon:173560
+  taxon_label: Saccharothrix algeriensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001193
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25353334
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001193 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001193
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:173560
+  organism_label: Saccharothrix algeriensis
+  evidence:
+  - reference: PMID:25353334
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001193 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KM114209.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001193
+  source_label: thiolutin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0cd9c2e2d2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

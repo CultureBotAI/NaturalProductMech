@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-2841ec8f81
+label: aspterric acid
+chemical_structure:
+  smiles: CC(=C1CCC23C1CCC(C(C2)OC3)(C(=O)O)O)C
+  standard_inchi: InChI=1S/C15H22O4/c1-9(2)10-3-5-14-7-12(19-8-14)15(18,13(16)17)6-4-11(10)14/h11-12,18H,3-8H2,1-2H3,(H,16,17)
+  standard_inchi_key: IOYVXXQKVQKQIG-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001475
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Daucane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:73753386
+producer_organisms:
+- taxon_id: NCBITaxon:341663
+  taxon_label: Aspergillus terreus NIH2624
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001475
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1007/s00203-020-01923-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001475 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001475
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:341663
+  organism_label: Aspergillus terreus NIH2624
+  evidence:
+  - reference: DOI:10.1007/s00203-020-01923-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001475 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:NT_165929.1
+  locus_from: 472400
+  locus_to: 482020
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001475
+  source_label: aspterric acid
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-2841ec8f81
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

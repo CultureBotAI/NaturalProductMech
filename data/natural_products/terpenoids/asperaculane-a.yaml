@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-0e7dc695d0
+label: asperaculane A
+chemical_structure:
+  smiles: C/C(=C\1/CC[C@@]2([C@@H]1CC=C(C[C@@H]2O)CO)C)/C(=O)O
+  standard_inchi: InChI=1S/C15H22O4/c1-9(14(18)19)11-5-6-15(2)12(11)4-3-10(8-16)7-13(15)17/h3,12-13,16-17H,4-8H2,1-2H3,(H,18,19)/b11-9+/t12-,13+,15-/m1/s1
+  standard_inchi_key: JDBMOJWYGWGAIH-DZBCAUDPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002225
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Eudesmane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA008625
+- pubchem:139585506
+producer_organisms:
+- taxon_id: NCBITaxon:690307
+  taxon_label: Aspergillus aculeatus ATCC 16872
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002225
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Knock-out studies. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:31618514
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002225 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002225
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:690307
+  organism_label: Aspergillus aculeatus ATCC 16872
+  evidence:
+  - reference: PMID:31618514
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002225 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KV878977.1
+  locus_from: 1125505
+  locus_to: 1144430
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002225
+  source_label: asperaculane A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0e7dc695d0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

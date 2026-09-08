@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-1e3897ffd3
+label: SNF4435C
+chemical_structure:
+  smiles: '[H][C@]12C(C)=CC(C)=C[C@@]1(C)[C@@H](C1=CC=C(C=C1)N(=O)=O)[C@@]21CO[C@H](C1)C1=C(C)C(=O)C(C)=C(OC)O1'
+  standard_inchi: InChI=1S/C28H31NO6/c1-15-11-16(2)24-27(5,12-15)25(19-7-9-20(10-8-19)29(31)32)28(24)13-21(34-14-28)23-17(3)22(30)18(4)26(33-6)35-23/h7-12,21,24-25H,13-14H2,1-6H3/t21-,24+,25-,27-,28+/m1/s1
+  standard_inchi_key: DXCYJJKWPZZHNZ-PAWAVCGOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000110
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA019666
+producer_organisms:
+- taxon_id: NCBITaxon:67339
+  taxon_label: Streptomyces orinoci
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000110
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:17763486
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000110 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000110
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67339
+  organism_label: Streptomyces orinoci
+  evidence:
+  - reference: PMID:17763486
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000110 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM778535.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000110
+  source_label: SNF4435C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1e3897ffd3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-5209b855e4
+label: 2-oxocyclopiazonic acid
+chemical_structure:
+  smiles: CC(C1=C(O)[C@@H]2C3[C@H](C(C)(C)N2C1=O)CC4=C5[C@@]3([H])C(NC5=CC=C4)=O)=O
+  standard_inchi: InChI=1S/C20H20N2O4/c1-8(23)12-17(24)16-14-10(20(2,3)22(16)19(12)26)7-9-5-4-6-11-13(9)15(14)18(25)21-11/h4-6,10,14-16,24H,7H2,1-3H3,(H,21,25)/t10-,14?,15-,16+/m1/s1
+  standard_inchi_key: MHEUVENJAVJAKO-FCONBKKXSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000977
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Tetramate alkaloids
+  class_results:
+  - Cyclopiazonic acid-tpye tetramate alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Tryptophan-derived
+producer_organisms:
+- taxon_id: NCBITaxon:5062
+  taxon_label: Aspergillus oryzae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000977
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1002/cbic.201000672
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000977 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000977
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5062
+  organism_label: Aspergillus oryzae
+  evidence:
+  - reference: DOI:10.1002/cbic.201000672
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000977 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AB506492.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000977
+  source_label: 2-oxocyclopiazonic acid
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-5209b855e4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

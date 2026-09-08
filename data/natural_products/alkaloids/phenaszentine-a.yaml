@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-c76c87a133
+label: phenaszentine A
+chemical_structure:
+  smiles: O=C([C@H](C(C)C)N)OCC1=CC=CC2=NC3=C(C(O)=O)C=CC=C3N=C21
+  standard_inchi: InChI=1S/C19H19N3O4/c1-10(2)15(20)19(25)26-9-11-5-3-7-13-16(11)21-14-8-4-6-12(18(23)24)17(14)22-13/h3-8,10,15H,9,20H2,1-2H3,(H,23,24)/t15-/m0/s1
+  standard_inchi_key: DXSHBRGRIPQUCN-HNNXBMFYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001869
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Phenazine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:1427518
+  taxon_label: Xenorhabdus szentirmaii DSM 16338
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001869
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production|Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:30886436
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001869 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001869
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1427518
+  organism_label: Xenorhabdus szentirmaii DSM 16338
+  evidence:
+  - reference: PMID:30886436
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001869 entry version 4; citation taken from the entry level
+  genome_accession: genbank:NIBV01000002.1
+  locus_from: 1256653
+  locus_to: 1268444
+  bgc_class:
+  - OTHER
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001869
+  source_label: phenaszentine A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-c76c87a133
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

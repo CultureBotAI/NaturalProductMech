@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-6e0973d7ec
+label: neoenterocin A
+chemical_structure:
+  smiles: CO/C(C)=C/C1=C2C(=O)C[C@@H](O)CC2=C(C(=O)C(=O)C2=CC=CC=C2)O1
+  standard_inchi: InChI=1S/C20H18O6/c1-11(25-2)8-16-17-14(9-13(21)10-15(17)22)20(26-16)19(24)18(23)12-6-4-3-5-7-12/h3-8,13,21H,9-10H2,1-2H3/b11-8+/t13-/m0/s1
+  standard_inchi_key: JBIMWARAATZDME-YKWSONSWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002366
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Flavonoids
+  class_results:
+  - Chalcones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA026863
+- pubchem:146683280
+producer_organisms:
+- taxon_id: NCBITaxon:1333476
+  taxon_label: Streptomyces sp. SCSIO 11863
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002366
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression|Knock-out studies. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:31657934
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002366 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002366
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1333476
+  organism_label: Streptomyces sp. SCSIO 11863
+  evidence:
+  - reference: PMID:31657934
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002366 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MK388865.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002366
+  source_label: neoenterocin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-6e0973d7ec
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

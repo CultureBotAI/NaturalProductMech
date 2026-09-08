@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-042c7eea46
+label: apramycin
+chemical_structure:
+  smiles: CN[C@H]1[C@H]([C@@H]2[C@H](C[C@H](C(O2)O[C@@H]3[C@H](C[C@H]([C@@H]([C@H]3O)O)N)N)N)O[C@@H]1O[C@@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)N)O)O)O
+  standard_inchi: InChI=1S/C21H41N5O11/c1-26-11-14(30)18-8(33-20(11)37-21-16(32)13(29)10(25)9(4-27)34-21)3-7(24)19(36-18)35-17-6(23)2-5(22)12(28)15(17)31/h5-21,26-32H,2-4,22-25H2,1H3/t5-,6+,7-,8+,9-,10-,11+,12+,13+,14-,15-,16-,17-,18+,19?,20-,21-/m1/s1
+  standard_inchi_key: XZNUGFQTQHRASN-XZEBHBPDSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000692
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Polyols
+  class_results:
+  - Amino cyclitols
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- pubchem:71428
+producer_organisms:
+- taxon_id: NCBITaxon:2017
+  taxon_label: Streptoalloteichus hindustanus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000692
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1002/9780470149676.ch2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000692 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000692
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2017
+  organism_label: Streptoalloteichus hindustanus
+  evidence:
+  - reference: DOI:10.1002/9780470149676.ch2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000692 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ875019.1
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000692
+  source_label: apramycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-042c7eea46
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

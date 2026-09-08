@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-178140d34c
+label: chartreusin
+chemical_structure:
+  smiles: C[C@@H]1[C@@H]([C@@H]([C@H]([C@@H](O1)OC2=CC=CC3=C2C4=C5C6=C(C=CC(=C6C(=O)O4)C)OC(=O)C5=C3O)O[C@@H]7[C@@H]([C@H]([C@H]([C@H](O7)C)O)OC)O)O)O
+  standard_inchi: InChI=1S/C32H32O14/c1-10-8-9-15-18-16(10)29(38)45-26-17-13(23(35)20(19(18)26)30(39)43-15)6-5-7-14(17)44-32-28(24(36)21(33)11(2)42-32)46-31-25(37)27(40-4)22(34)12(3)41-31/h5-9,11-12,21-22,24-25,27-28,31-37H,1-4H3/t11-,12-,21+,22+,24+,25-,27+,28-,31-,32+/m1/s1
+  standard_inchi_key: PONPPNYZKHNPKZ-RYBWXQSLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000207
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Coumarins
+  class_results:
+  - Simple coumarins
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:5281394
+producer_organisms:
+- taxon_id: NCBITaxon:1969
+  taxon_label: Streptomyces chartreusis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000207
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15911378
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000207 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000207
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1969
+  organism_label: Streptomyces chartreusis
+  evidence:
+  - reference: PMID:15911378
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000207 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ786383.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000207
+  source_label: chartreusin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-178140d34c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

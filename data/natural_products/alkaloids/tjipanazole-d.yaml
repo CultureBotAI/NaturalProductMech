@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-3bc0ccde6c
+label: tjipanazole D
+chemical_structure:
+  smiles: ClC1=CC2=C(C=C1)[NH]C1=C2C=CC2=C1[NH]C1=C2C=C(Cl)C=C1
+  standard_inchi: InChI=1S/C18H10Cl2N2/c19-9-1-5-15-13(7-9)11-3-4-12-14-8-10(20)2-6-16(14)22-18(12)17(11)21-15/h1-8,21-22H
+  standard_inchi_key: NNZIVRYPHRMPQM-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002482
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA027252
+producer_organisms:
+- taxon_id: NCBITaxon:2721247
+  taxon_label: Symphyonema bifilamentata 97.28
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002482
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32182403
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002482 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002482
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2721247
+  organism_label: Symphyonema bifilamentata 97.28
+  evidence:
+  - reference: PMID:32182403
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002482 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT078730.1
+  locus_from: 1
+  locus_to: 58972
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002482
+  source_label: tjipanazole D
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-3bc0ccde6c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-d4920f88ae
+label: SapB
+chemical_structure:
+  smiles: CCC(C)C1C(=O)NC(C(=O)NC(C(=O)NC(CSCC(C(=O)NC(C(=O)NC(C(=O)NC(=C)C(=O)N1)CC(C)C)CO)NC(=O)C(CC(=O)O)NC(=O)CNC(=O)C2CSCC(C(=O)NC(C(=O)NC(C(=O)NC(=C)C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N2)CC(C)C)CC(C)C)CC(C)C)C)CCCNC(=N)N)NC(=O)CNC(=O)C(C(C)O)N)C(=O)NC(CC(=O)N)C(=O)O)C(C)O)C(C)O
+  standard_inchi: InChI=1S/C84H139N25O29S2/c1-17-38(10)62-80(134)108-64(44(16)113)82(136)109-63(43(15)112)81(135)106-56(77(131)102-51(83(137)138)25-57(85)114)33-140-32-55(78(132)103-52(29-110)75(129)101-46(21-34(2)3)70(124)94-41(13)67(121)107-62)105-74(128)50(26-60(117)118)95-58(115)27-90-68(122)53-30-139-31-54(96-59(116)28-91-79(133)61(86)42(14)111)76(130)97-45(19-18-20-89-84(87)88)69(123)93-39(11)65(119)92-40(12)66(120)98-47(22-35(4)5)71(125)99-48(23-36(6)7)72(126)100-49(24-37(8)9)73(127)104-53/h34-39,42-56,61-64,110-113H,12-13,17-33,86H2,1-11,14-16H3,(H2,85,114)(H,90,122)(H,91,133)(H,92,119)(H,93,123)(H,94,124)(H,95,115)(H,96,116)(H,97,130)(H,98,120)(H,99,125)(H,100,126)(H,101,129)(H,102,131)(H,103,132)(H,104,127)(H,105,128)(H,106,135)(H,107,121)(H,108,134)(H,109,136)(H,117,118)(H,137,138)(H4,87,88,89)
+  standard_inchi_key: BBIKPGRUAMIMIA-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000551
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000551
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:15277670
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000551 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000551
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:100226
+  organism_label: Streptomyces coelicolor A3(2)
+  evidence:
+  - reference: PMID:15277670
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000551 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AL645882.2
+  locus_from: 7419664
+  locus_to: 7426391
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000551
+  source_label: SapB
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d4920f88ae
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

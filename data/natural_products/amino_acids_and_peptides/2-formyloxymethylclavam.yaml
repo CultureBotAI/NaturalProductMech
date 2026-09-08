@@ -1,0 +1,117 @@
+identifier: naturalproductmech:mibig-0e2171938b
+label: 2-formyloxymethylclavam
+chemical_structure:
+  smiles: C1[C@H]2N(C1=O)C[C@@H](O2)COC=O
+  standard_inchi: InChI=1S/C7H9NO4/c9-4-11-3-5-2-8-6(10)1-7(8)12-5/h4-5,7H,1-3H2/t5-,7+/m1/s1
+  standard_inchi_key: CFRVNACMJWVDID-VDTYLAMSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000841
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - β-lactams
+  class_results:
+  - Clavams
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:46173888
+producer_organisms:
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus ATCC 27064
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000841
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:10681345
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000841 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus ATCC 27064
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000843
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22435762
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000843 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000841
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1901
+  organism_label: Streptomyces clavuligerus ATCC 27064
+  evidence:
+  - reference: PMID:10681345
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000841 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CM000914.1
+  locus_from: 1152119
+  locus_to: 1163141
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0000843
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1901
+  organism_label: Streptomyces clavuligerus ATCC 27064
+  evidence:
+  - reference: PMID:22435762
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000843 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CM000913.1
+  locus_from: 3437628
+  locus_to: 3461293
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000841
+  source_label: 2-formyloxymethylclavam
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0e2171938b
+- source: MIBIG
+  source_id: BGC0000843
+  source_label: 2-formyloxymethylclavam
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fc27ce937b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000841, BGC0000843.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-c1d464b7dd
+label: marformycin F
+chemical_structure:
+  smiles: '[H][C@@]12CCCNN1C(=O)[C@H](NC(=O)[C@@H](CC1=CC=C(OC)C=C1)NC(=O)[C@@H](NC(=O)[C@@H](NC=O)C(C)C)[C@@H](C)OC(=O)[C@H](C(C)C)N(C)C(=O)[C@H](CC(C)C)NC2=O)C(C)C'
+  standard_inchi: InChI=1S/C42H66N8O10/c1-22(2)19-30-40(56)49(10)35(25(7)8)42(58)60-26(9)34(48-38(54)32(23(3)4)43-21-51)39(55)45-29(20-27-14-16-28(59-11)17-15-27)36(52)47-33(24(5)6)41(57)50-31(37(53)46-30)13-12-18-44-50/h14-17,21-26,29-35,44H,12-13,18-20H2,1-11H3,(H,43,51)(H,45,55)(H,46,53)(H,47,52)(H,48,54)/t26-,29-,30+,31+,32+,33-,34+,35+/m1/s1
+  standard_inchi_key: YHBUARZUCVRARP-RTQHVXCCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001214
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA013157
+producer_organisms:
+- taxon_id: NCBITaxon:202862
+  taxon_label: Streptomyces drozdowiczii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001214
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25746634
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001214 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001214
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:202862
+  organism_label: Streptomyces drozdowiczii
+  evidence:
+  - reference: PMID:25746634
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001214 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KP715145.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001214
+  source_label: marformycin F
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c1d464b7dd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

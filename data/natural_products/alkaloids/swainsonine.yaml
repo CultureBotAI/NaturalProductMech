@@ -1,0 +1,143 @@
+identifier: naturalproductmech:mibig-b7a02ff03b
+label: swainsonine
+chemical_structure:
+  smiles: C1C[C@H]([C@@H]2[C@@H]([C@@H](CN2C1)O)O)O
+  standard_inchi: InChI=1S/C8H15NO3/c10-5-2-1-3-9-4-6(11)8(12)7(5)9/h5-8,10-12H,1-4H2/t5-,6-,7-,8-/m1/s1
+  standard_inchi_key: FXUAIOOAOAVCGD-WCTZXXKLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002270
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Lysine alkaloids
+  class_results:
+  - Indolizidine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:51683
+producer_organisms:
+- taxon_id: NCBITaxon:655844
+  taxon_label: Metarhizium robertsii ARSEF 23
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002270
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32786262
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002270 entry version 2; citation taken from the entry level
+- taxon_id: NCBITaxon:1963369
+  taxon_label: Chaetothyriaceae sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001793
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.7150/ijbs.3882
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001793 entry version 4; citation taken from the compound bioactivity
+      level
+- taxon_id: NCBITaxon:570715
+  taxon_label: Alternaria oxytropis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001794
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28381497
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001794 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002270
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:655844
+  organism_label: Metarhizium robertsii ARSEF 23
+  evidence:
+  - reference: PMID:32786262
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002270 entry version 2; citation taken from the entry level
+  genome_accession: genbank:ADNJ02000001.1
+  locus_from: 6738325
+  locus_to: 6782169
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0001793
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1963369
+  organism_label: Chaetothyriaceae sp.
+  evidence:
+  - reference: DOI:10.7150/ijbs.3882
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001793 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KY365740.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001794
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:570715
+  organism_label: Alternaria oxytropis
+  evidence:
+  - reference: PMID:28381497
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001794 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KY365741.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002270
+  source_label: swainsonine
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-b7a02ff03b
+- source: MIBIG
+  source_id: BGC0001793
+  source_label: swainsonine
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-cf41da8165
+- source: MIBIG
+  source_id: BGC0001794
+  source_label: swainsonine
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-24c2655d33
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001793, BGC0001794,
+    BGC0002270. Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

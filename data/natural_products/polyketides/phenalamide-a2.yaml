@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-de93ca824a
+label: phenalamide A2
+chemical_structure:
+  smiles: C[C@@H](CO)NC(=O)C(\C)=C\C=C\C=C\C=C\C(\C)=C\[C@@H](C)[C@@H](O)C(\C)=C\[C@@H](C)CCC1=CC=CC=C1
+  standard_inchi: InChI=1S/C32H45NO3/c1-24(15-11-8-7-9-12-16-26(3)32(36)33-29(6)23-34)21-27(4)31(35)28(5)22-25(2)19-20-30-17-13-10-14-18-30/h7-18,21-22,25,27,29,31,34-35H,19-20,23H2,1-6H3,(H,33,36)/b8-7+,12-9+,15-11+,24-21+,26-16+,28-22+/t25-,27+,29-,31+/m0/s1
+  standard_inchi_key: LCADVYTXPLBAGB-MBJKUHNJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001394
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA018050
+producer_organisms:
+- taxon_id: NCBITaxon:1278073
+  taxon_label: Myxococcus stipitatus DSM 14675
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001394
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27291672
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001394 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001394
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1278073
+  organism_label: Myxococcus stipitatus DSM 14675
+  evidence:
+  - reference: PMID:27291672
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001394 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP004025.1
+  locus_from: 5512653
+  locus_to: 5568893
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001394
+  source_label: phenalamide A2
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-de93ca824a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-1a9c7c4d3c
+label: steffimycin D
+chemical_structure:
+  smiles: COC1C(O)C(O)C(C)OC1OC1C(OC)C(C)(O)CC2=CC3=C(C(O)=C12)C(=O)C1=C(C=C(OC)C=C1O)C3=O
+  standard_inchi: InChI=1S/C28H32O12/c1-10-19(30)23(34)25(37-4)27(39-10)40-24-16-11(9-28(2,35)26(24)38-5)6-13-18(21(16)32)22(33)17-14(20(13)31)7-12(36-3)8-15(17)29/h6-8,10,19,23-27,29-30,32,34-35H,9H2,1-5H3
+  standard_inchi_key: FAXXYXLNSNAHOO-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000273
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthracyclines
+  - Anthraquinones and anthrones
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+xrefs:
+- npatlas:NPA012312
+producer_organisms:
+- taxon_id: NCBITaxon:68271
+  taxon_label: Streptomyces steffisburgensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000273
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:16751529
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000273 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000273
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68271
+  organism_label: Streptomyces steffisburgensis
+  evidence:
+  - reference: PMID:16751529
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000273 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM156932.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000273
+  source_label: steffimycin D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1a9c7c4d3c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

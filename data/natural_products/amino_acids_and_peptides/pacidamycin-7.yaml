@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-93b4043f98
+label: pacidamycin 7
+chemical_structure:
+  smiles: O[C@@H]([C@H](N1C(NC(C=C1)=O)=O)O/2)CC2=C\NC([C@@H](NC([C@H](C)NC(N[C@@H](CC3=CC=CC=C3)C(O)=O)=O)=O)[C@@H](N(C)C([C@H](CC4=CC=CC(O)=C4)NC(CN)=O)=O)C)=O
+  standard_inchi: InChI=1S/C38H47N9O12/c1-20(41-37(57)43-27(36(55)56)15-22-8-5-4-6-9-22)32(52)45-31(33(53)40-19-25-17-28(49)35(59-25)47-13-12-29(50)44-38(47)58)21(2)46(3)34(54)26(42-30(51)18-39)16-23-10-7-11-24(48)14-23/h4-14,19-21,26-28,31,35,48-49H,15-18,39H2,1-3H3,(H,40,53)(H,42,51)(H,45,52)(H,55,56)(H2,41,43,57)(H,44,50,58)/b25-19-/t20-,21-,26-,27-,28+,31-,35+/m0/s1
+  standard_inchi_key: CGWBWZILRDSQJL-WHNYZTKOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000951
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:116188
+  taxon_label: Streptomyces coeruleorubidus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000951
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20826445
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000951 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000951
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:116188
+  organism_label: Streptomyces coeruleorubidus
+  evidence:
+  - reference: PMID:20826445
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000951 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HM855229.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000951
+  source_label: pacidamycin 7
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-93b4043f98
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

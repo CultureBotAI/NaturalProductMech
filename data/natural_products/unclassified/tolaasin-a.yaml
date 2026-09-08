@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-5f0ecf1049
+label: tolaasin A
+chemical_structure:
+  smiles: CCC(C)C1NC(=O)C(NC(=O)C(\NC(=O)C(NC(=O)C(CC(C)C)NC(=O)C(CCC(N)=O)NC(=O)C(NC(=O)C(NC(=O)C(CC(C)C)NC(=O)C(CO)NC(=O)C(NC(=O)C(CC(C)C)NC(=O)C(CO)NC(=O)C2CCCN2C(=O)C(\NC(=O)CCCC(O)=O)=C\C)C(C)C)C(C)C)C(C)C)C(C)C)=C\C)C(C)OC(=O)C(CCCCN)NC(=O)C(CCN)NC(=O)C(CCO)NC1=O
+  standard_inchi: InChI=1S/C91H155N21O26/c1-20-51(18)72-88(134)99-57(34-38-113)77(123)97-56(33-36-93)76(122)100-58(27-23-24-35-92)91(137)138-52(19)73(89(135)110-72)111-74(120)53(21-2)96-84(130)68(47(10)11)106-78(124)59(39-44(4)5)101-75(121)55(31-32-65(94)116)98-85(131)70(49(14)15)109-87(133)71(50(16)17)108-80(126)61(41-46(8)9)103-82(128)63(43-115)105-86(132)69(48(12)13)107-79(125)60(40-45(6)7)102-81(127)62(42-114)104-83(129)64-28-26-37-112(64)90(136)54(22-3)95-66(117)29-25-30-67(118)119/h21-22,44-52,55-64,68-73,113-115H,20,23-43,92-93H2,1-19H3,(H2,94,116)(H,95,117)(H,96,130)(H,97,123)(H,98,131)(H,99,134)(H,100,122)(H,101,121)(H,102,127)(H,103,128)(H,104,129)(H,105,132)(H,106,124)(H,107,125)(H,108,126)(H,109,133)(H,110,135)(H,111,120)(H,118,119)/b53-21-,54-22-
+  standard_inchi_key: FLJZFCSEBDJGSB-QKYGQZSFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001806
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA04692
+producer_organisms:
+- taxon_id: NCBITaxon:29442
+  taxon_label: Pseudomonas tolaasii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001806
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24222604
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001806 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001806
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:29442
+  organism_label: Pseudomonas tolaasii
+  evidence:
+  - reference: PMID:24222604
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001806 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX432141.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001806
+  source_label: tolaasin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-5f0ecf1049
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

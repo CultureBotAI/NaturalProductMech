@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-5c6c586532
+label: histicorrugatin
+chemical_structure:
+  smiles: CCCCCCCC(N[C@@H]([C@H](O)C1=CNC=N1)C(N[C@@H](CCN)C(N[C@@H](CCCN)C(N[C@@H](CO)C(N[C@@H](CO)C(N[C@@H]([C@H](O)C(O)=O)C(N[C@@H](CCN)C(N[C@@H]([C@H](O)C2=CNC=N2)C(O)=O)=O)=O)=O)=O)=O)=O)=O)=O
+  standard_inchi: InChI=1S/C43H71N15O17/c1-2-3-4-5-6-9-28(61)56-29(32(62)24-15-47-19-49-24)40(70)52-22(10-13-45)36(66)51-21(8-7-12-44)35(65)54-26(17-59)38(68)55-27(18-60)39(69)57-30(34(64)43(74)75)41(71)53-23(11-14-46)37(67)58-31(42(72)73)33(63)25-16-48-20-50-25/h15-16,19-23,26-27,29-34,59-60,62-64H,2-14,17-18,44-46H2,1H3,(H,47,49)(H,48,50)(H,51,66)(H,52,70)(H,53,71)(H,54,65)(H,55,68)(H,56,61)(H,57,69)(H,58,67)(H,72,73)(H,74,75)/t21-,22-,23-,26-,27-,29-,30-,31-,32+,33+,34-/m0/s1
+  standard_inchi_key: SZKPGWBSMRUPAV-QFUOKIFISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002422
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Linear
+- Lipopeptide
+producer_organisms:
+- taxon_id: NCBITaxon:86265
+  taxon_label: Pseudomonas thivervalensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002422
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27007713
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002422 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002422
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:86265
+  organism_label: Pseudomonas thivervalensis
+  evidence:
+  - reference: PMID:27007713
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002422 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LT629691.1
+  locus_from: 1634212
+  locus_to: 1678052
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002422
+  source_label: histicorrugatin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-5c6c586532
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

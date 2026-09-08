@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-d7ebe522b7
+label: ravidomycin
+chemical_structure:
+  smiles: C[C@@H]1[C@@H]([C@@H]([C@H](C(O1)C2=C3C(=C(C=C2)O)C(=CC4=C3OC(=O)C5=CC(=CC(=C54)OC)C=C)OC)O)N(C)C)OC(=O)C
+  standard_inchi: InChI=1S/C31H33NO9/c1-8-16-11-19-23(21(12-16)37-6)18-13-22(38-7)25-20(34)10-9-17(24(25)29(18)41-31(19)36)30-27(35)26(32(4)5)28(14(2)39-30)40-15(3)33/h8-14,26-28,30,34-35H,1H2,2-7H3/t14-,26-,27-,28+,30?/m1/s1
+  standard_inchi_key: GHLIFBNIGXVDHM-VQXSZRIGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000263
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:126647
+producer_organisms:
+- taxon_id: NCBITaxon:691266
+  taxon_label: Streptomyces ravidus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000263
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20140934
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000263 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000263
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:691266
+  organism_label: Streptomyces ravidus
+  evidence:
+  - reference: PMID:20140934
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000263 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FN565485.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000263
+  source_label: ravidomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d7ebe522b7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

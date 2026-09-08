@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-dd90607021
+label: kojic acid
+chemical_structure:
+  smiles: O=C1C=C(CO)OC=C1O
+  standard_inchi: InChI=1S/C6H6O4/c7-2-4-1-5(8)6(9)3-10-4/h1,3,7,9H,2H2
+  standard_inchi_key: BEJNERDRQOWKJM-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002195
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 4-pyrone derivatives
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:3840
+- npatlas:NPA028615
+producer_organisms:
+- taxon_id: NCBITaxon:510516
+  taxon_label: Aspergillus oryzae RIB40
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002195
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.2174/1871520618666180402141714
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002195 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002195
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:510516
+  organism_label: Aspergillus oryzae RIB40
+  evidence:
+  - reference: DOI:10.2174/1871520618666180402141714
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002195 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:BA000053.1
+  locus_from: 4368535
+  locus_to: 4374670
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002195
+  source_label: kojic acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-dd90607021
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,105 @@
+identifier: naturalproductmech:mibig-af79f8ac64
+label: borrelidin
+chemical_structure:
+  smiles: '[H][C@]1(CCC[C@H]1C(O)=O)[C@]1([H])C\C=C\C=C(C#N)/[C@H](O)[C@@H](C)C[C@H](C)C[C@H](C)C[C@H](C)[C@@H](O)CC(=O)O1'
+  standard_inchi: InChI=1S/C28H43NO6/c1-17-12-18(2)14-20(4)27(32)21(16-29)8-5-6-11-25(22-9-7-10-23(22)28(33)34)35-26(31)15-24(30)19(3)13-17/h5-6,8,17-20,22-25,27,30,32H,7,9-15H2,1-4H3,(H,33,34)/b6-5+,21-8-/t17-,18+,19-,20-,22+,23+,24-,25-,27+/m0/s1
+  standard_inchi_key: OJCKRNPLOZHAOU-UGKRXNSESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000031
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Erythromycins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA011087
+producer_organisms:
+- taxon_id: NCBITaxon:146923
+  taxon_label: Streptomyces parvulus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000031
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15112998
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000031 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1928
+  taxon_label: Streptomyces rochei
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001533
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27451447
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001533 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000031
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:146923
+  organism_label: Streptomyces parvulus
+  evidence:
+  - reference: PMID:15112998
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000031 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ580915.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0001533
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1928
+  organism_label: Streptomyces rochei
+  evidence:
+  - reference: PMID:27451447
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001533 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KT362046.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000031
+  source_label: borrelidin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-af79f8ac64
+- source: MIBIG
+  source_id: BGC0001533
+  source_label: borrelidin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-02e1253062
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000031, BGC0001533.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

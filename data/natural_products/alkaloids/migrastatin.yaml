@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-4ea6daa815
+label: migrastatin
+chemical_structure:
+  smiles: COC1\C=C\CC\C=C\C(=O)OC(C(C)C(=O)CCCC2CC(=O)NC(=O)C2)\C(C)=C/C(C)C1O
+  standard_inchi: InChI=1S/C27H39NO7/c1-17-14-18(2)27(35-25(32)13-8-6-5-7-12-22(34-4)26(17)33)19(3)21(29)11-9-10-20-15-23(30)28-24(31)16-20/h7-8,12-14,17,19-20,22,26-27,33H,5-6,9-11,15-16H2,1-4H3,(H,28,30,31)/b12-7+,13-8+,18-14-
+  standard_inchi_key: OGYMUMAKGYYNHV-DGAGQXFWSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000177
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Lysine alkaloids
+  class_results:
+  - Piperidine alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA06168
+- pubchem:11016431
+producer_organisms:
+- taxon_id: NCBITaxon:684832
+  taxon_label: Streptomyces platensis subsp. rosaceus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000177
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:19726666
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000177 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000177
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:684832
+  organism_label: Streptomyces platensis subsp. rosaceus
+  evidence:
+  - reference: PMID:19726666
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000177 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GQ274953.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000177
+  source_label: migrastatin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4ea6daa815
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

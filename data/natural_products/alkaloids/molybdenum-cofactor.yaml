@@ -1,0 +1,103 @@
+identifier: naturalproductmech:mibig-e4de8e1a3c
+label: molybdenum cofactor
+chemical_structure:
+  smiles: C(C1C(=C(C2C(O1)NC3=C(N2)C(=O)N=C(N3)N)[S-])[S-])OP(=O)([O-])[O-].O=[Mo+2]=O
+  standard_inchi: InChI=1S/C10H14N5O6PS2.Mo.2O/c11-10-14-7-4(8(16)15-10)12-3-6(24)5(23)2(21-9(3)13-7)1-20-22(17,18)19;;;/h2-3,9,12,23-24H,1H2,(H2,17,18,19)(H4,11,13,14,15,16);;;/q;+2;;/p-4
+  standard_inchi_key: HDAJUGGARUFROU-UHFFFAOYSA-J
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000916
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Pseudoalkaloids
+  class_results:
+  - pteridine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:25202532
+producer_organisms:
+- taxon_id: NCBITaxon:1281
+  taxon_label: Staphylococcus carnosus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000916
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:9675851
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000916 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1061
+  taxon_label: Rhodobacter capsulatus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000917
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:10411269
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000917 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000916
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1281
+  organism_label: Staphylococcus carnosus
+  evidence:
+  - reference: PMID:9675851
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000916 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF109295.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000917
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1061
+  organism_label: Rhodobacter capsulatus
+  evidence:
+  - reference: PMID:10411269
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000917 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AF128444.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000916
+  source_label: molybdenum cofactor
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e4de8e1a3c
+- source: MIBIG
+  source_id: BGC0000917
+  source_label: molybdenum cofactor
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7047f573da
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000916, BGC0000917.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-65d1a3fd2e
+label: deoxysporothric acid
+chemical_structure:
+  smiles: CCCCCC[C@@H]1C[C@@H](C(=O)O1)C(=C)C(=O)O
+  standard_inchi: InChI=1S/C13H20O4/c1-3-4-5-6-7-10-8-11(13(16)17-10)9(2)12(14)15/h10-11H,2-8H2,1H3,(H,14,15)/t10-,11-/m1/s1
+  standard_inchi_key: RHVCCGGUZCFSLF-GHMZBOCLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002262
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:139589830
+producer_organisms:
+- taxon_id: NCBITaxon:2487000
+  taxon_label: Hypomontagnella monticulosa
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002262
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:34123230
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002262 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002262
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2487000
+  organism_label: Hypomontagnella monticulosa
+  evidence:
+  - reference: PMID:34123230
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002262 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT889334.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002262
+  source_label: deoxysporothric acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-65d1a3fd2e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

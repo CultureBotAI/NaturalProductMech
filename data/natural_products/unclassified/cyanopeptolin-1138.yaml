@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-ce5962287c
+label: cyanopeptolin 1138
+chemical_structure:
+  smiles: CCC(C)C1C(=O)OC(C(C(=O)NC(C(=O)NC2CCC(N(C2=O)C(C(=O)N(C(C(=O)N1)CC3=CC=CC=C3)C)C(C)CC)O)CCC4=CC=C(C=C4)O)NC(=O)C(CCC5=CC=C(C=C5)O)NC(=O)C(COS(=O)(=O)O)OC)C
+  standard_inchi: InChI=1S/C55H75N7O17S/c1-8-31(3)45-55(73)79-33(5)46(60-49(67)40(26-20-35-17-23-38(64)24-18-35)56-51(69)43(77-7)30-78-80(74,75)76)52(70)57-39(25-19-34-15-21-37(63)22-16-34)48(66)58-41-27-28-44(65)62(53(41)71)47(32(4)9-2)54(72)61(6)42(50(68)59-45)29-36-13-11-10-12-14-36/h10-18,21-24,31-33,39-47,63-65H,8-9,19-20,25-30H2,1-7H3,(H,56,69)(H,57,70)(H,58,66)(H,59,68)(H,60,67)(H,74,75,76)
+  standard_inchi_key: IPSPUQFSLMOERD-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000331
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Ahp-containing cyclodepsipeptides
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Peptide alkaloid
+xrefs:
+- pubchem:85238480
+- npatlas:NPA027404
+- cyanometdb:CyanoMetDB_0408
+producer_organisms:
+- taxon_id: NCBITaxon:329558
+  taxon_label: Planktothrix agardhii NIVA-CYA 116
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000331
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17921284
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000331 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000331
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:329558
+  organism_label: Planktothrix agardhii NIVA-CYA 116
+  evidence:
+  - reference: PMID:17921284
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000331 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:DQ837301.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000331
+  source_label: cyanopeptolin 1138
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-ce5962287c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-08ec55c449
+label: izumiphenazine C
+chemical_structure:
+  smiles: CN(C1=CC=C(C=C1)C(=O)O)C2=CC=CC3=C2N=C4C=CC=C(C4=N3)O
+  standard_inchi: InChI=1S/C20H15N3O3/c1-23(13-10-8-12(9-11-13)20(25)26)16-6-2-4-14-18(16)21-15-5-3-7-17(24)19(15)22-14/h2-11,24H,1H3,(H,25,26)
+  standard_inchi_key: REOKRAKOSOITAV-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002439
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Phenazine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA014841
+- pubchem:136054934
+producer_organisms:
+- taxon_id: NCBITaxon:1956
+  taxon_label: Streptomyces diastaticus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002439
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:34487423
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002439 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002439
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1956
+  organism_label: Streptomyces diastaticus
+  evidence:
+  - reference: PMID:34487423
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002439 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MK685983.1
+  locus_from: 1
+  locus_to: 24052
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002439
+  source_label: izumiphenazine C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-08ec55c449
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

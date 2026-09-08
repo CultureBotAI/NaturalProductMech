@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-fddd330e1e
+label: rakicidin A
+chemical_structure:
+  smiles: CC(C)CCCCCCCCCCCC(C)C1OC(=O)C(NC(=O)CN(C)C(=O)\C=C/C(=C)NC(=O)C1C)C(O)C(N)=O
+  standard_inchi: InChI=1S/C32H54N4O7/c1-21(2)16-14-12-10-8-7-9-11-13-15-17-22(3)29-24(5)31(41)34-23(4)18-19-26(38)36(6)20-25(37)35-27(32(42)43-29)28(39)30(33)40/h18-19,21-22,24,27-29,39H,4,7-17,20H2,1-3,5-6H3,(H2,33,40)(H,34,41)(H,35,37)/b19-18-
+  standard_inchi_key: NODOLTRBPIFGCQ-HNENSFHCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001327
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA019491
+producer_organisms:
+- taxon_id: NCBITaxon:47872
+  taxon_label: Micromonospora purpureochromogenes
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001327
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26637117
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001327 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001327
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:47872
+  organism_label: Micromonospora purpureochromogenes
+  evidence:
+  - reference: PMID:26637117
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001327 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_JOEU01000001.1
+  locus_from: 164252
+  locus_to: 202669
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001327
+  source_label: rakicidin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fddd330e1e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

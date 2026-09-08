@@ -1,0 +1,81 @@
+identifier: naturalproductmech:mibig-a2d0f9972a
+label: actinorhodin
+chemical_structure:
+  smiles: C[C@@H]1C2=C(C3=C(C(=O)C=C(C3=O)C4=CC(=O)C5=C(C4=O)C(=C6[C@H](O[C@@H](CC6=C5O)CC(=O)O)C)O)C(=C2C[C@H](O1)CC(=O)O)O)O
+  standard_inchi: InChI=1S/C32H26O14/c1-9-21-15(3-11(45-9)5-19(35)36)29(41)23-17(33)7-13(27(39)25(23)31(21)43)14-8-18(34)24-26(28(14)40)32(44)22-10(2)46-12(6-20(37)38)4-16(22)30(24)42/h7-12,41-44H,3-6H2,1-2H3,(H,35,36)(H,37,38)/t9-,10-,11+,12+/m1/s1
+  standard_inchi_key: FXTIILIJTTYSLT-WYUUTHIRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000194
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Naphthalenes
+  class_results:
+  - Bisnaphthalenes
+  - Naphthoquinones
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Polycyclic polyketide
+xrefs:
+- chebi:2448
+- pubchem:5280985
+producer_organisms:
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000194
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
+    expression correlated with compound production. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1002/ange.201814172
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000194 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000194
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:100226
+  organism_label: Streptomyces coelicolor A3(2)
+  evidence:
+  - reference: DOI:10.1002/ange.201814172
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000194 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AL645882.2
+  locus_from: 5513809
+  locus_to: 5535091
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000194
+  source_label: actinorhodin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a2d0f9972a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

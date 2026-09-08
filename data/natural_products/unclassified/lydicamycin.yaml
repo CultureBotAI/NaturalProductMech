@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-a0453972fa
+label: lydicamycin
+chemical_structure:
+  smiles: CC1=CC2C(CCC(C2O)O)C(C1CCC(C)C(/C(=C/CC(/C=C/C(C)C(/C=C/CC(/C(=C/CC(CC3CCCN3C(=N)N)O)/C)O)O)O)/C)O)(C)/C(=C\4/C(=O)CNC4=O)/O
+  standard_inchi: InChI=1S/C47H74N4O10/c1-26(37(54)10-7-11-38(55)27(2)13-18-33(53)24-31-9-8-22-51(31)46(48)49)12-16-32(52)17-14-28(3)42(58)29(4)15-19-35-30(5)23-34-36(20-21-39(56)43(34)59)47(35,6)44(60)41-40(57)25-50-45(41)61/h7,10,12-14,16,23,26,29,31-39,42-43,52-56,58-60H,8-9,11,15,17-22,24-25H2,1-6H3,(H3,48,49)(H,50,61)/b10-7+,16-12+,27-13+,28-14+,44-41+
+  standard_inchi_key: HNSRCWWMQWCNGW-YCUXMAJDSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001477
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 3-Decalinoyltetramic acids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:90469739
+producer_organisms:
+- taxon_id: NCBITaxon:1265399
+  taxon_label: Streptomyces sp. ID38640
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001477
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2018.02.008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001477 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001477
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1265399
+  organism_label: Streptomyces sp. ID38640
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2018.02.008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001477 entry version 5; citation taken from the entry level
+  genome_accession: genbank:MG459168.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001477
+  source_label: lydicamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a0453972fa
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

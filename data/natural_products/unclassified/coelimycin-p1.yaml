@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-5c75ae209a
+label: coelimycin P1
+chemical_structure:
+  smiles: C/C=C/C(=O)/C/1=C/C(=C\2/C=CCCN2)/SC[CH](C(=O)O1)NC(=O)C
+  standard_inchi: InChI=1S/C17H20N2O4S/c1-3-6-14(21)15-9-16(12-7-4-5-8-18-12)24-10-13(17(22)23-15)19-11(2)20/h3-4,6-7,9,13,18H,5,8,10H2,1-2H3,(H,19,20)/b6-3+,15-9-,16-12+
+  standard_inchi_key: RHGMVWUZXGSXCT-HXNNLKDLSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000038
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000038
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1039/c2sc20410j
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000038 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000038
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:100226
+  organism_label: Streptomyces coelicolor A3(2)
+  evidence:
+  - reference: DOI:10.1039/c2sc20410j
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000038 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AL645882.2
+  locus_from: 6890528
+  locus_to: 6948414
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000038
+  source_label: coelimycin P1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5c75ae209a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

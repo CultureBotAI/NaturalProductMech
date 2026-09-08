@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-f80786c59b
+label: megapolibactin E
+chemical_structure:
+  smiles: CCCCCCCCC[C@@H](O)CC(=O)NCC(=O)N[C@@H](C(=O)N[C@@H](CO)C(=O)N[C@@H](C(=O)N[C@H](CCCN(O)N=O)C(=O)N[C@@H](CO)C(=O)N[C@H](CCCN(O)N=O)C(=O)O)[C@@H](C)O)[C@@H](O)C(=O)O
+  standard_inchi: InChI=1S/C38H67N11O20/c1-3-4-5-6-7-8-9-12-22(53)17-27(54)39-18-28(55)44-30(31(56)38(64)65)36(61)43-26(20-51)34(59)45-29(21(2)52)35(60)40-23(13-10-15-48(68)46-66)32(57)42-25(19-50)33(58)41-24(37(62)63)14-11-16-49(69)47-67/h21-26,29-31,50-53,56,68-69H,3-20H2,1-2H3,(H,39,54)(H,40,60)(H,41,58)(H,42,57)(H,43,61)(H,44,55)(H,45,59)(H,62,63)(H,64,65)/t21-,22-,23-,24-,25+,26+,29-,30-,31-/m1/s1
+  standard_inchi_key: WCZJBTAFPATOQP-SOOMBEQHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002564
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA025687
+producer_organisms:
+- taxon_id: NCBITaxon:420953
+  taxon_label: Paraburkholderia megapolitana
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002564
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31276269
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002564 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002564
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:420953
+  organism_label: Paraburkholderia megapolitana
+  evidence:
+  - reference: PMID:31276269
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002564 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP041745.1
+  locus_from: 901250
+  locus_to: 941056
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002564
+  source_label: megapolibactin E
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f80786c59b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-f7e02cf0c0
+label: odilorhabdin NOSO-95B
+chemical_structure:
+  smiles: C1C[C@H](N(C1)C(=O)[C@@H](CCCN)NC(=O)CNC(=O)[C@H]([C@H](CN)O)NC(=O)[C@H]([C@H](CN)O)NC(=O)[C@H](CCCCN)N)C(=O)N[C@@H](CC2=CN=CN2)C(=O)N[C@@H](CC[C@@H](CN)O)C(=O)N/C(=C\CCN=C(N)N)/C(=O)N[C@@H](CCCCN)C(=O)NCCCCN
+  standard_inchi: InChI=1S/C54H101N23O13/c55-17-3-1-10-33(62)45(82)75-44(41(80)27-61)52(89)76-43(40(79)26-60)51(88)68-29-42(81)70-37(12-7-20-58)53(90)77-23-9-14-39(77)50(87)74-38(24-31-28-65-30-69-31)49(86)73-36(16-15-32(78)25-59)48(85)72-35(13-8-22-67-54(63)64)47(84)71-34(11-2-4-18-56)46(83)66-21-6-5-19-57/h13,28,30,32-34,36-41,43-44,78-80H,1-12,14-27,29,55-62H2,(H,65,69)(H,66,83)(H,68,88)(H,70,81)(H,71,84)(H,72,85)(H,73,86)(H,74,87)(H,75,82)(H,76,89)(H4,63,64,67)/b35-13-/t32-,33-,34-,36-,37+,38-,39-,40-,41-,43-,44-/m0/s1
+  standard_inchi_key: UYHIETONVGCMMA-CCUWYPMBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001716
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Polyamines
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:146684504
+producer_organisms:
+- taxon_id: NCBITaxon:1437823
+  taxon_label: Xenorhabdus nematophila AN6/1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001716
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29625040
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001716 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001716
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1437823
+  organism_label: Xenorhabdus nematophila AN6/1
+  evidence:
+  - reference: PMID:29625040
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001716 entry version 4; citation taken from the entry level
+  genome_accession: genbank:LN681227.1
+  locus_from: 2379690
+  locus_to: 2423130
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001716
+  source_label: odilorhabdin NOSO-95B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-f7e02cf0c0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

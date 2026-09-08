@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-c5ddcdb09e
+label: shinorine
+chemical_structure:
+  smiles: O[C@](CC(NCC(O)=O)=C/1OC)(CO)CC1=N/[C@@H](CO)C(O)=O
+  standard_inchi: InChI=1S/C13H20N2O8/c1-23-11-7(14-4-10(18)19)2-13(22,6-17)3-8(11)15-9(5-16)12(20)21/h9,14,16-17,22H,2-6H2,1H3,(H,18,19)(H,20,21)/b15-8+/t9-,13-/m0/s1
+  standard_inchi_key: WXEQFJUHQIGKNG-MZNRBSSJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000427
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Mycosporine derivatives
+  class_results:
+  - Mycosporine and Mycosporine-like amino acids
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:240292
+  taxon_label: Trichormus variabilis ATCC 29413
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000427
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:20813918
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000427 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000427
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:240292
+  organism_label: Trichormus variabilis ATCC 29413
+  evidence:
+  - reference: PMID:20813918
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000427 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000117.1
+  locus_from: 4798900
+  locus_to: 4805360
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000427
+  source_label: shinorine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c5ddcdb09e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

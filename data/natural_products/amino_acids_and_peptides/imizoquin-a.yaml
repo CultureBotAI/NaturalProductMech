@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-cced40781c
+label: imizoquin A
+chemical_structure:
+  smiles: CC(C[C@@H](C(=O)O)NC(=O)C1CC2=C([C@@H]3N1C(=O)[C@@H](N3)CC4=CNC5=CC=CC=C54)C(=O)C(=C(C2=O)O)OC)CO
+  standard_inchi: InChI=1S/C28H30N4O9/c1-12(11-33)7-18(28(39)40)31-26(37)19-9-15-20(22(35)24(41-2)23(36)21(15)34)25-30-17(27(38)32(19)25)8-13-10-29-16-6-4-3-5-14(13)16/h3-6,10,12,17-19,25,29-30,33,36H,7-9,11H2,1-2H3,(H,31,37)(H,39,40)/t12?,17-,18-,19?,25-/m0/s1
+  standard_inchi_key: VBZJPJIHROQJKY-RVEUGTSSSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001621
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:146684532
+producer_organisms:
+- taxon_id: NCBITaxon:332952
+  taxon_label: Aspergillus flavus NRRL3357
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001621
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29182847
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001621 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001621
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:332952
+  organism_label: Aspergillus flavus NRRL3357
+  evidence:
+  - reference: PMID:29182847
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001621 entry version 4; citation taken from the entry level
+  genome_accession: genbank:NW_002477244.1
+  locus_from: 25905
+  locus_to: 53073
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001621
+  source_label: imizoquin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-cced40781c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

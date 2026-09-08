@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-1f3ed39fc1
+label: woodybactin A
+chemical_structure:
+  smiles: CCCCCCCC(=O)N(O)CCCC[C@H](NC(=O)CC(O)(CC(=O)O)C(=O)O)C(=O)O
+  standard_inchi: InChI=1S/C20H34N2O10/c1-2-3-4-5-6-10-16(24)22(32)11-8-7-9-14(18(27)28)21-15(23)12-20(31,19(29)30)13-17(25)26/h14,31-32H,2-13H2,1H3,(H,21,23)(H,25,26)(H,27,28)(H,29,30)/t14-,20?/m0/s1
+  standard_inchi_key: DHUKDCFKLDMWTQ-PVCZSOGJSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002469
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA031062
+producer_organisms:
+- taxon_id: NCBITaxon:392500
+  taxon_label: Shewanella woodyi ATCC 51908
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002469
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31203087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002469 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002469
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:392500
+  organism_label: Shewanella woodyi ATCC 51908
+  evidence:
+  - reference: PMID:31203087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002469 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP000961.1
+  locus_from: 825672
+  locus_to: 832044
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002469
+  source_label: woodybactin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-1f3ed39fc1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

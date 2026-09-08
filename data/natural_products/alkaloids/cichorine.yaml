@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-b47bf680d6
+label: cichorine
+chemical_structure:
+  smiles: CC1=C(C=C2C(=C1OC)CNC2=O)O
+  standard_inchi: InChI=1S/C10H11NO3/c1-5-8(12)3-6-7(9(5)14-2)4-11-10(6)13/h3,12H,4H2,1-2H3,(H,11,13)
+  standard_inchi_key: ICZVDXDXJQCDOJ-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000037
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Pseudoalkaloids
+  class_results:
+  - Isoindole alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:442849
+producer_organisms:
+- taxon_id: NCBITaxon:227321
+  taxon_label: Aspergillus nidulans FGSC A4
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000037
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22510154
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000037 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000037
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:227321
+  organism_label: Aspergillus nidulans FGSC A4
+  evidence:
+  - reference: PMID:22510154
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000037 entry version 4; citation taken from the entry level
+  genome_accession: genbank:BN001301.1
+  locus_from: 139085
+  locus_to: 146905
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000037
+  source_label: cichorine
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-b47bf680d6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

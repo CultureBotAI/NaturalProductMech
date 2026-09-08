@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-ae9aac4973
+label: xenematide
+chemical_structure:
+  smiles: C[C@H]1OC(=O)CCNC(=O)C(CC2=CNC3=C2C=CC=C3)NC(=O)C(CC2=CNC3=C2C=CC=C3)NC(=O)[C@H]1NC(=O)CC1=CC=CC=C1
+  standard_inchi: InChI=1S/C37H38N6O6/c1-22-34(43-32(44)17-23-9-3-2-4-10-23)37(48)42-31(19-25-21-40-29-14-8-6-12-27(25)29)36(47)41-30(35(46)38-16-15-33(45)49-22)18-24-20-39-28-13-7-5-11-26(24)28/h2-14,20-22,30-31,34,39-40H,15-19H2,1H3,(H,38,46)(H,41,47)(H,42,48)(H,43,44)/t22-,30?,31?,34+/m1/s1
+  standard_inchi_key: OHLKJNUNPSYJEE-RWBJUYEISA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001825
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  - Peptide alkaloids
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Indole diketopiperazine alkaloids (L-Trp, L-Trp)
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA019233
+producer_organisms:
+- taxon_id: NCBITaxon:1437823
+  taxon_label: Xenorhabdus nematophila AN6/1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001825
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28993611
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001825 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001825
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1437823
+  organism_label: Xenorhabdus nematophila AN6/1
+  evidence:
+  - reference: PMID:28993611
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001825 entry version 4; citation taken from the entry level
+  genome_accession: genbank:LN681227.1
+  locus_from: 2673982
+  locus_to: 2688831
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001825
+  source_label: xenematide
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-ae9aac4973
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

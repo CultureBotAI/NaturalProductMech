@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-f3cb15d2b6
+label: cyslabdan A
+chemical_structure:
+  smiles: C/C(=C\C[C@@H]1[C@]2(CCCC([C@@H]2C[C@@H]([C@@]1(CSC[C@@H](C(=O)O)NC(=O)C)O)O)(C)C)C)/C=C
+  standard_inchi: InChI=1S/C25H41NO5S/c1-7-16(2)9-10-19-24(6)12-8-11-23(4,5)20(24)13-21(28)25(19,31)15-32-14-18(22(29)30)26-17(3)27/h7,9,18-21,28,31H,1,8,10-15H2,2-6H3,(H,26,27)(H,29,30)/b16-9+/t18-,19+,20-,21-,24+,25-/m0/s1
+  standard_inchi_key: PSUMRJNLBIVEFF-RIVHMUOTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001910
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Labdane diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+compound_classes:
+- Diterpenoid
+xrefs:
+- pubchem:24778014
+producer_organisms:
+- taxon_id: NCBITaxon:1470456
+  taxon_label: Streptomyces cyslabdanicus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001910
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1007/s10295-015-1694-6
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001910 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001910
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1470456
+  organism_label: Streptomyces cyslabdanicus
+  evidence:
+  - reference: DOI:10.1007/s10295-015-1694-6
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001910 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:LC064028.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001910
+  source_label: cyslabdan A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-f3cb15d2b6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

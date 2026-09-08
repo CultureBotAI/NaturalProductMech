@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-0b5d40140f
+label: subtilosin A
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H](C(=O)N[C@@H](C)C(=O)NCC(=O)N[C@@H](C)C(=O)NCC(=O)O)NC(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)[C@@H]1CCCN1C(=O)[C@H]([C@@H](C)CC)NC(=O)[C@@H]2CCCN2C(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)[C@H](C(C)C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CS)NC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)CNC(=O)[C@H]([C@@H](C)CC)NC(=O)[C@H](CO)NC(=O)[C@H](CS)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](C)NC(=O)[C@H](CS)NC(=O)CNC(=O)[C@H](CCCCN)NC(=O)[C@H](CC(=O)N)NC(=O)CNC(=O)[C@H](CC3=CNC4=CC=CC=C43)NC(=O)[C@H](CC(C)C)NC(=O)CNC(=O)[C@H](CC(C)C)NC(=O)CN
+  standard_inchi: InChI=1S/C129H208N36O41S3/c1-21-63(12)102(161-119(196)83(55-166)156-122(199)86(58-209)158-128(205)105(71(20)167)163-110(187)70(19)145-120(197)84(56-207)150-95(174)51-135-111(188)75(32-26-27-35-130)151-117(194)80(42-89(132)168)149-94(173)50-137-113(190)79(41-72-46-133-74-31-25-24-30-73(72)74)153-116(193)77(39-60(6)7)148-93(172)49-136-112(189)76(38-59(4)5)147-90(169)45-131)125(202)139-48-92(171)143-68(17)108(185)144-69(18)109(186)157-85(57-208)121(198)152-78(40-61(8)9)118(195)160-101(62(10)11)126(203)155-82(44-99(179)180)115(192)140-53-97(176)164-36-28-33-87(164)124(201)162-104(65(14)23-3)129(206)165-37-29-34-88(165)123(200)154-81(43-98(177)178)114(191)138-52-96(175)159-103(64(13)22-2)127(204)146-67(16)107(184)134-47-91(170)142-66(15)106(183)141-54-100(181)182/h24-25,30-31,46,59-71,75-88,101-105,133,166-167,207-209H,21-23,26-29,32-45,47-58,130-131H2,1-20H3,(H2,132,168)(H,134,184)(H,135,188)(H,136,189)(H,137,190)(H,138,191)(H,139,202)(H,140,192)(H,141,183)(H,142,170)(H,143,171)(H,144,185)(H,145,197)(H,146,204)(H,147,169)(H,148,172)(H,149,173)(H,150,174)(H,151,194)(H,152,198)(H,153,193)(H,154,200)(H,155,203)(H,156,199)(H,157,186)(H,158,205)(H,159,175)(H,160,195)(H,161,196)(H,162,201)(H,163,187)(H,177,178)(H,179,180)(H,181,182)/t63-,64-,65-,66-,67-,68-,69-,70-,71+,75-,76-,77-,78-,79-,80-,81-,82-,83-,84-,85-,86-,87-,88-,101-,102-,103-,104-,105-/m0/s1
+  standard_inchi_key: NRQODXJXWWUXFE-LYQFAKRDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000602
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:16132390
+producer_organisms:
+- taxon_id: NCBITaxon:703612
+  taxon_label: Bacillus subtilis subsp. spizizenii ATCC 6633
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000602
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15066831
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000602 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000602
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:703612
+  organism_label: Bacillus subtilis subsp. spizizenii ATCC 6633
+  evidence:
+  - reference: PMID:15066831
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000602 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ430547.1
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000602
+  source_label: subtilosin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0b5d40140f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

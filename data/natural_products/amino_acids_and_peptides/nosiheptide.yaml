@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-5c11c9377b
+label: nosiheptide
+chemical_structure:
+  smiles: C/C=C\1/C2=NC(=CS2)C(=O)NC3CC(C(=O)OCC4=C5C(=C(C(=O)SCC(C6=NC(=CS6)C7=N/C(=C\8/NC(=CS8)C(=O)NC(=C)C(=O)N)/C(=O)C=C7C9=NC(=CS9)C(=O)NC(C(=O)N1)C(C)O)NC(=O)C1=CSC3=N1)NC5=CC=C4)C)O
+  standard_inchi: InChI=1S/C51H43N13O12S6/c1-5-23-46-60-28(14-79-46)41(70)56-25-10-33(67)50(74)76-11-21-7-6-8-24-34(21)18(2)35(54-24)51(75)82-17-31(57-42(71)29-15-80-47(25)61-29)48-58-26(12-78-48)37-22(45-59-30(13-77-45)43(72)64-36(20(4)65)44(73)55-23)9-32(66)38(63-37)49-62-27(16-81-49)40(69)53-19(3)39(52)68/h5-9,12-16,20,25,31,33,36,54,62,65,67H,3,10-11,17H2,1-2,4H3,(H2,52,68)(H,53,69)(H,55,73)(H,56,70)(H,57,71)(H,64,72)/b23-5-,49-38-
+  standard_inchi_key: MQWDKYHFGBWGQZ-FUYXLQTNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001707
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001707
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: url:https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=201702255913252861&rel=0
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001707 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001707
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: url:https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=201702255913252861&rel=0
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001707 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KX173290.1
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001707
+  source_label: nosiheptide
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5c11c9377b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

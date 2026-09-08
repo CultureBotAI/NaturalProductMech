@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-d67af7736c
+label: pyrrolomycin C
+chemical_structure:
+  smiles: OC1=C(C=C(Cl)C=C1Cl)C(=O)C1=CC(Cl)=C(Cl)N1
+  standard_inchi: InChI=1S/C11H5Cl4NO2/c12-4-1-5(9(17)6(13)2-4)10(18)8-3-7(14)11(15)16-8/h1-3,16-17H
+  standard_inchi_key: WEZZHODHNYWVJY-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000130
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Proline alkaloids
+  class_results:
+  - Pyrrole alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA09712
+producer_organisms:
+- taxon_id: NCBITaxon:76728
+  taxon_label: Streptomyces vitaminophilus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000130
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17158935
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000130 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000130
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:76728
+  organism_label: Streptomyces vitaminophilus
+  evidence:
+  - reference: PMID:17158935
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000130 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF140901.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000130
+  source_label: pyrrolomycin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d67af7736c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

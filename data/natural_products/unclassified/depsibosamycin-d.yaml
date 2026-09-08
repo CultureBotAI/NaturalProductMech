@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-4bde525501
+label: depsibosamycin D
+chemical_structure:
+  smiles: COC1=C(C[C@H]2NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](CC3=CC=C(O)C=C3)NC(=O)[C@H](CC3=CC=C(O)C=C3)NC(C)=O)[C@@H](O)C(=O)O)COC(=O)CNC(=O)[C@H](CC(C)C)NC2=O)C=CC(O)=C1
+  standard_inchi: InChI=1S/C51H66N8O17/c1-25(2)17-34-44(66)52-23-41(64)76-24-39(49(71)57-38(47(69)54-34)21-30-11-16-33(63)22-40(30)75-6)58-50(72)42(43(65)51(73)74)59-48(70)35(18-26(3)4)55-46(68)37(20-29-9-14-32(62)15-10-29)56-45(67)36(53-27(5)60)19-28-7-12-31(61)13-8-28/h7-16,22,25-26,34-39,42-43,61-63,65H,17-21,23-24H2,1-6H3,(H,52,66)(H,53,60)(H,54,69)(H,55,68)(H,56,67)(H,57,71)(H,58,72)(H,59,70)(H,73,74)/t34-,35-,36-,37+,38+,39-,42-,43+/m0/s1
+  standard_inchi_key: XVALYPLEYAVREQ-ZJPHBKLHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002360
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033314
+producer_organisms:
+- taxon_id: NCBITaxon:47760
+  taxon_label: Streptomyces aurantiacus
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002360
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this
+    field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:34203385
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002360 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002360
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:47760
+  organism_label: Streptomyces aurantiacus
+  evidence:
+  - reference: PMID:34203385
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002360 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MW740414.1
+  locus_from: 1
+  locus_to: 47161
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002360
+  source_label: depsibosamycin D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-4bde525501
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-b66c03e90b
+label: microcystin-FR
+chemical_structure:
+  smiles: CO[C@@H](CC1=CC=CC=C1)[C@@H](C)\C=C(/C)\C=C\[C@@H]1NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@@H](C)[C@@H](NC(=O)[C@H](CC2=CC=CC=C2)NC(=O)[C@@H](C)NC(=O)C(=C)N(C)C(=O)CC[C@@H](NC(=O)[C@H]1C)C(O)=O)C(O)=O
+  standard_inchi: InChI=1S/C52H72N10O12/c1-29(26-30(2)41(74-8)28-36-18-13-10-14-19-36)21-22-37-31(3)44(64)59-39(50(70)71)23-24-42(63)62(7)34(6)47(67)56-33(5)46(66)60-40(27-35-16-11-9-12-17-35)49(69)61-43(51(72)73)32(4)45(65)58-38(48(68)57-37)20-15-25-55-52(53)54/h9-14,16-19,21-22,26,30-33,37-41,43H,6,15,20,23-25,27-28H2,1-5,7-8H3,(H,56,67)(H,57,68)(H,58,65)(H,59,64)(H,60,66)(H,61,69)(H,70,71)(H,72,73)(H4,53,54,55)/b22-21+,29-26+/t30-,31-,32-,33+,37-,38-,39+,40-,41-,43+/m0/s1
+  standard_inchi_key: NCIZAPYSXYPFOU-POWPIGGBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001667
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Microcystins
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA0266
+producer_organisms:
+- taxon_id: NCBITaxon:548826
+  taxon_label: Fischerella sp. CENA161
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001667
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29154789
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001667 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001667
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:548826
+  organism_label: Fischerella sp. CENA161
+  evidence:
+  - reference: PMID:29154789
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001667 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX891213.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001667
+  source_label: microcystin-FR
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-b66c03e90b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

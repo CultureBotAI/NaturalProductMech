@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-0f6afa3f66
+label: depudecin
+chemical_structure:
+  smiles: C[C@@H](O)[C@@H]1O[C@H]1\C=C\[C@@H]1O[C@H]1[C@H](O)C=C
+  standard_inchi: InChI=1S/C11H16O4/c1-3-7(13)11-9(15-11)5-4-8-10(14-8)6(2)12/h3-13H,1H2,2H3/b5-4+/t6-,7-,8+,9+,10+,11+/m1/s1
+  standard_inchi_key: DLVJMFOLJOOWFS-INMLLLKOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000046
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty acyls
+  class_results:
+  - Fatty alcohols
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA01465
+- pubchem:6438725
+- chebi:64143
+producer_organisms:
+- taxon_id: NCBITaxon:29001
+  taxon_label: Alternaria brassicicola
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000046
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19737099
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000046 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000046
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:29001
+  organism_label: Alternaria brassicicola
+  evidence:
+  - reference: PMID:19737099
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000046 entry version 4; citation taken from the entry level
+  genome_accession: genbank:FJ977165.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000046
+  source_label: depudecin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-0f6afa3f66
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

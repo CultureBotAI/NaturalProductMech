@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-fe0631e88c
+label: hopene
+chemical_structure:
+  smiles: CC(CCCO)[C@H]1CC[C@@]2(C)[C@H]1CC[C@]1(C)[C@@H]2CC[C@@H]2[C@@]3(C)CCCC(C)(C)[C@@H]3C=C[C@@]12C
+  standard_inchi: InChI=1S/C32H54O/c1-22(10-8-21-33)23-13-18-29(4)24(23)14-19-31(6)26(29)11-12-27-30(5)17-9-16-28(2,3)25(30)15-20-32(27,31)7/h15,20,22-27,33H,8-14,16-19,21H2,1-7H3/t22?,23-,24+,25+,26-,27-,29+,30+,31-,32-/m1/s1
+  standard_inchi_key: VXEJZIAQQHPIHP-BPLMESIISA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000663
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Triterpenoids
+  class_results:
+  - Hopane and Moretane triterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA0919
+- pubchem:92155
+producer_organisms:
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000663
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12000953
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000663 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000663
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:100226
+  organism_label: Streptomyces coelicolor A3(2)
+  evidence:
+  - reference: PMID:12000953
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000663 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AL645882.2
+  locus_from: 7516017
+  locus_to: 7529773
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000663
+  source_label: hopene
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fe0631e88c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-b09cb5ee87
+label: occidiofungin A
+chemical_structure:
+  smiles: CCCCOC1CNC(=O)[C@H](CC(N)=O)NC(=O)[C@H](CO)NC(=O)[C@H](CC(N)=O)NC(=O)CNC(=O)[C@H](CCCCN)NC(=O)[C@@H](NC(=O)[C@H](CC2=CNC3=C2C=CC=C3)NC(=O)CC(C1)OC1OC[C@@H](O)[C@H](O)[C@H]1O)C(O)C1=CC=C(O)C=C1
+  standard_inchi: InChI=1S/C54H78N12O19/c1-2-3-16-83-31-18-30(85-54-47(76)46(75)39(69)26-84-54)19-42(72)61-35(17-28-22-58-33-9-5-4-8-32(28)33)51(80)66-44(45(74)27-11-13-29(68)14-12-27)53(82)63-34(10-6-7-15-55)48(77)60-24-43(73)62-37(21-41(57)71)50(79)65-38(25-67)52(81)64-36(20-40(56)70)49(78)59-23-31/h4-5,8-9,11-14,22,30-31,34-39,44-47,54,58,67-69,74-76H,2-3,6-7,10,15-21,23-26,55H2,1H3,(H2,56,70)(H2,57,71)(H,59,78)(H,60,77)(H,61,72)(H,62,73)(H,63,82)(H,64,81)(H,65,79)(H,66,80)/t30?,31?,34-,35-,36-,37-,38-,39+,44-,45?,46-,47+,54?/m0/s1
+  standard_inchi_key: AOHSXULORROIFX-DOTMVGKOSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001711
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA09265
+producer_organisms:
+- taxon_id: NCBITaxon:60550
+  taxon_label: Burkholderia pyrrocinia
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001711
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26910858
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001711 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001711
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:60550
+  organism_label: Burkholderia pyrrocinia
+  evidence:
+  - reference: PMID:26910858
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001711 entry version 4; citation taken from the entry level
+  genome_accession: genbank:JPWP01000009.1
+  locus_from: 926
+  locus_to: 56163
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001711
+  source_label: occidiofungin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-b09cb5ee87
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

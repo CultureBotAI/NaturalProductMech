@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-33d65bf6bd
+label: microcyclamide
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C2=NC(=CS2)C(=O)N[C@H](C3=NC(=CS3)C(=O)N[C@H](C4=NC(=C(O4)C)C(=O)N1)C)CC5=CN=CN5C
+  standard_inchi: InChI=1S/C26H30N8O4S2/c1-6-12(2)19-26-31-18(10-40-26)22(36)29-16(7-15-8-27-11-34(15)5)25-30-17(9-39-25)21(35)28-13(3)24-33-20(14(4)38-24)23(37)32-19/h8-13,16,19H,6-7H2,1-5H3,(H,28,35)(H,29,36)(H,32,37)/t12-,13-,16-,19-/m0/s1
+  standard_inchi_key: VJNFZONNMHDIHW-DYIBVVGTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000474
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:10555282
+producer_organisms:
+- taxon_id: NCBITaxon:267872
+  taxon_label: Microcystis aeruginosa PCC 7806
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000474
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18245249
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000474 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000474
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:267872
+  organism_label: Microcystis aeruginosa PCC 7806
+  evidence:
+  - reference: PMID:18245249
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000474 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AM931579.1
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000474
+  source_label: microcyclamide
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-33d65bf6bd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

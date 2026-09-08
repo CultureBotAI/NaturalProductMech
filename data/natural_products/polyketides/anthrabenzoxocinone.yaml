@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-dc0c37db5e
+label: anthrabenzoxocinone
+chemical_structure:
+  smiles: CC1=CC(=CC2=C1[C@@H]3C4=C(C[C@@](O3)(O2)C)C=C5C(=C4O)C(=O)C6=C(C=C(C=C6C5(C)C)O)O)O
+  standard_inchi: InChI=1S/C27H24O7/c1-11-5-13(28)9-18-19(11)25-20-12(10-27(4,33-18)34-25)6-15-22(23(20)31)24(32)21-16(26(15,2)3)7-14(29)8-17(21)30/h5-9,25,28-31H,10H2,1-4H3/t25-,27-/m1/s1
+  standard_inchi_key: MDUGEFRGUDVHQH-XNMGPUDCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001513
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Fasamycins and derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1883427
+  taxon_label: Actinobacteria bacterium
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001513
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29227089
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001513 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001513
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1883427
+  organism_label: Actinobacteria bacterium
+  evidence:
+  - reference: PMID:29227089
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001513 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KY978480.1
+  locus_from: 1
+  locus_to: 11818
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001513
+  source_label: anthrabenzoxocinone
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-dc0c37db5e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

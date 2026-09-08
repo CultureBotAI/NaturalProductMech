@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-aba18383fc
+label: A-503083 E
+chemical_structure:
+  smiles: COC1C(OC(N)=O)C(OC1C(OC1OC(=CC(O)C1O)C(=O)OC)C(N)=O)N1C=CC(=O)NC1=O
+  standard_inchi: InChI=1S/C19H24N4O13/c1-31-10-11(34-15(13(10)36-18(21)29)23-4-3-8(25)22-19(23)30)12(14(20)27)35-17-9(26)6(24)5-7(33-17)16(28)32-2/h3-6,9-13,15,17,24,26H,1-2H3,(H2,20,27)(H2,21,29)(H,22,25,30)
+  standard_inchi_key: YPTJPYWKFYBXSN-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000288
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Pyrimidine nucleos(t)ides
+  is_glycoside: true
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA06239
+producer_organisms:
+- taxon_id: NCBITaxon:701528
+  taxon_label: Streptomyces sp. SANK 62799
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000288
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20562876
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000288 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000288
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:701528
+  organism_label: Streptomyces sp. SANK 62799
+  evidence:
+  - reference: PMID:20562876
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000288 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB538860.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000288
+  source_label: A-503083 E
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-aba18383fc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

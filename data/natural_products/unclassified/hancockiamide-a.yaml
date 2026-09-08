@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-c2994d1d6a
+label: hancockiamide A
+chemical_structure:
+  smiles: COC1=CC(C[C@H]2CN[C@@H](CC3=CC=CC=C3)CN2C(=O)/C=C/C2=CC=CC=C2)=CC(OC)=C1O
+  standard_inchi: InChI=1S/C29H32N2O4/c1-34-26-17-23(18-27(35-2)29(26)33)16-25-19-30-24(15-22-11-7-4-8-12-22)20-31(25)28(32)14-13-21-9-5-3-6-10-21/h3-14,17-18,24-25,30,33H,15-16,19-20H2,1-2H3/b14-13+/t24-,25-/m0/s1
+  standard_inchi_key: JRBUGAHICHRVSG-NGOZIHSBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002264
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Shikimates and Phenylpropanoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033179
+producer_organisms:
+- taxon_id: NCBITaxon:1873369
+  taxon_label: Aspergillus hancockii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002264
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Enzymatic assays. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:33242032
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002264 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002264
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1873369
+  organism_label: Aspergillus hancockii
+  evidence:
+  - reference: PMID:33242032
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002264 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MBFL02000005.1
+  locus_from: 62010
+  locus_to: 93497
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002264
+  source_label: hancockiamide A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-c2994d1d6a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

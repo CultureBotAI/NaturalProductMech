@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-3456826281
+label: Chaetoglobosin P
+chemical_structure:
+  smiles: C/C1=C/[C@@H](C)C/C=C/[C@H]2[C@@H]3O[C@]3(C)[C@@H](C)[C@H]3[C@H]([C@@H](C)C4=C[NH]C5=CC=CC=C45)NC(=O)[C@@]23C(=O)/C=C/C(=O)[C@@H]1O
+  standard_inchi: InChI=1S/C33H38N2O5/c1-17-9-8-11-23-30-32(5,40-30)20(4)27-28(19(3)22-16-34-24-12-7-6-10-21(22)24)35-31(39)33(23,27)26(37)14-13-25(36)29(38)18(2)15-17/h6-8,10-17,19-20,23,27-30,34,38H,9H2,1-5H3,(H,35,39)/b11-8+,14-13+,18-15-/t17-,19-,20-,23-,27-,28-,29+,30-,32+,33+/m0/s1
+  standard_inchi_key: YLBJYVFDYOTYHW-PCKGUDBLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002539
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Pseudoalkaloids
+  class_results:
+  - Cytochalasan alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA032791
+producer_organisms:
+- taxon_id: NCBITaxon:2502037
+  taxon_label: Discosia rubi
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002539
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.3389/fmicb.2020.01766
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002539 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002539
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2502037
+  organism_label: Discosia rubi
+  evidence:
+  - reference: DOI:10.3389/fmicb.2020.01766
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002539 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MT459796.1
+  locus_from: 1
+  locus_to: 37406
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002539
+  source_label: Chaetoglobosin P
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3456826281
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

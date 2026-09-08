@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-fb28425c96
+label: xenoamicin B
+chemical_structure:
+  smiles: O=C(N[C@H](C(N[C@H]([C@H](C)CC)C(N[C@@H](C(C)C)C(N[C@H](C)C(NCCC1=O)=O)=O)=O)=O)C(C)C)[C@@H]([C@H](OC([C@@H](NC([C@@H]2N1CCC2)=O)C(C)C)=O)C)NC([C@H]([C@H](C)CC)NC([C@@H](CC(C)C)NC([C@H](C(C)C)NC([C@@H](C)NC([C@H]3N(C(CCC)=O)CCC3)=O)=O)=O)=O)=O
+  standard_inchi: InChI=1S/C65H111N13O15/c1-19-24-45(79)77-29-22-25-43(77)57(84)67-40(17)55(82)70-48(34(8)9)60(87)69-42(31-32(4)5)56(83)74-51(37(14)20-2)63(90)76-53-41(18)93-65(92)50(36(12)13)73-58(85)44-26-23-30-78(44)46(80)27-28-66-54(81)39(16)68-59(86)47(33(6)7)71-62(89)52(38(15)21-3)75-61(88)49(35(10)11)72-64(53)91/h32-44,47-53H,19-31H2,1-18H3,(H,66,81)(H,67,84)(H,68,86)(H,69,87)(H,70,82)(H,71,89)(H,72,91)(H,73,85)(H,74,83)(H,75,88)(H,76,90)/t37-,38-,39-,40-,41-,42-,43+,44-,47+,48+,49+,50+,51+,52-,53-/m1/s1
+  standard_inchi_key: RCNSZSLZDQBOEM-YXEJCLQBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000464
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:351671
+  taxon_label: Xenorhabdus doucetiae
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000464
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24203528
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000464 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000464
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:351671
+  organism_label: Xenorhabdus doucetiae
+  evidence:
+  - reference: PMID:24203528
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000464 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FO704550.1
+  locus_from: 2329335
+  locus_to: 2435321
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000464
+  source_label: xenoamicin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fb28425c96
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,111 @@
+identifier: naturalproductmech:mibig-d5b35f9018
+label: mureidomycin A
+chemical_structure:
+  smiles: CC([C@H](C(=O)N/C=C/1\CC(C(O1)N2CCC(=O)NC2=O)O)NC(=O)[C@H](CCSC)NC(=O)NC(CC3=CC(=CC=C3)O)C(=O)O)N(C)C(=O)[C@H](CC4=CC(=CC=C4)O)N
+  standard_inchi: InChI=1S/C38H50N8O12S/c1-20(45(2)34(53)26(39)16-21-6-4-8-23(47)14-21)31(33(52)40-19-25-18-29(49)35(58-25)46-12-10-30(50)43-38(46)57)44-32(51)27(11-13-59-3)41-37(56)42-28(36(54)55)17-22-7-5-9-24(48)15-22/h4-9,14-15,19-20,26-29,31,35,47-49H,10-13,16-18,39H2,1-3H3,(H,40,52)(H,44,51)(H,54,55)(H2,41,42,56)(H,43,50,57)/b25-19+/t20?,26-,27-,28?,29?,31+,35?/m0/s1
+  standard_inchi_key: DXBJHRPKFQGVGZ-XGYRZULNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000950
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+synonyms:
+- value: mureidomycin B
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000950
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- OTHER
+xrefs:
+- pubchem:3037004
+- pubchem:101627952
+- pubchem:3037873
+producer_organisms:
+- taxon_id: NCBITaxon:991132
+  taxon_label: Streptomyces sp. DSM 5940
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000950
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:21290549
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000950 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:991132
+  taxon_label: Streptomyces sp. DSM 5940
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000950
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:21290549
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000950 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000950
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:991132
+  organism_label: Streptomyces sp. DSM 5940
+  evidence:
+  - reference: PMID:21290549
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000950 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HQ287563.1
+  bgc_class:
+  - NRPS
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0000950
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:991132
+  organism_label: Streptomyces sp. DSM 5940
+  evidence:
+  - reference: PMID:21290549
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000950 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HQ287563.1
+  bgc_class:
+  - NRPS
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000950
+  source_label: mureidomycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d5b35f9018
+- source: MIBIG
+  source_id: BGC0000950
+  source_label: mureidomycin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-9171943ea1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

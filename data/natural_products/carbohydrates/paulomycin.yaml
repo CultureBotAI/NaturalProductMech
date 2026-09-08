@@ -1,0 +1,103 @@
+identifier: naturalproductmech:mibig-d496b2b225
+label: paulomycin
+chemical_structure:
+  smiles: C/C=C(/C(=O)O[C@@H]1[C@H](OC([C@@H]([C@@H]1O[C@@H]2C[C@H]([C@H]([C@H](O2)C)O)OC)O)C3(CC(=O)C(=C(C3=O)C(=O)O)N)O)COC(=O)C)\N=C=S
+  standard_inchi: InChI=1S/C27H34N2O15S/c1-5-12(29-9-45)26(37)44-21-15(8-40-11(3)30)42-24(27(38)7-13(31)18(28)17(23(27)34)25(35)36)20(33)22(21)43-16-6-14(39-4)19(32)10(2)41-16/h5,10,14-16,19-22,24,32-33,38H,6-8,28H2,1-4H3,(H,35,36)/b12-5-/t10-,14-,15-,16-,19+,20-,21-,22+,24?,27?/m1/s1
+  standard_inchi_key: HYYDZRXDSYTIEH-MQTRCCAJSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001731
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Saccharides
+  class_results:
+  - Paulomycins and derivatives
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:6450320
+producer_organisms:
+- taxon_id: NCBITaxon:285551
+  taxon_label: Streptomyces paulus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001731
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27001601
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001731 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1484062
+  taxon_label: Streptomyces sp. YN86
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001732
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25822496
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001732 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001731
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:285551
+  organism_label: Streptomyces paulus
+  evidence:
+  - reference: PMID:27001601
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001731 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KJ721164.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001732
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1484062
+  organism_label: Streptomyces sp. YN86
+  evidence:
+  - reference: PMID:25822496
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001732 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KJ721165.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001731
+  source_label: paulomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d496b2b225
+- source: MIBIG
+  source_id: BGC0001732
+  source_label: paulomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2334f052c3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001731, BGC0001732.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

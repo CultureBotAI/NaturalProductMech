@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-696056c46a
+label: eremophilene
+chemical_structure:
+  smiles: C[C@@H]1CCC=C2CC[C@@H](C[C@@]12C)C(C)=C
+  standard_inchi: InChI=1S/C15H24/c1-11(2)13-8-9-14-7-5-6-12(3)15(14,4)10-13/h7,12-13H,1,5-6,8-10H2,2-4H3/t12-,13+,15+/m1/s1
+  standard_inchi_key: QEBNYNLSCGVZOH-IPYPFGDCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001201
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Eremophilane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA09636
+producer_organisms:
+- taxon_id: NCBITaxon:448385
+  taxon_label: Sorangium cellulosum So ce56
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001201
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25504914
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001201 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001201
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:448385
+  organism_label: Sorangium cellulosum So ce56
+  evidence:
+  - reference: PMID:25504914
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001201 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AM746676.1
+  locus_from: 11915725
+  locus_to: 11918015
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001201
+  source_label: eremophilene
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-696056c46a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

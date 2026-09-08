@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-2b5f49c822
+label: tetracenomycin C
+chemical_structure:
+  smiles: O[C@H]1[C@@]2(O)[C@@](C(C(C(O)=C(C(C)=C(C(OC)=O)C(OC)=C4)C4=C3)=C3C2=O)=O)(O)C(C=C1OC)=O
+  standard_inchi: InChI=1S/C23H20O11/c1-8-14-9(6-11(32-2)15(8)21(29)34-4)5-10-16(17(14)25)20(28)22(30)13(24)7-12(33-3)19(27)23(22,31)18(10)26/h5-7,19,25,27,30-31H,1-4H3/t19-,22-,23-/m1/s1
+  standard_inchi_key: ULHJWHCSSAEMLW-UEVCKROQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000275
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthraquinones and anthrones
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1907
+  taxon_label: Streptomyces glaucescens
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000275
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
+    expression correlated with compound production. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:1548230
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000275 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000275
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1907
+  organism_label: Streptomyces glaucescens
+  evidence:
+  - reference: PMID:1548230
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000275 entry version 4; citation taken from the entry level
+  genome_accession: genbank:M80674.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000275
+  source_label: tetracenomycin C
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-2b5f49c822
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

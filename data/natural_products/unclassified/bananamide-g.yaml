@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-ac38a0f9d0
+label: bananamide G
+chemical_structure:
+  smiles: CCCCCCC/C=C\C(O)CC(=O)NC(CC(C)C)C(=O)NC(CC(=O)O)C(=O)NC1C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)NC(CO)C(=O)NC(CC(C)C)C(=O)NC(C(C)C)C(=O)OC1C
+  standard_inchi: InChI=1S/C52H90N8O14/c1-13-14-15-16-17-18-19-20-34(62)25-41(63)53-35(21-28(2)3)45(66)56-39(26-42(64)65)49(70)60-44-33(12)74-52(73)43(32(10)11)59-48(69)38(24-31(8)9)55-50(71)40(27-61)58-47(68)36(22-29(4)5)54-46(67)37(23-30(6)7)57-51(44)72/h19-20,28-40,43-44,61-62H,13-18,21-27H2,1-12H3,(H,53,63)(H,54,67)(H,55,71)(H,56,66)(H,57,72)(H,58,68)(H,59,69)(H,60,70)(H,64,65)/b20-19-
+  standard_inchi_key: OQVKCEVXGNJSOO-VXPUYCOJSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002548
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA026210
+producer_organisms:
+- taxon_id: NCBITaxon:306
+  taxon_label: Pseudomonas sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002548
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.3390/molecules24224170
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002548 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002548
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:306
+  organism_label: Pseudomonas sp.
+  evidence:
+  - reference: DOI:10.3390/molecules24224170
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002548 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MN480426.1
+  locus_from: 1
+  locus_to: 34614
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002548
+  source_label: bananamide G
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-ac38a0f9d0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

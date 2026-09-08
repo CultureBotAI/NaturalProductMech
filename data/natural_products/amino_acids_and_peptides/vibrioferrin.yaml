@@ -1,0 +1,106 @@
+identifier: naturalproductmech:mibig-607719185c
+label: vibrioferrin
+chemical_structure:
+  smiles: O=C1CCC(O)(C(O)=O)N1[C@@H](C)C(NCCOC(C[C@](C(O)=O)(O)CC(O)=O)=O)=O
+  standard_inchi: InChI=1S/C16H22N2O12/c1-8(18-9(19)2-3-16(18,29)14(26)27)12(23)17-4-5-30-11(22)7-15(28,13(24)25)6-10(20)21/h8,28-29H,2-7H2,1H3,(H,17,23)(H,20,21)(H,24,25)(H,26,27)/t8-,15+,16?/m0/s1
+  standard_inchi_key: IGQXNKDXMPSELX-BIAKFKOBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000946
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:197680
+- npatlas:NPA024673
+producer_organisms:
+- taxon_id: NCBITaxon:670
+  taxon_label: Vibrio parahaemolyticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000946
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:14617658
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000946 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1283330
+  taxon_label: Azotobacter vinelandii CA
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002527
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/ic9016883
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002527 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000946
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:670
+  organism_label: Vibrio parahaemolyticus
+  evidence:
+  - reference: PMID:14617658
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000946 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB082123.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0002527
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1283330
+  organism_label: Azotobacter vinelandii CA
+  evidence:
+  - reference: DOI:10.1021/ic9016883
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002527 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CP005094.1
+  locus_from: 876779
+  locus_to: 886792
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000946
+  source_label: vibrioferrin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-607719185c
+- source: MIBIG
+  source_id: BGC0002527
+  source_label: vibrioferrin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-55f2e88b4a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000946, BGC0002527.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

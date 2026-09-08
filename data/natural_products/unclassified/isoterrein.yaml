@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-ef6e0053ae
+label: isoterrein
+chemical_structure:
+  smiles: C\C=C\C1=CC(=O)[C@@H](O)[C@H]1O
+  standard_inchi: InChI=1S/C8H10O3/c1-2-3-5-4-6(9)8(11)7(5)10/h2-4,7-8,10-11H,1H3/b3-2+/t7-,8+/m0/s1
+  standard_inchi_key: MHOOPNKRBMHHEC-RIAPOHOLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000161
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA019504
+producer_organisms:
+- taxon_id: NCBITaxon:341663
+  taxon_label: Aspergillus terreus NIH2624
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000161
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24816227
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000161 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000161
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:341663
+  organism_label: Aspergillus terreus NIH2624
+  evidence:
+  - reference: PMID:24816227
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000161 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CH476594.1
+  locus_from: 399827
+  locus_to: 432585
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000161
+  source_label: isoterrein
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-ef6e0053ae
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

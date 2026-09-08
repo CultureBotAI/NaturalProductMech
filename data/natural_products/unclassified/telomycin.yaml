@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-2aa6807a9d
+label: telomycin
+chemical_structure:
+  smiles: C[C@@H]1[C@@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)NCC(=O)N2CC[C@@H]([C@H]2C(=O)N/C(=C/C3=CNC4=CC=CC=C43)/C(=O)N[C@H](C(=O)N[C@H](C(=O)N5CC[C@H]([C@H]5C(=O)O1)O)[C@H](C(C)C)O)[C@H](C)C6=CNC7=CC=CC=C76)O)C)[C@H](C)O)NC(=O)[C@H](CO)NC(=O)C[C@@H](C(=O)O)N
+  standard_inchi: InChI=1S/C59H77N13O19/c1-25(2)49(79)46-57(87)72-18-16-40(76)48(72)59(90)91-29(6)45(69-52(82)38(24-73)65-41(77)20-34(60)58(88)89)55(85)68-44(28(5)74)54(84)64-27(4)50(80)63-23-42(78)71-17-15-39(75)47(71)56(86)66-37(19-30-21-61-35-13-9-7-11-31(30)35)51(81)67-43(53(83)70-46)26(3)33-22-62-36-14-10-8-12-32(33)36/h7-14,19,21-22,25-29,34,38-40,43-49,61-62,73-76,79H,15-18,20,23-24,60H2,1-6H3,(H,63,80)(H,64,84)(H,65,77)(H,66,86)(H,67,81)(H,68,85)(H,69,82)(H,70,83)(H,88,89)/b37-19+/t26-,27+,28+,29-,34+,38+,39+,40-,43+,44+,45+,46+,47+,48+,49+/m1/s1
+  standard_inchi_key: FJEKCPBQVANMTA-BYEAFURWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001406
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:105539882
+producer_organisms:
+- taxon_id: NCBITaxon:58343
+  taxon_label: Streptomyces canus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001406
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26829473
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001406 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001406
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:58343
+  organism_label: Streptomyces canus
+  evidence:
+  - reference: PMID:26829473
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001406 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KT881498.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001406
+  source_label: telomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2aa6807a9d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

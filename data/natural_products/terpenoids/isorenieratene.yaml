@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-fb5b9253c5
+label: isorenieratene
+chemical_structure:
+  smiles: CC1=C(C(=C(C=C1)C)/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C2=C(C=CC(=C2C)C)C)\C)\C)/C)/C)C
+  standard_inchi: InChI=1S/C40H48/c1-29(17-13-19-31(3)21-27-39-35(7)25-23-33(5)37(39)9)15-11-12-16-30(2)18-14-20-32(4)22-28-40-36(8)26-24-34(6)38(40)10/h11-28H,1-10H3/b12-11+,17-13+,18-14+,27-21+,28-22+,29-15+,30-16+,31-19+,32-20+
+  standard_inchi_key: ZCIHMQAPACOQHT-YSEOPJLNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000664
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Carotenoids (C40)
+  class_results:
+  - Carotenoids (C40, π-π)
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:9984420
+producer_organisms:
+- taxon_id: NCBITaxon:455632
+  taxon_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000664
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:10395965
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000664 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000664
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455632
+  organism_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence:
+  - reference: PMID:10395965
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000664 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AP009493.1
+  locus_from: 8206573
+  locus_to: 8214963
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000664
+  source_label: isorenieratene
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fb5b9253c5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

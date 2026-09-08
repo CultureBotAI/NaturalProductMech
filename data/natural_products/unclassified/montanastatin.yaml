@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-c8676f7158
+label: montanastatin
+chemical_structure:
+  smiles: CC1C(=O)NC(C(=O)OC(C(=O)NC(C(=O)OC(C(=O)NC(C(=O)OC(C(=O)NC(C(=O)O1)C(C)C)C(C)C)C(C)C)C)C(C)C)C(C)C)C(C)C
+  standard_inchi: InChI=1S/C36H60N4O12/c1-15(2)23-33(45)49-21(13)29(41)37-26(18(7)8)36(48)52-28(20(11)12)32(44)40-24(16(3)4)34(46)50-22(14)30(42)38-25(17(5)6)35(47)51-27(19(9)10)31(43)39-23/h15-28H,1-14H3,(H,37,41)(H,38,42)(H,39,43)(H,40,44)
+  standard_inchi_key: NGUGHCRMWIKICS-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001846
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- SACCHARIDE
+- NRPS
+xrefs:
+- pubchem:193490
+producer_organisms:
+- taxon_id: NCBITaxon:2305222
+  taxon_label: Streptomyces sp. CBMAI 2042
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001846
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1002/slct.201900922
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001846 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001846
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2305222
+  organism_label: Streptomyces sp. CBMAI 2042
+  evidence:
+  - reference: DOI:10.1002/slct.201900922
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001846 entry version 4; citation taken from the entry level
+  genome_accession: genbank:RCOL01000001.1
+  locus_from: 7605327
+  locus_to: 7645900
+  bgc_class:
+  - SACCHARIDE
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001846
+  source_label: montanastatin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-c8676f7158
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

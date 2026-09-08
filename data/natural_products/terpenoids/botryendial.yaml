@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-79ce4aca52
+label: Botryendial
+chemical_structure:
+  smiles: C[C@@H]1C[C@@H]([C@@H]2C(=C1C=O)[C@@](CC2(C)C)(C)C=O)OC(=O)C
+  standard_inchi: InChI=1S/C17H24O4/c1-10-6-13(21-11(2)20)15-14(12(10)7-18)17(5,9-19)8-16(15,3)4/h7,9-10,13,15H,6,8H2,1-5H3/t10-,13+,15-,17-/m1/s1
+  standard_inchi_key: QWZKEROSOALLJP-BYLNDYCFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000631
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Botryane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA007962
+producer_organisms:
+- taxon_id: NCBITaxon:332648
+  taxon_label: Botrytis cinerea B05.10
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000631
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/0031-9422(95)00643-5
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000631 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000631
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:332648
+  organism_label: Botrytis cinerea B05.10
+  evidence:
+  - reference: DOI:10.1016/0031-9422(95)00643-5
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000631 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP009816.1
+  locus_from: 2216500
+  locus_to: 2246000
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000631
+  source_label: Botryendial
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-79ce4aca52
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-9252d8f439
+label: LP2006
+chemical_structure:
+  smiles: CC(C)[C@H]1C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@@H](CSSC[C@@H](C(=O)N1)NC(=O)[C@H](CO)NC(=O)[C@H](CC2=CNC3=CC=CC=C32)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CC(=O)N)NC(=O)[C@@H]4CCC(=O)NCC(=O)N[C@H](C(=O)N5CCC[C@H]5C(=O)N[C@H](C(=O)N[C@H](C(=O)NCC(=O)N[C@H](C(=O)N4)CC6=CC=CC=C6)CC7=CNC8=CC=CC=C87)CC(=O)N)CCCNC(=N)N)C(=O)O)C(C)C)CCCNC(=N)N
+  standard_inchi: InChI=1S/C88H121N27O24S2/c1-42(2)70-83(135)104-51(21-12-26-95-87(91)92)74(126)113-71(43(3)4)84(136)112-62(86(138)139)41-141-140-40-61(81(133)114-70)111-80(132)60(39-116)110-76(128)56(31-46-36-98-50-20-11-9-18-48(46)50)106-79(131)59(34-69(122)123)108-77(129)57(32-64(89)117)107-73(125)52-24-25-66(119)99-37-67(120)101-53(22-13-27-96-88(93)94)85(137)115-28-14-23-63(115)82(134)109-58(33-65(90)118)78(130)105-55(30-45-35-97-49-19-10-8-17-47(45)49)72(124)100-38-68(121)102-54(75(127)103-52)29-44-15-6-5-7-16-44/h5-11,15-20,35-36,42-43,51-63,70-71,97-98,116H,12-14,21-34,37-41H2,1-4H3,(H2,89,117)(H2,90,118)(H,99,119)(H,100,124)(H,101,120)(H,102,121)(H,103,127)(H,104,135)(H,105,130)(H,106,131)(H,107,125)(H,108,129)(H,109,134)(H,110,128)(H,111,132)(H,112,136)(H,113,126)(H,114,133)(H,122,123)(H,138,139)(H4,91,92,95)(H4,93,94,96)/t51-,52-,53-,54-,55-,56-,57-,58-,59-,60-,61-,62-,63-,70-,71-/m0/s1
+  standard_inchi_key: DGLXWTNAXWDXII-QUIRKDHJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001655
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Lasso peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:124080863
+producer_organisms:
+- taxon_id: NCBITaxon:1245473
+  taxon_label: Nocardiopsis alba DSM 43377
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001655
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28244986
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001655 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001655
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1245473
+  organism_label: Nocardiopsis alba DSM 43377
+  evidence:
+  - reference: PMID:28244986
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001655 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NZ_ANAC01000010.1
+  locus_from: 360089
+  locus_to: 365660
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001655
+  source_label: LP2006
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-9252d8f439
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

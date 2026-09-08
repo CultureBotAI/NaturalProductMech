@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-96ff336a6a
+label: polyketomycin
+chemical_structure:
+  smiles: COC1=CC(=O)C2=C(C(C)=C3CC4(O)C(O[C@H]5CC[C@H](O[C@H]6C[C@@](C)(O)[C@H](OC(=O)C7=C(C)C=CC(C)=C7O)[C@H](C)O6)[C@@H](C)O5)C(=O)\C(=C(\C)O)C(=O)C4(O)C(=O)C3=C2O)C1=O
+  standard_inchi: InChI=1S/C44H48O18/c1-16-9-10-17(2)33(47)28(16)41(53)62-39-21(6)59-27(15-42(39,7)54)60-24-11-12-26(58-20(24)5)61-40-36(50)30(19(4)45)37(51)44(56)38(52)31-22(14-43(40,44)55)18(3)29-32(35(31)49)23(46)13-25(57-8)34(29)48/h9-10,13,20-21,24,26-27,39-40,45,47,49,54-56H,11-12,14-15H2,1-8H3/b30-19+/t20-,21+,24+,26+,27+,39-,40?,42-,43?,44?/m1/s1
+  standard_inchi_key: OWRCRVABZYJUES-AWECJWJISA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001061
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthraquinones and anthrones
+  is_glycoside: true
+bgc_class:
+- PKS
+compound_classes:
+- Polycyclic polyketide
+- Oligosaccharide
+xrefs:
+- chebi:66771
+- npatlas:NPA01096
+producer_organisms:
+- taxon_id: NCBITaxon:42236
+  taxon_label: Streptomyces diastatochromogenes
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001061
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.51.26
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001061 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001061
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:42236
+  organism_label: Streptomyces diastatochromogenes
+  evidence:
+  - reference: DOI:10.7164/antibiotics.51.26
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001061 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:FJ483966.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001061
+  source_label: polyketomycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-96ff336a6a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

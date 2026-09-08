@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-9e9a51b0bf
+label: disorazol A
+chemical_structure:
+  smiles: COC1CC2=NC(=CO2)C(=O)OC(C\C=C/C2OC2\C=C\C=C/C2=NC(=CO2)C(=O)OC(C\C=C/C=C\C=C\1)C(C)(C)C(O)\C=C\C)C(C)(C)C(O)\C=C\C
+  standard_inchi: InChI=1S/C43H54N2O10/c1-8-18-34(46)42(3,4)36-23-14-12-10-11-13-20-29(50-7)26-39-45-31(28-52-39)41(49)55-37(43(5,6)35(47)19-9-2)24-17-22-33-32(53-33)21-15-16-25-38-44-30(27-51-38)40(48)54-36/h8-22,25,27-29,32-37,46-47H,23-24,26H2,1-7H3/b11-10-,14-12-,18-8+,19-9+,20-13+,21-15+,22-17-,25-16-
+  standard_inchi_key: FRFRWOXVYJSPCG-RLLVAITOSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001093
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA013201
+producer_organisms:
+- taxon_id: NCBITaxon:56
+  taxon_label: Sorangium cellulosum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001093
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16084035
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001093 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001093
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:56
+  organism_label: Sorangium cellulosum
+  evidence:
+  - reference: PMID:16084035
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001093 entry version 3; citation taken from the entry level
+  genome_accession: genbank:DQ013294.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001093
+  source_label: disorazol A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-9e9a51b0bf
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

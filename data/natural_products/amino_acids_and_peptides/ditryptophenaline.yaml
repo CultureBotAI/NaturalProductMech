@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-543520f6e9
+label: (-)-ditryptophenaline
+chemical_structure:
+  smiles: CN1[C@H](C(=O)N2[C@H](C1=O)C[C@@]3([C@H]2NC4=CC=CC=C43)[C@@]56C[C@H]7C(=O)N([C@H](C(=O)N7[C@@H]5NC8=CC=CC=C68)CC9=CC=CC=C9)C)CC1=CC=CC=C1
+  standard_inchi: InChI=1S/C42H40N6O4/c1-45-31(21-25-13-5-3-6-14-25)37(51)47-33(35(45)49)23-41(27-17-9-11-19-29(27)43-39(41)47)42-24-34-36(50)46(2)32(22-26-15-7-4-8-16-26)38(52)48(34)40(42)44-30-20-12-10-18-28(30)42/h3-20,31-34,39-40,43-44H,21-24H2,1-2H3/t31-,32-,33-,34-,39-,40-,41+,42+/m0/s1
+  standard_inchi_key: IQIGYVQQRKFGLN-HSYVCWSSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002157
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- OTHER
+xrefs:
+- npatlas:NPA009630
+- pubchem:11445389
+producer_organisms:
+- taxon_id: NCBITaxon:5059
+  taxon_label: Aspergillus flavus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002157
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24677498
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002157 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002157
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5059
+  organism_label: Aspergillus flavus
+  evidence:
+  - reference: PMID:24677498
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002157 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP044618.1
+  locus_from: 3332056
+  locus_to: 3347301
+  bgc_class:
+  - NRPS
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002157
+  source_label: (-)-ditryptophenaline
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-543520f6e9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

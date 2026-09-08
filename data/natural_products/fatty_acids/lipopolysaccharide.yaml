@@ -1,0 +1,193 @@
+identifier: naturalproductmech:mibig-ad23b710ca
+label: lipopolysaccharide
+chemical_structure:
+  smiles: CCCCCCCCCCCCCCCC1[C@H](OC([C@H]([C@@H]1OC(=O)CC(CCCCCCCCCCC)O)O)CO[C@H]2[C@H](C([C@@H](C(O2)CO[C@@]3(CC([C@H](C(O3)C(CO)O)O[C@H]4[C@@H](C([C@@H](C(O4)C(CO)O)OP(=O)(O)OP(=O)(O)OCCN)O[C@@H]5[C@@H](C([C@@H](C(O5)C(CO[C@@H]6[C@@H](C([C@](CO6)(C(CO)O)O)O)O)O)OP(=O)(O)O)O[C@@H]7C(C([C@@H](C(O7)CO[C@@H]8C(C([C@H](C(O8)CO)O)O)O)O)O[C@@H]9C(C([C@H](C(O9)CO)O)O)O[C@@H]1C(C([C@@H](C(O1)CO)O[C@@H]1C(C([C@H](C(O1)CO)O)OC1[C@@H](C(C([C@@H](O1)C)O[C@@H]1C(C([C@@H](C(O1)CO)O)O[C@@H]1C(C[C@H](C(O1)C)O)O)O[C@@H]1C(C([C@H](C(O1)CO)O)O)O)O)O)O)O)O[C@@H]1[C@H](C([C@@H](C(O1)CO)O)O)NC(=O)C)O)O)O)O[C@@]1(CC([C@H](C(O1)C(CO)O)O)O[C@@]1(CC([C@H](C(O1)C(CO)O)O)O)C(=O)O)C(=O)O)C(=O)O)OP(=O)(O)O)OC(=O)CC(CCCCCCCCCCC)OC(=O)CCCCCCCCCCCCC)NC(=O)CC(CCCCCCCCCCC)OC(=O)CCCCCCCCCCC)CP(=O)(O)O
+  standard_inchi: InChI=1S/C205H366N3O117P5/c1-10-16-22-28-34-40-42-43-45-50-55-61-67-73-109-130(101-326(269,270)271)292-127(147(245)164(109)302-135(235)78-106(222)70-64-58-52-46-36-30-24-18-12-3)98-283-186-138(208-132(232)79-107(71-65-59-53-47-37-31-25-19-13-4)290-133(233)74-68-62-56-49-39-33-27-21-15-6)173(303-136(236)80-108(72-66-60-54-48-38-32-26-20-14-5)291-134(234)75-69-63-57-51-44-41-35-29-23-17-11-2)172(322-327(272,273)274)129(301-186)100-286-203(199(262)263)84-119(318-205(201(266)267)83-118(144(242)166(320-205)114(227)86-210)317-204(200(264)265)82-112(225)139(237)165(319-204)113(226)85-209)171(169(321-203)116(229)88-212)308-194-161(259)178(182(167(305-194)115(228)87-211)324-330(280,281)325-329(278,279)287-77-76-206)313-195-160(258)177(181(323-328(275,276)277)168(306-195)117(230)97-282-188-162(260)184(261)202(268,102-285-188)131(231)96-220)312-193-159(257)175(148(246)128(300-193)99-284-189-154(252)150(248)141(239)121(90-214)294-189)310-196-179(152(250)143(241)123(92-216)297-196)315-197-180(314-187-137(207-105(9)221)149(247)140(238)120(89-213)293-187)157(255)170(126(95-219)299-197)307-192-158(256)174(145(243)124(93-217)296-192)309-190-156(254)153(251)163(104(8)289-190)304-198-183(316-191-155(253)151(249)142(240)122(91-215)295-191)176(146(244)125(94-218)298-198)311-185-111(224)81-110(223)103(7)288-185/h103-104,106-131,137-198,209-220,222-231,237-261,268H,10-102,206H2,1-9H3,(H,207,221)(H,208,232)(H,262,263)(H,264,265)(H,266,267)(H,278,279)(H,280,281)(H2,269,270,271)(H2,272,273,274)(H2,275,276,277)/t103?,104-,106?,107?,108?,109?,110+,111?,112?,113?,114?,115?,116?,117?,118?,119?,120?,121?,122?,123?,124?,125?,126?,127?,128?,129?,130+,131?,137-,138-,139+,140+,141-,142-,143-,144+,145-,146+,147+,148+,149?,150?,151?,152?,153?,154?,155?,156+,157?,158?,159?,160+,161+,162+,163?,164+,165?,166?,167?,168?,169?,170+,171+,172+,173?,174?,175?,176?,177?,178?,179?,180?,181+,182+,183?,184?,185+,186+,187+,188-,189-,190?,191+,192+,193+,194-,195+,196+,197+,198+,202-,203+,204+,205+/m0/s1
+  standard_inchi_key: YPXVSQSYDIMPDZ-AUUHBOKRSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000772
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Glycerophospholipids
+  class_results:
+  - Glycerophosphoinositolglycans
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- pubchem:11970143
+producer_organisms:
+- taxon_id: NCBITaxon:29459
+  taxon_label: Brucella melitensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000772
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:9784561
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000772 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:562
+  taxon_label: Escherichia coli
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000773
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:7677991
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000773 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:446
+  taxon_label: Legionella pneumophila
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000775
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:11043980
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000775 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:562
+  taxon_label: Escherichia coli
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000776
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12374825
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000776 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:562
+  taxon_label: Escherichia coli
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000777
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12374825
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000777 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000772
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:29459
+  organism_label: Brucella melitensis
+  evidence:
+  - reference: PMID:9784561
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000772 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF047478.1
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000773
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:562
+  organism_label: Escherichia coli
+  evidence:
+  - reference: PMID:7677991
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000773 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AF125322.1
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000775
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:446
+  organism_label: Legionella pneumophila
+  evidence:
+  - reference: PMID:11043980
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000775 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AJ007311.1
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000776
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:562
+  organism_label: Escherichia coli
+  evidence:
+  - reference: PMID:12374825
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000776 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AJ426044.2
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000777
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:562
+  organism_label: Escherichia coli
+  evidence:
+  - reference: PMID:12374825
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000777 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AJ426045.2
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000772
+  source_label: lipopolysaccharide
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ad23b710ca
+- source: MIBIG
+  source_id: BGC0000773
+  source_label: lipopolysaccharide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-d51cfec926
+- source: MIBIG
+  source_id: BGC0000775
+  source_label: lipopolysaccharide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0cfbee1c6a
+- source: MIBIG
+  source_id: BGC0000776
+  source_label: lipopolysaccharide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-5d73026b2a
+- source: MIBIG
+  source_id: BGC0000777
+  source_label: lipopolysaccharide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-10f950579b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000772, BGC0000773,
+    BGC0000775, BGC0000776, BGC0000777. Confirm they describe the same compound rather
+    than an upstream cross-reference error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

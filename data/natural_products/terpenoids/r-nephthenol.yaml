@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-7f223af5c5
+label: (-)-(R)-nephthenol
+chemical_structure:
+  smiles: C/C/1=C\CC/C(=C/C[C@@H](CC/C(=C/CC1)/C)C(C)(C)O)/C
+  standard_inchi: InChI=1S/C20H34O/c1-16-8-6-10-17(2)12-14-19(20(4,5)21)15-13-18(3)11-7-9-16/h8,11-12,19,21H,6-7,9-10,13-15H2,1-5H3/b16-8+,17-12+,18-11+/t19-/m0/s1
+  standard_inchi_key: ZJWQYSDAWSDJRA-QPHFJTKNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002219
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Cembrane diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:6443020
+producer_organisms:
+- taxon_id: NCBITaxon:721885
+  taxon_label: Stereum hirsutum FP-91666 SS1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002219
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:30905831
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002219 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002219
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:721885
+  organism_label: Stereum hirsutum FP-91666 SS1
+  evidence:
+  - reference: PMID:30905831
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002219 entry version 2; citation taken from the entry level
+  genome_accession: genbank:JH687388.1
+  locus_from: 627204
+  locus_to: 653681
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002219
+  source_label: (-)-(R)-nephthenol
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-7f223af5c5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

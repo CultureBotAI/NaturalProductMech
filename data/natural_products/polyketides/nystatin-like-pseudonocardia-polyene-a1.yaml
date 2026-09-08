@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-c1b767cb30
+label: nystatin-like Pseudonocardia polyene A1
+chemical_structure:
+  smiles: C[C@H]1/C=C/C=C/CC/C=C/C=C/C=C/C=C/[C@H](O[C@H]2[C@@H](O)[C@@H](N)[C@H](O[C@@H]3[C@@H](NC(C)=O)[C@H](O)[C@@H](O)[C@H](CO)O3)[C@@H](C)O2)C[C@H]4[C@H](C(O)=O)[C@@H](O)C[C@](C[C@@H](O)[C@H](O)CC[C@@H](O)C[C@@H](O)C[C@@H](O)CC(O[C@@H](C)[C@H](C)[C@@H]1O)=O)(O)O4
+  standard_inchi: InChI=1S/C55H88N2O22/c1-29-18-16-14-12-10-8-6-7-9-11-13-15-17-19-37(76-54-49(69)45(56)51(32(4)75-54)78-53-46(57-33(5)59)50(70)48(68)42(28-58)77-53)25-41-44(52(71)72)40(65)27-55(73,79-41)26-39(64)38(63)21-20-34(60)22-35(61)23-36(62)24-43(66)74-31(3)30(2)47(29)67/h6-7,9,11-19,29-32,34-42,44-51,53-54,58,60-65,67-70,73H,8,10,20-28,56H2,1-5H3,(H,57,59)(H,71,72)/b7-6+,11-9+,14-12+,15-13+,18-16+,19-17+/t29-,30-,31-,32+,34+,35+,36+,37-,38+,39+,40-,41-,42-,44+,45+,46-,47+,48-,49-,50-,51+,53+,54-,55+/m0/s1
+  standard_inchi_key: RTSRKBLQALDWOX-LYVKRTHYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000116
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+compound_classes:
+- Macrocyclic polyketide
+- Aminoglycoside
+producer_organisms:
+- taxon_id: NCBITaxon:2074
+  taxon_label: Pseudonocardia autotrophica
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000116
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22382166
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000116 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000116
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2074
+  organism_label: Pseudonocardia autotrophica
+  evidence:
+  - reference: PMID:22382166
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000116 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:EU108007.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000116
+  source_label: nystatin-like Pseudonocardia polyene A1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c1b767cb30
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

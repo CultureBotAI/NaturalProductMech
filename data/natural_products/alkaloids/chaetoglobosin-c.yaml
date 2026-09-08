@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-0ae653ce61
+label: chaetoglobosin C
+chemical_structure:
+  smiles: C[C@H]\1C/C=C/[C@H]2[C@H]3[C@](O3)([C@H]([C@@H]4[C@@]2(C(=O)CCC(=O)C(=O)/C(=C1)/C)C(=O)N[C@H]4CC5=CNC6=CC=CC=C65)C)C
+  standard_inchi: InChI=1S/C32H36N2O5/c1-17-8-7-10-22-29-31(4,39-29)19(3)27-24(15-20-16-33-23-11-6-5-9-21(20)23)34-30(38)32(22,27)26(36)13-12-25(35)28(37)18(2)14-17/h5-7,9-11,14,16-17,19,22,24,27,29,33H,8,12-13,15H2,1-4H3,(H,34,38)/b10-7+,18-14+/t17-,19-,22-,24-,27-,29-,31+,32+/m0/s1
+  standard_inchi_key: RIZAHVBYKWUPHQ-GNNSKLCBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000968
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Pseudoalkaloids
+  class_results:
+  - Cytochalasan alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA017501
+producer_organisms:
+- taxon_id: NCBITaxon:27334
+  taxon_label: Penicillium expansum
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000968
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:17636916
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000968 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000968
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:27334
+  organism_label: Penicillium expansum
+  evidence:
+  - reference: PMID:17636916
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000968 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM779763.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000968
+  source_label: chaetoglobosin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0ae653ce61
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

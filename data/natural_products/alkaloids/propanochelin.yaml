@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-30d8ebd1df
+label: propanochelin
+chemical_structure:
+  smiles: O=C(NCCCNC(=O)C1=C(O)C(O)=CC=C1)C1=C(O)C(O)=CC=C1
+  standard_inchi: InChI=1S/C17H18N2O6/c20-12-6-1-4-10(14(12)22)16(24)18-8-3-9-19-17(25)11-5-2-7-13(21)15(11)23/h1-2,4-7,20-23H,3,8-9H2,(H,18,24)(H,19,25)
+  standard_inchi_key: VIKJLUHSZSBRPD-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002473
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Polyamines
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033092
+producer_organisms:
+- taxon_id: NCBITaxon:1120925
+  taxon_label: Acinetobacter bouvetii DSM 14964 = CIP 107468
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002473
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32926028
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002473 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002473
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1120925
+  organism_label: Acinetobacter bouvetii DSM 14964 = CIP 107468
+  evidence:
+  - reference: PMID:32926028
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002473 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NZ_KB892261.1
+  locus_from: 30960
+  locus_to: 41799
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002473
+  source_label: propanochelin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-30d8ebd1df
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

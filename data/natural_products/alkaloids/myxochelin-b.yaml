@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-50886ce110
+label: myxochelin B
+chemical_structure:
+  smiles: C1=CC(=C(C(=C1)O)O)C(=O)NCCCC[C@@H](CN)NC(=O)C2=C(C(=CC=C2)O)O
+  standard_inchi: InChI=1S/C20H25N3O6/c21-11-12(23-20(29)14-7-4-9-16(25)18(14)27)5-1-2-10-22-19(28)13-6-3-8-15(24)17(13)26/h3-4,6-9,12,24-27H,1-2,5,10-11,21H2,(H,22,28)(H,23,29)/t12-/m0/s1
+  standard_inchi_key: QTARRKFUMCSVOF-LBPRGKRZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001345
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Polyamines
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:10873133
+producer_organisms:
+- taxon_id: NCBITaxon:675526
+  taxon_label: Stigmatella aurantiaca Sg a15
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001345
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:11562468
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001345 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001345
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:675526
+  organism_label: Stigmatella aurantiaca Sg a15
+  evidence:
+  - reference: PMID:11562468
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001345 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF299336.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001345
+  source_label: myxochelin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-50886ce110
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

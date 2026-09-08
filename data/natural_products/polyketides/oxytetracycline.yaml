@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-fa820c0e90
+label: oxytetracycline
+chemical_structure:
+  smiles: C[C@@]1([C@H]2[C@@H]([C@H]3[C@@H](C(=O)/C(=C(\N)/O)/C(=O)[C@]3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)N(C)C)O)O
+  standard_inchi: InChI=1S/C22H24N2O9/c1-21(32)7-5-4-6-8(25)9(7)15(26)10-12(21)17(28)13-14(24(2)3)16(27)11(20(23)31)19(30)22(13,33)18(10)29/h4-6,12-14,17,25-26,28,31-33H,23H2,1-3H3/b20-11-/t12-,13-,14+,17+,21-,22+/m1/s1
+  standard_inchi_key: FYDOORKXBWEKQM-GUQPPTOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000254
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Tetracyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:5280972
+producer_organisms:
+- taxon_id: NCBITaxon:1927
+  taxon_label: Streptomyces rimosus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000254
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16597959
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000254 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000254
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1927
+  organism_label: Streptomyces rimosus
+  evidence:
+  - reference: PMID:16597959
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000254 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ143963.2
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000254
+  source_label: oxytetracycline
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fa820c0e90
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

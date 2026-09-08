@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-c1453e04d6
+label: saalfelduracin
+chemical_structure:
+  smiles: C[C@H]([C@H](NC1=S)C2=NC([C@](N3)([H])[C@](C4=NC(C(N[C@@](C(N/C(C5=N[C@](C(N[C@](C(C)(O)[C@@H](C)O)([H])C6=NC1=CS6)=O)([H])CS5)=C\C)=O)([H])[C@@H](C)O)=O)=CS4)(NC(C(NC(C(NC(C(NC([C@@](C)([H])N[C@@H]7C=CC8=C(N=C9C=C8[C@@H](O)C)[C@H]7O)=O)=C)=O)=C)=O)=C)=O)CCC3C%10=NC(C(NC(C(NC(C(O)=O)=C)=O)=C)=O)=CS%10)=CS2)OC9=O
+  standard_inchi: InChI=1S/C69H76N18O18S6/c1-13-36-61-80-42(21-107-61)58(99)86-50(68(12,104)33(11)90)64-82-44(23-110-64)60(106)85-46-32(10)105-66(103)39-18-35(30(8)88)34-14-15-37(48(91)47(34)76-39)70-24(2)51(92)71-25(3)52(93)72-26(4)53(94)73-28(6)55(96)87-69(67-83-43(22-111-67)57(98)84-45(31(9)89)59(100)78-36)17-16-38(77-49(69)40-19-109-63(46)79-40)62-81-41(20-108-62)56(97)74-27(5)54(95)75-29(7)65(101)102/h13-15,18-20,22-24,30-33,37-38,42,45-46,48-50,70,77,88-91,104H,3-7,16-17,21H2,1-2,8-12H3,(H,71,92)(H,72,93)(H,73,94)(H,74,97)(H,75,95)(H,78,100)(H,84,98)(H,85,106)(H,86,99)(H,87,96)(H,101,102)/b36-13-/t24-,30-,31+,32+,33+,37+,38?,42+,45-,46-,48-,49+,50+,68?,69+/m0/s1
+  standard_inchi_key: AGEJUJRSMSUTBD-PSLFQBRSSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001471
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:394193
+  taxon_label: Amycolatopsis saalfeldensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001471
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:29983054
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001471 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001471
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:394193
+  organism_label: Amycolatopsis saalfeldensis
+  evidence:
+  - reference: PMID:29983054
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001471 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_FOEF01000002.1
+  locus_from: 708690
+  locus_to: 737346
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001471
+  source_label: saalfelduracin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c1453e04d6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

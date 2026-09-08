@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-976b7306e7
+label: cryptosporioptide B
+chemical_structure:
+  smiles: CCC(C(=O)O)C(=O)O[C@H]1[C@@]2([C@@H](O2)C(=O)C3=C(C4=C(C=CC(=C4O)C5=C(C6=C(C=C5)O[C@]7([C@H]([C@@]8([C@@H](O8)C(=O)C7=C6O)C)OC(=O)CC(=O)O)C)O)O[C@@]13C)O)C
+  standard_inchi: InChI=1S/C38H34O18/c1-6-12(31(48)49)32(50)52-34-36(3)22(28(47)30-38(34,5)56-30)26(45)20-16(54-36)10-8-14(24(20)43)13-7-9-15-19(23(13)42)25(44)21-27(46)29-37(4,55-29)33(35(21,2)53-15)51-18(41)11-17(39)40/h7-10,12,29-30,33-34,42-45H,6,11H2,1-5H3,(H,39,40)(H,48,49)/t12?,29-,30-,33+,34+,35+,36+,37-,38-/m0/s1
+  standard_inchi_key: LAHOZMDSUWLRDY-JNEPIJITSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002063
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Xanthones
+  class_results:
+  - Methyl xanthones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA001897
+producer_organisms:
+- taxon_id: NCBITaxon:2572248
+  taxon_label: Cryptosporiopsis sp. 8999
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002063
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:30996871
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002063 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002063
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2572248
+  organism_label: Cryptosporiopsis sp. 8999
+  evidence:
+  - reference: PMID:30996871
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002063 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MK182094.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002063
+  source_label: cryptosporioptide B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-976b7306e7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

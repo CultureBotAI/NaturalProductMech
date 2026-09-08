@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-540c385815
+label: tubulysin H
+chemical_structure:
+  smiles: '[H][C@](C)(CC)[C@]([H])(NC(=O)[C@H]1CCCCN1C)C(=O)N(COC(C)=O)[C@H](C[C@@H](OC(C)=O)C1=NC(=CS1)C(=O)N[C@H](C[C@H](C)C(O)=O)CC1=CC=CC=C1)C(C)C'
+  standard_inchi: InChI=1S/C40H59N5O9S/c1-9-25(4)35(43-37(49)32-17-13-14-18-44(32)8)39(50)45(23-53-27(6)46)33(24(2)3)21-34(54-28(7)47)38-42-31(22-55-38)36(48)41-30(19-26(5)40(51)52)20-29-15-11-10-12-16-29/h10-12,15-16,22,24-26,30,32-35H,9,13-14,17-21,23H2,1-8H3,(H,41,48)(H,43,49)(H,51,52)/t25-,26-,30+,32+,33+,34+,35-/m0/s1
+  standard_inchi_key: CYTBBNFQKZOQJE-YRKZXFTRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001344
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA01723
+- pubchem:11411735
+producer_organisms:
+- taxon_id: NCBITaxon:764904
+  taxon_label: Cystobacter sp. SBCb004
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001344
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20338521
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001344 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001344
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:764904
+  organism_label: Cystobacter sp. SBCb004
+  evidence:
+  - reference: PMID:20338521
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001344 entry version 4; citation taken from the entry level
+  genome_accession: genbank:GU002154.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001344
+  source_label: tubulysin H
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-540c385815
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

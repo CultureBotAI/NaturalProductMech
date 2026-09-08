@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-5b7b0396df
+label: (-)-δ-cadinene
+chemical_structure:
+  smiles: CC1=C[C@@H]2[C@H](CCC(=C2CC1)C)C(C)C
+  standard_inchi: InChI=1S/C15H24/c1-10(2)13-8-6-12(4)14-7-5-11(3)9-15(13)14/h9-10,13,15H,5-8H2,1-4H3/t13-,15-/m1/s1
+  standard_inchi_key: FUCYIEXQVQJBKY-UKRRQHHQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000674
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Cadinane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:12306055
+producer_organisms:
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus ATCC 27064
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000674
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:21276937
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000674 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000674
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1901
+  organism_label: Streptomyces clavuligerus ATCC 27064
+  evidence:
+  - reference: PMID:21276937
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000674 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DS570637.1
+  locus_from: 74962
+  locus_to: 79952
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000674
+  source_label: (-)-δ-cadinene
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5b7b0396df
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-262055844a
+label: Ristocetin A
+chemical_structure:
+  smiles: C[C@H]1[C@@H]([C@@H](C[C@H](O1)O[C@H]2[C@H]3C(=O)N[C@@H](C4=CC(=CC(=C4C5=C(C=CC(=C5)[C@H](C(=O)N3)NC(=O)[C@H]6C7=CC(=C(C(=C7)OC8=CC=C2C=C8)O[C@H]9[C@@H]([C@H]([C@@H]([C@H](O9)COC1[C@@H]([C@@H]([C@H]([C@@H](O1)C)O)O)O)O)O)O[C@H]1[C@@H]([C@@H]([C@H]([C@@H](O1)CO)O)O)O[C@H]1[C@H]([C@@H]([C@@H](CO1)O)O)O)OC1=CC=C(C=C1)[C@H]([C@@H]1C(=O)N[C@@H](C2=CC(=C(C(=C2)O)C)OC2=C(C=CC(=C2)[C@H](C(=O)N1)N)O)C(=O)N6)O)O)O[C@H]1[C@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O)O)C(=O)OC)N)O
+  standard_inchi: InChI=1S/C95H110N8O44/c1-30-47(109)18-37-20-49(30)139-50-19-35(9-16-46(50)108)59(97)84(125)102-64-68(113)33-5-11-40(12-6-33)137-52-21-38-22-53(81(52)145-95-83(76(121)72(117)56(143-95)29-134-91-78(123)73(118)67(112)32(3)136-91)147-94-82(75(120)71(116)55(27-105)142-94)146-92-77(122)69(114)48(110)28-133-92)138-41-13-7-34(8-14-41)80(144-57-25-44(96)66(111)31(2)135-57)65-89(130)101-63(90(131)132-4)43-23-39(106)24-51(140-93-79(124)74(119)70(115)54(26-104)141-93)58(43)42-17-36(10-15-45(42)107)60(85(126)103-65)98-87(128)62(38)99-86(127)61(37)100-88(64)129/h5-24,31-32,44,48,54-57,59-80,82-83,91-95,104-124H,25-29,96-97H2,1-4H3,(H,98,128)(H,99,127)(H,100,129)(H,101,130)(H,102,125)(H,103,126)/t31-,32-,44+,48+,54+,55-,56+,57+,59+,60+,61-,62+,63-,64+,65-,66-,67-,68+,69+,70+,71-,72+,73+,74-,75+,76-,77-,78+,79-,80+,82+,83+,91?,92-,93+,94-,95-/m0/s1
+  standard_inchi_key: VUOPFFVAZTUEGW-FBMDODLCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000418
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Vancomycins and Teicoplanins
+  is_glycoside: true
+bgc_class:
+- NRPS
+compound_classes:
+- Glycopeptide
+xrefs:
+- pubchem:16131418
+- npatlas:NPA020115
+producer_organisms:
+- taxon_id: NCBITaxon:31959
+  taxon_label: Amycolatopsis lurida
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000418
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1128/aac.03512-14
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000418 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000418
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:31959
+  organism_label: Amycolatopsis lurida
+  evidence:
+  - reference: DOI:10.1128/aac.03512-14
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000418 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KJ364518.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000418
+  source_label: Ristocetin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-262055844a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

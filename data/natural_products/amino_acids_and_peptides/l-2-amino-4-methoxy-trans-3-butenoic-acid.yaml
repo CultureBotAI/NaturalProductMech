@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-2d82b18af5
+label: L-2-amino-4-methoxy-trans-3-butenoic acid
+chemical_structure:
+  smiles: CO\C=C\[C@H](N)C(O)=O
+  standard_inchi: InChI=1S/C5H9NO3/c1-9-3-2-4(6)5(7)8/h2-4H,6H2,1H3,(H,7,8)/b3-2+/t4-/m0/s1
+  standard_inchi_key: HLOPMQJRUIOMJO-ZPYNKGFJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000287
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Aminoacids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA017445
+producer_organisms:
+- taxon_id: NCBITaxon:208964
+  taxon_label: Pseudomonas aeruginosa PAO1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000287
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20543073
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000287 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000287
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:208964
+  organism_label: Pseudomonas aeruginosa PAO1
+  evidence:
+  - reference: PMID:20543073
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000287 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AE004091.2
+  locus_from: 2532659
+  locus_to: 2545669
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000287
+  source_label: L-2-amino-4-methoxy-trans-3-butenoic acid
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2d82b18af5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-a1d6c29562
+label: hedamycin
+chemical_structure:
+  smiles: CC1C(C(CC(O1)C2=CC(=C(C3=C2C(=O)C4=CC(=C5C(=O)C=C(OC5=C4C3=O)C6(C(O6)C7C(O7)C)C)C)O)C8CC(C(C(O8)C)O)(C)N(C)C)N(C)C)O
+  standard_inchi: InChI=1S/C41H50N2O11/c1-16-11-22-30(37-28(16)24(44)14-27(53-37)41(6)39(54-41)36-18(3)52-36)35(48)31-29(34(22)47)20(25-13-23(42(7)8)32(45)17(2)50-25)12-21(33(31)46)26-15-40(5,43(9)10)38(49)19(4)51-26/h11-12,14,17-19,23,25-26,32,36,38-39,45-46,49H,13,15H2,1-10H3
+  standard_inchi_key: RZOFHOWMWMTHDX-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000233
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:98033
+producer_organisms:
+- taxon_id: NCBITaxon:1943
+  taxon_label: Streptomyces griseoruber
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000233
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15271354
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000233 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000233
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1943
+  organism_label: Streptomyces griseoruber
+  evidence:
+  - reference: PMID:15271354
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000233 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY196994.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000233
+  source_label: hedamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a1d6c29562
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

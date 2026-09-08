@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-6c7f57416d
+label: quinocarcin
+chemical_structure:
+  smiles: CN1[C@H]2C[C@H]([C@@H]1[C@@H]3CC4=C([C@H]5N3[C@@H]2OC5)C(=CC=C4)OC)C(=O)O
+  standard_inchi: InChI=1S/C18H22N2O4/c1-19-12-7-10(18(21)22)16(19)11-6-9-4-3-5-14(23-2)15(9)13-8-24-17(12)20(11)13/h3-5,10-13,16-17H,6-8H2,1-2H3,(H,21,22)/t10-,11+,12+,13+,16-,17-/m1/s1
+  standard_inchi_key: VOUMVHRRAVBACH-RXCQEBQVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000414
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tyrosine alkaloids
+  class_results:
+  - Isoquinoline alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:158486
+producer_organisms:
+- taxon_id: NCBITaxon:1182637
+  taxon_label: Streptomyces melanovinaceus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000414
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24269153
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000414 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000414
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1182637
+  organism_label: Streptomyces melanovinaceus
+  evidence:
+  - reference: PMID:24269153
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000414 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB819321.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000414
+  source_label: quinocarcin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6c7f57416d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

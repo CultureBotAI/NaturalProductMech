@@ -1,0 +1,108 @@
+identifier: naturalproductmech:mibig-60bde117a0
+label: linearmycin C
+chemical_structure:
+  smiles: CC(/C=C/CC/C=C/C=C/C=C/C=C/C=C(\C)/C(=O)O)C(C(C)C(/C=C/C=C/C=C/C=C/C=C/CC(C(C)C(=O)CC(CC(CC(/C=C/CC(CC(CC(CC(/C=C/CC(/C=C/CC(CC(CCCCN)O)O)O)O)O)O)O)O)O)O)O)O)O
+  standard_inchi: InChI=1S/C67H105NO16/c1-49(30-21-17-13-9-6-5-7-10-14-18-22-31-50(2)67(83)84)66(82)52(4)64(80)40-24-20-16-12-8-11-15-19-23-39-63(79)51(3)65(81)48-62(78)47-61(77)45-58(74)38-29-37-57(73)44-60(76)46-59(75)43-56(72)36-28-34-53(69)33-27-35-55(71)42-54(70)32-25-26-41-68/h5-12,14-16,18-24,27-31,33,36,38,40,49,51-64,66,69-80,82H,13,17,25-26,32,34-35,37,39,41-48,68H2,1-4H3,(H,83,84)/b7-5+,9-6+,12-8+,14-10+,15-11+,20-16+,22-18+,23-19+,30-21+,33-27+,36-28+,38-29+,40-24+,50-31+
+  standard_inchi_key: UDHUSHDWZRJLRJ-SGLVRUAKSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002072
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  - Polyketides
+  superclass_results:
+  - Fatty Acids and Conjugates
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  - Unsaturated fatty acids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:139590153
+- npatlas:NPA022820
+producer_organisms:
+- taxon_id: NCBITaxon:465541
+  taxon_label: Streptomyces sp. Mg1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002072
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28919037
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002072 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:465541
+  taxon_label: Streptomyces sp. Mg1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002072
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28919037
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002072 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002072
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:465541
+  organism_label: Streptomyces sp. Mg1
+  evidence:
+  - reference: PMID:28919037
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002072 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP011664.1
+  locus_from: 1061319
+  locus_to: 1236790
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0002072
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:465541
+  organism_label: Streptomyces sp. Mg1
+  evidence:
+  - reference: PMID:28919037
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002072 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP011664.1
+  locus_from: 1061319
+  locus_to: 1236790
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002072
+  source_label: linearmycin C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-60bde117a0
+- source: MIBIG
+  source_id: BGC0002072
+  source_label: linearmycin C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-aac9cebc27
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

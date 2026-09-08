@@ -1,0 +1,111 @@
+identifier: naturalproductmech:mibig-41a7dd6467
+label: siamycin I
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C(=O)N[C@H](C(=O)N[C@@H](CSSC[C@H]2C(=O)N[C@H](C(=O)N[C@H]3CC(=O)N[C@@H](CSSC[C@@H](C(=O)NCC(=O)N[C@H](C(=O)N[C@H](C(=O)N1)C)CC4=CC=C(C=C4)O)NC(=O)CNC(=O)[C@@H](NC(=O)[C@@H](NC3=O)CC5=CC=CC=C5)C)C(=O)N[C@H](C(=O)NCC(=O)N[C@H](C(=O)NCC(=O)N[C@H](C(=O)N2)CO)C(C)C)CC(C)C)CC(=O)N)C(=O)N[C@@H](CC6=CC=CC=C6)C(=O)N[C@@H](CC7=CNC8=CC=CC=C87)C(=O)O)C(C)C
+  standard_inchi: InChI=1S/C97H131N23O26S4/c1-11-50(8)80-96(144)119-79(49(6)7)95(143)117-71(93(141)112-63(32-54-22-16-13-17-23-54)87(135)115-66(97(145)146)34-56-37-99-59-25-19-18-24-58(56)59)46-150-149-45-70-92(140)113-64(35-72(98)123)88(136)114-65-36-73(124)108-69(91(139)110-60(30-47(2)3)83(131)101-41-77(128)118-78(48(4)5)94(142)103-40-75(126)107-67(42-121)90(138)116-70)44-148-147-43-68(109-76(127)38-100-81(129)51(9)104-86(134)62(111-89(65)137)31-53-20-14-12-15-21-53)84(132)102-39-74(125)106-61(33-55-26-28-57(122)29-27-55)85(133)105-52(10)82(130)120-80/h12-29,37,47-52,60-71,78-80,99,121-122H,11,30-36,38-46H2,1-10H3,(H2,98,123)(H,100,129)(H,101,131)(H,102,132)(H,103,142)(H,104,134)(H,105,133)(H,106,125)(H,107,126)(H,108,124)(H,109,127)(H,110,139)(H,111,137)(H,112,141)(H,113,140)(H,114,136)(H,115,135)(H,116,138)(H,117,143)(H,118,128)(H,119,144)(H,120,130)(H,145,146)/t50-,51-,52-,60-,61-,62-,63-,64-,65-,66-,67-,68-,69-,70-,71-,78-,79-,80-/m0/s1
+  standard_inchi_key: TXYRKTDGDMHVHR-NEKRQKPVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001779
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+synonyms:
+- value: siamycin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001779
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:16130275
+producer_organisms:
+- taxon_id: NCBITaxon:40318
+  taxon_label: Streptomyces nodosus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001779
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28075554
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001779 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001920
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29974638
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001920 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001779
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:40318
+  organism_label: Streptomyces nodosus
+  evidence:
+  - reference: PMID:28075554
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001779 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP009313.1
+  locus_from: 7655773
+  locus_to: 7662064
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001920
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:29974638
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001920 entry version 4; citation taken from the entry level
+  genome_accession: genbank:LC381634.1
+  locus_from: 10368
+  locus_to: 22235
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001779
+  source_label: siamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-41a7dd6467
+- source: MIBIG
+  source_id: BGC0001920
+  source_label: siamycin I
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-0df0daa48f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001779, BGC0001920.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-45334f6cee
+label: lapcin
+chemical_structure:
+  smiles: CCCCCCCCCCCC(O)CC(N[C@@H](C)C(N[C@@H](CO)C(N[C@@H](C)C(NC1=CC=C(C2=NC(C3=NC(C(N[C@H](C(NC4=CC=C(C(NC5=C(OC(C)C)C(O)=C(C(NC6=CC=C(C(O)=O)C=C6)=O)C=C5)=O)C=C4)=O)CC(N)=O)=O)=CS3)=CS2)C=C1)=O)=O)=O)=O
+  standard_inchi: InChI=1S/C64H77N11O15S2/c1-6-7-8-9-10-11-12-13-14-15-44(77)30-52(79)66-36(4)56(82)73-48(32-76)60(86)67-37(5)55(81)68-41-24-18-39(19-25-41)62-75-50(34-91-62)63-74-49(33-92-63)61(87)72-47(31-51(65)78)59(85)70-43-22-16-38(17-23-43)57(83)71-46-29-28-45(53(80)54(46)90-35(2)3)58(84)69-42-26-20-40(21-27-42)64(88)89/h16-29,33-37,44,47-48,76-77,80H,6-15,30-32H2,1-5H3,(H2,65,78)(H,66,79)(H,67,86)(H,68,81)(H,69,84)(H,70,85)(H,71,83)(H,72,87)(H,73,82)(H,88,89)/t36-,37-,44?,47-,48-/m0/s1
+  standard_inchi_key: PGUWWRYQXTXXKU-LPKYMUNCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002654
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Linear
+producer_organisms:
+- taxon_id: NCBITaxon:77133
+  taxon_label: uncultured bacterium
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002654
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:35149673
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002654 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002654
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:77133
+  organism_label: uncultured bacterium
+  evidence:
+  - reference: PMID:35149673
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002654 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MZ165589.1
+  locus_from: 1
+  locus_to: 49405
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002654
+  source_label: lapcin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-45334f6cee
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

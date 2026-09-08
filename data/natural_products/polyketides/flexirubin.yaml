@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-236ff619a0
+label: flexirubin
+chemical_structure:
+  smiles: CCCCCCCCCCCCC1=C(C=C(C=C1OC(=O)/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C2=CC(=C(C=C2)O)C)C)O
+  standard_inchi: InChI=1S/C43H54O4/c1-4-5-6-7-8-9-17-20-23-26-29-39-41(45)33-36(2)34-42(39)47-43(46)30-27-24-21-18-15-13-11-10-12-14-16-19-22-25-28-38-31-32-40(44)37(3)35-38/h10-16,18-19,21-22,24-25,27-28,30-35,44-45H,4-9,17,20,23,26,29H2,1-3H3/b12-10+,13-11+,16-14+,18-15+,22-19+,24-21+,28-25+,30-27+
+  standard_inchi_key: GFNJWVBJKYYUIN-CMUOTRNOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000838
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Catechols with side chains
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:376686
+  taxon_label: Flavobacterium johnsoniae UW101
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000838
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19717629
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000838 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000838
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:376686
+  organism_label: Flavobacterium johnsoniae UW101
+  evidence:
+  - reference: PMID:19717629
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000838 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP000685.1
+  locus_from: 1218315
+  locus_to: 1253377
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000838
+  source_label: flexirubin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-236ff619a0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

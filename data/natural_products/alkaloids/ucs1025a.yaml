@@ -1,0 +1,78 @@
+identifier: naturalproductmech:mibig-27288803fd
+label: ucs1025a
+chemical_structure:
+  smiles: C[C@H]1C=C[C@H]2CCCC[C@@H]2[C@H]1C(=O)[C@@H]1C(=O)N2CC[C@H]3C(=O)O[C@@H]1[C@]32O
+  standard_inchi: InChI=1S/C20H25NO5/c1-10-6-7-11-4-2-3-5-12(11)14(10)16(22)15-17-20(25)13(19(24)26-17)8-9-21(20)18(15)23/h6-7,10-15,17,25H,2-5,8-9H2,1H3/t10-,11+,12-,13-,14-,15-,17-,20+/m0/s1
+  standard_inchi_key: VUQSZZXQGQSRJA-TWKBTRLKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001449
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+- OTHER
+xrefs:
+- npatlas:NPA020563
+- pubchem:11710200
+producer_organisms:
+- taxon_id: NCBITaxon:78579
+  taxon_label: Thermothelomyces thermophilus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001449
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.
+    That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the
+    taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.53.294
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001449 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001449
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:78579
+  organism_label: Thermothelomyces thermophilus
+  evidence:
+  - reference: DOI:10.7164/antibiotics.53.294
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001449 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP003004.1
+  locus_from: 1175000
+  locus_to: 1217500
+  bgc_class:
+  - NRPS
+  - PKS
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001449
+  source_label: ucs1025a
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-27288803fd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-4a5b2f9c5d
+label: aspyridone A
+chemical_structure:
+  smiles: CC[C@H](C)C[C@H](C)C(=O)C1=C(C(=CNC1=O)C2=CC=C(C=C2)O)O
+  standard_inchi: InChI=1S/C19H23NO4/c1-4-11(2)9-12(3)17(22)16-18(23)15(10-20-19(16)24)13-5-7-14(21)8-6-13/h5-8,10-12,21H,4,9H2,1-3H3,(H2,20,23,24)/t11-,12-/m0/s1
+  standard_inchi_key: LIBKJCZUBOETPB-RYUDHWBXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000959
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Nicotinic acid alkaloids
+  class_results:
+  - Pyridine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:54710080
+producer_organisms:
+- taxon_id: NCBITaxon:227321
+  taxon_label: Aspergillus nidulans FGSC A4
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000959
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:17369821
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000959 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000959
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:227321
+  organism_label: Aspergillus nidulans FGSC A4
+  evidence:
+  - reference: PMID:17369821
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000959 entry version 5; citation taken from the entry level
+  genome_accession: genbank:BN001305.1
+  locus_from: 383588
+  locus_to: 417319
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000959
+  source_label: aspyridone A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4a5b2f9c5d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

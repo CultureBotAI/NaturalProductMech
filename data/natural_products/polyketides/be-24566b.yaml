@@ -1,0 +1,106 @@
+identifier: naturalproductmech:mibig-aec7953c7d
+label: BE-24566B
+chemical_structure:
+  smiles: CC1=CC(O)=CC2=C1C1OC(C)(CC3=C1C(O)=C1C(=O)C4=C(C=C(O)C=C4O)C(C)(C)C1=C3)O2
+  standard_inchi: InChI=1S/C27H24O7/c1-11-5-13(28)9-18-19(11)25-20-12(10-27(4,33-18)34-25)6-15-22(23(20)31)24(32)21-16(26(15,2)3)7-14(29)8-17(21)30/h5-9,25,28-31H,10H2,1-4H3
+  standard_inchi_key: MDUGEFRGUDVHQH-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001366
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Fasamycins and derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA01814
+- pubchem:9868865
+producer_organisms:
+- taxon_id: NCBITaxon:1840610
+  taxon_label: Streptomyces sp. FJS31-2
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001366
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27248985
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001366 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001512
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29227089
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001512 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001366
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1840610
+  organism_label: Streptomyces sp. FJS31-2
+  evidence:
+  - reference: PMID:27248985
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001366 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KU243130.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001512
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:29227089
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001512 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY964612.1
+  locus_from: 50
+  locus_to: 19375
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001366
+  source_label: BE-24566B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-aec7953c7d
+- source: MIBIG
+  source_id: BGC0001512
+  source_label: BE-24566B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4257f44c74
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001366, BGC0001512.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

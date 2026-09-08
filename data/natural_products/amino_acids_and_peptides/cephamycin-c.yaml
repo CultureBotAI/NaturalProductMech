@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-6977d4d792
+label: cephamycin C
+chemical_structure:
+  smiles: CO[C@]1(NC(=O)CCCC(N)C(O)=O)C2SCC(COC(N)=O)=C(N2C1=O)C(O)=O
+  standard_inchi: InChI=1S/C16H22N4O9S/c1-28-16(19-9(21)4-2-3-8(17)11(22)23)13(26)20-10(12(24)25)7(5-29-15(18)27)6-30-14(16)20/h8,14H,2-6,17H2,1H3,(H2,18,27)(H,19,21)(H,22,23)(H,24,25)/t8?,14?,16-/m0/s1
+  standard_inchi_key: LXWBXEWUSAABOA-YQIDSGEHSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000319
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - β-lactams
+  class_results:
+  - Cephalosporins
+  - Cephamycins
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA08205
+producer_organisms:
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus ATCC 27064
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000319
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.
+    That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the
+    taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:3130293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000319 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000319
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1901
+  organism_label: Streptomyces clavuligerus ATCC 27064
+  evidence:
+  - reference: PMID:3130293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000319 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DS570624.1
+  locus_from: 142995
+  locus_to: 177446
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000319
+  source_label: cephamycin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6977d4d792
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

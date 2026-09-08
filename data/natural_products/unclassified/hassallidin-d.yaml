@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-06642c99fb
+label: hassallidin D
+chemical_structure:
+  smiles: OC1=CC=C(CC2NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(C(CCCCCCCCCCCCC)OC3C(O)C(OC4OC(O)C(O)C(O)C4NC(=O)C)C(O)CO3)O)C(C)O)C(C)OC(=O)C(CC3=CC=C(O)C=C3)NC(=O)C(C(C)OC3OC(COC(=O)C)C(O)C(O)C3OC(=O)C)N(C)C(=O)CNC(=O)C(CCC(=O)N)NC(=O)/C(=C/C)/NC2=O)C(O)C)C=C1
+  standard_inchi: InChI=1S/C84H127N11O35/c1-11-13-14-15-16-17-18-19-20-21-22-23-55(127-83-69(111)70(54(103)37-123-83)129-82-62(87-43(7)98)66(108)68(110)81(121)130-82)65(107)79(119)93-60(40(4)97)76(116)94-61-41(5)124-80(120)53(35-47-26-30-49(102)31-27-47)91-78(118)63(42(6)125-84-71(126-45(9)100)67(109)64(106)56(128-84)38-122-44(8)99)95(10)58(105)36-86-72(112)51(32-33-57(85)104)89-73(113)50(12-2)88-74(114)52(34-46-24-28-48(101)29-25-46)90-75(115)59(39(3)96)92-77(61)117/h12,24-31,39-42,51-56,59-71,81-84,96-97,101-103,106-111,121H,11,13-23,32-38H2,1-10H3,(H2,85,104)(H,86,112)(H,87,98)(H,88,114)(H,89,113)(H,90,115)(H,91,118)(H,92,117)(H,93,119)(H,94,116)/b50-12-
+  standard_inchi_key: FREYOSGVWPNHDE-DGMWAQSLSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000369
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- SACCHARIDE
+compound_classes:
+- Peptide alkaloid
+- Fatty acid derivate
+- Depsipeptide
+producer_organisms:
+- taxon_id: NCBITaxon:1497395
+  taxon_label: Anabaena sp. Syke748
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000369
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1073/pnas.1320913111
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000369 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000369
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1497395
+  organism_label: Anabaena sp. Syke748
+  evidence:
+  - reference: DOI:10.1073/pnas.1320913111
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000369 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KJ502174.1
+  bgc_class:
+  - NRPS
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000369
+  source_label: hassallidin D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-06642c99fb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

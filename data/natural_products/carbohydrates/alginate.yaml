@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-3d01c83d0e
+label: alginate
+chemical_structure:
+  smiles: '[C@@H]1([C@@H]([C@H](OC([C@H]1O)O)C(=O)O)O)O.C(=O)[C@H]([C@H]([C@@H]([C@H](C(=O)[O-])O)O)O)O.OC1O[C@@H]([C@H]([C@@H]([C@@H]1OC(C)=O)OC(C)=O)O)C(O)=O'
+  standard_inchi: InChI=1S/C10H14O9.2C6H10O7/c1-3(11)17-6-5(13)7(9(14)15)19-10(16)8(6)18-4(2)12;7-1-2(8)4(5(10)11)13-6(12)3(1)9;7-1-2(8)3(9)4(10)5(11)6(12)13/h5-8,10,13,16H,1-2H3,(H,14,15);1-4,6-9,12H,(H,10,11);1-5,8-11H,(H,12,13)/p-1/t5-,6-,7-,8-,10?;1-,2-,3-,4-,6?;2-,3-,4+,5-/m001/s1
+  standard_inchi_key: SMBZBFKIKPIHRX-SKDOGWRHSA-M
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000725
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Saccharides
+  class_results:
+  - Monosaccharides
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- pubchem:25202446
+- pubchem:131704328
+producer_organisms:
+- taxon_id: NCBITaxon:208964
+  taxon_label: Pseudomonas aeruginosa PAO1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000725
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:7686997
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000725 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000725
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:208964
+  organism_label: Pseudomonas aeruginosa PAO1
+  evidence:
+  - reference: PMID:7686997
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000725 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AE004091.2
+  locus_from: 3962825
+  locus_to: 3979476
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000725
+  source_label: alginate
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3d01c83d0e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

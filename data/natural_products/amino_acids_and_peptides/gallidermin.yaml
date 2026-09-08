@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-f91ecf51fe
+label: gallidermin
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H](C(=O)N[C@@H](C)C(=O)N[C@@H]1CSC[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC1=O)CCCCN)CC2=CC=CC=C2)CC(C)C)C(=O)N[C@@H]3[C@@H](SC[C@@H](NC(=O)CNC(=O)[C@@H]4CCCN4C3=O)C(=O)N[C@@H](C)C(=O)N[C@@H](CCCCN)C(=O)N/C(=C/C)/C(=O)NCC(=O)N[C@@H]5CSC[C@@H]6C(=O)N/C=C/SC[C@H](C(=O)N[C@H](C(=O)N6)CC7=CC=C(C=C7)O)NC(=O)[C@@H](NC(=O)[C@@H](NC5=O)CC8=CC=CC=C8)CC(=O)N)C)N
+  standard_inchi: InChI=1S/C98H141N25O23S4/c1-9-52(5)78(102)97(145)107-54(7)81(129)118-71-48-149-49-72(121-86(134)63(38-51(3)4)113-87(135)64(39-56-22-13-11-14-23-56)114-85(133)62(112-93(71)141)27-18-20-34-100)95(143)122-79-55(8)150-50-73(109-77(127)44-105-96(144)74-28-21-36-123(74)98(79)146)91(139)106-53(6)80(128)111-61(26-17-19-33-99)84(132)110-60(10-2)82(130)104-43-76(126)108-69-47-148-46-68-83(131)103-35-37-147-45-70(94(142)116-66(89(137)119-68)41-58-29-31-59(124)32-30-58)120-90(138)67(42-75(101)125)117-88(136)65(115-92(69)140)40-57-24-15-12-16-25-57/h10-16,22-25,29-32,35,37,51-55,61-74,78-79,124H,9,17-21,26-28,33-34,36,38-50,99-100,102H2,1-8H3,(H2,101,125)(H,103,131)(H,104,130)(H,105,144)(H,106,139)(H,107,145)(H,108,126)(H,109,127)(H,110,132)(H,111,128)(H,112,141)(H,113,135)(H,114,133)(H,115,140)(H,116,142)(H,117,136)(H,118,129)(H,119,137)(H,120,138)(H,121,134)(H,122,143)/b37-35+,60-10+/t52-,53-,54-,55-,61-,62-,63-,64-,65-,66-,67-,68+,69+,70+,71+,72+,73+,74-,78-,79+/m0/s1
+  standard_inchi_key: AHMZTHYNOXWCBS-PCUVAHMGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000514
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:73348284
+producer_organisms:
+- taxon_id: NCBITaxon:1293
+  taxon_label: Staphylococcus gallinarum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000514
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17194841
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000514 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000514
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1293
+  organism_label: Staphylococcus gallinarum
+  evidence:
+  - reference: PMID:17194841
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000514 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ367437.1
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000514
+  source_label: gallidermin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f91ecf51fe
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

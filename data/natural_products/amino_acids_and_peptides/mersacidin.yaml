@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-490475bd95
+label: mersacidin
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H](C(=O)NC(=C)S)NC(=O)[C@H](CS)NC(=O)[C@H](CCC(=O)O)NC(=O)C(=C)NC(=O)[C@H](CC)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](CC)NC(=O)[C@H](CS)NC(=O)[C@H](C(C)C)NC(=O)CNC(=O)CNC(=O)CNC(=O)CNC(=O)[C@@H]1CCCN1C(=O)[C@H](CC(C)C)NC(=O)[C@@H](CC)NC(=O)[C@H](CC2=CC=CC=C2)NC(=O)[C@@H](CC)NC(=O)[C@H](CS)N
+  standard_inchi: InChI=1S/C80H128N20O21S4/c1-15-43(12)65(79(120)87-45(14)125)99-76(117)57(39-124)96-72(113)52(27-28-63(105)106)92-66(107)44(13)86-68(109)48(16-2)89-73(114)53(30-40(6)7)93-70(111)50(18-4)91-75(116)56(38-123)97-78(119)64(42(10)11)98-62(104)36-84-60(102)34-82-59(101)33-83-61(103)35-85-77(118)58-26-23-29-100(58)80(121)55(31-41(8)9)95-71(112)51(19-5)90-74(115)54(32-46-24-21-20-22-25-46)94-69(110)49(17-3)88-67(108)47(81)37-122/h20-22,24-25,40-43,47-58,64-65,122-125H,13-19,23,26-39,81H2,1-12H3,(H,82,101)(H,83,103)(H,84,102)(H,85,118)(H,86,109)(H,87,120)(H,88,108)(H,89,114)(H,90,115)(H,91,116)(H,92,107)(H,93,111)(H,94,110)(H,95,112)(H,96,113)(H,97,119)(H,98,104)(H,99,117)(H,105,106)/t43-,47-,48-,49+,50+,51+,52-,53-,54-,55-,56-,57-,58-,64-,65-/m0/s1
+  standard_inchi_key: JGGHZZDYVUZKDW-JVZLEVGOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000527
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:16132433
+producer_organisms:
+- taxon_id: NCBITaxon:69002
+  taxon_label: Bacillus sp. HIL-Y85/54728
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000527
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:10831439
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000527 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000527
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:69002
+  organism_label: Bacillus sp. HIL-Y85/54728
+  evidence:
+  - reference: PMID:10831439
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000527 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ250862.2
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000527
+  source_label: mersacidin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-490475bd95
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-560750e959
+label: platencin
+chemical_structure:
+  smiles: C[C@@]1(C2C[C@@H]3CC[C@]2(CC3=C)C=CC1=O)CCC(=O)NC4=C(C=CC(=C4O)C(=O)O)O
+  standard_inchi: InChI=1S/C24H27NO6/c1-13-12-24-9-5-14(13)11-17(24)23(2,18(27)6-10-24)8-7-19(28)25-20-16(26)4-3-15(21(20)29)22(30)31/h3-4,6,10,14,17,26,29H,1,5,7-9,11-12H2,2H3,(H,25,28)(H,30,31)/t14-,17?,23-,24+/m0/s1
+  standard_inchi_key: DWUHGPPFFABTIY-KMVHLTCXSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001156
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Platensimycin and Platencins
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:44450228
+producer_organisms:
+- taxon_id: NCBITaxon:58346
+  taxon_label: Streptomyces platensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001156
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:20232845
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001156 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001156
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:58346
+  organism_label: Streptomyces platensis
+  evidence:
+  - reference: PMID:20232845
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001156 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GQ398492.1
+  locus_from: 2491
+  locus_to: 38278
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001156
+  source_label: platencin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-560750e959
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

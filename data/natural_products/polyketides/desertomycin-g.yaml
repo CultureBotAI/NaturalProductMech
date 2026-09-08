@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-25928c67ea
+label: desertomycin G
+chemical_structure:
+  smiles: CC1=CC=CC(C)C(O)C(C)C(O)CCC=CC(C)C(O)C=CC(C)C(O)C(C)=CC(O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]2O)C(O)C(C)C(O)CC(O)CC(O)C(C)C(O)C(C)C(O)CC(O)CC(O)C=CCC(C(C)C(O)CCCN)OC1=O
+  standard_inchi: InChI=1S/C62H109NO21/c1-32-16-11-12-20-47(70)38(7)55(75)33(2)17-13-18-35(4)61(81)82-51(37(6)46(69)21-15-25-63)22-14-19-42(65)27-43(66)28-48(71)39(8)56(76)40(9)49(72)29-44(67)30-50(73)41(10)57(77)52(26-36(5)54(74)34(3)23-24-45(32)68)83-62-60(80)59(79)58(78)53(31-64)84-62/h11,13-14,16-19,23-24,26,32-34,37-60,62,64-80H,12,15,20-22,25,27-31,63H2,1-10H3/t32?,33?,34?,37?,38?,39?,40?,41?,42?,43?,44?,45?,46?,47?,48?,49?,50?,51?,52?,53-,54?,55?,56?,57?,58-,59+,60+,62+/m1/s1
+  standard_inchi_key: MCROUBPJZPOSSF-KNZUXZTQSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002523
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: true
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA026459
+producer_organisms:
+- taxon_id: NCBITaxon:66901
+  taxon_label: Streptomyces nobilis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002523
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:32457441
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002523 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002523
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:66901
+  organism_label: Streptomyces nobilis
+  evidence:
+  - reference: PMID:32457441
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002523 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LC529898.1
+  locus_from: 1
+  locus_to: 181146
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002523
+  source_label: desertomycin G
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-25928c67ea
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

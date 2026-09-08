@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-9e82bf2657
+label: galtamycin C
+chemical_structure:
+  smiles: C[C@@H]1[C@@H]2[C@@H](C[C@@H](O1)C3=C(C4=C(C=C3)C(=O)C5=C(C4=O)C=C6C(=CC(=CC6=C5O)C)O)O)O[C@H]7CC(=O)[C@@H](O[C@@H]7O2)C
+  standard_inchi: InChI=1S/C31H28O10/c1-11-6-17-16(20(33)7-11)8-18-25(28(17)36)27(35)15-5-4-14(26(34)24(15)29(18)37)21-10-22-30(13(3)38-21)41-31-23(40-22)9-19(32)12(2)39-31/h4-8,12-13,21-23,30-31,33-34,36H,9-10H2,1-3H3/t12-,13+,21+,22+,23-,30+,31+/m0/s1
+  standard_inchi_key: ISZJBAVZNJEEDI-BWQAWQPQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002140
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:156581851
+producer_organisms:
+- taxon_id: NCBITaxon:1488414
+  taxon_label: Streptomyces sp. MBT84
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002140
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.21203/rs.3.rs-715051/v1
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002140 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002140
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1488414
+  organism_label: Streptomyces sp. MBT84
+  evidence:
+  - reference: DOI:10.21203/rs.3.rs-715051/v1
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002140 entry version 2; citation taken from the entry level
+  genome_accession: genbank:JAHTGP010000001.1
+  locus_from: 1882327
+  locus_to: 1923787
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002140
+  source_label: galtamycin C
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-9e82bf2657
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

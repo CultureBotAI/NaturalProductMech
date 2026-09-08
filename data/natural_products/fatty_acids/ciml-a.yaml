@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-660389b84b
+label: CIML A
+chemical_structure:
+  smiles: O[C@@H](C/C=C/C(O1)=O)/C=C/CCCCCCCCCCCCCCC[C@H]1C
+  standard_inchi: InChI=1S/C24H42O3/c1-22-18-15-13-11-9-7-5-3-2-4-6-8-10-12-14-16-19-23(25)20-17-21-24(26)27-22/h16-17,19,21-23,25H,2-15,18,20H2,1H3/b19-16+,21-17+/t22-,23-/m1/s1
+  standard_inchi_key: AVMINTCAFHYNFE-YTJQFVPCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002228
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty esters
+  class_results:
+  - Lactones
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:1573173
+  taxon_label: Colletotrichum incanum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002228
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/acs.orglett.0c01975
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002228 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002228
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1573173
+  organism_label: Colletotrichum incanum
+  evidence:
+  - reference: DOI:10.1021/acs.orglett.0c01975
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002228 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:LFIW01000394.1
+  locus_from: 4237
+  locus_to: 22473
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002228
+  source_label: CIML A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-660389b84b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

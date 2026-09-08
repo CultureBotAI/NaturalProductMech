@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-5059880552
+label: streptovaricin
+chemical_structure:
+  smiles: C[C@@H]1/C=C\C=C(\C(=O)NC2=C(C(=C3C(=C(C(=C4C3=C(/C(=C/[C@@]([C@@H]([C@H]([C@H]([C@@H]([C@@H]([C@@H]([C@@H]1O)C)O)C(=O)OC)O)C)O)(C)O)/C)OCO4)C)O)C2=O)OC(=O)C)C)/C
+  standard_inchi: InChI=1S/C40H51NO14/c1-16-12-11-13-17(2)38(49)41-28-19(4)36(55-23(8)42)24-25(33(28)47)31(45)21(6)35-26(24)34(53-15-54-35)18(3)14-40(9,51)37(48)22(7)32(46)27(39(50)52-10)30(44)20(5)29(16)43/h11-14,16,20,22,27,29-30,32,37,43-46,48,51H,15H2,1-10H3,(H,41,49)/b12-11-,17-13+,18-14+/t16-,20-,22+,27-,29-,30-,32-,37-,40-/m1/s1
+  standard_inchi_key: FMNPOTNZACJORR-CJQFIEQYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001785
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:68270
+  taxon_label: Streptomyces spectabilis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001785
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28858479
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001785 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001785
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68270
+  organism_label: Streptomyces spectabilis
+  evidence:
+  - reference: PMID:28858479
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001785 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY593296.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001785
+  source_label: streptovaricin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5059880552
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

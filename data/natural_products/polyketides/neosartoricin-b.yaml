@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-d45a8bbc3f
+label: neosartoricin B
+chemical_structure:
+  smiles: C/C(C)=C\CC1=C2C=C(O)C=C(O)C2=C(O)C3=C1C[C@](CC(/C=C(C)\O)=O)(O)[C@H](O)C3=O
+  standard_inchi: InChI=1S/C24H26O8/c1-11(2)4-5-15-16-7-13(26)8-18(28)19(16)21(29)20-17(15)10-24(32,23(31)22(20)30)9-14(27)6-12(3)25/h4,6-8,23,25-26,28-29,31-32H,5,9-10H2,1-3H3/b12-6-/t23-,24+/m1/s1
+  standard_inchi_key: FBJVDZCVXPNUAZ-DVKPJADZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001144
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthraquinones and anthrones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:132542799
+producer_organisms:
+- taxon_id: NCBITaxon:647933
+  taxon_label: Trichophyton tonsurans CBS 112818
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001144
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23758576
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001144 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001144
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:647933
+  organism_label: Trichophyton tonsurans CBS 112818
+  evidence:
+  - reference: PMID:23758576
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001144 entry version 4; citation taken from the entry level
+  genome_accession: genbank:GG698521.1
+  locus_from: 57770
+  locus_to: 72970
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001144
+  source_label: neosartoricin B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-d45a8bbc3f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

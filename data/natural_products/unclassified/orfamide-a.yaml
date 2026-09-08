@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-6c0a49ca65
+label: orfamide A
+chemical_structure:
+  smiles: CCCCCCCCCCCC(O)CC(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CCC(O)=O)C(=O)N[C@@H]1[C@@H](C)OC(=O)[C@@H](NC(=O)[C@@H](CO)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](CO)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](NC1=O)C(C)CC)C(C)C
+  standard_inchi: InChI=1S/C64H114N10O17/c1-15-17-18-19-20-21-22-23-24-25-42(77)32-50(78)65-44(28-35(3)4)56(82)66-43(26-27-51(79)80)55(81)74-54-41(14)91-64(90)52(39(11)12)72-61(87)49(34-76)71-58(84)46(30-37(7)8)67-57(83)45(29-36(5)6)68-60(86)48(33-75)70-59(85)47(31-38(9)10)69-62(88)53(40(13)16-2)73-63(54)89/h35-49,52-54,75-77H,15-34H2,1-14H3,(H,65,78)(H,66,82)(H,67,83)(H,68,86)(H,69,88)(H,70,85)(H,71,84)(H,72,87)(H,73,89)(H,74,81)(H,79,80)/t40?,41-,42?,43-,44+,45+,46+,47+,48-,49-,52+,53-,54-/m1/s1
+  standard_inchi_key: AFOLBAYDTRBYBA-MAUDZENVSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000399
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA01606
+producer_organisms:
+- taxon_id: NCBITaxon:220664
+  taxon_label: Pseudomonas protegens Pf-5
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000399
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17254952
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000399 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000399
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:220664
+  organism_label: Pseudomonas protegens Pf-5
+  evidence:
+  - reference: PMID:17254952
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000399 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000076.1
+  locus_from: 2364934
+  locus_to: 2411953
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000399
+  source_label: orfamide A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6c0a49ca65
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-a0963ff8e6
+label: vicibactin
+chemical_structure:
+  smiles: C[C@@H]1CC(=O)N(O)CCC[C@@H](NC(C)=O)C(=O)O[C@H](C)CC(=O)N(O)CCC[C@@H](NC(C)=O)C(=O)O[C@H](C)CC(=O)N(O)CCC[C@@H](NC(C)=O)C(=O)O1
+  standard_inchi: InChI=1S/C33H54N6O15/c1-19-16-28(43)37(49)13-8-11-26(35-23(5)41)32(47)53-21(3)18-30(45)39(51)15-9-12-27(36-24(6)42)33(48)54-20(2)17-29(44)38(50)14-7-10-25(31(46)52-19)34-22(4)40/h19-21,25-27,49-51H,7-18H2,1-6H3,(H,34,40)(H,35,41)(H,36,42)/t19-,20-,21-,25-,26-,27-/m1/s1
+  standard_inchi_key: NEZSNYPOAQRZDV-ZXXBMJRBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000457
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA0788
+producer_organisms:
+- taxon_id: NCBITaxon:347834
+  taxon_label: Rhizobium etli CFN 42
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000457
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16505379
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000457 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000457
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:347834
+  organism_label: Rhizobium etli CFN 42
+  evidence:
+  - reference: PMID:16505379
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000457 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000138.1
+  locus_from: 511806
+  locus_to: 523079
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000457
+  source_label: vicibactin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a0963ff8e6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

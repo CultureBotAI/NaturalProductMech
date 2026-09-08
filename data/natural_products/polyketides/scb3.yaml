@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-551f8ef8e4
+label: SCB3
+chemical_structure:
+  smiles: '[H][C@]1([C@H](O)CCCCC(C)CC)[C@H](CO)COC1=O'
+  standard_inchi: InChI=1S/C14H26O4/c1-3-10(2)6-4-5-7-12(16)13-11(8-15)9-18-14(13)17/h10-13,15-16H,3-9H2,1-2H3/t10?,11-,12-,13-/m1/s1
+  standard_inchi_key: QZOCOXOCSGUGFC-KIGPFUIMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000849
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA019584
+producer_organisms:
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000849
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12000953
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000849 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000849
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:100226
+  organism_label: Streptomyces coelicolor A3(2)
+  evidence:
+  - reference: PMID:12000953
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000849 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AL645882.2
+  locus_from: 6890528
+  locus_to: 6892237
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000849
+  source_label: SCB3
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-551f8ef8e4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

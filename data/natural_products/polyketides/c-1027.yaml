@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-852edd7855
+label: C-1027
+chemical_structure:
+  smiles: COC1=CC2=C(NC(=O)C(=C)O2)C(=C1)C(=O)OC1COC(=O)CC(N)C2=CC(O)=C(OC3C#CC=C1C#CC1=CC=C[C@]31O[C@@H]1OC(C)(C)[C@H](C(O)C1O)N(C)C)C(Cl)=C2
+  standard_inchi: InChI=1S/C43H42ClN3O13/c1-21-39(52)46-34-26(17-25(54-6)18-30(34)56-21)40(53)57-31-20-55-33(49)19-28(45)23-15-27(44)37(29(48)16-23)58-32-11-7-9-22(31)12-13-24-10-8-14-43(24,32)60-41-36(51)35(50)38(47(4)5)42(2,3)59-41/h8-10,14-18,28,31-32,35-36,38,41,48,50-51H,1,19-20,45H2,2-6H3,(H,46,52)/t28?,31?,32?,35?,36?,38-,41-,43+/m0/s1
+  standard_inchi_key: DGGZCXUXASNDAC-USCVHKSNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000965
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Enediynes
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA018592
+- pubchem:5281917
+producer_organisms:
+- taxon_id: NCBITaxon:1908
+  taxon_label: Streptomyces globisporus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000965
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12183628
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000965 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000965
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1908
+  organism_label: Streptomyces globisporus
+  evidence:
+  - reference: PMID:12183628
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000965 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY048670.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000965
+  source_label: C-1027
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-852edd7855
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

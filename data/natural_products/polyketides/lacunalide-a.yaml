@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-5a45103ea4
+label: lacunalide A
+chemical_structure:
+  smiles: C[C@@H]1[C@@H](C[C@H](C[C@@H](C[C@H](C[C@@H](C[C@H](CC=C(C=CC(=O)O[C@@H](CC=CCCCCCC[C@H](CCC[C@H](CCC[C@H](CC=C([C@H]1O)C)O)O)O)[C@@H](C)[C@@H](CCCCC[C@@H](C)O)O)C)O)O)O)O)O)O
+  standard_inchi: InChI=1S/C54H98O14/c1-37-26-29-45(59)32-46(60)33-47(61)34-48(62)35-49(63)36-51(65)41(5)54(67)38(2)28-30-44(58)23-17-22-43(57)21-16-20-42(56)19-13-9-7-6-8-10-15-25-52(68-53(66)31-27-37)40(4)50(64)24-14-11-12-18-39(3)55/h10,15,26-28,31,39-52,54-65,67H,6-9,11-14,16-25,29-30,32-36H2,1-5H3/t39-,40+,41-,42-,43-,44-,45+,46-,47+,48-,49+,50-,51-,52+,54-/m1/s1
+  standard_inchi_key: BBYNTJLPUWNJRX-KZAICDIGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001644
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:139591548
+producer_organisms:
+- taxon_id: NCBITaxon:1445510
+  taxon_label: Gynuella sunshinyii YC6258
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001644
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:30025185
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001644 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001644
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1445510
+  organism_label: Gynuella sunshinyii YC6258
+  evidence:
+  - reference: PMID:30025185
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001644 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP007142.1
+  locus_from: 3836738
+  locus_to: 3965219
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001644
+  source_label: lacunalide A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-5a45103ea4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,78 @@
+identifier: naturalproductmech:mibig-81ab14f848
+label: Colletochlorin D
+chemical_structure:
+  smiles: CC1=C(C(=C(C(=C1Cl)O)CC=C(C)C)O)C=O
+  standard_inchi: InChI=1S/C13H15ClO3/c1-7(2)4-5-9-12(16)10(6-15)8(3)11(14)13(9)17/h4,6,16-17H,5H2,1-3H3
+  standard_inchi_key: JQJZJLLBOLNQAF-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002812
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+- TERPENE
+compound_classes:
+- Alkylresorcinol/phloroglucinol polyketide
+- Meroterpenoid
+xrefs:
+- pubchem:10015208
+producer_organisms:
+- taxon_id: NCBITaxon:759273
+  taxon_label: Colletotrichum higginsianum IMI 349063
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002812
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Correlation of genomic and metabolomic data. That evidence
+    grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.ymben.2023.10.002
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002812 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002812
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:759273
+  organism_label: Colletotrichum higginsianum IMI 349063
+  evidence:
+  - reference: DOI:10.1016/j.ymben.2023.10.002
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002812 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:LTAN01000004.1
+  locus_from: 389265
+  locus_to: 404974
+  bgc_class:
+  - PKS
+  - TERPENE
+  locus_evidence_methods:
+  - Correlation of genomic and metabolomic data
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002812
+  source_label: Colletochlorin D
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-81ab14f848
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

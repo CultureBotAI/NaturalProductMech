@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-c8a9384cc7
+label: colistin A
+chemical_structure:
+  smiles: CC[C@@H](C)CCCCC(=O)N[C@@H](CCN)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CCN)C(=O)N[C@H]1CCNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)CCN)CC(C)C)CC(C)C)CCN)CCN)[C@@H](C)O
+  standard_inchi: InChI=1S/C53H100N16O13/c1-9-30(6)12-10-11-13-41(72)60-33(14-20-54)48(77)69-43(32(8)71)53(82)65-36(17-23-57)45(74)64-38-19-25-59-52(81)42(31(7)70)68-49(78)37(18-24-58)62-44(73)34(15-21-55)63-50(79)39(26-28(2)3)67-51(80)40(27-29(4)5)66-46(75)35(16-22-56)61-47(38)76/h28-40,42-43,70-71H,9-27,54-58H2,1-8H3,(H,59,81)(H,60,72)(H,61,76)(H,62,73)(H,63,79)(H,64,74)(H,65,82)(H,66,75)(H,67,80)(H,68,78)(H,69,77)/t30-,31-,32-,33+,34+,35+,36+,37+,38+,39+,40-,42+,43+/m1/s1
+  standard_inchi_key: XDJYMJULXQKGMM-RVYUQJQSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001192
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:202195
+producer_organisms:
+- taxon_id: NCBITaxon:44250
+  taxon_label: Paenibacillus alvei
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001192
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25609230
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001192 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001192
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:44250
+  organism_label: Paenibacillus alvei
+  evidence:
+  - reference: PMID:25609230
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001192 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KP262070.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001192
+  source_label: colistin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c8a9384cc7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

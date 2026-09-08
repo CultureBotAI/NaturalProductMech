@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-bc572fa775
+label: betaestacin II
+chemical_structure:
+  smiles: C[C@H]\1CC[C@@H]/2/C1=C/C/C(=C/C[C@@]3(CC[C@H]([C@H]3C/C=C2/C)C(C(=O)O)C(=O)O)C)/C
+  standard_inchi: InChI=1S/C25H36O4/c1-15-5-8-18-16(2)6-9-19(18)17(3)7-10-21-20(22(23(26)27)24(28)29)12-14-25(21,4)13-11-15/h7-8,11,16,19-22H,5-6,9-10,12-14H2,1-4H3,(H,26,27)(H,28,29)/b15-11+,17-7-,18-8+/t16-,19-,20+,21+,25+/m0/s1
+  standard_inchi_key: OVLRNGJHUUCIHT-LLBDNSMRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001528
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesterterpenoids
+  class_results:
+  - Betaestacin-type sesterterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:139591235
+- npatlas:NPA024068
+- chebi:217820
+producer_organisms:
+- taxon_id: NCBITaxon:1979465
+  taxon_label: Phoma betae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001528
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.tetlet.2018.02.022
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001528 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001528
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1979465
+  organism_label: Phoma betae
+  evidence:
+  - reference: DOI:10.1016/j.tetlet.2018.02.022
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001528 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:LC274619.1
+  bgc_class:
+  - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001528
+  source_label: betaestacin II
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-bc572fa775
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

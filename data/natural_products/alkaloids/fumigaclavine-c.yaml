@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-5e0cf24dae
+label: fumigaclavine C
+chemical_structure:
+  smiles: C[C@H]1CN(C)[C@@H]2CC3=C(NC4=CC=CC([C@H]2[C@H]1OC(C)=O)=C34)C(C)(C)C=C
+  standard_inchi: InChI=1S/C23H30N2O2/c1-7-23(4,5)22-16-11-18-20(15-9-8-10-17(24-22)19(15)16)21(27-14(3)26)13(2)12-25(18)6/h7-10,13,18,20-21,24H,1,11-12H2,2-6H3/t13-,18+,20+,21-/m0/s1
+  standard_inchi_key: OSICWVVWEXKSBD-LFAYTRTRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000811
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Ergot alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA018250
+- pubchem:173878
+producer_organisms:
+- taxon_id: NCBITaxon:330879
+  taxon_label: Aspergillus fumigatus Af293
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000811
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.3390/md11125063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000811 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000811
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:330879
+  organism_label: Aspergillus fumigatus Af293
+  evidence:
+  - reference: DOI:10.3390/md11125063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000811 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:AAHF01000001.1
+  locus_from: 2907012
+  locus_to: 2929163
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000811
+  source_label: fumigaclavine C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-5e0cf24dae
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

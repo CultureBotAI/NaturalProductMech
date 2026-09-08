@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-65681d57e1
+label: citridone B
+chemical_structure:
+  smiles: CC([C@]1([C@H]2[C@@]([C@H](O1)O)(C3=C(O2)NC=C(C3=O)C4=CC=CC=C4)C)C)O
+  standard_inchi: InChI=1S/C19H21NO5/c1-10(21)19(3)16-18(2,17(23)25-19)13-14(22)12(9-20-15(13)24-16)11-7-5-4-6-8-11/h4-10,16-17,21,23H,1-3H3,(H,20,22)/t10?,16-,17+,18+,19+/m1/s1
+  standard_inchi_key: HKJGXZQUAMKOKS-GIEQTFEPSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002268
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA003700
+producer_organisms:
+- taxon_id: NCBITaxon:5081
+  taxon_label: Penicillium sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002268
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:32779306
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002268 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002268
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5081
+  organism_label: Penicillium sp.
+  evidence:
+  - reference: PMID:32779306
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002268 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT603584.1
+  locus_from: 1
+  locus_to: 26854
+  bgc_class:
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002268
+  source_label: citridone B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-65681d57e1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

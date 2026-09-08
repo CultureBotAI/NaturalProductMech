@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-36446ade58
+label: decumbenone c
+chemical_structure:
+  smiles: C[C@H]1C[C@@H]([C@@H]2[C@@]([C@](C=C[C@]2(C1)O)(C)O)(C)C(=O)CCO)O
+  standard_inchi: InChI=1S/C16H26O5/c1-10-8-11(18)13-15(3,12(19)4-7-17)14(2,20)5-6-16(13,21)9-10/h5-6,10-11,13,17-18,20-21H,4,7-9H2,1-3H3/t10-,11-,13+,14+,15+,16+/m0/s1
+  standard_inchi_key: XLPZAZKGKJAESI-MTBPCUBESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002168
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - Monacolins and Monacolin derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:71528821
+producer_organisms:
+- taxon_id: NCBITaxon:1549217
+  taxon_label: Aspergillus stellatus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002168
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1007/s12272-012-1007-9
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002168 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002168
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1549217
+  organism_label: Aspergillus stellatus
+  evidence:
+  - reference: DOI:10.1007/s12272-012-1007-9
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002168 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MW315913.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002168
+  source_label: decumbenone c
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-36446ade58
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

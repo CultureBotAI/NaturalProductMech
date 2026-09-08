@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-494040c9fb
+label: APE Ec
+chemical_structure:
+  smiles: CC1=C(O)C=CC(/C=C/C=C/C=C/C=C/C=C/C=C/C(OC)=O)=C1
+  standard_inchi: InChI=1S/C21H22O3/c1-18-17-19(15-16-20(18)22)13-11-9-7-5-3-4-6-8-10-12-14-21(23)24-2/h3-17,22H,1-2H3/b5-3+,6-4+,9-7+,10-8+,13-11+,14-12+
+  standard_inchi_key: VKZWYFNUVFKUIX-PXNMIUTMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000836
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:199310
+  taxon_label: Escherichia coli CFT073
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000836
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:25036635
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000836 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000836
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:199310
+  organism_label: Escherichia coli CFT073
+  evidence:
+  - reference: PMID:25036635
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000836 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AE014075.1
+  locus_from: 1143727
+  locus_to: 1158748
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000836
+  source_label: APE Ec
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-494040c9fb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

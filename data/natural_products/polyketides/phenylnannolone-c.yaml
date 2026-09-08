@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-aa81ffb2f4
+label: phenylnannolone C
+chemical_structure:
+  smiles: CC\C(\C=C\C1=CC=CC(=O)O1)=C/C=C/C1=CC=C(O)C=C1
+  standard_inchi: InChI=1S/C19H18O3/c1-2-15(11-14-18-7-4-8-19(21)22-18)5-3-6-16-9-12-17(20)13-10-16/h3-14,20H,2H2,1H3/b6-3+,14-11+,15-5+
+  standard_inchi_key: LBDGYJHTIPQOAB-LBOZPAGCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000122
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 2-pyrone derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA02006
+producer_organisms:
+- taxon_id: NCBITaxon:889268
+  taxon_label: Nannocystis pusilla
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000122
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24677362
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000122 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000122
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:889268
+  organism_label: Nannocystis pusilla
+  evidence:
+  - reference: PMID:24677362
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000122 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF739396.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000122
+  source_label: phenylnannolone C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-aa81ffb2f4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

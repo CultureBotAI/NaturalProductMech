@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-7c89b3cad5
+label: tundrenone
+chemical_structure:
+  smiles: O[C@@H]1C=CC([C@](C2)([H])[C@H]1OC(C(OCC(C(O)C(CCCCC)=O)=C)=O)=C)=C(O)C2=O
+  standard_inchi: InChI=1S/C22H28O8/c1-4-5-6-7-16(23)19(26)12(2)11-29-22(28)13(3)30-21-15-10-18(25)20(27)14(15)8-9-17(21)24/h8-9,15,17,19,21,24,26-27H,2-7,10-11H2,1H3/t15-,17-,19?,21-/m1/s1
+  standard_inchi_key: QEUHGZGGGPRQOJ-BKXHWDAOSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001480
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1408450
+  taxon_label: Methylobacter tundripaludum 21/22
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001480
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29361220
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001480 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001480
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1408450
+  organism_label: Methylobacter tundripaludum 21/22
+  evidence:
+  - reference: PMID:29361220
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001480 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NZ_JMLA01000001.1
+  locus_from: 833380
+  locus_to: 853163
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001480
+  source_label: tundrenone
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7c89b3cad5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

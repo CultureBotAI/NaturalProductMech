@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-fccfcb9977
+label: hydroxyl-Fumonisin C1
+chemical_structure:
+  smiles: CCCC[C@@H](C)[C@H]([C@H](C[C@@H](C)C[C@@H](CCCC[C@H](C([C@@H](CN)O)O)O)O)OC(=O)CC(CC(=O)O)C(=O)O)OC(=O)CC(CC(=O)O)C(=O)O
+  standard_inchi: InChI=1S/C33H57NO16/c1-4-5-8-19(3)31(50-29(43)16-21(33(47)48)14-27(40)41)25(49-28(42)15-20(32(45)46)13-26(38)39)12-18(2)11-22(35)9-6-7-10-23(36)30(44)24(37)17-34/h18-25,30-31,35-37,44H,4-17,34H2,1-3H3,(H,38,39)(H,40,41)(H,45,46)(H,47,48)/t18-,19+,20?,21?,22+,23+,24+,25-,30?,31+/m0/s1
+  standard_inchi_key: FYZZDZVZFRCZJB-MQKWQYMLSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000063
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Linear polyketide
+xrefs:
+- pubchem:139588218
+producer_organisms:
+- taxon_id: NCBITaxon:5507
+  taxon_label: Fusarium oxysporum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000063
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.fgb.2008.02.004
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000063 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000063
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5507
+  organism_label: Fusarium oxysporum
+  evidence:
+  - reference: DOI:10.1016/j.fgb.2008.02.004
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000063 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:EU449979.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000063
+  source_label: hydroxyl-Fumonisin C1
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-fccfcb9977
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

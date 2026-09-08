@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-c0a3e2367c
+label: bananamide 1
+chemical_structure:
+  smiles: O=C(C(CC(C)C)NC(CC(O)CCCCCCCCC)=O)NC(CC(O)=O)C(NC(C(OC(C(CC(C)C)NC1=O)=O)C)C(NC(C(C)CC)C(NC(CC(C)C)C(NC(CCC(N)=O)C(NC1CC(C)C)=O)=O)=O)=O)=O
+  standard_inchi: InChI=1S/C55H97N9O14/c1-13-15-16-17-18-19-20-21-36(65)28-44(67)57-38(24-30(3)4)49(71)60-41(29-45(68)69)52(74)64-47-35(12)78-55(77)42(27-33(9)10)62-51(73)39(25-31(5)6)59-48(70)37(22-23-43(56)66)58-50(72)40(26-32(7)8)61-53(75)46(34(11)14-2)63-54(47)76/h30-42,46-47,65H,13-29H2,1-12H3,(H2,56,66)(H,57,67)(H,58,72)(H,59,70)(H,60,71)(H,61,75)(H,62,73)(H,63,76)(H,64,74)(H,68,69)
+  standard_inchi_key: XESFGFJOLTYDKB-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001346
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:294
+  taxon_label: Pseudomonas fluorescens
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0001346
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:27798598
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001346 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001346
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:294
+  organism_label: Pseudomonas fluorescens
+  evidence:
+  - reference: PMID:27798598
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001346 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX437753.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001346
+  source_label: bananamide 1
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-c0a3e2367c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

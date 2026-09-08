@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-38bc86114b
+label: xantholipin
+chemical_structure:
+  smiles: '[H][C@]12C[C@]3([H])C(=O)C4=C(C(=O)NC(C)=C4)C(=O)[C@]3(O)C3=C(O)C4=C(OC5=C(C=CC(Cl)=C5OC)C4=O)C(OCO1)=C23'
+  standard_inchi: InChI=1S/C27H18ClNO10/c1-8-5-10-14(26(34)29-8)25(33)27(35)11(18(10)30)6-13-15-17(27)20(32)16-19(31)9-3-4-12(28)22(36-2)21(9)39-24(16)23(15)38-7-37-13/h3-5,11,13,32,35H,6-7H2,1-2H3,(H,29,34)/t11-,13-,27-/m1/s1
+  standard_inchi_key: HSVRTPZWHMWONP-JUEDDRGBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000279
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Ericamycins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA03057
+producer_organisms:
+- taxon_id: NCBITaxon:67299
+  taxon_label: Streptomyces flavogriseus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000279
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(03)01318-2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000279 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000279
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67299
+  organism_label: Streptomyces flavogriseus
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(03)01318-2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000279 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:GQ421798.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000279
+  source_label: xantholipin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-38bc86114b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

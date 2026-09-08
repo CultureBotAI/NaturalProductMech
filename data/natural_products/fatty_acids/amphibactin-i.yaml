@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-7f07fb1c16
+label: amphibactin I
+chemical_structure:
+  smiles: O=C(NC(C(NC(C(NC(C(NC(C(O)=O)CCCN(O)C(C)=O)=O)CO)=O)CCCN(O)C(C)=O)=O)CCCN(O)C(C)=O)CCCCCCC/C=C\CCCCCCCC
+  standard_inchi: InChI=1S/C42H75N7O13/c1-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-26-38(54)43-34(23-20-27-47(60)31(2)51)39(55)44-35(24-21-28-48(61)32(3)52)40(56)46-37(30-50)41(57)45-36(42(58)59)25-22-29-49(62)33(4)53/h12-13,34-37,50,60-62H,5-11,14-30H2,1-4H3,(H,43,54)(H,44,55)(H,45,57)(H,46,56)(H,58,59)/b13-12-
+  standard_inchi_key: PLXPRWAMPMGJOU-SEYXRHQNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002465
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty amides
+  class_results:
+  - N-acyl amines
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Linear
+- Lipopeptide
+producer_organisms:
+- taxon_id: NCBITaxon:393595
+  taxon_label: Alcanivorax borkumensis SK2
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002465
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24663669
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002465 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002465
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:393595
+  organism_label: Alcanivorax borkumensis SK2
+  evidence:
+  - reference: PMID:24663669
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002465 entry version 2; citation taken from the entry level
+  genome_accession: genbank:AM286690.1
+  locus_from: 2377165
+  locus_to: 2399998
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002465
+  source_label: amphibactin I
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-7f07fb1c16
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

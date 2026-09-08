@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-88977ed5df
+label: lynamicin D
+chemical_structure:
+  smiles: COC(=O)C1=C(C2=CNC3=C2C=C(Cl)C=C3)C(=C(N1)C(=O)OC)C1=CNC2=C1C=C(Cl)C=C2
+  standard_inchi: InChI=1S/C24H17Cl2N3O4/c1-32-23(30)21-19(15-9-27-17-5-3-11(25)7-13(15)17)20(22(29-21)24(31)33-2)16-10-28-18-6-4-12(26)8-14(16)18/h3-10,27-29H,1-2H3
+  standard_inchi_key: YYBKJQDTRQASSS-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001782
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Simple indole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA019793
+producer_organisms:
+- taxon_id: NCBITaxon:2878388
+  taxon_label: Streptomyces sp. SCSIO 03032
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001782
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28620687
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001782 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001782
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2878388
+  organism_label: Streptomyces sp. SCSIO 03032
+  evidence:
+  - reference: PMID:28620687
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001782 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KY750719.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001782
+  source_label: lynamicin D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-88977ed5df
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

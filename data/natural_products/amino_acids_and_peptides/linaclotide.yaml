@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-f9e87679c6
+label: linaclotide
+chemical_structure:
+  smiles: C[C@H]1C(=O)N[C@H]2CSSC[C@H]3C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@@H](CSSC[C@H](NC(=O)CNC(=O)[C@@H](NC2=O)[C@@H](C)O)C(=O)N[C@@H](CC4=CC=C(C=C4)O)C(=O)O)C(=O)N[C@@H](CSSC[C@@H](C(=O)N3)N)C(=O)N[C@H](C(=O)N5CCC[C@H]5C(=O)N1)CC(=O)N)CC6=CC=C(C=C6)O)CCC(=O)O
+  standard_inchi: InChI=1S/C59H79N15O21S6/c1-26-47(82)69-41-25-101-99-22-38-52(87)65-33(13-14-45(80)81)49(84)66-34(16-28-5-9-30(76)10-6-28)50(85)71-40(54(89)72-39(23-97-96-20-32(60)48(83)70-38)53(88)67-35(18-43(61)78)58(93)74-15-3-4-42(74)56(91)63-26)24-100-98-21-37(64-44(79)19-62-57(92)46(27(2)75)73-55(41)90)51(86)68-36(59(94)95)17-29-7-11-31(77)12-8-29/h5-12,26-27,32-42,46,75-77H,3-4,13-25,60H2,1-2H3,(H2,61,78)(H,62,92)(H,63,91)(H,64,79)(H,65,87)(H,66,84)(H,67,88)(H,68,86)(H,69,82)(H,70,83)(H,71,85)(H,72,89)(H,73,90)(H,80,81)(H,94,95)/t26-,27+,32-,33-,34-,35-,36-,37-,38-,39-,40-,41-,42-,46-/m0/s1
+  standard_inchi_key: KXGCNMMJRFDFNR-WDRJZQOASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000621
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:16158208
+producer_organisms:
+- taxon_id: NCBITaxon:562
+  taxon_label: Escherichia coli
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000621
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:2643580
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000621 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000621
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:562
+  organism_label: Escherichia coli
+  evidence:
+  - reference: PMID:2643580
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000621 entry version 3; citation taken from the entry level
+  genome_accession: genbank:M18346.1
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000621
+  source_label: linaclotide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f9e87679c6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

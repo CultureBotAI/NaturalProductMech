@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-24c970f147
+label: phorbactazole F
+chemical_structure:
+  smiles: C[C@@](O/1)([H])CC=C(C)C1=C/C2=NC(/C=C([C@@]3([H])[C@H](C)[C@@H](OC(/C=C\C4)=O)C[C@](C/C=C(C)/C5=NC([C@]6([H])C[C@@H](OC(N)=O)[C@H](O)[C@@](C[C@H](O)C[C@@H](O)[C@H](/C=C/[C@@]7([H])O[C@@]4([H])[C@@H](C)[C@H](O)C7)O[C@]8([H])O[C@@](CO)([H])[C@@H](O)[C@H](O)[C@H]8O)([H])O6)=CO5)([H])O3)\C)=CO2
+  standard_inchi: InChI=1S/C56H77N3O20/c1-26-10-12-29(4)72-41(26)22-47-58-32(24-70-47)16-28(3)53-31(6)42-20-35(74-53)13-11-27(2)54-59-36(25-71-54)43-21-45(79-56(57)69)49(65)44(75-43)18-33(61)17-38(63)40(77-55-52(68)51(67)50(66)46(23-60)78-55)15-14-34-19-37(62)30(5)39(73-34)8-7-9-48(64)76-42/h7,9-11,14-16,22,24-25,29-31,33-35,37-40,42-46,49-53,55,60-63,65-68H,8,12-13,17-21,23H2,1-6H3,(H2,57,69)/b9-7-,15-14+,27-11+,28-16+,41-22+/t29-,30-,31+,33+,34+,35+,37+,38+,39+,40-,42-,43-,44-,45+,46+,49+,50+,51-,52+,53-,55+/m0/s1
+  standard_inchi_key: BBOPDVQWKDZTMW-VMFPJVEDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002813
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Avermectins
+  is_glycoside: true
+bgc_class:
+- PKS
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:442870
+  taxon_label: Acanthopleuribacter pedis KCTC 12899
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002813
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Correlation of genomic and metabolomic data. That evidence
+    grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: DOI:10.5281/zenodo.8013901
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002813 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002813
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:442870
+  organism_label: Acanthopleuribacter pedis KCTC 12899
+  evidence:
+  - reference: DOI:10.5281/zenodo.8013901
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002813 entry version 2; citation taken from the entry level
+  genome_accession: genbank:JAFREP010000003.1
+  locus_from: 413747
+  locus_to: 538634
+  bgc_class:
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Correlation of genomic and metabolomic data
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002813
+  source_label: phorbactazole F
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-24c970f147
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

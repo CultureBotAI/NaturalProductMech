@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-9b51ff8630
+label: totopotensamide B
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C(=O)NCC(=O)N[C@@H]([C@H](C(=O)N[C@@H](C(=O)N1)C2=CC(=C(C(=C2Cl)O)C)O)NC(=O)[C@H](C)NC(=O)[C@@H]([C@@H](C)O)NC(=O)CC(=O)C(C)CC(C)C[C@H](C)[C@H]([C@H](C)[C@@H](C(C)O)O)O)C
+  standard_inchi: InChI=1S/C45H72ClN7O14/c1-12-19(3)34-42(64)47-17-32(59)48-24(8)35(43(65)53-37(45(67)51-34)28-15-30(57)22(6)40(62)33(28)46)52-41(63)25(9)49-44(66)36(26(10)54)50-31(58)16-29(56)20(4)13-18(2)14-21(5)38(60)23(7)39(61)27(11)55/h15,18-21,23-27,34-39,54-55,57,60-62H,12-14,16-17H2,1-11H3,(H,47,64)(H,48,59)(H,49,66)(H,50,58)(H,51,67)(H,52,63)(H,53,65)/t18?,19-,20?,21-,23-,24+,25-,26+,27?,34-,35+,36+,37+,38+,39-/m0/s1
+  standard_inchi_key: LACOKYPQGAPLII-RSHHAGFJSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001807
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  - Linear polyketides
+  class_results:
+  - Cyclic peptides
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:101572704
+producer_organisms:
+- taxon_id: NCBITaxon:68249
+  taxon_label: Streptomyces pactum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001807
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29019409
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001807 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001807
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68249
+  organism_label: Streptomyces pactum
+  evidence:
+  - reference: PMID:29019409
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001807 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MG012231.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001807
+  source_label: totopotensamide B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-9b51ff8630
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

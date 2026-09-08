@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-c702c4be08
+label: staurosporine
+chemical_structure:
+  smiles: CNC1CC2OC(C)(C1OC)N1C3=CC=CC=C3C3=C4CNC(=O)C4=C4C5=C(C=CC=C5)N2C4=C13
+  standard_inchi: InChI=1S/C28H26N4O3/c1-28-26(34-3)17(29-2)12-20(35-28)31-18-10-6-4-8-14(18)22-23-16(13-30-27(23)33)21-15-9-5-7-11-19(15)32(28)25(21)24(22)31/h4-11,17,20,26,29H,12-13H2,1-3H3,(H,30,33)
+  standard_inchi_key: HKSZLNNOFSGOKW-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000825
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA014588
+- pubchem:44259
+producer_organisms:
+- taxon_id: NCBITaxon:171258
+  taxon_label: Streptomyces sp. TP-A0274
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000825
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12617516
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000825 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000825
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:171258
+  organism_label: Streptomyces sp. TP-A0274
+  evidence:
+  - reference: PMID:12617516
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000825 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB088119.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000825
+  source_label: staurosporine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c702c4be08
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

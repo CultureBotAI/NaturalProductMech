@@ -1,0 +1,76 @@
+identifier: naturalproductmech:mibig-fa36d6dbf9
+label: 12-epi-hapalindole E
+chemical_structure:
+  smiles: CC(=C)[C@H]1C[C@@H](Cl)[C@@](C)(C=C)[C@H]([N+]#[C-])[C@@H]1C1=CNC2=C1C=CC=C2
+  standard_inchi: InChI=1S/C21H23ClN2/c1-6-21(4)18(22)11-15(13(2)3)19(20(21)23-5)16-12-24-17-10-8-7-9-14(16)17/h6-10,12,15,18-20,24H,1-2,11H2,3-4H3/t15-,18-,19+,20-,21-/m1/s1
+  standard_inchi_key: IJEJDCXOVNHHAX-CMWLGVBASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000668
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Hapalindole alkaloids
+  - Simple indole alkaloids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+- OTHER
+xrefs:
+- npatlas:NPA015996
+- cyanometdb:CyanoMetDB_1553
+producer_organisms:
+- taxon_id: NCBITaxon:1433842
+  taxon_label: Hapalosiphon welwitschii UTEX B 1830
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000668
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: DOI:10.1021/jo00226a009
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000668 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000668
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1433842
+  organism_label: Hapalosiphon welwitschii UTEX B 1830
+  evidence:
+  - reference: DOI:10.1021/jo00226a009
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000668 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KF811479.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000668
+  source_label: 12-epi-hapalindole E
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fa36d6dbf9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

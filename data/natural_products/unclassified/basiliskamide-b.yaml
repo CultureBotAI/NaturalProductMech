@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-d6c087fdc3
+label: Basiliskamide B
+chemical_structure:
+  smiles: CC[C@@H](C)[C@H](O)[C@H](C)[C@@H](C\C=C\C=C/C(N)=O)OC(=O)\C=C\C1=CC=CC=C1
+  standard_inchi: InChI=1S/C23H31NO4/c1-4-17(2)23(27)18(3)20(13-9-6-10-14-21(24)25)28-22(26)16-15-19-11-7-5-8-12-19/h5-12,14-18,20,23,27H,4,13H2,1-3H3,(H2,24,25)/b9-6+,14-10-,16-15+/t17-,18-,20-,23+/m1/s1
+  standard_inchi_key: HCZNVGHFFHRIFM-HXKCHMFGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000172
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Phenylpropanoids (C6-C3)
+  - Linear polyketides
+  class_results:
+  - Cinnamic acids and derivatives
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA018193
+producer_organisms:
+- taxon_id: NCBITaxon:1399144
+  taxon_label: Brevibacillus laterosporus PE36
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000172
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/ol048574m
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000172 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000172
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1399144
+  organism_label: Brevibacillus laterosporus PE36
+  evidence:
+  - reference: DOI:10.1021/ol048574m
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000172 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AXBT01000013.1
+  locus_from: 84598
+  locus_to: 132409
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000172
+  source_label: Basiliskamide B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d6c087fdc3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

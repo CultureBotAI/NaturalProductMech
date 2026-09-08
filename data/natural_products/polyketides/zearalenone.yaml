@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-9a1b3a2fe0
+label: zearalenone
+chemical_structure:
+  smiles: C[C@H]1CCCC(=O)CCC/C=C/C2=C(C(=CC(=C2)O)O)C(=O)O1
+  standard_inchi: InChI=1S/C18H22O5/c1-12-6-5-9-14(19)8-4-2-3-7-13-10-15(20)11-16(21)17(13)18(22)23-12/h3,7,10-12,20-21H,2,4-6,8-9H2,1H3/b7-3+/t12-/m0/s1
+  standard_inchi_key: MBMQEIFVQACCCH-QBODLPLBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001057
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Zearalenones
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:5281576
+producer_organisms:
+- taxon_id: NCBITaxon:5518
+  taxon_label: Fusarium graminearum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001057
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.4172/2476-2067.1000102
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001057 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001057
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5518
+  organism_label: Fusarium graminearum
+  evidence:
+  - reference: DOI:10.4172/2476-2067.1000102
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001057 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:DQ019316.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001057
+  source_label: zearalenone
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-9a1b3a2fe0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

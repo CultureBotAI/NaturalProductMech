@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-24b010d9e9
+label: chejuenolide A
+chemical_structure:
+  smiles: C[C@@H]1[C@@H](NC(C)=O)\C=C(/C)\C=C\[C@H](O)C\C=C(/C)\C=C\[C@@H](O)C\C=C(C)\C1=O
+  standard_inchi: InChI=1S/C23H33NO4/c1-15-6-10-20(26)12-8-16(2)14-22(24-19(5)25)18(4)23(28)17(3)9-13-21(27)11-7-15/h6-9,11-12,14,18,20-22,26-27H,10,13H2,1-5H3,(H,24,25)/b11-7+,12-8+,15-6+,16-14+,17-9+/t18-,20-,21-,22+/m1/s1
+  standard_inchi_key: UTURGGMCWRWPTG-YOFHZKFDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001543
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA015931
+producer_organisms:
+- taxon_id: NCBITaxon:158327
+  taxon_label: Hahella chejuensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001543
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29483632
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001543 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001543
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:158327
+  organism_label: Hahella chejuensis
+  evidence:
+  - reference: PMID:29483632
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001543 entry version 3; citation taken from the entry level
+  genome_accession: genbank:HE664023.1
+  locus_from: 1
+  locus_to: 51429
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001543
+  source_label: chejuenolide A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-24b010d9e9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

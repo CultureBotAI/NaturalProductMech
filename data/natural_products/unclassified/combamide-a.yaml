@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-765cf5a2f7
+label: combamide A
+chemical_structure:
+  smiles: CC(=O)[C@]1(O)C[C@H]2C[C@H]3/C=C/C=C/C(=O)NCCC[C@@H]4NC(=O)C(=C(O)/C=C/C=C/C[C@@H]3[C@H]2[C@@H]1C)C4=O
+  standard_inchi: InChI=1S/C29H36N2O6/c1-17-25-20(16-29(17,37)18(2)32)15-19-9-6-7-13-24(34)30-14-8-11-22-27(35)26(28(36)31-22)23(33)12-5-3-4-10-21(19)25/h3-7,9,12-13,17,19-22,25,33,37H,8,10-11,14-16H2,1-2H3,(H,30,34)(H,31,36)/b4-3+,9-6+,12-5+,13-7+,26-23?/t17-,19+,20+,21-,22-,25-,29-/m0/s1
+  standard_inchi_key: AUPVWQJCTRNGEY-AOEDTVJWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002509
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrocyclic tetramic acids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA028356
+- pubchem:146684513
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002509
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.6023/cjoc201912017
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002509 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002509
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: DOI:10.6023/cjoc201912017
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002509 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MN817126.1
+  locus_from: 1
+  locus_to: 22084
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002509
+  source_label: combamide A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-765cf5a2f7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

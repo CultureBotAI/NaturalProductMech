@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-f8ba0c3945
+label: xanthan
+chemical_structure:
+  smiles: C/C=C(/C)\CC/C=C(/C)\CC/C=C(/C)\CC/C=C(/C)\CC/C=C(/C)\CC/C=C(/C)\CC/C=C(/C)\CC/C=C(/C)\CC/C=C(\C)/CC/C=C(\C)/CC/C=C(\C)/COP(=O)([O-])OP(=O)([O-])O[C@@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O[C@@H]3[C@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)[O-])O[C@H]5[C@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)O)O)O)O)O
+  standard_inchi: InChI=1S/C85H140O33P2/c1-13-49(2)24-14-25-50(3)26-15-27-51(4)28-16-29-52(5)30-17-31-53(6)32-18-33-54(7)34-19-35-55(8)36-20-37-56(9)38-21-39-57(10)40-22-41-58(11)42-23-43-59(12)48-107-119(103,104)118-120(105,106)117-84-73(99)69(95)75(63(47-89)111-84)112-83-74(100)76(66(92)62(46-88)109-83)113-85-78(68(94)65(91)61(45-87)110-85)115-82-72(98)70(96)77(79(116-82)80(101)102)114-81-71(97)67(93)64(90)60(44-86)108-81/h13,25,27,29,31,33,35,37,39,41,43,60-79,81-100H,14-24,26,28,30,32,34,36,38,40,42,44-48H2,1-12H3,(H,101,102)(H,103,104)(H,105,106)/p-3/b49-13-,50-25-,51-27-,52-29-,53-31-,54-33-,55-35-,56-37-,57-39+,58-41+,59-43+/t60-,61-,62-,63-,64-,65-,66-,67+,68+,69-,70-,71+,72-,73-,74-,75-,76+,77+,78+,79+,81+,82-,83+,84-,85-/m1/s1
+  standard_inchi_key: KLZCREFEFYCDEX-BNSVXKHESA-K
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000800
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Polyprenols
+  class_results:
+  - Bactoprenols
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- pubchem:52940152
+producer_organisms:
+- taxon_id: NCBITaxon:339
+  taxon_label: Xanthomonas campestris
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000800
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:9763683
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000800 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000800
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:339
+  organism_label: Xanthomonas campestris
+  evidence:
+  - reference: PMID:9763683
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000800 entry version 5; citation taken from the entry level
+  genome_accession: genbank:U22511.1
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000800
+  source_label: xanthan
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f8ba0c3945
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

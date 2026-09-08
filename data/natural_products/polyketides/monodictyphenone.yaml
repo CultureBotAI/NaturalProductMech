@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-288ae85ac6
+label: monodictyphenone
+chemical_structure:
+  smiles: CC1=CC(C(O)=O)=C(C(=O)C2=C(O)C=CC=C2O)C(O)=C1
+  standard_inchi: InChI=1S/C15H12O6/c1-7-5-8(15(20)21)12(11(18)6-7)14(19)13-9(16)3-2-4-10(13)17/h2-6,16-18H,1H3,(H,20,21)
+  standard_inchi_key: UMNWQJSVQOCNEM-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000101
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Benzophenones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA016280
+- pubchem:16114922
+producer_organisms:
+- taxon_id: NCBITaxon:227321
+  taxon_label: Aspergillus nidulans FGSC A4
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000101
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Gene expression correlated
+    with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19448638
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000101 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000101
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:227321
+  organism_label: Aspergillus nidulans FGSC A4
+  evidence:
+  - reference: PMID:19448638
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000101 entry version 5; citation taken from the entry level
+  genome_accession: genbank:BN001308.1
+  locus_from: 4379755
+  locus_to: 4404005
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000101
+  source_label: monodictyphenone
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-288ae85ac6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

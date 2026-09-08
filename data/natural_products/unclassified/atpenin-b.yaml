@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-96f04eb43c
+label: atpenin B
+chemical_structure:
+  smiles: CCC(C)CC(C)C(=O)C1=C(C(=C(NC1=O)OC)OC)O
+  standard_inchi: InChI=1S/C15H23NO5/c1-6-8(2)7-9(3)11(17)10-12(18)13(20-4)15(21-5)16-14(10)19/h8-9H,6-7H2,1-5H3,(H2,16,18,19)
+  standard_inchi_key: UQWHXKHYKUVKKD-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002067
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA018005
+- pubchem:54676869
+producer_organisms:
+- taxon_id: NCBITaxon:933388
+  taxon_label: Penicillium oxalicum 114-2
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002067
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1073/pnas.0237315100
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002067 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002067
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:933388
+  organism_label: Penicillium oxalicum 114-2
+  evidence:
+  - reference: DOI:10.1073/pnas.0237315100
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002067 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KB644415.1
+  locus_from: 3583596
+  locus_to: 3620596
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002067
+  source_label: atpenin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-96f04eb43c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

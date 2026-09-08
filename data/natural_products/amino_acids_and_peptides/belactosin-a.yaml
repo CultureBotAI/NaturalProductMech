@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-d222796a58
+label: belactosin A
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1[C@@H](OC1=O)C(=O)N[C@H]1C[C@@H]1C[C@H](NC(=O)[C@H](C)N)C(O)=O
+  standard_inchi: InChI=1S/C17H27N3O6/c1-4-7(2)12-13(26-17(12)25)15(22)19-10-5-9(10)6-11(16(23)24)20-14(21)8(3)18/h7-13H,4-6,18H2,1-3H3,(H,19,22)(H,20,21)(H,23,24)/t7-,8-,9+,10-,11-,12-,13+/m0/s1
+  standard_inchi_key: ZSYIAUXMQLVKIL-SMFJDMQNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001441
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA014378
+- pubchem:25053219
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001441
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
+  evidence:
+  - reference: PMID:28452105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001441 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001441
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:28452105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001441 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY249118.1
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001441
+  source_label: belactosin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d222796a58
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

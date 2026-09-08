@@ -1,0 +1,137 @@
+identifier: naturalproductmech:mibig-28a2b30db0
+label: pyrrolomycin A
+chemical_structure:
+  smiles: C1=C(C(=C(N1)Cl)Cl)[N+](=O)[O-]
+  standard_inchi: InChI=1S/C4H2Cl2N2O2/c5-3-2(8(9)10)1-7-4(3)6/h1,7H
+  standard_inchi_key: CDHAYBUDIPNGGJ-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000130
+np_pathway: ALKALOIDS
+synonyms:
+- value: pyrrolomycin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000130
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Proline alkaloids
+  class_results:
+  - Pyrrole alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:133275
+producer_organisms:
+- taxon_id: NCBITaxon:76728
+  taxon_label: Streptomyces vitaminophilus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000130
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17158935
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000130 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:428401
+  taxon_label: Streptomyces sp. UC 11065
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000131
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17158935
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000131 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:428401
+  taxon_label: Streptomyces sp. UC 11065
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000132
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17158935
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000132 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000130
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:76728
+  organism_label: Streptomyces vitaminophilus
+  evidence:
+  - reference: PMID:17158935
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000130 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF140901.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000131
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:428401
+  organism_label: Streptomyces sp. UC 11065
+  evidence:
+  - reference: PMID:17158935
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000131 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF140902.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000132
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:428401
+  organism_label: Streptomyces sp. UC 11065
+  evidence:
+  - reference: PMID:17158935
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000132 entry version 3; citation taken from the entry level
+  genome_accession: genbank:EF140903.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000130
+  source_label: pyrrolomycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-28a2b30db0
+- source: MIBIG
+  source_id: BGC0000131
+  source_label: pyrrolomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0f43a58a39
+- source: MIBIG
+  source_id: BGC0000132
+  source_label: pyrrolomycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-cab264600f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000130, BGC0000131,
+    BGC0000132. Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

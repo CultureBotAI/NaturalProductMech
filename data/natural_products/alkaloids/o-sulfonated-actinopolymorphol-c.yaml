@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-185794c7f8
+label: O-sulfonated actinopolymorphol C
+chemical_structure:
+  smiles: OC1=CC=C(CC2=CN=C(CC3=CC=C(OS(=O)([O-])=O)C=C3)C=N2)C=C1
+  standard_inchi: InChI=1S/C18H16N2O5S/c21-17-5-1-13(2-6-17)9-15-11-20-16(12-19-15)10-14-3-7-18(8-4-14)25-26(22,23)24/h1-8,11-12,21H,9-10H2,(H,22,23,24)/p-1
+  standard_inchi_key: SBWYXCVGJNJEOQ-UHFFFAOYSA-M
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002167
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tetramate alkaloids
+  - Peptide alkaloids
+  class_results:
+  - Pyrazine and Piperazine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:332952
+  taxon_label: Aspergillus flavus NRRL3357
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002167
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23281040
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002167 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002167
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:332952
+  organism_label: Aspergillus flavus NRRL3357
+  evidence:
+  - reference: PMID:23281040
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002167 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP059871.1
+  locus_from: 1196775
+  locus_to: 1211873
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002167
+  source_label: O-sulfonated actinopolymorphol C
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-185794c7f8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

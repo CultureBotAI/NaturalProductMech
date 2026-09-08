@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-90cc844890
+label: salinomycin
+chemical_structure:
+  smiles: CC[C@H]([C@@H]1[C@H](C[C@H]([C@@]2(O1)C=C[C@H]([C@]3(O2)CC[C@@](O3)(C)[C@H]4CC[C@@]([C@@H](O4)C)(CC)O)O)C)C)C(=O)[C@@H](C)[C@H]([C@H](C)[C@H]5[C@H](CCC(O5)[C@@H](CC)C(=O)O)C)O
+  standard_inchi: InChI=1S/C42H70O11/c1-11-29(38(46)47)31-15-14-23(4)36(50-31)27(8)34(44)26(7)35(45)30(12-2)37-24(5)22-25(6)41(51-37)19-16-32(43)42(53-41)21-20-39(10,52-42)33-17-18-40(48,13-3)28(9)49-33/h16,19,23-34,36-37,43-44,48H,11-15,17-18,20-22H2,1-10H3,(H,46,47)/t23-,24-,25+,26-,27-,28-,29+,30-,31?,32+,33+,34+,36+,37-,39-,40+,41+,42+/m0/s1
+  standard_inchi_key: KQXDHUJYNAXLNZ-SDCJTGBBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000144
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polyethers
+  class_results:
+  - Polyether ionophores
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:72370
+producer_organisms:
+- taxon_id: NCBITaxon:1888
+  taxon_label: Streptomyces albus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000144
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22156425
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000144 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000144
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1888
+  organism_label: Streptomyces albus
+  evidence:
+  - reference: PMID:22156425
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000144 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JN033543.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000144
+  source_label: salinomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-90cc844890
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

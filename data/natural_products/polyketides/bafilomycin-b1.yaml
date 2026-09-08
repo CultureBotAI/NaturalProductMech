@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-8e2e9011da
+label: bafilomycin B1
+chemical_structure:
+  smiles: COC1\C=C\C=C(C)\CC(C)C(O)C(C)\C=C(/C)\C=C(OC)\C(=O)OC1C(C)C(O)C(C)C1(O)CC(OC(=O)\C=C\C(=O)NC2=C(O)CCC2=O)C(C)C(O1)C(C)C
+  standard_inchi: InChI=1S/C44H65NO13/c1-23(2)41-28(7)35(56-37(49)18-17-36(48)45-38-31(46)15-16-32(38)47)22-44(53,58-41)30(9)40(51)29(8)42-33(54-10)14-12-13-24(3)19-26(5)39(50)27(6)20-25(4)21-34(55-11)43(52)57-42/h12-14,17-18,20-21,23,26-30,33,35,39-42,46,50-51,53H,15-16,19,22H2,1-11H3,(H,45,48)/b14-12+,18-17+,24-13+,25-20+,34-21-
+  standard_inchi_key: KFUFLYSBMNNJTF-UNPKUBMASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000028
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Bafilomycins
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA02171
+producer_organisms:
+- taxon_id: NCBITaxon:390239
+  taxon_label: Streptomyces lohii
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000028
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
+  evidence:
+  - reference: PMID:23362147
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000028 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000028
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:390239
+  organism_label: Streptomyces lohii
+  evidence:
+  - reference: PMID:23362147
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000028 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GU390405.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000028
+  source_label: bafilomycin B1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8e2e9011da
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

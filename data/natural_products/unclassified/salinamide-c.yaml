@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-af0fe473a9
+label: salinamide C
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1NC(=O)[C@@H](NC(=O)[C@H](C)[C@H](O)C(C)C)[C@@H](C)OC(=O)[C@H](COC(=O)CNC(=O)\C=C\C(\C)=C\C)NC(=O)[C@H](NC(=O)[C@H](CC2=CC=CC=C2)N(C)C(=O)[C@@H](NC1=O)C1=CC=C(OC)C=C1)[C@@H](C)O
+  standard_inchi: InChI=1S/C52H73N7O14/c1-12-29(5)19-24-39(61)53-26-40(62)72-27-37-52(70)73-33(9)43(57-46(64)31(7)45(63)28(3)4)50(68)55-41(30(6)13-2)48(66)58-44(35-20-22-36(71-11)23-21-35)51(69)59(10)38(25-34-17-15-14-16-18-34)47(65)56-42(32(8)60)49(67)54-37/h12,14-24,28,30-33,37-38,41-45,60,63H,13,25-27H2,1-11H3,(H,53,61)(H,54,67)(H,55,68)(H,56,65)(H,57,64)(H,58,66)/b24-19+,29-12+/t30-,31+,32+,33+,37-,38-,41+,42+,43-,44-,45+/m0/s1
+  standard_inchi_key: HVTYOEKGTBJUJS-LGQNIYRXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001230
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA02114
+producer_organisms:
+- taxon_id: NCBITaxon:1169156
+  taxon_label: Streptomyces sp. CNB091
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001230
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.
+    That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the
+    taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26553755
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001230 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001230
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1169156
+  organism_label: Streptomyces sp. CNB091
+  evidence:
+  - reference: PMID:26553755
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001230 entry version 5; citation taken from the entry level
+  genome_accession: genbank:BK009377.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001230
+  source_label: salinamide C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-af0fe473a9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

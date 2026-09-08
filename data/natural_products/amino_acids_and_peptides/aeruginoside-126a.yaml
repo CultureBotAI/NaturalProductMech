@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-9f9cd8eed7
+label: aeruginoside 126A
+chemical_structure:
+  smiles: CC(C)C[C@@H](NC(=O)[C@H](O)CC1=CC=CC=C1)C(=O)N1[C@H]2C[C@@H](CC[C@H]2C[C@H]1C(=O)NCCC1=CCN(C1)C(N)=N)O[C@H]1OC[C@@H](O)[C@H](O)[C@H]1O
+  standard_inchi: InChI=1S/C36H54N6O9/c1-20(2)14-25(40-33(48)28(43)15-21-6-4-3-5-7-21)34(49)42-26-17-24(51-35-31(46)30(45)29(44)19-50-35)9-8-23(26)16-27(42)32(47)39-12-10-22-11-13-41(18-22)36(37)38/h3-7,11,20,23-31,35,43-46H,8-10,12-19H2,1-2H3,(H3,37,38)(H,39,47)(H,40,48)/t23-,24+,25+,26-,27-,28+,29+,30-,31+,35+/m0/s1
+  standard_inchi_key: ZLUQPKGCJYFQGT-PUWCCGQOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000297
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Aeruginosins
+  - Linear peptides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+- SACCHARIDE
+xrefs:
+- npatlas:NPA06922
+producer_organisms:
+- taxon_id: NCBITaxon:213624
+  taxon_label: Planktothrix agardhii NIVA-CYA 126
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000297
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
+  evidence:
+  - reference: PMID:17524987
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000297 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000297
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:213624
+  organism_label: Planktothrix agardhii NIVA-CYA 126
+  evidence:
+  - reference: PMID:17524987
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000297 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM071396.2
+  bgc_class:
+  - NRPS
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000297
+  source_label: aeruginoside 126A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-9f9cd8eed7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

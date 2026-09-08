@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-5730bd08ca
+label: gliovirin
+chemical_structure:
+  smiles: '[H][C@@]12O[C@@]11C[C@@]34SSC(C5=CC=C(OC)C(OC)=C5O)[C@@]([H])(NC3=O)C(=O)N4O[C@@]1([H])[C@H](O)C=C2'
+  standard_inchi: InChI=1S/C20H20N2O8S2/c1-27-10-5-3-8(13(24)14(10)28-2)15-12-17(25)22-20(32-31-15,18(26)21-12)7-19-11(29-19)6-4-9(23)16(19)30-22/h3-6,9,11-12,15-16,23-24H,7H2,1-2H3,(H,21,26)/t9-,11+,12-,15?,16+,19+,20-/m1/s1
+  standard_inchi_key: VZUFPCHAVLFFAY-QEZWNWIZSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001609
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Thiodiketopiperazine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA016022
+producer_organisms:
+- taxon_id: NCBITaxon:413071
+  taxon_label: Trichoderma virens Gv29-8
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001609
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1002/slct.201700262
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001609 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001609
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:413071
+  organism_label: Trichoderma virens Gv29-8
+  evidence:
+  - reference: DOI:10.1002/slct.201700262
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001609 entry version 4; citation taken from the entry level
+  genome_accession: genbank:ABDF02000047.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001609
+  source_label: gliovirin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-5730bd08ca
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

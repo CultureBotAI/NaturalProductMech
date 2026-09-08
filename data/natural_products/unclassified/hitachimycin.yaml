@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-421505cc6b
+label: hitachimycin
+chemical_structure:
+  smiles: C/C/1=C/[C@H]2C[C@@H](C(=C2C(=O)C[C@H](CC/C=C/C[C@@H](NC(=O)/C=C\C=C1)C3=CC=CC=C3)O)O)OC
+  standard_inchi: InChI=1S/C29H35NO5/c1-20-11-9-10-16-27(33)30-24(21-12-5-3-6-13-21)15-8-4-7-14-23(31)19-25(32)28-22(17-20)18-26(35-2)29(28)34/h3-6,8-13,16-17,22-24,26,31,34H,7,14-15,18-19H2,1-2H3,(H,30,33)/b8-4+,11-9+,16-10-,20-17-/t22-,23-,24+,26-/m0/s1
+  standard_inchi_key: PLQKHNPZPRTISL-GIUMLQGDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001194
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactams
+  - Polyene macrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6436205
+producer_organisms:
+- taxon_id: NCBITaxon:159449
+  taxon_label: Streptomyces scabrisporus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001194
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25786909
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001194 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001194
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:159449
+  organism_label: Streptomyces scabrisporus
+  evidence:
+  - reference: PMID:25786909
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001194 entry version 5; citation taken from the entry level
+  genome_accession: genbank:LC008143.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001194
+  source_label: hitachimycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-421505cc6b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

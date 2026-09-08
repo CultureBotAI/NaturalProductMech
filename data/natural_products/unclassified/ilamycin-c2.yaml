@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-ab4ad9e021
+label: ilamycin C2
+chemical_structure:
+  smiles: C/C=C/C[C@H]1C(=O)N[C@H](C(=O)N([C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N([C@H]2C[C@@H]([C@@H](N(C2=O)[C@H](C(=O)N1)CC(C)C)O)C)C)C)CC3=CC(=C(C=C3)O)[N+](=O)[O-])CC(C)C)C)CC4=CN(C5=CC=CC=C54)C(C)(C)[C@H]6CO6
+  standard_inchi: InChI=1S/C54H75N9O12/c1-12-13-17-36-46(65)58-38(26-34-27-61(54(8,9)45-28-75-45)39-18-15-14-16-35(34)39)52(71)59(10)41(21-29(2)3)48(67)57-37(24-33-19-20-44(64)40(25-33)63(73)74)47(66)55-32(7)51(70)60(11)43-23-31(6)50(69)62(53(43)72)42(22-30(4)5)49(68)56-36/h12-16,18-20,25,27,29-32,36-38,41-43,45,50,64,69H,17,21-24,26,28H2,1-11H3,(H,55,66)(H,56,68)(H,57,67)(H,58,65)/b13-12+/t31-,32-,36-,37-,38-,41-,42-,43-,45+,50-/m0/s1
+  standard_inchi_key: JSZUQPCUWLSQDN-JMSZFDLWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001620
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:155545940
+producer_organisms:
+- taxon_id: NCBITaxon:1893
+  taxon_label: Streptomyces atratus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001620
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28855504
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001620 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001620
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1893
+  organism_label: Streptomyces atratus
+  evidence:
+  - reference: PMID:28855504
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001620 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY173348.1
+  locus_from: 5862
+  locus_to: 63617
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001620
+  source_label: ilamycin C2
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ab4ad9e021
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-08d2bb53af
+label: pseudovibriamide B4
+chemical_structure:
+  smiles: C/C=C(\NC(=O)N[C@@H](CC1=CC=C(O)C=C1)C(=O)O)C(=O)NCC(=O)N[C@@H](CCCN=C(N)N)C(=O)N1CCC[C@H]1C1=NC(C(=O)N[C@@H](CCC(N)=O)C(=O)OC(CC(=O)O)C2C(OC(=O)CC)CCN2C(=O)[C@@H](N)C(C)C)=CS1
+  standard_inchi: InChI=1S/C50H71N13O16S/c1-5-28(60-50(77)61-31(47(74)75)21-26-11-13-27(64)14-12-26)42(70)56-23-37(66)57-29(9-7-18-55-49(53)54)45(72)62-19-8-10-33(62)44-59-32(24-80-44)43(71)58-30(15-16-36(51)65)48(76)79-35(22-38(67)68)41-34(78-39(69)6-2)17-20-63(41)46(73)40(52)25(3)4/h5,11-14,24-25,29-31,33-35,40-41,64H,6-10,15-23,52H2,1-4H3,(H2,51,65)(H,56,70)(H,57,66)(H,58,71)(H,67,68)(H,74,75)(H4,53,54,55)(H2,60,61,77)/b28-5-/t29-,30-,31-,33-,34?,35?,40-,41?/m0/s1
+  standard_inchi_key: VUSVMOUTFWGYSU-LNFOJLHHSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002123
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA033258
+producer_organisms:
+- taxon_id: NCBITaxon:1898042
+  taxon_label: Pseudovibrio brasiliensis Ab134
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002123
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1002/ange.202017320
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002123 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002123
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1898042
+  organism_label: Pseudovibrio brasiliensis Ab134
+  evidence:
+  - reference: DOI:10.1002/ange.202017320
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002123 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP074128.1
+  locus_from: 160098
+  locus_to: 203291
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002123
+  source_label: pseudovibriamide B4
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-08d2bb53af
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

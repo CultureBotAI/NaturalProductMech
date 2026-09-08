@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-8fc088b7a7
+label: warkmycin CS1
+chemical_structure:
+  smiles: O[C@H](C(C)=C1)[C@@]2(O)[C@]([C@@]1([H])O[C@H](C[C@@H](OC)[C@@H]3O)O[C@H]3C)(O)C4=C(C(C(C(O)=C5[C@@H](C[C@@H](O[C@H]6C[C@]([C@H](O[C@@H]7O[C@@H]([C@H](CC7)OC(N)=O)C)[C@@H](C)O6)(C)O)[C@@H]8O)O[C@@H]8C)=C(C=C5)C4=O)=O)[C@H](O)[C@@H]2OC(C)=O
+  standard_inchi: InChI=1S/C48H65NO22/c1-17-13-29(70-31-15-27(62-8)36(51)20(4)65-31)47(60)35-34(41(56)44(67-22(6)50)48(47,61)42(17)57)40(55)33-24(39(35)54)10-9-23(38(33)53)26-14-28(37(52)19(3)63-26)68-32-16-46(7,59)43(21(5)66-32)71-30-12-11-25(18(2)64-30)69-45(49)58/h9-10,13,18-21,25-32,36-37,41-44,51-53,56-57,59-61H,11-12,14-16H2,1-8H3,(H2,49,58)/t18-,19-,20+,21-,25+,26-,27-,28-,29+,30+,31-,32+,36-,37-,41+,42-,43-,44+,46+,47-,48+/m1/s1
+  standard_inchi_key: BVFQLQJRBYDONH-DDEJJMJQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001438
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:1982764
+  taxon_label: Streptomyces sp. CS057
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0001438
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:23860362
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001438 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001438
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1982764
+  organism_label: Streptomyces sp. CS057
+  evidence:
+  - reference: PMID:23860362
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001438 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KZ195572.1
+  locus_from: 1756999
+  locus_to: 1795313
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001438
+  source_label: warkmycin CS1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8fc088b7a7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

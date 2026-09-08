@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-7388714a6d
+label: serobactin C
+chemical_structure:
+  smiles: O=C(NC(C(O)C(O)=O)C(NC(CO)C(NC(C(O)C(O)=O)C(NC(C(C)O)C(NC(CO)C(NC1CCCN(O)C1=O)=O)=O)=O)=O)=O)CCCCCCCCCCCCC
+  standard_inchi: InChI=1S/C37H63N7O17/c1-3-4-5-6-7-8-9-10-11-12-13-16-24(48)41-26(28(49)36(57)58)33(54)40-23(19-46)31(52)43-27(29(50)37(59)60)34(55)42-25(20(2)47)32(53)39-22(18-45)30(51)38-21-15-14-17-44(61)35(21)56/h20-23,25-29,45-47,49-50,61H,3-19H2,1-2H3,(H,38,51)(H,39,53)(H,40,54)(H,41,48)(H,42,55)(H,43,52)(H,57,58)(H,59,60)
+  standard_inchi_key: NXSGPZVLHWRFIW-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000424
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:757424
+  taxon_label: Herbaspirillum seropedicae SmR1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000424
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23320867
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000424 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000424
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:757424
+  organism_label: Herbaspirillum seropedicae SmR1
+  evidence:
+  - reference: PMID:23320867
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000424 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP002039.1
+  locus_from: 2645251
+  locus_to: 2687402
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000424
+  source_label: serobactin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7388714a6d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

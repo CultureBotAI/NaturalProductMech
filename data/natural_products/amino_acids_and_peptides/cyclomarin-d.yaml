@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-aa08bbbeb2
+label: cyclomarin D
+chemical_structure:
+  smiles: CO[C@@H]([C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](C[C@@H](C)CO)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)N(C)C(=O)[C@@H](NC1=O)C(C)C)[C@H](C)C=C(C)C)[C@H](O)C1=CN(C2=C1C=CC=C2)C(C)(C)C=C)C1=CC=CC=C1
+  standard_inchi: InChI=1S/C55H80N8O10/c1-15-55(11,12)63-28-38(37-23-19-20-24-40(37)63)46(65)44-52(70)57-39(27-33(8)29-64)49(67)56-35(10)48(66)61-45(47(73-14)36-21-17-16-18-22-36)53(71)58-42(32(6)7)54(72)62(13)41(26-31(4)5)50(68)59-43(51(69)60-44)34(9)25-30(2)3/h15-25,28,31-35,39,41-47,64-65H,1,26-27,29H2,2-14H3,(H,56,67)(H,57,70)(H,58,71)(H,59,68)(H,60,69)(H,61,66)/t33-,34-,35+,39+,41+,42+,43+,44+,45+,46-,47-/m1/s1
+  standard_inchi_key: AHDUXXXZGSWYHF-IXGGKXOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000333
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA011889
+- pubchem:25220882
+producer_organisms:
+- taxon_id: NCBITaxon:391037
+  taxon_label: Salinispora arenicola CNS-205
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000333
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18331040
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000333 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000333
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:391037
+  organism_label: Salinispora arenicola CNS-205
+  evidence:
+  - reference: PMID:18331040
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000333 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000850.1
+  locus_from: 5140169
+  locus_to: 5187645
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000333
+  source_label: cyclomarin D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-aa08bbbeb2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-a55e1c1fd3
+label: thalianol
+chemical_structure:
+  smiles: C[C@H](CC/C=C(\C)/CCC=C(C)C)[C@]1(CCC2=C1CC[C@@H]3[C@@]2(CC[C@@H](C3(C)C)O)C)C
+  standard_inchi: InChI=1S/C30H50O/c1-21(2)11-9-12-22(3)13-10-14-23(4)29(7)19-17-25-24(29)15-16-26-28(5,6)27(31)18-20-30(25,26)8/h11,13,23,26-27,31H,9-10,12,14-20H2,1-8H3/b22-13+/t23-,26+,27+,29-,30-/m1/s1
+  standard_inchi_key: DGAGPZOBTQYNRE-VMSIWEJCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000670
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Triterpenoids
+  class_results:
+  - Malabaricane triterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:25229600
+producer_organisms:
+- taxon_id: NCBITaxon:3702
+  taxon_label: Arabidopsis thaliana
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000670
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1126/science.1154990
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000670 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000670
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:3702
+  organism_label: Arabidopsis thaliana
+  evidence:
+  - reference: DOI:10.1126/science.1154990
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000670 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:NC_003076.8
+  locus_from: 19428888
+  locus_to: 19461689
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000670
+  source_label: thalianol
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-a55e1c1fd3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

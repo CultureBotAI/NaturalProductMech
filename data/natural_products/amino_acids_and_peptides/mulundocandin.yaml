@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-eb8d2a3e98
+label: mulundocandin
+chemical_structure:
+  smiles: CC[C@H](C)CCCCCCCCCCC(=O)N[C@H]1C[C@@H]([C@@H](NC(=O)[C@H]2[C@@H]([C@@H](CN2C(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@@H]3C[C@@H](CN3C(=O)[C@H](NC1=O)[C@H](C)O)O)[C@H]([C@H](C4=CC=C(C=C4)O)O)O)CO)C)O)O)O
+  standard_inchi: InChI=1S/C48H77N7O16/c1-5-25(2)14-12-10-8-6-7-9-11-13-15-35(61)49-31-21-34(60)44(67)53-46(69)38-39(62)26(3)22-55(38)47(70)32(24-56)50-45(68)37(41(64)40(63)28-16-18-29(58)19-17-28)52-43(66)33-20-30(59)23-54(33)48(71)36(27(4)57)51-42(31)65/h16-19,25-27,30-34,36-41,44,56-60,62-64,67H,5-15,20-24H2,1-4H3,(H,49,61)(H,50,68)(H,51,65)(H,52,66)(H,53,69)/t25-,26+,27-,30-,31-,32+,33-,34-,36+,37-,38+,39+,40-,41+,44-/m0/s1
+  standard_inchi_key: WUPSJTQKGFMDON-QCTZMLGRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002611
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA020824
+producer_organisms:
+- taxon_id: NCBITaxon:1810919
+  taxon_label: Aspergillus mulundensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002611
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.40.275
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002611 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002611
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1810919
+  organism_label: Aspergillus mulundensis
+  evidence:
+  - reference: DOI:10.7164/antibiotics.40.275
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002611 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KP742486.1
+  locus_from: 1
+  locus_to: 57000
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002611
+  source_label: mulundocandin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-eb8d2a3e98
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

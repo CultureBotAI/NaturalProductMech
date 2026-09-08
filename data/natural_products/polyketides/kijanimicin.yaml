@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-3f1c37e6b9
+label: kijanimicin
+chemical_structure:
+  smiles: C[C@H]1C[C@@H]([C@@H]([C@@H]2[C@@H]1[C@]3([C@@H](C=C2)/C(=C\C[C@@H](/C(=C/[C@@H]4C=C([C@@H](C[C@@]45C(=O)C(=C(O5)O)C3=O)C)CO)/C)O[C@H]6C[C@]([C@H]([C@H](O6)C)NC(=O)OC)(C)[N+](=O)[O-])/C)C)O[C@H]7C[C@H]([C@H]([C@@H](O7)C)O)O[C@H]8C[C@H]([C@H]([C@@H](O8)C)O[C@@H]9C[C@H]([C@H]([C@@H](O9)C)OC)O)O[C@H]1C[C@H]([C@H]([C@@H](O1)C)O)O)C
+  standard_inchi: InChI=1S/C67H100N2O24/c1-29-15-18-45(88-52-27-65(11,69(79)80)60(38(10)87-52)68-64(78)82-14)30(2)20-40-21-39(28-70)33(5)26-67(40)62(76)53(63(77)93-67)61(75)66(12)42(29)17-16-41-54(66)31(3)19-32(4)57(41)91-51-24-46(56(74)35(7)84-51)89-50-25-47(90-48-22-43(71)55(73)34(6)83-48)59(37(9)86-50)92-49-23-44(72)58(81-13)36(8)85-49/h15-17,20-21,31-38,40-52,54-60,70-74,77H,18-19,22-28H2,1-14H3,(H,68,78)/b29-15-,30-20+/t31-,32-,33+,34-,35-,36-,37-,38+,40+,41-,42-,43+,44+,45-,46+,47+,48-,49+,50-,51-,52-,54+,55-,56-,57-,58-,59-,60-,65-,66+,67-/m0/s1
+  standard_inchi_key: HWLALZIEGGFXKV-ILWXQJJWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000082
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Spirotetronate macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:24839883
+producer_organisms:
+- taxon_id: NCBITaxon:46161
+  taxon_label: Actinomadura kijaniata
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000082
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:17985890
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000082 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000082
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:46161
+  organism_label: Actinomadura kijaniata
+  evidence:
+  - reference: PMID:17985890
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000082 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EU301739.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000082
+  source_label: kijanimicin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3f1c37e6b9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

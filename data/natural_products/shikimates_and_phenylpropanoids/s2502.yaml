@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-60464d2174
+label: S2502
+chemical_structure:
+  smiles: O=C(C)/C=C1OC2=C(C(O[C@H](CC(O)=O)C3)=C\1)C3=CC4=C2C(O)=CC=C4
+  standard_inchi: InChI=1S/C20H16O6/c1-10(21)5-13-8-16-19-12(7-14(25-16)9-17(23)24)6-11-3-2-4-15(22)18(11)20(19)26-13/h2-6,8,14,22H,7,9H2,1H3,(H,23,24)/b13-5-/t14-/m0/s1
+  standard_inchi_key: OVMLMUNGWBNVBW-UUSOHVMFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002081
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Coumarins
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:2602572
+  taxon_label: Streptomyces sp. Tue6314
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002081
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1021/acs.joc.9b02741
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002081 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002081
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2602572
+  organism_label: Streptomyces sp. Tue6314
+  evidence:
+  - reference: DOI:10.1021/acs.joc.9b02741
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002081 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MK424349.1
+  locus_from: 5927
+  locus_to: 26330
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002081
+  source_label: S2502
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-60464d2174
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

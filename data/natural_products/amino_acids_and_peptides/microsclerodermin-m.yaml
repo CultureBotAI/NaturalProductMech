@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-4f30549108
+label: microsclerodermin M
+chemical_structure:
+  smiles: CN1CC(=O)N[C@H](CC2=CNC3=CC=CC=C23)C(=O)NCC(=O)NC[C@H](O)CC(=O)N[C@H]([C@H](O)[C@@H](O)CC=CC=CC=CC2=CC=CC=C2)[C@H](O)C(=O)N[C@@H]2CC(=O)N[C@@]2(O)CC1=O
+  standard_inchi: InChI=1S/C44H54N8O12/c1-52-25-37(58)48-31(18-27-22-45-30-16-11-10-15-29(27)30)42(62)47-24-36(57)46-23-28(53)19-34(55)50-39(41(61)43(63)49-33-20-35(56)51-44(33,64)21-38(52)59)40(60)32(54)17-9-4-2-3-6-12-26-13-7-5-8-14-26/h2-16,22,28,31-33,39-41,45,53-54,60-61,64H,17-21,23-25H2,1H3,(H,46,57)(H,47,62)(H,48,58)(H,49,63)(H,50,55)(H,51,56)/t28-,31-,32+,33-,39-,40-,41+,44-/m1/s1
+  standard_inchi_key: QHVAQCHLFYOGDB-UIXLQRKESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001019
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA08944
+producer_organisms:
+- taxon_id: NCBITaxon:56
+  taxon_label: Sorangium cellulosum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001019
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24124771
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001019 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001019
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:56
+  organism_label: Sorangium cellulosum
+  evidence:
+  - reference: PMID:24124771
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001019 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF657738.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001019
+  source_label: microsclerodermin M
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4f30549108
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

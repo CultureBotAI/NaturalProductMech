@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-b1027ab43e
+label: (3R,5S)-5-(4-hydroxybenzyl)-3-methyl-3-((2E,4E,6E,8E,10E)-4,8,10-trimethyldodeca-2,4,6,8,10-pentaenoyl)pyrrolidine-2,4-dione
+chemical_structure:
+  smiles: C/C=C(/C=C(/C=C/C=C(/C=C/C(C(C)C(N[C@H](CC1=CC=C(O)C=C1)C(O)=O)=O)=O)C)C)C
+  standard_inchi: InChI=1S/C27H33NO5/c1-6-18(2)16-20(4)9-7-8-19(3)10-15-25(30)21(5)26(31)28-24(27(32)33)17-22-11-13-23(29)14-12-22/h6-16,21,24,29H,17H2,1-5H3,(H,28,31)(H,32,33)/b9-7+,15-10+,18-6+,19-8+,20-16+/t21?,24-/m1/s1
+  standard_inchi_key: QYOOOQHFZSDPSQ-WNZXBQPCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000992
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Simple amide alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:42747
+  taxon_label: Fusarium heterosporum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000992
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15724180
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000992 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000992
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:42747
+  organism_label: Fusarium heterosporum
+  evidence:
+  - reference: PMID:15724180
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000992 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AY700570.3
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000992
+  source_label: (3R,5S)-5-(4-hydroxybenzyl)-3-methyl-3-((2E,4E,6E,8E,10E)-4,8,10-trimethyldodeca-2,4,6,8,10-pentaenoyl)pyrrolidine-2,4-dione
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-b1027ab43e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

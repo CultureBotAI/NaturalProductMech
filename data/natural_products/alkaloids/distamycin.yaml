@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-5fbc59612b
+label: distamycin
+chemical_structure:
+  smiles: CN1C=C(C=C1C(=O)NC2=CN(C(=C2)C(=O)NC3=CN(C(=C3)C(=O)NCCC(=N)N)C)C)NC=O
+  standard_inchi: InChI=1S/C22H27N9O4/c1-29-9-13(26-12-32)6-17(29)21(34)28-15-8-18(31(3)11-15)22(35)27-14-7-16(30(2)10-14)20(33)25-5-4-19(23)24/h6-12H,4-5H2,1-3H3,(H3,23,24)(H,25,33)(H,26,32)(H,27,35)(H,28,34)
+  standard_inchi_key: UPBAOYRENQEPJO-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001147
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Simple amide alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:3115
+producer_organisms:
+- taxon_id: NCBITaxon:55404
+  taxon_label: Streptomyces netropsis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001147
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:25415678
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001147 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001147
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:55404
+  organism_label: Streptomyces netropsis
+  evidence:
+  - reference: PMID:25415678
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001147 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KJ634466.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001147
+  source_label: distamycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-5fbc59612b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

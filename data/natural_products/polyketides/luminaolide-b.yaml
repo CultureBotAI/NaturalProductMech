@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-f94da5bfa3
+label: luminaolide B
+chemical_structure:
+  smiles: CC1C(CC2OC(C=CC2)CC(CC(CC(=O)OC(C(C(CC(C(C(CC3OC(C=CC3)CC(CC(CC(=O)OC(C(C(CC1O)O)C)C(C(O)C(CCC(=O)C(C(OC)C(/C=C/N(C=O)C)C)C)C)C)O)OC)OC)C)O)O)C)C(C(O)C(CCC(=O)C(C(OC)C(/C=C/N(C=O)C)C)C)C)C)O)OC)OC
+  standard_inchi: InChI=1S/C82H142N2O24/c1-47(27-29-67(89)53(7)79(103-19)49(3)31-33-83(13)45-85)77(97)57(11)81-55(9)71(93)43-69(91)51(5)73(101-17)41-63-25-22-24-62(106-63)40-66(100-16)36-60(88)38-76(96)108-82(58(12)78(98)48(2)28-30-68(90)54(8)80(104-20)50(4)32-34-84(14)46-86)56(10)72(94)44-70(92)52(6)74(102-18)42-64-26-21-23-61(105-64)39-65(99-15)35-59(87)37-75(95)107-81/h21-24,31-34,45-66,69-74,77-82,87-88,91-94,97-98H,25-30,35-44H2,1-20H3/b33-31+,34-32+
+  standard_inchi_key: DOUNUINZQIVRLP-FMWAKIAMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001656
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:91819628
+- cyanometdb:CyanoMetDB_3086
+producer_organisms:
+- taxon_id: NCBITaxon:671071
+  taxon_label: Planktothrix paucivesiculata PCC 9631
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001656
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1038/nchembio.1870
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001656 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001656
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:671071
+  organism_label: Planktothrix paucivesiculata PCC 9631
+  evidence:
+  - reference: DOI:10.1038/nchembio.1870
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001656 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KR857272.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001656
+  source_label: luminaolide B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f94da5bfa3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

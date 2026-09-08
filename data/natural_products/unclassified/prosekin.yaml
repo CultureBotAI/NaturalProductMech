@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-4aa88635e9
+label: prosekin
+chemical_structure:
+  smiles: C1(NC(=O)C(CO)NC(=O)C(CC(C)C)NC(=O)C(CC(C)C)NC(=O)C(NC(=O)C(CCC(O)=O)NC(=O)C(CC(C)C)NC(=O)CC(CCCCCCC)O)C(C)OC(=O)C(C(C)CC)NC1=O)C(CC)C
+  standard_inchi: InChI=1S/C52H92N8O14/c1-13-16-17-18-19-20-34(62)26-40(63)53-36(23-28(4)5)46(67)54-35(21-22-41(64)65)45(66)60-44-33(12)74-52(73)43(32(11)15-3)59-50(71)42(31(10)14-2)58-49(70)39(27-61)57-48(69)37(24-29(6)7)55-47(68)38(25-30(8)9)56-51(44)72/h28-39,42-44,61-62H,13-27H2,1-12H3,(H,53,63)(H,54,67)(H,55,68)(H,56,72)(H,57,69)(H,58,70)(H,59,71)(H,60,66)(H,64,65)
+  standard_inchi_key: QZVCYYNGZVFUHG-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002752
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:1148509
+  taxon_label: Pseudomonas prosekii LMG 26867
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002752
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Homology-based prediction. That evidence grades the LOCUS
+    as CLUSTER_PREDICTED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1128/AEM.01869-21
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002752 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002752
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1148509
+  organism_label: Pseudomonas prosekii LMG 26867
+  evidence:
+  - reference: DOI:10.1128/AEM.01869-21
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002752 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LT629762.1
+  locus_from: 5080687
+  locus_to: 5115654
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Homology-based prediction
+  link_evidence_basis: CLUSTER_PREDICTED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002752
+  source_label: prosekin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-4aa88635e9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

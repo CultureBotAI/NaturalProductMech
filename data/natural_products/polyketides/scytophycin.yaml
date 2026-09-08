@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-4d157842ca
+label: scytophycin
+chemical_structure:
+  smiles: C[C@H]1[C@@H](C[C@@H]([C@]2(CO2)[C@H](C[C@@H]3CC=C[C@H](O3)C[C@H]([C@H](/C=C(/C=C/C(=O)O[C@@H]1[C@@H](C)[C@H]([C@@H](C)CCC(=O)[C@H](C)[C@@H]([C@H](C)/C=C/N(C)C=O)OC)O)\C)O)OC)OC)OC)OC
+  standard_inchi: InChI=1S/C46H75NO13/c1-28-16-19-42(51)60-45(33(6)43(52)29(2)17-18-36(49)31(4)44(57-12)30(3)20-21-47(7)27-48)32(5)38(53-8)25-41(56-11)46(26-58-46)40(55-10)24-35-15-13-14-34(59-35)23-39(54-9)37(50)22-28/h13-14,16,19-22,27,29-35,37-41,43-45,50,52H,15,17-18,23-26H2,1-12H3/b19-16+,21-20+,28-22+/t29-,30+,31-,32-,33-,34-,35-,37-,38+,39+,40-,41-,43-,44+,45-,46-/m0/s1
+  standard_inchi_key: FTGOWEQDZZMPNJ-GUMZKTDUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001772
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactones
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:2055235
+  taxon_label: Anabaena sp. UHCC 0451
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001772
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29150506
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001772 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001772
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2055235
+  organism_label: Anabaena sp. UHCC 0451
+  evidence:
+  - reference: PMID:29150506
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001772 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KY767986.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001772
+  source_label: scytophycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-4d157842ca
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

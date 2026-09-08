@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-b6f11fae29
+label: 6-isopalmityl-4-O-geranyl-2-methoxyhydroquinone
+chemical_structure:
+  smiles: OC1=C(CCCCCCCCCCCCC(C)C)C=C(OC/C=C(CC/C=C(C)/C)\C)C=C1OC
+  standard_inchi: InChI=1S/C32H54O3/c1-26(2)18-15-13-11-9-7-8-10-12-14-16-21-29-24-30(25-31(34-6)32(29)33)35-23-22-28(5)20-17-19-27(3)4/h19,22,24-26,33H,7-18,20-21,23H2,1-6H3/b28-22+
+  standard_inchi_key: PBBKVCVGOJSEOQ-XAYXJRQQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001077
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Alkylresorcinol/phloroglucinol polyketide
+- Monoterpenoid
+producer_organisms:
+- taxon_id: NCBITaxon:512565
+  taxon_label: Actinoplanes missouriensis 431
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001077
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1002/cbic.201000628
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001077 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001077
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:512565
+  organism_label: Actinoplanes missouriensis 431
+  evidence:
+  - reference: DOI:10.1002/cbic.201000628
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001077 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AP012319.1
+  locus_from: 8379670
+  locus_to: 8386219
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001077
+  source_label: 6-isopalmityl-4-O-geranyl-2-methoxyhydroquinone
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-b6f11fae29
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

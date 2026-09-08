@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-c017260a8d
+label: psilocybin
+chemical_structure:
+  smiles: CN(C)CCC1=CNC2=C1C(=CC=C2)OP(=O)(O)O
+  standard_inchi: InChI=1S/C12H17N2O4P/c1-14(2)7-6-9-8-13-10-4-3-5-11(12(9)10)18-19(15,16)17/h3-5,8,13H,6-7H2,1-2H3,(H2,15,16,17)
+  standard_inchi_key: QVDSEJDULKLHCG-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002207
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Simple indole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:10624
+producer_organisms:
+- taxon_id: NCBITaxon:93625
+  taxon_label: Psilocybe cyanescens
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002207
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:30283667
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002207 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002207
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:93625
+  organism_label: Psilocybe cyanescens
+  evidence:
+  - reference: PMID:30283667
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002207 entry version 2; citation taken from the entry level
+  genome_accession: genbank:NHYD01003033.1
+  locus_from: 48394
+  locus_to: 70906
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002207
+  source_label: psilocybin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c017260a8d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

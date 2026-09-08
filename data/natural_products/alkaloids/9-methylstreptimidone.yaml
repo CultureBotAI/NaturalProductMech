@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-a975571d47
+label: 9-methylstreptimidone
+chemical_structure:
+  smiles: '[H][C@@](O)(CC1CC(=O)NC(=O)C1)CC(=O)[C@@]([H])(C)\C=C(/C)\C=C/C'
+  standard_inchi: InChI=1S/C17H25NO4/c1-4-5-11(2)6-12(3)15(20)10-14(19)7-13-8-16(21)18-17(22)9-13/h4-6,12-14,19H,7-10H2,1-3H3,(H,18,21,22)/b5-4-,11-6+/t12-,14+/m0/s1
+  standard_inchi_key: ATUBIBZJAGAIBW-WGEALTPQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000171
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Lysine alkaloids
+  class_results:
+  - Piperidine alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA019467
+producer_organisms:
+- taxon_id: NCBITaxon:457427
+  taxon_label: Streptomyces himastatinicus ATCC 53653
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000171
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23438151
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000171 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000171
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:457427
+  organism_label: Streptomyces himastatinicus ATCC 53653
+  evidence:
+  - reference: PMID:23438151
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000171 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FR878059.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000171
+  source_label: 9-methylstreptimidone
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a975571d47
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

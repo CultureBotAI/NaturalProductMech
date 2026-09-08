@@ -1,0 +1,103 @@
+identifier: naturalproductmech:mibig-95a6bcd310
+label: angolamycin
+chemical_structure:
+  smiles: CCC1C(C2C(O2)(/C=C/C(=O)C(CC(C(C(C(CC(=O)O1)O)C)OC3CC(C(C(O3)C)OC4CC(C(C(O4)C)O)(C)O)N(C)C)CC=O)C)C)COC5C(C(C(C(O5)C)O)OC)OC
+  standard_inchi: InChI=1S/C46H77NO17/c1-13-33-29(22-57-44-41(56-12)40(55-11)37(52)25(4)60-44)43-46(8,64-43)16-14-31(49)23(2)18-28(15-17-48)38(24(3)32(50)20-34(51)61-33)62-35-19-30(47(9)10)39(26(5)58-35)63-36-21-45(7,54)42(53)27(6)59-36/h14,16-17,23-30,32-33,35-44,50,52-54H,13,15,18-22H2,1-12H3/b16-14+
+  standard_inchi_key: KZXDKUWSAVUSKI-JQIJEIRASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000018
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Tylosins
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6438267
+producer_organisms:
+- taxon_id: NCBITaxon:42237
+  taxon_label: Streptomyces eurythermus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000018
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18802638
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000018 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:42237
+  taxon_label: Streptomyces eurythermus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000019
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18802638
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000019 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000018
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:42237
+  organism_label: Streptomyces eurythermus
+  evidence:
+  - reference: PMID:18802638
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000018 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EU220288.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000019
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:42237
+  organism_label: Streptomyces eurythermus
+  evidence:
+  - reference: PMID:18802638
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000019 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EU232693.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000018
+  source_label: angolamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-95a6bcd310
+- source: MIBIG
+  source_id: BGC0000019
+  source_label: angolamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-46f9b1c68e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000018, BGC0000019.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

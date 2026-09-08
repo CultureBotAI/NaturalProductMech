@@ -1,0 +1,145 @@
+identifier: naturalproductmech:mibig-005498ea51
+label: pentabromopseudilin
+chemical_structure:
+  smiles: C1=C(C=C(C(=C1Br)O)C2=C(C(=C(N2)Br)Br)Br)Br
+  standard_inchi: InChI=1S/C10H4Br5NO/c11-3-1-4(9(17)5(12)2-3)8-6(13)7(14)10(15)16-8/h1-2,16-17H
+  standard_inchi_key: LXMNWKJHYOZUQL-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000891
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Diphenyl ethers (DPEs)
+  class_results:
+  - Marine-bacterial DPEs
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:324093
+producer_organisms:
+- taxon_id: NCBITaxon:1353533
+  taxon_label: Pseudoalteromonas luteoviolacea 2ta16
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000891
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression|Gene expression
+    correlated with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24974229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000891 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:1315281
+  taxon_label: Pseudoalteromonas phenolica O-BC30
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000890
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:24974229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000890 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:717774
+  taxon_label: Marinomonas mediterranea MMB-1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001465
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24974229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001465 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000891
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1353533
+  organism_label: Pseudoalteromonas luteoviolacea 2ta16
+  evidence:
+  - reference: PMID:24974229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000891 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AUSV01000133.1
+  locus_from: 32483
+  locus_to: 43745
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0000890
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1315281
+  organism_label: Pseudoalteromonas phenolica O-BC30
+  evidence:
+  - reference: PMID:24974229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000890 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF540211.1
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0001465
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:717774
+  organism_label: Marinomonas mediterranea MMB-1
+  evidence:
+  - reference: PMID:24974229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001465 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NC_015276.1
+  locus_from: 4521275
+  locus_to: 4533494
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000891
+  source_label: pentabromopseudilin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-005498ea51
+- source: MIBIG
+  source_id: BGC0000890
+  source_label: pentabromopseudilin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f76ee7db7d
+- source: MIBIG
+  source_id: BGC0001465
+  source_label: pentabromopseudilin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-eabfc120e7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000890, BGC0000891,
+    BGC0001465. Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

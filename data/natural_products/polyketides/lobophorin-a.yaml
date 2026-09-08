@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-b07b49b1e6
+label: lobophorin A
+chemical_structure:
+  smiles: C[C@H]1C[C@@H]([C@@H]([C@@H]2[C@@H]1[C@]3([C@@H](C=C2)/C(=C\C[C@@H](/C(=C\[C@@H]4C=C([C@@H](C[C@@]45C(=O)C(=C3O)C(=O)O5)C)CO)/C)O[C@H]6C[C@]([C@H]([C@H](O6)C)NC(=O)OC)(C)N)/C)C)O[C@H]7C[C@H]([C@H]([C@@H](O7)C)O)O[C@H]8C[C@H]([C@H]([C@@H](O8)C)O[C@@H]9C[C@H]([C@H]([C@@H](O9)C)OC)O)O)C
+  standard_inchi: InChI=1S/C61H92N2O19/c1-27-14-17-42(78-47-25-59(10,62)54(35(9)77-47)63-58(71)73-13)28(2)19-37-20-36(26-64)31(5)24-61(37)56(69)48(57(70)82-61)55(68)60(11)39(27)16-15-38-49(60)29(3)18-30(4)51(38)80-46-23-43(50(67)32(6)74-46)79-44-22-41(66)53(34(8)76-44)81-45-21-40(65)52(72-12)33(7)75-45/h14-16,19-20,29-35,37-47,49-54,64-68H,17-18,21-26,62H2,1-13H3,(H,63,71)/b27-14-,28-19-,55-48?/t29-,30-,31+,32-,33-,34-,35+,37+,38-,39-,40+,41+,42-,43+,44-,45+,46-,47-,49+,50-,51-,52-,53-,54-,59-,60+,61-/m0/s1
+  standard_inchi_key: BFIFMYVVBKSDFE-KNMPCJSWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001183
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Spirotetronate macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:100983786
+producer_organisms:
+- taxon_id: NCBITaxon:579932
+  taxon_label: Streptomyces sp. FXJ7.023
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001183
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27005505
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001183 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001183
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:579932
+  organism_label: Streptomyces sp. FXJ7.023
+  evidence:
+  - reference: PMID:27005505
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001183 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JX306680.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001183
+  source_label: lobophorin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b07b49b1e6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

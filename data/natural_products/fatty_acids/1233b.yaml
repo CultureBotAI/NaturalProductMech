@@ -1,0 +1,79 @@
+identifier: naturalproductmech:mibig-0fa917b9ae
+label: 1233B
+chemical_structure:
+  smiles: CC(=CC(=O)O)C=C(C)CC(C)CCCCC(O)C(CO)C(=O)O
+  standard_inchi: InChI=1S/C18H30O6/c1-12(8-13(2)9-14(3)10-17(21)22)6-4-5-7-16(20)15(11-19)18(23)24/h9-10,12,15-16,19-20H,4-8,11H2,1-3H3,(H,21,22)(H,23,24)
+  standard_inchi_key: QFZISQBFEIXWDM-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002525
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty Acids and Conjugates
+  class_results:
+  - Branched fatty acids
+  - Hydroxy fatty acids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:10405119
+- npatlas:NPA032751
+producer_organisms:
+- taxon_id: NCBITaxon:29916
+  taxon_label: Fusarium sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002525
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32139880
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002525 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002525
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:29916
+  organism_label: Fusarium sp.
+  evidence:
+  - reference: PMID:32139880
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002525 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LC516401.1
+  locus_from: 1
+  locus_to: 24500
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002525
+  source_label: 1233B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0fa917b9ae
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: needs-a-name
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: This record is labelled '1233B', which is a label from the cited paper's
+    own numbering rather than a compound name. Resolve a name from the literature
+    or a structure registry.
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

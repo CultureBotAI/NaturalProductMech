@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-802c0de93e
+label: fasamycin D
+chemical_structure:
+  smiles: c1(C)c[c@](OC)cc(c1-c1c2c(O)c3C(=O)c4c(O)cc(cc4C(C)(C)c3cc2c(Cl)c(O)c1)O)O
+  standard_inchi: InChI=1S/C28H23ClO7/c1-11-5-13(36-4)8-19(32)21(11)14-10-20(33)25(29)15-9-17-24(26(34)22(14)15)27(35)23-16(28(17,2)3)6-12(30)7-18(23)31/h5-10,30-34H,1-4H3
+  standard_inchi_key: PFZYFTLGJZKYNH-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001590
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Fasamycins and derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Cyclic polyketide
+producer_organisms:
+- taxon_id: NCBITaxon:1958824
+  taxon_label: Streptomyces sp. KY5
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001590
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2020.12.011
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001590 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001590
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1958824
+  organism_label: Streptomyces sp. KY5
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2020.12.011
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001590 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KX859301.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001590
+  source_label: fasamycin D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-802c0de93e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

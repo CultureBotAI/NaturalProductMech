@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-eec20c2ce9
+label: staphyloferrin B
+chemical_structure:
+  smiles: C(CC(=O)NCCNC(=O)C[C@](CC(=O)NC[C@@H](C(=O)O)N)(C(=O)O)O)C(=O)C(=O)O
+  standard_inchi: InChI=1S/C16H24N4O11/c17-8(13(25)26)7-20-12(24)6-16(31,15(29)30)5-11(23)19-4-3-18-10(22)2-1-9(21)14(27)28/h8,31H,1-7,17H2,(H,18,22)(H,19,23)(H,20,24)(H,25,26)(H,27,28)(H,29,30)/t8-,16-/m0/s1
+  standard_inchi_key: SIAZVTIHOHTZDD-PWJLMRLQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000943
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Aminoacids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA012996
+producer_organisms:
+- taxon_id: NCBITaxon:93061
+  taxon_label: Staphylococcus aureus subsp. aureus NCTC 8325
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000943
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: In vitro expression|Enzymatic assays. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
+  evidence:
+  - reference: PMID:14688077
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000943 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000943
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:93061
+  organism_label: Staphylococcus aureus subsp. aureus NCTC 8325
+  evidence:
+  - reference: PMID:14688077
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000943 entry version 5; citation taken from the entry level
+  genome_accession: genbank:LS483365.1
+  locus_from: 75998
+  locus_to: 90444
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - In vitro expression
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000943
+  source_label: staphyloferrin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-eec20c2ce9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

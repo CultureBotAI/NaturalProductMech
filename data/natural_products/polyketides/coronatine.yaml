@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-8cf63c8e38
+label: coronatine
+chemical_structure:
+  smiles: CCC1CC1(NC(=O)C1=CC(CC)CC2C1CCC2=O)C(O)=O
+  standard_inchi: InChI=1S/C18H25NO4/c1-3-10-7-13-12(5-6-15(13)20)14(8-10)16(21)19-18(17(22)23)9-11(18)4-2/h8,10-13H,3-7,9H2,1-2H3,(H,19,21)(H,22,23)
+  standard_inchi_key: FMGBNISRFNDECK-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000328
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA07302
+- pubchem:91681
+producer_organisms:
+- taxon_id: NCBITaxon:318
+  taxon_label: Pseudomonas savastanoi pv. glycinea
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000328
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:14679222
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000328 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000328
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:318
+  organism_label: Pseudomonas savastanoi pv. glycinea
+  evidence:
+  - reference: PMID:14679222
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000328 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY391839.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000328
+  source_label: coronatine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8cf63c8e38
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

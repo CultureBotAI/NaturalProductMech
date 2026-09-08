@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-1092ec04a8
+label: gramibactin
+chemical_structure:
+  smiles: O=C(N[C@H]([C@H](C(O)=O)O[H])C(N[C@@H]([C@@H](C)OC([C@H](NC(CN1)=O)CCC/[N+]([O-])=N/O)=O)C(N[C@H]([C@H](O)C)C(N[C@H](CCC/[N+]([O-])=N/O)C1=O)=O)=O)=O)CCCCCCC
+  standard_inchi: InChI=1S/C32H54N10O16/c1-4-5-6-7-8-13-21(44)36-25(26(46)31(51)52)30(50)38-24-18(3)58-32(53)20(12-10-15-42(57)40-55)34-22(45)16-33-27(47)19(11-9-14-41(56)39-54)35-28(48)23(17(2)43)37-29(24)49/h17-20,23-26,43,46,54-55H,4-16H2,1-3H3,(H,33,47)(H,34,45)(H,35,48)(H,36,44)(H,37,49)(H,38,50)(H,51,52)/b41-39-,42-40-/t17-,18-,19-,20-,23-,24+,25-,26-/m1/s1
+  standard_inchi_key: ZONNUJBBGHLVGY-INJBYLFHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001999
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Lipopeptide
+- Macrocyclic
+producer_organisms:
+- taxon_id: NCBITaxon:396598
+  taxon_label: Paraburkholderia graminis C4D1M
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001999
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1038/s41589-018-0101-9
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001999 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001999
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:396598
+  organism_label: Paraburkholderia graminis C4D1M
+  evidence:
+  - reference: DOI:10.1038/s41589-018-0101-9
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001999 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:NZ_ABLD01000016.1
+  locus_from: 101206
+  locus_to: 144574
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001999
+  source_label: gramibactin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1092ec04a8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

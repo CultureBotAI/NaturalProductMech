@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-0018095d97
+label: closthioamide
+chemical_structure:
+  smiles: C1=CC(=CC=C1C(=S)NCCC(=S)NCCC(=S)NCCCNC(=S)CCNC(=S)CCNC(=S)C2=CC=C(C=C2)O)O
+  standard_inchi: InChI=1S/C29H38N6O2S6/c36-22-6-2-20(3-7-22)28(42)34-18-12-26(40)32-16-10-24(38)30-14-1-15-31-25(39)11-17-33-27(41)13-19-35-29(43)21-4-8-23(37)9-5-21/h2-9,36-37H,1,10-19H2,(H,30,38)(H,31,39)(H,32,40)(H,33,41)(H,34,42)(H,35,43)
+  standard_inchi_key: UBZKZUDCUOZCCY-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001891
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Polyamines
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:135937227
+producer_organisms:
+- taxon_id: NCBITaxon:394503
+  taxon_label: Ruminiclostridium cellulolyticum H10
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001891
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1002/anie.201807970
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001891 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001891
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:394503
+  organism_label: Ruminiclostridium cellulolyticum H10
+  evidence:
+  - reference: DOI:10.1002/anie.201807970
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001891 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP001348.1
+  locus_from: 3804343
+  locus_to: 3815207
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001891
+  source_label: closthioamide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0018095d97
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

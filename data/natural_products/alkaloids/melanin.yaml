@@ -1,0 +1,197 @@
+identifier: naturalproductmech:mibig-8d58bfa044
+label: melanin
+chemical_structure:
+  smiles: CC1=C2C3=C(C4=CNC5=C(C(=O)C(=O)C(=C45)C3=CN2)C)C(=O)C1=O
+  standard_inchi: InChI=1S/C18H10N2O4/c1-5-13-9-7(3-19-13)12-10-8(11(9)17(23)15(5)21)4-20-14(10)6(2)16(22)18(12)24/h3-4,19-20H,1-2H3
+  standard_inchi_key: XUMBMVFBXHLACL-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000908
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:6325610
+producer_organisms:
+- taxon_id: NCBITaxon:33903
+  taxon_label: Streptomyces avermitilis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000908
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:11572948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000908 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:33903
+  taxon_label: Streptomyces avermitilis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000909
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:11572948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000909 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000910
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12000953
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000910 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:455632
+  taxon_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000911
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18375553
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000911 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:455632
+  taxon_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000912
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18375553
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000912 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000908
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33903
+  organism_label: Streptomyces avermitilis
+  evidence:
+  - reference: PMID:11572948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000908 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AB070938.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000909
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33903
+  organism_label: Streptomyces avermitilis
+  evidence:
+  - reference: PMID:11572948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000909 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AB070939.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000910
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:100226
+  organism_label: Streptomyces coelicolor A3(2)
+  evidence:
+  - reference: PMID:12000953
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000910 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AL645882.2
+  locus_from: 2943456
+  locus_to: 2944875
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000911
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455632
+  organism_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence:
+  - reference: PMID:18375553
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000911 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AP009493.1
+  locus_from: 607506
+  locus_to: 608793
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000912
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455632
+  organism_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence:
+  - reference: PMID:18375553
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000912 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AP009493.1
+  locus_from: 2884832
+  locus_to: 2886096
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000908
+  source_label: melanin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-8d58bfa044
+- source: MIBIG
+  source_id: BGC0000909
+  source_label: melanin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-e9e5e6c28a
+- source: MIBIG
+  source_id: BGC0000910
+  source_label: melanin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-fe13013ec4
+- source: MIBIG
+  source_id: BGC0000911
+  source_label: melanin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-cbb13909a0
+- source: MIBIG
+  source_id: BGC0000912
+  source_label: melanin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-d8ae74eeb4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000908, BGC0000909,
+    BGC0000910, BGC0000911, BGC0000912. Confirm they describe the same compound rather
+    than an upstream cross-reference error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

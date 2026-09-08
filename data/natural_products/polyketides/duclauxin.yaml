@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-0d8e1169ce
+label: duclauxin
+chemical_structure:
+  smiles: COC12C3C(OC(C)=O)C4(COC(=O)C5=C(O)C=C(C)C(C3=O)=C45)C1C(=O)C1=COC(=O)C3=C1C2=C(C)C=C3O
+  standard_inchi: InChI=1S/C29H22O11/c1-9-5-14(32)18-20-15(9)23(34)21-25(40-11(3)30)28(20,8-39-27(18)36)24-22(33)12-7-38-26(35)17-13(31)6-10(2)19(16(12)17)29(21,24)37-4/h5-7,21,24-25,31-32H,8H2,1-4H3
+  standard_inchi_key: WBQDAYWQELBEPU-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001578
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Duclauxin and derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA010037
+producer_organisms:
+- taxon_id: NCBITaxon:441959
+  taxon_label: Talaromyces stipitatus ATCC 10500
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001578
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29741874
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001578 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001578
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:441959
+  organism_label: Talaromyces stipitatus ATCC 10500
+  evidence:
+  - reference: PMID:29741874
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001578 entry version 3; citation taken from the entry level
+  genome_accession: genbank:EQ962653.1
+  locus_from: 753988
+  locus_to: 785137
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001578
+  source_label: duclauxin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0d8e1169ce
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

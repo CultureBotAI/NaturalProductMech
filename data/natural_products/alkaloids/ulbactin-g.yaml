@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-581704dba6
+label: ulbactin G
+chemical_structure:
+  smiles: CN1[C@H]2CS[C@@H]1[C@H]3CS[C@H](N3C2=O)[C@H]4CSC(=N4)C5=CC=CC=C5O
+  standard_inchi: InChI=1S/C17H19N3O2S3/c1-19-11-7-25-17(19)12-8-24-16(20(12)15(11)22)10-6-23-14(18-10)9-4-2-3-5-13(9)21/h2-5,10-12,16-17,21H,6-8H2,1H3/t10-,11+,12-,16+,17-/m1/s1
+  standard_inchi_key: KDVBIWXQJGCQHY-XTUVOZTNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002472
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Serine alkaloids
+  class_results:
+  - Thiazole alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA008909
+producer_organisms:
+- taxon_id: NCBITaxon:1393
+  taxon_label: Brevibacillus brevis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002472
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.genrep.2016.10.006
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002472 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002472
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1393
+  organism_label: Brevibacillus brevis
+  evidence:
+  - reference: DOI:10.1016/j.genrep.2016.10.006
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002472 entry version 2; citation taken from the entry level
+  genome_accession: genbank:NZ_BDFB01000007.1
+  locus_from: 356897
+  locus_to: 379176
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002472
+  source_label: ulbactin G
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-581704dba6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

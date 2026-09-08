@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-7fc6e870d5
+label: aspochalasin M
+chemical_structure:
+  smiles: C[C@H]1[C@H]2[C@@H](NC(=O)[C@@]23[C@@H](/C=C(\CCC(=O)[C@H](CCC3=O)O)/C)C=C1C)CC(C)C
+  standard_inchi: InChI=1S/C24H35NO4/c1-13(2)10-18-22-16(5)15(4)12-17-11-14(3)6-7-19(26)20(27)8-9-21(28)24(17,22)23(29)25-18/h11-13,16-18,20,22,27H,6-10H2,1-5H3,(H,25,29)/b14-11-/t16-,17+,18+,20+,22+,24-/m1/s1
+  standard_inchi_key: GBCXTRJHTIEBIA-DNJNAQMOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002204
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Pseudoalkaloids
+  class_results:
+  - Cytochalasan alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA016352
+producer_organisms:
+- taxon_id: NCBITaxon:41900
+  taxon_label: Aspergillus flavipes
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002204
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32913332
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002204 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002204
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:41900
+  organism_label: Aspergillus flavipes
+  evidence:
+  - reference: PMID:32913332
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002204 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT586757.1
+  bgc_class:
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002204
+  source_label: aspochalasin M
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7fc6e870d5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

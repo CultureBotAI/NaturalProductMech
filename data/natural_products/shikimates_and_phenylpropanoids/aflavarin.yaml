@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-7f9f9bacb5
+label: aflavarin
+chemical_structure:
+  smiles: CC1=CC(=C(C2=C1C(=CC(=O)O2)OC)C3=C(C4=C(C=C(C=C4CO)OC)OC3=O)OC)OC
+  standard_inchi: InChI=1S/C24H22O9/c1-11-6-14(29-3)20(23-18(11)15(30-4)9-17(26)33-23)21-22(31-5)19-12(10-25)7-13(28-2)8-16(19)32-24(21)27/h6-9,25H,10H2,1-5H3
+  standard_inchi_key: PQHCPIZEGQBDDY-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001304
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Coumarins
+  class_results:
+  - Simple coumarins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:44584646
+producer_organisms:
+- taxon_id: NCBITaxon:332952
+  taxon_label: Aspergillus flavus NRRL3357
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001304
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/np50086a008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001304 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001304
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:332952
+  organism_label: Aspergillus flavus NRRL3357
+  evidence:
+  - reference: DOI:10.1021/np50086a008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001304 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:EQ963475.1
+  locus_from: 1142161
+  locus_to: 1157254
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001304
+  source_label: aflavarin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7f9f9bacb5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

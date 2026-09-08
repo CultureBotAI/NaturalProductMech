@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-6f76d66387
+label: actagardine
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H](C(=O)N[C@H](CCC(=O)O)C(=O)N[C@H](CC)C(=O)N[C@H](C)C(=O)N[C@@H](C(C)C)C(=O)N[C@H](CC1=CNC2=CC=CC=C21)C(=O)NCC(=O)N[C@H](CO)C(=O)N[C@H](C)C(=O)NCC(=O)N[C@H](CC)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@H](C)C(=O)N[C@@H](C)C(=O)N[C@H](C)C(=O)O)NC(=O)[C@@H](CC)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](C)N
+  standard_inchi: InChI=1S/C81H132N20O23/c1-20-40(12)63(79(121)89-45(17)67(109)86-44(16)68(110)90-47(19)81(123)124)101-78(120)62(39(10)11)99-72(114)50(22-3)91-58(103)34-84-66(108)43(15)87-76(118)57(36-102)92-59(104)35-85-70(112)56(32-48-33-83-53-28-26-25-27-49(48)53)97-77(119)61(38(8)9)98-69(111)46(18)88-71(113)51(23-4)93-74(116)54(29-30-60(105)106)95-80(122)64(41(13)21-2)100-73(115)52(24-5)94-75(117)55(31-37(6)7)96-65(107)42(14)82/h25-28,33,37-47,50-52,54-57,61-64,83,102H,20-24,29-32,34-36,82H2,1-19H3,(H,84,108)(H,85,112)(H,86,109)(H,87,118)(H,88,113)(H,89,121)(H,90,110)(H,91,103)(H,92,104)(H,93,116)(H,94,117)(H,95,122)(H,96,107)(H,97,119)(H,98,111)(H,99,114)(H,100,115)(H,101,120)(H,105,106)(H,123,124)/t40-,41-,42+,43+,44-,45+,46+,47+,50+,51+,52+,54+,55-,56+,57+,61-,62-,63-,64-/m0/s1
+  standard_inchi_key: LAWKVNVCUPIOMG-HWWYPGLISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000495
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lasso peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:16132310
+producer_organisms:
+- taxon_id: NCBITaxon:69485
+  taxon_label: Actinoplanes garbadinensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000495
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19400806
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000495 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000495
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:69485
+  organism_label: Actinoplanes garbadinensis
+  evidence:
+  - reference: PMID:19400806
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000495 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FJ547091.1
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000495
+  source_label: actagardine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6f76d66387
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

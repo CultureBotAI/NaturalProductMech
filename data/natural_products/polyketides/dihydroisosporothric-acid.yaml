@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-a27b1b488e
+label: dihydroisosporothric acid
+chemical_structure:
+  smiles: C[C@@H]1[C@H](C(O)=O)[C@]([H])([C@H](O)CCCCCC)OC1=O
+  standard_inchi: InChI=1S/C13H22O5/c1-3-4-5-6-7-9(14)11-10(12(15)16)8(2)13(17)18-11/h8-11,14H,3-7H2,1-2H3,(H,15,16)/t8-,9-,10+,11+/m1/s1
+  standard_inchi_key: TXQJYYDFHFRLKM-ZNSHCXBVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002262
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Acetogenins
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:2487000
+  taxon_label: Hypomontagnella monticulosa
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002262
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:34123230
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002262 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002262
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2487000
+  organism_label: Hypomontagnella monticulosa
+  evidence:
+  - reference: PMID:34123230
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002262 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT889334.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002262
+  source_label: dihydroisosporothric acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-a27b1b488e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

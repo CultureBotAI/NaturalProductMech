@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-8e7060a898
+label: bosamycin F
+chemical_structure:
+  smiles: COC(=O)CNC(=O)[C@H](CC(C)C)NC(=O)[C@@H](CC1=C(OC)C=C(O)C=C1)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](CC1=CC=C(O)C=C1)NC(=O)[C@H](CC1=CC=C(O)C=C1)NC(C)=O)[C@@H](O)C(=O)O
+  standard_inchi: InChI=1S/C52H70N8O18/c1-26(2)18-35(45(68)53-24-42(66)78-7)55-48(71)39(22-31-12-17-34(65)23-41(31)77-6)58-50(73)40(25-61)59-51(74)43(44(67)52(75)76)60-49(72)36(19-27(3)4)56-47(70)38(21-30-10-15-33(64)16-11-30)57-46(69)37(54-28(5)62)20-29-8-13-32(63)14-9-29/h8-17,23,26-27,35-40,43-44,61,63-65,67H,18-22,24-25H2,1-7H3,(H,53,68)(H,54,62)(H,55,71)(H,56,70)(H,57,69)(H,58,73)(H,59,74)(H,60,72)(H,75,76)/t35-,36-,37-,38+,39+,40-,43-,44+/m0/s1
+  standard_inchi_key: NPPJWNRQILLJAC-ZRMUVTKZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002581
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA031584
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002581
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.
+    That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the
+    taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:34094195
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002581 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002581
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:34094195
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002581 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MN509472.2
+  locus_from: 5861
+  locus_to: 42927
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002581
+  source_label: bosamycin F
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-8e7060a898
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,153 @@
+identifier: naturalproductmech:mibig-1d6d8308ed
+label: EDHA
+chemical_structure:
+  smiles: OC(CC(C(O)=O)NCCNC(C(O)=O)CC(O)CNC(N)=N)=O
+  standard_inchi: InChI=1S/C12H23N5O7/c13-12(14)17-5-6(18)3-7(10(21)22)15-1-2-16-8(11(23)24)4-9(19)20/h6-8,15-16,18H,1-5H2,(H,19,20)(H,21,22)(H,23,24)(H4,13,14,17)
+  standard_inchi_key: UULSZYUKAFTXQP-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002567
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+synonyms:
+- value: Ethylenediaminesuccinic acid hydroxyarginine
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002567
+- value: ethylenediaminesuccinic acid hydroxyarginine (EDHA)
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002567
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Aminoacids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:124628
+producer_organisms:
+- taxon_id: NCBITaxon:2083010
+  taxon_label: Streptomyces sp. MA5143a
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002567
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: DOI:10.1039/c8mt00009c
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002567 entry version 2; citation taken from the compound bioactivity
+      level
+- taxon_id: NCBITaxon:227882
+  taxon_label: Streptomyces avermitilis MA-4680 = NBRC 14893
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001587
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29667664
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001587 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:680198
+  taxon_label: Streptomyces scabiei 87.22
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002568
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1039/c8mt00009c
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002568 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002567
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2083010
+  organism_label: Streptomyces sp. MA5143a
+  evidence:
+  - reference: DOI:10.1039/c8mt00009c
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002567 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:OLMK01000008.1
+  locus_from: 45415
+  locus_to: 56279
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+- accession: mibig:BGC0001587
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:227882
+  organism_label: Streptomyces avermitilis MA-4680 = NBRC 14893
+  evidence:
+  - reference: PMID:29667664
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001587 entry version 5; citation taken from the entry level
+  genome_accession: genbank:BA000030.3
+  locus_from: 6792146
+  locus_to: 6800400
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0002568
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:680198
+  organism_label: Streptomyces scabiei 87.22
+  evidence:
+  - reference: DOI:10.1039/c8mt00009c
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002568 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:FN554889.1
+  locus_from: 589747
+  locus_to: 600784
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002567
+  source_label: EDHA
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-1d6d8308ed
+- source: MIBIG
+  source_id: BGC0001587
+  source_label: ethylenediaminesuccinic acid hydroxyarginine (EDHA)
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-9e8be4924b
+- source: MIBIG
+  source_id: BGC0002568
+  source_label: Ethylenediaminesuccinic acid hydroxyarginine
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-a70b679470
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001587, BGC0002567,
+    BGC0002568. Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

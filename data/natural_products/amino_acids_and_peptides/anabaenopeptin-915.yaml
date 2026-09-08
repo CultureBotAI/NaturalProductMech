@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-d60663f9e6
+label: anabaenopeptin 915
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C(=O)NCCCC[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N([C@H](C(=O)N1)CCC2=CC=C(C=C2)O)C)CCC3=CC=C(C=C3)O)C(C)C)NC(=O)N[C@@H](CC4=CC=C(C=C4)O)C(=O)O
+  standard_inchi: InChI=1S/C48H65N7O11/c1-6-29(4)41-44(61)49-26-8-7-9-36(51-48(66)52-38(47(64)65)27-32-14-22-35(58)23-15-32)42(59)53-40(28(2)3)45(62)50-37(24-16-30-10-18-33(56)19-11-30)46(63)55(5)39(43(60)54-41)25-17-31-12-20-34(57)21-13-31/h10-15,18-23,28-29,36-41,56-58H,6-9,16-17,24-27H2,1-5H3,(H,49,61)(H,50,62)(H,53,59)(H,54,60)(H,64,65)(H2,51,52,66)/t29-,36+,37-,38-,39-,40-,41-/m0/s1
+  standard_inchi_key: KWDLKNNQGMAHJR-HBWVXJRASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000301
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Anabaenopeptins
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA06610
+producer_organisms:
+- taxon_id: NCBITaxon:388467
+  taxon_label: Planktothrix agardhii NIVA-CYA 126/8
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000301
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:21622740
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000301 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000301
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:388467
+  organism_label: Planktothrix agardhii NIVA-CYA 126/8
+  evidence:
+  - reference: PMID:21622740
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000301 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF672686.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000301
+  source_label: anabaenopeptin 915
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d60663f9e6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

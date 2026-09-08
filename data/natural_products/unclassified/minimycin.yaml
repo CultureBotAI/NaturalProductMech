@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-2a93671b3b
+label: minimycin
+chemical_structure:
+  smiles: C1=C(C(=O)NC(=O)O1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO)O)O
+  standard_inchi: InChI=1S/C9H11NO7/c11-1-4-5(12)6(13)7(17-4)3-2-16-9(15)10-8(3)14/h2,4-7,11-13H,1H2,(H,10,14,15)/t4-,5-,6-,7+/m1/s1
+  standard_inchi_key: REFHNSOTFKKRAI-GBNDHIKLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002295
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- SACCHARIDE
+xrefs:
+- npatlas:NPA021195
+producer_organisms:
+- taxon_id: NCBITaxon:1912
+  taxon_label: Streptomyces hygroscopicus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002295
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Knock-out studies. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.isci.2019.11.037
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002295 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002295
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1912
+  organism_label: Streptomyces hygroscopicus
+  evidence:
+  - reference: DOI:10.1016/j.isci.2019.11.037
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002295 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MK122964.1
+  locus_from: 5879
+  locus_to: 15193
+  bgc_class:
+  - NRPS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Heterologous expression
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002295
+  source_label: minimycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-2a93671b3b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

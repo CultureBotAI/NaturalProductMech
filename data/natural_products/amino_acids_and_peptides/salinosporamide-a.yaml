@@ -1,0 +1,116 @@
+identifier: naturalproductmech:mibig-0e547cecad
+label: salinosporamide A
+chemical_structure:
+  smiles: '[H][C@](O)([C@@]1([H])CCCC=C1)[C@@]12NC(=O)[C@H](CCCl)[C@]1(C)OC2=O'
+  standard_inchi: InChI=1S/C15H20ClNO4/c1-14-10(7-8-16)12(19)17-15(14,13(20)21-14)11(18)9-5-3-2-4-6-9/h3,5,9-11,18H,2,4,6-8H2,1H3,(H,17,19)/t9-,10+,11+,14+,15+/m1/s1
+  standard_inchi_key: NGWSFRIPKNWYAO-SHTIJGAHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000145
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - γ-lactam-β-lactones
+  class_results:
+  - Salinosporamides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA011013
+- pubchem:11695330
+producer_organisms:
+- taxon_id: NCBITaxon:168695
+  taxon_label: Salinispora tropica
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000145
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19590008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000145 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:369723
+  taxon_label: Salinispora tropica CNB-440
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001041
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.
+    That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the
+    taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19590008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001041 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000145
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:168695
+  organism_label: Salinispora tropica
+  evidence:
+  - reference: PMID:19590008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000145 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF397502.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0001041
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:369723
+  organism_label: Salinispora tropica CNB-440
+  evidence:
+  - reference: PMID:19590008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001041 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP000667.1
+  locus_from: 1140547
+  locus_to: 1182556
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000145
+  source_label: salinosporamide A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0e547cecad
+- source: MIBIG
+  source_id: BGC0001041
+  source_label: salinosporamide A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-08eb98d016
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000145, BGC0001041.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

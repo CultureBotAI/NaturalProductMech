@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-88418e0901
+label: monocillin II
+chemical_structure:
+  smiles: C[C@@H]1C/C=C/CC/C=C/C(=O)CC2=C(C(=O)O1)C(O)=CC(O)=C2
+  standard_inchi: InChI=1S/C18H20O5/c1-12-7-5-3-2-4-6-8-14(19)9-13-10-15(20)11-16(21)17(13)18(22)23-12/h3,5-6,8,10-12,20-21H,2,4,7,9H2,1H3/b5-3+,8-6+/t12-/m1/s1
+  standard_inchi_key: AGKSYPMAQRUJJY-RNLVMQRLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002187
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Zearalenones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA033027
+- chembl:CHEMBL562520
+producer_organisms:
+- taxon_id: NCBITaxon:1380566
+  taxon_label: Pochonia chlamydosporia 170
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002187
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/acs.jafc.9b01977
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002187 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002187
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1380566
+  organism_label: Pochonia chlamydosporia 170
+  evidence:
+  - reference: DOI:10.1021/acs.jafc.9b01977
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002187 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CM008060.1
+  locus_from: 2034500
+  locus_to: 2065000
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002187
+  source_label: monocillin II
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-88418e0901
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,130 @@
+identifier: naturalproductmech:mibig-241ecc69e8
+label: capsular polysaccharide
+chemical_structure:
+  smiles: CCCO[C@@H]1C([C@]([C@H]([C@H](O1)CO)O[C@H]2[C@@H]([C@H]([C@H]([C@H](O2)CO)O)O)O)(O)OP(=O)(O)O)(O)O
+  standard_inchi: InChI=1S/C15H29O16P/c1-2-3-27-13-14(21,22)15(23,31-32(24,25)26)11(7(5-17)29-13)30-12-10(20)9(19)8(18)6(4-16)28-12/h6-13,16-23H,2-5H2,1H3,(H2,24,25,26)/t6-,7-,8+,9+,10-,11+,12+,13+,15-/m1/s1
+  standard_inchi_key: FJTWZGAJWZJDEU-SRTYELMFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000751
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- pubchem:195740
+producer_organisms:
+- taxon_id: NCBITaxon:715
+  taxon_label: Actinobacillus pleuropneumoniae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000751
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18215476
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000751 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:754256
+  taxon_label: Actinobacillus pleuropneumoniae serovar 6 str. Femo
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000752
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18215476
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000752 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:715
+  taxon_label: Actinobacillus pleuropneumoniae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000753
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18215476
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000753 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000751
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:715
+  organism_label: Actinobacillus pleuropneumoniae
+  evidence:
+  - reference: PMID:18215476
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000751 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AY496881.1
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000752
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:754256
+  organism_label: Actinobacillus pleuropneumoniae serovar 6 str. Femo
+  evidence:
+  - reference: PMID:18215476
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000752 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AY534316.1
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000753
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:715
+  organism_label: Actinobacillus pleuropneumoniae
+  evidence:
+  - reference: PMID:18215476
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000753 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AY534317.1
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000751
+  source_label: capsular polysaccharide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-241ecc69e8
+- source: MIBIG
+  source_id: BGC0000752
+  source_label: capsular polysaccharide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3030d4947c
+- source: MIBIG
+  source_id: BGC0000753
+  source_label: capsular polysaccharide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-de1dd88892
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000751, BGC0000752,
+    BGC0000753. Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-59301e0706
+label: anthracimycin
+chemical_structure:
+  smiles: '[H][C@]12CC(C)=CC[C@]1([H])[C@@]1([H])\C(O)=C\C(=O)[C@@H](C)C(=O)O[C@H](C)\C=C\C=C/[C@@H](C)[C@@]1([H])C=C2'
+  standard_inchi: InChI=1S/C25H32O4/c1-15-9-11-21-19(13-15)10-12-20-16(2)7-5-6-8-17(3)29-25(28)18(4)22(26)14-23(27)24(20)21/h5-10,12,14,16-21,24,27H,11,13H2,1-4H3/b7-5-,8-6+,23-14-/t16-,17-,18-,19+,20-,21+,24+/m1/s1
+  standard_inchi_key: MHXKMAAKEHGISP-MROKOONJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001300
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactams
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA0874
+producer_organisms:
+- taxon_id: NCBITaxon:1714301
+  taxon_label: Streptomyces sp. CNH365
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001300
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26348978
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001300 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001300
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1714301
+  organism_label: Streptomyces sp. CNH365
+  evidence:
+  - reference: PMID:26348978
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001300 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KT368179.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001300
+  source_label: anthracimycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-59301e0706
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

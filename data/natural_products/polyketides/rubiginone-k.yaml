@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-b3fef840ed
+label: rubiginone K
+chemical_structure:
+  smiles: COC1=CC=CC2=C1C(=O)C1=C(C3=C(C=C1)[C@@H](O)[C@H](C)[C@H](O)[C@@H]3O)[C@H]2O
+  standard_inchi: InChI=1S/C20H20O6/c1-8-16(21)10-6-7-11-14(15(10)20(25)17(8)22)19(24)9-4-3-5-12(26-2)13(9)18(11)23/h3-8,16-17,19-22,24-25H,1-2H3/t8-,16-,17-,19-,20+/m0/s1
+  standard_inchi_key: XJODQKSMDGEWCE-PVQKUAIRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002478
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  - Anthraquinones and anthrones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA033193
+producer_organisms:
+- taxon_id: NCBITaxon:1703922
+  taxon_label: Streptomyces sp. CB02414
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002478
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:34600534
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002478 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002478
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1703922
+  organism_label: Streptomyces sp. CB02414
+  evidence:
+  - reference: PMID:34600534
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002478 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LIPF01000008.1
+  locus_from: 189575
+  locus_to: 230252
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002478
+  source_label: rubiginone K
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b3fef840ed
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

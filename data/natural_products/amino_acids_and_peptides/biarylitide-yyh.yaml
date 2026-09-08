@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-97bda18ea1
+label: biarylitide YYH
+chemical_structure:
+  smiles: CC(=O)NC1CC2=CC(=C(O)C=C2)C2=NC=C(CC(C(=O)O)NC(=O)C(CC3=CC=C(O)C=C3)NC1=O)[NH]2
+  standard_inchi: InChI=1S/C26H27N5O7/c1-13(32)28-19-10-15-4-7-22(34)18(8-15)23-27-12-16(29-23)11-21(26(37)38)31-25(36)20(30-24(19)35)9-14-2-5-17(33)6-3-14/h2-8,12,19-21,33-34H,9-11H2,1H3,(H,27,29)(H,28,32)(H,30,35)(H,31,36)(H,37,38)
+  standard_inchi_key: ZPRWGNIYRGILHV-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002084
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA033235
+producer_organisms:
+- taxon_id: NCBITaxon:2028102
+  taxon_label: Planomonospora sp. ID82291
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002084
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2020.11.009
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002084 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002084
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2028102
+  organism_label: Planomonospora sp. ID82291
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2020.11.009
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002084 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MW201788.1
+  locus_from: 1
+  locus_to: 2160
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002084
+  source_label: biarylitide YYH
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-97bda18ea1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

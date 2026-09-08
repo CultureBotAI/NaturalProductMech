@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-efa162ce5c
+label: iminimycin B
+chemical_structure:
+  smiles: C/C=C(\C)/C=C/C=C/[C@H]1[C@@H]2C[C@@H]2C3=C(C=CC=[N+]13)SC[C@@H](C(=O)O)NC(=O)C
+  standard_inchi: InChI=1S/C22H26N2O3S/c1-4-14(2)8-5-6-9-19-16-12-17(16)21-20(10-7-11-24(19)21)28-13-18(22(26)27)23-15(3)25/h4-11,16-19H,12-13H2,1-3H3,(H-,23,25,26,27)/p+1/b8-5+,9-6+,14-4+/t16-,17+,18+,19+/m1/s1
+  standard_inchi_key: WAROMXVVDNYFEL-IKWXCPILSA-O
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002673
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+- OTHER
+xrefs:
+- npatlas:NPA007775
+producer_organisms:
+- taxon_id: NCBITaxon:455632
+  taxon_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002673
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:34767291
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002673 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002673
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455632
+  organism_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence:
+  - reference: PMID:34767291
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002673 entry version 2; citation taken from the entry level
+  genome_accession: genbank:AP009493.1
+  locus_from: 7575285
+  locus_to: 7636690
+  bgc_class:
+  - PKS
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002673
+  source_label: iminimycin B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-efa162ce5c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

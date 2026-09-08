@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-585f60e5da
+label: fujikurin B
+chemical_structure:
+  smiles: CCC(C)C(=C1C(=O)C(C(OC1=O)C)CO)O
+  standard_inchi: InChI=1S/C12H18O5/c1-4-6(2)10(14)9-11(15)8(5-13)7(3)17-12(9)16/h6-8,13-14H,4-5H2,1-3H3
+  standard_inchi_key: BCBQFBBPTBVSKT-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001305
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:132558392
+producer_organisms:
+- taxon_id: NCBITaxon:1279085
+  taxon_label: Fusarium fujikuroi IMI 58289
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001305
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26192387
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001305 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001305
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1279085
+  organism_label: Fusarium fujikuroi IMI 58289
+  evidence:
+  - reference: PMID:26192387
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001305 entry version 4; citation taken from the entry level
+  genome_accession: genbank:HF679030.1
+  locus_from: 1347199
+  locus_to: 1371451
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001305
+  source_label: fujikurin B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-585f60e5da
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-18de581c96
+label: A23187
+chemical_structure:
+  smiles: C[C@@H]1CC[C@]2([C@@H](C[C@H]([C@H](O2)[C@H](C)C(=O)C3=CC=CN3)C)C)O[C@@H]1CC4=NC5=C(O4)C=CC(=C5C(=O)O)NC
+  standard_inchi: InChI=1S/C29H37N3O6/c1-15-10-11-29(17(3)13-16(2)27(38-29)18(4)26(33)20-7-6-12-31-20)37-22(15)14-23-32-25-21(36-23)9-8-19(30-5)24(25)28(34)35/h6-9,12,15-18,22,27,30-31H,10-11,13-14H2,1-5H3,(H,34,35)/t15-,16-,17-,18-,22-,27+,29+/m1/s1
+  standard_inchi_key: HIYAVKIYRIFSCZ-CYEMHPAKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000032
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polyethers
+  class_results:
+  - Polyether ionophores
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Aromatic amino acid/simple benzoic acid
+- Aromatic polyketide
+xrefs:
+- npatlas:NPA03386
+- npatlas:NPA003386
+producer_organisms:
+- taxon_id: NCBITaxon:1079985
+  taxon_label: Streptomyces chartreusis NRRL 3882
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000032
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/ja00813a047
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000032 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000032
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1079985
+  organism_label: Streptomyces chartreusis NRRL 3882
+  evidence:
+  - reference: DOI:10.1021/ja00813a047
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000032 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:HM452329.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000032
+  source_label: A23187
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-18de581c96
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

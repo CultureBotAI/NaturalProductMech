@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-45bd834dfa
+label: bryostatin
+chemical_structure:
+  smiles: CCC/C=C/C=C/C(=O)O[C@H]1/C(=C/C(=O)OC)/C[C@H]2C[C@@H](OC(=O)C[C@@H](C[C@@H]3CC(C([C@@](O3)(C[C@@H]4C/C(=C/C(=O)OC)/C[C@@H](O4)/C=C/C([C@@]1(O2)O)(C)C)O)(C)C)OC(=O)C)O)[C@@H](C)O
+  standard_inchi: InChI=1S/C47H68O17/c1-10-11-12-13-14-15-39(51)62-43-31(22-41(53)58-9)21-34-25-37(28(2)48)61-42(54)24-32(50)23-35-26-38(59-29(3)49)45(6,7)46(55,63-35)27-36-19-30(20-40(52)57-8)18-33(60-36)16-17-44(4,5)47(43,56)64-34/h12-17,20,22,28,32-38,43,48,50,55-56H,10-11,18-19,21,23-27H2,1-9H3/b13-12+,15-14+,17-16+,30-20+,31-22+/t28-,32-,33+,34+,35-,36+,37-,38?,43+,46+,47-/m1/s1
+  standard_inchi_key: MJQUEDHRCUIRLF-YFQOKXJGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000174
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Bryostatins
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:25235992
+producer_organisms:
+- taxon_id: NCBITaxon:62101
+  taxon_label: Candidatus Endobugula sertula
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000174
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15556005
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000174 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000174
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:62101
+  organism_label: Candidatus Endobugula sertula
+  evidence:
+  - reference: PMID:15556005
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000174 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ889941.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000174
+  source_label: bryostatin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-45bd834dfa
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

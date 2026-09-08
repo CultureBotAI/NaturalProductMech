@@ -1,0 +1,182 @@
+identifier: naturalproductmech:mibig-c2e4d35396
+label: myxochromide S
+chemical_structure:
+  smiles: C\C=C\C=C\C=C\C=C\C=C\C=C\C=C\C(=O)N(C)[C@H]1[C@@H](C)OC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC1=O
+  standard_inchi: InChI=1S/C38H54N6O8/c1-8-9-10-11-12-13-14-15-16-17-18-19-20-21-32(46)44(7)33-28(6)52-38(51)29(22-23-31(39)45)42-35(48)27(5)40-34(47)26(4)41-36(49)30(24-25(2)3)43-37(33)50/h8-21,25-30,33H,22-24H2,1-7H3,(H2,39,45)(H,40,47)(H,41,49)(H,42,48)(H,43,50)/b9-8+,11-10+,13-12+,15-14+,17-16+,19-18+,21-20+/t26-,27-,28+,29-,30-,33-/m0/s1
+  standard_inchi_key: BHYCLFCOZPICKT-CNDSVILGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001023
+np_pathway: UNCLASSIFIED
+synonyms:
+- value: myxochromide S1
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001023
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA01302
+producer_organisms:
+- taxon_id: NCBITaxon:41
+  taxon_label: Stigmatella aurantiaca
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001023
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:15651040
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001023 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:378806
+  taxon_label: Stigmatella aurantiaca DW4/3-1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001429
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001429 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:675526
+  taxon_label: Stigmatella aurantiaca Sg a15
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001430
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001430 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:41
+  taxon_label: Stigmatella aurantiaca
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001431
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001431 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001023
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:41
+  organism_label: Stigmatella aurantiaca
+  evidence:
+  - reference: PMID:15651040
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001023 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ698723.2
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0001429
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:378806
+  organism_label: Stigmatella aurantiaca DW4/3-1
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001429 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622599.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0001430
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:675526
+  organism_label: Stigmatella aurantiaca Sg a15
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001430 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622600.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001431
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:41
+  organism_label: Stigmatella aurantiaca
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001431 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622601.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001023
+  source_label: myxochromide S1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c2e4d35396
+- source: MIBIG
+  source_id: BGC0001429
+  source_label: myxochromide S1
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-4732393c46
+- source: MIBIG
+  source_id: BGC0001430
+  source_label: myxochromide S
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-27f10abd07
+- source: MIBIG
+  source_id: BGC0001431
+  source_label: myxochromide S
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-1b1c5d6b2e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001023, BGC0001429,
+    BGC0001430, BGC0001431. Confirm they describe the same compound rather than an
+    upstream cross-reference error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,115 @@
+identifier: naturalproductmech:mibig-9ff63b44d1
+label: curacin A
+chemical_structure:
+  smiles: CO[C@H](CC\C(C)=C\C=C\CC\C=C/[C@H]1CSC(=N1)[C@@H]1C[C@@H]1C)CC=C
+  standard_inchi: InChI=1S/C23H35NOS/c1-5-11-21(25-4)15-14-18(2)12-9-7-6-8-10-13-20-17-26-23(24-20)22-16-19(22)3/h5,7,9-10,12-13,19-22H,1,6,8,11,14-17H2,2-4H3/b9-7+,13-10-,18-12+/t19-,20-,21-,22+/m0/s1
+  standard_inchi_key: LUEYTMPPCOCKBX-RLAAQAFRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000976
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA03438
+- pubchem:6438908
+- chebi:3961
+- chembl:CHEMBL89138
+producer_organisms:
+- taxon_id: NCBITaxon:489825
+  taxon_label: Moorea producens 3L
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000976
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15332855
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000976 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:276768
+  taxon_label: Moorea producens 19L
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000043
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/jo00085a006
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000043 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000976
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:489825
+  organism_label: Moorea producens 3L
+  evidence:
+  - reference: PMID:15332855
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000976 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HQ696500.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0000043
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:276768
+  organism_label: Moorea producens 19L
+  evidence:
+  - reference: DOI:10.1021/jo00085a006
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000043 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:GQ412749.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000976
+  source_label: curacin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-9ff63b44d1
+- source: MIBIG
+  source_id: BGC0000043
+  source_label: curacin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-de7f9ccc1a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000043, BGC0000976.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

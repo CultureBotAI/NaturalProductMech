@@ -1,0 +1,107 @@
+identifier: naturalproductmech:mibig-02045ec850
+label: tubulysin A
+chemical_structure:
+  smiles: CCC(C)C(NC(=O)C1CCCCN1C)C(=O)N(COC(=O)CC(C)C)C(CC(OC(C)=O)C1=NC(=CS1)C(=O)NC(CC(C)C(O)=O)CC1=CC=C(O)C=C1)C(C)C
+  standard_inchi: InChI=1S/C43H65N5O10S/c1-10-27(6)38(46-40(53)34-13-11-12-18-47(34)9)42(54)48(24-57-37(51)19-25(2)3)35(26(4)5)22-36(58-29(8)49)41-45-33(23-59-41)39(52)44-31(20-28(7)43(55)56)21-30-14-16-32(50)17-15-30/h14-17,23,25-28,31,34-36,38,50H,10-13,18-22,24H2,1-9H3,(H,44,52)(H,46,53)(H,55,56)
+  standard_inchi_key: IBEDDHUHZBDXGB-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001053
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA016692
+- pubchem:12134544
+producer_organisms:
+- taxon_id: NCBITaxon:38
+  taxon_label: Archangium disciforme
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001053
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15324808
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001053 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:764904
+  taxon_label: Cystobacter sp. SBCb004
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001344
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:20338521
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001344 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001053
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:38
+  organism_label: Archangium disciforme
+  evidence:
+  - reference: PMID:15324808
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001053 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ620477.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001344
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:764904
+  organism_label: Cystobacter sp. SBCb004
+  evidence:
+  - reference: PMID:20338521
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001344 entry version 4; citation taken from the entry level
+  genome_accession: genbank:GU002154.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001053
+  source_label: tubulysin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-02045ec850
+- source: MIBIG
+  source_id: BGC0001344
+  source_label: tubulysin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-6ff3750e49
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001053, BGC0001344.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

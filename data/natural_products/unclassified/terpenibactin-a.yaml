@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-e8fc08769d
+label: terpenibactin A
+chemical_structure:
+  smiles: CCCCCCCCCCCCCCCC(OC(=O)[C@H](CCCCN(O)C=O)NC(=O)[C@H]1N=C(C2=CC=CC=C2O)O[C@@H]1C)C(C)C(=O)N[C@@H]1CCCCN(O)C1=O
+  standard_inchi: InChI=1S/C43H69N5O10/c1-4-5-6-7-8-9-10-11-12-13-14-15-16-27-37(31(2)39(51)44-34-24-20-22-29-48(56)42(34)53)58-43(54)35(25-19-21-28-47(55)30-49)45-40(52)38-32(3)57-41(46-38)33-23-17-18-26-36(33)50/h17-18,23,26,30-32,34-35,37-38,50,55-56H,4-16,19-22,24-25,27-29H2,1-3H3,(H,44,51)(H,45,52)/t31?,32-,34-,35+,37?,38+/m1/s1
+  standard_inchi_key: CKICSSGVOUYIAL-HEITYGFHSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002352
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Depsipeptides
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA031985
+producer_organisms:
+- taxon_id: NCBITaxon:455432
+  taxon_label: Nocardia terpenica
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002352
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:32196864
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002352 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002352
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455432
+  organism_label: Nocardia terpenica
+  evidence:
+  - reference: PMID:32196864
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002352 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LWGR01000021.1
+  locus_from: 1408389
+  locus_to: 1426575
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002352
+  source_label: terpenibactin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-e8fc08769d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

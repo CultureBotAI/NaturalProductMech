@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-c33fd38850
+label: thiomuracin
+chemical_structure:
+  smiles: O=C1C2=CSC(C3=C(C4=CSC(C5=CSC([C@@H](NC([C@H](CC6=CC=C(O)C=C6)NC(C7=CSC([C@H]([C@H](O)C8=CC=CC=C8)NC(C9=C(C)SC([C@H](CC(N)=O)N1)=N9)=O)=N7)=O)=O)[C@H](C)C%10CO%10)=N5)=N4)N=C(C%11=NC(C(NC(C(NC(C(N[C@@H](C)C(O)=O)=O)=C)=O)=C)=O)=CS%11)C=C3)=N2
+  standard_inchi: InChI=1S/C62H55N15O13S6/c1-25(42-19-90-42)44-60-74-41(24-95-60)58-70-37(20-92-58)46-33(15-16-34(67-46)57-72-38(22-93-57)52(84)65-27(3)49(81)64-26(2)50(82)66-28(4)62(88)89)56-71-39(21-91-56)54(86)69-36(18-43(63)79)59-77-45(29(5)96-59)55(87)76-47(48(80)31-9-7-6-8-10-31)61-73-40(23-94-61)53(85)68-35(51(83)75-44)17-30-11-13-32(78)14-12-30/h6-16,20-25,28,35-36,42,44,47-48,78,80H,2-3,17-19H2,1,4-5H3,(H2,63,79)(H,64,81)(H,65,84)(H,66,82)(H,68,85)(H,69,86)(H,75,83)(H,76,87)(H,88,89)/t25-,28+,35+,36+,42?,44+,47+,48-/m1/s1
+  standard_inchi_key: LXOSXNJTQRTDJG-IKGSVZLMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001860
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:469371
+  taxon_label: Thermobispora bispora DSM 43833
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001860
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26675417
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001860 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001860
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:469371
+  organism_label: Thermobispora bispora DSM 43833
+  evidence:
+  - reference: PMID:26675417
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001860 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP001874.1
+  locus_from: 604806
+  locus_to: 621192
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001860
+  source_label: thiomuracin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-c33fd38850
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

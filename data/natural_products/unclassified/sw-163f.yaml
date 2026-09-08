@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-d37b0c2eed
+label: SW-163F
+chemical_structure:
+  smiles: '[H][C@]12CS[C@H](SC(C)C)[C@]([H])(N(C)C(=O)[C@H](C)NC(=O)[C@@H](COC(=O)[C@@]3(C[C@@H]3C)N(C)C1=O)NC(=O)C1=C(O)C=C3C=CC=CC3=N1)C(=O)N(C)[C@]1(C[C@@H]1C)C(=O)OC[C@@H](NC(=O)C1=C(O)C=C3C=CC=CC3=N1)C(=O)N[C@@H](C)C(=O)N2C'
+  standard_inchi: InChI=1S/C55H66N10O14S2/c1-26(2)81-51-42-50(75)65(10)55(22-28(55)4)53(77)79-24-35(60-45(70)40-38(66)19-31-15-11-13-17-33(31)58-40)43(68)56-29(5)47(72)62(7)37(25-80-51)49(74)64(9)54(21-27(54)3)52(76)78-23-36(44(69)57-30(6)48(73)63(42)8)61-46(71)41-39(67)20-32-16-12-14-18-34(32)59-41/h11-20,26-30,35-37,42,51,66-67H,21-25H2,1-10H3,(H,56,68)(H,57,69)(H,60,70)(H,61,71)/t27-,28-,29-,30-,35+,36+,37-,42+,51+,54-,55-/m0/s1
+  standard_inchi_key: HDMUZLQWDPUHND-BUEVIDIWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000434
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA013657
+producer_organisms:
+- taxon_id: NCBITaxon:497689
+  taxon_label: Streptomyces sp. SNA15896
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000434
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19514719
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000434 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000434
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:497689
+  organism_label: Streptomyces sp. SNA15896
+  evidence:
+  - reference: PMID:19514719
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000434 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB375771.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000434
+  source_label: SW-163F
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d37b0c2eed
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

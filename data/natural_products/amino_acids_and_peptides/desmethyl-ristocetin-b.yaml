@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-70fbc79e0e
+label: Desmethyl ristocetin B
+chemical_structure:
+  smiles: C[C@H]1[C@H](O)[C@H](N)C[C@@H](O[C@H]2[C@H]3C(N[C@H](C(O)=O)C4=CC(O)=CC(O[C@H]5[C@@H](O)[C@@H](O)[C@H](O)[C@@H](CO)O5)=C4C6=C(O)C=CC([C@@H](NC([C@H]7C8=CC(OC9=CC=C([C@@H](O)[C@@H]%10C(N[C@H](C(N7)=O)C%11=CC(OC%12=C(O)C=CC([C@@H](N)C(N%10)=O)=C%12)=C(C)C(O)=C%11)=O)C=C9)=C(O[C@H]%13[C@H](O)[C@@H](O)[C@H](O)[C@@H](COC%14[C@H](O)[C@H](O)[C@@H](O)[C@H](C)O%14)O%13)C(OC%15=CC=C2C=C%15)=C8)=O)C(N3)=O)=C6)=O)O1
+  standard_inchi: InChI=1S/C83H90N8O35/c1-27-44(96)17-34-19-45(27)121-46-18-32(8-15-43(46)95)54(85)74(108)90-59-63(99)30-4-10-37(11-5-30)119-48-20-35-21-49(73(48)126-83-71(107)68(104)65(101)51(124-83)26-116-81-69(105)66(102)62(98)29(3)118-81)120-38-12-6-31(7-13-38)72(125-52-24-41(84)61(97)28(2)117-52)60-79(113)89-58(80(114)115)40-22-36(93)23-47(122-82-70(106)67(103)64(100)50(25-92)123-82)53(40)39-16-33(9-14-42(39)94)55(75(109)91-60)86-77(111)57(35)87-76(110)56(34)88-78(59)112/h4-23,28-29,41,50-52,54-72,81-83,92-107H,24-26,84-85H2,1-3H3,(H,86,111)(H,87,110)(H,88,112)(H,89,113)(H,90,108)(H,91,109)(H,114,115)/t28-,29-,41+,50+,51+,52+,54+,55+,56-,57+,58-,59+,60-,61-,62-,63+,64+,65+,66+,67-,68-,69+,70-,71+,72+,81?,82+,83-/m0/s1
+  standard_inchi_key: ZYDSRQPWRLSQHL-UHQLEFCHSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000418
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Vancomycins and Teicoplanins
+  is_glycoside: true
+bgc_class:
+- NRPS
+compound_classes:
+- Glycopeptide
+producer_organisms:
+- taxon_id: NCBITaxon:31959
+  taxon_label: Amycolatopsis lurida
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000418
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25022591
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000418 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000418
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:31959
+  organism_label: Amycolatopsis lurida
+  evidence:
+  - reference: PMID:25022591
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000418 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KJ364518.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000418
+  source_label: Desmethyl ristocetin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-70fbc79e0e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

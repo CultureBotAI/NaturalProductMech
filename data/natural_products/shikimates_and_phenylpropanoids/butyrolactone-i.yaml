@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-6c009f6560
+label: butyrolactone I
+chemical_structure:
+  smiles: COC(=O)[C@]1(CC2=CC(CC=C(C)C)=C(O)C=C2)OC(=O)C(OC)=C1C1=CC=C(O)C=C1
+  standard_inchi: InChI=1S/C25H26O7/c1-15(2)5-7-18-13-16(6-12-20(18)27)14-25(24(29)31-4)21(22(30-3)23(28)32-25)17-8-10-19(26)11-9-17/h5-6,8-13,26-27H,7,14H2,1-4H3/t25-/m1/s1
+  standard_inchi_key: FCSKUNOKIVAIKK-RUZDIDTESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002273
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Lignans
+  class_results:
+  - Neolignans
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA032341
+producer_organisms:
+- taxon_id: NCBITaxon:341663
+  taxon_label: Aspergillus terreus NIH2624
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002273
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:9042196
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002273 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002273
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:341663
+  organism_label: Aspergillus terreus NIH2624
+  evidence:
+  - reference: PMID:9042196
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002273 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CH476597.1
+  locus_from: 104608
+  locus_to: 145729
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002273
+  source_label: butyrolactone I
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-6c009f6560
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-038ee07fcc
+label: nannocystin a
+chemical_structure:
+  smiles: C[C@@H](CC)[C@@H]1N(C([C@@]2(C)[C@H](C[C@H](/C(C)=C/C=C/[C@H]([C@@H](C3=CC=CC=C3)OC([C@H](C(O)(C)C)NC([C@H](NC1=O)CC4=CC(Cl)=C(O)C(Cl)=C4)=O)=O)C)OC)O2)=O)C
+  standard_inchi: InChI=1S/C42H55Cl2N3O9/c1-10-23(2)33-38(50)45-30(21-26-19-28(43)34(48)29(44)20-26)37(49)46-36(41(5,6)53)39(51)55-35(27-17-12-11-13-18-27)25(4)16-14-15-24(3)31(54-9)22-32-42(7,56-32)40(52)47(33)8/h11-20,23,25,30-33,35-36,48,53H,10,21-22H2,1-9H3,(H,45,50)(H,46,49)/b16-14+,24-15+/t23-,25+,30+,31+,32-,33-,35-,36+,42+/m0/s1
+  standard_inchi_key: PEOAVEOEVIQCMT-XWDGXJISSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001212
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1696011
+  taxon_label: Nannocystis sp. MB1016
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001212
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26179970
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001212 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001212
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1696011
+  organism_label: Nannocystis sp. MB1016
+  evidence:
+  - reference: PMID:26179970
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001212 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KT067736.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001212
+  source_label: nannocystin a
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-038ee07fcc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-07e5ea1029
+label: rhizoxin A
+chemical_structure:
+  smiles: C[C@@H]1/C=C/[C@@H]2[C@](O2)([C@H](C[C@H](OC(=O)[C@H]3[C@@H](O3)C[C@@H]4C[C@H]1OC(=O)C4)[C@H](C)[C@H](/C(=C/C=C/C(=C/C5=COC(=N5)C)/C)/C)OC)O)C
+  standard_inchi: InChI=1S/C35H47NO9/c1-19(13-25-18-41-23(5)36-25)9-8-10-21(3)32(40-7)22(4)27-17-29(37)35(6)30(45-35)12-11-20(2)26-14-24(16-31(38)42-26)15-28-33(43-28)34(39)44-27/h8-13,18,20,22,24,26-30,32-33,37H,14-17H2,1-7H3/b9-8+,12-11+,19-13+,21-10+/t20-,22+,24+,26-,27+,28+,29+,30-,32+,33-,35-/m1/s1
+  standard_inchi_key: OWPCHSCAPHNHAV-QIPOKPRISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001112
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Rhizoxins
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:6437358
+producer_organisms:
+- taxon_id: NCBITaxon:412963
+  taxon_label: Paraburkholderia rhizoxinica
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001112
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
+  evidence:
+  - reference: PMID:17154220
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001112 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001112
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:412963
+  organism_label: Paraburkholderia rhizoxinica
+  evidence:
+  - reference: PMID:17154220
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001112 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM411073.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001112
+  source_label: rhizoxin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-07e5ea1029
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

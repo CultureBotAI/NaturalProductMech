@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-4b80aeb3e1
+label: viscosin
+chemical_structure:
+  smiles: CCCCCCCC(O)CC(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CCC(O)=O)C(=O)N[C@@H]1C(C)OC(=O)[C@@H](NC(=O)[C@@H](CO)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](CO)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](NC1=O)C(C)C)[C@@H](C)CC
+  standard_inchi: InChI=1S/C54H95N9O16/c1-13-15-16-17-18-19-34(66)25-41(67)55-36(22-28(3)4)47(71)56-35(20-21-42(68)69)46(70)63-45-33(12)79-54(78)44(32(11)14-2)62-51(75)40(27-65)60-48(72)37(23-29(5)6)57-50(74)39(26-64)59-49(73)38(24-30(7)8)58-52(76)43(31(9)10)61-53(45)77/h28-40,43-45,64-66H,13-27H2,1-12H3,(H,55,67)(H,56,71)(H,57,74)(H,58,76)(H,59,73)(H,60,72)(H,61,77)(H,62,75)(H,63,70)(H,68,69)/t32-,33?,34?,35+,36-,37-,38-,39+,40+,43+,44-,45+/m0/s1
+  standard_inchi_key: QYEWAEAWMXRMHB-RDGUDDKTSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001312
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA06108
+- pubchem:72937
+producer_organisms:
+- taxon_id: NCBITaxon:216595
+  taxon_label: Pseudomonas fluorescens SBW25
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001312
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:11358168
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001312 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001312
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:216595
+  organism_label: Pseudomonas fluorescens SBW25
+  evidence:
+  - reference: PMID:11358168
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001312 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM181176.4
+  locus_from: 2788013
+  locus_to: 2831449
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001312
+  source_label: viscosin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4b80aeb3e1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

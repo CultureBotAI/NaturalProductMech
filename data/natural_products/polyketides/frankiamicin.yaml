@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-1cd5a7984e
+label: frankiamicin
+chemical_structure:
+  smiles: O=C1C2=C(C(O)=C(CC(O)C3=C4C(O)=C(C(O)=O)C(C)=C3)C4=C2)C(C5=C1C=C(O)C=C5O)=O
+  standard_inchi: InChI=1S/C24H16O9/c1-7-2-11-14(26)6-10-9(17(11)22(30)16(7)24(32)33)5-13-19(21(10)29)23(31)18-12(20(13)28)3-8(25)4-15(18)27/h2-5,14,25-27,29-30H,6H2,1H3,(H,32,33)
+  standard_inchi_key: XREYEBRVZBZAMN-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001197
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  - Anthraquinones and anthrones
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:298653
+  taxon_label: Frankia sp. EAN1pec
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001197
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25837682
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001197 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001197
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:298653
+  organism_label: Frankia sp. EAN1pec
+  evidence:
+  - reference: PMID:25837682
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001197 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000820.1
+  locus_from: 2838708
+  locus_to: 2851386
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001197
+  source_label: frankiamicin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1cd5a7984e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

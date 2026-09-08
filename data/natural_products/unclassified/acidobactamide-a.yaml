@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-c6053a0231
+label: acidobactamide A
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]1NC(=O)[C@@H](CC(O)=O)NC(=O)CNC(=O)[C@H](C)[C@H](O)[C@@H](NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](NC(=O)CC(N)C[C@H](O)[C@@H](NC(=O)[C@@H](O)CC2=CC=CC=C2)[C@H](O)C2=CC=C(OC)C=C2)[C@@H](C)O)[C@@H](C)OC(=O)[C@@H]([C@@H](C)CC)N(C)C(=O)[C@@H](CC(N)=O)NC1=O
+  standard_inchi: InChI=1S/C62H94N12O21/c1-10-29(3)48-59(90)69-40(26-44(65)79)61(92)74(8)52(30(4)11-2)62(93)95-33(7)50(53(84)31(5)55(86)66-28-46(81)67-39(27-47(82)83)57(88)71-48)72-56(87)38(21-22-43(64)78)68-60(91)49(32(6)75)70-45(80)25-36(63)24-41(76)51(54(85)35-17-19-37(94-9)20-18-35)73-58(89)42(77)23-34-15-13-12-14-16-34/h12-20,29-33,36,38-42,48-54,75-77,84-85H,10-11,21-28,63H2,1-9H3,(H2,64,78)(H2,65,79)(H,66,86)(H,67,81)(H,68,91)(H,69,90)(H,70,80)(H,71,88)(H,72,87)(H,73,89)(H,82,83)/t29-,30-,31+,32+,33+,36?,38-,39+,40+,41-,42-,48-,49+,50-,51+,52+,53-,54+/m0/s1
+  standard_inchi_key: LEWOAKFWNHLJSG-RGNSTYQKSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002815
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:442870
+  taxon_label: Acanthopleuribacter pedis KCTC 12899
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002815
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Correlation of genomic and metabolomic data. That evidence
+    grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: DOI:10.5281/zenodo.8013901
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002815 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002815
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:442870
+  organism_label: Acanthopleuribacter pedis KCTC 12899
+  evidence:
+  - reference: DOI:10.5281/zenodo.8013901
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002815 entry version 2; citation taken from the entry level
+  genome_accession: genbank:JAFREP010000006.1
+  locus_from: 317397
+  locus_to: 381081
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Correlation of genomic and metabolomic data
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002815
+  source_label: acidobactamide A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c6053a0231
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

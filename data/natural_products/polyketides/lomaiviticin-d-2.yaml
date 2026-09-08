@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-ba6ee9b824
+label: lomaiviticin D
+chemical_structure:
+  smiles: O=C([C@@]([C@@]([C@@](O[C@H]1C[C@H](OC)[C@@H](O)[C@H](C)O1)(CC)[C@@H]2O[C@@H]3C[C@H](O)[C@@H](N(C)C)[C@H](C)O3)([H])C(C(C4=C5C(C6=C(O)C=CC(O)=C6C4=O)=O)=C2C5=[N+]=[N-])=O)([H])[C@@](O[C@@H]7O[C@@H](C)[C@H](OC)[C@@H](OC)C7)(CC)[C@@H]8O[C@@H]9C[C@H](O)[C@@H](N(C)C)[C@H](C)O9)C%10=C8C=C%11C%10=C(O)C%12=C(O)C=CC(O)=C%12C%11=O
+  standard_inchi: InChI=1S/C69H84N4O24/c1-14-68(96-42-24-38(88-12)65(89-13)28(6)93-42)53(63(85)44-30(66(68)94-39-21-35(78)56(72(7)8)25(3)90-39)20-29-43(44)60(82)46-32(75)17-16-31(74)45(46)59(29)81)54-64(86)50-49-51(62(84)48-34(77)19-18-33(76)47(48)61(49)83)55(71-70)52(50)67(95-40-22-36(79)57(73(9)10)26(4)91-40)69(54,15-2)97-41-23-37(87-11)58(80)27(5)92-41/h16-20,25-28,35-42,53-54,56-58,65-67,74-80,82H,14-15,21-24H2,1-13H3/t25-,26-,27-,28-,35-,36-,37-,38-,39+,40+,41-,42-,53-,54-,56-,57-,58-,65-,66+,67+,68-,69-/m0/s1
+  standard_inchi_key: WDSXHYIKIDPMFG-JIVPKNBMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000240
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:351187
+  taxon_label: Salinispora pacifica
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000240
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
+  evidence:
+  - reference: PMID:23649992
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000240 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000240
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:351187
+  organism_label: Salinispora pacifica
+  evidence:
+  - reference: PMID:23649992
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000240 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF731828.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000240
+  source_label: lomaiviticin D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ba6ee9b824
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

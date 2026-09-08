@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-cc567b0f72
+label: 3,5-dibromo-p-anisic acid
+chemical_structure:
+  smiles: COC1=C(Br)C=C(C(=O)O)C=C1Br
+  standard_inchi: InChI=1S/C8H6Br2O3/c1-13-7-5(9)2-4(8(11)12)3-6(7)10/h2-3H,1H3,(H,11,12)
+  standard_inchi_key: NAHPGFGVWWKSFU-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002341
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Phenolic acids (C6-C1)
+  class_results:
+  - Simple phenolic acids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA025876
+producer_organisms:
+- taxon_id: NCBITaxon:2603660
+  taxon_label: Planctomycetales bacterium 10988
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002341
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31644258
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002341 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002341
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2603660
+  organism_label: Planctomycetales bacterium 10988
+  evidence:
+  - reference: PMID:31644258
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002341 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP043547.1
+  locus_from: 6188011
+  locus_to: 6190061
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002341
+  source_label: 3,5-dibromo-p-anisic acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-cc567b0f72
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

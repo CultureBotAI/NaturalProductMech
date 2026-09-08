@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-4e9443cf70
+label: reductasporine
+chemical_structure:
+  smiles: C[N+](C1)(C)CC2=C1C3=C(C4=C2C5=C(C=CC=C5)N4)NC6=CC=CC=C63
+  standard_inchi: InChI=1S/C22H20N3/c1-25(2)11-15-16(12-25)20-14-8-4-6-10-18(14)24-22(20)21-19(15)13-7-3-5-9-17(13)23-21/h3-10,23-24H,11-12H2,1-2H3/q+1
+  standard_inchi_key: JMBWSLLYZATHBO-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001224
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  - Carboline alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+compound_classes:
+- Tryptophan-derived
+producer_organisms:
+- taxon_id: NCBITaxon:77133
+  taxon_label: uncultured bacterium
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001224
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/jacs.5b01968
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001224 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001224
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:77133
+  organism_label: uncultured bacterium
+  evidence:
+  - reference: DOI:10.1021/jacs.5b01968
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001224 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KP274854.1
+  locus_from: 1519
+  locus_to: 11352
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001224
+  source_label: reductasporine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4e9443cf70
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

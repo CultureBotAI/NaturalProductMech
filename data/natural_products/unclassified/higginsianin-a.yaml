@@ -1,0 +1,80 @@
+identifier: naturalproductmech:mibig-8598803f74
+label: higginsianin A
+chemical_structure:
+  smiles: CC(C)=C[C@@H]1C[C@]2(C)C(CC[C@]3(C)[C@H](CC4=C(O)C(C)=C(C)OC4=O)C(=C)CC[C@@H]23)O1
+  standard_inchi: InChI=1S/C27H38O4/c1-15(2)12-19-14-27(7)22-9-8-16(3)21(26(22,6)11-10-23(27)31-19)13-20-24(28)17(4)18(5)30-25(20)29/h12,19,21-23,28H,3,8-11,13-14H2,1-2,4-7H3/t19-,21-,22-,23?,26-,27+/m1/s1
+  standard_inchi_key: SXNPXUJAUIINIU-ONSQYRCZSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002429
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Triketide meroterpenoids
+  is_glycoside: false
+bgc_class:
+- PKS
+- TERPENE
+compound_classes:
+- Cyclic polyketide
+- Diterpenoid
+xrefs:
+- pubchem:139589579
+- npatlas:NPA021814
+producer_organisms:
+- taxon_id: NCBITaxon:759273
+  taxon_label: Colletotrichum higginsianum IMI 349063
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002429
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1021/acs.jnatprod.5b00779
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002429 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002429
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:759273
+  organism_label: Colletotrichum higginsianum IMI 349063
+  evidence:
+  - reference: DOI:10.1021/acs.jnatprod.5b00779
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002429 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CM004458.1
+  locus_from: 408595
+  locus_to: 480233
+  bgc_class:
+  - PKS
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002429
+  source_label: higginsianin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-8598803f74
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

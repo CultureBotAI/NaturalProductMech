@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-fa9ffcdc27
+label: concanamycin A
+chemical_structure:
+  smiles: '[H][C@@]1(OC(=O)\C(OC)=C\C(\C)=C\[C@@H](C)[C@@H](O)[C@@H](CC)[C@@H](O)[C@H](C)C\C(C)=C\C=C\[C@@H]1OC)[C@@H](C)[C@@H](O)[C@H](C)[C@@]1(O)C[C@@H](O[C@H]2C[C@@H](O)[C@H](OC(N)=O)[C@@H](C)O2)[C@H](C)[C@H](O1)\C=C\C'
+  standard_inchi: InChI=1S/C46H75NO14/c1-13-16-34-28(7)37(58-38-22-33(48)43(31(10)57-38)60-45(47)53)23-46(54,61-34)30(9)41(51)29(8)42-35(55-11)18-15-17-24(3)19-26(5)39(49)32(14-2)40(50)27(6)20-25(4)21-36(56-12)44(52)59-42/h13,15-18,20-21,26-35,37-43,48-51,54H,14,19,22-23H2,1-12H3,(H2,47,53)/b16-13+,18-15+,24-17+,25-20+,36-21-/t26-,27-,28-,29+,30+,31-,32+,33-,34-,35+,37-,38+,39+,40-,41-,42-,43-,46-/m1/s1
+  standard_inchi_key: DJZCTUVALDDONK-HQMSUKCRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000040
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Bafilomycins
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA014456
+- pubchem:6917059
+producer_organisms:
+- taxon_id: NCBITaxon:42238
+  taxon_label: Streptomyces neyagawaensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000040
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16207901
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000040 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000040
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:42238
+  organism_label: Streptomyces neyagawaensis
+  evidence:
+  - reference: PMID:16207901
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000040 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ149987.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000040
+  source_label: concanamycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fa9ffcdc27
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

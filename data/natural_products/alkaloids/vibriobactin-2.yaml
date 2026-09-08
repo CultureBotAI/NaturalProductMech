@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-fa214a317c
+label: vibriobactin
+chemical_structure:
+  smiles: C[C@@H]1OC(C2=C(O)C(O)=CC=C2)=N[C@H]1C(=O)NCCCN(CCCNC(=O)C1=C(O)C(O)=CC=C1)C(=O)[C@H]1N=C(C2=C(O)C(O)=CC=C2)O[C@@H]1C
+  standard_inchi: InChI=1S/C35H39N5O11/c1-18-26(38-33(50-18)21-9-4-12-24(42)29(21)45)32(48)37-15-7-17-40(16-6-14-36-31(47)20-8-3-11-23(41)28(20)44)35(49)27-19(2)51-34(39-27)22-10-5-13-25(43)30(22)46/h3-5,8-13,18-19,26-27,41-46H,6-7,14-17H2,1-2H3,(H,36,47)(H,37,48)/t18-,19+,26+,27-/m0/s1
+  standard_inchi_key: LLMKLMMXMOTPRU-YOAXHERRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002494
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Polyamines
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033096
+producer_organisms:
+- taxon_id: NCBITaxon:666
+  taxon_label: Vibrio cholerae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002494
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:10601218
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002494 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002494
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:666
+  organism_label: Vibrio cholerae
+  evidence:
+  - reference: PMID:10601218
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002494 entry version 3; citation taken from the entry level
+  genome_accession: genbank:U52150.2
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002494
+  source_label: vibriobactin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-fa214a317c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

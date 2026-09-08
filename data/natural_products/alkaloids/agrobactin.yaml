@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-bb581c6679
+label: agrobactin
+chemical_structure:
+  smiles: C[C@@H]1[C@H](N=C(O1)C2=C(C(=CC=C2)O)O)C(=O)N(CCCCNC(=O)C3=C(C(=CC=C3)O)O)CCCNC(=O)C4=C(C(=CC=C4)O)O
+  standard_inchi: InChI=1S/C32H36N4O10/c1-18-25(35-31(46-18)21-10-6-13-24(39)28(21)42)32(45)36(17-7-15-34-30(44)20-9-5-12-23(38)27(20)41)16-3-2-14-33-29(43)19-8-4-11-22(37)26(19)40/h4-6,8-13,18,25,37-42H,2-3,7,14-17H2,1H3,(H,33,43)(H,34,44)/t18-,25+/m1/s1
+  standard_inchi_key: BWPMKVHHFNGYEN-CJAUYULYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002474
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Polyamines
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA018820
+producer_organisms:
+- taxon_id: NCBITaxon:358
+  taxon_label: Agrobacterium tumefaciens
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002474
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12207035
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002474 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002474
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:358
+  organism_label: Agrobacterium tumefaciens
+  evidence:
+  - reference: PMID:12207035
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002474 entry version 2; citation taken from the entry level
+  genome_accession: genbank:AB083344.2
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002474
+  source_label: agrobactin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-bb581c6679
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

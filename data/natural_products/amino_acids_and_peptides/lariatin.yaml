@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-32d213798c
+label: lariatin
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H](C(=O)N[C@@H](CC(C)C)C(=O)N1CCC[C@H]1C(=O)O)NC(=O)[C@H](C(C)C)NC(=O)[C@H](CC(=O)N)NC(=O)[C@H](CO)NC(=O)[C@H](CC2=CN=CN2)NC(=O)CNC(=O)[C@H](C(C)C)NC(=O)[C@H](CC3=CNC4=CC=CC=C43)NC(=O)[C@@H]5CCC(=O)NCC(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N5)CCCNC(=N)N)CC6=CC=C(C=C6)O)C(C)C)CC(C)C)CCC(=O)N)CO
+  standard_inchi: InChI=1S/C94H142N26O25/c1-13-50(12)77(91(142)114-65(33-46(4)5)92(143)120-31-17-21-68(120)93(144)145)119-90(141)76(49(10)11)118-85(136)64(37-70(96)125)112-87(138)67(43-122)115-82(133)63(36-53-39-99-44-104-53)105-73(128)41-103-88(139)74(47(6)7)116-84(135)62(35-52-38-101-56-19-15-14-18-55(52)56)111-80(131)59-27-29-71(126)102-40-72(127)106-66(42-121)86(137)109-58(26-28-69(95)124)79(130)110-60(32-45(2)3)83(134)117-75(48(8)9)89(140)113-61(34-51-22-24-54(123)25-23-51)81(132)107-57(78(129)108-59)20-16-30-100-94(97)98/h14-15,18-19,22-25,38-39,44-50,57-68,74-77,101,121-123H,13,16-17,20-21,26-37,40-43H2,1-12H3,(H2,95,124)(H2,96,125)(H,99,104)(H,102,126)(H,103,139)(H,105,128)(H,106,127)(H,107,132)(H,108,129)(H,109,137)(H,110,130)(H,111,131)(H,112,138)(H,113,140)(H,114,142)(H,115,133)(H,116,135)(H,117,134)(H,118,136)(H,119,141)(H,144,145)(H4,97,98,100)/t50-,57-,58-,59-,60-,61-,62-,63-,64-,65-,66-,67-,68-,74-,75-,76-,77-/m0/s1
+  standard_inchi_key: MJXKYYQJGOCUNE-KBACZRJDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000575
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - RiPPs-Lasso peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:45271551
+producer_organisms:
+- taxon_id: NCBITaxon:132919
+  taxon_label: Rhodococcus jostii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000575
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22388571
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000575 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000575
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:132919
+  organism_label: Rhodococcus jostii
+  evidence:
+  - reference: PMID:22388571
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000575 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB593691.1
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000575
+  source_label: lariatin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-32d213798c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

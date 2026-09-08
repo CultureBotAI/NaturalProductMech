@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-a73dc5b7cc
+label: streptoketide C
+chemical_structure:
+  smiles: OC1=C2C(C[C@@H](CC(O)=O)OC2=O)=CC3=C1C(O)=CC=C3
+  standard_inchi: InChI=1S/C15H12O6/c16-10-3-1-2-7-4-8-5-9(6-11(17)18)21-15(20)13(8)14(19)12(7)10/h1-4,9,16,19H,5-6H2,(H,17,18)/t9-/m0/s1
+  standard_inchi_key: YWJXTKHQNKVYNF-VIFPVBQESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002081
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Naphthalenes
+  class_results:
+  - Bisnaphthalenes
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:2602572
+  taxon_label: Streptomyces sp. Tue6314
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002081
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1021/acs.joc.9b02741
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002081 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002081
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2602572
+  organism_label: Streptomyces sp. Tue6314
+  evidence:
+  - reference: DOI:10.1021/acs.joc.9b02741
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002081 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MK424349.1
+  locus_from: 5927
+  locus_to: 26330
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002081
+  source_label: streptoketide C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-a73dc5b7cc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

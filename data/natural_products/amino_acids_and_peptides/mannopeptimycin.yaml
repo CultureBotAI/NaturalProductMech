@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-e4db29a84f
+label: mannopeptimycin
+chemical_structure:
+  smiles: C[C@H]([C@H]1C(=O)N[C@@H](C(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@H](C(=O)NCC(=O)N1)CO)[C@H]([C@@H]2CNC(=[N+]2[C@@H]3[C@H]([C@H]([C@@H]([C@H](O3)O)O)O)O)N)O)[C@H]([C@@H]4C[NH+]=C(N4)N)O)CC5=CC=C(C=C5)O[C@@H]6[C@H]([C@H]([C@@H]([C@H](O6)CO)O[C@@H]7[C@H]([C@H]([C@@H]([C@H](O7)CO)O)OC(=O)CC(C)C)O)O)O)C8=CC=CC=C8
+  standard_inchi: InChI=1S/C58H84N12O26/c1-21(2)13-33(75)94-47-39(78)30(19-72)92-56(45(47)84)95-46-31(20-73)93-55(44(83)41(46)80)91-25-11-9-23(10-12-25)14-26-49(86)68-35(37(76)27-15-62-57(59)66-27)52(89)69-36(38(77)29-16-63-58(60)70(29)53-42(81)40(79)43(82)54(90)96-53)51(88)65-28(18-71)48(85)61-17-32(74)67-34(50(87)64-26)22(3)24-7-5-4-6-8-24/h4-12,21-22,26-31,34-47,53-56,71-73,76-84,90H,13-20H2,1-3H3,(H11,59,60,61,62,63,64,65,66,67,68,69,74,85,86,87,88,89)/p+2/t22-,26+,27-,28-,29-,30+,31+,34-,35-,36+,37-,38-,39+,40+,41+,42-,43-,44-,45-,46+,47-,53-,54-,55-,56+/m0/s1
+  standard_inchi_key: HBTVDBLISZYTGP-ONIHXMSRSA-P
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000388
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: true
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:90658418
+producer_organisms:
+- taxon_id: NCBITaxon:1912
+  taxon_label: Streptomyces hygroscopicus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000388
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/acs.biochem.3c00428
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000388 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000388
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1912
+  organism_label: Streptomyces hygroscopicus
+  evidence:
+  - reference: DOI:10.1021/acs.biochem.3c00428
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000388 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AY735112.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000388
+  source_label: mannopeptimycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e4db29a84f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

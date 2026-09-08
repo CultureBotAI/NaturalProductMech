@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-abd0ba8d4d
+label: sesquicillin A
+chemical_structure:
+  smiles: CC1=C(OC(=O)C(=C1O)C[C@@H]2C(=C)CC[C@@H]3[C@@]2(CC[C@@H]([C@@]3(C)CCC=C(C)C)OC(=O)C)C)C
+  standard_inchi: InChI=1S/C29H42O5/c1-17(2)10-9-14-29(8)24-12-11-18(3)23(28(24,7)15-13-25(29)34-21(6)30)16-22-26(31)19(4)20(5)33-27(22)32/h10,23-25,31H,3,9,11-16H2,1-2,4-8H3/t23-,24-,25+,28-,29+/m1/s1
+  standard_inchi_key: XYRWDMXUDDAXMF-JJPZVYOZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002614
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Triketide meroterpenoids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA004854
+producer_organisms:
+- taxon_id: NCBITaxon:904690
+  taxon_label: Penicillium shearii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002614
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:32286350
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002614 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002614
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:904690
+  organism_label: Penicillium shearii
+  evidence:
+  - reference: PMID:32286350
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002614 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LC600199.1
+  locus_from: 1
+  locus_to: 33840
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002614
+  source_label: sesquicillin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-abd0ba8d4d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

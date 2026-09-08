@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-64fab66500
+label: a201a
+chemical_structure:
+  smiles: CN(C)C1=C2C(N([C@H]3[C@H](O)[C@H](NC(/C(C)=C/C4=CC=C(O[C@@H]([C@@H](O)[C@H]/5O)OC5=C(CO[C@@H]6[C@@H](O)[C@@H](OC)[C@H](OC)[C@@H](C)O6)/OC)C=C4)=O)[C@@H](CO)O3)C=N2)=NC=N1
+  standard_inchi: InChI=1S/C37H50N6O14/c1-17(34(49)41-23-21(13-44)56-35(25(23)45)43-16-40-24-32(42(3)4)38-15-39-33(24)43)12-19-8-10-20(11-9-19)55-37-27(47)26(46)30(57-37)22(50-5)14-53-36-28(48)31(52-7)29(51-6)18(2)54-36/h8-12,15-16,18,21,23,25-29,31,35-37,44-48H,13-14H2,1-7H3,(H,41,49)/b17-12+,30-22-/t18-,21-,23-,25-,26-,27+,28+,29-,31-,35-,36+,37-/m1/s1
+  standard_inchi_key: HELPZWNRUYNCJQ-KLBOBXLXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001138
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:6441582
+producer_organisms:
+- taxon_id: NCBITaxon:531310
+  taxon_label: Marinactinospora thermotolerans
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001138
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22064543
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001138 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001138
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:531310
+  organism_label: Marinactinospora thermotolerans
+  evidence:
+  - reference: PMID:22064543
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001138 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JN651966.1
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001138
+  source_label: a201a
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-64fab66500
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

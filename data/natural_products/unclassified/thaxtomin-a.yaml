@@ -1,0 +1,110 @@
+identifier: naturalproductmech:mibig-c25e1c1376
+label: thaxtomin A
+chemical_structure:
+  smiles: CN1[C@H](C(=O)N([C@](C1=O)(CC2=CC(=CC=C2)O)O)C)CC3=CNC4=C3C(=CC=C4)[N+](=O)[O-]
+  standard_inchi: InChI=1S/C22H22N4O6/c1-24-18(10-14-12-23-16-7-4-8-17(19(14)16)26(31)32)20(28)25(2)22(30,21(24)29)11-13-5-3-6-15(27)9-13/h3-9,12,18,23,27,30H,10-11H2,1-2H3/t18-,22+/m0/s1
+  standard_inchi_key: QRDNJYNIEGRRKV-PGRDOPGGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002089
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA009094
+- npatlas:NPA09094
+producer_organisms:
+- taxon_id: NCBITaxon:680198
+  taxon_label: Streptomyces scabiei 87.22
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002089
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31282068
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002089 entry version 2; citation taken from the entry level
+- taxon_id: NCBITaxon:698760
+  taxon_label: Streptomyces turgidiscabies Car8
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000444
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22941045
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000444 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002089
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:680198
+  organism_label: Streptomyces scabiei 87.22
+  evidence:
+  - reference: PMID:31282068
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002089 entry version 2; citation taken from the entry level
+  genome_accession: genbank:FN554889.1
+  locus_from: 3598008
+  locus_to: 3616472
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0000444
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:698760
+  organism_label: Streptomyces turgidiscabies Car8
+  evidence:
+  - reference: PMID:22941045
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000444 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY707081.1
+  locus_from: 12536
+  locus_to: 33158
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002089
+  source_label: thaxtomin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c25e1c1376
+- source: MIBIG
+  source_id: BGC0000444
+  source_label: thaxtomin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f159da3693
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000444, BGC0002089.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

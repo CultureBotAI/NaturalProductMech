@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-09107046b4
+label: ericin S
+chemical_structure:
+  smiles: NC(CC1=CNC2=C1C=CC=C2)C(NC(CCCCN)C(NC(CSCC(C(NC(C5C)C(N4C(C(NC([H])C(NC(CS5)C(NC(C(C)C)C(NC(C6C)C(NC([H])C(NC(C(C)C)C(NC(CC(C)C)C(NC(CCC(N)=O)C(NC(C(NC(CS6)C(NC(CC7=CC=CC=C7)C(NC(CC(C)C)C(NC(CCC(N)=O)C(NC(C8C)C(NC(C(CC)C)C(NC(C9C)C(NC(CS8)C(NC(CC(N)=O)C(NC(CS9)C(NC(CC%10=CNC=N%10)C(NC(C(CC)C)C(NC(C(NC(CCCCN)C(O)=O)=O)=C)=O)=O)=O)=O)=O)=O)=O)=O)=O)=O)=O)=O)=O)=CC)=O)=O)=O)=O)=O)=O)=O)=O)=O)CCC4)=O)=O)NC3=O)C(NC(CCC(O)=O)C(NC(C(NC3C(C)C)=O)=C)=O)=O)=O)=O
+  standard_inchi: InChI=1S/C149H224N40O38S5/c1-22-73(14)114(144(221)162-75(16)120(197)169-92(149(226)227)40-31-33-49-151)183-132(209)96(55-83-58-156-67-160-83)172-135(212)102-65-230-78(19)117-146(223)179-103(136(213)173-97(56-107(155)192)131(208)177-102)66-231-79(20)118(147(224)184-115(74(15)23-2)145(222)187-117)185-127(204)90(43-46-106(154)191)167-128(205)93(51-68(4)5)170-130(207)95(53-81-35-26-25-27-36-81)171-134(211)101-64-229-77(18)116(140(217)159-60-109(194)180-111(70(8)9)141(218)174-94(52-69(6)7)129(206)166-89(42-45-105(153)190)126(203)164-86(24-3)123(200)176-101)186-143(220)113(72(12)13)182-138(215)100-63-232-80(21)119(148(225)189-50-34-41-104(189)139(216)158-59-108(193)163-100)188-137(214)99-62-228-61-98(133(210)168-91(44-47-110(195)196)124(201)161-76(17)121(198)181-112(71(10)11)142(219)178-99)175-125(202)88(39-30-32-48-150)165-122(199)85(152)54-82-57-157-87-38-29-28-37-84(82)87/h24-29,35-38,57-58,67-74,77-80,85,88-104,111-119,157H,16-17,22-23,30-34,39-56,59-66,150-152H2,1-15,18-21H3,(H2,153,190)(H2,154,191)(H2,155,192)(H,156,160)(H,158,216)(H,159,217)(H,161,201)(H,162,221)(H,163,193)(H,164,203)(H,165,199)(H,166,206)(H,167,205)(H,168,210)(H,169,197)(H,170,207)(H,171,211)(H,172,212)(H,173,213)(H,174,218)(H,175,202)(H,176,200)(H,177,208)(H,178,219)(H,179,223)(H,180,194)(H,181,198)(H,182,215)(H,183,209)(H,184,224)(H,185,204)(H,186,220)(H,187,222)(H,188,214)(H,195,196)(H,226,227)
+  standard_inchi_key: MCNRUMCJJMMKCH-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000511
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:1423
+  taxon_label: Bacillus subtilis
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000511
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this
+    field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:11872722
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000511 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000511
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1423
+  organism_label: Bacillus subtilis
+  evidence:
+  - reference: PMID:11872722
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000511 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF233755.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000511
+  source_label: ericin S
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-09107046b4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-e054ab2411
+label: lomaiviticin C
+chemical_structure:
+  smiles: O=C1C2=C(C([H])=C3C2=C(O)C4=C(O)C=CC(O)=C4C3=O)[C@@H](O[C@H]5O[C@@H](C)[C@@H](N(C)C)[C@@H](O)C5)[C@](O[C@@H]6O[C@@H](C)[C@H](O)[C@@H](OC)C6)(CC)C1C7[C@@](O[C@@H]8O[C@@H](C)[C@H](O)[C@@H](OC)C8)(CC)[C@H](O[C@H]9O[C@@H](C)[C@H](N(C)C)[C@@H](O)C9)C(C(C(C(C%10=C(O)C=CC(O)=C%10%11)=O)C%12C%11=O)=[N+]=[N-])=C%12C7=O
+  standard_inchi: InChI=1S/C68H84N4O24/c1-13-67(95-40-22-36(87-11)57(79)26(5)91-40)52(63(85)43-29(65(67)93-38-20-34(77)55(71(7)8)24(3)89-38)19-28-42(43)60(82)45-31(74)16-15-30(73)44(45)59(28)81)53-64(86)49-48-50(62(84)47-33(76)18-17-32(75)46(47)61(48)83)54(70-69)51(49)66(94-39-21-35(78)56(72(9)10)25(4)90-39)68(53,14-2)96-41-23-37(88-12)58(80)27(6)92-41/h15-19,24-27,34-41,48,50,52-53,55-58,65-66,73-80,82H,13-14,20-23H2,1-12H3/t24-,25-,26-,27-,34-,35-,36-,37-,38+,39+,40-,41-,48?,50?,52?,53?,55+,56-,57-,58-,65+,66+,67-,68-/m0/s1
+  standard_inchi_key: RLOSZZIDVJJKKR-XAAWTUPHSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000241
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:369723
+  taxon_label: Salinispora tropica CNB-440
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000241
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23649992
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000241 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000241
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:369723
+  organism_label: Salinispora tropica CNB-440
+  evidence:
+  - reference: PMID:23649992
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000241 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000667.1
+  locus_from: 2460444
+  locus_to: 2522674
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000241
+  source_label: lomaiviticin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e054ab2411
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

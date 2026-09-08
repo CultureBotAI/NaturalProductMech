@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-f297f48daf
+label: triostin A
+chemical_structure:
+  smiles: CC(C)C1N(C)C(=O)C2CSSCC(N(C)C(=O)C(C)NC(=O)C(COC1=O)NC(=O)C1=CN=C3C=CC=CC3=N1)C(=O)N(C)C(C(C)C)C(=O)OCC(NC(=O)C1=CN=C3C=CC=CC3=N1)C(=O)NC(C)C(=O)N2C
+  standard_inchi: InChI=1S/C50H62N12O12S2/c1-25(2)39-49(71)73-21-35(57-41(63)33-19-51-29-15-11-13-17-31(29)55-33)43(65)53-28(6)46(68)60(8)38-24-76-75-23-37(47(69)61(39)9)59(7)45(67)27(5)54-44(66)36(22-74-50(72)40(26(3)4)62(10)48(38)70)58-42(64)34-20-52-30-16-12-14-18-32(30)56-34/h11-20,25-28,35-40H,21-24H2,1-10H3,(H,53,65)(H,54,66)(H,57,63)(H,58,64)
+  standard_inchi_key: GULVULFEAVZHHC-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000450
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA013641
+- pubchem:316447
+producer_organisms:
+- taxon_id: NCBITaxon:45399
+  taxon_label: Streptomyces triostinicus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000450
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19194935
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000450 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000450
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:45399
+  organism_label: Streptomyces triostinicus
+  evidence:
+  - reference: PMID:19194935
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000450 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB366635.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000450
+  source_label: triostin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f297f48daf
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

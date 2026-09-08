@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-29175535e7
+label: CIML C
+chemical_structure:
+  smiles: O=C(O1)/C=C/C[C@H](OP(OCC[N+](C)(C)C)(O)=O)/C=C/CCCCCCCCCCCCCCC[C@H]1C
+  standard_inchi: InChI=1S/C29H54NO6P/c1-27-21-18-16-14-12-10-8-6-5-7-9-11-13-15-17-19-22-28(23-20-24-29(31)35-27)36-37(32,33)34-26-25-30(2,3)4/h19-20,22,24,27-28H,5-18,21,23,25-26H2,1-4H3/p+1/b22-19+,24-20+/t27-,28-/m1/s1
+  standard_inchi_key: PMVRUGUVXFOKRT-BCYLQURHSA-O
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002228
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:1573173
+  taxon_label: Colletotrichum incanum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002228
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1021/acs.orglett.0c01975
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002228 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002228
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1573173
+  organism_label: Colletotrichum incanum
+  evidence:
+  - reference: DOI:10.1021/acs.orglett.0c01975
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002228 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:LFIW01000394.1
+  locus_from: 4237
+  locus_to: 22473
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002228
+  source_label: CIML C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-29175535e7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

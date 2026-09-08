@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-cb7f4ca845
+label: A83543A
+chemical_structure:
+  smiles: CC[C@H]1CCC[C@@H]([C@H](C(=O)C2=C[C@H]3[C@@H]4C[C@@H](C[C@H]4C=C[C@H]3[C@@H]2CC(=O)O1)O[C@H]5[C@@H]([C@@H]([C@H]([C@@H](O5)C)OC)OC)OC)C)O[C@H]6CC[C@@H]([C@H](O6)C)NCC
+  standard_inchi: InChI=1S/C41H65NO10/c1-9-26-12-11-13-34(52-36-17-16-33(42-10-2)23(4)48-36)22(3)37(44)32-20-30-28(31(32)21-35(43)50-26)15-14-25-18-27(19-29(25)30)51-41-40(47-8)39(46-7)38(45-6)24(5)49-41/h14-15,20,22-31,33-34,36,38-42H,9-13,16-19,21H2,1-8H3/t22-,23-,24+,25-,26+,27-,28-,29-,30-,31+,33+,34+,36+,38+,39-,40-,41+/m1/s1
+  standard_inchi_key: DHCFQHUYZYWKAC-UYQKXTDMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000148
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Spirotetronate macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+compound_classes:
+- Macrocyclic polyketide
+xrefs:
+- npatlas:NPA012233
+producer_organisms:
+- taxon_id: NCBITaxon:60894
+  taxon_label: Saccharopolyspora spinosa
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000148
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(00)93474-9
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000148 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000148
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:60894
+  organism_label: Saccharopolyspora spinosa
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(00)93474-9
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000148 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AY007564.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000148
+  source_label: A83543A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-cb7f4ca845
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

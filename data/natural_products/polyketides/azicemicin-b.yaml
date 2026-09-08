@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-2491bd6a33
+label: azicemicin B
+chemical_structure:
+  smiles: COC1=C(O)C2=C(C=C1O)C(OC)=C1C(C(=O)CC3CC(O)(CC(=O)C13O)C1CN1)=C2O
+  standard_inchi: InChI=1S/C22H23NO9/c1-31-19-9-4-11(25)20(32-2)18(28)14(9)17(27)15-10(24)3-8-5-21(29,12-7-23-12)6-13(26)22(8,30)16(15)19/h4,8,12,23,25,27-30H,3,5-7H2,1-2H3
+  standard_inchi_key: UYHQCZYRKRLVIT-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000202
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA04525
+producer_organisms:
+- taxon_id: NCBITaxon:703222
+  taxon_label: Kibdelosporangium sp. MJ126-NF4
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000202
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:19928906
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000202 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000202
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:703222
+  organism_label: Kibdelosporangium sp. MJ126-NF4
+  evidence:
+  - reference: PMID:19928906
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000202 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GU134622.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000202
+  source_label: azicemicin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2491bd6a33
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

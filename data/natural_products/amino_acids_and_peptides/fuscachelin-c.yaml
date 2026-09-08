@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-7e8d9d4505
+label: Fuscachelin C
+chemical_structure:
+  smiles: C1=CC(=C(C(=C1)O)O)C(=O)N[C@H](CCCN=C(N)N)C(=O)NCC(=O)NCC(=O)N[C@@H](CCCN(C(=O)[C@H](CO)NC(=O)CNC(=O)CNC(=O)[C@@H](CCCN=C(N)N)NC(=O)C2=C(C(=CC=C2)O)O)O)C(=O)N
+  standard_inchi: InChI=1S/C42H62N16O16/c43-35(68)23(54-31(64)18-50-29(62)16-52-38(71)24(8-3-13-48-41(44)45)56-36(69)21-6-1-11-27(60)33(21)66)10-5-15-58(74)40(73)26(20-59)55-32(65)19-51-30(63)17-53-39(72)25(9-4-14-49-42(46)47)57-37(70)22-7-2-12-28(61)34(22)67/h1-2,6-7,11-12,23-26,59-61,66-67,74H,3-5,8-10,13-20H2,(H2,43,68)(H,50,62)(H,51,63)(H,52,71)(H,53,72)(H,54,64)(H,55,65)(H,56,69)(H,57,70)(H4,44,45,48)(H4,46,47,49)/t23-,24+,25+,26-/m0/s1
+  standard_inchi_key: MMPMJMJQRDAXEQ-QUMGSSFMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000359
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA020355
+- pubchem:102390328
+producer_organisms:
+- taxon_id: NCBITaxon:269800
+  taxon_label: Thermobifida fusca YX
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000359
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1073/pnas.0805451105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000359 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000359
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:269800
+  organism_label: Thermobifida fusca YX
+  evidence:
+  - reference: DOI:10.1073/pnas.0805451105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000359 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP000088.1
+  locus_from: 2172724
+  locus_to: 2196882
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000359
+  source_label: Fuscachelin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7e8d9d4505
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

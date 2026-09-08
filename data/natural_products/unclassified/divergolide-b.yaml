@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-97d503f3c1
+label: divergolide B
+chemical_structure:
+  smiles: CC[C@@H]1CCC(=O)/C=C\2/C(=CC3=CC(=CC(=C3O2)NC(=O)C/C=C(/C(=O)O[C@H]([C@H](C=C1)O)C=C(C)C)\C)O)C
+  standard_inchi: InChI=1S/C31H37NO7/c1-6-21-8-10-23(33)17-27-20(5)14-22-15-24(34)16-25(30(22)38-27)32-29(36)12-7-19(4)31(37)39-28(13-18(2)3)26(35)11-9-21/h7,9,11,13-17,21,26,28,34-35H,6,8,10,12H2,1-5H3,(H,32,36)/b11-9?,19-7+,27-17-/t21-,26+,28+/m1/s1
+  standard_inchi_key: GGEGLRHQJXGBSH-CCSZFJTGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001119
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  - Lactam bearing macrolide lactones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:102590736
+producer_organisms:
+- taxon_id: NCBITaxon:995841
+  taxon_label: Streptomyces sp. HKI0576
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001119
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24867126
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001119 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001119
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:995841
+  organism_label: Streptomyces sp. HKI0576
+  evidence:
+  - reference: PMID:24867126
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001119 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HF563079.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001119
+  source_label: divergolide B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-97d503f3c1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

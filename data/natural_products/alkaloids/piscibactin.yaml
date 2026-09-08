@@ -1,0 +1,120 @@
+identifier: naturalproductmech:mibig-81da63fd62
+label: piscibactin
+chemical_structure:
+  smiles: C[C@@]1(CSC(=N1)C[C@@H]([C@@H]2CS[C@@H](N2)[C@H]3CSC(=N3)C4=CC=CC=C4O)O)C(=O)O
+  standard_inchi: InChI=1S/C19H23N3O4S3/c1-19(18(25)26)9-29-15(22-19)6-14(24)11-7-28-17(20-11)12-8-27-16(21-12)10-4-2-3-5-13(10)23/h2-5,11-12,14,17,20,23-24H,6-9H2,1H3,(H,25,26)/t11-,12+,14-,17+,19+/m0/s1
+  standard_inchi_key: IHZPBBLBWDEMKS-PDEVRGGCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002533
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Serine alkaloids
+  class_results:
+  - Thiazole alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA006148
+producer_organisms:
+- taxon_id: NCBITaxon:1200302
+  taxon_label: Photobacterium damselae subsp. piscicida DI21
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002533
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.3389/fmicb.2018.01766
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002533 entry version 2; citation taken from the compound bioactivity
+      level
+- taxon_id: NCBITaxon:170651
+  taxon_label: Vibrio neptunius
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002613
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1007/s00775-021-01916-1
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002613 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002533
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1200302
+  organism_label: Photobacterium damselae subsp. piscicida DI21
+  evidence:
+  - reference: DOI:10.3389/fmicb.2018.01766
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002533 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KP100338.1
+  locus_from: 6411
+  locus_to: 41636
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0002613
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:170651
+  organism_label: Vibrio neptunius
+  evidence:
+  - reference: DOI:10.1007/s00775-021-01916-1
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002613 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:JAFHLB010000021.1
+  locus_from: 42581
+  locus_to: 74740
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002533
+  source_label: piscibactin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-81da63fd62
+- source: MIBIG
+  source_id: BGC0002613
+  source_label: piscibactin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-5605d616c4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002533, BGC0002613.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

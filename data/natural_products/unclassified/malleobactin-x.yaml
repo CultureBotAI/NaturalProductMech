@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-43e6ceb71e
+label: malleobactin X
+chemical_structure:
+  smiles: NCCCCNC(=O)C(CCCN(O)C=O)NC(=O)C(CO)NC(=O)C(NC(=O)C(N)CCCN(O)C=O)C(O)C(=O)O
+  standard_inchi: InChI=1S/C23H42N8O12/c24-7-1-2-8-26-20(37)15(6-4-10-31(43)13-34)27-21(38)16(11-32)28-22(39)17(18(35)23(40)41)29-19(36)14(25)5-3-9-30(42)12-33/h12-18,32,35,42-43H,1-11,24-25H2,(H,26,37)(H,27,38)(H,28,39)(H,29,36)(H,40,41)
+  standard_inchi_key: OAUATHUZKRGHPN-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002408
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033068
+producer_organisms:
+- taxon_id: NCBITaxon:279113
+  taxon_label: Collimonas pratensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002408
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:33817942
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002408 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002408
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:279113
+  organism_label: Collimonas pratensis
+  evidence:
+  - reference: PMID:33817942
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002408 entry version 3; citation taken from the entry level
+  genome_accession: genbank:WXXL01000019.1
+  locus_from: 22045
+  locus_to: 53320
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002408
+  source_label: malleobactin X
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-43e6ceb71e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

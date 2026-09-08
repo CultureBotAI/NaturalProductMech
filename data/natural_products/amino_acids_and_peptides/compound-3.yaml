@@ -1,0 +1,76 @@
+identifier: naturalproductmech:mibig-0dd7b68dcd
+label: compound 3
+chemical_structure:
+  smiles: O=C(C(CC(C)C)N1O)N(O)C(CC(C)C)C1=O
+  standard_inchi: InChI=1S/C12H22N2O4/c1-7(2)5-9-11(15)14(18)10(6-8(3)4)12(16)13(9)17/h7-10,17-18H,5-6H2,1-4H3
+  standard_inchi_key: RHGNLLJMHSJJRX-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002321
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:2163413
+  taxon_label: Metschnikowia aff. pulcherrima
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002321
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: PMID:31081214
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002321 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002321
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2163413
+  organism_label: Metschnikowia aff. pulcherrima
+  evidence:
+  - reference: PMID:31081214
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002321 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP034458.1
+  locus_from: 1429481
+  locus_to: 1436146
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002321
+  source_label: compound 3
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0dd7b68dcd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: needs-a-name
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: This record is labelled 'compound 3', which is a label from the cited paper's
+    own numbering rather than a compound name. Resolve a name from the literature
+    or a structure registry.
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

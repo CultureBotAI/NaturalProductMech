@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-b6a5238a20
+label: heterobactin S2
+chemical_structure:
+  smiles: CS(=O)(=O)C1=C(O)C(O)=C(C=C1)C(=O)N[C@H](CCCNC(N)=NC(=O)C1=CC=CC(O)=C1O)C(=O)NCC(=O)N[C@H]1CCCN(O)C1=O
+  standard_inchi: InChI=1S/C28H35N7O12S/c1-48(46,47)19-10-9-15(22(39)23(19)40)24(41)33-16(26(43)31-13-20(37)32-17-7-4-12-35(45)27(17)44)6-3-11-30-28(29)34-25(42)14-5-2-8-18(36)21(14)38/h2,5,8-10,16-17,36,38-40,45H,3-4,6-7,11-13H2,1H3,(H,31,43)(H,32,37)(H,33,41)(H3,29,30,34,42)/t16-,17+/m1/s1
+  standard_inchi_key: PWKIBNJRODWPRK-SJORKVTESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000371
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA018083
+producer_organisms:
+- taxon_id: NCBITaxon:234621
+  taxon_label: Rhodococcus erythropolis PR4
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000371
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:24274668
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000371 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000371
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:234621
+  organism_label: Rhodococcus erythropolis PR4
+  evidence:
+  - reference: PMID:24274668
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000371 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AP008957.1
+  locus_from: 2888228
+  locus_to: 2910756
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000371
+  source_label: heterobactin S2
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b6a5238a20
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

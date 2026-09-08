@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-c439953997
+label: cebulantin
+chemical_structure:
+  smiles: CC=C1NC(=O)CNC(=O)[C@H](CC2=CC=CC=C2)NC(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@@H]2CCCC2C(=O)CN)[C@@H](C)CC)[C@H](C)SC[C@@H]2NC(=O)[C@H](NC1=O)[C@H](C)SC[C@@H](C(=O)N1CCC[C@H]1C(=O)N[C@@H]1CSC[C@@H](C(=O)O)NC(=O)[C@H](CO)NC(=O)[C@H](C(C)C)NC(=O)C(=CC)NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](C)NC1=O)NC(=O)[C@@H]1C[C@@H](O)CN1C(=O)C(=CC)NC(=O)CNC(=O)[C@H](CC1=C[NH]C3=CC=CC=C13)NC2=O
+  standard_inchi: InChI=1S/C95H131N23O26S3/c1-11-45(7)74(114-78(126)54-26-20-25-53(54)69(121)34-96)90(138)116-76-48(10)146-42-64-86(134)106-60(31-50-35-98-58-27-19-18-24-52(50)58)80(128)100-37-72(124)103-57(14-4)93(141)118-38-51(120)32-68(118)88(136)111-65(43-147-47(9)75(92(140)110-64)115-81(129)55(12-2)102-71(123)36-99-79(127)59(107-91(76)139)30-49-22-16-15-17-23-49)94(142)117-29-21-28-67(117)87(135)109-63-40-145-41-66(95(143)144)112-84(132)62(39-119)108-89(137)73(44(5)6)113-82(130)56(13-3)104-83(131)61(33-70(97)122)105-77(125)46(8)101-85(63)133/h12-19,22-24,27,35,44-48,51,53-54,59-68,73-76,98,119-120H,11,20-21,25-26,28-34,36-43,96H2,1-10H3,(H2,97,122)(H,99,127)(H,100,128)(H,101,133)(H,102,123)(H,103,124)(H,104,131)(H,105,125)(H,106,134)(H,107,139)(H,108,137)(H,109,135)(H,110,140)(H,111,136)(H,112,132)(H,113,130)(H,114,126)(H,115,129)(H,116,138)(H,143,144)/t45-,46-,47-,48-,51+,53?,54+,59-,60-,61-,62-,63+,64-,65-,66-,67-,68-,73-,74-,75+,76+/m0/s1
+  standard_inchi_key: NFKAZFDQELSTCL-ZOSKEMBGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002316
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA025668
+producer_organisms:
+- taxon_id: NCBITaxon:418759
+  taxon_label: Saccharopolyspora cebuensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002316
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:30843641
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002316 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002316
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:418759
+  organism_label: Saccharopolyspora cebuensis
+  evidence:
+  - reference: PMID:30843641
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002316 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MK423958.1
+  locus_from: 1
+  locus_to: 9987
+  bgc_class:
+  - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002316
+  source_label: cebulantin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c439953997
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

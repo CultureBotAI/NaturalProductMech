@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-57d0ff6d62
+label: virginiafactin A
+chemical_structure:
+  smiles: CCCCCCC[C@@H](O)CC(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CCC(N)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CO)C(=O)N[C@H](C(=O)N[C@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)O)C(C)C
+  standard_inchi: InChI=1S/C53H97N9O13/c1-14-15-16-17-18-19-35(64)27-44(66)55-37(22-29(2)3)47(68)58-38(23-30(4)5)48(69)56-36(20-21-43(54)65)46(67)57-39(24-31(6)7)50(71)61-42(28-63)51(72)62-45(34(12)13)52(73)59-40(25-32(8)9)49(70)60-41(53(74)75)26-33(10)11/h29-42,45,63-64H,14-28H2,1-13H3,(H2,54,65)(H,55,66)(H,56,69)(H,57,67)(H,58,68)(H,59,73)(H,60,70)(H,61,71)(H,62,72)(H,74,75)/t35-,36-,37+,38+,39+,40-,41+,42-,45+/m1/s1
+  standard_inchi_key: BSSWFLXSPXRCKV-LSCJSURTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002071
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA028626
+producer_organisms:
+- taxon_id: NCBITaxon:2056244
+  taxon_label: Pseudomonas sp. QS1027
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002071
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1039/c9sc03633d
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002071 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002071
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2056244
+  organism_label: Pseudomonas sp. QS1027
+  evidence:
+  - reference: DOI:10.1039/c9sc03633d
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002071 entry version 2; citation taken from the entry level
+  genome_accession: genbank:NZ_PHSU01000004.1
+  locus_from: 289715
+  locus_to: 316980
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002071
+  source_label: virginiafactin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-57d0ff6d62
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

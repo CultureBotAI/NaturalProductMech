@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-5f38ad57e1
+label: 4-methyl-5-dimethyltetradecahexaene-β-ketolactone
+chemical_structure:
+  smiles: C[C@H]([C@@H](/C=C/C=C/C=C/C=C/C(C)=C/C(C)=C/CC)OC(C1)=O)C1=O
+  standard_inchi: InChI=1S/C22H28O3/c1-5-12-17(2)15-18(3)13-10-8-6-7-9-11-14-21-19(4)20(23)16-22(24)25-21/h6-15,19,21H,5,16H2,1-4H3/b8-6+,9-7+,13-10+,14-11+,17-12+,18-15+/t19-,21+/m0/s1
+  standard_inchi_key: XPYSRNGUWNSNNE-YDMXPHLBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002170
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1549217
+  taxon_label: Aspergillus stellatus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002170
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:31678008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002170 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002170
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1549217
+  organism_label: Aspergillus stellatus
+  evidence:
+  - reference: PMID:31678008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002170 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LC492132.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002170
+  source_label: 4-methyl-5-dimethyltetradecahexaene-β-ketolactone
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-5f38ad57e1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

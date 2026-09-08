@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-0df9990607
+label: violacein
+chemical_structure:
+  smiles: C1=CC=C2C(=C1)/C(=C\3/C=C(NC3=O)C4=CNC5=C4C=C(C=C5)O)/C(=O)N2
+  standard_inchi: InChI=1S/C20H13N3O3/c24-10-5-6-15-12(7-10)14(9-21-15)17-8-13(19(25)23-17)18-11-3-1-2-4-16(11)22-20(18)26/h1-9,21,24H,(H,22,26)(H,23,25)/b18-13+
+  standard_inchi_key: XAPNKXIRQFHCHN-QGOAFFKASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000831
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Simple indole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:9928039
+producer_organisms:
+- taxon_id: NCBITaxon:445969
+  taxon_label: Duganella sp. B2
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000831
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22391969
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000831 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000831
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:445969
+  organism_label: Duganella sp. B2
+  evidence:
+  - reference: PMID:22391969
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000831 entry version 3; citation taken from the entry level
+  genome_accession: genbank:GQ266676.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000831
+  source_label: violacein
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0df9990607
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

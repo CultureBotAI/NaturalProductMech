@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-b3104e0af7
+label: cyclizidine
+chemical_structure:
+  smiles: '[H][C@]12[C@@H]3O[C@@H]3CCN1[C@@H](\C=C(/C)\C=C\C1CC1)[C@H](O)[C@@]2(C)O'
+  standard_inchi: InChI=1S/C17H25NO3/c1-10(3-4-11-5-6-11)9-12-16(19)17(2,20)15-14-13(21-14)7-8-18(12)15/h3-4,9,11-16,19-20H,5-8H2,1-2H3/b4-3+,10-9+/t12-,13+,14+,15+,16-,17-/m0/s1
+  standard_inchi_key: WGALLPIJABPILU-MUUXAGPVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001293
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Lysine alkaloids
+  class_results:
+  - Indolizidine alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA06699
+- pubchem:101788223
+producer_organisms:
+- taxon_id: NCBITaxon:1756463
+  taxon_label: Streptomyces sp. NCIB 11649
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001293
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26473429
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001293 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001293
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1756463
+  organism_label: Streptomyces sp. NCIB 11649
+  evidence:
+  - reference: PMID:26473429
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001293 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KT327068.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001293
+  source_label: cyclizidine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b3104e0af7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

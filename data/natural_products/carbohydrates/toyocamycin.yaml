@@ -1,0 +1,134 @@
+identifier: naturalproductmech:mibig-2fa3d96924
+label: toyocamycin
+chemical_structure:
+  smiles: NC1=NC=NC2=C1C(=CN2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O)C#N
+  standard_inchi: InChI=1S/C12H13N5O4/c13-1-5-2-17(11-7(5)10(14)15-4-16-11)12-9(20)8(19)6(3-18)21-12/h2,4,6,8-9,12,18-20H,3H2,(H2,14,15,16)/t6-,8-,9-,12-/m1/s1
+  standard_inchi_key: XOKJUSAYZUAMGJ-WOUKDFQISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000879
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Purine nucleos(t)ides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA06347
+- pubchem:11824
+producer_organisms:
+- taxon_id: NCBITaxon:1927
+  taxon_label: Streptomyces rimosus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000879
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18721750
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000879 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:387850
+  taxon_label: Streptomyces ahygroscopicus subsp. wuzhouensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000881
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28342817
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000881 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:42236
+  taxon_label: Streptomyces diastatochromogenes
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001808
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:26790416
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001808 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000879
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1927
+  organism_label: Streptomyces rimosus
+  evidence:
+  - reference: PMID:18721750
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000879 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EU573979.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000881
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:387850
+  organism_label: Streptomyces ahygroscopicus subsp. wuzhouensis
+  evidence:
+  - reference: PMID:28342817
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000881 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JX576291.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001808
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:42236
+  organism_label: Streptomyces diastatochromogenes
+  evidence:
+  - reference: PMID:26790416
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001808 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY022432.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000879
+  source_label: toyocamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2fa3d96924
+- source: MIBIG
+  source_id: BGC0000881
+  source_label: toyocamycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-94e6a705ad
+- source: MIBIG
+  source_id: BGC0001808
+  source_label: toyocamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6b0622fbc7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000879, BGC0000881,
+    BGC0001808. Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

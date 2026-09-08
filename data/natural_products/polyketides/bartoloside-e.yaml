@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-0072dccd44
+label: bartoloside E
+chemical_structure:
+  smiles: CCCCCCC(CCCCCC1=C(C=C(C=C1O[C@H]2[C@@H]([C@H]([C@@H](CO2)O)O)O)CCCCCCC(CCCC)Cl)O)Cl
+  standard_inchi: InChI=1S/C34H58Cl2O6/c1-3-5-7-12-18-27(36)20-14-10-15-21-28-29(37)22-25(16-11-8-9-13-19-26(35)17-6-4-2)23-31(28)42-34-33(40)32(39)30(38)24-41-34/h22-23,26-27,30,32-34,37-40H,3-21,24H2,1-2H3/t26?,27?,30-,32+,33-,34+/m1/s1
+  standard_inchi_key: NYUHMGANIQYFOK-ANHKVXBOSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001526
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Alkylresorcinols
+  class_results:
+  - Dialkylresorcinols
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:132582908
+producer_organisms:
+- taxon_id: NCBITaxon:945781
+  taxon_label: Synechocystis salina LEGE 06099
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001526
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27680198
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001526 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001526
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:945781
+  organism_label: Synechocystis salina LEGE 06099
+  evidence:
+  - reference: PMID:27680198
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001526 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX083339.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001526
+  source_label: bartoloside E
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-0072dccd44
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

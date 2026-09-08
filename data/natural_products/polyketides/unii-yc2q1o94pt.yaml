@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-6c2ad799cb
+label: UNII-YC2Q1O94PT
+chemical_structure:
+  smiles: C/C=C(\C)/[C@H]([C@@H](C)/C=C/[C@H]([C@@H](C)[C@H](C[C@@H]1CC(=CC(=O)O1)O)O)O)O
+  standard_inchi: InChI=1S/C19H30O6/c1-5-11(2)19(24)12(3)6-7-16(21)13(4)17(22)10-15-8-14(20)9-18(23)25-15/h5-7,9,12-13,15-17,19-22,24H,8,10H2,1-4H3/b7-6+,11-5+/t12-,13+,15-,16+,17-,19+/m0/s1
+  standard_inchi_key: DPLVZZAZGYXULT-FQOZNQACSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001252
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:54720478
+producer_organisms:
+- taxon_id: NCBITaxon:5599
+  taxon_label: Alternaria alternata
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001252
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:22835272
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001252 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001252
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5599
+  organism_label: Alternaria alternata
+  evidence:
+  - reference: PMID:22835272
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001252 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AB725683.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001252
+  source_label: UNII-YC2Q1O94PT
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-6c2ad799cb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

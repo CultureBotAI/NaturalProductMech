@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-4d7de6b1ef
+label: duramycin
+chemical_structure:
+  smiles: C[C@@H]1[C@H]2C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H]3CSC[C@H]4C(=O)N[C@@H](CS1)C(=O)N[C@@H](CNCCCC[C@H](NC(=O)[C@H]([C@H](SC[C@@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N4)CCC(=O)N)CCCCN)N)C)NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H](NC3=O)[C@H](C(=O)O)O)CC(=O)N)C(=O)O)C(=O)N[C@H](C(=O)NCC(=O)N5CCC[C@H]5C(=O)N[C@H](C(=O)N2)CC6=CC=CC=C6)CC7=CC=CC=C7)C(C)C)CC8=CC=CC=C8
+  standard_inchi: InChI=1S/C89H125N23O25S3/c1-44(2)67-85(131)107-60-42-138-41-59-80(126)106-61-43-140-46(4)69(87(133)103-56(76(122)108-67)35-49-23-12-7-13-24-49)109-77(123)55(34-48-21-10-6-11-22-48)102-83(129)62-27-18-32-112(62)66(116)39-96-73(119)54(33-47-19-8-5-9-20-47)101-79(125)58(104-81(61)127)37-94-31-17-15-26-53(88(134)135)100-86(132)68(110-78(124)57(36-64(93)114)97-65(115)38-95-84(130)70(111-82(60)128)71(117)89(136)137)45(3)139-40-50(91)72(118)98-51(25-14-16-30-90)74(120)99-52(75(121)105-59)28-29-63(92)113/h5-13,19-24,44-46,50-62,67-71,94,117H,14-18,25-43,90-91H2,1-4H3,(H2,92,113)(H2,93,114)(H,95,130)(H,96,119)(H,97,115)(H,98,118)(H,99,120)(H,100,132)(H,101,125)(H,102,129)(H,103,133)(H,104,127)(H,105,121)(H,106,126)(H,107,131)(H,108,122)(H,109,123)(H,110,124)(H,111,128)(H,134,135)(H,136,137)/t45-,46-,50+,51+,52+,53+,54+,55+,56+,57+,58+,59+,60+,61+,62+,67+,68+,69+,70+,71-/m1/s1
+  standard_inchi_key: SFWLDKQAUHFCBS-VCQIQPCESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001579
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:53446
+  taxon_label: Streptomyces cinnamoneus
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0001579
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression|Gene expression
+    correlated with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:27864176
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001579 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001579
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:53446
+  organism_label: Streptomyces cinnamoneus
+  evidence:
+  - reference: PMID:27864176
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001579 entry version 4; citation taken from the entry level
+  genome_accession: genbank:NZ_MOEP01000024.1
+  locus_from: 85466
+  locus_to: 94303
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001579
+  source_label: duramycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-4d7de6b1ef
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

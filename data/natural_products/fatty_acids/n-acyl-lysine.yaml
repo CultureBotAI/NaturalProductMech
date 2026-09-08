@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-215067038f
+label: N-acyl lysine
+chemical_structure:
+  smiles: OCC(CCC[NH3+])NC(CC(O)CCCCCCCCCCCCC)=O
+  standard_inchi: InChI=1S/C21H44N2O3/c1-2-3-4-5-6-7-8-9-10-11-12-15-20(25)17-21(26)23-19(18-24)14-13-16-22/h19-20,24-25H,2-18,22H2,1H3,(H,23,26)/p+1
+  standard_inchi_key: JSAUIHANVAFONR-UHFFFAOYSA-O
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001682
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Sphingolipids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:557722
+  taxon_label: Pseudomonas aeruginosa LESB58
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001682
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1038/nature23874
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001682 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001682
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:557722
+  organism_label: Pseudomonas aeruginosa LESB58
+  evidence:
+  - reference: DOI:10.1038/nature23874
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001682 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:FM209186.1
+  locus_from: 5212495
+  locus_to: 5214026
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001682
+  source_label: N-acyl lysine
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-215067038f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-7b65901f3b
+label: agnestadride A
+chemical_structure:
+  smiles: O=C(O1)C(/C=C/CC)=C2C1(O)C(CCC)C(C(OC3=O)=O)=C3CC2
+  standard_inchi: InChI=1S/C18H20O6/c1-3-5-7-10-12-9-8-11-14(17(21)23-15(11)19)13(6-4-2)18(12,22)24-16(10)20/h5,7,13,22H,3-4,6,8-9H2,1-2H3/b7-5+
+  standard_inchi_key: XYCWVVKRGCDXIK-FNORWQNLSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001340
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - Nonadrides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- chebi:215092
+- npatlas:NPA010661
+- pubchem:139586049
+producer_organisms:
+- taxon_id: NCBITaxon:89137
+  taxon_label: Byssochlamys fulva
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001340
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1039/c5cc06988b
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001340 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001340
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:89137
+  organism_label: Byssochlamys fulva
+  evidence:
+  - reference: DOI:10.1039/c5cc06988b
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001340 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KU928136.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001340
+  source_label: agnestadride A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7b65901f3b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

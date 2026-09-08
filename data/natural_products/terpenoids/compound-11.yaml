@@ -1,0 +1,76 @@
+identifier: naturalproductmech:mibig-21c4af6890
+label: compound 11
+chemical_structure:
+  smiles: CC(C#CC1=C(C(O)=CC(C(O)=O)=C1)OC)=C
+  standard_inchi: InChI=1S/C13H12O4/c1-8(2)4-5-9-6-10(13(15)16)7-11(14)12(9)17-3/h6-7,14H,1H2,2-3H3,(H,15,16)
+  standard_inchi_key: XRWGLEWIDBKJHA-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002290
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Miscellaneous meroterpenoids
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1896107
+  taxon_label: Biscogniauxia sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002290
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:32364293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002290 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002290
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1896107
+  organism_label: Biscogniauxia sp.
+  evidence:
+  - reference: PMID:32364293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002290 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT109335.1
+  locus_from: 1
+  locus_to: 37984
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002290
+  source_label: compound 11
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-21c4af6890
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: needs-a-name
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: This record is labelled 'compound 11', which is a label from the cited paper's
+    own numbering rather than a compound name. Resolve a name from the literature
+    or a structure registry.
+curation_history:
+- timestamp: '2026-09-08T05:50:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

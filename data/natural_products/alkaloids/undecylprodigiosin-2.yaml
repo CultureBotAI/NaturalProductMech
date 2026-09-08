@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-fe0589d864
+label: undecylprodigiosin
+chemical_structure:
+  smiles: CCCCCCCCCCCC1=CC=C(N1)C=C2C(=CC(=N2)C3=CC=CN3)OC
+  standard_inchi: InChI=1S/C25H35N3O/c1-3-4-5-6-7-8-9-10-11-13-20-15-16-21(27-20)18-24-25(29-2)19-23(28-24)22-14-12-17-26-22/h12,14-19,26-27H,3-11,13H2,1-2H3
+  standard_inchi_key: HIYSWASSDOXZLC-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002090
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Proline alkaloids
+  class_results:
+  - Prodigiosins
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- pubchem:6438379
+- chembl:CHEMBL83139
+- npatlas:NPA009372
+producer_organisms:
+- taxon_id: NCBITaxon:68213
+  taxon_label: Streptomyces griseoaurantiacus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002090
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:33881506
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002090 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002090
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68213
+  organism_label: Streptomyces griseoaurantiacus
+  evidence:
+  - reference: PMID:33881506
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002090 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JACERG010000004.1
+  locus_from: 255172
+  locus_to: 291481
+  bgc_class:
+  - PKS
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002090
+  source_label: undecylprodigiosin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-fe0589d864
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

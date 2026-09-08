@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-40f7b0ba19
+label: cyanogramide B
+chemical_structure:
+  smiles: CN1C2=CC=CC=C2C2=C1C(=O)N1C(=C2)C(=O)N(CCC2=CC=CC=C2)C1(C)O
+  standard_inchi: InChI=1S/C23H21N3O3/c1-23(29)25(13-12-15-8-4-3-5-9-15)21(27)19-14-17-16-10-6-7-11-18(16)24(2)20(17)22(28)26(19)23/h3-11,14,29H,12-13H2,1-2H3
+  standard_inchi_key: BBYUAJFKLXJSQH-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002347
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA031550
+producer_organisms:
+- taxon_id: NCBITaxon:2893586
+  taxon_label: Actinoalloteichus caeruleus WH1-2216-6
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002347
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:32329169
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002347 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002347
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2893586
+  organism_label: Actinoalloteichus caeruleus WH1-2216-6
+  evidence:
+  - reference: PMID:32329169
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002347 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MK388866.1
+  locus_from: 1
+  locus_to: 15458
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002347
+  source_label: cyanogramide B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-40f7b0ba19
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

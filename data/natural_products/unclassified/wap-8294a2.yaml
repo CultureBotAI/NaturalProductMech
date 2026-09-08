@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-3109c835c4
+label: WAP-8294A2
+chemical_structure:
+  smiles: CC(C)CCCC1CC(=O)NC(CO)C(=O)NC(C(O)C(N)=O)C(=O)NC(CO)C(=O)NCC(=O)N(C)C(CC2=CC=CC=C2)C(=O)NC(CC(C)C)C(=O)NC(CCCN)C(=O)NC(CCC(O)=O)C(=O)NC(CC(N)=O)C(=O)NC(CC2=CNC3=C2C=CC=C3)C(=O)NC(CCCN)C(=O)N(C)C(C(C)C)C(=O)O1
+  standard_inchi: InChI=1S/C73H111N17O21/c1-38(2)17-14-20-43-32-56(94)80-53(37-92)69(106)88-59(61(98)62(77)99)71(108)87-52(36-91)63(100)79-35-57(95)89(7)54(30-41-18-10-9-11-19-41)70(107)86-49(29-39(3)4)66(103)81-46(23-15-27-74)64(101)82-47(25-26-58(96)97)65(102)85-51(33-55(76)93)68(105)84-50(31-42-34-78-45-22-13-12-21-44(42)45)67(104)83-48(24-16-28-75)72(109)90(8)60(40(5)6)73(110)111-43/h9-13,18-19,21-22,34,38-40,43,46-54,59-61,78,91-92,98H,14-17,20,23-33,35-37,74-75H2,1-8H3,(H2,76,93)(H2,77,99)(H,79,100)(H,80,94)(H,81,103)(H,82,101)(H,83,104)(H,84,105)(H,85,102)(H,86,107)(H,87,108)(H,88,106)(H,96,97)
+  standard_inchi_key: LEKBQPKGXGFBAN-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000461
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA018076
+producer_organisms:
+- taxon_id: NCBITaxon:69
+  taxon_label: Lysobacter enzymogenes
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000461
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:21930890
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000461 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000461
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:69
+  organism_label: Lysobacter enzymogenes
+  evidence:
+  - reference: PMID:21930890
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000461 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JN596952.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000461
+  source_label: WAP-8294A2
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3109c835c4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

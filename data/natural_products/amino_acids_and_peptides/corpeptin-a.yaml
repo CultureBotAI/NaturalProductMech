@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-1a7ffa17aa
+label: corpeptin A
+chemical_structure:
+  smiles: CCCCCCCC(CC(=N/C(=C\C)/C(=O)N1CCC[C@H]1C(=N[C@@H](C)C(=N[C@@H](C)C(=N[C@@H](C)C(=N[C@@H](C(C)C)C(=N[C@@H](C(C)C)C(=N/C(=C\C)/C(=N[C@@H](CCO)C(=N[C@@H](C(C)C)C(=N[C@@H]([C@H](C)CC)C(=NC(=C)C(=N[C@@H](C)C(=N[C@@H](C)C(=N[C@@H](C)C(=N[C@@H](C(C)C)C(=N/C(=C\C)/C(=N[C@H]2[C@@H](OC(=O)[C@@H](N=C([C@@H](N=C([C@@H](N=C([C@@H](N=C2O)C)O)CCN)O)CO)O)[C@@H](C)CC)C)O)O)O)O)O)O)O)O)O)O)O)O)O)O)O)O)O)O
+  standard_inchi: InChI=1S/C98H163N23O27/c1-26-32-33-34-35-37-61(124)44-69(125)108-64(31-6)97(146)121-42-36-38-68(121)90(139)105-55(20)80(129)101-54(19)79(128)104-59(24)84(133)115-72(48(11)12)93(142)117-71(47(9)10)92(141)109-62(29-4)85(134)112-66(40-43-122)88(137)116-73(49(13)14)94(143)118-74(50(15)27-2)95(144)106-56(21)81(130)102-52(17)77(126)100-53(18)78(127)103-58(23)83(132)114-70(46(7)8)91(140)110-63(30-5)86(135)120-76-60(25)148-98(147)75(51(16)28-3)119-89(138)67(45-123)113-87(136)65(39-41-99)111-82(131)57(22)107-96(76)145/h29-31,46-55,57-61,65-68,70-76,122-124H,21,26-28,32-45,99H2,1-20,22-25H3,(H,100,126)(H,101,129)(H,102,130)(H,103,127)(H,104,128)(H,105,139)(H,106,144)(H,107,145)(H,108,125)(H,109,141)(H,110,140)(H,111,131)(H,112,134)(H,113,136)(H,114,132)(H,115,133)(H,116,137)(H,117,142)(H,118,143)(H,119,138)(H,120,135)/b62-29-,63-30-,64-31-/t50-,51+,52+,53+,54+,55+,57+,58+,59+,60+,61?,65+,66+,67+,68+,70+,71+,72+,73+,74+,75+,76+/m1/s1
+  standard_inchi_key: FKHKGFPKDCFJTR-OLOWBZJQSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000329
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:102439469
+producer_organisms:
+- taxon_id: NCBITaxon:47879
+  taxon_label: Pseudomonas corrugata
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000329
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:25231335
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000329 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000329
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:47879
+  organism_label: Pseudomonas corrugata
+  evidence:
+  - reference: PMID:25231335
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000329 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF192265.2
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000329
+  source_label: corpeptin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1a7ffa17aa
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

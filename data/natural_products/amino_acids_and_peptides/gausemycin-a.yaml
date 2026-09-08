@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-2d2c52b5a4
+label: gausemycin A
+chemical_structure:
+  smiles: CC(C)/C=C/C=C\C(=O)NCCC(=O)N[C@H](CCCN)C(=O)NC(CC(O)C1=CC=CC=C1)C(=O)NC(C(=O)N[C@@H](CC1=CC=C(O[C@@H]2OC[C@H](O)[C@H](O)[C@H]2O)C=C1)C(=O)NC1C(=O)N[C@H](CC(C)C)C(=O)N[C@@H](CC(=O)O)C(=O)NCC(=O)N[C@@H](CO)C(=O)NCC(=O)N[C@@H](CC(=O)C2=C(N)C=C(Cl)C=C2)C(=O)N[C@@H](C)C(=O)N2CCC[C@H]2C(=O)NC1C)C(O)CC(=O)O
+  standard_inchi: InChI=1S/C84H116ClN17O28/c1-41(2)14-10-11-19-63(108)88-28-26-64(109)93-51(17-12-27-86)75(120)96-55(33-59(104)46-15-8-7-9-16-46)79(124)101-70(61(106)36-68(114)115)82(127)99-53(31-45-20-23-48(24-21-45)130-84-72(117)71(116)62(107)40-129-84)78(123)100-69-43(5)91-80(125)58-18-13-29-102(58)83(128)44(6)92-76(121)54(34-60(105)49-25-22-47(85)32-50(49)87)94-65(110)37-90-74(119)57(39-103)95-66(111)38-89-73(118)56(35-67(112)113)97-77(122)52(30-42(3)4)98-81(69)126/h7-11,14-16,19-25,32,41-44,51-59,61-62,69-72,84,103-104,106-107,116-117H,12-13,17-18,26-31,33-40,86-87H2,1-6H3,(H,88,108)(H,89,118)(H,90,119)(H,91,125)(H,92,121)(H,93,109)(H,94,110)(H,95,111)(H,96,120)(H,97,122)(H,98,126)(H,99,127)(H,100,123)(H,101,124)(H,112,113)(H,114,115)/b14-10+,19-11-/t43?,44-,51+,52+,53-,54-,55?,56-,57-,58-,59?,61?,62-,69?,70?,71-,72+,84-/m0/s1
+  standard_inchi_key: PMTCHUARAZYWIB-ORKFZHLJSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002430
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- SACCHARIDE
+xrefs:
+- npatlas:NPA033084
+producer_organisms:
+- taxon_id: NCBITaxon:1967
+  taxon_label: Streptomyces kanamyceticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002430
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:34009717
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002430 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002430
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1967
+  organism_label: Streptomyces kanamyceticus
+  evidence:
+  - reference: PMID:34009717
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002430 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MZ394730.1
+  bgc_class:
+  - NRPS
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002430
+  source_label: gausemycin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-2d2c52b5a4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-e98184abd8
+label: cichofactin A
+chemical_structure:
+  smiles: O=C(N[C@@H](CC(C)C)C(N[C@@H](CC(C)C)C(N[C@@H](CCC(N)=O)C(N[C@@H](CC(C)C)C(N[C@@H](CCC(N)=O)C(N[C@@H](C(C)C)C(N[C@@H](CC(C)C)C(N[C@@H](CC(C)C)C(O)=O)=O)=O)=O)=O)=O)=O)=O)[C@H](CC1=CNC=N1)NC(CC(O)CCCCCCC)=O
+  standard_inchi: InChI=1S/C61H107N13O14/c1-14-15-16-17-18-19-40(75)30-51(78)66-47(29-39-31-64-32-65-39)59(85)71-45(26-35(6)7)57(83)70-44(25-34(4)5)56(82)67-41(20-22-49(62)76)53(79)69-43(24-33(2)3)55(81)68-42(21-23-50(63)77)54(80)74-52(38(12)13)60(86)72-46(27-36(8)9)58(84)73-48(61(87)88)28-37(10)11/h31-38,40-48,52,75H,14-30H2,1-13H3,(H2,62,76)(H2,63,77)(H,64,65)(H,66,78)(H,67,82)(H,68,81)(H,69,79)(H,70,83)(H,71,85)(H,72,86)(H,73,84)(H,74,80)(H,87,88)/t40?,41-,42-,43-,44-,45-,46-,47-,48-,52-/m0/s1
+  standard_inchi_key: FVJBYOXUZWKLDG-FRECFEOCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000323
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:36746
+  taxon_label: Pseudomonas cichorii
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000323
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23405865
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000323 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000323
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:36746
+  organism_label: Pseudomonas cichorii
+  evidence:
+  - reference: PMID:23405865
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000323 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KJ513093.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000323
+  source_label: cichofactin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e98184abd8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T05:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
