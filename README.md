@@ -29,7 +29,7 @@ seeder or corpus yet.
 | [PLAN.md](PLAN.md) | Scope, schema design, the AntibioticMech join, milestones M0–M6 |
 | [CLAUDE.md](CLAUDE.md) | Operational guidance for editing agents, written ahead of the code |
 | [research/2026-09-07-natural-product-data-sources.md](research/2026-09-07-natural-product-data-sources.md) | The verified source landscape, with the three cluster reports beside it |
-| [curation/source_queue.tsv](curation/source_queue.tsv) | 35 candidate sources, ranked, with licence status and the gap each closes |
+| [curation/source_queue.tsv](curation/source_queue.tsv) | 37 candidate sources, ranked, with licence status and the gap each closes |
 | [.claude/skills/](.claude/skills) | Four curation workflows adapted from AntibioticMech |
 
 ## The gap it fills

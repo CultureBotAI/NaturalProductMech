@@ -401,6 +401,20 @@ Two more traps this cluster confirms, both already in the plan's invariants:
   entries carry no units, no assay and no dose. CC0 makes it seedable; the
   evidence rules make most of it unusable as a `BioactivityObservation`.
 
+**The two licence requests worth making.** NPASS is the best structural fit
+for this corpus anywhere in the landscape — natively InChIKey-keyed, with
+1,048,756 activity records including antimicrobial MICs against ESKAPE
+organisms — and it is blocked by nothing except the absence of any licence
+statement. CO-ADD is Wellcome-funded open science running what reads as
+unmodified 2016 university boilerplate. Both are one email, and between them
+they would unblock most of the activity layer. Contacting maintainers is an
+outbound action and needs the owner's authorization.
+
+One practical note on the source that is already open: PubChem BioAssay carries
+no natural-product flag, so the natural-product slice must be *constructed* —
+intersect assay CIDs with the InChIKeys the corpus already holds, then filter by
+depositor. It thickens existing records and cannot introduce them.
+
 NAPRALERT is currently offline, its own site reading "Currently Unavailable".
 
 ## Consequences for the plan
