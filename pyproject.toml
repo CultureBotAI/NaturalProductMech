@@ -1,0 +1,101 @@
+[project]
+name = "naturalproductmech"
+version = "0.1.0"
+description = "Knowledge base of individual natural product chemical structures, harmonized from MIBiG, ChEBI and LOTUS, carrying producer organisms, biosynthetic gene clusters and mechanism"
+authors = [
+    {name = "NaturalProductMech Contributors"}
+]
+readme = "README.md"
+# The PACKAGE is CC0: code, schema, tests, configuration. The record content it
+# builds is CC BY 4.0 — see LICENSE-DATA and ATTRIBUTION.md — because it derives
+# from MIBiG, ChEBI and CyanoMetDB, all CC BY 4.0.
+license = {text = "CC0-1.0"}
+requires-python = ">=3.10"
+keywords = [
+    "natural product",
+    "secondary metabolite",
+    "biosynthetic gene cluster",
+    "producer organism",
+    "biosynthesis",
+    "mibig",
+    "chebi",
+    "lotus",
+    "cheminformatics",
+    "ontology",
+    "knowledge graph",
+    "linkml",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "linkml>=1.10.0",
+    "linkml-runtime>=1.7.0",
+    "pyyaml>=6.0",
+    "click>=8.1.0",
+    "jinja2>=3.1.0",
+    # The vendored id-label correspondence gate resolves CURIEs through OAK.
+    # >=0.7.3 rather than 0.7.2: 0.7.2 declares requires_python <3.14 while this
+    # project claims >=3.10 with no ceiling; 0.7.3 widened it. Matches the fleet.
+    "oaklib>=0.7.3",
+    # oaklib imports eutils, which still imports pkg_resources; setuptools 82
+    # removed it, and uv does not install setuptools unless it is declared.
+    "setuptools<82",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+]
+# Structure handling. MIBiG ships SMILES and never an InChIKey, so the extractor
+# must generate Standard InChIKeys locally with a pinned RDKit — see
+# docs/HARMONIZATION.md. Kept optional so the schema, validation and tests
+# install without it.
+chemistry = [
+    "numpy==2.2.6",
+    "rdkit==2026.3.5",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/naturalproductmech"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+# extend-exclude, not exclude: `exclude` REPLACES ruff's defaults (which cover
+# .venv, .git, build/, ...), so setting it would put the whole virtualenv in
+# scope and drown the repo's own findings in third-party ones.
+extend-exclude = [
+    "src/naturalproductmech/schema/naturalproductmech_dataclasses.py",
+    # claw-governed vendored files: byte-identical to canon, linted there, not
+    # here. Reformatting one would break check_vendored_sync, which is the point
+    # of vendoring them.
+    "scripts/check_vendored_sync.py",
+    "scripts/validate_id_label_correspondence.py",
+    "scripts/chem_formula.py",
+    "scripts/deep_research_contract.py",
+    "tests/test_skill_frontmatter.py",
+    "tests/test_curation_timestamp_schema.py",
+    "tests/test_id_label_empty_adapter.py",
+    "tests/test_id_label_unknown_prefix.py",
+    "tests/test_id_label_plausibility.py",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]

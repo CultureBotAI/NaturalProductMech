@@ -1,0 +1,32 @@
+# Pipeline configuration for NaturalProductMech.
+#
+# SOURCES: this file lists the sources the pipeline actually reads, and
+# scripts/check_source_queue.py requires each to have an ADOPTED row in
+# curation/source_queue.tsv. At M1 the pipeline reads none, so there are none
+# here. The Phase A intent is staged in conf/sources.planned.yaml; adopting a
+# source moves its block into this file in the same PR that adds its extractor,
+# its committed inventory and its ATTRIBUTION.md paragraph.
+
+# ---------------------------------------------------------------------------
+# Scope
+# ---------------------------------------------------------------------------
+
+# Phase A: microbial producers. Filters `producer_organisms`, NOT `occurrences`
+# — the phases are defined by producer, and dropping a cited isolation report
+# because its host is out of phase would discard evidence about a compound the
+# corpus already holds. Phase A therefore contains non-microbial taxa in
+# `occurrences`, which is correct. See PLAN.md 2.4.
+producer_scope:
+  phase: A
+  include_lineages:
+    - NCBITaxon:2        # Bacteria
+    - NCBITaxon:2157     # Archaea
+    - NCBITaxon:4751     # Fungi
+    - NCBITaxon:1117     # Cyanobacteriota
+    - NCBITaxon:2836     # Bacillariophyta
+    - NCBITaxon:3041     # Chlorophyta
+  applies_to: producer_organisms
+
+# A size budget, so widening scope is a recorded decision rather than the side
+# effect of a refresh. `just seed` refuses to exceed it without an explicit flag.
+record_budget: 12000

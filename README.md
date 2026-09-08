@@ -18,11 +18,34 @@ compounds and their mechanisms),
 [dismech](https://github.com/monarch-initiative/dismech): one YAML per entity,
 ontology-grounded, evidence-backed, schema-validated, curated incrementally.
 
-## Status: planning
+## Status: scaffolded, corpus empty
 
-**2026-09-07.** This repository currently holds the plan, the data-source
-research, the seeded source queue and the curation skills. There is no schema,
-seeder or corpus yet.
+**2026-09-07.** The schema, the guarded write path, the gates and the seeder
+skeleton exist and `just qc` is green. The corpus is empty because the
+extractors that produce `data/raw/` are M2. Seeding the first records from
+MIBiG and ChEBI is the next milestone.
+
+<!-- BEGIN GENERATED CORPUS STATS -->
+
+```
+records: 0
+
+The corpus is empty. That is the expected M1 state: the schema, the
+validation path and the gates exist, and M2 seeds the first records
+from MIBiG and ChEBI. See PLAN.md section 7.
+```
+
+<!-- END GENERATED CORPUS STATS -->
+
+```bash
+just install        # uv sync --extra dev
+just qc             # every local and CI quality gate
+just seed           # dry run: what would be written, per pathway
+just report         # corpus, grounding and origin-evidence coverage
+just source-queue   # the ranked data-source queue
+```
+
+Nothing above touches the network.
 
 | Document | What it is |
 |---|---|
@@ -31,6 +54,8 @@ seeder or corpus yet.
 | [research/2026-09-07-natural-product-data-sources.md](research/2026-09-07-natural-product-data-sources.md) | The verified source landscape, with the three cluster reports beside it |
 | [curation/source_queue.tsv](curation/source_queue.tsv) | 37 candidate sources, ranked, with licence status and the gap each closes |
 | [.claude/skills/](.claude/skills) | Four curation workflows adapted from AntibioticMech |
+| [src/naturalproductmech/schema/](src/naturalproductmech/schema) | The LinkML schema, closed-validated |
+| [conf/](conf) | Scope, the producer-evidence grading, and the sources staged for M2 |
 
 ## The gap it fills
 

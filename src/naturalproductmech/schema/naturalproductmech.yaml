@@ -1,0 +1,1020 @@
+id: https://w3id.org/kg-microbe/naturalproductmech
+name: naturalproductmech
+title: NaturalProductMech - Natural Product Structure Schema
+description: |
+  LinkML schema for individual natural product chemical structures.
+
+  One NaturalProductRecord is ONE chemical structure — a compound with a defined
+  connectivity (Standard InChIKey), not a compound class and not a preparation.
+  "Indole alkaloid" is a classification and appears as `np_pathway` /
+  `compound_classes` on the records it covers; strychnine is a record. An
+  extract, fraction, essential oil or herbal preparation is never a record:
+  activity measured on a mixture is not evidence about any constituent of it.
+
+  A compound is admitted by an ASSERTED ORIGIN — a biosynthetic gene cluster, a
+  cited occurrence in a taxon, or an allow-listed ChEBI specialized-metabolite
+  role — never by a computed natural-product likeness or a structural
+  resemblance to a known class.
+
+  The distinction this schema exists to keep is between `producer_organisms`
+  (this taxon biosynthesizes the compound, with biosynthesis-grade evidence) and
+  `occurrences` (this compound was detected in or isolated from this taxon, with
+  a citation). A compound isolated from a sponge may be made by its bacterial
+  symbiont. The seeder never promotes one field to the other.
+
+  Records are harmonized from MIBiG (producers, gene clusters, cluster class),
+  ChEBI (identity, structures, specialized-metabolite roles), LOTUS via Wikidata
+  (cited occurrences) and PubChem (structures), with the filing classification
+  computed by NPClassifier. See docs/HARMONIZATION.md.
+
+  Follows the curation pattern of AntibioticMech, TraitMech, CultureMech,
+  MediaIngredientMech, CommunityMech, HabitatMech, CellStructureMech and
+  ProteinTraitsMech: one YAML per entity, ontology-grounded, evidence-backed,
+  closed-schema validated, reproducible from committed inputs.
+
+license: https://creativecommons.org/publicdomain/zero/1.0/
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  naturalproductmech: https://w3id.org/kg-microbe/naturalproductmech/
+  biolink: https://w3id.org/biolink/vocab/
+  CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+  GO: http://purl.obolibrary.org/obo/GO_
+  PATO: http://purl.obolibrary.org/obo/PATO_
+  NCIT: http://purl.obolibrary.org/obo/NCIT_
+  RO: http://purl.obolibrary.org/obo/RO_
+  IAO: http://purl.obolibrary.org/obo/IAO_
+  NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
+  ENVO: http://purl.obolibrary.org/obo/ENVO_
+  # Chemistry, natural product and drug registries
+  pubchem.compound: https://pubchem.ncbi.nlm.nih.gov/compound/
+  CHEMBL.COMPOUND: https://www.ebi.ac.uk/chembl/compound_report_card/
+  cas: https://commonchemistry.cas.org/detail?cas_rn=
+  KEGG: https://www.kegg.jp/entry/
+  unii: https://precision.fda.gov/uniisearch/srs/unii/
+  inchikey: https://www.chemspider.com/inchikey/
+  npatlas: https://www.npatlas.org/explore/compounds/
+  coconut: https://coconut.naturalproducts.net/compounds/
+  wikidata: http://www.wikidata.org/entity/
+  # Biosynthesis
+  mibig: https://mibig.secondarymetabolites.org/repository/
+  RHEA: https://www.rhea-db.org/rhea/
+  EC: https://enzyme.expasy.org/EC/
+  genbank: https://www.ncbi.nlm.nih.gov/nuccore/
+  # Protein families / complexes for mechanism nodes
+  InterPro: https://www.ebi.ac.uk/interpro/entry/InterPro/
+  ComplexPortal: https://www.ebi.ac.uk/complexportal/complex/
+  UniProtKB: https://www.uniprot.org/uniprotkb/
+  PDB: https://www.rcsb.org/structure/
+  # Sibling Mech corpora, for cross-corpus links
+  antibioticmech: https://w3id.org/kg-microbe/antibioticmech/
+  # Provenance
+  PMID: http://www.ncbi.nlm.nih.gov/pubmed/
+  DOI: https://doi.org/
+  dcterms: http://purl.org/dc/terms/
+  oboInOwl: http://www.geneontology.org/formats/oboInOwl#
+  skos: http://www.w3.org/2004/02/skos/core#
+
+default_prefix: naturalproductmech
+default_range: string
+
+imports:
+  - linkml:types
+  # Shared, byte-identical Mech module: Discussion (knowledge gaps) + Dataset.
+  # Vendored + sha-pinned across the Mech repos — see culturebotai-claw#7.
+  - mech_shared
+
+types:
+  curie:
+    typeof: string
+    uri: xsd:string
+    description: A compact URI (prefix:local), e.g. CHEBI:42355.
+    pattern: "^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$"
+
+# ================================================================
+# ROOT CLASS — one YAML file per NaturalProductRecord
+# ================================================================
+
+classes:
+
+  NaturalProductRecord:
+    description: >-
+      One natural product chemical structure, keyed by its Standard InChIKey and
+      grounded in a ChEBI CURIE where one exists. Carries identity, structure,
+      who makes it, where it has been found, how it is made, what it does, and
+      the evidence for each.
+    tree_root: true
+    attributes:
+
+      # ---- identity -------------------------------------------------
+      identifier:
+        description: >-
+          A ChEBI CURIE where ChEBI supplies the exact default structure,
+          otherwise a content-hashed naturalproductmech: CURIE minted from
+          (source, source_id). Never minted from a label, which can change
+          upstream without the compound changing.
+        range: curie
+        required: true
+        identifier: true
+      label:
+        description: Preferred compound name.
+        required: true
+      definition:
+        description: Textual definition, normally the grounding source's own.
+      definition_source:
+        description: Where the definition came from, e.g. CHEBI:42355.
+        range: curie
+      synonyms:
+        range: CompoundSynonym
+        multivalued: true
+        inlined_as_list: true
+      parent_compounds:
+        description: >-
+          Strictly BROADER compounds or classes. A salt, stereoisomer,
+          glycoside, conjugate or semisynthetic derivative is a different
+          record, not a parent — see `congener_of` and `derivatives`.
+        range: curie
+        multivalued: true
+      congener_of:
+        description: >-
+          A sibling record: a congener from the same family that is a different
+          structure, such as erythromycin B beside erythromycin A. Not a parent
+          and not an equivalence.
+        range: curie
+        multivalued: true
+      derivatives:
+        description: >-
+          Records that are semisynthetic or synthetic modifications of this
+          structure. The derivative is only in this corpus when it has its own
+          asserted origin.
+        range: curie
+        multivalued: true
+      xrefs:
+        description: >-
+          Identifiers denoting THE SAME structure in another resource. An xref
+          that denotes a class, a salt or a different stereoisomer is wrong.
+        range: curie
+        multivalued: true
+      related_records:
+        description: >-
+          Links to the same structure in a sibling Mech corpus. Computed by the
+          seeder from a pinned InChIKey inventory, never hand-added.
+        range: CrossCorpusLink
+        multivalued: true
+        inlined_as_list: true
+
+      # ---- structure ------------------------------------------------
+      chemical_structure:
+        description: >-
+          The structure this record IS. Required: without a Standard InChIKey
+          there is nothing to assert identity on.
+        range: ChemicalStructure
+        required: true
+
+      # ---- classification -------------------------------------------
+      np_pathway:
+        description: >-
+          The FILING decision: which directory the record lives in and which row
+          of the report it lands on. NPClassifier's pathway, which is COMPUTED
+          from the structure — see `np_classification` for the model version
+          that produced it. Chosen as the filing axis because every record has a
+          structure and most will never have a gene cluster. A multi-label or
+          empty classifier result files UNCLASSIFIED and queues the record; it
+          never resolves to a winner by accident.
+        range: NPPathwayEnum
+        required: true
+      np_classification:
+        description: >-
+          The full computed classification and the model that produced it.
+          Computed is never presented as asserted.
+        range: ComputedClassification
+      bgc_class:
+        description: >-
+          The biosynthetic class of the GENE CLUSTER, as MIBiG asserts it. A
+          different claim from the class of the molecule: MIBiG 4.0 separated
+          the two deliberately and removed `alkaloid` as a biosynthetic class.
+          Present only where a gene cluster is known.
+        range: BGCClassEnum
+        multivalued: true
+      bgc_subclass:
+        description: MIBiG's subclass string, e.g. "Type I", "RiPP", "Iterative type I".
+        multivalued: true
+      compound_classes:
+        description: >-
+          Molecule-level classes a SOURCE asserts, such as MIBiG's Dewick-based
+          compound ontology. Unreduced: the filing decision never erases these.
+        multivalued: true
+      structural_class:
+        description: A structural family name where a source asserts one.
+      ecological_roles:
+        description: >-
+          What the compound does for its producer, from ChEBI's role hierarchy:
+          siderophore, mycotoxin, phytotoxin, pigment, quorum sensing signal.
+          These are the roles that admit a compound to the corpus.
+        range: curie
+        multivalued: true
+
+      # ---- origin: who makes it, and where it has been found ---------
+      biosynthesis_origin:
+        description: >-
+          NATURAL_PRODUCT by construction for a record admitted on its own
+          origin. The field exists so a semisynthetic derivative admitted
+          beside its natural parent can say what it is.
+        range: BiosynthesisOriginEnum
+      producer_organisms:
+        description: >-
+          Taxa that BIOSYNTHESIZE this compound. Requires biosynthesis-grade
+          evidence — see ProducerEvidenceBasisEnum. "Isolated from" is an
+          occurrence, not a producer claim, and the seeder never promotes one.
+        range: ProducerOrganism
+        multivalued: true
+        inlined_as_list: true
+      occurrences:
+        description: >-
+          Taxa this compound has been detected in or isolated from, each with a
+          citation. An occurrence may reflect biosynthesis, symbiosis, diet,
+          uptake, contamination or a degradation product; it does not by itself
+          say which.
+        range: Occurrence
+        multivalued: true
+        inlined_as_list: true
+      biosynthetic_gene_clusters:
+        description: The characterized gene clusters that make this compound.
+        range: BiosyntheticGeneCluster
+        multivalued: true
+        inlined_as_list: true
+      biosynthetic_pathway:
+        description: >-
+          Ordered enzymatic steps from precursor to product. Curated; each step
+          carries its own evidence.
+        range: PathwayStep
+        multivalued: true
+        inlined_as_list: true
+
+      # ---- activity --------------------------------------------------
+      bioactivity_summary:
+        description: >-
+          Coarse activity classes this compound is known for. DERIVED, and it
+          never floats: every value must be backed by a `bioactivities` item, a
+          `molecular_targets` item whose target implies the class, a
+          `related_records` link to a sibling corpus carrying the mechanism, or
+          a cited source assertion. See docs/CURATION.md.
+        range: BioactivityClassEnum
+        multivalued: true
+      bioactivities:
+        description: >-
+          Measured activity observations. A value without units and method is
+          not a measurement, and an activity measured on an extract is not an
+          observation about this compound.
+        range: BioactivityObservation
+        multivalued: true
+        inlined_as_list: true
+      molecular_targets:
+        description: >-
+          Molecular targets with claim-level evidence. Antimicrobial targets of
+          a compound that has an AntibioticMech record are curated there; this
+          corpus links rather than duplicates.
+        range: MolecularTarget
+        multivalued: true
+        inlined_as_list: true
+      clinical_status:
+        range: ClinicalStatusEnum
+      clinical_status_assertions:
+        range: ClinicalStatusAssertion
+        multivalued: true
+        inlined_as_list: true
+
+      # ---- provenance, curation, mechanism ---------------------------
+      source_concepts:
+        description: >-
+          Every upstream concept that resolved to this record. This is the
+          machine-readable attribution that makes a corpus subset traceable to
+          exactly the sources it depends on.
+        range: SourceConcept
+        multivalued: true
+        inlined_as_list: true
+        required: true
+      grounding_status:
+        range: GroundingStatusEnum
+        required: true
+      grounding_notes:
+        description: Why this identity was chosen, when that needs saying.
+      evidence:
+        description: >-
+          Record-level evidence. Optional, because identity and classification
+          inherit provenance from the source concepts. It never satisfies the
+          claim-level evidence that producers, occurrences, gene clusters,
+          bioactivities, targets, pathway steps and causal edges each require.
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+      causal_graphs:
+        description: >-
+          Evidence-backed mechanism graphs, scoped BIOSYNTHESIS (precursor to
+          product through enzyme steps) or BIOACTIVITY (compound to target
+          engagement to cellular effect). Every edge carries its own evidence.
+        range: CausalGraph
+        multivalued: true
+        inlined_as_list: true
+      curation_status:
+        range: CurationStatusEnum
+        required: true
+      curation_history:
+        range: CurationEvent
+        multivalued: true
+        inlined_as_list: true
+      discussions:
+        description: >-
+          Concrete unresolved questions: which organism in a host-symbiont pair
+          is the producer, which congener a paper isolated, a stereochemical
+          revision. Not a placeholder for every empty field.
+        range: Discussion
+        multivalued: true
+        inlined_as_list: true
+      datasets:
+        range: Dataset
+        multivalued: true
+        inlined_as_list: true
+
+  # ================================================================
+  # STRUCTURE AND IDENTITY
+  # ================================================================
+
+  ChemicalStructure:
+    description: >-
+      The structure the record denotes. The Standard InChIKey is the identity
+      check and the merge key.
+    attributes:
+      smiles:
+        description: The structure source's own SMILES, preserved rather than re-canonicalized.
+      standard_inchi:
+      standard_inchi_key:
+        description: >-
+          Standard InChIKey. Required. Known limits, which bite hardest on
+          exactly this chemistry: it does not recognise some tautomer pairs as
+          the same compound, cannot express cis/trans in organometallics, and
+          does not support relative stereochemistry. A collision is not proof of
+          sameness, and an absence of collision is not proof of difference.
+        required: true
+        pattern: "^[A-Z]{14}-[A-Z]{10}-[A-Z]$"
+      molecular_formula:
+      net_charge:
+        range: integer
+      monoisotopic_mass:
+        range: float
+      average_mass:
+        range: float
+      stereo_complete:
+        description: >-
+          False when the structure carries undefined stereocentres. Recorded
+          rather than hidden: a fully specified structure whose stereochemistry
+          the source never determined is a fabrication.
+        range: boolean
+      structure_source:
+        description: Which source supplied this structure, e.g. CHEBI, MIBIG, PUBCHEM.
+        range: SourceEnum
+      structure_source_id:
+        range: curie
+      retrieved_on:
+        range: date
+
+  ComputedClassification:
+    description: >-
+      A classification computed from the structure by a named tool at a named
+      version. Never a source assertion, and never a reason to admit a record.
+    attributes:
+      tool:
+        description: e.g. NPClassifier.
+        required: true
+      tool_version:
+        description: >-
+          The model or release identifier. Required: a computed value whose
+          producer is unknown cannot be reproduced or superseded.
+        required: true
+      pathway_results:
+        description: >-
+          Every pathway the classifier returned. More than one is a legitimate
+          result for glycosylated and hybrid compounds, and all are kept even
+          though `np_pathway` files the record under one value or UNCLASSIFIED.
+        multivalued: true
+      superclass_results:
+        multivalued: true
+      class_results:
+        multivalued: true
+      is_glycoside:
+        range: boolean
+      computed_on:
+        range: date
+
+  CompoundSynonym:
+    attributes:
+      value:
+        required: true
+      synonym_type:
+        range: SynonymTypeEnum
+      source:
+        range: curie
+
+  SourceConcept:
+    description: >-
+      One upstream concept that resolved to this record. Carries the source's
+      own identifier and label so attribution is per-record and machine-readable.
+    attributes:
+      source:
+        range: SourceEnum
+        required: true
+      source_id:
+        description: The native identifier, e.g. CHEBI:42355, BGC0000055, Q422383.
+        required: true
+      source_label:
+        required: true
+      source_version:
+        description: The release this concept was read from.
+      minted_identifier:
+        description: >-
+          Content-hashed CURIE for (source, source_id). Stable across upstream
+          label changes, and the key `curation/decisions.tsv` rows are written
+          against.
+        range: curie
+        required: true
+
+  CrossCorpusLink:
+    description: A link to the same structure in a sibling Mech corpus.
+    attributes:
+      corpus:
+        description: e.g. AntibioticMech.
+        required: true
+      identifier:
+        range: curie
+        required: true
+      relation:
+        range: CrossCorpusRelationEnum
+        required: true
+      basis:
+        description: >-
+          How the link was established. SAME_INCHIKEY is the only basis the
+          seeder computes; anything else needs saying.
+        required: true
+      source_version:
+        description: The pinned commit or release of the sibling corpus.
+
+  # ================================================================
+  # ORIGIN
+  # ================================================================
+
+  ProducerOrganism:
+    description: >-
+      A taxon that biosynthesizes this compound. Every item requires evidence
+      that shows BIOSYNTHESIS, not mere presence.
+    attributes:
+      taxon_id:
+        description: NCBITaxon CURIE.
+        range: curie
+        required: true
+      taxon_label:
+        required: true
+      strain:
+        description: >-
+          The strain the source reports. A species-level claim generalized from
+          one strain should say so in `notes`.
+      evidence_basis:
+        description: What kind of evidence supports the production claim.
+        range: ProducerEvidenceBasisEnum
+        required: true
+      biosynthetic_gene_cluster:
+        description: MIBiG accession, when the claim rests on a cluster.
+        range: curie
+      source:
+        range: SourceEnum
+      source_version:
+      notes:
+      evidence:
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        required: true
+
+  Occurrence:
+    description: >-
+      A report that this compound was detected in or isolated from a taxon.
+      Weaker than a producer claim by construction, and never promoted to one
+      by the seeder.
+    attributes:
+      taxon_id:
+        range: curie
+        required: true
+      taxon_label:
+        required: true
+      taxon_source:
+        description: Which taxonomy the identifier came from, e.g. NCBITaxon, GBIF, OTT.
+      detection_context:
+        description: >-
+          What was actually sampled — an axenic culture, a plant tissue, a
+          holobiont, an environmental sample. The host-versus-symbiont question
+          lives here.
+      source:
+        range: SourceEnum
+      source_version:
+      notes:
+      evidence:
+        description: The isolation or detection report. Required.
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        required: true
+
+  BiosyntheticGeneCluster:
+    description: A characterized gene cluster that produces this compound.
+    attributes:
+      accession:
+        description: MIBiG accession, e.g. mibig:BGC0000055.
+        range: curie
+        required: true
+      entry_version:
+        description: The MIBiG entry version, so a later re-curation is visible as a change.
+      entry_status:
+        description: >-
+          MIBiG's own status. Only active entries are seeded; the release dump
+          also ships retired and pending ones.
+      organism_taxon_id:
+        range: curie
+      organism_label:
+      genome_accession:
+        description: GenBank or RefSeq nucleotide accession.
+        range: curie
+      locus_from:
+        range: integer
+      locus_to:
+        range: integer
+      bgc_class:
+        range: BGCClassEnum
+        multivalued: true
+      locus_evidence_methods:
+        description: >-
+          MIBiG's own locus evidence vocabulary, verbatim. This is what grades
+          the producer claim; see conf/producer_evidence.tsv.
+        multivalued: true
+      notes:
+      evidence:
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        required: true
+
+  PathwayStep:
+    description: One enzymatic step in the biosynthesis of this compound.
+    attributes:
+      step_number:
+        range: integer
+      enzyme_id:
+        description: UniProt, EC or InterPro CURIE.
+        range: curie
+      enzyme_label:
+      reaction_id:
+        description: Rhea CURIE where one exists.
+        range: curie
+      substrate:
+        range: curie
+      product:
+        range: curie
+      proposed:
+        description: True when the step is inferred rather than demonstrated.
+        range: boolean
+      notes:
+      evidence:
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        required: true
+
+  # ================================================================
+  # ACTIVITY
+  # ================================================================
+
+  BioactivityObservation:
+    description: >-
+      One measured activity. The assay must have been run on the pure compound:
+      an activity measured on an extract or a fraction is not an observation
+      about any constituent of it.
+    attributes:
+      target_organism_id:
+        range: curie
+      target_organism_label:
+      strain:
+      cell_line:
+      target_enzyme:
+        range: curie
+      activity_class:
+        range: BioactivityClassEnum
+      assay:
+        description: The assay method. A value without a method is not a measurement.
+        required: true
+      measurement_type:
+        range: MeasurementTypeEnum
+      value:
+        range: float
+      units:
+        description: Required whenever a value is given.
+      qualifier:
+        range: MeasurementQualifierEnum
+      call:
+        range: ActivityCallEnum
+      notes:
+      evidence:
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        required: true
+
+  MolecularTarget:
+    description: >-
+      A molecular target of this compound. The target should be a family,
+      complex or function; an organism-specific accession is an example of a
+      target, not a target identity.
+    attributes:
+      target_id:
+        range: curie
+      target_label:
+        required: true
+      target_type:
+        range: TargetTypeEnum
+      relation:
+        range: TargetRelationEnum
+      taxon_id:
+        range: curie
+      taxon_label:
+      protein_examples:
+        description: Organism-specific UniProt accessions exemplifying the target.
+        range: curie
+        multivalued: true
+      measurement_type:
+        range: MeasurementTypeEnum
+      measurement_value:
+        range: float
+      measurement_units:
+      source:
+        range: SourceEnum
+      source_version:
+      notes:
+      evidence:
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        required: true
+
+  ClinicalStatusAssertion:
+    attributes:
+      status:
+        range: ClinicalStatusEnum
+        required: true
+      jurisdiction:
+      product_name:
+      substance_identifier:
+        range: curie
+      source:
+        range: SourceEnum
+      source_version:
+      retrieved_on:
+        range: date
+      notes:
+      evidence:
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        required: true
+
+  # ================================================================
+  # EVIDENCE, MECHANISM, AUDIT
+  # ================================================================
+
+  EvidenceItem:
+    description: >-
+      One piece of evidence for the claim it sits on. A database assertion is
+      cited as a database assertion and never dressed as a paper.
+    attributes:
+      reference:
+        description: A stable PMID:, DOI:, database CURIE or official URL.
+        required: true
+      evidence_type:
+        range: EvidenceTypeEnum
+      snippet:
+        description: A short verbatim passage, never a paraphrase.
+      notes:
+        description: The curator's interpretation, limitations, or model system.
+      retrieved_on:
+        range: date
+
+  CausalGraph:
+    attributes:
+      graph_id:
+        required: true
+      scope:
+        range: CausalGraphScopeEnum
+        required: true
+      description:
+      nodes:
+        range: CausalNode
+        multivalued: true
+        inlined_as_list: true
+      edges:
+        range: CausalEdge
+        multivalued: true
+        inlined_as_list: true
+
+  CausalNode:
+    attributes:
+      node_id:
+        required: true
+      label:
+        required: true
+      node_type:
+        range: CausalNodeTypeEnum
+      identifier:
+        range: curie
+      grounding_status:
+        range: NodeGroundingStatusEnum
+
+  CausalEdge:
+    attributes:
+      subject:
+        description: A node_id declared in this graph.
+        required: true
+      predicate:
+        required: true
+      object:
+        description: A node_id declared in this graph.
+        required: true
+      notes:
+      evidence:
+        description: Required. An uncited edge is an assertion with no author.
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        required: true
+
+  CurationEvent:
+    attributes:
+      timestamp:
+        description: >-
+          ISO-8601 UTC, whole seconds, Z-suffixed. The year guard is a fleet
+          contract: it rejects a transposed year such as 2206 without consulting
+          the wall clock, which would make the check non-deterministic.
+        required: true
+        pattern: "^20[0-9]{2}-"
+      curator:
+        required: true
+      action:
+        required: true
+      changes:
+      llm_assisted:
+        range: boolean
+
+# ================================================================
+# ENUMS
+# ================================================================
+
+enums:
+
+  NPPathwayEnum:
+    description: >-
+      NPClassifier's seven biosynthetic pathways, plus UNCLASSIFIED. The filing
+      decision. Computed, not asserted.
+    permissible_values:
+      ALKALOIDS:
+      AMINO_ACIDS_AND_PEPTIDES:
+      CARBOHYDRATES:
+      FATTY_ACIDS:
+      POLYKETIDES:
+      SHIKIMATES_AND_PHENYLPROPANOIDS:
+      TERPENOIDS:
+      UNCLASSIFIED:
+        description: >-
+          The classifier returned nothing, or returned several pathways and the
+          filing decision was left open rather than resolved by array order.
+          Records here are on the pathway-ambiguous worklist queue.
+
+  BGCClassEnum:
+    description: >-
+      MIBiG 4.0's biosynthetic class vocabulary for the GENE CLUSTER — exactly
+      six values. `alkaloid` was removed as a biosynthetic class in 4.0, when
+      compound classification was separated from cluster classification.
+    permissible_values:
+      PKS:
+      NRPS:
+      RIBOSOMAL:
+      TERPENE:
+      SACCHARIDE:
+      OTHER:
+
+  ProducerEvidenceBasisEnum:
+    description: >-
+      What kind of evidence supports a production claim. The first two are
+      graded from MIBiG's own locus evidence vocabulary; the rest come from
+      literature curation.
+    permissible_values:
+      BGC_CHARACTERIZED:
+        description: >-
+          A gene cluster shown to be sufficient or necessary — heterologous
+          expression, knock-out studies, enzymatic assays, in-vitro expression.
+      BGC_CORRELATED:
+        description: >-
+          Expression and production correlate, or genomic and metabolomic data
+          correlate. A real producer claim, but equally consistent with
+          co-regulation, a neighbouring cluster, or a shared precursor. Never
+          silently upgraded to BGC_CHARACTERIZED.
+      HETEROLOGOUS_EXPRESSION:
+        description: Literature-reported heterologous expression, outside a MIBiG entry.
+      ISOTOPE_FEEDING:
+      AXENIC_CULTURE:
+        description: Production by an axenic culture of the taxon.
+      SOURCE_ASSERTION:
+        description: >-
+          A curated database asserts production without stating the experiment.
+          The weakest basis that still counts as a producer claim.
+
+  BioactivityClassEnum:
+    description: >-
+      Coarse activity buckets. Plural by design: a natural product usually has
+      several. Every value on a record must be backed — see docs/CURATION.md.
+    permissible_values:
+      ANTIBACTERIAL:
+      ANTIFUNGAL:
+      ANTIMYCOBACTERIAL:
+      ANTIVIRAL:
+      ANTIPARASITIC:
+      HERBICIDAL:
+      INSECTICIDAL:
+      CYTOTOXIC:
+      ENZYME_INHIBITOR:
+      IMMUNOMODULATOR:
+      SIGNALLING:
+        description: Quorum sensing signals, hormones, and other communication roles.
+      SIDEROPHORE:
+      TOXIN:
+      PIGMENT:
+      SURFACTANT:
+      OTHER:
+      UNKNOWN:
+
+  MeasurementTypeEnum:
+    permissible_values:
+      MIC:
+      IC50:
+      EC50:
+      KI:
+      KD:
+      GI50:
+      LD50:
+      PERCENT_INHIBITION:
+        description: >-
+          A single-concentration screening result. A hit call, not a potency,
+          and never recorded as an MIC.
+      OTHER:
+
+  MeasurementQualifierEnum:
+    permissible_values:
+      EQUAL:
+      GREATER_THAN:
+      LESS_THAN:
+      APPROXIMATELY:
+
+  ActivityCallEnum:
+    permissible_values:
+      ACTIVE:
+      INACTIVE:
+      INTERMEDIATE:
+      NOT_DETERMINED:
+
+  BiosynthesisOriginEnum:
+    permissible_values:
+      NATURAL_PRODUCT:
+      SEMISYNTHETIC:
+      SYNTHETIC:
+      UNKNOWN:
+
+  ClinicalStatusEnum:
+    permissible_values:
+      APPROVED:
+      INVESTIGATIONAL:
+      VETERINARY:
+      AGRICULTURAL:
+      WITHDRAWN:
+      RESEARCH_ONLY:
+      UNKNOWN:
+
+  TargetTypeEnum:
+    permissible_values:
+      PROTEIN:
+      PROTEIN_COMPLEX:
+      PROTEIN_FAMILY:
+      NUCLEIC_ACID:
+      RIBOSOME:
+      MEMBRANE:
+      CELL_WALL:
+      PATHWAY:
+      OTHER:
+
+  TargetRelationEnum:
+    permissible_values:
+      INHIBITS:
+      ACTIVATES:
+      BINDS:
+      DISRUPTS:
+      SUBSTRATE_OF:
+      OTHER:
+
+  EvidenceTypeEnum:
+    permissible_values:
+      PRIMARY_EXPERIMENT:
+      REVIEW:
+      DATABASE_ASSERTION:
+        description: >-
+          An upstream database says so. Cited as such, never as a paper, even
+          when the database itself cites one.
+      COMPUTATIONAL_PREDICTION:
+      CURATOR_INFERENCE:
+
+  SourceEnum:
+    description: Upstream resources harmonized into this corpus.
+    permissible_values:
+      MIBIG:
+        description: Producers, gene clusters, cluster class, compound structures.
+      CHEBI:
+        description: Identity, structures, and the specialized-metabolite roles that admit a compound.
+      LOTUS:
+        description: Cited structure-organism occurrence triples, via Wikidata.
+      PUBCHEM:
+        description: Structures for concepts the other sources name without one.
+      NPCLASSIFIER:
+        description: The computed filing classification.
+      CYANOMETDB:
+      ANTIBIOTICMECH:
+        description: The sibling corpus, pinned, for cross-corpus links.
+      CURATOR:
+        description: Added by a curator rather than an upstream inventory.
+
+  GroundingStatusEnum:
+    permissible_values:
+      EXACT:
+        description: Identity is an ontology term asserted by the source itself.
+      MINTED:
+        description: >-
+          No defensible ontology identity; the record keeps a content-hashed
+          naturalproductmech: CURIE.
+      REVIEW_NEEDED:
+        description: An exact structure whose ontology identity needs adjudication.
+
+  CurationStatusEnum:
+    permissible_values:
+      SEEDED:
+        description: Written from the committed inventories; no curator sign-off yet.
+      PROPOSED:
+        description: Curator or literature addition, not yet reviewed.
+      REVIEWED:
+        description: >-
+          A curator has signed off on identity, structure, filing class, and
+          every producer claim. See docs/CURATION.md.
+      DEPRECATED:
+        description: Superseded or found out of scope; retained for traceability.
+
+  SynonymTypeEnum:
+    permissible_values:
+      EXACT_SYNONYM:
+      NARROW_SYNONYM:
+      BROAD_SYNONYM:
+      RELATED_SYNONYM:
+      BRAND_NAME:
+      INN:
+
+  CrossCorpusRelationEnum:
+    permissible_values:
+      SAME_STRUCTURE:
+      PARENT_OF:
+      DERIVATIVE_OF:
+
+  CausalGraphScopeEnum:
+    permissible_values:
+      BIOSYNTHESIS:
+        description: Precursor to product, through gene cluster and enzyme steps.
+      BIOACTIVITY:
+        description: Compound to target engagement to cellular effect.
+
+  CausalNodeTypeEnum:
+    permissible_values:
+      COMPOUND:
+      PRECURSOR:
+      GENE:
+      GENE_CLUSTER:
+      ENZYME:
+      PROTEIN:
+      PROTEIN_COMPLEX:
+      PROCESS:
+      PHENOTYPE:
+      ORGANISM:
+      OTHER:
+
+  NodeGroundingStatusEnum:
+    permissible_values:
+      GROUNDED:
+      UNGROUNDED:
+      REVIEW_NEEDED:
