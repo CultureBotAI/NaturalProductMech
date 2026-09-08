@@ -198,11 +198,15 @@ def test_a_mibig_row_becomes_a_record_with_its_producer_and_cluster():
     assert doc["biosynthetic_gene_clusters"][0]["accession"] == "mibig:BGC0000001"
 
 
-def test_a_row_with_no_producer_grade_still_becomes_a_record_without_a_producer():
-    """The structure is real even when the production claim is withheld.
+def test_a_homology_only_row_still_asserts_a_producer_but_a_predicted_cluster():
+    """The two claims separate here, which is the whole point of the split.
 
-    Homology-based prediction grades to nothing, so the compound is recorded
-    and the organism is not asserted as its producer.
+    Homology-based prediction says nothing about which locus is responsible, so
+    the cluster grades CLUSTER_PREDICTED. It says nothing against the organism
+    making the compound either — somebody isolated it, which is what the cited
+    reference is — so the producer stands as a SOURCE_ASSERTION rather than
+    being withheld. The earlier model dropped the producer entirely, which
+    discarded a well-founded claim over a different claim's missing evidence.
     """
     row = {
         "mibig_accession": "BGC0000002", "entry_version": "1", "entry_status": "active",
@@ -215,13 +219,35 @@ def test_a_row_with_no_producer_grade_still_becomes_a_record_without_a_producer(
         "bgc_classes": "", "bgc_subclasses": "",
         "genome_accession": "", "locus_from": "0", "locus_to": "0",
         "locus_evidence_methods": "Homology-based prediction",
-        "producer_evidence_basis": "", "cluster_link_evidence_basis": "CLUSTER_PREDICTED",
+        "producer_evidence_basis": "SOURCE_ASSERTION",
+        "cluster_link_evidence_basis": "CLUSTER_PREDICTED",
         "primary_reference": "PMID:1", "reference_basis": "ENTRY",
     }
-    records = seed.build_records({"mibig_compounds": [row]})
-    assert len(records) == 1
-    assert "producer_organisms" not in records[0]
-    assert records[0]["biosynthetic_gene_clusters"]
+    doc = seed.build_records({"mibig_compounds": [row]})[0]
+    assert doc["producer_organisms"][0]["evidence_basis"] == "SOURCE_ASSERTION"
+    assert doc["biosynthetic_gene_clusters"][0]["link_evidence_basis"] == "CLUSTER_PREDICTED"
+
+
+def test_heterologous_expression_is_not_a_producer_basis_in_the_schema():
+    """Removing it from the seeder while the schema still offered it would have
+    left a trap for the first curator who reached for it (#18)."""
+    import yaml
+    schema = yaml.safe_load(
+        (REPO_ROOT / "src" / "naturalproductmech" / "schema" / "naturalproductmech.yaml")
+        .read_text(encoding="utf-8"))
+    producer_values = schema["enums"]["ProducerEvidenceBasisEnum"]["permissible_values"]
+    assert "HETEROLOGOUS_EXPRESSION" not in producer_values
+    assert "CLUSTER_DEMONSTRATED" in schema["enums"]["ClusterLinkEvidenceEnum"]["permissible_values"]
+
+
+def test_the_report_and_the_grader_agree_on_what_is_causal():
+    """One definition, imported, not restated in the report (#19)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("np_report", REPO_ROOT / "scripts" / "np_report.py")
+    report = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(report)
+    assert report.CAUSAL_BASES is CAUSAL_BASES
+    assert "HETEROLOGOUS_EXPRESSION" not in CAUSAL_BASES
 
 
 def test_evidence_objects_are_not_shared_between_claims():

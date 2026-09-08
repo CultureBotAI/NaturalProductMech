@@ -17,16 +17,16 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PRODUCER_EVIDENCE_PATH = REPO_ROOT / "conf" / "producer_evidence.tsv"
 
-#: The TSV value marking a method that is not producer-grade at all.
-NOT_PRODUCER_GRADE = "NOT_PRODUCER_GRADE"
-
 #: What a source asserts when it states no experiment. See `grade_production`.
 SOURCE_ASSERTION = "SOURCE_ASSERTION"
 
 #: Bases that rest on demonstration rather than association or assertion.
+#: Producer bases that rest on demonstration rather than assertion. Imported
+#: by the report rather than restated there, so the headline figure and the
+#: grader cannot disagree. Heterologous expression is deliberately absent: it
+#: demonstrates the cluster, not the organism.
 CAUSAL_BASES = frozenset({
     "BGC_CHARACTERIZED",
-    "HETEROLOGOUS_EXPRESSION",
     "ISOTOPE_FEEDING",
     "AXENIC_CULTURE",
 })

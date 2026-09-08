@@ -823,9 +823,11 @@ enums:
 
   ProducerEvidenceBasisEnum:
     description: >-
-      What kind of evidence supports a production claim. The first two are
-      graded from MIBiG's own locus evidence vocabulary; the rest come from
-      literature curation.
+      What supports the claim that a TAXON makes a compound. Every value names
+      evidence gathered IN THE ORGANISM — that is what makes the set coherent,
+      and why heterologous expression is not among them: it establishes what a
+      cloned locus can do elsewhere, which is `ClusterLinkEvidenceEnum`'s
+      question, not this one.
     permissible_values:
       BGC_CHARACTERIZED:
         description: >-
@@ -837,8 +839,6 @@ enums:
           correlate. A real producer claim, but equally consistent with
           co-regulation, a neighbouring cluster, or a shared precursor. Never
           silently upgraded to BGC_CHARACTERIZED.
-      HETEROLOGOUS_EXPRESSION:
-        description: Literature-reported heterologous expression, outside a MIBiG entry.
       ISOTOPE_FEEDING:
       AXENIC_CULTURE:
         description: Production by an axenic culture of the taxon.

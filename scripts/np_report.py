@@ -26,15 +26,9 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 CORPUS_DIR = REPO_ROOT / "data" / "natural_products"
 SCHEMA_PATH = REPO_ROOT / "src" / "naturalproductmech" / "schema" / "naturalproductmech.yaml"
 
-# Producer bases that rest on demonstration rather than association. Kept here
-# rather than inlined so the report and the seeder cannot drift apart about
-# which claims are causal.
-CAUSAL_PRODUCER_BASES = {
-    "BGC_CHARACTERIZED",
-    "HETEROLOGOUS_EXPRESSION",
-    "ISOTOPE_FEEDING",
-    "AXENIC_CULTURE",
-}
+sys.path.insert(0, str(REPO_ROOT / "src"))
+
+from naturalproductmech.grading import CAUSAL_BASES  # noqa: E402
 
 
 def load_records(root: Path) -> list[dict[str, Any]]:
@@ -87,7 +81,7 @@ def summarize(records: list[dict[str, Any]]) -> dict[str, Any]:
         for cluster in doc.get("biosynthetic_gene_clusters") or []:
             cluster_bases[cluster.get("link_evidence_basis") or "ABSENT"] += 1
 
-    causal = sum(n for basis, n in producer_bases.items() if basis in CAUSAL_PRODUCER_BASES)
+    causal = sum(n for basis, n in producer_bases.items() if basis in CAUSAL_BASES)
     correlated = producer_bases.get("BGC_CORRELATED", 0)
 
     return {

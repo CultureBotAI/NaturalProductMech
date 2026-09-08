@@ -71,9 +71,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 RAW_DIR = REPO_ROOT / "data" / "raw"
 CORPUS_DIR = REPO_ROOT / "data" / "natural_products"
 PATHS_FILE = CORPUS_DIR / "PATHS.tsv"
-RETIRED_FILE = CORPUS_DIR / "RETIRED.tsv"
 CONF_PATH = REPO_ROOT / "conf" / "sources.yaml"
-PRODUCER_EVIDENCE_PATH = REPO_ROOT / "conf" / "producer_evidence.tsv"
 
 # MIBiG's cluster vocabulary -> the schema enum. Six values in 4.0; `alkaloid`
 # was removed when compound classification was split from cluster
@@ -346,23 +344,27 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 if value and value not in xrefs and DB_ID_RE.match(value):
                     xrefs.append(value)
 
-            basis = row["producer_evidence_basis"]
-            if basis:
-                producers.append({
-                    "taxon_id": row["taxon_id"],
-                    "taxon_label": row["taxon_label"],
-                    "evidence_basis": basis,
-                    "biosynthetic_gene_cluster": f"mibig:{accession}",
-                    "source": "MIBIG",
-                    "source_version": row["entry_version"],
-                    "notes": (
-                        f"Locus evidence: {row['locus_evidence_methods'] or 'none stated'}. "
-                        f"That evidence grades the LOCUS as "
-                        f"{row.get('cluster_link_evidence_basis', 'CLUSTER_UNSTATED')}; this "
-                        f"field grades the taxon claim, which is a different question."
-                    ),
-                    "evidence": mibig_evidence(row),
-                })
+            # Unconditional, and that is the point: MIBiG asserting a
+            # compound-organism pair IS an assertion of production. What varies
+            # is how well supported it is, which is what evidence_basis says.
+            # grade_production has no withholding case for the same reason —
+            # the one that used to exist, homology-based prediction, now lands
+            # on the CLUSTER grade where it belongs (#20).
+            producers.append({
+                "taxon_id": row["taxon_id"],
+                "taxon_label": row["taxon_label"],
+                "evidence_basis": row["producer_evidence_basis"],
+                "biosynthetic_gene_cluster": f"mibig:{accession}",
+                "source": "MIBIG",
+                "source_version": row["entry_version"],
+                "notes": (
+                    f"Locus evidence: {row['locus_evidence_methods'] or 'none stated'}. "
+                    f"That evidence grades the LOCUS as "
+                    f"{row.get('cluster_link_evidence_basis', 'CLUSTER_UNSTATED')}; this "
+                    f"field grades the taxon claim, which is a different question."
+                ),
+                "evidence": mibig_evidence(row),
+            })
 
             cluster: dict[str, Any] = {
                 "accession": f"mibig:{accession}",
