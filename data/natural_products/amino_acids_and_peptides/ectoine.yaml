@@ -181,6 +181,28 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q61954810 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: 'In vitro CYP3A4 Inhibition Assay from US Patent US9144538: "Cosmetic compositions
+    containing substituted azole and methods for alleviating the signs of photoaged
+    skin"'
+  evidence:
+  - reference: pubchem.aid:1801670
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1801670, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 10.0
+  units: uM
+  target_enzyme: UniProtKB:P08684
+- assay: 'null from US Patent US9138393: "Cosmetic compositions containing substituted
+    azole and methods for improving the appearance of aging skin"'
+  evidence:
+  - reference: pubchem.aid:1801654
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1801654, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 10.0
+  units: uM
+  target_enzyme: UniProtKB:P08684
 bgc_class:
 - OTHER
 xrefs:
@@ -514,7 +536,7 @@ discussions:
     BGC0002052. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:34Z'
+- timestamp: '2026-09-08T22:37:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

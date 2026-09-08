@@ -275,6 +275,62 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q26291425 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: qHTS Assay for Inhibitors of the Human Apurinic/apyrimidinic Endonuclease
+    1 (APE1)
+  evidence:
+  - reference: pubchem.aid:2517
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2517, deposited by NCGC; assay type Confirmatory.
+  value: 3.5481
+  units: uM
+  target_enzyme: UniProtKB:1DE9_A
+  activity_class: ENZYME_INHIBITOR
+- assay: DSSTox (FDAMDD) FDA Maximum (Recommended) Daily Dose Database
+  evidence:
+  - reference: pubchem.aid:1195
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1195, deposited by EPA DSSTox; assay type Other.
+  call: ACTIVE
+- assay: 'Diffuse intrinsic pontine glioma (JHH-DIPG-1) cell line screen of MIPE4.0
+    library: viability qHTS assay using CellTiter-Glo'
+  evidence:
+  - reference: pubchem.aid:1347062
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347062, deposited by 15316; assay type Confirmatory.
+  call: ACTIVE
+- assay: 'Diffuse intrinsic pontine glioma (SU-DIPG-IV) cell line screen of MIPE4.0
+    library: viability qHTS assay using CellTiter-Glo'
+  evidence:
+  - reference: pubchem.aid:1347063
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347063, deposited by 15316; assay type Confirmatory.
+  call: ACTIVE
+- assay: 'Diffuse intrinsic pontine glioma (SU-DIPG-VI) cell line screen of MIPE4.0
+    library: viability qHTS assay using CellTiter-Glo'
+  evidence:
+  - reference: pubchem.aid:1347066
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347066, deposited by 15316; assay type Confirmatory.
+  call: ACTIVE
+- assay: 'Diffuse intrinsic pontine glioma (SU-DIPG-XIII) cell line screen of MIPE4.0
+    library: viability qHTS assay using CellTiter-Glo'
+  evidence:
+  - reference: pubchem.aid:1347061
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347061, deposited by 15316; assay type Confirmatory.
+  call: ACTIVE
+- assay: High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis
+    H37Rv
+  evidence:
+  - reference: pubchem.aid:1332
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1332, deposited by Southern Research Institute; assay
+      type Confirmatory.
+  call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:9215
@@ -326,7 +382,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:33Z'
+- timestamp: '2026-09-08T22:37:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

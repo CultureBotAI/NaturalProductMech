@@ -85,6 +85,51 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q26291425 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: 'Antiamidolytic Assay from Article 10.3109/14756360903389872: "Carbocyclic
+    potential DNA minor groove binders and their biological evaluation."'
+  evidence:
+  - reference: PMID:20429779
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1802946, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 40.0
+  units: uM
+  target_enzyme: UniProtKB:P00747
+- assay: 'Antiamidolytic Assay from Article 10.3109/14756360903389872: "Carbocyclic
+    potential DNA minor groove binders and their biological evaluation."'
+  evidence:
+  - reference: PMID:20429779
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1802946, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 30.0
+  units: uM
+  target_enzyme: UniProtKB:P00749
+- assay: 'DNA Helicase Assay from Article 10.1186/1471-2091-15-9: "Plasmodium falciparum
+    UvrD activities are downregulated by DNA-interacting compounds and its dsRNA inhibits
+    malaria parasite growth."'
+  evidence:
+  - reference: PMID:24707807
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1802685, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 4.7
+  units: uM
+  activity_class: ANTIPARASITIC
+- assay: 'DNA-Dependent ATPase Assay from Article 10.1186/1471-2091-15-9: "Plasmodium
+    falciparum UvrD activities are downregulated by DNA-interacting compounds and
+    its dsRNA inhibits malaria parasite growth."'
+  evidence:
+  - reference: PMID:24707807
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1802684, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 3.1
+  units: uM
+  activity_class: ANTIPARASITIC
+bioactivity_summary:
+- ANTIPARASITIC
 molecular_targets:
 - target_label: DNA helicase [35-727]
   target_type: PROTEIN
@@ -226,7 +271,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:27Z'
+- timestamp: '2026-09-08T22:37:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

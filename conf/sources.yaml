@@ -151,6 +151,29 @@ ncbi_taxonomy:
   genus_fallback: false
   fills: taxon resolution for chebi, lotus and cyanometdb
 
+# Key matches the queue's source_id exactly. check_source_queue.py pairs the
+# two by name, and a hyphen/underscore mismatch reads as an unadopted source
+# in one direction and an unread source in the other.
+pubchem-bioassay:
+  name: PubChem BioAssay
+  description: >-
+    Measured activities and screening results for compounds the corpus already
+    cross-references to a PubChem CID. PubChem has no natural-product flag, so
+    the slice is CONSTRUCTED from those CIDs rather than selected — which makes
+    this a source that thickens existing records and cannot introduce them.
+  homepage: https://pubchem.ncbi.nlm.nih.gov/
+  access: PUG REST, one call per CID, resumable
+  license: public domain, per depositor
+  # PubChem is a deposition archive and NCBI documents that reuse conditions are
+  # the DEPOSITOR's. So the depositor travels with every row, and ChEMBL's are
+  # dropped: it deposits 60% of the rows touching corpus structures and is
+  # CC BY-SA 3.0. Arriving through PubChem does not escape share-alike.
+  excluded_depositors: [ChEMBL]
+  # A value without units and a method is not a measurement, and a
+  # single-concentration hit is a call rather than a potency.
+  keeps: [measurements, active calls]
+  fills: bioactivities
+
 # ---------------------------------------------------------------------------
 # Scope
 # ---------------------------------------------------------------------------

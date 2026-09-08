@@ -169,6 +169,241 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q25834677 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: A quantitative high throughput screen for small molecules that induce DNA
+    re-replication in SW480 colon adenocarcinoma cells.
+  evidence:
+  - reference: pubchem.aid:624297
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+  value: 1.636
+  units: uM
+  target_enzyme: UniProtKB:NP_056979
+- assay: Confirmatory fluorescence-based thiol-reactive (MSTI) qHTS assay for identification
+    of artifact compounds
+  evidence:
+  - reference: pubchem.aid:1845226
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1845226, deposited by NCGC; assay type Confirmatory.
+  value: 0.9698
+  units: uM
+- assay: 'Cytochrome P450 Family 3 Subfamily A Member 4 (CYP3A4) small molecule antagonists:
+    luciferase reporter qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1671201
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671201, deposited by 824; assay type Confirmatory.
+  value: 3.4528
+  units: uM
+- assay: 'Cytochrome P450 Family 3 Subfamily A Member 4 (CYP3A4) small molecule antagonists:
+    luciferase reporter qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1671201
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671201, deposited by 824; assay type Confirmatory.
+  value: 3.4528
+  units: uM
+  target_enzyme: UniProtKB:ABI96208
+- assay: Dopamine D2 receptor (DRD2) small molecule antagonists, cell-based qHTS assay
+  evidence:
+  - reference: pubchem.aid:1963595
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963595, deposited by 824; assay type Confirmatory.
+  value: 52.8704
+  units: uM
+- assay: Dopamine D2 receptor (DRD2) small molecule antagonists, cell-based qHTS assay
+  evidence:
+  - reference: pubchem.aid:1963595
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963595, deposited by 824; assay type Confirmatory.
+  value: 52.8704
+  units: uM
+  target_enzyme: UniProtKB:AAH21195
+- assay: Dose response confirmation of small molecule inhibitors of Low Molecular
+    Weight Protein Tyrosine Phosphatase, LMPTP, in an orthogonal absorbance-based
+    assay
+  evidence:
+  - reference: pubchem.aid:652005
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 652005, deposited by Burnham Center for Chemical Genomics;
+      assay type Confirmatory.
+  measurement_type: IC50
+  value: 80.0
+  units: uM
+  target_enzyme: UniProtKB:NP_004291
+  activity_class: ENZYME_INHIBITOR
+- assay: Dose response confirmation of small molecule inhibitors of Low Molecular
+    Weight Protein Tyrosine Phosphatase, LMPTP, via a fluorescence intensity assay
+  evidence:
+  - reference: pubchem.aid:651700
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 651700, deposited by Burnham Center for Chemical Genomics;
+      assay type Confirmatory.
+  measurement_type: IC50
+  value: 47.1
+  units: uM
+  target_enzyme: UniProtKB:P24666
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Inhibitors of Secretory Acid Sphingomyelinase (S-ASM): qHTS'
+  evidence:
+  - reference: pubchem.aid:504937
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504937, deposited by NCGC; assay type Confirmatory.
+  value: 70.7946
+  units: uM
+  target_enzyme: UniProtKB:AAA58377
+  activity_class: ENZYME_INHIBITOR
+- assay: Luminescence Microorganism-Based Dose Confirmation HTS to Identify Compounds
+    Cytotoxic to SK(-)GAS Group A Streptococcus
+  evidence:
+  - reference: pubchem.aid:1900
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1900, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.06
+  units: uM
+  activity_class: CYTOTOXIC
+- assay: Luminescence Microorganism-Based Dose Confirmation HTS to Identify Inhibitors
+    of Streptokinase Promotor Activity
+  evidence:
+  - reference: pubchem.aid:1902
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1902, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.06
+  units: uM
+  target_enzyme: UniProtKB:NP_269944
+  activity_class: ENZYME_INHIBITOR
+- assay: Luminescence Microorganism-Based Dose Response HTS to Identify Compounds
+    Cytotoxic to Streptococcus
+  evidence:
+  - reference: pubchem.aid:1915
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1915, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.06
+  units: uM
+  activity_class: CYTOTOXIC
+- assay: 'Oatp1d1 Transport Assay from Article 10.1074/jbc.M113.518506: "Molecular
+    characterization of zebrafish Oatp1d1 (Slco1d1), a novel organic anion-transporting
+    polypeptide."'
+  evidence:
+  - reference: PMID:24126916
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1802450, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: KI
+  value: 882.0
+  units: uM
+- assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
+    96 hour incubation
+  evidence:
+  - reference: pubchem.aid:504834
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
+  value: 9.285
+  units: uM
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Surface Plasmon Resonance (SPR) from US Patent US20240118263: "TARGET FOR
+    SCREENING ANTI-TUMOR DRUG, USE THEREOF AND SCREENING METHOD THEREFOR"'
+  evidence:
+  - reference: pubchem.aid:1963645
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963645, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: KD
+  value: 10.4
+  units: uM
+  target_enzyme: UniProtKB:Q8IZQ5
+  activity_class: CYTOTOXIC
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 3 (EPAC1)
+  evidence:
+  - reference: pubchem.aid:1645883
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+  value: 125.892
+  units: uM
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 3 (EPAC1)
+  evidence:
+  - reference: pubchem.aid:1645883
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+  value: 125.892
+  units: uM
+  target_enzyme: UniProtKB:O95398
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 4 (EPAC2)
+  evidence:
+  - reference: pubchem.aid:1645887
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+  value: 0.7943
+  units: uM
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 4 (EPAC2)
+  evidence:
+  - reference: pubchem.aid:1645887
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+  value: 0.7943
+  units: uM
+  target_enzyme: UniProtKB:Q8WZA2
+- assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug
+    resistant MV4-11 cells
+  evidence:
+  - reference: pubchem.aid:1963824
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+  value: 0.0006
+  units: uM
+- assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug
+    resistant MV4-11 cells
+  evidence:
+  - reference: pubchem.aid:1963824
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+  value: 0.0006
+  units: uM
+  target_enzyme: UniProtKB:P43405
+- assay: qHTS Inhibitors of AmpC Beta-Lactamase (assay with detergent)
+  evidence:
+  - reference: pubchem.aid:485294
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 485294, deposited by NCGC; assay type Confirmatory.
+  value: 1.9953
+  units: uM
+  target_enzyme: UniProtKB:2HDS_A
+  activity_class: ENZYME_INHIBITOR
+- assay: qHTS Inhibitors of AmpC Beta-Lactamase (assay without detergent)
+  evidence:
+  - reference: pubchem.aid:485341
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 485341, deposited by NCGC; assay type Confirmatory.
+  value: 39.8107
+  units: uM
+  target_enzyme: UniProtKB:2HDS_A
+  activity_class: ENZYME_INHIBITOR
+- assay: qHTS assay for small molecule activators of the heat shock response signaling
+    pathway - cell viability counter screen
+  evidence:
+  - reference: pubchem.aid:743209
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 743209, deposited by 824; assay type Confirmatory.
+  value: 16.865
+  units: uM
+- assay: qHTS assay for small molecule agonists of the antioxidant response element
+    (ARE) signaling pathway - cell viability counter screen
+  evidence:
+  - reference: pubchem.aid:743203
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 743203, deposited by 824; assay type Confirmatory.
+  value: 52.8704
+  units: uM
+  notes: 46 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
+    not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:42355
@@ -271,7 +506,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:33Z'
+- timestamp: '2026-09-08T22:37:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

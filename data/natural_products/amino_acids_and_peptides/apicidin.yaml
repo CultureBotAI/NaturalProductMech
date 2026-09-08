@@ -29,6 +29,83 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q5509889
+bioactivities:
+- assay: 'HDAC Activity Assay from Article 10.1016/j.bmcl.2008.02.025: "Probing the
+    elusive catalytic activity of vertebrate class IIa histone deacetylases."'
+  evidence:
+  - reference: PMID:18308563
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1798526, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.0097
+  units: uM
+  target_enzyme: UniProtKB:O15379
+- assay: 'HDAC Activity Assay from Article 10.1016/j.bmcl.2008.02.025: "Probing the
+    elusive catalytic activity of vertebrate class IIa histone deacetylases."'
+  evidence:
+  - reference: PMID:18308563
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1798526, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 3.6
+  units: uM
+  target_enzyme: UniProtKB:P56524
+- assay: 'HDAC Activity Assay from Article 10.1016/j.bmcl.2008.02.025: "Probing the
+    elusive catalytic activity of vertebrate class IIa histone deacetylases."'
+  evidence:
+  - reference: PMID:18308563
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1798526, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 8.7
+  units: uM
+  target_enzyme: UniProtKB:P56524
+- assay: 'HDAC Activity Assay from Article 10.1016/j.bmcl.2008.02.025: "Probing the
+    elusive catalytic activity of vertebrate class IIa histone deacetylases."'
+  evidence:
+  - reference: PMID:18308563
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1798526, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.023
+  units: uM
+  target_enzyme: UniProtKB:Q13547
+- assay: 'HDAC Activity Assay from Article 10.1016/j.bmcl.2008.02.025: "Probing the
+    elusive catalytic activity of vertebrate class IIa histone deacetylases."'
+  evidence:
+  - reference: PMID:18308563
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1798526, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 4.3
+  units: uM
+  target_enzyme: UniProtKB:Q9UBN7
+- assay: 'HDAC Activity Assay from Article 10.1021/jm800079s: "A novel series of potent
+    and selective ketone histone deacetylase inhibitors with antitumor activity in
+    vivo."'
+  evidence:
+  - reference: PMID:18370373
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1798524, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.044
+  units: uM
+  target_enzyme: UniProtKB:Q13547
+  activity_class: CYTOTOXIC
+- assay: 'pfHDAC-1 Enzyme Assay from Article 10.1021/jm801654y: "Identification and
+    characterization of small molecule inhibitors of a class I histone deacetylase
+    from Plasmodium falciparum."'
+  evidence:
+  - reference: PMID:19317450
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1799021, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.001
+  units: uM
+  activity_class: ANTIPARASITIC
+bioactivity_summary:
+- ANTIPARASITIC
+- CYTOTOXIC
 bgc_class:
 - NRPS
 xrefs:
@@ -74,7 +151,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:28Z'
+- timestamp: '2026-09-08T22:37:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -114,6 +114,14 @@ occurrences:
   taxon_source: NCBITaxon
   notes: This taxon is also recorded as a producer, from a different source and citation.
     The two corroborate each other rather than duplicating.
+bioactivities:
+- assay: HERG Channel Activity
+  evidence:
+  - reference: pubchem.aid:376
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 376, deposited by PDSP; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_000229
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:85616
@@ -178,7 +186,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:33Z'
+- timestamp: '2026-09-08T22:37:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

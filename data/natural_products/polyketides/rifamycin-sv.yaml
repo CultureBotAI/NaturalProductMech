@@ -65,6 +65,78 @@ occurrences:
   taxon_id: NCBITaxon:33910
   taxon_source: NCBITaxon
   detection_context: OVA5-E7
+bioactivities:
+- assay: 'RNAP-Inhibition Assay from Article 10.1021/acschembio.6b01133: "Affinity
+    Selection-Mass Spectrometry Identifies a Novel Antibacterial RNA Polymerase Inhibitor."'
+  evidence:
+  - reference: PMID:28323406
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1802841, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.02
+  units: uM
+  target_enzyme: UniProtKB:P0A8V2
+  activity_class: ANTIBACTERIAL
+- assay: 'RNAP-Inhibition Assay from Article 10.1021/acschembio.6b01133: "Affinity
+    Selection-Mass Spectrometry Identifies a Novel Antibacterial RNA Polymerase Inhibitor."'
+  evidence:
+  - reference: PMID:28323406
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1802841, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.03
+  units: uM
+  target_enzyme: UniProtKB:P0A8V2
+  activity_class: ANTIBACTERIAL
+- assay: 'RNAP-Inhibition Assay from Article 10.1021/acschembio.6b01133: "Affinity
+    Selection-Mass Spectrometry Identifies a Novel Antibacterial RNA Polymerase Inhibitor."'
+  evidence:
+  - reference: PMID:28323406
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1802841, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 70.0
+  units: uM
+  target_enzyme: UniProtKB:Q3YUZ7
+  activity_class: ANTIBACTERIAL
+- assay: 'RNAP-Inhibition Assay from Article 10.1021/acschembio.6b01133: "Affinity
+    Selection-Mass Spectrometry Identifies a Novel Antibacterial RNA Polymerase Inhibitor."'
+  evidence:
+  - reference: PMID:28323406
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1802841, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 80.0
+  units: uM
+  target_enzyme: UniProtKB:Q3YUZ7
+  activity_class: ANTIBACTERIAL
+- assay: 'RNAP-Inhibition Assay from Article 10.1021/acschembio.6b01133: "Affinity
+    Selection-Mass Spectrometry Identifies a Novel Antibacterial RNA Polymerase Inhibitor."'
+  evidence:
+  - reference: PMID:28323406
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1802841, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 100.0
+  units: uM
+  target_enzyme: UniProtKB:Q3YUZ7
+  activity_class: ANTIBACTERIAL
+- assay: Human OATP1A2 (SLCO family of organic anion transporting polypeptides)
+  evidence:
+  - reference: PMID:12085361
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1345149, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_602307
+- assay: Human OATP1B1 (SLCO family of organic anion transporting polypeptides)
+  evidence:
+  - reference: PMID:12085361
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1345178, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_006437
+bioactivity_summary:
+- ANTIBACTERIAL
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:29673
@@ -155,7 +227,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:27Z'
+- timestamp: '2026-09-08T22:37:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

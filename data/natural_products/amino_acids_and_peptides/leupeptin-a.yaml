@@ -45,6 +45,76 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q104934874 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: Confirmatory qHTS assay for inhibitors of the protease papain
+  evidence:
+  - reference: pubchem.aid:1645872
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645872, deposited by NCGC; assay type Confirmatory.
+  value: 0.0102
+  units: uM
+  activity_class: ENZYME_INHIBITOR
+- assay: Confirmatory qHTS assay for inhibitors of the protease papain
+  evidence:
+  - reference: pubchem.aid:1645872
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645872, deposited by NCGC; assay type Confirmatory.
+  value: 0.0102
+  units: uM
+  target_enzyme: UniProtKB:P00784
+  activity_class: ENZYME_INHIBITOR
+- assay: Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
+  evidence:
+  - reference: pubchem.aid:1964107
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory.
+  value: 15.6655
+  units: uM
+  target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
+- assay: Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
+  evidence:
+  - reference: pubchem.aid:1964107
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory.
+  value: 0.0039
+  units: uM
+  target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
+- assay: qHTS Assay for Compounds Blocking the Interaction Between CBF-beta and RUNX1
+    for the Treatment of Acute Myeloid Leukemia
+  evidence:
+  - reference: pubchem.aid:1477
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1477, deposited by NCGC; assay type Confirmatory.
+  value: 31.6228
+  units: uM
+- assay: qHTS for Inhibitors of binding or entry into cells for Marburg Virus
+  evidence:
+  - reference: pubchem.aid:720532
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory.
+  value: 0.1122
+  units: uM
+  target_enzyme: UniProtKB:B45705
+  activity_class: ENZYME_INHIBITOR
+- assay: DSSTox (CPDBAS) Carcinogenic Potency Database Summary Mouse Bioassay Results
+  evidence:
+  - reference: pubchem.aid:1199
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1199, deposited by EPA DSSTox; assay type Other.
+  call: ACTIVE
+  activity_class: TOXIN
+- assay: DSSTox (CPDBAS) Carcinogenic Potency Database Summary SingleCellCall Results
+  evidence:
+  - reference: pubchem.aid:1189
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1189, deposited by EPA DSSTox; assay type Other.
+  call: ACTIVE
+  activity_class: TOXIN
+bioactivity_summary:
+- ENZYME_INHIBITOR
+- TOXIN
 bgc_class:
 - NRPS
 - OTHER
@@ -140,7 +210,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:26Z'
+- timestamp: '2026-09-08T22:37:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -31,6 +31,61 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q3798237 This taxon is also
     recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: 'Counterscreen for antagonists of COUP-TFII (NR2F2): Luminescence-based cell-based
+    high throughput assay to identify inhibitors of the Herpes Virus Virion Protein
+    16 (VP16)'
+  evidence:
+  - reference: pubchem.aid:687007
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 687007, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_044650
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Counterscreen for inhibitors of the Steroid Receptor Coactivator 2 (SRC2;
+    NCOA2): Luminescence-based cell-based high throughput assay to identify inhibitors
+    of the Herpes Virus Virion Protein 16 (VP16)'
+  evidence:
+  - reference: pubchem.aid:652007
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 652007, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_044650
+  activity_class: ENZYME_INHIBITOR
+- assay: Luminescence-based cell-based high throughput confirmation assay to identify
+    inhibitors of the Steroid Receptor Coactivator 2 (SRC2; NCOA2)
+  evidence:
+  - reference: pubchem.aid:652008
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 652008, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_006531
+  activity_class: ENZYME_INHIBITOR
+- assay: Luminescence-based cell-based primary high throughput screening assay to
+    identify inhibitors of COUP-TFII (NR2F2)
+  evidence:
+  - reference: pubchem.aid:686940
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 686940, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_066285
+  activity_class: ENZYME_INHIBITOR
+- assay: Luminescence-based cell-based primary high throughput screening assay to
+    identify inhibitors of the Steroid Receptor Coactivator 2 (SRC2; NCOA2)
+  evidence:
+  - reference: pubchem.aid:651957
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 651957, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_006531
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -76,7 +131,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:24Z'
+- timestamp: '2026-09-08T22:37:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -136,8 +136,13 @@ def test_every_bioactivity_summary_value_is_backed(records):
         summary = r.get("bioactivity_summary") or []
         if not summary:
             continue
-        backed = bool(r.get("bioactivities") or r.get("molecular_targets")
-                      or r.get("related_records") or r.get("evidence"))
+        # Tighter than "some backing field exists": every summary VALUE must
+        # trace to an observation carrying that class, a target, or a sibling
+        # link. A summary value nothing on the record supports is the field's
+        # whole failure mode.
+        classes = {b.get("activity_class") for b in r.get("bioactivities") or []}
+        unbacked = [v for v in summary if v not in classes]
+        backed = not unbacked or bool(r.get("molecular_targets") or r.get("related_records"))
         if not backed:
             offenders.append(r["identifier"])
     assert not offenders, f"bioactivity_summary with no backing: {offenders}"

@@ -146,6 +146,126 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q26289014 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
+    (r) AML: AML-191 cell line'
+  evidence:
+  - reference: pubchem.aid:2202236
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory.
+  value: 7.4219
+  units: uM
+- assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
+    (r) AML: AML-194 cell line'
+  evidence:
+  - reference: pubchem.aid:2202237
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory.
+  value: 20.9177
+  units: uM
+- assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
+    (r) AML: HNT-34 cell line'
+  evidence:
+  - reference: pubchem.aid:2202234
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory.
+  value: 23.47
+  units: uM
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 4 (EPAC2)
+  evidence:
+  - reference: pubchem.aid:1645887
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+  value: 0.7943
+  units: uM
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 4 (EPAC2)
+  evidence:
+  - reference: pubchem.aid:1645887
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+  value: 0.7943
+  units: uM
+  target_enzyme: UniProtKB:Q8WZA2
+- assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug
+    resistant MV4-11 cells
+  evidence:
+  - reference: pubchem.aid:1963824
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+  value: 18.6429
+  units: uM
+- assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug
+    resistant MV4-11 cells
+  evidence:
+  - reference: pubchem.aid:1963824
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+  value: 18.6429
+  units: uM
+  target_enzyme: UniProtKB:P43405
+- assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive
+    MV4-11 cells
+  evidence:
+  - reference: pubchem.aid:1963823
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+  value: 2.9547
+  units: uM
+- assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive
+    MV4-11 cells
+  evidence:
+  - reference: pubchem.aid:1963823
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+  value: 2.9547
+  units: uM
+  target_enzyme: UniProtKB:P43405
+- assay: qHTS assay for small molecule agonists of the p53 signaling pathway - cell
+    viability
+  evidence:
+  - reference: pubchem.aid:651633
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 651633, deposited by 824; assay type Confirmatory.
+  value: 1.0124
+  units: uM
+- assay: A screen for compounds that inhibit the activity of LtaS in Staphylococcus
+    aureus
+  evidence:
+  - reference: pubchem.aid:720641
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 720641, deposited by ICCB-Longwood/NSRB Screening
+      Facility, Harvard Medical School; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_371243
+  activity_class: ANTIBACTERIAL
+- assay: Cell-based high throughput primary assay to identify activators of GPR151
+  evidence:
+  - reference: pubchem.aid:1508602
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1508602, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:Q8TDV0
+- assay: DSSTox (FDAMDD) FDA Maximum (Recommended) Daily Dose Database
+  evidence:
+  - reference: pubchem.aid:1195
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1195, deposited by EPA DSSTox; assay type Other.
+  call: ACTIVE
+- assay: High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis
+    H37Rv
+  evidence:
+  - reference: pubchem.aid:1332
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1332, deposited by Southern Research Institute; assay
+      type Confirmatory.
+  call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ANTIBACTERIAL
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:28864
@@ -264,7 +384,7 @@ discussions:
     BGC0000721. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:30Z'
+- timestamp: '2026-09-08T22:37:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

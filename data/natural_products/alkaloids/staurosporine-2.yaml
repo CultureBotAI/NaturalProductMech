@@ -229,6 +229,242 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q25861287
+bioactivities:
+- assay: A549 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader
+    - 7071-06_Inhibitor_Dose_DryPowder_Activity_Set6
+  evidence:
+  - reference: pubchem.aid:743312
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 743312, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 26.77
+  units: uM
+  activity_class: CYTOTOXIC
+- assay: ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen
+  evidence:
+  - reference: pubchem.aid:1963315
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory.
+  value: 0.8802
+  units: uM
+- assay: ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen
+  evidence:
+  - reference: pubchem.aid:1963315
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory.
+  value: 0.8802
+  units: uM
+  target_enzyme: UniProtKB:P00519
+- assay: ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen - plus ATP
+  evidence:
+  - reference: pubchem.aid:1963316
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory.
+  value: 0.6112
+  units: uM
+- assay: ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen - plus ATP
+  evidence:
+  - reference: pubchem.aid:1963316
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory.
+  value: 0.6112
+  units: uM
+  target_enzyme: UniProtKB:P00519
+- assay: ABL1 kinase (ABL1-N-HiBiT) enzymatic inhibition screen - Functional assay
+  evidence:
+  - reference: pubchem.aid:1963317
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory.
+  value: 3.0633
+  units: uM
+- assay: ABL1 kinase (ABL1-N-HiBiT) enzymatic inhibition screen - Functional assay
+  evidence:
+  - reference: pubchem.aid:1963317
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory.
+  value: 3.0633
+  units: uM
+  target_enzyme: UniProtKB:P00519
+- assay: 'Akt Kinase Assay from Article 10.1016/j.bmcl.2005.12.065: "Synthesis and
+    structure-activity relationship of 3,4''-bispyridinylethylenes: discovery of a
+    potent 3-isoquinolinylpyridine inhibitor of protein kinase B (PKB/Akt) for the
+    treatment of cancer."'
+  evidence:
+  - reference: PMID:16413780
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1797336, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.0015
+  units: uM
+  target_enzyme: UniProtKB:P31749
+  activity_class: CYTOTOXIC
+- assay: 'Akt Kinase Assay from Article 10.1016/j.bmcl.2005.12.065: "Synthesis and
+    structure-activity relationship of 3,4''-bispyridinylethylenes: discovery of a
+    potent 3-isoquinolinylpyridine inhibitor of protein kinase B (PKB/Akt) for the
+    treatment of cancer."'
+  evidence:
+  - reference: PMID:16413780
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1797336, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.0065
+  units: uM
+  target_enzyme: UniProtKB:P31751
+  activity_class: CYTOTOXIC
+- assay: 'Akt Kinase Assay from Article 10.1016/j.bmcl.2005.12.065: "Synthesis and
+    structure-activity relationship of 3,4''-bispyridinylethylenes: discovery of a
+    potent 3-isoquinolinylpyridine inhibitor of protein kinase B (PKB/Akt) for the
+    treatment of cancer."'
+  evidence:
+  - reference: PMID:16413780
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1797336, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.01
+  units: uM
+  target_enzyme: UniProtKB:Q9Y243
+  activity_class: CYTOTOXIC
+- assay: 'Assay for Inhibitors of the ERK Signaling Pathway using a Homogeneous Screening
+    Assay: EGFR Kinase Inhibition'
+  evidence:
+  - reference: pubchem.aid:1731
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1731, deposited by NCGC; assay type Confirmatory.
+  value: 0.3981
+  units: uM
+  target_enzyme: UniProtKB:NP_005219
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Assay for Inhibitors of the ERK Signaling Pathway using a Homogeneous Screening
+    Assay: EGFR L858R Kinase Inhibition'
+  evidence:
+  - reference: pubchem.aid:1727
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1727, deposited by NCGC; assay type Confirmatory.
+  value: 0.3548
+  units: uM
+  target_enzyme: UniProtKB:NP_005219
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Assay for Inhibitors of the ERK Signaling Pathway using a Homogeneous Screening
+    Assay: EGFR T790M Kinase Inhibition'
+  evidence:
+  - reference: pubchem.aid:1729
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1729, deposited by NCGC; assay type Confirmatory.
+  value: 0.0056
+  units: uM
+  target_enzyme: UniProtKB:NP_005219
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Assay for Inhibitors of the ERK Signaling Pathway using a Homogeneous Screening
+    Assay: EGFR T790M/L858R Kinase Inhibition'
+  evidence:
+  - reference: pubchem.aid:1726
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1726, deposited by NCGC; assay type Confirmatory.
+  value: 0.0398
+  units: uM
+  target_enzyme: UniProtKB:NP_005219
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Assay for Inhibitors of the ERK Signaling Pathway using a Homogeneous Screening
+    Assay: MEK Inhibition'
+  evidence:
+  - reference: pubchem.aid:1732
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1732, deposited by NCGC; assay type Confirmatory.
+  value: 0.1
+  units: uM
+  target_enzyme: UniProtKB:NP_002746
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Assay for Inhibitors of the ERK Signaling Pathway using a Homogeneous Screening
+    Assay: c-Raf Inhibition'
+  evidence:
+  - reference: pubchem.aid:1728
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1728, deposited by NCGC; assay type Confirmatory.
+  value: 0.1778
+  units: uM
+  target_enzyme: UniProtKB:NP_002871
+  activity_class: ENZYME_INHIBITOR
+- assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
+    (r) AML: AML-191 cell line'
+  evidence:
+  - reference: pubchem.aid:2202236
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory.
+  value: 0.0295
+  units: uM
+- assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
+    (r) AML: AML-194 cell line'
+  evidence:
+  - reference: pubchem.aid:2202237
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory.
+  value: 0.0332
+  units: uM
+- assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
+    (r) AML: HNT-34 cell line'
+  evidence:
+  - reference: pubchem.aid:2202234
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory.
+  value: 0.0934
+  units: uM
+- assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
+    (r) AML: MV-4-11 cell line'
+  evidence:
+  - reference: pubchem.aid:2202233
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2202233, deposited by NCGC; assay type Confirmatory.
+  value: 0.0074
+  units: uM
+- assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
+    (r) AML: OCI-AML3 cell line'
+  evidence:
+  - reference: pubchem.aid:2202232
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory.
+  value: 0.0833
+  units: uM
+- assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
+    (r) AML: SET-2 cell line'
+  evidence:
+  - reference: pubchem.aid:2202231
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2202231, deposited by NCGC; assay type Confirmatory.
+  value: 0.1864
+  units: uM
+- assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
+    (r) AML: UCSD-AML1 cell line'
+  evidence:
+  - reference: pubchem.aid:2202235
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2202235, deposited by NCGC; assay type Confirmatory.
+  value: 0.0661
+  units: uM
+- assay: 'Biochemical Assay from US Patent US20240002365: "PYRIDAZINE AND 1,2,4-TRIAZINE
+    DERIVATIVES AS FGFR KINASE INHIBITORS"'
+  evidence:
+  - reference: pubchem.aid:1920143
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1920143, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.0021
+  units: uM
+  target_enzyme: UniProtKB:P11362
+- assay: 'Biochemical Assay from US Patent US20240002365: "PYRIDAZINE AND 1,2,4-TRIAZINE
+    DERIVATIVES AS FGFR KINASE INHIBITORS"'
+  evidence:
+  - reference: pubchem.aid:1920143
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1920143, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.0008
+  units: uM
+  target_enzyme: UniProtKB:P21802
+  notes: 523 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
+    not written here.
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 molecular_targets:
 - target_label: 3-phosphoinositide-dependent protein kinase 1 [51-359]
   target_type: PROTEIN
@@ -1086,7 +1322,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:27Z'
+- timestamp: '2026-09-08T22:37:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

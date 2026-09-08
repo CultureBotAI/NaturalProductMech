@@ -79,6 +79,57 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q104884906
+bioactivities:
+- assay: 'FP Assay from Article 10.1016/j.chembiol.2006.09.015: "Inhibition of Hsp90
+    with synthetic macrolactones: synthesis and structural and biological evaluation
+    of ring and conformational analogs of radicicol."'
+  evidence:
+  - reference: PMID:17114002
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1799517, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.5
+  units: uM
+  target_enzyme: UniProtKB:P02829
+  activity_class: ENZYME_INHIBITOR
+- assay: 'FP Assay from Article 10.1016/j.chembiol.2006.09.015: "Inhibition of Hsp90
+    with synthetic macrolactones: synthesis and structural and biological evaluation
+    of ring and conformational analogs of radicicol."'
+  evidence:
+  - reference: PMID:17114002
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1799517, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.54
+  units: uM
+  target_enzyme: UniProtKB:P02829
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Malachite Green Assay from Article 10.1016/j.chembiol.2006.09.015: "Inhibition
+    of Hsp90 with synthetic macrolactones: synthesis and structural and biological
+    evaluation of ring and conformational analogs of radicicol."'
+  evidence:
+  - reference: PMID:17114002
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1799518, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 3.2
+  units: uM
+  target_enzyme: UniProtKB:P02829
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Malachite Green Assay from Article 10.1016/j.chembiol.2006.09.015: "Inhibition
+    of Hsp90 with synthetic macrolactones: synthesis and structural and biological
+    evaluation of ring and conformational analogs of radicicol."'
+  evidence:
+  - reference: PMID:17114002
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1799518, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 4.0
+  units: uM
+  target_enzyme: UniProtKB:P02829
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -126,7 +177,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:34Z'
+- timestamp: '2026-09-08T22:37:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

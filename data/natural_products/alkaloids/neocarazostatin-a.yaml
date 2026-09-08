@@ -18,6 +18,70 @@ np_classification:
   class_results:
   - Carbazole alkaloids
   is_glycoside: false
+bioactivities:
+- assay: 'OTUD3 deubiquitinase inhibition: Dose-response Confirmation'
+  evidence:
+  - reference: pubchem.aid:1645868
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645868, deposited by 24642; assay type Confirmatory.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_056022
+- assay: 'USP17 deubiquitinase inhibition: Dose-response Confirmation'
+  evidence:
+  - reference: pubchem.aid:1645864
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645864, deposited by 24642; assay type Confirmatory.
+  call: ACTIVE
+  target_enzyme: UniProtKB:A8MUK1
+- assay: 'USP17 deubiquitinase inhibition: Primary qHTS'
+  evidence:
+  - reference: pubchem.aid:1645855
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645855, deposited by 24642; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:A8MUK1
+- assay: 'USP28 deubiquitinase inhibition: Dose-response Confirmation'
+  evidence:
+  - reference: pubchem.aid:1645866
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645866, deposited by 24642; assay type Confirmatory.
+  call: ACTIVE
+  target_enzyme: UniProtKB:Q96RU2
+- assay: 'USP28 deubiquitinase inhibition: Primary qHTS'
+  evidence:
+  - reference: pubchem.aid:1645857
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645857, deposited by 24642; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:Q96RU2
+- assay: 'USP30 deubiquitinase inhibition: Dose-response Confirmation'
+  evidence:
+  - reference: pubchem.aid:1645865
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645865, deposited by 24642; assay type Confirmatory.
+  call: ACTIVE
+  target_enzyme: UniProtKB:Q70CQ3
+- assay: 'USP30 deubiquitinase inhibition: Primary qHTS'
+  evidence:
+  - reference: pubchem.aid:1645860
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645860, deposited by 24642; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:Q70CQ3
+- assay: 'USP8 deubiquitinase inhibition: Dose-response Confirmation'
+  evidence:
+  - reference: pubchem.aid:1645862
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645862, deposited by 24642; assay type Confirmatory.
+  call: ACTIVE
+  target_enzyme: UniProtKB:P40818
+- assay: 'USP8 deubiquitinase inhibition: Primary qHTS'
+  evidence:
+  - reference: pubchem.aid:1645853
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645853, deposited by 24642; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:P40818
 bgc_class:
 - OTHER
 xrefs:
@@ -62,7 +126,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:32Z'
+- timestamp: '2026-09-08T22:37:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

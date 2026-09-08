@@ -134,6 +134,203 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q3837934 This taxon is also
     recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: Confirmatory qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
+  evidence:
+  - reference: pubchem.aid:1964105
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory.
+  value: 0.8955
+  units: uM
+  activity_class: ENZYME_INHIBITOR
+- assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
+    Peroxidase 4 (GPX4)
+  evidence:
+  - reference: pubchem.aid:1845192
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
+  value: 35.4813
+  units: uM
+  activity_class: ENZYME_INHIBITOR
+- assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
+    Peroxidase 4 (GPX4)
+  evidence:
+  - reference: pubchem.aid:1845192
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
+  value: 35.4813
+  units: uM
+  target_enzyme: UniProtKB:P36969
+  activity_class: ENZYME_INHIBITOR
+- assay: Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
+  evidence:
+  - reference: pubchem.aid:1964107
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory.
+  value: 9.8843
+  units: uM
+  target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
+    Endogenous NS2/3 peptide Counterscreen'
+  evidence:
+  - reference: pubchem.aid:1964103
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1964103, deposited by NCGC; assay type Confirmatory.
+  value: 12.981
+  units: uM
+  target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
+    Full length NSP2 enzyme counterscreen (CHIKV-NSP2)'
+  evidence:
+  - reference: pubchem.aid:1964101
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1964101, deposited by NCGC; assay type Confirmatory.
+  value: 2.5901
+  units: uM
+  target_enzyme: UniProtKB:Q8JUX6
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
+    Papain Counterscreen'
+  evidence:
+  - reference: pubchem.aid:1964104
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1964104, deposited by NCGC; assay type Confirmatory.
+  value: 25.9005
+  units: uM
+  target_enzyme: UniProtKB:P00784
+  activity_class: ENZYME_INHIBITOR
+- assay: Agonists at Human 5-Hydroxytryptamine receptor 5-HT1F
+  evidence:
+  - reference: PMID:8380639
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624233, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_000857
+- assay: Agonists at Human 5-Hydroxytryptamine receptor 5-HT2A
+  evidence:
+  - reference: PMID:15322733
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624235, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_001159419
+- assay: Agonists at Human 5-Hydroxytryptamine receptor 5-HT2B
+  evidence:
+  - reference: PMID:11104741
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624219, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_000858
+- assay: Agonists at Human 5-Hydroxytryptamine receptor 5-HT2B
+  evidence:
+  - reference: PMID:15322733
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624219, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_000858
+- assay: Agonists at Human 5-Hydroxytryptamine receptor 5-HT2C
+  evidence:
+  - reference: PMID:15322733
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624216, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_001243690
+- assay: Agonists at Human 5-Hydroxytryptamine receptor 5-ht1e
+  evidence:
+  - reference: PMID:1608964
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624230, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_000856
+- assay: Agonists at Human 5-Hydroxytryptamine receptor 5-ht1e
+  evidence:
+  - reference: PMID:8380639
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624230, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_000856
+- assay: Agonists at Rat 5-Hydroxytryptamine receptor 5-HT1F
+  evidence:
+  - reference: PMID:8384716
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624227, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_068629
+- assay: Agonists at Rat 5-Hydroxytryptamine receptor 5-HT2A
+  evidence:
+  - reference: PMID:11104741
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624234, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_058950
+- assay: Agonists at Rat 5-Hydroxytryptamine receptor 5-HT2C
+  evidence:
+  - reference: PMID:11104741
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624214, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_036897
+- assay: Human 5-HT1D receptor (5-Hydroxytryptamine receptors)
+  evidence:
+  - reference: PMID:10715164
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1346528, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_000855
+- assay: Human 5-HT1F receptor (5-Hydroxytryptamine receptors)
+  evidence:
+  - reference: PMID:8380639
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1346739, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_000857
+- assay: Human 5-HT2A receptor (5-Hydroxytryptamine receptors)
+  evidence:
+  - reference: PMID:15322733
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1259419, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_001159419
+- assay: Human 5-HT2B receptor (5-Hydroxytryptamine receptors)
+  evidence:
+  - reference: PMID:11104741
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1346867, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_000858
+- assay: Human 5-HT2B receptor (5-Hydroxytryptamine receptors)
+  evidence:
+  - reference: PMID:15322733
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1346867, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_000858
+- assay: Human 5-HT2C receptor (5-Hydroxytryptamine receptors)
+  evidence:
+  - reference: PMID:15322733
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1346893, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_001243690
+- assay: Human 5-HT5A receptor (5-Hydroxytryptamine receptors)
+  evidence:
+  - reference: PMID:7988681
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1345068, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_076917
+- assay: Human 5-HT5A receptor (5-Hydroxytryptamine receptors)
+  evidence:
+  - reference: PMID:11343685
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1345068, deposited by IUPHAR-DB; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_076917
+  notes: 15 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
+    not written here.
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - TERPENE
 - OTHER
@@ -229,7 +426,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:34Z'
+- timestamp: '2026-09-08T22:37:22Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

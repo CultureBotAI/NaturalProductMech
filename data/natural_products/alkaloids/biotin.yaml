@@ -251,6 +251,291 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q683881 This taxon is also
     recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: 'Counterscreen for IDE activators: Fluorescence polarization-based biochemical
+    high throughput dose response assay for activators of recombinant IDE'
+  evidence:
+  - reference: pubchem.aid:588681
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 588681, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Confirmatory.
+  measurement_type: EC50
+  value: 2.526
+  units: uM
+  target_enzyme: UniProtKB:NP_004960
+- assay: 'Counterscreen for IDE activators: Fluorescence polarization-based biochemical
+    high throughput dose response assay to identify fluorescent artifacts and/or optically
+    active compounds'
+  evidence:
+  - reference: pubchem.aid:588442
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 588442, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Confirmatory.
+  measurement_type: EC50
+  value: 2.057
+  units: uM
+- assay: 'Counterscreen for activators of insulin-degrading enzyme (IDE): fluorescence-based
+    cell-based high throughput dose response LDH release assay to identify compounds
+    that are cytotoxic to HEK cells or compromise cell membrane permeability'
+  evidence:
+  - reference: pubchem.aid:588440
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 588440, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Confirmatory.
+  measurement_type: IC50
+  value: 89.251
+  units: uM
+  activity_class: CYTOTOXIC
+- assay: 'Counterscreen for inhibitors of the interaction of the Ras and Rab interactor
+    1 protein (Rin1) and the c-abl oncogene 1, non-receptor tyrosine kinase (Abl):
+    Fluorescence-based biochemical high throughput dose response assay to identify
+    GFP inhibitors and fluorescence quenchers'
+  evidence:
+  - reference: pubchem.aid:602182
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 602182, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Confirmatory.
+  measurement_type: IC50
+  value: 67.588
+  units: uM
+  target_enzyme: UniProtKB:CAA58789
+  activity_class: ENZYME_INHIBITOR
+- assay: 'Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule
+    antagonists: luciferase reporter qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1671197
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
+  value: 0.1096
+  units: uM
+- assay: 'Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule
+    antagonists: luciferase reporter qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1671197
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
+  value: 0.1096
+  units: uM
+  target_enzyme: UniProtKB:AAV41877
+- assay: 'Cytochrome P450 Family 2 Subfamily D Member 6 (CYP2D6) small molecule antagonists:
+    luciferase reporter qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1671196
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671196, deposited by 824; assay type Confirmatory.
+  value: 43.6486
+  units: uM
+- assay: 'Cytochrome P450 Family 2 Subfamily D Member 6 (CYP2D6) small molecule antagonists:
+    luciferase reporter qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1671196
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671196, deposited by 824; assay type Confirmatory.
+  value: 43.6486
+  units: uM
+  target_enzyme: UniProtKB:ANW61984
+- assay: 'Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists:
+    luciferase cell-based qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1963596
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963596, deposited by NCGC; assay type Confirmatory.
+  value: 21.8761
+  units: uM
+- assay: 'Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists:
+    luciferase cell-based qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1963596
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1963596, deposited by NCGC; assay type Confirmatory.
+  value: 21.8761
+  units: uM
+  target_enzyme: UniProtKB:NP_000756
+- assay: Discovery of Small Molecule Probes for H1N1 Influenza NS1A
+  evidence:
+  - reference: pubchem.aid:504329
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504329, deposited by Southern Research Specialized
+      Biocontainment Screening Center; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.2
+  units: uM
+  target_enzyme: UniProtKB:ACP44172
+  activity_class: ANTIVIRAL
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:8515446
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 1.0e-09
+  units: uM
+  target_enzyme: UniProtKB:1AVD_A
+  activity_class: ENZYME_INHIBITOR
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:10850797
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 0.0002
+  units: uM
+  target_enzyme: UniProtKB:1DF8_A
+  activity_class: ENZYME_INHIBITOR
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:10850797
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 0.0002
+  units: uM
+  target_enzyme: UniProtKB:1DF8_B
+  activity_class: ENZYME_INHIBITOR
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:12925786
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 2.8e-05
+  units: uM
+  target_enzyme: UniProtKB:1N43_A
+  activity_class: ENZYME_INHIBITOR
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:12925786
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 2.8e-05
+  units: uM
+  target_enzyme: UniProtKB:1N43_D
+  activity_class: ENZYME_INHIBITOR
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:12925786
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 1.1e-05
+  units: uM
+  target_enzyme: UniProtKB:1N9M_A
+  activity_class: ENZYME_INHIBITOR
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:12925786
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 1.1e-05
+  units: uM
+  target_enzyme: UniProtKB:1N9M_D
+  activity_class: ENZYME_INHIBITOR
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:12925786
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 6.9e-07
+  units: uM
+  target_enzyme: UniProtKB:1NDJ_A
+  activity_class: ENZYME_INHIBITOR
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:12925786
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 6.9e-07
+  units: uM
+  target_enzyme: UniProtKB:1NDJ_D
+  activity_class: ENZYME_INHIBITOR
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:2911722
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 4.0e-08
+  units: uM
+  target_enzyme: UniProtKB:1STP_A
+  activity_class: ENZYME_INHIBITOR
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:9568892
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 0.0439
+  units: uM
+  target_enzyme: UniProtKB:1SWG_D
+  activity_class: ENZYME_INHIBITOR
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:9636711
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 1.0e-06
+  units: uM
+  target_enzyme: UniProtKB:1SWK_A
+  activity_class: ENZYME_INHIBITOR
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:9636711
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 1.0e-06
+  units: uM
+  target_enzyme: UniProtKB:1SWK_D
+  activity_class: ENZYME_INHIBITOR
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:9636711
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 1.0e-06
+  units: uM
+  target_enzyme: UniProtKB:1SWN_A
+  activity_class: ENZYME_INHIBITOR
+  notes: 78 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
+    not written here.
+bioactivity_summary:
+- ANTIVIRAL
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -334,7 +619,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:35Z'
+- timestamp: '2026-09-08T22:37:22Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

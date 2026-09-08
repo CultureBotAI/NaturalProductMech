@@ -99,6 +99,11 @@ Gilson MK, Liu T, Baitaluk M, et al. BindingDB in 2015: A public database for
 medicinal chemistry, computational chemistry and systems pharmacology.
 *Nucleic Acids Res.* 2016;44(D1):D1045-53. doi:10.1093/nar/gkv1072
 
+**PubChem BioAssay** — NCBI, NLM, NIH. Public domain as NCBI content, with
+reuse conditions set per depositor; the depositor is recorded on every row and
+ChEMBL-deposited results are excluded because they carry CC BY-SA 3.0.
+<https://pubchem.ncbi.nlm.nih.gov/>
+
 **NCBI Taxonomy** — NCBI, NLM, NIH. Public domain (US Government work).
 Resolves organism names to taxonomy identifiers for sources that name organisms
 without identifying them. <https://www.ncbi.nlm.nih.gov/taxonomy>

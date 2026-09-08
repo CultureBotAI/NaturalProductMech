@@ -34,6 +34,146 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q5023166
+bioactivities:
+- assay: 'Anti-Fungal Single Agen: CaCi2 Measured in Microorganism System Using Plate
+    Reader - 2148-01_Inhibitor_Dose_DryPowder_Activity_Set4'
+  evidence:
+  - reference: pubchem.aid:624006
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624006, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 4.81
+  units: uM
+  activity_class: ANTIFUNGAL
+- assay: 'Anti-Fungal Single Agent: C.glabrata growth, Glycerol Measured in Microorganism
+    System Using Plate Reader - 2148-04_Inhibitor_Dose_DryPowder_Activity_Set3'
+  evidence:
+  - reference: pubchem.aid:623965
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 623965, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 2.94
+  units: uM
+  activity_class: ANTIFUNGAL
+- assay: 'Anti-Fungal Single Agent: C.glabrata growth, Glycerol Measured in Microorganism
+    System Using Plate Reader - 2148-04_Inhibitor_Dose_DryPowder_Activity_Set4'
+  evidence:
+  - reference: pubchem.aid:624014
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624014, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 2.45
+  units: uM
+  activity_class: ANTIFUNGAL
+- assay: 'Anti-Fungal Single Agent: S.cerevisiae growth, Glycerol Measured in Microorganism
+    System Using Plate Reader - 2148-06_Inhibitor_Dose_DryPowder_Activity_Set3'
+  evidence:
+  - reference: pubchem.aid:623969
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 623969, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.0335
+  units: uM
+  activity_class: ANTIFUNGAL
+- assay: 'Anti-Fungal Single Agent: S.cerevisiae growth, Glycerol Measured in Microorganism
+    System Using Plate Reader - 2148-06_Inhibitor_Dose_DryPowder_Activity_Set4'
+  evidence:
+  - reference: pubchem.aid:624012
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624012, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.0275
+  units: uM
+  activity_class: ANTIFUNGAL
+- assay: HPAF-II Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
+  evidence:
+  - reference: PMID:30648156
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347346, deposited by NCGC; assay type Confirmatory.
+  call: ACTIVE
+  activity_class: CYTOTOXIC
+- assay: KB-3-1 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
+  evidence:
+  - reference: PMID:30648156
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347366, deposited by NCGC; assay type Confirmatory.
+  call: ACTIVE
+  activity_class: CYTOTOXIC
+- assay: KB-8-5-11 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
+  evidence:
+  - reference: PMID:30648156
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347364, deposited by NCGC; assay type Confirmatory.
+  call: ACTIVE
+  activity_class: CYTOTOXIC
+- assay: OV-SAHO Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
+  evidence:
+  - reference: PMID:30648156
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347348, deposited by NCGC; assay type Confirmatory.
+  call: ACTIVE
+  activity_class: CYTOTOXIC
+- assay: Primary screen NINDS Rhodamine qHTS for Zika virus inhibitors
+  evidence:
+  - reference: PMID:33229545
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347160, deposited by NCGC; assay type Confirmatory.
+  call: ACTIVE
+- assay: SW1088 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
+  evidence:
+  - reference: PMID:30648156
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347350, deposited by NCGC; assay type Confirmatory.
+  call: ACTIVE
+  activity_class: CYTOTOXIC
+- assay: UWB1.289 Cancer Cell Toxicity qHTS against the NCATS CANVASS Library
+  evidence:
+  - reference: PMID:30648156
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347347, deposited by NCGC; assay type Confirmatory.
+  call: ACTIVE
+  activity_class: CYTOTOXIC
+- assay: 'Vero-766 cells viability qHTS against the NCATS CANVASS Library: Counterscreen
+    for Zika virus inhibition assay'
+  evidence:
+  - reference: PMID:30648156
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347394, deposited by NCGC; assay type Confirmatory.
+  call: ACTIVE
+- assay: qHTS assay for small molecule disruptors of mitochondrial membrane potential
+    screened against the NCATS CANVASS Library
+  evidence:
+  - reference: PMID:30648156
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347389, deposited by NCGC; assay type Confirmatory.
+  call: ACTIVE
+- assay: qHTS for Hypoxia signaling pathway (HIF-1) antagonists against the NCATS
+    CANVASS Library
+  evidence:
+  - reference: PMID:30648156
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347374, deposited by NCGC; assay type Confirmatory.
+  call: ACTIVE
+- assay: qHTS for Hypoxia signaling pathway (HIF-1) antagonists against the NCATS
+    CANVASS Library
+  evidence:
+  - reference: PMID:30648156
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347374, deposited by NCGC; assay type Confirmatory.
+  call: ACTIVE
+  target_enzyme: UniProtKB:AAC68568
+- assay: 'qHTS for inhibitors of ER calcium dysfunction: SERCaMP assay screened against
+    the NCATS CANVASS Library'
+  evidence:
+  - reference: PMID:30648156
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347393, deposited by NCGC; assay type Confirmatory.
+  call: ACTIVE
+  activity_class: ENZYME_INHIBITOR
+bioactivity_summary:
+- ANTIFUNGAL
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:77772
@@ -138,7 +278,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:24Z'
+- timestamp: '2026-09-08T22:37:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
