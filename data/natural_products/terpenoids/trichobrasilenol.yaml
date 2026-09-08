@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-fba6beeb9e
+label: trichobrasilenol
+chemical_structure:
+  smiles: C/C(CO)=C1/CC(C)(C)C[C@H]2[C@@H](C)CC[C@H]12
+  standard_inchi: InChI=1S/C15H26O/c1-10-5-6-12-13(10)7-15(3,4)8-14(12)11(2)9-16/h10,12-13,16H,5-9H2,1-4H3/b14-11+/t10-,12-,13-/m0/s1
+  standard_inchi_key: DJBXKQSFHIRXRM-JRYBIPSHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002260
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Tremulane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA025694
+- pubchem:146682173
+producer_organisms:
+- taxon_id: NCBITaxon:327061
+  taxon_label: Annulohypoxylon truncatum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002260
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32936132
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002260 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002260
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:327061
+  organism_label: Annulohypoxylon truncatum
+  evidence:
+  - reference: PMID:32936132
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002260 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT383109.1
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002260
+  source_label: trichobrasilenol
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-fba6beeb9e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

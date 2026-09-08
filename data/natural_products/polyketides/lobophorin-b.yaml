@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-fa6680e360
+label: lobophorin B
+chemical_structure:
+  smiles: '[H][C@@]12C=C[C@]3([H])C(C)=CCC(O[C@H]4C[C@](C)([C@H](NC(=O)OC)[C@H](C)O4)N(=O)=O)C(C)=C[C@@H]4C=C(CO)[C@@H](C)CC44OC(=O)C(=C4O)C(=O)[C@]3(C)[C@@]1([H])[C@H](C)C[C@@H](C)[C@H]2O[C@@H]1C[C@@H](O[C@@H]2C[C@@H](O)[C@@H](O[C@@H]3C[C@@H](O)[C@@H](OC)[C@H](C)O3)[C@H](C)O2)[C@@H](O)[C@H](C)O1'
+  standard_inchi: InChI=1S/C61H90N2O21/c1-27-14-17-42(80-47-25-59(10,63(72)73)54(35(9)79-47)62-58(71)75-13)28(2)19-37-20-36(26-64)31(5)24-61(37)56(69)48(57(70)84-61)55(68)60(11)39(27)16-15-38-49(60)29(3)18-30(4)51(38)82-46-23-43(50(67)32(6)76-46)81-44-22-41(66)53(34(8)78-44)83-45-21-40(65)52(74-12)33(7)77-45/h14-16,19-20,29-35,37-47,49-54,64-67,69H,17-18,21-26H2,1-13H3,(H,62,71)/t29-,30-,31+,32+,33+,34+,35+,37-,38-,39-,40-,41-,42?,43-,44-,45-,46-,47+,49+,50+,51-,52+,53+,54-,59-,60+,61?/m1/s1
+  standard_inchi_key: GRVIKFGPGUQNHQ-OZRRPFOLSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001004
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Spirotetronate macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA011650
+- pubchem:44566672
+producer_organisms:
+- taxon_id: NCBITaxon:1035052
+  taxon_label: Streptomyces sp. SCSIO 01127
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001004
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:23868295
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001004 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001004
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1035052
+  organism_label: Streptomyces sp. SCSIO 01127
+  evidence:
+  - reference: PMID:23868295
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001004 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KC013978.1
+  locus_from: 2344
+  locus_to: 100910
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001004
+  source_label: lobophorin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fa6680e360
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

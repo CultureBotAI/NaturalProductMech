@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-6fc5164982
+label: thiomarinol
+chemical_structure:
+  smiles: CC(O)C(C)\C=C\CC1COC(C(O)C(\C)=C\C(=O)OCCCCCCCC(=O)NC2=C3SSC=C3NC2=O)C(O)C1O
+  standard_inchi: InChI=1S/C30H44N2O9S2/c1-17(19(3)33)10-9-11-20-15-41-28(27(38)26(20)37)25(36)18(2)14-23(35)40-13-8-6-4-5-7-12-22(34)32-24-29-21(16-42-43-29)31-30(24)39/h9-10,14,16-17,19-20,25-28,33,36-38H,4-8,11-13,15H2,1-3H3,(H,31,39)(H,32,34)/b10-9+,18-14+
+  standard_inchi_key: JIEMCPGFAXNCQW-BFHPBESDSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001115
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA011004
+- pubchem:5825095
+producer_organisms:
+- taxon_id: NCBITaxon:747457
+  taxon_label: Pseudoalteromonas sp. SANK 73390
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001115
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:21483852
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001115 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001115
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:747457
+  organism_label: Pseudoalteromonas sp. SANK 73390
+  evidence:
+  - reference: PMID:21483852
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001115 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FN689524.1
+  locus_from: 10748
+  locus_to: 97600
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001115
+  source_label: thiomarinol
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6fc5164982
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

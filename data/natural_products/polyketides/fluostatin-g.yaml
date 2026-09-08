@@ -1,0 +1,94 @@
+identifier: naturalproductmech:mibig-0dc1decf40
+label: fluostatin G
+chemical_structure:
+  smiles: C[C@@]12[C@H]([C@H](OC(C(CCC)C)=O)C3=C4C(C5=C(C=CC=C5O)C4=O)=C(O)C=C3C2=O)O1
+  standard_inchi: InChI=1S/C24H22O7/c1-4-6-10(2)23(29)30-20-16-12(21(28)24(3)22(20)31-24)9-14(26)17-15-11(19(27)18(16)17)7-5-8-13(15)25/h5,7-10,20,22,25-26H,4,6H2,1-3H3/t10?,20-,22+,24-/m1/s1
+  standard_inchi_key: UECRBQDJIASDQW-ZQJMGUKMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000223
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1037453
+  taxon_label: uncultured bacterium BAC AB649/1850
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000223
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:20690632
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000223 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1037453
+  taxon_label: uncultured bacterium BAC AB649/1850
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000223
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:20690632
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000223 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000223
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1037453
+  organism_label: uncultured bacterium BAC AB649/1850
+  evidence:
+  - reference: PMID:20690632
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000223 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HM193369.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+- accession: mibig:BGC0000223
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1037453
+  organism_label: uncultured bacterium BAC AB649/1850
+  evidence:
+  - reference: PMID:20690632
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000223 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HM193369.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000223
+  source_label: fluostatin G
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0dc1decf40
+- source: MIBIG
+  source_id: BGC0000223
+  source_label: fluostatin H
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-911f374a38
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

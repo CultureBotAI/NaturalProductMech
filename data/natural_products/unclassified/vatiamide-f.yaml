@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-549922c785
+label: vatiamide F
+chemical_structure:
+  smiles: CC(C)[C@@H](C(N)=O)N(C)C(=O)[C@@H](C)NC(=O)CCC=C[C@H](C)CCC(=CCl)CCCC#CBr
+  standard_inchi: InChI=1S/C25H39BrClN3O3/c1-18(2)23(24(28)32)30(5)25(33)20(4)29-22(31)13-9-8-11-19(3)14-15-21(17-27)12-7-6-10-16-26/h8,11,17-20,23H,6-7,9,12-15H2,1-5H3,(H2,28,32)(H,29,31)/t19-,20+,23-/m0/s1
+  standard_inchi_key: CVGGVCHALSWETH-MZKRTTBSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002296
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA025675
+producer_organisms:
+- taxon_id: NCBITaxon:2546228
+  taxon_label: Moorena producens ASI16Jul14-2
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002296
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:31071229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002296 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002296
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2546228
+  organism_label: Moorena producens ASI16Jul14-2
+  evidence:
+  - reference: PMID:31071229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002296 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MK618714.1
+  locus_from: 1
+  locus_to: 97932
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002296
+  source_label: vatiamide F
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-549922c785
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

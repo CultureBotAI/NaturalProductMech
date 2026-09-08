@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-9fae2cc0f2
+label: dehydrohistidyltryptophanyldiketopiperazine
+chemical_structure:
+  smiles: C1=CC=C2C(=C1)C(=CN2)CC3C(=O)N/C(=C/C4=CN=CN4)/C(=O)N3
+  standard_inchi: InChI=1S/C17H15N5O2/c23-16-14(5-10-7-19-13-4-2-1-3-12(10)13)21-17(24)15(22-16)6-11-8-18-9-20-11/h1-4,6-9,14,19H,5H2,(H,18,20)(H,21,24)(H,22,23)/b15-6+
+  standard_inchi_key: ITXQTTPWGBFRNK-GIDUJCDVSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000420
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Histidine alkaloids
+  class_results:
+  - Imidazole alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Histidine-derived
+xrefs:
+- chebi:182170
+producer_organisms:
+- taxon_id: NCBITaxon:500485
+  taxon_label: Penicillium rubens Wisconsin 54-1255
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000420
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1371/journal.pone.0065328
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000420 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000420
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:500485
+  organism_label: Penicillium rubens Wisconsin 54-1255
+  evidence:
+  - reference: DOI:10.1371/journal.pone.0065328
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000420 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AM920436.1
+  locus_from: 3638081
+  locus_to: 3658739
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000420
+  source_label: dehydrohistidyltryptophanyldiketopiperazine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-9fae2cc0f2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

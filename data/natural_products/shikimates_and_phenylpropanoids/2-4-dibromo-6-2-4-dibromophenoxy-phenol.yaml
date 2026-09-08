@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-9d3dfc0fa4
+label: 2,4-dibromo-6-(2,4-dibromophenoxy)phenol
+chemical_structure:
+  smiles: BrC1=CC(Br)=CC(OC2=CC=C(Br)C=C2Br)=C1O
+  standard_inchi: InChI=1S/C12H6Br4O2/c13-6-1-2-10(8(15)3-6)18-11-5-7(14)4-9(16)12(11)17/h1-5,17H
+  standard_inchi_key: QEPYTQFGTBSZQY-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001490
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Diphenyl ethers (DPEs)
+  class_results:
+  - Marine-bacterial DPEs
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- cyanometdb:CyanoMetDB_2636
+producer_organisms:
+- taxon_id: NCBITaxon:1962685
+  taxon_label: Hormoscilla spongeliae SP4
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001490
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1039/d3np00011g
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001490 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001490
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1962685
+  organism_label: Hormoscilla spongeliae SP4
+  evidence:
+  - reference: DOI:10.1039/d3np00011g
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001490 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KX588879.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001490
+  source_label: 2,4-dibromo-6-(2,4-dibromophenoxy)phenol
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-9d3dfc0fa4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

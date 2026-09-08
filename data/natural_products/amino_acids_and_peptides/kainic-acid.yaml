@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-a36b57cc8e
+label: kainic acid
+chemical_structure:
+  smiles: CC([C@]1([H])[C@H](C(O)=O)[C@@H](C(O)=O)NC1)=C
+  standard_inchi: InChI=1S/C9H13NO4/c1-4(2)5-3-10-7(9(13)14)6(5)8(11)12/h5-7,10H,1,3H2,2H3,(H,11,12)(H,13,14)/t5-,6+,7+/m1/s1
+  standard_inchi_key: MJUWVAFFSWEHNC-VQVTYTSYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001974
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Aminoacids
+  is_glycoside: false
+bgc_class:
+- OTHER
+compound_classes:
+- Monoterpenoid
+producer_organisms:
+- taxon_id: NCBITaxon:945030
+  taxon_label: Digenea simplex
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001974
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1002/anie.201902910
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001974 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001974
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:945030
+  organism_label: Digenea simplex
+  evidence:
+  - reference: DOI:10.1002/anie.201902910
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001974 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MK312630.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001974
+  source_label: kainic acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-a36b57cc8e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

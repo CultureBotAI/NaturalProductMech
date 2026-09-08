@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-d67ae9492a
+label: pyranoviolin A
+chemical_structure:
+  smiles: CCC/C=C/C1=C(OC)C(=O)C2=C(O1)[C@@H](O)NC2=O
+  standard_inchi: InChI=1S/C13H15NO5/c1-3-4-5-6-7-10(18-2)9(15)8-11(19-7)13(17)14-12(8)16/h5-6,13,17H,3-4H2,1-2H3,(H,14,16)/b6-5+/t13-/m1/s1
+  standard_inchi_key: BYLNZZOLIALCKQ-URWSZGRFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002210
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 2-pyrone derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA032957
+producer_organisms:
+- taxon_id: NCBITaxon:657443
+  taxon_label: Aspergillus violaceofuscus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002210
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:33117309
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002210 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002210
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:657443
+  organism_label: Aspergillus violaceofuscus
+  evidence:
+  - reference: PMID:33117309
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002210 entry version 3; citation taken from the entry level
+  genome_accession: genbank:BR001648.1
+  bgc_class:
+  - PKS
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002210
+  source_label: pyranoviolin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-d67ae9492a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-c3a21dacb9
+label: isobrevione E
+chemical_structure:
+  smiles: '[H][C@@]12C\C(O[C@@]11C(C)=C[C@]3([H])O[C@]4([H])CC(=O)C=C(C)[C@@]5([H])CC[C@@]1([C@@H](OC(C)=O)O2)[C@]3([H])[C@]45C)=C(/C)C(C)=O'
+  standard_inchi: InChI=1S/C28H34O7/c1-13-9-18(31)11-22-26(6)19(13)7-8-27-24(26)21(33-22)10-14(2)28(27)23(34-25(27)32-17(5)30)12-20(35-28)15(3)16(4)29/h9-10,19,21-25H,7-8,11-12H2,1-6H3/b20-15-/t19-,21+,22-,23-,24+,25+,26+,27+,28+/m1/s1
+  standard_inchi_key: JNDQPDZQDHPEAE-WCVIEGAVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002759
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Breviane diterpenoids
+  is_glycoside: true
+bgc_class:
+- TERPENE
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:293381
+  taxon_label: Penicillium bialowiezense CBS 227.28
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002759
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1002/anie.202210938
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002759 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002759
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:293381
+  organism_label: Penicillium bialowiezense CBS 227.28
+  evidence:
+  - reference: DOI:10.1002/anie.202210938
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002759 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LC719581.1
+  locus_from: 1
+  locus_to: 41588
+  bgc_class:
+  - TERPENE
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002759
+  source_label: isobrevione E
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c3a21dacb9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-389d6b09a2
+label: thalassospiramide A
+chemical_structure:
+  smiles: CCCCCC\C=C/CC(=O)N[C@@H](CO)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CO)[C@@H](O)CC(=O)N[C@@H](C(C)C)C(=O)N[C@H]1COC(=O)[C@H](CC2=CC=C(O)C=C2)N(C)C(=O)[C@@H](NC(=O)\C=C\1)C(C)C
+  standard_inchi: InChI=1S/C48H75N7O13/c1-9-10-11-12-13-14-15-16-38(60)50-35(26-57)44(63)54-42(29(4)5)46(65)51-34(25-56)37(59)24-40(62)53-41(28(2)3)45(64)49-32-19-22-39(61)52-43(30(6)7)47(66)55(8)36(48(67)68-27-32)23-31-17-20-33(58)21-18-31/h14-15,17-22,28-30,32,34-37,41-43,56-59H,9-13,16,23-27H2,1-8H3,(H,49,64)(H,50,60)(H,51,65)(H,52,61)(H,53,62)(H,54,63)/b15-14-,22-19+/t32-,34+,35+,36+,37+,41+,42+,43+/m1/s1
+  standard_inchi_key: MGOHJFNPHUCXQI-GXZBMJRDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001050
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA01933
+producer_organisms:
+- taxon_id: NCBITaxon:657419
+  taxon_label: Tistrella bauzanensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001050
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17373804
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001050 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001050
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:657419
+  organism_label: Tistrella bauzanensis
+  evidence:
+  - reference: PMID:17373804
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001050 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KC181865.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001050
+  source_label: thalassospiramide A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-389d6b09a2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

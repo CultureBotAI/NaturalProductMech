@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-36abc129e4
+label: butirosin A
+chemical_structure:
+  smiles: C1[C@@H]([C@H]([C@@H]([C@H]([C@@H]1NC(=O)[C@H](CCN)O)O)O[C@H]2[C@@H]([C@H]([C@H](O2)CO)O)O)O[C@@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CN)O)O)N)N
+  standard_inchi: InChI=1S/C21H41N5O12/c22-2-1-8(28)19(34)26-7-3-6(24)17(37-20-11(25)15(32)13(30)9(4-23)35-20)18(12(7)29)38-21-16(33)14(31)10(5-27)36-21/h6-18,20-21,27-33H,1-5,22-25H2,(H,26,34)/t6-,7+,8-,9+,10+,11+,12-,13+,14-,15+,16+,17+,18+,20+,21-/m0/s1
+  standard_inchi_key: XEQLFNPSYWZPOW-SVRMBHBBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000693
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Polyols
+  class_results:
+  - Amino cyclitols
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- pubchem:12302171
+producer_organisms:
+- taxon_id: NCBITaxon:1397
+  taxon_label: Bacillus circulans
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000693
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:11132962
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000693 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000693
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1397
+  organism_label: Bacillus circulans
+  evidence:
+  - reference: PMID:11132962
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000693 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB097196.1
+  bgc_class:
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000693
+  source_label: butirosin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-36abc129e4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

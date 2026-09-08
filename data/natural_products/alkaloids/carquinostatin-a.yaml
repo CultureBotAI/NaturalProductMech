@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-9fd3fd0d57
+label: carquinostatin A
+chemical_structure:
+  smiles: CC1=C(C2=C(C3=C(N2)C=CC(=C3)CC=C(C)C)C(=O)C1=O)C[C@@H](C)O
+  standard_inchi: InChI=1S/C21H23NO3/c1-11(2)5-6-14-7-8-17-16(10-14)18-19(22-17)15(9-12(3)23)13(4)20(24)21(18)25/h5,7-8,10,12,22-23H,6,9H2,1-4H3/t12-/m1/s1
+  standard_inchi_key: GBIKJKJPENMVHL-GFCCVEGCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002554
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA001264
+producer_organisms:
+- taxon_id: NCBITaxon:1905
+  taxon_label: Streptomyces exfoliatus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002554
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:31350791
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002554 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002554
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1905
+  organism_label: Streptomyces exfoliatus
+  evidence:
+  - reference: PMID:31350791
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002554 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LC406090.1
+  locus_from: 1
+  locus_to: 7849
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002554
+  source_label: carquinostatin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-9fd3fd0d57
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

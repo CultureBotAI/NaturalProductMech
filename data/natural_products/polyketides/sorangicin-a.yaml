@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-af88b24af3
+label: sorangicin A
+chemical_structure:
+  smiles: CC(CCCCC(O)=O)\C=C(/C)C1OC2C\C=C\CC\C=C\C(O)C(O)[C@H]3C[C@H](O)C(C)C(C\C=C\[C@@H]4O[C@@H]5C[C@@H](O[C@@H]5\C=C\C=C/C=C\C(=O)OC1C=C2)[C@H]4C)O3
+  standard_inchi: InChI=1S/C47H66O11/c1-30(17-14-15-23-44(50)51)27-31(2)47-40-26-25-34(54-47)18-10-6-5-7-11-19-35(48)46(53)43-28-36(49)32(3)37(56-43)21-16-22-38-33(4)41-29-42(55-38)39(57-41)20-12-8-9-13-24-45(52)58-40/h6,8-13,16,19-20,22,24-27,30,32-43,46-49,53H,5,7,14-15,17-18,21,23,28-29H2,1-4H3,(H,50,51)/b9-8-,10-6+,19-11+,20-12+,22-16+,24-13-,31-27+/t30?,32?,33-,34?,35?,36-,37?,38-,39+,40?,41+,42+,43+,46?,47?/m0/s1
+  standard_inchi_key: OTABDKFPJQZJRD-XKZALBOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000184
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA0537
+producer_organisms:
+- taxon_id: NCBITaxon:56
+  taxon_label: Sorangium cellulosum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000184
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:20715267
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000184 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000184
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:56
+  organism_label: Sorangium cellulosum
+  evidence:
+  - reference: PMID:20715267
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000184 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HM584908.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000184
+  source_label: sorangicin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-af88b24af3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-0a57512072
+label: lysolipin I
+chemical_structure:
+  smiles: '[H][C@]12OCOC3=C1C(=C(O)C1=C3OC3=C(OC)C(Cl)=CC=C3C1=O)C1=C(O)C3=C(C=C1[C@H]2OC)[C@H](O)[C@H](OC)N(C)C3=O'
+  standard_inchi: InChI=1S/C29H24ClNO11/c1-31-28(36)14-10(19(33)29(31)39-4)7-11-13(20(14)34)15-16-25(22(11)37-2)40-8-41-26(16)27-17(21(15)35)18(32)9-5-6-12(30)24(38-3)23(9)42-27/h5-7,19,22,25,29,33-35H,8H2,1-4H3/t19-,22+,25-,29-/m0/s1
+  standard_inchi_key: NEOMIZJYHXSRLV-ZIITWBKLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000242
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Ericamycins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA04366
+producer_organisms:
+- taxon_id: NCBITaxon:1932
+  taxon_label: Streptomyces tendae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000242
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:20399259
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000242 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000242
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1932
+  organism_label: Streptomyces tendae
+  evidence:
+  - reference: PMID:20399259
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000242 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM492533.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000242
+  source_label: lysolipin I
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0a57512072
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

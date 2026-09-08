@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-e3cc0a0181
+label: ambactin
+chemical_structure:
+  smiles: CC(C)C[C@@H]1NC(=O)[C@@H](CC2=CC=CC=C2)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@@H](CO)NC(=O)[C@H](CCCCN)NC(=O)[C@@H](CC2=CC=CC=C2)NC1=O
+  standard_inchi: InChI=1S/C38H54N8O8/c1-23(2)19-28-35(51)45-29(20-24-11-5-3-6-12-24)36(52)41-26(15-9-10-18-39)33(49)46-31(22-47)38(54)42-27(16-17-32(40)48)34(50)44-30(37(53)43-28)21-25-13-7-4-8-14-25/h3-8,11-14,23,26-31,47H,9-10,15-22,39H2,1-2H3,(H2,40,48)(H,41,52)(H,42,54)(H,43,53)(H,44,50)(H,45,51)(H,46,49)/t26-,27-,28-,29+,30+,31+/m0/s1
+  standard_inchi_key: HMXRHVCZYGEXRQ-JYMVZIKVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001131
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA01035
+producer_organisms:
+- taxon_id: NCBITaxon:351674
+  taxon_label: Xenorhabdus miraniensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001131
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:24816640
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001131 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001131
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:351674
+  organism_label: Xenorhabdus miraniensis
+  evidence:
+  - reference: PMID:24816640
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001131 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NITZ01000005.1
+  locus_from: 144017
+  locus_to: 173487
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001131
+  source_label: ambactin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e3cc0a0181
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

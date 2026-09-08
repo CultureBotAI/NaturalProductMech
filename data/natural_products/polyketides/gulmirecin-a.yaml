@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-930874fc4d
+label: gulmirecin A
+chemical_structure:
+  smiles: CC=C(C)C1CC=C(C)C(OC2OC(CO)C(O)C2O)C(OC(=O)CC(C)C)C(=O)CC(O)C(C)C(=O)O1
+  standard_inchi: InChI=1S/C27H42O11/c1-7-14(4)19-9-8-15(5)24(38-27-23(33)22(32)20(12-28)36-27)25(37-21(31)10-13(2)3)18(30)11-17(29)16(6)26(34)35-19/h7-8,13,16-17,19-20,22-25,27-29,32-33H,9-12H2,1-6H3
+  standard_inchi_key: BJWRCLLKJSLIRN-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000072
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactones
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA0955
+producer_organisms:
+- taxon_id: NCBITaxon:394095
+  taxon_label: Pyxidicoccus fallax
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000072
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25287056
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000072 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000072
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:394095
+  organism_label: Pyxidicoccus fallax
+  evidence:
+  - reference: PMID:25287056
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000072 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KM361622.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000072
+  source_label: gulmirecin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-930874fc4d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

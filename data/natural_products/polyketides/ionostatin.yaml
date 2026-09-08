@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-e9eda0849c
+label: ionostatin
+chemical_structure:
+  smiles: C[C@H](C[C@H](C)C(=O)O)C[C@@H](C)C[C@H](C)C(=O)C=C(O)[C@H](C)C[C@H](C)C/C=C/[C@@H](C)[C@@H](O)[C@@H](C)[C@@H](O)C[C@@H]1CC[C@@](C)([C@@H]2CC[C@H]([C@@H](C)O)O2)O1
+  standard_inchi: InChI=1S/C41H72O9/c1-24(19-28(5)34(43)23-35(44)29(6)20-25(2)18-26(3)21-30(7)40(47)48)12-11-13-27(4)39(46)31(8)36(45)22-33-16-17-41(10,50-33)38-15-14-37(49-38)32(9)42/h11,13,23-33,36-39,42-43,45-46H,12,14-22H2,1-10H3,(H,47,48)/b13-11+,34-23?/t24-,25-,26+,27-,28-,29+,30+,31+,32-,33+,36+,37-,38+,39-,41+/m1/s1
+  standard_inchi_key: URYRLBBQUXHSHU-UFYBQNGHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002446
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA032994
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002446
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:32852937
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002446 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002446
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:32852937
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002446 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT571494.1
+  locus_from: 1
+  locus_to: 101096
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002446
+  source_label: ionostatin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-e9eda0849c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

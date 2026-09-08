@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-942dcb1c8b
+label: necroxime A
+chemical_structure:
+  smiles: CON=CC=CC(=O)NC=CC[C@H]1C[C@@H](OC(=O)[C@H](CCCCN)NC(=O)C[C@@H](C)O)[C@H]2O[C@H]2[C@@H](O)C=CC2=C(C(=O)O1)C(O)=CC=C2
+  standard_inchi: InChI=1S/C33H44N4O11/c1-20(38)18-28(42)37-23(10-3-4-15-34)32(43)47-26-19-22(9-6-16-35-27(41)12-7-17-36-45-2)46-33(44)29-21(8-5-11-24(29)39)13-14-25(40)30-31(26)48-30/h5-8,11-14,16-17,20,22-23,25-26,30-31,38-40H,3-4,9-10,15,18-19,34H2,1-2H3,(H,35,41)(H,37,42)/t20-,22+,23+,25+,26-,30+,31-/m1/s1
+  standard_inchi_key: DCGOFMMAYQGADN-RKCJKIKXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002050
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA031543
+producer_organisms:
+- taxon_id: NCBITaxon:2713619
+  taxon_label: Burkholderia sp. B8(2020)
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002050
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1002/anie.201916007
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002050 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002050
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2713619
+  organism_label: Burkholderia sp. B8(2020)
+  evidence:
+  - reference: DOI:10.1002/anie.201916007
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002050 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MN734804.1
+  locus_from: 20001
+  locus_to: 86009
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002050
+  source_label: necroxime A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-942dcb1c8b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

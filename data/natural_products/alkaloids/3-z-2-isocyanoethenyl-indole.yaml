@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-4ef23cbf1d
+label: 3-(Z-2'-isocyanoethenyl)-indole
+chemical_structure:
+  smiles: '[C-]#[N+]/C=C\C1=CNC2=CC=CC=C21'
+  standard_inchi: InChI=1S/C11H8N2/c1-12-7-6-9-8-13-11-5-3-2-4-10(9)11/h2-8,13H/b7-6-
+  standard_inchi_key: JQMYMZZLIOIXEO-SREVYHEPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000668
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Simple indole alkaloids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1433842
+  taxon_label: Hapalosiphon welwitschii UTEX B 1830
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000668
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1002/cbic.201300794
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000668 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000668
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1433842
+  organism_label: Hapalosiphon welwitschii UTEX B 1830
+  evidence:
+  - reference: DOI:10.1002/cbic.201300794
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000668 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KF811479.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000668
+  source_label: 3-(Z-2'-isocyanoethenyl)-indole
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4ef23cbf1d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

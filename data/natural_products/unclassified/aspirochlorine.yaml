@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-feb62f79ee
+label: aspirochlorine
+chemical_structure:
+  smiles: '[H][C@@]12SS[C@]3([H])NC(=O)[C@@]1(OC1=C2C=C(Cl)C(O)=C1)N(OC)C3=O'
+  standard_inchi: InChI=1S/C12H9ClN2O5S2/c1-19-15-10(17)9-14-11(18)12(15)8(21-22-9)4-2-5(13)6(16)3-7(4)20-12/h2-3,8-9,16H,1H3,(H,14,18)/t8-,9-,12+/m0/s1
+  standard_inchi_key: XMFSSFONDVHNFO-HOTUBEGUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001123
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Thiodiketopiperazine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA09910
+- pubchem:44559211
+producer_organisms:
+- taxon_id: NCBITaxon:510516
+  taxon_label: Aspergillus oryzae RIB40
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001123
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:25302411
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001123 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001123
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:510516
+  organism_label: Aspergillus oryzae RIB40
+  evidence:
+  - reference: PMID:25302411
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001123 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AP007154.1
+  locus_from: 59595
+  locus_to: 103337
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001123
+  source_label: aspirochlorine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-feb62f79ee
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

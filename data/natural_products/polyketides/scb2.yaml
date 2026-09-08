@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-49c3386c34
+label: SCB2
+chemical_structure:
+  smiles: '[H][C@]1([C@H](O)CCCCCCC)[C@H](CO)COC1=O'
+  standard_inchi: InChI=1S/C13H24O4/c1-2-3-4-5-6-7-11(15)12-10(8-14)9-17-13(12)16/h10-12,14-15H,2-9H2,1H3/t10-,11-,12-/m1/s1
+  standard_inchi_key: MIVWVMMAZAALNA-IJLUTSLNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000849
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA06705
+producer_organisms:
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000849
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:12000953
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000849 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000849
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:100226
+  organism_label: Streptomyces coelicolor A3(2)
+  evidence:
+  - reference: PMID:12000953
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000849 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AL645882.2
+  locus_from: 6890528
+  locus_to: 6892237
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000849
+  source_label: SCB2
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-49c3386c34
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

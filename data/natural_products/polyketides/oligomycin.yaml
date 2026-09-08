@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-86258f37c8
+label: oligomycin
+chemical_structure:
+  smiles: CC[C@H]\1CC[C@@H]2[C@@H]([C@@H]([C@H]([C@@]3(O2)CC[C@H]([C@H](O3)C[C@H](C)O)C)C)OC(=O)/C=C/[C@H]([C@@H]([C@H](C(=O)[C@H]([C@@H]([C@H](C(=O)[C@@]([C@@H]([C@H](C/C=C/C=C1)C)O)(C)O)C)O)C)C)O)C)C
+  standard_inchi: InChI=1S/C45H74O11/c1-12-34-17-15-13-14-16-27(4)42(51)44(11,53)43(52)32(9)40(50)31(8)39(49)30(7)38(48)26(3)18-21-37(47)54-41-29(6)35(20-19-34)55-45(33(41)10)23-22-25(2)36(56-45)24-28(5)46/h13-15,17-18,21,25-36,38,40-42,46,48,50-51,53H,12,16,19-20,22-24H2,1-11H3/b14-13+,17-15+,21-18+/t25-,26-,27+,28+,29+,30-,31-,32-,33-,34-,35-,36-,38+,40+,41+,42-,44+,45-/m1/s1
+  standard_inchi_key: MNULEGDCPYONBU-WMBHJXFZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000117
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Oligomycins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:5281899
+producer_organisms:
+- taxon_id: NCBITaxon:33903
+  taxon_label: Streptomyces avermitilis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000117
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:11572948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000117 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000117
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33903
+  organism_label: Streptomyces avermitilis
+  evidence:
+  - reference: PMID:11572948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000117 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB070940.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000117
+  source_label: oligomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-86258f37c8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

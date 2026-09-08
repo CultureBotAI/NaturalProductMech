@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-e046b758ea
+label: antalid
+chemical_structure:
+  smiles: CC[C@H](O)C[C@H]1OC(=O)[C@@H](CC2=CC=CC=C2)NC(=O)C2=CSC(=N2)[C@@H](NC(=O)\C(C)=C\[C@H]1C)C(C)C
+  standard_inchi: InChI=1S/C28H37N3O5S/c1-6-20(32)14-23-17(4)12-18(5)25(33)31-24(16(2)3)27-30-22(15-37-27)26(34)29-21(28(35)36-23)13-19-10-8-7-9-11-19/h7-12,15-17,20-21,23-24,32H,6,13-14H2,1-5H3,(H,29,34)(H,31,33)/b18-12+/t17-,20+,21-,23-,24+/m1/s1
+  standard_inchi_key: LMWDPSXUGSTACD-NUVVKISZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001235
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA017475
+producer_organisms:
+- taxon_id: NCBITaxon:889282
+  taxon_label: Polyangium spumosum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001235
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:27220069
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001235 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001235
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:889282
+  organism_label: Polyangium spumosum
+  evidence:
+  - reference: PMID:27220069
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001235 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KU245058.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001235
+  source_label: antalid
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-e046b758ea
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-5634f6b25e
+label: patellin 3
+chemical_structure:
+  smiles: C[C@H]([C@H]1C(=O)N[C@H](C(=O)N2CCC[C@H]2C(=O)N[C@H](C(=O)N3CCC[C@H]3C(=O)N[C@H](C(=O)N[C@H](C4=N[C@@H](CS4)C(=O)N1)CC(C)C)C(C)OC(C)(C)C=C)C(C)C)CC(C)C)OC(C)(C)C=C
+  standard_inchi: InChI=1S/C48H78N8O9S/c1-15-47(11,12)64-29(9)37-43(61)50-32(24-27(5)6)45(62)55-21-17-19-34(55)40(58)52-36(28(7)8)46(63)56-22-18-20-35(56)41(59)54-38(30(10)65-48(13,14)16-2)42(60)49-31(23-26(3)4)44-51-33(25-66-44)39(57)53-37/h15-16,26-38H,1-2,17-25H2,3-14H3,(H,49,60)(H,50,61)(H,52,58)(H,53,57)(H,54,59)/t29-,30?,31+,32+,33+,34+,35+,36+,37+,38+/m1/s1
+  standard_inchi_key: FOCOTNVJSJLTEU-YCDZJTNJSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000477
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Cyanobactins
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:24762150
+producer_organisms:
+- taxon_id: NCBITaxon:503010
+  taxon_label: uncultured Prochloron sp. 06037A
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000477
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:18425112
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000477 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000477
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:503010
+  organism_label: uncultured Prochloron sp. 06037A
+  evidence:
+  - reference: PMID:18425112
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000477 entry version 3; citation taken from the entry level
+  genome_accession: genbank:EU290742.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000477
+  source_label: patellin 3
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-5634f6b25e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

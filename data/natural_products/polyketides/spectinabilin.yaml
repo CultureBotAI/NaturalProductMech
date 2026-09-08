@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-cc541c54f7
+label: spectinabilin
+chemical_structure:
+  smiles: COC1=C(C)C(=O)C(C)=C(O1)C1C\C(CO1)=C\C(\C)=C\C(\C)=C\C(\C)=C\C1=CC=C(C=C1)N(=O)=O
+  standard_inchi: InChI=1S/C28H31NO6/c1-17(11-18(2)13-22-7-9-24(10-8-22)29(31)32)12-19(3)14-23-15-25(34-16-23)27-20(4)26(30)21(5)28(33-6)35-27/h7-14,25H,15-16H2,1-6H3/b17-11+,18-13+,19-12+,23-14-
+  standard_inchi_key: IZICQJAGBLBAMJ-MNOZRKQQSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000110
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 4-pyrone derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA01602
+producer_organisms:
+- taxon_id: NCBITaxon:67339
+  taxon_label: Streptomyces orinoci
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000110
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:17763486
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000110 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000110
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67339
+  organism_label: Streptomyces orinoci
+  evidence:
+  - reference: PMID:17763486
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000110 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM778535.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000110
+  source_label: spectinabilin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-cc541c54f7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

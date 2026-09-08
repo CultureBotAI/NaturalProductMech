@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-05c13f3c58
+label: Paxilline
+chemical_structure:
+  smiles: CC(C)(O)[C@H]1O[C@H]2CC[C@@]3(C)[C@@](O)(CC[C@H]4CC5=C([NH]C6=CC=CC=C56)[C@@]43C)C2=CC1=O
+  standard_inchi: InChI=1S/C27H33NO4/c1-24(2,30)23-20(29)14-18-21(32-23)10-11-25(3)26(4)15(9-12-27(18,25)31)13-17-16-7-5-6-8-19(16)28-22(17)26/h5-8,14-15,21,23,28,30-31H,9-13H2,1-4H3/t15-,21-,23-,25+,26+,27+/m0/s1
+  standard_inchi_key: ACNHBCIZLNNLRS-UBGQALKQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001082
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Terpenoids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Indole-Diterpenoid alkaloids (Penitrems)
+  is_glycoside: false
+bgc_class:
+- TERPENE
+compound_classes:
+- Terpenoid-alkaloid
+- Diterpenoid
+xrefs:
+- npatlas:NPA028977
+producer_organisms:
+- taxon_id: NCBITaxon:70109
+  taxon_label: Penicillium paxilli
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001082
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1021/ja3116636
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001082 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001082
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:70109
+  organism_label: Penicillium paxilli
+  evidence:
+  - reference: DOI:10.1021/ja3116636
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001082 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:HM171111.1
+  locus_from: 28174
+  locus_to: 46982
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001082
+  source_label: Paxilline
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-05c13f3c58
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-168c211a3d
+label: stlassin
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]1NC(=O)[C@H](C(C)C)NC(=O)[C@H](C(C)C)NC(=O)[C@H](CC(C)C)NC(=O)C[C@@H](C(=O)N[C@@H](CC2=C[NH]C3=CC=CC=C23)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](C)C(=O)N2CCC[C@H]2C(=O)NCC(=O)N[C@@H](CC2=C[NH]C3=CC=CC=C23)C(=O)N[C@@H](CC2=CC=CC=C2)C(=O)O)NC(=O)[C@H](C)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](C(C)C)NC1=O
+  standard_inchi: InChI=1S/C84H117N19O19/c1-13-45(10)70-82(119)101-67(42(4)5)79(116)94-55(29-30-63(85)104)72(109)90-46(11)71(108)95-60(37-65(106)92-56(32-41(2)3)77(114)99-68(43(6)7)80(117)100-69(44(8)9)81(118)102-70)76(113)96-58(35-50-39-88-54-27-20-18-25-52(50)54)75(112)97-59(36-64(86)105)73(110)91-47(12)83(120)103-31-21-28-62(103)78(115)89-40-66(107)93-57(34-49-38-87-53-26-19-17-24-51(49)53)74(111)98-61(84(121)122)33-48-22-15-14-16-23-48/h14-20,22-27,38-39,41-47,55-62,67-70,87-88H,13,21,28-37,40H2,1-12H3,(H2,85,104)(H2,86,105)(H,89,115)(H,90,109)(H,91,110)(H,92,106)(H,93,107)(H,94,116)(H,95,108)(H,96,113)(H,97,112)(H,98,111)(H,99,114)(H,100,117)(H,101,119)(H,102,118)(H,121,122)/t45-,46-,47-,55-,56-,57-,58-,59-,60-,61-,62-,67-,68-,69-,70-/m0/s1
+  standard_inchi_key: OWYJGJDERIGZOT-OEWGAXMZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002425
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA033077
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002425
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:34603665
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002425 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002425
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:34603665
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002425 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MZ182273.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002425
+  source_label: stlassin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-168c211a3d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

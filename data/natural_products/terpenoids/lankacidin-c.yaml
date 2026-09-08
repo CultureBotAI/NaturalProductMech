@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-441a8c4d3f
+label: lankacidin C
+chemical_structure:
+  smiles: '[H][C@]12C[C@]([H])(O)\C=C\C(\C)=C\C[C@]([H])(O)\C=C\C(\C)=C\[C@@]([H])(NC(=O)C(C)=O)[C@](C)(C(=O)O1)C(=O)[C@@H]2C'
+  standard_inchi: InChI=1S/C25H33NO7/c1-14-6-9-18(28)10-8-15(2)12-21(26-23(31)17(4)27)25(5)22(30)16(3)20(33-24(25)32)13-19(29)11-7-14/h6-8,10-12,16,18-21,28-29H,9,13H2,1-5H3,(H,26,31)/b10-8+,11-7+,14-6+,15-12+/t16-,18+,19-,20-,21-,25+/m1/s1
+  standard_inchi_key: ATDILMLBOZKFGI-JUTMVFGESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001100
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Cembrane diterpenoids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA04098
+producer_organisms:
+- taxon_id: NCBITaxon:1928
+  taxon_label: Streptomyces rochei
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001100
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:12791134
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001100 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001100
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1928
+  organism_label: Streptomyces rochei
+  evidence:
+  - reference: PMID:12791134
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001100 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB088224.2
+  locus_from: 4922
+  locus_to: 35881
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001100
+  source_label: lankacidin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-441a8c4d3f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

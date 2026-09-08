@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-08e62a89df
+label: mensacaricin
+chemical_structure:
+  smiles: C[C@H]1[C@H]([C@@]23C(=O)C4=C([C@@H]([C@@]2(O3)[C@H]([C@@]1(C(=O)[C@H]5[C@@H](O5)C)O)O)OC)C(=CC=C4)OC)O
+  standard_inchi: InChI=1S/C21H24O9/c1-8-14(22)20-15(23)10-6-5-7-11(27-3)12(10)17(28-4)21(20,30-20)18(25)19(8,26)16(24)13-9(2)29-13/h5-9,13-14,17-18,22,25-26H,1-4H3/t8-,9-,13+,14+,17-,18-,19+,20+,21+/m0/s1
+  standard_inchi_key: WWNXYRCJJRRWAQ-ALCXHWRFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001177
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:403671
+producer_organisms:
+- taxon_id: NCBITaxon:42235
+  taxon_label: Streptomyces bottropensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001177
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:22162248
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001177 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001177
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:42235
+  organism_label: Streptomyces bottropensis
+  evidence:
+  - reference: PMID:22162248
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001177 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KJ437437.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001177
+  source_label: mensacaricin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-08e62a89df
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-a56e9434ac
+label: amphi-enterobactin 3
+chemical_structure:
+  smiles: CCCCCCCCCCCCCC(=O)NC1COC(=O)C(COC(=O)C(COC(=O)C(COC1=O)NC(=O)C1=CC=CC(O)=C1O)NC(=O)C1=CC=CC(O)=C1O)NC(=O)C1=CC=CC(O)=C1O
+  standard_inchi: InChI=1S/C47H58N4O18/c1-2-3-4-5-6-7-8-9-10-11-12-22-37(55)48-30-23-66-45(63)32(50-42(60)28-17-14-20-35(53)39(28)57)25-68-47(65)33(51-43(61)29-18-15-21-36(54)40(29)58)26-69-46(64)31(24-67-44(30)62)49-41(59)27-16-13-19-34(52)38(27)56/h13-21,30-33,52-54,56-58H,2-12,22-26H2,1H3,(H,48,55)(H,49,59)(H,50,60)(H,51,61)
+  standard_inchi_key: CBRXULRQDGBACQ-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001890
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Lactone
+producer_organisms:
+- taxon_id: NCBITaxon:1224742
+  taxon_label: Vibrio campbellii ATCC BAA-1116
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001890
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:29954861
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001890 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001890
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1224742
+  organism_label: Vibrio campbellii ATCC BAA-1116
+  evidence:
+  - reference: PMID:29954861
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001890 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP000789.1
+  locus_from: 1392460
+  locus_to: 1420816
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001890
+  source_label: amphi-enterobactin 3
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-a56e9434ac
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

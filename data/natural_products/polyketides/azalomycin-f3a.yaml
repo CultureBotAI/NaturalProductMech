@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-bb3abd88fc
+label: azalomycin F3a
+chemical_structure:
+  smiles: CC(CCC\C=C\CCCNC(N)=N)C1OC(=O)\C(C)=C/C=C\C(C)C(O)CC(O)C(C)C(O)CCC(C)C(O)CC2(O)OC(CC(O)C2O)CC(CC(O)CC(O)CC(O)\C(C)=C/C=C\C1C)OC(=O)CC(O)=O
+  standard_inchi: InChI=1S/C55H93N3O17/c1-32-17-14-19-36(5)51(35(4)16-12-10-8-9-11-13-23-58-54(56)57)74-53(71)37(6)20-15-18-33(2)45(63)29-46(64)38(7)43(61)22-21-34(3)48(66)31-55(72)52(70)47(65)28-42(75-55)27-41(73-50(69)30-49(67)68)25-39(59)24-40(60)26-44(32)62/h8-9,14-15,17-20,33-36,38-48,51-52,59-66,70,72H,10-13,16,21-31H2,1-7H3,(H,67,68)(H4,56,57,58)/b9-8+,18-15-,19-14-,32-17-,37-20-
+  standard_inchi_key: UVUPYXTUQSCQRV-QDMXRTSESA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001523
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA05717
+producer_organisms:
+- taxon_id: NCBITaxon:686293
+  taxon_label: Streptomyces sp. 211726
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001523
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28418225
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001523 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001523
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:686293
+  organism_label: Streptomyces sp. 211726
+  evidence:
+  - reference: PMID:28418225
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001523 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY484834.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001523
+  source_label: azalomycin F3a
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-bb3abd88fc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

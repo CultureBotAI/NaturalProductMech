@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-c8b2658652
+label: capreomycin IA
+chemical_structure:
+  smiles: O=C(N[C@@H](CNC(C[C@H](N)CCCN)=O)C(N/C(C(N[C@@H]([C@H]1CCN=C(N)N1)C(NC[C@H](N)C(N2)=O)=O)=O)=C\NC(N)=O)=O)[C@@H]2CO
+  standard_inchi: InChI=1S/C25H44N14O8/c26-4-1-2-11(27)6-17(41)32-8-14-20(43)35-15(9-34-25(30)47)21(44)39-18(13-3-5-31-24(29)38-13)23(46)33-7-12(28)19(42)37-16(10-40)22(45)36-14/h9,11-14,16,18,40H,1-8,10,26-28H2,(H,32,41)(H,33,46)(H,35,43)(H,36,45)(H,37,42)(H,39,44)(H3,29,31,38)(H3,30,34,47)/b15-9-/t11-,12+,13-,14+,16+,18+/m1/s1
+  standard_inchi_key: JNIIDKODPGHQSS-CGLFUZANSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000316
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:66854
+  taxon_label: Saccharothrix mutabilis subsp. capreolus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000316
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17496129
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000316 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000316
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:66854
+  organism_label: Saccharothrix mutabilis subsp. capreolus
+  evidence:
+  - reference: PMID:17496129
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000316 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF472579.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000316
+  source_label: capreomycin IA
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c8b2658652
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

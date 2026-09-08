@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-349eb3ff75
+label: thioviridamide
+chemical_structure:
+  smiles: CCC(C)C1NC(=O)C(CS\C=C/NC(=O)C(NC(=O)C(CC(C)C)NC(=O)C(C)NC1=O)C(O)C1=CN(C)C=[N+]1C)NC(=O)C(C)NC(=S)C(C)NC(=S)C(C)NC(=S)C(C)NC(=S)C(CCSC)NC(=S)C(NC(=O)C(C)(O)CC(C)=O)C(C)C
+  standard_inchi: InChI=1S/C56H92N14O10S7/c1-17-29(6)41-49(78)58-31(8)44(73)63-37(22-27(2)3)46(75)67-42(43(72)39-24-69(14)26-70(39)15)48(77)57-19-21-87-25-38(47(76)66-41)64-45(74)32(9)59-50(81)33(10)60-51(82)34(11)61-52(83)35(12)62-53(84)36(18-20-86-16)65-54(85)40(28(4)5)68-55(79)56(13,80)23-30(7)71/h19,21,24,26-29,31-38,40-43,72,80H,17-18,20,22-23,25H2,1-16H3,(H11-,57,58,59,60,61,62,63,64,65,66,67,68,73,74,75,76,77,78,79,81,82,83,84,85)/p+1/b21-19-
+  standard_inchi_key: TZZVQGHYMBASEV-VZCXRCSSSA-O
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000625
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA011569
+producer_organisms:
+- taxon_id: NCBITaxon:67338
+  taxon_label: Streptomyces olivoviridis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000625
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23995943
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000625 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000625
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67338
+  organism_label: Streptomyces olivoviridis
+  evidence:
+  - reference: PMID:23995943
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000625 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB819757.1
+  locus_from: 7448
+  locus_to: 22902
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000625
+  source_label: thioviridamide
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-349eb3ff75
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

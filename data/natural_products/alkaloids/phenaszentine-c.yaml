@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-655b85955e
+label: phenaszentine C
+chemical_structure:
+  smiles: O=C([C@H](CC(C)C)N)OCC1=CC=C(OC)C2=NC3=C(C(O)=O)C=CC=C3N=C21
+  standard_inchi: InChI=1S/C21H23N3O5/c1-11(2)9-14(22)21(27)29-10-12-7-8-16(28-3)19-17(12)23-15-6-4-5-13(20(25)26)18(15)24-19/h4-8,11,14H,9-10,22H2,1-3H3,(H,25,26)/t14-/m0/s1
+  standard_inchi_key: MJPHEGDACGCSGU-AWEZNQCLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001869
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Phenazine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:1427518
+  taxon_label: Xenorhabdus szentirmaii DSM 16338
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001869
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production|Knock-out studies.'
+  evidence:
+  - reference: PMID:30886436
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001869 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001869
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1427518
+  organism_label: Xenorhabdus szentirmaii DSM 16338
+  evidence:
+  - reference: PMID:30886436
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001869 entry version 4; citation taken from the entry level
+  genome_accession: genbank:NIBV01000002.1
+  locus_from: 1256653
+  locus_to: 1268444
+  bgc_class:
+  - OTHER
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001869
+  source_label: phenaszentine C
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-655b85955e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

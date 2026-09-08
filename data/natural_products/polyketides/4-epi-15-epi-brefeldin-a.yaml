@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-302fcb080c
+label: 4-epi-15-epi-brefeldin A
+chemical_structure:
+  smiles: '[H][C@@]12C[C@H](O)C[C@@]1([H])[C@@H](O)\C=C\C(=O)O[C@H](C)CCC\C=C\2'
+  standard_inchi: InChI=1S/C16H24O4/c1-11-5-3-2-4-6-12-9-13(17)10-14(12)15(18)7-8-16(19)20-11/h4,6-8,11-15,17-18H,2-3,5,9-10H2,1H3/b6-4+,8-7+/t11-,12-,13+,14-,15+/m1/s1
+  standard_inchi_key: KQNZDYYTLMIZCT-QQRMDHKLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001141
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA018651
+producer_organisms:
+- taxon_id: NCBITaxon:1131482
+  taxon_label: Penicillium brefeldianum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001141
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1016/j.phytochem.2022.113243
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001141 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001141
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1131482
+  organism_label: Penicillium brefeldianum
+  evidence:
+  - reference: DOI:10.1016/j.phytochem.2022.113243
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001141 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KJ728786.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001141
+  source_label: 4-epi-15-epi-brefeldin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-302fcb080c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

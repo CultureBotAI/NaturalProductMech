@@ -1,0 +1,97 @@
+identifier: naturalproductmech:mibig-312f0d259a
+label: trichrysobactin
+chemical_structure:
+  smiles: C1[C@@H](C(=O)OC[C@@H](C(=O)OC[C@@H](C(=O)O1)NC(=O)[C@@H](CCCCN)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)[C@@H](CCCCN)NC(=O)C3=C(C(=CC=C3)O)O)NC(=O)[C@@H](CCCCN)NC(=O)C4=C(C(=CC=C4)O)O
+  standard_inchi: InChI=1S/C48H63N9O18/c49-19-4-1-13-28(52-40(64)25-10-7-16-34(58)37(25)61)43(67)55-31-22-73-47(71)33(57-45(69)30(15-3-6-21-51)54-42(66)27-12-9-18-36(60)39(27)63)24-75-48(72)32(23-74-46(31)70)56-44(68)29(14-2-5-20-50)53-41(65)26-11-8-17-35(59)38(26)62/h7-12,16-18,28-33,58-63H,1-6,13-15,19-24,49-51H2,(H,52,64)(H,53,65)(H,54,66)(H,55,67)(H,56,68)(H,57,69)/t28-,29-,30-,31+,32+,33+/m1/s1
+  standard_inchi_key: UCQNSMWQRQITLO-OKYIMTKNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002414
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA009364
+producer_organisms:
+- taxon_id: NCBITaxon:556
+  taxon_label: Dickeya chrysanthemi
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002414
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:34603680
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002414 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:556
+  taxon_label: Dickeya chrysanthemi
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002414
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:34603680
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002414 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002414
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:556
+  organism_label: Dickeya chrysanthemi
+  evidence:
+  - reference: PMID:34603680
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002414 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JAFCAF010000006.1
+  locus_from: 24998
+  locus_to: 48229
+  bgc_class:
+  - NRPS
+- accession: mibig:BGC0002414
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:556
+  organism_label: Dickeya chrysanthemi
+  evidence:
+  - reference: PMID:34603680
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002414 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JAFCAF010000006.1
+  locus_from: 24998
+  locus_to: 48229
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002414
+  source_label: trichrysobactin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-312f0d259a
+- source: MIBIG
+  source_id: BGC0002414
+  source_label: cyclic trichrysobactin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-e7b60b3faf
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

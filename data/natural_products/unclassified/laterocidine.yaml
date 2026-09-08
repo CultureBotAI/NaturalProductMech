@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-93558dbdb2
+label: laterocidine
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]1NC(=O)[C@@H](NC(=O)[C@H](CC2=C[NH]C3=CC=CC=C23)NC(=O)[C@@H](CCCN)NC(=O)CNC(=O)[C@H](CCCN)NC(=O)[C@@H](CCCN)NC(=O)[C@@H](CC2=C[NH]C3=CC=CC=C23)NC(=O)[C@@H](CC2=CC=C(O)C=C2)NC(=O)[C@@H](CO)NC(=O)CCCCCC(C)C)[C@@H](C)OC(=O)CNC(=O)CNC(=O)[C@H](CC(N)=O)NC1=O
+  standard_inchi: InChI=1S/C78H113N19O18/c1-6-44(4)67-77(113)95-60(36-62(82)100)70(106)86-39-64(102)85-41-66(104)115-45(5)68(78(114)96-67)97-75(111)59(35-48-38-84-53-21-13-11-19-51(48)53)93-71(107)55(23-15-31-80)88-65(103)40-87-69(105)54(22-14-30-79)90-72(108)56(24-16-32-81)91-74(110)58(34-47-37-83-52-20-12-10-18-50(47)52)94-73(109)57(33-46-26-28-49(99)29-27-46)92-76(112)61(42-98)89-63(101)25-9-7-8-17-43(2)3/h10-13,18-21,26-29,37-38,43-45,54-61,67-68,83-84,98-99H,6-9,14-17,22-25,30-36,39-42,79-81H2,1-5H3,(H2,82,100)(H,85,102)(H,86,106)(H,87,105)(H,88,103)(H,89,101)(H,90,108)(H,91,110)(H,92,112)(H,93,107)(H,94,109)(H,95,113)(H,96,114)(H,97,111)/t44-,45+,54-,55+,56+,57+,58+,59-,60-,61+,67-,68-/m0/s1
+  standard_inchi_key: MIUUXMLKAKRFMK-PCBFYWCHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002432
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA028418
+producer_organisms:
+- taxon_id: NCBITaxon:1042163
+  taxon_label: Brevibacillus laterosporus LMG 15441
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002432
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:30115920
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002432 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002432
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1042163
+  organism_label: Brevibacillus laterosporus LMG 15441
+  evidence:
+  - reference: PMID:30115920
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002432 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP007806.1
+  locus_from: 2818182
+  locus_to: 2905910
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002432
+  source_label: laterocidine
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-93558dbdb2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

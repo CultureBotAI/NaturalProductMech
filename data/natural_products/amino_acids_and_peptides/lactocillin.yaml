@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-54a8c938bd
+label: lactocillin
+chemical_structure:
+  smiles: O=C(NC(C(O)=O)C)C1=CSC(C2=CSC(C3=NC(C4=CSC(C(CSC(C5=CNC6=C5C=CC=C6)=O)NC7=O)=N4)=C(C8=NC(C(NC(C(C)O)C(N/C(C9=NC(C(NC(C%10=NC7CS%10)C(O)C)=O)=CS9)=C\C)=O)=O)=CS8)C=C3)=N2)=N1
+  standard_inchi: InChI=1S/C51H45N13O10S7/c1-5-26-45-59-33(16-77-45)42(70)64-37(22(4)66)49-61-31(17-80-49)40(68)56-34(19-81-51(74)25-12-52-27-9-7-6-8-23(25)27)47-57-29(13-76-47)38-24(44-58-32(14-75-44)41(69)63-36(21(3)65)43(71)55-26)10-11-28(54-38)46-62-35(18-79-46)48-60-30(15-78-48)39(67)53-20(2)50(72)73/h5-16,18,20-22,31,34,36-37,52,65-66H,17,19H2,1-4H3,(H,53,67)(H,55,71)(H,56,68)(H,63,69)(H,64,70)(H,72,73)/b26-5-
+  standard_inchi_key: WTPCCOAKKCTBIB-PLYROHNOSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000628
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:525326
+  taxon_label: Lactobacillus paragasseri JV-V03
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000628
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:25215495
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000628 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000628
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:525326
+  organism_label: Lactobacillus paragasseri JV-V03
+  evidence:
+  - reference: PMID:25215495
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000628 entry version 4; citation taken from the entry level
+  genome_accession: genbank:ACGO02000004.1
+  locus_from: 9724
+  locus_to: 23523
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000628
+  source_label: lactocillin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-54a8c938bd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

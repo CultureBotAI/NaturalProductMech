@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-dc8a9e5d80
+label: tartrolon E
+chemical_structure:
+  smiles: '[C@@H]1([H])[C@H]2O[C@]3(O[B-]45O[C@@]6([C@@H](O4)C(=O)O[C@@H](C)CCC=CC=CCC[C@H](O)CC1=O)O[C@@H](CC[C@H]6C)[C@@H]([H])C(=O)C[C@@H](O)CCC=CC=CCC[C@H](C)OC(=O)[C@@H]3O5)[C@H](C)CC2'
+  standard_inchi: InChI=1S/C44H64BO14/c1-29-21-23-37-27-35(48)25-33(46)19-15-11-8-6-10-14-18-32(4)53-42(51)40-44-30(2)22-24-38(55-44)28-36(49)26-34(47)20-16-12-7-5-9-13-17-31(3)52-41(50)39-43(29,54-37)58-45(56-39,57-40)59-44/h5-12,29-34,37-40,46-47H,13-28H2,1-4H3/q-1/t29-,30-,31+,32+,33+,34+,37+,38+,39+,40+,43+,44+,45?/m1/s1
+  standard_inchi_key: TUFQUNBGUWSRMC-QVSCXPOFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000185
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Boromycins
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Cyclic polyketide
+- Macrocyclic polyketide
+producer_organisms:
+- taxon_id: NCBITaxon:377629
+  taxon_label: Teredinibacter turnerae T7901
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000185
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1073/pnas.1213892110
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000185 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000185
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:377629
+  organism_label: Teredinibacter turnerae T7901
+  evidence:
+  - reference: DOI:10.1073/pnas.1213892110
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000185 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP001614.2
+  locus_from: 2282355
+  locus_to: 2332601
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000185
+  source_label: tartrolon E
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-dc8a9e5d80
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-078e4803f6
+label: terrestric acid
+chemical_structure:
+  smiles: CC[C@H]1CC/C(=C\2/C(=O)[C@H](OC2=O)C)/O1
+  standard_inchi: InChI=1S/C11H14O4/c1-3-7-4-5-8(15-7)9-10(12)6(2)14-11(9)13/h6-7H,3-5H2,1-2H3/b9-8+/t6-,7+/m1/s1
+  standard_inchi_key: AABWXKZJSNWRSH-URPQZBFOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002197
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - Phthalide derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA017711
+producer_organisms:
+- taxon_id: NCBITaxon:36656
+  taxon_label: Penicillium crustosum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002197
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression|Enzymatic assays.'
+  evidence:
+  - reference: PMID:30811183
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002197 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002197
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:36656
+  organism_label: Penicillium crustosum
+  evidence:
+  - reference: PMID:30811183
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002197 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MK360919.1
+  locus_from: 1
+  locus_to: 33648
+  bgc_class:
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002197
+  source_label: terrestric acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-078e4803f6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

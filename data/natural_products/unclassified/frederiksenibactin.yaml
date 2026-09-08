@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-b529fe76f7
+label: frederiksenibactin
+chemical_structure:
+  smiles: NCCCC[C@H](NC(=O)C1=C(O)C(O)=CC=C1)C(=O)N[C@@H](COC(=O)[C@H](COC(=O)[C@H](CO)NC(=O)[C@H](CCCCN)NC(=O)C1=C(O)C(O)=CC=C1)NC(=O)[C@H](CCCCN)NC(=O)C1=C(O)C(O)=CC=C1)C(=O)O
+  standard_inchi: InChI=1S/C48H65N9O19/c49-19-4-1-13-28(52-40(65)25-10-7-16-34(59)37(25)62)43(68)55-31(22-58)47(73)76-24-33(57-45(70)30(15-3-6-21-51)54-42(67)27-12-9-18-36(61)39(27)64)48(74)75-23-32(46(71)72)56-44(69)29(14-2-5-20-50)53-41(66)26-11-8-17-35(60)38(26)63/h7-12,16-18,28-33,58-64H,1-6,13-15,19-24,49-51H2,(H,52,65)(H,53,66)(H,54,67)(H,55,68)(H,56,69)(H,57,70)(H,71,72)/t28-,29-,30-,31-,32-,33-/m0/s1
+  standard_inchi_key: YTIOHQGZCPYGOD-FSJACQRISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002413
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Depsipeptides
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033076
+producer_organisms:
+- taxon_id: NCBITaxon:349966
+  taxon_label: Yersinia frederiksenii ATCC 33641
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002413
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:34603680
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002413 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002413
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:349966
+  organism_label: Yersinia frederiksenii ATCC 33641
+  evidence:
+  - reference: PMID:34603680
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002413 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KN150731.1
+  locus_from: 1728403
+  locus_to: 1750739
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002413
+  source_label: frederiksenibactin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b529fe76f7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

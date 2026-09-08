@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-775629690b
+label: kitacinnamycin F
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1NC(=O)[C@@H](CC(N)=O)NC(=O)[C@H](NC(=O)/C=C/C2=CC=CC=C2/C=C/C(=O)O)[C@@H](C)OC(=O)[C@H](CC(C)C)NC(=O)[C@@H](C(C)C)NC(=O)CNC(=O)CNC(=O)[C@@H](C(C)C)NC(=O)[C@H](CC2=CC=CC=C2)NC1=O
+  standard_inchi: InChI=1S/C55H76N10O14/c1-10-32(8)47-53(76)59-37(25-34-16-12-11-13-17-34)49(72)64-45(30(4)5)51(74)58-27-42(68)57-28-43(69)63-46(31(6)7)52(75)61-39(24-29(2)3)55(78)79-33(9)48(54(77)60-38(26-40(56)66)50(73)65-47)62-41(67)22-20-35-18-14-15-19-36(35)21-23-44(70)71/h11-23,29-33,37-39,45-48H,10,24-28H2,1-9H3,(H2,56,66)(H,57,68)(H,58,74)(H,59,76)(H,60,77)(H,61,75)(H,62,67)(H,63,69)(H,64,72)(H,65,73)(H,70,71)/b22-20+,23-21+/t32-,33+,37-,38+,39-,45+,46+,47+,48+/m0/s1
+  standard_inchi_key: SZYOCWYVOQEMMI-XPZSMLQJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002109
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033010
+producer_organisms:
+- taxon_id: NCBITaxon:1871188
+  taxon_label: Kitasatospora sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002109
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:31160959
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002109 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002109
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1871188
+  organism_label: Kitasatospora sp.
+  evidence:
+  - reference: PMID:31160959
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002109 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MK371213.1
+  locus_from: 5489
+  locus_to: 82312
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002109
+  source_label: kitacinnamycin F
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-775629690b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

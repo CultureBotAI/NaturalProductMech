@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-64e6ebd565
+label: lagunapyrone A
+chemical_structure:
+  smiles: C\C=C(/C)[C@@H](O)[C@H](C)[C@H](O)C\C=C(/C)\C=C(/C)C\C(C)=C\C\C=C(/C)[C@@H](O)[C@@H](C)C1=CC=C(C)C(=O)O1
+  standard_inchi: InChI=1S/C32H48O5/c1-10-23(5)30(34)26(8)28(33)16-14-21(3)19-22(4)18-20(2)12-11-13-24(6)31(35)27(9)29-17-15-25(7)32(36)37-29/h10,12-15,17,19,26-28,30-31,33-35H,11,16,18H2,1-9H3/b20-12+,21-14+,22-19+,23-10+,24-13+/t26-,27+,28-,30-,31-/m1/s1
+  standard_inchi_key: GIMZZVKKCVKWLL-JOKYFBJLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001647
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA019357
+producer_organisms:
+- taxon_id: NCBITaxon:1857892
+  taxon_label: Streptomyces sp. MP131-18
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001647
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28186197
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001647 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001647
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1857892
+  organism_label: Streptomyces sp. MP131-18
+  evidence:
+  - reference: PMID:28186197
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001647 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LZNS01000001.1
+  locus_from: 413230
+  locus_to: 431538
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001647
+  source_label: lagunapyrone A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-64e6ebd565
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

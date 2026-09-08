@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-b7d0178c9c
+label: pep5
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H](C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](C)C(=O)N[C@H](CS)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](CS)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](CCCCN)C(=O)N/C(=C\C)/C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](C)C(=O)N/C(=C\C)/C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC1=CC=CC=C1)C(=O)N/C(=C(\C)/S)/C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CS)C(=O)N[C@@H](CS)C(=O)N[C@@H](CCCCN)C(=O)NCC(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CC(=O)N)C(=O)NCC(=O)N[C@@H](CS)C(=O)N[C@@H](CCCCN)C(=O)O)NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)CNC(=O)[C@H](C)NC(=O)C(=O)CC
+  standard_inchi: InChI=1S/C153H258N46O41S6/c1-19-81(13)119(197-124(212)85(17)172-145(233)109-51-40-64-199(109)114(204)71-169-121(209)82(14)173-146(234)110(200)22-4)149(237)185-95(49-38-62-165-152(161)162)130(218)171-84(16)123(211)191-108(76-245)144(232)195-117(79(9)10)147(235)184-94(47-30-36-60-158)133(221)182-98(53-55-116(207)208)136(224)192-105(73-242)142(230)183-97(52-54-115(205)206)135(223)180-93(46-29-35-59-157)132(220)177-89(21-3)128(216)187-100(65-77(5)6)137(225)181-92(45-28-34-58-156)129(217)170-83(15)122(210)176-88(20-2)127(215)179-96(50-39-63-166-153(163)164)134(222)188-101(66-78(7)8)138(226)189-102(67-87-41-24-23-25-42-87)139(227)198-120(86(18)246)150(238)196-118(80(11)12)148(236)194-107(75-244)143(231)193-106(74-243)141(229)178-90(43-26-32-56-154)125(213)167-69-112(202)174-91(44-27-33-57-155)131(219)190-103(68-111(160)201)126(214)168-70-113(203)175-104(72-241)140(228)186-99(151(239)240)48-31-37-61-159/h20-21,23-25,41-42,77-85,90-109,117-119,241-246H,19,22,26-40,43-76,154-159H2,1-18H3,(H2,160,201)(H,167,213)(H,168,214)(H,169,209)(H,170,217)(H,171,218)(H,172,233)(H,173,234)(H,174,202)(H,175,203)(H,176,210)(H,177,220)(H,178,229)(H,179,215)(H,180,223)(H,181,225)(H,182,221)(H,183,230)(H,184,235)(H,185,237)(H,186,228)(H,187,216)(H,188,222)(H,189,226)(H,190,219)(H,191,211)(H,192,224)(H,193,231)(H,194,236)(H,195,232)(H,196,238)(H,197,212)(H,198,227)(H,205,206)(H,207,208)(H,239,240)(H4,161,162,165)(H4,163,164,166)/b88-20-,89-21-,120-86+/t81-,82-,83-,84-,85-,90-,91-,92-,93-,94-,95-,96-,97-,98-,99-,100-,101-,102-,103-,104-,105-,106-,107-,108+,109-,117-,118-,119-/m0/s1
+  standard_inchi_key: SRCAXTIBNLIRHU-JJKPAIEPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000543
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:16132355
+producer_organisms:
+- taxon_id: NCBITaxon:1282
+  taxon_label: Staphylococcus epidermidis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000543
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:7556197
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000543 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000543
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1282
+  organism_label: Staphylococcus epidermidis
+  evidence:
+  - reference: PMID:7556197
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000543 entry version 5; citation taken from the entry level
+  genome_accession: genbank:Z49865.1
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000543
+  source_label: pep5
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b7d0178c9c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

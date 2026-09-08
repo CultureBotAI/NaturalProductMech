@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-3f4d7c9236
+label: indolmycin
+chemical_structure:
+  smiles: '[H][C@](C)(C1=CNC2=CC=CC=C12)[C@@]1([H])OC(NC)=NC1=O'
+  standard_inchi: InChI=1S/C14H15N3O2/c1-8(12-13(18)17-14(15-2)19-12)10-7-16-11-6-4-3-5-9(10)11/h3-8,12,16H,1-2H3,(H,15,17,18)/t8-,12+/m0/s1
+  standard_inchi_key: GNTVWGDQPXCYBV-QPUJVOFHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001206
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Simple indole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA015391
+- pubchem:3082186
+producer_organisms:
+- taxon_id: NCBITaxon:67263
+  taxon_label: Streptomyces griseus subsp. griseus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001206
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25730866
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001206 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001206
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67263
+  organism_label: Streptomyces griseus subsp. griseus
+  evidence:
+  - reference: PMID:25730866
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001206 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KM596502.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001206
+  source_label: indolmycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3f4d7c9236
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

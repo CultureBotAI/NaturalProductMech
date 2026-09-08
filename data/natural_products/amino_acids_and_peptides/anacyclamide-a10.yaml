@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-55150ce0a8
+label: anacyclamide A10
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C(=O)N[C@H](C(=O)NCC(=O)N[C@H](C(=O)N2CCC[C@H]2C(=O)N[C@H](C(=O)N3CCC[C@H]3C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N1)CCC(=O)N)CO)[C@@H](C)O)C(C)C)CO)CC4=CNC5=CC=CC=C54
+  standard_inchi: InChI=1S/C49H72N12O14/c1-6-25(4)39-46(72)55-31(19-27-20-51-29-12-8-7-11-28(27)29)41(67)52-21-37(66)53-33(23-63)48(74)60-17-9-13-34(60)44(70)57-38(24(2)3)49(75)61-18-10-14-35(61)45(71)59-40(26(5)64)47(73)56-32(22-62)43(69)54-30(42(68)58-39)15-16-36(50)65/h7-8,11-12,20,24-26,30-35,38-40,51,62-64H,6,9-10,13-19,21-23H2,1-5H3,(H2,50,65)(H,52,67)(H,53,66)(H,54,69)(H,55,72)(H,56,73)(H,57,70)(H,58,68)(H,59,71)/t25-,26+,30-,31-,32-,33-,34-,35-,38-,39-,40-/m0/s1
+  standard_inchi_key: TWBVBKLXMJGRPJ-WTPCWRIRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000472
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Cyanobactins
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:102170967
+producer_organisms:
+- taxon_id: NCBITaxon:46234
+  taxon_label: Anabaena sp. 90
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000472
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:20008171
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000472 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000472
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:46234
+  organism_label: Anabaena sp. 90
+  evidence:
+  - reference: PMID:20008171
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000472 entry version 4; citation taken from the entry level
+  genome_accession: genbank:FJ461733.2
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000472
+  source_label: anacyclamide A10
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-55150ce0a8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

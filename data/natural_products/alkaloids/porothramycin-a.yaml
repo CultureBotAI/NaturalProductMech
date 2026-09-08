@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-00426b0212
+label: porothramycin A
+chemical_structure:
+  smiles: COC1=CC=CC2=C1NC(O)C1CC(C=CC(=O)N(C)C)=CN1C2=O
+  standard_inchi: InChI=1S/C18H21N3O4/c1-20(2)15(22)8-7-11-9-13-17(23)19-16-12(18(24)21(13)10-11)5-4-6-14(16)25-3/h4-8,10,13,17,19,23H,9H2,1-3H3
+  standard_inchi_key: OQMYRVPMCIOFHL-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000409
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Benzodiazepine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA07051
+producer_organisms:
+- taxon_id: NCBITaxon:67257
+  taxon_label: Streptomyces albus subsp. albus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000409
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25128200
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000409 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000409
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67257
+  organism_label: Streptomyces albus subsp. albus
+  evidence:
+  - reference: PMID:25128200
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000409 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HQ872605.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000409
+  source_label: porothramycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-00426b0212
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

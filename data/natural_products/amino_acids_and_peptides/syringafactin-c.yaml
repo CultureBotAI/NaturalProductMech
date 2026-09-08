@@ -1,0 +1,107 @@
+identifier: naturalproductmech:mibig-fa248dbc45
+label: syringafactin C
+chemical_structure:
+  smiles: CCCCCCCC(O)CC(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)NC(CCC(N)=O)C(=O)NC(CC(C)C)C(=O)NC(C(=O)NC(C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)O)C(C)CC)C(C)O
+  standard_inchi: InChI=1S/C55H101N9O13/c1-15-17-18-19-20-21-37(66)29-45(68)57-39(24-30(3)4)49(70)60-40(25-31(5)6)50(71)58-38(22-23-44(56)67)48(69)59-42(27-33(9)10)52(73)64-47(36(14)65)54(75)63-46(35(13)16-2)53(74)61-41(26-32(7)8)51(72)62-43(55(76)77)28-34(11)12/h30-43,46-47,65-66H,15-29H2,1-14H3,(H2,56,67)(H,57,68)(H,58,71)(H,59,69)(H,60,70)(H,61,74)(H,62,72)(H,63,75)(H,64,73)(H,76,77)
+  standard_inchi_key: VSIGABYNCNXUIU-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002518
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Lipopeptide
+xrefs:
+- npatlas:NPA032806
+producer_organisms:
+- taxon_id: NCBITaxon:2662259
+  taxon_label: Pseudomonas sp. SZ57
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002518
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:3526668
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002518 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:223283
+  taxon_label: Pseudomonas syringae pv. tomato str. DC3000
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000435
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17601782
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000435 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002518
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2662259
+  organism_label: Pseudomonas sp. SZ57
+  evidence:
+  - reference: PMID:3526668
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002518 entry version 3; citation taken from the entry level
+  genome_accession: genbank:WIBD01000002.1
+  locus_from: 152549
+  locus_to: 163109
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+- accession: mibig:BGC0000435
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:223283
+  organism_label: Pseudomonas syringae pv. tomato str. DC3000
+  evidence:
+  - reference: PMID:17601782
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000435 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AE016853.1
+  locus_from: 3151815
+  locus_to: 3184002
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002518
+  source_label: syringafactin C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-fa248dbc45
+- source: MIBIG
+  source_id: BGC0000435
+  source_label: syringafactin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a30c9a0a31
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000435, BGC0002518.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

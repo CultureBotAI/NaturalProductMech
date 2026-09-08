@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-7493afa688
+label: acarviostatin III03
+chemical_structure:
+  smiles: C[C@@H]1[C@@H](N[C@H]2C=C(CO)[C@@H](O)[C@H](O)[C@H]2O)[C@H](O)[C@@H](O)[C@@H](O[C@@H]3[C@@H](CO)O[C@H](O[C@H]4[C@H](O)[C@@H](O)[C@@H](N[C@@H]5[C@@H](C)O[C@H](O[C@@H]6[C@@H](CO)O[C@H](O[C@H]7[C@H](O)[C@@H](O)[C@@H](N[C@@H]8[C@@H](C)O[C@H](O[C@@H]9[C@@H](CO)O[C@H](O[C@@H]%10[C@@H](CO)O[C@@H](O[C@@H]%11[C@@H](CO)O[C@@H](O[C@@H]%12[C@@H](CO)O[C@@H](O)[C@H](O)[C@H]%12O)[C@H](O)[C@H]%11O)[C@H](O)[C@H]%10O)[C@H](O)[C@H]9O)[C@H](O)[C@H]8O)C=C7CO)[C@H](O)[C@H]6O)[C@H](O)[C@H]5O)C=C4CO)[C@H](O)[C@H]3O)O1
+  standard_inchi: InChI=1S/C75H125N3O52/c1-16-31(76-22-4-19(7-79)34(88)41(95)35(22)89)38(92)51(105)68(114-16)125-62-26(11-83)118-71(54(108)45(62)99)123-59-20(8-80)5-23(36(90)42(59)96)77-32-17(2)115-69(52(106)39(32)93)126-63-27(12-84)119-72(55(109)46(63)100)124-60-21(9-81)6-24(37(91)43(60)97)78-33-18(3)116-70(53(107)40(33)94)127-64-28(13-85)120-74(56(110)47(64)101)129-66-30(15-87)122-75(58(112)49(66)103)130-65-29(14-86)121-73(57(111)48(65)102)128-61-25(10-82)117-67(113)50(104)44(61)98/h4-6,16-18,22-113H,7-15H2,1-3H3/t16-,17-,18-,22+,23+,24+,25-,26-,27-,28-,29-,30-,31-,32-,33-,34-,35+,36+,37+,38+,39+,40+,41+,42-,43-,44-,45-,46-,47-,48-,49-,50-,51-,52-,53-,54-,55-,56-,57-,58-,59-,60-,61-,62-,63-,64-,65-,66-,67-,68-,69-,70-,71-,72-,73+,74-,75+/m1/s1
+  standard_inchi_key: XYBSGFLFCZXVQH-LKAXXFPESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000804
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Saccharides
+  class_results:
+  - Polysaccharides
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:1120227
+  taxon_label: Streptomyces coelicoflavus ZG0656
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000804
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:22691180
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000804 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000804
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1120227
+  organism_label: Streptomyces coelicoflavus ZG0656
+  evidence:
+  - reference: PMID:22691180
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000804 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AHGS01000039.1
+  locus_from: 14922
+  locus_to: 55264
+  bgc_class:
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000804
+  source_label: acarviostatin III03
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7493afa688
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

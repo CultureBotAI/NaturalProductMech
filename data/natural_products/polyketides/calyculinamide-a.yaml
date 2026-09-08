@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-8ea4588d64
+label: calyculinamide A
+chemical_structure:
+  smiles: C[C@H]1[C@@H](C[C@@]2(C([C@H]([C@H](O2)[C@H](C[C@@H]([C@H](C)[C@@H]([C@H](C)/C=C(\C)/C(=C/C=C/C(=C/C(=O)N)/C)/C)O)O)OC)OP(=O)(O)O)(C)C)O[C@H]1C/C=C/C3=COC(=N3)[C@@H](C)CCNC(=O)[C@H]([C@H]([C@H](COC)N(C)C)O)O)O
+  standard_inchi: InChI=1S/C50H83N4O16P/c1-28(22-41(51)57)16-14-17-29(2)31(4)23-32(5)42(58)34(7)37(55)24-40(66-13)45-46(70-71(62,63)64)49(8,9)50(69-45)25-38(56)33(6)39(68-50)19-15-18-35-26-67-48(53-35)30(3)20-21-52-47(61)44(60)43(59)36(27-65-12)54(10)11/h14-18,22-23,26,30,32-34,36-40,42-46,55-56,58-60H,19-21,24-25,27H2,1-13H3,(H2,51,57)(H,52,61)(H2,62,63,64)/b16-14+,18-15+,28-22+,29-17+,31-23+/t30-,32+,33-,34-,36-,37-,38+,39-,40-,42+,43-,44-,45+,46-,50+/m0/s1
+  standard_inchi_key: GTJWBKWRZBNEEQ-NVWSLSKVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000967
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:10011292
+producer_organisms:
+- taxon_id: NCBITaxon:312019
+  taxon_label: uncultured Candidatus Entotheonella sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000967
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:24974231
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000967 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000967
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:312019
+  organism_label: uncultured Candidatus Entotheonella sp.
+  evidence:
+  - reference: PMID:24974231
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000967 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB933566.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000967
+  source_label: calyculinamide A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8ea4588d64
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

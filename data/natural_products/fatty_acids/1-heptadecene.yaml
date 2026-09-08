@@ -1,0 +1,163 @@
+identifier: naturalproductmech:mibig-b5f198b1d1
+label: 1-heptadecene
+chemical_structure:
+  smiles: CCCCCCCCCCCCCCCC=C
+  standard_inchi: InChI=1S/C17H34/c1-3-5-7-9-11-13-15-17-16-14-12-10-8-6-4-2/h3H,1,4-17H2,2H3
+  standard_inchi_key: ADOBXTDBFNCOBN-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001161
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty acyls
+  class_results:
+  - Hydrocarbons
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:23217
+producer_organisms:
+- taxon_id: NCBITaxon:568701
+  taxon_label: Moorea bouillonii PNG
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001161
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24475038
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001161 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1454205
+  taxon_label: Moorea producens JHB
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001162
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24475038
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001162 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:489825
+  taxon_label: Moorea producens 3L
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001163
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24475038
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001163 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:497965
+  taxon_label: Cyanothece sp. PCC 7822
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001164
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24475038
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001164 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001161
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:568701
+  organism_label: Moorea bouillonii PNG
+  evidence:
+  - reference: PMID:24475038
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001161 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF550301.1
+  locus_from: 1
+  locus_to: 9161
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0001162
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1454205
+  organism_label: Moorea producens JHB
+  evidence:
+  - reference: PMID:24475038
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001162 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KF550302.1
+  locus_from: 1
+  locus_to: 9348
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0001163
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:489825
+  organism_label: Moorea producens 3L
+  evidence:
+  - reference: PMID:24475038
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001163 entry version 3; citation taken from the entry level
+  genome_accession: genbank:GL890825.1
+  locus_from: 308353
+  locus_to: 317651
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0001164
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:497965
+  organism_label: Cyanothece sp. PCC 7822
+  evidence:
+  - reference: PMID:24475038
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001164 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP002198.1
+  locus_from: 2029235
+  locus_to: 2037562
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001161
+  source_label: 1-heptadecene
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b5f198b1d1
+- source: MIBIG
+  source_id: BGC0001162
+  source_label: 1-heptadecene
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-4937758138
+- source: MIBIG
+  source_id: BGC0001163
+  source_label: 1-heptadecene
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3483221840
+- source: MIBIG
+  source_id: BGC0001164
+  source_label: 1-heptadecene
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-fd6b59e72a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001161, BGC0001162,
+    BGC0001163, BGC0001164. Confirm they describe the same compound rather than an
+    upstream cross-reference error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

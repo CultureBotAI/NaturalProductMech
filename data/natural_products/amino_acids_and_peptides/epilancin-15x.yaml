@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-bd466d654c
+label: epilancin 15x
+chemical_structure:
+  smiles: CC[C@H](C)[C@H](NC(=O)C(\NC(=O)C(\NC(=O)[C@H](CCCCN)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)C(=C)NC(=O)[C@H](C)NC(=O)C(C)O)[C@@H](C)CC)C(C)C)=C/C)=C/C)C(=O)NC(CCCCN)C(=O)N[C@@H](C)C(=O)N[C@H]1CSC[C@H](NC(=O)[C@H](CC(C)C)NC(=O)C(CCCCN)NC(=O)C(CCCCN)NC1=O)C(=O)N[C@@H](CCCNC(N)=N)C(=O)NCC(=O)N[C@@H](CC1=CC=CC=C1)C(=O)N[C@H]1C(C)SC[C@@H]2NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC1=O)C(C)SC[C@H](NC(=O)CNC2=O)C(=O)N[C@@H](CC1=CN=CN1)C(=O)N[C@@H](CC1=CC=CC=C1)C(=O)N\C(=C\C)C(=O)NCC(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCCN)C(O)=O
+  standard_inchi: InChI=1S/C145H233N41O33S3/c1-20-79(12)113(184-125(199)92(24-5)167-124(198)91(23-4)168-128(202)98(52-35-41-59-150)172-139(213)112(78(10)11)182-141(215)114(80(13)21-2)183-119(193)83(16)160-117(191)81(14)161-120(194)84(17)187)140(214)173-95(49-32-38-56-147)126(200)162-82(15)118(192)179-105-71-220-72-106(180-131(205)100(62-76(6)7)175-130(204)97(51-34-40-58-149)170-129(203)96(171-136(105)210)50-33-39-57-148)137(211)169-93(54-43-61-155-145(152)153)122(196)157-69-110(189)164-102(64-87-44-27-25-28-45-87)135(209)186-115-85(18)221-73-107-123(197)158-70-111(190)165-108(74-222-86(19)116(143(217)181-107)185-134(208)101(63-77(8)9)178-142(115)216)138(212)177-104(66-89-67-154-75-159-89)133(207)176-103(65-88-46-29-26-30-47-88)132(206)166-90(22-3)121(195)156-68-109(188)163-94(48-31-37-55-146)127(201)174-99(144(218)219)53-36-42-60-151/h22-30,44-47,67,75-82,84-86,93-108,112-116,187H,16,20-21,31-43,48-66,68-74,146-151H2,1-15,17-19H3,(H,154,159)(H,156,195)(H,157,196)(H,158,197)(H,160,191)(H,161,194)(H,162,200)(H,163,188)(H,164,189)(H,165,190)(H,166,206)(H,167,198)(H,168,202)(H,169,211)(H,170,203)(H,171,210)(H,172,213)(H,173,214)(H,174,201)(H,175,204)(H,176,207)(H,177,212)(H,178,216)(H,179,192)(H,180,205)(H,181,217)(H,182,215)(H,183,193)(H,184,199)(H,185,208)(H,186,209)(H,218,219)(H4,152,153,155)/b90-22+,91-23+,92-24+/t79-,80-,81-,82-,84?,85?,86?,93-,94-,95?,96?,97?,98-,99-,100-,101-,102-,103-,104-,105-,106-,107-,108-,112-,113-,114-,115-,116-/m0/s1
+  standard_inchi_key: NUJCEAGNKAOTSZ-ZPODTHSYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000509
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA013376
+producer_organisms:
+- taxon_id: NCBITaxon:1282
+  taxon_label: Staphylococcus epidermidis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000509
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:24866416
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000509 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000509
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1282
+  organism_label: Staphylococcus epidermidis
+  evidence:
+  - reference: PMID:24866416
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000509 entry version 4; citation taken from the entry level
+  genome_accession: genbank:JQ979180.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000509
+  source_label: epilancin 15x
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-bd466d654c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

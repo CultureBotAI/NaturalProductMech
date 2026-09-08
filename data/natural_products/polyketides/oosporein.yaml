@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-1e08a8eb0e
+label: oosporein
+chemical_structure:
+  smiles: CC1=C(O)C(=O)C(=C(O)C1=O)C1=C(O)C(=O)C(C)=C(O)C1=O
+  standard_inchi: InChI=1S/C14H10O8/c1-3-7(15)11(19)5(12(20)8(3)16)6-13(21)9(17)4(2)10(18)14(6)22/h15,17,20,22H,1-2H3
+  standard_inchi_key: DHMPJEGFPQTNFX-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001720
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Naphthalenes
+  class_results:
+  - Naphthoquinones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA019555
+producer_organisms:
+- taxon_id: NCBITaxon:655819
+  taxon_label: Beauveria bassiana ARSEF 2860
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001720
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1080/14786419.2014.924933
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001720 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001720
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:655819
+  organism_label: Beauveria bassiana ARSEF 2860
+  evidence:
+  - reference: DOI:10.1080/14786419.2014.924933
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001720 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:JH725181.1
+  locus_from: 8391
+  locus_to: 54012
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001720
+  source_label: oosporein
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1e08a8eb0e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

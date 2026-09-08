@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-4e2bf1afbd
+label: zealexin A1
+chemical_structure:
+  smiles: C1CC(C)(C)CC(C2CC=C(C(=O)O)CC2)=C1
+  standard_inchi: InChI=1S/C15H22O2/c1-15(2)9-3-4-13(10-15)11-5-7-12(8-6-11)14(16)17/h4,7,11H,3,5-6,8-10H2,1-2H3,(H,16,17)
+  standard_inchi_key: IQKSHFZTCNUYOT-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002390
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Bicyclogermacrane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+compound_classes:
+- Sesquiterpenoid
+producer_organisms:
+- taxon_id: NCBITaxon:4577
+  taxon_label: Zea mays
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002390
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production.'
+  evidence:
+  - reference: PMID:33106639
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002390 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002390
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:4577
+  organism_label: Zea mays
+  evidence:
+  - reference: PMID:33106639
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002390 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:GPC_000007947.1
+  locus_from: 33367132
+  locus_to: 34010443
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002390
+  source_label: zealexin A1
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-4e2bf1afbd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

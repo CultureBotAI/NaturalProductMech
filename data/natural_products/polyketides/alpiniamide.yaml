@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-9e24870ca8
+label: alpiniamide
+chemical_structure:
+  smiles: CC/C=C(\C)/[C@H]([C@@H](C)C(=O)NCC(=O)[C@@H](C)[C@H]([C@@H](C)C(=O)O)O)O
+  standard_inchi: InChI=1S/C17H29NO6/c1-6-7-9(2)14(20)11(4)16(22)18-8-13(19)10(3)15(21)12(5)17(23)24/h7,10-12,14-15,20-21H,6,8H2,1-5H3,(H,18,22)(H,23,24)/b9-7+/t10-,11-,12-,14-,15-/m1/s1
+  standard_inchi_key: JNKVBUQSDAHKDQ-FPMQLFDZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001845
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- OTHER
+- PKS
+- NRPS
+xrefs:
+- pubchem:38353088
+producer_organisms:
+- taxon_id: NCBITaxon:2305222
+  taxon_label: Streptomyces sp. CBMAI 2042
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001845
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  evidence:
+  - reference: PMID:24354182
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001845 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001845
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2305222
+  organism_label: Streptomyces sp. CBMAI 2042
+  evidence:
+  - reference: PMID:24354182
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001845 entry version 2; citation taken from the entry level
+  genome_accession: genbank:RCOL01000001.1
+  locus_from: 122924
+  locus_to: 152602
+  bgc_class:
+  - OTHER
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001845
+  source_label: alpiniamide
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-9e24870ca8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

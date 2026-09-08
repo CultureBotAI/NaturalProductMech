@@ -1,0 +1,78 @@
+identifier: naturalproductmech:mibig-1d970c9bbb
+label: grisemycin
+chemical_structure:
+  smiles: CC[C@@H](C)C(C(=O)NC(CCC(=O)N)C(=O)NCC(=O)NC(CO)C(=O)N/C(=C/C)/C(=O)NC([C@H](C)CC)C(=O)NC1CS/C=C\NC(=O)C(NC(=O)C(NC1=O)CC(C)C)C(C)C)NC(=O)C(C(C)C)NC(=O)C(CC2=CC=CC=C2)NC(=O)C(CCC(=O)N)NC(=O)C(C)NC(=O)C(C(C)C)NC(=O)C(C)NC(=O)C3CCCN3C(=O)/C(=C/C)/NC(=O)C(C)N(C)C
+  standard_inchi: InChI=1S/C86H137N21O21S/c1-20-47(13)68(85(127)100-60-42-129-37-35-89-81(123)65(44(7)8)102-76(118)57(38-43(5)6)98-79(60)121)104-74(116)53(22-3)94-78(120)59(41-108)93-64(111)40-90-73(115)55(31-33-62(87)109)97-84(126)69(48(14)21-2)105-83(125)67(46(11)12)103-77(119)58(39-52-28-25-24-26-29-52)99-75(117)56(32-34-63(88)110)96-70(112)49(15)92-82(124)66(45(9)10)101-71(113)50(16)91-80(122)61-30-27-36-107(61)86(128)54(23-4)95-72(114)51(17)106(18)19/h22-26,28-29,35,37,43-51,55-61,65-69,108H,20-21,27,30-34,36,38-42H2,1-19H3,(H2,87,109)(H2,88,110)(H,89,123)(H,90,115)(H,91,122)(H,92,124)(H,93,111)(H,94,120)(H,95,114)(H,96,112)(H,97,126)(H,98,121)(H,99,117)(H,100,127)(H,101,113)(H,102,118)(H,103,119)(H,104,116)(H,105,125)/b37-35-,53-22+,54-23-/t47-,48-,49?,50?,51?,55?,56?,57?,58?,59?,60?,61?,65?,66?,67?,68?,69?/m1/s1
+  standard_inchi_key: OIQYGWMODDNMOB-PTYYYPKJSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000583
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+compound_classes:
+- Linear
+- Macrocyclic
+xrefs:
+- npatlas:NPA024684
+producer_organisms:
+- taxon_id: NCBITaxon:455632
+  taxon_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000583
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production.'
+  evidence:
+  - reference: DOI:10.1128/jb.00171-11
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000583 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000583
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455632
+  organism_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence:
+  - reference: DOI:10.1128/jb.00171-11
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000583 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AP009493.1
+  locus_from: 7570210
+  locus_to: 7576934
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000583
+  source_label: grisemycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1d970c9bbb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

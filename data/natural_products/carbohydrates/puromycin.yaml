@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-58ee776d57
+label: puromycin
+chemical_structure:
+  smiles: '[H][C@](N)(CC1=CC=C(OC)C=C1)C(=O)N[C@@H]1[C@@H](CO)O[C@H]([C@@H]1O)N1C=NC2=C1N=CN=C2N(C)C'
+  standard_inchi: InChI=1S/C22H29N7O5/c1-28(2)19-17-20(25-10-24-19)29(11-26-17)22-18(31)16(15(9-30)34-22)27-21(32)14(23)8-12-4-6-13(33-3)7-5-12/h4-7,10-11,14-16,18,22,30-31H,8-9,23H2,1-3H3,(H,27,32)/t14-,15+,16+,18+,22+/m0/s1
+  standard_inchi_key: RXWNCPJZOCPEPQ-NVWDDTSBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000878
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Purine nucleos(t)ides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA02054
+- pubchem:439530
+producer_organisms:
+- taxon_id: NCBITaxon:132473
+  taxon_label: Streptomyces alboniger
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000878
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:8576156
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000878 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000878
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:132473
+  organism_label: Streptomyces alboniger
+  evidence:
+  - reference: PMID:8576156
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000878 entry version 5; citation taken from the entry level
+  genome_accession: genbank:X92429.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000878
+  source_label: puromycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-58ee776d57
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

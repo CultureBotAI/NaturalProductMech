@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-1881debca3
+label: hygrocin B
+chemical_structure:
+  smiles: CCC1CCC(=O)C2=C(O)C(C)=CC3=C2C(=O)C2=C(NC(=O)C=C[C@]2(C)C(=O)O[C@@H](C)[C@@H](O)\C=C\1)C3=O
+  standard_inchi: InChI=1S/C28H29NO8/c1-5-15-6-8-17(30)14(3)37-27(36)28(4)11-10-19(32)29-23-22(28)26(35)20-16(25(23)34)12-13(2)24(33)21(20)18(31)9-7-15/h6,8,10-12,14-15,17,30,33H,5,7,9H2,1-4H3,(H,29,32)/b8-6+/t14-,15?,17-,28-/m0/s1
+  standard_inchi_key: YCXQGZJYZGFQSB-AMMLVUSNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000075
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA011351
+- pubchem:5326384
+producer_organisms:
+- taxon_id: NCBITaxon:1245024
+  taxon_label: Streptomyces sp. LZ35
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000075
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24501776
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000075 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000075
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1245024
+  organism_label: Streptomyces sp. LZ35
+  evidence:
+  - reference: PMID:24501776
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000075 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JX504844.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000075
+  source_label: hygrocin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1881debca3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

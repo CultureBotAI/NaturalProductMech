@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-aaa481b62f
+label: variobactin B
+chemical_structure:
+  smiles: CCCCCCCCCC(=O)NC(CCCN(O)C(C)=O)C1OC(=O)C(CCCN(O)C(C)=O)NC(=O)C(CCCNC(N)=O)NC(=O)C(CCCN)NC(=O)C(CO)NC(=O)C(C(O)C(=O)O)NC(=O)C1C
+  standard_inchi: InChI=1S/C45H79N11O17/c1-5-6-7-8-9-10-11-20-34(60)49-29(18-14-23-55(71)27(3)58)37-26(2)38(62)54-35(36(61)43(67)68)42(66)53-33(25-57)41(65)51-30(16-12-21-46)39(63)50-31(17-13-22-48-45(47)70)40(64)52-32(44(69)73-37)19-15-24-56(72)28(4)59/h26,29-33,35-37,57,61,71-72H,5-25,46H2,1-4H3,(H,49,60)(H,50,63)(H,51,65)(H,52,64)(H,53,66)(H,54,62)(H,67,68)(H3,47,48,70)
+  standard_inchi_key: VZLKLSFDPFHEHA-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002416
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA032831
+producer_organisms:
+- taxon_id: NCBITaxon:34073
+  taxon_label: Variovorax paradoxus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002416
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26412281
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002416 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002416
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:34073
+  organism_label: Variovorax paradoxus
+  evidence:
+  - reference: PMID:26412281
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002416 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KT362218.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002416
+  source_label: variobactin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-aaa481b62f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

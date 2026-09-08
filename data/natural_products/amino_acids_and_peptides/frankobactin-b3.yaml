@@ -1,0 +1,103 @@
+identifier: naturalproductmech:mibig-d8d603f628
+label: frankobactin B3
+chemical_structure:
+  smiles: C[C@@H](O)[C@@H](NC(=O)CNC(=O)[C@H](CO)NC(=O)C1=CC=CC=C1O)C(=O)N(C)[C@@H](CCCNO)C(=O)N[C@@H](CCCN)C(=O)N[C@@H](CCCN(O)C=O)C(=O)O
+  standard_inchi: InChI=1S/C33H53N9O14/c1-19(45)27(40-26(47)16-35-29(49)23(17-43)39-28(48)20-8-3-4-12-25(20)46)32(52)41(2)24(11-6-14-36-55)31(51)37-21(9-5-13-34)30(50)38-22(33(53)54)10-7-15-42(56)18-44/h3-4,8,12,18-19,21-24,27,36,43,45-46,55-56H,5-7,9-11,13-17,34H2,1-2H3,(H,35,49)(H,37,51)(H,38,50)(H,39,48)(H,40,47)(H,53,54)/t19-,21+,22+,23+,24+,27-/m1/s1
+  standard_inchi_key: FODDHTHRAYJPCC-OUBBJWQNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002409
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033074
+producer_organisms:
+- taxon_id: NCBITaxon:683308
+  taxon_label: Frankia sp. CH37
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002409
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:33789052
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002409 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:683308
+  taxon_label: Frankia sp. CH37
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002410
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:33789052
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002410 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002409
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:683308
+  organism_label: Frankia sp. CH37
+  evidence:
+  - reference: PMID:33789052
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002409 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JADBID010000001.1
+  locus_from: 1401852
+  locus_to: 1443553
+  bgc_class:
+  - NRPS
+- accession: mibig:BGC0002410
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:683308
+  organism_label: Frankia sp. CH37
+  evidence:
+  - reference: PMID:33789052
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002410 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JADBID010000001.1
+  locus_from: 4759675
+  locus_to: 4779517
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002409
+  source_label: frankobactin B3
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-d8d603f628
+- source: MIBIG
+  source_id: BGC0002410
+  source_label: frankobactin B3
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-63e222b6d1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002409, BGC0002410.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

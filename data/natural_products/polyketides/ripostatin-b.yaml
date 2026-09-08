@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-1e7b5e53a5
+label: ripostatin B
+chemical_structure:
+  smiles: C\C(CC[C@@H](O)C[C@H]1C[C@H](O)C\C(C)=C\C\C=C\C\C(CC(O)=O)=C/C(=O)O1)=C/CC1=CC=CC=C1
+  standard_inchi: InChI=1S/C30H40O6/c1-22(13-15-24-10-6-4-7-11-24)14-16-26(31)20-28-21-27(32)17-23(2)9-5-3-8-12-25(18-29(33)34)19-30(35)36-28/h3-4,6-11,13,19,26-28,31-32H,5,12,14-18,20-21H2,1-2H3,(H,33,34)/b8-3+,22-13+,23-9+,25-19+/t26-,27-,28+/m1/s1
+  standard_inchi_key: FFFWIYTVZAPFFC-TTXNTIIMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001761
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA0250
+producer_organisms:
+- taxon_id: NCBITaxon:56
+  taxon_label: Sorangium cellulosum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001761
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28098952
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001761 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001761
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:56
+  organism_label: Sorangium cellulosum
+  evidence:
+  - reference: PMID:28098952
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001761 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KY646190.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001761
+  source_label: ripostatin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1e7b5e53a5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

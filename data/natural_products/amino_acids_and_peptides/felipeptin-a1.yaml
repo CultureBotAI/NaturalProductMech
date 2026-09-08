@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-837c20aac7
+label: felipeptin A1
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]1NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CSSC[C@H](NC(=O)[C@H](CC2=CC3=CC=CC=C3N2)NC1=O)C(=O)N[C@@H](CC(O)=O)C(O)=O)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H]1CCCN1C(=O)[C@@H]1CCC(=O)NCC(=O)NC(CO)C(=O)NC(CCCNC(N)=N)C(=O)NCC(=O)N[C@@H](CC2=CC3=CC=CC=C3N2)C(=O)NCC(=O)N[C@@H](CC2=CC=CC=C2)C(=O)N1)C(C)C
+  standard_inchi: InChI=1S/C91H128N26O23S2/c1-7-48(6)75-87(137)111-62(37-53-35-51-21-12-14-23-55(51)103-53)80(130)114-66(84(134)112-63(89(139)140)38-73(124)125)45-142-141-44-65(83(133)110-59(32-46(2)3)81(131)116-75)113-78(128)57(25-16-30-97-91(94)95)108-86(136)74(47(4)5)115-72(123)42-101-85(135)67-26-17-31-117(67)88(138)58-27-28-68(119)98-39-69(120)106-64(43-118)82(132)107-56(24-15-29-96-90(92)93)76(126)99-40-71(122)105-61(36-52-34-50-20-11-13-22-54(50)102-52)77(127)100-41-70(121)104-60(79(129)109-58)33-49-18-9-8-10-19-49/h8-14,18-23,34-35,46-48,56-67,74-75,102-103,118H,7,15-17,24-33,36-45H2,1-6H3,(H,98,119)(H,99,126)(H,100,127)(H,101,135)(H,104,121)(H,105,122)(H,106,120)(H,107,132)(H,108,136)(H,109,129)(H,110,133)(H,111,137)(H,112,134)(H,113,128)(H,114,130)(H,115,123)(H,116,131)(H,124,125)(H,139,140)(H4,92,93,96)(H4,94,95,97)/t48-,56?,57-,58-,59-,60-,61-,62-,63-,64?,65-,66-,67-,74-,75-/m0/s1
+  standard_inchi_key: JUKANPGZTHRFAE-YXAPNRSXSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002064
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Lasso peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:2653857
+  taxon_label: Amycolatopsis sp. YIM 10
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002064
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:33294793
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002064 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002064
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2653857
+  organism_label: Amycolatopsis sp. YIM 10
+  evidence:
+  - reference: PMID:33294793
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002064 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP045480.1
+  locus_from: 6108611
+  locus_to: 6117497
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002064
+  source_label: felipeptin A1
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-837c20aac7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

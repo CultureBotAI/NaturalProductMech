@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-53e5327f78
+label: surugamide D
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]1NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](CC2=CC=CC=C2)NC(=O)[C@@H](NC(=O)[C@H](CCCCN)NC(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@@H](C)NC1=O)C(C)C)[C@H](C)CC)[C@@H](C)CC
+  standard_inchi: InChI=1S/C47H79N9O8/c1-12-28(8)37-45(62)49-31(11)40(57)53-36(27(6)7)44(61)56-39(30(10)14-3)46(63)50-33(22-18-19-23-48)41(58)54-38(29(9)13-2)47(64)52-35(25-32-20-16-15-17-21-32)42(59)51-34(24-26(4)5)43(60)55-37/h15-17,20-21,26-31,33-39H,12-14,18-19,22-25,48H2,1-11H3,(H,49,62)(H,50,63)(H,51,59)(H,52,64)(H,53,57)(H,54,58)(H,55,60)(H,56,61)/t28-,29-,30+,31+,33-,34+,35+,36-,37-,38-,39+/m0/s1
+  standard_inchi_key: POJKUXRIPCIWMZ-SGOJMVJPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001792
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA04501
+producer_organisms:
+- taxon_id: NCBITaxon:1886
+  taxon_label: Streptomyces albidoflavus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001792
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28590725
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001792 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001792
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1886
+  organism_label: Streptomyces albidoflavus
+  evidence:
+  - reference: PMID:28590725
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001792 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP004370.1
+  locus_from: 3888752
+  locus_to: 3971215
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001792
+  source_label: surugamide D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-53e5327f78
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

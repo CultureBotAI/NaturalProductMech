@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-75bb629e1b
+label: (2Z,4Z,6E)-octa-2,4,6-trienoic acid
+chemical_structure:
+  smiles: OC(/C=C\C=C/C=C/C)=O
+  standard_inchi: InChI=1S/C8H10O2/c1-2-3-4-5-6-7-8(9)10/h2-7H,1H3,(H,9,10)/b3-2+,5-4-,7-6-
+  standard_inchi_key: IAAPVNQZSBLWKH-BFLHYJCASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002180
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty Acids and Conjugates
+  class_results:
+  - Unsaturated fatty acids
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:227321
+  taxon_label: Aspergillus nidulans FGSC A4
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002180
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:30339758
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002180 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002180
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:227321
+  organism_label: Aspergillus nidulans FGSC A4
+  evidence:
+  - reference: PMID:30339758
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002180 entry version 2; citation taken from the entry level
+  genome_accession: genbank:BN001306.1
+  locus_from: 48801
+  locus_to: 73973
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002180
+  source_label: (2Z,4Z,6E)-octa-2,4,6-trienoic acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-75bb629e1b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

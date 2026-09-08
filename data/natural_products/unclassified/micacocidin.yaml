@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-9d97b52fb7
+label: micacocidin
+chemical_structure:
+  smiles: OC1=C(C2=N[C@]([C@@]3([H])SC[C@]([C@@H](O)C(C)(C)C4=N[C@](C(O)=O)(C)CS4)([H])N3C)([H])CS2)C(CCCCC)=CC=C1
+  standard_inchi: InChI=1S/C27H39N3O4S3/c1-6-7-8-10-16-11-9-12-19(31)20(16)22-28-17(13-35-22)23-30(5)18(14-36-23)21(32)26(2,3)24-29-27(4,15-37-24)25(33)34/h9,11-12,17-18,21,23,31-32H,6-8,10,13-15H2,1-5H3,(H,33,34)/t17-,18+,21-,23-,27-/m1/s1
+  standard_inchi_key: GGWOUCUSNYVHOC-QJKBBIFYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001014
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Melithiazole and Myxothiazole derivatives
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA01634
+producer_organisms:
+- taxon_id: NCBITaxon:267608
+  taxon_label: Ralstonia solanacearum GMI1000
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001014
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:21724891
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001014 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001014
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:267608
+  organism_label: Ralstonia solanacearum GMI1000
+  evidence:
+  - reference: PMID:21724891
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001014 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AL646052.1
+  locus_from: 1941939
+  locus_to: 1980062
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001014
+  source_label: micacocidin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-9d97b52fb7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

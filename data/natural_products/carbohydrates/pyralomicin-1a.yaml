@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-d8142cfdc3
+label: pyralomicin 1a
+chemical_structure:
+  smiles: CO[C@H]1[C@H](O)[C@@H](O)[C@@H](C=C1CO)N1C(Cl)=CC2=C1OC1=C(C(O)=C(Cl)C=C1C)C2=O
+  standard_inchi: InChI=1S/C20H19Cl2NO7/c1-7-3-10(21)15(26)13-14(25)9-5-12(22)23(20(9)30-18(7)13)11-4-8(6-24)19(29-2)17(28)16(11)27/h3-5,11,16-17,19,24,26-28H,6H2,1-2H3/t11-,16+,17-,19-/m1/s1
+  standard_inchi_key: JPPZZIRKTBZEAJ-JLBIYAHBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001038
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Polyols
+  class_results:
+  - Amino cyclitols
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA013382
+- pubchem:3072006
+producer_organisms:
+- taxon_id: NCBITaxon:46182
+  taxon_label: Nonomuraea spiralis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001038
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:23607523
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001038 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001038
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:46182
+  organism_label: Nonomuraea spiralis
+  evidence:
+  - reference: PMID:23607523
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001038 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JX424761.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001038
+  source_label: pyralomicin 1a
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d8142cfdc3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,113 @@
+identifier: naturalproductmech:mibig-eb42b809a5
+label: subglutinol A
+chemical_structure:
+  smiles: CC1=C(OC(=O)C(=C1O)C[C@@H]2C(=C)CC[C@@H]3[C@@]2(CC[C@H]4[C@]3(C[C@H](O4)C=C(C)C)C)C)C
+  standard_inchi: InChI=1S/C27H38O4/c1-15(2)12-19-14-27(7)22-9-8-16(3)21(26(22,6)11-10-23(27)31-19)13-20-24(28)17(4)18(5)30-25(20)29/h12,19,21-23,28H,3,8-11,13-14H2,1-2,4-7H3/t19-,21-,22-,23+,26-,27+/m1/s1
+  standard_inchi_key: SXNPXUJAUIINIU-JTLRLOPKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002427
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Triketide meroterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA003785
+producer_organisms:
+- taxon_id: NCBITaxon:655844
+  taxon_label: Metarhizium robertsii ARSEF 23
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002427
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32286350
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002427 entry version 2; citation taken from the entry level
+- taxon_id: NCBITaxon:904690
+  taxon_label: Penicillium shearii
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002614
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32286350
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002614 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002427
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:655844
+  organism_label: Metarhizium robertsii ARSEF 23
+  evidence:
+  - reference: PMID:32286350
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002427 entry version 2; citation taken from the entry level
+  genome_accession: genbank:ADNJ02000014.1
+  locus_from: 52987
+  locus_to: 74527
+  bgc_class:
+  - TERPENE
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+- accession: mibig:BGC0002614
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:904690
+  organism_label: Penicillium shearii
+  evidence:
+  - reference: PMID:32286350
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002614 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LC600199.1
+  locus_from: 1
+  locus_to: 33840
+  bgc_class:
+  - TERPENE
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002427
+  source_label: subglutinol A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-eb42b809a5
+- source: MIBIG
+  source_id: BGC0002614
+  source_label: subglutinol A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-00bb24283d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002427, BGC0002614.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

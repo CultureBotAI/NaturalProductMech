@@ -1,0 +1,104 @@
+identifier: naturalproductmech:mibig-7d6d6d4f4a
+label: waikikiamide B
+chemical_structure:
+  smiles: COC1=CC2=CC3=C(C(=O)O[C@H](C)C3)C(O)=C2C2=C1[C@H]1[C@@]3(O2)C(=NC2=C3C=CC3=C2C=CC(C)(C)O3)C(C)(C)[C@@H]2C[C@]34CCCN3C(=O)[C@@]21NC4=O
+  standard_inchi: InChI=1S/C41H39N3O8/c1-18-14-19-15-20-16-24(49-6)28-31(26(20)30(45)27(19)33(46)50-18)52-41-22-8-9-23-21(10-12-37(2,3)51-23)29(22)42-34(41)38(4,5)25-17-39-11-7-13-44(39)36(48)40(25,32(28)41)43-35(39)47/h8-10,12,15-16,18,25,32,45H,7,11,13-14,17H2,1-6H3,(H,43,47)/t18-,25+,32-,39+,40-,41-/m1/s1
+  standard_inchi_key: DKMOFXIZKXGGIM-DKGQAOFKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002253
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Indole diketopiperazine alkaloids (L-Trp, L-Pro)
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA032307
+producer_organisms:
+- taxon_id: NCBITaxon:2741095
+  taxon_label: Aspergillus sp. FM242
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002253
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:32433885
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002253 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:2741095
+  taxon_label: Aspergillus sp. FM242
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002254
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:32433885
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002254 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002253
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2741095
+  organism_label: Aspergillus sp. FM242
+  evidence:
+  - reference: PMID:32433885
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002253 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT457560.1
+  locus_from: 1
+  locus_to: 33994
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0002254
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2741095
+  organism_label: Aspergillus sp. FM242
+  evidence:
+  - reference: PMID:32433885
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002254 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT457561.1
+  locus_from: 1
+  locus_to: 46989
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002253
+  source_label: waikikiamide B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7d6d6d4f4a
+- source: MIBIG
+  source_id: BGC0002254
+  source_label: waikikiamide B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-a8f8382a58
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002253, BGC0002254.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

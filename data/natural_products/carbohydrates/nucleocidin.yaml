@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-7c962a3568
+label: nucleocidin
+chemical_structure:
+  smiles: NC1=NC=NC2=C1N=CN2[C@@H]1O[C@](F)(COS(N)(=O)=O)[C@@H](O)[C@H]1O
+  standard_inchi: InChI=1S/C10H13FN6O6S/c11-10(1-22-24(13,20)21)6(19)5(18)9(23-10)17-3-16-4-7(12)14-2-15-8(4)17/h2-3,5-6,9,18-19H,1H2,(H2,12,14,15)(H2,13,20,21)/t5-,6+,9-,10-/m1/s1
+  standard_inchi_key: LTBCQBSAWAZBDF-MLTZYSBQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001387
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Purine nucleos(t)ides
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA011799
+- pubchem:72299
+producer_organisms:
+- taxon_id: NCBITaxon:67282
+  taxon_label: Streptomyces calvus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001387
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26374477
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001387 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001387
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67282
+  organism_label: Streptomyces calvus
+  evidence:
+  - reference: PMID:26374477
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001387 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KU881767.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001387
+  source_label: nucleocidin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7c962a3568
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

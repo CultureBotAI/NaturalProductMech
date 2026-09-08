@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-020773c655
+label: cladoniamide B
+chemical_structure:
+  smiles: COC1=C2N(C3=C1C=C(Cl)C=C3)[C@]1(O)C(=O)N(C)C(=O)[C@]1(O)C1=C2NC2=C1C=C(Cl)C=C2
+  standard_inchi: InChI=1S/C22H15Cl2N3O5/c1-26-19(28)21(30)15-11-7-9(23)3-5-13(11)25-16(15)17-18(32-2)12-8-10(24)4-6-14(12)27(17)22(21,31)20(26)29/h3-8,25,30-31H,1-2H3/t21-,22+/m1/s1
+  standard_inchi_key: BCFVHVKRKHBTGK-YADHBBJMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001334
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA03322
+- pubchem:25053151
+producer_organisms:
+- taxon_id: NCBITaxon:1048205
+  taxon_label: Streptomyces uncialis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001334
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:21876764
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001334 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001334
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1048205
+  organism_label: Streptomyces uncialis
+  evidence:
+  - reference: PMID:21876764
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001334 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JN165773.1
+  locus_from: 9571
+  locus_to: 30347
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001334
+  source_label: cladoniamide B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-020773c655
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-e85e28c3e4
+label: fumiquinazoline D
+chemical_structure:
+  smiles: C[C@H]1C(=O)N2[C@@H]3N1[C@]4(C5=NC6=CC=CC=C6C(=O)N5[C@H](C[C@@]3(C7=CC=CC=C72)O)C(=O)N4)C
+  standard_inchi: InChI=1S/C24H21N5O4/c1-12-19(31)28-16-10-6-4-8-14(16)24(33)11-17-18(30)26-23(2,29(12)22(24)28)21-25-15-9-5-3-7-13(15)20(32)27(17)21/h3-10,12,17,22,33H,11H2,1-2H3,(H,26,30)/t12-,17+,22+,23-,24-/m0/s1
+  standard_inchi_key: YYLAARMDRFESOL-CVAYNVNESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000355
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Quinazoline alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:9980845
+producer_organisms:
+- taxon_id: NCBITaxon:330879
+  taxon_label: Aspergillus fumigatus Af293
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000355
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:21899262
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000355 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000355
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:330879
+  organism_label: Aspergillus fumigatus Af293
+  evidence:
+  - reference: PMID:21899262
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000355 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CM000174.1
+  locus_from: 3010494
+  locus_to: 3035305
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000355
+  source_label: fumiquinazoline D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e85e28c3e4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

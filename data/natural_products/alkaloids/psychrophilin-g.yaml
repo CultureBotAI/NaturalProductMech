@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-d2de60ddae
+label: psychrophilin G
+chemical_structure:
+  smiles: CC(=O)N(C)[C@H]1[C@@H](C2=CN(C3=CC=CC=C32)C(=O)C4=CC=CC=C4NC(=O)[C@@H]5CCCN5C1=O)O
+  standard_inchi: InChI=1S/C26H26N4O5/c1-15(31)28(2)22-23(32)18-14-30(20-11-6-4-8-16(18)20)25(34)17-9-3-5-10-19(17)27-24(33)21-12-7-13-29(21)26(22)35/h3-6,8-11,14,21-23,32H,7,12-13H2,1-2H3,(H,27,33)/t21-,22-,23+/m0/s1
+  standard_inchi_key: IAYNRQBEAXFHSB-RJGXRXQPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002617
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Benzodiazepine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA012074
+producer_organisms:
+- taxon_id: NCBITaxon:1813945
+  taxon_label: Penicillium sp. YT-2016
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002617
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:26956794
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002617 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002617
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1813945
+  organism_label: Penicillium sp. YT-2016
+  evidence:
+  - reference: PMID:26956794
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002617 entry version 2; citation taken from the entry level
+  genome_accession: genbank:KU695586.1
+  locus_from: 1
+  locus_to: 17174
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002617
+  source_label: psychrophilin G
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-d2de60ddae
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

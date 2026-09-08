@@ -1,0 +1,112 @@
+identifier: naturalproductmech:mibig-77e165bdbd
+label: pyrophen
+chemical_structure:
+  smiles: CC(=O)N[C@@H](CC1=CC=CC=C1)C2=CC(=CC(=O)O2)OC
+  standard_inchi: InChI=1S/C16H17NO4/c1-11(18)17-14(8-12-6-4-3-5-7-12)15-9-13(20-2)10-16(19)21-15/h3-7,9-10,14H,8H2,1-2H3,(H,17,18)/t14-/m0/s1
+  standard_inchi_key: VFMQMACUYWGDOJ-AWEZNQCLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002275
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 2-pyrone derivatives
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA006435
+- pubchem:131349
+producer_organisms:
+- taxon_id: NCBITaxon:1450533
+  taxon_label: Aspergillus niger CBS 101883
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002275
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression|Enzymatic assays.'
+  evidence:
+  - reference: PMID:32159958
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002275 entry version 2; citation taken from the entry level
+- taxon_id: NCBITaxon:380704
+  taxon_label: Aspergillus niger ATCC 1015
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002171
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1080/14786419.2018.1544982
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002171 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002275
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1450533
+  organism_label: Aspergillus niger CBS 101883
+  evidence:
+  - reference: PMID:32159958
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002275 entry version 2; citation taken from the entry level
+  genome_accession: genbank:KZ821395.1
+  locus_from: 44377
+  locus_to: 54696
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Enzymatic assays
+- accession: mibig:BGC0002171
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:380704
+  organism_label: Aspergillus niger ATCC 1015
+  evidence:
+  - reference: DOI:10.1080/14786419.2018.1544982
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002171 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:ACJE01000002.1
+  locus_from: 1176150
+  locus_to: 1183500
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002275
+  source_label: pyrophen
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-77e165bdbd
+- source: MIBIG
+  source_id: BGC0002171
+  source_label: pyrophen
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-5ba07fdfe2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002171, BGC0002275.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

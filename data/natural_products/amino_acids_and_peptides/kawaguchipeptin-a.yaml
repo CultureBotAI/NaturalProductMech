@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-1bf4736d18
+label: kawaguchipeptin A
+chemical_structure:
+  smiles: '[H][C@](C)(O)[C@]1([H])NC(=O)[C@]([H])(CO)NC(=O)[C@@H]2C[C@@]3(CC=C(C)C)C4=C(N[C@@]3([H])N2C(=O)[C@]([H])(CC(N)=O)NC(=O)[C@]([H])(CC(N)=O)NC(=O)[C@]([H])(CC(O)=O)NC(=O)CNC(=O)[C@]([H])(CC(N)=O)NC(=O)[C@@]([H])(CC(C)C)NC(=O)[C@@H]2C[C@@]3(CC=C(C)C)C5=CC=CC=C5N[C@@]3([H])N2C(=O)[C@]2([H])CCCN2C1=O)C=CC=C4'
+  standard_inchi: InChI=1S/C68H92N16O18/c1-32(2)18-20-67-28-47-61(99)78-45(31-85)59(97)81-54(35(7)86)64(102)82-22-12-17-46(82)63(101)84-48(29-68(21-19-33(3)4)37-14-9-11-16-39(37)80-66(68)84)60(98)76-40(23-34(5)6)56(94)74-41(24-49(69)87)55(93)72-30-52(90)73-43(27-53(91)92)58(96)75-42(25-50(70)88)57(95)77-44(26-51(71)89)62(100)83(47)65(67)79-38-15-10-8-13-36(38)67/h8-11,13-16,18-19,34-35,40-48,54,65-66,79-80,85-86H,12,17,20-31H2,1-7H3,(H2,69,87)(H2,70,88)(H2,71,89)(H,72,93)(H,73,90)(H,74,94)(H,75,96)(H,76,98)(H,77,95)(H,78,99)(H,81,97)(H,91,92)/t35-,40-,41+,42+,43+,44+,45+,46+,47+,48+,54+,65+,66+,67+,68+/m1/s1
+  standard_inchi_key: SZGKSIQFXTWZJY-XNLLDMJTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001632
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA07478
+producer_organisms:
+- taxon_id: NCBITaxon:449441
+  taxon_label: Microcystis aeruginosa NIES-88
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001632
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/np970146k
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001632 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001632
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:449441
+  organism_label: Microcystis aeruginosa NIES-88
+  evidence:
+  - reference: DOI:10.1021/np970146k
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001632 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:JXYX01000010.1
+  locus_from: 99832
+  locus_to: 105011
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001632
+  source_label: kawaguchipeptin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1bf4736d18
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

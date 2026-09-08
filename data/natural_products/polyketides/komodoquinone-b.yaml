@@ -1,0 +1,116 @@
+identifier: naturalproductmech:mibig-d6e8f390a1
+label: komodoquinone B
+chemical_structure:
+  smiles: C[C@]1(C[C@@H](C2=C(C3=C(C(=C2C1)O)C(=O)C4=C(C3=O)C(=CC=C4)O)O)O)O
+  standard_inchi: InChI=1S/C19H16O7/c1-19(26)5-8-12(10(21)6-19)18(25)14-13(16(8)23)15(22)7-3-2-4-9(20)11(7)17(14)24/h2-4,10,20-21,23,25-26H,5-6H2,1H3/t10-,19-/m0/s1
+  standard_inchi_key: SFRTWZQYMRMOOJ-OVWNDWIMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001851
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthracyclines
+  - Anthraquinones and anthrones
+  is_glycoside: false
+bgc_class:
+- PKS
+- SACCHARIDE
+compound_classes:
+- Cyclic polyketide
+xrefs:
+- npatlas:NPA019430
+producer_organisms:
+- taxon_id: NCBITaxon:285574
+  taxon_label: Streptomyces erythrochromogenes
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001851
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: DOI:10.1021/acschembio.9b00238
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001851 entry version 4; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:1463904
+  taxon_label: Streptomyces sp. NRRL S-378
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001852
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: DOI:10.1021/acschembio.9b00238
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001852 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001851
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:285574
+  organism_label: Streptomyces erythrochromogenes
+  evidence:
+  - reference: DOI:10.1021/acschembio.9b00238
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001851 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:NZ_JNZG01000006.1
+  locus_from: 186424
+  locus_to: 230323
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+- accession: mibig:BGC0001852
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1463904
+  organism_label: Streptomyces sp. NRRL S-378
+  evidence:
+  - reference: DOI:10.1021/acschembio.9b00238
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001852 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:NZ_JOBX01000002.1
+  locus_from: 186402
+  locus_to: 230564
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001851
+  source_label: komodoquinone B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-d6e8f390a1
+- source: MIBIG
+  source_id: BGC0001852
+  source_label: komodoquinone B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-4dedc4bf24
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001851, BGC0001852.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

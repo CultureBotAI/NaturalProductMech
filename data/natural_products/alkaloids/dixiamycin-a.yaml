@@ -1,0 +1,107 @@
+identifier: naturalproductmech:mibig-abcb3d7c73
+label: dixiamycin A
+chemical_structure:
+  smiles: C[C@]12CC[C@@H]([C@@]([C@@H]1CCC3=CC4=C(C=C23)C5=CC=CC=C5N4N6C7=CC=CC=C7C8=C6C=C9CC[C@@H]1[C@@](C9=C8)(CC[C@@H]([C@@]1(C)C(=O)O)O)C)(C)C(=O)O)O
+  standard_inchi: InChI=1S/C46H48N2O6/c1-43-19-17-39(49)45(3,41(51)52)37(43)15-13-25-21-35-29(23-31(25)43)27-9-5-7-11-33(27)47(35)48-34-12-8-6-10-28(34)30-24-32-26(22-36(30)48)14-16-38-44(32,2)20-18-40(50)46(38,4)42(53)54/h5-12,21-24,37-40,49-50H,13-20H2,1-4H3,(H,51,52)(H,53,54)/t37-,38-,39+,40+,43-,44-,45+,46+/m1/s1
+  standard_inchi_key: CPQSJHUUXUXWOT-IPPPMHIGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000665
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+- OTHER
+compound_classes:
+- Meroterpenoid
+producer_organisms:
+- taxon_id: NCBITaxon:995841
+  taxon_label: Streptomyces sp. HKI0576
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000665
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1002/anie.201204087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000665 entry version 5; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:995841
+  taxon_label: Streptomyces sp. HKI0576
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000665
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1002/anie.201204087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000665 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000665
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:995841
+  organism_label: Streptomyces sp. HKI0576
+  evidence:
+  - reference: DOI:10.1002/anie.201204087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000665 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:HE815466.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+- accession: mibig:BGC0000665
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:995841
+  organism_label: Streptomyces sp. HKI0576
+  evidence:
+  - reference: DOI:10.1002/anie.201204087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000665 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:HE815466.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000665
+  source_label: dixiamycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-abcb3d7c73
+- source: MIBIG
+  source_id: BGC0000665
+  source_label: dixiamycin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1de003ec5c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

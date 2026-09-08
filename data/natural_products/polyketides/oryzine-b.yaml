@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-1cf0cdee54
+label: oryzine B
+chemical_structure:
+  smiles: CCCCC1OC(C(C(C(O)=O)=C1)=C)=O
+  standard_inchi: InChI=1S/C11H14O4/c1-3-4-5-8-6-9(10(12)13)7(2)11(14)15-8/h6,8H,2-5H2,1H3,(H,12,13)
+  standard_inchi_key: ZUSCJTXGAYBGIW-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001996
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - Phthalide derivatives
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:510516
+  taxon_label: Aspergillus oryzae RIB40
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001996
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:30104550
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001996 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001996
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:510516
+  organism_label: Aspergillus oryzae RIB40
+  evidence:
+  - reference: PMID:30104550
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001996 entry version 2; citation taken from the entry level
+  genome_accession: genbank:NC_036442.1
+  locus_from: 2952940
+  locus_to: 3000000
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001996
+  source_label: oryzine B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-1cf0cdee54
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

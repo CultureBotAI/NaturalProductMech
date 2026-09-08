@@ -16,6 +16,28 @@ install:
 gen-schema:
     uv run gen-pydantic {{schema}} > src/naturalproductmech/schema/naturalproductmech_dataclasses.py
 
+# --- extraction (networked; canary before any batch) -------------------------
+# Free check: parse the cached MIBiG release and report counts, writing nothing.
+extract-mibig-dry *args:
+    uv run python scripts/extract_mibig.py --dry-run {{args}}
+
+# Write data/raw/mibig_compounds.tsv from the MIBiG release.
+extract-mibig *args:
+    uv run python scripts/extract_mibig.py {{args}}
+
+# Free check: how many classifier calls the batch would make. Sends nothing.
+extract-npclassifier-dry:
+    uv run python scripts/extract_npclassifier.py --dry-run
+
+# ONE real classifier call, then stop. Read the written row before the batch.
+extract-npclassifier-canary:
+    uv run python scripts/extract_npclassifier.py --canary
+
+# Classify every unclassified structure. Resumable: writes as it goes and skips
+# keys already in the inventory, so an interruption costs one chunk.
+extract-npclassifier *args:
+    uv run python scripts/extract_npclassifier.py {{args}}
+
 # --- seeding -----------------------------------------------------------------
 # Dry run: harmonize the committed inventories and report the records that WOULD
 # be written, per pathway. No files touched. Empty until M2 adds the extractors.

@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-1c73bce7d5
+label: lobosamide A
+chemical_structure:
+  smiles: C[C@H]1CC=CC=C(C)C=C(C)C=C\C=C/[C@H](O)C[C@H](O)[C@@H](O)[C@H](O)[C@@H](C)C=CC=CC=CC(=O)N1
+  standard_inchi: InChI=1S/C29H41NO5/c1-21-13-9-11-16-24(4)30-27(33)18-8-6-5-7-15-23(3)28(34)29(35)26(32)20-25(31)17-12-10-14-22(2)19-21/h5-15,17-19,23-26,28-29,31-32,34-35H,16,20H2,1-4H3,(H,30,33)/b6-5?,11-9?,14-10?,15-7?,17-12-,18-8?,21-13?,22-19?/t23-,24-,25-,26-,28+,29+/m0/s1
+  standard_inchi_key: OXBKRYKWMRJSMZ-JCTAFSBOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001303
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactams
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA01294
+producer_organisms:
+- taxon_id: NCBITaxon:1703433
+  taxon_label: Micromonospora sp. RL09-050-HVF-A
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001303
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26270237
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001303 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001303
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1703433
+  organism_label: Micromonospora sp. RL09-050-HVF-A
+  evidence:
+  - reference: PMID:26270237
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001303 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KT209587.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001303
+  source_label: lobosamide A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1c73bce7d5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

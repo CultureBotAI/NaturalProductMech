@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-b995dcceb2
+label: (-)-Cyatha-3,12-diene
+chemical_structure:
+  smiles: CC1=CC[C@@]2(CC[C@]3(CCC(=C3[C@H]2CC1)C(C)C)C)C
+  standard_inchi: InChI=1S/C20H32/c1-14(2)16-9-11-20(5)13-12-19(4)10-8-15(3)6-7-17(19)18(16)20/h8,14,17H,6-7,9-13H2,1-5H3/t17-,19-,20-/m1/s1
+  standard_inchi_key: HYUVPCPBEOBIGN-MISYRCLQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002218
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Cyathane diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA002662
+- pubchem:15519950
+producer_organisms:
+- taxon_id: NCBITaxon:1883078
+  taxon_label: Dentipellis sp. KUC8613
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002218
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:30905831
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002218 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002218
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1883078
+  organism_label: Dentipellis sp. KUC8613
+  evidence:
+  - reference: PMID:30905831
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002218 entry version 2; citation taken from the entry level
+  genome_accession: genbank:NSJX01000009.1
+  locus_from: 771945
+  locus_to: 794771
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002218
+  source_label: (-)-Cyatha-3,12-diene
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-b995dcceb2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

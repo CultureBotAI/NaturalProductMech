@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-3181c1cf18
+label: kendomycin B
+chemical_structure:
+  smiles: C[C@H]\1CC[C@@H]2[C@@H]([C@@H]([C@H]([C@@H](O2)C3=C(C(=O)C=C4C3=C[C@@](O4)([C@H](C[C@@H](C/C(=C1)/C)C)C)O)O)C)C)C
+  standard_inchi: InChI=1S/C29H42O5/c1-15-8-9-24-20(6)19(5)21(7)28(33-24)26-22-14-29(32,34-25(22)13-23(30)27(26)31)18(4)12-17(3)11-16(2)10-15/h10,13-15,17-21,24,28,31-32H,8-9,11-12H2,1-7H3/b16-10+/t15-,17+,18-,19-,20+,21+,24+,28+,29+/m0/s1
+  standard_inchi_key: KWKITCKAXYJDML-RPSOVOHRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002671
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA025561
+producer_organisms:
+- taxon_id: NCBITaxon:1871626
+  taxon_label: Verrucosispora sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002671
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression|Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1021/acs.jnatprod.9b00654
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002671 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002671
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1871626
+  organism_label: Verrucosispora sp.
+  evidence:
+  - reference: DOI:10.1021/acs.jnatprod.9b00654
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002671 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MZ222135.1
+  locus_from: 1
+  locus_to: 79937
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002671
+  source_label: kendomycin B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-3181c1cf18
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

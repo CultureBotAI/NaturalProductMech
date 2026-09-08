@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-cbfe77e23d
+label: polyoxin A
+chemical_structure:
+  smiles: C/C=C\1/CN([C@@H]1C(=O)O)C(=O)[C@H]([C@@H]2[C@H]([C@H]([C@@H](O2)N3C=C(C(=O)NC3=O)CO)O)O)NC(=O)[C@H]([C@@H]([C@H](COC(=O)N)O)O)N
+  standard_inchi: InChI=1S/C23H32N6O14/c1-2-7-3-28(12(7)21(38)39)19(37)11(26-18(36)10(24)13(32)9(31)6-42-22(25)40)16-14(33)15(34)20(43-16)29-4-8(5-30)17(35)27-23(29)41/h2,4,9-16,20,30-34H,3,5-6,24H2,1H3,(H2,25,40)(H,26,36)(H,38,39)(H,27,35,41)/b7-2-/t9-,10-,11-,12-,13+,14-,15+,16+,20+/m0/s1
+  standard_inchi_key: PQAGMWMKVWTHJU-ATETYRDMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000877
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Pyrimidine nucleos(t)ides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:6440960
+producer_organisms:
+- taxon_id: NCBITaxon:249586
+  taxon_label: Streptomyces cacaoi subsp. asoensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000877
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:19233844
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000877 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000877
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:249586
+  organism_label: Streptomyces cacaoi subsp. asoensis
+  evidence:
+  - reference: PMID:19233844
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000877 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EU158805.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000877
+  source_label: polyoxin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-cbfe77e23d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

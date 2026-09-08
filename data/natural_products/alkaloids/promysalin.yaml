@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-b05b479164
+label: promysalin
+chemical_structure:
+  smiles: O=C(OC(CCCCCC(O)C(N)=O)CCCCCC)C(CC=C1)N1C(C2=C(O)C=CC=C2)=O
+  standard_inchi: InChI=1S/C26H38N2O6/c1-2-3-4-6-12-19(13-7-5-8-17-23(30)24(27)31)34-26(33)21-15-11-18-28(21)25(32)20-14-9-10-16-22(20)29/h9-11,14,16,18-19,21,23,29-30H,2-8,12-13,15,17H2,1H3,(H2,27,31)
+  standard_inchi_key: HDPPSWUQDQXSJU-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000921
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+- PKS
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:303
+  taxon_label: Pseudomonas putida
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000921
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  evidence:
+  - reference: PMID:22035801
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000921 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000921
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:303
+  organism_label: Pseudomonas putida
+  evidence:
+  - reference: PMID:22035801
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000921 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GU211010.1
+  locus_from: 4335
+  locus_to: 20085
+  bgc_class:
+  - OTHER
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000921
+  source_label: promysalin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b05b479164
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

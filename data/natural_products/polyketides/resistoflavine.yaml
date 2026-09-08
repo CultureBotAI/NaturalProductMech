@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-4e1ca9a24c
+label: resistoflavine
+chemical_structure:
+  smiles: CC1=C2C(=O)C=C3C(C)(C)C(=O)C4=C(O)C=C(O)C5=C4C3(O)C2=C(C(O)=C1)C5=O
+  standard_inchi: InChI=1S/C22H16O7/c1-7-4-8(23)14-17-13(7)11(26)6-12-21(2,3)20(28)16-10(25)5-9(24)15(19(14)27)18(16)22(12,17)29/h4-6,23-25,29H,1-3H3
+  standard_inchi_key: FRXZTKQCZPGFDX-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000264
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthraquinones and anthrones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA019089
+producer_organisms:
+- taxon_id: NCBITaxon:67356
+  taxon_label: Streptomyces resistomycificus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000264
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:14982421
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000264 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000264
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67356
+  organism_label: Streptomyces resistomycificus
+  evidence:
+  - reference: PMID:14982421
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000264 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ585192.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000264
+  source_label: resistoflavine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4e1ca9a24c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

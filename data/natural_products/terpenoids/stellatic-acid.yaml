@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-c25dead097
+label: stellatic acid
+chemical_structure:
+  smiles: C=C(C)[C@H]1CC[C@]2(C)[C@@H]1CC[C@]1(C)C/C=C(\C(=O)O)CC/C=C(\C)CC[C@H]12
+  standard_inchi: InChI=1S/C25H38O2/c1-17(2)20-12-16-25(5)21(20)13-15-24(4)14-11-19(23(26)27)8-6-7-18(3)9-10-22(24)25/h7,11,20-22H,1,6,8-10,12-16H2,2-5H3,(H,26,27)/b18-7+,19-11-/t20-,21-,22-,24+,25-/m1/s1
+  standard_inchi_key: FSKFLBQJBSQQKA-DMZCBJAKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002610
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Valparane diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA032764
+producer_organisms:
+- taxon_id: NCBITaxon:1549217
+  taxon_label: Aspergillus stellatus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002610
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26351860
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002610 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002610
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1549217
+  organism_label: Aspergillus stellatus
+  evidence:
+  - reference: PMID:26351860
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002610 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LC073704.1
+  locus_from: 101
+  locus_to: 6568
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002610
+  source_label: stellatic acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-c25dead097
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

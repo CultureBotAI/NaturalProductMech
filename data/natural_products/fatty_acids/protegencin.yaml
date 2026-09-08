@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-f2b4cdecaa
+label: protegencin
+chemical_structure:
+  smiles: C#CC#CC#CC#CC=CCCCCCCCC(=O)O
+  standard_inchi: InChI=1S/C18H18O2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18(19)20/h1,9-10H,11-17H2,(H,19,20)
+  standard_inchi_key: AMCJPHJAMUEWRC-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002804
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty Acids and Conjugates
+  class_results:
+  - Unsaturated fatty acids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA033161
+producer_organisms:
+- taxon_id: NCBITaxon:1124983
+  taxon_label: Pseudomonas protegens CHA0
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002804
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1073/pnas.2107695118
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002804 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002804
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1124983
+  organism_label: Pseudomonas protegens CHA0
+  evidence:
+  - reference: DOI:10.1073/pnas.2107695118
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002804 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LS999205.1
+  locus_from: 303446
+  locus_to: 316434
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002804
+  source_label: protegencin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-f2b4cdecaa
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

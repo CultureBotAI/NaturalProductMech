@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-7c688d5ec7
+label: thiopeptin
+chemical_structure:
+  smiles: C[C@H]([C@H](NC1=S)C2=NC([C@@H](N3)[C@](C4=NC(C(N[C@@](C(N/C(C5=N[C@@H](C(N[C@](C(C)(O)[C@@H](C)O)([H])C6=NC1=CS6)=O)CS5)=C\C)=O)([H])[C@@H](C)O)=O)=CS4)(NC([C@H](C)NC(C(NC([C@H](C)NC([C@H](C(C)C)N[C@@H]7C=CC8=C(N=C9C=C8[C@@H](O)C)[C@H]7O)=O)=O)=C)=O)=O)CC[C@@H]3C%10=NC(C(NC(C(NC(C(O)=O)=C)=O)=C)=O)=CS%10)=CS2)OC9=O
+  standard_inchi: InChI=1S/C71H84N18O18S6/c1-14-37-63-82-43(22-109-63)59(100)88-52(70(13,106)34(12)92)66-84-45(24-112-66)62(108)87-48-33(11)107-68(105)40-19-36(31(9)90)35-15-16-38(50(93)49(35)78-40)77-46(25(2)3)60(101)75-28(6)54(95)72-26(4)53(94)73-29(7)56(97)89-71(69-85-44(23-113-69)58(99)86-47(32(10)91)61(102)80-37)18-17-39(79-51(71)41-20-111-65(48)81-41)64-83-42(21-110-64)57(98)74-27(5)55(96)76-30(8)67(103)104/h14-16,19-21,23-25,28-29,31-34,38-39,43,46-48,50-52,77,79,90-93,106H,4-5,8,17-18,22H2,1-3,6-7,9-13H3,(H,72,95)(H,73,94)(H,74,98)(H,75,101)(H,76,96)(H,80,102)(H,86,99)(H,87,108)(H,88,100)(H,89,97)(H,103,104)/b37-14-/t28-,29-,31-,32+,33+,34+,38+,39+,43+,46-,47-,48-,50-,51+,52+,70?,71+/m0/s1
+  standard_inchi_key: XLCGNZQPUQXSOY-BJGZCODDSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001474
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:565073
+  taxon_label: Streptomyces tateyamensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001474
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:29983054
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001474 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001474
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:565073
+  organism_label: Streptomyces tateyamensis
+  evidence:
+  - reference: PMID:29983054
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001474 entry version 4; citation taken from the entry level
+  genome_accession: genbank:PYBW01000040.1
+  locus_from: 24523
+  locus_to: 52894
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001474
+  source_label: thiopeptin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-7c688d5ec7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

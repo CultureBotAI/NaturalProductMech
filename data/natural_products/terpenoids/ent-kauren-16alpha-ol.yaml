@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-20e4e9a755
+label: ent-kauren-16alpha-ol
+chemical_structure:
+  smiles: C[C@]12C(CC[C@]3(C[C@]4(O)C)C2CC[C@@H]4C3)C(C)(C)CCC1
+  standard_inchi: InChI=1S/C20H34O/c1-17(2)9-5-10-18(3)15(17)8-11-20-12-14(6-7-16(18)20)19(4,21)13-20/h14-16,21H,5-13H2,1-4H3/t14-,15?,16?,18-,19-,20+/m1/s1
+  standard_inchi_key: FZSRMADKTOBCNT-STFDCFIYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002221
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Kaurane and Phyllocladane diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+compound_classes:
+- Diterpenoid
+xrefs:
+- lotus:Q105005155
+- lotus:Q82121663
+producer_organisms:
+- taxon_id: NCBITaxon:578457
+  taxon_label: Serpula lacrymans var. lacrymans S7.9
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002221
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1016/j.fgb.2019.03.007
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002221 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002221
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:578457
+  organism_label: Serpula lacrymans var. lacrymans S7.9
+  evidence:
+  - reference: DOI:10.1016/j.fgb.2019.03.007
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002221 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:GL945430.1
+  locus_from: 2900919
+  locus_to: 2941677
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002221
+  source_label: ent-kauren-16alpha-ol
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-20e4e9a755
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

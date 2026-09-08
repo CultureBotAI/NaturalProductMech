@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-15ed0bd790
+label: conidiogenone
+chemical_structure:
+  smiles: C[C@H]1[C@@H](CC(=O)[C@]2([C@@]13C[C@]4(CCC([C@H]4[C@@H]3CC2)(C)C)C)C)O
+  standard_inchi: InChI=1S/C20H32O2/c1-12-14(21)10-15(22)19(5)7-6-13-16-17(2,3)8-9-18(16,4)11-20(12,13)19/h12-14,16,21H,6-11H2,1-5H3/t12-,13-,14+,16+,18+,19-,20-/m0/s1
+  standard_inchi_key: VXPSMCORCRBNAO-TYVLEIALSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002320
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Cyclopiane diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA017609
+producer_organisms:
+- taxon_id: NCBITaxon:500485
+  taxon_label: Penicillium rubens Wisconsin 54-1255
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002320
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:30343633
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002320 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002320
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:500485
+  organism_label: Penicillium rubens Wisconsin 54-1255
+  evidence:
+  - reference: PMID:30343633
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002320 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AM920435.1
+  locus_from: 2509978
+  locus_to: 2517120
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002320
+  source_label: conidiogenone
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-15ed0bd790
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

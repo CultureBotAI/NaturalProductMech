@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-3320618e95
+label: lenoremycin
+chemical_structure:
+  smiles: OC([C@@H](C)C[C@H](C(/C(C)=C/[C@H](C)[C@H]1O[C@]2(O[C@](C)([C@@H]3O[C@]4(O[C@@H]([C@H]5O[C@](CO)(O)[C@H](C)C[C@@H]5C)C[C@@H]4C)[C@H](C)CC3)CC2)[C@H](C)[C@H](O[C@@H]6O[C@H](C)[C@@H](OC)CC6)C1)=O)C)=O
+  standard_inchi: InChI=1S/C47H78O13/c1-25(19-26(2)41(49)27(3)20-29(5)43(50)51)36-23-37(55-40-16-14-35(53-12)34(10)54-40)33(9)46(56-36)18-17-44(11,60-46)39-15-13-30(6)47(58-39)32(8)22-38(57-47)42-28(4)21-31(7)45(52,24-48)59-42/h19,25,27-40,42,48,52H,13-18,20-24H2,1-12H3,(H,50,51)/b26-19+/t25-,27+,28-,29-,30+,31+,32-,33+,34+,35-,36-,37+,38+,39+,40-,42-,44-,45-,46+,47+/m0/s1
+  standard_inchi_key: LQFPDTISEHAMNQ-JRSQRZRGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002559
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polyethers
+  class_results:
+  - Polyether ionophores
+  is_glycoside: true
+bgc_class:
+- PKS
+compound_classes:
+- Polyether polyketide
+xrefs:
+- chembl:CHEMBL4098414
+- pubchem:6441669
+producer_organisms:
+- taxon_id: NCBITaxon:1912
+  taxon_label: Streptomyces hygroscopicus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002559
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/acsptsci.8b00007
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002559 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002559
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1912
+  organism_label: Streptomyces hygroscopicus
+  evidence:
+  - reference: DOI:10.1021/acsptsci.8b00007
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002559 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MN071207.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002559
+  source_label: lenoremycin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-3320618e95
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

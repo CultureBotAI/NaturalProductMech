@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-6abb767320
+label: amphibactin H
+chemical_structure:
+  smiles: O=C(NC(C(NC(C(NC(C(NC(C(O)=O)CCCN(O)C(C)=O)=O)CO)=O)CCCN(O)C(C)=O)=O)CCCN(O)C(C)=O)CCCCCCCCCCCCCCC
+  standard_inchi: InChI=1S/C40H73N7O13/c1-5-6-7-8-9-10-11-12-13-14-15-16-17-24-36(52)41-32(21-18-25-45(58)29(2)49)37(53)42-33(22-19-26-46(59)30(3)50)38(54)44-35(28-48)39(55)43-34(40(56)57)23-20-27-47(60)31(4)51/h32-35,48,58-60H,5-28H2,1-4H3,(H,41,52)(H,42,53)(H,43,55)(H,44,54)(H,56,57)
+  standard_inchi_key: UNCBCVBICFWAOW-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002465
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Linear
+- Lipopeptide
+producer_organisms:
+- taxon_id: NCBITaxon:393595
+  taxon_label: Alcanivorax borkumensis SK2
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002465
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24663669
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002465 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002465
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:393595
+  organism_label: Alcanivorax borkumensis SK2
+  evidence:
+  - reference: PMID:24663669
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002465 entry version 2; citation taken from the entry level
+  genome_accession: genbank:AM286690.1
+  locus_from: 2377165
+  locus_to: 2399998
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002465
+  source_label: amphibactin H
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-6abb767320
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

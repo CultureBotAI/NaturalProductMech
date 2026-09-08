@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-f9b470e34a
+label: acinetoferrin
+chemical_structure:
+  smiles: CCCCC\C=C\C(=O)N(O)CCCNC(=O)CC(O)(CC(=O)NCCCN(O)C(=O)\C=C\CCCCC)C(O)=O
+  standard_inchi: InChI=1S/C28H48N4O9/c1-3-5-7-9-11-15-25(35)31(40)19-13-17-29-23(33)21-28(39,27(37)38)22-24(34)30-18-14-20-32(41)26(36)16-12-10-8-6-4-2/h11-12,15-16,39-41H,3-10,13-14,17-22H2,1-2H3,(H,29,33)(H,30,34)(H,37,38)/b15-11+,16-12+
+  standard_inchi_key: ZYPXWYPUWAXTQR-JOBJLJCHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000295
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA010195
+producer_organisms:
+- taxon_id: NCBITaxon:29430
+  taxon_label: Acinetobacter haemolyticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000295
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23378574
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000295 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000295
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:29430
+  organism_label: Acinetobacter haemolyticus
+  evidence:
+  - reference: PMID:23378574
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000295 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB661448.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000295
+  source_label: acinetoferrin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f9b470e34a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

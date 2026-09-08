@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-814a57f54b
+label: Fulvuthiacene B
+chemical_structure:
+  smiles: COC(=O)/C=C(\OC)[C@H](C)[C@H](/C=C/C1=CSC(CCCCCC(C)C)=N1)OC
+  standard_inchi: InChI=1S/C22H35NO4S/c1-16(2)10-8-7-9-11-21-23-18(15-28-21)12-13-19(25-4)17(3)20(26-5)14-22(24)27-6/h12-17,19H,7-11H2,1-6H3/b13-12+,20-14-/t17-,19+/m1/s1
+  standard_inchi_key: WZUBQUSSGYCRFH-VTLUBLOASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001941
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Melithiazole and Myxothiazole derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA025856
+producer_organisms:
+- taxon_id: NCBITaxon:33
+  taxon_label: Myxococcus fulvus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001941
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/acschembio.8b00948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001941 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001941
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33
+  organism_label: Myxococcus fulvus
+  evidence:
+  - reference: DOI:10.1021/acschembio.8b00948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001941 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MH069655.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001941
+  source_label: Fulvuthiacene B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-814a57f54b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

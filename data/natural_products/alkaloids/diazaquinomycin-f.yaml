@@ -1,0 +1,63 @@
+identifier: naturalproductmech:mibig-43d1ee1b20
+label: diazaquinomycin F
+chemical_structure:
+  smiles: O=C(C(N1)=C2C(CCCCC)=CC1=O)C(NC(C(C)=C3CCC)=O)=C3C2=O
+  standard_inchi: InChI=1S/C21H24N2O4/c1-4-6-7-9-12-10-14(24)22-17-15(12)19(25)16-13(8-5-2)11(3)21(27)23-18(16)20(17)26/h10H,4-9H2,1-3H3,(H,22,24)(H,23,27)
+  standard_inchi_key: DSHQVFGPKKWBTO-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001850
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1510026
+  taxon_label: Streptomyces sp. F001
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001850
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.3390/md12063574
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001850 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001850
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1510026
+  organism_label: Streptomyces sp. F001
+  evidence:
+  - reference: DOI:10.3390/md12063574
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001850 entry version 4; citation taken from the entry level
+  genome_accession: genbank:QZWF01000007.1
+  locus_from: 257859
+  locus_to: 281361
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001850
+  source_label: diazaquinomycin F
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-43d1ee1b20
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-749ee21065
+label: microcystin-LAba
+chemical_structure:
+  smiles: C[C@H]1[C@@H](NC(=O)C(NC(=O)[C@H]([C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)C(=C)N(C(=O)CC[C@@H](NC1=O)C(=O)O)C)C)CC(C)C)C(=O)O)C)(C)C)/C=C/C(=C/[C@H](C)[C@H](CC2=CC=CC=C2)OC)/C
+  standard_inchi: InChI=1S/C47H69N7O12/c1-25(2)22-35-43(60)52-38(45(63)64)29(6)40(57)53-47(9,10)46(65)51-33(19-18-26(3)23-27(4)36(66-12)24-32-16-14-13-15-17-32)28(5)39(56)49-34(44(61)62)20-21-37(55)54(11)31(8)42(59)48-30(7)41(58)50-35/h13-19,23,25,27-30,33-36,38H,8,20-22,24H2,1-7,9-12H3,(H,48,59)(H,49,56)(H,50,58)(H,51,65)(H,52,60)(H,53,57)(H,61,62)(H,63,64)/b19-18+,26-23+/t27-,28-,29-,30+,33-,34+,35-,36-,38+/m0/s1
+  standard_inchi_key: MGGRDOJGYXQAGY-JBBKKQAGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001667
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Microcystins
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:548826
+  taxon_label: Fischerella sp. CENA161
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001667
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:29154789
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001667 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001667
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:548826
+  organism_label: Fischerella sp. CENA161
+  evidence:
+  - reference: PMID:29154789
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001667 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX891213.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001667
+  source_label: microcystin-LAba
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-749ee21065
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

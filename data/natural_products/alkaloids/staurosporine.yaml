@@ -1,0 +1,103 @@
+identifier: naturalproductmech:mibig-2d819bf7fa
+label: staurosporine
+chemical_structure:
+  smiles: C[C@@]12[C@@H]([C@@H](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)CNC6=O)NC)OC
+  standard_inchi: InChI=1S/C28H26N4O3/c1-28-26(34-3)17(29-2)12-20(35-28)31-18-10-6-4-8-14(18)22-23-16(13-30-27(23)33)21-15-9-5-7-11-19(15)32(28)25(21)24(22)31/h4-11,17,20,26,29H,12-13H2,1-3H3,(H,30,33)/t17-,20-,26-,28+/m1/s1
+  standard_inchi_key: HKSZLNNOFSGOKW-FYTWVXJKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000826
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:44259
+producer_organisms:
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus ATCC 27064
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000826
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:20624727
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000826 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:391037
+  taxon_label: Salinispora arenicola CNS-205
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000827
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17158611
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000827 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000826
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1901
+  organism_label: Streptomyces clavuligerus ATCC 27064
+  evidence:
+  - reference: PMID:20624727
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000826 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CM000914.1
+  locus_from: 1200116
+  locus_to: 1226201
+  bgc_class:
+  - OTHER
+- accession: mibig:BGC0000827
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:391037
+  organism_label: Salinispora arenicola CNS-205
+  evidence:
+  - reference: PMID:17158611
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000827 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP000850.1
+  locus_from: 2672473
+  locus_to: 2696772
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000826
+  source_label: staurosporine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2d819bf7fa
+- source: MIBIG
+  source_id: BGC0000827
+  source_label: staurosporine
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-aaba50e78c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000826, BGC0000827.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

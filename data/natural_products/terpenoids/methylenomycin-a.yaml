@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-697eb70f76
+label: methylenomycin A
+chemical_structure:
+  smiles: C[C@@]12O[C@]1(C)C(=O)C(=C)[C@H]2C(O)=O
+  standard_inchi: InChI=1S/C9H10O4/c1-4-5(7(11)12)8(2)9(3,13-8)6(4)10/h5H,1H2,2-3H3,(H,11,12)/t5-,8-,9+/m0/s1
+  standard_inchi_key: HBECYYFDLZZMPL-WLGLDCGKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000914
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA013552
+producer_organisms:
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000914
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:19054329
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000914 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000914
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:100226
+  organism_label: Streptomyces coelicolor A3(2)
+  evidence:
+  - reference: PMID:19054329
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000914 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AL589148.1
+  locus_from: 231676
+  locus_to: 251017
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000914
+  source_label: methylenomycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-697eb70f76
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

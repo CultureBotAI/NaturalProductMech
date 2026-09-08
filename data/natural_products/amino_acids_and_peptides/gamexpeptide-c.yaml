@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-04fef71b28
+label: gamexpeptide C
+chemical_structure:
+  smiles: CC(C[C@@H]1C(N[C@@H](CC(C)C)C(N[C@H](C(C)C)C(N[C@@H](CC(C)C)C(N[C@H](CC(C)C)C(N1)=O)=O)=O)=O)=O)C
+  standard_inchi: InChI=1S/C29H53N5O5/c1-15(2)11-20-25(35)30-21(12-16(3)4)26(36)32-23(14-18(7)8)28(38)34-24(19(9)10)29(39)33-22(13-17(5)6)27(37)31-20/h15-24H,11-14H2,1-10H3,(H,30,35)(H,31,37)(H,32,36)(H,33,39)(H,34,38)/t20-,21-,22+,23+,24-/m1/s1
+  standard_inchi_key: TXHTYHRJOLWFNL-URYYLNOGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001128
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:243265
+  taxon_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001128
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:22544021
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001128 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001128
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:243265
+  organism_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence:
+  - reference: PMID:22544021
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001128 entry version 4; citation taken from the entry level
+  genome_accession: genbank:BX470251.1
+  locus_from: 3865092
+  locus_to: 3880790
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001128
+  source_label: gamexpeptide C
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-04fef71b28
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

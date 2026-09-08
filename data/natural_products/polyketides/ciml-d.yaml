@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-009525b616
+label: CIML D
+chemical_structure:
+  smiles: C[C@@H]1CCCCCCCCCCCC[C@H](O)[C@H]2O[C@@H]2[C@@H](OP(=O)(O)OCC[N+](C)(C)C)C=CC=C(O)O1
+  standard_inchi: InChI=1S/C27H50NO8P/c1-22-16-13-11-9-7-5-6-8-10-12-14-17-23(29)26-27(35-26)24(18-15-19-25(30)34-22)36-37(31,32)33-21-20-28(2,3)4/h15,18-19,22-24,26-27,29H,5-14,16-17,20-21H2,1-4H3,(H-,30,31,32)/p+1/t22-,23+,24+,26-,27-/m1/s1
+  standard_inchi_key: ZFOQFRWXAGFXFL-IWRPRKENSA-O
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002228
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactones
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033150
+producer_organisms:
+- taxon_id: NCBITaxon:1573173
+  taxon_label: Colletotrichum incanum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002228
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/acs.orglett.0c01975
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002228 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002228
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1573173
+  organism_label: Colletotrichum incanum
+  evidence:
+  - reference: DOI:10.1021/acs.orglett.0c01975
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002228 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:LFIW01000394.1
+  locus_from: 4237
+  locus_to: 22473
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002228
+  source_label: CIML D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-009525b616
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

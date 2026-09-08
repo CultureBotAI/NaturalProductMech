@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-6d23951df5
+label: rhabdopeptide 3
+chemical_structure:
+  smiles: CN[C@H](CC(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)N[C@H](C(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)NCCC1=CC=CC=C1
+  standard_inchi: InChI=1S/C38H66N6O5/c1-23(2)22-29(39-11)36(47)42(12)32(26(7)8)35(46)41-30(24(3)4)37(48)44(14)33(27(9)10)38(49)43(13)31(25(5)6)34(45)40-21-20-28-18-16-15-17-19-28/h15-19,23-27,29-33,39H,20-22H2,1-14H3,(H,40,45)(H,41,46)/t29-,30-,31-,32-,33-/m1/s1
+  standard_inchi_key: OESQZFRXSGTAAF-YKNMHBIISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000416
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:406817
+  taxon_label: Xenorhabdus nematophila ATCC 19061
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000416
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:24038745
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000416 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000416
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:406817
+  organism_label: Xenorhabdus nematophila ATCC 19061
+  evidence:
+  - reference: PMID:24038745
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000416 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FN667742.1
+  locus_from: 2154724
+  locus_to: 2170060
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000416
+  source_label: rhabdopeptide 3
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6d23951df5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

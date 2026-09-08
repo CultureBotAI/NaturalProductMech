@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-c46ee854ae
+label: thalianin
+chemical_structure:
+  smiles: C[C@H]([C@@H](OC(C)=O)C(=O)\C=C(/C)CCC=C(C)C)[C@@]1(C)CCC2=C1[C@@H](O)C[C@H]1C(C)(C)[C@@H](CC[C@]21C)OC(C)=O
+  standard_inchi: InChI=1S/C34H52O6/c1-20(2)12-11-13-21(3)18-27(38)31(40-24(6)36)22(4)33(9)16-14-25-30(33)26(37)19-28-32(7,8)29(39-23(5)35)15-17-34(25,28)10/h12,18,22,26,28-29,31,37H,11,13-17,19H2,1-10H3/b21-18+/t22-,26+,28+,29-,31-,33-,34-/m1/s1
+  standard_inchi_key: IZKRCWBRNWQJCU-BCRPXBTMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000670
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Triterpenoids
+  class_results:
+  - Lanostane, Tirucallane and Euphane triterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+compound_classes:
+- Higher terpenoid
+producer_organisms:
+- taxon_id: NCBITaxon:3702
+  taxon_label: Arabidopsis thaliana
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000670
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production.'
+  evidence:
+  - reference: DOI:10.1126/science.aau6389
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000670 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000670
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:3702
+  organism_label: Arabidopsis thaliana
+  evidence:
+  - reference: DOI:10.1126/science.aau6389
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000670 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:NC_003076.8
+  locus_from: 19428888
+  locus_to: 19461689
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000670
+  source_label: thalianin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-c46ee854ae
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

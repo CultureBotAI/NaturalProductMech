@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-3803b0fc76
+label: spliceostatin M
+chemical_structure:
+  smiles: CC(/C=C/C1CC2(CO2)CC(C)(O)O1)=C\C(O)C1OC(C)C(NC(=O)/C=C\C(C)OC(=O)C(C)C)CC1C
+  standard_inchi: InChI=1S/C29H45NO8/c1-17(2)27(33)36-20(5)9-11-25(32)30-23-13-19(4)26(37-21(23)6)24(31)12-18(3)8-10-22-14-29(16-35-29)15-28(7,34)38-22/h8-12,17,19-24,26,31,34H,13-16H2,1-7H3,(H,30,32)/b10-8+,11-9-,18-12+
+  standard_inchi_key: NWKUEDRQVAOKOY-MGNXQTKBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002059
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA033158
+producer_organisms:
+- taxon_id: NCBITaxon:1885894
+  taxon_label: Xanthomonas cannabis pv. cannabis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002059
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:33658492
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002059 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002059
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1885894
+  organism_label: Xanthomonas cannabis pv. cannabis
+  evidence:
+  - reference: PMID:33658492
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002059 entry version 3; citation taken from the entry level
+  genome_accession: genbank:BK010647.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002059
+  source_label: spliceostatin M
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3803b0fc76
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

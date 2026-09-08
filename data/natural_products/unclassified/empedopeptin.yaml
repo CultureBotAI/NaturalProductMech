@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-c759e3c4ac
+label: empedopeptin
+chemical_structure:
+  smiles: CCCCCCCCCCC[C@H]1CC(=O)N2CCC[C@H]2C(=O)N[C@@H](C(=O)N3CCC[C@@H]3C(=O)N[C@@H](C(=O)N[C@@H](C(=O)N[C@H](C(=O)N4CC[C@H]([C@H]4C(=O)N[C@@H](C(=O)O1)[C@@H](C(=O)O)O)O)CO)[C@@H](C(=O)O)O)CCCN=C(N)N)CO
+  standard_inchi: InChI=1S/C49H79N11O19/c1-2-3-4-5-6-7-8-9-10-14-26-23-33(64)58-20-12-16-30(58)40(68)54-28(24-61)44(72)59-21-13-17-31(59)41(69)53-27(15-11-19-52-49(50)51)39(67)56-34(37(65)46(74)75)42(70)55-29(25-62)45(73)60-22-18-32(63)36(60)43(71)57-35(48(78)79-26)38(66)47(76)77/h26-32,34-38,61-63,65-66H,2-25H2,1H3,(H,53,69)(H,54,68)(H,55,70)(H,56,67)(H,57,71)(H,74,75)(H,76,77)(H4,50,51,52)/t26-,27+,28+,29-,30-,31+,32+,34+,35+,36-,37-,38-/m0/s1
+  standard_inchi_key: WSCOCOSDPASNLN-KWFINCGOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002044
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA020908
+producer_organisms:
+- taxon_id: NCBITaxon:1593482
+  taxon_label: Massilia sp. YMA4
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002044
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1074/jbc.m112.369561
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002044 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002044
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1593482
+  organism_label: Massilia sp. YMA4
+  evidence:
+  - reference: DOI:10.1074/jbc.m112.369561
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002044 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CP030092.1
+  locus_from: 2138714
+  locus_to: 2204004
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002044
+  source_label: empedopeptin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c759e3c4ac
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

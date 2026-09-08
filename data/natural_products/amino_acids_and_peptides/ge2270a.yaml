@@ -1,0 +1,110 @@
+identifier: naturalproductmech:mibig-47e25f64fe
+label: GE2270A
+chemical_structure:
+  smiles: CC1=C2C(=O)NCC(=O)NC(C3=NC(=CS3)C4=NC(=CS4)C5=C(C=CC(=N5)C6=NC(=CS6)C7=NC(CO7)C(=O)N8CCCC8C(=O)N)C9=NC(=CS9)C(=O)NC(C3=NC(=C(S3)COC)C(=O)NC(C(=N2)S1)CC(=O)NC)C(C)C)C(C1=CC=CC=C1)O
+  standard_inchi: InChI=1S/C56H55N15O10S6/c1-24(2)39-55-70-42(36(87-55)19-80-5)48(78)61-29(16-37(72)58-4)53-69-40(25(3)86-53)47(77)59-17-38(73)67-43(44(74)26-10-7-6-8-11-26)54-66-34(23-85-54)52-63-31(20-83-52)41-27(50-64-32(21-82-50)46(76)68-39)13-14-28(60-41)51-65-33(22-84-51)49-62-30(18-81-49)56(79)71-15-9-12-35(71)45(57)75/h6-8,10-11,13-14,20-24,29-30,35,39,43-44,74H,9,12,15-19H2,1-5H3,(H2,57,75)(H,58,72)(H,59,77)(H,61,78)(H,67,73)(H,68,76)
+  standard_inchi_key: YMUAOVHRCGSGJV-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000604
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:16130335
+producer_organisms:
+- taxon_id: NCBITaxon:653884
+  taxon_label: Nonomuraea sp. WU8817
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000604
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:19338336
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000604 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:35762
+  taxon_label: Planobispora rosea
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001155
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.44.693
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001155 entry version 5; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000604
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:653884
+  organism_label: Nonomuraea sp. WU8817
+  evidence:
+  - reference: PMID:19338336
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000604 entry version 4; citation taken from the entry level
+  genome_accession: genbank:FJ461359.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Knock-out studies
+- accession: mibig:BGC0001155
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:35762
+  organism_label: Planobispora rosea
+  evidence:
+  - reference: DOI:10.7164/antibiotics.44.693
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001155 entry version 5; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KF366381.2
+  locus_from: 4201
+  locus_to: 25722
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000604
+  source_label: GE2270A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-47e25f64fe
+- source: MIBIG
+  source_id: BGC0001155
+  source_label: GE2270
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-edc3904f39
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000604, BGC0001155.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

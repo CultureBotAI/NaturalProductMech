@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-40499df579
+label: icosalide A
+chemical_structure:
+  smiles: CCCCCCCC1CC(=O)NC(CO)C(=O)NC(CC(C)C)C(=O)OC(CCCCC)CC(=O)NC(CC(C)C)C(=O)NC(CO)C(=O)O1
+  standard_inchi: InChI=1S/C36H64N4O10/c1-7-9-11-12-14-16-26-20-32(44)38-29(21-41)34(46)39-28(18-24(5)6)35(47)49-25(15-13-10-8-2)19-31(43)37-27(17-23(3)4)33(45)40-30(22-42)36(48)50-26/h23-30,41-42H,7-22H2,1-6H3,(H,37,43)(H,38,44)(H,39,46)(H,40,45)
+  standard_inchi_key: YCLORVUKJQGWLJ-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001833
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:28095
+  taxon_label: Burkholderia gladioli
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001833
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1021/acschembio.8b00600
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001833 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001833
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:28095
+  organism_label: Burkholderia gladioli
+  evidence:
+  - reference: DOI:10.1021/acschembio.8b00600
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001833 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MH790860.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001833
+  source_label: icosalide A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-40499df579
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

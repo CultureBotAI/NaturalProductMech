@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-6af5182744
+label: 4-Z-annimycin
+chemical_structure:
+  smiles: CC/C=C/C=C(\C)/C=C/C=C\C(CC(=O)NC1=C(CCC1=O)O)O
+  standard_inchi: InChI=1S/C19H25NO4/c1-3-4-5-8-14(2)9-6-7-10-15(21)13-18(24)20-19-16(22)11-12-17(19)23/h4-10,15,21-22H,3,11-13H2,1-2H3,(H,20,24)/b5-4+,9-6+,10-7-,14-8+
+  standard_inchi_key: NWXCMIPYEHNXHW-VQOMMXTDSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001298
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Simple amide alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Linear polyketide
+xrefs:
+- pubchem:139585542
+- npatlas:NPA008749
+- chebi:205485
+producer_organisms:
+- taxon_id: NCBITaxon:67282
+  taxon_label: Streptomyces calvus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001298
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2013.09.006
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001298 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001298
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67282
+  organism_label: Streptomyces calvus
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2013.09.006
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001298 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KF683117.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001298
+  source_label: 4-Z-annimycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-6af5182744
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

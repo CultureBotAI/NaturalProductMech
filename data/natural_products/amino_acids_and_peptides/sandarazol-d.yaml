@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-50ffc398b7
+label: sandarazol D
+chemical_structure:
+  smiles: CC(C)CC(=O)[C@@H]1O[C@@H]1/C=C/CC(=O)N[C@H](CN(C)C)C(=O)N[C@H](C(=O)N[C@@H](CC(C)C)C(=O)C(C)Cl)C(C)C
+  standard_inchi: InChI=1S/C29H49ClN4O6/c1-16(2)13-20(26(37)19(7)30)32-29(39)25(18(5)6)33-28(38)21(15-34(8)9)31-24(36)12-10-11-23-27(40-23)22(35)14-17(3)4/h10-11,16-21,23,25,27H,12-15H2,1-9H3,(H,31,36)(H,32,39)(H,33,38)/b11-10+/t19?,20-,21+,23+,25-,27-/m0/s1
+  standard_inchi_key: GWNJJGVVPXPMNY-LVHWZTDZSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002114
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA033249
+producer_organisms:
+- taxon_id: NCBITaxon:2024858
+  taxon_label: Sandaracinus sp. MSr10575
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002114
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1002/anie.202014671
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002114 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002114
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2024858
+  organism_label: Sandaracinus sp. MSr10575
+  evidence:
+  - reference: DOI:10.1002/anie.202014671
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002114 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MW053453.1
+  locus_from: 43000
+  locus_to: 89000
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002114
+  source_label: sandarazol D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-50ffc398b7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

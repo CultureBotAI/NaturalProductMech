@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-8117adfb07
+label: eurocidin D
+chemical_structure:
+  smiles: CCC(C)C1C/C=C/C=C\C=C/C=C\C=C\C(CC2C(C(CC(O2)(CC(C(CCC(=O)CC(CC(=O)O1)O)O)O)O)O)C(=O)O)O[C@H]3[C@H]([C@H]([C@@H]([C@H](O3)C)O)N)O
+  standard_inchi: InChI=1S/C40H61NO15/c1-4-23(2)31-15-13-11-9-7-5-6-8-10-12-14-27(54-39-37(49)35(41)36(48)24(3)53-39)20-32-34(38(50)51)30(46)22-40(52,56-32)21-29(45)28(44)17-16-25(42)18-26(43)19-33(47)55-31/h5-14,23-24,26-32,34-37,39,43-46,48-49,52H,4,15-22,41H2,1-3H3,(H,50,51)/b6-5-,9-7-,10-8-,13-11+,14-12+/t23?,24-,26?,27?,28?,29?,30?,31?,32?,34?,35+,36-,37+,39+,40?/m1/s1
+  standard_inchi_key: ISJFQHRNXXQEGT-VYCLUTOCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002104
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:6444003
+- npatlas:NPA021319
+producer_organisms:
+- taxon_id: NCBITaxon:66423
+  taxon_label: Streptomyces eurocidicus ATCC 27428
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002104
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Gene expression correlated with compound production.'
+  evidence:
+  - reference: PMID:13286189
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002104 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002104
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:66423
+  organism_label: Streptomyces eurocidicus ATCC 27428
+  evidence:
+  - reference: PMID:13286189
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002104 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NZ_LGUI01000004.1
+  locus_from: 52350
+  locus_to: 147183
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002104
+  source_label: eurocidin D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-8117adfb07
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-d6e0889b31
+label: chaxamycin C
+chemical_structure:
+  smiles: C[C@H]1\C=C\C=C/C(=O)NC2=C(C)C(=O)C3=C(C(O)=C(C)C(O)=C3C2=O)C(=O)\C(C)=C\[C@H](CO)[C@H](O)[C@@H](C)[C@@H](O)[C@H](C)[C@H](O)[C@H](C)[C@H]1O
+  standard_inchi: InChI=1S/C35H45NO11/c1-14-10-8-9-11-22(38)36-26-16(3)32(44)23-24(33(45)20(7)34(46)25(23)35(26)47)28(40)15(2)12-21(13-37)31(43)19(6)30(42)18(5)29(41)17(4)27(14)39/h8-12,14,17-19,21,27,29-31,37,39,41-43,45-46H,13H2,1-7H3,(H,36,38)/b10-8+,11-9-,15-12+/t14-,17+,18+,19-,21+,27-,29+,30-,31+/m0/s1
+  standard_inchi_key: DKNKXGMUDKSFMM-RRFXWELOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001287
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA013936
+- pubchem:53344652
+producer_organisms:
+- taxon_id: NCBITaxon:1437453
+  taxon_label: Streptomyces leeuwenhoekii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001287
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26092459
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001287 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001287
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1437453
+  organism_label: Streptomyces leeuwenhoekii
+  evidence:
+  - reference: PMID:26092459
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001287 entry version 5; citation taken from the entry level
+  genome_accession: genbank:LN831790.1
+  locus_from: 1211049
+  locus_to: 1289829
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001287
+  source_label: chaxamycin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d6e0889b31
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-06ee60b602
+label: calicheamicin
+chemical_structure:
+  smiles: CCN[C@H]1CO[C@H](C[C@@H]1OC)O[C@@H]2[C@H]([C@@H]([C@H](OC2O[C@H]3C#C/C=C\C#C[C@]\4(CC(=O)C(=C3/C4=C\CSSSC)NC(=O)OC)O)C)NO[C@H]5C[C@@H]([C@@H]([C@H](O5)C)SC(=O)C6=C(C(=C(C(=C6OC)OC)O[C@H]7[C@@H]([C@@H]([C@H]([C@@H](O7)C)O)OC)O)I)C)O)O
+  standard_inchi: InChI=1S/C55H74IN3O21S4/c1-12-57-30-24-73-35(22-34(30)68-6)78-48-43(63)40(26(3)75-53(48)77-33-17-15-13-14-16-19-55(67)23-32(61)41(58-54(66)72-10)38(33)29(55)18-20-82-84-81-11)59-80-36-21-31(60)50(28(5)74-36)83-51(65)37-25(2)39(56)46(49(71-9)45(37)69-7)79-52-44(64)47(70-8)42(62)27(4)76-52/h13-14,18,26-28,30-31,33-36,40,42-44,47-48,50,52-53,57,59-60,62-64,67H,12,20-24H2,1-11H3,(H,58,66)/b14-13-,29-18+/t26-,27+,28-,30+,31+,33+,34+,35+,36+,40-,42+,43+,44-,47-,48-,50-,52+,53?,55-/m1/s1
+  standard_inchi_key: HXCHCVDVKSCDHU-IXTZGUNISA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000033
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Enediynes
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6438329
+producer_organisms:
+- taxon_id: NCBITaxon:1877
+  taxon_label: Micromonospora echinospora
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000033
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1126/science.1072105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000033 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000033
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1877
+  organism_label: Micromonospora echinospora
+  evidence:
+  - reference: DOI:10.1126/science.1072105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000033 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AF497482.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000033
+  source_label: calicheamicin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-06ee60b602
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

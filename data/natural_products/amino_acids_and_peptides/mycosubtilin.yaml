@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-df17e9858e
+label: mycosubtilin
+chemical_structure:
+  smiles: CCC(C)CCCCCCCCCCC1CC(=O)NC(C(=O)NC(C(=O)N2CCCC2C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CC(=O)N)CO)CC(=O)N)CC(=O)N)CC3=CC=C(C=C3)O)CCC(=O)N)CC(=O)N
+  standard_inchi: InChI=1S/C55H86N14O16/c1-3-30(2)13-10-8-6-4-5-7-9-11-14-32-24-47(77)62-36(25-43(57)73)50(80)63-34(20-21-42(56)72)55(85)69-22-12-15-41(69)54(84)67-35(23-31-16-18-33(71)19-17-31)49(79)64-38(27-45(59)75)51(81)65-39(28-46(60)76)52(82)68-40(29-70)53(83)66-37(26-44(58)74)48(78)61-32/h16-19,30,32,34-41,70-71H,3-15,20-29H2,1-2H3,(H2,56,72)(H2,57,73)(H2,58,74)(H2,59,75)(H2,60,76)(H,61,78)(H,62,77)(H,63,80)(H,64,79)(H,65,81)(H,66,83)(H,67,84)(H,68,82)
+  standard_inchi_key: RCIPRGNHNAEGHR-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001103
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:3083700
+producer_organisms:
+- taxon_id: NCBITaxon:703612
+  taxon_label: Bacillus subtilis subsp. spizizenii ATCC 6633
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001103
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:10557314
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001103 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001103
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:703612
+  organism_label: Bacillus subtilis subsp. spizizenii ATCC 6633
+  evidence:
+  - reference: PMID:10557314
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001103 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF184956.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001103
+  source_label: mycosubtilin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-df17e9858e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

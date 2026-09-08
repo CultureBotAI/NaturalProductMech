@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-f9839aac21
+label: rubiginone N
+chemical_structure:
+  smiles: COC1=CC=CC2=C1C(=O)C1=C(C2=O)C2=C(C=C1)[C@@H](OC(C)=O)[C@H](C)[C@H](O)C2=O
+  standard_inchi: InChI=1S/C22H18O7/c1-9-18(24)21(27)17-13(22(9)29-10(2)23)8-7-12-16(17)20(26)11-5-4-6-14(28-3)15(11)19(12)25/h4-9,18,22,24H,1-3H3/t9-,18+,22+/m1/s1
+  standard_inchi_key: DXRKISDBIVBBFG-WOILNPFZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002478
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA033196
+producer_organisms:
+- taxon_id: NCBITaxon:1703922
+  taxon_label: Streptomyces sp. CB02414
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002478
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:34600534
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002478 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002478
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1703922
+  organism_label: Streptomyces sp. CB02414
+  evidence:
+  - reference: PMID:34600534
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002478 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LIPF01000008.1
+  locus_from: 189575
+  locus_to: 230252
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002478
+  source_label: rubiginone N
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f9839aac21
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-e238b72fad
+label: halstoctacosanolide A
+chemical_structure:
+  smiles: CCC(O)C(C)C(O)CC(O)C(O)\C=C(/C)CC(C)C1CC(O)C(C)\C=C\C=C\CC(C)C(=O)CC2CCC(C)C(O)(C\C=C(\C)/C=C(C)/C(O)C(=O)\C=C(C)\C(=O)O1)O2
+  standard_inchi: InChI=1S/C48H76O12/c1-11-38(49)36(10)41(52)26-43(54)42(53)23-29(3)22-32(6)45-27-40(51)31(5)16-14-12-13-15-30(4)39(50)25-37-18-17-35(9)48(58,60-37)20-19-28(2)21-33(7)46(56)44(55)24-34(8)47(57)59-45/h12-14,16,19,21,23-24,30-32,35-38,40-43,45-46,49,51-54,56,58H,11,15,17-18,20,22,25-27H2,1-10H3/b13-12+,16-14+,28-19-,29-23+,33-21+,34-24+
+  standard_inchi_key: GQHNSYURZJAIPC-IFGCVEQJSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000073
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA016676
+producer_organisms:
+- taxon_id: NCBITaxon:1944
+  taxon_label: Streptomyces halstedii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000073
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:16568718
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000073 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000073
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1944
+  organism_label: Streptomyces halstedii
+  evidence:
+  - reference: PMID:16568718
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000073 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB241068.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000073
+  source_label: halstoctacosanolide A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e238b72fad
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

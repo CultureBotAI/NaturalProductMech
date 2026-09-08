@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-158e50fe85
+label: piricyclamide 7005E3
+chemical_structure:
+  smiles: C[C@H]([C@H]1C(=O)NCC(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)NCC(=O)N2CCC[C@H]2C(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N1)CCC(=O)N)CCSC)CC3=CC=CC=C3)CCC(=O)O)CC(=O)N)CO)CC4=CC=C(C=C4)O)CO)O
+  standard_inchi: InChI=1S/C56H78N14O20S/c1-28(73)46-56(90)59-24-43(77)61-39(27-72)54(88)66-36(22-30-10-12-31(74)13-11-30)52(86)68-38(26-71)47(81)60-25-44(78)70-19-6-9-40(70)55(89)67-37(23-42(58)76)53(87)63-33(15-17-45(79)80)48(82)65-35(21-29-7-4-3-5-8-29)51(85)64-34(18-20-91-2)49(83)62-32(50(84)69-46)14-16-41(57)75/h3-5,7-8,10-13,28,32-40,46,71-74H,6,9,14-27H2,1-2H3,(H2,57,75)(H2,58,76)(H,59,90)(H,60,81)(H,61,77)(H,62,83)(H,63,87)(H,64,85)(H,65,82)(H,66,88)(H,67,89)(H,68,86)(H,69,84)(H,79,80)/t28-,32+,33-,34+,35+,36+,37+,38+,39+,40+,46+/m1/s1
+  standard_inchi_key: PNRDFSRRPWPQQW-USHKVLGESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001167
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:146684883
+producer_organisms:
+- taxon_id: NCBITaxon:267870
+  taxon_label: Microcystis aeruginosa PCC 7005
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001167
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:22952627
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001167 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001167
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:267870
+  organism_label: Microcystis aeruginosa PCC 7005
+  evidence:
+  - reference: PMID:22952627
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001167 entry version 4; citation taken from the entry level
+  genome_accession: genbank:JQ951924.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001167
+  source_label: piricyclamide 7005E3
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-158e50fe85
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

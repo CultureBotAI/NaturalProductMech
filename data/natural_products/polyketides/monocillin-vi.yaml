@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-bfb8625ab0
+label: monocillin VI
+chemical_structure:
+  smiles: C[C@H]1OC(=O)C2=C(C=C(O)C=C2O)CC(=O)CCCC/C=C/[C@@H]1O
+  standard_inchi: InChI=1S/C18H22O6/c1-11-15(21)7-5-3-2-4-6-13(19)8-12-9-14(20)10-16(22)17(12)18(23)24-11/h5,7,9-11,15,20-22H,2-4,6,8H2,1H3/b7-5+/t11-,15+/m1/s1
+  standard_inchi_key: PUBJBUSNXLSOQM-YWDVGMFKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002187
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Zearalenones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:406870989
+- npatlas:NPA026290
+producer_organisms:
+- taxon_id: NCBITaxon:1380566
+  taxon_label: Pochonia chlamydosporia 170
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002187
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/acs.jafc.9b01977
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002187 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002187
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1380566
+  organism_label: Pochonia chlamydosporia 170
+  evidence:
+  - reference: DOI:10.1021/acs.jafc.9b01977
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002187 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CM008060.1
+  locus_from: 2034500
+  locus_to: 2065000
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002187
+  source_label: monocillin VI
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-bfb8625ab0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

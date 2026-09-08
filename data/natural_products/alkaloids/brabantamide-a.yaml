@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-6082a51bc7
+label: brabantamide A
+chemical_structure:
+  smiles: CCCCCCCCCCC[C@H](CC(=O)NC(=O)/C=C/1\[C@@H]2CCCN2C(=O)O1)O[C@H]3[C@@H]([C@@H]([C@H]([C@@H](O3)C)O)O)O
+  standard_inchi: InChI=1S/C28H46N2O9/c1-3-4-5-6-7-8-9-10-11-13-19(38-27-26(35)25(34)24(33)18(2)37-27)16-22(31)29-23(32)17-21-20-14-12-15-30(20)28(36)39-21/h17-20,24-27,33-35H,3-16H2,1-2H3,(H,29,31,32)/b21-17+/t18-,19+,20-,24-,25+,26+,27-/m0/s1
+  standard_inchi_key: CTDVHCGPSKGLNP-RQWRZHBRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001149
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Miscellaneous alkaloids
+  class_results:
+  - Miscellaneous alkaloids
+  is_glycoside: true
+bgc_class:
+- NRPS
+- SACCHARIDE
+xrefs:
+- pubchem:129821380
+producer_organisms:
+- taxon_id: NCBITaxon:984195
+  taxon_label: Pseudomonas sp. SHC52
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001149
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:24436210
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001149 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001149
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:984195
+  organism_label: Pseudomonas sp. SHC52
+  evidence:
+  - reference: PMID:24436210
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001149 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CBLV010000330.1
+  locus_from: 196768
+  locus_to: 209553
+  bgc_class:
+  - NRPS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001149
+  source_label: brabantamide A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6082a51bc7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

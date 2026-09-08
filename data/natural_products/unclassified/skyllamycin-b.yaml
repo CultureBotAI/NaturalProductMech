@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-7ce8def8c3
+label: skyllamycin B
+chemical_structure:
+  smiles: C[C@@H](OC([C@H]([C@H](O)C(C)C)NC([C@@H](CC(C)C)NC(C(O)NC([C@H](NC([C@@H](NC([C@@H]1CCCN1C([C@@H](NC(CNC([C@H](C(C(O)=O)[H])NC([C@H](C)NC2=O)=O)=O)=O)[C@H](O)C3=CC=CC=C3)=O)=O)[C@@H](O)C4=CC=C(OC)C=C4)=O)CC5=CNC6=C5C=CC=C6)=O)=O)=O)=O)[C@@H]2NC(/C=C/C7=C(C=CC=C7)/C=C\C)=O
+  standard_inchi: InChI=1S/C74H92N12O20/c1-9-18-42-19-13-14-20-43(42)28-31-54(87)81-57-41(7)106-74(104)60(61(91)39(4)5)84-66(96)50(33-38(2)3)80-71(101)72(102)85-67(97)51(34-46-36-75-49-24-16-15-23-48(46)49)79-70(100)58(62(92)45-26-29-47(105-8)30-27-45)83-68(98)53-25-17-32-86(53)73(103)59(63(93)44-21-11-10-12-22-44)82-55(88)37-76-65(95)52(35-56(89)90)78-64(94)40(6)77-69(57)99/h9-16,18-24,26-31,36,38-41,50-53,57-63,72,75,91-93,102H,17,25,32-35,37H2,1-8H3,(H,76,95)(H,77,99)(H,78,94)(H,79,100)(H,80,101)(H,81,87)(H,82,88)(H,83,98)(H,84,96)(H,85,97)(H,89,90)/b18-9-,31-28+/t40-,41+,50+,51+,52-,53-,57-,58-,59-,60-,61+,62-,63+,72?/m0/s1
+  standard_inchi_key: UMTBYIAVPLEEPK-LIZIVGFBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000429
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1001349
+  taxon_label: Streptomyces sp. Acta 2897
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000429
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:21456593
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000429 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000429
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1001349
+  organism_label: Streptomyces sp. Acta 2897
+  evidence:
+  - reference: PMID:21456593
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000429 entry version 4; citation taken from the entry level
+  genome_accession: genbank:JF430460.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000429
+  source_label: skyllamycin B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-7ce8def8c3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

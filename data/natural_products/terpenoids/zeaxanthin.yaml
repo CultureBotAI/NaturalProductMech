@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-ada906fdce
+label: zeaxanthin
+chemical_structure:
+  smiles: CC1=C(C(C[C@@H](C1)O)(C)C)/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C2=C(C[C@H](CC2(C)C)O)C)\C)\C)/C)/C
+  standard_inchi: InChI=1S/C40H56O2/c1-29(17-13-19-31(3)21-23-37-33(5)25-35(41)27-39(37,7)8)15-11-12-16-30(2)18-14-20-32(4)22-24-38-34(6)26-36(42)28-40(38,9)10/h11-24,35-36,41-42H,25-28H2,1-10H3/b12-11+,17-13+,18-14+,23-21+,24-22+,29-15+,30-16+,31-19+,32-20+/t35-,36-/m1/s1
+  standard_inchi_key: JKQXZKUSFCKOGQ-QAYBQHTQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000656
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Carotenoids (C40)
+  class_results:
+  - Carotenoids (C40, β-β)
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:5280899
+producer_organisms:
+- taxon_id: NCBITaxon:78245
+  taxon_label: Xanthobacter autotrophicus Py2
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000656
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:12189420
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000656 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000656
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:78245
+  organism_label: Xanthobacter autotrophicus Py2
+  evidence:
+  - reference: PMID:12189420
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000656 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF408848.1
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000656
+  source_label: zeaxanthin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ada906fdce
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

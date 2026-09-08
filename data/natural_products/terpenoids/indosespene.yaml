@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-cb4ddd98d8
+label: indosespene
+chemical_structure:
+  smiles: C[C@]12CC[C@@H]([C@@]([C@@H]1CCC(=C)[C@@H]2CC3=CNC4=CC=CC=C43)(C)C(=O)O)O
+  standard_inchi: InChI=1S/C23H29NO3/c1-14-8-9-19-22(2,11-10-20(25)23(19,3)21(26)27)17(14)12-15-13-24-18-7-5-4-6-16(15)18/h4-7,13,17,19-20,24-25H,1,8-12H2,2-3H3,(H,26,27)/t17-,19+,20-,22+,23-/m0/s1
+  standard_inchi_key: QDZOYOCJZCVSSV-BZJMLBMJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000665
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Indole-Diterpenoid alkaloids (Penitrems)
+  is_glycoside: false
+bgc_class:
+- TERPENE
+- OTHER
+compound_classes:
+- Meroterpenoid
+xrefs:
+- pubchem:53468951
+producer_organisms:
+- taxon_id: NCBITaxon:995841
+  taxon_label: Streptomyces sp. HKI0576
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000665
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1039/c1ob05283g
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000665 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000665
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:995841
+  organism_label: Streptomyces sp. HKI0576
+  evidence:
+  - reference: DOI:10.1039/c1ob05283g
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000665 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:HE815466.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000665
+  source_label: indosespene
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-cb4ddd98d8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

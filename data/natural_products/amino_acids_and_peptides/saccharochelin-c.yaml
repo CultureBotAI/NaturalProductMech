@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-f93ab0cb8a
+label: saccharochelin C
+chemical_structure:
+  smiles: CCCCCCCCCCCCC(=O)N[C@@H](CCCN(O)C=O)C(=O)N[C@@H](CO)C(=O)N(O)CCC[C@@H]1NC(=O)[C@H](CCCN(O)C=O)NC1=O
+  standard_inchi: InChI=1S/C33H59N7O11/c1-2-3-4-5-6-7-8-9-10-11-18-29(44)34-25(15-12-19-38(49)23-42)30(45)37-28(22-41)33(48)40(51)21-14-17-27-32(47)35-26(31(46)36-27)16-13-20-39(50)24-43/h23-28,41,49-51H,2-22H2,1H3,(H,34,44)(H,35,47)(H,36,46)(H,37,45)/t25-,26-,27-,28-/m0/s1
+  standard_inchi_key: RYYQWAOQYVKOPB-LJWNLINESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002424
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033298
+producer_organisms:
+- taxon_id: NCBITaxon:1873460
+  taxon_label: Saccharothrix sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002424
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Knock-out studies.'
+  evidence:
+  - reference: PMID:34323485
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002424 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002424
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1873460
+  organism_label: Saccharothrix sp.
+  evidence:
+  - reference: PMID:34323485
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002424 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MW298647.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002424
+  source_label: saccharochelin C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f93ab0cb8a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

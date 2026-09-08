@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-e5a5396db2
+label: iminimycin A
+chemical_structure:
+  smiles: C/C=C(\C)/C=C/C=C/[C@H]1[C@@H]2C[C@@H]2C3=[N+]1CCCC3
+  standard_inchi: InChI=1S/C17H24N/c1-3-13(2)8-4-5-9-16-14-12-15(14)17-10-6-7-11-18(16)17/h3-5,8-9,14-16H,6-7,10-12H2,1-2H3/q+1/b8-4+,9-5+,13-3+/t14-,15+,16+/m1/s1
+  standard_inchi_key: ZGGASQUTZHTTQR-KTKKEOCVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002673
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Lysine alkaloids
+  class_results:
+  - Indolizidine alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+- OTHER
+xrefs:
+- npatlas:NPA021512
+producer_organisms:
+- taxon_id: NCBITaxon:455632
+  taxon_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002673
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1038/ja.2015.142
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002673 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002673
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455632
+  organism_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence:
+  - reference: DOI:10.1038/ja.2015.142
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002673 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:AP009493.1
+  locus_from: 7575285
+  locus_to: 7636690
+  bgc_class:
+  - PKS
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002673
+  source_label: iminimycin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-e5a5396db2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

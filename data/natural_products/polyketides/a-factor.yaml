@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-60e3158633
+label: A-factor
+chemical_structure:
+  smiles: CC(C)CCCCC(=O)C1[C@@H](COC1=O)CO
+  standard_inchi: InChI=1S/C13H22O4/c1-9(2)5-3-4-6-11(15)12-10(7-14)8-17-13(12)16/h9-10,12,14H,3-8H2,1-2H3/t10-,12?/m1/s1
+  standard_inchi_key: REAWNMHCBIUKLZ-RWANSRKNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000848
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 2-pyrone derivatives
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:119102
+producer_organisms:
+- taxon_id: NCBITaxon:455632
+  taxon_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000848
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:18375553
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000848 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000848
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455632
+  organism_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence:
+  - reference: PMID:18375553
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000848 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AP009493.1
+  locus_from: 8273444
+  locus_to: 8274388
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000848
+  source_label: A-factor
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-60e3158633
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

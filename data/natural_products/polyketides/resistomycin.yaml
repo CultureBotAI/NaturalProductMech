@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-14d7cc15c5
+label: resistomycin
+chemical_structure:
+  smiles: CC1=CC(=C2C3=C4C(=CC(=C13)O)C(C(=O)C5=C(C=C(C(=C45)C2=O)O)O)(C)C)O
+  standard_inchi: InChI=1S/C22H16O6/c1-7-4-9(23)15-18-13(7)10(24)5-8-14(18)19-16(20(15)27)11(25)6-12(26)17(19)21(28)22(8,2)3/h4-6,23-26H,1-3H3
+  standard_inchi_key: ABLACSIRCKEUOB-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000264
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:5282060
+producer_organisms:
+- taxon_id: NCBITaxon:67356
+  taxon_label: Streptomyces resistomycificus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000264
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:14982421
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000264 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000264
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67356
+  organism_label: Streptomyces resistomycificus
+  evidence:
+  - reference: PMID:14982421
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000264 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ585192.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000264
+  source_label: resistomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-14d7cc15c5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

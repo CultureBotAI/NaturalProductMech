@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-b011d8c36b
+label: metarhizin A
+chemical_structure:
+  smiles: CC[C@H](C)[C@H](C(=O)O[C@H]1CC[C@]2([C@H]([C@]1(C)CCC=C(C)C)CCC(=C)[C@H]2CC3=C(C(=C(OC3=O)C)C)O)C)O
+  standard_inchi: InChI=1S/C33H50O6/c1-10-20(4)28(34)31(37)39-27-15-17-32(8)25(18-24-29(35)22(6)23(7)38-30(24)36)21(5)13-14-26(32)33(27,9)16-11-12-19(2)3/h12,20,25-28,34-35H,5,10-11,13-18H2,1-4,6-9H3/t20-,25+,26+,27-,28+,32+,33-/m0/s1
+  standard_inchi_key: QIHPCGZZMBZAPA-MQMNVYNZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002614
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Triketide meroterpenoids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA018573
+producer_organisms:
+- taxon_id: NCBITaxon:904690
+  taxon_label: Penicillium shearii
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002614
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32286350
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002614 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002614
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:904690
+  organism_label: Penicillium shearii
+  evidence:
+  - reference: PMID:32286350
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002614 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LC600199.1
+  locus_from: 1
+  locus_to: 33840
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002614
+  source_label: metarhizin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-b011d8c36b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

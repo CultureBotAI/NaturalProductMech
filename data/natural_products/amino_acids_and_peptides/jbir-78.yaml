@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-74217a9789
+label: JBIR-78
+chemical_structure:
+  smiles: CC(C)[C@H](O)[C@@H](NC(=O)[C@H](C)NC(=O)[C@@H](CC(O)=O)NC(=O)[C@@H](NC(=O)CC1=CC=CC=C1)C(C)C)C(=O)NCC(=O)N[C@H](C)C(=O)N[C@@H](CC1=CC=CC=C1)C(O)=O
+  standard_inchi: InChI=1S/C40H55N7O12/c1-21(2)32(46-29(48)18-26-15-11-8-12-16-26)39(57)44-27(19-31(50)51)37(55)43-24(6)36(54)47-33(34(52)22(3)4)38(56)41-20-30(49)42-23(5)35(53)45-28(40(58)59)17-25-13-9-7-10-14-25/h7-16,21-24,27-28,32-34,52H,17-20H2,1-6H3,(H,41,56)(H,42,49)(H,43,55)(H,44,57)(H,45,53)(H,46,48)(H,47,54)(H,50,51)(H,58,59)/t23-,24+,27-,28+,32+,33-,34+/m1/s1
+  standard_inchi_key: AYHQEXAHORNEMG-CGBMOQSMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001628
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA06138
+producer_organisms:
+- taxon_id: NCBITaxon:1962669
+  taxon_label: Kibdelosporangium sp. AK-AA56
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001628
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28505407
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001628 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001628
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1962669
+  organism_label: Kibdelosporangium sp. AK-AA56
+  evidence:
+  - reference: PMID:28505407
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001628 entry version 4; citation taken from the entry level
+  genome_accession: genbank:LC217607.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001628
+  source_label: JBIR-78
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-74217a9789
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

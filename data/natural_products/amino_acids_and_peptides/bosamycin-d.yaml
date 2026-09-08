@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-4e3f72f112
+label: bosamycin D
+chemical_structure:
+  smiles: COC1=C(C[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](CC2=CC=C(O)C=C2)NC(=O)[C@H](CC2=CC=C(O)C=C2)NC(C)=O)[C@@H](O)C(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)NCC(=O)O)C=CC(O)=C1
+  standard_inchi: InChI=1S/C51H68N8O18/c1-25(2)17-34(44(68)52-23-41(65)66)54-47(71)38(21-30-11-16-33(64)22-40(30)77-6)57-49(73)39(24-60)58-50(74)42(43(67)51(75)76)59-48(72)35(18-26(3)4)55-46(70)37(20-29-9-14-32(63)15-10-29)56-45(69)36(53-27(5)61)19-28-7-12-31(62)13-8-28/h7-16,22,25-26,34-39,42-43,60,62-64,67H,17-21,23-24H2,1-6H3,(H,52,68)(H,53,61)(H,54,71)(H,55,70)(H,56,69)(H,57,73)(H,58,74)(H,59,72)(H,65,66)(H,75,76)/t34-,35-,36-,37+,38+,39-,42-,43+/m0/s1
+  standard_inchi_key: JYQBRRHPVQLUCY-ZJPHBKLHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002581
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA031582
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002581
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:34094195
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002581 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002581
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:34094195
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002581 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MN509472.2
+  locus_from: 5861
+  locus_to: 42927
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002581
+  source_label: bosamycin D
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-4e3f72f112
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

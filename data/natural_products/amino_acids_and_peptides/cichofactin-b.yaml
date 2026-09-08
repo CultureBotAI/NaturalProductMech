@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-da9e268a4d
+label: cichofactin B
+chemical_structure:
+  smiles: O=C(N[C@@H](CC(C)C)C(N[C@@H](CC(C)C)C(N[C@@H](CCC(N)=O)C(N[C@@H](CC(C)C)C(N[C@@H](CCC(N)=O)C(N[C@@H](C(C)C)C(N[C@@H](CC(C)C)C(N[C@@H](CC(C)C)C(O)=O)=O)=O)=O)=O)=O)=O)=O)[C@H](CC1=CNC=N1)NC(CC(O)CCCCCCCCC)=O
+  standard_inchi: InChI=1S/C63H111N13O14/c1-14-15-16-17-18-19-20-21-42(77)32-53(80)68-49(31-41-33-66-34-67-41)61(87)73-47(28-37(6)7)59(85)72-46(27-36(4)5)58(84)69-43(22-24-51(64)78)55(81)71-45(26-35(2)3)57(83)70-44(23-25-52(65)79)56(82)76-54(40(12)13)62(88)74-48(29-38(8)9)60(86)75-50(63(89)90)30-39(10)11/h33-40,42-50,54,77H,14-32H2,1-13H3,(H2,64,78)(H2,65,79)(H,66,67)(H,68,80)(H,69,84)(H,70,83)(H,71,81)(H,72,85)(H,73,87)(H,74,88)(H,75,86)(H,76,82)(H,89,90)/t42?,43-,44-,45-,46-,47-,48-,49-,50-,54-/m0/s1
+  standard_inchi_key: DYMCOQIZBKUFDL-CALMWFSYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000323
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:36746
+  taxon_label: Pseudomonas cichorii
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000323
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:23405865
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000323 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000323
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:36746
+  organism_label: Pseudomonas cichorii
+  evidence:
+  - reference: PMID:23405865
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000323 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KJ513093.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000323
+  source_label: cichofactin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-da9e268a4d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

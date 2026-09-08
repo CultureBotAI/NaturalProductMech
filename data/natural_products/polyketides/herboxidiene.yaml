@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-2d09306d15
+label: herboxidiene
+chemical_structure:
+  smiles: COC(C(C)O)C(C)C1OC1(C)CC(C)\C=C\C=C(/C)[C@@H]1OC(CC(O)=O)CC[C@H]1C
+  standard_inchi: InChI=1S/C25H42O6/c1-15(14-25(6)24(31-25)18(4)23(29-7)19(5)26)9-8-10-16(2)22-17(3)11-12-20(30-22)13-21(27)28/h8-10,15,17-20,22-24,26H,11-14H2,1-7H3,(H,27,28)/b9-8+,16-10+/t15?,17-,18?,19?,20?,22+,23?,24?,25?/m1/s1
+  standard_inchi_key: ISZXEMUWHQLLTC-GZSUCXPKSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001065
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA06425
+- pubchem:6438496
+producer_organisms:
+- taxon_id: NCBITaxon:42881
+  taxon_label: Streptomyces chromofuscus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001065
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:22247174
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001065 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001065
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:42881
+  organism_label: Streptomyces chromofuscus
+  evidence:
+  - reference: PMID:22247174
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001065 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JN671974.1
+  locus_from: 21445
+  locus_to: 74480
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001065
+  source_label: herboxidiene
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2d09306d15
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-d4bee283c5
+label: cyanopeptolin
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C(=O)O[C@@H]([C@@H](C(=O)N[C@H](C(=O)N[C@H]2CC[C@H](N(C2=O)[C@H](C(=O)N([C@H](C(=O)N1)CC3=CC=CC=C3)C)[C@@H](C)CC)O)CCCN=C(N)N)NC(=O)[C@@H](COS(=O)(=O)O)O)C
+  standard_inchi: InChI=1S/C40H63N9O14S/c1-7-21(3)30-39(58)63-23(5)31(47-35(54)28(50)20-62-64(59,60)61)36(55)44-25(15-12-18-43-40(41)42)33(52)45-26-16-17-29(51)49(37(26)56)32(22(4)8-2)38(57)48(6)27(34(53)46-30)19-24-13-10-9-11-14-24/h9-11,13-14,21-23,25-32,50-51H,7-8,12,15-20H2,1-6H3,(H,44,55)(H,45,52)(H,46,53)(H,47,54)(H4,41,42,43)(H,59,60,61)/t21-,22-,23+,25-,26-,27-,28+,29+,30-,31-,32-/m0/s1
+  standard_inchi_key: LQLBUPVHKUILGJ-LKAQEJCWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000332
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Ahp-containing cyclodepsipeptides
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:46881045
+producer_organisms:
+- taxon_id: NCBITaxon:59625
+  taxon_label: Microcystis sp. NIVA-CYA 172/5
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000332
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17464052
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000332 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000332
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:59625
+  organism_label: Microcystis sp. NIVA-CYA 172/5
+  evidence:
+  - reference: PMID:17464052
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000332 entry version 4; citation taken from the entry level
+  genome_accession: genbank:DQ075244.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000332
+  source_label: cyanopeptolin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-d4bee283c5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

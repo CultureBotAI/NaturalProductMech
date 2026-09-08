@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-c33373024b
+label: didemnin B
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]1[C@H](CC(=O)O[C@H](C(=O)[C@@H](C(=O)N[C@H](C(=O)N2CCC[C@H]2C(=O)N([C@H](C(=O)O[C@@H]([C@@H](C(=O)N1)NC(=O)[C@@H](CC(C)C)N(C)C(=O)[C@@H]3CCCN3C(=O)C(C)O)C)CC4=CC=C(C=C4)OC)C)CC(C)C)C)C(C)C)O
+  standard_inchi: InChI=1S/C57H89N7O15/c1-15-33(8)46-44(66)29-45(67)79-49(32(6)7)48(68)34(9)50(69)58-39(26-30(2)3)54(73)64-25-17-19-41(64)56(75)62(13)43(28-37-20-22-38(77-14)23-21-37)57(76)78-36(11)47(52(71)59-46)60-51(70)42(27-31(4)5)61(12)55(74)40-18-16-24-63(40)53(72)35(10)65/h20-23,30-36,39-44,46-47,49,65-66H,15-19,24-29H2,1-14H3,(H,58,69)(H,59,71)(H,60,70)/t33-,34-,35?,36+,39-,40-,41-,42+,43-,44-,46+,47-,49-/m0/s1
+  standard_inchi_key: KYHUYMLIVQFXRI-XYUQHQMCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000985
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:13895197
+producer_organisms:
+- taxon_id: NCBITaxon:1110502
+  taxon_label: Tistrella mobilis KA081020-065
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000985
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:22458477
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000985 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000985
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1110502
+  organism_label: Tistrella mobilis KA081020-065
+  evidence:
+  - reference: PMID:22458477
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000985 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP003239.1
+  locus_from: 674941
+  locus_to: 729697
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000985
+  source_label: didemnin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c33373024b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

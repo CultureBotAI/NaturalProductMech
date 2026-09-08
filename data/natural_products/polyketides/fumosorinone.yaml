@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-5b0b86a310
+label: fumosorinone
+chemical_structure:
+  smiles: CC[C@@H](C)C[C@@H](C)/C=C(\C)/C=C/C=C/C=C(\C)/C(=C1C(=O)C(=CN(C1=O)O)C2=CC=C(C=C2)O)O
+  standard_inchi: InChI=1S/C29H35NO5/c1-6-19(2)16-21(4)17-20(3)10-8-7-9-11-22(5)27(32)26-28(33)25(18-30(35)29(26)34)23-12-14-24(31)15-13-23/h7-15,17-19,21,31-32,35H,6,16H2,1-5H3/b9-7+,10-8+,20-17+,22-11+,27-26?/t19-,21-/m1/s1
+  standard_inchi_key: MYXIFLYRMXDIQX-TVHINYTQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001218
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - 3-oligoenoyltetramic acids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:122208635
+producer_organisms:
+- taxon_id: NCBITaxon:114497
+  taxon_label: Cordyceps fumosorosea
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001218
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25857260
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001218 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001218
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:114497
+  organism_label: Cordyceps fumosorosea
+  evidence:
+  - reference: PMID:25857260
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001218 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KP737857.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001218
+  source_label: fumosorinone
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-5b0b86a310
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

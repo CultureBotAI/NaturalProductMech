@@ -1,0 +1,60 @@
+identifier: naturalproductmech:mibig-392652bc06
+label: pentostatine
+chemical_structure:
+  smiles: C1[C@@H]([C@H](O[C@H]1N2C=NC3=C2NC=NC[C@H]3O)CO)O
+  standard_inchi: InChI=1S/C11H16N4O4/c16-3-8-6(17)1-9(19-8)15-5-14-10-7(18)2-12-4-13-11(10)15/h4-9,16-18H,1-3H2,(H,12,13)/t6-,7+,8+,9+/m0/s1
+  standard_inchi_key: FPVKHBSQESCIEP-JQCXWYLXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001735
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1890
+  taxon_label: Streptomyces antibioticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001735
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28111097
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001735 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001735
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1890
+  organism_label: Streptomyces antibioticus
+  evidence:
+  - reference: PMID:28111097
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001735 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KJ856912.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001735
+  source_label: pentostatine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-392652bc06
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

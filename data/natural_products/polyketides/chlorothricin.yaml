@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-2439ae3dde
+label: chlorothricin
+chemical_structure:
+  smiles: C[C@@H](C(C(O)=O)=C1)C[C@@]2(C(O)=C(O3)C(O2)=O)[C@@H]1C=CCCCC[C@@H]4C=C[C@@]([C@@H](O[C@@H]5C[C@H](O)[C@@H](O[C@H]6O[C@@H](C)[C@H](O)[C@@H](OC(C7=C(C)C(Cl)=CC=C7OC)=O)C6)[C@@H](C)O5)CCC8)([H])[C@]8([H])[C@@H]4C3=O
+  standard_inchi: InChI=1S/C49H61ClO16/c1-23-22-49-28(19-31(23)45(54)55)12-9-7-6-8-11-27-15-16-29-30(40(27)47(57)65-43(44(49)53)48(58)66-49)13-10-14-34(29)62-37-20-33(51)42(26(4)61-37)64-38-21-36(41(52)25(3)60-38)63-46(56)39-24(2)32(50)17-18-35(39)59-5/h9,12,15-19,23,25-30,33-34,36-38,40-42,51-53H,6-8,10-11,13-14,20-22H2,1-5H3,(H,54,55)/t23-,25+,26-,27-,28-,29+,30-,33+,34+,36+,37-,38-,40-,41+,42+,49+/m1/s1
+  standard_inchi_key: HPWPAVYRWILWSZ-ACFKMXJHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000036
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Spirotetronate macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:1890
+  taxon_label: Streptomyces antibioticus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000036
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
+    expression correlated with compound production.'
+  evidence:
+  - reference: PMID:16793515
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000036 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000036
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1890
+  organism_label: Streptomyces antibioticus
+  evidence:
+  - reference: PMID:16793515
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000036 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ116941.2
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000036
+  source_label: chlorothricin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2439ae3dde
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

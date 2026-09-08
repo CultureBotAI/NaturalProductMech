@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-eea9bbd84b
+label: sporidesmin A
+chemical_structure:
+  smiles: COC1=C(Cl)C=C2C(=C1OC)N(C)[C@@H]1N3C(=O)[C@@]4(C)SS[C@@]3(C(=O)N4C)[C@H](O)[C@]21O
+  standard_inchi: InChI=1S/C18H20ClN3O6S2/c1-16-14(24)22-13-17(26,12(23)18(22,30-29-16)15(25)21(16)3)7-6-8(19)10(27-4)11(28-5)9(7)20(13)2/h6,12-13,23,26H,1-5H3/t12-,13-,16-,17-,18-/m1/s1
+  standard_inchi_key: QTONANGUNATZOU-ICTVWZTPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002438
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Indole diketopiperazine alkaloids (L-Trp, L-Ala)
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA032651
+producer_organisms:
+- taxon_id: NCBITaxon:1892770
+  taxon_label: Pithomyces chartarum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002438
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1101/2021.04.29.441555
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002438 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002438
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1892770
+  organism_label: Pithomyces chartarum
+  evidence:
+  - reference: DOI:10.1101/2021.04.29.441555
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002438 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT353658.1
+  locus_from: 1
+  locus_to: 51164
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002438
+  source_label: sporidesmin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-eea9bbd84b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-93620f7e6b
+label: BD-12
+chemical_structure:
+  smiles: '[H][C@]12N\C(N[C@]1([H])C(=O)N(C)CC2O)=N/[C@@H]1OC(CO)[C@H](OC(N)=O)[C@H](O)C1N(C)C(=O)CNC=N'
+  standard_inchi: InChI=1S/C18H30N8O8/c1-25-4-7(28)10-11(16(25)31)23-18(22-10)24-15-12(26(2)9(29)3-21-6-19)13(30)14(34-17(20)32)8(5-27)33-15/h6-8,10-15,27-28,30H,3-5H2,1-2H3,(H2,19,21)(H2,20,32)(H2,22,23,24)/t7?,8?,10-,11+,12?,13-,14+,15-/m1/s1
+  standard_inchi_key: VMULEITVZASJMA-JBPAGREFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001379
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Streptothricins and derivatives
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:285500
+  taxon_label: Streptomyces luteocolor
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001379
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:27084005
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001379 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001379
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:285500
+  organism_label: Streptomyces luteocolor
+  evidence:
+  - reference: PMID:27084005
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001379 entry version 5; citation taken from the entry level
+  genome_accession: genbank:LC122485.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001379
+  source_label: BD-12
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-93620f7e6b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

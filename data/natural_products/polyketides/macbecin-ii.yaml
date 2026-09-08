@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-e93641044d
+label: macbecin II
+chemical_structure:
+  smiles: COC1CC(C)C(OC)C2=C(O)C(NC(=O)\C(C)=C/C=C\C(C)C(OC(N)=O)\C(C)=C/C(C)C1OC)=CC(O)=C2
+  standard_inchi: InChI=1S/C30H44N2O8/c1-16-10-9-11-17(2)29(35)32-23-15-21(33)14-22(25(23)34)27(38-7)20(5)13-24(37-6)28(39-8)19(4)12-18(3)26(16)40-30(31)36/h9-12,14-16,19-20,24,26-28,33-34H,13H2,1-8H3,(H2,31,36)(H,32,35)/b10-9-,17-11-,18-12-
+  standard_inchi_key: SVSFCSOFEPJFSF-CIELKHGCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000090
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA07469
+- pubchem:6438438
+producer_organisms:
+- taxon_id: NCBITaxon:103721
+  taxon_label: Actinosynnema pretiosum subsp. pretiosum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000090
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  evidence:
+  - reference: PMID:18800759
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000090 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000090
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:103721
+  organism_label: Actinosynnema pretiosum subsp. pretiosum
+  evidence:
+  - reference: PMID:18800759
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000090 entry version 4; citation taken from the entry level
+  genome_accession: genbank:EU827593.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000090
+  source_label: macbecin II
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-e93641044d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-3b5cd07b8c
+label: dhurrin
+chemical_structure:
+  smiles: C1=CC(=CC=C1[C@@H](C#N)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O)O
+  standard_inchi: InChI=1S/C14H17NO7/c15-5-9(7-1-3-8(17)4-2-7)21-14-13(20)12(19)11(18)10(6-16)22-14/h1-4,9-14,16-20H,6H2/t9-,10-,11-,12+,13-,14-/m1/s1
+  standard_inchi_key: NVLTYOJHPBMILU-YOVYLDAJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000798
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Amino acid glycosides
+  class_results:
+  - Cyanogenic glycosides
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- pubchem:161355
+producer_organisms:
+- taxon_id: NCBITaxon:4558
+  taxon_label: Sorghum bicolor
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000798
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:21707799
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000798 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000798
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:4558
+  organism_label: Sorghum bicolor
+  evidence:
+  - reference: PMID:21707799
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000798 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CM000760.1
+  locus_from: 1058885
+  locus_to: 1163330
+  bgc_class:
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000798
+  source_label: dhurrin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3b5cd07b8c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-0fb6b72d81
+label: theonellamide
+chemical_structure:
+  smiles: C[C@H]([C@H]1C(=O)NC[C@@H](C(=O)N[C@@H](C[C@H](CC(=O)N[C@H]2CC3=CN(C[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N1)[C@H](C(=O)N)O)CC(=O)N)NC(=O)[C@@H](NC(=O)C[C@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC2=O)[C@H](C)O)CO)CC4=CC=CC=C4)[C@H](/C=C(\C)/C=C/C5=CC=CC=C5)O)CO)C=[N+]3[C@H]6[C@@H]([C@H]([C@H]([C@H](O6)CO)O)O)O)O)C(=O)[O-])O)C7=CC=C(C=C7)Br
+  standard_inchi: InChI=1S/C76H99BrN16O28/c1-34(14-15-37-10-6-4-7-11-37)20-51(99)43-26-56(103)82-49(30-94)69(113)87-48-29-92-28-41(93(33-92)75-63(107)62(106)60(104)53(32-96)121-75)22-45(66(110)90-58(36(3)97)73(117)88-50(31-95)70(114)84-44(65(109)83-43)21-38-12-8-5-9-13-38)81-55(102)24-42(98)23-47(76(119)120)86-71(115)52(100)27-80-72(116)57(35(2)39-16-18-40(77)19-17-39)89-74(118)59(61(105)64(79)108)91-67(111)46(25-54(78)101)85-68(48)112/h4-20,28,33,35-36,42-53,57-63,75,94-100,104-107H,21-27,29-32H2,1-3H3,(H16-,78,79,80,81,82,83,84,85,86,87,88,89,90,91,101,102,103,108,109,110,111,112,113,114,115,116,117,118,119,120)/b15-14+,34-20+/t35-,36-,42+,43-,44-,45-,46-,47-,48+,49-,50-,51-,52-,53+,57-,58-,59-,60-,61+,62-,63+,75+/m0/s1
+  standard_inchi_key: WVJFAKMMDQFEDM-UZGFQBTNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001800
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1652106
+  taxon_label: Candidatus Entotheonella serta
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001800
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:29439203
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001800 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001800
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1652106
+  organism_label: Candidatus Entotheonella serta
+  evidence:
+  - reference: PMID:29439203
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001800 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MG844357.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001800
+  source_label: theonellamide
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-0fb6b72d81
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

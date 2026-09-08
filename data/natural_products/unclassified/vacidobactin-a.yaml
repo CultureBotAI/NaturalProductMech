@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-d0d101ca00
+label: vacidobactin A
+chemical_structure:
+  smiles: CC1CC(=O)NC(CCCN(O)C=O)C(O)C(C)C(=O)NC(C(C)O)C(=O)NC(CCCNO)C(=O)NC(CO)C(=O)NC(C(O)C(=O)O)C(=O)O1
+  standard_inchi: InChI=1S/C29H49N7O16/c1-13-10-19(40)31-16(7-5-9-36(51)12-38)22(41)14(2)24(43)34-20(15(3)39)27(46)32-17(6-4-8-30-50)25(44)33-18(11-37)26(45)35-21(29(49)52-13)23(42)28(47)48/h12-18,20-23,30,37,39,41-42,50-51H,4-11H2,1-3H3,(H,31,40)(H,32,46)(H,33,44)(H,34,43)(H,35,45)(H,47,48)
+  standard_inchi_key: BYSPKLMXELOKRR-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002420
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA032828
+producer_organisms:
+- taxon_id: NCBITaxon:543728
+  taxon_label: Variovorax paradoxus S110
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002420
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26412281
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002420 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002420
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:543728
+  organism_label: Variovorax paradoxus S110
+  evidence:
+  - reference: PMID:26412281
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002420 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP001635.1
+  locus_from: 3932878
+  locus_to: 3970005
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002420
+  source_label: vacidobactin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-d0d101ca00
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

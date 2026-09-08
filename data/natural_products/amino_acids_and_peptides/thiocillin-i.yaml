@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-7fe57fd9ee
+label: thiocillin I
+chemical_structure:
+  smiles: C/C=C/1\C2=NC(=CS2)C(=O)NC(C3=NC(=CS3)C(=O)NC(C4=NC(=CS4)C5=C(C=CC(=N5)C6=NC(=CS6)C7=NC(=CS7)C(=O)N/C(=C/C)/C(=O)NCC(C)O)C8=NC(=CS8)C(=O)NC(C(=O)N1)C(C)O)C(C)O)C(C)(C)O
+  standard_inchi: InChI=1S/C48H49N13O10S6/c1-8-23(36(65)49-12-19(3)62)51-37(66)27-15-74-45(56-27)31-18-75-44(58-31)25-11-10-22-34(50-25)26-13-76-46(53-26)33(21(5)64)60-39(68)29-17-77-47(57-29)35(48(6,7)71)61-40(69)30-16-73-43(55-30)24(9-2)52-41(70)32(20(4)63)59-38(67)28-14-72-42(22)54-28/h8-11,13-21,32-33,35,62-64,71H,12H2,1-7H3,(H,49,65)(H,51,66)(H,52,70)(H,59,67)(H,60,68)(H,61,69)/b23-8+,24-9+
+  standard_inchi_key: FEORQDDAQBRWPT-NBBXXHIDSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000612
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:6446118
+producer_organisms:
+- taxon_id: NCBITaxon:226900
+  taxon_label: Bacillus cereus ATCC 14579
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000612
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:19196969
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000612 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000612
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:226900
+  organism_label: Bacillus cereus ATCC 14579
+  evidence:
+  - reference: PMID:19196969
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000612 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AE016877.1
+  locus_from: 4977401
+  locus_to: 4998568
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000612
+  source_label: thiocillin I
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-7fe57fd9ee
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

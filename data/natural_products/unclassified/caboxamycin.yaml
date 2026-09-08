@@ -1,0 +1,63 @@
+identifier: naturalproductmech:mibig-3a5e98b320
+label: caboxamycin
+chemical_structure:
+  smiles: OC(=O)C1=CC=CC2=C1N=C(O2)C1=C(O)C=CC=C1
+  standard_inchi: InChI=1S/C14H9NO4/c16-10-6-2-1-4-8(10)13-15-12-9(14(17)18)5-3-7-11(12)19-13/h1-7,16H,(H,17,18)
+  standard_inchi_key: CRLJZJZGYIYVSO-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001444
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA016764
+producer_organisms:
+- taxon_id: NCBITaxon:1487711
+  taxon_label: Streptomyces sp. NTK 937
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001444
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28417606
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001444 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001444
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1487711
+  organism_label: Streptomyces sp. NTK 937
+  evidence:
+  - reference: PMID:28417606
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001444 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JJOB01000001.1
+  locus_from: 5309241
+  locus_to: 5323285
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001444
+  source_label: caboxamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3a5e98b320
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

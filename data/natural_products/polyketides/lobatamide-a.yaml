@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-b95c81b56c
+label: lobatamide A
+chemical_structure:
+  smiles: CO/N=C/C=C\C(=O)N/C=C/CC1CC(=O)OC(C)/C=C/C(O)/C(C)=C\CC2=C(C(=O)O1)C(O)=CC=C2
+  standard_inchi: InChI=1S/C27H32N2O8/c1-18-11-13-20-7-4-9-23(31)26(20)27(34)37-21(17-25(33)36-19(2)12-14-22(18)30)8-5-15-28-24(32)10-6-16-29-35-3/h4-7,9-12,14-16,19,21-22,30-31H,8,13,17H2,1-3H3,(H,28,32)/b10-6-,14-12+,15-5+,18-11-,29-16+
+  standard_inchi_key: JYHIHHYYXXKTTJ-VPIXAGKESA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002046
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Zearalenones
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Aromatic polyketide
+xrefs:
+- pubchem:10505925
+- npatlas:NPA028537
+producer_organisms:
+- taxon_id: NCBITaxon:1445510
+  taxon_label: Gynuella sunshinyii YC6258
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002046
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: DOI:10.1002/anie.201916005
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002046 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002046
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1445510
+  organism_label: Gynuella sunshinyii YC6258
+  evidence:
+  - reference: DOI:10.1002/anie.201916005
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002046 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP007142.1
+  locus_from: 3757939
+  locus_to: 3827497
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002046
+  source_label: lobatamide A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b95c81b56c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

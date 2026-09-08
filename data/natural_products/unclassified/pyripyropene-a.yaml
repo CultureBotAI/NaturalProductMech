@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-2fe902a6e5
+label: pyripyropene A
+chemical_structure:
+  smiles: '[H][C@@]12C[C@H](OC(C)=O)[C@@]3(C)OC4=C([C@H](O)[C@]3([H])[C@@]1(C)CC[C@H](OC(C)=O)[C@@]2(C)COC(C)=O)C(=O)OC(=C4)C1=CN=CC=C1'
+  standard_inchi: InChI=1S/C31H37NO10/c1-16(33)38-15-30(5)22-13-24(40-18(3)35)31(6)27(29(22,4)10-9-23(30)39-17(2)34)26(36)25-21(42-31)12-20(41-28(25)37)19-8-7-11-32-14-19/h7-8,11-12,14,22-24,26-27,36H,9-10,13,15H2,1-6H3/t22-,23+,24+,26+,27-,29+,30+,31-/m1/s1
+  standard_inchi_key: PMMQOFWSZRQWEV-RVTXXDJVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000129
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Triketide meroterpenoids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA07480
+producer_organisms:
+- taxon_id: NCBITaxon:330879
+  taxon_label: Aspergillus fumigatus Af293
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000129
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:20861902
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000129 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000129
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:330879
+  organism_label: Aspergillus fumigatus Af293
+  evidence:
+  - reference: PMID:20861902
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000129 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CM000174.1
+  locus_from: 3549063
+  locus_to: 3572141
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000129
+  source_label: pyripyropene A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-2fe902a6e5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

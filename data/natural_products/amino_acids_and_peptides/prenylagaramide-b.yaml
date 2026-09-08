@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-0229cb5e95
+label: prenylagaramide B
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]1NC(=O)[C@@H]2CCCN2C(=O)[C@H](CC2=CC=C(O)C=C2)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC2=CC=C(OCC=C(C)C)C=C2)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CC(N)=O)NC1=O
+  standard_inchi: InChI=1S/C49H68N8O10/c1-7-30(6)42-47(64)54-38(27-41(50)59)49(66)56-21-8-10-39(56)45(62)52-36(25-32-14-18-34(19-15-32)67-23-20-28(2)3)44(61)51-35(24-29(4)5)43(60)53-37(26-31-12-16-33(58)17-13-31)48(65)57-22-9-11-40(57)46(63)55-42/h12-20,29-30,35-40,42,58H,7-11,21-27H2,1-6H3,(H2,50,59)(H,51,61)(H,52,62)(H,53,60)(H,54,64)(H,55,63)/t30-,35-,36-,37-,38-,39-,40-,42-/m0/s1
+  standard_inchi_key: FLMLQOUFYRJGJD-XANOLGTJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000479
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA016379
+- pubchem:10629643
+producer_organisms:
+- taxon_id: NCBITaxon:443922
+  taxon_label: Planktothrix agardhii NIES-596
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000479
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:21513887
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000479 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000479
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:443922
+  organism_label: Planktothrix agardhii NIES-596
+  evidence:
+  - reference: PMID:21513887
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000479 entry version 3; citation taken from the entry level
+  genome_accession: genbank:HQ655154.1
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000479
+  source_label: prenylagaramide B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0229cb5e95
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

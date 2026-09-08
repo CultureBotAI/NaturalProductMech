@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-d7a509fe71
+label: xenocoumacin II
+chemical_structure:
+  smiles: CC(C)CC(NC(=O)C(O)C(O)C1CCCN1)C1CC2=C(C(=O)O1)C(O)=CC=C2
+  standard_inchi: InChI=1S/C21H30N2O6/c1-11(2)9-14(23-20(27)19(26)18(25)13-6-4-8-22-13)16-10-12-5-3-7-15(24)17(12)21(28)29-16/h3,5,7,11,13-14,16,18-19,22,24-26H,4,6,8-10H2,1-2H3,(H,23,27)
+  standard_inchi_key: GJFFPZMEAWWELD-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001054
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Coumarins
+  class_results:
+  - Isocoumarins
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA015250
+- pubchem:129089
+producer_organisms:
+- taxon_id: NCBITaxon:406817
+  taxon_label: Xenorhabdus nematophila ATCC 19061
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001054
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:19682255
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001054 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001054
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:406817
+  organism_label: Xenorhabdus nematophila ATCC 19061
+  evidence:
+  - reference: PMID:19682255
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001054 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FN667742.1
+  locus_from: 1572674
+  locus_to: 1613982
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001054
+  source_label: xenocoumacin II
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d7a509fe71
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

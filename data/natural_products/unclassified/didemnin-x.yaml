@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-5ac2e70945
+label: didemnin X
+chemical_structure:
+  smiles: CCCCCCC[C@H](CC(=O)N[C@@H](CCC(=O)N)C(=O)N[C@@H](CCC(=O)N)C(=O)N[C@@H](CCC(=O)O)C(=O)O[C@@H](C)C(=O)N1CCC[C@H]1C(=O)N(C)[C@H](CC(C)C)C(=O)N[C@H]2[C@@H](OC(=O)[C@@H](N(C(=O)[C@@H]3CCCN3C(=O)[C@@H](NC(=O)[C@H](C(=O)[C@@H](OC(=O)C[C@@H]([C@@H](NC2=O)[C@@H](C)CC)O)C(C)C)C)CC(C)C)C)CC4=CC=C(C=C4)OC)C)O
+  standard_inchi: InChI=1S/C82H130N12O24/c1-16-18-19-20-21-24-52(95)42-65(99)85-54(31-34-63(83)97)73(105)86-55(32-35-64(84)98)74(106)87-56(33-36-66(100)101)81(113)117-50(12)77(109)93-37-22-25-58(93)79(111)91(13)60(40-45(5)6)75(107)90-69-49(11)116-82(114)61(41-51-27-29-53(115-15)30-28-51)92(14)80(112)59-26-23-38-94(59)78(110)57(39-44(3)4)88-72(104)48(10)70(103)71(46(7)8)118-67(102)43-62(96)68(47(9)17-2)89-76(69)108/h27-30,44-50,52,54-62,68-69,71,95-96H,16-26,31-43H2,1-15H3,(H2,83,97)(H2,84,98)(H,85,99)(H,86,105)(H,87,106)(H,88,104)(H,89,108)(H,90,107)(H,100,101)/t47-,48-,49-,50-,52+,54-,55-,56-,57-,58-,59-,60+,61-,62-,68-,69-,71-/m0/s1
+  standard_inchi_key: BUHGEDVBBOQECR-HGESRAKOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000985
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:44592545
+producer_organisms:
+- taxon_id: NCBITaxon:1110502
+  taxon_label: Tistrella mobilis KA081020-065
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000985
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:22458477
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000985 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000985
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1110502
+  organism_label: Tistrella mobilis KA081020-065
+  evidence:
+  - reference: PMID:22458477
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000985 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP003239.1
+  locus_from: 674941
+  locus_to: 729697
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000985
+  source_label: didemnin X
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5ac2e70945
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

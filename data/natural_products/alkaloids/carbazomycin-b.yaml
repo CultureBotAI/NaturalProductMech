@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-db21cb366e
+label: carbazomycin B
+chemical_structure:
+  smiles: CC1=C(C(=C(C2=C1NC3=CC=CC=C32)O)OC)C
+  standard_inchi: InChI=1S/C15H15NO2/c1-8-9(2)15(18-3)14(17)12-10-6-4-5-7-11(10)16-13(8)12/h4-7,16-17H,1-3H3
+  standard_inchi_key: OBMFXFPFPDTBHG-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001896
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:166449
+producer_organisms:
+- taxon_id: NCBITaxon:66425
+  taxon_label: Streptomyces luteoverticillatus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001896
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1007/s00284-019-01711-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001896 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001896
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:66425
+  organism_label: Streptomyces luteoverticillatus
+  evidence:
+  - reference: DOI:10.1007/s00284-019-01711-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001896 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP034587.1
+  locus_from: 7184701
+  locus_to: 7193029
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001896
+  source_label: carbazomycin B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-db21cb366e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-8f1123b739
+label: midecamycin
+chemical_structure:
+  smiles: CCC(=O)O[C@@H]1[C@H](O[C@H](C[C@@]1(C)O)O[C@@H]2[C@H](O[C@H]([C@@H]([C@H]2N(C)C)O)OC3C(CC(C(/C=C\C=C\CC(OC(=O)CC(C3OC)OC(=O)CC)C)O)C)CC=O)C)C
+  standard_inchi: InChI=1S/C41H67NO15/c1-11-30(45)54-29-21-32(47)51-24(4)16-14-13-15-17-28(44)23(3)20-27(18-19-43)37(38(29)50-10)57-40-35(48)34(42(8)9)36(25(5)53-40)56-33-22-41(7,49)39(26(6)52-33)55-31(46)12-2/h13-15,17,19,23-29,33-40,44,48-49H,11-12,16,18,20-22H2,1-10H3/b14-13+,17-15-/t23?,24?,25-,26-,27?,28?,29?,33+,34-,35-,36-,37?,38?,39-,40+,41-/m1/s1
+  standard_inchi_key: DMUAPQTXSSNEDD-ZZHFWOCQSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000096
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Erythromycins
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6436158
+producer_organisms:
+- taxon_id: NCBITaxon:1949
+  taxon_label: Streptomyces mycarofaciens
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000096
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: patent:US7070980B2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000096 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000096
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1949
+  organism_label: Streptomyces mycarofaciens
+  evidence:
+  - reference: patent:US7070980B2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000096 entry version 5; citation taken from the entry level
+  genome_accession: genbank:BD420675.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000096
+  source_label: midecamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8f1123b739
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

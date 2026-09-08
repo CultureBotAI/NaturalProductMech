@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-382f734395
+label: echoside A
+chemical_structure:
+  smiles: COC(=O)[C@H]1O[C@@H](OC2=C(C=C(O)C(=C2O)C2=CC=CC=C2)C2=CC=CC=C2)[C@H](O)[C@@H](O)[C@@H]1O
+  standard_inchi: InChI=1S/C25H24O9/c1-32-24(31)23-20(29)19(28)21(30)25(34-23)33-22-15(13-8-4-2-5-9-13)12-16(26)17(18(22)27)14-10-6-3-7-11-14/h2-12,19-21,23,25-30H,1H3/t19-,20-,21+,23-,25+/m0/s1
+  standard_inchi_key: YCRVYSRXMZRXDW-MDYSUIJBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000340
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Terphenyls
+  class_results:
+  - p-Terphenyls
+  is_glycoside: true
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA019077
+producer_organisms:
+- taxon_id: NCBITaxon:1245024
+  taxon_label: Streptomyces sp. LZ35
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000340
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24865933
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000340 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000340
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1245024
+  organism_label: Streptomyces sp. LZ35
+  evidence:
+  - reference: PMID:24865933
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000340 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KJ156360.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000340
+  source_label: echoside A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-382f734395
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

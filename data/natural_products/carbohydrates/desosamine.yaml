@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-bc0da8b0f6
+label: desosamine
+chemical_structure:
+  smiles: CC1CC(C(C(O1)O)O)N(C)C
+  standard_inchi: InChI=1S/C8H17NO3/c1-5-4-6(9(2)3)7(10)8(11)12-5/h5-8,10-11H,4H2,1-3H3
+  standard_inchi_key: ZOYWWAGVGBSJDL-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000899
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Aminosugars and aminoglycosides
+  class_results:
+  - Aminosugars
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- pubchem:419813
+producer_organisms:
+- taxon_id: NCBITaxon:67333
+  taxon_label: Streptomyces narbonensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000899
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:9770448
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000899 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000899
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67333
+  organism_label: Streptomyces narbonensis
+  evidence:
+  - reference: PMID:9770448
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000899 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AF521878.1
+  bgc_class:
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000899
+  source_label: desosamine
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-bc0da8b0f6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

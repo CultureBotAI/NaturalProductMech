@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-a7ba65c377
+label: brasilicardin A
+chemical_structure:
+  smiles: '[H][C@@]1(O[C@H]2C[C@]3(C)[C@]([H])(CC[C@@]4(C)[C@@H](C[C@H](OC)[C@H](N)C(O)=O)C(C)=CC[C@]34[H])C(C)(C)[C@@H]2O)O[C@@H](C)[C@H](OC(=O)C2=CC=CC(O)=C2)[C@@H](O[C@]2([H])O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2NC(C)=O)[C@H]1O'
+  standard_inchi: InChI=1S/C45H68N2O16/c1-20-12-13-30-44(6,25(20)17-26(58-8)31(46)39(55)56)15-14-29-43(4,5)38(54)27(18-45(29,30)7)60-42-35(53)37(36(21(2)59-42)62-40(57)23-10-9-11-24(50)16-23)63-41-32(47-22(3)49)34(52)33(51)28(19-48)61-41/h9-12,16,21,25-38,41-42,48,50-54H,13-15,17-19,46H2,1-8H3,(H,47,49)(H,55,56)/t21-,25-,26-,27-,28+,29+,30-,31-,32+,33+,34+,35+,36-,37-,38+,41-,42-,44-,45+/m0/s1
+  standard_inchi_key: SAZHWKBRJJLWKC-AWWLABOASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000632
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- TERPENE
+- SACCHARIDE
+xrefs:
+- npatlas:NPA012735
+producer_organisms:
+- taxon_id: NCBITaxon:455432
+  taxon_label: Nocardia terpenica
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000632
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:18503195
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000632 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000632
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455432
+  organism_label: Nocardia terpenica
+  evidence:
+  - reference: PMID:18503195
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000632 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KV411304.1
+  locus_from: 2720627
+  locus_to: 2736748
+  bgc_class:
+  - TERPENE
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000632
+  source_label: brasilicardin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a7ba65c377
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

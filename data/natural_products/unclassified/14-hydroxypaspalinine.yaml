@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-eb3a34d0e2
+label: 14-hydroxypaspalinine
+chemical_structure:
+  smiles: C[C@]12CC[C@]34C(=CC(=O)[C@H](O3)C(O4)(C)C)[C@@]1([C@H](C[C@@H]5[C@@]2(C6=C(C5)C7=CC=CC=C7N6)C)O)O
+  standard_inchi: InChI=1S/C27H31NO5/c1-23(2)22-18(29)13-19-26(32-22,33-23)10-9-24(3)25(4)14(12-20(30)27(19,24)31)11-16-15-7-5-6-8-17(15)28-21(16)25/h5-8,13-14,20,22,28,30-31H,9-12H2,1-4H3/t14-,20+,22+,24-,25-,26+,27+/m1/s1
+  standard_inchi_key: JNHPMJVSUJKCKH-KCCNSQSLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002149
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Terpenoids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Indole-Diterpenoid alkaloids (Penitrems)
+  is_glycoside: false
+bgc_class:
+- NRPS
+- TERPENE
+xrefs:
+- pubchem:10072409
+producer_organisms:
+- taxon_id: NCBITaxon:209559
+  taxon_label: Aspergillus alliaceus ATCC 20738
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002149
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production.'
+  evidence:
+  - reference: PMID:35315670
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002149 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002149
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:209559
+  organism_label: Aspergillus alliaceus ATCC 20738
+  evidence:
+  - reference: PMID:35315670
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002149 entry version 2; citation taken from the entry level
+  genome_accession: genbank:OK546695.1
+  locus_from: 1
+  locus_to: 40000
+  bgc_class:
+  - NRPS
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002149
+  source_label: 14-hydroxypaspalinine
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-eb3a34d0e2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

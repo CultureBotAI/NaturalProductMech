@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-91bcef2bc6
+label: ferrichrome
+chemical_structure:
+  smiles: CC(=O)N(CCCC1C(=O)NC(C(=O)NC(C(=O)NCC(=O)NCC(=O)NCC(=O)N1)CCCN(C(=O)C)[O-])CCCN(C(=O)C)[O-])[O-].[55Fe+3]
+  standard_inchi: InChI=1S/C27H42N9O12.Fe/c1-16(37)34(46)10-4-7-19-25(43)30-14-23(41)28-13-22(40)29-15-24(42)31-20(8-5-11-35(47)17(2)38)26(44)33-21(27(45)32-19)9-6-12-36(48)18(3)39;/h19-21H,4-15H2,1-3H3,(H,28,41)(H,29,40)(H,30,43)(H,31,42)(H,32,45)(H,33,44);/q-3;+3/i;1-1
+  standard_inchi_key: GGUNGDGGXMHBMJ-HCMAANCNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000901
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:644246
+producer_organisms:
+- taxon_id: NCBITaxon:5061
+  taxon_label: Aspergillus niger
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000901
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25062661
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000901 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000901
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5061
+  organism_label: Aspergillus niger
+  evidence:
+  - reference: PMID:25062661
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000901 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DJ389528.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000901
+  source_label: ferrichrome
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-91bcef2bc6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

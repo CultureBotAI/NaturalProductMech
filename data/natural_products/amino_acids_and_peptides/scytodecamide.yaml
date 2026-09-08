@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-4251597f48
+label: scytodecamide
+chemical_structure:
+  smiles: C[C@H](CC)[C@@H](C(N[C@@H](CO)C(N1[C@H](C(N[C@@H](C)C(N[C@@H](CC(C)C)C(N[C@@H](CC(C)C)C(N[C@@H](C)C(N[C@@H](CO)C(N[C@@H](CC(C)C)C(N[C@H](C(N)=O)C(C)C)=O)=O)=O)=O)=O)=O)=O)CCC1)=O)=O)NC
+  standard_inchi: InChI=1S/C47H85N11O12/c1-14-27(10)37(49-13)46(69)56-34(22-60)47(70)58-17-15-16-35(58)45(68)51-29(12)39(62)52-31(19-24(4)5)42(65)53-30(18-23(2)3)41(64)50-28(11)40(63)55-33(21-59)44(67)54-32(20-25(6)7)43(66)57-36(26(8)9)38(48)61/h23-37,49,59-60H,14-22H2,1-13H3,(H2,48,61)(H,50,64)(H,51,68)(H,52,62)(H,53,65)(H,54,67)(H,55,63)(H,56,69)(H,57,66)/t27-,28+,29+,30+,31+,32+,33+,34+,35+,36+,37+/m1/s1
+  standard_inchi_key: MWUJXBWFBABTFB-RERDJVLRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001880
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA025827
+producer_organisms:
+- taxon_id: NCBITaxon:2304196
+  taxon_label: Scytonema sp. UIC 10036
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001880
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:31769581
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001880 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001880
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2304196
+  organism_label: Scytonema sp. UIC 10036
+  evidence:
+  - reference: PMID:31769581
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001880 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MN265868.1
+  locus_from: 1339
+  locus_to: 9601
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001880
+  source_label: scytodecamide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-4251597f48
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

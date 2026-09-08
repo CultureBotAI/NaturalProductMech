@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-9cd99885a0
+label: micropeptin K139
+chemical_structure:
+  smiles: CCCCCC(=O)N[C@@H](CC(=O)O)C(=O)N[C@@H]1[C@H](OC(=O)[C@@H](NC(=O)[C@@H](N(C(=O)[C@@H](N2C(CCC(C2=O)NC(=O)[C@@H](NC1=O)CCCN=C(N)N)O)[C@H](C)CC)C)CC3=CC=C(C=C3)O)[C@@H](C)CC)C
+  standard_inchi: InChI=1S/C47H74N10O13/c1-8-11-12-15-34(59)51-32(24-36(61)62)41(64)55-38-27(6)70-46(69)37(25(4)9-2)54-42(65)33(23-28-16-18-29(58)19-17-28)56(7)45(68)39(26(5)10-3)57-35(60)21-20-31(44(57)67)53-40(63)30(52-43(38)66)14-13-22-50-47(48)49/h16-19,25-27,30-33,35,37-39,58,60H,8-15,20-24H2,1-7H3,(H,51,59)(H,52,66)(H,53,63)(H,54,65)(H,55,64)(H,61,62)(H4,48,49,50)/t25-,26+,27+,30-,31?,32-,33-,35?,37-,38+,39-/m0/s1
+  standard_inchi_key: ROTFFYYCARWRHQ-NHLUBFEDSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001018
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Ahp-containing cyclodepsipeptides
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:101096212
+producer_organisms:
+- taxon_id: NCBITaxon:600778
+  taxon_label: Microcystis aeruginosa K-139
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001018
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:21212071
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001018 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001018
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:600778
+  organism_label: Microcystis aeruginosa K-139
+  evidence:
+  - reference: PMID:21212071
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001018 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AB481215.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001018
+  source_label: micropeptin K139
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-9cd99885a0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

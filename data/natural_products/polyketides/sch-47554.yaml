@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-5339b40e51
+label: Sch-47554
+chemical_structure:
+  smiles: CC1OC(CCC1OC1OC(C)C(=O)C=C1)C1=CC=C2C(=O)C3=C(C=C[C@]4(O)C[C@](C)(CC(=O)[C@]34O)OC3OC(C)C(=O)C=C3)C(=O)C2=C1O
+  standard_inchi: InChI=1S/C37H38O13/c1-17-23(38)7-11-28(47-17)49-25-9-10-26(46-19(25)3)20-5-6-21-30(32(20)41)33(42)22-13-14-36(44)16-35(4,50-29-12-8-24(39)18(2)48-29)15-27(40)37(36,45)31(22)34(21)43/h5-8,11-14,17-19,25-26,28-29,41,44-45H,9-10,15-16H2,1-4H3/t17?,18?,19?,25?,26?,28?,29?,35-,36-,37-/m0/s1
+  standard_inchi_key: FPIKGAFXXMSOSP-LAIUBXKZSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000268
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA014552
+producer_organisms:
+- taxon_id: NCBITaxon:264024
+  taxon_label: Streptomyces sp. SCC 2136
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000268
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17085966
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000268 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000268
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:264024
+  organism_label: Streptomyces sp. SCC 2136
+  evidence:
+  - reference: PMID:17085966
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000268 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ628018.2
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000268
+  source_label: Sch-47554
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5339b40e51
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-8d845b071d
+label: luminmycin A
+chemical_structure:
+  smiles: CCCCCCC\C=C\C=C\C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@H]1CCCCNC(=O)\C=C\[C@H](C)NC1=O
+  standard_inchi: InChI=1S/C27H44N4O5/c1-4-5-6-7-8-9-10-11-12-16-24(34)31-25(21(3)32)27(36)30-22-15-13-14-19-28-23(33)18-17-20(2)29-26(22)35/h10-12,16-18,20-22,25,32H,4-9,13-15,19H2,1-3H3,(H,28,33)(H,29,35)(H,30,36)(H,31,34)/b11-10+,16-12+,18-17+/t20-,21+,22-,25-/m0/s1
+  standard_inchi_key: CXVPCSSIDACGGV-SBSLBVBZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000383
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA01451
+producer_organisms:
+- taxon_id: NCBITaxon:243265
+  taxon_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000383
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:22909174
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000383 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000383
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:243265
+  organism_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence:
+  - reference: PMID:22909174
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000383 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP024901.1
+  locus_from: 2202808
+  locus_to: 2257564
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000383
+  source_label: luminmycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8d845b071d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

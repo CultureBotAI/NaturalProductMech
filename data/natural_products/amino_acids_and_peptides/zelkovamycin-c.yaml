@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-7d5a470d9a
+label: zelkovamycin C
+chemical_structure:
+  smiles: C/C=C1\NC(=O)[C@@H](CC)NC(=O)CNC(=O)[C@](C)(C(C)=O)NC(=O)[C@H](CC2=CNC3=C2C(OC)=C(O)C=C3)NC(=O)C2=CSC(=N2)[C@@H](C)NC(=O)CN(C)C1=O
+  standard_inchi: InChI=1S/C36H45N9O10S/c1-8-20-30(50)41-21(9-2)34(53)45(6)15-27(49)39-17(3)33-43-24(16-56-33)31(51)42-23(12-19-13-37-22-10-11-25(47)29(55-7)28(19)22)32(52)44-36(5,18(4)46)35(54)38-14-26(48)40-20/h9-11,13,16-17,20,23,37,47H,8,12,14-15H2,1-7H3,(H,38,54)(H,39,49)(H,40,48)(H,41,50)(H,42,51)(H,44,52)/b21-9-/t17-,20-,23+,36+/m1/s1
+  standard_inchi_key: OORNONOEAPJBHY-IXVWJLNKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002370
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA032258
+producer_organisms:
+- taxon_id: NCBITaxon:2750812
+  taxon_label: Actinomadura graeca
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002370
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Gene expression correlated with compound production.'
+  evidence:
+  - reference: PMID:33216552
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002370 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002370
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2750812
+  organism_label: Actinomadura graeca
+  evidence:
+  - reference: PMID:33216552
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002370 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP059572.1
+  locus_from: 3040488
+  locus_to: 3100478
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002370
+  source_label: zelkovamycin C
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-7d5a470d9a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

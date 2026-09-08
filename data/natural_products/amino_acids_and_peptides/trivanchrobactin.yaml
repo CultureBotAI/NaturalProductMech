@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-945e9310be
+label: trivanchrobactin
+chemical_structure:
+  smiles: C1=CC(=C(C(=C1)O)O)C(=O)N[C@H](CCCN=C(N)N)C(=O)N[C@@H](CO)C(=O)OC[C@@H](C(=O)OC[C@@H](C(=O)O)NC(=O)[C@@H](CCCN=C(N)N)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)[C@@H](CCCN=C(N)N)NC(=O)C3=C(C(=CC=C3)O)O
+  standard_inchi: InChI=1S/C48H65N15O19/c49-46(50)55-16-4-10-25(58-37(71)22-7-1-13-31(65)34(22)68)40(74)61-28(19-64)44(79)82-21-30(63-42(76)27(12-6-18-57-48(53)54)60-39(73)24-9-3-15-33(67)36(24)70)45(80)81-20-29(43(77)78)62-41(75)26(11-5-17-56-47(51)52)59-38(72)23-8-2-14-32(66)35(23)69/h1-3,7-9,13-15,25-30,64-70H,4-6,10-12,16-21H2,(H,58,71)(H,59,72)(H,60,73)(H,61,74)(H,62,75)(H,63,76)(H,77,78)(H4,49,50,55)(H4,51,52,56)(H4,53,54,57)/t25-,26-,27-,28+,29+,30+/m1/s1
+  standard_inchi_key: XCOHICMVRLNUCU-OKXKEXSSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002415
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA018703
+producer_organisms:
+- taxon_id: NCBITaxon:680
+  taxon_label: Vibrio campbellii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002415
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:22275102
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002415 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002415
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:680
+  organism_label: Vibrio campbellii
+  evidence:
+  - reference: PMID:22275102
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002415 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP030789.1
+  locus_from: 1592806
+  locus_to: 1607403
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002415
+  source_label: trivanchrobactin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-945e9310be
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-563029be12
+label: marinoterpin A
+chemical_structure:
+  smiles: CC(C)=C[C@H]1C/C(=C/CC/C(C)=C/[C@H]2C/C(=C/CCC(C)CC(=O)C3=CC4=CC=CC=C4[N+]([O-])=C3C)CO2)CO1
+  standard_inchi: InChI=1S/C35H45NO4/c1-24(2)16-31-19-28(22-39-31)12-8-10-25(3)17-32-20-29(23-40-32)13-9-11-26(4)18-35(37)33-21-30-14-6-7-15-34(30)36(38)27(33)5/h6-7,12-17,21,26,31-32H,8-11,18-20,22-23H2,1-5H3/b25-17+,28-12-,29-13-/t26?,31-,32-/m0/s1
+  standard_inchi_key: OZKCIHASMKWRDZ-GNTUBIQZSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002372
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesterterpenoids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+- TERPENE
+- OTHER
+xrefs:
+- npatlas:NPA033304
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002372
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:33844925
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002372 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002372
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:33844925
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002372 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MW452943.1
+  bgc_class:
+  - PKS
+  - TERPENE
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002372
+  source_label: marinoterpin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-563029be12
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

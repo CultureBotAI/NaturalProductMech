@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-4542c27ff4
+label: potashchelin D
+chemical_structure:
+  smiles: CCCCCC/C=C\CCCCCC(=O)N[C@H](C(=O)N[C@H](CO)C(=O)NCC(=O)N[C@H](CO)C(=O)N[C@@H](CO)C(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@@H](CO)C(=O)N[C@H]1CCCN(O)C1=O)[C@@H](C)O)[C@@H](O)C(=O)O)[C@H](O)C(=O)O
+  standard_inchi: InChI=1S/C45H74N10O22/c1-3-4-5-6-7-8-9-10-11-12-13-16-29(61)52-32(34(63)44(73)74)41(70)50-25(19-56)36(65)46-18-30(62)47-26(20-57)37(66)49-28(22-59)39(68)54-33(35(64)45(75)76)42(71)53-31(23(2)60)40(69)51-27(21-58)38(67)48-24-15-14-17-55(77)43(24)72/h8-9,23-28,31-35,56-60,63-64,77H,3-7,10-22H2,1-2H3,(H,46,65)(H,47,62)(H,48,67)(H,49,66)(H,50,70)(H,51,69)(H,52,61)(H,53,71)(H,54,68)(H,73,74)(H,75,76)/b9-8-/t23-,24+,25-,26-,27+,28+,31-,32+,33+,34+,35-/m1/s1
+  standard_inchi_key: GTPBRJNSBFUDNY-KWPSOIMCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002117
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033139
+producer_organisms:
+- taxon_id: NCBITaxon:2600296
+  taxon_label: Halomonas sp. MG34
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002117
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:32266214
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002117 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002117
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2600296
+  organism_label: Halomonas sp. MG34
+  evidence:
+  - reference: PMID:32266214
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002117 entry version 3; citation taken from the entry level
+  genome_accession: genbank:WJPH01000003.1
+  locus_from: 500633
+  locus_to: 569397
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002117
+  source_label: potashchelin D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-4542c27ff4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

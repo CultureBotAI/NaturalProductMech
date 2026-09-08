@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-dfc6c17660
+label: Triketide maleidride monomer type A
+chemical_structure:
+  smiles: CC/C=C/C1=C(C(OC1=O)=O)CC(O)=O
+  standard_inchi: InChI=1S/C10H10O5/c1-2-3-4-6-7(5-8(11)12)10(14)15-9(6)13/h3-4H,2,5H2,1H3,(H,11,12)/b4-3+
+  standard_inchi_key: BYDSIUCKGCOQNN-ONEGZZNKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001340
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - Furans
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:18724167
+producer_organisms:
+- taxon_id: NCBITaxon:89137
+  taxon_label: Byssochlamys fulva
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001340
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production.'
+  evidence:
+  - reference: DOI:10.1039/c5cc06988b
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001340 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001340
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:89137
+  organism_label: Byssochlamys fulva
+  evidence:
+  - reference: DOI:10.1039/c5cc06988b
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001340 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KU928136.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001340
+  source_label: Triketide maleidride monomer type A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-dfc6c17660
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

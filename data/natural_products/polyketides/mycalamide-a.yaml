@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-779317a78d
+label: mycalamide A
+chemical_structure:
+  smiles: C=C1C[C@](OC)([C@H](O)C(=O)NC2OCO[C@H]3[C@@H]2O[C@H](CC(O)CO)C(C)(C)[C@@H]3OC)O[C@H](C)[C@@H]1C
+  standard_inchi: InChI=1S/C24H41NO10/c1-12-9-24(31-7,35-14(3)13(12)2)19(28)21(29)25-22-18-17(32-11-33-22)20(30-6)23(4,5)16(34-18)8-15(27)10-26/h13-20,22,26-28H,1,8-11H2,2-7H3,(H,25,29)/t13-,14-,15?,16-,17+,18+,19-,20-,22?,24-/m1/s1
+  standard_inchi_key: IJASURGZDJYQGF-UBZSBTAVSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002055
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:10345974
+- npatlas:NPA028635
+producer_organisms:
+- taxon_id: NCBITaxon:1163772
+  taxon_label: sponge metagenome
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002055
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1073/pnas.1919245117
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002055 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002055
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1163772
+  organism_label: sponge metagenome
+  evidence:
+  - reference: DOI:10.1073/pnas.1919245117
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002055 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JAAHTG010000029.1
+  locus_from: 2626
+  locus_to: 89053
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002055
+  source_label: mycalamide A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-779317a78d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

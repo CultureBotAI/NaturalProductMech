@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-bd299ad730
+label: CDA2a
+chemical_structure:
+  smiles: O=C(N[C@@H](CC(O)=O)C(N[C@H](C1=CC=C(O)C=C1)C(N[C@@H](CC(O)=O)C(NCC(N[C@@H](C(N[C@@H](CCC(O)=O)C(N/C(C(O[C@H](C)[C@@H]2NC([C@H](CO)NC(C(O3)C3CCC)=O)=O)=O)=C\C4=CNC5=C4C=CC=C5)=O)=O)[C@H](OP(O)(O)=O)C(N)=O)=O)=O)=O)=O)[C@H](CC(O)=O)NC([C@@H](CC6=CNC7=C6C=CC=C7)NC2=O)=O
+  standard_inchi: InChI=1S/C66H77N14O29P/c1-3-8-44-53(108-44)65(102)77-43(27-81)61(98)79-50-28(2)107-66(103)42(20-31-25-69-36-12-7-5-10-34(31)36)76-57(94)37(17-18-46(84)85)71-64(101)52(54(55(67)92)109-110(104,105)106)78-45(83)26-70-56(93)39(21-47(86)87)75-63(100)51(29-13-15-32(82)16-14-29)80-60(97)41(23-49(90)91)73-59(96)40(22-48(88)89)72-58(95)38(74-62(50)99)19-30-24-68-35-11-6-4-9-33(30)35/h4-7,9-16,20,24-25,28,37-41,43-44,50-54,68-69,81-82H,3,8,17-19,21-23,26-27H2,1-2H3,(H2,67,92)(H,70,93)(H,71,101)(H,72,95)(H,73,96)(H,74,99)(H,75,100)(H,76,94)(H,77,102)(H,78,83)(H,79,98)(H,80,97)(H,84,85)(H,86,87)(H,88,89)(H,90,91)(H2,104,105,106)/b42-20-/t28-,37+,38-,39+,40+,41+,43+,44?,50+,51-,52-,53?,54+/m1/s1
+  standard_inchi_key: HDBCLPTUKVHJRE-NHTRHERRSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000315
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000315
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:12445768
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000315 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000315
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:100226
+  organism_label: Streptomyces coelicolor A3(2)
+  evidence:
+  - reference: PMID:12445768
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000315 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AL645882.2
+  locus_from: 3519449
+  locus_to: 3602320
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000315
+  source_label: CDA2a
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-bd299ad730
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

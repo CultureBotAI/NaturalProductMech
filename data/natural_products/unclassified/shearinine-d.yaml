@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-b8185c2027
+label: shearinine D
+chemical_structure:
+  smiles: C[C@]12CC[C@]34C(=CC(=O)[C@H](O3)C(O4)(C)C)[C@@]1(CC[C@@H]5[C@@]2(C6=C(C5)C7=CC8=C(C=C7N6)C9=CC(OC([C@H]9[C@@H]8O)(C)C)(C)C)C)O
+  standard_inchi: InChI=1S/C37H45NO6/c1-31(2)17-23-19-15-24-20(14-21(19)28(40)27(23)32(3,4)43-31)22-13-18-9-10-36(41)26-16-25(39)30-33(5,6)44-37(26,42-30)12-11-34(36,7)35(18,8)29(22)38-24/h14-18,27-28,30,38,40-41H,9-13H2,1-8H3/t18-,27+,28+,30-,34+,35+,36+,37-/m0/s1
+  standard_inchi_key: DFVYLDHDFLHIAA-UWMNKGBPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001776
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Terpenoids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Indole-Diterpenoid alkaloids (Penitrems)
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA02287
+- pubchem:16104602
+producer_organisms:
+- taxon_id: NCBITaxon:5079
+  taxon_label: Penicillium janthinellum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001776
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1016/j.tet.2006.10.050
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001776 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001776
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5079
+  organism_label: Penicillium janthinellum
+  evidence:
+  - reference: DOI:10.1016/j.tet.2006.10.050
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001776 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KF280651.1
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001776
+  source_label: shearinine D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b8185c2027
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

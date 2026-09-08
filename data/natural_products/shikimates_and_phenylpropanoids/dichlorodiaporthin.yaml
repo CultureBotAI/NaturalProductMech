@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-9c07f9a429
+label: dichlorodiaporthin
+chemical_structure:
+  smiles: COC1=CC(=C2C(=C1)C=C(OC2=O)C[C@H](C(Cl)Cl)O)O
+  standard_inchi: InChI=1S/C13H12Cl2O5/c1-19-7-2-6-3-8(5-10(17)12(14)15)20-13(18)11(6)9(16)4-7/h2-4,10,12,16-17H,5H2,1H3/t10-/m1/s1
+  standard_inchi_key: RCUFLECOBNVNRE-SNVBAGLBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002237
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Coumarins
+  class_results:
+  - Isocoumarins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA003721
+producer_organisms:
+- taxon_id: NCBITaxon:510516
+  taxon_label: Aspergillus oryzae RIB40
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002237
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1002/anie.201604516
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002237 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002237
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:510516
+  organism_label: Aspergillus oryzae RIB40
+  evidence:
+  - reference: DOI:10.1002/anie.201604516
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002237 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:AP007164.1
+  locus_from: 1384493
+  locus_to: 1408051
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002237
+  source_label: dichlorodiaporthin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-9c07f9a429
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-f7f0e847a4
+label: microviridin N4
+chemical_structure:
+  smiles: CC(C)C[C@@H]1NC(=O)[C@@H]2CC(=O)O[C@H](C)[C@H](NC(=O)[C@H](CC3=C[NH]C4=CC=CC=C34)NC(=O)[C@@H]3CCCN3C(=O)[C@@H](NC(=O)[C@@H](N)CCC(=O)O)C(C)C)C(=O)N[C@@H](CC3=CC=C(O)C=C3)C(=O)N[C@H]3CCCCNC(=O)C[C@@H](C(=O)N[C@@H](CCCNC(=N)N)C(=O)O)NC(=O)[C@H](CCC(=O)OC[C@H](NC(=O)[C@@H]4CCCC4C(=O)[C@H](CC4=CC=CC=C4)NC3=O)C(=O)N2)NC1=O
+  standard_inchi: InChI=1S/C88H119N19O24/c1-44(2)36-60-78(119)96-57-30-32-69(112)130-43-65-83(124)101-64(81(122)99-60)41-70(113)131-46(5)72(106-82(123)62(39-49-42-94-55-21-10-9-18-51(49)55)102-84(125)66-24-15-35-107(66)86(127)71(45(3)4)105-75(116)54(89)29-31-68(110)111)85(126)103-61(38-48-25-27-50(108)28-26-48)79(120)95-56(76(117)98-59(37-47-16-7-6-8-17-47)73(114)52-19-13-20-53(52)74(115)104-65)22-11-12-33-92-67(109)40-63(100-77(57)118)80(121)97-58(87(128)129)23-14-34-93-88(90)91/h6-10,16-18,21,25-28,42,44-46,52-54,56-66,71-72,94,108H,11-15,19-20,22-24,29-41,43,89H2,1-5H3,(H,92,109)(H,95,120)(H,96,119)(H,97,121)(H,98,117)(H,99,122)(H,100,118)(H,101,124)(H,102,125)(H,103,126)(H,104,115)(H,105,116)(H,106,123)(H,110,111)(H,128,129)(H4,90,91,93)/t46-,52?,53-,54+,56+,57+,58+,59+,60+,61+,62+,63+,64+,65+,66+,71+,72+/m1/s1
+  standard_inchi_key: RJPHPAGAESHTRC-MJNPNBLESA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002049
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:155802018
+- npatlas:NPA032893
+producer_organisms:
+- taxon_id: NCBITaxon:63737
+  taxon_label: Nostoc punctiforme PCC 73102
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002049
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production.'
+  evidence:
+  - reference: PMID:23463784
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002049 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002049
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:63737
+  organism_label: Nostoc punctiforme PCC 73102
+  evidence:
+  - reference: PMID:23463784
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002049 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NC_010628.1
+  locus_from: 2708890
+  locus_to: 2716448
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002049
+  source_label: microviridin N4
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f7f0e847a4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

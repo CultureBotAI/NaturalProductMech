@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-90ddadb4c6
+label: tautomycetin
+chemical_structure:
+  smiles: CC\C(C=C)=C/C(=O)CC(C)CC(C)CCC(O)C(C)C(=O)CC(O)C(C)C(C)OC(=O)C[C@@H](O)C1=C(C)C(=O)OC1=O
+  standard_inchi: InChI=1S/C33H50O10/c1-9-24(10-2)15-25(34)14-19(4)13-18(3)11-12-26(35)21(6)28(37)16-27(36)20(5)23(8)42-30(39)17-29(38)31-22(7)32(40)43-33(31)41/h9,15,18-21,23,26-27,29,35-36,38H,1,10-14,16-17H2,2-8H3/b24-15-/t18?,19?,20?,21?,23?,26?,27?,29-/m1/s1
+  standard_inchi_key: VAIBGAONSFVVKI-LOIRJACGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000157
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA02249
+- pubchem:6439037
+producer_organisms:
+- taxon_id: NCBITaxon:404220
+  taxon_label: Streptomyces sp. CK4412
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000157
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17379718
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000157 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000157
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:404220
+  organism_label: Streptomyces sp. CK4412
+  evidence:
+  - reference: PMID:17379718
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000157 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ983361.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000157
+  source_label: tautomycetin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-90ddadb4c6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

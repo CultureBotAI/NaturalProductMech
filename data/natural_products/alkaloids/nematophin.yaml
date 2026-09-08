@@ -1,0 +1,103 @@
+identifier: naturalproductmech:mibig-ed3a69b3bc
+label: nematophin
+chemical_structure:
+  smiles: CCC(C)C(=O)C(=O)NCCC1=CNC2=CC=CC=C12
+  standard_inchi: InChI=1S/C16H20N2O2/c1-3-11(2)15(19)16(20)17-9-8-12-10-18-14-7-5-4-6-13(12)14/h4-7,10-11,18H,3,8-9H2,1-2H3,(H,17,20)
+  standard_inchi_key: NIQUZFQMNMNAMD-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001434
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Simple indole alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA07705
+producer_organisms:
+- taxon_id: NCBITaxon:290110
+  taxon_label: Xenorhabdus budapestensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001434
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/acs.orglett.6b03796
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001434 entry version 3; citation taken from the compound bioactivity
+      level
+- taxon_id: NCBITaxon:406817
+  taxon_label: Xenorhabdus nematophila ATCC 19061
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001692
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28134534
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001692 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001434
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:290110
+  organism_label: Xenorhabdus budapestensis
+  evidence:
+  - reference: DOI:10.1021/acs.orglett.6b03796
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001434 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KR871223.1
+  bgc_class:
+  - NRPS
+- accession: mibig:BGC0001692
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:406817
+  organism_label: Xenorhabdus nematophila ATCC 19061
+  evidence:
+  - reference: PMID:28134534
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001692 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NC_014228.1
+  locus_from: 2151233
+  locus_to: 2184146
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001434
+  source_label: nematophin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-ed3a69b3bc
+- source: MIBIG
+  source_id: BGC0001692
+  source_label: nematophin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ed670c49f8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001434, BGC0001692.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-c7ae5d3088
+label: Kutzneride 2
+chemical_structure:
+  smiles: CC1(CC1)[C@@H]2C(=O)O[C@H](C(=O)N3[C@@H](C[C@H](CN3)Cl)C(=O)N[C@H](C(=O)N[C@@H](C(=O)N4[C@@H](C[C@@]5([C@H]4NC6=C5C=CC(=C6Cl)Cl)O)C(=O)N2)[C@H](CC(=O)O)O)COC)C(C)(C)C
+  standard_inchi: InChI=1S/C37H48Cl3N7O12/c1-35(2,3)27-32(55)47-19(10-15(38)13-41-47)29(52)42-18(14-58-5)28(51)43-25(21(48)11-22(49)50)31(54)46-20(30(53)45-26(33(56)59-27)36(4)8-9-36)12-37(57)16-6-7-17(39)23(40)24(16)44-34(37)46/h6-7,15,18-21,25-27,34,41,44,48,57H,8-14H2,1-5H3,(H,42,52)(H,43,51)(H,45,53)(H,49,50)/t15-,18+,19+,20+,21+,25-,26+,27-,34+,37-/m1/s1
+  standard_inchi_key: GOUIVYIRLLTNCF-JJMZTBTASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000378
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA015447
+producer_organisms:
+- taxon_id: NCBITaxon:345341
+  taxon_label: Kutzneria sp. 744
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000378
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/np050378g
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000378 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000378
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:345341
+  organism_label: Kutzneria sp. 744
+  evidence:
+  - reference: DOI:10.1021/np050378g
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000378 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:EU074211.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000378
+  source_label: Kutzneride 2
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c7ae5d3088
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

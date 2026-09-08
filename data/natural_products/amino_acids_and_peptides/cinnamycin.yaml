@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-e1a9b58fa7
+label: cinnamycin
+chemical_structure:
+  smiles: C[C@H]1[C@@H]2C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H]3CSC[C@@H]4C(=O)N[C@@H](CS1)C(=O)N[C@@H](CNCCCC[C@H](NC(=O)[C@@H]([C@@H](SC[C@@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N4)CCC(=O)N)CCCNC(=N)N)N)C)NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H](NC3=O)[C@@H](C(=O)O)O)CC(=O)N)C(=O)O)C(=O)N[C@H](C(=O)NCC(=O)N5CCC[C@H]5C(=O)N[C@H](C(=O)N2)CC6=CC=CC=C6)CC7=CC=CC=C7)C(C)C)CC8=CC=CC=C8
+  standard_inchi: InChI=1S/C89H125N25O25S3/c1-43(2)66-84(133)109-59-41-140-40-58-79(128)108-60-42-142-45(4)68(86(135)105-55(75(124)110-66)34-48-22-12-7-13-23-48)111-76(125)54(33-47-20-10-6-11-21-47)104-82(131)61-26-17-31-114(61)65(118)38-98-72(121)53(32-46-18-8-5-9-19-46)103-78(127)57(106-80(60)129)36-95-29-15-14-24-52(87(136)137)102-85(134)67(112-77(126)56(35-63(92)116)99-64(117)37-97-83(132)69(113-81(59)130)70(119)88(138)139)44(3)141-39-49(90)71(120)100-50(25-16-30-96-89(93)94)73(122)101-51(74(123)107-58)27-28-62(91)115/h5-13,18-23,43-45,49-61,66-70,95,119H,14-17,24-42,90H2,1-4H3,(H2,91,115)(H2,92,116)(H,97,132)(H,98,121)(H,99,117)(H,100,120)(H,101,122)(H,102,134)(H,103,127)(H,104,131)(H,105,135)(H,106,129)(H,107,123)(H,108,128)(H,109,133)(H,110,124)(H,111,125)(H,112,126)(H,113,130)(H,136,137)(H,138,139)(H4,93,94,96)/t44-,45-,49-,50-,51-,52-,53-,54-,55-,56-,57-,58+,59-,60-,61-,66-,67+,68+,69-,70-/m0/s1
+  standard_inchi_key: QJDWKBINWOWJNZ-XNGLKPBDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000503
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:133562644
+producer_organisms:
+- taxon_id: NCBITaxon:53446
+  taxon_label: Streptomyces cinnamoneus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000503
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:12642677
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000503 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000503
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:53446
+  organism_label: Streptomyces cinnamoneus
+  evidence:
+  - reference: PMID:12642677
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000503 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ536588.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000503
+  source_label: cinnamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e1a9b58fa7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

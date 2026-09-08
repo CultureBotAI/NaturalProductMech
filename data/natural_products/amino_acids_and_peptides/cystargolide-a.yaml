@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-ebed8a35af
+label: cystargolide A
+chemical_structure:
+  smiles: CC[C@H](C)[C@H](NC(=O)[C@@H](NC(=O)C1OC(=O)C1C(C)C)C(C)C)C(O)=O
+  standard_inchi: InChI=1S/C18H30N2O6/c1-7-10(6)13(17(23)24)20-15(21)12(9(4)5)19-16(22)14-11(8(2)3)18(25)26-14/h8-14H,7H2,1-6H3,(H,19,22)(H,20,21)(H,23,24)/t10-,11?,12-,13-,14?/m0/s1
+  standard_inchi_key: LYUCHIIJQVXUQP-NBWCBLLSSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001440
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA04240
+- pubchem:122204527
+producer_organisms:
+- taxon_id: NCBITaxon:58350
+  taxon_label: Kitasatospora cystarginea
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001440
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:28452105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001440 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001440
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:58350
+  organism_label: Kitasatospora cystarginea
+  evidence:
+  - reference: PMID:28452105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001440 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY249117.1
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001440
+  source_label: cystargolide A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ebed8a35af
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

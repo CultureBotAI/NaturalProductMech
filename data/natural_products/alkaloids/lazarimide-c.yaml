@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-755b319847
+label: lazarimide C
+chemical_structure:
+  smiles: O[C@@]12C(=O)NC(=O)[C@]1(O)C1=C(NC3=C1C=C(Cl)C=C3)C1=C2C2=C(N1)C=C(Cl)C=C2
+  standard_inchi: InChI=1S/C20H11Cl2N3O4/c21-7-2-4-11-10(5-7)14-16(23-11)15-13(9-3-1-8(22)6-12(9)24-15)19(28)17(26)25-18(27)20(14,19)29/h1-6,23-24,28-29H,(H,25,26,27)/t19-,20+/m0/s1
+  standard_inchi_key: CIYVBJUTFIWZPB-VQTJNVASSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001337
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carboline alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:77133
+  taxon_label: uncultured bacterium
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001337
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production.'
+  evidence:
+  - reference: PMID:26150486
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001337 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001337
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:77133
+  organism_label: uncultured bacterium
+  evidence:
+  - reference: PMID:26150486
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001337 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KR052816.1
+  locus_from: 3107
+  locus_to: 25639
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001337
+  source_label: lazarimide C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-755b319847
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

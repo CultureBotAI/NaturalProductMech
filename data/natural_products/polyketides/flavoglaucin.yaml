@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-be4adf1947
+label: flavoglaucin
+chemical_structure:
+  smiles: CCCCCCCC1=C(O)C=C(CC=C(C)C)C(O)=C1C=O
+  standard_inchi: InChI=1S/C19H28O3/c1-4-5-6-7-8-9-16-17(13-20)19(22)15(12-18(16)21)11-10-14(2)3/h10,12-13,21-22H,4-9,11H2,1-3H3
+  standard_inchi_key: RGRXZGKXEJHPQQ-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002234
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:119037
+- npatlas:NPA033320
+producer_organisms:
+- taxon_id: NCBITaxon:1388766
+  taxon_label: Aspergillus ruber CBS 135680
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002234
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32134669
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002234 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002234
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1388766
+  organism_label: Aspergillus ruber CBS 135680
+  evidence:
+  - reference: PMID:32134669
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002234 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KK088422.1
+  locus_from: 222933
+  locus_to: 243870
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002234
+  source_label: flavoglaucin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-be4adf1947
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

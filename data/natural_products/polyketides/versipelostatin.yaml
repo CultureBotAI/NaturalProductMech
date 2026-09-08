@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-00109dc6f8
+label: versipelostatin
+chemical_structure:
+  smiles: '[H][C@@]1(C[C@H](O)[C@]([H])(O[C@]2([H])C[C@@H](OC)[C@]([H])(O[C@@]3([H])C[C@H](O)[C@H](O)[C@@H](C)O3)[C@@H](C)O2)[C@@H](C)O1)O[C@H]1C(C)CCCC2(C)C=C(C)C(C)CC22OC(=O)C(=C2O)C(=O)C2(CC)C3C(C)C(=O)CC(O)C3C=C(C)C2\C(CC)=C\C(CO)CC1C'
+  standard_inchi: InChI=1S/C61H94O17/c1-14-39-21-38(28-62)19-31(5)53(75-47-24-44(66)54(36(10)73-47)76-48-25-45(71-13)55(37(11)74-48)77-46-23-43(65)52(67)35(9)72-46)29(3)17-16-18-59(12)26-32(6)33(7)27-61(59)57(69)49(58(70)78-61)56(68)60(15-2)50(39)30(4)20-40-42(64)22-41(63)34(8)51(40)60/h20-21,26,29,31,33-38,40,42-48,50-55,62,64-67,69H,14-19,22-25,27-28H2,1-13H3/b39-21+/t29?,31?,33?,34?,35-,36-,37-,38?,40?,42?,43+,44+,45-,46+,47+,48-,50?,51?,52-,53+,54-,55-,59?,60?,61?/m1/s1
+  standard_inchi_key: GYHNNYHTWLMRSY-CSNAFCJMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001204
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Spirotetronate macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA011256
+- pubchem:73348086
+producer_organisms:
+- taxon_id: NCBITaxon:67375
+  taxon_label: Streptomyces versipellis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001204
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25551461
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001204 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001204
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67375
+  organism_label: Streptomyces versipellis
+  evidence:
+  - reference: PMID:25551461
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001204 entry version 5; citation taken from the entry level
+  genome_accession: genbank:LC006086.1
+  locus_from: 6818
+  locus_to: 115042
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001204
+  source_label: versipelostatin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-00109dc6f8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

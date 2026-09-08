@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-b553f24352
+label: tubercidin
+chemical_structure:
+  smiles: C1=CN(C2=NC=NC(=C21)N)[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O
+  standard_inchi: InChI=1S/C11H14N4O4/c12-9-5-1-2-15(10(5)14-4-13-9)11-8(18)7(17)6(3-16)19-11/h1-2,4,6-8,11,16-18H,3H2,(H2,12,13,14)/t6-,7-,8-,11-/m1/s1
+  standard_inchi_key: HDZZVAMISRMYHH-KCGFPETGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001937
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Purine nucleos(t)ides
+  - Pyrimidine nucleos(t)ides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:6245
+producer_organisms:
+- taxon_id: NCBITaxon:47759
+  taxon_label: Streptomyces tubercidicus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001937
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:30153835
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001937 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001937
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:47759
+  organism_label: Streptomyces tubercidicus
+  evidence:
+  - reference: PMID:30153835
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001937 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MG706975.1
+  locus_from: 4367
+  locus_to: 12776
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001937
+  source_label: tubercidin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-b553f24352
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

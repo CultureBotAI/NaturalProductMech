@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-f8a769801f
+label: agnestadride B
+chemical_structure:
+  smiles: O=C(O1)C(/C=C/CC)=C2C1=C(CCC)C(C(OC3=O)=O)=C3CC2
+  standard_inchi: InChI=1S/C18H18O5/c1-3-5-7-11-10-8-9-13-14(18(21)23-17(13)20)12(6-4-2)15(10)22-16(11)19/h5,7H,3-4,6,8-9H2,1-2H3/b7-5+
+  standard_inchi_key: LZVAVELRNPTDSM-FNORWQNLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001340
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - Nonadrides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:139585356
+- chebi:204896
+- npatlas:NPA008080
+producer_organisms:
+- taxon_id: NCBITaxon:89137
+  taxon_label: Byssochlamys fulva
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001340
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production.'
+  evidence:
+  - reference: DOI:10.1039/c5cc06988b
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001340 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001340
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:89137
+  organism_label: Byssochlamys fulva
+  evidence:
+  - reference: DOI:10.1039/c5cc06988b
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001340 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KU928136.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001340
+  source_label: agnestadride B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f8a769801f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

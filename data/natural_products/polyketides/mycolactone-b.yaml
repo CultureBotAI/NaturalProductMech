@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-7a791b74f3
+label: mycolactone B
+chemical_structure:
+  smiles: C[C@@H](O)C[C@@H](O)[C@H](C)\C=C(/C)C[C@H](C)[C@H]1C\C=C(C)/C[C@H](C)[C@H](CCCC(=O)O1)OC(=O)\C=C\C(\C)=C\C(\C)=C\C=C\C(\C)=C\[C@H](O)[C@@H](O)C[C@H](C)O
+  standard_inchi: InChI=1S/C44H70O9/c1-28(13-11-14-29(2)25-39(48)40(49)27-37(10)46)21-30(3)18-20-44(51)52-41-15-12-16-43(50)53-42(19-17-31(4)22-34(41)7)35(8)24-32(5)23-33(6)38(47)26-36(9)45/h11,13-14,17-18,20-21,23,25,33-42,45-49H,12,15-16,19,22,24,26-27H2,1-10H3/b14-11+,20-18+,28-13+,29-25+,30-21+,31-17-,32-23+/t33-,34+,35+,36-,37+,38-,39+,40+,41+,42-/m1/s1
+  standard_inchi_key: WKTLNJXZVDLRTJ-PCNYYULESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000103
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA019693
+producer_organisms:
+- taxon_id: NCBITaxon:362242
+  taxon_label: Mycobacterium ulcerans Agy99
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000103
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:14736915
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000103 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000103
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:362242
+  organism_label: Mycobacterium ulcerans Agy99
+  evidence:
+  - reference: PMID:14736915
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000103 entry version 5; citation taken from the entry level
+  genome_accession: genbank:BX649209.1
+  locus_from: 30054
+  locus_to: 137271
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000103
+  source_label: mycolactone B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7a791b74f3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

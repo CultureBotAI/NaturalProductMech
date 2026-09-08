@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-afddccc369
+label: nosperin
+chemical_structure:
+  smiles: C[C@@H]1[C@H](C)C(C[C@@]([C@H](O)C(N/C=C/C(CO)[C@@H](O)C(C)C(N2CCC[C@H]2[C@H](O)CC(N)=O)=O)=O)(OC)O1)=C
+  standard_inchi: InChI=1S/C26H43N3O9/c1-14-12-26(37-5,38-17(4)15(14)2)23(34)24(35)28-9-8-18(13-30)22(33)16(3)25(36)29-10-6-7-19(29)20(31)11-21(27)32/h8-9,15-20,22-23,30-31,33-34H,1,6-7,10-13H2,2-5H3,(H2,27,32)(H,28,35)/b9-8+/t15-,16?,17-,18?,19+,20-,22+,23-,26-/m1/s1
+  standard_inchi_key: AYSMYLUVPGMSKV-PLXAKVCMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001071
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: true
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA020215
+producer_organisms:
+- taxon_id: NCBITaxon:414689
+  taxon_label: Nostoc sp. 'Peltigera membranacea cyanobiont'
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0001071
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Gene expression correlated with compound production.'
+  evidence:
+  - reference: DOI:10.1073/pnas.1305867110
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001071 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001071
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:414689
+  organism_label: Nostoc sp. 'Peltigera membranacea cyanobiont'
+  evidence:
+  - reference: DOI:10.1073/pnas.1305867110
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001071 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:GQ979609.2
+  bgc_class:
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001071
+  source_label: nosperin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-afddccc369
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

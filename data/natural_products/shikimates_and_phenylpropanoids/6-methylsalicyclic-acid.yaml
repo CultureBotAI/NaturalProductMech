@@ -1,0 +1,99 @@
+identifier: naturalproductmech:mibig-2682f7f50f
+label: 6-methylsalicyclic acid
+chemical_structure:
+  smiles: CC1=C(C(=CC=C1)O)C(=O)O
+  standard_inchi: InChI=1S/C8H8O3/c1-5-3-2-4-6(9)7(5)8(10)11/h2-4,9H,1H3,(H,10,11)
+  standard_inchi_key: HCJMNOSIAGSZBM-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001275
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Phenolic acids (C6-C1)
+  class_results:
+  - Simple phenolic acids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:11279
+producer_organisms:
+- taxon_id: NCBITaxon:101852
+  taxon_label: Glarea lozoyensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001275
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:15800788
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001275 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:33178
+  taxon_label: Aspergillus terreus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001276
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:9003280
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001276 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001275
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:101852
+  organism_label: Glarea lozoyensis
+  evidence:
+  - reference: PMID:15800788
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001275 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AY941322.1
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0001276
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33178
+  organism_label: Aspergillus terreus
+  evidence:
+  - reference: PMID:9003280
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001276 entry version 3; citation taken from the entry level
+  genome_accession: genbank:D85860.2
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001275
+  source_label: 6-methylsalicyclic acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-2682f7f50f
+- source: MIBIG
+  source_id: BGC0001276
+  source_label: 6-methylsalicyclic acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7f002a8ed7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001275, BGC0001276.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

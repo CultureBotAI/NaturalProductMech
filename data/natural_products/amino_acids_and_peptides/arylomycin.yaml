@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-2f96cc9641
+label: arylomycin
+chemical_structure:
+  smiles: CCCCCCCCCCCCCCCC(=O)N(C)[C@H](CO)C(=O)N[C@H](C)C(=O)NCC(=O)N(C)[C@H]1C2=CC(=C(C=C2)O)C3=C(C=CC(=C3)C[C@H](NC(=O)[C@@H](NC1=O)C)C(=O)O)O
+  standard_inchi: InChI=1S/C46H68N6O11/c1-6-7-8-9-10-11-12-13-14-15-16-17-18-19-39(56)51(4)36(28-53)44(60)48-29(2)42(58)47-27-40(57)52(5)41-32-21-23-38(55)34(26-32)33-24-31(20-22-37(33)54)25-35(46(62)63)50-43(59)30(3)49-45(41)61/h20-24,26,29-30,35-36,41,53-55H,6-19,25,27-28H2,1-5H3,(H,47,58)(H,48,60)(H,49,61)(H,50,59)(H,62,63)/t29-,30+,35+,36-,41+/m1/s1
+  standard_inchi_key: HGWCKYGOWQEYSJ-JBWZRHCTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000306
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:54586211
+producer_organisms:
+- taxon_id: NCBITaxon:457430
+  taxon_label: Streptomyces filamentosus NRRL 11379
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000306
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:21999343
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000306 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000306
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:457430
+  organism_label: Streptomyces filamentosus NRRL 11379
+  evidence:
+  - reference: PMID:21999343
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000306 entry version 5; citation taken from the entry level
+  genome_accession: genbank:ABYX02000001.1
+  locus_from: 6273710
+  locus_to: 6304320
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000306
+  source_label: arylomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2f96cc9641
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

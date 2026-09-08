@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-54379f5e60
+label: arixanthomycin B
+chemical_structure:
+  smiles: O=C(C1=CC=CC(O)=C1O2)C3=C2C(C)=C(CCC4=C5C(O)=C6C(C[C@@](C)(OC[C@]7([H])C(O)=O)N7C6=O)=C4)C5=C3O
+  standard_inchi: InChI=1S/C29H23NO9/c1-11-14-7-6-12-8-13-9-29(2)30(16(10-38-29)28(36)37)27(35)19(13)23(33)18(12)20(14)24(34)21-22(32)15-4-3-5-17(31)26(15)39-25(11)21/h3-5,8,16,31,33-34H,6-7,9-10H2,1-2H3,(H,36,37)/t16-,29-/m1/s1
+  standard_inchi_key: AHGAWEHPVFEMKO-HYDGNGQDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000200
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Ericamycins
+  is_glycoside: false
+bgc_class:
+- PKS
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:77133
+  taxon_label: uncultured bacterium
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000200
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:24730509
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000200 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000200
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:77133
+  organism_label: uncultured bacterium
+  evidence:
+  - reference: PMID:24730509
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000200 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF931341.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000200
+  source_label: arixanthomycin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-54379f5e60
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,77 @@
+identifier: naturalproductmech:mibig-fe4d699962
+label: hapalosin E
+chemical_structure:
+  smiles: CC[C@H](OC([C@H]([C@H]1CCCCCCC)C)=O)C(N([C@@H](CC2=CC=CC=C2)[C@@H](CC(O1)=O)O)C)=O
+  standard_inchi: InChI=1S/C27H41NO6/c1-5-7-8-9-13-16-24-19(3)27(32)34-23(6-2)26(31)28(4)21(22(29)18-25(30)33-24)17-20-14-11-10-12-15-20/h10-12,14-15,19,21-24,29H,5-9,13,16-18H2,1-4H3/t19-,21-,22+,23-,24+/m0/s1
+  standard_inchi_key: AZBCVXGNHJUBLD-SMQFJCFBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001467
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Depsipeptide
+xrefs:
+- npatlas:NPA033252
+- cyanometdb:CyanoMetDB_2237
+producer_organisms:
+- taxon_id: NCBITaxon:1173023
+  taxon_label: Fischerella sp. PCC 9431
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001467
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1002/anie.202015105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001467 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001467
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1173023
+  organism_label: Fischerella sp. PCC 9431
+  evidence:
+  - reference: DOI:10.1002/anie.202015105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001467 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:NZ_KE650771.1
+  locus_from: 6215740
+  locus_to: 6241521
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001467
+  source_label: hapalosin E
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fe4d699962
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

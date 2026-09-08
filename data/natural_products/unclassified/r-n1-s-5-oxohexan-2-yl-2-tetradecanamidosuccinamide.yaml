@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-7987ee099c
+label: (R)-N1-((S)-5-oxohexan-2-yl)-2-tetradecanamidosuccinamide
+chemical_structure:
+  smiles: CCCCCCCCCCCCCC(N[C@@H](C(N[C@@H](C)CCC(C)=O)=O)CC(N)=O)=O
+  standard_inchi: InChI=1S/C24H45N3O4/c1-4-5-6-7-8-9-10-11-12-13-14-15-23(30)27-21(18-22(25)29)24(31)26-19(2)16-17-20(3)28/h19,21H,4-18H2,1-3H3,(H2,25,29)(H,26,31)(H,27,30)/t19-,21+/m0/s1
+  standard_inchi_key: OESNGSQKCCZCKI-PZJWPPBQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000972
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Fatty acids
+  superclass_results:
+  - Fatty amides
+  - Peptide alkaloids
+  class_results:
+  - N-acyl amines
+  - Simple amide alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:121232603
+producer_organisms:
+- taxon_id: NCBITaxon:562
+  taxon_label: Escherichia coli
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000972
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  evidence:
+  - reference: PMID:16902142
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000972 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000972
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:562
+  organism_label: Escherichia coli
+  evidence:
+  - reference: PMID:16902142
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000972 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM229678.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000972
+  source_label: (R)-N1-((S)-5-oxohexan-2-yl)-2-tetradecanamidosuccinamide
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7987ee099c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

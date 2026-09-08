@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-138859c37f
+label: tubulysin B
+chemical_structure:
+  smiles: CCCC(=O)OCN(C(CC(OC(C)=O)C1=NC(=CS1)C(=O)NC(CC(C)C(O)=O)CC1=CC=C(O)C=C1)C(C)C)C(=O)C(NC(=O)C1CCCCN1C)C(C)CC
+  standard_inchi: InChI=1S/C42H63N5O10S/c1-9-13-36(50)56-24-47(41(53)37(26(5)10-2)45-39(52)33-14-11-12-19-46(33)8)34(25(3)4)22-35(57-28(7)48)40-44-32(23-58-40)38(51)43-30(20-27(6)42(54)55)21-29-15-17-31(49)18-16-29/h15-18,23,25-27,30,33-35,37,49H,9-14,19-22,24H2,1-8H3,(H,43,51)(H,45,52)(H,54,55)
+  standard_inchi_key: HWCIETDQUHYHGQ-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001344
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA019305
+- pubchem:12134545
+producer_organisms:
+- taxon_id: NCBITaxon:764904
+  taxon_label: Cystobacter sp. SBCb004
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001344
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:20338521
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001344 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001344
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:764904
+  organism_label: Cystobacter sp. SBCb004
+  evidence:
+  - reference: PMID:20338521
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001344 entry version 4; citation taken from the entry level
+  genome_accession: genbank:GU002154.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001344
+  source_label: tubulysin B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-138859c37f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

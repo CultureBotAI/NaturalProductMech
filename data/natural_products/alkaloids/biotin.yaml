@@ -1,0 +1,100 @@
+identifier: naturalproductmech:mibig-950f729d5a
+label: biotin
+chemical_structure:
+  smiles: OC(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@H]12
+  standard_inchi: InChI=1S/C10H16N2O3S/c13-8(14)4-2-1-3-7-9-6(5-16-7)11-10(15)12-9/h6-7,9H,1-5H2,(H,13,14)(H2,11,12,15)/t6-,7-,9-/m0/s1
+  standard_inchi_key: YBJHBAHKTGYVGT-ZKWXMUAHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001238
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Histidine alkaloids
+  class_results:
+  - Imidazole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA013155
+- pubchem:171548
+producer_organisms:
+- taxon_id: NCBITaxon:162425
+  taxon_label: Aspergillus nidulans
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001238
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:20713166
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001238 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:162425
+  taxon_label: Aspergillus nidulans
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001239
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:20713166
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001239 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001238
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:162425
+  organism_label: Aspergillus nidulans
+  evidence:
+  - reference: PMID:20713166
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001238 entry version 3; citation taken from the entry level
+  genome_accession: genbank:FJ430072.1
+  bgc_class:
+  - OTHER
+- accession: mibig:BGC0001239
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:162425
+  organism_label: Aspergillus nidulans
+  evidence:
+  - reference: PMID:20713166
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001239 entry version 3; citation taken from the entry level
+  genome_accession: genbank:FJ430073.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001238
+  source_label: biotin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-950f729d5a
+- source: MIBIG
+  source_id: BGC0001239
+  source_label: biotin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-62b2c92955
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001238, BGC0001239.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

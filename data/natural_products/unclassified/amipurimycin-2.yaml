@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-9c96870911
+label: amipurimycin
+chemical_structure:
+  smiles: C1C[C@H]([C@H](C1)N)C(=O)N[C@H]([C@H]2C[C@]([C@@H]([C@@H](O2)N3C=NC4=CN=C(N=C43)N)O)([C@H](CO)O)O)C(=O)O
+  standard_inchi: InChI=1S/C20H29N7O8/c21-9-3-1-2-8(9)16(31)25-13(18(32)33)11-4-20(34,12(29)6-28)14(30)17(35-11)27-7-24-10-5-23-19(22)26-15(10)27/h5,7-9,11-14,17,28-30,34H,1-4,6,21H2,(H,25,31)(H,32,33)(H2,22,23,26)/t8-,9+,11-,12+,13-,14-,17-,20-/m1/s1
+  standard_inchi_key: BHAUQSKSOITMND-KVKUBTPSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002054
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+- SACCHARIDE
+xrefs:
+- npatlas:NPA021133
+producer_organisms:
+- taxon_id: NCBITaxon:2586640
+  taxon_label: Streptomyces novoguineensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002054
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Gene expression correlated with compound production|Knock-out
+    studies.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.30.1
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002054 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002054
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2586640
+  organism_label: Streptomyces novoguineensis
+  evidence:
+  - reference: DOI:10.7164/antibiotics.30.1
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002054 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MK257770.1
+  bgc_class:
+  - PKS
+  - NRPS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002054
+  source_label: amipurimycin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-9c96870911
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

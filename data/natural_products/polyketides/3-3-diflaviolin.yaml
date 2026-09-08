@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-8dfce2dc21
+label: 3,3'-diflaviolin
+chemical_structure:
+  smiles: O=C1C=C(O)C(C2=CC(O)=C(C3=C(O)C=C(C(C(O)=CC4=O)=O)C4=C3O)C(O)=C21)=O
+  standard_inchi: InChI=1S/C20H10O10/c21-7-1-5-13(9(23)3-11(25)17(5)27)19(29)15(7)16-8(22)2-6-14(20(16)30)10(24)4-12(26)18(6)28/h1-4,21-22,25-26,29-30H
+  standard_inchi_key: GXAIIEQOZICWEL-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000285
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Naphthalenes
+  class_results:
+  - Naphthoquinones
+  is_glycoside: false
+bgc_class:
+- PKS
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:1836
+  taxon_label: Saccharopolyspora erythraea
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000285
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:12028378
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000285 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000285
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1836
+  organism_label: Saccharopolyspora erythraea
+  evidence:
+  - reference: PMID:12028378
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000285 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY078067.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000285
+  source_label: 3,3'-diflaviolin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8dfce2dc21
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-dd3ab190d6
+label: fluostatin L
+chemical_structure:
+  smiles: CCC(C)CCC(=O)O[C@H]1[C@H]2[C@](O2)(C(=O)C3=CC(=C4C5=C(C=CC=C5O)C(=O)C4=C13)O)C
+  standard_inchi: InChI=1S/C25H24O7/c1-4-11(2)8-9-16(28)31-22-18-13(23(30)25(3)24(22)32-25)10-15(27)19-17-12(21(29)20(18)19)6-5-7-14(17)26/h5-7,10-11,22,24,26-27H,4,8-9H2,1-3H3/t11?,22-,24+,25-/m1/s1
+  standard_inchi_key: YQMGQEJXXQCDAU-SNVRGYBNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001904
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Cyclic polyketide
+- Polycyclic polyketide
+xrefs:
+- npatlas:NPA016757
+producer_organisms:
+- taxon_id: NCBITaxon:47874
+  taxon_label: Micromonospora rosaria
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001904
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/acs.orglett.5b02683
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001904 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001904
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:47874
+  organism_label: Micromonospora rosaria
+  evidence:
+  - reference: DOI:10.1021/acs.orglett.5b02683
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001904 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KT726162.1
+  locus_from: 3057
+  locus_to: 37159
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001904
+  source_label: fluostatin L
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-dd3ab190d6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-ff1730935d
+label: TG-1
+chemical_structure:
+  smiles: CC(C)CCCCCCCCCCCC(OCC(OC(CCCCCCCCCCCC(C)C)=O)COCCCCCCCCCCCCC(C)C)=O
+  standard_inchi: InChI=1S/C48H94O5/c1-43(2)35-29-23-17-11-7-8-16-22-28-34-40-51-41-46(53-48(50)39-33-27-21-15-10-13-19-25-31-37-45(5)6)42-52-47(49)38-32-26-20-14-9-12-18-24-30-36-44(3)4/h43-46H,7-42H2,1-6H3
+  standard_inchi_key: KVQANZNUZBQHOF-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000871
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Glycerolipids
+  class_results:
+  - Triacylglycerols
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:246197
+  taxon_label: Myxococcus xanthus DK 1622
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000871
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:24814673
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000871 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000871
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:246197
+  organism_label: Myxococcus xanthus DK 1622
+  evidence:
+  - reference: PMID:24814673
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000871 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP000113.1
+  locus_from: 1789113
+  locus_to: 1797919
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000871
+  source_label: TG-1
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-ff1730935d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

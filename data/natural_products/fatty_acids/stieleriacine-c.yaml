@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-c19e64c3c4
+label: stieleriacine C
+chemical_structure:
+  smiles: CCCCCCCCCCCC(=O)N[C@@H](CC1=CC(C)=C(O)C=C1)C(=O)O
+  standard_inchi: InChI=1S/C22H35NO4/c1-3-4-5-6-7-8-9-10-11-12-21(25)23-19(22(26)27)16-18-13-14-20(24)17(2)15-18/h13-15,19,24H,3-12,16H2,1-2H3,(H,23,25)(H,26,27)/t19-/m0/s1
+  standard_inchi_key: JGQLEDVVHJKAFB-IBGZPJMESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002080
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty amides
+  class_results:
+  - N-acyl amines
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA033129
+producer_organisms:
+- taxon_id: NCBITaxon:2795974
+  taxon_label: Stieleria maiorica
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002080
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1038/s42003-020-0993-2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002080 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002080
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2795974
+  organism_label: Stieleria maiorica
+  evidence:
+  - reference: DOI:10.1038/s42003-020-0993-2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002080 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CP036264.1
+  locus_from: 5274681
+  locus_to: 5314440
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002080
+  source_label: stieleriacine C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-c19e64c3c4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

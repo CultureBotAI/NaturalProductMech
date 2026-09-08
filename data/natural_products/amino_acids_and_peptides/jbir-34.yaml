@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-42f24564a1
+label: JBIR-34
+chemical_structure:
+  smiles: C[C@@H](NC(=O)[C@@]1(C)COC(=N1)C1=CN(C)C2=CC(Cl)=C(C)C(O)=C12)C(=O)N[C@@H](CO)C(O)=O
+  standard_inchi: InChI=1S/C21H25ClN4O7/c1-9-12(22)5-14-15(16(9)28)11(6-26(14)4)18-25-21(3,8-33-18)20(32)23-10(2)17(29)24-13(7-27)19(30)31/h5-6,10,13,27-28H,7-8H2,1-4H3,(H,23,32)(H,24,29)(H,30,31)/t10-,13+,21-/m1/s1
+  standard_inchi_key: OTAMFIXIIUUMKV-JGMWFTNYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000376
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA01973
+producer_organisms:
+- taxon_id: NCBITaxon:630397
+  taxon_label: Streptomyces sp. Sp080513GE-23
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000376
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25041948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000376 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000376
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:630397
+  organism_label: Streptomyces sp. Sp080513GE-23
+  evidence:
+  - reference: PMID:25041948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000376 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB902962.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000376
+  source_label: JBIR-34
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-42f24564a1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

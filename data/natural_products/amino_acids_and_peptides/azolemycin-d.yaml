@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-4c140c7b24
+label: azolemycin D
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H](C(=O)OC)NC(=O)C1=C(OC(=N1)C2=CSC(=N2)C3=C(OC(=N3)C4=COC(=N4)[C@H](C(C)C)NC(=O)/C(=N/OC)/C(C)C)C)C
+  standard_inchi: InChI=1S/C32H41N7O8S/c1-11-16(6)23(32(42)43-9)36-27(41)24-17(7)46-29(37-24)20-13-48-31(34-20)25-18(8)47-28(38-25)19-12-45-30(33-19)22(15(4)5)35-26(40)21(14(2)3)39-44-10/h12-16,22-23H,11H2,1-10H3,(H,35,40)(H,36,41)/b39-21+/t16-,22-,23-/m0/s1
+  standard_inchi_key: RLEKJHOJOZAHJF-LMVAYXAVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002584
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA012770
+- pubchem:132565390
+producer_organisms:
+- taxon_id: NCBITaxon:634337
+  taxon_label: Streptomyces sp. FXJ1.264
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002584
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Gene expression correlated with compound production.'
+  evidence:
+  - reference: PMID:28791101
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002584 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002584
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:634337
+  organism_label: Streptomyces sp. FXJ1.264
+  evidence:
+  - reference: PMID:28791101
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002584 entry version 2; citation taken from the entry level
+  genome_accession: genbank:KT336319.1
+  locus_from: 1
+  locus_to: 13427
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002584
+  source_label: azolemycin D
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-4c140c7b24
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

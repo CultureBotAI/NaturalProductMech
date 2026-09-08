@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-7ff559b2e2
+label: bosamycin A
+chemical_structure:
+  smiles: COC1=C(C[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](N)CC2=CC=C(O)C=C2)[C@@H](O)C(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)NCC(=O)O)C=CC(O)=C1
+  standard_inchi: InChI=1S/C40H57N7O15/c1-19(2)12-26(35(55)42-17-31(51)52)44-36(56)28(15-22-8-11-24(50)16-30(22)62-5)45-38(58)29(18-48)46-39(59)32(33(53)40(60)61)47-37(57)27(13-20(3)4)43-34(54)25(41)14-21-6-9-23(49)10-7-21/h6-11,16,19-20,25-29,32-33,48-50,53H,12-15,17-18,41H2,1-5H3,(H,42,55)(H,43,54)(H,44,56)(H,45,58)(H,46,59)(H,47,57)(H,51,52)(H,60,61)/t25-,26+,27+,28-,29+,32+,33-/m1/s1
+  standard_inchi_key: DMWWSICROMYZPA-QARSUBPGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002581
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA031579
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002581
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:34094195
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002581 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002581
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:34094195
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002581 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MN509472.2
+  locus_from: 5861
+  locus_to: 42927
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002581
+  source_label: bosamycin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-7ff559b2e2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

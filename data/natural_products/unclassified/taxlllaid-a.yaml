@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-b671c8ae60
+label: taxlllaid A
+chemical_structure:
+  smiles: CC(C)CCCC(=O)N[C@H]1[C@@H](C)OC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC1=O
+  standard_inchi: InChI=1S/C41H73N7O9/c1-21(2)15-14-16-33(49)48-34-28(13)57-41(56)27(12)43-36(51)29(17-22(3)4)45-38(53)31(19-24(7)8)47-39(54)32(20-25(9)10)46-37(52)30(18-23(5)6)44-35(50)26(11)42-40(34)55/h21-32,34H,14-20H2,1-13H3,(H,42,55)(H,43,51)(H,44,50)(H,45,53)(H,46,52)(H,47,54)(H,48,49)/t26-,27-,28+,29-,30-,31+,32+,34-/m0/s1
+  standard_inchi_key: DGSRQKSHTABVKQ-CSACJKOTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001133
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA0259
+producer_organisms:
+- taxon_id: NCBITaxon:406818
+  taxon_label: Xenorhabdus bovienii SS-2004
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0001133
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Gene expression correlated with compound production.'
+  evidence:
+  - reference: PMID:25351611
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001133 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001133
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:406818
+  organism_label: Xenorhabdus bovienii SS-2004
+  evidence:
+  - reference: PMID:25351611
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001133 entry version 4; citation taken from the entry level
+  genome_accession: genbank:FN667741.1
+  locus_from: 759318
+  locus_to: 785205
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001133
+  source_label: taxlllaid A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-b671c8ae60
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

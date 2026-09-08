@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-cd9c2557c9
+label: landomycin A
+chemical_structure:
+  smiles: C[C@@H]1O[C@H](CC[C@@H]1O)O[C@@H]1C[C@H](O[C@@H]2[C@@H](C)O[C@H](C[C@H]2O)O[C@H]2CC[C@H](O[C@@H]3C[C@H](O[C@@H]4[C@@H](C)O[C@H](C[C@H]4O)OC4=CC=C(O)C5=C4C(=O)C4=C(C5=O)C5=C(O)C=C(C)C=C5C[C@H]4O)O[C@H](C)[C@H]3O)O[C@H]2C)O[C@H](C)[C@H]1O
+  standard_inchi: InChI=1S/C55H74O22/c1-21-14-28-16-32(59)47-49(45(28)31(58)15-21)53(65)46-30(57)8-10-36(48(46)52(47)64)73-42-18-34(61)55(27(7)71-42)77-44-20-38(51(63)25(5)69-44)75-40-13-11-35(23(3)67-40)72-41-17-33(60)54(26(6)70-41)76-43-19-37(50(62)24(4)68-43)74-39-12-9-29(56)22(2)66-39/h8,10,14-15,22-27,29,32-35,37-44,50-51,54-63H,9,11-13,16-20H2,1-7H3/t22-,23-,24+,25+,26+,27+,29-,32+,33+,34+,35-,37+,38+,39-,40-,41-,42-,43-,44-,50+,51+,54+,55+/m0/s1
+  standard_inchi_key: YMSZNAXJMXNNPT-OPAYXXSESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000239
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+compound_classes:
+- Polycyclic polyketide
+xrefs:
+- npatlas:NPA04350
+- chebi:70064
+- pubchem:368342
+producer_organisms:
+- taxon_id: NCBITaxon:80860
+  taxon_label: Streptomyces cyanogenus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000239
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.43.492
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000239 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000239
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:80860
+  organism_label: Streptomyces cyanogenus
+  evidence:
+  - reference: DOI:10.7164/antibiotics.43.492
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000239 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AF080235.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000239
+  source_label: landomycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-cd9c2557c9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

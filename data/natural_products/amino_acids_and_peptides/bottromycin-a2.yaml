@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-87b937f840
+label: bottromycin A2
+chemical_structure:
+  smiles: COC(=O)C[C@H](NC(=O)[C@@H](NC(=O)[C@@H](\N=C1/NCC(=O)N2CC[C@@H](C)[C@H]2C(=O)N[C@@H](C(C)C)C(=O)N[C@H]1C(C)(C)C)C(C)(C)C)[C@@H](C)C1=CC=CC=C1)C1=NC=CS1
+  standard_inchi: InChI=1S/C42H62N8O7S/c1-23(2)30-36(53)49-33(41(5,6)7)35(44-22-28(51)50-19-17-24(3)32(50)38(55)46-30)48-34(42(8,9)10)39(56)47-31(25(4)26-15-13-12-14-16-26)37(54)45-27(21-29(52)57-11)40-43-18-20-58-40/h12-16,18,20,23-25,27,30-34H,17,19,21-22H2,1-11H3,(H,44,48)(H,45,54)(H,46,55)(H,47,56)(H,49,53)/t24-,25+,27+,30+,31+,32+,33-,34-/m1/s1
+  standard_inchi_key: KSIZLOPUXFSFNR-FHNMVTJESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001157
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Bottromycins
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:3081434
+producer_organisms:
+- taxon_id: NCBITaxon:680198
+  taxon_label: Streptomyces scabiei 87.22
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001157
+  source: MIBIG
+  source_version: '6'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:19115340
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001157 entry version 6; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001157
+  entry_version: '6'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:680198
+  organism_label: Streptomyces scabiei 87.22
+  evidence:
+  - reference: PMID:19115340
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001157 entry version 6; citation taken from the entry level
+  genome_accession: genbank:FN554889.1
+  locus_from: 6304534
+  locus_to: 6321700
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001157
+  source_label: bottromycin A2
+  source_version: '6'
+  minted_identifier: naturalproductmech:mibig-87b937f840
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

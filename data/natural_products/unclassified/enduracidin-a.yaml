@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-8e1aee17c6
+label: enduracidin A
+chemical_structure:
+  smiles: CCC(C)CCCC/C=C/C=C/C(=O)NC(CC(=O)O)C(=O)NC1C(OC(=O)C(NC(=O)C(NC(=O)C(NC(=O)CNC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC1=O)C2=CC=C(C=C2)O)CCCN)C(C)O)C3=CC=C(C=C3)O)C4=CC=C(C=C4)O)C(C)O)CCCNC(=O)N)CC5CN=C(N5)N)C6=CC=C(C=C6)O)CO)C7=CC(=C(C(=C7)Cl)O)Cl)CC8CN=C(N8)N)C)C9=CC=C(C=C9)O)C
+  standard_inchi: InChI=1S/C108H140Cl2N26O31/c1-7-51(2)16-12-10-8-9-11-13-19-77(145)122-75(46-79(147)148)95(155)130-82-55(6)167-105(165)88(60-28-38-68(144)39-29-60)136-90(150)52(3)119-93(153)73(44-62-47-117-106(112)120-62)123-78(146)49-116-97(157)87(61-42-69(109)89(149)70(110)43-61)132-96(156)76(50-137)127-102(162)83(56-20-30-64(140)31-21-56)131-94(154)74(45-63-48-118-107(113)121-63)126-91(151)72(18-15-41-115-108(114)166)124-98(158)80(53(4)138)129-103(163)85(58-24-34-66(142)35-25-58)135-104(164)86(59-26-36-67(143)37-27-59)133-99(159)81(54(5)139)128-92(152)71(17-14-40-111)125-101(161)84(134-100(82)160)57-22-32-65(141)33-23-57/h9,11,13,19-39,42-43,51-55,62-63,71-76,80-88,137-144,149H,7-8,10,12,14-18,40-41,44-50,111H2,1-6H3,(H,116,157)(H,119,153)(H,122,145)(H,123,146)(H,124,158)(H,125,161)(H,126,151)(H,127,162)(H,128,152)(H,129,163)(H,130,155)(H,131,154)(H,132,156)(H,133,159)(H,134,160)(H,135,164)(H,136,150)(H,147,148)(H3,112,117,120)(H3,113,118,121)(H3,114,115,166)/b11-9+,19-13+
+  standard_inchi_key: JPYWPHBUMZRLPO-JDCCHMEXSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000341
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Macrocyclic
+xrefs:
+- pubchem:71587113
+- npatlas:NPA020038
+producer_organisms:
+- taxon_id: NCBITaxon:68203
+  taxon_label: Streptomyces fungicidicus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000341
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1248/cpb.21.1175
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000341 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000341
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68203
+  organism_label: Streptomyces fungicidicus
+  evidence:
+  - reference: DOI:10.1248/cpb.21.1175
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000341 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:DQ403252.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000341
+  source_label: enduracidin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8e1aee17c6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

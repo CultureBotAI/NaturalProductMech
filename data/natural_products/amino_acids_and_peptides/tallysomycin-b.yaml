@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-7e164af87c
+label: tallysomycin B
+chemical_structure:
+  smiles: C[C@H]1[C@H]([C@H]([C@H]([C@@H](O1)OC(C(C2=NC(=CS2)C3=NC(=CS3)C(=O)NCCCNCCCCN)O)NC(=O)[C@@H]([C@@H](C)O)NC(=O)C[C@@H]([C@@H](C)NC(=O)[C@H](C(C4=CN=CN4)O[C@H]5[C@H]([C@@H]([C@H]([C@@H](O5)CO)O)O)O[C@@H]6[C@H]([C@@H]([C@@H]([C@H](O6)CO)O)OC(=O)N)O)NC(=O)C7=C(C(=NC(=N7)[C@H](CC(=O)N)NC[C@H](C(=O)N)N)N)C)O)O)O)N
+  standard_inchi: InChI=1S/C62H98N20O26S2/c1-21-36(79-51(81-49(21)67)26(12-33(65)87)73-14-25(64)50(68)96)53(98)80-38(46(27-15-71-20-74-27)105-61-48(42(92)39(89)31(16-83)104-61)106-60-44(94)47(107-62(69)101)40(90)32(17-84)103-60)55(100)75-22(2)30(86)13-34(88)78-37(23(3)85)54(99)82-56(108-59-43(93)41(91)35(66)24(4)102-59)45(95)58-77-29(19-110-58)57-76-28(18-109-57)52(97)72-11-7-10-70-9-6-5-8-63/h15,18-20,22-26,30-32,35,37-48,56,59-61,70,73,83-86,89-95H,5-14,16-17,63-64,66H2,1-4H3,(H2,65,87)(H2,68,96)(H2,69,101)(H,71,74)(H,72,97)(H,75,100)(H,78,88)(H,80,98)(H,82,99)(H2,67,79,81)/t22-,23-,24+,25-,26+,30+,31+,32-,35-,37-,38+,39+,40-,41-,42-,43-,44+,45?,46?,47-,48+,56?,59+,60-,61+/m1/s1
+  standard_inchi_key: JBMBADLYKKSXRS-LDHHCIQZSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001048
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Bleomycins
+  - Linear peptides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:2017
+  taxon_label: Streptoalloteichus hindustanus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001048
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:17216057
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001048 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001048
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2017
+  organism_label: Streptoalloteichus hindustanus
+  evidence:
+  - reference: PMID:17216057
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001048 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF032505.1
+  bgc_class:
+  - NRPS
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001048
+  source_label: tallysomycin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7e164af87c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

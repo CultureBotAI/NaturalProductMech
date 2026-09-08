@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-32b7a54e39
+label: 8α-hydroxy-6-protoilludene
+chemical_structure:
+  smiles: CC1=C2CC[C@]2(C)[C@H]2CC(C)(C)C[C@H]2[C@@H]1O
+  standard_inchi: InChI=1S/C15H24O/c1-9-11-5-6-15(11,4)12-8-14(2,3)7-10(12)13(9)16/h10,12-13,16H,5-8H2,1-4H3/t10-,12+,13-,15+/m1/s1
+  standard_inchi_key: XTXSLQPVMVDDTB-ZRQNBYAXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002445
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Protoilludane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA033501
+producer_organisms:
+- taxon_id: NCBITaxon:47427
+  taxon_label: Armillaria gallica
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002445
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:33191459
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002445 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002445
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:47427
+  organism_label: Armillaria gallica
+  evidence:
+  - reference: PMID:33191459
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002445 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT277003.1
+  locus_from: 1
+  locus_to: 45006
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002445
+  source_label: 8α-hydroxy-6-protoilludene
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-32b7a54e39
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

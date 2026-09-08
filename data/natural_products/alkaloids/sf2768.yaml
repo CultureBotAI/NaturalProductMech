@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-fffcef9c0b
+label: SF2768
+chemical_structure:
+  smiles: '[C-]#[N+]C(C)CC(=O)NCC1CCC(NC(=O)CC(C)[N+]#[C-])C(O)O1'
+  standard_inchi: InChI=1S/C16H24N4O4/c1-10(17-3)7-14(21)19-9-12-5-6-13(16(23)24-12)20-15(22)8-11(2)18-4/h10-13,16,23H,5-9H2,1-2H3,(H,19,21)(H,20,22)
+  standard_inchi_key: JDWQKEDNYPBKTN-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001574
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA028494
+producer_organisms:
+- taxon_id: NCBITaxon:66431
+  taxon_label: Streptomyces thioluteus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001574
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/acschembio.7b00897
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001574 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001574
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:66431
+  organism_label: Streptomyces thioluteus
+  evidence:
+  - reference: DOI:10.1021/acschembio.7b00897
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001574 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KY427327.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001574
+  source_label: SF2768
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fffcef9c0b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

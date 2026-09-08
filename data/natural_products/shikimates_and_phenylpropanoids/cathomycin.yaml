@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-d4379ab45b
+label: cathomycin
+chemical_structure:
+  smiles: CO[C@@H]1[C@@H](OC(N)=O)[C@@H](O)C(OC2=CC=C3C(O)=C(NC(=O)C4=CC(CC=C(C)C)=C(O)C=C4)C(=O)OC3=C2C)OC1(C)C
+  standard_inchi: InChI=1S/C31H36N2O11/c1-14(2)7-8-16-13-17(9-11-19(16)34)27(37)33-21-22(35)18-10-12-20(15(3)24(18)42-28(21)38)41-29-23(36)25(43-30(32)39)26(40-6)31(4,5)44-29/h7,9-13,23,25-26,29,34-36H,8H2,1-6H3,(H2,32,39)(H,33,37)/t23-,25+,26-,29?/m1/s1
+  standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000834
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Coumarins
+  class_results:
+  - Simple coumarins
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+- OTHER
+xrefs:
+- npatlas:NPA017352
+producer_organisms:
+- taxon_id: NCBITaxon:193462
+  taxon_label: Streptomyces niveus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000834
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:10770754
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000834 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000834
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:193462
+  organism_label: Streptomyces niveus
+  evidence:
+  - reference: PMID:10770754
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000834 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF170880.4
+  locus_from: 4859
+  locus_to: 28076
+  bgc_class:
+  - SACCHARIDE
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000834
+  source_label: cathomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d4379ab45b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

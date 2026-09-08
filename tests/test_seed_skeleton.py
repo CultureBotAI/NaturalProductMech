@@ -11,7 +11,14 @@ import importlib.util
 import sys
 from pathlib import Path
 
-import pytest
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+
+
+from naturalproductmech.grading import (  # noqa: E402
+    CAUSAL_BASES,
+    grade_production,
+    load_producer_evidence_map,
+)
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location("seed_from_sources",
@@ -19,6 +26,12 @@ spec = importlib.util.spec_from_file_location("seed_from_sources",
 seed = importlib.util.module_from_spec(spec)
 sys.modules["seed_from_sources"] = seed
 spec.loader.exec_module(seed)
+
+_extractor_spec = importlib.util.spec_from_file_location(
+    "extract_mibig_module", REPO_ROOT / "scripts" / "extract_mibig.py")
+extract_mibig_module = importlib.util.module_from_spec(_extractor_spec)
+sys.modules["extract_mibig_module"] = extract_mibig_module
+_extractor_spec.loader.exec_module(extract_mibig_module)
 
 
 def test_minting_ignores_the_label():
@@ -33,7 +46,7 @@ def test_minting_ignores_the_label():
 
 
 def test_producer_evidence_map_covers_the_mibig_vocabulary():
-    mapping = seed.load_producer_evidence_map()
+    mapping = load_producer_evidence_map()
     assert mapping["Knock-out studies"] == "BGC_CHARACTERIZED"
     assert mapping["Heterologous expression"] == "BGC_CHARACTERIZED"
     assert mapping["Gene expression correlated with compound production"] == "BGC_CORRELATED"
@@ -42,27 +55,56 @@ def test_producer_evidence_map_covers_the_mibig_vocabulary():
 
 
 def test_homology_prediction_is_not_a_producer_claim():
-    mapping = seed.load_producer_evidence_map()
-    assert seed.grade_producer_evidence(["Homology-based prediction"], mapping) is None
+    """A prediction is not evidence of production, so the claim is withheld
+    rather than downgraded. Applies to 2 active MIBiG entries."""
+    mapping = load_producer_evidence_map()
+    assert grade_production(["Homology-based prediction"], mapping) is None
+
+
+def test_no_stated_method_is_a_source_assertion_not_a_rejection():
+    """The case that decides most of the corpus: 1,627 of MIBiG's 2,437 active
+    entries state no locus evidence method at all.
+
+    Dropping them would discard two thirds of the anchor source over a field
+    MIBiG does not fill. Promoting them would claim experiments nobody
+    reported. SOURCE_ASSERTION is the honest middle, and it is deliberately
+    NOT in CAUSAL_BASES, so a consumer wanting demonstrated production
+    filters it out.
+    """
+    mapping = load_producer_evidence_map()
+    assert grade_production([], mapping) == "SOURCE_ASSERTION"
+    assert "SOURCE_ASSERTION" not in CAUSAL_BASES
 
 
 def test_the_strongest_basis_wins_when_a_locus_has_several():
-    mapping = seed.load_producer_evidence_map()
+    mapping = load_producer_evidence_map()
     methods = ["Correlation of genomic and metabolomic data", "Knock-out studies"]
-    assert seed.grade_producer_evidence(methods, mapping) == "BGC_CHARACTERIZED"
+    assert grade_production(methods, mapping) == "BGC_CHARACTERIZED"
 
 
 def test_correlation_alone_stays_correlational():
     """The finding behind issue #3: this must not silently become CHARACTERIZED."""
-    mapping = seed.load_producer_evidence_map()
-    methods = ["Gene expression correlated with compound production"]
-    assert seed.grade_producer_evidence(methods, mapping) == "BGC_CORRELATED"
+    mapping = load_producer_evidence_map()
+    assert grade_production(["Gene expression correlated with compound production"],
+                            mapping) == "BGC_CORRELATED"
+    assert "BGC_CORRELATED" not in CAUSAL_BASES
 
 
 def test_an_unknown_evidence_method_fails_closed():
-    """A vocabulary that grew upstream should be looked at, not admitted."""
-    mapping = seed.load_producer_evidence_map()
-    assert seed.grade_producer_evidence(["Vibes"], mapping) is None
+    """A vocabulary that grew upstream should be looked at, not admitted.
+
+    Note this is NOT the empty case: a method that is present and unrecognised
+    withholds the claim, while no method at all is a source assertion.
+    """
+    mapping = load_producer_evidence_map()
+    assert grade_production(["Vibes"], mapping) is None
+
+
+def test_the_extractor_and_the_seeder_grade_identically():
+    """One implementation, imported by both. They briefly disagreed about the
+    empty case, which is the largest bucket in the source."""
+    import extract_mibig_module as extractor  # noqa: F401 - imported for its side effect
+    assert extractor.grade_production is grade_production
 
 
 def test_one_pathway_files_the_record():
@@ -104,8 +146,86 @@ def test_an_empty_data_raw_seeds_nothing_and_says_so(capsys):
     assert seed.build_records({}) == []
 
 
-def test_inventories_present_without_a_harmonizer_is_a_loud_failure():
-    """Fail closed: silently writing nothing when inventories exist would look
-    identical to a clean run."""
-    with pytest.raises(NotImplementedError):
-        seed.build_records({"mibig_compounds": [{"a": "b"}]})
+def test_an_unrecognised_inventory_does_not_silently_produce_nothing():
+    """Fail visibly rather than returning an empty plan.
+
+    Until M2 this raised NotImplementedError for any inventory at all. Now that
+    the MIBiG harmonizer exists, the hazard is narrower and the same shape: an
+    inventory the harmonizer does not read must not look like a clean run.
+    """
+    assert seed.build_records({"something_unknown": [{"a": "b"}]}) == []
+
+
+def test_a_mibig_row_becomes_a_record_with_its_producer_and_cluster():
+    """One row in, one record out, with the claims the row supports."""
+    row = {
+        "mibig_accession": "BGC0000001", "entry_version": "3", "entry_status": "active",
+        "entry_quality": "questionable", "entry_completeness": "unknown",
+        "compound_name": "examplomycin", "compound_index": "1",
+        "smiles": "CCO", "standard_inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "stereo_complete": "true",
+        "compound_classes": "Linear", "database_ids": "pubchem:702",
+        "taxon_id": "NCBITaxon:1883", "taxon_label": "Streptomyces",
+        "bgc_classes": "PKS", "bgc_subclasses": "Type I",
+        "genome_accession": "AB000000.1", "locus_from": "1", "locus_to": "100",
+        "locus_evidence_methods": "Knock-out studies",
+        "producer_evidence_basis": "BGC_CHARACTERIZED",
+        "primary_reference": "PMID:12345678", "reference_basis": "ENTRY",
+    }
+    records = seed.build_records({"mibig_compounds": [row]})
+    assert len(records) == 1
+    doc = records[0]
+    assert doc["label"] == "examplomycin"
+    assert doc["grounding_status"] == "MINTED"
+    assert doc["bgc_class"] == ["PKS"]
+    assert doc["xrefs"] == ["pubchem:702"]
+    producer = doc["producer_organisms"][0]
+    assert producer["evidence_basis"] == "BGC_CHARACTERIZED"
+    assert producer["evidence"][0]["evidence_type"] == "DATABASE_ASSERTION"
+    assert doc["biosynthetic_gene_clusters"][0]["accession"] == "mibig:BGC0000001"
+
+
+def test_a_row_with_no_producer_grade_still_becomes_a_record_without_a_producer():
+    """The structure is real even when the production claim is withheld.
+
+    Homology-based prediction grades to nothing, so the compound is recorded
+    and the organism is not asserted as its producer.
+    """
+    row = {
+        "mibig_accession": "BGC0000002", "entry_version": "1", "entry_status": "active",
+        "entry_quality": "high", "entry_completeness": "complete",
+        "compound_name": "predictomycin", "compound_index": "1",
+        "smiles": "CCO", "standard_inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "stereo_complete": "true",
+        "compound_classes": "", "database_ids": "",
+        "taxon_id": "NCBITaxon:1883", "taxon_label": "Streptomyces",
+        "bgc_classes": "", "bgc_subclasses": "",
+        "genome_accession": "", "locus_from": "0", "locus_to": "0",
+        "locus_evidence_methods": "Homology-based prediction",
+        "producer_evidence_basis": "", "primary_reference": "PMID:1", "reference_basis": "ENTRY",
+    }
+    records = seed.build_records({"mibig_compounds": [row]})
+    assert len(records) == 1
+    assert "producer_organisms" not in records[0]
+    assert records[0]["biosynthetic_gene_clusters"]
+
+
+def test_evidence_objects_are_not_shared_between_claims():
+    """Shared list objects made PyYAML emit anchors and aliases into records."""
+    row = {
+        "mibig_accession": "BGC0000003", "entry_version": "1", "entry_status": "active",
+        "entry_quality": "high", "entry_completeness": "complete",
+        "compound_name": "sharedmycin", "compound_index": "1",
+        "smiles": "CCO", "standard_inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "stereo_complete": "true",
+        "compound_classes": "", "database_ids": "",
+        "taxon_id": "NCBITaxon:1883", "taxon_label": "Streptomyces",
+        "bgc_classes": "", "bgc_subclasses": "",
+        "genome_accession": "", "locus_from": "0", "locus_to": "0",
+        "locus_evidence_methods": "Knock-out studies",
+        "producer_evidence_basis": "BGC_CHARACTERIZED",
+        "primary_reference": "PMID:1", "reference_basis": "ENTRY",
+    }
+    doc = seed.build_records({"mibig_compounds": [row]})[0]
+    assert doc["producer_organisms"][0]["evidence"] is not \
+        doc["biosynthetic_gene_clusters"][0]["evidence"]

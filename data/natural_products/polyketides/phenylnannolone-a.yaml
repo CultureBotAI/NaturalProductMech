@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-44d24accdb
+label: phenylnannolone A
+chemical_structure:
+  smiles: CC\C(\C=C\C1=CC=CC(=O)O1)=C/C=C/C1=CC=CC=C1
+  standard_inchi: InChI=1S/C19H18O2/c1-2-16(10-6-11-17-8-4-3-5-9-17)14-15-18-12-7-13-19(20)21-18/h3-15H,2H2,1H3/b11-6+,15-14+,16-10+
+  standard_inchi_key: RRPLGXJSBDXTJL-SWXKCSOPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000122
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 2-pyrone derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA09546
+producer_organisms:
+- taxon_id: NCBITaxon:889268
+  taxon_label: Nannocystis pusilla
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000122
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:24677362
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000122 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000122
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:889268
+  organism_label: Nannocystis pusilla
+  evidence:
+  - reference: PMID:24677362
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000122 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF739396.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000122
+  source_label: phenylnannolone A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-44d24accdb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

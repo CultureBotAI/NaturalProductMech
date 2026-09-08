@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-fe3093dfd3
+label: 10-epi-FI-2
+chemical_structure:
+  smiles: CCC1C[C@H]2C[C@@H]3[C@H](C(=O)C[C@@H]4/C=C/C(O)=C5C(=O)N[C@@H](CCCNC(=O)/C=C\C[C@H]43)C5=O)[C@@]2(O)[C@@H]1C
+  standard_inchi: InChI=1S/C29H38N2O6/c1-3-16-12-18-14-20-19-6-4-8-24(34)30-11-5-7-21-27(35)25(28(36)31-21)22(32)10-9-17(19)13-23(33)26(20)29(18,37)15(16)2/h4,8-10,15-21,26,32,37H,3,5-7,11-14H2,1-2H3,(H,30,34)(H,31,36)/b8-4-,10-9+,25-22?/t15-,16?,17+,18+,19-,20+,21+,26-,29-/m1/s1
+  standard_inchi_key: GKDVQPBMOVCLMH-BYDJZPDJSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002365
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrocyclic tetramic acids
+  is_glycoside: false
+bgc_class:
+- OTHER
+- PKS
+xrefs:
+- npatlas:NPA026682
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002365
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:31775228
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002365 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002365
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:31775228
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002365 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MN234160.1
+  locus_from: 1
+  locus_to: 17258
+  bgc_class:
+  - OTHER
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002365
+  source_label: 10-epi-FI-2
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-fe3093dfd3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

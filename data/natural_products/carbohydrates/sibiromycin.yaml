@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-5a6a183513
+label: sibiromycin
+chemical_structure:
+  smiles: CN[C@H]1[C@H](C)O[C@@H](OC2=CC3=C(N[C@H](O)[C@@H]4CC(\C=C\C)=CN4C3=O)C(O)=C2C)[C@H](O)[C@]1(C)O
+  standard_inchi: InChI=1S/C24H33N3O7/c1-6-7-13-8-15-21(30)26-17-14(22(31)27(15)10-13)9-16(11(2)18(17)28)34-23-20(29)24(4,32)19(25-5)12(3)33-23/h6-7,9-10,12,15,19-21,23,25-26,28-30,32H,8H2,1-5H3/b7-6+/t12-,15-,19-,20-,21+,23-,24+/m0/s1
+  standard_inchi_key: RAGFPHFDFVNLCG-INYQBOQCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000428
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Aminosugars and aminoglycosides
+  class_results:
+  - Aminoglycosides
+  is_glycoside: true
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA01741
+- pubchem:6437361
+producer_organisms:
+- taxon_id: NCBITaxon:457432
+  taxon_label: Streptosporangium sibiricum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000428
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:19270142
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000428 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000428
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:457432
+  organism_label: Streptosporangium sibiricum
+  evidence:
+  - reference: PMID:19270142
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000428 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FJ768674.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000428
+  source_label: sibiromycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5a6a183513
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

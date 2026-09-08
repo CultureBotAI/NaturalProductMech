@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-e630fe39e9
+label: pseurotin
+chemical_structure:
+  smiles: CC\C=C/[C@H](O)[C@H](O)C1=C(C)C(=O)[C@@]2(O1)C(O)[C@](NC2=O)(OC)C(=O)C1=CC=CC=C1
+  standard_inchi: InChI=1S/C22H25NO8/c1-4-5-11-14(24)15(25)16-12(2)17(26)21(31-16)19(28)22(30-3,23-20(21)29)18(27)13-9-7-6-8-10-13/h5-11,14-15,19,24-25,28H,4H2,1-3H3,(H,23,29)/b11-5-/t14-,15-,19?,21+,22+/m0/s1
+  standard_inchi_key: SLYDIPAXCVVRNY-BBJHAQHQSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001037
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 3-Spirotetramic acids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA03544
+- pubchem:9845622
+producer_organisms:
+- taxon_id: NCBITaxon:330879
+  taxon_label: Aspergillus fumigatus Af293
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001037
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:25494235
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001037 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001037
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:330879
+  organism_label: Aspergillus fumigatus Af293
+  evidence:
+  - reference: PMID:25494235
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001037 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CM000176.1
+  locus_from: 115218
+  locus_to: 134016
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001037
+  source_label: pseurotin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e630fe39e9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

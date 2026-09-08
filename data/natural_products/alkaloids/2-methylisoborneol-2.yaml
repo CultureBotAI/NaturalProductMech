@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-0ed362dd75
+label: 2-methylisoborneol
+chemical_structure:
+  smiles: COC(=O)[C@@H]1C[C@@H](CN1CN2C(=S)OC(=N2)C3=CC(=CC=C3)Br)O
+  standard_inchi: InChI=1S/C15H16BrN3O4S/c1-22-14(21)12-6-11(20)7-18(12)8-19-15(24)23-13(17-19)9-3-2-4-10(16)5-9/h2-5,11-12,20H,6-8H2,1H3/t11-,12-/m0/s1
+  standard_inchi_key: MBPWQYMDPQWNIL-RYUDHWBXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000657
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:9237955
+producer_organisms:
+- taxon_id: NCBITaxon:1002505
+  taxon_label: Pseudanabaena sp. dqh15
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000657
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Gene expression correlated with compound production.'
+  evidence:
+  - reference: PMID:21490938
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000657 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000657
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1002505
+  organism_label: Pseudanabaena sp. dqh15
+  evidence:
+  - reference: PMID:21490938
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000657 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HQ830028.1
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000657
+  source_label: 2-methylisoborneol
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0ed362dd75
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-52e9372afe
+label: monascin
+chemical_structure:
+  smiles: '[H]\C(C)=C(\[H])C1=CC2=C(CO1)C(=O)[C@]1(C)OC(=O)[C@H](C(=O)CCCCC)[C@@]1([H])C2'
+  standard_inchi: InChI=1S/C21H26O5/c1-4-6-7-9-17(22)18-16-11-13-10-14(8-5-2)25-12-15(13)19(23)21(16,3)26-20(18)24/h5,8,10,16,18H,4,6-7,9,11-12H2,1-3H3/b8-5+/t16-,18+,21-/m1/s1
+  standard_inchi_key: XXKNHBAFFJINCK-RVEJDSBJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000027
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Chromanes
+  class_results:
+  - Azaphilones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA09686
+- pubchem:12118082
+producer_organisms:
+- taxon_id: NCBITaxon:89488
+  taxon_label: Monascus pilosus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000027
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/jf040199p
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000027 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000027
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:89488
+  organism_label: Monascus pilosus
+  evidence:
+  - reference: DOI:10.1021/jf040199p
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000027 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KC148521.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000027
+  source_label: monascin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-52e9372afe
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

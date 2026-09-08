@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-29c24263f2
+label: matlystatin A
+chemical_structure:
+  smiles: '[H][C@](C)(CC)[C@]([H])(NC(=O)[C@@H]1CCCNN1C(=O)[C@H](CCCCC)CC(=O)NO)C(=O)CC'
+  standard_inchi: InChI=1S/C22H40N4O5/c1-5-8-9-11-16(14-19(28)25-31)22(30)26-17(12-10-13-23-26)21(29)24-20(15(4)6-2)18(27)7-3/h15-17,20,23,31H,5-14H2,1-4H3,(H,24,29)(H,25,28)/t15-,16+,17-,20-/m0/s1
+  standard_inchi_key: IWWYEUSBHSDVOX-CLWJZODNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001443
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA012386
+- pubchem:10054339
+producer_organisms:
+- taxon_id: NCBITaxon:1120936
+  taxon_label: Actinomadura atramentaria DSM 43919
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001443
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  evidence:
+  - reference: PMID:7844042
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001443 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001443
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1120936
+  organism_label: Actinomadura atramentaria DSM 43919
+  evidence:
+  - reference: PMID:7844042
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001443 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_KB907224.1
+  locus_from: 32199
+  locus_to: 56356
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001443
+  source_label: matlystatin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-29c24263f2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-706609b57e
+label: leinamycin
+chemical_structure:
+  smiles: C[C@@H]1C2=NC(=CS2)/C=C\C=C\C(=O)[C@@H](/C=C(/CC[C@@]3(CC(=O)N1)[C@@](C(=O)SS3=O)(C)O)\C)O
+  standard_inchi: InChI=1S/C22H26N2O6S3/c1-13-8-9-22(21(3,29)20(28)32-33(22)30)11-18(27)23-14(2)19-24-15(12-31-19)6-4-5-7-16(25)17(26)10-13/h4-7,10,12,14,17,26,29H,8-9,11H2,1-3H3,(H,23,27)/b6-4-,7-5+,13-10+/t14-,17-,21+,22-,33?/m1/s1
+  standard_inchi_key: ZHTRILQJTPJGNK-FYBAATNNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001101
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:9849230
+producer_organisms:
+- taxon_id: NCBITaxon:66869
+  taxon_label: Streptomyces atroolivaceus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001101
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:12446651
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001101 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001101
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:66869
+  organism_label: Streptomyces atroolivaceus
+  evidence:
+  - reference: PMID:12446651
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001101 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF484556.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001101
+  source_label: leinamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-706609b57e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

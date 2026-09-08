@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-cfc470b905
+label: trypacidin
+chemical_structure:
+  smiles: CC1=CC2=C(C(=C1)OC)C(=O)C3(O2)C(=CC(=O)C=C3OC)C(=O)OC
+  standard_inchi: InChI=1S/C18H16O7/c1-9-5-12(22-2)15-13(6-9)25-18(16(15)20)11(17(21)24-4)7-10(19)8-14(18)23-3/h5-8H,1-4H3
+  standard_inchi_key: KMZYINVXZDQCKC-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001403
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Griseofulvins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:3035292
+producer_organisms:
+- taxon_id: NCBITaxon:330879
+  taxon_label: Aspergillus fumigatus Af293
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001403
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1007/s13205-022-03194-3
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001403 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001403
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:330879
+  organism_label: Aspergillus fumigatus Af293
+  evidence:
+  - reference: DOI:10.1007/s13205-022-03194-3
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001403 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CM000172.1
+  locus_from: 3820195
+  locus_to: 3845905
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001403
+  source_label: trypacidin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-cfc470b905
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

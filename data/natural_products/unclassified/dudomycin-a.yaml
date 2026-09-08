@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-9c55d75029
+label: dudomycin A
+chemical_structure:
+  smiles: CC(C)CCC(O)CC(=O)NCCCCC(NC(=O)CC(CCC(C)C)OC(=O)CC(O)CCC(C)C)C(=O)O
+  standard_inchi: InChI=1S/C30H56N2O8/c1-20(2)10-13-23(33)17-27(35)31-16-8-7-9-26(30(38)39)32-28(36)19-25(15-12-22(5)6)40-29(37)18-24(34)14-11-21(3)4/h20-26,33-34H,7-19H2,1-6H3,(H,31,35)(H,32,36)(H,38,39)
+  standard_inchi_key: VNLFFJDNCUFCBZ-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002359
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033496
+producer_organisms:
+- taxon_id: NCBITaxon:337066
+  taxon_label: Streptomyces albus subsp. chlorinus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002359
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Knock-out studies.'
+  evidence:
+  - reference: PMID:33207845
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002359 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002359
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:337066
+  organism_label: Streptomyces albus subsp. chlorinus
+  evidence:
+  - reference: PMID:33207845
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002359 entry version 3; citation taken from the entry level
+  genome_accession: genbank:VJOK01000001.1
+  locus_from: 4756396
+  locus_to: 4784363
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002359
+  source_label: dudomycin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-9c55d75029
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

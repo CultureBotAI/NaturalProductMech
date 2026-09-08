@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-2f67f3f6ae
+label: bisvertinolone (spelled bisvertinolon in paper)
+chemical_structure:
+  smiles: C/C=C/C=C/C(=C/1\[C@@H]2[C@@]3(C(=O)/C(=C(\C=C\C=C\C)/O)/C(=O)[C@]([C@]3(O[C@@]2(C(=O)C(=C1O)C)C)O)(C)O)C)/O
+  standard_inchi: InChI=1S/C28H32O9/c1-7-9-11-13-16(29)18-20(31)15(3)22(32)26(5)21(18)25(4)23(33)19(17(30)14-12-10-8-2)24(34)27(6,35)28(25,36)37-26/h7-14,21,29-31,35-36H,1-6H3/b9-7+,10-8+,13-11+,14-12+,18-16+,19-17-/t21-,25-,26+,27+,28+/m1/s1
+  standard_inchi_key: NWYGQCMFWAOARK-TZCGFCPBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002190
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Sorbicilinoids
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:44584013
+- npatlas:NPA018406
+producer_organisms:
+- taxon_id: NCBITaxon:857340
+  taxon_label: Acremonium chrysogenum ATCC 11550
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002190
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.3390/molecules21060715
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002190 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002190
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:857340
+  organism_label: Acremonium chrysogenum ATCC 11550
+  evidence:
+  - reference: DOI:10.3390/molecules21060715
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002190 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:JPKY01000049.1
+  locus_from: 38594
+  locus_to: 73209
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002190
+  source_label: bisvertinolone (spelled bisvertinolon in paper)
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-2f67f3f6ae
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

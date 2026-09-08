@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-dc7cdcd9c7
+label: anantin B1
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C(=O)NCC(=O)N[C@H](C(=O)NCC(=O)N[C@H](C(=O)N[C@@H](CC(=O)NCC(=O)N[C@H](C(=O)N1)CC2=CC=CC=C2)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC3=CC=CC=C3)C(=O)NCC(=O)N[C@@H](CC4=CN=CN4)C(=O)N[C@@H](CC5=CC=C(C=C5)O)C(=O)N[C@@H](CO)C(=O)NCC(=O)NCC(=O)N[C@@H](CC6=CC=CC=C6)C(=O)O)CC(=O)N)CC7=CNC8=CC=CC=C87
+  standard_inchi: InChI=1S/C88H109N21O22/c1-5-48(3)76-86(128)97-45-75(119)100-62(34-54-38-91-58-25-17-16-24-57(54)58)79(121)96-44-74(118)102-64(36-68(89)112)83(125)105-65(37-69(113)92-41-71(115)99-60(84(126)108-76)31-51-20-12-8-13-21-51)85(127)109-77(49(4)6-2)87(129)106-59(30-50-18-10-7-11-19-50)78(120)95-43-73(117)101-63(35-55-39-90-47-98-55)82(124)104-61(32-53-26-28-56(111)29-27-53)81(123)107-67(46-110)80(122)94-40-70(114)93-42-72(116)103-66(88(130)131)33-52-22-14-9-15-23-52/h7-29,38-39,47-49,59-67,76-77,91,110-111H,5-6,30-37,40-46H2,1-4H3,(H2,89,112)(H,90,98)(H,92,113)(H,93,114)(H,94,122)(H,95,120)(H,96,121)(H,97,128)(H,99,115)(H,100,119)(H,101,117)(H,102,118)(H,103,116)(H,104,124)(H,105,125)(H,106,129)(H,107,123)(H,108,126)(H,109,127)(H,130,131)/t48-,49-,59-,60-,61-,62-,63-,64-,65-,66-,67-,76-,77-/m0/s1
+  standard_inchi_key: CZUGODYQYHOOOX-TWCDBULKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001506
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lasso peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:124080858
+producer_organisms:
+- taxon_id: NCBITaxon:1463884
+  taxon_label: Streptomyces sp. NRRL S-146
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001506
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28244986
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001506 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001506
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1463884
+  organism_label: Streptomyces sp. NRRL S-146
+  evidence:
+  - reference: PMID:28244986
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001506 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_JOAW01000056.1
+  locus_from: 3033
+  locus_to: 5863
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001506
+  source_label: anantin B1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-dc7cdcd9c7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

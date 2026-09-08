@@ -1,0 +1,63 @@
+identifier: naturalproductmech:mibig-93230fa74b
+label: spliceostatin
+chemical_structure:
+  smiles: C[C@H]1C[C@H]([C@H](O[C@H]1C/C=C(\C)/C=C/[C@@H]2[C@H]([C@@]3(C[C@@](O2)(C)OCCNC(=O)CCCCCNC(=O)CCCCCNC(=O)CCCC[C@H]4[C@@H]5[C@H](CS4)NC(=O)N5)CO3)O)C)NC(=O)/C=C\[C@H](C)OC(=O)C
+  standard_inchi: InChI=1S/C51H82N6O12S/c1-33(19-22-40-34(2)29-38(36(4)68-40)55-46(62)24-21-35(3)67-37(5)58)20-23-41-48(63)51(32-66-51)31-50(6,69-41)65-28-27-54-45(61)17-10-8-14-25-52-43(59)16-9-7-13-26-53-44(60)18-12-11-15-42-47-39(30-70-42)56-49(64)57-47/h19-21,23-24,34-36,38-42,47-48,63H,7-18,22,25-32H2,1-6H3,(H,52,59)(H,53,60)(H,54,61)(H,55,62)(H2,56,57,64)/b23-20+,24-21-,33-19+/t34-,35-,36+,38+,39-,40-,41+,42-,47-,48+,50-,51+/m0/s1
+  standard_inchi_key: OJDXPBWKOFNPDR-YTQOOTMVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001113
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:16204481
+producer_organisms:
+- taxon_id: NCBITaxon:1494466
+  taxon_label: Burkholderia sp. FERM BP-3421
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001113
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25097259
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001113 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001113
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1494466
+  organism_label: Burkholderia sp. FERM BP-3421
+  evidence:
+  - reference: PMID:25097259
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001113 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KJ461964.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001113
+  source_label: spliceostatin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-93230fa74b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

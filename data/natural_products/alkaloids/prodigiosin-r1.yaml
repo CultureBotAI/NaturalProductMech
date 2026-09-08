@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-99123891e3
+label: Prodigiosin R1
+chemical_structure:
+  smiles: CC(C)CC1CCCCCCCCC2=CC1=C(N2)C=C3C(=CC(=N3)C4=CC=CN4)OC
+  standard_inchi: InChI=1S/C27H37N3O/c1-19(2)15-20-11-8-6-4-5-7-9-12-21-16-22(20)24(29-21)17-26-27(31-3)18-25(30-26)23-13-10-14-28-23/h10,13-14,16-20,28-29H,4-9,11-12,15H2,1-3H3
+  standard_inchi_key: FMYDORNOPXGCEO-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000257
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Proline alkaloids
+  class_results:
+  - Prodigiosins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA005906
+producer_organisms:
+- taxon_id: NCBITaxon:45398
+  taxon_label: Streptomyces griseoviridis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000257
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/np7007494
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000257 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000257
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:45398
+  organism_label: Streptomyces griseoviridis
+  evidence:
+  - reference: DOI:10.1021/np7007494
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000257 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AB469822.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000257
+  source_label: Prodigiosin R1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-99123891e3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,105 @@
+identifier: naturalproductmech:mibig-0a89c3541b
+label: congocidine
+chemical_structure:
+  smiles: CN1C=C(C=C1C(=O)NC2=CN(C(=C2)C(=O)NCCC(=N)N)C)NC(=O)CN=C(N)N
+  standard_inchi: InChI=1S/C18H26N10O3/c1-27-9-11(6-12(27)16(30)23-4-3-14(19)20)26-17(31)13-5-10(8-28(13)2)25-15(29)7-24-18(21)22/h5-6,8-9H,3-4,7H2,1-2H3,(H3,19,20)(H,23,30)(H,25,29)(H,26,31)(H4,21,22,24)
+  standard_inchi_key: IDBIFFKSXLYUOT-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001147
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Simple amide alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:4461
+- npatlas:NPA018236
+producer_organisms:
+- taxon_id: NCBITaxon:55404
+  taxon_label: Streptomyces netropsis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001147
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  evidence:
+  - reference: PMID:25415678
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001147 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:278992
+  taxon_label: Streptomyces ambofaciens ATCC 23877
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000327
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17074905
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000327 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001147
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:55404
+  organism_label: Streptomyces netropsis
+  evidence:
+  - reference: PMID:25415678
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001147 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KJ634466.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+- accession: mibig:BGC0000327
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:278992
+  organism_label: Streptomyces ambofaciens ATCC 23877
+  evidence:
+  - reference: PMID:17074905
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000327 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM238664.2
+  locus_from: 1082965
+  locus_to: 1112107
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001147
+  source_label: congocidine
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-0a89c3541b
+- source: MIBIG
+  source_id: BGC0000327
+  source_label: netropsin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8829811b04
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000327, BGC0001147.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

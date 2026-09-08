@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-c5192fa31c
+label: gougerotin
+chemical_structure:
+  smiles: CNCC(=O)NC(CO)C(=O)NC1C(C(C(OC1C(=O)N)N2C=CC(=NC2=O)N)O)O
+  standard_inchi: InChI=1S/C16H25N7O8/c1-19-4-8(25)20-6(5-24)14(29)22-9-10(26)11(27)15(31-12(9)13(18)28)23-3-2-7(17)21-16(23)30/h2-3,6,9-12,15,19,24,26-27H,4-5H2,1H3,(H2,18,28)(H,20,25)(H,22,29)(H2,17,21,30)
+  standard_inchi_key: AMNAZJFEONUVTD-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001610
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Pyrimidine nucleos(t)ides
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:387850
+  taxon_label: Streptomyces ahygroscopicus subsp. wuzhouensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001610
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23352137
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001610 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001610
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:387850
+  organism_label: Streptomyces ahygroscopicus subsp. wuzhouensis
+  evidence:
+  - reference: PMID:23352137
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001610 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY089035.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001610
+  source_label: gougerotin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c5192fa31c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

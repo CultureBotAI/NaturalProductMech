@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-26530192a7
+label: arimetamycin C
+chemical_structure:
+  smiles: CO[C@H]1[C@@H](C2=C(C([C@]1(O)C)=O)C=C3C(C4=C(C(C3=C2O)=O)C(O)=CC(OC)=C4)=O)O[C@H]5C[C@@H]([C@H]([C@@H](O5)C)O)OC
+  standard_inchi: InChI=1S/C28H30O12/c1-10-21(30)16(37-4)9-17(39-10)40-25-20-14(26(34)28(2,35)27(25)38-5)8-13-19(24(20)33)23(32)18-12(22(13)31)6-11(36-3)7-15(18)29/h6-8,10,16-17,21,25,27,29-30,33,35H,9H2,1-5H3/t10-,16-,17-,21-,25+,27-,28+/m0/s1
+  standard_inchi_key: SAOHATURIARFGY-AXKHOAHLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000199
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthraquinones and anthrones
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:77133
+  taxon_label: uncultured bacterium
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000199
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:24038656
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000199 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000199
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:77133
+  organism_label: uncultured bacterium
+  evidence:
+  - reference: PMID:24038656
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000199 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF040454.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000199
+  source_label: arimetamycin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-26530192a7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

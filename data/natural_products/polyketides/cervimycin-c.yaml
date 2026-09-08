@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-d93878150c
+label: cervimycin C
+chemical_structure:
+  smiles: '[H][C@]12CC3=CC4=C(C(=O)C=C(OC)C4=O)C(O)=C3C(=O)[C@@]1(O[C@H]1CC[C@H](O[C@H]3CC[C@H](O)[C@@H](C)O3)[C@@H](C)O1)C(=O)C(C(N)=O)=C(O)[C@@H]2O[C@H]1CC[C@H](O[C@H]2CC[C@H](O[C@H]3CC[C@H](O[C@H]4CC[C@H](OC(=O)C(C)(C)C(O)=O)[C@H](C)O4)[C@H](C)O3)[C@H](C)O2)[C@@H](C)O1'
+  standard_inchi: InChI=1S/C61H81NO25/c1-25-34(63)10-16-42(75-25)81-39-15-21-47(80-29(39)5)87-61-33(23-31-22-32-49(52(66)48(31)55(61)68)35(64)24-41(74-9)51(32)65)54(53(67)50(56(61)69)57(62)70)86-46-20-13-38(28(4)79-46)84-44-18-11-36(26(2)77-44)82-43-17-12-37(27(3)76-43)83-45-19-14-40(30(6)78-45)85-59(73)60(7,8)58(71)72/h22,24-30,33-34,36-40,42-47,54,63,66-67H,10-21,23H2,1-9H3,(H2,62,70)(H,71,72)/t25-,26+,27+,28-,29-,30+,33-,34+,36+,37+,38+,39+,40+,42+,43+,44+,45+,46+,47+,54-,61-/m1/s1
+  standard_inchi_key: XANNJZUQOYYGNE-KSQSWLAPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001439
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+xrefs:
+- npatlas:NPA018279
+producer_organisms:
+- taxon_id: NCBITaxon:1982761
+  taxon_label: Streptomyces sp. CS113
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0001439
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Gene expression correlated with compound production.'
+  evidence:
+  - reference: PMID:15326518
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001439 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001439
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1982761
+  organism_label: Streptomyces sp. CS113
+  evidence:
+  - reference: PMID:15326518
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001439 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KZ195574.1
+  locus_from: 7078663
+  locus_to: 7118727
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001439
+  source_label: cervimycin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d93878150c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

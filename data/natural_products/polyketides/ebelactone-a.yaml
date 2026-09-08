@@ -1,0 +1,99 @@
+identifier: naturalproductmech:mibig-39007f6149
+label: ebelactone A
+chemical_structure:
+  smiles: CC[C@@H](C)[C@H]([C@H](C)C(=O)[C@H](C)/C=C(\C)/C[C@H](C)[C@H]1[C@@H](C(=O)O1)C)O
+  standard_inchi: InChI=1S/C20H34O4/c1-8-12(3)17(21)15(6)18(22)13(4)9-11(2)10-14(5)19-16(7)20(23)24-19/h9,12-17,19,21H,8,10H2,1-7H3/b11-9+/t12-,13-,14+,15+,16+,17-,19+/m1/s1
+  standard_inchi_key: WOISDAHQBUYEAF-QIQXJRRPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000051
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6436820
+producer_organisms:
+- taxon_id: NCBITaxon:67265
+  taxon_label: Kitasatospora aburaviensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000051
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23801186
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000051 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:67265
+  taxon_label: Kitasatospora aburaviensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001580
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:27829923
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001580 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000051
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67265
+  organism_label: Kitasatospora aburaviensis
+  evidence:
+  - reference: PMID:23801186
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000051 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KC894072.1
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0001580
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67265
+  organism_label: Kitasatospora aburaviensis
+  evidence:
+  - reference: PMID:27829923
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001580 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LT608336.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000051
+  source_label: ebelactone A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-39007f6149
+- source: MIBIG
+  source_id: BGC0001580
+  source_label: ebelactone
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-aa1e86be23
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000051, BGC0001580.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

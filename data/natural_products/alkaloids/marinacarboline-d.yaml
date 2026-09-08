@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-89fb41e04b
+label: marinacarboline D
+chemical_structure:
+  smiles: CC(=O)C1=C2NC3=CC=CC=C3C2=CC(=N1)C(=O)NCCC1=CNC2=CC=CC=C12
+  standard_inchi: InChI=1S/C24H20N4O2/c1-14(29)22-23-18(17-7-3-5-9-20(17)27-23)12-21(28-22)24(30)25-11-10-15-13-26-19-8-4-2-6-16(15)19/h2-9,12-13,26-27H,10-11H2,1H3,(H,25,30)
+  standard_inchi_key: PCOBOAPRWGQQGA-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001137
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carboline alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA0614
+producer_organisms:
+- taxon_id: NCBITaxon:531310
+  taxon_label: Marinactinospora thermotolerans
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001137
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:23913777
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001137 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001137
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:531310
+  organism_label: Marinactinospora thermotolerans
+  evidence:
+  - reference: PMID:23913777
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001137 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KC541560.1
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001137
+  source_label: marinacarboline D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-89fb41e04b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

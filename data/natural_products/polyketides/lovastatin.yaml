@@ -1,0 +1,102 @@
+identifier: naturalproductmech:mibig-1824ca86bb
+label: lovastatin
+chemical_structure:
+  smiles: '[H][C@]12[C@H](C[C@@H](C)C=C1C=C[C@H](C)[C@@H]2CC[C@@H]1C[C@@H](O)CC(=O)O1)OC(=O)[C@H](C)CC'
+  standard_inchi: InChI=1S/C24H36O5/c1-5-15(3)24(27)29-21-11-14(2)10-17-7-6-16(4)20(23(17)21)9-8-19-12-18(25)13-22(26)28-19/h6-7,10,14-16,18-21,23,25H,5,8-9,11-13H2,1-4H3/t14-,15+,16-,18+,19+,20-,21-,23-/m0/s1
+  standard_inchi_key: PCZOHLXUXFIOCF-YPQFMRJXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000088
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - Monacolins and Monacolin derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA09354
+- pubchem:129467
+producer_organisms:
+- taxon_id: NCBITaxon:33178
+  taxon_label: Aspergillus terreus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000088
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1016/j.fct.2019.110585
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000088 entry version 4; citation taken from the compound bioactivity
+      level
+- taxon_id: NCBITaxon:89488
+  taxon_label: Monascus pilosus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000098
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:18578535
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000098 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000088
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33178
+  organism_label: Aspergillus terreus
+  evidence:
+  - reference: DOI:10.1016/j.fct.2019.110585
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000088 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:AH007774.2
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0000098
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:89488
+  organism_label: Monascus pilosus
+  evidence:
+  - reference: PMID:18578535
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000098 entry version 3; citation taken from the entry level
+  genome_accession: genbank:DQ176595.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000088
+  source_label: lovastatin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-1824ca86bb
+- source: MIBIG
+  source_id: BGC0000098
+  source_label: monacolin K
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-bc99d757b7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000088, BGC0000098.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-ed84a7d9e1
+label: pyrronazol B
+chemical_structure:
+  smiles: COC1=CC(=O)O[C@H]([C@H]1C)C1=COC(=N1)C(\C)=C\C1=CC=C(Cl)N1
+  standard_inchi: InChI=1S/C17H17ClN2O4/c1-9(6-11-4-5-14(18)19-11)17-20-12(8-23-17)16-10(2)13(22-3)7-15(21)24-16/h4-8,10,16,19H,1-3H3/b9-6+/t10-,16+/m0/s1
+  standard_inchi_key: HVDWUEDXQDMWCX-CPGSKVSJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001750
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA013257
+producer_organisms:
+- taxon_id: NCBITaxon:889268
+  taxon_label: Nannocystis pusilla
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001750
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28944573
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001750 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001750
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:889268
+  organism_label: Nannocystis pusilla
+  evidence:
+  - reference: PMID:28944573
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001750 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MF817819.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001750
+  source_label: pyrronazol B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-ed84a7d9e1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-da909f5425
+label: desacetylfusarochromene
+chemical_structure:
+  smiles: CC1(C)C=CC2=C(C=CC(C(CC(N)CO)=O)=C2N)O1
+  standard_inchi: InChI=1S/C15H20N2O3/c1-15(2)6-5-11-13(20-15)4-3-10(14(11)17)12(19)7-9(16)8-18/h3-6,9,18H,7-8,16-17H2,1-2H3
+  standard_inchi_key: PCIHXARFCRKZMV-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002256
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Merohemiterpenoids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:61235
+  taxon_label: Fusarium equiseti
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002256
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:33107888
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002256 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002256
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:61235
+  organism_label: Fusarium equiseti
+  evidence:
+  - reference: PMID:33107888
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002256 entry version 3; citation taken from the entry level
+  genome_accession: genbank:BK013344.1
+  locus_from: 1
+  locus_to: 23896
+  bgc_class:
+  - NRPS
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002256
+  source_label: desacetylfusarochromene
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-da909f5425
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

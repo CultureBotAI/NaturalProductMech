@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-548d2e87d1
+label: rubropunctatine
+chemical_structure:
+  smiles: CCCCCC(=O)C1=C2C=C3C=C(OC=C3C(=O)[C@]2(C)OC1=O)\C=C\C
+  standard_inchi: InChI=1S/C21H22O5/c1-4-6-7-9-17(22)18-16-11-13-10-14(8-5-2)25-12-15(13)19(23)21(16,3)26-20(18)24/h5,8,10-12H,4,6-7,9H2,1-3H3/b8-5+/t21-/m1/s1
+  standard_inchi_key: SULYDLFVUNXAMP-WKOQKXSESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000027
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Chromanes
+  class_results:
+  - Azaphilones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA017529
+producer_organisms:
+- taxon_id: NCBITaxon:89488
+  taxon_label: Monascus pilosus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000027
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23504076
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000027 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000027
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:89488
+  organism_label: Monascus pilosus
+  evidence:
+  - reference: PMID:23504076
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000027 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KC148521.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000027
+  source_label: rubropunctatine
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-548d2e87d1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

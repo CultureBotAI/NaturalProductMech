@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-f484710ce7
+label: valclavam
+chemical_structure:
+  smiles: CC(C)[C@@H](C(=O)NC(C(C[C@H]1CN2[C@@H](O1)CC2=O)O)C(=O)O)N
+  standard_inchi: InChI=1S/C14H23N3O6/c1-6(2)11(15)13(20)16-12(14(21)22)8(18)3-7-5-17-9(19)4-10(17)23-7/h6-8,10-12,18H,3-5,15H2,1-2H3,(H,16,20)(H,21,22)/t7-,8?,10-,11-,12?/m0/s1
+  standard_inchi_key: YCGXMNQNHBKSKZ-YNWZBRBLSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001151
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - β-lactams
+  class_results:
+  - Clavams
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:126919
+- pubchem:441132
+producer_organisms:
+- taxon_id: NCBITaxon:1890
+  taxon_label: Streptomyces antibioticus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001151
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:22435762
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001151 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001151
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1890
+  organism_label: Streptomyces antibioticus
+  evidence:
+  - reference: PMID:22435762
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001151 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JN705801.1
+  locus_from: 15432
+  locus_to: 35367
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001151
+  source_label: valclavam
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f484710ce7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

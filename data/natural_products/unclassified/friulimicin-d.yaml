@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-7d571b616b
+label: friulimicin D
+chemical_structure:
+  smiles: CCC(C)CCCCCCC/C=C\CC(=O)N[C@@H](CC(=O)N)C(=O)N[C@H]1[C@H](NC(=O)[C@@H]2CCCN2C(=O)[C@H](NC(=O)[C@H](NC(=O)CNC(=O)[C@@H](NC(=O)CNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H]3CCCCN3C1=O)[C@H](C)C(=O)O)CC(=O)O)CC(=O)O)[C@@H](C)N)C(C)C)C
+  standard_inchi: InChI=1S/C60H96N14O19/c1-8-32(4)20-15-13-11-9-10-12-14-16-23-42(76)66-36(26-41(62)75)53(85)72-50-35(7)65-54(86)40-22-19-25-74(40)58(90)47(31(2)3)70-57(89)49(34(6)61)69-44(78)30-64-51(83)37(27-45(79)80)67-43(77)29-63-52(84)38(28-46(81)82)68-56(88)48(33(5)60(92)93)71-55(87)39-21-17-18-24-73(39)59(50)91/h14,16,31-40,47-50H,8-13,15,17-30,61H2,1-7H3,(H2,62,75)(H,63,84)(H,64,83)(H,65,86)(H,66,76)(H,67,77)(H,68,88)(H,69,78)(H,70,89)(H,71,87)(H,72,85)(H,79,80)(H,81,82)(H,92,93)/b16-14-/t32?,33-,34+,35+,36-,37-,38-,39+,40-,47+,48-,49+,50-/m0/s1
+  standard_inchi_key: YCENLAAIZVXNOG-JCDMCXPCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000354
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:102237800
+producer_organisms:
+- taxon_id: NCBITaxon:196914
+  taxon_label: Actinoplanes friuliensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000354
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:15942003
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000354 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000354
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:196914
+  organism_label: Actinoplanes friuliensis
+  evidence:
+  - reference: PMID:15942003
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000354 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ488769.3
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000354
+  source_label: friulimicin D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7d571b616b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

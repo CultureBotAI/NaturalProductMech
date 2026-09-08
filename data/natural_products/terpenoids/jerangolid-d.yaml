@@ -1,0 +1,60 @@
+identifier: naturalproductmech:mibig-f6f16956ff
+label: jerangolid D
+chemical_structure:
+  smiles: CC[C@@H]1C(=CC[C@@H](O1)/C(=C/[C@H](C)/C=C/[C@H]2CC(=C(C(=O)O2)C)OC)/C)C
+  standard_inchi: InChI=1S/C22H32O4/c1-7-19-15(3)9-11-20(26-19)16(4)12-14(2)8-10-18-13-21(24-6)17(5)22(23)25-18/h8-10,12,14,18-20H,7,11,13H2,1-6H3/b10-8+,16-12+/t14-,18+,19-,20-/m1/s1
+  standard_inchi_key: OPNOLPXASWDPNP-HEDCXWCHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000080
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:56
+  taxon_label: Sorangium cellulosum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000080
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17185223
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000080 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000080
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:56
+  organism_label: Sorangium cellulosum
+  evidence:
+  - reference: PMID:17185223
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000080 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ897668.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000080
+  source_label: jerangolid D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f6f16956ff
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

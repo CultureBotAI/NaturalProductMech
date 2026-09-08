@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-2819121d38
+label: allocyclinone C
+chemical_structure:
+  smiles: O=C(C(C=CC1=C2C(OC)=C(Cl)C(CCl)=C1)=C2C3=O)C4=C3C(O)=C(C(OC5(OC)C)=O)C5=C4O
+  standard_inchi: InChI=1S/C24H16Cl2O8/c1-24(33-3)16-15(23(31)34-24)20(29)14-13(21(16)30)18(27)10-5-4-8-6-9(7-25)17(26)22(32-2)11(8)12(10)19(14)28/h4-6,29-30H,7H2,1-3H3
+  standard_inchi_key: HHNCNWIXXAQVNZ-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001500
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Aromatic polyketide
+xrefs:
+- npatlas:NPA021549
+producer_organisms:
+- taxon_id: NCBITaxon:1820605
+  taxon_label: Actinoallomurus sp. ID145698
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001500
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1038/ja.2016.62
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001500 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001500
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1820605
+  organism_label: Actinoallomurus sp. ID145698
+  evidence:
+  - reference: DOI:10.1038/ja.2016.62
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001500 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KT996129.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001500
+  source_label: allocyclinone C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-2819121d38
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

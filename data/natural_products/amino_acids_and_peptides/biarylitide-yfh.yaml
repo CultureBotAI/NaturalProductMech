@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-7a5504bb2f
+label: biarylitide YFH
+chemical_structure:
+  smiles: OC(C(CC1=CN=C2N1)NC(C(CC3=CC=CC=C3)NC(C(CC4=CC=C(O)C2=C4)NC(C)=O)=O)=O)=O
+  standard_inchi: InChI=1S/C26H27N5O6/c1-14(32)28-19-11-16-7-8-22(33)18(9-16)23-27-13-17(29-23)12-21(26(36)37)31-25(35)20(30-24(19)34)10-15-5-3-2-4-6-15/h2-9,13,19-21,33H,10-12H2,1H3,(H,27,29)(H,28,32)(H,30,34)(H,31,35)(H,36,37)
+  standard_inchi_key: SDQMLBJBRCIBHM-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002099
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA033236
+producer_organisms:
+- taxon_id: NCBITaxon:2028102
+  taxon_label: Planomonospora sp. ID107089
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002099
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Homology-based prediction|Correlation of genomic and metabolomic
+    data.'
+  evidence:
+  - reference: PMID:33321099
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002099 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002099
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2028102
+  organism_label: Planomonospora sp. ID107089
+  evidence:
+  - reference: PMID:33321099
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002099 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MW201789.1
+  locus_from: 1
+  locus_to: 1504
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Homology-based prediction
+  - Correlation of genomic and metabolomic data
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002099
+  source_label: biarylitide YFH
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7a5504bb2f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

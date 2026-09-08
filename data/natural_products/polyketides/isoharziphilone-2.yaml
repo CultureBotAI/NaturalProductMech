@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-b11a321c7e
+label: isoharziphilone-2
+chemical_structure:
+  smiles: O=C1[C@](C)(O)[C@@H](O)C(COC(/C=C/C=C/C)=C2)C2=C1
+  standard_inchi: InChI=1S/C15H18O4/c1-3-4-5-6-11-7-10-8-13(16)15(2,18)14(17)12(10)9-19-11/h3-8,12,14,17-18H,9H2,1-2H3/b4-3+,6-5+/t12?,14-,15-/m0/s1
+  standard_inchi_key: PGSWVIXMIVWZHN-ZSZQWLAQSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002206
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Chromanes
+  class_results:
+  - Azaphilones
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1491466
+  taxon_label: Trichoderma guizhouense
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002206
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:32985773
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002206 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002206
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1491466
+  organism_label: Trichoderma guizhouense
+  evidence:
+  - reference: PMID:32985773
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002206 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LVVK01000021.1
+  locus_from: 688390
+  locus_to: 727863
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002206
+  source_label: isoharziphilone-2
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-b11a321c7e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

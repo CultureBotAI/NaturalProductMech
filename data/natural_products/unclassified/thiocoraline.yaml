@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-e8046d131e
+label: thiocoraline
+chemical_structure:
+  smiles: CSCC1N(C)C(=O)C2CSSCC(N(C)C(=O)CNC(=O)C(CSC1=O)NC(=O)C1=NC3=CC=CC=C3C=C1O)C(=O)N(C)C(CSC)C(=O)SCC(NC(=O)C1=C(O)C=C3C=CC=CC3=N1)C(=O)NCC(=O)N2C
+  standard_inchi: InChI=1S/C48H56N10O12S6/c1-55-31-23-75-76-24-32(46(68)58(4)34(22-72-6)48(70)74-19-29(41(63)49-17-37(55)61)53-43(65)39-35(59)15-25-11-7-9-13-27(25)51-39)56(2)38(62)18-50-42(64)30(20-73-47(69)33(21-71-5)57(3)45(31)67)54-44(66)40-36(60)16-26-12-8-10-14-28(26)52-40/h7-16,29-34,59-60H,17-24H2,1-6H3,(H,49,63)(H,50,64)(H,53,65)(H,54,66)
+  standard_inchi_key: UPGGKUQISSWRJJ-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000445
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA019774
+producer_organisms:
+- taxon_id: NCBITaxon:349725
+  taxon_label: Micromonospora sp. ML1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000445
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  evidence:
+  - reference: PMID:16408310
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000445 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000445
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:349725
+  organism_label: Micromonospora sp. ML1
+  evidence:
+  - reference: PMID:16408310
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000445 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM113472.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000445
+  source_label: thiocoraline
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e8046d131e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

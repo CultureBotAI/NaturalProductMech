@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-1e280124c6
+label: prezeamine I
+chemical_structure:
+  smiles: CCCCCC(N)CCCCCCCC(N)CCCCCCCC(N)CCCCCCCC(N)CCCCCCCC(O)CCNC(CC(O)C(C(C)C)NC(C(C1C)NC(C(NC(C(NC(C(NC(CC(C(O)=O)N)=O)CC2=CN=CN2)=O)CC(N1)=O)=O)CC(N)=O)=O)=O)=O
+  standard_inchi: InChI=1S/C69H129N15O12/c1-5-6-19-28-48(70)29-20-11-7-12-21-30-49(71)31-22-13-8-14-23-32-50(72)33-24-15-9-16-25-34-51(73)35-26-17-10-18-27-36-53(85)37-38-77-60(88)43-58(86)63(46(2)3)83-68(94)64-47(4)79-62(90)42-57(66(92)81-56(41-59(75)87)67(93)84-64)82-65(91)55(39-52-44-76-45-78-52)80-61(89)40-54(74)69(95)96/h44-51,53-58,63-64,85-86H,5-43,70-74H2,1-4H3,(H2,75,87)(H,76,78)(H,77,88)(H,79,90)(H,80,89)(H,81,92)(H,82,91)(H,83,94)(H,84,93)(H,95,96)
+  standard_inchi_key: DZSJXBQAXBOADW-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001056
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1006598
+  taxon_label: Serratia plymuthica RVH1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001056
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:23349809
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001056 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001056
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1006598
+  organism_label: Serratia plymuthica RVH1
+  evidence:
+  - reference: PMID:23349809
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001056 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HE995400.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001056
+  source_label: prezeamine I
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1e280124c6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

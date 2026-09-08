@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-d8e34d0b22
+label: liposidomycin A
+chemical_structure:
+  smiles: O=S([O-])(O[C@H]([C@@H]([C@H](O1)CN)O)[C@@H]1O[C@@H]([C@@H]2N(C[C@@H]([C@H](N(C2=O)C)C(O)=O)OC(C[C@@H](OC(C[C@@H](CC(O)=O)C)=O)CCCC/C=C\C/C=C\CCCCC)=O)C)[C@@H](O[C@H]3N(C(N4)=O)C=CC4=O)[C@H]([C@H]3O)O)=O
+  standard_inchi: InChI=1S/C45H69N5O21S/c1-5-6-7-8-9-10-11-12-13-14-15-16-17-26(66-31(54)21-25(2)20-30(52)53)22-32(55)67-28-24-48(3)34(41(59)49(4)33(28)43(60)61)38(70-44-40(71-72(63,64)65)35(56)27(23-46)68-44)39-36(57)37(58)42(69-39)50-19-18-29(51)47-45(50)62/h9-10,12-13,18-19,25-28,33-40,42,44,56-58H,5-8,11,14-17,20-24,46H2,1-4H3,(H,52,53)(H,60,61)(H,47,51,62)(H,63,64,65)/p-1/b10-9-,13-12-/t25-,26+,27-,28+,33+,34+,35-,36+,37-,38+,39+,40-,42-,44+/m1/s1
+  standard_inchi_key: CECOMSKOZBPKEF-APEHAKESSA-M
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001076
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Pyrimidine nucleos(t)ides
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA017888
+producer_organisms:
+- taxon_id: NCBITaxon:722721
+  taxon_label: Streptomyces sp. SN-1061M
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001076
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:20039253
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001076 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001076
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:722721
+  organism_label: Streptomyces sp. SN-1061M
+  evidence:
+  - reference: PMID:20039253
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001076 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GU219978.1
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001076
+  source_label: liposidomycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d8e34d0b22
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

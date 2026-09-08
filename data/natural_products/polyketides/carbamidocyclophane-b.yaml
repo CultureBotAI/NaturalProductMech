@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-d884f8c857
+label: carbamidocyclophane B
+chemical_structure:
+  smiles: C[C@H]1CCCCC(CCCCCl)C2=C(O)C=C(C=C2O)[C@H](OC(N)=O)[C@@H](C)CCCCC(CCCC(Cl)Cl)C2=C(O)C=C(C=C2O)[C@@H]1OC(N)=O
+  standard_inchi: InChI=1S/C38H55Cl3N2O8/c1-22-10-3-5-12-24(14-7-8-17-39)33-28(44)18-26(19-29(33)45)35(50-37(42)48)23(2)11-4-6-13-25(15-9-16-32(40)41)34-30(46)20-27(21-31(34)47)36(22)51-38(43)49/h18-25,32,35-36,44-47H,3-17H2,1-2H3,(H2,42,48)(H2,43,49)/t22-,23-,24?,25?,35+,36+/m0/s1
+  standard_inchi_key: PXEFELGJKKNAPC-BSSQUUOISA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001357
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Alkylresorcinols
+  class_results:
+  - Dialkylresorcinols
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA03410
+- pubchem:16215903
+producer_organisms:
+- taxon_id: NCBITaxon:1510471
+  taxon_label: Nostoc sp. CAVN2
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001357
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26805858
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001357 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001357
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1510471
+  organism_label: Nostoc sp. CAVN2
+  evidence:
+  - reference: PMID:26805858
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001357 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KT826756.1
+  locus_from: 1406
+  locus_to: 28337
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001357
+  source_label: carbamidocyclophane B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-d884f8c857
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

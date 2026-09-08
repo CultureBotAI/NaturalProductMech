@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-9a9e3a0cb4
+label: hexaricin C
+chemical_structure:
+  smiles: COC1=C2CCC3=C(C(O)=C4C(=O)O[C@@H](C)CC4=C3)C2=C(O)C2=C1C(=O)C1=C(O)C=CC=C1C2=O
+  standard_inchi: InChI=1S/C27H20O8/c1-10-8-12-9-11-6-7-14-19(16(11)23(30)17(12)27(33)35-10)25(32)20-21(26(14)34-2)24(31)18-13(22(20)29)4-3-5-15(18)28/h3-5,9-10,28,30,32H,6-8H2,1-2H3/t10-/m0/s1
+  standard_inchi_key: VDBDMDLSSKXMLC-JTQLQIEISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001376
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Pradimicins
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:683272
+  taxon_label: Streptosporangium sp. FXJ7.131
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001376
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26754814
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001376 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001376
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:683272
+  organism_label: Streptosporangium sp. FXJ7.131
+  evidence:
+  - reference: PMID:26754814
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001376 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KT713752.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001376
+  source_label: hexaricin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-9a9e3a0cb4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

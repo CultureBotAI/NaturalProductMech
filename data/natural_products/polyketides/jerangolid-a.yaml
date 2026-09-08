@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-3647fdc1fc
+label: jerangolid A
+chemical_structure:
+  smiles: CC[C@H]1O[C@H](CC=C1C)C(\C)=C\[C@H](C)\C=C\[C@H]1CC(OC)=C(CO)C(=O)O1
+  standard_inchi: InChI=1S/C22H32O5/c1-6-19-15(3)8-10-20(27-19)16(4)11-14(2)7-9-17-12-21(25-5)18(13-23)22(24)26-17/h7-9,11,14,17,19-20,23H,6,10,12-13H2,1-5H3/b9-7+,16-11+/t14-,17+,19-,20-/m1/s1
+  standard_inchi_key: MEBIEOPXFPLSPF-AKKMNRGHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000080
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA02932
+- pubchem:10762085
+producer_organisms:
+- taxon_id: NCBITaxon:56
+  taxon_label: Sorangium cellulosum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000080
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17185223
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000080 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000080
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:56
+  organism_label: Sorangium cellulosum
+  evidence:
+  - reference: PMID:17185223
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000080 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ897668.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000080
+  source_label: jerangolid A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3647fdc1fc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

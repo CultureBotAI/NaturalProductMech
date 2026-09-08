@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-08763e9bdc
+label: isocomplestatin
+chemical_structure:
+  smiles: CN1[C@@H](CC2=CC=C(OC3=CC4=CC(=C3O)C3=CC5=C(C=C3)C(C[C@@H](NC(=O)C(=O)C3=CC(Cl)=C(O)C(Cl)=C3)C(=O)N[C@H](C3=CC(Cl)=C(O)C(Cl)=C3)C(=O)N[C@H]4C(=O)N[C@H](C3=CC(Cl)=C(O)C(Cl)=C3)C1=O)=CN5)C=C2)C(=O)N[C@@H](C(O)=O)C1=CC=C(O)C=C1
+  standard_inchi: InChI=1S/C61H45Cl6N7O15/c1-74-44(56(82)73-49(61(87)88)25-4-7-32(75)8-5-25)12-24-2-9-33(10-3-24)89-45-22-27-13-35(51(45)77)26-6-11-34-31(23-68-42(34)20-26)21-43(69-59(85)50(76)30-18-40(66)54(80)41(67)19-30)55(81)70-47(28-14-36(62)52(78)37(63)15-28)57(83)71-46(27)58(84)72-48(60(74)86)29-16-38(64)53(79)39(65)17-29/h2-11,13-20,22-23,43-44,46-49,68,75,77-80H,12,21H2,1H3,(H,69,85)(H,70,81)(H,71,83)(H,72,84)(H,73,82)(H,87,88)/t43-,44+,46-,47-,48-,49-/m1/s1
+  standard_inchi_key: JJGZGELTZPACID-OTLJHNKQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000326
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Vancomycins and Teicoplanins
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA0750
+producer_organisms:
+- taxon_id: NCBITaxon:1914
+  taxon_label: Streptomyces lavendulae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000326
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:11447274
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000326 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000326
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1914
+  organism_label: Streptomyces lavendulae
+  evidence:
+  - reference: PMID:11447274
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000326 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF386507.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000326
+  source_label: isocomplestatin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-08763e9bdc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

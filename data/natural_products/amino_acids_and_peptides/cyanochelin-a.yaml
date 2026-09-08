@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-02c10e7eaf
+label: cyanochelin A
+chemical_structure:
+  smiles: CCCCCCCCCCCC1=C(C2=NC(C(=O)NCC(=O)NCC(=O)NC(C(=O)NCC(=O)NC(CO)C(O)C(=O)O)C(O)C(=O)O)CO2)C(O)=CC=C1
+  standard_inchi: InChI=1S/C35H52N6O14/c1-2-3-4-5-6-7-8-9-10-12-20-13-11-14-23(43)27(20)33-40-22(19-55-33)31(49)37-15-24(44)36-16-26(46)41-28(30(48)35(53)54)32(50)38-17-25(45)39-21(18-42)29(47)34(51)52/h11,13-14,21-22,28-30,42-43,47-48H,2-10,12,15-19H2,1H3,(H,36,44)(H,37,49)(H,38,50)(H,39,45)(H,41,46)(H,51,52)(H,53,54)
+  standard_inchi_key: JJPKARAEIBOESM-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002411
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Linear polyketide
+- Linear
+xrefs:
+- npatlas:NPA033309
+- cyanometdb:CyanoMetDB_2196
+producer_organisms:
+- taxon_id: NCBITaxon:373994
+  taxon_label: Rivularia sp. PCC 7116
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002411
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:34132591
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002411 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002411
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:373994
+  organism_label: Rivularia sp. PCC 7116
+  evidence:
+  - reference: PMID:34132591
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002411 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP003549.1
+  locus_from: 7774831
+  locus_to: 7819129
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002411
+  source_label: cyanochelin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-02c10e7eaf
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

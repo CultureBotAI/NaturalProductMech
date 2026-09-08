@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-1eef3ae967
+label: trichoxide
+chemical_structure:
+  smiles: CCCCC/C=C/C=C/C=C/C1=C(CO)[C@@H](O)[C@H]2O[C@H]2[C@@H]1O
+  standard_inchi: InChI=1S/C18H26O4/c1-2-3-4-5-6-7-8-9-10-11-13-14(12-19)16(21)18-17(22-18)15(13)20/h6-11,15-21H,2-5,12H2,1H3/b7-6+,9-8+,11-10+/t15-,16-,17+,18-/m1/s1
+  standard_inchi_key: NEZJYHIPHBNQKX-LXTDKRKVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002233
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:155920167
+- npatlas:NPA032906
+producer_organisms:
+- taxon_id: NCBITaxon:413071
+  taxon_label: Trichoderma virens Gv29-8
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002233
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:31790246
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002233 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002233
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:413071
+  organism_label: Trichoderma virens Gv29-8
+  evidence:
+  - reference: PMID:31790246
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002233 entry version 3; citation taken from the entry level
+  genome_accession: genbank:ABDF02000086.1
+  locus_from: 515705
+  locus_to: 547462
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002233
+  source_label: trichoxide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1eef3ae967
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

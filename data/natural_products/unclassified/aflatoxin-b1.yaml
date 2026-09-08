@@ -1,0 +1,200 @@
+identifier: naturalproductmech:mibig-7f4ae54687
+label: aflatoxin B1
+chemical_structure:
+  smiles: COc1cc2c(c3oc(=O)c4c(c13)CCC4=O)[C@@H]1C=CO[C@@H]1O2
+  standard_inchi: InChI=1S/C17H12O6/c1-20-10-6-11-14(8-4-5-21-17(8)22-11)15-13(10)7-2-3-9(18)12(7)16(19)23-15/h4-6,8,17H,2-3H2,1H3/t8-,17+/m0/s1
+  standard_inchi_key: OQIQSTLJSLGHID-WNWIJWBNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000006
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Chromanes
+  - Coumarins
+  class_results:
+  - Aflatoxins
+  - Simple coumarins
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Cyclic polyketide
+- Polycyclic polyketide
+xrefs:
+- pubchem:186907
+- chembl:CHEMBL1697694
+producer_organisms:
+- taxon_id: NCBITaxon:5059
+  taxon_label: Aspergillus flavus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000006
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1094/phyto-79-808
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000006 entry version 3; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:5059
+  taxon_label: Aspergillus flavus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000007
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1007/s00253-002-1094-5
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000007 entry version 3; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:5059
+  taxon_label: Aspergillus flavus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000008
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1371/journal.pone.0199169
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000008 entry version 3; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:41061
+  taxon_label: Aspergillus nomius
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000009
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1007/bf00393843
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000009 entry version 3; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:138278
+  taxon_label: Aspergillus ochraceoroseus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000011
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1080/15572536.2006.11832818
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000011 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000006
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5059
+  organism_label: Aspergillus flavus
+  evidence:
+  - reference: DOI:10.1094/phyto-79-808
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000006 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AY510451.1
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0000007
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5059
+  organism_label: Aspergillus flavus
+  evidence:
+  - reference: DOI:10.1007/s00253-002-1094-5
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000007 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AY510452.1
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0000008
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5059
+  organism_label: Aspergillus flavus
+  evidence:
+  - reference: DOI:10.1371/journal.pone.0199169
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000008 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AY510453.1
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0000009
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:41061
+  organism_label: Aspergillus nomius
+  evidence:
+  - reference: DOI:10.1007/bf00393843
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000009 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AY510454.1
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0000011
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:138278
+  organism_label: Aspergillus ochraceoroseus
+  evidence:
+  - reference: DOI:10.1080/15572536.2006.11832818
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000011 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AY092402.3
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000006
+  source_label: aflatoxin B1
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7f4ae54687
+- source: MIBIG
+  source_id: BGC0000007
+  source_label: aflatoxin B1
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-69a836d4c2
+- source: MIBIG
+  source_id: BGC0000008
+  source_label: aflatoxin B1
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-00ceaf956a
+- source: MIBIG
+  source_id: BGC0000009
+  source_label: aflatoxin B1
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-6414e8811c
+- source: MIBIG
+  source_id: BGC0000011
+  source_label: Aflatoxin B1
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-fbfacdb076
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000006, BGC0000007,
+    BGC0000008, BGC0000009, BGC0000011. Confirm they describe the same compound rather
+    than an upstream cross-reference error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

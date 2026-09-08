@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-8d8a114171
+label: salivaricin D
+chemical_structure:
+  smiles: '[H]N[C@@H](CC1=CC=CC=C1)C(N/C(C(N[C@@H]2C(N[C@@H](CC3=CN=CN3)C(NC(C(N[C@H](C(N[C@@H](CSC2)C(N[C@@H]4C(N5CCC[C@H]5C(NCC(N[C@@H](CSCC4)C(N[C@]([C@@H](C)CC)([H])C(N[C@@H]6C(NCC(N[C@H](C(N[C@H](C(N[C@@H](CCSC)C(NCC(N[C@@H](CSCC6)C(N[C@@H](CC7=CN=CN7)C(N[C@]([C@@H](C)CC)([H])C(N[C@H](C(N[C@@H]8C(N[C@]([C@@H](C)CC)([H])C(NCC(N[C@@H](CSC8)C(N[C@H](C(N[C@H](C(N[C@@H](CC9=CN=CN9)C(N[C@]([C@@H](C)CC)([H])C(N[C@H](C(N[C@]([H])(C(NC(C(N[C@H](C(O)=O)CCCCN)=O)=C)=O)[C@H](CC)C)=O)CC%10=CN=CN%10)=O)=O)=O)C(C)C)=O)CC(N)=O)=O)=O)=O)=O)=O)CCC(N)=O)=O)=O)=O)=O)=O)=O)CC(C)C)=O)C(C)C)=O)=O)=O)=O)=O)=O)=O)=O)=O)CC(C)C)=O)=C)=O)=O)=O)=C\C)=O'
+  standard_inchi: InChI=1S/C154H235N45O37S5/c1-23-79(15)120-146(227)166-63-116(204)175-107(140(221)185-104(56-113(158)201)138(219)193-119(78(13)14)148(229)187-102(54-89-59-161-73-169-89)136(217)197-124(83(19)27-5)152(233)188-103(55-90-60-162-74-170-90)137(218)195-121(80(16)24-2)149(230)172-85(21)125(206)181-97(154(235)236)37-32-33-44-155)67-240-70-110(144(225)194-120)190-131(212)93(39-40-112(157)200)178-150(231)122(81(17)25-3)196-135(216)101(53-88-58-160-72-168-88)184-139(220)105-65-238-47-42-95(129(210)164-64-117(205)192-118(77(11)12)147(228)186-99(50-76(9)10)133(214)177-94(41-46-237-22)128(209)163-61-114(202)173-105)179-151(232)123(82(18)26-4)198-143(224)106-66-239-48-43-96(153(234)199-45-34-38-111(199)145(226)165-62-115(203)174-106)180-141(222)108-68-241-69-109(189-130(211)92(28-6)176-127(208)91(156)51-86-35-30-29-31-36-86)142(223)183-100(52-87-57-159-71-167-87)132(213)171-84(20)126(207)182-98(49-75(7)8)134(215)191-108/h28-31,35-36,57-60,71-83,91,93-111,118-124H,20-21,23-27,32-34,37-56,61-70,155-156H2,1-19,22H3,(H2,157,200)(H2,158,201)(H,159,167)(H,160,168)(H,161,169)(H,162,170)(H,163,209)(H,164,210)(H,165,226)(H,166,227)(H,171,213)(H,172,230)(H,173,202)(H,174,203)(H,175,204)(H,176,208)(H,177,214)(H,178,231)(H,179,232)(H,180,222)(H,181,206)(H,182,207)(H,183,223)(H,184,220)(H,185,221)(H,186,228)(H,187,229)(H,188,233)(H,189,211)(H,190,212)(H,191,215)(H,192,205)(H,193,219)(H,194,225)(H,195,218)(H,196,216)(H,197,217)(H,198,224)(H,235,236)/b92-28-/t79-,80-,81-,82-,83-,91-,93-,94-,95-,96-,97-,98-,99-,100-,101-,102-,103-,104-,105-,106-,107-,108-,109-,110-,111-,118-,119-,120-,121-,122-,123-,124-/m0/s1
+  standard_inchi_key: IQMGJYUXYHZXJF-ANHCEPLNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000549
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:1304
+  taxon_label: Streptococcus salivarius
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000549
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:22101034
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000549 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000549
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1304
+  organism_label: Streptococcus salivarius
+  evidence:
+  - reference: PMID:22101034
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000549 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JN564797.1
+  locus_from: 22603
+  locus_to: 37915
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000549
+  source_label: salivaricin D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-8d8a114171
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-5ab77d877b
+label: cereulide
+chemical_structure:
+  smiles: CC(C)C[C@H]1OC(=O)[C@@H](NC(=O)[C@@H](OC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)OC(=O)[C@@H](NC(=O)[C@@H](OC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)OC(=O)[C@@H](NC(=O)[C@@H](OC(=O)[C@@H](C)NC1=O)C(C)C)C(C)C)C(C)C)C(C)C)C(C)C)C(C)C
+  standard_inchi: InChI=1S/C57H96N6O18/c1-25(2)22-37-46(64)58-34(19)52(70)79-44(32(15)16)50(68)62-41(29(9)10)56(74)77-39(24-27(5)6)48(66)60-36(21)54(72)81-45(33(17)18)51(69)63-42(30(11)12)57(75)78-38(23-26(3)4)47(65)59-35(20)53(71)80-43(31(13)14)49(67)61-40(28(7)8)55(73)76-37/h25-45H,22-24H2,1-21H3,(H,58,64)(H,59,65)(H,60,66)(H,61,67)(H,62,68)(H,63,69)/t34-,35-,36-,37-,38-,39-,40+,41+,42+,43+,44+,45+/m1/s1
+  standard_inchi_key: JWWAHGUHYLWQCQ-UHZBFKKDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000320
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA01776
+producer_organisms:
+- taxon_id: NCBITaxon:1396
+  taxon_label: Bacillus cereus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000320
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:15640177
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000320 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000320
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1396
+  organism_label: Bacillus cereus
+  evidence:
+  - reference: PMID:15640177
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000320 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ360825.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000320
+  source_label: cereulide
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5ab77d877b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

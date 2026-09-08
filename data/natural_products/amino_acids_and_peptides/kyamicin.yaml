@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-94199b7261
+label: kyamicin
+chemical_structure:
+  smiles: CC1CC(=O)C(CC2=CC=CC=C2)NC(=O)C2NC(=O)C(CC3=CC=CC=C3)NC(=O)C3CCCN3C(=O)CNC(=O)C(C)NC(=O)C3CNCCCCC(C(=O)O)NC(=O)C4NC(=O)C(CO)NC(=O)CNC(=O)C(C(O)C(=O)O)NC(=O)C(CSC(C)C(NC(=O)C(CO)NC(=O)C(C)NC(=O)C(N)CSC4C)C(=O)NC(CSC2C)C(=O)N3)NC1=O
+  standard_inchi: InChI=1S/C77H109N19O25S3/c1-35-24-53(99)45(25-41-16-9-7-10-17-41)86-74(116)57-39(5)123-33-50-69(111)88-47(66(108)83-36(2)62(104)81-29-55(101)96-23-15-21-52(96)71(113)87-46(65(107)92-57)26-42-18-11-8-12-19-42)27-79-22-14-13-20-44(76(118)119)85-73(115)56-38(4)122-32-43(78)64(106)82-37(3)63(105)89-49(31-98)68(110)94-58(75(117)91-50)40(6)124-34-51(90-61(35)103)70(112)95-59(60(102)77(120)121)72(114)80-28-54(100)84-48(30-97)67(109)93-56/h7-12,16-19,35-40,43-52,56-60,79,97-98,102H,13-15,20-34,78H2,1-6H3,(H,80,114)(H,81,104)(H,82,106)(H,83,108)(H,84,100)(H,85,115)(H,86,116)(H,87,113)(H,88,111)(H,89,105)(H,90,103)(H,91,117)(H,92,107)(H,93,109)(H,94,110)(H,95,112)(H,118,119)(H,120,121)
+  standard_inchi_key: VQNJWVWRBUIVEU-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002346
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA033500
+producer_organisms:
+- taxon_id: NCBITaxon:33915
+  taxon_label: Saccharopolyspora sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002346
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:31732571
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002346 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002346
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33915
+  organism_label: Saccharopolyspora sp.
+  evidence:
+  - reference: PMID:31732571
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002346 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MK251553.1
+  locus_from: 1
+  locus_to: 11935
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002346
+  source_label: kyamicin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-94199b7261
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

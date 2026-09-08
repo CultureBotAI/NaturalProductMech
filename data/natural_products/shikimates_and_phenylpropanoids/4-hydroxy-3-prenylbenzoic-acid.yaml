@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-b4ad51fa2f
+label: 4-hydroxy-3-prenylbenzoic acid
+chemical_structure:
+  smiles: C/C(C)=C/CC1=C(O)C=CC(C(O)=O)=C1
+  standard_inchi: InChI=1S/C12H14O3/c1-8(2)3-4-9-7-10(12(14)15)5-6-11(9)13/h3,5-7,13H,4H2,1-2H3,(H,14,15)
+  standard_inchi_key: LBSJJNAMGVDGCU-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002290
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Phenolic acids (C6-C1)
+  class_results:
+  - Shikimic acids and derivatives
+  - Simple phenolic acids
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1896107
+  taxon_label: Biscogniauxia sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002290
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32364293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002290 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002290
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1896107
+  organism_label: Biscogniauxia sp.
+  evidence:
+  - reference: PMID:32364293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002290 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT109335.1
+  locus_from: 1
+  locus_to: 37984
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002290
+  source_label: 4-hydroxy-3-prenylbenzoic acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-b4ad51fa2f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

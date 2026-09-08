@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-21d745f5e2
+label: sisomicin
+chemical_structure:
+  smiles: CN[C@@H]1[C@@H](O)[C@@H](O[C@H]2[C@H](N)C[C@H](N)[C@@H](O[C@H]3OC(CN)=CC[C@H]3N)[C@@H]2O)OC[C@]1(C)O
+  standard_inchi: InChI=1S/C19H37N5O7/c1-19(27)7-28-18(13(26)16(19)24-2)31-15-11(23)5-10(22)14(12(15)25)30-17-9(21)4-3-8(6-20)29-17/h3,9-18,24-27H,4-7,20-23H2,1-2H3/t9-,10+,11-,12+,13-,14-,15+,16-,17-,18-,19+/m1/s1
+  standard_inchi_key: URWAJWIAIPFPJE-YFMIWBNJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000714
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Polyols
+  class_results:
+  - Amino cyclitols
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- npatlas:NPA09502
+- pubchem:36119
+producer_organisms:
+- taxon_id: NCBITaxon:47866
+  taxon_label: Micromonospora inyonensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000714
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:19039528
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000714 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000714
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:47866
+  organism_label: Micromonospora inyonensis
+  evidence:
+  - reference: PMID:19039528
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000714 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FJ160413.1
+  bgc_class:
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000714
+  source_label: sisomicin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-21d745f5e2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

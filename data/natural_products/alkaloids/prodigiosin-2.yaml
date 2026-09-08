@@ -1,0 +1,126 @@
+identifier: naturalproductmech:mibig-d764a5151a
+label: prodigiosin
+chemical_structure:
+  smiles: CCCCCC1=C(NC(=C1)/C=C\2/C(=C/C(=C/3\C=CC=N3)/N2)OC)C
+  standard_inchi: InChI=1S/C20H25N3O/c1-4-5-6-8-15-11-16(22-14(15)2)12-19-20(24-3)13-18(23-19)17-9-7-10-21-17/h7,9-13,22-23H,4-6,8H2,1-3H3/b18-17-,19-12-
+  standard_inchi_key: WKGQSEFBQTWRPT-UUPRNIFOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000258
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Proline alkaloids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:5351169
+producer_organisms:
+- taxon_id: NCBITaxon:616
+  taxon_label: Serratia sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000258
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:15528645
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000258 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:615
+  taxon_label: Serratia marcescens
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000259
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:15528645
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000259 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:349521
+  taxon_label: Hahella chejuensis KCTC 2396
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000260
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17381736
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000260 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000258
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:616
+  organism_label: Serratia sp.
+  evidence:
+  - reference: PMID:15528645
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000258 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AJ833001.1
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0000259
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:615
+  organism_label: Serratia marcescens
+  evidence:
+  - reference: PMID:15528645
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000259 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AJ833002.1
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0000260
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:349521
+  organism_label: Hahella chejuensis KCTC 2396
+  evidence:
+  - reference: PMID:17381736
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000260 entry version 3; citation taken from the entry level
+  genome_accession: genbank:DQ266254.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000258
+  source_label: prodigiosin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-d764a5151a
+- source: MIBIG
+  source_id: BGC0000259
+  source_label: prodigiosin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-e853be2d1d
+- source: MIBIG
+  source_id: BGC0000260
+  source_label: prodigiosin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-a36312b5f6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000258, BGC0000259,
+    BGC0000260. Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

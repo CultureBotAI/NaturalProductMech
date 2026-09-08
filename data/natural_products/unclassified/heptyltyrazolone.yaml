@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-422278c7f7
+label: heptyltyrazolone
+chemical_structure:
+  smiles: CCCCCCCC1=NC(=CC2=CC=C(O)C=C2)C(=O)O1
+  standard_inchi: InChI=1S/C17H21NO3/c1-2-3-4-5-6-7-16-18-15(17(20)21-16)12-13-8-10-14(19)11-9-13/h8-12,19H,2-7H2,1H3
+  standard_inchi_key: YFJGKMTXYRZHKG-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002334
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+- RIBOSOMAL
+compound_classes:
+- Fatty acid derivate
+xrefs:
+- npatlas:NPA033514
+producer_organisms:
+- taxon_id: NCBITaxon:43658
+  taxon_label: Pseudoalteromonas rubra
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002334
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Enzymatic assays.'
+  evidence:
+  - reference: DOI:10.1038/s41589-021-00808-4
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002334 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002334
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:43658
+  organism_label: Pseudoalteromonas rubra
+  evidence:
+  - reference: DOI:10.1038/s41589-021-00808-4
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002334 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AHCD03000035.1
+  locus_from: 468545
+  locus_to: 486062
+  bgc_class:
+  - OTHER
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002334
+  source_label: heptyltyrazolone
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-422278c7f7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

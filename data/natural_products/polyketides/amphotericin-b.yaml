@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-b80aecf6de
+label: amphotericin B
+chemical_structure:
+  smiles: C[C@H]1/C=C/C=C/C=C/C=C/C=C/C=C/C=C/[C@@H](C[C@H]2[C@@H]([C@H](C[C@](O2)(C[C@H](C[C@H]([C@@H](CC[C@H](C[C@H](CC(=O)O[C@H]([C@@H]([C@@H]1O)C)C)O)O)O)O)O)O)O)C(=O)O)OC3C(C(C(C(O3)C)O)N)O
+  standard_inchi: InChI=1S/C47H73NO17/c1-27-17-15-13-11-9-7-5-6-8-10-12-14-16-18-34(64-46-44(58)41(48)43(57)30(4)63-46)24-38-40(45(59)60)37(54)26-47(61,65-38)25-33(51)22-36(53)35(52)20-19-31(49)21-32(50)23-39(55)62-29(3)28(2)42(27)56/h5-18,27-38,40-44,46,49-54,56-58,61H,19-26,48H2,1-4H3,(H,59,60)/b6-5+,9-7+,10-8+,13-11+,14-12+,17-15+,18-16+/t27-,28-,29-,30?,31+,32+,33-,34-,35+,36+,37-,38-,40+,41?,42+,43?,44?,46?,47+/m0/s1
+  standard_inchi_key: APKFDSVGJQXUKY-UPWJBAEMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000016
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:5386092
+producer_organisms:
+- taxon_id: NCBITaxon:40318
+  taxon_label: Streptomyces nodosus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000016
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:15563836
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000016 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000016
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:40318
+  organism_label: Streptomyces nodosus
+  evidence:
+  - reference: PMID:15563836
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000016 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AY636001.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000016
+  source_label: amphotericin B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-b80aecf6de
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

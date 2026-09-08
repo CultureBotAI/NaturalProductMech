@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-d27e665e64
+label: Sch 18640
+chemical_structure:
+  smiles: C[C@H]([C@H](NC1=S)C2=NC([C@@H](N3)[C@](C4=NC(C(N[C@@](C(N/C(C5=N[C@@H](C(N[C@](C(C)(O)[C@@H](C)O)([H])C6=NC1=CS6)=O)CS5)=C\C)=O)([H])[C@@H](C)O)=O)=CS4)(NC([C@H](C)NC(C(NC([C@H](C)NC([C@H]([C@@H](CC)C)N[C@@H]7C=CC8=C(N=C9C=C8[C@@H](O)C)[C@H]7O)=O)=O)=C)=O)=O)CC[C@@H]3C%10=NC(C(NC(C(NC(C(N)=O)=C)=O)=C)=O)=CS%10)=CS2)OC9=O
+  standard_inchi: InChI=1S/C72H87N19O17S6/c1-14-26(3)47-62(104)78-30(7)57(99)75-28(5)56(98)76-31(8)58(100)91-72-19-18-40(66-85-43(22-111-66)59(101)77-29(6)55(97)74-27(4)54(73)96)81-52(72)42-21-112-67(83-42)49(34(11)108-69(106)41-20-37(32(9)92)36-16-17-39(79-47)51(95)50(36)80-41)89-64(109)46-25-113-68(86-46)53(71(13,107)35(12)94)90-61(103)44-23-110-65(84-44)38(15-2)82-63(105)48(33(10)93)88-60(102)45-24-114-70(72)87-45/h15-17,20-22,24-26,30-35,39-40,44,47-49,51-53,79,81,92-95,107H,4-6,14,18-19,23H2,1-3,7-13H3,(H2,73,96)(H,74,97)(H,75,99)(H,76,98)(H,77,101)(H,78,104)(H,82,105)(H,88,102)(H,89,109)(H,90,103)(H,91,100)/b38-15-/t26-,30+,31+,32+,33-,34-,35-,39-,40-,44-,47+,48+,49+,51+,52-,53-,71?,72-/m1/s1
+  standard_inchi_key: AFAZQKILLUAQTN-MLBASFLNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001473
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:2116518
+  taxon_label: Micromonospora arborensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001473
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:29983054
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001473 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001473
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2116518
+  organism_label: Micromonospora arborensis
+  evidence:
+  - reference: PMID:29983054
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001473 entry version 4; citation taken from the entry level
+  genome_accession: genbank:PYBV01000027.1
+  locus_from: 92736
+  locus_to: 124586
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001473
+  source_label: Sch 18640
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-d27e665e64
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

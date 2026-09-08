@@ -1,0 +1,61 @@
+identifier: naturalproductmech:mibig-7310154172
+label: elansolid A1
+chemical_structure:
+  smiles: '[C@@]1(C)(O)C[C@@](C)(C)C2C1C=C(C)C([H])(/C=C\C=C\C=C/C(C(C)C(C/C=C(/C=C/C(O)=O)\C)O)O)C2C(OC)C1=CC=C(O)C=C1'
+  standard_inchi: InChI=1S/C38H52O7/c1-24(15-21-33(42)43)14-20-32(41)26(3)31(40)13-11-9-8-10-12-29-25(2)22-30-35(37(4,5)23-38(30,6)44)34(29)36(45-7)27-16-18-28(39)19-17-27/h8-19,21-22,26,29-32,34-36,39-41,44H,20,23H2,1-7H3,(H,42,43)/b9-8+,12-10-,13-11-,21-15+,24-14+/t26?,29?,30?,31?,32?,34?,35?,36?,38-/m0/s1
+  standard_inchi_key: YOOWNZNHXMGFGU-CLSQJDTCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000178
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1004
+  taxon_label: Chitinophaga sancti
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000178
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:21472917
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000178 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000178
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1004
+  organism_label: Chitinophaga sancti
+  evidence:
+  - reference: PMID:21472917
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000178 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HQ680975.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000178
+  source_label: elansolid A1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7310154172
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

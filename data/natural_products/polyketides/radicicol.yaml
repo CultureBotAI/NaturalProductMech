@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-7fc8631300
+label: radicicol
+chemical_structure:
+  smiles: CC1CC2OC2C=CC=CC(=O)CC2=C(C(O)=CC(O)=C2Cl)C(=O)O1
+  standard_inchi: InChI=1S/C18H17ClO6/c1-9-6-15-14(25-15)5-3-2-4-10(20)7-11-16(18(23)24-9)12(21)8-13(22)17(11)19/h2-5,8-9,14-15,21-22H,6-7H2,1H3
+  standard_inchi_key: WYZWZEOGROVVHK-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000134
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Zearalenones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA03487
+- pubchem:6323491
+producer_organisms:
+- taxon_id: NCBITaxon:280754
+  taxon_label: Pochonia chlamydosporia
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000134
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:18567690
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000134 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000134
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:280754
+  organism_label: Pochonia chlamydosporia
+  evidence:
+  - reference: PMID:18567690
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000134 entry version 3; citation taken from the entry level
+  genome_accession: genbank:EU520419.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000134
+  source_label: radicicol
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7fc8631300
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-929fa64ace
+label: imizoquin D
+chemical_structure:
+  smiles: COC1=C(C2=C(CC(N3C2=NC(=C3O)C=C4C=NC5=CC=CC=C54)C(=O)N[C@@H](CC(CO)CO)C(=O)O)C(=C1O)O)O
+  standard_inchi: InChI=1S/C28H28N4O10/c1-42-24-22(36)20-15(21(35)23(24)37)8-19(26(38)31-18(28(40)41)6-12(10-33)11-34)32-25(20)30-17(27(32)39)7-13-9-29-16-5-3-2-4-14(13)16/h2-5,7,9,12,18-19,33-37,39H,6,8,10-11H2,1H3,(H,31,38)(H,40,41)/t18-,19?/m0/s1
+  standard_inchi_key: YUQWCTIQZZQAKE-OYKVQYDMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001621
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:146684535
+producer_organisms:
+- taxon_id: NCBITaxon:332952
+  taxon_label: Aspergillus flavus NRRL3357
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001621
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:29182847
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001621 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001621
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:332952
+  organism_label: Aspergillus flavus NRRL3357
+  evidence:
+  - reference: PMID:29182847
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001621 entry version 4; citation taken from the entry level
+  genome_accession: genbank:NW_002477244.1
+  locus_from: 25905
+  locus_to: 53073
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001621
+  source_label: imizoquin D
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-929fa64ace
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

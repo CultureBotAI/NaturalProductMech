@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-99085b9c8b
+label: myxochromide A
+chemical_structure:
+  smiles: CC\C=C\C=C\C=C\C=C\C=C\C=C\C=C\C(=O)N(C)[C@H]1[C@@H](C)OC(=O)[C@H](CCC(N)=O)NC(=O)C(C)NC(=O)[C@H]2CCCN2C(=O)[C@H](CC(C)C)NC(=O)C(C)NC1=O
+  standard_inchi: InChI=1S/C44H63N7O9/c1-8-9-10-11-12-13-14-15-16-17-18-19-20-21-24-37(53)50(7)38-32(6)60-44(59)33(25-26-36(45)52)48-39(54)30(4)46-41(56)35-23-22-27-51(35)43(58)34(28-29(2)3)49-40(55)31(5)47-42(38)57/h9-21,24,29-35,38H,8,22-23,25-28H2,1-7H3,(H2,45,52)(H,46,56)(H,47,57)(H,48,54)(H,49,55)/b10-9+,12-11+,14-13+,16-15+,18-17+,20-19+,24-21+/t30?,31?,32-,33+,34+,35-,38+/m1/s1
+  standard_inchi_key: TXEVVKPQBOIUHV-DHXUWNHESA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001422
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA017265
+producer_organisms:
+- taxon_id: NCBITaxon:483219
+  taxon_label: Myxococcus fulvus HW-1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001422
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001422 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001422
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:483219
+  organism_label: Myxococcus fulvus HW-1
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001422 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622592.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001422
+  source_label: myxochromide A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-99085b9c8b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

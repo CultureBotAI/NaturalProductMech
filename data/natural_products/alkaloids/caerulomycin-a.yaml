@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-63b0d9769b
+label: caerulomycin A
+chemical_structure:
+  smiles: COC1=CC(\C=N\O)=NC(=C1)C1=NC=CC=C1
+  standard_inchi: InChI=1S/C12H11N3O2/c1-17-10-6-9(8-14-16)15-12(7-10)11-4-2-3-5-13-11/h2-8,16H,1H3/b14-8+
+  standard_inchi_key: JCTRJRHLGOKMCF-RIYZIHGNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000966
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Nicotinic acid alkaloids
+  class_results:
+  - Pyridine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA015275
+- pubchem:5381230
+producer_organisms:
+- taxon_id: NCBITaxon:1074250
+  taxon_label: Actinoalloteichus sp. WH1-2216-6
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000966
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:22591508
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000966 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000966
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1074250
+  organism_label: Actinoalloteichus sp. WH1-2216-6
+  evidence:
+  - reference: PMID:22591508
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000966 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JF419316.2
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000966
+  source_label: caerulomycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-63b0d9769b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

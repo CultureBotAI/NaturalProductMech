@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-6749897cf4
+label: tolypyridone C
+chemical_structure:
+  smiles: C/C=C/C[C@H](C)C[C@H](C)C(=O)C1=C(O)C(C2=CC=C(O)C=C2)=CNC1=O
+  standard_inchi: InChI=1S/C21H25NO4/c1-4-5-6-13(2)11-14(3)19(24)18-20(25)17(12-22-21(18)26)15-7-9-16(23)10-8-15/h4-5,7-10,12-14,23H,6,11H2,1-3H3,(H2,22,25,26)/b5-4+/t13-,14-/m0/s1
+  standard_inchi_key: HLYMRXUSGGFLEA-CTXXGXLOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002230
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Nicotinic acid alkaloids
+  class_results:
+  - Pyridine alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA029476
+- pubchem:156580946
+producer_organisms:
+- taxon_id: NCBITaxon:2789198
+  taxon_label: Tolypocladium sp. 49Y
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002230
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1021/acs.jnatprod.0c00675
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002230 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002230
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2789198
+  organism_label: Tolypocladium sp. 49Y
+  evidence:
+  - reference: DOI:10.1021/acs.jnatprod.0c00675
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002230 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MT127616.1
+  bgc_class:
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002230
+  source_label: tolypyridone C
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-6749897cf4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-298e047897
+label: bromophene
+chemical_structure:
+  smiles: C1=C(C=C(C(=C1C2=C(C(=CC(=C2)Br)Br)O)O)Br)Br
+  standard_inchi: InChI=1S/C12H6Br4O2/c13-5-1-7(11(17)9(15)3-5)8-2-6(14)4-10(16)12(8)18/h1-4,17-18H
+  standard_inchi_key: TXODBIOSWNNKJM-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001465
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Diphenyl ethers (DPEs)
+  class_results:
+  - Marine-bacterial DPEs
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:30891
+producer_organisms:
+- taxon_id: NCBITaxon:717774
+  taxon_label: Marinomonas mediterranea MMB-1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001465
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24974229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001465 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001465
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:717774
+  organism_label: Marinomonas mediterranea MMB-1
+  evidence:
+  - reference: PMID:24974229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001465 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NC_015276.1
+  locus_from: 4521275
+  locus_to: 4533494
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001465
+  source_label: bromophene
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-298e047897
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

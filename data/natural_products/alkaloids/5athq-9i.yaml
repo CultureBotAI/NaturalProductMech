@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-0c1de78dda
+label: 5aTHQ-9i
+chemical_structure:
+  smiles: CC(C)CCCCCCC1=CC=CC2=C1CCCN2
+  standard_inchi: InChI=1S/C18H29N/c1-15(2)9-5-3-4-6-10-16-11-7-13-18-17(16)12-8-14-19-18/h7,11,13,15,19H,3-6,8-10,12,14H2,1-2H3
+  standard_inchi_key: QKRGALGNFOCZRB-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001917
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  - Anthranilic acid alkaloids
+  class_results:
+  - Quinoline alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA019188
+producer_organisms:
+- taxon_id: NCBITaxon:1920
+  taxon_label: Streptomyces nigrescens
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001917
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1039/c8ob02846j
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001917 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001917
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1920
+  organism_label: Streptomyces nigrescens
+  evidence:
+  - reference: DOI:10.1039/c8ob02846j
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001917 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:LC349994.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001917
+  source_label: 5aTHQ-9i
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-0c1de78dda
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-4ffb4ff3ee
+label: surfactin
+chemical_structure:
+  smiles: '[H][C@@]1(CCC(O)=O)NC(=O)CC(CCCCCCCCCCC)OC(=O)[C@]([H])(CC(C)C)NC(=O)[C@@]([H])(CC(C)C)NC(=O)[C@]([H])(CC(O)=O)NC(=O)[C@@]([H])(NC(=O)[C@@]([H])(CC(C)C)NC(=O)[C@]([H])(CC(C)C)NC1=O)C(C)C'
+  standard_inchi: InChI=1S/C52H91N7O13/c1-12-13-14-15-16-17-18-19-20-21-35-28-42(60)53-36(22-23-43(61)62)46(65)54-37(24-30(2)3)47(66)56-39(26-32(6)7)50(69)59-45(34(10)11)51(70)57-40(29-44(63)64)49(68)55-38(25-31(4)5)48(67)58-41(27-33(8)9)52(71)72-35/h30-41,45H,12-29H2,1-11H3,(H,53,60)(H,54,65)(H,55,68)(H,56,66)(H,57,70)(H,58,67)(H,59,69)(H,61,62)(H,63,64)/t35?,36-,37-,38+,39+,40-,41-,45-/m0/s1
+  standard_inchi_key: AFWTZXXDGQBIKW-DZESRJJCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000433
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA018495
+producer_organisms:
+- taxon_id: NCBITaxon:326423
+  taxon_label: Bacillus velezensis FZB42
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000433
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:14762003
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000433 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000433
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:326423
+  organism_label: Bacillus velezensis FZB42
+  evidence:
+  - reference: PMID:14762003
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000433 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ575642.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000433
+  source_label: surfactin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4ffb4ff3ee
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

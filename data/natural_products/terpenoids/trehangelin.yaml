@@ -1,0 +1,63 @@
+identifier: naturalproductmech:mibig-fcf9970b24
+label: trehangelin
+chemical_structure:
+  smiles: C/C=C(\C)/C(=O)O[C@H]1[C@@H]([C@H](O[C@@H]([C@@H]1O)O[C@@H]2[C@H](O[C@@H]([C@@H]([C@H]2O)O)OC(=O)/C(=C/C)/C)CO)CO)O
+  standard_inchi: InChI=1S/C22H34O13/c1-5-9(3)19(29)33-18-13(25)11(7-23)31-22(16(18)28)34-17-12(8-24)32-21(15(27)14(17)26)35-20(30)10(4)6-2/h5-6,11-18,21-28H,7-8H2,1-4H3/b9-5+,10-6+/t11-,12-,13-,14-,15-,16-,17-,18+,21-,22-/m1/s1
+  standard_inchi_key: OTULWMXLCWGWNJ-HVMOYWOSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001810
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Monoterpenoids
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:132599844
+producer_organisms:
+- taxon_id: NCBITaxon:338584
+  taxon_label: Polymorphospora rubra
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001810
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:27311629
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001810 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001810
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:338584
+  organism_label: Polymorphospora rubra
+  evidence:
+  - reference: PMID:27311629
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001810 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LC144914.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001810
+  source_label: trehangelin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-fcf9970b24
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

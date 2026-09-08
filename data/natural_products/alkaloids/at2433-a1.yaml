@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-6c1bd93a9d
+label: AT2433-A1
+chemical_structure:
+  smiles: CN[C@H]1CO[C@H](C[C@@H]1O)OC[C@H]1O[C@H]([C@H](O)[C@@H](O)[C@@H]1OC)N1C2=C3NC4=C(C=CC=C4)C3=C3C(=O)N(C)C(=O)C3=C2C2=C1C(Cl)=CC=C2
+  standard_inchi: InChI=1S/C34H35ClN4O9/c1-36-18-12-46-21(11-19(18)40)47-13-20-31(45-3)29(41)30(42)34(48-20)39-27-15(8-6-9-16(27)35)23-25-24(32(43)38(2)33(25)44)22-14-7-4-5-10-17(14)37-26(22)28(23)39/h4-10,18-21,29-31,34,36-37,40-42H,11-13H2,1-3H3/t18-,19-,20+,21-,29+,30+,31+,34+/m0/s1
+  standard_inchi_key: CGQSZYLXZOKJEJ-VYCQBBBDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000809
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA011993
+producer_organisms:
+- taxon_id: NCBITaxon:360723
+  taxon_label: Actinomadura melliaura
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000809
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:16873021
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000809 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000809
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:360723
+  organism_label: Actinomadura melliaura
+  evidence:
+  - reference: PMID:16873021
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000809 entry version 3; citation taken from the entry level
+  genome_accession: genbank:DQ297453.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000809
+  source_label: AT2433-A1
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-6c1bd93a9d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

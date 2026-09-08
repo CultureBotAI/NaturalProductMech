@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-a8bb287927
+label: grixazone A
+chemical_structure:
+  smiles: CC(=O)N[C@@H](CSC1=C(C(=O)C=C2C1=NC3=C(O2)C=CC(=C3)C=O)N)C(=O)O
+  standard_inchi: InChI=1S/C18H15N3O6S/c1-8(23)20-11(18(25)26)7-28-17-15(19)12(24)5-14-16(17)21-10-4-9(6-22)2-3-13(10)27-14/h2-6,11H,7,19H2,1H3,(H,20,23)(H,25,26)/t11-/m0/s1
+  standard_inchi_key: CBXHEDPBKOZZSI-NSHDSACASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000662
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Phenoxazine alkaloids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:71464599
+producer_organisms:
+- taxon_id: NCBITaxon:455632
+  taxon_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000662
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.57.218
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000662 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000662
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455632
+  organism_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence:
+  - reference: DOI:10.7164/antibiotics.57.218
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000662 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AP009493.1
+  locus_from: 4957169
+  locus_to: 4972074
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000662
+  source_label: grixazone A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a8bb287927
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

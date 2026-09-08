@@ -1,0 +1,109 @@
+identifier: naturalproductmech:mibig-9e0cffb06c
+label: berninamycin A
+chemical_structure:
+  smiles: C/C=C\1/C2=NC(=C(O2)C)C(=O)NC(=C)C(=O)N[C@H](C(=O)NC(=C)C3=NC(=C(O3)C)C(=O)NC(=C)C(=O)NC(=C)C4=NC(=CO4)C5=C(C=CC(=N5)C(=O)NC(=C)C(=O)NC(=C)C(=O)N)C6=NC(=CS6)C(=O)N[C@H](C(=O)N1)[C@@H](C)O)C(C)(C)O
+  standard_inchi: InChI=1S/C51H51N15O15S/c1-13-28-49-65-34(26(10)81-49)45(76)56-21(5)40(71)66-36(51(11,12)78)46(77)58-23(7)48-64-33(25(9)80-48)44(75)55-20(4)39(70)57-22(6)47-61-30(16-79-47)35-27(50-62-31(17-82-50)42(73)63-32(24(8)67)43(74)60-28)14-15-29(59-35)41(72)54-19(3)38(69)53-18(2)37(52)68/h13-17,24,32,36,67,78H,2-7H2,1,8-12H3,(H2,52,68)(H,53,69)(H,54,72)(H,55,75)(H,56,76)(H,57,70)(H,58,77)(H,60,74)(H,63,73)(H,66,71)/b28-13-/t24-,32+,36-/m1/s1
+  standard_inchi_key: CAFFHXXVDGAVPH-DKFXDEMXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002363
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA001733
+- pubchem:91617669
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002363
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production.'
+  evidence:
+  - reference: PMID:34617948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002363 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:1337893
+  taxon_label: Streptomyces bernensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001472
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23650400
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001472 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002363
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:34617948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002363 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT362006.1
+  locus_from: 1
+  locus_to: 22640
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+- accession: mibig:BGC0001472
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1337893
+  organism_label: Streptomyces bernensis
+  evidence:
+  - reference: PMID:23650400
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001472 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KC894738.1
+  locus_from: 4868
+  locus_to: 17729
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002363
+  source_label: berninamycin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-9e0cffb06c
+- source: MIBIG
+  source_id: BGC0001472
+  source_label: berninamycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6542fe9c73
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001472, BGC0002363.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

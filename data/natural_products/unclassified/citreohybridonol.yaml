@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-4bbff632b4
+label: citreohybridonol
+chemical_structure:
+  smiles: CC1=C[C@H]2[C@](C[C@H]3C4[C@]2(CC[C@@H](C4(C)C)OC(=O)C)C(=O)O3)([C@]5([C@@]1(C(=C(C5=O)C)O)C)C(=O)OC)C
+  standard_inchi: InChI=1S/C28H36O8/c1-13-11-17-25(6,28(23(33)34-8)21(31)14(2)20(30)26(13,28)7)12-16-19-24(4,5)18(35-15(3)29)9-10-27(17,19)22(32)36-16/h11,16-19,30H,9-10,12H2,1-8H3/t16-,17-,18-,19?,25-,26-,27+,28+/m0/s1
+  standard_inchi_key: MYLOBISKHDRNEW-USNZOBNTSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001547
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Tetraketide meroterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:101252260
+producer_organisms:
+- taxon_id: NCBITaxon:1549217
+  taxon_label: Aspergillus stellatus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001547
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26731665
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001547 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001547
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1549217
+  organism_label: Aspergillus stellatus
+  evidence:
+  - reference: PMID:26731665
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001547 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LC102187.1
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001547
+  source_label: citreohybridonol
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-4bbff632b4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

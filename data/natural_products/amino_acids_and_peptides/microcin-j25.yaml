@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-c68748ca1b
+label: microcin J25
+chemical_structure:
+  smiles: CCC(C)C(C(=O)NCC(=O)NC(C(C)O)C(=O)N1CCCC1C(=O)NC(C(C)CC)C(=O)NC(CO)C(=O)NC(CC2=CC=CC=C2)C(=O)NC(CC3=CC=C(C=C3)O)C(=O)NCC(=O)O)NC(=O)CNC(=O)C(C(C)C)NC(=O)C(CC4=CC=CC=C4)NC(=O)C(CC5=CC=C(C=C5)O)NC(=O)C6CCC(=O)NCC(=O)NCC(=O)NC(C(=O)NCC(=O)NC(C(=O)NC(C(=O)N7CCCC7C(=O)N6)C(C)C)CC8=CN=CN8)C
+  standard_inchi: InChI=1S/C101H139N23O27/c1-11-55(7)84(98(148)107-49-80(134)119-86(58(10)126)101(151)124-38-20-26-74(124)96(146)122-85(56(8)12-2)99(149)117-72(51-125)94(144)116-68(39-59-21-15-13-16-22-59)90(140)113-67(88(138)108-50-81(135)136)41-61-27-31-64(127)32-28-61)118-79(133)48-106-97(147)82(53(3)4)120-92(142)70(40-60-23-17-14-18-24-60)115-91(141)69(42-62-29-33-65(128)34-30-62)114-89(139)66-35-36-75(129)103-45-76(130)104-46-77(131)110-57(9)87(137)105-47-78(132)111-71(43-63-44-102-52-109-63)93(143)121-83(54(5)6)100(150)123-37-19-25-73(123)95(145)112-66/h13-18,21-24,27-34,44,52-58,66-74,82-86,125-128H,11-12,19-20,25-26,35-43,45-51H2,1-10H3,(H,102,109)(H,103,129)(H,104,130)(H,105,137)(H,106,147)(H,107,148)(H,108,138)(H,110,131)(H,111,132)(H,112,145)(H,113,140)(H,114,139)(H,115,141)(H,116,144)(H,117,149)(H,118,133)(H,119,134)(H,120,142)(H,121,143)(H,122,146)(H,135,136)
+  standard_inchi_key: FRJVEVHOMWPHHN-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000581
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lasso peptides
+  - RiPPs-Microcins
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:57397977
+- npatlas:NPA05946
+producer_organisms:
+- taxon_id: NCBITaxon:562
+  taxon_label: Escherichia coli AY25
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000581
+  source: MIBIG
+  source_version: '6'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1128/jb.178.12.3661-3663.1996
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000581 entry version 6; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000581
+  entry_version: '6'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:562
+  organism_label: Escherichia coli AY25
+  evidence:
+  - reference: DOI:10.1128/jb.178.12.3661-3663.1996
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000581 entry version 6; citation taken from the entry level
+  genome_accession: genbank:AF061787.1
+  locus_from: 1
+  locus_to: 4496
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000581
+  source_label: microcin J25
+  source_version: '6'
+  minted_identifier: naturalproductmech:mibig-c68748ca1b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

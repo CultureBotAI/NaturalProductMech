@@ -1,0 +1,100 @@
+identifier: naturalproductmech:mibig-7b44dfec44
+label: monascorubrin
+chemical_structure:
+  smiles: CCCCCCCC(=O)C1=C2C=C3C=C(OC=C3C(=O)[C@]2(C)OC1=O)\C=C\C
+  standard_inchi: InChI=1S/C23H26O5/c1-4-6-7-8-9-11-19(24)20-18-13-15-12-16(10-5-2)27-14-17(15)21(25)23(18,3)28-22(20)26/h5,10,12-14H,4,6-9,11H2,1-3H3/b10-5+/t23-/m1/s1
+  standard_inchi_key: IIPVSGPTPPURBD-HAOIVFDCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000027
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Chromanes
+  class_results:
+  - Azaphilones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:12118084
+- npatlas:NPA02306
+producer_organisms:
+- taxon_id: NCBITaxon:89488
+  taxon_label: Monascus pilosus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000027
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23504076
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000027 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:37727
+  taxon_label: Talaromyces marneffei
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000099
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25335861
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000099 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000027
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:89488
+  organism_label: Monascus pilosus
+  evidence:
+  - reference: PMID:23504076
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000027 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KC148521.1
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0000099
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:37727
+  organism_label: Talaromyces marneffei
+  evidence:
+  - reference: PMID:25335861
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000099 entry version 3; citation taken from the entry level
+  genome_accession: genbank:HM070047.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000027
+  source_label: monascorubrin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-7b44dfec44
+- source: MIBIG
+  source_id: BGC0000099
+  source_label: monascorubrin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-bd41134f36
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000027, BGC0000099.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

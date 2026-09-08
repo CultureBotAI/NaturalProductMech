@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-3c99d74fdd
+label: nocobactin NA 10152B
+chemical_structure:
+  smiles: C[C@@H](C(N[C@@H]1CCCCN(O)C1=O)=O)[C@@H](OC([C@@H](NC(C2=C(C)OC(N2)=C3C=CC=CC3=O)=O)CCCCN(O)C(C)=O)=O)CCCCCCCCC
+  standard_inchi: InChI=1S/C38H57N5O10/c1-5-6-7-8-9-10-11-22-32(25(2)34(46)39-29-19-14-17-24-43(51)37(29)48)53-38(49)30(20-15-16-23-42(50)27(4)44)40-35(47)33-26(3)52-36(41-33)28-18-12-13-21-31(28)45/h12-13,18,21,25,29-30,32,41,50-51H,5-11,14-17,19-20,22-24H2,1-4H3,(H,39,46)(H,40,47)/t25-,29-,30+,32+/m1/s1
+  standard_inchi_key: VFWZMGZJTAPJHV-OXYYHEDDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001027
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Depsipeptides
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:247156
+  taxon_label: Nocardia farcinica IFM 10152
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001027
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:21097631
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001027 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001027
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:247156
+  organism_label: Nocardia farcinica IFM 10152
+  evidence:
+  - reference: PMID:21097631
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001027 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AP006618.1
+  locus_from: 820180
+  locus_to: 840689
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001027
+  source_label: nocobactin NA 10152B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3c99d74fdd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

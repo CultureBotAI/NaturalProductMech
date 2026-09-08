@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-a75acad16f
+label: eutypinic acid
+chemical_structure:
+  smiles: CC(=C)C#CC1=C(C=CC(=C1)C(=O)O)O
+  standard_inchi: InChI=1S/C12H10O3/c1-8(2)3-4-9-7-10(12(14)15)5-6-11(9)13/h5-7,13H,1H2,2H3,(H,14,15)
+  standard_inchi_key: HFSFSKBQIGXUEY-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002290
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Miscellaneous meroterpenoids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:14394291
+producer_organisms:
+- taxon_id: NCBITaxon:1896107
+  taxon_label: Biscogniauxia sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002290
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32364293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002290 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002290
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1896107
+  organism_label: Biscogniauxia sp.
+  evidence:
+  - reference: PMID:32364293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002290 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT109335.1
+  locus_from: 1
+  locus_to: 37984
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002290
+  source_label: eutypinic acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-a75acad16f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

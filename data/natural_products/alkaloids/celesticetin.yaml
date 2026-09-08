@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-3aa9fcb0a8
+label: celesticetin
+chemical_structure:
+  smiles: COC(C)C(NC(=O)[C@@H]1CCCN1C)[C@H]1O[C@H](SCCOC(=O)C2=CC=CC=C2O)[C@H](O)[C@@H](O)[C@H]1O
+  standard_inchi: InChI=1S/C24H36N2O9S/c1-13(33-3)17(25-22(31)15-8-6-10-26(15)2)21-19(29)18(28)20(30)24(35-21)36-12-11-34-23(32)14-7-4-5-9-16(14)27/h4-5,7,9,13,15,17-21,24,27-30H,6,8,10-12H2,1-3H3,(H,25,31)/t13?,15-,17?,18-,19+,20+,21+,24+/m0/s1
+  standard_inchi_key: VMSQKUCYEMOKMM-AFJAYNRNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001225
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Pyrrolidine alkaloids
+  is_glycoside: true
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA017050
+- pubchem:20054860
+producer_organisms:
+- taxon_id: NCBITaxon:36816
+  taxon_label: Streptomyces caelestis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001225
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25741696
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001225 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001225
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:36816
+  organism_label: Streptomyces caelestis
+  evidence:
+  - reference: PMID:25741696
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001225 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GQ844764.1
+  locus_from: 5268
+  locus_to: 32621
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001225
+  source_label: celesticetin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3aa9fcb0a8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

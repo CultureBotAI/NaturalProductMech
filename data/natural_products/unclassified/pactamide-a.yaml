@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-ec0b262260
+label: pactamide A
+chemical_structure:
+  smiles: CC[C@H]1C[C@H]2C[C@@H]3[C@@H]([C@H]2[C@@H]1C)CC[C@H]\4[C@H]3C/C=C\C(=O)NCCC[C@H]5C(=O)C(=C(/C=C4)O)C(=O)N5
+  standard_inchi: InChI=1S/C29H40N2O4/c1-3-17-14-19-15-22-20-6-4-8-25(33)30-13-5-7-23-28(34)27(29(35)31-23)24(32)12-10-18(20)9-11-21(22)26(19)16(17)2/h4,8,10,12,16-23,26,32H,3,5-7,9,11,13-15H2,1-2H3,(H,30,33)(H,31,35)/b8-4-,12-10+,27-24?/t16-,17+,18-,19+,20-,21+,22+,23+,26+/m1/s1
+  standard_inchi_key: COQRMMDQXCDULZ-BZXIHHRZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001726
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrocyclic tetramic acids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Ornithine-derived
+- Tetramate alkaloid
+- Macrocyclic polyketide
+- Polycyclic polyketide
+xrefs:
+- npatlas:NPA028435
+- pubchem:146684575
+producer_organisms:
+- taxon_id: NCBITaxon:68249
+  taxon_label: Streptomyces pactum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001726
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28451290
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001726 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001726
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68249
+  organism_label: Streptomyces pactum
+  evidence:
+  - reference: PMID:28451290
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001726 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KU569222.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001726
+  source_label: pactamide A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-ec0b262260
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-edc1cff567
+label: tambjamine BE-18591
+chemical_structure:
+  smiles: CCCCCCCCCCCCN=CC1=C(C=C(N1)C2=CC=CN2)OC
+  standard_inchi: InChI=1S/C22H35N3O/c1-3-4-5-6-7-8-9-10-11-12-15-23-18-21-22(26-2)17-20(25-21)19-14-13-16-24-19/h13-14,16-18,24-25H,3-12,15H2,1-2H3
+  standard_inchi_key: YGDMZCDTTXTBHS-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002381
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Proline alkaloids
+  class_results:
+  - Prodigiosins
+  is_glycoside: false
+bgc_class:
+- OTHER
+- PKS
+xrefs:
+- npatlas:NPA011112
+producer_organisms:
+- taxon_id: NCBITaxon:67257
+  taxon_label: Streptomyces albus subsp. albus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002381
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.26434/chemrxiv.12899264.v1
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002381 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002381
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67257
+  organism_label: Streptomyces albus subsp. albus
+  evidence:
+  - reference: DOI:10.26434/chemrxiv.12899264.v1
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002381 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NZ_JODZ01000004.1
+  locus_from: 101345
+  locus_to: 136328
+  bgc_class:
+  - OTHER
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002381
+  source_label: tambjamine BE-18591
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-edc1cff567
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

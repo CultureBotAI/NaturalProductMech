@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-dae351d5d9
+label: ikarugamycin
+chemical_structure:
+  smiles: '[H][C@]12C[C@@H](C)[C@@H](CC)[C@]1([H])C=C[C@]1([H])[C@H]3C\C=C/C(=O)NCCC[C@@H]4NC(=O)C(=C4O)C(=O)\C=C\[C@@H]3C[C@]21[H]'
+  standard_inchi: InChI=1S/C29H38N2O4/c1-3-18-16(2)14-22-20(18)10-11-21-19-6-4-8-26(33)30-13-5-7-24-28(34)27(29(35)31-24)25(32)12-9-17(19)15-23(21)22/h4,8-12,16-24,34H,3,5-7,13-15H2,1-2H3,(H,30,33)(H,31,35)/b8-4-,12-9+/t16-,17-,18-,19+,20+,21-,22+,23+,24+/m1/s1
+  standard_inchi_key: WSUGGLXIPUHOSG-QOMLVTEJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001435
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrocyclic tetramic acids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA03249
+- pubchem:101647494
+producer_organisms:
+- taxon_id: NCBITaxon:1469403
+  taxon_label: Streptomyces sp. ZJ306
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001435
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:24519911
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001435 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001435
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1469403
+  organism_label: Streptomyces sp. ZJ306
+  evidence:
+  - reference: PMID:24519911
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001435 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KF954512.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001435
+  source_label: ikarugamycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-dae351d5d9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

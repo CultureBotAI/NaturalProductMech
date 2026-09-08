@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-2db2e5cd3e
+label: terezine-D
+chemical_structure:
+  smiles: C[C@@H]1NC(=O)C(CC2=CNC3=C2C=CC=C3CC=C(C)C)NC1=O
+  standard_inchi: InChI=1S/C19H23N3O2/c1-11(2)7-8-13-5-4-6-15-14(10-20-17(13)15)9-16-19(24)21-12(3)18(23)22-16/h4-7,10,12,16,20H,8-9H2,1-3H3,(H,21,24)(H,22,23)/t12-,16?/m0/s1
+  standard_inchi_key: IHJVJWQYVQWURS-HKALDPMFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000372
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Indole diketopiperazine alkaloids (L-Trp, L-Ala)
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA05625
+producer_organisms:
+- taxon_id: NCBITaxon:330879
+  taxon_label: Aspergillus fumigatus Af293
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000372
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:25386169
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000372 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000372
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:330879
+  organism_label: Aspergillus fumigatus Af293
+  evidence:
+  - reference: PMID:25386169
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000372 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CM000171.1
+  locus_from: 3423866
+  locus_to: 3446129
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000372
+  source_label: terezine-D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2db2e5cd3e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

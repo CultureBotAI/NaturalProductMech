@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-8b2fab44e2
+label: griseoviridin
+chemical_structure:
+  smiles: '[H][C@@]12CS\C(=C/C[C@@H](C)OC1=O)C(=O)NC\C=C\C=C\[C@@H](O)C[C@H](O)CC1=NC(=CO1)C(=O)N2'
+  standard_inchi: InChI=1S/C22H27N3O7S/c1-13-6-7-18-21(29)23-8-4-2-3-5-14(26)9-15(27)10-19-24-16(11-31-19)20(28)25-17(12-33-18)22(30)32-13/h2-5,7,11,13-15,17,26-27H,6,8-10,12H2,1H3,(H,23,29)(H,25,28)/b4-2+,5-3+,18-7-/t13-,14-,15+,17-/m1/s1
+  standard_inchi_key: UXWOXTQWVMFRSE-PUXWVVMRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000459
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA02368
+producer_organisms:
+- taxon_id: NCBITaxon:45398
+  taxon_label: Streptomyces griseoviridis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000459
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1016/0304-4165(94)90035-3
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000459 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000459
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:45398
+  organism_label: Streptomyces griseoviridis
+  evidence:
+  - reference: DOI:10.1016/0304-4165(94)90035-3
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000459 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:JX508597.1
+  locus_from: 13530
+  locus_to: 118200
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000459
+  source_label: griseoviridin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8b2fab44e2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

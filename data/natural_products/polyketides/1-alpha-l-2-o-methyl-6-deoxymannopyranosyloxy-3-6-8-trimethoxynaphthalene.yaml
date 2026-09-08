@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-e09bd2ef10
+label: 1-(alpha-l-(2-O-methyl)-6-deoxymannopyranosyloxy)-3,6,8-trimethoxynaphthalene
+chemical_structure:
+  smiles: OC1C(O)C(C)OC(OC2=CC(OC)=CC3=CC(OC)=CC(OC)=C23)C1OC
+  standard_inchi: InChI=1S/C20H26O8/c1-10-17(21)18(22)19(26-5)20(27-10)28-15-9-13(24-3)7-11-6-12(23-2)8-14(25-4)16(11)15/h6-10,17-22H,1-5H3
+  standard_inchi_key: KUCULSZWTQRMBE-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002154
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Naphthalenes
+  class_results:
+  - Naphthalenes and derivatives
+  is_glycoside: true
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:242507
+  taxon_label: Pyricularia oryzae 70-15
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002154
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:8905089
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002154 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002154
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:242507
+  organism_label: Pyricularia oryzae 70-15
+  evidence:
+  - reference: PMID:8905089
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002154 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CM001232.1
+  locus_from: 6832944
+  locus_to: 6840266
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002154
+  source_label: 1-(alpha-l-(2-O-methyl)-6-deoxymannopyranosyloxy)-3,6,8-trimethoxynaphthalene
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-e09bd2ef10
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

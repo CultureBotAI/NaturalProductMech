@@ -1,0 +1,104 @@
+identifier: naturalproductmech:mibig-e1b611846e
+label: fusarubin
+chemical_structure:
+  smiles: CC1(CC2=C(CO1)C(=C3C(=O)C=C(C(=O)C3=C2O)OC)O)O
+  standard_inchi: InChI=1S/C15H14O7/c1-15(20)4-6-7(5-22-15)13(18)10-8(16)3-9(21-2)14(19)11(10)12(6)17/h3,17-18,20H,4-5H2,1-2H3
+  standard_inchi_key: FKJXMYJPOKQPSS-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002525
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Naphthalenes
+  class_results:
+  - Naphthoquinones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:73421
+- npatlas:NPA0830
+producer_organisms:
+- taxon_id: NCBITaxon:29916
+  taxon_label: Fusarium sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002525
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:32139880
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002525 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:5127
+  taxon_label: Fusarium fujikuroi
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001242
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:22492438
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001242 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002525
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:29916
+  organism_label: Fusarium sp.
+  evidence:
+  - reference: PMID:32139880
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002525 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LC516401.1
+  locus_from: 1
+  locus_to: 24500
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+- accession: mibig:BGC0001242
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5127
+  organism_label: Fusarium fujikuroi
+  evidence:
+  - reference: PMID:22492438
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001242 entry version 3; citation taken from the entry level
+  genome_accession: genbank:HE613440.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002525
+  source_label: fusarubin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-e1b611846e
+- source: MIBIG
+  source_id: BGC0001242
+  source_label: oxyjavanicin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b2dfdf1728
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001242, BGC0002525.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

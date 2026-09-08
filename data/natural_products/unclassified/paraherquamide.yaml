@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-5ba1f538ac
+label: paraherquamide
+chemical_structure:
+  smiles: CN1C(=O)[C@]23C[C@H]4C(C)(C)[C@@]5(C[C@]14CN2CC[C@@]3(C)O)C(=O)NC1=C2OC=CC(C)(C)OC2=CC=C51
+  standard_inchi: InChI=1S/C28H35N3O5/c1-23(2)10-12-35-20-17(36-23)8-7-16-19(20)29-21(32)27(16)14-26-15-31-11-9-25(5,34)28(31,22(33)30(26)6)13-18(26)24(27,3)4/h7-8,10,12,18,34H,9,11,13-15H2,1-6H3,(H,29,32)/t18-,25+,26+,27+,28-/m0/s1
+  standard_inchi_key: UVZZDDLIOJPDKX-ITKQZBBDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000819
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  - Tryptophan alkaloids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- OTHER
+xrefs:
+- npatlas:NPA03590
+producer_organisms:
+- taxon_id: NCBITaxon:70095
+  taxon_label: Penicillium fellutanum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000819
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23213353
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000819 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000819
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:70095
+  organism_label: Penicillium fellutanum
+  evidence:
+  - reference: PMID:23213353
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000819 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JQ708195.1
+  bgc_class:
+  - NRPS
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000819
+  source_label: paraherquamide
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5ba1f538ac
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

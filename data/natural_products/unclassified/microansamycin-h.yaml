@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-90548001e6
+label: microansamycin H
+chemical_structure:
+  smiles: CCC(=O)NC1=CC(=CC2=C1O[C@@H]([C@H](CC2)O)C=C(C)C(=O)O)O
+  standard_inchi: InChI=1S/C17H21NO6/c1-3-15(21)18-12-8-11(19)7-10-4-5-13(20)14(24-16(10)12)6-9(2)17(22)23/h6-8,13-14,19-20H,3-5H2,1-2H3,(H,18,21)(H,22,23)/t13-,14+/m0/s1
+  standard_inchi_key: KOLISZHOJXSQBZ-UONOGXRCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001666
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Cyclic polyketide
+- Polycyclic polyketide
+xrefs:
+- pubchem:139591131
+- npatlas:NPA023916
+producer_organisms:
+- taxon_id: NCBITaxon:1245497
+  taxon_label: Micromonospora sp. HK160111
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001666
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:29412682
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001666 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001666
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1245497
+  organism_label: Micromonospora sp. HK160111
+  evidence:
+  - reference: PMID:29412682
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001666 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MG018799.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001666
+  source_label: microansamycin H
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-90548001e6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

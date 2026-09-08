@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-53609c9e33
+label: liposidomycin K
+chemical_structure:
+  smiles: O=S([O-])(O[C@H]([C@@H]([C@H](O1)CN)O)[C@@H]1O[C@@H]([C@@H]2N(C[C@@H]([C@H](N(C2=O)C)C(O)=O)OC(C[C@@H](OC(C[C@@H](CC(O)=O)C)=O)CC/C=C\C/C=C\C/C=C\CCCCC)=O)C)[C@@H](O[C@H]3N(C(N4)=O)C=CC4=O)[C@H]([C@H]3O)O)=O
+  standard_inchi: InChI=1S/C46H69N5O21S/c1-5-6-7-8-9-10-11-12-13-14-15-16-17-18-27(67-32(55)22-26(2)21-31(53)54)23-33(56)68-29-25-49(3)35(42(60)50(4)34(29)44(61)62)39(71-45-41(72-73(64,65)66)36(57)28(24-47)69-45)40-37(58)38(59)43(70-40)51-20-19-30(52)48-46(51)63/h9-10,12-13,15-16,19-20,26-29,34-41,43,45,57-59H,5-8,11,14,17-18,21-25,47H2,1-4H3,(H,53,54)(H,61,62)(H,48,52,63)(H,64,65,66)/p-1/b10-9-,13-12-,16-15-/t26-,27+,28-,29+,34+,35+,36-,37+,38-,39+,40+,41-,43-,45+/m1/s1
+  standard_inchi_key: ZZYFEVABIATHRY-ASFDNXIUSA-M
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001076
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Pyrimidine nucleos(t)ides
+  is_glycoside: true
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:722721
+  taxon_label: Streptomyces sp. SN-1061M
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001076
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:20039253
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001076 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001076
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:722721
+  organism_label: Streptomyces sp. SN-1061M
+  evidence:
+  - reference: PMID:20039253
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001076 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GU219978.1
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001076
+  source_label: liposidomycin K
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-53609c9e33
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-04593f87e6
+label: teixobactin
+chemical_structure:
+  smiles: CC[C@H](C)[C@H](NC(=O)[C@@H](CC1=CC=CC=C1)NC)C(=O)N[C@@H](CO)C(=O)N[C@H](CCC(N)=O)C(=O)N[C@H]([C@H](C)CC)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CO)C(=O)N[C@@H]1[C@H](C)OC(=O)[C@@H](NC(=O)[C@H](C[C@H]2CN=C(N)N2)NC(=O)[C@H](C)NC1=O)[C@@H](C)CC
+  standard_inchi: InChI=1S/C58H95N15O15/c1-12-28(5)42(70-49(79)37(61-11)23-34-19-17-16-18-20-34)53(83)67-39(26-74)51(81)65-36(21-22-41(59)76)48(78)69-44(30(7)14-3)55(85)71-43(29(6)13-2)54(84)68-40(27-75)52(82)73-46-33(10)88-57(87)45(31(8)15-4)72-50(80)38(24-35-25-62-58(60)64-35)66-47(77)32(9)63-56(46)86/h16-20,28-33,35-40,42-46,61,74-75H,12-15,21-27H2,1-11H3,(H2,59,76)(H,63,86)(H,65,81)(H,66,77)(H,67,83)(H,68,84)(H,69,78)(H,70,79)(H,71,85)(H,72,80)(H,73,82)(H3,60,62,64)/t28-,29-,30+,31-,32-,33-,35-,36+,37+,38-,39-,40-,42-,43-,44+,45-,46+/m0/s1
+  standard_inchi_key: LMBFAGIMSUYTBN-IIRRRCHSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001207
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Depsipeptide
+xrefs:
+- pubchem:86341926
+- npatlas:NPA013751
+producer_organisms:
+- taxon_id: NCBITaxon:1597781
+  taxon_label: Eleftheria terrae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001207
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1038/nature14098
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001207 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001207
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1597781
+  organism_label: Eleftheria terrae
+  evidence:
+  - reference: DOI:10.1038/nature14098
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001207 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KP006601.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001207
+  source_label: teixobactin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-04593f87e6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

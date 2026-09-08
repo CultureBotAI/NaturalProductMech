@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-7dde145c14
+label: Pelgipeptin B
+chemical_structure:
+  smiles: CCC(C1C(NC(CCN)C(NC(CC2=CC=CC=C2)C(NC(CC(C)C)C(NC(CCN)C(NC(C(C)C)C(NC(CC(C)C)C(NC(CO)C(OC(C(CC)C)CC(NC(CCN)C(N1)=O)=O)=O)=O)=O)=O)=O)=O)=O)=O)C
+  standard_inchi: InChI=1S/C54H92N12O12/c1-11-32(9)42-27-43(68)58-35(18-21-55)47(70)66-45(33(10)12-2)53(76)60-36(19-22-56)46(69)62-40(26-34-16-14-13-15-17-34)51(74)61-38(24-29(3)4)49(72)59-37(20-23-57)48(71)65-44(31(7)8)52(75)63-39(25-30(5)6)50(73)64-41(28-67)54(77)78-42/h13-17,29-33,35-42,44-45,67H,11-12,18-28,55-57H2,1-10H3,(H,58,68)(H,59,72)(H,60,76)(H,61,74)(H,62,69)(H,63,75)(H,64,73)(H,65,71)(H,66,70)
+  standard_inchi_key: NPQJTPHMCZYCNP-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000403
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Macrocyclic
+xrefs:
+- npatlas:NPA020372
+producer_organisms:
+- taxon_id: NCBITaxon:189691
+  taxon_label: Paenibacillus elgii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000403
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1111/j.1574-6968.2010.02040.x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000403 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000403
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:189691
+  organism_label: Paenibacillus elgii
+  evidence:
+  - reference: DOI:10.1111/j.1574-6968.2010.02040.x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000403 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:JQ745271.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000403
+  source_label: Pelgipeptin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7dde145c14
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

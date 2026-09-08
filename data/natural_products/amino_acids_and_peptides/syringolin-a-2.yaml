@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-c7bbb49a1e
+label: syringolin A
+chemical_structure:
+  smiles: CC(C)C(NC(=O)NC(C(C)C)C(=O)NC1\C=C/CCNC(=O)\C=C/C(NC1=O)C(C)C)C(O)=O
+  standard_inchi: InChI=1S/C24H39N5O6/c1-13(2)16-10-11-18(30)25-12-8-7-9-17(21(31)26-16)27-22(32)19(14(3)4)28-24(35)29-20(15(5)6)23(33)34/h7,9-11,13-17,19-20H,8,12H2,1-6H3,(H,25,30)(H,26,31)(H,27,32)(H,33,34)(H2,28,29,35)/b9-7-,11-10-
+  standard_inchi_key: RUWSLQOIGKYPEZ-MNAJIYKBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000436
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA010377
+- pubchem:24978526
+producer_organisms:
+- taxon_id: NCBITaxon:1144306
+  taxon_label: Rhizobium sp. AP16
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000436
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24727275
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000436 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000436
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1144306
+  organism_label: Rhizobium sp. AP16
+  evidence:
+  - reference: PMID:24727275
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000436 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJVM01000074.1
+  locus_from: 7793
+  locus_to: 28527
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000436
+  source_label: syringolin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c7bbb49a1e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

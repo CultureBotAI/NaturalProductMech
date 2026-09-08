@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-89a15d6aef
+label: everninomicin G
+chemical_structure:
+  smiles: COC[C@H]1O[C@@H](O[C@@H]2OC[C@@H]3O[C@]4(O[C@H]3[C@H]2OC)OC[C@@](O)([C@H](C)OC)[C@@H]2OCO[C@@H]42)[C@@H](OC)[C@@H](O)[C@@H]1O[C@@H]1O[C@H](C)[C@H](OC)[C@H](O[C@H]2C[C@@]3(C)O[C@@]4(C[C@@H](O)[C@H](O[C@H]5C[C@@H](O[C@H]6C[C@](C)(N=O)[C@@H](OC)[C@H](C)O6)[C@H](OC(=O)C6=C(C)C(Cl)=C(O)C(Cl)=C6OC)[C@@H](C)O5)[C@@H](C)O4)O[C@@H]3[C@@H](C)O2)[C@H]1O
+  standard_inchi: InChI=1S/C66H99Cl2NO34/c1-25-39(50(80-13)41(68)42(71)40(25)67)58(74)96-46-26(2)88-36(17-33(46)92-37-19-62(8,69-76)54(83-16)29(5)89-37)94-45-28(4)99-65(18-32(45)70)102-55-30(6)90-38(20-63(55,9)103-65)95-51-44(73)59(91-27(3)47(51)79-12)97-48-34(21-77-10)93-61(52(81-14)43(48)72)98-60-53(82-15)49-35(22-84-60)100-66(101-49)57-56(85-24-86-57)64(75,23-87-66)31(7)78-11/h26-38,43-49,51-57,59-61,70-73,75H,17-24H2,1-16H3/t26-,27-,28-,29+,30-,31+,32-,33-,34-,35+,36+,37+,38+,43+,44-,45-,46-,47+,48-,49-,51-,52+,53-,54+,55-,56-,57-,59+,60+,61+,62+,63-,64-,65-,66-/m1/s1
+  standard_inchi_key: ZDYUJCQPAXLSCC-YOQBUGDQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002085
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Saccharides
+  class_results:
+  - Orthosomycins
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:47853
+  taxon_label: Micromonospora carbonacea
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002085
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:20866105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002085 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002085
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:47853
+  organism_label: Micromonospora carbonacea
+  evidence:
+  - reference: PMID:20866105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002085 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP058322.1
+  locus_from: 866393
+  locus_to: 925867
+  bgc_class:
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002085
+  source_label: everninomicin G
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-89a15d6aef
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

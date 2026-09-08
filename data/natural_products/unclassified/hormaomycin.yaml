@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-88ab645a96
+label: hormaomycin
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H](C(N1C[C@@H](/C=C\C)C[C@H]1C2=O)=O)NC([C@H]([C@@H](C3=CC=CC=C3)C)NC([C@H](NC([C@H]([C@H](C)C4=CC=CC=C4)NC([C@@H]([C@@H](C)O2)NC([C@H](C[C@H]5[C@H]([N+]([O-])=O)C5)NC(C6=CC=C(Cl)N6O)=O)=O)=O)=O)C[C@H]7[C@H]([N+]([O-])=O)C7)=O)=O
+  standard_inchi: InChI=1S/C55H69ClN10O14/c1-7-15-32-22-42-55(74)80-31(6)47(62-49(68)37(23-35-25-40(35)65(76)77)57-50(69)39-20-21-43(56)64(39)75)53(72)61-45(29(4)33-16-11-9-12-17-33)51(70)58-38(24-36-26-41(36)66(78)79)48(67)60-46(30(5)34-18-13-10-14-19-34)52(71)59-44(28(3)8-2)54(73)63(42)27-32/h7,9-21,28-32,35-38,40-42,44-47,75H,8,22-27H2,1-6H3,(H,57,69)(H,58,70)(H,59,71)(H,60,67)(H,61,72)(H,62,68)/b15-7-/t28-,29+,30+,31+,32-,35+,36+,37-,38+,40+,41+,42-,44-,45-,46-,47+/m0/s1
+  standard_inchi_key: YOUXQVRIWHZWQN-DKPCRMJRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000374
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:35619
+  taxon_label: Streptomyces griseoflavus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000374
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:21439483
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000374 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000374
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:35619
+  organism_label: Streptomyces griseoflavus
+  evidence:
+  - reference: PMID:21439483
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000374 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HQ542230.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000374
+  source_label: hormaomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-88ab645a96
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

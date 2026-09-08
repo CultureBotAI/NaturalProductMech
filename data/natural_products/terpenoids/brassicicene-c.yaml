@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-77daefad60
+label: brassicicene C
+chemical_structure:
+  smiles: '[H][C@@]12CC[C@](O)(COC)\C1=C\[C@@]1([H])[C@H](C)C(=O)C(C(C)C)=C1C[C@H](O)[C@@H]2C'
+  standard_inchi: InChI=1S/C21H32O4/c1-11(2)19-16-9-18(22)12(3)14-6-7-21(24,10-25-5)17(14)8-15(16)13(4)20(19)23/h8,11-15,18,22,24H,6-7,9-10H2,1-5H3/b17-8+/t12-,13+,14+,15+,18+,21+/m1/s1
+  standard_inchi_key: JYZGDIADQSQUAG-DKLZGWCZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000685
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Fusicoccane diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA013985
+- pubchem:90658313
+producer_organisms:
+- taxon_id: NCBITaxon:622360
+  taxon_label: Alternaria brassicicola ATCC 96836
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000685
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:19097780
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000685 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000685
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:622360
+  organism_label: Alternaria brassicicola ATCC 96836
+  evidence:
+  - reference: PMID:19097780
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000685 entry version 4; citation taken from the entry level
+  genome_accession: genbank:ACIW01000469.1
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000685
+  source_label: brassicicene C
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-77daefad60
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

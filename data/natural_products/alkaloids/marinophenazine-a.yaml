@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-8f761e16f2
+label: marinophenazine A
+chemical_structure:
+  smiles: C/C(=C\COc1cccc2c1nc1cccc(c1[n+]2[O-])O)/CCC=C(C)C
+  standard_inchi: InChI=1S/C22H24N2O3/c1-15(2)7-4-8-16(3)13-14-27-20-12-6-10-18-21(20)23-17-9-5-11-19(25)22(17)24(18)26/h5-7,9-13,25H,4,8,14H2,1-3H3/b16-13+
+  standard_inchi_key: HUHJHKWRVBMICA-DTQAZKPQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001221
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  - Anthranilic acid alkaloids
+  class_results:
+  - Phenazine alkaloids
+  - Quinoline alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:444103
+  taxon_label: Streptomyces sp. CNQ-509
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001221
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:25224759
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001221 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001221
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:444103
+  organism_label: Streptomyces sp. CNQ-509
+  evidence:
+  - reference: PMID:25224759
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001221 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KJ451627.1
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001221
+  source_label: marinophenazine A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8f761e16f2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

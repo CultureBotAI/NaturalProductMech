@@ -1,0 +1,63 @@
+identifier: naturalproductmech:mibig-707112a6f4
+label: pendolmycin
+chemical_structure:
+  smiles: CC(C)[C@H]1C(=O)N[C@@H](CC2=CNC3=C(C=CC(=C23)N1C)C(C)(C)C=C)CO
+  standard_inchi: InChI=1S/C22H31N3O2/c1-7-22(4,5)16-8-9-17-18-14(11-23-19(16)18)10-15(12-26)24-21(27)20(13(2)3)25(17)6/h7-9,11,13,15,20,23,26H,1,10,12H2,2-6H3,(H,24,27)/t15-,20-/m0/s1
+  standard_inchi_key: JPJWIAYMFHOJRY-YWZLYKJASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000391
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:531310
+  taxon_label: Marinactinospora thermotolerans
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000391
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:22362652
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000391 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000391
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:531310
+  organism_label: Marinactinospora thermotolerans
+  evidence:
+  - reference: PMID:22362652
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000391 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JN634585.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000391
+  source_label: pendolmycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-707112a6f4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-29e376dc5d
+label: anisomycin
+chemical_structure:
+  smiles: COC1=CC=C(C[C@H]2NC[C@H](O)[C@H]2OC(C)=O)C=C1
+  standard_inchi: InChI=1S/C14H19NO4/c1-9(16)19-14-12(15-8-13(14)17)7-10-3-5-11(18-2)6-4-10/h3-6,12-15,17H,7-8H2,1-2H3/t12-,13+,14+/m1/s1
+  standard_inchi_key: YKJYKKNCCRKFSL-RDBSUJKOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001510
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Pyrrolidine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA017379
+producer_organisms:
+- taxon_id: NCBITaxon:516360
+  taxon_label: Streptomyces hygrospinosus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001510
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28373542
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001510 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001510
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:516360
+  organism_label: Streptomyces hygrospinosus
+  evidence:
+  - reference: PMID:28373542
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001510 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY014292.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001510
+  source_label: anisomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-29e376dc5d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

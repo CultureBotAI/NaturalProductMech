@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-943f22380e
+label: myxovalargin A
+chemical_structure:
+  smiles: CC(C)CC(N/C(C(N[C@H](C(N(C)[C@@H](C)C(N[C@H](C(C)C)C(N[C@H](C(C)C)C(N[C@H](C1=CC=C(O)C=C1)CC(N[C@H](C(C)C)C(N/C(C(N[C@H](CCCNC(N)=N)C(N[C@@H](C(C)C)C(N[C@H](C(C)C)C(N/C(C(N[C@H](C)C(N[C@H](C(C)(O)C)C(NCCCCNC(N)=N)=O)=O)=O)=C(CC)\C)=O)=O)=O)=O)=C(C)\C)=O)=O)=O)=O)=O)=O)C)=O)=C(C)\C)=O
+  standard_inchi: InChI=1S/C81H137N21O17/c1-25-47(18)64(76(116)89-48(19)66(106)101-65(81(22,23)119)77(117)86-34-26-27-35-87-79(82)83)100-75(115)63(46(16)17)99-74(114)62(45(14)15)96-68(108)53(29-28-36-88-80(84)85)91-70(110)59(42(8)9)97-72(112)58(41(6)7)94-56(105)38-54(51-30-32-52(103)33-31-51)92-71(111)60(43(10)11)98-73(113)61(44(12)13)95-67(107)50(21)102(24)78(118)49(20)90-69(109)57(40(4)5)93-55(104)37-39(2)3/h30-33,39,41,43-46,48-50,53-54,58,60-63,65,103,119H,25-29,34-38H2,1-24H3,(H,86,117)(H,89,116)(H,90,109)(H,91,110)(H,92,111)(H,93,104)(H,94,105)(H,95,107)(H,96,108)(H,97,112)(H,98,113)(H,99,114)(H,100,115)(H,101,106)(H4,82,83,87)(H4,84,85,88)/b64-47+/t48-,49+,50+,53-,54+,58-,60-,61-,62+,63-,65+/m1/s1
+  standard_inchi_key: HWLJLKDUPPGOEO-YNCHCJFZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002760
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:137628402
+producer_organisms:
+- taxon_id: NCBITaxon:184914
+  taxon_label: Corallococcus coralloides 1071
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002760
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1021/jacs.2c08816
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002760 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002760
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:184914
+  organism_label: Corallococcus coralloides 1071
+  evidence:
+  - reference: DOI:10.1021/jacs.2c08816
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002760 entry version 2; citation taken from the entry level
+  genome_accession: genbank:OQ092403.1
+  locus_from: 1
+  locus_to: 66498
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002760
+  source_label: myxovalargin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-943f22380e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

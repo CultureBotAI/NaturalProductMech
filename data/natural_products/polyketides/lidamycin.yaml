@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-f414c884ba
+label: lidamycin
+chemical_structure:
+  smiles: CC1([C@H]([C@H]([C@H]([C@@H](O1)O[C@]23C=CC=C2C#C/C/4=C\C#C[C@H]3OC5=C(C=C(C=C5Cl)[C@H](CC(=O)OC[C@@H]4OC(=O)C6=CC(=CC7=C6NC(=O)C(=C)O7)OC)N)O)O)O)N(C)C)C
+  standard_inchi: InChI=1S/C43H42ClN3O13/c1-21-39(52)46-34-26(17-25(54-6)18-30(34)56-21)40(53)57-31-20-55-33(49)19-28(45)23-15-27(44)37(29(48)16-23)58-32-11-7-9-22(31)12-13-24-10-8-14-43(24,32)60-41-36(51)35(50)38(47(4)5)42(2,3)59-41/h8-10,14-18,28,31-32,35-36,38,41,48,50-51H,1,19-20,45H2,2-6H3,(H,46,52)/b22-9+/t28-,31-,32+,35-,36+,38-,41-,43+/m0/s1
+  standard_inchi_key: DGGZCXUXASNDAC-QQNGCVSVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001397
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Enediynes
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:9962646
+producer_organisms:
+- taxon_id: NCBITaxon:1172567
+  taxon_label: Streptomyces globisporus C-1027
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001397
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26853480
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001397 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001397
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1172567
+  organism_label: Streptomyces globisporus C-1027
+  evidence:
+  - reference: PMID:26853480
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001397 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP013739.1
+  locus_from: 20150
+  locus_to: 92825
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001397
+  source_label: lidamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f414c884ba
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

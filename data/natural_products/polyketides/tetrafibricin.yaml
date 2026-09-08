@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-e8956c4d50
+label: tetrafibricin
+chemical_structure:
+  smiles: CC(C(C/C=C/C=C/C=C/C=C/C(=O)O)O)C(=O)CC(CC(CC(/C=C/CC(CC(CC(CC(/C=C/CC(/C=C/CC(CCCN)O)O)O)O)O)O)O)O)O
+  standard_inchi: InChI=1S/C41H67NO13/c1-29(39(52)20-7-5-3-2-4-6-8-21-41(54)55)40(53)28-38(51)27-37(50)25-34(47)18-11-17-33(46)24-36(49)26-35(48)23-32(45)16-10-15-30(43)13-9-14-31(44)19-12-22-42/h2-11,13,16,18,21,29-39,43-52H,12,14-15,17,19-20,22-28,42H2,1H3,(H,54,55)/b3-2+,6-4+,7-5+,13-9+,16-10+,18-11+,21-8+
+  standard_inchi_key: BIOWDMWPQOMXJO-YHYSRAEPSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002355
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+- OTHER
+xrefs:
+- npatlas:NPA004966
+producer_organisms:
+- taxon_id: NCBITaxon:42238
+  taxon_label: Streptomyces neyagawaensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002355
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:28133950
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002355 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002355
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:42238
+  organism_label: Streptomyces neyagawaensis
+  evidence:
+  - reference: PMID:28133950
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002355 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LC208006.1
+  locus_from: 165
+  locus_to: 144335
+  bgc_class:
+  - PKS
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002355
+  source_label: tetrafibricin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-e8956c4d50
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

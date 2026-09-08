@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-2d73e2d1a3
+label: malleobactin B
+chemical_structure:
+  smiles: NCCCCNC(=O)[C@H](CCCN(O)C=O)NC(=O)[C@H](CO)NC(=O)[C@H](NC(=O)[C@H](CCCNO)NC=O)[C@@H](O)C(O)=O
+  standard_inchi: InChI=1S/C23H42N8O12/c24-7-1-2-8-25-19(36)15(6-4-10-31(43)13-34)28-21(38)16(11-32)29-22(39)17(18(35)23(40)41)30-20(37)14(26-12-33)5-3-9-27-42/h12-18,27,32,35,42-43H,1-11,24H2,(H,25,36)(H,26,33)(H,28,38)(H,29,39)(H,30,37)(H,40,41)/t14-,15-,16-,17+,18+/m0/s1
+  standard_inchi_key: KRCPSWOWIGAKSZ-NNPSNHGLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000386
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA04563
+producer_organisms:
+- taxon_id: NCBITaxon:271848
+  taxon_label: Burkholderia thailandensis E264
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000386
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:23821334
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000386 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000386
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:271848
+  organism_label: Burkholderia thailandensis E264
+  evidence:
+  - reference: PMID:23821334
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000386 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000086.1
+  locus_from: 2748130
+  locus_to: 2778630
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000386
+  source_label: malleobactin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2d73e2d1a3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

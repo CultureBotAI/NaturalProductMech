@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-cfd9387f26
+label: elymoclavine
+chemical_structure:
+  smiles: CN1CC(=C[C@H]2[C@H]1CC3=CNC4=CC=CC2=C34)CO
+  standard_inchi: InChI=1S/C16H18N2O/c1-18-8-10(9-19)5-13-12-3-2-4-14-16(12)11(7-17-14)6-15(13)18/h2-5,7,13,15,17,19H,6,8-9H2,1H3/t13-,15-/m1/s1
+  standard_inchi_key: DAVNRFCJMIONPO-UKRRQHHQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001267
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Ergot alkaloids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+compound_classes:
+- Terpenoid-alkaloid
+- Tryptophan-derived
+xrefs:
+- pubchem:440904
+producer_organisms:
+- taxon_id: NCBITaxon:40602
+  taxon_label: Claviceps fusiformis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001267
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1128/aem.01040-07
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001267 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001267
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:40602
+  organism_label: Claviceps fusiformis
+  evidence:
+  - reference: DOI:10.1128/aem.01040-07
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001267 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:EU006773.1
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001267
+  source_label: elymoclavine
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-cfd9387f26
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-ad20087e2e
+label: butirosin
+chemical_structure:
+  smiles: C1[C@@H]([C@H]([C@@H]([C@H]([C@@H]1NC(=O)C(CCN)O)O)O[C@H]2[C@@H](C([C@H](O2)CO)O)O)O[C@@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CN)O)O)N)N.O.O.OS(=O)(=O)O.OS(=O)(=O)O
+  standard_inchi: InChI=1S/C21H41N5O12.2H2O4S.2H2O/c22-2-1-8(28)19(34)26-7-3-6(24)17(37-20-11(25)15(32)13(30)9(4-23)35-20)18(12(7)29)38-21-16(33)14(31)10(5-27)36-21;2*1-5(2,3)4;;/h6-18,20-21,27-33H,1-5,22-25H2,(H,26,34);2*(H2,1,2,3,4);2*1H2/t6-,7+,8?,9+,10+,11+,12-,13+,14?,15+,16+,17+,18+,20+,21-;;;;/m0..../s1
+  standard_inchi_key: IUQWHBUMCWSQIM-OXNIXSIASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000694
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Polyols
+  class_results:
+  - Amino cyclitols
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- pubchem:39862
+producer_organisms:
+- taxon_id: NCBITaxon:1397
+  taxon_label: Bacillus circulans
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000694
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:16156513
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000694 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000694
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1397
+  organism_label: Bacillus circulans
+  evidence:
+  - reference: PMID:16156513
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000694 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AJ781030.2
+  bgc_class:
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000694
+  source_label: butirosin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-ad20087e2e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

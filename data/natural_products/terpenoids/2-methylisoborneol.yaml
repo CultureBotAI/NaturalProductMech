@@ -1,0 +1,103 @@
+identifier: naturalproductmech:mibig-0eb8c93c6f
+label: 2-methylisoborneol
+chemical_structure:
+  smiles: CC1(C2CCC1(C(C2)(C)O)C)C
+  standard_inchi: InChI=1S/C11H20O/c1-9(2)8-5-6-10(9,3)11(4,12)7-8/h8,12H,5-7H2,1-4H3
+  standard_inchi_key: LFYXNXGVLGKVCJ-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000658
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Monoterpenoids
+  class_results:
+  - Camphane monoterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:16913
+producer_organisms:
+- taxon_id: NCBITaxon:455632
+  taxon_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000658
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17369815
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000658 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:405948
+  taxon_label: Saccharopolyspora erythraea NRRL 2338
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000659
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17369815
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000659 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000658
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455632
+  organism_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence:
+  - reference: PMID:17369815
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000658 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AP009493.1
+  locus_from: 1490671
+  locus_to: 1492896
+  bgc_class:
+  - TERPENE
+- accession: mibig:BGC0000659
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:405948
+  organism_label: Saccharopolyspora erythraea NRRL 2338
+  evidence:
+  - reference: PMID:17369815
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000659 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AM420293.1
+  locus_from: 4075163
+  locus_to: 4077099
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000658
+  source_label: 2-methylisoborneol
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0eb8c93c6f
+- source: MIBIG
+  source_id: BGC0000659
+  source_label: 2-methylisoborneol
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-19a995c5a5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000658, BGC0000659.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

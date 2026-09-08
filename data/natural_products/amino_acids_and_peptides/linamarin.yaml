@@ -1,0 +1,99 @@
+identifier: naturalproductmech:mibig-d87c012884
+label: linamarin
+chemical_structure:
+  smiles: CC(C)(C#N)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O
+  standard_inchi: InChI=1S/C10H17NO6/c1-10(2,4-11)17-9-8(15)7(14)6(13)5(3-12)16-9/h5-9,12-15H,3H2,1-2H3/t5-,6-,7+,8-,9+/m1/s1
+  standard_inchi_key: QLTCHMYAEJEXBT-ZEBDFXRSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001316
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Amino acid glycosides
+  class_results:
+  - Cyanogenic glycosides
+  is_glycoside: true
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:34305
+  taxon_label: Lotus japonicus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001316
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.3923/ijcr.2020.18.27
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001316 entry version 4; citation taken from the compound bioactivity
+      level
+- taxon_id: NCBITaxon:3983
+  taxon_label: Manihot esculenta
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001318
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:21707799
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001318 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001316
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:34305
+  organism_label: Lotus japonicus
+  evidence:
+  - reference: DOI:10.3923/ijcr.2020.18.27
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001316 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MIBIG.BGC0001316.1
+  bgc_class:
+  - OTHER
+- accession: mibig:BGC0001318
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:3983
+  organism_label: Manihot esculenta
+  evidence:
+  - reference: PMID:21707799
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001318 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MIBIG.BGC0001318.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001316
+  source_label: linamarin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-d87c012884
+- source: MIBIG
+  source_id: BGC0001318
+  source_label: linamarin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-9d564b52a2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001316, BGC0001318.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

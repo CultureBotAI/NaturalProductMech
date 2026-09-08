@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-f8bee7fa83
+label: streptoketide B
+chemical_structure:
+  smiles: CCC(O)=CC1=CC2=C3C(=CC4=CC=CC(=O)C4=C3O1)C[C@@H](CC(=O)OC)O2
+  standard_inchi: InChI=1S/C22H20O6/c1-3-14(23)9-16-10-18-21-13(8-15(27-18)11-19(25)26-2)7-12-5-4-6-17(24)20(12)22(21)28-16/h4-7,9-10,15,23H,3,8,11H2,1-2H3/t15-/m0/s1
+  standard_inchi_key: RKUGDRRWUUJGND-HNNXBMFYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002081
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Chromanes
+  class_results:
+  - Chromones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA032110
+producer_organisms:
+- taxon_id: NCBITaxon:2602572
+  taxon_label: Streptomyces sp. Tue6314
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002081
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1021/acs.joc.9b02741
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002081 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002081
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2602572
+  organism_label: Streptomyces sp. Tue6314
+  evidence:
+  - reference: DOI:10.1021/acs.joc.9b02741
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002081 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MK424349.1
+  locus_from: 5927
+  locus_to: 26330
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002081
+  source_label: streptoketide B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f8bee7fa83
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

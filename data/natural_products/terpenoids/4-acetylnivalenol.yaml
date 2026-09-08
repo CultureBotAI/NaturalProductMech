@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-9d360a983b
+label: 4-acetylnivalenol
+chemical_structure:
+  smiles: CC(=O)O[C@@H]1C[C@@H](O)[C@H]2O[C@@H]3C=C(C)C(=O)[C@@H](O)[C@]3(CO)[C@]1(C)[C@@]21CO1
+  standard_inchi: InChI=1S/C18H24O8/c1-8-4-12-17(6-19,14(23)13(8)22)16(3)11(25-9(2)20)5-10(21)15(26-12)18(16)7-24-18/h4,10-12,14-15,19,21,23H,5-7H2,1-3H3/t10-,11-,12-,14-,15-,16-,17-,18-/m1/s1
+  standard_inchi_key: LNISAMDQAWTXQV-DUFIIWHPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000930
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Trichothecane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+compound_classes:
+- Sesquiterpenoid
+xrefs:
+- pubchem:304599
+- chembl:CHEMBL2251641
+producer_organisms:
+- taxon_id: NCBITaxon:5518
+  taxon_label: Fusarium graminearum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000930
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1128/aem.68.5.2148-2154.2002
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000930 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000930
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5518
+  organism_label: Fusarium graminearum
+  evidence:
+  - reference: DOI:10.1128/aem.68.5.2148-2154.2002
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000930 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AF336365.2
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000930
+  source_label: 4-acetylnivalenol
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-9d360a983b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

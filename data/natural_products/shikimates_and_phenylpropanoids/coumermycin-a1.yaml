@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-05dad9ee33
+label: coumermycin A1
+chemical_structure:
+  smiles: CC1=CC=C(N1)C(=O)O[C@H]2[C@H]([C@@H](OC([C@@H]2OC)(C)C)OC3=C(C4=C(C=C3)C(=C(C(=O)O4)NC(=O)C5=CNC(=C5C)C(=O)NC6=C(C7=C(C(=C(C=C7)O[C@H]8[C@@H]([C@@H]([C@H](C(O8)(C)C)OC)OC(=O)C9=CC=C(N9)C)O)C)OC6=O)O)O)C)O
+  standard_inchi: InChI=1S/C55H59N5O20/c1-21-12-16-29(57-21)48(67)77-42-38(63)52(79-54(6,7)44(42)71-10)73-31-18-14-26-36(61)34(50(69)75-40(26)24(31)4)59-46(65)28-20-56-33(23(28)3)47(66)60-35-37(62)27-15-19-32(25(5)41(27)76-51(35)70)74-53-39(64)43(45(72-11)55(8,9)80-53)78-49(68)30-17-13-22(2)58-30/h12-20,38-39,42-45,52-53,56-58,61-64H,1-11H3,(H,59,65)(H,60,66)/t38-,39-,42+,43+,44-,45-,52-,53-/m1/s1
+  standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000833
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Coumarins
+  class_results:
+  - Simple coumarins
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+- OTHER
+xrefs:
+- pubchem:54675768
+- pubchem:54720057
+producer_organisms:
+- taxon_id: NCBITaxon:68264
+  taxon_label: Streptomyces rishiriensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000833
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:14285468
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000833 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000833
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68264
+  organism_label: Streptomyces rishiriensis
+  evidence:
+  - reference: PMID:14285468
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000833 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AF235050.4
+  locus_from: 2307
+  locus_to: 40140
+  bgc_class:
+  - SACCHARIDE
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000833
+  source_label: coumermycin A1
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-05dad9ee33
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

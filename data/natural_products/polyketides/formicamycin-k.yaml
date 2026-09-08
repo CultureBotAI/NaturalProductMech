@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-428f101e70
+label: formicamycin K
+chemical_structure:
+  smiles: CC1=CC(=CC(=C1C2=CC(=C(C3=C2C(=O)[C@@]4([C@H](C3)C(C5=C(C4=O)C(=C(C(=C5Br)O)Cl)O)(C)C)O)Cl)OC)OC)OC
+  standard_inchi: InChI=1S/C30H27BrCl2O8/c1-11-7-12(39-4)8-15(40-5)18(11)13-9-16(41-6)23(32)14-10-17-29(2,3)21-20(25(34)24(33)26(35)22(21)31)28(37)30(17,38)27(36)19(13)14/h7-9,17,34-35,38H,10H2,1-6H3/t17-,30-/m1/s1
+  standard_inchi_key: VBPSRGCJSHVRCC-BJLXPSRBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001590
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Fasamycins and derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Cyclic polyketide
+- Polycyclic polyketide
+xrefs:
+- pubchem:146684591
+producer_organisms:
+- taxon_id: NCBITaxon:1958824
+  taxon_label: Streptomyces sp. KY5
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001590
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2020.12.011
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001590 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001590
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1958824
+  organism_label: Streptomyces sp. KY5
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2020.12.011
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001590 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KX859301.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001590
+  source_label: formicamycin K
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-428f101e70
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

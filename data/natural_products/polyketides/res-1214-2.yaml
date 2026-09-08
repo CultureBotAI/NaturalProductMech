@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-e3ed04d0e4
+label: RES-1214-2
+chemical_structure:
+  smiles: CC1=CC(=C(C(=C1)OC2=C(C(=C(C=C2C(=O)OC)OC)Cl)O)C(=O)O)O
+  standard_inchi: InChI=1S/C17H15ClO8/c1-7-4-9(19)12(16(21)22)10(5-7)26-15-8(17(23)25-3)6-11(24-2)13(18)14(15)20/h4-6,19-20H,1-3H3,(H,21,22)
+  standard_inchi_key: CAXGJVQIPWBEJY-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000121
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Diphenyl ethers (DPEs)
+  class_results:
+  - Fungal DPEs
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Aromatic polyketide
+xrefs:
+- npatlas:NPA011068
+producer_organisms:
+- taxon_id: NCBITaxon:393283
+  taxon_label: Pestalotiopsis fici
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000121
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1002/cbic.201300626
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000121 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000121
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:393283
+  organism_label: Pestalotiopsis fici
+  evidence:
+  - reference: DOI:10.1002/cbic.201300626
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000121 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KC145148.1
+  locus_from: 4104
+  locus_to: 40346
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000121
+  source_label: RES-1214-2
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-e3ed04d0e4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

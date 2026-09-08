@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-f56b7488f0
+label: coelichelin
+chemical_structure:
+  smiles: C[C@@H](O)[C@@H](NC(=O)[C@H](N)CCCN(O)C=O)C(=O)N(O)CCC[C@H](NC(=O)[C@H](N)CCCN(O)C=O)C(O)=O
+  standard_inchi: InChI=1S/C21H39N7O11/c1-13(31)17(25-19(33)15(23)6-3-9-27(38)12-30)20(34)28(39)10-4-7-16(21(35)36)24-18(32)14(22)5-2-8-26(37)11-29/h11-17,31,37-39H,2-10,22-23H2,1H3,(H,24,32)(H,25,33)(H,35,36)/t13-,14-,15-,16+,17-/m1/s1
+  standard_inchi_key: ZPJLQAOTGYKOBJ-OVYGPGRDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000325
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  - Small peptides
+  class_results:
+  - Linear peptides
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA09051
+- pubchem:3247071
+producer_organisms:
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000325
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:12000953
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000325 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000325
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:100226
+  organism_label: Streptomyces coelicolor A3(2)
+  evidence:
+  - reference: PMID:12000953
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000325 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AL645882.2
+  locus_from: 510823
+  locus_to: 533448
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000325
+  source_label: coelichelin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f56b7488f0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

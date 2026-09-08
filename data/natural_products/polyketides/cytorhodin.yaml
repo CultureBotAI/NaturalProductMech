@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-bad69249f0
+label: cytorhodin
+chemical_structure:
+  smiles: CCC1(CC(C2=C(C3=C(C(=C2C1)O)C(=O)C4=C(C3=O)C=CC=C4O)O)OC5CC(C(C(O5)C)OC6CCC(C(O6)C)OC7CCC(C(O7)C)O)N(C)C)OC8CC(C(C(O8)C)O)N(C)C
+  standard_inchi: InChI=1S/C48H68N2O15/c1-10-48(65-37-18-28(49(6)7)42(53)24(4)60-37)20-27-39(46(57)40-41(44(27)55)45(56)38-26(43(40)54)12-11-13-31(38)52)33(21-48)63-36-19-29(50(8)9)47(25(5)61-36)64-35-17-15-32(23(3)59-35)62-34-16-14-30(51)22(2)58-34/h11-13,22-25,28-30,32-37,42,47,51-53,55,57H,10,14-21H2,1-9H3
+  standard_inchi_key: LDUVDGXPXDRENL-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001568
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthracyclines
+  is_glycoside: true
+bgc_class:
+- PKS
+compound_classes:
+- Cyclic polyketide
+- Aminoglycoside
+producer_organisms:
+- taxon_id: NCBITaxon:861528
+  taxon_label: Streptomyces sp. SCSIO 1666
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001568
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28971684
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001568 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001568
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:861528
+  organism_label: Streptomyces sp. SCSIO 1666
+  evidence:
+  - reference: PMID:28971684
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001568 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MF773975.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001568
+  source_label: cytorhodin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-bad69249f0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

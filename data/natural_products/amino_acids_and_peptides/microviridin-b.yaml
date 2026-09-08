@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-7bfc47df44
+label: microviridin B
+chemical_structure:
+  smiles: CC(C)C[C@@H]1NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CC2=CC=CC=C2)NC(C)=O)[C@@H](C)O)[C@@H](C)OC(=O)C[C@@H]2NC(=O)[C@@H]3COC(=O)CC[C@H](NC(=O)[C@H](CC4=CC5=CC=CC=C5N4)NC2=O)C(=O)N[C@@H](CCC(=O)NCCCC[C@H](NC1=O)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(=O)N1CCC[C@H]1C(=O)N3)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(O)=O
+  standard_inchi: InChI=1S/C84H106N16O24/c1-43(2)34-58-76(113)89-55-18-11-12-32-85-66(105)30-28-56(75(112)96-63(84(121)122)37-49-22-26-53(104)27-23-49)90-74(111)57-29-31-68(107)123-42-64(97-80(117)65-19-13-33-100(65)83(120)62(95-73(55)110)36-48-20-24-52(103)25-21-48)79(116)93-61(78(115)92-60(77(114)91-57)39-51-38-50-16-9-10-17-54(50)88-51)40-69(108)124-45(4)71(82(119)94-58)99-81(118)70(44(3)101)98-67(106)41-86-72(109)59(87-46(5)102)35-47-14-7-6-8-15-47/h6-10,14-17,20-27,38,43-45,55-65,70-71,88,101,103-104H,11-13,18-19,28-37,39-42H2,1-5H3,(H,85,105)(H,86,109)(H,87,102)(H,89,113)(H,90,111)(H,91,114)(H,92,115)(H,93,116)(H,94,119)(H,95,110)(H,96,112)(H,97,117)(H,98,106)(H,99,118)(H,121,122)/t44-,45-,55+,56+,57+,58+,59+,60+,61+,62+,63+,64+,65+,70+,71+/m1/s1
+  standard_inchi_key: SSXIRHWTKBSKKV-DBBDCZJTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000592
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA011740
+producer_organisms:
+- taxon_id: NCBITaxon:449468
+  taxon_label: Microcystis aeruginosa NIES-298
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000592
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:18683268
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000592 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000592
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:449468
+  organism_label: Microcystis aeruginosa NIES-298
+  evidence:
+  - reference: PMID:18683268
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000592 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM943877.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000592
+  source_label: microviridin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7bfc47df44
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

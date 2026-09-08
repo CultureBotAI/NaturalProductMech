@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-44bf0cb08c
+label: chitinimide C
+chemical_structure:
+  smiles: CC=C(NC(=O)N[C@@H](CC1=CC=CC=C1)C(=O)O)C(=O)N[C@@H](CO)C(=O)NC(=CC)C(=O)N[C@@H](CCCN=C(N)N)C(=O)N1CCC[C@H]1C1=NC(C(=O)N[C@@H](CCSC)C(=O)O[C@@H](CC(=O)O)[C@@H]2CCCN2C(=O)[C@@H](N)[C@@H](C)CC)=CS1
+  standard_inchi: InChI=1S/C53H77N13O14S2/c1-6-29(4)42(54)49(75)65-22-13-18-38(65)40(26-41(68)69)80-51(78)34(20-24-81-5)60-46(73)37-28-82-47(62-37)39-19-14-23-66(39)48(74)33(17-12-21-57-52(55)56)59-43(70)31(7-2)58-45(72)36(27-67)61-44(71)32(8-3)63-53(79)64-35(50(76)77)25-30-15-10-9-11-16-30/h7-11,15-16,28-29,33-36,38-40,42,67H,6,12-14,17-27,54H2,1-5H3,(H,58,72)(H,59,70)(H,60,73)(H,61,71)(H,68,69)(H,76,77)(H4,55,56,57)(H2,63,64,79)/t29-,33-,34-,35-,36-,38-,39-,40-,42-/m0/s1
+  standard_inchi_key: HDVZQRCXBXHORW-IAJMOZIHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002503
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA033507
+producer_organisms:
+- taxon_id: NCBITaxon:1934313
+  taxon_label: Chitinimonas sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002503
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:34301933
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002503 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002503
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1934313
+  organism_label: Chitinimonas sp.
+  evidence:
+  - reference: PMID:34301933
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002503 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MW160162.1
+  locus_from: 1
+  locus_to: 46474
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002503
+  source_label: chitinimide C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-44bf0cb08c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

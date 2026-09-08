@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-dea231bc6b
+label: phomoidride
+chemical_structure:
+  smiles: C/C=C/CCCCC[C@@H]1C=C2[C@@]3(CC4=C([C@H]([C@H]1C[C@@H](C(=O)CC/C=C/C)O)[C@]2(OC3=O)O)C(=O)OC4=O)CC(=O)O
+  standard_inchi: InChI=1S/C31H38O10/c1-3-5-7-8-9-11-12-18-14-23-30(17-24(34)35)16-20-25(28(37)40-27(20)36)26(31(23,39)41-29(30)38)19(18)15-22(33)21(32)13-10-6-4-2/h3-6,14,18-19,22,26,33,39H,7-13,15-17H2,1-2H3,(H,34,35)/b5-3+,6-4+/t18-,19+,22+,26+,30-,31+/m1/s1
+  standard_inchi_key: PXJMQYXPSSIUGS-SWKYPTEISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001913
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - Nonadrides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:101090887
+producer_organisms:
+- taxon_id: NCBITaxon:1729595
+  taxon_label: fungal sp. ATCC 74256
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001913
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26558485
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001913 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001913
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1729595
+  organism_label: fungal sp. ATCC 74256
+  evidence:
+  - reference: PMID:26558485
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001913 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LC086931.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001913
+  source_label: phomoidride
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-dea231bc6b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

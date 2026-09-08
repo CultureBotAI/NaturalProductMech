@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-d92b2ea2ac
+label: sespendole
+chemical_structure:
+  smiles: '[H][C@]12CC3=C(NC4=CC=C([C@H](O)C5OC5(C)C)C(CC=C(C)C)=C34)[C@]1(C)[C@@]1(C)CCC(=O)C(C)(C)[C@]1(O)CC2'
+  standard_inchi: InChI=1S/C33H45NO4/c1-18(2)9-10-20-21(26(36)28-30(5,6)38-28)11-12-23-25(20)22-17-19-13-16-33(37)29(3,4)24(35)14-15-31(33,7)32(19,8)27(22)34-23/h9,11-12,19,26,28,34,36-37H,10,13-17H2,1-8H3/t19-,26-,28?,31+,32+,33+/m0/s1
+  standard_inchi_key: QMEIUISJYPRNPF-ZWXFSXOLSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001775
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Terpenoids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Indole-Diterpenoid alkaloids (Penitrems)
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA09868
+producer_organisms:
+- taxon_id: NCBITaxon:1293529
+  taxon_label: Cordana terrestris
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001775
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:29718548
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001775 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001775
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1293529
+  organism_label: Cordana terrestris
+  evidence:
+  - reference: PMID:29718548
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001775 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LC380446.1
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001775
+  source_label: sespendole
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-d92b2ea2ac
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

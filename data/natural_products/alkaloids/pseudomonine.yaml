@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-d217071bcc
+label: pseudomonine
+chemical_structure:
+  smiles: CC1ON(CCC2=CNC=N2)C(=O)C1NC(=O)C1=CC=CC=C1O
+  standard_inchi: InChI=1S/C16H18N4O4/c1-10-14(19-15(22)12-4-2-3-5-13(12)21)16(23)20(24-10)7-6-11-8-17-9-18-11/h2-5,8-10,14,21H,6-7H2,1H3,(H,17,18)(H,19,22)
+  standard_inchi_key: XYEWTJQWOJBDBL-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000410
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Histidine alkaloids
+  class_results:
+  - Imidazole alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA014034
+producer_organisms:
+- taxon_id: NCBITaxon:294
+  taxon_label: Pseudomonas fluorescens
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000410
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:11222588
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000410 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000410
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:294
+  organism_label: Pseudomonas fluorescens
+  evidence:
+  - reference: PMID:11222588
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000410 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF484930.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000410
+  source_label: pseudomonine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d217071bcc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

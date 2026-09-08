@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-66fe38f8e4
+label: thiomuracin A
+chemical_structure:
+  smiles: C[C@@H](C1CO1)[C@@H]1NC(=O)[C@H](CC2=CC=C(O)C=C2)NC(=O)C2=CSC(=N2)[C@@H](NC(=O)C2=C(C)SC(=N2)[C@H](CC(N)=O)NC(=O)C2=CSC(=N2)C2=C(N=C(C=C2)C2=NC(=CS2)C(=O)NC(=C)C(=O)NC(=C)C(O)=O)C2=CSC(=N2)C2=CSC1=N2)[C@H](O)C1=CC=CC=C1
+  standard_inchi: InChI=1S/C59H50N14O12S6/c1-24(40-18-85-40)42-57-70-39(23-90-57)55-66-35(19-87-55)44-31(14-15-32(63-44)54-68-36(21-88-54)49(79)61-25(2)47(77)62-26(3)59(83)84)53-67-37(20-86-53)51(81)65-34(17-41(60)75)56-73-43(27(4)91-56)52(82)72-45(46(76)29-8-6-5-7-9-29)58-69-38(22-89-58)50(80)64-33(48(78)71-42)16-28-10-12-30(74)13-11-28/h5-15,19-24,33-34,40,42,45-46,74,76H,2-3,16-18H2,1,4H3,(H2,60,75)(H,61,79)(H,62,77)(H,64,80)(H,65,81)(H,71,78)(H,72,82)(H,83,84)/t24-,33-,34-,40?,42-,45-,46+/m0/s1
+  standard_inchi_key: ZNNAUCGMAFZTIY-JVLMLHMMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000613
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA0468
+producer_organisms:
+- taxon_id: NCBITaxon:653921
+  taxon_label: Nonomuraea sp. Bp3714-39
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000613
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Gene expression correlated with compound production.'
+  evidence:
+  - reference: PMID:19338336
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000613 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000613
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:653921
+  organism_label: Nonomuraea sp. Bp3714-39
+  evidence:
+  - reference: PMID:19338336
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000613 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FJ461360.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000613
+  source_label: thiomuracin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-66fe38f8e4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-da6254e273
+label: WS9326F
+chemical_structure:
+  smiles: CCC/C=C\C1=CC=CC=C1/C=C/C(=O)N[C@@H]([C@H](C)O)C(=O)N(C)/C(=C/C2=CC=C(C=C2)O)/C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CC3=CC=CC=C3)C(=O)N[C@@H](C(C)O)C(=O)N[C@@H](CC(=O)N)C(=O)O
+  standard_inchi: InChI=1S/C51H65N7O12/c1-7-8-10-17-35-18-13-14-19-36(35)22-25-43(63)56-45(32(5)60)50(68)58(6)41(28-34-20-23-37(61)24-21-34)48(66)54-38(26-30(2)3)46(64)53-39(27-33-15-11-9-12-16-33)47(65)57-44(31(4)59)49(67)55-40(51(69)70)29-42(52)62/h9-25,28,30-32,38-40,44-45,59-61H,7-8,26-27,29H2,1-6H3,(H2,52,62)(H,53,64)(H,54,66)(H,55,67)(H,56,63)(H,57,65)(H,69,70)/b17-10-,25-22+,41-28+/t31?,32-,38-,39+,40-,44-,45-/m0/s1
+  standard_inchi_key: HVYURUAVHZAISJ-NVDQEQGNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002377
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA024436
+producer_organisms:
+- taxon_id: NCBITaxon:1571707
+  taxon_label: Streptomyces sp. SNM55
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002377
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:33963654
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002377 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002377
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1571707
+  organism_label: Streptomyces sp. SNM55
+  evidence:
+  - reference: PMID:33963654
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002377 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MH243323.1
+  locus_from: 1
+  locus_to: 58067
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002377
+  source_label: WS9326F
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-da6254e273
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

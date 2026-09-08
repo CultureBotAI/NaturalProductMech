@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-49a15188aa
+label: chaetoviridin E
+chemical_structure:
+  smiles: CC[C@@H](C)\C=C\C1=CC2=C(Cl)C(=O)[C@@]3(C)OC(=O)C(C(=O)[C@@H](C)[C@@H](C)O)=C3C2=CO1
+  standard_inchi: InChI=1S/C23H25ClO6/c1-6-11(2)7-8-14-9-15-16(10-29-14)18-17(20(26)12(3)13(4)25)22(28)30-23(18,5)21(27)19(15)24/h7-13,25H,6H2,1-5H3/b8-7+/t11-,12+,13-,23+/m1/s1
+  standard_inchi_key: HWSQVPGTQUYLEQ-KHGBAPSLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001405
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Chromanes
+  class_results:
+  - Azaphilones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA014614
+producer_organisms:
+- taxon_id: NCBITaxon:306901
+  taxon_label: Chaetomium globosum CBS 148.51
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001405
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23072467
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001405 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001405
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:306901
+  organism_label: Chaetomium globosum CBS 148.51
+  evidence:
+  - reference: PMID:23072467
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001405 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CH408033.1
+  locus_from: 2447651
+  locus_to: 2507160
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001405
+  source_label: chaetoviridin E
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-49a15188aa
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

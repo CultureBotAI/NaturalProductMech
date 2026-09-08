@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-bacca10352
+label: BE-54017
+chemical_structure:
+  smiles: COC1=C2N(C3=CC=CC=C13)[C@]1(O)C(=O)N(C)C(=O)[C@]1(O)C1=C2N(C)C2=CC=C(Cl)C=C12
+  standard_inchi: InChI=1S/C23H18ClN3O5/c1-25-14-9-8-11(24)10-13(14)16-17(25)18-19(32-3)12-6-4-5-7-15(12)27(18)23(31)21(29)26(2)20(28)22(16,23)30/h4-10,30-31H,1-3H3/t22-,23+/m1/s1
+  standard_inchi_key: IZWAXTFKQJBRQO-PKTZIBPZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001333
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carboline alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA05807
+- pubchem:66575233
+producer_organisms:
+- taxon_id: NCBITaxon:1047164
+  taxon_label: uncultured bacterium AB1650
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001333
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production.'
+  evidence:
+  - reference: PMID:21542592
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001333 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001333
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1047164
+  organism_label: uncultured bacterium AB1650
+  evidence:
+  - reference: PMID:21542592
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001333 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JF439215.1
+  locus_from: 2570
+  locus_to: 22587
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001333
+  source_label: BE-54017
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-bacca10352
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

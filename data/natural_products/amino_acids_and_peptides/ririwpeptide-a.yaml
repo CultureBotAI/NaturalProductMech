@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-18630c76c6
+label: ririwpeptide A
+chemical_structure:
+  smiles: CC[C@H](C)[C@H](NC(=O)[C@H](N)CCCN=C(N)N)C(=O)N[C@H](CCCN=C(N)N)C(=O)N[C@@H](C(=O)N[C@@H](CC1=C[NH]C2=CC=CC=C12)C(=O)O)[C@@H](C)CC
+  standard_inchi: InChI=1S/C35H58N12O6/c1-5-19(3)27(46-29(48)23(36)12-9-15-41-34(37)38)31(50)44-25(14-10-16-42-35(39)40)30(49)47-28(20(4)6-2)32(51)45-26(33(52)53)17-21-18-43-24-13-8-7-11-22(21)24/h7-8,11,13,18-20,23,25-28,43H,5-6,9-10,12,14-17,36H2,1-4H3,(H,44,50)(H,45,51)(H,46,48)(H,47,49)(H,52,53)(H4,37,38,41)(H4,39,40,42)/t19-,20-,23+,25+,26-,27-,28+/m0/s1
+  standard_inchi_key: QXMGIQHCGKVZDU-PKXPXLPOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002286
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA032928
+producer_organisms:
+- taxon_id: NCBITaxon:243265
+  taxon_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002286
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:31611640
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002286 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002286
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:243265
+  organism_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence:
+  - reference: PMID:31611640
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002286 entry version 3; citation taken from the entry level
+  genome_accession: genbank:BX470251.1
+  locus_from: 3646119
+  locus_to: 3662492
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002286
+  source_label: ririwpeptide A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-18630c76c6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

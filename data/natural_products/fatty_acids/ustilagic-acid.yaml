@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-df8e69d398
+label: ustilagic acid
+chemical_structure:
+  smiles: CCCC(CC(=O)OC1[C@H]([C@@H](C(O[C@H]1O[C@H]2[C@@H](C([C@@H](OC2COC(=O)C)OCC(CCCCCCCCCCCCC(C(=O)O)O)O)O)O)CO)O)O)O
+  standard_inchi: InChI=1S/C36H64O18/c1-3-14-22(39)17-27(42)53-33-29(44)28(43)25(18-37)51-36(33)54-32-26(20-49-21(2)38)52-35(31(46)30(32)45)50-19-23(40)15-12-10-8-6-4-5-7-9-11-13-16-24(41)34(47)48/h22-26,28-33,35-37,39-41,43-46H,3-20H2,1-2H3,(H,47,48)/t22?,23?,24?,25?,26?,28-,29+,30-,31?,32-,33?,35-,36+/m1/s1
+  standard_inchi_key: OUCYENMKGCGOOQ-SYULUIEFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001281
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty acyl glycosides
+  class_results:
+  - Fatty acyl glycosides of mono- and disaccharides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:52922086
+producer_organisms:
+- taxon_id: NCBITaxon:237631
+  taxon_label: Ustilago maydis 521
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001281
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:21926207
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001281 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001281
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:237631
+  organism_label: Ustilago maydis 521
+  evidence:
+  - reference: PMID:21926207
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001281 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NC_026500.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001281
+  source_label: ustilagic acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-df8e69d398
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

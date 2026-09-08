@@ -1,0 +1,105 @@
+identifier: naturalproductmech:mibig-c4beb24d4c
+label: heronamide C
+chemical_structure:
+  smiles: CCC\C=C\C=C\C[C@@H]1C\C=C\C=C(/C)\C=C\C=C/[C@H](O)[C@H](O)\C=C(/C)\C=C\C=C\C(=O)N1
+  standard_inchi: InChI=1S/C29H39NO3/c1-4-5-6-7-8-9-19-26-20-13-10-16-24(2)17-11-14-21-27(31)28(32)23-25(3)18-12-15-22-29(33)30-26/h6-18,21-23,26-28,31-32H,4-5,19-20H2,1-3H3,(H,30,33)/b7-6+,9-8+,13-10+,17-11+,18-12+,21-14-,22-15+,24-16+,25-23+/t26-,27+,28-/m1/s1
+  standard_inchi_key: QUZNSWBEDCHESP-PLHCRRTDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001349
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactams
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA02588
+- pubchem:102257461
+- npatlas:NPA002588
+producer_organisms:
+- taxon_id: NCBITaxon:2878388
+  taxon_label: Streptomyces sp. SCSIO 03032
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001349
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26194087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001349 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1826667
+  taxon_label: Streptomyces sp. CMB-0406 CBM-0406
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002101
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:27091090
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002101 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001349
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2878388
+  organism_label: Streptomyces sp. SCSIO 03032
+  evidence:
+  - reference: PMID:26194087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001349 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KP742963.1
+  bgc_class:
+  - NRPS
+  - PKS
+- accession: mibig:BGC0002101
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1826667
+  organism_label: Streptomyces sp. CMB-0406 CBM-0406
+  evidence:
+  - reference: PMID:27091090
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002101 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LT548273.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001349
+  source_label: heronamide C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c4beb24d4c
+- source: MIBIG
+  source_id: BGC0002101
+  source_label: heronamide C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-3ccccf980e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001349, BGC0002101.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

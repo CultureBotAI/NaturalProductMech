@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-e7c0275864
+label: chevalone E
+chemical_structure:
+  smiles: CC1=CC(=O)C2=C(O[C@@]3(C)CC[C@H]4[C@@](C)(CC[C@H]5C(C)(C)[C@@H](O)CC[C@@]54C)[C@@H]3C2)O1
+  standard_inchi: InChI=1S/C26H38O4/c1-15-13-17(27)16-14-20-25(5)10-7-18-23(2,3)21(28)9-11-24(18,4)19(25)8-12-26(20,6)30-22(16)29-15/h13,18-21,28H,7-12,14H2,1-6H3/t18-,19+,20-,21-,24-,25+,26-/m0/s1
+  standard_inchi_key: PSHUZQHBLAPAMD-KFCOXGNHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002603
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Triketide meroterpenoids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA016726
+producer_organisms:
+- taxon_id: NCBITaxon:46472
+  taxon_label: Aspergillus versicolor
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002603
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.3390/md12105160
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002603 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002603
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:46472
+  organism_label: Aspergillus versicolor
+  evidence:
+  - reference: DOI:10.3390/md12105160
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002603 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:LC422695.1
+  locus_from: 817
+  locus_to: 17858
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002603
+  source_label: chevalone E
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-e7c0275864
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

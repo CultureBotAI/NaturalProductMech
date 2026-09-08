@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-afa0e24c6a
+label: scytocyclamide A2
+chemical_structure:
+  smiles: C/C=C1/NC(=O)[C@H](CCC(N)=O)NC(=O)CC(CCCCC)NC(=O)CNC(=O)[C@H](CC(C)C)NC(=O)[C@@H]([C@@H](C)CC)NC(=O)[C@H]([C@@H](C)CC)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](CC2=CC=CC=C2)NC(=O)[C@H](CCO)NC(=O)[C@@H]2CCCN2C1=O
+  standard_inchi: InChI=1S/C61H98N12O13/c1-11-15-17-23-40-33-49(76)65-42(25-26-48(62)75)54(79)66-41(14-4)61(86)73-28-20-24-47(73)58(83)67-43(27-29-74)55(80)69-46(32-39-21-18-16-19-22-39)56(81)68-45(31-36(7)8)57(82)71-52(38(10)13-3)60(85)72-51(37(9)12-2)59(84)70-44(30-35(5)6)53(78)63-34-50(77)64-40/h14,16,18-19,21-22,35-38,40,42-47,51-52,74H,11-13,15,17,20,23-34H2,1-10H3,(H2,62,75)(H,63,78)(H,64,77)(H,65,76)(H,66,79)(H,67,83)(H,68,81)(H,69,80)(H,70,84)(H,71,82)(H,72,85)/b41-14+/t37-,38-,40?,42-,43-,44-,45+,46+,47-,51+,52-/m0/s1
+  standard_inchi_key: RKZXFUNWWLAGGB-UATNWESBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002484
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Lipopeptide
+- Macrocyclic
+xrefs:
+- npatlas:NPA032954
+producer_organisms:
+- taxon_id: NCBITaxon:128403
+  taxon_label: Scytonema hofmannii PCC 7110
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002484
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.3389/fmicb.2020.578878
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002484 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002484
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:128403
+  organism_label: Scytonema hofmannii PCC 7110
+  evidence:
+  - reference: DOI:10.3389/fmicb.2020.578878
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002484 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KQ976354.1
+  locus_from: 3716086
+  locus_to: 3812822
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002484
+  source_label: scytocyclamide A2
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-afa0e24c6a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

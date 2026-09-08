@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-fd260f24d4
+label: acetylaszonalenin
+chemical_structure:
+  smiles: CC(=O)N1[C@H]2[C@](C[C@H]3N2C(=O)C4=CC=CC=C4NC3=O)(C5=CC=CC=C51)C(C)(C)C=C
+  standard_inchi: InChI=1S/C25H25N3O3/c1-5-24(3,4)25-14-20-21(30)26-18-12-8-6-10-16(18)22(31)28(20)23(25)27(15(2)29)19-13-9-7-11-17(19)25/h5-13,20,23H,1,14H2,2-4H3,(H,26,30)/t20-,23-,25+/m1/s1
+  standard_inchi_key: TXNJQKDZOVFCAQ-XRODADMRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000293
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Other indole diketopiperazine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:102032591
+producer_organisms:
+- taxon_id: NCBITaxon:331117
+  taxon_label: Aspergillus fischeri NRRL 181
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000293
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.3389/fphar.2022.1006062
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000293 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000293
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:331117
+  organism_label: Aspergillus fischeri NRRL 181
+  evidence:
+  - reference: DOI:10.3389/fphar.2022.1006062
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000293 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:DS027698.1
+  locus_from: 2428387
+  locus_to: 2441151
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000293
+  source_label: acetylaszonalenin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-fd260f24d4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

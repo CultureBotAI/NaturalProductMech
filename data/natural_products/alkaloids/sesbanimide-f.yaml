@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-779c0d4054
+label: sesbanimide F
+chemical_structure:
+  smiles: C=C(COC(=O)CCCCC/C=C/C=C/C(=O)O)C(C)C(=O)C(OC)C(O)CC1CC(=O)NC(=O)C1
+  standard_inchi: InChI=1S/C26H37NO9/c1-17(16-36-24(33)12-10-8-6-4-5-7-9-11-23(31)32)18(2)25(34)26(35-3)20(28)13-19-14-21(29)27-22(30)15-19/h5,7,9,11,18-20,26,28H,1,4,6,8,10,12-16H2,2-3H3,(H,31,32)(H,27,29,30)/b7-5+,11-9+
+  standard_inchi_key: MHWVTRIHXIJYOF-JEGFTUTRSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002082
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Lysine alkaloids
+  class_results:
+  - Piperidine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA033221
+producer_organisms:
+- taxon_id: NCBITaxon:538381
+  taxon_label: Stappia indica
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002082
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.51.64
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002082 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002082
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:538381
+  organism_label: Stappia indica
+  evidence:
+  - reference: DOI:10.7164/antibiotics.51.64
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002082 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP046908.1
+  locus_from: 4404390
+  locus_to: 4466149
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002082
+  source_label: sesbanimide F
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-779c0d4054
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

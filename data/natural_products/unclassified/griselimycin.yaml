@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-ff861ceaab
+label: griselimycin
+chemical_structure:
+  smiles: C[C@@H]1C[C@H]2C(=O)N[C@H](C(=O)N([C@H](C(=O)N3CCC[C@H]3C(=O)N([C@H](C(=O)NCC(=O)OC([C@@H](C(=O)N[C@H](C(=O)N2C1)CC(C)C)N(C)C(=O)[C@@H]4C[C@H](CN4C(=O)[C@H](C(C)C)N(C)C(=O)C)C)C)CC(C)C)C)C(C)C)C)CC(C)C
+  standard_inchi: InChI=1S/C57H96N10O12/c1-30(2)22-39-52(73)63(17)47(34(9)10)56(77)65-21-19-20-41(65)54(75)62(16)42(24-32(5)6)49(70)58-27-45(69)79-37(13)48(51(72)60-40(23-31(3)4)53(74)66-28-35(11)25-43(66)50(71)59-39)64(18)55(76)44-26-36(12)29-67(44)57(78)46(33(7)8)61(15)38(14)68/h30-37,39-44,46-48H,19-29H2,1-18H3,(H,58,70)(H,59,71)(H,60,72)/t35-,36-,37?,39+,40+,41+,42+,43+,44+,46+,47+,48+/m1/s1
+  standard_inchi_key: JSNIAKPKPNJUEP-UHUGAYFASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001414
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:5458473
+producer_organisms:
+- taxon_id: NCBITaxon:1077944
+  taxon_label: Streptomyces muensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001414
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26045430
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001414 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001414
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1077944
+  organism_label: Streptomyces muensis
+  evidence:
+  - reference: PMID:26045430
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001414 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KP211414.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001414
+  source_label: griselimycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ff861ceaab
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

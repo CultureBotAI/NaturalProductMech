@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-bb86611e1c
+label: dkxanthene 586
+chemical_structure:
+  smiles: C[C@@H]1[C@H](N=C(O1)/C=C/C2=CC=CN2)/C=C(\C)/C=C/C=C/C=C/C=C/C=C/C=C/C=C(\C)/C(=O)NC(C(C(=O)N)O)C(=O)O
+  standard_inchi: InChI=1S/C33H38N4O6/c1-23(22-27-25(3)43-28(36-27)20-19-26-18-15-21-35-26)16-13-11-9-7-5-4-6-8-10-12-14-17-24(2)32(40)37-29(33(41)42)30(38)31(34)39/h4-22,25,27,29-30,35,38H,1-3H3,(H2,34,39)(H,37,40)(H,41,42)/b6-4+,7-5+,10-8+,11-9+,14-12+,16-13+,20-19+,23-22+,24-17+/t25-,27-,29?,30?/m1/s1
+  standard_inchi_key: GPQNFPNWHXLGOB-ZRFBTFENSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000986
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Peptide alkaloids
+  - Linear polyketides
+  class_results:
+  - DKXanthenes and derivatives
+  - Simple amide alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:378806
+  taxon_label: Stigmatella aurantiaca DW4/3-1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000986
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:18721748
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000986 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000986
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:378806
+  organism_label: Stigmatella aurantiaca DW4/3-1
+  evidence:
+  - reference: PMID:18721748
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000986 entry version 5; citation taken from the entry level
+  genome_accession: genbank:BN001209.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000986
+  source_label: dkxanthene 586
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-bb86611e1c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

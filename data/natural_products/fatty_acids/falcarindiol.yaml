@@ -1,0 +1,75 @@
+identifier: naturalproductmech:mibig-69d89b774c
+label: falcarindiol
+chemical_structure:
+  smiles: CCCCCCC/C=C\[C@@H](C#CC#C[C@@H](C=C)O)O
+  standard_inchi: InChI=1S/C17H24O2/c1-3-5-6-7-8-9-10-14-17(19)15-12-11-13-16(18)4-2/h4,10,14,16-19H,2-3,5-9H2,1H3/b14-10-/t16-,17+/m1/s1
+  standard_inchi_key: QWCNQXNAFCBLLV-YWALDVPYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002404
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty acyls
+  class_results:
+  - Fatty alcohols
+  is_glycoside: false
+bgc_class:
+- OTHER
+compound_classes:
+- Fatty acid
+xrefs:
+- pubchem:5281148
+producer_organisms:
+- taxon_id: NCBITaxon:4081
+  taxon_label: Solanum lycopersicum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002404
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production.'
+  evidence:
+  - reference: DOI:10.1016/j.jep.2007.05.005
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002404 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002404
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:4081
+  organism_label: Solanum lycopersicum
+  evidence:
+  - reference: DOI:10.1016/j.jep.2007.05.005
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002404 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:GPC_000003970.1
+  locus_from: 68007493
+  locus_to: 68031028
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002404
+  source_label: falcarindiol
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-69d89b774c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

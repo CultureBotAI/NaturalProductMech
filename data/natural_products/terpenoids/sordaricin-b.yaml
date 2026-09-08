@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-c3d24ab1b9
+label: sordaricin B
+chemical_structure:
+  smiles: C[C@@H]1CC[C@@H]2[C@@H]1C[C@@]3([C@@H]4C[C@]2([C@]3(C(=C4)C(C)C)C(=O)O)C(=O)O)CO
+  standard_inchi: InChI=1S/C20H28O5/c1-10(2)15-6-12-7-19(16(22)23)14-5-4-11(3)13(14)8-18(12,9-21)20(15,19)17(24)25/h6,10-14,21H,4-5,7-9H2,1-3H3,(H,22,23)(H,24,25)/t11-,12+,13-,14-,18+,19-,20-/m1/s1
+  standard_inchi_key: JDHBTAMRRVLZRQ-IKASBTCNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002651
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Tetracyclic diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA025479
+producer_organisms:
+- taxon_id: NCBITaxon:77044
+  taxon_label: Rosellinia necatrix
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002651
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.26434/chemrxiv-2022-dst89
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002651 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002651
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:77044
+  organism_label: Rosellinia necatrix
+  evidence:
+  - reference: DOI:10.26434/chemrxiv-2022-dst89
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002651 entry version 2; citation taken from the entry level
+  genome_accession: genbank:DF977497.1
+  locus_from: 11097
+  locus_to: 27954
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002651
+  source_label: sordaricin B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c3d24ab1b9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

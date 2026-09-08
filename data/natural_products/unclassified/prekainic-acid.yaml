@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-466d3fef37
+label: prekainic acid
+chemical_structure:
+  smiles: CC(=CC[NH2+][C@@H](CCC(=O)[O-])C(=O)[O-])C
+  standard_inchi: InChI=1S/C10H17NO4/c1-7(2)5-6-11-8(10(14)15)3-4-9(12)13/h5,8,11H,3-4,6H2,1-2H3,(H,12,13)(H,14,15)/p-1/t8-/m0/s1
+  standard_inchi_key: GTTRMHDYNCRQPY-QMMMGPOBSA-M
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002644
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Aminoacids
+  is_glycoside: false
+bgc_class:
+- OTHER
+- TERPENE
+compound_classes:
+- Terpenoid-alkaloid
+xrefs:
+- pubchem:145865137
+producer_organisms:
+- taxon_id: NCBITaxon:860625
+  taxon_label: Chondria armata
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002644
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: DOI:10.1073/pnas.2117407119
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002644 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002644
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:860625
+  organism_label: Chondria armata
+  evidence:
+  - reference: DOI:10.1073/pnas.2117407119
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002644 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:OK169902.1
+  locus_to: 7903
+  bgc_class:
+  - OTHER
+  - TERPENE
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002644
+  source_label: prekainic acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-466d3fef37
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,102 @@
+identifier: naturalproductmech:mibig-6d6d3500e9
+label: vanchrobactin
+chemical_structure:
+  smiles: NC(=N)NCCC[C@@H](NC(=O)C1=CC=CC(O)=C1O)C(=O)N[C@@H](CO)C(O)=O
+  standard_inchi: InChI=1S/C16H23N5O7/c17-16(18)19-6-2-4-9(14(26)21-10(7-22)15(27)28)20-13(25)8-3-1-5-11(23)12(8)24/h1,3,5,9-10,22-24H,2,4,6-7H2,(H,20,25)(H,21,26)(H,27,28)(H4,17,18,19)/t9-,10+/m1/s1
+  standard_inchi_key: LXNCWECCTQQXPQ-ZJUUUORDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000454
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA016075
+- pubchem:16658367
+producer_organisms:
+- taxon_id: NCBITaxon:989499
+  taxon_label: Vibrio anguillarum RV22
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000454
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17159203
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000454 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:680
+  taxon_label: Vibrio campbellii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002415
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:22275102
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002415 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000454
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:989499
+  organism_label: Vibrio anguillarum RV22
+  evidence:
+  - reference: PMID:17159203
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000454 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM168450.2
+  bgc_class:
+  - NRPS
+- accession: mibig:BGC0002415
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:680
+  organism_label: Vibrio campbellii
+  evidence:
+  - reference: PMID:22275102
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002415 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP030789.1
+  locus_from: 1592806
+  locus_to: 1607403
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000454
+  source_label: vanchrobactin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6d6d3500e9
+- source: MIBIG
+  source_id: BGC0002415
+  source_label: vanchrobactin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-76a192eb61
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000454, BGC0002415.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

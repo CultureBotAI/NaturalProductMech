@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-7cabcb4611
+label: pneumocandin B0
+chemical_structure:
+  smiles: '[H][C@@]12C[C@@H](O)CN1C(=O)[C@@]([H])(NC(=O)[C@@H](C[C@@H](O)[C@@H](O)NC(=O)[C@]1([H])[C@@H](O)CCN1C(=O)[C@@]([H])(NC(=O)[C@@]([H])(NC2=O)[C@H](O)[C@@H](O)C1=CC=C(O)C=C1)[C@H](O)CC(N)=O)NC(=O)CCCCCCCC[C@@H](C)C[C@@H](C)CC)[C@@H](C)O'
+  standard_inchi: InChI=1S/C50H80N8O17/c1-5-25(2)20-26(3)12-10-8-6-7-9-11-13-37(66)52-31-22-35(64)46(71)56-48(73)41-33(62)18-19-57(41)50(75)39(34(63)23-36(51)65)54-47(72)40(43(68)42(67)28-14-16-29(60)17-15-28)55-45(70)32-21-30(61)24-58(32)49(74)38(27(4)59)53-44(31)69/h14-17,25-27,30-35,38-43,46,59-64,67-68,71H,5-13,18-24H2,1-4H3,(H2,51,65)(H,52,66)(H,53,69)(H,54,72)(H,55,70)(H,56,73)/t25-,26+,27+,30+,31+,32-,33-,34+,35+,38-,39-,40-,41-,42-,43-,46+/m0/s1
+  standard_inchi_key: DQXPFAADCTZLNL-HDLADETGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001035
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA013799
+- pubchem:5742645
+producer_organisms:
+- taxon_id: NCBITaxon:1116229
+  taxon_label: Glarea lozoyensis ATCC 20868
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001035
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:23688303
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001035 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001035
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1116229
+  organism_label: Glarea lozoyensis ATCC 20868
+  evidence:
+  - reference: PMID:23688303
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001035 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KE145356.1
+  locus_from: 180393
+  locus_to: 296227
+  bgc_class:
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001035
+  source_label: pneumocandin B0
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7cabcb4611
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

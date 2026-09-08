@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-4eaf8de3d0
+label: legonoxamine B
+chemical_structure:
+  smiles: O=C(O)CCC(=O)NCCCCCN(O)C(=O)CC1=CC=CC=C1
+  standard_inchi: InChI=1S/C17H24N2O5/c20-15(9-10-17(22)23)18-11-5-2-6-12-19(24)16(21)13-14-7-3-1-4-8-14/h1,3-4,7-8,24H,2,5-6,9-13H2,(H,18,20)(H,22,23)
+  standard_inchi_key: RYSQYERCEFGENH-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002305
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Fatty acids
+  superclass_results:
+  - Fatty amides
+  class_results:
+  - N-acyl amines
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA025613
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002305
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1016/j.tetlet.2018.11.063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002305 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002305
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: DOI:10.1016/j.tetlet.2018.11.063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002305 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MN509302.1
+  locus_from: 1
+  locus_to: 7452
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002305
+  source_label: legonoxamine B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-4eaf8de3d0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

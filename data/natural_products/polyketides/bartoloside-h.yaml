@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-b91b3547c6
+label: bartoloside H
+chemical_structure:
+  smiles: CCCCCCCCCC(CCCCCC1=CC(=C(C(=C1)O[C@H]2[C@@H]([C@H]([C@@H](CO2)O)O)O)CCCCCC(CCCCCC)Cl)O)Cl
+  standard_inchi: InChI=1S/C38H66Cl2O6/c1-3-5-7-9-10-11-16-22-31(40)23-17-12-14-20-29-26-33(41)32(25-19-13-18-24-30(39)21-15-8-6-4-2)35(27-29)46-38-37(44)36(43)34(42)28-45-38/h26-27,30-31,34,36-38,41-44H,3-25,28H2,1-2H3/t30?,31?,34-,36+,37-,38+/m1/s1
+  standard_inchi_key: SNZCABRUTZVTFC-KJIMCQFPSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001526
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Alkylresorcinols
+  class_results:
+  - Dialkylresorcinols
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:132582912
+producer_organisms:
+- taxon_id: NCBITaxon:945781
+  taxon_label: Synechocystis salina LEGE 06099
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001526
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:27680198
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001526 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001526
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:945781
+  organism_label: Synechocystis salina LEGE 06099
+  evidence:
+  - reference: PMID:27680198
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001526 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX083339.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001526
+  source_label: bartoloside H
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-b91b3547c6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

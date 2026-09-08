@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-7ed5a331c3
+label: anguibactin
+chemical_structure:
+  smiles: C1=CC(=C(C(=C1)O)O)C2=NC(=CS2)C(=O)N(CCC3=CN=CN3)O
+  standard_inchi: InChI=1S/C15H14N4O4S/c20-12-3-1-2-10(13(12)21)14-18-11(7-24-14)15(22)19(23)5-4-9-6-16-8-17-9/h1-3,6-8,20-21,23H,4-5H2,(H,16,17)
+  standard_inchi_key: WYVQJMXTYHVYFT-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002468
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Histidine alkaloids
+  class_results:
+  - Imidazole alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA003158
+producer_organisms:
+- taxon_id: NCBITaxon:882102
+  taxon_label: Vibrio anguillarum 775
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002468
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:23335587
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002468 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002468
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:882102
+  organism_label: Vibrio anguillarum 775
+  evidence:
+  - reference: PMID:23335587
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002468 entry version 2; citation taken from the entry level
+  genome_accession: genbank:AY312585.1
+  locus_from: 1
+  locus_to: 24259
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002468
+  source_label: anguibactin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-7ed5a331c3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

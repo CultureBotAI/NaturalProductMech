@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-408c62617c
+label: anabaenopeptin 802
+chemical_structure:
+  smiles: CCC(C)C1NC(=O)C(NC(=O)NC(C(=O)O)C(C)C)CCCCNC(=O)C(CC2=CC=CC=C2)NC(=O)C(C)N(C)C(=O)C(CC2=C[NH]C3=CC=CC=C23)NC1=O
+  standard_inchi: InChI=1S/C42H58N8O8/c1-7-25(4)35-39(54)46-33(22-28-23-44-30-18-12-11-17-29(28)30)40(55)50(6)26(5)36(51)45-32(21-27-15-9-8-10-16-27)37(52)43-20-14-13-19-31(38(53)48-35)47-42(58)49-34(24(2)3)41(56)57/h8-12,15-18,23-26,31-35,44H,7,13-14,19-22H2,1-6H3,(H,43,52)(H,45,51)(H,46,54)(H,48,53)(H,56,57)(H2,47,49,58)
+  standard_inchi_key: FMXKKRVABMYCJR-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002512
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Anabaenopeptins
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA028786
+producer_organisms:
+- taxon_id: NCBITaxon:2748322
+  taxon_label: Brasilonema sp. CT11
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002512
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:32825321
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002512 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002512
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2748322
+  organism_label: Brasilonema sp. CT11
+  evidence:
+  - reference: PMID:32825321
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002512 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT670293.1
+  locus_from: 1
+  locus_to: 24923
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002512
+  source_label: anabaenopeptin 802
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-408c62617c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

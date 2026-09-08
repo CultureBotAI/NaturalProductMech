@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-1deac30423
+label: aculin A
+chemical_structure:
+  smiles: CCC1=CC(=O)[C@@]2(C1=CC=C(C[C@@H]2OC(=O)C3CCCN3C(=O)CC4COC(CC4=O)O)C)C
+  standard_inchi: InChI=1S/C26H33NO7/c1-4-16-11-21(29)26(3)18(16)8-7-15(2)10-22(26)34-25(32)19-6-5-9-27(19)23(30)12-17-14-33-24(31)13-20(17)28/h7-8,11,17,19,22,24,31H,4-6,9-10,12-14H2,1-3H3/t17?,19?,22-,24?,26-/m0/s1
+  standard_inchi_key: CFQDQANDWNCASC-XOGGWNPGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002229
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Daucane sesquiterpenoids
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA011264
+producer_organisms:
+- taxon_id: NCBITaxon:690307
+  taxon_label: Aspergillus aculeatus ATCC 16872
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002229
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.3390/molecules15117985
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002229 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002229
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:690307
+  organism_label: Aspergillus aculeatus ATCC 16872
+  evidence:
+  - reference: DOI:10.3390/molecules15117985
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002229 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KV878982.1
+  locus_from: 569699
+  locus_to: 595662
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002229
+  source_label: aculin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-1deac30423
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

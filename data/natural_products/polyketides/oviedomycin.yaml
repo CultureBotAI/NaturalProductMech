@@ -1,0 +1,103 @@
+identifier: naturalproductmech:mibig-7c3cac1991
+label: oviedomycin
+chemical_structure:
+  smiles: CC1=C(O)C(=O)C2=C(C=C(O)C3=C2C(=O)C2=CC=CC(O)=C2C3=O)C1=O
+  standard_inchi: InChI=1S/C19H10O7/c1-6-15(22)8-5-10(21)13-14(12(8)19(26)16(6)23)17(24)7-3-2-4-9(20)11(7)18(13)25/h2-5,20-21,23H,1H3
+  standard_inchi_key: LRVJUCBWMNTDLP-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000253
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA018728
+- pubchem:5323531
+producer_organisms:
+- taxon_id: NCBITaxon:1890
+  taxon_label: Streptomyces antibioticus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000253
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  evidence:
+  - reference: PMID:15368568
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000253 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:1890
+  taxon_label: Streptomyces antibioticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001723
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28562006
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001723 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000253
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1890
+  organism_label: Streptomyces antibioticus
+  evidence:
+  - reference: PMID:15368568
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000253 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AJ632203.2
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+- accession: mibig:BGC0001723
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1890
+  organism_label: Streptomyces antibioticus
+  evidence:
+  - reference: PMID:28562006
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001723 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY129858.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000253
+  source_label: oviedomycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-7c3cac1991
+- source: MIBIG
+  source_id: BGC0001723
+  source_label: oviedomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d4a058c1ff
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000253, BGC0001723.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

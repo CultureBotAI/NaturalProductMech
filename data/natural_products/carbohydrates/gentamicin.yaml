@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-ac32edbacd
+label: gentamicin
+chemical_structure:
+  smiles: CN[C@H]1[C@@H](O)CO[C@H](O[C@H]2[C@H](N)C[C@H](N)[C@@H](O[C@H]3O[C@H](CN)[C@@H](O)[C@H](O)[C@H]3O)[C@@H]2O)[C@@H]1O
+  standard_inchi: InChI=1S/C18H36N4O10/c1-22-9-7(23)4-29-17(11(9)25)31-15-5(20)2-6(21)16(14(15)28)32-18-13(27)12(26)10(24)8(3-19)30-18/h5-18,22-28H,2-4,19-21H2,1H3/t5-,6+,7+,8-,9+,10-,11-,12+,13-,14-,15+,16-,17-,18-/m1/s1
+  standard_inchi_key: BDTQHFBWYNCGHN-CUYCKOLISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000696
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Polyols
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- npatlas:NPA09026
+- pubchem:72396
+producer_organisms:
+- taxon_id: NCBITaxon:1877
+  taxon_label: Micromonospora echinospora
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000696
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:15376556
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000696 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000696
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1877
+  organism_label: Micromonospora echinospora
+  evidence:
+  - reference: PMID:15376556
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000696 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ628149.4
+  bgc_class:
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000696
+  source_label: gentamicin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ac32edbacd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

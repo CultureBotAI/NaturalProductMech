@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-03f1e441c0
+label: yanuthone D
+chemical_structure:
+  smiles: CC(C)=CCC\C(C)=C\CC\C(C)=C\CC12O[C@@H]1C(=O)C(COC(=O)CC(C)(O)CC(O)=O)=CC2=O
+  standard_inchi: InChI=1S/C28H38O8/c1-18(2)8-6-9-19(3)10-7-11-20(4)12-13-28-22(29)14-21(25(33)26(28)36-28)17-35-24(32)16-27(5,34)15-23(30)31/h8,10,12,14,26,34H,6-7,9,11,13,15-17H2,1-5H3,(H,30,31)/b19-10+,20-12+/t26-,27?,28?/m1/s1
+  standard_inchi_key: NIBXHVDVUJEQPO-OFWAVEGMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000170
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Merosesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA013738
+- pubchem:10436112
+producer_organisms:
+- taxon_id: NCBITaxon:380704
+  taxon_label: Aspergillus niger ATCC 1015
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000170
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2014.01.013
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000170 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000170
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:380704
+  organism_label: Aspergillus niger ATCC 1015
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2014.01.013
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000170 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:ACJE01000012.1
+  locus_from: 25033
+  locus_to: 49030
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000170
+  source_label: yanuthone D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-03f1e441c0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-99b4b0ff1d
+label: oocydin A
+chemical_structure:
+  smiles: C/C/1=C/C/C=C(\CCC2CC(C(O2)C(/C=C(\C)/CC(=O)O)O)OC(=O)CC1OC(=O)C)/Cl
+  standard_inchi: InChI=1S/C23H31ClO8/c1-13(10-21(27)28)9-18(26)23-20-11-17(31-23)8-7-16(24)6-4-5-14(2)19(30-15(3)25)12-22(29)32-20/h5-6,9,17-20,23,26H,4,7-8,10-12H2,1-3H3,(H,27,28)/b13-9+,14-5-,16-6+
+  standard_inchi_key: OAWOFENLLWPBEQ-DDIADDBLSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001031
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactones
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:15978563
+producer_organisms:
+- taxon_id: NCBITaxon:615
+  taxon_label: Serratia marcescens
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001031
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23012376
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001031 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001031
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:615
+  organism_label: Serratia marcescens
+  evidence:
+  - reference: PMID:23012376
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001031 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JX315603.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001031
+  source_label: oocydin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-99b4b0ff1d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

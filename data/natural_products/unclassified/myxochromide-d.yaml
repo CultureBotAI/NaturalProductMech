@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-c1000f6b5c
+label: myxochromide D
+chemical_structure:
+  smiles: C1(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](CCC(=O)N)C(=O)O[C@H](C)[C@H](N(C)C(=O)/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C)C(=O)N[C@@H]1C
+  standard_inchi: InChI=1S/C38H54N6O8/c1-8-9-10-11-12-13-14-15-16-17-18-19-20-21-32(46)44(7)33-28(6)52-38(51)29(22-23-31(39)45)42-34(47)26(4)40-36(49)30(24-25(2)3)43-35(48)27(5)41-37(33)50/h8-21,25-30,33H,22-24H2,1-7H3,(H2,39,45)(H,40,49)(H,41,50)(H,42,47)(H,43,48)/b9-8+,11-10+,13-12+,15-14+,17-16+,19-18+,21-20+/t26-,27+,28+,29-,30-,33-/m0/s1
+  standard_inchi_key: OEDBLAUAUMVWEC-SXSZNTRKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001432
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:83460
+  taxon_label: Stigmatella erecta
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001432
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001432 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001432
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:83460
+  organism_label: Stigmatella erecta
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001432 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622602.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001432
+  source_label: myxochromide D
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-c1000f6b5c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

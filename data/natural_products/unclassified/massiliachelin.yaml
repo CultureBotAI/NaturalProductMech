@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-0c6cf3417d
+label: Massiliachelin
+chemical_structure:
+  smiles: CCCCCC1=C(C2=N[C@@H]([C@H]3SC[C@@H]([C@@H](O)C(C)(C)C(=O)O)N3C)CS2)C(O)=CC=C1
+  standard_inchi: InChI=1S/C23H34N2O4S2/c1-5-6-7-9-14-10-8-11-17(26)18(14)20-24-15(12-30-20)21-25(4)16(13-31-21)19(27)23(2,3)22(28)29/h8,10-11,15-16,19,21,26-27H,5-7,9,12-13H2,1-4H3,(H,28,29)/t15-,16+,19-,21-/m1/s1
+  standard_inchi_key: QZBCDLLHQSDFIG-NNNWTRQLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002687
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Melithiazole and Myxothiazole derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA027133
+producer_organisms:
+- taxon_id: NCBITaxon:1678028
+  taxon_label: Massilia sp. NR 4-1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002687
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.3762/bjoc.15.128
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002687 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002687
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1678028
+  organism_label: Massilia sp. NR 4-1
+  evidence:
+  - reference: DOI:10.3762/bjoc.15.128
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002687 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP012201.1
+  locus_from: 520630
+  locus_to: 554534
+  bgc_class:
+  - PKS
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002687
+  source_label: Massiliachelin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-0c6cf3417d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

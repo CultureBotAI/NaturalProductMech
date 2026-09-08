@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-9963ca7389
+label: limnothamide
+chemical_structure:
+  smiles: C/C(C)=C/CC/C(C)=C/CC1=NC=C(C[C@@H](C(N[C@@H](CCC(O)=O)C(N[C@@H](CCC(O)=O)C(N[C@@H]([C@H](CC)C)C(N2CCC[C@H]2C(N[C@H](C(N[C@@H](CC3=CC=C(O)C=C3)C(N4CCCC45)=O)=O)CCCNC(N)=N)=O)=O)=O)=O)=O)NC5=O)N1
+  standard_inchi: InChI=1S/C57H83N13O13/c1-6-34(5)48-56(83)70-28-10-15-44(70)53(80)65-38(13-8-26-60-57(58)59)49(76)67-42(29-35-17-19-37(71)20-18-35)55(82)69-27-9-14-43(69)54(81)66-41(30-36-31-61-45(62-36)23-16-33(4)12-7-11-32(2)3)52(79)64-39(21-24-46(72)73)50(77)63-40(51(78)68-48)22-25-47(74)75/h11,16-20,31,34,38-44,48,71H,6-10,12-15,21-30H2,1-5H3,(H,61,62)(H,63,77)(H,64,79)(H,65,80)(H,66,81)(H,67,76)(H,68,78)(H,72,73)(H,74,75)(H4,58,59,60)/b33-16+/t34-,38-,39-,40-,41-,42-,43?,44-,48-/m0/s1
+  standard_inchi_key: JWTGUCIHAAELTO-MUQPRCLGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002629
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:1890733
+  taxon_label: Limnothrix sp. CACIAM 69d
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002629
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: DOI:10.1038/s41929-022-00822-2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002629 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002629
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1890733
+  organism_label: Limnothrix sp. CACIAM 69d
+  evidence:
+  - reference: DOI:10.1038/s41929-022-00822-2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002629 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MKGP02000097.1
+  locus_from: 11128
+  locus_to: 17958
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002629
+  source_label: limnothamide
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-9963ca7389
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

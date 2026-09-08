@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-6a17b24033
+label: andrimid
+chemical_structure:
+  smiles: C\C=C\C=C\C=C\C(=O)N[C@@H](CC(=O)N[C@@H](C(C)C)C(=O)[C@H]1[C@H](C)C(=O)NC1=O)C1=CC=CC=C1
+  standard_inchi: InChI=1S/C27H33N3O5/c1-5-6-7-8-12-15-21(31)28-20(19-13-10-9-11-14-19)16-22(32)29-24(17(2)3)25(33)23-18(4)26(34)30-27(23)35/h5-15,17-18,20,23-24H,16H2,1-4H3,(H,28,31)(H,29,32)(H,30,34,35)/b6-5+,8-7+,15-12+/t18-,20-,23+,24-/m0/s1
+  standard_inchi_key: OHDXGZAYYBMHCY-QSUIEZAASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000956
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA015339
+- pubchem:636857
+producer_organisms:
+- taxon_id: NCBITaxon:549
+  taxon_label: Pantoea agglomerans
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000956
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:15066985
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000956 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000956
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:549
+  organism_label: Pantoea agglomerans
+  evidence:
+  - reference: PMID:15066985
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000956 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY192157.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000956
+  source_label: andrimid
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6a17b24033
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

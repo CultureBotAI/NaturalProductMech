@@ -1,3 +1,22 @@
+# How a source's own evidence vocabulary grades a production claim.
+#
+# Read by src/naturalproductmech/grading.py, which both the MIBiG extractor and
+# the seeder import. One implementation, because the two briefly disagreed
+# about the case below and that is the largest bucket in the source.
+#
+# THE CASE THIS TABLE CANNOT EXPRESS, and the one that decides most of the
+# corpus: an entry with loci but NO stated evidence method. Measured against
+# MIBiG 4.0, that is 1,627 of 2,437 active entries. It is graded
+# SOURCE_ASSERTION — MIBiG asserts the cluster produces the compound in that
+# organism without stating the experiment. Dropping those would discard two
+# thirds of the anchor source over a field MIBiG does not fill; promoting them
+# would claim experiments nobody reported. SOURCE_ASSERTION is deliberately
+# outside CAUSAL_BASES, so a consumer wanting demonstrated production filters
+# it out.
+#
+# A method present but absent from this table fails closed: the claim is
+# withheld, because a vocabulary that grew upstream should be looked at.
+#
 mibig_method	evidence_basis	rationale
 Heterologous expression	BGC_CHARACTERIZED	The cluster is sufficient for the compound in a host that otherwise does not make it.
 Knock-out studies	BGC_CHARACTERIZED	The cluster is necessary: removing it removes the compound.

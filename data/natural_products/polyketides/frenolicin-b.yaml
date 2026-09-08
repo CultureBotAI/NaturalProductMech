@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-292eabcb10
+label: frenolicin B
+chemical_structure:
+  smiles: '[H][C@@]12CC(=O)O[C@]1([H])C1=C([C@@H](CCC)O2)C(=O)C2=C(O)C=CC=C2C1=O'
+  standard_inchi: InChI=1S/C18H16O6/c1-2-4-10-14-15(18-11(23-10)7-12(20)24-18)16(21)8-5-3-6-9(19)13(8)17(14)22/h3,5-6,10-11,18-19H,2,4,7H2,1H3/t10-,11-,18+/m1/s1
+  standard_inchi_key: AVCPRTNVVRPELB-YRUZYCQGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000225
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Naphthalenes
+  class_results:
+  - Naphthoquinones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA015910
+producer_organisms:
+- taxon_id: NCBITaxon:33902
+  taxon_label: Streptomyces roseofulvus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000225
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:8181754
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000225 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000225
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33902
+  organism_label: Streptomyces roseofulvus
+  evidence:
+  - reference: PMID:8181754
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000225 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF058302.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000225
+  source_label: frenolicin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-292eabcb10
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

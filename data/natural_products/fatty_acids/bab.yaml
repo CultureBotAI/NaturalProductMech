@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-e249ec2c87
+label: BAB
+chemical_structure:
+  smiles: C/C=C/C(O)C/C=C/C=C/C=C/C(=O)O
+  standard_inchi: InChI=1S/C12H16O3/c1-2-8-11(13)9-6-4-3-5-7-10-12(14)15/h2-8,10-11,13H,9H2,1H3,(H,14,15)/b5-3+,6-4+,8-2+,10-7+
+  standard_inchi_key: SBABGWPTFUGDSU-SOHDWBKISA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002240
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty Acids and Conjugates
+  class_results:
+  - Unsaturated fatty acids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA033167
+producer_organisms:
+- taxon_id: NCBITaxon:5530
+  taxon_label: Metarhizium anisopliae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002240
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:33991663
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002240 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002240
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5530
+  organism_label: Metarhizium anisopliae
+  evidence:
+  - reference: PMID:33991663
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002240 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JNNZ01000213.1
+  locus_from: 28438
+  locus_to: 39968
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002240
+  source_label: BAB
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-e249ec2c87
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

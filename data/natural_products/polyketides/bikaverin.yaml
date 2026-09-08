@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-c519d8d565
+label: bikaverin
+chemical_structure:
+  smiles: CC1=CC(=CC2=C1C(=O)C3=C(O2)C(=C4C(=C3O)C(=O)C=C(C4=O)OC)O)OC
+  standard_inchi: InChI=1S/C20H14O8/c1-7-4-8(26-2)5-10-12(7)17(23)15-18(24)13-9(21)6-11(27-3)16(22)14(13)19(25)20(15)28-10/h4-6,24-25H,1-3H3
+  standard_inchi_key: ZOQMSOSJEWBMHP-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000030
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Naphthalenes
+  - Xanthones
+  class_results:
+  - Methyl xanthones
+  - Naphthoquinones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:5281730
+producer_organisms:
+- taxon_id: NCBITaxon:1279085
+  taxon_label: Fusarium fujikuroi IMI 58289
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000030
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1016/j.jbiosc.2013.09.017
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000030 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000030
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1279085
+  organism_label: Fusarium fujikuroi IMI 58289
+  evidence:
+  - reference: DOI:10.1016/j.jbiosc.2013.09.017
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000030 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:HF679027.1
+  locus_from: 100853
+  locus_to: 119287
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000030
+  source_label: bikaverin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-c519d8d565
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

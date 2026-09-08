@@ -1,0 +1,104 @@
+identifier: naturalproductmech:mibig-28490231db
+label: WS 79089A
+chemical_structure:
+  smiles: CC1CC2=C(C(=C3C(=C2)CC(C4=C3C(=C5C(=C4OC)C(=O)C6=C(C5=O)C=CC=C6O)O)O)O)C(=O)O1
+  standard_inchi: InChI=1S/C27H20O9/c1-9-6-10-7-11-8-14(29)18-19(15(11)23(31)16(10)27(34)36-9)25(33)20-21(26(18)35-2)24(32)17-12(22(20)30)4-3-5-13(17)28/h3-5,7,9,14,28-29,31,33H,6,8H2,1-2H3
+  standard_inchi_key: HRWPMELFEHBAIH-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002732
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Pradimicins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA008064
+- npatlas:NPA08064
+producer_organisms:
+- taxon_id: NCBITaxon:479432
+  taxon_label: Streptosporangium roseum DSM 43021
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002732
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:32632478
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002732 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:683272
+  taxon_label: Streptosporangium sp. FXJ7.131
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001376
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26754814
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001376 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002732
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:479432
+  organism_label: Streptosporangium roseum DSM 43021
+  evidence:
+  - reference: PMID:32632478
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002732 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP001814.1
+  locus_from: 4607917
+  locus_to: 4646430
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+- accession: mibig:BGC0001376
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:683272
+  organism_label: Streptosporangium sp. FXJ7.131
+  evidence:
+  - reference: PMID:26754814
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001376 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KT713752.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002732
+  source_label: WS 79089A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-28490231db
+- source: MIBIG
+  source_id: BGC0001376
+  source_label: WS79089A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ede040f71f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001376, BGC0002732.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

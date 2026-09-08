@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-96a3e0ef7d
+label: putisolvin III
+chemical_structure:
+  smiles: CCCCCC(=O)NC(CC(C)C)C(=O)NC(CCC(=O)O)C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)NC(CCC(N)=O)C(=O)NC(CO)C(=O)NC(C(=O)NC(CC(C)C)C(=O)NC1COC(=O)C(CO)NC(=O)C(C(C)C)NC(=O)C(CC(C)C)NC1=O)C(C)C
+  standard_inchi: InChI=1S/C65H113N13O19/c1-16-17-18-19-50(82)67-41(24-32(2)3)56(87)69-40(21-23-51(83)84)54(85)70-43(26-34(6)7)58(89)71-42(25-33(4)5)57(88)68-39(20-22-49(66)81)55(86)74-46(29-79)61(92)78-52(37(12)13)63(94)73-44(27-35(8)9)59(90)76-48-31-97-65(96)47(30-80)75-64(95)53(38(14)15)77-60(91)45(28-36(10)11)72-62(48)93/h32-48,52-53,79-80H,16-31H2,1-15H3,(H2,66,81)(H,67,82)(H,68,88)(H,69,87)(H,70,85)(H,71,89)(H,72,93)(H,73,94)(H,74,86)(H,75,95)(H,76,90)(H,77,91)(H,78,92)(H,83,84)
+  standard_inchi_key: QXPFOHYRVFSISX-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002521
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA032997
+producer_organisms:
+- taxon_id: NCBITaxon:303
+  taxon_label: Pseudomonas putida
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002521
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:32524747
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002521 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002521
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:303
+  organism_label: Pseudomonas putida
+  evidence:
+  - reference: PMID:32524747
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002521 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT511054.1
+  locus_from: 1
+  locus_to: 47772
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002521
+  source_label: putisolvin III
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-96a3e0ef7d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,100 @@
+identifier: naturalproductmech:mibig-bce6aa73c6
+label: myxochromide C
+chemical_structure:
+  smiles: C1(=O)N[C@@H](CC(C)C)C(N2CCC[C@H]2C(=O)N[C@@H](CCC(=O)N)C(=O)O[C@H](C)[C@H](N(C)C(=O)/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C=C/C)C(=O)N[C@@H]1C)=O
+  standard_inchi: InChI=1S/C42H58N6O8/c1-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-24-36(50)47(6)37-31(5)56-42(55)32(25-26-35(43)49)45-39(52)34-23-22-27-48(34)41(54)33(28-29(2)3)46-38(51)30(4)44-40(37)53/h7-21,24,29-34,37H,22-23,25-28H2,1-6H3,(H2,43,49)(H,44,53)(H,45,52)(H,46,51)/b8-7+,10-9+,12-11+,14-13+,16-15+,18-17+,20-19+,24-21+/t30-,31-,32+,33+,34+,37+/m1/s1
+  standard_inchi_key: PGDHWOJLFUOUFT-MHRFNMCSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001423
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1297742
+  taxon_label: Myxococcus hansupus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001423
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001423 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:83456
+  taxon_label: Myxococcus virescens
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001424
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001424 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001423
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1297742
+  organism_label: Myxococcus hansupus
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001423 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622593.1
+  bgc_class:
+  - NRPS
+  - PKS
+- accession: mibig:BGC0001424
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:83456
+  organism_label: Myxococcus virescens
+  evidence:
+  - reference: PMID:28128551
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001424 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KX622594.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001423
+  source_label: myxochromide C
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-bce6aa73c6
+- source: MIBIG
+  source_id: BGC0001424
+  source_label: myxochromide C
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-f51fd91c85
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001423, BGC0001424.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

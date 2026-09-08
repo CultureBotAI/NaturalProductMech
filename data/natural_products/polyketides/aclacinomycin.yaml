@@ -1,0 +1,127 @@
+identifier: naturalproductmech:mibig-c3a853f63e
+label: aclacinomycin
+chemical_structure:
+  smiles: CC[C@]1(C[C@@H](C2=C([C@H]1C(=O)OC)C=C3C(=C2O)C(=O)C4=C(C3=O)C=CC=C4O)OC5CC(C(C(O5)C)OC6CC(C(C(O6)C)OC7CCC(=O)C(O7)C)O)N(C)C)O
+  standard_inchi: InChI=1S/C42H53NO15/c1-8-42(51)17-28(33-22(35(42)41(50)52-7)14-23-34(38(33)49)37(48)32-21(36(23)47)10-9-11-26(32)45)56-30-15-24(43(5)6)39(19(3)54-30)58-31-16-27(46)40(20(4)55-31)57-29-13-12-25(44)18(2)53-29/h9-11,14,18-20,24,27-31,35,39-40,45-46,49,51H,8,12-13,15-17H2,1-7H3/t18?,19?,20?,24?,27?,28-,29?,30?,31?,35-,39?,40?,42+/m0/s1
+  standard_inchi_key: USZYSDMBJDPRIF-XCKHQVGJSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000191
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthracyclines
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:308141
+producer_organisms:
+- taxon_id: NCBITaxon:33899
+  taxon_label: Streptomyces galilaeus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000191
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:12399480
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000191 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:33899
+  taxon_label: Streptomyces galilaeus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000192
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:12137949
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000192 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:33899
+  taxon_label: Streptomyces galilaeus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000193
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:11016846
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000193 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000191
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33899
+  organism_label: Streptomyces galilaeus
+  evidence:
+  - reference: PMID:12399480
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000191 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB008466.1
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0000192
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33899
+  organism_label: Streptomyces galilaeus
+  evidence:
+  - reference: PMID:12137949
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000192 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AF257324.2
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0000193
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33899
+  organism_label: Streptomyces galilaeus
+  evidence:
+  - reference: PMID:11016846
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000193 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AF264025.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000191
+  source_label: aclacinomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c3a853f63e
+- source: MIBIG
+  source_id: BGC0000192
+  source_label: aclacinomycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-9769a6b632
+- source: MIBIG
+  source_id: BGC0000193
+  source_label: aclacinomycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7e6fe6aea9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000191, BGC0000192,
+    BGC0000193. Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

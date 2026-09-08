@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-f01574fb0b
+label: bacitracin
+chemical_structure:
+  smiles: CCC(C)C1C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NCCCCC(C(=O)NC(C(=O)N1)CCCN)NC(=O)C(C(C)CC)NC(=O)C(CCC(=O)O)NC(=O)C(CC(C)C)NC(=O)C2CSC(=N2)C(C(C)CC)N)CC(=O)N)CC(=O)O)CC3=CN=CN3)CC4=CC=CC=C4
+  standard_inchi: InChI=1S/C66H103N17O16S/c1-9-35(6)52(69)66-81-48(32-100-66)63(97)76-43(26-34(4)5)59(93)74-42(22-23-50(85)86)58(92)83-53(36(7)10-2)64(98)75-40-20-15-16-25-71-55(89)46(29-49(68)84)78-62(96)47(30-51(87)88)79-61(95)45(28-39-31-70-33-72-39)77-60(94)44(27-38-18-13-12-14-19-38)80-65(99)54(37(8)11-3)82-57(91)41(21-17-24-67)73-56(40)90/h12-14,18-19,31,33-37,40-48,52-54H,9-11,15-17,20-30,32,67,69H2,1-8H3,(H2,68,84)(H,70,72)(H,71,89)(H,73,90)(H,74,93)(H,75,98)(H,76,97)(H,77,94)(H,78,96)(H,79,95)(H,80,99)(H,82,91)(H,83,92)(H,85,86)(H,87,88)
+  standard_inchi_key: CLKOFPXJLQSYAH-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000310
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:65281
+producer_organisms:
+- taxon_id: NCBITaxon:1402
+  taxon_label: Bacillus licheniformis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000310
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:9427658
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000310 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000310
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1402
+  organism_label: Bacillus licheniformis
+  evidence:
+  - reference: PMID:9427658
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000310 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF007865.2
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000310
+  source_label: bacitracin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f01574fb0b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-026b84f2dc
+label: α-acorenol
+chemical_structure:
+  smiles: C[C@H]1CCC([C@@]12CCC(=CC2)C)C(C)(C)O
+  standard_inchi: InChI=1S/C15H26O/c1-11-7-9-15(10-8-11)12(2)5-6-13(15)14(3,4)16/h7,12-13,16H,5-6,8-10H2,1-4H3/t12-,13?,15-/m0/s1
+  standard_inchi_key: XDVDHFJMCJWDPI-YOYPFHDYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001481
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Acorane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+producer_organisms:
+- taxon_id: NCBITaxon:1279085
+  taxon_label: Fusarium fujikuroi IMI 58289
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001481
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23335243
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001481 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001481
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1279085
+  organism_label: Fusarium fujikuroi IMI 58289
+  evidence:
+  - reference: PMID:23335243
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001481 entry version 3; citation taken from the entry level
+  genome_accession: genbank:HF679032.1
+  locus_from: 374418
+  locus_to: 375674
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001481
+  source_label: α-acorenol
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-026b84f2dc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-f03b04b9d4
+label: 17-deoxyaphidicolin
+chemical_structure:
+  smiles: C[C@@]1(CO)[C@H](O)CC[C@@]2(C)[C@@]1([H])CC[C@]3([H])[C@]2(CC[C@@]4(C)O)C[C@@]4([H])C3
+  standard_inchi: InChI=1S/C20H34O3/c1-17(12-21)15-5-4-13-10-14-11-20(13,9-8-19(14,3)23)18(15,2)7-6-16(17)22/h13-16,21-23H,4-12H2,1-3H3/t13-,14+,15-,16+,17-,18-,19+,20-/m0/s1
+  standard_inchi_key: HRPBVTJJLYDCOZ-XPZISPLRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000676
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Aphidicolane diterpenoids
+  - Tetracyclic diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+producer_organisms:
+- taxon_id: NCBITaxon:1979465
+  taxon_label: Phoma betae
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000676
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:14745177
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000676 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000676
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1979465
+  organism_label: Phoma betae
+  evidence:
+  - reference: PMID:14745177
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000676 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB114137.1
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000676
+  source_label: 17-deoxyaphidicolin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f03b04b9d4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

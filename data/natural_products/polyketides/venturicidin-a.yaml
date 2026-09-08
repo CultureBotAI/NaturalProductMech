@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-99d2d2ed49
+label: venturicidin A
+chemical_structure:
+  smiles: CCC(=O)[C@@H](C)[C@H]([C@H](C)C[C@@H](C)[C@@H]1[C@@H](C[C@H](/C=C/[C@@H](CCC/C=C(/[C@@H]2C(=CC[C@@](O2)(CC(=O)O1)O)C)\C)O[C@H]3C[C@H]([C@@H]([C@H](O3)C)O)OC(=O)N)C)C)O
+  standard_inchi: InChI=1S/C41H67NO11/c1-10-32(43)29(8)36(45)26(5)20-28(7)38-27(6)19-23(2)15-16-31(50-35-21-33(51-40(42)47)37(46)30(9)49-35)14-12-11-13-24(3)39-25(4)17-18-41(48,53-39)22-34(44)52-38/h13,15-17,23,26-31,33,35-39,45-46,48H,10-12,14,18-22H2,1-9H3,(H2,42,47)/b16-15+,24-13+/t23-,26+,27+,28+,29+,30+,31+,33+,35-,36-,37+,38-,39+,41+/m0/s1
+  standard_inchi_key: HHQKNFDAEDTRJK-LIOWZGMGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002454
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Avermectins
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA006299
+producer_organisms:
+- taxon_id: NCBITaxon:1519471
+  taxon_label: Streptomyces sp. NRRL S-4
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002454
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:33356258
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002454 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002454
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1519471
+  organism_label: Streptomyces sp. NRRL S-4
+  evidence:
+  - reference: PMID:33356258
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002454 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT361594.1
+  locus_from: 1
+  locus_to: 97575
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002454
+  source_label: venturicidin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-99d2d2ed49
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

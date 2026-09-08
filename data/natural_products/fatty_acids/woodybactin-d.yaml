@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-8e08b44b31
+label: woodybactin D
+chemical_structure:
+  smiles: CCCCCCCCCC(=O)N(O)CCCC[C@H](NC(=O)CC(O)(CC(=O)O)C(=O)O)C(=O)O
+  standard_inchi: InChI=1S/C22H38N2O10/c1-2-3-4-5-6-7-8-12-18(26)24(34)13-10-9-11-16(20(29)30)23-17(25)14-22(33,21(31)32)15-19(27)28/h16,33-34H,2-15H2,1H3,(H,23,25)(H,27,28)(H,29,30)(H,31,32)/t16-,22?/m0/s1
+  standard_inchi_key: DHBJJAQLTGBEDQ-CISYCMJJSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002469
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty amides
+  class_results:
+  - N-acyl amines
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA031065
+producer_organisms:
+- taxon_id: NCBITaxon:392500
+  taxon_label: Shewanella woodyi ATCC 51908
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002469
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:31203087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002469 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002469
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:392500
+  organism_label: Shewanella woodyi ATCC 51908
+  evidence:
+  - reference: PMID:31203087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002469 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP000961.1
+  locus_from: 825672
+  locus_to: 832044
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002469
+  source_label: woodybactin D
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-8e08b44b31
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

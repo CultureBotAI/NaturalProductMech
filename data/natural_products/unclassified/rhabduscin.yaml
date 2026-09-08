@@ -1,0 +1,63 @@
+identifier: naturalproductmech:mibig-5457d8436e
+label: rhabduscin
+chemical_structure:
+  smiles: C[C@H]1[C@H]([C@H]([C@@H]([C@H](O1)OC2=CC=C(C=C2)/C=C/[N+]#[C-])O)O)NC(=O)C
+  standard_inchi: InChI=1S/C17H20N2O5/c1-10-14(19-11(2)20)15(21)16(22)17(23-10)24-13-6-4-12(5-7-13)8-9-18-3/h4-10,14-17,21-22H,1-2H3,(H,19,20)/b9-8+/t10-,14+,15+,16-,17+/m0/s1
+  standard_inchi_key: WQBVZBBQNNMLLX-YFFNFLMJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001757
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:102453304
+producer_organisms:
+- taxon_id: NCBITaxon:406817
+  taxon_label: Xenorhabdus nematophila ATCC 19061
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001757
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:20022247
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001757 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001757
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:406817
+  organism_label: Xenorhabdus nematophila ATCC 19061
+  evidence:
+  - reference: PMID:20022247
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001757 entry version 3; citation taken from the entry level
+  genome_accession: genbank:FN667742.1
+  locus_from: 1086139
+  locus_to: 1089360
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001757
+  source_label: rhabduscin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-5457d8436e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

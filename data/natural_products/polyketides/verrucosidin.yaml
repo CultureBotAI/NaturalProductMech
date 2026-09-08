@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-7e0b3771ba
+label: verrucosidin
+chemical_structure:
+  smiles: COC1=C(C)C(=O)OC([C@]2(C)O[C@H]2/C(C)=C/C(C)=C/[C@]2(C)O[C@H](C)[C@@]3(C)O[C@@H]23)=C1C
+  standard_inchi: InChI=1S/C24H32O6/c1-12(11-22(6)21-23(7,30-21)16(5)28-22)10-13(2)18-24(8,29-18)19-14(3)17(26-9)15(4)20(25)27-19/h10-11,16,18,21H,1-9H3/b12-11+,13-10+/t16-,18+,21+,22+,23-,24-/m1/s1
+  standard_inchi_key: JSVLNARHSWZARV-FOOXNAEUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002745
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6437365
+- npatlas:NPA032775
+producer_organisms:
+- taxon_id: NCBITaxon:60169
+  taxon_label: Penicillium polonicum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002745
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1016/j.tox.2006.11.049
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002745 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002745
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:60169
+  organism_label: Penicillium polonicum
+  evidence:
+  - reference: DOI:10.1016/j.tox.2006.11.049
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002745 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MDYM01000002.1
+  locus_from: 1232478
+  locus_to: 1263428
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002745
+  source_label: verrucosidin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7e0b3771ba
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-f3a532288b
+label: solanapyrone A
+chemical_structure:
+  smiles: C[C@H]1C=C[C@H]2CCCC[C@H]2[C@@H]1C3=CC(=C(C(=O)O3)C=O)OC
+  standard_inchi: InChI=1S/C18H22O4/c1-11-7-8-12-5-3-4-6-13(12)17(11)16-9-15(21-2)14(10-19)18(20)22-16/h7-13,17H,3-6H2,1-2H3/t11-,12+,13+,17+/m0/s1
+  standard_inchi_key: AWQLNKJBXASXDU-SFDCBXKLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002515
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 2-pyrone derivatives
+  - Decalins with 2-pyrones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA019708
+producer_organisms:
+- taxon_id: NCBITaxon:5454
+  taxon_label: Ascochyta rabiei
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002515
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:26342019
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002515 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002515
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5454
+  organism_label: Ascochyta rabiei
+  evidence:
+  - reference: PMID:26342019
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002515 entry version 2; citation taken from the entry level
+  genome_accession: genbank:RYYQ01000008.1
+  locus_from: 1865569
+  locus_to: 1897908
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002515
+  source_label: solanapyrone A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-f3a532288b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

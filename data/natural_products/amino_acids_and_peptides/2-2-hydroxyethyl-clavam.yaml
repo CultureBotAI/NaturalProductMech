@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-0e93e6d8f3
+label: (-)-2-(2-hydroxyethyl)clavam
+chemical_structure:
+  smiles: OCC[C@H]1CN2[C@H](CC2=O)O1
+  standard_inchi: InChI=1S/C7H11NO3/c9-2-1-5-4-8-6(10)3-7(8)11-5/h5,7,9H,1-4H2/t5-,7-/m0/s1
+  standard_inchi_key: UEGDICIJUUEIOL-FSPLSTOPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001151
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - β-lactams
+  class_results:
+  - Clavams
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA01279
+producer_organisms:
+- taxon_id: NCBITaxon:1890
+  taxon_label: Streptomyces antibioticus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001151
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:22435762
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001151 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001151
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1890
+  organism_label: Streptomyces antibioticus
+  evidence:
+  - reference: PMID:22435762
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001151 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JN705801.1
+  locus_from: 15432
+  locus_to: 35367
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001151
+  source_label: (-)-2-(2-hydroxyethyl)clavam
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0e93e6d8f3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

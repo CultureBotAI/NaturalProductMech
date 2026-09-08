@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-fc4c3d3c1c
+label: phenaziterpene A
+chemical_structure:
+  smiles: CC(C)=CCC\C(C)=C\COC1=CC=CC2=NC3=C(O)C=CC=C3N=C12
+  standard_inchi: InChI=1S/C22H24N2O2/c1-15(2)7-4-8-16(3)13-14-26-20-12-6-10-18-22(20)24-17-9-5-11-19(25)21(17)23-18/h5-7,9-13,25H,4,8,14H2,1-3H3/b16-13+
+  standard_inchi_key: GTZWCZPREISNMM-DTQAZKPQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001221
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Phenazine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA015380
+producer_organisms:
+- taxon_id: NCBITaxon:444103
+  taxon_label: Streptomyces sp. CNQ-509
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001221
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:25224759
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001221 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001221
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:444103
+  organism_label: Streptomyces sp. CNQ-509
+  evidence:
+  - reference: PMID:25224759
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001221 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KJ451627.1
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001221
+  source_label: phenaziterpene A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fc4c3d3c1c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

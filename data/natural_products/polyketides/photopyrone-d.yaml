@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-cdfd9a1bb6
+label: photopyrone D
+chemical_structure:
+  smiles: CC(C)CCCCCCC1=C(C=C(OC1=O)CC(C)C)O
+  standard_inchi: InChI=1S/C18H30O3/c1-13(2)9-7-5-6-8-10-16-17(19)12-15(11-14(3)4)21-18(16)20/h12-14,19H,5-11H2,1-4H3
+  standard_inchi_key: UKKBPFNFZNYGPP-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001134
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 2-pyrone derivatives
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:71576813
+producer_organisms:
+- taxon_id: NCBITaxon:243265
+  taxon_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001134
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:23851573
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001134 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001134
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:243265
+  organism_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence:
+  - reference: PMID:23851573
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001134 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NC_005126.1
+  locus_from: 4843318
+  locus_to: 4844043
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001134
+  source_label: photopyrone D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-cdfd9a1bb6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

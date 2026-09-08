@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-198d7120de
+label: aurafuron A
+chemical_structure:
+  smiles: CC(C)C\C=C(/C)[C@H](O)[C@H](C)\C=C\C=C/[C@@H](O)CC1=C(C)C(=O)C(C)(O)O1
+  standard_inchi: InChI=1S/C22H34O5/c1-14(2)11-12-16(4)20(24)15(3)9-7-8-10-18(23)13-19-17(5)21(25)22(6,26)27-19/h7-10,12,14-15,18,20,23-24,26H,11,13H2,1-6H3/b9-7+,10-8-,16-12+/t15-,18-,20-,22?/m1/s1
+  standard_inchi_key: AQQYZHDRTDSOER-LYKBUVKOSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000023
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA01119
+producer_organisms:
+- taxon_id: NCBITaxon:378806
+  taxon_label: Stigmatella aurantiaca DW4/3-1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000023
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:17919655
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000023 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000023
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:378806
+  organism_label: Stigmatella aurantiaca DW4/3-1
+  evidence:
+  - reference: PMID:17919655
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000023 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM850130.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000023
+  source_label: aurafuron A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-198d7120de
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

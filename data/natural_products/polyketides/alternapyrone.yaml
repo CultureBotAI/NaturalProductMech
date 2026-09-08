@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-ad8c2a308f
+label: alternapyrone
+chemical_structure:
+  smiles: CCC(C)/C=C(\C)/CCCC(C)/C=C(\C)/C=C(\C)/CC(C)C1=C(C(=C(C(=O)O1)C)O)C
+  standard_inchi: InChI=1S/C28H44O3/c1-10-18(2)14-19(3)12-11-13-20(4)15-21(5)16-22(6)17-23(7)27-24(8)26(29)25(9)28(30)31-27/h14-16,18,20,23,29H,10-13,17H2,1-9H3/b19-14+,21-15+,22-16+
+  standard_inchi_key: ZPFTUJZLXSKBKE-NZDFSFLRSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000012
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:57467994
+producer_organisms:
+- taxon_id: NCBITaxon:48100
+  taxon_label: Alternaria solani
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000012
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/acs.orglett.8b02617
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000012 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000012
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:48100
+  organism_label: Alternaria solani
+  evidence:
+  - reference: DOI:10.1021/acs.orglett.8b02617
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000012 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:AB120221.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000012
+  source_label: alternapyrone
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-ad8c2a308f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

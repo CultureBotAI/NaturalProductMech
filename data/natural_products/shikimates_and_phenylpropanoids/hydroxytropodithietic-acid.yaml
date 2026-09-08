@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-c5f07fd3b5
+label: hydroxytropodithietic acid
+chemical_structure:
+  smiles: O=C1C=CC(O)=C(SS2)C2=C1C(O)=O
+  standard_inchi: InChI=1S/C8H4O4S2/c9-3-1-2-4(10)6-7(14-13-6)5(3)8(11)12/h1-2,10H,(H,11,12)
+  standard_inchi_key: BCXSWKYTDHBUIH-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000932
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Tropolones
+  class_results:
+  - Tropolones and derivatives (Shikimate)
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:391619
+  taxon_label: Phaeobacter inhibens DSM 17395
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000932
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24723119
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000932 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000932
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:391619
+  organism_label: Phaeobacter inhibens DSM 17395
+  evidence:
+  - reference: PMID:24723119
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000932 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP002977.1
+  locus_from: 88772
+  locus_to: 108389
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000932
+  source_label: hydroxytropodithietic acid
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c5f07fd3b5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

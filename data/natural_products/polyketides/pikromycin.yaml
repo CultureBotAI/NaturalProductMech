@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-c3d840ab7a
+label: pikromycin
+chemical_structure:
+  smiles: CC[C@@H]1[C@@](/C=C/C(=O)[C@@H](C[C@@H]([C@@H]([C@H](C(=O)[C@H](C(=O)O1)C)C)O[C@H]2[C@@H]([C@H](C[C@H](O2)C)N(C)C)O)C)C)(C)O
+  standard_inchi: InChI=1S/C28H47NO8/c1-10-22-28(7,34)12-11-21(30)15(2)13-16(3)25(18(5)23(31)19(6)26(33)36-22)37-27-24(32)20(29(8)9)14-17(4)35-27/h11-12,15-20,22,24-25,27,32,34H,10,13-14H2,1-9H3/b12-11+/t15-,16+,17-,18+,19-,20+,22-,24-,25+,27+,28+/m1/s1
+  standard_inchi_key: UZQBOFAUUTZOQE-VSLWXVDYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000898
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Erythromycins
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:54571
+  taxon_label: Streptomyces venezuelae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000898
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:9770448
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000898 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000898
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:54571
+  organism_label: Streptomyces venezuelae
+  evidence:
+  - reference: PMID:9770448
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000898 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF079762.1
+  bgc_class:
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000898
+  source_label: pikromycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c3d840ab7a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

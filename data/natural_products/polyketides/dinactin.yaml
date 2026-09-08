@@ -1,0 +1,99 @@
+identifier: naturalproductmech:mibig-cb9f939b3a
+label: dinactin
+chemical_structure:
+  smiles: CCC1CC2CCC(O2)C(C(=O)OC(CC3CCC(O3)C(C(=O)OC(CC4CCC(O4)C(C(=O)OC(CC5CCC(O5)C(C(=O)O1)C)C)C)CC)C)C)C
+  standard_inchi: InChI=1S/C42H68O12/c1-9-29-21-33-13-17-35(51-33)25(5)39(43)47-24(4)20-32-12-16-38(50-32)28(8)42(46)54-30(10-2)22-34-14-18-36(52-34)26(6)40(44)48-23(3)19-31-11-15-37(49-31)27(7)41(45)53-29/h23-38H,9-22H2,1-8H3
+  standard_inchi_key: ZBDGIMZKOJALMU-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000243
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polyethers
+  class_results:
+  - Macrotetrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:248000
+producer_organisms:
+- taxon_id: NCBITaxon:67263
+  taxon_label: Streptomyces griseus subsp. griseus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000243
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:10858335
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000243 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:67263
+  taxon_label: Streptomyces griseus subsp. griseus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000244
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:10858335
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000244 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000243
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67263
+  organism_label: Streptomyces griseus subsp. griseus
+  evidence:
+  - reference: PMID:10858335
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000243 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AF263011.1
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0000244
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67263
+  organism_label: Streptomyces griseus subsp. griseus
+  evidence:
+  - reference: PMID:10858335
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000244 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AF263012.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000243
+  source_label: dinactin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-cb9f939b3a
+- source: MIBIG
+  source_id: BGC0000244
+  source_label: dinactin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-6c12b87f42
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000243, BGC0000244.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

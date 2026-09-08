@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-89c5d521b8
+label: clavaric acid
+chemical_structure:
+  smiles: '[H][C@@]1(CC[C@@]2(C)C3=C(CC[C@]12C)[C@@]1(C)C[C@@H](OC(=O)CC(C)(O)CC(O)=O)C(=O)C(C)(C)[C@]1([H])CC3)[C@H](C)CCC(O)C(C)(C)O'
+  standard_inchi: InChI=1S/C36H58O8/c1-21(10-13-27(37)32(4,5)42)22-14-16-36(9)24-11-12-26-31(2,3)30(41)25(44-29(40)20-33(6,43)19-28(38)39)18-34(26,7)23(24)15-17-35(22,36)8/h21-22,25-27,37,42-43H,10-20H2,1-9H3,(H,38,39)/t21-,22-,25-,26+,27?,33?,34-,35-,36+/m1/s1
+  standard_inchi_key: FNHDSKHVYPYDAZ-VCICWZRISA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001248
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Triterpenoids
+  class_results:
+  - Lanostane, Tirucallane and Euphane triterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA011462
+- pubchem:6918349
+producer_organisms:
+- taxon_id: NCBITaxon:71945
+  taxon_label: Hypholoma sublateritium
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001248
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:19130892
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001248 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001248
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:71945
+  organism_label: Hypholoma sublateritium
+  evidence:
+  - reference: PMID:19130892
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001248 entry version 3; citation taken from the entry level
+  genome_accession: genbank:EU665687.1
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001248
+  source_label: clavaric acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-89c5d521b8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

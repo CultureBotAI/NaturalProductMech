@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-2a227a8236
+label: communesin C
+chemical_structure:
+  smiles: '[H][C@@]1(OC1(C)C)[C@@]1([H])N2CC[C@]34C5=C1C=CC=C5N(C=O)[C@@]3([H])NC1=C(C=CC=C1)[C@]41CCN(C(=O)\C=C\C=C\C)[C@]21[H]'
+  standard_inchi: InChI=1S/C32H34N4O3/c1-4-5-6-14-24(38)34-17-15-31-21-11-7-8-12-22(21)33-28-32(31)16-18-35(29(31)34)26(27-30(2,3)39-27)20-10-9-13-23(25(20)32)36(28)19-37/h4-14,19,26-29,33H,15-18H2,1-3H3/b5-4+,14-6+/t26-,27+,28+,29+,31-,32-/m0/s1
+  standard_inchi_key: BKJFWWFPUSKVTE-NSUYYRTMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001205
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Aspidosperma type
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA011755
+- pubchem:44575538
+producer_organisms:
+- taxon_id: NCBITaxon:27334
+  taxon_label: Penicillium expansum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001205
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25571861
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001205 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001205
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:27334
+  organism_label: Penicillium expansum
+  evidence:
+  - reference: PMID:25571861
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001205 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JQFY01000175.1
+  locus_from: 120403
+  locus_to: 167646
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001205
+  source_label: communesin C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-2a227a8236
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

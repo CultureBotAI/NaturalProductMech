@@ -1,0 +1,113 @@
+identifier: naturalproductmech:mibig-42f99235c6
+label: leupeptin Ac
+chemical_structure:
+  smiles: CC(C)C[C@@H](C(=O)N[C@@H](CC(C)C)C(=O)NC(CCCN=C(N)N)C=O)NC(=O)C
+  standard_inchi: InChI=1S/C20H38N6O4/c1-12(2)9-16(24-14(5)28)19(30)26-17(10-13(3)4)18(29)25-15(11-27)7-6-8-23-20(21)22/h11-13,15-17H,6-10H2,1-5H3,(H,24,28)(H,25,29)(H,26,30)(H4,21,22,23)/t15?,16-,17-/m0/s1
+  standard_inchi_key: GDBQQVLCIARPGH-BSOSBYQFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002095
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- OTHER
+xrefs:
+- pubchem:72429
+- chebi:6426
+- npatlas:NPA017329
+producer_organisms:
+- taxon_id: NCBITaxon:66430
+  taxon_label: Streptomyces roseus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002095
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1101/2020.10.26.356543
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002095 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:406818
+  taxon_label: Xenorhabdus bovienii SS-2004
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002134
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1002/anie.202005506
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002134 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002095
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:66430
+  organism_label: Streptomyces roseus
+  evidence:
+  - reference: DOI:10.1101/2020.10.26.356543
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002095 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LFML01000163.1
+  locus_from: 93602
+  locus_to: 116056
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+- accession: mibig:BGC0002134
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:406818
+  organism_label: Xenorhabdus bovienii SS-2004
+  evidence:
+  - reference: DOI:10.1002/anie.202005506
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002134 entry version 4; citation taken from the entry level
+  genome_accession: genbank:FN667741.1
+  locus_from: 588227
+  locus_to: 594000
+  bgc_class:
+  - NRPS
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002095
+  source_label: leupeptin Ac
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-42f99235c6
+- source: MIBIG
+  source_id: BGC0002134
+  source_label: leupeptin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-7a8953635d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002095, BGC0002134.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

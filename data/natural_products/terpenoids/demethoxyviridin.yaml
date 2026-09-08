@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-f81c240204
+label: demethoxyviridin
+chemical_structure:
+  smiles: C[C@]12[C@@H](CC(=O)C3=COC(=C31)C(=O)C4=C2C=CC5=C4CCC5=O)O
+  standard_inchi: InChI=1S/C19H14O5/c1-19-11-4-2-8-9(3-5-12(8)20)15(11)17(23)18-16(19)10(7-24-18)13(21)6-14(19)22/h2,4,7,14,22H,3,5-6H2,1H3/t14-,19+/m1/s1
+  standard_inchi_key: SWJBYJJNDIXFSA-KUHUBIRLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001571
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Steroids
+  class_results:
+  - Androstane steroids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+producer_organisms:
+- taxon_id: NCBITaxon:1897413
+  taxon_label: Nodulisporium sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001571
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:29743477
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001571 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001571
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1897413
+  organism_label: Nodulisporium sp.
+  evidence:
+  - reference: PMID:29743477
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001571 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MG886384.1
+  locus_from: 1
+  locus_to: 66332
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001571
+  source_label: demethoxyviridin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f81c240204
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

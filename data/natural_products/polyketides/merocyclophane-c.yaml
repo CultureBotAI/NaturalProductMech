@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-410144bb32
+label: merocyclophane C
+chemical_structure:
+  smiles: CCCC[C@@H]1CCCCC[C@H](C2=CC(=C([C@H](CCCCC[C@H](C3=CC(=C1C(=C3)O)O)C)CCCCO)C(=C2)O)O)C
+  standard_inchi: InChI=1S/C36H56O5/c1-4-5-16-27-17-10-6-8-14-26(3)30-23-33(40)36(34(41)24-30)28(19-12-13-20-37)18-11-7-9-15-25(2)29-21-31(38)35(27)32(39)22-29/h21-28,37-41H,4-20H2,1-3H3/t25-,26-,27-,28-/m1/s1
+  standard_inchi_key: HSRXNKIXELDMBE-BIYDSLDMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001663
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Alkylresorcinols
+  class_results:
+  - Dialkylresorcinols
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:132967468
+producer_organisms:
+- taxon_id: NCBITaxon:1929948
+  taxon_label: Nostoc sp. UIC 10110
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001663
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28252962
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001663 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001663
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1929948
+  organism_label: Nostoc sp. UIC 10110
+  evidence:
+  - reference: PMID:28252962
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001663 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KY379971.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001663
+  source_label: merocyclophane C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-410144bb32
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

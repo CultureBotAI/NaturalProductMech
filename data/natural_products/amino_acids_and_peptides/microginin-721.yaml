@@ -1,0 +1,77 @@
+identifier: naturalproductmech:mibig-991d417f9b
+label: microginin 721
+chemical_structure:
+  smiles: OC1=CC=C(CC(C(O)=O)NC(C2N(C(C(NC(C3CCCN3C(CC(CCCCCCC([H])[H])N)=O)=O)CCC4=CC=C(O)C=C4)=O)CCC2)=O)C=C1
+  standard_inchi: InChI=1S/C39H55N5O8/c1-2-3-4-5-6-9-28(40)25-35(47)43-22-7-10-33(43)36(48)41-31(21-16-26-12-17-29(45)18-13-26)38(50)44-23-8-11-34(44)37(49)42-32(39(51)52)24-27-14-19-30(46)20-15-27/h12-15,17-20,28,31-34,45-46H,2-11,16,21-25,40H2,1H3,(H,41,48)(H,42,49)(H,51,52)
+  standard_inchi_key: IKGQCCPKYXSKJK-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002623
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  - Lipopeptides
+  - Microginins
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Lipopeptide
+xrefs:
+- pubchem:168010290
+- cyanometdb:CyanoMetDB_2539
+producer_organisms:
+- taxon_id: NCBITaxon:1401878
+  taxon_label: Microcystis aeruginosa LEGE 91341
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002623
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:36166626
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002623 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002623
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1401878
+  organism_label: Microcystis aeruginosa LEGE 91341
+  evidence:
+  - reference: PMID:36166626
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002623 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:JADEXY010000051.1
+  locus_from: 1533
+  locus_to: 26543
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002623
+  source_label: microginin 721
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-991d417f9b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

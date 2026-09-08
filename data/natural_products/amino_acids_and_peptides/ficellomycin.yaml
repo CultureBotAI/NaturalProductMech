@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-3beee0c1ff
+label: Ficellomycin
+chemical_structure:
+  smiles: CC(C)C(N)C(=O)N[C@H](C(=O)O)[C@@H]1C[C@H](N=C(N)N)[C@H]2CN12
+  standard_inchi: InChI=1S/C13H24N6O3/c1-5(2)9(14)11(20)18-10(12(21)22)7-3-6(17-13(15)16)8-4-19(7)8/h5-10H,3-4,14H2,1-2H3,(H,18,20)(H,21,22)(H4,15,16,17)/t6-,7-,8+,9?,10-,19?/m0/s1
+  standard_inchi_key: DGIHWRUPUISVIZ-WGNILSTHSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001593
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Linear
+xrefs:
+- npatlas:NPA028481
+producer_organisms:
+- taxon_id: NCBITaxon:1977088
+  taxon_label: Streptomyces ficellus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001593
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1007/s00253-017-8465-4
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001593 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001593
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1977088
+  organism_label: Streptomyces ficellus
+  evidence:
+  - reference: DOI:10.1007/s00253-017-8465-4
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001593 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KY454693.1
+  locus_from: 11780
+  locus_to: 41364
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001593
+  source_label: Ficellomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3beee0c1ff
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

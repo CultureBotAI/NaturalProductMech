@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-33c45d2cb9
+label: gregatin A
+chemical_structure:
+  smiles: CC/C=C/C=C/C1(C(=O)C(=C(O1)OC)C(=O)/C=C/C)C
+  standard_inchi: InChI=1S/C16H20O4/c1-5-7-8-9-11-16(3)14(18)13(12(17)10-6-2)15(19-4)20-16/h6-11H,5H2,1-4H3/b8-7+,10-6+,11-9+
+  standard_inchi_key: ZNVIQQYMJWBKCA-AIQQMXLGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002185
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - Furans
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:101316768
+producer_organisms:
+- taxon_id: NCBITaxon:5081
+  taxon_label: Penicillium sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002185
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1016/0048-4059(77)90087-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002185 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002185
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5081
+  organism_label: Penicillium sp.
+  evidence:
+  - reference: DOI:10.1016/0048-4059(77)90087-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002185 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:LC522971.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002185
+  source_label: gregatin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-33c45d2cb9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

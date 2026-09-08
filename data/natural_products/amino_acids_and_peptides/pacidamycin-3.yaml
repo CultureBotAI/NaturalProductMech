@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-6aec66f8ae
+label: pacidamycin 3
+chemical_structure:
+  smiles: C[C@H](N)C(=O)N[C@@H](CC1=CC=CC(O)=C1)C(=O)N(C)[C@@H](C)[C@H](NC(=O)[C@H](C)NC(=O)N[C@@H](CC1=CC=CC(O)=C1)C(O)=O)C(=O)N\C=C1\C[C@@H](O)[C@@H](O1)N1C=CC(=O)NC1=O
+  standard_inchi: InChI=1S/C39H49N9O13/c1-19(40)32(53)43-27(15-22-7-5-9-24(49)13-22)35(56)47(4)21(3)31(34(55)41-18-26-17-29(51)36(61-26)48-12-11-30(52)45-39(48)60)46-33(54)20(2)42-38(59)44-28(37(57)58)16-23-8-6-10-25(50)14-23/h5-14,18-21,27-29,31,36,49-51H,15-17,40H2,1-4H3,(H,41,55)(H,43,53)(H,46,54)(H,57,58)(H2,42,44,59)(H,45,52,60)/b26-18-/t19-,20-,21-,27-,28-,29+,31-,36+/m0/s1
+  standard_inchi_key: NMVHSWKLTKXTCN-UEXGXZKGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000951
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:116188
+  taxon_label: Streptomyces coeruleorubidus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000951
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:20826445
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000951 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000951
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:116188
+  organism_label: Streptomyces coeruleorubidus
+  evidence:
+  - reference: PMID:20826445
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000951 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HM855229.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000951
+  source_label: pacidamycin 3
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6aec66f8ae
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

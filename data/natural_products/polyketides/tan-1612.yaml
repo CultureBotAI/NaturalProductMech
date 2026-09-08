@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-25f2512655
+label: TAN-1612
+chemical_structure:
+  smiles: CC(=O)C1=C(C2(C(=O)C3=C(CC2(CC1=O)O)C=C4C=C(C=C(C4=C3O)O)OC)O)O
+  standard_inchi: InChI=1S/C21H18O9/c1-8(22)14-13(24)7-20(28)6-10-3-9-4-11(30-2)5-12(23)15(9)17(25)16(10)19(27)21(20,29)18(14)26/h3-5,23,25-26,28-29H,6-7H2,1-2H3
+  standard_inchi_key: GEIAHRUFSQGALU-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000156
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Tetracyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:9887988
+producer_organisms:
+- taxon_id: NCBITaxon:5061
+  taxon_label: Aspergillus niger
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000156
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production.'
+  evidence:
+  - reference: PMID:21866960
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000156 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000156
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5061
+  organism_label: Aspergillus niger
+  evidence:
+  - reference: PMID:21866960
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000156 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JN257714.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000156
+  source_label: TAN-1612
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-25f2512655
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

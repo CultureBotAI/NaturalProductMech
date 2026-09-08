@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-c1b0b2a6f8
+label: vibrioferrin
+chemical_structure:
+  smiles: C[C@@H](C(=O)NCCC(C(=O)O)C(CC(=O)O)(C(=O)O)O)N1C(=O)CC[C@]1(C(=O)O)O
+  standard_inchi: InChI=1S/C16H22N2O12/c1-7(18-9(19)2-4-16(18,30)14(27)28)11(22)17-5-3-8(12(23)24)15(29,13(25)26)6-10(20)21/h7-8,29-30H,2-6H2,1H3,(H,17,22)(H,20,21)(H,23,24)(H,25,26)(H,27,28)/t7-,8?,15?,16+/m0/s1
+  standard_inchi_key: FPHRKFJYHKRDFJ-LWYCVJHGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000947
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:197680
+producer_organisms:
+- taxon_id: NCBITaxon:663
+  taxon_label: Vibrio alginolyticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000947
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17593352
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000947 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000947
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:663
+  organism_label: Vibrio alginolyticus
+  evidence:
+  - reference: PMID:17593352
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000947 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ201184.2
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000947
+  source_label: vibrioferrin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c1b0b2a6f8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

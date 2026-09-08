@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-073eed8f4b
+label: kocurin
+chemical_structure:
+  smiles: C[C@H](NC(=O)C(=C)NC(=O)C1=CSC(=N1)C1=NC2=C(C=C1)C1=NC(=C(C)O1)C(=O)N[C@@H](CC(N)=O)C1=NC(=CS1)C(=O)N[C@@H](CC1=CC=CC=C1)C1=N[C@@H](CS1)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(=O)N1CCC[C@H]1C1=NC(=CS1)C1=NC2=CS1)C(=O)N1CCC[C@H]1C(=O)NC(=C)C(=O)NC(=C)C(N)=O
+  standard_inchi: InChI=1S/C69H66N18O13S5/c1-31(54(71)90)72-55(91)33(3)74-60(96)49-13-9-21-86(49)68(98)34(4)75-56(92)32(2)73-57(93)45-27-102-63(81-45)40-20-19-39-53(76-40)44-26-101-66(80-44)48-30-105-67(84-48)50-14-10-22-87(50)69(99)43(24-37-15-17-38(88)18-16-37)79-59(95)47-29-103-64(82-47)41(23-36-11-7-6-8-12-36)77-58(94)46-28-104-65(83-46)42(25-51(70)89)78-61(97)52-35(5)100-62(39)85-52/h6-8,11-12,15-20,26-28,30,34,41-43,47,49-50,88H,1-3,9-10,13-14,21-25,29H2,4-5H3,(H2,70,89)(H2,71,90)(H,72,91)(H,73,93)(H,74,96)(H,75,92)(H,77,94)(H,78,97)(H,79,95)/t34-,41-,42-,43-,47-,49-,50-/m0/s1
+  standard_inchi_key: WWWYMYPACSXBTM-GVYUJTEBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001640
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA012970
+producer_organisms:
+- taxon_id: NCBITaxon:1275
+  taxon_label: Kocuria rosea
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001640
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28942758
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001640 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001640
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1275
+  organism_label: Kocuria rosea
+  evidence:
+  - reference: PMID:28942758
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001640 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MF620092.1
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001640
+  source_label: kocurin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-073eed8f4b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

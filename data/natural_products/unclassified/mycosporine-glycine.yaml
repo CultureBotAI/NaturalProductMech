@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-00a364fe41
+label: mycosporine glycine
+chemical_structure:
+  smiles: O=C1C(OC)=C(NCC(O)=O)C[C@@](O)(CO)C1
+  standard_inchi: InChI=1S/C10H15NO6/c1-17-9-6(11-4-8(14)15)2-10(16,5-12)3-7(9)13/h11-12,16H,2-5H2,1H3,(H,14,15)/t10-/m0/s1
+  standard_inchi_key: XZQILKYKJYHEHD-JTQLQIEISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000427
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Mycosporine derivatives
+  class_results:
+  - Mycosporine and Mycosporine-like amino acids
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:240292
+  taxon_label: Trichormus variabilis ATCC 29413
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000427
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:20813918
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000427 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000427
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:240292
+  organism_label: Trichormus variabilis ATCC 29413
+  evidence:
+  - reference: PMID:20813918
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000427 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000117.1
+  locus_from: 4798900
+  locus_to: 4805360
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000427
+  source_label: mycosporine glycine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-00a364fe41
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

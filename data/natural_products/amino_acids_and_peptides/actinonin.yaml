@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-30a67209ce
+label: actinonin
+chemical_structure:
+  smiles: '[H][C@@](CCCCC)(CC(=O)NO)C(=O)N[C@@]([H])(C(C)C)C(=O)N1CCC[C@H]1CO'
+  standard_inchi: InChI=1S/C19H35N3O5/c1-4-5-6-8-14(11-16(24)21-27)18(25)20-17(13(2)3)19(26)22-10-7-9-15(22)12-23/h13-15,17,23,27H,4-12H2,1-3H3,(H,20,25)(H,21,24)/t14-,15+,17+/m1/s1
+  standard_inchi_key: XJLATMLVMSFZBN-VYDXJSESSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001442
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA07269
+- pubchem:443600
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp. strain ATCC 14903
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001442
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:13900478
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001442 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001442
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp. strain ATCC 14903
+  evidence:
+  - reference: PMID:13900478
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001442 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY906183.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001442
+  source_label: actinonin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-30a67209ce
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

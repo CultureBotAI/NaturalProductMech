@@ -1,0 +1,183 @@
+identifier: naturalproductmech:mibig-6a3f1200b4
+label: capsular polysaccharide
+chemical_structure:
+  smiles: C(C1C(C(C(C(O1)OC2C(C(OC(C2OC3C(C(C(C(O3)C(=O)O)OC4C(C(C(C(O4)CO)O)O)O)O)O)OC5C(OC(C(C5O)O)OCC6C(C(C(C(O6)O)O)O)O)CO)CO)O)O)O)O)O
+  standard_inchi: InChI=1S/C36H60O32/c37-1-6-11(41)16(46)21(51)33(60-6)65-26-14(44)8(3-39)62-36(64-25-9(4-40)63-32(23(53)18(25)48)58-5-10-13(43)15(45)20(50)31(57)59-10)29(26)68-35-24(54)19(49)27(28(67-35)30(55)56)66-34-22(52)17(47)12(42)7(2-38)61-34/h6-29,31-54,57H,1-5H2,(H,55,56)
+  standard_inchi_key: ODLPTSAMUCYJMF-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000728
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Saccharides
+  class_results:
+  - Polysaccharides
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- pubchem:3083199
+producer_organisms:
+- taxon_id: NCBITaxon:574
+  taxon_label: Klebsiella pneumoniae subsp. ozaenae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000728
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17599305
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000728 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:573
+  taxon_label: Klebsiella pneumoniae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000729
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17599305
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000729 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:573
+  taxon_label: Klebsiella pneumoniae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000730
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17599305
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000730 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:573
+  taxon_label: Klebsiella pneumoniae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000731
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17599305
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000731 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:573
+  taxon_label: Klebsiella pneumoniae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000733
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17599305
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000733 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000728
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:574
+  organism_label: Klebsiella pneumoniae subsp. ozaenae
+  evidence:
+  - reference: PMID:17599305
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000728 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB289645.1
+  bgc_class:
+  - SACCHARIDE
+- accession: mibig:BGC0000729
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:573
+  organism_label: Klebsiella pneumoniae
+  evidence:
+  - reference: PMID:17599305
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000729 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AB289646.1
+  bgc_class:
+  - SACCHARIDE
+- accession: mibig:BGC0000730
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:573
+  organism_label: Klebsiella pneumoniae
+  evidence:
+  - reference: PMID:17599305
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000730 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AB289647.1
+  bgc_class:
+  - SACCHARIDE
+- accession: mibig:BGC0000731
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:573
+  organism_label: Klebsiella pneumoniae
+  evidence:
+  - reference: PMID:17599305
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000731 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AB289648.1
+  bgc_class:
+  - SACCHARIDE
+- accession: mibig:BGC0000733
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:573
+  organism_label: Klebsiella pneumoniae
+  evidence:
+  - reference: PMID:17599305
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000733 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AB289650.1
+  bgc_class:
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000728
+  source_label: capsular polysaccharide
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6a3f1200b4
+- source: MIBIG
+  source_id: BGC0000729
+  source_label: capsular polysaccharide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-049e392de0
+- source: MIBIG
+  source_id: BGC0000730
+  source_label: capsular polysaccharide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b0ae4d5783
+- source: MIBIG
+  source_id: BGC0000731
+  source_label: capsular polysaccharide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-6def0f495a
+- source: MIBIG
+  source_id: BGC0000733
+  source_label: capsular polysaccharide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-45e991fd7b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000728, BGC0000729,
+    BGC0000730, BGC0000731, BGC0000733. Confirm they describe the same compound rather
+    than an upstream cross-reference error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

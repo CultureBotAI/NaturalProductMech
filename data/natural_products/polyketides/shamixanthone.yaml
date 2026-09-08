@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-bf203b88d9
+label: shamixanthone
+chemical_structure:
+  smiles: CC(C)=CCC1=CC=C(O)C2=C1OC1=C(C2=O)C2=C(OC[C@H]([C@@H]2O)C(C)=C)C(C)=C1
+  standard_inchi: InChI=1S/C25H26O5/c1-12(2)6-7-15-8-9-17(26)19-23(28)20-18(30-25(15)19)10-14(5)24-21(20)22(27)16(11-29-24)13(3)4/h6,8-10,16,22,26-27H,3,7,11H2,1-2,4-5H3/t16-,22-/m0/s1
+  standard_inchi_key: MXGMZMKTWCNKRS-AOMKIAJQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000101
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Xanthones
+  class_results:
+  - Methyl xanthones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA013991
+- pubchem:15596091
+producer_organisms:
+- taxon_id: NCBITaxon:227321
+  taxon_label: Aspergillus nidulans FGSC A4
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000101
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Gene expression correlated
+    with compound production.'
+  evidence:
+  - reference: PMID:19448638
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000101 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000101
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:227321
+  organism_label: Aspergillus nidulans FGSC A4
+  evidence:
+  - reference: PMID:19448638
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000101 entry version 5; citation taken from the entry level
+  genome_accession: genbank:BN001308.1
+  locus_from: 4379755
+  locus_to: 4404005
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000101
+  source_label: shamixanthone
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-bf203b88d9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

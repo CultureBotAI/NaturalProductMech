@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-79d73c7bd8
+label: prealnumycin
+chemical_structure:
+  smiles: CC(O[C@@H]1CCC)=CC(C1=C2O)=CC3=C2C(C=CC3=O)=O
+  standard_inchi: InChI=1S/C17H16O4/c1-3-4-14-15-10(7-9(2)21-14)8-11-12(18)5-6-13(19)16(11)17(15)20/h5-8,14,20H,3-4H2,1-2H3/t14-/m1/s1
+  standard_inchi_key: XSRXAOMSAQPHJV-CQSZACIVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000195
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Naphthalenes
+  class_results:
+  - Naphthoquinones
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:569580
+  taxon_label: Streptomyces sp. CM020
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000195
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:18940666
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000195 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000195
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:569580
+  organism_label: Streptomyces sp. CM020
+  evidence:
+  - reference: PMID:18940666
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000195 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EU852062.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000195
+  source_label: prealnumycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-79d73c7bd8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

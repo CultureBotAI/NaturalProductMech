@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-dd095ce4fb
+label: nocapeptin A
+chemical_structure:
+  smiles: C[C@H](O)[C@@H](NC(=O)[C@@H]1CCCN1C(=O)CNC(=O)[C@@H]1CC(=O)NCC(=O)N[C@@H]2Cc3cn(-c4cc(C[C@H](NC2=O)C(=O)NCC(=O)N[C@H](CO)C(=O)N[C@H](CCC(N)=O)C(=O)N[C@H](Cc2c[nH]c5ccccc25)C(=O)N1)ccc4O)c1ccccc31)C(=O)NCC(=O)N[C@H](CCC(N)=O)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@H](CC(O)=O)C(O)=O
+  standard_inchi: InChI=1S/C75H96N22O24/c1-35(99)63(73(119)84-31-59(105)86-43(15-18-55(76)101)67(113)89-42(11-6-20-80-75(78)79)66(112)94-49(74(120)121)27-62(108)109)95-72(118)52-13-7-21-96(52)61(107)32-85-65(111)48-26-57(103)82-29-58(104)87-46-25-38-33-97(51-12-5-3-9-40(38)51)53-23-36(14-17-54(53)100)22-45(91-69(46)115)64(110)83-30-60(106)88-50(34-98)71(117)90-44(16-19-56(77)102)68(114)92-47(70(116)93-48)24-37-28-81-41-10-4-2-8-39(37)41/h2-5,8-10,12,14,17,23,28,33,35,42-50,52,63,81,98-100H,6-7,11,13,15-16,18-22,24-27,29-32,34H2,1H3,(H2,76,101)(H2,77,102)(H,82,103)(H,83,110)(H,84,119)(H,85,111)(H,86,105)(H,87,104)(H,88,106)(H,89,113)(H,90,117)(H,91,115)(H,92,114)(H,93,116)(H,94,112)(H,95,118)(H,108,109)(H,120,121)(H4,78,79,80)/t35-,42-,43+,44+,45-,46+,47+,48-,49+,50+,52-,63+/m0/s1
+  standard_inchi_key: RDAOYZHOHLFLAN-IAZMLBCOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002825
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:455432
+  taxon_label: Nocardia terpenica IFM 0406
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002825
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Correlation of genomic and metabolomic data.'
+  evidence:
+  - reference: DOI:10.1101/2023.03.06.531328
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002825 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002825
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455432
+  organism_label: Nocardia terpenica IFM 0406
+  evidence:
+  - reference: DOI:10.1101/2023.03.06.531328
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002825 entry version 2; citation taken from the entry level
+  genome_accession: genbank:KV411304.1
+  locus_from: 1626613
+  locus_to: 1632294
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Correlation of genomic and metabolomic data
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002825
+  source_label: nocapeptin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-dd095ce4fb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

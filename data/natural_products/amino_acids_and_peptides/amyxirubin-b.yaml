@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-7c3b343c3b
+label: Amyxirubin B
+chemical_structure:
+  smiles: O=C([C@@H]1C[C@]2(C3=CC4=C5C=C3)C6=C(C=CC=C6)N[C@@H]2[N@@]1C([C@H]([C@H](CC)C)NC([C@@](C7)([H])NC([C@@H](N)CC4=C[N@]5C8=CC7=CC=C8O)=O)=O)=O)N[C@H](C(O)=O)CC9=CNC%10=C9C=CC=C%10
+  standard_inchi: InChI=1S/C48H48N8O7/c1-3-24(2)41-45(61)56-39(44(60)52-36(46(62)63)19-26-22-50-33-10-6-4-8-29(26)33)21-48(31-9-5-7-11-34(31)53-47(48)56)28-13-14-37-30(20-28)27-18-32(49)42(58)51-35(43(59)54-41)16-25-12-15-40(57)38(17-25)55(37)23-27/h4-15,17,20,22-24,32,35-36,39,41,47,50,53,57H,3,16,18-19,21,49H2,1-2H3,(H,51,58)(H,52,60)(H,54,59)(H,62,63)/t24-,32-,35-,36-,39-,41-,47+,48-/m0/s1
+  standard_inchi_key: GMGSSHQZUWQQEW-UXPGNVKNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002751
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:589385
+  taxon_label: Amycolatopsis xylanica
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002751
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1002/anie.202208361
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002751 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002751
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:589385
+  organism_label: Amycolatopsis xylanica
+  evidence:
+  - reference: DOI:10.1002/anie.202208361
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002751 entry version 2; citation taken from the entry level
+  genome_accession: genbank:FNON01000005.1
+  locus_from: 781463
+  locus_to: 782682
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002751
+  source_label: Amyxirubin B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-7c3b343c3b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-1155c4085f
+label: 1,6-phenazinedimethanol
+chemical_structure:
+  smiles: C1=CC(=C2C(=C1)N=C3C(=N2)C=CC=C3CO)CO
+  standard_inchi: InChI=1S/C14H12N2O2/c17-7-9-3-1-5-11-13(9)16-12-6-2-4-10(8-18)14(12)15-11/h1-6,17-18H,7-8H2
+  standard_inchi_key: WFYLTIMBLPIRRU-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002002
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Phenazine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:44607162
+producer_organisms:
+- taxon_id: NCBITaxon:47917
+  taxon_label: Serratia fonticola
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002002
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:29548983
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002002 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002002
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:47917
+  organism_label: Serratia fonticola
+  evidence:
+  - reference: PMID:29548983
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002002 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NZ_CP011254.1
+  locus_from: 780776
+  locus_to: 795170
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002002
+  source_label: 1,6-phenazinedimethanol
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1155c4085f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

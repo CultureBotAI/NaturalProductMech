@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-447ade53ad
+label: polyoxin H
+chemical_structure:
+  smiles: O=C(N1)C=CN([C@H]2[C@H](O)[C@H](O)[C@@H]([C@H](NC([C@@H](N)[C@H](O)[C@@H](O)COC(N)=O)=O)C(N([C@@H]/3C(O)=O)CC3=C/C)=O)O2)C1=O
+  standard_inchi: InChI=1S/C22H30N6O13/c1-2-7-5-28(12(7)20(36)37)18(35)11(26-17(34)10(23)13(31)8(29)6-40-21(24)38)16-14(32)15(33)19(41-16)27-4-3-9(30)25-22(27)39/h2-4,8,10-16,19,29,31-33H,5-6,23H2,1H3,(H2,24,38)(H,26,34)(H,36,37)(H,25,30,39)/b7-2+/t8-,10-,11-,12-,13+,14-,15+,16+,19+/m0/s1
+  standard_inchi_key: ABZGUBNFEGMGPE-MQNVTSSDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000877
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Pyrimidine nucleos(t)ides
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:249586
+  taxon_label: Streptomyces cacaoi subsp. asoensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000877
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:19233844
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000877 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000877
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:249586
+  organism_label: Streptomyces cacaoi subsp. asoensis
+  evidence:
+  - reference: PMID:19233844
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000877 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EU158805.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000877
+  source_label: polyoxin H
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-447ade53ad
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

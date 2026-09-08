@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-9ca881fcd0
+label: asukamycin
+chemical_structure:
+  smiles: OC1=C(NC(=O)\C=C\C=C/C=C\[C@]2(O)C=C(NC(=O)\C=C\C=C\C=C\C3CCCCC3)C(=O)C3OC23)C(=O)CC1
+  standard_inchi: InChI=1S/C31H34N2O7/c34-23-17-18-24(35)27(23)33-26(37)16-10-3-4-11-19-31(39)20-22(28(38)29-30(31)40-29)32-25(36)15-9-2-1-6-12-21-13-7-5-8-14-21/h1-4,6,9-12,15-16,19-21,29-30,34,39H,5,7-8,13-14,17-18H2,(H,32,36)(H,33,37)/b2-1+,4-3-,12-6+,15-9+,16-10+,19-11-/t29?,30?,31-/m0/s1
+  standard_inchi_key: SSHVAUUEPNULMP-PVYHIPRASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000187
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Linear polyenes
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA012374
+- pubchem:6441014
+producer_organisms:
+- taxon_id: NCBITaxon:222892
+  taxon_label: Streptomyces nodosus subsp. asukaensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000187
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
+    expression correlated with compound production.'
+  evidence:
+  - reference: PMID:25489112
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000187 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000187
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:222892
+  organism_label: Streptomyces nodosus subsp. asukaensis
+  evidence:
+  - reference: PMID:25489112
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000187 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GQ926890.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000187
+  source_label: asukamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-9ca881fcd0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-bbc51c6b2d
+label: actinospirol B
+chemical_structure:
+  smiles: CC1=CC(O)=C2C(=O)O[C@@]3(OC4=CC=CC(C(=O)O)=C4C3=O)C2=C1Br
+  standard_inchi: InChI=1S/C17H9BrO7/c1-6-5-8(19)11-12(13(6)18)17(25-16(11)23)14(20)10-7(15(21)22)3-2-4-9(10)24-17/h2-5,19H,1H3,(H,21,22)/t17-/m0/s1
+  standard_inchi_key: NPDRNVRLCFOBNU-KRWDZBQOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002369
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA032291
+- pubchem:156582988
+producer_organisms:
+- taxon_id: NCBITaxon:1926885
+  taxon_label: Actinomadura rubteroloni
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002369
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28463423
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002369 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002369
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1926885
+  organism_label: Actinomadura rubteroloni
+  evidence:
+  - reference: PMID:28463423
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002369 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MTBP01000002.1
+  locus_from: 91309
+  locus_to: 112794
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002369
+  source_label: actinospirol B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-bbc51c6b2d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

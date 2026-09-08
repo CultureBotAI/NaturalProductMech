@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-4519ae749a
+label: Isofuranonaphthoquinone D
+chemical_structure:
+  smiles: CC1=C2C(=CO1)C(=O)C3=CC(=C(C(=C3C2=O)O)OC)OC
+  standard_inchi: InChI=1S/C15H12O6/c1-6-10-8(5-21-6)12(16)7-4-9(19-2)15(20-3)14(18)11(7)13(10)17/h4-5,18H,1-3H3
+  standard_inchi_key: FSDLITFTXNPSSN-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001625
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Naphthalenes
+  class_results:
+  - Naphthoquinones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA021583
+producer_organisms:
+- taxon_id: NCBITaxon:1703943
+  taxon_label: Streptomyces sp. CB01883
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001625
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1038/ja.2016.122
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001625 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001625
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1703943
+  organism_label: Streptomyces sp. CB01883
+  evidence:
+  - reference: DOI:10.1038/ja.2016.122
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001625 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KX358898.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001625
+  source_label: Isofuranonaphthoquinone D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4519ae749a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

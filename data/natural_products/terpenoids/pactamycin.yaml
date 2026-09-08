@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-608a44baf3
+label: pactamycin
+chemical_structure:
+  smiles: CC1=C(C(=CC=C1)O)C(=O)OC[C@]2([C@H]([C@@H]([C@]([C@@]2(C)O)([C@H](C)O)NC(=O)N(C)C)N)NC3=CC=CC(=C3)C(=O)C)O
+  standard_inchi: InChI=1S/C28H38N4O8/c1-15-9-7-12-20(35)21(15)24(36)40-14-27(39)23(30-19-11-8-10-18(13-19)16(2)33)22(29)28(17(3)34,26(27,4)38)31-25(37)32(5)6/h7-13,17,22-23,30,34-35,38-39H,14,29H2,1-6H3,(H,31,37)/t17-,22-,23-,26-,27+,28-/m0/s1
+  standard_inchi_key: WVIUOSJLUCTGFK-JUJPXXQGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000118
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:5289124
+producer_organisms:
+- taxon_id: NCBITaxon:68249
+  taxon_label: Streptomyces pactum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000118
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17827660
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000118 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000118
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68249
+  organism_label: Streptomyces pactum
+  evidence:
+  - reference: PMID:17827660
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000118 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB303063.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000118
+  source_label: pactamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-608a44baf3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

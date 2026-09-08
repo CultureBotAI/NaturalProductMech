@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-776251bbc4
+label: NFAT-133
+chemical_structure:
+  smiles: CC1=CC(=C(C=C1)C(C)C(C(C)C(=O)C)O)/C=C/CO
+  standard_inchi: InChI=1S/C17H24O3/c1-11-7-8-16(15(10-11)6-5-9-18)13(3)17(20)12(2)14(4)19/h5-8,10,12-13,17-18,20H,9H2,1-4H3/b6-5+
+  standard_inchi_key: FTTQBBNJVTYJPS-AATRIKPKSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002500
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Bisabolane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA002050
+producer_organisms:
+- taxon_id: NCBITaxon:68249
+  taxon_label: Streptomyces pactum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002500
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:33284588
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002500 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002500
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68249
+  organism_label: Streptomyces pactum
+  evidence:
+  - reference: PMID:33284588
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002500 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MW026651.1
+  locus_from: 1
+  locus_to: 62503
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002500
+  source_label: NFAT-133
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-776251bbc4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

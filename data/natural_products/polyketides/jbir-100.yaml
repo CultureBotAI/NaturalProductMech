@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-b8045a3033
+label: JBIR-100
+chemical_structure:
+  smiles: CC1C/C(=C/C=C\CC(OC(=O)/C(=C\C(=C\C(C1O)C)\C)/C)C(C)C(C(C)C2(CC(C(C(O2)C(C)C)C)OC(=O)/C=C/C(=O)O)O)O)/C
+  standard_inchi: InChI=1S/C38H58O10/c1-21(2)36-28(9)31(46-33(41)16-15-32(39)40)20-38(45,48-36)29(10)35(43)27(8)30-14-12-11-13-22(3)17-24(5)34(42)25(6)18-23(4)19-26(7)37(44)47-30/h11-13,15-16,18-19,21,24-25,27-31,34-36,42-43,45H,14,17,20H2,1-10H3,(H,39,40)/b12-11-,16-15+,22-13+,23-18+,26-19-
+  standard_inchi_key: DQIWFSKTIQHZOM-LXTMCQRYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001348
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Bafilomycins
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:102518265
+producer_organisms:
+- taxon_id: NCBITaxon:67373
+  taxon_label: Streptomyces varsoviensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001348
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:27234886
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001348 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001348
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67373
+  organism_label: Streptomyces varsoviensis
+  evidence:
+  - reference: PMID:27234886
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001348 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_JOBF01000033.1
+  locus_from: 93200
+  locus_to: 164000
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001348
+  source_label: JBIR-100
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b8045a3033
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

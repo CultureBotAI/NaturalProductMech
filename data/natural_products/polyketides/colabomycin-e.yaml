@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-7163dcc196
+label: colabomycin E
+chemical_structure:
+  smiles: O=C(NC1=C[C@](/C=C/C=C/C=C/C=C/C(NC2=C(O)CCC2=O)=O)(O)C3C(O3)C1=O)/C=C/C=C/C=C/C=C\C=C\C
+  standard_inchi: InChI=1S/C32H32N2O7/c1-2-3-4-5-6-7-8-11-14-17-26(37)33-23-22-32(40,31-30(41-31)29(23)39)21-16-13-10-9-12-15-18-27(38)34-28-24(35)19-20-25(28)36/h2-18,21-22,30-31,35,40H,19-20H2,1H3,(H,33,37)(H,34,38)/b3-2+,5-4-,7-6+,11-8+,12-9+,13-10+,17-14+,18-15+,21-16+/t30?,31?,32-/m0/s1
+  standard_inchi_key: UQUWECQGNYCQSQ-MRNGIOIPSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000213
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Linear polyenes
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:193461
+  taxon_label: Streptomyces aureus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000213
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production.'
+  evidence:
+  - reference: PMID:24838618
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000213 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000213
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:193461
+  organism_label: Streptomyces aureus
+  evidence:
+  - reference: PMID:24838618
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000213 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KF850685.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000213
+  source_label: colabomycin E
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-7163dcc196
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-81de3c8757
+label: ketomemicin B3
+chemical_structure:
+  smiles: N=C(N)NCCC[C@H](NC(=N)N)C(=O)N[C@@H](Cc1ccccc1)C(=O)C[C@@H](Cc2ccccc2)C(=O)O
+  standard_inchi: InChI=1S/C26H35N7O4/c27-25(28)31-13-7-12-20(33-26(29)30)23(35)32-21(15-18-10-5-2-6-11-18)22(34)16-19(24(36)37)14-17-8-3-1-4-9-17/h1-6,8-11,19-21H,7,12-16H2,(H,32,35)(H,36,37)(H4,27,28,31)(H4,29,30,33)/t19-,20+,21+/m1/s1
+  standard_inchi_key: JJJQWDUIVZHYMQ-HKBOAZHASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001633
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1223523
+  taxon_label: Streptomyces mobaraensis NBRC 13819 = DSM 40847
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001633
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28097768
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001633 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001633
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1223523
+  organism_label: Streptomyces mobaraensis NBRC 13819 = DSM 40847
+  evidence:
+  - reference: PMID:28097768
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001633 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AORZ01000018.1
+  locus_from: 52624
+  locus_to: 58838
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001633
+  source_label: ketomemicin B3
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-81de3c8757
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-04dcc8b38a
+label: pentangumycin
+chemical_structure:
+  smiles: COC1=CC(CNC(C)=O)=CC2=CC(C3=CC=C(O)C=C3)=C3C(=O)C4=C(C=CC=C4O)C(=O)C3=C12
+  standard_inchi: InChI=1S/C28H21NO6/c1-14(30)29-13-15-10-17-12-20(16-6-8-18(31)9-7-16)25-26(23(17)22(11-15)35-2)27(33)19-4-3-5-21(32)24(19)28(25)34/h3-12,31-32H,13H2,1-2H3,(H,29,30)
+  standard_inchi_key: JWLGWSSOSJPSNF-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002070
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA033498
+producer_organisms:
+- taxon_id: NCBITaxon:1179773
+  taxon_label: Saccharothrix espanaensis DSM 44229
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002070
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Knock-out studies|Gene expression
+    correlated with compound production.'
+  evidence:
+  - reference: PMID:33352664
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002070 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002070
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1179773
+  organism_label: Saccharothrix espanaensis DSM 44229
+  evidence:
+  - reference: PMID:33352664
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002070 entry version 3; citation taken from the entry level
+  genome_accession: genbank:HE804045.1
+  locus_from: 6124164
+  locus_to: 6148184
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002070
+  source_label: pentangumycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-04dcc8b38a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

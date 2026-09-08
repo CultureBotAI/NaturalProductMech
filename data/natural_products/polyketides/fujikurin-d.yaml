@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-bd79d3f315
+label: fujikurin D
+chemical_structure:
+  smiles: CCC(C)C(\O)=C1/C(=O)OC(C)C(C)C1=O
+  standard_inchi: InChI=1S/C12H18O4/c1-5-6(2)10(13)9-11(14)7(3)8(4)16-12(9)15/h6-8,13H,5H2,1-4H3/b10-9+
+  standard_inchi_key: HRHXOJYXAMLRQF-MDZDMXLPSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001305
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA04349
+- pubchem:122183676
+producer_organisms:
+- taxon_id: NCBITaxon:1279085
+  taxon_label: Fusarium fujikuroi IMI 58289
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001305
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26192387
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001305 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001305
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1279085
+  organism_label: Fusarium fujikuroi IMI 58289
+  evidence:
+  - reference: PMID:26192387
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001305 entry version 4; citation taken from the entry level
+  genome_accession: genbank:HF679030.1
+  locus_from: 1347199
+  locus_to: 1371451
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001305
+  source_label: fujikurin D
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-bd79d3f315
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,131 @@
+identifier: naturalproductmech:mibig-94a1af0310
+label: aerobactin
+chemical_structure:
+  smiles: CC(=O)N(CCCC[C@@H](C(=O)O)NC(=O)CC(CC(=O)N[C@@H](CCCCN(C(=O)C)O)C(=O)O)(C(=O)O)O)O
+  standard_inchi: InChI=1S/C22H36N4O13/c1-13(27)25(38)9-5-3-7-15(19(31)32)23-17(29)11-22(37,21(35)36)12-18(30)24-16(20(33)34)8-4-6-10-26(39)14(2)28/h15-16,37-39H,3-12H2,1-2H3,(H,23,29)(H,24,30)(H,31,32)(H,33,34)(H,35,36)/t15-,16-/m0/s1
+  standard_inchi_key: KDHHWXGBNUCREU-HOTGVXAUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000939
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:123762
+producer_organisms:
+- taxon_id: NCBITaxon:673
+  taxon_label: Grimontia hollisae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000939
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:16809025
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000939 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1427518
+  taxon_label: Xenorhabdus szentirmaii DSM 16338
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001498
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28654175
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001498 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:553
+  taxon_label: Pantoea ananatis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001499
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:30027301
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001499 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000939
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:673
+  organism_label: Grimontia hollisae
+  evidence:
+  - reference: PMID:16809025
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000939 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB199785.1
+  bgc_class:
+  - OTHER
+- accession: mibig:BGC0001498
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1427518
+  organism_label: Xenorhabdus szentirmaii DSM 16338
+  evidence:
+  - reference: PMID:28654175
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001498 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CBXF010000089.1
+  locus_from: 16055
+  locus_to: 30575
+  bgc_class:
+  - OTHER
+- accession: mibig:BGC0001499
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:553
+  organism_label: Pantoea ananatis
+  evidence:
+  - reference: PMID:30027301
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001499 entry version 5; citation taken from the entry level
+  genome_accession: genbank:MH015021.1
+  locus_from: 1
+  locus_to: 14029
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000939
+  source_label: aerobactin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-94a1af0310
+- source: MIBIG
+  source_id: BGC0001498
+  source_label: aerobactin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3f5ee5713a
+- source: MIBIG
+  source_id: BGC0001499
+  source_label: aerobactin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8674b23699
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000939, BGC0001498,
+    BGC0001499. Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

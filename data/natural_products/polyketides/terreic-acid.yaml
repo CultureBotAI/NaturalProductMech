@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-81dbb033ef
+label: terreic acid
+chemical_structure:
+  smiles: '[H][C@]12O[C@@]1([H])C(=O)C(O)=C(C)C2=O'
+  standard_inchi: InChI=1S/C7H6O4/c1-2-3(8)5(10)7-6(11-7)4(2)9/h6-8H,1H3/t6-,7+/m1/s1
+  standard_inchi_key: ATFNSNUJZOYXFC-RQJHMYQMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000160
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA0714
+- pubchem:91437
+producer_organisms:
+- taxon_id: NCBITaxon:341663
+  taxon_label: Aspergillus terreus NIH2624
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000160
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1177/1087057115625308
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000160 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000160
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:341663
+  organism_label: Aspergillus terreus NIH2624
+  evidence:
+  - reference: DOI:10.1177/1087057115625308
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000160 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CH476602.1
+  locus_from: 89034
+  locus_to: 116126
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000160
+  source_label: terreic acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-81dbb033ef
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-b773bbcf61
+label: cyclosporin A
+chemical_structure:
+  smiles: CC[C@H]1C(=O)N(CC(=O)N([C@H](C(=O)N[C@H](C(=O)N([C@H](C(=O)N[C@H](C(=O)N[C@@H](C(=O)N([C@H](C(=O)N([C@H](C(=O)N([C@H](C(=O)N([C@H](C(=O)N1)[C@@H]([C@H](C)C/C=C/C)O)C)C(C)C)C)CC(C)C)C)CC(C)C)C)C)C)CC(C)C)C)C(C)C)CC(C)C)C)C
+  standard_inchi: InChI=1S/C62H111N11O12/c1-25-27-28-40(15)52(75)51-56(79)65-43(26-2)58(81)67(18)33-48(74)68(19)44(29-34(3)4)55(78)66-49(38(11)12)61(84)69(20)45(30-35(5)6)54(77)63-41(16)53(76)64-42(17)57(80)70(21)46(31-36(7)8)59(82)71(22)47(32-37(9)10)60(83)72(23)50(39(13)14)62(85)73(51)24/h25,27,34-47,49-52,75H,26,28-33H2,1-24H3,(H,63,77)(H,64,76)(H,65,79)(H,66,78)/b27-25+/t40-,41+,42-,43+,44+,45+,46+,47+,49+,50+,51+,52-/m1/s1
+  standard_inchi_key: PMATZTZNYRCHOR-CGLBZJNRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000334
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Peptaibols
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:5284373
+producer_organisms:
+- taxon_id: NCBITaxon:29910
+  taxon_label: Tolypocladium inflatum NRRL 8044
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000334
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1371/journal.pgen.1003496
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000334 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000334
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:29910
+  organism_label: Tolypocladium inflatum NRRL 8044
+  evidence:
+  - reference: DOI:10.1371/journal.pgen.1003496
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000334 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:QEPI01000018.1
+  locus_from: 1270402
+  locus_to: 1378084
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000334
+  source_label: cyclosporin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-b773bbcf61
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

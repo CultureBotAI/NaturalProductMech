@@ -1,0 +1,106 @@
+identifier: naturalproductmech:mibig-eea8f3e796
+label: sodorifen
+chemical_structure:
+  smiles: C=C1[C@H](C)[C@@]2(C)C(C)=C(C)[C@](C)(C2C)[C@@H]1C
+  standard_inchi: InChI=1S/C16H26/c1-9-10(2)15(7)12(4)13(5)16(8,11(9)3)14(15)6/h10-11,14H,1H2,2-8H3/t10-,11+,14?,15-,16+
+  standard_inchi_key: GXPHTJFKVOCWKQ-PDLCYRHZSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002283
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Thapsane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA031220
+- pubchem:46187193
+producer_organisms:
+- taxon_id: NCBITaxon:82996
+  taxon_label: Serratia plymuthica
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002283
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:30732610
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002283 entry version 2; citation taken from the entry level
+- taxon_id: NCBITaxon:682634
+  taxon_label: Serratia plymuthica 4Rx13
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001361
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:27231241
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001361 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002283
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:82996
+  organism_label: Serratia plymuthica
+  evidence:
+  - reference: PMID:30732610
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002283 entry version 2; citation taken from the entry level
+  genome_accession: genbank:RBLL01000001.1
+  locus_from: 4596723
+  locus_to: 4601294
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+- accession: mibig:BGC0001361
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:682634
+  organism_label: Serratia plymuthica 4Rx13
+  evidence:
+  - reference: PMID:27231241
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001361 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP006250.1
+  locus_from: 2257658
+  locus_to: 2262237
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002283
+  source_label: sodorifen
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-eea8f3e796
+- source: MIBIG
+  source_id: BGC0001361
+  source_label: sodorifen
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0ea28266f1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001361, BGC0002283.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

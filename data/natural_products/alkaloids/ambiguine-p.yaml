@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-158d84566b
+label: ambiguine P
+chemical_structure:
+  smiles: C[C@@]1(CC[C@@]2(O)C3=C1C=CC(C)(C)C1=C3C3=C(N1)C=CC=C3C2(C)C)C=C
+  standard_inchi: InChI=1S/C25H29NO/c1-7-24(6)13-14-25(27)20-16(24)11-12-22(2,3)21-19(20)18-15(23(25,4)5)9-8-10-17(18)26-21/h7-12,26-27H,1,13-14H2,2-6H3/t24-,25+/m0/s1
+  standard_inchi_key: YIXMOSKWKGHGSQ-LOSJGSFVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001501
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Hapalindole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA010396
+producer_organisms:
+- taxon_id: NCBITaxon:1930928
+  taxon_label: Fischerella sp. TAU
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001501
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28288107
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001501 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001501
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1930928
+  organism_label: Fischerella sp. TAU
+  evidence:
+  - reference: PMID:28288107
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001501 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY026488.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001501
+  source_label: ambiguine P
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-158d84566b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

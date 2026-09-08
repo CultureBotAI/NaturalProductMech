@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-75955f8e79
+label: pederone
+chemical_structure:
+  smiles: CC1C(OC(CC1=C)(C(C(=O)NC(C2CC(=O)C(C(O2)CC(COC)OC)(C)C)OC)O)OC)C
+  standard_inchi: InChI=1S/C25H43NO9/c1-14-12-25(33-9,35-16(3)15(14)2)21(28)22(29)26-23(32-8)18-11-19(27)24(4,5)20(34-18)10-17(31-7)13-30-6/h15-18,20-21,23,28H,1,10-13H2,2-9H3,(H,26,29)
+  standard_inchi_key: XWFDVJNZERXRSB-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001108
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:177799
+producer_organisms:
+- taxon_id: NCBITaxon:77133
+  taxon_label: Uncultured bacterium
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001108
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:12381784
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001108 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001108
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:77133
+  organism_label: Uncultured bacterium
+  evidence:
+  - reference: PMID:12381784
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001108 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY328023.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001108
+  source_label: pederone
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-75955f8e79
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

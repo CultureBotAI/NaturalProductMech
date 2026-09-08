@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-ca2ce8b8bc
+label: aurantimycin A
+chemical_structure:
+  smiles: COC[C@@H]1N(O)C(=O)[C@H]2CCCNN2C(=O)[C@@H](NC(=O)[C@](C)(O)[C@]2(O)CC[C@@H](CC(C)C)[C@H](C)O2)[C@@H](OC(=O)[C@@H](C)N(O)C(=O)[C@@H]2CCCNN2C(=O)CNC1=O)C(C)C
+  standard_inchi: InChI=1S/C38H64N8O14/c1-20(2)17-24-13-14-38(55,60-23(24)6)37(7,54)36(53)42-29-30(21(3)4)59-35(52)22(5)45(56)32(49)25-11-9-15-40-43(25)28(47)18-39-31(48)27(19-58-8)46(57)33(50)26-12-10-16-41-44(26)34(29)51/h20-27,29-30,40-41,54-57H,9-19H2,1-8H3,(H,39,48)(H,42,53)/t22-,23+,24+,25+,26-,27+,29+,30+,37+,38+/m1/s1
+  standard_inchi_key: JSVPJXYQXDNLRD-NSCUIBACSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001519
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA019300
+producer_organisms:
+- taxon_id: NCBITaxon:1286094
+  taxon_label: Streptomyces aurantiacus JA 4570
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001519
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:27655321
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001519 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001519
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1286094
+  organism_label: Streptomyces aurantiacus JA 4570
+  evidence:
+  - reference: PMID:27655321
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001519 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AOPZ01000014.1
+  locus_from: 1
+  locus_to: 64790
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001519
+  source_label: aurantimycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ca2ce8b8bc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

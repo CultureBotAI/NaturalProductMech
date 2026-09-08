@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-7369bf06d5
+label: misakinolide A
+chemical_structure:
+  smiles: C[C@@H]1O[C@H](C[C@@H](C1)OC)CC[C@@H]([C@H](O)[C@@H]([C@H]2OC(=O)/C(=C/C[C@@H](C[C@H]3O[C@H](C[C@@H]([C@H]([C@H](C[C@H]([C@@H]([C@H](OC(=O)/C(=C/C[C@@H](C[C@H]4O[C@H](C[C@@H]([C@H]([C@H](C[C@H]([C@@H]2C)O)O)C)OC)CC=C4)O)/C)[C@H]([C@@H](O)[C@H](CC[C@@H]5O[C@H](C[C@H](C5)OC)C)C)C)C)O)O)C)OC)CC=C3)O)/C)C)C
+  standard_inchi: InChI=1S/C74H128O20/c1-41(25-29-59-35-61(85-13)31-45(5)89-59)69(81)51(11)71-49(9)65(79)39-63(77)47(7)67(87-15)37-57-21-18-20-56(92-57)34-54(76)28-24-44(4)74(84)94-72(52(12)70(82)42(2)26-30-60-36-62(86-14)32-46(6)90-60)50(10)66(80)40-64(78)48(8)68(88-16)38-58-22-17-19-55(91-58)33-53(75)27-23-43(3)73(83)93-71/h17-20,23-24,41-42,45-72,75-82H,21-22,25-40H2,1-16H3/b43-23+,44-24+/t41-,42-,45-,46-,47-,48-,49-,50-,51-,52-,53-,54-,55-,56-,57-,58-,59-,60-,61+,62+,63-,64-,65+,66+,67-,68-,69-,70-,71-,72-/m0/s1
+  standard_inchi_key: CNXAVQHYRALFDY-VIPNGKGCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001186
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6441172
+producer_organisms:
+- taxon_id: NCBITaxon:1652106
+  taxon_label: Candidatus Entotheonella serta
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001186
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:29779656
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001186 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001186
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1652106
+  organism_label: Candidatus Entotheonella serta
+  evidence:
+  - reference: PMID:29779656
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001186 entry version 4; citation taken from the entry level
+  genome_accession: genbank:KR857273.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001186
+  source_label: misakinolide A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-7369bf06d5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

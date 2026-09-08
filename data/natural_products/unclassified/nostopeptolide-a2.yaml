@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-027ccc2a70
+label: nostopeptolide A2
+chemical_structure:
+  smiles: CCCC(=O)N[C@@H](C(C)C)C(=O)NC1COC(=O)[C@@H]2CCCN2C(=O)[C@H](CC2=CC=C(O)C=C2)NC(=O)[C@H](CC(N)=O)NC(=O)CNC(=O)[C@H](CC(C)C)NC(=O)CC(=O)[C@H](CC(C)C)NC(=O)C2C[C@H](C)CN2C1=O
+  standard_inchi: InChI=1S/C52H78N10O14/c1-9-11-42(66)60-45(29(6)7)49(72)59-37-26-76-52(75)38-12-10-17-61(38)50(73)36(21-31-13-15-32(63)16-14-31)58-47(70)35(22-41(53)65)56-44(68)24-54-46(69)34(19-28(4)5)55-43(67)23-40(64)33(18-27(2)3)57-48(71)39-20-30(8)25-62(39)51(37)74/h13-16,27-30,33-39,45,63H,9-12,17-26H2,1-8H3,(H2,53,65)(H,54,69)(H,55,67)(H,56,68)(H,57,71)(H,58,70)(H,59,72)(H,60,66)/t30-,33-,34-,35-,36-,37?,38-,39?,45-/m0/s1
+  standard_inchi_key: UEVIIAJOLZZKQH-LHBOKHSSSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001028
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA015196
+producer_organisms:
+- taxon_id: NCBITaxon:76334
+  taxon_label: Nostoc sp. GSV224
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001028
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:12853152
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001028 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001028
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:76334
+  organism_label: Nostoc sp. GSV224
+  evidence:
+  - reference: PMID:12853152
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001028 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF204805.2
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001028
+  source_label: nostopeptolide A2
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-027ccc2a70
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-1d4fd3f8ec
+label: erythrochelin
+chemical_structure:
+  smiles: CC(=O)N[C@H](CCCN(O)C(C)=O)C(=O)N[C@H](CO)C(=O)N(O)CCC[C@@H]1NC(=O)[C@H](CCCN(O)C(C)=O)NC1=O
+  standard_inchi: InChI=1S/C24H41N7O11/c1-14(33)25-17(7-4-10-29(40)15(2)34)21(36)28-20(13-32)24(39)31(42)12-6-9-19-23(38)26-18(22(37)27-19)8-5-11-30(41)16(3)35/h17-20,32,40-42H,4-13H2,1-3H3,(H,25,33)(H,26,38)(H,27,37)(H,28,36)/t17-,18+,19+,20-/m1/s1
+  standard_inchi_key: OHIZVXAYPZKILQ-FUMNGEBKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000349
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA09462
+producer_organisms:
+- taxon_id: NCBITaxon:405948
+  taxon_label: Saccharopolyspora erythraea NRRL 2338
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000349
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17369815
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000349 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000349
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:405948
+  organism_label: Saccharopolyspora erythraea NRRL 2338
+  evidence:
+  - reference: PMID:17369815
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000349 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM420293.1
+  locus_from: 3324848
+  locus_to: 3348992
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000349
+  source_label: erythrochelin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1d4fd3f8ec
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

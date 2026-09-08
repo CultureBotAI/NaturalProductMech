@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-6ba2a50f26
+label: aflatoxin
+chemical_structure:
+  smiles: COC1=C2C3=C(C(=O)OCC3)C(=O)OC2=C4C5C=COC5OC4=C1
+  standard_inchi: InChI=1S/C17H12O7/c1-20-9-6-10-12(8-3-5-22-17(8)23-10)14-11(9)7-2-4-21-15(18)13(7)16(19)24-14/h3,5-6,8,17H,2,4H2,1H3
+  standard_inchi_key: XWIYFDMXXLINPU-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000010
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Chromanes
+  - Coumarins
+  class_results:
+  - Aflatoxins
+  - Simple coumarins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:14421
+producer_organisms:
+- taxon_id: NCBITaxon:5059
+  taxon_label: Aspergillus flavus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000010
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:15528514
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000010 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000010
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5059
+  organism_label: Aspergillus flavus
+  evidence:
+  - reference: PMID:15528514
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000010 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AY510455.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000010
+  source_label: aflatoxin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-6ba2a50f26
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

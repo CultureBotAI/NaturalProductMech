@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-b09a7acaf6
+label: phaseolotoxin
+chemical_structure:
+  smiles: C[C@H](C(=O)N[C@H](CCCCN=C(N)N)C(=O)O)NC(=O)[C@@H](CCCNP(=O)(N)NS(=O)(=O)O)N
+  standard_inchi: InChI=1S/C15H34N9O8PS/c1-9(12(25)23-11(14(27)28)6-2-3-7-20-15(17)18)22-13(26)10(16)5-4-8-21-33(19,29)24-34(30,31)32/h9-11H,2-8,16H2,1H3,(H,22,26)(H,23,25)(H,27,28)(H4,17,18,20)(H,30,31,32)(H4,19,21,24,29)/t9-,10-,11-,33?/m1/s1
+  standard_inchi_key: QDAOSMKOZCCWLJ-LNIFREGASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000919
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:5485204
+producer_organisms:
+- taxon_id: NCBITaxon:317
+  taxon_label: Pseudomonas syringae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000919
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:9353942
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000919 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000919
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:317
+  organism_label: Pseudomonas syringae
+  evidence:
+  - reference: PMID:9353942
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000919 entry version 5; citation taken from the entry level
+  genome_accession: genbank:U27310.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000919
+  source_label: phaseolotoxin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b09a7acaf6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

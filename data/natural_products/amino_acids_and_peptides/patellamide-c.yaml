@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-1bda3674fd
+label: patellamide C
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C2=N[C@@H]([C@H](O2)C)C(=O)N[C@@H](C3=NC(=CS3)C(=O)N[C@H](C4=N[C@@H]([C@H](O4)C)C(=O)N[C@@H](C5=NC(=CS5)C(=O)N1)C)C(C)C)CC6=CC=CC=C6
+  standard_inchi: InChI=1S/C37H46N8O6S2/c1-8-18(4)27-35-45-29(21(7)51-35)33(49)39-23(14-22-12-10-9-11-13-22)37-41-25(16-53-37)30(46)42-26(17(2)3)34-44-28(20(6)50-34)32(48)38-19(5)36-40-24(15-52-36)31(47)43-27/h9-13,15-21,23,26-29H,8,14H2,1-7H3,(H,38,48)(H,39,49)(H,42,46)(H,43,47)/t18-,19+,20+,21+,23+,26-,27-,28-,29-/m0/s1
+  standard_inchi_key: CFXBLGFMQUFLKS-FUEDQDKVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000475
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Cyanobactins
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:9767970
+producer_organisms:
+- taxon_id: NCBITaxon:1216
+  taxon_label: Prochloron didemni
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000475
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:15883371
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000475 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000475
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1216
+  organism_label: Prochloron didemni
+  evidence:
+  - reference: PMID:15883371
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000475 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY986476.1
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000475
+  source_label: patellamide C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1bda3674fd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-7c6d5a71b5
+label: SF2487
+chemical_structure:
+  smiles: C=C1OC(O)C(C(O)C(OC)C2C(/C=C(\CO)C3CCC(C)C(/C(C)=C/CC4OC(C)(C5CCC(C(O)CC)O5)CC4C)O3)CC(C)C(O)C2CO)C1=O
+  standard_inchi: InChI=1S/C42H68O12/c1-9-29(45)32-14-15-33(52-32)42(7)18-24(5)30(54-42)12-10-21(2)39-22(3)11-13-31(53-39)27(19-43)17-26-16-23(4)36(46)28(20-44)34(26)40(50-8)38(48)35-37(47)25(6)51-41(35)49/h10,17,22-24,26,28-36,38-41,43-46,48-49H,6,9,11-16,18-20H2,1-5,7-8H3/b21-10+,27-17+
+  standard_inchi_key: MCNBCMMOFDOVFQ-KPWZZBQESA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002124
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polyethers
+  class_results:
+  - Polyether ionophores
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6913170
+- npatlas:NPA032784
+producer_organisms:
+- taxon_id: NCBITaxon:46165
+  taxon_label: Actinomadura verrucosospora NRRL:B18236
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002124
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:32925967
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002124 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002124
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:46165
+  organism_label: Actinomadura verrucosospora NRRL:B18236
+  evidence:
+  - reference: PMID:32925967
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002124 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP053892.1
+  locus_from: 2037887
+  locus_to: 2164555
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002124
+  source_label: SF2487
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7c6d5a71b5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-fe51add3cd
+label: napyradiomycin
+chemical_structure:
+  smiles: CC(=CCC/C(=C/C[C@]12C(=O)C3=CC(=CC(=C3C(=O)[C@]1(C[C@H](C(O2)(C)C)Cl)Cl)O)O)/C)C
+  standard_inchi: InChI=1S/C25H30Cl2O5/c1-14(2)7-6-8-15(3)9-10-25-21(30)17-11-16(28)12-18(29)20(17)22(31)24(25,27)13-19(26)23(4,5)32-25/h7,9,11-12,19,28-29H,6,8,10,13H2,1-5H3/b15-9+/t19-,24+,25+/m1/s1
+  standard_inchi_key: BCPWMPCOEAOEDD-NQSCOFRMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000652
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:6438953
+producer_organisms:
+- taxon_id: NCBITaxon:418855
+  taxon_label: Streptomyces sp. CNQ525
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000652
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/np058011z
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000652 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000652
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:418855
+  organism_label: Streptomyces sp. CNQ525
+  evidence:
+  - reference: DOI:10.1021/np058011z
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000652 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:EF397639.1
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000652
+  source_label: napyradiomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fe51add3cd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

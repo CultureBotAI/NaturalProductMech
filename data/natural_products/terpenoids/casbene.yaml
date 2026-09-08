@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-8655e7d854
+label: casbene
+chemical_structure:
+  smiles: C/C/1=C\CC/C(=C/C2C(C2(C)C)CC/C(=C/CC1)/C)/C
+  standard_inchi: InChI=1S/C20H32/c1-15-8-6-10-16(2)12-13-18-19(20(18,4)5)14-17(3)11-7-9-15/h9-10,14,18-19H,6-8,11-13H2,1-5H3/b15-9+,16-10+,17-14+
+  standard_inchi_key: ZJMVJDFTNPZVMB-QOCMWZQCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002723
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Casbane diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+compound_classes:
+- Diterpenoid
+xrefs:
+- pubchem:5280437
+producer_organisms:
+- taxon_id: NCBITaxon:180498
+  taxon_label: Jatropha curcas
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002723
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1105/tpc.114.129668
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002723 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002723
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:180498
+  organism_label: Jatropha curcas
+  evidence:
+  - reference: DOI:10.1105/tpc.114.129668
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002723 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:GPS_020388126.1
+  locus_from: 7857
+  locus_to: 18675
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002723
+  source_label: casbene
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-8655e7d854
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

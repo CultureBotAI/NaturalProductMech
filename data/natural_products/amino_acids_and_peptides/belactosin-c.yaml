@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-3c084106f6
+label: belactosin C
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1[C@@H](OC1=O)C(=O)NCCC[C@H](NC(=O)[C@H](C)N)C(O)=O
+  standard_inchi: InChI=1S/C16H27N3O6/c1-4-8(2)11-12(25-16(11)24)14(21)18-7-5-6-10(15(22)23)19-13(20)9(3)17/h8-12H,4-7,17H2,1-3H3,(H,18,21)(H,19,20)(H,22,23)/t8-,9-,10-,11-,12+/m0/s1
+  standard_inchi_key: ZFCGPWGFGUDLHO-UHFZAUJKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001441
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA010752
+- pubchem:10666031
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001441
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:28452105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001441 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001441
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:28452105
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001441 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY249118.1
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001441
+  source_label: belactosin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3c084106f6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

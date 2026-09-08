@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-66a1288e8b
+label: 1,2-dehydropenicillide
+chemical_structure:
+  smiles: Cc1cc(O)c(Oc2c(C(OC3)=O)c(OC)c(/C=C/C(C)(O)C)cc2)c3c1
+  standard_inchi: InChI=1S/C21H22O6/c1-12-9-14-11-26-20(23)17-16(27-18(14)15(22)10-12)6-5-13(19(17)25-4)7-8-21(2,3)24/h5-10,22,24H,11H2,1-4H3/b8-7+
+  standard_inchi_key: CDCIKAPGWWMGGE-BQYQJAHWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002244
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Depsidones
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:289240
+  taxon_label: Neopestalotiopsis clavispora
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002244
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:31474098
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002244 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002244
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:289240
+  organism_label: Neopestalotiopsis clavispora
+  evidence:
+  - reference: PMID:31474098
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002244 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JAANBA010000208.1
+  locus_from: 1
+  locus_to: 45207
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002244
+  source_label: 1,2-dehydropenicillide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-66a1288e8b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

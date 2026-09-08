@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-d08dfca09d
+label: carbamidocyclophane H
+chemical_structure:
+  smiles: '[H]C([H])CCC[C@H]1CCCC[C@H](C)[C@@H](OC(N)=O)C2=CC(O)=C([C@@H](CCCC([H])[H])CCCC[C@H](C)[C@@H](O)C3=CC(O)=C1C(O)=C3)C(O)=C2'
+  standard_inchi: InChI=1S/C37H57NO7/c1-5-7-15-25-18-12-10-14-24(4)36(45-37(38)44)28-21-31(41)34(32(42)22-28)26(16-8-6-2)17-11-9-13-23(3)35(43)27-19-29(39)33(25)30(40)20-27/h19-26,35-36,39-43H,5-18H2,1-4H3,(H2,38,44)/t23-,24-,25-,26-,35+,36+/m0/s1
+  standard_inchi_key: ZVBSXPFOVLVNGT-WDCWCBICSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001357
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Alkylresorcinols
+  class_results:
+  - Dialkylresorcinols
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1510471
+  taxon_label: Nostoc sp. CAVN2
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001357
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26805858
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001357 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001357
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1510471
+  organism_label: Nostoc sp. CAVN2
+  evidence:
+  - reference: PMID:26805858
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001357 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KT826756.1
+  locus_from: 1406
+  locus_to: 28337
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001357
+  source_label: carbamidocyclophane H
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-d08dfca09d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

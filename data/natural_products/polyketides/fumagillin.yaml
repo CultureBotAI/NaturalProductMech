@@ -1,0 +1,76 @@
+identifier: naturalproductmech:mibig-b5eceae08e
+label: Fumagillin
+chemical_structure:
+  smiles: CC(=CC[C@@H]1[C@@](O1)(C)[C@H]2[C@@H]([C@@H](CC[C@]23CO3)OC(=O)/C=C/C=C/C=C/C=C/C(=O)O)OC)C
+  standard_inchi: InChI=1S/C26H34O7/c1-18(2)13-14-20-25(3,33-20)24-23(30-4)19(15-16-26(24)17-31-26)32-22(29)12-10-8-6-5-7-9-11-21(27)28/h5-13,19-20,23-24H,14-17H2,1-4H3,(H,27,28)/b7-5+,8-6+,11-9+,12-10+/t19-,20-,23-,24-,25+,26+/m1/s1
+  standard_inchi_key: NGGMYCMLYOUNGM-CSDLUJIJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001067
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+- TERPENE
+compound_classes:
+- Linear polyketide
+- Meroterpenoid
+- Sesquiterpenoid
+xrefs:
+- npatlas:NPA010119
+producer_organisms:
+- taxon_id: NCBITaxon:330879
+  taxon_label: Aspergillus fumigatus Af293
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001067
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1021/ja312503y
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001067 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001067
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:330879
+  organism_label: Aspergillus fumigatus Af293
+  evidence:
+  - reference: DOI:10.1021/ja312503y
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001067 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CM000176.1
+  locus_from: 79285
+  locus_to: 114438
+  bgc_class:
+  - PKS
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001067
+  source_label: Fumagillin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b5eceae08e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

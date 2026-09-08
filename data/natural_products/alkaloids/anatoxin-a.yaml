@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-a20d67b08f
+label: anatoxin-a
+chemical_structure:
+  smiles: CC(=O)C1=CCC[C@@H]2CC[C@H]1N2
+  standard_inchi: InChI=1S/C10H15NO/c1-7(12)9-4-2-3-8-5-6-10(9)11-8/h4,8,10-11H,2-3,5-6H2,1H3/t8-,10-/m1/s1
+  standard_inchi_key: SGNXVBOIDPPRJJ-PSASIEDQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000017
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Tropane alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+- OTHER
+xrefs:
+- pubchem:3034748
+- cyanometdb:CyanoMetDB_1772
+producer_organisms:
+- taxon_id: NCBITaxon:272129
+  taxon_label: '[Oscillatoria] sp. PCC 6506'
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000017
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: DOI:10.1016/j.toxicon.2009.07.017
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000017 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000017
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:272129
+  organism_label: '[Oscillatoria] sp. PCC 6506'
+  evidence:
+  - reference: DOI:10.1016/j.toxicon.2009.07.017
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000017 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:FJ477836.1
+  bgc_class:
+  - PKS
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000017
+  source_label: anatoxin-a
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a20d67b08f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,77 @@
+identifier: naturalproductmech:mibig-ae13f148b8
+label: pyreudione D
+chemical_structure:
+  smiles: O/C(CCC/C=C\CCCCCC)=C(C(N1[C@@]2([H])CCC1)=O)/C2=O
+  standard_inchi: InChI=1S/C19H29NO3/c1-2-3-4-5-6-7-8-9-10-13-16(21)17-18(22)15-12-11-14-20(15)19(17)23/h7-8,15,21H,2-6,9-14H2,1H3/b8-7-,17-16-/t15-/m0/s1
+  standard_inchi_key: YIAIGJHLHUVSCX-GVPMYBDDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002075
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - 3-acyl tetramic acids
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Proline-derived
+- Tetramate alkaloid
+xrefs:
+- pubchem:146682053
+- npatlas:NPA024342
+- chebi:219394
+producer_organisms:
+- taxon_id: NCBITaxon:294
+  taxon_label: Pseudomonas fluorescens
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002075
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1002/anie.201603312
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002075 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002075
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:294
+  organism_label: Pseudomonas fluorescens
+  evidence:
+  - reference: DOI:10.1002/anie.201603312
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002075 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:NZ_LVEJ01000014.1
+  locus_from: 27345
+  locus_to: 31238
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002075
+  source_label: pyreudione D
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-ae13f148b8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

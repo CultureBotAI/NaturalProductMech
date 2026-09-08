@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-4e02b2b78e
+label: caprazamycin
+chemical_structure:
+  smiles: CCCCCCCCCCCCCC(CC(=O)O[C@H]1CN(C(C(=O)N(C1C(=O)OC)C)[C@H](C2[C@H]([C@H](C(O2)N3C=CC(=O)NC3=O)O)O)OC4[C@@H]([C@@H]([C@H](O4)CN)O)O)C)OC(=O)CC(C)CC(=O)OC5C(C(C(C(O5)C)OC)OC)OC
+  standard_inchi: InChI=1S/C54H89N5O22/c1-10-11-12-13-14-15-16-17-18-19-20-21-31(76-35(61)24-29(2)25-36(62)79-53-48(73-8)47(72-7)44(71-6)30(3)75-53)26-37(63)77-33-28-57(4)39(49(68)58(5)38(33)51(69)74-9)45(81-52-43(67)40(64)32(27-55)78-52)46-41(65)42(66)50(80-46)59-23-22-34(60)56-54(59)70/h22-23,29-33,38-48,50,52-53,64-67H,10-21,24-28,55H2,1-9H3,(H,56,60,70)/t29?,30?,31?,32-,33+,38?,39?,40-,41+,42-,43-,44?,45-,46?,47?,48?,50?,52?,53?/m1/s1
+  standard_inchi_key: BUXWJKDGWOMSGG-KTEXIAEJSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000875
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Pyrimidine nucleos(t)ides
+  is_glycoside: true
+bgc_class:
+- OTHER
+- SACCHARIDE
+xrefs:
+- pubchem:6481472
+producer_organisms:
+- taxon_id: NCBITaxon:643403
+  taxon_label: Streptomyces sp. MK730-62F2
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000875
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Enzymatic assays.'
+  evidence:
+  - reference: PMID:19351877
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000875 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000875
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:643403
+  organism_label: Streptomyces sp. MK730-62F2
+  evidence:
+  - reference: PMID:19351877
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000875 entry version 4; citation taken from the entry level
+  genome_accession: genbank:FJ490409.1
+  bgc_class:
+  - OTHER
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000875
+  source_label: caprazamycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-4e02b2b78e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,103 @@
+identifier: naturalproductmech:mibig-de067fa3d6
+label: decaplanin
+chemical_structure:
+  smiles: CC1C(C(C(C(O1)OC2C(C(C(OC2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)C(C(C(=O)NC(C(=O)NC5C(=O)NC7C8=CC(=C(C=C8)O)C9=C(C=C(C=C9C(NC(=O)C(C(C1=CC=C(O4)C=C1)OC1CC(C(C(O1)C)O)(C)N)NC7=O)C(=O)O)O)O)CC(=O)N)NC(=O)C(CC(C)C)NC)O)Cl)CO)O)O)O)O)O
+  standard_inchi: InChI=1S/C72H86ClN9O28/c1-25(2)15-37(76-6)63(95)81-51-54(89)30-10-14-41(36(73)17-30)106-43-19-31-18-42(60(43)109-71-61(57(92)55(90)44(24-83)107-71)110-70-58(93)56(91)53(88)26(3)104-70)105-33-11-7-28(8-12-33)59(108-46-23-72(5,75)62(94)27(4)103-46)52-68(100)80-50(69(101)102)35-20-32(84)21-40(86)47(35)34-16-29(9-13-39(34)85)48(65(97)82-52)79-66(98)49(31)78-64(96)38(22-45(74)87)77-67(51)99/h7-14,16-21,25-27,37-38,44,46,48-59,61-62,70-71,76,83-86,88-94H,15,22-24,75H2,1-6H3,(H2,74,87)(H,77,99)(H,78,96)(H,79,98)(H,80,100)(H,81,95)(H,82,97)(H,101,102)
+  standard_inchi_key: SJSZMXQSCZCGFO-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001459
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Vancomycins and Teicoplanins
+  is_glycoside: true
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:195570
+producer_organisms:
+- taxon_id: NCBITaxon:546365
+  taxon_label: Amycolatopsis regifaucium
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001459
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17978218
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001459 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1284240
+  taxon_label: Amycolatopsis decaplanina DSM 44594
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001460
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:14742486
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001460 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001459
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:546365
+  organism_label: Amycolatopsis regifaucium
+  evidence:
+  - reference: PMID:17978218
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001459 entry version 5; citation taken from the entry level
+  genome_accession: genbank:LOBU02000007.1
+  locus_from: 259653
+  locus_to: 327583
+  bgc_class:
+  - NRPS
+- accession: mibig:BGC0001460
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1284240
+  organism_label: Amycolatopsis decaplanina DSM 44594
+  evidence:
+  - reference: PMID:14742486
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001460 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AOHO01000074.1
+  locus_from: 276857
+  locus_to: 343203
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001459
+  source_label: decaplanin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-de067fa3d6
+- source: MIBIG
+  source_id: BGC0001460
+  source_label: decaplanin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3d82b754bf
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001459, BGC0001460.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

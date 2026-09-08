@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-00bcc9b9a7
+label: BE-43767
+chemical_structure:
+  smiles: OC1=C(C(C(C(O)=C(C=CC2=C3C(O)=C(C(O)=O)C(CCCCC)=C2)C3=C4)=C4C5(C)O)=O)C5=CC(O)=C1
+  standard_inchi: InChI=1S/C29H26O8/c1-3-4-5-6-13-9-14-7-8-16-17(21(14)26(33)22(13)28(35)36)12-19-24(25(16)32)27(34)23-18(29(19,2)37)10-15(30)11-20(23)31/h7-12,30-33,37H,3-6H2,1-2H3,(H,35,36)
+  standard_inchi_key: HJLKBBUYCJLBEN-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000204
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Benastatins and derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:431672
+  taxon_label: Streptomyces sp. A2991200
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000204
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  evidence:
+  - reference: PMID:19047004
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000204 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000204
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:431672
+  organism_label: Streptomyces sp. A2991200
+  evidence:
+  - reference: PMID:19047004
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000204 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM501485.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000204
+  source_label: BE-43767
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-00bcc9b9a7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

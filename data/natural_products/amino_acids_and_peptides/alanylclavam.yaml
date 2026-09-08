@@ -1,0 +1,113 @@
+identifier: naturalproductmech:mibig-23fd94d01a
+label: alanylclavam
+chemical_structure:
+  smiles: C1[C@H]2N(C1=O)C[C@@H](O2)C[C@@H](C(=O)O)N
+  standard_inchi: InChI=1S/C8H12N2O4/c9-5(8(12)13)1-4-3-10-6(11)2-7(10)14-4/h4-5,7H,1-3,9H2,(H,12,13)/t4-,5-,7-/m0/s1
+  standard_inchi_key: KCAIYJDHLVYANU-VPLCAKHXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000841
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - β-lactams
+  class_results:
+  - Clavams
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:194618
+producer_organisms:
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus ATCC 27064
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000841
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production.'
+  evidence:
+  - reference: PMID:10681345
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000841 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus ATCC 27064
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000843
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production.'
+  evidence:
+  - reference: PMID:22435762
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000843 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000841
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1901
+  organism_label: Streptomyces clavuligerus ATCC 27064
+  evidence:
+  - reference: PMID:10681345
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000841 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CM000914.1
+  locus_from: 1152119
+  locus_to: 1163141
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+- accession: mibig:BGC0000843
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1901
+  organism_label: Streptomyces clavuligerus ATCC 27064
+  evidence:
+  - reference: PMID:22435762
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000843 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CM000913.1
+  locus_from: 3437628
+  locus_to: 3461293
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000841
+  source_label: alanylclavam
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-23fd94d01a
+- source: MIBIG
+  source_id: BGC0000843
+  source_label: alanylclavam
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2815fbb013
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000841, BGC0000843.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

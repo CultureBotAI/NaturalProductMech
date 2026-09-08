@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-1f3a3ade1b
+label: rifamorpholine A
+chemical_structure:
+  smiles: C[C@@H]1[C@H](/C=C/O[C@@]2(C(=O)C3=C(O2)C(=C(C4=C3C(=C(C5=C4O[C@@](/C=C\C=C(\[C@H]([C@H]([C@H]([C@H]([C@@H]1OC(=O)C)C)O)C)O)/C)(C(=O)N5)C)O)O)O)C)C)OC
+  standard_inchi: InChI=1S/C37H45NO13/c1-15-11-10-13-36(7)35(46)38-25-30(44)29(43)22-23(33(25)50-36)28(42)19(5)32-24(22)34(45)37(8,51-32)48-14-12-21(47-9)16(2)31(49-20(6)39)18(4)27(41)17(3)26(15)40/h10-14,16-18,21,26-27,31,40-44H,1-9H3,(H,38,46)/b13-10-,14-12+,15-11+/t16-,17-,18-,21+,26-,27-,31-,36+,37+/m1/s1
+  standard_inchi_key: SMMZRVDPJAUUOF-XAHJNJQSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001759
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:132507841
+producer_organisms:
+- taxon_id: NCBITaxon:37632
+  taxon_label: Amycolatopsis sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001759
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28422262
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001759 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001759
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:37632
+  organism_label: Amycolatopsis sp.
+  evidence:
+  - reference: PMID:28422262
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001759 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MF773686.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001759
+  source_label: rifamorpholine A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1f3a3ade1b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

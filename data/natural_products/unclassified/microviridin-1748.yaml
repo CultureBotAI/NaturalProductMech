@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-53a949a775
+label: microviridin 1748
+chemical_structure:
+  smiles: CC(NC(CC1=CC=C(O)C=C1)C(NC(CCC(O)=O)C(NC2C(NC(CCCCN)C(NC(C(NC(C(N3C(C(N[C@@H](COC(CCC4NC(C(N5)CC6=CNC7=CC=CC=C67)=O)=O)C(NC(CC(OC2C)=O)C5=O)=O)=O)CCC3)=O)CC8=CNC9=C8C=CC=C9)=O)CCCCNC(CCC(NC4=O)C(NC(CC%10=CC=C(O)C=C%10)C(O)=O)=O)=O)=O)=O)=O)=O)=O
+  standard_inchi: InChI=1S/C85H105N17O24/c1-44-72(101-77(115)59(28-31-69(107)108)93-78(116)61(90-45(2)103)36-46-19-23-50(104)24-20-46)83(121)95-57(16-7-9-33-86)73(111)91-56-17-8-10-34-87-68(106)30-27-58(76(114)99-65(85(123)124)37-47-21-25-51(105)26-22-47)92-75(113)60-29-32-70(109)125-43-66(100-82(120)67-18-11-35-102(67)84(122)64(98-74(56)112)39-49-42-89-55-15-6-4-13-53(49)55)81(119)97-63(40-71(110)126-44)80(118)96-62(79(117)94-60)38-48-41-88-54-14-5-3-12-52(48)54/h3-6,12-15,19-26,41-42,44,56-67,72,88-89,104-105H,7-11,16-18,27-40,43,86H2,1-2H3,(H,87,106)(H,90,103)(H,91,111)(H,92,113)(H,93,116)(H,94,117)(H,95,121)(H,96,118)(H,97,119)(H,98,112)(H,99,114)(H,100,120)(H,101,115)(H,107,108)(H,123,124)/t44?,56?,57?,58?,59?,60?,61?,62?,63?,64?,65?,66-,67?,72?/m0/s1
+  standard_inchi_key: QARQTEUPQKNPHW-CNLXFSTBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002626
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+compound_classes:
+- Macrocyclic
+producer_organisms:
+- taxon_id: NCBITaxon:442893
+  taxon_label: Nostoc sp. TH1S01
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002626
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:34259556
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002626 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002626
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:442893
+  organism_label: Nostoc sp. TH1S01
+  evidence:
+  - reference: PMID:34259556
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002626 entry version 2; citation taken from the entry level
+  genome_accession: genbank:JAGKSW010000123.1
+  locus_from: 52927
+  locus_to: 58912
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002626
+  source_label: microviridin 1748
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-53a949a775
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

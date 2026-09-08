@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-8e6be49279
+label: citridone A
+chemical_structure:
+  smiles: C[C@H]1[C@@H]2C3=C(C(=CNC3=O)C4=CC=CC=C4)O[C@@]2(C=C1C)C
+  standard_inchi: InChI=1S/C19H19NO2/c1-11-9-19(3)16(12(11)2)15-17(22-19)14(10-20-18(15)21)13-7-5-4-6-8-13/h4-10,12,16H,1-3H3,(H,20,21)/t12-,16-,19-/m1/s1
+  standard_inchi_key: XFLJBHHWXWWOOI-SMNXXWJPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002268
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Nicotinic acid alkaloids
+  class_results:
+  - Pyridine alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA003778
+producer_organisms:
+- taxon_id: NCBITaxon:5081
+  taxon_label: Penicillium sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002268
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32779306
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002268 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002268
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5081
+  organism_label: Penicillium sp.
+  evidence:
+  - reference: PMID:32779306
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002268 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT603584.1
+  locus_from: 1
+  locus_to: 26854
+  bgc_class:
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002268
+  source_label: citridone A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-8e6be49279
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

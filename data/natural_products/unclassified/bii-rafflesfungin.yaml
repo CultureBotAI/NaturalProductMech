@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-674cdfe4e0
+label: BII-rafflesfungin
+chemical_structure:
+  smiles: CC(NC(CC(OC(CNC1=O)=O)C(C)CCCCCCCCCCCC)=O)C(NC(CCC(O)=O)C(NC(CC(N)=O)C(NC(CO)C(NC(CO)C(NC(C(NC1C(O)C)=O)CO)=O)=O)=O)=O)=O
+  standard_inchi: InChI=1S/C44H75N9O17/c1-5-6-7-8-9-10-11-12-13-14-15-24(2)32-19-34(59)47-25(3)38(63)48-27(16-17-35(60)61)39(64)49-28(18-33(45)58)40(65)50-29(21-54)41(66)51-30(22-55)42(67)52-31(23-56)43(68)53-37(26(4)57)44(69)46-20-36(62)70-32/h24-32,37,54-57H,5-23H2,1-4H3,(H2,45,58)(H,46,69)(H,47,59)(H,48,63)(H,49,64)(H,50,65)(H,51,66)(H,52,67)(H,53,68)(H,60,61)
+  standard_inchi_key: HSMURMHPOJWFAE-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001966
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Lipopeptide
+producer_organisms:
+- taxon_id: NCBITaxon:1707701
+  taxon_label: Phoma sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001966
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1186/s12864-019-5762-6
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001966 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001966
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1707701
+  organism_label: Phoma sp.
+  evidence:
+  - reference: DOI:10.1186/s12864-019-5762-6
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001966 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MK043052.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001966
+  source_label: BII-rafflesfungin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-674cdfe4e0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

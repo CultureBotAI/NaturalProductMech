@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-0ec1fe5f0f
+label: TP-1161
+chemical_structure:
+  smiles: C\C=C1\NC(=O)[C@@H](NC(=O)C2=CSC(=N2)C2=C(N=C(C=C2)C(=O)NC(=C)C(=O)NC(=C)C(=O)NCC(C)=O)C2=COC(=N2)C(=C)NC(=O)C(=C)NC(=O)C2=CSC(=N2)[C@H](C)NC(=O)C2=CSC(CNC(=O)C3=C(C)OC1=N3)=N2)[C@@H](C)O
+  standard_inchi: InChI=1S/C50H47N15O13S3/c1-10-28-48-65-36(26(9)78-48)45(75)52-14-34-58-31(16-79-34)42(72)57-24(7)49-62-32(17-80-49)43(73)55-22(5)40(70)56-23(6)47-61-30(15-77-47)37-27(50-63-33(18-81-50)44(74)64-35(25(8)67)46(76)60-28)11-12-29(59-37)41(71)54-21(4)39(69)53-20(3)38(68)51-13-19(2)66/h10-12,15-18,24-25,35,67H,3-6,13-14H2,1-2,7-9H3,(H,51,68)(H,52,75)(H,53,69)(H,54,71)(H,55,73)(H,56,70)(H,57,72)(H,60,76)(H,64,74)/b28-10+/t24-,25+,35-/m0/s1
+  standard_inchi_key: YGUKQAWJFUHKHO-SLBZEGPGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000615
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA011129
+producer_organisms:
+- taxon_id: NCBITaxon:756929
+  taxon_label: Nocardiopsis sp. TFS65-07
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000615
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:20562278
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000615 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000615
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:756929
+  organism_label: Nocardiopsis sp. TFS65-07
+  evidence:
+  - reference: PMID:20562278
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000615 entry version 4; citation taken from the entry level
+  genome_accession: genbank:HM467197.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000615
+  source_label: TP-1161
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-0ec1fe5f0f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

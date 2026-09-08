@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-e29f83c77b
+label: phenalinolactone A
+chemical_structure:
+  smiles: '[H][C@]12CC[C@@]3(C)[C@H](C4=C(O)C(=O)OC4O)C(C)=CC[C@@]3([H])[C@]1(C)[C@@H](O)C[C@@H](OC(C)=O)C2(CO[C@H]1CC[C@@H](OC)[C@H](C)O1)COC(=O)C1=CC=C(C)N1'
+  standard_inchi: InChI=1S/C38H53NO12/c1-19-8-12-25-36(5,31(19)30-32(42)35(45)51-34(30)44)15-14-26-37(25,6)27(41)16-28(50-22(4)40)38(26,18-48-33(43)23-10-9-20(2)39-23)17-47-29-13-11-24(46-7)21(3)49-29/h8-10,21,24-29,31,34,39,41-42,44H,11-18H2,1-7H3/t21-,24+,25+,26-,27-,28+,29+,31-,34?,36+,37-,38?/m0/s1
+  standard_inchi_key: LULQRLKBANNSOX-AFCHNXSNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000654
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- TERPENE
+- SACCHARIDE
+xrefs:
+- npatlas:NPA016342
+producer_organisms:
+- taxon_id: NCBITaxon:355249
+  taxon_label: Streptomyces sp. Tu6071
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000654
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  evidence:
+  - reference: PMID:16632249
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000654 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000654
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:355249
+  organism_label: Streptomyces sp. Tu6071
+  evidence:
+  - reference: PMID:16632249
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000654 entry version 4; citation taken from the entry level
+  genome_accession: genbank:DQ230532.1
+  bgc_class:
+  - TERPENE
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000654
+  source_label: phenalinolactone A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-e29f83c77b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

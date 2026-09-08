@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-4617b5664b
+label: chromomycin A3
+chemical_structure:
+  smiles: '[H][C@]1(CC2=C(C(O)=C3C(O)=C(C)C(O[C@H]4C[C@@H](OC(C)=O)[C@@H](O[C@@H]5C[C@@H](O)[C@@H](OC)[C@@H](C)O5)[C@@H](C)O4)=CC3=C2)C(=O)[C@H]1O[C@H]1C[C@@H](O[C@H]2C[C@@H](O[C@H]3C[C@](C)(O)[C@@H](OC(C)=O)[C@H](C)O3)[C@H](O)[C@@H](C)O2)[C@H](O)[C@@H](C)O1)[C@H](OC)C(=O)[C@@H](O)[C@@H](C)O'
+  standard_inchi: InChI=1S/C57H82O26/c1-21-34(79-40-19-37(77-28(8)59)53(26(6)75-40)82-38-16-33(61)52(70-11)25(5)74-38)15-31-13-30-14-32(54(71-12)51(68)46(63)22(2)58)55(50(67)44(30)49(66)43(31)45(21)62)83-41-18-35(47(64)24(4)73-41)80-39-17-36(48(65)23(3)72-39)81-42-20-57(10,69)56(27(7)76-42)78-29(9)60/h13,15,22-27,32-33,35-42,46-48,52-56,58,61-66,69H,14,16-20H2,1-12H3/t22-,23-,24-,25-,26-,27+,32+,33-,35-,36-,37-,38-,39+,40+,41+,42+,46+,47-,48-,52+,53+,54+,55+,56+,57+/m1/s1
+  standard_inchi_key: QVHQVBUIOBRRIL-WKSBCEQHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000210
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+xrefs:
+- npatlas:NPA016129
+- pubchem:5351560
+producer_organisms:
+- taxon_id: NCBITaxon:67263
+  taxon_label: Streptomyces griseus subsp. griseus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000210
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:21342468
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000210 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000210
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67263
+  organism_label: Streptomyces griseus subsp. griseus
+  evidence:
+  - reference: PMID:21342468
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000210 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ578458.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000210
+  source_label: chromomycin A3
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4617b5664b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

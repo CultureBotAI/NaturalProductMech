@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-1e0e32e6fe
+label: AQ-270a
+chemical_structure:
+  smiles: Oc3cccc2C(=O)c1cc(O)cc(OC)c1C(=O)c23
+  standard_inchi: InChI=1S/C15H10O5/c1-20-11-6-7(16)5-9-13(11)15(19)12-8(14(9)18)3-2-4-10(12)17/h2-6,16-17H,1H3
+  standard_inchi_key: MKPXKUVNBNOJOI-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000196
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Anthraquinones and anthrones
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:243265
+  taxon_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000196
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:17722122
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000196 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000196
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:243265
+  organism_label: Photorhabdus laumondii subsp. laumondii TTO1
+  evidence:
+  - reference: PMID:17722122
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000196 entry version 4; citation taken from the entry level
+  genome_accession: genbank:BX470251.1
+  locus_from: 4897935
+  locus_to: 4907928
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000196
+  source_label: AQ-270a
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-1e0e32e6fe
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

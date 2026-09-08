@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-7f3382dda9
+label: dendrothelin A
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]1NC(=O)[C@@H](C(C)C)N(C)C(=O)[C@H](CC2=C[NH]C3=CC=CC=C23)NC(=O)CN(C)C(=O)[C@H]([C@@H](C)CC)N(C)C(=O)[C@@H](C(C)C)NC(=O)CNC(=O)[C@@H](C(C)C)N(C)C(=O)[C@H]([C@@H](C)CC)N(C)C(=O)CN(C)C(=O)[C@H]([C@@H](C)O)N(C)C(=O)[C@@H](C(C)C)N(C)C1=O
+  standard_inchi: InChI=1S/C67H111N13O13/c1-24-40(12)52-63(89)78(21)55(39(10)11)66(92)80(23)58(43(15)81)65(91)74(17)35-50(84)75(18)57(42(14)26-3)67(93)77(20)53(37(6)7)59(85)69-33-48(82)71-51(36(4)5)62(88)79(22)56(41(13)25-2)64(90)73(16)34-49(83)70-47(31-44-32-68-46-30-28-27-29-45(44)46)61(87)76(19)54(38(8)9)60(86)72-52/h27-30,32,36-43,47,51-58,68,81H,24-26,31,33-35H2,1-23H3,(H,69,85)(H,70,83)(H,71,82)(H,72,86)/t40-,41-,42-,43+,47-,51+,52-,53+,54+,55+,56-,57-,58-/m0/s1
+  standard_inchi_key: ICHIUSBXAKDGBC-JMAUXVECSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002746
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA033153
+producer_organisms:
+- taxon_id: NCBITaxon:1314807
+  taxon_label: Dendrothele bispora CBS 962.96
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002746
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:33574430
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002746 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002746
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1314807
+  organism_label: Dendrothele bispora CBS 962.96
+  evidence:
+  - reference: PMID:33574430
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002746 entry version 3; citation taken from the entry level
+  genome_accession: genbank:ML179655.1
+  locus_from: 8358
+  locus_to: 47015
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002746
+  source_label: dendrothelin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7f3382dda9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

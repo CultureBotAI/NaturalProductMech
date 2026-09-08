@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-9324f0f60f
+label: lucensomycin
+chemical_structure:
+  smiles: CCCCC1CC=CC=CC=CC=CC(OC2OC(C)C(O)C(N)C2O)CC2OC(O)(CC(O)CC3OC3C=CC(=O)O1)CC(O)C2C(=O)O
+  standard_inchi: InChI=1S/C36H53NO13/c1-3-4-12-23-13-10-8-6-5-7-9-11-14-24(48-35-33(42)31(37)32(41)21(2)46-35)18-28-30(34(43)44)25(39)20-36(45,50-28)19-22(38)17-27-26(49-27)15-16-29(40)47-23/h5-11,14-16,21-28,30-33,35,38-39,41-42,45H,3-4,12-13,17-20,37H2,1-2H3,(H,43,44)
+  standard_inchi_key: MUAOHYJGHYFDSA-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002333
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:5382508
+- npatlas:NPA032743
+producer_organisms:
+- taxon_id: NCBITaxon:80860
+  taxon_label: Streptomyces cyanogenus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002333
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:33568768
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002333 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002333
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:80860
+  organism_label: Streptomyces cyanogenus
+  evidence:
+  - reference: PMID:33568768
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002333 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MW175861.1
+  locus_from: 67
+  locus_to: 87572
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002333
+  source_label: lucensomycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-9324f0f60f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,108 @@
+identifier: naturalproductmech:mibig-ebb9d93910
+label: valinomycin
+chemical_structure:
+  smiles: CC(C)[C@@H]1NC(=O)C(C)OC(=O)[C@H](NC(=O)[C@H](OC(=O)[C@@H](NC(=O)[C@H](C)OC(=O)[C@H](NC(=O)[C@H](OC(=O)[C@@H](NC(=O)[C@H](C)OC(=O)[C@H](NC(=O)[C@H](OC1=O)C(C)C)C(C)C)C(C)C)C(C)C)C(C)C)C(C)C)C(C)C)C(C)C
+  standard_inchi: InChI=1S/C54H90N6O18/c1-22(2)34-49(67)73-31(19)43(61)55-38(26(9)10)53(71)77-41(29(15)16)47(65)59-36(24(5)6)51(69)75-33(21)45(63)57-39(27(11)12)54(72)78-42(30(17)18)48(66)60-35(23(3)4)50(68)74-32(20)44(62)56-37(25(7)8)52(70)76-40(28(13)14)46(64)58-34/h22-42H,1-21H3,(H,55,61)(H,56,62)(H,57,63)(H,58,64)(H,59,65)(H,60,66)/t31-,32-,33?,34+,35+,36+,37-,38-,39-,40+,41+,42+/m0/s1
+  standard_inchi_key: FCFNRCROJUBPLU-ZJUJSLGGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000453
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA06953
+- pubchem:3000706
+producer_organisms:
+- taxon_id: NCBITaxon:285482
+  taxon_label: Streptomyces tsusimaensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000453
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:16511823
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000453 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:85336
+  taxon_label: Rothia nasimurium
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001341
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1128/aem.02671-10
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001341 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000453
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:285482
+  organism_label: Streptomyces tsusimaensis
+  evidence:
+  - reference: PMID:16511823
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000453 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ174261.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+- accession: mibig:BGC0001341
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:85336
+  organism_label: Rothia nasimurium
+  evidence:
+  - reference: DOI:10.1128/aem.02671-10
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001341 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:LXWF01000040.1
+  locus_from: 260465
+  locus_to: 281286
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000453
+  source_label: valinomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ebb9d93910
+- source: MIBIG
+  source_id: BGC0001341
+  source_label: valinomycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-50b67b0249
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000453, BGC0001341.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

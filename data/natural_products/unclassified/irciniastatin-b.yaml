@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-fcc1c02d41
+label: irciniastatin B
+chemical_structure:
+  smiles: CC1=C(C=C(C2=C1C[C@@H](OC2=O)[C@H](C)[C@H](C[C@@H]3C(C(=O)C[C@H](O3)[C@@H](NC(=O)[C@H]([C@H](CC(=C)C)OC)O)OC)(C)C)O)O)O
+  standard_inchi: InChI=1S/C31H45NO11/c1-14(2)9-22(40-7)27(37)28(38)32-29(41-8)23-13-24(36)31(5,6)25(42-23)12-19(34)16(4)21-10-17-15(3)18(33)11-20(35)26(17)30(39)43-21/h11,16,19,21-23,25,27,29,33-35,37H,1,9-10,12-13H2,2-8H3,(H,32,38)/t16-,19+,21-,22+,23+,25-,27+,29+/m1/s1
+  standard_inchi_key: MSZITYUGWBXQOC-BTSGJVQSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001110
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Shikimates and Phenylpropanoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:66575256
+producer_organisms:
+- taxon_id: NCBITaxon:693111
+  taxon_label: uncultured bacterium psy1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001110
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:19448639
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001110 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001110
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:693111
+  organism_label: uncultured bacterium psy1
+  evidence:
+  - reference: PMID:19448639
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001110 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FJ823461.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001110
+  source_label: irciniastatin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fcc1c02d41
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

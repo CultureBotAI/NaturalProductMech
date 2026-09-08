@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-6a225bddbb
+label: paenilamicin B1
+chemical_structure:
+  smiles: NCCCCNCCCNC(CNC([C@@H](NC(C[C@H](C[C@H]([C@@H](NC([C@@H]([C@H](N)CCCNC(N)=N)NC([C@@H](NC([C@@H](C)NC([C@H](O)[C@@H](O)C[C@@H](CCCCN)O)=O)=O)CNC)=O)=O)CO)O)O)=O)CNC)=O)=O
+  standard_inchi: InChI=1S/C43H88N16O13/c1-25(55-42(72)37(67)33(64)18-26(61)10-4-5-12-44)38(68)57-30(22-50-3)40(70)59-36(28(46)11-8-16-53-43(47)48)41(71)58-31(24-60)32(63)19-27(62)20-34(65)56-29(21-49-2)39(69)54-23-35(66)52-17-9-15-51-14-7-6-13-45/h25-33,36-37,49-51,60-64,67H,4-24,44-46H2,1-3H3,(H,52,66)(H,54,69)(H,55,72)(H,56,65)(H,57,68)(H,58,71)(H,59,70)(H4,47,48,53)/t25-,26-,27+,28-,29+,30+,31+,32-,33+,36-,37-/m1/s1
+  standard_inchi_key: BQTCONVHRFKHOI-CDNLDTHVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001033
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Polyamines
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:697284
+  taxon_label: Paenibacillus larvae subsp. larvae DSM 25430
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001033
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25044543
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001033 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001033
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:697284
+  organism_label: Paenibacillus larvae subsp. larvae DSM 25430
+  evidence:
+  - reference: PMID:25044543
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001033 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP003355.1
+  locus_from: 1729923
+  locus_to: 1788675
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001033
+  source_label: paenilamicin B1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6a225bddbb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

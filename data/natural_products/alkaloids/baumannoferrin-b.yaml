@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-b00fad5faa
+label: baumannoferrin B
+chemical_structure:
+  smiles: CCCCCCCCCC(N(CCCNC(CC(C(O)=O)(O)CC(NCCC(N1C(CCC1(C(O)=O)O)=O)C(O)=O)=O)=O)O)=O
+  standard_inchi: InChI=1S/C28H46N4O13/c1-2-3-4-5-6-7-8-10-22(35)31(45)16-9-14-29-20(33)17-27(43,25(39)40)18-21(34)30-15-12-19(24(37)38)32-23(36)11-13-28(32,44)26(41)42/h19,43-45H,2-18H2,1H3,(H,29,33)(H,30,34)(H,37,38)(H,39,40)(H,41,42)
+  standard_inchi_key: YHZUHQIORUMYTL-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002471
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Simple amide alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA001975
+producer_organisms:
+- taxon_id: NCBITaxon:509173
+  taxon_label: Acinetobacter baumannii AYE
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002471
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1002/cbic.201500147
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002471 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002471
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:509173
+  organism_label: Acinetobacter baumannii AYE
+  evidence:
+  - reference: DOI:10.1002/cbic.201500147
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002471 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CU459141.1
+  locus_from: 2048827
+  locus_to: 2064050
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002471
+  source_label: baumannoferrin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b00fad5faa
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

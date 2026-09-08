@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-80fdb61c53
+label: α-lipomycin
+chemical_structure:
+  smiles: C[C@@H]1[C@H]([C@H](C[C@@H](O1)OC(C(C)C)C(C)/C=C(\C)/C=C/C=C/C=C/C=C/C(=C\2/C(=O)C(N(C2=O)C)CCC(=O)O)/O)O)O
+  standard_inchi: InChI=1S/C32H45NO9/c1-19(2)31(42-27-18-25(35)29(38)22(5)41-27)21(4)17-20(3)13-11-9-7-8-10-12-14-24(34)28-30(39)23(15-16-26(36)37)33(6)32(28)40/h7-14,17,19,21-23,25,27,29,31,34-35,38H,15-16,18H2,1-6H3,(H,36,37)/b9-7+,10-8+,13-11+,14-12+,20-17+,28-24+/t21?,22-,23?,25+,27+,29-,31?/m1/s1
+  standard_inchi_key: BRPRNHPFSOESDI-WTYFYQQMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001003
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+- SACCHARIDE
+xrefs:
+- pubchem:54723870
+- chebi:80123
+producer_organisms:
+- taxon_id: NCBITaxon:1894
+  taxon_label: Kitasatospora aureofaciens
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001003
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:16723573
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001003 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001003
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1894
+  organism_label: Kitasatospora aureofaciens
+  evidence:
+  - reference: PMID:16723573
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001003 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ176871.1
+  bgc_class:
+  - NRPS
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001003
+  source_label: α-lipomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-80fdb61c53
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

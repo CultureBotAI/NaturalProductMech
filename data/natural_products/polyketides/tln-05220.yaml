@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-53585e6d66
+label: TLN-05220
+chemical_structure:
+  smiles: CCC(C)C1=CC2=C(C(=O)N1CC(=O)N1CC(NC(=O)C1C)C(O)=O)C(=O)C1=C3C(O)=C4C(=O)C5=C(C(O)=CC=C5O)C(=O)C4=C(OC)C3=CC=C1C2=O
+  standard_inchi: InChI=1S/C38H31N3O13/c1-5-13(2)19-10-17-25(37(51)41(19)12-22(44)40-11-18(38(52)53)39-36(50)14(40)3)31(46)23-15(30(17)45)6-7-16-24(23)32(47)28-29(35(16)54-4)34(49)27-21(43)9-8-20(42)26(27)33(28)48/h6-10,13-14,18,42-43,47H,5,11-12H2,1-4H3,(H,39,50)(H,52,53)
+  standard_inchi_key: TUASECVRIQZMOK-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001062
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Ericamycins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA012697
+producer_organisms:
+- taxon_id: NCBITaxon:704114
+  taxon_label: Micromonospora echinospora subsp. challisensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001062
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:19680283
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001062 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001062
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:704114
+  organism_label: Micromonospora echinospora subsp. challisensis
+  evidence:
+  - reference: PMID:19680283
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001062 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FJ915123.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001062
+  source_label: TLN-05220
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-53585e6d66
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-4e23f802fb
+label: gaburedin E
+chemical_structure:
+  smiles: CC(=O)N(C(=O)NCCCC(=O)O)[C@@H](CS)C(=O)O
+  standard_inchi: InChI=1S/C10H16N2O6S/c1-6(13)12(7(5-19)9(16)17)10(18)11-4-2-3-8(14)15/h7,19H,2-5H2,1H3,(H,11,18)(H,14,15)(H,16,17)/t7-/m0/s1
+  standard_inchi_key: WBVIQNAQZBSZKJ-ZETCQYMHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002578
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA028621
+producer_organisms:
+- taxon_id: NCBITaxon:953739
+  taxon_label: Streptomyces venezuelae ATCC 10712
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002578
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1039/c3sc52536h
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002578 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002578
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:953739
+  organism_label: Streptomyces venezuelae ATCC 10712
+  evidence:
+  - reference: DOI:10.1039/c3sc52536h
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002578 entry version 2; citation taken from the entry level
+  genome_accession: genbank:FR845719.1
+  locus_from: 4521431
+  locus_to: 4531575
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002578
+  source_label: gaburedin E
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-4e23f802fb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

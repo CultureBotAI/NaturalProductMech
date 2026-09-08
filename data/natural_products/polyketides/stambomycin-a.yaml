@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-6b177781f6
+label: stambomycin A
+chemical_structure:
+  smiles: O=C(OC(/C=C/C(O)CC(CCCC(C(C1O)C)O)O)C)CC2(O)OC(C[C@H](O[C@@H]3O[C@H](C)[C@@H](O)[C@H](N(C)C)[C@H]3O)C2C)C(C)C(O)/C(C)=C/C=C/CC(O)C(C)C(O)CCCC(O)CC(O)/C(C)=C/C(C(O)C(O)CCC(C)CC(O)CC(O)C(C)CC1)CCCC(CC)C
+  standard_inchi: InChI=1S/C74H135NO21/c1-15-42(2)21-18-23-53-36-46(6)64(86)38-55(77)25-20-28-59(81)48(8)58(80)26-17-16-22-45(5)69(88)50(10)65-40-66(95-73-72(91)68(75(13)14)70(89)52(12)94-73)51(11)74(92,96-65)41-67(87)93-47(7)31-32-56(78)37-54(76)24-19-27-60(82)49(9)61(83)34-30-44(4)63(85)39-57(79)35-43(3)29-33-62(84)71(53)90/h16-17,22,31-32,36,42-44,47-66,68-73,76-86,88-92H,15,18-21,23-30,33-35,37-41H2,1-14H3/b17-16+,32-31+,45-22+,46-36+/t42?,43?,44?,47?,48?,49?,50?,51?,52-,53?,54?,55?,56?,57?,58?,59?,60?,61?,62?,63?,64?,65?,66+,68+,69?,70-,71?,72-,73+,74?/m1/s1
+  standard_inchi_key: NPSHCJDYXPRAHR-MPUABNDYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000151
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Oligomycins
+  - Polyene macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:278992
+  taxon_label: Streptomyces ambofaciens ATCC 23877
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000151
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:21444795
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000151 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000151
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:278992
+  organism_label: Streptomyces ambofaciens ATCC 23877
+  evidence:
+  - reference: PMID:21444795
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000151 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AM238664.2
+  locus_from: 488938
+  locus_to: 634937
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000151
+  source_label: stambomycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6b177781f6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

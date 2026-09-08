@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-ff941f6d00
+label: orfamide C
+chemical_structure:
+  smiles: CCCCCCCCCC(O)CC(=O)NC(CC(C)C)C(=O)NC(CCC(O)=O)C(=O)NC1C(C)OC(=O)C(NC(=O)C(CO)NC(=O)C(CC(C)C)NC(=O)C(CC(C)C)NC(=O)C(CO)NC(=O)C(CC(C)C)NC(=O)C(NC1=O)C(C)CC)C(C)C
+  standard_inchi: InChI=1S/C62H110N10O17/c1-15-17-18-19-20-21-22-23-40(75)30-48(76)63-42(26-33(3)4)54(80)64-41(24-25-49(77)78)53(79)72-52-39(14)89-62(88)50(37(11)12)70-59(85)47(32-74)69-56(82)44(28-35(7)8)65-55(81)43(27-34(5)6)66-58(84)46(31-73)68-57(83)45(29-36(9)10)67-60(86)51(38(13)16-2)71-61(52)87/h33-47,50-52,73-75H,15-32H2,1-14H3,(H,63,76)(H,64,80)(H,65,81)(H,66,84)(H,67,86)(H,68,83)(H,69,82)(H,70,85)(H,71,87)(H,72,79)(H,77,78)
+  standard_inchi_key: STDTUHSFISWYFO-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000399
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA05175
+producer_organisms:
+- taxon_id: NCBITaxon:220664
+  taxon_label: Pseudomonas protegens Pf-5
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000399
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:17254952
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000399 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000399
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:220664
+  organism_label: Pseudomonas protegens Pf-5
+  evidence:
+  - reference: PMID:17254952
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000399 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000076.1
+  locus_from: 2364934
+  locus_to: 2411953
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000399
+  source_label: orfamide C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ff941f6d00
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

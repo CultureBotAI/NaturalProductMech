@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-c0604b5c68
+label: catenulisporolide C
+chemical_structure:
+  smiles: C[C@H]1/C=C/C=C/C=C/[C@H](C[C@H](C[C@@H]2C[C@@H]([C@H]([C@@](O2)(C[C@@H](CCCCCC(=O)O[C@@H]1C[C@H]([C@H](C)[C@H]([C@@H](C)[C@H](CC(C)C)O[C@H]3C[C@H]([C@@H]([C@H](O3)C)O)O[C@H]4C[C@H]([C@@H]([C@H](O4)C)O)O)O)O)O)O)C)O)O[C@H]5C[C@H]([C@@H]([C@H](O5)C)O)O)O
+  standard_inchi: InChI=1S/C57H98O20/c1-30(2)21-47(75-52-28-48(56(68)37(9)72-52)76-51-27-45(63)55(67)36(8)71-51)33(5)53(65)32(4)42(60)25-46-31(3)17-13-10-11-14-18-38(58)22-40(73-50-26-44(62)54(66)35(7)70-50)23-41-24-43(61)34(6)57(69,77-41)29-39(59)19-15-12-16-20-49(64)74-46/h10-11,13-14,17-18,30-48,50-56,58-63,65-69H,12,15-16,19-29H2,1-9H3/b11-10+,17-13+,18-14+/t31-,32-,33-,34+,35+,36+,37+,38+,39+,40+,41+,42+,43-,44+,45+,46+,47-,48+,50-,51-,52-,53+,54+,55+,56+,57-/m0/s1
+  standard_inchi_key: JHAMGSNGNSSQAG-QAEPOIJJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001963
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactones
+  is_glycoside: true
+bgc_class:
+- PKS
+compound_classes:
+- Macrocyclic polyketide
+xrefs:
+- npatlas:NPA023983
+producer_organisms:
+- taxon_id: NCBITaxon:1962977
+  taxon_label: Catenulispora sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001963
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:30379079
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001963 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001963
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1962977
+  organism_label: Catenulispora sp.
+  evidence:
+  - reference: PMID:30379079
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001963 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MH844630.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001963
+  source_label: catenulisporolide C
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c0604b5c68
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

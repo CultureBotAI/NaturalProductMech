@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-a4fac30c3f
+label: fogacin
+chemical_structure:
+  smiles: OC(C[C@H]1CC2=CC3=C(C(O)=CC=C3O)C(O)=C2[C@H](C)O1)=O
+  standard_inchi: InChI=1S/C16H16O6/c1-7-14-8(4-9(22-7)6-13(19)20)5-10-11(17)2-3-12(18)15(10)16(14)21/h2-3,5,7,9,17-18,21H,4,6H2,1H3,(H,19,20)/t7-,9+/m0/s1
+  standard_inchi_key: QHMHMPAPKQFGRV-IONNQARKSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000248
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Naphthalenes
+  class_results:
+  - Bisnaphthalenes
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:29301
+  taxon_label: Streptomyces arenae DSM 40737
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000248
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:10206788
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000248 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000248
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:29301
+  organism_label: Streptomyces arenae DSM 40737
+  evidence:
+  - reference: PMID:10206788
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000248 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JAKQYH010000014.1
+  locus_from: 94867
+  locus_to: 120787
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000248
+  source_label: fogacin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a4fac30c3f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

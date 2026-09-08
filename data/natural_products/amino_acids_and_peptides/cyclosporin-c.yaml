@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-a915d3af4f
+label: cyclosporin C
+chemical_structure:
+  smiles: C/C=C/C[C@@H](C)[C@H]([C@H]1C(=O)N[C@H](C(=O)N(CC(=O)N([C@H](C(=O)N[C@H](C(=O)N([C@H](C(=O)N[C@H](C(=O)N[C@@H](C(=O)N([C@H](C(=O)N([C@H](C(=O)N([C@H](C(=O)N1C)C(C)C)C)CC(C)C)C)CC(C)C)C)C)C)CC(C)C)C)C(C)C)CC(C)C)C)C)[C@@H](C)O)O
+  standard_inchi: InChI=1S/C62H111N11O13/c1-25-26-27-39(14)52(76)51-56(80)66-49(42(17)74)60(84)67(18)32-47(75)68(19)43(28-33(2)3)55(79)65-48(37(10)11)61(85)69(20)44(29-34(4)5)54(78)63-40(15)53(77)64-41(16)57(81)70(21)45(30-35(6)7)58(82)71(22)46(31-36(8)9)59(83)72(23)50(38(12)13)62(86)73(51)24/h25-26,33-46,48-52,74,76H,27-32H2,1-24H3,(H,63,78)(H,64,77)(H,65,79)(H,66,80)/b26-25+/t39-,40+,41-,42-,43+,44+,45+,46+,48+,49+,50+,51+,52-/m1/s1
+  standard_inchi_key: JTOKYIBTLUQVQV-QRVTZXGZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001565
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Peptaibols
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:37994
+  taxon_label: Beauveria felina
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001565
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1007/s00253-018-8792-0
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001565 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001565
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:37994
+  organism_label: Beauveria felina
+  evidence:
+  - reference: DOI:10.1007/s00253-018-8792-0
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001565 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MF716954.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001565
+  source_label: cyclosporin C
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-a915d3af4f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

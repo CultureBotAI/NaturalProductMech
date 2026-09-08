@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-95308e3c7c
+label: SF2575
+chemical_structure:
+  smiles: C/C=C(\C)/C(=O)OC1C(OC(CC1O)C2=C(C3=C(C=C2)C(C4CC5C(C(=O)C(=C(C5(C(=O)C4=C3O)OC)O)C(=O)N)OC(=O)C6=CC=CC=C6O)(C)OC)O)C
+  standard_inchi: InChI=1S/C40H43NO15/c1-7-16(2)37(50)55-32-17(3)54-25(15-24(32)43)19-12-13-20-26(29(19)44)30(45)27-21(39(20,4)52-5)14-22-33(56-38(51)18-10-8-9-11-23(18)42)31(46)28(36(41)49)35(48)40(22,53-6)34(27)47/h7-13,17,21-22,24-25,32-33,42-45,48H,14-15H2,1-6H3,(H2,41,49)/b16-7+
+  standard_inchi_key: WYRYRHFKSQKGHJ-FRKPEAEDSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000269
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+- SACCHARIDE
+xrefs:
+- pubchem:54702959
+producer_organisms:
+- taxon_id: NCBITaxon:746675
+  taxon_label: Streptomyces sp. SF2575
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000269
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.45.320
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000269 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000269
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:746675
+  organism_label: Streptomyces sp. SF2575
+  evidence:
+  - reference: DOI:10.7164/antibiotics.45.320
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000269 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:GQ409537.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000269
+  source_label: SF2575
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-95308e3c7c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

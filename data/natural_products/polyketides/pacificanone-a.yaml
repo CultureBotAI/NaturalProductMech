@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-45ec675c07
+label: pacificanone A
+chemical_structure:
+  smiles: CC[C@H](O)[C@H](C)\C=C(/C)\C=C\[C@]1(O)[C@@H](C)C[C@@H](CC)C(=O)[C@@H]1C
+  standard_inchi: InChI=1S/C20H34O3/c1-7-17-12-15(5)20(23,16(6)19(17)22)10-9-13(3)11-14(4)18(21)8-2/h9-11,14-18,21,23H,7-8,12H2,1-6H3/b10-9+,13-11+/t14-,15+,16+,17-,18+,20+/m1/s1
+  standard_inchi_key: JSPPQWVTDRBUIB-VGPDEBLWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001830
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA010536
+producer_organisms:
+- taxon_id: NCBITaxon:351187
+  taxon_label: Salinispora pacifica
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001830
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25930739
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001830 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001830
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:351187
+  organism_label: Salinispora pacifica
+  evidence:
+  - reference: PMID:25930739
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001830 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KP997155.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001830
+  source_label: pacificanone A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-45ec675c07
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-6ce779d3a4
+label: cyphomycin
+chemical_structure:
+  smiles: CCC(OC1CC(C)(O)C(OC2CCC(OC(=O)C(C)C(O)C3=CC4=C(C=C3)C(=O)C(C)=CC4=O)C(C)O2)C(C)O1)C(C)C(O)C(C)C(O)C(C)C1OC(=O)\C=C\C(C)C(O)CC(O)CCCC(O)CCC(C)C(O)C(=O)C2(O)CC(O)CC(CC(O)CC(O)CC(O)CCCC(O)\C=C\C1C)O2
+  standard_inchi: InChI=1S/C77H122O26/c1-13-62(99-66-38-76(12,95)74(48(11)98-66)102-65-29-27-63(47(10)97-65)100-75(94)46(9)71(92)49-23-26-58-59(31-49)61(86)30-42(5)67(58)88)43(6)69(90)44(7)70(91)45(8)72-41(4)21-25-51(79)16-14-18-52(80)32-54(82)33-55(83)34-57-35-56(84)37-77(96,103-57)73(93)68(89)40(3)20-24-50(78)17-15-19-53(81)36-60(85)39(2)22-28-64(87)101-72/h21-23,25-26,28,30-31,39-41,43-48,50-57,60,62-63,65-66,68-72,74,78-85,89-92,95-96H,13-20,24,27,29,32-38H2,1-12H3/b25-21+,28-22+
+  standard_inchi_key: ITSGAQYTKYPNTH-SPNOXEBBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001877
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactones
+  - Polyene macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:2601673
+  taxon_label: Streptomyces sp. ISID311
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001877
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:30705269
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001877 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001877
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2601673
+  organism_label: Streptomyces sp. ISID311
+  evidence:
+  - reference: PMID:30705269
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001877 entry version 4; citation taken from the entry level
+  genome_accession: genbank:VOQD01000001.1
+  locus_from: 427967
+  locus_to: 622305
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001877
+  source_label: cyphomycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-6ce779d3a4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

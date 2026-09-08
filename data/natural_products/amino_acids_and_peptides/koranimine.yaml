@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-184ce3d582
+label: koranimine
+chemical_structure:
+  smiles: '[H][C@]1(N=C[C@@H](NC(=O)[C@@H](CC2=CC=CC=C2)NC(=O)[C@@H](NC(=O)[C@@H](CC2=CC=CC=C2)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](CC(C)C)NC1=O)C(C)C)C(C)C)[C@@H](C)O'
+  standard_inchi: InChI=1S/C44H65N7O7/c1-25(2)20-32-39(53)47-35(23-31-18-14-11-15-19-31)42(56)51-37(28(7)8)43(57)49-34(22-30-16-12-10-13-17-30)41(55)50-36(27(5)6)24-45-38(29(9)52)44(58)48-33(21-26(3)4)40(54)46-32/h10-19,24-29,32-38,52H,20-23H2,1-9H3,(H,46,54)(H,47,53)(H,48,58)(H,49,57)(H,50,55)(H,51,56)/t29-,32-,33-,34-,35-,36-,37+,38+/m1/s1
+  standard_inchi_key: HLSBKABOQXRVQW-ICZSIEETSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000377
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA0689
+producer_organisms:
+- taxon_id: NCBITaxon:1010692
+  taxon_label: Bacillus sp. NK2003
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000377
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:21520944
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000377 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000377
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1010692
+  organism_label: Bacillus sp. NK2003
+  evidence:
+  - reference: PMID:21520944
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000377 entry version 4; citation taken from the entry level
+  genome_accession: genbank:JF828091.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000377
+  source_label: koranimine
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-184ce3d582
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

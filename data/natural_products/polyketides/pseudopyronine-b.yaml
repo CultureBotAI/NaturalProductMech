@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-3d49f1c267
+label: pseudopyronine B
+chemical_structure:
+  smiles: CCCCCCCC1=CC(=O)C(O)(CCCCCC)O1
+  standard_inchi: InChI=1S/C17H30O3/c1-3-5-7-9-10-12-15-14-16(18)17(19,20-15)13-11-8-6-4-2/h14,19H,3-13H2,1-2H3
+  standard_inchi_key: JPBZVOIXIPLNNZ-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001285
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA07296
+producer_organisms:
+- taxon_id: NCBITaxon:303
+  taxon_label: Pseudomonas putida
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001285
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:26507104
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001285 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001285
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:303
+  organism_label: Pseudomonas putida
+  evidence:
+  - reference: PMID:26507104
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001285 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KT373879.1
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001285
+  source_label: pseudopyronine B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3d49f1c267
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

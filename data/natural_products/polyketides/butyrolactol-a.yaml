@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-6ef4cba33d
+label: butyrolactol A
+chemical_structure:
+  smiles: CC(CC=CC=CCCC=CC=CCCC(C)(C)C)C(O)C(O)C(O)C(O)C(O)C1OC(=O)C(O)C1O
+  standard_inchi: InChI=1S/C28H46O9/c1-18(16-14-12-10-8-6-5-7-9-11-13-15-17-28(2,3)4)19(29)20(30)21(31)22(32)23(33)26-24(34)25(35)27(36)37-26/h7-14,18-26,29-35H,5-6,15-17H2,1-4H3
+  standard_inchi_key: YHNIVBVCOOBXOO-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001537
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA012033
+producer_organisms:
+- taxon_id: NCBITaxon:1550033
+  taxon_label: Streptomyces sp. NBRC 110030
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001537
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26337155
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001537 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001537
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1550033
+  organism_label: Streptomyces sp. NBRC 110030
+  evidence:
+  - reference: PMID:26337155
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001537 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_BBOK01000014.1
+  locus_from: 7976
+  locus_to: 76904
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001537
+  source_label: butyrolactol A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6ef4cba33d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-a6753824b0
+label: blasticidin S
+chemical_structure:
+  smiles: CN(C(N)=N)CC[C@H](N)CC(N[C@H]1C=C[C@H](N2C=CC(N)=NC2=O)O[C@@H]1C(O)=O)=O
+  standard_inchi: InChI=1S/C17H26N8O5/c1-24(16(20)21)6-4-9(18)8-12(26)22-10-2-3-13(30-14(10)15(27)28)25-7-5-11(19)23-17(25)29/h2-3,5,7,9-10,13-14H,4,6,8,18H2,1H3,(H3,20,21)(H,22,26)(H,27,28)(H2,19,23,29)/t9-,10-,13+,14-/m0/s1
+  standard_inchi_key: CXNPLSGKWMLZPZ-ZNIXKSQXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000874
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Pyrimidine nucleos(t)ides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:170012
+producer_organisms:
+- taxon_id: NCBITaxon:68214
+  taxon_label: Streptomyces griseochromogenes
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000874
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:12964155
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000874 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000874
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68214
+  organism_label: Streptomyces griseochromogenes
+  evidence:
+  - reference: PMID:12964155
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000874 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AY196214.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000874
+  source_label: blasticidin S
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a6753824b0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

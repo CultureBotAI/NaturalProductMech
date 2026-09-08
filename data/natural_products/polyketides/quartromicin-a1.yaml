@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-8f24495487
+label: quartromicin A1
+chemical_structure:
+  smiles: CC1=CC=CC2(C)C=C(COC3OC(CO)C(O)C(O)C3O)C(C)CC23OC(O)C(C3=O)C(O)C=CC2(C)C=C(C=O)C(C)CC23OC(O)C(C3=O)C(O)C(C)=CC=CC2C=C(COC3OC(CO)C(O)C(O)C3O)C(C)CC23OC(O)C(C3=O)C(O)C=CC2(C)C=C(C=O)C(C)CC23OC(O)C(C3=O)C1O
+  standard_inchi: InChI=1S/C77H102O30/c1-34-12-10-14-44-20-40(32-100-69-59(90)57(88)55(86)47(30-80)102-69)36(3)21-74(44)61(92)49(65(96)104-74)45(82)15-18-72(8)25-41(28-78)38(5)23-77(72)64(95)52(68(99)107-77)54(85)35(2)13-11-17-71(7)27-43(33-101-70-60(91)58(89)56(87)48(31-81)103-70)39(6)24-75(71)62(93)50(66(97)105-75)46(83)16-19-73(9)26-42(29-79)37(4)22-76(73)63(94)51(53(34)84)67(98)106-76/h10-20,25-29,36-39,44-60,65-70,80-91,96-99H,21-24,30-33H2,1-9H3
+  standard_inchi_key: FLUFBWHKKGTRPN-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000133
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Spirotetronate macrolides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA016433
+producer_organisms:
+- taxon_id: NCBITaxon:31958
+  taxon_label: Amycolatopsis orientalis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000133
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23102224
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000133 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000133
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:31958
+  organism_label: Amycolatopsis orientalis
+  evidence:
+  - reference: PMID:23102224
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000133 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JF970188.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000133
+  source_label: quartromicin A1
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8f24495487
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

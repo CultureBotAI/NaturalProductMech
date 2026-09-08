@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-d1130bb242
+label: Keanumycin B
+chemical_structure:
+  smiles: '[H][C@@]1(NC(=O)[C@@H](CCN)NC(=O)[C@@H](CCO)NC(=O)CNC(=O)[C@H](CCN)NC(=O)[C@@H](COC(=O)[C@]([H])(NC(=O)[C@H](NC(=O)\C(NC1=O)=C\C)[C@@H](O)C(O)=O)[C@@H](O)CCl)NC(=O)C[C@@H](O)CCCCCCCCCCCCC)[C@@H](C)O'
+  standard_inchi: InChI=1S/C49H84ClN11O18/c1-4-6-7-8-9-10-11-12-13-14-15-16-28(64)23-35(66)55-33-26-79-49(78)38(34(65)24-50)60-47(75)39(40(68)48(76)77)61-42(70)29(5-2)56-46(74)37(27(3)63)59-44(72)31(18-21-52)58-43(71)32(19-22-62)54-36(67)25-53-41(69)30(17-20-51)57-45(33)73/h5,27-28,30-34,37-40,62-65,68H,4,6-26,51-52H2,1-3H3,(H,53,69)(H,54,67)(H,55,66)(H,56,74)(H,57,73)(H,58,71)(H,59,72)(H,60,75)(H,61,70)(H,76,77)/b29-5-/t27-,28+,30+,31-,32-,33-,34+,37-,38-,39-,40-/m1/s1
+  standard_inchi_key: OXIZCSDNJBDETD-AIONVLLNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002765
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:2056244
+  taxon_label: Pseudomonas sp. QS1027
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002765
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1021/jacs.2c11107
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002765 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002765
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2056244
+  organism_label: Pseudomonas sp. QS1027
+  evidence:
+  - reference: DOI:10.1021/jacs.2c11107
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002765 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MW331495.1
+  locus_from: 25765
+  locus_to: 74085
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002765
+  source_label: Keanumycin B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-d1130bb242
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

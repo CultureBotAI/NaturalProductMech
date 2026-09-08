@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-b68e89ca68
+label: notoamide F
+chemical_structure:
+  smiles: CC1(C=CC2=C(O1)C=CC3=C2NC4=C3[C@@H]([C@]56[C@H](C4(C)C)C[C@@]7(CCCN7C5=O)C(=O)N6)OC)C
+  standard_inchi: InChI=1S/C27H31N3O4/c1-24(2)11-9-14-16(34-24)8-7-15-18-20(28-19(14)15)25(3,4)17-13-26-10-6-12-30(26)23(32)27(17,21(18)33-5)29-22(26)31/h7-9,11,17,21,28H,6,10,12-13H2,1-5H3,(H,29,31)/t17-,21-,26-,27+/m0/s1
+  standard_inchi_key: RWPUAUNPEMCSNR-CZQHCSHRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002254
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Indole diketopiperazine alkaloids (L-Trp, L-Pro)
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA009414
+- pubchem:25180710
+producer_organisms:
+- taxon_id: NCBITaxon:2741095
+  taxon_label: Aspergillus sp. FM242
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002254
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:32433885
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002254 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002254
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2741095
+  organism_label: Aspergillus sp. FM242
+  evidence:
+  - reference: PMID:32433885
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002254 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT457561.1
+  locus_from: 1
+  locus_to: 46989
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002254
+  source_label: notoamide F
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b68e89ca68
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

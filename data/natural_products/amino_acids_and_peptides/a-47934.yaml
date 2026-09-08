@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-fb9891ff72
+label: A-47934
+chemical_structure:
+  smiles: N[C@@H]1C2=CC=C(OS(O)(=O)=O)C(OC3=CC(=CC(O)=C3)[C@@H]3NC(=O)[C@@H](CC4=CC(Cl)=C(OC5=C(O)C6=CC(=C5)[C@@H](NC3=O)C(=O)N[C@@H]3C5=CC(Cl)=C(O)C(=C5)C5=C(O)C=C(O)C=C5[C@H](NC(=O)[C@@H](NC3=O)[C@H](O)C3=CC=C(O6)C(Cl)=C3)C(O)=O)C=C4)NC1=O)=C2
+  standard_inchi: InChI=1S/C58H44Cl3N7O21S/c59-31-7-20-1-4-36(31)87-40-15-25-16-41(51(40)74)88-37-5-3-22(12-32(37)60)49(72)48-57(80)67-47(58(81)82)29-18-27(70)19-35(71)42(29)30-11-24(13-33(61)50(30)73)45(56(79)68-48)65-55(78)46(25)66-54(77)44-23-9-26(69)17-28(10-23)86-39-14-21(2-6-38(39)89-90(83,84)85)43(62)53(76)63-34(8-20)52(75)64-44/h1-7,9-19,34,43-49,69-74H,8,62H2,(H,63,76)(H,64,75)(H,65,78)(H,66,77)(H,67,80)(H,68,79)(H,81,82)(H,83,84,85)/t34-,43-,44+,45-,46-,47+,48+,49-/m1/s1
+  standard_inchi_key: HRGFAEUWEMDRRZ-QLRHZSCISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000290
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Vancomycins and Teicoplanins
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA014694
+producer_organisms:
+- taxon_id: NCBITaxon:55952
+  taxon_label: Streptomyces toyocaensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000290
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:9177243
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000290 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000290
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:55952
+  organism_label: Streptomyces toyocaensis
+  evidence:
+  - reference: PMID:9177243
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000290 entry version 5; citation taken from the entry level
+  genome_accession: genbank:U82965.2
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000290
+  source_label: A-47934
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fb9891ff72
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

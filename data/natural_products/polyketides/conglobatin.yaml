@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-49b703a280
+label: conglobatin
+chemical_structure:
+  smiles: C[C@@H]1C[C@H](C)[C@H](CC2=CN=CO2)OC(=O)\C(C)=C/[C@H](C)C[C@H](C)[C@H](CC2=CN=CO2)OC(=O)\C(C)=C/1
+  standard_inchi: InChI=1S/C28H38N2O6/c1-17-7-19(3)25(11-23-13-29-15-33-23)35-28(32)22(6)10-18(2)8-20(4)26(12-24-14-30-16-34-24)36-27(31)21(5)9-17/h9-10,13-20,25-26H,7-8,11-12H2,1-6H3/b21-9-,22-10-/t17-,18-,19+,20+,25+,26+/m1/s1
+  standard_inchi_key: LAJRJVDLKYGLOO-NLISZJEWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001215
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA06600
+producer_organisms:
+- taxon_id: NCBITaxon:1653203
+  taxon_label: Streptomyces conglobatus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001215
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26091168
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001215 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001215
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1653203
+  organism_label: Streptomyces conglobatus
+  evidence:
+  - reference: PMID:26091168
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001215 entry version 5; citation taken from the entry level
+  genome_accession: genbank:LN849060.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001215
+  source_label: conglobatin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-49b703a280
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

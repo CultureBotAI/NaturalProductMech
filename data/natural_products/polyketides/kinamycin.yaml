@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-7542267beb
+label: kinamycin
+chemical_structure:
+  smiles: CC(=O)O[C@@H]1[C@H](C2=C([C@H]([C@@]1(C)OC(=O)C)OC(=O)C)C(=C3C2=C(C4=CC=CC(=O)C4=C3O)[O-])[N+]#N)O
+  standard_inchi: InChI=1S/C24H20N2O10/c1-8(27)34-22-17-15(21(33)23(35-9(2)28)24(22,4)36-10(3)29)14-16(18(17)26-25)20(32)13-11(19(14)31)6-5-7-12(13)30/h5-7,21-23,33H,1-4H3,(H-,30,31,32)/t21-,22+,23+,24+/m0/s1
+  standard_inchi_key: XNBGMEGJUYHLRB-OLKYXYMISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000236
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:161863
+producer_organisms:
+- taxon_id: NCBITaxon:224537
+  taxon_label: Streptomyces murayamaensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000236
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:9531987
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000236 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000236
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:224537
+  organism_label: Streptomyces murayamaensis
+  evidence:
+  - reference: PMID:9531987
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000236 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AH012623.2
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000236
+  source_label: kinamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7542267beb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

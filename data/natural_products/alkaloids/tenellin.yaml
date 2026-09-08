@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-34ab171b17
+label: tenellin
+chemical_structure:
+  smiles: CCC(C)\C=C(/C)\C=C\C(=O)C1=C(O)C(=CN(O)C1=O)C1=CC=C(O)C=C1
+  standard_inchi: InChI=1S/C21H23NO5/c1-4-13(2)11-14(3)5-10-18(24)19-20(25)17(12-22(27)21(19)26)15-6-8-16(23)9-7-15/h5-13,23,25,27H,4H2,1-3H3/b10-5+,14-11+
+  standard_inchi_key: YELFBSBOFKWHSL-QDPFKYGGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001049
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Nicotinic acid alkaloids
+  class_results:
+  - Pyridine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA05743
+producer_organisms:
+- taxon_id: NCBITaxon:176275
+  taxon_label: Beauveria bassiana
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001049
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  evidence:
+  - reference: PMID:21899331
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001049 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001049
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:176275
+  organism_label: Beauveria bassiana
+  evidence:
+  - reference: PMID:21899331
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001049 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AM409327.1
+  locus_from: 1717
+  locus_to: 20893
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001049
+  source_label: tenellin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-34ab171b17
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

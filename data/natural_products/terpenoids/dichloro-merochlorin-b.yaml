@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-8dfb937ebb
+label: dichloro-merochlorin B
+chemical_structure:
+  smiles: OC1=C2C(C(C3C(C)(CC/C=C(C)/C)O4)(C/C(C3)=C(C)/C)C4=C(Cl)C2=O)=CC(O)=C1Cl
+  standard_inchi: InChI=1S/C25H28Cl2O4/c1-12(2)7-6-8-24(5)17-9-14(13(3)4)11-25(17)15-10-16(28)19(26)21(29)18(15)22(30)20(27)23(25)31-24/h7,10,17,28-29H,6,8-9,11H2,1-5H3
+  standard_inchi_key: HARGRIZLPBEAGS-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001083
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Miscellaneous meroterpenoids
+  is_glycoside: false
+bgc_class:
+- PKS
+- TERPENE
+producer_organisms:
+- taxon_id: NCBITaxon:1136432
+  taxon_label: Streptomyces sp. CNH189
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001083
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:22784372
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001083 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001083
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1136432
+  organism_label: Streptomyces sp. CNH189
+  evidence:
+  - reference: PMID:22784372
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001083 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JX186999.1
+  bgc_class:
+  - PKS
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001083
+  source_label: dichloro-merochlorin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8dfb937ebb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

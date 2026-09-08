@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-0bd6ab53bc
+label: 4β-Acetoxytetrahydrobotryslactone
+chemical_structure:
+  smiles: C[C@@H]1C[C@@H]([C@@H]2C(=C1[C@@H]3C[C@H](C(=O)O3)O)[C@@](CC2(C)C)(C)CO)OC(=O)C
+  standard_inchi: InChI=1S/C20H30O6/c1-10-6-14(25-11(2)22)16-17(20(5,9-21)8-19(16,3)4)15(10)13-7-12(23)18(24)26-13/h10,12-14,16,21,23H,6-9H2,1-5H3/t10-,12-,13+,14+,16-,20-/m1/s1
+  standard_inchi_key: RVXLTRZIAMMATE-JMTSMVSISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000631
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Botryane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA002526
+producer_organisms:
+- taxon_id: NCBITaxon:332648
+  taxon_label: Botrytis cinerea B05.10
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000631
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1021/np020107v
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000631 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000631
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:332648
+  organism_label: Botrytis cinerea B05.10
+  evidence:
+  - reference: DOI:10.1021/np020107v
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000631 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP009816.1
+  locus_from: 2216500
+  locus_to: 2246000
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000631
+  source_label: 4β-Acetoxytetrahydrobotryslactone
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0bd6ab53bc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

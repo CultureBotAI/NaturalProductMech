@@ -1,0 +1,102 @@
+identifier: naturalproductmech:mibig-bad5822c6e
+label: kasumigamide
+chemical_structure:
+  smiles: NC(=N)NCCC[C@@H](NC(=O)C[C@H](O)[C@@H](CC1=CNC2=CC=CC=C12)NC(=O)CCNC(=O)[C@H](O)CC1=CC=CC=C1)C(=O)N[C@H]([C@H](O)C1=CC=CC=C1)C(O)=O
+  standard_inchi: InChI=1S/C40H50N8O9/c41-40(42)44-18-9-16-29(37(54)48-35(39(56)57)36(53)25-12-5-2-6-13-25)46-34(52)22-31(49)30(21-26-23-45-28-15-8-7-14-27(26)28)47-33(51)17-19-43-38(55)32(50)20-24-10-3-1-4-11-24/h1-8,10-15,23,29-32,35-36,45,49-50,53H,9,16-22H2,(H,43,55)(H,46,52)(H,47,51)(H,48,54)(H,56,57)(H4,41,42,44)/t29-,30-,31+,32-,35-,36-/m1/s1
+  standard_inchi_key: WUXSZVRSSSITPJ-LHXUXNRLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001630
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA0355
+producer_organisms:
+- taxon_id: NCBITaxon:312019
+  taxon_label: uncultured Candidatus Entotheonella sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001630
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:27732651
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001630 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:449440
+  taxon_label: Microcystis aeruginosa NIES-87
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001631
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:27732651
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001631 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001630
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:312019
+  organism_label: uncultured Candidatus Entotheonella sp.
+  evidence:
+  - reference: PMID:27732651
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001630 entry version 4; citation taken from the entry level
+  genome_accession: genbank:LC160290.1
+  bgc_class:
+  - NRPS
+  - PKS
+- accession: mibig:BGC0001631
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:449440
+  organism_label: Microcystis aeruginosa NIES-87
+  evidence:
+  - reference: PMID:27732651
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001631 entry version 4; citation taken from the entry level
+  genome_accession: genbank:LC160291.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001630
+  source_label: kasumigamide
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-bad5822c6e
+- source: MIBIG
+  source_id: BGC0001631
+  source_label: kasumigamide
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-90fb223093
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001630, BGC0001631.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

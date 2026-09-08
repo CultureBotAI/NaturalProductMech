@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-be59e768e2
+label: ohmyungsamycin B
+chemical_structure:
+  smiles: C[C@@H]1[C@@H](C(=O)N([C@H](C(=O)N[C@H](C(=O)N([C@H](C(=O)N[C@H](C(=O)N([C@H](C(=O)N([C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)O1)C(C)C)[C@@H](C2=CC=CC=C2)O)C(C)C)CC3=CNC4=C3C(=CC=C4)OC)C)C(C)C)C)C(C)C)CC(C)C)C)C(C)C)[C@@H](C)O)C)NC(=O)[C@H](C(C)C)NC(=O)[C@H](C(C)C)N(C)C
+  standard_inchi: InChI=1S/C76H121N13O16/c1-37(2)34-50-65(92)80-57(41(9)10)73(100)88(23)62(44(15)16)75(102)87(22)51(35-48-36-77-49-32-29-33-52(104-25)53(48)49)66(93)78-54(38(3)4)68(95)84-60(64(91)47-30-27-26-28-31-47)69(96)82-58(42(11)12)76(103)105-46(18)59(83-67(94)55(39(5)6)79-70(97)61(43(13)14)85(19)20)74(101)89(24)63(45(17)90)71(98)81-56(40(7)8)72(99)86(50)21/h26-33,36-46,50-51,54-64,77,90-91H,34-35H2,1-25H3,(H,78,93)(H,79,97)(H,80,92)(H,81,98)(H,82,96)(H,83,94)(H,84,95)/t45-,46-,50+,51+,54+,55+,56+,57+,58+,59+,60+,61+,62+,63+,64-/m1/s1
+  standard_inchi_key: ZPVRUILMJQYFOY-RBUFGWINSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002293
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Depsipeptide
+xrefs:
+- npatlas:NPA002531
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002293
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.3390/biom9110672
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002293 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002293
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: DOI:10.3390/biom9110672
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002293 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MN480430.1
+  locus_from: 1
+  locus_to: 56950
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002293
+  source_label: ohmyungsamycin B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-be59e768e2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

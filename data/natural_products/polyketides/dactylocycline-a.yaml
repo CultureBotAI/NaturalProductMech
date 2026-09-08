@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-ad1c9140e3
+label: dactylocycline A
+chemical_structure:
+  smiles: '[H][C@]12C[C@@]3(O)[C@H](N(C)C)C(O)=C(C(N)=O)C(=O)[C@@]3(O)C(O)=C1C(=O)C1=C(C(Cl)=C(OC)C=C1O)[C@]2(C)O[C@H]1C[C@](C)(NO)[C@@H](OC)[C@H](C)O1'
+  standard_inchi: InChI=1S/C31H40ClN3O13/c1-11-26(46-7)28(2,34-44)10-15(47-11)48-29(3)12-9-30(42)23(35(4)5)22(38)18(27(33)41)25(40)31(30,43)24(39)16(12)21(37)17-13(36)8-14(45-6)20(32)19(17)29/h8,11-12,15,23,26,34,36,38-39,42-44H,9-10H2,1-7H3,(H2,33,41)/t11-,12-,15-,23+,26-,28-,29+,30+,31-/m0/s1
+  standard_inchi_key: ZMMNIIAMYZOTAD-XKPXZWBCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000216
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Tetracyclines
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA017120
+producer_organisms:
+- taxon_id: NCBITaxon:1239282
+  taxon_label: Dactylosporangium sp. SC14051
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000216
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23024027
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000216 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000216
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1239282
+  organism_label: Dactylosporangium sp. SC14051
+  evidence:
+  - reference: PMID:23024027
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000216 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JX262387.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000216
+  source_label: dactylocycline A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ad1c9140e3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

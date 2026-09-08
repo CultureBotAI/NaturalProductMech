@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-d37d06bc8a
+label: anabaenopeptin
+chemical_structure:
+  smiles: C[C@H]1C(=O)N[C@H](C(=O)NCCCC[C@H](C(=O)N[C@H](C(=O)N([C@H](C(=O)N1C)CCC2=CC=C(C=C2)O)C)C(C)C)NC(=O)N[C@@H](CCCN=C(N)N)C(=O)O)CC3=CC=CC=C3
+  standard_inchi: InChI=1S/C42H62N10O9/c1-25(2)34-39(58)52(5)33(21-18-27-16-19-29(53)20-17-27)38(57)51(4)26(3)35(54)47-32(24-28-12-7-6-8-13-28)36(55)45-22-10-9-14-30(37(56)50-34)48-42(61)49-31(40(59)60)15-11-23-46-41(43)44/h6-8,12-13,16-17,19-20,25-26,30-34,53H,9-11,14-15,18,21-24H2,1-5H3,(H,45,55)(H,47,54)(H,50,56)(H,59,60)(H4,43,44,46)(H2,48,49,61)/t26-,30+,31-,32-,33-,34-/m0/s1
+  standard_inchi_key: BFLURJDTSAXPNZ-NCUXDPMLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000302
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Anabaenopeptins
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:44558924
+producer_organisms:
+- taxon_id: NCBITaxon:46234
+  taxon_label: Anabaena sp. 90
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000302
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:20338518
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000302 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000302
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:46234
+  organism_label: Anabaena sp. 90
+  evidence:
+  - reference: PMID:20338518
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000302 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GU174493.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000302
+  source_label: anabaenopeptin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-d37d06bc8a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

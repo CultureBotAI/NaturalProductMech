@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-a9d003f4e4
+label: brasilane F
+chemical_structure:
+  smiles: CC(CO)=C1CC(C)(C)C[C@@H]2[C@@H]1C[C@@H](O)[C@@H]2C
+  standard_inchi: InChI=1S/C15H26O2/c1-9(8-16)12-6-15(3,4)7-13-10(2)14(17)5-11(12)13/h10-11,13-14,16-17H,5-8H2,1-4H3/t10-,11-,13+,14-/m1/s1
+  standard_inchi_key: IVTGJGOYPCEGPH-MHDGFBEUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002260
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Protoilludane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- npatlas:NPA033047
+producer_organisms:
+- taxon_id: NCBITaxon:327061
+  taxon_label: Annulohypoxylon truncatum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002260
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32936132
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002260 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002260
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:327061
+  organism_label: Annulohypoxylon truncatum
+  evidence:
+  - reference: PMID:32936132
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002260 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT383109.1
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002260
+  source_label: brasilane F
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-a9d003f4e4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

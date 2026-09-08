@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-9f5eef94e9
+label: thiovarsolin C
+chemical_structure:
+  smiles: O=C(CNC(C)=O)N1CCCC1C(NC(C(O)=O)/C=C/CNC(N)=N)=S
+  standard_inchi: InChI=1S/C15H24N6O4S/c1-9(22)19-8-12(23)21-7-3-5-11(21)13(26)20-10(14(24)25)4-2-6-18-15(16)17/h2,4,10-11H,3,5-8H2,1H3,(H,19,22)(H,20,26)(H,24,25)(H4,16,17,18)/b4-2+
+  standard_inchi_key: CTVJRHXDWLDZDV-DUXPYHPUSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001849
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+producer_organisms:
+- taxon_id: NCBITaxon:67373
+  taxon_label: Streptomyces varsoviensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001849
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1101/494286
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001849 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001849
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67373
+  organism_label: Streptomyces varsoviensis
+  evidence:
+  - reference: DOI:10.1101/494286
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001849 entry version 4; citation taken from the entry level
+  genome_accession: genbank:JOBF01000011.1
+  locus_from: 155004
+  locus_to: 161953
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001849
+  source_label: thiovarsolin C
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-9f5eef94e9
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

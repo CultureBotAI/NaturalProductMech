@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-d3f6bef270
+label: Q6402A
+chemical_structure:
+  smiles: O=C(NC(C(NC1(C(OC(C(NC(CCCC(C)C)=O)C2=O)C)=O)CC1C)=O)C3=CC=C(O)C=C3)C(CC4=CNC5=C4C=C(O)C=C5)NC(C(CCC(O)=O)NC(C(CC6=CC=CC=C6)N2C)=O)=O
+  standard_inchi: InChI=1S/C50H61N7O12/c1-27(2)10-9-13-40(60)54-42-29(4)69-49(68)50(25-28(50)3)56-47(66)43(31-14-16-33(58)17-15-31)55-45(64)38(23-32-26-51-36-19-18-34(59)24-35(32)36)53-44(63)37(20-21-41(61)62)52-46(65)39(57(5)48(42)67)22-30-11-7-6-8-12-30/h6-8,11-12,14-19,24,26-29,37-39,42-43,51,58-59H,9-10,13,20-23,25H2,1-5H3,(H,52,65)(H,53,63)(H,54,60)(H,55,64)(H,56,66)(H,61,62)
+  standard_inchi_key: CAVGOLOVETXCFE-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002448
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Lipopeptide
+- Macrocyclic
+xrefs:
+- pubchem:153274358
+producer_organisms:
+- taxon_id: NCBITaxon:68280
+  taxon_label: Streptomyces violaceusniger
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002448
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32429436
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002448 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002448
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68280
+  organism_label: Streptomyces violaceusniger
+  evidence:
+  - reference: PMID:32429436
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002448 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LC535008.1
+  locus_from: 1
+  locus_to: 59505
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002448
+  source_label: Q6402A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-d3f6bef270
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

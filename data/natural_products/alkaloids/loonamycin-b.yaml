@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-c44315f3ee
+label: loonamycin B
+chemical_structure:
+  smiles: CO[C@H]1[C@@H](CO)O[C@@H](N2C3=C(C=CC=C3Cl)C3=C4C(=O)NC(=O)C4=C4C5=CC(O[C@@H]6C[C@@H](O)[C@@H](N(C)C)CO6)=C(O)C(Cl)=C5NC4=C32)[C@H](O)[C@H]1O
+  standard_inchi: InChI=1S/C34H34Cl2N4O11/c1-39(2)14-10-49-18(8-15(14)42)50-16-7-12-19-21-22(33(47)38-32(21)46)20-11-5-4-6-13(35)26(11)40(27(20)25(19)37-24(12)23(36)28(16)43)34-30(45)29(44)31(48-3)17(9-41)51-34/h4-7,14-15,17-18,29-31,34,37,41-45H,8-10H2,1-3H3,(H,38,46,47)/t14-,15+,17+,18+,29+,30+,31-,34+/m0/s1
+  standard_inchi_key: MESNVWVVXFZXAZ-OVUMEKFMSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002460
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA032310
+producer_organisms:
+- taxon_id: NCBITaxon:758803
+  taxon_label: Nocardiopsis flavescens
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002460
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32484694
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002460 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002460
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:758803
+  organism_label: Nocardiopsis flavescens
+  evidence:
+  - reference: PMID:32484694
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002460 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT371051.1
+  locus_from: 4913
+  locus_to: 40693
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002460
+  source_label: loonamycin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-c44315f3ee
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

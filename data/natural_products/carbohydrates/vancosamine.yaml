@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-49c2b5b8af
+label: vancosamine
+chemical_structure:
+  smiles: C[C@@H]([C@H]([C@](C)(CC=O)N)O)O
+  standard_inchi: InChI=1S/C7H15NO3/c1-5(10)6(11)7(2,8)3-4-9/h4-6,10-11H,3,8H2,1-2H3/t5-,6+,7-/m0/s1
+  standard_inchi_key: IJSNCWAAHIVVGJ-XVMARJQXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001817
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Aminosugars and aminoglycosides
+  class_results:
+  - Aminosugars
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1582798
+  taxon_label: Streptomyces sp. WAC2288
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001817
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:27746129
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001817 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001817
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1582798
+  organism_label: Streptomyces sp. WAC2288
+  evidence:
+  - reference: PMID:27746129
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001817 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KJ159186.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001817
+  source_label: vancosamine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-49c2b5b8af
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

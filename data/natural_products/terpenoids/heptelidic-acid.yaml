@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-f2f3051989
+label: heptelidic acid
+chemical_structure:
+  smiles: CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O
+  standard_inchi: InChI=1S/C15H20O5/c1-8(2)10-3-4-15(7-20-15)12-11(10)5-9(13(16)17)6-19-14(12)18/h5,8,10-12H,3-4,6-7H2,1-2H3,(H,16,17)
+  standard_inchi_key: JESMSCGUTIEROV-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001995
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Cadinane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:10016502
+producer_organisms:
+- taxon_id: NCBITaxon:510516
+  taxon_label: Aspergillus oryzae RIB40
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001995
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1080/09168451.2018.1549934
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001995 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001995
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:510516
+  organism_label: Aspergillus oryzae RIB40
+  evidence:
+  - reference: DOI:10.1080/09168451.2018.1549934
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001995 entry version 3; citation taken from the entry level
+  genome_accession: genbank:NC_036441.1
+  locus_from: 1039554
+  locus_to: 1067040
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001995
+  source_label: heptelidic acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f2f3051989
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

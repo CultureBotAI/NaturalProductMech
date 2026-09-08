@@ -1,0 +1,139 @@
+identifier: naturalproductmech:mibig-6a849fb574
+label: formycin A
+chemical_structure:
+  smiles: C1=NC2=C(NN=C2C(=N1)N)[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O
+  standard_inchi: InChI=1S/C10H13N5O4/c11-10-6-4(12-2-13-10)5(14-15-6)9-8(18)7(17)3(1-16)19-9/h2-3,7-9,16-18H,1H2,(H,14,15)(H2,11,12,13)/t3-,7-,8-,9+/m1/s1
+  standard_inchi_key: KBHMEHLJSZMEMI-KSYZLYKTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002282
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Pseudoalkaloids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:447199
+producer_organisms:
+- taxon_id: NCBITaxon:212423
+  taxon_label: Streptomyces kaniharaensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002282
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: DOI:10.1016/j.bmc.2022.116613
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002282 entry version 2; citation taken from the compound bioactivity
+      level
+- taxon_id: NCBITaxon:1311815
+  taxon_label: Nocardia interforma ATCC 21072
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002039
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1016/j.bmc.2022.116613
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002039 entry version 3; citation taken from the compound bioactivity
+      level
+- taxon_id: NCBITaxon:212423
+  taxon_label: Streptomyces kaniharaensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002040
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1016/j.bmc.2022.116613
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002040 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002282
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:212423
+  organism_label: Streptomyces kaniharaensis
+  evidence:
+  - reference: DOI:10.1016/j.bmc.2022.116613
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002282 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:WBOF01000001.1
+  locus_from: 694601
+  locus_to: 730388
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+- accession: mibig:BGC0002039
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1311815
+  organism_label: Nocardia interforma ATCC 21072
+  evidence:
+  - reference: DOI:10.1016/j.bmc.2022.116613
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002039 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KY682079.1
+  locus_from: 1
+  locus_to: 30309
+  bgc_class:
+  - OTHER
+- accession: mibig:BGC0002040
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:212423
+  organism_label: Streptomyces kaniharaensis
+  evidence:
+  - reference: DOI:10.1016/j.bmc.2022.116613
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002040 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KY705052.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002282
+  source_label: formycin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-6a849fb574
+- source: MIBIG
+  source_id: BGC0002039
+  source_label: formycin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-a9a1cbcd7f
+- source: MIBIG
+  source_id: BGC0002040
+  source_label: formycin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-05b765e7b0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002039, BGC0002040,
+    BGC0002282. Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

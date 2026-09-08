@@ -1,0 +1,76 @@
+identifier: naturalproductmech:mibig-c95b92b3f0
+label: desmamide B
+chemical_structure:
+  smiles: CC(C)C[C@@H]1NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H]2CCCN2C(=O)CNC(=O)[C@@H](CCC(=O)N)NC(=O)C(C)C(CC(O)CCCCC)OC(=O)[C@@H]2CCCN2C1=O)C(C)C)Cc1ccc(cc1)O[C@H]1OC[C@@H](OC(C)=O)[C@H](O)[C@H]1O)[C@@H](C)O
+  standard_inchi: InChI=1S/C68H107N11O22/c1-11-12-13-16-41(83)30-50-37(8)58(88)71-43(23-24-52(69)84)59(89)70-31-53(85)78-25-14-17-48(78)63(93)76-54(36(6)7)64(94)73-45(29-40-19-21-42(22-20-40)100-68-57(87)56(86)51(33-98-68)99-39(10)82)60(90)75-47(32-80)62(92)72-44(27-34(2)3)61(91)77-55(38(9)81)65(95)74-46(28-35(4)5)66(96)79-26-15-18-49(79)67(97)101-50/h19-22,34-38,41,43-51,54-57,68,80-81,83,86-87H,11-18,23-33H2,1-10H3,(H2,69,84)(H,70,89)(H,71,88)(H,72,92)(H,73,94)(H,74,95)(H,75,90)(H,76,93)(H,77,91)/t37?,38-,41?,43-,44+,45+,46+,47+,48+,49+,50?,51-,54+,55+,56+,57-,68-/m1/s1
+  standard_inchi_key: HOBULLUHJKDCFY-YBOMPZLVSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002625
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Glycopeptidolipid
+xrefs:
+- cyanometdb:CyanoMetDB_2244
+- pubchem:168010288
+producer_organisms:
+- taxon_id: NCBITaxon:1828758
+  taxon_label: Desmonostoc muscorum LEGE 12446
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002625
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:35793792
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002625 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002625
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1828758
+  organism_label: Desmonostoc muscorum LEGE 12446
+  evidence:
+  - reference: PMID:35793792
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002625 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:JADEXS020000001.1
+  locus_from: 7046147
+  locus_to: 7109291
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002625
+  source_label: desmamide B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c95b92b3f0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

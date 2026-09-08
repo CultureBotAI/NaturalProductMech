@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-6875fb47e1
+label: Azodyrecin A
+chemical_structure:
+  smiles: C[C@@H](C(=O)OC)N=[N+](/C=C\CCCCCCCCCC(C)C)[O-]
+  standard_inchi: InChI=1S/C18H34N2O3/c1-16(2)14-12-10-8-6-5-7-9-11-13-15-20(22)19-17(3)18(21)23-4/h13,15-17H,5-12,14H2,1-4H3/b15-13-,20-19?/t17-/m0/s1
+  standard_inchi_key: SLGRVNFOKARIBY-FMLLKXRZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002805
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Pseudoalkaloids
+  class_results:
+  - Azo and Azoxy alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:156580990
+producer_organisms:
+- taxon_id: NCBITaxon:68239
+  taxon_label: Streptomyces mirabilis strain P8-A
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002805
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1101/2023.10.13.562208
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002805 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002805
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68239
+  organism_label: Streptomyces mirabilis strain P8-A
+  evidence:
+  - reference: DOI:10.1101/2023.10.13.562208
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002805 entry version 2; citation taken from the entry level
+  genome_accession: genbank:JARAKF010000001.1
+  locus_from: 1937858
+  locus_to: 1978761
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002805
+  source_label: Azodyrecin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-6875fb47e1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

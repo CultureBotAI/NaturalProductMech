@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-45384bf4f0
+label: aeruginosin 98-A
+chemical_structure:
+  smiles: '[H]C12CC(N(C(=O)[C@H](NC(=O)C(O)CC3=CC(Cl)=C(O)C=C3)[C@H](C)CC)C1([H])CC(CC2)OS(O)(=O)=O)C(=O)NCCCCNC(N)=N'
+  standard_inchi: InChI=1S/C29H45ClN6O9S/c1-3-16(2)25(35-27(40)24(38)13-17-6-9-23(37)20(30)12-17)28(41)36-21-15-19(45-46(42,43)44)8-7-18(21)14-22(36)26(39)33-10-4-5-11-34-29(31)32/h6,9,12,16,18-19,21-22,24-25,37-38H,3-5,7-8,10-11,13-15H2,1-2H3,(H,33,39)(H,35,40)(H4,31,32,34)(H,42,43,44)/t16-,18?,19?,21?,22?,24?,25-/m1/s1
+  standard_inchi_key: LNRXFFGKAKWQCV-DJKRDFIDSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000298
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Aeruginosins
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA017786
+producer_organisms:
+- taxon_id: NCBITaxon:267869
+  taxon_label: Microcystis aeruginosa NIES-98
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000298
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:20863139
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000298 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000298
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:267869
+  organism_label: Microcystis aeruginosa NIES-98
+  evidence:
+  - reference: PMID:20863139
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000298 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FJ609416.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000298
+  source_label: aeruginosin 98-A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-45384bf4f0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

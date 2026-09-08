@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-05420ecdad
+label: serratiochelin C
+chemical_structure:
+  smiles: C[C@H]([C@@H](C(=O)NCCCNC(=O)C1=C(C(=CC=C1)O)O)N)OC(=O)C2=C(C(=CC=C2)O)O
+  standard_inchi: InChI=1S/C21H25N3O8/c1-11(32-21(31)13-6-3-8-15(26)18(13)28)16(22)20(30)24-10-4-9-23-19(29)12-5-2-7-14(25)17(12)27/h2-3,5-8,11,16,25-28H,4,9-10,22H2,1H3,(H,23,29)(H,24,30)/t11-,16+/m1/s1
+  standard_inchi_key: XMOBHOCBJPHBKD-BZNIZROVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002496
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Polyamines
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA005944
+producer_organisms:
+- taxon_id: NCBITaxon:82996
+  taxon_label: Serratia plymuthica
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002496
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:22830960
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002496 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002496
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:82996
+  organism_label: Serratia plymuthica
+  evidence:
+  - reference: PMID:22830960
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002496 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP007439.1
+  locus_from: 1526193
+  locus_to: 1541283
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002496
+  source_label: serratiochelin C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-05420ecdad
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

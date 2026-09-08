@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-488ec25b76
+label: itaconic acid
+chemical_structure:
+  smiles: C=C(CC(=O)O)C(=O)O
+  standard_inchi: InChI=1S/C5H6O4/c1-3(5(8)9)2-4(6)7/h1-2H2,(H,6,7)(H,8,9)
+  standard_inchi_key: LVHBHZANLOWSRM-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001286
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty Acids and Conjugates
+  class_results:
+  - Dicarboxylic acids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:811
+producer_organisms:
+- taxon_id: NCBITaxon:5270
+  taxon_label: Ustilago maydis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001286
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1038/s41598-021-97352-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001286 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001286
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5270
+  organism_label: Ustilago maydis
+  evidence:
+  - reference: DOI:10.1038/s41598-021-97352-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001286 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KT852988.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001286
+  source_label: itaconic acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-488ec25b76
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

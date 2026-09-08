@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-fcc59363e7
+label: welwitindolinone A isonitrile
+chemical_structure:
+  smiles: CC1(C)[C@H]2C[C@@H](Cl)[C@@](C)(C=C)C([N+]#[C-])=C2[C@]11C(=O)NC2=CC=CC=C12
+  standard_inchi: InChI=1S/C21H21ClN2O/c1-6-20(4)15(22)11-13-16(17(20)23-5)21(19(13,2)3)12-9-7-8-10-14(12)24-18(21)25/h6-10,13,15H,1,11H2,2-4H3,(H,24,25)/t13-,15+,20+,21+/m0/s1
+  standard_inchi_key: XLRFBPJWPHKLJV-OKKVMHGVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000668
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Hapalindole alkaloids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+- OTHER
+xrefs:
+- npatlas:NPA014803
+- cyanometdb:CyanoMetDB_1563
+producer_organisms:
+- taxon_id: NCBITaxon:1433842
+  taxon_label: Hapalosiphon welwitschii UTEX B 1830
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000668
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1021/jo00226a009
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000668 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000668
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1433842
+  organism_label: Hapalosiphon welwitschii UTEX B 1830
+  evidence:
+  - reference: DOI:10.1021/jo00226a009
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000668 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KF811479.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000668
+  source_label: welwitindolinone A isonitrile
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fcc59363e7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

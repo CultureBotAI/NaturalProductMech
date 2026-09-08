@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-d6bb809994
+label: diazaquinomycin H
+chemical_structure:
+  smiles: CC1=CC(=O)NC2=C1C(=O)C3=C(C2=O)NC(=O)C=C3CCCCCCC(C)C
+  standard_inchi: InChI=1S/C22H26N2O4/c1-12(2)8-6-4-5-7-9-14-11-16(26)24-20-18(14)21(27)17-13(3)10-15(25)23-19(17)22(20)28/h10-12H,4-9H2,1-3H3,(H,23,25)(H,24,26)
+  standard_inchi_key: ZMMKQTMMGUIIJM-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001848
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:134815171
+producer_organisms:
+- taxon_id: NCBITaxon:2201999
+  taxon_label: Micromonospora sp. B006
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001848
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1021/acs.jnatprod.8b00394
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001848 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001848
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2201999
+  organism_label: Micromonospora sp. B006
+  evidence:
+  - reference: DOI:10.1021/acs.jnatprod.8b00394
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001848 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP030865.1
+  locus_from: 3038865
+  locus_to: 3097062
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001848
+  source_label: diazaquinomycin H
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-d6bb809994
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

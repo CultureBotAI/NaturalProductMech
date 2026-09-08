@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-7539d4c93b
+label: thailandamide
+chemical_structure:
+  smiles: COC(C(C)C(O)=O)C(\C)=C\C=C\C=C(/C)\C=C\CC(O)CC(=O)\C=C\C=C(/C)\C=C\C(C)NC(=O)C(C)C\C=C\CC(O)CC1=CC=C(O)C=C1
+  standard_inchi: InChI=1S/C43H59NO8/c1-30(14-8-9-17-32(3)41(52-7)35(6)43(50)51)15-12-20-39(47)29-40(48)21-13-16-31(2)22-23-34(5)44-42(49)33(4)18-10-11-19-38(46)28-36-24-26-37(45)27-25-36/h8-17,21-27,33-35,38-39,41,45-47H,18-20,28-29H2,1-7H3,(H,44,49)(H,50,51)/b9-8+,11-10+,15-12+,21-13+,23-22+,30-14+,31-16+,32-17+
+  standard_inchi_key: OLQJTQUNKZJRHG-SIMXWEICSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000186
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA08975
+producer_organisms:
+- taxon_id: NCBITaxon:271848
+  taxon_label: Burkholderia thailandensis E264
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000186
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:18223641
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000186 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000186
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:271848
+  organism_label: Burkholderia thailandensis E264
+  evidence:
+  - reference: PMID:18223641
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000186 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000085.1
+  locus_from: 1950416
+  locus_to: 2036975
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000186
+  source_label: thailandamide
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7539d4c93b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

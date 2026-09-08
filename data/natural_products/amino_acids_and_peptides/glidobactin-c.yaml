@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-35224555cf
+label: glidobactin C
+chemical_structure:
+  smiles: CCCCCCCCC/C=C/C=C/C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@H]1C[C@H](CCNC(=O)/C=C\[C@@H](NC1=O)C)O
+  standard_inchi: InChI=1S/C29H48N4O6/c1-4-5-6-7-8-9-10-11-12-13-14-15-26(37)33-27(22(3)34)29(39)32-24-20-23(35)18-19-30-25(36)17-16-21(2)31-28(24)38/h12-17,21-24,27,34-35H,4-11,18-20H2,1-3H3,(H,30,36)(H,31,38)(H,32,39)(H,33,37)/b13-12+,15-14+,17-16-/t21-,22+,23-,24-,27-/m0/s1
+  standard_inchi_key: UHXDSKADPILIPT-OHIHYABUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000997
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:413882
+  taxon_label: '[Polyangium] brachysporum'
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000997
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17564599
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000997 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000997
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:413882
+  organism_label: '[Polyangium] brachysporum'
+  evidence:
+  - reference: PMID:17564599
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000997 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AM412319.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000997
+  source_label: glidobactin C
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-35224555cf
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

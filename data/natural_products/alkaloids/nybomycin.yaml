@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-a67b9d4402
+label: nybomycin
+chemical_structure:
+  smiles: CC1=CC(=O)N2COC3=C2C1=CC4=C3N(C(=O)C=C4CO)C
+  standard_inchi: InChI=1S/C16H14N2O4/c1-8-3-13(21)18-7-22-16-14-11(5-10(8)15(16)18)9(6-19)4-12(20)17(14)2/h3-5,19H,6-7H2,1-2H3
+  standard_inchi_key: HKMUGCUFXWTNSP-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001965
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  - Anthranilic acid alkaloids
+  class_results:
+  - Quinoline alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:169159
+producer_organisms:
+- taxon_id: NCBITaxon:337066
+  taxon_label: Streptomyces albus subsp. chlorinus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001965
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:30400361
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001965 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001965
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:337066
+  organism_label: Streptomyces albus subsp. chlorinus
+  evidence:
+  - reference: PMID:30400361
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001965 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MH924838.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001965
+  source_label: nybomycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-a67b9d4402
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

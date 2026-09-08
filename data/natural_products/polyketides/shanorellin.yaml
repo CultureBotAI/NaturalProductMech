@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-c953214120
+label: shanorellin
+chemical_structure:
+  smiles: CC1=C(C(=O)C(=O)C(=C1O)C)CO
+  standard_inchi: InChI=1S/C9H10O4/c1-4-6(3-10)9(13)8(12)5(2)7(4)11/h10-11H,3H2,1-2H3
+  standard_inchi_key: NIZXGIRUXUPPCW-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001219
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Benzoquinones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:89778
+producer_organisms:
+- taxon_id: NCBITaxon:306901
+  taxon_label: Chaetomium globosum CBS 148.51
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001219
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1039/C4MD00352G
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001219 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001219
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:306901
+  organism_label: Chaetomium globosum CBS 148.51
+  evidence:
+  - reference: DOI:10.1039/C4MD00352G
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001219 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CH408034.1
+  locus_from: 1404647
+  locus_to: 1428146
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001219
+  source_label: shanorellin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-c953214120
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

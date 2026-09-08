@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-92fcd9adaf
+label: FR-900520
+chemical_structure:
+  smiles: '[H][C@]12O[C@](O)([C@H](C)C[C@@H]1OC)C(=O)C(=O)N1CCCC[C@@]1([H])C(=O)O[C@@H]([C@H](C)[C@@H](O)CC(=O)[C@H](CC)\C=C(C)/C[C@H](C)C[C@@H]2OC)C(\C)=C\[C@@H]1CC[C@@H](O)C(C1)OC'
+  standard_inchi: InChI=1S/C43H69NO12/c1-10-30-18-24(2)17-25(3)19-36(53-8)39-37(54-9)21-27(5)43(51,56-39)40(48)41(49)44-16-12-11-13-31(44)42(50)55-38(28(6)33(46)23-34(30)47)26(4)20-29-14-15-32(45)35(22-29)52-7/h18,20,25,27-33,35-39,45-46,51H,10-17,19,21-23H2,1-9H3/b24-18-,26-20+/t25-,27+,28+,29-,30+,31-,32+,33-,35?,36-,37-,38+,39+,43+/m0/s1
+  standard_inchi_key: ZDQSOHOQTUFQEM-YIFKQLMYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000994
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ascomycins and Rapamycins
+  is_glycoside: true
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA03615
+producer_organisms:
+- taxon_id: NCBITaxon:132248
+  taxon_label: Streptomyces hygroscopicus subsp. ascomyceticus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000994
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:10863099
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000994 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000994
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:132248
+  organism_label: Streptomyces hygroscopicus subsp. ascomyceticus
+  evidence:
+  - reference: PMID:10863099
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000994 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF235504.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000994
+  source_label: FR-900520
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-92fcd9adaf
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

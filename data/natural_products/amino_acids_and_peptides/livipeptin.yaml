@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-63bc921e1a
+label: Livipeptin
+chemical_structure:
+  smiles: CC(NC(C(NC(CCCNC(N)=N)C=O)=O)CC1=CC=CC=C1)=O
+  standard_inchi: InChI=1S/C17H25N5O3/c1-12(24)21-15(10-13-6-3-2-4-7-13)16(25)22-14(11-23)8-5-9-20-17(18)19/h2-4,6-7,11,14-15H,5,8-10H2,1H3,(H,21,24)(H,22,25)(H4,18,19,20)
+  standard_inchi_key: ZXZKRYZJMLNJBU-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001168
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Aromatic amino acid/simple benzoic acid
+producer_organisms:
+- taxon_id: NCBITaxon:1200984
+  taxon_label: Streptomyces lividans 1326
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001168
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression|Gene expression
+    correlated with compound production.'
+  evidence:
+  - reference: DOI:10.1093/jimb/kuad021
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001168 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001168
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1200984
+  organism_label: Streptomyces lividans 1326
+  evidence:
+  - reference: DOI:10.1093/jimb/kuad021
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001168 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CM001889.1
+  locus_from: 891947
+  locus_to: 896528
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001168
+  source_label: Livipeptin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-63bc921e1a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

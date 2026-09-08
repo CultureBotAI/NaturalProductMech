@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-690319db5c
+label: fabclavine-polyamine
+chemical_structure:
+  smiles: NCCC(O)CCCCCCCC(N)CCCCCCCC(N)CCCCCCCC(N)CCCCCCCC(C)N
+  standard_inchi: InChI=1S/C36H79N5O/c1-32(38)22-14-6-2-7-15-23-33(39)24-16-8-3-9-17-25-34(40)26-18-10-4-11-19-27-35(41)28-20-12-5-13-21-29-36(42)30-31-37/h32-36,42H,2-31,37-41H2,1H3
+  standard_inchi_key: NBXHNLKXWYUARE-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001872
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Sphingolipids
+  class_results:
+  - Sphingoid bases
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:406818
+  taxon_label: Xenorhabdus bovienii SS-2004
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001872
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:30610410
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001872 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001872
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:406818
+  organism_label: Xenorhabdus bovienii SS-2004
+  evidence:
+  - reference: PMID:30610410
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001872 entry version 3; citation taken from the entry level
+  genome_accession: genbank:FN667741.1
+  locus_from: 2895506
+  locus_to: 2915996
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001872
+  source_label: fabclavine-polyamine
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-690319db5c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

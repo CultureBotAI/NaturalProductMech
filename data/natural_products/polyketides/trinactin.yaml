@@ -1,0 +1,99 @@
+identifier: naturalproductmech:mibig-b9a7d2946a
+label: trinactin
+chemical_structure:
+  smiles: CC[C@@H]1C[C@H]2CC[C@H](O2)[C@@H](C(=O)O[C@H](C[C@@H]3CC[C@@H](O3)[C@H](C(=O)O[C@@H](C[C@H]4CC[C@H](O4)[C@@H](C(=O)O[C@H](C[C@@H]5CC[C@@H](O5)[C@H](C(=O)O1)C)CC)C)CC)C)C)C
+  standard_inchi: InChI=1S/C43H70O12/c1-9-29-21-33-13-17-36(50-33)25(5)40(44)48-24(4)20-32-12-16-37(49-32)26(6)41(45)53-30(10-2)22-34-14-18-39(51-34)28(8)43(47)55-31(11-3)23-35-15-19-38(52-35)27(7)42(46)54-29/h24-39H,9-23H2,1-8H3/t24-,25-,26+,27+,28-,29+,30+,31-,32-,33+,34+,35-,36-,37+,38+,39-/m0/s1
+  standard_inchi_key: DFQMKYUSAALDDY-MQEBUAKTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000243
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polyethers
+  class_results:
+  - Macrotetrolides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:169021
+producer_organisms:
+- taxon_id: NCBITaxon:67263
+  taxon_label: Streptomyces griseus subsp. griseus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000243
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:10858335
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000243 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:67263
+  taxon_label: Streptomyces griseus subsp. griseus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000244
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:10858335
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000244 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000243
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67263
+  organism_label: Streptomyces griseus subsp. griseus
+  evidence:
+  - reference: PMID:10858335
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000243 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AF263011.1
+  bgc_class:
+  - PKS
+- accession: mibig:BGC0000244
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67263
+  organism_label: Streptomyces griseus subsp. griseus
+  evidence:
+  - reference: PMID:10858335
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000244 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AF263012.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000243
+  source_label: trinactin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-b9a7d2946a
+- source: MIBIG
+  source_id: BGC0000244
+  source_label: trinactin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-2448c10705
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000243, BGC0000244.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

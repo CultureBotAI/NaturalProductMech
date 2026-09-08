@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-617f820d7d
+label: puwainaphycin B
+chemical_structure:
+  smiles: CCCCC(=O)CCCCCCCCC[C@H](C)[C@@H]1[C@H](C(=O)N[C@H](C(=O)N/C(=C/C)/C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)NCC(=O)N[C@H](C(=O)N([C@H](C(=O)N2CCC[C@H]2C(=O)N1)CC(=O)N)C)[C@H](C)OC)CCC(=O)N)C(C)C)[C@H](C)O)C(C)C)O
+  standard_inchi: InChI=1S/C59H100N12O16/c1-12-14-24-37(73)25-21-19-17-15-16-18-20-23-34(7)47-50(77)57(84)67-46(33(5)6)54(81)63-38(13-2)52(79)69-48(35(8)72)56(83)66-45(32(3)4)55(82)64-39(27-28-42(60)74)51(78)62-31-44(76)65-49(36(9)87-11)59(86)70(10)41(30-43(61)75)58(85)71-29-22-26-40(71)53(80)68-47/h13,32-36,39-41,45-50,72,77H,12,14-31H2,1-11H3,(H2,60,74)(H2,61,75)(H,62,78)(H,63,81)(H,64,82)(H,65,76)(H,66,83)(H,67,84)(H,68,80)(H,69,79)/b38-13+/t34-,35-,36-,39-,40-,41-,45-,46-,47+,48-,49-,50+/m0/s1
+  standard_inchi_key: HPIOIUSFXDCSLD-KEVLTHRLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001125
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:72193952
+producer_organisms:
+- taxon_id: NCBITaxon:1382618
+  taxon_label: Cylindrospermum alatosporum CCALA 988
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001125
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25369527
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001125 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001125
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1382618
+  organism_label: Cylindrospermum alatosporum CCALA 988
+  evidence:
+  - reference: PMID:25369527
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001125 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KM078884.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001125
+  source_label: puwainaphycin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-617f820d7d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-ab04989a59
+label: GE37468
+chemical_structure:
+  smiles: CC1CC(O)N2C1C1=NC(=CS1)C1=NC(=CS1)C1=NC(=CC=C1C1=NC(=C(C)O1)C(=O)NC(CC(N)=O)C1=NC(=CS1)C(=O)NC(CC1=CC=CC=C1)C1=NC(CS1)C(=O)NC(CC1=CC=C(O)C=C1)C2=O)C1=NC(=CS1)C(=O)NC(=C)C(=O)NC(=C)C(O)=O
+  standard_inchi: InChI=1S/C59H52N14O12S5/c1-25-16-43(76)73-46(25)57-71-41(24-90-57)56-67-37(20-86-56)45-32(14-15-33(63-45)53-68-38(21-87-53)48(78)61-26(2)47(77)62-27(3)59(83)84)52-72-44(28(4)85-52)51(81)65-35(19-42(60)75)55-70-39(22-89-55)49(79)64-34(17-29-8-6-5-7-9-29)54-69-40(23-88-54)50(80)66-36(58(73)82)18-30-10-12-31(74)13-11-30/h5-15,20-22,24-25,34-36,40,43,46,74,76H,2-3,16-19,23H2,1,4H3,(H2,60,75)(H,61,78)(H,62,77)(H,64,79)(H,65,81)(H,66,80)(H,83,84)
+  standard_inchi_key: AABZZWPMCAZHFC-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000605
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA01856
+producer_organisms:
+- taxon_id: NCBITaxon:1073998
+  taxon_label: Streptomyces sp. ATCC 55365
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000605
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:21788474
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000605 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000605
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1073998
+  organism_label: Streptomyces sp. ATCC 55365
+  evidence:
+  - reference: PMID:21788474
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000605 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JN052143.1
+  locus_from: 7234
+  locus_to: 24412
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000605
+  source_label: GE37468
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ab04989a59
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

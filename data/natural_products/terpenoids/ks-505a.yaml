@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-90363bf123
+label: KS-505a
+chemical_structure:
+  smiles: C[C@@H]1CC2[C@@](CCC3[C@@]2([C@@H](CC([C@]3(C)C(=O)O)OC4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)O)O)O)OC)C)C)(C5[C@]1(C6CC[C@]7(C([C@@]6(CC5)C)CC[C@@]8(C7CC[C@]9(C8CC1=C(O9)C=CC2=C1C(=O)OC2(CCC(=O)OC)O)CO)C)CO)C)C
+  standard_inchi: InChI=1S/C61H88O17/c1-30-25-40-54(4,21-15-39-57(40,7)31(2)26-42(58(39,8)52(70)71)75-51-48(74-10)46(66)45(65)47(76-51)49(67)68)35-13-19-53(3)36(56(30,35)6)16-22-59(28-62)37(53)14-20-55(5)38(59)17-23-60(29-63)41(55)27-32-34(77-60)12-11-33-44(32)50(69)78-61(33,72)24-18-43(64)73-9/h11-12,30-31,35-42,45-48,51,62-63,65-66,72H,13-29H2,1-10H3,(H,67,68)(H,70,71)/t30-,31-,35?,36?,37?,38?,39?,40?,41?,42?,45+,46+,47+,48-,51?,53-,54+,55-,56+,57+,58-,59-,60-,61?/m1/s1
+  standard_inchi_key: DBIAGVXGCNWASW-JMNNKWMBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000651
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Triterpenoids
+  class_results:
+  - Friedelane triterpenoids
+  is_glycoside: true
+bgc_class:
+- TERPENE
+compound_classes:
+- Meroterpenoid
+xrefs:
+- npatlas:NPA024710
+- pubchem:3081782
+producer_organisms:
+- taxon_id: NCBITaxon:67274
+  taxon_label: Streptomyces argenteolus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000651
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1271/bbb.70477
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000651 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000651
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67274
+  organism_label: Streptomyces argenteolus
+  evidence:
+  - reference: DOI:10.1271/bbb.70477
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000651 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AB307968.1
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000651
+  source_label: KS-505a
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-90363bf123
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-b1e00d944b
+label: malyngamide I
+chemical_structure:
+  smiles: CCCCCCC[C@@H](C/C=C/CCC(=O)N(C)C/C(=C\Cl)/[C@]12[C@H](O1)C[C@@H]([C@@H](C2=O)C)O)OC
+  standard_inchi: InChI=1S/C26H42ClNO5/c1-5-6-7-8-10-13-21(32-4)14-11-9-12-15-24(30)28(3)18-20(17-27)26-23(33-26)16-22(29)19(2)25(26)31/h9,11,17,19,21-23,29H,5-8,10,12-16,18H2,1-4H3/b11-9+,20-17+/t19-,21-,22-,23+,26+/m0/s1
+  standard_inchi_key: ORRFIXSGNXBETO-YCAZZDSTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001971
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:132568072
+producer_organisms:
+- taxon_id: NCBITaxon:1458930
+  taxon_label: Okeania hirsuta
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001971
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:30444349
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001971 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001971
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1458930
+  organism_label: Okeania hirsuta
+  evidence:
+  - reference: PMID:30444349
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001971 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MK142793.1
+  locus_from: 283
+  locus_to: 62128
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001971
+  source_label: malyngamide I
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b1e00d944b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-8cfa676ff6
+label: Roseophilin
+chemical_structure:
+  smiles: CC(C)[C@@H]1[C@H]2CCCCCCCCC3=NC(=C2C4=C(C=C(O4)C5=C(C=CN5)Cl)OC)C1=C3
+  standard_inchi: InChI=1S/C27H33ClN2O2/c1-16(2)23-18-11-9-7-5-4-6-8-10-17-14-19(23)25(30-17)24(18)27-22(31-3)15-21(32-27)26-20(28)12-13-29-26/h12-16,18,23,29H,4-11H2,1-3H3/t18-,23-/m1/s1
+  standard_inchi_key: AKRWVQHAEBBOTI-WZONZLPQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000257
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Proline alkaloids
+  class_results:
+  - Prodigiosins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA002965
+producer_organisms:
+- taxon_id: NCBITaxon:45398
+  taxon_label: Streptomyces griseoviridis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000257
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(00)79061-7
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000257 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000257
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:45398
+  organism_label: Streptomyces griseoviridis
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(00)79061-7
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000257 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AB469822.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000257
+  source_label: Roseophilin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-8cfa676ff6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,107 @@
+identifier: naturalproductmech:mibig-3cd414889d
+label: BE-43547A2
+chemical_structure:
+  smiles: O=C(CNC([C@](O)(C)C1=O)=O)NC(/C=C/C(N(C)CC(O[C@@H](CCCCCCCCCCCCC)[C@@H]1C)=O)=O)=C
+  standard_inchi: InChI=1S/C30H49N3O7/c1-6-7-8-9-10-11-12-13-14-15-16-17-24-23(3)28(37)30(4,39)29(38)31-20-25(34)32-22(2)18-19-26(35)33(5)21-27(36)40-24/h18-19,23-24,39H,2,6-17,20-21H2,1,3-5H3,(H,31,38)(H,32,34)/b19-18+/t23-,24-,30-/m0/s1
+  standard_inchi_key: JRGSONPJAHDIGK-WBPJKTCNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001330
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1661387
+  taxon_label: Micromonospora sp. RV43
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001330
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26637117
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001330 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1169167
+  taxon_label: Salinispora arenicola CNR107
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001331
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:28221346
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001331 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001330
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1661387
+  organism_label: Micromonospora sp. RV43
+  evidence:
+  - reference: PMID:26637117
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001330 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_LEKG01000004.1
+  locus_from: 20144
+  locus_to: 63730
+  bgc_class:
+  - NRPS
+  - PKS
+- accession: mibig:BGC0001331
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1169167
+  organism_label: Salinispora arenicola CNR107
+  evidence:
+  - reference: PMID:28221346
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001331 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_KB900339.1
+  locus_from: 10670
+  locus_to: 45645
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001330
+  source_label: BE-43547A2
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3cd414889d
+- source: MIBIG
+  source_id: BGC0001331
+  source_label: BE-43547A2
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0ad5ef4b6c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001330, BGC0001331.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

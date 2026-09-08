@@ -1,0 +1,112 @@
+identifier: naturalproductmech:mibig-02d70de917
+label: vicenistatin
+chemical_structure:
+  smiles: C[C@@H]1[C@H]([C@H](C[C@@H](O1)OC2C/C=C(/C/C(=C/C=C/CCC(CNC(=O)/C=C/C=C/C2C)C)/C)\C)O)NC
+  standard_inchi: InChI=1S/C30H48N2O4/c1-21-12-8-7-9-13-23(3)20-32-28(34)15-11-10-14-24(4)27(17-16-22(2)18-21)36-29-19-26(33)30(31-6)25(5)35-29/h7-8,10-12,14-16,23-27,29-31,33H,9,13,17-20H2,1-6H3,(H,32,34)/b8-7+,14-10+,15-11+,21-12+,22-16+/t23?,24?,25-,26+,27?,29+,30-/m1/s1
+  standard_inchi_key: FINGADBUNZWVLV-VVAVUVFHSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002634
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactams
+  is_glycoside: true
+bgc_class:
+- PKS
+- NRPS
+- OTHER
+xrefs:
+- npatlas:NPA017222
+- pubchem:6438888
+producer_organisms:
+- taxon_id: NCBITaxon:66428
+  taxon_label: Streptomyces parvus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002634
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression|Knock-out studies.'
+  evidence:
+  - reference: PMID:35042332
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002634 entry version 2; citation taken from the entry level
+- taxon_id: NCBITaxon:1944
+  taxon_label: Streptomyces halstedii
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000167
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:15112997
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000167 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002634
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:66428
+  organism_label: Streptomyces parvus
+  evidence:
+  - reference: PMID:35042332
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002634 entry version 2; citation taken from the entry level
+  genome_accession: genbank:OL310481.1
+  locus_from: 1
+  locus_to: 67619
+  bgc_class:
+  - PKS
+  - NRPS
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  - Knock-out studies
+- accession: mibig:BGC0000167
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1944
+  organism_label: Streptomyces halstedii
+  evidence:
+  - reference: PMID:15112997
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000167 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB086653.1
+  bgc_class:
+  - PKS
+  - NRPS
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002634
+  source_label: vicenistatin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-02d70de917
+- source: MIBIG
+  source_id: BGC0000167
+  source_label: vicenistatin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-92b1c145c4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000167, BGC0002634.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

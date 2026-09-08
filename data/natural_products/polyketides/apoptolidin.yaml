@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-a8b1347a41
+label: apoptolidin
+chemical_structure:
+  smiles: COC[C@@H](C[C@H]1O[C@@](O)([C@H](O)[C@@H]2C[C@H](OC)[C@@H](O)CC\C=C(/C)\C=C\[C@@H](O[C@@H]3O[C@@H](C)[C@H](OC)[C@@H](O)[C@@H]3O)[C@H](C)\C=C(/C)\C=C(/C)\C=C(C)\C(=O)O2)[C@H](C)[C@@H](O)[C@H]1C)O[C@H]1C[C@](C)(O)[C@@H](O[C@H]2C[C@@H](OC)[C@H](O)[C@@H](C)O2)[C@H](C)O1
+  standard_inchi: InChI=1S/C58H96O21/c1-29-17-16-18-40(59)43(69-13)25-45(76-55(65)33(5)23-31(3)21-30(2)22-32(4)41(20-19-29)77-56-51(63)50(62)52(71-15)37(9)74-56)53(64)58(67)35(7)48(60)34(6)42(79-58)24-39(28-68-12)75-47-27-57(11,66)54(38(10)73-47)78-46-26-44(70-14)49(61)36(8)72-46/h17,19-23,32,34-54,56,59-64,66-67H,16,18,24-28H2,1-15H3/b20-19+,29-17+,30-22+,31-21+,33-23+/t32-,34+,35-,36-,37+,38+,39-,40+,41-,42-,43+,44-,45+,46+,47+,48+,49-,50+,51+,52+,53-,54+,56+,57+,58-/m1/s1
+  standard_inchi_key: WILMROCKORZEMQ-AIUMZUNXSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000021
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactones
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA013146
+- pubchem:44403674
+producer_organisms:
+- taxon_id: NCBITaxon:2914159
+  taxon_label: Nocardiopsis sp. FU 40
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000021
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:21869849
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000021 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000021
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2914159
+  organism_label: Nocardiopsis sp. FU 40
+  evidence:
+  - reference: PMID:21869849
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000021 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JF819834.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000021
+  source_label: apoptolidin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a8b1347a41
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

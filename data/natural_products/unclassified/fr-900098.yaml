@@ -1,0 +1,61 @@
+identifier: naturalproductmech:mibig-0245ed9503
+label: FR-900098
+chemical_structure:
+  smiles: CC(=O)N(O)CCCP(O)(O)=O
+  standard_inchi: InChI=1S/C5H12NO5P/c1-5(7)6(8)3-2-4-12(9,10)11/h8H,2-4H2,1H3,(H2,9,10,11)
+  standard_inchi_key: PKMNDDZSIHLLLI-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000904
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA07537
+producer_organisms:
+- taxon_id: NCBITaxon:359131
+  taxon_label: Streptomyces rubellomurinus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000904
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:18721747
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000904 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000904
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:359131
+  organism_label: Streptomyces rubellomurinus
+  evidence:
+  - reference: PMID:18721747
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000904 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ267750.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000904
+  source_label: FR-900098
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0245ed9503
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

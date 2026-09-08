@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-077a91ddc8
+label: locillomycin
+chemical_structure:
+  smiles: O=C(N[C@@H]1C(N[C@@H](C(N[C@H](C(NCC(N[C@H](C(N[C@H](C(NCC(N[C@H](C(N[C@H](C(OC1C)=O)C(C)C)=O)Cc2ccc(O)cc2)=O)=O)CC(O)=O)=O)CC(N)=O)=O)=O)CC(O)=O)=O)CCC(N)=O)=O)CCCCCCCCCCCC
+  standard_inchi: InChI=1S/C52H79N11O18/c1-5-6-7-8-9-10-11-12-13-14-15-39(67)62-45-29(4)81-52(80)44(28(2)3)63-50(78)33(22-30-16-18-31(64)19-17-30)57-40(68)26-55-47(75)36(25-43(72)73)61-49(77)34(23-38(54)66)58-41(69)27-56-46(74)35(24-42(70)71)60-48(76)32(59-51(45)79)20-21-37(53)65/h16-19,28-29,32-36,44-45,64H,5-15,20-27H2,1-4H3,(H2,53,65)(H2,54,66)(H,55,75)(H,56,74)(H,57,68)(H,58,69)(H,59,79)(H,60,76)(H,61,77)(H,62,67)(H,63,78)(H,70,71)(H,72,73)/t29?,32-,33+,34+,35+,36+,44+,45+/m1/s1
+  standard_inchi_key: ZLZLLLUTODJKJA-LQKZRONDSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001005
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1423
+  taxon_label: Bacillus subtilis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001005
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25362061
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001005 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001005
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1423
+  organism_label: Bacillus subtilis
+  evidence:
+  - reference: PMID:25362061
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001005 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF866134.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001005
+  source_label: locillomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-077a91ddc8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

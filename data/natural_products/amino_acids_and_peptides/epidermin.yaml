@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-0122983292
+label: epidermin
+chemical_structure:
+  smiles: CCC(C)C1C(=O)NC(CSCC(C(=O)NC(C(=O)NC(C(=O)N1)CC2=CC=CC=C2)CCCCN)NC(=O)C(C)NC(=O)C(C(C)CC)N)C(=O)NC3C(SCC(NC(=O)CNC(=O)C4CCCN4C3=O)C(=O)NC(C)C(=O)NC(CCCCN)C(=O)N/C(=C\C)/C(=O)NCC(=O)NC5CSCC6C(=O)N/C=C\SCC(C(=O)NC(C(=O)N6)CC7=CC=C(C=C7)O)NC(=O)C(NC(=O)C(NC5=O)CC8=CC=CC=C8)CC(=O)N)C
+  standard_inchi: InChI=1S/C98H141N25O23S4/c1-9-51(4)77(102)96(144)107-54(7)81(129)117-70-48-149-49-71(120-97(145)78(52(5)10-2)121-89(137)65(40-57-25-16-13-17-26-57)113-85(133)62(112-92(70)140)28-19-21-35-100)94(142)122-79-55(8)150-50-72(109-76(127)44-105-95(143)73-29-22-37-123(73)98(79)146)90(138)106-53(6)80(128)111-61(27-18-20-34-99)84(132)110-60(11-3)82(130)104-43-75(126)108-68-47-148-46-67-83(131)103-36-38-147-45-69(93(141)115-64(87(135)118-67)41-58-30-32-59(124)33-31-58)119-88(136)66(42-74(101)125)116-86(134)63(114-91(68)139)39-56-23-14-12-15-24-56/h11-17,23-26,30-33,36,38,51-55,61-73,77-79,124H,9-10,18-22,27-29,34-35,37,39-50,99-100,102H2,1-8H3,(H2,101,125)(H,103,131)(H,104,130)(H,105,143)(H,106,138)(H,107,144)(H,108,126)(H,109,127)(H,110,132)(H,111,128)(H,112,140)(H,113,133)(H,114,139)(H,115,141)(H,116,134)(H,117,129)(H,118,135)(H,119,136)(H,120,145)(H,121,137)(H,122,142)/b38-36-,60-11-
+  standard_inchi_key: CXTXHTVXPMOOSW-HUCIVYLBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000508
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:16132391
+producer_organisms:
+- taxon_id: NCBITaxon:1282
+  taxon_label: Staphylococcus epidermidis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000508
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1128/aac.50.4.1449-1457.2006
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000508 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000508
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1282
+  organism_label: Staphylococcus epidermidis
+  evidence:
+  - reference: DOI:10.1128/aac.50.4.1449-1457.2006
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000508 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:X62386.1
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000508
+  source_label: epidermin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-0122983292
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

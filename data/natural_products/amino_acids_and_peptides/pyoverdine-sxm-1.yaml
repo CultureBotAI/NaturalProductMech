@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-ad31da0bea
+label: pyoverdine SXM-1
+chemical_structure:
+  smiles: O=C1N(O)CCC[C@H]1NC([C@H](NC(CNC([C@@H](NC([C@H](NC([C@@H](NC(CNC([C@@H](CCCN(O)C(C)=O)NC([C@H](NC(C2N3C(C(NC(CCC(O)=O)=O)=CC4=CC(O)=C(O)C=C34)=NCC2)=O)CO)=O)=O)=O)[C@H](O)C)=O)[C@H](O)C)=O)CCC(N)=O)=O)=O)CO)=O
+  standard_inchi: InChI=1S/C52H75N15O23/c1-23(70)42(51(87)64-43(24(2)71)50(86)60-28(8-9-37(53)75)46(82)55-19-39(77)58-31(21-68)47(83)61-29-7-5-15-66(90)52(29)88)63-40(78)20-56-45(81)27(6-4-14-65(89)25(3)72)59-48(84)32(22-69)62-49(85)33-12-13-54-44-30(57-38(76)10-11-41(79)80)16-26-17-35(73)36(74)18-34(26)67(33)44/h16-18,23-24,27-29,31-33,42-43,68-71,73-74,89-90H,4-15,19-22H2,1-3H3,(H2,53,75)(H,55,82)(H,56,81)(H,57,76)(H,58,77)(H,59,84)(H,60,86)(H,61,83)(H,62,85)(H,63,78)(H,64,87)(H,79,80)/t23-,24-,27-,28+,29-,31-,32-,33?,42+,43-/m1/s1
+  standard_inchi_key: PETUTBCLUBRRGR-QRQTUSCRSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002693
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+compound_classes:
+- Linear
+producer_organisms:
+- taxon_id: NCBITaxon:2169583
+  taxon_label: Pseudomonas sp. SXM-1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002693
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:33517979
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002693 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002693
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2169583
+  organism_label: Pseudomonas sp. SXM-1
+  evidence:
+  - reference: PMID:33517979
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002693 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP038001.1
+  locus_from: 4908251
+  locus_to: 4974913
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002693
+  source_label: pyoverdine SXM-1
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-ad31da0bea
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

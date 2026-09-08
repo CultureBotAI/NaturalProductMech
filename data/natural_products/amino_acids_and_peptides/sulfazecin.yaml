@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-70e417de0c
+label: sulfazecin
+chemical_structure:
+  smiles: C[C@H](C(=O)N[C@]1(CN(C1=O)S(=O)(=O)O)OC)NC(=O)CC[C@H](C(=O)O)N
+  standard_inchi: InChI=1S/C12H20N4O9S/c1-6(14-8(17)4-3-7(13)10(19)20)9(18)15-12(25-2)5-16(11(12)21)26(22,23)24/h6-7H,3-5,13H2,1-2H3,(H,14,17)(H,15,18)(H,19,20)(H,22,23,24)/t6-,7-,12-/m1/s1
+  standard_inchi_key: MOBOUQJWGBVNCR-NQYJQULFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001790
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:1912599
+  taxon_label: Pseudomonas acidophila
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001790
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1038/289590a0
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001790 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001790
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1912599
+  organism_label: Pseudomonas acidophila
+  evidence:
+  - reference: DOI:10.1038/289590a0
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001790 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KX757706.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001790
+  source_label: sulfazecin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-70e417de0c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

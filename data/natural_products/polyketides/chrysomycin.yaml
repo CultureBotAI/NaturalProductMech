@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-e39cb4c8a0
+label: chrysomycin
+chemical_structure:
+  smiles: C[C@@H]1[C@@H]([C@@]([C@H]([C@@H](O1)C2=C3C(=C(C=C2)O)C(=CC4=C3OC(=O)C5=CC(=CC(=C54)OC)C)OC)O)(C)O)O
+  standard_inchi: InChI=1S/C27H28O9/c1-11-8-15-19(17(9-11)33-4)14-10-18(34-5)21-16(28)7-6-13(20(21)22(14)36-26(15)31)23-25(30)27(3,32)24(29)12(2)35-23/h6-10,12,23-25,28-30,32H,1-5H3/t12-,23+,24+,25+,27-/m1/s1
+  standard_inchi_key: BJPYMDSMDBCKEP-QSMCFSHASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000211
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:16219149
+producer_organisms:
+- taxon_id: NCBITaxon:68172
+  taxon_label: Streptomyces albaduncus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000211
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:20140934
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000211 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000211
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68172
+  organism_label: Streptomyces albaduncus
+  evidence:
+  - reference: PMID:20140934
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000211 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FN565166.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000211
+  source_label: chrysomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e39cb4c8a0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

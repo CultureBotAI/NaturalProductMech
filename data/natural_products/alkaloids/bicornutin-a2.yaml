@@ -1,0 +1,63 @@
+identifier: naturalproductmech:mibig-69156ec175
+label: bicornutin A2
+chemical_structure:
+  smiles: N[C@@H](CCCNC(N)=N)C(N[C@H](CC(C)C)C(N[C@@H](CCCNC(N)=N)C(N[C@@H](CCCNC(N)=N)C(N[C@H](CCCNC(N)=N)C(NCCC1=CC=CC=C1)=O)=O)=O)=O)=O
+  standard_inchi: InChI=1S/C38H70N18O5/c1-23(2)22-29(56-30(57)25(39)12-6-17-49-35(40)41)34(61)55-28(15-9-20-52-38(46)47)33(60)54-27(14-8-19-51-37(44)45)32(59)53-26(13-7-18-50-36(42)43)31(58)48-21-16-24-10-4-3-5-11-24/h3-5,10-11,23,25-29H,6-9,12-22,39H2,1-2H3,(H,48,58)(H,53,59)(H,54,60)(H,55,61)(H,56,57)(H4,40,41,49)(H4,42,43,50)(H4,44,45,51)(H4,46,47,52)/t25-,26+,27-,28-,29+/m0/s1
+  standard_inchi_key: IQPCVCCHGSBSRI-UCWKTGAJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001135
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:290110
+  taxon_label: Xenorhabdus budapestensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001135
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:22873683
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001135 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001135
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:290110
+  organism_label: Xenorhabdus budapestensis
+  evidence:
+  - reference: PMID:22873683
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001135 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JX424818.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001135
+  source_label: bicornutin A2
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-69156ec175
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,76 @@
+identifier: naturalproductmech:mibig-e6bb0cf7ca
+label: desmamide C
+chemical_structure:
+  smiles: CC(C)C[C@@H]1NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@@H](NC(=O)[C@@H]2CCCN2C(=O)CNC(=O)[C@H](NC(=O)C(C)C(CC(O)CCCCC)OC(=O)[C@@H]2CCCN2C1=O)CCC(N)=O)C(C)C)[C@@H](C)O
+  standard_inchi: InChI=1S/C61H97N11O17/c1-10-11-12-15-39(76)29-47-35(8)52(79)64-40(22-23-48(62)77)53(80)63-30-49(78)71-24-13-16-45(71)57(84)69-50(34(6)7)58(85)66-42(28-37-18-20-38(75)21-19-37)54(81)68-44(31-73)56(83)65-41(26-32(2)3)55(82)70-51(36(9)74)59(86)67-43(27-33(4)5)60(87)72-25-14-17-46(72)61(88)89-47/h18-21,32-36,39-47,50-51,73-76H,10-17,22-31H2,1-9H3,(H2,62,77)(H,63,80)(H,64,79)(H,65,83)(H,66,85)(H,67,86)(H,68,81)(H,69,84)(H,70,82)/t35?,36-,39?,40-,41+,42+,43+,44+,45+,46+,47?,50+,51+/m1/s1
+  standard_inchi_key: DULVYLSIPPATMK-VHNJGLBFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002625
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Lipopeptide
+xrefs:
+- cyanometdb:CyanoMetDB_2245
+- pubchem:168010266
+producer_organisms:
+- taxon_id: NCBITaxon:1828758
+  taxon_label: Desmonostoc muscorum LEGE 12446
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002625
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:35793792
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002625 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002625
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1828758
+  organism_label: Desmonostoc muscorum LEGE 12446
+  evidence:
+  - reference: PMID:35793792
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002625 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:JADEXS020000001.1
+  locus_from: 7046147
+  locus_to: 7109291
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002625
+  source_label: desmamide C
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-e6bb0cf7ca
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

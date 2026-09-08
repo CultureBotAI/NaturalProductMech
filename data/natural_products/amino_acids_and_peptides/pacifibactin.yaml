@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-551270042f
+label: pacifibactin
+chemical_structure:
+  smiles: CC(C(CC(=O)N[C@@H]([C@@H](C(=O)O)O)C(=O)N[C@H](CCCCN=C(N)N)C(=O)N[C@H]([C@H](C(=O)O)O)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCCN(C(=O)C)O)C(=O)N[C@@H]1CCCN(C1=O)O)O)N
+  standard_inchi: InChI=1S/C35H60N12O18/c1-15(36)21(50)13-22(51)44-23(25(52)33(60)61)30(57)41-17(7-3-4-10-39-35(37)38)28(55)45-24(26(53)34(62)63)31(58)43-20(14-48)29(56)40-18(8-5-11-46(64)16(2)49)27(54)42-19-9-6-12-47(65)32(19)59/h15,17-21,23-26,48,50,52-53,64-65H,3-14,36H2,1-2H3,(H,40,56)(H,41,57)(H,42,54)(H,43,58)(H,44,51)(H,45,55)(H,60,61)(H,62,63)(H4,37,38,39)/t15?,17-,18+,19-,20+,21?,23+,24-,25+,26-/m1/s1
+  standard_inchi_key: DRKCOUTVBQFDMD-XRTXDQJLSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002418
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA025052
+producer_organisms:
+- taxon_id: NCBITaxon:391936
+  taxon_label: Alcanivorax pacificus W11-5
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002418
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:23209202
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002418 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002418
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:391936
+  organism_label: Alcanivorax pacificus W11-5
+  evidence:
+  - reference: PMID:23209202
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002418 entry version 2; citation taken from the entry level
+  genome_accession: genbank:CP004387.1
+  locus_from: 1155682
+  locus_to: 1214287
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002418
+  source_label: pacifibactin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-551270042f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

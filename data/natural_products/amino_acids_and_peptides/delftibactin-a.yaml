@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-1b52363e8b
+label: delftibactin A
+chemical_structure:
+  smiles: C/C=C(/C(=O)NC(CCCN(C=O)O)C(=O)NC(CO)C(=O)NC(CCCN=C(N)N)C(=O)NC1CCCN(C1=O)O)\NC(=O)CNC(=O)C(C(C)O)NC(=O)C(C(C(=O)O)O)NC(=O)C(C)C(C(C)N)O
+  standard_inchi: InChI=1S/C40H68N14O18/c1-5-21(46-26(58)15-45-36(66)27(20(4)57)51-37(67)28(30(60)39(69)70)52-31(61)18(2)29(59)19(3)41)32(62)47-23(10-7-13-53(71)17-56)34(64)50-25(16-55)35(65)48-22(9-6-12-44-40(42)43)33(63)49-24-11-8-14-54(72)38(24)68/h5,17-20,22-25,27-30,55,57,59-60,71-72H,6-16,41H2,1-4H3,(H,45,66)(H,46,58)(H,47,62)(H,48,65)(H,49,63)(H,50,64)(H,51,67)(H,52,61)(H,69,70)(H4,42,43,44)/b21-5-
+  standard_inchi_key: GCNNBBXYZHJYOR-SQFVCTCFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000984
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA020191
+- pubchem:70680458
+producer_organisms:
+- taxon_id: NCBITaxon:398578
+  taxon_label: Delftia acidovorans SPH-1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000984
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.3389/fmicb.2019.02377
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000984 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000984
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:398578
+  organism_label: Delftia acidovorans SPH-1
+  evidence:
+  - reference: DOI:10.3389/fmicb.2019.02377
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000984 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CP000884.1
+  locus_from: 5200652
+  locus_to: 5260767
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000984
+  source_label: delftibactin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-1b52363e8b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,74 @@
+identifier: naturalproductmech:mibig-e1666ddbc8
+label: sulfadixiamycin A
+chemical_structure:
+  smiles: C[C@]12CC[C@@H]([C@@]([C@@H]1CCC3=CC4=C(C=C23)C5=C(N4)C=CC(=C5)S(=O)(=O)N6C7=CC=CC=C7C8=C6C=C9CC[C@@H]1[C@@](C9=C8)(CC[C@@H]([C@@]1(C)C(=O)O)O)C)(C)C(=O)O)O
+  standard_inchi: InChI=1S/C46H48N2O8S/c1-43-17-15-39(49)45(3,41(51)52)37(43)13-9-24-19-34-29(22-31(24)43)28-21-26(11-12-33(28)47-34)57(55,56)48-35-8-6-5-7-27(35)30-23-32-25(20-36(30)48)10-14-38-44(32,2)18-16-40(50)46(38,4)42(53)54/h5-8,11-12,19-23,37-40,47,49-50H,9-10,13-18H2,1-4H3,(H,51,52)(H,53,54)/t37-,38-,39+,40+,43-,44-,45+,46+/m1/s1
+  standard_inchi_key: JBUHSCUDVQFUJD-IPPPMHIGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000665
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+- OTHER
+compound_classes:
+- Meroterpenoid
+xrefs:
+- pubchem:156580494
+producer_organisms:
+- taxon_id: NCBITaxon:995841
+  taxon_label: Streptomyces sp. HKI0576
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000665
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1002/anie.201506541
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000665 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000665
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:995841
+  organism_label: Streptomyces sp. HKI0576
+  evidence:
+  - reference: DOI:10.1002/anie.201506541
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000665 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:HE815466.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000665
+  source_label: sulfadixiamycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-e1666ddbc8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-3835812e03
+label: cyclooctatin
+chemical_structure:
+  smiles: CC(C)C\1CCC2(/C1=C\CC(C3C(CC(C3C2)CO)O)(C)O)C
+  standard_inchi: InChI=1S/C20H34O3/c1-12(2)14-5-7-19(3)10-15-13(11-21)9-17(22)18(15)20(4,23)8-6-16(14)19/h6,12-15,17-18,21-23H,5,7-11H2,1-4H3/b16-6-
+  standard_inchi_key: MSKFOQCDNOFJAT-SOFYXZRVSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000677
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Diterpenoids
+  class_results:
+  - Fusicoccane diterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:5467942
+producer_organisms:
+- taxon_id: NCBITaxon:67327
+  taxon_label: Streptomyces melanosporofaciens
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000677
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:19635410
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000677 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000677
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67327
+  organism_label: Streptomyces melanosporofaciens
+  evidence:
+  - reference: PMID:19635410
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000677 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB448947.1
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000677
+  source_label: cyclooctatin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3835812e03
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

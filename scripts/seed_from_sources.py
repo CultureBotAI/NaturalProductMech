@@ -49,8 +49,10 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import re
 import sys
-from collections import Counter
+import unicodedata
+from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
@@ -59,6 +61,9 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from naturalproductmech.curate.curation_event import record_curation_event  # noqa: E402
+from naturalproductmech.grading import (  # noqa: E402
+    load_producer_evidence_map,
+)
 from naturalproductmech.validation.write_validated import (  # noqa: E402
     ValidationFailedError,
     write_validated_natural_product,
@@ -71,6 +76,21 @@ PATHS_FILE = CORPUS_DIR / "PATHS.tsv"
 RETIRED_FILE = CORPUS_DIR / "RETIRED.tsv"
 CONF_PATH = REPO_ROOT / "conf" / "sources.yaml"
 PRODUCER_EVIDENCE_PATH = REPO_ROOT / "conf" / "producer_evidence.tsv"
+
+# MIBiG's cluster vocabulary -> the schema enum. Six values in 4.0; `alkaloid`
+# was removed when compound classification was split from cluster
+# classification. An unmapped value is dropped rather than guessed.
+BGC_CLASS_MAP = {
+    "PKS": "PKS",
+    "NRPS": "NRPS",
+    "ribosomal": "RIBOSOMAL",
+    "terpene": "TERPENE",
+    "saccharide": "SACCHARIDE",
+    "other": "OTHER",
+}
+
+# Only cross-references whose prefix this corpus declares are carried through.
+DB_ID_RE = re.compile(r"^(npatlas|pubchem|chembl|chebi|cyanometdb|lotus):[A-Za-z0-9._-]+$")
 
 # One directory per NPClassifier pathway. UNCLASSIFIED is a real bucket, not an
 # error state: it is where a multi-label result lands until a curator files it.
@@ -85,9 +105,6 @@ PATHWAY_DIRS = {
     "UNCLASSIFIED": "unclassified",
 }
 
-NOT_PRODUCER_GRADE = "NOT_PRODUCER_GRADE"
-
-
 def mint_identifier(source: str, source_id: str) -> str:
     """Content-hashed CURIE for one source concept.
 
@@ -97,36 +114,6 @@ def mint_identifier(source: str, source_id: str) -> str:
     """
     digest = hashlib.sha256(f"{source}\x00{source_id}".encode()).hexdigest()[:10]
     return f"naturalproductmech:{source.lower()}-{digest}"
-
-
-def load_producer_evidence_map(path: Path = PRODUCER_EVIDENCE_PATH) -> dict[str, str]:
-    """MIBiG locus-evidence method -> `evidence_basis`, from the committed TSV.
-
-    In the config rather than in this file so the grading can be argued with.
-    A method absent from the map is not silently treated as producer-grade;
-    `grade_producer_evidence` refuses it.
-    """
-    with path.open(newline="", encoding="utf-8") as fh:
-        return {row["mibig_method"]: row["evidence_basis"] for row in csv.DictReader(fh, delimiter="\t")}
-
-
-def grade_producer_evidence(methods: list[str], evidence_map: dict[str, str]) -> str | None:
-    """Best `evidence_basis` supported by a locus's evidence methods.
-
-    Returns None when nothing in `methods` is producer-grade, which sends the
-    claim to the worklist rather than into `producer_organisms`. An unknown
-    method is treated as not producer-grade: a vocabulary that grew upstream
-    should fail closed and be looked at, not admitted by default.
-    """
-    best: str | None = None
-    for method in methods:
-        basis = evidence_map.get(method)
-        if basis is None or basis == NOT_PRODUCER_GRADE:
-            continue
-        if basis == "BGC_CHARACTERIZED":
-            return basis
-        best = best or basis
-    return best
 
 
 def choose_pathway(pathway_results: list[str]) -> str:
@@ -167,20 +154,224 @@ def read_inventories() -> dict[str, list[dict[str, str]]]:
     return inventories
 
 
-def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str, Any]]:
-    """Harmonize inventories into records.
+def slugify(label: str, identifier: str) -> str:
+    """A filesystem- and URL-safe slug for a record.
 
-    M2 implements this over the MIBiG, ChEBI, LOTUS, PubChem and NPClassifier
-    inventories. It returns an empty list until those exist, so `just seed`
-    reports an empty plan rather than pretending to have one.
+    Falls back to the identifier when a label slugifies to nothing, which
+    happens for compounds named only with brackets or Greek letters. A slug is
+    a published URL, so it is assigned once and locked in PATHS.tsv.
     """
-    if not inventories:
+    text = unicodedata.normalize("NFKD", label.lower())
+    text = "".join(ch for ch in text if not unicodedata.combining(ch))
+    slug = re.sub(r"[^a-z0-9]+", "-", text).strip("-")
+    if not slug:
+        slug = re.sub(r"[^a-z0-9]+", "-", identifier.lower()).strip("-")
+    return slug[:80]
+
+
+def mibig_evidence(row: dict[str, str]) -> list[dict[str, str]]:
+    """Claim-level evidence for one MIBiG row.
+
+    Always a DATABASE_ASSERTION, whatever the reference points at. The corpus
+    relays what MIBiG asserts; nobody here has read the paper, and
+    docs/CURATION.md is explicit that a database assertion does not become the
+    primary report merely because the database cites one. The level the
+    citation came from travels in the note, so a curator can tell a
+    compound-specific structure report from the entry's general reference.
+
+    Returns a fresh list per call. Sharing one object between the producer and
+    the gene cluster made PyYAML emit anchors and aliases, which no reader of a
+    record should have to resolve.
+    """
+    level = row["reference_basis"].lower().replace("_", " ")
+    return [{
+        "reference": row["primary_reference"],
+        "evidence_type": "DATABASE_ASSERTION",
+        "notes": (f"MIBiG {row['mibig_accession']} entry version "
+                  f"{row['entry_version']}; citation taken from the {level} level"),
+    }]
+
+
+def group_by_structure(rows: list[dict[str, str]]) -> dict[str, list[dict[str, str]]]:
+    """Group source rows by Standard InChIKey. That merge is the product."""
+    grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in rows:
+        key = row.get("standard_inchi_key")
+        if key:
+            grouped[key].append(row)
+    return grouped
+
+
+def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str, Any]]:
+    """Harmonize the committed inventories into one record per structure.
+
+    M2 covers MIBiG plus the NPClassifier filing inventory. ChEBI grounding,
+    LOTUS occurrences and PubChem structures join here in later milestones; the
+    shape below is what they slot into.
+
+    Every record produced is MINTED, because MIBiG carries no ChEBI
+    cross-reference for most compounds and this milestone does not yet read
+    ChEBI. Grounding those is exactly what the next milestone is for, and
+    `just worklist` will rank them.
+    """
+    mibig_rows = inventories.get("mibig_compounds") or []
+    if not mibig_rows:
         return []
-    raise NotImplementedError(
-        "No harmonizer yet: the extractors that produce data/raw/ are M2 "
-        "(PLAN.md section 7). Inventories are present, so this is a real gap "
-        f"rather than the empty M1 state: {sorted(inventories)}"
-    )
+
+    classification = {
+        row["standard_inchi_key"]: row
+        for row in inventories.get("npclassifier") or []
+    }
+
+    records: list[dict[str, Any]] = []
+    for key, rows in sorted(group_by_structure(mibig_rows).items()):
+        # Prefer the row with the strongest producer evidence as the record's
+        # spokesman for label and structure: same structure either way, but a
+        # characterized entry is the better-curated one.
+        rows = sorted(rows, key=lambda r: (
+            0 if r["producer_evidence_basis"] == "BGC_CHARACTERIZED" else
+            1 if r["producer_evidence_basis"] == "BGC_CORRELATED" else 2,
+            r["mibig_accession"],
+        ))
+        lead = rows[0]
+        label = lead["compound_name"] or key
+        identifier = mint_identifier("MIBIG", lead["mibig_accession"] + ":" + lead["compound_index"])
+
+        classified = classification.get(key)
+        pathway_results = [
+            x for x in (classified["pathway_results"].split("|") if classified else []) if x
+        ]
+        pathway = choose_pathway(pathway_results)
+
+        doc: dict[str, Any] = {
+            "identifier": identifier,
+            "label": label,
+            "chemical_structure": {
+                "smiles": lead["smiles"],
+                "standard_inchi": lead["standard_inchi"],
+                "standard_inchi_key": key,
+                "stereo_complete": lead["stereo_complete"] == "true",
+                "structure_source": "MIBIG",
+                "structure_source_id": f"mibig:{lead['mibig_accession']}",
+            },
+            "np_pathway": pathway,
+        }
+
+        if classified:
+            doc["np_classification"] = {
+                "tool": "NPClassifier",
+                "tool_version": classified["model_version"],
+                "pathway_results": pathway_results,
+                "superclass_results": [x for x in classified["superclass_results"].split("|") if x],
+                "class_results": [x for x in classified["class_results"].split("|") if x],
+                "is_glycoside": classified["is_glycoside"] == "true",
+            }
+
+        bgc_classes, compound_classes, xrefs = [], [], []
+        producers: list[dict[str, Any]] = []
+        clusters: list[dict[str, Any]] = []
+        source_concepts: list[dict[str, Any]] = []
+
+        for row in rows:
+            accession = row["mibig_accession"]
+            source_concepts.append({
+                "source": "MIBIG",
+                "source_id": accession,
+                "source_label": row["compound_name"] or label,
+                "source_version": row["entry_version"],
+                "minted_identifier": mint_identifier(
+                    "MIBIG", accession + ":" + row["compound_index"]),
+            })
+
+            for value in row["bgc_classes"].split("|"):
+                mapped = BGC_CLASS_MAP.get(value.strip())
+                if mapped and mapped not in bgc_classes:
+                    bgc_classes.append(mapped)
+            for value in row["compound_classes"].split("|"):
+                if value and value not in compound_classes:
+                    compound_classes.append(value)
+            for value in row["database_ids"].split("|"):
+                if value and value not in xrefs and DB_ID_RE.match(value):
+                    xrefs.append(value)
+
+            basis = row["producer_evidence_basis"]
+            if basis:
+                producers.append({
+                    "taxon_id": row["taxon_id"],
+                    "taxon_label": row["taxon_label"],
+                    "evidence_basis": basis,
+                    "biosynthetic_gene_cluster": f"mibig:{accession}",
+                    "source": "MIBIG",
+                    "source_version": row["entry_version"],
+                    "notes": (f"Locus evidence: {row['locus_evidence_methods'] or 'none stated'}."),
+                    "evidence": mibig_evidence(row),
+                })
+
+            cluster: dict[str, Any] = {
+                "accession": f"mibig:{accession}",
+                "entry_version": row["entry_version"],
+                "entry_status": row["entry_status"],
+                "organism_taxon_id": row["taxon_id"],
+                "organism_label": row["taxon_label"],
+                "evidence": mibig_evidence(row),
+            }
+            if row["genome_accession"]:
+                cluster["genome_accession"] = f"genbank:{row['genome_accession']}"
+            for field, column in (("locus_from", "locus_from"), ("locus_to", "locus_to")):
+                if row[column] and row[column].isdigit() and int(row[column]) > 0:
+                    cluster[field] = int(row[column])
+            if bgc_classes:
+                cluster["bgc_class"] = list(bgc_classes)
+            methods = [m for m in row["locus_evidence_methods"].split("|") if m]
+            if methods:
+                cluster["locus_evidence_methods"] = methods
+            clusters.append(cluster)
+
+        if bgc_classes:
+            doc["bgc_class"] = bgc_classes
+        if compound_classes:
+            doc["compound_classes"] = compound_classes
+        if xrefs:
+            doc["xrefs"] = xrefs
+        if producers:
+            doc["producer_organisms"] = producers
+        if clusters:
+            doc["biosynthetic_gene_clusters"] = clusters
+
+        doc["source_concepts"] = source_concepts
+        doc["grounding_status"] = "MINTED"
+        doc["grounding_notes"] = (
+            "Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG "
+            "compounds carry no ChEBI cross-reference."
+        )
+        doc["curation_status"] = "SEEDED"
+
+        # A collision that survives must be visible, not silent.
+        if len(rows) > 1 and len({r["mibig_accession"] for r in rows}) > 1:
+            doc["discussions"] = [{
+                "discussion_id": "shared-structure",
+                "kind": "CURATION_TODO",
+                "status": "OPEN",
+                "prompt": (
+                    "This structure is reported by more than one MIBiG entry: "
+                    + ", ".join(sorted({r["mibig_accession"] for r in rows}))
+                    + ". Confirm they describe the same compound rather than an "
+                    "upstream cross-reference error."
+                ),
+            }]
+
+        doc["_slug"] = slugify(label, identifier)
+        records.append(doc)
+
+    # Slugs are published URLs and must be unique. A clash is resolved
+    # deterministically rather than by whichever record was built first.
+    seen: Counter[str] = Counter()
+    for doc in sorted(records, key=lambda d: d["identifier"]):
+        base = doc["_slug"]
+        seen[base] += 1
+        if seen[base] > 1:
+            doc["_slug"] = f"{base}-{seen[base]}"
+    return records
 
 
 def write_records(records: list[dict[str, Any]], *, only: str | None = None,

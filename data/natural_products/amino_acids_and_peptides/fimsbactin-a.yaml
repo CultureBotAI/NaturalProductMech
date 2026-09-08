@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-f0ba493c25
+label: fimsbactin A
+chemical_structure:
+  smiles: CC(=O)N(O)CCCCNC(=O)[C@H](COC(=O)C1=C(O)C(O)=CC=C1)NC(=O)[C@@H]1COC(=N1)C1=C(O)C(O)=CC=C1
+  standard_inchi: InChI=1S/C26H30N4O11/c1-14(31)30(39)11-3-2-10-27-23(36)17(13-41-26(38)16-7-5-9-20(33)22(16)35)28-24(37)18-12-40-25(29-18)15-6-4-8-19(32)21(15)34/h4-9,17-18,32-35,39H,2-3,10-13H2,1H3,(H,27,36)(H,28,37)/t17-,18-/m0/s1
+  standard_inchi_key: GUYAPGULLNBOCI-ROUUACIJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000352
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA07176
+producer_organisms:
+- taxon_id: NCBITaxon:62977
+  taxon_label: Acinetobacter sp. ADP1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000352
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:23456955
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000352 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000352
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:62977
+  organism_label: Acinetobacter sp. ADP1
+  evidence:
+  - reference: PMID:23456955
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000352 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CR543861.1
+  locus_from: 2699483
+  locus_to: 2725713
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000352
+  source_label: fimsbactin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f0ba493c25
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

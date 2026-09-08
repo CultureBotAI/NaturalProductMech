@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-cc950ea9d2
+label: tunicamycin
+chemical_structure:
+  smiles: CC(C)CCCCCCCCC/C=C/C(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O[C@H]2[C@H]([C@@H]([C@H]([C@@H](O2)CO)O)O)NC(=O)C)C[C@H]([C@@H]3[C@H]([C@H]([C@@H](O3)N4C=CC(=O)NC4=O)O)O)O)O)O
+  standard_inchi: InChI=1S/C38H62N4O16/c1-19(2)13-11-9-7-5-4-6-8-10-12-14-24(46)40-27-31(51)28(48)22(55-37(27)58-36-26(39-20(3)44)30(50)29(49)23(18-43)56-36)17-21(45)34-32(52)33(53)35(57-34)42-16-15-25(47)41-38(42)54/h12,14-16,19,21-23,26-37,43,45,48-53H,4-11,13,17-18H2,1-3H3,(H,39,44)(H,40,46)(H,41,47,54)/b14-12+/t21-,22-,23+,26+,27-,28+,29+,30+,31-,32+,33-,34-,35-,36+,37+/m1/s1
+  standard_inchi_key: MEYZYGMYMLNUHJ-HFMVIZMTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002553
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Pyrimidine nucleos(t)ides
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA024688
+producer_organisms:
+- taxon_id: NCBITaxon:59737
+  taxon_label: Rathayibacter iranicus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002553
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.24.215
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002553 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002553
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:59737
+  organism_label: Rathayibacter iranicus
+  evidence:
+  - reference: DOI:10.7164/antibiotics.24.215
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002553 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MH813486.1
+  locus_from: 1
+  locus_to: 14110
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002553
+  source_label: tunicamycin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-cc950ea9d2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

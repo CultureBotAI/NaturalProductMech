@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-17453b9a69
+label: tauramamide
+chemical_structure:
+  smiles: CC(C)CCCCCC(=O)N[C@H](CC1=CC=C(O)C=C1)C(=O)N[C@@H](CO)C(=O)N[C@H](CC(C)C)C(=O)N[C@@H](CC1=CNC2=C1C=CC=C2)C(=O)N[C@@H](CCCNC(N)=N)C(O)=O
+  standard_inchi: InChI=1S/C44H65N9O9/c1-26(2)11-6-5-7-15-38(56)49-35(22-28-16-18-30(55)19-17-28)40(58)53-37(25-54)42(60)51-34(21-27(3)4)39(57)52-36(23-29-24-48-32-13-9-8-12-31(29)32)41(59)50-33(43(61)62)14-10-20-47-44(45)46/h8-9,12-13,16-19,24,26-27,33-37,48,54-55H,5-7,10-11,14-15,20-23,25H2,1-4H3,(H,49,56)(H,50,59)(H,51,60)(H,52,57)(H,53,58)(H,61,62)(H4,45,46,47)/t33-,34+,35+,36-,37-/m0/s1
+  standard_inchi_key: BEFCZECQSOKHON-OSWUWPNASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001796
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA05010
+producer_organisms:
+- taxon_id: NCBITaxon:1121121
+  taxon_label: Brevibacillus laterosporus DSM 25
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001796
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:27694801
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001796 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001796
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1121121
+  organism_label: Brevibacillus laterosporus DSM 25
+  evidence:
+  - reference: PMID:27694801
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001796 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP017705.1
+  locus_from: 4751365
+  locus_to: 4791946
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001796
+  source_label: tauramamide
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-17453b9a69
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

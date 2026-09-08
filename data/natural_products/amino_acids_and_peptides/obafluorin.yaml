@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-6dc8b75919
+label: obafluorin
+chemical_structure:
+  smiles: OC1=C(O)C(=CC=C1)C(=O)N[C@H]1[C@@H](CC2=CC=C(C=C2)N(=O)=O)OC1=O
+  standard_inchi: InChI=1S/C17H14N2O7/c20-12-3-1-2-11(15(12)21)16(22)18-14-13(26-17(14)23)8-9-4-6-10(7-5-9)19(24)25/h1-7,13-14,20-21H,8H2,(H,18,22)/t13-,14+/m1/s1
+  standard_inchi_key: AINNQKIVZOTQBB-KGLIPLIRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001437
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA02806
+- pubchem:146354
+producer_organisms:
+- taxon_id: NCBITaxon:294
+  taxon_label: Pseudomonas fluorescens
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001437
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:28504677
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001437 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001437
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:294
+  organism_label: Pseudomonas fluorescens
+  evidence:
+  - reference: PMID:28504677
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001437 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KX931446.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001437
+  source_label: obafluorin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-6dc8b75919
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

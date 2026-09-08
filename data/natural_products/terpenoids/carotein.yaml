@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-ba21e99a5d
+label: β-carotein
+chemical_structure:
+  smiles: CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C2=C(CCCC2(C)C)C)\C)\C)/C)/C
+  standard_inchi: InChI=1S/C40H56/c1-31(19-13-21-33(3)25-27-37-35(5)23-15-29-39(37,7)8)17-11-12-18-32(2)20-14-22-34(4)26-28-38-36(6)24-16-30-40(38,9)10/h11-14,17-22,25-28H,15-16,23-24,29-30H2,1-10H3/b12-11+,19-13+,20-14+,27-25+,28-26+,31-17+,32-18+,33-21+,34-22+
+  standard_inchi_key: OENHQHLEOONYIE-JLTXGRSLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000646
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Carotenoids (C40)
+  class_results:
+  - Carotenoids (C40, β-β)
+  is_glycoside: false
+bgc_class:
+- TERPENE
+xrefs:
+- pubchem:5280489
+producer_organisms:
+- taxon_id: NCBITaxon:77133
+  taxon_label: uncultured bacterium
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000646
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:19146479
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000646 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000646
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:77133
+  organism_label: uncultured bacterium
+  evidence:
+  - reference: PMID:19146479
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000646 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FJ151553.1
+  bgc_class:
+  - TERPENE
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000646
+  source_label: β-carotein
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ba21e99a5d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

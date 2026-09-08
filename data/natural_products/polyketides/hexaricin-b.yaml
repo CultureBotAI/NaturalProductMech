@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-51362f64bc
+label: hexaricin B
+chemical_structure:
+  smiles: COC1=C2[C@@H](CC3=C(C(O)=C4C(=O)O[C@H](C)CC4=C3)C2=C(O)C2=C1C(=O)C1=C(O)C=CC=C1C2=O)OC(C)=C
+  standard_inchi: InChI=1S/C30H24O9/c1-11(2)38-17-10-14-9-13-8-12(3)39-30(36)19(13)26(33)18(14)22-21(17)29(37-4)24-23(28(22)35)25(32)15-6-5-7-16(31)20(15)27(24)34/h5-7,9,12,17,31,33,35H,1,8,10H2,2-4H3/t12-,17-/m1/s1
+  standard_inchi_key: POUPLYRFPHPSJV-SJKOYZFVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001376
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Pradimicins
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:683272
+  taxon_label: Streptosporangium sp. FXJ7.131
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001376
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26754814
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001376 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001376
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:683272
+  organism_label: Streptosporangium sp. FXJ7.131
+  evidence:
+  - reference: PMID:26754814
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001376 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KT713752.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001376
+  source_label: hexaricin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-51362f64bc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

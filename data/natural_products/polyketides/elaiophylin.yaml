@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-a6c20a48c5
+label: elaiophylin
+chemical_structure:
+  smiles: CC[C@H]1[C@@H](C[C@](O[C@@H]1C)(O)[C@H]([C@H](O)[C@@H]([C@H]2OC(=O)/C=C/C=C/[C@@H]([C@H](OC(=O)/C=C/C=C/[C@@H]2C)[C@H]([C@@H](O)[C@@H]([C@@]3(O[C@@H]([C@H]([C@@H](C3)O[C@@H]4O[C@H]([C@H]([C@H](C4)O)O)C)CC)C)O)C)C)C)C)C)O[C@@H]5O[C@H]([C@H]([C@H](C5)O)O)C
+  standard_inchi: InChI=1S/C54H88O18/c1-13-37-33(9)71-53(63,25-41(37)67-45-23-39(55)49(61)35(11)65-45)31(7)47(59)29(5)51-27(3)19-15-17-22-44(58)70-52(28(4)20-16-18-21-43(57)69-51)30(6)48(60)32(8)54(64)26-42(38(14-2)34(10)72-54)68-46-24-40(56)50(62)36(12)66-46/h15-22,27-42,45-52,55-56,59-64H,13-14,23-26H2,1-12H3/b19-15+,20-16+,21-18+,22-17+/t27-,28-,29-,30-,31-,32-,33+,34+,35-,36-,37+,38+,39-,40-,41+,42+,45-,46-,47+,48+,49+,50+,51-,52-,53+,54+/m0/s1
+  standard_inchi_key: OSERMIPXNLXAPD-MJMYBOKFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000053
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Bafilomycins
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6444206
+producer_organisms:
+- taxon_id: NCBITaxon:12908
+  taxon_label: Unknown. Unclassified.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000053
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: patent:WO2006053313A2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000053 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000053
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:12908
+  organism_label: Unknown. Unclassified.
+  evidence:
+  - reference: patent:WO2006053313A2
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000053 entry version 5; citation taken from the entry level
+  genome_accession: genbank:GP697151.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000053
+  source_label: elaiophylin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a6c20a48c5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

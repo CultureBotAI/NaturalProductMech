@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-a84249a124
+label: palmerolide F
+chemical_structure:
+  smiles: C=C(C)CC(=O)N/C=C/C(C)=C/[C@@H](C)[C@H]1C/C(C)=C/C=C/CC[C@H](OC(N)=O)[C@@H](O)/C=C/[C@@H](O)CCC/C=C/C(=O)O1
+  standard_inchi: InChI=1S/C33H48N2O7/c1-23(2)20-31(38)35-19-18-25(4)21-26(5)30-22-24(3)12-8-6-10-14-29(42-33(34)40)28(37)17-16-27(36)13-9-7-11-15-32(39)41-30/h6,8,11-12,15-19,21,26-30,36-37H,1,7,9-10,13-14,20,22H2,2-5H3,(H2,34,40)(H,35,38)/b8-6+,15-11+,17-16+,19-18+,24-12+,25-21+/t26-,27+,28+,29+,30-/m1/s1
+  standard_inchi_key: OTQYFFWXHRPTBY-DAUCKHFQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002118
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactams
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:54764673
+- chembl:CHEMBL1915710
+- npatlas:NPA033526
+producer_organisms:
+- taxon_id: NCBITaxon:2818510
+  taxon_label: Candidatus Synoicihabitans palmerolidicus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002118
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1016/j.bmc.2011.06.004
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002118 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002118
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2818510
+  organism_label: Candidatus Synoicihabitans palmerolidicus
+  evidence:
+  - reference: DOI:10.1016/j.bmc.2011.06.004
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002118 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JAGGDC010000009.1
+  locus_from: 1
+  locus_to: 74110
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002118
+  source_label: palmerolide F
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-a84249a124
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

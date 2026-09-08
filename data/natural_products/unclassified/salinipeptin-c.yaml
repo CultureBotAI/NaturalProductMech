@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-8ae790cf17
+label: salinipeptin C
+chemical_structure:
+  smiles: C/C=C(\NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@@H](CCC(N)=O)NC(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@H](CC1=CC=CC=C1)NC(=O)[C@@H](CCC(N)=O)NC(=O)[C@@H](C)NC(=O)[C@@H](C)NC(=O)/C(=C/C)NC(=O)[C@H]1CCCN1C(=O)/C(=C/C)NC(=O)[C@@H](C)NC(=O)[C@H]1CCCN1C(=O)/C(=C/C)N1CN(C)[C@@H](C)C1=O)C(C)C)[C@H](C)CC)C(=O)N[C@@H](C(=O)N[C@H]1CS/C=C\NC(=O)[C@H](C(C)C)NC(=O)[C@H](CC(C)C)NC1=O)[C@H](C)CC
+  standard_inchi: InChI=1S/C97H148N24O24S/c1-20-52(13)76(94(142)113-67-47-146-42-39-100-91(139)74(50(9)10)114-85(133)64(43-49(7)8)111-88(67)136)116-83(131)60(23-4)106-87(135)66(46-122)105-73(125)45-101-81(129)62(35-37-71(98)123)110-93(141)77(53(14)21-2)117-92(140)75(51(11)12)115-86(134)65(44-58-31-27-26-28-32-58)112-84(132)63(36-38-72(99)124)109-80(128)55(16)102-78(126)54(15)103-82(130)59(22-3)107-90(138)70-34-29-40-119(70)96(144)61(24-5)108-79(127)56(17)104-89(137)69-33-30-41-120(69)97(145)68(25-6)121-48-118(19)57(18)95(121)143/h22-28,31-32,39,42,49-57,62-67,69-70,74-77,122H,20-21,29-30,33-38,40-41,43-48H2,1-19H3,(H2,98,123)(H2,99,124)(H,100,139)(H,101,129)(H,102,126)(H,103,130)(H,104,137)(H,105,125)(H,106,135)(H,107,138)(H,108,127)(H,109,128)(H,110,141)(H,111,136)(H,112,132)(H,113,142)(H,114,133)(H,115,134)(H,116,131)(H,117,140)/b42-39-,59-22-,60-23-,61-24-,68-25-/t52-,53-,54-,55-,56-,57+,62-,63-,64+,65+,66+,67+,69-,70-,74+,75+,76-,77-/m1/s1
+  standard_inchi_key: UKTBKRCZCSGHAB-KLHMHWFDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002319
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA025862
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002319
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:30753052
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002319 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002319
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:30753052
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002319 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MG788286.1
+  locus_from: 1
+  locus_to: 6178
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002319
+  source_label: salinipeptin C
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-8ae790cf17
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

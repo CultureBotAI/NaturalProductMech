@@ -17,27 +17,6 @@
 # `scripts/check_source_queue.py` refuses a queue row claiming ADOPTED that
 # this file does not read.
 
-mibig:
-  name: MIBiG
-  description: >-
-    Minimum Information about a Biosynthetic Gene cluster. Producer organisms
-    with NCBI taxonomy identifiers, gene clusters with GenBank loci and an
-    experimental-evidence vocabulary, cluster class, compound structures and
-    primary references.
-  homepage: https://mibig.secondarymetabolites.org/
-  archive_url: https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz
-  archive_name: mibig_json_4.0.tar.gz
-  version: "4.0"
-  license: CC BY 4.0
-  # Only active entries are read. The release dump also ships retired and
-  # pending entries.
-  status_allowed: [active]
-  # DO NOT gate on `quality`: it reads `questionable` for 2,710 of 3,013 entries
-  # and marks legacy-format entries awaiting re-curation, not doubtful science.
-  # DO NOT gate on the changelog reviewer id: it is the AAAA... placeholder in
-  # 2,988 of 3,013 entries, so a reviewer gate admits 25 entries.
-  # The producer grade comes from conf/producer_evidence.tsv instead.
-  producer_evidence_map: conf/producer_evidence.tsv
 
 chebi:
   name: ChEBI
@@ -78,14 +57,4 @@ pubchem:
   homepage: https://pubchem.ncbi.nlm.nih.gov/
   license: public domain (per-source conditions respected)
 
-npclassifier:
-  name: NPClassifier
-  description: >-
-    The computed filing classification. Runs at EXTRACTION time into a
-    committed, manifest-pinned inventory keyed by Standard InChIKey — never at
-    seed time, which would put a network call inside the offline pipeline.
-  homepage: https://github.com/mwang87/NP-Classifier
-  license: CC0
-  # Pinned per release; recorded on every record in `np_classification`.
-  model_version: null
 

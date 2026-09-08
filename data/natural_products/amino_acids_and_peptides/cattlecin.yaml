@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-ee989b33fc
+label: cattlecin
+chemical_structure:
+  smiles: C1[C@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC1=O)CO)CC2=CC=C(C=C2)O)CC3=CN=CN3)CC4=CNC5=CC=CC=C54)CC(=O)O)CC6=CC=C(C=C6)O)CC7=CN=CN7)C(=O)N[C@@H](CC8=CNC9=CC=CC=C98)C(=O)N[C@@H](CC1=CN=CN1)C(=O)N[C@@H](CC1=CN=CN1)C(=O)NCC(=O)N[C@@H](CC1=CNC2=CC=CC=C21)C(=O)N[C@@H](CC1=CC=C(C=C1)O)C(=O)NCC(=O)N[C@@H](CC1=CNC2=CC=CC=C21)C(=O)N[C@@H](CC1=CNC2=CC=CC=C21)C(=O)N[C@@H](CC(=O)O)C(=O)N[C@@H](CC(=O)O)C(=O)O
+  standard_inchi: InChI=1S/C131H139N33O32/c165-61-107-130(194)154-93(35-68-25-31-80(168)32-26-68)119(183)159-100(42-75-55-133-63-145-75)124(188)155-94(36-69-49-136-86-16-6-1-11-81(69)86)116(180)142-60-111(172)150-104(46-112(173)174)128(192)153-92(34-67-23-29-79(167)30-24-67)118(182)160-102(44-77-57-135-65-147-77)126(190)162-103(45-108(169)151-107)127(191)157-97(39-72-52-139-89-19-9-4-14-84(72)89)122(186)161-101(43-76-56-134-64-146-76)125(189)158-99(41-74-54-132-62-144-74)117(181)143-59-110(171)148-95(37-70-50-137-87-17-7-2-12-82(70)87)120(184)152-91(33-66-21-27-78(166)28-22-66)115(179)141-58-109(170)149-96(38-71-51-138-88-18-8-3-13-83(71)88)121(185)156-98(40-73-53-140-90-20-10-5-15-85(73)90)123(187)163-105(47-113(175)176)129(193)164-106(131(195)196)48-114(177)178/h1-32,49-57,62-65,91-107,136-140,165-168H,33-48,58-61H2,(H,132,144)(H,133,145)(H,134,146)(H,135,147)(H,141,179)(H,142,180)(H,143,181)(H,148,171)(H,149,170)(H,150,172)(H,151,169)(H,152,184)(H,153,192)(H,154,194)(H,155,188)(H,156,185)(H,157,191)(H,158,189)(H,159,183)(H,160,182)(H,161,186)(H,162,190)(H,163,187)(H,164,193)(H,173,174)(H,175,176)(H,177,178)(H,195,196)/t91-,92-,93-,94-,95-,96-,97-,98-,99-,100-,101-,102-,103-,104-,105-,106-,107-/m0/s1
+  standard_inchi_key: HJHLJUOSUXPSSA-LXZINMRSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001539
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lasso peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:124080859
+producer_organisms:
+- taxon_id: NCBITaxon:1003195
+  taxon_label: Streptomyces cattleya NRRL 8057 = DSM 46488
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001539
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1007/s13765-017-0268-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001539 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001539
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1003195
+  organism_label: Streptomyces cattleya NRRL 8057 = DSM 46488
+  evidence:
+  - reference: DOI:10.1007/s13765-017-0268-x
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001539 entry version 4; citation taken from the entry level
+  genome_accession: genbank:FQ859185.1
+  locus_from: 77019
+  locus_to: 79728
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001539
+  source_label: cattlecin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-ee989b33fc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

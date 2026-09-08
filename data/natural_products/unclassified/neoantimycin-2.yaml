@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-fdb75d9649
+label: neoantimycin
+chemical_structure:
+  smiles: CCC(C)C1C(=O)OC(C(C(=O)OC(C(=O)OC(C(C(C(=O)O1)(C)C)O)CC2=CC=CC=C2)C(C)C)NC(=O)C3=C(C(=CC=C3)NC=O)O)C
+  standard_inchi: InChI=1S/C36H46N2O12/c1-8-20(4)29-34(45)47-21(5)26(38-31(42)23-15-12-16-24(27(23)40)37-18-39)32(43)49-28(19(2)3)33(44)48-25(17-22-13-10-9-11-14-22)30(41)36(6,7)35(46)50-29/h9-16,18-21,25-26,28-30,40-41H,8,17H2,1-7H3,(H,37,39)(H,38,42)
+  standard_inchi_key: JIJATTFJYJZEBT-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001919
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Antimycins
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:585842
+producer_organisms:
+- taxon_id: NCBITaxon:67339
+  taxon_label: Streptomyces orinoci
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001919
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:30166552
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001919 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001919
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:67339
+  organism_label: Streptomyces orinoci
+  evidence:
+  - reference: PMID:30166552
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001919 entry version 4; citation taken from the entry level
+  genome_accession: genbank:LC375136.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001919
+  source_label: neoantimycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-fdb75d9649
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,109 @@
+identifier: naturalproductmech:mibig-3e651964d5
+label: lomaiviticin E
+chemical_structure:
+  smiles: CC[C@@]1([C@H](C(=C2C(=CC3=C2C(=C4C(=O)C=CC(=O)C4=C3O)O)[C@H]1O[C@@H]5C[C@@H]([C@H]([C@@H](O5)C)N(C)C)O)O)[C@H]6C(=O)C7=C([C@H]([C@@]6(CC)O[C@H]8C[C@@H]([C@H]([C@@H](O8)C)OC)OC)O[C@@H]9C[C@@H]([C@H]([C@@H](O9)C)N(C)C)O)C(=[N+]=[N-])C1=C7C(=C2C(=O)C=CC(=O)C2=C1O)O)O[C@H]1C[C@@H]([C@H]([C@@H](O1)C)OC)OC
+  standard_inchi: InChI=1S/C70H86N4O24/c1-15-69(97-42-24-38(87-11)65(89-13)28(5)93-42)54(63(85)45-31(67(69)95-40-22-36(79)57(73(7)8)26(3)91-40)21-30-44(45)60(82)47-33(76)18-17-32(75)46(47)59(30)81)55-64(86)51-50-52(62(84)49-35(78)20-19-34(77)48(49)61(50)83)56(72-71)53(51)68(96-41-23-37(80)58(74(9)10)27(4)92-41)70(55,16-2)98-43-25-39(88-12)66(90-14)29(6)94-43/h17-21,26-29,36-43,54-55,57-58,65-68,79-85H,15-16,22-25H2,1-14H3/t26-,27-,28-,29-,36-,37-,38-,39-,40+,41+,42-,43-,54-,55-,57-,58-,65-,66-,67+,68+,69-,70-/m0/s1
+  standard_inchi_key: UUFARPZDPLRTPW-YHYZUSIDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000240
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+xrefs:
+- npatlas:NPA08789
+producer_organisms:
+- taxon_id: NCBITaxon:351187
+  taxon_label: Salinispora pacifica
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000240
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:23649992
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000240 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:369723
+  taxon_label: Salinispora tropica CNB-440
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000241
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:23649992
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000241 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000240
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:351187
+  organism_label: Salinispora pacifica
+  evidence:
+  - reference: PMID:23649992
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000240 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF731828.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+- accession: mibig:BGC0000241
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:369723
+  organism_label: Salinispora tropica CNB-440
+  evidence:
+  - reference: PMID:23649992
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000241 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000667.1
+  locus_from: 2460444
+  locus_to: 2522674
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000240
+  source_label: lomaiviticin E
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3e651964d5
+- source: MIBIG
+  source_id: BGC0000241
+  source_label: lomaiviticin E
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5d0fe1ad51
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000240, BGC0000241.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

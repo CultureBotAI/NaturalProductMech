@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-a2cd3daeea
+label: A-500359 A
+chemical_structure:
+  smiles: O[C@@H]1[C@H](OC)[C@@]([H])([C@H](C(N)=O)O[C@H]2OC(C(N[C@@H]3C(N[C@H](C)CCC3)=O)=O)=C[C@H](O)[C@@H]2O)O[C@H]1N(C=C4)C(NC4=O)=O
+  standard_inchi: InChI=1S/C24H33N5O12/c1-9-4-3-5-10(20(35)26-9)27-21(36)12-8-11(30)14(32)23(39-12)41-18(19(25)34)17-16(38-2)15(33)22(40-17)29-7-6-13(31)28-24(29)37/h6-11,14-18,22-23,30,32-33H,3-5H2,1-2H3,(H2,25,34)(H,26,35)(H,27,36)(H,28,31,37)/t9-,10+,11+,14+,15-,16+,17+,18-,22-,23-/m1/s1
+  standard_inchi_key: RVEJXOKUHHMFKS-BPJITGRLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000949
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Nucleosides
+  class_results:
+  - Pyrimidine nucleos(t)ides
+  is_glycoside: true
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:1911
+  taxon_label: Streptomyces griseus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000949
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:19478828
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000949 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000949
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1911
+  organism_label: Streptomyces griseus
+  evidence:
+  - reference: PMID:19478828
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000949 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB476988.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000949
+  source_label: A-500359 A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a2cd3daeea
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

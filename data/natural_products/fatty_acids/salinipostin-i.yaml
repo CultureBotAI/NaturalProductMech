@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-95871863b6
+label: Salinipostin I
+chemical_structure:
+  smiles: CCCCCCCCCCCCCCCO[P@]1(=O)OC[C@@H]2COC(=O)C2=C(O1)CC
+  standard_inchi: InChI=1S/C23H41O6P/c1-3-5-6-7-8-9-10-11-12-13-14-15-16-17-27-30(25)28-19-20-18-26-23(24)22(20)21(4-2)29-30/h20H,3-19H2,1-2H3/t20-,30+/m0/s1
+  standard_inchi_key: GTTKIJYSZBIQBX-WENCNXQZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001458
+np_pathway: FATTY_ACIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Glycerophospholipids
+  class_results:
+  - Long-Chain Bicyclic Phosphotriester
+  is_glycoside: false
+bgc_class:
+- OTHER
+compound_classes:
+- Lactone
+xrefs:
+- npatlas:NPA008358
+producer_organisms:
+- taxon_id: NCBITaxon:369723
+  taxon_label: Salinispora tropica CNB-440
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001458
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1021/jo5024409
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001458 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001458
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:369723
+  organism_label: Salinispora tropica CNB-440
+  evidence:
+  - reference: DOI:10.1021/jo5024409
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001458 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:NC_009380.1
+  locus_from: 4714378
+  locus_to: 4725672
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001458
+  source_label: Salinipostin I
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-95871863b6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

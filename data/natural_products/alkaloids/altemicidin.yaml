@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-a58ee03ee4
+label: altemicidin
+chemical_structure:
+  smiles: CN1C[C@@H]2[C@@H](C[C@@H]([C@]2(C(=O)O)NC(=O)CS(=O)(=O)N)O)C(=C1)C(=O)N
+  standard_inchi: InChI=1S/C13H20N4O7S/c1-17-3-7(11(14)20)6-2-9(18)13(12(21)22,8(6)4-17)16-10(19)5-25(15,23)24/h3,6,8-9,18H,2,4-5H2,1H3,(H2,14,20)(H,16,19)(H,21,22)(H2,15,23,24)/t6-,8+,9-,13+/m0/s1
+  standard_inchi_key: VZRFZUPFQKSXPV-VPFIQFBESA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001925
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Simple amide alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:11036174
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001925
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:30643149
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001925 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001925
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:30643149
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001925 entry version 4; citation taken from the entry level
+  genome_accession: genbank:LC420052.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001925
+  source_label: altemicidin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-a58ee03ee4
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

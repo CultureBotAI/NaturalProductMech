@@ -1,0 +1,114 @@
+identifier: naturalproductmech:mibig-9f978c0043
+label: xiamycin
+chemical_structure:
+  smiles: '[H][C@@]12CCC3=C(C=C4C(NC5=C4C=CC=C5)=C3)[C@@]1(C)CC[C@H](O)[C@@]2(C)C(O)=O'
+  standard_inchi: InChI=1S/C23H25NO3/c1-22-10-9-20(25)23(2,21(26)27)19(22)8-7-13-11-18-15(12-16(13)22)14-5-3-4-6-17(14)24-18/h3-6,11-12,19-20,24-25H,7-10H2,1-2H3,(H,26,27)/t19-,20+,22-,23+/m1/s1
+  standard_inchi_key: XUTJPVCJXVRRLB-SKWRMQMOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000665
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Carbazole alkaloids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+- OTHER
+compound_classes:
+- Meroterpenoid
+xrefs:
+- npatlas:NPA012008
+- pubchem:38358410
+producer_organisms:
+- taxon_id: NCBITaxon:995841
+  taxon_label: Streptomyces sp. HKI0576
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000665
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1016/j.bmcl.2010.09.010
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000665 entry version 5; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:1194094
+  taxon_label: Streptomyces sp. SCSIO 02999
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000666
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:22591327
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000666 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000665
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:995841
+  organism_label: Streptomyces sp. HKI0576
+  evidence:
+  - reference: DOI:10.1016/j.bmcl.2010.09.010
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000665 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:HE815466.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+- accession: mibig:BGC0000666
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1194094
+  organism_label: Streptomyces sp. SCSIO 02999
+  evidence:
+  - reference: PMID:22591327
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000666 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JQ812811.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000665
+  source_label: xiamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-9f978c0043
+- source: MIBIG
+  source_id: BGC0000666
+  source_label: xiamycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-1497e91b27
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000665, BGC0000666.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

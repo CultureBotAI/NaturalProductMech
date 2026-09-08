@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-9a5b28276d
+label: avilamycin C
+chemical_structure:
+  smiles: C[C@@H]1[C@H]([C@@H](C[C@@H](O1)O[C@@H]2[C@H](OC3(C[C@H]2O)O[C@@H]4[C@H](O[C@H](C[C@]4(O3)C)O[C@@H]5[C@H]([C@@H](O[C@@H]([C@@H]5OC)C)O[C@@H]6[C@H](O[C@H]([C@H]([C@H]6O)OC)O[C@H]7[C@@H]([C@H]8[C@H](CO7)O[C@@]9(O8)[C@H]1[C@H]([C@@]([C@H](O9)C)(C(C)O)O)OCO1)OC(=O)C(C)C)COC)O)C)C)O)OC(=O)C1=C(C(=C(C(=C1OC)Cl)O)Cl)C
+  standard_inchi: InChI=1S/C61H90Cl2O32/c1-21(2)53(70)87-49-45-32(92-61(93-45)52-51(78-20-79-52)60(72,27(8)64)28(9)91-61)19-77-56(49)89-57-48(76-14)39(68)44(31(83-57)18-73-11)88-55-40(69)47(43(74-12)24(5)82-55)85-34-17-58(10)50(26(7)81-34)94-59(95-58)16-30(66)42(25(6)90-59)84-33-15-29(65)41(23(4)80-33)86-54(71)35-22(3)36(62)38(67)37(63)46(35)75-13/h21,23-34,39-45,47-52,55-57,64-69,72H,15-20H2,1-14H3/t23-,24-,25-,26-,27?,28-,29-,30-,31-,32+,33+,34+,39+,40-,41-,42-,43+,44-,45-,47-,48+,49-,50-,51-,52-,55+,56+,57+,58-,59?,60+,61-/m1/s1
+  standard_inchi_key: AEIFATUAVHHRBC-GYPCSUJESA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000026
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Saccharides
+  class_results:
+  - Orthosomycins
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- pubchem:20055307
+producer_organisms:
+- taxon_id: NCBITaxon:1160705
+  taxon_label: Streptomyces viridochromogenes Tue57
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000026
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:11410376
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000026 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000026
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1160705
+  organism_label: Streptomyces viridochromogenes Tue57
+  evidence:
+  - reference: PMID:11410376
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000026 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF333038.2
+  locus_from: 1590
+  locus_to: 39999
+  bgc_class:
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000026
+  source_label: avilamycin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-9a5b28276d
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

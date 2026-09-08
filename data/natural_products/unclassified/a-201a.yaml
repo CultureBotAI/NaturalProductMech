@@ -1,0 +1,61 @@
+identifier: naturalproductmech:mibig-ee9664cae0
+label: A-201A
+chemical_structure:
+  smiles: C[C@@H]1[C@H]([C@@H]([C@@H]([C@H](O1)OC/C(=C/2\[C@H]([C@@H]([C@@H](O2)OC3=CC=C(C=C3)/C=C(\C)/C(=O)N[C@@H]4[C@H](O[C@H]([C@@H]4O)N5C=NC6=C5N=CN=C6N(C)C)CO)O)O)/OC)O)OC)OC
+  standard_inchi: InChI=1S/C37H50N6O14/c1-17(34(49)41-23-21(13-44)56-35(25(23)45)43-16-40-24-32(42(3)4)38-15-39-33(24)43)12-19-8-10-20(11-9-19)55-37-27(47)26(46)30(57-37)22(50-5)14-53-36-28(48)31(52-7)29(51-6)18(2)54-36/h8-12,15-16,18,21,23,25-29,31,35-37,44-48H,13-14H2,1-7H3,(H,41,49)/b17-12+,30-22-/t18-,21-,23-,25-,26+,27+,28+,29-,31-,35-,36+,37-/m1/s1
+  standard_inchi_key: HELPZWNRUYNCJQ-WYPDLKSPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000873
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:76900419
+producer_organisms:
+- taxon_id: NCBITaxon:66854
+  taxon_label: Saccharothrix mutabilis subsp. capreolus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000873
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:7737149
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000873 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000873
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:66854
+  organism_label: Saccharothrix mutabilis subsp. capreolus
+  evidence:
+  - reference: PMID:7737149
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000873 entry version 3; citation taken from the entry level
+  genome_accession: genbank:X84374.3
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000873
+  source_label: A-201A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-ee9664cae0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-bf4cb36361
+label: varicidin A
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C(=O)C(=C(O)[C@@H]2[C@H]3CCCC[C@H]3C=C[C@H]2C(=O)O)C(=O)N1C
+  standard_inchi: InChI=1S/C21H29NO5/c1-4-11(2)17-19(24)16(20(25)22(17)3)18(23)15-13-8-6-5-7-12(13)9-10-14(15)21(26)27/h9-15,17,23H,4-8H2,1-3H3,(H,26,27)/t11-,12-,13-,14+,15+,17-/m0/s1
+  standard_inchi_key: SKXOEWAUSCYCSA-YDVRFCCISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002304
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 3-Decalinoyltetramic acids
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA032902
+producer_organisms:
+- taxon_id: NCBITaxon:28576
+  taxon_label: Talaromyces variabilis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002304
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Enzymatic assays.'
+  evidence:
+  - reference: PMID:30609896
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002304 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002304
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:28576
+  organism_label: Talaromyces variabilis
+  evidence:
+  - reference: PMID:30609896
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002304 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MK376933.1
+  locus_from: 1
+  locus_to: 25713
+  bgc_class:
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002304
+  source_label: varicidin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-bf4cb36361
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,169 @@
+identifier: naturalproductmech:mibig-cec8c68a75
+label: myxochelin A
+chemical_structure:
+  smiles: C1=CC(=C(C(=C1)O)O)C(=O)NCCCC[C@@H](CO)NC(=O)C2=C(C(=CC=C2)O)O
+  standard_inchi: InChI=1S/C20H24N2O7/c23-11-12(22-20(29)14-7-4-9-16(25)18(14)27)5-1-2-10-21-19(28)13-6-3-8-15(24)17(13)26/h3-4,6-9,12,23-27H,1-2,5,10-11H2,(H,21,28)(H,22,29)/t12-/m0/s1
+  standard_inchi_key: WNBVGSNESTZACV-LBPRGKRZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002491
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Ornithine alkaloids
+  class_results:
+  - Polyamines
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA002219
+- npatlas:NPA02219
+- pubchem:16093504
+producer_organisms:
+- taxon_id: NCBITaxon:43662
+  taxon_label: Pseudoalteromonas piscicida
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002491
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:30217842
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002491 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:246197
+  taxon_label: Myxococcus xanthus DK 1622
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002492
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:30217842
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002492 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:675526
+  taxon_label: Stigmatella aurantiaca Sg a15
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001345
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:11562468
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001345 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:83451
+  taxon_label: Archangium violaceum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002324
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:34623817
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002324 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002491
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:43662
+  organism_label: Pseudoalteromonas piscicida
+  evidence:
+  - reference: PMID:30217842
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002491 entry version 3; citation taken from the entry level
+  genome_accession: genbank:JXXW01000072.1
+  locus_from: 1877
+  locus_to: 18906
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+- accession: mibig:BGC0002492
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:246197
+  organism_label: Myxococcus xanthus DK 1622
+  evidence:
+  - reference: PMID:30217842
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002492 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP000113.1
+  locus_from: 4337073
+  locus_to: 4350875
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Enzymatic assays
+- accession: mibig:BGC0001345
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:675526
+  organism_label: Stigmatella aurantiaca Sg a15
+  evidence:
+  - reference: PMID:11562468
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001345 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF299336.1
+  bgc_class:
+  - NRPS
+- accession: mibig:BGC0002324
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:83451
+  organism_label: Archangium violaceum
+  evidence:
+  - reference: PMID:34623817
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002324 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP069338.1
+  locus_from: 8359747
+  locus_to: 8377243
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002491
+  source_label: myxochelin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-cec8c68a75
+- source: MIBIG
+  source_id: BGC0002492
+  source_label: myxochelin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-98c13812b0
+- source: MIBIG
+  source_id: BGC0001345
+  source_label: myxochelin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b9324089ad
+- source: MIBIG
+  source_id: BGC0002324
+  source_label: myxochelin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-6fa0f02fcb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001345, BGC0002324,
+    BGC0002491, BGC0002492. Confirm they describe the same compound rather than an
+    upstream cross-reference error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-4d7bfe46a8
+label: pseudomonic acid A
+chemical_structure:
+  smiles: C[C@H](O)[C@H](C)[C@@H]1O[C@H]1C[C@H]1CO[C@@H](C\C(C)=C\C(=O)OCCCCCCCCC(O)=O)[C@H](O)[C@@H]1O
+  standard_inchi: InChI=1S/C26H44O9/c1-16(13-23(30)33-11-9-7-5-4-6-8-10-22(28)29)12-20-25(32)24(31)19(15-34-20)14-21-26(35-21)17(2)18(3)27/h13,17-21,24-27,31-32H,4-12,14-15H2,1-3H3,(H,28,29)/b16-13+/t17-,18-,19-,20-,21-,24+,25-,26-/m0/s1
+  standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000182
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA06173
+producer_organisms:
+- taxon_id: NCBITaxon:294
+  taxon_label: Pseudomonas fluorescens
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000182
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:11495990
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000182 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000182
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:294
+  organism_label: Pseudomonas fluorescens
+  evidence:
+  - reference: PMID:11495990
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000182 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF318063.3
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000182
+  source_label: pseudomonic acid A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4d7bfe46a8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

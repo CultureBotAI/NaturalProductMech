@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-209109010c
+label: trichostatin RK
+chemical_structure:
+  smiles: CC(/C=C(\C)/C=C/C(=O)NC)C(=O)C1=CC=C(C=C1)N(C)C
+  standard_inchi: InChI=1S/C18H24N2O2/c1-13(6-11-17(21)19-3)12-14(2)18(22)15-7-9-16(10-8-15)20(4)5/h6-12,14H,1-5H3,(H,19,21)/b11-6+,13-12+
+  standard_inchi_key: MOIJZGIUQNRPTH-BPLLCVTGSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002364
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Peptide alkaloids
+  class_results:
+  - Simple amide alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA001835
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002364
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32355936
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002364 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002364
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:32355936
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002364 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MH817137.1
+  locus_from: 11091
+  locus_to: 36420
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002364
+  source_label: trichostatin RK
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-209109010c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-f72df1eae3
+label: WS 79089B
+chemical_structure:
+  smiles: CC(CC1=C(C(=C2C(=C1)CC(C3=C2C(=C4C(=C3OC)C(=O)C5=C(C4=O)C=CC=C5O)O)O)O)C(=O)O)O
+  standard_inchi: InChI=1S/C27H22O10/c1-9(28)6-10-7-11-8-14(30)18-19(15(11)23(32)16(10)27(35)36)25(34)20-21(26(18)37-2)24(33)17-12(22(20)31)4-3-5-13(17)29/h3-5,7,9,14,28-30,32,34H,6,8H2,1-2H3,(H,35,36)
+  standard_inchi_key: XBWMJMIOZSMYBR-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002732
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Pradimicins
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA003624
+producer_organisms:
+- taxon_id: NCBITaxon:479432
+  taxon_label: Streptosporangium roseum DSM 43021
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002732
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:32632478
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002732 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002732
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:479432
+  organism_label: Streptosporangium roseum DSM 43021
+  evidence:
+  - reference: PMID:32632478
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002732 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP001814.1
+  locus_from: 4607917
+  locus_to: 4646430
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002732
+  source_label: WS 79089B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-f72df1eae3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-13030664c0
+label: clifednamide E
+chemical_structure:
+  smiles: C[C@@H]1C[C@H]2[C@@H](C=C[C@@H]3[C@H]4C/C=C\C(=O)NCC[C@H](O)[C@@H]5NC(=O)C(=C(O)/C=C/[C@@H]4C[C@@H]32)C5=O)[C@@H]1C(=O)CO
+  standard_inchi: InChI=1S/C29H36N2O7/c1-14-11-19-18(25(14)23(35)13-32)7-6-17-16-3-2-4-24(36)30-10-9-22(34)27-28(37)26(29(38)31-27)21(33)8-5-15(16)12-20(17)19/h2,4-8,14-20,22,25,27,32-34H,3,9-13H2,1H3,(H,30,36)(H,31,38)/b4-2-,8-5+,26-21?/t14-,15-,16+,17-,18-,19+,20+,22+,25-,27+/m1/s1
+  standard_inchi_key: XBYZKONYFNHZTI-FFUHIGGASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002434
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrocyclic tetramic acids
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA029428
+producer_organisms:
+- taxon_id: NCBITaxon:1871188
+  taxon_label: Kitasatospora sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002434
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32915576
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002434 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002434
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1871188
+  organism_label: Kitasatospora sp.
+  evidence:
+  - reference: PMID:32915576
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002434 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT419890.1
+  bgc_class:
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002434
+  source_label: clifednamide E
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-13030664c0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

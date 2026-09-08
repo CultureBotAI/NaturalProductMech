@@ -1,0 +1,62 @@
+identifier: naturalproductmech:mibig-2193edd919
+label: 4-methyl-5-methylheptatriene-β-ketolactone
+chemical_structure:
+  smiles: C\C=C\C=C\C=C(/C)C1OC(=O)CC(=O)C1C
+  standard_inchi: InChI=1S/C14H18O3/c1-4-5-6-7-8-10(2)14-11(3)12(15)9-13(16)17-14/h4-8,11,14H,9H2,1-3H3/b5-4+,7-6+,10-8+
+  standard_inchi_key: DXBJPNHJQDZLKI-JWVJYVHFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002170
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:1549217
+  taxon_label: Aspergillus stellatus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002170
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:31678008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002170 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002170
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1549217
+  organism_label: Aspergillus stellatus
+  evidence:
+  - reference: PMID:31678008
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002170 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LC492132.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002170
+  source_label: 4-methyl-5-methylheptatriene-β-ketolactone
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-2193edd919
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

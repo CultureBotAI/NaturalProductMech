@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-b7f6dfcc6b
+label: paenilarvin C
+chemical_structure:
+  smiles: CC(C)CCCCCCCCC[C@H]1CC(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@@H](C(=O)N[C@H](C(=O)N2CCC[C@@H]2C(=O)N[C@@H](C(=O)N[C@H](C(=O)N1)CC(=O)N)CC(=O)N)CCC(=O)N)CC(=O)N)CC3=CC=C(C=C3)O)CC(=O)N
+  standard_inchi: InChI=1S/C50H77N13O14/c1-27(2)11-8-6-4-3-5-7-9-12-29-22-43(70)57-33(23-39(52)66)46(73)59-32(21-28-14-16-30(64)17-15-28)45(72)61-35(25-41(54)68)47(74)58-31(18-19-38(51)65)50(77)63-20-10-13-37(63)49(76)62-36(26-42(55)69)48(75)60-34(24-40(53)67)44(71)56-29/h14-17,27,29,31-37,64H,3-13,18-26H2,1-2H3,(H2,51,65)(H2,52,66)(H2,53,67)(H2,54,68)(H2,55,69)(H,56,71)(H,57,70)(H,58,74)(H,59,73)(H,60,75)(H,61,72)(H,62,76)/t29-,31-,32+,33-,34-,35+,36+,37+/m0/s1
+  standard_inchi_key: BAZZDDBHNIGLGB-AWNDOMLDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000402
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:139588781
+producer_organisms:
+- taxon_id: NCBITaxon:697284
+  taxon_label: Paenibacillus larvae subsp. larvae DSM 25430
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000402
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25069424
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000402 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000402
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:697284
+  organism_label: Paenibacillus larvae subsp. larvae DSM 25430
+  evidence:
+  - reference: PMID:25069424
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000402 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP003355.1
+  locus_from: 1841078
+  locus_to: 1878357
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000402
+  source_label: paenilarvin C
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-b7f6dfcc6b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

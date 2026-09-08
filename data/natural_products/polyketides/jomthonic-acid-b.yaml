@@ -1,0 +1,63 @@
+identifier: naturalproductmech:mibig-07356c7a34
+label: jomthonic acid B
+chemical_structure:
+  smiles: C/C=C/C=C/C(=O)N[C@@H]([C@H](C)C1=CC=CC=C1)C(=O)O[C@H](C)[C@@H](C)C(=O)O
+  standard_inchi: InChI=1S/C21H27NO5/c1-5-6-8-13-18(23)22-19(15(3)17-11-9-7-10-12-17)21(26)27-16(4)14(2)20(24)25/h5-16,19H,1-4H3,(H,22,23)(H,24,25)/b6-5+,13-8+/t14-,15-,16-,19+/m1/s1
+  standard_inchi_key: KNPRAIKHBOCDJD-JSELGJHASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001457
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:101885532
+producer_organisms:
+- taxon_id: NCBITaxon:285557
+  taxon_label: Streptomyces caniferus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001457
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:30065171
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001457 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001457
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:285557
+  organism_label: Streptomyces caniferus
+  evidence:
+  - reference: PMID:30065171
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001457 entry version 4; citation taken from the entry level
+  genome_accession: genbank:LT990689.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001457
+  source_label: jomthonic acid B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-07356c7a34
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

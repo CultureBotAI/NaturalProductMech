@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-5e65a927fa
+label: heat-stable antifungal factor
+chemical_structure:
+  smiles: CC[C@H]1C[C@@H]2C[C@@H]3[C@H]4C/C=C\C(=O)NCCC(C5C(=O)C(=C(/C=C/[C@@H]4C[C@@H]([C@H]3[C@@H]2[C@H]1C)O)O)C(=O)N5)O
+  standard_inchi: InChI=1S/C29H40N2O6/c1-3-15-11-17-12-19-18-5-4-6-23(35)30-10-9-21(33)27-28(36)26(29(37)31-27)20(32)8-7-16(18)13-22(34)25(19)24(17)14(15)2/h4,6-8,14-19,21-22,24-25,27,32-34H,3,5,9-13H2,1-2H3,(H,30,35)(H,31,37)/b6-4-,8-7+,26-20?/t14-,15-,16+,17+,18-,19+,21?,22-,24+,25-,27?/m0/s1
+  standard_inchi_key: VYCDZNHSSDXACI-SGXRADKASA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000999
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrocyclic tetramic acids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:101934630
+- npatlas:NPA03389
+producer_organisms:
+- taxon_id: NCBITaxon:69
+  taxon_label: Lysobacter enzymogenes
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000999
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:17074795
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000999 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000999
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:69
+  organism_label: Lysobacter enzymogenes
+  evidence:
+  - reference: PMID:17074795
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000999 entry version 4; citation taken from the entry level
+  genome_accession: genbank:EF028635.2
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000999
+  source_label: heat-stable antifungal factor
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-5e65a927fa
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

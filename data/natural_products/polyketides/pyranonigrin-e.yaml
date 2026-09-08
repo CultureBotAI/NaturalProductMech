@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-2ff4117bf2
+label: pyranonigrin E
+chemical_structure:
+  smiles: CCCCC\C=C\C=C\C1=C(O)C(=O)C2=C(O1)C(=C)N(C)C2=O
+  standard_inchi: InChI=1S/C18H21NO4/c1-4-5-6-7-8-9-10-11-13-15(20)16(21)14-17(23-13)12(2)19(3)18(14)22/h8-11,20H,2,4-7H2,1,3H3/b9-8+,11-10+
+  standard_inchi_key: ITJJIMKGOLMIJY-BNFZFUHLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001124
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA013692
+producer_organisms:
+- taxon_id: NCBITaxon:380704
+  taxon_label: Aspergillus niger ATCC 1015
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001124
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:21543515
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001124 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001124
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:380704
+  organism_label: Aspergillus niger ATCC 1015
+  evidence:
+  - reference: PMID:21543515
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001124 entry version 4; citation taken from the entry level
+  genome_accession: genbank:ACJE01000019.1
+  locus_from: 122605
+  locus_to: 153844
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001124
+  source_label: pyranonigrin E
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-2ff4117bf2
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

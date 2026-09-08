@@ -1,0 +1,63 @@
+identifier: naturalproductmech:mibig-a6b40bb7d7
+label: erdacin
+chemical_structure:
+  smiles: CC(=O)[C@H]1C2=C3C(C(C(C)=O)=C2C2=CC=CC(O)=C2[C@@]1(O)C(O)=O)=C(O)C(=O)C1=C(O)C=CC=C31
+  standard_inchi: InChI=1S/C26H18O9/c1-9(27)15-18-12-6-4-8-14(30)22(12)26(35,25(33)34)21(10(2)28)19(18)17-11-5-3-7-13(29)16(11)23(31)24(32)20(15)17/h3-8,21,29-30,32,35H,1-2H3,(H,33,34)/t21-,26+/m0/s1
+  standard_inchi_key: NNZDEXBUGGULIY-HFZDXXHNSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000221
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA015846
+producer_organisms:
+- taxon_id: NCBITaxon:684592
+  taxon_label: uncultured soil bacterium V167
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000221
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:19621341
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000221 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000221
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:684592
+  organism_label: uncultured soil bacterium V167
+  evidence:
+  - reference: PMID:19621341
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000221 entry version 5; citation taken from the entry level
+  genome_accession: genbank:FJ719113.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000221
+  source_label: erdacin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a6b40bb7d7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

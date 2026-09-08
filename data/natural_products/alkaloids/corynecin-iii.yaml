@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-1752f46d70
+label: corynecin III
+chemical_structure:
+  smiles: CC(C)C(=O)N[C@H](CO)[C@H](O)C1=CC=C([N+](=O)[O-])C=C1
+  standard_inchi: InChI=1S/C13H18N2O5/c1-8(2)13(18)14-11(7-16)12(17)9-3-5-10(6-4-9)15(19)20/h3-6,8,11-12,16-17H,7H2,1-2H3,(H,14,18)/t11-,12-/m1/s1
+  standard_inchi_key: IUBVSPMUTLUQHL-VXGBXAGGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002284
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Pseudoalkaloids
+  class_results:
+  - Phenylalanine-derived alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA033050
+producer_organisms:
+- taxon_id: NCBITaxon:1727214
+  taxon_label: Rhodococcus sp. H-CA8f
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002284
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1080/00021369.1972.10860545
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002284 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002284
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1727214
+  organism_label: Rhodococcus sp. H-CA8f
+  evidence:
+  - reference: DOI:10.1080/00021369.1972.10860545
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002284 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CP023720.1
+  locus_from: 4328177
+  locus_to: 4346076
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002284
+  source_label: corynecin III
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1752f46d70
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

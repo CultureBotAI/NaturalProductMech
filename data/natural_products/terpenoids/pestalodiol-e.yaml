@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-2b8aee01b5
+label: pestalodiol E
+chemical_structure:
+  smiles: CC(C#CC1=C(O)C(C/C=C(C)/C)=CC(O)=C1)=C
+  standard_inchi: InChI=1S/C16H18O2/c1-11(2)5-7-13-9-15(17)10-14(16(13)18)8-6-12(3)4/h6,9-10,17-18H,1,8H2,2-4H3
+  standard_inchi_key: XLJZQTJROGTDLX-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002290
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Meroterpenoids
+  class_results:
+  - Miscellaneous meroterpenoids
+  is_glycoside: false
+bgc_class:
+- OTHER
+producer_organisms:
+- taxon_id: NCBITaxon:1896107
+  taxon_label: Biscogniauxia sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002290
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:32364293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002290 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002290
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1896107
+  organism_label: Biscogniauxia sp.
+  evidence:
+  - reference: PMID:32364293
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002290 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT109335.1
+  locus_from: 1
+  locus_to: 37984
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002290
+  source_label: pestalodiol E
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-2b8aee01b5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

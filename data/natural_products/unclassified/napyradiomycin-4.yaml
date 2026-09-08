@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-128f11885c
+label: napyradiomycin 4
+chemical_structure:
+  smiles: C[C@]1(O)CC[C@H](Cl)C(C)(C)C1C[C@]23C(C4=C(C([C@@]2(O)C[C@@H](Cl)C(C)(C)O3)=O)C(O)=C(C)C(O)=C4)=O
+  standard_inchi: InChI=1S/C26H34Cl2O7/c1-12-14(29)9-13-18(19(12)30)21(32)25(34)11-17(28)23(4,5)35-26(25,20(13)31)10-15-22(2,3)16(27)7-8-24(15,6)33/h9,15-17,29-30,33-34H,7-8,10-11H2,1-6H3/t15?,16-,17+,24-,25-,26-/m0/s1
+  standard_inchi_key: NLLBVEYNGJBFKB-JBPAMENMSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001079
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  - Terpenoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+- TERPENE
+producer_organisms:
+- taxon_id: NCBITaxon:270689
+  taxon_label: Streptomyces aculeolatus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001079
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:17392281
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001079 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001079
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:270689
+  organism_label: Streptomyces aculeolatus
+  evidence:
+  - reference: PMID:17392281
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001079 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF397638.1
+  bgc_class:
+  - PKS
+  - TERPENE
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001079
+  source_label: napyradiomycin 4
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-128f11885c
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

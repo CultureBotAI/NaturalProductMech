@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-aa0393638b
+label: syringopeptin 25A
+chemical_structure:
+  smiles: CCCCCCCC(CC(=N/C(=C\C)/C(=O)N1CCC[C@H]1C(=N[C@@H](C(C)C)C(=N[C@@H](C)C(=N[C@@H](C)C(=N[C@@H](C(C)C)C(=N[C@@H](CC(C)C)C(=N[C@@H](C)C(=N[C@@H](C)C(=N/C(=C\C)/C(=N[C@@H](C(C)C)C(=N/C(=C\C)/C(=N[C@@H](C)C(=N[C@@H](C(C)C)C(=N[C@@H](C)C(=N[C@@H](C)C(=N/C(=C\C)/C(=N[C@H]2C(OC(=O)[C@@H](N=C([C@@H](N=C([C@@H](N=C([C@@H](N=C([C@@H](N=C([C@@H](N=C([C@@H](N=C2O)CO)O)C)O)C(C)C)O)C)O)CCN)O)CCN)O)CC3=CC=C(C=C3)O)C)O)O)O)O)O)O)O)O)O)O)O)O)O)O)O)O)O)O
+  standard_inchi: InChI=1S/C113H183N27O30/c1-28-33-34-35-36-38-71(143)51-82(144)125-75(32-5)112(168)140-48-37-39-81(140)105(161)138-85(56(12)13)108(164)123-61(20)91(147)118-65(24)95(151)136-86(57(14)15)110(166)131-78(49-53(6)7)103(159)120-59(18)89(145)116-62(21)92(148)126-73(30-3)99(155)137-87(58(16)17)109(165)128-72(29-2)98(154)119-66(25)96(152)134-83(54(8)9)106(162)122-60(19)90(146)117-63(22)93(149)127-74(31-4)100(156)139-88-68(27)170-113(169)79(50-69-40-42-70(142)43-41-69)132-102(158)77(45-47-115)130-101(157)76(44-46-114)129-94(150)64(23)124-107(163)84(55(10)11)135-97(153)67(26)121-104(160)80(52-141)133-111(88)167/h29-32,40-43,53-68,71,76-81,83-88,141-143H,28,33-39,44-52,114-115H2,1-27H3,(H,116,145)(H,117,146)(H,118,147)(H,119,154)(H,120,159)(H,121,160)(H,122,162)(H,123,164)(H,124,163)(H,125,144)(H,126,148)(H,127,149)(H,128,165)(H,129,150)(H,130,157)(H,131,166)(H,132,158)(H,133,167)(H,134,152)(H,135,153)(H,136,151)(H,137,155)(H,138,161)(H,139,156)/b72-29-,73-30-,74-31-,75-32-/t59-,60-,61-,62-,63-,64-,65-,66-,67-,68?,71?,76-,77-,78-,79-,80-,81-,83-,84-,85-,86-,87-,88-/m0/s1
+  standard_inchi_key: UMIOOXCZNZIVGY-KALDKNCFSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000438
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:101985870
+producer_organisms:
+- taxon_id: NCBITaxon:321
+  taxon_label: Pseudomonas syringae pv. syringae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000438
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:11277431
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000438 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000438
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:321
+  organism_label: Pseudomonas syringae pv. syringae
+  evidence:
+  - reference: PMID:11277431
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000438 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF286216.2
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000438
+  source_label: syringopeptin 25A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-aa0393638b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

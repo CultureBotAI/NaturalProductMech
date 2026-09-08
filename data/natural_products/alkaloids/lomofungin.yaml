@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-3ef8ac9bbc
+label: lomofungin
+chemical_structure:
+  smiles: COC(=O)C1=C2C(=C(C=C1)O)NC3=C(C(=CC(=O)C3=N2)O)C=O
+  standard_inchi: InChI=1S/C15H10N2O6/c1-23-15(22)6-2-3-8(19)13-11(6)16-14-10(21)4-9(20)7(5-18)12(14)17-13/h2-5,17,19-20H,1H3
+  standard_inchi_key: IIWPVOMPFBBVBL-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001302
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Phenazine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:5351222
+producer_organisms:
+- taxon_id: NCBITaxon:68229
+  taxon_label: Streptomyces lomondensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001302
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26305803
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001302 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001302
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68229
+  organism_label: Streptomyces lomondensis
+  evidence:
+  - reference: PMID:26305803
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001302 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KP721214.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001302
+  source_label: lomofungin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-3ef8ac9bbc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

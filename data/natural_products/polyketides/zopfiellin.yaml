@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-8a066a26bc
+label: zopfiellin
+chemical_structure:
+  smiles: O=C(OC1=O)C2=C1[C@@]([C@H](O)CCCC)([H])CC(C(OC3=O)=O)=C3[C@H](CCCC)C2
+  standard_inchi: InChI=1S/C21H26O7/c1-3-5-7-11-9-13-17(21(26)28-18(13)23)12(15(22)8-6-4-2)10-14-16(11)20(25)27-19(14)24/h11-12,15,22H,3-10H2,1-2H3/t11-,12+,15-/m1/s1
+  standard_inchi_key: ASHUKCNWORBQKK-TYNCELHUSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002222
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - Nonadrides
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:2819868
+  taxon_label: Diffractella curvata
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002222
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:32065755
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002222 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002222
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2819868
+  organism_label: Diffractella curvata
+  evidence:
+  - reference: PMID:32065755
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002222 entry version 2; citation taken from the entry level
+  genome_accession: genbank:LC516887.1
+  locus_from: 8212
+  locus_to: 41229
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002222
+  source_label: zopfiellin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-8a066a26bc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

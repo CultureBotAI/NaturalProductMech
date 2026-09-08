@@ -1,0 +1,106 @@
+identifier: naturalproductmech:mibig-f21202a3e0
+label: pladienolide B
+chemical_structure:
+  smiles: CCC(C(C)C1C(O1)CC(C)/C=C/C=C(\C)/C2C(/C=C/C(C(CCC(CC(=O)O2)O)(C)O)OC(=O)C)C)O
+  standard_inchi: InChI=1S/C30H48O8/c1-8-24(33)21(5)29-25(37-29)16-18(2)10-9-11-19(3)28-20(4)12-13-26(36-22(6)31)30(7,35)15-14-23(32)17-27(34)38-28/h9-13,18,20-21,23-26,28-29,32-33,35H,8,14-17H2,1-7H3/b10-9+,13-12+,19-11+
+  standard_inchi_key: SDOUORKJIJYJNW-VHSLCUDQSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002102
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA008881
+- npatlas:NPA08881
+producer_organisms:
+- taxon_id: NCBITaxon:58346
+  taxon_label: Streptomyces platensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002102
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.7164/antibiotics.57.188
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002102 entry version 2; citation taken from the compound bioactivity
+      level
+- taxon_id: NCBITaxon:58346
+  taxon_label: Streptomyces platensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000126
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:18997414
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000126 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002102
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:58346
+  organism_label: Streptomyces platensis
+  evidence:
+  - reference: DOI:10.7164/antibiotics.57.188
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002102 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MN974405.1
+  locus_from: 1
+  locus_to: 66051
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+- accession: mibig:BGC0000126
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:58346
+  organism_label: Streptomyces platensis
+  evidence:
+  - reference: PMID:18997414
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000126 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB435553.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002102
+  source_label: pladienolide B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-f21202a3e0
+- source: MIBIG
+  source_id: BGC0000126
+  source_label: pladienolide B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-29f34211f5
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000126, BGC0002102.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

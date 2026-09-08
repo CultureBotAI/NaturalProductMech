@@ -1,0 +1,99 @@
+identifier: naturalproductmech:mibig-86af1a69c4
+label: aerucyclamide A
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1C2=N[C@@H]([C@H](O2)C)C(=O)NCC3=NC(=CS3)C(=O)N[C@@H](C4=N[C@H](CS4)C(=O)N1)[C@@H](C)CC
+  standard_inchi: InChI=1S/C24H34N6O4S2/c1-6-11(3)17-23-30-19(13(5)34-23)22(33)25-8-16-26-14(9-35-16)20(31)29-18(12(4)7-2)24-27-15(10-36-24)21(32)28-17/h9,11-13,15,17-19H,6-8,10H2,1-5H3,(H,25,33)(H,28,32)(H,29,31)/t11-,12-,13+,15+,17-,18+,19-/m0/s1
+  standard_inchi_key: VJFRQMMMXJJUSM-VZGZUROSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000473
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+compound_classes:
+- Macrocyclic
+xrefs:
+- npatlas:NPA006720
+- npatlas:NPA016056
+producer_organisms:
+- taxon_id: NCBITaxon:449468
+  taxon_label: Microcystis aeruginosa NIES-298
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000473
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1128/aem.02392-07
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000473 entry version 4; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:449468
+  taxon_label: Microcystis aeruginosa NIES-298
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000473
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1128/aem.02392-07
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000473 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000473
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:449468
+  organism_label: Microcystis aeruginosa NIES-298
+  evidence:
+  - reference: DOI:10.1128/aem.02392-07
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000473 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AM774406.1
+  bgc_class:
+  - RIBOSOMAL
+- accession: mibig:BGC0000473
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:449468
+  organism_label: Microcystis aeruginosa NIES-298
+  evidence:
+  - reference: DOI:10.1128/aem.02392-07
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000473 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AM774406.1
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000473
+  source_label: aerucyclamide A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-86af1a69c4
+- source: MIBIG
+  source_id: BGC0000473
+  source_label: aerucyclamide B
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-f7031ef73b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

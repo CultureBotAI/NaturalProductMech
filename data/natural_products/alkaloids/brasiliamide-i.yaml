@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-5271b017b3
+label: brasiliamide I
+chemical_structure:
+  smiles: COC1=CC(C[C@H]2CN(C(C)=O)[C@@H](CC3=CC=CC=C3)CN2)=CC(OC)=C1O
+  standard_inchi: InChI=1S/C22H28N2O4/c1-15(25)24-14-18(23-13-19(24)10-16-7-5-4-6-8-16)9-17-11-20(27-2)22(26)21(12-17)28-3/h4-8,11-12,18-19,23,26H,9-10,13-14H2,1-3H3/t18-,19-/m0/s1
+  standard_inchi_key: PZFQCYWITYPTOJ-OALUTQOASA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002278
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- OTHER
+- NRPS
+xrefs:
+- npatlas:NPA032941
+producer_organisms:
+- taxon_id: NCBITaxon:104259
+  taxon_label: Penicillium brasilianum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002278
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Gene expression correlated
+    with compound production.'
+  evidence:
+  - reference: PMID:32436033
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002278 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002278
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:104259
+  organism_label: Penicillium brasilianum
+  evidence:
+  - reference: PMID:32436033
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002278 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CDHK01000003.1
+  locus_from: 3030630
+  locus_to: 3059149
+  bgc_class:
+  - OTHER
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002278
+  source_label: brasiliamide I
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-5271b017b3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

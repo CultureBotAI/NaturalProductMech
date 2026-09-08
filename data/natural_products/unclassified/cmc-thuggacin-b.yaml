@@ -1,0 +1,63 @@
+identifier: naturalproductmech:mibig-9f48ee3545
+label: Cmc-thuggacin B
+chemical_structure:
+  smiles: C/C=C(\C)/C=C(\C)/CC(C)C1C(C(C/C=C\C=C\C(CC(C(C2=NC(=CS2)/C=C(/C(=O)O1)\C)CO)O)O)O)O
+  standard_inchi: InChI=1S/C30H43NO7S/c1-6-18(2)12-19(3)13-20(4)28-27(36)25(34)11-9-7-8-10-23(33)15-26(35)24(16-32)29-31-22(17-39-29)14-21(5)30(37)38-28/h6-10,12,14,17,20,23-28,32-36H,11,13,15-16H2,1-5H3/b9-7-,10-8+,18-6+,19-12+,21-14+
+  standard_inchi_key: HZVUHVJYPOXVRG-IVQJDYIOSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001342
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:59317595
+producer_organisms:
+- taxon_id: NCBITaxon:52
+  taxon_label: Chondromyces crocatus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001342
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:20416506
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001342 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001342
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:52
+  organism_label: Chondromyces crocatus
+  evidence:
+  - reference: PMID:20416506
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001342 entry version 3; citation taken from the entry level
+  genome_accession: genbank:GQ981381.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001342
+  source_label: Cmc-thuggacin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-9f48ee3545
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

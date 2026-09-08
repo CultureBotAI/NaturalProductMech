@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-d49377c1db
+label: nisin A
+chemical_structure:
+  smiles: CCC(C)C1C(=O)NC(=C)C(=O)NC(C(=O)NC(CSCC(C(=O)N1)NC(=O)/C(=C/C)/NC(=O)C(C(C)CC)N)C(=O)NC2C(SCC(NC(=O)CNC(=O)C3CCCN3C2=O)C(=O)NC(CCCCN)C(=O)NC4C(SCC(NC(=O)CNC(=O)C(NC(=O)C(NC(=O)C(NC(=O)CNC4=O)C)CC(C)C)CCSC)C(=O)NC(CC(=O)N)C(=O)NC(CCSC)C(=O)NC(CCCCN)C(=O)NC5C(SCC6C(=O)NC(C(=O)NC(CSC(C(C(=O)N6)NC(=O)C(NC5=O)C)C)C(=O)NC(CO)C(=O)NC(C(C)CC)C(=O)NC(CC7=CNC=N7)C(=O)NC(C(C)C)C(=O)NC(=C)C(=O)NC(CCCCN)C(=O)O)CC8=CNC=N8)C)C)C)CC(C)C
+  standard_inchi: InChI=1S/C143H230N42O37S7/c1-24-69(11)105(148)135(213)162-82(27-4)118(196)174-94-58-225-59-95(175-123(201)89(48-67(7)8)169-115(193)74(16)158-138(216)107(70(12)25-2)180-132(94)210)133(211)184-112-79(21)229-61-96(160-104(190)56-152-134(212)100-38-34-44-185(100)142(112)220)128(206)164-84(36-29-32-42-145)120(198)182-109-76(18)226-60-97(161-103(189)55-151-117(195)85(39-45-223-22)165-122(200)88(47-66(5)6)168-113(191)72(14)156-102(188)54-153-136(109)214)129(207)171-92(51-101(147)187)125(203)166-86(40-46-224-23)119(197)163-83(35-28-31-41-144)121(199)183-110-77(19)228-63-99-130(208)170-90(49-80-52-149-64-154-80)124(202)176-98(62-227-78(20)111(141(219)177-99)181-116(194)75(17)159-140(110)218)131(209)173-93(57-186)127(205)179-108(71(13)26-3)139(217)172-91(50-81-53-150-65-155-81)126(204)178-106(68(9)10)137(215)157-73(15)114(192)167-87(143(221)222)37-30-33-43-146/h27,52-53,64-72,75-79,83-100,105-112,186H,15-16,24-26,28-51,54-63,144-146,148H2,1-14,17-23H3,(H2,147,187)(H,149,154)(H,150,155)(H,151,195)(H,152,212)(H,153,214)(H,156,188)(H,157,215)(H,158,216)(H,159,218)(H,160,190)(H,161,189)(H,162,213)(H,163,197)(H,164,206)(H,165,200)(H,166,203)(H,167,192)(H,168,191)(H,169,193)(H,170,208)(H,171,207)(H,172,217)(H,173,209)(H,174,196)(H,175,201)(H,176,202)(H,177,219)(H,178,204)(H,179,205)(H,180,210)(H,181,194)(H,182,198)(H,183,199)(H,184,211)(H,221,222)/b82-27-
+  standard_inchi_key: NVNLLIYOARQCIX-GSJOZIGCSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000535
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:16130280
+producer_organisms:
+- taxon_id: NCBITaxon:1360
+  taxon_label: Lactococcus lactis subsp. lactis
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0000535
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Gene expression correlated with compound production.'
+  evidence:
+  - reference: PMID:21183019
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000535 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000535
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1360
+  organism_label: Lactococcus lactis subsp. lactis
+  evidence:
+  - reference: PMID:21183019
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000535 entry version 4; citation taken from the entry level
+  genome_accession: genbank:HM219853.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000535
+  source_label: nisin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-d49377c1db
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

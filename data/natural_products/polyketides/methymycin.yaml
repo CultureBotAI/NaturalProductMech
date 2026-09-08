@@ -1,0 +1,105 @@
+identifier: naturalproductmech:mibig-4fba2c0555
+label: methymycin
+chemical_structure:
+  smiles: CC[C@H]1OC(=O)[C@H](C)[C@@H](O[C@@H]2O[C@H](C)C[C@@H]([C@H]2O)N(C)C)[C@@H](C)C[C@@H](C)C(=O)\C=C\[C@]1(C)O
+  standard_inchi: InChI=1S/C25H43NO7/c1-9-20-25(6,30)11-10-19(27)14(2)12-15(3)22(17(5)23(29)32-20)33-24-21(28)18(26(7)8)13-16(4)31-24/h10-11,14-18,20-22,24,28,30H,9,12-13H2,1-8H3/b11-10+/t14-,15+,16-,17-,18+,20-,21-,22+,24+,25+/m1/s1
+  standard_inchi_key: HUKYPYXOBINMND-HYUJHOPRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000094
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Erythromycins
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+xrefs:
+- npatlas:NPA01238
+- pubchem:5282034
+producer_organisms:
+- taxon_id: NCBITaxon:54571
+  taxon_label: Streptomyces venezuelae
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000094
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:9770448
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000094 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:54571
+  taxon_label: Streptomyces venezuelae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000898
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:9770448
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000898 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000094
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:54571
+  organism_label: Streptomyces venezuelae
+  evidence:
+  - reference: PMID:9770448
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000094 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF079138.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Enzymatic assays
+- accession: mibig:BGC0000898
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:54571
+  organism_label: Streptomyces venezuelae
+  evidence:
+  - reference: PMID:9770448
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000898 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF079762.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000094
+  source_label: methymycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4fba2c0555
+- source: MIBIG
+  source_id: BGC0000898
+  source_label: desosamine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-9787d70812
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000094, BGC0000898.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

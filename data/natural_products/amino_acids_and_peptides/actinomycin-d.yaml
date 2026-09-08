@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-767667af8b
+label: actinomycin D
+chemical_structure:
+  smiles: '[H][C@@]12CCCN1C(=O)[C@]([H])(NC(=O)[C@@]([H])(NC(=O)C1=CC=C(C)C3=C1N=C1C(O3)=C(C)C(=O)C(N)=C1C(=O)N[C@]1([H])C(=O)N[C@]([H])(C(C)C)C(=O)N3CCC[C@@]3([H])C(=O)N(C)CC(=O)N(C)[C@@]([H])(C(C)C)C(=O)O[C@]1([H])C)[C@@]([H])(C)OC(=O)[C@]([H])(C(C)C)N(C)C(=O)CN(C)C2=O)C(C)C'
+  standard_inchi: InChI=1S/C62H86N12O16/c1-27(2)42-59(84)73-23-17-19-36(73)57(82)69(13)25-38(75)71(15)48(29(5)6)61(86)88-33(11)44(55(80)65-42)67-53(78)35-22-21-31(9)51-46(35)64-47-40(41(63)50(77)32(10)52(47)90-51)54(79)68-45-34(12)89-62(87)49(30(7)8)72(16)39(76)26-70(14)58(83)37-20-18-24-74(37)60(85)43(28(3)4)66-56(45)81/h21-22,27-30,33-34,36-37,42-45,48-49H,17-20,23-26,63H2,1-16H3,(H,65,80)(H,66,81)(H,67,78)(H,68,79)/t33-,34-,36+,37+,42-,43-,44+,45+,48+,49+/m1/s1
+  standard_inchi_key: RJURFGZVJUQBHK-IIXSONLDSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000296
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Actinomycins
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA07563
+producer_organisms:
+- taxon_id: NCBITaxon:1892
+  taxon_label: Streptomyces anulatus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000296
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:10212227
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000296 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000296
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1892
+  organism_label: Streptomyces anulatus
+  evidence:
+  - reference: PMID:10212227
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000296 entry version 5; citation taken from the entry level
+  genome_accession: genbank:HM038106.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000296
+  source_label: actinomycin D
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-767667af8b
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

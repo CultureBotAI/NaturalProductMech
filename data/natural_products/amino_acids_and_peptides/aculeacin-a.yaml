@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-5e3fd640fc
+label: aculeacin A
+chemical_structure:
+  smiles: CCCCCCCCCCCCCCCC(=O)N[C@H]1C[C@H]([C@H](NC(=O)[C@@H]2[C@H]([C@H](CN2C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H]3C[C@H](CN3C(=O)[C@@H](NC1=O)[C@@H](C)O)O)[C@@H]([C@H](C4=CC=C(C=C4)O)O)O)[C@@H](C)O)C)O)O)O
+  standard_inchi: InChI=1S/C50H81N7O16/c1-5-6-7-8-9-10-11-12-13-14-15-16-17-18-36(63)51-33-24-35(62)46(69)55-48(71)40-41(64)27(2)25-57(40)50(73)38(29(4)59)53-47(70)39(43(66)42(65)30-19-21-31(60)22-20-30)54-45(68)34-23-32(61)26-56(34)49(72)37(28(3)58)52-44(33)67/h19-22,27-29,32-35,37-43,46,58-62,64-66,69H,5-18,23-26H2,1-4H3,(H,51,63)(H,52,67)(H,53,70)(H,54,68)(H,55,71)/t27-,28+,29+,32+,33-,34-,35+,37-,38-,39-,40-,41-,42-,43-,46+/m0/s1
+  standard_inchi_key: YKPHLXGEPNYRPY-ZIUFDZNVSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001220
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:14315169
+producer_organisms:
+- taxon_id: NCBITaxon:34381
+  taxon_label: Aspergillus japonicus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001220
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:25156669
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001220 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001220
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:34381
+  organism_label: Aspergillus japonicus
+  evidence:
+  - reference: PMID:25156669
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001220 entry version 4; citation taken from the entry level
+  genome_accession: genbank:NW_017962980.1
+  locus_from: 1840826
+  locus_to: 1901106
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001220
+  source_label: aculeacin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-5e3fd640fc
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

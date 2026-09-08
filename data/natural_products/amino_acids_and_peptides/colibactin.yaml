@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-ae187ccdfd
+label: colibactin
+chemical_structure:
+  smiles: C[C@H]1CCC(=N1)C2=C(C3(CC3)NC2=O)CC(=O)NCC4=NC(=CS4)C(=O)C(=O)C5=NC(=CS5)C(=O)CNC(=O)CC6=C(C(=O)NC67CC7)C8=N[C@H](CC8)C
+  standard_inchi: InChI=1S/C37H38N8O7S2/c1-17-3-5-21(40-17)29-19(36(7-8-36)44-33(29)51)11-26(47)38-13-25(46)23-15-54-35(43-23)32(50)31(49)24-16-53-28(42-24)14-39-27(48)12-20-30(22-6-4-18(2)41-22)34(52)45-37(20)9-10-37/h15-18H,3-14H2,1-2H3,(H,38,47)(H,39,48)(H,44,51)(H,45,52)/t17-,18-/m0/s1
+  standard_inchi_key: ZWKHDAZPVITMAI-ROUUACIJSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000972
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Linear
+xrefs:
+- pubchem:138805674
+- chebi:156303
+producer_organisms:
+- taxon_id: NCBITaxon:562
+  taxon_label: Escherichia coli
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000972
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  evidence:
+  - reference: PMID:16902142
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000972 entry version 5; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000972
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:562
+  organism_label: Escherichia coli
+  evidence:
+  - reference: PMID:16902142
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000972 entry version 5; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:AM229678.1
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000972
+  source_label: colibactin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ae187ccdfd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

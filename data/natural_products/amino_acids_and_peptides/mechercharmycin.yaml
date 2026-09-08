@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-0e441fc615
+label: mechercharmycin
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]1C(=O)N[C@H](C(=O)NC(=C)C2=NC(=CO2)C3=NC(=CO3)C4=NC(=CS4)C5=NC(=CO5)C6=NC(=C(O6)C7=CC=CC=C7)C(=O)N1)C(C)C
+  standard_inchi: InChI=1S/C35H32N8O7S/c1-6-17(4)25-29(45)41-24(16(2)3)28(44)36-18(5)31-37-20(12-47-31)32-39-22(14-49-32)35-40-23(15-51-35)33-38-21(13-48-33)34-43-26(30(46)42-25)27(50-34)19-10-8-7-9-11-19/h7-17,24-25H,5-6H2,1-4H3,(H,36,44)(H,41,45)(H,42,46)/t17-,24-,25+/m0/s1
+  standard_inchi_key: YIJVJFCLUNYXQX-WGXRPPGPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002576
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA018397
+producer_organisms:
+- taxon_id: NCBITaxon:2025
+  taxon_label: Thermoactinomyces sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002576
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:34474009
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002576 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002576
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2025
+  organism_label: Thermoactinomyces sp.
+  evidence:
+  - reference: PMID:34474009
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002576 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT776333.1
+  locus_from: 1
+  locus_to: 3141
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002576
+  source_label: mechercharmycin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-0e441fc615
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

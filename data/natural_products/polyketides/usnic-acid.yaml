@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-95669530cd
+label: usnic acid
+chemical_structure:
+  smiles: CC1=C(C(=C(C2=C1OC3=CC(=C(C(=O)C32C)C(=O)C)O)O)C(=O)C)O
+  standard_inchi: InChI=1S/C18H16O7/c1-6-14(22)12(8(3)20)15(23)13-16(6)25-10-5-9(21)11(7(2)19)17(24)18(10,13)4/h5,21-23H,1-4H3
+  standard_inchi_key: GRIDHCOCFJSWSY-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002483
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Usnic acid and derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA012908
+producer_organisms:
+- taxon_id: NCBITaxon:180999
+  taxon_label: Cladonia uncialis subsp. uncialis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002483
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26895859
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002483 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002483
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:180999
+  organism_label: Cladonia uncialis subsp. uncialis
+  evidence:
+  - reference: PMID:26895859
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002483 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MG777490.1
+  locus_from: 2783
+  locus_to: 50732
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002483
+  source_label: usnic acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-95669530cd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

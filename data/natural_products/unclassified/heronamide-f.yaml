@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-584debc273
+label: heronamide F
+chemical_structure:
+  smiles: C\C=C\C=C\C[C@@H]1C\C=C\C=C(/C)\C=C\C=C/[C@@H](O)[C@@H](O)\C=C(/C)\C=C\C=C\C(=O)N1
+  standard_inchi: InChI=1S/C27H35NO3/c1-4-5-6-7-17-24-18-11-8-14-22(2)15-9-12-19-25(29)26(30)21-23(3)16-10-13-20-27(31)28-24/h4-16,19-21,24-26,29-30H,17-18H2,1-3H3,(H,28,31)/b5-4+,7-6+,11-8+,15-9+,16-10+,19-12-,20-13+,22-14+,23-21+/t24-,25-,26+/m1/s1
+  standard_inchi_key: FFBLFSFSCNGUGS-YGXGVOTQSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001349
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrolide lactams
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA06236
+- pubchem:76332081
+producer_organisms:
+- taxon_id: NCBITaxon:2878388
+  taxon_label: Streptomyces sp. SCSIO 03032
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001349
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26194087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001349 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001349
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2878388
+  organism_label: Streptomyces sp. SCSIO 03032
+  evidence:
+  - reference: PMID:26194087
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001349 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KP742963.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001349
+  source_label: heronamide F
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-584debc273
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

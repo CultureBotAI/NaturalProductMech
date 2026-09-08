@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-55457a1611
+label: rubradirin
+chemical_structure:
+  smiles: CC1/C=C(/C(=O)C2=C3C(=CC(=C2O)C)C(=O)C4=C(C3=O)OC(CN4)(C(=O)C(C1OC(=O)C5=C(C(=CC(=N5)C(=O)NC6=C(OC7=C(C6=O)C=CC(=C7)OC)O)OC8CC(C(C(O8)C)OC)(C)[N+](=O)[O-])O)O)C)\C
+  standard_inchi: InChI=1S/C48H46N4O20/c1-17-11-19(3)40(39(59)42(60)48(6)16-49-30-36(56)23-12-18(2)34(54)29(33(17)53)28(23)38(58)41(30)72-48)71-46(63)32-37(57)26(69-27-15-47(5,52(64)65)43(67-8)20(4)68-27)14-24(50-32)44(61)51-31-35(55)22-10-9-21(66-7)13-25(22)70-45(31)62/h9-14,19-20,27,39-40,43,49,54,57,59,62H,15-16H2,1-8H3,(H,51,61)/b17-11+
+  standard_inchi_key: HZJYMSYXRSCXPH-GZTJUZNOSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000141
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Nicotinic acid alkaloids
+  class_results:
+  - Pyridine alkaloids
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- pubchem:5459344
+producer_organisms:
+- taxon_id: NCBITaxon:285531
+  taxon_label: Streptomyces achromogenes subsp. rubradiris
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000141
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:9387157
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000141 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000141
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:285531
+  organism_label: Streptomyces achromogenes subsp. rubradiris
+  evidence:
+  - reference: PMID:9387157
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000141 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ871581.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000141
+  source_label: rubradirin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-55457a1611
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

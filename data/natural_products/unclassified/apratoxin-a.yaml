@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-1b1273b287
+label: apratoxin A
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]1C(=O)N2CCC[C@H]2C(=O)O[C@@H](C[C@H](C[C@@H]([C@@H](C3=N[C@H](CS3)/C=C(/C(=O)N[C@H](C(=O)N([C@H](C(=O)N1C)C)C)CC4=CC=C(C=C4)OC)\C)C)O)C)C(C)(C)C
+  standard_inchi: InChI=1S/C45H69N5O8S/c1-13-27(3)38-43(55)50-20-14-15-35(50)44(56)58-37(45(7,8)9)22-26(2)21-36(51)29(5)40-46-32(25-59-40)23-28(4)39(52)47-34(24-31-16-18-33(57-12)19-17-31)42(54)48(10)30(6)41(53)49(38)11/h16-19,23,26-27,29-30,32,34-38,51H,13-15,20-22,24-25H2,1-12H3,(H,47,52)/b28-23+/t26-,27-,29-,30-,32-,34-,35-,36-,37-,38+/m0/s1
+  standard_inchi_key: KXUJXPZXILTXDA-JHMIWIOGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002542
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- PKS
+- NRPS
+xrefs:
+- npatlas:NPA012281
+producer_organisms:
+- taxon_id: NCBITaxon:2530358
+  taxon_label: Moorena bouillonii bAprat14
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002542
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: DOI:10.1021/ja010453j
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002542 entry version 2; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002542
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2530358
+  organism_label: Moorena bouillonii bAprat14
+  evidence:
+  - reference: DOI:10.1021/ja010453j
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002542 entry version 2; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MG890637.1
+  bgc_class:
+  - PKS
+  - NRPS
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002542
+  source_label: apratoxin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-1b1273b287
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

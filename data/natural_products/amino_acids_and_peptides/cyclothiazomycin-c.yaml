@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-349529d158
+label: cyclothiazomycin C
+chemical_structure:
+  smiles: O=C([C@H]1CSC(C2=CSC(C3=CSC(C(NC([C@@H]4CSC(C5=CSC(C6=CC=C(C(N[C@@H](CC(N)=O)C7=N[C@H](C(N/C8=C\C)=O)CS7)=O)C([C@H](NC9=O)C)=N6)=N5)=N4)=O)=C)=N3)=N2)=N1)N[C@H](C(O)=O)CS[C@@](C)(C(N[C@@H](CCCCN)C(NCC(NC(C(N%10[C@H]9CCC%10)=O)=C)=O)=O)=O)NC8=O
+  standard_inchi: InChI=1S/C60H67N19O13S7/c1-6-29-49(87)78-60(5)59(92)77-30(10-7-8-14-61)45(83)63-17-42(81)64-27(4)57(89)79-15-9-11-40(79)50(88)65-25(2)43-28(44(82)69-32(16-41(62)80)53-71-34(19-94-53)47(85)68-29)12-13-31(67-43)52-75-37(22-97-52)54-72-33(18-95-54)46(84)66-26(3)51-74-36(21-93-51)56-76-38(23-98-56)55-73-35(20-96-55)48(86)70-39(24-99-60)58(90)91/h6,12-13,21-23,25,30,32-35,39-40H,3-4,7-11,14-20,24,61H2,1-2,5H3,(H2,62,80)(H,63,83)(H,64,81)(H,65,88)(H,66,84)(H,68,85)(H,69,82)(H,70,86)(H,77,92)(H,78,87)(H,90,91)/b29-6-/t25-,30+,32+,33+,34+,35-,39+,40+,60+/m1/s1
+  standard_inchi_key: ZUDMXUJOZNUCIR-XRARMUINSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001146
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- pubchem:130317475
+producer_organisms:
+- taxon_id: NCBITaxon:1509516
+  taxon_label: Streptomyces sp. NRRL WC-3908
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001146
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24937678
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001146 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001146
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1509516
+  organism_label: Streptomyces sp. NRRL WC-3908
+  evidence:
+  - reference: PMID:24937678
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001146 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KJ651958.1
+  bgc_class:
+  - RIBOSOMAL
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001146
+  source_label: cyclothiazomycin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-349529d158
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-6c52d8f50e
+label: tetrachlorizine
+chemical_structure:
+  smiles: O=C(/C=C/C1=C(O)C=CC(C(=O)C2=CC(Cl)=C(Cl)[NH]2)=C1O)C1=CC(Cl)=C(Cl)[NH]1
+  standard_inchi: InChI=1S/C18H10Cl4N2O4/c19-9-5-11(23-17(9)21)14(26)4-1-7-13(25)3-2-8(15(7)27)16(28)12-6-10(20)18(22)24-12/h1-6,23-25,27H/b4-1+
+  standard_inchi_key: OWMICGQRWGEBSE-DAFODLJHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002096
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Proline alkaloids
+  class_results:
+  - Pyrrole alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA033165
+producer_organisms:
+- taxon_id: NCBITaxon:2545265
+  taxon_label: Streptomyces sp. AJS327
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002096
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:33656337
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002096 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002096
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2545265
+  organism_label: Streptomyces sp. AJS327
+  evidence:
+  - reference: PMID:33656337
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002096 entry version 3; citation taken from the entry level
+  genome_accession: genbank:SKBR01000004.1
+  locus_from: 347100
+  locus_to: 382500
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002096
+  source_label: tetrachlorizine
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-6c52d8f50e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

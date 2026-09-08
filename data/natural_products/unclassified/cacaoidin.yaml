@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-1bd1037c43
+label: cacaoidin
+chemical_structure:
+  smiles: C=C1NC(=O)[C@H](N(C)C)CSC[C@H](C(=O)N[C@@H](CC)C(=O)N[C@H](C(=O)N[C@H](CC2=CC=C(O[C@H]3O[C@@H](C)[C@H](O)[C@@H](O[C@H]4O[C@@H](C)[C@@H](O)[C@H](O)[C@@H]4O)[C@H]3O)C=C2)C(=O)N[C@H](C)C(=O)N[C@@H](C)C(=O)N[C@H](C(=O)N[C@@H](C)C(=O)N[C@H](C)C(=O)CN[C@H](C)C(=O)N[C@H](C(=O)N[C@H](C)C(=O)N[C@@H](C)C(=O)N[C@H]2C(=O)N[C@H](C)C(=O)N[C@H](CO)C(=O)N[C@@H](CC3=CNC4=CC=CC=C34)C(=O)NCC(=O)N/C=C/S[C@H]2C)[C@H](C)CC)C(C)C)[C@@H](C)CC)NC(=O)C2CCCN2C(=O)[C@@H](C)NC1=O
+  standard_inchi: InChI=1S/C108H164N24O32S2/c1-23-48(6)78(103(157)119-55(13)90(144)115-58(16)94(148)130-80-62(20)166-38-36-109-76(135)43-112-95(149)70(40-64-41-111-68-30-27-26-29-66(64)68)123-98(152)71(44-133)125-92(146)56(14)120-105(80)159)128-87(141)51(9)110-42-75(134)50(8)113-88(142)54(12)118-102(156)77(47(4)5)127-93(147)57(15)114-89(143)52(10)116-97(151)69(39-63-32-34-65(35-33-63)163-108-85(140)86(82(137)61(19)162-108)164-107-84(139)83(138)81(136)60(18)161-107)124-104(158)79(49(7)24-2)129-96(150)67(25-3)122-99(153)72-45-165-46-74(131(21)22)101(155)117-53(11)91(145)121-59(17)106(160)132-37-28-31-73(132)100(154)126-72/h26-27,29-30,32-36,38,41,47-52,54-62,67,69-74,77-86,107-108,110-111,133,136-140H,11,23-25,28,31,37,39-40,42-46H2,1-10,12-22H3,(H,109,135)(H,112,149)(H,113,142)(H,114,143)(H,115,144)(H,116,151)(H,117,155)(H,118,156)(H,119,157)(H,120,159)(H,121,145)(H,122,153)(H,123,152)(H,124,158)(H,125,146)(H,126,154)(H,127,147)(H,128,141)(H,129,150)(H,130,148)/b38-36+/t48-,49+,50-,51-,52-,54+,55-,56-,57+,58+,59-,60+,61+,62+,67+,69-,70+,71-,72-,73?,74-,77+,78+,79+,80-,81-,82+,83+,84+,85-,86-,107-,108-/m1/s1
+  standard_inchi_key: AIRSSZAIEIYYPQ-QBIWCITBSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002130
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: true
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA031549
+producer_organisms:
+- taxon_id: NCBITaxon:1898
+  taxon_label: Streptomyces cacaoi CA-170360
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002130
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:33917820
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002130 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002130
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1898
+  organism_label: Streptomyces cacaoi CA-170360
+  evidence:
+  - reference: PMID:33917820
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002130 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT210103.1
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002130
+  source_label: cacaoidin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1bd1037c43
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

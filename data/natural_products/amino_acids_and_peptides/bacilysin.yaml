@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-080d9481a3
+label: bacilysin
+chemical_structure:
+  smiles: C[C@@H](C(=O)OC(=O)[C@H](CC1CCC(=O)[C@H]2[C@@H]1O2)N)N
+  standard_inchi: InChI=1S/C12H18N2O5/c1-5(13)11(16)19-12(17)7(14)4-6-2-3-8(15)10-9(6)18-10/h5-7,9-10H,2-4,13-14H2,1H3/t5-,6?,7-,9+,10-/m0/s1
+  standard_inchi_key: JJOSOKMLZZVGKD-INVWQFOESA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001184
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Dipeptides
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- pubchem:160175
+producer_organisms:
+- taxon_id: NCBITaxon:326423
+  taxon_label: Bacillus velezensis FZB42
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001184
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:19061923
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001184 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001184
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:326423
+  organism_label: Bacillus velezensis FZB42
+  evidence:
+  - reference: PMID:19061923
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001184 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP000560.1
+  locus_from: 3593877
+  locus_to: 3601174
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001184
+  source_label: bacilysin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-080d9481a3
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-c535051064
+label: E-837
+chemical_structure:
+  smiles: C\C=C(/C)C(O)C(C)\C=C\C=C(/C)CCC(O)CC1=C(C)C(=O)C(C)(O)O1
+  standard_inchi: InChI=1S/C22H34O5/c1-7-15(3)20(24)16(4)10-8-9-14(2)11-12-18(23)13-19-17(5)21(25)22(6,26)27-19/h7-10,16,18,20,23-24,26H,11-13H2,1-6H3/b10-8+,14-9+,15-7+
+  standard_inchi_key: OQJGVHFFWCZBBJ-BLBCACECSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000050
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Open-chain polyketides
+  is_glycoside: true
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA06280
+- pubchem:11494615
+producer_organisms:
+- taxon_id: NCBITaxon:270689
+  taxon_label: Streptomyces aculeolatus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000050
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:16724457
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000050 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000050
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:270689
+  organism_label: Streptomyces aculeolatus
+  evidence:
+  - reference: PMID:16724457
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000050 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ272520.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000050
+  source_label: E-837
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c535051064
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

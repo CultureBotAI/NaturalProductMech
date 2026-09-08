@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-fe7e9515ac
+label: 4-hydroxy-6-(2-oxoheptadecyl)pyran-2-one
+chemical_structure:
+  smiles: O=C1C=C(O)C=C(CC(CCCCCCCCCCCCCCC)=O)O1
+  standard_inchi: InChI=1S/C22H36O4/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-19(23)16-21-17-20(24)18-22(25)26-21/h17-18,24H,2-16H2,1H3
+  standard_inchi_key: PWJCIKPTDVJSCJ-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002332
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 2-pyrone derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Fatty acid derivate
+- Lactone
+xrefs:
+- pubchem:86583423
+producer_organisms:
+- taxon_id: NCBITaxon:2066855
+  taxon_label: Candidatus Entotheonella sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002332
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1002/cbic.201900352
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002332 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002332
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2066855
+  organism_label: Candidatus Entotheonella sp.
+  evidence:
+  - reference: DOI:10.1002/cbic.201900352
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002332 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MK988560.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002332
+  source_label: 4-hydroxy-6-(2-oxoheptadecyl)pyran-2-one
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-fe7e9515ac
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

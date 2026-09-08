@@ -1,0 +1,98 @@
+identifier: naturalproductmech:mibig-4930c38413
+label: hygromycin A
+chemical_structure:
+  smiles: CC(=O)[C@H]1O[C@@H](OC2=C(O)C=C(\C=C(/C)C(=O)N[C@@H]3[C@H](O)[C@H]4OCO[C@H]4[C@@H](O)[C@@H]3O)C=C2)[C@@H](O)[C@@H]1O
+  standard_inchi: InChI=1S/C23H29NO12/c1-8(22(32)24-13-14(27)16(29)21-20(15(13)28)33-7-34-21)5-10-3-4-12(11(26)6-10)35-23-18(31)17(30)19(36-23)9(2)25/h3-6,13-21,23,26-31H,7H2,1-2H3,(H,24,32)/b8-5+/t13-,14+,15-,16-,17-,18-,19+,20+,21-,23+/m0/s1
+  standard_inchi_key: YQYJSBFKSSDGFO-KEHBMHOOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000698
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- SACCHARIDE
+xrefs:
+- npatlas:NPA014061
+- pubchem:6433481
+producer_organisms:
+- taxon_id: NCBITaxon:1912
+  taxon_label: Streptomyces hygroscopicus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000698
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:16873023
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000698 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:68042
+  taxon_label: Streptomyces hygroscopicus subsp. hygroscopicus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000699
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:19362651
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000699 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000698
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1912
+  organism_label: Streptomyces hygroscopicus
+  evidence:
+  - reference: PMID:16873023
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000698 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ314862.1
+  bgc_class:
+  - SACCHARIDE
+- accession: mibig:BGC0000699
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68042
+  organism_label: Streptomyces hygroscopicus subsp. hygroscopicus
+  evidence:
+  - reference: PMID:19362651
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000699 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ628642.1
+  bgc_class:
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000698
+  source_label: hygromycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4930c38413
+- source: MIBIG
+  source_id: BGC0000699
+  source_label: hygromycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5f66c41cf0
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000698, BGC0000699.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

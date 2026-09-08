@@ -1,0 +1,110 @@
+identifier: naturalproductmech:mibig-4b1562dcf5
+label: lomaiviticin A
+chemical_structure:
+  smiles: CC[C@@]1(OC2CC(OC)C(O)C(C)O2)[C@H](OC2CC(O)C(C(C)O2)N(C)C)C2=C(C3=C(C2=[N+]=[N-])C(=O)C2=C(O)C=CC(O)=C2C3=O)C(=O)[C@@H]1[C@H]1C(=O)C2=C([C@@H](O[C@H]3CC(O)[C@@H](C(C)O3)N(C)C)[C@@]1(CC)OC1CC(OC)C(O)C(C)O1)C(=[N+]=[N-])C1=C2C(=O)C2=C(O)C=CC(O)=C2C1=O
+  standard_inchi: InChI=1S/C68H80N6O24/c1-13-67(97-37-21-33(89-11)57(81)25(5)93-37)51(63(87)45-43-47(61(85)41-29(77)17-15-27(75)39(41)59(43)83)53(71-69)49(45)65(67)95-35-19-31(79)55(73(7)8)23(3)91-35)52-64(88)46-44-48(62(86)42-30(78)18-16-28(76)40(42)60(44)84)54(72-70)50(46)66(96-36-20-32(80)56(74(9)10)24(4)92-36)68(52,14-2)98-38-22-34(90-12)58(82)26(6)94-38/h15-18,23-26,31-38,51-52,55-58,65-66,75-82H,13-14,19-22H2,1-12H3/t23?,24?,25?,26?,31?,32?,33?,34?,35-,36?,37?,38?,51-,52-,55+,56?,57?,58?,65+,66+,67-,68-/m0/s1
+  standard_inchi_key: VGDUHSQTOJRQNB-JGBUZTLDSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000240
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results:
+  - Angucyclines
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+xrefs:
+- npatlas:NPA06818
+- pubchem:56841540
+producer_organisms:
+- taxon_id: NCBITaxon:351187
+  taxon_label: Salinispora pacifica
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000240
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:23649992
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000240 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:369723
+  taxon_label: Salinispora tropica CNB-440
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000241
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:23649992
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000241 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000240
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:351187
+  organism_label: Salinispora pacifica
+  evidence:
+  - reference: PMID:23649992
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000240 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF731828.1
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+- accession: mibig:BGC0000241
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:369723
+  organism_label: Salinispora tropica CNB-440
+  evidence:
+  - reference: PMID:23649992
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000241 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000667.1
+  locus_from: 2460444
+  locus_to: 2522674
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000240
+  source_label: lomaiviticin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4b1562dcf5
+- source: MIBIG
+  source_id: BGC0000241
+  source_label: lomaiviticin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-0c9b6a9aab
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000240, BGC0000241.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

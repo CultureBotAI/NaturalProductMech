@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-d1d51f8146
+label: landornamide A
+chemical_structure:
+  smiles: CC[C@H](C)[C@H]1NC(=O)[C@H](CC2=C[NH]C3=C2C=CC=C3)NC(=O)[C@@H](NC(=O)CN)CSCC(C(=O)N[C@@H](CCCN)C(=O)NCC(=O)N[C@H]2CSC(C)C(C(=O)N[C@@H](CCCN)C(=O)N[C@H](C(=O)O)[C@@H](C)O)NC(=O)[C@@H](C(C)C)NC(=O)[C@H](CC3=CC=CC=C3)NC(=O)CNC2=O)NC(=O)CNC(=O)[C@H](C)NC1=O
+  standard_inchi: InChI=1S/C69H103N19O18S2/c1-8-35(4)55-67(103)77-36(5)58(94)74-28-52(92)80-48(32-107-31-47(79-50(90)26-72)65(101)84-46(63(99)86-55)25-40-27-73-42-19-13-12-18-41(40)42)64(100)82-43(20-14-22-70)59(95)75-30-53(93)81-49-33-108-38(7)57(68(104)83-44(21-15-23-71)61(97)87-56(37(6)89)69(105)106)88-66(102)54(34(2)3)85-62(98)45(24-39-16-10-9-11-17-39)78-51(91)29-76-60(49)96/h9-13,16-19,27,34-38,43-49,54-57,73,89H,8,14-15,20-26,28-33,70-72H2,1-7H3,(H,74,94)(H,75,95)(H,76,96)(H,77,103)(H,78,91)(H,79,90)(H,80,92)(H,81,93)(H,82,100)(H,83,104)(H,84,101)(H,85,98)(H,86,99)(H,87,97)(H,88,102)(H,105,106)/t35-,36-,37+,38?,43-,44-,45-,46-,47-,48?,49-,54+,55+,56-,57?/m0/s1
+  standard_inchi_key: ULTOBTMZTQDCLE-DYFGBKDTSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002330
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Lanthipeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA028538
+producer_organisms:
+- taxon_id: NCBITaxon:272129
+  taxon_label: Kamptonema sp. PCC 6506
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002330
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Gene expression correlated with compound production|Knock-out
+    studies|Enzymatic assays.'
+  evidence:
+  - reference: PMID:32163654
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002330 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002330
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:272129
+  organism_label: Kamptonema sp. PCC 6506
+  evidence:
+  - reference: PMID:32163654
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002330 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MN724926.1
+  locus_from: 1
+  locus_to: 16516
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  - Knock-out studies
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002330
+  source_label: landornamide A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-d1d51f8146
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

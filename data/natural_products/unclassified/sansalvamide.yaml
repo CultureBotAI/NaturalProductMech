@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-4b38dfeb80
+label: sansalvamide
+chemical_structure:
+  smiles: CC(C)C[C@@H]1NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)OC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC2=CC=CC=C2)NC1=O)C(C)C
+  standard_inchi: InChI=1S/C32H50N4O6/c1-18(2)14-23-28(37)33-24(17-22-12-10-9-11-13-22)29(38)35-25(15-19(3)4)32(41)42-26(16-20(5)6)30(39)36-27(21(7)8)31(40)34-23/h9-13,18-21,23-27H,14-17H2,1-8H3,(H,33,37)(H,34,40)(H,35,38)(H,36,39)/t23-,24-,25-,26-,27-/m0/s1
+  standard_inchi_key: YIRQWXGQCMAHIW-IRGGMKSGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001768
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA019256
+producer_organisms:
+- taxon_id: NCBITaxon:660122
+  taxon_label: '[Nectria] haematococca mpVI 77-13-4'
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001768
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26936154
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001768 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001768
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:660122
+  organism_label: '[Nectria] haematococca mpVI 77-13-4'
+  evidence:
+  - reference: PMID:26936154
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001768 entry version 4; citation taken from the entry level
+  genome_accession: genbank:NW_003315863.1
+  locus_from: 476075
+  locus_to: 504188
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001768
+  source_label: sansalvamide
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-4b38dfeb80
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

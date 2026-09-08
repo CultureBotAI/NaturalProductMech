@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-7d1353d67e
+label: esmeraldin
+chemical_structure:
+  smiles: CC1C2=C3C(=CC=C2)NC4=C(C=CC=C4N3C5=C1C6=NC7=C(C=CC=C7N=C6C(=C5)C(=O)O)C(C)OC(=O)C8=C(C=CC=C8O)C)C(=O)O
+  standard_inchi: InChI=1S/C38H28N4O7/c1-17-8-4-15-28(43)29(17)38(48)49-19(3)21-10-6-12-24-31(21)41-34-30-18(2)20-9-5-13-25-35(20)42(27(30)16-23(37(46)47)33(34)39-24)26-14-7-11-22(36(44)45)32(26)40-25/h4-16,18-19,40,43H,1-3H3,(H,44,45)(H,46,47)
+  standard_inchi_key: UFEIYIBAKOKKBK-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000935
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Phenazine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+- PKS
+xrefs:
+- pubchem:443757
+producer_organisms:
+- taxon_id: NCBITaxon:1890
+  taxon_label: Streptomyces antibioticus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000935
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:22999880
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000935 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000935
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1890
+  organism_label: Streptomyces antibioticus
+  evidence:
+  - reference: PMID:22999880
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000935 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JF417969.1
+  bgc_class:
+  - OTHER
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000935
+  source_label: esmeraldin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-7d1353d67e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,69 @@
+identifier: naturalproductmech:mibig-8d9bde42ba
+label: T-2 toxin
+chemical_structure:
+  smiles: CC(=O)OC[C@]12C[C@H](OC(=O)CC(C)C)C(C)=C[C@H]1O[C@@H]1[C@H](O)[C@@H](OC(C)=O)[C@@]2(C)[C@]12CO2
+  standard_inchi: InChI=1S/C24H34O9/c1-12(2)7-18(27)32-16-9-23(10-29-14(4)25)17(8-13(16)3)33-21-19(28)20(31-15(5)26)22(23,6)24(21)11-30-24/h8,12,16-17,19-21,28H,7,9-11H2,1-6H3/t16-,17+,19+,20+,21+,22+,23+,24-/m0/s1
+  standard_inchi_key: BXFOFFBJRFZBQZ-QYWOHJEZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001278
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results:
+  - Sesquiterpenoids
+  class_results:
+  - Trichothecane sesquiterpenoids
+  is_glycoside: false
+bgc_class:
+- TERPENE
+compound_classes:
+- Sesquiterpenoid
+xrefs:
+- chembl:CHEMBL152423
+- pubchem:5284461
+producer_organisms:
+- taxon_id: NCBITaxon:5514
+  taxon_label: Fusarium sporotrichioides
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001278
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1128/aem.61.5.1923-1930.1995
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001278 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001278
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5514
+  organism_label: Fusarium sporotrichioides
+  evidence:
+  - reference: DOI:10.1128/aem.61.5.1923-1930.1995
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001278 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AF359360.3
+  bgc_class:
+  - TERPENE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001278
+  source_label: T-2 toxin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-8d9bde42ba
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

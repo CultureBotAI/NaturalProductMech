@@ -1,0 +1,68 @@
+identifier: naturalproductmech:mibig-fed97c0a20
+label: merochlorin A
+chemical_structure:
+  smiles: CC(C)C1CC2C(C)(CCC=C(C)C)C3(Cl)C(=O)C2(C1)C1=CC(O)=CC(O)=C1C3=O
+  standard_inchi: InChI=1S/C25H31ClO4/c1-13(2)7-6-8-23(5)19-9-15(14(3)4)12-24(19)17-10-16(27)11-18(28)20(17)21(29)25(23,26)22(24)30/h7,10-11,14-15,19,27-28H,6,8-9,12H2,1-5H3
+  standard_inchi_key: UOWJKRBYLCVYIT-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001083
+np_pathway: TERPENOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Terpenoids
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+- TERPENE
+xrefs:
+- npatlas:NPA07975
+producer_organisms:
+- taxon_id: NCBITaxon:1136432
+  taxon_label: Streptomyces sp. CNH189
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001083
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  evidence:
+  - reference: PMID:22784372
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001083 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001083
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1136432
+  organism_label: Streptomyces sp. CNH189
+  evidence:
+  - reference: PMID:22784372
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001083 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JX186999.1
+  bgc_class:
+  - PKS
+  - TERPENE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001083
+  source_label: merochlorin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-fed97c0a20
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

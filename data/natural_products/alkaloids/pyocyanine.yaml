@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-99f36fdaeb
+label: pyocyanine
+chemical_structure:
+  smiles: CN1C2=CC=CC=C2N=C2C(=O)C=CC=C12
+  standard_inchi: InChI=1S/C13H10N2O/c1-15-10-6-3-2-5-9(10)14-13-11(15)7-4-8-12(13)16/h2-8H,1H3
+  standard_inchi_key: YNCMLFHHXWETLD-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000936
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Anthranilic acid alkaloids
+  class_results:
+  - Phenazine alkaloids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA0489
+- pubchem:6817
+producer_organisms:
+- taxon_id: NCBITaxon:208964
+  taxon_label: Pseudomonas aeruginosa PAO1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000936
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:11591691
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000936 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000936
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:208964
+  organism_label: Pseudomonas aeruginosa PAO1
+  evidence:
+  - reference: PMID:11591691
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000936 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF005404.2
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000936
+  source_label: pyocyanine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-99f36fdaeb
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

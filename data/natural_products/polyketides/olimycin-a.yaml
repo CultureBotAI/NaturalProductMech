@@ -1,0 +1,63 @@
+identifier: naturalproductmech:mibig-e0790a5e54
+label: olimycin A
+chemical_structure:
+  smiles: CC[C@@H]\1CCC(=O)c2c3c(cc(c2O)C)C(=O)C4=C(C3=O)[C@@](C=CC(=O)N4)(C(=O)O[C@H](C/C=C1)CC(C)C)C
+  standard_inchi: InChI=1S/C31H35NO7/c1-6-18-8-7-9-19(14-16(2)3)39-30(38)31(5)13-12-22(34)32-26-25(31)29(37)23-20(28(26)36)15-17(4)27(35)24(23)21(33)11-10-18/h7-8,12-13,15-16,18-19,35H,6,9-11,14H2,1-5H3,(H,32,34)/b8-7+/t18-,19+,31+/m0/s1
+  standard_inchi_key: YNIHZPXTQKTVBC-BACFDPDBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001719
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  - Lactam bearing macrolide lactones
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:47716
+  taxon_label: Streptomyces olivaceus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001719
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1016/j.tet.2017.11.069
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001719 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001719
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:47716
+  organism_label: Streptomyces olivaceus
+  evidence:
+  - reference: DOI:10.1016/j.tet.2017.11.069
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001719 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MN901947.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001719
+  source_label: olimycin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-e0790a5e54
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

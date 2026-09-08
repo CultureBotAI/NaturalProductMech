@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-69d23b03fd
+label: berninamycin B
+chemical_structure:
+  smiles: C/C=C\1/C2=NC(=C(O2)C)C(=O)NC(=C)C(=O)N[C@H](C(=O)NC(=C)C3=NC(=C(O3)C)C(=O)NC(=C)C(=O)NC(=C)C4=NC(=CO4)C5=C(C=CC(=N5)C(=O)NC(=C)C(=O)NC(=C)C(=O)N)C6=NC(=CS6)C(=O)N[C@H](C(=O)N1)[C@@H](C)O)C(C)C
+  standard_inchi: InChI=1S/C51H51N15O14S/c1-13-29-50-66-36(27(12)80-50)47(77)56-22(7)41(71)63-33(18(2)3)44(74)58-24(9)49-65-35(26(11)79-49)46(76)55-21(6)40(70)57-23(8)48-61-31(16-78-48)37-28(51-62-32(17-81-51)43(73)64-34(25(10)67)45(75)60-29)14-15-30(59-37)42(72)54-20(5)39(69)53-19(4)38(52)68/h13-18,25,33-34,67H,4-9H2,1-3,10-12H3,(H2,52,68)(H,53,69)(H,54,72)(H,55,76)(H,56,77)(H,57,70)(H,58,74)(H,60,75)(H,63,71)(H,64,73)/b29-13-/t25-,33+,34+/m1/s1
+  standard_inchi_key: VFTYJPKNFPTPRA-KFSKHFNISA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002363
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - RiPPs-Thiopeptides
+  is_glycoside: false
+bgc_class:
+- RIBOSOMAL
+xrefs:
+- npatlas:NPA017719
+producer_organisms:
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002363
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
+    compound production.'
+  evidence:
+  - reference: PMID:34617948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002363 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002363
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:34617948
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002363 entry version 3; citation taken from the entry level
+  genome_accession: genbank:MT362006.1
+  locus_from: 1
+  locus_to: 22640
+  bgc_class:
+  - RIBOSOMAL
+  locus_evidence_methods:
+  - Heterologous expression
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002363
+  source_label: berninamycin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-69d23b03fd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

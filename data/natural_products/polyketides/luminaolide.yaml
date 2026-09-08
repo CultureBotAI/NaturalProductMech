@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-095c196e17
+label: luminaolide
+chemical_structure:
+  smiles: C[C@@H]1[C@H](C[C@H]2O[C@@H](C=CC2)C[C@H](C[C@@H](CC(=O)O[C@H](C[C@H](C[C@@H]([C@@H]([C@H](C[C@H]3O[C@@H](C=CC3)C[C@H](C[C@@H](CC(=O)O[C@H](C[C@H](C[C@@H]1O)O)[C@H]([C@H](OC)[C@H](CCC(=O)[C@H]([C@@H](OC)[C@@H](/C=C/N(C=O)C)C)C)C)C)O)OC)OC)C)O)O)[C@H]([C@H](OC)[C@H](CCC(=O)[C@H]([C@@H](OC)[C@@H](/C=C/N(C=O)C)C)C)C)C)O)OC)OC
+  standard_inchi: InChI=1S/C82H142N2O24/c1-49(27-29-69(91)55(7)79(101-17)51(3)31-33-83(11)47-85)81(103-19)57(9)75-39-61(89)37-71(93)53(5)73(99-15)45-65-25-22-24-64(106-65)44-68(98-14)36-60(88)42-78(96)108-76(58(10)82(104-20)50(2)28-30-70(92)56(8)80(102-18)52(4)32-34-84(12)48-86)40-62(90)38-72(94)54(6)74(100-16)46-66-26-21-23-63(105-66)43-67(97-13)35-59(87)41-77(95)107-75/h21-24,31-34,47-68,71-76,79-82,87-90,93-94H,25-30,35-46H2,1-20H3/b33-31+,34-32+/t49-,50-,51+,52+,53-,54-,55+,56+,57+,58+,59-,60-,61-,62-,63-,64-,65-,66-,67-,68-,71-,72-,73-,74-,75+,76+,79-,80-,81+,82+/m0/s1
+  standard_inchi_key: PWCRKPGHIKOADB-ZPXRJYADSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001656
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- PKS
+compound_classes:
+- Macrocyclic polyketide
+producer_organisms:
+- taxon_id: NCBITaxon:671071
+  taxon_label: Planktothrix paucivesiculata PCC 9631
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001656
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1038/nchembio.1870
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001656 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001656
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:671071
+  organism_label: Planktothrix paucivesiculata PCC 9631
+  evidence:
+  - reference: DOI:10.1038/nchembio.1870
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001656 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KR857272.1
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001656
+  source_label: luminaolide
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-095c196e17
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

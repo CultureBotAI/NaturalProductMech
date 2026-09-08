@@ -28,11 +28,43 @@ MIBiG and ChEBI is the next milestone.
 <!-- BEGIN GENERATED CORPUS STATS -->
 
 ```
-records: 0
+records: 3115
+unique InChIKeys: 3115
+structures with undefined stereocentres: 1124
 
-The corpus is empty. That is the expected M1 state: the schema, the
-validation path and the gates exist, and M2 seeds the first records
-from MIBiG and ChEBI. See PLAN.md section 7.
+by pathway (the filing decision, computed):
+  ALKALOIDS                             509
+  AMINO_ACIDS_AND_PEPTIDES              655
+  CARBOHYDRATES                         103
+  FATTY_ACIDS                            82
+  POLYKETIDES                           869
+  SHIKIMATES_AND_PHENYLPROPANOIDS        64
+  TERPENOIDS                            213
+  UNCLASSIFIED                          620
+
+by curation status:
+  SEEDED                               3115
+
+field coverage (records carrying at least one item):
+  producer_organisms                   3113
+  occurrences                             0
+  biosynthetic_gene_clusters           3115
+  biosynthetic_pathway                    0
+  bioactivities                           0
+  bioactivity_summary                     0
+  molecular_targets                       0
+  causal_graphs                           0
+  related_records                         0
+  discussions                           217
+
+producer claims: 3447 (1352 causal, 110 correlational)
+  BGC_CHARACTERIZED                    1352
+  BGC_CORRELATED                        110
+  SOURCE_ASSERTION                     1985
+
+A correlational producer claim is a real claim and a weaker one. Any
+figure answering 'which organisms are known to make this?' should say
+which of the two it counted.
 ```
 
 <!-- END GENERATED CORPUS STATS -->

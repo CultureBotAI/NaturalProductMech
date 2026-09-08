@@ -1,0 +1,65 @@
+identifier: naturalproductmech:mibig-4707c744c7
+label: arenimycin A
+chemical_structure:
+  smiles: CC1=CC2=C(C(O)=C1C(OC)=O)[C@]3(C(C4=CC5=C(C(O)=C4C([C@]3(CC2)OC)=O)C(C=C(C5=O)N[C@@H]6[C@@H]([C@H]([C@H]([C@@H](O6)C)O)O)OC)=O)=O)O
+  standard_inchi: InChI=1S/C33H33NO14/c1-11-8-13-6-7-32(47-5)29(42)20-15(28(41)33(32,44)21(13)25(39)18(11)31(43)46-4)9-14-19(24(20)38)17(35)10-16(23(14)37)34-30-27(45-3)26(40)22(36)12(2)48-30/h8-10,12,22,26-27,30,34,36,38-40,44H,6-7H2,1-5H3/t12-,22-,26-,27+,30-,32-,33+/m0/s1
+  standard_inchi_key: VACDYOFFZQTSPN-HAKWYHDRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000198
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Polycyclic aromatic polyketides
+  class_results: []
+  is_glycoside: true
+bgc_class:
+- PKS
+- SACCHARIDE
+producer_organisms:
+- taxon_id: NCBITaxon:1137250
+  taxon_label: Salinispora arenicola CNB527
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000198
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24191063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000198 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000198
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1137250
+  organism_label: Salinispora arenicola CNB527
+  evidence:
+  - reference: PMID:24191063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000198 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_AZXI01000002.1
+  locus_from: 3084
+  locus_to: 41108
+  bgc_class:
+  - PKS
+  - SACCHARIDE
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000198
+  source_label: arenimycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-4707c744c7
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

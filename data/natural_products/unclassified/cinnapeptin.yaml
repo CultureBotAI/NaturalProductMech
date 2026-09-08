@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-c9ab9f0b61
+label: cinnapeptin
+chemical_structure:
+  smiles: CC1=CC=CC=C1/C=C/C(=O)N[C@H]1C(=O)N[C@H](CC2=CC=CC=C2)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CC2=CC=C(O)C=C2)C(=O)N[C@H](CCCCN)C(=O)N[C@@H]([C@@H](O)C(C)C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CC2=CC=C(O)C=C2)C(=O)N[C@H]([C@@H](C)O)C(=O)N[C@@H](C(O)C(C)C)CO[C@@H]1C
+  standard_inchi: InChI=1S/C72H101N11O17/c1-39(2)33-52-65(92)76-53(35-46-22-27-49(86)28-23-46)66(93)74-51(21-15-16-32-73)64(91)83-61(63(90)41(5)6)72(99)79-56(37-84)69(96)77-55(36-47-24-29-50(87)30-25-47)68(95)82-59(43(8)85)70(97)80-57(62(89)40(3)4)38-100-44(9)60(81-58(88)31-26-48-20-14-13-17-42(48)7)71(98)78-54(67(94)75-52)34-45-18-11-10-12-19-45/h10-14,17-20,22-31,39-41,43-44,51-57,59-63,84-87,89-90H,15-16,21,32-38,73H2,1-9H3,(H,74,93)(H,75,94)(H,76,92)(H,77,96)(H,78,98)(H,79,99)(H,80,97)(H,81,88)(H,82,95)(H,83,91)/b31-26+/t43-,44-,51-,52+,53-,54-,55+,56+,57-,59-,60-,61+,62?,63+/m1/s1
+  standard_inchi_key: MWADPICVQSLLSV-GSJUHUDTSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002108
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033130
+producer_organisms:
+- taxon_id: NCBITaxon:566461
+  taxon_label: Streptomyces viridosporus ATCC 14672
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002108
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1002/anie.202009611
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002108 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002108
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:566461
+  organism_label: Streptomyces viridosporus ATCC 14672
+  evidence:
+  - reference: DOI:10.1002/anie.202009611
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002108 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:MT417183.1
+  locus_from: 4937
+  locus_to: 65197
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002108
+  source_label: cinnapeptin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-c9ab9f0b61
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

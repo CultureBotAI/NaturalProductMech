@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-d40497e28e
+label: epichloenin A
+chemical_structure:
+  smiles: C/C(=C\C(=O)N(CCC[C@H]1C(=O)NCC(=O)NCC(=O)NCC(=O)NCC(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N1)CCCN(C(=O)/C=C(\C)/CCO)O)CCCN(C(=O)/C=C(\C)/CCO)O)CCC(=O)N)O)/CCO
+  standard_inchi: InChI=1S/C46H74N12O18/c1-28(12-18-59)21-40(67)56(74)15-4-7-31-43(70)51-26-38(65)49-24-36(63)48-25-37(64)50-27-39(66)52-34(10-11-35(47)62)46(73)55-33(9-6-17-58(76)42(69)23-30(3)14-20-61)45(72)54-32(44(71)53-31)8-5-16-57(75)41(68)22-29(2)13-19-60/h21-23,31-34,59-61,74-76H,4-20,24-27H2,1-3H3,(H2,47,62)(H,48,63)(H,49,65)(H,50,64)(H,51,70)(H,52,66)(H,53,71)(H,54,72)(H,55,73)/b28-21+,29-22+,30-23+/t31-,32-,33-,34-/m0/s1
+  standard_inchi_key: ZYMBDGAKDFBIOX-MQGQGTHPSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001250
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- pubchem:101570776
+producer_organisms:
+- taxon_id: NCBITaxon:35717
+  taxon_label: Epichloe festucae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001250
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1371/journal.ppat.1003332
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001250 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001250
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:35717
+  organism_label: Epichloe festucae
+  evidence:
+  - reference: DOI:10.1371/journal.ppat.1003332
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001250 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:JN132403.1
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001250
+  source_label: epichloenin A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-d40497e28e
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

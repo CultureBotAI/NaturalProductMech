@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-d7b425a1e1
+label: gacamide A
+chemical_structure:
+  smiles: CCCCCCC[C@@H](O)CC(N[C@H](CC(C)C)C(N[C@H](CC(O)=O)C(N[C@@H](C(N[C@@H]([C@H](C)CC)C(N[C@@H](C(N[C@H](CCC(N)=O)C(N[C@@H](C(N[C@H]1CC(C)C)=O)COC([C@H]([C@H](CC)C)NC([C@@H](CO)NC([C@H](CC(C)C)NC1=O)=O)=O)=O)=O)=O)CC(C)C)=O)=O)CCC(N)=O)=O)=O)=O
+  standard_inchi: InChI=1S/C66H115N13O19/c1-14-17-18-19-20-21-40(81)30-52(84)69-43(26-34(4)5)58(89)74-47(31-53(85)86)62(93)71-42(23-25-51(68)83)57(88)78-54(38(12)15-2)65(96)75-46(29-37(10)11)59(90)70-41(22-24-50(67)82)56(87)77-49-33-98-66(97)55(39(13)16-3)79-63(94)48(32-80)76-61(92)45(28-36(8)9)72-60(91)44(27-35(6)7)73-64(49)95/h34-49,54-55,80-81H,14-33H2,1-13H3,(H2,67,82)(H2,68,83)(H,69,84)(H,70,90)(H,71,93)(H,72,91)(H,73,95)(H,74,89)(H,75,96)(H,76,92)(H,77,87)(H,78,88)(H,79,94)(H,85,86)/t38-,39+,40-,41-,42-,43-,44+,45+,46-,47-,48-,49-,54+,55+/m1/s1
+  standard_inchi_key: WTINGRXDSLFUKC-GGENCQROSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001842
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  - Lipopeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:205922
+  taxon_label: Pseudomonas fluorescens Pf0-1
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001842
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
+    production.'
+  evidence:
+  - reference: PMID:30666877
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001842 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001842
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:205922
+  organism_label: Pseudomonas fluorescens Pf0-1
+  evidence:
+  - reference: PMID:30666877
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001842 entry version 4; citation taken from the entry level
+  genome_accession: genbank:CP000094.2
+  locus_from: 2495895
+  locus_to: 2538708
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Gene expression correlated with compound production
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001842
+  source_label: gacamide A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-d7b425a1e1
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

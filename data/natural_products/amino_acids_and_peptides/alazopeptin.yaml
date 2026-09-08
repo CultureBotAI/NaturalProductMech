@@ -1,0 +1,108 @@
+identifier: naturalproductmech:mibig-7a2a294289
+label: alazopeptin
+chemical_structure:
+  smiles: C=CCNC(CCC(=O)C=[N+]=[N-])C(=O)NC(CCC(=O)C=[N+]=[N-])C(=O)O
+  standard_inchi: InChI=1S/C15H20N6O5/c1-2-7-18-12(5-3-10(22)8-19-16)14(24)21-13(15(25)26)6-4-11(23)9-20-17/h2,8-9,12-13,18H,1,3-7H2,(H,21,24)(H,25,26)
+  standard_inchi_key: LYUGICBKRYXVHJ-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002458
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- npatlas:NPA033438
+producer_organisms:
+- taxon_id: NCBITaxon:66896
+  taxon_label: Streptacidiphilus griseoplanus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002458
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: PMID:33624374
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002458 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:1449346
+  taxon_label: Kitasatospora azatica KCTC 9699
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002536
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression.'
+  evidence:
+  - reference: DOI:10.1038/ja.2008.83
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002536 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002458
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:66896
+  organism_label: Streptacidiphilus griseoplanus
+  evidence:
+  - reference: PMID:33624374
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002458 entry version 3; citation taken from the entry level
+  genome_accession: genbank:LC593326.1
+  locus_from: 3180
+  locus_to: 8262
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+- accession: mibig:BGC0002536
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1449346
+  organism_label: Kitasatospora azatica KCTC 9699
+  evidence:
+  - reference: DOI:10.1038/ja.2008.83
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002536 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:NZ_JQMO01000003.1
+  locus_from: 5172055
+  locus_to: 5199249
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Heterologous expression
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002458
+  source_label: alazopeptin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7a2a294289
+- source: MIBIG
+  source_id: BGC0002536
+  source_label: alazopeptin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-70676a9095
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0002458, BGC0002536.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

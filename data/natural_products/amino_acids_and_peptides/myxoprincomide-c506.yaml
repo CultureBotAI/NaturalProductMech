@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-17059fc028
+label: myxoprincomide-c506
+chemical_structure:
+  smiles: CNC(CO)C(=O)NC(CC(C)C)C(=O)NC(C(O)(C)C)C(=O)NC(CO)C(=O)NC(C(C)C)C(=O)C(=O)NC(CO)C(=O)NC(CC1=CC=C(O)C=C1)C(=O)NC(CCCN)CC(=O)NC(C)C(=O)O
+  standard_inchi: InChI=1S/C45H74N10O16/c1-22(2)16-28(50-39(64)30(19-56)47-8)38(63)55-36(45(6,7)71)43(68)53-32(21-58)41(66)54-34(23(3)4)35(61)42(67)52-31(20-57)40(65)51-29(17-25-11-13-27(59)14-12-25)37(62)49-26(10-9-15-46)18-33(60)48-24(5)44(69)70/h11-14,22-24,26,28-32,34,36,47,56-59,71H,9-10,15-21,46H2,1-8H3,(H,48,60)(H,49,62)(H,50,64)(H,51,65)(H,52,67)(H,53,68)(H,54,66)(H,55,63)(H,69,70)
+  standard_inchi_key: QKVBZIOMBXJEAO-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000393
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Linear peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA010895
+producer_organisms:
+- taxon_id: NCBITaxon:246197
+  taxon_label: Myxococcus xanthus DK 1622
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000393
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:22162209
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000393 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000393
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:246197
+  organism_label: Myxococcus xanthus DK 1622
+  evidence:
+  - reference: PMID:22162209
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000393 entry version 5; citation taken from the entry level
+  genome_accession: genbank:CP000113.1
+  locus_from: 4498820
+  locus_to: 4546737
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000393
+  source_label: myxoprincomide-c506
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-17059fc028
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

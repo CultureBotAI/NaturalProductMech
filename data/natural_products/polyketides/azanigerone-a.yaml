@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-0e20682015
+label: azanigerone A
+chemical_structure:
+  smiles: CCC(C)CC(C)C(=O)OC1(C(=O)C=C2C=C(OC=C2C1=O)C(=O)O)C
+  standard_inchi: InChI=1S/C19H22O7/c1-5-10(2)6-11(3)18(24)26-19(4)15(20)8-12-7-14(17(22)23)25-9-13(12)16(19)21/h7-11H,5-6H2,1-4H3,(H,22,23)
+  standard_inchi_key: GIDMWMOVOCXADR-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001143
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Chromanes
+  class_results:
+  - Azaphilones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:122198269
+- npatlas:NPA015930
+producer_organisms:
+- taxon_id: NCBITaxon:380704
+  taxon_label: Aspergillus niger ATCC 1015
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001143
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:22921072
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001143 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001143
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:380704
+  organism_label: Aspergillus niger ATCC 1015
+  evidence:
+  - reference: PMID:22921072
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001143 entry version 4; citation taken from the entry level
+  genome_accession: genbank:ACJE01000001.1
+  locus_from: 422430
+  locus_to: 462946
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001143
+  source_label: azanigerone A
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-0e20682015
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

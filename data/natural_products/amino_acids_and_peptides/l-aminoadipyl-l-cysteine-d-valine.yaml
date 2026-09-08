@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-47a55999bd
+label: δ-(L-α-aminoadipyl)-L-cysteine-D-valine
+chemical_structure:
+  smiles: CC(C)[C@@H](NC(=O)[C@H](CS)NC(=O)CCC[C@H]([NH3+])C([O-])=O)C([O-])=O
+  standard_inchi: InChI=1S/C14H25N3O6S/c1-7(2)11(14(22)23)17-12(19)9(6-24)16-10(18)5-3-4-8(15)13(20)21/h7-9,11,24H,3-6,15H2,1-2H3,(H,16,18)(H,17,19)(H,20,21)(H,22,23)/p-1/t8-,9-,11+/m0/s1
+  standard_inchi_key: BYEIJZFKOAXBBV-ATZCPNFKSA-M
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000405
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Tripeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+xrefs:
+- chebi:58572
+producer_organisms:
+- taxon_id: NCBITaxon:5076
+  taxon_label: Penicillium chrysogenum
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000405
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays.'
+  evidence:
+  - reference: PMID:1368505
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000405 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000405
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5076
+  organism_label: Penicillium chrysogenum
+  evidence:
+  - reference: PMID:1368505
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000405 entry version 5; citation taken from the entry level
+  genome_accession: genbank:EF601124.1
+  bgc_class:
+  - NRPS
+  locus_evidence_methods:
+  - Enzymatic assays
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000405
+  source_label: δ-(L-α-aminoadipyl)-L-cysteine-D-valine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-47a55999bd
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

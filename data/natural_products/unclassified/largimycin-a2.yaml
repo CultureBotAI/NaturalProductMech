@@ -1,0 +1,71 @@
+identifier: naturalproductmech:mibig-c34861c65f
+label: Largimycin A2
+chemical_structure:
+  smiles: CC(=O)N[C@H](CS[C@H]1CC(=O)/C=C/C=C\C2=COC(=N2)/C([C@H]2CO2)=N\OC(=O)C[C@@]2([C@@]3(C(=O)O)CO3)CC[C@]1(C)S2)C(=O)O
+  standard_inchi: InChI=1S/C28H31N3O11S2/c1-15(32)29-18(24(35)36)13-43-20-9-17(33)6-4-3-5-16-11-40-23(30-16)22(19-12-39-19)31-42-21(34)10-27(8-7-26(20,2)44-27)28(14-41-28)25(37)38/h3-6,11,18-20H,7-10,12-14H2,1-2H3,(H,29,32)(H,35,36)(H,37,38)/b5-3-,6-4+,31-22-/t18-,19-,20+,26+,27-,28+/m1/s1
+  standard_inchi_key: WETQRRWLMLVNIN-UUNPUGERSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001853
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results: []
+  superclass_results: []
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Cyclic polyketide
+xrefs:
+- npatlas:NPA032049
+producer_organisms:
+- taxon_id: NCBITaxon:41951
+  taxon_label: Streptomyces argillaceus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001853
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: DOI:10.1021/acschembio.0c00160
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001853 entry version 3; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001853
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:41951
+  organism_label: Streptomyces argillaceus
+  evidence:
+  - reference: DOI:10.1021/acschembio.0c00160
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001853 entry version 3; citation taken from the compound evidence
+      level
+  genome_accession: genbank:LR131959.1
+  locus_from: 1
+  locus_to: 69807
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001853
+  source_label: Largimycin A2
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-c34861c65f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

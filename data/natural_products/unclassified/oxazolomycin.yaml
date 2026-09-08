@@ -1,0 +1,72 @@
+identifier: naturalproductmech:mibig-9f87d809f6
+label: oxazolomycin
+chemical_structure:
+  smiles: COC(CC(C)C(O)\C=C\C=C\CNC(=O)C(C)(C)C(O)C(\C)=C\C=C\C=C\CC1=CN=CO1)C1(O)C(C)C(=O)N(C)C11COC1=O
+  standard_inchi: InChI=1S/C35H49N3O9/c1-23(15-11-8-9-12-16-26-20-36-22-47-26)29(40)33(4,5)31(42)37-18-14-10-13-17-27(39)24(2)19-28(45-7)35(44)25(3)30(41)38(6)34(35)21-46-32(34)43/h8-15,17,20,22,24-25,27-29,39-40,44H,16,18-19,21H2,1-7H3,(H,37,42)/b11-8+,12-9+,14-10+,17-13+,23-15+
+  standard_inchi_key: ZZNSFVQRQDZGGX-XRDXNDOHSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001106
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Linear polyketides
+  class_results:
+  - Elfamycins
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA012324
+producer_organisms:
+- taxon_id: NCBITaxon:1888
+  taxon_label: Streptomyces albus
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0001106
+  source: MIBIG
+  source_version: '6'
+  notes: 'Locus evidence: Heterologous expression|Knock-out studies.'
+  evidence:
+  - reference: PMID:16707707
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001106 entry version 6; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001106
+  entry_version: '6'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1888
+  organism_label: Streptomyces albus
+  evidence:
+  - reference: PMID:16707707
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001106 entry version 6; citation taken from the entry level
+  genome_accession: genbank:EF552687.1
+  locus_from: 12964
+  locus_to: 97799
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001106
+  source_label: oxazolomycin
+  source_version: '6'
+  minted_identifier: naturalproductmech:mibig-9f87d809f6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

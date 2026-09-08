@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-b902bd7c65
+label: nectriapyrone
+chemical_structure:
+  smiles: C/C=C(\C)C1=CC(OC)=C(C)C(=O)O1
+  standard_inchi: InChI=1S/C11H14O3/c1-5-7(2)9-6-10(13-4)8(3)11(12)14-9/h5-6H,1-4H3/b7-5+
+  standard_inchi_key: NRLCQITWKJENAT-FNORWQNLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002155
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 2-pyrone derivatives
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA033440
+- pubchem:5358550
+producer_organisms:
+- taxon_id: NCBITaxon:242507
+  taxon_label: Pyricularia oryzae 70-15
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002155
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Gene expression correlated with compound production|Knock-out
+    studies.'
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(00)72224-6
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002155 entry version 3; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002155
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:242507
+  organism_label: Pyricularia oryzae 70-15
+  evidence:
+  - reference: DOI:10.1016/s0040-4039(00)72224-6
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002155 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:CM001235.1
+  locus_from: 1536909
+  locus_to: 1553606
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002155
+  source_label: nectriapyrone
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-b902bd7c65
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

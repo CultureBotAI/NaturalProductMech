@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-4b83bfc007
+label: equisetin
+chemical_structure:
+  smiles: '[H][C@@]12C[C@H](C)CC[C@@]1([H])[C@@](C)([C@H](\C=C\C)C=C2)C(\O)=C1\C(=O)[C@H](CO)N(C)C1=O'
+  standard_inchi: InChI=1S/C22H31NO4/c1-5-6-15-9-8-14-11-13(2)7-10-16(14)22(15,3)20(26)18-19(25)17(12-24)23(4)21(18)27/h5-6,8-9,13-17,24,26H,7,10-12H2,1-4H3/b6-5+,20-18+/t13-,14-,15-,16-,17+,22-/m1/s1
+  standard_inchi_key: QNQBPPQLRODXET-AIMHRHHOSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001255
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - 3-Decalinoyltetramic acids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA013853
+- pubchem:54684703
+producer_organisms:
+- taxon_id: NCBITaxon:42747
+  taxon_label: Fusarium heterosporum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001255
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.3390/md20110656
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001255 entry version 4; citation taken from the compound bioactivity
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001255
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:42747
+  organism_label: Fusarium heterosporum
+  evidence:
+  - reference: DOI:10.3390/md20110656
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001255 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KC439347.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001255
+  source_label: equisetin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-4b83bfc007
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

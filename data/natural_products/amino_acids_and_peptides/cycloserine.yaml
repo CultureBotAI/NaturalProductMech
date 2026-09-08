@@ -1,0 +1,64 @@
+identifier: naturalproductmech:mibig-415a4f90e6
+label: cycloserine
+chemical_structure:
+  smiles: N[C@@H]1CONC1=O
+  standard_inchi: InChI=1S/C3H6N2O2/c4-2-1-7-5-3(2)6/h2H,1,4H2,(H,5,6)/t2-/m1/s1
+  standard_inchi_key: DYDCUQKUCUHJBH-UWTATZPHSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000896
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results:
+  - Aminoacids
+  is_glycoside: false
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA01237
+producer_organisms:
+- taxon_id: NCBITaxon:58340
+  taxon_label: Streptomyces lavendulae subsp. lavendulae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000896
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:20086163
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000896 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000896
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:58340
+  organism_label: Streptomyces lavendulae subsp. lavendulae
+  evidence:
+  - reference: PMID:20086163
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000896 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AB516431.1
+  bgc_class:
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000896
+  source_label: cycloserine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-415a4f90e6
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

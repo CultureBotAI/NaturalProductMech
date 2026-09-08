@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-986328565f
+label: detoxin P3
+chemical_structure:
+  smiles: O=C(CC(C)C)N[C@H](C(O[C@@H](CC(O)=O)[C@]1([H])CCCN1C([C@@H](N)C(C)C)=O)=O)CC2=CC=CC=C2
+  standard_inchi: InChI=1S/C26H39N3O6/c1-16(2)13-22(30)28-19(14-18-9-6-5-7-10-18)26(34)35-21(15-23(31)32)20-11-8-12-29(20)25(33)24(27)17(3)4/h5-7,9-10,16-17,19-21,24H,8,11-15,27H2,1-4H3,(H,28,30)(H,31,32)/t19-,20-,21-,24-/m0/s1
+  standard_inchi_key: LIFRIUCFICDNIR-CIEVZJJWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001841
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Small peptides
+  class_results: []
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Depsipeptide
+producer_organisms:
+- taxon_id: NCBITaxon:330084
+  taxon_label: Amycolatopsis jejuensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001841
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1101/445270
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001841 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001841
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:330084
+  organism_label: Amycolatopsis jejuensis
+  evidence:
+  - reference: DOI:10.1101/445270
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001841 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:BK010851.1
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001841
+  source_label: detoxin P3
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-986328565f
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

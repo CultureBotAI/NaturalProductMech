@@ -1,0 +1,103 @@
+identifier: naturalproductmech:mibig-21b2edacc4
+label: curacomycin
+chemical_structure:
+  smiles: CC[C@H](C)[C@@H]3NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](C(C)C)NC(=O)[C@H](Cc1c[nH]c2ccc(Cl)cc12)NC(=O)C(C(O)C(N)=O)NC(=O)[C@H](CCCN)NC3=O
+  standard_inchi: InChI=1S/C37H56ClN9O8/c1-7-19(6)28-36(54)42-24(9-8-12-39)32(50)47-29(30(48)31(40)49)37(55)44-26(14-20-16-41-23-11-10-21(38)15-22(20)23)34(52)45-27(18(4)5)35(53)43-25(13-17(2)3)33(51)46-28/h10-11,15-19,24-30,41,48H,7-9,12-14,39H2,1-6H3,(H2,40,49)(H,42,54)(H,43,53)(H,44,55)(H,45,52)(H,46,51)(H,47,50)/t19-,24-,25+,26-,27+,28-,29?,30?/m0/s1
+  standard_inchi_key: CUXAULQHGRSWLF-IKVCUCANSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001561
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:146536
+  taxon_label: Streptomyces curacoi
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001561
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1002/ajoc.201700433
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001561 entry version 4; citation taken from the compound evidence
+      level
+- taxon_id: NCBITaxon:146536
+  taxon_label: Streptomyces curacoi
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001562
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.1002/ajoc.201700433
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001562 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001561
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:146536
+  organism_label: Streptomyces curacoi
+  evidence:
+  - reference: DOI:10.1002/ajoc.201700433
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001561 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:LMWJ01000028.1
+  locus_from: 1237
+  locus_to: 18814
+  bgc_class:
+  - NRPS
+- accession: mibig:BGC0001562
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:146536
+  organism_label: Streptomyces curacoi
+  evidence:
+  - reference: DOI:10.1002/ajoc.201700433
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001562 entry version 5; citation taken from the entry level
+  genome_accession: genbank:LMWJ01000003.1
+  locus_from: 314041
+  locus_to: 333483
+  bgc_class:
+  - NRPS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001561
+  source_label: curacomycin
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-21b2edacc4
+- source: MIBIG
+  source_id: BGC0001562
+  source_label: curacomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-58955567ec
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001561, BGC0001562.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

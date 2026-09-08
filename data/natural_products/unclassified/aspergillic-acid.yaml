@@ -1,0 +1,107 @@
+identifier: naturalproductmech:mibig-89037aa699
+label: aspergillic acid
+chemical_structure:
+  smiles: CCC(C)C1=CN=C(C(=O)N1O)CC(C)C
+  standard_inchi: InChI=1S/C12H20N2O2/c1-5-9(4)11-7-13-10(6-8(2)3)12(15)14(11)16/h7-9,16H,5-6H2,1-4H3
+  standard_inchi_key: IUZCDJYHMMWBBE-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001516
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Tetramate alkaloids
+  - Peptide alkaloids
+  class_results:
+  - Pyrazine and Piperazine alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- OTHER
+xrefs:
+- npatlas:NPA028490
+producer_organisms:
+- taxon_id: NCBITaxon:332952
+  taxon_label: Aspergillus flavus NRRL3357
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001516
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:29674152
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001516 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:5059
+  taxon_label: Aspergillus flavus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002602
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: DOI:10.3920/WMJ2018.2397
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002602 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001516
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:332952
+  organism_label: Aspergillus flavus NRRL3357
+  evidence:
+  - reference: PMID:29674152
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001516 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NW_002477238.1
+  locus_from: 30057
+  locus_to: 45034
+  bgc_class:
+  - NRPS
+- accession: mibig:BGC0002602
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5059
+  organism_label: Aspergillus flavus
+  evidence:
+  - reference: DOI:10.3920/WMJ2018.2397
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002602 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MH898736.1
+  locus_from: 1
+  locus_to: 15136
+  bgc_class:
+  - NRPS
+  - OTHER
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001516
+  source_label: aspergillic acid
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-89037aa699
+- source: MIBIG
+  source_id: BGC0002602
+  source_label: aspergillic acid
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-c1d592de30
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001516, BGC0002602.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

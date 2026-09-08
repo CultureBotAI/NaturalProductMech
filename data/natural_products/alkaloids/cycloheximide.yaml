@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-ab5ddd856a
+label: cycloheximide
+chemical_structure:
+  smiles: '[H][C@@](O)(CC1CC(=O)NC(=O)C1)[C@@]1([H])C[C@@H](C)C[C@H](C)C1=O'
+  standard_inchi: InChI=1S/C15H23NO4/c1-8-3-9(2)15(20)11(4-8)12(17)5-10-6-13(18)16-14(19)7-10/h8-12,17H,3-7H2,1-2H3,(H,16,18,19)/t8-,9-,11+,12+/m0/s1
+  standard_inchi_key: YPHMISFOHDHNIV-GAIPPQHRSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000175
+np_pathway: ALKALOIDS
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Lysine alkaloids
+  class_results:
+  - Piperidine alkaloids
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- npatlas:NPA012393
+- pubchem:6197
+producer_organisms:
+- taxon_id: NCBITaxon:1211968
+  taxon_label: Streptomyces sp. YIM 56141
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000175
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies.'
+  evidence:
+  - reference: PMID:24815182
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000175 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000175
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1211968
+  organism_label: Streptomyces sp. YIM 56141
+  evidence:
+  - reference: PMID:24815182
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000175 entry version 5; citation taken from the entry level
+  genome_accession: genbank:JX014302.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000175
+  source_label: cycloheximide
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-ab5ddd856a
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

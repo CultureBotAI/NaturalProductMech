@@ -1,0 +1,66 @@
+identifier: naturalproductmech:mibig-a6debb22b8
+label: lasiodiplodin
+chemical_structure:
+  smiles: C[C@H]1CCCCCCCC2=CC(=CC(=C2C(=O)O1)OC)O
+  standard_inchi: InChI=1S/C17H24O4/c1-12-8-6-4-3-5-7-9-13-10-14(18)11-15(20-2)16(13)17(19)21-12/h10-12,18H,3-9H2,1-2H3/t12-/m0/s1
+  standard_inchi_key: OKWRDLQBKAOJNC-LBPRGKRZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001245
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Zearalenones
+  is_glycoside: false
+bgc_class:
+- PKS
+xrefs:
+- pubchem:14562696
+producer_organisms:
+- taxon_id: NCBITaxon:45133
+  taxon_label: Lasiodiplodia theobromae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001245
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24597618
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001245 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001245
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:45133
+  organism_label: Lasiodiplodia theobromae
+  evidence:
+  - reference: PMID:24597618
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001245 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KJ434938.1
+  locus_from: 3800
+  locus_to: 30072
+  bgc_class:
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001245
+  source_label: lasiodiplodin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-a6debb22b8
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

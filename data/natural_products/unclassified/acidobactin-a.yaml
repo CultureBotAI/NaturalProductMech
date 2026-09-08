@@ -1,0 +1,70 @@
+identifier: naturalproductmech:mibig-55dd9ccc19
+label: acidobactin A
+chemical_structure:
+  smiles: CC1CC(=O)NC(CCCN(O)C=O)C(O)CC(=O)NC(C(C)O)C(=O)NC(CCCNO)C(=O)NC(CO)C(=O)NC(C(O)C(=O)O)C(=O)O1
+  standard_inchi: InChI=1S/C28H47N7O16/c1-13-9-19(40)30-15(6-4-8-35(50)12-37)18(39)10-20(41)33-21(14(2)38)26(45)31-16(5-3-7-29-49)24(43)32-17(11-36)25(44)34-22(28(48)51-13)23(42)27(46)47/h12-18,21-23,29,36,38-39,42,49-50H,3-11H2,1-2H3,(H,30,40)(H,31,45)(H,32,43)(H,33,41)(H,34,44)(H,46,47)
+  standard_inchi_key: GTMKLBCBYHLPOW-UHFFFAOYSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002419
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Oligopeptides
+  class_results:
+  - Cyclic peptides
+  - Depsipeptides
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- npatlas:NPA032826
+producer_organisms:
+- taxon_id: NCBITaxon:397945
+  taxon_label: Acidovorax citrulli AAC00-1
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002419
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:26412281
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002419 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002419
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:397945
+  organism_label: Acidovorax citrulli AAC00-1
+  evidence:
+  - reference: PMID:26412281
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002419 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP000512.1
+  locus_from: 4108803
+  locus_to: 4146830
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002419
+  source_label: acidobactin A
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-55dd9ccc19
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,67 @@
+identifier: naturalproductmech:mibig-d69047ca64
+label: SGR PTM Compound c
+chemical_structure:
+  smiles: OC1=C2C(NC1CCCNC(/C=C/C=C/[C@@]3(C[C@@]4([C@@]([H])([C@@H](C)[C@@H](CC)C4)[C@@]3([C@H](O)/C=C/C=C/C2=O)[H])[H])[H])=O)=O
+  standard_inchi: InChI=1S/C29H38N2O5/c1-3-18-15-20-16-19-9-4-7-13-24(34)30-14-8-10-21-28(35)27(29(36)31-21)23(33)12-6-5-11-22(32)26(19)25(20)17(18)2/h4-7,9,11-13,17-22,25-26,32,35H,3,8,10,14-16H2,1-2H3,(H,30,34)(H,31,36)/b9-4+,11-5+,12-6+,13-7+/t17-,18-,19+,20+,21?,22+,25+,26-/m0/s1
+  standard_inchi_key: FIXCCFLCAJQMGL-JZIFFXAWSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001043
+np_pathway: UNCLASSIFIED
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Macrocyclic tetramic acids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:455632
+  taxon_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001043
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated.'
+  evidence:
+  - reference: PMID:24305602
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001043 entry version 4; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001043
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455632
+  organism_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence:
+  - reference: PMID:24305602
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001043 entry version 4; citation taken from the entry level
+  genome_accession: genbank:AP009493.1
+  locus_from: 950358
+  locus_to: 966540
+  bgc_class:
+  - NRPS
+  - PKS
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001043
+  source_label: SGR PTM Compound c
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-d69047ca64
+grounding_status: MINTED
+grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
+  compounds carry no ChEBI cross-reference.
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T03:45:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
