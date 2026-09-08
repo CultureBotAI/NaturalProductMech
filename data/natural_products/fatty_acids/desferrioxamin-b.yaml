@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000940
 np_pathway: FATTY_ACIDS
+synonyms:
+- value: desferrioxamine
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000940
+- value: desferrioxamine B
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000940
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -160,7 +167,7 @@ discussions:
     BGC0001453, BGC0002305. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T03:45:24Z'
+- timestamp: '2026-09-08T03:53:52Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

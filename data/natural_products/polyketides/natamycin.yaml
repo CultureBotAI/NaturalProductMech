@@ -1,5 +1,5 @@
 identifier: naturalproductmech:mibig-f24c09255c
-label: pimaricin
+label: natamycin
 chemical_structure:
   smiles: C[C@@H]1C/C=C/C=C/C=C/C=C/[C@@H](C[C@H]2[C@@H]([C@H](C[C@](O2)(C[C@H](C[C@@H]3[C@H](O3)/C=C/C(=O)O1)O)O)O)C(=O)O)O[C@H]4[C@H]([C@H]([C@@H]([C@H](O4)C)O)N)O
   standard_inchi: InChI=1S/C33H47NO13/c1-18-10-8-6-4-3-5-7-9-11-21(45-32-30(39)28(34)29(38)19(2)44-32)15-25-27(31(40)41)22(36)17-33(42,47-25)16-20(35)14-24-23(46-24)12-13-26(37)43-18/h3-9,11-13,18-25,27-30,32,35-36,38-39,42H,10,14-17,34H2,1-2H3,(H,40,41)/b4-3+,7-5+,8-6+,11-9+,13-12+/t18-,19-,20+,21+,22+,23-,24-,25+,27-,28+,29-,30+,32+,33-/m1/s1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000125
 np_pathway: POLYKETIDES
+synonyms:
+- value: pimaricin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000125
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -93,7 +97,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:45:22Z'
+- timestamp: '2026-09-08T03:53:50Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

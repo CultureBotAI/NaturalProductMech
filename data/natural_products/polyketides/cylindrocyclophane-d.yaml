@@ -1,5 +1,5 @@
 identifier: naturalproductmech:mibig-dbb114994c
-label: cylindrocyclophane D
+label: Cylindrocyclophane D
 chemical_structure:
   smiles: CCCC[C@H]1CCCC[C@@H]([C@H](C2=CC(=C([C@H](CCCC[C@@H]([C@H](C3=CC(=C1C(=C3)O)O)OC(=O)C)C)CCCC)C(=C2)O)O)OC(=O)C)C
   standard_inchi: InChI=1S/C40H60O8/c1-7-9-17-29-19-13-11-15-25(3)40(48-28(6)42)32-23-35(45)38(36(46)24-32)30(18-10-8-2)20-14-12-16-26(4)39(47-27(5)41)31-21-33(43)37(29)34(44)22-31/h21-26,29-30,39-40,43-46H,7-20H2,1-6H3/t25-,26-,29-,30-,39+,40+/m0/s1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001064
 np_pathway: POLYKETIDES
+synonyms:
+- value: cylindrocyclophane D
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001064
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -99,7 +103,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:45:20Z'
+- timestamp: '2026-09-08T03:53:48Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

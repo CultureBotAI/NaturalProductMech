@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001703
 np_pathway: ALKALOIDS
+synonyms:
+- value: nocuolin A
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001703
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -93,7 +97,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:45:22Z'
+- timestamp: '2026-09-08T03:53:50Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,5 +1,5 @@
 identifier: naturalproductmech:mibig-8489588bad
-label: cylindrocyclophane F
+label: Cylindrocyclophane F
 chemical_structure:
   smiles: CCCC[C@H]1CCCC[C@@H](CC2=CC(=C([C@H](CCCC[C@@H](CC3=CC(=C1C(=C3)O)O)C)CCCC)C(=C2)O)O)C
   standard_inchi: InChI=1S/C36H56O4/c1-5-7-15-29-17-11-9-13-25(3)20-28-23-33(39)36(34(40)24-28)30(16-8-6-2)18-12-10-14-26(4)19-27-21-31(37)35(29)32(38)22-27/h21-26,29-30,37-40H,5-20H2,1-4H3/t25-,26-,29-,30-/m0/s1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001064
 np_pathway: POLYKETIDES
+synonyms:
+- value: cylindrocyclophane F
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001064
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -99,7 +103,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:45:17Z'
+- timestamp: '2026-09-08T03:53:45Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

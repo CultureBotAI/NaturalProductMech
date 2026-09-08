@@ -1,5 +1,5 @@
 identifier: naturalproductmech:mibig-8531bdc6e9
-label: orsellinic acid
+label: Orsellinic acid
 chemical_structure:
   smiles: CC1=CC(=CC(=C1C(=O)O)O)O
   standard_inchi: InChI=1S/C8H8O4/c1-4-2-5(9)3-6(10)7(4)8(11)12/h2-3,9-10H,1H3,(H,11,12)
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000057
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+synonyms:
+- value: orsellinic acid
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000057
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -209,7 +213,7 @@ discussions:
     BGC0002594, BGC0002596, BGC0002812. Confirm they describe the same compound rather
     than an upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T03:45:17Z'
+- timestamp: '2026-09-08T03:53:45Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

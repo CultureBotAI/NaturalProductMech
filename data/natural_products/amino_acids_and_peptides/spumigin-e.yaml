@@ -1,5 +1,5 @@
 identifier: naturalproductmech:mibig-27eba6bb08
-label: spumigin E
+label: Spumigin E
 chemical_structure:
   smiles: C[C@H]1C[C@H](N(C1)C(=O)[C@@H](CCC2=CC=C(C=C2)O)NC(=O)[C@@H](CC3=CC=C(C=C3)O)O)C(=O)NC(CCCN=C(N)N)C=O
   standard_inchi: InChI=1S/C31H42N6O7/c1-19-15-26(28(42)35-22(18-38)3-2-14-34-31(32)33)37(17-19)30(44)25(13-8-20-4-9-23(39)10-5-20)36-29(43)27(41)16-21-6-11-24(40)12-7-21/h4-7,9-12,18-19,22,25-27,39-41H,2-3,8,13-17H2,1H3,(H,35,42)(H,36,43)(H4,32,33,34)/t19-,22?,25+,26-,27+/m0/s1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000430
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+synonyms:
+- value: spumigin E
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000430
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -100,7 +104,7 @@ grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most M
   compounds carry no ChEBI cross-reference.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T03:45:19Z'
+- timestamp: '2026-09-08T03:53:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

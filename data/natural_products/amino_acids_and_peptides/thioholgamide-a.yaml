@@ -1,5 +1,5 @@
 identifier: naturalproductmech:mibig-f10910709b
-label: TVA-YJ-2
+label: thioholgamide A
 chemical_structure:
   smiles: CC1C(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC=CS1)C(C2=C[N+](=CN2C)C)O)CC3=CC=CC=C3)C)C(C)C)NC(=O)C(C)NC(=S)C(C)NC(=S)C(C)NC(=O)C(C)NC(=S)C(CCSC)NC(=S)C(C(C)C)NC(=O)C(=O)C
   standard_inchi: InChI=1S/C56H84N14O10S6/c1-27(2)40-51(79)58-29(5)46(74)63-38(24-36-18-16-15-17-19-36)49(77)68-43(44(72)39-25-69(12)26-70(39)13)50(78)57-21-23-86-35(11)42(52(80)65-40)67-47(75)31(7)60-54(82)33(9)62-53(81)32(8)59-45(73)30(6)61-55(83)37(20-22-85-14)64-56(84)41(28(3)4)66-48(76)34(10)71/h15-19,21,23,25-33,35,37-38,40-44,72H,20,22,24H2,1-14H3,(H11-,57,58,59,60,61,62,63,64,65,66,67,68,73,74,75,76,77,78,79,80,81,82,83,84)/p+1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002669
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+synonyms:
+- value: TVA-YJ-2
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002669
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -98,7 +102,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:45:19Z'
+- timestamp: '2026-09-08T03:53:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

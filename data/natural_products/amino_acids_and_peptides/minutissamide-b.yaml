@@ -1,5 +1,5 @@
 identifier: naturalproductmech:mibig-2ca675e701
-label: minutissamide C
+label: minutissamide B
 chemical_structure:
   smiles: CCC(CCCCCCCCC[C@H](C)[C@@H]1[C@H](C(=O)N[C@H](C(=O)N/C(=C/C)/C(=O)N[C@H](C(=O)N/C(=C/C)/C(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@H](C(=O)N([C@H](C(=O)N2CCC[C@H]2C(=O)N1)CC(=O)N)C)[C@@H](C)O)C)CC(=O)N)CC(=O)N)C(C)C)O)O
   standard_inchi: InChI=1S/C55H91N13O16/c1-10-32(70)22-19-17-15-13-14-16-18-21-29(6)43-45(74)53(82)64-42(28(4)5)52(81)61-34(12-3)48(77)63-36(26-40(57)72)50(79)60-33(11-2)47(76)62-35(25-39(56)71)49(78)59-30(7)46(75)66-44(31(8)69)55(84)67(9)38(27-41(58)73)54(83)68-24-20-23-37(68)51(80)65-43/h11-12,28-32,35-38,42-45,69-70,74H,10,13-27H2,1-9H3,(H2,56,71)(H2,57,72)(H2,58,73)(H,59,78)(H,60,79)(H,61,81)(H,62,76)(H,63,77)(H,64,82)(H,65,80)(H,66,75)/b33-11+,34-12+/t29-,30+,31+,32?,35-,36-,37-,38-,42-,43+,44-,45+/m0/s1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001952
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+synonyms:
+- value: minutissamide C
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001952
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -93,7 +97,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:45:23Z'
+- timestamp: '2026-09-08T03:53:51Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

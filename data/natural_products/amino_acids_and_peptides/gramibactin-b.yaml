@@ -1,5 +1,5 @@
 identifier: naturalproductmech:mibig-82a62a3a81
-label: trinickiabactin
+label: gramibactin B
 chemical_structure:
   smiles: CCCCCCCC(=O)N[C@H]([C@H](C(=O)O)O)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@H]([C@@H](C)O)C(=O)N[C@H](CCC[N+](=NO)[O-])C(=O)NCC(=O)N[C@H](CCC[N+](=NO)[O-])C(=O)O
   standard_inchi: InChI=1S/C32H56N10O17/c1-4-5-6-7-8-13-21(45)36-25(26(47)32(54)55)30(51)38-24(18(3)44)29(50)37-23(17(2)43)28(49)35-19(11-9-14-41(58)39-56)27(48)33-16-22(46)34-20(31(52)53)12-10-15-42(59)40-57/h17-20,23-26,43-44,47,56-57H,4-16H2,1-3H3,(H,33,48)(H,34,46)(H,35,49)(H,36,45)(H,37,50)(H,38,51)(H,52,53)(H,54,55)/t17-,18-,19-,20-,23-,24+,25-,26-/m1/s1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002329
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+synonyms:
+- value: trinickiabactin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002329
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -98,7 +102,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:45:19Z'
+- timestamp: '2026-09-08T03:53:46Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -169,6 +169,55 @@ def slugify(label: str, identifier: str) -> str:
     return slug[:80]
 
 
+# A name from a paper's own numbering, not a compound name. Narrow on purpose:
+# anything broader starts flagging real names such as "A-74528" or "BAA".
+PAPER_INTERNAL_NAME = re.compile(r"(?i)^(compound|metabolite|unnamed|unknown)?\s*\d+[a-z]?$")
+
+
+def choose_label(names: list[str]) -> tuple[str, list[str]]:
+    """The record's label, and every other source name as a synonym.
+
+    Chosen separately from the lead row, because the lead row is picked by
+    producer-evidence strength and has nothing to say about naming. Without
+    this, three records took a bare family name over the specific congener —
+    `xiamycin` over `xiamycin A` — which labels one structure with what is
+    really a class. Erythromycin came out right only because the accession
+    tie-break happened to favour the better row (#16).
+
+    Two rules, in order:
+
+    1. **Specificity wins.** Drop any candidate that another candidate has as a
+       prefix: `erythromycin` loses to `erythromycin A`, because the record is
+       one structure and the bare name is the family.
+    2. **Deterministic case.** Among names equal but for case, prefer the one
+       that is not all-lowercase-by-accident, then sort. `Aflatoxin B1` and
+       `aflatoxin B1` must not depend on entry order.
+
+    Every discarded name is returned as a synonym rather than thrown away.
+    """
+    unique = sorted({n.strip() for n in names if n and n.strip()})
+    if not unique:
+        return "", []
+
+    # Rule 1: a name another name extends is the less specific one.
+    specific = [
+        name for name in unique
+        if not any(other.lower() != name.lower() and other.lower().startswith(name.lower() + " ")
+                   for other in unique)
+    ]
+    candidates = specific or unique
+
+    # Rule 2: collapse case variants deterministically.
+    by_lower: dict[str, list[str]] = defaultdict(list)
+    for name in candidates:
+        by_lower[name.lower()].append(name)
+    best_key = sorted(by_lower)[0]
+    label = sorted(by_lower[best_key])[0]
+
+    synonyms = [name for name in unique if name != label]
+    return label, synonyms
+
+
 def mibig_evidence(row: dict[str, str]) -> list[dict[str, str]]:
     """Claim-level evidence for one MIBiG row.
 
@@ -234,7 +283,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             r["mibig_accession"],
         ))
         lead = rows[0]
-        label = lead["compound_name"] or key
+        label, synonyms = choose_label([r["compound_name"] for r in rows])
+        label = label or key
         identifier = mint_identifier("MIBIG", lead["mibig_accession"] + ":" + lead["compound_index"])
 
         classified = classification.get(key)
@@ -256,6 +306,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             },
             "np_pathway": pathway,
         }
+        if synonyms:
+            doc["synonyms"] = [{"value": value, "synonym_type": "RELATED_SYNONYM",
+                                "source": "mibig:" + lead["mibig_accession"]}
+                               for value in synonyms]
 
         if classified:
             doc["np_classification"] = {
@@ -346,9 +400,27 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         )
         doc["curation_status"] = "SEEDED"
 
+        discussions: list[dict[str, Any]] = []
+
+        # A paper-internal label identifies a structure only relative to one
+        # paper's numbering. The name is not invented here — MIBiG's is kept —
+        # but the record says it needs one, so it lands on the worklist rather
+        # than being found by someone browsing (#17).
+        if PAPER_INTERNAL_NAME.match(label):
+            discussions.append({
+                "discussion_id": "needs-a-name",
+                "kind": "CURATION_TODO",
+                "status": "OPEN",
+                "prompt": (
+                    f"This record is labelled {label!r}, which is a label from the "
+                    f"cited paper's own numbering rather than a compound name. "
+                    f"Resolve a name from the literature or a structure registry."
+                ),
+            })
+
         # A collision that survives must be visible, not silent.
         if len(rows) > 1 and len({r["mibig_accession"] for r in rows}) > 1:
-            doc["discussions"] = [{
+            discussions.append({
                 "discussion_id": "shared-structure",
                 "kind": "CURATION_TODO",
                 "status": "OPEN",
@@ -358,7 +430,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                     + ". Confirm they describe the same compound rather than an "
                     "upstream cross-reference error."
                 ),
-            }]
+            })
+
+        if discussions:
+            doc["discussions"] = discussions
 
         doc["_slug"] = slugify(label, identifier)
         records.append(doc)

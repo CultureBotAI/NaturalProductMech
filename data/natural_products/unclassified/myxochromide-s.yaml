@@ -1,5 +1,5 @@
 identifier: naturalproductmech:mibig-c2e4d35396
-label: myxochromide S1
+label: myxochromide S
 chemical_structure:
   smiles: C\C=C\C=C\C=C\C=C\C=C\C=C\C=C\C(=O)N(C)[C@H]1[C@@H](C)OC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC1=O
   standard_inchi: InChI=1S/C38H54N6O8/c1-8-9-10-11-12-13-14-15-16-17-18-19-20-21-32(46)44(7)33-28(6)52-38(51)29(22-23-31(39)45)42-35(48)27(5)40-34(47)26(4)41-36(49)30(24-25(2)3)43-37(33)50/h8-21,25-30,33H,22-24H2,1-7H3,(H2,39,45)(H,40,47)(H,41,49)(H,42,48)(H,43,50)/b9-8+,11-10+,13-12+,15-14+,17-16+,19-18+,21-20+/t26-,27-,28+,29-,30-,33-/m0/s1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001023
 np_pathway: UNCLASSIFIED
+synonyms:
+- value: myxochromide S1
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001023
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -162,7 +166,7 @@ discussions:
     BGC0001430, BGC0001431. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T03:45:18Z'
+- timestamp: '2026-09-08T03:53:46Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

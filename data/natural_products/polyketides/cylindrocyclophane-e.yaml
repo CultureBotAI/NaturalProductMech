@@ -1,5 +1,5 @@
 identifier: naturalproductmech:mibig-497c56536d
-label: cylindrocyclophane E
+label: Cylindrocyclophane E
 chemical_structure:
   smiles: CCCC[C@H]1CCCC[C@@H]([C@H](C2=CC(=C([C@H](CCCC[C@@H](CC3=CC(=C1C(=C3)O)O)C)CCCC)C(=C2)O)O)OC(=O)C)C
   standard_inchi: InChI=1S/C38H58O6/c1-6-8-16-29-19-13-11-15-26(4)38(44-27(5)39)31-23-34(42)37(35(43)24-31)30(17-9-7-2)18-12-10-14-25(3)20-28-21-32(40)36(29)33(41)22-28/h21-26,29-30,38,40-43H,6-20H2,1-5H3/t25-,26-,29-,30-,38+/m0/s1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001064
 np_pathway: POLYKETIDES
+synonyms:
+- value: cylindrocyclophane E
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001064
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -99,7 +103,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:45:19Z'
+- timestamp: '2026-09-08T03:53:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

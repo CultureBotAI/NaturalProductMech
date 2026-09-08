@@ -229,3 +229,47 @@ def test_evidence_objects_are_not_shared_between_claims():
     doc = seed.build_records({"mibig_compounds": [row]})[0]
     assert doc["producer_organisms"][0]["evidence"] is not \
         doc["biosynthetic_gene_clusters"][0]["evidence"]
+
+
+def test_the_specific_congener_name_beats_the_bare_family_name():
+    """A bare family name is a class, and a class is never a record.
+
+    Three records took `xiamycin` over `xiamycin A` before the label rule
+    existed, and erythromycin came out right only because the accession
+    tie-break happened to favour the better row (#16).
+    """
+    assert seed.choose_label(["xiamycin", "xiamycin A"]) == ("xiamycin A", ["xiamycin"])
+    assert seed.choose_label(["erythromycin", "erythromycin A"]) == (
+        "erythromycin A", ["erythromycin"])
+    assert seed.choose_label(["siamycin", "siamycin I"]) == ("siamycin I", ["siamycin"])
+
+
+def test_case_variants_resolve_deterministically_not_by_entry_order():
+    label, synonyms = seed.choose_label(["aflatoxin B1", "Aflatoxin B1"])
+    assert (label, synonyms) == ("Aflatoxin B1", ["aflatoxin B1"])
+    # Order of the input must not change the answer.
+    assert seed.choose_label(["Aflatoxin B1", "aflatoxin B1"]) == (label, synonyms)
+
+
+def test_a_discarded_name_survives_as_a_synonym():
+    """Nothing is thrown away; the less specific name is still a real name."""
+    _, synonyms = seed.choose_label(["ebelactone", "ebelactone A"])
+    assert synonyms == ["ebelactone"]
+
+
+def test_sibling_congeners_are_not_collapsed():
+    """`amychelin A` and `amychelin B` are different structures. Specificity
+    filtering must not make one a synonym of the other."""
+    label, synonyms = seed.choose_label(["amychelin A", "amychelin B"])
+    assert label == "amychelin A"
+    assert synonyms == ["amychelin B"]
+
+
+def test_paper_internal_names_are_detected_narrowly():
+    """Narrow on purpose: a broader pattern starts flagging real names."""
+    assert seed.PAPER_INTERNAL_NAME.match("compound 6")
+    assert seed.PAPER_INTERNAL_NAME.match("metabolite 12")
+    assert seed.PAPER_INTERNAL_NAME.match("3")
+    assert not seed.PAPER_INTERNAL_NAME.match("BAA")
+    assert not seed.PAPER_INTERNAL_NAME.match("erythromycin A")
+    assert not seed.PAPER_INTERNAL_NAME.match("A-74528")

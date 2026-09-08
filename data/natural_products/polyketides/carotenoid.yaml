@@ -1,5 +1,5 @@
 identifier: naturalproductmech:mibig-0f4777d2a4
-label: cosmomycin B
+label: carotenoid
 chemical_structure:
   smiles: CC[C@@]1(O)CCC2=C(O)C3=C(C(O)=C2[C@H]1O[C@H]1C[C@@H]([C@H](O[C@H]2C[C@H](O)[C@H](O[C@H]4CC[C@H](O)[C@H](C)O4)[C@H](C)O2)[C@H](C)O1)N(C)C)C(=O)C1=C(C(O)=CC=C1)C3=O
   standard_inchi: InChI=1S/C40H53NO14/c1-7-40(49)14-13-21-30(36(48)32-31(34(21)46)35(47)29-20(33(32)45)9-8-10-24(29)43)39(40)55-27-15-22(41(5)6)37(18(3)51-27)54-28-16-25(44)38(19(4)52-28)53-26-12-11-23(42)17(2)50-26/h8-10,17-19,22-23,25-28,37-39,42-44,46,48-49H,7,11-16H2,1-6H3/t17-,18-,19-,22-,23-,25-,26-,27-,28-,37+,38+,39+,40+/m0/s1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000214
 np_pathway: POLYKETIDES
+synonyms:
+- value: cosmomycin B
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000214
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -96,7 +100,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:45:22Z'
+- timestamp: '2026-09-08T03:53:50Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
