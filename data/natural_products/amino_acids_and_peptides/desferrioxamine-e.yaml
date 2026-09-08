@@ -275,6 +275,235 @@ occurrences:
     occurrences are recorded in data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv
     but not written here: a record carrying hundreds of them cannot be reviewed. The
     inventories are the complete record.'
+bioactivities:
+- assay: A quantitative high throughput screen for small molecules that induce DNA
+    re-replication in MCF 10a normal breast cells.
+  evidence:
+  - reference: pubchem.aid:624296
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+  value: 4.1095
+  units: uM
+  target_enzyme: UniProtKB:NP_056979
+- assay: Absorbance-based bacterial cell-based high throughput dose response assay
+    for inhibitors of AddAB recombination protein complex
+  evidence:
+  - reference: pubchem.aid:492959
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 492959, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Confirmatory.
+  measurement_type: IC50
+  value: 118.575
+  units: uM
+- assay: 'Counterscreen for AddAB inhibitors: absorbance-based bacterial cell-based
+    high throughput dose response assay for inhibitors of bacterial viability'
+  evidence:
+  - reference: pubchem.aid:492958
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 492958, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Confirmatory.
+  measurement_type: IC50
+  value: 118.575
+  units: uM
+- assay: 'Counterscreen for AddAB inhibitors: absorbance-based bacterial cell-based
+    high throughput dose response assay to identify inhibitors of RecBCD'
+  evidence:
+  - reference: pubchem.aid:492957
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 492957, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Confirmatory.
+  measurement_type: IC50
+  value: 118.575
+  units: uM
+  target_enzyme: UniProtKB:NP_417296
+- assay: 'Counterscreen for AddAB inhibitors: absorbance-based bacterial cell-based
+    high throughput dose response assay to identify inhibitors of RecBCD'
+  evidence:
+  - reference: pubchem.aid:492957
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 492957, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Confirmatory.
+  measurement_type: IC50
+  value: 118.575
+  units: uM
+  target_enzyme: UniProtKB:NP_417297
+- assay: 'Counterscreen for AddAB inhibitors: absorbance-based bacterial cell-based
+    high throughput dose response assay to identify inhibitors of RecBCD'
+  evidence:
+  - reference: pubchem.aid:492957
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 492957, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Confirmatory.
+  measurement_type: IC50
+  value: 118.575
+  units: uM
+  target_enzyme: UniProtKB:NP_417299
+- assay: Dose respone, multiplexed high-throughput screen for small molecule regulators
+    of RGS family protein interactions, specifically RGS16-Galphao.
+  evidence:
+  - reference: pubchem.aid:1888
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1888, deposited by NMMLSC; assay type Confirmatory.
+  measurement_type: EC50
+  value: 2.24
+  units: uM
+  target_enzyme: UniProtKB:NP_002919
+- assay: Dose response, multiplexed high-throughput screen for small molecule regulators
+    of RGS family protein interactions, specifically RGS19-Galphao.
+  evidence:
+  - reference: pubchem.aid:1884
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1884, deposited by NMMLSC; assay type Confirmatory.
+  measurement_type: EC50
+  value: 2.06
+  units: uM
+  target_enzyme: UniProtKB:NP_001034556
+- assay: Dose response, multiplexed high-throughput screen for small molecule regulators
+    of RGS family protein interactions, specifically RGS4-Galphao.
+  evidence:
+  - reference: pubchem.aid:1872
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1872, deposited by NMMLSC; assay type Confirmatory.
+  measurement_type: EC50
+  value: 2.59
+  units: uM
+  target_enzyme: UniProtKB:ABC94590
+- assay: Dose response, multiplexed high-throughput screen for small molecule regulators
+    of RGS family protein interactions, specifically RGS7-Galphao.
+  evidence:
+  - reference: pubchem.aid:1871
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1871, deposited by NMMLSC; assay type Confirmatory.
+  measurement_type: EC50
+  value: 2.36
+  units: uM
+  target_enzyme: UniProtKB:AAC50351
+- assay: HTS for Inhibitors of HP1-beta Chromodomain Interactions with Methylated
+    Histone Tails
+  evidence:
+  - reference: pubchem.aid:540317
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 540317, deposited by NCGC; assay type Confirmatory.
+  value: 63.0957
+  units: uM
+  target_enzyme: UniProtKB:NP_001120700
+- assay: Nrf2 qHTS screen for inhibitors
+  evidence:
+  - reference: pubchem.aid:504444
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory.
+  value: 29.0929
+  units: uM
+  target_enzyme: UniProtKB:NP_001138884
+- assay: Primary qHTS for Inhibitors of ATXN expression
+  evidence:
+  - reference: PMID:35787375
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1745845, deposited by NCGC; assay type Confirmatory.
+  value: 35.4813
+  units: uM
+- assay: Primary qHTS for Inhibitors of ATXN expression
+  evidence:
+  - reference: PMID:35787375
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1745845, deposited by NCGC; assay type Confirmatory.
+  value: 35.4813
+  units: uM
+  target_enzyme: UniProtKB:Q99700
+- assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
+    48 hour incubation
+  evidence:
+  - reference: pubchem.aid:504832
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory.
+  value: 5.8584
+  units: uM
+- assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
+    96 hour incubation
+  evidence:
+  - reference: pubchem.aid:504834
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
+  value: 10.4179
+  units: uM
+- assay: qHTS Assay for Inhibitors of BAZ2B
+  evidence:
+  - reference: pubchem.aid:504333
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504333, deposited by NCGC; assay type Confirmatory.
+  value: 79.4328
+  units: uM
+  target_enzyme: UniProtKB:BAA89212
+- assay: qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase
+    (PPTase)
+  evidence:
+  - reference: pubchem.aid:1490
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1490, deposited by NCGC; assay type Confirmatory.
+  value: 89.1251
+  units: uM
+  target_enzyme: UniProtKB:AAG24257
+- assay: qHTS Assay for Inhibitors of DNA Polymerase Beta
+  evidence:
+  - reference: pubchem.aid:485314
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 485314, deposited by NCGC; assay type Confirmatory.
+  value: 1.4125
+  units: uM
+  target_enzyme: UniProtKB:NP_002681
+- assay: qHTS Assay for Inhibitors of Human Jumonji Domain Containing 2E (JMJD2E)
+  evidence:
+  - reference: pubchem.aid:2147
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2147, deposited by NCGC; assay type Confirmatory.
+  value: 7.9433
+  units: uM
+  target_enzyme: UniProtKB:2W2I_A
+- assay: 'qHTS for Inhibitors of AMA1-RON; Towards Development of Antimalarial Drug
+    Lead: Primary Screen'
+  evidence:
+  - reference: pubchem.aid:720542
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 720542, deposited by NCGC; assay type Confirmatory.
+  value: 6.3096
+  units: uM
+  target_enzyme: UniProtKB:AAN35928
+- assay: qHTS for Inhibitors of Polymerase Iota
+  evidence:
+  - reference: pubchem.aid:588590
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 588590, deposited by NCGC; assay type Confirmatory.
+  value: 89.1251
+  units: uM
+  target_enzyme: UniProtKB:NP_009126
+- assay: qHTS for Inhibitors of TGF-b
+  evidence:
+  - reference: pubchem.aid:588855
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 588855, deposited by NCGC; assay type Confirmatory.
+  value: 14.1254
+  units: uM
+  target_enzyme: UniProtKB:AAL68976
+- assay: 'qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS
+    in cells in absence of CPT'
+  evidence:
+  - reference: pubchem.aid:686978
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 686978, deposited by NCGC; assay type Confirmatory.
+  value: 29.0929
+  units: uM
+  target_enzyme: UniProtKB:AAI07878
+- assay: 'qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS
+    in cells in presence of CPT'
+  evidence:
+  - reference: pubchem.aid:686979
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 686979, deposited by NCGC; assay type Confirmatory.
+  value: 29.0929
+  units: uM
+  target_enzyme: UniProtKB:AAI07878
+  notes: 43 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
+    not written here.
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:50437
@@ -399,7 +628,7 @@ discussions:
     BGC0001572. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:30Z'
+- timestamp: '2026-09-08T22:31:31Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

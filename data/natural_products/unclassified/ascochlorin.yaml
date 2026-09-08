@@ -134,6 +134,21 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q10399964 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: Luminescence Cell-Based Primary HTS to Identify Inhibitors of STK33
+  evidence:
+  - reference: pubchem.aid:2330
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2330, deposited by Broad Institute; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:CAC29064
+- assay: Luminescence Cell-Based Primary HTS to Identify Inhibitors of the Sonic Hedgehog
+    Signaling Pathway
+  evidence:
+  - reference: pubchem.aid:2313
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2313, deposited by Broad Institute; assay type Screening.
+  call: ACTIVE
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:156219
@@ -189,7 +204,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:32Z'
+- timestamp: '2026-09-08T22:31:33Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

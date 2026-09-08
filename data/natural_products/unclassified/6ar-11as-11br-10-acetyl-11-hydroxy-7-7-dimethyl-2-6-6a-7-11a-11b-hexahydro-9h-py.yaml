@@ -64,6 +64,93 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q10623089
+bioactivities:
+- assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:17259168
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KI
+  value: 0.12
+  units: uM
+  target_enzyme: UniProtKB:2O9J_A
+- assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:17259168
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KI
+  value: 0.12
+  units: uM
+  target_enzyme: UniProtKB:2OA0_A
+- assay: Experimentally measured binding affinity data derived from PDB
+  evidence:
+  - reference: PMID:17259168
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1811, deposited by Shanghai Institute of Organic Chemistry;
+      assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:2O9J_A
+- assay: Experimentally measured binding affinity data derived from PDB
+  evidence:
+  - reference: PMID:17259168
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1811, deposited by Shanghai Institute of Organic Chemistry;
+      assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:2OA0_A
+- assay: Primary Screen for Target Class Profiling of Small Molecule Inhibitors of
+    Methyltransferases
+  evidence:
+  - reference: PMID:36976909
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1745853, deposited by NCGC; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:P11086
+- assay: Primary Screen for Target Class Profiling of Small Molecule Inhibitors of
+    Methyltransferases
+  evidence:
+  - reference: PMID:36976909
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1745853, deposited by NCGC; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:P21964
+- assay: Primary Screen for Target Class Profiling of Small Molecule Inhibitors of
+    Methyltransferases
+  evidence:
+  - reference: PMID:36976909
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1745853, deposited by NCGC; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:P40261
+- assay: Primary Screen for Target Class Profiling of Small Molecule Inhibitors of
+    Methyltransferases
+  evidence:
+  - reference: PMID:36976909
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1745853, deposited by NCGC; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:P50135
+- assay: Primary Screen for Target Class Profiling of Small Molecule Inhibitors of
+    Methyltransferases
+  evidence:
+  - reference: PMID:36976909
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1745853, deposited by NCGC; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:Q14353
+- assay: Primary Screen for Target Class Profiling of Small Molecule Inhibitors of
+    Methyltransferases
+  evidence:
+  - reference: PMID:36976909
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1745853, deposited by NCGC; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:Q14749
 bgc_class:
 - NRPS
 - PKS
@@ -124,7 +211,7 @@ discussions:
     the two names denote different compounds then one upstream record has the wrong
     structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T20:28:33Z'
+- timestamp: '2026-09-08T22:31:34Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

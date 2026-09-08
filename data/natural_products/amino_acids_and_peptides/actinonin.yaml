@@ -39,6 +39,230 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q1144013
+bioactivities:
+- assay: Experimentally measured binding affinity data (IC50) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:23407310
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977608, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: IC50
+  value: 0.01
+  units: uM
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: pubchem.aid:977611
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 0.0045
+  units: uM
+  target_enzyme: UniProtKB:3M6P_A
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: pubchem.aid:977611
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 0.048
+  units: uM
+  target_enzyme: UniProtKB:3M6Q_A
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: pubchem.aid:977611
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 0.032
+  units: uM
+  target_enzyme: UniProtKB:3M6R_A
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:24531459
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 0.395
+  units: uM
+- assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:21629676
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KI
+  value: 0.14
+  units: uM
+  target_enzyme: UniProtKB:3PN4_A
+- assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:12951107
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KI
+  value: 0.0003
+  units: uM
+- assay: 'Inhibitors of Regulator of G Protein Signaling (RGS) 4: qHTS'
+  evidence:
+  - reference: pubchem.aid:504845
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504845, deposited by NCGC; assay type Confirmatory.
+  value: 2.6654
+  units: uM
+  target_enzyme: UniProtKB:ABC94591
+- assay: 'Nrf2 qHTS screen for inhibitors: Validation'
+  evidence:
+  - reference: pubchem.aid:493153
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 493153, deposited by NCGC; assay type Confirmatory.
+  value: 16.3601
+  units: uM
+- assay: 'Nrf2 qHTS screen for inhibitors: Validation'
+  evidence:
+  - reference: pubchem.aid:493153
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 493153, deposited by NCGC; assay type Confirmatory.
+  value: 16.3601
+  units: uM
+  target_enzyme: UniProtKB:NP_001138884
+- assay: Primary qHTS assay for inhibitors of alpha-synuclein gene (SNCA) expression
+  evidence:
+  - reference: pubchem.aid:1671194
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671194, deposited by NCGC; assay type Confirmatory.
+  value: 3.5481
+  units: uM
+- assay: Primary qHTS assay for inhibitors of alpha-synuclein gene (SNCA) expression
+  evidence:
+  - reference: pubchem.aid:1671194
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671194, deposited by NCGC; assay type Confirmatory.
+  value: 3.5481
+  units: uM
+  target_enzyme: UniProtKB:P37840
+- assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
+    (ALOX12): Round 2'
+  evidence:
+  - reference: pubchem.aid:1671190
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
+  value: 12.5893
+  units: uM
+- assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
+    (ALOX12): Round 2'
+  evidence:
+  - reference: pubchem.aid:1671190
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
+  value: 12.5893
+  units: uM
+  target_enzyme: UniProtKB:P18054
+- assay: Primary qHTS to identify anti-liver cancer compounds using libraries of approved
+    drugs and bioactive compounds
+  evidence:
+  - reference: pubchem.aid:2202548
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.
+  value: 11.2202
+  units: uM
+- assay: Quantitative high throughput screen for delayed death inhibitors of the malarial
+    parasite plastid, 48 hour incubation
+  evidence:
+  - reference: pubchem.aid:488752
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 488752, deposited by NCGC; assay type Confirmatory.
+  value: 2.9362
+  units: uM
+- assay: Quantitative high throughput screen for delayed death inhibitors of the malarial
+    parasite plastid, 96 hour incubation
+  evidence:
+  - reference: pubchem.aid:488745
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 488745, deposited by NCGC; assay type Confirmatory.
+  value: 1.1689
+  units: uM
+- assay: Total Fluorescence Counterscreen for Inhibitors of the Interaction of Thyroid
+    Hormone Receptor and Steroid Receptor Coregulator 2
+  evidence:
+  - reference: pubchem.aid:1479
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1479, deposited by NCGC; assay type Confirmatory.
+  value: 2.2387
+  units: uM
+  target_enzyme: UniProtKB:NP_001121649
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 4 (EPAC2)
+  evidence:
+  - reference: pubchem.aid:1645887
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+  value: 25.1189
+  units: uM
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 4 (EPAC2)
+  evidence:
+  - reference: pubchem.aid:1645887
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+  value: 25.1189
+  units: uM
+  target_enzyme: UniProtKB:Q8WZA2
+- assay: Validation screen for small molecules that induce genotoxicity in human embryonic
+    kidney (HEK293T) cells expressing luciferase-tagged ELG1
+  evidence:
+  - reference: pubchem.aid:493106
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 493106, deposited by NCGC; assay type Confirmatory.
+  value: 9.1962
+  units: uM
+  target_enzyme: UniProtKB:AAH15051
+- assay: Validation screen for small molecules that inhibit ELG1-dependent DNA repair
+    in human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1
+  evidence:
+  - reference: pubchem.aid:493107
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 493107, deposited by NCGC; assay type Confirmatory.
+  value: 3.6611
+  units: uM
+  target_enzyme: UniProtKB:AAH15051
+- assay: 'qHTS Assay for Antagonists of the Neuropeptide S Receptor: cAMP Signal Transduction'
+  evidence:
+  - reference: pubchem.aid:1461
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1461, deposited by NCGC; assay type Confirmatory.
+  value: 31.6228
+  units: uM
+  target_enzyme: UniProtKB:NP_997055
+- assay: qHTS Assay for Inhibitors of GCN5L2
+  evidence:
+  - reference: pubchem.aid:504327
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504327, deposited by NCGC; assay type Confirmatory.
+  value: 39.8107
+  units: uM
+  target_enzyme: UniProtKB:NP_066564
+- assay: qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a
+  evidence:
+  - reference: pubchem.aid:504332
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504332, deposited by NCGC; assay type Confirmatory.
+  value: 9.4662
+  units: uM
+  target_enzyme: UniProtKB:CAQ07474
+  notes: 35 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
+    not written here.
 bgc_class:
 - NRPS
 xrefs:
@@ -82,7 +306,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:34Z'
+- timestamp: '2026-09-08T22:31:36Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

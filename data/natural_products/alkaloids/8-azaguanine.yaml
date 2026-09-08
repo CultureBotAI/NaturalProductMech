@@ -21,6 +21,241 @@ np_classification:
   class_results:
   - pteridine alkaloids
   is_glycoside: false
+bioactivities:
+- assay: A quantitative high throughput screen for small molecules that induce DNA
+    re-replication in MCF 10a normal breast cells.
+  evidence:
+  - reference: pubchem.aid:624296
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+  value: 0.2909
+  units: uM
+  target_enzyme: UniProtKB:NP_056979
+- assay: A quantitative high throughput screen for small molecules that induce DNA
+    re-replication in SW480 colon adenocarcinoma cells.
+  evidence:
+  - reference: pubchem.aid:624297
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+  value: 14.581
+  units: uM
+  target_enzyme: UniProtKB:NP_056979
+- assay: Confirmation and Secondary Assays for Modulators of Hemoglobin Beta Chain
+    Splicing at IVS2 654 and 705 loci
+  evidence:
+  - reference: pubchem.aid:1405
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1405, deposited by NCGC; assay type Confirmatory.
+  value: 2.51189
+  units: uM
+  target_enzyme: UniProtKB:NP_000509
+- assay: 'Counterscreen for activators of the function of SWI/SNF related, matrix
+    associated, actin dependent regulator of chromatin, subfamily a, member 2 (SMARCA2,
+    BRM): Luminescence-based cell-based high throughput dose response assay to identify
+    non-selective compounds using the VP16 reporter assay'
+  evidence:
+  - reference: pubchem.aid:686995
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 686995, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Confirmatory.
+  measurement_type: EC50
+  value: 91.17
+  units: uM
+- assay: Dose Response selectivity of uHTS chemical inhibitors of T-cell specific
+    antigen receptor-induced NF-kB activation in a 697B cell line using a luminescence
+    assay
+  evidence:
+  - reference: pubchem.aid:489033
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 489033, deposited by Burnham Center for Chemical Genomics;
+      assay type Confirmatory.
+  measurement_type: IC50
+  value: 2.56
+  units: uM
+- assay: Dose response confirmation of uHTS chemical inhibitors of T-cell specific
+    antigen receptor-induced NF-kB activation in a Jurkat cell line using a luminescence
+    assay
+  evidence:
+  - reference: pubchem.aid:489035
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 489035, deposited by Burnham Center for Chemical Genomics;
+      assay type Confirmatory.
+  measurement_type: IC50
+  value: 80.0
+  units: uM
+- assay: Dose response counterscreen of uHTS chemical inhibitors of T-cell specific
+    antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence
+    assay
+  evidence:
+  - reference: pubchem.aid:489041
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 489041, deposited by Burnham Center for Chemical Genomics;
+      assay type Confirmatory.
+  measurement_type: IC50
+  value: 80.0
+  units: uM
+- assay: Dose response cytotoxicity of uHTS chemical inhibitors of T-cell specific
+    antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence
+    assay
+  evidence:
+  - reference: pubchem.aid:489026
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 489026, deposited by Burnham Center for Chemical Genomics;
+      assay type Confirmatory.
+  measurement_type: IC50
+  value: 80.0
+  units: uM
+- assay: Luminescence Cell-Based Dose Response HTS Screen to Identify Cytotoxic Compounds
+    of NIH3T3 cells.
+  evidence:
+  - reference: pubchem.aid:2010
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2010, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 10.345
+  units: uM
+- assay: Luminescence Cell-Based/Microorganism Dose Confirmation HTS to Identify Inhibitors
+    of T.Cruzi Replication.
+  evidence:
+  - reference: pubchem.aid:2044
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2044, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.1
+  units: uM
+- assay: Luminescence Cell-Based/Microorganism Primary HTS to Identify Inhibitors
+    of T.Cruzi Infection
+  evidence:
+  - reference: pubchem.aid:2294
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2294, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.153
+  units: uM
+- assay: Luminescence-based cell-based high throughput dose response assay to identify
+    activators of the function of SWI/SNF related, matrix associated, actin dependent
+    regulator of chromatin, subfamily a, member 2 (SMARCA2, BRM)
+  evidence:
+  - reference: pubchem.aid:686991
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 686991, deposited by The Scripps Research Institute
+      Molecular Screening Center; assay type Confirmatory.
+  measurement_type: EC50
+  value: 91.17
+  units: uM
+  target_enzyme: UniProtKB:EAW58811
+- assay: MITF Measured in Cell-Based System Using Plate Reader - 2084-01_Inhibitor_DoseNoFile_CherryPick_Activity_Set2
+  evidence:
+  - reference: pubchem.aid:493177
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 493177, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.875
+  units: uM
+  target_enzyme: UniProtKB:AAH65243
+- assay: MITF Measured in Cell-Based System Using Plate Reader - 2084-01_Inhibitor_DoseNoFile_CherryPick_Activity_Set3
+  evidence:
+  - reference: pubchem.aid:493073
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 493073, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.875
+  units: uM
+  target_enzyme: UniProtKB:AAH65243
+- assay: MITF Measured in Cell-Based System Using Plate Reader - 2084-01_Inhibitor_DoseNoFile_CherryPick_Activity_Set4
+  evidence:
+  - reference: pubchem.aid:493102
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 493102, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.875
+  units: uM
+  target_enzyme: UniProtKB:AAH65243
+- assay: Nrf2 qHTS screen for inhibitors
+  evidence:
+  - reference: pubchem.aid:504444
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory.
+  value: 29.0929
+  units: uM
+  target_enzyme: UniProtKB:NP_001138884
+- assay: Total Fluorescence Counterscreen for Inhibitors of the Interaction of Thyroid
+    Hormone Receptor and Steroid Receptor Coregulator 2
+  evidence:
+  - reference: pubchem.aid:1479
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1479, deposited by NCGC; assay type Confirmatory.
+  value: 79.4328
+  units: uM
+  target_enzyme: UniProtKB:NP_001121649
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 3 (EPAC1)
+  evidence:
+  - reference: pubchem.aid:1645883
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+  value: 11.2202
+  units: uM
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 3 (EPAC1)
+  evidence:
+  - reference: pubchem.aid:1645883
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+  value: 11.2202
+  units: uM
+  target_enzyme: UniProtKB:O95398
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 3 (EPAC1)
+  evidence:
+  - reference: pubchem.aid:1645883
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+  value: 125.892
+  units: uM
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 3 (EPAC1)
+  evidence:
+  - reference: pubchem.aid:1645883
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+  value: 125.892
+  units: uM
+  target_enzyme: UniProtKB:O95398
+- assay: Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange
+    factor 4 (EPAC2)
+  evidence:
+  - reference: pubchem.aid:1645886
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+  value: 0.4467
+  units: uM
+- assay: Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange
+    factor 4 (EPAC2)
+  evidence:
+  - reference: pubchem.aid:1645886
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+  value: 0.4467
+  units: uM
+  target_enzyme: UniProtKB:Q8WZA2
+- assay: Viability Counterscreen for Primary qHTS for Inhibitors of ATXN expression
+  evidence:
+  - reference: PMID:35787375
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 651635, deposited by NCGC; assay type Confirmatory.
+  value: 0.1259
+  units: uM
+- assay: Viability Counterscreen for Primary qHTS for Inhibitors of ATXN expression
+  evidence:
+  - reference: PMID:35787375
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 651635, deposited by NCGC; assay type Confirmatory.
+  value: 0.1259
+  units: uM
+  target_enzyme: UniProtKB:Q99700
+  notes: 98 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
+    not written here.
 bgc_class:
 - OTHER
 xrefs:
@@ -71,7 +306,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:29Z'
+- timestamp: '2026-09-08T22:31:30Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

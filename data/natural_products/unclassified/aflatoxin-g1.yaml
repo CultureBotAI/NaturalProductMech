@@ -46,6 +46,37 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q137096 This taxon is also
     recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: DSSTox (CPDBAS) Carcinogenic Potency Database Summary Mouse Bioassay Results
+  evidence:
+  - reference: pubchem.aid:1199
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1199, deposited by EPA DSSTox; assay type Other.
+  call: ACTIVE
+- assay: DSSTox (CPDBAS) Carcinogenic Potency Database Summary MultiCellCall Results
+  evidence:
+  - reference: pubchem.aid:1205
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1205, deposited by EPA DSSTox; assay type Other.
+  call: ACTIVE
+- assay: DSSTox (CPDBAS) Carcinogenic Potency Database Summary Rat Bioassay Results
+  evidence:
+  - reference: pubchem.aid:1208
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1208, deposited by EPA DSSTox; assay type Other.
+  call: ACTIVE
+- assay: DSSTox (CPDBAS) Carcinogenic Potency Database Summary SingleCellCall Results
+  evidence:
+  - reference: pubchem.aid:1189
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1189, deposited by EPA DSSTox; assay type Other.
+  call: ACTIVE
+- assay: GENE-TOX mutagenicity studies
+  evidence:
+  - reference: pubchem.aid:1259408
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1259408, deposited by 22071; assay type Other.
+  call: ACTIVE
 bgc_class:
 - PKS
 compound_classes:
@@ -165,7 +196,7 @@ discussions:
     BGC0000009. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:35Z'
+- timestamp: '2026-09-08T22:31:36Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

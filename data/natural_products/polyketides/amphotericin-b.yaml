@@ -18,6 +18,116 @@ np_classification:
   class_results:
   - Polyene macrolides
   is_glycoside: true
+bioactivities:
+- assay: MDR-1
+  evidence:
+  - reference: pubchem.aid:377
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 377, deposited by PDSP; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_000918
+- assay: NCI AIDS Antiviral Assay
+  evidence:
+  - reference: pubchem.aid:179
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 179, deposited by DTP/NCI; assay type Confirmatory.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the CLN2oe strain
+  evidence:
+  - reference: pubchem.aid:163
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 163, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the bub3 strain
+  evidence:
+  - reference: pubchem.aid:167
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 167, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the cln2 rad14 strain
+  evidence:
+  - reference: pubchem.aid:165
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 165, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the mec2-1 strain
+  evidence:
+  - reference: pubchem.aid:157
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 157, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the mgt1 strain
+  evidence:
+  - reference: pubchem.aid:153
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 153, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the mlh1 rad18 strain
+  evidence:
+  - reference: pubchem.aid:175
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 175, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the mlh1 strain
+  evidence:
+  - reference: pubchem.aid:171
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 171, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the rad14 strain
+  evidence:
+  - reference: pubchem.aid:159
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 159, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the rad18 strain
+  evidence:
+  - reference: pubchem.aid:177
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 177, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the rad50 strain
+  evidence:
+  - reference: pubchem.aid:155
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 155, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the rad50EPP+ strain
+  evidence:
+  - reference: pubchem.aid:151
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 151, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the rad52 strain
+  evidence:
+  - reference: pubchem.aid:147
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 147, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the sgs1 mgt1 strain
+  evidence:
+  - reference: pubchem.aid:161
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 161, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the sgs1 strain
+  evidence:
+  - reference: pubchem.aid:173
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 173, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the wt1 strain
+  evidence:
+  - reference: pubchem.aid:149
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 149, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the wt2 strain
+  evidence:
+  - reference: pubchem.aid:169
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 169, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
 bgc_class:
 - OTHER
 xrefs:
@@ -60,7 +170,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:24Z'
+- timestamp: '2026-09-08T22:31:24Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

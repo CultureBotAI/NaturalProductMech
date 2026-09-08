@@ -174,6 +174,248 @@ occurrences:
   taxon_source: NCBITaxon
   notes: This taxon is also recorded as a producer, from a different source and citation.
     The two corroborate each other rather than duplicating.
+bioactivities:
+- assay: A quantitative high throughput screen for small molecules that induce DNA
+    re-replication in MCF 10a normal breast cells.
+  evidence:
+  - reference: pubchem.aid:624296
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+  value: 0.5174
+  units: uM
+  target_enzyme: UniProtKB:NP_056979
+- assay: A quantitative high throughput screen for small molecules that induce DNA
+    re-replication in SW480 colon adenocarcinoma cells.
+  evidence:
+  - reference: pubchem.aid:624297
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+  value: 0.6513
+  units: uM
+  target_enzyme: UniProtKB:NP_056979
+- assay: A549 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader
+    - 7071-06_Antagonist_Dose_CherryPick_Activity
+  evidence:
+  - reference: pubchem.aid:743412
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 743412, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.0912
+  units: uM
+- assay: Bursicon-induced LGR2 mediated cAMP production in LGR-2/CRE6x-Luciferase
+    co-transfected HEK293 cells Inhibition Measured in Cell-Based System Using Plate
+    Reader - 7011-01_Antagonist_Dose_CherryPick_Activity_Set2
+  evidence:
+  - reference: pubchem.aid:743343
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 743343, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 2.77
+  units: uM
+- assay: Dose response confirmation of uHTS chemical inhibitors of both B-cell and
+    T-cell specific antigen receptor-induced NF-kB activation in a 697B cell line
+    using a luminescence assay
+  evidence:
+  - reference: pubchem.aid:489034
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 489034, deposited by Burnham Center for Chemical Genomics;
+      assay type Confirmatory.
+  measurement_type: IC50
+  value: 1.01
+  units: uM
+- assay: Dose response confirmation of uHTS of chemical inhibitors of both B-cell
+    and T-cell specific antigen receptor-induced NF-kB activation in a Jurkat cell
+    line using a luminescence assay
+  evidence:
+  - reference: pubchem.aid:489004
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 489004, deposited by Burnham Center for Chemical Genomics;
+      assay type Confirmatory.
+  measurement_type: IC50
+  value: 7.83
+  units: uM
+- assay: Dose response counterscreen of uHTS chemical inhibitors of both B-cell and
+    T-cell specific antigen receptor-induced NF-kB activation in a HEK-293T cell line
+    using a luminescence assay
+  evidence:
+  - reference: pubchem.aid:489020
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 489020, deposited by Burnham Center for Chemical Genomics;
+      assay type Confirmatory.
+  measurement_type: IC50
+  value: 7.42
+  units: uM
+- assay: Dose response cytoxicity of uHTS chemical inhibitors of both B-cell and T-cell
+    specific antigen receptor-induced NF-kB activation in a HEK-293T cell line using
+    a luminescence assay
+  evidence:
+  - reference: pubchem.aid:489019
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 489019, deposited by Burnham Center for Chemical Genomics;
+      assay type Confirmatory.
+  measurement_type: IC50
+  value: 80.0
+  units: uM
+- assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:12937174
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KI
+  value: 120.0
+  units: uM
+  target_enzyme: UniProtKB:1PR5_A
+- assay: Fluorescence Cell-Based Dose Response to Characterize Compounds Cytotoxic
+    to RAS-Dependent BJ-TERT-LT-ST Fibroblast
+  evidence:
+  - reference: pubchem.aid:2631
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2631, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.104
+  units: uM
+- assay: HEK293 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader
+    - 7071-01_Antagonist_Dose_CherryPick_Activity
+  evidence:
+  - reference: pubchem.aid:743446
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 743446, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 1.6
+  units: uM
+- assay: HSF-1 induced GFP reporter and Doxycycline induced RFP reporter Measured
+    in Cell-Based System Using Plate Reader - 2038-03_Inhibitor_DoseNoFile_CherryPick_Activity_Set3
+  evidence:
+  - reference: pubchem.aid:493083
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 493083, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 10.488
+  units: uM
+  target_enzyme: UniProtKB:AAH94064
+- assay: HSF-1 induced GFP reporter and Doxycycline induced RFP reporter Measured
+    in Cell-Based System Using Plate Reader - 2038-03_Inhibitor_DoseNoFile_CherryPick_Internal-Standard_Set3
+  evidence:
+  - reference: pubchem.aid:493085
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 493085, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 3.174
+  units: uM
+  target_enzyme: UniProtKB:AAH94064
+- assay: HTS for Inhibitors of HP1-beta Chromodomain Interactions with Methylated
+    Histone Tails
+  evidence:
+  - reference: pubchem.aid:540317
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 540317, deposited by NCGC; assay type Confirmatory.
+  value: 11.2202
+  units: uM
+  target_enzyme: UniProtKB:NP_001120700
+- assay: HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader
+    - 7071-02_Antagonist_Dose_CherryPick_Activity
+  evidence:
+  - reference: pubchem.aid:743416
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 743416, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.25
+  units: uM
+- assay: High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis
+    H37Rv
+  evidence:
+  - reference: pubchem.aid:1626
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1626, deposited by SRMLSC; assay type Confirmatory.
+  measurement_type: IC50
+  value: 2.438
+  units: uM
+- assay: High Throughput Screening for Foot and Mouth Disease Virus Antivirals
+  evidence:
+  - reference: pubchem.aid:1159524
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1159524, deposited by NCGC; assay type Confirmatory.
+  value: 28.1838
+  units: uM
+- assay: LGR2:Counterscreen with MC4R Measured in Cell-Based System Using Plate Reader
+    - 7011-02_Antagonist_Dose_CherryPick_Activity
+  evidence:
+  - reference: pubchem.aid:743444
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 743444, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 3.98
+  units: uM
+  target_enzyme: UniProtKB:AAC47329
+- assay: Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of Heat
+    Shock Factor 1 (HSF1)
+  evidence:
+  - reference: pubchem.aid:2382
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2382, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 3.057
+  units: uM
+  target_enzyme: UniProtKB:AAH94064
+- assay: Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of of
+    5'UTR Stem-Loop Driven Alpha-Synuclein mRNA Translation in H4 Neuroglioblastoma
+    Cells
+  evidence:
+  - reference: pubchem.aid:1988
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1988, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.1
+  units: uM
+- assay: Luminescence Cell-Based Dose Confirmation HTS to Identify Compounds Cytotoxic
+    to BJeLR RAS-Dependent Fibroblast
+  evidence:
+  - reference: pubchem.aid:1936
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1936, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 5.45
+  units: uM
+- assay: Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic
+    to BJ-TERT RAS-Independent Fibroblast
+  evidence:
+  - reference: pubchem.aid:1933
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1933, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 2.082
+  units: uM
+- assay: Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic
+    to BJ-TERT-LT-ST RAS-Independent Fibroblast
+  evidence:
+  - reference: pubchem.aid:1935
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1935, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 5.044
+  units: uM
+- assay: Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic
+    to DRD Non-Viral Oncogenic Fibroblast
+  evidence:
+  - reference: pubchem.aid:1934
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1934, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 4.118
+  units: uM
+- assay: Luminescence Cell-Based Dose Response HTS to Identify Inhibitors of Luciferase
+    Translation or Activity in H4 Neuroglioblastoma Cells
+  evidence:
+  - reference: pubchem.aid:1990
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1990, deposited by Broad Institute; assay type Confirmatory.
+  measurement_type: EC50
+  value: 0.1
+  units: uM
+  notes: 109 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
+    not written here.
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:48267
@@ -227,7 +469,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:27Z'
+- timestamp: '2026-09-08T22:31:27Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

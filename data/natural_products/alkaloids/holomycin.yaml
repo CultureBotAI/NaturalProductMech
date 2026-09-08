@@ -297,6 +297,14 @@ occurrences:
     are recorded in data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv
     but not written here: a record carrying hundreds of them cannot be reviewed. The
     inventories are the complete record.'
+bioactivities:
+- assay: 'USP30 deubiquitinase inhibition: Primary qHTS'
+  evidence:
+  - reference: pubchem.aid:1645860
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645860, deposited by 24642; assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:Q70CQ3
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:156451
@@ -431,7 +439,7 @@ discussions:
     BGC0002412. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:26Z'
+- timestamp: '2026-09-08T22:31:27Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

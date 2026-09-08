@@ -189,6 +189,13 @@ occurrences:
   detection_context: NRRL3299
   notes: This taxon is also recorded as a producer, from a different source and citation.
     The two corroborate each other rather than duplicating.
+bioactivities:
+- assay: CCRIS mutagenicity studies
+  evidence:
+  - reference: pubchem.aid:1259407
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1259407, deposited by 22070; assay type Other.
+  call: ACTIVE
 bgc_class:
 - TERPENE
 compound_classes:
@@ -239,7 +246,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:24Z'
+- timestamp: '2026-09-08T22:31:25Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -280,6 +280,221 @@ occurrences:
     occurrences are recorded in data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv
     but not written here: a record carrying hundreds of them cannot be reviewed. The
     inventories are the complete record.'
+bioactivities:
+- assay: Confirmatory qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
+  evidence:
+  - reference: pubchem.aid:1964105
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory.
+  value: 8.1905
+  units: uM
+- assay: Experimentally measured binding affinity data (IC50) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:10198642
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977608, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: IC50
+  value: 4.0
+  units: uM
+  target_enzyme: UniProtKB:3GWX_A
+- assay: 'HepG2 viability counterscreen (readout 1: protease activity) against the
+    NCATS DSHEA and TCM libraries'
+  evidence:
+  - reference: PMID:37200814
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1794841, deposited by NCGC; assay type Confirmatory.
+  value: 12.5893
+  units: uM
+- assay: 'Inhibitors of Regulator of G Protein Signaling (RGS) 4: qHTS'
+  evidence:
+  - reference: pubchem.aid:504845
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504845, deposited by NCGC; assay type Confirmatory.
+  value: 8.4368
+  units: uM
+  target_enzyme: UniProtKB:ABC94591
+- assay: 'Inhibitors of USP1/UAF1: Pilot qHTS'
+  evidence:
+  - reference: pubchem.aid:504865
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504865, deposited by NCGC; assay type Confirmatory.
+  value: 79.4328
+  units: uM
+  target_enzyme: UniProtKB:AAH18745
+- assay: 'Inhibitors of the vitamin D receptor (VDR): qHTS'
+  evidence:
+  - reference: pubchem.aid:504847
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504847, deposited by NCGC; assay type Confirmatory.
+  value: 39.8107
+  units: uM
+  target_enzyme: UniProtKB:NP_001017535
+- assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
+    Peroxidase 4 (GPX4)
+  evidence:
+  - reference: pubchem.aid:1845192
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
+  value: 11.2202
+  units: uM
+- assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
+    Peroxidase 4 (GPX4)
+  evidence:
+  - reference: pubchem.aid:1845192
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
+  value: 11.2202
+  units: uM
+  target_enzyme: UniProtKB:P36969
+- assay: Primary qHTS for agonist of constitutive androstane receptor (CAR) against
+    the NCATS DSHEA and TCM libraries
+  evidence:
+  - reference: pubchem.aid:1794839
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1794839, deposited by NCGC; assay type Confirmatory.
+  value: 14.1254
+  units: uM
+- assay: Primary qHTS for antagonist of constitutive androstane receptor (CAR) against
+    the NCATS DSHEA and TCM libraries
+  evidence:
+  - reference: PMID:37200814
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1794836, deposited by NCGC; assay type Confirmatory.
+  value: 3.1623
+  units: uM
+- assay: Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
+  evidence:
+  - reference: pubchem.aid:1964107
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory.
+  value: 7.8513
+  units: uM
+  target_enzyme: UniProtKB:Q8JUX6
+- assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
+    Endogenous NS2/3 peptide Counterscreen'
+  evidence:
+  - reference: pubchem.aid:1964103
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1964103, deposited by NCGC; assay type Confirmatory.
+  value: 37.5444
+  units: uM
+  target_enzyme: UniProtKB:Q8JUX6
+- assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
+    Full length NSP2 enzyme counterscreen (CHIKV-NSP2)'
+  evidence:
+  - reference: pubchem.aid:1964101
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1964101, deposited by NCGC; assay type Confirmatory.
+  value: 6.6764
+  units: uM
+  target_enzyme: UniProtKB:Q8JUX6
+- assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
+    Papain Counterscreen'
+  evidence:
+  - reference: pubchem.aid:1964104
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1964104, deposited by NCGC; assay type Confirmatory.
+  value: 33.4615
+  units: uM
+  target_enzyme: UniProtKB:P00784
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 3 (EPAC1)
+  evidence:
+  - reference: pubchem.aid:1645883
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+  value: 100.0
+  units: uM
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 3 (EPAC1)
+  evidence:
+  - reference: pubchem.aid:1645883
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+  value: 100.0
+  units: uM
+  target_enzyme: UniProtKB:O95398
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 4 (EPAC2)
+  evidence:
+  - reference: pubchem.aid:1645887
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+  value: 79.4328
+  units: uM
+- assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
+    factor 4 (EPAC2)
+  evidence:
+  - reference: pubchem.aid:1645887
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+  value: 79.4328
+  units: uM
+  target_enzyme: UniProtKB:Q8WZA2
+- assay: Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange
+    factor 3 (EPAC1)
+  evidence:
+  - reference: pubchem.aid:1645882
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645882, deposited by NCGC; assay type Confirmatory.
+  value: 0.631
+  units: uM
+- assay: Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange
+    factor 3 (EPAC1)
+  evidence:
+  - reference: pubchem.aid:1645882
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1645882, deposited by NCGC; assay type Confirmatory.
+  value: 0.631
+  units: uM
+  target_enzyme: UniProtKB:O95398
+- assay: qHTS Assay for Inhibitors of Aldehyde Dehydrogenase 1 (ALDH1A1)
+  evidence:
+  - reference: pubchem.aid:1030
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1030, deposited by NCGC; assay type Confirmatory.
+  value: 39.8107
+  units: uM
+  target_enzyme: UniProtKB:AAP35567
+- assay: qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase
+    (PPTase)
+  evidence:
+  - reference: pubchem.aid:1490
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1490, deposited by NCGC; assay type Confirmatory.
+  value: 89.1251
+  units: uM
+  target_enzyme: UniProtKB:AAG24257
+- assay: qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase
+    (PPTase)
+  evidence:
+  - reference: pubchem.aid:1490
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1490, deposited by NCGC; assay type Confirmatory.
+  value: 70.7946
+  units: uM
+  target_enzyme: UniProtKB:AAG24257
+- assay: qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a
+  evidence:
+  - reference: pubchem.aid:504332
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504332, deposited by NCGC; assay type Confirmatory.
+  value: 5.0119
+  units: uM
+  target_enzyme: UniProtKB:CAQ07474
+- assay: qHTS Fluorescence Polarization Assay for Inhibitors of MLL CXXC domain -
+    DNA interaction
+  evidence:
+  - reference: pubchem.aid:2662
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2662, deposited by NCGC; assay type Confirmatory.
+  value: 50.1187
+  units: uM
+  target_enzyme: UniProtKB:NP_005924
+  notes: 12 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
+    not written here.
 bgc_class:
 - OTHER
 xrefs:
@@ -429,7 +644,7 @@ discussions:
     BGC0000863, BGC0000865. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:28Z'
+- timestamp: '2026-09-08T22:31:28Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

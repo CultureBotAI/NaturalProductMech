@@ -277,6 +277,25 @@ occurrences:
     occurrences are recorded in data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv
     but not written here: a record carrying hundreds of them cannot be reviewed. The
     inventories are the complete record.'
+bioactivities:
+- assay: 'Metabolic Measurements from US Patent US11660306: "Treatment of Rett syndrome"'
+  evidence:
+  - reference: pubchem.aid:1919462
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1919462, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: KI
+  value: 1.5
+  units: uM
+  target_enzyme: UniProtKB:P18031
+- assay: 'Metabolic Measurements from US Patent US11660306: "Treatment of Rett syndrome"'
+  evidence:
+  - reference: pubchem.aid:1919462
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1919462, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: KI
+  value: 2.5
+  units: uM
+  target_enzyme: UniProtKB:P18031
 bgc_class:
 - TERPENE
 xrefs:
@@ -324,7 +343,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:29Z'
+- timestamp: '2026-09-08T22:31:30Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

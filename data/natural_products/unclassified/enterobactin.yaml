@@ -15,6 +15,18 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+bioactivities:
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: pubchem.aid:977611
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 0.04
+  units: uM
+  target_enzyme: UniProtKB:2XUZ_A
 bgc_class:
 - NRPS
 xrefs:
@@ -103,7 +115,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:32Z'
+- timestamp: '2026-09-08T22:31:33Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

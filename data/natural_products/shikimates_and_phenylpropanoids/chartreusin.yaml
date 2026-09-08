@@ -91,6 +91,107 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q22287085 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: HTS for Inhibitors of HP1-beta Chromodomain Interactions with Methylated
+    Histone Tails
+  evidence:
+  - reference: pubchem.aid:540317
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 540317, deposited by NCGC; assay type Confirmatory.
+  value: 100.0
+  units: uM
+  target_enzyme: UniProtKB:NP_001120700
+- assay: Nrf2 qHTS screen for inhibitors
+  evidence:
+  - reference: pubchem.aid:504444
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory.
+  value: 18.3564
+  units: uM
+  target_enzyme: UniProtKB:NP_001138884
+- assay: VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity
+  evidence:
+  - reference: pubchem.aid:2546
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2546, deposited by NCGC; assay type Confirmatory.
+  value: 35.4813
+  units: uM
+  target_enzyme: UniProtKB:NP_035411
+- assay: qHTS Assay for Identification of Novel General Anesthetics
+  evidence:
+  - reference: pubchem.aid:485281
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 485281, deposited by NCGC; assay type Confirmatory.
+  value: 35.4813
+  units: uM
+  target_enzyme: UniProtKB:3F32_A
+- assay: 'qHTS Assay for Inhibitors Targeting the Menin-MLL Interaction in MLL Related
+    Leukemias: Competition With Fluorescein Labeled MLL-derived Peptide'
+  evidence:
+  - reference: pubchem.aid:1766
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1766, deposited by NCGC; assay type Confirmatory.
+  value: 28.1838
+  units: uM
+  target_enzyme: UniProtKB:NP_000235
+- assay: 'qHTS Assay for Inhibitors Targeting the Menin-MLL Interaction in MLL Related
+    Leukemias: Competition With Fluorescein Labeled MLL-derived Peptide'
+  evidence:
+  - reference: pubchem.aid:1766
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1766, deposited by NCGC; assay type Confirmatory.
+  value: 28.1838
+  units: uM
+  target_enzyme: UniProtKB:NP_005924
+- assay: qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia
+    Lamblia
+  evidence:
+  - reference: pubchem.aid:2451
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2451, deposited by NCGC; assay type Confirmatory.
+  value: 7.0627
+  units: uM
+  target_enzyme: UniProtKB:2ISV_A
+- assay: qHTS Assay for the Inhibitors of Human Flap endonuclease 1 (FEN1).
+  evidence:
+  - reference: pubchem.aid:588795
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 588795, deposited by NCGC; assay type Confirmatory.
+  value: 10.0
+  units: uM
+  target_enzyme: UniProtKB:NP_004102
+- assay: qHTS for Inhibitors of Polymerase Iota
+  evidence:
+  - reference: pubchem.aid:588590
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 588590, deposited by NCGC; assay type Confirmatory.
+  value: 19.9526
+  units: uM
+  target_enzyme: UniProtKB:NP_009126
+- assay: qHTS for Inhibitors of Polymerase Kappa
+  evidence:
+  - reference: pubchem.aid:588579
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 588579, deposited by NCGC; assay type Confirmatory.
+  value: 35.4813
+  units: uM
+  target_enzyme: UniProtKB:NP_057302
+- assay: qHTS for inhibitors of ROR gamma transcriptional activity
+  evidence:
+  - reference: pubchem.aid:2551
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2551, deposited by NCGC; assay type Confirmatory.
+  value: 11.2202
+  units: uM
+  target_enzyme: UniProtKB:NP_035411
+- assay: 'qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia
+    Lamblia: Coupling assay counterscreen'
+  evidence:
+  - reference: pubchem.aid:2472
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2472, deposited by NCGC; assay type Screening.
+  call: ACTIVE
+  target_enzyme: UniProtKB:NP_002037
 bgc_class:
 - PKS
 xrefs:
@@ -133,7 +234,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:31Z'
+- timestamp: '2026-09-08T22:31:32Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

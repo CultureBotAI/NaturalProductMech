@@ -81,6 +81,243 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q22285757 This taxon is
     also recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
+    - 24 hour
+  evidence:
+  - reference: pubchem.aid:1224875
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1224875, deposited by 824; assay type Confirmatory.
+  value: 26.8325
+  units: uM
+- assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
+    - 32 hour
+  evidence:
+  - reference: pubchem.aid:1224881
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1224881, deposited by 824; assay type Confirmatory.
+  value: 23.9145
+  units: uM
+- assay: A quantitative high throughput screen for small molecules that induce DNA
+    re-replication in SW480 colon adenocarcinoma cells.
+  evidence:
+  - reference: pubchem.aid:624297
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+  value: 1.4581
+  units: uM
+  target_enzyme: UniProtKB:NP_056979
+- assay: 'AChE and BChE Assay from Article 10.1016/j.bioorg.2015.09.008: "Pyridine
+    sulfonamide as a small key organic molecule for the potential treatment of type-II
+    diabetes mellitus and Alzheimer&#39;s disease: In vitro studies against yeast
+    a-glucosidase, acetylcholinesterase and butyrylcholinesterase."'
+  evidence:
+  - reference: PMID:26451651
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1801485, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.04
+  units: uM
+  target_enzyme: UniProtKB:O42275
+- assay: 'AChE and BChE Assay from Article 10.1016/j.bioorg.2015.09.008: "Pyridine
+    sulfonamide as a small key organic molecule for the potential treatment of type-II
+    diabetes mellitus and Alzheimer&#39;s disease: In vitro studies against yeast
+    a-glucosidase, acetylcholinesterase and butyrylcholinesterase."'
+  evidence:
+  - reference: PMID:26451651
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1801485, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.85
+  units: uM
+  target_enzyme: UniProtKB:P06276
+- assay: 'Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based
+    qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1347395
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory.
+  value: 0.1589
+  units: uM
+  target_enzyme: UniProtKB:AAA68151
+- assay: 'Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based
+    qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1347395
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory.
+  value: 0.389
+  units: uM
+  target_enzyme: UniProtKB:AAA68151
+- assay: 'Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS
+    assay'
+  evidence:
+  - reference: pubchem.aid:1347397
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347397, deposited by 824; assay type Confirmatory.
+  value: 0.1125
+  units: uM
+  target_enzyme: UniProtKB:AAA68151
+- assay: 'Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS
+    assay'
+  evidence:
+  - reference: pubchem.aid:1347397
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347397, deposited by 824; assay type Confirmatory.
+  value: 0.0871
+  units: uM
+  target_enzyme: UniProtKB:AAA68151
+- assay: 'Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS
+    assay with human liver microsomes'
+  evidence:
+  - reference: pubchem.aid:1347399
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347399, deposited by 824; assay type Confirmatory.
+  value: 1.0026
+  units: uM
+  target_enzyme: UniProtKB:AAA68151
+- assay: 'Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS
+    assay with human liver microsomes'
+  evidence:
+  - reference: pubchem.aid:1347399
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347399, deposited by 824; assay type Confirmatory.
+  value: 2.4545
+  units: uM
+  target_enzyme: UniProtKB:AAA68151
+- assay: 'Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based
+    qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1347398
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory.
+  value: 0.0564
+  units: uM
+  target_enzyme: UniProtKB:AAA68151
+- assay: 'Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based
+    qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1347398
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory.
+  value: 0.0436
+  units: uM
+  target_enzyme: UniProtKB:AAA68151
+- assay: 'Acetylcholinesterase Assay from Article 10.1016/j.bioorg.2015.11.002: "Novel
+    biphenyl bis-sulfonamides as acetyl and butyrylcholinesterase inhibitors: Synthesis,
+    biological evaluation and molecular modeling studies."'
+  evidence:
+  - reference: PMID:26595185
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1801527, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.04
+  units: uM
+  target_enzyme: UniProtKB:P22303
+- assay: 'Acetylcholinesterase Assay from Article 10.1016/j.bioorg.2016.07.005: "Synthesis
+    and in vitro acetylcholinesterase and butyrylcholinesterase inhibitory potential
+    of hydrazide based Schiff bases."'
+  evidence:
+  - reference: PMID:27441832
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1801938, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.85
+  units: uM
+  target_enzyme: UniProtKB:P04058
+- assay: 'Butyrylcholinesterase Assay from Article 10.1016/j.bioorg.2015.11.002: "Novel
+    biphenyl bis-sulfonamides as acetyl and butyrylcholinesterase inhibitors: Synthesis,
+    biological evaluation and molecular modeling studies."'
+  evidence:
+  - reference: PMID:26595185
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1801528, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.85
+  units: uM
+  target_enzyme: UniProtKB:P06276
+- assay: 'Butyrylcholinesterase Assay from Article 10.1016/j.bioorg.2016.07.005: "Synthesis
+    and in vitro acetylcholinesterase and butyrylcholinesterase inhibitory potential
+    of hydrazide based Schiff bases."'
+  evidence:
+  - reference: PMID:27441832
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1801939, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.04
+  units: uM
+  target_enzyme: UniProtKB:P06276
+- assay: 'Cholinesterase Inhibition Assay from Article 10.1021/jm010491d: "Anticholinesterase
+    activity of compounds related to geneserine tautomers. N-Oxides and 1,2-oxazines."'
+  evidence:
+  - reference: PMID:12166941
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1796572, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.016
+  units: uM
+  target_enzyme: UniProtKB:P06276
+- assay: 'Cholinesterase Inhibition Assay from Article 10.1021/jm010491d: "Anticholinesterase
+    activity of compounds related to geneserine tautomers. N-Oxides and 1,2-oxazines."'
+  evidence:
+  - reference: PMID:12166941
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1796572, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: IC50
+  value: 0.028
+  units: uM
+  target_enzyme: UniProtKB:P22303
+- assay: Confirmatory qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
+  evidence:
+  - reference: pubchem.aid:1964105
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory.
+  value: 14.193
+  units: uM
+- assay: 'Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists:
+    luciferase reporter qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1671199
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory.
+  value: 39.9149
+  units: uM
+- assay: 'Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists:
+    luciferase reporter qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1671199
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory.
+  value: 39.9149
+  units: uM
+  target_enzyme: UniProtKB:EAW99313
+- assay: 'Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule
+    antagonists: luciferase reporter qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1671197
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
+  value: 25.1846
+  units: uM
+- assay: 'Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule
+    antagonists: luciferase reporter qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1671197
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
+  value: 25.1846
+  units: uM
+  target_enzyme: UniProtKB:AAV41877
+- assay: 'Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists:
+    luciferase reporter qHTS assay'
+  evidence:
+  - reference: pubchem.aid:1671198
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1671198, deposited by 824; assay type Confirmatory.
+  value: 70.9799
+  units: uM
+  notes: 109 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
+    not written here.
 bgc_class:
 - OTHER
 xrefs:
@@ -134,7 +371,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:31Z'
+- timestamp: '2026-09-08T22:31:32Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -18,6 +18,43 @@ np_classification:
   class_results:
   - Macrotetrolides
   is_glycoside: false
+bioactivities:
+- assay: NCI Yeast Anticancer Drug Screen. Data for the bub3 strain
+  evidence:
+  - reference: pubchem.aid:167
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 167, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the cln2 rad14 strain
+  evidence:
+  - reference: pubchem.aid:165
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 165, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the mec2-1 strain
+  evidence:
+  - reference: pubchem.aid:157
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 157, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the mlh1 rad18 strain
+  evidence:
+  - reference: pubchem.aid:175
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 175, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the rad50 strain
+  evidence:
+  - reference: pubchem.aid:155
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 155, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
+- assay: NCI Yeast Anticancer Drug Screen. Data for the sgs1 mgt1 strain
+  evidence:
+  - reference: pubchem.aid:161
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 161, deposited by DTP/NCI; assay type Other.
+  call: ACTIVE
 bgc_class:
 - PKS
 xrefs:
@@ -97,7 +134,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:35Z'
+- timestamp: '2026-09-08T22:31:37Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

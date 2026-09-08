@@ -29,6 +29,26 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q1144013
+bioactivities:
+- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
+    derived from PDB
+  evidence:
+  - reference: PMID:12044152
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
+      Chemistry; assay type Other.
+  measurement_type: KD
+  value: 0.0012
+  units: uM
+  target_enzyme: UniProtKB:1KZN_A
+- assay: Experimentally measured binding affinity data derived from PDB
+  evidence:
+  - reference: PMID:12044152
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1811, deposited by Shanghai Institute of Organic Chemistry;
+      assay type Other.
+  call: ACTIVE
+  target_enzyme: UniProtKB:1KZN_A
 related_records:
 - corpus: AntibioticMech
   identifier: antibioticmech:aro-e44e701df2
@@ -86,7 +106,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T20:28:26Z'
+- timestamp: '2026-09-08T22:31:26Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

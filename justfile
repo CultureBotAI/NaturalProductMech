@@ -88,6 +88,18 @@ extract-taxonomy-dry *args:
 extract-taxonomy *args:
     uv run python scripts/extract_ncbi_taxonomy.py {{args}}
 
+# Free check: how many PubChem CID calls the batch would make.
+extract-bioassay-dry:
+    uv run python scripts/extract_pubchem_bioassay.py --dry-run
+
+# ONE real call, then stop. Read the written rows before the batch.
+extract-bioassay-canary:
+    uv run python scripts/extract_pubchem_bioassay.py --canary
+
+# Query every cross-referenced CID. Resumable; excludes ChEMBL deposits.
+extract-bioassay *args:
+    uv run python scripts/extract_pubchem_bioassay.py {{args}}
+
 # --- seeding -----------------------------------------------------------------
 # Dry run: harmonize the committed inventories and report the records that WOULD
 # be written, per pathway. No files touched. Empty until M2 adds the extractors.

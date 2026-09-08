@@ -85,6 +85,14 @@ BGC_CLASS_MAP = {
     "other": "OTHER",
 }
 
+# PubChem's activity names to the schema's measurement vocabulary. An
+# unmapped name keeps its value and units without claiming a type, rather
+# than being coerced into the nearest one.
+MEASUREMENT_TYPES = {
+    "IC50": "IC50", "EC50": "EC50", "KI": "KI", "KD": "KD",
+    "MIC": "MIC", "GI50": "GI50", "AC50": "EC50",
+}
+
 # Only cross-references whose prefix this corpus declares are carried through.
 DB_ID_RE = re.compile(r"^(npatlas|pubchem|chembl|chebi|cyanometdb|lotus):[A-Za-z0-9._-]+$")
 
@@ -94,6 +102,11 @@ DB_ID_RE = re.compile(r"^(npatlas|pubchem|chembl|chebi|cyanometdb|lotus):[A-Za-z
 # while the median record has one — and `curate-yaml-record` instructs a
 # curator to read the entire YAML (#28).
 MAX_OCCURRENCES_PER_RECORD = 25
+
+# The same reasoning as occurrences, and the distribution is worse: one
+# structure carries 960 assay rows while the median carries 11. The inventory
+# keeps them all; a record keeps the ones a curator can read.
+MAX_BIOACTIVITIES_PER_RECORD = 25
 
 # One directory per NPClassifier pathway. UNCLASSIFIED is a real bucket, not an
 # error state: it is where a multi-label result lands until a curator files it.
@@ -362,6 +375,13 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     targets_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in inventories.get("bindingdb_targets") or []:
         targets_by_key[row["standard_inchi_key"]].append(row)
+
+    # PubChem BioAssay, already filtered at extraction to measurements and
+    # positive calls, with ChEMBL-deposited rows excluded on licence.
+    assays_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in inventories.get("pubchem_bioassay") or []:
+        if row.get("aid"):
+            assays_by_key[row["standard_inchi_key"]].append(row)
 
     # The sibling corpus, pinned. A compound in both keeps its antimicrobial
     # mechanism there and is linked from here, never copied.
@@ -655,6 +675,49 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 )
                 deduped = kept_occurrences
             doc["occurrences"] = deduped
+
+        bioactivities: list[dict[str, Any]] = []
+        for row in assays_by_key.get(key) or []:
+            observation: dict[str, Any] = {
+                "assay": row["assay_name"] or f"PubChem AID {row['aid']}",
+                "evidence": [{
+                    "reference": row["reference"] or f"pubchem.aid:{row['aid']}",
+                    "evidence_type": "DATABASE_ASSERTION",
+                    "notes": (
+                        f"PubChem BioAssay AID {row['aid']}"
+                        + (f", deposited by {row['depositor']}" if row["depositor"] else "")
+                        + (f"; assay type {row['assay_type']}" if row["assay_type"] else "")
+                        + "."
+                    ),
+                }],
+            }
+            if row["activity_value_um"] and row["activity_name"]:
+                measurement = MEASUREMENT_TYPES.get(row["activity_name"].upper())
+                if measurement:
+                    observation["measurement_type"] = measurement
+                observation["value"] = float(row["activity_value_um"])
+                observation["units"] = "uM"
+            else:
+                # A single-concentration screening hit is a CALL, never a
+                # potency — docs/CURATION.md is explicit about it.
+                observation["call"] = "ACTIVE"
+            if row["target_accession"]:
+                observation["target_enzyme"] = f"UniProtKB:{row['target_accession']}"
+            bioactivities.append(observation)
+
+        if bioactivities:
+            # Measurements before bare calls: a number with units is worth more
+            # to a curator than a hit, and the cap should not spend itself on
+            # the latter.
+            bioactivities.sort(key=lambda b: (0 if "value" in b else 1, b["assay"]))
+            omitted = len(bioactivities) - MAX_BIOACTIVITIES_PER_RECORD
+            if omitted > 0:
+                bioactivities = bioactivities[:MAX_BIOACTIVITIES_PER_RECORD]
+                bioactivities[-1]["notes"] = (
+                    f"{omitted} further PubChem assay results are in "
+                    f"data/raw/pubchem_bioassay.tsv but not written here."
+                )
+            doc["bioactivities"] = bioactivities
 
         targets: list[dict[str, Any]] = []
         for row in targets_by_key.get(key) or []:

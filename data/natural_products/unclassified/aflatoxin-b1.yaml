@@ -89,6 +89,42 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q137096 This taxon is also
     recorded as a producer, from a different source and citation. The two corroborate
     each other rather than duplicating.
+bioactivities:
+- assay: 'Assay of Substrate Hydrolysis from Article 10.1021/bi401043w: "The natural
+    product dihydrotanshinone I provides a prototype for uncharged inhibitors that
+    bind specifically to the acetylcholinesterase peripheral site with nanomolar affinity."'
+  evidence:
+  - reference: PMID:24040835
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1800423, deposited by BindingDB; assay type Confirmatory.
+  measurement_type: KI
+  value: 28.0
+  units: uM
+  target_enzyme: UniProtKB:P22303
+- assay: Bacterial reverse mutation test (aka Ames test) summary data
+  evidence:
+  - reference: pubchem.aid:2202554
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 2202554, deposited by 30443; assay type Other.
+  call: ACTIVE
+- assay: CCRIS carcinogenicity studies
+  evidence:
+  - reference: pubchem.aid:1259411
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1259411, deposited by 22070; assay type Other.
+  call: ACTIVE
+- assay: CCRIS mutagenicity studies
+  evidence:
+  - reference: pubchem.aid:1259407
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1259407, deposited by 22070; assay type Other.
+  call: ACTIVE
+- assay: GENE-TOX mutagenicity studies
+  evidence:
+  - reference: pubchem.aid:1259408
+    evidence_type: DATABASE_ASSERTION
+    notes: PubChem BioAssay AID 1259408, deposited by 22071; assay type Other.
+  call: ACTIVE
 bgc_class:
 - PKS
 compound_classes:
@@ -275,7 +311,7 @@ discussions:
     BGC0000008, BGC0000009, BGC0000011. Confirm they describe the same compound rather
     than an upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T20:28:31Z'
+- timestamp: '2026-09-08T22:31:31Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
