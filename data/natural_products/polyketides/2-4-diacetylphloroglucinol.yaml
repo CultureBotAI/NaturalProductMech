@@ -46,6 +46,66 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:78688
   taxon_id: NCBITaxon:220664
   taxon_source: NCBITaxon
+- taxon_id: NCBITaxon:286
+  taxon_label: Pseudomonas
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/AEM.00455-14
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q131143
+- taxon_id: NCBITaxon:294
+  taxon_label: Pseudomonas fluorescens
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1007/BF00633306
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q135292
+- taxon_id: NCBITaxon:294
+  taxon_label: Pseudomonas fluorescens
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1016/S0031-9422(00)97487-9
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q135292
+- taxon_id: NCBITaxon:294
+  taxon_label: Pseudomonas fluorescens
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1099/MIC.0.27033-0
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q135292
+- taxon_id: NCBITaxon:294
+  taxon_label: Pseudomonas fluorescens
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/JB.181.10.3155-3163.1999
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q135292
+- taxon_id: NCBITaxon:380021
+  taxon_label: Pseudomonas protegens
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1094/MPMI-10-13-0311-R
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7255092
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:78688
@@ -138,7 +198,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T06:13:13Z'
+- timestamp: '2026-09-08T06:21:07Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

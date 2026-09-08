@@ -335,6 +335,13 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     for row in inventories.get("chebi_origins") or []:
         origins_by_chebi[row["chebi_id"]].append(row)
 
+    # LOTUS: structure-organism-reference triples. Occurrences, never
+    # producers — LOTUS reports that a compound was found in an organism and
+    # does not say whether the organism makes it.
+    lotus_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in inventories.get("lotus_occurrences") or []:
+        lotus_by_key[row["standard_inchi_key"]].append(row)
+
     # The sibling corpus, pinned. A compound in both keeps its antimicrobial
     # mechanism there and is linked from here, never copied.
     sibling_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
@@ -526,6 +533,26 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 if context:
                     occurrence["notes"] = context[:400]
                 occurrences.append(occurrence)
+        for row in lotus_by_key.get(key) or []:
+            occurrence = {
+                "taxon_id": row["taxon_id"],
+                "taxon_label": row["organism_name"],
+                "taxon_source": "NCBITaxon",
+                "source": "LOTUS",
+                "evidence": [{
+                    "reference": f"DOI:{row['reference_doi']}",
+                    "evidence_type": "DATABASE_ASSERTION",
+                    "notes": (
+                        "LOTUS structure-organism-reference triple. LOTUS reports that "
+                        "the compound was found in the organism; it does not assert that "
+                        "the organism produces it."
+                    ),
+                }],
+            }
+            if row["organism_wikidata"]:
+                occurrence["notes"] = f"Wikidata organism {row['organism_wikidata']}"
+            occurrences.append(occurrence)
+
         if occurrences:
             doc["occurrences"] = occurrences
 

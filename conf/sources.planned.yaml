@@ -19,19 +19,6 @@
 
 
 
-lotus:
-  name: LOTUS
-  description: >-
-    Referenced structure-organism occurrence triples. Fills `occurrences` and
-    never `producer_organisms`: an occurrence may reflect biosynthesis,
-    symbiosis, diet, uptake or contamination, and does not say which.
-  homepage: https://lotus.nprod.net/
-  # CC0 via the Wikidata route (main-namespace structured data). The Zenodo
-  # frozen export is tagged CC BY 4.0 instead, so the route decides the terms
-  # and data/raw/MANIFEST.yaml must record which one was fetched.
-  route: wikidata
-  license: CC0
-  fills: occurrences
 
 pubchem:
   name: PubChem

@@ -20,6 +20,17 @@ np_classification:
   - Cyclic peptides
   - Depsipeptides
   is_glycoside: false
+occurrences:
+- taxon_id: NCBITaxon:1888
+  taxon_label: Streptomyces albus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1038/S41467-019-11658-Z
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623378
 bgc_class:
 - NRPS
 xrefs:
@@ -109,7 +120,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T06:13:14Z'
+- timestamp: '2026-09-08T06:21:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

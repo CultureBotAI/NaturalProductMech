@@ -28,6 +28,77 @@ np_classification:
   class_results:
   - Naphthalenes and derivatives
   is_glycoside: false
+occurrences:
+- taxon_id: NCBITaxon:101852
+  taxon_label: Glarea lozoyensis
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1007/S00438-002-0780-4
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q10505275
+- taxon_id: NCBITaxon:1274781
+  taxon_label: Pyricularia oryzae
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1146/ANNUREV.MICRO.50.1.491
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q80973031
+- taxon_id: NCBITaxon:1911
+  taxon_label: Streptomyces griseus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1074/JBC.M110357200
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623385
+- taxon_id: NCBITaxon:42308
+  taxon_label: Hypoxylon
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1007/S004380051133
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q1568603
+- taxon_id: NCBITaxon:5059
+  taxon_label: Aspergillus flavus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1271/BBB.63.820
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q137096
+- taxon_id: NCBITaxon:746128
+  taxon_label: Aspergillus fumigatus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1080/13693780802307720
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q134359
+- taxon_id: NCBITaxon:96453
+  taxon_label: Nodulisporium
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1007/S004380051133
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q10601695
 bgc_class:
 - PKS
 xrefs:
@@ -175,7 +246,7 @@ discussions:
   kind: CONTROVERSY
   status: OPEN
   prompt: ChEBI calls this structure 'naphthalene-1,3,6,8-tetrol' and MIBiG calls
-    it '1,3,5,8-tetrahydroxynapthalene'. They share a Standard InChIKey, so if the
+    it '1,3,6,8-tetrahydroxynaphthalene'. They share a Standard InChIKey, so if the
     two names denote different compounds then one upstream record has the wrong structure.
     Check which.
 - discussion_id: shared-structure
@@ -185,7 +256,7 @@ discussions:
     BGC0001906, BGC0002154. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T06:13:07Z'
+- timestamp: '2026-09-08T06:20:58Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

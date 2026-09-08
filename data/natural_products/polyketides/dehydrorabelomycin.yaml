@@ -18,6 +18,77 @@ np_classification:
   class_results:
   - Angucyclines
   is_glycoside: false
+occurrences:
+- taxon_id: NCBITaxon:1883
+  taxon_label: Streptomyces
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.7164/ANTIBIOTICS.51.1105
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q1144013
+- taxon_id: NCBITaxon:1911
+  taxon_label: Streptomyces griseus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1016/J.PHYTOCHEM.2005.04.010
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623385
+- taxon_id: NCBITaxon:1916
+  taxon_label: Streptomyces lividans
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.3389/FMICB.2018.03042
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q68792845
+- taxon_id: NCBITaxon:224537
+  taxon_label: Streptomyces murayamaensis
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/JA00051A052
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q103817235
+- taxon_id: NCBITaxon:224537
+  taxon_label: Streptomyces murayamaensis
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/JA00251A045
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q103817235
+- taxon_id: NCBITaxon:224537
+  taxon_label: Streptomyces murayamaensis
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.7164/ANTIBIOTICS.42.179
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q103817235
+- taxon_id: NCBITaxon:224537
+  taxon_label: Streptomyces murayamaensis
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.7164/ANTIBIOTICS.42.189
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q103817235
 bgc_class:
 - PKS
 xrefs:
@@ -66,7 +137,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:13:13Z'
+- timestamp: '2026-09-08T06:21:07Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

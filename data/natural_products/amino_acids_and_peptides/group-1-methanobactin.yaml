@@ -22,6 +22,17 @@ np_classification:
   class_results:
   - Cyclic peptides
   is_glycoside: false
+occurrences:
+- taxon_id: NCBITaxon:426
+  taxon_label: Methylosinus trichosporium
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1126/SCIENCE.1098322
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q24890861
 bgc_class:
 - RIBOSOMAL
 xrefs:
@@ -143,7 +154,7 @@ discussions:
     BGC0002133. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T06:13:16Z'
+- timestamp: '2026-09-08T06:21:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

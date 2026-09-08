@@ -48,6 +48,36 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:156455
   taxon_id: NCBITaxon:391619
   taxon_source: NCBITaxon
+- taxon_id: NCBITaxon:221822
+  taxon_label: Phaeobacter inhibens
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1039/C4CC01924E
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q26270932
+- taxon_id: NCBITaxon:221822
+  taxon_label: Phaeobacter inhibens
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/MBIO.02118-15
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q26270932
+- taxon_id: NCBITaxon:2433
+  taxon_label: Roseobacter
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/AEM.70.4.2560-2565.2003
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7368622
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:156455
@@ -101,7 +131,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:13:08Z'
+- timestamp: '2026-09-08T06:20:58Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -28,6 +28,27 @@ np_classification:
   - Depsipeptides
   - Streptogramins
   is_glycoside: false
+occurrences:
+- taxon_id: NCBITaxon:1961
+  taxon_label: Streptomyces virginiae
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1016/J.GENE.2006.12.035
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q26293368
+- taxon_id: NCBITaxon:1961
+  taxon_label: Streptomyces virginiae
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/JA01501A070
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q26293368
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:46416
@@ -81,7 +102,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:13:09Z'
+- timestamp: '2026-09-08T06:21:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

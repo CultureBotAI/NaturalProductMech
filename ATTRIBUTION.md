@@ -46,9 +46,11 @@ Hastings J, Owen G, Dekker A, et al. ChEBI in 2016: Improved services and an
 expanding collection of metabolites. *Nucleic Acids Res.* 2016;44(D1):D1214-9.
 doi:10.1093/nar/gkv1031
 
-**LOTUS** — the LOTUS Initiative, distributed through Wikidata. Structured data
-in Wikidata's main namespace is CC0. Supplies referenced structure–organism
-occurrence triples with NCBI, GBIF and Open Tree taxonomy identifiers.
+**LOTUS** — the LOTUS Initiative. Supplies referenced structure–organism
+occurrence triples with NCBI taxonomy identifiers. This corpus reads the frozen
+Zenodo export (10.5281/zenodo.19360665), which is **CC BY 4.0**, rather than the
+Wikidata route, whose main-namespace structured data is CC0 — a committed
+inventory needs a release identity and a SPARQL query has none.
 <https://lotus.nprod.net/>
 
 Rutz A, Sorokina M, Galgonek J, et al. The LOTUS initiative for open knowledge

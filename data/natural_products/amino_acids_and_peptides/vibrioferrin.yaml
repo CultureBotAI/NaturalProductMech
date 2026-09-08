@@ -39,6 +39,36 @@ occurrences:
   taxon_id: NCBITaxon:670
   taxon_source: NCBITaxon
   detection_context: AQ 3354
+- taxon_id: NCBITaxon:354
+  taxon_label: Azotobacter vinelandii
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/AEM.03160-15
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q2157875
+- taxon_id: NCBITaxon:670
+  taxon_label: Vibrio parahaemolyticus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1093/OXFORDJOURNALS.JBCHEM.A124432
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q134280
+- taxon_id: NCBITaxon:670
+  taxon_label: Vibrio parahaemolyticus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/JB.185.23.6938-6949.2003
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q134280
 bgc_class:
 - OTHER
 xrefs:
@@ -126,7 +156,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T06:13:10Z'
+- timestamp: '2026-09-08T06:21:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

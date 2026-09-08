@@ -24,6 +24,37 @@ np_classification:
   class_results:
   - Benzophenones
   is_glycoside: false
+occurrences:
+- taxon_id: NCBITaxon:2075174
+  taxon_label: Monodictys putredinis
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/NP060505O
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q10588492
+- taxon_id: NCBITaxon:2075174
+  taxon_label: Monodictys putredinis
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/NP060505O.S001
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q10588492
+- taxon_id: NCBITaxon:2075174
+  taxon_label: Monodictys putredinis
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/NP800392W
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q10588492
 bgc_class:
 - PKS
 xrefs:
@@ -77,7 +108,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:13:15Z'
+- timestamp: '2026-09-08T06:21:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

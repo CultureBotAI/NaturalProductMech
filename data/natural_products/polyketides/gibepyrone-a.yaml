@@ -59,6 +59,26 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:156363
   taxon_id: NCBITaxon:203961
   taxon_source: NCBITaxon
+- taxon_id: NCBITaxon:5127
+  taxon_label: Fusarium fujikuroi
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1016/S0040-4020(01)80514-7
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q10500328
+- taxon_id: NCBITaxon:5127
+  taxon_label: Fusarium fujikuroi
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1074/JBC.M116.753053
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q10500328
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:156363
@@ -119,7 +139,7 @@ discussions:
     They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:13:09Z'
+- timestamp: '2026-09-08T06:21:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

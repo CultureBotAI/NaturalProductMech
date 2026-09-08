@@ -448,3 +448,43 @@ def test_substantive_disagreements_still_surface():
     assert seed.names_disagree("phevalin", "aureusimine B")
     assert seed.names_disagree("romidepsin", "FR901228")
     assert seed.names_disagree("bicozamycin", "bicyclomycin")
+
+
+def test_a_lotus_triple_becomes_an_occurrence_never_a_producer():
+    """LOTUS is the source that makes the two-field split load-bearing: it is
+    far larger than every producer source combined, and every row of it says
+    only that a compound was FOUND in an organism."""
+    lotus = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+        "organism_name": "Aspergillus flavus", "taxon_id": "NCBITaxon:5059",
+        "organism_wikidata": "Q133163", "reference_doi": "10.1021/np50001a001",
+        "structure_wikidata": "Q123",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "lotus_occurrences": [lotus],
+    })[0]
+    occurrence = next(o for o in doc["occurrences"] if o["source"] == "LOTUS")
+    assert occurrence["taxon_id"] == "NCBITaxon:5059"
+    assert occurrence["evidence"][0]["reference"] == "DOI:10.1021/np50001a001"
+    assert occurrence["evidence"][0]["evidence_type"] == "DATABASE_ASSERTION"
+    # The producer list is untouched by an occurrence, whatever taxon it names.
+    assert [p["taxon_label"] for p in doc["producer_organisms"]] == ["Saccharopolyspora erythraea"]
+
+
+def test_occurrences_from_several_sources_coexist():
+    """ChEBI origins and LOTUS triples both fill occurrences, and each keeps
+    its own provenance rather than being flattened together."""
+    origin = {
+        "chebi_id": "CHEBI:42355", "species_text": "Homo sapiens", "species_accession": "9606",
+        "component_text": "", "strain_text": "", "source_accession": "12194923", "comments": "",
+    }
+    lotus = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "organism_name": "Aspergillus flavus",
+        "taxon_id": "NCBITaxon:5059", "organism_wikidata": "Q133163",
+        "reference_doi": "10.1021/np50001a001", "structure_wikidata": "",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "chebi_structures": [CHEBI_ROW],
+        "chebi_origins": [origin], "lotus_occurrences": [lotus],
+    })[0]
+    assert {o["source"] for o in doc["occurrences"]} == {"CHEBI", "LOTUS"}

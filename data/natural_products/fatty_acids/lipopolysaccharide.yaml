@@ -18,6 +18,37 @@ np_classification:
   class_results:
   - Glycerophosphoinositolglycans
   is_glycoside: true
+occurrences:
+- taxon_id: NCBITaxon:29459
+  taxon_label: Brucella melitensis
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/IAI.66.11.5485-5493.1998
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q3512031
+- taxon_id: NCBITaxon:562
+  taxon_label: Escherichia coli
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/JB.175.1.148-158.1993
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q25419
+- taxon_id: NCBITaxon:562
+  taxon_label: Escherichia coli
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/JB.184.21.5912-5925.2002
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q25419
 bgc_class:
 - SACCHARIDE
 xrefs:
@@ -187,7 +218,7 @@ discussions:
     BGC0000775, BGC0000776, BGC0000777. Confirm they describe the same compound rather
     than an upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T06:13:16Z'
+- timestamp: '2026-09-08T06:21:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

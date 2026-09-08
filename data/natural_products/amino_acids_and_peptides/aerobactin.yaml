@@ -27,6 +27,46 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:18157
   taxon_id: NCBITaxon:562
   taxon_source: NCBITaxon
+- taxon_id: NCBITaxon:141454
+  taxon_label: Streptomyces wadayamensis
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/GENOMEA.00625-14
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q104917214
+- taxon_id: NCBITaxon:40318
+  taxon_label: Streptomyces nodosus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1007/S00253-015-7060-9
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q16759083
+- taxon_id: NCBITaxon:553
+  taxon_label: Pantoea ananatis
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1007/S00438-018-1477-7
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q26270527
+- taxon_id: NCBITaxon:562
+  taxon_label: Escherichia coli
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1038/MSB.2011.65
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q25419
 bgc_class:
 - OTHER
 xrefs:
@@ -143,7 +183,7 @@ discussions:
     BGC0001499. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T06:13:11Z'
+- timestamp: '2026-09-08T06:21:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

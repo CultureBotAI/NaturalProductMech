@@ -25,6 +25,37 @@ np_classification:
   class_results:
   - Apocarotenoids(ε-)
   is_glycoside: false
+occurrences:
+- taxon_id: NCBITaxon:12959
+  taxon_label: Axinella polypoides
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1016/J.BCP.2011.06.042
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q1931381
+- taxon_id: NCBITaxon:40559
+  taxon_label: Botrytis cinerea
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1111/1462-2920.14258
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q1135851
+- taxon_id: NCBITaxon:5022
+  taxon_label: Leptosphaeria maculans
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1016/J.FGB.2019.04.015
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q6528396
 bgc_class:
 - PKS
 xrefs:
@@ -79,7 +110,7 @@ discussions:
     acid'. They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:13:10Z'
+- timestamp: '2026-09-08T06:21:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

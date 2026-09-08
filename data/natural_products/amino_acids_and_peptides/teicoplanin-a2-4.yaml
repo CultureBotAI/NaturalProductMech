@@ -33,6 +33,16 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:34997
   taxon_id: NCBITaxon:1867
   taxon_source: NCBITaxon
+- taxon_id: NCBITaxon:1867
+  taxon_label: Actinoplanes teichomyceticus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/JA00329A044
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q25834611
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:34997
@@ -88,7 +98,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:13:11Z'
+- timestamp: '2026-09-08T06:21:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

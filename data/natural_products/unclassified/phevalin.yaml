@@ -58,6 +58,26 @@ occurrences:
   taxon_id: NCBITaxon:1931
   taxon_source: NCBITaxon
   detection_context: SC433
+- taxon_id: NCBITaxon:1883
+  taxon_label: Streptomyces
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.7164/ANTIBIOTICS.48.1165
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q1144013
+- taxon_id: NCBITaxon:1911
+  taxon_label: Streptomyces griseus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1016/S0960-894X(01)00524-8
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623385
 bgc_class:
 - NRPS
 xrefs:
@@ -112,7 +132,7 @@ discussions:
     They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:13:08Z'
+- timestamp: '2026-09-08T06:20:59Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

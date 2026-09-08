@@ -19,6 +19,37 @@ np_classification:
   class_results:
   - Cyclopiazonic acid-tpye tetramate alkaloids
   is_glycoside: false
+occurrences:
+- taxon_id: NCBITaxon:41984
+  taxon_label: Aspergillus tamarii
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1016/S0040-4020(03)00413-7
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q6759138
+- taxon_id: NCBITaxon:5059
+  taxon_label: Aspergillus flavus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1007/S10600-009-9433-8
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q137096
+- taxon_id: NCBITaxon:5078
+  taxon_label: Penicillium griseofulvum
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1039/P19810003292
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q10622943
 bgc_class:
 - NRPS
 - PKS
@@ -70,7 +101,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:13:08Z'
+- timestamp: '2026-09-08T06:20:59Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -50,6 +50,14 @@ extract-chebi *args:
 extract-antibioticmech *args:
     uv run python scripts/extract_antibioticmech.py {{args}}
 
+# Free check once cached: how many LOTUS triples touch corpus structures.
+extract-lotus-dry *args:
+    uv run python scripts/extract_lotus.py --dry-run {{args}}
+
+# Write lotus_occurrences.tsv from the pinned Zenodo frozen export.
+extract-lotus *args:
+    uv run python scripts/extract_lotus.py {{args}}
+
 # --- seeding -----------------------------------------------------------------
 # Dry run: harmonize the committed inventories and report the records that WOULD
 # be written, per pathway. No files touched. Empty until M2 adds the extractors.

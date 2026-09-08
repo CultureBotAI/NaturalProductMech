@@ -52,7 +52,7 @@ by grounding status:
 
 field coverage (records carrying at least one item):
   producer_organisms                   3115
-  occurrences                           192
+  occurrences                          2324
   biosynthetic_gene_clusters           3115
   biosynthetic_pathway                    0
   bioactivities                           0
