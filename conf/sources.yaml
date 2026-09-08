@@ -97,6 +97,21 @@ lotus:
   license: CC BY 4.0
   fills: occurrences
 
+bindingdb:
+  name: BindingDB
+  description: >-
+    Measured binding affinities with UniProt targets, pH and temperature per
+    measurement, and a primary citation. ONLY BindingDB's own curation is read:
+    its terms put staff-curated data under CC BY 3.0 while ChEMBL-derived rows
+    keep ChEMBL's share-alike terms, and the two ship in the same file.
+  homepage: https://www.bindingdb.org/
+  release: "202609"
+  license: CC BY 3.0 (own-curated subset only)
+  # The filter is the Curation/DataSource column, not the filename: 429 rows
+  # inside the "BindingDB Articles" file are ChEMBL's.
+  curation_source: Curated from the literature by BindingDB
+  fills: molecular_targets
+
 # ---------------------------------------------------------------------------
 # Scope
 # ---------------------------------------------------------------------------

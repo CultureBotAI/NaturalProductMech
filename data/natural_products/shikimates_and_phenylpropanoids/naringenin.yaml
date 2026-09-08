@@ -722,6 +722,135 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q2724545
+molecular_targets:
+- target_label: Aldehyde oxidase 1
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: KI
+  measurement_value: 148000.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:26722818
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.0000; qualifier EQUAL.
+  protein_examples:
+  - UniProtKB:H9TB17
+  taxon_label: Cavia porcellus
+- target_label: Aromatase
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: KI
+  measurement_value: 0.00109662
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:22726671
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; qualifier EQUAL.
+  protein_examples:
+  - UniProtKB:P11511
+  taxon_label: Homo sapiens
+- target_label: Carbonic anhydrase 1
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: KI
+  measurement_value: 970.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:22299585
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.4000; qualifier EQUAL.
+  protein_examples:
+  - UniProtKB:P00915
+  taxon_label: Homo sapiens
+- target_label: Carbonic anhydrase 2
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: KI
+  measurement_value: 113.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:22299585
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.4000; qualifier EQUAL.
+  protein_examples:
+  - UniProtKB:P00918
+  taxon_label: Homo sapiens
+- target_label: Carbonic anhydrase 3
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: KI
+  measurement_value: 2210.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:22299585
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.4000; qualifier EQUAL.
+  protein_examples:
+  - UniProtKB:Q3SZX4
+  taxon_label: Bos taurus
+- target_label: Carbonic anhydrase 4
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: KI
+  measurement_value: 1120.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:22299585
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.4000; qualifier EQUAL.
+  protein_examples:
+  - UniProtKB:P22748
+  taxon_label: Homo sapiens
+- target_label: Carbonic anhydrase 6
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: KI
+  measurement_value: 1490.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:22299585
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.4000; qualifier EQUAL.
+  protein_examples:
+  - UniProtKB:P23280
+  taxon_label: Homo sapiens
+- target_label: Estrogen receptor
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: IC50
+  measurement_value: 72302.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:17149865
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.6000, 22.00 C C; qualifier
+      EQUAL.
+  protein_examples:
+  - UniProtKB:P03372
+  taxon_label: Homo sapiens
+- target_label: Estrogen receptor beta
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: IC50
+  measurement_value: 13473.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:17149865
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.6000, 22.00 C C; qualifier
+      EQUAL.
+  protein_examples:
+  - UniProtKB:Q92731
+  taxon_label: Homo sapiens
 bgc_class:
 - PKS
 xrefs:
@@ -769,7 +898,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:21:00Z'
+- timestamp: '2026-09-08T06:29:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

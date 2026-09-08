@@ -65,6 +65,22 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q11006
+molecular_targets:
+- target_label: Tryptophanase
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: KI
+  measurement_value: 48000000.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:18608755
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.8000, 25.00 C C; qualifier
+      EQUAL.
+  protein_examples:
+  - UniProtKB:P0A853
+  taxon_label: Escherichia coli (strain K12)
 bgc_class:
 - NRPS
 xrefs:
@@ -114,7 +130,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:21:00Z'
+- timestamp: '2026-09-08T06:29:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

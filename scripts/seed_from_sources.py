@@ -342,6 +342,13 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     for row in inventories.get("lotus_occurrences") or []:
         lotus_by_key[row["standard_inchi_key"]].append(row)
 
+    # BindingDB's own-curated affinities. Only rows its Curation/DataSource
+    # column marks as BindingDB's own reach this inventory; the ChEMBL-derived
+    # rows in the same file are share-alike and were filtered at extraction.
+    targets_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in inventories.get("bindingdb_targets") or []:
+        targets_by_key[row["standard_inchi_key"]].append(row)
+
     # The sibling corpus, pinned. A compound in both keeps its antimicrobial
     # mechanism there and is linked from here, never copied.
     sibling_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
@@ -555,6 +562,42 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
 
         if occurrences:
             doc["occurrences"] = occurrences
+
+        targets: list[dict[str, Any]] = []
+        for row in targets_by_key.get(key) or []:
+            context = ", ".join(
+                part for part in (
+                    f"pH {row['ph']}" if row["ph"] else "",
+                    f"{row['temperature_c']} C" if row["temperature_c"] else "",
+                ) if part
+            )
+            target: dict[str, Any] = {
+                "target_label": row["target_name"] or "unnamed target",
+                "target_type": "PROTEIN",
+                "relation": "BINDS",
+                "measurement_type": row["measurement_type"],
+                "measurement_value": float(row["measurement_value_nm"]),
+                "measurement_units": "nM",
+                "source": "BINDINGDB",
+                "evidence": [{
+                    "reference": row["reference"],
+                    "evidence_type": "DATABASE_ASSERTION",
+                    "notes": (
+                        "BindingDB own-curated affinity"
+                        + (f"; measured at {context}" if context else "")
+                        + f"; qualifier {row['measurement_qualifier']}."
+                    ),
+                }],
+            }
+            if row["uniprot"]:
+                # An organism-specific accession is an EXAMPLE of a target, not
+                # a target identity — docs/CURATION.md is explicit about it.
+                target["protein_examples"] = [f"UniProtKB:{row['uniprot']}"]
+            if row["target_organism"]:
+                target["taxon_label"] = row["target_organism"]
+            targets.append(target)
+        if targets:
+            doc["molecular_targets"] = targets
 
         links = [{
             "corpus": "AntibioticMech",

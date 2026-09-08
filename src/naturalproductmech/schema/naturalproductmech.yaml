@@ -990,6 +990,11 @@ enums:
       NPCLASSIFIER:
         description: The computed filing classification.
       CYANOMETDB:
+      BINDINGDB:
+        description: >-
+          Measured binding affinities, own-curated subset only. BindingDB's
+          ChEMBL-derived records keep ChEMBL's share-alike terms and are
+          excluded at extraction, so nothing under this value carries them.
       ANTIBIOTICMECH:
         description: The sibling corpus, pinned, for cross-corpus links.
       CURATOR:

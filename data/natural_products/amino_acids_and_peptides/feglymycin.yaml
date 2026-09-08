@@ -18,6 +18,35 @@ np_classification:
   class_results:
   - Linear peptides
   is_glycoside: false
+molecular_targets:
+- target_label: UDP-N-acetylglucosamine 1-carboxyvinyltransferase
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: KI
+  measurement_value: 3400.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:24755374
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; qualifier EQUAL.
+  protein_examples:
+  - UniProtKB:P0A749
+  taxon_label: Escherichia coli (strain K12)
+- target_label: UDP-N-acetylglucosamine 1-carboxyvinyltransferase 2
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: KI
+  measurement_value: 3500.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:24755374
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; qualifier EQUAL.
+  protein_examples:
+  - UniProtKB:P65456
+  taxon_label: Staphylococcus aureus (strain Mu50 / ATCC 700699)
 bgc_class:
 - NRPS
 xrefs:
@@ -60,7 +89,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:21:08Z'
+- timestamp: '2026-09-08T06:29:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

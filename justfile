@@ -58,6 +58,14 @@ extract-lotus-dry *args:
 extract-lotus *args:
     uv run python scripts/extract_lotus.py {{args}}
 
+# Free check once cached: BindingDB rows touching corpus structures.
+extract-bindingdb-dry *args:
+    uv run python scripts/extract_bindingdb.py --dry-run {{args}}
+
+# Write bindingdb_targets.tsv from the own-curated articles file only.
+extract-bindingdb *args:
+    uv run python scripts/extract_bindingdb.py {{args}}
+
 # --- seeding -----------------------------------------------------------------
 # Dry run: harmonize the committed inventories and report the records that WOULD
 # be written, per pathway. No files touched. Empty until M2 adds the extractors.
