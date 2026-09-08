@@ -23,11 +23,24 @@ Companion documents written the same day:
 ## 1. Why a separate repository
 
 AntibioticMech answers "what does this compound do to a microbe and how does
-the microbe resist it". Roughly two thirds of its records are natural products
-or semisynthetic derivatives, but it has nowhere to say who *makes* erythromycin,
-from which gene cluster, by which pathway, and what else the compound does when
-it is not killing bacteria. MIBiG producers were bolted on in August 2026 and
-matched 3 records — the join is real but the corpus was not built for it.
+the microbe resist it". It has nowhere to say who *makes* erythromycin, from
+which gene cluster, by which pathway, and what else the compound does when it
+is not killing bacteria.
+
+Measured against its committed corpus on 2026-09-07, not assumed:
+
+| AntibioticMech, 2,909 records | Count |
+|---|---:|
+| Unique Standard InChIKeys | 2,893 |
+| Records carrying `biosynthesis_origin` | 3 |
+| Records carrying `producer_organisms` | 6 |
+
+So the origin question is not merely under-answered there, it is unasked: the
+field exists and is empty on 99.9% of the corpus. MIBiG was adopted in August
+2026 and its committed inventory holds 43 rows from 24 entries, because the
+extractor gates on a non-placeholder reviewer id — a gate this research showed
+matches 25 of MIBiG's 3,013 entries. The join is real and the corpus was not
+built for it.
 
 TraitMech says an organism *produces antibiotics*; ProteinTraitsMech says what
 a polyketide synthase domain is; CellStructureMech says what a flagellum is
