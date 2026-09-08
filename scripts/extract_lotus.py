@@ -50,7 +50,11 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from naturalproductmech.taxonomy import load_taxon_names, resolve_name  # noqa: E402
+from naturalproductmech.taxonomy import (  # noqa: E402
+    load_taxon_names,
+    report_taxonomy_table,
+    resolve_name,
+)
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 RAW_DIR = REPO_ROOT / "data" / "raw"
@@ -221,6 +225,7 @@ def main() -> int:
 
     taxids = resolve_taxids(paths[METADATA], organisms) if rows else {}
     taxon_names = load_taxon_names()
+    report_taxonomy_table(taxon_names)
     kept: list[dict] = []
     unresolved = 0
     recovered = 0

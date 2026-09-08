@@ -48,7 +48,11 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from naturalproductmech.taxonomy import load_taxon_names, resolve_name  # noqa: E402
+from naturalproductmech.taxonomy import (  # noqa: E402
+    load_taxon_names,
+    report_taxonomy_table,
+    resolve_name,
+)
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 RAW_DIR = REPO_ROOT / "data" / "raw"
@@ -152,6 +156,7 @@ def extract(path: Path, keys: set[str], known: dict[str, str]) -> tuple[list[dic
     rows: list[dict] = []
     genera = resolved_genera(known)
     taxon_names = load_taxon_names()
+    report_taxonomy_table(taxon_names)
     with path.open(newline="", encoding="utf-8", errors="replace") as fh:
         for row in csv.DictReader(fh):
             counts["rows_total"] += 1

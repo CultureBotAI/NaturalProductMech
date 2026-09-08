@@ -46,7 +46,11 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from naturalproductmech.taxonomy import load_taxon_names, resolve_name  # noqa: E402
+from naturalproductmech.taxonomy import (  # noqa: E402
+    load_taxon_names,
+    report_taxonomy_table,
+    resolve_name,
+)
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CONF_PATH = REPO_ROOT / "conf" / "sources.yaml"
@@ -184,6 +188,7 @@ def extract_origins(path: Path, compounds: dict[str, dict[str, str]]) -> tuple[l
     counts: Counter[str] = Counter()
     rows: list[dict] = []
     taxon_names = load_taxon_names()
+    report_taxonomy_table(taxon_names)
     for row in read_rows(path):
         counts["origin_rows"] += 1
         cid = row.get("compound_id")

@@ -286,3 +286,27 @@ def test_no_record_is_too_large_to_review(record_paths):
         for path in record_paths if path.stat().st_size > 64 * 1024
     ]
     assert not oversized, f"records too large to review: {oversized[:5]}"
+
+
+# Organism labels resolving to more than one taxon id. The inverse of
+# KNOWN_SYNONYM_TAXA, and the failure mode name-based resolution actually
+# introduces: a source supplies an id for one row and none for another, and the
+# fallback resolves the same name to a different id (#34).
+KNOWN_AMBIGUOUS_LABELS = 8
+
+
+def test_an_organism_label_resolves_to_one_taxon_id(records):
+    """`Scytonema hofmannii` has two ids upstream — one strain-level, one
+    species. Where a source gives an id for one row and none for another, the
+    corpus can carry both under one name, and nothing else checks for it."""
+    ids = {}
+    for record in records:
+        for occurrence in record.get("occurrences") or []:
+            label = (occurrence.get("taxon_label") or "").strip().lower()
+            if label and occurrence.get("taxon_id"):
+                ids.setdefault(label, set()).add(occurrence["taxon_id"])
+    ambiguous = {k: sorted(v) for k, v in ids.items() if len(v) > 1}
+    assert len(ambiguous) <= KNOWN_AMBIGUOUS_LABELS, (
+        f"organism labels resolving to several taxon ids rose to {len(ambiguous)}: "
+        f"{list(ambiguous.items())[:4]}"
+    )

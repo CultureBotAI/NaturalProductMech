@@ -217,8 +217,19 @@ def main() -> int:
         gained = len(names & set(found))
         print(f"  would resolve for {source:<16} {gained:>7} of {len(names)}", file=sys.stderr)
 
+    # The residue is a curation queue, not an extractor counter. 202 ChEBI
+    # names alone are superseded botanical basionyms — Biota orientalis is now
+    # Platycladus orientalis — which a curator can resolve one line at a time,
+    # and the highest-count names are worth several occurrences each (#36).
+    unresolved_path = REPO_ROOT / "curation" / "unresolved_taxa.tsv"
+    unresolved = sorted(
+        (name, ",".join(sorted(s for s, names in wanted_by_source.items() if name in names)))
+        for name in wanted - set(found)
+    )
+
     if args.dry_run:
-        print("\ndry run: nothing written", file=sys.stderr)
+        print(f"\n{len(unresolved)} names would remain unresolved", file=sys.stderr)
+        print("dry run: nothing written", file=sys.stderr)
         return 0
 
     rows = []
@@ -237,6 +248,14 @@ def main() -> int:
         writer = csv.DictWriter(fh, fieldnames=COLUMNS, delimiter="\t", lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
+
+    with unresolved_path.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=["organism_name", "requested_by"],
+                                delimiter="\t", lineterminator="\n")
+        writer.writeheader()
+        writer.writerows({"organism_name": n, "requested_by": s} for n, s in unresolved)
+    print(f"wrote {unresolved_path.relative_to(REPO_ROOT)} "
+          f"({len(unresolved)} names still unresolved)", file=sys.stderr)
 
     manifest = yaml.safe_load(MANIFEST_PATH.read_text(encoding="utf-8")) or {}
     manifest["retrieved_on"] = time.strftime("%Y-%m-%d")

@@ -35,6 +35,26 @@ def load_taxon_names(path: Path = TAXON_NAMES_PATH) -> dict[str, str]:
         }
 
 
+def report_taxonomy_table(table: dict[str, str], *, stream=None) -> None:
+    """Say what was consulted, so a smaller run is visible rather than inferred.
+
+    `load_taxon_names` returns an empty mapping when the inventory is absent,
+    which is right for an extractor running before the taxonomy source was
+    adopted. Now that it IS adopted, the same silence is a trap: run the
+    consumers before the taxonomy extractor, or on a checkout where data/raw
+    was cleared, and each quietly produces a smaller inventory with no error
+    and a corpus that still passes every gate (#35).
+    """
+    import sys
+
+    stream = stream or sys.stderr
+    if table:
+        print(f"taxonomy table: {len(table)} names", file=stream)
+    else:
+        print("taxonomy table: ABSENT — resolving nothing extra. Run "
+              "`just extract-taxonomy` first if this was not intended.", file=stream)
+
+
 def resolve_name(name: str, table: dict[str, str]) -> str | None:
     """The NCBITaxon CURIE for an organism name, or None.
 
