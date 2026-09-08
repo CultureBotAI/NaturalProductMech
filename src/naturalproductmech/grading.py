@@ -32,56 +32,73 @@ CAUSAL_BASES = frozenset({
 })
 
 
-def load_producer_evidence_map(path: Path = PRODUCER_EVIDENCE_PATH) -> dict[str, str]:
-    """Source evidence method -> ``evidence_basis``, from the committed TSV.
+def load_evidence_map(path: Path = PRODUCER_EVIDENCE_PATH) -> dict[str, dict[str, str]]:
+    """Source evidence method -> its grades for both claims, from the TSV.
 
     Leading ``#`` lines are stripped before parsing. The file carries a long
-    header explaining the case the table cannot express, and csv.DictReader
-    would otherwise take the first comment line as the column names — which it
-    did, silently, until the extractor crashed on a missing column.
+    header explaining the distinction it exists for, and csv.DictReader would
+    otherwise take the first comment line as the column names — which it did,
+    silently, until the extractor crashed on a missing column.
     """
     lines = [
         line for line in path.read_text(encoding="utf-8").splitlines()
         if line.strip() and not line.lstrip().startswith("#")
     ]
     return {
-        row["mibig_method"]: row["evidence_basis"]
+        row["mibig_method"]: {
+            "supports": row["supports"],
+            "producer_basis": row["producer_basis"],
+            "cluster_basis": row["cluster_basis"],
+        }
         for row in csv.DictReader(lines, delimiter="\t")
     }
 
 
-def grade_production(methods: list[str], evidence_map: dict[str, str]) -> str | None:
-    """The best ``evidence_basis`` a locus's evidence methods support.
+def grade_production(methods: list[str], evidence_map: dict[str, dict[str, str]]) -> str | None:
+    """How well supported is the claim that THIS TAXON makes the compound.
 
-    Three cases, and the third is the one that needed measuring:
+    Only methods marked ``organism+cluster`` in the table can raise this grade.
+    Heterologous expression, enzymatic assays and in-vitro work establish what a
+    cloned locus can do; they say nothing new about the native producer, whose
+    claim rests on the isolation report either way.
 
-    * **A producer-grade method is present** — return the strongest.
-      ``BGC_CHARACTERIZED`` beats ``BGC_CORRELATED``.
-    * **Methods are present but none is producer-grade** — return ``None``. In
-      MIBiG 4.0 this is homology-based prediction, and it applies to 2 active
-      entries. A prediction is not evidence of production, so the claim goes to
-      the worklist rather than into ``producer_organisms``.
-    * **No method is stated at all** — return ``SOURCE_ASSERTION``. This is
-      1,627 of MIBiG's 2,437 active entries, so how it is handled decides most
-      of the corpus. Dropping them would discard two thirds of the anchor
-      source over a field MIBiG simply does not fill; promoting them to
-      ``BGC_CHARACTERIZED`` would claim experiments nobody reported. The honest
-      middle is what the enum already calls SOURCE_ASSERTION: a curated
-      database asserts production without stating the experiment. It is a
-      producer claim, it cites MIBiG as a database assertion, and a consumer
-      wanting demonstrated production filters for ``CAUSAL_BASES``.
+    * A qualifying method present — the strongest it supports.
+    * No qualifying method — ``SOURCE_ASSERTION``. The source asserts
+      production, citing a report nobody here has read. It is the commonest
+      grade by far, and it is honest: it covers the legacy entries whose
+      evidence was never migrated AND the entries whose evidence only ever
+      addressed the cluster.
 
-    An unrecognised method fails closed rather than being admitted by default:
-    a vocabulary that grew upstream should be looked at, not waved through.
+    There is no ``None`` case. A MIBiG entry always asserts that the organism
+    makes the compound; what varies is how well the LOCUS attribution is
+    supported, and that is :func:`grade_cluster_link`'s job.
     """
-    if not methods:
-        return SOURCE_ASSERTION
     best: str | None = None
     for method in methods:
-        basis = evidence_map.get(method)
-        if basis is None or basis == NOT_PRODUCER_GRADE:
+        entry = evidence_map.get(method)
+        if not entry or entry["supports"] != "organism+cluster":
             continue
+        basis = entry["producer_basis"]
         if basis == "BGC_CHARACTERIZED":
             return basis
-        best = best or basis
-    return best
+        best = best or (basis or None)
+    return best or SOURCE_ASSERTION
+
+
+def grade_cluster_link(methods: list[str], evidence_map: dict[str, dict[str, str]]) -> str:
+    """How well supported is the claim that THIS LOCUS makes the compound.
+
+    This is what MIBiG's locus evidence actually grades, so the full vocabulary
+    speaks here. An unrecognised method fails closed to ``CLUSTER_UNSTATED``
+    rather than being read as a demonstration.
+    """
+    rank = {"CLUSTER_DEMONSTRATED": 0, "CLUSTER_CORRELATED": 1, "CLUSTER_PREDICTED": 2}
+    best: str | None = None
+    for method in methods:
+        entry = evidence_map.get(method)
+        basis = entry["cluster_basis"] if entry else ""
+        if not basis:
+            continue
+        if best is None or rank[basis] < rank[best]:
+            best = basis
+    return best or "CLUSTER_UNSTATED"

@@ -38,7 +38,9 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000940
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
   evidence:
   - reference: PMID:15600304
     evidence_type: DATABASE_ASSERTION
@@ -49,7 +51,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000941
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:18375553
     evidence_type: DATABASE_ASSERTION
@@ -60,7 +63,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0001453
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:29795673
     evidence_type: DATABASE_ASSERTION
@@ -71,7 +75,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0002305
   source: MIBIG
   source_version: '2'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: DOI:10.1016/j.tetlet.2018.11.063
     evidence_type: DATABASE_ASSERTION
@@ -94,6 +99,7 @@ biosynthetic_gene_clusters:
   locus_evidence_methods:
   - Knock-out studies
   - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0000941
   entry_version: '3'
   entry_status: active
@@ -108,6 +114,7 @@ biosynthetic_gene_clusters:
   locus_to: 5584948
   bgc_class:
   - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0001453
   entry_version: '5'
   entry_status: active
@@ -120,6 +127,7 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:LT989883.1
   bgc_class:
   - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0002305
   entry_version: '2'
   entry_status: active
@@ -134,6 +142,7 @@ biosynthetic_gene_clusters:
   locus_to: 7452
   bgc_class:
   - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000940
@@ -167,7 +176,7 @@ discussions:
     BGC0001453, BGC0002305. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:52Z'
+- timestamp: '2026-09-08T04:12:55Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

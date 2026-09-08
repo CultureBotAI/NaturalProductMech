@@ -27,7 +27,9 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000955
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
   evidence:
   - reference: PMID:21626639
     evidence_type: DATABASE_ASSERTION
@@ -38,7 +40,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0001415
   source: MIBIG
   source_version: '4'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:23028578
     evidence_type: DATABASE_ASSERTION
@@ -60,6 +63,7 @@ biosynthetic_gene_clusters:
   locus_evidence_methods:
   - Knock-out studies
   - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0001415
   entry_version: '4'
   entry_status: active
@@ -75,6 +79,7 @@ biosynthetic_gene_clusters:
   bgc_class:
   - NRPS
   - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000955
@@ -98,7 +103,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:50Z'
+- timestamp: '2026-09-08T04:12:52Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

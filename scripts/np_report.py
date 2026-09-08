@@ -51,6 +51,7 @@ def summarize(records: list[dict[str, Any]]) -> dict[str, Any]:
     by_status: collections.Counter[str] = collections.Counter()
     by_grounding: collections.Counter[str] = collections.Counter()
     producer_bases: collections.Counter[str] = collections.Counter()
+    cluster_bases: collections.Counter[str] = collections.Counter()
     field_coverage: collections.Counter[str] = collections.Counter()
     inchikeys: set[str] = set()
     stereo_incomplete = 0
@@ -83,6 +84,8 @@ def summarize(records: list[dict[str, Any]]) -> dict[str, Any]:
                 field_coverage[field] += 1
         for producer in doc.get("producer_organisms") or []:
             producer_bases[producer.get("evidence_basis") or "ABSENT"] += 1
+        for cluster in doc.get("biosynthetic_gene_clusters") or []:
+            cluster_bases[cluster.get("link_evidence_basis") or "ABSENT"] += 1
 
     causal = sum(n for basis, n in producer_bases.items() if basis in CAUSAL_PRODUCER_BASES)
     correlated = producer_bases.get("BGC_CORRELATED", 0)
@@ -100,6 +103,11 @@ def summarize(records: list[dict[str, Any]]) -> dict[str, Any]:
             "causal": causal,
             "correlated": correlated,
             "by_basis": dict(sorted(producer_bases.items())),
+        },
+        "cluster_link_claims": {
+            "total": sum(cluster_bases.values()),
+            "demonstrated": cluster_bases.get("CLUSTER_DEMONSTRATED", 0),
+            "by_basis": dict(sorted(cluster_bases.items())),
         },
     }
 
@@ -133,10 +141,17 @@ def render(summary: dict[str, Any]) -> str:
                  f"({claims['causal']} causal, {claims['correlated']} correlational)")
     for key, count in claims["by_basis"].items():
         lines.append(f"  {key:<34} {count:>6}")
+    links = summary["cluster_link_claims"]
     lines.append("")
-    lines.append("A correlational producer claim is a real claim and a weaker one. Any")
-    lines.append("figure answering 'which organisms are known to make this?' should say")
-    lines.append("which of the two it counted.")
+    lines.append(f"cluster link claims: {links['total']} "
+                 f"({links['demonstrated']} demonstrated)")
+    for key, count in links["by_basis"].items():
+        lines.append(f"  {key:<34} {count:>6}")
+    lines.append("")
+    lines.append("These grade two different questions and they come apart. A producer")
+    lines.append("claim says this TAXON makes the compound; a cluster link says this")
+    lines.append("LOCUS does. Heterologous expression settles the second and leaves the")
+    lines.append("first exactly where the isolation report left it.")
     return "\n".join(lines)
 
 

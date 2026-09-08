@@ -31,7 +31,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0002173
   source: MIBIG
   source_version: '2'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:30977375
     evidence_type: DATABASE_ASSERTION
@@ -52,6 +53,7 @@ biosynthetic_gene_clusters:
   bgc_class:
   - TERPENE
   - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0002173
@@ -63,7 +65,7 @@ grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most M
   compounds carry no ChEBI cross-reference.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T03:53:46Z'
+- timestamp: '2026-09-08T04:12:48Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

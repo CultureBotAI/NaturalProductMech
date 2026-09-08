@@ -25,11 +25,13 @@ xrefs:
 producer_organisms:
 - taxon_id: NCBITaxon:1519471
   taxon_label: Streptomyces sp. NRRL S-4
-  evidence_basis: BGC_CHARACTERIZED
+  evidence_basis: SOURCE_ASSERTION
   biosynthetic_gene_cluster: mibig:BGC0002560
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: Heterologous expression.'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
   evidence:
   - reference: PMID:34123341
     evidence_type: DATABASE_ASSERTION
@@ -51,6 +53,7 @@ biosynthetic_gene_clusters:
   - RIBOSOMAL
   locus_evidence_methods:
   - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0002560
@@ -62,7 +65,7 @@ grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most M
   compounds carry no ChEBI cross-reference.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T03:53:45Z'
+- timestamp: '2026-09-08T04:12:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -33,7 +33,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000861
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:19809243
     evidence_type: DATABASE_ASSERTION
@@ -44,7 +45,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000862
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:9274025
     evidence_type: DATABASE_ASSERTION
@@ -55,7 +57,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000863
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:17122401
     evidence_type: DATABASE_ASSERTION
@@ -66,7 +69,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000865
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:12055309
     evidence_type: DATABASE_ASSERTION
@@ -84,6 +88,7 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:EU719604.1
   bgc_class:
   - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0000862
   entry_version: '3'
   entry_status: active
@@ -96,6 +101,7 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:U73935.1
   bgc_class:
   - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0000863
   entry_version: '3'
   entry_status: active
@@ -108,6 +114,7 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:DQ469875.1
   bgc_class:
   - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0000865
   entry_version: '3'
   entry_status: active
@@ -120,6 +127,7 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:AF409100.1
   bgc_class:
   - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000861
@@ -153,7 +161,7 @@ discussions:
     BGC0000863, BGC0000865. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:48Z'
+- timestamp: '2026-09-08T04:12:50Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

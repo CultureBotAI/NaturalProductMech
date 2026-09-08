@@ -30,7 +30,9 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0002106
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: Gene expression correlated with compound production.'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
   evidence:
   - reference: PMID:33057790
     evidence_type: DATABASE_ASSERTION
@@ -41,7 +43,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000138
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:15123265
     evidence_type: DATABASE_ASSERTION
@@ -63,6 +66,7 @@ biosynthetic_gene_clusters:
   - PKS
   locus_evidence_methods:
   - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
 - accession: mibig:BGC0000138
   entry_version: '5'
   entry_status: active
@@ -75,6 +79,7 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:AY442225.1
   bgc_class:
   - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0002106
@@ -98,7 +103,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:46Z'
+- timestamp: '2026-09-08T04:12:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

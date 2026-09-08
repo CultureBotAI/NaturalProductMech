@@ -1,12 +1,12 @@
-identifier: naturalproductmech:mibig-f76ee7db7d
+identifier: naturalproductmech:mibig-005498ea51
 label: pentabromopseudilin
 chemical_structure:
-  smiles: C1=C(C=C(C(=C1C2=C(C(=C(N2)Br)Br)Br)O)Br)Br
+  smiles: C1=C(C=C(C(=C1Br)O)C2=C(C(=C(N2)Br)Br)Br)Br
   standard_inchi: InChI=1S/C10H4Br5NO/c11-3-1-4(9(17)5(12)2-3)8-6(13)7(14)10(15)16-8/h1-2,16-17H
   standard_inchi_key: LXMNWKJHYOZUQL-UHFFFAOYSA-N
   stereo_complete: true
   structure_source: MIBIG
-  structure_source_id: mibig:BGC0000890
+  structure_source_id: mibig:BGC0000891
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
 np_classification:
   tool: NPClassifier
@@ -23,55 +23,45 @@ bgc_class:
 xrefs:
 - pubchem:324093
 producer_organisms:
-- taxon_id: NCBITaxon:1315281
-  taxon_label: Pseudoalteromonas phenolica O-BC30
-  evidence_basis: BGC_CHARACTERIZED
-  biosynthetic_gene_cluster: mibig:BGC0000890
-  source: MIBIG
-  source_version: '5'
-  notes: 'Locus evidence: Heterologous expression.'
-  evidence:
-  - reference: PMID:24974229
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000890 entry version 5; citation taken from the entry level
 - taxon_id: NCBITaxon:1353533
   taxon_label: Pseudoalteromonas luteoviolacea 2ta16
-  evidence_basis: BGC_CHARACTERIZED
+  evidence_basis: BGC_CORRELATED
   biosynthetic_gene_cluster: mibig:BGC0000891
   source: MIBIG
   source_version: '4'
   notes: 'Locus evidence: Enzymatic assays|Heterologous expression|Gene expression
-    correlated with compound production.'
+    correlated with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:24974229
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000891 entry version 4; citation taken from the entry level
+- taxon_id: NCBITaxon:1315281
+  taxon_label: Pseudoalteromonas phenolica O-BC30
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000890
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:24974229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000890 entry version 5; citation taken from the entry level
 - taxon_id: NCBITaxon:717774
   taxon_label: Marinomonas mediterranea MMB-1
   evidence_basis: SOURCE_ASSERTION
   biosynthetic_gene_cluster: mibig:BGC0001465
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:24974229
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0001465 entry version 5; citation taken from the entry level
 biosynthetic_gene_clusters:
-- accession: mibig:BGC0000890
-  entry_version: '5'
-  entry_status: active
-  organism_taxon_id: NCBITaxon:1315281
-  organism_label: Pseudoalteromonas phenolica O-BC30
-  evidence:
-  - reference: PMID:24974229
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000890 entry version 5; citation taken from the entry level
-  genome_accession: genbank:KF540211.1
-  bgc_class:
-  - OTHER
-  locus_evidence_methods:
-  - Heterologous expression
 - accession: mibig:BGC0000891
   entry_version: '4'
   entry_status: active
@@ -90,6 +80,22 @@ biosynthetic_gene_clusters:
   - Enzymatic assays
   - Heterologous expression
   - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0000890
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1315281
+  organism_label: Pseudoalteromonas phenolica O-BC30
+  evidence:
+  - reference: PMID:24974229
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000890 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KF540211.1
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0001465
   entry_version: '5'
   entry_status: active
@@ -104,17 +110,18 @@ biosynthetic_gene_clusters:
   locus_to: 4533494
   bgc_class:
   - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
-- source: MIBIG
-  source_id: BGC0000890
-  source_label: pentabromopseudilin
-  source_version: '5'
-  minted_identifier: naturalproductmech:mibig-f76ee7db7d
 - source: MIBIG
   source_id: BGC0000891
   source_label: pentabromopseudilin
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-005498ea51
+- source: MIBIG
+  source_id: BGC0000890
+  source_label: pentabromopseudilin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-f76ee7db7d
 - source: MIBIG
   source_id: BGC0001465
   source_label: pentabromopseudilin
@@ -132,7 +139,7 @@ discussions:
     BGC0001465. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:49Z'
+- timestamp: '2026-09-08T04:12:51Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

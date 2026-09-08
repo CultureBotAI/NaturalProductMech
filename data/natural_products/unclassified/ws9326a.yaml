@@ -37,7 +37,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0001297
   source: MIBIG
   source_version: '4'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:1381344
     evidence_type: DATABASE_ASSERTION
@@ -49,7 +50,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0002377
   source: MIBIG
   source_version: '2'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:33963654
     evidence_type: DATABASE_ASSERTION
@@ -68,6 +70,7 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:KT362217.1
   bgc_class:
   - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0002377
   entry_version: '2'
   entry_status: active
@@ -82,6 +85,7 @@ biosynthetic_gene_clusters:
   locus_to: 58067
   bgc_class:
   - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0001297
@@ -105,7 +109,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:46Z'
+- timestamp: '2026-09-08T04:12:48Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

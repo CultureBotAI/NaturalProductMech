@@ -29,7 +29,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0001161
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:24475038
     evidence_type: DATABASE_ASSERTION
@@ -40,7 +41,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0001162
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:24475038
     evidence_type: DATABASE_ASSERTION
@@ -51,7 +53,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0001163
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:24475038
     evidence_type: DATABASE_ASSERTION
@@ -62,7 +65,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0001164
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:24475038
     evidence_type: DATABASE_ASSERTION
@@ -82,6 +86,7 @@ biosynthetic_gene_clusters:
   locus_to: 9161
   bgc_class:
   - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0001162
   entry_version: '3'
   entry_status: active
@@ -96,6 +101,7 @@ biosynthetic_gene_clusters:
   locus_to: 9348
   bgc_class:
   - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0001163
   entry_version: '3'
   entry_status: active
@@ -110,6 +116,7 @@ biosynthetic_gene_clusters:
   locus_to: 317651
   bgc_class:
   - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0001164
   entry_version: '3'
   entry_status: active
@@ -124,6 +131,7 @@ biosynthetic_gene_clusters:
   locus_to: 2037562
   bgc_class:
   - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0001161
@@ -157,7 +165,7 @@ discussions:
     BGC0001163, BGC0001164. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:45Z'
+- timestamp: '2026-09-08T04:12:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

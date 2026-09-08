@@ -34,7 +34,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000604
   source: MIBIG
   source_version: '4'
-  notes: 'Locus evidence: Knock-out studies.'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:19338336
     evidence_type: DATABASE_ASSERTION
@@ -45,7 +46,9 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0001155
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.
+    That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the
+    taxon claim, which is a different question.'
   evidence:
   - reference: DOI:10.7164/antibiotics.44.693
     evidence_type: DATABASE_ASSERTION
@@ -66,6 +69,7 @@ biosynthetic_gene_clusters:
   - RIBOSOMAL
   locus_evidence_methods:
   - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0001155
   entry_version: '5'
   entry_status: active
@@ -85,6 +89,7 @@ biosynthetic_gene_clusters:
   - Knock-out studies
   - Enzymatic assays
   - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000604
@@ -108,7 +113,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:54Z'
+- timestamp: '2026-09-08T04:12:57Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

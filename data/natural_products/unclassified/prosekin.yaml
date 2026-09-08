@@ -23,6 +23,20 @@ np_classification:
   is_glycoside: false
 bgc_class:
 - NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:1148509
+  taxon_label: Pseudomonas prosekii LMG 26867
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002752
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Homology-based prediction. That evidence grades the LOCUS
+    as CLUSTER_PREDICTED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1128/AEM.01869-21
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002752 entry version 2; citation taken from the entry level
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0002752
   entry_version: '2'
@@ -40,6 +54,7 @@ biosynthetic_gene_clusters:
   - NRPS
   locus_evidence_methods:
   - Homology-based prediction
+  link_evidence_basis: CLUSTER_PREDICTED
 source_concepts:
 - source: MIBIG
   source_id: BGC0002752
@@ -51,7 +66,7 @@ grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most M
   compounds carry no ChEBI cross-reference.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T03:53:51Z'
+- timestamp: '2026-09-08T04:12:54Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

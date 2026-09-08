@@ -37,7 +37,9 @@ producer_organisms:
   source: MIBIG
   source_version: '5'
   notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
-    expression correlated with compound production.'
+    expression correlated with compound production. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
   evidence:
   - reference: PMID:11336289
     evidence_type: DATABASE_ASSERTION
@@ -48,7 +50,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000054
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:15257441
     evidence_type: DATABASE_ASSERTION
@@ -74,6 +77,7 @@ biosynthetic_gene_clusters:
   - Enzymatic assays
   - Heterologous expression
   - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0000054
   entry_version: '5'
   entry_status: active
@@ -87,6 +91,7 @@ biosynthetic_gene_clusters:
   bgc_class:
   - PKS
   - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000055
@@ -110,7 +115,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:52Z'
+- timestamp: '2026-09-08T04:12:55Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -26,11 +26,12 @@ xrefs:
 producer_organisms:
 - taxon_id: NCBITaxon:1048205
   taxon_label: Streptomyces uncialis
-  evidence_basis: BGC_CHARACTERIZED
+  evidence_basis: SOURCE_ASSERTION
   biosynthetic_gene_cluster: mibig:BGC0002343
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: Enzymatic assays.'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:33982054
     evidence_type: DATABASE_ASSERTION
@@ -53,6 +54,7 @@ biosynthetic_gene_clusters:
   - RIBOSOMAL
   locus_evidence_methods:
   - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0002343
@@ -64,7 +66,7 @@ grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most M
   compounds carry no ChEBI cross-reference.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T03:53:53Z'
+- timestamp: '2026-09-08T04:12:56Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

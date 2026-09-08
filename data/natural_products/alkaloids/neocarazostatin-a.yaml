@@ -29,7 +29,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0001903
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:26670080
     evidence_type: DATABASE_ASSERTION
@@ -49,6 +50,7 @@ biosynthetic_gene_clusters:
   locus_to: 19774
   bgc_class:
   - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0001903
@@ -60,7 +62,7 @@ grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most M
   compounds carry no ChEBI cross-reference.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T03:53:52Z'
+- timestamp: '2026-09-08T04:12:54Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

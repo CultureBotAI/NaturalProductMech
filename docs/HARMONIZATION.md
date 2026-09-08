@@ -84,20 +84,40 @@ failure of resolution rather than an upstream disagreement, and
 
 Two fields, two evidence bars, and the seeder never promotes one to the other.
 
-`producer_organisms` requires evidence of biosynthesis. From MIBiG, that grade
-is machine-readable: each locus carries `evidence[].method` from a controlled
-vocabulary, and `conf/producer_evidence.tsv` maps it.
+`producer_organisms` and `biosynthetic_gene_clusters` carry **two different
+claims**, and MIBiG's locus evidence grades only the second one:
 
-| `evidence_basis` | MIBiG methods |
-|---|---|
-| `BGC_CHARACTERIZED` | Heterologous expression; Knock-out studies; Enzymatic assays; In vitro expression |
-| `BGC_CORRELATED` | Gene expression correlated with compound production; Correlation of genomic and metabolomic data |
-| not producer-grade | Homology-based prediction |
+* **Does this TAXON make the compound?** That is the producer claim, and it
+  rests on the isolation literature.
+* **Does this LOCUS make it?** That is the cluster link, and it is what
+  `loci[].evidence[].method` speaks to.
 
-Both first tiers are producer claims. `BGC_CORRELATED` is the weaker one and
-stays marked as such: correlation is equally consistent with co-regulation, a
-neighbouring cluster, or a shared precursor. A method absent from the map fails
-closed rather than being admitted by default.
+They come apart constantly. Heterologous expression proves a cloned locus
+suffices in a host; it says nothing new about the native producer. A knock-out
+is different, because the locus was removed *in the native organism* and
+production stopped, so it addresses both. `conf/producer_evidence.tsv` records
+which claim each method supports, in a `supports` column, and grades them
+separately:
+
+| Method | Producer | Cluster link |
+|---|---|---|
+| Knock-out studies | `BGC_CHARACTERIZED` | `CLUSTER_DEMONSTRATED` |
+| Gene expression correlated with production | `BGC_CORRELATED` | `CLUSTER_CORRELATED` |
+| Correlation of genomic and metabolomic data | `BGC_CORRELATED` | `CLUSTER_CORRELATED` |
+| Heterologous expression | `SOURCE_ASSERTION` | `CLUSTER_DEMONSTRATED` |
+| Enzymatic assays, in vitro expression | `SOURCE_ASSERTION` | `CLUSTER_DEMONSTRATED` |
+| Homology-based prediction | `SOURCE_ASSERTION` | `CLUSTER_PREDICTED` |
+| *none stated* | `SOURCE_ASSERTION` | `CLUSTER_UNSTATED` |
+
+Folding the two together over-graded 485 producer claims as
+`BGC_CHARACTERIZED` on evidence that had never addressed the organism, while
+the whole locus-evidence distribution turned out to belong in the cluster
+column all along.
+
+`SOURCE_ASSERTION` is the commonest producer grade and that is honest rather
+than lax: MIBiG asserts production and cites a report nobody here has read. It
+sits outside `CAUSAL_BASES`, so a consumer wanting demonstrated production
+filters it out.
 
 `occurrences` requires a citation and nothing more, because it claims less.
 A LOTUS row lands here whatever taxon it names.

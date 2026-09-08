@@ -61,9 +61,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from naturalproductmech.curate.curation_event import record_curation_event  # noqa: E402
-from naturalproductmech.grading import (  # noqa: E402
-    load_producer_evidence_map,
-)
+from naturalproductmech.grading import load_evidence_map  # noqa: E402
 from naturalproductmech.validation.write_validated import (  # noqa: E402
     ValidationFailedError,
     write_validated_natural_product,
@@ -357,7 +355,12 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                     "biosynthetic_gene_cluster": f"mibig:{accession}",
                     "source": "MIBIG",
                     "source_version": row["entry_version"],
-                    "notes": (f"Locus evidence: {row['locus_evidence_methods'] or 'none stated'}."),
+                    "notes": (
+                        f"Locus evidence: {row['locus_evidence_methods'] or 'none stated'}. "
+                        f"That evidence grades the LOCUS as "
+                        f"{row.get('cluster_link_evidence_basis', 'CLUSTER_UNSTATED')}; this "
+                        f"field grades the taxon claim, which is a different question."
+                    ),
                     "evidence": mibig_evidence(row),
                 })
 
@@ -379,6 +382,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             methods = [m for m in row["locus_evidence_methods"].split("|") if m]
             if methods:
                 cluster["locus_evidence_methods"] = methods
+            if row.get("cluster_link_evidence_basis"):
+                cluster["link_evidence_basis"] = row["cluster_link_evidence_basis"]
             clusters.append(cluster)
 
         if bgc_classes:
@@ -535,8 +540,10 @@ def main() -> int:
     if not records:
         print("no inventories in data/raw/, so nothing to seed.")
         print("This is the expected M1 state: the extractors are M2 (PLAN.md section 7).")
-        print(f"producer-evidence grades loaded: "
-              f"{sorted(set(load_producer_evidence_map().values()))}")
+        loaded = load_evidence_map()
+        print(f"evidence methods loaded: {len(loaded)}; producer grades "
+              f"{sorted({v['producer_basis'] for v in loaded.values() if v['producer_basis']})}; "
+              f"cluster grades {sorted({v['cluster_basis'] for v in loaded.values()})}")
         return 0
 
     counts = Counter(doc["np_pathway"] for doc in records)

@@ -29,11 +29,12 @@ xrefs:
 producer_organisms:
 - taxon_id: NCBITaxon:285574
   taxon_label: Streptomyces erythrochromogenes
-  evidence_basis: BGC_CHARACTERIZED
+  evidence_basis: SOURCE_ASSERTION
   biosynthetic_gene_cluster: mibig:BGC0001851
   source: MIBIG
   source_version: '4'
-  notes: 'Locus evidence: Enzymatic assays.'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: DOI:10.1021/acschembio.9b00238
     evidence_type: DATABASE_ASSERTION
@@ -41,11 +42,12 @@ producer_organisms:
       level
 - taxon_id: NCBITaxon:1463904
   taxon_label: Streptomyces sp. NRRL S-378
-  evidence_basis: BGC_CHARACTERIZED
+  evidence_basis: SOURCE_ASSERTION
   biosynthetic_gene_cluster: mibig:BGC0001852
   source: MIBIG
   source_version: '4'
-  notes: 'Locus evidence: Enzymatic assays.'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: DOI:10.1021/acschembio.9b00238
     evidence_type: DATABASE_ASSERTION
@@ -69,6 +71,7 @@ biosynthetic_gene_clusters:
   - PKS
   locus_evidence_methods:
   - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0001852
   entry_version: '4'
   entry_status: active
@@ -87,6 +90,7 @@ biosynthetic_gene_clusters:
   - SACCHARIDE
   locus_evidence_methods:
   - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0001851
@@ -110,7 +114,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:52Z'
+- timestamp: '2026-09-08T04:12:54Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

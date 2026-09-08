@@ -1,17 +1,17 @@
-identifier: naturalproductmech:mibig-c376f70f60
+identifier: naturalproductmech:mibig-968f351cc5
 label: benzylpenicillin
 chemical_structure:
-  smiles: '[Na+].[H][C@]12SC(C)(C)[C@@H](N1C(=O)[C@H]2NC(=O)Cc1ccccc1)C([O-])=O'
+  smiles: CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)CC3=CC=CC=C3)C(=O)[O-])C.[Na+]
   standard_inchi: InChI=1S/C16H18N2O4S.Na/c1-16(2)12(15(21)22)18-13(20)11(14(18)23-16)17-10(19)8-9-6-4-3-5-7-9;/h3-7,11-12,14H,8H2,1-2H3,(H,17,19)(H,21,22);/q;+1/p-1/t11-,12+,14-;/m1./s1
   standard_inchi_key: FCPVYOBCFFNJFS-LQDWTQKMSA-M
   stereo_complete: true
   structure_source: MIBIG
-  structure_source_id: mibig:BGC0000405
+  structure_source_id: mibig:BGC0000404
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
 synonyms:
 - value: penicillin
   synonym_type: RELATED_SYNONYM
-  source: mibig:BGC0000405
+  source: mibig:BGC0000404
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -25,33 +25,49 @@ np_classification:
 bgc_class:
 - NRPS
 xrefs:
-- chebi:51765
 - pubchem:23668834
+- chebi:51765
 producer_organisms:
-- taxon_id: NCBITaxon:5076
-  taxon_label: Penicillium chrysogenum
-  evidence_basis: BGC_CHARACTERIZED
-  biosynthetic_gene_cluster: mibig:BGC0000405
-  source: MIBIG
-  source_version: '5'
-  notes: 'Locus evidence: Enzymatic assays.'
-  evidence:
-  - reference: PMID:1368505
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000405 entry version 5; citation taken from the entry level
 - taxon_id: NCBITaxon:5076
   taxon_label: Penicillium chrysogenum
   evidence_basis: SOURCE_ASSERTION
   biosynthetic_gene_cluster: mibig:BGC0000404
   source: MIBIG
   source_version: '4'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: DOI:10.1016/s0140-6736(00)87452-8
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000404 entry version 4; citation taken from the compound bioactivity
       level
+- taxon_id: NCBITaxon:5076
+  taxon_label: Penicillium chrysogenum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000405
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:1368505
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000405 entry version 5; citation taken from the entry level
 biosynthetic_gene_clusters:
+- accession: mibig:BGC0000404
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5076
+  organism_label: Penicillium chrysogenum
+  evidence:
+  - reference: DOI:10.1016/s0140-6736(00)87452-8
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000404 entry version 4; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:DQ192518.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0000405
   entry_version: '5'
   entry_status: active
@@ -66,30 +82,18 @@ biosynthetic_gene_clusters:
   - NRPS
   locus_evidence_methods:
   - Enzymatic assays
-- accession: mibig:BGC0000404
-  entry_version: '4'
-  entry_status: active
-  organism_taxon_id: NCBITaxon:5076
-  organism_label: Penicillium chrysogenum
-  evidence:
-  - reference: DOI:10.1016/s0140-6736(00)87452-8
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000404 entry version 4; citation taken from the compound bioactivity
-      level
-  genome_accession: genbank:DQ192518.1
-  bgc_class:
-  - NRPS
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
-- source: MIBIG
-  source_id: BGC0000405
-  source_label: benzylpenicillin
-  source_version: '5'
-  minted_identifier: naturalproductmech:mibig-c376f70f60
 - source: MIBIG
   source_id: BGC0000404
   source_label: penicillin
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-968f351cc5
+- source: MIBIG
+  source_id: BGC0000405
+  source_label: benzylpenicillin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c376f70f60
 grounding_status: MINTED
 grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
   compounds carry no ChEBI cross-reference.
@@ -102,7 +106,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:47Z'
+- timestamp: '2026-09-08T04:12:49Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

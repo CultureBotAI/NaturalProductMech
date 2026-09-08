@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-9f24944a63
+identifier: naturalproductmech:mibig-78ea4c55fb
 label: youssoufene A1
 chemical_structure:
   smiles: C/C=C/C=C\C=C\C=C/C1=CC=CC=C1[C@@H](CC(=O)O)[C@@H]1C=C/C(=C\CC(=O)O)[C@@H](/C=C\C=C\C=C/C=C/C)C1
@@ -6,7 +6,7 @@ chemical_structure:
   standard_inchi_key: PBGNPVWDTRYFBH-GSOXOQHNSA-N
   stereo_complete: true
   structure_source: MIBIG
-  structure_source_id: mibig:BGC0002510
+  structure_source_id: mibig:BGC0002547
 np_pathway: POLYKETIDES
 np_classification:
   tool: NPClassifier
@@ -22,45 +22,32 @@ bgc_class:
 xrefs:
 - npatlas:NPA032222
 producer_organisms:
-- taxon_id: NCBITaxon:1931
-  taxon_label: Streptomyces sp.
-  evidence_basis: BGC_CHARACTERIZED
-  biosynthetic_gene_cluster: mibig:BGC0002510
-  source: MIBIG
-  source_version: '2'
-  notes: 'Locus evidence: Heterologous expression.'
-  evidence:
-  - reference: PMID:32860295
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0002510 entry version 2; citation taken from the entry level
 - taxon_id: NCBITaxon:654447
   taxon_label: Streptomyces youssoufiensis
   evidence_basis: BGC_CHARACTERIZED
   biosynthetic_gene_cluster: mibig:BGC0002547
   source: MIBIG
   source_version: '2'
-  notes: 'Locus evidence: Knock-out studies.'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:31891272
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0002547 entry version 2; citation taken from the entry level
-biosynthetic_gene_clusters:
-- accession: mibig:BGC0002510
-  entry_version: '2'
-  entry_status: active
-  organism_taxon_id: NCBITaxon:1931
-  organism_label: Streptomyces sp.
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002510
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
   evidence:
   - reference: PMID:32860295
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0002510 entry version 2; citation taken from the entry level
-  genome_accession: genbank:MT459140.1
-  locus_from: 71
-  locus_to: 11851
-  bgc_class:
-  - PKS
-  locus_evidence_methods:
-  - Heterologous expression
+biosynthetic_gene_clusters:
 - accession: mibig:BGC0002547
   entry_version: '2'
   entry_status: active
@@ -77,17 +64,35 @@ biosynthetic_gene_clusters:
   - PKS
   locus_evidence_methods:
   - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0002510
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: PMID:32860295
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002510 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MT459140.1
+  locus_from: 71
+  locus_to: 11851
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
-- source: MIBIG
-  source_id: BGC0002510
-  source_label: youssoufene A1
-  source_version: '2'
-  minted_identifier: naturalproductmech:mibig-9f24944a63
 - source: MIBIG
   source_id: BGC0002547
   source_label: youssoufene A1
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-78ea4c55fb
+- source: MIBIG
+  source_id: BGC0002510
+  source_label: youssoufene A1
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-9f24944a63
 grounding_status: MINTED
 grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
   compounds carry no ChEBI cross-reference.
@@ -100,7 +105,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:50Z'
+- timestamp: '2026-09-08T04:12:53Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

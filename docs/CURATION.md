@@ -73,6 +73,13 @@ host–symbiont trap: sponge, tunicate, lichen and endophyte metabolites whose
 real producer is a microorganism. When it is unresolved, that is a
 `Discussion`, not a producer claim.
 
+**A cluster grade read as a producer grade.** `BGC_CHARACTERIZED` on a
+producer means evidence addressed *this organism*; `CLUSTER_DEMONSTRATED` on a
+gene cluster means evidence addressed *this locus*. A record can carry the
+second without the first, and 485 producer claims once carried the first on the
+strength of the second. When curating, check which question the cited
+experiment answered.
+
 **Computed presented as asserted.** `np_pathway` and `np_classification` are
 NPClassifier's output and say so, with the model version. Upgrading a
 `BGC_CORRELATED` producer to `BGC_CHARACTERIZED` is the same error one level

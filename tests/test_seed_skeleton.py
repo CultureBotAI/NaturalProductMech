@@ -16,8 +16,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from naturalproductmech.grading import (  # noqa: E402
     CAUSAL_BASES,
+    grade_cluster_link,
     grade_production,
-    load_producer_evidence_map,
+    load_evidence_map,
 )
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -45,66 +46,77 @@ def test_minting_ignores_the_label():
     assert a.startswith("naturalproductmech:mibig-")
 
 
-def test_producer_evidence_map_covers_the_mibig_vocabulary():
-    mapping = load_producer_evidence_map()
-    assert mapping["Knock-out studies"] == "BGC_CHARACTERIZED"
-    assert mapping["Heterologous expression"] == "BGC_CHARACTERIZED"
-    assert mapping["Gene expression correlated with compound production"] == "BGC_CORRELATED"
-    assert mapping["Correlation of genomic and metabolomic data"] == "BGC_CORRELATED"
-    assert mapping["Homology-based prediction"] == "NOT_PRODUCER_GRADE"
+def test_the_table_grades_two_different_claims():
+    mapping = load_evidence_map()
+    assert mapping["Knock-out studies"]["supports"] == "organism+cluster"
+    assert mapping["Heterologous expression"]["supports"] == "cluster"
+    assert mapping["Homology-based prediction"]["supports"] == "neither"
 
 
-def test_homology_prediction_is_not_a_producer_claim():
-    """A prediction is not evidence of production, so the claim is withheld
-    rather than downgraded. Applies to 2 active MIBiG entries."""
-    mapping = load_producer_evidence_map()
-    assert grade_production(["Homology-based prediction"], mapping) is None
+def test_heterologous_expression_does_not_grade_the_organism_claim():
+    """The finding this split exists for.
 
-
-def test_no_stated_method_is_a_source_assertion_not_a_rejection():
-    """The case that decides most of the corpus: 1,627 of MIBiG's 2,437 active
-    entries state no locus evidence method at all.
-
-    Dropping them would discard two thirds of the anchor source over a field
-    MIBiG does not fill. Promoting them would claim experiments nobody
-    reported. SOURCE_ASSERTION is the honest middle, and it is deliberately
-    NOT in CAUSAL_BASES, so a consumer wanting demonstrated production
-    filters it out.
+    Heterologous expression proves a cloned locus suffices in a host. It says
+    nothing new about whether the SOURCE organism makes the compound, which
+    rests on the isolation report either way. Folding the two together graded
+    485 producer claims BGC_CHARACTERIZED on evidence that never addressed the
+    organism.
     """
-    mapping = load_producer_evidence_map()
-    assert grade_production([], mapping) == "SOURCE_ASSERTION"
-    assert "SOURCE_ASSERTION" not in CAUSAL_BASES
+    mapping = load_evidence_map()
+    assert grade_production(["Heterologous expression"], mapping) == "SOURCE_ASSERTION"
+    assert grade_cluster_link(["Heterologous expression"], mapping) == "CLUSTER_DEMONSTRATED"
 
 
-def test_the_strongest_basis_wins_when_a_locus_has_several():
-    mapping = load_producer_evidence_map()
-    methods = ["Correlation of genomic and metabolomic data", "Knock-out studies"]
-    assert grade_production(methods, mapping) == "BGC_CHARACTERIZED"
+def test_a_knockout_grades_both_claims():
+    """The locus was removed in the native organism and production stopped."""
+    mapping = load_evidence_map()
+    assert grade_production(["Knock-out studies"], mapping) == "BGC_CHARACTERIZED"
+    assert grade_cluster_link(["Knock-out studies"], mapping) == "CLUSTER_DEMONSTRATED"
 
 
-def test_correlation_alone_stays_correlational():
-    """The finding behind issue #3: this must not silently become CHARACTERIZED."""
-    mapping = load_producer_evidence_map()
-    assert grade_production(["Gene expression correlated with compound production"],
-                            mapping) == "BGC_CORRELATED"
+def test_correlation_measured_in_the_organism_grades_both_but_weakly():
+    mapping = load_evidence_map()
+    method = "Gene expression correlated with compound production"
+    assert grade_production([method], mapping) == "BGC_CORRELATED"
+    assert grade_cluster_link([method], mapping) == "CLUSTER_CORRELATED"
     assert "BGC_CORRELATED" not in CAUSAL_BASES
 
 
-def test_an_unknown_evidence_method_fails_closed():
-    """A vocabulary that grew upstream should be looked at, not admitted.
+def test_no_stated_method_is_a_source_assertion_with_an_unstated_link():
+    """1,627 of MIBiG's 2,437 active entries. The legacy-format backlog: the
+    annotation is missing, not the claim."""
+    mapping = load_evidence_map()
+    assert grade_production([], mapping) == "SOURCE_ASSERTION"
+    assert grade_cluster_link([], mapping) == "CLUSTER_UNSTATED"
+    assert "SOURCE_ASSERTION" not in CAUSAL_BASES
 
-    Note this is NOT the empty case: a method that is present and unrecognised
-    withholds the claim, while no method at all is a source assertion.
-    """
-    mapping = load_producer_evidence_map()
-    assert grade_production(["Vibes"], mapping) is None
+
+def test_homology_predicts_the_locus_and_leaves_the_taxon_claim_alone():
+    """A prediction is not a demonstration of anything, but the organism still
+    makes the compound — somebody isolated it."""
+    mapping = load_evidence_map()
+    assert grade_production(["Homology-based prediction"], mapping) == "SOURCE_ASSERTION"
+    assert grade_cluster_link(["Homology-based prediction"], mapping) == "CLUSTER_PREDICTED"
+
+
+def test_the_strongest_basis_wins_when_a_locus_has_several():
+    mapping = load_evidence_map()
+    methods = ["Correlation of genomic and metabolomic data", "Knock-out studies"]
+    assert grade_production(methods, mapping) == "BGC_CHARACTERIZED"
+    assert grade_cluster_link(methods, mapping) == "CLUSTER_DEMONSTRATED"
+
+
+def test_an_unknown_method_fails_closed_on_both_claims():
+    mapping = load_evidence_map()
+    assert grade_production(["Vibes"], mapping) == "SOURCE_ASSERTION"
+    assert grade_cluster_link(["Vibes"], mapping) == "CLUSTER_UNSTATED"
 
 
 def test_the_extractor_and_the_seeder_grade_identically():
-    """One implementation, imported by both. They briefly disagreed about the
-    empty case, which is the largest bucket in the source."""
-    import extract_mibig_module as extractor  # noqa: F401 - imported for its side effect
+    """One implementation, imported by both."""
+    import extract_mibig_module as extractor
     assert extractor.grade_production is grade_production
+    assert extractor.grade_cluster_link is grade_cluster_link
 
 
 def test_one_pathway_files_the_record():
@@ -170,6 +182,7 @@ def test_a_mibig_row_becomes_a_record_with_its_producer_and_cluster():
         "genome_accession": "AB000000.1", "locus_from": "1", "locus_to": "100",
         "locus_evidence_methods": "Knock-out studies",
         "producer_evidence_basis": "BGC_CHARACTERIZED",
+        "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
         "primary_reference": "PMID:12345678", "reference_basis": "ENTRY",
     }
     records = seed.build_records({"mibig_compounds": [row]})
@@ -202,7 +215,8 @@ def test_a_row_with_no_producer_grade_still_becomes_a_record_without_a_producer(
         "bgc_classes": "", "bgc_subclasses": "",
         "genome_accession": "", "locus_from": "0", "locus_to": "0",
         "locus_evidence_methods": "Homology-based prediction",
-        "producer_evidence_basis": "", "primary_reference": "PMID:1", "reference_basis": "ENTRY",
+        "producer_evidence_basis": "", "cluster_link_evidence_basis": "CLUSTER_PREDICTED",
+        "primary_reference": "PMID:1", "reference_basis": "ENTRY",
     }
     records = seed.build_records({"mibig_compounds": [row]})
     assert len(records) == 1
@@ -224,6 +238,7 @@ def test_evidence_objects_are_not_shared_between_claims():
         "genome_accession": "", "locus_from": "0", "locus_to": "0",
         "locus_evidence_methods": "Knock-out studies",
         "producer_evidence_basis": "BGC_CHARACTERIZED",
+        "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
         "primary_reference": "PMID:1", "reference_basis": "ENTRY",
     }
     doc = seed.build_records({"mibig_compounds": [row]})[0]

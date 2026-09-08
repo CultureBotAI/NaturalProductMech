@@ -30,18 +30,22 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000468
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: Knock-out studies|Heterologous expression.'
+  notes: 'Locus evidence: Knock-out studies|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
   evidence:
   - reference: PMID:19115340
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000468 entry version 5; citation taken from the entry level
 - taxon_id: NCBITaxon:1109705
   taxon_label: Streptomyces sp. BC16019
-  evidence_basis: BGC_CHARACTERIZED
+  evidence_basis: SOURCE_ASSERTION
   biosynthetic_gene_cluster: mibig:BGC0000469
   source: MIBIG
   source_version: '6'
-  notes: 'Locus evidence: Heterologous expression.'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
   evidence:
   - reference: PMID:23021914
     evidence_type: DATABASE_ASSERTION
@@ -64,6 +68,7 @@ biosynthetic_gene_clusters:
   locus_evidence_methods:
   - Knock-out studies
   - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0000469
   entry_version: '6'
   entry_status: active
@@ -80,6 +85,7 @@ biosynthetic_gene_clusters:
   - RIBOSOMAL
   locus_evidence_methods:
   - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000468
@@ -103,7 +109,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:49Z'
+- timestamp: '2026-09-08T04:12:51Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

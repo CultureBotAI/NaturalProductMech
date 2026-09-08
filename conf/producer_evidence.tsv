@@ -1,27 +1,40 @@
-# How a source's own evidence vocabulary grades a production claim.
+# How a source's evidence vocabulary grades TWO DIFFERENT CLAIMS.
 #
-# Read by src/naturalproductmech/grading.py, which both the MIBiG extractor and
-# the seeder import. One implementation, because the two briefly disagreed
-# about the case below and that is the largest bucket in the source.
+# Read by src/naturalproductmech/grading.py, which the MIBiG extractor and the
+# seeder both import. One implementation, because two copies once disagreed
+# about the empty case and that is the largest bucket in the source.
 #
-# THE CASE THIS TABLE CANNOT EXPRESS, and the one that decides most of the
-# corpus: an entry with loci but NO stated evidence method. Measured against
-# MIBiG 4.0, that is 1,627 of 2,437 active entries. It is graded
-# SOURCE_ASSERTION — MIBiG asserts the cluster produces the compound in that
-# organism without stating the experiment. Dropping those would discard two
-# thirds of the anchor source over a field MIBiG does not fill; promoting them
-# would claim experiments nobody reported. SOURCE_ASSERTION is deliberately
-# outside CAUSAL_BASES, so a consumer wanting demonstrated production filters
-# it out.
+# THE DISTINCTION THIS TABLE EXISTS FOR. MIBiG's locus evidence grades whether
+# a LOCUS makes a compound. `producer_organisms` claims something else: that a
+# TAXON makes it. They come apart constantly.
 #
-# A method present but absent from this table fails closed: the claim is
-# withheld, because a vocabulary that grew upstream should be looked at.
+#   Heterologous expression proves a cloned locus suffices in a host. It says
+#   nothing new about whether the source organism makes the compound — that
+#   rests on the isolation report, as it did before anyone cloned anything.
 #
-mibig_method	evidence_basis	rationale
-Heterologous expression	BGC_CHARACTERIZED	The cluster is sufficient for the compound in a host that otherwise does not make it.
-Knock-out studies	BGC_CHARACTERIZED	The cluster is necessary: removing it removes the compound.
-Enzymatic assays	BGC_CHARACTERIZED	The encoded enzymes perform the chemistry.
-In vitro expression	BGC_CHARACTERIZED	As enzymatic assays, reconstituted in vitro.
-Gene expression correlated with compound production	BGC_CORRELATED	Expression and production move together. Consistent with this cluster being responsible, and equally consistent with co-regulation or a neighbouring cluster.
-Correlation of genomic and metabolomic data	BGC_CORRELATED	Cross-sample correlation. Same caveat: association, not demonstration.
-Homology-based prediction	NOT_PRODUCER_GRADE	A prediction from sequence similarity. Never written to producer_organisms; the record goes to the worklist.
+#   A knock-out is different: the locus was removed IN THE NATIVE ORGANISM and
+#   production stopped. That speaks to both claims.
+#
+# Folding the two together graded 485 producer claims BGC_CHARACTERIZED on
+# evidence that never addressed the organism. `supports` is what keeps them
+# apart: `organism+cluster` methods set the producer basis, `cluster` methods
+# set only the cluster's link_evidence_basis.
+#
+# THE CASE THE TABLE CANNOT EXPRESS: an entry with loci but NO stated method.
+# That is 1,627 of MIBiG's 2,437 active entries, all legacy-format, whose
+# structured evidence was never migrated. The cluster link grades
+# CLUSTER_UNSTATED and the producer grades SOURCE_ASSERTION — the taxon claim
+# still rests on the cited isolation literature, which is the right kind of
+# evidence for it.
+#
+# A method present but absent from this table fails closed on both claims: a
+# vocabulary that grew upstream should be looked at, not waved through.
+#
+mibig_method	supports	producer_basis	cluster_basis	rationale
+Knock-out studies	organism+cluster	BGC_CHARACTERIZED	CLUSTER_DEMONSTRATED	The locus was removed in the native organism and production stopped. Necessity, and it addresses both claims.
+Gene expression correlated with compound production	organism+cluster	BGC_CORRELATED	CLUSTER_CORRELATED	Measured in the native organism, so it speaks to both, but correlation is not demonstration.
+Correlation of genomic and metabolomic data	organism+cluster	BGC_CORRELATED	CLUSTER_CORRELATED	Across-sample correlation. Same caveat, weaker still.
+Heterologous expression	cluster		CLUSTER_DEMONSTRATED	The locus suffices in a host that otherwise does not make the compound. Strong for the cluster; adds nothing about the native producer.
+Enzymatic assays	cluster		CLUSTER_DEMONSTRATED	The encoded enzymes perform the chemistry in vitro. About the locus, not the organism.
+In vitro expression	cluster		CLUSTER_DEMONSTRATED	As enzymatic assays, reconstituted in vitro.
+Homology-based prediction	neither		CLUSTER_PREDICTED	A prediction from sequence similarity. Not evidence of production by anything.

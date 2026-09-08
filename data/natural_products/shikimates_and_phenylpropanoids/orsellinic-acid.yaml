@@ -39,7 +39,8 @@ producer_organisms:
   source: MIBIG
   source_version: '5'
   notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
-    production.'
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:20174687
     evidence_type: DATABASE_ASSERTION
@@ -51,7 +52,8 @@ producer_organisms:
   source: MIBIG
   source_version: '2'
   notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
-    production.'
+    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
+    grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:25011010
     evidence_type: DATABASE_ASSERTION
@@ -62,7 +64,9 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0002812
   source: MIBIG
   source_version: '2'
-  notes: 'Locus evidence: Correlation of genomic and metabolomic data.'
+  notes: 'Locus evidence: Correlation of genomic and metabolomic data. That evidence
+    grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim, which
+    is a different question.'
   evidence:
   - reference: DOI:10.1016/j.ymben.2023.10.002
     evidence_type: DATABASE_ASSERTION
@@ -74,7 +78,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0002212
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: DOI:10.1126/sciadv.aar5459
     evidence_type: DATABASE_ASSERTION
@@ -86,7 +91,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0002596
   source: MIBIG
   source_version: '2'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:33130255
     evidence_type: DATABASE_ASSERTION
@@ -109,6 +115,7 @@ biosynthetic_gene_clusters:
   locus_evidence_methods:
   - Knock-out studies
   - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0002594
   entry_version: '2'
   entry_status: active
@@ -126,6 +133,7 @@ biosynthetic_gene_clusters:
   locus_evidence_methods:
   - Knock-out studies
   - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0002812
   entry_version: '2'
   entry_status: active
@@ -144,6 +152,7 @@ biosynthetic_gene_clusters:
   - TERPENE
   locus_evidence_methods:
   - Correlation of genomic and metabolomic data
+  link_evidence_basis: CLUSTER_CORRELATED
 - accession: mibig:BGC0002212
   entry_version: '3'
   entry_status: active
@@ -160,6 +169,7 @@ biosynthetic_gene_clusters:
   bgc_class:
   - PKS
   - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0002596
   entry_version: '2'
   entry_status: active
@@ -175,6 +185,7 @@ biosynthetic_gene_clusters:
   bgc_class:
   - PKS
   - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000057
@@ -213,7 +224,7 @@ discussions:
     BGC0002594, BGC0002596, BGC0002812. Confirm they describe the same compound rather
     than an upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:45Z'
+- timestamp: '2026-09-08T04:12:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

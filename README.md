@@ -46,7 +46,7 @@ by curation status:
   SEEDED                               3115
 
 field coverage (records carrying at least one item):
-  producer_organisms                   3113
+  producer_organisms                   3115
   occurrences                             0
   biosynthetic_gene_clusters           3115
   biosynthetic_pathway                    0
@@ -57,14 +57,21 @@ field coverage (records carrying at least one item):
   related_records                         0
   discussions                           238
 
-producer claims: 3447 (1352 causal, 110 correlational)
-  BGC_CHARACTERIZED                    1352
-  BGC_CORRELATED                        110
-  SOURCE_ASSERTION                     1985
+producer claims: 3449 (806 causal, 171 correlational)
+  BGC_CHARACTERIZED                     806
+  BGC_CORRELATED                        171
+  SOURCE_ASSERTION                     2472
 
-A correlational producer claim is a real claim and a weaker one. Any
-figure answering 'which organisms are known to make this?' should say
-which of the two it counted.
+cluster link claims: 3449 (1352 demonstrated)
+  CLUSTER_CORRELATED                    110
+  CLUSTER_DEMONSTRATED                 1352
+  CLUSTER_PREDICTED                       2
+  CLUSTER_UNSTATED                     1985
+
+These grade two different questions and they come apart. A producer
+claim says this TAXON makes the compound; a cluster link says this
+LOCUS does. Heterologous expression settles the second and leaves the
+first exactly where the isolation report left it.
 ```
 
 <!-- END GENERATED CORPUS STATS -->

@@ -29,7 +29,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000658
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:17369815
     evidence_type: DATABASE_ASSERTION
@@ -40,7 +41,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000659
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:17369815
     evidence_type: DATABASE_ASSERTION
@@ -60,6 +62,7 @@ biosynthetic_gene_clusters:
   locus_to: 1492896
   bgc_class:
   - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0000659
   entry_version: '3'
   entry_status: active
@@ -74,6 +77,7 @@ biosynthetic_gene_clusters:
   locus_to: 4077099
   bgc_class:
   - TERPENE
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000658
@@ -97,7 +101,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:49Z'
+- timestamp: '2026-09-08T04:12:51Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

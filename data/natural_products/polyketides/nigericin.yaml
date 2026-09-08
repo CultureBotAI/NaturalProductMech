@@ -1,12 +1,12 @@
-identifier: naturalproductmech:mibig-1e3de4e3cc
+identifier: naturalproductmech:mibig-9f4dbb8751
 label: nigericin
 chemical_structure:
-  smiles: C[C@H]1CC[C@@H](O[C@H]1[C@@H](C)C(=O)O)C[C@@H]2C[C@H]([C@H]([C@@]3(O2)[C@@H](C[C@@](O3)(C)[C@H]4CC[C@@](O4)(C)[C@H]5[C@H](C[C@@H](O5)[C@@H]6[C@H](C[C@H]([C@@](O6)(CO)O)C)C)C)C)C)OC
+  smiles: '[H][C@](C)(C(O)=O)[C@]1([H])O[C@@H](C[C@@H]2C[C@@H](OC)[C@@H](C)[C@@]3(O[C@@](C)(C[C@H]3C)[C@@]3([H])CC[C@](C)(O3)[C@]3([H])O[C@]([H])(C[C@@H]3C)[C@@]3([H])O[C@@](O)(CO)[C@H](C)C[C@@H]3C)O2)CC[C@@H]1C'
   standard_inchi: InChI=1S/C40H68O11/c1-21-11-12-28(46-33(21)26(6)36(42)43)17-29-18-30(45-10)27(7)40(48-29)25(5)19-38(9,51-40)32-13-14-37(8,49-32)35-23(3)16-31(47-35)34-22(2)15-24(4)39(44,20-41)50-34/h21-35,41,44H,11-20H2,1-10H3,(H,42,43)/t21-,22-,23-,24+,25+,26+,27+,28+,29+,30+,31+,32+,33+,34-,35+,37-,38-,39-,40+/m0/s1
   standard_inchi_key: DANUORFCFTYTSZ-SJSJOXFOSA-N
   stereo_complete: true
   structure_source: MIBIG
-  structure_source_id: mibig:BGC0002038
+  structure_source_id: mibig:BGC0000114
 np_pathway: POLYKETIDES
 np_classification:
   tool: NPClassifier
@@ -21,34 +21,52 @@ np_classification:
 bgc_class:
 - PKS
 xrefs:
-- npatlas:NPA001792
 - npatlas:NPA01792
 - pubchem:34230
+- npatlas:NPA001792
 producer_organisms:
-- taxon_id: NCBITaxon:2583819
-  taxon_label: Streptomyces sp. DASNCL29
-  evidence_basis: BGC_CHARACTERIZED
-  biosynthetic_gene_cluster: mibig:BGC0002038
-  source: MIBIG
-  source_version: '2'
-  notes: 'Locus evidence: Enzymatic assays.'
-  evidence:
-  - reference: DOI:10.1093/jac/dki470
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0002038 entry version 2; citation taken from the compound bioactivity
-      level
 - taxon_id: NCBITaxon:68280
   taxon_label: Streptomyces violaceusniger
   evidence_basis: BGC_CORRELATED
   biosynthetic_gene_cluster: mibig:BGC0000114
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: Gene expression correlated with compound production.'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
   evidence:
   - reference: PMID:17584617
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000114 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:2583819
+  taxon_label: Streptomyces sp. DASNCL29
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002038
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1093/jac/dki470
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002038 entry version 2; citation taken from the compound bioactivity
+      level
 biosynthetic_gene_clusters:
+- accession: mibig:BGC0000114
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:68280
+  organism_label: Streptomyces violaceusniger
+  evidence:
+  - reference: PMID:17584617
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000114 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ354110.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
 - accession: mibig:BGC0002038
   entry_version: '2'
   entry_status: active
@@ -66,31 +84,18 @@ biosynthetic_gene_clusters:
   - PKS
   locus_evidence_methods:
   - Enzymatic assays
-- accession: mibig:BGC0000114
-  entry_version: '5'
-  entry_status: active
-  organism_taxon_id: NCBITaxon:68280
-  organism_label: Streptomyces violaceusniger
-  evidence:
-  - reference: PMID:17584617
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000114 entry version 5; citation taken from the entry level
-  genome_accession: genbank:DQ354110.1
-  bgc_class:
-  - PKS
-  locus_evidence_methods:
-  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
-- source: MIBIG
-  source_id: BGC0002038
-  source_label: nigericin
-  source_version: '2'
-  minted_identifier: naturalproductmech:mibig-1e3de4e3cc
 - source: MIBIG
   source_id: BGC0000114
   source_label: nigericin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-9f4dbb8751
+- source: MIBIG
+  source_id: BGC0002038
+  source_label: nigericin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-1e3de4e3cc
 grounding_status: MINTED
 grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
   compounds carry no ChEBI cross-reference.
@@ -103,7 +108,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:46Z'
+- timestamp: '2026-09-08T04:12:48Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

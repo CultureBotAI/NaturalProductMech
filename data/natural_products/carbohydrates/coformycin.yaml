@@ -31,29 +31,21 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0002435
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: Heterologous expression|Knock-out studies|Enzymatic assays.'
+  notes: 'Locus evidence: Heterologous expression|Knock-out studies|Enzymatic assays.
+    That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the
+    taxon claim, which is a different question.'
   evidence:
   - reference: PMID:30217843
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0002435 entry version 3; citation taken from the entry level
-- taxon_id: NCBITaxon:212423
-  taxon_label: Streptomyces kaniharaensis
-  evidence_basis: BGC_CHARACTERIZED
-  biosynthetic_gene_cluster: mibig:BGC0002462
-  source: MIBIG
-  source_version: '3'
-  notes: 'Locus evidence: Heterologous expression|Enzymatic assays.'
-  evidence:
-  - reference: PMID:32350138
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0002462 entry version 3; citation taken from the entry level
 - taxon_id: NCBITaxon:1311815
   taxon_label: Nocardia interforma ATCC 21072
   evidence_basis: SOURCE_ASSERTION
   biosynthetic_gene_cluster: mibig:BGC0002039
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: DOI:10.1128/aac.42.6.1424
     evidence_type: DATABASE_ASSERTION
@@ -65,12 +57,26 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0002040
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: DOI:10.1128/aac.42.6.1424
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0002040 entry version 3; citation taken from the compound bioactivity
       level
+- taxon_id: NCBITaxon:212423
+  taxon_label: Streptomyces kaniharaensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002462
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: Heterologous expression|Enzymatic assays. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: PMID:32350138
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002462 entry version 3; citation taken from the entry level
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0002435
   entry_version: '3'
@@ -90,6 +96,37 @@ biosynthetic_gene_clusters:
   - Heterologous expression
   - Knock-out studies
   - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0002039
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1311815
+  organism_label: Nocardia interforma ATCC 21072
+  evidence:
+  - reference: DOI:10.1128/aac.42.6.1424
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002039 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KY682079.1
+  locus_from: 1
+  locus_to: 30309
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0002040
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:212423
+  organism_label: Streptomyces kaniharaensis
+  evidence:
+  - reference: DOI:10.1128/aac.42.6.1424
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002040 entry version 3; citation taken from the compound bioactivity
+      level
+  genome_accession: genbank:KY705052.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0002462
   entry_version: '3'
   entry_status: active
@@ -108,47 +145,13 @@ biosynthetic_gene_clusters:
   locus_evidence_methods:
   - Heterologous expression
   - Enzymatic assays
-- accession: mibig:BGC0002039
-  entry_version: '3'
-  entry_status: active
-  organism_taxon_id: NCBITaxon:1311815
-  organism_label: Nocardia interforma ATCC 21072
-  evidence:
-  - reference: DOI:10.1128/aac.42.6.1424
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0002039 entry version 3; citation taken from the compound bioactivity
-      level
-  genome_accession: genbank:KY682079.1
-  locus_from: 1
-  locus_to: 30309
-  bgc_class:
-  - OTHER
-  - SACCHARIDE
-- accession: mibig:BGC0002040
-  entry_version: '3'
-  entry_status: active
-  organism_taxon_id: NCBITaxon:212423
-  organism_label: Streptomyces kaniharaensis
-  evidence:
-  - reference: DOI:10.1128/aac.42.6.1424
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0002040 entry version 3; citation taken from the compound bioactivity
-      level
-  genome_accession: genbank:KY705052.1
-  bgc_class:
-  - OTHER
-  - SACCHARIDE
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0002435
   source_label: coformycin
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-baf2fe191c
-- source: MIBIG
-  source_id: BGC0002462
-  source_label: coformycin
-  source_version: '3'
-  minted_identifier: naturalproductmech:mibig-74918e213b
 - source: MIBIG
   source_id: BGC0002039
   source_label: coformycin
@@ -159,6 +162,11 @@ source_concepts:
   source_label: coformycin
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-379b7e5de2
+- source: MIBIG
+  source_id: BGC0002462
+  source_label: coformycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-74918e213b
 grounding_status: MINTED
 grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
   compounds carry no ChEBI cross-reference.
@@ -171,7 +179,7 @@ discussions:
     BGC0002435, BGC0002462. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:54Z'
+- timestamp: '2026-09-08T04:12:57Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

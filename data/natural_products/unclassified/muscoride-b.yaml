@@ -26,22 +26,25 @@ xrefs:
 producer_organisms:
 - taxon_id: NCBITaxon:1181
   taxon_label: Desmonostoc sp. PCC 7906
-  evidence_basis: BGC_CHARACTERIZED
+  evidence_basis: SOURCE_ASSERTION
   biosynthetic_gene_cluster: mibig:BGC0002485
   source: MIBIG
   source_version: '2'
-  notes: 'Locus evidence: Heterologous expression.'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
   evidence:
   - reference: PMID:31674754
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0002485 entry version 2; citation taken from the entry level
 - taxon_id: NCBITaxon:2665154
   taxon_label: Nostoc sp. UHCC-0398
-  evidence_basis: BGC_CHARACTERIZED
+  evidence_basis: SOURCE_ASSERTION
   biosynthetic_gene_cluster: mibig:BGC0002551
   source: MIBIG
   source_version: '2'
-  notes: 'Locus evidence: Enzymatic assays.'
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:31674754
     evidence_type: DATABASE_ASSERTION
@@ -64,6 +67,7 @@ biosynthetic_gene_clusters:
   - OTHER
   locus_evidence_methods:
   - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0002551
   entry_version: '2'
   entry_status: active
@@ -82,6 +86,7 @@ biosynthetic_gene_clusters:
   - TERPENE
   locus_evidence_methods:
   - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0002485
@@ -105,7 +110,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:52Z'
+- timestamp: '2026-09-08T04:12:54Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

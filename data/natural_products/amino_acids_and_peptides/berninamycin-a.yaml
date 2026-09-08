@@ -27,12 +27,13 @@ xrefs:
 producer_organisms:
 - taxon_id: NCBITaxon:1931
   taxon_label: Streptomyces sp.
-  evidence_basis: BGC_CHARACTERIZED
+  evidence_basis: BGC_CORRELATED
   biosynthetic_gene_cluster: mibig:BGC0002363
   source: MIBIG
   source_version: '3'
   notes: 'Locus evidence: Heterologous expression|Gene expression correlated with
-    compound production.'
+    compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this
+    field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:34617948
     evidence_type: DATABASE_ASSERTION
@@ -43,7 +44,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0001472
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:23650400
     evidence_type: DATABASE_ASSERTION
@@ -66,6 +68,7 @@ biosynthetic_gene_clusters:
   locus_evidence_methods:
   - Heterologous expression
   - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0001472
   entry_version: '5'
   entry_status: active
@@ -80,6 +83,7 @@ biosynthetic_gene_clusters:
   locus_to: 17729
   bgc_class:
   - RIBOSOMAL
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0002363
@@ -103,7 +107,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:46Z'
+- timestamp: '2026-09-08T04:12:48Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

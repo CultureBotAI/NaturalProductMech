@@ -37,7 +37,9 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000665
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression.
+    That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the
+    taxon claim, which is a different question.'
   evidence:
   - reference: DOI:10.1016/j.bmcl.2010.09.010
     evidence_type: DATABASE_ASSERTION
@@ -49,7 +51,9 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000666
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: Knock-out studies|Enzymatic assays.'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
   evidence:
   - reference: PMID:22591327
     evidence_type: DATABASE_ASSERTION
@@ -73,6 +77,7 @@ biosynthetic_gene_clusters:
   - Knock-out studies
   - Enzymatic assays
   - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0000666
   entry_version: '5'
   entry_status: active
@@ -89,6 +94,7 @@ biosynthetic_gene_clusters:
   locus_evidence_methods:
   - Knock-out studies
   - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000665
@@ -112,7 +118,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:53Z'
+- timestamp: '2026-09-08T04:12:56Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -478,7 +478,12 @@ classes:
           The strain the source reports. A species-level claim generalized from
           one strain should say so in `notes`.
       evidence_basis:
-        description: What kind of evidence supports the production claim.
+        description: >-
+          What supports the claim that THIS TAXON makes the compound. Derived
+          only from evidence that addresses the organism — a knock-out or a
+          correlation measured in it. Work that establishes only what a cloned
+          locus can do elsewhere does not raise this grade; it raises the gene
+          cluster's `link_evidence_basis` instead.
         range: ProducerEvidenceBasisEnum
         required: true
       biosynthetic_gene_cluster:
@@ -551,9 +556,19 @@ classes:
         multivalued: true
       locus_evidence_methods:
         description: >-
-          MIBiG's own locus evidence vocabulary, verbatim. This is what grades
-          the producer claim; see conf/producer_evidence.tsv.
+          MIBiG's own locus evidence vocabulary, verbatim, so a curator can see
+          what the grade below was derived from.
         multivalued: true
+      link_evidence_basis:
+        description: >-
+          How well supported is the claim that THIS LOCUS makes the compound.
+          Distinct from the producer's `evidence_basis`, which grades whether
+          the TAXON makes it. The two come apart constantly: heterologous
+          expression proves a locus suffices in a host and says nothing new
+          about the native organism, while a knock-out in the native organism
+          speaks to both. Folding them into one field over-graded 485 producer
+          claims on evidence that never addressed the organism.
+        range: ClusterLinkEvidenceEnum
       notes:
       evidence:
         range: EvidenceItem
@@ -829,8 +844,35 @@ enums:
         description: Production by an axenic culture of the taxon.
       SOURCE_ASSERTION:
         description: >-
-          A curated database asserts production without stating the experiment.
-          The weakest basis that still counts as a producer claim.
+          A curated database asserts production, citing a report nobody here
+          has read. The weakest basis that still counts as a producer claim,
+          and the commonest: it covers a MIBiG entry whose structured evidence
+          was never migrated from the legacy format, and every entry whose
+          evidence establishes only what the cloned locus does. In both cases
+          the taxon-makes-compound claim rests on the cited isolation
+          literature, which is the right kind of evidence for it.
+
+  ClusterLinkEvidenceEnum:
+    description: >-
+      How well supported is the claim that a particular locus produces a
+      compound. Grades the cluster, not the organism.
+    permissible_values:
+      CLUSTER_DEMONSTRATED:
+        description: >-
+          Shown experimentally — heterologous expression, knock-out, enzymatic
+          or in-vitro assay. The locus is sufficient or necessary.
+      CLUSTER_CORRELATED:
+        description: >-
+          Expression or abundance correlates with production. Consistent with
+          this locus being responsible, and with a neighbouring one.
+      CLUSTER_PREDICTED:
+        description: Inferred from sequence similarity. Not a demonstration.
+      CLUSTER_UNSTATED:
+        description: >-
+          The source records the locus and the compound but states no evidence
+          for the link. In MIBiG 4.0 this is the legacy-format backlog, 1,627
+          of 2,437 active entries, and it means the annotation is missing
+          rather than that the link is doubted.
 
   BioactivityClassEnum:
     description: >-

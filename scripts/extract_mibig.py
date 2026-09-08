@@ -58,8 +58,9 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from naturalproductmech.grading import (  # noqa: E402
+    grade_cluster_link,
     grade_production,
-    load_producer_evidence_map,
+    load_evidence_map,
 )
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -93,6 +94,7 @@ COLUMNS = [
     "locus_to",
     "locus_evidence_methods",
     "producer_evidence_basis",
+    "cluster_link_evidence_basis",
     "primary_reference",
     "reference_basis",
 ]
@@ -283,7 +285,9 @@ def extract(path: Path, conf: dict, evidence_map: dict[str, str]) -> tuple[list[
 
         methods = locus_evidence_methods(entry)
         basis = grade_production(methods, evidence_map)
+        cluster_basis = grade_cluster_link(methods, evidence_map)
         counts[f"producer_basis_{basis or 'none'}"] += 1
+        counts[f"cluster_basis_{cluster_basis}"] += 1
 
         bgc_classes, bgc_subclasses = biosynthesis_classes(entry)
         locus = first_locus(entry)
@@ -329,6 +333,7 @@ def extract(path: Path, conf: dict, evidence_map: dict[str, str]) -> tuple[list[
                 "locus_to": str(location.get("to") or ""),
                 "locus_evidence_methods": "|".join(methods),
                 "producer_evidence_basis": basis or "",
+                "cluster_link_evidence_basis": cluster_basis,
                 "primary_reference": reference,
                 "reference_basis": reference_basis,
             })
@@ -372,9 +377,13 @@ def report(counts: Counter, rows: list[dict]) -> None:
         return
     keys = {row["standard_inchi_key"] for row in rows}
     by_basis = Counter(row["producer_evidence_basis"] or "none" for row in rows)
+    by_cluster = Counter(row["cluster_link_evidence_basis"] for row in rows)
     print(f"\n  rows: {len(rows)}, unique InChIKeys: {len(keys)}", file=sys.stderr)
-    print("  producer grade of the emitted rows:", file=sys.stderr)
+    print("  producer grade (does this TAXON make it):", file=sys.stderr)
     for basis, count in by_basis.most_common():
+        print(f"    {basis:<38} {count:>6}", file=sys.stderr)
+    print("  cluster link grade (does this LOCUS make it):", file=sys.stderr)
+    for basis, count in by_cluster.most_common():
         print(f"    {basis:<38} {count:>6}", file=sys.stderr)
     incomplete = sum(1 for row in rows if row["stereo_complete"] == "false")
     print(f"  structures with undefined stereocentres: {incomplete}", file=sys.stderr)
@@ -393,7 +402,7 @@ def main() -> int:
     args = parser.parse_args()
 
     conf = load_conf()
-    evidence_map = load_producer_evidence_map()
+    evidence_map = load_evidence_map()
     archive = args.archive or (DOWNLOAD_DIR / conf["archive_name"])
     archive = download(conf["archive_url"], archive, offline=args.offline)
 

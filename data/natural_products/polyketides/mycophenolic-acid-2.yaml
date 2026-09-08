@@ -35,7 +35,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000104
   source: MIBIG
   source_version: '4'
-  notes: 'Locus evidence: Knock-out studies.'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: DOI:10.1128/aem.03015-10
     evidence_type: DATABASE_ASSERTION
@@ -47,7 +48,9 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0002616
   source: MIBIG
   source_version: '2'
-  notes: 'Locus evidence: Gene expression correlated with compound production.'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
   evidence:
   - reference: PMID:27889155
     evidence_type: DATABASE_ASSERTION
@@ -58,7 +61,9 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0002619
   source: MIBIG
   source_version: '2'
-  notes: 'Locus evidence: Gene expression correlated with compound production.'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
   evidence:
   - reference: DOI:10.1128/aem.41.3.729-736.1981
     evidence_type: DATABASE_ASSERTION
@@ -70,7 +75,8 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0001677
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated.'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:27889155
     evidence_type: DATABASE_ASSERTION
@@ -93,6 +99,7 @@ biosynthetic_gene_clusters:
   - PKS
   locus_evidence_methods:
   - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0002616
   entry_version: '2'
   entry_status: active
@@ -109,6 +116,7 @@ biosynthetic_gene_clusters:
   - PKS
   locus_evidence_methods:
   - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
 - accession: mibig:BGC0002619
   entry_version: '2'
   entry_status: active
@@ -126,6 +134,7 @@ biosynthetic_gene_clusters:
   - PKS
   locus_evidence_methods:
   - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
 - accession: mibig:BGC0001677
   entry_version: '3'
   entry_status: active
@@ -138,6 +147,7 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:KU234530.1
   bgc_class:
   - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000104
@@ -171,7 +181,7 @@ discussions:
     BGC0002616, BGC0002619. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T03:53:48Z'
+- timestamp: '2026-09-08T04:12:50Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

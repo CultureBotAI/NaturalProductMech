@@ -30,7 +30,8 @@ producer_organisms:
   source: MIBIG
   source_version: '5'
   notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Gene expression correlated
-    with compound production.'
+    with compound production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:19448638
     evidence_type: DATABASE_ASSERTION
@@ -54,6 +55,7 @@ biosynthetic_gene_clusters:
   - Knock-out studies
   - Enzymatic assays
   - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000101
@@ -65,7 +67,7 @@ grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most M
   compounds carry no ChEBI cross-reference.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T03:53:51Z'
+- timestamp: '2026-09-08T04:12:54Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
