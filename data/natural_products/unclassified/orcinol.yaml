@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-69b22f1f00
+identifier: CHEBI:16536
 label: orcinol
 chemical_structure:
   smiles: CC1=CC(O)=CC(O)=C1
@@ -8,6 +8,8 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002594
 np_pathway: UNCLASSIFIED
+definition: A 5-alkylresorcinol in which the alkyl group is specified as methyl.
+definition_source: CHEBI:16536
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -15,6 +17,26 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Ascomycota sp. Ind19F07
+  source: CHEBI
+  evidence:
+  - reference: PMID:25537370
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:16536
+  taxon_id: NCBITaxon:1583058
+  taxon_source: NCBITaxon
+- taxon_label: Aspergillus sydowii
+  source: CHEBI
+  evidence:
+  - reference: PMID:21718031
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:16536
+  taxon_id: NCBITaxon:75750
+  taxon_source: NCBITaxon
+  detection_context: PSU F154
+  notes: Ethyl acetate extract of culture broth, fungus isolated from a sea fan, Annella
+    sp.
 bgc_class:
 - PKS
 xrefs:
@@ -58,12 +80,15 @@ source_concepts:
   source_label: orcinol
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-69b22f1f00
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:16536
+  source_label: orcinol
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-d908ce7818
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:13:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

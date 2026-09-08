@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-05ec4086a1
+identifier: CHEBI:64374
 label: emericellamide B
 chemical_structure:
   smiles: CCCCCC[C@H](C)C[C@H](C)[C@H]1OC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H]1C)C(C)C
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001290
 np_pathway: UNCLASSIFIED
+definition: An emericellamide derived from N-[(2R,3R,4S,6S)-3-hydroxy-2,4,6-trimethyldodecanoyl]glycyl-L-valyl-L-leucyl-L-alanyl-L-alanine
+  by the formal intramolecular condensation of the alcoholic hydroxy group with the
+  C-terminal carboxylic acid group.
+definition_source: CHEBI:64374
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -63,12 +67,15 @@ source_concepts:
   source_label: emericellamide B
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-05ec4086a1
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:64374
+  source_label: emericellamide B
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-2ea9b4577a
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:13:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

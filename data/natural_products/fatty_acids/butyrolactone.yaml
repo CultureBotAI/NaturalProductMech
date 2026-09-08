@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-7d6962cfb2
+identifier: CHEBI:42639
 label: γ-butyrolactone
 chemical_structure:
   smiles: C1CC(=O)OC1
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000850
 np_pathway: FATTY_ACIDS
+definition: A butan-4-olide that is tetrahydrofuran substituted by an oxo group at
+  position 2.
+definition_source: CHEBI:42639
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -53,12 +56,15 @@ source_concepts:
   source_label: γ-butyrolactone
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-7d6962cfb2
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:42639
+  source_label: γ-butyrolactone
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-484f1bbecd
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:13:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

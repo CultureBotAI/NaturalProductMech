@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-8edb464d0b
+identifier: CHEBI:144441
 label: triacsin C
 chemical_structure:
   smiles: CCC/C=C/C/C=C/C=C/C=N/NN=O
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001983
 np_pathway: FATTY_ACIDS
+definition: A nitroso compound that is N-undecylnitrous hydrazide carrying double
+  bonds at positions 1,2,4, and 7. It is a long-chain fatty acyl CoA synthetase inhibitor
+  and interferes with lipid metabolism by inhibiting the de novo synthesis of glycerolipids
+  and cholesterol esters.
+definition_source: CHEBI:144441
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -16,6 +21,23 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces aureofaciens
+  source: CHEBI
+  evidence:
+  - reference: PMID:6804425
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:144441
+  taxon_id: NCBITaxon:1894
+  taxon_source: NCBITaxon
+  detection_context: '1228'
+  notes: cell suspension culture
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:144441
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - OTHER
 xrefs:
@@ -53,12 +75,15 @@ source_concepts:
   source_label: triacsin C
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-8edb464d0b
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:144441
+  source_label: triacsin C
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-ab54286a22
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:13:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

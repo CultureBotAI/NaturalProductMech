@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-b5f198b1d1
+identifier: CHEBI:64502
 label: 1-heptadecene
 chemical_structure:
   smiles: CCCCCCCCCCCCCCCC=C
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001161
 np_pathway: FATTY_ACIDS
+definition: An unbranched seventeen-carbon alkene with one double bond between C-1
+  and C-2. It is produced by the Carrion beetles.
+definition_source: CHEBI:64502
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -153,9 +156,12 @@ source_concepts:
   source_label: 1-heptadecene
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-fd6b59e72a
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:64502
+  source_label: 1-heptadecene
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-b8e77706c4
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -165,7 +171,7 @@ discussions:
     BGC0001163, BGC0001164. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:54Z'
+- timestamp: '2026-09-08T06:13:07Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

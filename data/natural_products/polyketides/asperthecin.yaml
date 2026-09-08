@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-9b60361621
+identifier: CHEBI:64161
 label: asperthecin
 chemical_structure:
   smiles: OCC1=CC2=C(C(O)=C1O)C(=O)C1=C(C(O)=C(O)C=C1O)C2=O
@@ -8,6 +8,8 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000684
 np_pathway: POLYKETIDES
+definition: An anthraquinone pigment obtained from the mould Aspergillus nidulans.
+definition_source: CHEBI:64161
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -57,12 +59,15 @@ source_concepts:
   source_label: asperthecin
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-9b60361621
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:64161
+  source_label: asperthecin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-88cbae17de
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:13:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

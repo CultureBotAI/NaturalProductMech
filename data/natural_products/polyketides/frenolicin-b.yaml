@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-292eabcb10
+identifier: CHEBI:48201
 label: frenolicin B
 chemical_structure:
   smiles: '[H][C@@]12CC(=O)O[C@]1([H])C1=C([C@@H](CCC)O2)C(=O)C2=C(O)C=CC=C2C1=O'
@@ -18,6 +18,12 @@ np_classification:
   class_results:
   - Naphthoquinones
   is_glycoside: false
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:48201
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 xrefs:
@@ -55,12 +61,15 @@ source_concepts:
   source_label: frenolicin B
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-292eabcb10
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:48201
+  source_label: frenolicin B
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-a38cb3ac0c
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:54Z'
+- timestamp: '2026-09-08T06:13:07Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

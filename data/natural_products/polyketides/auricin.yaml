@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-e3a0e1ac71
+identifier: CHEBI:156301
 label: auricin
 chemical_structure:
   smiles: OC1=CC=CC2=C1C(C([C@]3(O[C@H](C)CC([C@H]3OC4CCC(N(C)C)C(C)O4)=O)O[C@@](C5)([H])[C@]6([H])OC5=O)=C6C2=O)=O
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000201
 np_pathway: POLYKETIDES
+definition: An angucycline-like polyketide discovered in Streptomyces aureofaciens
+  that is only stable at acidic pH.
+definition_source: CHEBI:156301
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -17,6 +20,24 @@ np_classification:
   - Polycyclic aromatic polyketides
   class_results: []
   is_glycoside: true
+occurrences:
+- taxon_label: Streptomyces lavendulae subsp. lavendulae
+  source: CHEBI
+  evidence:
+  - reference: PMID:23373695
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156301
+  taxon_id: NCBITaxon:58340
+  taxon_source: NCBITaxon
+  detection_context: CCM 3239
+  notes: The strain was formerly known as Streptomyces aureofaciens CCM 3239. See
+    PMID:29496832.
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:156301
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 - SACCHARIDE
@@ -58,12 +79,15 @@ source_concepts:
   source_label: auricin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-e3a0e1ac71
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:156301
+  source_label: auricin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-0641792807
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:13:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

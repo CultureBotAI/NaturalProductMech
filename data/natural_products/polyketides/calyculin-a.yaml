@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-cd75f14a0d
+identifier: CHEBI:41791
 label: calyculin A
 chemical_structure:
   smiles: C[C@H]1[C@@H](C[C@@]2(C([C@H]([C@H](O2)[C@H](C[C@@H]([C@H](C)[C@@H]([C@H](C)/C=C(\C)/C(=C/C=C/C(=C\C#N)/C)/C)O)O)OC)OP(=O)(O)O)(C)C)O[C@H]1C/C=C/C3=COC(=N3)[C@@H](C)CCNC(=O)[C@H]([C@H]([C@H](COC)N(C)C)O)O)O
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000967
 np_pathway: POLYKETIDES
+definition: A natural product with formula C50H81N4O15P. It is a cytotoxic compound
+  isolated from the Japanese marine sponge Discodermia calyx.
+definition_source: CHEBI:41791
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +21,15 @@ np_classification:
   class_results:
   - Open-chain polyketides
   is_glycoside: false
+occurrences:
+- taxon_label: Discodermia calyx
+  source: CHEBI
+  evidence:
+  - reference: PMID:24974231
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:41791
+  taxon_id: NCBITaxon:190926
+  taxon_source: NCBITaxon
 bgc_class:
 - NRPS
 - PKS
@@ -59,12 +71,15 @@ source_concepts:
   source_label: calyculin A
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-cd75f14a0d
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:41791
+  source_label: calyculin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-bdb457206b
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:13:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-dae351d5d9
+identifier: CHEBI:75276
 label: ikarugamycin
 chemical_structure:
   smiles: '[H][C@]12C[C@@H](C)[C@@H](CC)[C@]1([H])C=C[C@]1([H])[C@H]3C\C=C/C(=O)NCCC[C@@H]4NC(=O)C(=C4O)C(=O)\C=C\[C@@H]3C[C@]21[H]'
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001435
 np_pathway: UNCLASSIFIED
+definition: A polyketide macrolactam containing a tetramic acid (pyrrolidine-2,4-dione)
+  ring system. It is isolated from Streptomyces as an antibiotic with antiprotozoal
+  and cytotoxic activities.
+definition_source: CHEBI:75276
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +23,31 @@ np_classification:
   class_results:
   - Macrocyclic tetramic acids
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces phaeochromogenes
+  source: CHEBI
+  evidence:
+  - reference: PMID:4625358
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:75276
+  taxon_id: NCBITaxon:1923
+  taxon_source: NCBITaxon
+  detection_context: var. ikaruganensis
+- taxon_label: Streptomyces sp. MDG-04-17-069
+  source: CHEBI
+  evidence:
+  - reference: PMID:19968258
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:75276
+  taxon_id: NCBITaxon:698778
+  taxon_source: NCBITaxon
+  notes: cell suspension culture
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:75276
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 - PKS
@@ -62,12 +91,15 @@ source_concepts:
   source_label: ikarugamycin
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-dae351d5d9
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:75276
+  source_label: ikarugamycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-27c98940fb
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:13:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

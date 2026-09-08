@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-b2b41d9f3c
+identifier: CHEBI:66553
 label: lactonamycin
 chemical_structure:
   smiles: CO[C@]12CC(=O)O[C@]11C(=O)C3=C(O)C4=C5CN(C)C(=O)C5=C(O)C=C4C=C3C(=O)[C@@]1(CO2)O[C@H]1CC[C@H](O)[C@H](C)O1
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000238
 np_pathway: UNCLASSIFIED
+definition: An organic heterohexacyclic compound isolated from the culture broth of
+  Streptomyces rishiriensis. It is an antibiotic with antibacterial activity.
+definition_source: CHEBI:66553
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -21,6 +24,22 @@ np_classification:
   - Anthraquinones and anthrones
   - Isoindole alkaloids
   is_glycoside: true
+occurrences:
+- taxon_label: Streptomyces rishiriensis
+  source: CHEBI
+  evidence:
+  - reference: PMID:8931735
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:66553
+  taxon_id: NCBITaxon:68264
+  taxon_source: NCBITaxon
+  detection_context: MJ773-88K4
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:66553
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 xrefs:
@@ -59,12 +78,15 @@ source_concepts:
   source_label: lactonamycin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-b2b41d9f3c
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:66553
+  source_label: lactonamycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-e383675784
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:13:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

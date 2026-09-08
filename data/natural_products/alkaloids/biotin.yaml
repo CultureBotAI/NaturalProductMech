@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-950f729d5a
+identifier: CHEBI:15956
 label: biotin
 chemical_structure:
   smiles: OC(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@H]12
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001238
 np_pathway: ALKALOIDS
+definition: An organic heterobicyclic compound that consists of 2-oxohexahydro-1H-thieno[3,4-d]imidazole
+  having a valeric acid substituent attached to the tetrahydrothiophene ring. The
+  parent of the class of biotins.
+definition_source: CHEBI:15956
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +22,74 @@ np_classification:
   class_results:
   - Imidazole alkaloids
   is_glycoside: false
+occurrences:
+- taxon_label: Escherichia coli
+  source: CHEBI
+  evidence:
+  - reference: PMID:21988831
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:15956
+  taxon_id: NCBITaxon:562
+  taxon_source: NCBITaxon
+- taxon_label: Homo sapiens
+  source: CHEBI
+  evidence:
+  - reference: PMID:10577274
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:15956
+  taxon_id: NCBITaxon:9606
+  taxon_source: NCBITaxon
+  notes: cerebrospinal fluid
+- taxon_label: Homo sapiens
+  source: CHEBI
+  evidence:
+  - reference: 'Geigy Scientific Tables, 8th Rev edition, pp. 130. Edited by C. Lentner,
+      West Cadwell, N.J.: Medical education Div., Ciba-Geigy Corp. Basel, Switzerland
+      c1981-1992.'
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:15956
+  taxon_id: NCBITaxon:9606
+  taxon_source: NCBITaxon
+  notes: urine
+- taxon_label: Homo sapiens
+  source: CHEBI
+  evidence:
+  - reference: 'Geigy Scientific Tables, 8th Rev edition, pp. 130. Edited by C. Lentner,
+      West Cadwell, N.J.: Medical education Div., Ciba-Geigy Corp. Basel, Switzerland
+      c1981-1992.'
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:15956
+  taxon_id: NCBITaxon:9606
+  taxon_source: NCBITaxon
+  notes: blood
+- taxon_label: Homo sapiens
+  source: CHEBI
+  evidence:
+  - reference: MTBLS87
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:15956
+  taxon_id: NCBITaxon:9606
+  taxon_source: NCBITaxon
+  notes: From MetaboLights
+- taxon_label: Homo sapiens
+  source: CHEBI
+  evidence:
+  - reference: Sugimoto et al. (2013) Physiological and environmental parameters associated
+      with mass spectrometry-based salivary metabolomic profiles.
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:15956
+  taxon_id: NCBITaxon:9606
+  taxon_source: NCBITaxon
+  notes: saliva
+- taxon_label: Mus musculus
+  source: CHEBI
+  evidence:
+  - reference: PMID:19425150
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:15956
+  taxon_id: NCBITaxon:10090
+  taxon_source: NCBITaxon
+  notes: 'Source: BioModels - MODEL1507180067'
 bgc_class:
 - OTHER
 xrefs:
@@ -86,9 +158,12 @@ source_concepts:
   source_label: biotin
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-62b2c92955
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:15956
+  source_label: biotin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-3d73590add
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -98,7 +173,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:13:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

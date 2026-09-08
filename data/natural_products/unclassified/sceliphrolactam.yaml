@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-1215737910
+identifier: CHEBI:193157
 label: sceliphrolactam
 chemical_structure:
   smiles: CC1CNC(=O)\C=C(/O)\C=C\C(\C)=C\C=C\C(O)C(O)C(O)C(=O)\C=C/C=C/C(/C)=C/C=C/C=C/1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001770
 np_pathway: UNCLASSIFIED
+definition: A polyene macrocyclic lactam with formula C28H35NO6. It was isolated from
+  an actinomycete, Streptomyces sp. and displays antifungal activity against amphotericin
+  B-resistant Candida albicans.
+definition_source: CHEBI:193157
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +23,29 @@ np_classification:
   class_results:
   - Macrolide lactams
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:21247188
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:193157
+  taxon_id: NCBITaxon:1931
+  taxon_source: NCBITaxon
+- taxon_label: Streptomyces sp. SD85
+  source: CHEBI
+  evidence:
+  - reference: PMID:29371699
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:193157
+  taxon_id: NCBITaxon:1849710
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:193157
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 xrefs:
@@ -58,12 +85,15 @@ source_concepts:
   source_label: sceliphrolactam
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-1215737910
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:193157
+  source_label: sceliphrolactam
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-86a67270e8
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:13:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

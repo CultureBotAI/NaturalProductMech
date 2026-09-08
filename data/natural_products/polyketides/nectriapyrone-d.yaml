@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-028c195472
+identifier: CHEBI:142799
 label: nectriapyrone D
 chemical_structure:
   smiles: COC1=C(C)C(=O)OC(/C(C)=C/CO)=C1
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002155
 np_pathway: POLYKETIDES
+definition: A member of the class of nectriapyrones that is nectriapyrone that carries
+  a hydroxy group at position 4. It is a fungal metabolite isolated from Diaporthe
+  gulyae.
+definition_source: CHEBI:142799
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +22,16 @@ np_classification:
   class_results:
   - 2-pyrone derivatives
   is_glycoside: false
+occurrences:
+- taxon_label: Diaporthe gulyae
+  source: CHEBI
+  evidence:
+  - reference: PMID:25700035
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:142799
+  taxon_id: NCBITaxon:1116854
+  taxon_source: NCBITaxon
+  notes: Isolated from liquid culture filtrates of D. gulyae.
 bgc_class:
 - PKS
 xrefs:
@@ -62,12 +76,15 @@ source_concepts:
   source_label: nectriapyrone D
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-028c195472
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:142799
+  source_label: nectriapyrone D
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-1e6424ad98
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:13:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

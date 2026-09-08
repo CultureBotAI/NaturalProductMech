@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-89eaa765b1
+identifier: CHEBI:66006
 label: harziphilone
 chemical_structure:
   smiles: C/C=C/C=C/C1=CC2=C(CO1)C(=O)[C@]([C@@H](C2)O)(C)O
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002206
 np_pathway: POLYKETIDES
+definition: A member of the class of isochromanes that is 1,5,6,7-tetrahydro-8H-isochromen-8-one
+  substituted by hydroxy groups at positions 6 and 7, a methyl group at position 7
+  and a penta-1,3-dien-1-yl moiety at position 3. Isolated from the fermentation broth
+  of Trichoderma harzianum, it exhibits anti-HIV activity.
+definition_source: CHEBI:66006
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +23,21 @@ np_classification:
   class_results:
   - Azaphilones
   is_glycoside: false
+occurrences:
+- taxon_label: Trichoderma harzianum
+  source: CHEBI
+  evidence:
+  - reference: PMID:8968392
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:66006
+  taxon_id: NCBITaxon:5544
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:66006
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 xrefs:
@@ -58,12 +78,15 @@ source_concepts:
   source_label: harziphilone
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-89eaa765b1
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:66006
+  source_label: harziphilone
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-39b59a2154
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:13:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

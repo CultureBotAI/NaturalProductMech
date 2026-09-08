@@ -314,3 +314,137 @@ def test_paper_internal_names_are_detected_narrowly():
     assert not seed.PAPER_INTERNAL_NAME.match("BAA")
     assert not seed.PAPER_INTERNAL_NAME.match("erythromycin A")
     assert not seed.PAPER_INTERNAL_NAME.match("A-74528")
+
+
+# --- ChEBI grounding and occurrences -----------------------------------------
+
+MIBIG_ROW = {
+    "mibig_accession": "BGC0000055", "entry_version": "3", "entry_status": "active",
+    "entry_quality": "questionable", "entry_completeness": "unknown",
+    "compound_name": "erythromycin", "compound_index": "1",
+    "smiles": "CCO", "standard_inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+    "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "stereo_complete": "true",
+    "compound_classes": "", "database_ids": "", "taxon_id": "NCBITaxon:1836",
+    "taxon_label": "Saccharopolyspora erythraea", "bgc_classes": "PKS", "bgc_subclasses": "",
+    "genome_accession": "", "locus_from": "0", "locus_to": "0",
+    "locus_evidence_methods": "Knock-out studies",
+    "producer_evidence_basis": "BGC_CHARACTERIZED",
+    "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+    "primary_reference": "PMID:1", "reference_basis": "ENTRY",
+}
+CHEBI_ROW = {
+    "chebi_id": "CHEBI:42355", "name": "erythromycin A", "definition": "An erythromycin that ...",
+    "stars": "3", "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "smiles": "CCO",
+}
+
+
+def test_a_matching_chebi_entry_grounds_the_record():
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "chebi_structures": [CHEBI_ROW],
+    })[0]
+    assert doc["identifier"] == "CHEBI:42355"
+    assert doc["grounding_status"] == "EXACT"
+    assert doc["definition_source"] == "CHEBI:42355"
+    # ChEBI's name joins the candidates rather than overriding them, so the
+    # specificity rule still decides: the congener beats the family name.
+    assert doc["label"] == "erythromycin A"
+    assert "erythromycin" in [s["value"] for s in doc["synonyms"]]
+
+
+def test_two_chebi_entries_sharing_a_structure_are_not_resolved_by_the_seeder():
+    """ChEBI keeps a compound and its zwitterion separate on purpose. Picking
+    one would overrule the people who own the identifiers."""
+    second = dict(CHEBI_ROW, chebi_id="CHEBI:42356", name="erythromycin A zwitterion")
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "chebi_structures": [CHEBI_ROW, second],
+    })[0]
+    assert doc["grounding_status"] == "REVIEW_NEEDED"
+    assert doc["identifier"].startswith("naturalproductmech:")
+    assert "CHEBI:42355" in doc["grounding_notes"] and "CHEBI:42356" in doc["grounding_notes"]
+
+
+def test_no_chebi_match_keeps_the_record_minted():
+    doc = seed.build_records({"mibig_compounds": [MIBIG_ROW], "chebi_structures": []})[0]
+    assert doc["grounding_status"] == "MINTED"
+
+
+def test_a_chebi_origin_becomes_an_occurrence_and_never_a_producer():
+    """The distinction the corpus exists to keep. ChEBI records where a
+    compound was FOUND; it is not asserting that the organism makes it."""
+    origin = {
+        "chebi_id": "CHEBI:42355", "species_text": "Homo sapiens",
+        "species_accession": "9606", "component_text": "urine", "strain_text": "",
+        "source_accession": "12194923", "comments": "",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "chebi_structures": [CHEBI_ROW],
+        "chebi_origins": [origin],
+    })[0]
+    occurrence = doc["occurrences"][0]
+    assert occurrence["taxon_id"] == "NCBITaxon:9606"
+    assert occurrence["evidence"][0]["reference"] == "PMID:12194923"
+    # The producer list must still contain only the MIBiG organism.
+    assert [p["taxon_label"] for p in doc["producer_organisms"]] == ["Saccharopolyspora erythraea"]
+
+
+def test_a_shared_structure_links_to_the_sibling_corpus_rather_than_copying_it():
+    sibling = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "identifier": "CHEBI:42355",
+        "label": "erythromycin A", "slug": "erythromycin-a", "corpus_commit": "c5cfe06ce7a3ff",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "antibioticmech_inchikeys": [sibling],
+    })[0]
+    link = doc["related_records"][0]
+    assert link["corpus"] == "AntibioticMech"
+    assert link["relation"] == "SAME_STRUCTURE"
+    assert link["basis"] == "SAME_INCHIKEY"
+    # Nothing from the sibling's mechanism layer is copied across.
+    assert "molecular_targets" not in doc
+
+
+# --- naming, after grounding brought a second opinion --------------------------
+
+def test_a_hyphenated_extension_counts_as_more_specific():
+    """Chemical names extend with punctuation more often than with a space, and
+    matching only on a space left the vague name winning (#22)."""
+    assert seed.choose_label(["tirucalla", "tirucalla-7,24-dien-3β-ol"])[0] == \
+        "tirucalla-7,24-dien-3β-ol"
+    assert seed.choose_label(["spirangien", "spirangien A1"])[0] == "spirangien A1"
+
+
+def test_the_identity_authority_breaks_a_tie_the_alphabet_should_not():
+    """MIBiG's `β-carotein` beat ChEBI's `β-carotene` because `i` sorts before
+    `n`. For a record grounded to a ChEBI term, ChEBI's name is the one that
+    should win (#22)."""
+    label, synonyms = seed.choose_label(["β-carotein", "β-carotene"], authoritative="β-carotene")
+    assert (label, synonyms) == ("β-carotene", ["β-carotein"])
+
+
+def test_the_authority_does_not_override_a_more_specific_source_name():
+    """ChEBI's name joins the candidates; it does not trump specificity. This
+    is what stops #16 regressing."""
+    assert seed.choose_label(["rhizoxin A", "rhizoxin"], authoritative="rhizoxin")[0] == "rhizoxin A"
+
+
+def test_typographic_variants_are_not_disagreements():
+    """Each of these raised a false controversy before the comparison was
+    normalised: a Unicode minus, a Greek Tau, a stereo prefix (#24)."""
+    assert not seed.names_disagree("(−)-δ-cadinene", "(-)-δ-cadinene")
+    assert not seed.names_disagree("(+)-Τ-muurolol", "(+)-T-muurolol")
+    assert not seed.names_disagree("(+)-eremophilene", "eremophilene")
+    assert not seed.names_disagree("(R)-nephthenol", "(-)-(R)-nephthenol")
+
+
+def test_a_greek_locant_is_not_stripped_because_it_changes_the_compound():
+    """alpha-amyrin and beta-amyrin are different compounds. Two sources
+    disagreeing about that on one InChIKey is the upstream error this check
+    exists to surface, so the descriptor must survive normalisation."""
+    assert seed.names_disagree("α-amyrin", "β-amyrin")
+    assert seed.names_disagree("2-cis-abscisic acid", "abscisic acid")
+
+
+def test_substantive_disagreements_still_surface():
+    assert seed.names_disagree("phevalin", "aureusimine B")
+    assert seed.names_disagree("romidepsin", "FR901228")
+    assert seed.names_disagree("bicozamycin", "bicyclomycin")

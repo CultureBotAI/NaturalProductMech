@@ -1,12 +1,12 @@
-identifier: naturalproductmech:mibig-6634c6efc6
+identifier: naturalproductmech:mibig-fb45a7e9e0
 label: rosamicin
 chemical_structure:
-  smiles: CC[C@H]1OC(=O)C[C@@H](O)[C@H](C)[C@@H](O[C@@H]2O[C@H](C)C[C@H](N(C)C)[C@H]2O)[C@@H](CC=O)C[C@@H](C)C(=O)/C=C/[C@]2(C)O[C@H]2[C@@H]1C
-  standard_inchi: InChI=1S/C31H51NO9/c1-9-25-20(5)29-31(6,41-29)12-10-23(34)17(2)14-21(11-13-33)28(19(4)24(35)16-26(36)39-25)40-30-27(37)22(32(7)8)15-18(3)38-30/h10,12-13,17-22,24-25,27-30,35,37H,9,11,14-16H2,1-8H3/b12-10+/t17-,18-,19+,20-,21+,22+,24-,25-,27-,28-,29+,30+,31+/m1/s1
-  standard_inchi_key: IUPCWCLVECYZRV-JZMZINANSA-N
-  stereo_complete: true
+  smiles: CCC1OC(=O)CC(O)C(C)C(O[C@@H]2O[C@H](C)C[C@@H]([C@H]2O)N(C)C)C(CC=O)CC(C)C(=O)\C=C\C2(C)OC2C1C
+  standard_inchi: InChI=1S/C31H51NO9/c1-9-25-20(5)29-31(6,41-29)12-10-23(34)17(2)14-21(11-13-33)28(19(4)24(35)16-26(36)39-25)40-30-27(37)22(32(7)8)15-18(3)38-30/h10,12-13,17-22,24-25,27-30,35,37H,9,11,14-16H2,1-8H3/b12-10+/t17?,18-,19?,20?,21?,22+,24?,25?,27-,28?,29?,30+,31?/m1/s1
+  standard_inchi_key: IUPCWCLVECYZRV-JEAVYTLSSA-N
+  stereo_complete: false
   structure_source: MIBIG
-  structure_source_id: mibig:BGC0002086
+  structure_source_id: mibig:BGC0001830
 np_pathway: POLYKETIDES
 np_classification:
   tool: NPClassifier
@@ -21,13 +21,12 @@ np_classification:
 bgc_class:
 - PKS
 xrefs:
-- pubchem:6537204
-- npatlas:NPA004259
+- npatlas:NPA04259
 producer_organisms:
-- taxon_id: NCBITaxon:47853
-  taxon_label: Micromonospora carbonacea
+- taxon_id: NCBITaxon:351187
+  taxon_label: Salinispora pacifica
   evidence_basis: SOURCE_ASSERTION
-  biosynthetic_gene_cluster: mibig:BGC0002086
+  biosynthetic_gene_cluster: mibig:BGC0001830
   source: MIBIG
   source_version: '3'
   notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
@@ -35,35 +34,33 @@ producer_organisms:
   evidence:
   - reference: PMID:25930739
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0002086 entry version 3; citation taken from the entry level
+    notes: MIBiG BGC0001830 entry version 3; citation taken from the entry level
 biosynthetic_gene_clusters:
-- accession: mibig:BGC0002086
+- accession: mibig:BGC0001830
   entry_version: '3'
   entry_status: active
-  organism_taxon_id: NCBITaxon:47853
-  organism_label: Micromonospora carbonacea
+  organism_taxon_id: NCBITaxon:351187
+  organism_label: Salinispora pacifica
   evidence:
   - reference: PMID:25930739
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0002086 entry version 3; citation taken from the entry level
-  genome_accession: genbank:CP058322.1
-  locus_from: 1361829
-  locus_to: 1422030
+    notes: MIBiG BGC0001830 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KP997155.1
   bgc_class:
   - PKS
   link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
-  source_id: BGC0002086
+  source_id: BGC0001830
   source_label: rosamicin
   source_version: '3'
-  minted_identifier: naturalproductmech:mibig-6634c6efc6
+  minted_identifier: naturalproductmech:mibig-fb45a7e9e0
 grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
+  a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:57Z'
+- timestamp: '2026-09-08T06:13:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-b871989a54
+identifier: CHEBI:85616
 label: viridicatumtoxin
 chemical_structure:
   smiles: COC1=C2C3=C(C(O)=C1)C(O)=C1C(=O)[C@]4(O)C(=O)C(C(N)=O)=C(O)C[C@]4(O)[C@@H](O)C1=C3C[C@]21C(C)=CCCC1(C)C
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000168
 np_pathway: UNCLASSIFIED
+definition: A tetracycline-like polyketide antibiotic that is produced by several
+  species of Penicillium and Aspergillus.
+definition_source: CHEBI:85616
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +22,38 @@ np_classification:
   class_results:
   - Other polyketide meroterpenoids
   is_glycoside: false
+occurrences:
+- taxon_label: Aspergillus ustus
+  source: CHEBI
+  evidence:
+  - reference: PMID:25706180
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:85616
+  taxon_id: NCBITaxon:40382
+  taxon_source: NCBITaxon
+- taxon_label: Penicillium aethiopicum
+  source: CHEBI
+  evidence:
+  - reference: PMID:22590971
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:85616
+  taxon_id: NCBITaxon:36650
+  taxon_source: NCBITaxon
+- taxon_label: Penicillium brasilianum
+  source: CHEBI
+  evidence:
+  - reference: PMID:23168407
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:85616
+  taxon_id: NCBITaxon:104259
+  taxon_source: NCBITaxon
+  detection_context: FKI-3368
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:85616
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 compound_classes:
@@ -69,12 +104,15 @@ source_concepts:
   source_label: viridicatumtoxin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-b871989a54
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:85616
+  source_label: viridicatumtoxin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-b55105ceef
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:13:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

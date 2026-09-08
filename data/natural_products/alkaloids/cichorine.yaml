@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-b47bf680d6
+identifier: CHEBI:64977
 label: cichorine
 chemical_structure:
   smiles: CC1=C(C=C2C(=C1OC)CNC2=O)O
@@ -8,6 +8,12 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000037
 np_pathway: ALKALOIDS
+definition: A member of the class of isoindoles that is 6-hydroxy-4-methoxy-5-methyl-2,3-dihydro-1H-isoindol-1-one
+  which is substituted at position 4, 5, and 6 by methoxy, methyl, and hydroxy groups,
+  respectively. A secondary metabolite found in Aspergillus silvativus, Aspergillus
+  nidulans and Alternaria cichorii, it is poisonous to Russian knapweed (Acroptilon
+  repens).
+definition_source: CHEBI:64977
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -57,12 +63,15 @@ source_concepts:
   source_label: cichorine
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-b47bf680d6
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:64977
+  source_label: cichorine
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-5f3896af8b
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:57Z'
+- timestamp: '2026-09-08T06:13:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,5 +1,12 @@
 # Which ChEBI roles admit a compound to this corpus.
 #
+# NOT YET READ BY THE PIPELINE. ChEBI is currently a grounding and occurrence
+# source: a compound enters from MIBiG and ChEBI supplies its identity. The
+# admission route these rows describe — an allow-listed role admitting a
+# compound MIBiG never saw — needs the role edges from ChEBI's relation.tsv,
+# which the extractor does not read yet (#23). The decisions below are recorded
+# now because they are the argument, not the plumbing.
+#
 # INCOMPLETE BY DESIGN. The YES rows are a starting set, not a survey: ChEBI's
 # role hierarchy has many more specialized-metabolite roles and each needs its
 # own decision. Adding one is a reviewed change measured by what ELSE that role

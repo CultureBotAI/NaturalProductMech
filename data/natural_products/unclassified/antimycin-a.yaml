@@ -1,0 +1,96 @@
+identifier: CHEBI:2762
+label: antimycin A
+chemical_structure:
+  smiles: CCCCCC[C@@H]1[C@H]([C@@H](OC(=O)[C@H]([C@H](OC1=O)C)NC(=O)C2=C(C(=CC=C2)NC=O)O)C)OC(=O)CC(C)C
+  standard_inchi: InChI=1S/C28H40N2O9/c1-6-7-8-9-11-20-25(39-22(32)14-16(2)3)18(5)38-28(36)23(17(4)37-27(20)35)30-26(34)19-12-10-13-21(24(19)33)29-15-31/h10,12-13,15-18,20,23,25,33H,6-9,11,14H2,1-5H3,(H,29,31)(H,30,34)/t17-,18+,20-,23+,25+/m1/s1
+  standard_inchi_key: UIFFUZWRFRDZJC-SBOOETFBSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000958
+np_pathway: UNCLASSIFIED
+definition: A nine-membered bis-lactone having methyl substituents at the 2- and 6-positions,
+  an n-hexyl substituent at the 8-position, an acyloxy substituent at the 7-position
+  and an aroylamido substituent at the 3-position. It is produced by Streptomyces
+  bacteria and has found commercial use as a fish poison.
+definition_source: CHEBI:2762
+synonyms:
+- value: antimycin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000958
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Antimycins
+  is_glycoside: false
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:2762
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
+bgc_class:
+- NRPS
+- PKS
+xrefs:
+- pubchem:14957
+producer_organisms:
+- taxon_id: NCBITaxon:889487
+  taxon_label: Streptomyces sp. S4
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000958
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
+    expression correlated with compound production. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:21857911
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000958 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000958
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:889487
+  organism_label: Streptomyces sp. S4
+  evidence:
+  - reference: PMID:21857911
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000958 entry version 5; citation taken from the entry level
+  genome_accession: genbank:NZ_FR873698.1
+  locus_from: 81953
+  locus_to: 106578
+  bgc_class:
+  - NRPS
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000958
+  source_label: antimycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a42a13bcdf
+- source: CHEBI
+  source_id: CHEBI:2762
+  source_label: antimycin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-dfcde8dd34
+grounding_status: EXACT
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T06:13:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

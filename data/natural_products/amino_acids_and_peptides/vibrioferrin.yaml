@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-607719185c
+identifier: CHEBI:84585
 label: vibrioferrin
 chemical_structure:
   smiles: O=C1CCC(O)(C(O)=O)N1[C@@H](C)C(NCCOC(C[C@](C(O)=O)(O)CC(O)=O)=O)=O
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000946
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+definition: A tricarboxylic acid that is citric acid in which the pro-R carboxy group
+  has been esterified with the primary hydroxy group of 2-hydroxy-1-{(2S)-1-[(2-hydroxyethyl)amino]-1-oxopropan-2-yl}-5-oxoproline.
+  It is a siderophore isolated from bacteria closely associated or symbiotic with
+  toxic, bloom-forming dinoflagellates.
+definition_source: CHEBI:84585
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -16,6 +21,24 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Vibrio alginolyticus
+  source: CHEBI
+  evidence:
+  - reference: PMID:22146715
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:84585
+  taxon_id: NCBITaxon:663
+  taxon_source: NCBITaxon
+- taxon_label: Vibrio parahaemolyticus
+  source: CHEBI
+  evidence:
+  - reference: 'DOI: 10.1111/j.1574-6968.1992.tb05311.x'
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:84585
+  taxon_id: NCBITaxon:670
+  taxon_source: NCBITaxon
+  detection_context: AQ 3354
 bgc_class:
 - OTHER
 xrefs:
@@ -88,9 +111,12 @@ source_concepts:
   source_label: vibrioferrin
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-55f2e88b4a
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:84585
+  source_label: vibrioferrin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-e470cd1f1b
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -100,7 +126,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:57Z'
+- timestamp: '2026-09-08T06:13:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-c8a9384cc7
+identifier: CHEBI:59064
 label: colistin A
 chemical_structure:
   smiles: CC[C@@H](C)CCCCC(=O)N[C@@H](CCN)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CCN)C(=O)N[C@H]1CCNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)CCN)CC(C)C)CC(C)C)CCN)CCN)[C@@H](C)O
@@ -8,6 +8,8 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001192
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+definition: A polymyxin having a (6R)-6-methyloctanoyl group at the amino terminus.
+definition_source: CHEBI:59064
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +21,12 @@ np_classification:
   - Cyclic peptides
   - Lipopeptides
   is_glycoside: false
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:59064
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 xrefs:
@@ -56,12 +64,15 @@ source_concepts:
   source_label: colistin A
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-c8a9384cc7
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:59064
+  source_label: colistin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-ce16506613
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:13:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-335702f811
+identifier: CHEBI:167886
 label: aetokthonotoxin
 chemical_structure:
   smiles: N#CC1=C(N2C(Br)=C(Br)C3=C2C=CC(Br)=C3)NC4=C(Br)C=C(Br)C=C41
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002643
 np_pathway: ALKALOIDS
+definition: A bromoindole that is 2,3,5-tribromo-1H-indole which is substituted by
+  a 5,7-dibromo-3-cyano-1H-indol-2-yl group at position 1. It is a biindole alkaloid
+  isolated from the cyanobacterium Aetokthonos hydrillicola and causes vacuolar myelinopathy
+  in bald eagles.
+definition_source: CHEBI:167886
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -16,6 +21,15 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Aetokthonos hydrillicola
+  source: CHEBI
+  evidence:
+  - reference: PMID:33766860
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:167886
+  taxon_id: NCBITaxon:1550245
+  taxon_source: NCBITaxon
 bgc_class:
 - OTHER
 compound_classes:
@@ -61,12 +75,15 @@ source_concepts:
   source_label: aetokthonotoxin
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-335702f811
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:167886
+  source_label: aetokthonotoxin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-93adcf3ab7
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:57Z'
+- timestamp: '2026-09-08T06:13:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

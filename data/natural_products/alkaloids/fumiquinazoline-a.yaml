@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-20ca0f3757
+identifier: CHEBI:64546
 label: fumiquinazoline A
 chemical_structure:
   smiles: '[H][C@]12N[C@@H](C)C(=O)N1C1=CC=CC=C1[C@@]2(O)C[C@@]1([H])N2C(=O)C3=C(C=CC=C3)N=C2[C@H](C)NC1=O'
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000355
 np_pathway: ALKALOIDS
+definition: A fumiquinazoline that consists of imidazoindole and pyrazinoquinazoline
+  units connected by a methylene group.
+definition_source: CHEBI:64546
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -63,12 +66,15 @@ source_concepts:
   source_label: fumiquinazoline A
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-20ca0f3757
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:64546
+  source_label: fumiquinazoline A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-293256ee1f
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:13:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-a826f4c2ec
+identifier: CHEBI:50202
 label: naringenin
 chemical_structure:
   smiles: C1C(OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001310
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+definition: A trihydroxyflavanone that is flavanone substituted by hydroxy groups
+  at positions 5, 6 and 4'.
+definition_source: CHEBI:50202
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -57,12 +60,15 @@ source_concepts:
   source_label: naringenin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-a826f4c2ec
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:50202
+  source_label: naringenin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-63d8713078
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:13:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

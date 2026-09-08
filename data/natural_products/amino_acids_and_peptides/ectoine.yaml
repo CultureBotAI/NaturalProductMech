@@ -326,9 +326,21 @@ source_concepts:
   source_label: ectoine
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-0e9a68560f
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:27592
+  source_label: ectoine
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-b1a67647d4
+- source: CHEBI
+  source_id: CHEBI:58515
+  source_label: ectoine zwitterion
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-c7d5fd6d19
+grounding_status: REVIEW_NEEDED
+grounding_notes: 'This structure matches more than one 3-star ChEBI entry: CHEBI:27592,
+  CHEBI:58515. ChEBI keeps such entries separate on purpose — a compound and its zwitterion
+  share an InChIKey — so the identity is not picked here. A curator decides which
+  term this record is.'
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -339,7 +351,7 @@ discussions:
     BGC0002052. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:13:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

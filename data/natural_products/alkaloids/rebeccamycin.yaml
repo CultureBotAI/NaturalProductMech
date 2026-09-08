@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-80385b32aa
+identifier: CHEBI:135511
 label: rebeccamycin
 chemical_structure:
   smiles: CO[C@@H]1[C@H](O[C@H]([C@@H]([C@H]1O)O)N2C3=C(C=CC=C3Cl)C4=C5C(=C6C7=C(C(=CC=C7)Cl)NC6=C42)C(=O)NC5=O)CO
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000821
 np_pathway: ALKALOIDS
+definition: An N-glycosyl compound consisting of a heteropolycyclic ring system with
+  a glucosyl group attached to one of the indolic nitrogens.
+definition_source: CHEBI:135511
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -58,12 +61,15 @@ source_concepts:
   source_label: rebeccamycin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-80385b32aa
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:135511
+  source_label: rebeccamycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-ec21907a03
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

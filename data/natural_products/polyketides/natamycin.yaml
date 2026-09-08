@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-f24c09255c
+identifier: CHEBI:7488
 label: natamycin
 chemical_structure:
   smiles: C[C@@H]1C/C=C/C=C/C=C/C=C/[C@@H](C[C@H]2[C@@H]([C@H](C[C@](O2)(C[C@H](C[C@@H]3[C@H](O3)/C=C/C(=O)O1)O)O)O)C(=O)O)O[C@H]4[C@H]([C@H]([C@@H]([C@H](O4)C)O)N)O
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000125
 np_pathway: POLYKETIDES
+definition: A macrolide antibiotic that has formula C33H47NO13, produced by several
+  Streptomyces species including Streptomyces natalensis. It exhibits broad spectrum
+  antifungal activity and used in eye drops, and as a food preservative, and also
+  as a postharvest biofungicide for citrus and other fruit crops.
+definition_source: CHEBI:7488
 synonyms:
 - value: pimaricin
   synonym_type: RELATED_SYNONYM
@@ -22,6 +27,21 @@ np_classification:
   class_results:
   - Polyene macrolides
   is_glycoside: true
+occurrences:
+- taxon_label: Streptomyces natalensis
+  source: CHEBI
+  evidence:
+  - reference: PMID:31311527
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:7488
+  taxon_id: NCBITaxon:68242
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:7488
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 xrefs:
@@ -89,11 +109,20 @@ source_concepts:
   source_label: natamycin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-938eb0f1ec
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:7488
+  source_label: natamycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-a525b34eb4
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'natamycin' and MIBiG calls it 'pimaricin'. They
+    share a Standard InChIKey, so if the two names denote different compounds then
+    one upstream record has the wrong structure. Check which.
 - discussion_id: shared-structure
   kind: CURATION_TODO
   status: OPEN
@@ -101,7 +130,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:13:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

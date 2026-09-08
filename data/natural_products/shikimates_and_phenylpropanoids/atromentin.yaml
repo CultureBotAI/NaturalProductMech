@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-3df399a62b
+identifier: CHEBI:149660
 label: atromentin
 chemical_structure:
   smiles: C1=CC(=CC=C1C2=C(C(=O)C(=C(C2=O)O)C3=CC=C(C=C3)O)O)O
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002277
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+definition: A member of the class of dihydroxy-1,4-benzoquinones that is 2,5-dihydroxycyclohexa-2,5-diene-1,4-dione
+  which is substituted by a 4-hydroxyphenyl group at positions 3 and 6. It is a mushroom
+  pigment isolated from several fungi species and acts as a smooth muscle stimulant,
+  and exhibits anticoagulant, antibacterial and antineoplastic properties.
+definition_source: CHEBI:149660
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +23,86 @@ np_classification:
   class_results:
   - p-Terphenyls
   is_glycoside: false
+occurrences:
+- taxon_label: Clitocybe subilludens
+  source: CHEBI
+  evidence:
+  - reference: PMID:4332377
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:149660
+  taxon_id: NCBITaxon:210149
+  taxon_source: NCBITaxon
+  notes: cell suspension culture
+- taxon_label: Clitocybe subilludens
+  source: CHEBI
+  evidence:
+  - reference: PMID:5815216
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:149660
+  taxon_id: NCBITaxon:210149
+  taxon_source: NCBITaxon
+- taxon_label: Fungi
+  source: CHEBI
+  evidence:
+  - reference: PMID:17323650
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:149660
+  taxon_id: NCBITaxon:4751
+  taxon_source: NCBITaxon
+  detection_context: F010248
+  notes: cell suspension culture Isolated from the solid state fermentation of an
+    unidentified fungus F010248.
+- taxon_label: Hydnellum diabolus
+  source: CHEBI
+  evidence:
+  - reference: PMID:5862512
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:149660
+  taxon_id: NCBITaxon:176618
+  taxon_source: NCBITaxon
+- taxon_label: Hypoxylon fendleri
+  source: CHEBI
+  evidence:
+  - reference: PMID:28384525
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:149660
+  taxon_id: NCBITaxon:558530
+  taxon_source: NCBITaxon
+  notes: cell suspension culture
+- taxon_label: Hypoxylon fendleri
+  source: CHEBI
+  evidence:
+  - reference: PMID:31476402
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:149660
+  taxon_id: NCBITaxon:558530
+  taxon_source: NCBITaxon
+  detection_context: BCC32408
+  notes: cell suspension culture
+- taxon_label: Paxillus panuoides
+  source: CHEBI
+  evidence:
+  - reference: PMID:5166969
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:149660
+  taxon_id: NCBITaxon:80604
+  taxon_source: NCBITaxon
+  notes: Identified in the carpophores.
+- taxon_label: Thelephora aurantiotincta
+  source: CHEBI
+  evidence:
+  - reference: PMID:12895540
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:149660
+  taxon_id: NCBITaxon:654496
+  taxon_source: NCBITaxon
+  notes: fruit body
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:149660
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 xrefs:
@@ -61,12 +146,15 @@ source_concepts:
   source_label: atromentin
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-3df399a62b
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:149660
+  source_label: atromentin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-1ab453bd6c
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:13:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-262055844a
+identifier: CHEBI:85129
 label: Ristocetin A
 chemical_structure:
   smiles: C[C@H]1[C@@H]([C@@H](C[C@H](O1)O[C@H]2[C@H]3C(=O)N[C@@H](C4=CC(=CC(=C4C5=C(C=CC(=C5)[C@H](C(=O)N3)NC(=O)[C@H]6C7=CC(=C(C(=C7)OC8=CC=C2C=C8)O[C@H]9[C@@H]([C@H]([C@@H]([C@H](O9)COC1[C@@H]([C@@H]([C@H]([C@@H](O1)C)O)O)O)O)O)O[C@H]1[C@@H]([C@@H]([C@H]([C@@H](O1)CO)O)O)O[C@H]1[C@H]([C@@H]([C@@H](CO1)O)O)O)OC1=CC=C(C=C1)[C@H]([C@@H]1C(=O)N[C@@H](C2=CC(=C(C(=C2)O)C)OC2=C(C=CC(=C2)[C@H](C(=O)N1)N)O)C(=O)N6)O)O)O[C@H]1[C@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O)O)C(=O)OC)N)O
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000418
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+definition: A heterodetic cyclic peptide that is produced by species of Amycolatopsis
+  and Nocardia.
+definition_source: CHEBI:85129
+synonyms:
+- value: ristocetin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000418
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +25,31 @@ np_classification:
   class_results:
   - Vancomycins and Teicoplanins
   is_glycoside: true
+occurrences:
+- taxon_label: Amycolatopsis lurida
+  source: CHEBI
+  evidence:
+  - reference: PMID:25323720
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:85129
+  taxon_id: NCBITaxon:1460371
+  taxon_source: NCBITaxon
+  detection_context: NRRL 2430
+- taxon_label: Amycolatopsis sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:25359910
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:85129
+  taxon_id: NCBITaxon:37632
+  taxon_source: NCBITaxon
+  detection_context: MJM2582
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:85129
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 compound_classes:
@@ -60,12 +92,15 @@ source_concepts:
   source_label: Ristocetin A
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-262055844a
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:85129
+  source_label: ristocetin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-f80e1f5228
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:13:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

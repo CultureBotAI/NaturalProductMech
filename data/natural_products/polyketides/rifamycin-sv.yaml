@@ -1,0 +1,131 @@
+identifier: CHEBI:29673
+label: rifamycin SV
+chemical_structure:
+  smiles: C[C@H]1/C=C/C=C(\C(=O)NC2=CC(=C3C(=C2O)C(=C(C4=C3C(=O)[C@](O4)(O/C=C/[C@@H]([C@H]([C@H]([C@@H]([C@@H]([C@@H]([C@H]1O)C)O)C)OC(=O)C)C)OC)C)C)O)O)/C
+  standard_inchi: InChI=1S/C37H47NO12/c1-16-11-10-12-17(2)36(46)38-23-15-24(40)26-27(32(23)44)31(43)21(6)34-28(26)35(45)37(8,50-34)48-14-13-25(47-9)18(3)33(49-22(7)39)20(5)30(42)19(4)29(16)41/h10-16,18-20,25,29-30,33,40-44H,1-9H3,(H,38,46)/b11-10+,14-13+,17-12-/t16-,18+,19+,20+,25-,29-,30+,33+,37-/m0/s1
+  standard_inchi_key: HJYYPODYNSCCOU-ODRIEIDWSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000136
+np_pathway: POLYKETIDES
+definition: A member of the class of rifamycins that exhibits antibiotic and antitubercular
+  properties.
+definition_source: CHEBI:29673
+synonyms:
+- value: rifamycin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000136
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  is_glycoside: false
+occurrences:
+- taxon_label: Amycolatopsis mediterranei
+  source: CHEBI
+  evidence:
+  - reference: PMID:25256628
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:29673
+  taxon_id: NCBITaxon:33910
+  taxon_source: NCBITaxon
+  detection_context: OVA5-E7
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:29673
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
+bgc_class:
+- PKS
+xrefs:
+- pubchem:6324616
+producer_organisms:
+- taxon_id: NCBITaxon:713604
+  taxon_label: Amycolatopsis mediterranei S699
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000136
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:9512878
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000136 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:391037
+  taxon_label: Salinispora arenicola CNS-205
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000137
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16517661
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000137 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000136
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:713604
+  organism_label: Amycolatopsis mediterranei S699
+  evidence:
+  - reference: PMID:9512878
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000136 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AF040570.3
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0000137
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:391037
+  organism_label: Salinispora arenicola CNS-205
+  evidence:
+  - reference: PMID:16517661
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000137 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CP000850.1
+  locus_from: 1388770
+  locus_to: 1480342
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000136
+  source_label: rifamycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-de70ce97c1
+- source: MIBIG
+  source_id: BGC0000137
+  source_label: rifamycin
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-8a5a2b4d3c
+- source: CHEBI
+  source_id: CHEBI:29673
+  source_label: rifamycin SV
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-260e25ae4a
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000136, BGC0000137.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T06:13:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

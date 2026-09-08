@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-e1e9e5e7c5
+identifier: CHEBI:156313
 label: erdasporine A
 chemical_structure:
   smiles: COC(=O)C1=C2C(=CN1)C3=C(C4=C2C5=CC=CC=C5N4)NC6=C3C=CC(=C6)O
@@ -8,6 +8,12 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001336
 np_pathway: ALKALOIDS
+definition: A organic heterohexacyclic compound that is 12,13-dihydro-6H-indolo[2,3-a]pyrrolo[3,4-c]carbazole
+  in which the hydrogens at positions 5 and 10 are substituted by a methoxycarbonyl
+  and hydroxy groups, respectively. It is synthesized by a gene cluster found in environmental
+  DNA and exhibits cytotoxic activity against human HCT116 cancer cells and Staphylococcus
+  aureus.
+definition_source: CHEBI:156313
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +25,12 @@ np_classification:
   - Carbazole alkaloids
   - Carboline alkaloids
   is_glycoside: false
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:156313
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - OTHER
 xrefs:
@@ -62,12 +74,15 @@ source_concepts:
   source_label: erdasporine A
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-e1e9e5e7c5
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:156313
+  source_label: erdasporine A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-2e013f631b
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:13:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

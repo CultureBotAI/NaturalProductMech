@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-1f75159563
+identifier: CHEBI:31461
 label: dehydrorabelomycin
 chemical_structure:
   smiles: CC1=CC(=C2C(=C1)C=C(C3=C2C(=O)C4=C(C3=O)C(=CC=C4)O)O)O
@@ -58,12 +58,15 @@ source_concepts:
   source_label: dehydrorabelomycin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-1f75159563
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:31461
+  source_label: dehydrorabelomycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-b9a51680db
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

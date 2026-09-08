@@ -1,0 +1,89 @@
+identifier: CHEBI:22450
+label: (6aR,11aS,11bR)-10-acetyl-11-hydroxy-7,7-dimethyl-2,6,6a,7,11a,11b-hexahydro-9H-pyrrolo[1',2':2,3]isoindolo[4,5,6-cd]indol-9-one
+chemical_structure:
+  smiles: CC(=O)C1=C([C@@H]2[C@@H]3[C@@H](CC4=C5C3=CNC5=CC=C4)C(N2C1=O)(C)C)O
+  standard_inchi: InChI=1S/C20H20N2O3/c1-9(23)14-18(24)17-16-11-8-21-13-6-4-5-10(15(11)13)7-12(16)20(2,3)22(17)19(14)25/h4-6,8,12,16-17,21,24H,7H2,1-3H3/t12-,16+,17+/m1/s1
+  standard_inchi_key: SZINUGQCTHLQAZ-DQYPLSBCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000977
+np_pathway: UNCLASSIFIED
+synonyms:
+- value: cyclopiazonic acid
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000977
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  - Amino acids and Peptides
+  superclass_results:
+  - Tetramate alkaloids
+  class_results:
+  - Cyclopiazonic acid-tpye tetramate alkaloids
+  is_glycoside: false
+bgc_class:
+- NRPS
+- PKS
+compound_classes:
+- Tryptophan-derived
+xrefs:
+- npatlas:NPA015449
+- pubchem:54682463
+producer_organisms:
+- taxon_id: NCBITaxon:5062
+  taxon_label: Aspergillus oryzae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000977
+  source: MIBIG
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1002/cbic.201000672
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000977 entry version 4; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000977
+  entry_version: '4'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:5062
+  organism_label: Aspergillus oryzae
+  evidence:
+  - reference: DOI:10.1002/cbic.201000672
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000977 entry version 4; citation taken from the compound evidence
+      level
+  genome_accession: genbank:AB506492.1
+  bgc_class:
+  - NRPS
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000977
+  source_label: cyclopiazonic acid
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-34f2c61083
+- source: CHEBI
+  source_id: CHEBI:22450
+  source_label: (6aR,11aS,11bR)-10-acetyl-11-hydroxy-7,7-dimethyl-2,6,6a,7,11a,11b-hexahydro-9H-pyrrolo[1',2':2,3]isoindolo[4,5,6-cd]indol-9-one
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-eb47d51c4f
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure "(6aR,11aS,11bR)-10-acetyl-11-hydroxy-7,7-dimethyl-2,6,6a,7,11a,11b-hexahydro-9H-pyrrolo[1',2':2,3]isoindolo[4,5,6-cd]indol-9-one"
+    and MIBiG calls it 'cyclopiazonic acid'. They share a Standard InChIKey, so if
+    the two names denote different compounds then one upstream record has the wrong
+    structure. Check which.
+curation_history:
+- timestamp: '2026-09-08T06:13:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

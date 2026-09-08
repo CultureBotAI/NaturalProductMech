@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-aaf82ead86
+identifier: CHEBI:140174
 label: malacidin B
 chemical_structure:
   smiles: CCC(C)CC/C=C\C=C\C(=O)N[C@@H](C(C)C(=O)O)C(=O)N[C@H]1C(NC(=O)[C@@H]2C[C@H](CN2C(=O)[C@@H](NC(=O)[C@H](NC(=O)CNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC1=O)C(C)C)CCCCN)C(C(=O)O)O)CC(=O)O)C(C)C(=O)O)C(C)C)C)C
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001448
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+definition: A homodetic cyclic peptide that is malacidin A in which the (2E,4Z)-8-methylnona-2,4-dienoyl
+  group has been replaced by a (2E,4Z)-8-methyldeca-2,4-dienoyl group.
+definition_source: CHEBI:140174
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +21,12 @@ np_classification:
   class_results:
   - Cyclic peptides
   is_glycoside: false
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:140174
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 xrefs:
@@ -59,12 +68,15 @@ source_concepts:
   source_label: malacidin B
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-aaf82ead86
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:140174
+  source_label: malacidin B
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-9611fceba4
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:13:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

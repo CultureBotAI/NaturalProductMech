@@ -1,13 +1,22 @@
-identifier: naturalproductmech:mibig-bba7e7bd7d
+identifier: CHEBI:29703
 label: validamycin A
 chemical_structure:
-  smiles: C1[C@@H]([C@H]([C@@H](C([C@H]1N[C@H]2C=C([C@H]([C@@H]([C@H]2O)O)O)CO)O)O)O[C@H]3C(C([C@@H](C(O3)CO)O)O)O)CO
-  standard_inchi: InChI=1S/C20H35NO13/c22-3-6-1-8(12(26)15(29)11(6)25)21-9-2-7(4-23)19(17(31)13(9)27)34-20-18(32)16(30)14(28)10(5-24)33-20/h1,7-32H,2-5H2/t7-,8+,9+,10?,11-,12+,13?,14-,15+,16?,17-,18?,19-,20+/m1/s1
-  standard_inchi_key: JARYYMUOCXVXNK-KIMQLNGNSA-N
-  stereo_complete: false
+  smiles: C1[C@@H]([C@H]([C@@H]([C@H]([C@H]1N[C@H]2C=C([C@H]([C@@H]([C@H]2O)O)O)CO)O)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O)CO
+  standard_inchi: InChI=1S/C20H35NO13/c22-3-6-1-8(12(26)15(29)11(6)25)21-9-2-7(4-23)19(17(31)13(9)27)34-20-18(32)16(30)14(28)10(5-24)33-20/h1,7-32H,2-5H2/t7-,8+,9+,10-,11-,12+,13+,14-,15+,16+,17-,18-,19-,20+/m1/s1
+  standard_inchi_key: JARYYMUOCXVXNK-CSLFJTBJSA-N
+  stereo_complete: true
   structure_source: MIBIG
-  structure_source_id: mibig:BGC0000722
+  structure_source_id: mibig:BGC0000701
 np_pathway: CARBOHYDRATES
+definition: A member of the class of validamycins that is (1R,2S,3S,4S,6R)-4-amino-6-(hydroxymethyl)cyclohexane-1,2,3-triol
+  in which the hydroxy group at position 1 has been converted to its β-D-glucoside
+  and in which one of the hydrogens attached to the nitrogen is replaced by a (1R,4R,5R,6S)-4,5,6-trihydroxy-3-(hydroxymethyl)cyclohex-2-en-1-yl
+  group. It is the major validamycin produced by Streptomyces hygroscopicus.
+definition_source: CHEBI:29703
+synonyms:
+- value: jinggangmycin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000701
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,96 +27,82 @@ np_classification:
   class_results:
   - Amino cyclitols
   is_glycoside: true
+occurrences:
+- taxon_label: Streptomyces hygroscopicus
+  source: CHEBI
+  evidence:
+  - reference: PMID:5549382
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:29703
+  taxon_id: NCBITaxon:1912
+  taxon_source: NCBITaxon
+- taxon_label: Streptomyces hygroscopicus subsp. limoneus
+  source: CHEBI
+  evidence:
+  - reference: PMID:22961651
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:29703
+  taxon_id: NCBITaxon:264445
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:29703
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
-- OTHER
 - SACCHARIDE
 xrefs:
-- npatlas:NPA021209
+- pubchem:443629
 producer_organisms:
-- taxon_id: NCBITaxon:311982
-  taxon_label: Streptomyces hygroscopicus subsp. jinggangensis
-  evidence_basis: BGC_CHARACTERIZED
-  biosynthetic_gene_cluster: mibig:BGC0000722
-  source: MIBIG
-  source_version: '5'
-  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
-    expression correlated with compound production. That evidence grades the LOCUS
-    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
-    question.'
-  evidence:
-  - reference: PMID:16632251
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000722 entry version 5; citation taken from the entry level
-- taxon_id: NCBITaxon:264445
-  taxon_label: Streptomyces hygroscopicus subsp. limoneus
+- taxon_id: NCBITaxon:228732
+  taxon_label: Streptomyces hygroscopicus subsp. yingchengensis
   evidence_basis: SOURCE_ASSERTION
-  biosynthetic_gene_cluster: mibig:BGC0000723
+  biosynthetic_gene_cluster: mibig:BGC0000701
   source: MIBIG
   source_version: '5'
   notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
     this field grades the taxon claim, which is a different question.'
   evidence:
-  - reference: PMID:16725283
+  - reference: PMID:16680521
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000723 entry version 5; citation taken from the entry level
+    notes: MIBiG BGC0000701 entry version 5; citation taken from the entry level
 biosynthetic_gene_clusters:
-- accession: mibig:BGC0000722
+- accession: mibig:BGC0000701
   entry_version: '5'
   entry_status: active
-  organism_taxon_id: NCBITaxon:311982
-  organism_label: Streptomyces hygroscopicus subsp. jinggangensis
+  organism_taxon_id: NCBITaxon:228732
+  organism_label: Streptomyces hygroscopicus subsp. yingchengensis
   evidence:
-  - reference: PMID:16632251
+  - reference: PMID:16680521
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000722 entry version 5; citation taken from the entry level
-  genome_accession: genbank:DQ164098.1
+    notes: MIBiG BGC0000701 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ160226.1
   bgc_class:
-  - OTHER
-  - SACCHARIDE
-  locus_evidence_methods:
-  - Knock-out studies
-  - Enzymatic assays
-  - Heterologous expression
-  - Gene expression correlated with compound production
-  link_evidence_basis: CLUSTER_DEMONSTRATED
-- accession: mibig:BGC0000723
-  entry_version: '5'
-  entry_status: active
-  organism_taxon_id: NCBITaxon:264445
-  organism_label: Streptomyces hygroscopicus subsp. limoneus
-  evidence:
-  - reference: PMID:16725283
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000723 entry version 5; citation taken from the entry level
-  genome_accession: genbank:DQ223652.1
-  bgc_class:
-  - OTHER
   - SACCHARIDE
   link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
-  source_id: BGC0000722
-  source_label: validamycin A
+  source_id: BGC0000701
+  source_label: jinggangmycin
   source_version: '5'
-  minted_identifier: naturalproductmech:mibig-bba7e7bd7d
-- source: MIBIG
-  source_id: BGC0000723
+  minted_identifier: naturalproductmech:mibig-a83fe96fdb
+- source: CHEBI
+  source_id: CHEBI:29703
   source_label: validamycin A
-  source_version: '5'
-  minted_identifier: naturalproductmech:mibig-c4d9e73be0
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-fac4739aad
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
-- discussion_id: shared-structure
-  kind: CURATION_TODO
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
   status: OPEN
-  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000722, BGC0000723.
-    Confirm they describe the same compound rather than an upstream cross-reference
-    error.'
+  prompt: ChEBI calls this structure 'validamycin A' and MIBiG calls it 'jinggangmycin'.
+    They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T05:49:57Z'
+- timestamp: '2026-09-08T06:13:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

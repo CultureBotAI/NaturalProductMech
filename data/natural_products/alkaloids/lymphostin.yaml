@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-8a80de6dc1
+identifier: CHEBI:157684
 label: lymphostin
 chemical_structure:
   smiles: CO\C=C\C(=O)C1=NC2=C3C(C=NC3=C(N)C=C2NC(C)=O)=C1
@@ -8,6 +8,12 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001006
 np_pathway: ALKALOIDS
+definition: A member of the class of pyrroloquinolines that is pyrrolo[4,3,2-de]quinoline
+  in which the hydrogens at positions 4, 6 and 8 are replaced by (1E)-1-methoxy-3-oxoprop-1-en-3-yl,
+  acetylamino and amino groups, respectively. It is an alkaloid isolated from Streptomyces
+  and Salinispora species, exhibits potent immunosuppressive activity, and inhibits
+  Fyn and Lck protein kinases.
+definition_source: CHEBI:157684
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -17,6 +23,40 @@ np_classification:
   - Anthranilic acid alkaloids
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Salinispora arenicola CNS-205
+  source: CHEBI
+  evidence:
+  - reference: PMID:21815669
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:157684
+  taxon_id: NCBITaxon:391037
+  taxon_source: NCBITaxon
+- taxon_label: Salinispora pacifica
+  source: CHEBI
+  evidence:
+  - reference: PMID:21815669
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:157684
+  taxon_id: NCBITaxon:351187
+  taxon_source: NCBITaxon
+- taxon_label: Salinispora tropica CNB-440
+  source: CHEBI
+  evidence:
+  - reference: PMID:21815669
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:157684
+  taxon_id: NCBITaxon:369723
+  taxon_source: NCBITaxon
+- taxon_label: Streptomyces sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:9711243
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:157684
+  taxon_id: NCBITaxon:1931
+  taxon_source: NCBITaxon
+  detection_context: KY11783
 bgc_class:
 - NRPS
 - PKS
@@ -93,9 +133,12 @@ source_concepts:
   source_label: lymphostin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-e9a0e3b389
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:157684
+  source_label: lymphostin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-3709b2aaed
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -105,7 +148,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:13:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

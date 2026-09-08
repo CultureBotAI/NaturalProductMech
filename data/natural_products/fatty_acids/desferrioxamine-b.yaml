@@ -1,0 +1,215 @@
+identifier: CHEBI:4356
+label: desferrioxamine B
+chemical_structure:
+  smiles: CC(=O)N(O)CCCCCNC(=O)CCC(=O)N(O)CCCCCNC(=O)CCC(=O)N(O)CCCCCN
+  standard_inchi: InChI=1S/C25H48N6O8/c1-21(32)29(37)18-9-3-6-16-27-22(33)12-14-25(36)31(39)20-10-4-7-17-28-23(34)11-13-24(35)30(38)19-8-2-5-15-26/h37-39H,2-20,26H2,1H3,(H,27,33)(H,28,34)
+  standard_inchi_key: UBQYURCVBFRUQT-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000940
+np_pathway: FATTY_ACIDS
+definition: An acyclic desferrioxamine that is butanedioic acid in which one of the
+  carboxy groups undergoes formal condensation with the primary amino group of N-(5-aminopentyl)-N-hydroxyacetamide
+  and the second carboxy group undergoes formal condensation with the hydroxyamino
+  group of N1-(5-aminopentyl)-N1-hydroxy-N4-[5-(hydroxyamino)pentyl]butanediamide.
+  It is a siderophore native to Streptomyces pilosus biosynthesised by the DesABCD
+  enzyme cluster as a high affinity Fe(III) chelator.
+definition_source: CHEBI:4356
+synonyms:
+- value: desferrioxamin B
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000940
+- value: desferrioxamine
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000940
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Fatty acids
+  superclass_results:
+  - Fatty amides
+  class_results:
+  - N-acyl amines
+  is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces pilosus
+  source: CHEBI
+  evidence:
+  - reference: PMID:30701380
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:4356
+  taxon_id: NCBITaxon:28893
+  taxon_source: NCBITaxon
+- taxon_label: Streptomyces sviceus
+  source: CHEBI
+  evidence:
+  - reference: PMID:33784308
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:4356
+  taxon_id: NCBITaxon:285530
+  taxon_source: NCBITaxon
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA09012
+- pubchem:2973
+- npatlas:NPA009012
+producer_organisms:
+- taxon_id: NCBITaxon:100226
+  taxon_label: Streptomyces coelicolor A3(2)
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000940
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
+  evidence:
+  - reference: PMID:15600304
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000940 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:455632
+  taxon_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000941
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:18375553
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000941 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:41951
+  taxon_label: Streptomyces argillaceus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001453
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:29795673
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001453 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:1931
+  taxon_label: Streptomyces sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002305
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1016/j.tetlet.2018.11.063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002305 entry version 2; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000940
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:100226
+  organism_label: Streptomyces coelicolor A3(2)
+  evidence:
+  - reference: PMID:15600304
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000940 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AL645882.2
+  locus_from: 3033355
+  locus_to: 3040682
+  bgc_class:
+  - OTHER
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0000941
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:455632
+  organism_label: Streptomyces griseus subsp. griseus NBRC 13350
+  evidence:
+  - reference: PMID:18375553
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000941 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AP009493.1
+  locus_from: 5578822
+  locus_to: 5584948
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001453
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:41951
+  organism_label: Streptomyces argillaceus
+  evidence:
+  - reference: PMID:29795673
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001453 entry version 5; citation taken from the entry level
+  genome_accession: genbank:LT989883.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0002305
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1931
+  organism_label: Streptomyces sp.
+  evidence:
+  - reference: DOI:10.1016/j.tetlet.2018.11.063
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002305 entry version 2; citation taken from the entry level
+  genome_accession: genbank:MN509302.1
+  locus_from: 1
+  locus_to: 7452
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000940
+  source_label: desferrioxamin B
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-617be1064d
+- source: MIBIG
+  source_id: BGC0000941
+  source_label: desferrioxamin B
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-5f96fc42c1
+- source: MIBIG
+  source_id: BGC0001453
+  source_label: desferrioxamine
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-19548ca408
+- source: MIBIG
+  source_id: BGC0002305
+  source_label: desferrioxamine B
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-0592a3f4ed
+- source: CHEBI
+  source_id: CHEBI:4356
+  source_label: desferrioxamine B
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-ed94dcf9a3
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'desferrioxamine B' and MIBiG calls it 'desferrioxamin
+    B'. They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000940, BGC0000941,
+    BGC0001453, BGC0002305. Confirm they describe the same compound rather than an
+    upstream cross-reference error.'
+curation_history:
+- timestamp: '2026-09-08T06:13:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

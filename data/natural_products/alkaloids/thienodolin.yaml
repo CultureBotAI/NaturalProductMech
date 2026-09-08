@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-00c7b8ae54
+identifier: CHEBI:9543
 label: thienodolin
 chemical_structure:
   smiles: NC(=O)C1=CC2=C(NC3=C2C=CC(Cl)=C3)S1
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001374
 np_pathway: ALKALOIDS
+definition: An indole alkaloid that is a thienoindole ring with carboxamide group
+  and chlorine substituents at positions 2 and 6 respectively.
+definition_source: CHEBI:9543
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -56,12 +59,15 @@ source_concepts:
   source_label: thienodolin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-00c7b8ae54
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:9543
+  source_label: thienodolin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-6f0066322e
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:13:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

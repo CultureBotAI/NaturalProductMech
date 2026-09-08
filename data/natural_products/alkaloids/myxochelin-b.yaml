@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-50886ce110
+identifier: CHEBI:7061
 label: myxochelin B
 chemical_structure:
   smiles: C1=CC(=C(C(=C1)O)O)C(=O)NCCCC[C@@H](CN)NC(=O)C2=C(C(=CC=C2)O)O
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001345
 np_pathway: ALKALOIDS
+definition: A member of the class of benzamides obtained by formal condensation of
+  the 1- and 6-amino groups of hexane-1,2,6-triamine with the carboxy groups from
+  two molecules of 2,3-dihydroxybenzoic acid followed by reduction of the amide carbonyl
+  at position 5 to a hydroxy group.
+definition_source: CHEBI:7061
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -55,12 +60,15 @@ source_concepts:
   source_label: myxochelin B
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-50886ce110
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:7061
+  source_label: myxochelin B
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-ead0df2493
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

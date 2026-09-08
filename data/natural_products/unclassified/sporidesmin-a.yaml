@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-eea9bbd84b
+identifier: CHEBI:9243
 label: sporidesmin A
 chemical_structure:
   smiles: COC1=C(Cl)C=C2C(=C1OC)N(C)[C@@H]1N3C(=O)[C@@]4(C)SS[C@@]3(C(=O)N4C)[C@H](O)[C@]21O
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002438
 np_pathway: UNCLASSIFIED
+definition: An organic heteropentacyclic compound that has formula C18H20ClN3O6S2,
+  produced by the saprophyte fungus Pithomyces chartarum. It is a mycotoxin responsible
+  for the hepatogenous photosensitisation disease facial eczema in ruminants.
+definition_source: CHEBI:9243
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +23,24 @@ np_classification:
   class_results:
   - Indole diketopiperazine alkaloids (L-Trp, L-Ala)
   is_glycoside: false
+occurrences:
+- taxon_label: Delitschia sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:30016827
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:9243
+  taxon_id: NCBITaxon:2012369
+  taxon_source: NCBITaxon
+  detection_context: G858
+- taxon_label: Pithomyces chartarum
+  source: CHEBI
+  evidence:
+  - reference: PMID:16031836
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:9243
+  taxon_id: NCBITaxon:1547544
+  taxon_source: NCBITaxon
 bgc_class:
 - OTHER
 xrefs:
@@ -58,12 +80,15 @@ source_concepts:
   source_label: sporidesmin A
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-eea9bbd84b
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:9243
+  source_label: sporidesmin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-54c8e562ad
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

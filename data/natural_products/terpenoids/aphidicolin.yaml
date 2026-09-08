@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-cb5183b869
+identifier: CHEBI:2766
 label: aphidicolin
 chemical_structure:
   smiles: '[H][C@]12C[C@]3([H])C[C@]1(CC[C@]3(O)CO)[C@@]1(C)CC[C@@H](O)[C@@](C)(CO)[C@]1([H])CC2'
@@ -8,6 +8,12 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000676
 np_pathway: TERPENOIDS
+definition: A tetracyclic diterpenoid that has an tetradecahydro-8,11a-methanocyclohepta[a]naphthalene
+  skeleton with two hydroxymethyl substituents at positions 4 and 9, two methyl substituents
+  at positions 4 and 11b and two hydroxy substituents at positions 3 and 9. An antibiotic
+  with antiviral and antimitotical properties. Aphidicolin is a reversible inhibitor
+  of eukaryotic nuclear DNA replication.
+definition_source: CHEBI:2766
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +25,39 @@ np_classification:
   - Aphidicolane diterpenoids
   - Tetracyclic diterpenoids
   is_glycoside: false
+occurrences:
+- taxon_label: Aspergillus oryzae
+  source: CHEBI
+  evidence:
+  - reference: PMID:29191129
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:2766
+  taxon_id: NCBITaxon:5062
+  taxon_source: NCBITaxon
+- taxon_label: Cephalosporium aphidicola
+  source: CHEBI
+  evidence:
+  - reference: PMID:21812410
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:2766
+  taxon_id: NCBITaxon:291364
+  taxon_source: NCBITaxon
+- taxon_label: Tolypocladium inflatum
+  source: CHEBI
+  evidence:
+  - reference: PMID:21812410
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:2766
+  taxon_id: NCBITaxon:29910
+  taxon_source: NCBITaxon
+  notes: Ethylacetate extract and fungus isolated from a soil sample on fruiting body
+    of Cordyceps sinensis
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:2766
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - TERPENE
 xrefs:
@@ -62,12 +101,15 @@ source_concepts:
   source_label: aphidicolin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-cb5183b869
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:2766
+  source_label: aphidicolin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-5686534709
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:13:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

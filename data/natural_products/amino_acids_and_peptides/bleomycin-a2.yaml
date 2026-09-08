@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-64194246dd
+identifier: CHEBI:3139
 label: bleomycin A2
 chemical_structure:
   smiles: CC1=C(N=C(N=C1N)[C@H](CC(=O)N)NC[C@@H](C(=O)N)N)C(=O)N[C@@H]([C@H](C2=CN=CN2)O[C@H]3[C@H]([C@H]([C@@H]([C@@H](O3)CO)O)O)O[C@@H]4[C@H]([C@H]([C@@H]([C@H](O4)CO)O)OC(=O)N)O)C(=O)N[C@H](C)[C@H]([C@H](C)C(=O)N[C@@H]([C@@H](C)O)C(=O)NCCC5=NC(=CS5)C6=NC(=CS6)C(=O)NCCC[S+](C)C)O
@@ -19,6 +19,22 @@ np_classification:
   - Bleomycins
   - Linear peptides
   is_glycoside: true
+occurrences:
+- taxon_label: Streptomyces verticillus
+  source: CHEBI
+  evidence:
+  - reference: PMID:21210656
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:3139
+  taxon_id: NCBITaxon:29309
+  taxon_source: NCBITaxon
+  detection_context: ATCC15003
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:3139
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 - PKS
@@ -64,12 +80,15 @@ source_concepts:
   source_label: bleomycin A2
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-64194246dd
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:3139
+  source_label: bleomycin A2
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-359bcacd55
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

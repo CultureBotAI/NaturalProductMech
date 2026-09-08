@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-5a6a183513
+identifier: CHEBI:90941
 label: sibiromycin
 chemical_structure:
   smiles: CN[C@H]1[C@H](C)O[C@@H](OC2=CC3=C(N[C@H](O)[C@@H]4CC(\C=C\C)=CN4C3=O)C(O)=C2C)[C@H](O)[C@]1(C)O
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000428
 np_pathway: CARBOHYDRATES
+definition: An aminoglycoside antibiotic produced by Streptosporangium sibiricum that
+  also exhibits antitumour properties.
+definition_source: CHEBI:90941
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +21,21 @@ np_classification:
   class_results:
   - Aminoglycosides
   is_glycoside: true
+occurrences:
+- taxon_label: Streptosporangium sibiricum
+  source: CHEBI
+  evidence:
+  - reference: PMID:25960001
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:90941
+  taxon_id: NCBITaxon:457432
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:90941
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 xrefs:
@@ -56,12 +74,15 @@ source_concepts:
   source_label: sibiromycin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-5a6a183513
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:90941
+  source_label: sibiromycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-dcb5b100f7
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

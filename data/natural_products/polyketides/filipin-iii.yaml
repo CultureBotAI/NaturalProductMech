@@ -1,0 +1,132 @@
+identifier: CHEBI:83267
+label: filipin III
+chemical_structure:
+  smiles: CCCCC[C@@H](O)[C@@H]1[C@@H](O)C[C@@H](O)C[C@@H](O)C[C@@H](O)C[C@@H](O)C[C@@H](O)C[C@H](O)\C(C)=C\C=C\C=C\C=C\C=C\[C@H](O)[C@@H](C)OC1=O
+  standard_inchi: InChI=1S/C35H58O11/c1-4-5-11-16-31(42)34-33(44)22-29(40)20-27(38)18-25(36)17-26(37)19-28(39)21-32(43)23(2)14-12-9-7-6-8-10-13-15-30(41)24(3)46-35(34)45/h6-10,12-15,24-34,36-44H,4-5,11,16-22H2,1-3H3/b7-6+,10-8+,12-9+,15-13+,23-14+/t24-,25+,26-,27+,28-,29+,30+,31-,32+,33+,34-/m1/s1
+  standard_inchi_key: IMQSIXYSKPIGPD-YQRUMEKGSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002789
+np_pathway: POLYKETIDES
+definition: A macrolide that is the major component of a mixture of four isomeric
+  polyene macrolides isolated from Streptomyces filipinensis.
+definition_source: CHEBI:83267
+synonyms:
+- value: filipin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002789
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Polyene macrolides
+  is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces filipinensis
+  source: CHEBI
+  evidence:
+  - reference: PMID:5453318
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:83267
+  taxon_id: NCBITaxon:66887
+  taxon_source: NCBITaxon
+bgc_class:
+- PKS
+xrefs:
+- pubchem:25439
+- chebi:83267
+- npatlas:NPA032748
+- pubchem:6433194
+producer_organisms:
+- taxon_id: NCBITaxon:1914
+  taxon_label: Streptomyces lavendulae strain YAKB-15
+  evidence_basis: BGC_CORRELATED
+  biosynthetic_gene_cluster: mibig:BGC0002789
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Gene expression correlated with compound production. That
+    evidence grades the LOCUS as CLUSTER_CORRELATED; this field grades the taxon claim,
+    which is a different question.'
+  evidence:
+  - reference: DOI:10.1007/s00253-023-12672-4
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002789 entry version 2; citation taken from the entry level
+- taxon_id: NCBITaxon:227882
+  taxon_label: Streptomyces avermitilis MA-4680 = NBRC 14893
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000059
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:23990133
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000059 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002789
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1914
+  organism_label: Streptomyces lavendulae strain YAKB-15
+  evidence:
+  - reference: DOI:10.1007/s00253-023-12672-4
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002789 entry version 2; citation taken from the entry level
+  genome_accession: genbank:SMSN01000006.1
+  locus_from: 1
+  locus_to: 77196
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_CORRELATED
+- accession: mibig:BGC0000059
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:227882
+  organism_label: Streptomyces avermitilis MA-4680 = NBRC 14893
+  evidence:
+  - reference: PMID:23990133
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000059 entry version 5; citation taken from the entry level
+  genome_accession: genbank:BA000030.3
+  locus_from: 486648
+  locus_to: 567017
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002789
+  source_label: filipin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-40a8edba75
+- source: MIBIG
+  source_id: BGC0000059
+  source_label: filipin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-cdb6216cd5
+- source: CHEBI
+  source_id: CHEBI:83267
+  source_label: filipin III
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-a19794f4c9
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000059, BGC0002789.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T06:13:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-5dbdb8c6c0
+identifier: CHEBI:73877
 label: astechrome
 chemical_structure:
   smiles: C/C(C)=C\CC1=CC=CC2=C1NC=C2CC(N3O[Fe](ON4C(CC5=CNC6=C5C=CC=C6C/C=C(C)\C)=C(N=C(C4=O)C)OC)ON7C(CC8=CNC9=C8C=CC=C9C/C=C(C)\C)=C(N=C(C7=O)C)OC)=C(N=C(C3=O)C)OC
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000372
 np_pathway: UNCLASSIFIED
+definition: An iron(III) hydroxamate based pigment isolated from Aspergillus terreus
+  and later found in Aspergillus fumigatus.
+definition_source: CHEBI:73877
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -58,12 +61,15 @@ source_concepts:
   source_label: astechrome
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-5dbdb8c6c0
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:73877
+  source_label: astechrome
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-bc12d9c924
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:13:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

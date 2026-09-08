@@ -45,6 +45,41 @@ npclassifier:
   # Pinned per release; recorded on every record in `np_classification`.
   model_version: null
 
+chebi:
+  name: ChEBI
+  description: >-
+    Chemical Entities of Biological Interest. Identity, structures, definitions,
+    synonyms, and the specialized-metabolite roles that admit a compound.
+  flat_files_base: https://ftp.ebi.ac.uk/pub/databases/chebi/flat_files/
+  homepage: https://www.ebi.ac.uk/chebi/
+  license: CC BY 4.0
+  # 3-star entries are manually curated; 2-star entries are automatically
+  # imported and are NOT seeded, because an automatic import is exactly where an
+  # unreviewed role assertion enters.
+  min_stars: 3
+  # WHAT THIS SOURCE DOES TODAY: grounding and occurrences, not admission.
+  # A compound enters the corpus from MIBiG; ChEBI then supplies its identity
+  # where a structure matches, and its cited compound_origins as occurrences.
+  #
+  # Role-based ADMISSION — PLAN.md 2.2's third route, where an allow-listed
+  # specialized-metabolite role admits a compound MIBiG never saw — is not
+  # implemented. It needs the role edges from relation.tsv, which this
+  # extractor does not read. `conf/np_roles.tsv` holds the reviewed decisions
+  # for that route and is deliberately NOT named here: naming a file the
+  # pipeline ignores is how a config starts lying (#23).
+  fills: [identity, occurrences]
+
+antibioticmech:
+  name: AntibioticMech
+  description: >-
+    The sibling Mech corpus, pinned at a commit. Supplies the InChIKey
+    inventory that computes cross-corpus links, so a compound present in both
+    keeps its antimicrobial mechanism there and is linked from here rather than
+    duplicated.
+  homepage: https://github.com/CultureBotAI/AntibioticMech
+  license: CC BY 4.0
+  fills: related_records
+
 # ---------------------------------------------------------------------------
 # Scope
 # ---------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-82383ea55c
+identifier: CHEBI:74221
 label: aspernidine A
 chemical_structure:
   smiles: CC(=CCC/C(=C/CC/C(=C/COC1=C(C=C2C(=C1O)CNC2=O)OC)/C)/C)C
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001722
 np_pathway: ALKALOIDS
+definition: A member of the class of isoindoles that is isoindolin-1-one which is
+  substituted at positions 4, 5 and 6 by hydroxy, triprenyloxy and methoxy groups,
+  respectively. The alkaloid was isolated from the model fungus Aspegillus nidulans.
+definition_source: CHEBI:74221
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -59,12 +63,15 @@ source_concepts:
   source_label: aspernidine A
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-82383ea55c
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:74221
+  source_label: aspernidine A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-e3454587f3
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

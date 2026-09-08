@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-1d1db20787
+identifier: CHEBI:78688
 label: 2,4-diacetylphloroglucinol
 chemical_structure:
   smiles: CC(=O)C1=C(C(=C(C=C1O)O)C(=O)C)O
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000280
 np_pathway: POLYKETIDES
+definition: A benzenetriol that is phloroglucinol in which two of the ring hydrogens
+  are replaced by acetyl groups.
+definition_source: CHEBI:78688
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +21,37 @@ np_classification:
   class_results:
   - Acyl phloroglucinols
   is_glycoside: false
+occurrences:
+- taxon_label: Lysobacter gummosus
+  source: CHEBI
+  evidence:
+  - reference: PMID:18058176
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:78688
+  taxon_id: NCBITaxon:262324
+  taxon_source: NCBITaxon
+- taxon_label: Pseudomonas fluorescens PF5
+  source: CHEBI
+  evidence:
+  - reference: PMID:15826166
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:78688
+  taxon_id: NCBITaxon:1218948
+  taxon_source: NCBITaxon
+- taxon_label: Pseudomonas protegens PF5
+  source: CHEBI
+  evidence:
+  - reference: PMID:24742073
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:78688
+  taxon_id: NCBITaxon:220664
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:78688
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 xrefs:
@@ -89,9 +123,12 @@ source_concepts:
   source_label: 2,4-diacetylphloroglucinol
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-c379a0a11e
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:78688
+  source_label: 2,4-diacetylphloroglucinol
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-249796da94
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -101,7 +138,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

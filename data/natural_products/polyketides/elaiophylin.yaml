@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-a6c20a48c5
+identifier: CHEBI:77879
 label: elaiophylin
 chemical_structure:
   smiles: CC[C@H]1[C@@H](C[C@](O[C@@H]1C)(O)[C@H]([C@H](O)[C@@H]([C@H]2OC(=O)/C=C/C=C/[C@@H]([C@H](OC(=O)/C=C/C=C/[C@@H]2C)[C@H]([C@@H](O)[C@@H]([C@@]3(O[C@@H]([C@H]([C@@H](C3)O[C@@H]4O[C@H]([C@H]([C@H](C4)O)O)C)CC)C)O)C)C)C)C)C)O[C@@H]5O[C@H]([C@H]([C@H](C5)O)O)C
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000053
 np_pathway: POLYKETIDES
+definition: A macrodiolide that is isolated from several bacteria including Streptomyces
+  violaceoniger and other soil actinomycetes.
+definition_source: CHEBI:77879
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +21,12 @@ np_classification:
   class_results:
   - Bafilomycins
   is_glycoside: true
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:77879
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 xrefs:
@@ -55,12 +64,15 @@ source_concepts:
   source_label: elaiophylin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-a6c20a48c5
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:77879
+  source_label: elaiophylin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-bc4ff91e7f
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

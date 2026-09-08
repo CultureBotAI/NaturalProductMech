@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-83d7d3a502
+identifier: CHEBI:63465
 label: marneral
 chemical_structure:
   smiles: C[C@@H]1CCC(=C(C)C)[C@H]([C@]1(C)CC/C=C(\C)/CC/C=C(\C)/CCC=C(C)C)CCC=O
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000669
 np_pathway: TERPENOIDS
+definition: A triterpenoid and aldehyde that is 3-cyclohexylpropanal in which the
+  cyclohexyl group is substituted by methyl groups at positions 2 and 3, by an (E,E)-4,8,12-trimethyltrideca-3,7,11-trien-1-yl
+  group at position 2, and by a propan-2-ylidene group at position 6 (the 1S,2R,3R-enantiomer).
+definition_source: CHEBI:63465
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -61,12 +65,15 @@ source_concepts:
   source_label: marneral
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-83d7d3a502
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:63465
+  source_label: marneral
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-91242769f2
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:13:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-48128e1f88
+identifier: CHEBI:219836
 label: anditomin
 chemical_structure:
   smiles: C=C1C2C(=O)[C@]3(C)C[C@@H]4C(=O)OC[C@]14[C@@]1(CC[C@H]4C(C)(C)OC(=O)C=C[C@]4(C)[C@H]21)C3
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002612
 np_pathway: UNCLASSIFIED
+definition: A meroterpenoid with formula C25H30O5. It is isolated from the fungus
+  Aspergillus stellatus.
+definition_source: CHEBI:219836
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +22,16 @@ np_classification:
   class_results:
   - Tetraketide meroterpenoids
   is_glycoside: false
+occurrences:
+- taxon_label: Aspergillus stellatus
+  source: CHEBI
+  evidence:
+  - reference: 10.1039/c39810000914
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:219836
+  taxon_id: NCBITaxon:1549217
+  taxon_source: NCBITaxon
+  notes: Species also known as Aspergillus variecolor.
 bgc_class:
 - TERPENE
 xrefs:
@@ -61,12 +74,15 @@ source_concepts:
   source_label: anditomin
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-48128e1f88
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:219836
+  source_label: anditomin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-a29508a138
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:13:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

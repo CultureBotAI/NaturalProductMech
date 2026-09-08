@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-5686583eac
+identifier: CHEBI:140442
 label: 12-epi-fischerindole U isonitrile
 chemical_structure:
   smiles: CC1(C)[C@H]2CC[C@@](C)(C=C)[C@H]([N+]#[C-])[C@@H]2C2=C1NC1=CC=CC=C21
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000668
 np_pathway: ALKALOIDS
+definition: A tetracyclic indole alkaloid that is produced by the Stigonematales genus
+  of cyanobacteria.
+definition_source: CHEBI:140442
+synonyms:
+- value: 12-epi-fischerindole U
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000668
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +25,16 @@ np_classification:
   class_results:
   - Hapalindole alkaloids
   is_glycoside: false
+occurrences:
+- taxon_label: Hapalosiphon welwitschii
+  source: CHEBI
+  evidence:
+  - reference: PMID:27348090
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:140442
+  taxon_id: NCBITaxon:1433842
+  taxon_source: NCBITaxon
+  detection_context: UTEX B 1830
 bgc_class:
 - TERPENE
 - OTHER
@@ -64,12 +81,15 @@ source_concepts:
   source_label: 12-epi-fischerindole U isonitrile
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-5686583eac
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:140442
+  source_label: 12-epi-fischerindole U
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-1b9494350f
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:13:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

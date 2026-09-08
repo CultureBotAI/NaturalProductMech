@@ -45,17 +45,22 @@ by pathway (the filing decision, computed):
 by curation status:
   SEEDED                               3115
 
+by grounding status:
+  EXACT                                 362
+  MINTED                               2744
+  REVIEW_NEEDED                           9
+
 field coverage (records carrying at least one item):
   producer_organisms                   3115
-  occurrences                             0
+  occurrences                           192
   biosynthetic_gene_clusters           3115
   biosynthetic_pathway                    0
   bioactivities                           0
   bioactivity_summary                     0
   molecular_targets                       0
   causal_graphs                           0
-  related_records                         0
-  discussions                           238
+  related_records                       205
+  discussions                           286
 
 producer claims: 3449 (806 causal, 171 correlational)
   BGC_CHARACTERIZED                     806

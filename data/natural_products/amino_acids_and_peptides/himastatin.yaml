@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-379a9bc917
+identifier: CHEBI:190009
 label: himastatin
 chemical_structure:
   smiles: '[H][C@@]12NC3=CC=C(C=C3[C@]1(O)C[C@@H]1N2C(=O)[C@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H]2C[C@@H](O)CNN2C(=O)[C@@H](OC(=O)[C@H](NC1=O)C(C)C)C(C)C)[C@H](C)O)C1=CC=C2N[C@@]3([H])N4[C@@H](C[C@@]3(O)C2=C1)C(=O)N[C@H](C(C)C)C(=O)O[C@@H](C(C)C)C(=O)N1NC[C@H](O)C[C@@H]1C(=O)N[C@@H](CC(C)C)C(=O)N[C@H]([C@H](C)O)C4=O'
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001117
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+definition: A dimeric cyclohexadepsipeptide with formula C72H104N14O20. It is an antibiotic
+  isolated from Streptomyces hygroscopicus and exhibits antitumor and antibacterial
+  activity.
+definition_source: CHEBI:190009
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +23,21 @@ np_classification:
   - Cyclic peptides
   - Depsipeptides
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces himastatinicus ATCC 53653
+  source: CHEBI
+  evidence:
+  - reference: PMID:2211363
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:190009
+  taxon_id: NCBITaxon:457427
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:190009
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 xrefs:
@@ -56,12 +75,15 @@ source_concepts:
   source_label: himastatin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-379a9bc917
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:190009
+  source_label: himastatin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-c6e9d52c8c
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

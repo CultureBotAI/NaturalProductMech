@@ -1,0 +1,123 @@
+identifier: CHEBI:29515
+label: ansamitocin P3
+chemical_structure:
+  smiles: C[C@@H]1[C@@H]2C[C@]([C@@H](/C=C/C=C(/CC3=CC(=C(C(=C3)OC)Cl)N(C(=O)C[C@@H]([C@]4([C@H]1O4)C)OC(=O)C(C)C)C)\C)OC)(NC(=O)O2)O
+  standard_inchi: InChI=1S/C32H43ClN2O9/c1-17(2)29(37)43-25-15-26(36)35(6)21-13-20(14-22(40-7)27(21)33)12-18(3)10-9-11-24(41-8)32(39)16-23(42-30(38)34-32)19(4)28-31(25,5)44-28/h9-11,13-14,17,19,23-25,28,39H,12,15-16H2,1-8H3,(H,34,38)/b11-9+,18-10+/t19-,23+,24-,25+,28+,31+,32+/m1/s1
+  standard_inchi_key: OPQNCARIZFLNLF-JBHFWYGFSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000020
+np_pathway: POLYKETIDES
+definition: A polyketide antibiotic that is isolated from Actinosynnema pretiosum
+  and also exhibits antitumour activity.
+definition_source: CHEBI:29515
+synonyms:
+- value: ansamitocin P-3
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000020
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Macrolides
+  class_results:
+  - Ansa macrolides
+  is_glycoside: false
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:29515
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:42198
+  taxon_label: Actinosynnema pretiosum subsp. auranticum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000020
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:12060743
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000020 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:103721
+  taxon_label: Actinosynnema pretiosum subsp. pretiosum
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001511
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:28881098
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001511 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000020
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:42198
+  organism_label: Actinosynnema pretiosum subsp. auranticum
+  evidence:
+  - reference: PMID:12060743
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000020 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AF453501.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001511
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:103721
+  organism_label: Actinosynnema pretiosum subsp. pretiosum
+  evidence:
+  - reference: PMID:28881098
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001511 entry version 5; citation taken from the entry level
+  genome_accession: genbank:KY489977.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000020
+  source_label: ansamitocin P-3
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-1fdd099f6b
+- source: MIBIG
+  source_id: BGC0001511
+  source_label: ansamitocin P-3
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-a6be252b81
+- source: CHEBI
+  source_id: CHEBI:29515
+  source_label: ansamitocin P3
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-fc9edce7b4
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'ansamitocin P3' and MIBiG calls it 'ansamitocin
+    P-3'. They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000020, BGC0001511.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T06:13:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

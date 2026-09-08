@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-7d84ebb59a
+identifier: CHEBI:90924
 label: aurachin A
 chemical_structure:
   smiles: '[H][C@@]1(CC2=C(O1)C(C)=N(=O)C1=CC=CC=C21)[C@@](C)(O)CC\C=C(/C)CCC=C(C)C'
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001343
 np_pathway: ALKALOIDS
+definition: An A-type aurichin that is 1,2-dihydrofuro[2,3-c]quinoline 5-oxide which
+  is substituted at position 2 by a (6E)-10-hydroxy-2,6-dimethylundeca-2,6-dien-10-yl
+  group and at position 4 by a methyl group (relative configuration shown). Found
+  in the myxobacterium Stigmatella aurantiaca strain Sg a15.
+definition_source: CHEBI:90924
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +24,31 @@ np_classification:
   class_results:
   - Quinoline alkaloids
   is_glycoside: false
+occurrences:
+- taxon_label: Stigmatella aurantiaca
+  source: CHEBI
+  evidence:
+  - reference: PMID:24367422
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:90924
+  taxon_id: NCBITaxon:41
+  taxon_source: NCBITaxon
+  detection_context: MYX-030
+- taxon_label: Stigmatella aurantiaca Sg a15
+  source: CHEBI
+  evidence:
+  - reference: PMID:18989924
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:90924
+  taxon_id: NCBITaxon:675526
+  taxon_source: NCBITaxon
+  detection_context: Sg a15
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:90924
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 xrefs:
@@ -57,12 +87,15 @@ source_concepts:
   source_label: aurachin A
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-7d84ebb59a
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:90924
+  source_label: aurachin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-eea58efc59
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:03Z'
+- timestamp: '2026-09-08T06:13:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-8b4122584e
+identifier: CHEBI:84711
 label: staphyloferrin A
 chemical_structure:
   smiles: O=C(O)[C@H](NC(CC(C(O)=O)(O)CC(O)=O)=O)CCCNC(CC(C(O)=O)(O)CC(O)=O)=O
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000944
 np_pathway: UNCLASSIFIED
+definition: A D-ornithine derivative obtained by formal condensation of the terminal
+  carboxy groups of two citric acid units with the two amino groups of D-ornithine.
+definition_source: CHEBI:84711
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -15,6 +18,16 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_label: Staphylococcus hyicus
+  source: CHEBI
+  evidence:
+  - reference: PMID:2379505
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:84711
+  taxon_id: NCBITaxon:1284
+  taxon_source: NCBITaxon
+  detection_context: DSM 20459
 bgc_class:
 - OTHER
 producer_organisms:
@@ -57,12 +70,15 @@ source_concepts:
   source_label: staphyloferrin A
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-8b4122584e
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:84711
+  source_label: staphyloferrin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-b29ca1d358
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:13:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

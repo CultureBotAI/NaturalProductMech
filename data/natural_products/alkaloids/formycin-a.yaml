@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-6a849fb574
+identifier: CHEBI:42452
 label: formycin A
 chemical_structure:
   smiles: C1=NC2=C(NN=C2C(=N1)N)[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O
@@ -17,6 +17,12 @@ np_classification:
   - Pseudoalkaloids
   class_results: []
   is_glycoside: false
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:42452
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - OTHER
 xrefs:
@@ -128,9 +134,12 @@ source_concepts:
   source_label: formycin A
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-05b765e7b0
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:42452
+  source_label: formycin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-80f4c35474
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -140,7 +149,7 @@ discussions:
     BGC0002282. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:57Z'
+- timestamp: '2026-09-08T06:13:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

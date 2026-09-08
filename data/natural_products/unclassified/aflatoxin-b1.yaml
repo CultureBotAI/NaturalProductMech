@@ -1,5 +1,5 @@
-identifier: naturalproductmech:mibig-7f4ae54687
-label: Aflatoxin B1
+identifier: CHEBI:2504
+label: aflatoxin B1
 chemical_structure:
   smiles: COc1cc2c(c3oc(=O)c4c(c13)CCC4=O)[C@@H]1C=CO[C@@H]1O2
   standard_inchi: InChI=1S/C17H12O6/c1-20-10-6-11-14(8-4-5-21-17(8)22-11)15-13(10)7-2-3-9(18)12(7)16(19)23-15/h4-6,8,17H,2-3H2,1H3/t8-,17+/m0/s1
@@ -8,8 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000006
 np_pathway: UNCLASSIFIED
+definition: An aflatoxin having a tetrahydrocyclopenta[c]furo[3',2':4,5]furo[2,3-h]chromene
+  skeleton with oxygen functionality at positions 1, 4 and 11.
+definition_source: CHEBI:2504
 synonyms:
-- value: aflatoxin B1
+- value: Aflatoxin B1
   synonym_type: RELATED_SYNONYM
   source: mibig:BGC0000006
 np_classification:
@@ -25,6 +28,15 @@ np_classification:
   - Aflatoxins
   - Simple coumarins
   is_glycoside: false
+occurrences:
+- taxon_label: Homo sapiens
+  source: CHEBI
+  evidence:
+  - reference: 10.1038/nbt.2488
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:2504
+  taxon_id: NCBITaxon:9606
+  taxon_source: NCBITaxon
 bgc_class:
 - PKS
 compound_classes:
@@ -196,9 +208,12 @@ source_concepts:
   source_label: Aflatoxin B1
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-fbfacdb076
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:2504
+  source_label: aflatoxin B1
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-2e4df2cd42
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -208,7 +223,7 @@ discussions:
     BGC0000008, BGC0000009, BGC0000011. Confirm they describe the same compound rather
     than an upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

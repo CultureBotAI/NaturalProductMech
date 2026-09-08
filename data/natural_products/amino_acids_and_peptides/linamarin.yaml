@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-d87c012884
+identifier: CHEBI:16441
 label: linamarin
 chemical_structure:
   smiles: CC(C)(C#N)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O
@@ -85,9 +85,12 @@ source_concepts:
   source_label: linamarin
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-9d564b52a2
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:16441
+  source_label: linamarin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-1ada0812d4
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -97,7 +100,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

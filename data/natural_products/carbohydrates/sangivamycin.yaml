@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-1586f46905
+identifier: CHEBI:85997
 label: sangivamycin
 chemical_structure:
   smiles: NC(=O)C1=CN([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)C2=C1C(N)=NC=N2
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000879
 np_pathway: CARBOHYDRATES
+definition: A nucleoside analogue that is adenosine in which the nitrogen at position
+  7 is replaced by a carbamoyl-substituted carbon. It is a potent inhibitor of protein
+  kinase C.
+definition_source: CHEBI:85997
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -56,12 +60,15 @@ source_concepts:
   source_label: sangivamycin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-1586f46905
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:85997
+  source_label: sangivamycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-68dbcd7c61
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:59Z'
+- timestamp: '2026-09-08T06:13:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

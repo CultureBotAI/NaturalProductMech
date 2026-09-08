@@ -39,9 +39,16 @@ is a rule.
 
 For each source concept, in order:
 
-1. **A ChEBI concept grounds to its own CURIE** when ChEBI supplies a default
-   structure. ChEBI is the identity authority here.
-2. **Otherwise the concept keeps a minted identifier**,
+1. **A structure matching exactly one 3-star ChEBI entry grounds to that
+   CURIE** (`EXACT`). ChEBI is the identity authority, and the record takes its
+   definition from there. Only entries ChEBI marks `default_structure` are
+   eligible: an alternative depiction is not what ChEBI considers canonical.
+2. **A structure matching several 3-star entries stays minted**, with
+   `grounding_status: REVIEW_NEEDED` and a note naming the candidates. ChEBI
+   keeps a compound and its zwitterion as separate entries sharing an
+   InChIKey, on purpose; picking one would overrule the people who own the
+   identifiers. Nine records are in this state.
+3. **Otherwise the concept keeps a minted identifier**,
    `naturalproductmech:<source>-<10-hex>`, hashed from `(source, source_id)`.
 
 The hash covers the source identifier, never the label. A minted CURIE is the
@@ -119,8 +126,14 @@ than lax: MIBiG asserts production and cites a report nobody here has read. It
 sits outside `CAUSAL_BASES`, so a consumer wanting demonstrated production
 filters it out.
 
-`occurrences` requires a citation and nothing more, because it claims less.
-A LOTUS row lands here whatever taxon it names.
+`occurrences` requires a citation and a resolvable taxon, and nothing more,
+because it claims less. ChEBI's `compound_origins` rows land here: ChEBI is
+recording where a compound was *found*, not what makes it, so nothing promotes
+them. A row naming a species with no numeric accession is dropped rather than
+carried — a name-only organism is a name-only join, which is a curation project
+rather than an extraction, and `Occurrence.taxon_id` is required so that it
+cannot slip through. That rule was written down after the guarded write path
+refused 1,146 such rows.
 
 **Three MIBiG fields that do not mean what they look like**, all verified
 against the 4.0 release:

@@ -4,6 +4,18 @@ upstream:
     version: '4.0'
     sha256: 986f1a69fb5eeb84fd7c0175ae921304c22fd5f8ed04c96d8c1c0c95a145837b
     bytes: 954258
+  compounds.tsv.gz:
+    url: https://ftp.ebi.ac.uk/pub/databases/chebi/flat_files/compounds.tsv.gz
+    sha256: a35fae723a53f4e5c94506e1660882d17250eccffa470cd735bab06dbf2d9f93
+    bytes: 6983335
+  structures.tsv.gz:
+    url: https://ftp.ebi.ac.uk/pub/databases/chebi/flat_files/structures.tsv.gz
+    sha256: b7b377cb1cc8e2019d5d8396fb98a279ac972cdf3f29c41ed01f22437938392a
+    bytes: 92817645
+  compound_origins.tsv.gz:
+    url: https://ftp.ebi.ac.uk/pub/databases/chebi/flat_files/compound_origins.tsv.gz
+    sha256: 9867bb02dd45bf4038c405f3220eacf3652b502bbef947dc01a1455c3c83ff88
+    bytes: 1023257
 inventories:
   mibig_compounds.tsv:
     rows: 3449
@@ -15,3 +27,18 @@ inventories:
     bytes: 744921
     sha256: 670ee2a98bdf91cd333e9c23e510585812094b519ce336d6ef47345c73df054b
     source: NPClassifier via https://npclassifier.gnps2.org/classify
+  chebi_structures.tsv:
+    rows: 45895
+    bytes: 12837983
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    source: ChEBI flat files, 3-star entries
+  chebi_origins.tsv:
+    rows: 17356
+    bytes: 1106002
+    sha256: ce7425f0df43650cadbfbe076011a482ee9b233ba9f53123e575836c725338e4
+    source: ChEBI flat files, 3-star entries
+  antibioticmech_inchikeys.tsv:
+    rows: 2909
+    bytes: 339259
+    sha256: 4280e69e98b9eb45b69d3e30ced0fbf8c286310632d55cf66ccf2a05106ca369
+    source: CultureBotAI/AntibioticMech at c5cfe06ce7a393222fb32f865f042b4eae1efcbf

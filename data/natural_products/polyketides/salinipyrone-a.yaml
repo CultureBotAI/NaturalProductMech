@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-2440534ddd
+identifier: CHEBI:156357
 label: salinipyrone A
 chemical_structure:
   smiles: CC[C@@H](O)[C@@H](C)\C=C(/C)\C=C\C1=C(C)C(O)=C(C)C(=O)O1
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001830
 np_pathway: POLYKETIDES
+definition: A member of the class of 2-pyranones that is 2H-pyran-2-one in which the
+  hydrogens at positions 3, 4, 5 and 6 are replaced by methyl, hydroxy, methyl and
+  (1E,3E,5S,6R)-6-hydroxy-3,5-dimethylocta-1,3-dienyl groups, respectively. It is
+  a polyketide isolated from the marine actinomycete Salinispora pacifica.
+definition_source: CHEBI:156357
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +23,17 @@ np_classification:
   class_results:
   - Open-chain polyketides
   is_glycoside: false
+occurrences:
+- taxon_label: Salinispora pacifica
+  source: CHEBI
+  evidence:
+  - reference: PMID:18321059
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156357
+  taxon_id: NCBITaxon:351187
+  taxon_source: NCBITaxon
+  detection_context: CNS-237
+  notes: cell suspension culture
 bgc_class:
 - PKS
 xrefs:
@@ -55,12 +71,15 @@ source_concepts:
   source_label: salinipyrone A
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-2440534ddd
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:156357
+  source_label: salinipyrone A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-49b4e8d7d0
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:03Z'
+- timestamp: '2026-09-08T06:13:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

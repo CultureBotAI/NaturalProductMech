@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-b9ba9a4ec2
+identifier: CHEBI:132426
 label: chondrochloren A
 chemical_structure:
   smiles: CCCC[C@@H](C)[C@H](O)[C@H](C)C(=O)C(\C)=C\[C@@H](OC)[C@@H](O)[C@@H](OC)C(=O)N\C=C/C1=CC=C(O)C(Cl)=C1
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000970
 np_pathway: POLYKETIDES
+definition: A monocarboxylic acid amide with formula C27H40ClNO7, that is produced
+  by Chondromyces crocatus and exhibits antibiotic properties.
+definition_source: CHEBI:132426
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +21,21 @@ np_classification:
   class_results:
   - Open-chain polyketides
   is_glycoside: false
+occurrences:
+- taxon_label: Chondromyces crocatus
+  source: CHEBI
+  evidence:
+  - reference: PMID:19171307
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:132426
+  taxon_id: NCBITaxon:52
+  taxon_source: NCBITaxon
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:132426
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 - PKS
@@ -59,12 +77,15 @@ source_concepts:
   source_label: chondrochloren A
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-b9ba9a4ec2
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:132426
+  source_label: chondrochloren A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-8e9433dc50
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:13:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -18,6 +18,35 @@ np_classification:
   class_results:
   - Vancomycins and Teicoplanins
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:9066767
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:65619
+  taxon_id: NCBITaxon:1931
+  taxon_source: NCBITaxon
+- taxon_label: Streptomyces sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:11473415
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:66093
+  taxon_id: NCBITaxon:1931
+  taxon_source: NCBITaxon
+  notes: axial-chiral isomer of complestatin
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:65619
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
+- corpus: AntibioticMech
+  identifier: CHEBI:66093
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 xrefs:
@@ -55,12 +84,24 @@ source_concepts:
   source_label: isocomplestatin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-08763e9bdc
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:65619
+  source_label: chloropeptin II
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-4a85e5927d
+- source: CHEBI
+  source_id: CHEBI:66093
+  source_label: isocomplestatin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-0b94d6d6d1
+grounding_status: REVIEW_NEEDED
+grounding_notes: 'This structure matches more than one 3-star ChEBI entry: CHEBI:65619,
+  CHEBI:66093. ChEBI keeps such entries separate on purpose — a compound and its zwitterion
+  share an InChIKey — so the identity is not picked here. A curator decides which
+  term this record is.'
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:57Z'
+- timestamp: '2026-09-08T06:13:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

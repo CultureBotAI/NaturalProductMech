@@ -1,0 +1,113 @@
+identifier: naturalproductmech:mibig-bba7e7bd7d
+label: validamycin A
+chemical_structure:
+  smiles: C1[C@@H]([C@H]([C@@H](C([C@H]1N[C@H]2C=C([C@H]([C@@H]([C@H]2O)O)O)CO)O)O)O[C@H]3C(C([C@@H](C(O3)CO)O)O)O)CO
+  standard_inchi: InChI=1S/C20H35NO13/c22-3-6-1-8(12(26)15(29)11(6)25)21-9-2-7(4-23)19(17(31)13(9)27)34-20-18(32)16(30)14(28)10(5-24)33-20/h1,7-32H,2-5H2/t7-,8+,9+,10?,11-,12+,13?,14-,15+,16?,17-,18?,19-,20+/m1/s1
+  standard_inchi_key: JARYYMUOCXVXNK-KIMQLNGNSA-N
+  stereo_complete: false
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000722
+np_pathway: CARBOHYDRATES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Polyols
+  class_results:
+  - Amino cyclitols
+  is_glycoside: true
+bgc_class:
+- OTHER
+- SACCHARIDE
+xrefs:
+- npatlas:NPA021209
+producer_organisms:
+- taxon_id: NCBITaxon:311982
+  taxon_label: Streptomyces hygroscopicus subsp. jinggangensis
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0000722
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Knock-out studies|Enzymatic assays|Heterologous expression|Gene
+    expression correlated with compound production. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: PMID:16632251
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000722 entry version 5; citation taken from the entry level
+- taxon_id: NCBITaxon:264445
+  taxon_label: Streptomyces hygroscopicus subsp. limoneus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000723
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:16725283
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000723 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000722
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:311982
+  organism_label: Streptomyces hygroscopicus subsp. jinggangensis
+  evidence:
+  - reference: PMID:16632251
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000722 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ164098.1
+  bgc_class:
+  - OTHER
+  - SACCHARIDE
+  locus_evidence_methods:
+  - Knock-out studies
+  - Enzymatic assays
+  - Heterologous expression
+  - Gene expression correlated with compound production
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+- accession: mibig:BGC0000723
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:264445
+  organism_label: Streptomyces hygroscopicus subsp. limoneus
+  evidence:
+  - reference: PMID:16725283
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000723 entry version 5; citation taken from the entry level
+  genome_accession: genbank:DQ223652.1
+  bgc_class:
+  - OTHER
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000722
+  source_label: validamycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-bba7e7bd7d
+- source: MIBIG
+  source_id: BGC0000723
+  source_label: validamycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-c4d9e73be0
+grounding_status: MINTED
+grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
+  a content-hashed identifier.
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000722, BGC0000723.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T06:13:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

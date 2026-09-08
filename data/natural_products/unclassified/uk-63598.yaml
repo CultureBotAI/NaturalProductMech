@@ -1,5 +1,5 @@
-identifier: naturalproductmech:mibig-92bbcbfa5f
-label: UK-63598
+identifier: CHEBI:87399
+label: UK 63598
 chemical_structure:
   smiles: '[H][C@]12CS[C@@H](SC)[C@]([H])(N(C)C(=O)[C@H](C)NC(=O)[C@@H](COC(=O)[C@@]3(C[C@@H]3C)N(C)C1=O)NC(=O)C1=C(O)C=C3C=CC=CC3=N1)C(=O)N(C)[C@]1(C[C@@H]1C)C(=O)OC[C@@H](NC(=O)C1=C(O)C=C3C=CC=CC3=N1)C(=O)N[C@@H](C)C(=O)N2C'
   standard_inchi: InChI=1S/C53H62N10O14S2/c1-25-20-52(25)50(74)76-22-34(59-44(69)39-37(65)19-30-15-11-13-17-32(30)57-39)42(67)55-28(4)46(71)61(6)40-48(73)63(8)53(21-26(53)2)51(75)77-23-33(58-43(68)38-36(64)18-29-14-10-12-16-31(29)56-38)41(66)54-27(3)45(70)60(5)35(47(72)62(52)7)24-79-49(40)78-9/h10-19,25-28,33-35,40,49,64-65H,20-24H2,1-9H3,(H,54,66)(H,55,67)(H,58,68)(H,59,69)/t25-,26-,27-,28-,33+,34+,35-,40+,49+,52-,53-/m0/s1
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000434
 np_pathway: UNCLASSIFIED
+definition: A cyclodepsipeptide antibiotic that is isolated from Streptomyces sp.
+  SNA15896 and also exhibits antitumour activity.
+definition_source: CHEBI:87399
+synonyms:
+- value: UK-63598
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000434
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -20,6 +27,22 @@ np_classification:
   - Cyclic peptides
   - Depsipeptides
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces sp. SNA15896
+  source: CHEBI
+  evidence:
+  - reference: PMID:19514719
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:87399
+  taxon_id: NCBITaxon:497689
+  taxon_source: NCBITaxon
+  detection_context: SNA15896
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:87399
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - NRPS
 xrefs:
@@ -57,12 +80,22 @@ source_concepts:
   source_label: UK-63598
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-92bbcbfa5f
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:87399
+  source_label: UK 63598
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-4379d903a7
+grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'UK 63598' and MIBiG calls it 'UK-63598'. They
+    share a Standard InChIKey, so if the two names denote different compounds then
+    one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:13:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

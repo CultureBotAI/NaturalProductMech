@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-4ead026d35
+identifier: CHEBI:156148
 label: ascofuranone
 chemical_structure:
   smiles: CC1=C(C(=C(C(=C1Cl)O)C/C=C(\C)/CC/C=C(\C)/[C@@H]2CC(=O)C(O2)(C)C)O)C=O
@@ -8,6 +8,12 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001924
 np_pathway: UNCLASSIFIED
+definition: A dihydroxybenzaldehyde that is 2,4-dihydroxybenzaldehyde which is substituted
+  by a (2E,6E)-7-[(2S)-5,5-dimethyl-4-oxotetrahydrofuran-2-yl]-3-methylocta-2,6-dien-1-yl
+  group at position 3, chlorine at position 5, and a methyl group at position 6. A
+  meroterpenoid produced by the soil fungus, Acremonium sclerotigenum. It is a promising
+  drug candidate against the tropical disease, African trypanosomiasis.
+definition_source: CHEBI:156148
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +25,39 @@ np_classification:
   class_results:
   - Tetraketide meroterpenoids
   is_glycoside: false
+occurrences:
+- taxon_label: Acremonium sclerotigenum
+  source: CHEBI
+  evidence:
+  - reference: PMID:27804952
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156148
+  taxon_id: NCBITaxon:261921
+  taxon_source: NCBITaxon
+- taxon_label: Acremonium sp.
+  source: CHEBI
+  evidence:
+  - reference: 10.1021/np8006793
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156148
+  taxon_id: NCBITaxon:2046025
+  taxon_source: NCBITaxon
+- taxon_label: Ascochyta viciae
+  source: CHEBI
+  evidence:
+  - reference: PMID:4792115
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156148
+  taxon_id: NCBITaxon:1677696
+  taxon_source: NCBITaxon
+  detection_context: '34'
+  notes: Isolated from the filter cake of the fermented broth.
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:156148
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - TERPENE
 xrefs:
@@ -58,12 +97,15 @@ source_concepts:
   source_label: ascofuranone
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-4ead026d35
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:156148
+  source_label: ascofuranone
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-3a216b5512
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:01Z'
+- timestamp: '2026-09-08T06:13:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

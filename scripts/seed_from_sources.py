@@ -170,24 +170,37 @@ def slugify(label: str, identifier: str) -> str:
 PAPER_INTERNAL_NAME = re.compile(r"(?i)^(compound|metabolite|unnamed|unknown)?\s*\d+[a-z]?$")
 
 
-def choose_label(names: list[str]) -> tuple[str, list[str]]:
+# A chemical name extends its parent with punctuation far more often than with
+# a space: `tirucalla-7,24-dien-3β-ol`, `spirangien A1`, `xiamycin A`. Matching
+# only on a space left the vague name winning, which is the defect #16 fixed
+# for one delimiter and #22 found for the rest.
+EXTENSION_CHARS = (" ", "-", ",", "(")
+
+
+def _extends(longer: str, shorter: str) -> bool:
+    """True when `longer` is `shorter` plus a specifying suffix."""
+    a, b = longer.lower(), shorter.lower()
+    return a != b and a.startswith(b) and a[len(b):len(b) + 1] in EXTENSION_CHARS
+
+
+def choose_label(names: list[str], authoritative: str | None = None) -> tuple[str, list[str]]:
     """The record's label, and every other source name as a synonym.
 
     Chosen separately from the lead row, because the lead row is picked by
-    producer-evidence strength and has nothing to say about naming. Without
-    this, three records took a bare family name over the specific congener —
-    `xiamycin` over `xiamycin A` — which labels one structure with what is
-    really a class. Erythromycin came out right only because the accession
-    tie-break happened to favour the better row (#16).
+    producer-evidence strength and has nothing to say about naming.
 
-    Two rules, in order:
+    Three rules, in order:
 
-    1. **Specificity wins.** Drop any candidate that another candidate has as a
-       prefix: `erythromycin` loses to `erythromycin A`, because the record is
-       one structure and the bare name is the family.
-    2. **Deterministic case.** Among names equal but for case, prefer the one
-       that is not all-lowercase-by-accident, then sort. `Aflatoxin B1` and
-       `aflatoxin B1` must not depend on entry order.
+    1. **Specificity wins.** Drop any candidate that another candidate extends:
+       `erythromycin` loses to `erythromycin A`, and `tirucalla` loses to
+       `tirucalla-7,24-dien-3β-ol`. The record is one structure and the bare
+       name is the family.
+    2. **The identity authority wins.** Among what survives, prefer
+       `authoritative` — ChEBI's name, for a record grounded to a ChEBI term.
+       Without this, a deterministic sort chose MIBiG's `β-carotein` over
+       ChEBI's `β-carotene` because `i` sorts before `n` (#22).
+    3. **Deterministic case.** Otherwise collapse case variants and sort, so
+       `Aflatoxin B1` and `aflatoxin B1` do not depend on entry order.
 
     Every discarded name is returned as a synonym rather than thrown away.
     """
@@ -195,23 +208,64 @@ def choose_label(names: list[str]) -> tuple[str, list[str]]:
     if not unique:
         return "", []
 
-    # Rule 1: a name another name extends is the less specific one.
     specific = [
         name for name in unique
-        if not any(other.lower() != name.lower() and other.lower().startswith(name.lower() + " ")
-                   for other in unique)
+        if not any(_extends(other, name) for other in unique)
     ]
     candidates = specific or unique
 
-    # Rule 2: collapse case variants deterministically.
-    by_lower: dict[str, list[str]] = defaultdict(list)
-    for name in candidates:
-        by_lower[name.lower()].append(name)
-    best_key = sorted(by_lower)[0]
-    label = sorted(by_lower[best_key])[0]
+    if authoritative and authoritative.strip() in candidates:
+        label = authoritative.strip()
+    else:
+        by_lower: dict[str, list[str]] = defaultdict(list)
+        for name in candidates:
+            by_lower[name.lower()].append(name)
+        label = sorted(by_lower[sorted(by_lower)[0]])[0]
 
-    synonyms = [name for name in unique if name != label]
-    return label, synonyms
+    return label, [name for name in unique if name != label]
+
+
+# Typographic variants that are not disagreements: a Unicode minus against a
+# hyphen, a Greek Tau against a Latin T, and a leading stereo or positional
+# descriptor. Each produced false controversies (#24).
+# Applied AFTER lowercasing, so the Greek letters here are the lowercase
+# codepoints: an uppercase Tau has already become a lowercase tau by then, and
+# mapping only the uppercase form silently did nothing.
+_NAME_NOISE = str.maketrans({
+    "\u2212": "-", "\u2013": "-", "\u2014": "-",
+    "\u03c4": "t", "\u03b1": "a", "\u03b2": "b", "\u03b3": "g",
+})
+# Only descriptors that do NOT change which compound is meant: optical
+# rotation, absolute configuration, cis/trans. A Greek letter or a numeric
+# locant is NOT stripped — alpha-amyrin and beta-amyrin are different
+# compounds, and two sources disagreeing about that on one InChIKey is
+# precisely the upstream error this check exists to surface.
+_LEADING_DESCRIPTOR = re.compile(
+    r"^(\([+\-\u2212\u00b1]\)-|\([0-9rszeRSZE'`,\- ]+\)-|[+\-\u2212\u00b1]-|cis-|trans-|rel-)+",
+    re.IGNORECASE,
+)
+
+
+def _name_core(value: str) -> str:
+    """A name reduced to what a disagreement would have to be about."""
+    text = value.strip().lower().translate(_NAME_NOISE)
+    text = " ".join(text.split())
+    return _LEADING_DESCRIPTOR.sub("", text) or text
+
+
+def names_disagree(label: str, other: str) -> bool:
+    """True when two names for one structure differ substantively.
+
+    Case, whitespace and the discarded-synonym cases are not disagreements. A
+    grounded record whose sources call it two genuinely different things is,
+    because one of the two upstream records then has the wrong structure —
+    `astaxanthin` and `(2R,3S,3'S)-2-hydroxyastaxanthin` share an InChIKey in
+    the committed inventories and are not the same compound.
+    """
+    a, b = _name_core(label), _name_core(other)
+    if a == b or not a or not b:
+        return False
+    return not (_extends(a, b) or _extends(b, a))
 
 
 def mibig_evidence(row: dict[str, str]) -> list[dict[str, str]]:
@@ -268,6 +322,25 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         for row in inventories.get("npclassifier") or []
     }
 
+    # ChEBI, keyed by structure. A key matching more than one 3-star entry is
+    # NOT a resolution failure: ChEBI keeps a compound and its zwitterion as
+    # separate entries sharing an InChIKey, deliberately. Picking one would
+    # overrule the people who own the identifiers, so the record stays minted
+    # and says the identity needs adjudicating.
+    chebi_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in inventories.get("chebi_structures") or []:
+        chebi_by_key[row["standard_inchi_key"]].append(row)
+
+    origins_by_chebi: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in inventories.get("chebi_origins") or []:
+        origins_by_chebi[row["chebi_id"]].append(row)
+
+    # The sibling corpus, pinned. A compound in both keeps its antimicrobial
+    # mechanism there and is linked from here, never copied.
+    sibling_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in inventories.get("antibioticmech_inchikeys") or []:
+        sibling_by_key[row["standard_inchi_key"]].append(row)
+
     records: list[dict[str, Any]] = []
     for key, rows in sorted(group_by_structure(mibig_rows).items()):
         # Prefer the row with the strongest producer evidence as the record's
@@ -279,9 +352,37 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             r["mibig_accession"],
         ))
         lead = rows[0]
-        label, synonyms = choose_label([r["compound_name"] for r in rows])
+        minted = mint_identifier("MIBIG", lead["mibig_accession"] + ":" + lead["compound_index"])
+
+        chebi_matches = chebi_by_key.get(key) or []
+        name_candidates = [r["compound_name"] for r in rows]
+        authoritative = chebi_matches[0]["name"] if len(chebi_matches) == 1 else None
+        if authoritative:
+            name_candidates.append(authoritative)
+        label, synonyms = choose_label(name_candidates, authoritative=authoritative)
         label = label or key
-        identifier = mint_identifier("MIBIG", lead["mibig_accession"] + ":" + lead["compound_index"])
+
+        if len(chebi_matches) == 1:
+            identifier = chebi_matches[0]["chebi_id"]
+            grounding = "EXACT"
+            grounding_notes = ""
+        elif len(chebi_matches) > 1:
+            identifier = minted
+            grounding = "REVIEW_NEEDED"
+            grounding_notes = (
+                "This structure matches more than one 3-star ChEBI entry: "
+                + ", ".join(m["chebi_id"] for m in chebi_matches)
+                + ". ChEBI keeps such entries separate on purpose — a compound and "
+                "its zwitterion share an InChIKey — so the identity is not picked "
+                "here. A curator decides which term this record is."
+            )
+        else:
+            identifier = minted
+            grounding = "MINTED"
+            grounding_notes = (
+                "No 3-star ChEBI entry shares this structure, so the record keeps a "
+                "content-hashed identifier."
+            )
 
         classified = classification.get(key)
         pathway_results = [
@@ -302,6 +403,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             },
             "np_pathway": pathway,
         }
+        if len(chebi_matches) == 1 and chebi_matches[0]["definition"]:
+            doc["definition"] = chebi_matches[0]["definition"]
+            doc["definition_source"] = chebi_matches[0]["chebi_id"]
         if synonyms:
             doc["synonyms"] = [{"value": value, "synonym_type": "RELATED_SYNONYM",
                                 "source": "mibig:" + lead["mibig_accession"]}
@@ -388,6 +492,53 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 cluster["link_evidence_basis"] = row["cluster_link_evidence_basis"]
             clusters.append(cluster)
 
+        for match in chebi_matches:
+            source_concepts.append({
+                "source": "CHEBI",
+                "source_id": match["chebi_id"],
+                "source_label": match["name"],
+                "source_version": f"{match['stars']}-star",
+                "minted_identifier": mint_identifier("CHEBI", match["chebi_id"]),
+            })
+
+        # ChEBI's compound_origins records where a compound was FOUND. That is
+        # an occurrence and never a producer claim: ChEBI is not asserting that
+        # the organism biosynthesizes it, and the seeder does not promote.
+        occurrences: list[dict[str, Any]] = []
+        for match in chebi_matches:
+            for origin in origins_by_chebi.get(match["chebi_id"]) or []:
+                occurrence: dict[str, Any] = {
+                    "taxon_label": origin["species_text"],
+                    "source": "CHEBI",
+                    "evidence": [{
+                        "reference": f"PMID:{origin['source_accession']}"
+                        if origin["source_accession"].isdigit() else origin["source_accession"],
+                        "evidence_type": "DATABASE_ASSERTION",
+                        "notes": f"ChEBI compound origin for {match['chebi_id']}",
+                    }],
+                }
+                if origin["species_accession"].isdigit():
+                    occurrence["taxon_id"] = f"NCBITaxon:{origin['species_accession']}"
+                    occurrence["taxon_source"] = "NCBITaxon"
+                if origin["strain_text"]:
+                    occurrence["detection_context"] = origin["strain_text"]
+                context = " ".join(x for x in (origin["component_text"], origin["comments"]) if x)
+                if context:
+                    occurrence["notes"] = context[:400]
+                occurrences.append(occurrence)
+        if occurrences:
+            doc["occurrences"] = occurrences
+
+        links = [{
+            "corpus": "AntibioticMech",
+            "identifier": sibling["identifier"],
+            "relation": "SAME_STRUCTURE",
+            "basis": "SAME_INCHIKEY",
+            "source_version": sibling["corpus_commit"][:12],
+        } for sibling in sibling_by_key.get(key) or []]
+        if links:
+            doc["related_records"] = links
+
         if bgc_classes:
             doc["bgc_class"] = bgc_classes
         if compound_classes:
@@ -400,11 +551,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             doc["biosynthetic_gene_clusters"] = clusters
 
         doc["source_concepts"] = source_concepts
-        doc["grounding_status"] = "MINTED"
-        doc["grounding_notes"] = (
-            "Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG "
-            "compounds carry no ChEBI cross-reference."
-        )
+        doc["grounding_status"] = grounding
+        if grounding_notes:
+            doc["grounding_notes"] = grounding_notes
         doc["curation_status"] = "SEEDED"
 
         discussions: list[dict[str, Any]] = []
@@ -424,6 +573,25 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                     f"Resolve a name from the literature or a structure registry."
                 ),
             })
+
+        # One structure, two sources calling it genuinely different things:
+        # somebody's structure is wrong upstream, and no naming rule should
+        # quietly decide which (#22).
+        if authoritative:
+            for other in {r["compound_name"] for r in rows if r["compound_name"]}:
+                if names_disagree(label, other):
+                    discussions.append({
+                        "discussion_id": "name-disagreement",
+                        "kind": "CONTROVERSY",
+                        "status": "OPEN",
+                        "prompt": (
+                            f"ChEBI calls this structure {authoritative!r} and MIBiG calls "
+                            f"it {other!r}. They share a Standard InChIKey, so if the two "
+                            f"names denote different compounds then one upstream record has "
+                            f"the wrong structure. Check which."
+                        ),
+                    })
+                    break
 
         # A collision that survives must be visible, not silent.
         if len(rows) > 1 and len({r["mibig_accession"] for r in rows}) > 1:

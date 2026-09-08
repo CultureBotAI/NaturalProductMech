@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-488ec25b76
+identifier: CHEBI:30838
 label: itaconic acid
 chemical_structure:
   smiles: C=C(CC(=O)O)C(=O)O
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001286
 np_pathway: FATTY_ACIDS
+definition: A dicarboxylic acid that is methacrylic acid in which one of the methyl
+  hydrogens is substituted by a carboxylic acid group.
+definition_source: CHEBI:30838
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +21,15 @@ np_classification:
   class_results:
   - Dicarboxylic acids
   is_glycoside: false
+occurrences:
+- taxon_label: Homo sapiens
+  source: CHEBI
+  evidence:
+  - reference: PMID:23610393
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:30838
+  taxon_id: NCBITaxon:9606
+  taxon_source: NCBITaxon
 bgc_class:
 - OTHER
 xrefs:
@@ -57,12 +69,15 @@ source_concepts:
   source_label: itaconic acid
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-488ec25b76
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:30838
+  source_label: itaconic acid
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-1f27545fb3
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:13:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

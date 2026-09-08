@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-ada906fdce
+identifier: CHEBI:27547
 label: zeaxanthin
 chemical_structure:
   smiles: CC1=C(C(C[C@@H](C1)O)(C)C)/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C2=C(C[C@H](CC2(C)C)O)C)\C)\C)/C)/C
@@ -18,6 +18,27 @@ np_classification:
   class_results:
   - Carotenoids (C40, β-β)
   is_glycoside: false
+occurrences:
+- taxon_label: Hormoscilla
+  source: CHEBI
+  evidence:
+  - reference: PMID:21473610
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:27547
+  taxon_id: NCBITaxon:881023
+  taxon_source: NCBITaxon
+  notes: CH2Cl2/MeOH(2:1) extract of assemblage of two cyanobacteria, Oscillatoria
+    sp. and Hormoscilla sp.
+- taxon_label: Oscillatoria sp.
+  source: CHEBI
+  evidence:
+  - reference: PMID:21473610
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:27547
+  taxon_id: NCBITaxon:1159
+  taxon_source: NCBITaxon
+  notes: CH2Cl2/MeOH(2:1) extract of assemblage of two cyanobacteria, Oscillatoria
+    sp. and Hormoscilla sp.
 bgc_class:
 - TERPENE
 xrefs:
@@ -55,12 +76,15 @@ source_concepts:
   source_label: zeaxanthin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-ada906fdce
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:27547
+  source_label: zeaxanthin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-45aac490d6
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:57Z'
+- timestamp: '2026-09-08T06:13:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

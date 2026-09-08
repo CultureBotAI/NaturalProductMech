@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-2d819bf7fa
+identifier: CHEBI:15738
 label: staurosporine
 chemical_structure:
   smiles: C[C@@]12[C@@H]([C@@H](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)CNC6=O)NC)OC
@@ -18,6 +18,16 @@ np_classification:
   class_results:
   - Carbazole alkaloids
   is_glycoside: false
+occurrences:
+- taxon_label: Lentzea albida
+  source: CHEBI
+  evidence:
+  - reference: 10.7164/antibiotics.30.275
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:15738
+  taxon_id: NCBITaxon:65499
+  taxon_source: NCBITaxon
+  notes: Species also known as Streptomyces staurosporeus.
 bgc_class:
 - OTHER
 xrefs:
@@ -89,9 +99,12 @@ source_concepts:
   source_label: staurosporine
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-aaba50e78c
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:15738
+  source_label: staurosporine
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-8cad2d5d9c
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -101,7 +114,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:13:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

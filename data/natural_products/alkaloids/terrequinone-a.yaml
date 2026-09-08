@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-131d051d75
+identifier: CHEBI:64534
 label: terrequinone A
 chemical_structure:
   smiles: CC(C)=CCC1=C(C2=CNC3=C2C=CC=C3)C(=O)C(O)=C(C2=C(NC3=C2C=CC=C3)C(C)(C)C=C)C1=O
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000442
 np_pathway: ALKALOIDS
+definition: A bisindole alkaloid that is quinone bearing a hydroxy substituent at
+  position 2, a 3,3-dimethylallyl group at position 5 and two indol-3-yl groups at
+  positions 3 and 6, one of which is carrying a 1,1-dimethylallyl group at position
+  2.
+definition_source: CHEBI:64534
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -62,12 +67,15 @@ source_concepts:
   source_label: terrequinone A
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-131d051d75
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:64534
+  source_label: terrequinone A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-8d95677594
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:56Z'
+- timestamp: '2026-09-08T06:13:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

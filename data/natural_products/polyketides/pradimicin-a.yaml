@@ -1,5 +1,5 @@
-identifier: naturalproductmech:mibig-b1d3547b04
-label: pradimicin-A
+identifier: CHEBI:8349
+label: pradimicin A
 chemical_structure:
   smiles: '[H][C@](C)(NC(=O)C1=C(O)C2=C(C=C1C)[C@H](O[C@@H]1O[C@H](C)[C@H](NC)[C@H](O[C@@H]3OC[C@@H](O)[C@H](O)[C@H]3O)[C@H]1O)[C@@H](O)C1=CC3=C(C(O)=C21)C(=O)C1=C(C(O)=CC(OC)=C1)C3=O)C(O)=O'
   standard_inchi: InChI=1S/C40H44N2O18/c1-11-6-18-24(31(49)21(11)37(53)42-12(2)38(54)55)23-16(9-17-25(32(23)50)28(46)15-7-14(56-5)8-19(43)22(15)27(17)45)29(47)35(18)59-40-34(52)36(26(41-4)13(3)58-40)60-39-33(51)30(48)20(44)10-57-39/h6-9,12-13,20,26,29-30,33-36,39-41,43-44,47-52H,10H2,1-5H3,(H,42,53)(H,54,55)/t12-,13-,20-,26+,29+,30+,33-,34-,35+,36+,39+,40+/m1/s1
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000256
 np_pathway: POLYKETIDES
+definition: A member of the class of pradimicins that is isolated from the cultured
+  broth of Actinomadura hibisca No. P157-2 (ATCC 53557).
+definition_source: CHEBI:8349
+synonyms:
+- value: pradimicin-A
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000256
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +25,22 @@ np_classification:
   class_results:
   - Angucyclines
   is_glycoside: true
+occurrences:
+- taxon_label: Actinomadura hibisca
+  source: CHEBI
+  evidence:
+  - reference: 10.1021/jo00272a013
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:8349
+  taxon_id: NCBITaxon:68565
+  taxon_source: NCBITaxon
+  detection_context: ATCC 53557
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:8349
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 xrefs:
@@ -55,12 +78,22 @@ source_concepts:
   source_label: pradimicin-A
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-b1d3547b04
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:8349
+  source_label: pradimicin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-10aeee8090
+grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'pradimicin A' and MIBiG calls it 'pradimicin-A'.
+    They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:13:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

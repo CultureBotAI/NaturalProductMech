@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-2ff4117bf2
+identifier: CHEBI:133787
 label: pyranonigrin E
 chemical_structure:
   smiles: CCCCC\C=C\C=C\C1=C(O)C(=O)C2=C(O1)C(=C)N(C)C2=O
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001124
 np_pathway: POLYKETIDES
+definition: A member of the class of pyranopyrroles with formula C18H21NO4, originally
+  isolated from Aspergillus niger.
+definition_source: CHEBI:133787
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -55,12 +58,15 @@ source_concepts:
   source_label: pyranonigrin E
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-2ff4117bf2
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:133787
+  source_label: pyranonigrin E
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-ea0dd48d26
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:57Z'
+- timestamp: '2026-09-08T06:13:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

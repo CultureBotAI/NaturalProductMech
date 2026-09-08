@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-28a2b30db0
+identifier: CHEBI:156550
 label: pyrrolomycin A
 chemical_structure:
   smiles: C1=C(C(=C(N1)Cl)Cl)[N+](=O)[O-]
@@ -8,6 +8,12 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000130
 np_pathway: ALKALOIDS
+definition: A member of the class of pyrroles that is 1H-pyrrole which is substituted
+  by chloro groups at positions 2 and 3 and by a nitro group position 4. It is the
+  simplest member of the pyrrolomycins, a family of natural products found in several
+  species of the Streptomyces genus. The compound is active against Gram-positive
+  and Gram-negative bacteria and some genera of fungi.
+definition_source: CHEBI:156550
 synonyms:
 - value: pyrrolomycin
   synonym_type: RELATED_SYNONYM
@@ -22,6 +28,22 @@ np_classification:
   class_results:
   - Pyrrole alkaloids
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces vitaminophilus
+  source: CHEBI
+  evidence:
+  - reference: PMID:17158935
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156550
+  taxon_id: NCBITaxon:76728
+  taxon_source: NCBITaxon
+  detection_context: ATCC 31673
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:156550
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 xrefs:
@@ -119,9 +141,12 @@ source_concepts:
   source_label: pyrrolomycin
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-cab264600f
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:156550
+  source_label: pyrrolomycin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-0e634319e0
+grounding_status: EXACT
 curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
@@ -131,7 +156,7 @@ discussions:
     BGC0000132. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T05:49:54Z'
+- timestamp: '2026-09-08T06:13:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

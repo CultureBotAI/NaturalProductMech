@@ -1,5 +1,5 @@
-identifier: naturalproductmech:mibig-e5c9aeba25
-label: Botrydial
+identifier: CHEBI:3159
+label: botrydial
 chemical_structure:
   smiles: C[C@@H]1C[C@@H]([C@@H]2[C@]([C@H]1C=O)([C@@](CC2(C)C)(C)C=O)O)OC(=O)C
   standard_inchi: InChI=1S/C17H26O5/c1-10-6-13(22-11(2)20)14-15(3,4)8-16(5,9-19)17(14,21)12(10)7-18/h7,9-10,12-14,21H,6,8H2,1-5H3/t10-,12+,13+,14+,16-,17-/m1/s1
@@ -8,6 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000631
 np_pathway: TERPENOIDS
+definition: A cytotoxic fungal metabolite isolated from plant tissues infected by
+  phytopathogen Botrytis cinerea.
+definition_source: CHEBI:3159
+synonyms:
+- value: Botrydial
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000631
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -61,12 +68,15 @@ source_concepts:
   source_label: Botrydial
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-e5c9aeba25
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:3159
+  source_label: botrydial
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-53c2e95a92
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:13:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

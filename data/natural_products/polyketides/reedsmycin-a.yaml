@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-caafef3fa6
+identifier: CHEBI:219363
 label: reedsmycin A
 chemical_structure:
   smiles: CCC(C)C1OC(=O)/C=C/C=C/C=C/C=C/C=C/CC(O)CC(O)CC(O)CC(O)CC(O)CC(O)CC(O)CC(O)/C=C/C1C
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001755
 np_pathway: POLYKETIDES
+definition: A macrolide isolated from the reed rhizosphere soil-derived Streptomyces
+  sp. CHQ-64.
+definition_source: CHEBI:219363
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +21,31 @@ np_classification:
   class_results:
   - Polyene macrolides
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces sp.
+  source: CHEBI
+  evidence:
+  - reference: 10.1039/c4ra15415k
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:219363
+  taxon_id: NCBITaxon:1931
+  taxon_source: NCBITaxon
+  detection_context: CHQ-64
+- taxon_label: Streptomyces youssoufiensis
+  source: CHEBI
+  evidence:
+  - reference: PMID:29914489
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:219363
+  taxon_id: NCBITaxon:654447
+  taxon_source: NCBITaxon
+  detection_context: OUC6819
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:219363
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
 compound_classes:
@@ -59,12 +87,15 @@ source_concepts:
   source_label: reedsmycin A
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-caafef3fa6
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:219363
+  source_label: reedsmycin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-40e9b86f1f
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:02Z'
+- timestamp: '2026-09-08T06:13:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

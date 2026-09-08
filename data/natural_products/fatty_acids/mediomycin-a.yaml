@@ -1,13 +1,16 @@
-identifier: naturalproductmech:mibig-423ba2e941
+identifier: CHEBI:66687
 label: mediomycin A
 chemical_structure:
-  smiles: C[C@H]([C@H](/C=C/C=C/C=C/C=C/C=C/C=C/CC(C(C)C(=O)C[C@@H](C[C@@H](/C=C/C[C@@H](C[C@@H](C[C@H](/C=C/C[C@@H](C[C@H](/C=C/C[C@@H](C[C@@H](CCCN)O)O)O)O)O)O)O)O)O)OS(=O)(=O)O)O)[C@@H](C(C)/C=C/CC/C=C/C=C/C=C(\C)/C(=O)O)O
-  standard_inchi: InChI=1S/C62H97NO18S/c1-45(27-19-15-11-10-12-16-20-28-46(2)62(76)77)61(75)48(4)58(73)36-21-17-13-8-6-5-7-9-14-18-22-37-60(81-82(78,79)80)47(3)59(74)44-57(72)43-54(69)34-25-33-53(68)42-56(71)41-52(67)32-24-31-50(65)39-49(64)29-23-30-51(66)40-55(70)35-26-38-63/h5-10,12-14,16-25,27-29,32,34,36,45,47-58,60-61,64-73,75H,11,15,26,30-31,33,35,37-44,63H2,1-4H3,(H,76,77)(H,78,79,80)/b7-5+,8-6+,12-10+,14-9+,17-13+,20-16+,22-18+,27-19+,29-23+,32-24+,34-25+,36-21+,46-28+/t45?,47?,48-,49+,50+,51+,52+,53+,54-,55-,56-,57-,58+,60?,61-/m1/s1
-  standard_inchi_key: RDEZRSOXSQHNOU-XTQYLRKSSA-N
+  smiles: C[C@@H]([C@@H](/C=C/C=C/C=C/C=C/C=C/C=C/CC(C(C)C(=O)C[C@@H](C[C@@H](/C=C/C[C@@H](C[C@H](C[C@@H](/C=C/C[C@H](C[C@@H](/C=C/C[C@H](C[C@H](CCCN)O)O)O)O)O)O)O)O)O)OS(=O)(=O)O)O)[C@H](C(C)/C=C/CC/C=C/C=C/C=C(\C)/C(=O)O)O
+  standard_inchi: InChI=1S/C62H97NO18S/c1-45(27-19-15-11-10-12-16-20-28-46(2)62(76)77)61(75)48(4)58(73)36-21-17-13-8-6-5-7-9-14-18-22-37-60(81-82(78,79)80)47(3)59(74)44-57(72)43-54(69)34-25-33-53(68)42-56(71)41-52(67)32-24-31-50(65)39-49(64)29-23-30-51(66)40-55(70)35-26-38-63/h5-10,12-14,16-25,27-29,32,34,36,45,47-58,60-61,64-73,75H,11,15,26,30-31,33,35,37-44,63H2,1-4H3,(H,76,77)(H,78,79,80)/b7-5+,8-6+,12-10+,14-9+,17-13+,20-16+,22-18+,27-19+,29-23+,32-24+,34-25+,36-21+,46-28+/t45?,47?,48-,49+,50+,51+,52+,53-,54+,55-,56-,57+,58+,60?,61-/m0/s1
+  standard_inchi_key: RDEZRSOXSQHNOU-SMVKTZMVSA-N
   stereo_complete: false
   structure_source: MIBIG
-  structure_source_id: mibig:BGC0002356
+  structure_source_id: mibig:BGC0001662
 np_pathway: FATTY_ACIDS
+definition: A polyene antibiotic isolated from Streptomyces mediocidicus ATCC23936
+  and has been shown to exhibit a broad spectrum of antifungal activity.
+definition_source: CHEBI:66687
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,56 +21,72 @@ np_classification:
   class_results:
   - Unsaturated fatty acids
   is_glycoside: false
+occurrences:
+- taxon_label: Streptomyces mediocidicus
+  source: CHEBI
+  evidence:
+  - reference: PMID:17315962
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:66687
+  taxon_id: NCBITaxon:58352
+  taxon_source: NCBITaxon
+  detection_context: ATCC23936
+  notes: Mediomycin A(syn/anti relative configuration)
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:66687
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
 bgc_class:
 - PKS
-- OTHER
 xrefs:
-- npatlas:NPA001352
+- npatlas:NPA01352
+- pubchem:70697904
 producer_organisms:
-- taxon_id: NCBITaxon:68180
-  taxon_label: Streptomyces blastmyceticus
+- taxon_id: NCBITaxon:58352
+  taxon_label: Kitasatospora mediocidica
   evidence_basis: SOURCE_ASSERTION
-  biosynthetic_gene_cluster: mibig:BGC0002356
+  biosynthetic_gene_cluster: mibig:BGC0001662
   source: MIBIG
-  source_version: '3'
-  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
-    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
-    question.'
+  source_version: '4'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
-  - reference: PMID:28133950
+  - reference: PMID:29349495
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0002356 entry version 3; citation taken from the entry level
+    notes: MIBiG BGC0001662 entry version 4; citation taken from the entry level
 biosynthetic_gene_clusters:
-- accession: mibig:BGC0002356
-  entry_version: '3'
+- accession: mibig:BGC0001662
+  entry_version: '4'
   entry_status: active
-  organism_taxon_id: NCBITaxon:68180
-  organism_label: Streptomyces blastmyceticus
+  organism_taxon_id: NCBITaxon:58352
+  organism_label: Kitasatospora mediocidica
   evidence:
-  - reference: PMID:28133950
+  - reference: PMID:29349495
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0002356 entry version 3; citation taken from the entry level
-  genome_accession: genbank:LC208005.1
-  locus_from: 149
-  locus_to: 161671
+    notes: MIBiG BGC0001662 entry version 4; citation taken from the entry level
+  genome_accession: genbank:MF139773.1
+  locus_from: 6894
+  locus_to: 168396
   bgc_class:
   - PKS
-  - OTHER
-  locus_evidence_methods:
-  - Heterologous expression
-  link_evidence_basis: CLUSTER_DEMONSTRATED
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
-  source_id: BGC0002356
+  source_id: BGC0001662
   source_label: mediomycin A
-  source_version: '3'
-  minted_identifier: naturalproductmech:mibig-423ba2e941
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+  source_version: '4'
+  minted_identifier: naturalproductmech:mibig-4e20e9a4f4
+- source: CHEBI
+  source_id: CHEBI:66687
+  source_label: mediomycin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-6c323dca4c
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:13:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,73 @@
+identifier: naturalproductmech:mibig-9d6461095d
+label: compound 3
+chemical_structure:
+  smiles: '[H][C@]12[C@@](C[C@@H](C)C[C@H]2C)([H])[C@@H]3[C@@](C)(O3)[C@]([H])([C@H](C)CC)[C@]1(C)/C(O)=C/C([H])=O'
+  standard_inchi: InChI=1S/C21H34O3/c1-7-13(3)18-20(5,16(23)8-9-22)17-14(4)10-12(2)11-15(17)19-21(18,6)24-19/h8-9,12-15,17-19,23H,7,10-11H2,1-6H3/b16-8-/t12-,13+,14+,15-,17-,18+,19+,20+,21-/m0/s1
+  standard_inchi_key: PXUDDXPBZDEGAF-QMJXDUBLSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002165
+np_pathway: POLYKETIDES
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Cyclic polyketides
+  class_results:
+  - Decalins with side chains
+  is_glycoside: false
+bgc_class:
+- PKS
+producer_organisms:
+- taxon_id: NCBITaxon:321614
+  taxon_label: Parastagonospora nodorum SN15
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002165
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:31553484
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002165 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002165
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:321614
+  organism_label: Parastagonospora nodorum SN15
+  evidence:
+  - reference: PMID:31553484
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002165 entry version 3; citation taken from the entry level
+  genome_accession: genbank:CH445335.1
+  locus_from: 1238225
+  locus_to: 1260054
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002165
+  source_label: compound 3
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-9d6461095d
+grounding_status: MINTED
+grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
+  a content-hashed identifier.
+curation_status: SEEDED
+discussions:
+- discussion_id: needs-a-name
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: This record is labelled 'compound 3', which is a label from the cited paper's
+    own numbering rather than a compound name. Resolve a name from the literature
+    or a structure registry.
+curation_history:
+- timestamp: '2026-09-08T06:13:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

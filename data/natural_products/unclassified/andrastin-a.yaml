@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-7d141057cf
+identifier: CHEBI:142842
 label: andrastin A
 chemical_structure:
   smiles: '[H][C@]12CC[C@@]3(C)[C@@]([H])(C=C(C)[C@@]4(C)C(=O)C(C)=C(O)[C@@]34C(=O)OC)[C@@]1(CC[C@H](OC(C)=O)C2(C)C)C=O'
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001508
 np_pathway: UNCLASSIFIED
+definition: A 19-oxo steroid that is that is andrastin B in which the hydroxy group
+  at position 19 has been oxidised to give the corresponding aldehyde. A farnesyltransferase
+  inhibitor produced by Penicillium roqueforti, a filamentous fungus involved in the
+  ripening of several kinds of blue cheeses.
+definition_source: CHEBI:142842
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +24,64 @@ np_classification:
   class_results:
   - Tetraketide meroterpenoids
   is_glycoside: false
+occurrences:
+- taxon_label: Penicillium albocoremium
+  source: CHEBI
+  evidence:
+  - reference: PMID:16279417
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:142842
+  taxon_id: NCBITaxon:74831
+  taxon_source: NCBITaxon
+- taxon_label: Penicillium camponotum
+  source: CHEBI
+  evidence:
+  - reference: PMID:27616792
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:142842
+  taxon_id: NCBITaxon:2072477
+  taxon_source: NCBITaxon
+- taxon_label: Penicillium cataractarum
+  source: CHEBI
+  evidence:
+  - reference: PMID:27616792
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:142842
+  taxon_id: NCBITaxon:2100454
+  taxon_source: NCBITaxon
+- taxon_label: Penicillium costaricense
+  source: CHEBI
+  evidence:
+  - reference: PMID:27616792
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:142842
+  taxon_id: NCBITaxon:2100456
+  taxon_source: NCBITaxon
+- taxon_label: Penicillium roqueforti
+  source: CHEBI
+  evidence:
+  - reference: PMID:15826038
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:142842
+  taxon_id: NCBITaxon:5082
+  taxon_source: NCBITaxon
+- taxon_label: Penicillium roqueforti
+  source: CHEBI
+  evidence:
+  - reference: PMID:19837474
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:142842
+  taxon_id: NCBITaxon:5082
+  taxon_source: NCBITaxon
+- taxon_label: Penicillium simplicissimum
+  source: CHEBI
+  evidence:
+  - reference: PMID:8682716
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:142842
+  taxon_id: NCBITaxon:69488
+  taxon_source: NCBITaxon
+  detection_context: FO-3929
 bgc_class:
 - PKS
 xrefs:
@@ -56,12 +119,15 @@ source_concepts:
   source_label: andrastin A
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-7d141057cf
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:142842
+  source_label: andrastin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-3e87240262
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:50:00Z'
+- timestamp: '2026-09-08T06:13:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

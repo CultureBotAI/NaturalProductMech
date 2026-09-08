@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-ba107d1c8f
+identifier: CHEBI:171659
 label: quinolobactin
 chemical_structure:
   smiles: COC1=CC(=NC2=C(O)C=CC=C12)C(O)=O
@@ -8,6 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000925
 np_pathway: ALKALOIDS
+definition: A quinolinemonocarboxylic acid that is xanthurenic acid in which the hydroxy
+  group at position 4 is replaced by a methoxy group. It is a siderophore isolated
+  from Pseudomonas fluorescens ATCC 17400.
+definition_source: CHEBI:171659
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +22,17 @@ np_classification:
   class_results:
   - Quinoline alkaloids
   is_glycoside: false
+occurrences:
+- taxon_label: Pseudomonas fluorescens
+  source: CHEBI
+  evidence:
+  - reference: PMID:10653708
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:171659
+  taxon_id: NCBITaxon:294
+  taxon_source: NCBITaxon
+  detection_context: ATCC 17400
+  notes: 'GenBank: AY271621.1'
 bgc_class:
 - OTHER
 xrefs:
@@ -55,12 +70,15 @@ source_concepts:
   source_label: quinolobactin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-ba107d1c8f
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:171659
+  source_label: quinolobactin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-6d05b5a24a
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:54Z'
+- timestamp: '2026-09-08T06:13:07Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

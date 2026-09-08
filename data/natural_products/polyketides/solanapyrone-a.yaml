@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-f3a532288b
+identifier: CHEBI:38229
 label: solanapyrone A
 chemical_structure:
   smiles: C[C@H]1C=C[C@H]2CCCC[C@H]2[C@@H]1C3=CC(=C(C(=O)O3)C=O)OC
@@ -62,12 +62,15 @@ source_concepts:
   source_label: solanapyrone A
   source_version: '2'
   minted_identifier: naturalproductmech:mibig-f3a532288b
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:38229
+  source_label: solanapyrone A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-c3935a0044
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:54Z'
+- timestamp: '2026-09-08T06:13:07Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

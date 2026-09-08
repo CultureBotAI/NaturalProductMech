@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-056330d3f1
+identifier: CHEBI:77692
 label: peloruside A
 chemical_structure:
   smiles: CC[C@H](CO)/C=C(/C)\[C@H]1C[C@@H](C[C@H](C([C@]2([C@H]([C@H](C[C@H](O2)C[C@@H]([C@H](C(=O)O1)O)OC)OC)O)O)(C)C)O)OC
@@ -8,6 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002056
 np_pathway: POLYKETIDES
+definition: A macrolide that is a novel secondary metabolite isolated from a New Zealand
+  marine sponge, Mycale hentscheli.
+definition_source: CHEBI:77692
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -57,12 +60,15 @@ source_concepts:
   source_label: peloruside A
   source_version: '3'
   minted_identifier: naturalproductmech:mibig-056330d3f1
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:77692
+  source_label: peloruside A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-e3c15521f8
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:58Z'
+- timestamp: '2026-09-08T06:13:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,0 +1,124 @@
+identifier: CHEBI:161680
+label: aztreonam
+chemical_structure:
+  smiles: C[C@H]1[C@@H](C(=O)N1S(=O)(=O)[O-])NC(=O)/C(=N\OC(C)(C)C(=O)O)/C2=CSC(=N2)[NH3+]
+  standard_inchi: InChI=1S/C13H17N5O8S2/c1-5-7(10(20)18(5)28(23,24)25)16-9(19)8(6-4-27-12(14)15-6)17-26-13(2,3)11(21)22/h4-5,7H,1-3H3,(H2,14,15)(H,16,19)(H,21,22)(H,23,24,25)/b17-8-/t5-,7-/m0/s1
+  standard_inchi_key: WZPBZJONDBGPKJ-VEHQQRBSSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001671
+np_pathway: AMINO_ACIDS_AND_PEPTIDES
+definition: A synthetic monocyclic β-lactam antibiotic (monobactam), used primarily
+  to treat infections caused by Gram-negative bacteria. It inhibits mucopeptide synthesis
+  in the bacterial cell wall, thereby blocking peptidoglycan crosslinking.
+definition_source: CHEBI:161680
+synonyms:
+- value: monobactam
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001671
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Amino acids and Peptides
+  superclass_results:
+  - β-lactams
+  class_results:
+  - Cephalosporins
+  is_glycoside: false
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:161680
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
+bgc_class:
+- NRPS
+producer_organisms:
+- taxon_id: NCBITaxon:358
+  taxon_label: Agrobacterium tumefaciens
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001671
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: url:https://macsphere.mcmaster.ca/bitstream/11375/22190/2/Walker_Chelsea_G_finalsubmission2017June_MasterofScience.pdf
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001671 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:1937528
+  taxon_label: '[Flexibacter] sp. ATCC 35103'
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001672
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: url:https://macsphere.mcmaster.ca/bitstream/11375/22190/2/Walker_Chelsea_G_finalsubmission2017June_MasterofScience.pdf
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001672 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001671
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:358
+  organism_label: Agrobacterium tumefaciens
+  evidence:
+  - reference: url:https://macsphere.mcmaster.ca/bitstream/11375/22190/2/Walker_Chelsea_G_finalsubmission2017June_MasterofScience.pdf
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001671 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KY452017.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001672
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1937528
+  organism_label: '[Flexibacter] sp. ATCC 35103'
+  evidence:
+  - reference: url:https://macsphere.mcmaster.ca/bitstream/11375/22190/2/Walker_Chelsea_G_finalsubmission2017June_MasterofScience.pdf
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001672 entry version 3; citation taken from the entry level
+  genome_accession: genbank:KY502195.1
+  bgc_class:
+  - NRPS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001671
+  source_label: monobactam
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-c1b5254cdb
+- source: MIBIG
+  source_id: BGC0001672
+  source_label: monobactam
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7511e8e39e
+- source: CHEBI
+  source_id: CHEBI:161680
+  source_label: aztreonam
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-4be8d11f4f
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'aztreonam' and MIBiG calls it 'monobactam'.
+    They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001671, BGC0001672.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T06:13:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

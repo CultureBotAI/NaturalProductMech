@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-a55e1c1fd3
+identifier: CHEBI:52317
 label: thalianol
 chemical_structure:
   smiles: C[C@H](CC/C=C(\C)/CCC=C(C)C)[C@]1(CCC2=C1CC[C@@H]3[C@@]2(CC[C@@H](C3(C)C)O)C)C
@@ -64,12 +64,15 @@ source_concepts:
   source_label: thalianol
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-a55e1c1fd3
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:52317
+  source_label: thalianol
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-76144efbcc
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:13:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

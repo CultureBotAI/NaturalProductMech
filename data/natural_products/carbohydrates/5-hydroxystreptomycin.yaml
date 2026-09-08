@@ -1,0 +1,91 @@
+identifier: CHEBI:24750
+label: 5'-hydroxystreptomycin
+chemical_structure:
+  smiles: CN[C@H]1[C@H](O)[C@@H](O)[C@H](CO)O[C@H]1O[C@H]1[C@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](NC(N)=N)[C@@H](O)[C@@H]2NC(N)=N)O[C@@H](CO)[C@]1(O)C=O
+  standard_inchi: InChI=1S/C21H39N7O13/c1-26-9-13(35)10(32)5(2-29)38-17(9)41-16-18(39-6(3-30)21(16,37)4-31)40-15-8(28-20(24)25)11(33)7(27-19(22)23)12(34)14(15)36/h4-18,26,29-30,32-37H,2-3H2,1H3,(H4,22,23,27)(H4,24,25,28)/t5-,6-,7+,8-,9-,10-,11+,12-,13-,14+,15+,16-,17-,18-,21+/m0/s1
+  standard_inchi_key: OFNXOACBUMGOPC-HZYVHMACSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000690
+np_pathway: CARBOHYDRATES
+definition: A streptomycin bearing an additional hydroxy substituent at the 5'-position
+  (on the furanose ring)
+definition_source: CHEBI:24750
+synonyms:
+- value: hydroxystreptomycin
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000690
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Carbohydrates
+  superclass_results:
+  - Aminosugars and aminoglycosides
+  - Polyols
+  class_results:
+  - Amino cyclitols
+  - Aminoglycosides
+  is_glycoside: true
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:24750
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
+bgc_class:
+- SACCHARIDE
+xrefs:
+- npatlas:NPA0933
+producer_organisms:
+- taxon_id: NCBITaxon:1907
+  taxon_label: Streptomyces glaucescens
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000690
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:8628239
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000690 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000690
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1907
+  organism_label: Streptomyces glaucescens
+  evidence:
+  - reference: PMID:8628239
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000690 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ006985.1
+  bgc_class:
+  - SACCHARIDE
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000690
+  source_label: hydroxystreptomycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-37fa07d511
+- source: CHEBI
+  source_id: CHEBI:24750
+  source_label: 5'-hydroxystreptomycin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-0bfc698a1b
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure "5'-hydroxystreptomycin" and MIBiG calls it 'hydroxystreptomycin'.
+    They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
+curation_history:
+- timestamp: '2026-09-08T06:13:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

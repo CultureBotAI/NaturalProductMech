@@ -38,6 +38,18 @@ extract-npclassifier-canary:
 extract-npclassifier *args:
     uv run python scripts/extract_npclassifier.py {{args}}
 
+# Free check: parse the cached ChEBI flat files and report counts.
+extract-chebi-dry *args:
+    uv run python scripts/extract_chebi.py --dry-run {{args}}
+
+# Write chebi_structures.tsv (grounding) and chebi_origins.tsv (occurrences).
+extract-chebi *args:
+    uv run python scripts/extract_chebi.py {{args}}
+
+# Pin the sibling corpus's structures so cross-corpus links reproduce offline.
+extract-antibioticmech *args:
+    uv run python scripts/extract_antibioticmech.py {{args}}
+
 # --- seeding -----------------------------------------------------------------
 # Dry run: harmonize the committed inventories and report the records that WOULD
 # be written, per pathway. No files touched. Empty until M2 adds the extractors.

@@ -1,4 +1,4 @@
-identifier: naturalproductmech:mibig-0f6afa3f66
+identifier: CHEBI:64143
 label: depudecin
 chemical_structure:
   smiles: C[C@@H](O)[C@@H]1O[C@H]1\C=C\[C@@H]1O[C@H]1[C@H](O)C=C
@@ -8,6 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000046
 np_pathway: FATTY_ACIDS
+definition: A polyketide obtained from the fungus Alternaria brassicicola and having
+  a highly unusual structure of an 11-carbon chain containing two epoxides and six
+  stereogenic centres. It is an inhibitor of histone deacetylase (HDAC) both in vivo
+  and in vitro and also exhibits anti-angiogenic activity.
+definition_source: CHEBI:64143
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -59,12 +64,15 @@ source_concepts:
   source_label: depudecin
   source_version: '4'
   minted_identifier: naturalproductmech:mibig-0f6afa3f66
-grounding_status: MINTED
-grounding_notes: Minted from MIBiG. ChEBI grounding is a later milestone; most MIBiG
-  compounds carry no ChEBI cross-reference.
+- source: CHEBI
+  source_id: CHEBI:64143
+  source_label: depudecin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-dfb717f11d
+grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T05:49:55Z'
+- timestamp: '2026-09-08T06:13:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
