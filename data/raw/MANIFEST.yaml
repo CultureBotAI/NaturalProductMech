@@ -16,6 +16,20 @@ upstream:
     url: https://ftp.ebi.ac.uk/pub/databases/chebi/flat_files/compound_origins.tsv.gz
     sha256: 9867bb02dd45bf4038c405f3220eacf3652b502bbef947dc01a1455c3c83ff88
     bytes: 1023257
+  260413_frozen.csv.gz:
+    url: https://zenodo.org/records/19360665/files/260413_frozen.csv.gz
+    doi: 10.5281/zenodo.19360665
+    sha256: c0744fb4d4395a638739078601836d9472612c1ed6db6c8e4f0b5e8a972ced70
+    bytes: 20594507
+  260413_frozen_metadata.csv.gz:
+    url: https://zenodo.org/records/19360665/files/260413_frozen_metadata.csv.gz
+    doi: 10.5281/zenodo.19360665
+    sha256: 09885dcfb3bc0e6d700fefcd5778e91446a1f9d5d2fbbcbf00eb5d2e83b68844
+    bytes: 90298678
+  BindingDB_BindingDB_Articles_202609_tsv.zip:
+    url: https://www.bindingdb.org/rwd/bind/downloads/BindingDB_BindingDB_Articles_202609_tsv.zip
+    sha256: 1203194f366623ae9b4caee34f2477d412ebddbda267593df9d1d92d0c66fb74
+    bytes: 18272073
 inventories:
   mibig_compounds.tsv:
     rows: 3449
@@ -42,3 +56,14 @@ inventories:
     bytes: 339259
     sha256: 4280e69e98b9eb45b69d3e30ced0fbf8c286310632d55cf66ccf2a05106ca369
     source: CultureBotAI/AntibioticMech at c5cfe06ce7a393222fb32f865f042b4eae1efcbf
+  lotus_occurrences.tsv:
+    rows: 9695
+    bytes: 1648130
+    sha256: 763fa75e79985153a038c6d4da071a91566d50c2b14060d878f647a0a667be1b
+    source: LOTUS frozen export, Zenodo 19360665 (CC BY 4.0)
+  bindingdb_targets.tsv:
+    rows: 123
+    bytes: 21015
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    source: BindingDB 202609, own-curated articles only (CC BY 3.0)
+retrieved_on: '2026-09-07'

@@ -88,6 +88,13 @@ BGC_CLASS_MAP = {
 # Only cross-references whose prefix this corpus declares are carried through.
 DB_ID_RE = re.compile(r"^(npatlas|pubchem|chembl|chebi|cyanometdb|lotus):[A-Za-z0-9._-]+$")
 
+# How many occurrences reach a record. The INVENTORY keeps all of them, so
+# nothing is lost and the corpus still reproduces; this bounds what a curator
+# has to read. Without it lupeol carried 925 occurrences in a 397 KB file,
+# while the median record has one — and `curate-yaml-record` instructs a
+# curator to read the entire YAML (#28).
+MAX_OCCURRENCES_PER_RECORD = 25
+
 # One directory per NPClassifier pathway. UNCLASSIFIED is a real bucket, not an
 # error state: it is where a multi-label result lands until a curator files it.
 PATHWAY_DIRS = {
@@ -335,6 +342,20 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     for row in inventories.get("chebi_origins") or []:
         origins_by_chebi[row["chebi_id"]].append(row)
 
+    # LOTUS: structure-organism-reference triples. Occurrences, never
+    # producers — LOTUS reports that a compound was found in an organism and
+    # does not say whether the organism makes it.
+    lotus_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in inventories.get("lotus_occurrences") or []:
+        lotus_by_key[row["standard_inchi_key"]].append(row)
+
+    # BindingDB's own-curated affinities. Only rows its Curation/DataSource
+    # column marks as BindingDB's own reach this inventory; the ChEMBL-derived
+    # rows in the same file are share-alike and were filtered at extraction.
+    targets_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in inventories.get("bindingdb_targets") or []:
+        targets_by_key[row["standard_inchi_key"]].append(row)
+
     # The sibling corpus, pinned. A compound in both keeps its antimicrobial
     # mechanism there and is linked from here, never copied.
     sibling_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
@@ -526,8 +547,116 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 if context:
                     occurrence["notes"] = context[:400]
                 occurrences.append(occurrence)
-        if occurrences:
-            doc["occurrences"] = occurrences
+        for row in lotus_by_key.get(key) or []:
+            occurrence = {
+                "taxon_id": row["taxon_id"],
+                "taxon_label": row["organism_name"],
+                "taxon_source": "NCBITaxon",
+                "source": "LOTUS",
+                "evidence": [{
+                    "reference": f"DOI:{row['reference_doi']}",
+                    "evidence_type": "DATABASE_ASSERTION",
+                    "notes": (
+                        "LOTUS structure-organism-reference triple. LOTUS reports that "
+                        "the compound was found in the organism; it does not assert that "
+                        "the organism produces it."
+                    ),
+                }],
+            }
+            if row["organism_wikidata"]:
+                occurrence["notes"] = f"Wikidata organism {row['organism_wikidata']}"
+            occurrences.append(occurrence)
+
+        # De-duplicate on (taxon, reference). Two routes produce exact
+        # duplicates: a REVIEW_NEEDED record pulling origins from several ChEBI
+        # entries that share one, and ChEBI and LOTUS citing the same paper
+        # (#26). The same taxon from two DIFFERENT references is not a
+        # duplicate — it is two independent reports, which is more evidence.
+        deduped: list[dict[str, Any]] = []
+        seen_occurrence: set[tuple[str, str]] = set()
+        for occurrence in occurrences:
+            signature = (
+                occurrence.get("taxon_id") or occurrence["taxon_label"],
+                occurrence["evidence"][0]["reference"],
+            )
+            if signature in seen_occurrence:
+                continue
+            seen_occurrence.add(signature)
+            deduped.append(occurrence)
+
+        # A taxon that is also a producer is CORROBORATION, not redundancy: the
+        # occurrence carries its own independent citation. Said on the record so
+        # a reader does not mistake it for a failure to deduplicate (#27).
+        producer_taxa = {p["taxon_id"] for p in producers}
+        for occurrence in deduped:
+            if occurrence.get("taxon_id") in producer_taxa:
+                note = ("This taxon is also recorded as a producer, from a different source "
+                        "and citation. The two corroborate each other rather than duplicating.")
+                occurrence["notes"] = (
+                    f"{occurrence['notes']} {note}" if occurrence.get("notes") else note
+                )
+
+        if deduped:
+            # Prefer occurrences that ADD something: a taxon not already
+            # asserted as a producer carries information the record does not
+            # otherwise have. Ordering is otherwise stable so the cap is
+            # deterministic rather than dependent on source order.
+            deduped.sort(key=lambda o: (
+                o.get("taxon_id") in producer_taxa,
+                o.get("taxon_id") or "",
+                o["evidence"][0]["reference"],
+            ))
+            omitted = len(deduped) - MAX_OCCURRENCES_PER_RECORD
+            if omitted > 0:
+                kept_occurrences = deduped[:MAX_OCCURRENCES_PER_RECORD]
+                note = (
+                    f"{omitted} further cited occurrences are recorded in "
+                    f"data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv "
+                    f"but not written here: a record carrying hundreds of them cannot "
+                    f"be reviewed. The inventories are the complete record."
+                )
+                kept_occurrences[-1]["notes"] = (
+                    f"{kept_occurrences[-1]['notes']} {note}"
+                    if kept_occurrences[-1].get("notes") else note
+                )
+                deduped = kept_occurrences
+            doc["occurrences"] = deduped
+
+        targets: list[dict[str, Any]] = []
+        for row in targets_by_key.get(key) or []:
+            context = ", ".join(
+                part for part in (
+                    f"pH {row['ph']}" if row["ph"] else "",
+                    f"{row['temperature_c']} C" if row["temperature_c"] else "",
+                ) if part
+            )
+            target: dict[str, Any] = {
+                "target_label": row["target_name"] or "unnamed target",
+                "target_type": "PROTEIN",
+                "relation": "BINDS",
+                "measurement_type": row["measurement_type"],
+                "measurement_value": float(row["measurement_value_nm"]),
+                "measurement_units": "nM",
+                "source": "BINDINGDB",
+                "evidence": [{
+                    "reference": row["reference"],
+                    "evidence_type": "DATABASE_ASSERTION",
+                    "notes": (
+                        "BindingDB own-curated affinity"
+                        + (f"; measured at {context}" if context else "")
+                        + f"; qualifier {row['measurement_qualifier']}."
+                    ),
+                }],
+            }
+            if row["uniprot"]:
+                # An organism-specific accession is an EXAMPLE of a target, not
+                # a target identity — docs/CURATION.md is explicit about it.
+                target["protein_examples"] = [f"UniProtKB:{row['uniprot']}"]
+            if row["target_organism"]:
+                target["taxon_label"] = row["target_organism"]
+            targets.append(target)
+        if targets:
+            doc["molecular_targets"] = targets
 
         links = [{
             "corpus": "AntibioticMech",

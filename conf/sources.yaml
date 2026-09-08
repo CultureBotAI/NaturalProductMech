@@ -80,6 +80,38 @@ antibioticmech:
   license: CC BY 4.0
   fills: related_records
 
+lotus:
+  name: LOTUS
+  description: >-
+    Referenced structure-organism occurrence triples. Fills `occurrences` and
+    never `producer_organisms`: an occurrence may reflect biosynthesis,
+    symbiosis, diet, uptake or contamination, and does not say which.
+  homepage: https://lotus.nprod.net/
+  # THE ROUTE DECIDES THE TERMS. Wikidata's main-namespace structured data is
+  # CC0; the Zenodo frozen export is tagged CC BY 4.0. This pipeline reads the
+  # Zenodo export, because a committed inventory needs a release identity to
+  # record in MANIFEST.yaml and a SPARQL query has none. So CC BY 4.0 is what
+  # applies, and ATTRIBUTION.md says so rather than claiming the CC0 route.
+  route: zenodo
+  zenodo_record: "19360665"
+  license: CC BY 4.0
+  fills: occurrences
+
+bindingdb:
+  name: BindingDB
+  description: >-
+    Measured binding affinities with UniProt targets, pH and temperature per
+    measurement, and a primary citation. ONLY BindingDB's own curation is read:
+    its terms put staff-curated data under CC BY 3.0 while ChEMBL-derived rows
+    keep ChEMBL's share-alike terms, and the two ship in the same file.
+  homepage: https://www.bindingdb.org/
+  release: "202609"
+  license: CC BY 3.0 (own-curated subset only)
+  # The filter is the Curation/DataSource column, not the filename: 429 rows
+  # inside the "BindingDB Articles" file are ChEMBL's.
+  curation_source: Curated from the literature by BindingDB
+  fills: molecular_targets
+
 # ---------------------------------------------------------------------------
 # Scope
 # ---------------------------------------------------------------------------

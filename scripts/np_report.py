@@ -46,6 +46,7 @@ def summarize(records: list[dict[str, Any]]) -> dict[str, Any]:
     by_grounding: collections.Counter[str] = collections.Counter()
     producer_bases: collections.Counter[str] = collections.Counter()
     cluster_bases: collections.Counter[str] = collections.Counter()
+    corroborated = [0]
     field_coverage: collections.Counter[str] = collections.Counter()
     inchikeys: set[str] = set()
     stereo_incomplete = 0
@@ -76,6 +77,10 @@ def summarize(records: list[dict[str, Any]]) -> dict[str, Any]:
         for field in counted_fields:
             if doc.get(field):
                 field_coverage[field] += 1
+        producer_taxa = {p.get("taxon_id") for p in doc.get("producer_organisms") or []}
+        occurrence_taxa = {o.get("taxon_id") for o in doc.get("occurrences") or []}
+        if producer_taxa & occurrence_taxa:
+            corroborated[0] += 1
         for producer in doc.get("producer_organisms") or []:
             producer_bases[producer.get("evidence_basis") or "ABSENT"] += 1
         for cluster in doc.get("biosynthetic_gene_clusters") or []:
@@ -98,6 +103,7 @@ def summarize(records: list[dict[str, Any]]) -> dict[str, Any]:
             "correlated": correlated,
             "by_basis": dict(sorted(producer_bases.items())),
         },
+        "producers_corroborated_by_an_occurrence": corroborated[0],
         "cluster_link_claims": {
             "total": sum(cluster_bases.values()),
             "demonstrated": cluster_bases.get("CLUSTER_DEMONSTRATED", 0),
@@ -145,6 +151,9 @@ def render(summary: dict[str, Any]) -> str:
                  f"({links['demonstrated']} demonstrated)")
     for key, count in links["by_basis"].items():
         lines.append(f"  {key:<34} {count:>6}")
+    lines.append("")
+    lines.append(f"records where a producer taxon is independently corroborated by a "
+                 f"cited occurrence: {summary['producers_corroborated_by_an_occurrence']}")
     lines.append("")
     lines.append("These grade two different questions and they come apart. A producer")
     lines.append("claim says this TAXON makes the compound; a cluster link says this")

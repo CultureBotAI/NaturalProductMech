@@ -126,6 +126,14 @@ than lax: MIBiG asserts production and cites a report nobody here has read. It
 sits outside `CAUSAL_BASES`, so a consumer wanting demonstrated production
 filters it out.
 
+**A taxon in both fields is corroboration, not redundancy.** 729 records name
+the same organism as a producer and in an occurrence. That is two different
+claims with two independent citations — MIBiG asserting production from a gene
+cluster, and someone else reporting they detected the compound in that organism
+— so holding both is more evidence than holding either. The occurrence says so
+in its notes, and `just report` counts it, because otherwise it reads as a
+failure to deduplicate.
+
 `occurrences` requires a citation and a resolvable taxon, and nothing more,
 because it claims less. ChEBI's `compound_origins` rows land here: ChEBI is
 recording where a compound was *found*, not what makes it, so nothing promotes

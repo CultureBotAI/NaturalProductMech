@@ -18,6 +18,37 @@ np_classification:
   class_results:
   - Simple indole alkaloids
   is_glycoside: false
+molecular_targets:
+- target_label: Protein kinase C beta type
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: IC50
+  measurement_value: 100000.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:1732526
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.5000, 30.00 C C; qualifier
+      GREATER_THAN.
+  protein_examples:
+  - UniProtKB:P68403
+  taxon_label: Rattus norvegicus
+- target_label: cAMP-dependent protein kinase catalytic subunit alpha
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: IC50
+  measurement_value: 50000.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:1874734
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.4000, 30.00 C C; qualifier
+      GREATER_THAN.
+  protein_examples:
+  - UniProtKB:P00517
+  taxon_label: Bos taurus
 bgc_class:
 - OTHER
 producer_organisms:
@@ -63,7 +94,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:13:14Z'
+- timestamp: '2026-09-08T06:48:23Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

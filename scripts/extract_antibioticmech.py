@@ -24,6 +24,7 @@ import csv
 import hashlib
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 import yaml
@@ -104,6 +105,11 @@ def main() -> int:
         writer.writerows(rows)
 
     manifest = yaml.safe_load(MANIFEST_PATH.read_text(encoding="utf-8")) or {}
+
+    # The one piece of provenance that cannot be recovered later: a sha256
+    # says WHAT was fetched, nothing says WHEN. ChEBI replaces its flat files
+    # in place, so for those the date is the only handle on the release (#29).
+    manifest["retrieved_on"] = time.strftime("%Y-%m-%d")
     manifest.setdefault("inventories", {})[INVENTORY_NAME] = {
         "rows": len(rows),
         "bytes": inventory.stat().st_size,

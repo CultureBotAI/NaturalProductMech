@@ -16,6 +16,17 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrences:
+- taxon_id: NCBITaxon:1883
+  taxon_label: Streptomyces
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/ACSCHEMBIO.0C00581
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q1144013
 bgc_class:
 - PKS
 xrefs:
@@ -63,7 +74,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:13:10Z'
+- timestamp: '2026-09-08T06:48:18Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

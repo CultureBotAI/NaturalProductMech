@@ -448,3 +448,88 @@ def test_substantive_disagreements_still_surface():
     assert seed.names_disagree("phevalin", "aureusimine B")
     assert seed.names_disagree("romidepsin", "FR901228")
     assert seed.names_disagree("bicozamycin", "bicyclomycin")
+
+
+def test_a_lotus_triple_becomes_an_occurrence_never_a_producer():
+    """LOTUS is the source that makes the two-field split load-bearing: it is
+    far larger than every producer source combined, and every row of it says
+    only that a compound was FOUND in an organism."""
+    lotus = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+        "organism_name": "Aspergillus flavus", "taxon_id": "NCBITaxon:5059",
+        "organism_wikidata": "Q133163", "reference_doi": "10.1021/np50001a001",
+        "structure_wikidata": "Q123",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "lotus_occurrences": [lotus],
+    })[0]
+    occurrence = next(o for o in doc["occurrences"] if o["source"] == "LOTUS")
+    assert occurrence["taxon_id"] == "NCBITaxon:5059"
+    assert occurrence["evidence"][0]["reference"] == "DOI:10.1021/np50001a001"
+    assert occurrence["evidence"][0]["evidence_type"] == "DATABASE_ASSERTION"
+    # The producer list is untouched by an occurrence, whatever taxon it names.
+    assert [p["taxon_label"] for p in doc["producer_organisms"]] == ["Saccharopolyspora erythraea"]
+
+
+def test_occurrences_from_several_sources_coexist():
+    """ChEBI origins and LOTUS triples both fill occurrences, and each keeps
+    its own provenance rather than being flattened together."""
+    origin = {
+        "chebi_id": "CHEBI:42355", "species_text": "Homo sapiens", "species_accession": "9606",
+        "component_text": "", "strain_text": "", "source_accession": "12194923", "comments": "",
+    }
+    lotus = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "organism_name": "Aspergillus flavus",
+        "taxon_id": "NCBITaxon:5059", "organism_wikidata": "Q133163",
+        "reference_doi": "10.1021/np50001a001", "structure_wikidata": "",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "chebi_structures": [CHEBI_ROW],
+        "chebi_origins": [origin], "lotus_occurrences": [lotus],
+    })[0]
+    assert {o["source"] for o in doc["occurrences"]} == {"CHEBI", "LOTUS"}
+
+
+def test_a_bindingdb_row_becomes_a_target_with_its_uniprot_as_an_example():
+    """An organism-specific accession is an EXAMPLE of a target, not a target
+    identity — docs/CURATION.md is explicit, so it goes in protein_examples."""
+    row = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+        "target_name": "DNA gyrase subunit B", "target_organism": "Escherichia coli",
+        "uniprot": "P0AES6", "measurement_type": "KI", "measurement_value_nm": "12.5",
+        "measurement_qualifier": "EQUAL", "ph": "7.4", "temperature_c": "25",
+        "reference": "PMID:12345678", "curation_source": "Curated from the literature by BindingDB",
+    }
+    doc = seed.build_records({"mibig_compounds": [MIBIG_ROW], "bindingdb_targets": [row]})[0]
+    target = doc["molecular_targets"][0]
+    assert target["measurement_type"] == "KI"
+    assert target["measurement_value"] == 12.5
+    assert target["measurement_units"] == "nM"
+    assert target["protein_examples"] == ["UniProtKB:P0AES6"]
+    assert "pH 7.4" in target["evidence"][0]["notes"]
+
+
+def test_an_affinity_operator_is_parsed_out_rather_than_lost():
+    """BindingDB embeds the relational operator in the numeric cell, so a naive
+    float() either raises or silently turns a bound into a value."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        "extract_bindingdb", REPO_ROOT / "scripts" / "extract_bindingdb.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    assert module.parse_value("12.5") == (12.5, "EQUAL")
+    assert module.parse_value(">10000") == (10000.0, "GREATER_THAN")
+    assert module.parse_value("< 0.5") == (0.5, "LESS_THAN")
+    assert module.parse_value("") is None
+    assert module.parse_value("not a number") is None
+
+
+def test_only_bindingdb_curated_rows_may_be_seeded():
+    """The licence gate. The filename is not the filter: 429 rows in the
+    own-curated file are ChEMBL's and carry share-alike terms."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        "extract_bindingdb", REPO_ROOT / "scripts" / "extract_bindingdb.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    assert module.CURATED_BY_BINDINGDB == "Curated from the literature by BindingDB"

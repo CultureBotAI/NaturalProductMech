@@ -37,6 +37,7 @@ import hashlib
 import html as html_module
 import re
 import sys
+import time
 import urllib.request
 from collections import Counter
 from pathlib import Path
@@ -229,6 +230,10 @@ def write_tsv(path: Path, columns: list[str], rows: list[dict]) -> None:
 
 def update_manifest(downloads: dict[str, Path], inventories: dict[str, tuple[Path, int]]) -> None:
     manifest = yaml.safe_load(MANIFEST_PATH.read_text(encoding="utf-8")) or {}
+    # The one piece of provenance that cannot be recovered later: a sha256
+    # says WHAT was fetched, nothing says WHEN. ChEBI replaces its flat files
+    # in place, so for those the date is the only handle on the release (#29).
+    manifest["retrieved_on"] = time.strftime("%Y-%m-%d")
     for name, path in downloads.items():
         manifest.setdefault("upstream", {})[name] = {
             "url": BASE + name,

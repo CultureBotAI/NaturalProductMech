@@ -18,6 +18,141 @@ np_classification:
   class_results:
   - Zearalenones
   is_glycoside: false
+molecular_targets:
+- target_label: ATP-dependent molecular chaperone HSP82
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: IC50
+  measurement_value: 200.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:15217611
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.4000, 37.00 C C; qualifier
+      LESS_THAN.
+  protein_examples:
+  - UniProtKB:P02829
+  taxon_label: Saccharomyces cerevisiae (strain ATCC 204508 / S288c)
+- target_label: ATP-dependent molecular chaperone HSP82
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: IC50
+  measurement_value: 200.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:17114002
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; qualifier EQUAL.
+  protein_examples:
+  - UniProtKB:P02829
+  taxon_label: Saccharomyces cerevisiae (strain ATCC 204508 / S288c)
+- target_label: ATP-dependent molecular chaperone HSP82
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: IC50
+  measurement_value: 47.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:17114002
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; qualifier EQUAL.
+  protein_examples:
+  - UniProtKB:P02829
+  taxon_label: Saccharomyces cerevisiae (strain ATCC 204508 / S288c)
+- target_label: ATP-dependent molecular chaperone HSP82
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: IC50
+  measurement_value: 30.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:17114002
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; qualifier EQUAL.
+  protein_examples:
+  - UniProtKB:P02829
+  taxon_label: Saccharomyces cerevisiae (strain ATCC 204508 / S288c)
+- target_label: Heat shock protein HSP 90-alpha [1-236]
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: KD
+  measurement_value: 46.3
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:24356970
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.5000, 15.00 C C; qualifier
+      EQUAL.
+  protein_examples:
+  - UniProtKB:P07900
+  taxon_label: Homo sapiens
+- target_label: Heat shock protein HSP 90-beta
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: IC50
+  measurement_value: 150.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:15974572
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.4000, 22.00 C C; qualifier
+      EQUAL.
+  protein_examples:
+  - UniProtKB:P08238
+  taxon_label: Homo sapiens
+- target_label: Heat shock protein HSP 90-beta
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: IC50
+  measurement_value: 150.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:16202589
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.4000, 22.00 C C; qualifier
+      EQUAL.
+  protein_examples:
+  - UniProtKB:P08238
+  taxon_label: Homo sapiens
+- target_label: '[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 2,
+    mitochondrial'
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: IC50
+  measurement_value: 77800.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:24356970
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.5000, 25.00 C C; qualifier
+      EQUAL.
+  protein_examples:
+  - UniProtKB:Q15119
+  taxon_label: Homo sapiens
+- target_label: '[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 2,
+    mitochondrial'
+  target_type: PROTEIN
+  relation: BINDS
+  measurement_type: KD
+  measurement_value: 18600.0
+  measurement_units: nM
+  source: BINDINGDB
+  evidence:
+  - reference: PMID:24356970
+    evidence_type: DATABASE_ASSERTION
+    notes: BindingDB own-curated affinity; measured at pH 7.5000, 15.00 C C; qualifier
+      EQUAL.
+  protein_examples:
+  - UniProtKB:Q15119
+  taxon_label: Homo sapiens
 bgc_class:
 - PKS
 xrefs:
@@ -61,7 +196,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:13:16Z'
+- timestamp: '2026-09-08T06:48:25Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

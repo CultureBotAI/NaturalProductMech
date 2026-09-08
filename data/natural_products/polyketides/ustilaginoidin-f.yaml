@@ -18,6 +18,37 @@ np_classification:
   class_results:
   - Bisnaphthalenes
   is_glycoside: false
+occurrences:
+- taxon_id: NCBITaxon:1077371
+  taxon_label: Plenodomus influorescens
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.3390/MD18020073
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q108252698
+- taxon_id: NCBITaxon:390895
+  taxon_label: Pyrenochaeta nobilis
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.3390/MD18020073
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q10647257
+- taxon_id: NCBITaxon:5106
+  taxon_label: Verticillium
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.7164/ANTIBIOTICS.28.602
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q2452570
 bgc_class:
 - PKS
 xrefs:
@@ -65,7 +96,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:13:10Z'
+- timestamp: '2026-09-08T06:48:18Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

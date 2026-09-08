@@ -22,15 +22,6 @@ np_classification:
   class_results: []
   is_glycoside: false
 occurrences:
-- taxon_label: Photobacterium halotolerans
-  source: CHEBI
-  evidence:
-  - reference: PMID:21339958
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:156451
-  taxon_id: NCBITaxon:265726
-  taxon_source: NCBITaxon
-  detection_context: S2753
 - taxon_label: Saccharothrix algeriensis
   source: CHEBI
   evidence:
@@ -40,31 +31,36 @@ occurrences:
   taxon_id: NCBITaxon:173560
   taxon_source: NCBITaxon
   detection_context: NRRL B-24137
-- taxon_label: Streptomyces clavuligerus
-  source: CHEBI
-  evidence:
-  - reference: PMID:21041678
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:156451
-  taxon_id: NCBITaxon:1901
+- taxon_id: NCBITaxon:1883
+  taxon_label: Streptomyces
   taxon_source: NCBITaxon
-- taxon_label: Streptomyces clavuligerus
-  source: CHEBI
+  source: LOTUS
   evidence:
-  - reference: PMID:468729
+  - reference: DOI:10.7164/ANTIBIOTICS.30.334
     evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:156451
-  taxon_id: NCBITaxon:1901
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q1144013
+- taxon_id: NCBITaxon:1886
+  taxon_label: Streptomyces albidoflavus
   taxon_source: NCBITaxon
-- taxon_label: Streptomyces flavogriseus
-  source: CHEBI
+  source: LOTUS
   evidence:
-  - reference: PMID:28740758
+  - reference: DOI:10.1007/S10295-013-1348-5
     evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:156451
-  taxon_id: NCBITaxon:67299
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q22286833
+- taxon_id: NCBITaxon:1902
+  taxon_label: Streptomyces coelicolor
   taxon_source: NCBITaxon
-  detection_context: NJ-4
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1007/S10295-013-1348-5
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q2355919
 - taxon_label: Streptomyces sp.
   source: CHEBI
   evidence:
@@ -74,14 +70,233 @@ occurrences:
   taxon_id: NCBITaxon:1931
   taxon_source: NCBITaxon
   detection_context: DT-A37
-- taxon_label: Yersinia ruckeri ATCC 29473
+- taxon_label: Photobacterium halotolerans
   source: CHEBI
   evidence:
-  - reference: PMID:23572522
+  - reference: PMID:21339958
     evidence_type: DATABASE_ASSERTION
     notes: ChEBI compound origin for CHEBI:156451
-  taxon_id: NCBITaxon:527005
+  taxon_id: NCBITaxon:265726
   taxon_source: NCBITaxon
+  detection_context: S2753
+- taxon_id: NCBITaxon:29486
+  taxon_label: Yersinia ruckeri
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1074/JBC.M112.448415
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q16993573
+- taxon_id: NCBITaxon:52258
+  taxon_label: Streptomyces flavovirens
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.7717/PEERJ.3601
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q22285363
+- taxon_id: NCBITaxon:67299
+  taxon_label: Streptomyces flavogriseus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.7717/PEERJ.3601
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q62851309
+- taxon_label: Streptomyces flavogriseus
+  source: CHEBI
+  evidence:
+  - reference: PMID:28740758
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156451
+  taxon_id: NCBITaxon:67299
+  taxon_source: NCBITaxon
+  detection_context: NJ-4
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1002/CBIC.201200536
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623381 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1007/S00253-013-4721-4
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623381 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1007/S00253-013-5410-Z
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623381 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1016/J.JBIOTEC.2012.09.017
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623381 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/BI200321C
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623381 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1073/PNAS.1014140107
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623381 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1111/J.1365-2958.2005.04581.X
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623381 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/AEM.00916-15
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623381 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/AEM.01701-18
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623381 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/AEM.07699-11
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623381 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/JB.00859-10
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623381 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/JB.184.23.6559-6565.2002
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623381 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
+- taxon_id: NCBITaxon:1901
+  taxon_label: Streptomyces clavuligerus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1371/JOURNAL.PONE.0033727
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q7623381 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
+- taxon_label: Streptomyces clavuligerus
+  source: CHEBI
+  evidence:
+  - reference: PMID:21041678
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156451
+  taxon_id: NCBITaxon:1901
+  taxon_source: NCBITaxon
+  notes: This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating.
+- taxon_label: Streptomyces clavuligerus
+  source: CHEBI
+  evidence:
+  - reference: PMID:468729
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:156451
+  taxon_id: NCBITaxon:1901
+  taxon_source: NCBITaxon
+  notes: 'This taxon is also recorded as a producer, from a different source and citation.
+    The two corroborate each other rather than duplicating. 1 further cited occurrences
+    are recorded in data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv
+    but not written here: a record carrying hundreds of them cannot be reviewed. The
+    inventories are the complete record.'
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:156451
@@ -216,7 +431,7 @@ discussions:
     BGC0002412. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T06:13:09Z'
+- timestamp: '2026-09-08T06:48:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
