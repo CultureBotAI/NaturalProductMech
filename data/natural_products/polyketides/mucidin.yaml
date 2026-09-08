@@ -8,7 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001909
 np_pathway: POLYKETIDES
-definition: An enoate ester that is the methyl ester of (2<i>E</i>,3<i>Z</i>,5<i>E</i>)-2-(methoxymethylene)-3-methyl-6-phenylhexa-3,5-dienoic
+definition: An enoate ester that is the methyl ester of (2E,3Z,5E)-2-(methoxymethylene)-3-methyl-6-phenylhexa-3,5-dienoic
   acid.
 definition_source: CHEBI:78156
 synonyms:
@@ -78,8 +78,15 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-48a364f2cb
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'mucidin' and MIBiG calls it 'strobilurin A'.
+    They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:01:59Z'
+- timestamp: '2026-09-08T06:13:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

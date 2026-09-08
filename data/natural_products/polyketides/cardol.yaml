@@ -1,0 +1,108 @@
+identifier: CHEBI:2120
+label: cardol
+chemical_structure:
+  smiles: CCCCCCCCCCCCCCCC1=CC(=CC(=C1)O)O
+  standard_inchi: InChI=1S/C21H36O2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-19-16-20(22)18-21(23)17-19/h16-18,22-23H,2-15H2,1H3
+  standard_inchi_key: KVVSCMOUFCNCGX-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002332
+np_pathway: POLYKETIDES
+definition: Resorcinol substituted at position 5 by a pentadecyl chain.
+definition_source: CHEBI:2120
+synonyms:
+- value: Adipostatin A
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0002332
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Polyketides
+  superclass_results:
+  - Aromatic polyketides
+  class_results:
+  - Catechols with side chains
+  is_glycoside: false
+occurrences:
+- taxon_label: Ginkgo biloba
+  source: CHEBI
+  evidence:
+  - reference: PMID:21462031
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:2120
+  taxon_id: NCBITaxon:3311
+  taxon_source: NCBITaxon
+  notes: fruit
+- taxon_label: Streptomyces cyaneus
+  source: CHEBI
+  evidence:
+  - reference: PMID:21462031
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:2120
+  taxon_id: NCBITaxon:1904
+  taxon_source: NCBITaxon
+bgc_class:
+- PKS
+compound_classes:
+- Alkylresorcinol/phloroglucinol polyketide
+- Fatty acid derivate
+xrefs:
+- npatlas:NPA008167
+producer_organisms:
+- taxon_id: NCBITaxon:2066855
+  taxon_label: Candidatus Entotheonella sp.
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0002332
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
+  evidence:
+  - reference: DOI:10.1002/cbic.201900352
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002332 entry version 2; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002332
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:2066855
+  organism_label: Candidatus Entotheonella sp.
+  evidence:
+  - reference: DOI:10.1002/cbic.201900352
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002332 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:MK988560.1
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002332
+  source_label: Adipostatin A
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-db83a914f8
+- source: CHEBI
+  source_id: CHEBI:2120
+  source_label: cardol
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-7a981ff7fe
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'cardol' and MIBiG calls it 'Adipostatin A'.
+    They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
+curation_history:
+- timestamp: '2026-09-08T06:13:11Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

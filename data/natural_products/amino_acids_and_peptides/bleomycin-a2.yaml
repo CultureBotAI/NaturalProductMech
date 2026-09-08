@@ -8,10 +8,6 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002350
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
-synonyms:
-- value: bleomycin A<small><sub>2</sub></small>
-  synonym_type: RELATED_SYNONYM
-  source: mibig:BGC0002350
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -86,13 +82,13 @@ source_concepts:
   minted_identifier: naturalproductmech:mibig-64194246dd
 - source: CHEBI
   source_id: CHEBI:3139
-  source_label: bleomycin A<small><sub>2</sub></small>
+  source_label: bleomycin A2
   source_version: 3-star
   minted_identifier: naturalproductmech:chebi-359bcacd55
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:02:01Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -1,5 +1,5 @@
 identifier: CHEBI:34907
-label: Paxilline
+label: paxilline
 chemical_structure:
   smiles: CC(C)(O)[C@H]1O[C@H]2CC[C@@]3(C)[C@@](O)(CC[C@H]4CC5=C([NH]C6=CC=CC=C56)[C@@]43C)C2=CC1=O
   standard_inchi: InChI=1S/C27H33NO4/c1-24(2,30)23-20(29)14-18-21(32-23)10-11-25(3)26(4)15(9-12-27(18,25)31)13-17-16-7-5-6-8-19(16)28-22(17)26/h5-8,14-15,21,23,28,30-31H,9-13H2,1-4H3/t15-,21-,23-,25+,26+,27+/m0/s1
@@ -8,13 +8,12 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001082
 np_pathway: UNCLASSIFIED
-definition: An indole diterpene alkaloid with formula C<small><sub>27</sub></small>H<small><sub>33</sub></small>NO<small><sub>4</sub></small>
-  isolated from <em>Penicillium paxilli</em>. It is a potent inhibitor of large conductance
-  Ca<small><sub>2</sub></small><small><sup>+</small></sup>- and voltage-activated
-  K<small><sup>+</small></sup> (BK)-type channels.
+definition: An indole diterpene alkaloid with formula C27H33NO4 isolated from Penicillium
+  paxilli. It is a potent inhibitor of large conductance Ca2+- and voltage-activated
+  K+ (BK)-type channels.
 definition_source: CHEBI:34907
 synonyms:
-- value: paxilline
+- value: Paxilline
   synonym_type: RELATED_SYNONYM
   source: mibig:BGC0001082
 np_classification:
@@ -108,7 +107,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:01:56Z'
+- timestamp: '2026-09-08T06:13:07Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

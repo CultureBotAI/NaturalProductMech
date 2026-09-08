@@ -8,8 +8,8 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000434
 np_pathway: UNCLASSIFIED
-definition: A cyclodepsipeptide antibiotic that is isolated from <em>Streptomyces
-  sp.</em> SNA15896 and also exhibits antitumour activity.
+definition: A cyclodepsipeptide antibiotic that is isolated from Streptomyces sp.
+  SNA15896 and also exhibits antitumour activity.
 definition_source: CHEBI:87399
 synonyms:
 - value: UK-63598
@@ -87,8 +87,15 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-4379d903a7
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'UK 63598' and MIBiG calls it 'UK-63598'. They
+    share a Standard InChIKey, so if the two names denote different compounds then
+    one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:01:58Z'
+- timestamp: '2026-09-08T06:13:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

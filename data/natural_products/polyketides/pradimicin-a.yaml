@@ -9,7 +9,7 @@ chemical_structure:
   structure_source_id: mibig:BGC0000256
 np_pathway: POLYKETIDES
 definition: A member of the class of pradimicins that is isolated from the cultured
-  broth of <em>Actinomadura hibisca</em> No. P157-2 (ATCC 53557).
+  broth of Actinomadura hibisca No. P157-2 (ATCC 53557).
 definition_source: CHEBI:8349
 synonyms:
 - value: pradimicin-A
@@ -85,8 +85,15 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-10aeee8090
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'pradimicin A' and MIBiG calls it 'pradimicin-A'.
+    They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:02:04Z'
+- timestamp: '2026-09-08T06:13:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -11,8 +11,8 @@ np_pathway: FATTY_ACIDS
 definition: A tricarboxylic acid that is docosa-2,4,8,10,14,18,20-heptaenedioic acid
   substituted at positions 2 ,5 and 17 by methyl groups, at positions 6 by a methoxy
   group and at position 20 by a carboxymethyl group. It is produced by the bacterium
-  <em>Burkholderia gladioli</em> and implicated in outbreaks of food-borne illness
-  involving coconut and corn-based products in Indonesia and China.
+  Burkholderia gladioli and implicated in outbreaks of food-borne illness involving
+  coconut and corn-based products in Indonesia and China.
 definition_source: CHEBI:77742
 synonyms:
 - value: isobongkrekic acid
@@ -86,8 +86,15 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-4eef03471f
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'bongkrekic acid' and MIBiG calls it 'isobongkrekic
+    acid'. They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:02:03Z'
+- timestamp: '2026-09-08T06:13:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

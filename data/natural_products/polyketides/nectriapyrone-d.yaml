@@ -1,5 +1,5 @@
 identifier: CHEBI:142799
-label: nectriapyrone  D
+label: nectriapyrone D
 chemical_structure:
   smiles: COC1=C(C)C(=O)OC(/C(C)=C/CO)=C1
   standard_inchi: InChI=1S/C11H14O4/c1-7(4-5-12)9-6-10(14-3)8(2)11(13)15-9/h4,6,12H,5H2,1-3H3/b7-4+
@@ -9,13 +9,9 @@ chemical_structure:
   structure_source_id: mibig:BGC0002155
 np_pathway: POLYKETIDES
 definition: A member of the class of nectriapyrones that is nectriapyrone that carries
-  a hydroxy group at position 4. It is a fungal metabolite isolated from <em>Diaporthe
-  gulyae</em>.
+  a hydroxy group at position 4. It is a fungal metabolite isolated from Diaporthe
+  gulyae.
 definition_source: CHEBI:142799
-synonyms:
-- value: nectriapyrone D
-  synonym_type: RELATED_SYNONYM
-  source: mibig:BGC0002155
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -82,13 +78,13 @@ source_concepts:
   minted_identifier: naturalproductmech:mibig-028c195472
 - source: CHEBI
   source_id: CHEBI:142799
-  source_label: nectriapyrone  D
+  source_label: nectriapyrone D
   source_version: 3-star
   minted_identifier: naturalproductmech:chebi-1e6424ad98
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:01:57Z'
+- timestamp: '2026-09-08T06:13:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

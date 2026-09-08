@@ -34,6 +34,8 @@ import argparse
 import csv
 import gzip
 import hashlib
+import html as html_module
+import re
 import sys
 import urllib.request
 from collections import Counter
@@ -65,6 +67,19 @@ ORIGIN_COLUMNS = [
 ]
 
 MIN_STARS = 3
+
+# ChEBI writes chemical typography as HTML: <i> for stereodescriptors,
+# <small><sub> for subscripts. 18,671 of its names carry markup and it reached
+# record labels, and through them published slugs — `aflatoxin B1` became
+# `aflatoxin-b-small-sub-1-sub-small` (#24). Stripped here rather than in the
+# seeder so the committed inventory carries text and every consumer downstream
+# gets it right for free.
+_TAG = re.compile(r"<[^>]+>")
+
+
+def strip_markup(value: str) -> str:
+    """ChEBI name or definition as text: tags removed, entities decoded."""
+    return " ".join(html_module.unescape(_TAG.sub("", value)).split())
 
 
 def sha256_of(path: Path) -> str:
@@ -122,8 +137,8 @@ def extract_compounds(path: Path) -> tuple[dict[str, dict[str, str]], Counter]:
             counts[f"rejected_stars_{stars}"] += 1
             continue
         compounds[row["id"]] = {
-            "name": (row.get("name") or "").strip(),
-            "definition": (row.get("definition") or "").strip().strip('"'),
+            "name": strip_markup(row.get("name") or ""),
+            "definition": strip_markup((row.get("definition") or "").strip('"')),
             "stars": stars,
         }
         counts["compounds_kept"] += 1

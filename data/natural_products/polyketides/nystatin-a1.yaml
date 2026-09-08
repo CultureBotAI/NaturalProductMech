@@ -9,14 +9,10 @@ chemical_structure:
   structure_source_id: mibig:BGC0000115
 np_pathway: POLYKETIDES
 definition: A polyene macrolide antibiotic; part of the nystatin complex produced
-  by several <em>Streptomyces</em> species. It is an antifungal antibiotic used for
-  the treatment of topical fungal infections caused by a broad spectrum of fungal
-  pathogens comprising yeast-like and filamentous species.
+  by several Streptomyces species. It is an antifungal antibiotic used for the treatment
+  of topical fungal infections caused by a broad spectrum of fungal pathogens comprising
+  yeast-like and filamentous species.
 definition_source: CHEBI:473992
-synonyms:
-- value: nystatin A<small><sub>1</sub></small>
-  synonym_type: RELATED_SYNONYM
-  source: mibig:BGC0000115
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -110,13 +106,13 @@ source_concepts:
   minted_identifier: naturalproductmech:mibig-aad972ff85
 - source: CHEBI
   source_id: CHEBI:473992
-  source_label: nystatin A<small><sub>1</sub></small>
+  source_label: nystatin A1
   source_version: 3-star
   minted_identifier: naturalproductmech:chebi-63c98789be
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:02:04Z'
+- timestamp: '2026-09-08T06:13:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -68,8 +68,16 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-f8a9f2ca7f
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure '5α,9α,10β-labda-8(20),13-dien-15-yl diphosphate'
+    and MIBiG calls it 'copalyl diphosphate'. They share a Standard InChIKey, so if
+    the two names denote different compounds then one upstream record has the wrong
+    structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:01:59Z'
+- timestamp: '2026-09-08T06:13:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

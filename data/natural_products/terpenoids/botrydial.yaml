@@ -1,5 +1,5 @@
 identifier: CHEBI:3159
-label: Botrydial
+label: botrydial
 chemical_structure:
   smiles: C[C@@H]1C[C@@H]([C@@H]2[C@]([C@H]1C=O)([C@@](CC2(C)C)(C)C=O)O)OC(=O)C
   standard_inchi: InChI=1S/C17H26O5/c1-10-6-13(22-11(2)20)14-15(3,4)8-16(5,9-19)17(14,21)12(10)7-18/h7,9-10,12-14,21H,6,8H2,1-5H3/t10-,12+,13+,14+,16-,17-/m1/s1
@@ -9,10 +9,10 @@ chemical_structure:
   structure_source_id: mibig:BGC0000631
 np_pathway: TERPENOIDS
 definition: A cytotoxic fungal metabolite isolated from plant tissues infected by
-  phytopathogen <em>Botrytis cinerea</em>.
+  phytopathogen Botrytis cinerea.
 definition_source: CHEBI:3159
 synonyms:
-- value: botrydial
+- value: Botrydial
   synonym_type: RELATED_SYNONYM
   source: mibig:BGC0000631
 np_classification:
@@ -76,7 +76,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:02:03Z'
+- timestamp: '2026-09-08T06:13:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

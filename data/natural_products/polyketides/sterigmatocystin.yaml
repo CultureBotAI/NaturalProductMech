@@ -1,5 +1,5 @@
 identifier: CHEBI:18227
-label: Sterigmatocystin
+label: sterigmatocystin
 chemical_structure:
   smiles: COC1=C2C(=C3[C@@H]4C=CO[C@@H]4OC3=C1)OC5=C(C2=O)C(=CC=C5)O
   standard_inchi: InChI=1S/C18H12O6/c1-21-11-7-12-13(8-5-6-22-18(8)24-12)17-15(11)16(20)14-9(19)3-2-4-10(14)23-17/h2-8,18-19H,1H3/t8-,18+/m0/s1
@@ -9,11 +9,11 @@ chemical_structure:
   structure_source_id: mibig:BGC0000011
 np_pathway: POLYKETIDES
 definition: An organic heteropentacyclic compound whose skeleton comprises a xanthene
-  ring system <em>ortho</em>-fused to a dihydrofuranofuran moiety. The parent of the
-  class of sterigmatocystins.
+  ring system ortho-fused to a dihydrofuranofuran moiety. The parent of the class
+  of sterigmatocystins.
 definition_source: CHEBI:18227
 synonyms:
-- value: sterigmatocystin
+- value: Sterigmatocystin
   synonym_type: RELATED_SYNONYM
   source: mibig:BGC0000011
 np_classification:
@@ -116,7 +116,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T06:02:03Z'
+- timestamp: '2026-09-08T06:13:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

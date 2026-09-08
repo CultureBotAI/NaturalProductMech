@@ -1,5 +1,5 @@
 identifier: CHEBI:63703
-label: (-)-δ-cadinene
+label: (−)-δ-cadinene
 chemical_structure:
   smiles: CC1=C[C@@H]2[C@H](CCC(=C2CC1)C)C(C)C
   standard_inchi: InChI=1S/C15H24/c1-10(2)13-8-6-12(4)14-7-5-11(3)9-15(13)14/h9-10,13,15H,5-8H2,1-4H3/t13-,15-/m1/s1
@@ -10,11 +10,10 @@ chemical_structure:
 np_pathway: TERPENOIDS
 definition: A member of the cadinene family of sesquiterpenes in which the double
   bonds are located at the 4-4a and 7-8 positions, and in which the isopropyl group
-  at position 1 is <i>cis</i> to the hydrogen at the adjacent bridgehead carbon (the
-  1<i>R</i>,8a<i>S</i>-enantiomer).
+  at position 1 is cis to the hydrogen at the adjacent bridgehead carbon (the 1R,8aS-enantiomer).
 definition_source: CHEBI:63703
 synonyms:
-- value: (−)-δ-cadinene
+- value: (-)-δ-cadinene
   synonym_type: RELATED_SYNONYM
   source: mibig:BGC0000674
 np_classification:
@@ -74,7 +73,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:01:58Z'
+- timestamp: '2026-09-08T06:13:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,10 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001606
 np_pathway: POLYKETIDES
-definition: A member of the class of 2-pyranones that is 2<em>H</em>-pyran-2-one in
-  which the hydrogens at positions 3 and 6 are replaced by methyl and (2<i>E</i>)-2-buten-2-yl
-  groups, respectively. It is a mycotoxin produced by the rice pathogen <em>Fusarium
-  fujikuroi</em>.
+definition: A member of the class of 2-pyranones that is 2H-pyran-2-one in which the
+  hydrogens at positions 3 and 6 are replaced by methyl and (2E)-2-buten-2-yl groups,
+  respectively. It is a mycotoxin produced by the rice pathogen Fusarium fujikuroi.
 definition_source: CHEBI:156363
 synonyms:
 - value: gibepyrone-A
@@ -112,8 +111,15 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-d8bbed4ebc
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'gibepyrone A' and MIBiG calls it 'gibepyrone-A'.
+    They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:01:57Z'
+- timestamp: '2026-09-08T06:13:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

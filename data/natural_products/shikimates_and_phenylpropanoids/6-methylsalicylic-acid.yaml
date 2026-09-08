@@ -1,0 +1,136 @@
+identifier: CHEBI:17637
+label: 6-methylsalicylic acid
+chemical_structure:
+  smiles: CC1=C(C(=CC=C1)O)C(=O)O
+  standard_inchi: InChI=1S/C8H8O3/c1-5-3-2-4-6(9)7(5)8(10)11/h2-4,9H,1H3,(H,10,11)
+  standard_inchi_key: HCJMNOSIAGSZBM-UHFFFAOYSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0001275
+np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+definition: A monohydroxybenzoic acid that is salicylic acid in which the hydrogen
+  ortho to the carboxylic acid group is substituted by a methyl group.
+definition_source: CHEBI:17637
+synonyms:
+- value: 6-methylsalicyclic acid
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0001275
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Shikimates and Phenylpropanoids
+  superclass_results:
+  - Phenolic acids (C6-C1)
+  class_results:
+  - Simple phenolic acids
+  is_glycoside: false
+occurrences:
+- taxon_label: Leibnitzia anandria
+  source: CHEBI
+  evidence:
+  - reference: PMID:24699147
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:17637
+  taxon_id: NCBITaxon:41596
+  taxon_source: NCBITaxon
+- taxon_label: Penicillium griseofulvum
+  source: CHEBI
+  evidence:
+  - reference: PMID:16345795
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:17637
+  taxon_id: NCBITaxon:5078
+  taxon_source: NCBITaxon
+bgc_class:
+- PKS
+xrefs:
+- pubchem:11279
+producer_organisms:
+- taxon_id: NCBITaxon:101852
+  taxon_label: Glarea lozoyensis
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001275
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:15800788
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001275 entry version 3; citation taken from the entry level
+- taxon_id: NCBITaxon:33178
+  taxon_label: Aspergillus terreus
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0001276
+  source: MIBIG
+  source_version: '3'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:9003280
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001276 entry version 3; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0001275
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:101852
+  organism_label: Glarea lozoyensis
+  evidence:
+  - reference: PMID:15800788
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001275 entry version 3; citation taken from the entry level
+  genome_accession: genbank:AY941322.1
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+- accession: mibig:BGC0001276
+  entry_version: '3'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:33178
+  organism_label: Aspergillus terreus
+  evidence:
+  - reference: PMID:9003280
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0001276 entry version 3; citation taken from the entry level
+  genome_accession: genbank:D85860.2
+  bgc_class:
+  - PKS
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0001275
+  source_label: 6-methylsalicyclic acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-2682f7f50f
+- source: MIBIG
+  source_id: BGC0001276
+  source_label: 6-methylsalicyclic acid
+  source_version: '3'
+  minted_identifier: naturalproductmech:mibig-7f002a8ed7
+- source: CHEBI
+  source_id: CHEBI:17637
+  source_label: 6-methylsalicylic acid
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-b37a7dbd6c
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure '6-methylsalicylic acid' and MIBiG calls it '6-methylsalicyclic
+    acid'. They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001275, BGC0001276.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+curation_history:
+- timestamp: '2026-09-08T06:13:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

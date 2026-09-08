@@ -1,5 +1,5 @@
 identifier: CHEBI:85251
-label: Teicoplanin A2-2
+label: teicoplanin A2-2
 chemical_structure:
   smiles: CC(C)CCCCCCC(=O)N[C@@H]1[C@H]([C@@H]([C@H](O[C@H]1OC2=C3C=C4C=C2OC5=C(C=C(C=C5)[C@H]([C@H]6C(=O)N[C@@H](C7=CC(=CC(=C7C8=C(C=CC(=C8)[C@H](C(=O)N6)NC(=O)[C@@H]4NC(=O)[C@@H]9C1=CC(=CC(=C1)O)OC1=C(C=CC(=C1)[C@H](C(=O)N[C@H](CC1=CC(=C(O3)C=C1)Cl)C(=O)N9)N)O)O)O[C@@H]1[C@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O)O)C(=O)O)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)NC(=O)C)Cl)CO)O)O
   standard_inchi: InChI=1S/C88H97Cl2N9O33/c1-33(2)8-6-4-5-7-9-60(108)94-68-74(113)71(110)58(31-101)129-87(68)132-78-55-25-40-26-56(78)126-52-17-13-38(23-47(52)90)77(131-86-67(92-34(3)103)73(112)70(109)57(30-100)128-86)69-84(121)98-66(85(122)123)45-28-42(105)29-54(127-88-76(115)75(114)72(111)59(32-102)130-88)61(45)44-22-37(12-14-49(44)106)63(81(118)99-69)96-83(120)65(40)97-82(119)64-39-20-41(104)27-43(21-39)124-53-24-36(11-15-50(53)107)62(91)80(117)93-48(79(116)95-64)19-35-10-16-51(125-55)46(89)18-35/h10-18,20-29,33,48,57-59,62-77,86-88,100-102,104-107,109-115H,4-9,19,30-32,91H2,1-3H3,(H,92,103)(H,93,117)(H,94,108)(H,95,116)(H,96,120)(H,97,119)(H,98,121)(H,99,118)(H,122,123)/t48-,57-,58-,59-,62-,63-,64+,65-,66+,67-,68-,69+,70-,71-,72-,73-,74-,75+,76+,77-,86+,87+,88+/m1/s1
@@ -8,11 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000440
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
-definition: A teicoplanin A<small><sub>2</sub></small> that has 8-methylnonanoyl as
-  the variable <em>N</em>-acyl group.
+definition: A teicoplanin A2 that has 8-methylnonanoyl as the variable N-acyl group.
 definition_source: CHEBI:85251
 synonyms:
-- value: teicoplanin A<small><sub>2</sub></small>-2
+- value: Teicoplanin A2-2
   synonym_type: RELATED_SYNONYM
   source: mibig:BGC0000440
 np_classification:
@@ -91,13 +90,13 @@ source_concepts:
   minted_identifier: naturalproductmech:mibig-fca30e4b42
 - source: CHEBI
   source_id: CHEBI:85251
-  source_label: teicoplanin A<small><sub>2</sub></small>-2
+  source_label: teicoplanin A2-2
   source_version: 3-star
   minted_identifier: naturalproductmech:chebi-a1342b6cb5
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:01:58Z'
+- timestamp: '2026-09-08T06:13:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

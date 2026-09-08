@@ -10,7 +10,7 @@ chemical_structure:
 np_pathway: ALKALOIDS
 definition: An organic heterohexacyclic compound that is cladoniamide B in which both
   of the chlorines are replaced by hydrogen. It has been isolated from the culture
-  broth of <em>Streptomyces uncialis</em>.
+  broth of Streptomyces uncialis.
 definition_source: CHEBI:84368
 synonyms:
 - value: cladoniamide C7
@@ -85,8 +85,15 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-beb79c814b
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'cladoniamide C' and MIBiG calls it 'cladoniamide
+    C7'. They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:02:03Z'
+- timestamp: '2026-09-08T06:13:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

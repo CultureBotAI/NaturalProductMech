@@ -401,3 +401,50 @@ def test_a_shared_structure_links_to_the_sibling_corpus_rather_than_copying_it()
     assert link["basis"] == "SAME_INCHIKEY"
     # Nothing from the sibling's mechanism layer is copied across.
     assert "molecular_targets" not in doc
+
+
+# --- naming, after grounding brought a second opinion --------------------------
+
+def test_a_hyphenated_extension_counts_as_more_specific():
+    """Chemical names extend with punctuation more often than with a space, and
+    matching only on a space left the vague name winning (#22)."""
+    assert seed.choose_label(["tirucalla", "tirucalla-7,24-dien-3β-ol"])[0] == \
+        "tirucalla-7,24-dien-3β-ol"
+    assert seed.choose_label(["spirangien", "spirangien A1"])[0] == "spirangien A1"
+
+
+def test_the_identity_authority_breaks_a_tie_the_alphabet_should_not():
+    """MIBiG's `β-carotein` beat ChEBI's `β-carotene` because `i` sorts before
+    `n`. For a record grounded to a ChEBI term, ChEBI's name is the one that
+    should win (#22)."""
+    label, synonyms = seed.choose_label(["β-carotein", "β-carotene"], authoritative="β-carotene")
+    assert (label, synonyms) == ("β-carotene", ["β-carotein"])
+
+
+def test_the_authority_does_not_override_a_more_specific_source_name():
+    """ChEBI's name joins the candidates; it does not trump specificity. This
+    is what stops #16 regressing."""
+    assert seed.choose_label(["rhizoxin A", "rhizoxin"], authoritative="rhizoxin")[0] == "rhizoxin A"
+
+
+def test_typographic_variants_are_not_disagreements():
+    """Each of these raised a false controversy before the comparison was
+    normalised: a Unicode minus, a Greek Tau, a stereo prefix (#24)."""
+    assert not seed.names_disagree("(−)-δ-cadinene", "(-)-δ-cadinene")
+    assert not seed.names_disagree("(+)-Τ-muurolol", "(+)-T-muurolol")
+    assert not seed.names_disagree("(+)-eremophilene", "eremophilene")
+    assert not seed.names_disagree("(R)-nephthenol", "(-)-(R)-nephthenol")
+
+
+def test_a_greek_locant_is_not_stripped_because_it_changes_the_compound():
+    """alpha-amyrin and beta-amyrin are different compounds. Two sources
+    disagreeing about that on one InChIKey is the upstream error this check
+    exists to surface, so the descriptor must survive normalisation."""
+    assert seed.names_disagree("α-amyrin", "β-amyrin")
+    assert seed.names_disagree("2-cis-abscisic acid", "abscisic acid")
+
+
+def test_substantive_disagreements_still_surface():
+    assert seed.names_disagree("phevalin", "aureusimine B")
+    assert seed.names_disagree("romidepsin", "FR901228")
+    assert seed.names_disagree("bicozamycin", "bicyclomycin")

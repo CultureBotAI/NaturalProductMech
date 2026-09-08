@@ -1,0 +1,91 @@
+identifier: CHEBI:623918
+label: nikkomycin Z
+chemical_structure:
+  smiles: '[H][C@@](N)(C(=O)N[C@]([H])(C(O)=O)[C@@]1([H])O[C@H]([C@H](O)[C@@H]1O)N1C=CC(=O)NC1=O)[C@]([H])(C)[C@]([H])(O)C1=NC=C(O)C=C1'
+  standard_inchi: InChI=1S/C20H25N5O10/c1-7(13(28)9-3-2-8(26)6-22-9)11(21)17(31)24-12(19(32)33)16-14(29)15(30)18(35-16)25-5-4-10(27)23-20(25)34/h2-7,11-16,18,26,28-30H,21H2,1H3,(H,24,31)(H,32,33)(H,23,27,34)/t7-,11-,12-,13-,14-,15+,16+,18+/m0/s1
+  standard_inchi_key: WWJFFVUVFNBJTN-VHDFTHOZSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000876
+np_pathway: ALKALOIDS
+definition: A uridine-based nucleoside-peptide antibiotic which inhibits fungal chitin
+  biosynthesis by inhibiting chitin synthase.
+definition_source: CHEBI:623918
+synonyms:
+- value: neopolyoxin C
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000876
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Nicotinic acid alkaloids
+  - Histidine alkaloids
+  class_results:
+  - Imidazole alkaloids
+  - Pyridine alkaloids
+  is_glycoside: false
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:623918
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: c5cfe06ce7a3
+bgc_class:
+- OTHER
+xrefs:
+- npatlas:NPA015863
+producer_organisms:
+- taxon_id: NCBITaxon:1932
+  taxon_label: Streptomyces tendae
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000876
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: PMID:10712601
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000876 entry version 5; citation taken from the entry level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000876
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1932
+  organism_label: Streptomyces tendae
+  evidence:
+  - reference: PMID:10712601
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000876 entry version 5; citation taken from the entry level
+  genome_accession: genbank:AJ250581.1
+  bgc_class:
+  - OTHER
+  link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000876
+  source_label: neopolyoxin C
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-2c228834b6
+- source: CHEBI
+  source_id: CHEBI:623918
+  source_label: nikkomycin Z
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-48af09ef4a
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'nikkomycin Z' and MIBiG calls it 'neopolyoxin
+    C'. They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
+curation_history:
+- timestamp: '2026-09-08T06:13:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

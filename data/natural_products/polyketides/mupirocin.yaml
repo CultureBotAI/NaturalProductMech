@@ -9,10 +9,10 @@ chemical_structure:
   structure_source_id: mibig:BGC0000182
 np_pathway: POLYKETIDES
 definition: An α,β-unsaturated ester resulting from the formal condensation of the
-  alcoholic hydroxy group of 9-hydroxynonanoic acid with the carboxy group of (2<i>E</i>)-4-[(2<i>S</i>)-tetrahydro-2<em>H</em>-pyran-2-yl]-3-methylbut-2-enoic
+  alcoholic hydroxy group of 9-hydroxynonanoic acid with the carboxy group of (2E)-4-[(2S)-tetrahydro-2H-pyran-2-yl]-3-methylbut-2-enoic
   acid in which the tetrahydropyranyl ring is substituted at positions 3 and 4 by
-  hydroxy groups and at position 5 by a {(2<i>S</i>,3<i>S</i>)-3-[(2<i>S</i>,3<i>S</i>)-3-hydroxybutan-2-yl]oxiran-2-yl}methyl
-  group. Originally isolated from the Gram-negative bacterium <em>Pseudomonas fluorescens</em>,
+  hydroxy groups and at position 5 by a {(2S,3S)-3-[(2S,3S)-3-hydroxybutan-2-yl]oxiran-2-yl}methyl
+  group. Originally isolated from the Gram-negative bacterium Pseudomonas fluorescens,
   it is used as a topical antibiotic for the treatment of Gram-positive bacterial
   infections.
 definition_source: CHEBI:7025
@@ -84,8 +84,15 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-fd50886bee
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'mupirocin' and MIBiG calls it 'pseudomonic acid
+    A'. They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:02:00Z'
+- timestamp: '2026-09-08T06:13:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

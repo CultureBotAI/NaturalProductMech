@@ -8,11 +8,10 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000125
 np_pathway: POLYKETIDES
-definition: A macrolide antibiotic that has formula C<small><sub>33</sub></small>H<small><sub>47</sub></small>NO<small><sub>13</sub></small>,
-  produced by several <em>Streptomyces</em> species including <em>Streptomyces natalensis</em>.
-  It exhibits broad spectrum antifungal activity and used in eye drops, and as a food
-  preservative, and also as a postharvest biofungicide for citrus and other fruit
-  crops.
+definition: A macrolide antibiotic that has formula C33H47NO13, produced by several
+  Streptomyces species including Streptomyces natalensis. It exhibits broad spectrum
+  antifungal activity and used in eye drops, and as a food preservative, and also
+  as a postharvest biofungicide for citrus and other fruit crops.
 definition_source: CHEBI:7488
 synonyms:
 - value: pimaricin
@@ -118,6 +117,12 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'natamycin' and MIBiG calls it 'pimaricin'. They
+    share a Standard InChIKey, so if the two names denote different compounds then
+    one upstream record has the wrong structure. Check which.
 - discussion_id: shared-structure
   kind: CURATION_TODO
   status: OPEN
@@ -125,7 +130,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T06:02:01Z'
+- timestamp: '2026-09-08T06:13:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

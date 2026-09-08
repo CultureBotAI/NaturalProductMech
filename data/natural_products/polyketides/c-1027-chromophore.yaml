@@ -8,9 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001397
 np_pathway: POLYKETIDES
-definition: An enediyne antibiotic that has formula C<small><sub>43</sub></small>H<small><sub>42</sub></small>ClN<small><sub>3</sub></small>O<small><sub>13</sub></small>.
-  It is a natural product found in <em>Streptomyces globisporus</em> and exhibits
-  antimicrobial and antineoplastic properties.
+definition: An enediyne antibiotic that has formula C43H42ClN3O13. It is a natural
+  product found in Streptomyces globisporus and exhibits antimicrobial and antineoplastic
+  properties.
 definition_source: CHEBI:3252
 synonyms:
 - value: lidamycin
@@ -165,8 +165,15 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-c179b3ac5a
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'C-1027 chromophore' and MIBiG calls it 'lidamycin'.
+    They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:01:57Z'
+- timestamp: '2026-09-08T06:13:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

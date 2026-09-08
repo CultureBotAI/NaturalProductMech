@@ -170,24 +170,37 @@ def slugify(label: str, identifier: str) -> str:
 PAPER_INTERNAL_NAME = re.compile(r"(?i)^(compound|metabolite|unnamed|unknown)?\s*\d+[a-z]?$")
 
 
-def choose_label(names: list[str]) -> tuple[str, list[str]]:
+# A chemical name extends its parent with punctuation far more often than with
+# a space: `tirucalla-7,24-dien-3β-ol`, `spirangien A1`, `xiamycin A`. Matching
+# only on a space left the vague name winning, which is the defect #16 fixed
+# for one delimiter and #22 found for the rest.
+EXTENSION_CHARS = (" ", "-", ",", "(")
+
+
+def _extends(longer: str, shorter: str) -> bool:
+    """True when `longer` is `shorter` plus a specifying suffix."""
+    a, b = longer.lower(), shorter.lower()
+    return a != b and a.startswith(b) and a[len(b):len(b) + 1] in EXTENSION_CHARS
+
+
+def choose_label(names: list[str], authoritative: str | None = None) -> tuple[str, list[str]]:
     """The record's label, and every other source name as a synonym.
 
     Chosen separately from the lead row, because the lead row is picked by
-    producer-evidence strength and has nothing to say about naming. Without
-    this, three records took a bare family name over the specific congener —
-    `xiamycin` over `xiamycin A` — which labels one structure with what is
-    really a class. Erythromycin came out right only because the accession
-    tie-break happened to favour the better row (#16).
+    producer-evidence strength and has nothing to say about naming.
 
-    Two rules, in order:
+    Three rules, in order:
 
-    1. **Specificity wins.** Drop any candidate that another candidate has as a
-       prefix: `erythromycin` loses to `erythromycin A`, because the record is
-       one structure and the bare name is the family.
-    2. **Deterministic case.** Among names equal but for case, prefer the one
-       that is not all-lowercase-by-accident, then sort. `Aflatoxin B1` and
-       `aflatoxin B1` must not depend on entry order.
+    1. **Specificity wins.** Drop any candidate that another candidate extends:
+       `erythromycin` loses to `erythromycin A`, and `tirucalla` loses to
+       `tirucalla-7,24-dien-3β-ol`. The record is one structure and the bare
+       name is the family.
+    2. **The identity authority wins.** Among what survives, prefer
+       `authoritative` — ChEBI's name, for a record grounded to a ChEBI term.
+       Without this, a deterministic sort chose MIBiG's `β-carotein` over
+       ChEBI's `β-carotene` because `i` sorts before `n` (#22).
+    3. **Deterministic case.** Otherwise collapse case variants and sort, so
+       `Aflatoxin B1` and `aflatoxin B1` do not depend on entry order.
 
     Every discarded name is returned as a synonym rather than thrown away.
     """
@@ -195,23 +208,64 @@ def choose_label(names: list[str]) -> tuple[str, list[str]]:
     if not unique:
         return "", []
 
-    # Rule 1: a name another name extends is the less specific one.
     specific = [
         name for name in unique
-        if not any(other.lower() != name.lower() and other.lower().startswith(name.lower() + " ")
-                   for other in unique)
+        if not any(_extends(other, name) for other in unique)
     ]
     candidates = specific or unique
 
-    # Rule 2: collapse case variants deterministically.
-    by_lower: dict[str, list[str]] = defaultdict(list)
-    for name in candidates:
-        by_lower[name.lower()].append(name)
-    best_key = sorted(by_lower)[0]
-    label = sorted(by_lower[best_key])[0]
+    if authoritative and authoritative.strip() in candidates:
+        label = authoritative.strip()
+    else:
+        by_lower: dict[str, list[str]] = defaultdict(list)
+        for name in candidates:
+            by_lower[name.lower()].append(name)
+        label = sorted(by_lower[sorted(by_lower)[0]])[0]
 
-    synonyms = [name for name in unique if name != label]
-    return label, synonyms
+    return label, [name for name in unique if name != label]
+
+
+# Typographic variants that are not disagreements: a Unicode minus against a
+# hyphen, a Greek Tau against a Latin T, and a leading stereo or positional
+# descriptor. Each produced false controversies (#24).
+# Applied AFTER lowercasing, so the Greek letters here are the lowercase
+# codepoints: an uppercase Tau has already become a lowercase tau by then, and
+# mapping only the uppercase form silently did nothing.
+_NAME_NOISE = str.maketrans({
+    "\u2212": "-", "\u2013": "-", "\u2014": "-",
+    "\u03c4": "t", "\u03b1": "a", "\u03b2": "b", "\u03b3": "g",
+})
+# Only descriptors that do NOT change which compound is meant: optical
+# rotation, absolute configuration, cis/trans. A Greek letter or a numeric
+# locant is NOT stripped — alpha-amyrin and beta-amyrin are different
+# compounds, and two sources disagreeing about that on one InChIKey is
+# precisely the upstream error this check exists to surface.
+_LEADING_DESCRIPTOR = re.compile(
+    r"^(\([+\-\u2212\u00b1]\)-|\([0-9rszeRSZE'`,\- ]+\)-|[+\-\u2212\u00b1]-|cis-|trans-|rel-)+",
+    re.IGNORECASE,
+)
+
+
+def _name_core(value: str) -> str:
+    """A name reduced to what a disagreement would have to be about."""
+    text = value.strip().lower().translate(_NAME_NOISE)
+    text = " ".join(text.split())
+    return _LEADING_DESCRIPTOR.sub("", text) or text
+
+
+def names_disagree(label: str, other: str) -> bool:
+    """True when two names for one structure differ substantively.
+
+    Case, whitespace and the discarded-synonym cases are not disagreements. A
+    grounded record whose sources call it two genuinely different things is,
+    because one of the two upstream records then has the wrong structure —
+    `astaxanthin` and `(2R,3S,3'S)-2-hydroxyastaxanthin` share an InChIKey in
+    the committed inventories and are not the same compound.
+    """
+    a, b = _name_core(label), _name_core(other)
+    if a == b or not a or not b:
+        return False
+    return not (_extends(a, b) or _extends(b, a))
 
 
 def mibig_evidence(row: dict[str, str]) -> list[dict[str, str]]:
@@ -302,11 +356,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
 
         chebi_matches = chebi_by_key.get(key) or []
         name_candidates = [r["compound_name"] for r in rows]
-        if len(chebi_matches) == 1:
-            # ChEBI is the identity authority. Its name joins the candidates
-            # rather than overriding them, so the same specificity rule decides.
-            name_candidates.append(chebi_matches[0]["name"])
-        label, synonyms = choose_label(name_candidates)
+        authoritative = chebi_matches[0]["name"] if len(chebi_matches) == 1 else None
+        if authoritative:
+            name_candidates.append(authoritative)
+        label, synonyms = choose_label(name_candidates, authoritative=authoritative)
         label = label or key
 
         if len(chebi_matches) == 1:
@@ -520,6 +573,25 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                     f"Resolve a name from the literature or a structure registry."
                 ),
             })
+
+        # One structure, two sources calling it genuinely different things:
+        # somebody's structure is wrong upstream, and no naming rule should
+        # quietly decide which (#22).
+        if authoritative:
+            for other in {r["compound_name"] for r in rows if r["compound_name"]}:
+                if names_disagree(label, other):
+                    discussions.append({
+                        "discussion_id": "name-disagreement",
+                        "kind": "CONTROVERSY",
+                        "status": "OPEN",
+                        "prompt": (
+                            f"ChEBI calls this structure {authoritative!r} and MIBiG calls "
+                            f"it {other!r}. They share a Standard InChIKey, so if the two "
+                            f"names denote different compounds then one upstream record has "
+                            f"the wrong structure. Check which."
+                        ),
+                    })
+                    break
 
         # A collision that survives must be visible, not silent.
         if len(rows) > 1 and len({r["mibig_accession"] for r in rows}) > 1:

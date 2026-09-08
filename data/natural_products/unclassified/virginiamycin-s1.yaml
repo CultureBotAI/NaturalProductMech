@@ -8,17 +8,13 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001116
 np_pathway: UNCLASSIFIED
-definition: A cyclodepsipeptide that is <em>N</em>-(3-hydroxypicolinoyl)-<small>L</small>-threonyl-<small>D</small>-α-aminobutyryl-<small>L</small>-prolyl-<em>N</em>-methyl-<small>L</small>-phenylalanyl-4-oxo-<small>L</small>-pipecoloyl-<small>L</small>-2-phenylglycine
+definition: A cyclodepsipeptide that is N-(3-hydroxypicolinoyl)-L-threonyl-D-α-aminobutyryl-L-prolyl-N-methyl-L-phenylalanyl-4-oxo-L-pipecoloyl-L-2-phenylglycine
   in which the carboxy group of the 2-phenylglycine moiety has undergone formal intramolecular
-  condensation with the hydroxy group of the <em>N</em>-(3-hydroxypicolinoyl)-<small>L</small>-threonyl
-  to give the corresponding 19-membered ring lactone. It is one of the two major components
-  of the antibacterial drug virginiamycin, produced by <em>Streptomyces virginiae,
-  S. loidensis, S. mitakaensis, S. pristina-spiralis, S. ostreogriseus,</em> and others.
+  condensation with the hydroxy group of the N-(3-hydroxypicolinoyl)-L-threonyl to
+  give the corresponding 19-membered ring lactone. It is one of the two major components
+  of the antibacterial drug virginiamycin, produced by Streptomyces virginiae, S.
+  loidensis, S. mitakaensis, S. pristina-spiralis, S. ostreogriseus, and others.
 definition_source: CHEBI:46416
-synonyms:
-- value: virginiamycin S<small><sub>1</sub></small>
-  synonym_type: RELATED_SYNONYM
-  source: mibig:BGC0001116
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -79,13 +75,13 @@ source_concepts:
   minted_identifier: naturalproductmech:mibig-10bab73008
 - source: CHEBI
   source_id: CHEBI:46416
-  source_label: virginiamycin S<small><sub>1</sub></small>
+  source_label: virginiamycin S1
   source_version: 3-star
   minted_identifier: naturalproductmech:chebi-2722385a81
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:01:57Z'
+- timestamp: '2026-09-08T06:13:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

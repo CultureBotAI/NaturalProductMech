@@ -73,8 +73,16 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-0306b3c287
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure '3,4-dihydroxy-5-polyprenylbenzoic acid' and
+    MIBiG calls it 'compound 3'. They share a Standard InChIKey, so if the two names
+    denote different compounds then one upstream record has the wrong structure. Check
+    which.
 curation_history:
-- timestamp: '2026-09-08T06:02:01Z'
+- timestamp: '2026-09-08T06:13:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

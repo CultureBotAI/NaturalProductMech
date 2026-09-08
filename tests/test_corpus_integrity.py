@@ -192,3 +192,17 @@ def test_the_filing_pathway_matches_the_directory(records, record_paths):
         if seed.PATHWAY_DIRS.get(doc["np_pathway"]) != path.parent.name:
             offenders.append((str(path), doc["np_pathway"]))
     assert not offenders, f"records filed outside their pathway directory: {offenders}"
+
+
+def test_no_record_carries_html_markup(records):
+    """ChEBI writes chemical typography as HTML, and it reached labels and so
+    published slugs — `aflatoxin B1` became `aflatoxin-b-small-sub-1-sub-small`
+    (#24). Stripped at extraction; asserted here because the slug is a URL."""
+    import re
+    tag = re.compile(r"<[^>]+>")
+    offenders = [
+        (r["identifier"], field)
+        for r in records for field in ("label", "definition")
+        if tag.search(r.get(field) or "")
+    ]
+    assert not offenders, f"records carrying HTML markup: {offenders[:5]}"

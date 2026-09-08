@@ -1,0 +1,95 @@
+identifier: CHEBI:140442
+label: 12-epi-fischerindole U isonitrile
+chemical_structure:
+  smiles: CC1(C)[C@H]2CC[C@@](C)(C=C)[C@H]([N+]#[C-])[C@@H]2C2=C1NC1=CC=CC=C21
+  standard_inchi: InChI=1S/C21H24N2/c1-6-21(4)12-11-14-17(19(21)22-5)16-13-9-7-8-10-15(13)23-18(16)20(14,2)3/h6-10,14,17,19,23H,1,11-12H2,2-4H3/t14-,17-,19+,21+/m0/s1
+  standard_inchi_key: NEYJIGPAQAKWSI-QBGRRASTSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0000668
+np_pathway: ALKALOIDS
+definition: A tetracyclic indole alkaloid that is produced by the Stigonematales genus
+  of cyanobacteria.
+definition_source: CHEBI:140442
+synonyms:
+- value: 12-epi-fischerindole U
+  synonym_type: RELATED_SYNONYM
+  source: mibig:BGC0000668
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Tryptophan alkaloids
+  class_results:
+  - Hapalindole alkaloids
+  is_glycoside: false
+occurrences:
+- taxon_label: Hapalosiphon welwitschii
+  source: CHEBI
+  evidence:
+  - reference: PMID:27348090
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:140442
+  taxon_id: NCBITaxon:1433842
+  taxon_source: NCBITaxon
+  detection_context: UTEX B 1830
+bgc_class:
+- TERPENE
+- OTHER
+xrefs:
+- cyanometdb:CyanoMetDB_1549
+- npatlas:NPA08787
+producer_organisms:
+- taxon_id: NCBITaxon:1433842
+  taxon_label: Hapalosiphon welwitschii UTEX B 1830
+  evidence_basis: SOURCE_ASSERTION
+  biosynthetic_gene_cluster: mibig:BGC0000668
+  source: MIBIG
+  source_version: '5'
+  notes: 'Locus evidence: Enzymatic assays|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.'
+  evidence:
+  - reference: DOI:10.1021/jo00226a009
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000668 entry version 5; citation taken from the compound evidence
+      level
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0000668
+  entry_version: '5'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:1433842
+  organism_label: Hapalosiphon welwitschii UTEX B 1830
+  evidence:
+  - reference: DOI:10.1021/jo00226a009
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000668 entry version 5; citation taken from the compound evidence
+      level
+  genome_accession: genbank:KF811479.1
+  bgc_class:
+  - TERPENE
+  - OTHER
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000668
+  source_label: 12-epi-fischerindole U isonitrile
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5686583eac
+- source: CHEBI
+  source_id: CHEBI:140442
+  source_label: 12-epi-fischerindole U
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-1b9494350f
+grounding_status: EXACT
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-08T06:13:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

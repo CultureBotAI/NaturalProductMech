@@ -9,8 +9,7 @@ chemical_structure:
   structure_source_id: mibig:BGC0001390
 np_pathway: UNCLASSIFIED
 definition: An ilicicolin that is 2,4-dihydroxy-6-methyl-benzaldehyde which is substituted
-  at position 3 by a (2<i>E</i>,6<i>E</i>)-3,7,11-trimethyldodeca-2,6,10-trien-1-yl
-  group.
+  at position 3 by a (2E,6E)-3,7,11-trimethyldodeca-2,6,10-trien-1-yl group.
 definition_source: CHEBI:146153
 synonyms:
 - value: LL-Z1272beta
@@ -81,8 +80,15 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-8ce6bb7df7
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'ilicicolin B' and MIBiG calls it 'LL-Z1272beta'.
+    They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:02:02Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

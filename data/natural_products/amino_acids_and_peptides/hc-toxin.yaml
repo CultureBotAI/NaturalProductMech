@@ -8,9 +8,8 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001166
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
-definition: A homodetic cyclic tetrapeptide made up from <small>L</small>-alanyl,
-  <small>D</small>-alanyl, <small>L</small>-prolyl and 2-amino-8-oxo-9,10-epoxydecanoyl
-  residues.
+definition: A homodetic cyclic tetrapeptide made up from L-alanyl, D-alanyl, L-prolyl
+  and 2-amino-8-oxo-9,10-epoxydecanoyl residues.
 definition_source: CHEBI:48028
 synonyms:
 - value: HC-toxin
@@ -70,8 +69,15 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-9f2cd6369e
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'HC toxin' and MIBiG calls it 'HC-toxin'. They
+    share a Standard InChIKey, so if the two names denote different compounds then
+    one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:01:58Z'
+- timestamp: '2026-09-08T06:13:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

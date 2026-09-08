@@ -1,5 +1,5 @@
 identifier: CHEBI:48209
-label: Aflatoxin B2
+label: aflatoxin B2
 chemical_structure:
   smiles: COc1cc2c(c3c1c4c(c(=O)o3)C(=O)CC4)[C@@H]5CCO[C@@H]5O2
   standard_inchi: InChI=1S/C17H14O6/c1-20-10-6-11-14(8-4-5-21-17(8)22-11)15-13(10)7-2-3-9(18)12(7)16(19)23-15/h6,8,17H,2-5H2,1H3/t8-,17+/m0/s1
@@ -8,14 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000006
 np_pathway: POLYKETIDES
-definition: An aflatoxin having a hexahydrocyclopenta[<em>c</em>]furo[3',2':4,5]furo[2,3-<em>h</em>]chromene
+definition: An aflatoxin having a hexahydrocyclopenta[c]furo[3',2':4,5]furo[2,3-h]chromene
   skeleton with oxygen functionality at positions 1, 4 and 11.
 definition_source: CHEBI:48209
 synonyms:
-- value: aflatoxin B2
-  synonym_type: RELATED_SYNONYM
-  source: mibig:BGC0000006
-- value: aflatoxin B<small><sub>2</sub></small>
+- value: Aflatoxin B2
   synonym_type: RELATED_SYNONYM
   source: mibig:BGC0000006
 np_classification:
@@ -137,7 +134,7 @@ source_concepts:
   minted_identifier: naturalproductmech:mibig-b82c56ede9
 - source: CHEBI
   source_id: CHEBI:48209
-  source_label: aflatoxin B<small><sub>2</sub></small>
+  source_label: aflatoxin B2
   source_version: 3-star
   minted_identifier: naturalproductmech:chebi-fc0b5c7dfa
 grounding_status: EXACT
@@ -150,7 +147,7 @@ discussions:
     BGC0000011. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T06:02:04Z'
+- timestamp: '2026-09-08T06:13:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

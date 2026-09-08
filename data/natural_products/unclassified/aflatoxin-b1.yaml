@@ -1,5 +1,5 @@
 identifier: CHEBI:2504
-label: Aflatoxin B1
+label: aflatoxin B1
 chemical_structure:
   smiles: COc1cc2c(c3oc(=O)c4c(c13)CCC4=O)[C@@H]1C=CO[C@@H]1O2
   standard_inchi: InChI=1S/C17H12O6/c1-20-10-6-11-14(8-4-5-21-17(8)22-11)15-13(10)7-2-3-9(18)12(7)16(19)23-15/h4-6,8,17H,2-3H2,1H3/t8-,17+/m0/s1
@@ -8,14 +8,11 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000006
 np_pathway: UNCLASSIFIED
-definition: An aflatoxin having a tetrahydrocyclopenta[<em>c</em>]furo[3',2':4,5]furo[2,3-<em>h</em>]chromene
+definition: An aflatoxin having a tetrahydrocyclopenta[c]furo[3',2':4,5]furo[2,3-h]chromene
   skeleton with oxygen functionality at positions 1, 4 and 11.
 definition_source: CHEBI:2504
 synonyms:
-- value: aflatoxin B1
-  synonym_type: RELATED_SYNONYM
-  source: mibig:BGC0000006
-- value: aflatoxin B<small><sub>1</sub></small>
+- value: Aflatoxin B1
   synonym_type: RELATED_SYNONYM
   source: mibig:BGC0000006
 np_classification:
@@ -213,7 +210,7 @@ source_concepts:
   minted_identifier: naturalproductmech:mibig-fbfacdb076
 - source: CHEBI
   source_id: CHEBI:2504
-  source_label: aflatoxin B<small><sub>1</sub></small>
+  source_label: aflatoxin B1
   source_version: 3-star
   minted_identifier: naturalproductmech:chebi-2e4df2cd42
 grounding_status: EXACT
@@ -226,7 +223,7 @@ discussions:
     BGC0000008, BGC0000009, BGC0000011. Confirm they describe the same compound rather
     than an upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T06:02:01Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

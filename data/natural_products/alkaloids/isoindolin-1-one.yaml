@@ -8,8 +8,8 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001626
 np_pathway: ALKALOIDS
-definition: A member of the class of isoindoles that is  2,3-dihydro-1<em>H</em>-isoindole
-  in which the hydrogens at positon 1 are replaced by an oxo group.
+definition: A member of the class of isoindoles that is 2,3-dihydro-1H-isoindole in
+  which the hydrogens at positon 1 are replaced by an oxo group.
 definition_source: CHEBI:74235
 synonyms:
 - value: isoindolinone
@@ -71,8 +71,15 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-992df9343d
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: name-disagreement
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: ChEBI calls this structure 'isoindolin-1-one' and MIBiG calls it 'isoindolinone'.
+    They share a Standard InChIKey, so if the two names denote different compounds
+    then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T06:02:02Z'
+- timestamp: '2026-09-08T06:13:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

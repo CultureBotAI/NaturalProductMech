@@ -8,13 +8,9 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000833
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
-definition: A hydroxycoumarin antibiotic that is obtained from <em>Streptomyces rishiriensis</em>
+definition: A hydroxycoumarin antibiotic that is obtained from Streptomyces rishiriensis
   and exhibits potent antibacterial and anticancer activity.
 definition_source: CHEBI:3907
-synonyms:
-- value: coumermycin A<small><sub>1</sub></small>
-  synonym_type: RELATED_SYNONYM
-  source: mibig:BGC0000833
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -89,13 +85,13 @@ source_concepts:
   minted_identifier: naturalproductmech:mibig-05dad9ee33
 - source: CHEBI
   source_id: CHEBI:3907
-  source_label: coumermycin A<small><sub>1</sub></small>
+  source_label: coumermycin A1
   source_version: 3-star
   minted_identifier: naturalproductmech:chebi-87867fe10f
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T06:02:04Z'
+- timestamp: '2026-09-08T06:13:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
