@@ -270,6 +270,28 @@ plant–constituent–enzyme pharmacokinetic mechanism, filtered by edge
 provenance, and its merged upstreams make it restricted for redistribution
 regardless. See the research report §6.
 
+**Bioactivity and targets (M5), settled by the same research.** Measured
+activity is the worst-licensed layer in this domain: ChEMBL, DrugCentral and
+the Guide to PHARMACOLOGY are share-alike; DrugBank, IMPPAT, FooDB and
+Phenol-Explorer are non-commercial; NPASS, the Therapeutic Target Database,
+SymMap and HERB state no licence; CO-ADD reserves all rights while branding
+itself open-access. Two sources can seed:
+
+- **BindingDB's own-curated subset**, CC BY 3.0 and separable from its
+  ChEMBL-derived rows by the `Curation/DataSource` column — 93,712 rows over
+  46,304 InChIKeys, with UniProt per target chain and pH and temperature per
+  measurement. Filter on the column, not the filename: 429 of those rows are
+  ChEMBL's and are share-alike.
+- **PubChem BioAssay**, public domain but a deposition archive, so the seeded
+  row records its depositor and primary single-concentration hits are never
+  written as potencies.
+
+One result from that cluster is direct evidence for §2.2's rule. ChEMBL's
+`natural_product` flag marks prazosin — a wholly synthetic quinazoline — as a
+natural product, while its own NP-likeness score disagrees. The flag was
+rebuilt at release 33 from COCONUT mappings. A computed or flag-based
+natural-product signal never admits a record.
+
 **Queued behind licence or identity gates:** COCONUT (its download page claims
 CC0 "without any restrictions" while its own README says every source keeps its
 licence — and the collections column proves the README right, so adoption means

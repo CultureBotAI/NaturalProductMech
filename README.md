@@ -29,7 +29,7 @@ seeder or corpus yet.
 | [PLAN.md](PLAN.md) | Scope, schema design, the AntibioticMech join, milestones M0–M6 |
 | [CLAUDE.md](CLAUDE.md) | Operational guidance for editing agents, written ahead of the code |
 | [research/2026-09-07-natural-product-data-sources.md](research/2026-09-07-natural-product-data-sources.md) | The verified source landscape, with the three cluster reports beside it |
-| [curation/source_queue.tsv](curation/source_queue.tsv) | 29 candidate sources, ranked, with licence status and the gap each closes |
+| [curation/source_queue.tsv](curation/source_queue.tsv) | 35 candidate sources, ranked, with licence status and the gap each closes |
 | [.claude/skills/](.claude/skills) | Four curation workflows adapted from AntibioticMech |
 
 ## The gap it fills
@@ -81,14 +81,21 @@ their own terms pages on 2026-09-07:
 | [PubChem](https://pubchem.ncbi.nlm.nih.gov/) | public domain | structures the others lack |
 | [CyanoMetDB](https://www.eawag.ch/en/department/uchem/projects/cyanometdb/) | CC BY 4.0 | curated cyanobacterial metabolites |
 
+Measured bioactivity and molecular targets come from a fifth and sixth source,
+both verified the same day: **BindingDB's own-curated subset** (CC BY 3.0, and
+separable from its ChEMBL-derived records by a provenance column) and
+**PubChem BioAssay** (public domain, recorded per depositor).
+
 Excellent resources that **cannot** be seeded into a CC BY 4.0 corpus, and why:
 NPAtlas (CC BY-NC from release 2024_09), Norine (CC BY-NC-SA), NP-MRD
-(CC BY-NC), CMNPD (CC BY-NC-SA), NPBS Atlas (CC BY-NC), KNApSAcK
-(redistribution prohibited), ChEMBL (share-alike), ClassyFire/ChemOnt (bespoke
-terms), MetaCyc (subscription), KEGG (not a public database). NPASS and
-StreptomeDB state no licence at all, which is not the same as permission.
+(CC BY-NC), CMNPD (CC BY-NC-SA), NPBS Atlas (CC BY-NC), IMPPAT and DrugBank
+(non-commercial), KNApSAcK (redistribution prohibited), ChEMBL, DrugCentral and
+the Guide to PHARMACOLOGY (share-alike), ClassyFire/ChemOnt (bespoke terms),
+MetaCyc (subscription), KEGG (not a public database). NPASS, the Therapeutic
+Target Database and StreptomeDB state no licence at all, which is not the same
+as permission, and CO-ADD reserves all rights while calling itself open-access.
 COCONUT advertises CC0 over a collection that demonstrably contains rows from
-all four of the restricted sources above.
+several of the restricted sources above.
 
 The full reasoning, with licence text quoted from each primary page, is in the
 [research report](research/2026-09-07-natural-product-data-sources.md).

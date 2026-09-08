@@ -17,8 +17,9 @@ authority for detail:
   — NP-KG (Taneja et al.), the NaPDI Center, PheKnowLator, ENPKG, and the
   general biomedical knowledge graphs.
 - [np-bioactivity-target-sources](2026-09-07-np-bioactivity-target-sources.md)
-  — ChEMBL, BindingDB, PubChem BioAssay, NPASS activities, DrugBank,
-  DrugCentral, IUPHAR, Open Targets, and the ethnopharmacology resources.
+  — ChEMBL, BindingDB, PubChem BioAssay, NPASS activities, CO-ADD, NCI DTP,
+  DrugBank, DrugCentral, IUPHAR, Open Targets, the traditional-medicine
+  databases, and the food and ethnobotany resources.
 
 This report is evidence for a curator, never automatic input. It exists to be
 folded into `curation/source_queue.tsv` by the `source-queue` skill — one row
@@ -328,6 +329,79 @@ cluster family, but it is frozen on 2020 data and MIBiG 2.0, and its documented
 bulk-download URL is unreachable. The Paired Omics Data Platform is CC BY 4.0
 and conceptually ideal — it links gene clusters to mass spectra — but holds
 **117 BGC-to-MS2 links in total**.
+
+### 8. Measured bioactivity is the worst-licensed layer in the domain, and one file is the exception
+
+**Confidence: high.** Licence text quoted from each primary page; the BindingDB
+figures come from downloading and profiling the actual file.
+
+Almost every large curated bioactivity resource is share-alike, non-commercial,
+or unlicensed. ChEMBL ships a `LICENSE` file reading "Attribution-ShareAlike
+3.0 Unported". DrugCentral and the Guide to PHARMACOLOGY are likewise copyleft.
+DrugBank, IMPPAT, FooDB and Phenol-Explorer are non-commercial. NPASS, the
+Therapeutic Target Database, SymMap and HERB state no licence at all. Four
+sources can seed measured activity or targets into a CC BY 4.0 corpus:
+
+| Source | Licence | Usable slice |
+|---|---|---|
+| BindingDB, own-curated subset | CC BY 3.0 | 93,712 rows over 46,304 distinct InChIKeys |
+| PubChem BioAssay | public domain, per depositor | 300,270,330 rows over 1,980,801 assays |
+| Open Targets Platform | CC0 for platform output | release 26.06 |
+| Dr. Duke's (USDA) | CC0, stated on its own about page | frozen, developed 1992–2016 |
+
+**BindingDB is the practical answer for targets**, because it separates its own
+curation into a dedicated download whose licence differs from the ChEMBL-derived
+one. Its terms page states verbatim: "Data imported from ChEMBL are provided
+under their Creative Commons Attribution-Share Alike 3.0 Unported License. All
+data curated by BindingDB staff are provided under the Creative Commons
+Attribution 3.0 License." The articles file carries Standard InChIKey as a
+first-class column, UniProt accessions per target chain, PMID and DOI, and —
+almost uniquely in this cluster — pH and temperature per measurement.
+
+Two operational warnings came out of profiling that file, and both are the kind
+that a filename-level assumption would miss:
+
+- **The articles file is not 100% BindingDB-curated.** 429 of its 93,712 rows
+  are labelled `ChEMBL` and are therefore share-alike. A licence-clean
+  extraction filters on `Curation/DataSource == "Curated from the literature by
+  BindingDB"`, not on the filename.
+- **93,712 is far short of the 1.6 million "curated by BindingDB curators"** the
+  front page advertises. The remainder is patent curation and other streams not
+  packaged in the articles download, and their licensing is not separately
+  stated. Do not assume the whole curated set is CC BY 3.0.
+
+**Two findings worth carrying into the design.**
+
+First, **ChEMBL's `natural_product` flag has false positives, verified by
+direct API call.** `CHEMBL2` is prazosin — a wholly synthetic quinazoline
+α1-adrenoceptor antagonist — and it carries `natural_product=1` while its own
+`np_likeness_score` of −1.29 disagrees. The flag was reimplemented at release 33
+from COCONUT mappings, and COCONUT is the aggregate this report already found
+unreliable at the row level. This is direct evidence for the plan's rule that a
+computed or flag-based natural-product signal never admits a record.
+
+Second, **CO-ADD is the sharpest gap between branding and terms in the whole
+landscape.** Its front page reads "Open-access Antimicrobial Screening
+Database"; its only terms page reserves all rights, states content "may not be
+systematically downloaded", and forecloses redistribution without written
+permission. Its data reaches ChEMBL, where it is at least explicitly licensed,
+but as share-alike. Since CO-ADD is a Wellcome-funded open-science project whose
+terms read like unmodified 2016 university boilerplate, a request for a CC BY
+grant is plausible and is probably the highest-value licence ask in this
+cluster after NPASS.
+
+Two more traps this cluster confirms, both already in the plan's invariants:
+
+- **Open Targets is CC0 over its own output while integrating ChEMBL and Human
+  Protein Atlas under CC BY-SA.** Its licence page enumerates this honestly. Use
+  it for its own aggregation, never as a laundering route for ChEMBL records.
+- **Dr. Duke's is the cleanest licence and the dirtiest data.** Activity labels
+  are frequently attributed to a plant and then associated with its constituent
+  chemicals, which is the herb-level-indication trap by construction, and many
+  entries carry no units, no assay and no dose. CC0 makes it seedable; the
+  evidence rules make most of it unusable as a `BioactivityObservation`.
+
+NAPRALERT is currently offline, its own site reading "Currently Unavailable".
 
 ## Consequences for the plan
 

@@ -25,9 +25,9 @@ Read these before changing domain behavior:
 
 - [PLAN.md](PLAN.md) — scope, schema design, the AntibioticMech join, milestones.
 - [README.md](README.md) — public model and generated statistics (once scaffolded).
-- [docs/HARMONIZATION.md](docs/HARMONIZATION.md) — identity, merging, scope
-  (once scaffolded; `PLAN.md` §2–§4 until then).
-- [docs/CURATION.md](docs/CURATION.md) — decision semantics and evidence rules.
+- `docs/HARMONIZATION.md` — identity, merging, scope. Not written yet;
+  `PLAN.md` §2–§4 carries these until the scaffold lands.
+- `docs/CURATION.md` — decision semantics and evidence rules. Not written yet.
 - [research/2026-09-07-natural-product-data-sources.md](research/2026-09-07-natural-product-data-sources.md)
   — the verified source landscape.
 
