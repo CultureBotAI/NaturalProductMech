@@ -44,6 +44,10 @@ from pathlib import Path
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+
+from naturalproductmech.taxonomy import load_taxon_names, resolve_name  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CONF_PATH = REPO_ROOT / "conf" / "sources.yaml"
 PLANNED_CONF_PATH = REPO_ROOT / "conf" / "sources.planned.yaml"
@@ -179,6 +183,7 @@ def extract_structures(path: Path, compounds: dict[str, dict[str, str]]) -> tupl
 def extract_origins(path: Path, compounds: dict[str, dict[str, str]]) -> tuple[list[dict], Counter]:
     counts: Counter[str] = Counter()
     rows: list[dict] = []
+    taxon_names = load_taxon_names()
     for row in read_rows(path):
         counts["origin_rows"] += 1
         cid = row.get("compound_id")
@@ -203,8 +208,16 @@ def extract_origins(path: Path, compounds: dict[str, dict[str, str]]) -> tuple[l
         # anyway — it did not, which is how this rule got written down.
         accession = (row.get("species_accession") or "").strip()
         if not accession.isdigit():
-            counts["rejected_species_not_resolvable"] += 1
-            continue
+            # ChEBI's own accession is missing or not an NCBI id. Before
+            # dropping the row, ask the taxonomy inventory: 1,146 rows were
+            # discarded here over a missing identifier rather than missing
+            # evidence, which is why NCBI Taxonomy was adopted.
+            resolved = resolve_name(species, taxon_names)
+            if not resolved:
+                counts["rejected_species_not_resolvable"] += 1
+                continue
+            accession = resolved.split(":", 1)[1]
+            counts["resolved_via_ncbi_taxonomy"] += 1
         rows.append({
             "chebi_id": f"CHEBI:{cid}",
             "species_text": species,

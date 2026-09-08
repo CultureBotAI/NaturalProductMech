@@ -52,7 +52,7 @@ by grounding status:
 
 field coverage (records carrying at least one item):
   producer_organisms                   3115
-  occurrences                          2326
+  occurrences                          2342
   biosynthetic_gene_clusters           3115
   biosynthetic_pathway                    0
   bioactivities                           0
@@ -73,7 +73,7 @@ cluster link claims: 3449 (1352 demonstrated)
   CLUSTER_PREDICTED                       2
   CLUSTER_UNSTATED                     1985
 
-records where a producer taxon is independently corroborated by a cited occurrence: 715
+records where a producer taxon is independently corroborated by a cited occurrence: 721
 
 These grade two different questions and they come apart. A producer
 claim says this TAXON makes the compound; a cluster link says this

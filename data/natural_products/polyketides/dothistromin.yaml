@@ -19,6 +19,26 @@ np_classification:
   - Anthraquinones and anthrones
   is_glycoside: true
 occurrences:
+- taxon_id: NCBITaxon:143450
+  taxon_label: Cercospora arachidicola
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1007/BF00441127
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q5063974
+- taxon_id: NCBITaxon:143450
+  taxon_label: Cercospora arachidicola
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1139/V85-214
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q5063974
 - taxon_id: NCBITaxon:332034
   taxon_label: Dothistroma pini
   taxon_source: NCBITaxon
@@ -73,7 +93,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T07:14:23Z'
+- timestamp: '2026-09-08T20:19:54Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

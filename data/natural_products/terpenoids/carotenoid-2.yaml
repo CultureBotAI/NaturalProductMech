@@ -57,6 +57,18 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q380136
+- taxon_id: NCBITaxon:1063
+  taxon_label: Rhodobacter sphaeroides
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1128/JB.176.13.3859-3869.1994
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q4186823 This taxon is also
+    recorded as a producer, from a different source and citation. The two corroborate
+    each other rather than duplicating.
 - taxon_id: NCBITaxon:1703
   taxon_label: Brevibacterium linens
   taxon_source: NCBITaxon
@@ -606,7 +618,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-08T07:14:27Z'
+- timestamp: '2026-09-08T20:19:58Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
