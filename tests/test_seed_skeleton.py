@@ -691,3 +691,26 @@ def test_an_unmapped_sibling_class_is_dropped_rather_than_guessed():
     })[0]
     assert "bioactivity_summary" not in doc
     assert doc["related_records"]  # the link still stands
+
+
+def test_the_sibling_inventory_keeps_non_ascii_record_names():
+    """`git ls-tree` quote-escapes any path with a non-ASCII byte, so
+    `α-gurjunene.yaml` arrives as `"...\\316\\261-gurjunene.yaml"` — trailing
+    quote included — and a `.endswith(".yaml")` filter silently drops it. That
+    lost 85 of 2,920 sibling records, every one a compound with a Greek letter
+    in its name, which in natural-product chemistry is not a corner case.
+
+    Asserted against the committed inventory: if the reader regresses to
+    quoted paths, these labels vanish from it.
+    """
+    import csv
+    path = REPO_ROOT / "data" / "raw" / "antibioticmech_inchikeys.tsv"
+    if not path.exists():
+        import pytest
+        pytest.skip("sibling inventory not extracted")
+    with path.open(newline="", encoding="utf-8") as fh:
+        labels = [row["label"] for row in csv.DictReader(fh, delimiter="\t")]
+    non_ascii = [label for label in labels if not label.isascii()]
+    assert non_ascii, "no non-ASCII sibling labels survived the ls-tree read"
+    assert not any('"' in label or "\\3" in label for label in labels), \
+        "a quote-escaped path leaked into the inventory"
