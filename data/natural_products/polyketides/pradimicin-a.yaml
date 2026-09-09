@@ -102,7 +102,9 @@ related_records:
   identifier: CHEBI:8349
   relation: SAME_STRUCTURE
   basis: SAME_INCHIKEY
-  source_version: c5cfe06ce7a3
+  source_version: 74f6cc836249
+bioactivity_summary:
+- ANTIFUNGAL
 bgc_class:
 - PKS
 xrefs:
@@ -155,7 +157,7 @@ discussions:
     They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-08T22:37:21Z'
+- timestamp: '2026-09-09T01:11:23Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

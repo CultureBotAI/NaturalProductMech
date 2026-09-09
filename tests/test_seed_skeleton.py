@@ -646,3 +646,71 @@ def test_an_unclassifiable_assay_yields_no_summary_rather_than_a_guess():
     assert doc["bioactivities"][0]["call"] == "ACTIVE"
     assert "activity_class" not in doc["bioactivities"][0]
     assert "bioactivity_summary" not in doc
+
+
+def test_a_sibling_link_supplies_the_class_and_nothing_else():
+    """PLAN.md 4.1: the corpora join rather than duplicate. The class comes
+    across because it is a classification; targets, resistance and MIC spectra
+    stay in the corpus that owns those claims."""
+    sibling = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "identifier": "CHEBI:42355",
+        "label": "erythromycin A", "antimicrobial_class": "ANTIBACTERIAL",
+        "slug": "erythromycin-a", "corpus_commit": "c5cfe06ce7a3ff",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "antibioticmech_inchikeys": [sibling],
+    })[0]
+    assert doc["bioactivity_summary"] == ["ANTIBACTERIAL"]
+    assert doc["related_records"][0]["relation"] == "SAME_STRUCTURE"
+    # Nothing from the sibling's mechanism layer crosses over.
+    assert "molecular_targets" not in doc
+    assert "resistance_mechanisms" not in doc
+
+
+def test_an_unspecified_antimicrobial_is_not_widened_to_antibacterial():
+    """A source that declines to name the microbes is telling you something.
+    Mapping it to a specific class would invent the specificity it withheld."""
+    sibling = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "identifier": "CHEBI:1",
+        "label": "x", "antimicrobial_class": "ANTIMICROBIAL_UNSPECIFIED",
+        "slug": "x", "corpus_commit": "abc",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "antibioticmech_inchikeys": [sibling],
+    })[0]
+    assert doc["bioactivity_summary"] == ["ANTIMICROBIAL_UNSPECIFIED"]
+
+
+def test_an_unmapped_sibling_class_is_dropped_rather_than_guessed():
+    sibling = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "identifier": "CHEBI:1",
+        "label": "x", "antimicrobial_class": "BIOCIDE", "slug": "x", "corpus_commit": "abc",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "antibioticmech_inchikeys": [sibling],
+    })[0]
+    assert "bioactivity_summary" not in doc
+    assert doc["related_records"]  # the link still stands
+
+
+def test_the_sibling_inventory_keeps_non_ascii_record_names():
+    """`git ls-tree` quote-escapes any path with a non-ASCII byte, so
+    `α-gurjunene.yaml` arrives as `"...\\316\\261-gurjunene.yaml"` — trailing
+    quote included — and a `.endswith(".yaml")` filter silently drops it. That
+    lost 85 of 2,920 sibling records, every one a compound with a Greek letter
+    in its name, which in natural-product chemistry is not a corner case.
+
+    Asserted against the committed inventory: if the reader regresses to
+    quoted paths, these labels vanish from it.
+    """
+    import csv
+    path = REPO_ROOT / "data" / "raw" / "antibioticmech_inchikeys.tsv"
+    if not path.exists():
+        import pytest
+        pytest.skip("sibling inventory not extracted")
+    with path.open(newline="", encoding="utf-8") as fh:
+        labels = [row["label"] for row in csv.DictReader(fh, delimiter="\t")]
+    non_ascii = [label for label in labels if not label.isascii()]
+    assert non_ascii, "no non-ASCII sibling labels survived the ls-tree read"
+    assert not any('"' in label or "\\3" in label for label in labels), \
+        "a quote-escaped path leaked into the inventory"

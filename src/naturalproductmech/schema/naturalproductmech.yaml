@@ -882,6 +882,13 @@ enums:
       ANTIBACTERIAL:
       ANTIFUNGAL:
       ANTIMYCOBACTERIAL:
+      ANTIMICROBIAL_UNSPECIFIED:
+        description: >-
+          Asserted as antimicrobial without a named target group. Carried
+          rather than collapsed into ANTIBACTERIAL, because a source that
+          declines to name the microbes is telling you something, and mapping
+          it to a specific class would invent the specificity it withheld.
+          AntibioticMech uses the same value for the same reason.
       ANTIVIRAL:
       ANTIPARASITIC:
       HERBICIDAL:

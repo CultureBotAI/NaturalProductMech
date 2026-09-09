@@ -172,6 +172,26 @@ A multi-label or empty classifier result files `UNCLASSIFIED` and queues the
 record. Picking the first array element is how AntibioticMech once asserted
 that lassomycin is a rifamycin.
 
+## What crosses from a sibling corpus, and what does not
+
+A structure in both this corpus and AntibioticMech is linked, never copied.
+What crosses is the **classification** — the sibling's `antimicrobial_class`
+becomes a `bioactivity_summary` value here, which `docs/CURATION.md` permits
+because a sibling link is one of the four backings that rule accepts.
+
+What does not cross is the **mechanism**: molecular targets, resistance
+determinants and MIC spectra stay in the corpus that owns those claims. A test
+asserts that nothing from the sibling's mechanism layer appears on a record
+here.
+
+The mapping is lossless in the two directions that matter. `ANTIPROTOZOAL`
+becomes `ANTIPARASITIC` because that is this corpus's name for it;
+`ANTIMYCOBACTERIAL` keeps its own value rather than being widened to
+antibacterial; and `ANTIMICROBIAL_UNSPECIFIED` stays unspecified, because a
+source that declines to name the microbes is telling you something and mapping
+it to a specific class would invent the specificity it withheld. An unmapped
+class is dropped rather than guessed, and the link still stands.
+
 ## Scope
 
 `conf/sources.yaml` → `producer_scope` filters `producer_organisms` and **not**

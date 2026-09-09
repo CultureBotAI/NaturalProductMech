@@ -312,15 +312,15 @@ bioactivities:
   target_enzyme: UniProtKB:NP_059107
   notes: 318 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
-bioactivity_summary:
-- ANTIVIRAL
-- CYTOTOXIC
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:168396
   relation: SAME_STRUCTURE
   basis: SAME_INCHIKEY
-  source_version: c5cfe06ce7a3
+  source_version: 74f6cc836249
+bioactivity_summary:
+- ANTIVIRAL
+- CYTOTOXIC
 bgc_class:
 - PKS
 compound_classes:
@@ -487,7 +487,7 @@ discussions:
     BGC0002616, BGC0002619. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-08T22:37:14Z'
+- timestamp: '2026-09-09T01:11:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

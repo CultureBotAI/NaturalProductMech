@@ -412,9 +412,6 @@ bioactivities:
   activity_class: ENZYME_INHIBITOR
   notes: 13 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
-bioactivity_summary:
-- CYTOTOXIC
-- ENZYME_INHIBITOR
 molecular_targets:
 - target_label: Polyphenol oxidase 1
   target_type: PROTEIN
@@ -518,6 +515,9 @@ molecular_targets:
   protein_examples:
   - UniProtKB:P36025
   taxon_label: Saccharomyces cerevisiae (strain ATCC 204508 / S288c)
+bioactivity_summary:
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -568,7 +568,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:37:11Z'
+- timestamp: '2026-09-09T01:11:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

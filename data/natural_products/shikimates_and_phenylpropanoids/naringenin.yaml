@@ -519,10 +519,6 @@ bioactivities:
   target_enzyme: UniProtKB:BAA02545
   notes: 19 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
-bioactivity_summary:
-- ANTIVIRAL
-- CYTOTOXIC
-- ENZYME_INHIBITOR
 molecular_targets:
 - target_label: Aldehyde oxidase 1
   target_type: PROTEIN
@@ -652,6 +648,10 @@ molecular_targets:
   protein_examples:
   - UniProtKB:Q92731
   taxon_label: Homo sapiens
+bioactivity_summary:
+- ANTIVIRAL
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -699,7 +699,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:37:13Z'
+- timestamp: '2026-09-09T01:11:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

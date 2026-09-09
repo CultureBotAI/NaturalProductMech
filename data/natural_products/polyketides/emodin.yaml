@@ -486,8 +486,6 @@ bioactivities:
   units: uM
   notes: 554 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
-bioactivity_summary:
-- CYTOTOXIC
 molecular_targets:
 - target_label: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase FabZ
   target_type: PROTEIN
@@ -575,6 +573,8 @@ molecular_targets:
   protein_examples:
   - UniProtKB:P07711
   taxon_label: Homo sapiens
+bioactivity_summary:
+- CYTOTOXIC
 bgc_class:
 - PKS
 xrefs:
@@ -627,7 +627,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:37:19Z'
+- timestamp: '2026-09-09T01:11:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

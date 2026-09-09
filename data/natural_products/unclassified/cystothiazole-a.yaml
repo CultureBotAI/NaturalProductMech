@@ -237,14 +237,15 @@ bioactivities:
     notes: PubChem BioAssay AID 31, deposited by DTP/NCI; assay type Confirmatory.
   call: ACTIVE
   activity_class: CYTOTOXIC
-bioactivity_summary:
-- CYTOTOXIC
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:65716
   relation: SAME_STRUCTURE
   basis: SAME_INCHIKEY
-  source_version: c5cfe06ce7a3
+  source_version: 74f6cc836249
+bioactivity_summary:
+- ANTIFUNGAL
+- CYTOTOXIC
 bgc_class:
 - NRPS
 - PKS
@@ -293,7 +294,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:37:16Z'
+- timestamp: '2026-09-09T01:11:18Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

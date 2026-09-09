@@ -435,16 +435,17 @@ bioactivities:
   activity_class: ENZYME_INHIBITOR
   notes: 109 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
-bioactivity_summary:
-- ANTIVIRAL
-- CYTOTOXIC
-- ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:48267
   relation: SAME_STRUCTURE
   basis: SAME_INCHIKEY
-  source_version: c5cfe06ce7a3
+  source_version: 74f6cc836249
+bioactivity_summary:
+- ANTIFUNGAL
+- ANTIVIRAL
+- CYTOTOXIC
+- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -492,7 +493,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:37:13Z'
+- timestamp: '2026-09-09T01:11:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

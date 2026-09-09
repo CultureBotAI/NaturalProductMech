@@ -65,8 +65,6 @@ bioactivities:
   units: uM
   target_enzyme: UniProtKB:B45705
   activity_class: ENZYME_INHIBITOR
-bioactivity_summary:
-- ENZYME_INHIBITOR
 molecular_targets:
 - target_label: Acetylcholinesterase
   target_type: PROTEIN
@@ -301,6 +299,8 @@ molecular_targets:
   protein_examples:
   - UniProtKB:P06276
   taxon_label: Homo sapiens
+bioactivity_summary:
+- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -344,7 +344,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:37:23Z'
+- timestamp: '2026-09-09T01:11:25Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
