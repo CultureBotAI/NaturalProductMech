@@ -105,6 +105,21 @@ ACTIVITY_CLASS_PATTERNS = [
 ]
 
 
+# AntibioticMech's filing class to this corpus's activity vocabulary. The
+# mapping is deliberately lossless in both directions that matter: an
+# unspecified antimicrobial stays unspecified rather than becoming
+# antibacterial, and a mycobacterial claim keeps its own value rather than
+# being widened. Anything unmapped is dropped rather than guessed.
+SIBLING_ACTIVITY_CLASSES = {
+    "ANTIBACTERIAL": "ANTIBACTERIAL",
+    "ANTIFUNGAL": "ANTIFUNGAL",
+    "ANTIMYCOBACTERIAL": "ANTIMYCOBACTERIAL",
+    "ANTIVIRAL": "ANTIVIRAL",
+    "ANTIPROTOZOAL": "ANTIPARASITIC",
+    "ANTIMICROBIAL_UNSPECIFIED": "ANTIMICROBIAL_UNSPECIFIED",
+}
+
+
 def classify_activity(assay_name: str) -> str | None:
     """A BioactivityClassEnum value when the assay name says one plainly."""
     for pattern, label in ACTIVITY_CLASS_PATTERNS:
@@ -701,6 +716,7 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 deduped = kept_occurrences
             doc["occurrences"] = deduped
 
+        summary_classes: set[str] = set()
         bioactivities: list[dict[str, Any]] = []
         for row in assays_by_key.get(key) or []:
             observation: dict[str, Any] = {
@@ -751,10 +767,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             # accepts a bioactivities item as backing, and there are now
             # classified items to derive from. Only classes actually present on
             # a written observation are summarised.
-            summary = sorted({b["activity_class"] for b in bioactivities
-                              if b.get("activity_class")})
-            if summary:
-                doc["bioactivity_summary"] = summary
+            summary_classes.update(b["activity_class"] for b in bioactivities
+                                   if b.get("activity_class"))
 
         targets: list[dict[str, Any]] = []
         for row in targets_by_key.get(key) or []:
@@ -801,6 +815,20 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         } for sibling in sibling_by_key.get(key) or []]
         if links:
             doc["related_records"] = links
+
+        # A shared structure's antimicrobial class comes from the sibling that
+        # owns that claim, and ONLY the class: no targets, no resistance
+        # determinants, no MIC spectra. PLAN.md 4.1 says the corpora join
+        # rather than duplicate, and 3.5 accepts a sibling link as backing for
+        # exactly this. The alternative was leaving 205 shared compounds
+        # unclassified while the fleet already knew what they do.
+        for sibling in sibling_by_key.get(key) or []:
+            mapped = SIBLING_ACTIVITY_CLASSES.get(sibling.get("antimicrobial_class", ""))
+            if mapped:
+                summary_classes.add(mapped)
+
+        if summary_classes:
+            doc["bioactivity_summary"] = sorted(summary_classes)
 
         if bgc_classes:
             doc["bgc_class"] = bgc_classes

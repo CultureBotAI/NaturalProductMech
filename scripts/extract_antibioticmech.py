@@ -25,6 +25,7 @@ import hashlib
 import subprocess
 import sys
 import time
+from collections import Counter
 from pathlib import Path
 
 import yaml
@@ -35,7 +36,8 @@ MANIFEST_PATH = RAW_DIR / "MANIFEST.yaml"
 INVENTORY_NAME = "antibioticmech_inchikeys.tsv"
 DEFAULT_CHECKOUT = REPO_ROOT.parent / "AntibioticMech"
 
-COLUMNS = ["standard_inchi_key", "identifier", "label", "slug", "corpus_commit"]
+COLUMNS = ["standard_inchi_key", "identifier", "label", "antimicrobial_class",
+           "slug", "corpus_commit"]
 
 
 def sha256_of(path: Path) -> str:
@@ -66,6 +68,11 @@ def read_sibling(checkout: Path, commit: str) -> list[dict[str, str]]:
             "standard_inchi_key": key,
             "identifier": doc["identifier"],
             "label": doc.get("label") or "",
+            # The sibling's filing class. Carried so this corpus can say a
+            # shared compound is antibacterial WITHOUT copying the mechanism
+            # that establishes it — PLAN.md 4.1, and the backing rule in 3.5
+            # that accepts a sibling link.
+            "antimicrobial_class": doc.get("antimicrobial_class") or "",
             "slug": path.stem,
             "corpus_commit": commit,
         })
@@ -92,6 +99,10 @@ def main() -> int:
     print(f"AntibioticMech at {commit[:12]}: {len(rows)} records, "
           f"{len(keys)} unique InChIKeys", file=sys.stderr)
     print(f"structures shared with this corpus: {len(keys & ours)}", file=sys.stderr)
+    shared_classes = Counter(
+        row["antimicrobial_class"] for row in rows if row["standard_inchi_key"] in ours)
+    for name, count in shared_classes.most_common():
+        print(f"    {name or '(none)':<28} {count:>5}", file=sys.stderr)
 
     if args.dry_run:
         print("dry run: nothing written", file=sys.stderr)

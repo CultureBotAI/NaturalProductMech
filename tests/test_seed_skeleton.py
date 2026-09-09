@@ -646,3 +646,48 @@ def test_an_unclassifiable_assay_yields_no_summary_rather_than_a_guess():
     assert doc["bioactivities"][0]["call"] == "ACTIVE"
     assert "activity_class" not in doc["bioactivities"][0]
     assert "bioactivity_summary" not in doc
+
+
+def test_a_sibling_link_supplies_the_class_and_nothing_else():
+    """PLAN.md 4.1: the corpora join rather than duplicate. The class comes
+    across because it is a classification; targets, resistance and MIC spectra
+    stay in the corpus that owns those claims."""
+    sibling = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "identifier": "CHEBI:42355",
+        "label": "erythromycin A", "antimicrobial_class": "ANTIBACTERIAL",
+        "slug": "erythromycin-a", "corpus_commit": "c5cfe06ce7a3ff",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "antibioticmech_inchikeys": [sibling],
+    })[0]
+    assert doc["bioactivity_summary"] == ["ANTIBACTERIAL"]
+    assert doc["related_records"][0]["relation"] == "SAME_STRUCTURE"
+    # Nothing from the sibling's mechanism layer crosses over.
+    assert "molecular_targets" not in doc
+    assert "resistance_mechanisms" not in doc
+
+
+def test_an_unspecified_antimicrobial_is_not_widened_to_antibacterial():
+    """A source that declines to name the microbes is telling you something.
+    Mapping it to a specific class would invent the specificity it withheld."""
+    sibling = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "identifier": "CHEBI:1",
+        "label": "x", "antimicrobial_class": "ANTIMICROBIAL_UNSPECIFIED",
+        "slug": "x", "corpus_commit": "abc",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "antibioticmech_inchikeys": [sibling],
+    })[0]
+    assert doc["bioactivity_summary"] == ["ANTIMICROBIAL_UNSPECIFIED"]
+
+
+def test_an_unmapped_sibling_class_is_dropped_rather_than_guessed():
+    sibling = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "identifier": "CHEBI:1",
+        "label": "x", "antimicrobial_class": "BIOCIDE", "slug": "x", "corpus_commit": "abc",
+    }
+    doc = seed.build_records({
+        "mibig_compounds": [MIBIG_ROW], "antibioticmech_inchikeys": [sibling],
+    })[0]
+    assert "bioactivity_summary" not in doc
+    assert doc["related_records"]  # the link still stands

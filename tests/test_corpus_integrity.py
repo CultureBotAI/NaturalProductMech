@@ -128,6 +128,33 @@ def test_no_occurrence_lacks_evidence(records):
     assert not offenders, f"uncited occurrences: {offenders}"
 
 
+def sibling_classes_for(record: dict) -> set:
+    """Activity classes the linked sibling corpus asserts for this structure.
+
+    Read from the pinned inventory, which is what the seeder used, so the test
+    checks the same evidence rather than a restatement of it.
+    """
+    links = record.get("related_records") or []
+    if not links:
+        return set()
+    mapping = {
+        "ANTIBACTERIAL": "ANTIBACTERIAL", "ANTIFUNGAL": "ANTIFUNGAL",
+        "ANTIMYCOBACTERIAL": "ANTIMYCOBACTERIAL", "ANTIVIRAL": "ANTIVIRAL",
+        "ANTIPROTOZOAL": "ANTIPARASITIC",
+        "ANTIMICROBIAL_UNSPECIFIED": "ANTIMICROBIAL_UNSPECIFIED",
+    }
+    path = REPO_ROOT / "data" / "raw" / "antibioticmech_inchikeys.tsv"
+    if not path.exists():
+        return set()
+    key = (record.get("chemical_structure") or {}).get("standard_inchi_key")
+    with path.open(newline="", encoding="utf-8") as fh:
+        return {
+            mapping[row["antimicrobial_class"]]
+            for row in csv.DictReader(fh, delimiter="\t")
+            if row["standard_inchi_key"] == key and row["antimicrobial_class"] in mapping
+        }
+
+
 def test_every_bioactivity_summary_value_is_backed(records):
     """The one backing rule, from PLAN.md 3.5. A summary value with nothing
     behind it is the field's whole failure mode."""
@@ -140,9 +167,15 @@ def test_every_bioactivity_summary_value_is_backed(records):
         # trace to an observation carrying that class, a target, or a sibling
         # link. A summary value nothing on the record supports is the field's
         # whole failure mode.
+        # A summary value must trace to something on THIS record that asserts
+        # that class: an observation carrying it, or a sibling link whose
+        # corpus asserts it. "The record has a link, therefore any value is
+        # fine" was too loose — a linked record could have claimed CYTOTOXIC
+        # with nothing behind it.
         classes = {b.get("activity_class") for b in r.get("bioactivities") or []}
+        classes |= sibling_classes_for(r)
         unbacked = [v for v in summary if v not in classes]
-        backed = not unbacked or bool(r.get("molecular_targets") or r.get("related_records"))
+        backed = not unbacked or bool(r.get("molecular_targets"))
         if not backed:
             offenders.append(r["identifier"])
     assert not offenders, f"bioactivity_summary with no backing: {offenders}"

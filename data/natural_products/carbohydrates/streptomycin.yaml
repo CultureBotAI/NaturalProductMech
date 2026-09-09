@@ -325,15 +325,16 @@ bioactivities:
     notes: PubChem BioAssay AID 1259408, deposited by 22071; assay type Other.
   call: ACTIVE
   activity_class: TOXIN
-bioactivity_summary:
-- ENZYME_INHIBITOR
-- TOXIN
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:17076
   relation: SAME_STRUCTURE
   basis: SAME_INCHIKEY
-  source_version: c5cfe06ce7a3
+  source_version: 74f6cc836249
+bioactivity_summary:
+- ANTIBACTERIAL
+- ENZYME_INHIBITOR
+- TOXIN
 bgc_class:
 - SACCHARIDE
 xrefs:
@@ -381,7 +382,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-08T22:37:20Z'
+- timestamp: '2026-09-09T00:58:55Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
