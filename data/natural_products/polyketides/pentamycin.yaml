@@ -78,18 +78,20 @@ bioactivities:
   - reference: pubchem.aid:743075
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 743075, deposited by 824; assay type Confirmatory.
+      Target accession AEP43755 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 15.089
   units: uM
-  target_enzyme: UniProtKB:AEP43755
 - assay: qHTS assay to identify small molecule antagonists of the androgen receptor
     (AR) signaling pathway
   evidence:
   - reference: pubchem.aid:743035
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 743035, deposited by 824; assay type Confirmatory.
+      Target accession AAI32976 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0076
   units: uM
-  target_enzyme: UniProtKB:AAI32976
 - assay: qHTS assay to identify small molecule antagonists of the thyroid receptor
     (TR) signaling pathway - cell viability counter screen
   evidence:
@@ -103,9 +105,10 @@ bioactivities:
   - reference: pubchem.aid:720532
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory.
+      Target accession B45705 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 15.8489
   units: uM
-  target_enzyme: UniProtKB:B45705
   activity_class: ENZYME_INHIBITOR
 bioactivity_summary:
 - ENZYME_INHIBITOR
@@ -159,6 +162,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:33Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

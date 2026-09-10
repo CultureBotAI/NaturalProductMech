@@ -283,27 +283,30 @@ bioactivities:
   - reference: pubchem.aid:504847
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504847, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_001017535 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 70.7946
   units: uM
-  target_enzyme: UniProtKB:NP_001017535
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Aldehyde Dehydrogenase 1 (ALDH1A1)
   evidence:
   - reference: pubchem.aid:1030
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1030, deposited by NCGC; assay type Confirmatory.
+      Target accession AAP35567 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 39.8107
   units: uM
-  target_enzyme: UniProtKB:AAP35567
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a
   evidence:
   - reference: pubchem.aid:504332
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504332, deposited by NCGC; assay type Confirmatory.
+      Target accession CAQ07474 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 17.7828
   units: uM
-  target_enzyme: UniProtKB:CAQ07474
   activity_class: ENZYME_INHIBITOR
 - assay: CCRIS mutagenicity studies
   evidence:
@@ -383,6 +386,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

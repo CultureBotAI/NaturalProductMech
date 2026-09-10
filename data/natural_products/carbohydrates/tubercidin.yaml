@@ -181,18 +181,20 @@ bioactivities:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.5174
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: A quantitative high throughput screen for small molecules that induce DNA
     re-replication in SW480 colon adenocarcinoma cells.
   evidence:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.6513
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: A549 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader
     - 7071-06_Antagonist_Dose_CherryPick_Activity
   evidence:
@@ -267,11 +269,11 @@ bioactivities:
   - reference: PMID:12937174
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 1PR5_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KI
   value: 120.0
   units: uM
-  target_enzyme: UniProtKB:1PR5_A
   activity_class: ENZYME_INHIBITOR
 - assay: Fluorescence Cell-Based Dose Response to Characterize Compounds Cytotoxic
     to RAS-Dependent BJ-TERT-LT-ST Fibroblast
@@ -299,29 +301,32 @@ bioactivities:
   - reference: pubchem.aid:493083
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 493083, deposited by Broad Institute; assay type Confirmatory.
+      Target accession AAH94064 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   measurement_type: EC50
   value: 10.488
   units: uM
-  target_enzyme: UniProtKB:AAH94064
 - assay: HSF-1 induced GFP reporter and Doxycycline induced RFP reporter Measured
     in Cell-Based System Using Plate Reader - 2038-03_Inhibitor_DoseNoFile_CherryPick_Internal-Standard_Set3
   evidence:
   - reference: pubchem.aid:493085
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 493085, deposited by Broad Institute; assay type Confirmatory.
+      Target accession AAH94064 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   measurement_type: EC50
   value: 3.174
   units: uM
-  target_enzyme: UniProtKB:AAH94064
 - assay: HTS for Inhibitors of HP1-beta Chromodomain Interactions with Methylated
     Histone Tails
   evidence:
   - reference: pubchem.aid:540317
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 540317, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_001120700 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 11.2202
   units: uM
-  target_enzyme: UniProtKB:NP_001120700
   activity_class: ENZYME_INHIBITOR
 - assay: HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader
     - 7071-02_Antagonist_Dose_CherryPick_Activity
@@ -357,20 +362,22 @@ bioactivities:
   - reference: pubchem.aid:743444
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 743444, deposited by Broad Institute; assay type Confirmatory.
+      Target accession AAC47329 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   measurement_type: EC50
   value: 3.98
   units: uM
-  target_enzyme: UniProtKB:AAC47329
 - assay: Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of Heat
     Shock Factor 1 (HSF1)
   evidence:
   - reference: pubchem.aid:2382
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2382, deposited by Broad Institute; assay type Confirmatory.
+      Target accession AAH94064 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   measurement_type: EC50
   value: 3.057
   units: uM
-  target_enzyme: UniProtKB:AAH94064
   activity_class: ENZYME_INHIBITOR
 - assay: Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of of
     5'UTR Stem-Loop Driven Alpha-Synuclein mRNA Translation in H4 Neuroglioblastoma
@@ -494,6 +501,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:44Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

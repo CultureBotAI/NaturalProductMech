@@ -46,9 +46,10 @@ bioactivities:
   - reference: pubchem.aid:2572
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2572, deposited by NCGC; assay type Confirmatory.
+      Target accession 1DE9_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 15.8489
   units: uM
-  target_enzyme: UniProtKB:1DE9_A
   activity_class: ENZYME_INHIBITOR
 - assay: Fluorescent Polarization Homogeneous Dose Response HTS to Indentify Inhibitors
     of Mex-5 Binding to TCR-2
@@ -67,19 +68,21 @@ bioactivities:
   - reference: pubchem.aid:1964
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1964, deposited by Broad Institute; assay type Confirmatory.
+      Target accession NP_505172 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   measurement_type: EC50
   value: 38.668
   units: uM
-  target_enzyme: UniProtKB:NP_505172
   activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibitors of DNA Polymerase Beta: Hit validation'
   evidence:
   - reference: pubchem.aid:540280
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 540280, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_002681 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 28.1838
   units: uM
-  target_enzyme: UniProtKB:NP_002681
   activity_class: ENZYME_INHIBITOR
 - assay: Luminescence-based Microorganism Dose Response HTS to Identify Inhibitors
     of E. Coli Growth
@@ -96,9 +99,10 @@ bioactivities:
   - reference: pubchem.aid:504444
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_001138884 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 20.5962
   units: uM
-  target_enzyme: UniProtKB:NP_001138884
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     48 hour incubation
   evidence:
@@ -122,9 +126,10 @@ bioactivities:
   - reference: pubchem.aid:2546
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2546, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_035411 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 11.2202
   units: uM
-  target_enzyme: UniProtKB:NP_035411
   activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS Assay for Inhibitors Targeting the Menin-MLL Interaction in MLL Related
     Leukemias: Competition With Fluorescein Labeled MLL-derived Peptide'
@@ -132,53 +137,59 @@ bioactivities:
   - reference: pubchem.aid:1766
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1766, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_000235 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 19.9526
   units: uM
-  target_enzyme: UniProtKB:NP_000235
 - assay: 'qHTS Assay for Inhibitors Targeting the Menin-MLL Interaction in MLL Related
     Leukemias: Competition With Fluorescein Labeled MLL-derived Peptide'
   evidence:
   - reference: pubchem.aid:1766
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1766, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_005924 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 19.9526
   units: uM
-  target_enzyme: UniProtKB:NP_005924
 - assay: 'qHTS Assay for Inhibitors Targeting the Menin-MLL Interaction in MLL Related
     Leukemias: Competition With Texas Red Labeled MLL-derived Mutant Peptide'
   evidence:
   - reference: pubchem.aid:1768
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1768, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_000235 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 8.9125
   units: uM
-  target_enzyme: UniProtKB:NP_000235
 - assay: 'qHTS Assay for Inhibitors Targeting the Menin-MLL Interaction in MLL Related
     Leukemias: Competition With Texas Red Labeled MLL-derived Mutant Peptide'
   evidence:
   - reference: pubchem.aid:1768
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1768, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_005924 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 8.9125
   units: uM
-  target_enzyme: UniProtKB:NP_005924
 - assay: qHTS Assay for Inhibitors of BAZ2B
   evidence:
   - reference: pubchem.aid:504333
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504333, deposited by NCGC; assay type Confirmatory.
+      Target accession BAA89212 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 79.4328
   units: uM
-  target_enzyme: UniProtKB:BAA89212
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of DNA Polymerase Beta
   evidence:
   - reference: pubchem.aid:485314
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 485314, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_002681 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 17.7828
   units: uM
-  target_enzyme: UniProtKB:NP_002681
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia
     Lamblia
@@ -186,18 +197,20 @@ bioactivities:
   - reference: pubchem.aid:2451
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2451, deposited by NCGC; assay type Confirmatory.
+      Target accession 2ISV_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 19.9054
   units: uM
-  target_enzyme: UniProtKB:2ISV_A
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of JMJD2A-Tudor Domain
   evidence:
   - reference: pubchem.aid:504339
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504339, deposited by NCGC; assay type Confirmatory.
+      Target accession 2QQS_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 63.0957
   units: uM
-  target_enzyme: UniProtKB:2QQS_A
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Rango (Ran-regulated importin-beta cargo) -
     Importin beta complex formation
@@ -205,9 +218,10 @@ bioactivities:
   - reference: pubchem.aid:540263
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 540263, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_002256 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 50.1187
   units: uM
-  target_enzyme: UniProtKB:NP_002256
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Rango (Ran-regulated importin-beta cargo) -
     Importin beta complex formation
@@ -215,18 +229,20 @@ bioactivities:
   - reference: pubchem.aid:540263
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 540263, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_005692 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 50.1187
   units: uM
-  target_enzyme: UniProtKB:NP_005692
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Tyrosyl-DNA Phosphodiesterase (TDP1)
   evidence:
   - reference: pubchem.aid:485290
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 485290, deposited by NCGC; assay type Confirmatory.
+      Target accession 1JY1_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.2512
   units: uM
-  target_enzyme: UniProtKB:1JY1_A
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of the Human Apurinic/apyrimidinic Endonuclease
     1 (APE1)
@@ -234,9 +250,10 @@ bioactivities:
   - reference: pubchem.aid:2517
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2517, deposited by NCGC; assay type Confirmatory.
+      Target accession 1DE9_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 28.1838
   units: uM
-  target_enzyme: UniProtKB:1DE9_A
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Lipid Storage Modulators in Drosophila S3 Cells
   evidence:
@@ -250,18 +267,20 @@ bioactivities:
   - reference: pubchem.aid:485360
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 485360, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056293 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 19.9526
   units: uM
-  target_enzyme: UniProtKB:NP_056293
   activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS Assay for the Inhibitors of L3MBTL1: Hit Validation'
   evidence:
   - reference: pubchem.aid:540279
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 540279, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056293 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 6.7016
   units: uM
-  target_enzyme: UniProtKB:NP_056293
   activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS Assay for the Inhibitors of L3MBTL1: Hit Validationin AlphaScreen Counterscreen'
   evidence:
@@ -370,6 +389,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

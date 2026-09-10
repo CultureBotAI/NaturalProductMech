@@ -183,11 +183,11 @@ bioactivities:
   - reference: PMID:16122422
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 1ZYR_C was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KI
   value: 1.8
   units: uM
-  target_enzyme: UniProtKB:1ZYR_C
   activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
     derived from PDB
@@ -195,11 +195,11 @@ bioactivities:
   - reference: PMID:16122422
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 1ZYR_D was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KI
   value: 1.8
   units: uM
-  target_enzyme: UniProtKB:1ZYR_D
   activity_class: ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
@@ -262,6 +262,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:56Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -92,9 +92,10 @@ bioactivities:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.631
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: 'Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS
     assay: Summary'
   evidence:
@@ -108,10 +109,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2061107
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary.
+    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Target
+      accession NP_000015 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 0.565385
   units: uM
-  target_enzyme: UniProtKB:NP_000015
 - assay: 'Calcineurin Phosphatase (CaN) Assay from US Patent US10077289: "Cyclosporins
     modified on the MeBmt sidechain by heterocyclic rings"'
   evidence:
@@ -228,9 +230,10 @@ bioactivities:
   - reference: pubchem.aid:1671199
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory.
+      Target accession EAW99313 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 13.1044
   units: uM
-  target_enzyme: UniProtKB:EAW99313
 - assay: 'Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule
     antagonists: luciferase reporter qHTS assay'
   evidence:
@@ -245,9 +248,10 @@ bioactivities:
   - reference: pubchem.aid:1671197
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
+      Target accession AAV41877 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 5.8535
   units: uM
-  target_enzyme: UniProtKB:AAV41877
 - assay: 'Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule
     antagonists: luciferase reporter qHTS assay'
   evidence:
@@ -262,9 +266,10 @@ bioactivities:
   - reference: pubchem.aid:1671197
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
+      Target accession AAV41877 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 8.709
   units: uM
-  target_enzyme: UniProtKB:AAV41877
   notes: 318 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
 related_records:
@@ -326,6 +331,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:05Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

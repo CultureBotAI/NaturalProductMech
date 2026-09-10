@@ -270,27 +270,30 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:885
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 885, deposited by NCGC; assay type Confirmatory.
+    notes: PubChem BioAssay AID 885, deposited by NCGC; assay type Confirmatory. Target
+      accession NP_059488 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 25.1189
   units: uM
-  target_enzyme: UniProtKB:NP_059488
 - assay: qHTS Assay for Inhibitors and Substrates of Cytochrome P450 3A4
   evidence:
   - reference: pubchem.aid:884
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 884, deposited by NCGC; assay type Confirmatory.
+    notes: PubChem BioAssay AID 884, deposited by NCGC; assay type Confirmatory. Target
+      accession NP_059488 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 25.1189
   units: uM
-  target_enzyme: UniProtKB:NP_059488
 - assay: qHTS Assay for Inhibitors of the Human Apurinic/apyrimidinic Endonuclease
     1 (APE1)
   evidence:
   - reference: pubchem.aid:2517
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2517, deposited by NCGC; assay type Confirmatory.
+      Target accession 1DE9_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0089
   units: uM
-  target_enzyme: UniProtKB:1DE9_A
   activity_class: ENZYME_INHIBITOR
 bioactivity_summary:
 - ENZYME_INHIBITOR
@@ -506,6 +509,10 @@ discussions:
     than an upstream cross-reference error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:33Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

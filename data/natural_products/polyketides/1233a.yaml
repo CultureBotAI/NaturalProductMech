@@ -24,15 +24,17 @@ bioactivities:
   - reference: PMID:2890166
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1346846, deposited by IUPHAR-DB; assay type Other.
+      Target accession NP_058964 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_058964
 - assay: Rat hydroxymethylglutaryl-CoA synthase 1 (Lanosterol biosynthesis pathway)
   evidence:
   - reference: PMID:8094614
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1346846, deposited by IUPHAR-DB; assay type Other.
+      Target accession NP_058964 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_058964
 bgc_class:
 - PKS
 xrefs:
@@ -88,6 +90,10 @@ discussions:
     or a structure registry.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

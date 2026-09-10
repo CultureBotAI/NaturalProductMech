@@ -295,18 +295,20 @@ bioactivities:
   - reference: pubchem.aid:743083
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 743083, deposited by 824; assay type Confirmatory.
+      Target accession EAW77416 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 33.4915
   units: uM
-  target_enzyme: UniProtKB:EAW77416
 - assay: qHTS assay to identify small molecule antagonists of the androgen receptor
     (AR) signaling pathway using the MDA cell line
   evidence:
   - reference: pubchem.aid:743042
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 743042, deposited by 824; assay type Confirmatory.
+      Target accession AAI32976 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 8.4127
   units: uM
-  target_enzyme: UniProtKB:AAI32976
 - assay: DSSTox (FDAMDD) FDA Maximum (Recommended) Daily Dose Database
   evidence:
   - reference: pubchem.aid:1195
@@ -410,6 +412,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

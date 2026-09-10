@@ -37,9 +37,10 @@ bioactivities:
   - reference: pubchem.aid:504847
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504847, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_001017535 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 10.0
   units: uM
-  target_enzyme: UniProtKB:NP_001017535
   activity_class: ENZYME_INHIBITOR
 - assay: Total Fluorescence Counterscreen for Inhibitors of the Interaction of Thyroid
     Hormone Receptor and Steroid Receptor Coregulator 2
@@ -47,18 +48,20 @@ bioactivities:
   - reference: pubchem.aid:1479
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1479, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_001121649 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0224
   units: uM
-  target_enzyme: UniProtKB:NP_001121649
   activity_class: ENZYME_INHIBITOR
 - assay: VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2546
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2546, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_035411 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0631
   units: uM
-  target_enzyme: UniProtKB:NP_035411
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of 15-hLO-2 (15-human lipoxygenase 2)
   evidence:
@@ -74,45 +77,50 @@ bioactivities:
   - reference: pubchem.aid:1030
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1030, deposited by NCGC; assay type Confirmatory.
+      Target accession AAP35567 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 3.5481
   units: uM
-  target_enzyme: UniProtKB:AAP35567
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of GCN5L2
   evidence:
   - reference: pubchem.aid:504327
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504327, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_066564 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 3.1623
   units: uM
-  target_enzyme: UniProtKB:NP_066564
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of HPGD (15-Hydroxyprostaglandin Dehydrogenase)
   evidence:
   - reference: pubchem.aid:894
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 894, deposited by NCGC; assay type Confirmatory.
+    notes: PubChem BioAssay AID 894, deposited by NCGC; assay type Confirmatory. Target
+      accession NP_000851 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 2.8184
   units: uM
-  target_enzyme: UniProtKB:NP_000851
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Promiscuous and Specific Inhibitors of Cruzain (without detergent)
   evidence:
   - reference: pubchem.aid:1476
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1476, deposited by NCGC; assay type Confirmatory.
+      Target accession 3I06_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 8.9125
   units: uM
-  target_enzyme: UniProtKB:3I06_A
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of Polymerase Kappa
   evidence:
   - reference: pubchem.aid:588579
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 588579, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_057302 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 4.7444
   units: uM
-  target_enzyme: UniProtKB:NP_057302
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of binding or entry into cells for Lassa Virus
   evidence:
@@ -127,18 +135,20 @@ bioactivities:
   - reference: pubchem.aid:720532
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory.
+      Target accession B45705 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 2.5119
   units: uM
-  target_enzyme: UniProtKB:B45705
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS for inhibitors of ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2551
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2551, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_035411 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.5012
   units: uM
-  target_enzyme: UniProtKB:NP_035411
   activity_class: ENZYME_INHIBITOR
 bioactivity_summary:
 - ENZYME_INHIBITOR
@@ -187,6 +197,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

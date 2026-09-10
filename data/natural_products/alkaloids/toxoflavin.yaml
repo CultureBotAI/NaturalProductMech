@@ -119,9 +119,10 @@ bioactivities:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 18.3564
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: A screen for inhibitors of the PhoP regulon in Salmonella Typhi using a modified
     counterscreen
   evidence:
@@ -234,78 +235,84 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:820
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 820, deposited by PCMD; assay type Confirmatory.
+    notes: PubChem BioAssay AID 820, deposited by PCMD; assay type Confirmatory. Target
+      accession AAH95408 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   measurement_type: IC50
   value: 0.0461
   units: uM
-  target_enzyme: UniProtKB:AAH95408
 - assay: Cathepsin B mixture HTS dose-response confirmation
   evidence:
   - reference: pubchem.aid:830
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 830, deposited by PCMD; assay type Confirmatory.
+    notes: PubChem BioAssay AID 830, deposited by PCMD; assay type Confirmatory. Target
+      accession AAH95408 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   measurement_type: IC50
   value: 0.04729
   units: uM
-  target_enzyme: UniProtKB:AAH95408
 - assay: Cathepsin L dose-response confirmation
   evidence:
   - reference: pubchem.aid:825
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 825, deposited by PCMD; assay type Confirmatory.
+    notes: PubChem BioAssay AID 825, deposited by PCMD; assay type Confirmatory. Target
+      accession NP_001903 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   measurement_type: IC50
   value: 0.22581
   units: uM
-  target_enzyme: UniProtKB:NP_001903
 - assay: Cathepsin L dose-response testing in the presence of cysteine
   evidence:
   - reference: pubchem.aid:1627
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1627, deposited by PCMD; assay type Confirmatory.
+      Target accession NP_001903 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   measurement_type: IC50
   value: 50.0
   units: uM
-  target_enzyme: UniProtKB:NP_001903
 - assay: Cathepsin S dose-response confirmation
   evidence:
   - reference: pubchem.aid:831
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 831, deposited by PCMD; assay type Confirmatory.
+    notes: PubChem BioAssay AID 831, deposited by PCMD; assay type Confirmatory. Target
+      accession NP_004070 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   measurement_type: IC50
   value: 0.176463
   units: uM
-  target_enzyme: UniProtKB:NP_004070
 - assay: Cell-based secondary assay for identifying Hsp90 inhibitors that degrade
     Hsp90 client protein Her2
   evidence:
   - reference: pubchem.aid:754
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 754, deposited by Emory University Molecular Libraries
-      Screening Center; assay type Confirmatory.
+      Screening Center; assay type Confirmatory. Target accession AAD14062 was left
+      ungrounded because PubChem did not provide a UniProtKB accession.
   measurement_type: IC50
   value: 1.875
   units: uM
-  target_enzyme: UniProtKB:AAD14062
 - assay: Cell-based secondary assay for identifying Hsp90 inhibitors that degrade
     Hsp90 client protein Her2
   evidence:
   - reference: pubchem.aid:754
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 754, deposited by Emory University Molecular Libraries
-      Screening Center; assay type Confirmatory.
+      Screening Center; assay type Confirmatory. Target accession NP_005339 was left
+      ungrounded because PubChem did not provide a UniProtKB accession.
   measurement_type: IC50
   value: 1.875
   units: uM
-  target_enzyme: UniProtKB:NP_005339
 - assay: Concentration response confirmation VP16 counterscreen for inhibitors of
     ROR gamma transcriptional activity
   evidence:
   - reference: pubchem.aid:2763
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2763, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_035411 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.4449
   units: uM
-  target_enzyme: UniProtKB:NP_035411
   activity_class: ENZYME_INHIBITOR
 - assay: Concentration response confirmation assay for inhibitors of ROR gamma transcriptional
     activity
@@ -313,9 +320,10 @@ bioactivities:
   - reference: pubchem.aid:2762
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2762, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_035411 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.996
   units: uM
-  target_enzyme: UniProtKB:NP_035411
   activity_class: ENZYME_INHIBITOR
 - assay: 'Concentration-Response Counterscreen for Redox Active Inhibitors of Caspase-1:
     Catalase'
@@ -429,6 +437,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

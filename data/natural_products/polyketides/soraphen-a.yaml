@@ -108,11 +108,11 @@ bioactivities:
   - reference: pubchem.aid:977611
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 1W96_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KD
   value: 0.0039
   units: uM
-  target_enzyme: UniProtKB:1W96_A
   activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
@@ -120,20 +120,20 @@ bioactivities:
   - reference: PMID:19900410
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 3JRX_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KD
   value: 0.001
   units: uM
-  target_enzyme: UniProtKB:3JRX_A
   activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data derived from PDB
   evidence:
   - reference: pubchem.aid:1811
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1811, deposited by Shanghai Institute of Organic Chemistry;
-      assay type Other.
+      assay type Other. Target accession 1W96_A was left ungrounded because PubChem
+      did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:1W96_A
   activity_class: ENZYME_INHIBITOR
 bioactivity_summary:
 - ENZYME_INHIBITOR
@@ -186,6 +186,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

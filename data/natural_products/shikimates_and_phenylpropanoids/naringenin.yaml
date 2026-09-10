@@ -282,9 +282,10 @@ bioactivities:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 2.5119
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: 'AO Enzyme Assay from Article 10.1016/j.bioorg.2015.12.004: "Inhibition of
     guinea pig aldehyde oxidase activity by different flavonoid compounds: An in vitro
     study."'
@@ -438,18 +439,20 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:885
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 885, deposited by NCGC; assay type Confirmatory.
+    notes: PubChem BioAssay AID 885, deposited by NCGC; assay type Confirmatory. Target
+      accession NP_059488 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 10.0
   units: uM
-  target_enzyme: UniProtKB:NP_059488
 - assay: qHTS Assay for Activators of Cytochrome P450 3A4
   evidence:
   - reference: pubchem.aid:885
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 885, deposited by NCGC; assay type Confirmatory.
+    notes: PubChem BioAssay AID 885, deposited by NCGC; assay type Confirmatory. Target
+      accession NP_059488 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 12.5893
   units: uM
-  target_enzyme: UniProtKB:NP_059488
 - assay: qHTS Assay for Compounds that Induce Erasure of Genomic Imprints
   evidence:
   - reference: pubchem.aid:1948
@@ -469,54 +472,60 @@ bioactivities:
   - reference: pubchem.aid:485281
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 485281, deposited by NCGC; assay type Confirmatory.
+      Target accession 3F32_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 28.1838
   units: uM
-  target_enzyme: UniProtKB:3F32_A
 - assay: 'qHTS Assay for Inhibitors Targeting the Menin-MLL Interaction in MLL Related
     Leukemias: Competition With Texas Red Labeled MLL-derived Mutant Peptide'
   evidence:
   - reference: pubchem.aid:1768
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1768, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_000235 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 25.1189
   units: uM
-  target_enzyme: UniProtKB:NP_000235
 - assay: 'qHTS Assay for Inhibitors Targeting the Menin-MLL Interaction in MLL Related
     Leukemias: Competition With Texas Red Labeled MLL-derived Mutant Peptide'
   evidence:
   - reference: pubchem.aid:1768
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1768, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_005924 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 25.1189
   units: uM
-  target_enzyme: UniProtKB:NP_005924
 - assay: 'qHTS Assay for Inhibitors Targeting the Menin-MLL Interaction in MLL Related
     Leukemias: Competition With Texas Red Labeled MLL-derived Mutant Peptide'
   evidence:
   - reference: pubchem.aid:1768
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1768, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_000235 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 39.8107
   units: uM
-  target_enzyme: UniProtKB:NP_000235
 - assay: 'qHTS Assay for Inhibitors Targeting the Menin-MLL Interaction in MLL Related
     Leukemias: Competition With Texas Red Labeled MLL-derived Mutant Peptide'
   evidence:
   - reference: pubchem.aid:1768
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1768, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_005924 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 39.8107
   units: uM
-  target_enzyme: UniProtKB:NP_005924
 - assay: qHTS Assay for Inhibitors and Activators of N370S glucocerebrosidase as a
     Potential Chaperone Treatment of Gaucher Disease
   evidence:
   - reference: pubchem.aid:2101
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2101, deposited by NCGC; assay type Confirmatory.
+      Target accession BAA02545 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 11.2202
   units: uM
-  target_enzyme: UniProtKB:BAA02545
   notes: 19 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
 molecular_targets:
@@ -709,6 +718,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:42Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

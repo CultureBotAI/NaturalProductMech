@@ -63,35 +63,39 @@ bioactivities:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 8.1995
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: qHTS Assay for Inhibitors of Aldehyde Dehydrogenase 1 (ALDH1A1)
   evidence:
   - reference: pubchem.aid:1030
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1030, deposited by NCGC; assay type Confirmatory.
+      Target accession AAP35567 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 5.0119
   units: uM
-  target_enzyme: UniProtKB:AAP35567
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a
   evidence:
   - reference: pubchem.aid:504332
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504332, deposited by NCGC; assay type Confirmatory.
+      Target accession CAQ07474 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 79.4328
   units: uM
-  target_enzyme: UniProtKB:CAQ07474
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Human Jumonji Domain Containing 2E (JMJD2E)
   evidence:
   - reference: pubchem.aid:2147
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2147, deposited by NCGC; assay type Confirmatory.
+      Target accession 2W2I_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 39.8107
   units: uM
-  target_enzyme: UniProtKB:2W2I_A
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Lipid Storage Modulators in Drosophila S3 Cells
   evidence:
@@ -179,6 +183,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:44Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

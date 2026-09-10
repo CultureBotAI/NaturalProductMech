@@ -90,9 +90,10 @@ bioactivities:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 1.2995
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: A screen for inhibitors of the PhoP regulon in Salmonella Typhi using a modified
     counterscreen
   evidence:
@@ -110,9 +111,10 @@ bioactivities:
   - reference: pubchem.aid:1347395
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory.
+      Target accession AAA68151 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 21.8794
   units: uM
-  target_enzyme: UniProtKB:AAA68151
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
     (r) AML: AML-191 cell line'
   evidence:
@@ -174,9 +176,10 @@ bioactivities:
   - reference: pubchem.aid:624030
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624030, deposited by NCGC; assay type Confirmatory.
+      Target accession AAA29795 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 40.5334
   units: uM
-  target_enzyme: UniProtKB:AAA29795
 - assay: Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability
     counter screen
   evidence:
@@ -324,6 +327,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

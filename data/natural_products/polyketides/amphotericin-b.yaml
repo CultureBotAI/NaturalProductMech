@@ -23,9 +23,9 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:377
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 377, deposited by PDSP; assay type Other.
+    notes: PubChem BioAssay AID 377, deposited by PDSP; assay type Other. Target accession
+      NP_000918 was left ungrounded because PubChem did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_000918
 - assay: NCI AIDS Antiviral Assay
   evidence:
   - reference: pubchem.aid:179
@@ -191,6 +191,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:33Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

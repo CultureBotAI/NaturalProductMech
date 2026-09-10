@@ -302,15 +302,17 @@ bioactivities:
   - reference: pubchem.aid:1645861
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1645861, deposited by 24642; assay type Confirmatory.
+      Target accession NP_003461 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_003461
 - assay: 'USP7 deubiquitinase inhibition: Primary qHTS'
   evidence:
   - reference: pubchem.aid:1645854
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645854, deposited by 24642; assay type Other.
+    notes: PubChem BioAssay AID 1645854, deposited by 24642; assay type Other. Target
+      accession NP_003461 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_003461
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:77879
@@ -359,6 +361,10 @@ discussions:
     honest state. Name the producer if the primary literature does.'
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

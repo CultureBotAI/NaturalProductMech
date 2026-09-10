@@ -51,22 +51,22 @@ bioactivities:
   - reference: pubchem.aid:624474
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624474, deposited by Burnham Center for Chemical Genomics;
-      assay type Confirmatory.
+      assay type Confirmatory. Target accession NP_741406 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: IC50
   value: 81.5
   units: uM
-  target_enzyme: UniProtKB:NP_741406
 - assay: Dose ResponseConfirmation of SKN-1 Inhibitor hits in a fluorescence ratio
     assay - Set 2
   evidence:
   - reference: pubchem.aid:651563
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 651563, deposited by Burnham Center for Chemical Genomics;
-      assay type Confirmatory.
+      assay type Confirmatory. Target accession NP_741406 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: IC50
   value: 70.2
   units: uM
-  target_enzyme: UniProtKB:NP_741406
 - assay: In vivo-based yeast HTS to detect compounds rescuing yeast growth/survival
     of Plasmodium Falciparum HSP40-mediated toxicity Measured in Whole Organism System
     Using Plate Reader - 2120-01_Inhibitor_Dose_CherryPick_Activity
@@ -74,27 +74,30 @@ bioactivities:
   - reference: pubchem.aid:540271
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 540271, deposited by Broad Institute; assay type Confirmatory.
+      Target accession XP_001348533 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 12.0
   units: uM
-  target_enzyme: UniProtKB:XP_001348533
   activity_class: ANTIPARASITIC
 - assay: 'Inhibitors of Regulator of G Protein Signaling (RGS) 4: qHTS'
   evidence:
   - reference: pubchem.aid:504845
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504845, deposited by NCGC; assay type Confirmatory.
+      Target accession ABC94591 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 79.4328
   units: uM
-  target_enzyme: UniProtKB:ABC94591
   activity_class: ENZYME_INHIBITOR
 - assay: Nrf2 qHTS screen for inhibitors
   evidence:
   - reference: pubchem.aid:504444
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_001138884 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0065
   units: uM
-  target_enzyme: UniProtKB:NP_001138884
 - assay: 'Nrf2 qHTS screen for inhibitors: A549 ARE-Fluc Cytotoxicity Counterscreen
     for Hit Validation'
   evidence:
@@ -110,18 +113,20 @@ bioactivities:
   - reference: pubchem.aid:720524
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 720524, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_001138884 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 6.5131
   units: uM
-  target_enzyme: UniProtKB:NP_001138884
 - assay: 'Nrf2 qHTS screen for inhibitors: Purified Fluc Biochemical Counterscreen
     for Hit Validation'
   evidence:
   - reference: pubchem.aid:720522
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 720522, deposited by NCGC; assay type Confirmatory.
+      Target accession ABM67533 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 13.4591
   units: uM
-  target_enzyme: UniProtKB:ABM67533
 - assay: 'Nrf2 qHTS screen for inhibitors: counterscreen for cytotoxicity'
   evidence:
   - reference: pubchem.aid:504648
@@ -188,18 +193,20 @@ bioactivities:
   - reference: pubchem.aid:588453
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 588453, deposited by NCGC; assay type Confirmatory.
+      Target accession AAC35244 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 89.1251
   units: uM
-  target_enzyme: UniProtKB:AAC35244
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of the HIV-1 protein Vpr
   evidence:
   - reference: pubchem.aid:651644
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 651644, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_057852 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 7.0795
   units: uM
-  target_enzyme: UniProtKB:NP_057852
   activity_class: ANTIVIRAL
 - assay: 'qHTS Assay for the Inhibitors of FEN1: Confirmatory Assay for Cherry-picked
     Compounds'
@@ -207,36 +214,40 @@ bioactivities:
   - reference: pubchem.aid:720498
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 720498, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_004102 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.6012
   units: uM
-  target_enzyme: UniProtKB:NP_004102
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for the Inhibitors of Human Flap endonuclease 1 (FEN1).
   evidence:
   - reference: pubchem.aid:588795
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 588795, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_004102 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.5623
   units: uM
-  target_enzyme: UniProtKB:NP_004102
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay to Find Inhibitors of Pin1
   evidence:
   - reference: pubchem.aid:504891
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504891, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_006212 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 11.9955
   units: uM
-  target_enzyme: UniProtKB:NP_006212
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of Glutaminase (GLS)
   evidence:
   - reference: pubchem.aid:624170
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624170, deposited by NCGC; assay type Confirmatory.
+      Target accession AAH38507 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 11.2202
   units: uM
-  target_enzyme: UniProtKB:AAH38507
   activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS for Inhibitors of Polymerase Eta: Confirmatory Assay for Cherry-picked
     Compounds'
@@ -244,18 +255,20 @@ bioactivities:
   - reference: pubchem.aid:720502
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 720502, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_006493 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 1.5101
   units: uM
-  target_enzyme: UniProtKB:NP_006493
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of Polymerase Iota
   evidence:
   - reference: pubchem.aid:588590
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 588590, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_009126 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.3162
   units: uM
-  target_enzyme: UniProtKB:NP_009126
   activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS for Inhibitors of Polymerase Iota: Confirmatory Assay for Cherry-picked
     Compounds'
@@ -263,9 +276,10 @@ bioactivities:
   - reference: pubchem.aid:720496
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 720496, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_009126 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 1.5003
   units: uM
-  target_enzyme: UniProtKB:NP_009126
   activity_class: ENZYME_INHIBITOR
   notes: 268 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
@@ -318,6 +332,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:34Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

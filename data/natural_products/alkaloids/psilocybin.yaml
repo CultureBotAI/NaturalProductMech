@@ -291,9 +291,10 @@ bioactivities:
   - reference: pubchem.aid:1963587
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963587, deposited by 824; assay type Confirmatory.
+      Target accession AAH96839 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0855
   units: uM
-  target_enzyme: UniProtKB:AAH96839
 - assay: 5-hydroxytryptamine receptor 2A (HTR2A) small molecule antagonists, cell-based
     qHTS assay
   evidence:
@@ -308,9 +309,10 @@ bioactivities:
   - reference: pubchem.aid:1963586
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963586, deposited by 824; assay type Confirmatory.
+      Target accession AAH96839 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0735
   units: uM
-  target_enzyme: UniProtKB:AAH96839
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 40 hour
   evidence:
@@ -326,18 +328,20 @@ bioactivities:
   - reference: pubchem.aid:1645840
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1645840, deposited by NCGC; assay type Confirmatory.
+      Target accession ANW61984 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 13.9086
   units: uM
-  target_enzyme: UniProtKB:ANW61984
 - assay: 'Cytochrome P450 family 3 subfamily A member 4 (CYP3A4) small molecule antagonists:
     luciferase cell-based qHTS assay'
   evidence:
   - reference: pubchem.aid:1645841
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1645841, deposited by NCGC; assay type Confirmatory.
+      Target accession ABI96208 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 34.9367
   units: uM
-  target_enzyme: UniProtKB:ABI96208
 - assay: 'Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists:
     luciferase cell-based qHTS assay'
   evidence:
@@ -352,9 +356,10 @@ bioactivities:
   - reference: pubchem.aid:1963596
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963596, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_000756 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 55.371
   units: uM
-  target_enzyme: UniProtKB:NP_000756
 - assay: P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line,
     qHTS therapeutic library screen
   evidence:
@@ -377,9 +382,10 @@ bioactivities:
   - reference: PMID:31481464
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347424, deposited by NCGC; assay type Confirmatory.
+      Target accession AAH42418 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 39.8107
   units: uM
-  target_enzyme: UniProtKB:AAH42418
 - assay: Rhodamine-PBP qHTS Assay for Modulators of WT P53-Induced Phosphatase 1 (WIP1)
   evidence:
   - reference: PMID:31481464
@@ -392,9 +398,10 @@ bioactivities:
   - reference: PMID:31481464
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347425, deposited by NCGC; assay type Confirmatory.
+      Target accession AAH42418 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 89.1251
   units: uM
-  target_enzyme: UniProtKB:AAH42418
 - assay: Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange
     factor 4 (EPAC2)
   evidence:
@@ -462,18 +469,20 @@ bioactivities:
   - reference: pubchem.aid:1224846
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1224846, deposited by 824; assay type Confirmatory.
+      Target accession AAG43026 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 1.3553
   units: uM
-  target_enzyme: UniProtKB:AAG43026
 - assay: qHTS assay to identify small molecule antagonists of the androgen receptor
     (AR) signaling pathway using the MDA cell line in the presence of 0.5 nM R1881
   evidence:
   - reference: pubchem.aid:1259243
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1259243, deposited by 824; assay type Confirmatory.
+      Target accession AAI32976 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 23.8917
   units: uM
-  target_enzyme: UniProtKB:AAI32976
 - assay: qHTS assay to identify small molecule antagonists of the estrogen receptor
     alpha (ER-alpha) signaling pathway - cell viability counter screen
   evidence:
@@ -541,6 +550,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:07Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

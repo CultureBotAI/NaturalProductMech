@@ -289,9 +289,10 @@ bioactivities:
   - reference: pubchem.aid:1963587
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963587, deposited by 824; assay type Confirmatory.
+      Target accession AAH96839 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 21.3138
   units: uM
-  target_enzyme: UniProtKB:AAH96839
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
     - 0 hour
   evidence:
@@ -396,27 +397,30 @@ bioactivities:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 5.3091
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: 'Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based
     qHTS assay'
   evidence:
   - reference: pubchem.aid:1347395
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory.
+      Target accession AAA68151 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 27.5404
   units: uM
-  target_enzyme: UniProtKB:AAA68151
 - assay: 'Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based
     qHTS assay'
   evidence:
   - reference: pubchem.aid:1347398
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory.
+      Target accession AAA68151 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 38.9018
   units: uM
-  target_enzyme: UniProtKB:AAA68151
 - assay: 'Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS
     assay: Summary'
   evidence:
@@ -430,10 +434,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2061107
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary.
+    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Target
+      accession NP_000015 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 0.35476
   units: uM
-  target_enzyme: UniProtKB:NP_000015
 - assay: Adrenergic beta2 receptor (ADRB2) small molecule antagonists, cell-based
     qHTS assay
   evidence:
@@ -448,9 +453,10 @@ bioactivities:
   - reference: pubchem.aid:1963592
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963592, deposited by 824; assay type Confirmatory.
+      Target accession NP_000015 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 29.8493
   units: uM
-  target_enzyme: UniProtKB:NP_000015
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
     (r) AML: AML-191 cell line'
   evidence:
@@ -548,6 +554,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

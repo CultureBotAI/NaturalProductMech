@@ -197,9 +197,9 @@ bioactivities:
   - reference: pubchem.aid:687007
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 687007, deposited by The Scripps Research Institute
-      Molecular Screening Center; assay type Screening.
+      Molecular Screening Center; assay type Screening. Target accession NP_044650
+      was left ungrounded because PubChem did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_044650
   activity_class: ENZYME_INHIBITOR
 - assay: 'Counterscreen for inhibitors of cell surface Prion Protein (PrPc): Luminescence-based
     cell-based high throughput assay to identify compounds that are cytotoxic to LD9
@@ -208,9 +208,9 @@ bioactivities:
   - reference: pubchem.aid:743201
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 743201, deposited by The Scripps Research Institute
-      Molecular Screening Center; assay type Screening.
+      Molecular Screening Center; assay type Screening. Target accession NP_000302
+      was left ungrounded because PubChem did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_000302
   activity_class: CYTOTOXIC
 - assay: Cytotoxic Profiling of Annotated Libraries Using Quantitative High-Throughput
     Screening
@@ -235,9 +235,9 @@ bioactivities:
   - reference: pubchem.aid:687008
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 687008, deposited by The Scripps Research Institute
-      Molecular Screening Center; assay type Screening.
+      Molecular Screening Center; assay type Screening. Target accession NP_066285
+      was left ungrounded because PubChem did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_066285
   activity_class: ENZYME_INHIBITOR
 - assay: Luminescence-based cell-based primary high throughput screening assay to
     identify inhibitors of COUP-TFII (NR2F2)
@@ -245,9 +245,9 @@ bioactivities:
   - reference: pubchem.aid:686940
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 686940, deposited by The Scripps Research Institute
-      Molecular Screening Center; assay type Screening.
+      Molecular Screening Center; assay type Screening. Target accession NP_066285
+      was left ungrounded because PubChem did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_066285
   activity_class: ENZYME_INHIBITOR
   notes: 10 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
@@ -334,6 +334,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:26Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

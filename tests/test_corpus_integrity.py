@@ -509,3 +509,37 @@ def test_an_xref_to_a_structure_the_corpus_holds_differently_is_flagged(records)
         f"records whose xref names a ChEBI entry held under a different structure, "
         f"with no structure-disagreement discussion: {unflagged[:4]}"
     )
+
+
+def test_no_target_enzyme_carries_a_malformed_uniprot_accession(records):
+    """PubChem's `Target Accession` is depositor-controlled and holds several
+    identifier types — PDB chains (`2HDS_A`), RefSeq (`NP_056979`), GenPept
+    (`AAP35567`). An earlier seeder promoted all of them to `UniProtKB:`, so
+    661 values across 113 records claimed to be UniProt accessions and were
+    not (#82). A CURIE whose prefix lies about its namespace resolves to
+    nothing, and no schema check sees it: `curie` accepts any prefix:local.
+    """
+    import importlib.util as _il
+    import sys as _sys
+
+    name = "seed_from_sources"
+    if name not in _sys.modules:
+        spec = _il.spec_from_file_location(name, REPO_ROOT / "scripts" / "seed_from_sources.py")
+        module = _il.module_from_spec(spec)
+        _sys.modules[name] = module
+        spec.loader.exec_module(module)
+    pattern = _sys.modules[name].UNIPROT_ACCESSION_RE
+
+    offenders = []
+    for record in records:
+        for observation in record.get("bioactivities") or []:
+            value = observation.get("target_enzyme") or ""
+            if not value.startswith("UniProtKB:"):
+                continue
+            accession = value.split(":", 1)[1]
+            if not pattern.fullmatch(accession):
+                offenders.append((record["identifier"], value))
+    assert not offenders, (
+        f"{len(offenders)} target_enzyme values are not UniProtKB primary accessions: "
+        f"{offenders[:6]}"
+    )

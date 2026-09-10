@@ -160,8 +160,9 @@ bioactivities:
   - reference: PMID:30648156
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347374, deposited by NCGC; assay type Confirmatory.
+      Target accession AAC68568 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:AAC68568
 - assay: 'qHTS for inhibitors of ER calcium dysfunction: SERCaMP assay screened against
     the NCATS CANVASS Library'
   evidence:
@@ -280,6 +281,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:36Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

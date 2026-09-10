@@ -119,9 +119,9 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:376
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 376, deposited by PDSP; assay type Other.
+    notes: PubChem BioAssay AID 376, deposited by PDSP; assay type Other. Target accession
+      NP_000229 was left ungrounded because PubChem did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_000229
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:85616
@@ -189,6 +189,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -22,11 +22,11 @@ bioactivities:
   - reference: pubchem.aid:977611
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 2XUZ_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KD
   value: 0.04
   units: uM
-  target_enzyme: UniProtKB:2XUZ_A
   activity_class: ENZYME_INHIBITOR
 bioactivity_summary:
 - ENZYME_INHIBITOR
@@ -119,6 +119,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

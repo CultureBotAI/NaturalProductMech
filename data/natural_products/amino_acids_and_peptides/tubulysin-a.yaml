@@ -44,9 +44,10 @@ bioactivities:
   - reference: pubchem.aid:2202728
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2202728, deposited by NCGC; assay type Confirmatory.
+      Target accession ADZ17385 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0094
   units: uM
-  target_enzyme: UniProtKB:ADZ17385
 - assay: P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line,
     qHTS therapeutic library screen
   evidence:
@@ -260,6 +261,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -44,9 +44,10 @@ bioactivities:
   - reference: pubchem.aid:1963587
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963587, deposited by 824; assay type Confirmatory.
+      Target accession AAH96839 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 61.6448
   units: uM
-  target_enzyme: UniProtKB:AAH96839
 - assay: 5-hydroxytryptamine receptor 2A (HTR2A) small molecule antagonists, cell-based
     qHTS assay
   evidence:
@@ -61,9 +62,10 @@ bioactivities:
   - reference: pubchem.aid:1963586
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963586, deposited by 824; assay type Confirmatory.
+      Target accession AAH96839 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0133
   units: uM
-  target_enzyme: UniProtKB:AAH96839
 - assay: A Counter Screen to identiry small molecule screen for inhibitors of the
     PhoP regulon in Salmonella Typhimurium
   evidence:
@@ -109,18 +111,20 @@ bioactivities:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0052
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: A quantitative high throughput screen for small molecules that induce DNA
     re-replication in SW480 colon adenocarcinoma cells.
   evidence:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0058
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: A screen for inhibitors of the PhoP regulon in Salmonella Typhi using a modified
     counterscreen
   evidence:
@@ -179,9 +183,10 @@ bioactivities:
   - reference: pubchem.aid:1963593
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963593, deposited by 824; assay type Confirmatory.
+      Target accession NP_000015 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 13.6854
   units: uM
-  target_enzyme: UniProtKB:NP_000015
 - assay: Caspase-3/7 induction in HepG2 cells by small molecules, qHTS cell viability
     counter screen
   evidence:
@@ -204,9 +209,10 @@ bioactivities:
   - reference: pubchem.aid:1963588
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963588, deposited by 824; assay type Confirmatory.
+      Target accession NP_000729 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 3.7501
   units: uM
-  target_enzyme: UniProtKB:NP_000729
 - assay: 'Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists:
     luciferase reporter qHTS assay'
   evidence:
@@ -221,9 +227,10 @@ bioactivities:
   - reference: pubchem.aid:1671199
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory.
+      Target accession EAW99313 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 35.5742
   units: uM
-  target_enzyme: UniProtKB:EAW99313
 - assay: 'Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule
     antagonists: luciferase reporter qHTS assay'
   evidence:
@@ -238,9 +245,10 @@ bioactivities:
   - reference: pubchem.aid:1671197
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
+      Target accession AAV41877 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 4.4785
   units: uM
-  target_enzyme: UniProtKB:AAV41877
 - assay: 'Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists:
     luciferase reporter qHTS assay'
   evidence:
@@ -255,9 +263,10 @@ bioactivities:
   - reference: pubchem.aid:1671198
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1671198, deposited by 824; assay type Confirmatory.
+      Target accession AGS09764 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 31.7055
   units: uM
-  target_enzyme: UniProtKB:AGS09764
   notes: 166 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
 bioactivity_summary:
@@ -315,6 +324,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

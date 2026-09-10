@@ -241,9 +241,10 @@ bioactivities:
   - reference: pubchem.aid:2060322
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2060322, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_001119587 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 26.2496
   units: uM
-  target_enzyme: UniProtKB:NP_001119587
 - assay: Primary qHTS to identify anti-liver cancer compounds using libraries of approved
     drugs and bioactive compounds
   evidence:
@@ -258,9 +259,10 @@ bioactivities:
   - reference: pubchem.aid:2546
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2546, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_035411 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 22.3872
   units: uM
-  target_enzyme: UniProtKB:NP_035411
   activity_class: ENZYME_INHIBITOR
 - assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug
     resistant MV4-11 cells
@@ -301,9 +303,10 @@ bioactivities:
   - reference: pubchem.aid:485281
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 485281, deposited by NCGC; assay type Confirmatory.
+      Target accession 3F32_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 25.1189
   units: uM
-  target_enzyme: UniProtKB:3F32_A
 - assay: 'qHTS Assay for Identifying the Cell-Membrane Permeable IMPase Inhibitors:
     Potentiation with Lithium'
   evidence:
@@ -319,53 +322,59 @@ bioactivities:
   - reference: pubchem.aid:2107
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2107, deposited by NCGC; assay type Confirmatory.
+      Target accession CAA29232 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 35.4813
   units: uM
-  target_enzyme: UniProtKB:CAA29232
 - assay: qHTS Assay for Inhibitors and Activators of Human alpha-Glucosidase From
     Spleen Homogenate
   evidence:
   - reference: pubchem.aid:2112
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2112, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_000143 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 35.4813
   units: uM
-  target_enzyme: UniProtKB:NP_000143
 - assay: qHTS Assay for Inhibitors and Activators of N370S glucocerebrosidase as a
     Potential Chaperone Treatment of Gaucher Disease
   evidence:
   - reference: pubchem.aid:2101
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2101, deposited by NCGC; assay type Confirmatory.
+      Target accession BAA02545 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 31.6228
   units: uM
-  target_enzyme: UniProtKB:BAA02545
 - assay: qHTS Assay for Inhibitors of Aldehyde Dehydrogenase 1 (ALDH1A1)
   evidence:
   - reference: pubchem.aid:1030
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1030, deposited by NCGC; assay type Confirmatory.
+      Target accession AAP35567 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 31.6228
   units: uM
-  target_enzyme: UniProtKB:AAP35567
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of HPGD (15-Hydroxyprostaglandin Dehydrogenase)
   evidence:
   - reference: pubchem.aid:894
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 894, deposited by NCGC; assay type Confirmatory.
+    notes: PubChem BioAssay AID 894, deposited by NCGC; assay type Confirmatory. Target
+      accession NP_000851 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 28.1838
   units: uM
-  target_enzyme: UniProtKB:NP_000851
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Human alpha-Galactosidase at pH 4.5.
   evidence:
   - reference: pubchem.aid:1467
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1467, deposited by NCGC; assay type Confirmatory.
+      Target accession CAA29232 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 19.9526
   units: uM
-  target_enzyme: UniProtKB:CAA29232
   activity_class: ENZYME_INHIBITOR
   notes: 31 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
@@ -628,6 +637,10 @@ discussions:
     the same compound rather than an upstream cross-reference error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

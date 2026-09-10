@@ -68,36 +68,40 @@ bioactivities:
   - reference: pubchem.aid:624263
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624263, deposited by NCGC; assay type Confirmatory.
+      Target accession AAQ89316 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 12.5893
   units: uM
-  target_enzyme: UniProtKB:AAQ89316
 - assay: A Quantitative High throughput Screen to Identify Chemical Modulators of
     PINK1 Expression
   evidence:
   - reference: pubchem.aid:624263
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624263, deposited by NCGC; assay type Confirmatory.
+      Target accession BAA25751 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 12.5893
   units: uM
-  target_enzyme: UniProtKB:BAA25751
 - assay: A quantitative high throughput screen for small molecules that induce DNA
     re-replication in MCF 10a normal breast cells.
   evidence:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 7.3078
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: A quantitative high throughput screen for small molecules that induce DNA
     re-replication in SW480 colon adenocarcinoma cells.
   evidence:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 3.2643
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
     (r) AML: AML-191 cell line'
   evidence:
@@ -233,9 +237,10 @@ bioactivities:
   - reference: pubchem.aid:2668
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2668, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_004949 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 9.2683
   units: uM
-  target_enzyme: UniProtKB:NP_004949
   activity_class: ENZYME_INHIBITOR
 - assay: 'HTS Assay for Allosteric Agonists of the Human D1 Dopamine Receptor: Primary
     Screen for Potentiators'
@@ -243,18 +248,20 @@ bioactivities:
   - reference: pubchem.aid:488982
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 488982, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_000785 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 4.1092
   units: uM
-  target_enzyme: UniProtKB:NP_000785
 - assay: High Content Imaging Cell-Based qHTS for Inhibitors of the mTORC1 Signaling
     Pathway in MEF Cells
   evidence:
   - reference: pubchem.aid:2667
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2667, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_004949 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 16.4816
   units: uM
-  target_enzyme: UniProtKB:NP_004949
   activity_class: ENZYME_INHIBITOR
 - assay: Luciferase Reporter Cell Based HTS to identify inhibitors of N-linked Glycosylation
     Measured in Cell-Based System Using Plate Reader - 2146-01_Inhibitor_Dose_CherryPick_Activity
@@ -270,9 +277,10 @@ bioactivities:
   - reference: pubchem.aid:504444
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_001138884 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 18.3564
   units: uM
-  target_enzyme: UniProtKB:NP_001138884
   notes: 115 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
 bioactivity_summary:
@@ -332,6 +340,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:35Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

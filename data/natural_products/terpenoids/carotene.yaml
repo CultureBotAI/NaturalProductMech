@@ -286,9 +286,10 @@ bioactivities:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 2.6609
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
     (r) AML: HNT-34 cell line'
   evidence:
@@ -357,11 +358,11 @@ bioactivities:
   - reference: pubchem.aid:463085
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 463085, deposited by The Scripps Research Institute
-      Molecular Screening Center; assay type Confirmatory.
+      Molecular Screening Center; assay type Confirmatory. Target accession ABC47431
+      was left ungrounded because PubChem did not provide a UniProtKB accession.
   measurement_type: IC50
   value: 34.8
   units: uM
-  target_enzyme: UniProtKB:ABC47431
   activity_class: ENZYME_INHIBITOR
 - assay: 'Late stage results for the probe development effort to identify inhibitors
     of Hepatitis C Virus (HCV) core protein dimerization: TR-FRET-based biochemical
@@ -370,11 +371,11 @@ bioactivities:
   - reference: pubchem.aid:2488
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2488, deposited by The Scripps Research Institute
-      Molecular Screening Center; assay type Confirmatory.
+      Molecular Screening Center; assay type Confirmatory. Target accession ABC47431
+      was left ungrounded because PubChem did not provide a UniProtKB accession.
   measurement_type: IC50
   value: 49.751
   units: uM
-  target_enzyme: UniProtKB:ABC47431
   activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
   evidence:
@@ -437,9 +438,10 @@ bioactivities:
   - reference: pubchem.aid:624044
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624044, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_058733 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 12.5797
   units: uM
-  target_enzyme: UniProtKB:NP_058733
 - assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
     Full length NSP2 enzyme counterscreen (CHIKV-NSP2)'
   evidence:
@@ -466,11 +468,11 @@ bioactivities:
   - reference: pubchem.aid:2159
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2159, deposited by The Scripps Research Institute
-      Molecular Screening Center; assay type Confirmatory.
+      Molecular Screening Center; assay type Confirmatory. Target accession ABC47431
+      was left ungrounded because PubChem did not provide a UniProtKB accession.
   measurement_type: IC50
   value: 29.693
   units: uM
-  target_enzyme: UniProtKB:ABC47431
   activity_class: ENZYME_INHIBITOR
 - assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug
     resistant MV4-11 cells
@@ -511,9 +513,10 @@ bioactivities:
   - reference: pubchem.aid:1030
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1030, deposited by NCGC; assay type Confirmatory.
+      Target accession AAP35567 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 35.4813
   units: uM
-  target_enzyme: UniProtKB:AAP35567
   activity_class: ENZYME_INHIBITOR
   notes: 14 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
@@ -570,6 +573,10 @@ discussions:
     does.'
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
