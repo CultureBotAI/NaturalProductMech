@@ -49,6 +49,17 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q2604190
+- taxon_label: Penicillium purpurogenum
+  source: CHEBI
+  evidence:
+  - reference: PMID:21879714
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:32807
+  taxon_id: NCBITaxon:1266744
+  taxon_source: NCBITaxon
+  notes: mycelium Ethylacetate extract of fermentation broth and acetone extract of
+    mycelia
+  detection_context: JS03 21
 - taxon_label: Ascomycota sp. Ind19F07
   source: CHEBI
   evidence:
@@ -97,17 +108,6 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q1809933
-- taxon_label: Penicillium purpurogenum
-  source: CHEBI
-  evidence:
-  - reference: PMID:21879714
-    evidence_type: DATABASE_ASSERTION
-    notes: ChEBI compound origin for CHEBI:32807
-  taxon_id: NCBITaxon:28575
-  taxon_source: NCBITaxon
-  detection_context: JS03 21
-  notes: mycelium Ethylacetate extract of fermentation broth and acetone extract of
-    mycelia
 - taxon_id: NCBITaxon:2910500
   taxon_label: Parmotrema cooperi
   taxon_source: NCBITaxon
@@ -505,7 +505,7 @@ discussions:
     BGC0002594, BGC0002596, BGC0002812. Confirm they describe the same compound rather
     than an upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-09T01:11:13Z'
+- timestamp: '2026-09-10T04:11:51Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

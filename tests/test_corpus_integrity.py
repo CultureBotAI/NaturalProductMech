@@ -293,7 +293,64 @@ def test_a_taxon_in_both_fields_says_it_is_corroboration(records):
 # Paraburkholderia rhizoxinica, Clostridium / Ruminiclostridium cellulolyticum.
 # The number moving is the signal; raising the bound without reading the new
 # pairs would throw that away.
-KNOWN_SYNONYM_TAXA = 22
+#: Taxon ids carrying more than one label that are NOT explained by a merge.
+#: Two names for one id is what a source mislabelling a taxid looks like, so
+#: the count is budgeted rather than waived. It came DOWN from 22 when merged
+#: ids started being rewritten (#63): five of the old conflicts were one taxon
+#: under its retired and current ids, and unifying them removed the conflict.
+KNOWN_SYNONYM_TAXA = 17
+
+#: NCBI Taxonomy nodes that are not organisms; the same set the MIBiG
+#: extractor refuses (#62). Listed here too so the corpus is checked directly,
+#: whichever extractor or curator wrote the claim.
+NON_ORGANISM_TAXA = {
+    "NCBITaxon:1", "NCBITaxon:12908", "NCBITaxon:32644", "NCBITaxon:131567",
+}
+
+
+def taxon_claims(record: dict):
+    """Every (field, taxon id) a record asserts about an organism."""
+    for producer in record.get("producer_organisms") or []:
+        yield "producer_organisms", producer.get("taxon_id")
+    for occurrence in record.get("occurrences") or []:
+        yield "occurrences", occurrence.get("taxon_id")
+    for cluster in record.get("biosynthetic_gene_clusters") or []:
+        yield "biosynthetic_gene_clusters", cluster.get("organism_taxon_id")
+    for target in record.get("molecular_targets") or []:
+        yield "molecular_targets", target.get("taxon_id")
+    for observation in record.get("bioactivities") or []:
+        yield "bioactivities", observation.get("target_organism_id")
+
+
+def test_no_taxon_claim_carries_a_merged_id(records):
+    """NCBI retires taxids into others. The seeder rewrites through
+    data/raw/taxon_merged.tsv at write time (#63); an old id on a record means
+    a claim was written around that path, or the inventory is stale."""
+    merged_path = REPO_ROOT / "data" / "raw" / "taxon_merged.tsv"
+    assert merged_path.exists(), "taxon_merged.tsv is not committed; run `just extract-taxonomy`"
+    _, rows = read_tsv(merged_path)
+    old_ids = {row["old_taxon_id"] for row in rows}
+    assert old_ids, "taxon_merged.tsv is empty, which the first run showed it is not"
+    offenders = [
+        (record["identifier"], field, taxon)
+        for record in records
+        for field, taxon in taxon_claims(record)
+        if taxon in old_ids
+    ]
+    assert not offenders, f"taxon claims on merged ids: {offenders[:6]}"
+
+
+def test_no_taxon_claim_names_a_non_organism_node(records):
+    """A producer claim on "unclassified sequences" asserts a producer while
+    naming none, and every other gate passes it: the id is a valid CURIE and
+    the label is non-empty. Three MIBiG entries did exactly that (#62)."""
+    offenders = [
+        (record["identifier"], field, taxon)
+        for record in records
+        for field, taxon in taxon_claims(record)
+        if taxon in NON_ORGANISM_TAXA
+    ]
+    assert not offenders, f"taxon claims on non-organism nodes: {offenders[:6]}"
 
 
 def test_taxon_labels_stay_consistent_for_an_id(records):
@@ -307,7 +364,17 @@ def test_taxon_labels_stay_consistent_for_an_id(records):
             taxon = occurrence.get("taxon_id")
             if taxon:
                 labels.setdefault(taxon, set()).add(occurrence["taxon_label"])
-    conflicting = {k: sorted(v) for k, v in labels.items() if len(v) > 1}
+    # An id that other ids were merged INTO legitimately carries both the
+    # retired name and the current one — Penicillium notatum and P.
+    # chrysogenum are one organism, and the sources predate the merge. Those
+    # are excluded rather than budgeted, because taxon_merged.tsv explains
+    # them; everything else still has to fit the budget (#63).
+    _, merge_rows = read_tsv(REPO_ROOT / "data" / "raw" / "taxon_merged.tsv")
+    merge_targets = {row["new_taxon_id"] for row in merge_rows}
+    conflicting = {
+        k: sorted(v) for k, v in labels.items()
+        if len(v) > 1 and k not in merge_targets
+    }
     assert len(conflicting) <= KNOWN_SYNONYM_TAXA, (
         f"taxon ids carrying several labels rose to {len(conflicting)}: "
         f"{list(conflicting.items())[:4]}"

@@ -69,7 +69,7 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q104985750
-- taxon_id: NCBITaxon:2075171
+- taxon_id: NCBITaxon:3412472
   taxon_label: Monocillium nordinii
   taxon_source: NCBITaxon
   source: LOTUS
@@ -78,17 +78,9 @@ occurrences:
     evidence_type: DATABASE_ASSERTION
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q10588460
-- taxon_id: NCBITaxon:3412472
-  taxon_label: Niesslia nordinii
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1016/S0031-9422(00)81811-7
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q104884906
+  notes: Wikidata organism http://www.wikidata.org/entity/Q10588460 Taxon id NCBITaxon:2075171,
+    as given by LOTUS, was merged into NCBITaxon:3412472 by NCBI Taxonomy; rewritten
+    at seed time.
 - taxon_id: NCBITaxon:396024
   taxon_label: Aspergillus ruber
   taxon_source: NCBITaxon
@@ -428,7 +420,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-09T01:11:23Z'
+- timestamp: '2026-09-10T04:12:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

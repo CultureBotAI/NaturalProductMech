@@ -53,14 +53,16 @@ pieces named as available that were never built.
 Found by the first id-label run (#50) and by scoping it. Each is a wrong or
 unjoinable value that `just qc` reproduces faithfully.
 
-- **#62 — three producers grounded to `NCBITaxon:12908`, unclassified
-  sequences.** A producer claim that names no organism. Refuse non-organism
-  taxids in the MIBiG extractor and in the guarded write path.
-- **#63 — 42 taxon ids are merged in NCBI Taxonomy.** Numeric ids from LOTUS
-  and MIBiG are taken as given; `merged.dmp` is never read. Emit
-  `taxon_merged.tsv` beside `taxon_names.tsv` and rewrite ids at seed time.
+- **#68 — 68 producer claims name an uncultured bacterium or a metagenome.**
+  39 of them (`uncultured bacterium`, `uncultured organism`, `sponge
+  metagenome`) name no organism at all; 29 name a strain or a genus and look
+  legitimate. Decide the rule in `docs/HARMONIZATION.md` before the extractor
+  enforces it — it is a curation judgement, not a defect. Follows #62.
 - **#61 — `xrefs` say `chebi:` where the corpus says `CHEBI:`.** MIBiG's
   spelling passed through the seeder; 54 records. Normalise at the seeder.
+- **#69 — every re-seed re-stamps all 3,115 curation timestamps**, so every
+  corpus PR is a 3,115-file diff and a reviewer cannot see the records that
+  actually changed. `record_curation_event` already has `skip_if_recent`.
 
 ## Sources
 

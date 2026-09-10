@@ -42,8 +42,8 @@ upstream:
 inventories:
   mibig_compounds.tsv:
     rows: 3449
-    bytes: 2253402
-    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    bytes: 2253250
+    sha256: ad0139c22a15b4b8b28f97ce411b4e1955962ce76d1f914734a2ece666cbf895
     source: MIBiG 4.0 active entries
   npclassifier.tsv:
     rows: 3115
@@ -90,4 +90,9 @@ inventories:
     bytes: 2093581
     sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
     source: PubChem BioAssay via PUG REST, CIDs cross-referenced by the corpus
-retrieved_on: '2026-09-08'
+  taxon_merged.tsv:
+    rows: 555
+    bytes: 23892
+    sha256: 02349760c9ae59aa28b41831e3fd54cba70063d48bd5f0002b3b94c24ff176ab
+    source: NCBI Taxonomy taxdump, merged.dmp (public domain)
+retrieved_on: '2026-09-09'

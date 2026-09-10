@@ -26,6 +26,18 @@ np_classification:
   - Tetraketide meroterpenoids
   is_glycoside: false
 occurrences:
+- taxon_id: NCBITaxon:159075
+  taxon_label: Acremonium
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/NP8006793
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q4675103 Taxon id NCBITaxon:5043,
+    as given by LOTUS, was merged into NCBITaxon:159075 by NCBI Taxonomy; rewritten
+    at seed time.
 - taxon_id: NCBITaxon:1677696
   taxon_label: Ascochyta viciae
   taxon_source: NCBITaxon
@@ -72,16 +84,6 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:156148
   taxon_id: NCBITaxon:261921
   taxon_source: NCBITaxon
-- taxon_id: NCBITaxon:5043
-  taxon_label: Acremonium
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1021/NP8006793
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q4675103
 - taxon_id: NCBITaxon:749675
   taxon_label: Acremonium egyptiacum
   taxon_source: NCBITaxon
@@ -173,7 +175,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-09T01:11:23Z'
+- timestamp: '2026-09-10T04:12:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

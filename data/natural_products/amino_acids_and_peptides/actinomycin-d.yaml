@@ -119,7 +119,7 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q22665888
-- taxon_id: NCBITaxon:329525
+- taxon_id: NCBITaxon:33900
   taxon_label: Streptomyces costaricanus
   taxon_source: NCBITaxon
   source: LOTUS
@@ -128,7 +128,9 @@ occurrences:
     evidence_type: DATABASE_ASSERTION
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q22287125
+  notes: Wikidata organism http://www.wikidata.org/entity/Q22287125 Taxon id NCBITaxon:329525,
+    as given by LOTUS, was merged into NCBITaxon:33900 by NCBI Taxonomy; rewritten
+    at seed time.
 - taxon_id: NCBITaxon:52258
   taxon_label: Streptomyces flavovirens
   taxon_source: NCBITaxon
@@ -236,7 +238,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-09T01:11:21Z'
+- timestamp: '2026-09-10T04:12:01Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

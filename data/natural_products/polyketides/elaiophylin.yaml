@@ -323,25 +323,10 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:6444206
-producer_organisms:
-- taxon_id: NCBITaxon:12908
-  taxon_label: Unknown. Unclassified.
-  evidence_basis: SOURCE_ASSERTION
-  biosynthetic_gene_cluster: mibig:BGC0000053
-  source: MIBIG
-  source_version: '5'
-  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
-    this field grades the taxon claim, which is a different question.'
-  evidence:
-  - reference: patent:WO2006053313A2
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000053 entry version 5; citation taken from the entry level
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000053
   entry_version: '5'
   entry_status: active
-  organism_taxon_id: NCBITaxon:12908
-  organism_label: Unknown. Unclassified.
   evidence:
   - reference: patent:WO2006053313A2
     evidence_type: DATABASE_ASSERTION
@@ -363,8 +348,17 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-bc4ff91e7f
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: unnamed-producer
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'MIBiG gives a non-organism NCBI taxonomy node for BGC0000053 (unclassified
+    sequences, unidentified, or a rank above species), so no producer claim is written
+    from it. The cluster is kept: a characterized locus is an origin assertion whether
+    or not its host is named, and for a compound from an uncultured symbiont that
+    is the honest state. Name the producer if the primary literature does.'
 curation_history:
-- timestamp: '2026-09-09T01:11:20Z'
+- timestamp: '2026-09-10T04:11:59Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -10,7 +10,7 @@ default:
 
 # Install package + dev tools
 install:
-    uv sync --locked --extra dev
+    uv sync --locked --extra dev --extra chemistry
 
 # Generate Pydantic classes from the LinkML schema
 gen-schema:

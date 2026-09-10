@@ -24,26 +24,10 @@ compound_classes:
 - Macrocyclic polyketide
 xrefs:
 - pubchem:6326334
-producer_organisms:
-- taxon_id: NCBITaxon:12908
-  taxon_label: Nocardia arthritidis AUSMDU00012717 Unclassified.
-  evidence_basis: BGC_CHARACTERIZED
-  biosynthetic_gene_cluster: mibig:BGC0001875
-  source: MIBIG
-  source_version: '4'
-  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
-    this field grades the taxon claim, which is a different question.'
-  evidence:
-  - reference: PMID:30677204
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0001875 entry version 4; citation taken from the compound bioactivity
-      level
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0001875
   entry_version: '4'
   entry_status: active
-  organism_taxon_id: NCBITaxon:12908
-  organism_label: Nocardia arthritidis AUSMDU00012717 Unclassified.
   evidence:
   - reference: PMID:30677204
     evidence_type: DATABASE_ASSERTION
@@ -67,8 +51,17 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+discussions:
+- discussion_id: unnamed-producer
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'MIBiG gives a non-organism NCBI taxonomy node for BGC0001875 (unclassified
+    sequences, unidentified, or a rank above species), so no producer claim is written
+    from it. The cluster is kept: a characterized locus is an origin assertion whether
+    or not its host is named, and for a compound from an uncultured symbiont that
+    is the honest state. Name the producer if the primary literature does.'
 curation_history:
-- timestamp: '2026-09-09T01:11:24Z'
+- timestamp: '2026-09-10T04:12:05Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
