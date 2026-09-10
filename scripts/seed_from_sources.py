@@ -479,6 +479,12 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     for row in inventories.get("chebi_structures") or []:
         chebi_by_key[row["standard_inchi_key"]].append(row)
 
+    # The same entries by identifier, so an xref asserting "this compound is
+    # CHEBI:X" can be checked against the structure ChEBI holds for X. When
+    # they disagree, one of the two databases has the wrong structure, and
+    # neither the InChIKey merge nor any gate would say so (#77).
+    chebi_by_id = {row["chebi_id"]: row for row in inventories.get("chebi_structures") or []}
+
     origins_by_chebi: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in inventories.get("chebi_origins") or []:
         origins_by_chebi[row["chebi_id"]].append(row)
@@ -1049,6 +1055,39 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                     "its host has a name, and for a compound from an uncultured "
                     "symbiont that is the honest state. Name the producer if the "
                     "primary literature does."
+                ),
+            })
+
+        # An xref asserts the same structure. When it names a ChEBI entry this
+        # corpus holds under a DIFFERENT Standard InChIKey, that assertion and
+        # the identity rule contradict each other, and one of the two upstream
+        # records has the wrong structure. Refusing to merge is right and is
+        # what the InChIKey rule already does; saying nothing is not (#77).
+        for xref in xrefs:
+            entry = chebi_by_id.get(xref)
+            if entry is None or not entry["standard_inchi_key"]:
+                continue
+            their_key = entry["standard_inchi_key"]
+            if their_key == key:
+                continue
+            same_skeleton = their_key.split("-")[0] == key.split("-")[0]
+            discussions.append({
+                "discussion_id": "structure-disagreement",
+                "kind": "CURATION_TODO",
+                "status": "OPEN",
+                "prompt": (
+                    f"MIBiG cross-references this compound to {xref}, but ChEBI holds "
+                    f"{xref} with Standard InChIKey {their_key} and this record's "
+                    f"structure is {key}. "
+                    + (
+                        "The skeleton blocks match, so the two disagree about "
+                        "stereochemistry: check which configuration the primary "
+                        "literature supports."
+                        if same_skeleton else
+                        "The skeleton blocks differ, so these are not the same "
+                        "molecule: one of the two databases has the wrong structure "
+                        "for this name. Check which, and report it upstream."
+                    )
                 ),
             })
 

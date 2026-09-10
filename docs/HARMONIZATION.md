@@ -236,6 +236,22 @@ to, and the two spellings made the self-reference invisible. An xref means the
 same structure *somewhere else*, so one equal to the record's own identifier is
 dropped.
 
+**When an xref and the identity rule contradict each other, say so.** An xref
+asserts the same structure; the InChIKey decides identity. If a record's xref
+names a ChEBI entry this corpus holds under a *different* Standard InChIKey,
+both cannot be true, and one of the two upstream databases has the wrong
+structure. Not merging is correct and is what the InChIKey rule already does —
+but staying silent leaves the contradiction where only a reviewer running
+ad-hoc joins would find it, which is how these five were found. Each now
+carries a `structure-disagreement` CURATION_TODO with both keys (#77).
+
+The discussion distinguishes two cases, because they need different curation.
+Four are stereochemistry: the first InChIKey block, the skeleton, is identical
+and the sources disagree about configuration. Actinorhodin is not —
+`FXTIILIJTTYSLT` against ChEBI's `VTIKDEXOEJDMJP` is a different constitution,
+so two databases hold molecules that are not the same compound under one name.
+That one is worth reporting upstream.
+
 **Three MIBiG fields that do not mean what they look like**, all verified
 against the 4.0 release:
 

@@ -482,3 +482,30 @@ def test_xrefs_use_the_identifier_spelling_for_namespaces_this_corpus_mints(reco
         f"xrefs whose prefix differs only in case from one the corpus mints "
         f"identifiers in, so they will not join: {offenders[:6]}"
     )
+
+
+def test_an_xref_to_a_structure_the_corpus_holds_differently_is_flagged(records):
+    """An xref asserts the same structure. When it names a ChEBI entry this
+    corpus holds under a different Standard InChIKey, the assertion and the
+    identity rule contradict each other and one upstream record is wrong.
+    Refusing to merge is right; saying nothing is not (#77).
+    """
+    import csv as _csv
+
+    path = REPO_ROOT / "data" / "raw" / "chebi_structures.tsv"
+    with path.open(newline="", encoding="utf-8") as fh:
+        by_id = {row["chebi_id"]: row["standard_inchi_key"]
+                 for row in _csv.DictReader(fh, delimiter="\t")}
+
+    unflagged = []
+    for record in records:
+        key = record["chemical_structure"]["standard_inchi_key"]
+        flagged = {d["discussion_id"] for d in record.get("discussions") or []}
+        for xref in record.get("xrefs") or []:
+            their = by_id.get(xref)
+            if their and their != key and "structure-disagreement" not in flagged:
+                unflagged.append((record["identifier"], xref, key, their))
+    assert not unflagged, (
+        f"records whose xref names a ChEBI entry held under a different structure, "
+        f"with no structure-disagreement discussion: {unflagged[:4]}"
+    )
