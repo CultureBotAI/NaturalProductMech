@@ -84,11 +84,8 @@ For a bulk request, still review records one at a time. Generate the exhaustive
 checkpoint with:
 
 ```bash
-just review-queue --limit 0 --tsv curation/record_review_queue.tsv   # owed: #52
+just review-queue --limit 0 --tsv curation/record_review_queue.tsv
 ```
-
-Until #52 lands there is no generated queue; work from `just report` and the
-record files directly.
 
 Remove a row only by actually moving its record to `REVIEWED` or `DEPRECATED`;
 the queue is derived state.

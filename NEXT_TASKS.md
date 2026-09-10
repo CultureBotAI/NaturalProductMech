@@ -12,13 +12,6 @@ Milestones are in `PLAN.md` §7. M0–M3 and M5 have landed; M4 and M6 have not.
 Documentation was ported from AntibioticMech ahead of the code. These are the
 pieces named as available that were never built.
 
-- **#52 — `just worklist` and `just review-queue`.** The curation backlog by
-  queue. Named in `CLAUDE.md`, `PLAN.md` §3.4 and §7, `docs/CURATION.md` and two
-  skills. Unblocks #43 and the `curate-yaml-record` skill's checkpoint.
-- **#43 — `pathway-drift` detection.** The pin half of issue #2 is enforced by
-  `just verify-corpus`; the comparison of `PATHS.tsv` against a newer
-  NPClassifier inventory is not implemented, so a model upgrade disagrees
-  silently. Needs #52 for somewhere to land, or a report of its own.
 - **#53 — the browsable site.** Renderer, templates, `pages/`, `render-check`
   in the gate, Pages deploy. When the URL returns 200, restore the repository
   `homepage` field cleared in #46 — not before.

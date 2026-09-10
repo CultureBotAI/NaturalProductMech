@@ -513,7 +513,7 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     Every record produced is MINTED, because MIBiG carries no ChEBI
     cross-reference for most compounds and this milestone does not yet read
     ChEBI. Grounding those is exactly what the next milestone is for, and
-    `just worklist` (#52) will rank them.
+    `just worklist` ranks them.
     """
     mibig_rows = inventories.get("mibig_compounds") or []
     if not mibig_rows:

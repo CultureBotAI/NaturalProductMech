@@ -266,8 +266,9 @@ through the ordinary rename path, with `RETIRED.tsv` reserving the old slug so
 the published URL keeps resolving. So a model upgrade produces a reviewable list
 and zero silent moves.
 
-*Status (2026-09-09): the pin is built and enforced by `just verify-corpus`; the
-comparison against a newer inventory and the queue it feeds are owed (#43, #52).*
+*Status (2026-09-10): both halves are built — the pin is enforced by
+`just verify-corpus`, and `just worklist --queue pathway-drift` compares it
+against the current inventory (#43, #52).*
 
 The cost is honest and worth stating: the corpus can carry filing decisions
 made by an older model than the one in `data/raw/`. That is the right trade for
@@ -518,7 +519,7 @@ and #40 (antimicrobial classification sourced from AntibioticMech). Done out of
 order, before M4.*
 
 **M6 — Curation.** Biosynthesis causal graphs for the best-evidenced MIBiG
-records first (`just worklist --queue biosynthesis`, #52, ranks by BGC evidence
+records first (`just worklist --queue biosynthesis` ranks by BGC evidence
 waiting), then bioactivity graphs. This is the work; everything above is the
 scaffold for it.
 
