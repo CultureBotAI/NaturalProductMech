@@ -222,6 +222,20 @@ The source's id stays in the inventory as provenance. 167 ids were rewritten,
 and it raised producer-occurrence corroboration from 721 records to 732 —
 claims that always described one organism and could not previously be seen to.
 
+**A cross-reference has to resolve, so its prefix follows identity.** MIBiG's
+`database_ids` are lowercase throughout. For `npatlas`, `pubchem`, `chembl`,
+`lotus` and `cyanometdb` that spelling is kept: this corpus never mints an
+identifier in those namespaces, so there is no join to preserve and the
+source's own form is the honest record. ChEBI is the exception, because
+`CHEBI:2766` *is* an identifier here — so a `chebi:2766` xref names the same
+structure in a way that cannot match it, and is rewritten (#61).
+
+That mismatch was hiding something. Twenty records carried an xref pointing at
+their own identifier: MIBiG cites the ChEBI id the record is already grounded
+to, and the two spellings made the self-reference invisible. An xref means the
+same structure *somewhere else*, so one equal to the record's own identifier is
+dropped.
+
 **Three MIBiG fields that do not mean what they look like**, all verified
 against the 4.0 release:
 

@@ -136,6 +136,22 @@ MEASUREMENT_TYPES = {
 # Only cross-references whose prefix this corpus declares are carried through.
 DB_ID_RE = re.compile(r"^(npatlas|pubchem|chembl|chebi|cyanometdb|lotus):[A-Za-z0-9._-]+$")
 
+#: Prefixes rewritten to the spelling this corpus mints identifiers in.
+#:
+#: MIBiG's `database_ids` are lowercase throughout, and for npatlas, pubchem,
+#: chembl, lotus and cyanometdb that is left alone: this corpus never mints an
+#: identifier in those namespaces, so there is no join to preserve and the
+#: source's spelling is the honest record. ChEBI is different — `CHEBI:2766`
+#: is a record identifier here — so `chebi:2766` in an xref is the same
+#: structure written in a way that will not match it. An xref means the same
+#: structure (CLAUDE.md), which is only useful if it resolves (#61).
+XREF_PREFIX_CANON = {"chebi": "CHEBI"}
+
+
+def canonical_xref(value: str) -> str:
+    prefix, _, local = value.partition(":")
+    return f"{XREF_PREFIX_CANON.get(prefix, prefix)}:{local}"
+
 # How many occurrences reach a record. The INVENTORY keeps all of them, so
 # nothing is lost and the corpus still reproduces; this bounds what a curator
 # has to read. Without it lupeol carried 925 occurrences in a 397 KB file,
@@ -606,8 +622,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 if value and value not in compound_classes:
                     compound_classes.append(value)
             for value in row["database_ids"].split("|"):
-                if value and value not in xrefs and DB_ID_RE.match(value):
-                    xrefs.append(value)
+                if value and DB_ID_RE.match(value):
+                    canonical = canonical_xref(value)
+                    if canonical not in xrefs:
+                        xrefs.append(canonical)
 
             # Unconditional wherever MIBiG names an organism, and that is the
             # point: MIBiG asserting a compound-organism pair IS an assertion
@@ -935,6 +953,11 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             doc["bgc_class"] = bgc_classes
         if compound_classes:
             doc["compound_classes"] = compound_classes
+        # An xref pointing at this record's own identifier is not a cross
+        # reference to anything. 20 records carried one, because MIBiG cites
+        # the ChEBI id the record is already grounded to and the two spellings
+        # hid it (#61).
+        xrefs = [x for x in xrefs if x != doc["identifier"]]
         if xrefs:
             doc["xrefs"] = xrefs
         if producers:
