@@ -15,7 +15,12 @@ One gate is deliberately outside `just qc`: `just vendored-sync`. Its checker
 resolves this repository's identity through claw's consumer registry, and
 NaturalProductMech is not admitted to the fleet manifest until M4. The governed
 files ARE vendored byte-identical at the pinned ref, so the failure is on
-identity, not content. Admission adds it to the gate.
+identity, not content. Admission adds it to the gate. Until then
+`tests/test_vendored_artifacts.py` is the drift guard: it compares every
+fleet-wide artifact, bytes and mode, against `scripts/.vendored_manifest.json`,
+claw's manifest snapshotted at the pin. A re-pin is three things in one PR:
+advance `scripts/.vendored_canon_ref`, re-snapshot the manifest, re-vendor any
+artifact whose hash moved.
 
 ## Repository purpose
 
