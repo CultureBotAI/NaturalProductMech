@@ -14,6 +14,8 @@ on:
       - "scripts/validate_id_label_correspondence.py"
       - "scripts/chem_formula.py"
       - "conf/id_label_targets.yaml"
+      # The taxonomy adapter is committed, so a change to it changes the gate.
+      - "data/raw/corpus_taxa.obo"
       # The recipes are part of the gate: editing one has to re-run it.
       - "justfile"
       - ".github/workflows/label-correspondence.yaml"
@@ -50,8 +52,9 @@ jobs:
       # ChEBI as a semantic-sql database, about 4 GB uncompressed. The key has
       # no lockfile hash: it is an ontology release, not a resolved dependency,
       # so the cache is refreshed by bumping the suffix when a newer release is
-      # wanted. NCBITaxon is not here on purpose — its database is 13.5 GB,
-      # above the cache limit; conf/id_label_targets.yaml says what that costs.
+      # wanted. NCBITaxon needs no cache at all: OAK's build is 13.5 GB, so the
+      # taxon surface resolves against the committed data/raw/corpus_taxa.obo
+      # instead (#64).
       - name: Cache OAK ontologies
         uses: actions/cache@v4
         with:

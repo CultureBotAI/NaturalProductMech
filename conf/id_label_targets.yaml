@@ -39,10 +39,15 @@
 
 adapters:
   CHEBI: sqlite:obo:chebi
+  # A corpus-scoped adapter, not OAK's NCBITaxon build. That one is a 13.5 GB
+  # semantic-sql database, far above what CI can cache, which is why this
+  # surface — the corpus's largest, about 13,700 pairs — went unchecked (#64).
+  # data/raw/corpus_taxa.obo carries the same names from the same taxdump the
+  # corpus resolves against, for the taxa the adopted sources can supply.
+  NCBITaxon: simpleobo:data/raw/corpus_taxa.obo
 
 ignored_prefixes:
   - naturalproductmech   # minted, content-hashed ids for ungrounded structures
-  - NCBITaxon            # see above
   - UniProtKB            # protein accessions; the label is the protein name
 
 # A label matching an exact or related synonym is accepted: the corpus prefers
@@ -50,16 +55,16 @@ ignored_prefixes:
 synonym_scope: exact_related
 
 targets:
-  - name: records
+  # The record's own identity and its non-taxon groundings. Blocking: 362
+  # grounded records, and the 21 residuals below are each an exact pair with a
+  # reason.
+  - name: record_identity
     kind: yaml
     glob: "data/natural_products/**/*.yaml"
     required: true
     policy: canonical_or_synonym
     pairs:
       - [identifier, label]
-      - [taxon_id, taxon_label]
-      - [organism_taxon_id, organism_label]
-      - [target_organism_id, target_organism_label]
       - [target_id, target_label]
       - [enzyme_id, enzyme_label]
     exclude_keys: [source_concepts, related_records]
@@ -92,3 +97,35 @@ targets:
       - { id: "CHEBI:140442", label: "12-epi-fischerindole U isonitrile", reason: "name variant: ChEBI says 12-epi-fischerindole U; same InChIKey; curator to confirm" }
       - { id: "CHEBI:85129", label: "Ristocetin A", reason: "name variant: ChEBI says ristocetin; same InChIKey; curator to confirm" }
       - { id: "CHEBI:72590", label: "rhizoxin A", reason: "name variant: ChEBI says rhizoxin; same InChIKey; curator to confirm" }
+
+  # Every organism the corpus names: producers, occurrences, gene-cluster
+  # hosts, assay organisms. About 13,700 pairs, and until #64 none of them were
+  # checked at all.
+  #
+  # `severity: warn` is the fleet's report-then-enforce onboarding for a new
+  # target over pre-existing data, and this backlog is real rather than
+  # theoretical: 13,550 pairs agree with NCBI and 499 do not, in 125 distinct
+  # (id, label) pairs. They are not one problem. Roughly two thirds are source
+  # granularity — MIBiG names a strain and assigns the species taxid
+  # (`Streptomyces albidoflavus J1074` under NCBITaxon:1886), or the reverse —
+  # which is a weaker claim than a wrong id and needs a policy decision this
+  # config cannot express. About a quarter are typos and gender agreement in
+  # the source (`Paecilomyces variotti` for `variotii`). The remaining 34 name
+  # a different genus, and those are where a wrong id would hide: NCBITaxon:213754
+  # is labelled `Tolypothrix byssoidea`, a cyanobacterium, and NCBI calls it
+  # `Rhodococcus sp. T3H5`, an actinobacterium (#83).
+  #
+  # Flip to `error` once #83 is worked through. Until then every run still
+  # proves that all 13,700 ids EXIST — ID_NOT_FOUND is fatal at any severity —
+  # and the drift report is uploaded from CI on every run.
+  - name: taxon_labels
+    kind: yaml
+    glob: "data/natural_products/**/*.yaml"
+    required: true
+    policy: canonical_or_synonym
+    severity: warn
+    pairs:
+      - [taxon_id, taxon_label]
+      - [organism_taxon_id, organism_label]
+      - [target_organism_id, target_organism_label]
+    exclude_keys: [source_concepts, related_records]

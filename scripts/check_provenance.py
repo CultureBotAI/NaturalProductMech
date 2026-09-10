@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 """Verify every committed inventory is covered by data/raw/MANIFEST.yaml.
 
-A committed TSV with no manifest row has no recorded origin: nobody can tell
-which ChEBI, MIBiG or LOTUS release produced it, or whether it was edited by hand after
-extraction. This checks coverage in both directions and re-hashes each file.
+A committed inventory with no manifest row has no recorded origin: nobody can
+tell which ChEBI, MIBiG or LOTUS release produced it, or whether it was edited
+by hand after extraction. This checks coverage in both directions and re-hashes
+each file.
+
+Most inventories are TSVs, where a row is a row. ``corpus_taxa.obo`` is not —
+it is the id-label gate's taxonomy adapter, emitted from the same taxdump as
+``taxon_names.tsv`` (#64) — so its "rows" are OBO terms. Counting its lines
+instead would make the manifest record a number nobody can check against the
+file's own contents.
 """
 
 from __future__ import annotations
@@ -29,6 +36,9 @@ def sha256_of(path: Path) -> str:
 
 
 def row_count(path: Path) -> int:
+    if path.suffix == ".obo":
+        return sum(1 for line in path.read_text(encoding="utf-8").splitlines()
+                   if line.startswith("id: "))
     with path.open(newline="", encoding="utf-8") as fh:
         return sum(1 for _ in csv.DictReader(fh, delimiter="\t"))
 
@@ -39,7 +49,8 @@ def main() -> int:
         return 1
     manifest = yaml.safe_load(MANIFEST_PATH.read_text(encoding="utf-8"))
     recorded = manifest.get("inventories", {})
-    on_disk = {p.name for p in RAW_DIR.glob("*.tsv")}
+    on_disk = {p.name for p in RAW_DIR.iterdir()
+               if p.is_file() and p.suffix in {".tsv", ".obo"}}
 
     problems = []
     # pubchem_structures.tsv is produced by a separate network step whose own

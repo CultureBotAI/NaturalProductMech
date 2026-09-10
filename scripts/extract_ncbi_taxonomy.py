@@ -74,6 +74,7 @@ MANIFEST_PATH = RAW_DIR / "MANIFEST.yaml"
 INVENTORY_NAME = "taxon_names.tsv"
 MERGED_INVENTORY_NAME = "taxon_merged.tsv"
 NON_ORGANISM_INVENTORY_NAME = "taxon_non_organism.tsv"
+OBO_NAME = "corpus_taxa.obo"
 
 #: Nodes that are structurally not an organism: the root, the rank above the
 #: domains, and NCBI's two catch-alls for sequences it has not placed.
@@ -262,6 +263,62 @@ def ids_wanted() -> dict[str, set[str]]:
     return wanted
 
 
+def write_obo(archive: Path, wanted: set[str], path: Path) -> int:
+    """A plain OBO of the taxa this corpus can carry, for the id-label gate.
+
+    NCBITaxon is the corpus's largest (id, label) surface — about 13,700 pairs
+    — and OAK's only adapter for it is a 13.5 GB semantic-sql build, above what
+    CI can cache, so the gate skipped all of them (#64). This emits the same
+    names from the taxdump the corpus already resolves against, as an OBO small
+    enough to commit and parse offline.
+
+    The term set is every taxid the adopted sources supply, plus every id this
+    extractor resolves or merges forward. That is a superset of what the corpus
+    holds, deliberately: a taxon a later re-seed introduces is already in the
+    file, so the gate cannot start reporting ID_NOT_FOUND for a record that is
+    perfectly good. It is drawn from the UPSTREAM files rather than the
+    committed inventories, because three extractors consume ``taxon_names.tsv``
+    and reading their outputs here would make a cold rebuild circular.
+
+    Synonyms are emitted as exact synonyms so the gate accepts the name a
+    source actually used — ``Penicillium notatum`` for what NCBI now calls
+    ``P. chrysogenum`` — which is the same latitude ``synonym_scope:
+    exact_related`` gives the ChEBI surface.
+    """
+    names: dict[str, str] = {}
+    synonyms: dict[str, set[str]] = {}
+    with tarfile.open(archive, "r:gz") as tar:
+        member = tar.extractfile("names.dmp")
+        if member is None:
+            raise SystemExit("names.dmp missing from the taxdump archive")
+        for raw in member:
+            parts = [p.strip() for p in raw.decode("utf-8", "replace").split("\t|")]
+            if len(parts) < 4:
+                continue
+            taxid, name, name_class = parts[0], parts[1], parts[3].rstrip("\t|\n")
+            if taxid not in wanted:
+                continue
+            if name_class == "scientific name":
+                names[taxid] = name
+            elif name_class in USABLE_NAME_CLASSES:
+                synonyms.setdefault(taxid, set()).add(name)
+
+    def escape(value: str) -> str:
+        return value.replace("\\", "\\\\").replace('"', '\\"')
+
+    lines = ["format-version: 1.2", "ontology: corpus_taxa", ""]
+    for taxid in sorted(names, key=int):
+        lines.append("[Term]")
+        lines.append(f"id: NCBITaxon:{taxid}")
+        lines.append(f"name: {names[taxid]}")
+        for synonym in sorted(synonyms.get(taxid, set())):
+            if synonym != names[taxid]:
+                lines.append(f'synonym: "{escape(synonym)}" EXACT []')
+        lines.append("")
+    path.write_text("\n".join(lines), encoding="utf-8")
+    return len(names)
+
+
 def non_organism(archive: Path, wanted: set[str]) -> dict[str, tuple[str, str]]:
     """Wanted taxids that do not denote a single organism -> (name, reason).
 
@@ -425,6 +482,7 @@ def main() -> int:
         print("dry run: nothing written", file=sys.stderr)
         return 0
 
+    resolved_ids = {taxid for taxid, _ in found.values()}
     rows = []
     for name, (taxid, name_class) in sorted(found.items()):
         requested = ",".join(sorted(s for s, names in wanted_by_source.items() if name in names))
@@ -453,6 +511,11 @@ def main() -> int:
         "reason": reason,
         "requested_by": ",".join(sorted(s for s, ids in ids_by_source.items() if taxid in ids)),
     } for taxid, (name, reason) in sorted(bins.items(), key=lambda kv: int(kv[0]))]
+    obo_path = RAW_DIR / OBO_NAME
+    obo_terms = write_obo(archive, ids_all | set(resolved_ids) | set(merges.values()), obo_path)
+    print(f"wrote {obo_path.relative_to(REPO_ROOT)} ({obo_terms} terms, "
+          f"{obo_path.stat().st_size // 1024} KB)", file=sys.stderr)
+
     bin_inventory = RAW_DIR / NON_ORGANISM_INVENTORY_NAME
     with bin_inventory.open("w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=NON_ORGANISM_COLUMNS,
@@ -482,6 +545,10 @@ def main() -> int:
     manifest.setdefault("inventories", {})[INVENTORY_NAME] = {
         "rows": len(rows), "bytes": inventory.stat().st_size, "sha256": sha256_of(inventory),
         "source": "NCBI Taxonomy taxdump, names.dmp (public domain)",
+    }
+    manifest["inventories"][OBO_NAME] = {
+        "rows": obo_terms, "bytes": obo_path.stat().st_size, "sha256": sha256_of(obo_path),
+        "source": "NCBI Taxonomy taxdump, names.dmp (public domain); the id-label gate's adapter",
     }
     manifest["inventories"][NON_ORGANISM_INVENTORY_NAME] = {
         "rows": len(bin_rows), "bytes": bin_inventory.stat().st_size,
