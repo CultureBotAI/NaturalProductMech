@@ -73,6 +73,37 @@ DOWNLOAD_DIR = REPO_ROOT / "downloads"
 MANIFEST_PATH = RAW_DIR / "MANIFEST.yaml"
 INVENTORY_NAME = "taxon_names.tsv"
 MERGED_INVENTORY_NAME = "taxon_merged.tsv"
+NON_ORGANISM_INVENTORY_NAME = "taxon_non_organism.tsv"
+
+#: Nodes that are structurally not an organism: the root, the rank above the
+#: domains, and NCBI's two catch-alls for sequences it has not placed.
+STRUCTURAL_NON_ORGANISM = {
+    "1": "root of the taxonomy",
+    "131567": "the rank above the domains, not a taxon anyone isolates from",
+    "12908": "NCBI's bin for unclassified sequences",
+    "32644": "NCBI's bin for unidentified organisms",
+}
+
+#: Subtrees whose members are communities or unplaced sequences rather than
+#: organisms. Everything under them is excluded, so a metagenome this corpus
+#: has not seen yet is caught without being listed.
+NON_ORGANISM_SUBTREES = {
+    "12908": "under unclassified sequences",
+    "408169": "under metagenomes — a community, not an organism",
+}
+
+#: Generic environmental bins: real nodes, but ones that many unrelated
+#: organisms share. NCBI places them directly under a domain via an
+#: `environmental samples` wrapper, so no lineage rule distinguishes them from
+#: a specific uncultured clone — `uncultured bacterium AR_456` sits in exactly
+#: the same place and DOES denote one lineage. What separates them is that a
+#: join on a bin is meaningless: 36 producer claims in this corpus point at
+#: 77133, and treating that as an organism asserts that one bacterium makes 36
+#: unrelated compounds (#68).
+GENERIC_BINS = {
+    "77133": "uncultured bacterium — shared by every unplaced bacterium",
+    "155900": "uncultured organism — shared by every unplaced organism",
+}
 
 ARCHIVE = "taxdump.tar.gz"
 URL = f"https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/{ARCHIVE}"
@@ -85,6 +116,7 @@ USABLE_NAME_CLASSES = {"scientific name", "synonym", "equivalent name",
 
 COLUMNS = ["organism_name", "taxon_id", "name_class", "requested_by"]
 MERGED_COLUMNS = ["old_taxon_id", "new_taxon_id", "requested_by"]
+NON_ORGANISM_COLUMNS = ["taxon_id", "scientific_name", "reason", "requested_by"]
 
 
 def sha256_of(path: Path) -> str:
@@ -215,6 +247,57 @@ def ids_wanted() -> dict[str, set[str]]:
     return wanted
 
 
+def non_organism(archive: Path, wanted: set[str]) -> dict[str, tuple[str, str]]:
+    """Wanted taxids that do not denote a single organism -> (name, reason).
+
+    Three ways in, in order of how much of the taxonomy they cover: a
+    structural node, a member of a non-organism subtree, or one of the two
+    generic bins. A producer claim on any of them names no organism, which is
+    a claim the corpus cannot make (#62, #68).
+    """
+    parents: dict[str, str] = {}
+    with tarfile.open(archive, "r:gz") as tar:
+        nodes = tar.extractfile("nodes.dmp")
+        if nodes is None:
+            raise SystemExit("nodes.dmp missing from the taxdump archive")
+        for raw in nodes:
+            parts = [p.strip() for p in raw.decode("utf-8", "replace").split("\t|")]
+            if len(parts) >= 2:
+                parents[parts[0]] = parts[1]
+
+    def lineage(taxid: str) -> list[str]:
+        chain, seen = [], set()
+        while taxid and taxid not in seen and taxid != "1":
+            seen.add(taxid)
+            chain.append(taxid)
+            taxid = parents.get(taxid, "")
+        return chain
+
+    found: dict[str, tuple[str, str]] = {}
+    for taxid in wanted:
+        if taxid in STRUCTURAL_NON_ORGANISM:
+            found[taxid] = ("", STRUCTURAL_NON_ORGANISM[taxid])
+            continue
+        if taxid in GENERIC_BINS:
+            found[taxid] = ("", GENERIC_BINS[taxid])
+            continue
+        for ancestor in lineage(taxid)[1:]:
+            if ancestor in NON_ORGANISM_SUBTREES:
+                found[taxid] = ("", NON_ORGANISM_SUBTREES[ancestor])
+                break
+
+    if found:
+        with tarfile.open(archive, "r:gz") as tar:
+            member = tar.extractfile("names.dmp")
+            if member is not None:
+                for raw in member:
+                    parts = [p.strip() for p in raw.decode("utf-8", "replace").split("\t|")]
+                    if (len(parts) > 3 and parts[0] in found
+                            and parts[3].rstrip("\t|\n") == "scientific name"):
+                        found[parts[0]] = (parts[1], found[parts[0]][1])
+    return found
+
+
 def merged(archive: Path, wanted: set[str]) -> dict[str, str]:
     """Old taxid -> current taxid, for the wanted ids that NCBI has merged."""
     found: dict[str, str] = {}
@@ -285,11 +368,15 @@ def main() -> int:
     ids_by_source = ids_wanted()
     ids_all = set().union(*ids_by_source.values()) if ids_by_source else set()
     merges = merged(archive, ids_all)
+    bins = non_organism(archive, ids_all)
     print("\nnumeric taxids supplied directly, by source:", file=sys.stderr)
     for source, ids in sorted(ids_by_source.items()):
         gone = len(ids & set(merges))
         print(f"  {source:<16} {len(ids):>7}   merged by NCBI: {gone}", file=sys.stderr)
     print(f"  {'distinct merged':<16} {len(merges):>7}", file=sys.stderr)
+    print(f"\ntaxa that do not denote a single organism: {len(bins)}", file=sys.stderr)
+    for taxid, (name, reason) in sorted(bins.items(), key=lambda kv: int(kv[0])):
+        print(f"  NCBITaxon:{taxid:<10} {name[:34]:<36} {reason}", file=sys.stderr)
 
     print(f"\nnames.dmp rows read : {counts['names_dmp_rows']}", file=sys.stderr)
     print(f"resolved            : {len(found)} of {len(wanted)} "
@@ -338,6 +425,19 @@ def main() -> int:
         "new_taxon_id": f"NCBITaxon:{new}",
         "requested_by": ",".join(sorted(s for s, ids in ids_by_source.items() if old in ids)),
     } for old, new in sorted(merges.items(), key=lambda kv: int(kv[0]))]
+    bin_rows = [{
+        "taxon_id": f"NCBITaxon:{taxid}",
+        "scientific_name": name,
+        "reason": reason,
+        "requested_by": ",".join(sorted(s for s, ids in ids_by_source.items() if taxid in ids)),
+    } for taxid, (name, reason) in sorted(bins.items(), key=lambda kv: int(kv[0]))]
+    bin_inventory = RAW_DIR / NON_ORGANISM_INVENTORY_NAME
+    with bin_inventory.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=NON_ORGANISM_COLUMNS,
+                                delimiter="\t", lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(bin_rows)
+
     merged_inventory = RAW_DIR / MERGED_INVENTORY_NAME
     with merged_inventory.open("w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=MERGED_COLUMNS, delimiter="\t", lineterminator="\n")
@@ -361,6 +461,11 @@ def main() -> int:
         "rows": len(rows), "bytes": inventory.stat().st_size, "sha256": sha256_of(inventory),
         "source": "NCBI Taxonomy taxdump, names.dmp (public domain)",
     }
+    manifest["inventories"][NON_ORGANISM_INVENTORY_NAME] = {
+        "rows": len(bin_rows), "bytes": bin_inventory.stat().st_size,
+        "sha256": sha256_of(bin_inventory),
+        "source": "NCBI Taxonomy taxdump, nodes.dmp + names.dmp (public domain)",
+    }
     manifest["inventories"][MERGED_INVENTORY_NAME] = {
         "rows": len(merged_rows), "bytes": merged_inventory.stat().st_size,
         "sha256": sha256_of(merged_inventory),
@@ -368,6 +473,7 @@ def main() -> int:
     }
     print(f"wrote {merged_inventory.relative_to(REPO_ROOT)} ({len(merged_rows)} rows)",
           file=sys.stderr)
+    print(f"wrote {bin_inventory.relative_to(REPO_ROOT)} ({len(bin_rows)} rows)", file=sys.stderr)
     MANIFEST_PATH.write_text(
         yaml.safe_dump(manifest, sort_keys=False, allow_unicode=True), encoding="utf-8")
     print(f"\nwrote {inventory.relative_to(REPO_ROOT)} ({len(rows)} rows)", file=sys.stderr)

@@ -32,26 +32,10 @@ occurrences:
 bgc_class:
 - PKS
 - SACCHARIDE
-producer_organisms:
-- taxon_id: NCBITaxon:77133
-  taxon_label: uncultured bacterium
-  evidence_basis: SOURCE_ASSERTION
-  biosynthetic_gene_cluster: mibig:BGC0000199
-  source: MIBIG
-  source_version: '5'
-  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
-    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
-    question.'
-  evidence:
-  - reference: PMID:24038656
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000199 entry version 5; citation taken from the entry level
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000199
   entry_version: '5'
   entry_status: active
-  organism_taxon_id: NCBITaxon:77133
-  organism_label: uncultured bacterium
   evidence:
   - reference: PMID:24038656
     evidence_type: DATABASE_ASSERTION
@@ -73,8 +57,18 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+discussions:
+- discussion_id: unnamed-producer
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'No producer claim is written from BGC0000199, which gives NCBITaxon:77133
+    (uncultured bacterium — shared by every unplaced bacterium), because the taxon
+    names no single organism. The cluster is kept: a characterized locus is an origin
+    assertion whether or not its host has a name, and for a compound from an uncultured
+    symbiont that is the honest state. Name the producer if the primary literature
+    does.'
 curation_history:
-- timestamp: '2026-09-10T04:12:02Z'
+- timestamp: '2026-09-10T05:06:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

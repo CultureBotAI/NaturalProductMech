@@ -42,8 +42,8 @@ upstream:
 inventories:
   mibig_compounds.tsv:
     rows: 3449
-    bytes: 2253250
-    sha256: ad0139c22a15b4b8b28f97ce411b4e1955962ce76d1f914734a2ece666cbf895
+    bytes: 2253402
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
     source: MIBiG 4.0 active entries
   npclassifier.tsv:
     rows: 3115
@@ -95,4 +95,9 @@ inventories:
     bytes: 23892
     sha256: 02349760c9ae59aa28b41831e3fd54cba70063d48bd5f0002b3b94c24ff176ab
     source: NCBI Taxonomy taxdump, merged.dmp (public domain)
+  taxon_non_organism.tsv:
+    rows: 7
+    bytes: 641
+    sha256: f2c1ee257bbbcb0854528196ab1f809d658c27f1c7b2036f7f71f088b52935bb
+    source: NCBI Taxonomy taxdump, nodes.dmp + names.dmp (public domain)
 retrieved_on: '2026-09-09'

@@ -525,26 +525,10 @@ bgc_class:
 - TERPENE
 xrefs:
 - pubchem:5280489
-producer_organisms:
-- taxon_id: NCBITaxon:77133
-  taxon_label: uncultured bacterium
-  evidence_basis: SOURCE_ASSERTION
-  biosynthetic_gene_cluster: mibig:BGC0000646
-  source: MIBIG
-  source_version: '5'
-  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
-    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
-    question.'
-  evidence:
-  - reference: PMID:19146479
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000646 entry version 5; citation taken from the entry level
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000646
   entry_version: '5'
   entry_status: active
-  organism_taxon_id: NCBITaxon:77133
-  organism_label: uncultured bacterium
   evidence:
   - reference: PMID:19146479
     evidence_type: DATABASE_ASSERTION
@@ -575,8 +559,17 @@ discussions:
   prompt: ChEBI calls this structure 'β-carotene' and MIBiG calls it 'β-carotein'.
     They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
+- discussion_id: unnamed-producer
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'No producer claim is written from BGC0000646, which gives NCBITaxon:77133
+    (uncultured bacterium — shared by every unplaced bacterium), because the taxon
+    names no single organism. The cluster is kept: a characterized locus is an origin
+    assertion whether or not its host has a name, and for a compound from an uncultured
+    symbiont that is the honest state. Name the producer if the primary literature
+    does.'
 curation_history:
-- timestamp: '2026-09-10T04:11:59Z'
+- timestamp: '2026-09-10T05:06:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

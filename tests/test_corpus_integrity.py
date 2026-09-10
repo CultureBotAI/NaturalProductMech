@@ -300,12 +300,18 @@ def test_a_taxon_in_both_fields_says_it_is_corroboration(records):
 #: under its retired and current ids, and unifying them removed the conflict.
 KNOWN_SYNONYM_TAXA = 17
 
-#: NCBI Taxonomy nodes that are not organisms; the same set the MIBiG
-#: extractor refuses (#62). Listed here too so the corpus is checked directly,
-#: whichever extractor or curator wrote the claim.
-NON_ORGANISM_TAXA = {
-    "NCBITaxon:1", "NCBITaxon:12908", "NCBITaxon:32644", "NCBITaxon:131567",
-}
+def non_organism_taxa() -> set[str]:
+    """Taxa that do not denote a single organism, from the committed inventory.
+
+    Read rather than hard-coded, so this test checks the corpus against the
+    same decision the seeder applied — the taxonomy extractor derives the set
+    from NCBI's own tree (#62, #68). A literal here would drift from it.
+    """
+    path = REPO_ROOT / "data" / "raw" / "taxon_non_organism.tsv"
+    assert path.exists(), "taxon_non_organism.tsv missing; run `just extract-taxonomy`"
+    _, rows = read_tsv(path)
+    assert rows, "taxon_non_organism.tsv is empty, which the first run showed it is not"
+    return {row["taxon_id"] for row in rows}
 
 
 def taxon_claims(record: dict):
@@ -341,14 +347,17 @@ def test_no_taxon_claim_carries_a_merged_id(records):
 
 
 def test_no_taxon_claim_names_a_non_organism_node(records):
-    """A producer claim on "unclassified sequences" asserts a producer while
-    naming none, and every other gate passes it: the id is a valid CURIE and
-    the label is non-empty. Three MIBiG entries did exactly that (#62)."""
+    """A producer claim on "unclassified sequences" or "uncultured bacterium"
+    asserts a producer while naming none, and every other gate passes it: the
+    id is a valid CURIE and the label is non-empty. 42 claims did exactly that
+    (#62, #68) — 36 of them on one node, which would have said that a single
+    bacterium makes 36 unrelated compounds."""
+    forbidden = non_organism_taxa()
     offenders = [
         (record["identifier"], field, taxon)
         for record in records
         for field, taxon in taxon_claims(record)
-        if taxon in NON_ORGANISM_TAXA
+        if taxon in forbidden
     ]
     assert not offenders, f"taxon claims on non-organism nodes: {offenders[:6]}"
 

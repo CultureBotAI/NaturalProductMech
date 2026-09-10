@@ -55,7 +55,7 @@ by grounding status:
   REVIEW_NEEDED                           9
 
 field coverage (records carrying at least one item):
-  producer_organisms                   3113
+  producer_organisms                   3076
   occurrences                          2342
   biosynthetic_gene_clusters           3115
   biosynthetic_pathway                    0
@@ -64,12 +64,12 @@ field coverage (records carrying at least one item):
   molecular_targets                      14
   causal_graphs                           0
   related_records                       205
-  discussions                           288
+  discussions                           321
 
-producer claims: 3446 (805 causal, 171 correlational)
+producer claims: 3407 (805 causal, 162 correlational)
   BGC_CHARACTERIZED                     805
-  BGC_CORRELATED                        171
-  SOURCE_ASSERTION                     2470
+  BGC_CORRELATED                        162
+  SOURCE_ASSERTION                     2440
 
 cluster link claims: 3449 (1352 demonstrated)
   CLUSTER_CORRELATED                    110
@@ -78,6 +78,7 @@ cluster link claims: 3449 (1352 demonstrated)
   CLUSTER_UNSTATED                     1985
 
 records where a producer taxon is independently corroborated by a cited occurrence: 732
+records whose only origin evidence is a gene cluster with no named host: 27
 
 These grade two different questions and they come apart. A producer
 claim says this TAXON makes the compound; a cluster link says this

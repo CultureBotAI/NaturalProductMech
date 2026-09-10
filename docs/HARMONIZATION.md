@@ -143,13 +143,37 @@ rather than an extraction, and `Occurrence.taxon_id` is required so that it
 cannot slip through. That rule was written down after the guarded write path
 refused 1,146 such rows.
 
-**A producer needs an organism, and two NCBI nodes are not one.** MIBiG
-assigns `NCBITaxon:12908` ("unclassified sequences") when a cluster came from a
-metagenome or an unnamed isolate; three 4.0 entries do, with labels like
-`Unknown. Unclassified.`. A producer claim on that node asserts a producer
-while naming none, and every gate passes it — the CURIE is valid, the label is
-non-empty, one label per id. So the extractor blanks the taxon and the seeder
-writes no producer for that row (#62).
+**A producer needs an organism, and some NCBI nodes are not one.** A producer
+claim on `NCBITaxon:12908` ("unclassified sequences") or `NCBITaxon:77133`
+("uncultured bacterium") asserts a producer while naming none, and every gate
+passes it — the CURIE is valid, the label is non-empty, one label per id. 42
+claims did (#62, #68). So the seeder writes no producer for them.
+
+`data/raw/taxon_non_organism.tsv` is the decision, derived from NCBI's own tree
+by `just extract-taxonomy` rather than listed by hand, and restricted to taxa
+the adopted sources use. Three ways a taxon lands in it:
+
+- **structural** — the root, the rank above the domains, and NCBI's two bins,
+  `unclassified sequences` and `unidentified`;
+- **a non-organism subtree** — anything under `metagenomes` (a community, not
+  an organism: `sponge metagenome`) or under `unclassified sequences`
+  (`synthetic microbial community`);
+- **a generic bin** — `uncultured bacterium` and `uncultured organism`.
+
+The last needs its reason stated, because no lineage rule finds it. NCBI files
+`uncultured bacterium` under an `environmental samples` wrapper directly beneath
+the domain Bacteria — and files `uncultured bacterium AR_456` in *exactly* the
+same place. The difference is not the tree, it is what a join on the id would
+mean. 36 producer claims here point at `77133`, so treating it as an organism
+says one bacterium makes 36 unrelated compounds. `AR_456` has its own taxid for
+one clone lineage, and two records citing it agree about something. So the
+generic bins are withheld and the specific uncultured clones are kept — 39
+withheld, 29 kept — along with genus-level placements like `uncultured
+Candidatus Entotheonella sp.`, which name a real taxon and are the state of the
+art for sponge symbionts.
+
+The claim is judged on the id the record would carry, after merged ids are
+rewritten forward, so an id NCBI retired *into* a bin is caught as a bin.
 
 What it does **not** do is drop the compound. MIBiG is the only source that
 *admits* a structure — ChEBI grounds one but cannot hold a record alone — so
@@ -157,10 +181,17 @@ dropping the row would have deleted elaiophylin, a record carrying 25
 occurrences, five bioactivities and an AntibioticMech link, over one unnamed
 producer. A characterized cluster is an origin assertion whether or not its
 host has a name; pederin's real producer is an uncultured symbiont, which is
-exactly why MIBiG says 12908. The compound, its structure and its cluster stay,
-the cluster carries no organism, and an `unnamed-producer` CURATION_TODO says
-why. Softer placeholders that *are* real nodes — `uncultured bacterium`,
-`sponge metagenome` — are a separate and larger question (#68).
+exactly why MIBiG says 12908 for one of its three clusters and `uncultured
+bacterium` for the other two. The compound, its structure and its cluster stay,
+the cluster carries no organism, and an `unnamed-producer` CURATION_TODO names
+each accession and why its taxon was refused. Pederin keeps all three gene
+clusters — including the one graded `CLUSTER_DEMONSTRATED` — and loses all
+three producer claims, which is exactly the producer/locus split this corpus
+exists to keep: the locus claim survives its host being anonymous.
+
+The inventories keep what the source said. `mibig_compounds.tsv` still records
+`NCBITaxon:12908`; withholding is a decision the seeder makes at write time,
+not an erasure of provenance.
 
 **A merged taxon id is rewritten, not rejected.** MIBiG assigns taxids at
 submission and LOTUS carries them from Wikidata, so both supply ids NCBI has
