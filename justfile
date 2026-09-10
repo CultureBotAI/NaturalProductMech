@@ -46,6 +46,10 @@ extract-chebi-dry *args:
 extract-chebi *args:
     uv run python scripts/extract_chebi.py {{args}}
 
+# Free check: what the sibling pin would emit, from the checkout, writing nothing.
+extract-antibioticmech-dry *args:
+    uv run python scripts/extract_antibioticmech.py --dry-run {{args}}
+
 # Pin the sibling corpus's structures so cross-corpus links reproduce offline.
 extract-antibioticmech *args:
     uv run python scripts/extract_antibioticmech.py {{args}}

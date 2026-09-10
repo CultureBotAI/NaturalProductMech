@@ -34,6 +34,12 @@ pieces named as available that were never built.
   check stops `vendored-sync` before it compares bytes, and only two of the
   thirteen fleet-wide artifacts are hash-pinned in `tests/test_schema.py`. A
   committed manifest snapshot at the pinned ref would close this offline.
+- **#55 — `uv.lock` is not committed and CI syncs unlocked.** `verify-corpus`
+  proves reproduction under whatever environment is installed today. Commit
+  the lockfile; run CI with `--locked`.
+- **#57 — `just new-history` does not exist.** The vendored curation-history
+  contract names it; TraitMech and HabitatMech have it. Port the fleet's
+  recipe rather than invent one. Nothing to scaffold until M6 starts.
 
 ## Fleet
 

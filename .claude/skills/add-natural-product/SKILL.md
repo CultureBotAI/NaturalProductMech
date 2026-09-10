@@ -226,8 +226,9 @@ just source-queue
 just provenance-check
 ```
 
-`pages/**` and `data/embeddings/chemical-structure-map.json` are generated.
-Rebuild them; do not edit them by hand.
+Once the site exists (#53), `pages/**` and
+`data/embeddings/chemical-structure-map.json` are generated: rebuild them, do
+not edit them by hand.
 
 ## Report
 
