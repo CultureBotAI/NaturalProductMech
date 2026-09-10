@@ -105,8 +105,13 @@ in the extractor or seeder, and curator decisions in `curation/decisions.tsv`.
 runs closed-schema validation before writing. Every mutation must also append a
 `CurationEvent` via `naturalproductmech.curate.curation_event.record_curation_event`.
 
-**Re-emitting an unchanged record must be byte-identical.** Preserve the YAML
-emission contract enforced by `tests/test_write_validated.py`.
+**Re-emitting an unchanged record must be byte-identical**, timestamp
+included. Two things enforce it: the YAML emission contract in
+`tests/test_write_validated.py`, and the seeder's rule that a record whose
+seeder-owned content is unchanged keeps the `curation_history` it already had
+(#69). `just seed-apply` on an unchanged corpus writes 3,115 records and
+changes zero files, so a PR that changes three records shows three changed
+files. Before that rule, every re-seed re-stamped all 3,115.
 
 **There is no site yet.** `src/naturalproductmech/templates/` is empty and
 `pages/` does not exist (#53). When the renderer lands the rule is

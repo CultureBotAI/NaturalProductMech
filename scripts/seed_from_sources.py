@@ -1092,9 +1092,26 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     return records
 
 
+def read_record(path: Path) -> dict[str, Any] | None:
+    """The record already on disk, or None when there is not one yet."""
+    if not path.exists():
+        return None
+    try:
+        return yaml.safe_load(path.read_text(encoding="utf-8"))
+    except yaml.YAMLError:
+        # A record too broken to parse is a record to rewrite, not to crash on.
+        return None
+
+
+def seeder_owned(record: dict[str, Any]) -> dict[str, Any]:
+    """``record`` without the trail the seeder is deciding whether to add."""
+    return {k: v for k, v in record.items() if k != "curation_history"}
+
+
 def write_records(records: list[dict[str, Any]], *, only: str | None = None,
                   limit: int | None = None) -> int:
     written = 0
+    unchanged = 0
     rows: list[dict[str, str]] = []
     for doc in records:
         if only and doc["identifier"] != only:
@@ -1105,12 +1122,25 @@ def write_records(records: list[dict[str, Any]], *, only: str | None = None,
         pathway = doc["np_pathway"]
         path = record_path(pathway, slug)
         payload = {k: v for k, v in doc.items() if not k.startswith(INTERNAL_PREFIX)}
-        record_curation_event(
-            payload,
-            curator="seed_from_sources",
-            action="SEEDED_FROM_SOURCES",
-            changes="Seeded from the committed inventories in data/raw/.",
-        )
+
+        # Stamp a curation event only when the seeder-owned content actually
+        # changed. The seeder rebuilds every record from scratch, so the
+        # history was recreated with a fresh timestamp on every run and all
+        # 3,115 records re-emitted differently — a corpus PR that changed
+        # three records still showed 3,115 changed files, which is not a diff
+        # anyone can review (#69). The timestamp now means what it says: when
+        # this content was last produced, not when the seeder last ran.
+        previous = read_record(path)
+        if previous is not None and seeder_owned(previous) == payload:
+            payload["curation_history"] = previous.get("curation_history", [])
+            unchanged += 1
+        else:
+            record_curation_event(
+                payload,
+                curator="seed_from_sources",
+                action="SEEDED_FROM_SOURCES",
+                changes="Seeded from the committed inventories in data/raw/.",
+            )
         try:
             write_validated_natural_product(payload, path)
         except ValidationFailedError as exc:
@@ -1126,6 +1156,8 @@ def write_records(records: list[dict[str, Any]], *, only: str | None = None,
     # A partial run must not rewrite the whole lockfile: it would drop every
     # record the run did not touch. `--prune` is already refused on a partial
     # run for the same reason.
+    print(f"records written: {written} ({unchanged} unchanged, so their curation "
+          f"timestamp is left alone)", file=sys.stderr)
     if rows and only is None and limit is None:
         write_lockfile(rows)
     elif rows:
