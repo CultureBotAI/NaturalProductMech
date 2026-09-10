@@ -125,6 +125,12 @@ decision in a PR, not a side effect of a refresh.
 **Do not prune on a partial run.** `--prune` with `--only` or `--limit` is
 refused.
 
+**The environment is pinned.** `uv.lock` is committed and both `just install`
+and CI sync `--locked`, so a lock out of step with `pyproject.toml` fails
+instead of being re-resolved. After changing a dependency, run `uv lock` and
+commit the lockfile in the same PR; `verify-corpus` only proves reproduction
+under the environment the lock names.
+
 **Treat extractor drift as evidence to inspect.** `data/raw/MANIFEST.yaml`
 records the sha256 of every upstream file and every emitted inventory.
 `just provenance-check` after any change to `data/raw/`.

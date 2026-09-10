@@ -37,8 +37,11 @@ jobs:
       - name: Set up Python
         run: uv python install ${{ matrix.python-version }}
 
+      # --locked: the committed uv.lock is the environment the corpus is
+      # proven to reproduce under. A lock out of step with pyproject.toml
+      # fails here rather than being silently re-resolved (#55).
       - name: Install dependencies
-        run: uv sync --extra dev
+        run: uv sync --locked --extra dev
 
       # One executable definition of QC: lint, documentation statistics,
       # raw-data provenance, source queue, tests, closed-schema validation,
