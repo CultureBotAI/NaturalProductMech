@@ -16,7 +16,7 @@ Companion documents written the same day:
   curator, never automatic input.
 - `curation/source_queue.tsv` — the ranked source queue seeded from that
   report. Nothing is `ADOPTED` yet; adoption is a pull request per source.
-- `.claude/skills/` — the four AntibioticMech skills adapted to this corpus.
+- `.claude/skills/` — the repository-local skills adapted to this corpus.
 - `CLAUDE.md` — operational guidance for editing agents, written ahead of the
   code so the scaffold is built to it rather than documented after.
 
@@ -451,7 +451,7 @@ NaturalProductMech/
   data/natural_products/PATHS.tsv  RETIRED.tsv
   src/naturalproductmech/{schema,curate,validation}/   # templates/ empty until #53
   scripts/  tests/  research/  docs/{HARMONIZATION,CURATION}.md   # pages/ owed (#53)
-  .claude/skills/{add-natural-product,curate-yaml-record,source-queue,review-open-issues}
+  .claude/skills/
   .github/workflows/main.yaml     # vendored-sync joins the gate at M4 admission
 ```
 
@@ -467,8 +467,8 @@ Each milestone is one or more PRs on a branch, reviewed adversarially, with
 findings filed as issues, per the standing git workflow. Nothing merges without
 the owner's go-ahead.
 
-**M0 — Plan, research, skills (this PR).** `PLAN.md`, the research report,
-the seeded source queue, the four skills, `CLAUDE.md`. No code.
+**M0 — Plan, research, skills.** `PLAN.md`, the research report, the seeded
+source queue, the repository-local skills, `CLAUDE.md`. No code.
 
 **M1 — Scaffold.** Copy AntibioticMech at its current commit, rename package
 and prefixes, strip antimicrobial-specific code paths (ARO extractor,

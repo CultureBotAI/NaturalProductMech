@@ -152,6 +152,15 @@ def canonical_xref(value: str) -> str:
     prefix, _, local = value.partition(":")
     return f"{XREF_PREFIX_CANON.get(prefix, prefix)}:{local}"
 
+
+# PubChem's "Target Accession" is a depositor-controlled field. It can hold
+# UniProtKB accessions, RefSeq proteins, GenPept proteins, or PDB chains such
+# as 2HDS_A; only the first can be carried into a UniProtKB CURIE.
+UNIPROT_ACCESSION_RE = re.compile(
+    r"^(?:[OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9][A-Z][A-Z0-9]{2}[0-9]"
+    r"(?:[A-Z][A-Z0-9]{2}[0-9])?)$"
+)
+
 # How many occurrences reach a record. The INVENTORY keeps all of them, so
 # nothing is lost and the corpus still reproduces; this bounds what a curator
 # has to read. Without it lupeol carried 925 occurrences in a 397 KB file,
@@ -206,10 +215,44 @@ def choose_pathway(pathway_results: list[str]) -> str:
 # must contain only schema fields, and closed validation would reject the rest.
 INTERNAL_PREFIX = "_"
 
+CURATOR_OWNED_CARRIED_FIELDS = (
+    "biosynthetic_pathway",
+    "causal_graphs",
+)
+
 
 def record_path(pathway: str, slug: str) -> Path:
     """Where a record lives. The directory IS the filing decision."""
     return CORPUS_DIR / PATHWAY_DIRS.get(pathway, "unclassified") / f"{slug}.yaml"
+
+
+def _standard_inchi_key(doc: dict[str, Any]) -> str | None:
+    chemical_structure = doc.get("chemical_structure") or {}
+    if not isinstance(chemical_structure, dict):
+        return None
+    value = chemical_structure.get("standard_inchi_key")
+    return value if isinstance(value, str) else None
+
+
+def carry_curator_owned_fields(payload: dict[str, Any], existing: dict[str, Any]) -> None:
+    """Carry graph curation across a re-seed of the same chemical structure."""
+    standard_inchi_key = _standard_inchi_key(payload)
+    if not standard_inchi_key or standard_inchi_key != _standard_inchi_key(existing):
+        return
+
+    for field in CURATOR_OWNED_CARRIED_FIELDS:
+        if field in existing:
+            payload[field] = existing[field]
+    if "curation_history" in existing:
+        payload["curation_history"] = existing["curation_history"]
+
+
+def carry_existing_curator_owned_fields(payload: dict[str, Any], path: Path) -> None:
+    if not path.exists():
+        return
+    existing = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    if isinstance(existing, dict):
+        carry_curator_owned_fields(payload, existing)
 
 
 def read_inventories() -> dict[str, list[dict[str, str]]]:
@@ -855,8 +898,14 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 # A single-concentration screening hit is a CALL, never a
                 # potency — docs/CURATION.md is explicit about it.
                 observation["call"] = "ACTIVE"
-            if row["target_accession"]:
-                observation["target_enzyme"] = f"UniProtKB:{row['target_accession']}"
+            target_accession = row["target_accession"].strip()
+            if target_accession and UNIPROT_ACCESSION_RE.fullmatch(target_accession):
+                observation["target_enzyme"] = f"UniProtKB:{target_accession}"
+            elif target_accession:
+                observation["evidence"][0]["notes"] += (
+                    f" Target accession {target_accession} was left ungrounded because "
+                    "PubChem did not provide a UniProtKB accession."
+                )
             activity_class = classify_activity(row["assay_name"])
             if activity_class:
                 observation["activity_class"] = activity_class
@@ -1161,6 +1210,7 @@ def write_records(records: list[dict[str, Any]], *, only: str | None = None,
         pathway = doc["np_pathway"]
         path = record_path(pathway, slug)
         payload = {k: v for k, v in doc.items() if not k.startswith(INTERNAL_PREFIX)}
+        carry_existing_curator_owned_fields(payload, path)
 
         # Stamp a curation event only when the seeder-owned content actually
         # changed. The seeder rebuilds every record from scratch, so the
@@ -1170,7 +1220,7 @@ def write_records(records: list[dict[str, Any]], *, only: str | None = None,
         # anyone can review (#69). The timestamp now means what it says: when
         # this content was last produced, not when the seeder last ran.
         previous = read_record(path)
-        if previous is not None and seeder_owned(previous) == payload:
+        if previous is not None and seeder_owned(previous) == seeder_owned(payload):
             payload["curation_history"] = previous.get("curation_history", [])
             unchanged += 1
         else:

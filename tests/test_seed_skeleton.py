@@ -340,6 +340,102 @@ CHEBI_ROW = {
 }
 
 
+def test_reseed_carries_curated_biosynthesis_graphs(monkeypatch, tmp_path):
+    """Curated graphs live beside seeded fields and must survive `seed-apply`."""
+    corpus_dir = tmp_path / "data" / "natural_products"
+    monkeypatch.setattr(seed, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(seed, "CORPUS_DIR", corpus_dir)
+    monkeypatch.setattr(seed, "PATHS_FILE", corpus_dir / "PATHS.tsv")
+
+    generated = seed.build_records({"mibig_compounds": [MIBIG_ROW]})[0]
+    path = seed.record_path(generated["np_pathway"], generated["_slug"])
+    existing = {
+        k: v for k, v in generated.items() if not k.startswith(seed.INTERNAL_PREFIX)
+    }
+    existing["biosynthetic_pathway"] = [{
+        "step_number": 1,
+        "enzyme_id": "UniProtKB:A4F7P5",
+        "enzyme_label": "EryG",
+        "reaction_id": "RHEA:32647",
+        "product": "CHEBI:42355",
+        "evidence": [{
+            "reference": "DOI:10.1128/jb.172.5.2541-2546.1990",
+            "evidence_type": "PRIMARY_EXPERIMENT",
+        }],
+    }]
+    existing["causal_graphs"] = [{
+        "graph_id": "erythromycin-a-biosynthesis",
+        "scope": "BIOSYNTHESIS",
+        "nodes": [
+            {
+                "node_id": "eryg",
+                "label": "EryG",
+                "node_type": "ENZYME",
+                "identifier": "UniProtKB:A4F7P5",
+                "grounding_status": "GROUNDED",
+            },
+            {
+                "node_id": "erythromycin_a",
+                "label": "erythromycin A",
+                "node_type": "COMPOUND",
+                "identifier": "CHEBI:42355",
+                "grounding_status": "GROUNDED",
+            },
+        ],
+        "edges": [{
+            "subject": "eryg",
+            "predicate": "catalyzes",
+            "object": "erythromycin_a",
+            "evidence": [{
+                "reference": "DOI:10.1128/jb.172.5.2541-2546.1990",
+                "evidence_type": "PRIMARY_EXPERIMENT",
+            }],
+        }],
+    }]
+    existing["curation_history"] = [{
+        "timestamp": "2026-09-09T00:00:00Z",
+        "curator": "codex",
+        "action": "RECORD_CURATED",
+        "changes": "Added a curated biosynthesis graph.",
+        "llm_assisted": True,
+    }]
+    seed.write_validated_natural_product(existing, path)
+
+    assert seed.write_records([generated]) == 1
+
+    reloaded = yaml.safe_load(path.read_text(encoding="utf-8"))
+    assert reloaded["biosynthetic_pathway"] == existing["biosynthetic_pathway"]
+    assert reloaded["causal_graphs"] == existing["causal_graphs"]
+    assert reloaded["curation_history"] == existing["curation_history"]
+
+
+def test_curated_graphs_are_not_carried_to_a_different_structure():
+    payload = {"chemical_structure": {"standard_inchi_key": "NEW"}}
+    existing = {
+        "chemical_structure": {"standard_inchi_key": "OLD"},
+        "biosynthetic_pathway": [{"step_number": 1}],
+        "causal_graphs": [{"graph_id": "old", "scope": "BIOSYNTHESIS"}],
+        "curation_history": [{"action": "RECORD_CURATED"}],
+    }
+
+    seed.carry_curator_owned_fields(payload, existing)
+
+    assert payload == {"chemical_structure": {"standard_inchi_key": "NEW"}}
+
+
+def test_curated_graphs_are_not_carried_without_structure_keys():
+    payload = {"label": "new"}
+    existing = {
+        "biosynthetic_pathway": [{"step_number": 1}],
+        "causal_graphs": [{"graph_id": "old", "scope": "BIOSYNTHESIS"}],
+        "curation_history": [{"action": "RECORD_CURATED"}],
+    }
+
+    seed.carry_curator_owned_fields(payload, existing)
+
+    assert payload == {"label": "new"}
+
+
 def test_a_matching_chebi_entry_grounds_the_record():
     doc = seed.build_records({
         "mibig_compounds": [MIBIG_ROW], "chebi_structures": [CHEBI_ROW],
@@ -648,6 +744,39 @@ def test_an_unclassifiable_assay_yields_no_summary_rather_than_a_guess():
     assert doc["bioactivities"][0]["call"] == "ACTIVE"
     assert "activity_class" not in doc["bioactivities"][0]
     assert "bioactivity_summary" not in doc
+
+
+def test_pubchem_pdb_chain_accessions_are_not_relabelled_as_uniprot():
+    """PubChem Target Accession can be a PDB chain, RefSeq, GenPept, or UniProt."""
+    row = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "cid": "702", "aid": "1",
+        "assay_name": "qHTS Inhibitors of AmpC Beta-Lactamase", "assay_type": "Confirmatory",
+        "depositor": "NCGC", "activity_outcome": "Active", "activity_name": "IC50",
+        "activity_value_um": "2.5", "target_accession": "2HDS_A", "reference": "",
+    }
+
+    observation = seed.build_records({"mibig_compounds": [MIBIG_ROW], "pubchem_bioassay": [row]})[
+        0
+    ]["bioactivities"][0]
+
+    assert "target_enzyme" not in observation
+    assert "PubChem did not provide a UniProtKB accession" in observation["evidence"][0]["notes"]
+
+
+def test_pubchem_uniprot_accessions_stay_as_uniprot_curies():
+    row = {
+        "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N", "cid": "702", "aid": "1",
+        "assay_name": "Low Molecular Weight Protein Tyrosine Phosphatase inhibition",
+        "assay_type": "Confirmatory", "depositor": "NCGC", "activity_outcome": "Active",
+        "activity_name": "IC50", "activity_value_um": "2.5",
+        "target_accession": " P24666 ", "reference": "",
+    }
+
+    observation = seed.build_records({"mibig_compounds": [MIBIG_ROW], "pubchem_bioassay": [row]})[
+        0
+    ]["bioactivities"][0]
+
+    assert observation["target_enzyme"] == "UniProtKB:P24666"
 
 
 def test_a_sibling_link_supplies_the_class_and_nothing_else():
