@@ -90,3 +90,37 @@ def test_a_misspelt_target_key_is_rejected(tmp_path, bad_key):
     broken.write_text(yaml.safe_dump(cfg, allow_unicode=True), encoding="utf-8")
     with pytest.raises(SystemExit):
         validator.load_config(broken)
+
+
+def test_the_taxonomy_adapter_covers_every_taxon_the_corpus_names():
+    """`corpus_taxa.obo` is the id-label gate's NCBITaxon adapter (#64). A
+    taxon the corpus names that is missing from it would be reported as
+    ID_NOT_FOUND — a fatal verdict at any severity — for a record that is
+    perfectly good. The OBO is deliberately a superset of the corpus, so this
+    should hold with room to spare; the test is here because a re-seed that
+    introduced a new taxon without re-running the taxonomy extractor is
+    exactly how it would stop holding.
+    """
+    obo = REPO_ROOT / "data" / "raw" / "corpus_taxa.obo"
+    assert obo.exists(), "corpus_taxa.obo missing; run `just extract-taxonomy`"
+    covered = {line[len("id: "):].strip()
+               for line in obo.read_text(encoding="utf-8").splitlines()
+               if line.startswith("id: ")}
+
+    named: set[str] = set()
+    for path in (REPO_ROOT / "data" / "natural_products").rglob("*.yaml"):
+        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
+        for field, key in (("producer_organisms", "taxon_id"),
+                           ("occurrences", "taxon_id"),
+                           ("biosynthetic_gene_clusters", "organism_taxon_id"),
+                           ("molecular_targets", "taxon_id"),
+                           ("bioactivities", "target_organism_id")):
+            for item in doc.get(field) or []:
+                if item.get(key):
+                    named.add(item[key])
+
+    missing = sorted(named - covered)
+    assert not missing, (
+        f"{len(missing)} taxa the corpus names are absent from the gate's adapter, "
+        f"so they would report ID_NOT_FOUND: {missing[:6]}"
+    )

@@ -252,6 +252,29 @@ and the sources disagree about configuration. Actinorhodin is not —
 so two databases hold molecules that are not the same compound under one name.
 That one is worth reporting upstream.
 
+**Every organism the corpus names is now checked against NCBI's own names.**
+The taxon surface — producers, occurrences, gene-cluster hosts, assay organisms,
+about 13,700 (id, label) pairs — was the corpus's largest and went unchecked,
+because OAK's only NCBITaxon adapter is a 13.5 GB build no CI cache can hold.
+`data/raw/corpus_taxa.obo` replaces it: the same names from the same taxdump the
+corpus already resolves against, emitted for the taxa the adopted sources can
+supply and committed at about 3 MB (#64).
+
+It is deliberately a superset of what the corpus holds. A taxon a later re-seed
+introduces is already in the file, so the gate cannot start reporting
+`ID_NOT_FOUND` for a record that is perfectly good, and a test asserts the
+coverage holds. It is drawn from the upstream taxdump rather than the committed
+inventories, because three extractors consume `taxon_names.tsv` and reading
+their outputs here would make a cold rebuild circular.
+
+The first run put 13,550 pairs on the right side and 499 on the wrong one, so
+the taxon target starts at `severity: warn` — the fleet's report-then-enforce
+onboarding — while `ID_NOT_FOUND` stays fatal at any severity. The 499 are not
+one problem: two thirds are source granularity (MIBiG names a strain and
+assigns the species taxid), a quarter are typos and gender agreement in the
+source, and 34 name a different genus, which is where a wrong identifier hides
+(#83).
+
 **Three MIBiG fields that do not mean what they look like**, all verified
 against the 4.0 release:
 
