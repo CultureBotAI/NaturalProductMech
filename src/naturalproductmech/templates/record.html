@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+{% block title %}{{ r.label }} — NaturalProductMech{% endblock %}
+{% block content %}
+<h1>{{ r.label }}</h1>
+<p class="sub"><span class="mono">{{ r.identifier }}</span>
+  <span class="tag">{{ r.grounding_status }}</span>
+  <span class="tag">{{ r.curation_status }}</span>
+  {% for value in r.bioactivity_summary %}<span class="tag">{{ value|lower|replace('_',' ') }}</span>{% endfor %}
+</p>
+{% if r.definition %}<p>{{ r.definition }}</p>{% endif %}
+
+<h2>Structure</h2>
+<div class="scroll"><table>
+<tr><th>Standard InChIKey</th><td class="mono">{{ r.structure.standard_inchi_key }}</td></tr>
+<tr><th>SMILES</th><td class="mono">{{ r.structure.smiles }}</td></tr>
+<tr><th>Stereochemistry</th><td>{% if r.structure.stereo_complete %}fully defined{% else %}
+  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
+  distinguish this compound from its stereoisomers{% endif %}</td></tr>
+{% if r.xrefs %}<tr><th>Cross-references</th><td class="mono">{{ r.xrefs|join(', ') }}</td></tr>{% endif %}
+</table></div>
+
+<h2>Filing pathway</h2>
+<p><a href="index.html">{{ r.pathway_title }}</a>{% if r.classification %} —
+computed by {{ r.classification.tool }} {{ r.classification.tool_version }},
+which is why it is pinned rather than recomputed{% endif %}.
+{% if r.bgc_class %} The gene cluster's asserted class is
+{{ r.bgc_class|join(', ')|lower }}, from MIBiG.{% endif %}</p>
+
+<h2>Producer organisms <span class="tag">{{ r.producers|length }}</span></h2>
+{% if r.producers %}
+<p class="sub">A claim that this taxon <em>makes</em> the compound. The basis says
+what the evidence addressed — a knockout and a database assertion are not the
+same claim.</p>
+<div class="scroll"><table>
+<tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
+{% for p in r.producers %}
+<tr>
+  <td>{{ p.taxon_label }}<br><span class="mono">{{ p.taxon_id }}</span></td>
+  <td><span class="tag {{ 'causal' if p.causal else 'weak' }}">{{ p.evidence_basis }}</span></td>
+  <td class="mono">{{ p.biosynthetic_gene_cluster or '' }}</td>
+  <td>{% for e in p.evidence %}<span class="mono">{{ e.reference }}</span>{% if not loop.last %}, {% endif %}{% endfor %}</td>
+</tr>
+{% endfor %}
+</table></div>
+{% else %}
+<p class="sub">None. {% if r.clusters %}The compound has a characterized gene
+cluster whose host NCBI does not name, which for an uncultured symbiont is the
+honest state — see the discussion below.{% else %}No source asserts that a named
+organism makes this compound.{% endif %}</p>
+{% endif %}
+
+<h2>Occurrences <span class="tag">{{ r.occurrences|length }}</span></h2>
+{% if r.occurrences %}
+<p class="sub">Somebody found the compound in this organism and cited it. That is
+not a claim that the organism makes it, and nothing here promotes one to the other.</p>
+<div class="scroll"><table>
+<tr><th>Taxon</th><th>Source</th><th>Reference</th></tr>
+{% for o in r.occurrences %}
+<tr>
+  <td>{{ o.taxon_label }}<br><span class="mono">{{ o.taxon_id or '' }}</span></td>
+  <td>{{ o.source }}</td>
+  <td class="mono">{{ o.reference }}</td>
+</tr>
+{% endfor %}
+</table></div>
+{% if r.occurrences_capped %}
+<p class="sub">Showing {{ r.occurrences|length }} of {{ r.occurrences_capped }}.
+The record caps what it carries so a curator can read it; the inventories in
+<span class="mono">data/raw/</span> keep every one.</p>
+{% endif %}
+{% else %}<p class="sub">None cited.</p>{% endif %}
+
+{% if r.clusters %}
+<h2>Biosynthetic gene clusters <span class="tag">{{ r.clusters|length }}</span></h2>
+<div class="scroll"><table>
+<tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
+{% for c in r.clusters %}
+<tr>
+  <td class="mono">{{ c.accession }}</td>
+  <td>{% if c.organism_label %}{{ c.organism_label }}<br><span class="mono">{{ c.organism_taxon_id }}</span>
+      {% else %}<span class="tag weak">not named</span>{% endif %}</td>
+  <td><span class="tag {{ 'causal' if c.demonstrated else '' }}">{{ c.link_evidence_basis or 'CLUSTER_UNSTATED' }}</span></td>
+  <td class="mono">{{ c.genome_accession or '' }}</td>
+</tr>
+{% endfor %}
+</table></div>
+<p class="sub">A locus claim and a taxon claim are different questions.
+Heterologous expression settles the first and leaves the second where the
+isolation report left it.</p>
+{% endif %}
+
+{% if r.pathway_steps %}
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+{% for s in r.pathway_steps %}
+<tr>
+  <td>{{ s.step_number }}</td>
+  <td>{{ s.enzyme_label }}{% if s.enzyme_id %}<br><span class="mono">{{ s.enzyme_id }}</span>{% endif %}</td>
+  <td class="mono">{{ s.reaction_id or '' }}</td>
+  <td class="mono">{{ s.substrate or '' }} &rarr; {{ s.product or '' }}</td>
+  <td class="mono">{{ s.reference }}</td>
+</tr>
+{% endfor %}
+</table></div>
+{% for s in r.pathway_steps %}{% if s.notes %}<p class="sub">Step {{ s.step_number }}: {{ s.notes }}</p>{% endif %}{% endfor %}
+{% endif %}
+
+{% for g in r.graphs %}
+<h2>Causal graph &mdash; {{ g.scope|lower }} <span class="tag">{{ g.nodes|length }} nodes, {{ g.edges|length }} edges</span></h2>
+{% if g.description %}<p class="sub">{{ g.description }}</p>{% endif %}
+<div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Evidence</th></tr>
+{% for e in g.edges %}
+<tr>
+  <td>{{ e.subject_label }}</td>
+  <td>{{ e.predicate }}</td>
+  <td>{{ e.object_label }}</td>
+  <td class="mono">{{ e.reference }}</td>
+</tr>
+{% endfor %}
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+{% endfor %}
+
+{% if r.targets %}
+<h2>Molecular targets <span class="tag">{{ r.targets|length }}</span></h2>
+<div class="scroll"><table>
+<tr><th>Target</th><th>Assay organism</th><th>Measurement</th><th>Reference</th></tr>
+{% for t in r.targets %}
+<tr>
+  <td>{{ t.target_label }}{% if t.protein_examples %}<br><span class="mono">{{ t.protein_examples|join(', ') }}</span>{% endif %}</td>
+  <td>{{ t.taxon_label or '' }}{% if t.taxon_id %}<br><span class="mono">{{ t.taxon_id }}</span>{% endif %}</td>
+  <td>{{ t.measurement }}</td>
+  <td class="mono">{{ t.reference }}</td>
+</tr>
+{% endfor %}
+</table></div>
+{% endif %}
+
+{% if r.bioactivities %}
+<h2>Bioactivities <span class="tag">{{ r.bioactivity_total }}</span></h2>
+<div class="scroll"><table>
+<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
+{% for b in r.bioactivities %}
+<tr><td>{{ b.assay }}</td><td>{{ b.result }}</td><td class="mono">{{ b.reference }}</td></tr>
+{% endfor %}
+</table></div>
+{% endif %}
+
+{% if r.related %}
+<h2>Elsewhere in the fleet</h2>
+<ul>{% for link in r.related %}
+<li>{{ link.corpus }} — <span class="mono">{{ link.identifier }}</span>
+    ({{ link.relation|lower|replace('_',' ') }}, {{ link.basis|lower|replace('_',' ') }})</li>
+{% endfor %}</ul>
+{% endif %}
+
+{% if r.discussions %}
+<h2>Open questions <span class="tag">{{ r.discussions|length }}</span></h2>
+{% for d in r.discussions %}
+<div class="note"><p><strong>{{ d.discussion_id }}</strong> — {{ d.prompt }}</p></div>
+{% endfor %}
+{% endif %}
+
+<h2>Provenance</h2>
+<div class="scroll"><table>
+<tr><th>Source concept</th><th>Source</th><th>Version</th></tr>
+{% for s in r.source_concepts %}
+<tr><td class="mono">{{ s.source_id }}</td><td>{{ s.source }}</td><td>{{ s.source_version }}</td></tr>
+{% endfor %}
+</table></div>
+<p class="sub">This page is generated from
+<span class="mono">{{ r.record_path }}</span>, which is generated from the
+committed inventories. Neither is edited by hand.</p>
+{% endblock %}

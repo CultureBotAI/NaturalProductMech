@@ -200,6 +200,15 @@ worklist *args:
 review-queue *args:
     uv run python scripts/curation_worklist.py --limit 0 {{args}}
 
+# Regenerate the committed site under pages/ from the corpus.
+render *args:
+    uv run python scripts/render_pages.py {{args}}
+
+# Fail if pages/ is out of step with the corpus. In the gate, because a
+# committed site goes stale exactly as a committed record could.
+render-check:
+    uv run python scripts/render_pages.py --check
+
 # --- reporting ---------------------------------------------------------------
 # Corpus report: records per pathway, grounding, and origin-evidence coverage,
 # with producer claims split into causal and correlational.

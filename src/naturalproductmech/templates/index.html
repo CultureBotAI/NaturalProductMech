@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}NaturalProductMech{% endblock %}
+{% block content %}
+<h1>NaturalProductMech</h1>
+<p class="sub">{{ total }} natural product structures, one record per Standard
+InChIKey, harmonized from {{ source_count }} adopted sources.</p>
+
+<div class="note">
+<p><strong>A producer is not an occurrence.</strong> This corpus keeps the two
+apart because most sources do not. <em>{{ stats.producer_claims }}</em> producer
+claims say a taxon <em>makes</em> the compound, and only
+<em>{{ stats.causal }}</em> of those rest on evidence that addressed the
+organism. <em>{{ stats.occurrence_records }}</em> records carry a cited
+occurrence, which says only that someone found the compound there. Nothing
+promotes one to the other.</p>
+</div>
+
+<h2>By filing pathway</h2>
+<p class="sub">The pathway is NPClassifier's, so it is <em>computed</em>, pinned
+per record and versioned. The asserted classifications live beside it on each
+record.</p>
+<div class="grid">
+{% for pathway in pathways %}
+  <div class="card">
+    <a href="{{ pathway.slug }}/index.html">{{ pathway.title }}</a>
+    <div class="count">{{ pathway.count }} record{{ '' if pathway.count == 1 else 's' }}</div>
+  </div>
+{% endfor %}
+</div>
+
+<h2>What the corpus holds</h2>
+<div class="scroll"><table>
+<tr><th>Field</th><th>Records carrying at least one</th></tr>
+{% for name, count in coverage %}
+<tr><td class="mono">{{ name }}</td><td>{{ count }}</td></tr>
+{% endfor %}
+</table></div>
+<p class="sub">Generated {{ generated_on }}.</p>
+{% endblock %}
