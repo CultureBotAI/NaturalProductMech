@@ -209,8 +209,15 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0002095, BGC0002134.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+- discussion_id: structure-disagreement
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'MIBiG cross-references this compound to CHEBI:6426, but ChEBI holds CHEBI:6426
+    with Standard InChIKey GDBQQVLCIARPGH-ULQDDVLXSA-N and this record''s structure
+    is GDBQQVLCIARPGH-BSOSBYQFSA-N. The skeleton blocks match, so the two disagree
+    about stereochemistry: check which configuration the primary literature supports.'
 curation_history:
-- timestamp: '2026-09-10T05:54:06Z'
+- timestamp: '2026-09-10T06:18:32Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
