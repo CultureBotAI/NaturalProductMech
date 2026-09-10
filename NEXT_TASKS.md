@@ -30,10 +30,6 @@ pieces named as available that were never built.
   step. HabitatMech's config is the closest template. Expect findings on the
   first run — the seeder's name rules were tuned against ChEBI names, not
   ontology labels.
-- **#51 — governed artifacts have no drift guard before M4.** The identity
-  check stops `vendored-sync` before it compares bytes, and only two of the
-  thirteen fleet-wide artifacts are hash-pinned in `tests/test_schema.py`. A
-  committed manifest snapshot at the pinned ref would close this offline.
 - **#57 — `just new-history` does not exist.** The vendored curation-history
   contract names it; TraitMech and HabitatMech have it. Port the fleet's
   recipe rather than invent one. Nothing to scaffold until M6 starts.
@@ -43,8 +39,10 @@ pieces named as available that were never built.
 - **M4 — admission to claw.** Three PRs in claw's order (`PLAN.md` §7).
   Until then `just vendored-sync` fails on identity, by design. No issue yet.
 - **Claw pin.** `scripts/.vendored_canon_ref` follows what the other eight
-  members pin (`eeccfebe23`, #47), not claw `main`. Re-pin when the fleet does;
-  a re-pin re-vendors any governed artifact whose hash moved (#49 did one).
+  members pin (`eeccfebe23`, #47), not claw `main`. Re-pin when the fleet does.
+  A re-pin advances the ref, re-snapshots `scripts/.vendored_manifest.json`,
+  and re-vendors any governed artifact whose hash moved (#49 did one); the
+  drift test fails until all three agree.
 
 ## Sources
 
