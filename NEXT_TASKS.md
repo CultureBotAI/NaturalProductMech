@@ -25,11 +25,11 @@ pieces named as available that were never built.
 
 ## Gates that do not yet guard
 
-- **#50 — the id-label validator never runs.** Vendored, sha-pinned,
-  contract-tested, and inert: no `conf/id_label_targets.yaml`, no `run_qc.py`
-  step. HabitatMech's config is the closest template. Expect findings on the
-  first run — the seeder's name rules were tuned against ChEBI names, not
-  ontology labels.
+- **#64 — NCBITaxon labels are skipped by the id-label gate.** The corpus's
+  largest (id, label) surface, about 13,700 pairs; OAK's adapter is 13.5 GB
+  and cannot be cached in CI. Derive a corpus-scoped adapter from `names.dmp`
+  in `extract_ncbi_taxonomy.py` and point the config at it. A local run
+  already found 123 distinct mismatching pairs and 58 unknown ids (#62, #63).
 - **#57 — `just new-history` does not exist.** The vendored curation-history
   contract names it; TraitMech and HabitatMech have it. Port the fleet's
   recipe rather than invent one. Nothing to scaffold until M6 starts.
@@ -43,6 +43,24 @@ pieces named as available that were never built.
   A re-pin advances the ref, re-snapshots `scripts/.vendored_manifest.json`,
   and re-vendors any governed artifact whose hash moved (#49 did one); the
   drift test fails until all three agree.
+- **#65 — upstream: the validator's normaliser.** Eighteen of the twenty-one
+  ChEBI label exceptions are Greek letters and a Unicode minus that
+  `normalize()` does not fold. The fix is in claw; drop the entries when the
+  re-pin lands.
+
+## Corpus defects the gates did not see
+
+Found by the first id-label run (#50) and by scoping it. Each is a wrong or
+unjoinable value that `just qc` reproduces faithfully.
+
+- **#62 — three producers grounded to `NCBITaxon:12908`, unclassified
+  sequences.** A producer claim that names no organism. Refuse non-organism
+  taxids in the MIBiG extractor and in the guarded write path.
+- **#63 — 42 taxon ids are merged in NCBI Taxonomy.** Numeric ids from LOTUS
+  and MIBiG are taken as given; `merged.dmp` is never read. Emit
+  `taxon_merged.tsv` beside `taxon_names.tsv` and rewrite ids at seed time.
+- **#61 — `xrefs` say `chebi:` where the corpus says `CHEBI:`.** MIBiG's
+  spelling passed through the seeder; 54 records. Normalise at the seeder.
 
 ## Sources
 
