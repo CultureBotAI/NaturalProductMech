@@ -58,11 +58,11 @@ field coverage (records carrying at least one item):
   producer_organisms                   3076
   occurrences                          2342
   biosynthetic_gene_clusters           3115
-  biosynthetic_pathway                    0
+  biosynthetic_pathway                    1
   bioactivities                         176
   bioactivity_summary                   317
   molecular_targets                      14
-  causal_graphs                           0
+  causal_graphs                           1
   related_records                       205
   discussions                           321
 
@@ -106,7 +106,7 @@ Nothing above touches the network.
 | [docs/HARMONIZATION.md](docs/HARMONIZATION.md), [docs/CURATION.md](docs/CURATION.md) | Identity, merging and scope; decision semantics and evidence rules |
 | [research/2026-09-07-natural-product-data-sources.md](research/2026-09-07-natural-product-data-sources.md) | The verified source landscape, with the three cluster reports beside it |
 | [curation/source_queue.tsv](curation/source_queue.tsv) | 38 sources, ranked — 9 adopted — with licence status and the gap each closes |
-| [.claude/skills/](.claude/skills) | Four curation workflows adapted from AntibioticMech |
+| [.claude/skills/](.claude/skills) | Five repo-local curation workflows |
 | [src/naturalproductmech/schema/](src/naturalproductmech/schema) | The LinkML schema, closed-validated |
 | [conf/](conf) | Scope and the record budget, the producer-evidence grading, the adopted and staged sources, the sibling pin |
 

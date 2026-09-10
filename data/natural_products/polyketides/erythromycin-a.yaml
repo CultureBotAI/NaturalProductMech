@@ -176,9 +176,10 @@ bioactivities:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 1.636
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: Confirmatory fluorescence-based thiol-reactive (MSTI) qHTS assay for identification
     of artifact compounds
   evidence:
@@ -201,9 +202,10 @@ bioactivities:
   - reference: pubchem.aid:1671201
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1671201, deposited by 824; assay type Confirmatory.
+      Target accession ABI96208 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 3.4528
   units: uM
-  target_enzyme: UniProtKB:ABI96208
 - assay: Dopamine D2 receptor (DRD2) small molecule antagonists, cell-based qHTS assay
   evidence:
   - reference: pubchem.aid:1963595
@@ -216,9 +218,10 @@ bioactivities:
   - reference: pubchem.aid:1963595
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963595, deposited by 824; assay type Confirmatory.
+      Target accession AAH21195 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 52.8704
   units: uM
-  target_enzyme: UniProtKB:AAH21195
 - assay: Dose response confirmation of small molecule inhibitors of Low Molecular
     Weight Protein Tyrosine Phosphatase, LMPTP, in an orthogonal absorbance-based
     assay
@@ -226,11 +229,11 @@ bioactivities:
   - reference: pubchem.aid:652005
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 652005, deposited by Burnham Center for Chemical Genomics;
-      assay type Confirmatory.
+      assay type Confirmatory. Target accession NP_004291 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: IC50
   value: 80.0
   units: uM
-  target_enzyme: UniProtKB:NP_004291
   activity_class: ENZYME_INHIBITOR
 - assay: Dose response confirmation of small molecule inhibitors of Low Molecular
     Weight Protein Tyrosine Phosphatase, LMPTP, via a fluorescence intensity assay
@@ -249,9 +252,10 @@ bioactivities:
   - reference: pubchem.aid:504937
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504937, deposited by NCGC; assay type Confirmatory.
+      Target accession AAA58377 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 70.7946
   units: uM
-  target_enzyme: UniProtKB:AAA58377
   activity_class: ENZYME_INHIBITOR
 - assay: Luminescence Microorganism-Based Dose Confirmation HTS to Identify Compounds
     Cytotoxic to SK(-)GAS Group A Streptococcus
@@ -269,10 +273,11 @@ bioactivities:
   - reference: pubchem.aid:1902
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1902, deposited by Broad Institute; assay type Confirmatory.
+      Target accession NP_269944 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   measurement_type: EC50
   value: 0.06
   units: uM
-  target_enzyme: UniProtKB:NP_269944
   activity_class: ENZYME_INHIBITOR
 - assay: Luminescence Microorganism-Based Dose Response HTS to Identify Compounds
     Cytotoxic to Streptococcus
@@ -370,18 +375,20 @@ bioactivities:
   - reference: pubchem.aid:485294
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 485294, deposited by NCGC; assay type Confirmatory.
+      Target accession 2HDS_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 1.9953
   units: uM
-  target_enzyme: UniProtKB:2HDS_A
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Inhibitors of AmpC Beta-Lactamase (assay without detergent)
   evidence:
   - reference: pubchem.aid:485341
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 485341, deposited by NCGC; assay type Confirmatory.
+      Target accession 2HDS_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 39.8107
   units: uM
-  target_enzyme: UniProtKB:2HDS_A
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS assay for small molecule activators of the heat shock response signaling
     pathway - cell viability counter screen
@@ -480,6 +487,52 @@ biosynthetic_gene_clusters:
   - PKS
   - SACCHARIDE
   link_evidence_basis: CLUSTER_UNSTATED
+biosynthetic_pathway:
+- step_number: 10
+  enzyme_id: UniProtKB:Q00441
+  enzyme_label: EryF 6-deoxyerythronolide B hydroxylase
+  reaction_id: RHEA:40299
+  substrate: CHEBI:16089
+  product: CHEBI:27977
+  notes: 'Partial tailoring view: EryF hydroxylates 6-deoxyerythronolide B to erythronolide
+    B; uncurated glycosylation and deoxysugar steps between erythronolide B and erythromycin
+    D are intentionally omitted.'
+  evidence:
+  - reference: DOI:10.1128/jb.174.3.725-735.1992
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: EryF hydroxylated a substrate with a turnover number of 53 min-1
+    notes: UniProtKB:Q00441 resolves to eryF/SACE_0730 from Saccharopolyspora erythraea
+      NRRL 2338 and links this reaction to RHEA:40299.
+- step_number: 20
+  enzyme_id: UniProtKB:P48635
+  enzyme_label: EryK erythromycin C-12 hydroxylase
+  reaction_id: RHEA:32631
+  substrate: CHEBI:63677
+  product: CHEBI:64258
+  notes: EryK hydroxylates erythromycin D to erythromycin C. The erythromycin B branch
+    is excluded here because EryK does not accept erythromycin B efficiently.
+  evidence:
+  - reference: DOI:10.1021/bi00006a006
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: preference of the enzyme for ErD over the alternative C-12 hydroxylase
+      substrate ErB
+    notes: UniProtKB:P48635 resolves to eryK/SACE_0713 from Saccharopolyspora erythraea
+      NRRL 2338 and links this reaction to RHEA:32631.
+- step_number: 30
+  enzyme_id: UniProtKB:A4F7P5
+  enzyme_label: EryG erythromycin 3''-O-methyltransferase
+  reaction_id: RHEA:32647
+  substrate: CHEBI:64258
+  product: CHEBI:64268
+  notes: EryG methylates erythromycin C(1+) at the mycarosyl 3-O position to produce
+    erythromycin A(1+) in RHEA:32647; this NaturalProductRecord remains grounded to
+    neutral erythromycin A, CHEBI:42355.
+  evidence:
+  - reference: DOI:10.1128/jb.172.5.2541-2546.1990
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: eryG codes for the structural gene of this enzyme
+    notes: UniProtKB:A4F7P5 resolves to eryG/SACE_0728 from Saccharopolyspora erythraea
+      NRRL 2338 and links this reaction to RHEA:32647.
 source_concepts:
 - source: MIBIG
   source_id: BGC0000055
@@ -510,3 +563,113 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T05:54:38Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a partial BIOSYNTHESIS causal graph and pathway steps for the experimentally
+    characterized S. erythraea NRRL 2338 EryF, EryK and EryG tailoring reactions;
+    left DEBS core and glycosylation steps uncurated.
+  llm_assisted: true
+- timestamp: '2026-09-10T05:58:48Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Removed PubChem target accessions from erythromycin A bioactivities when
+    RefSeq, GenPept or PDB-chain values had been incorrectly stored as UniProtKB CURIEs.
+  llm_assisted: true
+- timestamp: '2026-09-10T06:08:31Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Aligned the EryG product node to the erythromycin A(1+) ChEBI participant
+    used by RHEA:32647 while leaving the record identity on neutral erythromycin A.
+causal_graphs:
+- graph_id: erythromycin-a-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Saccharopolyspora erythraea NRRL 2338 erythromycin A biosynthesis
+    graph for three curated tailoring enzymes.
+  nodes:
+  - node_id: six_deoxyerythronolide_b
+    label: 6-deoxyerythronolide B
+    node_type: PRECURSOR
+    identifier: CHEBI:16089
+    grounding_status: GROUNDED
+  - node_id: eryf
+    label: EryF
+    node_type: ENZYME
+    identifier: UniProtKB:Q00441
+    grounding_status: GROUNDED
+  - node_id: erythronolide_b
+    label: erythronolide B
+    node_type: COMPOUND
+    identifier: CHEBI:27977
+    grounding_status: GROUNDED
+  - node_id: erythromycin_d
+    label: erythromycin D
+    node_type: COMPOUND
+    identifier: CHEBI:63677
+    grounding_status: GROUNDED
+  - node_id: eryk
+    label: EryK
+    node_type: ENZYME
+    identifier: UniProtKB:P48635
+    grounding_status: GROUNDED
+  - node_id: erythromycin_c
+    label: erythromycin C
+    node_type: COMPOUND
+    identifier: CHEBI:64258
+    grounding_status: GROUNDED
+  - node_id: eryg
+    label: EryG
+    node_type: ENZYME
+    identifier: UniProtKB:A4F7P5
+    grounding_status: GROUNDED
+  - node_id: erythromycin_a
+    label: erythromycin A(1+)
+    node_type: COMPOUND
+    identifier: CHEBI:64268
+    grounding_status: GROUNDED
+  edges:
+  - subject: six_deoxyerythronolide_b
+    predicate: is hydroxylated by
+    object: eryf
+    evidence:
+    - reference: DOI:10.1128/jb.174.3.725-735.1992
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: EryF catalyzes RHEA:40299.
+  - subject: eryf
+    predicate: forms
+    object: erythronolide_b
+    notes: The full DEBS-to-glycosylated-macrolide route between erythronolide B and
+      erythromycin D remains uncurated in this partial graph.
+    evidence:
+    - reference: DOI:10.1128/jb.174.3.725-735.1992
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: EryF catalyzes RHEA:40299.
+  - subject: erythromycin_d
+    predicate: is hydroxylated by
+    object: eryk
+    evidence:
+    - reference: DOI:10.1021/bi00006a006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: EryK catalyzes RHEA:32631.
+  - subject: eryk
+    predicate: forms
+    object: erythromycin_c
+    evidence:
+    - reference: DOI:10.1021/bi00006a006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: EryK catalyzes RHEA:32631.
+  - subject: erythromycin_c
+    predicate: is O-methylated by
+    object: eryg
+    evidence:
+    - reference: DOI:10.1128/jb.172.5.2541-2546.1990
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: EryG catalyzes RHEA:32647.
+  - subject: eryg
+    predicate: forms
+    object: erythromycin_a
+    evidence:
+    - reference: DOI:10.1128/jb.172.5.2541-2546.1990
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: EryG catalyzes RHEA:32647, whose ChEBI participants are the pH 7.3 erythromycin
+        cations.

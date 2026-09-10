@@ -156,8 +156,7 @@ records the sha256 of every upstream file and every emitted inventory.
 
 ## Skills
 
-`.claude/skills/` carries four repository-specific workflows, adapted from
-AntibioticMech's:
+`.claude/skills/` carries five repository-specific workflows:
 
 - **`add-natural-product`** — prove a named compound, MIBiG entry or
   publication lead is one new structure with an asserted biological origin,
@@ -172,6 +171,10 @@ AntibioticMech's:
 - **`curate-yaml-record`** — review and, when explicitly asked, improve one
   record by checking identity, stereochemistry, producer evidence, BGC entries
   and bioactivity claims. Writes only through the validated curation-event path.
+- **`add-proteins-to-graphs`** — add and ground protein, enzyme and complex
+  participants in curated `biosynthetic_pathway`, `molecular_targets` and
+  `causal_graphs` entries, with exact UniProtKB examples only where the
+  evidence supports them.
 
 None of the skills sends messages or mutates GitHub without explicit
 authorization.
