@@ -80,6 +80,7 @@ molecular_targets:
       EQUAL.
   protein_examples:
   - UniProtKB:P0A853
+  taxon_id: NCBITaxon:83333
   taxon_label: Escherichia coli (strain K12)
 bgc_class:
 - NRPS
@@ -131,6 +132,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T07:37:49Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

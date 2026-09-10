@@ -129,3 +129,15 @@ targets:
       - [organism_taxon_id, organism_label]
       - [target_organism_id, target_organism_label]
     exclude_keys: [source_concepts, related_records]
+    # BindingDB names an assay organism the way UniProt does, and #72 resolves
+    # those to the right STRAIN taxid by trying `Scientific name Strain` as an
+    # exact variant. The identifier is then exactly right and the label is
+    # still UniProt's spelling, which NCBI does not carry in any name class.
+    # Keeping the source's wording is the same choice made for a merged taxon
+    # id: the id is what joins, the label is what the source said, and the
+    # inventory holds the provenance. Explained, so it belongs here rather
+    # than in the #83 backlog of labels nobody has accounted for.
+    exceptions:
+      - { id: "NCBITaxon:83333", label: "Escherichia coli (strain K12)", reason: "UniProt strain spelling; NCBI says Escherichia coli K-12 (#72)" }
+      - { id: "NCBITaxon:559292", label: "Saccharomyces cerevisiae (strain ATCC 204508 / S288c)", reason: "UniProt strain spelling; NCBI says Saccharomyces cerevisiae S288C (#72)" }
+      - { id: "NCBITaxon:936046", label: "Agaricus bisporus var. bisporus (strain H97 / ATCC MYA-4626 / FGSC 10389)", reason: "UniProt strain spelling; NCBI says Agaricus bisporus var. bisporus H97 (#72)" }
