@@ -163,6 +163,21 @@ def names_wanted() -> dict[str, set[str]]:
                     names.add(label)
         wanted["cyanometdb"] = names
 
+    # BindingDB names the organism whose protein was assayed, and the seeder
+    # had nowhere to resolve it: molecular_targets carried a taxon_label and no
+    # taxon_id on all 123 targets, which is the name-only join the occurrence
+    # rule forbids (#67). Read from the committed inventory rather than the
+    # upstream zip, because that extractor has already done the filtering.
+    bindingdb = RAW_DIR / "bindingdb_targets.tsv"
+    if bindingdb.exists():
+        names = set()
+        with bindingdb.open(newline="", encoding="utf-8") as fh:
+            for row in csv.DictReader(fh, delimiter="\t"):
+                organism = " ".join((row.get("target_organism") or "").split())
+                if organism:
+                    names.add(organism)
+        wanted["bindingdb"] = names
+
     origins = DOWNLOAD_DIR / "compound_origins.tsv.gz"
     if origins.exists():
         names = set()

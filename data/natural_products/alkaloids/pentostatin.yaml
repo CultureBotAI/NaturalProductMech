@@ -71,6 +71,7 @@ molecular_targets:
     evidence_type: DATABASE_ASSERTION
     notes: BindingDB own-curated affinity; measured at pH 7.2, 30.00 C C; qualifier
       EQUAL.
+  taxon_id: NCBITaxon:1890
   taxon_label: Streptomyces antibioticus
 - target_label: Adenosine deaminase
   target_type: PROTEIN
@@ -84,6 +85,7 @@ molecular_targets:
     evidence_type: DATABASE_ASSERTION
     notes: BindingDB own-curated affinity; measured at pH 7.2, 30.00 C C; qualifier
       EQUAL.
+  taxon_id: NCBITaxon:1890
   taxon_label: Streptomyces antibioticus
 related_records:
 - corpus: AntibioticMech
@@ -143,7 +145,7 @@ discussions:
     They share a Standard InChIKey, so if the two names denote different compounds
     then one upstream record has the wrong structure. Check which.
 curation_history:
-- timestamp: '2026-09-10T05:06:12Z'
+- timestamp: '2026-09-10T05:19:28Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

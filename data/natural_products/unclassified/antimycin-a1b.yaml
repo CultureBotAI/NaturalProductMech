@@ -32,6 +32,7 @@ molecular_targets:
     evidence_type: DATABASE_ASSERTION
     notes: BindingDB own-curated affinity; measured at pH 7.4000, 25.00 C C; qualifier
       EQUAL.
+  taxon_id: NCBITaxon:5476
   taxon_label: Candida albicans
 - target_label: Cytochrome b
   target_type: PROTEIN
@@ -47,6 +48,7 @@ molecular_targets:
       EQUAL.
   protein_examples:
   - UniProtKB:P00156
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 bgc_class:
 - NRPS
@@ -97,7 +99,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-10T05:06:19Z'
+- timestamp: '2026-09-10T05:19:35Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

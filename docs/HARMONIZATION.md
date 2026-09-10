@@ -143,6 +143,23 @@ rather than an extraction, and `Occurrence.taxon_id` is required so that it
 cannot slip through. That rule was written down after the guarded write path
 refused 1,146 such rows.
 
+**The same rule reaches the assay organism.** A `molecular_target` records
+which organism's protein was assayed, and all 123 of them carried a
+`taxon_label` and no identifier — the same name-only join, in a field the
+schema left optional (#67). BindingDB's organism names are now requested from
+NCBI Taxonomy alongside the occurrence sources, and 107 of 122 resolve. The
+remaining 15 are UniProt's proteome-strain format, `Escherichia coli (strain
+K12)`, and one common name; they stay unresolved rather than being stripped to
+a species, because a species id under a strain label is the defect this rule
+exists to prevent (#72). They are counted at seed time and queued in
+`curation/unresolved_taxa.tsv`.
+
+`target_id` stays empty on purpose, and that is not the same gap. The schema
+says a target "should be a family, complex or function; an organism-specific
+accession is an example of a target, not a target identity", so BindingDB's
+UniProt accessions go to `protein_examples`, where 115 of them are. Filling
+`target_id` needs a family or function identifier no adopted source supplies.
+
 **A producer needs an organism, and some NCBI nodes are not one.** A producer
 claim on `NCBITaxon:12908` ("unclassified sequences") or `NCBITaxon:77133`
 ("uncultured bacterium") asserts a producer while naming none, and every gate

@@ -447,6 +447,13 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
               "was not intended.", file=sys.stderr)
     withheld_producers: Counter[str] = Counter()
 
+    # Organism name -> current NCBITaxon CURIE. Built by the taxonomy extractor
+    # from names.dmp, which carries only live nodes, so these ids need no
+    # merge rewriting — unlike the ones sources supply directly (#63).
+    taxon_by_name = {row["organism_name"].lower(): row["taxon_id"]
+                     for row in inventories.get("taxon_names") or []}
+    unresolved_target_organisms: Counter[str] = Counter()
+
     # ChEBI, keyed by structure. A key matching more than one 3-star entry is
     # NOT a resolution failure: ChEBI keeps a compound and its zwitterion as
     # separate entries sharing an InChIKey, deliberately. Picking one would
@@ -883,6 +890,18 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 # a target identity — docs/CURATION.md is explicit about it.
                 target["protein_examples"] = [f"UniProtKB:{row['uniprot']}"]
             if row["target_organism"]:
+                # The assay organism is which organism's protein was assayed,
+                # and a name with no identifier joins to nothing — the rule
+                # docs/HARMONIZATION.md states for occurrences (#67). Exact
+                # match only, and no genus fallback, for the same reason
+                # taxonomy.resolve_name has none: a species id under a strain
+                # label is an id and a label denoting different things.
+                organism = " ".join(row["target_organism"].split())
+                resolved = taxon_by_name.get(organism.lower())
+                if resolved:
+                    target["taxon_id"] = resolved
+                else:
+                    unresolved_target_organisms[organism] += 1
                 target["taxon_label"] = row["target_organism"]
             targets.append(target)
         if targets:
@@ -1016,6 +1035,12 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     # Said out loud, like the taxonomy table: a run with the merged inventory
     # absent rewrites nothing and passes every gate, which is the silent
     # shrinkage #35 was about.
+    if unresolved_target_organisms:
+        total = sum(unresolved_target_organisms.values())
+        names = ", ".join(n for n, _ in unresolved_target_organisms.most_common(4))
+        print(f"molecular targets whose assay organism did not resolve: {total} "
+              f"({len(unresolved_target_organisms)} distinct: {names}…)", file=sys.stderr)
+
     if withheld_producers:
         total = sum(withheld_producers.values())
         detail = ", ".join(f"{t} {n}" for t, n in withheld_producers.most_common())
