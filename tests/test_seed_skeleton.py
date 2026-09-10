@@ -11,6 +11,8 @@ import importlib.util
 import sys
 from pathlib import Path
 
+import yaml
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 
@@ -714,3 +716,44 @@ def test_the_sibling_inventory_keeps_non_ascii_record_names():
     assert non_ascii, "no non-ASCII sibling labels survived the ls-tree read"
     assert not any('"' in label or "\\3" in label for label in labels), \
         "a quote-escaped path leaked into the inventory"
+
+
+def test_an_unchanged_record_keeps_its_curation_timestamp(tmp_path):
+    """The rule behind #69: re-seeding must not re-stamp a record whose
+    seeder-owned content is identical.
+
+    The seeder rebuilds every record from scratch, so `curation_history` was
+    recreated with a fresh timestamp on every run and all 3,115 records
+    re-emitted differently. A PR that changed three records still showed
+    3,115 changed files, which is not a diff anyone can review.
+    """
+    record = {
+        "identifier": "CHEBI:1",
+        "label": "example",
+        "curation_history": [{
+            "timestamp": "2020-01-01T00:00:00Z",
+            "curator": "seed_from_sources",
+            "action": "SEEDED_FROM_SOURCES",
+        }],
+    }
+    path = tmp_path / "example.yaml"
+    path.write_text(yaml.safe_dump(record, sort_keys=False), encoding="utf-8")
+
+    on_disk = seed.read_record(path)
+    assert on_disk is not None
+    # What the seeder would rebuild for the same inputs: identical but for the
+    # trail it is deciding whether to add.
+    rebuilt = {"identifier": "CHEBI:1", "label": "example"}
+    assert seed.seeder_owned(on_disk) == rebuilt
+
+    changed = {"identifier": "CHEBI:1", "label": "example, renamed"}
+    assert seed.seeder_owned(on_disk) != changed
+
+
+def test_reading_a_record_that_is_not_there_or_is_broken_is_not_an_error(tmp_path):
+    """A missing record is a record to write; an unparseable one is a record
+    to rewrite. Neither should crash a 3,115-record run."""
+    assert seed.read_record(tmp_path / "absent.yaml") is None
+    broken = tmp_path / "broken.yaml"
+    broken.write_text("identifier: [unclosed\n", encoding="utf-8")
+    assert seed.read_record(broken) is None
