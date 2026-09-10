@@ -147,11 +147,28 @@ refused 1,146 such rows.
 which organism's protein was assayed, and all 123 of them carried a
 `taxon_label` and no identifier — the same name-only join, in a field the
 schema left optional (#67). BindingDB's organism names are now requested from
-NCBI Taxonomy alongside the occurrence sources, and 107 of 122 resolve. The
-remaining 15 are UniProt's proteome-strain format, `Escherichia coli (strain
-K12)`, and one common name; they stay unresolved rather than being stripped to
-a species, because a species id under a strain label is the defect this rule
-exists to prevent (#72). They are counted at seed time and queued in
+NCBI Taxonomy alongside the occurrence sources, and **117 of 122 resolve**.
+
+Twelve of those needed a translation. NCBI writes `Escherichia coli K-12`
+where UniProt writes `Escherichia coli (strain K12)`, so each collection
+number in the parenthetical is tried as an exact variant and NCBI decides
+which spelling it knows (#72). Nothing is approximated: stripping the
+parenthetical to reach the species would put a species id under a strain
+label, which is the defect this rule exists to prevent, and it would be the
+wrong answer — K-12 is `NCBITaxon:83333`, not the species `562`.
+
+The identifier is then exactly right while the label is still the source's
+wording, which NCBI carries in no name class. That is the same choice made for
+a merged taxon id: the id is what joins, the label is what the source said, and
+the inventory holds the provenance. The three pairs are exceptions in
+`conf/id_label_targets.yaml` carrying that reason, so they do not sit in the
+backlog of labels nobody has accounted for (#83).
+
+`Human` stays unresolved. NCBI would resolve it through `genbank common name`,
+and admitting that class means 45,565 more names, 621 of them ambiguous across
+taxa and 53 colliding with another taxon's scientific name — a poor trade for
+one organism, and against the rule that a name class must ASSERT that the name
+denotes that taxon. It is counted at seed time and queued in
 `curation/unresolved_taxa.tsv`.
 
 `target_id` stays empty on purpose, and that is not the same gap. The schema

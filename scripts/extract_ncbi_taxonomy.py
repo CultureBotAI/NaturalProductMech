@@ -58,6 +58,7 @@ import csv
 import gzip
 import hashlib
 import json
+import re
 import sys
 import tarfile
 import time
@@ -384,6 +385,48 @@ def merged(archive: Path, wanted: set[str]) -> dict[str, str]:
     return found
 
 
+#: UniProt writes an assay organism as ``Scientific name (strain …)``, and
+#: BindingDB carries that spelling through. NCBI has the same strains, under
+#: ``Scientific name Strain`` — ``Escherichia coli (strain K12)`` is
+#: ``Escherichia coli K-12``, taxid 83333 — so the two never match by string
+#: and four names left 15 molecular targets ungrounded (#72).
+_STRAIN_SUFFIX = re.compile(r"^(?P<base>.+?)\s*\(strain\s+(?P<strain>.+?)\)$")
+
+
+def organism_name_variants(name: str) -> list[str]:
+    """Exact-match candidates for one organism name, best first.
+
+    Every candidate is still matched EXACTLY against ``names.dmp``; this widens
+    what is tried, not what counts as a match. A UniProt strain designation
+    lists several collection numbers for one strain — ``ATCC 204508 / S288c``
+    is one yeast — so each is tried as a separate suffix, and NCBI is left to
+    say which spelling it knows. Hyphenation is tried both ways because NCBI
+    writes ``K-12`` where UniProt writes ``K12``.
+
+    No common names, deliberately. ``Human`` would resolve through NCBI's
+    ``genbank common name`` class, but admitting that class would bring 45,565
+    names, 621 of them ambiguous across taxa and 53 colliding with another
+    taxon's scientific name — a poor trade for one organism, and against the
+    rule that a name class must ASSERT that the name denotes that taxon.
+    """
+    cleaned = " ".join((name or "").split())
+    if not cleaned:
+        return []
+    variants = [cleaned]
+    match = _STRAIN_SUFFIX.match(cleaned)
+    if match:
+        base, strain = match.group("base").strip(), match.group("strain").strip()
+        for part in (piece.strip() for piece in strain.split("/")):
+            if not part:
+                continue
+            for spelling in (part, re.sub(r"([A-Za-z])-(\d)", r"\1\2", part),
+                             re.sub(r"([A-Za-z])(\d)", r"\1-\2", part)):
+                candidate = f"{base} {spelling}"
+                if candidate not in variants:
+                    variants.append(candidate)
+    return variants
+
+
 def resolve(archive: Path, wanted: set[str]) -> tuple[dict[str, tuple[str, str]], Counter]:
     """Name -> (taxid, name_class), for the wanted names only.
 
@@ -396,9 +439,12 @@ def resolve(archive: Path, wanted: set[str]) -> tuple[dict[str, tuple[str, str]]
     # by iterating a set keeps whichever it saw last — a choice Python's
     # randomised string hashing makes differently each process. That made this
     # inventory reproduce differently roughly every other run (#74).
+    # Each candidate spelling maps back to the name the SOURCE used, because
+    # that is the key `taxonomy.resolve_name` will look up.
     lowered: dict[str, str] = {}
     for name in sorted(wanted):
-        lowered.setdefault(name.lower(), name)
+        for variant in organism_name_variants(name):
+            lowered.setdefault(variant.lower(), name)
     found: dict[str, tuple[str, str]] = {}
 
     with tarfile.open(archive, "r:gz") as tar:
