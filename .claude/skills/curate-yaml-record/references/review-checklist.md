@@ -116,5 +116,6 @@ or an occurrence sitting in the producer field. Leave the record `SEEDED` or
 `PROPOSED` and report blockers whenever a gate is unmet.
 
 For a multi-record request, regenerate `curation/record_review_queue.tsv` after
-each batch. The queue must contain every record that is neither `REVIEWED` nor
+each batch (its generator, `just review-queue`, is owed — #52; until then keep
+the checkpoint by hand). The queue must contain every record that is neither `REVIEWED` nor
 `DEPRECATED`; it is a checkpoint, not evidence that any listed claim was read.

@@ -35,7 +35,7 @@ def row_count(path: Path) -> int:
 
 def main() -> int:
     if not MANIFEST_PATH.exists():
-        print(f"missing {MANIFEST_PATH}; run `just extract-inventory`", file=sys.stderr)
+        print(f"missing {MANIFEST_PATH}; run an extractor, `just extract-mibig` first", file=sys.stderr)
         return 1
     manifest = yaml.safe_load(MANIFEST_PATH.read_text(encoding="utf-8"))
     recorded = manifest.get("inventories", {})

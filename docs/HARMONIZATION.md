@@ -164,8 +164,9 @@ row of the report it lands on. It is NPClassifier's pathway, which is
    manifest-pinned inventory. A seed-time API call would break the offline
    pipeline and make `verify-corpus` meaningless.
 2. The pathway is **pinned per record** in `PATHS.tsv` at first seed.
-3. A later inventory that disagrees produces a `pathway-drift` worklist entry
-   for a curator, never an automatic move. `RETIRED.tsv` reserves the old slug
+3. A later inventory that disagrees is to produce a `pathway-drift` worklist
+   entry for a curator, never an automatic move. Rules 1 and 2 are enforced;
+   this one is owed (#43, #52) — today a disagreement is silent. `RETIRED.tsv` reserves the old slug
    when a move is accepted, because slugs are published URLs.
 
 A multi-label or empty classifier result files `UNCLASSIFIED` and queues the

@@ -266,6 +266,9 @@ through the ordinary rename path, with `RETIRED.tsv` reserving the old slug so
 the published URL keeps resolving. So a model upgrade produces a reviewable list
 and zero silent moves.
 
+*Status (2026-09-09): the pin is built and enforced by `just verify-corpus`; the
+comparison against a newer inventory and the queue it feeds are owed (#43, #52).*
+
 The cost is honest and worth stating: the corpus can carry filing decisions
 made by an older model than the one in `data/raw/`. That is the right trade for
 a published site, and the drift is visible in one command rather than invisible
@@ -436,7 +439,7 @@ checker) already know it.
 
 ```
 NaturalProductMech/
-  CLAUDE.md  README.md  PLAN.md → NEXT_TASKS.md once scaffolded
+  CLAUDE.md  README.md  PLAN.md  NEXT_TASKS.md
   ATTRIBUTION.md  CITATION.cff  LICENSE (CC0)  LICENSE-DATA (CC BY 4.0)
   justfile  pyproject.toml  uv.lock
   conf/sources.yaml            # sources, producer_scope taxon filter, class priority
@@ -446,10 +449,10 @@ NaturalProductMech/
   data/raw/                    # committed inventories + MANIFEST.yaml (sha256, versions)
   data/natural_products/<np_pathway>/<slug>.yaml
   data/natural_products/PATHS.tsv  RETIRED.tsv
-  src/naturalproductmech/{schema,curate,validation,templates}/
-  scripts/  tests/  pages/  research/  docs/{HARMONIZATION,CURATION}.md
+  src/naturalproductmech/{schema,curate,validation}/   # templates/ empty until #53
+  scripts/  tests/  research/  docs/{HARMONIZATION,CURATION}.md   # pages/ owed (#53)
   .claude/skills/{add-natural-product,curate-yaml-record,source-queue,review-open-issues}
-  .github/workflows/{main,vendored-sync}.yaml
+  .github/workflows/main.yaml     # vendored-sync joins the gate at M4 admission
 ```
 
 Identity minting: `naturalproductmech:<source>-<10-hex>` hashed from
@@ -478,6 +481,9 @@ at the current pin *without* a consumer entry yet (the checker will fail on
 identity until M4 — record that as the expected red gate, or run it in
 `--offline` mode until admission).
 
+*Landed as #7 — without the site renderer and chemical-map, which were not
+carried over and are owed (#53).*
+
 **M2 — ChEBI + MIBiG seed (Phase A core).** `conf/np_roles.tsv` reviewed;
 ChEBI inventory limited to 3-star compounds bearing an allow-listed role or
 matched by MIBiG; MIBiG extractor emitting compounds, producers, BGCs, class.
@@ -485,10 +491,16 @@ Canary one record (`just seed-canary CHEBI:42355` — erythromycin A, so the
 AntibioticMech join is exercised on day one), then `just seed-apply`. Site
 rendered. README statistics block generated. First adversarial review pass.
 
+*Landed as #15 (MIBiG) and #21 (ChEBI, AntibioticMech pin). The site was not
+rendered (#53).*
+
 **M3 — LOTUS occurrences.** Wikidata SPARQL or the LOTUS bulk dump, filtered
 to microbial taxa, exact InChIKey join, `occurrences` populated with the
 LOTUS reference. Measure incremental coverage against M2 before deciding
 whether to widen the taxon filter.
+
+*Landed as #25; widened by CyanoMetDB (#31) and NCBI Taxonomy (#33), which
+recovered ~1,400 occurrences dropped for want of a taxon id.*
 
 **M4 — Fleet admission.** Three PRs in the order claw requires: (1) claw
 declares `naturalproductmech` in `fleet.yaml` and the vendored-consumer
@@ -501,8 +513,12 @@ admission (claw #360) are the templates.
 BioAssay for measured activities and targets on records that have them;
 `bioactivity_summary` derived only from backed items. ChEMBL stays curate-only.
 
+*Landed as #25 (BindingDB), #37 (PubChem BioAssay, ChEMBL deposits excluded)
+and #40 (antimicrobial classification sourced from AntibioticMech). Done out of
+order, before M4.*
+
 **M6 — Curation.** Biosynthesis causal graphs for the best-evidenced MIBiG
-records first (`just worklist --queue biosynthesis` ranks by BGC evidence
+records first (`just worklist --queue biosynthesis`, #52, ranks by BGC evidence
 waiting), then bioactivity graphs. This is the work; everything above is the
 scaffold for it.
 

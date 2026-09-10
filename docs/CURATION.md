@@ -9,7 +9,7 @@ concept, keyed by that concept's **minted identifier** — the stable
 
 | Column | Meaning |
 |---|---|
-| `minted_identifier` | The key. Copy it from the record or from `just worklist`. |
+| `minted_identifier` | The key. Copy it from the record's `source_concepts` block. |
 | `source` / `source_id` / `source_label` | Context for a human reading the file. |
 | `decision` | `GROUND` (use `identifier`), `EXCLUDE` (drop the concept), or `KEEP_MINTED`. |
 | `identifier` | The CURIE to ground to. Required for `GROUND`. |

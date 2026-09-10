@@ -18,12 +18,16 @@ compounds and their mechanisms),
 [dismech](https://github.com/monarch-initiative/dismech): one YAML per entity,
 ontology-grounded, evidence-backed, schema-validated, curated incrementally.
 
-## Status: scaffolded, corpus empty
+## Status: seeded from nine sources, curation not started
 
-**2026-09-07.** The schema, the guarded write path, the gates and the seeder
-skeleton exist and `just qc` is green. The corpus is empty because the
-extractors that produce `data/raw/` are M2. Seeding the first records from
-MIBiG and ChEBI is the next milestone.
+**2026-09-09.** The corpus reproduces offline from committed inventories:
+MIBiG (structures, producers, gene clusters), ChEBI (grounding, origins),
+LOTUS and CyanoMetDB (cited occurrences), NCBI Taxonomy (name resolution),
+NPClassifier (the filing pathway), PubChem BioAssay and BindingDB (measured
+activities and targets), and AntibioticMech (antimicrobial classification and
+cross-corpus links). Every record is `SEEDED`; no curator has yet touched one.
+`biosynthetic_pathway` and `causal_graphs` are empty — that is M6, the work the
+rest exists for. Owed work is in [NEXT_TASKS.md](NEXT_TASKS.md).
 
 <!-- BEGIN GENERATED CORPUS STATS -->
 
@@ -96,12 +100,14 @@ Nothing above touches the network.
 | Document | What it is |
 |---|---|
 | [PLAN.md](PLAN.md) | Scope, schema design, the AntibioticMech join, milestones M0–M6 |
-| [CLAUDE.md](CLAUDE.md) | Operational guidance for editing agents, written ahead of the code |
+| [CLAUDE.md](CLAUDE.md) | Operational guidance for editing agents: commands, boundaries, invariants |
+| [NEXT_TASKS.md](NEXT_TASKS.md) | Owed work, by issue, in the order it is worth doing |
+| [docs/HARMONIZATION.md](docs/HARMONIZATION.md), [docs/CURATION.md](docs/CURATION.md) | Identity, merging and scope; decision semantics and evidence rules |
 | [research/2026-09-07-natural-product-data-sources.md](research/2026-09-07-natural-product-data-sources.md) | The verified source landscape, with the three cluster reports beside it |
-| [curation/source_queue.tsv](curation/source_queue.tsv) | 37 candidate sources, ranked, with licence status and the gap each closes |
+| [curation/source_queue.tsv](curation/source_queue.tsv) | 38 sources, ranked — 9 adopted — with licence status and the gap each closes |
 | [.claude/skills/](.claude/skills) | Four curation workflows adapted from AntibioticMech |
 | [src/naturalproductmech/schema/](src/naturalproductmech/schema) | The LinkML schema, closed-validated |
-| [conf/](conf) | Scope, the producer-evidence grading, and the sources staged for M2 |
+| [conf/](conf) | Scope and the record budget, the producer-evidence grading, the adopted and staged sources, the sibling pin |
 
 ## The gap it fills
 

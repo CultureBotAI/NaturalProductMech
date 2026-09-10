@@ -2,11 +2,14 @@
 
 Operational guidance for Claude Code and other editing agents in this repository.
 
-**Status (2026-09-07): scaffolded, corpus empty.** The schema, the guarded
-write path, the gates, the docs and the seeder skeleton exist, and `just qc` is
-green. What does not exist yet is the corpus, because the extractors that
-produce `data/raw/` are M2 (`PLAN.md` §7). Commands marked below as M2 will
-fail or report an empty plan until then, honestly rather than silently.
+**Status (2026-09-09): seeded, 3,115 records, curation not started.** Nine
+sources are adopted and every record reproduces offline from the committed
+inventories in `data/raw/` (`just verify-corpus`). `producer_organisms` and
+`biosynthetic_gene_clusters` are on every record; `occurrences` on 2,342;
+`bioactivities` and `molecular_targets` are sparse; `biosynthetic_pathway` and
+`causal_graphs` are empty because M6 has not begun. Two things this file once
+listed as commands do not exist: the curation worklist (#52) and the site
+renderer (#53). They are owed in `NEXT_TASKS.md`, not named below as available.
 
 One gate is deliberately outside `just qc`: `just vendored-sync`. Its checker
 resolves this repository's identity through claw's consumer registry, and
@@ -29,10 +32,11 @@ filing classification computed by NPClassifier. The committed inventories in
 Read these before changing domain behavior:
 
 - [PLAN.md](PLAN.md) — scope, schema design, the AntibioticMech join, milestones.
-- [README.md](README.md) — public model and generated statistics (once scaffolded).
-- `docs/HARMONIZATION.md` — identity, merging, scope. Not written yet;
-  `PLAN.md` §2–§4 carries these until the scaffold lands.
-- `docs/CURATION.md` — decision semantics and evidence rules. Not written yet.
+- [README.md](README.md) — public model and generated statistics.
+- [docs/HARMONIZATION.md](docs/HARMONIZATION.md) — identity, merging, scope,
+  the producer/occurrence rule, the filing pathway.
+- [docs/CURATION.md](docs/CURATION.md) — decision semantics and evidence rules.
+- [NEXT_TASKS.md](NEXT_TASKS.md) — owed work, by issue.
 - [research/2026-09-07-natural-product-data-sources.md](research/2026-09-07-natural-product-data-sources.md)
   — the verified source landscape.
 
@@ -42,7 +46,7 @@ HabitatMech, CommunityMech, CellStructureMech, ProteinTraitsMech. The upstream
 pattern is monarch-initiative/dismech. Fleet governance is
 CultureBotAI/culturebotai-claw.
 
-## Authoritative commands (scaffold target)
+## Authoritative commands
 
 ```bash
 just qc                # every local and CI quality gate
@@ -50,28 +54,32 @@ just report            # corpus, grounding, producer and BGC coverage statistics
 just test              # unit and corpus-integrity tests
 just validate-all      # closed-schema validation of every record
 just verify-corpus     # prove data/natural_products reproduces from its inputs
-just worklist          # the curation backlog, ranked
+just provenance-check  # every committed inventory matches MANIFEST.yaml
 just source-queue      # the ranked data-source queue and what is unverified in it
-just render            # regenerate the committed site under pages/
 just docs-stats        # refresh the generated README statistics block
 ```
 
-For an upstream refresh:
+Not available, and not to be run expecting output: `just worklist` (#52),
+`just render` / `just render-check` / `just chemical-map` (#53).
+
+For an upstream refresh, every source has a free `-dry` run and a writing run;
+the two networked batches also have a one-call `-canary`. MIBiG is the anchor
+and runs first.
 
 ```bash
-just extract-inventory-dry     # ChEBI
-just extract-inventory
-just extract-mibig-dry
-just extract-mibig
-just extract-lotus-dry
-just extract-lotus
-just extract-pubchem-dry
-just extract-pubchem-canary <ID>
-just extract-pubchem
-just seed
-just seed-canary CHEBI:42355   # erythromycin A: exercises the AntibioticMech join
+just extract-mibig-dry          just extract-mibig
+just extract-chebi-dry          just extract-chebi
+just extract-lotus-dry          just extract-lotus
+just extract-cyanometdb-dry     just extract-cyanometdb
+just extract-taxonomy-dry       just extract-taxonomy
+just extract-npclassifier-dry   just extract-npclassifier-canary   just extract-npclassifier
+just extract-bioassay-dry       just extract-bioassay-canary       just extract-bioassay
+just extract-bindingdb-dry      just extract-bindingdb
+just extract-antibioticmech     # refresh the pinned sibling inventory; --advance-pin to move it
+just seed                       # dry run: what would be written, per pathway
+just seed-canary <IDENTIFIER>   # one record — the `identifier` column of PATHS.tsv — then read it
 just seed-apply
-just seed-apply --prune        # only when stale records should be removed
+just seed-apply --prune         # only when stale records should be removed
 ```
 
 ## Generated-file boundaries
@@ -88,9 +96,10 @@ runs closed-schema validation before writing. Every mutation must also append a
 **Re-emitting an unchanged record must be byte-identical.** Preserve the YAML
 emission contract enforced by `tests/test_write_validated.py`.
 
-**Edit site templates, not `pages/`.** Change
-`src/naturalproductmech/templates/`, run `just render`, commit the regenerated
-pages.
+**There is no site yet.** `src/naturalproductmech/templates/` is empty and
+`pages/` does not exist (#53). When the renderer lands the rule is
+AntibioticMech's: edit templates, run `just render`, commit the regenerated
+pages, never hand-edit `pages/`.
 
 **Do not edit `src/naturalproductmech/schema/mech_shared.yaml` or
 `history.yaml` here.** They are vendored byte-identically across the Mech
@@ -99,8 +108,9 @@ repositories from claw and sha-pinned by the schema tests.
 ## Safe corpus workflow
 
 **Canary before a bulk write, and before any paid or networked batch.** The
-PubChem enrichment and the LOTUS/Wikidata fetch are the networked steps:
-dry-run, then one real unit, then read the written row before the batch. Same
+NPClassifier and PubChem BioAssay batches are the networked steps, one call per
+structure: dry-run, then one real unit, then read the written row before the
+batch. Same
 for seeding: `just seed`, `just seed-canary <IDENTIFIER>`, read the file, then
 `just seed-apply`.
 
@@ -164,8 +174,10 @@ adds the extractor path, the committed inventory, its manifest entry and its
   and production is a weaker claim than a knockout, and it stays marked as one.
 - **The filing pathway is pinned, not recomputed.** `np_pathway` comes from a
   committed, version-pinned NPClassifier inventory and is locked per record in
-  `PATHS.tsv`. A newer model that disagrees produces a `pathway-drift` worklist
-  entry for a curator, never a silent directory move.
+  `PATHS.tsv`. A newer model that disagrees is to produce a `pathway-drift`
+  worklist entry for a curator, never a silent directory move. The pin is
+  enforced by `just verify-corpus`; the comparison and its queue are owed
+  (#43, #52) — today a disagreement is silent.
 - **Computed is not asserted.** NPClassifier, ClassyFire and NP-likeness carry
   tool and version and never pose as a source assertion.
 - **`np_pathway` is a filing decision, and it is computed.** It is
