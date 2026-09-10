@@ -45,16 +45,6 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q26268644
-- taxon_id: NCBITaxon:1490225
-  taxon_label: Micromonospora harpali
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1021/ACS.JNATPROD.7B00176
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q29565896
 - taxon_id: NCBITaxon:1803578
   taxon_label: Sparticola junci
   taxon_source: NCBITaxon
@@ -65,6 +55,18 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q103811497
+- taxon_id: NCBITaxon:1873
+  taxon_label: Verrucosispora
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/ACS.JNATPROD.9B00654
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q19743823 Taxon id NCBITaxon:84593,
+    as given by LOTUS, was merged into NCBITaxon:1873 by NCBI Taxonomy; rewritten
+    at seed time.
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
   taxon_source: NCBITaxon
@@ -125,6 +127,18 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q5353591
+- taxon_id: NCBITaxon:2893586
+  taxon_label: Actinoalloteichus cyanogriseus
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1021/NP4006025
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q25833700 Taxon id NCBITaxon:65497,
+    as given by LOTUS, was merged into NCBITaxon:2893586 by NCBI Taxonomy; rewritten
+    at seed time.
 - taxon_id: NCBITaxon:37463
   taxon_label: Phoma
   taxon_source: NCBITaxon
@@ -185,16 +199,18 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q22287058
-- taxon_id: NCBITaxon:65497
-  taxon_label: Actinoalloteichus cyanogriseus
+- taxon_id: NCBITaxon:686309
+  taxon_label: Micromonospora harpali
   taxon_source: NCBITaxon
   source: LOTUS
   evidence:
-  - reference: DOI:10.1021/NP4006025
+  - reference: DOI:10.1021/ACS.JNATPROD.7B00176
     evidence_type: DATABASE_ASSERTION
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q25833700
+  notes: Wikidata organism http://www.wikidata.org/entity/Q29565896 Taxon id NCBITaxon:1490225,
+    as given by LOTUS, was merged into NCBITaxon:686309 by NCBI Taxonomy; rewritten
+    at seed time.
 - taxon_id: NCBITaxon:82996
   taxon_label: Serratia plymuthica
   taxon_source: NCBITaxon
@@ -205,16 +221,6 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q26285164
-- taxon_id: NCBITaxon:84593
-  taxon_label: Verrucosispora
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1021/ACS.JNATPROD.9B00654
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q19743823
 - taxon_id: NCBITaxon:1967
   taxon_label: Streptomyces kanamyceticus
   taxon_source: NCBITaxon
@@ -474,7 +480,7 @@ discussions:
     BGC0000704, BGC0000705, BGC0000706. Confirm they describe the same compound rather
     than an upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-09T01:11:22Z'
+- timestamp: '2026-09-10T04:12:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

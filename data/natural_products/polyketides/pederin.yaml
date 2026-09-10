@@ -271,18 +271,6 @@ producer_organisms:
   - reference: PMID:12381784
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0001108 entry version 5; citation taken from the entry level
-- taxon_id: NCBITaxon:12908
-  taxon_label: unidentified unclassified sequences.
-  evidence_basis: SOURCE_ASSERTION
-  biosynthetic_gene_cluster: mibig:BGC0001109
-  source: MIBIG
-  source_version: '4'
-  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
-    this field grades the taxon claim, which is a different question.'
-  evidence:
-  - reference: patent:JP2005509435A
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0001109 entry version 4; citation taken from the entry level
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000255
   entry_version: '5'
@@ -316,8 +304,6 @@ biosynthetic_gene_clusters:
 - accession: mibig:BGC0001109
   entry_version: '4'
   entry_status: active
-  organism_taxon_id: NCBITaxon:12908
-  organism_label: unidentified unclassified sequences.
   evidence:
   - reference: patent:JP2005509435A
     evidence_type: DATABASE_ASSERTION
@@ -357,8 +343,16 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000255, BGC0001108,
     BGC0001109. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+- discussion_id: unnamed-producer
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'MIBiG gives a non-organism NCBI taxonomy node for BGC0001109 (unclassified
+    sequences, unidentified, or a rank above species), so no producer claim is written
+    from it. The cluster is kept: a characterized locus is an origin assertion whether
+    or not its host is named, and for a compound from an uncultured symbiont that
+    is the honest state. Name the producer if the primary literature does.'
 curation_history:
-- timestamp: '2026-09-09T01:11:25Z'
+- timestamp: '2026-09-10T04:12:07Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

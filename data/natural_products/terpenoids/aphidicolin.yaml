@@ -162,8 +162,10 @@ occurrences:
   - reference: PMID:21812410
     evidence_type: DATABASE_ASSERTION
     notes: ChEBI compound origin for CHEBI:2766
-  taxon_id: NCBITaxon:291364
+  taxon_id: NCBITaxon:2231603
   taxon_source: NCBITaxon
+  notes: Taxon id NCBITaxon:291364, as given by ChEBI, was merged into NCBITaxon:2231603
+    by NCBI Taxonomy; rewritten at seed time.
 - taxon_id: NCBITaxon:29910
   taxon_label: Tolypocladium inflatum
   taxon_source: NCBITaxon
@@ -556,7 +558,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-09T01:11:19Z'
+- timestamp: '2026-09-10T04:11:58Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

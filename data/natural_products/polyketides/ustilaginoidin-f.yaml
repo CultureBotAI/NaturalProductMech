@@ -19,6 +19,18 @@ np_classification:
   - Bisnaphthalenes
   is_glycoside: false
 occurrences:
+- taxon_id: NCBITaxon:1036719
+  taxon_label: Verticillium
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.7164/ANTIBIOTICS.28.602
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q2452570 Taxon id NCBITaxon:5106,
+    as given by LOTUS, was merged into NCBITaxon:1036719 by NCBI Taxonomy; rewritten
+    at seed time.
 - taxon_id: NCBITaxon:1077371
   taxon_label: Plenodomus influorescens
   taxon_source: NCBITaxon
@@ -39,16 +51,6 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q10647257
-- taxon_id: NCBITaxon:5106
-  taxon_label: Verticillium
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.7164/ANTIBIOTICS.28.602
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q2452570
 bioactivities:
 - assay: A TR-FRET Counter Screen assay to evaluate Inhibitors Targeting HIV-1 Vif-dependent
     Degradation of Human APOBEC3G
@@ -361,7 +363,7 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-09T01:11:17Z'
+- timestamp: '2026-09-10T04:11:56Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

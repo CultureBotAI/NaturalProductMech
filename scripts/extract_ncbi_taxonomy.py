@@ -37,6 +37,18 @@ what counts as resolved.
 **Scientific names and synonyms only.** ``names.dmp`` carries several name
 classes; ``includes``, ``in-part`` and ``blast name`` are deliberately excluded
 because they are not assertions that the name denotes that taxon.
+
+Merged identifiers (#63)
+------------------------
+Two sources supply numeric taxids directly — MIBiG at submission time, LOTUS
+from Wikidata — and NCBI retires ids into others as taxa are merged. A first
+run of the id-label gate found 42 such ids in the corpus, 118 rows of them
+from LOTUS: still denoting the organism, since NCBI keeps the redirect, but
+joining to nothing current. ``merged.dmp`` from the same taxdump says where
+each went, so this extractor also emits ``taxon_merged.tsv`` — old id to
+current id, restricted to ids the adopted sources actually use — and the
+seeder rewrites through it at write time, keeping the source's id in the
+inventory as provenance and saying on the claim that it was rewritten.
 """
 
 from __future__ import annotations
@@ -45,6 +57,7 @@ import argparse
 import csv
 import gzip
 import hashlib
+import json
 import sys
 import tarfile
 import time
@@ -59,6 +72,7 @@ RAW_DIR = REPO_ROOT / "data" / "raw"
 DOWNLOAD_DIR = REPO_ROOT / "downloads"
 MANIFEST_PATH = RAW_DIR / "MANIFEST.yaml"
 INVENTORY_NAME = "taxon_names.tsv"
+MERGED_INVENTORY_NAME = "taxon_merged.tsv"
 
 ARCHIVE = "taxdump.tar.gz"
 URL = f"https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/{ARCHIVE}"
@@ -70,6 +84,7 @@ USABLE_NAME_CLASSES = {"scientific name", "synonym", "equivalent name",
                        "genbank synonym", "genbank anamorph", "anamorph"}
 
 COLUMNS = ["organism_name", "taxon_id", "name_class", "requested_by"]
+MERGED_COLUMNS = ["old_taxon_id", "new_taxon_id", "requested_by"]
 
 
 def sha256_of(path: Path) -> str:
@@ -154,6 +169,66 @@ def names_wanted() -> dict[str, set[str]]:
     return wanted
 
 
+def ids_wanted() -> dict[str, set[str]]:
+    """Numeric taxids the adopted sources supply directly, by source.
+
+    Read from the cached upstream files, like ``names_wanted``: the ids to
+    check for currency are precisely the ones that arrived already numeric.
+    """
+    wanted: dict[str, set[str]] = {}
+
+    for mibig in sorted(DOWNLOAD_DIR.glob("mibig_json_*.tar.gz")):
+        ids = set()
+        with tarfile.open(mibig, "r:gz") as tar:
+            for member in tar:
+                if not member.isfile() or not member.name.endswith(".json"):
+                    continue
+                handle = tar.extractfile(member)
+                if handle is None:
+                    continue
+                taxid = (json.load(handle).get("taxonomy") or {}).get("ncbiTaxId")
+                if taxid:
+                    ids.add(str(taxid))
+        wanted["mibig"] = ids
+        break
+
+    lotus_meta = DOWNLOAD_DIR / "260413_frozen_metadata.csv.gz"
+    if lotus_meta.exists():
+        ids = set()
+        with gzip.open(lotus_meta, "rt", encoding="utf-8", errors="replace", newline="") as fh:
+            for row in csv.DictReader(fh):
+                ncbi = (row.get("organism_taxonomy_ncbiid") or "").strip().replace(".0", "")
+                if ncbi.isdigit():
+                    ids.add(ncbi)
+        wanted["lotus"] = ids
+
+    origins = DOWNLOAD_DIR / "compound_origins.tsv.gz"
+    if origins.exists():
+        ids = set()
+        with gzip.open(origins, "rt", encoding="utf-8", errors="replace", newline="") as fh:
+            for row in csv.DictReader(fh, delimiter="\t"):
+                accession = (row.get("species_accession") or "").strip()
+                if accession.isdigit():
+                    ids.add(accession)
+        wanted["chebi_origins"] = ids
+
+    return wanted
+
+
+def merged(archive: Path, wanted: set[str]) -> dict[str, str]:
+    """Old taxid -> current taxid, for the wanted ids that NCBI has merged."""
+    found: dict[str, str] = {}
+    with tarfile.open(archive, "r:gz") as tar:
+        member = tar.extractfile("merged.dmp")
+        if member is None:
+            raise SystemExit("merged.dmp missing from the taxdump archive")
+        for raw in member:
+            parts = [p.strip() for p in raw.decode("utf-8", "replace").split("\t|")]
+            if len(parts) >= 2 and parts[0] in wanted:
+                found[parts[0]] = parts[1]
+    return found
+
+
 def resolve(archive: Path, wanted: set[str]) -> tuple[dict[str, tuple[str, str]], Counter]:
     """Name -> (taxid, name_class), for the wanted names only.
 
@@ -207,6 +282,15 @@ def main() -> int:
     archive = download(offline=args.offline)
     found, counts = resolve(archive, wanted)
 
+    ids_by_source = ids_wanted()
+    ids_all = set().union(*ids_by_source.values()) if ids_by_source else set()
+    merges = merged(archive, ids_all)
+    print("\nnumeric taxids supplied directly, by source:", file=sys.stderr)
+    for source, ids in sorted(ids_by_source.items()):
+        gone = len(ids & set(merges))
+        print(f"  {source:<16} {len(ids):>7}   merged by NCBI: {gone}", file=sys.stderr)
+    print(f"  {'distinct merged':<16} {len(merges):>7}", file=sys.stderr)
+
     print(f"\nnames.dmp rows read : {counts['names_dmp_rows']}", file=sys.stderr)
     print(f"resolved            : {len(found)} of {len(wanted)} "
           f"({100 * len(found) // max(len(wanted), 1)}%)", file=sys.stderr)
@@ -249,6 +333,17 @@ def main() -> int:
         writer.writeheader()
         writer.writerows(rows)
 
+    merged_rows = [{
+        "old_taxon_id": f"NCBITaxon:{old}",
+        "new_taxon_id": f"NCBITaxon:{new}",
+        "requested_by": ",".join(sorted(s for s, ids in ids_by_source.items() if old in ids)),
+    } for old, new in sorted(merges.items(), key=lambda kv: int(kv[0]))]
+    merged_inventory = RAW_DIR / MERGED_INVENTORY_NAME
+    with merged_inventory.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=MERGED_COLUMNS, delimiter="\t", lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(merged_rows)
+
     with unresolved_path.open("w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=["organism_name", "requested_by"],
                                 delimiter="\t", lineterminator="\n")
@@ -266,6 +361,13 @@ def main() -> int:
         "rows": len(rows), "bytes": inventory.stat().st_size, "sha256": sha256_of(inventory),
         "source": "NCBI Taxonomy taxdump, names.dmp (public domain)",
     }
+    manifest["inventories"][MERGED_INVENTORY_NAME] = {
+        "rows": len(merged_rows), "bytes": merged_inventory.stat().st_size,
+        "sha256": sha256_of(merged_inventory),
+        "source": "NCBI Taxonomy taxdump, merged.dmp (public domain)",
+    }
+    print(f"wrote {merged_inventory.relative_to(REPO_ROOT)} ({len(merged_rows)} rows)",
+          file=sys.stderr)
     MANIFEST_PATH.write_text(
         yaml.safe_dump(manifest, sort_keys=False, allow_unicode=True), encoding="utf-8")
     print(f"\nwrote {inventory.relative_to(REPO_ROOT)} ({len(rows)} rows)", file=sys.stderr)

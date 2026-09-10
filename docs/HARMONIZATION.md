@@ -143,6 +143,37 @@ rather than an extraction, and `Occurrence.taxon_id` is required so that it
 cannot slip through. That rule was written down after the guarded write path
 refused 1,146 such rows.
 
+**A producer needs an organism, and two NCBI nodes are not one.** MIBiG
+assigns `NCBITaxon:12908` ("unclassified sequences") when a cluster came from a
+metagenome or an unnamed isolate; three 4.0 entries do, with labels like
+`Unknown. Unclassified.`. A producer claim on that node asserts a producer
+while naming none, and every gate passes it — the CURIE is valid, the label is
+non-empty, one label per id. So the extractor blanks the taxon and the seeder
+writes no producer for that row (#62).
+
+What it does **not** do is drop the compound. MIBiG is the only source that
+*admits* a structure — ChEBI grounds one but cannot hold a record alone — so
+dropping the row would have deleted elaiophylin, a record carrying 25
+occurrences, five bioactivities and an AntibioticMech link, over one unnamed
+producer. A characterized cluster is an origin assertion whether or not its
+host has a name; pederin's real producer is an uncultured symbiont, which is
+exactly why MIBiG says 12908. The compound, its structure and its cluster stay,
+the cluster carries no organism, and an `unnamed-producer` CURATION_TODO says
+why. Softer placeholders that *are* real nodes — `uncultured bacterium`,
+`sponge metagenome` — are a separate and larger question (#68).
+
+**A merged taxon id is rewritten, not rejected.** MIBiG assigns taxids at
+submission and LOTUS carries them from Wikidata, so both supply ids NCBI has
+since retired into another taxon: 42 of them, 118 rows, found by the first
+id-label run. NCBI keeps the redirect, so these still denote the organism — but
+two records citing one organism under its old and new ids do not join, and a
+consumer resolving against a current taxonomy gets nothing. `taxon_merged.tsv`,
+built from the same taxdump as `taxon_names.tsv`, maps old to current; the
+seeder rewrites every source-supplied id through it and says so on the claim.
+The source's id stays in the inventory as provenance. 167 ids were rewritten,
+and it raised producer-occurrence corroboration from 721 records to 732 —
+claims that always described one organism and could not previously be seen to.
+
 **Three MIBiG fields that do not mean what they look like**, all verified
 against the 4.0 release:
 

@@ -361,6 +361,51 @@ def group_by_structure(rows: list[dict[str, str]]) -> dict[str, list[dict[str, s
     return grouped
 
 
+def mibig_cluster(row: dict[str, str], accession: str) -> dict[str, Any]:
+    """The cluster a MIBiG row describes, with its host only when named.
+
+    ``organism_taxon_id`` is optional in the schema, which is what lets a
+    cluster from a metagenome or an unnamed isolate stay in the corpus without
+    inventing a host for it (#62).
+    """
+    cluster: dict[str, Any] = {
+        "accession": f"mibig:{accession}",
+        "entry_version": row["entry_version"],
+        "entry_status": row["entry_status"],
+    }
+    # Key order is the emission contract: `evidence` goes last, so the organism
+    # keys are inserted before it rather than appended after. Appending them
+    # reordered the cluster block in all 3,115 records and buried the three
+    # real changes in cosmetic churn.
+    if row["taxon_id"]:
+        cluster["organism_taxon_id"] = row["taxon_id"]
+        cluster["organism_label"] = row["taxon_label"]
+    cluster["evidence"] = mibig_evidence(row)
+    return cluster
+
+
+def rewrite_merged_taxon(
+    item: dict[str, Any], key: str, merges: dict[str, str], rewrites: Counter, source: str,
+    *, note: bool,
+) -> None:
+    """Replace a taxon id NCBI has merged with the current one, and say so.
+
+    The source's id stays in the inventory as provenance; the record carries
+    the id that joins (#63). A merged id still denotes the organism, so the
+    label is left as the source wrote it — it is now a synonym of the current
+    node's name, which is what the id-label gate accepts.
+    """
+    old = item.get(key)
+    if not old or old not in merges:
+        return
+    item[key] = merges[old]
+    rewrites[source] += 1
+    if note:
+        text = (f"Taxon id {old}, as given by {source}, was merged into {merges[old]} "
+                f"by NCBI Taxonomy; rewritten at seed time.")
+        item["notes"] = f"{item['notes']} {text}" if item.get("notes") else text
+
+
 def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str, Any]]:
     """Harmonize the committed inventories into one record per structure.
 
@@ -381,6 +426,12 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         row["standard_inchi_key"]: row
         for row in inventories.get("npclassifier") or []
     }
+
+    # Old NCBI taxid -> current, from the taxonomy extractor's merged.dmp
+    # inventory. Applied wherever a source-supplied id is written (#63).
+    merges = {row["old_taxon_id"]: row["new_taxon_id"]
+              for row in inventories.get("taxon_merged") or []}
+    taxon_rewrites: Counter[str] = Counter()
 
     # ChEBI, keyed by structure. A key matching more than one 3-star entry is
     # NOT a resolution failure: ChEBI keeps a compound and its zwitterion as
@@ -510,6 +561,7 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             }
 
         bgc_classes, compound_classes, xrefs = [], [], []
+        unnamed_producer_clusters: list[str] = []
         producers: list[dict[str, Any]] = []
         clusters: list[dict[str, Any]] = []
         source_concepts: list[dict[str, Any]] = []
@@ -536,36 +588,41 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 if value and value not in xrefs and DB_ID_RE.match(value):
                     xrefs.append(value)
 
-            # Unconditional, and that is the point: MIBiG asserting a
-            # compound-organism pair IS an assertion of production. What varies
-            # is how well supported it is, which is what evidence_basis says.
-            # grade_production has no withholding case for the same reason —
-            # the one that used to exist, homology-based prediction, now lands
-            # on the CLUSTER grade where it belongs (#20).
-            producers.append({
-                "taxon_id": row["taxon_id"],
-                "taxon_label": row["taxon_label"],
-                "evidence_basis": row["producer_evidence_basis"],
-                "biosynthetic_gene_cluster": f"mibig:{accession}",
-                "source": "MIBIG",
-                "source_version": row["entry_version"],
-                "notes": (
-                    f"Locus evidence: {row['locus_evidence_methods'] or 'none stated'}. "
-                    f"That evidence grades the LOCUS as "
-                    f"{row.get('cluster_link_evidence_basis', 'CLUSTER_UNSTATED')}; this "
-                    f"field grades the taxon claim, which is a different question."
-                ),
-                "evidence": mibig_evidence(row),
-            })
+            # Unconditional wherever MIBiG names an organism, and that is the
+            # point: MIBiG asserting a compound-organism pair IS an assertion
+            # of production. What varies is how well supported it is, which is
+            # what evidence_basis says. grade_production has no withholding
+            # case for the same reason — the one that used to exist,
+            # homology-based prediction, now lands on the CLUSTER grade where
+            # it belongs (#20).
+            #
+            # The one case that withholds is an entry whose taxonomy is a
+            # non-organism node: the extractor blanks it, and a producer needs
+            # a taxon to be a claim about one (#62). The compound and its
+            # cluster stay; only the producer is not written.
+            if row["taxon_id"]:
+                producers.append({
+                    "taxon_id": row["taxon_id"],
+                    "taxon_label": row["taxon_label"],
+                    "evidence_basis": row["producer_evidence_basis"],
+                    "biosynthetic_gene_cluster": f"mibig:{accession}",
+                    "source": "MIBIG",
+                    "source_version": row["entry_version"],
+                    "notes": (
+                        f"Locus evidence: {row['locus_evidence_methods'] or 'none stated'}. "
+                        f"That evidence grades the LOCUS as "
+                        f"{row.get('cluster_link_evidence_basis', 'CLUSTER_UNSTATED')}; this "
+                        f"field grades the taxon claim, which is a different question."
+                    ),
+                    "evidence": mibig_evidence(row),
+                })
+                rewrite_merged_taxon(
+                    producers[-1], "taxon_id", merges, taxon_rewrites, "MIBiG", note=True)
+            else:
+                unnamed_producer_clusters.append(accession)
 
-            cluster: dict[str, Any] = {
-                "accession": f"mibig:{accession}",
-                "entry_version": row["entry_version"],
-                "entry_status": row["entry_status"],
-                "organism_taxon_id": row["taxon_id"],
-                "organism_label": row["taxon_label"],
-                "evidence": mibig_evidence(row),
-            }
+            cluster = mibig_cluster(row, accession)
+            rewrite_merged_taxon(cluster, "organism_taxon_id", merges, taxon_rewrites, "MIBiG", note=True)
             if row["genome_accession"]:
                 cluster["genome_accession"] = f"genbank:{row['genome_accession']}"
             for field, column in (("locus_from", "locus_from"), ("locus_to", "locus_to")):
@@ -608,6 +665,7 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 if origin["species_accession"].isdigit():
                     occurrence["taxon_id"] = f"NCBITaxon:{origin['species_accession']}"
                     occurrence["taxon_source"] = "NCBITaxon"
+                    rewrite_merged_taxon(occurrence, "taxon_id", merges, taxon_rewrites, "ChEBI", note=True)
                 if origin["strain_text"]:
                     occurrence["detection_context"] = origin["strain_text"]
                 context = " ".join(x for x in (origin["component_text"], origin["comments"]) if x)
@@ -632,6 +690,7 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             }
             if row["organism_wikidata"]:
                 occurrence["notes"] = f"Wikidata organism {row['organism_wikidata']}"
+            rewrite_merged_taxon(occurrence, "taxon_id", merges, taxon_rewrites, "LOTUS", note=True)
             occurrences.append(occurrence)
 
         for row in cyano_by_key.get(key) or []:
@@ -659,6 +718,7 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             )
             if context:
                 occurrence["detection_context"] = context[:200]
+            rewrite_merged_taxon(occurrence, "taxon_id", merges, taxon_rewrites, "CyanoMetDB", note=True)
             occurrences.append(occurrence)
 
         # De-duplicate on (taxon, reference). Two routes produce exact
@@ -898,6 +958,23 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 ),
             })
 
+        if unnamed_producer_clusters:
+            discussions.append({
+                "discussion_id": "unnamed-producer",
+                "kind": "CURATION_TODO",
+                "status": "OPEN",
+                "prompt": (
+                    "MIBiG gives a non-organism NCBI taxonomy node for "
+                    + ", ".join(sorted(unnamed_producer_clusters))
+                    + " (unclassified sequences, unidentified, or a rank above "
+                    "species), so no producer claim is written from it. The "
+                    "cluster is kept: a characterized locus is an origin "
+                    "assertion whether or not its host is named, and for a "
+                    "compound from an uncultured symbiont that is the honest "
+                    "state. Name the producer if the primary literature does."
+                ),
+            })
+
         if discussions:
             doc["discussions"] = discussions
 
@@ -912,6 +989,17 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         seen[base] += 1
         if seen[base] > 1:
             doc["_slug"] = f"{base}-{seen[base]}"
+    # Said out loud, like the taxonomy table: a run with the merged inventory
+    # absent rewrites nothing and passes every gate, which is the silent
+    # shrinkage #35 was about.
+    if merges:
+        total = sum(taxon_rewrites.values())
+        detail = ", ".join(f"{s} {n}" for s, n in sorted(taxon_rewrites.items()))
+        print(f"taxon ids rewritten through taxon_merged.tsv: {total}"
+              + (f" ({detail})" if detail else ""), file=sys.stderr)
+    else:
+        print("taxon_merged.tsv: ABSENT — merged ids left as the sources gave them. "
+              "Run `just extract-taxonomy` first if this was not intended.", file=sys.stderr)
     return records
 
 

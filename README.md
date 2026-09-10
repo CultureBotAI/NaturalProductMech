@@ -55,7 +55,7 @@ by grounding status:
   REVIEW_NEEDED                           9
 
 field coverage (records carrying at least one item):
-  producer_organisms                   3115
+  producer_organisms                   3113
   occurrences                          2342
   biosynthetic_gene_clusters           3115
   biosynthetic_pathway                    0
@@ -64,12 +64,12 @@ field coverage (records carrying at least one item):
   molecular_targets                      14
   causal_graphs                           0
   related_records                       205
-  discussions                           286
+  discussions                           288
 
-producer claims: 3449 (806 causal, 171 correlational)
-  BGC_CHARACTERIZED                     806
+producer claims: 3446 (805 causal, 171 correlational)
+  BGC_CHARACTERIZED                     805
   BGC_CORRELATED                        171
-  SOURCE_ASSERTION                     2472
+  SOURCE_ASSERTION                     2470
 
 cluster link claims: 3449 (1352 demonstrated)
   CLUSTER_CORRELATED                    110
@@ -77,7 +77,7 @@ cluster link claims: 3449 (1352 demonstrated)
   CLUSTER_PREDICTED                       2
   CLUSTER_UNSTATED                     1985
 
-records where a producer taxon is independently corroborated by a cited occurrence: 721
+records where a producer taxon is independently corroborated by a cited occurrence: 732
 
 These grade two different questions and they come apart. A producer
 claim says this TAXON makes the compound; a cluster link says this
@@ -88,7 +88,7 @@ first exactly where the isolation report left it.
 <!-- END GENERATED CORPUS STATS -->
 
 ```bash
-just install        # uv sync --locked --extra dev
+just install        # uv sync --locked --extra dev --extra chemistry
 just qc             # every local and CI quality gate
 just seed           # dry run: what would be written, per pathway
 just report         # corpus, grounding and origin-evidence coverage

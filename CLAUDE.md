@@ -139,7 +139,9 @@ refused.
 
 **The environment is pinned.** `uv.lock` is committed and both `just install`
 and CI sync `--locked`, so a lock out of step with `pyproject.toml` fails
-instead of being re-resolved. After changing a dependency, run `uv lock` and
+instead of being re-resolved. `just install` also pulls the `chemistry`
+extra — the pinned RDKit the MIBiG extractor computes InChIKeys with — which
+CI does not need and does not install. After changing a dependency, run `uv lock` and
 commit the lockfile in the same PR; `verify-corpus` only proves reproduction
 under the environment the lock names.
 
