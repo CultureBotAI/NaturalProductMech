@@ -52,10 +52,17 @@ COMMANDS = [
         "Closed-mode validation checks every record's shape, including unknown fields.",
     ),
     (
+        "corpus reproduction",
+        [sys.executable, "scripts/check_reproduction.py", "--summary"],
+        "Every record is byte-identical to what the seeder builds from data/raw/. "
+        "The check verify_corpus.py's docstring promised once the harmonizer existed (#85); "
+        "curator-owned fields are taken from the file, as the writer takes them.",
+    ),
+    (
         "lockfile integrity",
         [sys.executable, "scripts/verify_corpus.py"],
         "Every record is recorded in PATHS.tsv and filed where its pinned pathway says. "
-        "Reproduction from data/raw/ is a separate check and arrives with the seeder (#11).",
+        "Reproduction from data/raw/ is the separate check above.",
     ),
     (
         "corpus report",

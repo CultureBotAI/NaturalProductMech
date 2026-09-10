@@ -16,7 +16,7 @@ concept, keyed by that concept's **minted identifier** — the stable
 | `curator` / `date` / `rationale` | Who decided, when, and why. |
 
 Decisions apply at seed time, so a decision changes the corpus only after
-`just seed-apply` — and `just verify-corpus` then proves the corpus matches.
+`just seed-apply` — and `just verify-reproduction` then proves the corpus matches.
 
 ## Evidence rules
 

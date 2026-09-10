@@ -159,6 +159,11 @@ report-label-drift:
     mkdir -p reports
     uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml --report reports/label_drift.tsv
 
+# Prove every record is byte-identical to what the seeder builds from data/raw/.
+# Curator-owned fields are taken from the file, exactly as the writer takes them.
+verify-reproduction *args:
+    uv run python scripts/check_reproduction.py {{args}}
+
 # --- reporting ---------------------------------------------------------------
 # Corpus report: records per pathway, grounding, and origin-evidence coverage,
 # with producer claims split into causal and correlational.

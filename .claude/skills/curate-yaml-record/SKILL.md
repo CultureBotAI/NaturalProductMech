@@ -212,7 +212,7 @@ human curator identity was supplied; never attribute an agent's judgement to
 the user.
 
 Seeder-owned producer and occurrence items (MIBiG-marked, LOTUS-marked) are
-compared to their inventories by `verify-corpus`. To override one, follow
+compared to their inventories by `verify-reproduction`. To override one, follow
 `docs/CURATION.md`: add a curator-owned item with a `CURATOR:` note and real
 evidence, or record an `EXCLUDE` decision against the source row. Do not edit
 the seeded item in place.

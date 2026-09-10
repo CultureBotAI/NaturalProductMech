@@ -294,7 +294,7 @@ row of the report it lands on. It is NPClassifier's pathway, which is
 
 1. The classifier runs at **extraction** time into a committed,
    manifest-pinned inventory. A seed-time API call would break the offline
-   pipeline and make `verify-corpus` meaningless.
+   pipeline and make `verify-reproduction` meaningless.
 2. The pathway is **pinned per record** in `PATHS.tsv` at first seed.
 3. A later inventory that disagrees is to produce a `pathway-drift` worklist
    entry for a curator, never an automatic move. Rules 1 and 2 are enforced;
