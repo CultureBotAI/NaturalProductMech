@@ -71,9 +71,10 @@ bioactivities:
   - reference: pubchem.aid:1963593
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963593, deposited by 824; assay type Confirmatory.
+      Target accession NP_000015 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 6.7823
   units: uM
-  target_enzyme: UniProtKB:NP_000015
 - assay: 'Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS
     assay: Summary'
   evidence:
@@ -87,10 +88,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2061107
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary.
+    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Target
+      accession NP_000015 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 0.302955
   units: uM
-  target_enzyme: UniProtKB:NP_000015
 - assay: 'Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists:
     luciferase reporter qHTS assay'
   evidence:
@@ -105,9 +107,10 @@ bioactivities:
   - reference: pubchem.aid:1671199
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory.
+      Target accession EAW99313 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 62.5906
   units: uM
-  target_enzyme: UniProtKB:EAW99313
 - assay: cAMP Responsive Elements (CRE) small molecule antagonists, cell-based qHTS
     assay
   evidence:
@@ -122,51 +125,57 @@ bioactivities:
   - reference: pubchem.aid:1963591
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963591, deposited by 824; assay type Confirmatory.
+      Target accession AAV38316 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0017
   units: uM
-  target_enzyme: UniProtKB:AAV38316
 - assay: qHTS Assay for Agonists of the Thyroid Stimulating Hormone Receptor
   evidence:
   - reference: pubchem.aid:926
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 926, deposited by NCGC; assay type Confirmatory.
+    notes: PubChem BioAssay AID 926, deposited by NCGC; assay type Confirmatory. Target
+      accession AAR07906 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 0.0316
   units: uM
-  target_enzyme: UniProtKB:AAR07906
 - assay: 'qHTS Assay for Agonists of the Thyroid Stimulating Hormone Receptor: Activators
     of Intracellular cAMP Concentrations in Parental HEK 293'
   evidence:
   - reference: pubchem.aid:938
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 938, deposited by NCGC; assay type Confirmatory.
+    notes: PubChem BioAssay AID 938, deposited by NCGC; assay type Confirmatory. Target
+      accession AAR07906 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 0.0316
   units: uM
-  target_enzyme: UniProtKB:AAR07906
 - assay: qHTS assay for small molecule agonists of estrogen receptor alpha signaling
   evidence:
   - reference: pubchem.aid:588514
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 588514, deposited by NCGC; assay type Confirmatory.
+      Target accession AEP43755 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 39.8107
   units: uM
-  target_enzyme: UniProtKB:AEP43755
 - assay: qHTS assay for small molecule agonists of the antioxidant response element
     (ARE) signaling pathway
   evidence:
   - reference: pubchem.aid:651741
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 651741, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_006155 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 37.578
   units: uM
-  target_enzyme: UniProtKB:NP_006155
 - assay: qHTS assay for small molecule antagonists of androgen receptor signaling
   evidence:
   - reference: pubchem.aid:588516
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 588516, deposited by NCGC; assay type Confirmatory.
+      Target accession AAI32976 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.631
   units: uM
-  target_enzyme: UniProtKB:AAI32976
 - assay: qHTS assay to identify small molecule agonists of the endoplasmic reticulum
     stress response signaling pathway - cell viability counter screen
   evidence:
@@ -181,9 +190,10 @@ bioactivities:
   - reference: pubchem.aid:651758
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 651758, deposited by NCGC; assay type Confirmatory.
+      Target accession AAA59158 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 74.978
   units: uM
-  target_enzyme: UniProtKB:AAA59158
 bgc_class:
 - PKS
 xrefs:
@@ -239,6 +249,10 @@ discussions:
     then one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:52Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

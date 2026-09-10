@@ -71,11 +71,11 @@ bioactivities:
   - reference: PMID:17259168
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 2O9J_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KI
   value: 0.12
   units: uM
-  target_enzyme: UniProtKB:2O9J_A
   activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
     derived from PDB
@@ -83,29 +83,29 @@ bioactivities:
   - reference: PMID:17259168
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 2OA0_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KI
   value: 0.12
   units: uM
-  target_enzyme: UniProtKB:2OA0_A
   activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data derived from PDB
   evidence:
   - reference: PMID:17259168
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1811, deposited by Shanghai Institute of Organic Chemistry;
-      assay type Other.
+      assay type Other. Target accession 2O9J_A was left ungrounded because PubChem
+      did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:2O9J_A
   activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data derived from PDB
   evidence:
   - reference: PMID:17259168
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1811, deposited by Shanghai Institute of Organic Chemistry;
-      assay type Other.
+      assay type Other. Target accession 2OA0_A was left ungrounded because PubChem
+      did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:2OA0_A
   activity_class: ENZYME_INHIBITOR
 - assay: Primary Screen for Target Class Profiling of Small Molecule Inhibitors of
     Methyltransferases
@@ -224,6 +224,10 @@ discussions:
     Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -94,9 +94,10 @@ bioactivities:
   - reference: pubchem.aid:720532
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory.
+      Target accession B45705 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.1122
   units: uM
-  target_enzyme: UniProtKB:B45705
   activity_class: ENZYME_INHIBITOR
 - assay: DSSTox (CPDBAS) Carcinogenic Potency Database Summary Mouse Bioassay Results
   evidence:
@@ -218,6 +219,10 @@ discussions:
     about stereochemistry: check which configuration the primary literature supports.'
 curation_history:
 - timestamp: '2026-09-10T06:18:32Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:42Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -236,9 +236,9 @@ bioactivities:
   - reference: pubchem.aid:720641
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 720641, deposited by ICCB-Longwood/NSRB Screening
-      Facility, Harvard Medical School; assay type Other.
+      Facility, Harvard Medical School; assay type Other. Target accession NP_371243
+      was left ungrounded because PubChem did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_371243
   activity_class: ANTIBACTERIAL
 - assay: Cell-based high throughput primary assay to identify activators of GPR151
   evidence:
@@ -385,6 +385,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:01Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

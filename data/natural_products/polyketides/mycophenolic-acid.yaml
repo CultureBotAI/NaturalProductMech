@@ -127,18 +127,20 @@ bioactivities:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.3663
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: 'Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based
     qHTS assay'
   evidence:
   - reference: pubchem.aid:1347398
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory.
+      Target accession AAA68151 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 43.6486
   units: uM
-  target_enzyme: UniProtKB:AAA68151
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
     (r) AML: AML-191 cell line'
   evidence:
@@ -289,27 +291,30 @@ bioactivities:
   - reference: pubchem.aid:1740
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1740, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_059107 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.1585
   units: uM
-  target_enzyme: UniProtKB:NP_059107
 - assay: Confirmation Concentration-Response Assay for Enhancers of SMN2 Splice Variant
     Expression
   evidence:
   - reference: pubchem.aid:1740
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1740, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_059107 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.1
   units: uM
-  target_enzyme: UniProtKB:NP_059107
 - assay: Confirmation Concentration-Response Assay for Enhancers of SMN2 Splice Variant
     Expression
   evidence:
   - reference: pubchem.aid:1740
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1740, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_059107 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.3548
   units: uM
-  target_enzyme: UniProtKB:NP_059107
   notes: 318 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
 related_records:
@@ -487,6 +492,10 @@ discussions:
     upstream cross-reference error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:46Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

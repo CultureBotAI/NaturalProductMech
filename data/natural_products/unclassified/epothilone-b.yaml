@@ -156,9 +156,10 @@ bioactivities:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 3.3498
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
     (r) AML: AML-191 cell line'
   evidence:
@@ -268,9 +269,10 @@ bioactivities:
   - reference: pubchem.aid:1346985
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1346985, deposited by 824; assay type Confirmatory.
+      Target accession ADZ17384 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 7.9433
   units: uM
-  target_enzyme: UniProtKB:ADZ17384
 - assay: P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line,
     qHTS therapeutic library screen
   evidence:
@@ -340,25 +342,28 @@ bioactivities:
   - reference: pubchem.aid:1346983
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1346983, deposited by 824; assay type Confirmatory.
+      Target accession EDM11231 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 10.0
   units: uM
-  target_enzyme: UniProtKB:EDM11231
 - assay: S16 Schwann cell PMP22 intronic element beta-lactamase assay
   evidence:
   - reference: pubchem.aid:624044
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624044, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_058733 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0112
   units: uM
-  target_enzyme: UniProtKB:NP_058733
 - assay: S16 Schwann cell PMP22 intronic element firefly luciferase assay
   evidence:
   - reference: pubchem.aid:624032
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624032, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_058733 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0573
   units: uM
-  target_enzyme: UniProtKB:NP_058733
   notes: 92 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
 bioactivity_summary:
@@ -513,6 +518,10 @@ discussions:
     upstream cross-reference error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

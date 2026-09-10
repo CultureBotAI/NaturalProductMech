@@ -121,19 +121,21 @@ bioactivities:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.4611
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: Anti-Malarial Hsp90 Inhibitors Measured in Microorganism System Using Plate
     Reader - 2121-01_Inhibitor_Dose_CherryPick_Activity
   evidence:
   - reference: pubchem.aid:540268
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 540268, deposited by Broad Institute; assay type Confirmatory.
+      Target accession XP_001348591 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   measurement_type: EC50
   value: 0.195
   units: uM
-  target_enzyme: UniProtKB:XP_001348591
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
     (r) AML: AML-191 cell line'
   evidence:
@@ -313,6 +315,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:26Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

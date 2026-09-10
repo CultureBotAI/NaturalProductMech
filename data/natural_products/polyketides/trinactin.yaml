@@ -74,9 +74,10 @@ bioactivities:
   - reference: pubchem.aid:2202728
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2202728, deposited by NCGC; assay type Confirmatory.
+      Target accession ADZ17385 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 4.8517
   units: uM
-  target_enzyme: UniProtKB:ADZ17385
 - assay: GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA)
     expression
   evidence:
@@ -355,6 +356,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:38Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

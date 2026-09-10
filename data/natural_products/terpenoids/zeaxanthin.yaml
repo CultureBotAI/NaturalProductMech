@@ -322,9 +322,10 @@ bioactivities:
   - reference: pubchem.aid:1346983
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1346983, deposited by 824; assay type Confirmatory.
+      Target accession EDM11231 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 15.8489
   units: uM
-  target_enzyme: UniProtKB:EDM11231
 - assay: qHTS Assay for Identifying Gametocytocidal Compounds
   evidence:
   - reference: pubchem.aid:743244
@@ -435,9 +436,10 @@ bioactivities:
   - reference: pubchem.aid:743083
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 743083, deposited by 824; assay type Confirmatory.
+      Target accession EAW77416 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 33.4915
   units: uM
-  target_enzyme: UniProtKB:EAW77416
 - assay: qHTS assay to identify aromatase inhibitors - cell viability counter screen
   evidence:
   - reference: pubchem.aid:743084
@@ -451,45 +453,50 @@ bioactivities:
   - reference: pubchem.aid:743036
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 743036, deposited by 824; assay type Confirmatory.
+      Target accession AAI32976 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 16.9301
   units: uM
-  target_enzyme: UniProtKB:AAI32976
 - assay: 'qHTS assay to identify small molecule agonists of the androgen receptor
     (AR) signaling pathway: Summary'
   evidence:
   - reference: pubchem.aid:743053
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743053, deposited by 824; assay type Summary.
+    notes: PubChem BioAssay AID 743053, deposited by 824; assay type Summary. Target
+      accession AAI32976 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 26.8325
   units: uM
-  target_enzyme: UniProtKB:AAI32976
 - assay: qHTS assay to identify small molecule agonists of the estrogen receptor alpha
     (ER-alpha) signaling pathway
   evidence:
   - reference: pubchem.aid:743075
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 743075, deposited by 824; assay type Confirmatory.
+      Target accession AEP43755 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 10.6822
   units: uM
-  target_enzyme: UniProtKB:AEP43755
 - assay: qHTS assay to identify small molecule agonists of the peroxisome proliferator-activated
     receptor gamma (PPARg) signaling pathway
   evidence:
   - reference: pubchem.aid:743094
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 743094, deposited by 824; assay type Confirmatory.
+      Target accession BAH02283 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 21.3138
   units: uM
-  target_enzyme: UniProtKB:BAH02283
 - assay: qHTS assay to identify small molecule antagonists of the androgen receptor
     (AR) signaling pathway
   evidence:
   - reference: pubchem.aid:743035
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 743035, deposited by 824; assay type Confirmatory.
+      Target accession AAI32976 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 26.8325
   units: uM
-  target_enzyme: UniProtKB:AAI32976
   notes: 14 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
 bioactivity_summary:
@@ -542,6 +549,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:52Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

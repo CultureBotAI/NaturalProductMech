@@ -250,8 +250,9 @@ bioactivities:
   - reference: PMID:7816802
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1346722, deposited by IUPHAR-DB; assay type Other.
+      Target accession NP_058692 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_058692
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:7508
@@ -313,6 +314,10 @@ discussions:
     upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:04Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

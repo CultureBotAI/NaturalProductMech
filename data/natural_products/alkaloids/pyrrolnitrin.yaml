@@ -212,18 +212,20 @@ bioactivities:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 21.136
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: CYP3A4 induction through human pregnane X receptor (PXR) by small molecules,
     qHTS assay
   evidence:
   - reference: pubchem.aid:1346984
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1346984, deposited by 824; assay type Confirmatory.
+      Target accession ABI96208 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 11.2202
   units: uM
-  target_enzyme: UniProtKB:ABI96208
 - assay: Cytotoxicity counterscreen for inhibitors of SARS-CoV-2 cell entry
   evidence:
   - reference: pubchem.aid:1645845
@@ -237,17 +239,19 @@ bioactivities:
   - reference: pubchem.aid:1346985
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1346985, deposited by 824; assay type Confirmatory.
+      Target accession ADZ17384 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 14.1254
   units: uM
-  target_enzyme: UniProtKB:ADZ17384
 - assay: 'Inhibitors of USP1/UAF1: Pilot qHTS'
   evidence:
   - reference: pubchem.aid:504865
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504865, deposited by NCGC; assay type Confirmatory.
+      Target accession AAH18745 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 39.8107
   units: uM
-  target_enzyme: UniProtKB:AAH18745
   activity_class: ENZYME_INHIBITOR
 - assay: P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line,
     qHTS therapeutic library screen
@@ -306,9 +310,10 @@ bioactivities:
   - reference: pubchem.aid:2546
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2546, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_035411 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 12.5893
   units: uM
-  target_enzyme: UniProtKB:NP_035411
   activity_class: ENZYME_INHIBITOR
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
     factor 3 (EPAC1)
@@ -349,18 +354,20 @@ bioactivities:
   - reference: pubchem.aid:504332
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504332, deposited by NCGC; assay type Confirmatory.
+      Target accession CAQ07474 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 3.5481
   units: uM
-  target_enzyme: UniProtKB:CAQ07474
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Small Molecule Inhibitors of the Human hERG Channel Activity
   evidence:
   - reference: pubchem.aid:588834
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 588834, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_001191727 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 35.4813
   units: uM
-  target_enzyme: UniProtKB:NP_001191727
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS assay for identifying genotoxic compounds that show differential cytotoxicity
     against isogenic chicken DT40 cell lines with known DNA damage response pathways
@@ -482,6 +489,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:07Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

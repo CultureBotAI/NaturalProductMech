@@ -50,11 +50,11 @@ bioactivities:
   - reference: PMID:20729810
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 3NYN_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KD
   value: 1.0
   units: uM
-  target_enzyme: UniProtKB:3NYN_A
   activity_class: ENZYME_INHIBITOR
 bioactivity_summary:
 - ENZYME_INHIBITOR
@@ -105,6 +105,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

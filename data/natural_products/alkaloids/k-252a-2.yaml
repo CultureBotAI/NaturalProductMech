@@ -90,11 +90,11 @@ bioactivities:
   - reference: PMID:19008858
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977608, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 3F69_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: IC50
   value: 1.0
   units: uM
-  target_enzyme: UniProtKB:3F69_A
   activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
@@ -102,11 +102,11 @@ bioactivities:
   - reference: PMID:14559966
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 1R0P_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KD
   value: 0.01
   units: uM
-  target_enzyme: UniProtKB:1R0P_A
   activity_class: ENZYME_INHIBITOR
 - assay: 'Kinase Assay from Article 10.1074/jbc.M413155200: "Pim-1 ligand-bound structures
     reveal the mechanism of serine/threonine kinase inhibition by LY294002."'
@@ -163,9 +163,9 @@ bioactivities:
   - reference: PMID:14559966
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1811, deposited by Shanghai Institute of Organic Chemistry;
-      assay type Other.
+      assay type Other. Target accession 1R0P_A was left ungrounded because PubChem
+      did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:1R0P_A
   activity_class: ENZYME_INHIBITOR
 - assay: NCI human tumor cell line growth inhibition assay. Data for the 786-0 Non-Small
     Cell Lung cell line, single concentration
@@ -322,6 +322,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:56Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

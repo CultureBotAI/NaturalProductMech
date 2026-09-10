@@ -39,9 +39,9 @@ bioactivities:
   - reference: pubchem.aid:687007
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 687007, deposited by The Scripps Research Institute
-      Molecular Screening Center; assay type Screening.
+      Molecular Screening Center; assay type Screening. Target accession NP_044650
+      was left ungrounded because PubChem did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_044650
   activity_class: ENZYME_INHIBITOR
 - assay: 'Counterscreen for inhibitors of the Steroid Receptor Coactivator 2 (SRC2;
     NCOA2): Luminescence-based cell-based high throughput assay to identify inhibitors
@@ -50,9 +50,9 @@ bioactivities:
   - reference: pubchem.aid:652007
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 652007, deposited by The Scripps Research Institute
-      Molecular Screening Center; assay type Screening.
+      Molecular Screening Center; assay type Screening. Target accession NP_044650
+      was left ungrounded because PubChem did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_044650
   activity_class: ENZYME_INHIBITOR
 - assay: Luminescence-based cell-based high throughput confirmation assay to identify
     inhibitors of the Steroid Receptor Coactivator 2 (SRC2; NCOA2)
@@ -60,9 +60,9 @@ bioactivities:
   - reference: pubchem.aid:652008
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 652008, deposited by The Scripps Research Institute
-      Molecular Screening Center; assay type Screening.
+      Molecular Screening Center; assay type Screening. Target accession NP_006531
+      was left ungrounded because PubChem did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_006531
   activity_class: ENZYME_INHIBITOR
 - assay: Luminescence-based cell-based primary high throughput screening assay to
     identify inhibitors of COUP-TFII (NR2F2)
@@ -70,9 +70,9 @@ bioactivities:
   - reference: pubchem.aid:686940
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 686940, deposited by The Scripps Research Institute
-      Molecular Screening Center; assay type Screening.
+      Molecular Screening Center; assay type Screening. Target accession NP_066285
+      was left ungrounded because PubChem did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_066285
   activity_class: ENZYME_INHIBITOR
 - assay: Luminescence-based cell-based primary high throughput screening assay to
     identify inhibitors of the Steroid Receptor Coactivator 2 (SRC2; NCOA2)
@@ -80,9 +80,9 @@ bioactivities:
   - reference: pubchem.aid:651957
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 651957, deposited by The Scripps Research Institute
-      Molecular Screening Center; assay type Screening.
+      Molecular Screening Center; assay type Screening. Target accession NP_006531
+      was left ungrounded because PubChem did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_006531
   activity_class: ENZYME_INHIBITOR
 bioactivity_summary:
 - ENZYME_INHIBITOR
@@ -132,6 +132,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:34Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -295,11 +295,11 @@ bioactivities:
   - reference: PMID:10198642
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977608, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 3GWX_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: IC50
   value: 4.0
   units: uM
-  target_enzyme: UniProtKB:3GWX_A
   activity_class: ENZYME_INHIBITOR
 - assay: 'HepG2 viability counterscreen (readout 1: protease activity) against the
     NCATS DSHEA and TCM libraries'
@@ -314,27 +314,30 @@ bioactivities:
   - reference: pubchem.aid:504845
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504845, deposited by NCGC; assay type Confirmatory.
+      Target accession ABC94591 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 8.4368
   units: uM
-  target_enzyme: UniProtKB:ABC94591
   activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibitors of USP1/UAF1: Pilot qHTS'
   evidence:
   - reference: pubchem.aid:504865
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504865, deposited by NCGC; assay type Confirmatory.
+      Target accession AAH18745 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 79.4328
   units: uM
-  target_enzyme: UniProtKB:AAH18745
   activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibitors of the vitamin D receptor (VDR): qHTS'
   evidence:
   - reference: pubchem.aid:504847
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504847, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_001017535 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 39.8107
   units: uM
-  target_enzyme: UniProtKB:NP_001017535
   activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
     Peroxidase 4 (GPX4)
@@ -466,9 +469,10 @@ bioactivities:
   - reference: pubchem.aid:1030
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1030, deposited by NCGC; assay type Confirmatory.
+      Target accession AAP35567 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 39.8107
   units: uM
-  target_enzyme: UniProtKB:AAP35567
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase
     (PPTase)
@@ -476,9 +480,10 @@ bioactivities:
   - reference: pubchem.aid:1490
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1490, deposited by NCGC; assay type Confirmatory.
+      Target accession AAG24257 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 89.1251
   units: uM
-  target_enzyme: UniProtKB:AAG24257
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase
     (PPTase)
@@ -486,18 +491,20 @@ bioactivities:
   - reference: pubchem.aid:1490
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1490, deposited by NCGC; assay type Confirmatory.
+      Target accession AAG24257 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 70.7946
   units: uM
-  target_enzyme: UniProtKB:AAG24257
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a
   evidence:
   - reference: pubchem.aid:504332
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504332, deposited by NCGC; assay type Confirmatory.
+      Target accession CAQ07474 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 5.0119
   units: uM
-  target_enzyme: UniProtKB:CAQ07474
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Fluorescence Polarization Assay for Inhibitors of MLL CXXC domain -
     DNA interaction
@@ -505,9 +512,10 @@ bioactivities:
   - reference: pubchem.aid:2662
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2662, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_005924 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 50.1187
   units: uM
-  target_enzyme: UniProtKB:NP_005924
   activity_class: ENZYME_INHIBITOR
   notes: 12 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
@@ -663,6 +671,10 @@ discussions:
     upstream cross-reference error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:51Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

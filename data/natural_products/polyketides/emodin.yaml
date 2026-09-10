@@ -292,9 +292,10 @@ bioactivities:
   - reference: pubchem.aid:1963586
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963586, deposited by 824; assay type Confirmatory.
+      Target accession AAH96839 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.0033
   units: uM
-  target_enzyme: UniProtKB:AAH96839
 - assay: A Cell Based Secondary Assay To Explore Cytotoxicity of Compounds that Inhibit
     Mycobacterium Tuberculosis
   evidence:
@@ -321,18 +322,20 @@ bioactivities:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 1.8356
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: A quantitative high throughput screen for small molecules that induce DNA
     re-replication in SW480 colon adenocarcinoma cells.
   evidence:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 25.929
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen
   evidence:
   - reference: pubchem.aid:1963315
@@ -384,9 +387,10 @@ bioactivities:
   - reference: pubchem.aid:1347398
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory.
+      Target accession AAA68151 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 15.5351
   units: uM
-  target_enzyme: UniProtKB:AAA68151
 - assay: 'Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS
     assay: Summary'
   evidence:
@@ -400,10 +404,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2061107
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary.
+    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Target
+      accession NP_000015 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 30.6379
   units: uM
-  target_enzyme: UniProtKB:NP_000015
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
     (r) AML: AML-191 cell line'
   evidence:
@@ -465,17 +470,19 @@ bioactivities:
   - reference: pubchem.aid:1346978
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1346978, deposited by 824; assay type Confirmatory.
+      Target accession AAP35329 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 15.0057
   units: uM
-  target_enzyme: UniProtKB:AAP35329
 - assay: Caspase-3/7 induction in HepG2 cells by small molecules, qHTS assay
   evidence:
   - reference: pubchem.aid:1346978
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1346978, deposited by 824; assay type Confirmatory.
+      Target accession CAC88866 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 15.0057
   units: uM
-  target_enzyme: UniProtKB:CAC88866
 - assay: Caspase-3/7 induction in HepG2 cells by small molecules, qHTS cell viability
     counter screen
   evidence:
@@ -634,6 +641,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

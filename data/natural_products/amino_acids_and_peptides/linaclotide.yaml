@@ -61,22 +61,25 @@ bioactivities:
   - reference: PMID:17694454
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1345486, deposited by IUPHAR-DB; assay type Other.
+      Target accession NP_004954 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_004954
 - assay: Human Guanylyl cyclase-C (Receptor Guanylyl Cyclase (RGC) family)
   evidence:
   - reference: PMID:20863829
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1345486, deposited by IUPHAR-DB; assay type Other.
+      Target accession NP_004954 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_004954
 - assay: Rat Guanylyl cyclase-C (Receptor Guanylyl Cyclase (RGC) family)
   evidence:
   - reference: PMID:20863829
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1345496, deposited by IUPHAR-DB; assay type Other.
+      Target accession NP_037302 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:NP_037302
 bioactivity_summary:
 - ENZYME_INHIBITOR
 bgc_class:
@@ -125,6 +128,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:56Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

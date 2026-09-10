@@ -487,6 +487,31 @@ biosynthetic_gene_clusters:
   - PKS
   - SACCHARIDE
   link_evidence_basis: CLUSTER_UNSTATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0000055
+  source_label: erythromycin A
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-b3f7c4d402
+- source: MIBIG
+  source_id: BGC0000054
+  source_label: erythromycin
+  source_version: '5'
+  minted_identifier: naturalproductmech:mibig-5bb659e981
+- source: CHEBI
+  source_id: CHEBI:42355
+  source_label: erythromycin A
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-20b468efe3
+grounding_status: EXACT
+curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000054, BGC0000055.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
 biosynthetic_pathway:
 - step_number: 10
   enzyme_id: UniProtKB:Q00441
@@ -533,54 +558,6 @@ biosynthetic_pathway:
     snippet: eryG codes for the structural gene of this enzyme
     notes: UniProtKB:A4F7P5 resolves to eryG/SACE_0728 from Saccharopolyspora erythraea
       NRRL 2338 and links this reaction to RHEA:32647.
-source_concepts:
-- source: MIBIG
-  source_id: BGC0000055
-  source_label: erythromycin A
-  source_version: '5'
-  minted_identifier: naturalproductmech:mibig-b3f7c4d402
-- source: MIBIG
-  source_id: BGC0000054
-  source_label: erythromycin
-  source_version: '5'
-  minted_identifier: naturalproductmech:mibig-5bb659e981
-- source: CHEBI
-  source_id: CHEBI:42355
-  source_label: erythromycin A
-  source_version: 3-star
-  minted_identifier: naturalproductmech:chebi-20b468efe3
-grounding_status: EXACT
-curation_status: SEEDED
-discussions:
-- discussion_id: shared-structure
-  kind: CURATION_TODO
-  status: OPEN
-  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000054, BGC0000055.
-    Confirm they describe the same compound rather than an upstream cross-reference
-    error.'
-curation_history:
-- timestamp: '2026-09-10T05:54:14Z'
-  curator: seed_from_sources
-  action: SEEDED_FROM_SOURCES
-  changes: Seeded from the committed inventories in data/raw/.
-- timestamp: '2026-09-10T05:54:38Z'
-  curator: codex
-  action: RECORD_CURATED
-  changes: Added a partial BIOSYNTHESIS causal graph and pathway steps for the experimentally
-    characterized S. erythraea NRRL 2338 EryF, EryK and EryG tailoring reactions;
-    left DEBS core and glycosylation steps uncurated.
-  llm_assisted: true
-- timestamp: '2026-09-10T05:58:48Z'
-  curator: codex
-  action: RECORD_CURATED
-  changes: Removed PubChem target accessions from erythromycin A bioactivities when
-    RefSeq, GenPept or PDB-chain values had been incorrectly stored as UniProtKB CURIEs.
-  llm_assisted: true
-- timestamp: '2026-09-10T06:08:31Z'
-  curator: codex
-  action: RECORD_CURATED
-  changes: Aligned the EryG product node to the erythromycin A(1+) ChEBI participant
-    used by RHEA:32647 while leaving the record identity on neutral erythromycin A.
 causal_graphs:
 - graph_id: erythromycin-a-biosynthesis
   scope: BIOSYNTHESIS
@@ -673,3 +650,26 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: EryG catalyzes RHEA:32647, whose ChEBI participants are the pH 7.3 erythromycin
         cations.
+curation_history:
+- timestamp: '2026-09-10T05:54:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T05:54:38Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a partial BIOSYNTHESIS causal graph and pathway steps for the experimentally
+    characterized S. erythraea NRRL 2338 EryF, EryK and EryG tailoring reactions;
+    left DEBS core and glycosylation steps uncurated.
+  llm_assisted: true
+- timestamp: '2026-09-10T05:58:48Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Removed PubChem target accessions from erythromycin A bioactivities when
+    RefSeq, GenPept or PDB-chain values had been incorrectly stored as UniProtKB CURIEs.
+  llm_assisted: true
+- timestamp: '2026-09-10T06:08:31Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Aligned the EryG product node to the erythromycin A(1+) ChEBI participant
+    used by RHEA:32647 while leaving the record identity on neutral erythromycin A.

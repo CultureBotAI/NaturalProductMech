@@ -216,9 +216,10 @@ bioactivities:
   - reference: pubchem.aid:1347053
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1347053, deposited by NCGC; assay type Confirmatory.
+      Target accession ASK51714 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 2.9566
   units: uM
-  target_enzyme: UniProtKB:ASK51714
 - assay: P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line,
     qHTS therapeutic library screen
   evidence:
@@ -377,6 +378,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

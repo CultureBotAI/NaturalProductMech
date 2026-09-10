@@ -282,9 +282,10 @@ bioactivities:
   - reference: pubchem.aid:2517
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2517, deposited by NCGC; assay type Confirmatory.
+      Target accession 1DE9_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 3.5481
   units: uM
-  target_enzyme: UniProtKB:1DE9_A
   activity_class: ENZYME_INHIBITOR
 - assay: DSSTox (FDAMDD) FDA Maximum (Recommended) Daily Dose Database
   evidence:
@@ -384,6 +385,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

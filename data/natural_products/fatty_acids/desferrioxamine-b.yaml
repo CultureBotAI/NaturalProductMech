@@ -289,9 +289,10 @@ bioactivities:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_056979 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.1458
   units: uM
-  target_enzyme: UniProtKB:NP_056979
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
     (r) AML: AML-191 cell line'
   evidence:
@@ -393,9 +394,10 @@ bioactivities:
   - reference: pubchem.aid:504444
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_001138884 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 14.581
   units: uM
-  target_enzyme: UniProtKB:NP_001138884
 - assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
     (ALOX12): Round 2'
   evidence:
@@ -661,6 +663,10 @@ discussions:
     upstream cross-reference error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:12Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

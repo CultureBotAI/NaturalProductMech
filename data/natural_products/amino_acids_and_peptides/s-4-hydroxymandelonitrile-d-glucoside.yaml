@@ -296,20 +296,20 @@ bioactivities:
   - reference: PMID:11106394
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 1E55_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KI
   value: 76.0
   units: uM
-  target_enzyme: UniProtKB:1E55_A
   activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data derived from PDB
   evidence:
   - reference: PMID:11106394
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1811, deposited by Shanghai Institute of Organic Chemistry;
-      assay type Other.
+      assay type Other. Target accession 1E55_A was left ungrounded because PubChem
+      did not provide a UniProtKB accession.
   call: ACTIVE
-  target_enzyme: UniProtKB:1E55_A
   activity_class: ENZYME_INHIBITOR
 bioactivity_summary:
 - ENZYME_INHIBITOR
@@ -368,6 +368,10 @@ discussions:
     different compounds then one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:02Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

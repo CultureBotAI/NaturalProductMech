@@ -67,20 +67,21 @@ bioactivities:
   - reference: pubchem.aid:2202728
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2202728, deposited by NCGC; assay type Confirmatory.
+      Target accession ADZ17385 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 0.3099
   units: uM
-  target_enzyme: UniProtKB:ADZ17385
 - assay: Experimentally measured binding affinity data (IC50) for protein-ligand complexes
     derived from PDB
   evidence:
   - reference: PMID:17683942
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977608, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 2Q8I_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: IC50
   value: 400.0
   units: uM
-  target_enzyme: UniProtKB:2Q8I_A
   activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
@@ -88,11 +89,11 @@ bioactivities:
   - reference: PMID:9925731
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 1BGQ_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KD
   value: 0.0027
   units: uM
-  target_enzyme: UniProtKB:1BGQ_A
   activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
@@ -100,11 +101,11 @@ bioactivities:
   - reference: PMID:18334211
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 2ZBK_B was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KD
   value: 2.0
   units: uM
-  target_enzyme: UniProtKB:2ZBK_B
   activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
@@ -112,11 +113,11 @@ bioactivities:
   - reference: PMID:18440021
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 3CGY_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KD
   value: 715.0
   units: uM
-  target_enzyme: UniProtKB:3CGY_A
   activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
@@ -124,11 +125,11 @@ bioactivities:
   - reference: PMID:19236053
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 2WER_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KD
   value: 0.09
   units: uM
-  target_enzyme: UniProtKB:2WER_A
   activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
     derived from PDB
@@ -495,6 +496,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

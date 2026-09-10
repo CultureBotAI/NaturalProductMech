@@ -195,11 +195,11 @@ bioactivities:
   - reference: PMID:22629386
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
+      Chemistry; assay type Other. Target accession 3RE4_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.
   measurement_type: KD
   value: 0.04
   units: uM
-  target_enzyme: UniProtKB:3RE4_A
   activity_class: ENZYME_INHIBITOR
 related_records:
 - corpus: AntibioticMech
@@ -324,6 +324,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:50:24Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

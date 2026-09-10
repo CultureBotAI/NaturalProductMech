@@ -235,10 +235,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2061107
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary.
+    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Target
+      accession NP_000015 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 10.5909
   units: uM
-  target_enzyme: UniProtKB:NP_000015
 - assay: 'Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists:
     luciferase reporter qHTS assay'
   evidence:
@@ -253,18 +254,20 @@ bioactivities:
   - reference: pubchem.aid:1671199
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory.
+      Target accession EAW99313 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 27.5404
   units: uM
-  target_enzyme: UniProtKB:EAW99313
 - assay: 'Cytochrome P450 family 2 subfamily D member 6 (CYP2D6) small molecule antagonists:
     luciferase cell-based qHTS assay'
   evidence:
   - reference: pubchem.aid:1645840
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1645840, deposited by NCGC; assay type Confirmatory.
+      Target accession ANW61984 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 38.9018
   units: uM
-  target_enzyme: UniProtKB:ANW61984
 - assay: 'Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists:
     luciferase cell-based qHTS assay'
   evidence:
@@ -279,9 +282,10 @@ bioactivities:
   - reference: pubchem.aid:1963596
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963596, deposited by NCGC; assay type Confirmatory.
+      Target accession NP_000756 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 10.964
   units: uM
-  target_enzyme: UniProtKB:NP_000756
 - assay: 'Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo
     Assay'
   evidence:
@@ -341,19 +345,21 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:926
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 926, deposited by NCGC; assay type Confirmatory.
+    notes: PubChem BioAssay AID 926, deposited by NCGC; assay type Confirmatory. Target
+      accession AAR07906 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 5.0119
   units: uM
-  target_enzyme: UniProtKB:AAR07906
 - assay: 'qHTS Assay for Agonists of the Thyroid Stimulating Hormone Receptor: Activators
     of Intracellular cAMP Concentrations in Parental HEK 293'
   evidence:
   - reference: pubchem.aid:938
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 938, deposited by NCGC; assay type Confirmatory.
+    notes: PubChem BioAssay AID 938, deposited by NCGC; assay type Confirmatory. Target
+      accession AAR07906 was left ungrounded because PubChem did not provide a UniProtKB
+      accession.
   value: 5.0119
   units: uM
-  target_enzyme: UniProtKB:AAR07906
 - assay: qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen
     2 blue channel
   evidence:
@@ -396,18 +402,20 @@ bioactivities:
   - reference: pubchem.aid:2451
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2451, deposited by NCGC; assay type Confirmatory.
+      Target accession 2ISV_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 12.5594
   units: uM
-  target_enzyme: UniProtKB:2ISV_A
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Human Jumonji Domain Containing 2E (JMJD2E)
   evidence:
   - reference: pubchem.aid:2147
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2147, deposited by NCGC; assay type Confirmatory.
+      Target accession 2W2I_A was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 39.8107
   units: uM
-  target_enzyme: UniProtKB:2W2I_A
   activity_class: ENZYME_INHIBITOR
 - assay: qHTS assay for small molecule agonists of the p53 signaling pathway
   evidence:
@@ -431,9 +439,10 @@ bioactivities:
   - reference: pubchem.aid:1259369
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1259369, deposited by 824; assay type Confirmatory.
+      Target accession AAI13617 was left ungrounded because PubChem did not provide
+      a UniProtKB accession.
   value: 4.7308
   units: uM
-  target_enzyme: UniProtKB:AAI13617
 - assay: Drug repurposing screens with cells derived from glioblastoma tumor samples
   evidence:
   - reference: pubchem.aid:1345199
@@ -492,6 +501,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-10T06:49:44Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
