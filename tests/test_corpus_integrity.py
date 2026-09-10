@@ -448,3 +448,37 @@ def test_no_discussion_quotes_a_name_picked_from_a_set(records):
                 f"{record['identifier']}: names in a name-disagreement discussion are "
                 f"not sorted, so the record does not re-emit deterministically: {mibig}"
             )
+
+
+def test_no_xref_points_at_the_records_own_identifier(records):
+    """An xref means the same structure somewhere else. One equal to this
+    record's own identifier is a self-loop in any graph built from xrefs; 20
+    records carried one, hidden because MIBiG spells the prefix `chebi:` and
+    the identifier is `CHEBI:` (#61)."""
+    offenders = [
+        record["identifier"] for record in records
+        if record["identifier"] in (record.get("xrefs") or [])
+    ]
+    assert not offenders, f"records whose xrefs include their own identifier: {offenders[:6]}"
+
+
+def test_xrefs_use_the_identifier_spelling_for_namespaces_this_corpus_mints(records):
+    """A ChEBI xref has to match a ChEBI identifier by string or it joins to
+    nothing. Namespaces the corpus never mints an identifier in — npatlas,
+    pubchem, chembl, lotus, cyanometdb — keep the source's lowercase spelling,
+    because there is no join to preserve there (#61)."""
+    minted_prefixes = {identifier.split(":")[0] for identifier in
+                       (record["identifier"] for record in records)}
+    offenders = []
+    for record in records:
+        for xref in record.get("xrefs") or []:
+            prefix = xref.split(":")[0]
+            if prefix in minted_prefixes:
+                continue
+            clash = {p for p in minted_prefixes if p.lower() == prefix.lower()}
+            if clash:
+                offenders.append((record["identifier"], xref, sorted(clash)))
+    assert not offenders, (
+        f"xrefs whose prefix differs only in case from one the corpus mints "
+        f"identifiers in, so they will not join: {offenders[:6]}"
+    )
