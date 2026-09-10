@@ -23,9 +23,6 @@ pieces named as available that were never built.
   and cannot be cached in CI. Derive a corpus-scoped adapter from `names.dmp`
   in `extract_ncbi_taxonomy.py` and point the config at it. A local run
   already found 123 distinct mismatching pairs and 58 unknown ids (#62, #63).
-- **#57 — `just new-history` does not exist.** The vendored curation-history
-  contract names it; TraitMech and HabitatMech have it. Port the fleet's
-  recipe rather than invent one. Nothing to scaffold until M6 starts.
 
 ## Fleet
 

@@ -5,6 +5,20 @@ set positional-arguments := true
 schema := "src/naturalproductmech/schema/naturalproductmech.yaml"
 corpus := "data/natural_products"
 
+# Shared tooling from a culturebotai-claw checkout. Only new-history reaches
+# it; everything else here uses the vendored copies and needs no claw at all.
+# Set CLAW_SRC to override the sibling-checkout default.
+claw_src := env_var_or_default("CLAW_SRC", "../culturebotai-claw/src")
+
+_require-claw module:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    if [ ! -d "{{claw_src}}/{{module}}" ]; then
+      echo "error: shared module '{{module}}' not found under '{{claw_src}}'." >&2
+      echo "Set CLAW_SRC to the src/ directory of a culturebotai-claw checkout." >&2
+      exit 1
+    fi
+
 default:
     @just --list --unsorted
 
@@ -163,6 +177,19 @@ report-label-drift:
 # Curator-owned fields are taken from the file, exactly as the writer takes them.
 verify-reproduction *args:
     uv run python scripts/check_reproduction.py {{args}}
+
+# The vendored contract in src/naturalproductmech/schema/history.yaml says not
+# to hand-write a curation-history record: "Scaffold with `just new-history`,
+# which guarantees a schema-valid skeleton and a collision-free name, then edit
+# the `details` field" (#57). The scaffolder lives in claw, so this needs a
+# checkout, and the guard says so rather than failing as an unknown recipe.
+# "$@" not {{args}}: see `set positional-arguments`.
+#
+# Scaffold an append-only curation-history record (needs a claw checkout).
+new-history *args: (_require-claw "kg_microbe_history")
+    #!/usr/bin/env bash
+    set -euo pipefail
+    PYTHONPATH="{{claw_src}}" uv run python -m kg_microbe_history new "$@"
 
 # The curation backlog by queue, ranked. Derived from the committed tree, so a
 # row leaves a queue when the thing that put it there changes.

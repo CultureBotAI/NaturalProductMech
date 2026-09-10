@@ -74,6 +74,7 @@ and why — NCBITaxon above all — is in `conf/id_label_targets.yaml`.
 
 just worklist          # the curation backlog by queue, ranked
 just review-queue      # the same, exhaustive, for `curate-yaml-record`
+just new-history       # scaffold a curation-history record (needs a claw checkout)
 
 Not available, and not to be run expecting output: `just render` /
 `just render-check` / `just chemical-map` (#53).
