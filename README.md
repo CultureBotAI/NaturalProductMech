@@ -88,7 +88,7 @@ first exactly where the isolation report left it.
 <!-- END GENERATED CORPUS STATS -->
 
 ```bash
-just install        # uv sync --extra dev
+just install        # uv sync --locked --extra dev
 just qc             # every local and CI quality gate
 just seed           # dry run: what would be written, per pathway
 just report         # corpus, grounding and origin-evidence coverage
