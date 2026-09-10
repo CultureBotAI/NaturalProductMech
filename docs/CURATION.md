@@ -18,6 +18,34 @@ concept, keyed by that concept's **minted identifier** — the stable
 Decisions apply at seed time, so a decision changes the corpus only after
 `just seed-apply` — and `just verify-reproduction` then proves the corpus matches.
 
+## What a re-seed keeps, and what it overwrites
+
+The corpus is generated, so a re-seed rebuilds every record. What it does *not*
+do is discard the work a curator did on one. Four things are carried forward
+from the file, matched on the record's Standard InChIKey so a reused slug
+cannot inherit another compound's curation:
+
+| carried | why |
+|---|---|
+| `biosynthetic_pathway`, `causal_graphs` | M6 curation; the seeder does not produce them at all |
+| `curation_history` | the trail, and re-stamped only when seeder-owned content changed |
+| `curation_status` when it is not `SEEDED` | only a curator moves a record off `SEEDED`, so only a curator can move it back |
+| curator-owned fields on a `discussion` | the seeder raises the question, you answer it |
+
+On a discussion the seeder owns `discussion_id`, `kind` and `prompt` — it
+re-raises the question each run — and everything else is yours: `status`,
+`resolution_note`, `resolved_date`, `posed_by`, `rationale`, `evidence`,
+`proposed_experiments`, `notes`. Matching is on `discussion_id`. A discussion
+the seeder stops raising is dropped along with its answer, which is right: the
+condition that prompted it is gone.
+
+**Everything else on a record is the seeder's**, and editing it by hand will be
+reverted on the next `just seed-apply` — and, since #85, reported by
+`just verify-reproduction` before then. A label, a producer claim or a
+classification that is wrong is a bug in an extractor, the seeder, or
+`curation/decisions.tsv`; fixing it in the record fixes one row and leaves the
+cause in place.
+
 ## Evidence rules
 
 - Evidence sits on the **narrowest object it supports**. Every
