@@ -886,3 +886,68 @@ def test_reading_a_record_that_is_not_there_or_is_broken_is_not_an_error(tmp_pat
     broken = tmp_path / "broken.yaml"
     broken.write_text("identifier: [unclosed\n", encoding="utf-8")
     assert seed.read_record(broken) is None
+
+
+def _structure(key="AAA-BBB-C"):
+    return {"chemical_structure": {"standard_inchi_key": key}}
+
+
+def test_a_curator_status_survives_a_reseed():
+    """`curate-yaml-record`'s first instruction is to move a record off
+    SEEDED, and before #79 the next re-seed put it straight back."""
+    payload = {**_structure(), "curation_status": "SEEDED"}
+    existing = {**_structure(), "curation_status": "REVIEWED"}
+    seed.carry_curator_owned_fields(payload, existing)
+    assert payload["curation_status"] == "REVIEWED"
+
+
+def test_the_seeder_still_sets_the_status_of_a_record_nobody_has_curated():
+    payload = {**_structure(), "curation_status": "SEEDED"}
+    existing = {**_structure(), "curation_status": "SEEDED"}
+    seed.carry_curator_owned_fields(payload, existing)
+    assert payload["curation_status"] == "SEEDED"
+
+
+def test_a_resolved_discussion_keeps_its_answer_and_loses_its_tampering():
+    """The seeder raises the question and owns `prompt`, `kind` and
+    `discussion_id`; everything else on a discussion is the answer (#79)."""
+    payload = {**_structure(), "discussions": [
+        {"discussion_id": "structure-disagreement", "kind": "CURATION_TODO",
+         "status": "OPEN", "prompt": "the seeder's question"},
+    ]}
+    existing = {**_structure(), "discussions": [
+        {"discussion_id": "structure-disagreement", "kind": "CURATION_TODO",
+         "status": "RESOLVED", "prompt": "a tampered question",
+         "resolution_note": "ChEBI's structure is right.", "posed_by": "a.curator"},
+    ]}
+    seed.carry_curator_owned_fields(payload, existing)
+    discussion = payload["discussions"][0]
+    assert discussion["status"] == "RESOLVED"
+    assert discussion["resolution_note"] == "ChEBI's structure is right."
+    assert discussion["posed_by"] == "a.curator"
+    assert discussion["prompt"] == "the seeder's question"
+
+
+def test_an_answer_to_a_question_the_seeder_no_longer_asks_is_dropped():
+    """The condition that raised it is gone, so the record should not keep
+    carrying a resolution to something nobody is asking."""
+    payload = {**_structure(), "discussions": [
+        {"discussion_id": "name-disagreement", "status": "OPEN", "prompt": "q"},
+    ]}
+    existing = {**_structure(), "discussions": [
+        {"discussion_id": "structure-disagreement", "status": "RESOLVED", "prompt": "q"},
+    ]}
+    seed.carry_curator_owned_fields(payload, existing)
+    assert [d["discussion_id"] for d in payload["discussions"]] == ["name-disagreement"]
+    assert payload["discussions"][0]["status"] == "OPEN"
+
+
+def test_nothing_is_carried_across_a_different_structure():
+    """The guard that makes all of this safe: a slug reused for a different
+    compound must not inherit the previous compound's curation."""
+    payload = {**_structure("AAA-BBB-C"), "curation_status": "SEEDED"}
+    existing = {**_structure("ZZZ-YYY-X"), "curation_status": "REVIEWED",
+                "biosynthetic_pathway": [{"step": 1}]}
+    seed.carry_curator_owned_fields(payload, existing)
+    assert payload["curation_status"] == "SEEDED"
+    assert "biosynthetic_pathway" not in payload

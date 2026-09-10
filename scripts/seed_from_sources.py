@@ -220,6 +220,22 @@ CURATOR_OWNED_CARRIED_FIELDS = (
     "causal_graphs",
 )
 
+#: Slots on a Discussion that belong to whoever worked it, not to the seeder.
+#: The seeder owns `discussion_id`, `kind` and `prompt` — it raises the
+#: question and rewrites it each run — and everything else is the answer.
+CURATOR_OWNED_DISCUSSION_FIELDS = (
+    "status",
+    "resolved_date",
+    "resolution_note",
+    "posed_by",
+    "posed_date",
+    "rationale",
+    "attaches_to",
+    "proposed_experiments",
+    "evidence",
+    "notes",
+)
+
 
 def record_path(pathway: str, slug: str) -> Path:
     """Where a record lives. The directory IS the filing decision."""
@@ -245,6 +261,28 @@ def carry_curator_owned_fields(payload: dict[str, Any], existing: dict[str, Any]
             payload[field] = existing[field]
     if "curation_history" in existing:
         payload["curation_history"] = existing["curation_history"]
+
+    # A curator can only ever move a record OFF `SEEDED`, so a status that is
+    # not `SEEDED` is a decision somebody made and the seeder must not undo it.
+    # This is the first thing `curate-yaml-record` tells a curator to do, and
+    # before this the next re-seed silently put it back (#79).
+    status = existing.get("curation_status")
+    if status and status != "SEEDED":
+        payload["curation_status"] = status
+
+    # The seeder raises a discussion; a curator answers it. Carry the answer
+    # onto the question the seeder just re-raised, matched on discussion_id.
+    # A discussion the seeder no longer raises is dropped with its answer,
+    # which is right: the condition that prompted it is gone.
+    answered = {d.get("discussion_id"): d for d in existing.get("discussions") or []
+                if isinstance(d, dict) and d.get("discussion_id")}
+    for discussion in payload.get("discussions") or []:
+        previous_discussion = answered.get(discussion.get("discussion_id"))
+        if not previous_discussion:
+            continue
+        for field in CURATOR_OWNED_DISCUSSION_FIELDS:
+            if field in previous_discussion:
+                discussion[field] = previous_discussion[field]
 
 
 def carry_existing_curator_owned_fields(payload: dict[str, Any], path: Path) -> None:
