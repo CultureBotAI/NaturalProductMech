@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Browse — NaturalProductMech{% endblock %}
+{% block content %}
+<h1>Browse</h1>
+<p class="sub">{{ total }} records across {{ pathways|length }} filing pathways.</p>
+{% for pathway in pathways %}
+<h2>{{ pathway.title }} <span class="tag">{{ pathway.count }}</span></h2>
+<ul class="records">
+{% for record in pathway.records %}
+  <li><a href="{{ pathway.slug }}/{{ record.slug }}.html">{{ record.label }}</a></li>
+{% endfor %}
+</ul>
+{% endfor %}
+{% endblock %}

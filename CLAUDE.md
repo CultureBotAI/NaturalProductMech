@@ -76,8 +76,11 @@ just worklist          # the curation backlog by queue, ranked
 just review-queue      # the same, exhaustive, for `curate-yaml-record`
 just new-history       # scaffold a curation-history record (needs a claw checkout)
 
-Not available, and not to be run expecting output: `just render` /
-`just render-check` / `just chemical-map` (#53).
+just render            # regenerate the committed site under pages/
+just render-check      # fail if pages/ is out of step with the corpus
+
+Not available: `just chemical-map` and the structure embeddings, which are the
+site's second stage and not a precondition for it (#53).
 
 For an upstream refresh, every source has a free `-dry` run and a writing run;
 the two networked batches also have a one-call `-canary`. MIBiG is the anchor
@@ -118,10 +121,9 @@ seeder-owned content is unchanged keeps the `curation_history` it already had
 changes zero files, so a PR that changes three records shows three changed
 files. Before that rule, every re-seed re-stamped all 3,115.
 
-**There is no site yet.** `src/naturalproductmech/templates/` is empty and
-`pages/` does not exist (#53). When the renderer lands the rule is
-AntibioticMech's: edit templates, run `just render`, commit the regenerated
-pages, never hand-edit `pages/`.
+**Edit site templates, not `pages/`.** Change
+`src/naturalproductmech/templates/`, run `just render`, commit the regenerated
+pages. `just render-check` is in the gate, so a hand-edited page fails CI.
 
 **Do not edit `src/naturalproductmech/schema/mech_shared.yaml` or
 `history.yaml` here.** They are vendored byte-identically across the Mech

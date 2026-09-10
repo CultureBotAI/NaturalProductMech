@@ -212,11 +212,12 @@ After the canary is correct:
 
 ```bash
 just seed-apply
+just render
 just docs-stats
 just qc
 ```
 
-(`just chemical-map` and `just render` join this list when the site exists — #53.)
+(`just chemical-map` joins this list when the structure map exists — #53.)
 
 If the change is source adoption rather than record addition, also verify the
 source queue and provenance:
@@ -226,9 +227,9 @@ just source-queue
 just provenance-check
 ```
 
-Once the site exists (#53), `pages/**` and
-`data/embeddings/chemical-structure-map.json` are generated: rebuild them, do
-not edit them by hand.
+`pages/**` is generated: run `just render` and commit it, never edit a page by
+hand — `just render-check` is in the gate. The chemical structure map is still
+owed (#53).
 
 ## Report
 

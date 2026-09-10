@@ -52,6 +52,12 @@ COMMANDS = [
         "Closed-mode validation checks every record's shape, including unknown fields.",
     ),
     (
+        "generated site",
+        [sys.executable, "scripts/render_pages.py", "--check"],
+        "pages/ is in step with the corpus. The site is committed, so it goes stale "
+        "exactly as a record could go stale against data/raw/ (#53).",
+    ),
+    (
         "corpus reproduction",
         [sys.executable, "scripts/check_reproduction.py", "--summary"],
         "Every record is byte-identical to what the seeder builds from data/raw/. "

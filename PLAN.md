@@ -450,8 +450,8 @@ NaturalProductMech/
   data/raw/                    # committed inventories + MANIFEST.yaml (sha256, versions)
   data/natural_products/<np_pathway>/<slug>.yaml
   data/natural_products/PATHS.tsv  RETIRED.tsv
-  src/naturalproductmech/{schema,curate,validation}/   # templates/ empty until #53
-  scripts/  tests/  research/  docs/{HARMONIZATION,CURATION}.md   # pages/ owed (#53)
+  src/naturalproductmech/{schema,curate,validation,templates}/
+  scripts/  tests/  pages/  research/  docs/{HARMONIZATION,CURATION}.md
   .claude/skills/
   .github/workflows/main.yaml     # vendored-sync joins the gate at M4 admission
 ```
@@ -482,8 +482,8 @@ at the current pin *without* a consumer entry yet (the checker will fail on
 identity until M4 — record that as the expected red gate, or run it in
 `--offline` mode until admission).
 
-*Landed as #7 — without the site renderer and chemical-map, which were not
-carried over and are owed (#53).*
+*Landed as #7 — without the site renderer, which arrived later in #53, and
+the chemical-map, which is still owed.*
 
 **M2 — ChEBI + MIBiG seed (Phase A core).** `conf/np_roles.tsv` reviewed;
 ChEBI inventory limited to 3-star compounds bearing an allow-listed role or
@@ -492,8 +492,8 @@ Canary one record (`just seed-canary CHEBI:42355` — erythromycin A, so the
 AntibioticMech join is exercised on day one), then `just seed-apply`. Site
 rendered. README statistics block generated. First adversarial review pass.
 
-*Landed as #15 (MIBiG) and #21 (ChEBI, AntibioticMech pin). The site was not
-rendered (#53).*
+*Landed as #15 (MIBiG) and #21 (ChEBI, AntibioticMech pin); the site followed
+in #53.*
 
 **M3 — LOTUS occurrences.** Wikidata SPARQL or the LOTUS bulk dump, filtered
 to microbial taxa, exact InChIKey join, `occurrences` populated with the

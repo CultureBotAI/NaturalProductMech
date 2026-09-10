@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ pathway.title }} — NaturalProductMech{% endblock %}
+{% block content %}
+<h1>{{ pathway.title }}</h1>
+<p class="sub">{{ pathway.count }} record{{ '' if pathway.count == 1 else 's' }}
+filed under this pathway. {{ pathway.blurb }}</p>
+<div class="scroll"><table>
+<tr><th>Compound</th><th>Identity</th><th>Producers</th><th>Occurrences</th><th>Gene clusters</th></tr>
+{% for record in pathway.records %}
+<tr>
+  <td><a href="{{ record.slug }}.html">{{ record.label }}</a></td>
+  <td class="mono">{{ record.identifier }}</td>
+  <td>{% if record.causal %}<span class="tag causal">{{ record.causal }} causal</span>
+      {% endif %}{% if record.weak %}<span class="tag weak">{{ record.weak }} asserted</span>{% endif %}</td>
+  <td>{{ record.occurrences or '' }}</td>
+  <td>{{ record.clusters or '' }}</td>
+</tr>
+{% endfor %}
+</table></div>
+{% endblock %}

@@ -30,7 +30,7 @@ not implement fixes.
 
 **1. Almost every claim is checkable on a bare clone, so check it.**
 The repository commits its evidence: the inventories in `data/raw/`, every
-record YAML under `data/natural_products/`, the generated site in `pages/` (once #53 lands),
+record YAML under `data/natural_products/`, the generated site in `pages/`,
 the slug lockfile and the retired-slug ledger, and the pinned AntibioticMech
 InChIKey inventory. An issue asserting something about a record, a producer, a
 BGC, a slug or a count can be answered by reading the file. The exception is
