@@ -4,7 +4,7 @@ Operational guidance for Claude Code and other editing agents in this repository
 
 **Status (2026-09-09): seeded, 3,115 records, curation not started.** Nine
 sources are adopted and every record reproduces offline from the committed
-inventories in `data/raw/` (`just verify-corpus`). `producer_organisms` and
+inventories in `data/raw/` (`just verify-reproduction`). `producer_organisms` and
 `biosynthetic_gene_clusters` are on every record; `occurrences` on 2,342;
 `bioactivities` and `molecular_targets` are sparse; `biosynthetic_pathway` and
 `causal_graphs` are empty because M6 has not begun. Two things this file once
@@ -58,7 +58,8 @@ just qc                # every local and CI quality gate
 just report            # corpus, grounding, producer and BGC coverage statistics
 just test              # unit and corpus-integrity tests
 just validate-all      # closed-schema validation of every record
-just verify-corpus     # prove data/natural_products reproduces from its inputs
+just verify-reproduction # prove every record is what the seeder builds from data/raw/
+just verify-corpus     # PATHS.tsv agrees with the filesystem, and the pathway pin holds
 just provenance-check  # every committed inventory matches MANIFEST.yaml
 just source-queue      # the ranked data-source queue and what is unverified in it
 just docs-stats        # refresh the generated README statistics block
@@ -99,7 +100,7 @@ just seed-apply --prune         # only when stale records should be removed
 **Never hand-edit a record.** `data/natural_products/` is generated from the
 committed inventories plus curation decisions. Put source harmonization changes
 in the extractor or seeder, and curator decisions in `curation/decisions.tsv`.
-`just verify-corpus` rejects drift.
+`just verify-reproduction` rejects drift.
 
 **Never write a record except through `write_validated_natural_product`.** It
 runs closed-schema validation before writing. Every mutation must also append a
@@ -147,7 +148,7 @@ and CI sync `--locked`, so a lock out of step with `pyproject.toml` fails
 instead of being re-resolved. `just install` also pulls the `chemistry`
 extra — the pinned RDKit the MIBiG extractor computes InChIKeys with — which
 CI does not need and does not install. After changing a dependency, run `uv lock` and
-commit the lockfile in the same PR; `verify-corpus` only proves reproduction
+commit the lockfile in the same PR; `verify-reproduction` only proves it
 under the environment the lock names.
 
 **Treat extractor drift as evidence to inspect.** `data/raw/MANIFEST.yaml`

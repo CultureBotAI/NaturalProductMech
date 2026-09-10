@@ -252,7 +252,7 @@ is a committed inventory, `data/raw/npclassifier.tsv`, keyed by Standard
 InChIKey and carrying pathway, superclass, class, the glycoside flag and the
 model version, with its sha256 in `data/raw/MANIFEST.yaml` like every other
 inventory. This is not a special case; it is what makes the pipeline offline and
-`verify-corpus` meaningful. A seed-time network call to a classifier API would
+`verify-reproduction` meaningful. A seed-time call to a classifier API would
 break both.
 
 **The pathway is pinned per record at first seed.** `PATHS.tsv` already locks
@@ -330,8 +330,8 @@ refuse to write a record without. Rules:
    inventory instead of MIBiG directly — a decision for that repository.
 3. **The cross-link is computed, not curated.** A committed inventory
    `data/raw/antibioticmech_inchikeys.tsv` (InChIKey → identifier → slug,
-   pinned to an AntibioticMech commit) drives the link; `just verify-corpus`
-   reproduces it. Drift means one corpus moved and the pin needs advancing,
+   pinned to an AntibioticMech commit) drives the link; `just verify-reproduction`
+   proves the corpus matches it. Drift means one corpus moved and the pin needs advancing,
    which is a visible PR, not a silent divergence.
 4. **Other siblings**, later and by the same mechanism: TraitMech traits
    (`produces <class>`), HabitatMech (producer isolation environment via
