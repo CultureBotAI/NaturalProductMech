@@ -78,6 +78,7 @@ cluster link claims: 3449 (1352 demonstrated)
   CLUSTER_UNSTATED                     1985
 
 records where a producer taxon is independently corroborated by a cited occurrence: 732
+records whose only origin evidence is a gene cluster with no named host: 27
 
 These grade two different questions and they come apart. A producer
 claim says this TAXON makes the compound; a cluster link says this

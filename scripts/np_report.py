@@ -104,6 +104,18 @@ def summarize(records: list[dict[str, Any]]) -> dict[str, Any]:
             "by_basis": dict(sorted(producer_bases.items())),
         },
         "producers_corroborated_by_an_occurrence": corroborated[0],
+        # A record whose origin rests only on a gene cluster whose host NCBI
+        # does not name. Counted because otherwise withholding those producer
+        # claims (#62, #68) reads as a hole in producer_organisms coverage
+        # rather than as what it is: the compound has a characterized locus
+        # and an anonymous producer, which for a sponge symbiont is the
+        # honest state and not a gap to be filled.
+        "origin_only_from_an_unnamed_host": sum(
+            1 for record in records
+            if not (record.get("producer_organisms") or [])
+            and not (record.get("occurrences") or [])
+            and (record.get("biosynthetic_gene_clusters") or [])
+        ),
         "cluster_link_claims": {
             "total": sum(cluster_bases.values()),
             "demonstrated": cluster_bases.get("CLUSTER_DEMONSTRATED", 0),
@@ -154,6 +166,8 @@ def render(summary: dict[str, Any]) -> str:
     lines.append("")
     lines.append(f"records where a producer taxon is independently corroborated by a "
                  f"cited occurrence: {summary['producers_corroborated_by_an_occurrence']}")
+    lines.append(f"records whose only origin evidence is a gene cluster with no named "
+                 f"host: {summary['origin_only_from_an_unnamed_host']}")
     lines.append("")
     lines.append("These grade two different questions and they come apart. A producer")
     lines.append("claim says this TAXON makes the compound; a cluster link says this")
