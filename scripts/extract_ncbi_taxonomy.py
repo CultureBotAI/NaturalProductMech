@@ -334,7 +334,14 @@ def resolve(archive: Path, wanted: set[str]) -> tuple[dict[str, tuple[str, str]]
     taxon's accepted name and another's synonym resolves to the accepted one.
     """
     counts: Counter[str] = Counter()
-    lowered = {name.lower(): name for name in wanted}
+    # Sorted, not a set comprehension: ChEBI supplies the same organism under
+    # two casings (`Geodia barretti` and `Geodia Barretti`), and a dict built
+    # by iterating a set keeps whichever it saw last — a choice Python's
+    # randomised string hashing makes differently each process. That made this
+    # inventory reproduce differently roughly every other run (#74).
+    lowered: dict[str, str] = {}
+    for name in sorted(wanted):
+        lowered.setdefault(name.lower(), name)
     found: dict[str, tuple[str, str]] = {}
 
     with tarfile.open(archive, "r:gz") as tar:

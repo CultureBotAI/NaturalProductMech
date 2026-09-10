@@ -970,20 +970,31 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         # somebody's structure is wrong upstream, and no naming rule should
         # quietly decide which (#22).
         if authoritative:
-            for other in {r["compound_name"] for r in rows if r["compound_name"]}:
-                if names_disagree(label, other):
-                    discussions.append({
-                        "discussion_id": "name-disagreement",
-                        "kind": "CONTROVERSY",
-                        "status": "OPEN",
-                        "prompt": (
-                            f"ChEBI calls this structure {authoritative!r} and MIBiG calls "
-                            f"it {other!r}. They share a Standard InChIKey, so if the two "
-                            f"names denote different compounds then one upstream record has "
-                            f"the wrong structure. Check which."
-                        ),
-                    })
-                    break
+            # Sorted, and every disagreeing name rather than the first: this
+            # iterated a set and broke on the first match, so a structure with
+            # two disagreeing MIBiG names quoted one of them at random — set
+            # order varies per process, and three records re-emitted
+            # differently on a coin flip (#75). Naphthalene-1,3,6,8-tetrol has
+            # both `1,3,6,8-tetrahydroxynaphthalene` and the typo
+            # `1,3,5,8-tetrahydroxynapthalene`, so half the time the curator
+            # was shown the correct name as the conflict.
+            disagreeing = sorted(
+                other for other in {r["compound_name"] for r in rows if r["compound_name"]}
+                if names_disagree(label, other)
+            )
+            if disagreeing:
+                quoted = ", ".join(repr(name) for name in disagreeing)
+                discussions.append({
+                    "discussion_id": "name-disagreement",
+                    "kind": "CONTROVERSY",
+                    "status": "OPEN",
+                    "prompt": (
+                        f"ChEBI calls this structure {authoritative!r} and MIBiG calls "
+                        f"it {quoted}. They share a Standard InChIKey, so if the "
+                        f"names denote different compounds then one upstream record has "
+                        f"the wrong structure. Check which."
+                    ),
+                })
 
         # A collision that survives must be visible, not silent.
         if len(rows) > 1 and len({r["mibig_accession"] for r in rows}) > 1:
