@@ -141,6 +141,7 @@ molecular_targets:
     evidence_type: DATABASE_ASSERTION
     notes: BindingDB own-curated affinity; measured at pH 8.0000, 37.00 C C; qualifier
       EQUAL.
+  taxon_id: NCBITaxon:5833
   taxon_label: Plasmodium falciparum
 - target_label: DNA helicase [35-727]
   target_type: PROTEIN
@@ -154,6 +155,7 @@ molecular_targets:
     evidence_type: DATABASE_ASSERTION
     notes: BindingDB own-curated affinity; measured at pH 8.0000, 37.00 C C; qualifier
       EQUAL.
+  taxon_id: NCBITaxon:5833
   taxon_label: Plasmodium falciparum
 - target_label: Plasminogen
   target_type: PROTEIN
@@ -168,6 +170,7 @@ molecular_targets:
     notes: BindingDB own-curated affinity; qualifier EQUAL.
   protein_examples:
   - UniProtKB:P00747
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 - target_label: Urokinase-type plasminogen activator
   target_type: PROTEIN
@@ -182,6 +185,7 @@ molecular_targets:
     notes: BindingDB own-curated affinity; qualifier EQUAL.
   protein_examples:
   - UniProtKB:P00749
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 bioactivity_summary:
 - ANTIPARASITIC
@@ -271,7 +275,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 curation_history:
-- timestamp: '2026-09-10T05:06:13Z'
+- timestamp: '2026-09-10T05:45:42Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -499,6 +499,7 @@ molecular_targets:
     evidence_type: DATABASE_ASSERTION
     notes: BindingDB own-curated affinity; measured at pH 7.0000, 25.00 C C; qualifier
       EQUAL.
+  taxon_id: NCBITaxon:263
   taxon_label: Francisella tularensis
 - target_label: 3-hydroxyacyl-[acyl-carrier-protein] dehydratase FabZ [1-175]
   target_type: PROTEIN
@@ -514,6 +515,7 @@ molecular_targets:
       EQUAL.
   protein_examples:
   - UniProtKB:B1JQH1
+  taxon_id: NCBITaxon:632
   taxon_label: Yersinia pestis
 - target_label: Casein kinase II subunit alpha
   target_type: PROTEIN
@@ -529,6 +531,7 @@ molecular_targets:
       EQUAL.
   protein_examples:
   - UniProtKB:P28523
+  taxon_id: NCBITaxon:4577
   taxon_label: Zea mays
 - target_label: Casein kinase II subunit alpha
   target_type: PROTEIN
@@ -544,6 +547,7 @@ molecular_targets:
       EQUAL.
   protein_examples:
   - UniProtKB:P68400
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 - target_label: Procathepsin L
   target_type: PROTEIN
@@ -558,6 +562,7 @@ molecular_targets:
     notes: BindingDB own-curated affinity; qualifier EQUAL.
   protein_examples:
   - UniProtKB:P07711
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 - target_label: Procathepsin L
   target_type: PROTEIN
@@ -572,6 +577,7 @@ molecular_targets:
     notes: BindingDB own-curated affinity; qualifier EQUAL.
   protein_examples:
   - UniProtKB:P07711
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 bioactivity_summary:
 - CYTOTOXIC
@@ -627,7 +633,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-10T05:06:18Z'
+- timestamp: '2026-09-10T05:45:46Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -533,6 +533,7 @@ molecular_targets:
     notes: BindingDB own-curated affinity; measured at pH 7.0000; qualifier EQUAL.
   protein_examples:
   - UniProtKB:H9TB17
+  taxon_id: NCBITaxon:10141
   taxon_label: Cavia porcellus
 - target_label: Aromatase
   target_type: PROTEIN
@@ -547,6 +548,7 @@ molecular_targets:
     notes: BindingDB own-curated affinity; qualifier EQUAL.
   protein_examples:
   - UniProtKB:P11511
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 - target_label: Carbonic anhydrase 1
   target_type: PROTEIN
@@ -561,6 +563,7 @@ molecular_targets:
     notes: BindingDB own-curated affinity; measured at pH 7.4000; qualifier EQUAL.
   protein_examples:
   - UniProtKB:P00915
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 - target_label: Carbonic anhydrase 2
   target_type: PROTEIN
@@ -575,6 +578,7 @@ molecular_targets:
     notes: BindingDB own-curated affinity; measured at pH 7.4000; qualifier EQUAL.
   protein_examples:
   - UniProtKB:P00918
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 - target_label: Carbonic anhydrase 3
   target_type: PROTEIN
@@ -589,6 +593,7 @@ molecular_targets:
     notes: BindingDB own-curated affinity; measured at pH 7.4000; qualifier EQUAL.
   protein_examples:
   - UniProtKB:Q3SZX4
+  taxon_id: NCBITaxon:9913
   taxon_label: Bos taurus
 - target_label: Carbonic anhydrase 4
   target_type: PROTEIN
@@ -603,6 +608,7 @@ molecular_targets:
     notes: BindingDB own-curated affinity; measured at pH 7.4000; qualifier EQUAL.
   protein_examples:
   - UniProtKB:P22748
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 - target_label: Carbonic anhydrase 6
   target_type: PROTEIN
@@ -617,6 +623,7 @@ molecular_targets:
     notes: BindingDB own-curated affinity; measured at pH 7.4000; qualifier EQUAL.
   protein_examples:
   - UniProtKB:P23280
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 - target_label: Estrogen receptor
   target_type: PROTEIN
@@ -632,6 +639,7 @@ molecular_targets:
       EQUAL.
   protein_examples:
   - UniProtKB:P03372
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 - target_label: Estrogen receptor beta
   target_type: PROTEIN
@@ -647,6 +655,7 @@ molecular_targets:
       EQUAL.
   protein_examples:
   - UniProtKB:Q92731
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 bioactivity_summary:
 - ANTIVIRAL
@@ -699,7 +708,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-10T05:06:12Z'
+- timestamp: '2026-09-10T05:45:40Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

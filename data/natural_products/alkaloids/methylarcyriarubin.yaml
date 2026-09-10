@@ -33,6 +33,7 @@ molecular_targets:
       GREATER_THAN.
   protein_examples:
   - UniProtKB:P68403
+  taxon_id: NCBITaxon:10116
   taxon_label: Rattus norvegicus
 - target_label: cAMP-dependent protein kinase catalytic subunit alpha
   target_type: PROTEIN
@@ -48,6 +49,7 @@ molecular_targets:
       GREATER_THAN.
   protein_examples:
   - UniProtKB:P00517
+  taxon_id: NCBITaxon:9913
   taxon_label: Bos taurus
 bgc_class:
 - OTHER
@@ -88,7 +90,7 @@ discussions:
     symbiont that is the honest state. Name the producer if the primary literature
     does.'
 curation_history:
-- timestamp: '2026-09-10T05:06:19Z'
+- timestamp: '2026-09-10T05:45:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

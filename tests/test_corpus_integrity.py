@@ -424,3 +424,27 @@ def test_an_organism_label_resolves_to_one_taxon_id(records):
         f"organism labels resolving to several taxon ids rose to {len(ambiguous)}: "
         f"{list(ambiguous.items())[:4]}"
     )
+
+
+def test_no_discussion_quotes_a_name_picked_from_a_set(records):
+    """Guards the shape of #75 rather than the symptom.
+
+    A `name-disagreement` discussion quoted one MIBiG name chosen by set
+    iteration order, so three records re-emitted differently every other run
+    and `verify-corpus` could fail on a coin flip. The fix reports every
+    disagreeing name, sorted; this pins that they stay sorted, which is what
+    makes the record reproducible.
+    """
+    import re
+
+    for record in records:
+        for discussion in record.get("discussions") or []:
+            if discussion.get("discussion_id") != "name-disagreement":
+                continue
+            quoted = re.findall(r"'([^']*)'", discussion["prompt"])
+            # The first quoted name is ChEBI's; the rest are MIBiG's.
+            mibig = quoted[1:]
+            assert mibig == sorted(mibig), (
+                f"{record['identifier']}: names in a name-disagreement discussion are "
+                f"not sorted, so the record does not re-emit deterministically: {mibig}"
+            )

@@ -652,9 +652,9 @@ discussions:
   kind: CONTROVERSY
   status: OPEN
   prompt: ChEBI calls this structure 'all-cis-5,8,11,14,17-icosapentaenoic acid' and
-    MIBiG calls it 'eicoseicosapentaenoic acid'. They share a Standard InChIKey, so
-    if the two names denote different compounds then one upstream record has the wrong
-    structure. Check which.
+    MIBiG calls it 'eicosapentaenoic acid', 'eicoseicosapentaenoic acid'. They share
+    a Standard InChIKey, so if the names denote different compounds then one upstream
+    record has the wrong structure. Check which.
 - discussion_id: shared-structure
   kind: CURATION_TODO
   status: OPEN
@@ -662,7 +662,7 @@ discussions:
     BGC0000863, BGC0000865. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
 curation_history:
-- timestamp: '2026-09-10T05:06:14Z'
+- timestamp: '2026-09-10T05:45:42Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

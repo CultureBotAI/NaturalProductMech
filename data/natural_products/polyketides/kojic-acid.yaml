@@ -427,6 +427,7 @@ molecular_targets:
       EQUAL.
   protein_examples:
   - UniProtKB:Q00024
+  taxon_id: NCBITaxon:5341
   taxon_label: Agaricus bisporus
 - target_label: Polyphenol oxidase 1 [61-568]
   target_type: PROTEIN
@@ -441,6 +442,7 @@ molecular_targets:
     notes: BindingDB own-curated affinity; measured at pH 6.8000; qualifier EQUAL.
   protein_examples:
   - UniProtKB:Q00024
+  taxon_id: NCBITaxon:5341
   taxon_label: Agaricus bisporus
 - target_label: Polyphenol oxidase 1 [N65D,S176D,K211T,P277A,P406L]
   target_type: PROTEIN
@@ -470,6 +472,7 @@ molecular_targets:
     notes: BindingDB own-curated affinity; measured at 30.00 C C; qualifier EQUAL.
   protein_examples:
   - UniProtKB:O42713
+  taxon_id: NCBITaxon:5341
   taxon_label: Agaricus bisporus
 - target_label: Polyphenol oxidase 2
   target_type: PROTEIN
@@ -485,6 +488,7 @@ molecular_targets:
       EQUAL.
   protein_examples:
   - UniProtKB:O42713
+  taxon_id: NCBITaxon:5341
   taxon_label: Agaricus bisporus
 - target_label: Tyrosinase
   target_type: PROTEIN
@@ -500,6 +504,7 @@ molecular_targets:
       EQUAL.
   protein_examples:
   - UniProtKB:P14679
+  taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
 - target_label: Uncharacterized protein YOR062C
   target_type: PROTEIN
@@ -568,7 +573,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
-- timestamp: '2026-09-10T05:06:10Z'
+- timestamp: '2026-09-10T05:45:38Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
