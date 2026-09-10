@@ -145,6 +145,20 @@ verify-corpus *args:
 provenance-check:
     uv run python scripts/check_provenance.py
 
+# Blocking id<->label gate (validator vendored from claw): every configured
+# (id, label) pair under data/natural_products/ must correspond to the ontology
+# through OAK. Runs in its own workflow, not in `just qc`: it needs a cached
+# multi-GB ontology download. Targets, skipped prefixes and the reasons for
+# each live in conf/id_label_targets.yaml.
+validate-products:
+    uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml
+
+# The same check written to reports/label_drift.tsv without failing, so a red
+# build still ships the list it was red about.
+report-label-drift:
+    mkdir -p reports
+    uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml --report reports/label_drift.tsv
+
 # --- reporting ---------------------------------------------------------------
 # Corpus report: records per pathway, grounding, and origin-evidence coverage,
 # with producer claims split into causal and correlational.

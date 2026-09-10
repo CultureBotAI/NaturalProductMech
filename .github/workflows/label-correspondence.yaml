@@ -1,0 +1,70 @@
+name: label-correspondence
+
+# Blocking id<->label gate (validator vendored from claw): every configured
+# (id, label) pair under data/natural_products/ must correspond to the ontology
+# through OAK. Kept out of the qc job because it needs a cached multi-GB
+# ontology download that qc would repeat once per Python version in its
+# matrix, and because the ontology it resolves changes under the corpus rather
+# than with it. What is checked, what is skipped and why: conf/id_label_targets.yaml.
+
+on:
+  pull_request:
+    paths: &trigger_paths
+      - "data/natural_products/**"
+      - "scripts/validate_id_label_correspondence.py"
+      - "scripts/chem_formula.py"
+      - "conf/id_label_targets.yaml"
+      # The recipes are part of the gate: editing one has to re-run it.
+      - "justfile"
+      - ".github/workflows/label-correspondence.yaml"
+      - "pyproject.toml"
+      - "uv.lock"
+  push:
+    branches: [main]
+    paths: *trigger_paths
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: label-correspondence-${{ github.event_name == 'pull_request' && github.ref || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  label-correspondence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: extractions/setup-just@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Set up Python
+        run: uv python install 3.12
+      - name: Install dependencies
+        run: uv sync --locked --extra dev
+      # ChEBI as a semantic-sql database, about 4 GB uncompressed. The key has
+      # no lockfile hash: it is an ontology release, not a resolved dependency,
+      # so the cache is refreshed by bumping the suffix when a newer release is
+      # wanted. NCBITaxon is not here on purpose — its database is 13.5 GB,
+      # above the cache limit; conf/id_label_targets.yaml says what that costs.
+      - name: Cache OAK ontologies
+        uses: actions/cache@v4
+        with:
+          path: ~/.data/oaklib
+          key: oaklib-${{ runner.os }}-chebi-v1
+      - name: Generate id<->label drift report
+        run: just report-label-drift
+      - name: Upload drift report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: label-drift-report-${{ github.run_id }}
+          path: reports/label_drift.tsv
+          if-no-files-found: warn
+      - name: Enforce id<->label correspondence
+        run: just validate-products

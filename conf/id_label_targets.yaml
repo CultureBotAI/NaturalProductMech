@@ -1,0 +1,94 @@
+# Targets for scripts/validate_id_label_correspondence.py (vendored from claw).
+#
+# Which surfaces of this corpus carry an (id, label) pair claiming that an
+# ontology term denotes the thing the label names, and how strictly the label
+# must correspond to the ontology's own.
+#
+# A CURIE prefix is handled three ways: in `adapters` it is looked up through
+# that OAK ontology; in `ignored_prefixes` it is a legitimate non-OAK id and
+# the pair is SKIPPED_NO_ADAPTER; neither, and it is UNKNOWN_PREFIX (ERROR),
+# a typo or an unexpected new prefix that has to be triaged.
+#
+# What is checked, and against what:
+#   identifier / label                       the record's own identity, when
+#                                            grounded to ChEBI; minted
+#                                            `naturalproductmech:` ids skip
+#   taxon_id / taxon_label                   producers, occurrences, molecular
+#                                            targets (NCBITaxon)
+#   organism_taxon_id / organism_label       gene clusters (NCBITaxon)
+#   target_organism_id / target_organism_label   bioactivity assays (NCBITaxon)
+#   target_id / target_label                 molecular targets (UniProtKB, skip)
+#   enzyme_id / enzyme_label                 pathway steps (empty until M6)
+#   identifier / label on causal-graph nodes (empty until M6)
+#
+# NCBITaxon is listed and skipped, deliberately. The taxon pairs are the
+# largest surface in the corpus and the only adapter OAK offers is a 13.5 GB
+# semantic-sql database, above what a CI cache can hold. The pairs stay in
+# `pairs` so the drift report counts them as SKIPPED_NO_ADAPTER instead of
+# omitting them; `tests/test_corpus.py::test_taxon_labels_stay_consistent_for_an_id`
+# guards the one shape of the defect the corpus can check on its own. The fix
+# is a corpus-scoped adapter derived from NCBI's names.dmp, not a bigger cache
+# (#64).
+#
+# `source_concepts` is excluded: `source_label` is what the source called the
+# concept, quoted as provenance, so a difference from ChEBI's label is the data,
+# not drift. `related_records` is excluded: a sibling-corpus id with no
+# ontology behind it and no label beside it, which the walker would otherwise
+# report as EMPTY_LABEL. Nothing else is excluded, so a new (id, label) pair
+# anywhere in a record is checked by default.
+
+adapters:
+  CHEBI: sqlite:obo:chebi
+
+ignored_prefixes:
+  - naturalproductmech   # minted, content-hashed ids for ungrounded structures
+  - NCBITaxon            # see above
+  - UniProtKB            # protein accessions; the label is the protein name
+
+# A label matching an exact or related synonym is accepted: the corpus prefers
+# the name the literature uses over ChEBI's systematic primary label.
+synonym_scope: exact_related
+
+targets:
+  - name: records
+    kind: yaml
+    glob: "data/natural_products/**/*.yaml"
+    required: true
+    policy: canonical_or_synonym
+    pairs:
+      - [identifier, label]
+      - [taxon_id, taxon_label]
+      - [organism_taxon_id, organism_label]
+      - [target_organism_id, target_organism_label]
+      - [target_id, target_label]
+      - [enzyme_id, enzyme_label]
+    exclude_keys: [source_concepts, related_records]
+    # Accepted, not fixed. Eighteen are the same name in the corpus's own
+    # typography — Greek letters and a Unicode minus, which docs/HARMONIZATION.md
+    # prefers and which the validator's normaliser does not fold to ChEBI's
+    # spelled-out `alpha`/`beta`/`(-)`. Three are name variants on a structure
+    # ChEBI grounds by InChIKey: a curator confirms or relabels, and the entry
+    # stops applying the moment the label changes. Each entry is an exact
+    # (id, label) pair.
+    exceptions:
+      - { id: "CHEBI:338412", label: "(−)-anisomycin", reason: "typography: Unicode minus" }
+      - { id: "CHEBI:79391", label: "(−)-chuangxinmycin", reason: "typography: Unicode minus" }
+      - { id: "CHEBI:66678", label: "(−)-marinopyrrole A", reason: "typography: Unicode minus" }
+      - { id: "CHEBI:66679", label: "(−)-marinopyrrole B", reason: "typography: Unicode minus" }
+      - { id: "CHEBI:73237", label: "(−)-noscapine", reason: "typography: Unicode minus" }
+      - { id: "CHEBI:64974", label: "(−)-microperfuranone", reason: "typography: Unicode minus" }
+      - { id: "CHEBI:46702", label: "(−)-geosmin", reason: "typography: Unicode minus" }
+      - { id: "CHEBI:63703", label: "(−)-δ-cadinene", reason: "typography: Unicode minus, Greek letter" }
+      - { id: "CHEBI:10276", label: "α-ergocryptine", reason: "typography: Greek letter" }
+      - { id: "CHEBI:83206", label: "albomycin δ1", reason: "typography: Greek letter" }
+      - { id: "CHEBI:27826", label: "(S)-4-hydroxymandelonitrile β-D-glucoside", reason: "typography: Greek letter" }
+      - { id: "CHEBI:42639", label: "γ-butyrolactone", reason: "typography: Greek letter" }
+      - { id: "CHEBI:30939", label: "5α,9α,10β-labda-8(20),13-dien-15-yl diphosphate", reason: "typography: Greek letters" }
+      - { id: "CHEBI:17579", label: "β-carotene", reason: "typography: Greek letter" }
+      - { id: "CHEBI:63704", label: "(+)-Τ-muurolol", reason: "typography: Greek letter" }
+      - { id: "CHEBI:48741", label: "β-phellandrene", reason: "typography: Greek letter" }
+      - { id: "CHEBI:63468", label: "tirucalla-7,24-dien-3β-ol", reason: "typography: Greek letter" }
+      - { id: "CHEBI:17734", label: "α-cyclopiazonic acid", reason: "typography: Greek letter" }
+      - { id: "CHEBI:140442", label: "12-epi-fischerindole U isonitrile", reason: "name variant: ChEBI says 12-epi-fischerindole U; same InChIKey; curator to confirm" }
+      - { id: "CHEBI:85129", label: "Ristocetin A", reason: "name variant: ChEBI says ristocetin; same InChIKey; curator to confirm" }
+      - { id: "CHEBI:72590", label: "rhizoxin A", reason: "name variant: ChEBI says rhizoxin; same InChIKey; curator to confirm" }

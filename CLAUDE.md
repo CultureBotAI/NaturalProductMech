@@ -62,7 +62,14 @@ just verify-corpus     # prove data/natural_products reproduces from its inputs
 just provenance-check  # every committed inventory matches MANIFEST.yaml
 just source-queue      # the ranked data-source queue and what is unverified in it
 just docs-stats        # refresh the generated README statistics block
+just validate-products # id<->label gate through OAK; its own workflow, needs a cached ontology
+just report-label-drift  # the same, written to reports/label_drift.tsv without failing
 ```
+
+`validate-products` is the one gate outside `just qc` that is meant to be:
+it resolves ids through a multi-gigabyte ontology cache and runs in
+`.github/workflows/label-correspondence.yaml`. What it checks, what it skips
+and why — NCBITaxon above all — is in `conf/id_label_targets.yaml`.
 
 Not available, and not to be run expecting output: `just worklist` (#52),
 `just render` / `just render-check` / `just chemical-map` (#53).
