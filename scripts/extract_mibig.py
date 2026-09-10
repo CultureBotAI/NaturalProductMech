@@ -69,26 +69,6 @@ CONF_PATH = REPO_ROOT / "conf" / "sources.yaml"
 PRODUCER_EVIDENCE_PATH = REPO_ROOT / "conf" / "producer_evidence.tsv"
 RAW_DIR = REPO_ROOT / "data" / "raw"
 DOWNLOAD_DIR = REPO_ROOT / "downloads"
-
-#: NCBI Taxonomy nodes that are not organisms. MIBiG assigns them when a
-#: cluster came from a metagenome or an unnamed isolate, and three entries in
-#: 4.0 carry 12908 with labels like "Unknown. Unclassified." (#62).
-#:
-#: The taxon is blanked and the compound kept, rather than the row dropped.
-#: MIBiG is the corpus's sole admitting source — ChEBI grounds a structure but
-#: does not admit one — so dropping the row would delete the record: for
-#: elaiophylin, a 25-occurrence, 5-bioactivity record with an AntibioticMech
-#: link, over one unnamed producer. A characterized cluster IS an origin
-#: assertion whether or not its host has a name; pederin's real producer is an
-#: uncultured symbiont, which is precisely why MIBiG says 12908. So the
-#: compound, the structure and the cluster stay, and only the producer claim —
-#: the one that would name an organism — is withheld.
-NON_ORGANISM_TAXIDS = {
-    "1": "root",
-    "12908": "unclassified sequences",
-    "32644": "unidentified",
-    "131567": "cellular organisms",
-}
 MANIFEST_PATH = RAW_DIR / "MANIFEST.yaml"
 INVENTORY_NAME = "mibig_compounds.tsv"
 
@@ -303,10 +283,6 @@ def extract(path: Path, conf: dict, evidence_map: dict[str, str]) -> tuple[list[
         taxonomy = entry.get("taxonomy") or {}
         taxon_id = taxonomy.get("ncbiTaxId")
         taxon_label = str(taxonomy.get("name") or "").strip()
-        unnamed_producer = str(taxon_id or "") in NON_ORGANISM_TAXIDS
-        if unnamed_producer:
-            counts[f"unnamed_producer_taxon_{taxon_id}"] += 1
-            taxon_id, taxon_label = None, ""
 
         methods = locus_evidence_methods(entry)
         basis = grade_production(methods, evidence_map)
@@ -328,10 +304,12 @@ def extract(path: Path, conf: dict, evidence_map: dict[str, str]) -> tuple[list[
             if error:
                 counts[f"rejected_{error}"] += 1
                 continue
-            # No taxon at all, and not one of the non-organism nodes above:
-            # MIBiG 4.0 has none, so this is a guard rather than a filter. An
-            # entry that grows one should be looked at, not silently dropped.
-            if not taxon_id and not unnamed_producer:
+            # MIBiG 4.0 has no active entry without a taxonomy, so this is a
+            # guard rather than a filter. Whether the taxon NAMES an organism
+            # is a different question, decided at seed time against
+            # data/raw/taxon_non_organism.tsv (#62, #68) — the inventory
+            # records what MIBiG said either way.
+            if not taxon_id:
                 counts["rejected_no_taxon"] += 1
                 continue
             reference, reference_basis = primary_reference(entry, compound)
@@ -352,7 +330,7 @@ def extract(path: Path, conf: dict, evidence_map: dict[str, str]) -> tuple[list[
                 **structure,
                 "compound_classes": compound_class_labels(compound),
                 "database_ids": database_ids(compound),
-                "taxon_id": f"NCBITaxon:{taxon_id}" if taxon_id else "",
+                "taxon_id": f"NCBITaxon:{taxon_id}",
                 "taxon_label": taxon_label,
                 "bgc_classes": bgc_classes,
                 "bgc_subclasses": bgc_subclasses,

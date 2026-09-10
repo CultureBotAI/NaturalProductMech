@@ -352,13 +352,13 @@ discussions:
 - discussion_id: unnamed-producer
   kind: CURATION_TODO
   status: OPEN
-  prompt: 'MIBiG gives a non-organism NCBI taxonomy node for BGC0000053 (unclassified
-    sequences, unidentified, or a rank above species), so no producer claim is written
-    from it. The cluster is kept: a characterized locus is an origin assertion whether
-    or not its host is named, and for a compound from an uncultured symbiont that
-    is the honest state. Name the producer if the primary literature does.'
+  prompt: 'No producer claim is written from BGC0000053, which gives NCBITaxon:12908
+    (NCBI''s bin for unclassified sequences), because the taxon names no single organism.
+    The cluster is kept: a characterized locus is an origin assertion whether or not
+    its host has a name, and for a compound from an uncultured symbiont that is the
+    honest state. Name the producer if the primary literature does.'
 curation_history:
-- timestamp: '2026-09-10T04:11:59Z'
+- timestamp: '2026-09-10T05:06:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

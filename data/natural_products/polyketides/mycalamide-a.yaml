@@ -24,25 +24,10 @@ bgc_class:
 xrefs:
 - pubchem:10345974
 - npatlas:NPA028635
-producer_organisms:
-- taxon_id: NCBITaxon:1163772
-  taxon_label: sponge metagenome
-  evidence_basis: SOURCE_ASSERTION
-  biosynthetic_gene_cluster: mibig:BGC0002055
-  source: MIBIG
-  source_version: '3'
-  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
-    this field grades the taxon claim, which is a different question.'
-  evidence:
-  - reference: DOI:10.1073/pnas.1919245117
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0002055 entry version 3; citation taken from the entry level
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0002055
   entry_version: '3'
   entry_status: active
-  organism_taxon_id: NCBITaxon:1163772
-  organism_label: sponge metagenome
   evidence:
   - reference: DOI:10.1073/pnas.1919245117
     evidence_type: DATABASE_ASSERTION
@@ -64,8 +49,17 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+discussions:
+- discussion_id: unnamed-producer
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'No producer claim is written from BGC0002055, which gives NCBITaxon:1163772
+    (under metagenomes — a community, not an organism), because the taxon names no
+    single organism. The cluster is kept: a characterized locus is an origin assertion
+    whether or not its host has a name, and for a compound from an uncultured symbiont
+    that is the honest state. Name the producer if the primary literature does.'
 curation_history:
-- timestamp: '2026-09-10T04:11:55Z'
+- timestamp: '2026-09-10T05:06:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

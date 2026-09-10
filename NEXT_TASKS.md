@@ -53,11 +53,6 @@ pieces named as available that were never built.
 Found by the first id-label run (#50) and by scoping it. Each is a wrong or
 unjoinable value that `just qc` reproduces faithfully.
 
-- **#68 — 68 producer claims name an uncultured bacterium or a metagenome.**
-  39 of them (`uncultured bacterium`, `uncultured organism`, `sponge
-  metagenome`) name no organism at all; 29 name a strain or a genus and look
-  legitimate. Decide the rule in `docs/HARMONIZATION.md` before the extractor
-  enforces it — it is a curation judgement, not a defect. Follows #62.
 - **#61 — `xrefs` say `chebi:` where the corpus says `CHEBI:`.** MIBiG's
   spelling passed through the seeder; 54 records. Normalise at the seeder.
 - **#69 — every re-seed re-stamps all 3,115 curation timestamps**, so every

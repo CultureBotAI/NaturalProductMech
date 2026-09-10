@@ -361,12 +361,12 @@ def group_by_structure(rows: list[dict[str, str]]) -> dict[str, list[dict[str, s
     return grouped
 
 
-def mibig_cluster(row: dict[str, str], accession: str) -> dict[str, Any]:
-    """The cluster a MIBiG row describes, with its host only when named.
+def mibig_cluster(row: dict[str, str], accession: str, *, host: str | None) -> dict[str, Any]:
+    """The cluster a MIBiG row describes, with its host only when it is named.
 
     ``organism_taxon_id`` is optional in the schema, which is what lets a
-    cluster from a metagenome or an unnamed isolate stay in the corpus without
-    inventing a host for it (#62).
+    cluster from a metagenome or an unplaced isolate stay in the corpus
+    without inventing a host for it (#62, #68).
     """
     cluster: dict[str, Any] = {
         "accession": f"mibig:{accession}",
@@ -375,10 +375,10 @@ def mibig_cluster(row: dict[str, str], accession: str) -> dict[str, Any]:
     }
     # Key order is the emission contract: `evidence` goes last, so the organism
     # keys are inserted before it rather than appended after. Appending them
-    # reordered the cluster block in all 3,115 records and buried the three
-    # real changes in cosmetic churn.
-    if row["taxon_id"]:
-        cluster["organism_taxon_id"] = row["taxon_id"]
+    # reordered the cluster block in all 3,115 records and buried the real
+    # changes in cosmetic churn.
+    if host:
+        cluster["organism_taxon_id"] = host
         cluster["organism_label"] = row["taxon_label"]
     cluster["evidence"] = mibig_evidence(row)
     return cluster
@@ -432,6 +432,20 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     merges = {row["old_taxon_id"]: row["new_taxon_id"]
               for row in inventories.get("taxon_merged") or []}
     taxon_rewrites: Counter[str] = Counter()
+
+    # Taxa that do not denote a single organism — NCBI's bins for unplaced
+    # sequences, whole metagenomes, and the two generic `uncultured` nodes that
+    # every unplaced organism shares. A producer claim on one of these asserts
+    # a producer while naming none, and no other gate can see it: the CURIE is
+    # valid and the label is non-empty (#62, #68). Derived from the taxdump by
+    # the taxonomy extractor, so it is a committed decision, not a literal here.
+    non_organism = {row["taxon_id"]: row["reason"]
+                    for row in inventories.get("taxon_non_organism") or []}
+    if not non_organism:
+        print("taxon_non_organism.tsv: ABSENT — producer claims will be written for "
+              "taxa that name no organism. Run `just extract-taxonomy` first if this "
+              "was not intended.", file=sys.stderr)
+    withheld_producers: Counter[str] = Counter()
 
     # ChEBI, keyed by structure. A key matching more than one 3-star entry is
     # NOT a resolution failure: ChEBI keeps a compound and its zwitterion as
@@ -561,7 +575,7 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             }
 
         bgc_classes, compound_classes, xrefs = [], [], []
-        unnamed_producer_clusters: list[str] = []
+        unnamed_producer_clusters: list[tuple[str, str, str]] = []
         producers: list[dict[str, Any]] = []
         clusters: list[dict[str, Any]] = []
         source_concepts: list[dict[str, Any]] = []
@@ -600,7 +614,17 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             # non-organism node: the extractor blanks it, and a producer needs
             # a taxon to be a claim about one (#62). The compound and its
             # cluster stay; only the producer is not written.
-            if row["taxon_id"]:
+            # The claim is judged on the id the record would carry, which is
+            # the merged-forward one: an id NCBI retired into a bin must be
+            # caught as a bin, not as whatever the source happened to send.
+            host = merges.get(row["taxon_id"], row["taxon_id"])
+            reason = non_organism.get(host)
+            if reason:
+                unnamed_producer_clusters.append((accession, host, reason))
+                withheld_producers[host] += 1
+                host = None
+
+            if host:
                 producers.append({
                     "taxon_id": row["taxon_id"],
                     "taxon_label": row["taxon_label"],
@@ -618,10 +642,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 })
                 rewrite_merged_taxon(
                     producers[-1], "taxon_id", merges, taxon_rewrites, "MIBiG", note=True)
-            else:
-                unnamed_producer_clusters.append(accession)
 
-            cluster = mibig_cluster(row, accession)
+            cluster = mibig_cluster(row, accession, host=host)
             rewrite_merged_taxon(cluster, "organism_taxon_id", merges, taxon_rewrites, "MIBiG", note=True)
             if row["genome_accession"]:
                 cluster["genome_accession"] = f"genbank:{row['genome_accession']}"
@@ -959,19 +981,21 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             })
 
         if unnamed_producer_clusters:
+            detail = "; ".join(
+                f"{acc}, which gives {taxon} ({reason})"
+                for acc, taxon, reason in sorted(set(unnamed_producer_clusters))
+            )
             discussions.append({
                 "discussion_id": "unnamed-producer",
                 "kind": "CURATION_TODO",
                 "status": "OPEN",
                 "prompt": (
-                    "MIBiG gives a non-organism NCBI taxonomy node for "
-                    + ", ".join(sorted(unnamed_producer_clusters))
-                    + " (unclassified sequences, unidentified, or a rank above "
-                    "species), so no producer claim is written from it. The "
-                    "cluster is kept: a characterized locus is an origin "
-                    "assertion whether or not its host is named, and for a "
-                    "compound from an uncultured symbiont that is the honest "
-                    "state. Name the producer if the primary literature does."
+                    f"No producer claim is written from {detail}, because the "
+                    "taxon names no single organism. The cluster is kept: a "
+                    "characterized locus is an origin assertion whether or not "
+                    "its host has a name, and for a compound from an uncultured "
+                    "symbiont that is the honest state. Name the producer if the "
+                    "primary literature does."
                 ),
             })
 
@@ -992,6 +1016,12 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     # Said out loud, like the taxonomy table: a run with the merged inventory
     # absent rewrites nothing and passes every gate, which is the silent
     # shrinkage #35 was about.
+    if withheld_producers:
+        total = sum(withheld_producers.values())
+        detail = ", ".join(f"{t} {n}" for t, n in withheld_producers.most_common())
+        print(f"producer claims withheld — taxon names no single organism: {total} "
+              f"({detail})", file=sys.stderr)
+
     if merges:
         total = sum(taxon_rewrites.values())
         detail = ", ".join(f"{s} {n}" for s, n in sorted(taxon_rewrites.items()))
