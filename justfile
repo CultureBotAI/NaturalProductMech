@@ -164,6 +164,15 @@ report-label-drift:
 verify-reproduction *args:
     uv run python scripts/check_reproduction.py {{args}}
 
+# The curation backlog by queue, ranked. Derived from the committed tree, so a
+# row leaves a queue when the thing that put it there changes.
+worklist *args:
+    uv run python scripts/curation_worklist.py {{args}}
+
+# The exhaustive per-record checkpoint `curate-yaml-record` works from.
+review-queue *args:
+    uv run python scripts/curation_worklist.py --limit 0 {{args}}
+
 # --- reporting ---------------------------------------------------------------
 # Corpus report: records per pathway, grounding, and origin-evidence coverage,
 # with producer claims split into causal and correlational.

@@ -106,7 +106,7 @@ Once, before checking any corpus-shaped issue:
 just qc                 # every gate: lint, docs, provenance, source queue,
                         # tests, validation, reproduction, generated site
 just report             # live per-class counts and field coverage
-just worklist           # the curation backlog by queue — owed (#52); skip until it exists
+just worklist           # the curation backlog by queue
 git log --oneline -8    # what has landed since the issues were filed
 ```
 
@@ -233,7 +233,7 @@ unattended close loop.
 
 ## Related
 
-- `just qc`, `just report`; `just worklist` once #52 lands.
+- `just qc`, `just report`, `just worklist`.
 - `curation/source_queue.tsv` and the `source-queue` skill — for issues that are
   really "should we adopt source X?".
 - `PLAN.md`, `docs/HARMONIZATION.md`, `docs/CURATION.md` — the invariants an

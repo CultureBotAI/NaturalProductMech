@@ -72,8 +72,11 @@ it resolves ids through a multi-gigabyte ontology cache and runs in
 `.github/workflows/label-correspondence.yaml`. What it checks, what it skips
 and why — NCBITaxon above all — is in `conf/id_label_targets.yaml`.
 
-Not available, and not to be run expecting output: `just worklist` (#52),
-`just render` / `just render-check` / `just chemical-map` (#53).
+just worklist          # the curation backlog by queue, ranked
+just review-queue      # the same, exhaustive, for `curate-yaml-record`
+
+Not available, and not to be run expecting output: `just render` /
+`just render-check` / `just chemical-map` (#53).
 
 For an upstream refresh, every source has a free `-dry` run and a writing run;
 the two networked batches also have a one-call `-canary`. MIBiG is the anchor
@@ -203,10 +206,10 @@ adds the extractor path, the committed inventory, its manifest entry and its
   and production is a weaker claim than a knockout, and it stays marked as one.
 - **The filing pathway is pinned, not recomputed.** `np_pathway` comes from a
   committed, version-pinned NPClassifier inventory and is locked per record in
-  `PATHS.tsv`. A newer model that disagrees is to produce a `pathway-drift`
-  worklist entry for a curator, never a silent directory move. The pin is
-  enforced by `just verify-corpus`; the comparison and its queue are owed
-  (#43, #52) — today a disagreement is silent.
+  `PATHS.tsv`. A newer model that disagrees produces a `pathway-drift` worklist
+  entry for a curator, never a silent directory move. The pin is enforced by
+  `just verify-corpus` and the comparison by `just worklist --queue
+  pathway-drift` (#43).
 - **Computed is not asserted.** NPClassifier, ClassyFire and NP-likeness carry
   tool and version and never pose as a source assertion.
 - **`np_pathway` is a filing decision, and it is computed.** It is

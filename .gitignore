@@ -46,3 +46,10 @@ data/embeddings/ids.json
 data/embeddings/records.json
 data/embeddings/meta.json
 downloads/
+
+# The curation backlog is DERIVED — `just worklist` recomputes it from the
+# corpus, and a row leaves a queue when the thing that put it there changes.
+# `just review-queue --tsv` writes this checkpoint for one curation session;
+# committing it would be committing a stale answer to a question that is
+# always cheap to re-ask.
+curation/record_review_queue.tsv
