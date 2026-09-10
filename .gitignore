@@ -38,9 +38,9 @@ local/
 
 downloads/
 
-# Embedding vectors: large, rebuildable with `just embed`, and not needed to
-# render the site. data/embeddings/corpus_map.json IS committed — pages/map.html
-# is generated from it, so a checkout without it would render a different site.
+# Reserved for the site's embedding artifacts (#53). Vectors would be large
+# and rebuildable, so they stay ignored; a committed map would be what the site
+# renders from. Nothing writes here yet.
 data/embeddings/*.npy
 data/embeddings/ids.json
 data/embeddings/records.json

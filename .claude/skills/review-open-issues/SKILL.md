@@ -30,7 +30,7 @@ not implement fixes.
 
 **1. Almost every claim is checkable on a bare clone, so check it.**
 The repository commits its evidence: the inventories in `data/raw/`, every
-record YAML under `data/natural_products/`, the generated site in `pages/`,
+record YAML under `data/natural_products/`, the generated site in `pages/` (once #53 lands),
 the slug lockfile and the retired-slug ledger, and the pinned AntibioticMech
 InChIKey inventory. An issue asserting something about a record, a producer, a
 BGC, a slug or a count can be answered by reading the file. The exception is
@@ -106,7 +106,7 @@ Once, before checking any corpus-shaped issue:
 just qc                 # every gate: lint, docs, provenance, source queue,
                         # tests, validation, reproduction, generated site
 just report             # live per-class counts and field coverage
-just worklist           # the curation backlog by queue
+just worklist           # the curation backlog by queue — owed (#52); skip until it exists
 git log --oneline -8    # what has landed since the issues were filed
 ```
 
@@ -233,7 +233,7 @@ unattended close loop.
 
 ## Related
 
-- `just qc`, `just report`, `just worklist`.
+- `just qc`, `just report`; `just worklist` once #52 lands.
 - `curation/source_queue.tsv` and the `source-queue` skill — for issues that are
   really "should we adopt source X?".
 - `PLAN.md`, `docs/HARMONIZATION.md`, `docs/CURATION.md` — the invariants an

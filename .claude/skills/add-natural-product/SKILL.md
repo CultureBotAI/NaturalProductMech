@@ -113,7 +113,7 @@ versioned input. Pick the narrowest reproducible path that covers the compound:
   structure (1,042 of 5,443 in 4.0, many of them class-level names) cannot
   become a record.
 - **Present in ChEBI with an allow-listed role.** Refresh with
-  `just extract-inventory-dry`, `just extract-inventory`. If the role the
+  `just extract-chebi-dry`, `just extract-chebi`. If the role the
   compound bears is a specialized-metabolite role that is not yet in
   `conf/np_roles.tsv`, adding the role is a reviewed configuration change with
   its own rationale, not a one-compound tweak — measure what else the role
@@ -122,9 +122,10 @@ versioned input. Pick the narrowest reproducible path that covers the compound:
   under the committed taxon filter (`conf/sources.yaml` → `producer_scope`).
   If the compound's only occurrence is outside the current producer scope, the
   answer is a scope decision, not an exception.
-- **Structure missing from ChEBI.** Use the PubChem fallback only when an
-  adopted source supplies a CID for the same concept: `just extract-pubchem-dry`,
-  `just extract-pubchem-canary <ID>`, inspect `data/raw/pubchem_structures.tsv`.
+- **Structure missing from ChEBI.** There is no PubChem structure fetch in
+  this repository — `just extract-bioassay` fetches assays for structures the
+  corpus already holds. A structure no adopted source carries is a
+  source-adoption question, not a fallback (`NEXT_TASKS.md`).
 - **Present only in another redistributable structured source.** Add or extend
   an extractor so `conf/sources.yaml`, `SourceEnum`, `data/raw/`,
   `data/raw/MANIFEST.yaml`, `ATTRIBUTION.md`, source concepts, structures and
@@ -211,11 +212,11 @@ After the canary is correct:
 
 ```bash
 just seed-apply
-just chemical-map
-just render
 just docs-stats
 just qc
 ```
+
+(`just chemical-map` and `just render` join this list when the site exists — #53.)
 
 If the change is source adoption rather than record addition, also verify the
 source queue and provenance:

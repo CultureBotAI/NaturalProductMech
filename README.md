@@ -18,12 +18,16 @@ compounds and their mechanisms),
 [dismech](https://github.com/monarch-initiative/dismech): one YAML per entity,
 ontology-grounded, evidence-backed, schema-validated, curated incrementally.
 
-## Status: scaffolded, corpus empty
+## Status: seeded from nine sources, curation not started
 
-**2026-09-07.** The schema, the guarded write path, the gates and the seeder
-skeleton exist and `just qc` is green. The corpus is empty because the
-extractors that produce `data/raw/` are M2. Seeding the first records from
-MIBiG and ChEBI is the next milestone.
+**2026-09-09.** The corpus reproduces offline from committed inventories:
+MIBiG (structures, producers, gene clusters), ChEBI (grounding, origins),
+LOTUS and CyanoMetDB (cited occurrences), NCBI Taxonomy (name resolution),
+NPClassifier (the filing pathway), PubChem BioAssay and BindingDB (measured
+activities and targets), and AntibioticMech (antimicrobial classification and
+cross-corpus links). Every record is `SEEDED`; no curator has yet touched one.
+`biosynthetic_pathway` and `causal_graphs` are empty — that is M6, the work the
+rest exists for. Owed work is in [NEXT_TASKS.md](NEXT_TASKS.md).
 
 <!-- BEGIN GENERATED CORPUS STATS -->
 
