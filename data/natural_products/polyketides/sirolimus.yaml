@@ -627,6 +627,24 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: Luengo et al. used rapamycin as the parent comparator while testing C-7
         analog binding to FKBP12 and FKBP12-FRAP-dependent biological activity.
+  - subject: sirolimus
+    predicate: forms
+    object: fkbp12_sirolimus_complex
+    evidence:
+    - reference: DOI:10.1016/1074-5521(95)90264-3
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Luengo et al. used rapamycin as the parent comparator while testing C-7
+        analog binding to FKBP12 and FKBP12-FRAP-dependent biological activity.
+  - subject: fkbp12
+    predicate: forms
+    object: fkbp12_sirolimus_complex
+    evidence:
+    - reference: DOI:10.1126/science.273.5272.239
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: A crystal structure of the ternary complex of human FKBP12, rapamycin,
+        and the FKBP12-rapamycin-binding (FRB) domain of human FRAP
+      notes: Choi et al. solved the human FKBP12-sirolimus-human FRB ternary complex;
+        RCSB PDB entry 1FAP links the structure to this paper.
   - subject: fkbp12_sirolimus_complex
     predicate: binds
     object: mtor_frb

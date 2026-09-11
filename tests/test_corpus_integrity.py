@@ -543,3 +543,86 @@ def test_no_target_enzyme_carries_a_malformed_uniprot_accession(records):
         f"{len(offenders)} target_enzyme values are not UniProtKB primary accessions: "
         f"{offenders[:6]}"
     )
+
+
+def _graph_components(graph: dict) -> list[list[str]]:
+    """Undirected connected components of one causal graph, sorted."""
+    nodes = {n["node_id"] for n in graph.get("nodes") or [] if n.get("node_id")}
+    adjacency: dict[str, set[str]] = {node: set() for node in nodes}
+    for edge in graph.get("edges") or []:
+        subject, obj = edge.get("subject"), edge.get("object")
+        if subject in adjacency and obj in adjacency:
+            adjacency[subject].add(obj)
+            adjacency[obj].add(subject)
+    seen: set[str] = set()
+    components: list[list[str]] = []
+    for node in sorted(nodes):
+        if node in seen:
+            continue
+        stack, group = [node], set()
+        while stack:
+            current = stack.pop()
+            if current in seen:
+                continue
+            seen.add(current)
+            group.add(current)
+            stack.extend(adjacency[current] - seen)
+        components.append(sorted(group))
+    return components
+
+
+#: Wording that declares a graph is deliberately incomplete. A partial view is
+#: legitimate — erythromycin A's biosynthesis graph is one, and says so — so the
+#: rule is that the gap must be STATED, not that there may not be one.
+_PARTIAL_VIEW_WORDING = ("partial", "omitted", "incomplete", "uncurated")
+
+
+def test_a_causal_graph_is_connected_or_says_it_is_partial(records):
+    """A graph that splits into pieces asserts a mechanism it does not encode.
+
+    The sirolimus graph described sirolimus binding FKBP12 and the
+    FKBP12-sirolimus complex binding mTOR, and carried no edge forming that
+    complex — so there was no path from the compound to its target, which is
+    the one thing a reader follows the graph to find (#103). Erythromycin A's
+    graph is also in two pieces and is fine: it says "partial" and
+    "intentionally omitted", which is a curator marking where the evidence
+    stops rather than a hole the prose papers over.
+    """
+    offenders = []
+    for record in records:
+        for graph in record.get("causal_graphs") or []:
+            components = _graph_components(graph)
+            if len(components) <= 1:
+                continue
+            # The graph's OWN words, not the record's. A "partial" note about a
+            # biosynthetic pathway must not excuse a disconnected bioactivity
+            # graph elsewhere on the same record; the declaration belongs to
+            # the thing it describes. Erythromycin A qualifies on its own
+            # description alone, so nothing is lost by the narrower read.
+            declared = " ".join(
+                str(value) for value in (graph.get("description"), graph.get("notes"))
+                if value
+            ).lower()
+            if any(word in declared for word in _PARTIAL_VIEW_WORDING):
+                continue
+            offenders.append((record["identifier"], graph.get("graph_id"), components))
+    assert not offenders, (
+        "causal graphs that split into disconnected pieces without saying they are "
+        f"a partial view: {offenders[:3]}"
+    )
+
+
+def test_no_causal_graph_declares_a_node_nothing_connects(records):
+    """A node in no edge is a claim the graph makes and then does not use."""
+    offenders = []
+    for record in records:
+        for graph in record.get("causal_graphs") or []:
+            nodes = {n["node_id"] for n in graph.get("nodes") or [] if n.get("node_id")}
+            touched = {
+                end for edge in graph.get("edges") or []
+                for end in (edge.get("subject"), edge.get("object")) if end
+            }
+            isolated = sorted(nodes - touched)
+            if isolated:
+                offenders.append((record["identifier"], graph.get("graph_id"), isolated))
+    assert not offenders, f"causal graphs with nodes no edge touches: {offenders[:3]}"
