@@ -812,6 +812,32 @@ causal_graphs:
       notes: The source article measured naringenin inhibition of alpha-carbonic anhydrase
         isoenzymes; the BindingDB-deposited PubChem assay reports active inhibition
         of human CA VI.
+- graph_id: naringenin-aromatase-inhibition
+  scope: BIOACTIVITY
+  description: Naringenin inhibits human aromatase.
+  nodes:
+  - node_id: naringenin
+    label: naringenin
+    node_type: COMPOUND
+    identifier: CHEBI:50202
+    grounding_status: GROUNDED
+  - node_id: aromatase
+    label: human aromatase
+    node_type: PROTEIN
+    identifier: UniProtKB:P11511
+    grounding_status: GROUNDED
+  edges:
+  - subject: naringenin
+    predicate: inhibits
+    object: aromatase
+    notes: BindingDB own-curated row 15 and BindingDB-deposited PubChem BioAssay AID
+      1799798 map this exact Standard InChIKey to an active, equal-qualified 0.00109662
+      nM Ki measurement against human aromatase; P11511 resolves in UniProtKB to the
+      human CYP19A1 gene product.
+    evidence:
+    - reference: DOI:10.1111/j.1747-0285.2012.01439.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PMID:22726671 underlies the BindingDB/PubChem aromatase-inhibition measurement.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -829,4 +855,12 @@ curation_history:
     nodes to UniProtKB:P00915, UniProtKB:P00918, UniProtKB:Q3SZX4, UniProtKB:P22748
     and UniProtKB:P23280; and cited DOI:10.3109/14756366.2011.651464 via exact BindingDB-deposited
     PubChem BioAssay rows for PMID 22299585.
+  llm_assisted: true
+- timestamp: '2026-09-11T14:07:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for naringenin inhibition of human aromatase;
+    grounded the protein node to UniProtKB:P11511; and cited DOI:10.1111/j.1747-0285.2012.01439.x
+    via the exact BindingDB row and BindingDB-deposited PubChem BioAssay row for PMID
+    22726671.
   llm_assisted: true
