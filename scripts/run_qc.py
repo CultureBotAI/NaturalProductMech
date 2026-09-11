@@ -4,12 +4,11 @@
 One executable definition of "green", so a passing local run and a passing CI
 run mean the same thing.
 
-Deliberately absent: the claw vendored-sync check. Its checker resolves this
-repository's identity through claw's consumer registry, and NaturalProductMech
-is not admitted to the fleet manifest until M4 (PLAN.md section 7). The
-governed files ARE vendored, byte-identical, at the pinned ref — running
-`just vendored-sync` today fails on identity rather than on content, which is
-the expected state and not a licence to skip it later. Admission adds it here.
+The claw vendored-sync check joined this gate at admission (culturebotai-claw
+#395, 2026-09-11). Before that it was deliberately absent: its checker resolves
+this repository's identity through claw's consumer registry, and until the
+manifest declared NaturalProductMech the check failed on identity rather than
+on content. The governed files were vendored byte-identically throughout.
 """
 
 from __future__ import annotations
@@ -25,6 +24,11 @@ COMMANDS = [
         "lint",
         [sys.executable, "-m", "ruff", "check", "."],
         "Fail fast on syntax, import, and style defects before expensive checks.",
+    ),
+    (
+        "vendored-sync",
+        ["bash", "scripts/check_vendored_sync.sh"],
+        "Governed files must be byte-identical to claw at the pinned ref.",
     ),
     (
         "documentation",
