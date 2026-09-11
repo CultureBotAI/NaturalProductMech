@@ -594,10 +594,13 @@ def test_a_causal_graph_is_connected_or_says_it_is_partial(records):
             components = _graph_components(graph)
             if len(components) <= 1:
                 continue
+            # The graph's OWN words, not the record's. A "partial" note about a
+            # biosynthetic pathway must not excuse a disconnected bioactivity
+            # graph elsewhere on the same record; the declaration belongs to
+            # the thing it describes. Erythromycin A qualifies on its own
+            # description alone, so nothing is lost by the narrower read.
             declared = " ".join(
-                str(value) for value in
-                (graph.get("description"), graph.get("notes"),
-                 *[step.get("notes") for step in record.get("biosynthetic_pathway") or []])
+                str(value) for value in (graph.get("description"), graph.get("notes"))
                 if value
             ).lower()
             if any(word in declared for word in _PARTIAL_VIEW_WORDING):
