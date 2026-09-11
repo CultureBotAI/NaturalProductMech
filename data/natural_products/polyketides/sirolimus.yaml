@@ -591,6 +591,54 @@ discussions:
   prompt: ChEBI calls this structure 'sirolimus' and MIBiG calls it 'rapamycin'. They
     share a Standard InChIKey, so if the names denote different compounds then one
     upstream record has the wrong structure. Check which.
+causal_graphs:
+- graph_id: sirolimus-fkbp12-mtor-binding
+  scope: BIOACTIVITY
+  description: Sirolimus binds human FKBP12 and the FKBP12-sirolimus complex binds
+    the human mTOR FKBP12-rapamycin-binding domain.
+  nodes:
+  - node_id: sirolimus
+    label: sirolimus
+    node_type: COMPOUND
+    identifier: CHEBI:9168
+    grounding_status: GROUNDED
+  - node_id: fkbp12
+    label: human FKBP12
+    node_type: PROTEIN
+    identifier: UniProtKB:P62942
+    grounding_status: GROUNDED
+  - node_id: fkbp12_sirolimus_complex
+    label: human FKBP12-sirolimus complex
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: mtor_frb
+    label: human mTOR FRB domain
+    node_type: PROTEIN
+    identifier: UniProtKB:P42345
+    grounding_status: GROUNDED
+  edges:
+  - subject: sirolimus
+    predicate: binds
+    object: fkbp12
+    notes: BindingDB maps the 1 nM Ki rapamycin-FKBP12 measurement to human UniProtKB:P62942,
+      and PDBe maps PDB 1FKB chain A to the same accession.
+    evidence:
+    - reference: DOI:10.1016/1074-5521(95)90264-3
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Luengo et al. used rapamycin as the parent comparator while testing C-7
+        analog binding to FKBP12 and FKBP12-FRAP-dependent biological activity.
+  - subject: fkbp12_sirolimus_complex
+    predicate: binds
+    object: mtor_frb
+    notes: The FRB structural target is the FKBP12-rapamycin-binding domain of human
+      FRAP, now mechanistic target of rapamycin.
+    evidence:
+    - reference: DOI:10.1126/science.273.5272.239
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: A crystal structure of the ternary complex of human FKBP12, rapamycin,
+        and the FKBP12-rapamycin-binding (FRB) domain of human FRAP
+      notes: Choi et al. solved the human FKBP12-sirolimus-human FRB ternary complex;
+        RCSB PDB entry 1FAP links the structure to this paper.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -600,3 +648,15 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T03:44:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a sirolimus bioactivity causal graph linking sirolimus binding to
+    human FKBP12 and FKBP12-sirolimus binding to the human mTOR FRB domain.
+  llm_assisted: true
+- timestamp: '2026-09-11T04:09:14Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Corrected the sirolimus FKBP12-mTOR FRB graph predicate so the FKBP12-sirolimus
+    complex binds the FRB-domain node directly.
+  llm_assisted: true
