@@ -490,6 +490,34 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0001793, BGC0001794,
     BGC0002270. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+causal_graphs:
+- graph_id: swainsonine-golgi-mannosidase-inhibition
+  scope: BIOACTIVITY
+  description: Swainsonine inhibits Drosophila Golgi alpha-mannosidase II.
+  nodes:
+  - node_id: swainsonine
+    label: swainsonine
+    node_type: COMPOUND
+    identifier: CHEBI:9367
+    grounding_status: GROUNDED
+  - node_id: gmii
+    label: Drosophila Golgi alpha-mannosidase II
+    node_type: PROTEIN
+    identifier: UniProtKB:Q24451
+    grounding_status: GROUNDED
+  edges:
+  - subject: swainsonine
+    predicate: inhibits
+    object: gmii
+    notes: PubChem BioAssay AID 1799635 maps this exact Standard InChIKey to a 3 nM
+      Ki measurement against Drosophila Golgi alpha-mannosidase II, and Q24451 resolves
+      in UniProtKB to the D. melanogaster alpha-Man-IIa gene product.
+    evidence:
+    - reference: DOI:10.1002/cbic.200900750
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Kuntz et al. characterized 5-substituted swainsonine analogue binding
+        to the soluble catalytic domain of Drosophila GMII; the BindingDB-deposited
+        PubChem assay reports swainsonine with Ki 0.003 uM.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -499,3 +527,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T06:29:16Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for swainsonine inhibition of Drosophila
+    Golgi alpha-mannosidase II, grounded the enzyme node to UniProtKB:Q24451, and
+    cited DOI:10.1002/cbic.200900750 via the BindingDB-deposited PMID 20209559 measurement
+    in PubChem BioAssay AID 1799635.
+  llm_assisted: true
