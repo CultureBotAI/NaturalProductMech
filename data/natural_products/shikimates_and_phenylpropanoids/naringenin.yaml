@@ -716,6 +716,102 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-63d8713078
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: naringenin-carbonic-anhydrase-inhibition
+  scope: BIOACTIVITY
+  description: Naringenin inhibits human and bovine carbonic anhydrase isoenzymes.
+  nodes:
+  - node_id: naringenin
+    label: naringenin
+    node_type: COMPOUND
+    identifier: CHEBI:50202
+    grounding_status: GROUNDED
+  - node_id: ca1
+    label: human carbonic anhydrase 1
+    node_type: PROTEIN
+    identifier: UniProtKB:P00915
+    grounding_status: GROUNDED
+  - node_id: ca2
+    label: human carbonic anhydrase 2
+    node_type: PROTEIN
+    identifier: UniProtKB:P00918
+    grounding_status: GROUNDED
+  - node_id: ca3
+    label: bovine carbonic anhydrase 3
+    node_type: PROTEIN
+    identifier: UniProtKB:Q3SZX4
+    grounding_status: GROUNDED
+  - node_id: ca4
+    label: human carbonic anhydrase 4
+    node_type: PROTEIN
+    identifier: UniProtKB:P22748
+    grounding_status: GROUNDED
+  - node_id: ca6
+    label: human carbonic anhydrase 6
+    node_type: PROTEIN
+    identifier: UniProtKB:P23280
+    grounding_status: GROUNDED
+  edges:
+  - subject: naringenin
+    predicate: inhibits
+    object: ca1
+    notes: PubChem BioAssay AID 1803217 maps this exact Standard InChIKey to a 0.97
+      uM Ki measurement against human carbonic anhydrase 1, and P00915 resolves in
+      UniProtKB to the human CA1 gene product.
+    evidence:
+    - reference: DOI:10.3109/14756366.2011.651464
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The source article measured naringenin inhibition of alpha-carbonic anhydrase
+        isoenzymes; the BindingDB-deposited PubChem assay reports active inhibition
+        of human CA I.
+  - subject: naringenin
+    predicate: inhibits
+    object: ca2
+    notes: PubChem BioAssay AID 1803217 maps this exact Standard InChIKey to a 0.113
+      uM Ki measurement against human carbonic anhydrase 2, and P00918 resolves in
+      UniProtKB to the human CA2 gene product.
+    evidence:
+    - reference: DOI:10.3109/14756366.2011.651464
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The source article measured naringenin inhibition of alpha-carbonic anhydrase
+        isoenzymes; the BindingDB-deposited PubChem assay reports active inhibition
+        of human CA II.
+  - subject: naringenin
+    predicate: inhibits
+    object: ca3
+    notes: PubChem BioAssay AID 1803217 maps this exact Standard InChIKey to a 2.21
+      uM Ki measurement against bovine carbonic anhydrase 3, and Q3SZX4 resolves in
+      UniProtKB to the bovine CA3 gene product.
+    evidence:
+    - reference: DOI:10.3109/14756366.2011.651464
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The source article measured naringenin inhibition of alpha-carbonic anhydrase
+        isoenzymes; the BindingDB-deposited PubChem assay reports active inhibition
+        of bovine CA III.
+  - subject: naringenin
+    predicate: inhibits
+    object: ca4
+    notes: PubChem BioAssay AID 1803217 maps this exact Standard InChIKey to a 1.12
+      uM Ki measurement against human carbonic anhydrase 4, and P22748 resolves in
+      UniProtKB to the human CA4 gene product.
+    evidence:
+    - reference: DOI:10.3109/14756366.2011.651464
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The source article measured naringenin inhibition of alpha-carbonic anhydrase
+        isoenzymes; the BindingDB-deposited PubChem assay reports active inhibition
+        of human CA IV.
+  - subject: naringenin
+    predicate: inhibits
+    object: ca6
+    notes: PubChem BioAssay AID 1803217 maps this exact Standard InChIKey to a 1.49
+      uM Ki measurement against human carbonic anhydrase 6, and P23280 resolves in
+      UniProtKB to the human CA6 gene product.
+    evidence:
+    - reference: DOI:10.3109/14756366.2011.651464
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The source article measured naringenin inhibition of alpha-carbonic anhydrase
+        isoenzymes; the BindingDB-deposited PubChem assay reports active inhibition
+        of human CA VI.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -725,3 +821,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T07:38:58Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for naringenin inhibition of human carbonic
+    anhydrases 1, 2, 4 and 6 plus bovine carbonic anhydrase 3; grounded the enzyme
+    nodes to UniProtKB:P00915, UniProtKB:P00918, UniProtKB:Q3SZX4, UniProtKB:P22748
+    and UniProtKB:P23280; and cited DOI:10.3109/14756366.2011.651464 via exact BindingDB-deposited
+    PubChem BioAssay rows for PMID 22299585.
+  llm_assisted: true
