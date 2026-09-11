@@ -33,7 +33,7 @@ Output (data/embeddings/, vectors gitignored — large and rebuildable):
   ids.json          the N record identifiers, in row order
   meta.json         {model, dim, count, normalized, text_mode}
 
-  just embed                          # whole corpus (~2,900 records, seconds)
+  just embed                          # whole corpus (3,115 records, about a minute)
   python3 scripts/embed_records.py --limit 20 --model BAAI/bge-large-en-v1.5
 """
 
