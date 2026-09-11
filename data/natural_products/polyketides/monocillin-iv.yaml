@@ -160,8 +160,44 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: monocillin-iv-hsp90-inhibition
+  scope: BIOACTIVITY
+  description: Monocillin IV inhibits Saccharomyces cerevisiae HSP82.
+  nodes:
+  - node_id: monocillin_iv
+    label: monocillin IV
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-436434b23f
+    grounding_status: GROUNDED
+  - node_id: yeast_hsp82
+    label: Saccharomyces cerevisiae ATP-dependent molecular chaperone HSP82
+    node_type: PROTEIN
+    identifier: UniProtKB:P02829
+    grounding_status: GROUNDED
+  edges:
+  - subject: monocillin_iv
+    predicate: inhibits
+    object: yeast_hsp82
+    notes: PubChem BioAssay AIDs 1799517 and 1799518 map this exact Standard InChIKey
+      to active 0.5, 0.54, 3.2 and 4.0 uM IC50 measurements against Saccharomyces
+      cerevisiae HSP82; P02829 resolves in UniProtKB to the S288c HSP82 gene product.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2006.09.015
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The source article evaluated synthetic macrolactones as Hsp90 inhibitors;
+        BindingDB-deposited PubChem assays report active monocillin IV inhibition
+        in fluorescence-polarization and Malachite Green assays.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T08:39:49Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for monocillin IV inhibition of Saccharomyces
+    cerevisiae HSP82, grounded the protein node to UniProtKB:P02829, and cited DOI:10.1016/j.chembiol.2006.09.015
+    via four exact BindingDB-deposited PubChem BioAssay rows for AIDs 1799517 and
+    1799518.
+  llm_assisted: true
