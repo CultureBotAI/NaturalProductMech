@@ -1618,6 +1618,33 @@ causal_graphs:
       notes: PubChem BioAssay AID 1799383 was deposited by BindingDB for PMID 20020776
         and reports active staurosporine inhibition of human VEGFR2 in an in vitro
         kinase assay.
+- graph_id: staurosporine-src-inhibition
+  scope: BIOACTIVITY
+  description: Staurosporine inhibits chicken c-Src.
+  nodes:
+  - node_id: staurosporine
+    label: staurosporine
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-c702c4be08
+    grounding_status: GROUNDED
+  - node_id: src
+    label: chicken proto-oncogene tyrosine-protein kinase Src
+    node_type: PROTEIN
+    identifier: UniProtKB:P00523
+    grounding_status: GROUNDED
+  edges:
+  - subject: staurosporine
+    predicate: inhibits
+    object: src
+    notes: BindingDB maps this exact Standard InChIKey to an 8 nM KD measurement against
+      chicken c-Src, and P00523 resolves in UniProtKB to the Gallus gallus SRC gene
+      product.
+    evidence:
+    - reference: DOI:10.1038/nchembio.162
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1799403 was deposited by BindingDB for PMID 19396179
+        and reports active staurosporine inhibition of wild-type cSrc in a tyrosine
+        kinase inhibition assay.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1667,4 +1694,12 @@ curation_history:
     PDGFRB and VEGFR2, grounded the protein nodes to UniProtKB:P09619 and UniProtKB:P35968,
     and cited DOI:10.1021/cb9002865 via exact BindingDB and BindingDB-deposited PubChem
     BioAssay rows for PMID 20020776 and AID 1799383.
+  llm_assisted: true
+- timestamp: '2026-09-11T11:37:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of chicken
+    c-Src, grounded the protein node to UniProtKB:P00523, and cited DOI:10.1038/nchembio.162
+    via exact BindingDB and BindingDB-deposited PubChem BioAssay rows for PMID 19396179
+    and AID 1799403.
   llm_assisted: true
