@@ -230,6 +230,33 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: PubChem BioAssay AID 1798526 was deposited by BindingDB for PMID 18308563
         and reports active apicidin inhibition of human HDAC6.
+- graph_id: apicidin-pfhdac1-inhibition
+  scope: BIOACTIVITY
+  description: Apicidin inhibits recombinant Plasmodium falciparum 3D7 pfHDAC-1.
+  nodes:
+  - node_id: apicidin
+    label: apicidin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-f6e5a95e78
+    grounding_status: GROUNDED
+  - node_id: pfhdac1
+    label: Plasmodium falciparum 3D7 histone deacetylase 1
+    node_type: ENZYME
+    identifier: UniProtKB:Q7K6A1
+    grounding_status: GROUNDED
+  edges:
+  - subject: apicidin
+    predicate: inhibits
+    object: pfhdac1
+    notes: BindingDB-deposited PubChem BioAssay AID 1799021 maps this exact Standard
+      InChIKey to an active 0.001 uM IC50 measurement in a recombinant pfHDAC-1 enzyme
+      assay; the source paper identifies pfHDAC-1 as historical PlasmoDB locus PFI1260c,
+      and Q7K6A1 resolves in UniProtKB to Plasmodium falciparum 3D7 PF3D7_0925700.
+    evidence:
+    - reference: DOI:10.1021/jm801654y
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1799021 was deposited by BindingDB for PMID 19317450
+        and reports an active apicidin IC50 value in the PfHDAC-1 enzyme assay.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -242,4 +269,19 @@ curation_history:
     HDAC3, HDAC4, and HDAC6, grounded the protein nodes to UniProtKB:Q13547, UniProtKB:O15379,
     UniProtKB:P56524, and UniProtKB:Q9UBN7, and cited DOI:10.1016/j.bmcl.2008.02.025
     and DOI:10.1021/jm800079s through exact BindingDB-deposited PubChem BioAssay rows.
+  llm_assisted: true
+- timestamp: '2026-09-11T14:57:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for apicidin inhibition of Plasmodium
+    falciparum 3D7 pfHDAC-1; grounded the enzyme node to UniProtKB:Q7K6A1; and cited
+    DOI:10.1021/jm801654y via the exact BindingDB-deposited PubChem BioAssay row for
+    PMID 19317450 and AID 1799021.
+  llm_assisted: true
+- timestamp: '2026-09-11T15:15:22Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Removed the non-verbatim snippet from the Apicidin PfHDAC-1 edge after
+    review issue #134 while preserving its DOI-backed primary evidence and PubChem/BindingDB
+    assay context in notes.'
   llm_assisted: true
