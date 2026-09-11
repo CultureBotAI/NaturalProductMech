@@ -1707,6 +1707,34 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: PubChem BioAssay AID 1801940 was deposited by BindingDB for PMID 27454617
         and reports active staurosporine inhibition in a GSK-3 beta activity assay.
+- graph_id: staurosporine-csf1r-inhibition
+  scope: BIOACTIVITY
+  description: Staurosporine inhibits human CSF1R.
+  nodes:
+  - node_id: staurosporine
+    label: staurosporine
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-c702c4be08
+    grounding_status: GROUNDED
+  - node_id: csf1r
+    label: human macrophage colony-stimulating factor 1 receptor
+    node_type: PROTEIN
+    identifier: UniProtKB:P07333
+    grounding_status: GROUNDED
+  edges:
+  - subject: staurosporine
+    predicate: inhibits
+    object: csf1r
+    notes: BindingDB maps this exact Standard InChIKey to 49 and 57 nM IC50 measurements
+      against a human CSF1R construct covering residues 538-678 and 753-922 at pH
+      7.5000 and 22.00 C, and P07333 resolves in UniProtKB to the human CSF1R gene
+      product.
+    evidence:
+    - reference: DOI:10.1074/jbc.M608182200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1797654 was deposited by BindingDB for PMID 17132625
+        and reports active staurosporine inhibition in the cFMS autophosphorylation
+        fluorescence-polarization endpoint assay.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1781,4 +1809,12 @@ curation_history:
     DOI:10.1111/cbdd.12724, and DOI:10.1016/j.bioorg.2016.07.007 via exact BindingDB
     and BindingDB-deposited PubChem BioAssay rows for PMIDs 25711384, 26804375, and
     27454617 and AIDs 1801382, 1801812, and 1801940.
+  llm_assisted: true
+- timestamp: '2026-09-11T12:35:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of human
+    CSF1R, grounded the protein node to UniProtKB:P07333, and cited DOI:10.1074/jbc.M608182200
+    via exact Homo sapiens BindingDB rows and BindingDB-deposited PubChem BioAssay
+    rows for PMID 17132625 and AID 1797654.
   llm_assisted: true
