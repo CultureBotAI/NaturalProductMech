@@ -103,6 +103,40 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-68dbcd7c61
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: sangivamycin-grk6-binding
+  scope: BIOACTIVITY
+  description: Sangivamycin binds human G protein-coupled receptor kinase 6 in the
+    PDB 3NYN co-crystal structure.
+  nodes:
+  - node_id: sangivamycin
+    label: sangivamycin
+    node_type: COMPOUND
+    identifier: CHEBI:85997
+    grounding_status: GROUNDED
+  - node_id: grk6
+    label: human G protein-coupled receptor kinase 6
+    node_type: PROTEIN
+    identifier: UniProtKB:P43250
+    grounding_status: GROUNDED
+  edges:
+  - subject: sangivamycin
+    predicate: binds
+    object: grk6
+    notes: PubChem BioAssay AID 977611 maps this exact Standard InChIKey to an active
+      1 uM Kd row for PDB 3NYN chain A; PDBe maps 3NYN_A to Homo sapiens UniProtKB:P43250,
+      and RCSB reports SGV sangivamycin with the record's Standard InChIKey as a 3NYN
+      non-polymer ligand.
+    evidence:
+    - reference: DOI:10.1038/emboj.2010.206
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Molecular basis for activation of G protein-coupled receptor kinases.
+      notes: Boguth et al. solved PDB 3NYN as a sangivamycin-bound human GRK6 structure.
+    - reference: DOI:10.2210/pdb3nyn/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: RCSB PDB identifies 3NYN as a human GRK6 crystal structure containing
+        SGV sangivamycin, and PDBe maps chain A to the canonical Homo sapiens GRK6
+        sequence in UniProtKB:P43250.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -112,3 +146,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T18:09:54Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for sangivamycin binding to human G protein-coupled
+    receptor kinase 6; grounded the graph node to UniProtKB:P43250 via the exact PDBe
+    chain mapping for PDB 3NYN_A; and cited the PubChem/PDB affinity row through DOI:10.1038/emboj.2010.206
+    and DOI:10.2210/pdb3nyn/pdb.
+  llm_assisted: true
