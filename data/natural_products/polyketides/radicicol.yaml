@@ -498,6 +498,78 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: radicicol-hsp90-inhibition
+  scope: BIOACTIVITY
+  description: Radicicol inhibits Saccharomyces cerevisiae HSP82 and engages human
+    HSP90-alpha and HSP90-beta.
+  nodes:
+  - node_id: radicicol
+    label: radicicol
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-7fc8631300
+    grounding_status: GROUNDED
+  - node_id: yeast_hsp82
+    label: Saccharomyces cerevisiae ATP-dependent molecular chaperone HSP82
+    node_type: PROTEIN
+    identifier: UniProtKB:P02829
+    grounding_status: GROUNDED
+  - node_id: hsp90aa1
+    label: human heat shock protein HSP 90-alpha
+    node_type: PROTEIN
+    identifier: UniProtKB:P07900
+    grounding_status: GROUNDED
+  - node_id: hsp90ab1
+    label: human heat shock protein HSP 90-beta
+    node_type: PROTEIN
+    identifier: UniProtKB:P08238
+    grounding_status: GROUNDED
+  edges:
+  - subject: radicicol
+    predicate: inhibits
+    object: yeast_hsp82
+    notes: BindingDB rows 95-98 and BindingDB-deposited PubChem BioAssay AIDs 1797382,
+      1799517, and 1799518 map this exact Standard InChIKey to 30-200 nM active IC50
+      measurements against Saccharomyces cerevisiae HSP82; P02829 resolves in UniProtKB
+      to the S288c HSP82 gene product.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2004.03.033
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PMID:15217611 underlies the BindingDB/PubChem HSP82 ATPase-inhibition
+        measurement.
+    - reference: DOI:10.1016/j.chembiol.2006.09.015
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PMID:17114002 underlies the BindingDB/PubChem HSP82 fluorescence-polarization
+        and Malachite Green assay measurements.
+  - subject: radicicol
+    predicate: binds
+    object: hsp90aa1
+    notes: BindingDB row 99 and BindingDB-deposited PubChem BioAssay AID 1802791 map
+      this exact Standard InChIKey to an active 46.3 nM Kd by isothermal titration
+      calorimetry against human HSP90-alpha [1-236]; P07900 resolves in UniProtKB
+      to the human HSP90AA1 gene product.
+    evidence:
+    - reference: DOI:10.1074/jbc.M113.533885
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PMID:24356970 underlies the BindingDB/PubChem HSP90-alpha ITC measurement;
+        inactive PDK2 IC50/Kd rows from the same article were not represented in this
+        graph.
+  - subject: radicicol
+    predicate: binds
+    object: hsp90ab1
+    notes: BindingDB rows 100-101 and BindingDB-deposited PubChem BioAssay AIDs 1797381
+      and 1797384 map this exact Standard InChIKey to active 150 nM IC50 measurements
+      against human HSP90-beta; P08238 resolves in UniProtKB to the human HSP90AB1
+      gene product.
+    evidence:
+    - reference: DOI:10.1021/jm050355z
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PMID:15974572 underlies one BindingDB/PubChem fluorescence-polarization
+        measurement against HSP90-beta.
+    - reference: DOI:10.1016/j.bmcl.2005.08.092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PMID:16202589 underlies the second BindingDB/PubChem fluorescence-polarization
+        measurement against HSP90-beta.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -511,3 +583,19 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T13:30:06Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for radicicol engagement of Saccharomyces
+    cerevisiae HSP82, human HSP90-alpha, and human HSP90-beta; grounded the protein
+    nodes to UniProtKB:P02829, UniProtKB:P07900, and UniProtKB:P08238; and cited exact
+    BindingDB/PubChem Hsp90 rows through DOI:10.1016/j.chembiol.2004.03.033, DOI:10.1016/j.chembiol.2006.09.015,
+    DOI:10.1074/jbc.M113.533885, DOI:10.1021/jm050355z, and DOI:10.1016/j.bmcl.2005.08.092.
+  llm_assisted: true
+- timestamp: '2026-09-11T13:46:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Addressed review issue #129 by changing the Radicicol-to-human-HSP90-beta
+    causal edge from inhibits to binds, matching the fluorescence-polarization IC50
+    evidence in BindingDB rows 100-101 and PubChem BioAssay AIDs 1797381 and 1797384.'
+  llm_assisted: true
