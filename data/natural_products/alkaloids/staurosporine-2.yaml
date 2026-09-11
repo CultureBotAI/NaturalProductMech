@@ -1548,6 +1548,32 @@ causal_graphs:
       notes: PubChem BioAssay AID 1798514 was deposited by BindingDB for PMID 17655330
         and reports active staurosporine inhibition of human PLK4 in a PLK kinase
         assay.
+- graph_id: staurosporine-pim1-inhibition
+  scope: BIOACTIVITY
+  description: Staurosporine inhibits human PIM1.
+  nodes:
+  - node_id: staurosporine
+    label: staurosporine
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-c702c4be08
+    grounding_status: GROUNDED
+  - node_id: pim1
+    label: human serine/threonine-protein kinase pim-1
+    node_type: PROTEIN
+    identifier: UniProtKB:P11309
+    grounding_status: GROUNDED
+  edges:
+  - subject: staurosporine
+    predicate: inhibits
+    object: pim1
+    notes: BindingDB maps this exact Standard InChIKey to a 10 nM IC50 measurement
+      against human PIM1 at pH 7.6000 and 30.00 C, and P11309 resolves in UniProtKB
+      to the human PIM1 gene product.
+    evidence:
+    - reference: DOI:10.1074/jbc.M413155200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1796959 was deposited by BindingDB for PMID 15657054
+        and reports active staurosporine inhibition of human PIM1 in a kinase assay.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1581,4 +1607,12 @@ curation_history:
     UniProtKB:Q9H4B4, and UniProtKB:O00444, and cited DOI:10.1021/bi7008745 via exact
     BindingDB and BindingDB-deposited PubChem BioAssay rows for PMID 17655330 and
     AID 1798514.
+  llm_assisted: true
+- timestamp: '2026-09-11T11:01:39Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of human
+    PIM1, grounded the protein node to UniProtKB:P11309, and cited DOI:10.1074/jbc.M413155200
+    via exact BindingDB and BindingDB-deposited PubChem BioAssay rows for PMID 15657054
+    and AID 1796959.
   llm_assisted: true
