@@ -191,3 +191,19 @@ footer.site { border-top: 1px solid var(--rule); color: var(--muted); font-size:
 #map-controls .legend.off { opacity: .4; text-decoration: line-through; }
 #corpus-map { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
 figure { margin: 0; }
+
+/* --- Corpus map (text embeddings; see map.html) --- */
+.lede { font-size: 1.05rem; color: var(--ink); margin: .3rem 0 .8rem; }
+.meta { color: var(--muted); font-size: .88rem; margin: .5rem 0; }
+#map-controls { display: flex; flex-wrap: wrap; gap: .4rem; margin: .9rem 0; }
+.pill { font: inherit; font-size: .8rem; padding: .2rem .6rem; border-radius: 1rem;
+        border: 1px solid var(--rule); background: var(--panel); color: var(--ink);
+        cursor: pointer; }
+.pill[aria-pressed="false"] { opacity: .38; }
+.pill .swatch { display: inline-block; width: .6rem; height: .6rem; border-radius: 50%;
+                margin-right: .35rem; vertical-align: baseline; }
+#corpus-map { margin: 0; }
+#corpus-map canvas { width: 100%; height: auto; max-width: 100%;
+                     border: 1px solid var(--rule); border-radius: .5rem;
+                     background: var(--panel); touch-action: none; }
+#map-hover { min-height: 1.4em; }

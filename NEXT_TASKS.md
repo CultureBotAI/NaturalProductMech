@@ -12,10 +12,6 @@ Milestones are in `PLAN.md` §7. M0–M3 and M5 have landed; M4 and M6 have not.
 Documentation was ported from AntibioticMech ahead of the code. These are the
 pieces named as available that were never built.
 
-- **The structure map and text embeddings.** `just chemical-map` and
-  `just embed`, the site's second stage: a 2-D structure map rendered from a
-  committed embedding. The site itself landed in #53 without them, which is
-  the order that issue proposed.
 
 ## Gates that do not yet guard
 

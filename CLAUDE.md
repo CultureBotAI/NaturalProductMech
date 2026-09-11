@@ -79,8 +79,14 @@ just new-history       # scaffold a curation-history record (needs a claw checko
 just render            # regenerate the committed site under pages/
 just render-check      # fail if pages/ is out of step with the corpus
 
-Not available: `just chemical-map` and the structure embeddings, which are the
-site's second stage and not a precondition for it (#53).
+just chemical-map      # recompute the structure map (needs the chemical-map extra)
+just embed             # text-embed the corpus locally, then `just embed-map`
+
+Two maps, and they answer different questions. `just chemical-map` is
+structure only — chiral Morgan fingerprints and Tanimoto distance — so
+proximity means *chemically similar*. `just embed` is a TEXT embedding of what
+each record says, so proximity means *described similarly*: same pathway,
+producer or activity. Neither substitutes for the other, and the pages say so.
 
 For an upstream refresh, every source has a free `-dry` run and a writing run;
 the two networked batches also have a one-call `-canary`. MIBiG is the anchor

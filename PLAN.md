@@ -482,8 +482,8 @@ at the current pin *without* a consumer entry yet (the checker will fail on
 identity until M4 — record that as the expected red gate, or run it in
 `--offline` mode until admission).
 
-*Landed as #7 — without the site renderer, which arrived later in #53, and
-the chemical-map, which is still owed.*
+*Landed as #7 — without the site renderer and the maps, which arrived later
+in #53.*
 
 **M2 — ChEBI + MIBiG seed (Phase A core).** `conf/np_roles.tsv` reviewed;
 ChEBI inventory limited to 3-star compounds bearing an allow-listed role or

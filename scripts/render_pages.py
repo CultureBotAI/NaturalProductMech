@@ -267,6 +267,30 @@ def build(out_dir: Path) -> tuple[int, int]:
     (out_dir / "404.html").write_text(env.get_template("not_found.html").render(
         root=""), encoding="utf-8")
 
+    # The corpus map, when its JSON has been built. Committed and small, so the
+    # site renders it whenever it is there and skips it otherwise — a checkout
+    # where `just embed-map` has never run gets no half-drawn page.
+    corpus_map_path = REPO_ROOT / "data" / "embeddings" / "corpus_map.json"
+    if corpus_map_path.exists():
+        corpus_map = json.loads(corpus_map_path.read_text(encoding="utf-8"))
+        href_by_identifier = {
+            record["identifier"]: f"{pathway['slug']}/{record['slug']}.html"
+            for pathway in pathways for record in pathway["records"]
+        }
+        corpus_map["hrefs"] = {
+            point[3]: href_by_identifier[point[3]]
+            for point in corpus_map["points"] if point[3] in href_by_identifier
+        }
+        (out_dir / "map.html").write_text(
+            env.get_template("map.html").render(
+                root="", map=corpus_map,
+                # Embedded as JSON in a <script> tag, so the two characters
+                # that would end it early are escaped.
+                map_json=json.dumps(corpus_map, separators=(",", ":"))
+                .replace("<", "\\u003c").replace("\u2028", "\\u2028")
+                .replace("\u2029", "\\u2029")),
+            encoding="utf-8")
+
     # The structure map, when its artifact has been built. Skipped rather than
     # half-drawn: `just chemical-map` needs RDKit and UMAP, which `just render`
     # does not, so a checkout that has never run it still renders a whole site.
