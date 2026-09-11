@@ -144,8 +144,45 @@ discussions:
   prompt: ChEBI calls this structure 'pentostatin' and MIBiG calls it 'pentostatine'.
     They share a Standard InChIKey, so if the names denote different compounds then
     one upstream record has the wrong structure. Check which.
+causal_graphs:
+- graph_id: pentostatin-sanada3-inhibition
+  scope: BIOACTIVITY
+  description: Pentostatin inhibition of Streptomyces antibioticus NRRL 3238 adenosine
+    deaminase 3.
+  nodes:
+  - node_id: pentostatin
+    label: pentostatin
+    node_type: COMPOUND
+    identifier: CHEBI:27834
+    grounding_status: GROUNDED
+  - node_id: sanada3
+    label: S. antibioticus adenosine deaminase 3
+    node_type: PROTEIN
+    identifier: UniProtKB:A0A1S5RQP7
+    grounding_status: GROUNDED
+  edges:
+  - subject: pentostatin
+    predicate: inhibits
+    object: sanada3
+    notes: BindingDB maps both 1.0 and 2.1 nM Ki values against the 356 aa S. antibioticus
+      SanADA3 target to UniProtKB:A0A1S5RQP7; KT591401.1/AOG75036.1 links the accession
+      to the 2017 Cell Chemical Biology study.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.12.012
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: PTN can protect Ara-A from deamination by selective inhibition of the
+        host adenosine deaminase
+      notes: Wu et al. assayed recombinant S. antibioticus NRRL 3238 adenosine deaminase
+        3 against Ara-A or adenosine with pentostatin at 1, 2 and 5 nM.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T03:12:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY graph for pentostatin inhibition of S. antibioticus
+    NRRL 3238 SanADA3, grounding the assayed adenosine deaminase 3 protein to UniProtKB:A0A1S5RQP7;
+    left seeded BindingDB molecular target rows source-owned.
+  llm_assisted: true
