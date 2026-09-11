@@ -73,11 +73,16 @@ def test_pin_file_is_well_formed():
     assert len(checker.read_pin(REPO_ROOT)) == 40
 
 
-def test_this_repository_is_not_yet_a_registered_consumer():
-    """The premise of this file. When this fails, M4 admission has landed at the
-    pinned ref: add ``just vendored-sync`` to the gate and keep the rest."""
-    with pytest.raises(checker.GovernanceError):
-        MANIFEST.consumer_for("CultureBotAI/NaturalProductMech")
+def test_this_repository_is_a_registered_consumer():
+    """Admission landed at the pinned ref (culturebotai-claw#395, 2026-09-11).
+    Until then this test asserted the opposite, and ``CONSUMER`` above stood in
+    for a registry entry that did not exist. Now the registry is authoritative
+    and the constant is checked against it, so a drift in either direction --
+    a renamed package path here, or a re-registration there -- fails here."""
+    registered = MANIFEST.consumer_for("CultureBotAI/NaturalProductMech")
+    assert registered.key == CONSUMER.key
+    assert registered.github == CONSUMER.github
+    assert registered.package_path == CONSUMER.package_path
 
 
 def test_every_fleet_wide_artifact_applies_here():
