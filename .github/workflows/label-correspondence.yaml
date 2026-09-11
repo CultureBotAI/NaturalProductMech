@@ -8,8 +8,13 @@ name: label-correspondence
 # than with it. What is checked, what is skipped and why: conf/id_label_targets.yaml.
 
 on:
+  # Required checks must report for every PR and merge-group commit.
   pull_request:
-    paths: &trigger_paths
+  merge_group:
+    types: [checks_requested]
+  push:
+    branches: [main]
+    paths:
       - "data/natural_products/**"
       - "scripts/validate_id_label_correspondence.py"
       - "scripts/chem_formula.py"
@@ -21,9 +26,6 @@ on:
       - ".github/workflows/label-correspondence.yaml"
       - "pyproject.toml"
       - "uv.lock"
-  push:
-    branches: [main]
-    paths: *trigger_paths
   workflow_dispatch:
 
 permissions:
