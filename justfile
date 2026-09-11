@@ -200,6 +200,21 @@ worklist *args:
 review-queue *args:
     uv run python scripts/curation_worklist.py --limit 0 {{args}}
 
+# Recompute the structure-only chemical embedding, then publish it. Needs the
+# chemical-map extra (RDKit, UMAP); `just render` alone does not.
+chemical-map:
+    uv run --extra chemical-map python scripts/generate_chemical_map.py
+    uv run python scripts/render_pages.py
+
+# Deterministic staleness, coverage and scientific-quality check on the
+# committed artifact. No recompute, so it is cheap enough for the gate.
+chemical-map-check:
+    uv run --extra chemical-map python scripts/generate_chemical_map.py --check
+
+# The expensive audit: rerun fingerprints, distances and UMAP and compare.
+chemical-map-recompute-check:
+    uv run --extra chemical-map python scripts/generate_chemical_map.py --check --recompute
+
 # Regenerate the committed site under pages/ from the corpus.
 render *args:
     uv run python scripts/render_pages.py {{args}}

@@ -4,13 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}NaturalProductMech{% endblock %}</title>
+<meta name="description" content="{% block description %}Individual natural product structures, one record per Standard InChIKey, with producer organisms, cited occurrences and biosynthetic gene clusters kept apart.{% endblock %}">
 <link rel="stylesheet" href="{{ root }}style.css">
+{% block head %}{% endblock %}
 </head>
 <body>
 <header class="site"><div class="wrap">
   <a class="home" href="{{ root }}index.html">NaturalProductMech</a>
   <nav>
     <a href="{{ root }}browse.html">Browse</a>
+    <a href="{{ root }}chemical-map.html">Structure map</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
   </nav>
 </div></header>
