@@ -150,8 +150,96 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: apicidin-hdac-inhibition
+  scope: BIOACTIVITY
+  description: Apicidin inhibits human histone deacetylases HDAC1, HDAC3, HDAC4, and
+    HDAC6.
+  nodes:
+  - node_id: apicidin
+    label: apicidin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-f6e5a95e78
+    grounding_status: GROUNDED
+  - node_id: hdac1
+    label: human histone deacetylase 1
+    node_type: PROTEIN
+    identifier: UniProtKB:Q13547
+    grounding_status: GROUNDED
+  - node_id: hdac3
+    label: human histone deacetylase 3
+    node_type: PROTEIN
+    identifier: UniProtKB:O15379
+    grounding_status: GROUNDED
+  - node_id: hdac4
+    label: human histone deacetylase 4
+    node_type: PROTEIN
+    identifier: UniProtKB:P56524
+    grounding_status: GROUNDED
+  - node_id: hdac6
+    label: human histone deacetylase 6
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9UBN7
+    grounding_status: GROUNDED
+  edges:
+  - subject: apicidin
+    predicate: inhibits
+    object: hdac1
+    notes: BindingDB maps this exact Standard InChIKey to active 23 and 44 nM IC50
+      measurements against human HDAC1, and Q13547 resolves in UniProtKB to the human
+      HDAC1 gene product.
+    evidence:
+    - reference: DOI:10.1016/j.bmcl.2008.02.025
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1798526 was deposited by BindingDB for PMID 18308563
+        and reports active apicidin inhibition of human HDAC1.
+    - reference: DOI:10.1021/jm800079s
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1798524 was deposited by BindingDB for PMID 18370373
+        and reports active apicidin inhibition of human HDAC1.
+  - subject: apicidin
+    predicate: inhibits
+    object: hdac3
+    notes: BindingDB maps this exact Standard InChIKey to a 9.7 nM IC50 measurement
+      against human HDAC3, and O15379 resolves in UniProtKB to the human HDAC3 gene
+      product.
+    evidence:
+    - reference: DOI:10.1016/j.bmcl.2008.02.025
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1798526 was deposited by BindingDB for PMID 18308563
+        and reports active apicidin inhibition of human HDAC3.
+  - subject: apicidin
+    predicate: inhibits
+    object: hdac4
+    notes: BindingDB maps this exact Standard InChIKey to active 3.6 and 8.7 uM IC50
+      measurements against human HDAC4, and P56524 resolves in UniProtKB to the human
+      HDAC4 gene product.
+    evidence:
+    - reference: DOI:10.1016/j.bmcl.2008.02.025
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1798526 was deposited by BindingDB for PMID 18308563
+        and reports active apicidin inhibition of human HDAC4.
+  - subject: apicidin
+    predicate: inhibits
+    object: hdac6
+    notes: BindingDB maps this exact Standard InChIKey to a 4.3 uM IC50 measurement
+      against human HDAC6, and Q9UBN7 resolves in UniProtKB to the human HDAC6 gene
+      product.
+    evidence:
+    - reference: DOI:10.1016/j.bmcl.2008.02.025
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1798526 was deposited by BindingDB for PMID 18308563
+        and reports active apicidin inhibition of human HDAC6.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T06:54:16Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for apicidin inhibition of human HDAC1,
+    HDAC3, HDAC4, and HDAC6, grounded the protein nodes to UniProtKB:Q13547, UniProtKB:O15379,
+    UniProtKB:P56524, and UniProtKB:Q9UBN7, and cited DOI:10.1016/j.bmcl.2008.02.025
+    and DOI:10.1021/jm800079s through exact BindingDB-deposited PubChem BioAssay rows.
+  llm_assisted: true
