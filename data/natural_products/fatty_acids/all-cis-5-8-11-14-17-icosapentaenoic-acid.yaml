@@ -669,6 +669,42 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000861, BGC0000862,
     BGC0000863, BGC0000865. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
+causal_graphs:
+- graph_id: all-cis-5-8-11-14-17-icosapentaenoic-acid-ppard-binding
+  scope: BIOACTIVITY
+  description: all-cis-5,8,11,14,17-icosapentaenoic acid binds the human PPAR-delta
+    ligand-binding domain captured in PDB 3GWX.
+  nodes:
+  - node_id: epa
+    label: all-cis-5,8,11,14,17-icosapentaenoic acid
+    node_type: COMPOUND
+    identifier: CHEBI:28364
+    grounding_status: GROUNDED
+  - node_id: ppard
+    label: human peroxisome proliferator-activated receptor delta
+    node_type: PROTEIN
+    identifier: UniProtKB:Q03181
+    grounding_status: GROUNDED
+  edges:
+  - subject: epa
+    predicate: binds
+    object: ppard
+    notes: PubChem BioAssay AID 977608 maps this exact Standard InChIKey to an active
+      4 uM IC50 row for PDB 3GWX chain A; PDBe maps 3GWX_A to Homo sapiens UniProtKB:Q03181,
+      and RCSB reports the EPA non-polymer ligand with the record's Standard InChIKey
+      in 3GWX.
+    evidence:
+    - reference: DOI:10.1016/S1097-2765(00)80467-0
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Molecular recognition of fatty acids by peroxisome proliferator-activated
+        receptors.
+      notes: Xu et al. solved PDB 3GWX as an EPA-bound human PPAR-delta ligand-binding-domain
+        structure.
+    - reference: DOI:10.2210/pdb3gwx/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: RCSB PDB identifies 3GWX as a human PPAR-delta ligand-binding-domain
+        structure containing the EPA ligand, and PDBe maps chain A to the canonical
+        Homo sapiens PPARD sequence in UniProtKB:Q03181.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -678,3 +714,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T17:44:37Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for all-cis-5,8,11,14,17-icosapentaenoic
+    acid binding to the human PPAR-delta ligand-binding domain; grounded the graph
+    node to UniProtKB:Q03181 via the exact PDBe chain mapping for PDB 3GWX_A; and
+    cited the PubChem/PDB affinity row through DOI:10.1016/S1097-2765(00)80467-0 and
+    DOI:10.2210/pdb3gwx/pdb.
+  llm_assisted: true
