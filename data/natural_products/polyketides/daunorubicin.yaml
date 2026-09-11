@@ -552,6 +552,71 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-2e75a3117d
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: daunorubicin-pfudn-inhibition
+  scope: BIOACTIVITY
+  description: Daunorubicin inhibition of recombinant Plasmodium falciparum 3D7 PfUDN
+    ATPase and DNA-unwinding activities.
+  nodes:
+  - node_id: daunorubicin
+    label: daunorubicin
+    node_type: COMPOUND
+    identifier: CHEBI:41977
+    grounding_status: GROUNDED
+  - node_id: pfudn
+    label: P. falciparum PfUDN fragment
+    node_type: PROTEIN
+    identifier: UniProtKB:Q8I3W6
+    grounding_status: GROUNDED
+  - node_id: pfudn_atpase_activity
+    label: PfUDN ssDNA-dependent ATPase activity
+    node_type: PROCESS
+  - node_id: pfudn_dna_unwinding
+    label: PfUDN DNA unwinding activity
+    node_type: PROCESS
+  edges:
+  - subject: pfudn
+    predicate: has activity
+    object: pfudn_atpase_activity
+    notes: The expressed PfUDN construct spans amino acids 35-727 of the 1441 aa P.
+      falciparum 3D7 Q8I3W6 DNA 3'-5' helicase.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0049385
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: possess ssDNA-dependent ATPase and DNA helicase activities in vitro
+      notes: Q8I3W6 resolves in UniProtKB to PF3D7_0514100 from P. falciparum isolate
+        3D7 and annotates a UvrD-like helicase ATP-binding domain over amino acids
+        35-727.
+  - subject: pfudn
+    predicate: has activity
+    object: pfudn_dna_unwinding
+    notes: The expressed PfUDN construct spans amino acids 35-727 of the 1441 aa P.
+      falciparum 3D7 Q8I3W6 DNA 3'-5' helicase.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0049385
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: possess ssDNA-dependent ATPase and DNA helicase activities in vitro
+      notes: The authors showed ATP-dependent 3' to 5' DNA unwinding by purified PfUDN.
+  - subject: daunorubicin
+    predicate: inhibits
+    object: pfudn_atpase_activity
+    notes: PubChem AID 1802684 captures the daunorubicin 4.4 uM IC50 against P. falciparum
+      DNA helicase [35-727].
+    evidence:
+    - reference: DOI:10.1186/1471-2091-15-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: we screened the effect of various DNA interacting compounds on the
+        ATPase and helicase activity of PfUDN
+  - subject: daunorubicin
+    predicate: inhibits
+    object: pfudn_dna_unwinding
+    notes: PubChem AID 1802685 captures the daunorubicin 3.0 uM IC50 against P. falciparum
+      DNA helicase [35-727].
+    evidence:
+    - reference: DOI:10.1186/1471-2091-15-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: we screened the effect of various DNA interacting compounds on the
+        ATPase and helicase activity of PfUDN
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -561,3 +626,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T15:55:22Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY graph for daunorubicin inhibition of recombinant P.
+    falciparum PfUDN ATPase and DNA-unwinding activities, grounding the assayed 35-727
+    fragment to full-length UniProtKB:Q8I3W6; kept the graph at process-level inhibition
+    because the source measured PfUDN activity inhibition rather than direct compound-protein
+    binding.
+  llm_assisted: true
