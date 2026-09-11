@@ -1409,6 +1409,67 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: PubChem BioAssay AID 1797581 was deposited by BindingDB for PMID 12892559
         and reports active staurosporine inhibition in a PDK1 kinase activity assay.
+- graph_id: staurosporine-akt-inhibition
+  scope: BIOACTIVITY
+  description: Staurosporine inhibits human AKT1, AKT2, and AKT3.
+  nodes:
+  - node_id: staurosporine
+    label: staurosporine
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-c702c4be08
+    grounding_status: GROUNDED
+  - node_id: akt1
+    label: human RAC-alpha serine/threonine-protein kinase
+    node_type: PROTEIN
+    identifier: UniProtKB:P31749
+    grounding_status: GROUNDED
+  - node_id: akt2
+    label: human RAC-beta serine/threonine-protein kinase
+    node_type: PROTEIN
+    identifier: UniProtKB:P31751
+    grounding_status: GROUNDED
+  - node_id: akt3
+    label: human RAC-gamma serine/threonine-protein kinase
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9Y243
+    grounding_status: GROUNDED
+  edges:
+  - subject: staurosporine
+    predicate: inhibits
+    object: akt1
+    notes: BindingDB maps this exact Standard InChIKey to a 1.5 nM IC50 measurement
+      against the engineered human AKT1 139-480 S378A/S381A/T450D/S473D construct,
+      and P31749 resolves in UniProtKB to the human AKT1 gene product.
+    evidence:
+    - reference: DOI:10.1016/j.bmcl.2005.12.065
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1797336 was deposited by BindingDB for PMID 16413780
+        and reports active staurosporine inhibition of human AKT1 in an Akt kinase
+        assay.
+  - subject: staurosporine
+    predicate: inhibits
+    object: akt2
+    notes: BindingDB maps this exact Standard InChIKey to a 6.5 nM IC50 measurement
+      against human AKT2, and P31751 resolves in UniProtKB to the human AKT2 gene
+      product.
+    evidence:
+    - reference: DOI:10.1016/j.bmcl.2005.12.065
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1797336 was deposited by BindingDB for PMID 16413780
+        and reports active staurosporine inhibition of human AKT2 in an Akt kinase
+        assay.
+  - subject: staurosporine
+    predicate: inhibits
+    object: akt3
+    notes: BindingDB maps this exact Standard InChIKey to a 10 nM IC50 measurement
+      against human AKT3, and Q9Y243 resolves in UniProtKB to the human AKT3 gene
+      product.
+    evidence:
+    - reference: DOI:10.1016/j.bmcl.2005.12.065
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1797336 was deposited by BindingDB for PMID 16413780
+        and reports active staurosporine inhibition of human AKT3 in an Akt kinase
+        assay.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1425,4 +1486,12 @@ curation_history:
     3-phosphoinositide-dependent protein kinase 1, grounded the protein node to UniProtKB:O15530,
     and cited DOI:10.1042/BJ20031119 via the exact BindingDB and PubChem BioAssay
     rows for PMID 12892559 and AID 1797581.
+  llm_assisted: true
+- timestamp: '2026-09-11T09:52:39Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of human
+    AKT1, AKT2, and AKT3, grounded the protein nodes to UniProtKB:P31749, UniProtKB:P31751,
+    and UniProtKB:Q9Y243, and cited DOI:10.1016/j.bmcl.2005.12.065 via exact BindingDB
+    and BindingDB-deposited PubChem BioAssay rows for PMID 16413780 and AID 1797336.
   llm_assisted: true
