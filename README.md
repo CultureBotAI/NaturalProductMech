@@ -178,6 +178,11 @@ several of the restricted sources above.
 The full reasoning, with licence text quoted from each primary page, is in the
 [research report](research/2026-09-07-natural-product-data-sources.md).
 
+## Contributing
+
+See the [native merge queue guide](docs/MERGE_QUEUE.md) for PR checks,
+queue validation, and recovery when a queued change fails.
+
 ## Licence
 
 Two licences, because the repository will hold two different things.
