@@ -348,8 +348,43 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-a0ba6b6539
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: thebaine-mrgprx2-activation
+  scope: BIOACTIVITY
+  description: Thebaine activates human MRGPRX2 in beta-arrestin recruitment and intracellular
+    calcium mobilization assays.
+  nodes:
+  - node_id: thebaine
+    label: thebaine
+    node_type: COMPOUND
+    identifier: CHEBI:9519
+    grounding_status: GROUNDED
+  - node_id: mrgprx2
+    label: human MRGPRX2
+    node_type: PROTEIN
+    identifier: UniProtKB:Q96LB1
+    grounding_status: GROUNDED
+  edges:
+  - subject: thebaine
+    predicate: activates
+    object: mrgprx2
+    notes: BindingDB maps this exact Standard InChIKey to two human MRGPRX2 EC50 values,
+      76 uM and 11 uM; Q96LB1 resolves in UniProtKB to the human MRGPRX2 gene product.
+    evidence:
+    - reference: DOI:10.1038/nchembio.2334
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The primary article assayed thebaine in human MRGPRX2 PRESTO-Tango beta-arrestin
+        recruitment and intracellular calcium release assays; the two BindingDB rows
+        for PMID 28288109 report active EC50 measurements.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T16:18:24Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for thebaine activation of human MRGPRX2,
+    grounded the MRGPRX2 node to UniProtKB:Q96LB1, and cited DOI:10.1038/nchembio.2334
+    via the BindingDB-curated PMID 28288109 measurements.
+  llm_assisted: true
