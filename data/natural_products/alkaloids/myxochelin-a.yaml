@@ -215,8 +215,41 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0001345, BGC0002324,
     BGC0002491, BGC0002492. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
+causal_graphs:
+- graph_id: myxochelin-a-alox5-inhibition
+  scope: BIOACTIVITY
+  description: Myxochelin A inhibits human 5-lipoxygenase in a 5-LO activity assay.
+  nodes:
+  - node_id: myxochelin_a
+    label: myxochelin A
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-b9324089ad
+    grounding_status: GROUNDED
+  - node_id: alox5
+    label: human 5-lipoxygenase
+    node_type: PROTEIN
+    identifier: UniProtKB:P09917
+    grounding_status: GROUNDED
+  edges:
+  - subject: myxochelin_a
+    predicate: inhibits
+    object: alox5
+    notes: PubChem BioAssay AID 1801607 maps the 1.715 uM IC50 myxochelin A 5-LO activity
+      assay to UniProtKB:P09917, the human ALOX5 protein.
+    evidence:
+    - reference: DOI:10.1002/cbic.201500446
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Schieferdecker et al. tested the myxochelin family against human 5-lipoxygenase;
+        the BindingDB-deposited PubChem assay reports myxochelin A with IC50 1.715
+        uM.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T04:44:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a myxochelin A bioactivity causal graph linking 5-LO activity inhibition
+    to human UniProtKB:P09917.
+  llm_assisted: true
