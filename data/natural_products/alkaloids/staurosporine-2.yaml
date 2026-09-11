@@ -1673,6 +1673,40 @@ causal_graphs:
       notes: PubChem BioAssay AID 1799368 was deposited by BindingDB for PMID 18454143
         and reports active staurosporine inhibition of Plasmodium falciparum CDPK1
         in a scintillation proximity assay.
+- graph_id: staurosporine-gsk3b-inhibition
+  scope: BIOACTIVITY
+  description: Staurosporine inhibits human GSK3B.
+  nodes:
+  - node_id: staurosporine
+    label: staurosporine
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-c702c4be08
+    grounding_status: GROUNDED
+  - node_id: gsk3b
+    label: human glycogen synthase kinase-3 beta
+    node_type: PROTEIN
+    identifier: UniProtKB:P49841
+    grounding_status: GROUNDED
+  edges:
+  - subject: staurosporine
+    predicate: inhibits
+    object: gsk3b
+    notes: BindingDB maps this exact Standard InChIKey to 38, 60, and 54 nM IC50 measurements
+      against human GSK3B, and P49841 resolves in UniProtKB to the human GSK3B gene
+      product.
+    evidence:
+    - reference: DOI:10.1111/cbdd.12546
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1801382 was deposited by BindingDB for PMID 25711384
+        and reports active staurosporine inhibition in a GSK-3 beta kinase assay.
+    - reference: DOI:10.1111/cbdd.12724
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1801812 was deposited by BindingDB for PMID 26804375
+        and reports active staurosporine inhibition in a Kinase-Glo assay.
+    - reference: DOI:10.1016/j.bioorg.2016.07.007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1801940 was deposited by BindingDB for PMID 27454617
+        and reports active staurosporine inhibition in a GSK-3 beta activity assay.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1738,4 +1772,13 @@ curation_history:
     falciparum K1 CDPK1, grounded the protein node to UniProtKB:P62343, and cited
     DOI:10.1038/nchembio.87 via exact BindingDB and BindingDB-deposited PubChem BioAssay
     rows for PMID 18454143 and AID 1799368.
+  llm_assisted: true
+- timestamp: '2026-09-11T12:18:14Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of human
+    GSK3B, grounded the protein node to UniProtKB:P49841, and cited DOI:10.1111/cbdd.12546,
+    DOI:10.1111/cbdd.12724, and DOI:10.1016/j.bioorg.2016.07.007 via exact BindingDB
+    and BindingDB-deposited PubChem BioAssay rows for PMIDs 25711384, 26804375, and
+    27454617 and AIDs 1801382, 1801812, and 1801940.
   llm_assisted: true
