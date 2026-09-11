@@ -621,6 +621,62 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0001238, BGC0001239.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+causal_graphs:
+- graph_id: biotin-streptavidin-avidin-binding
+  scope: BIOACTIVITY
+  description: Biotin binds the Streptomyces avidinii streptavidin and chicken avidin
+    subunits captured in homotetrameric biotin complexes.
+  nodes:
+  - node_id: biotin
+    label: biotin
+    node_type: COMPOUND
+    identifier: CHEBI:15956
+    grounding_status: GROUNDED
+  - node_id: streptavidin
+    label: Streptomyces avidinii streptavidin
+    node_type: PROTEIN
+    identifier: UniProtKB:P22629
+    grounding_status: GROUNDED
+  - node_id: avidin
+    label: chicken avidin
+    node_type: PROTEIN
+    identifier: UniProtKB:P02701
+    grounding_status: GROUNDED
+  edges:
+  - subject: biotin
+    predicate: binds
+    object: streptavidin
+    notes: PubChem BioAssay AID 977611 maps this exact Standard InChIKey to an active
+      40 fM Kd row for PDB 1STP chain A; PDBe maps 1STP_A to Streptomyces avidinii
+      UniProtKB:P22629, and RCSB reports BTN biotin as the 1STP non-polymer ligand.
+    evidence:
+    - reference: DOI:10.1126/science.2911722
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Structural origins of high-affinity biotin binding to streptavidin.
+      notes: Weber et al. solved PDB 1STP as a biotin-bound Streptomyces avidinii
+        streptavidin structure.
+    - reference: DOI:10.2210/pdb1stp/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: RCSB PDB identifies 1STP as a biotin-streptavidin crystal structure and
+        PDBe maps chain A to the mature Streptomyces avidinii streptavidin sequence
+        in UniProtKB:P22629.
+  - subject: biotin
+    predicate: binds
+    object: avidin
+    notes: PubChem BioAssay AID 977611 maps this exact Standard InChIKey to an active
+      1 fM Kd row for PDB 1AVD chain A; PDBe maps 1AVD_A to Gallus gallus UniProtKB:P02701,
+      and RCSB reports BTN biotin as the 1AVD entity 3 ligand.
+    evidence:
+    - reference: DOI:10.1006/jmbi.1993.1321
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: egg-white avidin in its functional complex with biotin
+      notes: Pugliese et al. solved PDB 1AVD as a biotin-bound chicken egg-white avidin
+        structure.
+    - reference: DOI:10.2210/pdb1avd/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: RCSB PDB identifies 1AVD as a chicken avidin crystal structure with BTN
+        biotin ligands, and PDBe maps chain A to the mature Gallus gallus avidin sequence
+        in UniProtKB:P02701.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -630,3 +686,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T17:22:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for biotin binding to Streptomyces avidinii
+    streptavidin and chicken avidin; grounded the graph nodes to UniProtKB:P22629
+    and UniProtKB:P02701 via exact PDBe chain mappings for PDB 1STP_A and 1AVD_A;
+    and cited the PubChem/PDB affinity rows through DOI:10.1126/science.2911722, DOI:10.2210/pdb1stp/pdb,
+    DOI:10.1006/jmbi.1993.1321, and DOI:10.2210/pdb1avd/pdb.
+  llm_assisted: true
