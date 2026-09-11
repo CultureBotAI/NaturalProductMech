@@ -387,6 +387,49 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-5a5e8360d7
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: physostigmine-cholinesterase-inhibition
+  scope: BIOACTIVITY
+  description: Physostigmine inhibits human acetylcholinesterase and butyrylcholinesterase.
+  nodes:
+  - node_id: physostigmine
+    label: physostigmine
+    node_type: COMPOUND
+    identifier: CHEBI:27953
+    grounding_status: GROUNDED
+  - node_id: ache
+    label: human acetylcholinesterase
+    node_type: PROTEIN
+    identifier: UniProtKB:P22303
+    grounding_status: GROUNDED
+  - node_id: bche
+    label: human butyrylcholinesterase
+    node_type: PROTEIN
+    identifier: UniProtKB:P06276
+    grounding_status: GROUNDED
+  edges:
+  - subject: physostigmine
+    predicate: inhibits
+    object: ache
+    notes: BindingDB maps this exact Standard InChIKey to a 28 nM IC50 measurement
+      against human acetylcholinesterase, and P22303 resolves in UniProtKB to the
+      human ACHE gene product.
+    evidence:
+    - reference: DOI:10.1021/jm010491d
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1796572 was deposited by BindingDB for PMID 12166941
+        and reports active physostigmine inhibition of human acetylcholinesterase.
+  - subject: physostigmine
+    predicate: inhibits
+    object: bche
+    notes: BindingDB maps this exact Standard InChIKey to a 16 nM IC50 measurement
+      against human butyrylcholinesterase, and P06276 resolves in UniProtKB to the
+      human BCHE gene product.
+    evidence:
+    - reference: DOI:10.1021/jm010491d
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1796572 was deposited by BindingDB for PMID 12166941
+        and reports active physostigmine inhibition of human butyrylcholinesterase.
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -396,3 +439,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T06:07:14Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for physostigmine inhibition of human
+    acetylcholinesterase and human butyrylcholinesterase, grounded the enzyme nodes
+    to UniProtKB:P22303 and UniProtKB:P06276, and cited DOI:10.1021/jm010491d via
+    the BindingDB-deposited PMID 12166941 measurements in PubChem BioAssay AID 1796572.
+  llm_assisted: true
