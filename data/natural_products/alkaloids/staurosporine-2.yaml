@@ -1574,6 +1574,50 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: PubChem BioAssay AID 1796959 was deposited by BindingDB for PMID 15657054
         and reports active staurosporine inhibition of human PIM1 in a kinase assay.
+- graph_id: staurosporine-pdgfrb-vegfr2-inhibition
+  scope: BIOACTIVITY
+  description: Staurosporine inhibits human PDGFRB and VEGFR2 receptor tyrosine kinases.
+  nodes:
+  - node_id: staurosporine
+    label: staurosporine
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-c702c4be08
+    grounding_status: GROUNDED
+  - node_id: pdgfrb
+    label: human platelet-derived growth factor receptor beta
+    node_type: PROTEIN
+    identifier: UniProtKB:P09619
+    grounding_status: GROUNDED
+  - node_id: vegfr2
+    label: human vascular endothelial growth factor receptor 2
+    node_type: PROTEIN
+    identifier: UniProtKB:P35968
+    grounding_status: GROUNDED
+  edges:
+  - subject: staurosporine
+    predicate: inhibits
+    object: pdgfrb
+    notes: BindingDB maps this exact Standard InChIKey to a 6.14 nM IC50 measurement
+      against human PDGFRB, and P09619 resolves in UniProtKB to the human PDGFRB gene
+      product.
+    evidence:
+    - reference: DOI:10.1021/cb9002865
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1799383 was deposited by BindingDB for PMID 20020776
+        and reports active staurosporine inhibition of human PDGFRB in an in vitro
+        kinase assay.
+  - subject: staurosporine
+    predicate: inhibits
+    object: vegfr2
+    notes: BindingDB maps this exact Standard InChIKey to a 3.29 nM IC50 measurement
+      against human VEGFR2, and P35968 resolves in UniProtKB to the human KDR gene
+      product.
+    evidence:
+    - reference: DOI:10.1021/cb9002865
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1799383 was deposited by BindingDB for PMID 20020776
+        and reports active staurosporine inhibition of human VEGFR2 in an in vitro
+        kinase assay.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1615,4 +1659,12 @@ curation_history:
     PIM1, grounded the protein node to UniProtKB:P11309, and cited DOI:10.1074/jbc.M413155200
     via exact BindingDB and BindingDB-deposited PubChem BioAssay rows for PMID 15657054
     and AID 1796959.
+  llm_assisted: true
+- timestamp: '2026-09-11T11:20:07Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of human
+    PDGFRB and VEGFR2, grounded the protein nodes to UniProtKB:P09619 and UniProtKB:P35968,
+    and cited DOI:10.1021/cb9002865 via exact BindingDB and BindingDB-deposited PubChem
+    BioAssay rows for PMID 20020776 and AID 1799383.
   llm_assisted: true
