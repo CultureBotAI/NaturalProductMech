@@ -490,6 +490,67 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000104, BGC0001677,
     BGC0002616, BGC0002619. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
+causal_graphs:
+- graph_id: mycophenolic-acid-impdh-inhibition
+  scope: BIOACTIVITY
+  description: Mycophenolic acid inhibits human inosine-5'-monophosphate dehydrogenase
+    1 and 2.
+  nodes:
+  - node_id: mycophenolic_acid
+    label: mycophenolic acid
+    node_type: COMPOUND
+    identifier: CHEBI:168396
+    grounding_status: GROUNDED
+  - node_id: impdh1
+    label: human inosine-5'-monophosphate dehydrogenase 1
+    node_type: ENZYME
+    identifier: UniProtKB:P20839
+    grounding_status: GROUNDED
+  - node_id: impdh2
+    label: human inosine-5'-monophosphate dehydrogenase 2
+    node_type: ENZYME
+    identifier: UniProtKB:P12268
+    grounding_status: GROUNDED
+  edges:
+  - subject: mycophenolic_acid
+    predicate: inhibits
+    object: impdh1
+    notes: BindingDB-deposited PubChem BioAssay AID 1797840 maps this exact Standard
+      InChIKey to an active 0.033 uM Ki measurement against human IMPDH type 1; P20839
+      resolves in UniProtKB to the human IMPDH1 gene product.
+    evidence:
+    - reference: DOI:10.1021/jm070568j
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Inhibition assays were performed in duplicate using two different concentrations
+        of human IMPDH type 1
+      notes: PubChem BioAssay AID 1797840 was deposited by BindingDB for PMID 17958343
+        and reports a mycophenolic-acid Ki value against P20839.
+  - subject: mycophenolic_acid
+    predicate: inhibits
+    object: impdh2
+    notes: BindingDB-deposited PubChem BioAssay AIDs 1797841, 1797842 and 1803439
+      map this exact Standard InChIKey to active 0.007 uM Ki, 0.016 uM IC50 and 0.13
+      uM IC50 measurements against human IMPDH2; P12268 resolves in UniProtKB to the
+      human IMPDH2 gene product.
+    evidence:
+    - reference: DOI:10.1021/jm070568j
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Inhibition assays were performed in duplicate using two different concentrations
+        of human IMPDH type 2
+      notes: PubChem BioAssay AID 1797841 was deposited by BindingDB for PMID 17958343
+        and reports a mycophenolic-acid Ki value against P12268.
+    - reference: DOI:10.1021/jm070299x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Inhibition assays were performed using recombinant human IMPDH type
+        2
+      notes: PubChem BioAssay AID 1797842 was deposited by BindingDB for PMID 17585753
+        and reports a mycophenolic-acid IC50 value against P12268.
+    - reference: DOI:10.3109/14756366.2013.793184
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Mycophenolic acid (10 &mu;M) used as a positive control and DMSO as
+        a vehicle control.
+      notes: PubChem BioAssay AID 1803439 was deposited by BindingDB for PMID 23663081
+        and reports a mycophenolic-acid IC50 value against P12268.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -499,3 +560,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T14:31:37Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for mycophenolic acid inhibition of human
+    IMPDH1 and IMPDH2; grounded the enzyme nodes to UniProtKB:P20839 and UniProtKB:P12268;
+    and cited DOI:10.1021/jm070568j, DOI:10.1021/jm070299x and DOI:10.3109/14756366.2013.793184
+    via exact BindingDB-deposited PubChem BioAssay rows.
+  llm_assisted: true
