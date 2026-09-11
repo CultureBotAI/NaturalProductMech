@@ -639,6 +639,51 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-6f6e26399c
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: emodin-casein-kinase-2-inhibition
+  scope: BIOACTIVITY
+  description: Emodin inhibits maize and human casein kinase II alpha subunits.
+  nodes:
+  - node_id: emodin
+    label: emodin
+    node_type: COMPOUND
+    identifier: CHEBI:42223
+    grounding_status: GROUNDED
+  - node_id: maize_ck2a
+    label: maize casein kinase II subunit alpha
+    node_type: PROTEIN
+    identifier: UniProtKB:P28523
+    grounding_status: GROUNDED
+  - node_id: human_ck2a
+    label: human casein kinase II subunit alpha
+    node_type: PROTEIN
+    identifier: UniProtKB:P68400
+    grounding_status: GROUNDED
+  edges:
+  - subject: emodin
+    predicate: inhibits
+    object: maize_ck2a
+    notes: PubChem BioAssay AID 1796663 maps this exact Standard InChIKey to a 1.85
+      uM Ki measurement against maize casein kinase II subunit alpha, and P28523 resolves
+      in UniProtKB to the maize CK2 alpha gene product.
+    evidence:
+    - reference: DOI:10.1074/jbc.m209367200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The source article structurally characterized anthraquinone-related CK2
+        inhibitors; the BindingDB-deposited PubChem assay reports active emodin inhibition
+        of maize CK2 alpha.
+  - subject: emodin
+    predicate: inhibits
+    object: human_ck2a
+    notes: PubChem BioAssay AID 1796664 maps this exact Standard InChIKey to a 1.85
+      uM Ki measurement against human casein kinase II subunit alpha, and P68400 resolves
+      in UniProtKB to the human CSNK2A1 gene product.
+    evidence:
+    - reference: DOI:10.1042/bj20030674
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The source article biochemically and structurally characterized CK2 inhibitor
+        binding; the BindingDB-deposited PubChem assay reports active emodin inhibition
+        of human CK2 alpha.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -648,3 +693,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T08:05:51Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for emodin inhibition of maize and human
+    casein kinase II alpha, grounded the enzyme nodes to UniProtKB:P28523 and UniProtKB:P68400,
+    and cited DOI:10.1074/jbc.m209367200 and DOI:10.1042/bj20030674 via exact BindingDB-deposited
+    PubChem BioAssay rows for PMIDs 12419810 and 12816539.
+  llm_assisted: true
