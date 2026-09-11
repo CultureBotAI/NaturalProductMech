@@ -1470,6 +1470,84 @@ causal_graphs:
       notes: PubChem BioAssay AID 1797336 was deposited by BindingDB for PMID 16413780
         and reports active staurosporine inhibition of human AKT3 in an Akt kinase
         assay.
+- graph_id: staurosporine-plk-inhibition
+  scope: BIOACTIVITY
+  description: Staurosporine inhibits human PLK1, PLK2, PLK3, and PLK4.
+  nodes:
+  - node_id: staurosporine
+    label: staurosporine
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-c702c4be08
+    grounding_status: GROUNDED
+  - node_id: plk1
+    label: human serine/threonine-protein kinase PLK1
+    node_type: PROTEIN
+    identifier: UniProtKB:P53350
+    grounding_status: GROUNDED
+  - node_id: plk2
+    label: human serine/threonine-protein kinase PLK2
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9NYY3
+    grounding_status: GROUNDED
+  - node_id: plk3
+    label: human serine/threonine-protein kinase PLK3
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9H4B4
+    grounding_status: GROUNDED
+  - node_id: plk4
+    label: human serine/threonine-protein kinase PLK4
+    node_type: PROTEIN
+    identifier: UniProtKB:O00444
+    grounding_status: GROUNDED
+  edges:
+  - subject: staurosporine
+    predicate: inhibits
+    object: plk1
+    notes: BindingDB maps this exact Standard InChIKey to a 790 nM Ki measurement
+      against human PLK1, and P53350 resolves in UniProtKB to the human PLK1 gene
+      product.
+    evidence:
+    - reference: DOI:10.1021/bi7008745
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1798514 was deposited by BindingDB for PMID 17655330
+        and reports active staurosporine inhibition of human PLK1 in a PLK kinase
+        assay.
+  - subject: staurosporine
+    predicate: inhibits
+    object: plk2
+    notes: BindingDB maps this exact Standard InChIKey to a 150 nM Ki measurement
+      against human PLK2, and Q9NYY3 resolves in UniProtKB to the human PLK2 gene
+      product.
+    evidence:
+    - reference: DOI:10.1021/bi7008745
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1798514 was deposited by BindingDB for PMID 17655330
+        and reports active staurosporine inhibition of human PLK2 in a PLK kinase
+        assay.
+  - subject: staurosporine
+    predicate: inhibits
+    object: plk3
+    notes: BindingDB maps this exact Standard InChIKey to a 1200 nM Ki measurement
+      against human PLK3, and Q9H4B4 resolves in UniProtKB to the human PLK3 gene
+      product.
+    evidence:
+    - reference: DOI:10.1021/bi7008745
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1798514 was deposited by BindingDB for PMID 17655330
+        and reports active staurosporine inhibition of human PLK3 in a PLK kinase
+        assay.
+  - subject: staurosporine
+    predicate: inhibits
+    object: plk4
+    notes: BindingDB maps this exact Standard InChIKey to a 2.6 nM Ki measurement
+      against human PLK4, and O00444 resolves in UniProtKB to the human PLK4 gene
+      product.
+    evidence:
+    - reference: DOI:10.1021/bi7008745
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubChem BioAssay AID 1798514 was deposited by BindingDB for PMID 17655330
+        and reports active staurosporine inhibition of human PLK4 in a PLK kinase
+        assay.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1494,4 +1572,13 @@ curation_history:
     AKT1, AKT2, and AKT3, grounded the protein nodes to UniProtKB:P31749, UniProtKB:P31751,
     and UniProtKB:Q9Y243, and cited DOI:10.1016/j.bmcl.2005.12.065 via exact BindingDB
     and BindingDB-deposited PubChem BioAssay rows for PMID 16413780 and AID 1797336.
+  llm_assisted: true
+- timestamp: '2026-09-11T10:42:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of human
+    PLK1, PLK2, PLK3, and PLK4, grounded the protein nodes to UniProtKB:P53350, UniProtKB:Q9NYY3,
+    UniProtKB:Q9H4B4, and UniProtKB:O00444, and cited DOI:10.1021/bi7008745 via exact
+    BindingDB and BindingDB-deposited PubChem BioAssay rows for PMID 17655330 and
+    AID 1798514.
   llm_assisted: true
