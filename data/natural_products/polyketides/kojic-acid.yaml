@@ -576,6 +576,44 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-e6c6aefae9
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: kojic-acid-tyrosinase-inhibition
+  scope: BIOACTIVITY
+  description: Kojic acid inhibition of BindingDB-grounded Agaricus bisporus tyrosinase/polyphenol
+    oxidase proteins.
+  nodes:
+  - node_id: kojic_acid
+    label: kojic acid
+    node_type: COMPOUND
+    identifier: CHEBI:43572
+    grounding_status: GROUNDED
+  - node_id: agaricus_ppo1
+    label: Agaricus bisporus polyphenol oxidase 1
+    node_type: PROTEIN
+    identifier: UniProtKB:Q00024
+    grounding_status: GROUNDED
+  - node_id: agaricus_ppo2
+    label: Agaricus bisporus polyphenol oxidase 2
+    node_type: PROTEIN
+    identifier: UniProtKB:O42713
+    grounding_status: GROUNDED
+  edges:
+  - subject: kojic_acid
+    predicate: inhibits
+    object: agaricus_ppo1
+    notes: The source paper reported kojic acid as a 16.67 uM tyrosinase-inhibition
+      comparator, and BindingDB/PubChem AID 1802947 maps that row to A. bisporus PPO1.
+    evidence:
+    - reference: DOI:10.3109/14756366.2010.482529
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: kojic_acid
+    predicate: inhibits
+    object: agaricus_ppo2
+    notes: BindingDB/PubChem AID 1799721 reports a kojic acid IC50 measurement mapped
+      to A. bisporus PPO2.
+    evidence:
+    - reference: DOI:10.1080/14756360701810207
+      evidence_type: PRIMARY_EXPERIMENT
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -589,3 +627,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T02:01:24Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for kojic acid inhibition of Agaricus
+    bisporus PPO1 and PPO2 with UniProtKB-grounded protein nodes.
+  llm_assisted: true
