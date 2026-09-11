@@ -90,6 +90,50 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: feglymycin-mura-inhibition
+  scope: BIOACTIVITY
+  description: Feglymycin inhibits bacterial UDP-N-acetylglucosamine 1-carboxyvinyltransferases.
+  nodes:
+  - node_id: feglymycin
+    label: feglymycin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-01731d46ec
+    grounding_status: GROUNDED
+  - node_id: ecoli_mura
+    label: Escherichia coli K-12 UDP-N-acetylglucosamine 1-carboxyvinyltransferase
+    node_type: PROTEIN
+    identifier: UniProtKB:P0A749
+    grounding_status: GROUNDED
+  - node_id: saureus_mura2
+    label: Staphylococcus aureus Mu50 UDP-N-acetylglucosamine 1-carboxyvinyltransferase
+      2
+    node_type: PROTEIN
+    identifier: UniProtKB:P65456
+    grounding_status: GROUNDED
+  edges:
+  - subject: feglymycin
+    predicate: inhibits
+    object: ecoli_mura
+    notes: BindingDB maps this exact Standard InChIKey to a 3400 nM Ki measurement
+      against Escherichia coli K-12 MurA, and P0A749 resolves in UniProtKB to the
+      K-12 murA gene product.
+    evidence:
+    - reference: DOI:10.1016/j.bioorg.2014.03.008
+      evidence_type: DATABASE_ASSERTION
+      notes: BindingDB own-curated row 83 cites PMID 24755374 and reports an equal-qualified
+        feglymycin Ki against P0A749.
+  - subject: feglymycin
+    predicate: inhibits
+    object: saureus_mura2
+    notes: BindingDB maps this exact Standard InChIKey to a 3500 nM Ki measurement
+      against Staphylococcus aureus Mu50 MurA2, and P65456 resolves in UniProtKB to
+      the Mu50 murA2 gene product.
+    evidence:
+    - reference: DOI:10.1016/j.bioorg.2014.03.008
+      evidence_type: DATABASE_ASSERTION
+      notes: BindingDB own-curated row 84 cites PMID 24755374 and reports an equal-qualified
+        feglymycin Ki against P65456.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -99,3 +143,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T13:00:04Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a DOI-backed BIOACTIVITY causal graph connecting feglymycin to BindingDB-curated
+    Ki measurements against Escherichia coli K-12 MurA (UniProtKB:P0A749) and Staphylococcus
+    aureus Mu50 MurA2 (UniProtKB:P65456). NCBI maps PMID 24755374 to DOI 10.1016/j.bioorg.2014.03.008,
+    and both accessions resolve in UniProtKB to the exact BindingDB assay organisms.
+  llm_assisted: true
