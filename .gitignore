@@ -38,9 +38,10 @@ local/
 
 downloads/
 
-# Reserved for the site's embedding artifacts (#53). Vectors would be large
-# and rebuildable, so they stay ignored; a committed map would be what the site
-# renders from. Nothing writes here yet.
+# The site's embedding artifacts. The two MAPS are committed, because the site
+# renders from them and a checkout without them would render a different site.
+# The text vectors are not: large, and rebuildable from the corpus with
+# `just embed`.
 data/embeddings/*.npy
 data/embeddings/ids.json
 data/embeddings/records.json

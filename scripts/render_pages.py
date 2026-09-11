@@ -27,6 +27,7 @@ from __future__ import annotations
 
 import argparse
 import filecmp
+import json
 import shutil
 import subprocess
 import sys
@@ -42,6 +43,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 TEMPLATES_DIR = REPO_ROOT / "src" / "naturalproductmech" / "templates"
 CORPUS_DIR = REPO_ROOT / "data" / "natural_products"
 PAGES_DIR = REPO_ROOT / "pages"
+CHEMICAL_MAP_ARTIFACT = REPO_ROOT / "data" / "embeddings" / "chemical-structure-map.json"
 
 PATHWAY_TITLES = {
     "ALKALOIDS": "Alkaloids",
@@ -184,6 +186,31 @@ def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def load_chemical_map(record_ids: set[str]) -> dict[str, Any] | None:
+    """The committed structure-map artifact, or None when it has not been built.
+
+    Checked against the live corpus rather than trusted: an artifact naming a
+    different record set would draw a map of a corpus that no longer exists,
+    and the page gives no hint that anything is stale. Absent is fine and the
+    map page is skipped — `just chemical-map` is a separate, heavier step than
+    `just render`.
+    """
+    if not CHEMICAL_MAP_ARTIFACT.exists():
+        return None
+    artifact = json.loads(CHEMICAL_MAP_ARTIFACT.read_text(encoding="utf-8"))
+    rows = artifact.get("records")
+    if not isinstance(rows, list):
+        raise SystemExit(f"{CHEMICAL_MAP_ARTIFACT}: records must be a list")
+    map_ids = {row.get("identifier") for row in rows if isinstance(row, dict)}
+    if map_ids != record_ids or len(rows) != len(record_ids):
+        raise SystemExit(
+            f"{CHEMICAL_MAP_ARTIFACT.relative_to(REPO_ROOT)} names a different record "
+            f"set than the corpus ({len(rows)} vs {len(record_ids)}); "
+            f"regenerate with `just chemical-map`"
+        )
+    return artifact
+
+
 def build(out_dir: Path) -> tuple[int, int]:
     env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)),
                       autoescape=select_autoescape(["html"]),
@@ -239,6 +266,46 @@ def build(out_dir: Path) -> tuple[int, int]:
         root="", total=len(records), pathways=pathways), encoding="utf-8")
     (out_dir / "404.html").write_text(env.get_template("not_found.html").render(
         root=""), encoding="utf-8")
+
+    # The corpus map, when its JSON has been built. Committed and small, so the
+    # site renders it whenever it is there and skips it otherwise — a checkout
+    # where `just embed-map` has never run gets no half-drawn page.
+    corpus_map_path = REPO_ROOT / "data" / "embeddings" / "corpus_map.json"
+    if corpus_map_path.exists():
+        corpus_map = json.loads(corpus_map_path.read_text(encoding="utf-8"))
+        href_by_identifier = {
+            record["identifier"]: f"{pathway['slug']}/{record['slug']}.html"
+            for pathway in pathways for record in pathway["records"]
+        }
+        corpus_map["hrefs"] = {
+            point[3]: href_by_identifier[point[3]]
+            for point in corpus_map["points"] if point[3] in href_by_identifier
+        }
+        (out_dir / "map.html").write_text(
+            env.get_template("map.html").render(
+                root="", map=corpus_map,
+                # Embedded as JSON in a <script> tag, so the two characters
+                # that would end it early are escaped.
+                map_json=json.dumps(corpus_map, separators=(",", ":"))
+                .replace("<", "\\u003c").replace("\u2028", "\\u2028")
+                .replace("\u2029", "\\u2029")),
+            encoding="utf-8")
+
+    # The structure map, when its artifact has been built. Skipped rather than
+    # half-drawn: `just chemical-map` needs RDKit and UMAP, which `just render`
+    # does not, so a checkout that has never run it still renders a whole site.
+    chemical_map = load_chemical_map({doc["identifier"] for _, doc in records})
+    if chemical_map is not None:
+        (out_dir / "chemical-map.html").write_text(
+            env.get_template("chemical_map.html").render(
+                root="", quality=chemical_map["quality"],
+                model_version=chemical_map["model_version"],
+                total=len(records)),
+            encoding="utf-8")
+        shutil.copyfile(TEMPLATES_DIR / "chemical_map.js", out_dir / "chemical-map.js")
+        (out_dir / "data").mkdir(exist_ok=True)
+        shutil.copyfile(CHEMICAL_MAP_ARTIFACT,
+                        out_dir / "data" / "chemical-structure-map.json")
 
     record_template = env.get_template("record.html")
     pathway_template = env.get_template("pathway.html")
