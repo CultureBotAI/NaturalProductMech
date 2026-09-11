@@ -184,6 +184,43 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-21c2112c18
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: soraphen-a-acc2-binding
+  scope: BIOACTIVITY
+  description: Soraphen A binds the human acetyl-CoA carboxylase 2 biotin carboxylase
+    domain captured in PDB 3JRX.
+  nodes:
+  - node_id: soraphen_a
+    label: soraphen A
+    node_type: COMPOUND
+    identifier: CHEBI:9200
+    grounding_status: GROUNDED
+  - node_id: acacb
+    label: human acetyl-CoA carboxylase 2
+    node_type: PROTEIN
+    identifier: UniProtKB:O00763
+    grounding_status: GROUNDED
+  edges:
+  - subject: soraphen_a
+    predicate: binds
+    object: acacb
+    notes: PubChem BioAssay AID 977611 maps this exact Standard InChIKey to an active
+      0.001 uM Kd row for PDB 3JRX chain A; PDBe maps 3JRX_A to the Homo sapiens UniProtKB:O00763
+      ACC2 sequence, and RCSB reports S1A soraphen A with the record's Standard InChIKey
+      as a 3JRX non-polymer ligand. Chain A is a biotin carboxylase domain construct
+      spanning ACC2 residues 217-775 with affinity tags.
+    evidence:
+    - reference: DOI:10.1016/j.bbrc.2009.11.029
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: We also determined the structure of the human BC domain in complex
+        with soraphen A
+      notes: Cho et al. solved PDB 3JRX as a human ACC2 biotin carboxylase domain
+        structure with bound soraphen A.
+    - reference: DOI:10.2210/pdb3jrx/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: RCSB PDB identifies 3JRX as a human ACC2 biotin carboxylase domain crystal
+        structure containing S1A soraphen A, and PDBe maps chain A to Homo sapiens
+        UniProtKB:O00763.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -193,3 +230,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T20:07:12Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a Soraphen A bioactivity graph for binding of the human ACC2 biotin
+    carboxylase domain, grounded PubChem target 3JRX_A to UniProtKB:O00763 via PDBe,
+    and cited the exact S1A-bound PDB 3JRX structure.
+  llm_assisted: true
