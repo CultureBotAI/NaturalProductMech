@@ -493,8 +493,8 @@ discussions:
 causal_graphs:
 - graph_id: mycophenolic-acid-impdh-inhibition
   scope: BIOACTIVITY
-  description: Mycophenolic acid inhibits human inosine-5'-monophosphate dehydrogenase
-    1 and 2.
+  description: Mycophenolic acid inhibits human and Chinese hamster inosine-5'-monophosphate
+    dehydrogenase isoforms.
   nodes:
   - node_id: mycophenolic_acid
     label: mycophenolic acid
@@ -510,6 +510,11 @@ causal_graphs:
     label: human inosine-5'-monophosphate dehydrogenase 2
     node_type: ENZYME
     identifier: UniProtKB:P12268
+    grounding_status: GROUNDED
+  - node_id: chinese_hamster_impdh2
+    label: Chinese hamster inosine-5'-monophosphate dehydrogenase 2
+    node_type: ENZYME
+    identifier: UniProtKB:P12269
     grounding_status: GROUNDED
   edges:
   - subject: mycophenolic_acid
@@ -551,6 +556,25 @@ causal_graphs:
         a vehicle control.
       notes: PubChem BioAssay AID 1803439 was deposited by BindingDB for PMID 23663081
         and reports a mycophenolic-acid IC50 value against P12268.
+  - subject: mycophenolic_acid
+    predicate: inhibits
+    object: chinese_hamster_impdh2
+    notes: PubChem BioAssay AID 977610 maps this exact Standard InChIKey to an active
+      0.006 uM Ki row for PDB 1JR1 chain A; RCSB identifies 1JR1 as Chinese hamster
+      IMPDH2 in complex with MOA mycophenolic acid and maps entity 1 to UniProtKB:P12269.
+    evidence:
+    - reference: DOI:10.1016/S0092-8674(00)81275-1
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Structure and mechanism of inosine monophosphate dehydrogenase in complex
+        with the immunosuppressant mycophenolic acid.
+      notes: Sintchak et al. solved the Chinese hamster IMPDH2-MPA structure deposited
+        as PDB 1JR1 and combined it with kinetic and mutagenesis evidence for mycophenolic
+        acid inhibition.
+    - reference: DOI:10.2210/pdb1jr1/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: RCSB PDB identifies 1JR1 as an IMPDH2 crystal structure with MOA mycophenolic
+        acid ligands and maps entity 1 to the Cricetulus griseus IMPDH2 sequence in
+        UniProtKB:P12269.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -567,4 +591,12 @@ curation_history:
     IMPDH1 and IMPDH2; grounded the enzyme nodes to UniProtKB:P20839 and UniProtKB:P12268;
     and cited DOI:10.1021/jm070568j, DOI:10.1021/jm070299x and DOI:10.3109/14756366.2013.793184
     via exact BindingDB-deposited PubChem BioAssay rows.
+  llm_assisted: true
+- timestamp: '2026-09-12T03:29:22Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Expanded the mycophenolic acid IMPDH BIOACTIVITY causal graph with Chinese
+    hamster inosine-5'-monophosphate dehydrogenase 2, grounded the node to UniProtKB:P12269
+    via the exact SIFTS mapping for PDB 1JR1 entity 1, and cited DOI:10.1016/S0092-8674(00)81275-1
+    plus DOI:10.2210/pdb1jr1/pdb via the PubChem/PDB 1JR1_A Ki row for PMID 8681386.
   llm_assisted: true
