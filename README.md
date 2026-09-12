@@ -88,6 +88,10 @@ first exactly where the isolation report left it.
 
 <!-- END GENERATED CORPUS STATS -->
 
+Development uses Python 3.13 via `.python-version`; CI selects the same minor
+explicitly and runs the full quality gate once. The package compatibility
+floor remains declared in `pyproject.toml`.
+
 ```bash
 just install        # uv sync --locked --extra dev --extra chemistry
 just qc             # every local and CI quality gate

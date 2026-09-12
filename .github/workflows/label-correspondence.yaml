@@ -3,9 +3,8 @@ name: label-correspondence
 # Blocking id<->label gate (validator vendored from claw): every configured
 # (id, label) pair under data/natural_products/ must correspond to the ontology
 # through OAK. Kept out of the qc job because it needs a cached multi-GB
-# ontology download that qc would repeat once per Python version in its
-# matrix, and because the ontology it resolves changes under the corpus rather
-# than with it. What is checked, what is skipped and why: conf/id_label_targets.yaml.
+# ontology download, and because the ontology it resolves changes under the
+# corpus rather than with it. What is checked, what is skipped and why: conf/id_label_targets.yaml.
 
 on:
   # Required checks must report for every PR and merge-group commit.
@@ -24,6 +23,7 @@ on:
       # The recipes are part of the gate: editing one has to re-run it.
       - "justfile"
       - ".github/workflows/label-correspondence.yaml"
+      - ".python-version"
       - "pyproject.toml"
       - "uv.lock"
   workflow_dispatch:
@@ -46,9 +46,8 @@ jobs:
       - uses: extractions/setup-just@v4
       - uses: astral-sh/setup-uv@v5
         with:
+          python-version: "3.13"
           enable-cache: true
-      - name: Set up Python
-        run: uv python install 3.12
       - name: Install dependencies
         run: uv sync --locked --extra dev
       # ChEBI as a semantic-sql database, about 4 GB uncompressed. The key has

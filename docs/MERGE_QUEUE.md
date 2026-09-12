@@ -28,8 +28,7 @@ again before admitting it to the queue.
 ## Required checks
 
 - `label-correspondence` from `.github/workflows/label-correspondence.yaml`.
-- `qc (3.10)` from `.github/workflows/main.yaml`.
-- `qc (3.12)` from `.github/workflows/main.yaml`.
+- `qc` from `.github/workflows/main.yaml` (Python 3.13).
 
 The queue runs the same validation commands as a PR. A passing PR run does
 not replace validation of the combined queue commit. New commits can cancel
