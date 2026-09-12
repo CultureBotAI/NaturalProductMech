@@ -365,7 +365,7 @@ curation_status: SEEDED
 causal_graphs:
 - graph_id: huperzine-a-ache-inhibition
   scope: BIOACTIVITY
-  description: Huperzine A inhibits human acetylcholinesterase.
+  description: Huperzine A inhibits human, Pacific electric ray, and rat acetylcholinesterase.
   nodes:
   - node_id: huperzine_a
     label: huperzine A
@@ -376,6 +376,16 @@ causal_graphs:
     label: human acetylcholinesterase
     node_type: PROTEIN
     identifier: UniProtKB:P22303
+    grounding_status: GROUNDED
+  - node_id: pacific_electric_ray_ache
+    label: Pacific electric ray acetylcholinesterase
+    node_type: PROTEIN
+    identifier: UniProtKB:P04058
+    grounding_status: GROUNDED
+  - node_id: rat_ache
+    label: rat acetylcholinesterase
+    node_type: PROTEIN
+    identifier: UniProtKB:P37136
     grounding_status: GROUNDED
   edges:
   - subject: huperzine_a
@@ -389,6 +399,28 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: The BindingDB own-curated row for PMID 12166941 reports huperzine A inhibition
         of human acetylcholinesterase at pH 8.0 and 37 C.
+  - subject: huperzine_a
+    predicate: inhibits
+    object: pacific_electric_ray_ache
+    notes: BindingDB maps this exact Standard InChIKey to a 175 nM Ki measurement
+      against Tetronarce californica acetylcholinesterase; P04058 resolves in UniProtKB
+      to the Pacific electric ray ache gene product.
+    evidence:
+    - reference: DOI:10.1021/ja021111w
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The BindingDB own-curated row for PMID 12517147 reports huperzine A inhibition
+        of Pacific electric ray acetylcholinesterase at pH 7.0 and 22 C.
+  - subject: huperzine_a
+    predicate: inhibits
+    object: rat_ache
+    notes: BindingDB maps this exact Standard InChIKey to a 47.1 nM Ki measurement
+      against Rattus norvegicus acetylcholinesterase; P37136 resolves in UniProtKB
+      to the rat Ache gene product.
+    evidence:
+    - reference: DOI:10.1021/ja021111w
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The BindingDB own-curated row for PMID 12517147 reports huperzine A inhibition
+        of rat acetylcholinesterase at pH 7.0 and 22 C.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -404,4 +436,12 @@ curation_history:
   changes: Added a BIOACTIVITY causal graph for huperzine A inhibition of human acetylcholinesterase,
     grounded the AChE node to UniProtKB:P22303, and cited DOI:10.1021/jm010491d via
     the BindingDB-curated PMID 12166941 measurement.
+  llm_assisted: true
+- timestamp: '2026-09-12T02:17:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Expanded the huperzine A BIOACTIVITY causal graph with Pacific electric
+    ray and rat acetylcholinesterase targets, grounded the nodes to UniProtKB:P04058
+    and UniProtKB:P37136, and cited DOI:10.1021/ja021111w via the BindingDB-curated
+    PMID 12517147 measurements.
   llm_assisted: true
