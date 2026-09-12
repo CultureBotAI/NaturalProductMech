@@ -336,6 +336,42 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: actinonin-pdf1b-inhibition
+  scope: BIOACTIVITY
+  description: Actinonin inhibits Arabidopsis thaliana peptide deformylase 1B captured
+    in the actinonin-bound PDB 3PN4 structure.
+  nodes:
+  - node_id: actinonin
+    label: actinonin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-30a67209ce
+    grounding_status: GROUNDED
+  - node_id: pdf1b
+    label: Arabidopsis thaliana peptide deformylase 1B
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9FUZ2
+    grounding_status: GROUNDED
+  edges:
+  - subject: actinonin
+    predicate: inhibits
+    object: pdf1b
+    notes: PubChem BioAssay AID 977610 maps this exact Standard InChIKey to an active
+      0.14 uM Ki row for PDB 3PN4 chain A; PDBe maps 3PN4_A to Arabidopsis thaliana
+      UniProtKB:Q9FUZ2, and RCSB reports BB2 actinonin with the record's Standard
+      InChIKey as a 3PN4 non-polymer ligand. Chain A is an AtPDF1B construct containing
+      UniProt residues 83-273 with a two-residue expression tag.
+    evidence:
+    - reference: DOI:10.1371/journal.pbio.1001066
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: we explored the precise inhibitory mechanism of actinonin on Arabidopsis
+        thaliana PDF1B
+      notes: Fieulaine et al. solved PDB 3PN4 among Arabidopsis thaliana PDF1B structures
+        trapping actinonin-bound conformational states.
+    - reference: DOI:10.2210/pdb3pn4/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: RCSB PDB identifies 3PN4 as an Arabidopsis thaliana AtPDF1B crystal structure
+        with BB2 actinonin, and PDBe maps chain A to UniProtKB:Q9FUZ2.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -345,3 +381,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-11T23:46:22Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added an Actinonin bioactivity graph for inhibition of Arabidopsis thaliana
+    peptide deformylase 1B, grounded PubChem target 3PN4_A to UniProtKB:Q9FUZ2 via
+    PDBe, and cited the exact BB2-bound PDB 3PN4 structure.
+  llm_assisted: true
