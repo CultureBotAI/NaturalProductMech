@@ -390,7 +390,8 @@ curation_status: SEEDED
 causal_graphs:
 - graph_id: physostigmine-cholinesterase-inhibition
   scope: BIOACTIVITY
-  description: Physostigmine inhibits human acetylcholinesterase and butyrylcholinesterase.
+  description: Physostigmine inhibits human butyrylcholinesterase and human, electric-eel
+    and Pacific-electric-ray acetylcholinesterases.
   nodes:
   - node_id: physostigmine
     label: physostigmine
@@ -406,6 +407,16 @@ causal_graphs:
     label: human butyrylcholinesterase
     node_type: PROTEIN
     identifier: UniProtKB:P06276
+    grounding_status: GROUNDED
+  - node_id: electric_eel_ache
+    label: Electrophorus electricus acetylcholinesterase
+    node_type: PROTEIN
+    identifier: UniProtKB:O42275
+    grounding_status: GROUNDED
+  - node_id: pacific_electric_ray_ache
+    label: Tetronarce californica acetylcholinesterase
+    node_type: PROTEIN
+    identifier: UniProtKB:P04058
     grounding_status: GROUNDED
   edges:
   - subject: physostigmine
@@ -430,6 +441,31 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: PubChem BioAssay AID 1796572 was deposited by BindingDB for PMID 12166941
         and reports active physostigmine inhibition of human butyrylcholinesterase.
+  - subject: physostigmine
+    predicate: inhibits
+    object: electric_eel_ache
+    notes: BindingDB-deposited PubChem BioAssay AID 1801485 maps this exact Standard
+      InChIKey to an active 0.04 uM IC50 measurement against UniProtKB:O42275; O42275
+      resolves in UniProtKB to the Electrophorus electricus ache gene product.
+    evidence:
+    - reference: DOI:10.1016/j.bioorg.2015.09.008
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: acetylcholinesterase and butyrylcholinesterase
+      notes: PubChem BioAssay AID 1801485 was deposited by BindingDB for PMID 26451651
+        and reports physostigmine inhibition of UniProtKB:O42275.
+  - subject: physostigmine
+    predicate: inhibits
+    object: pacific_electric_ray_ache
+    notes: BindingDB-deposited PubChem BioAssay AID 1801938 maps this exact Standard
+      InChIKey to an active 0.85 uM IC50 measurement against UniProtKB:P04058; P04058
+      resolves in UniProtKB to the Tetronarce californica ache gene product.
+    evidence:
+    - reference: DOI:10.1016/j.bioorg.2016.07.005
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Synthesis and in vitro acetylcholinesterase and butyrylcholinesterase
+        inhibitory potential
+      notes: PubChem BioAssay AID 1801938 was deposited by BindingDB for PMID 27441832
+        and reports physostigmine inhibition of UniProtKB:P04058.
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -446,4 +482,13 @@ curation_history:
     acetylcholinesterase and human butyrylcholinesterase, grounded the enzyme nodes
     to UniProtKB:P22303 and UniProtKB:P06276, and cited DOI:10.1021/jm010491d via
     the BindingDB-deposited PMID 12166941 measurements in PubChem BioAssay AID 1796572.
+  llm_assisted: true
+- timestamp: '2026-09-12T01:09:25Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Extended the BIOACTIVITY physostigmine cholinesterase graph with inhibition
+    edges for electric-eel and Pacific-electric-ray acetylcholinesterases, grounded
+    the new graph nodes to UniProtKB:O42275 and UniProtKB:P04058, and cited DOI:10.1016/j.bioorg.2015.09.008
+    and DOI:10.1016/j.bioorg.2016.07.005 via exact BindingDB-deposited PubChem BioAssay
+    rows for PMID 26451651 and PMID 27441832.
   llm_assisted: true
