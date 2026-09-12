@@ -684,6 +684,40 @@ causal_graphs:
       notes: The source article biochemically and structurally characterized CK2 inhibitor
         binding; the BindingDB-deposited PubChem assay reports active emodin inhibition
         of human CK2 alpha.
+- graph_id: emodin-hpfabz-inhibition
+  scope: BIOACTIVITY
+  description: Emodin binds and inhibits Helicobacter pylori FabZ, beta-hydroxyacyl-ACP
+    dehydratase.
+  nodes:
+  - node_id: emodin
+    label: emodin
+    node_type: COMPOUND
+    identifier: CHEBI:42223
+    grounding_status: GROUNDED
+  - node_id: hp_fabz
+    label: Helicobacter pylori FabZ
+    node_type: ENZYME
+    identifier: UniProtKB:Q5G940
+    grounding_status: GROUNDED
+  edges:
+  - subject: emodin
+    predicate: inhibits
+    object: hp_fabz
+    notes: PubChem BioAssay AID 977611 maps this exact Standard InChIKey to 0.45 uM
+      Kd rows for PDB 3ED0 chains A and B; RCSB maps PDB 3ED0 to the Helicobacter
+      pylori fabZ gene product UniProtKB:Q5G940 and reports bound EMO emodin with
+      the same Standard InChIKey.
+    evidence:
+    - reference: DOI:10.1186/1471-2180-9-91
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: competitive inhibitor against the recombinant beta-hydroxyacyl-ACP
+        dehydratase from Helicobacter pylori
+      notes: Chen et al. combined enzymatic inhibition, SPR/ITC binding, and the 3ED0
+        crystal structure to characterize emodin engagement of H. pylori FabZ.
+    - reference: DOI:10.2210/pdb3ED0/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: RCSB PDB identifies 3ED0 as emodin-bound H. pylori FabZ with EMO ligands
+        and maps entity 1 to UniProtKB:Q5G940.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -700,4 +734,11 @@ curation_history:
     casein kinase II alpha, grounded the enzyme nodes to UniProtKB:P28523 and UniProtKB:P68400,
     and cited DOI:10.1074/jbc.m209367200 and DOI:10.1042/bj20030674 via exact BindingDB-deposited
     PubChem BioAssay rows for PMIDs 12419810 and 12816539.
+  llm_assisted: true
+- timestamp: '2026-09-12T02:58:22Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for emodin inhibition of Helicobacter
+    pylori FabZ, grounded the enzyme node to UniProtKB:Q5G940, and cited DOI:10.1186/1471-2180-9-91
+    plus DOI:10.2210/pdb3ED0/pdb via the PubChem/RCSB PDB 3ED0 rows for PMID 19433000.
   llm_assisted: true
