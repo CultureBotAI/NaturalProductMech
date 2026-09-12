@@ -570,6 +570,40 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: PMID:16202589 underlies the second BindingDB/PubChem fluorescence-polarization
         measurement against HSP90-beta.
+- graph_id: radicicol-topovi-b-binding
+  scope: BIOACTIVITY
+  description: Radicicol binds the Saccharolobus shibatae type II DNA topoisomerase
+    VI subunit B ATPase.
+  nodes:
+  - node_id: radicicol
+    label: radicicol
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-7fc8631300
+    grounding_status: GROUNDED
+  - node_id: topovi_b
+    label: Saccharolobus shibatae TopoVI-B
+    node_type: PROTEIN
+    identifier: UniProtKB:O05207
+    grounding_status: GROUNDED
+  edges:
+  - subject: radicicol
+    predicate: binds
+    object: topovi_b
+    notes: PubChem BioAssay AID 977611 maps this exact Standard InChIKey to a 2 uM
+      Kd row for PDB 2ZBK chain B; RCSB maps 2ZBK_B to Saccharolobus shibatae UniProtKB:O05207
+      and reports bound RDC radicicol.
+    evidence:
+    - reference: DOI:10.1016/j.str.2007.12.020
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 'Crystal Structure of an Intact Type II DNA Topoisomerase: Insights
+        into DNA Transfer Mechanisms'
+      notes: Graille et al. solved PDB 2ZBK, a Radicicol-bound intact archaeal type
+        II DNA topoisomerase VI.
+    - reference: DOI:10.2210/pdb2zbk/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: RCSB PDB identifies 2ZBK as an intact type II DNA topoisomerase structure,
+        maps entity 2 auth chain B to UniProtKB:O05207, and records nonpolymer entity
+        3 as RDC radicicol.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -598,4 +632,12 @@ curation_history:
   changes: 'Addressed review issue #129 by changing the Radicicol-to-human-HSP90-beta
     causal edge from inhibits to binds, matching the fluorescence-polarization IC50
     evidence in BindingDB rows 100-101 and PubChem BioAssay AIDs 1797381 and 1797384.'
+  llm_assisted: true
+- timestamp: '2026-09-12T03:58:41Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for Radicicol binding to Saccharolobus
+    shibatae type II DNA topoisomerase VI subunit B; grounded the protein node to
+    UniProtKB:O05207 via the RCSB 2ZBK_B chain mapping; and cited the exact PubChem/PDB
+    Kd row through DOI:10.1016/j.str.2007.12.020 and DOI:10.2210/pdb2zbk/pdb.
   llm_assisted: true
