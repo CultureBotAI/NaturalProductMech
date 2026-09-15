@@ -69,6 +69,7 @@ COVERAGE_FIELDS = [
 
 sys.path.insert(0, str(REPO_ROOT / "src"))
 from naturalproductmech.grading import CAUSAL_BASES  # noqa: E402
+from naturalproductmech.text_map_site import PreparedTextMap, prepare_text_map  # noqa: E402
 
 
 def corpus_commit() -> str:
@@ -212,9 +213,16 @@ def load_chemical_map(record_ids: set[str]) -> dict[str, Any] | None:
 
 
 def build(out_dir: Path) -> tuple[int, int]:
+    # Validate before the renderer removes a prior output directory.
+    with prepare_text_map(REPO_ROOT) as text_map:
+        return _build(out_dir, text_map)
+
+
+def _build(out_dir: Path, text_map: PreparedTextMap | None) -> tuple[int, int]:
     env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)),
                       autoescape=select_autoescape(["html"]),
                       trim_blocks=True, lstrip_blocks=True, keep_trailing_newline=True)
+    env.globals["text_map_enabled"] = text_map is not None
     records = load_records()
     by_pathway: dict[str, list[dict[str, Any]]] = {}
     coverage: Counter[str] = Counter()
@@ -243,6 +251,8 @@ def build(out_dir: Path) -> tuple[int, int]:
     if out_dir.exists():
         shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True)
+    if text_map is not None:
+        text_map.stage(out_dir)
     shutil.copyfile(TEMPLATES_DIR / "style.css", out_dir / "style.css")
 
     # conf/sources.yaml is a mapping of source key -> config at the top level,
