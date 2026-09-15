@@ -200,24 +200,27 @@ worklist *args:
 review-queue *args:
     uv run python scripts/curation_worklist.py --limit 0 {{args}}
 
-# Show the documents that WOULD be embedded, and their size distribution. Free.
+# Preview the historical document builder; no vectors or maps are written.
 embed-dry:
-    python3 scripts/embed_records.py --dry-run
+    uv run --locked python scripts/embed_records.py --dry-run
 
-# Embed ONE small batch end to end — the canary before the full run.
+# Retired legacy encoder: exits with directions to the shared locked runtime.
+[script]
 embed-canary *args:
-    python3 scripts/embed_records.py --limit 20 {{args}}
+    #!/usr/bin/env bash
+    exec uv run --locked python scripts/embed_records.py --limit 20 "$@"
 
-# Text-embed every record with a local model. Runs on system python so torch
-# stays out of the core install; ~1 min for the corpus on Apple-Silicon MPS.
-# Writes data/embeddings/ (vectors gitignored, rebuildable).
+# Retired legacy encoder: use docs/TEXT_MAP_INPUTS.md for the common BGE map.
+[script]
 embed *args:
-    python3 scripts/embed_records.py {{args}}
+    #!/usr/bin/env bash
+    exec uv run --locked python scripts/embed_records.py "$@"
 
-# Project the embeddings to 2-D -> data/embeddings/corpus_map.json (committed).
-# Run `just render` afterwards to rebuild pages/map.html from it.
+# Retired legacy projector; historical viewing and chemical-map are retained.
+[script]
 embed-map *args:
-    python3 scripts/embed_map.py {{args}}
+    #!/usr/bin/env bash
+    exec uv run --locked python scripts/embed_map.py "$@"
 
 # Recompute the structure-only chemical embedding, then publish it. Needs the
 # chemical-map extra (RDKit, UMAP); `just render` alone does not.
