@@ -288,3 +288,7 @@ qc:
 # (culturebotai-claw#395); kept as its own recipe for a quick local run.
 vendored-sync:
     bash scripts/check_vendored_sync.sh
+
+# Preview/export the streaming full-corpus semantic text inputs (no model inference).
+text-map-inputs *args:
+    uv run python scripts/text_map_inputs.py {{args}}
