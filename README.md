@@ -108,8 +108,8 @@ Nothing above touches the network.
 | [CLAUDE.md](CLAUDE.md) | Operational guidance for editing agents: commands, boundaries, invariants |
 | [NEXT_TASKS.md](NEXT_TASKS.md) | Owed work, by issue, in the order it is worth doing |
 | [docs/HARMONIZATION.md](docs/HARMONIZATION.md), [docs/CURATION.md](docs/CURATION.md) | Identity, merging and scope; decision semantics and evidence rules |
-| [research/2026-09-07-natural-product-data-sources.md](research/2026-09-07-natural-product-data-sources.md) | The verified source landscape, with the three cluster reports beside it |
-| [curation/source_queue.tsv](curation/source_queue.tsv) | 38 sources, ranked — 9 adopted — with licence status and the gap each closes |
+| [research/2026-09-07-natural-product-data-sources.md](research/2026-09-07-natural-product-data-sources.md) | The verified source landscape, with focused follow-up reports beside it |
+| [curation/source_queue.tsv](curation/source_queue.tsv) | 43 sources, ranked — 9 adopted — with licence status and the gap each closes |
 | [.claude/skills/](.claude/skills) | Five repo-local curation workflows |
 | [src/naturalproductmech/schema/](src/naturalproductmech/schema) | The LinkML schema, closed-validated |
 | [conf/](conf) | Scope and the record budget, the producer-evidence grading, the adopted and staged sources, the sibling pin |
