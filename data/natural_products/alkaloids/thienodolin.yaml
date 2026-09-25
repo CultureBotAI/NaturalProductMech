@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001374
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An indole alkaloid that is a thienoindole ring with carboxamide group
   and chlorine substituents at positions 2 and 6 respectively.
 definition_source: CHEBI:9543
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Carboline alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:67267
   taxon_label: Streptomyces alboflavus
@@ -61,6 +64,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA017595
 - pubchem:442119
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1887
   taxon_label: Streptomyces albogriseolus
@@ -103,6 +108,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:41Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

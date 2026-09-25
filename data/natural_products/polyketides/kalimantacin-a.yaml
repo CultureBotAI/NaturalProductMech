@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001099
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A fatty acid derivative isolated from the fermentation broth of Alcaligenes
   sp. YL-02632S. It is an antibiotic with antibacterial activity.
 definition_source: CHEBI:66135
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Open-chain polyketides
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_label: Alcaligenes sp.
   source: CHEBI
@@ -45,6 +48,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA015478
 - pubchem:197707
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:294
   taxon_label: Pseudomonas fluorescens
@@ -90,6 +95,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:00Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

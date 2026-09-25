@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001023
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 synonyms:
 - value: myxochromide S1
   synonym_type: RELATED_SYNONYM
@@ -24,6 +25,8 @@ np_classification:
   - Cyclic peptides
   - Depsipeptides
   is_glycoside: false
+occurrence_taxon_groups:
+- MYXOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:41
   taxon_label: Stigmatella aurantiaca
@@ -42,6 +45,8 @@ bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA01302
+producer_taxon_groups:
+- MYXOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:41
   taxon_label: Stigmatella aurantiaca
@@ -190,6 +195,10 @@ discussions:
     upstream cross-reference error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:36Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

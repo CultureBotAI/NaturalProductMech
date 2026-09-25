@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000256
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of pradimicins that is isolated from the cultured
   broth of Actinomadura hibisca No. P157-2 (ATCC 53557).
 definition_source: CHEBI:8349
@@ -25,6 +26,8 @@ np_classification:
   class_results:
   - Angucyclines
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_label: Actinomadura hibisca
   source: CHEBI
@@ -109,6 +112,8 @@ bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA08193
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:68565
   taxon_label: Actinomadura hibisca
@@ -158,6 +163,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:40Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

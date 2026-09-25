@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000929
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A pyrimidotriazine that is 1,6-dimethyl-1,5,6,7-tetrahydropyrimido[5,4-e][1,2,4]triazine
   with oxo groups at positions 5 and 7.
 definition_source: CHEBI:80729
@@ -25,6 +26,9 @@ np_classification:
   class_results:
   - pteridine alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
 occurrences:
 - taxon_label: Burkholderia gladioli
   source: CHEBI
@@ -352,6 +356,9 @@ bgc_class:
 xrefs:
 - npatlas:NPA04485
 - pubchem:66541
+producer_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:337
   taxon_label: Burkholderia glumae
@@ -441,6 +448,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:11Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:23Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

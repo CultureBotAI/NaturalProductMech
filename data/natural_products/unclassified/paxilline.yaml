@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001082
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An indole diterpene alkaloid with formula C27H33NO4 isolated from Penicillium
   paxilli. It is a potent inhibitor of large conductance Ca2+- and voltage-activated
   K+ (BK)-type channels.
@@ -27,6 +28,9 @@ np_classification:
   class_results:
   - Indole-Diterpenoid alkaloids (Penitrems)
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:116978
   taxon_label: Penicillium thiersii
@@ -298,6 +302,8 @@ compound_classes:
 - Diterpenoid
 xrefs:
 - npatlas:NPA028977
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:70109
   taxon_label: Penicillium paxilli
@@ -346,6 +352,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:23Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

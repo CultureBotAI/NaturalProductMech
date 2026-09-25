@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001169
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of monohydroxypyridines that acts as an irreversible
   mitochondrial Complex I inhibitor that strongly associates with ubiquinone binding
   sites in both mitochondrial and bacterial forms of NADH:ubiquinone oxidoreductase
@@ -25,6 +26,8 @@ np_classification:
   - Meroterpenoids
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -136,6 +139,8 @@ bgc_class:
 xrefs:
 - pubchem:6437838
 - npatlas:NPA05338
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:2878388
   taxon_label: Streptomyces sp. SCSIO 03032
@@ -259,6 +264,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:49:34Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:32Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

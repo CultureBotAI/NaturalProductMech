@@ -55,6 +55,9 @@ by grounding status:
   REVIEW_NEEDED                           9
 
 field coverage (records carrying at least one item):
+  biosynthesis_origin                  3115
+  producer_taxon_groups                3076
+  occurrence_taxon_groups              2342
   producer_organisms                   3076
   occurrences                          2342
   biosynthetic_gene_clusters           3115

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001198
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A diterpenoid that is (+)-kolavelool in which the tertiary hydroxy hydrogen
   has been replaced by a methyl group.
 definition_source: CHEBI:139480
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Colensane and Clerodane diterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:65
   taxon_label: Herpetosiphon aurantiacus
@@ -44,6 +47,8 @@ bgc_class:
 - TERPENE
 xrefs:
 - pubchem:102335044
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:316274
   taxon_label: Herpetosiphon aurantiacus DSM 785
@@ -88,6 +93,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:35Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

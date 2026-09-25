@@ -54,3 +54,39 @@ def test_no_common_names_are_tried():
 def test_an_empty_name_yields_nothing_to_try():
     assert taxonomy.organism_name_variants("") == []
     assert taxonomy.organism_name_variants("   ") == []
+
+
+def test_taxon_groups_use_the_most_specific_configured_lineage():
+    parents = {
+        "2": "131567",
+        "1883": "201174",
+        "201174": "2",
+        "1126": "1117",
+        "1117": "2",
+        "9606": "7711",
+        "7711": "33208",
+        "6040": "33208",
+        "33208": "2759",
+        "3193": "2759",
+        "2759": "131567",
+        "999999": "131567",
+        "131567": "1",
+    }
+
+    assert taxonomy.taxon_group("1883", parents) == "ACTINOBACTERIAL"
+    assert taxonomy.taxon_group("1126", parents) == "CYANOBACTERIAL"
+    assert taxonomy.taxon_group("2", parents) == "OTHER_BACTERIAL"
+    assert taxonomy.taxon_group("9606", parents) == "CHORDATE"
+    assert taxonomy.taxon_group("6040", parents) == "SPONGE"
+    assert taxonomy.taxon_group("3193", parents) == "LAND_PLANT"
+    assert taxonomy.taxon_group("999999", parents) == "OTHER"
+
+
+def test_taxon_group_anchors_match_the_schema_order():
+    import yaml
+    schema = yaml.safe_load(
+        (REPO_ROOT / "src" / "naturalproductmech" / "schema" / "naturalproductmech.yaml")
+        .read_text(encoding="utf-8"))
+    values = list(schema["enums"]["TaxonGroupEnum"]["permissible_values"])
+    assert [group for group, _anchor in taxonomy.TAXON_GROUPS] == values[:-1]
+    assert values[-1] == "OTHER"

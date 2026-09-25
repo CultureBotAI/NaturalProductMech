@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000040
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A concanamycin in which the lactone ring contains 4 double bonds and is
   substituted by 4 methyl groups, 2 hydroxy groups, 2 methoxy groups and an ethyl
   group.
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Bafilomycins
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -118,6 +121,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA014456
 - pubchem:6917059
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:42238
   taxon_label: Streptomyces neyagawaensis
@@ -160,6 +165,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

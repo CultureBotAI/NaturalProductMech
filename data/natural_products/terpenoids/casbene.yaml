@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002723
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A diterpene comprising bicyclo[12.1.0]pentadeca-2,6,10-triene having three
   methyl substituents located at the 3-, 7- and 11-positions as well as gem-dimethyl
   groups at the 15-position.
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Casbane diterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:3988
   taxon_label: Ricinus communis
@@ -57,6 +60,8 @@ compound_classes:
 - Diterpenoid
 xrefs:
 - pubchem:5280437
+producer_taxon_groups:
+- LAND_PLANT
 producer_organisms:
 - taxon_id: NCBITaxon:180498
   taxon_label: Jatropha curcas
@@ -106,6 +111,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:57Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

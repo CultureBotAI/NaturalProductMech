@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001241
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: Ergotaman bearing hydroxy, isopropyl, and 2-methylpropyl groups at the
   12', 2' and 5' positions, respectively, and oxo groups at positions 3', 6', and
   18. It is a natural ergot alkaloid. Ergocryptine discussed in the literature prior
@@ -28,6 +29,9 @@ np_classification:
   class_results:
   - Ergot alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:4606
   taxon_label: Festuca arundinacea
@@ -397,6 +401,8 @@ compound_classes:
 xrefs:
 - chembl:CHEMBL1403281
 - pubchem:134551
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:40602
   taxon_label: Claviceps fusiformis
@@ -452,6 +458,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:51Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

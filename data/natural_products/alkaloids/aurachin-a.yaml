@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001343
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An A-type aurichin that is 1,2-dihydrofuro[2,3-c]quinoline 5-oxide which
   is substituted at position 2 by a (6E)-10-hydroxy-2,6-dimethylundeca-2,6-dien-10-yl
   group and at position 4 by a methyl group (relative configuration shown). Found
@@ -24,6 +25,8 @@ np_classification:
   class_results:
   - Quinoline alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- MYXOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:41
   taxon_label: Stigmatella aurantiaca
@@ -88,6 +91,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA06692
 - pubchem:6439172
+producer_taxon_groups:
+- MYXOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:675526
   taxon_label: Stigmatella aurantiaca Sg a15
@@ -130,6 +135,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:56Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

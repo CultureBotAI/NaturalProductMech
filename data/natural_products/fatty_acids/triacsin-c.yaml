@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001983
 np_pathway: FATTY_ACIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A nitroso compound that is N-undecylnitrous hydrazide carrying double
   bonds at positions 1,2,4, and 7. It is a long-chain fatty acyl CoA synthetase inhibitor
   and interferes with lipid metabolism by inhibiting the de novo synthesis of glycerolipids
@@ -21,6 +22,8 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_label: Streptomyces aureofaciens
   source: CHEBI
@@ -106,6 +109,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:9576787
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1894
   taxon_label: Kitasatospora aureofaciens
@@ -148,6 +153,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:53Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

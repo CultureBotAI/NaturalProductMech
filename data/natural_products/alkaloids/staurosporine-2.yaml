@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000825
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +19,8 @@ np_classification:
   class_results:
   - Carbazole alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -1345,6 +1348,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA014588
 - pubchem:44259
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:171258
   taxon_label: Streptomyces sp. TP-A0274
@@ -1818,3 +1823,7 @@ curation_history:
     via exact Homo sapiens BindingDB rows and BindingDB-deposited PubChem BioAssay
     rows for PMID 17132625 and AID 1797654.
   llm_assisted: true
+- timestamp: '2026-09-25T03:02:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

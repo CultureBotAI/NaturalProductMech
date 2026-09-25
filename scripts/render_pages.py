@@ -62,9 +62,10 @@ PATHWAY_BLURBS = {
 
 #: Fields the index reports coverage for, in the order `just report` uses.
 COVERAGE_FIELDS = [
+    "biosynthesis_origin", "producer_taxon_groups", "occurrence_taxon_groups",
     "producer_organisms", "occurrences", "biosynthetic_gene_clusters",
-    "biosynthetic_pathway", "bioactivities", "bioactivity_summary",
-    "molecular_targets", "causal_graphs", "related_records", "discussions",
+    "biosynthetic_pathway", "bioactivities", "bioactivity_summary", "molecular_targets",
+    "causal_graphs", "related_records", "discussions",
 ]
 
 sys.path.insert(0, str(REPO_ROOT / "src"))

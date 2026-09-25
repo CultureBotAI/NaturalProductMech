@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000879
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An N-glycosylpyrrolopyrimidine that is tubercidin in which the hydrogen
   at position 5 of the pyrrolopyrimidine moiety has been replaced by a cyano group.
 definition_source: CHEBI:134606
@@ -21,6 +22,10 @@ np_classification:
   class_results:
   - Purine nucleos(t)ides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- CYANOBACTERIAL
+- OTHER_BACTERIAL
 occurrences:
 - taxon_label: Streptomyces diastatochromogenes
   source: CHEBI
@@ -215,6 +220,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA06347
 - pubchem:11824
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1927
   taxon_label: Streptomyces rimosus
@@ -328,6 +335,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

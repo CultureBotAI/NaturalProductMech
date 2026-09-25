@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000442
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A bisindole alkaloid that is quinone bearing a hydroxy substituent at
   position 2, a 3,3-dimethylallyl group at position 5 and two indol-3-yl groups at
   positions 3 and 6, one of which is carrying a 1,1-dimethylallyl group at position
@@ -23,6 +24,8 @@ np_classification:
   class_results:
   - Carbazole alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:33178
   taxon_label: Aspergillus terreus
@@ -48,6 +51,8 @@ bgc_class:
 - NRPS
 xrefs:
 - npatlas:NPA05272
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:227321
   taxon_label: Aspergillus nidulans FGSC A4
@@ -97,6 +102,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:04Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

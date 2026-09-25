@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002195
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A pyranone that is 4H-pyran substituted by a hydroxy group at position
   5, a hydroxymethyl group at position 2 and an oxo group at position 4. It has been
   isolated from the fungus Aspergillus oryzae.
@@ -22,6 +23,10 @@ np_classification:
   class_results:
   - 4-pyrone derivatives
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
+- FUNGAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:1518149
   taxon_label: Thalassotalea
@@ -532,6 +537,8 @@ bgc_class:
 xrefs:
 - pubchem:3840
 - npatlas:NPA028615
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:510516
   taxon_label: Aspergillus oryzae RIB40
@@ -633,3 +640,7 @@ curation_history:
   changes: Added a BIOACTIVITY causal graph for kojic acid inhibition of Agaricus
     bisporus PPO1 and PPO2 with UniProtKB-grounded protein nodes.
   llm_assisted: true
+- timestamp: '2026-09-25T03:01:34Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

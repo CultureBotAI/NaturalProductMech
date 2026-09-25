@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000300
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 synonyms:
 - value: amychelin
   synonym_type: RELATED_SYNONYM
@@ -23,6 +24,8 @@ np_classification:
   - Depsipeptides
   - Linear peptides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1813
   taxon_label: Amycolatopsis
@@ -49,6 +52,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA011646
 - pubchem:24205476
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:591158
   taxon_label: Streptomyces sp. AA4
@@ -129,6 +134,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:53Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

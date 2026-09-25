@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001310
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A trihydroxyflavanone that is flavanone substituted by hydroxy groups
   at positions 5, 6 and 4'.
 definition_source: CHEBI:50202
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Flavanones
   is_glycoside: false
+occurrence_taxon_groups:
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:102107
   taxon_label: Prunus mume
@@ -674,6 +677,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:932
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1901
   taxon_label: Streptomyces clavuligerus ATCC 27064
@@ -864,3 +869,7 @@ curation_history:
     via the exact BindingDB row and BindingDB-deposited PubChem BioAssay row for PMID
     22726671.
   llm_assisted: true
+- timestamp: '2026-09-25T03:01:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

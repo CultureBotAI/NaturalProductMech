@@ -148,6 +148,15 @@ def test_every_pathway_enum_value_has_a_directory():
     assert values == set(seed.PATHWAY_DIRS)
 
 
+def test_every_taxon_group_ordered_by_the_seeder_is_in_the_schema():
+    import yaml
+    schema = yaml.safe_load(
+        (REPO_ROOT / "src" / "naturalproductmech" / "schema" / "naturalproductmech.yaml")
+        .read_text(encoding="utf-8"))
+    values = list(schema["enums"]["TaxonGroupEnum"]["permissible_values"])
+    assert values == seed.TAXON_GROUPS
+
+
 def test_prune_is_refused_on_a_partial_run(monkeypatch, capsys):
     """--prune with --only would delete records the run never built."""
     monkeypatch.setattr(sys, "argv", ["seed", "--apply", "--prune", "--only", "CHEBI:42355"])
@@ -187,11 +196,16 @@ def test_a_mibig_row_becomes_a_record_with_its_producer_and_cluster():
         "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
         "primary_reference": "PMID:12345678", "reference_basis": "ENTRY",
     }
-    records = seed.build_records({"mibig_compounds": [row]})
+    records = seed.build_records({
+        "mibig_compounds": [row],
+        "taxon_groups": [{"taxon_id": "NCBITaxon:1883", "taxon_group": "ACTINOBACTERIAL"}],
+    })
     assert len(records) == 1
     doc = records[0]
     assert doc["label"] == "examplomycin"
+    assert doc["biosynthesis_origin"] == "NATURAL_PRODUCT"
     assert doc["grounding_status"] == "MINTED"
+    assert doc["producer_taxon_groups"] == ["ACTINOBACTERIAL"]
     assert doc["bgc_class"] == ["PKS"]
     assert doc["xrefs"] == ["pubchem:702"]
     producer = doc["producer_organisms"][0]
@@ -559,14 +573,21 @@ def test_a_lotus_triple_becomes_an_occurrence_never_a_producer():
         "structure_wikidata": "Q123",
     }
     doc = seed.build_records({
-        "mibig_compounds": [MIBIG_ROW], "lotus_occurrences": [lotus],
+        "mibig_compounds": [MIBIG_ROW],
+        "lotus_occurrences": [lotus],
+        "taxon_groups": [
+            {"taxon_id": "NCBITaxon:1836", "taxon_group": "ACTINOBACTERIAL"},
+            {"taxon_id": "NCBITaxon:5059", "taxon_group": "FUNGAL"},
+        ],
     })[0]
     occurrence = next(o for o in doc["occurrences"] if o["source"] == "LOTUS")
     assert occurrence["taxon_id"] == "NCBITaxon:5059"
     assert occurrence["evidence"][0]["reference"] == "DOI:10.1021/np50001a001"
     assert occurrence["evidence"][0]["evidence_type"] == "DATABASE_ASSERTION"
+    assert doc["occurrence_taxon_groups"] == ["FUNGAL"]
     # The producer list is untouched by an occurrence, whatever taxon it names.
     assert [p["taxon_label"] for p in doc["producer_organisms"]] == ["Saccharopolyspora erythraea"]
+    assert doc["producer_taxon_groups"] == ["ACTINOBACTERIAL"]
 
 
 def test_occurrences_from_several_sources_coexist():

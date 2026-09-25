@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002610
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A sesterterpenoid with formula C25H38O2 which is isolated from the fungus
   Emericella variecolor.
 definition_source: CHEBI:169999
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Valparane diterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:1549217
   taxon_label: Aspergillus stellatus
@@ -61,6 +64,8 @@ bgc_class:
 - TERPENE
 xrefs:
 - npatlas:NPA032764
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:1549217
   taxon_label: Aspergillus stellatus
@@ -105,6 +110,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:57Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

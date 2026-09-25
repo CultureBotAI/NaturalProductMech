@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001668
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A butenolide that is furan-2(5H)-one which is substituted by a phenyl
   group at position 3, a benzyl group at position 4, and a hydroxy group at position
   5 (the (−)-enantiomer). A secondary metabolite obtained from Aspergillus nidulans.
@@ -26,6 +27,8 @@ np_classification:
   class_results:
   - Pulvinones
   is_glycoside: true
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:162425
   taxon_label: Aspergillus nidulans
@@ -61,6 +64,8 @@ bgc_class:
 - NRPS
 xrefs:
 - npatlas:NPA016720
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:227321
   taxon_label: Aspergillus nidulans FGSC A4
@@ -105,6 +110,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:45Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

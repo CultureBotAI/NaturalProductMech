@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001322
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: One of a pair of phellandrene cyclic monoterpene double-bond isomers in
   which one double bond is exocyclic (cf. α-phellandrene, where both of them are endoocyclic).
 definition_source: CHEBI:48741
@@ -21,6 +22,9 @@ np_classification:
   class_results:
   - Monocyclic monoterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- LAND_PLANT
+- OTHER_ANIMAL
 occurrences:
 - taxon_id: NCBITaxon:1005655
   taxon_label: Xylopia aromatica
@@ -282,6 +286,8 @@ compound_classes:
 xrefs:
 - pubchem:11142
 - chembl:CHEMBL444254
+producer_taxon_groups:
+- LAND_PLANT
 producer_organisms:
 - taxon_id: NCBITaxon:4081
   taxon_label: Solanum lycopersicum
@@ -326,6 +332,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:38Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

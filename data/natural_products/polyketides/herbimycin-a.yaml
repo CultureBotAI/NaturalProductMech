@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000074
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A 19-membered macrocyle incorporating a benzoquinone ring and a lactam
   functionality. It is an ansamycin antibiotic that induces apoptosis and displays
   antitumour effects.
@@ -26,6 +27,8 @@ np_classification:
   class_results:
   - Ansa macrolides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1912
   taxon_label: Streptomyces hygroscopicus
@@ -111,6 +114,8 @@ bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA03301
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1912
   taxon_label: Streptomyces hygroscopicus
@@ -153,6 +158,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:44Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

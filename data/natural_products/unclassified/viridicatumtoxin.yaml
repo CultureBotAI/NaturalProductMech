@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000168
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A tetracycline-like polyketide antibiotic that is produced by several
   species of Penicillium and Aspergillus.
 definition_source: CHEBI:85616
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Other polyketide meroterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:104259
   taxon_label: Penicillium brasilianum
@@ -140,6 +143,8 @@ compound_classes:
 xrefs:
 - npatlas:NPA03651
 - pubchem:54679209
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:36650
   taxon_label: Penicillium aethiopicum
@@ -193,6 +198,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:25Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

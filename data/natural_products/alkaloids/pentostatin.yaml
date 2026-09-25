@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001735
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of coformycins that is coformycin in which the hydroxy
   group at position 2' is replaced with a hydrogen. It is a drug used for the treatment
   of hairy cell leukaemia.
@@ -24,6 +25,9 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- FUNGAL
 occurrences:
 - taxon_label: Aspergillus nidulans
   source: CHEBI
@@ -97,6 +101,8 @@ bioactivity_summary:
 - ANTIMICROBIAL_UNSPECIFIED
 bgc_class:
 - OTHER
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1890
   taxon_label: Streptomyces antibioticus
@@ -186,3 +192,7 @@ curation_history:
     NRRL 3238 SanADA3, grounding the assayed adenosine deaminase 3 protein to UniProtKB:A0A1S5RQP7;
     left seeded BindingDB molecular target rows source-owned.
   llm_assisted: true
+- timestamp: '2026-09-25T03:01:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

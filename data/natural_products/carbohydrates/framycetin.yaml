@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000711
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A tetracyclic antibacterial agent derived from neomycin, being a glycoside
   ester of neamine and neobiosamine B.
 definition_source: CHEBI:7508
@@ -25,6 +26,8 @@ np_classification:
   class_results:
   - Amino cyclitols
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1888
   taxon_label: Streptomyces albus
@@ -265,6 +268,8 @@ bgc_class:
 - SACCHARIDE
 xrefs:
 - pubchem:8378
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1906
   taxon_label: Streptomyces fradiae
@@ -318,6 +323,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:04Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000304
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +19,8 @@ np_classification:
   class_results:
   - Cyclic peptides
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:1894967
   taxon_label: Fusarium incarnatum
@@ -111,6 +114,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA013880
 - pubchem:467801
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:298378
   taxon_label: Fusarium incarnatum
@@ -285,3 +290,7 @@ curation_history:
     review issue #134 while preserving its DOI-backed primary evidence and PubChem/BindingDB
     assay context in notes.'
   llm_assisted: true
+- timestamp: '2026-09-25T03:02:29Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

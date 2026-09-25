@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001233
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -53,6 +54,8 @@ bgc_class:
 - NRPS
 xrefs:
 - npatlas:NPA02530
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1740725
   taxon_label: Streptomyces sp. DSM 11171
@@ -151,3 +154,7 @@ curation_history:
     aureus Mu50 MurA2 (UniProtKB:P65456). NCBI maps PMID 24755374 to DOI 10.1016/j.bioorg.2014.03.008,
     and both accessions resolve in UniProtKB to the exact BindingDB assay organisms.
   llm_assisted: true
+- timestamp: '2026-09-25T03:03:11Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

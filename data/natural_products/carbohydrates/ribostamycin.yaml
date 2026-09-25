@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000713
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An amino cyclitol glycoside that is 4,6-diaminocyclohexane-1,2,3-triol
   having a 2,6-diamino-2,6-dideoxy-α-D-glucosyl residue attached at position 1 and
   a β-D-ribosyl residue attached at position 2. It is an antibiotic produced by Streptomyces
@@ -23,6 +24,8 @@ np_classification:
   class_results:
   - Amino cyclitols
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1906
   taxon_label: Streptomyces fradiae
@@ -106,6 +109,8 @@ bgc_class:
 - SACCHARIDE
 xrefs:
 - pubchem:33042
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:80859
   taxon_label: Streptomyces ribosidificus
@@ -148,6 +153,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:55Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

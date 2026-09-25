@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001992
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A 2-aminopurine that is the 6-thiono derivative of 2-amino-1,9-dihydro-6H-purine.
   Incorporates into DNA and inhibits synthesis. Used in the treatment of leukaemia.
 definition_source: CHEBI:9555
@@ -25,6 +26,9 @@ np_classification:
   class_results:
   - Purine alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:221254
   taxon_label: Paris polyphylla var. chinensis
@@ -276,6 +280,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:2723601
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:665029
   taxon_label: Erwinia amylovora CFBP1430
@@ -331,6 +337,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:42Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

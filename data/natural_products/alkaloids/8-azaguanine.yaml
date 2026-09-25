@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002508
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A triazolopyrimidine that consists of 3,6-dihydro-7H-[1,2,3]triazolo[4,5-d]pyrimidine
   bearing amino and oxo substituents at positions 5 and 7 respectively.
 definition_source: CHEBI:63486
@@ -281,6 +282,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:135403646
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1650571
   taxon_label: Streptomyces pathocidini
@@ -332,6 +335,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:49:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:40Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

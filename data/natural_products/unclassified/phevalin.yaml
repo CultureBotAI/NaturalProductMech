@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000308
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of pyrazinones that is pyrazin-2(1H)-one substituted
   by an isopropyl and benzyl groups at position 3 and 6, respectively. It is a natural
   product found in Staphylococcus aureus that inhibits calpain in a casein hydrolysis
@@ -32,6 +33,9 @@ np_classification:
   - Pyrazine and Piperazine alkaloids
   - Pyridine alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
 occurrences:
 - taxon_label: Staphylococcus aureus
   source: CHEBI
@@ -82,6 +86,8 @@ bgc_class:
 - NRPS
 xrefs:
 - pubchem:10376483
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:546342
   taxon_label: Staphylococcus aureus subsp. aureus str. JKD6008
@@ -133,6 +139,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:44Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

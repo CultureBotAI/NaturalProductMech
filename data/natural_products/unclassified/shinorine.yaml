@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000427
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A mycosporine-like amino acid that is the ketimine resulting from the
   formal condensation of the amino group of L-serine with the keto group of (5S)-5-hydroxy-5-(hydroxymethyl)-2-methoxycyclohex-2-en-1-one
   and in which the hydrogen at position 3 of the cyclohexenone moiety has been replaced
@@ -25,6 +26,10 @@ np_classification:
   class_results:
   - Mycosporine and Mycosporine-like amino acids
   is_glycoside: false
+occurrence_taxon_groups:
+- CYANOBACTERIAL
+- RED_ALGAL
+- OTHER_ANIMAL
 occurrences:
 - taxon_label: Curdiea racovitzia
   source: CHEBI
@@ -90,6 +95,8 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q3200306
 bgc_class:
 - NRPS
+producer_taxon_groups:
+- CYANOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:240292
   taxon_label: Trichormus variabilis ATCC 29413
@@ -138,6 +145,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:42Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

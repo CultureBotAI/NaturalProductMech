@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001468
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A commercially important azabicyclic antibiotic obtained from Streptomyces
   sapporonensis. It inhibits the Rho protein of E. coli.
 definition_source: CHEBI:60584
@@ -24,6 +25,8 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:35619
   taxon_label: Streptomyces griseoflavus
@@ -102,6 +105,8 @@ bgc_class:
 xrefs:
 - pubchem:70685091
 - npatlas:NPA09159
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:53446
   taxon_label: Streptomyces cinnamoneus
@@ -159,6 +164,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:39Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

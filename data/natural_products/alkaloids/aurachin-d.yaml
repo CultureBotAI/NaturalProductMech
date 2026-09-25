@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001343
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +20,9 @@ np_classification:
   class_results:
   - Quinoline alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- MYXOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -56,6 +60,9 @@ bgc_class:
 xrefs:
 - npatlas:NPA019718
 - pubchem:6124753
+producer_taxon_groups:
+- ACTINOBACTERIAL
+- MYXOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:675526
   taxon_label: Stigmatella aurantiaca Sg a15
@@ -135,6 +142,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:24Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

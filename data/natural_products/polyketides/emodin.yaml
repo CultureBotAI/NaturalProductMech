@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000101
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A trihydroxyanthraquinone that is 9,10-anthraquinone which is substituted
   by hydroxy groups at positions 1, 3, and 8 and by a methyl group at position 6.
   It is present in the roots and barks of numerous plants (particularly rhubarb and
@@ -23,6 +24,9 @@ np_classification:
   class_results:
   - Anthraquinones and anthrones
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:1006352
   taxon_label: Rumex dentatus
@@ -592,6 +596,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:3220
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:227321
   taxon_label: Aspergillus nidulans FGSC A4
@@ -742,3 +748,7 @@ curation_history:
     pylori FabZ, grounded the enzyme node to UniProtKB:Q5G940, and cited DOI:10.1186/1471-2180-9-91
     plus DOI:10.2210/pdb3ED0/pdb via the PubChem/RCSB PDB 3ED0 rows for PMID 19433000.
   llm_assisted: true
+- timestamp: '2026-09-25T03:03:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001799
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +20,8 @@ np_classification:
   - Isoquinoline alkaloids
   - Morphinan alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:215227
   taxon_label: Papaver bracteatum
@@ -306,6 +309,8 @@ molecular_targets:
   taxon_label: Human
 bgc_class:
 - OTHER
+producer_taxon_groups:
+- LAND_PLANT
 producer_organisms:
 - taxon_id: NCBITaxon:3469
   taxon_label: Papaver somniferum
@@ -388,3 +393,7 @@ curation_history:
     grounded the MRGPRX2 node to UniProtKB:Q96LB1, and cited DOI:10.1038/nchembio.2334
     via the BindingDB-curated PMID 28288109 measurements.
   llm_assisted: true
+- timestamp: '2026-09-25T03:01:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

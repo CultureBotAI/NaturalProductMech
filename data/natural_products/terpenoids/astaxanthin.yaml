@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000630
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A carotenone that consists of β,β-carotene-4,4'-dione bearing two hydroxy
   substituents at positions 3 and 3' (the 3S,3'S diastereomer). A carotenoid pigment
   found mainly in animals (crustaceans, echinoderms) but also occurring in plants.
@@ -28,6 +29,12 @@ np_classification:
   class_results:
   - Carotenoids (C40, β-β)
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
+- SPONGE
+- MOLLUSK
+- CHORDATE
+- OTHER_ANIMAL
 occurrences:
 - taxon_id: NCBITaxon:107392
   taxon_label: Ascidia zara
@@ -286,6 +293,8 @@ bgc_class:
 - TERPENE
 xrefs:
 - npatlas:NPA05089
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:225362
   taxon_label: Paracoccus haeundaensis
@@ -335,6 +344,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:48Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

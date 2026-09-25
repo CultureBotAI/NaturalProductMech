@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002300
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An iron(III) hydroxamate in which desferrialbomycin δ1(3−) is complexed
   to iron(III).
 definition_source: CHEBI:83206
@@ -35,6 +36,8 @@ bioactivity_summary:
 - ANTIBACTERIAL
 bgc_class:
 - NRPS
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:668825
   taxon_label: Streptomyces sp. ATCC 700974
@@ -88,6 +91,10 @@ discussions:
     then one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:32Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

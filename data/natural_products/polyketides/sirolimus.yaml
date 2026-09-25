@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001040
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A macrolide lactam isolated from Streptomyces hygroscopicus consisting
   of a 29-membered ring containing 4 trans double bonds, three of which are conjugated.
   It is an antibiotic, immunosupressive and antineoplastic agent.
@@ -26,6 +27,9 @@ np_classification:
   class_results:
   - Ascomycins and Rapamycins
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:1052105
   taxon_label: Purpureocillium
@@ -543,6 +547,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA0414
 - pubchem:5284616
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1343740
   taxon_label: Streptomyces rapamycinicus NRRL 5491
@@ -678,3 +684,7 @@ curation_history:
   changes: Corrected the sirolimus FKBP12-mTOR FRB graph predicate so the FKBP12-sirolimus
     complex binds the FRB-domain node directly.
   llm_assisted: true
+- timestamp: '2026-09-25T03:03:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000188
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A pyrrolopurine that is saxitoxin carrying a hydroxy substituent on the
   nitrogen atom at position 5. It is a sodium channel blocker that is undergoing clinical
   trials as a prolonged-duration local anesthetic.
@@ -22,6 +23,11 @@ np_classification:
   class_results:
   - Saxitoxins
   is_glycoside: false
+occurrence_taxon_groups:
+- CYANOBACTERIAL
+- ALVEOLATE
+- MOLLUSK
+- OTHER_ANIMAL
 occurrences:
 - taxon_id: NCBITaxon:1129274
   taxon_label: Saxidomus nuttalli
@@ -214,6 +220,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:104753
+producer_taxon_groups:
+- CYANOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:398006
   taxon_label: Cylindrospermopsis raciborskii T3
@@ -256,6 +264,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:07Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

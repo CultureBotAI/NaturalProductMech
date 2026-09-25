@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001390
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An ilicicolin that is 2,4-dihydroxy-6-methyl-benzaldehyde which is substituted
   at position 3 by a (2E,6E)-3,7,11-trimethyldodeca-2,6,10-trien-1-yl group.
 definition_source: CHEBI:146153
@@ -26,6 +27,8 @@ np_classification:
   class_results:
   - Tetraketide meroterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:139090
   taxon_label: Albatrellus ovinus
@@ -60,6 +63,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:10405997
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:80385
   taxon_label: Stachybotrys bisbyi
@@ -112,6 +117,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

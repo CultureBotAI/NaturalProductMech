@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000130
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of pyrroles that is 1H-pyrrole which is substituted
   by chloro groups at positions 2 and 3 and by a nitro group position 4. It is the
   simplest member of the pyrrolomycins, a family of natural products found in several
@@ -28,6 +29,8 @@ np_classification:
   class_results:
   - Pyrrole alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -86,6 +89,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:133275
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:76728
   taxon_label: Streptomyces vitaminophilus
@@ -195,6 +200,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:41Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

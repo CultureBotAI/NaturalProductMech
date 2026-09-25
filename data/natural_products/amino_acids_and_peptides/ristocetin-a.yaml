@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000418
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A heterodetic cyclic peptide that is produced by species of Amycolatopsis
   and Nocardia.
 definition_source: CHEBI:85129
@@ -25,6 +26,8 @@ np_classification:
   class_results:
   - Vancomycins and Teicoplanins
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_label: Amycolatopsis lurida
   source: CHEBI
@@ -69,6 +72,8 @@ compound_classes:
 xrefs:
 - pubchem:16131418
 - npatlas:NPA020115
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:31959
   taxon_label: Amycolatopsis lurida
@@ -113,6 +118,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:36Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

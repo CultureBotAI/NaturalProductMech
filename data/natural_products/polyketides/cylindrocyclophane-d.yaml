@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001064
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 synonyms:
 - value: cylindrocyclophane D
   synonym_type: RELATED_SYNONYM
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Dialkylresorcinols
   is_glycoside: false
+occurrence_taxon_groups:
+- CYANOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1177
   taxon_label: Nostoc
@@ -89,6 +92,8 @@ xrefs:
 - pubchem:10258912
 - npatlas:NPA028333
 - cyanometdb:CyanoMetDB_2365
+producer_taxon_groups:
+- CYANOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:379530
   taxon_label: Cylindrospermum licheniforme UTEX B 2014
@@ -169,6 +174,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

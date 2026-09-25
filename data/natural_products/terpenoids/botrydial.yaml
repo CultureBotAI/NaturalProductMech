@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000631
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A cytotoxic fungal metabolite isolated from plant tissues infected by
   phytopathogen Botrytis cinerea.
 definition_source: CHEBI:3159
@@ -25,6 +26,8 @@ np_classification:
   class_results:
   - Botryane sesquiterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:40559
   taxon_label: Botrytis cinerea
@@ -90,6 +93,8 @@ bgc_class:
 - TERPENE
 xrefs:
 - npatlas:NPA003924
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:332648
   taxon_label: Botrytis cinerea B05.10
@@ -138,6 +143,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:23Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

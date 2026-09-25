@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002789
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A macrolide that is the major component of a mixture of four isomeric
   polyene macrolides isolated from Streptomyces filipinensis.
 definition_source: CHEBI:83267
@@ -25,6 +26,8 @@ np_classification:
   class_results:
   - Polyene macrolides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:285483
   taxon_label: Streptomyces miharaensis
@@ -160,6 +163,8 @@ xrefs:
 - pubchem:25439
 - npatlas:NPA032748
 - pubchem:6433194
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1914
   taxon_label: Streptomyces lavendulae strain YAKB-15
@@ -246,6 +251,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:19Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

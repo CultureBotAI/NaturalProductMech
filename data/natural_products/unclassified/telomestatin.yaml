@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001797
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -15,6 +16,8 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1892
   taxon_label: Streptomyces anulatus
@@ -105,6 +108,8 @@ bgc_class:
 - RIBOSOMAL
 xrefs:
 - npatlas:NPA06938
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1892
   taxon_label: Streptomyces anulatus
@@ -203,3 +208,7 @@ curation_history:
     DinG and human FANCJ, grounded the protein nodes to UniProtKB:P27296 and UniProtKB:Q9BX63,
     and cited DOI:10.1074/jbc.M113.496463 via exact BindingDB rows for PMID 23935105.
   llm_assisted: true
+- timestamp: '2026-09-25T03:03:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

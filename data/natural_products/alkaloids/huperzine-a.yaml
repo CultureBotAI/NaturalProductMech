@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000812
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -16,6 +17,8 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:355589
   taxon_label: Huperzia serrata
@@ -325,6 +328,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA0438
 - pubchem:5912039
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:665115
   taxon_label: Shiraia sp. slf14
@@ -445,3 +450,7 @@ curation_history:
     and UniProtKB:P37136, and cited DOI:10.1021/ja021111w via the BindingDB-curated
     PMID 12517147 measurements.
   llm_assisted: true
+- timestamp: '2026-09-25T03:03:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

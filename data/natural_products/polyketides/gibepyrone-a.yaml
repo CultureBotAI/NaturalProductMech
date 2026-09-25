@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001606
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of 2-pyranones that is 2H-pyran-2-one in which the
   hydrogens at positions 3 and 6 are replaced by methyl and (2E)-2-buten-2-yl groups,
   respectively. It is a mycotoxin produced by the rice pathogen Fusarium fujikuroi.
@@ -26,6 +27,8 @@ np_classification:
   class_results:
   - 2-pyrone derivatives
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_label: Fusarium keratoplasticum
   source: CHEBI
@@ -91,6 +94,8 @@ bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA019445
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:1279085
   taxon_label: Fusarium fujikuroi IMI 58289
@@ -142,6 +147,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:53Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

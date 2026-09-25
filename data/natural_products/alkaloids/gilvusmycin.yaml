@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001607
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An antibiotic isolated from the culture broth of Streptomyces sp. QM16
   with potent cytotoxic activity against the human tumor cells.
 definition_source: CHEBI:65964
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Corynanthe type
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -53,6 +56,8 @@ bgc_class:
 - OTHER
 xrefs:
 - npatlas:NPA01823
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1476877
   taxon_label: Streptomyces sp. NRRL B-1347
@@ -97,6 +102,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:48Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000355
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A fumiquinazoline that consists of imidazoindole and pyrazinoquinazoline
   units connected by a methylene group.
 definition_source: CHEBI:64546
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Quinazoline alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:746128
   taxon_label: Aspergillus fumigatus
@@ -93,6 +96,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA05162
 - pubchem:11247802
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:330879
   taxon_label: Aspergillus fumigatus Af293
@@ -142,6 +147,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:49Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

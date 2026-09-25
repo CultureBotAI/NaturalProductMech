@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000690
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A streptomycin bearing an additional hydroxy substituent at the 5'-position
   (on the furanose ring)
 definition_source: CHEBI:24750
@@ -27,6 +28,8 @@ np_classification:
   - Amino cyclitols
   - Aminoglycosides
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:51201
   taxon_label: Streptomyces griseocarneus
@@ -158,6 +161,8 @@ bgc_class:
 - SACCHARIDE
 xrefs:
 - npatlas:NPA0933
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1907
   taxon_label: Streptomyces glaucescens
@@ -207,6 +212,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:58Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

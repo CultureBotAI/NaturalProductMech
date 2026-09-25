@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002207
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A tryptamine alkaloid that is N,N-dimethyltryptamine carrying an additional
   phosphoryloxy substituent at position 4. The major hallucinogenic alkaloid isolated
   from Psilocybe mushrooms (also known as Teonanácatl or "magic mushrooms").
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Simple indole alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:1032562
   taxon_label: Conocybe tenera
@@ -506,6 +509,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:10624
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:93625
   taxon_label: Psilocybe cyanescens
@@ -554,6 +559,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

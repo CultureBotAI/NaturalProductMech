@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001985
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A C-glycosyl compound that is 4-hydroxy-1H-pyrazole-5-carboxamide in which
   the hydrogen at position 3 has been replaced by a β-D-ribofuranosyl group.
 definition_source: CHEBI:90284
@@ -22,6 +23,8 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:67365
   taxon_label: Streptomyces sparsogenes
@@ -61,6 +64,8 @@ xrefs:
 - npatlas:NPA033439
 - pubchem:135413551
 - chembl:CHEMBL2105330
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:67283
   taxon_label: Streptomyces candidus
@@ -116,6 +121,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:44Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000898
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A twelve-membered macrolide antibiotic that is biosynthesised by Streptomyces
   venezuelae.
 definition_source: CHEBI:29656
@@ -22,6 +23,8 @@ np_classification:
   - Erythromycins
   - Tylosins
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -175,6 +178,8 @@ bioactivity_summary:
 - ANTIMICROBIAL_UNSPECIFIED
 bgc_class:
 - SACCHARIDE
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:54571
   taxon_label: Streptomyces venezuelae
@@ -217,6 +222,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:28Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

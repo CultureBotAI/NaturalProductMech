@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000988
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An epithilone that is epithilone D in which the double bond in the macrocyclic
   ring has been oxidised to the corresponding epoxide (the S,S stereoisomer).
 definition_source: CHEBI:31550
@@ -26,6 +27,11 @@ np_classification:
   class_results:
   - Epothilones
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- MYXOBACTERIAL
+- FUNGAL
+- OTHER_ANIMAL
 occurrences:
 - taxon_id: NCBITaxon:1191098
   taxon_label: Microporus
@@ -375,6 +381,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA06085
 - pubchem:448013
+producer_taxon_groups:
+- MYXOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:56
   taxon_label: Sorangium cellulosum
@@ -522,6 +530,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:14Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

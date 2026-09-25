@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002165
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An octahydronaphthalene that is 2,4,5,7-tetramethyloctahydronaphthalen-1(2H)-one
   which is substituted by hydroxy groups at positions 2 and 7, a (2R)-1-hydroxybutan-2-yl
   group at position 3, and a (2Z)-3-hydroxyprop-2-enoyl group at position 4 (the 2S,3R,4R,4aS,5R,7R,8aS
@@ -30,6 +31,8 @@ np_classification:
   class_results:
   - Decalins with side chains
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:120510
   taxon_label: Stemphylium botryosum
@@ -61,6 +64,8 @@ occurrences:
   taxon_source: NCBITaxon
 bgc_class:
 - PKS
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:321614
   taxon_label: Parastagonospora nodorum SN15
@@ -112,6 +117,10 @@ discussions:
     then one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:54Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

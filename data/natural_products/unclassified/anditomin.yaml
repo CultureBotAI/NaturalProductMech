@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002612
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A meroterpenoid with formula C25H30O5. It is isolated from the fungus
   Aspergillus stellatus.
 definition_source: CHEBI:219836
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Tetraketide meroterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_label: Aspergillus stellatus
   source: CHEBI
@@ -39,6 +42,8 @@ bgc_class:
 xrefs:
 - pubchem:91820511
 - npatlas:NPA032767
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:1549217
   taxon_label: Aspergillus stellatus
@@ -85,6 +90,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

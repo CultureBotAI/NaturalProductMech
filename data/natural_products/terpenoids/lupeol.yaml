@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001317
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A pentacyclic triterpenoid that is lupane in which the hydrogen at the
   3β position is substituted by a hydroxy group. It occurs in the skin of lupin seeds,
   as well as in the latex of fig trees and of rubber plants. It is also found in many
@@ -23,6 +24,8 @@ np_classification:
   class_results:
   - Lupane triterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:100541
   taxon_label: Ficus auriculata
@@ -300,6 +303,8 @@ bgc_class:
 - TERPENE
 xrefs:
 - pubchem:259846
+producer_taxon_groups:
+- LAND_PLANT
 producer_organisms:
 - taxon_id: NCBITaxon:34305
   taxon_label: Lotus japonicus
@@ -344,6 +349,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:48Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

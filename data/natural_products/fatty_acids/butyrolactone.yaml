@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000850
 np_pathway: FATTY_ACIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A butan-4-olide that is tetrahydrofuran substituted by an oxo group at
   position 2.
 definition_source: CHEBI:42639
@@ -21,6 +22,10 @@ np_classification:
   class_results:
   - Lactones
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- LAND_PLANT
+- OTHER_ANIMAL
 occurrences:
 - taxon_id: NCBITaxon:13443
   taxon_label: Coffea arabica
@@ -208,6 +213,8 @@ occurrences:
     each other rather than duplicating.
 bgc_class:
 - OTHER
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:42234
   taxon_label: Streptomyces acidiscabies
@@ -250,6 +257,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:51Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

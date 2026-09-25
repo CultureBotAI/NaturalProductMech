@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000668
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 synonyms:
 - value: fischerindole
   synonym_type: RELATED_SYNONYM
@@ -28,6 +29,8 @@ bgc_class:
 xrefs:
 - cyanometdb:CyanoMetDB_1557
 - npatlas:NPA018655
+producer_taxon_groups:
+- CYANOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1433842
   taxon_label: Hapalosiphon welwitschii UTEX B 1830
@@ -145,6 +148,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:23Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

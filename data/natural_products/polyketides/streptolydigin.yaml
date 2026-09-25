@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001046
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A monocarboxylic acid amide that is a broad-spectrum antibiotic produced
   by Streptomyces lydicus.
 definition_source: CHEBI:45773
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - 3-oligoenoyltetramic acids
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_label: Streptomyces lydicus
   source: CHEBI
@@ -216,6 +219,8 @@ bgc_class:
 - SACCHARIDE
 xrefs:
 - pubchem:54708748
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:47763
   taxon_label: Streptomyces lydicus
@@ -266,6 +271,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:35Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

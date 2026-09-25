@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001455
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -55,6 +56,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:12550
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:41951
   taxon_label: Streptomyces argillaceus
@@ -159,3 +162,7 @@ curation_history:
     reused the seeded human UniProtKB:P00156 example, and cited DOI:10.1016/j.chembiol.2016.06.016
     via exact BindingDB rows for PMID 27524297.
   llm_assisted: true
+- timestamp: '2026-09-25T03:03:29Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

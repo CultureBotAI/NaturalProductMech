@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001264
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 synonyms:
 - value: compound 6
   synonym_type: RELATED_SYNONYM
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Decalins with side chains
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:318712
   taxon_label: Pleospora bjoerlingii
@@ -77,6 +80,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:158750
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:1979465
   taxon_label: Phoma betae
@@ -155,6 +160,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

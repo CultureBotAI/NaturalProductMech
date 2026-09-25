@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001181
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: The (−)-stereoisomer of geosmin, having 4S,4aS,8aR configuration.
 definition_source: CHEBI:46702
 synonyms:
@@ -25,6 +26,11 @@ np_classification:
   - Eudesmane sesquiterpenoids
   - Noreudesmane sesquiterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- CYANOBACTERIAL
+- FUNGAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:13443
   taxon_label: Coffea arabica
@@ -281,6 +287,8 @@ occurrences:
     inventories are the complete record.'
 bgc_class:
 - TERPENE
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:100226
   taxon_label: Streptomyces coelicolor A3(2)
@@ -327,6 +335,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:26Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

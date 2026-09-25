@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002329
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 synonyms:
 - value: trinickiabactin
   synonym_type: RELATED_SYNONYM
@@ -23,6 +24,8 @@ np_classification:
   - Linear peptides
   - Lipopeptides
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:28094
   taxon_label: Trinickia caryophylli
@@ -40,6 +43,8 @@ bgc_class:
 - NRPS
 xrefs:
 - npatlas:NPA024966
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:28094
   taxon_label: Trinickia caryophylli
@@ -120,6 +125,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:46Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

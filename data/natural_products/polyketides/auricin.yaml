@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000201
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An angucycline-like polyketide discovered in Streptomyces aureofaciens
   that is only stable at acidic pH.
 definition_source: CHEBI:156301
@@ -20,6 +21,8 @@ np_classification:
   - Polycyclic aromatic polyketides
   class_results: []
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_label: Streptomyces lavendulae subsp. lavendulae
   source: CHEBI
@@ -43,6 +46,8 @@ bioactivity_summary:
 bgc_class:
 - PKS
 - SACCHARIDE
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1894
   taxon_label: Streptomyces aureofaciens
@@ -90,6 +95,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

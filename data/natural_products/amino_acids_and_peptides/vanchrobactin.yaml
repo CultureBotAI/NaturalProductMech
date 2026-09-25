@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000454
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A catechol-type natural product that is composed of 2,3-dihydroxybenzoic
   acid, D-arginine and L-serine joined in sequence by peptide linkages. It is a siderophore
   synthesized by the bacterial fish pathogen Vibrio anguillarum.
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Dipeptides
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_label: Vibrio campbellii
   source: CHEBI
@@ -75,6 +78,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA016075
 - pubchem:16658367
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:989499
   taxon_label: Vibrio anguillarum RV22
@@ -156,6 +161,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:43Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

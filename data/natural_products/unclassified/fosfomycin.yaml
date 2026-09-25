@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000938
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A phosphonic acid having an (R,S)-1,2-epoxypropyl group attached to phosphorus.
 definition_source: CHEBI:28915
 np_classification:
@@ -17,6 +18,10 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -235,6 +240,9 @@ bgc_class:
 xrefs:
 - pubchem:73491
 - pubchem:446987
+producer_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1906
   taxon_label: Streptomyces fradiae
@@ -321,6 +329,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:53Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

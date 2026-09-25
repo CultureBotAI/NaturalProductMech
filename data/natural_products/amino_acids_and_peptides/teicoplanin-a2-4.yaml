@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000440
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A teicoplanin A2 that has 8-methyldecanoyl as the variable N-acyl group.
 definition_source: CHEBI:34997
 synonyms:
@@ -24,6 +25,8 @@ np_classification:
   class_results:
   - Vancomycins and Teicoplanins
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1867
   taxon_label: Actinoplanes teichomyceticus
@@ -59,6 +62,8 @@ bgc_class:
 - NRPS
 xrefs:
 - npatlas:NPA019029
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1867
   taxon_label: Actinoplanes teichomyceticus
@@ -105,6 +110,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:35Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

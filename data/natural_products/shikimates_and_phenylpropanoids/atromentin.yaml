@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002277
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of dihydroxy-1,4-benzoquinones that is 2,5-dihydroxycyclohexa-2,5-diene-1,4-dione
   which is substituted by a 4-hydroxyphenyl group at positions 3 and 6. It is a mushroom
   pigment isolated from several fungi species and acts as a smooth muscle stimulant,
@@ -23,6 +24,8 @@ np_classification:
   class_results:
   - p-Terphenyls
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:176618
   taxon_label: Hydnellum diabolus
@@ -191,6 +194,8 @@ bgc_class:
 - NRPS
 xrefs:
 - npatlas:NPA018419
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:5382
   taxon_label: Suillus grevillei
@@ -239,6 +244,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:55Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

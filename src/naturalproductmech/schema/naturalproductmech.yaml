@@ -221,6 +221,20 @@ classes:
           origin. The field exists so a semisynthetic derivative admitted
           beside its natural parent can say what it is.
         range: BiosynthesisOriginEnum
+      producer_taxon_groups:
+        description: >-
+          Broad NCBI Taxonomy-derived groups for the taxa that biosynthesize
+          this compound. Computed from producer_organisms taxon_id values for
+          faceting; not a source assertion.
+        range: TaxonGroupEnum
+        multivalued: true
+      occurrence_taxon_groups:
+        description: >-
+          Broad NCBI Taxonomy-derived groups for taxa this compound has been
+          detected in or isolated from. Computed from occurrences taxon_id
+          values for faceting; not a source assertion.
+        range: TaxonGroupEnum
+        multivalued: true
       producer_organisms:
         description: >-
           Taxa that BIOSYNTHESIZE this compound. Requires biosynthesis-grade
@@ -940,6 +954,42 @@ enums:
       SEMISYNTHETIC:
       SYNTHETIC:
       UNKNOWN:
+
+  TaxonGroupEnum:
+    permissible_values:
+      ACTINOBACTERIAL:
+        description: Actinomycetota, checked before the bacterial fallback.
+      CYANOBACTERIAL:
+        description: Cyanobacteriota, checked before the bacterial fallback.
+      MYXOBACTERIAL:
+        description: Myxococcota, checked before the bacterial fallback.
+      OTHER_BACTERIAL:
+        description: Bacteria not matched by a narrower bacterial bucket.
+      ARCHAEAL:
+      FUNGAL:
+      DIATOM:
+        description: Bacillariophyta.
+      GREEN_ALGAL:
+        description: Chlorophyta.
+      RED_ALGAL:
+        description: Rhodophyta.
+      HAPTOPHYTE:
+      ALVEOLATE:
+      OTHER_STRAMENOPILE:
+        description: Stramenopiles not matched by the diatom bucket.
+      LAND_PLANT:
+        description: Embryophyta.
+      SPONGE:
+        description: Porifera.
+      CNIDARIAN:
+      MOLLUSK:
+      BRYOZOAN:
+      CHORDATE:
+      OTHER_ANIMAL:
+        description: Metazoa not matched by a narrower animal bucket.
+      OTHER_EUKARYOTIC:
+        description: Eukaryota not matched by a narrower eukaryotic bucket.
+      OTHER:
 
   ClinicalStatusEnum:
     permissible_values:

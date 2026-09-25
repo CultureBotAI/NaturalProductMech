@@ -27,6 +27,10 @@ to the names the adopted sources actually use. The full ``names.dmp`` is about
 250 MB and most of it names organisms this corpus will never mention; committing
 it would put an inventory in ``data/raw/`` that nothing reads.
 
+A committed ``taxon_groups.tsv`` mapping current NCBI taxids to broad
+natural-product source lineages. These are display facets for the seeded
+producer and occurrence fields, not assertions made by the sources themselves.
+
 **No genus fallback.** A row naming ``Genus species`` whose species NCBI does not
 know is left unresolved rather than written under the genus, because an
 identifier and a label denoting different things is the defect
@@ -75,6 +79,7 @@ MANIFEST_PATH = RAW_DIR / "MANIFEST.yaml"
 INVENTORY_NAME = "taxon_names.tsv"
 MERGED_INVENTORY_NAME = "taxon_merged.tsv"
 NON_ORGANISM_INVENTORY_NAME = "taxon_non_organism.tsv"
+TAXON_GROUP_INVENTORY_NAME = "taxon_groups.tsv"
 OBO_NAME = "corpus_taxa.obo"
 
 #: Nodes that are structurally not an organism: the root, the rank above the
@@ -119,6 +124,32 @@ USABLE_NAME_CLASSES = {"scientific name", "synonym", "equivalent name",
 COLUMNS = ["organism_name", "taxon_id", "name_class", "requested_by"]
 MERGED_COLUMNS = ["old_taxon_id", "new_taxon_id", "requested_by"]
 NON_ORGANISM_COLUMNS = ["taxon_id", "scientific_name", "reason", "requested_by"]
+TAXON_GROUP_COLUMNS = ["taxon_id", "taxon_group"]
+
+# Specific lineages first, broad fallbacks after. The group chosen for one
+# taxid is the first anchor present in its NCBI ancestor chain.
+TAXON_GROUPS = (
+    ("ACTINOBACTERIAL", "201174"),    # Actinomycetota
+    ("CYANOBACTERIAL", "1117"),       # Cyanobacteriota
+    ("MYXOBACTERIAL", "2818505"),     # Myxococcota
+    ("OTHER_BACTERIAL", "2"),         # Bacteria
+    ("ARCHAEAL", "2157"),             # Archaea
+    ("FUNGAL", "4751"),               # Fungi
+    ("DIATOM", "2836"),               # Bacillariophyta
+    ("GREEN_ALGAL", "3041"),          # Chlorophyta
+    ("RED_ALGAL", "2763"),            # Rhodophyta
+    ("HAPTOPHYTE", "2830"),           # Haptophyta
+    ("ALVEOLATE", "33630"),           # Alveolata
+    ("OTHER_STRAMENOPILE", "33634"),  # Stramenopiles
+    ("LAND_PLANT", "3193"),           # Embryophyta
+    ("SPONGE", "6040"),               # Porifera
+    ("CNIDARIAN", "6073"),            # Cnidaria
+    ("MOLLUSK", "6447"),              # Mollusca
+    ("BRYOZOAN", "10205"),            # Bryozoa
+    ("CHORDATE", "7711"),             # Chordata
+    ("OTHER_ANIMAL", "33208"),        # Metazoa
+    ("OTHER_EUKARYOTIC", "2759"),     # Eukaryota
+)
 
 
 def sha256_of(path: Path) -> str:
@@ -320,14 +351,8 @@ def write_obo(archive: Path, wanted: set[str], path: Path) -> int:
     return len(names)
 
 
-def non_organism(archive: Path, wanted: set[str]) -> dict[str, tuple[str, str]]:
-    """Wanted taxids that do not denote a single organism -> (name, reason).
-
-    Three ways in, in order of how much of the taxonomy they cover: a
-    structural node, a member of a non-organism subtree, or one of the two
-    generic bins. A producer claim on any of them names no organism, which is
-    a claim the corpus cannot make (#62, #68).
-    """
+def load_parents(archive: Path) -> dict[str, str]:
+    """NCBI taxid -> parent taxid from nodes.dmp."""
     parents: dict[str, str] = {}
     with tarfile.open(archive, "r:gz") as tar:
         nodes = tar.extractfile("nodes.dmp")
@@ -337,14 +362,48 @@ def non_organism(archive: Path, wanted: set[str]) -> dict[str, tuple[str, str]]:
             parts = [p.strip() for p in raw.decode("utf-8", "replace").split("\t|")]
             if len(parts) >= 2:
                 parents[parts[0]] = parts[1]
+    return parents
 
-    def lineage(taxid: str) -> list[str]:
-        chain, seen = [], set()
-        while taxid and taxid not in seen and taxid != "1":
-            seen.add(taxid)
-            chain.append(taxid)
-            taxid = parents.get(taxid, "")
-        return chain
+
+def lineage(taxid: str, parents: dict[str, str]) -> list[str]:
+    """The taxid and its ancestors, stopping before NCBI's root."""
+    chain, seen = [], set()
+    while taxid and taxid not in seen and taxid != "1":
+        seen.add(taxid)
+        chain.append(taxid)
+        taxid = parents.get(taxid, "")
+    return chain
+
+
+def taxon_group(taxid: str, parents: dict[str, str]) -> str:
+    """A broad display bucket for an NCBI taxid."""
+    ancestors = set(lineage(taxid, parents))
+    for group, anchor in TAXON_GROUPS:
+        if anchor in ancestors:
+            return group
+    return "OTHER"
+
+
+def taxon_group_rows(parents: dict[str, str], wanted: set[str]) -> list[dict[str, str]]:
+    return [
+        {"taxon_id": f"NCBITaxon:{taxid}", "taxon_group": taxon_group(taxid, parents)}
+        for taxid in sorted(wanted & set(parents), key=int)
+    ]
+
+
+def non_organism(
+    archive: Path,
+    wanted: set[str],
+    parents: dict[str, str] | None = None,
+) -> dict[str, tuple[str, str]]:
+    """Wanted taxids that do not denote a single organism -> (name, reason).
+
+    Three ways in, in order of how much of the taxonomy they cover: a
+    structural node, a member of a non-organism subtree, or one of the two
+    generic bins. A producer claim on any of them names no organism, which is
+    a claim the corpus cannot make (#62, #68).
+    """
+    parents = parents or load_parents(archive)
 
     found: dict[str, tuple[str, str]] = {}
     for taxid in wanted:
@@ -354,7 +413,7 @@ def non_organism(archive: Path, wanted: set[str]) -> dict[str, tuple[str, str]]:
         if taxid in GENERIC_BINS:
             found[taxid] = ("", GENERIC_BINS[taxid])
             continue
-        for ancestor in lineage(taxid)[1:]:
+        for ancestor in lineage(taxid, parents)[1:]:
             if ancestor in NON_ORGANISM_SUBTREES:
                 found[taxid] = ("", NON_ORGANISM_SUBTREES[ancestor])
                 break
@@ -493,7 +552,8 @@ def main() -> int:
     ids_by_source = ids_wanted()
     ids_all = set().union(*ids_by_source.values()) if ids_by_source else set()
     merges = merged(archive, ids_all)
-    bins = non_organism(archive, ids_all)
+    parents = load_parents(archive)
+    bins = non_organism(archive, ids_all, parents=parents)
     print("\nnumeric taxids supplied directly, by source:", file=sys.stderr)
     for source, ids in sorted(ids_by_source.items()):
         gone = len(ids & set(merges))
@@ -557,10 +617,20 @@ def main() -> int:
         "reason": reason,
         "requested_by": ",".join(sorted(s for s, ids in ids_by_source.items() if taxid in ids)),
     } for taxid, (name, reason) in sorted(bins.items(), key=lambda kv: int(kv[0]))]
+    live_taxids = ids_all | set(resolved_ids) | set(merges.values())
+
     obo_path = RAW_DIR / OBO_NAME
-    obo_terms = write_obo(archive, ids_all | set(resolved_ids) | set(merges.values()), obo_path)
+    obo_terms = write_obo(archive, live_taxids, obo_path)
     print(f"wrote {obo_path.relative_to(REPO_ROOT)} ({obo_terms} terms, "
           f"{obo_path.stat().st_size // 1024} KB)", file=sys.stderr)
+
+    taxon_group_inventory = RAW_DIR / TAXON_GROUP_INVENTORY_NAME
+    group_rows = taxon_group_rows(parents, live_taxids)
+    with taxon_group_inventory.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=TAXON_GROUP_COLUMNS,
+                                delimiter="\t", lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(group_rows)
 
     bin_inventory = RAW_DIR / NON_ORGANISM_INVENTORY_NAME
     with bin_inventory.open("w", newline="", encoding="utf-8") as fh:
@@ -601,6 +671,11 @@ def main() -> int:
         "sha256": sha256_of(bin_inventory),
         "source": "NCBI Taxonomy taxdump, nodes.dmp + names.dmp (public domain)",
     }
+    manifest["inventories"][TAXON_GROUP_INVENTORY_NAME] = {
+        "rows": len(group_rows), "bytes": taxon_group_inventory.stat().st_size,
+        "sha256": sha256_of(taxon_group_inventory),
+        "source": "NCBI Taxonomy taxdump, nodes.dmp (public domain)",
+    }
     manifest["inventories"][MERGED_INVENTORY_NAME] = {
         "rows": len(merged_rows), "bytes": merged_inventory.stat().st_size,
         "sha256": sha256_of(merged_inventory),
@@ -609,6 +684,8 @@ def main() -> int:
     print(f"wrote {merged_inventory.relative_to(REPO_ROOT)} ({len(merged_rows)} rows)",
           file=sys.stderr)
     print(f"wrote {bin_inventory.relative_to(REPO_ROOT)} ({len(bin_rows)} rows)", file=sys.stderr)
+    print(f"wrote {taxon_group_inventory.relative_to(REPO_ROOT)} ({len(group_rows)} rows)",
+          file=sys.stderr)
     MANIFEST_PATH.write_text(
         yaml.safe_dump(manifest, sort_keys=False, allow_unicode=True), encoding="utf-8")
     print(f"\nwrote {inventory.relative_to(REPO_ROOT)} ({len(rows)} rows)", file=sys.stderr)

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002260
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A carbobicyclic compound that is (3aS,7aS)-octahydro-1H-indene substituted
   by a methyl group at positions 1S, 6 and 6, and by a 1-hydroxypropan-2-ylidene group
   at position 4. It is a sesquiterpenoid produced by a Trichoderma terpene cyclase.
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Tremulane sesquiterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:63577
   taxon_label: Trichoderma atroviride
@@ -38,6 +41,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA025694
 - pubchem:146682173
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:327061
   taxon_label: Annulohypoxylon truncatum
@@ -83,6 +88,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001561
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A homodetic cyclic peptide found in several Streptomyces species, consisting
   of 3-hydroxyasparagine, L-ornithine, L-isoleucine, D-leucine, D-valine and 5-chloro-L-tryptophan
   joined in sequence in a cyclic arrangement by peptide linkages. It exhibits antibacterial
@@ -23,6 +24,8 @@ np_classification:
   class_results:
   - Cyclic peptides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_label: Streptomyces noursei
   source: CHEBI
@@ -66,6 +69,8 @@ bioactivity_summary:
 - ANTIBACTERIAL
 bgc_class:
 - NRPS
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:146536
   taxon_label: Streptomyces curacoi
@@ -151,6 +156,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:43Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

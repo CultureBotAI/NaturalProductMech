@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000978
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A triazaacenaphthylene that is 2,2a,3,4,5,5a,6,7-octahydro-1H-1,8,8b-triazaacenaphthylene
   which is substituted at positions 3, 4, and 7 by methyl, sulfooxy, and (2,6-dioxo-1,2,3,6-tetrahydropyrimidin-4-yl)(hydroxy)methyl
   groups, respectively (the 2aS,3R,4S,5aS,7R stereoisomer in which the carbon bearing
@@ -28,6 +29,8 @@ np_classification:
   class_results:
   - Tricyclic guanidine alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- CYANOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1158
   taxon_label: Oscillatoria
@@ -152,6 +155,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:115005
+producer_taxon_groups:
+- CYANOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:478021
   taxon_label: Cylindrospermopsis raciborskii AWT205
@@ -305,6 +310,10 @@ discussions:
     upstream cross-reference error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:39Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

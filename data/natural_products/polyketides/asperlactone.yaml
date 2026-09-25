@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001273
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of butenolides that is furan-2(5H)-one substituted
   by (2S,3S)-3-methyloxiran-2-yl and (1S)-1-hydroxyethyl group at positions 3 and
   5R, respectively. It is a secondary metabolite isolated from Aspergillus ochraceus
@@ -22,6 +23,8 @@ np_classification:
   - Cyclic polyketides
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_label: Aspergillus creber
   source: CHEBI
@@ -107,6 +110,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:156698
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:40380
   taxon_label: Aspergillus ochraceus
@@ -151,6 +156,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:34Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -186,6 +186,45 @@ PATHWAY_DIRS = {
     "UNCLASSIFIED": "unclassified",
 }
 
+TAXON_GROUPS = [
+    "ACTINOBACTERIAL",
+    "CYANOBACTERIAL",
+    "MYXOBACTERIAL",
+    "OTHER_BACTERIAL",
+    "ARCHAEAL",
+    "FUNGAL",
+    "DIATOM",
+    "GREEN_ALGAL",
+    "RED_ALGAL",
+    "HAPTOPHYTE",
+    "ALVEOLATE",
+    "OTHER_STRAMENOPILE",
+    "LAND_PLANT",
+    "SPONGE",
+    "CNIDARIAN",
+    "MOLLUSK",
+    "BRYOZOAN",
+    "CHORDATE",
+    "OTHER_ANIMAL",
+    "OTHER_EUKARYOTIC",
+    "OTHER",
+]
+TAXON_GROUP_ORDER = {group: index for index, group in enumerate(TAXON_GROUPS)}
+
+
+def taxon_groups_for(
+    items: list[dict[str, Any]],
+    taxon_groups: dict[str, str],
+) -> list[str]:
+    """Record-level lineage facets derived from nested NCBITaxon ids."""
+    found = {
+        taxon_groups[taxon_id]
+        for item in items
+        if (taxon_id := item.get("taxon_id")) in taxon_groups
+    }
+    return sorted(found, key=lambda group: TAXON_GROUP_ORDER.get(group, len(TAXON_GROUP_ORDER)))
+
+
 def mint_identifier(source: str, source_id: str) -> str:
     """Content-hashed CURIE for one source concept.
 
@@ -544,6 +583,16 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
               "was not intended.", file=sys.stderr)
     withheld_producers: Counter[str] = Counter()
 
+    # Current NCBITaxon CURIE -> broad display group, derived from the NCBI
+    # parent tree in the taxonomy extractor. Missing rows withhold a facet,
+    # never the underlying producer or occurrence claim.
+    taxon_groups = {row["taxon_id"]: row["taxon_group"]
+                    for row in inventories.get("taxon_groups") or []}
+    if not taxon_groups:
+        print("taxon_groups.tsv: ABSENT — producer and occurrence lineage facets "
+              "will be omitted. Run `just extract-taxonomy` first if this was not "
+              "intended.", file=sys.stderr)
+
     # Organism name -> current NCBITaxon CURIE. Built by the taxonomy extractor
     # from names.dmp, which carries only live nodes, so these ids need no
     # merge rewriting — unlike the ones sources supply directly (#63).
@@ -665,6 +714,7 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 "structure_source_id": f"mibig:{lead['mibig_accession']}",
             },
             "np_pathway": pathway,
+            "biosynthesis_origin": "NATURAL_PRODUCT",
         }
         if len(chebi_matches) == 1 and chebi_matches[0]["definition"]:
             doc["definition"] = chebi_matches[0]["definition"]
@@ -908,6 +958,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                     if kept_occurrences[-1].get("notes") else note
                 )
                 deduped = kept_occurrences
+            occurrence_groups = taxon_groups_for(deduped, taxon_groups)
+            if occurrence_groups:
+                doc["occurrence_taxon_groups"] = occurrence_groups
             doc["occurrences"] = deduped
 
         summary_classes: set[str] = set()
@@ -1054,6 +1107,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         if xrefs:
             doc["xrefs"] = xrefs
         if producers:
+            producer_groups = taxon_groups_for(producers, taxon_groups)
+            if producer_groups:
+                doc["producer_taxon_groups"] = producer_groups
             doc["producer_organisms"] = producers
         if clusters:
             doc["biosynthetic_gene_clusters"] = clusters

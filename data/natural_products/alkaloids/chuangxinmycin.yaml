@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001485
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A thiinoindole that is 3,5-dihydro-2H-thiino[4,3,2-cd]indole which is
   substituted at positions 2 and 3 by carboxy and methyl groups, respectively (the
   2R,3S diastereoisomer).
@@ -26,6 +27,8 @@ np_classification:
   class_results:
   - Simple indole alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_label: Actinoplanes tsinanensis
   source: CHEBI
@@ -47,6 +50,8 @@ bioactivity_summary:
 - ANTIBACTERIAL
 bgc_class:
 - OTHER
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:2039464
   taxon_label: Actinoplanes tsinanensis
@@ -93,6 +98,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:48Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000621
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: 'A fourteen-membered heterodetic cyclic peptide consisting of Cys, Cys,
   Glu, Tyr, Cys, Cys, Asn, Pro, Ala, Cys, Thr, Gly, Cys and Tyr residues joined in
   sequence and cyclised by three disulfide bonds: between Cys1 and Cys6, between Cys2
@@ -24,6 +25,8 @@ np_classification:
   class_results:
   - Cyclic peptides
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:562
   taxon_label: Escherichia coli
@@ -86,6 +89,8 @@ bgc_class:
 - RIBOSOMAL
 xrefs:
 - pubchem:16158208
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:562
   taxon_label: Escherichia coli
@@ -132,6 +137,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:49:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:36Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
