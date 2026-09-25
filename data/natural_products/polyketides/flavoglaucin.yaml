@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002234
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -17,6 +18,9 @@ np_classification:
   - Aromatic polyketides
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:121611
   taxon_label: Penicillium dierckxii
@@ -193,6 +197,8 @@ bgc_class:
 xrefs:
 - pubchem:119037
 - npatlas:NPA033320
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:1388766
   taxon_label: Aspergillus ruber CBS 135680
@@ -237,6 +243,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000660
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A carbotricyclic compound that is (+)-epi-isozizaene in which the hydrogens
   at position 5 have been replaced by an oxo group.
 definition_source: CHEBI:51460
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Zizaane sesquiterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1886
   taxon_label: Streptomyces albidoflavus
@@ -255,6 +258,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA017239
 - pubchem:25137938
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:100226
   taxon_label: Streptomyces coelicolor A3(2)
@@ -299,6 +304,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:23Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

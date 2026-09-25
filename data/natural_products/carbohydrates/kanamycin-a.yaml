@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000702
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 synonyms:
 - value: kanamycin
   synonym_type: RELATED_SYNONYM
@@ -24,6 +25,11 @@ np_classification:
   - Amino cyclitols
   - Aminoglycosides
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
+- FUNGAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:104357
   taxon_label: Hohenbuehelia grisea
@@ -310,6 +316,8 @@ bgc_class:
 - SACCHARIDE
 xrefs:
 - pubchem:6032
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1967
   taxon_label: Streptomyces kanamyceticus
@@ -481,6 +489,10 @@ discussions:
     than an upstream cross-reference error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:22Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

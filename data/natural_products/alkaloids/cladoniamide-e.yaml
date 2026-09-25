@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001334
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An organic heteropentacyclic compound that is 7,12-dihydro-6H-pyrido[1,2-a:3,4-b']diindole
   substituted by chloro groups at positions 2 and 9, a hydroxy group and an N-methyl
   carbamyl group at position 6, a methoxy group at position 13, and an oxo group at
@@ -24,6 +25,8 @@ np_classification:
   class_results:
   - Carbazole alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1048205
   taxon_label: Streptomyces uncialis
@@ -52,6 +55,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA02270
 - pubchem:25053149
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1048205
   taxon_label: Streptomyces uncialis
@@ -100,6 +105,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:53Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

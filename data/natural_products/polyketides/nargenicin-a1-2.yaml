@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001875
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -62,6 +63,10 @@ discussions:
     honest state. Name the producer if the primary literature does.'
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:51Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

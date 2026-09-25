@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002675
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of tripyrroles that is a red-coloured pigment with
   antibiotic properties produced by Serratia marcescens.
 definition_source: CHEBI:82758
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Prodigiosins
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:562
   taxon_label: Escherichia coli
@@ -82,6 +85,8 @@ bgc_class:
 - PKS
 compound_classes:
 - Proline-derived
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:43658
   taxon_label: Pseudoalteromonas rubra
@@ -130,6 +135,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:25Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

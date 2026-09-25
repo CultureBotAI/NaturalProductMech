@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000820
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +19,10 @@ np_classification:
   class_results:
   - Pyrroloindole alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- FUNGAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -340,6 +345,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA06965
 - pubchem:5983
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:146922
   taxon_label: Streptomyces griseofuscus
@@ -492,3 +499,7 @@ curation_history:
     and DOI:10.1016/j.bioorg.2016.07.005 via exact BindingDB-deposited PubChem BioAssay
     rows for PMID 26451651 and PMID 27441832.
   llm_assisted: true
+- timestamp: '2026-09-25T03:03:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

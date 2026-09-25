@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002219
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A cembrane diterpenoid obtained by regio- and stereoselective hydration
   of the exocyclic double bond of cembrene C.
 definition_source: CHEBI:82799
@@ -25,6 +26,9 @@ np_classification:
   class_results:
   - Cembrane diterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- LAND_PLANT
+- CNIDARIAN
 occurrences:
 - taxon_id: NCBITaxon:205097
   taxon_label: Sarcophyton trocheliophorum
@@ -94,6 +98,8 @@ bgc_class:
 - TERPENE
 xrefs:
 - pubchem:6443020
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:721885
   taxon_label: Stereum hirsutum FP-91666 SS1
@@ -141,6 +147,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:57Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

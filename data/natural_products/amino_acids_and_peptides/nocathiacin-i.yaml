@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000608
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +19,8 @@ np_classification:
   class_results:
   - RiPPs-Thiopeptides
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1817
   taxon_label: Nocardia
@@ -45,6 +48,8 @@ bgc_class:
 - RIBOSOMAL
 xrefs:
 - npatlas:NPA016398
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1816
   taxon_label: Actinokineospora fastidiosa
@@ -86,6 +91,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:54Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

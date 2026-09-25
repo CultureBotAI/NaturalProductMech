@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002567
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 synonyms:
 - value: Ethylenediaminesuccinic acid hydroxyarginine
   synonym_type: RELATED_SYNONYM
@@ -29,6 +30,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:124628
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:2083010
   taxon_label: Streptomyces sp. MA5143a
@@ -148,6 +151,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:31Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

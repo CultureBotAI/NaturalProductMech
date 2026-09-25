@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002669
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 synonyms:
 - value: TVA-YJ-2
   synonym_type: RELATED_SYNONYM
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Cyclic peptides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:92644
   taxon_label: Streptomyces malaysiensis
@@ -71,6 +74,8 @@ bgc_class:
 - RIBOSOMAL
 xrefs:
 - npatlas:NPA019832
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1463920
   taxon_label: Streptomyces sp. NRRL S-87
@@ -153,6 +158,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:57Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

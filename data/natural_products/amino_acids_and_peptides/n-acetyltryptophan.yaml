@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001679
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An N-acetylamino acid that is the N-acetyl derivative of tryptophan.
 definition_source: CHEBI:70976
 synonyms:
@@ -24,6 +25,10 @@ np_classification:
   class_results:
   - Dipeptides
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
+- FUNGAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:1408
   taxon_label: Bacillus pumilus
@@ -86,6 +91,8 @@ bgc_class:
 - NRPS
 xrefs:
 - npatlas:NPA015473
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:227321
   taxon_label: Aspergillus nidulans FGSC A4
@@ -136,6 +143,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T07:37:49Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:52Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

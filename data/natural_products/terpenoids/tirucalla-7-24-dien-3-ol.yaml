@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001314
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A tirucallane triterpenoid that is tirucalla-7,24-diene substituted by
   a β-hydroxy group at position 3.
 definition_source: CHEBI:63468
@@ -25,6 +26,8 @@ np_classification:
   class_results:
   - Lanostane, Tirucallane and Euphane triterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:1679374
   taxon_label: Dysoxylum lenticellatum
@@ -91,6 +94,8 @@ bgc_class:
 - TERPENE
 xrefs:
 - pubchem:12302184
+producer_taxon_groups:
+- LAND_PLANT
 producer_organisms:
 - taxon_id: NCBITaxon:3702
   taxon_label: Arabidopsis thaliana
@@ -135,6 +140,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

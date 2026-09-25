@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002132
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 synonyms:
 - value: methanobactin
   synonym_type: RELATED_SYNONYM
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Cyclic peptides
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:426
   taxon_label: Methylosinus trichosporium
@@ -38,6 +41,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA033449
 - pubchem:135659045
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:136993
   taxon_label: Methylosinus sp. LW4
@@ -155,6 +160,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:47Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

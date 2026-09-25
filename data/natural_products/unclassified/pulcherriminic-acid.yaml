@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002321
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A pyrazine N-oxide that is pyrazine-1,4-dioxide substituted at positions
   2 and 5 by hydroxy groups and at positions 3 and 6 by isobutyl groups. Formed by
   oxidative aromatisation of cyclo(L-leucyl-L-leucyl).
@@ -24,6 +25,9 @@ np_classification:
   class_results:
   - Pyrazine and Piperazine alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:27326
   taxon_label: Metschnikowia pulcherrima
@@ -49,6 +53,9 @@ bgc_class:
 - OTHER
 xrefs:
 - npatlas:NPA012181
+producer_taxon_groups:
+- OTHER_BACTERIAL
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:2163413
   taxon_label: Metschnikowia aff. pulcherrima
@@ -140,6 +147,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:42Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

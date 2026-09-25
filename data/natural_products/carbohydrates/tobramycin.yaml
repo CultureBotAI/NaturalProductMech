@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000719
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A amino cyclitol glycoside that is kanamycin B lacking the 3-hydroxy substituent
   from the 2,6-diaminoglucose ring.
 definition_source: CHEBI:28864
@@ -23,6 +24,10 @@ np_classification:
   - Amino cyclitols
   - Aminoglycosides
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:66881
   taxon_label: Streptomyces cremeus
@@ -276,6 +281,8 @@ bgc_class:
 - SACCHARIDE
 xrefs:
 - pubchem:36294
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:2017
   taxon_label: Streptoalloteichus hindustanus
@@ -389,6 +396,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:53Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

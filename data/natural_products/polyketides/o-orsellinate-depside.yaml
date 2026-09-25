@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002596
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 synonyms:
 - value: lecanoric acid
   synonym_type: RELATED_SYNONYM
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Depsides
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:116793
   taxon_label: Dimelaena oreina
@@ -280,6 +283,8 @@ bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA021170
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:1111077
   taxon_label: Claviceps purpurea 20.1
@@ -331,6 +336,10 @@ discussions:
     then one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:06Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

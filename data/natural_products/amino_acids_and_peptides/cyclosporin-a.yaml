@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000334
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A cyclic nonribosomal peptide of eleven amino acids; an immunosuppressant
   drug widely used in post-allogeneic organ transplant to reduce the activity of the
   patient's immune system, and therefore the risk of organ rejection. Also causes
@@ -25,6 +26,8 @@ np_classification:
   - Cyclic peptides
   - Peptaibols
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:40695
   taxon_label: Trichoderma polysporum
@@ -285,6 +288,8 @@ bgc_class:
 - NRPS
 xrefs:
 - pubchem:5284373
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:29910
   taxon_label: Tolypocladium inflatum NRRL 8044
@@ -335,6 +340,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:06Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

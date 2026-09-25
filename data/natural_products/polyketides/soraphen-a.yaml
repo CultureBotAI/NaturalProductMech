@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000147
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A macrolide and an agent highly effective against plant-pathogenic fungi.
   It was extensively researched for agricultural use until it was discovered to be
   a teratogen.
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Macrolide lactones
   is_glycoside: true
+occurrence_taxon_groups:
+- MYXOBACTERIAL
 occurrences:
 - taxon_label: Sorangium cellulosum So ce56
   source: CHEBI
@@ -141,6 +144,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:5281897
+producer_taxon_groups:
+- MYXOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:56
   taxon_label: Sorangium cellulosum
@@ -237,3 +242,7 @@ curation_history:
     carboxylase domain, grounded PubChem target 3JRX_A to UniProtKB:O00763 via PDBe,
     and cited the exact S1A-bound PDB 3JRX structure.
   llm_assisted: true
+- timestamp: '2026-09-25T03:03:40Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

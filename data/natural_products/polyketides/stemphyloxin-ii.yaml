@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002165
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A carbotricyclic compound that is betaenone A in which the butan-2-yl
   side-chain has been hydroxylated at position 1. A phytotoxin isolated from the endophytic
   fungus Stemphylium botryosum, it shows high affinity for ferric (but not ferrous)
@@ -23,6 +24,8 @@ np_classification:
   class_results:
   - Decalins with side chains
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:120510
   taxon_label: Stemphylium botryosum
@@ -39,6 +42,8 @@ bgc_class:
 xrefs:
 - pubchem:139291705
 - npatlas:NPA032776
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:321614
   taxon_label: Parastagonospora nodorum SN15
@@ -83,6 +88,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:28Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

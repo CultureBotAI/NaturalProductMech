@@ -37,8 +37,8 @@ upstream:
     bytes: 3689880
   taxdump.tar.gz:
     url: https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz
-    sha256: 492e71dcc66599b8c20113789f1418b278ef3da2fa3041dc04d343dfc3b1c13d
-    bytes: 79086589
+    sha256: 3626b5dc4579e3d6d50cd805142758a5be049e428bbeceb2161fd0f8f5e312c9
+    bytes: 79611986
 inventories:
   mibig_compounds.tsv:
     rows: 3449
@@ -81,9 +81,9 @@ inventories:
     sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
     source: CyanoMetDB v03, Zenodo 13854577 (CC BY 4.0)
   taxon_names.tsv:
-    rows: 5365
-    bytes: 311849
-    sha256: 0a4b0d571f3dfec25e9e0d3e7db8f5942276291d84b77cf148d93a5c594357e5
+    rows: 5626
+    bytes: 327572
+    sha256: 9058b9a99260eb483ea21ce7cc9713fd336177031d883f0b5fb50325c7b2c371
     source: NCBI Taxonomy taxdump, names.dmp (public domain)
   pubchem_bioassay.tsv:
     rows: 11458
@@ -91,9 +91,9 @@ inventories:
     sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
     source: PubChem BioAssay via PUG REST, CIDs cross-referenced by the corpus
   taxon_merged.tsv:
-    rows: 555
-    bytes: 23892
-    sha256: 02349760c9ae59aa28b41831e3fd54cba70063d48bd5f0002b3b94c24ff176ab
+    rows: 556
+    bytes: 23932
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
     source: NCBI Taxonomy taxdump, merged.dmp (public domain)
   taxon_non_organism.tsv:
     rows: 7
@@ -101,9 +101,14 @@ inventories:
     sha256: f2c1ee257bbbcb0854528196ab1f809d658c27f1c7b2036f7f71f088b52935bb
     source: NCBI Taxonomy taxdump, nodes.dmp + names.dmp (public domain)
   corpus_taxa.obo:
-    rows: 36024
-    bytes: 2990001
-    sha256: 253161e4b014c4ac838d5ef8f3234e694f40f3bb67329e8f26006028de022c78
+    rows: 36278
+    bytes: 3008942
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
     source: NCBI Taxonomy taxdump, names.dmp (public domain); the id-label gate's
       adapter
-retrieved_on: '2026-09-10'
+  taxon_groups.tsv:
+    rows: 36278
+    bytes: 1015721
+    sha256: f73f228d57d79a1d85a1441efa6829917b1ffecac08cb7bdd4fc855046255f8f
+    source: NCBI Taxonomy taxdump, nodes.dmp (public domain)
+retrieved_on: '2026-09-24'

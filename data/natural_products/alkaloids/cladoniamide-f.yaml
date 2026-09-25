@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001334
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An organic heteropentacyclic compound that is cladoniamide G in which
   the chlorine attached to the methoxy-bearing indole moiety is replaced by a hydrogen.
   It has been isolated from the culture broth of Streptomyces uncialis.
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Carbazole alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1048205
   taxon_label: Streptomyces uncialis
@@ -50,6 +53,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA012664
 - pubchem:25053218
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1048205
   taxon_label: Streptomyces uncialis
@@ -98,6 +103,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:32Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001160
 np_pathway: FATTY_ACIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An unbranched nineteen-carbon alkene with one double bond between C-1
   and C-2.
 definition_source: CHEBI:64503
@@ -25,6 +26,9 @@ np_classification:
   class_results:
   - Hydrocarbons
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:128002
   taxon_label: Tanacetum vulgare
@@ -120,6 +124,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:29075
+producer_taxon_groups:
+- CYANOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:32049
   taxon_label: Synechococcus sp. PCC 7002
@@ -176,6 +182,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:52Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001830
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of 2-pyranones that is 2H-pyran-2-one in which the
   hydrogens at positions 3, 4, 5 and 6 are replaced by methyl, hydroxy, methyl and
   (1E,3E,5S,6R)-6-hydroxy-3,5-dimethylocta-1,3-dienyl groups, respectively. It is
@@ -23,6 +24,8 @@ np_classification:
   class_results:
   - Open-chain polyketides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:351187
   taxon_label: Salinispora pacifica
@@ -51,6 +54,8 @@ bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA013843
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:351187
   taxon_label: Salinispora pacifica
@@ -93,6 +98,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:56Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

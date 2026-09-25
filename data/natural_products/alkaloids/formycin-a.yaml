@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002282
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -17,6 +18,8 @@ np_classification:
   - Pseudoalkaloids
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:67365
   taxon_label: Streptomyces sparsogenes
@@ -99,6 +102,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:447199
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:212423
   taxon_label: Streptomyces kaniharaensis
@@ -226,6 +231,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:49:55Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:30Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

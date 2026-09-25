@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001997
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An eremophilane sesquiterpenoid that is (+)-5-epi-aristolochene bearing
   additional 1β- and 3α-hydroxy substituents. It is a phytoalexin produced in Nicotiana
   and Capsicum plant species in response to pathogen attack.
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Eremophilane sesquiterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:118697
   taxon_label: Nicotiana fragrans
@@ -293,6 +296,8 @@ bgc_class:
 - TERPENE
 xrefs:
 - pubchem:161937
+producer_taxon_groups:
+- LAND_PLANT
 producer_organisms:
 - taxon_id: NCBITaxon:4097
   taxon_label: Nicotiana tabacum
@@ -337,6 +342,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:40Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

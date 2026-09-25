@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002165
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An octahydronaphthalene that is stemphyloxin I in which the C=C bond of
   the enol moiety has been reduced to a C‒C bond.
 definition_source: CHEBI:145071
@@ -27,6 +28,8 @@ np_classification:
   is_glycoside: false
 bgc_class:
 - PKS
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:321614
   taxon_label: Parastagonospora nodorum SN15
@@ -78,6 +81,10 @@ discussions:
     then one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:32Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

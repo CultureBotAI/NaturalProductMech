@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002035
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An aromatic ketone in which the ketone carbonyl group is attached to a
   (1R,2R,4aS,7S,8aR)-4,7-dimethyl-1-[(1E)-prop-1-en-1-yl]-1,2,4a,5,6,7,8,8a-octahydronaphthalen-2-yl
   group and a 4-hydroxy-5-(4-hydroxyphenyl)-2-oxo-1,2-dihydropyridin-3-yl group. Isolated
@@ -23,6 +24,8 @@ np_classification:
   class_results:
   - Pyridine alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:57139
   taxon_label: Calonectria pyrochroa
@@ -188,6 +191,8 @@ bgc_class:
 xrefs:
 - pubchem:54704283
 - npatlas:NPA013324
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:1735992
   taxon_label: Neonectria sp. DH2
@@ -285,6 +290,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:49:36Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:40Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

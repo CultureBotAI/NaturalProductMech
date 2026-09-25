@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000405
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: Conjugate base of N-[(5S)-5-amino-5-carboxypentanoyl]-L-cysteinyl-D-valine.
 definition_source: CHEBI:58572
 synonyms:
@@ -26,6 +27,8 @@ np_classification:
   is_glycoside: false
 bgc_class:
 - NRPS
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:5076
   taxon_label: Penicillium chrysogenum
@@ -78,6 +81,10 @@ discussions:
     has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:40Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

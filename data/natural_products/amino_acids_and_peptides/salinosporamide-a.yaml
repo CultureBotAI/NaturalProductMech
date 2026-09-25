@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000145
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A salinosporamide in which the core (1R)-6-oxa-2-azabicyclo[3.2.0]heptane-3,7-dione
   skeleton is substituted at positions 1, 4, and 5 by (1S)-cyclohex-2-en-1-yl(hydroxy)methyl,
   2-chloroethyl, and methyl groups, respectively (the 1R,4R,5S diastereoisomer). A
@@ -24,6 +25,8 @@ np_classification:
   class_results:
   - Salinosporamides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:168694
   taxon_label: Salinispora
@@ -100,6 +103,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA011013
 - pubchem:11695330
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:168695
   taxon_label: Salinispora tropica
@@ -190,6 +195,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:52Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

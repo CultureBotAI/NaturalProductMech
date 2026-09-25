@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001757
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An isocyanide that is the 4-acetamido-4,6-dideoxy-β-L-galactopyranoside
   of p-[(E)-2-isocyanovinyl]phenol. Produced by the gram-negative insect pathogens,
   Xenorhabdus nematophila and Photorhabdus luminescens, it is a potent nanomolar-level
@@ -20,6 +21,8 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: true
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_label: Photorhabdus luminescens
   source: CHEBI
@@ -41,6 +44,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:102453304
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:406817
   taxon_label: Xenorhabdus nematophila ATCC 19061
@@ -85,6 +90,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:40Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

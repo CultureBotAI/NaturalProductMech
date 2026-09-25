@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000091
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A macrocycle isolated from a marine sediment-derived actinomycete, Streptomyces
   sp. It exhibits cytotoxicity against colon tumour cell lines.
 definition_source: CHEBI:66676
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Prodigiosins
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -44,6 +47,8 @@ bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA013913
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:483421
   taxon_label: Streptomyces sp. CNQ-617
@@ -86,6 +91,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:27Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

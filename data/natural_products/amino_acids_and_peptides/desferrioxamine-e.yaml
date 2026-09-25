@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000940
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A cyclic hydroxamic acid siderophore that is produced by several bacterial
   species and exhibits antitumour activity.
 definition_source: CHEBI:50437
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Cyclic peptides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:141454
   taxon_label: Streptomyces wadayamensis
@@ -553,6 +556,9 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:161532
+producer_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:100226
   taxon_label: Streptomyces coelicolor A3(2)
@@ -672,6 +678,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:01Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:52Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002167
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of piperazines that is piperazine in which the pro-S
   hydrogens at positions 2 and 5 have each been replaced by a p-hydroxybenzyl group.
 definition_source: CHEBI:145895
@@ -27,6 +28,8 @@ np_classification:
   is_glycoside: false
 bgc_class:
 - NRPS
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:332952
   taxon_label: Aspergillus flavus NRRL3357
@@ -79,6 +82,10 @@ discussions:
     Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:42Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001161
 np_pathway: FATTY_ACIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An unbranched seventeen-carbon alkene with one double bond between C-1
   and C-2. It is produced by the Carrion beetles.
 definition_source: CHEBI:64502
@@ -21,6 +22,10 @@ np_classification:
   class_results:
   - Hydrocarbons
   is_glycoside: false
+occurrence_taxon_groups:
+- CYANOBACTERIAL
+- LAND_PLANT
+- OTHER_ANIMAL
 occurrences:
 - taxon_id: NCBITaxon:1091245
   taxon_label: Dryopteris assimilis
@@ -279,6 +284,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:23217
+producer_taxon_groups:
+- CYANOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:568701
   taxon_label: Moorea bouillonii PNG
@@ -426,6 +433,10 @@ discussions:
     upstream cross-reference error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:23Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000238
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An organic heterohexacyclic compound isolated from the culture broth of
   Streptomyces rishiriensis. It is an antibiotic with antibacterial activity.
 definition_source: CHEBI:66553
@@ -24,6 +25,8 @@ np_classification:
   - Anthraquinones and anthrones
   - Isoindole alkaloids
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:68264
   taxon_label: Streptomyces rishiriensis
@@ -85,6 +88,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA011917
 - pubchem:3075475
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:68264
   taxon_label: Streptomyces rishiriensis
@@ -127,6 +132,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:44Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

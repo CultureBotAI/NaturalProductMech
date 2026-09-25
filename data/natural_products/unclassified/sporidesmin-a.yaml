@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002438
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An organic heteropentacyclic compound that has formula C18H20ClN3O6S2,
   produced by the saprophyte fungus Pithomyces chartarum. It is a mycotoxin responsible
   for the hepatogenous photosensitisation disease facial eczema in ruminants.
@@ -23,6 +24,8 @@ np_classification:
   class_results:
   - Indole diketopiperazine alkaloids (L-Trp, L-Ala)
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_label: Delitschia sp.
   source: CHEBI
@@ -88,6 +91,8 @@ bgc_class:
 - OTHER
 xrefs:
 - npatlas:NPA032651
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:1892770
   taxon_label: Pithomyces chartarum
@@ -132,6 +137,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

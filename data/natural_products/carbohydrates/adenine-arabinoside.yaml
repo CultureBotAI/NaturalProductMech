@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001735
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A purine nucleoside in which adenine is attached to arabinofuranose via
   a β-N9-glycosidic bond.
 definition_source: CHEBI:45327
@@ -25,6 +26,10 @@ np_classification:
   class_results:
   - Purine nucleos(t)ides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- LAND_PLANT
+- CNIDARIAN
 occurrences:
 - taxon_id: NCBITaxon:317547
   taxon_label: Eunicella cavolini
@@ -100,6 +105,8 @@ bioactivity_summary:
 - ANTIMICROBIAL_UNSPECIFIED
 bgc_class:
 - OTHER
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1890
   taxon_label: Streptomyces antibioticus
@@ -149,6 +156,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:59Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

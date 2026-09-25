@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002494
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A catecholate siderophore produced exclusively by Vibrio cholerae. It
   contains three molecules of 2,3-dihydroxybenzoate linked either directly or through
   L-threonine residues to the polyamine norspermidine.
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Polyamines
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:666
   taxon_label: Vibrio cholerae
@@ -39,6 +42,8 @@ bgc_class:
 - NRPS
 xrefs:
 - npatlas:NPA033096
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:666
   taxon_label: Vibrio cholerae
@@ -84,6 +89,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:39Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

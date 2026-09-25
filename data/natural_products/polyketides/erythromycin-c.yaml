@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000055
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An erythromycin that consists of erythronolide A having 2,6-dideoxy-3-C-methyl-α-L-ribo-hexopyranosyl
   and 3,4,6-trideoxy-3-(dimethylamino)-β-D-xylo-hexopyranosyl residues attahced at
   positions 4 and 6 respectively.
@@ -36,6 +37,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA09987
 - pubchem:441095
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:405948
   taxon_label: Saccharopolyspora erythraea NRRL 2338
@@ -88,6 +91,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:49Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000922
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A quinolone consisting of quinolin-4(1H)-one carrying a heptyl substituent
   at position 2 and a hydroxy group at position 3.
 definition_source: CHEBI:29472
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Quinoline alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:287
   taxon_label: Pseudomonas aeruginosa
@@ -49,6 +52,8 @@ compound_classes:
 - Anthranilic acid-derived
 xrefs:
 - npatlas:NPA019649
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:208964
   taxon_label: Pseudomonas aeruginosa PAO1
@@ -95,6 +100,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:41Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

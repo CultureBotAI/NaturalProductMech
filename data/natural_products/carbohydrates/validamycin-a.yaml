@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000701
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of validamycins that is (1R,2S,3S,4S,6R)-4-amino-6-(hydroxymethyl)cyclohexane-1,2,3-triol
   in which the hydroxy group at position 1 has been converted to its β-D-glucoside
   and in which one of the hydrogens attached to the nitrogen is replaced by a (1R,4R,5R,6S)-4,5,6-trihydroxy-3-(hydroxymethyl)cyclohex-2-en-1-yl
@@ -27,6 +28,8 @@ np_classification:
   class_results:
   - Amino cyclitols
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1912
   taxon_label: Streptomyces hygroscopicus
@@ -276,6 +279,8 @@ bgc_class:
 - SACCHARIDE
 xrefs:
 - pubchem:443629
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:228732
   taxon_label: Streptomyces hygroscopicus subsp. yingchengensis
@@ -325,6 +330,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:22Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

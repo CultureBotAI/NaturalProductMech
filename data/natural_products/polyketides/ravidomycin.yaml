@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000263
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A C-glycosylated naphthoisochromene derivative obtained from Streptomyces
   ravidus; exhibits antibiotic and anticancer properties.
 definition_source: CHEBI:84037
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Angucyclines
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:691266
   taxon_label: Streptomyces ravidus
@@ -104,6 +107,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:126647
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:691266
   taxon_label: Streptomyces ravidus
@@ -146,6 +151,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:01Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

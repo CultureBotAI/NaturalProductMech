@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002502
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A fumonisin that is (2S,3S,12S,14S,15R,16R)-2-amino-12,16-dimethylicosane-3,14,15-triol
   in which the hydroxy groups at positions 14 and 15 have each been esterified by
   condensation with the 1-carboxy group of 3-carboxyglutaric acid (giving a 3-carboxyglutarate
@@ -27,6 +28,9 @@ np_classification:
   class_results:
   - Open-chain polyketides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -75,6 +79,8 @@ compound_classes:
 - Linear polyketide
 xrefs:
 - npatlas:NPA006013
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:5127
   taxon_label: Fusarium fujikuroi
@@ -163,6 +169,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:32Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

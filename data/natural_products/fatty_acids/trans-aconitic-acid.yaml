@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001809
 np_pathway: FATTY_ACIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: The trans-isomer of aconitic acid.
 definition_source: CHEBI:32806
 np_classification:
@@ -20,6 +21,10 @@ np_classification:
   class_results:
   - Dicarboxylic acids
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
+- LAND_PLANT
+- OTHER_ANIMAL
 occurrences:
 - taxon_id: NCBITaxon:1045222
   taxon_label: Aconitum barbatum
@@ -457,6 +462,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:444212
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:541229
   taxon_label: Bacillus thuringiensis serovar chinensis CT-43
@@ -505,6 +512,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:49:44Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:03Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

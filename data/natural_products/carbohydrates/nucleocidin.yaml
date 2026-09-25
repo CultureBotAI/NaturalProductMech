@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001387
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A nucleoside antibiotic that is 5'-O-sulfamoyladenosine in which the hydrogen
   atom at position 4' is replaced by a fluorine atom. It is a natural product synthesized
   by several Streptomyces species. It exhibits broad spectrum antibacterial activity,
@@ -24,6 +25,8 @@ np_classification:
   class_results:
   - Purine nucleos(t)ides
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -161,6 +164,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA011799
 - pubchem:72299
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:67282
   taxon_label: Streptomyces calvus
@@ -203,6 +208,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:41Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

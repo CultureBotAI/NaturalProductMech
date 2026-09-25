@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002270
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An indolizidine alkaloid isolated from the plant Swainsona canescens with
   three hydroxy substituents at positions 1, 2 and 8.
 definition_source: CHEBI:9367
@@ -21,6 +22,9 @@ np_classification:
   class_results:
   - Indolizidine alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:1541393
   taxon_label: Slafractonia leguminicola
@@ -374,6 +378,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:51683
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:655844
   taxon_label: Metarhizium robertsii ARSEF 23
@@ -535,3 +541,7 @@ curation_history:
     cited DOI:10.1002/cbic.200900750 via the BindingDB-deposited PMID 20209559 measurement
     in PubChem BioAssay AID 1799635.
   llm_assisted: true
+- timestamp: '2026-09-25T03:01:58Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001345
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of benzamides obtained by formal condensation of
   the 1- and 6-amino groups of hexane-1,2,6-triamine with the carboxy groups from
   two molecules of 2,3-dihydroxybenzoic acid followed by reduction of the amide carbonyl
@@ -27,6 +28,8 @@ bgc_class:
 - NRPS
 xrefs:
 - pubchem:10873133
+producer_taxon_groups:
+- MYXOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:675526
   taxon_label: Stigmatella aurantiaca Sg a15
@@ -69,6 +72,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:13Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

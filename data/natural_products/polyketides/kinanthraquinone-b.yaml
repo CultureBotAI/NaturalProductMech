@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002383
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A monohydroxyanthraquinone that is anthraquinone in which the hydrogen
   atoms at positions 1, 2, 5 and 6 are replaced hydroxy, 3-methylbut-3-enoic acid,
   methoxy and methoxy groups, respectively. It is a natural product isolated from
@@ -23,6 +24,8 @@ np_classification:
   class_results:
   - Anthraquinones and anthrones
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -48,6 +51,8 @@ bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA033065
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:659352
   taxon_label: Streptomyces sp. SN-593
@@ -95,6 +100,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:27Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

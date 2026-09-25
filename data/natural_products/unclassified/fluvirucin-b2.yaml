@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001597
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -19,6 +20,8 @@ np_classification:
   class_results:
   - Macrolide lactams
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1654
   taxon_label: Actinomyces
@@ -34,6 +37,8 @@ bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA017782
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1752060
   taxon_label: Actinomadura fulva subsp. indica
@@ -73,6 +78,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:20Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

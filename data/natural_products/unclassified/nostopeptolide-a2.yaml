@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001028
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -20,6 +21,8 @@ np_classification:
   - Cyclic peptides
   - Depsipeptides
   is_glycoside: false
+occurrence_taxon_groups:
+- CYANOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:102234
   taxon_label: Cyanobacterium
@@ -46,6 +49,8 @@ bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA015196
+producer_taxon_groups:
+- CYANOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:76334
   taxon_label: Nostoc sp. GSV224
@@ -88,6 +93,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:28Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

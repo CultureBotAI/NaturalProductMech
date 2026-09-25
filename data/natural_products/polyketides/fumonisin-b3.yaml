@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002502
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 synonyms:
 - value: fumonisin B3
   synonym_type: RELATED_SYNONYM
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Open-chain polyketides
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:5127
   taxon_label: Fusarium fujikuroi
@@ -53,6 +56,8 @@ compound_classes:
 - Linear polyketide
 xrefs:
 - npatlas:NPA008490
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:5127
   taxon_label: Fusarium fujikuroi
@@ -138,6 +143,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:42Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000708
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of lividomycins that is lividomycin B in which position
   4 of the diamino-L-idopyranosyl moiety has been converted into its α-D-mannopyranoside.
 definition_source: CHEBI:71961
@@ -27,6 +28,8 @@ np_classification:
   - Amino cyclitols
   - Aminoglycosides
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:282216
   taxon_label: Streptomyces lividus
@@ -59,6 +62,8 @@ bgc_class:
 - SACCHARIDE
 xrefs:
 - pubchem:72394
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:282216
   taxon_label: Streptomyces lividus
@@ -101,6 +106,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:45Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

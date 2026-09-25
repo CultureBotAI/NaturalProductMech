@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000217
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A natural product found in Actinomadura roseola.
 definition_source: CHEBI:41977
 np_classification:
@@ -20,6 +21,8 @@ np_classification:
   class_results:
   - Anthracyclines
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:116188
   taxon_label: Streptomyces coeruleorubidus
@@ -512,6 +515,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:30323
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1931
   taxon_label: Streptomyces sp.
@@ -635,3 +640,7 @@ curation_history:
     because the source measured PfUDN activity inhibition rather than direct compound-protein
     binding.
   llm_assisted: true
+- timestamp: '2026-09-25T03:03:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

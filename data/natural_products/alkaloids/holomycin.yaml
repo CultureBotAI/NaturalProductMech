@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002091
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A dithiolopyrrolone antibiotic that is 4,5-dihydro[1,2]dithiolo[4,3-b]pyrrole
   in which the hydrogens at positions 5 and 6 have been replaced by oxo and acetamido
   groups, respectively. It is an inhibitor of DNA-dependent RNA polymerase, and exhibits
@@ -21,6 +22,9 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
 occurrences:
 - taxon_label: Saccharothrix algeriensis
   source: CHEBI
@@ -319,6 +323,9 @@ xrefs:
 - npatlas:NPA013565
 - pubchem:10262683
 - chembl:CHEMBL476226
+producer_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:527005
   taxon_label: Yersinia ruckeri ATCC 29473
@@ -441,6 +448,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:05Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

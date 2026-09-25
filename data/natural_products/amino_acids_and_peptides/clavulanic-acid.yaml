@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000845
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: Antibiotic isolated from Streptomyces clavuligerus. It acts as a suicide
   inhibitor of bacterial β-lactamase enzymes.
 definition_source: CHEBI:48947
@@ -23,6 +24,8 @@ np_classification:
   - Aminoacids
   - Clavams
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:29303
   taxon_label: Streptomyces cattleya
@@ -337,6 +340,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:5280980
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1901
   taxon_label: Streptomyces clavuligerus ATCC 27064
@@ -385,6 +390,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

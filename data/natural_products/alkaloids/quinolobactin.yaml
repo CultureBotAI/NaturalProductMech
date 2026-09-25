@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000925
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A quinolinemonocarboxylic acid that is xanthurenic acid in which the hydroxy
   group at position 4 is replaced by a methoxy group. It is a siderophore isolated
   from Pseudomonas fluorescens ATCC 17400.
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Quinoline alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:294
   taxon_label: Pseudomonas fluorescens
@@ -74,6 +77,8 @@ bgc_class:
 - OTHER
 xrefs:
 - npatlas:NPA017785
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:294
   taxon_label: Pseudomonas fluorescens
@@ -116,6 +121,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:33Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001067
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A meroterpenoid resulting from the formal condensation of the hydroxy
   group of fumagillol with the carboxylic acid group of (all-E)-deca-2,4,6,8-tetraenedioic
   acid. Originally isolated from the fungus Aspergillus fumigatus, it is used for
@@ -25,6 +26,8 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:33178
   taxon_label: Aspergillus terreus
@@ -83,6 +86,8 @@ compound_classes:
 - Sesquiterpenoid
 xrefs:
 - npatlas:NPA010119
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:330879
   taxon_label: Aspergillus fumigatus Af293
@@ -135,6 +140,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:51Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

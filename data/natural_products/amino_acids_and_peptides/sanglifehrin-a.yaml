@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001042
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -17,6 +18,8 @@ np_classification:
   - Macrolides
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -68,6 +71,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA014131
 - pubchem:5388925
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:67297
   taxon_label: Streptomyces flaveolus
@@ -159,3 +164,7 @@ curation_history:
     for PDB 1YND_A; and cited the PubChem/PDB affinity row through DOI:10.1074/jbc.M501623200
     and DOI:10.2210/pdb1ynd/pdb.
   llm_assisted: true
+- timestamp: '2026-09-25T03:03:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

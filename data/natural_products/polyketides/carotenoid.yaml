@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000214
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 synonyms:
 - value: cosmomycin B
   synonym_type: RELATED_SYNONYM
@@ -22,6 +23,9 @@ np_classification:
   class_results:
   - Anthracyclines
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -113,6 +117,9 @@ bgc_class:
 xrefs:
 - npatlas:NPA013316
 - pubchem:156935
+producer_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:358823
   taxon_label: Streptomyces olindensis
@@ -190,6 +197,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:50Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001296
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of cyclopentapyridines that is 2,3,4,5-tetrahydro-1H-cyclopenta[b]pyridine
   substituted by an oxo group at position 4 and by a (2E)-but-2-en-1-ylidene group
   at position 5. It is a polyketide natural product found in Streptomyces sp.
@@ -22,6 +23,8 @@ np_classification:
   class_results:
   - Piperidine alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_label: Streptomyces sp. NEAU-Z4
   source: CHEBI
@@ -65,6 +68,8 @@ bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA05197
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1670457
   taxon_label: Streptomyces sp. MSC090213JE08
@@ -107,6 +112,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000057
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A dihydroxybenzoic acid that is 2,4-dihydroxybenzoic acid in which the
   hydrogen at position 6 is replaced by a methyl group.
 definition_source: CHEBI:32807
@@ -28,6 +29,9 @@ np_classification:
   class_results:
   - Simple phenolic acids
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:1081941
   taxon_label: Nidularia pulvinata
@@ -306,6 +310,8 @@ xrefs:
 - pubchem:68072
 - npatlas:NPA024876
 - chembl:CHEMBL457583
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:227321
   taxon_label: Aspergillus nidulans FGSC A4
@@ -513,6 +519,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:49:33Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:27Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

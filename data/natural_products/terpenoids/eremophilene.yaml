@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001201
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the classs of octahydronaphthalenes and a sesquiterpene that
   is 1,2,3,4,4a,5,6,7-octahydronaphthalene which is substituted by an isopropenyl
   group at position 3 and by methyl groups at positions 4a and 5 (the 3S,4aS,5R- diastereoisomer).
@@ -26,6 +27,9 @@ np_classification:
   class_results:
   - Eremophilane sesquiterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- MYXOBACTERIAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:130206
   taxon_label: Picea glehnii
@@ -71,6 +75,8 @@ bgc_class:
 - TERPENE
 xrefs:
 - npatlas:NPA09636
+producer_taxon_groups:
+- MYXOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:448385
   taxon_label: Sorangium cellulosum So ce56
@@ -115,6 +121,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

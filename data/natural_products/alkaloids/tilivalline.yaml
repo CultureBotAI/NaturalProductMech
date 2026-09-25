@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000446
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A pyrrolobenzodiazepine that is (11aS)-2,3,5,10,11,11a-hexahydro-1H-pyrrolo[2,1-c][1,4]benzodiazepine
   substituted by an oxo group at position 5, by a hydroxy group at position 9, and
   by a 1H-indol-3-yl group at position 11S. It is a natural product discovered in
@@ -25,6 +26,8 @@ np_classification:
   class_results:
   - Benzodiazepine alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_label: Xenorhabdus eapokensis
   source: CHEBI
@@ -66,6 +69,8 @@ bgc_class:
 - NRPS
 xrefs:
 - pubchem:128363
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:571
   taxon_label: Klebsiella oxytoca
@@ -111,6 +116,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:26Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

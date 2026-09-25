@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000125
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A macrolide antibiotic that has formula C33H47NO13, produced by several
   Streptomyces species including Streptomyces natalensis. It exhibits broad spectrum
   antifungal activity and used in eye drops, and as a food preservative, and also
@@ -27,6 +28,8 @@ np_classification:
   class_results:
   - Polyene macrolides
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -327,6 +330,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:5284447
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:68242
   taxon_label: Streptomyces natalensis
@@ -416,6 +421,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:51Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

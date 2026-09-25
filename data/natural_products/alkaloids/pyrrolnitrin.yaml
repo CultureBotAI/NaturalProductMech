@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000924
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of pyrroles carrying chloro and 3-chloro-2-nitrophenyl
   substituents at positions 3 and 4 respectively.
 definition_source: CHEBI:32079
@@ -21,6 +22,9 @@ np_classification:
   class_results:
   - Pyrrole alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1923
   taxon_label: Streptomyces phaeochromogenes
@@ -447,6 +451,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA018752
 - pubchem:13916
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:587753
   taxon_label: Pseudomonas chlororaphis
@@ -493,6 +499,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:11Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

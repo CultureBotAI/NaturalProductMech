@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001626
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of isoindoles that is 2,3-dihydro-1H-isoindole in
   which the hydrogens at positon 1 are replaced by an oxo group.
 definition_source: CHEBI:74235
@@ -25,6 +26,8 @@ np_classification:
   class_results:
   - Isoindole alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:388913
   taxon_label: Stachybotrys chlorohalonata
@@ -40,6 +43,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:10199
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:1283841
   taxon_label: Stachybotrys chlorohalonata IBT 40285
@@ -91,6 +96,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:09Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

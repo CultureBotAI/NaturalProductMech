@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000907
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A carbohydrate-containing antibiotic produced by the actinomyces Streptomyces
   lincolnensis.
 definition_source: CHEBI:6472
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Aminoglycosides
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1886
   taxon_label: Streptomyces albidoflavus
@@ -359,6 +362,8 @@ bgc_class:
 xrefs:
 - pubchem:3000540
 - pubchem:9063
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1915
   taxon_label: Streptomyces lincolnensis
@@ -405,6 +410,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:59Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

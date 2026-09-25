@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001185
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A crown compound that is enterobactin in which the pro-R hydrogens at
   positions 2, 6 and 10 of the trilactone backbone are replaced by methyl groups,
   and in which a glycine spacer separates the trilactone backbone from each of the
@@ -27,6 +28,9 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1423
   taxon_label: Bacillus subtilis
@@ -80,6 +84,8 @@ bgc_class:
 - NRPS
 xrefs:
 - pubchem:125349
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:326423
   taxon_label: Bacillus velezensis FZB42
@@ -171,6 +177,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:16Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

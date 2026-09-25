@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000127
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of resorcinols that is resorcinol in which the hydrogen
   at position 2 is replaced by a 4,5-dichloro-1H-pyrrole-2-carbonyl group. It is a
   natural product found in Pseudomonas fluorescens which exhibits antibacterial properties
@@ -23,6 +24,8 @@ np_classification:
   class_results:
   - Pyrrole alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_label: Pseudomonas fluorescens PF5
   source: CHEBI
@@ -125,6 +128,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA02175
 - pubchem:33137
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:220664
   taxon_label: Pseudomonas protegens Pf-5
@@ -204,6 +209,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:27Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

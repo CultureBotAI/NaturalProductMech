@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001783
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: Complex cytotoxic antibiotic obtained from Streptomyces flocculus or S.
   rufochronmogenus. It is used in advanced carcinoma and causes leukopenia.
 definition_source: CHEBI:9287
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Pyridine alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1873
   taxon_label: Micromonospora
@@ -112,6 +115,8 @@ bgc_class:
 - OTHER
 xrefs:
 - npatlas:NPA02378
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1888
   taxon_label: Streptomyces flocculus
@@ -154,6 +159,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

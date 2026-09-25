@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001397
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An enediyne antibiotic that has formula C43H42ClN3O13. It is a natural
   product found in Streptomyces globisporus and exhibits antimicrobial and antineoplastic
   properties.
@@ -26,6 +27,9 @@ np_classification:
   class_results:
   - Enediynes
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- LAND_PLANT
 occurrences:
 - taxon_label: Streptomyces sp. CB02366
   source: CHEBI
@@ -140,6 +144,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:9962646
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1172567
   taxon_label: Streptomyces globisporus C-1027
@@ -192,6 +198,10 @@ discussions:
     one upstream record has the wrong structure. Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:46Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

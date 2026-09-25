@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000861
 np_pathway: FATTY_ACIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An icosapentaenoic acid having five cis-double bonds at positions 5, 8,
   11, 14 and 17.
 definition_source: CHEBI:28364
@@ -28,6 +29,14 @@ np_classification:
   class_results:
   - Unsaturated fatty acids
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
+- FUNGAL
+- RED_ALGAL
+- OTHER_STRAMENOPILE
+- LAND_PLANT
+- CNIDARIAN
+- CHORDATE
 occurrences:
 - taxon_label: Mus musculus
   source: CHEBI
@@ -525,6 +534,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:446284
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:563072
   taxon_label: Shewanella sp. BR-2
@@ -723,3 +734,7 @@ curation_history:
     cited the PubChem/PDB affinity row through DOI:10.1016/S1097-2765(00)80467-0 and
     DOI:10.2210/pdb3gwx/pdb.
   llm_assisted: true
+- timestamp: '2026-09-25T03:02:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.

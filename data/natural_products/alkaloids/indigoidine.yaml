@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000375
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of pyridone that is a dimeric blue pigment biosynthesised
   from L-glutamine.
 definition_source: CHEBI:79296
@@ -20,6 +21,8 @@ np_classification:
   - Ornithine alkaloids
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_label: Streptomyces lavendulae
   source: CHEBI
@@ -46,6 +49,8 @@ bgc_class:
 - NRPS
 xrefs:
 - pubchem:5492261
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:42881
   taxon_label: Streptomyces chromofuscus
@@ -88,6 +93,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:26Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

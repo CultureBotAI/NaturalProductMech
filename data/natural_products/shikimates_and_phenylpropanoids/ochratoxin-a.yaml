@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001030
 np_pathway: SHIKIMATES_AND_PHENYLPROPANOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A phenylalanine derivative resulting from the formal condensation of the
   amino group of L-phenylalanine with the carboxy group of (3R)-5-chloro-8-hydroxy-3-methyl-1-oxo-3,4-dihydro-1H-2-benzopyran-7-carboxylic
   acid (ochratoxin α). It is among the most widely occurring food-contaminating mycotoxins,
@@ -23,6 +24,9 @@ np_classification:
   class_results:
   - Isocoumarins
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:138277
   taxon_label: Aspergillus melleus
@@ -387,6 +391,8 @@ bgc_class:
 xrefs:
 - pubchem:442530
 - npatlas:NPA016066
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:229535
   taxon_label: Penicillium nordicum
@@ -641,6 +647,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

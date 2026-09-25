@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000878
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An aminonucleoside antibiotic, derived from the Streptomyces alboniger
   bacterium, that causes premature chain termination during translation taking place
   in the ribosome.
@@ -22,6 +23,9 @@ np_classification:
   class_results:
   - Purine nucleos(t)ides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:1883
   taxon_label: Streptomyces
@@ -390,6 +394,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA02054
 - pubchem:439530
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:132473
   taxon_label: Streptomyces alboniger
@@ -436,6 +442,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

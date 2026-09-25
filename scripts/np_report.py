@@ -52,6 +52,9 @@ def summarize(records: list[dict[str, Any]]) -> dict[str, Any]:
     stereo_incomplete = 0
 
     counted_fields = [
+        "biosynthesis_origin",
+        "producer_taxon_groups",
+        "occurrence_taxon_groups",
         "producer_organisms",
         "occurrences",
         "biosynthetic_gene_clusters",

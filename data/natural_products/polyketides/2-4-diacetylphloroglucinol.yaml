@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000280
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A benzenetriol that is phloroglucinol in which two of the ring hydrogens
   are replaced by acetyl groups.
 definition_source: CHEBI:78688
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Acyl phloroglucinols
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_label: Pseudomonas fluorescens PF5
   source: CHEBI
@@ -367,6 +370,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:16547
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:294
   taxon_label: Pseudomonas fluorescens
@@ -454,6 +459,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:05Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

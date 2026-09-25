@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001671
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A synthetic monocyclic β-lactam antibiotic (monobactam), used primarily
   to treat infections caused by Gram-negative bacteria. It inhibits mucopeptide synthesis
   in the bacterial cell wall, thereby blocking peptidoglycan crosslinking.
@@ -36,6 +37,8 @@ bioactivity_summary:
 - ANTIBACTERIAL
 bgc_class:
 - NRPS
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:358
   taxon_label: Agrobacterium tumefaciens
@@ -121,6 +124,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:42Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

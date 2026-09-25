@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001739
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of phosphonic acids that is phosphonic acid in which
   the hydrogen attached to the phosphorous is replaced by a carboxymethyl group.
 definition_source: CHEBI:15732
@@ -22,6 +23,8 @@ np_classification:
   superclass_results: []
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:562
   taxon_label: Escherichia coli
@@ -43,6 +46,8 @@ bioactivity_summary:
 - ANTIVIRAL
 bgc_class:
 - OTHER
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1463861
   taxon_label: Streptomyces sp. NRRL F-525
@@ -89,6 +94,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:48Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

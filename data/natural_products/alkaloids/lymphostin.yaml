@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001006
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of pyrroloquinolines that is pyrrolo[4,3,2-de]quinoline
   in which the hydrogens at positions 4, 6 and 8 are replaced by (1E)-1-methoxy-3-oxoprop-1-en-3-yl,
   acetylamino and amino groups, respectively. It is an alkaloid isolated from Streptomyces
@@ -23,6 +24,8 @@ np_classification:
   - Anthranilic acid alkaloids
   class_results: []
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:168695
   taxon_label: Salinispora tropica
@@ -86,6 +89,8 @@ bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA09688
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:369723
   taxon_label: Salinispora tropica CNB-440
@@ -173,6 +178,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:10Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

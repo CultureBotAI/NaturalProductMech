@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000188
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A pyrrolopurine that is 2,6-diiminodecahydropyrrolo[1,2-c]purine carrying
   an additional hydroxymethyl substituent at position 4 as well as two hydroxy substituents
   at position 10. A toxin that is isolated from marine dinoflagellates and cyanobacteria
@@ -23,6 +24,12 @@ np_classification:
   class_results:
   - Saxitoxins
   is_glycoside: false
+occurrence_taxon_groups:
+- CYANOBACTERIAL
+- ALVEOLATE
+- MOLLUSK
+- CHORDATE
+- OTHER_ANIMAL
 occurrences:
 - taxon_id: NCBITaxon:1163
   taxon_label: Anabaena
@@ -180,6 +187,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:24941628
+producer_taxon_groups:
+- CYANOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:398006
   taxon_label: Cylindrospermopsis raciborskii T3
@@ -222,6 +231,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:35Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

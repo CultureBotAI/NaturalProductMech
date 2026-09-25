@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000428
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An aminoglycoside antibiotic produced by Streptosporangium sibiricum that
   also exhibits antitumour properties.
 definition_source: CHEBI:90941
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Aminoglycosides
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_label: Streptosporangium sibiricum
   source: CHEBI
@@ -54,6 +57,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA01741
 - pubchem:6437361
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:457432
   taxon_label: Streptosporangium sibiricum
@@ -96,6 +101,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

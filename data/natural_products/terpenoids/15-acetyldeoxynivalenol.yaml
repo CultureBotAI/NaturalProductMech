@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002176
 np_pathway: TERPENOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A trichothecene mycotoxin that is deoxynivalenol acetylated on the oxygen
   at C-15. A skin and eye irritant, along with its 3-acetyl regioisomer and its parent
   deoxynivalenol it is considered among the most commonly and widely distributed cereal
@@ -23,6 +24,8 @@ np_classification:
   class_results:
   - Trichothecane sesquiterpenoids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:5516
   taxon_label: Fusarium culmorum
@@ -77,6 +80,8 @@ compound_classes:
 xrefs:
 - pubchem:10382483
 - chembl:CHEMBL468823
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:229533
   taxon_label: Fusarium graminearum PH-1
@@ -166,6 +171,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

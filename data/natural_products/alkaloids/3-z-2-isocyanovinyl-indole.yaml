@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000668
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A 3-(2-isocyanovinyl)indole in which the double bond of the isocyanovinyl
   group has Z (cis-) configuration. An antibacterial agent isolated from a species
   of Pseudomonas.
@@ -37,6 +38,8 @@ bioactivity_summary:
 bgc_class:
 - TERPENE
 - OTHER
+producer_taxon_groups:
+- CYANOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1433842
   taxon_label: Hapalosiphon welwitschii UTEX B 1830
@@ -94,6 +97,10 @@ discussions:
     Check which.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:27Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

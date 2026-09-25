@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000037
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of isoindoles that is 6-hydroxy-4-methoxy-5-methyl-2,3-dihydro-1H-isoindol-1-one
   which is substituted at position 4, 5, and 6 by methoxy, methyl, and hydroxy groups,
   respectively. A secondary metabolite found in Aspergillus silvativus, Aspergillus
@@ -24,6 +25,9 @@ np_classification:
   class_results:
   - Isoindole alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
+- LAND_PLANT
 occurrences:
 - taxon_id: NCBITaxon:145745
   taxon_label: Althaea officinalis
@@ -89,6 +93,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:442849
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:227321
   taxon_label: Aspergillus nidulans FGSC A4
@@ -133,6 +139,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:17Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

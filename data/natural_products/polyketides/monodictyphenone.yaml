@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000101
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A member of the class of benzophenones in which one phenyl group is substituted
   at positions 2 and 6 by hydroxy groups while the other is substituted at positions
   2, 4, and 6 by hydroxy, methyl, and carboxy groups, respectively. First obtained
@@ -24,6 +25,8 @@ np_classification:
   class_results:
   - Benzophenones
   is_glycoside: false
+occurrence_taxon_groups:
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:2075174
   taxon_label: Monodictys putredinis
@@ -60,6 +63,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA016280
 - pubchem:16114922
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:227321
   taxon_label: Aspergillus nidulans FGSC A4
@@ -109,6 +114,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:30Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

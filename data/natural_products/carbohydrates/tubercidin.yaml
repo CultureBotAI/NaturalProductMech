@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001937
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: An N-glycosylpyrrolopyrimidine that is adenosine in which the in the 5-membered
   ring that is not attached to the ribose moiety is replaced by a carbon. Tubercidin
   is produced in the culture broth of Streptomyces tubericidus.
@@ -23,6 +24,11 @@ np_classification:
   - Purine nucleos(t)ides
   - Pyrimidine nucleos(t)ides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- CYANOBACTERIAL
+- SPONGE
+- CHORDATE
 occurrences:
 - taxon_id: NCBITaxon:119534
   taxon_label: Tolypothrix distorta
@@ -457,6 +463,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:6245
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:47759
   taxon_label: Streptomyces tubercidicus
@@ -505,6 +513,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:49:44Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:06Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

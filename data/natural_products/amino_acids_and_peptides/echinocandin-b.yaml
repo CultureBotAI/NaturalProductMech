@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001371
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A cyclic hexapeptide echinocandin antibiotic isolated from Aspergillus
   nidulans var. echinulatus with specific anti-yeast activity.
 definition_source: CHEBI:315018
@@ -21,6 +22,9 @@ np_classification:
   class_results:
   - Cyclic peptides
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- FUNGAL
 occurrences:
 - taxon_id: NCBITaxon:162425
   taxon_label: Aspergillus nidulans
@@ -64,6 +68,8 @@ bgc_class:
 - NRPS
 xrefs:
 - pubchem:9898144
+producer_taxon_groups:
+- FUNGAL
 producer_organisms:
 - taxon_id: NCBITaxon:1160106
   taxon_label: Aspergillus nidulans NRRL 8112
@@ -108,6 +114,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:53Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

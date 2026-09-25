@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000693
 np_pathway: CARBOHYDRATES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A butirosin that consists of neamine in which is substituted at position
   2 by a β-D-xylofuranosyl and at position 4 by an (S)-2-hydroxy-4-aminobutyryl group.
 definition_source: CHEBI:65112
@@ -21,6 +22,8 @@ np_classification:
   class_results:
   - Amino cyclitols
   is_glycoside: true
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1397
   taxon_label: Bacillus circulans
@@ -58,6 +61,8 @@ bgc_class:
 - SACCHARIDE
 xrefs:
 - pubchem:12302171
+producer_taxon_groups:
+- OTHER_BACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1397
   taxon_label: Bacillus circulans
@@ -100,6 +105,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:44Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

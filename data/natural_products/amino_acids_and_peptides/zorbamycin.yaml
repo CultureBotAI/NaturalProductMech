@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0001058
 np_pathway: AMINO_ACIDS_AND_PEPTIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A glycopeptide antibiotic found in Streptomyces flavoviridis.
 definition_source: CHEBI:67811
 np_classification:
@@ -20,6 +21,8 @@ np_classification:
   class_results:
   - Bleomycins
   is_glycoside: true
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:28893
   taxon_label: Streptomyces flavoviridis
@@ -75,6 +78,8 @@ bgc_class:
 xrefs:
 - npatlas:NPA08777
 - pubchem:70697970
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:28893
   taxon_label: Streptomyces flavoviridis
@@ -121,6 +126,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:29Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

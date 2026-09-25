@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000023
 np_pathway: POLYKETIDES
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A polyketide that is 2,3-dihydrofuran substituted by hydroxy, methyl,
   oxo, methyl and (2S,3Z,5E,7R,8R,9E)-2,8-dihydroxy-7,9,12-trimethyltrideca-3,5,9-trien-1-yl
   groups at positions 2, 2, 3, 4, and 5, respectively. It is a cytotoxic natural product
@@ -24,6 +25,8 @@ np_classification:
   class_results:
   - Open-chain polyketides
   is_glycoside: true
+occurrence_taxon_groups:
+- MYXOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:41
   taxon_label: Stigmatella aurantiaca
@@ -67,6 +70,8 @@ bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA01119
+producer_taxon_groups:
+- MYXOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:378806
   taxon_label: Stigmatella aurantiaca DW4/3-1
@@ -111,6 +116,10 @@ grounding_status: EXACT
 curation_status: SEEDED
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:01:27Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0002633
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A hydroxamic acid resulting from the formal condensation of the primary
   amino group of N-(3-aminopropyl)-N-hydroxyacetamide (2 mol eq.) with the carboxy
   groups at positions 1 and 3 of citric acid. It is a siderophore produced by Bacillus
@@ -23,6 +24,9 @@ np_classification:
   class_results:
   - Polyamines
   is_glycoside: false
+occurrence_taxon_groups:
+- CYANOBACTERIAL
+- OTHER_BACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:1163
   taxon_label: Anabaena
@@ -99,6 +103,8 @@ xrefs:
 - pubchem:3082425
 - cyanometdb:CyanoMetDB_1678
 - npatlas:NPA027582
+producer_taxon_groups:
+- CYANOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:111781
   taxon_label: Leptolyngbya sp. PCC 7376
@@ -190,6 +196,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:52Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

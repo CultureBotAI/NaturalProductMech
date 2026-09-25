@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000958
 np_pathway: UNCLASSIFIED
+biosynthesis_origin: NATURAL_PRODUCT
 definition: A nine-membered bis-lactone having methyl substituents at the 2- and 6-positions,
   an n-hexyl substituent at the 8-position, an acyloxy substituent at the 7-position
   and an aroylamido substituent at the 3-position. It is produced by Streptomyces
@@ -28,6 +29,8 @@ np_classification:
   class_results:
   - Antimycins
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
 occurrences:
 - taxon_id: NCBITaxon:141454
   taxon_label: Streptomyces wadayamensis
@@ -326,6 +329,8 @@ bgc_class:
 - PKS
 xrefs:
 - pubchem:14957
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:889487
   taxon_label: Streptomyces sp. S4
@@ -382,6 +387,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-09-10T06:50:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:28Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.

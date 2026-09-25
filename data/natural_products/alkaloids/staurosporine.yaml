@@ -8,6 +8,7 @@ chemical_structure:
   structure_source: MIBIG
   structure_source_id: mibig:BGC0000826
 np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -18,6 +19,11 @@ np_classification:
   class_results:
   - Carbazole alkaloids
   is_glycoside: false
+occurrence_taxon_groups:
+- ACTINOBACTERIAL
+- CYANOBACTERIAL
+- FUNGAL
+- OTHER_EUKARYOTIC
 occurrences:
 - taxon_id: NCBITaxon:158786
   taxon_label: Lyngbya majuscula
@@ -278,6 +284,8 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:44259
+producer_taxon_groups:
+- ACTINOBACTERIAL
 producer_organisms:
 - taxon_id: NCBITaxon:1901
   taxon_label: Streptomyces clavuligerus ATCC 27064
@@ -361,6 +369,10 @@ discussions:
     error.'
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:02:08Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
