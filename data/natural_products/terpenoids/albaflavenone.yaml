@@ -302,6 +302,115 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-fbe59a67aa
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9K499
+  enzyme_label: Cyc1 epi-isozizaene synthase
+  reaction_id: RHEA:25992
+  notes: Cyc1/SCO5222 cyclizes (2E,6E)-farnesyl diphosphate to the (+)-epi-isozizaene
+    committed intermediate in albaflavenone biosynthesis.
+  evidence:
+  - reference: DOI:10.1021/ja061292s
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Molecular cloning and characterization of a new sesquiterpene synthase
+    notes: UniProtKB:Q9K499 resolves to the Streptomyces coelicolor A3(2) cyc1/SCO5222
+      gene product, maps to EMBL AL939123 protein CAB94607.1, and annotates RHEA:25992
+      for (+)-epi-isozizaene formation.
+  substrate: CHEBI:175763
+  product: CHEBI:51458
+- step_number: 2
+  enzyme_id: UniProtKB:Q9K498
+  enzyme_label: CYP170A1 albaflavenone monooxygenase
+  reaction_id: RHEA:32440
+  notes: CYP170A1/SCO5223 oxidizes (+)-epi-isozizaene through albaflavenol intermediates
+    to albaflavenone.
+  evidence:
+  - reference: DOI:10.1074/JBC.M710421200
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Biosynthesis of the sesquiterpene antibiotic albaflavenone in Streptomyces
+      coelicolor A3(2)
+    notes: UniProtKB:Q9K498 resolves to the adjacent Streptomyces coelicolor A3(2)
+      SCO5223 gene product, maps to EMBL AL939123 protein CAB94608.1, and annotates
+      the composite left-to-right RHEA:32440 reaction for CYP170A1 oxidation of (+)-epi-isozizaene
+      to albaflavenone.
+  substrate: CHEBI:51458
+  product: CHEBI:51460
+causal_graphs:
+- graph_id: albaflavenone-sco5222-sco5223-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces coelicolor albaflavenone biosynthesis graph for
+    Cyc1-catalyzed sesquiterpene cyclization and CYP170A1-catalyzed oxidation to albaflavenone.
+  nodes:
+  - node_id: farnesyl_diphosphate
+    label: (2E,6E)-farnesyl diphosphate
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:175763
+  - node_id: cyc1
+    label: Cyc1
+    node_type: ENZYME
+    identifier: UniProtKB:Q9K499
+    grounding_status: GROUNDED
+  - node_id: epi_isozizaene
+    label: (+)-epi-isozizaene
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:51458
+  - node_id: cyp170a1
+    label: CYP170A1
+    node_type: ENZYME
+    identifier: UniProtKB:Q9K498
+    grounding_status: GROUNDED
+  - node_id: albaflavenone
+    label: albaflavenone
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:51460
+  edges:
+  - subject: farnesyl_diphosphate
+    predicate: is cyclized by
+    object: cyc1
+    evidence:
+    - reference: DOI:10.1021/ja061292s
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Molecular cloning and characterization of a new sesquiterpene synthase
+      notes: UniProtKB:Q9K499 resolves to the Streptomyces coelicolor A3(2) cyc1/SCO5222
+        gene product, maps to EMBL AL939123 protein CAB94607.1, and annotates RHEA:25992
+        for (+)-epi-isozizaene formation.
+  - subject: cyc1
+    predicate: forms
+    object: epi_isozizaene
+    evidence:
+    - reference: DOI:10.1021/ja061292s
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Molecular cloning and characterization of a new sesquiterpene synthase
+      notes: UniProtKB:Q9K499 resolves to the Streptomyces coelicolor A3(2) cyc1/SCO5222
+        gene product, maps to EMBL AL939123 protein CAB94607.1, and annotates RHEA:25992
+        for (+)-epi-isozizaene formation.
+  - subject: epi_isozizaene
+    predicate: is oxidized by
+    object: cyp170a1
+    evidence:
+    - reference: DOI:10.1074/JBC.M710421200
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Biosynthesis of the sesquiterpene antibiotic albaflavenone in Streptomyces
+        coelicolor A3(2)
+      notes: UniProtKB:Q9K498 resolves to the adjacent Streptomyces coelicolor A3(2)
+        SCO5223 gene product, maps to EMBL AL939123 protein CAB94608.1, and annotates
+        the composite left-to-right RHEA:32440 reaction for CYP170A1 oxidation of
+        (+)-epi-isozizaene to albaflavenone.
+  - subject: cyp170a1
+    predicate: forms
+    object: albaflavenone
+    evidence:
+    - reference: DOI:10.1074/JBC.M710421200
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Biosynthesis of the sesquiterpene antibiotic albaflavenone in Streptomyces
+        coelicolor A3(2)
+      notes: UniProtKB:Q9K498 resolves to the adjacent Streptomyces coelicolor A3(2)
+        SCO5223 gene product, maps to EMBL AL939123 protein CAB94608.1, and annotates
+        the composite left-to-right RHEA:32440 reaction for CYP170A1 oxidation of
+        (+)-epi-isozizaene to albaflavenone.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -311,3 +420,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T22:27:12Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a two-step BIOSYNTHESIS pathway and causal graph for albaflavenone
+    biosynthesis; grounded the Streptomyces coelicolor Cyc1 and CYP170A1 enzymes to
+    UniProtKB:Q9K499 and UniProtKB:Q9K498 via SCO5222/SCO5223; and cited the experimentally
+    characterized RHEA:25992 and RHEA:32440 reactions.
+  llm_assisted: true
