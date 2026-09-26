@@ -325,6 +325,35 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: k-252a-pim1-inhibition
+  scope: BIOACTIVITY
+  description: K-252a inhibits human serine/threonine-protein kinase PIM1.
+  nodes:
+  - node_id: k_252a
+    label: K-252a
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-6af212b9a4
+    grounding_status: GROUNDED
+  - node_id: pim1
+    label: human serine/threonine-protein kinase PIM1
+    node_type: PROTEIN
+    identifier: UniProtKB:P11309
+    grounding_status: GROUNDED
+  edges:
+  - subject: k_252a
+    predicate: inhibits
+    object: pim1
+    notes: BindingDB-deposited PubChem BioAssay AID 1796959 maps this exact Standard
+      InChIKey to an active 0.15 uM IC50 kinase measurement against UniProtKB:P11309;
+      P11309 resolves in UniProtKB to the human PIM1 gene product.
+    evidence:
+    - reference: DOI:10.1074/jbc.M413155200
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Pim-1 Ligand-bound Structures Reveal the Mechanism of Serine/Threonine
+        Kinase Inhibition
+      notes: PubChem BioAssay AID 1796959 was deposited by BindingDB for PMID 15657054
+        and reports active K-252a inhibition of human PIM1.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -338,3 +367,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T16:10:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for K-252a inhibition of human serine/threonine-protein
+    kinase PIM1, grounded the protein node to UniProtKB:P11309, and cited DOI:10.1074/jbc.M413155200
+    via the exact BindingDB-deposited PubChem BioAssay row for PMID 15657054.
+  llm_assisted: true
