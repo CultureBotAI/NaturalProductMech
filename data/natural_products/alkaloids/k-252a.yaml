@@ -129,6 +129,40 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-342aac48f4
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: k-252a-met-binding
+  scope: BIOACTIVITY
+  description: K-252a binds an engineered human MET receptor tyrosine kinase domain.
+  nodes:
+  - node_id: k_252a
+    label: K-252a
+    node_type: COMPOUND
+    identifier: CHEBI:43616
+    grounding_status: GROUNDED
+  - node_id: met
+    label: human hepatocyte growth factor receptor
+    node_type: PROTEIN
+    identifier: UniProtKB:P08581
+    grounding_status: GROUNDED
+  edges:
+  - subject: k_252a
+    predicate: binds
+    object: met
+    notes: PubChem BioAssay AID 977611 maps this exact Standard InChIKey to a 0.01
+      uM Kd row for PDB 1R0P chain A; PDB 1R0P maps chain A to UniProtKB:P08581 residues
+      1049-1360 and records the KSA K-252A ligand bound to an engineered kinase-domain
+      construct carrying Y1194F, Y1234F, Y1235D, and V1272L substitutions.
+    evidence:
+    - reference: DOI:10.1073/pnas.1734128100
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Crystal structure of the tyrosine kinase domain of the hepatocyte growth
+        factor receptor c-Met and its complex with the microbial alkaloid K-252a
+      notes: PDB 1R0P is the K-252a-bound structure described by Schiering et al.;
+        PubChem reports its PDB-derived 10 nM Kd for this exact Standard InChIKey.
+    - reference: DOI:10.2210/pdb1r0p/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: RCSB PDB identifies 1R0P as a human c-Met tyrosine kinase domain structure
+        in complex with KSA K-252A and maps entity 1 chain A to UniProtKB:P08581.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -138,3 +172,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T09:46:14Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for K-252a binding an engineered human
+    MET receptor tyrosine kinase-domain construct, grounded the protein node to UniProtKB:P08581
+    via PDB 1R0P chain A, and cited DOI:10.1073/pnas.1734128100 and DOI:10.2210/pdb1r0p/pdb.
+  llm_assisted: true
