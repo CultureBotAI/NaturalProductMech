@@ -179,6 +179,12 @@ expected identifier, appends a `record_curation_event`, and calls
 Use a `/tmp` mutator for one-off curation. Keep only reusable graph-building
 code in `scripts/` or `src/`, with tests.
 
+When adding the first `causal_graphs`, `biosynthetic_pathway`, or other
+curator-owned top-level section to a seeded record, make the mutator insert it
+before `curation_history` or immediately run `just seed-apply` to canonicalize
+the record. Appending a new top-level key after `curation_history` is
+schema-valid but fails `just verify-reproduction`.
+
 After writing the record, run at least:
 
 ```bash

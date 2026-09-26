@@ -138,6 +138,39 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-e836e81502
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: fumagillin-metap2-binding
+  scope: BIOACTIVITY
+  description: Fumagillin covalently binds human methionine aminopeptidase 2.
+  nodes:
+  - node_id: fumagillin
+    label: fumagillin
+    node_type: COMPOUND
+    identifier: CHEBI:48635
+    grounding_status: GROUNDED
+  - node_id: metap2
+    label: human methionine aminopeptidase 2
+    node_type: ENZYME
+    identifier: UniProtKB:P50579
+    grounding_status: GROUNDED
+  edges:
+  - subject: fumagillin
+    predicate: binds
+    object: metap2
+    notes: PDB 1BOA maps chain A to UniProtKB:P50579 residues 1-478 with a single
+      I347/V347 sequence conflict and records FUG fumagillin covalently linked to
+      His231 NE2 of chain A.
+    evidence:
+    - reference: DOI:10.1126/science.282.5392.1324
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Structure of human methionine aminopeptidase-2 complexed with fumagillin.
+      notes: Sin et al. solved PDB 1BOA, a structure of human MetAP2 in complex with
+        FUG fumagillin and cobalt.
+    - reference: DOI:10.2210/pdb1boa/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: RCSB PDB identifies PDB 1BOA entity 1 as a methionine aminopeptidase
+        mapped to UniProtKB:P50579, entity 3 as FUG fumagillin, and reports a 1.484
+        Angstrom covalent bond between His231 NE2 and FUG C11.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -147,3 +180,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T08:44:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for fumagillin covalent binding to human
+    METAP2, grounded the enzyme node to UniProtKB:P50579 via PDB 1BOA chain A, and
+    cited DOI:10.1126/science.282.5392.1324 and DOI:10.2210/pdb1boa/pdb.
+  llm_assisted: true
