@@ -226,6 +226,43 @@ causal_graphs:
       notes: RCSB PDB identifies 3JRX as a human ACC2 biotin carboxylase domain crystal
         structure containing S1A soraphen A, and PDBe maps chain A to Homo sapiens
         UniProtKB:O00763.
+- graph_id: soraphen-a-acc1-binding
+  scope: BIOACTIVITY
+  description: Soraphen A binds the Saccharomyces cerevisiae acetyl-CoA carboxylase
+    biotin carboxylase domain captured in PDB 1W96.
+  nodes:
+  - node_id: soraphen_a
+    label: soraphen A
+    node_type: COMPOUND
+    identifier: CHEBI:9200
+    grounding_status: GROUNDED
+  - node_id: acc1
+    label: Saccharomyces cerevisiae acetyl-CoA carboxylase Acc1
+    node_type: PROTEIN
+    identifier: UniProtKB:Q00955
+    grounding_status: GROUNDED
+  edges:
+  - subject: soraphen_a
+    predicate: binds
+    object: acc1
+    notes: PubChem BioAssay AID 977611 maps this exact Standard InChIKey to an active
+      0.0039 uM Kd row for PDB 1W96 chain A; PDBe maps 1W96 chains A, B, and C to
+      Saccharomyces cerevisiae UniProtKB:Q00955 residues 13-566, and RCSB reports
+      S1A soraphen A with the record's Standard InChIKey as a 1W96 non-polymer ligand.
+    evidence:
+    - reference: DOI:10.1016/J.MOLCEL.2004.11.034
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: A Mechanism for the Potent Inhibition of Eukaryotic Acetyl-Coenzyme
+        a Carboxylase by Soraphen A, a Macrocyclic Polyketide Natural Product
+      notes: Shen et al. solved the S. cerevisiae ACC1 biotin carboxylase domain structure
+        with bound soraphen A, deposited as PDB 1W96.
+    - reference: DOI:10.2210/pdb1w96/pdb
+      evidence_type: DATABASE_ASSERTION
+      snippet: Crystal Structure of Biotin Carboxylase Domain of Acetyl-coenzyme A
+        Carboxylase from Saccharomyces cerevisiae in Complex with Soraphen A
+      notes: RCSB PDB identifies 1W96 as a Saccharomyces cerevisiae acetyl-CoA carboxylase
+        biotin carboxylase domain crystal structure containing S1A soraphen A, and
+        PDBe maps its protein chains to UniProtKB:Q00955.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -246,3 +283,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T19:01:38Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a Soraphen A bioactivity graph for binding of the Saccharomyces cerevisiae
+    ACC1 biotin carboxylase domain, grounded PubChem target 1W96_A to UniProtKB:Q00955
+    via PDBe and SIFTS, confirmed the PDB S1A ligand matches the record Standard InChIKey,
+    and cited DOI:10.1016/J.MOLCEL.2004.11.034 and DOI:10.2210/pdb1w96/pdb.
+  llm_assisted: true
