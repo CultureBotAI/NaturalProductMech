@@ -268,6 +268,36 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-0509f26444
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: epoxomicin-proteasome-beta5-binding
+  scope: BIOACTIVITY
+  description: Epoxomicin covalently binds the Saccharomyces cerevisiae 20S proteasome
+    beta type-5 active subunit.
+  nodes:
+  - node_id: epoxomicin
+    label: epoxomicin
+    node_type: COMPOUND
+    identifier: CHEBI:42265
+    grounding_status: GROUNDED
+  - node_id: psb5
+    label: yeast proteasome subunit beta type-5
+    node_type: PROTEIN
+    identifier: UniProtKB:P30656
+    grounding_status: GROUNDED
+  edges:
+  - subject: epoxomicin
+    predicate: binds
+    object: psb5
+    notes: PDB 1G65 models epoxomicin as peptide-inhibitor chains 3 and 4, each covalently
+      linked through the terminal 04D residue to Thr1 of yeast PRE2 chains K and Y,
+      both mapped to UniProtKB:P30656.
+    evidence:
+    - reference: DOI:10.1021/ja993588m
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Crystal Structure of Epoxomicin:20S Proteasome reveals a molecular
+        basis for selectivity of alpha,beta-Epoxyketone Proteasome Inhibitors
+      notes: Groll et al. solved PDB 1G65 as a yeast 20S proteasome structure with
+        two epoxomicin peptide-inhibitor chains covalently bound to PRE2.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -281,3 +311,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T08:09:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for epoxomicin covalent binding to the
+    Saccharomyces cerevisiae 20S proteasome beta type-5 subunit; grounded the protein
+    node to UniProtKB:P30656 via the PDB 1G65 chain K/Y mappings; and cited DOI:10.1021/ja993588m.
+  llm_assisted: true
