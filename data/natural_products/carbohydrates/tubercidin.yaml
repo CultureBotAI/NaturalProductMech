@@ -507,6 +507,43 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-d8d9a21fb3
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: tubercidin-pnp-binding
+  scope: BIOACTIVITY
+  description: Tubercidin binds Escherichia coli purine nucleoside phosphorylase in
+    the PDB 1PR5 co-crystal structure.
+  nodes:
+  - node_id: tubercidin
+    label: tubercidin
+    node_type: COMPOUND
+    identifier: CHEBI:48267
+    grounding_status: GROUNDED
+  - node_id: pnp
+    label: Escherichia coli O157:H7 purine nucleoside phosphorylase DeoD
+    node_type: ENZYME
+    identifier: UniProtKB:P0ABP9
+    grounding_status: GROUNDED
+  edges:
+  - subject: tubercidin
+    predicate: binds
+    object: pnp
+    notes: PubChem AID 977610 maps this exact InChIKey to an active 120 uM Ki row
+      for PDB 1PR5 chain A; RCSB identifies TBN in 1PR5 as tubercidin with matching
+      InChIKey HDZZVAMISRMYHH-KCGFPETGSA-N; and PDBe maps chains A, B and C to UniProtKB:P0ABP9.
+    evidence:
+    - reference: DOI:10.1074/jbc.M304622200
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Structural basis for substrate specificity of Escherichia coli purine
+        nucleoside phosphorylase.
+      notes: Bennett, Li, Allan, Parker and Ealick solved PDB 1PR5 as Escherichia
+        coli purine nucleoside phosphorylase bound to 7-deazaadenosine.
+    - reference: DOI:10.2210/pdb1pr5/pdb
+      evidence_type: DATABASE_ASSERTION
+      snippet: Escherichia coli Purine Nucleoside Phosphorylase Complexed with 7-deazaadenosine
+        and Phosphate/Sulfate
+      notes: RCSB PDB identifies 1PR5 as purine nucleoside phosphorylase entity 1
+        bound to TBN 7-deazaadenosine entity 3, and PDBe maps entity 1 chains A, B
+        and C to UniProtKB:P0ABP9.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -520,3 +557,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T20:31:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for tubercidin binding Escherichia coli
+    purine nucleoside phosphorylase, grounded PubChem target 1PR5_A to UniProtKB:P0ABP9
+    via PDBe and SIFTS, confirmed PDB TBN matches tubercidin, and cited DOI:10.1074/jbc.M304622200
+    and DOI:10.2210/pdb1pr5/pdb.
+  llm_assisted: true
