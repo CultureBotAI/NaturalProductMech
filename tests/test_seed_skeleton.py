@@ -628,6 +628,33 @@ def test_a_bindingdb_row_becomes_a_target_with_its_uniprot_as_an_example():
     assert "pH 7.4" in target["evidence"][0]["notes"]
 
 
+def test_bindingdb_targets_are_capped_to_keep_records_reviewable():
+    rows = []
+    for idx in range(seed.MAX_MOLECULAR_TARGETS_PER_RECORD + 2):
+        rows.append({
+            "standard_inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+            "target_name": f"target {idx}",
+            "target_organism": "",
+            "uniprot": "",
+            "measurement_type": "IC50",
+            "measurement_value_nm": str(idx + 1),
+            "measurement_qualifier": "EQUAL",
+            "ph": "",
+            "temperature_c": "",
+            "reference": f"PMID:{idx + 1}",
+            "curation_source": "Curated from the literature by BindingDB",
+        })
+
+    doc = seed.build_records({"mibig_compounds": [MIBIG_ROW], "bindingdb_targets": rows})[0]
+
+    assert len(doc["molecular_targets"]) == seed.MAX_MOLECULAR_TARGETS_PER_RECORD
+    assert doc["molecular_targets"][-1]["target_label"] == "target 24"
+    assert doc["molecular_targets"][-1]["notes"] == (
+        "2 further BindingDB target rows are in "
+        "data/raw/bindingdb_targets.tsv but not written here."
+    )
+
+
 def test_an_affinity_operator_is_parsed_out_rather_than_lost():
     """BindingDB embeds the relational operator in the numeric cell, so a naive
     float() either raises or silently turns a bound into a value."""

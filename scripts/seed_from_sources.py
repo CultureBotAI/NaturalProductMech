@@ -173,6 +173,10 @@ MAX_OCCURRENCES_PER_RECORD = 25
 # keeps them all; a record keeps the ones a curator can read.
 MAX_BIOACTIVITIES_PER_RECORD = 25
 
+# The same cap for BindingDB rows. Promiscuous kinase probes can carry dozens
+# of exact affinity rows, and the raw inventory is the complete view.
+MAX_MOLECULAR_TARGETS_PER_RECORD = 25
+
 # One directory per NPClassifier pathway. UNCLASSIFIED is a real bucket, not an
 # error state: it is where a multi-label result lands until a curator files it.
 PATHWAY_DIRS = {
@@ -1069,6 +1073,13 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 target["taxon_label"] = row["target_organism"]
             targets.append(target)
         if targets:
+            omitted = len(targets) - MAX_MOLECULAR_TARGETS_PER_RECORD
+            if omitted > 0:
+                targets = targets[:MAX_MOLECULAR_TARGETS_PER_RECORD]
+                targets[-1]["notes"] = (
+                    f"{omitted} further BindingDB target rows are in "
+                    f"data/raw/bindingdb_targets.tsv but not written here."
+                )
             doc["molecular_targets"] = targets
 
         links = [{
