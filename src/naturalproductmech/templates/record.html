@@ -111,6 +111,7 @@ from a source. This is what the rest of the record exists to support.</p>
 {% for g in r.graphs %}
 <h2>Causal graph &mdash; {{ g.scope|lower }} <span class="tag">{{ g.nodes|length }} nodes, {{ g.edges|length }} edges</span></h2>
 {% if g.description %}<p class="sub">{{ g.description }}</p>{% endif %}
+{{ g | graph_svg(loop.index) }}
 <div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Evidence</th></tr>
 {% for e in g.edges %}

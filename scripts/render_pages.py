@@ -39,6 +39,11 @@ from typing import Any
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+if __package__:
+    from .mechanism_graph import graph_svg
+else:
+    from mechanism_graph import graph_svg
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 TEMPLATES_DIR = REPO_ROOT / "src" / "naturalproductmech" / "templates"
 CORPUS_DIR = REPO_ROOT / "data" / "natural_products"
@@ -216,6 +221,7 @@ def build(out_dir: Path) -> tuple[int, int]:
     env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)),
                       autoescape=select_autoescape(["html"]),
                       trim_blocks=True, lstrip_blocks=True, keep_trailing_newline=True)
+    env.filters["graph_svg"] = graph_svg
     records = load_records()
     by_pathway: dict[str, list[dict[str, Any]]] = {}
     coverage: Counter[str] = Counter()
