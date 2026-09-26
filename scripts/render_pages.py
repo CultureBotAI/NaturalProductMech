@@ -114,6 +114,14 @@ def first_reference(item: dict[str, Any]) -> str:
     return ""
 
 
+def references(item: dict[str, Any]) -> list[str]:
+    return [
+        evidence["reference"]
+        for evidence in item.get("evidence") or []
+        if evidence.get("reference")
+    ]
+
+
 def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
     producers = []
     for p in doc.get("producer_organisms") or []:
@@ -147,7 +155,7 @@ def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
         edges = [{**e,
                   "subject_label": labels.get(e.get("subject"), e.get("subject", "")),
                   "object_label": labels.get(e.get("object"), e.get("object", "")),
-                  "reference": first_reference(e)}
+                  "references": references(e)}
                  for e in g.get("edges") or []]
         graphs.append({**g, "edges": edges})
 
