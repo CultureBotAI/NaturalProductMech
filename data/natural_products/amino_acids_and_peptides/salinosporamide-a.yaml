@@ -193,6 +193,72 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000145, BGC0001041.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+causal_graphs:
+- graph_id: salinosporamide-a-proteasome-binding
+  scope: BIOACTIVITY
+  description: Salinosporamide A covalently binds the Saccharomyces cerevisiae 20S
+    proteasome catalytic beta type-1, beta type-2, and beta type-5 subunits.
+  nodes:
+  - node_id: salinosporamide_a
+    label: salinosporamide A
+    node_type: COMPOUND
+    identifier: CHEBI:48045
+    grounding_status: GROUNDED
+  - node_id: psb1
+    label: yeast proteasome subunit beta type-1
+    node_type: PROTEIN
+    identifier: UniProtKB:P38624
+    grounding_status: GROUNDED
+  - node_id: psb2
+    label: yeast proteasome subunit beta type-2
+    node_type: PROTEIN
+    identifier: UniProtKB:P25043
+    grounding_status: GROUNDED
+  - node_id: psb5
+    label: yeast proteasome subunit beta type-5
+    node_type: PROTEIN
+    identifier: UniProtKB:P30656
+    grounding_status: GROUNDED
+  edges:
+  - subject: salinosporamide_a
+    predicate: binds
+    object: psb1
+    notes: PDB 2FAK records SA1 salinosporamide A covalently linked to Thr1 of yeast
+      PRE3 chains N and 2, both mapped to UniProtKB:P38624.
+    evidence:
+    - reference: DOI:10.1021/ja058320b
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Crystal Structures of Salinosporamide A (NPI-0052) and B (NPI-0047)
+        in Complex with the 20S Proteasome Reveal Important Consequences of beta-Lactone
+        Ring Opening and a Mechanism for Irreversible Binding.
+      notes: Groll et al. solved PDB 2FAK as the yeast 20S proteasome covalently bound
+        by salinosporamide A at all six catalytic beta-subunit active sites.
+  - subject: salinosporamide_a
+    predicate: binds
+    object: psb2
+    notes: PDB 2FAK records SA1 salinosporamide A covalently linked to Thr1 of yeast
+      PUP1 chains H and V, both mapped to UniProtKB:P25043.
+    evidence:
+    - reference: DOI:10.1021/ja058320b
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Crystal Structures of Salinosporamide A (NPI-0052) and B (NPI-0047)
+        in Complex with the 20S Proteasome Reveal Important Consequences of beta-Lactone
+        Ring Opening and a Mechanism for Irreversible Binding.
+      notes: Groll et al. solved PDB 2FAK as the yeast 20S proteasome covalently bound
+        by salinosporamide A at all six catalytic beta-subunit active sites.
+  - subject: salinosporamide_a
+    predicate: binds
+    object: psb5
+    notes: PDB 2FAK records SA1 salinosporamide A covalently linked to Thr1 of yeast
+      PRE2 chains K and Y, both mapped to UniProtKB:P30656.
+    evidence:
+    - reference: DOI:10.1021/ja058320b
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Crystal Structures of Salinosporamide A (NPI-0052) and B (NPI-0047)
+        in Complex with the 20S Proteasome Reveal Important Consequences of beta-Lactone
+        Ring Opening and a Mechanism for Irreversible Binding.
+      notes: Groll et al. solved PDB 2FAK as the yeast 20S proteasome covalently bound
+        by salinosporamide A at all six catalytic beta-subunit active sites.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -202,3 +268,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T08:09:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for salinosporamide A covalent binding
+    to the Saccharomyces cerevisiae 20S proteasome catalytic beta type-1, beta type-2,
+    and beta type-5 subunits; grounded the protein nodes to UniProtKB:P38624, UniProtKB:P25043,
+    and UniProtKB:P30656 via PDB 2FAK; and cited DOI:10.1021/ja058320b.
+  llm_assisted: true
