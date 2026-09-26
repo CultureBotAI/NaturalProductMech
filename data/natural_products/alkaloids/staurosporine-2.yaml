@@ -1453,6 +1453,33 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: BindingDB row 37 and PubChem BioAssay row 2308 both report active staurosporine
         inhibition of chicken smooth-muscle MLCK in an MLCK assay.
+- graph_id: staurosporine-pkg1-inhibition
+  scope: BIOACTIVITY
+  description: Staurosporine inhibits bovine cGMP-dependent protein kinase 1.
+  nodes:
+  - node_id: staurosporine
+    label: staurosporine
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-c702c4be08
+    grounding_status: GROUNDED
+  - node_id: prkg1
+    label: bovine cGMP-dependent protein kinase 1
+    node_type: PROTEIN
+    identifier: UniProtKB:P00516
+    grounding_status: GROUNDED
+  edges:
+  - subject: staurosporine
+    predicate: inhibits
+    object: prkg1
+    notes: BindingDB row 78 and BindingDB-deposited PubChem BioAssay AID 1795450 map
+      this exact stereo-incomplete Standard InChIKey to an 18 nM IC50 measurement
+      against bovine PKG1, and P00516 resolves in UniProtKB to the Bos taurus PRKG1
+      gene product.
+    evidence:
+    - reference: DOI:10.1016/0960-894X(94)00458-R
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: BindingDB row 78 and PubChem BioAssay row 2311 both report active staurosporine
+        inhibition of bovine cGMP-dependent protein kinase 1 in a cGPK assay.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1586,4 +1613,11 @@ curation_history:
   changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of chicken
     smooth-muscle MLCK; grounded the protein node to UniProtKB:P11799; and cited exact
     BindingDB/PubChem MLCK rows through DOI:10.1016/0960-894X(94)00458-R.
+  llm_assisted: true
+- timestamp: '2026-09-26T14:23:37Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of bovine
+    PKG1; grounded the protein node to UniProtKB:P00516; and cited exact BindingDB/PubChem
+    cGPK rows through DOI:10.1016/0960-894X(94)00458-R.
   llm_assisted: true
