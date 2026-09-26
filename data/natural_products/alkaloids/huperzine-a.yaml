@@ -368,9 +368,10 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
   a content-hashed identifier.
 curation_status: SEEDED
 causal_graphs:
-- graph_id: huperzine-a-ache-inhibition
+- graph_id: huperzine-a-cholinesterase-inhibition
   scope: BIOACTIVITY
-  description: Huperzine A inhibits human, Pacific electric ray, and rat acetylcholinesterase.
+  description: Huperzine A inhibits human butyrylcholinesterase and human, Pacific-electric-ray,
+    and rat acetylcholinesterases.
   nodes:
   - node_id: huperzine_a
     label: huperzine A
@@ -391,6 +392,11 @@ causal_graphs:
     label: rat acetylcholinesterase
     node_type: PROTEIN
     identifier: UniProtKB:P37136
+    grounding_status: GROUNDED
+  - node_id: bche
+    label: human butyrylcholinesterase
+    node_type: PROTEIN
+    identifier: UniProtKB:P06276
     grounding_status: GROUNDED
   edges:
   - subject: huperzine_a
@@ -426,6 +432,23 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: The BindingDB own-curated row for PMID 12517147 reports huperzine A inhibition
         of rat acetylcholinesterase at pH 7.0 and 22 C.
+  - subject: huperzine_a
+    predicate: inhibits
+    object: bche
+    notes: BindingDB-deposited PubChem BioAssay AIDs 1801528 and 1801939 map this
+      exact Standard InChIKey to active 0.85 uM and 0.04 uM IC50 measurements against
+      UniProtKB:P06276; P06276 resolves in UniProtKB to the human BCHE gene product.
+    evidence:
+    - reference: DOI:10.1016/j.bioorg.2015.11.002
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: acetyl and butyrylcholinesterase inhibitors
+      notes: PubChem BioAssay AID 1801528 was deposited by BindingDB for PMID 26595185
+        and reports active huperzine A inhibition of human butyrylcholinesterase.
+    - reference: DOI:10.1016/j.bioorg.2016.07.005
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: acetylcholinesterase and butyrylcholinesterase inhibitory potential
+      notes: PubChem BioAssay AID 1801939 was deposited by BindingDB for PMID 27441832
+        and reports active huperzine A inhibition of human butyrylcholinesterase.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -454,3 +477,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T15:54:38Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Expanded the Huperzine A BIOACTIVITY causal graph from acetylcholinesterase
+    to cholinesterase inhibition, grounded human butyrylcholinesterase to UniProtKB:P06276,
+    and cited DOI:10.1016/j.bioorg.2015.11.002 and DOI:10.1016/j.bioorg.2016.07.005
+    via exact BindingDB-deposited PubChem BioAssay rows for PMID 26595185 and PMID
+    27441832.
+  llm_assisted: true
