@@ -115,6 +115,61 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 10
+  enzyme_id: UniProtKB:Q8GHB2
+  enzyme_label: CloQ 4-hydroxyphenylpyruvate 3-dimethylallyltransferase
+  reaction_id: RHEA:37055
+  notes: CloQ transfers the dimethylallyl group from dimethylallyl diphosphate to
+    3-(4-hydroxyphenyl)pyruvate(1-) to form the 3-dimethylallyl-4-hydroxyphenylpyruvate(1-)
+    ring A precursor in the clorobiocin pathway.
+  evidence:
+  - reference: DOI:10.1073/pnas.0337708100
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: CloQ, a prenyltransferase involved in clorobiocin biosynthesis
+    notes: UniProtKB:Q8GHB2 resolves to the Streptomyces roseochromogenus subsp. oscitans
+      cloQ gene product, maps to EMBL AF329398 protein AAN65239.1, and links this
+      experimentally characterized reaction to RHEA:37055.
+  substrate: CHEBI:36242
+  product: CHEBI:74408
+causal_graphs:
+- graph_id: clorobiocin-cloq-prenylation
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces roseochromogenus clorobiocin biosynthesis graph
+    for CloQ-catalyzed prenylation of the ring A precursor.
+  nodes:
+  - node_id: hydroxyphenylpyruvate
+    label: 3-(4-hydroxyphenyl)pyruvate
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:36242
+  - node_id: cloq
+    label: CloQ
+    node_type: ENZYME
+    identifier: UniProtKB:Q8GHB2
+    grounding_status: GROUNDED
+  - node_id: prenylated_ring_a_precursor
+    label: 3-dimethylallyl-4-hydroxyphenylpyruvate(1-)
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:74408
+  edges:
+  - subject: hydroxyphenylpyruvate
+    predicate: is prenylated by
+    object: cloq
+    evidence:
+    - reference: DOI:10.1073/pnas.0337708100
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: CloQ catalyzes RHEA:37055.
+  - subject: cloq
+    predicate: forms
+    object: prenylated_ring_a_precursor
+    notes: This is a single curated ring A tailoring step; later assembly and tailoring
+      steps to mature clorobiocin remain uncurated.
+    evidence:
+    - reference: DOI:10.1073/pnas.0337708100
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: CloQ catalyzes RHEA:37055.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -128,3 +183,23 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T21:29:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a partial BIOSYNTHESIS causal graph and pathway step for CloQ-catalyzed
+    prenylation in clorobiocin biosynthesis; grounded CloQ to UniProtKB:Q8GHB2 via
+    EMBL AF329398 protein AAN65239.1; and cited the experimentally characterized RHEA:37055
+    reaction through DOI:10.1073/pnas.0337708100.
+  llm_assisted: true
+- timestamp: '2026-09-26T21:38:23Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Grounded the main CloQ substrate and product nodes to CHEBI:36242 and CHEBI:74408,
+    matching the anionic participants used by RHEA:37055.
+  llm_assisted: true
+- timestamp: '2026-09-26T21:40:47Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Aligned the CHEBI:36242 CloQ substrate node label to the canonical ChEBI
+    label.
+  llm_assisted: true
