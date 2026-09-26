@@ -120,7 +120,7 @@ from a source. This is what the rest of the record exists to support.</p>
   <td>{{ e.subject_label }}</td>
   <td>{{ e.predicate }}</td>
   <td>{{ e.object_label }}</td>
-  <td class="mono">{{ e.reference }}</td>
+  <td class="mono">{% for reference in e.references %}{{ reference }}{% if not loop.last %}<br>{% endif %}{% endfor %}</td>
 </tr>
 {% endfor %}
 </table></div>
