@@ -1399,6 +1399,33 @@ causal_graphs:
       notes: BindingDB row 50 and PubChem BioAssay row 2321 both cite PMID 16699172
         for active staurosporine inhibition of bovine ROCK2 in a kinase inhibition
         assay.
+- graph_id: staurosporine-chk1-inhibition
+  scope: BIOACTIVITY
+  description: Staurosporine inhibits human Chk1.
+  nodes:
+  - node_id: staurosporine
+    label: staurosporine
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-c702c4be08
+    grounding_status: GROUNDED
+  - node_id: chk1
+    label: human serine/threonine-protein kinase Chk1
+    node_type: PROTEIN
+    identifier: UniProtKB:O14757
+    grounding_status: GROUNDED
+  edges:
+  - subject: staurosporine
+    predicate: inhibits
+    object: chk1
+    notes: BindingDB row 51 and BindingDB-deposited PubChem BioAssay AID 1797591 map
+      this exact stereo-incomplete Standard InChIKey to a 7.8 nM Ki measurement against
+      human Chk1 at pH 7.4000 and 37.00 C, and O14757 resolves in UniProtKB to the
+      human CHEK1 gene product.
+    evidence:
+    - reference: DOI:10.1074/jbc.M201233200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: BindingDB row 51 and PubChem BioAssay row 2330 both cite PMID 12244092
+        for active staurosporine inhibition of human Chk1 in a Chk1 enzymatic assay.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1518,4 +1545,11 @@ curation_history:
   changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of bovine
     ROCK2; grounded the protein node to UniProtKB:Q28021; and cited exact BindingDB/PubChem
     ROCK2 rows through DOI:10.1074/jbc.M512374200.
+  llm_assisted: true
+- timestamp: '2026-09-26T13:30:25Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of human
+    Chk1; grounded the protein node to UniProtKB:O14757; and cited exact BindingDB/PubChem
+    Chk1 rows through DOI:10.1074/jbc.M201233200.
   llm_assisted: true
