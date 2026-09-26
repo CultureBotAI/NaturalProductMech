@@ -223,6 +223,37 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: geldanamycin-hsp90aa4p-inhibition
+  scope: BIOACTIVITY
+  description: Geldanamycin inhibits human putative heat shock protein HSP 90-alpha
+    A4.
+  nodes:
+  - node_id: geldanamycin
+    label: geldanamycin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-905ccbc6f4
+    grounding_status: GROUNDED
+  - node_id: hsp90aa4p
+    label: human putative heat shock protein HSP 90-alpha A4
+    node_type: PROTEIN
+    identifier: UniProtKB:Q58FG1
+    grounding_status: GROUNDED
+  edges:
+  - subject: geldanamycin
+    predicate: inhibits
+    object: hsp90aa4p
+    notes: BindingDB-deposited PubChem BioAssay AID 1801076 maps the exact Standard
+      InChIKey QSAMODLUYGNFJU-LEBIDKMGSA-N to an active 0.14 uM IC50 fluorescence
+      polarization measurement against UniProtKB:Q58FG1; Q58FG1 resolves in UniProtKB
+      to the reviewed human HSP90AA4P gene product.
+    evidence:
+    - reference: DOI:10.1111/cbdd.12371
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Discovery of Novel 17‐Phenylethylaminegeldanamycin Derivatives as Potent
+        Hsp90 Inhibitors
+      notes: PubChem BioAssay AID 1801076 was deposited by BindingDB for PMID 24903735
+        and reports active geldanamycin inhibition of human HSP90AA4P.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -236,3 +267,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T17:25:51Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for geldanamycin inhibition of human putative
+    heat shock protein HSP 90-alpha A4, grounded the protein node to UniProtKB:Q58FG1,
+    and cited DOI:10.1111/cbdd.12371 via the exact BindingDB-deposited PubChem BioAssay
+    row for PMID 24903735.
+  llm_assisted: true
