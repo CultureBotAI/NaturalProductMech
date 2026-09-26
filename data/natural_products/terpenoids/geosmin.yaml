@@ -355,13 +355,13 @@ biosynthetic_pathway:
   reaction_id: RHEA:30371
   notes: The C-terminal domain of bifunctional Cyc2 converts germacradienol to (−)-geosmin.
   evidence:
-  - reference: DOI:10.1021/ja062669x
+  - reference: DOI:10.1038/nchembio.2007.29
     evidence_type: PRIMARY_EXPERIMENT
-    snippet: germacradienol/germacrene D synthase converts farnesyl diphosphate to
-      geosmin
+    snippet: the bifunctional geosmin synthase mechanism
     notes: UniProtKB:Q9X839 resolves to the Streptomyces coelicolor A3(2) cyc2/SCO6073
-      gene product, maps to EMBL AL939126 protein CAB41566.1, and annotates RHEA:30371
-      for the conversion of germacradienol to (−)-geosmin.
+      gene product; the domain-resolved study showed that the N-terminal domain forms
+      germacradienol and that the C-terminal domain catalyzes the RHEA:30371 germacradienol-to-geosmin
+      reaction.
   substrate: CHEBI:46734
   product: CHEBI:46702
 causal_graphs:
@@ -415,24 +415,24 @@ causal_graphs:
     predicate: is converted by
     object: cyc2
     evidence:
-    - reference: DOI:10.1021/ja062669x
+    - reference: DOI:10.1038/nchembio.2007.29
       evidence_type: PRIMARY_EXPERIMENT
-      snippet: germacradienol/germacrene D synthase converts farnesyl diphosphate
-        to geosmin
+      snippet: the bifunctional geosmin synthase mechanism
       notes: UniProtKB:Q9X839 resolves to the Streptomyces coelicolor A3(2) cyc2/SCO6073
-        gene product, maps to EMBL AL939126 protein CAB41566.1, and annotates RHEA:30371
-        for the conversion of germacradienol to (−)-geosmin.
+        gene product; the domain-resolved study showed that the N-terminal domain
+        forms germacradienol and that the C-terminal domain catalyzes the RHEA:30371
+        germacradienol-to-geosmin reaction.
   - subject: cyc2
     predicate: forms
     object: geosmin
     evidence:
-    - reference: DOI:10.1021/ja062669x
+    - reference: DOI:10.1038/nchembio.2007.29
       evidence_type: PRIMARY_EXPERIMENT
-      snippet: germacradienol/germacrene D synthase converts farnesyl diphosphate
-        to geosmin
+      snippet: the bifunctional geosmin synthase mechanism
       notes: UniProtKB:Q9X839 resolves to the Streptomyces coelicolor A3(2) cyc2/SCO6073
-        gene product, maps to EMBL AL939126 protein CAB41566.1, and annotates RHEA:30371
-        for the conversion of germacradienol to (−)-geosmin.
+        gene product; the domain-resolved study showed that the N-terminal domain
+        forms germacradienol and that the C-terminal domain catalyzes the RHEA:30371
+        germacradienol-to-geosmin reaction.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -449,4 +449,10 @@ curation_history:
     grounded the Streptomyces coelicolor bifunctional Cyc2 enzyme to UniProtKB:Q9X839
     via SCO6073; and cited the experimentally characterized RHEA:22436 and RHEA:30371
     reactions.
+  llm_assisted: true
+- timestamp: '2026-09-26T23:08:49Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Replaced the geosmin-forming Cyc2 step and edge evidence with the domain-resolved
+    bifunctional geosmin synthase paper, DOI:10.1038/nchembio.2007.29.
   llm_assisted: true
