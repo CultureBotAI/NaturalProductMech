@@ -227,6 +227,47 @@ discussions:
     and MIBiG calls it 'cyclopiazonic acid'. They share a Standard InChIKey, so if
     the names denote different compounds then one upstream record has the wrong structure.
     Check which.
+causal_graphs:
+- graph_id: cyclopiazonic-acid-serca1-inhibition
+  scope: BIOACTIVITY
+  description: Cyclopiazonic acid inhibits rabbit sarcoplasmic/endoplasmic reticulum
+    calcium ATPase 1 in PDB 2O9J and 2OA0 co-crystal structures.
+  nodes:
+  - node_id: cyclopiazonic_acid
+    label: cyclopiazonic acid
+    node_type: COMPOUND
+    identifier: CHEBI:22450
+    grounding_status: GROUNDED
+  - node_id: serca1
+    label: Oryctolagus cuniculus sarcoplasmic/endoplasmic reticulum calcium ATPase
+      1
+    node_type: PROTEIN
+    identifier: UniProtKB:P04191
+    grounding_status: GROUNDED
+  edges:
+  - subject: cyclopiazonic_acid
+    predicate: inhibits
+    object: serca1
+    notes: PubChem BioAssay AID 977610 maps this exact Standard InChIKey to 0.12 uM
+      Ki rows for PDB 2O9J chain A and 2OA0 chain A; RCSB reports CZA cyclopiazonic
+      acid as a bound non-polymer ligand in both entries, and SIFTS maps entity 1
+      chain A in both structures to Oryctolagus cuniculus UniProtKB:P04191 residues
+      1-993.
+    evidence:
+    - reference: DOI:10.1074/jbc.M611653200
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: The molecular basis for cyclopiazonic Acid inhibition of the sarcoplasmic
+        reticulum calcium pump.
+      notes: Moncoq et al. solved cyclopiazonic-acid-bound rabbit SERCA1 structures
+        deposited as PDB 2O9J and 2OA0.
+    - reference: DOI:10.2210/pdb2o9j/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: RCSB PDB identifies 2O9J as a rabbit calcium ATPase structure with bound
+        CZA cyclopiazonic acid, and SIFTS maps entity 1 auth chain A to UniProtKB:P04191.
+    - reference: DOI:10.2210/pdb2oa0/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: RCSB PDB identifies 2OA0 as a rabbit calcium ATPase structure with bound
+        CZA cyclopiazonic acid, and SIFTS maps entity 1 auth chain A to UniProtKB:P04191.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -240,3 +281,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T18:39:06Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for cyclopiazonic acid inhibition of Oryctolagus
+    cuniculus SERCA1, grounded the protein node through the 2O9J and 2OA0 SIFTS chain
+    mappings to UniProtKB:P04191, and cited DOI:10.1074/jbc.M611653200, DOI:10.2210/pdb2o9j/pdb,
+    and DOI:10.2210/pdb2oa0/pdb.
+  llm_assisted: true
