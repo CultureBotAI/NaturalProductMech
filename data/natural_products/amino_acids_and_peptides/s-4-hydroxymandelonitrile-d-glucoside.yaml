@@ -371,6 +371,46 @@ discussions:
   prompt: ChEBI calls this structure '(S)-4-hydroxymandelonitrile β-D-glucoside' and
     MIBiG calls it 'dhurrin'. They share a Standard InChIKey, so if the names denote
     different compounds then one upstream record has the wrong structure. Check which.
+causal_graphs:
+- graph_id: dhurrin-zmglu1-binding
+  scope: BIOACTIVITY
+  description: Dhurrin binds the inactive E191D maize ZmGlu1 beta-glucosidase construct
+    captured in PDB 1E55.
+  nodes:
+  - node_id: dhurrin
+    label: (S)-4-hydroxymandelonitrile β-D-glucoside
+    node_type: COMPOUND
+    identifier: CHEBI:27826
+    grounding_status: GROUNDED
+  - node_id: zmglu1
+    label: maize beta-glucosidase ZmGlu1
+    node_type: ENZYME
+    identifier: UniProtKB:P49235
+    grounding_status: GROUNDED
+  edges:
+  - subject: dhurrin
+    predicate: binds
+    object: zmglu1
+    notes: PubChem BioAssay AID 977610 maps the exact Standard InChIKey NVLTYOJHPBMILU-YOVYLDAJSA-N
+      to an active 76 uM Ki row for PDB 1E55 chain A. RCSB maps both 1E55 protein
+      chains to the Zea mays UniProtKB:P49235 sequence, with deposited residues 1-512
+      corresponding to UniProt residues 55-566 and an engineered E191D substitution
+      corresponding to Glu245 in the canonical sequence. PDB 1E55 models dhurrin as
+      covalently connected BGC beta-D-glucopyranose and DHR (2S)-hydroxy(4-hydroxyphenyl)ethanenitrile
+      components in each active site.
+    evidence:
+    - reference: DOI:10.1073/pnas.97.25.13555
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: mutant maize beta-glucosidase-DIMBOA, -DIMBOAGlc, and -dhurrin complexes
+      notes: Czjzek et al. reported the dhurrin-bound inactive maize ZmGlu1 beta-glucosidase
+        structure deposited as PDB 1E55.
+    - reference: DOI:10.2210/pdb1e55/pdb
+      evidence_type: DATABASE_ASSERTION
+      snippet: Crystal structure of the inactive mutant Monocot (Maize ZMGlu1) beta-glucosidase
+        ZMGluE191D in complex with the competitive inhibitor dhurrin
+      notes: RCSB PDB identifies chains A and B as maize ZmGlu1 beta-glucosidase and
+        maps them to UniProtKB:P49235; BGC and DHR nonpolymer components are covalently
+        linked as dhurrin in each 1E55 active site.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -384,3 +424,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T10:50:51Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for dhurrin binding the inactive maize
+    ZmGlu1 E191D beta-glucosidase construct in PDB 1E55, grounded the PDB chain A
+    target accession to Zea mays UniProtKB:P49235, and cited DOI:10.1073/pnas.97.25.13555
+    and DOI:10.2210/pdb1e55/pdb.
+  llm_assisted: true
