@@ -1480,6 +1480,44 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: BindingDB row 78 and PubChem BioAssay row 2311 both report active staurosporine
         inhibition of bovine cGMP-dependent protein kinase 1 in a cGPK assay.
+- graph_id: staurosporine-pkc-beta-inhibition
+  scope: BIOACTIVITY
+  description: Staurosporine inhibits rat PKC beta.
+  nodes:
+  - node_id: staurosporine
+    label: staurosporine
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-c702c4be08
+    grounding_status: GROUNDED
+  - node_id: pkc_beta
+    label: rat protein kinase C beta type
+    node_type: PROTEIN
+    identifier: UniProtKB:P68403
+    grounding_status: GROUNDED
+  edges:
+  - subject: staurosporine
+    predicate: inhibits
+    object: pkc_beta
+    notes: BindingDB rows 40-43 map this exact stereo-incomplete Standard InChIKey
+      to 9 nM IC50 and 19 nM Ki measurements against rat PKC beta, and P68403 resolves
+      in UniProtKB to the Rattus norvegicus Prkcb gene product.
+    evidence:
+    - reference: DOI:10.1016/0960-894X(94)00458-R
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: BindingDB row 40 reports a 9 nM IC50 measurement for staurosporine against
+        rat PKC beta.
+    - reference: DOI:10.1021/jm00079a024
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: BindingDB row 41 and PubChem BioAssay row 2305 both cite PMID 1732526
+        for active staurosporine inhibition of rat PKC beta in a PKC assay.
+    - reference: DOI:10.1021/jm00053a003
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: BindingDB row 42 and PubChem BioAssay row 2306 both cite PMID 8421286
+        for active staurosporine inhibition of rat PKC beta in a PKC assay.
+    - reference: DOI:10.1016/1074-5521(95)90124-8
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: BindingDB row 43 and PubChem BioAssay row 2355 both cite PMID 9383464
+        for active staurosporine inhibition of rat PKC beta in an inhibition assay.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1620,4 +1658,11 @@ curation_history:
   changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of bovine
     PKG1; grounded the protein node to UniProtKB:P00516; and cited exact BindingDB/PubChem
     cGPK rows through DOI:10.1016/0960-894X(94)00458-R.
+  llm_assisted: true
+- timestamp: '2026-09-26T14:50:33Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of rat PKC
+    beta; grounded the protein node to UniProtKB:P68403; and cited exact BindingDB/PubChem
+    rat PKC beta rows.
   llm_assisted: true
