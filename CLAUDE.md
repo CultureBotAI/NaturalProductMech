@@ -80,13 +80,16 @@ just render            # regenerate the committed site under pages/
 just render-check      # fail if pages/ is out of step with the corpus
 
 just chemical-map      # recompute the structure map (needs the chemical-map extra)
-just embed             # text-embed the corpus locally, then `just embed-map`
+just text-map-inputs   # export common-map input; see docs/TEXT_MAP_INPUTS.md
 
 Two maps, and they answer different questions. `just chemical-map` is
 structure only — chiral Morgan fingerprints and Tanimoto distance — so
-proximity means *chemically similar*. `just embed` is a TEXT embedding of what
+proximity means *chemically similar*. The shared pinned BGE map embeds what
 each record says, so proximity means *described similarly*: same pathway,
-producer or activity. Neither substitutes for the other, and the pages say so.
+producer or activity. Follow `docs/TEXT_MAP_INPUTS.md` and the shared locked
+runtime for generation. The old `just embed` and `just embed-map` generators
+are retired; historical text views remain available. Neither representation
+substitutes for the other, and the pages say so.
 
 For an upstream refresh, every source has a free `-dry` run and a writing run;
 the two networked batches also have a one-call `-canary`. MIBiG is the anchor

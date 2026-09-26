@@ -41,7 +41,7 @@ downloads/
 # The site's embedding artifacts. The two MAPS are committed, because the site
 # renders from them and a checkout without them would render a different site.
 # The text vectors are not: large, and rebuildable from the corpus with
-# `just embed`.
+# the retired legacy text generator.
 data/embeddings/*.npy
 data/embeddings/ids.json
 data/embeddings/records.json
