@@ -354,6 +354,70 @@ causal_graphs:
         Kinase Inhibition
       notes: PubChem BioAssay AID 1796959 was deposited by BindingDB for PMID 15657054
         and reports active K-252a inhibition of human PIM1.
+- graph_id: k-252a-mixed-lineage-kinase-inhibition
+  scope: BIOACTIVITY
+  description: K-252a inhibits human mixed lineage kinases 1, 2, and 3.
+  nodes:
+  - node_id: k_252a
+    label: K-252a
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-6af212b9a4
+    grounding_status: GROUNDED
+  - node_id: mlk1
+    label: human mixed lineage kinase 1
+    node_type: PROTEIN
+    identifier: UniProtKB:P80192
+    grounding_status: GROUNDED
+  - node_id: mlk2
+    label: human mixed lineage kinase 2
+    node_type: PROTEIN
+    identifier: UniProtKB:Q02779
+    grounding_status: GROUNDED
+  - node_id: mlk3
+    label: human mixed lineage kinase 3
+    node_type: PROTEIN
+    identifier: UniProtKB:Q16584
+    grounding_status: GROUNDED
+  edges:
+  - subject: k_252a
+    predicate: inhibits
+    object: mlk1
+    notes: BindingDB-deposited PubChem BioAssay AID 1797180 maps this exact Standard
+      InChIKey to an active 0.022 uM IC50 measurement against UniProtKB:P80192; P80192
+      resolves in UniProtKB to the reviewed human MAP3K9/MLK1 gene product.
+    evidence:
+    - reference: DOI:10.1021/jm051074u
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Synthesis and mixed lineage kinase activity of pyrrolocarbazole and
+        isoindolone analogs of (+)K-252a
+      notes: PubChem BioAssay AID 1797180 was deposited by BindingDB for PMID 17266195
+        and reports active K-252a inhibition of human MAP3K9/MLK1.
+  - subject: k_252a
+    predicate: inhibits
+    object: mlk2
+    notes: BindingDB-deposited PubChem BioAssay AID 1797180 maps this exact Standard
+      InChIKey to an active 0.045 uM IC50 measurement against UniProtKB:Q02779; Q02779
+      resolves in UniProtKB to the reviewed human MAP3K10/MLK2 gene product.
+    evidence:
+    - reference: DOI:10.1021/jm051074u
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Synthesis and mixed lineage kinase activity of pyrrolocarbazole and
+        isoindolone analogs of (+)K-252a
+      notes: PubChem BioAssay AID 1797180 was deposited by BindingDB for PMID 17266195
+        and reports active K-252a inhibition of human MAP3K10/MLK2.
+  - subject: k_252a
+    predicate: inhibits
+    object: mlk3
+    notes: BindingDB-deposited PubChem BioAssay AID 1797180 maps this exact Standard
+      InChIKey to an active 0.013 uM IC50 measurement against UniProtKB:Q16584; Q16584
+      resolves in UniProtKB to the reviewed human MAP3K11/MLK3 gene product.
+    evidence:
+    - reference: DOI:10.1021/jm051074u
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Synthesis and mixed lineage kinase activity of pyrrolocarbazole and
+        isoindolone analogs of (+)K-252a
+      notes: PubChem BioAssay AID 1797180 was deposited by BindingDB for PMID 17266195
+        and reports active K-252a inhibition of human MAP3K11/MLK3.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -373,4 +437,12 @@ curation_history:
   changes: Added a BIOACTIVITY causal graph for K-252a inhibition of human serine/threonine-protein
     kinase PIM1, grounded the protein node to UniProtKB:P11309, and cited DOI:10.1074/jbc.M413155200
     via the exact BindingDB-deposited PubChem BioAssay row for PMID 15657054.
+  llm_assisted: true
+- timestamp: '2026-09-26T16:35:32Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for K-252a inhibition of human mixed lineage
+    kinases 1, 2, and 3; grounded protein nodes to UniProtKB:P80192, UniProtKB:Q02779,
+    and UniProtKB:Q16584; and cited DOI:10.1021/jm051074u via exact BindingDB-deposited
+    PubChem BioAssay rows for PMID 17266195.
   llm_assisted: true
