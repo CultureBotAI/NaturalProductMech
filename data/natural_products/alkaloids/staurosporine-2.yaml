@@ -1401,7 +1401,7 @@ causal_graphs:
         assay.
 - graph_id: staurosporine-chk1-inhibition
   scope: BIOACTIVITY
-  description: Staurosporine inhibits human Chk1.
+  description: Staurosporine inhibits human Chk1 and Chk2.
   nodes:
   - node_id: staurosporine
     label: staurosporine
@@ -1412,6 +1412,11 @@ causal_graphs:
     label: human serine/threonine-protein kinase Chk1
     node_type: PROTEIN
     identifier: UniProtKB:O14757
+    grounding_status: GROUNDED
+  - node_id: chk2
+    label: human serine/threonine-protein kinase Chk2
+    node_type: PROTEIN
+    identifier: UniProtKB:O96017
     grounding_status: GROUNDED
   edges:
   - subject: staurosporine
@@ -1426,6 +1431,15 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: BindingDB row 51 and PubChem BioAssay row 2330 both cite PMID 12244092
         for active staurosporine inhibition of human Chk1 in a Chk1 enzymatic assay.
+  - subject: staurosporine
+    predicate: inhibits
+    object: chk2
+    notes: BindingDB row 52/PubChem AID 1799260 report 80 nM IC50 for staurosporine
+      versus human Chk2 [209-531,Q209M] at pH 7.5, 30 C; O96017 is human CHEK2.
+    evidence:
+    - reference: DOI:10.1124/mol.107.035832
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: BindingDB row 52 and PubChem row 2345 cite PMID 17616632.
 - graph_id: staurosporine-mlck-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits chicken smooth muscle myosin light chain kinase.
@@ -1665,4 +1679,10 @@ curation_history:
   changes: Added a BIOACTIVITY causal graph for staurosporine inhibition of rat PKC
     beta; grounded the protein node to UniProtKB:P68403; and cited exact BindingDB/PubChem
     rat PKC beta rows.
+  llm_assisted: true
+- timestamp: '2026-09-26T15:22:17Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added human Chk2 to the staurosporine checkpoint graph, grounded to UniProtKB:O96017
+    and cited DOI:10.1124/mol.107.035832.
   llm_assisted: true
