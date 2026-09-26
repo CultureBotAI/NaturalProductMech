@@ -101,6 +101,41 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: aeruginosin-98-b-trypsin-binding
+  scope: BIOACTIVITY
+  description: Aeruginosin 98-B binds Bos taurus trypsin in the PDB 1AQ7 co-crystal
+    structure.
+  nodes:
+  - node_id: aeruginosin_98_b
+    label: aeruginosin 98-B
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-8a6f861a62
+    grounding_status: GROUNDED
+  - node_id: trypsin
+    label: Bos taurus trypsin
+    node_type: PROTEIN
+    identifier: UniProtKB:P00760
+    grounding_status: GROUNDED
+  edges:
+  - subject: aeruginosin_98_b
+    predicate: binds
+    object: trypsin
+    notes: PubChem BioAssay AID 977608 maps this record's exact Standard InChIKey
+      to an active 0.9 uM IC50 row for PDB 1AQ7 chain A; RCSB represents aeruginosin
+      98-B as PRD_000556 on entity 2 chain B, and PDBe maps the trypsin chain A to
+      Bos taurus UniProtKB:P00760.
+    evidence:
+    - reference: DOI:10.1021/ja972991v
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Atomic Structure of the Trypsin-Aeruginosin 98-B Complex
+      notes: Sandler et al. solved PDB 1AQ7 as an aeruginosin-98-B-bound bovine trypsin
+        crystal structure.
+    - reference: DOI:10.2210/pdb1aq7/pdb
+      evidence_type: DATABASE_ASSERTION
+      snippet: TRYPSIN WITH INHIBITOR AERUGINOSIN 98-B
+      notes: RCSB PDB identifies 1AQ7 as Bos taurus trypsin entity 1 bound to PRD_000556
+        aeruginosin 98-B entity 2, and PDBe maps chain A to UniProtKB:P00760.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -114,3 +149,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T19:31:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for aeruginosin 98-B binding Bos taurus
+    trypsin, grounded PubChem target 1AQ7_A to UniProtKB:P00760 via PDBe and SIFTS,
+    confirmed PDB PRD_000556 matches aeruginosin 98-B, and cited DOI:10.1021/ja972991v
+    and DOI:10.2210/pdb1aq7/pdb.
+  llm_assisted: true
