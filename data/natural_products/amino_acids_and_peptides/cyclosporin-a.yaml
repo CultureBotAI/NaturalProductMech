@@ -334,6 +334,105 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-886a2f0274
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: cyclosporin-a-cyclophilin-calcineurin-binding
+  scope: BIOACTIVITY
+  description: Cyclosporin A binds human cyclophilin A, and the cyclosporin A-cyclophilin
+    A complex binds the human calcineurin A/B phosphatase.
+  nodes:
+  - node_id: cyclosporin_a
+    label: cyclosporin A
+    node_type: COMPOUND
+    identifier: CHEBI:4031
+    grounding_status: GROUNDED
+  - node_id: cyclophilin_a
+    label: human cyclophilin A
+    node_type: PROTEIN
+    identifier: UniProtKB:P62937
+    grounding_status: GROUNDED
+  - node_id: cyclosporin_a_cyclophilin_a
+    label: human cyclophilin A-cyclosporin A complex
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: calcineurin_a
+    label: human calcineurin A alpha
+    node_type: PROTEIN
+    identifier: UniProtKB:Q08209
+    grounding_status: GROUNDED
+  - node_id: calcineurin_b
+    label: human calcineurin B type 1
+    node_type: PROTEIN
+    identifier: UniProtKB:P63098
+    grounding_status: GROUNDED
+  - node_id: calcineurin_ab
+    label: human calcineurin A/B complex
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cyclosporin_a
+    predicate: binds
+    object: cyclophilin_a
+    notes: PDB 1MF8 contains cyclosporin A as chain D and maps the human cyclophilin
+      A chain C to UniProtKB:P62937.
+    evidence:
+    - reference: DOI:10.1073/PNAS.212504399
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Crystal Structure of Human Calcineurin Complexed with Cyclosporin a
+        and Human Cyclophilin
+      notes: Jin and Harrison solved PDB 1MF8 with human calcineurin A, human calcineurin
+        B, human cyclophilin A, and cyclosporin A.
+  - subject: cyclosporin_a
+    predicate: forms
+    object: cyclosporin_a_cyclophilin_a
+    evidence:
+    - reference: DOI:10.1073/PNAS.212504399
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Crystal Structure of Human Calcineurin Complexed with Cyclosporin a
+        and Human Cyclophilin
+      notes: Jin and Harrison solved PDB 1MF8 with human calcineurin A, human calcineurin
+        B, human cyclophilin A, and cyclosporin A.
+  - subject: cyclophilin_a
+    predicate: forms
+    object: cyclosporin_a_cyclophilin_a
+    evidence:
+    - reference: DOI:10.1073/PNAS.212504399
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Crystal Structure of Human Calcineurin Complexed with Cyclosporin a
+        and Human Cyclophilin
+      notes: Jin and Harrison solved PDB 1MF8 with human calcineurin A, human calcineurin
+        B, human cyclophilin A, and cyclosporin A.
+  - subject: calcineurin_a
+    predicate: forms
+    object: calcineurin_ab
+    evidence:
+    - reference: DOI:10.1073/PNAS.212504399
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Crystal Structure of Human Calcineurin Complexed with Cyclosporin a
+        and Human Cyclophilin
+      notes: Jin and Harrison solved PDB 1MF8 with human calcineurin A, human calcineurin
+        B, human cyclophilin A, and cyclosporin A.
+  - subject: calcineurin_b
+    predicate: forms
+    object: calcineurin_ab
+    evidence:
+    - reference: DOI:10.1073/PNAS.212504399
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Crystal Structure of Human Calcineurin Complexed with Cyclosporin a
+        and Human Cyclophilin
+      notes: Jin and Harrison solved PDB 1MF8 with human calcineurin A, human calcineurin
+        B, human cyclophilin A, and cyclosporin A.
+  - subject: cyclosporin_a_cyclophilin_a
+    predicate: binds
+    object: calcineurin_ab
+    notes: PDB 1MF8 maps human calcineurin A chain A to UniProtKB:Q08209 and human
+      calcineurin B chain B to UniProtKB:P63098.
+    evidence:
+    - reference: DOI:10.1073/PNAS.212504399
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Crystal Structure of Human Calcineurin Complexed with Cyclosporin a
+        and Human Cyclophilin
+      notes: Jin and Harrison solved PDB 1MF8 with human calcineurin A, human calcineurin
+        B, human cyclophilin A, and cyclosporin A.
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -347,3 +446,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T07:36:47Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for cyclosporin A binding to human cyclophilin
+    A and the cyclosporin A-cyclophilin A complex binding human calcineurin A/B; grounded
+    the three protein nodes to UniProtKB:P62937, UniProtKB:Q08209, and UniProtKB:P63098
+    via PDB 1MF8; and cited DOI:10.1073/PNAS.212504399.
+  llm_assisted: true

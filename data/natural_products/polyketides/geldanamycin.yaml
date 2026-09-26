@@ -164,6 +164,34 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000067, BGC0000068.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+causal_graphs:
+- graph_id: geldanamycin-hsp90-binding
+  scope: BIOACTIVITY
+  description: Geldanamycin binds the N-terminal ATPase domain of human HSP90-alpha.
+  nodes:
+  - node_id: geldanamycin
+    label: geldanamycin
+    node_type: COMPOUND
+    identifier: CHEBI:5292
+    grounding_status: GROUNDED
+  - node_id: hsp90_alpha
+    label: human heat shock protein HSP 90-alpha
+    node_type: PROTEIN
+    identifier: UniProtKB:P07900
+    grounding_status: GROUNDED
+  edges:
+  - subject: geldanamycin
+    predicate: binds
+    object: hsp90_alpha
+    notes: RCSB PDB 1YET contains GDM geldanamycin bound to human HSP90-alpha chain
+      A residues 9-236 and maps the structure to UniProtKB:P07900 residues 8-235.
+    evidence:
+    - reference: DOI:10.1016/S0092-8674(00)80203-2
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 'Crystal structure of an Hsp90-geldanamycin complex: targeting of a
+        protein chaperone by an antitumor agent.'
+      notes: Stebbins et al. solved PDB 1YET with geldanamycin in the human HSP90
+        N-terminal geldanamycin-binding domain.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -173,3 +201,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T07:21:24Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for geldanamycin binding to the human
+    HSP90-alpha N-terminal ATPase domain, grounded the protein node to UniProtKB:P07900
+    through PDB 1YET, and cited DOI:10.1016/S0092-8674(00)80203-2.
+  llm_assisted: true
