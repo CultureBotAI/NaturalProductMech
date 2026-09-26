@@ -418,6 +418,54 @@ causal_graphs:
         isoindolone analogs of (+)K-252a
       notes: PubChem BioAssay AID 1797180 was deposited by BindingDB for PMID 17266195
         and reports active K-252a inhibition of human MAP3K11/MLK3.
+- graph_id: k-252a-cdk-cyclin-inhibition
+  scope: BIOACTIVITY
+  description: K-252a inhibits human CDK4-cyclin D1 and CDK2-cyclin E1 protein complexes.
+  nodes:
+  - node_id: k_252a
+    label: K-252a
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-6af212b9a4
+    grounding_status: GROUNDED
+  - node_id: cdk4_cyclin_d1
+    label: human CDK4-cyclin D1 complex
+    node_type: PROTEIN_COMPLEX
+    identifier: ComplexPortal:CPX-2010
+    grounding_status: GROUNDED
+  - node_id: cdk2_cyclin_e1
+    label: human CDK2-cyclin E1 complex
+    node_type: PROTEIN_COMPLEX
+    identifier: ComplexPortal:CPX-2015
+    grounding_status: GROUNDED
+  edges:
+  - subject: k_252a
+    predicate: inhibits
+    object: cdk4_cyclin_d1
+    notes: BindingDB-deposited PubChem BioAssay AID 1795945 maps this exact Standard
+      InChIKey to active 0.03 uM IC50 measurements against UniProtKB:P11802 and UniProtKB:P24385;
+      UniProt cross-references for these reviewed human CDK4 and cyclin D1 accessions
+      place both in ComplexPortal:CPX-2010.
+    evidence:
+    - reference: DOI:10.1016/s0960-894x(03)00792-3
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 'Studies on cyclin-dependent kinase inhibitors: indolo-[2,3-a]pyrrolo[3,4-c]carbazoles
+        versus bis-indolylmaleimides'
+      notes: PubChem BioAssay AID 1795945 was deposited by BindingDB for PMID 14552792
+        and reports active K-252a inhibition of human CDK4/cyclin D1.
+  - subject: k_252a
+    predicate: inhibits
+    object: cdk2_cyclin_e1
+    notes: BindingDB-deposited PubChem BioAssay AID 1795945 maps this exact Standard
+      InChIKey to active 0.26 uM IC50 measurements against UniProtKB:P24864 and UniProtKB:P24941;
+      UniProt cross-references for these reviewed human cyclin E1 and CDK2 accessions
+      place both in ComplexPortal:CPX-2015.
+    evidence:
+    - reference: DOI:10.1016/s0960-894x(03)00792-3
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 'Studies on cyclin-dependent kinase inhibitors: indolo-[2,3-a]pyrrolo[3,4-c]carbazoles
+        versus bis-indolylmaleimides'
+      notes: PubChem BioAssay AID 1795945 was deposited by BindingDB for PMID 14552792
+        and reports active K-252a inhibition of human CDK2/cyclin E1.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -445,4 +493,13 @@ curation_history:
     kinases 1, 2, and 3; grounded protein nodes to UniProtKB:P80192, UniProtKB:Q02779,
     and UniProtKB:Q16584; and cited DOI:10.1021/jm051074u via exact BindingDB-deposited
     PubChem BioAssay rows for PMID 17266195.
+  llm_assisted: true
+- timestamp: '2026-09-26T16:57:48Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOACTIVITY causal graph for K-252a inhibition of human CDK4-cyclin
+    D1 and CDK2-cyclin E1 complexes; grounded complex nodes to ComplexPortal:CPX-2010
+    and ComplexPortal:CPX-2015 via their UniProtKB subunit cross-references; and cited
+    DOI:10.1016/s0960-894x(03)00792-3 via exact BindingDB-deposited PubChem BioAssay
+    rows for PMID 14552792.
   llm_assisted: true

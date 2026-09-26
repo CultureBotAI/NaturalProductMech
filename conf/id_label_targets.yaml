@@ -49,6 +49,7 @@ adapters:
 ignored_prefixes:
   - naturalproductmech   # minted, content-hashed ids for ungrounded structures
   - UniProtKB            # protein accessions; the label is the protein name
+  - ComplexPortal        # protein-complex accessions in curated causal graphs
 
 # A label matching an exact or related synonym is accepted: the corpus prefers
 # the name the literature uses over ChEBI's systematic primary label.
