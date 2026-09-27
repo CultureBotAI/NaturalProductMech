@@ -117,7 +117,38 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>SalL<br><span class="mono">UniProtKB:A4X3Q0</span></td>
+  <td class="mono">RHEA:28110</td>
+  <td class="mono">CHEBI:59789 &rarr; CHEBI:47133</td>
+  <td class="mono">DOI:10.1038/nchembio.2007.56</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: This deliberately curates only the Salinispora tropica CNB-440 SalL chlorination of S-adenosyl-L-methionine with chloride to 5&#39;-chloro-5&#39;-deoxyadenosine in the salinosporamide A chloroethylmalonyl-CoA precursor branch; downstream conversion to chloroethylmalonyl-CoA and SalA/B/C assembly remain uncurated.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial Salinispora tropica CNB-440 salinosporamide A biosynthesis graph for the SalL chlorinase reaction that initiates the chloroethylmalonyl-CoA precursor branch.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Evidence</th></tr>
+<tr>
+  <td>S-adenosyl-L-methionine zwitterion</td>
+  <td>is chlorinated by</td>
+  <td>SalL</td>
+  <td class="mono">DOI:10.1038/nchembio.2007.56<br>DOI:10.1073/pnas.0901237106<br>https://www.uniprot.org/uniprotkb/A4X3Q0<br>https://www.ncbi.nlm.nih.gov/protein/ABP53500.1</td>
+</tr>
+<tr>
+  <td>SalL</td>
+  <td>forms</td>
+  <td>5&#39;-chloro-5&#39;-deoxyadenosine</td>
+  <td class="mono">DOI:10.1038/nchembio.2007.56<br>DOI:10.1073/pnas.0901237106<br>https://www.uniprot.org/uniprotkb/A4X3Q0<br>https://www.ncbi.nlm.nih.gov/protein/ABP53500.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 <h2>Causal graph &mdash; bioactivity <span class="tag">4 nodes, 3 edges</span></h2>
 <p class="sub">Salinosporamide A covalently binds the Saccharomyces cerevisiae 20S proteasome catalytic beta type-1, beta type-2, and beta type-5 subunits.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Evidence</th></tr>

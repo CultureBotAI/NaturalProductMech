@@ -193,7 +193,134 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000145, BGC0001041.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A4X3Q0
+  enzyme_label: SalL
+  reaction_id: RHEA:28110
+  notes: This deliberately curates only the Salinispora tropica CNB-440 SalL chlorination
+    of S-adenosyl-L-methionine with chloride to 5'-chloro-5'-deoxyadenosine in the
+    salinosporamide A chloroethylmalonyl-CoA precursor branch; downstream conversion
+    to chloroethylmalonyl-CoA and SalA/B/C assembly remain uncurated.
+  evidence:
+  - reference: DOI:10.1038/nchembio.2007.56
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: SalL, which halogenates S-adenosyl-L-methionine (2) with chloride to
+      generate 5'-chloro-5'-deoxyadenosine (3) and L-methionine (4)
+    notes: Eustaquio et al. genetically, biochemically, and structurally characterized
+      Salinispora tropica CNB-440 SalL as the SAM-dependent chlorinase at the start
+      of salinosporamide A chloroethylmalonyl-CoA precursor biosynthesis.
+  - reference: DOI:10.1073/pnas.0901237106
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: S-adenosyl-L-methionine (SAM) is converted to 5'-chloro-5'-deoxyadenosine
+      (5'-ClDA) in a reaction catalyzed by a SAM-dependent chlorinase
+    notes: Eustaquio et al. placed SalL upstream of SalM, SalN, SalQ, SalS, SalT,
+      and SalU in the characterized salinosporamide A chloroethylmalonyl-CoA pathway
+      branch.
+  - reference: https://www.uniprot.org/uniprotkb/A4X3Q0
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: Reviewed UniProtKB:A4X3Q0 is Salinispora tropica CNB-440 SalL, gene salL
+      and locus Strop_1026, cross-references EMBL CP000667 protein ABP53500.1, and
+      annotates RHEA:28110 with ChEBI participants CHEBI:17996, CHEBI:47133, CHEBI:57844,
+      and CHEBI:59789.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ABP53500.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept ABP53500.1 is the Strop_1026 coding sequence from the Salinispora
+      tropica CNB-440 CP000667.1 salinosporamide A cluster and is sequence-identical
+      to UniProtKB:A4X3Q0.
+  substrate: CHEBI:59789
+  product: CHEBI:47133
 causal_graphs:
+- graph_id: salinosporamide-a-sall-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Salinispora tropica CNB-440 salinosporamide A biosynthesis
+    graph for the SalL chlorinase reaction that initiates the chloroethylmalonyl-CoA
+    precursor branch.
+  nodes:
+  - node_id: s_adenosyl_l_methionine
+    label: S-adenosyl-L-methionine zwitterion
+    node_type: PRECURSOR
+    identifier: CHEBI:59789
+    grounding_status: GROUNDED
+  - node_id: sall
+    label: SalL
+    node_type: ENZYME
+    identifier: UniProtKB:A4X3Q0
+    grounding_status: GROUNDED
+  - node_id: five_chloro_five_deoxyadenosine
+    label: 5'-chloro-5'-deoxyadenosine
+    node_type: PRECURSOR
+    identifier: CHEBI:47133
+    grounding_status: GROUNDED
+  edges:
+  - subject: s_adenosyl_l_methionine
+    predicate: is chlorinated by
+    object: sall
+    notes: RHEA:28110 uses chloride as the co-substrate and releases L-methionine
+      as the co-product.
+    evidence:
+    - reference: DOI:10.1038/nchembio.2007.56
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SalL, which halogenates S-adenosyl-L-methionine (2) with chloride to
+        generate 5'-chloro-5'-deoxyadenosine (3) and L-methionine (4)
+      notes: Eustaquio et al. genetically, biochemically, and structurally characterized
+        Salinispora tropica CNB-440 SalL as the SAM-dependent chlorinase at the start
+        of salinosporamide A chloroethylmalonyl-CoA precursor biosynthesis.
+    - reference: DOI:10.1073/pnas.0901237106
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: S-adenosyl-L-methionine (SAM) is converted to 5'-chloro-5'-deoxyadenosine
+        (5'-ClDA) in a reaction catalyzed by a SAM-dependent chlorinase
+      notes: Eustaquio et al. placed SalL upstream of SalM, SalN, SalQ, SalS, SalT,
+        and SalU in the characterized salinosporamide A chloroethylmalonyl-CoA pathway
+        branch.
+    - reference: https://www.uniprot.org/uniprotkb/A4X3Q0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:A4X3Q0 is Salinispora tropica CNB-440 SalL, gene salL
+        and locus Strop_1026, cross-references EMBL CP000667 protein ABP53500.1, and
+        annotates RHEA:28110 with ChEBI participants CHEBI:17996, CHEBI:47133, CHEBI:57844,
+        and CHEBI:59789.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABP53500.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept ABP53500.1 is the Strop_1026 coding sequence from the Salinispora
+        tropica CNB-440 CP000667.1 salinosporamide A cluster and is sequence-identical
+        to UniProtKB:A4X3Q0.
+  - subject: sall
+    predicate: forms
+    object: five_chloro_five_deoxyadenosine
+    notes: 5'-chloro-5'-deoxyadenosine is the first chlorinated intermediate in the
+      salinosporamide A chloroethylmalonyl-CoA precursor branch.
+    evidence:
+    - reference: DOI:10.1038/nchembio.2007.56
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SalL, which halogenates S-adenosyl-L-methionine (2) with chloride to
+        generate 5'-chloro-5'-deoxyadenosine (3) and L-methionine (4)
+      notes: Eustaquio et al. genetically, biochemically, and structurally characterized
+        Salinispora tropica CNB-440 SalL as the SAM-dependent chlorinase at the start
+        of salinosporamide A chloroethylmalonyl-CoA precursor biosynthesis.
+    - reference: DOI:10.1073/pnas.0901237106
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: S-adenosyl-L-methionine (SAM) is converted to 5'-chloro-5'-deoxyadenosine
+        (5'-ClDA) in a reaction catalyzed by a SAM-dependent chlorinase
+      notes: Eustaquio et al. placed SalL upstream of SalM, SalN, SalQ, SalS, SalT,
+        and SalU in the characterized salinosporamide A chloroethylmalonyl-CoA pathway
+        branch.
+    - reference: https://www.uniprot.org/uniprotkb/A4X3Q0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:A4X3Q0 is Salinispora tropica CNB-440 SalL, gene salL
+        and locus Strop_1026, cross-references EMBL CP000667 protein ABP53500.1, and
+        annotates RHEA:28110 with ChEBI participants CHEBI:17996, CHEBI:47133, CHEBI:57844,
+        and CHEBI:59789.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABP53500.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept ABP53500.1 is the Strop_1026 coding sequence from the Salinispora
+        tropica CNB-440 CP000667.1 salinosporamide A cluster and is sequence-identical
+        to UniProtKB:A4X3Q0.
 - graph_id: salinosporamide-a-proteasome-binding
   scope: BIOACTIVITY
   description: Salinosporamide A covalently binds the Saccharomyces cerevisiae 20S
@@ -275,4 +402,10 @@ curation_history:
     to the Saccharomyces cerevisiae 20S proteasome catalytic beta type-1, beta type-2,
     and beta type-5 subunits; grounded the protein nodes to UniProtKB:P38624, UniProtKB:P25043,
     and UniProtKB:P30656 via PDB 2FAK; and cited DOI:10.1021/ja058320b.
+  llm_assisted: true
+- timestamp: '2026-09-27T05:11:27Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the Salinispora tropica CNB-440 SalL S-adenosyl-L-methionine-to-5'-chloro-5'-deoxyadenosine
+    biosynthetic step and BIOSYNTHESIS causal graph grounded to UniProtKB:A4X3Q0.
   llm_assisted: true
