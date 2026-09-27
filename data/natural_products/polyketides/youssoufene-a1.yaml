@@ -118,10 +118,706 @@ curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
   kind: CURATION_TODO
-  status: OPEN
+  status: RESOLVED
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0002510, BGC0002547.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+  resolved_date: '2026-09-27'
+  resolution_note: MIBiG BGC0002547.2 and BGC0002510.2 both name youssoufene A1 with
+    the same Standard InChIKey PBGNPVWDTRYFBH-GSOXOQHNSA-N and the same NPAtlas accession
+    NPA032222; they intentionally merge into this exact A1 record.
+biosynthetic_pathway:
+- enzyme_label: YsfB/YsfC KS/CLF complex
+  proposed: true
+  notes: This curates YsfB/QHB92589.1 and YsfC/QHB92590.1 as one of three OUC6819
+    type II ketosynthase/chain-length-factor complexes assigned to cinnamoyl-lipid
+    skeleton assembly. The exact isolated substrate/product pair is unresolved, so
+    enzyme_id is left unfilled while official NCBI accessions ground the subunits.
+  evidence:
+  - reference: DOI:10.1002/anie.202007777
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: YsfB/C, YsfD/E, and YsfJ/K
+    notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution, and
+      intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
+      OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+      complexes to modular assembly of the youssoufene skeleton.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+      youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for the
+      cluster.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: youssoufenes biosynthetic gene cluster
+    notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+      OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+      ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+      and ysfK/QHB92598.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92589.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: YsfB [Streptomyces youssoufiensis]
+    notes: NCBI Protein QHB92589.1 is the Streptomyces youssoufiensis OUC6819 ysfB
+      coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+      Exact GenPept accession and gene-name searches did not resolve this protein
+      in UniProtKB on 2026-09-27.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92590.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: YsfC [Streptomyces youssoufiensis]
+    notes: NCBI Protein QHB92590.1 is the Streptomyces youssoufiensis OUC6819 ysfC
+      coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+      Exact GenPept accession and gene-name searches did not resolve this protein
+      in UniProtKB on 2026-09-27.
+- enzyme_label: YsfD/YsfE KS/CLF complex
+  proposed: true
+  notes: This curates YsfD/QHB92591.1 and YsfE/QHB92592.1 as a second OUC6819 type
+    II ketosynthase/chain-length-factor complex assigned to modular youssoufene skeleton
+    assembly. The exact isolated substrate/product pair is unresolved, so enzyme_id
+    is left unfilled while official NCBI accessions ground the subunits.
+  evidence:
+  - reference: DOI:10.1002/anie.202007777
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: YsfB/C, YsfD/E, and YsfJ/K
+    notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution, and
+      intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
+      OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+      complexes to modular assembly of the youssoufene skeleton.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+      youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for the
+      cluster.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: youssoufenes biosynthetic gene cluster
+    notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+      OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+      ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+      and ysfK/QHB92598.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92591.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: YsfD [Streptomyces youssoufiensis]
+    notes: NCBI Protein QHB92591.1 is the Streptomyces youssoufiensis OUC6819 ysfD
+      coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+      Exact GenPept accession and gene-name searches did not resolve this protein
+      in UniProtKB on 2026-09-27.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92592.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: YsfE [Streptomyces youssoufiensis]
+    notes: NCBI Protein QHB92592.1 is the Streptomyces youssoufiensis OUC6819 ysfE
+      coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+      Exact GenPept accession and gene-name searches did not resolve this protein
+      in UniProtKB on 2026-09-27.
+- enzyme_label: YsfG isomerase
+  proposed: true
+  notes: This curates YsfG/QHB92594.1 as the OUC6819 isomerase in the isomerase-dependent
+    ACP-tethered chain-elongation process. The exact free substrate and product are
+    not represented, so enzyme_id is left unfilled and the NCBI GenPept accession
+    is cited as public grounding evidence.
+  evidence:
+  - reference: DOI:10.1002/anie.202007777
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: isomerase-dependent ACP-tethered polyunsaturated chain elongation process
+    notes: Deng et al. used the native Ysf system to connect the OUC6819 isomerase
+      step with the ACP-tethered polyunsaturated-chain elongation process in youssoufene
+      biosynthesis.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+      youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for the
+      cluster.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: youssoufenes biosynthetic gene cluster
+    notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+      OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+      ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+      and ysfK/QHB92598.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92594.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: YsfG [Streptomyces youssoufiensis]
+    notes: NCBI Protein QHB92594.1 is the Streptomyces youssoufiensis OUC6819 ysfG
+      coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+      Exact GenPept accession and gene-name searches did not resolve this protein
+      in UniProtKB on 2026-09-27.
+- enzyme_label: YsfJ/YsfK KS/CLF complex
+  proposed: true
+  notes: This curates YsfJ/QHB92597.1 and YsfK/QHB92598.1 as the third OUC6819 type
+    II ketosynthase/chain-length-factor complex assigned to modular youssoufene skeleton
+    assembly. The exact isolated substrate/product pair is unresolved, so enzyme_id
+    is left unfilled while official NCBI accessions ground the subunits.
+  evidence:
+  - reference: DOI:10.1002/anie.202007777
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: YsfB/C, YsfD/E, and YsfJ/K
+    notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution, and
+      intracellular tagged-carrier-protein tracking to assign the Streptomyces youssoufiensis
+      OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+      complexes to modular assembly of the youssoufene skeleton.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+      youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for the
+      cluster.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: youssoufenes biosynthetic gene cluster
+    notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+      OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+      ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+      and ysfK/QHB92598.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92597.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: YsfJ [Streptomyces youssoufiensis]
+    notes: NCBI Protein QHB92597.1 is the Streptomyces youssoufiensis OUC6819 ysfJ
+      coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+      Exact GenPept accession and gene-name searches did not resolve this protein
+      in UniProtKB on 2026-09-27.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92598.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: YsfK [Streptomyces youssoufiensis]
+    notes: NCBI Protein QHB92598.1 is the Streptomyces youssoufiensis OUC6819 ysfK
+      coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+      Exact GenPept accession and gene-name searches did not resolve this protein
+      in UniProtKB on 2026-09-27.
+causal_graphs:
+- graph_id: youssoufene-a1-ysf-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces youssoufiensis OUC6819 Ysf type II PKS graph for
+    the three KS/CLF complexes and isomerase-dependent ACP-tethered polyunsaturated
+    chain elongation that contribute to the youssoufene A1 skeleton.
+  nodes:
+  - node_id: ysfb
+    label: YsfB 3-oxoacyl-ACP synthase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: ysfc
+    label: YsfC 3-oxoacyl-ACP synthase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: ysfd
+    label: YsfD beta-ketoacyl synthase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: ysfe
+    label: YsfE beta-ketoacyl synthase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: ysfg
+    label: YsfG isomerase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: ysfj
+    label: YsfJ 3-oxoacyl-ACP synthase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: ysfk
+    label: YsfK 3-oxoacyl-ACP synthase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: ysfbc_ks_clf
+    label: YsfB/YsfC KS/CLF complex
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: ysfde_ks_clf
+    label: YsfD/YsfE KS/CLF complex
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: ysfjk_ks_clf
+    label: YsfJ/YsfK KS/CLF complex
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: acp_tethered_chain_elongation
+    label: ACP-tethered polyunsaturated chain elongation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: benzene_ring_closure
+    label: benzene ring closure
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: youssoufene_a1
+    label: youssoufene A1
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-78ea4c55fb
+    grounding_status: GROUNDED
+  edges:
+  - subject: ysfb
+    predicate: is subunit of
+    object: ysfbc_ks_clf
+    notes: YsfB and YsfC were resolved as an OUC6819 KS/CLF pair.
+    evidence:
+    - reference: DOI:10.1002/anie.202007777
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: YsfB/C, YsfD/E, and YsfJ/K
+      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
+        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
+        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+        complexes to modular assembly of the youssoufene skeleton.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+        youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: youssoufenes biosynthetic gene cluster
+      notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+        OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+        ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+        and ysfK/QHB92598.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92589.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfB [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92589.1 is the Streptomyces youssoufiensis OUC6819 ysfB
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92590.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfC [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92590.1 is the Streptomyces youssoufiensis OUC6819 ysfC
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+  - subject: ysfc
+    predicate: is subunit of
+    object: ysfbc_ks_clf
+    notes: YsfB and YsfC were resolved as an OUC6819 KS/CLF pair.
+    evidence:
+    - reference: DOI:10.1002/anie.202007777
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: YsfB/C, YsfD/E, and YsfJ/K
+      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
+        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
+        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+        complexes to modular assembly of the youssoufene skeleton.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+        youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: youssoufenes biosynthetic gene cluster
+      notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+        OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+        ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+        and ysfK/QHB92598.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92589.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfB [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92589.1 is the Streptomyces youssoufiensis OUC6819 ysfB
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92590.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfC [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92590.1 is the Streptomyces youssoufiensis OUC6819 ysfC
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+  - subject: ysfd
+    predicate: is subunit of
+    object: ysfde_ks_clf
+    notes: YsfD and YsfE were resolved as an OUC6819 KS/CLF pair.
+    evidence:
+    - reference: DOI:10.1002/anie.202007777
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: YsfB/C, YsfD/E, and YsfJ/K
+      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
+        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
+        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+        complexes to modular assembly of the youssoufene skeleton.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+        youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: youssoufenes biosynthetic gene cluster
+      notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+        OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+        ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+        and ysfK/QHB92598.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92591.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfD [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92591.1 is the Streptomyces youssoufiensis OUC6819 ysfD
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92592.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfE [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92592.1 is the Streptomyces youssoufiensis OUC6819 ysfE
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+  - subject: ysfe
+    predicate: is subunit of
+    object: ysfde_ks_clf
+    notes: YsfD and YsfE were resolved as an OUC6819 KS/CLF pair.
+    evidence:
+    - reference: DOI:10.1002/anie.202007777
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: YsfB/C, YsfD/E, and YsfJ/K
+      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
+        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
+        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+        complexes to modular assembly of the youssoufene skeleton.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+        youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: youssoufenes biosynthetic gene cluster
+      notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+        OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+        ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+        and ysfK/QHB92598.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92591.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfD [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92591.1 is the Streptomyces youssoufiensis OUC6819 ysfD
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92592.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfE [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92592.1 is the Streptomyces youssoufiensis OUC6819 ysfE
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+  - subject: ysfj
+    predicate: is subunit of
+    object: ysfjk_ks_clf
+    notes: YsfJ and YsfK were resolved as an OUC6819 KS/CLF pair.
+    evidence:
+    - reference: DOI:10.1002/anie.202007777
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: YsfB/C, YsfD/E, and YsfJ/K
+      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
+        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
+        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+        complexes to modular assembly of the youssoufene skeleton.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+        youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: youssoufenes biosynthetic gene cluster
+      notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+        OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+        ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+        and ysfK/QHB92598.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92597.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfJ [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92597.1 is the Streptomyces youssoufiensis OUC6819 ysfJ
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92598.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfK [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92598.1 is the Streptomyces youssoufiensis OUC6819 ysfK
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+  - subject: ysfk
+    predicate: is subunit of
+    object: ysfjk_ks_clf
+    notes: YsfJ and YsfK were resolved as an OUC6819 KS/CLF pair.
+    evidence:
+    - reference: DOI:10.1002/anie.202007777
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: YsfB/C, YsfD/E, and YsfJ/K
+      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
+        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
+        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+        complexes to modular assembly of the youssoufene skeleton.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+        youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: youssoufenes biosynthetic gene cluster
+      notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+        OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+        ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+        and ysfK/QHB92598.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92597.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfJ [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92597.1 is the Streptomyces youssoufiensis OUC6819 ysfJ
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92598.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfK [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92598.1 is the Streptomyces youssoufiensis OUC6819 ysfK
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+  - subject: ysfbc_ks_clf
+    predicate: modularly assembles
+    object: acp_tethered_chain_elongation
+    notes: The YsfB/YsfC edge is kept at the chain-elongation process level because
+      the curated claim is to one of three modular KS/CLF complexes, not an isolated
+      conversion.
+    evidence:
+    - reference: DOI:10.1002/anie.202007777
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: YsfB/C, YsfD/E, and YsfJ/K
+      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
+        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
+        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+        complexes to modular assembly of the youssoufene skeleton.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+        youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: youssoufenes biosynthetic gene cluster
+      notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+        OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+        ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+        and ysfK/QHB92598.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92589.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfB [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92589.1 is the Streptomyces youssoufiensis OUC6819 ysfB
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92590.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfC [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92590.1 is the Streptomyces youssoufiensis OUC6819 ysfC
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+  - subject: ysfde_ks_clf
+    predicate: modularly assembles
+    object: acp_tethered_chain_elongation
+    notes: The YsfD/YsfE edge is kept at the chain-elongation process level because
+      the curated claim is to one of three modular KS/CLF complexes, not an isolated
+      conversion.
+    evidence:
+    - reference: DOI:10.1002/anie.202007777
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: YsfB/C, YsfD/E, and YsfJ/K
+      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
+        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
+        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+        complexes to modular assembly of the youssoufene skeleton.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+        youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: youssoufenes biosynthetic gene cluster
+      notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+        OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+        ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+        and ysfK/QHB92598.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92591.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfD [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92591.1 is the Streptomyces youssoufiensis OUC6819 ysfD
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92592.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfE [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92592.1 is the Streptomyces youssoufiensis OUC6819 ysfE
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+  - subject: ysfjk_ks_clf
+    predicate: modularly assembles
+    object: acp_tethered_chain_elongation
+    notes: The YsfJ/YsfK edge is kept at the chain-elongation process level because
+      the curated claim is to one of three modular KS/CLF complexes, not an isolated
+      conversion.
+    evidence:
+    - reference: DOI:10.1002/anie.202007777
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: YsfB/C, YsfD/E, and YsfJ/K
+      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
+        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
+        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+        complexes to modular assembly of the youssoufene skeleton.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+        youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: youssoufenes biosynthetic gene cluster
+      notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+        OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+        ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+        and ysfK/QHB92598.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92597.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfJ [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92597.1 is the Streptomyces youssoufiensis OUC6819 ysfJ
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92598.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfK [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92598.1 is the Streptomyces youssoufiensis OUC6819 ysfK
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+  - subject: ysfg
+    predicate: is required for
+    object: acp_tethered_chain_elongation
+    notes: YsfG is represented as a required isomerase in the ACP-tethered elongation
+      process without asserting a specific free substrate/product pair.
+    evidence:
+    - reference: DOI:10.1002/anie.202007777
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: isomerase-dependent ACP-tethered polyunsaturated chain elongation process
+      notes: Deng et al. used the native Ysf system to connect the OUC6819 isomerase
+        step with the ACP-tethered polyunsaturated-chain elongation process in youssoufene
+        biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+        youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: youssoufenes biosynthetic gene cluster
+      notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+        OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+        ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+        and ysfK/QHB92598.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QHB92594.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: YsfG [Streptomyces youssoufiensis]
+      notes: NCBI Protein QHB92594.1 is the Streptomyces youssoufiensis OUC6819 ysfG
+        coding sequence from the MN844187.1 youssoufenes biosynthetic gene cluster.
+        Exact GenPept accession and gene-name searches did not resolve this protein
+        in UniProtKB on 2026-09-27.
+  - subject: acp_tethered_chain_elongation
+    predicate: precedes
+    object: benzene_ring_closure
+    notes: The edge captures the source ordering that benzene-ring closure follows
+      ACP-tethered C18 polyene formation.
+    evidence:
+    - reference: DOI:10.1002/anie.202007777
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: benzene ring closure happens right after the formation
+      notes: Deng et al. placed benzene-ring closure immediately after formation of
+        the ACP-tethered C18 polyene in the OUC6819 Ysf type II PKS system.
+  - subject: benzene_ring_closure
+    predicate: contributes to
+    object: youssoufene_a1
+    notes: The Ysf KS/CLF graph contributes to the youssoufene skeleton shared by
+      dimeric A1 and monomeric B1-B4 congeners; exact A1 dimerization and release
+      are left unexpanded.
+    evidence:
+    - reference: DOI:10.1002/anie.202007777
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: YsfB/C, YsfD/E, and YsfJ/K
+      notes: Deng et al. used in vivo gene inactivation, in vitro reconstitution,
+        and intracellular tagged-carrier-protein tracking to assign the Streptomyces
+        youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE, and YsfJ/YsfK ketosynthase/chain-length-factor
+        complexes to modular assembly of the youssoufene skeleton.
+    - reference: DOI:10.1021/acs.orglett.9b04559
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: activated the production of a novel dimeric benzoic polyene acids
+      notes: Li et al. showed that disruption of dtlA in marine-derived Streptomyces
+        youssoufiensis OUC6819 activated youssoufene A1 and the monomeric youssoufenes
+        B1-B4.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002547.2 names youssoufene A1 as a product of the Streptomyces
+        youssoufiensis OUC6819 MN844187.1 locus and records knock-out support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: youssoufenes biosynthetic gene cluster
+      notes: GenBank MN844187.1 is the 20,186 bp Streptomyces youssoufiensis strain
+        OUC6819 youssoufenes biosynthetic gene cluster and carries ysfB/QHB92589.1,
+        ysfC/QHB92590.1, ysfD/QHB92591.1, ysfE/QHB92592.1, ysfG/QHB92594.1, ysfJ/QHB92597.1,
+        and ysfK/QHB92598.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -131,3 +827,20 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T17:25:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added proposed Streptomyces youssoufiensis OUC6819 YsfB/YsfC, YsfD/YsfE,
+    YsfG, and YsfJ/YsfK biosynthetic pathway entries plus a BIOSYNTHESIS causal graph
+    for youssoufene A1; cited DOI:10.1002/anie.202007777, DOI:10.1021/acs.orglett.9b04559,
+    MIBiG BGC0002547.2, and official NCBI QHB92589.1-QHB92598.1 grounding evidence
+    while leaving UniProtKB identifiers unfilled because exact searches did not resolve;
+    resolved the A1 shared-structure discussion for BGC0002547/BGC0002510.
+  llm_assisted: true
+- timestamp: '2026-09-27T17:36:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Tightened the Angew evidence snippet on the Ysf ACP-tethered chain elongation
+    to benzene-ring-closure edge so the cited text directly supports the pathway ordering
+    claim.
+  llm_assisted: true
