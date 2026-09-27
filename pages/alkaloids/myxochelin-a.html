@@ -99,7 +99,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
   <td class="mono">mibig:BGC0001345</td>
   <td>Stigmatella aurantiaca Sg a15<br><span class="mono">NCBITaxon:675526</span>
 </td>
-  <td><span class="tag ">CLUSTER_UNSTATED</span></td>
+  <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
   <td class="mono">genbank:AF299336.1</td>
 </tr>
 <tr>
@@ -128,7 +128,34 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>MxcE 2,3-DHBA-AMP ligase<br><span class="mono">UniProtKB:Q9F638</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1073/pnas.201167098</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>MxcF isochorismatase and aryl carrier protein<br><span class="mono">UniProtKB:Q9F637</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1073/pnas.201167098</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>MxcG peptide synthetase with reductase domain<br><span class="mono">UniProtKB:Q9F636</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1073/pnas.201167098</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: MxcE adenylates 2,3-dihydroxybenzoic acid for transfer to the MxcF aryl carrier protein; the carrier-protein thioester is left ungrounded as a pathway intermediate.</p><p class="sub">Step 2: MxcF supplies the aryl carrier protein that receives activated 2,3-DHBA from MxcE and presents it to MxcG; its isochorismatase module contributes to DHBA formation from chorismate.</p><p class="sub">Step 3: MxcG adenylates lysine, condenses two MxcF-delivered DHBA groups with lysine, and uses its reductase domain to release the myxochelin A alcohol.</p>
 <h2>Causal graph &mdash; bioactivity <span class="tag">2 nodes, 1 edge</span></h2>
 <p class="sub">Myxochelin A inhibits human 5-lipoxygenase in a 5-LO activity assay.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
@@ -142,6 +169,47 @@ isolation report left it.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
+<p class="sub">Partial Stigmatella aurantiaca myxochelin A assembly graph for the MxcE/MxcF/MxcG nonribosomal peptide synthetase machinery.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2,3-dihydroxybenzoic acid</td>
+  <td>is adenylated by</td>
+  <td>MxcE</td>
+  <td>MxcE adenylates DHBA before MxcF carrier-protein loading.</td>
+  <td class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F638</td>
+</tr>
+<tr>
+  <td>MxcE</td>
+  <td>loads activated 2,3-DHBA onto</td>
+  <td>MxcF</td>
+  <td>The MxcF aryl carrier protein receives activated DHBA for delivery to MxcG.</td>
+  <td class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F637</td>
+</tr>
+<tr>
+  <td>L-lysine</td>
+  <td>is adenylated by</td>
+  <td>MxcG</td>
+  <td>The adenylation domain of MxcG activates lysine.</td>
+  <td class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F636</td>
+</tr>
+<tr>
+  <td>MxcF</td>
+  <td>delivers activated 2,3-DHBA to</td>
+  <td>MxcG</td>
+  <td>MxcG condenses two MxcF-delivered DHBA units with the two amino groups of lysine.</td>
+  <td class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F636</td>
+</tr>
+<tr>
+  <td>MxcG</td>
+  <td>reductively releases</td>
+  <td>myxochelin A</td>
+  <td>The C-terminal reductase domain of MxcG releases the PCP-bound thioester through aldehyde reduction to the myxochelin A alcohol.</td>
+  <td class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F636</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">1</span></h2>
@@ -151,8 +219,6 @@ by the corpus tests.</p>
 </table></div>
 
 
-<h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0001345, BGC0002324, BGC0002491, BGC0002492. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>

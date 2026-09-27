@@ -18,6 +18,21 @@ concept, keyed by that concept's **minted identifier** — the stable
 Decisions apply at seed time, so a decision changes the corpus only after
 `just seed-apply` — and `just verify-reproduction` then proves the corpus matches.
 
+## MIBiG locus-evidence overrides
+
+`curation/mibig_locus_evidence_overrides.tsv` is for a narrower correction:
+MIBiG sometimes cites a paper at entry level without migrating its experiment
+into `loci[].evidence[].method`. A row in this table upgrades only the locus
+link written to `biosynthetic_gene_clusters`, not the native
+`producer_organisms` grade.
+
+| Column | Meaning |
+|---|---|
+| `minted_identifier` | The exact MIBiG compound row key from `source_concepts`. Use this rather than `source_id`, because a BGC can list several compounds. |
+| `source` / `source_id` / `source_label` | Context for a human reading the file. |
+| `locus_evidence_methods` | Pipe-separated MIBiG method names from `conf/producer_evidence.tsv`. |
+| `curator` / `date` / `rationale` | Who decided, when, and why. |
+
 ## What a re-seed keeps, and what it overwrites
 
 The corpus is generated, so a re-seed rebuilds every record. What it does *not*

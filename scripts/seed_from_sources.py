@@ -61,7 +61,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from naturalproductmech.curate.curation_event import record_curation_event  # noqa: E402
-from naturalproductmech.grading import load_evidence_map  # noqa: E402
+from naturalproductmech.grading import grade_cluster_link, load_evidence_map  # noqa: E402
 from naturalproductmech.validation.write_validated import (  # noqa: E402
     ValidationFailedError,
     write_validated_natural_product,
@@ -69,9 +69,11 @@ from naturalproductmech.validation.write_validated import (  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 RAW_DIR = REPO_ROOT / "data" / "raw"
+CURATION_DIR = REPO_ROOT / "curation"
 CORPUS_DIR = REPO_ROOT / "data" / "natural_products"
 PATHS_FILE = CORPUS_DIR / "PATHS.tsv"
 CONF_PATH = REPO_ROOT / "conf" / "sources.yaml"
+MIBIG_LOCUS_EVIDENCE_OVERRIDES = CURATION_DIR / "mibig_locus_evidence_overrides.tsv"
 
 # MIBiG's cluster vocabulary -> the schema enum. Six values in 4.0; `alkaloid`
 # was removed when compound classification was split from cluster
@@ -336,18 +338,50 @@ def carry_existing_curator_owned_fields(payload: dict[str, Any], path: Path) -> 
         carry_curator_owned_fields(payload, existing)
 
 
-def read_inventories() -> dict[str, list[dict[str, str]]]:
-    """Every committed inventory in data/raw/, keyed by file stem.
+def read_tsv(path: Path) -> list[dict[str, str]]:
+    with path.open(newline="", encoding="utf-8") as fh:
+        return list(csv.DictReader(fh, delimiter="\t"))
 
-    Empty at M1. The pipeline reads only this directory and never the network,
-    which is what makes `just verify-corpus` and the offline test suite mean
-    anything.
+
+def read_inventories() -> dict[str, list[dict[str, str]]]:
+    """Every committed source inventory and curation override, keyed by file stem.
+
+    The pipeline reads only committed TSVs and never the network, which is what
+    makes `just verify-corpus` and the offline test suite mean anything.
     """
     inventories: dict[str, list[dict[str, str]]] = {}
     for path in sorted(RAW_DIR.glob("*.tsv")):
-        with path.open(newline="", encoding="utf-8") as fh:
-            inventories[path.stem] = list(csv.DictReader(fh, delimiter="\t"))
+        inventories[path.stem] = read_tsv(path)
+    if MIBIG_LOCUS_EVIDENCE_OVERRIDES.exists():
+        inventories[MIBIG_LOCUS_EVIDENCE_OVERRIDES.stem] = read_tsv(
+            MIBIG_LOCUS_EVIDENCE_OVERRIDES)
     return inventories
+
+
+def load_mibig_locus_evidence_overrides(
+    rows: list[dict[str, str]],
+) -> dict[str, dict[str, str]]:
+    evidence_map = load_evidence_map()
+    overrides: dict[str, dict[str, str]] = {}
+    for row in rows:
+        identifier = row["minted_identifier"]
+        if identifier in overrides:
+            raise ValueError(f"duplicate MIBiG locus evidence override for {identifier}")
+        methods = [m for m in row["locus_evidence_methods"].split("|") if m]
+        if not methods:
+            raise ValueError(
+                f"{identifier} has a MIBiG locus evidence override with no methods")
+        unknown = [m for m in methods if m not in evidence_map]
+        if unknown:
+            raise ValueError(
+                f"{identifier} has unknown MIBiG locus evidence method(s): "
+                + ", ".join(unknown)
+            )
+        overrides[identifier] = {
+            "locus_evidence_methods": "|".join(methods),
+            "cluster_link_evidence_basis": grade_cluster_link(methods, evidence_map),
+        }
+    return overrides
 
 
 def slugify(label: str, identifier: str) -> str:
@@ -561,6 +595,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     mibig_rows = inventories.get("mibig_compounds") or []
     if not mibig_rows:
         return []
+    mibig_locus_overrides = load_mibig_locus_evidence_overrides(
+        inventories.get("mibig_locus_evidence_overrides") or [])
 
     classification = {
         row["standard_inchi_key"]: row
@@ -746,13 +782,18 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
 
         for row in rows:
             accession = row["mibig_accession"]
+            source_concept_identifier = mint_identifier(
+                "MIBIG", accession + ":" + row["compound_index"])
+            override = mibig_locus_overrides.get(source_concept_identifier)
+            if override:
+                row = {**row, **override}
+
             source_concepts.append({
                 "source": "MIBIG",
                 "source_id": accession,
                 "source_label": row["compound_name"] or label,
                 "source_version": row["entry_version"],
-                "minted_identifier": mint_identifier(
-                    "MIBIG", accession + ":" + row["compound_index"]),
+                "minted_identifier": source_concept_identifier,
             })
 
             for value in row["bgc_classes"].split("|"):
@@ -1333,7 +1374,7 @@ def write_records(records: list[dict[str, Any]], *, only: str | None = None,
                 payload,
                 curator="seed_from_sources",
                 action="SEEDED_FROM_SOURCES",
-                changes="Seeded from the committed inventories in data/raw/.",
+                changes="Seeded from the committed inventories and curation tables.",
             )
         try:
             write_validated_natural_product(payload, path)
