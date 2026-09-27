@@ -92,13 +92,135 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>#</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>YsfB/YsfC KS/CLF complex</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1002/anie.202007777</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>YsfD/YsfE KS/CLF complex</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1002/anie.202007777</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>YsfG isomerase</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1002/anie.202007777</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>YsfJ/YsfK KS/CLF complex</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1002/anie.202007777</td>
+</tr>
+</table></div>
+<p class="sub">Entry 1: This curates YsfB/QHB92589.1 and YsfC/QHB92590.1 as one of three OUC6819 type II ketosynthase/chain-length-factor complexes assigned to cinnamoyl-lipid skeleton assembly. The exact isolated substrate/product pair is unresolved, so enzyme_id is left unfilled while official NCBI accessions ground the subunits.</p><p class="sub">Entry 2: This curates YsfD/QHB92591.1 and YsfE/QHB92592.1 as a second OUC6819 type II ketosynthase/chain-length-factor complex assigned to modular youssoufene skeleton assembly. The exact isolated substrate/product pair is unresolved, so enzyme_id is left unfilled while official NCBI accessions ground the subunits.</p><p class="sub">Entry 3: This curates YsfG/QHB92594.1 as the OUC6819 isomerase in the isomerase-dependent ACP-tethered chain-elongation process. The exact free substrate and product are not represented, so enzyme_id is left unfilled and the NCBI GenPept accession is cited as public grounding evidence.</p><p class="sub">Entry 4: This curates YsfJ/QHB92597.1 and YsfK/QHB92598.1 as the third OUC6819 type II ketosynthase/chain-length-factor complex assigned to modular youssoufene skeleton assembly. The exact isolated substrate/product pair is unresolved, so enzyme_id is left unfilled while official NCBI accessions ground the subunits.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 12 edges</span></h2>
+<p class="sub">Partial Streptomyces youssoufiensis OUC6819 Ysf type II PKS graph for the three KS/CLF complexes and isomerase-dependent ACP-tethered polyunsaturated chain elongation that contribute to the monomeric youssoufene B1 skeleton.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>YsfB 3-oxoacyl-ACP synthase</td>
+  <td>is subunit of</td>
+  <td>YsfB/YsfC KS/CLF complex</td>
+  <td>YsfB and YsfC were resolved as an OUC6819 KS/CLF pair.</td>
+  <td class="mono">DOI:10.1002/anie.202007777<br>https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html<br>https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92589.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92590.1</td>
+</tr>
+<tr>
+  <td>YsfC 3-oxoacyl-ACP synthase</td>
+  <td>is subunit of</td>
+  <td>YsfB/YsfC KS/CLF complex</td>
+  <td>YsfB and YsfC were resolved as an OUC6819 KS/CLF pair.</td>
+  <td class="mono">DOI:10.1002/anie.202007777<br>https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html<br>https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92589.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92590.1</td>
+</tr>
+<tr>
+  <td>YsfD beta-ketoacyl synthase</td>
+  <td>is subunit of</td>
+  <td>YsfD/YsfE KS/CLF complex</td>
+  <td>YsfD and YsfE were resolved as an OUC6819 KS/CLF pair.</td>
+  <td class="mono">DOI:10.1002/anie.202007777<br>https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html<br>https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92591.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92592.1</td>
+</tr>
+<tr>
+  <td>YsfE beta-ketoacyl synthase</td>
+  <td>is subunit of</td>
+  <td>YsfD/YsfE KS/CLF complex</td>
+  <td>YsfD and YsfE were resolved as an OUC6819 KS/CLF pair.</td>
+  <td class="mono">DOI:10.1002/anie.202007777<br>https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html<br>https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92591.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92592.1</td>
+</tr>
+<tr>
+  <td>YsfJ 3-oxoacyl-ACP synthase</td>
+  <td>is subunit of</td>
+  <td>YsfJ/YsfK KS/CLF complex</td>
+  <td>YsfJ and YsfK were resolved as an OUC6819 KS/CLF pair.</td>
+  <td class="mono">DOI:10.1002/anie.202007777<br>https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html<br>https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92597.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92598.1</td>
+</tr>
+<tr>
+  <td>YsfK 3-oxoacyl-ACP synthase</td>
+  <td>is subunit of</td>
+  <td>YsfJ/YsfK KS/CLF complex</td>
+  <td>YsfJ and YsfK were resolved as an OUC6819 KS/CLF pair.</td>
+  <td class="mono">DOI:10.1002/anie.202007777<br>https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html<br>https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92597.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92598.1</td>
+</tr>
+<tr>
+  <td>YsfB/YsfC KS/CLF complex</td>
+  <td>modularly assembles</td>
+  <td>ACP-tethered polyunsaturated chain elongation</td>
+  <td>The YsfB/YsfC edge is kept at the chain-elongation process level because the curated claim is to one of three modular KS/CLF complexes, not an isolated conversion.</td>
+  <td class="mono">DOI:10.1002/anie.202007777<br>https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html<br>https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92589.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92590.1</td>
+</tr>
+<tr>
+  <td>YsfD/YsfE KS/CLF complex</td>
+  <td>modularly assembles</td>
+  <td>ACP-tethered polyunsaturated chain elongation</td>
+  <td>The YsfD/YsfE edge is kept at the chain-elongation process level because the curated claim is to one of three modular KS/CLF complexes, not an isolated conversion.</td>
+  <td class="mono">DOI:10.1002/anie.202007777<br>https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html<br>https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92591.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92592.1</td>
+</tr>
+<tr>
+  <td>YsfJ/YsfK KS/CLF complex</td>
+  <td>modularly assembles</td>
+  <td>ACP-tethered polyunsaturated chain elongation</td>
+  <td>The YsfJ/YsfK edge is kept at the chain-elongation process level because the curated claim is to one of three modular KS/CLF complexes, not an isolated conversion.</td>
+  <td class="mono">DOI:10.1002/anie.202007777<br>https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html<br>https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92597.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92598.1</td>
+</tr>
+<tr>
+  <td>YsfG isomerase</td>
+  <td>is required for</td>
+  <td>ACP-tethered polyunsaturated chain elongation</td>
+  <td>YsfG is represented as a required isomerase in the ACP-tethered elongation process without asserting a specific free substrate/product pair.</td>
+  <td class="mono">DOI:10.1002/anie.202007777<br>https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html<br>https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1<br>https://www.ncbi.nlm.nih.gov/protein/QHB92594.1</td>
+</tr>
+<tr>
+  <td>ACP-tethered polyunsaturated chain elongation</td>
+  <td>precedes</td>
+  <td>benzene ring closure</td>
+  <td>The edge captures the source ordering that benzene-ring closure follows ACP-tethered C18 polyene formation.</td>
+  <td class="mono">DOI:10.1002/anie.202007777</td>
+</tr>
+<tr>
+  <td>benzene ring closure</td>
+  <td>contributes to</td>
+  <td>youssoufene B1</td>
+  <td>The Ysf KS/CLF graph contributes to the cinnamoyl-lipid skeleton shared by monomeric B1-B4 congeners; exact B1 double-bond configuration and chain-release steps are left unexpanded.</td>
+  <td class="mono">DOI:10.1002/anie.202007777<br>DOI:10.1021/acs.orglett.9b04559<br>https://mibig.secondarymetabolites.org/repository/BGC0002547.2/index.html<br>https://www.ncbi.nlm.nih.gov/nuccore/MN844187.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
 
-
-<h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0002510, BGC0002547. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
