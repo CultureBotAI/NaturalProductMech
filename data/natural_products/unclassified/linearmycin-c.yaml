@@ -117,6 +117,133 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: LnyI ACP S-malonyltransferase
+  proposed: true
+  notes: This curates Streptomyces sp. Mg1 lnyI/AKL64828.1 as a required acyltransferase
+    for the proposed aminoalkyl starter-unit branch of BGC0002072 linearmycin C biosynthesis.
+    The exact AKL64828.1 GenPept accession did not resolve in UniProtKB exact accession,
+    locus-tag, or lnyI searches on 2026-09-27, so enzyme_id is left unfilled and the
+    public GenPept sequence is cited as official NCBI grounding evidence.
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2017.08.008
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: no linearmycins were produced
+    notes: Hoefler et al. replaced the Streptomyces sp. Mg1 lnyI acyltransferase open
+      reading frame with an apramycin resistance marker, observed by HPLC that the
+      mutant no longer produced linearmycin A/B/C, and restored linearmycin production
+      by native-promoter lnyI complementation.
+  - reference: mibig:BGC0002072
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0002072 version 3 names linearmycin C as an exact product of the
+      Streptomyces sp. Mg1 type I PKS cluster on CP011664.1 and records knock-out
+      support for the locus.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AKL64828.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: ACP S-malonyltransferase
+    notes: NCBI GenPept AKL64828.1 is the 345 aa lnyI/M444_04805 protein from Streptomyces
+      sp. Mg1 and is encoded by CP011664.1:1076160..1077197. Exact AKL64828.1, M444_04805,
+      and lnyI UniProtKB searches did not resolve an exact Mg1 accession on 2026-09-27.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP011664.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: Streptomyces sp. Mg1
+    notes: GenBank CP011664.1 is the complete Streptomyces sp. Mg1 genome used by
+      BGC0002072; within that genome, lnyI/M444_04805 occupies 1076160..1077197 and
+      encodes AKL64828.1.
+causal_graphs:
+- graph_id: linearmycin-c-lnyi-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces sp. Mg1 linearmycin C biosynthesis graph for the
+    LnyI acyltransferase requirement in the proposed aminoalkyl starter-unit branch.
+  nodes:
+  - node_id: lnyi_acyltransferase
+    label: LnyI ACP S-malonyltransferase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: aminoalkyl_starter_unit_biosynthesis
+    label: aminoalkyl starter-unit biosynthesis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: linearmycin_c
+    label: linearmycin C
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-60bde117a0
+    grounding_status: GROUNDED
+  edges:
+  - subject: lnyi_acyltransferase
+    predicate: is required for
+    object: aminoalkyl_starter_unit_biosynthesis
+    notes: The primary paper showed that lnyI deletion abolished linearmycin production
+      and that lnyI complementation restored production; it further placed LnyI among
+      predicted arginine-derived aminoalkyl starter-unit biosynthesis enzymes. This
+      edge does not assert an assayed acyl-transfer substrate.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2017.08.008
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: no linearmycins were produced
+      notes: Hoefler et al. replaced the Streptomyces sp. Mg1 lnyI acyltransferase
+        open reading frame with an apramycin resistance marker, observed by HPLC that
+        the mutant no longer produced linearmycin A/B/C, and restored linearmycin
+        production by native-promoter lnyI complementation.
+    - reference: mibig:BGC0002072
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002072 version 3 names linearmycin C as an exact product of
+        the Streptomyces sp. Mg1 type I PKS cluster on CP011664.1 and records knock-out
+        support for the locus.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AKL64828.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: ACP S-malonyltransferase
+      notes: NCBI GenPept AKL64828.1 is the 345 aa lnyI/M444_04805 protein from Streptomyces
+        sp. Mg1 and is encoded by CP011664.1:1076160..1077197. Exact AKL64828.1, M444_04805,
+        and lnyI UniProtKB searches did not resolve an exact Mg1 accession on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP011664.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Streptomyces sp. Mg1
+      notes: GenBank CP011664.1 is the complete Streptomyces sp. Mg1 genome used by
+        BGC0002072; within that genome, lnyI/M444_04805 occupies 1076160..1077197
+        and encodes AKL64828.1.
+  - subject: aminoalkyl_starter_unit_biosynthesis
+    predicate: contributes to
+    object: linearmycin_c
+    notes: The paper proposed that an aminoalkyl starter unit originating from arginine
+      feeds the linearmycin assembly line and that linearmycin C differs from linearmycin
+      A/B by an additional methylene in that starter unit. Earlier chain extension
+      and tailoring steps remain unexpanded.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2017.08.008
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: no linearmycins were produced
+      notes: Hoefler et al. replaced the Streptomyces sp. Mg1 lnyI acyltransferase
+        open reading frame with an apramycin resistance marker, observed by HPLC that
+        the mutant no longer produced linearmycin A/B/C, and restored linearmycin
+        production by native-promoter lnyI complementation.
+    - reference: mibig:BGC0002072
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002072 version 3 names linearmycin C as an exact product of
+        the Streptomyces sp. Mg1 type I PKS cluster on CP011664.1 and records knock-out
+        support for the locus.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AKL64828.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: ACP S-malonyltransferase
+      notes: NCBI GenPept AKL64828.1 is the 345 aa lnyI/M444_04805 protein from Streptomyces
+        sp. Mg1 and is encoded by CP011664.1:1076160..1077197. Exact AKL64828.1, M444_04805,
+        and lnyI UniProtKB searches did not resolve an exact Mg1 accession on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP011664.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Streptomyces sp. Mg1
+      notes: GenBank CP011664.1 is the complete Streptomyces sp. Mg1 genome used by
+        BGC0002072; within that genome, lnyI/M444_04805 occupies 1076160..1077197
+        and encodes AKL64828.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -126,3 +253,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T13:14:26Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added Streptomyces sp. Mg1 LnyI/AKL64828.1 as a linearmycin C biosynthetic
+    pathway entry and a partial BIOSYNTHESIS causal graph; cited DOI:10.1016/j.chembiol.2017.08.008,
+    MIBiG BGC0002072, and NCBI AKL64828.1/CP011664.1 grounding evidence while leaving
+    enzyme_id empty because the exact GenPept accession did not resolve in UniProtKB.
+  llm_assisted: true
