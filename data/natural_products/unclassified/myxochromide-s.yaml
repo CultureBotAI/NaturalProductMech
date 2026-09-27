@@ -193,6 +193,220 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0001023, BGC0001429,
     BGC0001430, BGC0001431. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: MchA polyketide synthase
+  proposed: true
+  notes: MIBiG assigns AJ698723.2 CAG28678.1/mchA to the iterative type I PKS module
+    that contributes the polyketide portion of the myxochromide S1 scaffold. The exact
+    isolated substrate and product are not resolved, and no current exact UniProtKB
+    entry was found for CAG28678.1 or the deleted historical Q50JA4 cross-reference.
+  evidence:
+  - reference: DOI:10.1002/cbic.200400282
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Structure and biosynthesis of myxochromides S1-3 in Stigmatella aurantiaca
+    notes: Wenzel et al. cloned and sequenced the Stigmatella aurantiaca AJ698723.2
+      locus that encodes MchA, MchB, and MchC and linked the locus to myxochromide
+      S1-3 biosynthesis by gene inactivation.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001023.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: Scaffold biosynthesis
+    notes: MIBiG BGC0001023.5 lists myxochromide S1 as the Stigmatella aurantiaca
+      product, reports AJ698723.2 as the locus, and annotates CAG28678.1/mchA, CAG29031.1/mchB,
+      and CAG29032.1/mchC as scaffold-biosynthesis genes.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAG28678.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: polyketide synthase
+    notes: NCBI Protein CAG28678.1 is the 2166 aa AJ698723.2 mchA coding sequence.
+      Its historical UniProtKB/TrEMBL Q50JA4 cross-reference now resolves as a deleted
+      UniProtKB entry.
+- step_number: 2
+  enzyme_label: MchB nonribosomal peptide synthetase
+  proposed: true
+  notes: MIBiG assigns AJ698723.2 CAG29031.1/mchB to the NRPS modules that incorporate
+    the threonine and leucine portions inferred for myxochromide S1 scaffold biosynthesis.
+    The exact isolated substrate and product are not resolved, and no current exact
+    UniProtKB entry was found for CAG29031.1 or the deleted historical Q50JA3 cross-reference.
+  evidence:
+  - reference: DOI:10.1002/cbic.200400282
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Structure and biosynthesis of myxochromides S1-3 in Stigmatella aurantiaca
+    notes: Wenzel et al. cloned and sequenced the Stigmatella aurantiaca AJ698723.2
+      locus that encodes MchA, MchB, and MchC and linked the locus to myxochromide
+      S1-3 biosynthesis by gene inactivation.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001023.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: Scaffold biosynthesis
+    notes: MIBiG BGC0001023.5 lists myxochromide S1 as the Stigmatella aurantiaca
+      product, reports AJ698723.2 as the locus, and annotates CAG28678.1/mchA, CAG29031.1/mchB,
+      and CAG29032.1/mchC as scaffold-biosynthesis genes.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAG29031.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: nonribosomal peptide synthetase (modules 1 and 2)
+    notes: NCBI Protein CAG29031.1 is the 3057 aa AJ698723.2 mchB coding sequence.
+      Its historical UniProtKB/TrEMBL Q50JA3 cross-reference now resolves as a deleted
+      UniProtKB entry.
+- step_number: 3
+  enzyme_label: MchC nonribosomal peptide synthetase
+  proposed: true
+  notes: MIBiG assigns AJ698723.2 CAG29032.1/mchC to the downstream NRPS modules and
+    thioesterase that complete myxochromide S1 scaffold biosynthesis. The exact isolated
+    substrate and product are not resolved, and no current exact UniProtKB entry was
+    found for CAG29032.1 or the deleted historical Q50JA2 cross-reference.
+  evidence:
+  - reference: DOI:10.1002/cbic.200400282
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Structure and biosynthesis of myxochromides S1-3 in Stigmatella aurantiaca
+    notes: Wenzel et al. cloned and sequenced the Stigmatella aurantiaca AJ698723.2
+      locus that encodes MchA, MchB, and MchC and linked the locus to myxochromide
+      S1-3 biosynthesis by gene inactivation.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001023.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: Scaffold biosynthesis
+    notes: MIBiG BGC0001023.5 lists myxochromide S1 as the Stigmatella aurantiaca
+      product, reports AJ698723.2 as the locus, and annotates CAG28678.1/mchA, CAG29031.1/mchB,
+      and CAG29032.1/mchC as scaffold-biosynthesis genes.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAG29032.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: nonribosomal peptide synthetase (modules 3 to 6)
+    notes: NCBI Protein CAG29032.1 is the 4468 aa AJ698723.2 mchC coding sequence.
+      Its historical UniProtKB/TrEMBL Q50JA2 cross-reference now resolves as a deleted
+      UniProtKB entry.
+causal_graphs:
+- graph_id: myxochromide-s-mch-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Stigmatella aurantiaca myxochromide S1 biosynthesis graph for
+    the BGC0001023 MchA-MchB-MchC PKS/NRPS scaffold genes.
+  nodes:
+  - node_id: mcha
+    label: MchA polyketide synthase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mchb
+    label: MchB nonribosomal peptide synthetase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mchc
+    label: MchC nonribosomal peptide synthetase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mch_scaffold_biosynthesis
+    label: myxochromide S1 PKS/NRPS scaffold biosynthesis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: myxochromide_s1
+    label: myxochromide S1
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-c2e4d35396
+    grounding_status: GROUNDED
+  edges:
+  - subject: mcha
+    predicate: contributes to
+    object: mch_scaffold_biosynthesis
+    notes: This edge follows MIBiG's scaffold-biosynthesis assignment for mchA/CAG28678.1
+      and stops at the process level because the isolated MchA substrate-product pair
+      was not assayed.
+    evidence:
+    - reference: DOI:10.1002/cbic.200400282
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Structure and biosynthesis of myxochromides S1-3 in Stigmatella aurantiaca
+      notes: Wenzel et al. cloned and sequenced the Stigmatella aurantiaca AJ698723.2
+        locus that encodes MchA, MchB, and MchC and linked the locus to myxochromide
+        S1-3 biosynthesis by gene inactivation.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001023.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Scaffold biosynthesis
+      notes: MIBiG BGC0001023.5 lists myxochromide S1 as the Stigmatella aurantiaca
+        product, reports AJ698723.2 as the locus, and annotates CAG28678.1/mchA, CAG29031.1/mchB,
+        and CAG29032.1/mchC as scaffold-biosynthesis genes.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAG28678.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: polyketide synthase
+      notes: NCBI Protein CAG28678.1 is the 2166 aa AJ698723.2 mchA coding sequence.
+        Its historical UniProtKB/TrEMBL Q50JA4 cross-reference now resolves as a deleted
+        UniProtKB entry.
+  - subject: mchb
+    predicate: contributes to
+    object: mch_scaffold_biosynthesis
+    notes: This edge follows MIBiG's scaffold-biosynthesis assignment for mchB/CAG29031.1
+      and stops at the process level because the isolated MchB substrate-product pair
+      was not assayed.
+    evidence:
+    - reference: DOI:10.1002/cbic.200400282
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Structure and biosynthesis of myxochromides S1-3 in Stigmatella aurantiaca
+      notes: Wenzel et al. cloned and sequenced the Stigmatella aurantiaca AJ698723.2
+        locus that encodes MchA, MchB, and MchC and linked the locus to myxochromide
+        S1-3 biosynthesis by gene inactivation.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001023.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Scaffold biosynthesis
+      notes: MIBiG BGC0001023.5 lists myxochromide S1 as the Stigmatella aurantiaca
+        product, reports AJ698723.2 as the locus, and annotates CAG28678.1/mchA, CAG29031.1/mchB,
+        and CAG29032.1/mchC as scaffold-biosynthesis genes.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAG29031.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: nonribosomal peptide synthetase (modules 1 and 2)
+      notes: NCBI Protein CAG29031.1 is the 3057 aa AJ698723.2 mchB coding sequence.
+        Its historical UniProtKB/TrEMBL Q50JA3 cross-reference now resolves as a deleted
+        UniProtKB entry.
+  - subject: mchc
+    predicate: contributes to
+    object: mch_scaffold_biosynthesis
+    notes: This edge follows MIBiG's scaffold-biosynthesis assignment for mchC/CAG29032.1
+      and stops at the process level because the isolated MchC substrate-product pair
+      was not assayed.
+    evidence:
+    - reference: DOI:10.1002/cbic.200400282
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Structure and biosynthesis of myxochromides S1-3 in Stigmatella aurantiaca
+      notes: Wenzel et al. cloned and sequenced the Stigmatella aurantiaca AJ698723.2
+        locus that encodes MchA, MchB, and MchC and linked the locus to myxochromide
+        S1-3 biosynthesis by gene inactivation.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001023.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Scaffold biosynthesis
+      notes: MIBiG BGC0001023.5 lists myxochromide S1 as the Stigmatella aurantiaca
+        product, reports AJ698723.2 as the locus, and annotates CAG28678.1/mchA, CAG29031.1/mchB,
+        and CAG29032.1/mchC as scaffold-biosynthesis genes.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAG29032.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: nonribosomal peptide synthetase (modules 3 to 6)
+      notes: NCBI Protein CAG29032.1 is the 4468 aa AJ698723.2 mchC coding sequence.
+        Its historical UniProtKB/TrEMBL Q50JA2 cross-reference now resolves as a deleted
+        UniProtKB entry.
+  - subject: mch_scaffold_biosynthesis
+    predicate: assembles
+    object: myxochromide_s1
+    notes: The edge connects the Mch PKS/NRPS scaffold process to the exact myxochromide
+      S1 structure in this record; the record's shared-structure discussion about
+      later MIBiG entries is left open.
+    evidence:
+    - reference: DOI:10.1002/cbic.200400282
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Structure and biosynthesis of myxochromides S1-3 in Stigmatella aurantiaca
+      notes: Wenzel et al. cloned and sequenced the Stigmatella aurantiaca AJ698723.2
+        locus that encodes MchA, MchB, and MchC and linked the locus to myxochromide
+        S1-3 biosynthesis by gene inactivation.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001023.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Scaffold biosynthesis
+      notes: MIBiG BGC0001023.5 lists myxochromide S1 as the Stigmatella aurantiaca
+        product, reports AJ698723.2 as the locus, and annotates CAG28678.1/mchA, CAG29031.1/mchB,
+        and CAG29032.1/mchC as scaffold-biosynthesis genes.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -202,3 +416,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T14:44:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added proposed MchA, MchB, and MchC biosynthetic pathway steps and a BIOSYNTHESIS
+    causal graph for the BGC0001023 myxochromide S1 PKS/NRPS scaffold genes; left
+    the enzyme nodes ungrounded because GenPept CAG28678.1, CAG29031.1, and CAG29032.1
+    resolve at NCBI but their historical UniProtKB TrEMBL cross-references Q50JA4,
+    Q50JA3, and Q50JA2 are deleted.
+  llm_assisted: true
