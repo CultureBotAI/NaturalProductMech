@@ -116,12 +116,13 @@ from a source. This is what the rest of the record exists to support.</p>
 <h2>Causal graph &mdash; {{ g.scope|lower }} <span class="tag">{{ node_count }} node{{ '' if node_count == 1 else 's' }}, {{ edge_count }} edge{{ '' if edge_count == 1 else 's' }}</span></h2>
 {% if g.description %}<p class="sub">{{ g.description }}</p>{% endif %}
 <div class="scroll"><table>
-<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Evidence</th></tr>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 {% for e in g.edges %}
 <tr>
   <td>{{ e.subject_label }}</td>
   <td>{{ e.predicate }}</td>
   <td>{{ e.object_label }}</td>
+  <td>{{ e.notes or '' }}</td>
   <td class="mono">{% for reference in e.references %}{{ reference }}{% if not loop.last %}<br>{% endif %}{% endfor %}</td>
 </tr>
 {% endfor %}
