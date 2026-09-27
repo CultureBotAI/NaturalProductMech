@@ -124,6 +124,170 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000240, BGC0000241.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: Lom62 acyltransferase/decarboxylase with Lom63 acyl carrier protein
+  proposed: true
+  notes: This curates S. pacifica DPJ-0019 Lom62/AHF72798.1 and Lom63/AHF72799.1 as
+    an assayed acyltransferase/decarboxylase plus ACP pair that can generate the proposed
+    propionyl-ACP starter unit for lomaiviticin biosynthesis. The exact DPJ-0019 GenPept
+    accessions did not resolve in UniProtKB exact-accession or KF515737/lom62/lom63
+    searches on 2026-09-27, so enzyme_id is left unfilled and NCBI Protein records
+    are cited as official sequence evidence.
+  evidence:
+  - reference: DOI:10.1021/ol403714g
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Robust, Lom62-dependent formation
+    notes: Waldman and Balskus cloned Salinispora pacifica DPJ-0019 lom62, lom60,
+      and lom63, then showed in vitro by HPLC/LC-MS that Lom62 generated the expected
+      propionyl-ACP thioester robustly only with methylmalonyl-CoA and Lom63.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AHF72798.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: acyl transferase/decarboxylase
+    notes: NCBI GenPept AHF72798.1 is the 324 aa S. pacifica DPJ-0019 lom62 product
+      on KF515737.1:59562..60536; exact AHF72798.1, AHF72798, lom62, and KF515737
+      UniProtKB searches did not resolve a S. pacifica accession on 2026-09-27.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AHF72799.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: phosphopantheine-binding protein
+    notes: NCBI GenPept AHF72799.1 is the 107 aa S. pacifica DPJ-0019 lom63 acyl carrier
+      protein on complement(KF515737.1:60555..60878); exact AHF72799.1, AHF72799,
+      lom63, and KF515737 UniProtKB searches did not resolve a S. pacifica accession
+      on 2026-09-27.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF515737.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: lomaiviticin biosynthetic gene cluster
+    notes: GenBank KF515737.1 is the 72,505 bp S. pacifica DPJ-0019 lomaiviticin biosynthetic
+      gene cluster and carries lom62/AHF72798.1 and lom63/AHF72799.1.
+causal_graphs:
+- graph_id: lomaiviticin-a-lom62-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial S. pacifica lomaiviticin A biosynthesis graph for the proposed
+    Lom62/Lom63 propionyl-ACP starter-unit branch.
+  nodes:
+  - node_id: lom62
+    label: Lom62 acyltransferase/decarboxylase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: lom63
+    label: Lom63 acyl carrier protein
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: propionyl_acp_generation
+    label: propionyl-ACP starter-unit generation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: lomaiviticin_a
+    label: lomaiviticin A
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-4b1562dcf5
+    grounding_status: GROUNDED
+  edges:
+  - subject: lom62
+    predicate: catalyzes
+    object: propionyl_acp_generation
+    notes: The in vitro assay showed Lom62-dependent propionyl-Lom63 formation from
+      methylmalonyl-CoA; this graph leaves the subsequent propionyl starter-unit transfer
+      to the type II PKS unresolved.
+    evidence:
+    - reference: DOI:10.1021/ol403714g
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Robust, Lom62-dependent formation
+      notes: Waldman and Balskus cloned Salinispora pacifica DPJ-0019 lom62, lom60,
+        and lom63, then showed in vitro by HPLC/LC-MS that Lom62 generated the expected
+        propionyl-ACP thioester robustly only with methylmalonyl-CoA and Lom63.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AHF72798.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: acyl transferase/decarboxylase
+      notes: NCBI GenPept AHF72798.1 is the 324 aa S. pacifica DPJ-0019 lom62 product
+        on KF515737.1:59562..60536; exact AHF72798.1, AHF72798, lom62, and KF515737
+        UniProtKB searches did not resolve a S. pacifica accession on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AHF72799.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: phosphopantheine-binding protein
+      notes: NCBI GenPept AHF72799.1 is the 107 aa S. pacifica DPJ-0019 lom63 acyl
+        carrier protein on complement(KF515737.1:60555..60878); exact AHF72799.1,
+        AHF72799, lom63, and KF515737 UniProtKB searches did not resolve a S. pacifica
+        accession on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF515737.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: lomaiviticin biosynthetic gene cluster
+      notes: GenBank KF515737.1 is the 72,505 bp S. pacifica DPJ-0019 lomaiviticin
+        biosynthetic gene cluster and carries lom62/AHF72798.1 and lom63/AHF72799.1.
+  - subject: lom63
+    predicate: is the preferred carrier protein for
+    object: propionyl_acp_generation
+    notes: Lom63 is represented as the preferred ACP partner because competition and
+      single-ACP assays favored propionyl-Lom63 formation over Lom60.
+    evidence:
+    - reference: DOI:10.1021/ol403714g
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Robust, Lom62-dependent formation
+      notes: Waldman and Balskus cloned Salinispora pacifica DPJ-0019 lom62, lom60,
+        and lom63, then showed in vitro by HPLC/LC-MS that Lom62 generated the expected
+        propionyl-ACP thioester robustly only with methylmalonyl-CoA and Lom63.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AHF72798.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: acyl transferase/decarboxylase
+      notes: NCBI GenPept AHF72798.1 is the 324 aa S. pacifica DPJ-0019 lom62 product
+        on KF515737.1:59562..60536; exact AHF72798.1, AHF72798, lom62, and KF515737
+        UniProtKB searches did not resolve a S. pacifica accession on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AHF72799.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: phosphopantheine-binding protein
+      notes: NCBI GenPept AHF72799.1 is the 107 aa S. pacifica DPJ-0019 lom63 acyl
+        carrier protein on complement(KF515737.1:60555..60878); exact AHF72799.1,
+        AHF72799, lom63, and KF515737 UniProtKB searches did not resolve a S. pacifica
+        accession on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF515737.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: lomaiviticin biosynthetic gene cluster
+      notes: GenBank KF515737.1 is the 72,505 bp S. pacifica DPJ-0019 lomaiviticin
+        biosynthetic gene cluster and carries lom62/AHF72798.1 and lom63/AHF72799.1.
+  - subject: propionyl_acp_generation
+    predicate: contributes to
+    object: lomaiviticin_a
+    notes: Waldman and Balskus proposed Lom62/Lom63 propionyl-ACP formation as lomaiviticin
+      starter-unit logic based on the lomaiviticin scaffold and cluster context; the
+      edge is therefore narrower than a complete pathway from this starter unit to
+      lomaiviticin A.
+    evidence:
+    - reference: DOI:10.1021/ol403714g
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Robust, Lom62-dependent formation
+      notes: Waldman and Balskus cloned Salinispora pacifica DPJ-0019 lom62, lom60,
+        and lom63, then showed in vitro by HPLC/LC-MS that Lom62 generated the expected
+        propionyl-ACP thioester robustly only with methylmalonyl-CoA and Lom63.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AHF72798.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: acyl transferase/decarboxylase
+      notes: NCBI GenPept AHF72798.1 is the 324 aa S. pacifica DPJ-0019 lom62 product
+        on KF515737.1:59562..60536; exact AHF72798.1, AHF72798, lom62, and KF515737
+        UniProtKB searches did not resolve a S. pacifica accession on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AHF72799.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: phosphopantheine-binding protein
+      notes: NCBI GenPept AHF72799.1 is the 107 aa S. pacifica DPJ-0019 lom63 acyl
+        carrier protein on complement(KF515737.1:60555..60878); exact AHF72799.1,
+        AHF72799, lom63, and KF515737 UniProtKB searches did not resolve a S. pacifica
+        accession on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF515737.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: lomaiviticin biosynthetic gene cluster
+      notes: GenBank KF515737.1 is the 72,505 bp S. pacifica DPJ-0019 lomaiviticin
+        biosynthetic gene cluster and carries lom62/AHF72798.1 and lom63/AHF72799.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -133,3 +297,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T13:45:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a proposed DPJ-0019 Lom62/Lom63 propionyl-ACP starter-unit pathway
+    step and BIOSYNTHESIS causal graph for lomaiviticin A, citing the in vitro Waldman-Balskus
+    Lom62/Lom63 assay and official NCBI GenPept/Nuccore records; left UniProtKB identifiers
+    unfilled because the exact GenPept and locus searches did not resolve.
+  llm_assisted: true
