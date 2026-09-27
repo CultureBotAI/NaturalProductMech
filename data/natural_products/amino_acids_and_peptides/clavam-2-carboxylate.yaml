@@ -185,11 +185,10 @@ causal_graphs:
     evidence:
     - reference: DOI:10.1128/AAC.43.5.1215
       evidence_type: PRIMARY_EXPERIMENT
-      snippet: the levels of clavam-2-carboxylate and 2-hydroxymethylclavam production
-        were significantly reduced
-      notes: Mosher et al. disrupted Streptomyces clavuligerus cas1 and showed reduced
-        clavam-2-carboxylate production in soy medium; cas1/cas2 double mutants produced
-        none of the antipodal clavams.
+      snippet: CAS1 and CAS2 contribute to a common pool of clavaminic acid
+      notes: Mosher et al. concluded from the cas1 single-mutant and cas1/cas2 double-mutant
+        phenotypes that both CAS isoenzymes contribute to a shared intracellular clavaminic-acid
+        pool.
     - reference: https://www.uniprot.org/uniprotkb/E2PWJ7
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -209,11 +208,11 @@ causal_graphs:
     evidence:
     - reference: DOI:10.1128/AAC.43.5.1215
       evidence_type: PRIMARY_EXPERIMENT
-      snippet: the levels of clavam-2-carboxylate and 2-hydroxymethylclavam production
-        were significantly reduced
-      notes: Mosher et al. disrupted Streptomyces clavuligerus cas1 and showed reduced
-        clavam-2-carboxylate production in soy medium; cas1/cas2 double mutants produced
-        none of the antipodal clavams.
+      snippet: serves as a precursor for the biosynthesis of all clavams produced
+        by S. clavuligerus
+      notes: Mosher et al. reported that cas1/cas2 double mutants failed to make clavam-2-carboxylate
+        or the other assayed clavam metabolites, supporting a clavaminic-acid precursor
+        pool upstream of the clavam branch.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -223,7 +222,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
-- timestamp: '2026-09-27T09:32:59Z'
+- timestamp: '2026-09-27T09:48:39Z'
   curator: codex
   action: RECORD_CURATED
   changes: Added Streptomyces clavuligerus ATCC 27064 CAS1 UniProtKB:E2PWJ7 as a clavam-2-carboxylate
