@@ -146,6 +146,113 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: XiaH aryl-coupling flavoprotein
+  proposed: true
+  notes: This proposed pathway entry captures Streptomyces sp. HKI0576 xiaH/CCH63734.1
+    as the BGC0000665 aryl-coupling flavoprotein that forms the N-N-linked dixiamycin
+    scaffold. The immediate xiamycin monomer and the atropodiastereomer branch between
+    dixiamycin A and B are left unexpanded.
+  evidence:
+  - reference: DOI:10.1002/anie.201303733
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Regiodivergent N-C and N-N Aryl Coupling Reactions of Indoloterpenes
+    notes: Baunach et al. assigned the HKI0576 xiamycin flavoenzyme XiaH as an aryl-coupling
+      enzyme for N-N-linked dixiamycin formation.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0000665.5 lists dixiamycin A and dixiamycin B as products of the
+      HE815466.1 Streptomyces sp. HKI0576 xiamycin cluster.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: The official MIBiG BGC0000665.5 GenBank summary annotates xiaH as HE815466.1:7534..9327
+      on the reverse strand with GenPept product CCH63734.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CCH63734.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: XiaH protein
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept CCH63734.1 is the 597 aa xiaH coding sequence from the Streptomyces
+      sp. HKI0576 HE815466.1 indolosesquiterpenoid cluster. UniProtKB currently has
+      no exact entry for this GenPept or EMBL accession.
+causal_graphs:
+- graph_id: dixiamycin-a-xiah-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces sp. HKI0576 dixiamycin A biosynthesis graph for
+    XiaH-mediated aryl coupling of xiamycin-type indoloterpenes.
+  nodes:
+  - node_id: xiamycin_monomers
+    label: xiamycin-type indoloterpene monomers
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: xiah
+    label: XiaH
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: dixiamycin_a
+    label: dixiamycin A
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-abcb3d7c73
+    grounding_status: GROUNDED
+  edges:
+  - subject: xiamycin_monomers
+    predicate: are aryl-coupled by
+    object: xiah
+    notes: This edge captures only the XiaH aryl-coupling branch toward dixiamycins;
+      upstream xiamycin biosynthesis by the same cluster is left unexpanded.
+    evidence:
+    - reference: DOI:10.1002/anie.201303733
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Regiodivergent N-C and N-N Aryl Coupling Reactions of Indoloterpenes
+      notes: Baunach et al. assigned the HKI0576 xiamycin flavoenzyme XiaH as an aryl-coupling
+        enzyme for N-N-linked dixiamycin formation.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0000665.5 lists dixiamycin A and dixiamycin B as products of
+        the HE815466.1 Streptomyces sp. HKI0576 xiamycin cluster.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: The official MIBiG BGC0000665.5 GenBank summary annotates xiaH as HE815466.1:7534..9327
+        on the reverse strand with GenPept product CCH63734.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCH63734.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: XiaH protein
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept CCH63734.1 is the 597 aa xiaH coding sequence from the Streptomyces
+        sp. HKI0576 HE815466.1 indolosesquiterpenoid cluster. UniProtKB currently
+        has no exact entry for this GenPept or EMBL accession.
+  - subject: xiah
+    predicate: forms N-N-linked
+    object: dixiamycin_a
+    notes: The record represents the Standard InChIKey shared by the MIBiG dixiamycin
+      A and dixiamycin B rows from BGC0000665.
+    evidence:
+    - reference: DOI:10.1002/anie.201303733
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Regiodivergent N-C and N-N Aryl Coupling Reactions of Indoloterpenes
+      notes: Baunach et al. assigned the HKI0576 xiamycin flavoenzyme XiaH as an aryl-coupling
+        enzyme for N-N-linked dixiamycin formation.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000665.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0000665.5 lists dixiamycin A and dixiamycin B as products of
+        the HE815466.1 Streptomyces sp. HKI0576 xiamycin cluster.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000665.5/BGC0000665.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: The official MIBiG BGC0000665.5 GenBank summary annotates xiaH as HE815466.1:7534..9327
+        on the reverse strand with GenPept product CCH63734.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCH63734.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: XiaH protein
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept CCH63734.1 is the 597 aa xiaH coding sequence from the Streptomyces
+        sp. HKI0576 HE815466.1 indolosesquiterpenoid cluster. UniProtKB currently
+        has no exact entry for this GenPept or EMBL accession.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -155,3 +262,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T22:27:43Z'
+  curator: codex
+  action: ADDED_DIXIAMYCIN_A_XIAH_BIOSYNTHESIS_GRAPH
+  changes: Added a Streptomyces sp. HKI0576 XiaH proposed biosynthetic pathway step
+    and BIOSYNTHESIS causal graph for dixiamycin A; retained XiaH as UNGROUNDED because
+    no exact UniProtKB entry resolves for HE815466.1 GenPept CCH63734.1.
+  llm_assisted: true
