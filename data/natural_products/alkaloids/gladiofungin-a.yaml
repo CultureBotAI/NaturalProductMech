@@ -130,6 +130,131 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0002083, BGC0002087.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: LvStA_05069 AfsA-like offloading domain
+  proposed: true
+  notes: This curates the terminal AfsA-like offloading domain of the Burkholderia
+    gladioli Lv-StA LvStA_05069/KAF1058474.1 trans-AT PKS as a required contributor
+    to noncanonical chain release and butenolide formation in BGC0002083 gladiofungin
+    A biosynthesis. The exact KAF1058474.1 GenPept accession did not resolve in UniProtKB
+    accession search on 2026-09-27, so enzyme_id is left unfilled and the public GenPept
+    sequence is cited as official NCBI grounding evidence.
+  evidence:
+  - reference: DOI:10.1002/anie.202005711
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: the AfsA domain plays a key role
+    notes: Florez et al. used a CRISPR/Cas marker-less deletion to remove part of
+      the AfsA-like terminal offloading domain in the Burkholderia gladioli HKI0739/Lv-StA
+      gla trans-AT PKS assembly line and showed that the mutant no longer produced
+      gladiofungin A or B.
+  - reference: mibig:BGC0002083
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0002083 version 3 maps module 10 of the Burkholderia gladioli
+      Lv-StA gladiofungin trans-AT PKS assembly line to LvStA_05069 and annotates
+      its terminal modification domain as A-factor synthase A.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/KAF1058474.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: Polyketide synthase PksN
+    notes: NCBI GenPept KAF1058474.1 is the 10,181 aa LvStA_05069 CDS on complement(WITE01000004.1:1156002..1186547)
+      from Burkholderia gladioli Lv-StA. The exact KAF1058474.1 GenPept accession
+      did not resolve in UniProtKB accession search on 2026-09-27.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/WITE01000004.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: Burkholderia gladioli strain Lv-StA LvStA_4
+    notes: GenBank WITE01000004.1 contains the BGC0002083 region used by MIBiG; within
+      that contig, LvStA_05069 encodes protein KAF1058474.1.
+causal_graphs:
+- graph_id: gladiofungin-a-lvsta05069-afsa-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Burkholderia gladioli Lv-StA gladiofungin A biosynthesis graph
+    for the terminal AfsA-like LvStA_05069 offloading-domain contribution to butenolide-containing
+    chain release.
+  nodes:
+  - node_id: lvsta05069_afsa
+    label: LvStA_05069 AfsA-like offloading domain
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: butenolide_chain_release
+    label: butenolide-forming polyketide chain release
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: gladiofungin_a
+    label: gladiofungin A
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-76bc5ac001
+    grounding_status: GROUNDED
+  edges:
+  - subject: lvsta05069_afsa
+    predicate: is required for
+    object: butenolide_chain_release
+    notes: CRISPR/Cas deletion inside the AfsA-like terminal domain abolished gladiofungin
+      A/B production without detectable polar effects on the downstream glaF and glaG
+      genes. This edge is scoped to the terminal domain and does not assert a free
+      substrate or the full PKS assembly order.
+    evidence:
+    - reference: DOI:10.1002/anie.202005711
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the AfsA domain plays a key role
+      notes: Florez et al. used a CRISPR/Cas marker-less deletion to remove part of
+        the AfsA-like terminal offloading domain in the Burkholderia gladioli HKI0739/Lv-StA
+        gla trans-AT PKS assembly line and showed that the mutant no longer produced
+        gladiofungin A or B.
+    - reference: mibig:BGC0002083
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002083 version 3 maps module 10 of the Burkholderia gladioli
+        Lv-StA gladiofungin trans-AT PKS assembly line to LvStA_05069 and annotates
+        its terminal modification domain as A-factor synthase A.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/KAF1058474.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Polyketide synthase PksN
+      notes: NCBI GenPept KAF1058474.1 is the 10,181 aa LvStA_05069 CDS on complement(WITE01000004.1:1156002..1186547)
+        from Burkholderia gladioli Lv-StA. The exact KAF1058474.1 GenPept accession
+        did not resolve in UniProtKB accession search on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/WITE01000004.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Burkholderia gladioli strain Lv-StA LvStA_4
+      notes: GenBank WITE01000004.1 contains the BGC0002083 region used by MIBiG;
+        within that contig, LvStA_05069 encodes protein KAF1058474.1.
+  - subject: butenolide_chain_release
+    predicate: contributes to
+    object: gladiofungin_a
+    notes: The terminal AfsA-like domain is curated as a required domain for the butenolide-bearing
+      chain-release phase of gladiofungin A biosynthesis; earlier glutarimide and
+      polyketide-chain assembly steps remain unexpanded.
+    evidence:
+    - reference: DOI:10.1002/anie.202005711
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the AfsA domain plays a key role
+      notes: Florez et al. used a CRISPR/Cas marker-less deletion to remove part of
+        the AfsA-like terminal offloading domain in the Burkholderia gladioli HKI0739/Lv-StA
+        gla trans-AT PKS assembly line and showed that the mutant no longer produced
+        gladiofungin A or B.
+    - reference: mibig:BGC0002083
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002083 version 3 maps module 10 of the Burkholderia gladioli
+        Lv-StA gladiofungin trans-AT PKS assembly line to LvStA_05069 and annotates
+        its terminal modification domain as A-factor synthase A.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/KAF1058474.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Polyketide synthase PksN
+      notes: NCBI GenPept KAF1058474.1 is the 10,181 aa LvStA_05069 CDS on complement(WITE01000004.1:1156002..1186547)
+        from Burkholderia gladioli Lv-StA. The exact KAF1058474.1 GenPept accession
+        did not resolve in UniProtKB accession search on 2026-09-27.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/WITE01000004.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Burkholderia gladioli strain Lv-StA LvStA_4
+      notes: GenBank WITE01000004.1 contains the BGC0002083 region used by MIBiG;
+        within that contig, LvStA_05069 encodes protein KAF1058474.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -139,3 +264,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T12:46:55Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the Burkholderia gladioli Lv-StA LvStA_05069 AfsA-like offloading
+    domain as a gladiofungin A biosynthetic pathway entry and a partial BIOSYNTHESIS
+    causal graph; cited DOI:10.1002/anie.202005711, MIBiG BGC0002083, and NCBI KAF1058474.1/WITE01000004.1
+    grounding evidence while leaving enzyme_id empty because the exact GenPept accession
+    did not resolve in UniProtKB.
+  llm_assisted: true
