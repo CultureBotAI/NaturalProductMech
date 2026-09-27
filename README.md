@@ -18,16 +18,17 @@ compounds and their mechanisms),
 [dismech](https://github.com/monarch-initiative/dismech): one YAML per entity,
 ontology-grounded, evidence-backed, schema-validated, curated incrementally.
 
-## Status: seeded from nine sources, curation not started
+## Status: seeded from nine sources, pathway curation underway
 
 **2026-09-09.** The corpus reproduces offline from committed inventories:
 MIBiG (structures, producers, gene clusters), ChEBI (grounding, origins),
 LOTUS and CyanoMetDB (cited occurrences), NCBI Taxonomy (name resolution),
 NPClassifier (the filing pathway), PubChem BioAssay and BindingDB (measured
 activities and targets), and AntibioticMech (antimicrobial classification and
-cross-corpus links). Every record is `SEEDED`; no curator has yet touched one.
-`biosynthetic_pathway` and `causal_graphs` are empty — that is M6, the work the
-rest exists for. Owed work is in [NEXT_TASKS.md](NEXT_TASKS.md).
+cross-corpus links). Every record remains `SEEDED` until a curator signs off
+identity, structure, filing class, and producer claims; partial
+`biosynthetic_pathway` and `causal_graphs` curation is now underway. Owed work
+is in [NEXT_TASKS.md](NEXT_TASKS.md).
 
 <!-- BEGIN GENERATED CORPUS STATS -->
 
@@ -61,11 +62,11 @@ field coverage (records carrying at least one item):
   producer_organisms                   3076
   occurrences                          2342
   biosynthetic_gene_clusters           3115
-  biosynthetic_pathway                   18
+  biosynthetic_pathway                   19
   bioactivities                         176
   bioactivity_summary                   317
   molecular_targets                      14
-  causal_graphs                          57
+  causal_graphs                          58
   related_records                       205
   discussions                           325
 
