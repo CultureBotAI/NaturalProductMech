@@ -99,7 +99,76 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>PchDS<br><span class="mono">UniProtKB:B6HFX8</span></td>
+  <td class="mono">RHEA:17653</td>
+  <td class="mono">CHEBI:175763 &rarr; CHEBI:58756</td>
+  <td class="mono">DOI:10.1080/09168451.2018.1536518</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>PchDS<br><span class="mono">UniProtKB:B6HFX8</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:58756 &rarr; CHEBI:177897</td>
+  <td class="mono">DOI:10.1080/09168451.2018.1536518</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>PchP450<br><span class="mono">UniProtKB:B6HFX9</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:177897 &rarr; CHEBI:189095</td>
+  <td class="mono">DOI:10.1080/09168451.2018.1536518</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: The C-terminal prenyltransferase domain of PchDS condenses isopentenyl diphosphate with (2E,6E)-farnesyl diphosphate to form (2E,6E,10E)-geranylgeranyl diphosphate in the conidiogenone pathway.</p><p class="sub">Step 2: The N-terminal terpene cyclase domain of PchDS cyclizes (2E,6E,10E)-geranylgeranyl diphosphate to deoxyconidiogenol.</p><p class="sub">Step 3: PchP450 is the Pc20g10870 P450 homolog proposed to catalyze the deoxyconidiogenol-to-conidiogenone oxidation in the Penicillium rubens AM920435.1 locus; the exact two-round oxidation was assayed with the Penicillium roqueforti PrP450 homolog, not directly with PchP450.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 6 edges</span></h2>
+<p class="sub">Penicillium rubens conidiogenone biosynthesis graph for PchDS formation and cyclization of GGPP, followed by the inferred PchP450 oxidation of deoxyconidiogenol to conidiogenone.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Evidence</th></tr>
+<tr>
+  <td>(2E,6E)-farnesyl diphosphate</td>
+  <td>is prenylated by</td>
+  <td>PchDS</td>
+  <td class="mono">DOI:10.1080/09168451.2018.1536518<br>https://www.uniprot.org/uniprotkb/B6HFX8<br>https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</td>
+</tr>
+<tr>
+  <td>PchDS</td>
+  <td>forms</td>
+  <td>(2E,6E,10E)-geranylgeranyl diphosphate</td>
+  <td class="mono">DOI:10.1080/09168451.2018.1536518<br>https://www.uniprot.org/uniprotkb/B6HFX8<br>https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</td>
+</tr>
+<tr>
+  <td>(2E,6E,10E)-geranylgeranyl diphosphate</td>
+  <td>is cyclized by</td>
+  <td>PchDS</td>
+  <td class="mono">DOI:10.1080/09168451.2018.1536518<br>https://www.uniprot.org/uniprotkb/B6HFX8<br>https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</td>
+</tr>
+<tr>
+  <td>PchDS</td>
+  <td>forms</td>
+  <td>deoxyconidiogenol</td>
+  <td class="mono">DOI:10.1080/09168451.2018.1536518<br>https://www.uniprot.org/uniprotkb/B6HFX8<br>https://www.ncbi.nlm.nih.gov/protein/CAP86415.1</td>
+</tr>
+<tr>
+  <td>deoxyconidiogenol</td>
+  <td>is putatively oxidized by</td>
+  <td>PchP450</td>
+  <td class="mono">DOI:10.1080/09168451.2018.1536518<br>https://www.uniprot.org/uniprotkb/B6HFX9<br>https://www.ncbi.nlm.nih.gov/protein/CAP86416.1</td>
+</tr>
+<tr>
+  <td>PchP450</td>
+  <td>putatively forms</td>
+  <td>conidiogenone</td>
+  <td class="mono">DOI:10.1080/09168451.2018.1536518<br>https://www.uniprot.org/uniprotkb/B6HFX9<br>https://www.ncbi.nlm.nih.gov/protein/CAP86416.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
