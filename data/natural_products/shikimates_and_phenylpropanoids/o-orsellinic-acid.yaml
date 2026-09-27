@@ -513,6 +513,157 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000057, BGC0002212,
     BGC0002594, BGC0002596, BGC0002812. Confirm they describe the same compound rather
     than an upstream cross-reference error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q5AUX1
+  enzyme_label: OrsA
+  reaction_id: RHEA:62973
+  product: CHEBI:16162
+  notes: This curates the Aspergillus nidulans FGSC A4 non-reducing polyketide synthase
+    OrsA from the BGC0000057/AACD01000135.1 route; OrsA condenses acetyl-CoA with
+    three malonyl-CoA units to form o-orsellinate, the physiological conjugate base
+    of the record compound o-orsellinic acid.
+  evidence:
+  - reference: DOI:10.1039/b904541d
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: the polyketide synthase alone is required for orsellinic acid biosynthesis
+    notes: Sanchez et al. used targeted deletions in Aspergillus nidulans and found
+      that OrsA, the polyketide synthase encoded in the Ors/F9775 cluster, is sufficient
+      for o-orsellinic acid biosynthesis.
+  - reference: DOI:10.1073/pnas.0901870106
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: one induced gene cluster codes for the long-sought after polyketide synthase
+    notes: Schroeckh et al. identified the bacterium-induced Aspergillus nidulans
+      orsellinic acid/F9775 cluster and genetically connected its polyketide synthase
+      to production of orsellinic acid and related products.
+  - reference: https://www.uniprot.org/uniprotkb/Q5AUX1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: Reviewed UniProtKB:Q5AUX1 is the Aspergillus nidulans FGSC A4 OrsA orsellinic
+      acid synthase, length 2103 aa, annotates the left-to-right physiological RHEA:62973
+      reaction, and cross-references EMBL AACD01000135 protein EAA59563.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/EAA59563.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept EAA59563.1 is locus_tag AN7909.2 from the BGC0000057 AACD01000135.1
+      Aspergillus nidulans FGSC A4 locus and is sequence-identical to reviewed UniProtKB:Q5AUX1.
+causal_graphs:
+- graph_id: o-orsellinic-acid-orsa-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Aspergillus nidulans o-orsellinic acid biosynthesis graph for
+    OrsA condensation of acetyl-CoA and malonyl-CoA units to o-orsellinate.
+  nodes:
+  - node_id: acetyl_coa
+    label: acetyl-CoA(4-)
+    node_type: PRECURSOR
+    identifier: CHEBI:57288
+    grounding_status: GROUNDED
+  - node_id: malonyl_coa
+    label: malonyl-CoA(5-)
+    node_type: PRECURSOR
+    identifier: CHEBI:57384
+    grounding_status: GROUNDED
+  - node_id: orsa
+    label: OrsA
+    node_type: ENZYME
+    identifier: UniProtKB:Q5AUX1
+    grounding_status: GROUNDED
+  - node_id: o_orsellinate
+    label: o-orsellinate
+    node_type: COMPOUND
+    identifier: CHEBI:16162
+    grounding_status: GROUNDED
+  edges:
+  - subject: acetyl_coa
+    predicate: is condensed by
+    object: orsa
+    notes: RHEA:62973 selects acetyl-CoA as the starter unit in the OrsA o-orsellinate
+      synthase reaction.
+    evidence:
+    - reference: DOI:10.1039/b904541d
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the polyketide synthase alone is required for orsellinic acid biosynthesis
+      notes: Sanchez et al. used targeted deletions in Aspergillus nidulans and found
+        that OrsA, the polyketide synthase encoded in the Ors/F9775 cluster, is sufficient
+        for o-orsellinic acid biosynthesis.
+    - reference: DOI:10.1073/pnas.0901870106
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: one induced gene cluster codes for the long-sought after polyketide
+        synthase
+      notes: Schroeckh et al. identified the bacterium-induced Aspergillus nidulans
+        orsellinic acid/F9775 cluster and genetically connected its polyketide synthase
+        to production of orsellinic acid and related products.
+    - reference: https://www.uniprot.org/uniprotkb/Q5AUX1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:Q5AUX1 is the Aspergillus nidulans FGSC A4 OrsA orsellinic
+        acid synthase, length 2103 aa, annotates the left-to-right physiological RHEA:62973
+        reaction, and cross-references EMBL AACD01000135 protein EAA59563.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAA59563.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept EAA59563.1 is locus_tag AN7909.2 from the BGC0000057 AACD01000135.1
+        Aspergillus nidulans FGSC A4 locus and is sequence-identical to reviewed UniProtKB:Q5AUX1.
+  - subject: malonyl_coa
+    predicate: is condensed by
+    object: orsa
+    notes: RHEA:62973 consumes three malonyl-CoA units per o-orsellinate formed by
+      OrsA.
+    evidence:
+    - reference: DOI:10.1039/b904541d
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the polyketide synthase alone is required for orsellinic acid biosynthesis
+      notes: Sanchez et al. used targeted deletions in Aspergillus nidulans and found
+        that OrsA, the polyketide synthase encoded in the Ors/F9775 cluster, is sufficient
+        for o-orsellinic acid biosynthesis.
+    - reference: DOI:10.1073/pnas.0901870106
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: one induced gene cluster codes for the long-sought after polyketide
+        synthase
+      notes: Schroeckh et al. identified the bacterium-induced Aspergillus nidulans
+        orsellinic acid/F9775 cluster and genetically connected its polyketide synthase
+        to production of orsellinic acid and related products.
+    - reference: https://www.uniprot.org/uniprotkb/Q5AUX1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:Q5AUX1 is the Aspergillus nidulans FGSC A4 OrsA orsellinic
+        acid synthase, length 2103 aa, annotates the left-to-right physiological RHEA:62973
+        reaction, and cross-references EMBL AACD01000135 protein EAA59563.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAA59563.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept EAA59563.1 is locus_tag AN7909.2 from the BGC0000057 AACD01000135.1
+        Aspergillus nidulans FGSC A4 locus and is sequence-identical to reviewed UniProtKB:Q5AUX1.
+  - subject: orsa
+    predicate: forms
+    object: o_orsellinate
+    notes: The curated Rhea reaction forms o-orsellinate, which is the physiological
+      conjugate base of o-orsellinic acid.
+    evidence:
+    - reference: DOI:10.1039/b904541d
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the polyketide synthase alone is required for orsellinic acid biosynthesis
+      notes: Sanchez et al. used targeted deletions in Aspergillus nidulans and found
+        that OrsA, the polyketide synthase encoded in the Ors/F9775 cluster, is sufficient
+        for o-orsellinic acid biosynthesis.
+    - reference: DOI:10.1073/pnas.0901870106
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: one induced gene cluster codes for the long-sought after polyketide
+        synthase
+      notes: Schroeckh et al. identified the bacterium-induced Aspergillus nidulans
+        orsellinic acid/F9775 cluster and genetically connected its polyketide synthase
+        to production of orsellinic acid and related products.
+    - reference: https://www.uniprot.org/uniprotkb/Q5AUX1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:Q5AUX1 is the Aspergillus nidulans FGSC A4 OrsA orsellinic
+        acid synthase, length 2103 aa, annotates the left-to-right physiological RHEA:62973
+        reaction, and cross-references EMBL AACD01000135 protein EAA59563.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAA59563.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept EAA59563.1 is locus_tag AN7909.2 from the BGC0000057 AACD01000135.1
+        Aspergillus nidulans FGSC A4 locus and is sequence-identical to reviewed UniProtKB:Q5AUX1.
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
   curator: seed_from_sources
@@ -526,3 +677,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T07:01:14Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the Aspergillus nidulans OrsA o-orsellinate biosynthetic step and
+    a BIOSYNTHESIS causal graph grounded to reviewed UniProtKB:Q5AUX1.
+  llm_assisted: true
