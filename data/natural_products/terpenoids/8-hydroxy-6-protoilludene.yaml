@@ -101,10 +101,6 @@ biosynthetic_pathway:
     evidence_type: PRIMARY_EXPERIMENT
     notes: The Armillaria BGC study identified the MT277003.1 gene cluster and annotated
       GenPept QJQ03973.1 as the BGC0002445 Pro1 protein.
-  - reference: mibig:BGC0002445
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0002445 links the Armillaria gallica MT277003.1 terpene biosynthesis
-      cluster to 8α-hydroxy-6-protoilludene by heterologous expression.
   - reference: https://www.ncbi.nlm.nih.gov/protein/QJQ03973.1
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
@@ -174,10 +170,6 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: The Armillaria BGC study identified the MT277003.1 gene cluster and annotated
         GenPept QJQ03973.1 as the BGC0002445 Pro1 protein.
-    - reference: mibig:BGC0002445
-      evidence_type: DATABASE_ASSERTION
-      notes: MIBiG BGC0002445 links the Armillaria gallica MT277003.1 terpene biosynthesis
-        cluster to 8α-hydroxy-6-protoilludene by heterologous expression.
     - reference: https://www.ncbi.nlm.nih.gov/protein/QJQ03973.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -196,10 +188,6 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: The Armillaria BGC study identified the MT277003.1 gene cluster and annotated
         GenPept QJQ03973.1 as the BGC0002445 Pro1 protein.
-    - reference: mibig:BGC0002445
-      evidence_type: DATABASE_ASSERTION
-      notes: MIBiG BGC0002445 links the Armillaria gallica MT277003.1 terpene biosynthesis
-        cluster to 8α-hydroxy-6-protoilludene by heterologous expression.
     - reference: https://www.ncbi.nlm.nih.gov/protein/QJQ03973.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -248,4 +236,11 @@ curation_history:
   changes: Added a two-step Armillaria gallica biosynthetic pathway and BIOSYNTHESIS
     causal graph for Pro1 cyclization of farnesyl diphosphate to Delta(6)-protoilludene
     followed by CYP-Arm3 hydroxylation to 8α-hydroxy-6-protoilludene.
+  llm_assisted: true
+- timestamp: '2026-09-27T02:37:04Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Removed broad MIBiG BGC0002445 evidence from the Pro1 pathway step and
+    graph edges because the MIBiG record supports the BGC assertion rather than the
+    exact enzyme-level cyclization claims.
   llm_assisted: true
