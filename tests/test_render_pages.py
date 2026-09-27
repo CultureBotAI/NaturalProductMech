@@ -35,6 +35,7 @@ def test_causal_graph_rendering_preserves_every_edge_reference():
                             "subject": "compound",
                             "predicate": "binds",
                             "object": "target",
+                            "notes": "Binding is structural; cytotoxicity is downstream.",
                             "evidence": [
                                 {"reference": "DOI:10.1/primary"},
                                 {"reference": "DOI:10.2/structure"},
@@ -61,6 +62,7 @@ def test_causal_graph_rendering_preserves_every_edge_reference():
     rendered = env.get_template("record.html").render(r=record)
 
     assert "DOI:10.1/primary<br>DOI:10.2/structure" in rendered
+    assert "Binding is structural; cytotoxicity is downstream." in rendered
 
 
 def test_pathway_step_without_grounded_compounds_renders_as_ungrounded():
