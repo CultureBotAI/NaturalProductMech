@@ -93,7 +93,57 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>SznE<br><span class="mono">UniProtKB:A0A411EW25</span></td>
+  <td class="mono">RHEA:59756</td>
+  <td class="mono">CHEBI:32682 &rarr; CHEBI:114953</td>
+  <td class="mono">DOI:10.1021/jacs.8b13049</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>SznF<br><span class="mono">UniProtKB:A0A411MR89</span></td>
+  <td class="mono">RHEA:69052</td>
+  <td class="mono">CHEBI:114953 &rarr; CHEBI:143209</td>
+  <td class="mono">DOI:10.1038/s41586-019-0894-z</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: This curates only the Streptomyces achromogenes subsp. streptozoticus NRRL 2697 SznE N-methyltransferase step from the BGC0002313/MK303572.1 route; RHEA:59756 also uses S-adenosyl-L-methionine and releases S-adenosyl-L-homocysteine and a proton.</p><p class="sub">Step 2: This curates SznF&#39;s overall oxidative rearrangement from N(omega)-methyl-L-arginine to the unstable N-nitrosourea intermediate in the BGC0002313/MK303572.1 route; downstream attachment to the sugar scaffold remains uncurated.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Partial Streptomyces achromogenes subsp. streptozoticus streptozotocin biosynthesis graph for the SznE and SznF reactions that form the N-nitrosourea precursor from L-arginine.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Evidence</th></tr>
+<tr>
+  <td>L-argininium(1+)</td>
+  <td>is methylated by</td>
+  <td>SznE</td>
+  <td class="mono">DOI:10.1021/jacs.8b13049<br>https://www.uniprot.org/uniprotkb/A0A411EW25<br>https://www.ncbi.nlm.nih.gov/protein/QBA82201.1<br>https://www.ncbi.nlm.nih.gov/protein/QBA82041.1</td>
+</tr>
+<tr>
+  <td>SznE</td>
+  <td>forms</td>
+  <td>(2S)-2-ammonio-5-{[iminio(methylamino)methyl]amino}pentanoate</td>
+  <td class="mono">DOI:10.1021/jacs.8b13049<br>https://www.uniprot.org/uniprotkb/A0A411EW25<br>https://www.ncbi.nlm.nih.gov/protein/QBA82201.1<br>https://www.ncbi.nlm.nih.gov/protein/QBA82041.1</td>
+</tr>
+<tr>
+  <td>(2S)-2-ammonio-5-{[iminio(methylamino)methyl]amino}pentanoate</td>
+  <td>is oxidatively rearranged by</td>
+  <td>SznF</td>
+  <td class="mono">DOI:10.1038/s41586-019-0894-z<br>https://www.uniprot.org/uniprotkb/A0A411MR89<br>https://www.ncbi.nlm.nih.gov/protein/QBA82202.1<br>https://www.ncbi.nlm.nih.gov/protein/QBA82042.1</td>
+</tr>
+<tr>
+  <td>SznF</td>
+  <td>forms</td>
+  <td>N(delta)-hydroxy-N(omega)-methyl-N(omega)-nitroso-L-citrulline zwitterion</td>
+  <td class="mono">DOI:10.1038/s41586-019-0894-z<br>https://www.uniprot.org/uniprotkb/A0A411MR89<br>https://www.ncbi.nlm.nih.gov/protein/QBA82202.1<br>https://www.ncbi.nlm.nih.gov/protein/QBA82042.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
