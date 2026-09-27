@@ -116,6 +116,419 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0002533, BGC0002613.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- enzyme_id: UniProtKB:A0ABS3A8C5
+  enzyme_label: JYA62_15735 amino acid adenylation domain-containing protein
+  proposed: true
+  notes: This proposed pathway entry captures JYA62_15735/MBN3579112.1 as a BGC0002613
+    member. The exact isolated substrate and product are not resolved, and this entry
+    does not assert JYA62_15735's position in the chemical assembly order.
+  evidence:
+  - reference: DOI:10.3389/fcimb.2021.750567
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Vibrio neptunius Produces Piscibactin and Amphibactin and Both Siderophores
+      Contribute Significantly to Virulence for Clams
+    notes: Osorio et al. identified piscibactin synthesis in V. neptunius and used
+      siderophore biosynthetic-gene mutants to connect the BGC0002613 system to the
+      phenotype; this curated graph uses MIBiG/NCBI feature assignments for individual
+      JAFHLB010000021.1 CDS.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002613.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: 'biosynthetic (rule-based-clusters) NRP-metallophore: Condensation'
+    notes: MIBiG BGC0002613.2 lists piscibactin as the product, reports JAFHLB010000021.1
+      as the locus, and annotates JYA62_15735/MBN3579112.1 as biosynthetic with product
+      amino acid adenylation domain-containing protein.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/MBN3579112.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: amino acid adenylation domain-containing protein
+    notes: NCBI Protein MBN3579112.1 is the 2049 aa JAFHLB010000021.1 JYA62_15735
+      coding sequence. UniProtKB:A0ABS3A8C5 currently resolves to the same V. neptunius
+      EMBL locus.
+- enzyme_id: UniProtKB:A0ABS3A787
+  enzyme_label: JYA62_15740 amino acid adenylation domain-containing protein
+  proposed: true
+  notes: This proposed pathway entry captures JYA62_15740/MBN3579113.1 as a BGC0002613
+    member. The exact isolated substrate and product are not resolved, and this entry
+    does not assert JYA62_15740's position in the chemical assembly order.
+  evidence:
+  - reference: DOI:10.3389/fcimb.2021.750567
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Vibrio neptunius Produces Piscibactin and Amphibactin and Both Siderophores
+      Contribute Significantly to Virulence for Clams
+    notes: Osorio et al. identified piscibactin synthesis in V. neptunius and used
+      siderophore biosynthetic-gene mutants to connect the BGC0002613 system to the
+      phenotype; this curated graph uses MIBiG/NCBI feature assignments for individual
+      JAFHLB010000021.1 CDS.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002613.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: 'biosynthetic (rule-based-clusters) NRP-metallophore: AMP-binding'
+    notes: MIBiG BGC0002613.2 lists piscibactin as the product, reports JAFHLB010000021.1
+      as the locus, and annotates JYA62_15740/MBN3579113.1 as biosynthetic with product
+      amino acid adenylation domain-containing protein.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/MBN3579113.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: amino acid adenylation domain-containing protein
+    notes: NCBI Protein MBN3579113.1 is the 3992 aa JAFHLB010000021.1 JYA62_15740
+      coding sequence. UniProtKB:A0ABS3A787 currently resolves to the same V. neptunius
+      EMBL locus.
+- enzyme_id: UniProtKB:A0ABS3A5F9
+  enzyme_label: JYA62_15745 Gfo/Idh/MocA family oxidoreductase
+  proposed: true
+  notes: This proposed pathway entry captures JYA62_15745/MBN3579114.1 as a BGC0002613
+    member. The exact isolated substrate and product are not resolved, and this entry
+    does not assert JYA62_15745's position in the chemical assembly order.
+  evidence:
+  - reference: DOI:10.3389/fcimb.2021.750567
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Vibrio neptunius Produces Piscibactin and Amphibactin and Both Siderophores
+      Contribute Significantly to Virulence for Clams
+    notes: Osorio et al. identified piscibactin synthesis in V. neptunius and used
+      siderophore biosynthetic-gene mutants to connect the BGC0002613 system to the
+      phenotype; this curated graph uses MIBiG/NCBI feature assignments for individual
+      JAFHLB010000021.1 CDS.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002613.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: biosynthetic-additional (rule-based-clusters) GFO_IDH_MocA
+    notes: MIBiG BGC0002613.2 lists piscibactin as the product, reports JAFHLB010000021.1
+      as the locus, and annotates JYA62_15745/MBN3579114.1 as biosynthetic-additional
+      with product Gfo/Idh/MocA family oxidoreductase.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/MBN3579114.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: Gfo/Idh/MocA family oxidoreductase
+    notes: NCBI Protein MBN3579114.1 is the 361 aa JAFHLB010000021.1 JYA62_15745 coding
+      sequence. UniProtKB:A0ABS3A5F9 currently resolves to the same V. neptunius EMBL
+      locus.
+- enzyme_id: UniProtKB:A0ABS3A3Q2
+  enzyme_label: JYA62_15750 thioesterase
+  proposed: true
+  notes: This proposed pathway entry captures JYA62_15750/MBN3579115.1 as a BGC0002613
+    member. The exact isolated substrate and product are not resolved, and this entry
+    does not assert JYA62_15750's position in the chemical assembly order.
+  evidence:
+  - reference: DOI:10.3389/fcimb.2021.750567
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Vibrio neptunius Produces Piscibactin and Amphibactin and Both Siderophores
+      Contribute Significantly to Virulence for Clams
+    notes: Osorio et al. identified piscibactin synthesis in V. neptunius and used
+      siderophore biosynthetic-gene mutants to connect the BGC0002613 system to the
+      phenotype; this curated graph uses MIBiG/NCBI feature assignments for individual
+      JAFHLB010000021.1 CDS.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002613.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: biosynthetic-additional (rule-based-clusters) Thioesterase
+    notes: MIBiG BGC0002613.2 lists piscibactin as the product, reports JAFHLB010000021.1
+      as the locus, and annotates JYA62_15750/MBN3579115.1 as biosynthetic-additional
+      with product thioesterase.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/MBN3579115.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: thioesterase
+    notes: NCBI Protein MBN3579115.1 is the 278 aa JAFHLB010000021.1 JYA62_15750 coding
+      sequence. UniProtKB:A0ABS3A3Q2 currently resolves to the same V. neptunius EMBL
+      locus.
+- enzyme_id: UniProtKB:A0ABS3A3Q0
+  enzyme_label: JYA62_15755 salicylate synthase
+  proposed: true
+  notes: This proposed pathway entry captures JYA62_15755/MBN3579116.1 as a BGC0002613
+    member. The exact isolated substrate and product are not resolved, and this entry
+    does not assert JYA62_15755's position in the chemical assembly order.
+  evidence:
+  - reference: DOI:10.3389/fcimb.2021.750567
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Vibrio neptunius Produces Piscibactin and Amphibactin and Both Siderophores
+      Contribute Significantly to Virulence for Clams
+    notes: Osorio et al. identified piscibactin synthesis in V. neptunius and used
+      siderophore biosynthetic-gene mutants to connect the BGC0002613 system to the
+      phenotype; this curated graph uses MIBiG/NCBI feature assignments for individual
+      JAFHLB010000021.1 CDS.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002613.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: 'biosynthetic (rule-based-clusters) NRP-metallophore: SalSyn'
+    notes: MIBiG BGC0002613.2 lists piscibactin as the product, reports JAFHLB010000021.1
+      as the locus, and annotates JYA62_15755/MBN3579116.1 as biosynthetic with product
+      salicylate synthase.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/MBN3579116.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: salicylate synthase
+    notes: NCBI Protein MBN3579116.1 is the 465 aa JAFHLB010000021.1 JYA62_15755 coding
+      sequence. UniProtKB:A0ABS3A3Q0 currently resolves to the same V. neptunius EMBL
+      locus.
+- enzyme_id: UniProtKB:A0ABS3A5Z7
+  enzyme_label: JYA62_15760 AMP-binding protein
+  proposed: true
+  notes: This proposed pathway entry captures JYA62_15760/MBN3579117.1 as a BGC0002613
+    member. The exact isolated substrate and product are not resolved, and this entry
+    does not assert JYA62_15760's position in the chemical assembly order.
+  evidence:
+  - reference: DOI:10.3389/fcimb.2021.750567
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Vibrio neptunius Produces Piscibactin and Amphibactin and Both Siderophores
+      Contribute Significantly to Virulence for Clams
+    notes: Osorio et al. identified piscibactin synthesis in V. neptunius and used
+      siderophore biosynthetic-gene mutants to connect the BGC0002613 system to the
+      phenotype; this curated graph uses MIBiG/NCBI feature assignments for individual
+      JAFHLB010000021.1 CDS.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002613.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: biosynthetic-additional (rule-based-clusters) AMP-binding
+    notes: MIBiG BGC0002613.2 lists piscibactin as the product, reports JAFHLB010000021.1
+      as the locus, and annotates JYA62_15760/MBN3579117.1 as biosynthetic-additional
+      with product AMP-binding protein.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/MBN3579117.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: AMP-binding protein
+    notes: NCBI Protein MBN3579117.1 is the 535 aa JAFHLB010000021.1 JYA62_15760 coding
+      sequence. UniProtKB:A0ABS3A5Z7 currently resolves to the same V. neptunius EMBL
+      locus.
+causal_graphs:
+- graph_id: piscibactin-vibrio-neptunius-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Vibrio neptunius BGC0002613 piscibactin biosynthesis graph
+    for six core and tailoring proteins in the JAFHLB010000021.1 locus.
+  nodes:
+  - node_id: jya62_15735
+    label: JYA62_15735 amino acid adenylation domain-containing protein
+    node_type: ENZYME
+    identifier: UniProtKB:A0ABS3A8C5
+    grounding_status: GROUNDED
+  - node_id: jya62_15740
+    label: JYA62_15740 amino acid adenylation domain-containing protein
+    node_type: ENZYME
+    identifier: UniProtKB:A0ABS3A787
+    grounding_status: GROUNDED
+  - node_id: jya62_15745
+    label: JYA62_15745 Gfo/Idh/MocA family oxidoreductase
+    node_type: ENZYME
+    identifier: UniProtKB:A0ABS3A5F9
+    grounding_status: GROUNDED
+  - node_id: jya62_15750
+    label: JYA62_15750 thioesterase
+    node_type: ENZYME
+    identifier: UniProtKB:A0ABS3A3Q2
+    grounding_status: GROUNDED
+  - node_id: jya62_15755
+    label: JYA62_15755 salicylate synthase
+    node_type: ENZYME
+    identifier: UniProtKB:A0ABS3A3Q0
+    grounding_status: GROUNDED
+  - node_id: jya62_15760
+    label: JYA62_15760 AMP-binding protein
+    node_type: ENZYME
+    identifier: UniProtKB:A0ABS3A5Z7
+    grounding_status: GROUNDED
+  - node_id: vibrio_neptunius_piscibactin_biosynthesis
+    label: Vibrio neptunius piscibactin biosynthesis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: piscibactin
+    label: piscibactin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-81da63fd62
+    grounding_status: GROUNDED
+  edges:
+  - subject: jya62_15735
+    predicate: contributes to
+    object: vibrio_neptunius_piscibactin_biosynthesis
+    notes: This edge follows the BGC0002613 assignment for JYA62_15735/MBN3579112.1
+      and stops at the piscibactin-biosynthesis process because the isolated substrate-product
+      pair was not assayed.
+    evidence:
+    - reference: DOI:10.3389/fcimb.2021.750567
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Vibrio neptunius Produces Piscibactin and Amphibactin and Both Siderophores
+        Contribute Significantly to Virulence for Clams
+      notes: Osorio et al. identified piscibactin synthesis in V. neptunius and used
+        siderophore biosynthetic-gene mutants to connect the BGC0002613 system to
+        the phenotype; this curated graph uses MIBiG/NCBI feature assignments for
+        individual JAFHLB010000021.1 CDS.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002613.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: 'biosynthetic (rule-based-clusters) NRP-metallophore: Condensation'
+      notes: MIBiG BGC0002613.2 lists piscibactin as the product, reports JAFHLB010000021.1
+        as the locus, and annotates JYA62_15735/MBN3579112.1 as biosynthetic with
+        product amino acid adenylation domain-containing protein.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/MBN3579112.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: amino acid adenylation domain-containing protein
+      notes: NCBI Protein MBN3579112.1 is the 2049 aa JAFHLB010000021.1 JYA62_15735
+        coding sequence. UniProtKB:A0ABS3A8C5 currently resolves to the same V. neptunius
+        EMBL locus.
+  - subject: jya62_15740
+    predicate: contributes to
+    object: vibrio_neptunius_piscibactin_biosynthesis
+    notes: This edge follows the BGC0002613 assignment for JYA62_15740/MBN3579113.1
+      and stops at the piscibactin-biosynthesis process because the isolated substrate-product
+      pair was not assayed.
+    evidence:
+    - reference: DOI:10.3389/fcimb.2021.750567
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Vibrio neptunius Produces Piscibactin and Amphibactin and Both Siderophores
+        Contribute Significantly to Virulence for Clams
+      notes: Osorio et al. identified piscibactin synthesis in V. neptunius and used
+        siderophore biosynthetic-gene mutants to connect the BGC0002613 system to
+        the phenotype; this curated graph uses MIBiG/NCBI feature assignments for
+        individual JAFHLB010000021.1 CDS.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002613.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: 'biosynthetic (rule-based-clusters) NRP-metallophore: AMP-binding'
+      notes: MIBiG BGC0002613.2 lists piscibactin as the product, reports JAFHLB010000021.1
+        as the locus, and annotates JYA62_15740/MBN3579113.1 as biosynthetic with
+        product amino acid adenylation domain-containing protein.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/MBN3579113.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: amino acid adenylation domain-containing protein
+      notes: NCBI Protein MBN3579113.1 is the 3992 aa JAFHLB010000021.1 JYA62_15740
+        coding sequence. UniProtKB:A0ABS3A787 currently resolves to the same V. neptunius
+        EMBL locus.
+  - subject: jya62_15745
+    predicate: contributes to
+    object: vibrio_neptunius_piscibactin_biosynthesis
+    notes: This edge follows the BGC0002613 assignment for JYA62_15745/MBN3579114.1
+      and stops at the piscibactin-biosynthesis process because the isolated substrate-product
+      pair was not assayed.
+    evidence:
+    - reference: DOI:10.3389/fcimb.2021.750567
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Vibrio neptunius Produces Piscibactin and Amphibactin and Both Siderophores
+        Contribute Significantly to Virulence for Clams
+      notes: Osorio et al. identified piscibactin synthesis in V. neptunius and used
+        siderophore biosynthetic-gene mutants to connect the BGC0002613 system to
+        the phenotype; this curated graph uses MIBiG/NCBI feature assignments for
+        individual JAFHLB010000021.1 CDS.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002613.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: biosynthetic-additional (rule-based-clusters) GFO_IDH_MocA
+      notes: MIBiG BGC0002613.2 lists piscibactin as the product, reports JAFHLB010000021.1
+        as the locus, and annotates JYA62_15745/MBN3579114.1 as biosynthetic-additional
+        with product Gfo/Idh/MocA family oxidoreductase.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/MBN3579114.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Gfo/Idh/MocA family oxidoreductase
+      notes: NCBI Protein MBN3579114.1 is the 361 aa JAFHLB010000021.1 JYA62_15745
+        coding sequence. UniProtKB:A0ABS3A5F9 currently resolves to the same V. neptunius
+        EMBL locus.
+  - subject: jya62_15750
+    predicate: contributes to
+    object: vibrio_neptunius_piscibactin_biosynthesis
+    notes: This edge follows the BGC0002613 assignment for JYA62_15750/MBN3579115.1
+      and stops at the piscibactin-biosynthesis process because the isolated substrate-product
+      pair was not assayed.
+    evidence:
+    - reference: DOI:10.3389/fcimb.2021.750567
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Vibrio neptunius Produces Piscibactin and Amphibactin and Both Siderophores
+        Contribute Significantly to Virulence for Clams
+      notes: Osorio et al. identified piscibactin synthesis in V. neptunius and used
+        siderophore biosynthetic-gene mutants to connect the BGC0002613 system to
+        the phenotype; this curated graph uses MIBiG/NCBI feature assignments for
+        individual JAFHLB010000021.1 CDS.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002613.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: biosynthetic-additional (rule-based-clusters) Thioesterase
+      notes: MIBiG BGC0002613.2 lists piscibactin as the product, reports JAFHLB010000021.1
+        as the locus, and annotates JYA62_15750/MBN3579115.1 as biosynthetic-additional
+        with product thioesterase.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/MBN3579115.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: thioesterase
+      notes: NCBI Protein MBN3579115.1 is the 278 aa JAFHLB010000021.1 JYA62_15750
+        coding sequence. UniProtKB:A0ABS3A3Q2 currently resolves to the same V. neptunius
+        EMBL locus.
+  - subject: jya62_15755
+    predicate: contributes to
+    object: vibrio_neptunius_piscibactin_biosynthesis
+    notes: This edge follows the BGC0002613 assignment for JYA62_15755/MBN3579116.1
+      and stops at the piscibactin-biosynthesis process because the isolated substrate-product
+      pair was not assayed.
+    evidence:
+    - reference: DOI:10.3389/fcimb.2021.750567
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Vibrio neptunius Produces Piscibactin and Amphibactin and Both Siderophores
+        Contribute Significantly to Virulence for Clams
+      notes: Osorio et al. identified piscibactin synthesis in V. neptunius and used
+        siderophore biosynthetic-gene mutants to connect the BGC0002613 system to
+        the phenotype; this curated graph uses MIBiG/NCBI feature assignments for
+        individual JAFHLB010000021.1 CDS.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002613.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: 'biosynthetic (rule-based-clusters) NRP-metallophore: SalSyn'
+      notes: MIBiG BGC0002613.2 lists piscibactin as the product, reports JAFHLB010000021.1
+        as the locus, and annotates JYA62_15755/MBN3579116.1 as biosynthetic with
+        product salicylate synthase.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/MBN3579116.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: salicylate synthase
+      notes: NCBI Protein MBN3579116.1 is the 465 aa JAFHLB010000021.1 JYA62_15755
+        coding sequence. UniProtKB:A0ABS3A3Q0 currently resolves to the same V. neptunius
+        EMBL locus.
+  - subject: jya62_15760
+    predicate: contributes to
+    object: vibrio_neptunius_piscibactin_biosynthesis
+    notes: This edge follows the BGC0002613 assignment for JYA62_15760/MBN3579117.1
+      and stops at the piscibactin-biosynthesis process because the isolated substrate-product
+      pair was not assayed.
+    evidence:
+    - reference: DOI:10.3389/fcimb.2021.750567
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Vibrio neptunius Produces Piscibactin and Amphibactin and Both Siderophores
+        Contribute Significantly to Virulence for Clams
+      notes: Osorio et al. identified piscibactin synthesis in V. neptunius and used
+        siderophore biosynthetic-gene mutants to connect the BGC0002613 system to
+        the phenotype; this curated graph uses MIBiG/NCBI feature assignments for
+        individual JAFHLB010000021.1 CDS.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002613.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: biosynthetic-additional (rule-based-clusters) AMP-binding
+      notes: MIBiG BGC0002613.2 lists piscibactin as the product, reports JAFHLB010000021.1
+        as the locus, and annotates JYA62_15760/MBN3579117.1 as biosynthetic-additional
+        with product AMP-binding protein.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/MBN3579117.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: AMP-binding protein
+      notes: NCBI Protein MBN3579117.1 is the 535 aa JAFHLB010000021.1 JYA62_15760
+        coding sequence. UniProtKB:A0ABS3A5Z7 currently resolves to the same V. neptunius
+        EMBL locus.
+  - subject: vibrio_neptunius_piscibactin_biosynthesis
+    predicate: produces
+    object: piscibactin
+    evidence:
+    - reference: DOI:10.3389/fcimb.2021.750567
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Vibrio neptunius Produces Piscibactin and Amphibactin and Both Siderophores
+        Contribute Significantly to Virulence for Clams
+      notes: Osorio et al. identified piscibactin synthesis in V. neptunius and used
+        siderophore biosynthetic-gene mutants to connect the BGC0002613 system to
+        the phenotype; this curated graph uses MIBiG/NCBI feature assignments for
+        individual JAFHLB010000021.1 CDS.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002613.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: piscibactin
+      notes: MIBiG BGC0002613.2 lists piscibactin as the V. neptunius product and
+        JAFHLB010000021.1 as the BGC locus.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -125,3 +538,16 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T15:17:27Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the V. neptunius BGC0002613 piscibactin biosynthetic pathway and
+    BIOSYNTHESIS causal graph for JYA62_15735/JYA62_15740/JYA62_15745/JYA62_15750/JYA62_15755/JYA62_15760,
+    grounding all six enzyme nodes to exact UniProtKB entries through MBN3579112.1-MBN3579117.1.
+  llm_assisted: true
+- timestamp: '2026-09-27T15:31:25Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Clarified that the V. neptunius BGC0002613 piscibactin pathway entries
+    are unordered protein entries, not asserted chemical assembly steps.
+  llm_assisted: true

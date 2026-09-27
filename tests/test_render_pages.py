@@ -89,3 +89,34 @@ def test_pathway_step_without_grounded_compounds_renders_as_ungrounded():
     rendered = env.get_template("record.html").render(r=record)
 
     assert "ungrounded &rarr; ungrounded" in rendered
+
+
+def test_pathway_step_without_step_number_renders_as_entry():
+    record = render_pages.build_record(
+        REPO_ROOT / "data" / "natural_products" / "carbohydrates" / "coformycin.yaml",
+        {
+            "identifier": "CHEBI:16213",
+            "np_pathway": "CARBOHYDRATES",
+            "biosynthetic_pathway": [
+                {
+                    "enzyme_label": "CofB",
+                    "notes": "Exact chemistry is unresolved.",
+                    "evidence": [{"reference": "DOI:10.1073/pnas.2000111117"}],
+                },
+            ],
+        },
+    )
+
+    env = Environment(
+        loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
+        autoescape=select_autoescape(["html"]),
+        trim_blocks=True,
+        lstrip_blocks=True,
+        keep_trailing_newline=True,
+    )
+    rendered = env.get_template("record.html").render(r=record)
+
+    assert "<tr><th>#</th>" in rendered
+    assert "<td>1</td>" in rendered
+    assert "Entry 1: Exact chemistry is unresolved." in rendered
+    assert "Step : Exact chemistry is unresolved." not in rendered

@@ -90,14 +90,16 @@ isolation report left it.</p>
 {% endif %}
 
 {% if r.pathway_steps %}
+{% set numbered_pathway_steps = r.pathway_steps|selectattr("step_number")|list %}
+{% set has_step_numbers = numbered_pathway_steps|length == r.pathway_steps|length %}
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
 <p class="sub">Written by a curator against the primary literature, not derived
 from a source. This is what the rest of the record exists to support.</p>
 <div class="scroll"><table>
-<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr><th>{{ 'Step' if has_step_numbers else '#' }}</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 {% for s in r.pathway_steps %}
 <tr>
-  <td>{{ s.step_number }}</td>
+  <td>{{ s.step_number if has_step_numbers else loop.index }}</td>
   <td>{{ s.enzyme_label }}{% if s.enzyme_id %}<br><span class="mono">{{ s.enzyme_id }}</span>{% endif %}</td>
   <td class="mono">{{ s.reaction_id or '' }}</td>
   <td class="mono">{{ s.substrate or 'ungrounded' }} &rarr; {{ s.product or 'ungrounded' }}</td>
@@ -105,7 +107,7 @@ from a source. This is what the rest of the record exists to support.</p>
 </tr>
 {% endfor %}
 </table></div>
-{% for s in r.pathway_steps %}{% if s.notes %}<p class="sub">Step {{ s.step_number }}: {{ s.notes }}</p>{% endif %}{% endfor %}
+{% for s in r.pathway_steps %}{% if s.notes %}<p class="sub">{{ 'Step ' ~ s.step_number if has_step_numbers else 'Entry ' ~ loop.index }}: {{ s.notes }}</p>{% endif %}{% endfor %}
 {% endif %}
 
 {% for g in r.graphs %}
