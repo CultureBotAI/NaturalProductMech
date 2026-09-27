@@ -327,6 +327,118 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000938, BGC0001859.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9JN69
+  enzyme_label: Ps-HppE
+  reaction_id: RHEA:10808
+  notes: This deliberately curates only the Pseudomonas syringae PB-5123 Ps-HppE final
+    epoxidation of (S)-2-hydroxypropylphosphonate to the Rhea fosfomycin microspecies;
+    the upstream Pseudomonas and Streptomyces branches remain uncurated.
+  evidence:
+  - reference: DOI:10.1021/bi800877v
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: This purified P. syringae protein was determined to catalyze the epoxidation
+      of ( S)-HPP to fosfomycin
+    notes: Munos et al. purified Pseudomonas syringae Ps-HppE and showed that it catalyzes
+      the final HPP-to-fosfomycin epoxidation.
+  - reference: DOI:10.1128/AAC.06478-11
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: We sequenced the biosynthetic gene cluster responsible for fosfomycin
+      production in Pseudomonas syringae PB-5123
+    notes: Kim et al. sequenced the Pseudomonas syringae PB-5123 fosfomycin cluster
+      now represented by GenBank JX102649.1.
+  - reference: https://www.uniprot.org/uniprotkb/Q9JN69
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: Reviewed UniProtKB:Q9JN69 is Pseudomonas syringae Ps-HppE, cross-references
+      EMBL JX102649 protein AFM38989.1, and annotates RHEA:10808 with ChEBI participants
+      CHEBI:62246 and CHEBI:62247.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFM38989.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AFM38989.1 is the JX102649.1 Psf4 epoxidase coding sequence
+      from the Pseudomonas syringae PB-5123 fosfomycin cluster.
+  substrate: CHEBI:62246
+  product: CHEBI:62247
+causal_graphs:
+- graph_id: fosfomycin-ps-hppe-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Pseudomonas syringae fosfomycin biosynthesis graph for the
+    Ps-HppE-catalyzed final epoxidation of (S)-2-hydroxypropylphosphonate.
+  nodes:
+  - node_id: s_2_hydroxypropylphosphonate
+    label: (S)-2-hydroxypropylphosphonate
+    node_type: PRECURSOR
+    identifier: CHEBI:62246
+    grounding_status: GROUNDED
+  - node_id: ps_hppe
+    label: Ps-HppE
+    node_type: ENZYME
+    identifier: UniProtKB:Q9JN69
+    grounding_status: GROUNDED
+  - node_id: fosfomycin_microspecies
+    label: (1R,2S)-epoxypropylphosphonate(1-)
+    node_type: COMPOUND
+    identifier: CHEBI:62247
+    grounding_status: GROUNDED
+  edges:
+  - subject: s_2_hydroxypropylphosphonate
+    predicate: is epoxidized by
+    object: ps_hppe
+    evidence:
+    - reference: DOI:10.1021/bi800877v
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: This purified P. syringae protein was determined to catalyze the epoxidation
+        of ( S)-HPP to fosfomycin
+      notes: Munos et al. purified Pseudomonas syringae Ps-HppE and showed that it
+        catalyzes the final HPP-to-fosfomycin epoxidation.
+    - reference: DOI:10.1128/AAC.06478-11
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: We sequenced the biosynthetic gene cluster responsible for fosfomycin
+        production in Pseudomonas syringae PB-5123
+      notes: Kim et al. sequenced the Pseudomonas syringae PB-5123 fosfomycin cluster
+        now represented by GenBank JX102649.1.
+    - reference: https://www.uniprot.org/uniprotkb/Q9JN69
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:Q9JN69 is Pseudomonas syringae Ps-HppE, cross-references
+        EMBL JX102649 protein AFM38989.1, and annotates RHEA:10808 with ChEBI participants
+        CHEBI:62246 and CHEBI:62247.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFM38989.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AFM38989.1 is the JX102649.1 Psf4 epoxidase coding sequence
+        from the Pseudomonas syringae PB-5123 fosfomycin cluster.
+  - subject: ps_hppe
+    predicate: forms
+    object: fosfomycin_microspecies
+    notes: CHEBI:62247 is the Rhea product for fosfomycin; the NaturalProductMech
+      record itself is neutral CHEBI:28915.
+    evidence:
+    - reference: DOI:10.1021/bi800877v
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: This purified P. syringae protein was determined to catalyze the epoxidation
+        of ( S)-HPP to fosfomycin
+      notes: Munos et al. purified Pseudomonas syringae Ps-HppE and showed that it
+        catalyzes the final HPP-to-fosfomycin epoxidation.
+    - reference: DOI:10.1128/AAC.06478-11
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: We sequenced the biosynthetic gene cluster responsible for fosfomycin
+        production in Pseudomonas syringae PB-5123
+      notes: Kim et al. sequenced the Pseudomonas syringae PB-5123 fosfomycin cluster
+        now represented by GenBank JX102649.1.
+    - reference: https://www.uniprot.org/uniprotkb/Q9JN69
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:Q9JN69 is Pseudomonas syringae Ps-HppE, cross-references
+        EMBL JX102649 protein AFM38989.1, and annotates RHEA:10808 with ChEBI participants
+        CHEBI:62246 and CHEBI:62247.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFM38989.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AFM38989.1 is the JX102649.1 Psf4 epoxidase coding sequence
+        from the Pseudomonas syringae PB-5123 fosfomycin cluster.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -336,3 +448,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T04:39:31Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the Pseudomonas syringae Ps-HppE (S)-2-hydroxypropylphosphonate-to-fosfomycin
+    biosynthetic step and BIOSYNTHESIS causal graph grounded to UniProtKB:Q9JN69.
+  llm_assisted: true
