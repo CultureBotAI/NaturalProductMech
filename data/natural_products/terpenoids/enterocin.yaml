@@ -144,6 +144,180 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000220, BGC0002366.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9KHK2
+  enzyme_label: EncM
+  notes: This curates only the Streptomyces maritimus EncM flavin-mediated oxidation
+    that initiates the Favorskii-type rearrangement in enterocin biosynthesis; the
+    reactive poly-beta-carbonyl substrate and rearranged pathway intermediate remain
+    ungrounded.
+  evidence:
+  - reference: DOI:10.1021/ol0255155
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Inactivation of either gene terminated enterocin production and caused
+      the accumulation of four nonrearranged, nonmethylated polyketides.
+    notes: Xiang et al. inactivated encM and encK in the Streptomyces maritimus enterocin
+      cluster and showed that these genes are needed for the Favorskii-like rearrangement
+      in enterocin biosynthesis.
+  - reference: DOI:10.1038/nature12643
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: EncM catalyses the peroxyflavin-independent oxygenation-dehydrogenation
+      dual oxidation of a highly reactive poly(β-carbonyl)
+    notes: Teufel et al. biochemically and structurally characterized the EncM flavoenzyme
+      oxidation that triggers the Favorskii-type rearrangement central to enterocin
+      biosynthesis.
+  - reference: DOI:10.1016/s1074-5521(00)00044-2
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: A 21.3 kb gene cluster encoding the biosynthesis of the enterocin and
+      wailupemycin family of polyketides from 'S. maritimus' has been cloned and sequenced.
+    notes: Piel et al. cloned and sequenced GenBank AF254925.1, the Streptomyces maritimus
+      enterocin biosynthetic gene cluster that contains encM.
+  - reference: https://www.uniprot.org/uniprotkb/Q9KHK2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: Unreviewed UniProtKB:Q9KHK2 is Streptomyces maritimus EncM, gene encM,
+      length 464 aa, and cross-references EMBL AF254925 protein AAF81732.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAF81732.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AAF81732.1 is the AF254925.1 encM coding sequence from the
+      Streptomyces maritimus enterocin cluster and is sequence-identical to UniProtKB:Q9KHK2.
+causal_graphs:
+- graph_id: enterocin-encm-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces maritimus enterocin biosynthesis graph for the
+    EncM-catalyzed oxidation that triggers the Favorskii-type rearrangement.
+  nodes:
+  - node_id: unrearranged_polyketide
+    label: unrearranged poly-beta-carbonyl intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: encm
+    label: EncM
+    node_type: ENZYME
+    identifier: UniProtKB:Q9KHK2
+    grounding_status: GROUNDED
+  - node_id: favorskii_rearrangement
+    label: Favorskii-type rearrangement
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: rearranged_enterocin_intermediate
+    label: Favorskii-rearranged enterocin intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: unrearranged_polyketide
+    predicate: is oxidized by
+    object: encm
+    notes: The direct EncM substrate is an unstable, unrearranged poly-beta-carbonyl
+      rather than a ChEBI-grounded stable pathway intermediate.
+    evidence:
+    - reference: DOI:10.1021/ol0255155
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Inactivation of either gene terminated enterocin production and caused
+        the accumulation of four nonrearranged, nonmethylated polyketides.
+      notes: Xiang et al. inactivated encM and encK in the Streptomyces maritimus
+        enterocin cluster and showed that these genes are needed for the Favorskii-like
+        rearrangement in enterocin biosynthesis.
+    - reference: DOI:10.1038/nature12643
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: EncM catalyses the peroxyflavin-independent oxygenation-dehydrogenation
+        dual oxidation of a highly reactive poly(β-carbonyl)
+      notes: Teufel et al. biochemically and structurally characterized the EncM flavoenzyme
+        oxidation that triggers the Favorskii-type rearrangement central to enterocin
+        biosynthesis.
+    - reference: DOI:10.1016/s1074-5521(00)00044-2
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: A 21.3 kb gene cluster encoding the biosynthesis of the enterocin and
+        wailupemycin family of polyketides from 'S. maritimus' has been cloned and
+        sequenced.
+      notes: Piel et al. cloned and sequenced GenBank AF254925.1, the Streptomyces
+        maritimus enterocin biosynthetic gene cluster that contains encM.
+    - reference: https://www.uniprot.org/uniprotkb/Q9KHK2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:Q9KHK2 is Streptomyces maritimus EncM, gene encM,
+        length 464 aa, and cross-references EMBL AF254925 protein AAF81732.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAF81732.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AAF81732.1 is the AF254925.1 encM coding sequence from the
+        Streptomyces maritimus enterocin cluster and is sequence-identical to UniProtKB:Q9KHK2.
+  - subject: encm
+    predicate: triggers
+    object: favorskii_rearrangement
+    notes: EncM performs the dual oxidation that initiates the Favorskii-type rearrangement;
+      EncK also acts before mature enterocin is formed.
+    evidence:
+    - reference: DOI:10.1021/ol0255155
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Inactivation of either gene terminated enterocin production and caused
+        the accumulation of four nonrearranged, nonmethylated polyketides.
+      notes: Xiang et al. inactivated encM and encK in the Streptomyces maritimus
+        enterocin cluster and showed that these genes are needed for the Favorskii-like
+        rearrangement in enterocin biosynthesis.
+    - reference: DOI:10.1038/nature12643
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: EncM catalyses the peroxyflavin-independent oxygenation-dehydrogenation
+        dual oxidation of a highly reactive poly(β-carbonyl)
+      notes: Teufel et al. biochemically and structurally characterized the EncM flavoenzyme
+        oxidation that triggers the Favorskii-type rearrangement central to enterocin
+        biosynthesis.
+    - reference: DOI:10.1016/s1074-5521(00)00044-2
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: A 21.3 kb gene cluster encoding the biosynthesis of the enterocin and
+        wailupemycin family of polyketides from 'S. maritimus' has been cloned and
+        sequenced.
+      notes: Piel et al. cloned and sequenced GenBank AF254925.1, the Streptomyces
+        maritimus enterocin biosynthetic gene cluster that contains encM.
+    - reference: https://www.uniprot.org/uniprotkb/Q9KHK2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:Q9KHK2 is Streptomyces maritimus EncM, gene encM,
+        length 464 aa, and cross-references EMBL AF254925 protein AAF81732.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAF81732.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AAF81732.1 is the AF254925.1 encM coding sequence from the
+        Streptomyces maritimus enterocin cluster and is sequence-identical to UniProtKB:Q9KHK2.
+  - subject: favorskii_rearrangement
+    predicate: forms
+    object: rearranged_enterocin_intermediate
+    notes: The rearranged pathway intermediate is left ungrounded because the exact
+      immediate product of EncM in vivo is not a stable public ChEBI term.
+    evidence:
+    - reference: DOI:10.1021/ol0255155
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Inactivation of either gene terminated enterocin production and caused
+        the accumulation of four nonrearranged, nonmethylated polyketides.
+      notes: Xiang et al. inactivated encM and encK in the Streptomyces maritimus
+        enterocin cluster and showed that these genes are needed for the Favorskii-like
+        rearrangement in enterocin biosynthesis.
+    - reference: DOI:10.1038/nature12643
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: EncM catalyses the peroxyflavin-independent oxygenation-dehydrogenation
+        dual oxidation of a highly reactive poly(β-carbonyl)
+      notes: Teufel et al. biochemically and structurally characterized the EncM flavoenzyme
+        oxidation that triggers the Favorskii-type rearrangement central to enterocin
+        biosynthesis.
+    - reference: DOI:10.1016/s1074-5521(00)00044-2
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: A 21.3 kb gene cluster encoding the biosynthesis of the enterocin and
+        wailupemycin family of polyketides from 'S. maritimus' has been cloned and
+        sequenced.
+      notes: Piel et al. cloned and sequenced GenBank AF254925.1, the Streptomyces
+        maritimus enterocin biosynthetic gene cluster that contains encM.
+    - reference: https://www.uniprot.org/uniprotkb/Q9KHK2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:Q9KHK2 is Streptomyces maritimus EncM, gene encM,
+        length 464 aa, and cross-references EMBL AF254925 protein AAF81732.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAF81732.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AAF81732.1 is the AF254925.1 encM coding sequence from the
+        Streptomyces maritimus enterocin cluster and is sequence-identical to UniProtKB:Q9KHK2.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -153,3 +327,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T07:55:36Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the Streptomyces maritimus EncM flavin-mediated oxidation step and
+    BIOSYNTHESIS causal graph grounded to UniProtKB:Q9KHK2.
+  llm_assisted: true
