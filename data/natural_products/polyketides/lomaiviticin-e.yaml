@@ -125,6 +125,119 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000240, BGC0000241.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A4X724
+  enzyme_label: Strop_2223 beta-ketoacyl synthase
+  proposed: true
+  notes: This curates the S. tropica CNB-440 Strop_2223/ABP54674.1 beta-ketoacyl synthase
+    as a knockout-supported type II PKS enzyme in the ST_pks2/lom scaffold-biosynthesis
+    branch that produces lomaiviticins, including lomaiviticin E. UniProtKB A4X724
+    resolves to Strop_2223 in the CNB-440 genome; the exact Strop_2223 substrate/product
+    pair and its minimal-PKS partner are left unresolved.
+  evidence:
+  - reference: DOI:10.1002/cbic.201300147
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: lomaiviticins A, D and E
+    notes: Kersten et al. inactivated the S. tropica CNB-440 strop2223 beta-ketosynthase,
+      found that the mutant extract was inactive in the DNA-interference assay, and
+      used LC-MS profiling of wild-type and mutant extracts to identify lomaiviticins,
+      including lomaiviticin E, as ST_pks2/lom products.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000241.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: Scaffold biosynthesis
+    notes: MIBiG BGC0000241.5 lists lomaiviticin E among the Salinispora tropica CNB-440
+      products and annotates Strop_2223/ABP54674.1 as a beta-ketoacyl synthase with
+      scaffold-biosynthesis function and knockout evidence.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ABP54674.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: beta-ketoacyl synthase
+    notes: NCBI Protein ABP54674.1 is the 423 aa Salinispora tropica CNB-440 Strop_2223
+      product.
+  - reference: https://www.uniprot.org/uniprotkb/A4X724
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: Beta-ketoacyl-acyl-carrier-protein synthase I
+    notes: UniProtKB A4X724 resolves to the 423 aa S. tropica CNB-440 Strop_2223 entry
+      and cross-references the CP000667 chromosome.
+causal_graphs:
+- graph_id: lomaiviticin-e-strop2223-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial S. tropica lomaiviticin E biosynthesis graph for the knockout-supported
+    Strop_2223 type II PKS scaffold branch.
+  nodes:
+  - node_id: strop2223
+    label: Strop_2223 beta-ketoacyl synthase
+    node_type: ENZYME
+    identifier: UniProtKB:A4X724
+    grounding_status: GROUNDED
+  - node_id: pks_scaffold_biosynthesis
+    label: lomaiviticin type II PKS scaffold biosynthesis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: lomaiviticin_e
+    label: lomaiviticin E
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-3e651964d5
+    grounding_status: GROUNDED
+  edges:
+  - subject: strop2223
+    predicate: is required for
+    object: pks_scaffold_biosynthesis
+    notes: Kersten et al. knocked out strop2223 and MIBiG v5 maps that locus to ABP54674.1;
+      the edge stops at scaffold biosynthesis because the exact condensation reaction
+      was not assayed in vitro.
+    evidence:
+    - reference: DOI:10.1002/cbic.201300147
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: lomaiviticins A, D and E
+      notes: Kersten et al. inactivated the S. tropica CNB-440 strop2223 beta-ketosynthase,
+        found that the mutant extract was inactive in the DNA-interference assay,
+        and used LC-MS profiling of wild-type and mutant extracts to identify lomaiviticins,
+        including lomaiviticin E, as ST_pks2/lom products.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000241.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Scaffold biosynthesis
+      notes: MIBiG BGC0000241.5 lists lomaiviticin E among the Salinispora tropica
+        CNB-440 products and annotates Strop_2223/ABP54674.1 as a beta-ketoacyl synthase
+        with scaffold-biosynthesis function and knockout evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABP54674.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: beta-ketoacyl synthase
+      notes: NCBI Protein ABP54674.1 is the 423 aa Salinispora tropica CNB-440 Strop_2223
+        product.
+    - reference: https://www.uniprot.org/uniprotkb/A4X724
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Beta-ketoacyl-acyl-carrier-protein synthase I
+      notes: UniProtKB A4X724 resolves to the 423 aa S. tropica CNB-440 Strop_2223
+        entry and cross-references the CP000667 chromosome.
+  - subject: pks_scaffold_biosynthesis
+    predicate: contributes to
+    object: lomaiviticin_e
+    notes: LC-MS comparison connected ST_pks2 with the lomaiviticin family and identified
+      lomaiviticin E among the wild-type S. tropica CNB-440 products; this graph does
+      not claim a complete route from the type II PKS scaffold to the fully tailored
+      glycoside.
+    evidence:
+    - reference: DOI:10.1002/cbic.201300147
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: lomaiviticins A, D and E
+      notes: Kersten et al. inactivated the S. tropica CNB-440 strop2223 beta-ketosynthase,
+        found that the mutant extract was inactive in the DNA-interference assay,
+        and used LC-MS profiling of wild-type and mutant extracts to identify lomaiviticins,
+        including lomaiviticin E, as ST_pks2/lom products.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000241.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Scaffold biosynthesis
+      notes: MIBiG BGC0000241.5 lists lomaiviticin E among the Salinispora tropica
+        CNB-440 products and annotates Strop_2223/ABP54674.1 as a beta-ketoacyl synthase
+        with scaffold-biosynthesis function and knockout evidence.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -134,3 +247,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T14:15:31Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a proposed S. tropica CNB-440 Strop_2223 beta-ketoacyl synthase biosynthetic
+    pathway step and BIOSYNTHESIS causal graph for lomaiviticin E, citing Kersten
+    et al. ST_pks2 knockout and LC-MS evidence, MIBiG BGC0000241, NCBI Protein ABP54674.1,
+    and the exact UniProtKB A4X724 protein grounding.
+  llm_assisted: true
