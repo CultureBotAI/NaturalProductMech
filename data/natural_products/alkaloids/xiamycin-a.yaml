@@ -153,6 +153,99 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000665, BGC0000666.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:I3VFB9
+  enzyme_label: XiaI
+  notes: This deliberately curates only the Streptomyces sp. SCSIO 02999 XiaI oxidative
+    cyclization of indosespene to xiamycin A; upstream formation of indosespene and
+    parallel oxiamycin tailoring remain uncurated.
+  evidence:
+  - reference: DOI:10.1021/ja303004g
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: the flavin dependent oxygenase XiaI was biochemically characterized in
+      vitro to convert indosespene to XMA
+    notes: Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin
+      cluster and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative
+      cyclization.
+  - reference: https://www.uniprot.org/uniprotkb/I3VFB9
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:I3VFB9 resolves XiaI to the unreviewed Streptomyces sp. SCSIO
+      02999 protein and cross-references EMBL JQ812811 protein AFK78075.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFK78075.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the
+      Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.
+  substrate: naturalproductmech:mibig-cb4ddd98d8
+  product: naturalproductmech:mibig-9f978c0043
+causal_graphs:
+- graph_id: xiamycin-a-xiai-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces sp. SCSIO 02999 xiamycin A biosynthesis graph
+    for the XiaI-catalyzed oxidative cyclization of indosespene.
+  nodes:
+  - node_id: indosespene
+    label: indosespene
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-cb4ddd98d8
+    grounding_status: GROUNDED
+  - node_id: xiai
+    label: XiaI
+    node_type: ENZYME
+    identifier: UniProtKB:I3VFB9
+    grounding_status: GROUNDED
+  - node_id: xiamycin_a
+    label: xiamycin A
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-9f978c0043
+    grounding_status: GROUNDED
+  edges:
+  - subject: indosespene
+    predicate: is oxidatively cyclized by
+    object: xiai
+    evidence:
+    - reference: DOI:10.1021/ja303004g
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the flavin dependent oxygenase XiaI was biochemically characterized
+        in vitro to convert indosespene to XMA
+      notes: Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin
+        cluster and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative
+        cyclization.
+    - reference: https://www.uniprot.org/uniprotkb/I3VFB9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:I3VFB9 resolves XiaI to the unreviewed Streptomyces sp. SCSIO
+        02999 protein and cross-references EMBL JQ812811 protein AFK78075.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFK78075.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the
+        Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.
+  - subject: xiai
+    predicate: forms
+    object: xiamycin_a
+    notes: This is a single curated tailoring step; upstream indosespene formation
+      and the alternative oxiamycin branch remain uncurated.
+    evidence:
+    - reference: DOI:10.1021/ja303004g
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the flavin dependent oxygenase XiaI was biochemically characterized
+        in vitro to convert indosespene to XMA
+      notes: Li et al. identified the Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin
+        cluster and biochemically assigned XiaI to the indosespene-to-xiamycin A oxidative
+        cyclization.
+    - reference: https://www.uniprot.org/uniprotkb/I3VFB9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:I3VFB9 resolves XiaI to the unreviewed Streptomyces sp. SCSIO
+        02999 protein and cross-references EMBL JQ812811 protein AFK78075.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFK78075.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AFK78075.1 is the JQ812811.1 XiaI coding sequence from the
+        Streptomyces sp. SCSIO 02999 xiamycin/oxiamycin gene cluster.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -162,3 +255,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T03:36:55Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the SCSIO 02999 XiaI indosespene-to-xiamycin A biosynthetic step
+    and BIOSYNTHESIS causal graph grounded to UniProtKB:I3VFB9.
+  llm_assisted: true
