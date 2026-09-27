@@ -130,6 +130,111 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0002327, BGC0002336.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A7G7XYE0
+  enzyme_label: BolR
+  notes: This curates the Burkholderia gladioli HKI0521 BGC0002327/MT844061.1 BolR
+    citrate synthase required for the citrate-derived tricarboxylic fatty-acid tail
+    in bolagladin A/B. Native oxaloacetyl- or citryl-CoA activation timing remains
+    unresolved, so no exact substrate or product is asserted.
+  evidence:
+  - reference: DOI:10.1002/anie.202009107
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: the production of 1 and 2 was fully abrogated
+    notes: Dose et al. constructed a Burkholderia gladioli HKI0521 bolR null mutant
+      and showed that normal bolagladin A and B production was abolished, with tail-shortened
+      shunt metabolites detected instead.
+  - reference: https://www.uniprot.org/uniprotkb/A0A7G7XYE0
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: Unreviewed UniProtKB:A0A7G7XYE0 is the Burkholderia gladioli bolR 459 aa
+      citrate synthase and cross-references EMBL MT844061 protein QNH85850.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QNH85850.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept QNH85850.1 is the MT844061.1 BGC0002327 Burkholderia gladioli
+      HKI0521 bolR citrate synthase CDS and is sequence-identical to UniProtKB:A0A7G7XYE0.
+causal_graphs:
+- graph_id: bolagladin-a-bolr-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Burkholderia gladioli HKI0521 bolagladin A biosynthesis graph
+    for BolR involvement in the citrate-derived tricarboxylic fatty-acid tail.
+  nodes:
+  - node_id: bolr
+    label: BolR
+    node_type: ENZYME
+    identifier: UniProtKB:A0A7G7XYE0
+    grounding_status: GROUNDED
+  - node_id: citrate_derived_tail_assembly
+    label: citrate-derived tricarboxylic fatty-acid tail assembly
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: bolagladin_a
+    label: bolagladin A
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-0d83d03407
+    grounding_status: GROUNDED
+  edges:
+  - subject: bolr
+    predicate: is required for
+    object: citrate_derived_tail_assembly
+    notes: HKI0521 bolR deletion abolished bolagladin A/B production and yielded tail-shortened
+      shunt metabolites, while a B. gladioli BolR homolog showed citrate synthase
+      activity in vitro.
+    evidence:
+    - reference: DOI:10.1002/anie.202009107
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the production of 1 and 2 was fully abrogated
+      notes: Dose et al. constructed a Burkholderia gladioli HKI0521 bolR null mutant
+        and showed that normal bolagladin A and B production was abolished, with tail-shortened
+        shunt metabolites detected instead.
+    - reference: DOI:10.1002/anie.202009110
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: resulted in complete conversion to products with molecular formulae
+        corresponding to citric acid
+      notes: Dashti et al. purified a Burkholderia gladioli BolR homolog and showed
+        citrate synthase activity from oxaloacetate and acetyl-CoA to citrate and
+        CoA, corroborating the citrate synthase role assigned to HKI0521 BolR.
+    - reference: https://www.uniprot.org/uniprotkb/A0A7G7XYE0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:A0A7G7XYE0 is the Burkholderia gladioli bolR 459
+        aa citrate synthase and cross-references EMBL MT844061 protein QNH85850.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QNH85850.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept QNH85850.1 is the MT844061.1 BGC0002327 Burkholderia gladioli
+        HKI0521 bolR citrate synthase CDS and is sequence-identical to UniProtKB:A0A7G7XYE0.
+  - subject: citrate_derived_tail_assembly
+    predicate: contributes to
+    object: bolagladin_a
+    notes: Bolagladin A contains the tricarboxylic fatty-acid tail whose normal assembly
+      requires BolR.
+    evidence:
+    - reference: DOI:10.1002/anie.202009107
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the production of 1 and 2 was fully abrogated
+      notes: Dose et al. constructed a Burkholderia gladioli HKI0521 bolR null mutant
+        and showed that normal bolagladin A and B production was abolished, with tail-shortened
+        shunt metabolites detected instead.
+    - reference: DOI:10.1002/anie.202009110
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: resulted in complete conversion to products with molecular formulae
+        corresponding to citric acid
+      notes: Dashti et al. purified a Burkholderia gladioli BolR homolog and showed
+        citrate synthase activity from oxaloacetate and acetyl-CoA to citrate and
+        CoA, corroborating the citrate synthase role assigned to HKI0521 BolR.
+    - reference: https://www.uniprot.org/uniprotkb/A0A7G7XYE0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:A0A7G7XYE0 is the Burkholderia gladioli bolR 459
+        aa citrate synthase and cross-references EMBL MT844061 protein QNH85850.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QNH85850.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept QNH85850.1 is the MT844061.1 BGC0002327 Burkholderia gladioli
+        HKI0521 bolR citrate synthase CDS and is sequence-identical to UniProtKB:A0A7G7XYE0.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -139,3 +244,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T09:02:34Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added Burkholderia gladioli HKI0521 BolR UniProtKB:A0A7G7XYE0 as a bolagladin
+    A biosynthetic pathway enzyme and a partial biosynthesis causal graph for BolR
+    involvement in citrate-derived fatty-acid tail assembly.
+  llm_assisted: true
