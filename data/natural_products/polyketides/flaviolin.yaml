@@ -328,6 +328,255 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000285, BGC0000902,
     BGC0002127. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- enzyme_id: UniProtKB:Q8KQM3
+  enzyme_label: RppA
+  product: CHEBI:18365
+  proposed: true
+  notes: This curates the Saccharopolyspora erythraea BGC0000285/AY078067.1 RppA type
+    III PKS as the knockout-supported scaffold enzyme in the red-brown pigment locus.
+    The record does not assert direct biochemical characterization of purified S.
+    erythraea RppA or a single-enzyme reaction from RppA to exact flaviolin.
+  evidence:
+  - reference: DOI:10.1046/j.1365-2958.2002.02975.x
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: disrupt the red-brown pigment-producing (rpp) locus in S. erythraea,
+      generating a mutant that displayed an albino phenotype
+    notes: Cortes et al. used rpp-locus disruption and vector recapture in Saccharopolyspora
+      erythraea to connect the cloned chalcone-synthase-like rppA locus to diffusible
+      red-brown flaviolin-derived pigment biosynthesis; the RppA-to-THN product assignment
+      is proposed from type III PKS homology rather than an assay of purified S. erythraea
+      RppA.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0000285.5 names flaviolin among products of the Saccharopolyspora
+      erythraea AY078067.1 red-brown-pigment locus and annotates AAL78053.1/rppA as
+      a knockout-supported Type III PKS scaffold-biosynthesis gene.
+  - reference: https://www.uniprot.org/uniprotkb/Q8KQM3
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: Unreviewed UniProtKB:Q8KQM3 is the 367 aa Saccharopolyspora erythraea RppA/rppA
+      protein and cross-references EMBL AY078067 protein AAL78053.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAL78053.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AAL78053.1 is the AY078067.1 rppA CDS from the Saccharopolyspora
+      erythraea red-brown-pigment locus and is sequence-identical to UniProtKB:Q8KQM3.
+- enzyme_id: UniProtKB:Q9FCA7
+  enzyme_label: SCO1206
+  reaction_id: RHEA:41524
+  substrate: CHEBI:57384
+  product: CHEBI:18365
+  notes: This curates Streptomyces coelicolor A3(2) SCO1206 as the biochemically characterized
+    type III PKS that condenses malonyl-CoA to 1,3,6,8-tetrahydroxynaphthalene upstream
+    of spontaneous oxidation to flaviolin.
+  evidence:
+  - reference: DOI:10.1007/s10295-003-0075-8
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Expression and characterization of the type III polyketide synthase 1,3,6,8-tetrahydroxynaphthalene
+      synthase from Streptomyces coelicolor A3(2)
+    notes: Izumikawa et al. expressed and characterized Streptomyces coelicolor A3(2)
+      SCO1206 as the type III PKS that catalyzes malonyl-CoA condensation to 1,3,6,8-tetrahydroxynaphthalene.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002127.3/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0002127.3 names flaviolin and 1,3,6,8-tetrahydroxynaphthalene
+      as products of the Streptomyces coelicolor A3(2) AL645882.2 flaviolin locus.
+  - reference: https://www.uniprot.org/uniprotkb/Q9FCA7
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: Reviewed UniProtKB:Q9FCA7 is the 374 aa Streptomyces coelicolor A3(2) SCO1206
+      1,3,6,8-tetrahydroxynaphthalene synthase and annotates EC:2.3.1.233/RHEA:41524
+      with PMID:12905073.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAC01488.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept CAC01488.1 is the Streptomyces coelicolor A3(2) SCO1206/2SCG58.06
+      putative polyketide synthase CDS and cross-references GOA:Q9FCA7.
+causal_graphs:
+- graph_id: flaviolin-rppa-thns-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Saccharopolyspora erythraea RppA and Streptomyces coelicolor
+    SCO1206 type III PKS graph for formation of 1,3,6,8-tetrahydroxynaphthalene upstream
+    of flaviolin.
+  nodes:
+  - node_id: malonyl_coa
+    label: malonyl-CoA(5-)
+    node_type: PRECURSOR
+    identifier: CHEBI:57384
+    grounding_status: GROUNDED
+  - node_id: rppa
+    label: RppA
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KQM3
+    grounding_status: GROUNDED
+  - node_id: sco1206
+    label: SCO1206 THNS
+    node_type: ENZYME
+    identifier: UniProtKB:Q9FCA7
+    grounding_status: GROUNDED
+  - node_id: thn
+    label: 1,3,6,8-tetrahydroxynaphthalene
+    node_type: COMPOUND
+    identifier: CHEBI:18365
+    grounding_status: GROUNDED
+  - node_id: thn_oxidation
+    label: THN oxidation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: flaviolin
+    label: flaviolin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-cfe2b5c0a9
+    grounding_status: GROUNDED
+  edges:
+  - subject: malonyl_coa
+    predicate: is condensed by
+    object: rppa
+    notes: The S. erythraea RppA edge is proposed from the cloned rppA sequence, knockout
+      of the pigment locus, and homology to biochemically characterized bacterial
+      THN synthases.
+    evidence:
+    - reference: DOI:10.1046/j.1365-2958.2002.02975.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: disrupt the red-brown pigment-producing (rpp) locus in S. erythraea,
+        generating a mutant that displayed an albino phenotype
+      notes: Cortes et al. used rpp-locus disruption and vector recapture in Saccharopolyspora
+        erythraea to connect the cloned chalcone-synthase-like rppA locus to diffusible
+        red-brown flaviolin-derived pigment biosynthesis; the RppA-to-THN product
+        assignment is proposed from type III PKS homology rather than an assay of
+        purified S. erythraea RppA.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0000285.5 names flaviolin among products of the Saccharopolyspora
+        erythraea AY078067.1 red-brown-pigment locus and annotates AAL78053.1/rppA
+        as a knockout-supported Type III PKS scaffold-biosynthesis gene.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KQM3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:Q8KQM3 is the 367 aa Saccharopolyspora erythraea
+        RppA/rppA protein and cross-references EMBL AY078067 protein AAL78053.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAL78053.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AAL78053.1 is the AY078067.1 rppA CDS from the Saccharopolyspora
+        erythraea red-brown-pigment locus and is sequence-identical to UniProtKB:Q8KQM3.
+  - subject: rppa
+    predicate: catalyzes proposed formation of
+    object: thn
+    notes: The edge stops at the proposed THN synthase product rather than assigning
+      RppA to exact flaviolin, flaviolin rhamnoside, or 3,3'-diflaviolin formation.
+    evidence:
+    - reference: DOI:10.1046/j.1365-2958.2002.02975.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: disrupt the red-brown pigment-producing (rpp) locus in S. erythraea,
+        generating a mutant that displayed an albino phenotype
+      notes: Cortes et al. used rpp-locus disruption and vector recapture in Saccharopolyspora
+        erythraea to connect the cloned chalcone-synthase-like rppA locus to diffusible
+        red-brown flaviolin-derived pigment biosynthesis; the RppA-to-THN product
+        assignment is proposed from type III PKS homology rather than an assay of
+        purified S. erythraea RppA.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0000285.5 names flaviolin among products of the Saccharopolyspora
+        erythraea AY078067.1 red-brown-pigment locus and annotates AAL78053.1/rppA
+        as a knockout-supported Type III PKS scaffold-biosynthesis gene.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KQM3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:Q8KQM3 is the 367 aa Saccharopolyspora erythraea
+        RppA/rppA protein and cross-references EMBL AY078067 protein AAL78053.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAL78053.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AAL78053.1 is the AY078067.1 rppA CDS from the Saccharopolyspora
+        erythraea red-brown-pigment locus and is sequence-identical to UniProtKB:Q8KQM3.
+  - subject: malonyl_coa
+    predicate: is condensed by
+    object: sco1206
+    notes: RHEA:41524 selects malonyl-CoA as the sole CoA-linked substrate for the
+      SCO1206 THN synthase reaction.
+    evidence:
+    - reference: DOI:10.1007/s10295-003-0075-8
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Expression and characterization of the type III polyketide synthase
+        1,3,6,8-tetrahydroxynaphthalene synthase from Streptomyces coelicolor A3(2)
+      notes: Izumikawa et al. expressed and characterized Streptomyces coelicolor
+        A3(2) SCO1206 as the type III PKS that catalyzes malonyl-CoA condensation
+        to 1,3,6,8-tetrahydroxynaphthalene.
+    - reference: https://www.uniprot.org/uniprotkb/Q9FCA7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:Q9FCA7 is the 374 aa Streptomyces coelicolor A3(2)
+        SCO1206 1,3,6,8-tetrahydroxynaphthalene synthase and annotates EC:2.3.1.233/RHEA:41524
+        with PMID:12905073.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAC01488.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept CAC01488.1 is the Streptomyces coelicolor A3(2) SCO1206/2SCG58.06
+        putative polyketide synthase CDS and cross-references GOA:Q9FCA7.
+  - subject: sco1206
+    predicate: catalyzes formation of
+    object: thn
+    notes: SCO1206 is curated at the exact reaction characterized in the Streptomyces
+      coelicolor type III PKS study and annotated in UniProt with RHEA:41524.
+    evidence:
+    - reference: DOI:10.1007/s10295-003-0075-8
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Expression and characterization of the type III polyketide synthase
+        1,3,6,8-tetrahydroxynaphthalene synthase from Streptomyces coelicolor A3(2)
+      notes: Izumikawa et al. expressed and characterized Streptomyces coelicolor
+        A3(2) SCO1206 as the type III PKS that catalyzes malonyl-CoA condensation
+        to 1,3,6,8-tetrahydroxynaphthalene.
+    - reference: https://www.uniprot.org/uniprotkb/Q9FCA7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:Q9FCA7 is the 374 aa Streptomyces coelicolor A3(2)
+        SCO1206 1,3,6,8-tetrahydroxynaphthalene synthase and annotates EC:2.3.1.233/RHEA:41524
+        with PMID:12905073.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAC01488.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept CAC01488.1 is the Streptomyces coelicolor A3(2) SCO1206/2SCG58.06
+        putative polyketide synthase CDS and cross-references GOA:Q9FCA7.
+  - subject: thn
+    predicate: spontaneously oxidizes through
+    object: thn_oxidation
+    notes: The non-enzymatic process captures THN oxidation without assigning an exact
+      downstream tailoring enzyme in either cluster.
+    evidence:
+    - reference: DOI:10.1046/j.1365-2958.2002.02975.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Flaviolin is a spontaneous oxidation product of 1,3,6,8-tetrahydroxynaphthalene
+      notes: Cortes et al. place flaviolin downstream of the THN synthase product;
+        the BGC0000285 cluster also encodes RppB and ORF3 oxidases, but those tailoring
+        enzymes are not assigned here to the exact flaviolin branch.
+  - subject: thn_oxidation
+    predicate: forms
+    object: flaviolin
+    notes: The exact flaviolin product is supported by the spontaneous-oxidation statement
+      and by the BGC0000285 and BGC0002127 MIBiG product assertions.
+    evidence:
+    - reference: DOI:10.1046/j.1365-2958.2002.02975.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Flaviolin is a spontaneous oxidation product of 1,3,6,8-tetrahydroxynaphthalene
+      notes: Cortes et al. place flaviolin downstream of the THN synthase product;
+        the BGC0000285 cluster also encodes RppB and ORF3 oxidases, but those tailoring
+        enzymes are not assigned here to the exact flaviolin branch.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0000285.5 names flaviolin among products of the Saccharopolyspora
+        erythraea AY078067.1 red-brown-pigment locus and annotates AAL78053.1/rppA
+        as a knockout-supported Type III PKS scaffold-biosynthesis gene.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002127.3/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0002127.3 names flaviolin and 1,3,6,8-tetrahydroxynaphthalene
+        as products of the Streptomyces coelicolor A3(2) AL645882.2 flaviolin locus.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -341,3 +590,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T16:47:58Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added an evidence-backed flaviolin type III PKS pathway and BIOSYNTHESIS
+    graph with Saccharopolyspora erythraea RppA UniProtKB:Q8KQM3, Streptomyces coelicolor
+    SCO1206 UniProtKB:Q9FCA7, and conservative THN-to-flaviolin oxidation.
+  llm_assisted: true

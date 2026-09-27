@@ -160,7 +160,75 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>#</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>RppA<br><span class="mono">UniProtKB:Q8KQM3</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; CHEBI:18365</td>
+  <td class="mono">DOI:10.1046/j.1365-2958.2002.02975.x</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>SCO1206<br><span class="mono">UniProtKB:Q9FCA7</span></td>
+  <td class="mono">RHEA:41524</td>
+  <td class="mono">CHEBI:57384 &rarr; CHEBI:18365</td>
+  <td class="mono">DOI:10.1007/s10295-003-0075-8</td>
+</tr>
+</table></div>
+<p class="sub">Entry 1: This curates the Saccharopolyspora erythraea BGC0000285/AY078067.1 RppA type III PKS as the knockout-supported scaffold enzyme in the red-brown pigment locus. The record does not assert direct biochemical characterization of purified S. erythraea RppA or a single-enzyme reaction from RppA to exact flaviolin.</p><p class="sub">Entry 2: This curates Streptomyces coelicolor A3(2) SCO1206 as the biochemically characterized type III PKS that condenses malonyl-CoA to 1,3,6,8-tetrahydroxynaphthalene upstream of spontaneous oxidation to flaviolin.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 6 edges</span></h2>
+<p class="sub">Partial Saccharopolyspora erythraea RppA and Streptomyces coelicolor SCO1206 type III PKS graph for formation of 1,3,6,8-tetrahydroxynaphthalene upstream of flaviolin.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>malonyl-CoA(5-)</td>
+  <td>is condensed by</td>
+  <td>RppA</td>
+  <td>The S. erythraea RppA edge is proposed from the cloned rppA sequence, knockout of the pigment locus, and homology to biochemically characterized bacterial THN synthases.</td>
+  <td class="mono">DOI:10.1046/j.1365-2958.2002.02975.x<br>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html<br>https://www.uniprot.org/uniprotkb/Q8KQM3<br>https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</td>
+</tr>
+<tr>
+  <td>RppA</td>
+  <td>catalyzes proposed formation of</td>
+  <td>1,3,6,8-tetrahydroxynaphthalene</td>
+  <td>The edge stops at the proposed THN synthase product rather than assigning RppA to exact flaviolin, flaviolin rhamnoside, or 3,3&#39;-diflaviolin formation.</td>
+  <td class="mono">DOI:10.1046/j.1365-2958.2002.02975.x<br>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html<br>https://www.uniprot.org/uniprotkb/Q8KQM3<br>https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</td>
+</tr>
+<tr>
+  <td>malonyl-CoA(5-)</td>
+  <td>is condensed by</td>
+  <td>SCO1206 THNS</td>
+  <td>RHEA:41524 selects malonyl-CoA as the sole CoA-linked substrate for the SCO1206 THN synthase reaction.</td>
+  <td class="mono">DOI:10.1007/s10295-003-0075-8<br>https://www.uniprot.org/uniprotkb/Q9FCA7<br>https://www.ncbi.nlm.nih.gov/protein/CAC01488.1</td>
+</tr>
+<tr>
+  <td>SCO1206 THNS</td>
+  <td>catalyzes formation of</td>
+  <td>1,3,6,8-tetrahydroxynaphthalene</td>
+  <td>SCO1206 is curated at the exact reaction characterized in the Streptomyces coelicolor type III PKS study and annotated in UniProt with RHEA:41524.</td>
+  <td class="mono">DOI:10.1007/s10295-003-0075-8<br>https://www.uniprot.org/uniprotkb/Q9FCA7<br>https://www.ncbi.nlm.nih.gov/protein/CAC01488.1</td>
+</tr>
+<tr>
+  <td>1,3,6,8-tetrahydroxynaphthalene</td>
+  <td>spontaneously oxidizes through</td>
+  <td>THN oxidation</td>
+  <td>The non-enzymatic process captures THN oxidation without assigning an exact downstream tailoring enzyme in either cluster.</td>
+  <td class="mono">DOI:10.1046/j.1365-2958.2002.02975.x</td>
+</tr>
+<tr>
+  <td>THN oxidation</td>
+  <td>forms</td>
+  <td>flaviolin</td>
+  <td>The exact flaviolin product is supported by the spontaneous-oxidation statement and by the BGC0000285 and BGC0002127 MIBiG product assertions.</td>
+  <td class="mono">DOI:10.1046/j.1365-2958.2002.02975.x<br>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html<br>https://mibig.secondarymetabolites.org/repository/BGC0002127.3/index.html</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">8</span></h2>
