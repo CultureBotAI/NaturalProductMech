@@ -74,6 +74,67 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-76144efbcc
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9FI37
+  enzyme_label: Thalianol synthase 1
+  reaction_id: RHEA:26160
+  notes: Arabidopsis thaliana THAS1/At5g48010 cyclizes (S)-2,3-epoxysqualene to thalianol,
+    the first committed cyclization step in the thalianol triterpene gene cluster.
+  evidence:
+  - reference: DOI:10.1021/ja0318784
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: was shown to convert 3(S)-oxidosqualene to the previously unknown triterpene
+      alcohol (3S,13S,14R)-malabarica-8,17,21-trien-3-ol, which we named thalianol
+    notes: UniProtKB:Q9FI37 resolves to the Arabidopsis thaliana THAS1/At5g48010 gene
+      product, maps to EMBL AY327541 protein AAP92117.1, and annotates RHEA:26160
+      for the cyclization of (S)-2,3-epoxysqualene to thalianol.
+  substrate: CHEBI:15441
+  product: CHEBI:52317
+causal_graphs:
+- graph_id: thalianol-thas1-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Arabidopsis thaliana thalianol biosynthesis graph for THAS1-catalyzed
+    cyclization of (S)-2,3-epoxysqualene to thalianol.
+  nodes:
+  - node_id: oxidosqualene
+    label: (S)-2,3-epoxysqualene
+    node_type: PRECURSOR
+    identifier: CHEBI:15441
+    grounding_status: GROUNDED
+  - node_id: thas1
+    label: THAS1
+    node_type: ENZYME
+    identifier: UniProtKB:Q9FI37
+    grounding_status: GROUNDED
+  - node_id: thalianol
+    label: thalianol
+    node_type: COMPOUND
+    identifier: CHEBI:52317
+    grounding_status: GROUNDED
+  edges:
+  - subject: oxidosqualene
+    predicate: is cyclized by
+    object: thas1
+    evidence:
+    - reference: DOI:10.1021/ja0318784
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: was shown to convert 3(S)-oxidosqualene to the previously unknown triterpene
+        alcohol (3S,13S,14R)-malabarica-8,17,21-trien-3-ol, which we named thalianol
+      notes: UniProtKB:Q9FI37 resolves to the Arabidopsis thaliana THAS1/At5g48010
+        gene product, maps to EMBL AY327541 protein AAP92117.1, and annotates RHEA:26160
+        for the cyclization of (S)-2,3-epoxysqualene to thalianol.
+  - subject: thas1
+    predicate: forms
+    object: thalianol
+    evidence:
+    - reference: DOI:10.1021/ja0318784
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: was shown to convert 3(S)-oxidosqualene to the previously unknown triterpene
+        alcohol (3S,13S,14R)-malabarica-8,17,21-trien-3-ol, which we named thalianol
+      notes: UniProtKB:Q9FI37 resolves to the Arabidopsis thaliana THAS1/At5g48010
+        gene product, maps to EMBL AY327541 protein AAP92117.1, and annotates RHEA:26160
+        for the cyclization of (S)-2,3-epoxysqualene to thalianol.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -83,3 +144,16 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-26T23:30:22Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a one-step BIOSYNTHESIS pathway and causal graph for thalianol biosynthesis;
+    grounded Arabidopsis thaliana THAS1 to UniProtKB:Q9FI37 via At5g48010; and cited
+    the experimentally characterized RHEA:26160 reaction.
+  llm_assisted: true
+- timestamp: '2026-09-26T23:49:33Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Replaced title-only thalianol THAS1 pathway and causal-edge evidence snippets
+    with a narrow verbatim passage from DOI:10.1021/ja0318784.
+  llm_assisted: true
