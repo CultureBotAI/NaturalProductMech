@@ -120,6 +120,103 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:C9K1X5
+  enzyme_label: CotB2
+  reaction_id: RHEA:41628
+  notes: CotB2 cyclizes geranylgeranyl diphosphate to cyclooctat-9-en-7-ol, the first
+    committed diterpene cyclization in cyclooctatin biosynthesis; later CotB3/CotB4
+    P450 hydroxylations remain uncurated.
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2009.06.007
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Incubation of the recombinant CotB2 with GGDP resulted in the formation
+      of cyclooctat-9-en-7-ol
+    notes: Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin
+      locus and assigned CotB2 to the GGDP to cyclooctat-9-en-7-ol cyclization in
+      vitro.
+  - reference: https://www.uniprot.org/uniprotkb/C9K1X5
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:C9K1X5 is the reviewed Streptomyces melanosporofaciens CotB2
+      entry, maps to EMBL AB448947 protein BAI44338.1, and annotates RHEA:41628.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAI44338.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept BAI44338.1 is the AB448947.1 geranylgeranyl diphosphate cyclase
+      coding sequence from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin
+      locus.
+  substrate: CHEBI:57533
+  product: CHEBI:78352
+causal_graphs:
+- graph_id: cyclooctatin-cotb2-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces melanosporofaciens cyclooctatin biosynthesis graph
+    for CotB2-catalyzed formation of cyclooctat-9-en-7-ol from geranylgeranyl diphosphate.
+  nodes:
+  - node_id: ggdp
+    label: geranylgeranyl diphosphate(3-)
+    node_type: PRECURSOR
+    identifier: CHEBI:57533
+    grounding_status: GROUNDED
+  - node_id: cotb2
+    label: CotB2
+    node_type: ENZYME
+    identifier: UniProtKB:C9K1X5
+    grounding_status: GROUNDED
+  - node_id: cyclooctat_9_en_7_ol
+    label: cyclooctat-9-en-7-ol
+    node_type: COMPOUND
+    identifier: CHEBI:78352
+    grounding_status: GROUNDED
+  edges:
+  - subject: ggdp
+    predicate: is cyclized by
+    object: cotb2
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2009.06.007
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Incubation of the recombinant CotB2 with GGDP resulted in the formation
+        of cyclooctat-9-en-7-ol
+      notes: Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin
+        locus and assigned CotB2 to the GGDP to cyclooctat-9-en-7-ol cyclization in
+        vitro.
+    - reference: https://www.uniprot.org/uniprotkb/C9K1X5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:C9K1X5 is the reviewed Streptomyces melanosporofaciens CotB2
+        entry, maps to EMBL AB448947 protein BAI44338.1, and annotates RHEA:41628.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAI44338.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept BAI44338.1 is the AB448947.1 geranylgeranyl diphosphate
+        cyclase coding sequence from the Streptomyces melanosporofaciens MI614-43F2
+        cyclooctatin locus.
+  - subject: cotb2
+    predicate: forms
+    object: cyclooctat_9_en_7_ol
+    notes: This is the first committed cyclization step; downstream CotB3/CotB4 P450
+      reactions to cyclooctatin remain uncurated.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2009.06.007
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Incubation of the recombinant CotB2 with GGDP resulted in the formation
+        of cyclooctat-9-en-7-ol
+      notes: Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin
+        locus and assigned CotB2 to the GGDP to cyclooctat-9-en-7-ol cyclization in
+        vitro.
+    - reference: https://www.uniprot.org/uniprotkb/C9K1X5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:C9K1X5 is the reviewed Streptomyces melanosporofaciens CotB2
+        entry, maps to EMBL AB448947 protein BAI44338.1, and annotates RHEA:41628.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAI44338.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept BAI44338.1 is the AB448947.1 geranylgeranyl diphosphate
+        cyclase coding sequence from the Streptomyces melanosporofaciens MI614-43F2
+        cyclooctatin locus.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -129,3 +226,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T03:51:25Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the Streptomyces melanosporofaciens CotB2 GGDP-to-cyclooctat-9-en-7-ol
+    biosynthetic step and BIOSYNTHESIS causal graph grounded to UniProtKB:C9K1X5.
+  llm_assisted: true
