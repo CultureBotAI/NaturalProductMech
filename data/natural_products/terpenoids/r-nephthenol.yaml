@@ -145,6 +145,92 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-951e81c48a
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: SteTC1
+  reaction_id: RHEA:42992
+  notes: SteTC1 cyclizes (2E,6E,10E)-geranylgeranyl diphosphate to (R)-nephthenol.
+    The assayed Stereum hirsutum FP-91666 SS1 protein is tracked by GenPept EIM84824.1,
+    provisional RefSeq XP_007305993.1, locus tag STEHIDRAFT_122776, and JGI model
+    Stehi1_122776; no exact UniProtKB entry was available for these accessions or
+    the SteTC1 alias at curation time.
+  evidence:
+  - reference: DOI:10.1016/j.fgb.2019.03.007
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: first fungal cembrane diterpene synthase
+    notes: Li et al. functionally characterized Stereum hirsutum SteTC1 as a cembrane
+      diterpene synthase.
+  - reference: mibig:BGC0002219
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002219 links the Stereum hirsutum FP-91666 SS1 locus on GenBank
+      JH687388.1 to (-)-(R)-nephthenol by heterologous expression.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/XP_007305993.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI resolves Stereum hirsutum XP_007305993.1 to locus tag STEHIDRAFT_122776
+      and JGI model Stehi1_122776, and describes it as a provisional RefSeq identical
+      to GenPept EIM84824.1.
+  substrate: CHEBI:58756
+  product: CHEBI:82799
+causal_graphs:
+- graph_id: r-nephthenol-stetc1-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Stereum hirsutum (R)-nephthenol biosynthesis graph for SteTC1-catalyzed
+    cyclization of (2E,6E,10E)-geranylgeranyl diphosphate to (R)-nephthenol.
+  nodes:
+  - node_id: ggpp
+    label: (2E,6E,10E)-geranylgeranyl diphosphate
+    node_type: PRECURSOR
+    identifier: CHEBI:58756
+    grounding_status: GROUNDED
+  - node_id: stetc1
+    label: SteTC1
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r_nephthenol
+    label: (R)-nephthenol
+    node_type: COMPOUND
+    identifier: CHEBI:82799
+    grounding_status: GROUNDED
+  edges:
+  - subject: ggpp
+    predicate: is cyclized by
+    object: stetc1
+    evidence:
+    - reference: DOI:10.1016/j.fgb.2019.03.007
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: first fungal cembrane diterpene synthase
+      notes: Li et al. functionally characterized Stereum hirsutum SteTC1 as a cembrane
+        diterpene synthase.
+    - reference: mibig:BGC0002219
+      evidence_type: DATABASE_ASSERTION
+      notes: MIBiG BGC0002219 links the Stereum hirsutum FP-91666 SS1 locus on GenBank
+        JH687388.1 to (-)-(R)-nephthenol by heterologous expression.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/XP_007305993.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI resolves Stereum hirsutum XP_007305993.1 to locus tag STEHIDRAFT_122776
+        and JGI model Stehi1_122776, and describes it as a provisional RefSeq identical
+        to GenPept EIM84824.1.
+  - subject: stetc1
+    predicate: forms
+    object: r_nephthenol
+    evidence:
+    - reference: DOI:10.1016/j.fgb.2019.03.007
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: first fungal cembrane diterpene synthase
+      notes: Li et al. functionally characterized Stereum hirsutum SteTC1 as a cembrane
+        diterpene synthase.
+    - reference: mibig:BGC0002219
+      evidence_type: DATABASE_ASSERTION
+      notes: MIBiG BGC0002219 links the Stereum hirsutum FP-91666 SS1 locus on GenBank
+        JH687388.1 to (-)-(R)-nephthenol by heterologous expression.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/XP_007305993.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI resolves Stereum hirsutum XP_007305993.1 to locus tag STEHIDRAFT_122776
+        and JGI model Stehi1_122776, and describes it as a provisional RefSeq identical
+        to GenPept EIM84824.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -154,3 +240,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T01:32:22Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a one-step BIOSYNTHESIS pathway and causal graph for (R)-nephthenol
+    biosynthesis; represented Stereum hirsutum SteTC1 as an ungrounded enzyme node
+    because the GenPept, RefSeq, JGI, and locus identifiers do not resolve to an exact
+    UniProtKB entry; and cited the experimentally characterized RHEA:42992 reaction.
+  llm_assisted: true
