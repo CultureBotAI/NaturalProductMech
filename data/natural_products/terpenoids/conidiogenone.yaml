@@ -124,6 +124,242 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-3d5ca63698
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:B6HFX8
+  enzyme_label: PchDS
+  reaction_id: RHEA:17653
+  notes: The C-terminal prenyltransferase domain of PchDS condenses isopentenyl diphosphate
+    with (2E,6E)-farnesyl diphosphate to form (2E,6E,10E)-geranylgeranyl diphosphate
+    in the conidiogenone pathway.
+  evidence:
+  - reference: DOI:10.1080/09168451.2018.1536518
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Shiina et al. experimentally characterized the Penicillium rubens Wisconsin
+      54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the conidiogenone
+      precursor deoxyconidiogenol.
+  - reference: https://www.uniprot.org/uniprotkb/B6HFX8
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860
+      protein and maps it to EMBL AM920435 protein CAP86415.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAP86415.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence cross-referenced
+      from UniProtKB:B6HFX8.
+  substrate: CHEBI:175763
+  product: CHEBI:58756
+- step_number: 2
+  enzyme_id: UniProtKB:B6HFX8
+  enzyme_label: PchDS
+  notes: The N-terminal terpene cyclase domain of PchDS cyclizes (2E,6E,10E)-geranylgeranyl
+    diphosphate to deoxyconidiogenol.
+  evidence:
+  - reference: DOI:10.1080/09168451.2018.1536518
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Shiina et al. experimentally characterized the Penicillium rubens Wisconsin
+      54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the conidiogenone
+      precursor deoxyconidiogenol.
+  - reference: https://www.uniprot.org/uniprotkb/B6HFX8
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860
+      protein and maps it to EMBL AM920435 protein CAP86415.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAP86415.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence cross-referenced
+      from UniProtKB:B6HFX8.
+  substrate: CHEBI:58756
+  product: CHEBI:177897
+- step_number: 3
+  enzyme_id: UniProtKB:B6HFX9
+  enzyme_label: PchP450
+  proposed: true
+  notes: PchP450 is the Pc20g10870 P450 homolog proposed to catalyze the deoxyconidiogenol-to-conidiogenone
+    oxidation in the Penicillium rubens AM920435.1 locus; the exact two-round oxidation
+    was assayed with the Penicillium roqueforti PrP450 homolog, not directly with
+    PchP450.
+  evidence:
+  - reference: DOI:10.1080/09168451.2018.1536518
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Shiina et al. identified PchP450/Pc20g10870 in the Penicillium rubens Wisconsin
+      54-1255 locus as the P450 homolog corresponding to the experimentally assayed
+      PrP450 conidiogenone synthase.
+  - reference: https://www.uniprot.org/uniprotkb/B6HFX9
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:B6HFX9 resolves PchP450 to the reviewed Penicillium rubens Pc20g10870
+      protein, maps it to EMBL AM920435 protein CAP86416.1, and infers the conidiogenone
+      oxidation function from the assayed Penicillium roqueforti PrP450 homolog.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAP86416.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept CAP86416.1 is the AM920435.1 Pc20g10870 coding sequence cross-referenced
+      from UniProtKB:B6HFX9.
+  substrate: CHEBI:177897
+  product: CHEBI:189095
+causal_graphs:
+- graph_id: conidiogenone-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Penicillium rubens conidiogenone biosynthesis graph for PchDS formation
+    and cyclization of GGPP, followed by the inferred PchP450 oxidation of deoxyconidiogenol
+    to conidiogenone.
+  nodes:
+  - node_id: farnesyl_diphosphate
+    label: (2E,6E)-farnesyl diphosphate
+    node_type: PRECURSOR
+    identifier: CHEBI:175763
+    grounding_status: GROUNDED
+  - node_id: pchds
+    label: PchDS
+    node_type: ENZYME
+    identifier: UniProtKB:B6HFX8
+    grounding_status: GROUNDED
+  - node_id: ggpp
+    label: (2E,6E,10E)-geranylgeranyl diphosphate
+    node_type: PRECURSOR
+    identifier: CHEBI:58756
+    grounding_status: GROUNDED
+  - node_id: deoxyconidiogenol
+    label: deoxyconidiogenol
+    node_type: COMPOUND
+    identifier: CHEBI:177897
+    grounding_status: GROUNDED
+  - node_id: pchp450
+    label: PchP450
+    node_type: ENZYME
+    identifier: UniProtKB:B6HFX9
+    grounding_status: GROUNDED
+  - node_id: conidiogenone
+    label: conidiogenone
+    node_type: COMPOUND
+    identifier: CHEBI:189095
+    grounding_status: GROUNDED
+  edges:
+  - subject: farnesyl_diphosphate
+    predicate: is prenylated by
+    object: pchds
+    evidence:
+    - reference: DOI:10.1080/09168451.2018.1536518
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Shiina et al. experimentally characterized the Penicillium rubens Wisconsin
+        54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the
+        conidiogenone precursor deoxyconidiogenol.
+    - reference: https://www.uniprot.org/uniprotkb/B6HFX8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860
+        protein and maps it to EMBL AM920435 protein CAP86415.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAP86415.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence
+        cross-referenced from UniProtKB:B6HFX8.
+  - subject: pchds
+    predicate: forms
+    object: ggpp
+    evidence:
+    - reference: DOI:10.1080/09168451.2018.1536518
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Shiina et al. experimentally characterized the Penicillium rubens Wisconsin
+        54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the
+        conidiogenone precursor deoxyconidiogenol.
+    - reference: https://www.uniprot.org/uniprotkb/B6HFX8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860
+        protein and maps it to EMBL AM920435 protein CAP86415.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAP86415.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence
+        cross-referenced from UniProtKB:B6HFX8.
+  - subject: ggpp
+    predicate: is cyclized by
+    object: pchds
+    evidence:
+    - reference: DOI:10.1080/09168451.2018.1536518
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Shiina et al. experimentally characterized the Penicillium rubens Wisconsin
+        54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the
+        conidiogenone precursor deoxyconidiogenol.
+    - reference: https://www.uniprot.org/uniprotkb/B6HFX8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860
+        protein and maps it to EMBL AM920435 protein CAP86415.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAP86415.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence
+        cross-referenced from UniProtKB:B6HFX8.
+  - subject: pchds
+    predicate: forms
+    object: deoxyconidiogenol
+    evidence:
+    - reference: DOI:10.1080/09168451.2018.1536518
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Shiina et al. experimentally characterized the Penicillium rubens Wisconsin
+        54-1255 bifunctional diterpene synthase PchDS/Pc20g10860 that produces the
+        conidiogenone precursor deoxyconidiogenol.
+    - reference: https://www.uniprot.org/uniprotkb/B6HFX8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:B6HFX8 resolves PchDS to the reviewed Penicillium rubens Pc20g10860
+        protein and maps it to EMBL AM920435 protein CAP86415.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAP86415.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept CAP86415.1 is the AM920435.1 Pc20g10860 coding sequence
+        cross-referenced from UniProtKB:B6HFX8.
+  - subject: deoxyconidiogenol
+    predicate: is putatively oxidized by
+    object: pchp450
+    notes: The P. rubens PchP450 function is inferred from the assayed P. roqueforti
+      PrP450 homolog.
+    evidence:
+    - reference: DOI:10.1080/09168451.2018.1536518
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Shiina et al. identified PchP450/Pc20g10870 in the Penicillium rubens
+        Wisconsin 54-1255 locus as the P450 homolog corresponding to the experimentally
+        assayed PrP450 conidiogenone synthase.
+    - reference: https://www.uniprot.org/uniprotkb/B6HFX9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:B6HFX9 resolves PchP450 to the reviewed Penicillium rubens
+        Pc20g10870 protein, maps it to EMBL AM920435 protein CAP86416.1, and infers
+        the conidiogenone oxidation function from the assayed Penicillium roqueforti
+        PrP450 homolog.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAP86416.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept CAP86416.1 is the AM920435.1 Pc20g10870 coding sequence
+        cross-referenced from UniProtKB:B6HFX9.
+  - subject: pchp450
+    predicate: putatively forms
+    object: conidiogenone
+    notes: The P. rubens PchP450 function is inferred from the assayed P. roqueforti
+      PrP450 homolog.
+    evidence:
+    - reference: DOI:10.1080/09168451.2018.1536518
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Shiina et al. identified PchP450/Pc20g10870 in the Penicillium rubens
+        Wisconsin 54-1255 locus as the P450 homolog corresponding to the experimentally
+        assayed PrP450 conidiogenone synthase.
+    - reference: https://www.uniprot.org/uniprotkb/B6HFX9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:B6HFX9 resolves PchP450 to the reviewed Penicillium rubens
+        Pc20g10870 protein, maps it to EMBL AM920435 protein CAP86416.1, and infers
+        the conidiogenone oxidation function from the assayed Penicillium roqueforti
+        PrP450 homolog.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAP86416.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept CAP86416.1 is the AM920435.1 Pc20g10870 coding sequence
+        cross-referenced from UniProtKB:B6HFX9.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -133,3 +369,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T03:02:37Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the PchDS/PchP450 conidiogenone biosynthetic pathway and a BIOSYNTHESIS
+    causal graph grounded to UniProtKB accessions B6HFX8 and B6HFX9, with the PchP450
+    oxidation marked as proposed from the experimentally assayed PrP450 homolog.
+  llm_assisted: true
