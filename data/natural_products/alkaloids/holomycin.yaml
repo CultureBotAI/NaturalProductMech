@@ -446,6 +446,154 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000373, BGC0002091,
     BGC0002412. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:E2PZ83
+  enzyme_label: ORF3488/SCLAV_5271 NRPS
+  notes: This curates the Streptomyces clavuligerus ATCC 27064 BGC0000373/CM000913
+    NRPS that activates L-Cys and tethers Cys to its thiolation-domain phosphopantetheinyl
+    arm; later holomycin biosynthetic steps remain uncurated.
+  evidence:
+  - reference: DOI:10.1073/pnas.1014140107
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Deletions of ORF3488, the NRPS module
+    notes: Li and Walsh deleted ORF3488, the holomycin NRPS module, in Streptomyces
+      clavuligerus and showed that it is required for holomycin production.
+  - reference: DOI:10.1073/pnas.1014140107
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: L-Cys-AMP formation and subsequent covalent tethering of Cys
+    notes: Li and Walsh purified ORF3488 and demonstrated L-Cys activation and Cys
+      transfer to the phosphopantetheinyl arm of the ORF3488 thiolation domain in
+      vitro.
+  - reference: https://www.uniprot.org/uniprotkb/E2PZ83
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: Unreviewed UniProtKB:E2PZ83 is the Streptomyces clavuligerus SCLAV_5271
+      1096 aa non-ribosomal peptide synthetase and cross-references EMBL CM000913
+      protein EFG10344.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/EFG10344.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept EFG10344.1 is the SCLAV_5271 non-ribosomal peptide synthetase
+      CDS from the Streptomyces clavuligerus ATCC 27064 CM000913.1 BGC0000373 locus
+      and is sequence-identical to UniProtKB:E2PZ83.
+causal_graphs:
+- graph_id: holomycin-orf3488-nrps-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces clavuligerus holomycin biosynthesis graph for
+    ORF3488/SCLAV_5271 activation and thiolation-domain tethering of L-Cys.
+  nodes:
+  - node_id: l_cysteine
+    label: L-Cys
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: orf3488_nrps
+    label: ORF3488/SCLAV_5271 NRPS
+    node_type: ENZYME
+    identifier: UniProtKB:E2PZ83
+    grounding_status: GROUNDED
+  - node_id: cys_amp
+    label: L-Cys-AMP
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: nrps_tethered_cys
+    label: NRPS-tethered Cys
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: l_cysteine
+    predicate: is adenylated by
+    object: orf3488_nrps
+    notes: ORF3488 activates L-Cys as L-Cys-AMP in vitro.
+    evidence:
+    - reference: DOI:10.1073/pnas.1014140107
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: L-Cys-AMP formation and subsequent covalent tethering of Cys
+      notes: Li and Walsh purified ORF3488 and demonstrated L-Cys activation and Cys
+        transfer to the phosphopantetheinyl arm of the ORF3488 thiolation domain in
+        vitro.
+    - reference: https://www.uniprot.org/uniprotkb/E2PZ83
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:E2PZ83 is the Streptomyces clavuligerus SCLAV_5271
+        1096 aa non-ribosomal peptide synthetase and cross-references EMBL CM000913
+        protein EFG10344.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EFG10344.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept EFG10344.1 is the SCLAV_5271 non-ribosomal peptide synthetase
+        CDS from the Streptomyces clavuligerus ATCC 27064 CM000913.1 BGC0000373 locus
+        and is sequence-identical to UniProtKB:E2PZ83.
+  - subject: orf3488_nrps
+    predicate: forms
+    object: cys_amp
+    notes: Purified ORF3488 is sufficient for L-Cys-AMP formation.
+    evidence:
+    - reference: DOI:10.1073/pnas.1014140107
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: L-Cys-AMP formation and subsequent covalent tethering of Cys
+      notes: Li and Walsh purified ORF3488 and demonstrated L-Cys activation and Cys
+        transfer to the phosphopantetheinyl arm of the ORF3488 thiolation domain in
+        vitro.
+    - reference: https://www.uniprot.org/uniprotkb/E2PZ83
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:E2PZ83 is the Streptomyces clavuligerus SCLAV_5271
+        1096 aa non-ribosomal peptide synthetase and cross-references EMBL CM000913
+        protein EFG10344.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EFG10344.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept EFG10344.1 is the SCLAV_5271 non-ribosomal peptide synthetase
+        CDS from the Streptomyces clavuligerus ATCC 27064 CM000913.1 BGC0000373 locus
+        and is sequence-identical to UniProtKB:E2PZ83.
+  - subject: cys_amp
+    predicate: is tethered by
+    object: orf3488_nrps
+    notes: ORF3488 tethers Cys to the phosphopantetheinyl arm of its thiolation domain.
+    evidence:
+    - reference: DOI:10.1073/pnas.1014140107
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: L-Cys-AMP formation and subsequent covalent tethering of Cys
+      notes: Li and Walsh purified ORF3488 and demonstrated L-Cys activation and Cys
+        transfer to the phosphopantetheinyl arm of the ORF3488 thiolation domain in
+        vitro.
+    - reference: https://www.uniprot.org/uniprotkb/E2PZ83
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:E2PZ83 is the Streptomyces clavuligerus SCLAV_5271
+        1096 aa non-ribosomal peptide synthetase and cross-references EMBL CM000913
+        protein EFG10344.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EFG10344.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept EFG10344.1 is the SCLAV_5271 non-ribosomal peptide synthetase
+        CDS from the Streptomyces clavuligerus ATCC 27064 CM000913.1 BGC0000373 locus
+        and is sequence-identical to UniProtKB:E2PZ83.
+  - subject: orf3488_nrps
+    predicate: forms
+    object: nrps_tethered_cys
+    notes: The ORF3488 thiolation domain forms an enzyme-tethered Cys intermediate
+      rather than free holomycin.
+    evidence:
+    - reference: DOI:10.1073/pnas.1014140107
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: L-Cys-AMP formation and subsequent covalent tethering of Cys
+      notes: Li and Walsh purified ORF3488 and demonstrated L-Cys activation and Cys
+        transfer to the phosphopantetheinyl arm of the ORF3488 thiolation domain in
+        vitro.
+    - reference: https://www.uniprot.org/uniprotkb/E2PZ83
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:E2PZ83 is the Streptomyces clavuligerus SCLAV_5271
+        1096 aa non-ribosomal peptide synthetase and cross-references EMBL CM000913
+        protein EFG10344.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EFG10344.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept EFG10344.1 is the SCLAV_5271 non-ribosomal peptide synthetase
+        CDS from the Streptomyces clavuligerus ATCC 27064 CM000913.1 BGC0000373 locus
+        and is sequence-identical to UniProtKB:E2PZ83.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -455,3 +603,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T08:33:44Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the Streptomyces clavuligerus ORF3488/SCLAV_5271 NRPS UniProtKB:E2PZ83
+    as a Holomycin biosynthetic pathway enzyme and a partial biosynthesis causal graph
+    for L-Cys activation and thiolation-domain tethering.
+  llm_assisted: true
