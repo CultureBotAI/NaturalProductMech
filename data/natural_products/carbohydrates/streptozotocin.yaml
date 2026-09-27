@@ -124,6 +124,236 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0002294, BGC0002313.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A411EW25
+  enzyme_label: SznE
+  reaction_id: RHEA:59756
+  notes: This curates only the Streptomyces achromogenes subsp. streptozoticus NRRL
+    2697 SznE N-methyltransferase step from the BGC0002313/MK303572.1 route; RHEA:59756
+    also uses S-adenosyl-L-methionine and releases S-adenosyl-L-homocysteine and a
+    proton.
+  evidence:
+  - reference: DOI:10.1021/jacs.8b13049
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: free l-arginine is N-methylated by StzE to give Nω-monomethyl-l-arginine
+    notes: He et al. identified the streptozocin N-nitrosourea precursor pathway and
+      biochemically demonstrated the SznE/StzE arginine N-methyltransferase reaction.
+  - reference: https://www.uniprot.org/uniprotkb/A0A411EW25
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: Reviewed UniProtKB:A0A411EW25 is Streptomyces achromogenes subsp. streptozoticus
+      SznE, gene sznE, cross-references EMBL MK303572 protein QBA82201.1 and EMBL
+      MK291259 protein QBA82041.1, and annotates RHEA:59756 with ChEBI participants
+      CHEBI:15378, CHEBI:32682, CHEBI:57856, CHEBI:59789, and CHEBI:114953.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QBA82201.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept QBA82201.1 is the MK303572.1 sznE coding sequence from the
+      Streptomyces achromogenes subsp. streptozoticus BGC0002313 locus and is sequence-identical
+      to UniProtKB:A0A411EW25.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QBA82041.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept QBA82041.1 is the MK291259.1 standalone sznE coding sequence
+      deposited with the primary SznF study and is sequence-identical to BGC0002313
+      QBA82201.1 and UniProtKB:A0A411EW25.
+  substrate: CHEBI:32682
+  product: CHEBI:114953
+- step_number: 2
+  enzyme_id: UniProtKB:A0A411MR89
+  enzyme_label: SznF
+  reaction_id: RHEA:69052
+  notes: This curates SznF's overall oxidative rearrangement from N(omega)-methyl-L-arginine
+    to the unstable N-nitrosourea intermediate in the BGC0002313/MK303572.1 route;
+    downstream attachment to the sugar scaffold remains uncurated.
+  evidence:
+  - reference: DOI:10.1038/s41586-019-0894-z
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: catalyses an oxidative rearrangement of the guanidine group of Nω-methyl-L-arginine
+      to generate an N-nitrosourea product
+    notes: Ng et al. biochemically and structurally characterized Streptomyces achromogenes
+      subsp. streptozoticus SznF as the N-nitrosating metalloenzyme in streptozotocin
+      biosynthesis.
+  - reference: https://www.uniprot.org/uniprotkb/A0A411MR89
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: Reviewed UniProtKB:A0A411MR89 is Streptomyces achromogenes subsp. streptozoticus
+      SznF, gene sznF, cross-references EMBL MK303572 protein QBA82202.1 and EMBL
+      MK291260 protein QBA82042.1, and annotates overall RHEA:69052 plus SznF's successive
+      RHEA:69056, RHEA:69060, RHEA:69064, and RHEA:69068 partial reactions.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QBA82202.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept QBA82202.1 is the MK303572.1 sznF coding sequence from the
+      Streptomyces achromogenes subsp. streptozoticus BGC0002313 locus and is sequence-identical
+      to UniProtKB:A0A411MR89.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QBA82042.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept QBA82042.1 is the MK291260.1 standalone sznF coding sequence
+      deposited with the primary SznF study and is sequence-identical to BGC0002313
+      QBA82202.1 and UniProtKB:A0A411MR89.
+  substrate: CHEBI:114953
+  product: CHEBI:143209
+causal_graphs:
+- graph_id: streptozotocin-szne-sznf-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces achromogenes subsp. streptozoticus streptozotocin
+    biosynthesis graph for the SznE and SznF reactions that form the N-nitrosourea
+    precursor from L-arginine.
+  nodes:
+  - node_id: l_argininium
+    label: L-argininium(1+)
+    node_type: PRECURSOR
+    identifier: CHEBI:32682
+    grounding_status: GROUNDED
+  - node_id: szne
+    label: SznE
+    node_type: ENZYME
+    identifier: UniProtKB:A0A411EW25
+    grounding_status: GROUNDED
+  - node_id: n_omega_methyl_l_arginine
+    label: (2S)-2-ammonio-5-{[iminio(methylamino)methyl]amino}pentanoate
+    node_type: PRECURSOR
+    identifier: CHEBI:114953
+    grounding_status: GROUNDED
+  - node_id: sznf
+    label: SznF
+    node_type: ENZYME
+    identifier: UniProtKB:A0A411MR89
+    grounding_status: GROUNDED
+  - node_id: n_nitrosourea_intermediate
+    label: N(delta)-hydroxy-N(omega)-methyl-N(omega)-nitroso-L-citrulline zwitterion
+    node_type: PRECURSOR
+    identifier: CHEBI:143209
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_argininium
+    predicate: is methylated by
+    object: szne
+    notes: RHEA:59756 uses S-adenosyl-L-methionine as the methyl donor.
+    evidence:
+    - reference: DOI:10.1021/jacs.8b13049
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: free l-arginine is N-methylated by StzE to give Nω-monomethyl-l-arginine
+      notes: He et al. identified the streptozocin N-nitrosourea precursor pathway
+        and biochemically demonstrated the SznE/StzE arginine N-methyltransferase
+        reaction.
+    - reference: https://www.uniprot.org/uniprotkb/A0A411EW25
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:A0A411EW25 is Streptomyces achromogenes subsp. streptozoticus
+        SznE, gene sznE, cross-references EMBL MK303572 protein QBA82201.1 and EMBL
+        MK291259 protein QBA82041.1, and annotates RHEA:59756 with ChEBI participants
+        CHEBI:15378, CHEBI:32682, CHEBI:57856, CHEBI:59789, and CHEBI:114953.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QBA82201.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept QBA82201.1 is the MK303572.1 sznE coding sequence from the
+        Streptomyces achromogenes subsp. streptozoticus BGC0002313 locus and is sequence-identical
+        to UniProtKB:A0A411EW25.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QBA82041.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept QBA82041.1 is the MK291259.1 standalone sznE coding sequence
+        deposited with the primary SznF study and is sequence-identical to BGC0002313
+        QBA82201.1 and UniProtKB:A0A411EW25.
+  - subject: szne
+    predicate: forms
+    object: n_omega_methyl_l_arginine
+    notes: N(omega)-methyl-L-arginine is the SznF substrate in the streptozotocin
+      N-nitrosourea precursor pathway.
+    evidence:
+    - reference: DOI:10.1021/jacs.8b13049
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: free l-arginine is N-methylated by StzE to give Nω-monomethyl-l-arginine
+      notes: He et al. identified the streptozocin N-nitrosourea precursor pathway
+        and biochemically demonstrated the SznE/StzE arginine N-methyltransferase
+        reaction.
+    - reference: https://www.uniprot.org/uniprotkb/A0A411EW25
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:A0A411EW25 is Streptomyces achromogenes subsp. streptozoticus
+        SznE, gene sznE, cross-references EMBL MK303572 protein QBA82201.1 and EMBL
+        MK291259 protein QBA82041.1, and annotates RHEA:59756 with ChEBI participants
+        CHEBI:15378, CHEBI:32682, CHEBI:57856, CHEBI:59789, and CHEBI:114953.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QBA82201.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept QBA82201.1 is the MK303572.1 sznE coding sequence from the
+        Streptomyces achromogenes subsp. streptozoticus BGC0002313 locus and is sequence-identical
+        to UniProtKB:A0A411EW25.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QBA82041.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept QBA82041.1 is the MK291259.1 standalone sznE coding sequence
+        deposited with the primary SznF study and is sequence-identical to BGC0002313
+        QBA82201.1 and UniProtKB:A0A411EW25.
+  - subject: n_omega_methyl_l_arginine
+    predicate: is oxidatively rearranged by
+    object: sznf
+    notes: RHEA:69052 abstracts SznF's iron-dependent overall reaction from N(omega)-methyl-L-arginine
+      to the N-nitrosourea intermediate.
+    evidence:
+    - reference: DOI:10.1038/s41586-019-0894-z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: catalyses an oxidative rearrangement of the guanidine group of Nω-methyl-L-arginine
+        to generate an N-nitrosourea product
+      notes: Ng et al. biochemically and structurally characterized Streptomyces achromogenes
+        subsp. streptozoticus SznF as the N-nitrosating metalloenzyme in streptozotocin
+        biosynthesis.
+    - reference: https://www.uniprot.org/uniprotkb/A0A411MR89
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:A0A411MR89 is Streptomyces achromogenes subsp. streptozoticus
+        SznF, gene sznF, cross-references EMBL MK303572 protein QBA82202.1 and EMBL
+        MK291260 protein QBA82042.1, and annotates overall RHEA:69052 plus SznF's
+        successive RHEA:69056, RHEA:69060, RHEA:69064, and RHEA:69068 partial reactions.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QBA82202.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept QBA82202.1 is the MK303572.1 sznF coding sequence from the
+        Streptomyces achromogenes subsp. streptozoticus BGC0002313 locus and is sequence-identical
+        to UniProtKB:A0A411MR89.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QBA82042.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept QBA82042.1 is the MK291260.1 standalone sznF coding sequence
+        deposited with the primary SznF study and is sequence-identical to BGC0002313
+        QBA82202.1 and UniProtKB:A0A411MR89.
+  - subject: sznf
+    predicate: forms
+    object: n_nitrosourea_intermediate
+    notes: The product node is the RHEA:69052 N(delta)-hydroxy-N(omega)-methyl-N(omega)-nitroso-L-citrulline
+      product rather than the final streptozotocin scaffold.
+    evidence:
+    - reference: DOI:10.1038/s41586-019-0894-z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: catalyses an oxidative rearrangement of the guanidine group of Nω-methyl-L-arginine
+        to generate an N-nitrosourea product
+      notes: Ng et al. biochemically and structurally characterized Streptomyces achromogenes
+        subsp. streptozoticus SznF as the N-nitrosating metalloenzyme in streptozotocin
+        biosynthesis.
+    - reference: https://www.uniprot.org/uniprotkb/A0A411MR89
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:A0A411MR89 is Streptomyces achromogenes subsp. streptozoticus
+        SznF, gene sznF, cross-references EMBL MK303572 protein QBA82202.1 and EMBL
+        MK291260 protein QBA82042.1, and annotates overall RHEA:69052 plus SznF's
+        successive RHEA:69056, RHEA:69060, RHEA:69064, and RHEA:69068 partial reactions.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QBA82202.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept QBA82202.1 is the MK303572.1 sznF coding sequence from the
+        Streptomyces achromogenes subsp. streptozoticus BGC0002313 locus and is sequence-identical
+        to UniProtKB:A0A411MR89.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QBA82042.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept QBA82042.1 is the MK291260.1 standalone sznF coding sequence
+        deposited with the primary SznF study and is sequence-identical to BGC0002313
+        QBA82202.1 and UniProtKB:A0A411MR89.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -133,3 +363,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T05:57:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added Streptomyces achromogenes subsp. streptozoticus SznE and SznF N-nitrosourea
+    precursor biosynthetic steps and a BIOSYNTHESIS causal graph grounded to UniProtKB:A0A411EW25
+    and UniProtKB:A0A411MR89.
+  llm_assisted: true
