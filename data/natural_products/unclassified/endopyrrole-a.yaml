@@ -124,6 +124,102 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0002048, BGC0002326.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A6G7BMN0
+  enzyme_label: EpyD
+  proposed: true
+  notes: This curates Mycetohabitans rhizoxinica HKI454 MN081797.1 epyD/endopyrrole
+    NRPS A as a proposed protein contributor to endopyrrole A nonribosomal-peptide
+    assembly. The epy cluster is characterized for endopyrrole A production, but individual
+    EpyD module substrates and products are left unexpanded.
+  evidence:
+  - reference: DOI:10.1021/ACSCHEMBIO.9B00406
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Niehs et al. characterized the Mycetohabitans rhizoxinica HKI454 epy NRPS
+      cluster as an endopyrrole biosynthetic gene cluster; this pathway step uses
+      GenBank and UniProt records from that study to ground the EpyD sequence.
+  - reference: https://www.uniprot.org/uniprotkb/A0A6G7BMN0
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: Unreviewed UniProtKB:A0A6G7BMN0 is Mycetohabitans rhizoxinica epyD/RBRH_RS08105,
+      is named endopyrrole NRPS A, and cross-references EMBL MN081797 protein QIH29228.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QIH29228.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: endopyrrole NRPS A
+    notes: NCBI GenPept QIH29228.1 is the 5199 aa epyD CDS on MN081797.1:6321..21920
+      from Mycetohabitans rhizoxinica HKI454 and matches UniProtKB:A0A6G7BMN0.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN081797.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: Mycetohabitans rhizoxinica strain HKI454 endopyrrole gene cluster
+    notes: GenBank MN081797.1 is the 40,068 bp HKI454 endopyrrole gene cluster complete
+      sequence and carries epyD/RBRH_RS08105 as protein QIH29228.1.
+causal_graphs:
+- graph_id: endopyrrole-a-epyd-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Mycetohabitans rhizoxinica HKI454 endopyrrole A biosynthesis
+    graph for the proposed EpyD NRPS assembly contribution from MN081797.1.
+  nodes:
+  - node_id: epyd
+    label: EpyD
+    node_type: ENZYME
+    identifier: UniProtKB:A0A6G7BMN0
+    grounding_status: GROUNDED
+  - node_id: endopyrrole_nrps_assembly
+    label: endopyrrole NRPS assembly
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: endopyrrole_a
+    label: endopyrrole A
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-3749610d08
+    grounding_status: GROUNDED
+  edges:
+  - subject: epyd
+    predicate: contributes to
+    object: endopyrrole_nrps_assembly
+    notes: EpyD is curated as a proposed NRPS contributor from the MN081797.1 endopyrrole
+      cluster; this edge does not assert individual module substrates or products.
+    evidence:
+    - reference: DOI:10.1021/ACSCHEMBIO.9B00406
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Niehs et al. deposited MN081797.1 from their HKI454 endopyrrole study;
+        its epyD CDS encodes endopyrrole NRPS A.
+    - reference: https://www.uniprot.org/uniprotkb/A0A6G7BMN0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:A0A6G7BMN0 is Mycetohabitans rhizoxinica epyD/RBRH_RS08105,
+        is named endopyrrole NRPS A, and cross-references EMBL MN081797 protein QIH29228.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QIH29228.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: endopyrrole NRPS A
+      notes: NCBI GenPept QIH29228.1 is the 5199 aa epyD CDS on MN081797.1:6321..21920
+        from Mycetohabitans rhizoxinica HKI454 and matches UniProtKB:A0A6G7BMN0.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN081797.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Mycetohabitans rhizoxinica strain HKI454 endopyrrole gene cluster
+      notes: GenBank MN081797.1 is the 40,068 bp HKI454 endopyrrole gene cluster complete
+        sequence and carries epyD/RBRH_RS08105 as protein QIH29228.1.
+  - subject: endopyrrole_nrps_assembly
+    predicate: contributes to
+    object: endopyrrole_a
+    notes: The epy cluster is characterized for exact endopyrrole A production, but
+      this partial graph leaves the full endopyrrole A assembly order tentative.
+    evidence:
+    - reference: DOI:10.1021/ACSCHEMBIO.9B00406
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Niehs et al. reported the HKI454 endopyrrole NRPS cluster and endopyrrole
+        A as an exact product.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN081797.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: Mycetohabitans rhizoxinica strain HKI454 endopyrrole gene cluster
+      notes: GenBank MN081797.1 is the complete HKI454 endopyrrole gene-cluster sequence
+        submitted from the 2019 endopyrrole study.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -133,3 +229,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T12:06:15Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added Mycetohabitans rhizoxinica HKI454 EpyD UniProtKB:A0A6G7BMN0 as a
+    proposed endopyrrole A biosynthetic pathway enzyme and a partial biosynthesis
+    causal graph for its nonribosomal-peptide assembly contribution.
+  llm_assisted: true
