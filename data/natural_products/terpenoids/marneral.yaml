@@ -75,6 +75,60 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-91242769f2
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9FJV8
+  enzyme_label: Marneral synthase
+  reaction_id: RHEA:31875
+  notes: Arabidopsis thaliana MRN1/At5g42600 cyclizes (S)-2,3-epoxysqualene to marneral.
+  evidence:
+  - reference: DOI:10.1002/anie.200503420
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: UniProtKB:Q9FJV8 resolves to the Arabidopsis thaliana MRN1/At5g42600/MFO20.1
+      gene product and annotates RHEA:31875 for the cyclization of (S)-2,3-epoxysqualene
+      to marneral.
+  substrate: CHEBI:15441
+  product: CHEBI:63465
+causal_graphs:
+- graph_id: marneral-mrn1-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Arabidopsis thaliana marneral biosynthesis graph for MRN1-catalyzed
+    cyclization of (S)-2,3-epoxysqualene to marneral.
+  nodes:
+  - node_id: oxidosqualene
+    label: (S)-2,3-epoxysqualene
+    node_type: PRECURSOR
+    identifier: CHEBI:15441
+    grounding_status: GROUNDED
+  - node_id: mrn1
+    label: MRN1
+    node_type: ENZYME
+    identifier: UniProtKB:Q9FJV8
+    grounding_status: GROUNDED
+  - node_id: marneral
+    label: marneral
+    node_type: COMPOUND
+    identifier: CHEBI:63465
+    grounding_status: GROUNDED
+  edges:
+  - subject: oxidosqualene
+    predicate: is cyclized by
+    object: mrn1
+    evidence:
+    - reference: DOI:10.1002/anie.200503420
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9FJV8 resolves to the Arabidopsis thaliana MRN1/At5g42600/MFO20.1
+        gene product and annotates RHEA:31875 for the cyclization of (S)-2,3-epoxysqualene
+        to marneral.
+  - subject: mrn1
+    predicate: forms
+    object: marneral
+    evidence:
+    - reference: DOI:10.1002/anie.200503420
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9FJV8 resolves to the Arabidopsis thaliana MRN1/At5g42600/MFO20.1
+        gene product and annotates RHEA:31875 for the cyclization of (S)-2,3-epoxysqualene
+        to marneral.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -84,3 +138,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T00:11:18Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a one-step BIOSYNTHESIS pathway and causal graph for marneral biosynthesis;
+    grounded Arabidopsis thaliana MRN1 to UniProtKB:Q9FJV8 via At5g42600; and cited
+    the experimentally characterized RHEA:31875 reaction.
+  llm_assisted: true
