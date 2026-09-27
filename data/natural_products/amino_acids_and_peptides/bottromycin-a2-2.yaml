@@ -107,10 +107,442 @@ curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
   kind: CURATION_TODO
-  status: OPEN
+  status: RESOLVED
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000468, BGC0000469.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+  resolved_date: '2026-09-27'
+  resolution_note: MIBiG BGC0000468.5 and BGC0000469.6 both name bottromycin A2 with
+    the same Standard InChIKey KSIZLOPUXFSFNR-XZNJZDOZSA-N and the same NPAtlas accession
+    NPA04746; they intentionally merge into this exact record. The separate BGC0001157
+    bottromycin A2 stereochemistry disagreement remains unresolved outside this shared-structure
+    pair.
+biosynthetic_pathway:
+- enzyme_id: UniProtKB:K4MJZ1
+  enzyme_label: botOMT
+  proposed: true
+  notes: BC16019 botOMT/AFV25479.1 is curated as an exact aspartate methyl ester formation
+    contributor to bottromycin A2 maturation. The exact free substrate/product pair
+    for this RiPP tailoring reaction is not represented in the record.
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2012.08.013
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: gene involved in aspartate methyl-ester formation
+    notes: Huo et al. showed that BC16019 radical-SAM C-methyltransferase genes are
+      required for bottromycin C-methylations and that a BC16019 methyltransferase
+      gene is involved in aspartate methyl-ester formation; GenBank and UniProt map
+      this pathway step to botOMT/AFV25479.1/UniProtKB:K4MJZ1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0000469.6 names bottromycin A2 as a product of the Streptomyces
+      sp. BC16019 JX235926.1 locus and records heterologous expression support for
+      the cluster.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/JX235926.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: bottromycin biosynthetic gene cluster
+    notes: GenBank JX235926.1 is the 39,920 bp Streptomyces sp. BC16019 bottromycin
+      biosynthetic gene cluster and carries botOMT/AFV25479.1, botRMT1/AFV25480.1,
+      botA/AFV25481.1, botRMT2/AFV25484.1, and botRMT3/AFV25488.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25479.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: botOMT
+    notes: NCBI Protein AFV25479.1 is the Streptomyces sp. BC16019 botOMT coding sequence
+      from the JX235926.1 bottromycin biosynthetic gene cluster.
+  - reference: https://www.uniprot.org/uniprotkb/K4MJZ1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:K4MJZ1 is the 279 aa Streptomyces sp. BC16019 botOMT entry cross-referenced
+      to EMBL JX235926; an exact GenPept accession search for AFV25479.1 resolved
+      to this UniProtKB entry on 2026-09-27.
+- enzyme_id: UniProtKB:K4MHV5
+  enzyme_label: botRMT1
+  proposed: true
+  notes: BC16019 botRMT1/AFV25480.1 is curated as an exact radical-SAM C-methylation
+    contributor to bottromycin A2 maturation. The exact free substrate/product pair
+    for this RiPP tailoring reaction is not represented in the record.
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2012.08.013
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: three radical SAM methyltransferase-encoding genes
+    notes: Huo et al. showed that BC16019 radical-SAM C-methyltransferase genes are
+      required for bottromycin C-methylations and that a BC16019 methyltransferase
+      gene is involved in aspartate methyl-ester formation; GenBank and UniProt map
+      this pathway step to botRMT1/AFV25480.1/UniProtKB:K4MHV5.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0000469.6 names bottromycin A2 as a product of the Streptomyces
+      sp. BC16019 JX235926.1 locus and records heterologous expression support for
+      the cluster.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/JX235926.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: bottromycin biosynthetic gene cluster
+    notes: GenBank JX235926.1 is the 39,920 bp Streptomyces sp. BC16019 bottromycin
+      biosynthetic gene cluster and carries botOMT/AFV25479.1, botRMT1/AFV25480.1,
+      botA/AFV25481.1, botRMT2/AFV25484.1, and botRMT3/AFV25488.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25480.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: botRMT1
+    notes: NCBI Protein AFV25480.1 is the Streptomyces sp. BC16019 botRMT1 coding
+      sequence from the JX235926.1 bottromycin biosynthetic gene cluster.
+  - reference: https://www.uniprot.org/uniprotkb/K4MHV5
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:K4MHV5 is the 641 aa Streptomyces sp. BC16019 botRMT1 entry cross-referenced
+      to EMBL JX235926; an exact GenPept accession search for AFV25480.1 resolved
+      to this UniProtKB entry on 2026-09-27.
+- enzyme_id: UniProtKB:K4MJZ5
+  enzyme_label: botRMT2
+  proposed: true
+  notes: BC16019 botRMT2/AFV25484.1 is curated as an exact radical-SAM C-methylation
+    contributor to bottromycin A2 maturation. The exact free substrate/product pair
+    for this RiPP tailoring reaction is not represented in the record.
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2012.08.013
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: three radical SAM methyltransferase-encoding genes
+    notes: Huo et al. showed that BC16019 radical-SAM C-methyltransferase genes are
+      required for bottromycin C-methylations and that a BC16019 methyltransferase
+      gene is involved in aspartate methyl-ester formation; GenBank and UniProt map
+      this pathway step to botRMT2/AFV25484.1/UniProtKB:K4MJZ5.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0000469.6 names bottromycin A2 as a product of the Streptomyces
+      sp. BC16019 JX235926.1 locus and records heterologous expression support for
+      the cluster.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/JX235926.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: bottromycin biosynthetic gene cluster
+    notes: GenBank JX235926.1 is the 39,920 bp Streptomyces sp. BC16019 bottromycin
+      biosynthetic gene cluster and carries botOMT/AFV25479.1, botRMT1/AFV25480.1,
+      botA/AFV25481.1, botRMT2/AFV25484.1, and botRMT3/AFV25488.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25484.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: botRMT2
+    notes: NCBI Protein AFV25484.1 is the Streptomyces sp. BC16019 botRMT2 coding
+      sequence from the JX235926.1 bottromycin biosynthetic gene cluster.
+  - reference: https://www.uniprot.org/uniprotkb/K4MJZ5
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:K4MJZ5 is the 660 aa Streptomyces sp. BC16019 botRMT2 entry cross-referenced
+      to EMBL JX235926; an exact GenPept accession search for AFV25484.1 resolved
+      to this UniProtKB entry on 2026-09-27.
+- enzyme_id: UniProtKB:K4MHG1
+  enzyme_label: botRMT3
+  proposed: true
+  notes: BC16019 botRMT3/AFV25488.1 is curated as an exact radical-SAM C-methylation
+    contributor to bottromycin A2 maturation. The exact free substrate/product pair
+    for this RiPP tailoring reaction is not represented in the record.
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2012.08.013
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: three radical SAM methyltransferase-encoding genes
+    notes: Huo et al. showed that BC16019 radical-SAM C-methyltransferase genes are
+      required for bottromycin C-methylations and that a BC16019 methyltransferase
+      gene is involved in aspartate methyl-ester formation; GenBank and UniProt map
+      this pathway step to botRMT3/AFV25488.1/UniProtKB:K4MHG1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0000469.6 names bottromycin A2 as a product of the Streptomyces
+      sp. BC16019 JX235926.1 locus and records heterologous expression support for
+      the cluster.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/JX235926.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: bottromycin biosynthetic gene cluster
+    notes: GenBank JX235926.1 is the 39,920 bp Streptomyces sp. BC16019 bottromycin
+      biosynthetic gene cluster and carries botOMT/AFV25479.1, botRMT1/AFV25480.1,
+      botA/AFV25481.1, botRMT2/AFV25484.1, and botRMT3/AFV25488.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25488.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    snippet: botRMT3
+    notes: NCBI Protein AFV25488.1 is the Streptomyces sp. BC16019 botRMT3 coding
+      sequence from the JX235926.1 bottromycin biosynthetic gene cluster.
+  - reference: https://www.uniprot.org/uniprotkb/K4MHG1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:K4MHG1 is the 681 aa Streptomyces sp. BC16019 botRMT3 entry cross-referenced
+      to EMBL JX235926; an exact GenPept accession search for AFV25488.1 resolved
+      to this UniProtKB entry on 2026-09-27.
+causal_graphs:
+- graph_id: bottromycin-a2-bot-methylation-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces sp. BC16019 Bot RiPP graph for the precursor peptide,
+    the three radical-SAM C-methyltransferases, and BotOMT that contribute methylations
+    to bottromycin A2 maturation.
+  nodes:
+  - node_id: bota
+    label: BotA precursor peptide
+    node_type: PROTEIN
+    identifier: UniProtKB:K4MV53
+    grounding_status: GROUNDED
+  - node_id: botomt
+    label: BotOMT methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:K4MJZ1
+    grounding_status: GROUNDED
+  - node_id: botrmt1
+    label: BotRMT1 radical-SAM methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:K4MHV5
+    grounding_status: GROUNDED
+  - node_id: botrmt2
+    label: BotRMT2 radical-SAM methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:K4MJZ5
+    grounding_status: GROUNDED
+  - node_id: botrmt3
+    label: BotRMT3 radical-SAM methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:K4MHG1
+    grounding_status: GROUNDED
+  - node_id: radical_sam_c_methylation
+    label: radical-SAM C-methylation
+    node_type: PROCESS
+  - node_id: aspartate_o_methylation
+    label: aspartate methyl-ester formation
+    node_type: PROCESS
+  - node_id: bottromycin_a2
+    label: bottromycin A2
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-d717cc8774
+    grounding_status: GROUNDED
+  edges:
+  - subject: bota
+    predicate: is precursor of
+    object: bottromycin_a2
+    notes: BC16019 botA encodes the 44 aa bottromycin precursor peptide; the graph
+      leaves downstream proteolysis, thiazole formation, amidine-ring formation, and
+      oxidation unmodeled until exact protein-to-step evidence is curated.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2012.08.013
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: identified the biosynthetic gene cluster
+      notes: Huo et al. identified the Streptomyces sp. BC16019 bottromycin cluster,
+        established heterologous bottromycin production from the cloned locus, and
+        genetically implicated radical-SAM C-methylation plus aspartate methyl-ester
+        formation in bottromycin biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0000469.6 names bottromycin A2 as a product of the Streptomyces
+        sp. BC16019 JX235926.1 locus and records heterologous expression support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JX235926.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: bottromycin biosynthetic gene cluster
+      notes: GenBank JX235926.1 is the 39,920 bp Streptomyces sp. BC16019 bottromycin
+        biosynthetic gene cluster and carries botOMT/AFV25479.1, botRMT1/AFV25480.1,
+        botA/AFV25481.1, botRMT2/AFV25484.1, and botRMT3/AFV25488.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25481.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: BotA
+      notes: NCBI Protein AFV25481.1 is the 44 aa Streptomyces sp. BC16019 botA precursor-peptide
+        coding sequence from the JX235926.1 bottromycin biosynthetic gene cluster.
+    - reference: https://www.uniprot.org/uniprotkb/K4MV53
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:K4MV53 is the 44 aa Streptomyces sp. BC16019 botA entry cross-referenced
+        to EMBL JX235926; an exact GenPept accession search for AFV25481.1 resolved
+        to this UniProtKB entry on 2026-09-27.
+  - subject: botrmt1
+    predicate: contributes to
+    object: radical_sam_c_methylation
+    notes: botRMT1 is one of the three BC16019 radical-SAM methyltransferases required
+      for unactivated-carbon methylations during bottromycin maturation.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2012.08.013
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: three radical SAM methyltransferase-encoding genes
+      notes: Huo et al. showed that BC16019 radical-SAM C-methyltransferase genes
+        are required for bottromycin C-methylations and that a BC16019 methyltransferase
+        gene is involved in aspartate methyl-ester formation; GenBank and UniProt
+        map this pathway step to botRMT1/AFV25480.1/UniProtKB:K4MHV5.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0000469.6 names bottromycin A2 as a product of the Streptomyces
+        sp. BC16019 JX235926.1 locus and records heterologous expression support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JX235926.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: bottromycin biosynthetic gene cluster
+      notes: GenBank JX235926.1 is the 39,920 bp Streptomyces sp. BC16019 bottromycin
+        biosynthetic gene cluster and carries botOMT/AFV25479.1, botRMT1/AFV25480.1,
+        botA/AFV25481.1, botRMT2/AFV25484.1, and botRMT3/AFV25488.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25480.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: botRMT1
+      notes: NCBI Protein AFV25480.1 is the Streptomyces sp. BC16019 botRMT1 coding
+        sequence from the JX235926.1 bottromycin biosynthetic gene cluster.
+    - reference: https://www.uniprot.org/uniprotkb/K4MHV5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:K4MHV5 is the 641 aa Streptomyces sp. BC16019 botRMT1 entry
+        cross-referenced to EMBL JX235926; an exact GenPept accession search for AFV25480.1
+        resolved to this UniProtKB entry on 2026-09-27.
+  - subject: botrmt2
+    predicate: contributes to
+    object: radical_sam_c_methylation
+    notes: botRMT2 is one of the three BC16019 radical-SAM methyltransferases required
+      for unactivated-carbon methylations during bottromycin maturation.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2012.08.013
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: three radical SAM methyltransferase-encoding genes
+      notes: Huo et al. showed that BC16019 radical-SAM C-methyltransferase genes
+        are required for bottromycin C-methylations and that a BC16019 methyltransferase
+        gene is involved in aspartate methyl-ester formation; GenBank and UniProt
+        map this pathway step to botRMT2/AFV25484.1/UniProtKB:K4MJZ5.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0000469.6 names bottromycin A2 as a product of the Streptomyces
+        sp. BC16019 JX235926.1 locus and records heterologous expression support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JX235926.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: bottromycin biosynthetic gene cluster
+      notes: GenBank JX235926.1 is the 39,920 bp Streptomyces sp. BC16019 bottromycin
+        biosynthetic gene cluster and carries botOMT/AFV25479.1, botRMT1/AFV25480.1,
+        botA/AFV25481.1, botRMT2/AFV25484.1, and botRMT3/AFV25488.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25484.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: botRMT2
+      notes: NCBI Protein AFV25484.1 is the Streptomyces sp. BC16019 botRMT2 coding
+        sequence from the JX235926.1 bottromycin biosynthetic gene cluster.
+    - reference: https://www.uniprot.org/uniprotkb/K4MJZ5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:K4MJZ5 is the 660 aa Streptomyces sp. BC16019 botRMT2 entry
+        cross-referenced to EMBL JX235926; an exact GenPept accession search for AFV25484.1
+        resolved to this UniProtKB entry on 2026-09-27.
+  - subject: botrmt3
+    predicate: contributes to
+    object: radical_sam_c_methylation
+    notes: botRMT3 is one of the three BC16019 radical-SAM methyltransferases required
+      for unactivated-carbon methylations during bottromycin maturation.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2012.08.013
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: three radical SAM methyltransferase-encoding genes
+      notes: Huo et al. showed that BC16019 radical-SAM C-methyltransferase genes
+        are required for bottromycin C-methylations and that a BC16019 methyltransferase
+        gene is involved in aspartate methyl-ester formation; GenBank and UniProt
+        map this pathway step to botRMT3/AFV25488.1/UniProtKB:K4MHG1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0000469.6 names bottromycin A2 as a product of the Streptomyces
+        sp. BC16019 JX235926.1 locus and records heterologous expression support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JX235926.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: bottromycin biosynthetic gene cluster
+      notes: GenBank JX235926.1 is the 39,920 bp Streptomyces sp. BC16019 bottromycin
+        biosynthetic gene cluster and carries botOMT/AFV25479.1, botRMT1/AFV25480.1,
+        botA/AFV25481.1, botRMT2/AFV25484.1, and botRMT3/AFV25488.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25488.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: botRMT3
+      notes: NCBI Protein AFV25488.1 is the Streptomyces sp. BC16019 botRMT3 coding
+        sequence from the JX235926.1 bottromycin biosynthetic gene cluster.
+    - reference: https://www.uniprot.org/uniprotkb/K4MHG1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:K4MHG1 is the 681 aa Streptomyces sp. BC16019 botRMT3 entry
+        cross-referenced to EMBL JX235926; an exact GenPept accession search for AFV25488.1
+        resolved to this UniProtKB entry on 2026-09-27.
+  - subject: botomt
+    predicate: contributes to
+    object: aspartate_o_methylation
+    notes: BC16019 BotOMT is assigned to the methyltransferase gene involved in aspartate
+      methyl-ester formation.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2012.08.013
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: gene involved in aspartate methyl-ester formation
+      notes: Huo et al. showed that BC16019 radical-SAM C-methyltransferase genes
+        are required for bottromycin C-methylations and that a BC16019 methyltransferase
+        gene is involved in aspartate methyl-ester formation; GenBank and UniProt
+        map this pathway step to botOMT/AFV25479.1/UniProtKB:K4MJZ1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0000469.6 names bottromycin A2 as a product of the Streptomyces
+        sp. BC16019 JX235926.1 locus and records heterologous expression support for
+        the cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JX235926.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: bottromycin biosynthetic gene cluster
+      notes: GenBank JX235926.1 is the 39,920 bp Streptomyces sp. BC16019 bottromycin
+        biosynthetic gene cluster and carries botOMT/AFV25479.1, botRMT1/AFV25480.1,
+        botA/AFV25481.1, botRMT2/AFV25484.1, and botRMT3/AFV25488.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25479.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      snippet: botOMT
+      notes: NCBI Protein AFV25479.1 is the Streptomyces sp. BC16019 botOMT coding
+        sequence from the JX235926.1 bottromycin biosynthetic gene cluster.
+    - reference: https://www.uniprot.org/uniprotkb/K4MJZ1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:K4MJZ1 is the 279 aa Streptomyces sp. BC16019 botOMT entry
+        cross-referenced to EMBL JX235926; an exact GenPept accession search for AFV25479.1
+        resolved to this UniProtKB entry on 2026-09-27.
+  - subject: radical_sam_c_methylation
+    predicate: contributes to
+    object: bottromycin_a2
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2012.08.013
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: identified the biosynthetic gene cluster
+      notes: Huo et al. identified the Streptomyces sp. BC16019 bottromycin cluster,
+        established heterologous bottromycin production from the cloned locus, and
+        genetically implicated radical-SAM C-methylation plus aspartate methyl-ester
+        formation in bottromycin biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0000469.6 names bottromycin A2 as a product of the Streptomyces
+        sp. BC16019 JX235926.1 locus and records heterologous expression support for
+        the cluster.
+  - subject: aspartate_o_methylation
+    predicate: contributes to
+    object: bottromycin_a2
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2012.08.013
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: identified the biosynthetic gene cluster
+      notes: Huo et al. identified the Streptomyces sp. BC16019 bottromycin cluster,
+        established heterologous bottromycin production from the cloned locus, and
+        genetically implicated radical-SAM C-methylation plus aspartate methyl-ester
+        formation in bottromycin biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0000469.6 names bottromycin A2 as a product of the Streptomyces
+        sp. BC16019 JX235926.1 locus and records heterologous expression support for
+        the cluster.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -120,3 +552,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T18:08:45Z'
+  curator: codex
+  action: ADDED_BOT_METHYLATION_BIOSYNTHESIS_GRAPH
+  changes: Added exact Streptomyces sp. BC16019 BotA, BotOMT, and BotRMT1/2/3 UniProtKB
+    proteins to a bottromycin A2 biosynthesis pathway and causal graph, and resolved
+    the BGC0000468/BGC0000469 shared-structure discussion.
+  llm_assisted: true
