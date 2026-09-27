@@ -79,7 +79,57 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>6-protoilludene synthase<br><span class="mono">UniProtKB:A0A7U3MPB9</span></td>
+  <td class="mono">RHEA:34695</td>
+  <td class="mono">CHEBI:175763 &rarr; CHEBI:68655</td>
+  <td class="mono">DOI:10.1074/jbc.M110.165845</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>CYP-Arm3<br><span class="mono">UniProtKB:A0A7S5T363</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:68655 &rarr; naturalproductmech:mibig-32b7a54e39</td>
+  <td class="mono">DOI:10.1007/s00253-020-11006-y</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Armillaria gallica Pro1 cyclizes (2E,6E)-farnesyl diphosphate to Delta(6)-protoilludene. UniProtKB:A0A7U3MPB9 resolves to the BGC0002445 MT277003.1 Pro1 sequence, while the earlier functional assay established A. gallica Pro1 sesquiterpene synthase activity.</p><p class="sub">Step 2: Armillaria gallica CYP-Arm3 hydroxylates Delta(6)-protoilludene to 8α-hydroxy-6-protoilludene.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Armillaria gallica 8α-hydroxy-6-protoilludene biosynthesis graph for Pro1 cyclization of farnesyl diphosphate followed by CYP-Arm3 hydroxylation.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Evidence</th></tr>
+<tr>
+  <td>(2E,6E)-farnesyl diphosphate</td>
+  <td>is cyclized by</td>
+  <td>Pro1</td>
+  <td class="mono">DOI:10.1074/jbc.M110.165845<br>DOI:10.1007/s00253-020-11006-y<br>mibig:BGC0002445<br>https://www.ncbi.nlm.nih.gov/protein/QJQ03973.1</td>
+</tr>
+<tr>
+  <td>Pro1</td>
+  <td>forms</td>
+  <td>Delta(6)-protoilludene</td>
+  <td class="mono">DOI:10.1074/jbc.M110.165845<br>DOI:10.1007/s00253-020-11006-y<br>mibig:BGC0002445<br>https://www.ncbi.nlm.nih.gov/protein/QJQ03973.1</td>
+</tr>
+<tr>
+  <td>Delta(6)-protoilludene</td>
+  <td>is hydroxylated by</td>
+  <td>CYP-Arm3</td>
+  <td class="mono">DOI:10.1007/s00253-020-11006-y<br>https://www.ncbi.nlm.nih.gov/protein/QJQ03972.1</td>
+</tr>
+<tr>
+  <td>CYP-Arm3</td>
+  <td>forms</td>
+  <td>8α-hydroxy-6-protoilludene</td>
+  <td class="mono">DOI:10.1007/s00253-020-11006-y<br>https://www.ncbi.nlm.nih.gov/protein/QJQ03972.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
