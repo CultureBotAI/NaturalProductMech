@@ -100,7 +100,7 @@ from a source. This is what the rest of the record exists to support.</p>
   <td>{{ s.step_number }}</td>
   <td>{{ s.enzyme_label }}{% if s.enzyme_id %}<br><span class="mono">{{ s.enzyme_id }}</span>{% endif %}</td>
   <td class="mono">{{ s.reaction_id or '' }}</td>
-  <td class="mono">{{ s.substrate or '' }} &rarr; {{ s.product or '' }}</td>
+  <td class="mono">{{ s.substrate or 'ungrounded' }} &rarr; {{ s.product or 'ungrounded' }}</td>
   <td class="mono">{{ s.reference }}</td>
 </tr>
 {% endfor %}

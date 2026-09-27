@@ -61,3 +61,31 @@ def test_causal_graph_rendering_preserves_every_edge_reference():
     rendered = env.get_template("record.html").render(r=record)
 
     assert "DOI:10.1/primary<br>DOI:10.2/structure" in rendered
+
+
+def test_pathway_step_without_grounded_compounds_renders_as_ungrounded():
+    record = render_pages.build_record(
+        REPO_ROOT / "data" / "natural_products" / "carbohydrates" / "coformycin.yaml",
+        {
+            "identifier": "CHEBI:16213",
+            "np_pathway": "CARBOHYDRATES",
+            "biosynthetic_pathway": [
+                {
+                    "step_number": 1,
+                    "enzyme_label": "CofB",
+                    "evidence": [{"reference": "DOI:10.1073/pnas.2000111117"}],
+                },
+            ],
+        },
+    )
+
+    env = Environment(
+        loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
+        autoescape=select_autoescape(["html"]),
+        trim_blocks=True,
+        lstrip_blocks=True,
+        keep_trailing_newline=True,
+    )
+    rendered = env.get_template("record.html").render(r=record)
+
+    assert "ungrounded &rarr; ungrounded" in rendered

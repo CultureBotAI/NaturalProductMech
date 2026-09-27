@@ -229,6 +229,101 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0002039, BGC0002040,
     BGC0002435, BGC0002462. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A8A6W587
+  enzyme_label: CofB
+  notes: This curates the Streptomyces kaniharaensis SF-557 CofB SAICAR-synthetase
+    homolog from the BGC0002462/MK830994.1 route; CofB converts a shared L-histidine-pathway
+    branch point intermediate to 8-ketocoformycin-5'-monophosphate. The substrate
+    and product remain ungrounded because exact ChEBI terms were not found for the
+    pathway-specific intermediates.
+  evidence:
+  - reference: DOI:10.1073/pnas.2000111117
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Committed entry into the coformycin pathway takes place via conversion
+      of a shared branch point intermediate
+    notes: Ren et al. identified the Streptomyces kaniharaensis cof gene cluster and
+      reconstituted the coformycin pathway in vitro, demonstrating that CofB catalyzes
+      conversion of a shared L-histidine-pathway branch point intermediate to 8-ketocoformycin-5'-monophosphate.
+  - reference: https://www.uniprot.org/uniprotkb/A0A8A6W587
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: Unreviewed UniProtKB:A0A8A6W587 is Streptomyces kaniharaensis CofB, gene
+      cofB, length 231 aa, and cross-references EMBL MK830994 protein QTK22481.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QTK22481.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept QTK22481.1 is the MK830994.1 cofB coding sequence from Streptomyces
+      kaniharaensis SF-557 and is sequence-identical to UniProtKB:A0A8A6W587.
+causal_graphs:
+- graph_id: coformycin-cofb-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces kaniharaensis coformycin biosynthesis graph for
+    the CofB branch from L-histidine biosynthesis to 8-ketocoformycin-5'-monophosphate.
+  nodes:
+  - node_id: shared_histidine_branch_point_intermediate
+    label: shared L-histidine/coformycin branch point intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: cofb
+    label: CofB
+    node_type: ENZYME
+    identifier: UniProtKB:A0A8A6W587
+    grounding_status: GROUNDED
+  - node_id: ketocoformycin_5_monophosphate
+    label: 8-ketocoformycin-5'-monophosphate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: shared_histidine_branch_point_intermediate
+    predicate: is converted by
+    object: cofb
+    notes: The substrate is the shared branch-point intermediate between L-histidine
+      and coformycin biosynthesis.
+    evidence:
+    - reference: DOI:10.1073/pnas.2000111117
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Committed entry into the coformycin pathway takes place via conversion
+        of a shared branch point intermediate
+      notes: Ren et al. identified the Streptomyces kaniharaensis cof gene cluster
+        and reconstituted the coformycin pathway in vitro, demonstrating that CofB
+        catalyzes conversion of a shared L-histidine-pathway branch point intermediate
+        to 8-ketocoformycin-5'-monophosphate.
+    - reference: https://www.uniprot.org/uniprotkb/A0A8A6W587
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:A0A8A6W587 is Streptomyces kaniharaensis CofB, gene
+        cofB, length 231 aa, and cross-references EMBL MK830994 protein QTK22481.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QTK22481.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept QTK22481.1 is the MK830994.1 cofB coding sequence from Streptomyces
+        kaniharaensis SF-557 and is sequence-identical to UniProtKB:A0A8A6W587.
+  - subject: cofb
+    predicate: forms
+    object: ketocoformycin_5_monophosphate
+    notes: The product is the branch-committed 8-ketocoformycin-5'-monophosphate intermediate
+      rather than mature coformycin.
+    evidence:
+    - reference: DOI:10.1073/pnas.2000111117
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Committed entry into the coformycin pathway takes place via conversion
+        of a shared branch point intermediate
+      notes: Ren et al. identified the Streptomyces kaniharaensis cof gene cluster
+        and reconstituted the coformycin pathway in vitro, demonstrating that CofB
+        catalyzes conversion of a shared L-histidine-pathway branch point intermediate
+        to 8-ketocoformycin-5'-monophosphate.
+    - reference: https://www.uniprot.org/uniprotkb/A0A8A6W587
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Unreviewed UniProtKB:A0A8A6W587 is Streptomyces kaniharaensis CofB, gene
+        cofB, length 231 aa, and cross-references EMBL MK830994 protein QTK22481.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QTK22481.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept QTK22481.1 is the MK830994.1 cofB coding sequence from Streptomyces
+        kaniharaensis SF-557 and is sequence-identical to UniProtKB:A0A8A6W587.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -238,3 +333,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T06:32:25Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the Streptomyces kaniharaensis CofB branch-committing 8-ketocoformycin-5'-monophosphate
+    biosynthetic step and a BIOSYNTHESIS causal graph grounded to UniProtKB:A0A8A6W587.
+  llm_assisted: true
