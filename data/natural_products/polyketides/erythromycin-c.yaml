@@ -89,6 +89,60 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-757eadc7d2
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:P48635
+  enzyme_label: EryK erythromycin C-12 hydroxylase
+  reaction_id: RHEA:32631
+  substrate: CHEBI:63677
+  product: CHEBI:64258
+  notes: EryK hydroxylates erythromycin D to erythromycin C(1+) in RHEA:32631; this
+    NaturalProductRecord remains grounded to neutral erythromycin C, CHEBI:64273.
+  evidence:
+  - reference: DOI:10.1021/bi00006a006
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: preference of the enzyme for ErD over the alternative C-12 hydroxylase
+      substrate ErB
+    notes: UniProtKB:P48635 resolves to eryK/SACE_0713 from Saccharopolyspora erythraea
+      NRRL 2338 and links this reaction to RHEA:32631.
+causal_graphs:
+- graph_id: erythromycin-c-eryk-hydroxylation
+  scope: BIOSYNTHESIS
+  description: Partial Saccharopolyspora erythraea NRRL 2338 erythromycin C biosynthesis
+    graph for EryK-catalyzed C-12 hydroxylation of erythromycin D.
+  nodes:
+  - node_id: erythromycin_d
+    label: erythromycin D
+    node_type: COMPOUND
+    identifier: CHEBI:63677
+    grounding_status: GROUNDED
+  - node_id: eryk
+    label: EryK
+    node_type: ENZYME
+    identifier: UniProtKB:P48635
+    grounding_status: GROUNDED
+  - node_id: erythromycin_c
+    label: erythromycin C(1+)
+    node_type: COMPOUND
+    identifier: CHEBI:64258
+    grounding_status: GROUNDED
+  edges:
+  - subject: erythromycin_d
+    predicate: is hydroxylated by
+    object: eryk
+    evidence:
+    - reference: DOI:10.1021/bi00006a006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: EryK catalyzes RHEA:32631.
+  - subject: eryk
+    predicate: forms
+    object: erythromycin_c
+    evidence:
+    - reference: DOI:10.1021/bi00006a006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: EryK catalyzes RHEA:32631.
+    notes: EryK forms erythromycin C(1+) in RHEA:32631; this record is grounded to
+      neutral erythromycin C.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -98,3 +152,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-28T06:33:06Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a partial BIOSYNTHESIS pathway and causal graph for EryK-catalyzed
+    erythromycin D hydroxylation to erythromycin C; grounded EryK to UniProtKB:P48635
+    via Rhea RHEA:32631 and the Saccharopolyspora erythraea NRRL 2338 BGC0000055 locus.
+  llm_assisted: true

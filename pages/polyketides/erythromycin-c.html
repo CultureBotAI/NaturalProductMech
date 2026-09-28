@@ -69,7 +69,40 @@ same claim.</p>
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>EryK erythromycin C-12 hydroxylase<br><span class="mono">UniProtKB:P48635</span></td>
+  <td class="mono">RHEA:32631</td>
+  <td class="mono">CHEBI:63677 &rarr; CHEBI:64258</td>
+  <td class="mono">DOI:10.1021/bi00006a006</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: EryK hydroxylates erythromycin D to erythromycin C(1+) in RHEA:32631; this NaturalProductRecord remains grounded to neutral erythromycin C, CHEBI:64273.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial Saccharopolyspora erythraea NRRL 2338 erythromycin C biosynthesis graph for EryK-catalyzed C-12 hydroxylation of erythromycin D.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>erythromycin D</td>
+  <td>is hydroxylated by</td>
+  <td>EryK</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/bi00006a006</td>
+</tr>
+<tr>
+  <td>EryK</td>
+  <td>forms</td>
+  <td>erythromycin C(1+)</td>
+  <td>EryK forms erythromycin C(1+) in RHEA:32631; this record is grounded to neutral erythromycin C.</td>
+  <td class="mono">DOI:10.1021/bi00006a006</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
