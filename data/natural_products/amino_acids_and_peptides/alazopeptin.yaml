@@ -138,7 +138,7 @@ biosynthetic_pathway:
     retrieved_on: '2026-09-28'
     notes: NCBI GenPept BCN13467.1 is the LC593326.1 azpE coding sequence; exact UniProtKB
       searches for BCN13467 returned no matching entry.
-  - reference: https://www.rhea-db.org/rhea/69008
+  - reference: RHEA:69008
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-28'
     notes: Rhea maps EC:1.14.13.248 to L-aspartate conversion to 2-nitrobutanedioate
@@ -177,7 +177,7 @@ biosynthetic_pathway:
     retrieved_on: '2026-09-28'
     notes: NCBI GenPept BCN13466.1 is the LC593326.1 azpD coding sequence; exact UniProtKB
       searches for BCN13466 returned no matching entry.
-  - reference: https://www.rhea-db.org/rhea/69044
+  - reference: RHEA:69044
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-28'
     notes: Rhea maps EC:4.3.99.5 to 2-nitrobutanedioate cleavage to fumarate, nitrite,
@@ -239,7 +239,7 @@ causal_graphs:
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BCN13467.1 is the LC593326.1 azpE coding sequence; exact
         UniProtKB searches for BCN13467 returned no matching entry.
-    - reference: https://www.rhea-db.org/rhea/69008
+    - reference: RHEA:69008
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-28'
       notes: Rhea maps EC:1.14.13.248 to L-aspartate conversion to 2-nitrobutanedioate
@@ -262,7 +262,7 @@ causal_graphs:
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BCN13467.1 is the LC593326.1 azpE coding sequence; exact
         UniProtKB searches for BCN13467 returned no matching entry.
-    - reference: https://www.rhea-db.org/rhea/69008
+    - reference: RHEA:69008
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-28'
       notes: Rhea maps EC:1.14.13.248 to L-aspartate conversion to 2-nitrobutanedioate
@@ -285,7 +285,7 @@ causal_graphs:
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BCN13466.1 is the LC593326.1 azpD coding sequence; exact
         UniProtKB searches for BCN13466 returned no matching entry.
-    - reference: https://www.rhea-db.org/rhea/69044
+    - reference: RHEA:69044
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-28'
       notes: Rhea maps EC:4.3.99.5 to 2-nitrobutanedioate cleavage to fumarate, nitrite,
@@ -308,7 +308,7 @@ causal_graphs:
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BCN13466.1 is the LC593326.1 azpD coding sequence; exact
         UniProtKB searches for BCN13466 returned no matching entry.
-    - reference: https://www.rhea-db.org/rhea/69044
+    - reference: RHEA:69044
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-28'
       notes: Rhea maps EC:4.3.99.5 to 2-nitrobutanedioate cleavage to fumarate, nitrite,
@@ -331,4 +331,11 @@ curation_history:
     reactions are grounded to EC/Rhea, the exact BCN13467.1 and BCN13466.1 proteins
     are cited as NCBI GenPept records, and both enzyme nodes are intentionally left
     ungrounded because no exact UniProtKB accessions resolved.
+  llm_assisted: true
+- timestamp: '2026-09-28T03:39:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Replaced PR #274''s direct Rhea evidence URLs with RHEA CURIE references
+    after adversarial review issue #275 found that the official direct Rhea page URLs
+    returned HTTP 403 to automated re-fetching.'
   llm_assisted: true
