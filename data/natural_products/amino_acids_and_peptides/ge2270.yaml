@@ -169,8 +169,8 @@ biosynthetic_pathway:
   proposed: true
   notes: PbtG1 is recorded as the GE2270 maturation cyclodehydratase required for
     C-terminal oxazoline formation. The exact substrate and product of the PbtG1-associated
-    step remain ungrounded, and no exact UniProtKB accession resolved for the AGY49581.1
-    Planobispora rosea protein.
+    step remain ungrounded, and no UniProtKB accession tied to the AGY49581.1 Planobispora
+    rosea pbtG1 coding sequence resolved.
   evidence:
   - reference: DOI:10.1016/j.chembiol.2013.07.005
     evidence_type: PRIMARY_EXPERIMENT
@@ -189,9 +189,9 @@ biosynthetic_pathway:
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
     notes: NCBI GenPept AGY49581.1 is the KF366381.2 pbtG1 cyclodehydratase coding
-      sequence. Exact UniProtKB searches for AGY49581 and pbtG1 Planobispora rosea
-      returned no Planobispora PbtG1 entry, so this protein is left without an organism-specific
-      UniProtKB identifier.
+      sequence. UniProtKB:U5Q0H1 has the same 607 aa sequence under EMBL BOOI01000040
+      and locus Pro02_44440, but is not used as exact GE2270 PbtG1 grounding because
+      it does not cross-reference KF366381.2 or pbtG1.
   - reference: https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
@@ -273,9 +273,9 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
       notes: NCBI GenPept AGY49581.1 is the KF366381.2 pbtG1 cyclodehydratase coding
-        sequence. Exact UniProtKB searches for AGY49581 and pbtG1 Planobispora rosea
-        returned no Planobispora PbtG1 entry, so this protein is left without an organism-specific
-        UniProtKB identifier.
+        sequence. UniProtKB:U5Q0H1 has the same 607 aa sequence under EMBL BOOI01000040
+        and locus Pro02_44440, but is not used as exact GE2270 PbtG1 grounding because
+        it does not cross-reference KF366381.2 or pbtG1.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -333,9 +333,9 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
       notes: NCBI GenPept AGY49581.1 is the KF366381.2 pbtG1 cyclodehydratase coding
-        sequence. Exact UniProtKB searches for AGY49581 and pbtG1 Planobispora rosea
-        returned no Planobispora PbtG1 entry, so this protein is left without an organism-specific
-        UniProtKB identifier.
+        sequence. UniProtKB:U5Q0H1 has the same 607 aa sequence under EMBL BOOI01000040
+        and locus Pro02_44440, but is not used as exact GE2270 PbtG1 grounding because
+        it does not cross-reference KF366381.2 or pbtG1.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -359,4 +359,12 @@ curation_history:
     oxazoline formation. Left both proteins without UniProtKB identifiers after exact
     UniProtKB searches for AGY49594, pbtH, AGY49581, and pbtG1 returned no organism-specific
     Planobispora entries.
+  llm_assisted: true
+- timestamp: '2026-09-28T02:49:04Z'
+  curator: codex
+  action: REVIEW_FIX
+  changes: 'Addressed issue #273 by documenting that UniProtKB:U5Q0H1 has the same
+    protein sequence as AGY49581.1 but was rejected as exact GE2270 PbtG1 grounding
+    because it is attached to BOOI01000040 and Pro02_44440 rather than KF366381.2
+    and pbtG1.'
   llm_assisted: true
