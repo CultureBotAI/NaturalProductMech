@@ -83,6 +83,120 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9C451
+  enzyme_label: PaxD
+  substrate: CHEBI:34907
+  product: naturalproductmech:mibig-8e09316737
+  notes: PaxD is represented as the terminal P. paxilli prenyltransferase that accepts
+    paxilline and dimethylallyl diphosphate and catalyzes successive prenylations
+    to the exact 21,22-diprenylated paxilline product.
+  evidence:
+  - reference: DOI:10.1007/s00253-013-4834-9
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: PaxD catalyzed the successive di-prenylation
+    notes: Liu et al. overexpressed Penicillium paxilli PaxD in Escherichia coli,
+      purified the enzyme, and showed that paxilline plus dimethylallyl diphosphate
+      produced mono- and di-prenyl paxilline, with the major di-prenyl product assigned
+      as 21,22-diprenylated paxilline.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001082.4/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0001082.4 names 21,22-diprenylated paxilline among the products
+      of the Penicillium paxilli HM171111.1 paxilline locus and cites DOI:10.1007/s00253-013-4834-9
+      as compound evidence.
+  - reference: https://www.uniprot.org/uniprotkb/Q9C451
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: Reviewed UniProtKB:Q9C451 resolves Penicillium paxilli PaxD, cites PMID:23525886
+      for catalytic activity and pathway placement, and cross-references EMBL HM171111
+      / GenPept AAK11526.2.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM171111.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: GenBank HM171111.1 is the Penicillium paxilli paxilline biosynthetic locus;
+      its paxD coding sequence maps to protein AAK11526.2.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAK11526.2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AAK11526.2 is the HM171111.1 paxD coding sequence cross-referenced
+      by UniProtKB:Q9C451.
+causal_graphs:
+- graph_id: diprenylated-paxilline-paxd-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Penicillium paxilli graph for the PaxD-catalyzed terminal prenylations
+    that convert paxilline to 21,22-diprenylated paxilline.
+  nodes:
+  - node_id: paxilline
+    label: paxilline
+    node_type: COMPOUND
+    identifier: CHEBI:34907
+    grounding_status: GROUNDED
+  - node_id: paxd
+    label: PaxD
+    node_type: ENZYME
+    identifier: UniProtKB:Q9C451
+    grounding_status: GROUNDED
+  - node_id: successive_prenylation
+    label: PaxD successive prenylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: diprenylated_paxilline
+    label: 21,22-diprenylated paxilline
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-8e09316737
+    grounding_status: GROUNDED
+  edges:
+  - subject: paxilline
+    predicate: is prenylated by
+    object: successive_prenylation
+    evidence:
+    - reference: DOI:10.1007/s00253-013-4834-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: PaxD catalyzed the successive di-prenylation
+      notes: Liu et al. overexpressed Penicillium paxilli PaxD in Escherichia coli,
+        purified the enzyme, and showed that paxilline plus dimethylallyl diphosphate
+        produced mono- and di-prenyl paxilline, with the major di-prenyl product assigned
+        as 21,22-diprenylated paxilline.
+  - subject: paxd
+    predicate: catalyzes
+    object: successive_prenylation
+    evidence:
+    - reference: DOI:10.1007/s00253-013-4834-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: PaxD catalyzed the successive di-prenylation
+      notes: Liu et al. overexpressed Penicillium paxilli PaxD in Escherichia coli,
+        purified the enzyme, and showed that paxilline plus dimethylallyl diphosphate
+        produced mono- and di-prenyl paxilline, with the major di-prenyl product assigned
+        as 21,22-diprenylated paxilline.
+    - reference: https://www.uniprot.org/uniprotkb/Q9C451
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: Reviewed UniProtKB:Q9C451 resolves Penicillium paxilli PaxD, cites PMID:23525886
+        for catalytic activity and pathway placement, and cross-references EMBL HM171111
+        / GenPept AAK11526.2.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM171111.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: GenBank HM171111.1 is the Penicillium paxilli paxilline biosynthetic
+        locus; its paxD coding sequence maps to protein AAK11526.2.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK11526.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AAK11526.2 is the HM171111.1 paxD coding sequence cross-referenced
+        by UniProtKB:Q9C451.
+  - subject: successive_prenylation
+    predicate: produces
+    object: diprenylated_paxilline
+    evidence:
+    - reference: DOI:10.1007/s00253-013-4834-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: PaxD catalyzed the successive di-prenylation
+      notes: Liu et al. overexpressed Penicillium paxilli PaxD in Escherichia coli,
+        purified the enzyme, and showed that paxilline plus dimethylallyl diphosphate
+        produced mono- and di-prenyl paxilline, with the major di-prenyl product assigned
+        as 21,22-diprenylated paxilline.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -92,3 +206,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-28T00:23:34Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a UniProt-grounded PaxD biosynthetic_pathway step and BIOSYNTHESIS
+    graph for terminal conversion of paxilline to 21,22-diprenylated paxilline; left
+    the reported anti-H1N1 activity gap for a separate assay-focused curation.
+  llm_assisted: true
