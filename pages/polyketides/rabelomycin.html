@@ -105,13 +105,58 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>PgaY/PgaF and PgaL angucyclinone cyclization module</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1128/AAC.47.4.1291-1296.2003</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: This partial pathway entry captures two exact Streptomyces sp. PGA64 cyclization/aromatization proteins from the demonstrated BGC0000262 angucycline locus. The exact nascent polyketide intermediate and the final oxidation from the UWM6 branch toward rabelomycin are left unexpanded, so the module rather than a single substrate-to-product reaction is curated.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Partial Streptomyces sp. PGA64 rabelomycin biosynthesis graph for the BGC0000262 PgaY/PgaF and PgaL cyclization/aromatization proteins.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>nascent angucycline polyketide</td>
+  <td>is cyclized toward</td>
+  <td>angucyclinone cyclization/aromatization</td>
+  <td>This edge deliberately leaves the exact nascent polyketide intermediate ungrounded; MIBiG and GenBank support the named cyclization genes in the exact rabelomycin-producing cluster, not a fully resolved intermediate structure.</td>
+  <td class="mono">DOI:10.1128/AAC.47.4.1291-1296.2003<br>https://mibig.secondarymetabolites.org/repository/BGC0000262.5/index.html</td>
+</tr>
+<tr>
+  <td>PgaY/PgaF angucyclinone cyclase</td>
+  <td>participates in</td>
+  <td>angucyclinone cyclization/aromatization</td>
+  <td>MIBiG annotates AAK57524.1 as pgaF, while GenBank AY034378.2 annotates the same coding sequence as PgaY, an angucyclinone cyclase.</td>
+  <td class="mono">DOI:10.1128/AAC.47.4.1291-1296.2003<br>https://mibig.secondarymetabolites.org/repository/BGC0000262.5/index.html<br>https://www.ncbi.nlm.nih.gov/protein/AAK57524.1<br>https://www.uniprot.org/uniprotkb/Q93LY5</td>
+</tr>
+<tr>
+  <td>PgaL cyclase/aromatase</td>
+  <td>participates in</td>
+  <td>angucyclinone cyclization/aromatization</td>
+  <td>NCBI GenBank AY034378.2 annotates PgaL/AAK57529.1 as a cyclase/aromatase in the PGA64 angucycline locus.</td>
+  <td class="mono">DOI:10.1128/AAC.47.4.1291-1296.2003<br>https://mibig.secondarymetabolites.org/repository/BGC0000262.5/index.html<br>https://www.ncbi.nlm.nih.gov/protein/AAK57529.1<br>https://www.uniprot.org/uniprotkb/Q93LY0</td>
+</tr>
+<tr>
+  <td>angucyclinone cyclization/aromatization</td>
+  <td>supports biosynthesis of</td>
+  <td>rabelomycin</td>
+  <td>The graph captures the cyclization branch of the demonstrated BGC0000262 locus and leaves the unresolved rabelomycin-proximal oxidation as future curation.</td>
+  <td class="mono">DOI:10.1128/AAC.47.4.1291-1296.2003<br>https://mibig.secondarymetabolites.org/repository/BGC0000262.5/index.html</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
 
-
-<h2>Open questions <span class="tag">1</span></h2>
-<div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000223, BGC0000262, BGC0001904. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
