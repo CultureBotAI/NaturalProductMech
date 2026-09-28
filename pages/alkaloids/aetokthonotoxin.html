@@ -89,7 +89,173 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>AetF tryptophan 5/7-brominase<br><span class="mono">UniProtKB:A0A861B9Z9</span></td>
+  <td class="mono">RHEA:82463</td>
+  <td class="mono">CHEBI:16828 &rarr; CHEBI:232362</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>AetF tryptophan 5/7-brominase<br><span class="mono">UniProtKB:A0A861B9Z9</span></td>
+  <td class="mono">RHEA:82467</td>
+  <td class="mono">CHEBI:232362 &rarr; CHEBI:231978</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>AetE 5-bromo-tryptophanase<br><span class="mono">UniProtKB:A0A861BA10</span></td>
+  <td class="mono">RHEA:82523</td>
+  <td class="mono">CHEBI:232362 &rarr; CHEBI:232364</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>AetA 5-bromoindole 2,3-dibrominase<br><span class="mono">UniProtKB:A0AAP5I1G4</span></td>
+  <td class="mono">RHEA:82527</td>
+  <td class="mono">CHEBI:232364 &rarr; CHEBI:232365</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>AetA 5-bromoindole 2,3-dibrominase<br><span class="mono">UniProtKB:A0AAP5I1G4</span></td>
+  <td class="mono">RHEA:82531</td>
+  <td class="mono">CHEBI:232365 &rarr; CHEBI:232363</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>AetD iron-dependent nitrile synthase<br><span class="mono">UniProtKB:A0A861B387</span></td>
+  <td class="mono">RHEA:81787</td>
+  <td class="mono">CHEBI:231978 &rarr; CHEBI:231979</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>AetB aetokthonotoxin synthase<br><span class="mono">UniProtKB:A0A861B5L6</span></td>
+  <td class="mono">RHEA:82519</td>
+  <td class="mono">ungrounded &rarr; CHEBI:167886</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: AetF carries the first brominated tryptophan branch point in the convergent AETX pathway and converts L-tryptophan to 5-bromo-L-tryptophan.</p><p class="sub">Step 2: AetF performs the second tryptophan bromination to form the 5,7-dibromo-L-tryptophan substrate for AetD.</p><p class="sub">Step 3: AetE diverts 5-bromo-L-tryptophan into the tribromoindole arm by cleaving it to 5-bromoindole.</p><p class="sub">Step 4: AetA catalyzes the first pyrrole-ring bromination of 5-bromoindole to generate 3,5-dibromoindole.</p><p class="sub">Step 5: AetA carries out the second pyrrole-ring bromination, converting 3,5-dibromoindole to the AetB substrate 2,3,5-tribromoindole.</p><p class="sub">Step 6: AetD forms the 5,7-dibromo-indole-3-carbonitrile arm from 5,7-dibromo-L-tryptophan without a confirmed role for AetC.</p><p class="sub">Step 7: AetB completes AETX biosynthesis by coupling the separately assembled 5,7-dibromo-indole-3-carbonitrile and 2,3,5-tribromoindole monomers.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 15 edges</span></h2>
+<p class="sub">In vitro reconstituted AetF/AetE/AetA and AetF/AetD branch construction of the two indole monomers that AetB couples to form aetokthonotoxin.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>L-tryptophan</td>
+  <td>is brominated by</td>
+  <td>AetF</td>
+  <td>AetF accepts L-tryptophan to begin the AETX pathway.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:82463</td>
+</tr>
+<tr>
+  <td>AetF</td>
+  <td>forms</td>
+  <td>5-bromo-L-tryptophan</td>
+  <td>AetF forms the monobrominated branch-point precursor.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:82463</td>
+</tr>
+<tr>
+  <td>5-bromo-L-tryptophan</td>
+  <td>is brominated by</td>
+  <td>AetF</td>
+  <td>AetF also accepts 5-bromo-L-tryptophan for the second bromination.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:82467</td>
+</tr>
+<tr>
+  <td>AetF</td>
+  <td>forms</td>
+  <td>5,7-dibromo-L-tryptophan</td>
+  <td>AetF forms the dibrominated tryptophan precursor of the nitrile arm.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:82467</td>
+</tr>
+<tr>
+  <td>5-bromo-L-tryptophan</td>
+  <td>is cleaved by</td>
+  <td>AetE</td>
+  <td>AetE consumes the monobrominated tryptophan in the tribromoindole arm.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:82523</td>
+</tr>
+<tr>
+  <td>AetE</td>
+  <td>forms</td>
+  <td>5-bromoindole</td>
+  <td>AetE forms 5-bromoindole for downstream AetA brominations.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:82523</td>
+</tr>
+<tr>
+  <td>5-bromoindole</td>
+  <td>is brominated by</td>
+  <td>AetA</td>
+  <td>AetA brominates the pyrrole ring of 5-bromoindole.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:82527</td>
+</tr>
+<tr>
+  <td>AetA</td>
+  <td>forms</td>
+  <td>3,5-dibromoindole</td>
+  <td>AetA forms 3,5-dibromoindole as the intermediate before C2 bromination.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:82527</td>
+</tr>
+<tr>
+  <td>3,5-dibromoindole</td>
+  <td>is brominated by</td>
+  <td>AetA</td>
+  <td>AetA performs the second pyrrole-ring bromination on 3,5-dibromoindole.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:82531</td>
+</tr>
+<tr>
+  <td>AetA</td>
+  <td>forms</td>
+  <td>2,3,5-tribromoindole</td>
+  <td>AetA forms the tribromoindole substrate for the final AetB coupling.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:82531</td>
+</tr>
+<tr>
+  <td>5,7-dibromo-L-tryptophan</td>
+  <td>is rearranged by</td>
+  <td>AetD</td>
+  <td>AetD converts the dibrominated tryptophan into the nitrile-arm indole.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:81787</td>
+</tr>
+<tr>
+  <td>AetD</td>
+  <td>forms</td>
+  <td>5,7-dibromo-indole-3-carbonitrile</td>
+  <td>AetD forms the 5,7-dibromo-indole-3-carbonitrile substrate for AetB.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:81787</td>
+</tr>
+<tr>
+  <td>5,7-dibromo-indole-3-carbonitrile</td>
+  <td>is coupled by</td>
+  <td>AetB</td>
+  <td>AetB couples this nitrile-arm monomer with 2,3,5-tribromoindole.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:82519</td>
+</tr>
+<tr>
+  <td>2,3,5-tribromoindole</td>
+  <td>is coupled by</td>
+  <td>AetB</td>
+  <td>AetB couples this tribromoindole monomer with the nitrile-arm monomer.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:82519</td>
+</tr>
+<tr>
+  <td>AetB</td>
+  <td>forms</td>
+  <td>aetokthonotoxin</td>
+  <td>AetB completes the final biaryl coupling to aetokthonotoxin.</td>
+  <td class="mono">DOI:10.1021/jacs.1c12778<br>RHEA:82519</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

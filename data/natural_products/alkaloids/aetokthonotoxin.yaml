@@ -107,6 +107,495 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-93adcf3ab7
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A861B9Z9
+  enzyme_label: AetF tryptophan 5/7-brominase
+  reaction_id: RHEA:82463
+  substrate: CHEBI:16828
+  product: CHEBI:232362
+  notes: AetF carries the first brominated tryptophan branch point in the convergent
+    AETX pathway and converts L-tryptophan to 5-bromo-L-tryptophan.
+  evidence:
+  - reference: DOI:10.1021/jacs.1c12778
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Adak et al. assayed purified AetF and detected 5-bromo-L-tryptophan and
+      5,7-dibromo-L-tryptophan from L-tryptophan with NADPH.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT225528.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: GenBank MT225528.1 is the Aetokthonos hydrillicola Thurmond2011 AETX gene-cluster
+      sequence and assigns aetF to protein QNL15176.1.
+  - reference: https://www.uniprot.org/uniprotkb/A0A861B9Z9
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; MT225528; QNL15176.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: Reviewed UniProtKB:A0A861B9Z9 resolves Aetokthonos hydrillicola Thurmond2011
+      AetF and cross-references EMBL MT225528 protein QNL15176.1.
+  - reference: RHEA:82463
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: 'Rhea grounds the left-to-right AETX pathway reaction: bromide plus L-tryptophan
+      plus NADPH plus oxygen form 5-bromo-L-tryptophan, NADP(+), and water.'
+- step_number: 2
+  enzyme_id: UniProtKB:A0A861B9Z9
+  enzyme_label: AetF tryptophan 5/7-brominase
+  reaction_id: RHEA:82467
+  substrate: CHEBI:232362
+  product: CHEBI:231978
+  notes: AetF performs the second tryptophan bromination to form the 5,7-dibromo-L-tryptophan
+    substrate for AetD.
+  evidence:
+  - reference: DOI:10.1021/jacs.1c12778
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Adak et al. assigned the AetF-dependent dibromination of L-tryptophan through
+      5-bromo-L-tryptophan toward the 5,7-dibromo-L-tryptophan nitrile-arm precursor.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT225528.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: GenBank MT225528.1 is the Aetokthonos hydrillicola Thurmond2011 AETX gene-cluster
+      sequence and assigns aetF to protein QNL15176.1.
+  - reference: https://www.uniprot.org/uniprotkb/A0A861B9Z9
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; MT225528; QNL15176.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: Reviewed UniProtKB:A0A861B9Z9 resolves Aetokthonos hydrillicola Thurmond2011
+      AetF and cross-references EMBL MT225528 protein QNL15176.1.
+  - reference: RHEA:82467
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5-bromo-L-tryptophan
+      plus bromide plus NADPH plus oxygen form 5,7-dibromo-L-tryptophan, NADP(+),
+      and water.'
+- step_number: 3
+  enzyme_id: UniProtKB:A0A861BA10
+  enzyme_label: AetE 5-bromo-tryptophanase
+  reaction_id: RHEA:82523
+  substrate: CHEBI:232362
+  product: CHEBI:232364
+  notes: AetE diverts 5-bromo-L-tryptophan into the tribromoindole arm by cleaving
+    it to 5-bromoindole.
+  evidence:
+  - reference: DOI:10.1021/jacs.1c12778
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Adak et al. assayed AetE against 5-bromo-L-tryptophan, detected 5-bromoindole
+      and the pyruvate coproduct, and assigned the PLP-dependent tryptophanase step.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT225528.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: GenBank MT225528.1 is the Aetokthonos hydrillicola Thurmond2011 AETX gene-cluster
+      sequence and assigns aetE to protein QNL15175.1.
+  - reference: https://www.uniprot.org/uniprotkb/A0A861BA10
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; MT225528; QNL15175.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: Reviewed UniProtKB:A0A861BA10 resolves Aetokthonos hydrillicola Thurmond2011
+      AetE and cross-references EMBL MT225528 protein QNL15175.1.
+  - reference: RHEA:82523
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5-bromo-L-tryptophan
+      plus water forms 5-bromoindole, pyruvate, and ammonium.'
+- step_number: 4
+  enzyme_id: UniProtKB:A0AAP5I1G4
+  enzyme_label: AetA 5-bromoindole 2,3-dibrominase
+  reaction_id: RHEA:82527
+  substrate: CHEBI:232364
+  product: CHEBI:232365
+  notes: AetA catalyzes the first pyrrole-ring bromination of 5-bromoindole to generate
+    3,5-dibromoindole.
+  evidence:
+  - reference: DOI:10.1021/jacs.1c12778
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Adak et al. reconstituted AetA with FAD, NADPH, and SsuE and observed 3,5-dibromoindole
+      from 5-bromoindole.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT225528.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: GenBank MT225528.1 is the Aetokthonos hydrillicola Thurmond2011 AETX gene-cluster
+      sequence and assigns aetA to protein QNL15171.1.
+  - reference: https://www.uniprot.org/uniprotkb/A0AAP5I1G4
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; MT225528; QNL15171.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: Reviewed UniProtKB:A0AAP5I1G4 resolves Aetokthonos hydrillicola Thurmond2011
+      AetA and cross-references EMBL MT225528 protein QNL15171.1.
+  - reference: RHEA:82527
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5-bromoindole plus
+      bromide plus reduced FAD plus oxygen form 3,5-dibromoindole, FAD, and water.'
+- step_number: 5
+  enzyme_id: UniProtKB:A0AAP5I1G4
+  enzyme_label: AetA 5-bromoindole 2,3-dibrominase
+  reaction_id: RHEA:82531
+  substrate: CHEBI:232365
+  product: CHEBI:232363
+  notes: AetA carries out the second pyrrole-ring bromination, converting 3,5-dibromoindole
+    to the AetB substrate 2,3,5-tribromoindole.
+  evidence:
+  - reference: DOI:10.1021/jacs.1c12778
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Adak et al. identified 2,3,5-tribromoindole in the AetA reaction and confirmed
+      direct conversion of 3,5-dibromoindole to 2,3,5-tribromoindole.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT225528.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: GenBank MT225528.1 is the Aetokthonos hydrillicola Thurmond2011 AETX gene-cluster
+      sequence and assigns aetA to protein QNL15171.1.
+  - reference: https://www.uniprot.org/uniprotkb/A0AAP5I1G4
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; MT225528; QNL15171.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: Reviewed UniProtKB:A0AAP5I1G4 resolves Aetokthonos hydrillicola Thurmond2011
+      AetA and cross-references EMBL MT225528 protein QNL15171.1.
+  - reference: RHEA:82531
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: 'Rhea grounds the left-to-right AETX pathway reaction: 3,5-dibromoindole
+      plus bromide plus reduced FAD plus oxygen form 2,3,5-tribromoindole, FAD, and
+      water.'
+- step_number: 6
+  enzyme_id: UniProtKB:A0A861B387
+  enzyme_label: AetD iron-dependent nitrile synthase
+  reaction_id: RHEA:81787
+  substrate: CHEBI:231978
+  product: CHEBI:231979
+  notes: AetD forms the 5,7-dibromo-indole-3-carbonitrile arm from 5,7-dibromo-L-tryptophan
+    without a confirmed role for AetC.
+  evidence:
+  - reference: DOI:10.1021/jacs.1c12778
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Adak et al. showed Fe(II)-stimulated AetD conversion of 5,7-dibromo-L-tryptophan
+      to 5,7-dibromo-indole-3-carbonitrile.
+    snippet: AetD alone could catalyze this transformation
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT225528.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: GenBank MT225528.1 is the Aetokthonos hydrillicola Thurmond2011 AETX gene-cluster
+      sequence and assigns aetD to protein QNL15174.1.
+  - reference: https://www.uniprot.org/uniprotkb/A0A861B387
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; MT225528; QNL15174.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: Reviewed UniProtKB:A0A861B387 resolves Aetokthonos hydrillicola Thurmond2011
+      AetD and cross-references EMBL MT225528 protein QNL15174.1.
+  - reference: RHEA:81787
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5,7-dibromo-L-tryptophan
+      plus oxygen form 5,7-dibromo-indole-3-carbonitrile, glycolate, water, and a
+      proton.'
+- step_number: 7
+  enzyme_id: UniProtKB:A0A861B5L6
+  enzyme_label: AetB aetokthonotoxin synthase
+  reaction_id: RHEA:82519
+  product: CHEBI:167886
+  notes: AetB completes AETX biosynthesis by coupling the separately assembled 5,7-dibromo-indole-3-carbonitrile
+    and 2,3,5-tribromoindole monomers.
+  evidence:
+  - reference: DOI:10.1021/jacs.1c12778
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Adak et al. reconstituted AetB with the two brominated indole substrates,
+      ferredoxin, ferredoxin reductase, and NADPH and confirmed the enzymatic product
+      by coelution with a synthetic AETX standard.
+    snippet: AetB reaction with 2 and 3 yields the final natural product AETX
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT225528.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: GenBank MT225528.1 is the Aetokthonos hydrillicola Thurmond2011 AETX gene-cluster
+      sequence and assigns aetB to protein QNL15172.1.
+  - reference: https://www.uniprot.org/uniprotkb/A0A861B5L6
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; MT225528; QNL15172.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: Reviewed UniProtKB:A0A861B5L6 resolves Aetokthonos hydrillicola Thurmond2011
+      AetB and cross-references EMBL MT225528 protein QNL15172.1.
+  - reference: RHEA:82519
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5,7-dibromo-indole-3-carbonitrile
+      plus 2,3,5-tribromoindole couple with reduced ferredoxin and oxygen to form
+      aetokthonotoxin.'
+causal_graphs:
+- graph_id: aetokthonotoxin-aet-biosynthesis
+  scope: BIOSYNTHESIS
+  description: In vitro reconstituted AetF/AetE/AetA and AetF/AetD branch construction
+    of the two indole monomers that AetB couples to form aetokthonotoxin.
+  nodes:
+  - node_id: l_tryptophan
+    label: L-tryptophan
+    node_type: PRECURSOR
+    identifier: CHEBI:16828
+    grounding_status: GROUNDED
+  - node_id: aetf
+    label: AetF
+    node_type: ENZYME
+    identifier: UniProtKB:A0A861B9Z9
+    grounding_status: GROUNDED
+  - node_id: 5_bromo_l_tryptophan
+    label: 5-bromo-L-tryptophan
+    node_type: PRECURSOR
+    identifier: CHEBI:232362
+    grounding_status: GROUNDED
+  - node_id: 5_7_dibromo_l_tryptophan
+    label: 5,7-dibromo-L-tryptophan
+    node_type: PRECURSOR
+    identifier: CHEBI:231978
+    grounding_status: GROUNDED
+  - node_id: aete
+    label: AetE
+    node_type: ENZYME
+    identifier: UniProtKB:A0A861BA10
+    grounding_status: GROUNDED
+  - node_id: 5_bromoindole
+    label: 5-bromoindole
+    node_type: PRECURSOR
+    identifier: CHEBI:232364
+    grounding_status: GROUNDED
+  - node_id: aeta
+    label: AetA
+    node_type: ENZYME
+    identifier: UniProtKB:A0AAP5I1G4
+    grounding_status: GROUNDED
+  - node_id: 3_5_dibromoindole
+    label: 3,5-dibromoindole
+    node_type: PRECURSOR
+    identifier: CHEBI:232365
+    grounding_status: GROUNDED
+  - node_id: 2_3_5_tribromoindole
+    label: 2,3,5-tribromoindole
+    node_type: PRECURSOR
+    identifier: CHEBI:232363
+    grounding_status: GROUNDED
+  - node_id: aetd
+    label: AetD
+    node_type: ENZYME
+    identifier: UniProtKB:A0A861B387
+    grounding_status: GROUNDED
+  - node_id: 5_7_dibromoindole_3_carbonitrile
+    label: 5,7-dibromo-indole-3-carbonitrile
+    node_type: PRECURSOR
+    identifier: CHEBI:231979
+    grounding_status: GROUNDED
+  - node_id: aetb
+    label: AetB
+    node_type: ENZYME
+    identifier: UniProtKB:A0A861B5L6
+    grounding_status: GROUNDED
+  - node_id: aetokthonotoxin
+    label: aetokthonotoxin
+    node_type: COMPOUND
+    identifier: CHEBI:167886
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_tryptophan
+    predicate: is brominated by
+    object: aetf
+    notes: AetF accepts L-tryptophan to begin the AETX pathway.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Purified AetF formed brominated L-tryptophan products from L-tryptophan.
+    - reference: RHEA:82463
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: bromide plus L-tryptophan
+        plus NADPH plus oxygen form 5-bromo-L-tryptophan, NADP(+), and water.'
+  - subject: aetf
+    predicate: forms
+    object: 5_bromo_l_tryptophan
+    notes: AetF forms the monobrominated branch-point precursor.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Purified AetF formed 5-bromo-L-tryptophan from L-tryptophan.
+    - reference: RHEA:82463
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: bromide plus L-tryptophan
+        plus NADPH plus oxygen form 5-bromo-L-tryptophan, NADP(+), and water.'
+  - subject: 5_bromo_l_tryptophan
+    predicate: is brominated by
+    object: aetf
+    notes: AetF also accepts 5-bromo-L-tryptophan for the second bromination.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The in vitro AetF reaction formed 5,7-dibromo-L-tryptophan.
+    - reference: RHEA:82467
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5-bromo-L-tryptophan
+        plus bromide plus NADPH plus oxygen form 5,7-dibromo-L-tryptophan, NADP(+),
+        and water.'
+  - subject: aetf
+    predicate: forms
+    object: 5_7_dibromo_l_tryptophan
+    notes: AetF forms the dibrominated tryptophan precursor of the nitrile arm.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The in vitro AetF reaction formed 5,7-dibromo-L-tryptophan.
+    - reference: RHEA:82467
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5-bromo-L-tryptophan
+        plus bromide plus NADPH plus oxygen form 5,7-dibromo-L-tryptophan, NADP(+),
+        and water.'
+  - subject: 5_bromo_l_tryptophan
+    predicate: is cleaved by
+    object: aete
+    notes: AetE consumes the monobrominated tryptophan in the tribromoindole arm.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: AetE was assigned by in vitro conversion of 5-bromo-L-tryptophan to 5-bromoindole.
+    - reference: RHEA:82523
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5-bromo-L-tryptophan
+        plus water forms 5-bromoindole, pyruvate, and ammonium.'
+  - subject: aete
+    predicate: forms
+    object: 5_bromoindole
+    notes: AetE forms 5-bromoindole for downstream AetA brominations.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: AetE was assigned by in vitro conversion of 5-bromo-L-tryptophan to 5-bromoindole.
+    - reference: RHEA:82523
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5-bromo-L-tryptophan
+        plus water forms 5-bromoindole, pyruvate, and ammonium.'
+  - subject: 5_bromoindole
+    predicate: is brominated by
+    object: aeta
+    notes: AetA brominates the pyrrole ring of 5-bromoindole.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The reconstituted AetA reaction formed 3,5-dibromoindole from 5-bromoindole.
+    - reference: RHEA:82527
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5-bromoindole
+        plus bromide plus reduced FAD plus oxygen form 3,5-dibromoindole, FAD, and
+        water.'
+  - subject: aeta
+    predicate: forms
+    object: 3_5_dibromoindole
+    notes: AetA forms 3,5-dibromoindole as the intermediate before C2 bromination.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The reconstituted AetA reaction formed 3,5-dibromoindole from 5-bromoindole.
+    - reference: RHEA:82527
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5-bromoindole
+        plus bromide plus reduced FAD plus oxygen form 3,5-dibromoindole, FAD, and
+        water.'
+  - subject: 3_5_dibromoindole
+    predicate: is brominated by
+    object: aeta
+    notes: AetA performs the second pyrrole-ring bromination on 3,5-dibromoindole.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: AetA directly converted 3,5-dibromoindole to 2,3,5-tribromoindole.
+    - reference: RHEA:82531
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: 3,5-dibromoindole
+        plus bromide plus reduced FAD plus oxygen form 2,3,5-tribromoindole, FAD,
+        and water.'
+  - subject: aeta
+    predicate: forms
+    object: 2_3_5_tribromoindole
+    notes: AetA forms the tribromoindole substrate for the final AetB coupling.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: AetA directly converted 3,5-dibromoindole to 2,3,5-tribromoindole.
+    - reference: RHEA:82531
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: 3,5-dibromoindole
+        plus bromide plus reduced FAD plus oxygen form 2,3,5-tribromoindole, FAD,
+        and water.'
+  - subject: 5_7_dibromo_l_tryptophan
+    predicate: is rearranged by
+    object: aetd
+    notes: AetD converts the dibrominated tryptophan into the nitrile-arm indole.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: AetD alone, stimulated by Fe(II), formed 5,7-dibromo-indole-3-carbonitrile.
+    - reference: RHEA:81787
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5,7-dibromo-L-tryptophan
+        plus oxygen form 5,7-dibromo-indole-3-carbonitrile, glycolate, water, and
+        a proton.'
+  - subject: aetd
+    predicate: forms
+    object: 5_7_dibromoindole_3_carbonitrile
+    notes: AetD forms the 5,7-dibromo-indole-3-carbonitrile substrate for AetB.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: AetD alone, stimulated by Fe(II), formed 5,7-dibromo-indole-3-carbonitrile.
+    - reference: RHEA:81787
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5,7-dibromo-L-tryptophan
+        plus oxygen form 5,7-dibromo-indole-3-carbonitrile, glycolate, water, and
+        a proton.'
+  - subject: 5_7_dibromoindole_3_carbonitrile
+    predicate: is coupled by
+    object: aetb
+    notes: AetB couples this nitrile-arm monomer with 2,3,5-tribromoindole.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: AetB coupled the two functionalized indole monomers to make AETX in vitro.
+    - reference: RHEA:82519
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5,7-dibromo-indole-3-carbonitrile
+        plus 2,3,5-tribromoindole couple with reduced ferredoxin and oxygen to form
+        aetokthonotoxin.'
+  - subject: 2_3_5_tribromoindole
+    predicate: is coupled by
+    object: aetb
+    notes: AetB couples this tribromoindole monomer with the nitrile-arm monomer.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: AetB coupled the two functionalized indole monomers to make AETX in vitro.
+    - reference: RHEA:82519
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5,7-dibromo-indole-3-carbonitrile
+        plus 2,3,5-tribromoindole couple with reduced ferredoxin and oxygen to form
+        aetokthonotoxin.'
+  - subject: aetb
+    predicate: forms
+    object: aetokthonotoxin
+    notes: AetB completes the final biaryl coupling to aetokthonotoxin.
+    evidence:
+    - reference: DOI:10.1021/jacs.1c12778
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The AetB enzymatic product was confirmed as AETX by coelution with a
+        synthetic standard.
+    - reference: RHEA:82519
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5,7-dibromo-indole-3-carbonitrile
+        plus 2,3,5-tribromoindole couple with reduced ferredoxin and oxygen to form
+        aetokthonotoxin.'
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -116,3 +605,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-28T15:01:19Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added an evidence-backed AetF/AetE/AetA/AetD/AetB biosynthetic pathway
+    and BIOSYNTHESIS causal graph for aetokthonotoxin.
+  llm_assisted: true
