@@ -329,6 +329,44 @@ discussions:
     error.'
 biosynthetic_pathway:
 - step_number: 1
+  enzyme_label: Psf1/Psf2 phosphonomethylmalate-forming module
+  proposed: false
+  notes: Psf1 and Psf2 together convert phosphoenolpyruvate plus acetyl-CoA into phosphonomethylmalate
+    in the assayed Pseudomonas syringae PB-5123 route. The individual phosphonopyruvate
+    intermediate is not represented as a separate PathwayStep because the source directly
+    detected the two-enzyme Pmm product rather than isolating phosphonopyruvate.
+  evidence:
+  - reference: DOI:10.1128/AAC.06478-11
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: When either Psf1 or Psf2 was omitted
+    notes: Kim et al. cloned psf1 and psf2 from the Pseudomonas syringae PB-5123 fosfomycin
+      cluster, purified His-tagged Psf1 and Psf2, and found that the combined PEP,
+      acetyl-CoA, Psf1, and Psf2 assay formed phosphonomethylmalate; omission of either
+      enzyme prevented new phosphonate product formation.
+  - reference: https://www.uniprot.org/uniprotkb/I6QN26
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:I6QN26 is the unreviewed 291 aa Pseudomonas syringae phosphoenolpyruvate
+      mutase entry and cross-references EMBL JX102649 protein AFM38986.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFM38986.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: product="phosphoenolpyruvate phosphomutase"
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept AFM38986.1 is the JX102649.1 Psf1 coding sequence from the
+      Pseudomonas syringae PB-5123 fosfomycin cluster.
+  - reference: https://www.uniprot.org/uniprotkb/I6QY75
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:I6QY75 is the unreviewed 380 aa Pseudomonas syringae entry that
+      cross-references EMBL JX102649 protein AFM38993.1; GenBank annotates that exact
+      CDS as Psf2.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFM38993.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: note="Psf2"
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept AFM38993.1 is the JX102649.1 Psf2 coding sequence from the
+      Pseudomonas syringae PB-5123 fosfomycin cluster.
+- step_number: 2
   enzyme_id: UniProtKB:Q9JN69
   enzyme_label: Ps-HppE
   reaction_id: RHEA:10808
@@ -364,9 +402,36 @@ biosynthetic_pathway:
 causal_graphs:
 - graph_id: fosfomycin-ps-hppe-biosynthesis
   scope: BIOSYNTHESIS
-  description: Partial Pseudomonas syringae fosfomycin biosynthesis graph for the
-    Ps-HppE-catalyzed final epoxidation of (S)-2-hydroxypropylphosphonate.
+  description: Partial Pseudomonas syringae fosfomycin biosynthesis graph for Psf1/Psf2
+    phosphonomethylmalate formation and the Ps-HppE-catalyzed final epoxidation of
+    (S)-2-hydroxypropylphosphonate.
   nodes:
+  - node_id: phosphoenolpyruvate
+    label: phosphoenolpyruvate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: acetyl_coa
+    label: acetyl-CoA
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: psf1
+    label: Psf1
+    node_type: ENZYME
+    identifier: UniProtKB:I6QN26
+    grounding_status: GROUNDED
+  - node_id: psf2
+    label: Psf2
+    node_type: ENZYME
+    identifier: UniProtKB:I6QY75
+    grounding_status: GROUNDED
+  - node_id: pmm_formation
+    label: phosphonomethylmalate formation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: phosphonomethylmalate
+    label: phosphonomethylmalate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
   - node_id: s_2_hydroxypropylphosphonate
     label: (S)-2-hydroxypropylphosphonate
     node_type: PRECURSOR
@@ -383,6 +448,84 @@ causal_graphs:
     identifier: CHEBI:62247
     grounding_status: GROUNDED
   edges:
+  - subject: phosphoenolpyruvate
+    predicate: participates in
+    object: pmm_formation
+    evidence:
+    - reference: DOI:10.1128/AAC.06478-11
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: When either Psf1 or Psf2 was omitted
+      notes: Kim et al. cloned psf1 and psf2 from the Pseudomonas syringae PB-5123
+        fosfomycin cluster, purified His-tagged Psf1 and Psf2, and found that the
+        combined PEP, acetyl-CoA, Psf1, and Psf2 assay formed phosphonomethylmalate;
+        omission of either enzyme prevented new phosphonate product formation.
+  - subject: acetyl_coa
+    predicate: participates in
+    object: pmm_formation
+    evidence:
+    - reference: DOI:10.1128/AAC.06478-11
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: When either Psf1 or Psf2 was omitted
+      notes: Kim et al. cloned psf1 and psf2 from the Pseudomonas syringae PB-5123
+        fosfomycin cluster, purified His-tagged Psf1 and Psf2, and found that the
+        combined PEP, acetyl-CoA, Psf1, and Psf2 assay formed phosphonomethylmalate;
+        omission of either enzyme prevented new phosphonate product formation.
+  - subject: psf1
+    predicate: catalyzes
+    object: pmm_formation
+    evidence:
+    - reference: DOI:10.1128/AAC.06478-11
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: When either Psf1 or Psf2 was omitted
+      notes: Kim et al. cloned psf1 and psf2 from the Pseudomonas syringae PB-5123
+        fosfomycin cluster, purified His-tagged Psf1 and Psf2, and found that the
+        combined PEP, acetyl-CoA, Psf1, and Psf2 assay formed phosphonomethylmalate;
+        omission of either enzyme prevented new phosphonate product formation.
+    - reference: https://www.uniprot.org/uniprotkb/I6QN26
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:I6QN26 is the unreviewed 291 aa Pseudomonas syringae phosphoenolpyruvate
+        mutase entry and cross-references EMBL JX102649 protein AFM38986.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFM38986.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: product="phosphoenolpyruvate phosphomutase"
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept AFM38986.1 is the JX102649.1 Psf1 coding sequence from the
+        Pseudomonas syringae PB-5123 fosfomycin cluster.
+  - subject: psf2
+    predicate: catalyzes
+    object: pmm_formation
+    evidence:
+    - reference: DOI:10.1128/AAC.06478-11
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: When either Psf1 or Psf2 was omitted
+      notes: Kim et al. cloned psf1 and psf2 from the Pseudomonas syringae PB-5123
+        fosfomycin cluster, purified His-tagged Psf1 and Psf2, and found that the
+        combined PEP, acetyl-CoA, Psf1, and Psf2 assay formed phosphonomethylmalate;
+        omission of either enzyme prevented new phosphonate product formation.
+    - reference: https://www.uniprot.org/uniprotkb/I6QY75
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:I6QY75 is the unreviewed 380 aa Pseudomonas syringae entry
+        that cross-references EMBL JX102649 protein AFM38993.1; GenBank annotates
+        that exact CDS as Psf2.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFM38993.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: note="Psf2"
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept AFM38993.1 is the JX102649.1 Psf2 coding sequence from the
+        Pseudomonas syringae PB-5123 fosfomycin cluster.
+  - subject: pmm_formation
+    predicate: produces
+    object: phosphonomethylmalate
+    evidence:
+    - reference: DOI:10.1128/AAC.06478-11
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: When either Psf1 or Psf2 was omitted
+      notes: Kim et al. cloned psf1 and psf2 from the Pseudomonas syringae PB-5123
+        fosfomycin cluster, purified His-tagged Psf1 and Psf2, and found that the
+        combined PEP, acetyl-CoA, Psf1, and Psf2 assay formed phosphonomethylmalate;
+        omission of either enzyme prevented new phosphonate product formation.
   - subject: s_2_hydroxypropylphosphonate
     predicate: is epoxidized by
     object: ps_hppe
@@ -453,4 +596,11 @@ curation_history:
   action: RECORD_CURATED
   changes: Added the Pseudomonas syringae Ps-HppE (S)-2-hydroxypropylphosphonate-to-fosfomycin
     biosynthetic step and BIOSYNTHESIS causal graph grounded to UniProtKB:Q9JN69.
+  llm_assisted: true
+- timestamp: '2026-09-28T17:37:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the Pseudomonas syringae Psf1/Psf2 early phosphonomethylmalate biosynthetic
+    module to the fosfomycin pathway and BIOSYNTHESIS causal graph; grounded AFM38986.1
+    and AFM38993.1 to UniProtKB:I6QN26 and UniProtKB:I6QY75.
   llm_assisted: true
