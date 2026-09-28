@@ -122,6 +122,15 @@ def references(item: dict[str, Any]) -> list[str]:
     ]
 
 
+def pathway_endpoint(item: dict[str, Any], singular: str, plural: str) -> str:
+    values = item.get(plural) or []
+    if isinstance(values, str):
+        values = [values]
+    if values:
+        return " + ".join(values)
+    return item.get(singular) or "ungrounded"
+
+
 def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
     producers = []
     for p in doc.get("producer_organisms") or []:
@@ -147,7 +156,12 @@ def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
                               "reference": first_reference(b)})
     steps = []
     for s in doc.get("biosynthetic_pathway") or []:
-        steps.append({**s, "reference": first_reference(s)})
+        steps.append({
+            **s,
+            "reference": first_reference(s),
+            "substrate_display": pathway_endpoint(s, "substrate", "substrates"),
+            "product_display": pathway_endpoint(s, "product", "products"),
+        })
     graphs = []
     for g in doc.get("causal_graphs") or []:
         labels = {n.get("node_id"): n.get("label", n.get("node_id", ""))
