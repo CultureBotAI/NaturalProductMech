@@ -164,7 +164,131 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>PrnA<br><span class="mono">UniProtKB:A8W2Z0</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:16828 &rarr; CHEBI:47356</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>PrnB<br><span class="mono">UniProtKB:A8W2Z1</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:47356 &rarr; CHEBI:85785</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>PrnC<br><span class="mono">UniProtKB:A8W2Z2</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:85785 &rarr; CHEBI:85786</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>PrnD<br><span class="mono">UniProtKB:A8W2Z3</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:85786 &rarr; CHEBI:32079</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: GenBank EU188755.1 annotates Pseudomonas chlororaphis PA23 PrnA as the tryptophan chlorinating enzyme; marked proposed because the exact PA23 CDS assignment is a sequence annotation rather than a direct PA23 enzyme assay.</p><p class="sub">Step 2: GenBank EU188755.1 annotates Pseudomonas chlororaphis PA23 PrnB as the enzyme converting 7-chlorotryptophan to monodechloroaminopyrrolnitrin; marked proposed because the exact PA23 CDS assignment is a sequence annotation rather than a direct PA23 enzyme assay.</p><p class="sub">Step 3: GenBank EU188755.1 annotates Pseudomonas chlororaphis PA23 PrnC as the aminopyrrolnitrin-forming halogenase; marked proposed because the exact PA23 CDS assignment is a sequence annotation rather than a direct PA23 enzyme assay.</p><p class="sub">Step 4: GenBank EU188755.1 annotates Pseudomonas chlororaphis PA23 PrnD as the arylamine oxidase that completes pyrrolnitrin biosynthesis; marked proposed because the exact PA23 CDS assignment is a sequence annotation rather than a direct PA23 enzyme assay.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 12 edges</span></h2>
+<p class="sub">Proposed Pseudomonas chlororaphis PA23 PrnA-PrnD biosynthetic route from L-tryptophan to pyrrolnitrin.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>L-tryptophan</td>
+  <td>is converted by</td>
+  <td>tryptophan 7-chlorination</td>
+  <td></td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1</td>
+</tr>
+<tr>
+  <td>PrnA</td>
+  <td>catalyzes</td>
+  <td>tryptophan 7-chlorination</td>
+  <td></td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1<br>https://www.uniprot.org/uniprotkb/A8W2Z0</td>
+</tr>
+<tr>
+  <td>tryptophan 7-chlorination</td>
+  <td>forms</td>
+  <td>7-chloro-L-tryptophan</td>
+  <td></td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1</td>
+</tr>
+<tr>
+  <td>7-chloro-L-tryptophan</td>
+  <td>is converted by</td>
+  <td>monodechloroaminopyrrolnitrin formation</td>
+  <td></td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1</td>
+</tr>
+<tr>
+  <td>PrnB</td>
+  <td>catalyzes</td>
+  <td>monodechloroaminopyrrolnitrin formation</td>
+  <td></td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1<br>https://www.uniprot.org/uniprotkb/A8W2Z1</td>
+</tr>
+<tr>
+  <td>monodechloroaminopyrrolnitrin formation</td>
+  <td>forms</td>
+  <td>monodechloroaminopyrrolnitrin</td>
+  <td></td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1</td>
+</tr>
+<tr>
+  <td>monodechloroaminopyrrolnitrin</td>
+  <td>is converted by</td>
+  <td>aminopyrrolnitrin-forming chlorination</td>
+  <td></td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1</td>
+</tr>
+<tr>
+  <td>PrnC</td>
+  <td>catalyzes</td>
+  <td>aminopyrrolnitrin-forming chlorination</td>
+  <td></td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1<br>https://www.uniprot.org/uniprotkb/A8W2Z2</td>
+</tr>
+<tr>
+  <td>aminopyrrolnitrin-forming chlorination</td>
+  <td>forms</td>
+  <td>aminopyrrolnitrin</td>
+  <td></td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1</td>
+</tr>
+<tr>
+  <td>aminopyrrolnitrin</td>
+  <td>is converted by</td>
+  <td>pyrrolnitrin-forming oxidation</td>
+  <td></td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1</td>
+</tr>
+<tr>
+  <td>PrnD</td>
+  <td>catalyzes</td>
+  <td>pyrrolnitrin-forming oxidation</td>
+  <td></td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1<br>https://www.uniprot.org/uniprotkb/A8W2Z3</td>
+</tr>
+<tr>
+  <td>pyrrolnitrin-forming oxidation</td>
+  <td>forms</td>
+  <td>pyrrolnitrin</td>
+  <td></td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
