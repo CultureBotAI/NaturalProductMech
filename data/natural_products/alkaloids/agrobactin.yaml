@@ -111,6 +111,552 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q8GRA0
+  enzyme_label: AgbC isochorismate synthase
+  reaction_id: RHEA:18985
+  substrate: CHEBI:29748
+  product: CHEBI:29780
+  proposed: true
+  notes: AgbC is the AB083344.2 isochorismate synthase candidate; the reaction class
+    is assigned from the UniProtKB/ARBA prediction rather than from a purified AgbC
+    assay.
+  evidence:
+  - reference: DOI:10.1266/ggs.77.137
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: We named these genes agb, after agrobactin.
+    notes: Sonoda et al. cloned Agrobacterium tumefaciens MAFF301001 fosmid 1A3 and
+      identified agbC, agbE, agbB, and agbA in an operon involved in ferric iron uptake.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+      tumefaciens AB083344.2 cluster and annotates AgbC/BAC16757.2 in that cluster.
+  - reference: https://www.uniprot.org/uniprotkb/Q8GRA0
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; AB083344; BAC16757.2; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: Unreviewed UniProtKB:Q8GRA0 is Agrobacterium tumefaciens AgbC, length 342
+      aa, and cross-references EMBL AB083344 protein BAC16757.2.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAC16757.2
+    evidence_type: DATABASE_ASSERTION
+    snippet: probable isochorismate synthase
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept BAC16757.2 is the AB083344.2:1949..2977 AgbC coding sequence
+      from Agrobacterium tumefaciens strain MAFF301001.
+- step_number: 2
+  enzyme_id: UniProtKB:Q8GR98
+  enzyme_label: AgbB isochorismatase
+  reaction_id: RHEA:11112
+  substrate: CHEBI:29780
+  product: CHEBI:58764
+  proposed: true
+  notes: AgbB is the AB083344.2 isochorismatase candidate required for catechol-compound
+    production under iron limitation; the exact Rhea isochorismatase reaction is a
+    UniProtKB/ARBA prediction.
+  evidence:
+  - reference: DOI:10.1266/ggs.77.137
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Mutation analysis of agbB revealed that it is essential
+    notes: Sonoda et al. linked agbB to growth and catechol-compound production in
+      iron-limiting medium in Agrobacterium tumefaciens MAFF301001.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+      tumefaciens AB083344.2 cluster and annotates AgbB/BAC16759.1 in that cluster.
+  - reference: https://www.uniprot.org/uniprotkb/Q8GR98
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; AB083344; BAC16759.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: Unreviewed UniProtKB:Q8GR98 is Agrobacterium tumefaciens AgbB, length 289
+      aa, and cross-references EMBL AB083344 protein BAC16759.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAC16759.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: probable 2,3-dihydro-2,3-dihydroxybenzoate synthetase, isochorismatase
+      protein
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept BAC16759.1 is the AB083344.2:4860..5729 AgbB coding sequence
+      from Agrobacterium tumefaciens strain MAFF301001.
+- step_number: 3
+  enzyme_id: UniProtKB:Q8GR97
+  enzyme_label: AgbA 2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase
+  reaction_id: RHEA:23824
+  substrate: CHEBI:58764
+  product: CHEBI:36654
+  proposed: true
+  notes: AgbA is the AB083344.2 2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase candidate;
+    the reaction class is assigned from the UniProtKB/ARBA prediction rather than
+    from a purified AgbA assay.
+  evidence:
+  - reference: DOI:10.1266/ggs.77.137
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: We named these genes agb, after agrobactin.
+    notes: Sonoda et al. cloned Agrobacterium tumefaciens MAFF301001 fosmid 1A3 and
+      identified agbC, agbE, agbB, and agbA in an operon involved in ferric iron uptake.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+      tumefaciens AB083344.2 cluster and annotates AgbA/BAC16760.1 in that cluster.
+  - reference: https://www.uniprot.org/uniprotkb/Q8GR97
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; AB083344; BAC16760.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: Unreviewed UniProtKB:Q8GR97 is Agrobacterium tumefaciens AgbA, length 251
+      aa, and cross-references EMBL AB083344 protein BAC16760.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAC16760.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: probable 2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase protein
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept BAC16760.1 is the AB083344.2:5743..6498 AgbA coding sequence
+      from Agrobacterium tumefaciens strain MAFF301001.
+- step_number: 4
+  enzyme_id: UniProtKB:Q83VM4
+  enzyme_label: AgbD phosphopantetheinyl transferase
+  proposed: true
+  notes: AgbD is the AB083344.2 phosphopantetheinyl-transferase candidate that would
+    activate the aryl/peptidyl carrier proteins for 2,3-DHBA transfer and NRPS assembly.
+  evidence:
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB083344.2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenBank AB083344.2 is the 7,390 bp Agrobacterium tumefaciens MAFF301001
+      ferric iron uptake system gene cluster and annotates agbD/BAC57934.1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+      tumefaciens AB083344.2 cluster and annotates agbD/BAC57934.1 in that cluster.
+  - reference: https://www.uniprot.org/uniprotkb/Q83VM4
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; AB083344; BAC57934.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: Unreviewed UniProtKB:Q83VM4 is Agrobacterium tumefaciens AgbD, length 241
+      aa, and cross-references EMBL AB083344 protein BAC57934.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAC57934.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: probable phosphopantetheinyl transferase
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept BAC57934.1 is the AB083344.2:6529..7254 AgbD coding sequence
+      from Agrobacterium tumefaciens strain MAFF301001.
+- step_number: 5
+  enzyme_id: UniProtKB:Q8GR99
+  enzyme_label: AgbE 2,3-dihydroxybenzoate-AMP ligase
+  proposed: true
+  notes: AgbE is the AB083344.2 2,3-dihydroxybenzoate-AMP ligase candidate that likely
+    activates 2,3-DHBA for aryl-carrier-protein transfer.
+  evidence:
+  - reference: DOI:10.1266/ggs.77.137
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: We named these genes agb, after agrobactin.
+    notes: Sonoda et al. cloned Agrobacterium tumefaciens MAFF301001 fosmid 1A3 and
+      identified agbC, agbE, agbB, and agbA in an operon involved in ferric iron uptake.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+      tumefaciens AB083344.2 cluster and annotates AgbE/BAC16758.1 in that cluster.
+  - reference: https://www.uniprot.org/uniprotkb/Q8GR99
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; AB083344; BAC16758.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: Unreviewed UniProtKB:Q8GR99 is Agrobacterium tumefaciens AgbE, length 541
+      aa, and cross-references EMBL AB083344 protein BAC16758.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAC16758.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: probable 2,3-dihydroxybenzoate-AMP ligase protein
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept BAC16758.1 is the AB083344.2:3142..4767 AgbE coding sequence
+      from Agrobacterium tumefaciens strain MAFF301001.
+- step_number: 6
+  enzyme_id: UniProtKB:Q83VM5
+  enzyme_label: AgbF NRPS heterocyclization protein
+  product: naturalproductmech:mibig-bb581c6679
+  proposed: true
+  notes: AgbF is the AB083344.2 NRPS heterocyclization-domain protein. The complete
+    route from 2,3-DHBA to the catecholate siderophore agrobactin is left as proposed
+    because individual thioester intermediates were not resolved in the inspected
+    sources.
+  evidence:
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB083344.2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenBank AB083344.2 is the 7,390 bp Agrobacterium tumefaciens MAFF301001
+      ferric iron uptake system gene cluster and annotates agbF/BAC57933.1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+      tumefaciens AB083344.2 cluster and annotates agbF/BAC57933.1 in that cluster.
+  - reference: https://www.uniprot.org/uniprotkb/Q83VM5
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; AB083344; BAC57933.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: Unreviewed UniProtKB:Q83VM5 is Agrobacterium tumefaciens AgbF, length 548
+      aa, and cross-references EMBL AB083344 protein BAC57933.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAC57933.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: probable non-ribosomal peptide synthase
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept BAC57933.1 is the AB083344.2:complement(104..1750) AgbF coding
+      sequence from Agrobacterium tumefaciens strain MAFF301001.
+causal_graphs:
+- graph_id: agrobactin-agb-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Agrobacterium tumefaciens MAFF301001 agrobactin biosynthesis
+    graph for AB083344.2 AgbC/AgbB/AgbA 2,3-DHBA supply and proposed AgbD/AgbE/AgbF
+    NRPS assembly.
+  nodes:
+  - node_id: chorismate
+    label: chorismate(2-)
+    node_type: PRECURSOR
+    identifier: CHEBI:29748
+    grounding_status: GROUNDED
+  - node_id: agbc
+    label: AgbC
+    node_type: ENZYME
+    identifier: UniProtKB:Q8GRA0
+    grounding_status: GROUNDED
+  - node_id: isochorismate
+    label: isochorismate(2-)
+    node_type: PRECURSOR
+    identifier: CHEBI:29780
+    grounding_status: GROUNDED
+  - node_id: agbb
+    label: AgbB
+    node_type: ENZYME
+    identifier: UniProtKB:Q8GR98
+    grounding_status: GROUNDED
+  - node_id: dihydro_dhb
+    label: (2S,3S)-2,3-dihydroxy-2,3-dihydrobenzoate
+    node_type: PRECURSOR
+    identifier: CHEBI:58764
+    grounding_status: GROUNDED
+  - node_id: agba
+    label: AgbA
+    node_type: ENZYME
+    identifier: UniProtKB:Q8GR97
+    grounding_status: GROUNDED
+  - node_id: dhba
+    label: 2,3-dihydroxybenzoate
+    node_type: PRECURSOR
+    identifier: CHEBI:36654
+    grounding_status: GROUNDED
+  - node_id: agbd
+    label: AgbD
+    node_type: ENZYME
+    identifier: UniProtKB:Q83VM4
+    grounding_status: GROUNDED
+  - node_id: agbe
+    label: AgbE
+    node_type: ENZYME
+    identifier: UniProtKB:Q8GR99
+    grounding_status: GROUNDED
+  - node_id: agbf
+    label: AgbF
+    node_type: ENZYME
+    identifier: UniProtKB:Q83VM5
+    grounding_status: GROUNDED
+  - node_id: nrps_assembly
+    label: agrobactin NRPS assembly
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: agrobactin
+    label: agrobactin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-bb581c6679
+    grounding_status: GROUNDED
+  edges:
+  - subject: chorismate
+    predicate: is isomerized by
+    object: agbc
+    evidence:
+    - reference: DOI:10.1266/ggs.77.137
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: We named these genes agb, after agrobactin.
+      notes: Sonoda et al. cloned Agrobacterium tumefaciens MAFF301001 fosmid 1A3
+        and identified agbC, agbE, agbB, and agbA in an operon involved in ferric
+        iron uptake.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+        tumefaciens AB083344.2 cluster and annotates AgbC/BAC16757.2 in that cluster.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GRA0
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; AB083344; BAC16757.2; -; Genomic_DNA.
+      retrieved_on: '2026-09-28'
+      notes: Unreviewed UniProtKB:Q8GRA0 is Agrobacterium tumefaciens AgbC, length
+        342 aa, and cross-references EMBL AB083344 protein BAC16757.2.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAC16757.2
+      evidence_type: DATABASE_ASSERTION
+      snippet: probable isochorismate synthase
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept BAC16757.2 is the AB083344.2:1949..2977 AgbC coding sequence
+        from Agrobacterium tumefaciens strain MAFF301001.
+  - subject: agbc
+    predicate: forms
+    object: isochorismate
+    evidence:
+    - reference: DOI:10.1266/ggs.77.137
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: We named these genes agb, after agrobactin.
+      notes: Sonoda et al. cloned Agrobacterium tumefaciens MAFF301001 fosmid 1A3
+        and identified agbC, agbE, agbB, and agbA in an operon involved in ferric
+        iron uptake.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+        tumefaciens AB083344.2 cluster and annotates AgbC/BAC16757.2 in that cluster.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GRA0
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; AB083344; BAC16757.2; -; Genomic_DNA.
+      retrieved_on: '2026-09-28'
+      notes: Unreviewed UniProtKB:Q8GRA0 is Agrobacterium tumefaciens AgbC, length
+        342 aa, and cross-references EMBL AB083344 protein BAC16757.2.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAC16757.2
+      evidence_type: DATABASE_ASSERTION
+      snippet: probable isochorismate synthase
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept BAC16757.2 is the AB083344.2:1949..2977 AgbC coding sequence
+        from Agrobacterium tumefaciens strain MAFF301001.
+  - subject: isochorismate
+    predicate: is hydrolyzed by
+    object: agbb
+    evidence:
+    - reference: DOI:10.1266/ggs.77.137
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Mutation analysis of agbB revealed that it is essential
+      notes: Sonoda et al. linked agbB to growth and catechol-compound production
+        in iron-limiting medium in Agrobacterium tumefaciens MAFF301001.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+        tumefaciens AB083344.2 cluster and annotates AgbB/BAC16759.1 in that cluster.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GR98
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; AB083344; BAC16759.1; -; Genomic_DNA.
+      retrieved_on: '2026-09-28'
+      notes: Unreviewed UniProtKB:Q8GR98 is Agrobacterium tumefaciens AgbB, length
+        289 aa, and cross-references EMBL AB083344 protein BAC16759.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAC16759.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: probable 2,3-dihydro-2,3-dihydroxybenzoate synthetase, isochorismatase
+        protein
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept BAC16759.1 is the AB083344.2:4860..5729 AgbB coding sequence
+        from Agrobacterium tumefaciens strain MAFF301001.
+  - subject: agbb
+    predicate: forms
+    object: dihydro_dhb
+    evidence:
+    - reference: DOI:10.1266/ggs.77.137
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Mutation analysis of agbB revealed that it is essential
+      notes: Sonoda et al. linked agbB to growth and catechol-compound production
+        in iron-limiting medium in Agrobacterium tumefaciens MAFF301001.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+        tumefaciens AB083344.2 cluster and annotates AgbB/BAC16759.1 in that cluster.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GR98
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; AB083344; BAC16759.1; -; Genomic_DNA.
+      retrieved_on: '2026-09-28'
+      notes: Unreviewed UniProtKB:Q8GR98 is Agrobacterium tumefaciens AgbB, length
+        289 aa, and cross-references EMBL AB083344 protein BAC16759.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAC16759.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: probable 2,3-dihydro-2,3-dihydroxybenzoate synthetase, isochorismatase
+        protein
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept BAC16759.1 is the AB083344.2:4860..5729 AgbB coding sequence
+        from Agrobacterium tumefaciens strain MAFF301001.
+  - subject: dihydro_dhb
+    predicate: is oxidized by
+    object: agba
+    evidence:
+    - reference: DOI:10.1266/ggs.77.137
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: We named these genes agb, after agrobactin.
+      notes: Sonoda et al. cloned Agrobacterium tumefaciens MAFF301001 fosmid 1A3
+        and identified agbC, agbE, agbB, and agbA in an operon involved in ferric
+        iron uptake.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+        tumefaciens AB083344.2 cluster and annotates AgbA/BAC16760.1 in that cluster.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GR97
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; AB083344; BAC16760.1; -; Genomic_DNA.
+      retrieved_on: '2026-09-28'
+      notes: Unreviewed UniProtKB:Q8GR97 is Agrobacterium tumefaciens AgbA, length
+        251 aa, and cross-references EMBL AB083344 protein BAC16760.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAC16760.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: probable 2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase protein
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept BAC16760.1 is the AB083344.2:5743..6498 AgbA coding sequence
+        from Agrobacterium tumefaciens strain MAFF301001.
+  - subject: agba
+    predicate: forms
+    object: dhba
+    evidence:
+    - reference: DOI:10.1266/ggs.77.137
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: We named these genes agb, after agrobactin.
+      notes: Sonoda et al. cloned Agrobacterium tumefaciens MAFF301001 fosmid 1A3
+        and identified agbC, agbE, agbB, and agbA in an operon involved in ferric
+        iron uptake.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+        tumefaciens AB083344.2 cluster and annotates AgbA/BAC16760.1 in that cluster.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GR97
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; AB083344; BAC16760.1; -; Genomic_DNA.
+      retrieved_on: '2026-09-28'
+      notes: Unreviewed UniProtKB:Q8GR97 is Agrobacterium tumefaciens AgbA, length
+        251 aa, and cross-references EMBL AB083344 protein BAC16760.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAC16760.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: probable 2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase protein
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept BAC16760.1 is the AB083344.2:5743..6498 AgbA coding sequence
+        from Agrobacterium tumefaciens strain MAFF301001.
+  - subject: agbd
+    predicate: participates in
+    object: nrps_assembly
+    notes: AgbD is proposed to activate carrier-protein domains for agrobactin assembly.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB083344.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenBank AB083344.2 is the 7,390 bp Agrobacterium tumefaciens MAFF301001
+        ferric iron uptake system gene cluster and annotates agbD/BAC57934.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+        tumefaciens AB083344.2 cluster and annotates agbD/BAC57934.1 in that cluster.
+    - reference: https://www.uniprot.org/uniprotkb/Q83VM4
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; AB083344; BAC57934.1; -; Genomic_DNA.
+      retrieved_on: '2026-09-28'
+      notes: Unreviewed UniProtKB:Q83VM4 is Agrobacterium tumefaciens AgbD, length
+        241 aa, and cross-references EMBL AB083344 protein BAC57934.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAC57934.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: probable phosphopantetheinyl transferase
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept BAC57934.1 is the AB083344.2:6529..7254 AgbD coding sequence
+        from Agrobacterium tumefaciens strain MAFF301001.
+  - subject: dhba
+    predicate: participates in
+    object: nrps_assembly
+    evidence:
+    - reference: DOI:10.1266/ggs.77.137
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: We named these genes agb, after agrobactin.
+      notes: Sonoda et al. cloned Agrobacterium tumefaciens MAFF301001 fosmid 1A3
+        and identified agbC, agbE, agbB, and agbA in an operon involved in ferric
+        iron uptake.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+        tumefaciens AB083344.2 cluster and annotates agbF, agbC, agbE, agbB, agbA,
+        and agbD in that cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB083344.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenBank AB083344.2 is the 7,390 bp Agrobacterium tumefaciens MAFF301001
+        ferric iron uptake system gene cluster and annotates agbF, agbC, agbE, agbB,
+        agbA, and agbD.
+  - subject: agbe
+    predicate: participates in
+    object: nrps_assembly
+    notes: AgbE is proposed to adenylate 2,3-DHBA for carrier-protein transfer.
+    evidence:
+    - reference: DOI:10.1266/ggs.77.137
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: We named these genes agb, after agrobactin.
+      notes: Sonoda et al. cloned Agrobacterium tumefaciens MAFF301001 fosmid 1A3
+        and identified agbC, agbE, agbB, and agbA in an operon involved in ferric
+        iron uptake.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+        tumefaciens AB083344.2 cluster and annotates AgbE/BAC16758.1 in that cluster.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GR99
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; AB083344; BAC16758.1; -; Genomic_DNA.
+      retrieved_on: '2026-09-28'
+      notes: Unreviewed UniProtKB:Q8GR99 is Agrobacterium tumefaciens AgbE, length
+        541 aa, and cross-references EMBL AB083344 protein BAC16758.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAC16758.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: probable 2,3-dihydroxybenzoate-AMP ligase protein
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept BAC16758.1 is the AB083344.2:3142..4767 AgbE coding sequence
+        from Agrobacterium tumefaciens strain MAFF301001.
+  - subject: agbf
+    predicate: participates in
+    object: nrps_assembly
+    notes: AgbF is the NRPS heterocyclization-domain protein in the BGC0002474 cluster.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB083344.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenBank AB083344.2 is the 7,390 bp Agrobacterium tumefaciens MAFF301001
+        ferric iron uptake system gene cluster and annotates agbF/BAC57933.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+        tumefaciens AB083344.2 cluster and annotates agbF/BAC57933.1 in that cluster.
+    - reference: https://www.uniprot.org/uniprotkb/Q83VM5
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; AB083344; BAC57933.1; -; Genomic_DNA.
+      retrieved_on: '2026-09-28'
+      notes: Unreviewed UniProtKB:Q83VM5 is Agrobacterium tumefaciens AgbF, length
+        548 aa, and cross-references EMBL AB083344 protein BAC57933.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAC57933.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: probable non-ribosomal peptide synthase
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept BAC57933.1 is the AB083344.2:complement(104..1750) AgbF
+        coding sequence from Agrobacterium tumefaciens strain MAFF301001.
+  - subject: nrps_assembly
+    predicate: produces
+    object: agrobactin
+    evidence:
+    - reference: DOI:10.1266/ggs.77.137
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: We named these genes agb, after agrobactin.
+      notes: Sonoda et al. cloned Agrobacterium tumefaciens MAFF301001 fosmid 1A3
+        and identified agbC, agbE, agbB, and agbA in an operon involved in ferric
+        iron uptake.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
+        tumefaciens AB083344.2 cluster and annotates agbF, agbC, agbE, agbB, agbA,
+        and agbD in that cluster.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB083344.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenBank AB083344.2 is the 7,390 bp Agrobacterium tumefaciens MAFF301001
+        ferric iron uptake system gene cluster and annotates agbF, agbC, agbE, agbB,
+        agbA, and agbD.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -120,3 +666,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-28T12:04:16Z'
+  curator: codex
+  action: CURATED_BIOSYNTHETIC_GRAPH
+  changes: Added a proposed AB083344.2 AgbC/AgbB/AgbA 2,3-DHBA supply pathway and
+    AgbD/AgbE/AgbF NRPS agrobactin BIOSYNTHESIS causal graph grounded to UniProtKB:Q8GRA0,
+    Q8GR98, Q8GR97, Q83VM4, Q8GR99, and Q83VM5.
+  llm_assisted: true
