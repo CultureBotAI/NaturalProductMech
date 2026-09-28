@@ -169,6 +169,129 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0001277, BGC0002176.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9C1B2
+  enzyme_label: Tri8
+  product: CHEBI:146194
+  proposed: true
+  notes: Fusarium graminearum Tri8 is represented as the C-3 esterase proposed to
+    deacetylate 3,15-diacetyldeoxynivalenol to the exact 15-acetyldeoxynivalenol product.
+    The 3,15-diacetylated precursor accumulated in Tri8-disrupted Fusarium graminearum,
+    but it is not represented by a local exact chemical CURIE, so only the exact product
+    is recorded on this pathway step.
+  evidence:
+  - reference: DOI:10.1128/AEM.68.6.2959-2964.2002
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Tri8 encodes an esterase responsible for deacetylation at C-3
+    notes: McCormick and Alexander disrupted Tri8 in Fusarium graminearum Z3639, observed
+      loss of 15-acetyldeoxynivalenol biosynthesis with accumulation of C-3-acetylated
+      trichothecenes including 3,15-diacetyldeoxynivalenol, and confirmed Tri8 C-3
+      deacetylase activity with yeast-expression and cell-free feeding experiments.
+  - reference: https://www.uniprot.org/uniprotkb/Q9C1B2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:Q9C1B2 resolves Fusarium graminearum Tri8, names the Gibberella
+      zeae/Fusarium graminearum organism, cites DOI:10.1128/AEM.68.6.2959-2964.2002,
+      and cross-references EMBL AF359361 to GenPept AAK33086.1.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF359361.3
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: GenBank AF359361.3 is the Fusarium graminearum trichothecene biosynthetic
+      cluster; its TRI8 coding sequence maps to protein AAK33086.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAK33086.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AAK33086.1 is the AF359361.3 TRI8 coding sequence cross-referenced
+      by UniProtKB:Q9C1B2.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001277.4/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0001277.4 assigns AF359361.3 to Fusarium graminearum 15-acetyldeoxynivalenol
+      biosynthesis and cites DOI:10.1128/AEM.68.6.2959-2964.2002 as compound evidence.
+causal_graphs:
+- graph_id: 15-adon-tri8-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Fusarium graminearum graph for the Tri8-catalyzed C-3 deacetylation
+    proposed to complete 15-acetyldeoxynivalenol biosynthesis.
+  nodes:
+  - node_id: tri8
+    label: Tri8
+    node_type: ENZYME
+    identifier: UniProtKB:Q9C1B2
+    grounding_status: GROUNDED
+  - node_id: c3_acetyl_15_adon
+    label: 3,15-diacetyldeoxynivalenol
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c3_deacetylation
+    label: trichothecene C-3 deacetylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: 15_adon
+    label: 15-acetyldeoxynivalenol
+    node_type: COMPOUND
+    identifier: CHEBI:146194
+    grounding_status: GROUNDED
+  edges:
+  - subject: c3_acetyl_15_adon
+    predicate: is deacetylated by
+    object: tri8
+    evidence:
+    - reference: DOI:10.1128/AEM.68.6.2959-2964.2002
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Tri8 encodes an esterase responsible for deacetylation at C-3
+      notes: McCormick and Alexander disrupted Tri8 in Fusarium graminearum Z3639,
+        observed loss of 15-acetyldeoxynivalenol biosynthesis with accumulation of
+        C-3-acetylated trichothecenes including 3,15-diacetyldeoxynivalenol, and confirmed
+        Tri8 C-3 deacetylase activity with yeast-expression and cell-free feeding
+        experiments.
+    - reference: https://www.uniprot.org/uniprotkb/Q9C1B2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:Q9C1B2 resolves Fusarium graminearum Tri8, names the Gibberella
+        zeae/Fusarium graminearum organism, cites DOI:10.1128/AEM.68.6.2959-2964.2002,
+        and cross-references EMBL AF359361 to GenPept AAK33086.1.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF359361.3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: GenBank AF359361.3 is the Fusarium graminearum trichothecene biosynthetic
+        cluster; its TRI8 coding sequence maps to protein AAK33086.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK33086.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AAK33086.1 is the AF359361.3 TRI8 coding sequence cross-referenced
+        by UniProtKB:Q9C1B2.
+  - subject: tri8
+    predicate: catalyzes
+    object: c3_deacetylation
+    evidence:
+    - reference: DOI:10.1128/AEM.68.6.2959-2964.2002
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Tri8 encodes an esterase responsible for deacetylation at C-3
+      notes: McCormick and Alexander disrupted Tri8 in Fusarium graminearum Z3639,
+        observed loss of 15-acetyldeoxynivalenol biosynthesis with accumulation of
+        C-3-acetylated trichothecenes including 3,15-diacetyldeoxynivalenol, and confirmed
+        Tri8 C-3 deacetylase activity with yeast-expression and cell-free feeding
+        experiments.
+    - reference: https://www.uniprot.org/uniprotkb/Q9C1B2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:Q9C1B2 resolves Fusarium graminearum Tri8, names the Gibberella
+        zeae/Fusarium graminearum organism, cites DOI:10.1128/AEM.68.6.2959-2964.2002,
+        and cross-references EMBL AF359361 to GenPept AAK33086.1.
+  - subject: c3_deacetylation
+    predicate: produces
+    object: 15_adon
+    evidence:
+    - reference: DOI:10.1128/AEM.68.6.2959-2964.2002
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Tri8 encodes an esterase responsible for deacetylation at C-3
+      notes: McCormick and Alexander disrupted Tri8 in Fusarium graminearum Z3639,
+        observed loss of 15-acetyldeoxynivalenol biosynthesis with accumulation of
+        C-3-acetylated trichothecenes including 3,15-diacetyldeoxynivalenol, and confirmed
+        Tri8 C-3 deacetylase activity with yeast-expression and cell-free feeding
+        experiments.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -178,3 +301,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-28T00:58:28Z'
+  curator: codex
+  action: CURATED_BIOSYNTHETIC_GRAPH
+  changes: Added a UniProt-grounded Tri8 biosynthetic pathway step and causal graph
+    for proposed C-3 deacetylation in 15-acetyldeoxynivalenol biosynthesis.
+  llm_assisted: true

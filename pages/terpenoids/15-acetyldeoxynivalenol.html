@@ -107,7 +107,47 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>Tri8<br><span class="mono">UniProtKB:Q9C1B2</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; CHEBI:146194</td>
+  <td class="mono">DOI:10.1128/AEM.68.6.2959-2964.2002</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Fusarium graminearum Tri8 is represented as the C-3 esterase proposed to deacetylate 3,15-diacetyldeoxynivalenol to the exact 15-acetyldeoxynivalenol product. The 3,15-diacetylated precursor accumulated in Tri8-disrupted Fusarium graminearum, but it is not represented by a local exact chemical CURIE, so only the exact product is recorded on this pathway step.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial Fusarium graminearum graph for the Tri8-catalyzed C-3 deacetylation proposed to complete 15-acetyldeoxynivalenol biosynthesis.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>3,15-diacetyldeoxynivalenol</td>
+  <td>is deacetylated by</td>
+  <td>Tri8</td>
+  <td></td>
+  <td class="mono">DOI:10.1128/AEM.68.6.2959-2964.2002<br>https://www.uniprot.org/uniprotkb/Q9C1B2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF359361.3<br>https://www.ncbi.nlm.nih.gov/protein/AAK33086.1</td>
+</tr>
+<tr>
+  <td>Tri8</td>
+  <td>catalyzes</td>
+  <td>trichothecene C-3 deacetylation</td>
+  <td></td>
+  <td class="mono">DOI:10.1128/AEM.68.6.2959-2964.2002<br>https://www.uniprot.org/uniprotkb/Q9C1B2</td>
+</tr>
+<tr>
+  <td>trichothecene C-3 deacetylation</td>
+  <td>produces</td>
+  <td>15-acetyldeoxynivalenol</td>
+  <td></td>
+  <td class="mono">DOI:10.1128/AEM.68.6.2959-2964.2002</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
