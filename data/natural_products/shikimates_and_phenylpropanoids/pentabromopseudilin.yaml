@@ -191,10 +191,10 @@ biosynthetic_pathway:
   evidence:
   - reference: DOI:10.1038/nchembio.1564
     evidence_type: PRIMARY_EXPERIMENT
-    snippet: Biosynthesis of polybrominated aromatic organic compounds by marine bacteria.
-    notes: Agarwal et al. disrupted Pseudoalteromonas luteoviolacea bmp7 and reported
-      loss of the dimeric products, including pentabromopseudilin, while monomer production
-      persisted.
+    snippet: We confirmed the enzymatic synthesis of 3
+    notes: Agarwal et al. assayed purified Pseudoalteromonas luteoviolacea 2ta16 Bmp7
+      with 2,4-dibromophenol, 2,3,4-tribromopyrrole, Bmp9, Bmp10 and NADH, then confirmed
+      enzymatic synthesis of pentabromopseudilin by comparison to an authentic standard.
   - reference: UniProtKB:V4HJ73
     evidence_type: DATABASE_ASSERTION
     snippet: DR   EMBL; AUSV01000133; ESP90850.1; -; Genomic_DNA.
@@ -249,43 +249,29 @@ causal_graphs:
     evidence:
     - reference: DOI:10.1038/nchembio.1564
       evidence_type: PRIMARY_EXPERIMENT
-      snippet: Biosynthesis of polybrominated aromatic organic compounds by marine
-        bacteria.
-      notes: Agarwal et al. disrupted Pseudoalteromonas luteoviolacea bmp7 and reported
-        loss of the dimeric products, including pentabromopseudilin, while monomer
-        production persisted.
-    - reference: UniProtKB:V4HJ73
-      evidence_type: DATABASE_ASSERTION
-      snippet: DR   EMBL; AUSV01000133; ESP90850.1; -; Genomic_DNA.
-      notes: UniProtKB:V4HJ73 is reviewed Pseudoalteromonas luteoviolacea 2ta16 Bmp7/PL2TA16_01241
-        and cites DOI:10.1038/nchembio.1564.
+      snippet: heterodimerization of 4 and 6
+      notes: Agarwal et al. defined compounds 4 and 6 as 2,4-dibromophenol and 2,3,4-tribromopyrrole,
+        then used an in vitro Bmp7 reaction to heterodimerize them.
   - subject: tribromopyrrole
     predicate: participates in
     object: oxidative_heterocoupling
     evidence:
     - reference: DOI:10.1038/nchembio.1564
       evidence_type: PRIMARY_EXPERIMENT
-      snippet: Biosynthesis of polybrominated aromatic organic compounds by marine
-        bacteria.
-      notes: Agarwal et al. disrupted Pseudoalteromonas luteoviolacea bmp7 and reported
-        loss of the dimeric products, including pentabromopseudilin, while monomer
-        production persisted.
-    - reference: UniProtKB:V4HJ73
-      evidence_type: DATABASE_ASSERTION
-      snippet: DR   EMBL; AUSV01000133; ESP90850.1; -; Genomic_DNA.
-      notes: UniProtKB:V4HJ73 is reviewed Pseudoalteromonas luteoviolacea 2ta16 Bmp7/PL2TA16_01241
-        and cites DOI:10.1038/nchembio.1564.
+      snippet: heterodimerization of 4 and 6
+      notes: Agarwal et al. defined compounds 4 and 6 as 2,4-dibromophenol and 2,3,4-tribromopyrrole,
+        then used an in vitro Bmp7 reaction to heterodimerize them.
   - subject: bmp7
     predicate: catalyzes
     object: oxidative_heterocoupling
     evidence:
     - reference: DOI:10.1038/nchembio.1564
       evidence_type: PRIMARY_EXPERIMENT
-      snippet: Biosynthesis of polybrominated aromatic organic compounds by marine
-        bacteria.
-      notes: Agarwal et al. disrupted Pseudoalteromonas luteoviolacea bmp7 and reported
-        loss of the dimeric products, including pentabromopseudilin, while monomer
-        production persisted.
+      snippet: We confirmed the enzymatic synthesis of 3
+      notes: Agarwal et al. assayed purified Pseudoalteromonas luteoviolacea 2ta16
+        Bmp7 with 2,4-dibromophenol, 2,3,4-tribromopyrrole, Bmp9, Bmp10 and NADH,
+        then confirmed enzymatic synthesis of pentabromopseudilin by comparison to
+        an authentic standard.
     - reference: UniProtKB:V4HJ73
       evidence_type: DATABASE_ASSERTION
       snippet: DR   EMBL; AUSV01000133; ESP90850.1; -; Genomic_DNA.
@@ -307,11 +293,11 @@ causal_graphs:
     evidence:
     - reference: DOI:10.1038/nchembio.1564
       evidence_type: PRIMARY_EXPERIMENT
-      snippet: Biosynthesis of polybrominated aromatic organic compounds by marine
-        bacteria.
-      notes: Agarwal et al. disrupted Pseudoalteromonas luteoviolacea bmp7 and reported
-        loss of the dimeric products, including pentabromopseudilin, while monomer
-        production persisted.
+      snippet: We confirmed the enzymatic synthesis of 3
+      notes: Agarwal et al. assayed purified Pseudoalteromonas luteoviolacea 2ta16
+        Bmp7 with 2,4-dibromophenol, 2,3,4-tribromopyrrole, Bmp9, Bmp10 and NADH,
+        then confirmed enzymatic synthesis of pentabromopseudilin by comparison to
+        an authentic standard.
     - reference: mibig:BGC0000891
       evidence_type: DATABASE_ASSERTION
       notes: MIBiG BGC0000891 records pentabromopseudilin for the AUSV01000133.1:32483..43745
@@ -325,18 +311,8 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
-- timestamp: '2026-09-28T01:37:53Z'
+- timestamp: '2026-09-28T02:07:50Z'
   curator: codex
   action: CURATED_BIOSYNTHETIC_GRAPH
-  changes: Added a Bmp7 oxidative heterocoupling step and BIOSYNTHESIS causal graph
-    for pentabromopseudilin.
-- timestamp: '2026-09-28T01:46:16Z'
-  curator: codex
-  action: REFINED_BIOSYNTHETIC_GRAPH
-  changes: Connected both pentabromopseudilin Bmp7 precursor nodes to the oxidative
-    heterocoupling process.
-- timestamp: '2026-09-28T01:56:41Z'
-  curator: codex
-  action: ORDERED_CURATED_FIELDS
-  changes: Moved pentabromopseudilin biosynthetic_pathway and causal_graphs to the
-    canonical curator-owned slot before curation_history.
+  changes: Added a UniProtKB:V4HJ73 Bmp7 oxidative heterocoupling step and BIOSYNTHESIS
+    causal graph for pentabromopseudilin.
