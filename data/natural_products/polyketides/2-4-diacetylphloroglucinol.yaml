@@ -453,6 +453,258 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000280, BGC0000281.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q51725
+  enzyme_label: PhlD
+  notes: Q2-87 PhlD is represented as the upstream type III polyketide synthase required
+    for MAPG and 2,4-DAPG formation. The exact malonyl-CoA to phloroglucinol reaction
+    is biochemically supported for the Pf-5 PhlD ortholog and marked proposed here
+    because Bangera and Thomashow genetically placed Q2-87 PhlD upstream of MAPG before
+    the PhlD reaction was biochemically revised.
+  evidence:
+  - reference: DOI:10.1021/ja042340g
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: catalyzed the conversion of malonyl-CoA into phloroglucinol
+    notes: Achkar and colleagues purified Pseudomonas fluorescens Pf-5 PhlD and showed
+      the exact malonyl-CoA-to-phloroglucinol reaction later assigned by similarity
+      to the Q2-87 PhlD entry.
+  - reference: DOI:10.1128/JB.181.10.3155-3163.1999
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: four of which (phlACBD) comprise an operon
+    notes: Bangera and Thomashow showed that Q2-87 phlD is part of the phlACBD biosynthetic
+      operon required for 2,4-DAPG production. Later biochemical revision assigns
+      the exact PhlD reaction to phloroglucinol formation, so this record captures
+      a genetic role upstream of MAPG rather than an obsolete standalone MAPG synthase
+      reaction.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/U41818.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: GenBank U41818.1 is the Pseudomonas fluorescens Q2-87 2,4-diacetylphloroglucinol
+      biosynthesis locus carrying phlA, phlB, phlC, and phlD.
+  - reference: https://www.uniprot.org/uniprotkb/Q51725
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:Q51725 resolves the Pseudomonas fluorescens Q2-87 phlD protein
+      and cross-references EMBL U41818 protein AAB48106.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAB48106.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AAB48106.1 is the U41818.1 Q2-87 phlD coding sequence.
+  reaction_id: RHEA:50380
+  substrate: CHEBI:57384
+  product: CHEBI:16204
+  proposed: true
+- step_number: 2
+  enzyme_label: PhlA/PhlC/PhlB MAPG acetylation module
+  substrate: CHEBI:64344
+  product: CHEBI:78688
+  notes: The step is kept as a multi-protein Q2-87 module because the 1999 paper showed
+    PhlA, PhlC, and PhlB are collectively needed to convert MAPG to 2,4-DAPG without
+    assigning separable individual reactions.
+  evidence:
+  - reference: DOI:10.1128/JB.181.10.3155-3163.1999
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: PhlA, PhlC, and PhlB are necessary to convert MAPG to 2,4-DAPG
+    notes: Bangera and Thomashow sequenced the Pseudomonas fluorescens Q2-87 U41818
+      phlACBD operon and assigned PhlD and PhlA/PhlC/PhlB from heterologous expression
+      of individual and combined phl genes.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/U41818.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: GenBank U41818.1 is the Pseudomonas fluorescens Q2-87 2,4-diacetylphloroglucinol
+      biosynthesis locus carrying phlA, phlB, phlC, and phlD.
+  - reference: https://www.uniprot.org/uniprotkb/P79598
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:P79598 resolves the Pseudomonas fluorescens Q2-87 phlA protein
+      and cross-references EMBL U41818 protein AAB48109.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAB48109.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AAB48109.1 is the U41818.1 Q2-87 phlA coding sequence.
+  - reference: https://www.uniprot.org/uniprotkb/Q51727
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:Q51727 resolves the Pseudomonas fluorescens Q2-87 phlC protein
+      and cross-references EMBL U41818 protein AAB48108.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAB48108.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AAB48108.1 is the U41818.1 Q2-87 phlC coding sequence.
+  - reference: https://www.uniprot.org/uniprotkb/Q51726
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: UniProtKB:Q51726 resolves the Pseudomonas fluorescens Q2-87 phlB protein
+      and cross-references EMBL U41818 protein AAB48107.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAB48107.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AAB48107.1 is the U41818.1 Q2-87 phlB coding sequence.
+causal_graphs:
+- graph_id: diacetylphloroglucinol-phlacbd-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Pseudomonas fluorescens Q2-87 graph for the phlACBD biosynthetic
+    operon that converts the MAPG branch into 2,4-diacetylphloroglucinol.
+  nodes:
+  - node_id: phld
+    label: PhlD
+    node_type: ENZYME
+    identifier: UniProtKB:Q51725
+    grounding_status: GROUNDED
+  - node_id: mapg
+    label: monoacetylphloroglucinol
+    node_type: PRECURSOR
+    identifier: CHEBI:64344
+    grounding_status: GROUNDED
+  - node_id: phla
+    label: PhlA
+    node_type: ENZYME
+    identifier: UniProtKB:P79598
+    grounding_status: GROUNDED
+  - node_id: phlc
+    label: PhlC
+    node_type: ENZYME
+    identifier: UniProtKB:Q51727
+    grounding_status: GROUNDED
+  - node_id: phlb
+    label: PhlB
+    node_type: ENZYME
+    identifier: UniProtKB:Q51726
+    grounding_status: GROUNDED
+  - node_id: mapg_acetylation
+    label: MAPG to 2,4-DAPG acetylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: dapg
+    label: 2,4-diacetylphloroglucinol
+    node_type: COMPOUND
+    identifier: CHEBI:78688
+    grounding_status: GROUNDED
+  edges:
+  - subject: phld
+    predicate: is required upstream of
+    object: mapg
+    notes: Bangera and Thomashow assigned PhlD by heterologous expression in the Q2-87
+      phlACBD operon; this edge captures genetic placement, not the later-refined
+      phloroglucinol synthase reaction.
+    evidence:
+    - reference: DOI:10.1128/JB.181.10.3155-3163.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: four of which (phlACBD) comprise an operon
+      notes: Bangera and Thomashow showed that Q2-87 phlD is part of the phlACBD biosynthetic
+        operon required for 2,4-DAPG production. Later biochemical revision assigns
+        the exact PhlD reaction to phloroglucinol formation, so this record captures
+        a genetic role upstream of MAPG rather than an obsolete standalone MAPG synthase
+        reaction.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/U41818.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: GenBank U41818.1 is the Pseudomonas fluorescens Q2-87 2,4-diacetylphloroglucinol
+        biosynthesis locus carrying phlA, phlB, phlC, and phlD.
+    - reference: https://www.uniprot.org/uniprotkb/Q51725
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:Q51725 resolves the Pseudomonas fluorescens Q2-87 phlD protein
+        and cross-references EMBL U41818 protein AAB48106.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAB48106.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AAB48106.1 is the U41818.1 Q2-87 phlD coding sequence.
+  - subject: mapg
+    predicate: is converted by
+    object: mapg_acetylation
+    evidence:
+    - reference: DOI:10.1128/JB.181.10.3155-3163.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: PhlA, PhlC, and PhlB are necessary to convert MAPG to 2,4-DAPG
+      notes: Bangera and Thomashow sequenced the Pseudomonas fluorescens Q2-87 U41818
+        phlACBD operon and assigned PhlD and PhlA/PhlC/PhlB from heterologous expression
+        of individual and combined phl genes.
+  - subject: phla
+    predicate: is necessary for
+    object: mapg_acetylation
+    evidence:
+    - reference: DOI:10.1128/JB.181.10.3155-3163.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: PhlA, PhlC, and PhlB are necessary to convert MAPG to 2,4-DAPG
+      notes: Bangera and Thomashow sequenced the Pseudomonas fluorescens Q2-87 U41818
+        phlACBD operon and assigned PhlD and PhlA/PhlC/PhlB from heterologous expression
+        of individual and combined phl genes.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/U41818.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: GenBank U41818.1 is the Pseudomonas fluorescens Q2-87 2,4-diacetylphloroglucinol
+        biosynthesis locus carrying phlA, phlB, phlC, and phlD.
+    - reference: https://www.uniprot.org/uniprotkb/P79598
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:P79598 resolves the Pseudomonas fluorescens Q2-87 phlA protein
+        and cross-references EMBL U41818 protein AAB48109.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAB48109.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AAB48109.1 is the U41818.1 Q2-87 phlA coding sequence.
+  - subject: phlc
+    predicate: is necessary for
+    object: mapg_acetylation
+    evidence:
+    - reference: DOI:10.1128/JB.181.10.3155-3163.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: PhlA, PhlC, and PhlB are necessary to convert MAPG to 2,4-DAPG
+      notes: Bangera and Thomashow sequenced the Pseudomonas fluorescens Q2-87 U41818
+        phlACBD operon and assigned PhlD and PhlA/PhlC/PhlB from heterologous expression
+        of individual and combined phl genes.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/U41818.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: GenBank U41818.1 is the Pseudomonas fluorescens Q2-87 2,4-diacetylphloroglucinol
+        biosynthesis locus carrying phlA, phlB, phlC, and phlD.
+    - reference: https://www.uniprot.org/uniprotkb/Q51727
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:Q51727 resolves the Pseudomonas fluorescens Q2-87 phlC protein
+        and cross-references EMBL U41818 protein AAB48108.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAB48108.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AAB48108.1 is the U41818.1 Q2-87 phlC coding sequence.
+  - subject: phlb
+    predicate: is necessary for
+    object: mapg_acetylation
+    evidence:
+    - reference: DOI:10.1128/JB.181.10.3155-3163.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: PhlA, PhlC, and PhlB are necessary to convert MAPG to 2,4-DAPG
+      notes: Bangera and Thomashow sequenced the Pseudomonas fluorescens Q2-87 U41818
+        phlACBD operon and assigned PhlD and PhlA/PhlC/PhlB from heterologous expression
+        of individual and combined phl genes.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/U41818.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: GenBank U41818.1 is the Pseudomonas fluorescens Q2-87 2,4-diacetylphloroglucinol
+        biosynthesis locus carrying phlA, phlB, phlC, and phlD.
+    - reference: https://www.uniprot.org/uniprotkb/Q51726
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: UniProtKB:Q51726 resolves the Pseudomonas fluorescens Q2-87 phlB protein
+        and cross-references EMBL U41818 protein AAB48107.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAB48107.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AAB48107.1 is the U41818.1 Q2-87 phlB coding sequence.
+  - subject: mapg_acetylation
+    predicate: forms
+    object: dapg
+    notes: The exact acetylation sub-reactions are left unexpanded; the Q2-87 expression
+      data assign PhlA, PhlC, and PhlB collectively to conversion of MAPG to 2,4-DAPG.
+    evidence:
+    - reference: DOI:10.1128/JB.181.10.3155-3163.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: PhlA, PhlC, and PhlB are necessary to convert MAPG to 2,4-DAPG
+      notes: Bangera and Thomashow sequenced the Pseudomonas fluorescens Q2-87 U41818
+        phlACBD operon and assigned PhlD and PhlA/PhlC/PhlB from heterologous expression
+        of individual and combined phl genes.
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -466,3 +718,17 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-27T23:38:30Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the Pseudomonas fluorescens Q2-87 PhlD and PhlA/PhlC/PhlB 2,4-diacetylphloroglucinol
+    biosynthetic pathway and BIOSYNTHESIS causal graph grounded to UniProtKB:Q51725,
+    UniProtKB:P79598, UniProtKB:Q51727, and UniProtKB:Q51726.
+  llm_assisted: true
+- timestamp: '2026-09-27T23:55:33Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added exact PhlD biochemical evidence for RHEA:50380 and grounded the monoacetylphloroglucinol/MAPG
+    precursor in the 2,4-diacetylphloroglucinol PhlA/PhlC/PhlB step and BIOSYNTHESIS
+    causal graph to CHEBI:64344.
+  llm_assisted: true

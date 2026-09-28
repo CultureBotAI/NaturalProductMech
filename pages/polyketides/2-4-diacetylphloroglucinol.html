@@ -132,7 +132,75 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>PhlD<br><span class="mono">UniProtKB:Q51725</span></td>
+  <td class="mono">RHEA:50380</td>
+  <td class="mono">CHEBI:57384 &rarr; CHEBI:16204</td>
+  <td class="mono">DOI:10.1021/ja042340g</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>PhlA/PhlC/PhlB MAPG acetylation module</td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:64344 &rarr; CHEBI:78688</td>
+  <td class="mono">DOI:10.1128/JB.181.10.3155-3163.1999</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Q2-87 PhlD is represented as the upstream type III polyketide synthase required for MAPG and 2,4-DAPG formation. The exact malonyl-CoA to phloroglucinol reaction is biochemically supported for the Pf-5 PhlD ortholog and marked proposed here because Bangera and Thomashow genetically placed Q2-87 PhlD upstream of MAPG before the PhlD reaction was biochemically revised.</p><p class="sub">Step 2: The step is kept as a multi-protein Q2-87 module because the 1999 paper showed PhlA, PhlC, and PhlB are collectively needed to convert MAPG to 2,4-DAPG without assigning separable individual reactions.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">Partial Pseudomonas fluorescens Q2-87 graph for the phlACBD biosynthetic operon that converts the MAPG branch into 2,4-diacetylphloroglucinol.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PhlD</td>
+  <td>is required upstream of</td>
+  <td>monoacetylphloroglucinol</td>
+  <td>Bangera and Thomashow assigned PhlD by heterologous expression in the Q2-87 phlACBD operon; this edge captures genetic placement, not the later-refined phloroglucinol synthase reaction.</td>
+  <td class="mono">DOI:10.1128/JB.181.10.3155-3163.1999<br>https://www.ncbi.nlm.nih.gov/nuccore/U41818.1<br>https://www.uniprot.org/uniprotkb/Q51725<br>https://www.ncbi.nlm.nih.gov/protein/AAB48106.1</td>
+</tr>
+<tr>
+  <td>monoacetylphloroglucinol</td>
+  <td>is converted by</td>
+  <td>MAPG to 2,4-DAPG acetylation</td>
+  <td></td>
+  <td class="mono">DOI:10.1128/JB.181.10.3155-3163.1999</td>
+</tr>
+<tr>
+  <td>PhlA</td>
+  <td>is necessary for</td>
+  <td>MAPG to 2,4-DAPG acetylation</td>
+  <td></td>
+  <td class="mono">DOI:10.1128/JB.181.10.3155-3163.1999<br>https://www.ncbi.nlm.nih.gov/nuccore/U41818.1<br>https://www.uniprot.org/uniprotkb/P79598<br>https://www.ncbi.nlm.nih.gov/protein/AAB48109.1</td>
+</tr>
+<tr>
+  <td>PhlC</td>
+  <td>is necessary for</td>
+  <td>MAPG to 2,4-DAPG acetylation</td>
+  <td></td>
+  <td class="mono">DOI:10.1128/JB.181.10.3155-3163.1999<br>https://www.ncbi.nlm.nih.gov/nuccore/U41818.1<br>https://www.uniprot.org/uniprotkb/Q51727<br>https://www.ncbi.nlm.nih.gov/protein/AAB48108.1</td>
+</tr>
+<tr>
+  <td>PhlB</td>
+  <td>is necessary for</td>
+  <td>MAPG to 2,4-DAPG acetylation</td>
+  <td></td>
+  <td class="mono">DOI:10.1128/JB.181.10.3155-3163.1999<br>https://www.ncbi.nlm.nih.gov/nuccore/U41818.1<br>https://www.uniprot.org/uniprotkb/Q51726<br>https://www.ncbi.nlm.nih.gov/protein/AAB48107.1</td>
+</tr>
+<tr>
+  <td>MAPG to 2,4-DAPG acetylation</td>
+  <td>forms</td>
+  <td>2,4-diacetylphloroglucinol</td>
+  <td>The exact acetylation sub-reactions are left unexpanded; the Q2-87 expression data assign PhlA, PhlC, and PhlB collectively to conversion of MAPG to 2,4-DAPG.</td>
+  <td class="mono">DOI:10.1128/JB.181.10.3155-3163.1999</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
