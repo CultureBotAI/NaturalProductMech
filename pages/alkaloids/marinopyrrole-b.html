@@ -89,7 +89,82 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>Mpy16<br><span class="mono">UniProtKB:J7H1A1</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1021/ja305670f</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>Mpy1/Mpy10/Mpy11 oxidative homocoupling module</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1021/ja305670f</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: This curates Mpy16 as the proposed initiating pyrrolyl-carrier-protein dichlorinase in the Streptomyces sp. CNQ-418 mpy pathway to marinopyrroles; the exact carrier-protein-tethered substrate and product remain ungrounded.</p><p class="sub">Step 2: This curates the genetically supported Mpy1/Mpy10/Mpy11 module that couples monodeoxypyoluteorin toward dimeric marinopyrroles 1-4, including marinopyrrole B; enzyme_id is intentionally omitted because the step requires two FADH2-dependent halogenases plus the pathway-specific flavin reductase rather than one protein accession.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">9 nodes, 7 edges</span></h2>
+<p class="sub">Partial Streptomyces sp. CNQ-418 marinopyrrole B biosynthesis graph for Mpy16 pyrrole dichlorination and Mpy1/Mpy10/Mpy11-dependent N,C-bipyrrole homocoupling.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>pyrrolyl-S-carrier protein</td>
+  <td>is proposed to be dichlorinated by</td>
+  <td>Mpy16 FADH2-dependent halogenase</td>
+  <td>The mpy16 deletion supports a required early role, while the pyrrolyl-carrier-protein dichlorination assignment is by homology to the characterized pyoluteorin PltA.</td>
+  <td class="mono">DOI:10.1021/ja305670f<br>https://www.uniprot.org/uniprotkb/J7H1A1<br>https://www.ncbi.nlm.nih.gov/protein/AFP87533.1</td>
+</tr>
+<tr>
+  <td>Mpy16 FADH2-dependent halogenase</td>
+  <td>forms</td>
+  <td>dichloropyrrolyl-S-carrier protein</td>
+  <td>The exact carrier-protein-bound product is left ungrounded because Yamanaka et al. proposed this initiating step from genetics and PltA homology.</td>
+  <td class="mono">DOI:10.1021/ja305670f<br>https://www.uniprot.org/uniprotkb/J7H1A1<br>https://www.ncbi.nlm.nih.gov/protein/AFP87533.1</td>
+</tr>
+<tr>
+  <td>monodeoxypyoluteorin</td>
+  <td>is coupled during</td>
+  <td>N,C-bipyrrole homocoupling</td>
+  <td>Chemical complementation of an mpy6 deletion mutant with monodeoxypyoluteorin restored dimeric marinopyrrole 1-4 synthesis.</td>
+  <td class="mono">DOI:10.1021/ja305670f</td>
+</tr>
+<tr>
+  <td>Mpy1 flavin reductase</td>
+  <td>supplies reduced flavin for</td>
+  <td>N,C-bipyrrole homocoupling</td>
+  <td>The mpy1 flavin reductase deletion strongly reduced dimeric marinopyrroles and accumulated monodeoxypyoluteorin.</td>
+  <td class="mono">DOI:10.1021/ja305670f</td>
+</tr>
+<tr>
+  <td>Mpy10 FADH2-dependent halogenase</td>
+  <td>is required for</td>
+  <td>N,C-bipyrrole homocoupling</td>
+  <td>Deleting mpy10 abolished dimeric marinopyrrole 1-4 production and overproduced monodeoxypyoluteorin.</td>
+  <td class="mono">DOI:10.1021/ja305670f</td>
+</tr>
+<tr>
+  <td>Mpy11 FADH2-dependent halogenase</td>
+  <td>is required for</td>
+  <td>N,C-bipyrrole homocoupling</td>
+  <td>Deleting mpy11 abolished dimeric marinopyrrole 1-4 production and overproduced monodeoxypyoluteorin.</td>
+  <td class="mono">DOI:10.1021/ja305670f</td>
+</tr>
+<tr>
+  <td>N,C-bipyrrole homocoupling</td>
+  <td>forms</td>
+  <td>(-)-marinopyrrole B</td>
+  <td>The reconstituted mpy cluster produced the dimeric marinopyrrole 1-4 product set that includes marinopyrrole B; this partial graph does not resolve the bromination that distinguishes B from sibling dimeric marinopyrroles.</td>
+  <td class="mono">DOI:10.1021/ja305670f</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
