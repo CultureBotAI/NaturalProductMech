@@ -272,13 +272,12 @@ biosynthetic_pathway:
       from Agrobacterium tumefaciens strain MAFF301001.
 - step_number: 6
   enzyme_id: UniProtKB:Q83VM5
-  enzyme_label: AgbF NRPS heterocyclization protein
-  product: naturalproductmech:mibig-bb581c6679
+  enzyme_label: AgbF probable non-ribosomal peptide synthase
   proposed: true
-  notes: AgbF is the AB083344.2 NRPS heterocyclization-domain protein. The complete
-    route from 2,3-DHBA to the catecholate siderophore agrobactin is left as proposed
-    because individual thioester intermediates were not resolved in the inspected
-    sources.
+  notes: AgbF is the AB083344.2 probable NRPS candidate. The complete route from 2,3-DHBA
+    to the catecholate siderophore agrobactin is left unresolved because individual
+    thioester intermediates and the terminal product-forming steps were not resolved
+    in the inspected sources.
   evidence:
   - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB083344.2
     evidence_type: DATABASE_ASSERTION
@@ -306,8 +305,8 @@ causal_graphs:
 - graph_id: agrobactin-agb-biosynthesis
   scope: BIOSYNTHESIS
   description: Partial Agrobacterium tumefaciens MAFF301001 agrobactin biosynthesis
-    graph for AB083344.2 AgbC/AgbB/AgbA 2,3-DHBA supply and proposed AgbD/AgbE/AgbF
-    NRPS assembly.
+    graph for proposed AB083344.2 AgbC/AgbB/AgbA 2,3-DHBA supply and proposed AgbD/AgbE/AgbF
+    NRPS assembly contributions.
   nodes:
   - node_id: chorismate
     label: chorismate(2-)
@@ -363,14 +362,9 @@ causal_graphs:
     label: agrobactin NRPS assembly
     node_type: PROCESS
     grounding_status: UNGROUNDED
-  - node_id: agrobactin
-    label: agrobactin
-    node_type: COMPOUND
-    identifier: naturalproductmech:mibig-bb581c6679
-    grounding_status: GROUNDED
   edges:
   - subject: chorismate
-    predicate: is isomerized by
+    predicate: is proposed to be isomerized by
     object: agbc
     evidence:
     - reference: DOI:10.1266/ggs.77.137
@@ -396,8 +390,10 @@ causal_graphs:
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BAC16757.2 is the AB083344.2:1949..2977 AgbC coding sequence
         from Agrobacterium tumefaciens strain MAFF301001.
+    notes: AgbC is proposed to isomerize chorismate from AB083344.2, MIBiG, UniProtKB/ARBA,
+      and GenPept annotations rather than a purified AgbC assay.
   - subject: agbc
-    predicate: forms
+    predicate: is proposed to form
     object: isochorismate
     evidence:
     - reference: DOI:10.1266/ggs.77.137
@@ -423,8 +419,10 @@ causal_graphs:
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BAC16757.2 is the AB083344.2:1949..2977 AgbC coding sequence
         from Agrobacterium tumefaciens strain MAFF301001.
+    notes: Isochorismate formation by AgbC is proposed from AB083344.2, MIBiG, UniProtKB/ARBA,
+      and GenPept annotations rather than a purified AgbC assay.
   - subject: isochorismate
-    predicate: is hydrolyzed by
+    predicate: is proposed to be hydrolyzed by
     object: agbb
     evidence:
     - reference: DOI:10.1266/ggs.77.137
@@ -450,8 +448,10 @@ causal_graphs:
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BAC16759.1 is the AB083344.2:4860..5729 AgbB coding sequence
         from Agrobacterium tumefaciens strain MAFF301001.
+    notes: AgbB is proposed to hydrolyze isochorismate; agbB mutagenesis showed catechol-compound
+      production requires this gene but did not isolate this reaction.
   - subject: agbb
-    predicate: forms
+    predicate: is proposed to form
     object: dihydro_dhb
     evidence:
     - reference: DOI:10.1266/ggs.77.137
@@ -477,8 +477,10 @@ causal_graphs:
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BAC16759.1 is the AB083344.2:4860..5729 AgbB coding sequence
         from Agrobacterium tumefaciens strain MAFF301001.
+    notes: Dihydro-DHB formation by AgbB is proposed; agbB mutagenesis showed catechol-compound
+      production requires this gene but did not isolate this reaction.
   - subject: dihydro_dhb
-    predicate: is oxidized by
+    predicate: is proposed to be oxidized by
     object: agba
     evidence:
     - reference: DOI:10.1266/ggs.77.137
@@ -504,8 +506,10 @@ causal_graphs:
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BAC16760.1 is the AB083344.2:5743..6498 AgbA coding sequence
         from Agrobacterium tumefaciens strain MAFF301001.
+    notes: AgbA is proposed to oxidize 2,3-dihydro-2,3-dihydroxybenzoate from AB083344.2,
+      MIBiG, UniProtKB/ARBA, and GenPept annotations rather than a purified AgbA assay.
   - subject: agba
-    predicate: forms
+    predicate: is proposed to form
     object: dhba
     evidence:
     - reference: DOI:10.1266/ggs.77.137
@@ -531,6 +535,8 @@ causal_graphs:
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BAC16760.1 is the AB083344.2:5743..6498 AgbA coding sequence
         from Agrobacterium tumefaciens strain MAFF301001.
+    notes: 2,3-DHBA formation by AgbA is proposed from AB083344.2, MIBiG, UniProtKB/ARBA,
+      and GenPept annotations rather than a purified AgbA assay.
   - subject: agbd
     predicate: participates in
     object: nrps_assembly
@@ -611,7 +617,8 @@ causal_graphs:
   - subject: agbf
     predicate: participates in
     object: nrps_assembly
-    notes: AgbF is the NRPS heterocyclization-domain protein in the BGC0002474 cluster.
+    notes: AgbF is a probable non-ribosomal peptide synthase proposed to contribute
+      to agrobactin NRPS assembly from the BGC0002474 cluster.
     evidence:
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB083344.2
       evidence_type: DATABASE_ASSERTION
@@ -635,28 +642,6 @@ causal_graphs:
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BAC57933.1 is the AB083344.2:complement(104..1750) AgbF
         coding sequence from Agrobacterium tumefaciens strain MAFF301001.
-  - subject: nrps_assembly
-    predicate: produces
-    object: agrobactin
-    evidence:
-    - reference: DOI:10.1266/ggs.77.137
-      evidence_type: PRIMARY_EXPERIMENT
-      snippet: We named these genes agb, after agrobactin.
-      notes: Sonoda et al. cloned Agrobacterium tumefaciens MAFF301001 fosmid 1A3
-        and identified agbC, agbE, agbB, and agbA in an operon involved in ferric
-        iron uptake.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-09-28'
-      notes: MIBiG BGC0002474.2 lists agrobactin as the product of the Agrobacterium
-        tumefaciens AB083344.2 cluster and annotates agbF, agbC, agbE, agbB, agbA,
-        and agbD in that cluster.
-    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB083344.2
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-09-28'
-      notes: NCBI GenBank AB083344.2 is the 7,390 bp Agrobacterium tumefaciens MAFF301001
-        ferric iron uptake system gene cluster and annotates agbF, agbC, agbE, agbB,
-        agbA, and agbD.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -672,4 +657,11 @@ curation_history:
   changes: Added a proposed AB083344.2 AgbC/AgbB/AgbA 2,3-DHBA supply pathway and
     AgbD/AgbE/AgbF NRPS agrobactin BIOSYNTHESIS causal graph grounded to UniProtKB:Q8GRA0,
     Q8GR98, Q8GR97, Q83VM4, Q8GR99, and Q83VM5.
+  llm_assisted: true
+- timestamp: '2026-09-28T12:29:42Z'
+  curator: codex
+  action: CURATION_REVIEW_FIX
+  changes: 'Addressed PR #294 review issues #295, #296, and #297 by carrying proposed
+    AgbC/AgbB/AgbA scope onto graph edges, removing the terminal agrobactin product
+    edge from the partial AgbD/AgbE/AgbF NRPS module, and narrowing the AgbF label.'
   llm_assisted: true

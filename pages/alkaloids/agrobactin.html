@@ -136,56 +136,56 @@ from a source. This is what the rest of the record exists to support.</p>
 </tr>
 <tr>
   <td>6</td>
-  <td>AgbF NRPS heterocyclization protein<br><span class="mono">UniProtKB:Q83VM5</span></td>
+  <td>AgbF probable non-ribosomal peptide synthase<br><span class="mono">UniProtKB:Q83VM5</span></td>
   <td class="mono"></td>
-  <td class="mono">ungrounded &rarr; naturalproductmech:mibig-bb581c6679</td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
   <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AB083344.2</td>
 </tr>
 </table></div>
-<p class="sub">Step 1: AgbC is the AB083344.2 isochorismate synthase candidate; the reaction class is assigned from the UniProtKB/ARBA prediction rather than from a purified AgbC assay.</p><p class="sub">Step 2: AgbB is the AB083344.2 isochorismatase candidate required for catechol-compound production under iron limitation; the exact Rhea isochorismatase reaction is a UniProtKB/ARBA prediction.</p><p class="sub">Step 3: AgbA is the AB083344.2 2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase candidate; the reaction class is assigned from the UniProtKB/ARBA prediction rather than from a purified AgbA assay.</p><p class="sub">Step 4: AgbD is the AB083344.2 phosphopantetheinyl-transferase candidate that would activate the aryl/peptidyl carrier proteins for 2,3-DHBA transfer and NRPS assembly.</p><p class="sub">Step 5: AgbE is the AB083344.2 2,3-dihydroxybenzoate-AMP ligase candidate that likely activates 2,3-DHBA for aryl-carrier-protein transfer.</p><p class="sub">Step 6: AgbF is the AB083344.2 NRPS heterocyclization-domain protein. The complete route from 2,3-DHBA to the catecholate siderophore agrobactin is left as proposed because individual thioester intermediates were not resolved in the inspected sources.</p>
-<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 11 edges</span></h2>
-<p class="sub">Partial Agrobacterium tumefaciens MAFF301001 agrobactin biosynthesis graph for AB083344.2 AgbC/AgbB/AgbA 2,3-DHBA supply and proposed AgbD/AgbE/AgbF NRPS assembly.</p><div class="scroll"><table>
+<p class="sub">Step 1: AgbC is the AB083344.2 isochorismate synthase candidate; the reaction class is assigned from the UniProtKB/ARBA prediction rather than from a purified AgbC assay.</p><p class="sub">Step 2: AgbB is the AB083344.2 isochorismatase candidate required for catechol-compound production under iron limitation; the exact Rhea isochorismatase reaction is a UniProtKB/ARBA prediction.</p><p class="sub">Step 3: AgbA is the AB083344.2 2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase candidate; the reaction class is assigned from the UniProtKB/ARBA prediction rather than from a purified AgbA assay.</p><p class="sub">Step 4: AgbD is the AB083344.2 phosphopantetheinyl-transferase candidate that would activate the aryl/peptidyl carrier proteins for 2,3-DHBA transfer and NRPS assembly.</p><p class="sub">Step 5: AgbE is the AB083344.2 2,3-dihydroxybenzoate-AMP ligase candidate that likely activates 2,3-DHBA for aryl-carrier-protein transfer.</p><p class="sub">Step 6: AgbF is the AB083344.2 probable NRPS candidate. The complete route from 2,3-DHBA to the catecholate siderophore agrobactin is left unresolved because individual thioester intermediates and the terminal product-forming steps were not resolved in the inspected sources.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 10 edges</span></h2>
+<p class="sub">Partial Agrobacterium tumefaciens MAFF301001 agrobactin biosynthesis graph for proposed AB083344.2 AgbC/AgbB/AgbA 2,3-DHBA supply and proposed AgbD/AgbE/AgbF NRPS assembly contributions.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>chorismate(2-)</td>
-  <td>is isomerized by</td>
+  <td>is proposed to be isomerized by</td>
   <td>AgbC</td>
-  <td></td>
+  <td>AgbC is proposed to isomerize chorismate from AB083344.2, MIBiG, UniProtKB/ARBA, and GenPept annotations rather than a purified AgbC assay.</td>
   <td class="mono">DOI:10.1266/ggs.77.137<br>https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html<br>https://www.uniprot.org/uniprotkb/Q8GRA0<br>https://www.ncbi.nlm.nih.gov/protein/BAC16757.2</td>
 </tr>
 <tr>
   <td>AgbC</td>
-  <td>forms</td>
+  <td>is proposed to form</td>
   <td>isochorismate(2-)</td>
-  <td></td>
+  <td>Isochorismate formation by AgbC is proposed from AB083344.2, MIBiG, UniProtKB/ARBA, and GenPept annotations rather than a purified AgbC assay.</td>
   <td class="mono">DOI:10.1266/ggs.77.137<br>https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html<br>https://www.uniprot.org/uniprotkb/Q8GRA0<br>https://www.ncbi.nlm.nih.gov/protein/BAC16757.2</td>
 </tr>
 <tr>
   <td>isochorismate(2-)</td>
-  <td>is hydrolyzed by</td>
+  <td>is proposed to be hydrolyzed by</td>
   <td>AgbB</td>
-  <td></td>
+  <td>AgbB is proposed to hydrolyze isochorismate; agbB mutagenesis showed catechol-compound production requires this gene but did not isolate this reaction.</td>
   <td class="mono">DOI:10.1266/ggs.77.137<br>https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html<br>https://www.uniprot.org/uniprotkb/Q8GR98<br>https://www.ncbi.nlm.nih.gov/protein/BAC16759.1</td>
 </tr>
 <tr>
   <td>AgbB</td>
-  <td>forms</td>
+  <td>is proposed to form</td>
   <td>(2S,3S)-2,3-dihydroxy-2,3-dihydrobenzoate</td>
-  <td></td>
+  <td>Dihydro-DHB formation by AgbB is proposed; agbB mutagenesis showed catechol-compound production requires this gene but did not isolate this reaction.</td>
   <td class="mono">DOI:10.1266/ggs.77.137<br>https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html<br>https://www.uniprot.org/uniprotkb/Q8GR98<br>https://www.ncbi.nlm.nih.gov/protein/BAC16759.1</td>
 </tr>
 <tr>
   <td>(2S,3S)-2,3-dihydroxy-2,3-dihydrobenzoate</td>
-  <td>is oxidized by</td>
+  <td>is proposed to be oxidized by</td>
   <td>AgbA</td>
-  <td></td>
+  <td>AgbA is proposed to oxidize 2,3-dihydro-2,3-dihydroxybenzoate from AB083344.2, MIBiG, UniProtKB/ARBA, and GenPept annotations rather than a purified AgbA assay.</td>
   <td class="mono">DOI:10.1266/ggs.77.137<br>https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html<br>https://www.uniprot.org/uniprotkb/Q8GR97<br>https://www.ncbi.nlm.nih.gov/protein/BAC16760.1</td>
 </tr>
 <tr>
   <td>AgbA</td>
-  <td>forms</td>
+  <td>is proposed to form</td>
   <td>2,3-dihydroxybenzoate</td>
-  <td></td>
+  <td>2,3-DHBA formation by AgbA is proposed from AB083344.2, MIBiG, UniProtKB/ARBA, and GenPept annotations rather than a purified AgbA assay.</td>
   <td class="mono">DOI:10.1266/ggs.77.137<br>https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html<br>https://www.uniprot.org/uniprotkb/Q8GR97<br>https://www.ncbi.nlm.nih.gov/protein/BAC16760.1</td>
 </tr>
 <tr>
@@ -213,15 +213,8 @@ from a source. This is what the rest of the record exists to support.</p>
   <td>AgbF</td>
   <td>participates in</td>
   <td>agrobactin NRPS assembly</td>
-  <td>AgbF is the NRPS heterocyclization-domain protein in the BGC0002474 cluster.</td>
+  <td>AgbF is a probable non-ribosomal peptide synthase proposed to contribute to agrobactin NRPS assembly from the BGC0002474 cluster.</td>
   <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AB083344.2<br>https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html<br>https://www.uniprot.org/uniprotkb/Q83VM5<br>https://www.ncbi.nlm.nih.gov/protein/BAC57933.1</td>
-</tr>
-<tr>
-  <td>agrobactin NRPS assembly</td>
-  <td>produces</td>
-  <td>agrobactin</td>
-  <td></td>
-  <td class="mono">DOI:10.1266/ggs.77.137<br>https://mibig.secondarymetabolites.org/repository/BGC0002474.2/index.html<br>https://www.ncbi.nlm.nih.gov/nuccore/AB083344.2</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
