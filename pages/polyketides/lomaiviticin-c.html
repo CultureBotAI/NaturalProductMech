@@ -69,7 +69,47 @@ same claim.</p>
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>Lom62 acyltransferase/decarboxylase with Lom63 acyl carrier protein</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1021/ol403714g</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: This curates S. pacifica DPJ-0019 Lom62/AHF72798.1 and Lom63/AHF72799.1 as an assayed acyltransferase/decarboxylase plus ACP pair that can generate the proposed propionyl-ACP starter unit for lomaiviticin biosynthesis. The exact DPJ-0019 GenPept accessions did not resolve in UniProtKB exact-accession or KF515737/lom62/lom63 searches on 2026-09-27, so enzyme_id is left unfilled and NCBI Protein records are cited as official sequence evidence.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial S. pacifica lomaiviticin C biosynthesis graph for the proposed Lom62/Lom63 propionyl-ACP starter-unit branch.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Lom62 acyltransferase/decarboxylase</td>
+  <td>catalyzes</td>
+  <td>propionyl-ACP starter-unit generation</td>
+  <td>The in vitro assay showed Lom62-dependent propionyl-Lom63 formation from methylmalonyl-CoA; this graph leaves the subsequent propionyl starter-unit transfer to the type II PKS unresolved.</td>
+  <td class="mono">DOI:10.1021/ol403714g<br>https://www.ncbi.nlm.nih.gov/protein/AHF72798.1<br>https://www.ncbi.nlm.nih.gov/protein/AHF72799.1<br>https://www.ncbi.nlm.nih.gov/nuccore/KF515737.1</td>
+</tr>
+<tr>
+  <td>Lom63 acyl carrier protein</td>
+  <td>is the preferred carrier protein for</td>
+  <td>propionyl-ACP starter-unit generation</td>
+  <td>Lom63 is represented as the preferred ACP partner because competition and single-ACP assays favored propionyl-Lom63 formation over Lom60.</td>
+  <td class="mono">DOI:10.1021/ol403714g<br>https://www.ncbi.nlm.nih.gov/protein/AHF72798.1<br>https://www.ncbi.nlm.nih.gov/protein/AHF72799.1<br>https://www.ncbi.nlm.nih.gov/nuccore/KF515737.1</td>
+</tr>
+<tr>
+  <td>propionyl-ACP starter-unit generation</td>
+  <td>contributes to</td>
+  <td>lomaiviticin C</td>
+  <td>Waldman and Balskus proposed Lom62/Lom63 propionyl-ACP formation as lomaiviticin starter-unit logic based on the lomaiviticin scaffold and cluster context; the edge is therefore narrower than a complete pathway from this starter unit to lomaiviticin C.</td>
+  <td class="mono">DOI:10.1021/ol403714g<br>https://www.ncbi.nlm.nih.gov/protein/AHF72798.1<br>https://www.ncbi.nlm.nih.gov/protein/AHF72799.1<br>https://www.ncbi.nlm.nih.gov/nuccore/KF515737.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
