@@ -141,6 +141,267 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-53c2e95a92
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: botrydial-bcbot-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Process-level Botrytis cinerea B05.10 graph for BcBOT2 cyclization
+    of farnesyl diphosphate followed by BcBOT4, BcBOT5, BcBOT3 and BcBOT1 tailoring
+    to botrydial.
+  nodes:
+  - node_id: farnesyl_diphosphate
+    label: (2E,6E)-farnesyl diphosphate
+    node_type: PRECURSOR
+    identifier: CHEBI:175763
+    grounding_status: GROUNDED
+  - node_id: bcbot2
+    label: BcBOT2
+    node_type: ENZYME
+    identifier: UniProtKB:A0A384K0Q0
+    grounding_status: GROUNDED
+  - node_id: presilphiperfolan_8beta_ol
+    label: presilphiperfolan-8beta-ol
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: bcbot4
+    label: BcBOT4
+    node_type: ENZYME
+    identifier: UniProtKB:A0A384JZV1
+    grounding_status: GROUNDED
+  - node_id: c4_hydroxylation
+    label: C-4 hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: bcbot5
+    label: BcBOT5
+    node_type: ENZYME
+    identifier: UniProtKB:A0A384JZT4
+    grounding_status: GROUNDED
+  - node_id: c4_acetylation
+    label: C-4 acetylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: bcbot3
+    label: BcBOT3
+    node_type: ENZYME
+    identifier: UniProtKB:A0A384JZZ2
+    grounding_status: GROUNDED
+  - node_id: bcbot1
+    label: BcBOT1
+    node_type: ENZYME
+    identifier: UniProtKB:A0A384JZT1
+    grounding_status: GROUNDED
+  - node_id: final_p450_tailoring
+    label: BcBOT3/BcBOT1 P450 tailoring
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: botrydial
+    label: botrydial
+    node_type: COMPOUND
+    identifier: CHEBI:3159
+    grounding_status: GROUNDED
+  edges:
+  - subject: farnesyl_diphosphate
+    predicate: is cyclized by
+    object: bcbot2
+    evidence:
+    - reference: DOI:10.1021/cb800225v
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Recombinant BcBOT2 protein converted farnesyl diphosphate to the parent
+        sesquiterpene
+      notes: Pinedo et al. inactivated BcBOT2 in Botrytis cinerea and showed that
+        the recombinant terpene synthase converts farnesyl diphosphate into the first
+        committed botrydial intermediate, presilphiperfolan-8beta-ol.
+    - reference: https://www.uniprot.org/uniprotkb/A0A384K0Q0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:A0A384K0Q0 resolves to unreviewed Botrytis cinerea strain B05.10
+        Bcbot2/BCIN_12g06390, length 399 aa, and cross-references EMBL CP009816.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ATZ56107.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept ATZ56107.1 is the CP009816.1 Bcbot2/BCIN_12g06390 coding
+        sequence from Botrytis cinerea strain B05.10.
+  - subject: bcbot2
+    predicate: forms
+    object: presilphiperfolan_8beta_ol
+    evidence:
+    - reference: DOI:10.1021/cb800225v
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Recombinant BcBOT2 protein converted farnesyl diphosphate to the parent
+        sesquiterpene
+      notes: Pinedo et al. inactivated BcBOT2 in Botrytis cinerea and showed that
+        the recombinant terpene synthase converts farnesyl diphosphate into the first
+        committed botrydial intermediate, presilphiperfolan-8beta-ol.
+    - reference: https://www.uniprot.org/uniprotkb/A0A384K0Q0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:A0A384K0Q0 resolves to unreviewed Botrytis cinerea strain B05.10
+        Bcbot2/BCIN_12g06390, length 399 aa, and cross-references EMBL CP009816.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ATZ56107.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept ATZ56107.1 is the CP009816.1 Bcbot2/BCIN_12g06390 coding
+        sequence from Botrytis cinerea strain B05.10.
+  - subject: presilphiperfolan_8beta_ol
+    predicate: is hydroxylated in
+    object: c4_hydroxylation
+    evidence:
+    - reference: DOI:10.1021/acschembio.6b00581
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: hydroxylations at the carbons C-10 and C-4
+      notes: Moraga et al. inactivated BcBOT3 and BcBOT4 by homologous recombination
+        and assigned their regio- and stereospecific hydroxylations; BcBOT4 catalyzes
+        C-4 hydroxylation of the presilphiperfolan-8beta-ol skeleton.
+    - reference: https://www.uniprot.org/uniprotkb/A0A384JZV1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:A0A384JZV1 resolves to unreviewed Botrytis cinerea strain B05.10
+        Bcbot4/BCIN_12g06370, length 526 aa, and cross-references EMBL CP009816.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ATZ56105.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept ATZ56105.1 is the CP009816.1 Bcbot4/BCIN_12g06370 coding
+        sequence from Botrytis cinerea strain B05.10.
+  - subject: bcbot4
+    predicate: catalyzes
+    object: c4_hydroxylation
+    evidence:
+    - reference: DOI:10.1021/acschembio.6b00581
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: hydroxylations at the carbons C-10 and C-4
+      notes: Moraga et al. inactivated BcBOT3 and BcBOT4 by homologous recombination
+        and assigned their regio- and stereospecific hydroxylations; BcBOT4 catalyzes
+        C-4 hydroxylation of the presilphiperfolan-8beta-ol skeleton.
+    - reference: https://www.uniprot.org/uniprotkb/A0A384JZV1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:A0A384JZV1 resolves to unreviewed Botrytis cinerea strain B05.10
+        Bcbot4/BCIN_12g06370, length 526 aa, and cross-references EMBL CP009816.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ATZ56105.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept ATZ56105.1 is the CP009816.1 Bcbot4/BCIN_12g06370 coding
+        sequence from Botrytis cinerea strain B05.10.
+  - subject: c4_hydroxylation
+    predicate: precedes
+    object: c4_acetylation
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000631.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0000631.5 records botrydial for the Botrytis cinerea B05.10
+        CP009816.1 locus and curates the biosynthetic path as BcBOT2 > BcBOT4 > BcBOT5
+        > BcBOT3|BcBOT1.
+  - subject: bcbot5
+    predicate: catalyzes
+    object: c4_acetylation
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000631.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0000631.5 records botrydial for the Botrytis cinerea B05.10
+        CP009816.1 locus and curates the biosynthetic path as BcBOT2 > BcBOT4 > BcBOT5
+        > BcBOT3|BcBOT1.
+    - reference: https://www.uniprot.org/uniprotkb/A0A384JZT4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:A0A384JZT4 resolves to unreviewed Botrytis cinerea strain B05.10
+        Bcbot5/BCIN_12g06410, length 545 aa, and cross-references EMBL CP009816.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ATZ56109.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept ATZ56109.1 is the CP009816.1 Bcbot5/BCIN_12g06410 coding
+        sequence from Botrytis cinerea strain B05.10.
+  - subject: c4_acetylation
+    predicate: precedes
+    object: final_p450_tailoring
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000631.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0000631.5 records botrydial for the Botrytis cinerea B05.10
+        CP009816.1 locus and curates the biosynthetic path as BcBOT2 > BcBOT4 > BcBOT5
+        > BcBOT3|BcBOT1.
+  - subject: bcbot3
+    predicate: catalyzes
+    object: final_p450_tailoring
+    evidence:
+    - reference: DOI:10.1021/acschembio.6b00581
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the function of the five genes
+      notes: Moraga et al. connected BcBOT3 and BcBOT4 to biosynthetic intermediates
+        and established the five-gene genetic and molecular basis of botrydial biosynthesis.
+    - reference: DOI:10.1021/cb800225v
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Five genes including BcBOT1 and BcBOT2
+      notes: Pinedo et al. identified BcBOT1 and BcBOT2 in the Botrytis cinerea botrydial
+        biosynthetic gene cluster.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000631.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0000631.5 records botrydial for the Botrytis cinerea B05.10
+        CP009816.1 locus and curates the biosynthetic path as BcBOT2 > BcBOT4 > BcBOT5
+        > BcBOT3|BcBOT1.
+    - reference: https://www.uniprot.org/uniprotkb/A0A384JZZ2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:A0A384JZZ2 resolves to unreviewed Botrytis cinerea strain B05.10
+        Bcbot3/BCIN_12g06400, length 567 aa, and cross-references EMBL CP009816.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ATZ56108.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept ATZ56108.1 is the CP009816.1 Bcbot3/BCIN_12g06400 coding
+        sequence from Botrytis cinerea strain B05.10.
+  - subject: bcbot1
+    predicate: catalyzes
+    object: final_p450_tailoring
+    evidence:
+    - reference: DOI:10.1021/acschembio.6b00581
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the function of the five genes
+      notes: Moraga et al. connected BcBOT3 and BcBOT4 to biosynthetic intermediates
+        and established the five-gene genetic and molecular basis of botrydial biosynthesis.
+    - reference: DOI:10.1021/cb800225v
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Five genes including BcBOT1 and BcBOT2
+      notes: Pinedo et al. identified BcBOT1 and BcBOT2 in the Botrytis cinerea botrydial
+        biosynthetic gene cluster.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000631.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0000631.5 records botrydial for the Botrytis cinerea B05.10
+        CP009816.1 locus and curates the biosynthetic path as BcBOT2 > BcBOT4 > BcBOT5
+        > BcBOT3|BcBOT1.
+    - reference: https://www.uniprot.org/uniprotkb/A0A384JZT1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:A0A384JZT1 resolves to unreviewed Botrytis cinerea strain B05.10
+        Bcbot1/BCIN_12g06380, length 510 aa, and cross-references EMBL CP009816.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ATZ56106.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept ATZ56106.1 is the CP009816.1 Bcbot1/BCIN_12g06380 coding
+        sequence from Botrytis cinerea strain B05.10.
+  - subject: final_p450_tailoring
+    predicate: produces
+    object: botrydial
+    evidence:
+    - reference: DOI:10.1021/acschembio.6b00581
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the function of the five genes
+      notes: Moraga et al. connected BcBOT3 and BcBOT4 to biosynthetic intermediates
+        and established the five-gene genetic and molecular basis of botrydial biosynthesis.
+    - reference: DOI:10.1021/cb800225v
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Five genes including BcBOT1 and BcBOT2
+      notes: Pinedo et al. identified BcBOT1 and BcBOT2 in the Botrytis cinerea botrydial
+        biosynthetic gene cluster.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000631.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0000631.5 records botrydial for the Botrytis cinerea B05.10
+        CP009816.1 locus and curates the biosynthetic path as BcBOT2 > BcBOT4 > BcBOT5
+        > BcBOT3|BcBOT1.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -150,3 +411,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-28T10:39:10Z'
+  curator: codex
+  action: CURATED_BIOSYNTHETIC_GRAPH
+  changes: Added a Botrytis cinerea B05.10 BcBOT BIOSYNTHESIS causal graph for botrydial,
+    grounding BcBOT1/BcBOT2/BcBOT3/BcBOT4/BcBOT5 to their exact strain B05.10 UniProtKB
+    entries.
+  llm_assisted: true
