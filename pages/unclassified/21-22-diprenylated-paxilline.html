@@ -79,7 +79,47 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>PaxD<br><span class="mono">UniProtKB:Q9C451</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:34907 &rarr; naturalproductmech:mibig-8e09316737</td>
+  <td class="mono">DOI:10.1007/s00253-013-4834-9</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: PaxD is represented as the terminal P. paxilli prenyltransferase that accepts paxilline and dimethylallyl diphosphate and catalyzes successive prenylations to the exact 21,22-diprenylated paxilline product.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial Penicillium paxilli graph for the PaxD-catalyzed terminal prenylations that convert paxilline to 21,22-diprenylated paxilline.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>paxilline</td>
+  <td>is prenylated by</td>
+  <td>PaxD successive prenylation</td>
+  <td></td>
+  <td class="mono">DOI:10.1007/s00253-013-4834-9</td>
+</tr>
+<tr>
+  <td>PaxD</td>
+  <td>catalyzes</td>
+  <td>PaxD successive prenylation</td>
+  <td></td>
+  <td class="mono">DOI:10.1007/s00253-013-4834-9<br>https://www.uniprot.org/uniprotkb/Q9C451<br>https://www.ncbi.nlm.nih.gov/nuccore/HM171111.1<br>https://www.ncbi.nlm.nih.gov/protein/AAK11526.2</td>
+</tr>
+<tr>
+  <td>PaxD successive prenylation</td>
+  <td>produces</td>
+  <td>21,22-diprenylated paxilline</td>
+  <td></td>
+  <td class="mono">DOI:10.1007/s00253-013-4834-9</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
