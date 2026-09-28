@@ -239,17 +239,18 @@ causal_graphs:
   - subject: dihydro_endophenazine_a
     predicate: is an immediate reduced precursor of
     object: endophenazine_a
-    notes: The inspected 2009 paper directly assigns PpzP to the reduced Rhea product;
-      this graph therefore stops short of asserting the unassigned final oxidation
-      as an enzymatic step.
+    notes: Saleh et al. assigned the PpzP assay product after sodium-persulfate oxidation
+      to endophenazine A; this graph keeps the reduced Rhea product as the enzymatic
+      product and stops short of asserting the final oxidation as an assigned enzymatic
+      step.
     evidence:
     - reference: DOI:10.1074/jbc.M901312200
       evidence_type: PRIMARY_EXPERIMENT
-      snippet: identified as a 5,10-dihydrophenazine 1-carboxylate dimethylallyltransferase
-      notes: Saleh et al. identified Streptomyces anulatus 9663 ppzP in the endophenazine
-        cluster, showed that ppzP inactivation abolished prenylated phenazine formation,
-        and biochemically assigned purified PpzP to dimethylallyl transfer from 5,10-dihydrophenazine
-        1-carboxylate.
+      snippet: identified as endophenazine A by LC-MS analysis
+      notes: Saleh et al. incubated chemically generated 5,10-dihydrophenazine 1-carboxylate
+        with purified PpzP and DMAPP; because the reduced phenazine products oxidized
+        rapidly, the reaction mix was oxidized with sodium persulfate before LC-MS
+        identified oxidized endophenazine A against an authentic standard.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -259,7 +260,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
-- timestamp: '2026-09-28T14:03:17Z'
+- timestamp: '2026-09-28T14:15:23Z'
   curator: codex
   action: RECORD_CURATED
   changes: Added the reviewed UniProtKB:C4PWA1 Streptomyces anulatus PpzP dimethylallyltransferase
