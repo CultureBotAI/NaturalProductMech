@@ -130,6 +130,218 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000604, BGC0001155.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: PbtH
+  proposed: true
+  notes: PbtH is recorded as the GE2270 maturation protein required for C-terminal
+    amide formation. The exact substrate and product of the PbtH-associated step remain
+    ungrounded, and no exact UniProtKB accession resolved for the AGY49594.1 Planobispora
+    rosea protein.
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2013.07.005
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea
+      ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation
+      and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.
+    snippet: PbtH and PbtG1 are involved in C-terminal amide and oxazoline formation,
+      respectively
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis
+      cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155 locus
+      interval.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AGY49594.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AGY49594.1 is the KF366381.2 pbtH coding sequence. Exact UniProtKB
+      searches for AGY49594 and pbtH Planobispora rosea returned no Planobispora PbtH
+      entry, so this protein is left without an organism-specific UniProtKB identifier.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis
+      and records knockout, enzymatic assay, and heterologous expression support for
+      the locus.
+- step_number: 2
+  enzyme_label: PbtG1
+  proposed: true
+  notes: PbtG1 is recorded as the GE2270 maturation cyclodehydratase required for
+    C-terminal oxazoline formation. The exact substrate and product of the PbtG1-associated
+    step remain ungrounded, and no UniProtKB accession tied to the AGY49581.1 Planobispora
+    rosea pbtG1 coding sequence resolved.
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2013.07.005
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea
+      ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation
+      and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.
+    snippet: PbtH and PbtG1 are involved in C-terminal amide and oxazoline formation,
+      respectively
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis
+      cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155 locus
+      interval.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AGY49581.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AGY49581.1 is the KF366381.2 pbtG1 cyclodehydratase coding
+      sequence. UniProtKB:U5Q0H1 has the same 607 aa sequence under EMBL BOOI01000040
+      and locus Pro02_44440, but is not used as exact GE2270 PbtG1 grounding because
+      it does not cross-reference KF366381.2 or pbtG1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-27'
+    notes: MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis
+      and records knockout, enzymatic assay, and heterologous expression support for
+      the locus.
+causal_graphs:
+- graph_id: ge2270-pbt-c-terminal-maturation
+  scope: BIOSYNTHESIS
+  description: Partial Planobispora rosea pbt-cluster graph for the PbtH- and PbtG1-associated
+    C-terminal maturation steps required before macrocyclic GE2270 production.
+  nodes:
+  - node_id: pbth
+    label: PbtH
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: pbtg1
+    label: PbtG1 cyclodehydratase
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: c_terminal_amide_formation
+    label: GE2270 C-terminal amide formation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: c_terminal_oxazoline_formation
+    label: GE2270 C-terminal oxazoline formation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: ge2270
+    label: GE2270
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-47e25f64fe
+    grounding_status: GROUNDED
+  edges:
+  - subject: pbth
+    predicate: participates in
+    object: c_terminal_amide_formation
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2013.07.005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea
+        ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation
+        and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis
+        cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155
+        locus interval.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGY49594.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AGY49594.1 is the KF366381.2 pbtH coding sequence. Exact
+        UniProtKB searches for AGY49594 and pbtH Planobispora rosea returned no Planobispora
+        PbtH entry, so this protein is left without an organism-specific UniProtKB
+        identifier.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis
+        and records knockout, enzymatic assay, and heterologous expression support
+        for the locus.
+  - subject: pbtg1
+    predicate: participates in
+    object: c_terminal_oxazoline_formation
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2013.07.005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea
+        ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation
+        and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis
+        cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155
+        locus interval.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGY49581.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AGY49581.1 is the KF366381.2 pbtG1 cyclodehydratase coding
+        sequence. UniProtKB:U5Q0H1 has the same 607 aa sequence under EMBL BOOI01000040
+        and locus Pro02_44440, but is not used as exact GE2270 PbtG1 grounding because
+        it does not cross-reference KF366381.2 or pbtG1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis
+        and records knockout, enzymatic assay, and heterologous expression support
+        for the locus.
+  - subject: c_terminal_amide_formation
+    predicate: enables maturation of
+    object: ge2270
+    notes: pbtH deletion accumulated linear precursors in which the pyridine-generated
+      macrocycle failed to form.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2013.07.005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea
+        ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation
+        and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis
+        cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155
+        locus interval.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGY49594.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AGY49594.1 is the KF366381.2 pbtH coding sequence. Exact
+        UniProtKB searches for AGY49594 and pbtH Planobispora rosea returned no Planobispora
+        PbtH entry, so this protein is left without an organism-specific UniProtKB
+        identifier.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis
+        and records knockout, enzymatic assay, and heterologous expression support
+        for the locus.
+  - subject: c_terminal_oxazoline_formation
+    predicate: enables maturation of
+    object: ge2270
+    notes: pbtG1 deletion accumulated linear precursors in which the pyridine-generated
+      macrocycle failed to form.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2013.07.005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tocchetti et al. expressed the Planobispora rosea pbt cluster in Nonomuraea
+        ATCC39727 and used targeted deletions to place PbtH in C-terminal amide formation
+        and PbtG1 in C-terminal oxazoline formation during GE2270 maturation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: GenBank KF366381.2 is the Planobispora rosea ATCC 53733 GE2270 biosynthesis
+        cluster and places pbtH and pbtG1 inside the 4201..25722 MIBiG BGC0001155
+        locus interval.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGY49581.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: NCBI GenPept AGY49581.1 is the KF366381.2 pbtG1 cyclodehydratase coding
+        sequence. UniProtKB:U5Q0H1 has the same 607 aa sequence under EMBL BOOI01000040
+        and locus Pro02_44440, but is not used as exact GE2270 PbtG1 grounding because
+        it does not cross-reference KF366381.2 or pbtG1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-27'
+      notes: MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis
+        and records knockout, enzymatic assay, and heterologous expression support
+        for the locus.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -139,3 +351,20 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-28T02:36:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a Planobispora rosea GE2270 biosynthesis pathway and causal graph
+    for PbtH-associated C-terminal amide formation and PbtG1-associated C-terminal
+    oxazoline formation. Left both proteins without UniProtKB identifiers after exact
+    UniProtKB searches for AGY49594, pbtH, AGY49581, and pbtG1 returned no organism-specific
+    Planobispora entries.
+  llm_assisted: true
+- timestamp: '2026-09-28T02:49:04Z'
+  curator: codex
+  action: REVIEW_FIX
+  changes: 'Addressed issue #273 by documenting that UniProtKB:U5Q0H1 has the same
+    protein sequence as AGY49581.1 but was rejected as exact GE2270 PbtG1 grounding
+    because it is attached to BOOI01000040 and Pro02_44440 rather than KF366381.2
+    and pbtG1.'
+  llm_assisted: true
