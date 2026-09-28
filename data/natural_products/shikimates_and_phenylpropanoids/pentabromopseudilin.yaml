@@ -178,6 +178,130 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000890, BGC0000891,
     BGC0001465. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:V4HJ73
+  enzyme_label: Bmp7
+  product: naturalproductmech:mibig-005498ea51
+  notes: Bmp7 is the Pseudoalteromonas luteoviolacea 2ta16 cytochrome P450 that catalyzes
+    oxidative heterocoupling of a bromophenol and bromopyrrole to pentabromopseudilin.
+    The exact local record product is captured here; the substrates 2,4-dibromophenol
+    and 2,3,4-tribromopyrrole are left in the graph because the PathwayStep slot accepts
+    one substrate CURIE and 2,3,4-tribromopyrrole has no local curated CURIE.
+  evidence:
+  - reference: DOI:10.1038/nchembio.1564
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: We confirmed the enzymatic synthesis of 3
+    notes: Agarwal et al. assayed purified Pseudoalteromonas luteoviolacea 2ta16 Bmp7
+      with 2,4-dibromophenol, 2,3,4-tribromopyrrole, Bmp9, Bmp10 and NADH, then confirmed
+      enzymatic synthesis of pentabromopseudilin by comparison to an authentic standard.
+  - reference: UniProtKB:V4HJ73
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; AUSV01000133; ESP90850.1; -; Genomic_DNA.
+    notes: UniProtKB:V4HJ73 is reviewed Pseudoalteromonas luteoviolacea 2ta16 Bmp7/PL2TA16_01241
+      and cites DOI:10.1038/nchembio.1564.
+  - reference: NCBI_Nuccore:AUSV01000133.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: /locus_tag="PL2TA16_01241"
+    notes: GenBank places cytochrome P450 GenPept ESP90850.1 at AUSV01000133.1:42270..43745
+      inside the BGC0000891 interval.
+  - reference: NCBI_Protein:ESP90850.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: /product="cytochrome P450"
+    notes: ESP90850.1 is encoded by PL2TA16_01241, the GenBank CDS that maps to UniProtKB:V4HJ73.
+  - reference: mibig:BGC0000891
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0000891 records pentabromopseudilin for the AUSV01000133.1:32483..43745
+      locus.
+causal_graphs:
+- graph_id: pentabromopseudilin-bmp7-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Bmp7 catalyzes oxidative heterocoupling of 2,4-dibromophenol and 2,3,4-tribromopyrrole
+    to pentabromopseudilin.
+  nodes:
+  - node_id: dibromophenol
+    label: 2,4-dibromophenol
+    node_type: PRECURSOR
+    identifier: CHEBI:34238
+    grounding_status: GROUNDED
+  - node_id: tribromopyrrole
+    label: 2,3,4-tribromopyrrole
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: bmp7
+    label: Bmp7
+    node_type: ENZYME
+    identifier: UniProtKB:V4HJ73
+    grounding_status: GROUNDED
+  - node_id: oxidative_heterocoupling
+    label: bromophenol-bromopyrrole oxidative heterocoupling
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pentabromopseudilin
+    label: pentabromopseudilin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-005498ea51
+    grounding_status: GROUNDED
+  edges:
+  - subject: dibromophenol
+    predicate: participates in
+    object: oxidative_heterocoupling
+    evidence:
+    - reference: DOI:10.1038/nchembio.1564
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: heterodimerization of 4 and 6
+      notes: Agarwal et al. defined compounds 4 and 6 as 2,4-dibromophenol and 2,3,4-tribromopyrrole,
+        then used an in vitro Bmp7 reaction to heterodimerize them.
+  - subject: tribromopyrrole
+    predicate: participates in
+    object: oxidative_heterocoupling
+    evidence:
+    - reference: DOI:10.1038/nchembio.1564
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: heterodimerization of 4 and 6
+      notes: Agarwal et al. defined compounds 4 and 6 as 2,4-dibromophenol and 2,3,4-tribromopyrrole,
+        then used an in vitro Bmp7 reaction to heterodimerize them.
+  - subject: bmp7
+    predicate: catalyzes
+    object: oxidative_heterocoupling
+    evidence:
+    - reference: DOI:10.1038/nchembio.1564
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: We confirmed the enzymatic synthesis of 3
+      notes: Agarwal et al. assayed purified Pseudoalteromonas luteoviolacea 2ta16
+        Bmp7 with 2,4-dibromophenol, 2,3,4-tribromopyrrole, Bmp9, Bmp10 and NADH,
+        then confirmed enzymatic synthesis of pentabromopseudilin by comparison to
+        an authentic standard.
+    - reference: UniProtKB:V4HJ73
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; AUSV01000133; ESP90850.1; -; Genomic_DNA.
+      notes: UniProtKB:V4HJ73 is reviewed Pseudoalteromonas luteoviolacea 2ta16 Bmp7/PL2TA16_01241
+        and cites DOI:10.1038/nchembio.1564.
+    - reference: NCBI_Nuccore:AUSV01000133.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /locus_tag="PL2TA16_01241"
+      notes: GenBank places cytochrome P450 GenPept ESP90850.1 at AUSV01000133.1:42270..43745
+        inside the BGC0000891 interval.
+    - reference: NCBI_Protein:ESP90850.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /product="cytochrome P450"
+      notes: ESP90850.1 is encoded by PL2TA16_01241, the GenBank CDS that maps to
+        UniProtKB:V4HJ73.
+  - subject: oxidative_heterocoupling
+    predicate: produces
+    object: pentabromopseudilin
+    evidence:
+    - reference: DOI:10.1038/nchembio.1564
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: We confirmed the enzymatic synthesis of 3
+      notes: Agarwal et al. assayed purified Pseudoalteromonas luteoviolacea 2ta16
+        Bmp7 with 2,4-dibromophenol, 2,3,4-tribromopyrrole, Bmp9, Bmp10 and NADH,
+        then confirmed enzymatic synthesis of pentabromopseudilin by comparison to
+        an authentic standard.
+    - reference: mibig:BGC0000891
+      evidence_type: DATABASE_ASSERTION
+      notes: MIBiG BGC0000891 records pentabromopseudilin for the AUSV01000133.1:32483..43745
+        locus.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -187,3 +311,8 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-28T02:07:50Z'
+  curator: codex
+  action: CURATED_BIOSYNTHETIC_GRAPH
+  changes: Added a UniProtKB:V4HJ73 Bmp7 oxidative heterocoupling step and BIOSYNTHESIS
+    causal graph for pentabromopseudilin.

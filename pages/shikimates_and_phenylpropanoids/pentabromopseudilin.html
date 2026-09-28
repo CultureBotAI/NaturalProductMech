@@ -110,7 +110,54 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>Bmp7<br><span class="mono">UniProtKB:V4HJ73</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; naturalproductmech:mibig-005498ea51</td>
+  <td class="mono">DOI:10.1038/nchembio.1564</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Bmp7 is the Pseudoalteromonas luteoviolacea 2ta16 cytochrome P450 that catalyzes oxidative heterocoupling of a bromophenol and bromopyrrole to pentabromopseudilin. The exact local record product is captured here; the substrates 2,4-dibromophenol and 2,3,4-tribromopyrrole are left in the graph because the PathwayStep slot accepts one substrate CURIE and 2,3,4-tribromopyrrole has no local curated CURIE.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Bmp7 catalyzes oxidative heterocoupling of 2,4-dibromophenol and 2,3,4-tribromopyrrole to pentabromopseudilin.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2,4-dibromophenol</td>
+  <td>participates in</td>
+  <td>bromophenol-bromopyrrole oxidative heterocoupling</td>
+  <td></td>
+  <td class="mono">DOI:10.1038/nchembio.1564</td>
+</tr>
+<tr>
+  <td>2,3,4-tribromopyrrole</td>
+  <td>participates in</td>
+  <td>bromophenol-bromopyrrole oxidative heterocoupling</td>
+  <td></td>
+  <td class="mono">DOI:10.1038/nchembio.1564</td>
+</tr>
+<tr>
+  <td>Bmp7</td>
+  <td>catalyzes</td>
+  <td>bromophenol-bromopyrrole oxidative heterocoupling</td>
+  <td></td>
+  <td class="mono">DOI:10.1038/nchembio.1564<br>UniProtKB:V4HJ73<br>NCBI_Nuccore:AUSV01000133.1<br>NCBI_Protein:ESP90850.1</td>
+</tr>
+<tr>
+  <td>bromophenol-bromopyrrole oxidative heterocoupling</td>
+  <td>produces</td>
+  <td>pentabromopseudilin</td>
+  <td></td>
+  <td class="mono">DOI:10.1038/nchembio.1564<br>mibig:BGC0000891</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">1</span></h2>
