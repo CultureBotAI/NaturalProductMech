@@ -493,6 +493,300 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-917d3d6a76
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A8W2Z0
+  enzyme_label: PrnA
+  substrate: CHEBI:16828
+  product: CHEBI:47356
+  proposed: true
+  notes: GenBank EU188755.1 annotates Pseudomonas chlororaphis PA23 PrnA as the tryptophan
+    chlorinating enzyme; marked proposed because the exact PA23 CDS assignment is
+    a sequence annotation rather than a direct PA23 enzyme assay.
+  evidence:
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: catalyzes the chlorination of tryptophan to form 7-chlorotryptophan
+    retrieved_on: '2026-09-28'
+    notes: The EU188755.1 GenBank CDS note assigns prnA/ABW69174.1 to the first pyrrolnitrin
+      biosynthetic chlorination step.
+  - reference: https://www.uniprot.org/uniprotkb/A8W2Z0
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; EU188755; ABW69174.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:A8W2Z0 resolves the unreviewed Pseudomonas chlororaphis PrnA
+      protein and cross-references EMBL EU188755 protein ABW69174.1.
+- step_number: 2
+  enzyme_id: UniProtKB:A8W2Z1
+  enzyme_label: PrnB
+  substrate: CHEBI:47356
+  product: CHEBI:85785
+  proposed: true
+  notes: GenBank EU188755.1 annotates Pseudomonas chlororaphis PA23 PrnB as the enzyme
+    converting 7-chlorotryptophan to monodechloroaminopyrrolnitrin; marked proposed
+    because the exact PA23 CDS assignment is a sequence annotation rather than a direct
+    PA23 enzyme assay.
+  evidence:
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: catalyzes the conversion of 7-chlorotryptophan to monodechloroaminopyrrolnitrin
+    retrieved_on: '2026-09-28'
+    notes: The EU188755.1 GenBank CDS note assigns prnB/ABW69175.1 to the second pyrrolnitrin
+      biosynthetic step.
+  - reference: https://www.uniprot.org/uniprotkb/A8W2Z1
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; EU188755; ABW69175.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:A8W2Z1 resolves the unreviewed Pseudomonas chlororaphis PrnB
+      protein and cross-references EMBL EU188755 protein ABW69175.1.
+- step_number: 3
+  enzyme_id: UniProtKB:A8W2Z2
+  enzyme_label: PrnC
+  substrate: CHEBI:85785
+  product: CHEBI:85786
+  proposed: true
+  notes: GenBank EU188755.1 annotates Pseudomonas chlororaphis PA23 PrnC as the aminopyrrolnitrin-forming
+    halogenase; marked proposed because the exact PA23 CDS assignment is a sequence
+    annotation rather than a direct PA23 enzyme assay.
+  evidence:
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: catalyzes chlorination of monodechloroaminopyrrolnitrin to form aminopyrrolnitrin
+    retrieved_on: '2026-09-28'
+    notes: The EU188755.1 GenBank CDS note assigns prnC/ABW69176.1 to the third pyrrolnitrin
+      biosynthetic step.
+  - reference: https://www.uniprot.org/uniprotkb/A8W2Z2
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; EU188755; ABW69176.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:A8W2Z2 resolves the unreviewed Pseudomonas chlororaphis PrnC
+      protein and cross-references EMBL EU188755 protein ABW69176.1.
+- step_number: 4
+  enzyme_id: UniProtKB:A8W2Z3
+  enzyme_label: PrnD
+  substrate: CHEBI:85786
+  product: CHEBI:32079
+  proposed: true
+  notes: GenBank EU188755.1 annotates Pseudomonas chlororaphis PA23 PrnD as the arylamine
+    oxidase that completes pyrrolnitrin biosynthesis; marked proposed because the
+    exact PA23 CDS assignment is a sequence annotation rather than a direct PA23 enzyme
+    assay.
+  evidence:
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: catalyzes the oxidation of aminopyrrolnitrin to form pyrrolnitrin
+    retrieved_on: '2026-09-28'
+    notes: The EU188755.1 GenBank CDS note assigns prnD/ABW69177.1 to the final pyrrolnitrin
+      biosynthetic oxidation step.
+  - reference: https://www.uniprot.org/uniprotkb/A8W2Z3
+    evidence_type: DATABASE_ASSERTION
+    snippet: DR   EMBL; EU188755; ABW69177.1; -; Genomic_DNA.
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:A8W2Z3 resolves the unreviewed Pseudomonas chlororaphis PrnD
+      protein and cross-references EMBL EU188755 protein ABW69177.1.
+causal_graphs:
+- graph_id: pyrrolnitrin-prn-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Proposed Pseudomonas chlororaphis PA23 PrnA-PrnD biosynthetic route
+    from L-tryptophan to pyrrolnitrin.
+  nodes:
+  - node_id: l_tryptophan
+    label: L-tryptophan
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:16828
+  - node_id: prna
+    label: PrnA
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A8W2Z0
+  - node_id: prna_chlorination
+    label: tryptophan 7-chlorination
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: 7_chloro_l_tryptophan
+    label: 7-chloro-L-tryptophan
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:47356
+  - node_id: prnb
+    label: PrnB
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A8W2Z1
+  - node_id: monodechloroaminopyrrolnitrin_formation
+    label: monodechloroaminopyrrolnitrin formation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: monodechloroaminopyrrolnitrin
+    label: monodechloroaminopyrrolnitrin
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:85785
+  - node_id: prnc
+    label: PrnC
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A8W2Z2
+  - node_id: prnc_chlorination
+    label: aminopyrrolnitrin-forming chlorination
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: aminopyrrolnitrin
+    label: aminopyrrolnitrin
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:85786
+  - node_id: prnd
+    label: PrnD
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A8W2Z3
+  - node_id: prnd_oxidation
+    label: pyrrolnitrin-forming oxidation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pyrrolnitrin
+    label: pyrrolnitrin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:32079
+  edges:
+  - subject: l_tryptophan
+    predicate: is converted by
+    object: prna_chlorination
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: catalyzes the chlorination of tryptophan to form 7-chlorotryptophan
+      retrieved_on: '2026-09-28'
+      notes: GenBank EU188755.1 assigns prnA/ABW69174.1 to 7-chlorotryptophan formation.
+  - subject: prna
+    predicate: catalyzes
+    object: prna_chlorination
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: catalyzes the chlorination of tryptophan to form 7-chlorotryptophan
+      retrieved_on: '2026-09-28'
+      notes: GenBank EU188755.1 assigns prnA/ABW69174.1 to 7-chlorotryptophan formation.
+    - reference: https://www.uniprot.org/uniprotkb/A8W2Z0
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; EU188755; ABW69174.1; -; Genomic_DNA.
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:A8W2Z0 resolves the unreviewed Pseudomonas chlororaphis PrnA
+        protein and cross-references EMBL EU188755 protein ABW69174.1.
+  - subject: prna_chlorination
+    predicate: forms
+    object: 7_chloro_l_tryptophan
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: catalyzes the chlorination of tryptophan to form 7-chlorotryptophan
+      retrieved_on: '2026-09-28'
+      notes: GenBank EU188755.1 assigns prnA/ABW69174.1 to 7-chlorotryptophan formation.
+  - subject: 7_chloro_l_tryptophan
+    predicate: is converted by
+    object: monodechloroaminopyrrolnitrin_formation
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: catalyzes the conversion of 7-chlorotryptophan to monodechloroaminopyrrolnitrin
+      retrieved_on: '2026-09-28'
+      notes: GenBank EU188755.1 assigns prnB/ABW69175.1 to monodechloroaminopyrrolnitrin
+        formation.
+  - subject: prnb
+    predicate: catalyzes
+    object: monodechloroaminopyrrolnitrin_formation
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: catalyzes the conversion of 7-chlorotryptophan to monodechloroaminopyrrolnitrin
+      retrieved_on: '2026-09-28'
+      notes: GenBank EU188755.1 assigns prnB/ABW69175.1 to monodechloroaminopyrrolnitrin
+        formation.
+    - reference: https://www.uniprot.org/uniprotkb/A8W2Z1
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; EU188755; ABW69175.1; -; Genomic_DNA.
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:A8W2Z1 resolves the unreviewed Pseudomonas chlororaphis PrnB
+        protein and cross-references EMBL EU188755 protein ABW69175.1.
+  - subject: monodechloroaminopyrrolnitrin_formation
+    predicate: forms
+    object: monodechloroaminopyrrolnitrin
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: catalyzes the conversion of 7-chlorotryptophan to monodechloroaminopyrrolnitrin
+      retrieved_on: '2026-09-28'
+      notes: GenBank EU188755.1 assigns prnB/ABW69175.1 to monodechloroaminopyrrolnitrin
+        formation.
+  - subject: monodechloroaminopyrrolnitrin
+    predicate: is converted by
+    object: prnc_chlorination
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: catalyzes chlorination of monodechloroaminopyrrolnitrin to form aminopyrrolnitrin
+      retrieved_on: '2026-09-28'
+      notes: GenBank EU188755.1 assigns prnC/ABW69176.1 to aminopyrrolnitrin formation.
+  - subject: prnc
+    predicate: catalyzes
+    object: prnc_chlorination
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: catalyzes chlorination of monodechloroaminopyrrolnitrin to form aminopyrrolnitrin
+      retrieved_on: '2026-09-28'
+      notes: GenBank EU188755.1 assigns prnC/ABW69176.1 to aminopyrrolnitrin formation.
+    - reference: https://www.uniprot.org/uniprotkb/A8W2Z2
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; EU188755; ABW69176.1; -; Genomic_DNA.
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:A8W2Z2 resolves the unreviewed Pseudomonas chlororaphis PrnC
+        protein and cross-references EMBL EU188755 protein ABW69176.1.
+  - subject: prnc_chlorination
+    predicate: forms
+    object: aminopyrrolnitrin
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: catalyzes chlorination of monodechloroaminopyrrolnitrin to form aminopyrrolnitrin
+      retrieved_on: '2026-09-28'
+      notes: GenBank EU188755.1 assigns prnC/ABW69176.1 to aminopyrrolnitrin formation.
+  - subject: aminopyrrolnitrin
+    predicate: is converted by
+    object: prnd_oxidation
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: catalyzes the oxidation of aminopyrrolnitrin to form pyrrolnitrin
+      retrieved_on: '2026-09-28'
+      notes: GenBank EU188755.1 assigns prnD/ABW69177.1 to pyrrolnitrin formation.
+  - subject: prnd
+    predicate: catalyzes
+    object: prnd_oxidation
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: catalyzes the oxidation of aminopyrrolnitrin to form pyrrolnitrin
+      retrieved_on: '2026-09-28'
+      notes: GenBank EU188755.1 assigns prnD/ABW69177.1 to pyrrolnitrin formation.
+    - reference: https://www.uniprot.org/uniprotkb/A8W2Z3
+      evidence_type: DATABASE_ASSERTION
+      snippet: DR   EMBL; EU188755; ABW69177.1; -; Genomic_DNA.
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:A8W2Z3 resolves the unreviewed Pseudomonas chlororaphis PrnD
+        protein and cross-references EMBL EU188755 protein ABW69177.1.
+  - subject: prnd_oxidation
+    predicate: forms
+    object: pyrrolnitrin
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU188755.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: catalyzes the oxidation of aminopyrrolnitrin to form pyrrolnitrin
+      retrieved_on: '2026-09-28'
+      notes: GenBank EU188755.1 assigns prnD/ABW69177.1 to pyrrolnitrin formation.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -506,3 +800,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-28T12:56:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a proposed Pseudomonas chlororaphis PA23 PrnA-PrnD pyrrolnitrin biosynthetic
+    pathway and BIOSYNTHESIS causal graph grounded to UniProtKB:A8W2Z0, UniProtKB:A8W2Z1,
+    UniProtKB:A8W2Z2, and UniProtKB:A8W2Z3.
+  llm_assisted: true

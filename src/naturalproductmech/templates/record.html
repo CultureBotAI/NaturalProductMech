@@ -93,8 +93,8 @@ isolation report left it.</p>
 {% set numbered_pathway_steps = r.pathway_steps|selectattr("step_number")|list %}
 {% set has_step_numbers = numbered_pathway_steps|length == r.pathway_steps|length %}
 <h2>Biosynthesis <span class="tag causal">curated</span></h2>
-<p class="sub">Written by a curator against the primary literature, not derived
-from a source. This is what the rest of the record exists to support.</p>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
 <div class="scroll"><table>
 <tr><th>{{ 'Step' if has_step_numbers else '#' }}</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 {% for s in r.pathway_steps %}
