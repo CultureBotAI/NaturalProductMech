@@ -94,7 +94,47 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>PpzP 5,10-dihydrophenazine-1-carboxylate 9-dimethylallyltransferase<br><span class="mono">UniProtKB:C4PWA1</span></td>
+  <td class="mono">RHEA:41580</td>
+  <td class="mono">CHEBI:78312 &rarr; CHEBI:78313</td>
+  <td class="mono">DOI:10.1074/jbc.M901312200</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: This partial endophenazine A pathway captures the assayed Streptomyces anulatus PpzP dimethylallylation of 5,10-dihydrophenazine-1-carboxylate. Upstream PCA reduction and downstream oxidation to endophenazine A are left unexpanded because they were not assigned to exact assayed enzymes in the inspected sources.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial Streptomyces anulatus 9663 endophenazine A biosynthesis graph for the assayed PpzP dimethylallyltransferase reaction.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>5,10-dihydrophenazine-1-carboxylate</td>
+  <td>is dimethylallylated by</td>
+  <td>PpzP</td>
+  <td>This edge is the assayed Rhea reaction substrate rather than oxidized phenazine-1-carboxylic acid.</td>
+  <td class="mono">DOI:10.1074/jbc.M901312200<br>https://www.uniprot.org/uniprotkb/C4PWA1<br>RHEA:41580</td>
+</tr>
+<tr>
+  <td>PpzP</td>
+  <td>forms</td>
+  <td>5,10-dihydro-9-dimethylallylphenazine 1-carboxylate</td>
+  <td>PpzP forms the reduced 9-dimethylallyl intermediate on the route to endophenazine A.</td>
+  <td class="mono">DOI:10.1074/jbc.M901312200<br>https://www.uniprot.org/uniprotkb/C4PWA1<br>RHEA:41580</td>
+</tr>
+<tr>
+  <td>5,10-dihydro-9-dimethylallylphenazine 1-carboxylate</td>
+  <td>is an immediate reduced precursor of</td>
+  <td>endophenazine A</td>
+  <td>Saleh et al. assigned the PpzP assay product after sodium-persulfate oxidation to endophenazine A; this graph keeps the reduced Rhea product as the enzymatic product and stops short of asserting the final oxidation as an assigned enzymatic step.</td>
+  <td class="mono">DOI:10.1074/jbc.M901312200</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
