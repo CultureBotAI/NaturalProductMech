@@ -68,6 +68,236 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:J7H1A1
+  enzyme_label: Mpy16
+  proposed: true
+  notes: This curates Mpy16 as the proposed initiating pyrrolyl-carrier-protein dichlorinase
+    in the Streptomyces sp. CNQ-418 mpy pathway to marinopyrroles; the exact carrier-protein-tethered
+    substrate and product remain ungrounded.
+  evidence:
+  - reference: DOI:10.1021/ja305670f
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: the mpy16 gene deletion completely abolished production of the marinopyrroles
+    notes: Yamanaka et al. deleted mpy16 from the heterologous Streptomyces coelicolor
+      mpy expression system and used homology to pyoluteorin PltA to propose that
+      Mpy16 performs the initiating pyrrolyl-carrier-protein dichlorination.
+  - reference: https://www.uniprot.org/uniprotkb/J7H1A1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:J7H1A1 is the unreviewed 447 aa Streptomyces sp. CNQ-418 Mpy16
+      FADH2-dependent halogenase entry, gene mpy16, cross-references EMBL JX157625,
+      and links to PDB 5BUK.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFP87533.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept AFP87533.1 is the JX157625.1 mpy16 FADH2-dependent halogenase
+      coding sequence from the Streptomyces sp. CNQ-418 mpy cluster.
+- step_number: 2
+  enzyme_label: Mpy1/Mpy10/Mpy11 oxidative homocoupling module
+  proposed: true
+  notes: This curates the genetically supported Mpy1/Mpy10/Mpy11 module that couples
+    monodeoxypyoluteorin toward dimeric marinopyrroles 1-4, including marinopyrrole
+    D; enzyme_id is intentionally omitted because the step requires two FADH2-dependent
+    halogenases plus the pathway-specific flavin reductase rather than one protein
+    accession.
+  evidence:
+  - reference: DOI:10.1021/ja305670f
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: both mpy10 and mpy11 were required for monomer homocoupling
+    notes: Yamanaka et al. deleted mpy10 and mpy11 from the heterologous Streptomyces
+      coelicolor mpy expression system and found that each deletion abolished dimeric
+      marinopyrrole 1-4 formation with monodeoxypyoluteorin accumulation.
+  - reference: https://www.uniprot.org/uniprotkb/J7H188
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:J7H188 is the unreviewed 182 aa Streptomyces sp. CNQ-418 Mpy1
+      flavin reductase entry, gene mpy1, and cross-references EMBL JX157625.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFP87518.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept AFP87518.1 is the JX157625.1 mpy1 flavin reductase coding
+      sequence from the Streptomyces sp. CNQ-418 mpy cluster.
+  - reference: https://www.uniprot.org/uniprotkb/J7H556
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:J7H556 is the unreviewed 582 aa Streptomyces sp. CNQ-418 Mpy10
+      FADH2-dependent halogenase entry, gene mpy10, and cross-references EMBL JX157625.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFP87527.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept AFP87527.1 is the JX157625.1 mpy10 FADH2-dependent halogenase
+      coding sequence from the Streptomyces sp. CNQ-418 mpy cluster.
+  - reference: https://www.uniprot.org/uniprotkb/J7H197
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:J7H197 is the unreviewed 556 aa Streptomyces sp. CNQ-418 Mpy11
+      FADH2-dependent halogenase entry, gene mpy11, and cross-references EMBL JX157625.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFP87528.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept AFP87528.1 is the JX157625.1 mpy11 FADH2-dependent halogenase
+      coding sequence from the Streptomyces sp. CNQ-418 mpy cluster.
+causal_graphs:
+- graph_id: marinopyrrole-d-mpy-homocoupling
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces sp. CNQ-418 marinopyrrole D biosynthesis graph
+    for Mpy16 pyrrole dichlorination and Mpy1/Mpy10/Mpy11-dependent N,C-bipyrrole
+    homocoupling.
+  nodes:
+  - node_id: pyrrolyl_s_carrier_protein
+    label: pyrrolyl-S-carrier protein
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mpy16
+    label: Mpy16 FADH2-dependent halogenase
+    node_type: ENZYME
+    identifier: UniProtKB:J7H1A1
+    grounding_status: GROUNDED
+  - node_id: dichloropyrrolyl_s_carrier_protein
+    label: dichloropyrrolyl-S-carrier protein
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: monodeoxypyoluteorin
+    label: monodeoxypyoluteorin
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mpy1
+    label: Mpy1 flavin reductase
+    node_type: ENZYME
+    identifier: UniProtKB:J7H188
+    grounding_status: GROUNDED
+  - node_id: mpy10
+    label: Mpy10 FADH2-dependent halogenase
+    node_type: ENZYME
+    identifier: UniProtKB:J7H556
+    grounding_status: GROUNDED
+  - node_id: mpy11
+    label: Mpy11 FADH2-dependent halogenase
+    node_type: ENZYME
+    identifier: UniProtKB:J7H197
+    grounding_status: GROUNDED
+  - node_id: n_c_bipyrrole_homocoupling
+    label: N,C-bipyrrole homocoupling
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: marinopyrrole_d
+    label: marinopyrrole D
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-b112d59f37
+    grounding_status: GROUNDED
+  edges:
+  - subject: pyrrolyl_s_carrier_protein
+    predicate: is proposed to be dichlorinated by
+    object: mpy16
+    notes: The mpy16 deletion supports a required early role, while the pyrrolyl-carrier-protein
+      dichlorination assignment is by homology to the characterized pyoluteorin PltA.
+    evidence:
+    - reference: DOI:10.1021/ja305670f
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the mpy16 gene deletion completely abolished production of the marinopyrroles
+      notes: Yamanaka et al. deleted mpy16 from the heterologous Streptomyces coelicolor
+        mpy expression system and used homology to pyoluteorin PltA to propose that
+        Mpy16 performs the initiating pyrrolyl-carrier-protein dichlorination.
+    - reference: https://www.uniprot.org/uniprotkb/J7H1A1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:J7H1A1 is the unreviewed 447 aa Streptomyces sp. CNQ-418 Mpy16
+        FADH2-dependent halogenase entry, gene mpy16, cross-references EMBL JX157625,
+        and links to PDB 5BUK.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFP87533.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept AFP87533.1 is the JX157625.1 mpy16 FADH2-dependent halogenase
+        coding sequence from the Streptomyces sp. CNQ-418 mpy cluster.
+  - subject: mpy16
+    predicate: forms
+    object: dichloropyrrolyl_s_carrier_protein
+    notes: The exact carrier-protein-bound product is left ungrounded because Yamanaka
+      et al. proposed this initiating step from genetics and PltA homology.
+    evidence:
+    - reference: DOI:10.1021/ja305670f
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the mpy16 gene deletion completely abolished production of the marinopyrroles
+      notes: Yamanaka et al. deleted mpy16 from the heterologous Streptomyces coelicolor
+        mpy expression system and used homology to pyoluteorin PltA to propose that
+        Mpy16 performs the initiating pyrrolyl-carrier-protein dichlorination.
+    - reference: https://www.uniprot.org/uniprotkb/J7H1A1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:J7H1A1 is the unreviewed 447 aa Streptomyces sp. CNQ-418 Mpy16
+        FADH2-dependent halogenase entry, gene mpy16, cross-references EMBL JX157625,
+        and links to PDB 5BUK.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFP87533.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept AFP87533.1 is the JX157625.1 mpy16 FADH2-dependent halogenase
+        coding sequence from the Streptomyces sp. CNQ-418 mpy cluster.
+  - subject: monodeoxypyoluteorin
+    predicate: is coupled during
+    object: n_c_bipyrrole_homocoupling
+    notes: Chemical complementation of an mpy6 deletion mutant with monodeoxypyoluteorin
+      restored dimeric marinopyrrole 1-4 synthesis.
+    evidence:
+    - reference: DOI:10.1021/ja305670f
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Chemical complementation of the mutant with 7 restored dimeric marinopyrrole
+        synthesis
+      notes: Yamanaka et al. used the mpy6 deletion mutant to test monodeoxypyoluteorin,
+        compound 7, as a precursor for dimeric marinopyrroles 1-4.
+  - subject: mpy1
+    predicate: supplies reduced flavin for
+    object: n_c_bipyrrole_homocoupling
+    notes: The mpy1 flavin reductase deletion strongly reduced dimeric marinopyrroles
+      and accumulated monodeoxypyoluteorin.
+    evidence:
+    - reference: DOI:10.1021/ja305670f
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Mpy10 and Mpy11 in the presence of the pathway specific flavin reductase
+        Mpy1
+      notes: Deletion and complementation in the heterologous S. coelicolor mpy system
+        supported the requirement for Mpy10 and Mpy11 plus Mpy1 flavin reductase participation
+        in dimeric marinopyrrole 1-4 formation.
+  - subject: mpy10
+    predicate: is required for
+    object: n_c_bipyrrole_homocoupling
+    notes: Deleting mpy10 abolished dimeric marinopyrrole 1-4 production and overproduced
+      monodeoxypyoluteorin.
+    evidence:
+    - reference: DOI:10.1021/ja305670f
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Mpy10 and Mpy11 in the presence of the pathway specific flavin reductase
+        Mpy1
+      notes: Deletion and complementation in the heterologous S. coelicolor mpy system
+        supported the requirement for Mpy10 and Mpy11 plus Mpy1 flavin reductase participation
+        in dimeric marinopyrrole 1-4 formation.
+  - subject: mpy11
+    predicate: is required for
+    object: n_c_bipyrrole_homocoupling
+    notes: Deleting mpy11 abolished dimeric marinopyrrole 1-4 production and overproduced
+      monodeoxypyoluteorin.
+    evidence:
+    - reference: DOI:10.1021/ja305670f
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Mpy10 and Mpy11 in the presence of the pathway specific flavin reductase
+        Mpy1
+      notes: Deletion and complementation in the heterologous S. coelicolor mpy system
+        supported the requirement for Mpy10 and Mpy11 plus Mpy1 flavin reductase participation
+        in dimeric marinopyrrole 1-4 formation.
+  - subject: n_c_bipyrrole_homocoupling
+    predicate: forms
+    object: marinopyrrole_d
+    notes: The reconstituted mpy cluster produced the dimeric marinopyrrole 1-4 product
+      set that includes marinopyrrole D; this partial graph does not resolve the tailoring
+      halogenation that distinguishes D from sibling dimeric marinopyrroles.
+    evidence:
+    - reference: DOI:10.1021/ja305670f
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: production of dimeric marinopyrroles 1-4
+      notes: Yamanaka et al. expressed the reconstituted Streptomyces sp. CNQ-418
+        mpy cluster in Streptomyces coelicolor M512 and detected the dimeric marinopyrrole
+        product set that includes marinopyrrole D.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -77,3 +307,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-28T06:05:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a partial BIOSYNTHESIS pathway and causal graph for the Streptomyces
+    sp. CNQ-418 mpy route to marinopyrrole D; grounded Mpy1, Mpy10, Mpy11 and Mpy16
+    to UniProtKB:J7H188, UniProtKB:J7H556, UniProtKB:J7H197 and UniProtKB:J7H1A1 via
+    GenBank JX157625.1; and kept the exact halogenated and carrier-protein-bound intermediates
+    ungrounded where DOI:10.1021/ja305670f supports a proposed step.
+  llm_assisted: true
