@@ -159,10 +159,185 @@ curation_status: SEEDED
 discussions:
 - discussion_id: shared-structure
   kind: CURATION_TODO
-  status: OPEN
+  status: RESOLVED
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000223, BGC0000262,
     BGC0001904. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+  resolved_date: '2026-09-28'
+  resolution_note: 'Resolved by live MIBiG and local exact InChIKey review: BGC0000223.5,
+    BGC0000262.5, and BGC0001904.2 all intentionally store the complete-stereo rabelomycin
+    structure JJOLHRYZQSDLSA-IBGZPJMESA-N.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: PgaY/PgaF and PgaL angucyclinone cyclization module
+  proposed: true
+  notes: This partial pathway entry captures two exact Streptomyces sp. PGA64 cyclization/aromatization
+    proteins from the demonstrated BGC0000262 angucycline locus. The exact nascent
+    polyketide intermediate and the final oxidation from the UWM6 branch toward rabelomycin
+    are left unexpanded, so the module rather than a single substrate-to-product reaction
+    is curated.
+  evidence:
+  - reference: DOI:10.1128/AAC.47.4.1291-1296.2003
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Engineering anthracycline biosynthesis toward angucyclines.
+    notes: Metsa-Ketela et al. engineered early polyketide assembly toward angucycline
+      products with Streptomyces sp. PGA64 genes; MIBiG cites this paper for the exact
+      BGC0000262 rabelomycin row.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000262.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: MIBiG BGC0000262.5 lists rabelomycin as a Streptomyces sp. PGA64 product
+      of the AY034378.2 locus and marks the locus with enzymatic-assay, heterologous-expression,
+      and gene-expression-correlated support.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAK57524.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: angucyclinone cyclase
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept AAK57524.1 is the 109 aa Streptomyces sp. PGA64 angucyclinone
+      cyclase encoded on AY034378.2. MIBiG names the same protein pgaF; the GenBank
+      product label is PgaY.
+  - reference: https://www.uniprot.org/uniprotkb/Q93LY5
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:Q93LY5 is the unreviewed 109 aa Streptomyces sp. PGA64 entry
+      that cross-references EMBL AY034378 with ProteinId AAK57524.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAK57529.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: cyclase/aromatase
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept AAK57529.1 is the 314 aa Streptomyces sp. PGA64 PgaL cyclase/aromatase
+      encoded on AY034378.2.
+  - reference: https://www.uniprot.org/uniprotkb/Q93LY0
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:Q93LY0 is the unreviewed 314 aa Streptomyces sp. PGA64 entry
+      that cross-references EMBL AY034378 with ProteinId AAK57529.1.
+causal_graphs:
+- graph_id: rabelomycin-pga64-cyclization
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces sp. PGA64 rabelomycin biosynthesis graph for the
+    BGC0000262 PgaY/PgaF and PgaL cyclization/aromatization proteins.
+  nodes:
+  - node_id: nascent_angucycline_polyketide
+    label: nascent angucycline polyketide
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: pgay
+    label: PgaY/PgaF angucyclinone cyclase
+    node_type: ENZYME
+    identifier: UniProtKB:Q93LY5
+    grounding_status: GROUNDED
+  - node_id: pgal
+    label: PgaL cyclase/aromatase
+    node_type: ENZYME
+    identifier: UniProtKB:Q93LY0
+    grounding_status: GROUNDED
+  - node_id: angucyclinone_cyclization
+    label: angucyclinone cyclization/aromatization
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: rabelomycin
+    label: rabelomycin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-ec6ca029f7
+    grounding_status: GROUNDED
+  edges:
+  - subject: nascent_angucycline_polyketide
+    predicate: is cyclized toward
+    object: angucyclinone_cyclization
+    notes: This edge deliberately leaves the exact nascent polyketide intermediate
+      ungrounded; MIBiG and GenBank support the named cyclization genes in the exact
+      rabelomycin-producing cluster, not a fully resolved intermediate structure.
+    evidence:
+    - reference: DOI:10.1128/AAC.47.4.1291-1296.2003
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Engineering anthracycline biosynthesis toward angucyclines.
+      notes: Metsa-Ketela et al. engineered early polyketide assembly toward angucycline
+        products with Streptomyces sp. PGA64 genes; MIBiG cites this paper for the
+        exact BGC0000262 rabelomycin row.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000262.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0000262.5 lists rabelomycin as a Streptomyces sp. PGA64 product
+        of the AY034378.2 locus and marks the locus with enzymatic-assay, heterologous-expression,
+        and gene-expression-correlated support.
+  - subject: pgay
+    predicate: participates in
+    object: angucyclinone_cyclization
+    notes: MIBiG annotates AAK57524.1 as pgaF, while GenBank AY034378.2 annotates
+      the same coding sequence as PgaY, an angucyclinone cyclase.
+    evidence:
+    - reference: DOI:10.1128/AAC.47.4.1291-1296.2003
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Engineering anthracycline biosynthesis toward angucyclines.
+      notes: Metsa-Ketela et al. engineered early polyketide assembly toward angucycline
+        products with Streptomyces sp. PGA64 genes; MIBiG cites this paper for the
+        exact BGC0000262 rabelomycin row.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000262.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0000262.5 lists rabelomycin as a Streptomyces sp. PGA64 product
+        of the AY034378.2 locus and marks the locus with enzymatic-assay, heterologous-expression,
+        and gene-expression-correlated support.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK57524.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: angucyclinone cyclase
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept AAK57524.1 is the 109 aa Streptomyces sp. PGA64 angucyclinone
+        cyclase encoded on AY034378.2. MIBiG names the same protein pgaF; the GenBank
+        product label is PgaY.
+    - reference: https://www.uniprot.org/uniprotkb/Q93LY5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:Q93LY5 is the unreviewed 109 aa Streptomyces sp. PGA64 entry
+        that cross-references EMBL AY034378 with ProteinId AAK57524.1.
+  - subject: pgal
+    predicate: participates in
+    object: angucyclinone_cyclization
+    notes: NCBI GenBank AY034378.2 annotates PgaL/AAK57529.1 as a cyclase/aromatase
+      in the PGA64 angucycline locus.
+    evidence:
+    - reference: DOI:10.1128/AAC.47.4.1291-1296.2003
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Engineering anthracycline biosynthesis toward angucyclines.
+      notes: Metsa-Ketela et al. engineered early polyketide assembly toward angucycline
+        products with Streptomyces sp. PGA64 genes; MIBiG cites this paper for the
+        exact BGC0000262 rabelomycin row.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000262.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0000262.5 lists rabelomycin as a Streptomyces sp. PGA64 product
+        of the AY034378.2 locus and marks the locus with enzymatic-assay, heterologous-expression,
+        and gene-expression-correlated support.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK57529.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: cyclase/aromatase
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept AAK57529.1 is the 314 aa Streptomyces sp. PGA64 PgaL cyclase/aromatase
+        encoded on AY034378.2.
+    - reference: https://www.uniprot.org/uniprotkb/Q93LY0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:Q93LY0 is the unreviewed 314 aa Streptomyces sp. PGA64 entry
+        that cross-references EMBL AY034378 with ProteinId AAK57529.1.
+  - subject: angucyclinone_cyclization
+    predicate: supports biosynthesis of
+    object: rabelomycin
+    notes: The graph captures the cyclization branch of the demonstrated BGC0000262
+      locus and leaves the unresolved rabelomycin-proximal oxidation as future curation.
+    evidence:
+    - reference: DOI:10.1128/AAC.47.4.1291-1296.2003
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Engineering anthracycline biosynthesis toward angucyclines.
+      notes: Metsa-Ketela et al. engineered early polyketide assembly toward angucycline
+        products with Streptomyces sp. PGA64 genes; MIBiG cites this paper for the
+        exact BGC0000262 rabelomycin row.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000262.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: MIBiG BGC0000262.5 lists rabelomycin as a Streptomyces sp. PGA64 product
+        of the AY034378.2 locus and marks the locus with enzymatic-assay, heterologous-expression,
+        and gene-expression-correlated support.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -172,3 +347,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-28T11:33:44Z'
+  curator: codex/add-proteins-to-graphs
+  action: ADDED_RABELOMYCIN_PGA64_BIOSYNTHESIS_GRAPH
+  changes: Added a proposed Streptomyces sp. PGA64 PgaY/PgaL cyclization/aromatization
+    biosynthetic pathway entry and BIOSYNTHESIS causal graph for rabelomycin; grounded
+    AAK57524.1 to UniProtKB:Q93LY5 and AAK57529.1 to UniProtKB:Q93LY0; resolved the
+    shared-structure discussion after exact BGC0000223/BGC0000262/BGC0001904 rabelomycin
+    review.
+  llm_assisted: true
