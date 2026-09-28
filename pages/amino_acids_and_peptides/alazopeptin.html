@@ -83,7 +83,61 @@ same claim.</p>
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>AzpE<br><span class="mono">EC:1.14.13.248</span></td>
+  <td class="mono">RHEA:69008</td>
+  <td class="mono">CHEBI:29991 &rarr; CHEBI:180682</td>
+  <td class="mono">DOI:10.1002/anie.202100462</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>AzpD<br><span class="mono">EC:4.3.99.5</span></td>
+  <td class="mono">RHEA:69044</td>
+  <td class="mono">CHEBI:180682 &rarr; CHEBI:16301</td>
+  <td class="mono">DOI:10.1002/anie.202100462</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: AzpE is annotated as the Streptacidiphilus griseoplanus JCM 4300 BGC0002458 aspartate monooxygenase. The exact BCN13467.1 protein does not currently resolve as a UniProtKB entry, so this partial alazopeptin nitrite-supply step grounds the reaction class by EC and Rhea and leaves the producer protein ungrounded.</p><p class="sub">Step 2: AzpD is annotated as the Streptacidiphilus griseoplanus JCM 4300 BGC0002458 nitrosuccinate lyase. The exact BCN13466.1 protein does not currently resolve as a UniProtKB entry, so this partial alazopeptin nitrite-supply step grounds the reaction class by EC and Rhea and leaves the producer protein ungrounded.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Partial Streptacidiphilus griseoplanus alazopeptin biosynthesis graph for the BGC0002458 AzpE/AzpD ANS-module reactions that convert L-aspartate to nitrite for downstream diazotization.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>L-aspartate</td>
+  <td>is oxidized by</td>
+  <td>AzpE</td>
+  <td>RHEA:69008 also consumes NADPH, O2, and protons and releases NADP(+) and water.</td>
+  <td class="mono">DOI:10.1002/anie.202100462<br>https://www.ncbi.nlm.nih.gov/protein/BCN13467.1<br>https://www.rhea-db.org/rhea/69008</td>
+</tr>
+<tr>
+  <td>AzpE</td>
+  <td>forms</td>
+  <td>2-nitrobutanedioate</td>
+  <td>The EC/Rhea-grounded product of the annotated AzpE aspartate monooxygenase reaction is 2-nitrobutanedioate.</td>
+  <td class="mono">DOI:10.1002/anie.202100462<br>https://www.ncbi.nlm.nih.gov/protein/BCN13467.1<br>https://www.rhea-db.org/rhea/69008</td>
+</tr>
+<tr>
+  <td>2-nitrobutanedioate</td>
+  <td>is cleaved by</td>
+  <td>AzpD</td>
+  <td>RHEA:69044 places 2-nitrobutanedioate upstream of nitrite in the EC:4.3.99.5 reaction.</td>
+  <td class="mono">DOI:10.1002/anie.202100462<br>https://www.ncbi.nlm.nih.gov/protein/BCN13466.1<br>https://www.rhea-db.org/rhea/69044</td>
+</tr>
+<tr>
+  <td>AzpD</td>
+  <td>forms</td>
+  <td>nitrite</td>
+  <td>The AzpD-associated Rhea reaction also releases fumarate and a proton.</td>
+  <td class="mono">DOI:10.1002/anie.202100462<br>https://www.ncbi.nlm.nih.gov/protein/BCN13466.1<br>https://www.rhea-db.org/rhea/69044</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
