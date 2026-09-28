@@ -328,7 +328,7 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 biosynthetic_pathway:
-- step_number: 1
+- step_number: 10
   enzyme_label: Psf1/Psf2 phosphonomethylmalate-forming module
   proposed: false
   notes: Psf1 and Psf2 together convert phosphoenolpyruvate plus acetyl-CoA into phosphonomethylmalate
@@ -366,7 +366,7 @@ biosynthetic_pathway:
     retrieved_on: '2026-09-28'
     notes: NCBI GenPept AFM38993.1 is the JX102649.1 Psf2 coding sequence from the
       Pseudomonas syringae PB-5123 fosfomycin cluster.
-- step_number: 2
+- step_number: 90
   enzyme_id: UniProtKB:Q9JN69
   enzyme_label: Ps-HppE
   reaction_id: RHEA:10808
@@ -603,4 +603,10 @@ curation_history:
   changes: Added the Pseudomonas syringae Psf1/Psf2 early phosphonomethylmalate biosynthetic
     module to the fosfomycin pathway and BIOSYNTHESIS causal graph; grounded AFM38986.1
     and AFM38993.1 to UniProtKB:I6QN26 and UniProtKB:I6QY75.
+  llm_assisted: true
+- timestamp: '2026-09-28T18:18:06Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Renumbered the partial Pseudomonas syringae fosfomycin Psf1/Psf2 and Ps-HppE
+    pathway steps to preserve the uncurated phosphonomethylmalate-to-HPP interval.
   llm_assisted: true
