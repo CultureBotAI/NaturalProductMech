@@ -93,7 +93,61 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>PbtH</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2013.07.005</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>PbtG1</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2013.07.005</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: PbtH is recorded as the GE2270 maturation protein required for C-terminal amide formation. The exact substrate and product of the PbtH-associated step remain ungrounded, and no exact UniProtKB accession resolved for the AGY49594.1 Planobispora rosea protein.</p><p class="sub">Step 2: PbtG1 is recorded as the GE2270 maturation cyclodehydratase required for C-terminal oxazoline formation. The exact substrate and product of the PbtG1-associated step remain ungrounded, and no exact UniProtKB accession resolved for the AGY49581.1 Planobispora rosea protein.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Partial Planobispora rosea pbt-cluster graph for the PbtH- and PbtG1-associated C-terminal maturation steps required before macrocyclic GE2270 production.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PbtH</td>
+  <td>participates in</td>
+  <td>GE2270 C-terminal amide formation</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.chembiol.2013.07.005<br>https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2<br>https://www.ncbi.nlm.nih.gov/protein/AGY49594.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</td>
+</tr>
+<tr>
+  <td>PbtG1 cyclodehydratase</td>
+  <td>participates in</td>
+  <td>GE2270 C-terminal oxazoline formation</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.chembiol.2013.07.005<br>https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2<br>https://www.ncbi.nlm.nih.gov/protein/AGY49581.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</td>
+</tr>
+<tr>
+  <td>GE2270 C-terminal amide formation</td>
+  <td>enables maturation of</td>
+  <td>GE2270</td>
+  <td>pbtH deletion accumulated linear precursors in which the pyridine-generated macrocycle failed to form.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2013.07.005<br>https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2<br>https://www.ncbi.nlm.nih.gov/protein/AGY49594.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</td>
+</tr>
+<tr>
+  <td>GE2270 C-terminal oxazoline formation</td>
+  <td>enables maturation of</td>
+  <td>GE2270</td>
+  <td>pbtG1 deletion accumulated linear precursors in which the pyridine-generated macrocycle failed to form.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2013.07.005<br>https://www.ncbi.nlm.nih.gov/nuccore/KF366381.2<br>https://www.ncbi.nlm.nih.gov/protein/AGY49581.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
