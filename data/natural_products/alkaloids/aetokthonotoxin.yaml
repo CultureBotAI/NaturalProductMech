@@ -317,6 +317,9 @@ biosynthetic_pathway:
     notes: 'Rhea grounds the left-to-right AETX pathway reaction: 5,7-dibromo-indole-3-carbonitrile
       plus 2,3,5-tribromoindole couple with reduced ferredoxin and oxygen to form
       aetokthonotoxin.'
+  substrates:
+  - CHEBI:231979
+  - CHEBI:232363
 causal_graphs:
 - graph_id: aetokthonotoxin-aet-biosynthesis
   scope: BIOSYNTHESIS
@@ -610,4 +613,10 @@ curation_history:
   action: RECORD_CURATED
   changes: Added an evidence-backed AetF/AetE/AetA/AetD/AetB biosynthetic pathway
     and BIOSYNTHESIS causal graph for aetokthonotoxin.
+  llm_assisted: true
+- timestamp: '2026-09-28T15:39:32Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added explicit 5,7-dibromo-indole-3-carbonitrile and 2,3,5-tribromoindole
+    AetB substrates to the aetokthonotoxin pathway step to close #303.'
   llm_assisted: true

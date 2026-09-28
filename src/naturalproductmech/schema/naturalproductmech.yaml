@@ -604,8 +604,16 @@ classes:
         range: curie
       substrate:
         range: curie
+      substrates:
+        description: Principal substrate CURIEs for reactions with multiple inputs.
+        range: curie
+        multivalued: true
       product:
         range: curie
+      products:
+        description: Principal product CURIEs for reactions with multiple outputs.
+        range: curie
+        multivalued: true
       proposed:
         description: True when the step is inferred rather than demonstrated.
         range: boolean
