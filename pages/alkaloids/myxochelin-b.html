@@ -69,7 +69,96 @@ same claim.</p>
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator against the primary literature, not derived
+from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>MxcE 2,3-DHBA-AMP ligase<br><span class="mono">UniProtKB:Q9F638</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1073/pnas.201167098</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>MxcF isochorismatase and aryl carrier protein<br><span class="mono">UniProtKB:Q9F637</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1073/pnas.201167098</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>MxcG peptide synthetase with reductase domain<br><span class="mono">UniProtKB:Q9F636</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1073/pnas.201167098</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>MxcL aldehyde aminotransferase<br><span class="mono">UniProtKB:Q9F631</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1021/ja8025278</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: MxcE adenylates 2,3-dihydroxybenzoic acid for transfer to the MxcF aryl carrier protein; the carrier-protein thioester is left ungrounded as a pathway intermediate.</p><p class="sub">Step 2: MxcF supplies the aryl carrier protein that receives activated 2,3-DHBA from MxcE and presents it to MxcG; its isochorismatase module contributes to DHBA formation from chorismate.</p><p class="sub">Step 3: MxcG adenylates lysine, condenses two MxcF-delivered DHBA groups with lysine, and uses its reductase domain for two-electron release of the carrier-protein-bound thioester to a myxochelin aldehyde branch-point intermediate.</p><p class="sub">Step 4: MxcL transaminates the free myxochelin aldehyde intermediate to the primary amine branch product myxochelin B.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
+<p class="sub">Partial Stigmatella aurantiaca myxochelin B assembly graph for the MxcE/MxcF/MxcG nonribosomal peptide synthetase machinery and the MxcL aminotransferase branch.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2,3-dihydroxybenzoic acid</td>
+  <td>is adenylated by</td>
+  <td>MxcE</td>
+  <td>MxcE adenylates DHBA before MxcF carrier-protein loading.</td>
+  <td class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F638</td>
+</tr>
+<tr>
+  <td>MxcE</td>
+  <td>loads activated 2,3-DHBA onto</td>
+  <td>MxcF</td>
+  <td>The MxcF aryl carrier protein receives activated DHBA for delivery to MxcG.</td>
+  <td class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F637</td>
+</tr>
+<tr>
+  <td>L-lysine</td>
+  <td>is adenylated by</td>
+  <td>MxcG</td>
+  <td>The adenylation domain of MxcG activates lysine.</td>
+  <td class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F636</td>
+</tr>
+<tr>
+  <td>MxcF</td>
+  <td>delivers activated 2,3-DHBA to</td>
+  <td>MxcG</td>
+  <td>MxcG condenses two MxcF-delivered DHBA units with the two amino groups of lysine.</td>
+  <td class="mono">DOI:10.1073/pnas.201167098<br>https://www.uniprot.org/uniprotkb/Q9F636</td>
+</tr>
+<tr>
+  <td>MxcG</td>
+  <td>reductively releases</td>
+  <td>myxochelin aldehyde</td>
+  <td>The C-terminal reductase domain of MxcG releases a free aldehyde that can be reduced to myxochelin A or transaminated toward myxochelin B.</td>
+  <td class="mono">DOI:10.1021/ja8025278<br>https://www.uniprot.org/uniprotkb/Q9F636</td>
+</tr>
+<tr>
+  <td>myxochelin aldehyde</td>
+  <td>is transaminated by</td>
+  <td>MxcL</td>
+  <td>MxcL competes for the free aldehyde intermediate produced by two-electron MxcG reductase-domain release.</td>
+  <td class="mono">DOI:10.1021/ja8025278<br>https://www.uniprot.org/uniprotkb/Q9F631</td>
+</tr>
+<tr>
+  <td>MxcL</td>
+  <td>forms</td>
+  <td>myxochelin B</td>
+  <td>MxcL transamination yields the myxochelin B primary amine.</td>
+  <td class="mono">DOI:10.1021/ja8025278<br>https://www.uniprot.org/uniprotkb/Q9F631</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

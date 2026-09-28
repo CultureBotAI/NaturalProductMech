@@ -70,6 +70,274 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-ead0df2493
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9F638
+  enzyme_label: MxcE 2,3-DHBA-AMP ligase
+  notes: MxcE adenylates 2,3-dihydroxybenzoic acid for transfer to the MxcF aryl carrier
+    protein; the carrier-protein thioester is left ungrounded as a pathway intermediate.
+  evidence:
+  - reference: DOI:10.1073/pnas.201167098
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted
+      ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.
+    snippet: MxcE, MxcF, and MxcG Are Sufficient for the Assembly of the Myxochelins.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001345.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: MIBiG BGC0001345.5 lists myxochelin B as a product of the AF299336.1 Stigmatella
+      aurantiaca Sg a15 cluster and annotates mxcE/AAG31128.1 in that cluster.
+  - reference: https://www.uniprot.org/uniprotkb/Q9F638
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: Unreviewed UniProtKB:Q9F638 is Stigmatella aurantiaca MxcE, length 543
+      aa, and cross-references EMBL AF299336 protein AAG31128.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAG31128.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: 2,3-DHBA-AMP ligase
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AAG31128.1 is the AF299336.1:4457..6088 mxcE coding sequence
+      from the Stigmatella aurantiaca Sg a15 myxochelin cluster and is the EMBL cross-reference
+      for the selected UniProtKB entry.
+- step_number: 2
+  enzyme_id: UniProtKB:Q9F637
+  enzyme_label: MxcF isochorismatase and aryl carrier protein
+  notes: MxcF supplies the aryl carrier protein that receives activated 2,3-DHBA from
+    MxcE and presents it to MxcG; its isochorismatase module contributes to DHBA formation
+    from chorismate.
+  evidence:
+  - reference: DOI:10.1073/pnas.201167098
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted
+      ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001345.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: MIBiG BGC0001345.5 lists myxochelin B as a product of the AF299336.1 Stigmatella
+      aurantiaca Sg a15 cluster and annotates mxcF/AAG31129.1 in that cluster.
+  - reference: https://www.uniprot.org/uniprotkb/Q9F637
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: Unreviewed UniProtKB:Q9F637 is Stigmatella aurantiaca MxcF, length 311
+      aa, and cross-references EMBL AF299336 protein AAG31129.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAG31129.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: isochorismatase
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AAG31129.1 is the AF299336.1:6166..7101 mxcF coding sequence
+      from the Stigmatella aurantiaca Sg a15 myxochelin cluster and is the EMBL cross-reference
+      for the selected UniProtKB entry.
+- step_number: 3
+  enzyme_id: UniProtKB:Q9F636
+  enzyme_label: MxcG peptide synthetase with reductase domain
+  notes: MxcG adenylates lysine, condenses two MxcF-delivered DHBA groups with lysine,
+    and uses its reductase domain for two-electron release of the carrier-protein-bound
+    thioester to a myxochelin aldehyde branch-point intermediate.
+  evidence:
+  - reference: DOI:10.1073/pnas.201167098
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted
+      ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.
+  - reference: DOI:10.1021/ja8025278
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Li et al. trapped carrier-protein-bound substrates and showed that the
+      isolated MxcG reductase domain releases a free aldehyde through two-electron
+      thioester reduction.
+    snippet: 'Myxochelin Biosynthesis: Direct Evidence for Two- and Four-Electron
+      Reduction of a Carrier Protein-Bound Thioester'
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001345.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: MIBiG BGC0001345.5 lists myxochelin B as a product of the AF299336.1 Stigmatella
+      aurantiaca Sg a15 cluster and annotates mxcG/AAG31130.1 in that cluster.
+  - reference: https://www.uniprot.org/uniprotkb/Q9F636
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: Unreviewed UniProtKB:Q9F636 is Stigmatella aurantiaca MxcG, length 1456
+      aa, and cross-references EMBL AF299336 protein AAG31130.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAG31130.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: peptide synthetase
+    retrieved_on: '2026-09-27'
+    notes: NCBI GenPept AAG31130.1 is the AF299336.1:7163..11533 mxcG coding sequence
+      from the Stigmatella aurantiaca Sg a15 myxochelin cluster and is the EMBL cross-reference
+      for the selected UniProtKB entry.
+- step_number: 4
+  enzyme_id: UniProtKB:Q9F631
+  enzyme_label: MxcL aldehyde aminotransferase
+  notes: MxcL transaminates the free myxochelin aldehyde intermediate to the primary
+    amine branch product myxochelin B.
+  evidence:
+  - reference: DOI:10.1021/ja8025278
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Li et al. reconstituted myxochelin B biosynthesis in vitro by combining
+      MxcL with MxcG reductase-domain-catalyzed formation of the free aldehyde intermediate.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001345.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: MIBiG BGC0001345.5 lists myxochelin B as a product of the AF299336.1 Stigmatella
+      aurantiaca Sg a15 cluster and annotates mxcL/AAG31135.1 in that cluster.
+  - reference: https://www.uniprot.org/uniprotkb/Q9F631
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: Unreviewed UniProtKB:Q9F631 is Stigmatella aurantiaca MxcL, length 420
+      aa, and cross-references EMBL AF299336 protein AAG31135.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAG31135.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: aldehyde amino-transferase
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept AAG31135.1 is the AF299336.1:18391..19653 mxcL coding sequence
+      from the Stigmatella aurantiaca Sg a15 myxochelin cluster and is the EMBL cross-reference
+      for the selected UniProtKB entry.
+causal_graphs:
+- graph_id: myxochelin-b-mxc-transamination
+  scope: BIOSYNTHESIS
+  description: Partial Stigmatella aurantiaca myxochelin B assembly graph for the
+    MxcE/MxcF/MxcG nonribosomal peptide synthetase machinery and the MxcL aminotransferase
+    branch.
+  nodes:
+  - node_id: dhba
+    label: 2,3-dihydroxybenzoic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mxcE
+    label: MxcE
+    node_type: ENZYME
+    identifier: UniProtKB:Q9F638
+    grounding_status: GROUNDED
+  - node_id: mxcF
+    label: MxcF
+    node_type: ENZYME
+    identifier: UniProtKB:Q9F637
+    grounding_status: GROUNDED
+  - node_id: lysine
+    label: L-lysine
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mxcG
+    label: MxcG
+    node_type: ENZYME
+    identifier: UniProtKB:Q9F636
+    grounding_status: GROUNDED
+  - node_id: myxochelin_aldehyde
+    label: myxochelin aldehyde
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mxcL
+    label: MxcL
+    node_type: ENZYME
+    identifier: UniProtKB:Q9F631
+    grounding_status: GROUNDED
+  - node_id: myxochelin_b
+    label: myxochelin B
+    node_type: COMPOUND
+    identifier: CHEBI:7061
+    grounding_status: GROUNDED
+  edges:
+  - subject: dhba
+    predicate: is adenylated by
+    object: mxcE
+    notes: MxcE adenylates DHBA before MxcF carrier-protein loading.
+    evidence:
+    - reference: DOI:10.1073/pnas.201167098
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted
+        ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F638
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:Q9F638 resolves to the AF299336.1 mxcE gene product used for
+        the Stigmatella myxochelin pathway.
+  - subject: mxcE
+    predicate: loads activated 2,3-DHBA onto
+    object: mxcF
+    notes: The MxcF aryl carrier protein receives activated DHBA for delivery to MxcG.
+    evidence:
+    - reference: DOI:10.1073/pnas.201167098
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted
+        ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F637
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:Q9F637 resolves to the AF299336.1 mxcF gene product used for
+        the Stigmatella myxochelin pathway.
+  - subject: lysine
+    predicate: is adenylated by
+    object: mxcG
+    notes: The adenylation domain of MxcG activates lysine.
+    evidence:
+    - reference: DOI:10.1073/pnas.201167098
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted
+        ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F636
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for
+        the Stigmatella myxochelin pathway.
+  - subject: mxcF
+    predicate: delivers activated 2,3-DHBA to
+    object: mxcG
+    notes: MxcG condenses two MxcF-delivered DHBA units with the two amino groups
+      of lysine.
+    evidence:
+    - reference: DOI:10.1073/pnas.201167098
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gaitatzis et al. expressed active MxcE, MxcF, and MxcG and reconstituted
+        ATP-, lysine-, DHBA-, and NAD(P)H-dependent myxochelin assembly in vitro.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F636
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for
+        the Stigmatella myxochelin pathway.
+  - subject: mxcG
+    predicate: reductively releases
+    object: myxochelin_aldehyde
+    notes: The C-terminal reductase domain of MxcG releases a free aldehyde that can
+      be reduced to myxochelin A or transaminated toward myxochelin B.
+    evidence:
+    - reference: DOI:10.1021/ja8025278
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Li et al. combined MxcG reductase-domain formation of the free aldehyde
+        intermediate with MxcL transamination to reconstitute myxochelin B biosynthesis
+        in vitro.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F636
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for
+        the Stigmatella myxochelin pathway.
+  - subject: myxochelin_aldehyde
+    predicate: is transaminated by
+    object: mxcL
+    notes: MxcL competes for the free aldehyde intermediate produced by two-electron
+      MxcG reductase-domain release.
+    evidence:
+    - reference: DOI:10.1021/ja8025278
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Li et al. combined MxcG reductase-domain formation of the free aldehyde
+        intermediate with MxcL transamination to reconstitute myxochelin B biosynthesis
+        in vitro.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F631
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:Q9F631 resolves to the AF299336.1 mxcL gene product in the
+        Stigmatella myxochelin gene cluster.
+  - subject: mxcL
+    predicate: forms
+    object: myxochelin_b
+    notes: MxcL transamination yields the myxochelin B primary amine.
+    evidence:
+    - reference: DOI:10.1021/ja8025278
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Li et al. combined MxcG reductase-domain formation of the free aldehyde
+        intermediate with MxcL transamination to reconstitute myxochelin B biosynthesis
+        in vitro.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F631
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:Q9F631 resolves to the AF299336.1 mxcL gene product in the
+        Stigmatella myxochelin gene cluster.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -79,3 +347,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-28T07:03:04Z'
+  curator: codex
+  action: ADDED_MYXOCHELIN_B_MXC_BIOSYNTHESIS_GRAPH
+  changes: Added a Stigmatella aurantiaca Sg a15 MxcE, MxcF, MxcG, and MxcL biosynthetic
+    pathway and BIOSYNTHESIS causal graph for myxochelin B; grounded AF299336.1 proteins
+    AAG31128.1, AAG31129.1, AAG31130.1, and AAG31135.1 to UniProtKB:Q9F638, UniProtKB:Q9F637,
+    UniProtKB:Q9F636, and UniProtKB:Q9F631.
+  llm_assisted: true
