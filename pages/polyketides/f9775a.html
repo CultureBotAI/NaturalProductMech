@@ -90,7 +90,82 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>OrsA<br><span class="mono">UniProtKB:Q5AUX1</span></td>
+  <td class="mono">RHEA:62973</td>
+  <td class="mono">ungrounded &rarr; CHEBI:16162</td>
+  <td class="mono">DOI:10.1039/b904541d</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>OrsB/OrsC F-9775 tailoring module</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; naturalproductmech:mibig-1a2493f8d7</td>
+  <td class="mono">DOI:10.1039/b904541d</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: This curates the Aspergillus nidulans FGSC A4 non-reducing polyketide synthase OrsA from the BGC0000057/AACD01000135.1 route; OrsA condenses acetyl-CoA with three malonyl-CoA units to form o-orsellinate, the branch precursor for F-9775 A biosynthesis.</p><p class="sub">Step 2: This curates the genetically supported OrsB/OrsC branch that diverts the OrsA orsellinic acid product toward F-9775 A and B. The exact isolated substrate, intermediates and individual OrsB and OrsC reactions remain unresolved, so this two-protein step is marked proposed and leaves enzyme_id empty.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
+<p class="sub">Partial Aspergillus nidulans F-9775 A biosynthesis graph for OrsA orsellinate formation and the OrsB/OrsC-dependent F-9775 branch.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>acetyl-CoA(4-)</td>
+  <td>is condensed by</td>
+  <td>OrsA</td>
+  <td>RHEA:62973 selects acetyl-CoA as the starter unit in the OrsA o-orsellinate synthase reaction.</td>
+  <td class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUX1<br>https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</td>
+</tr>
+<tr>
+  <td>malonyl-CoA(5-)</td>
+  <td>is condensed by</td>
+  <td>OrsA</td>
+  <td>RHEA:62973 consumes three malonyl-CoA units per o-orsellinate formed by OrsA.</td>
+  <td class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUX1<br>https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</td>
+</tr>
+<tr>
+  <td>OrsA</td>
+  <td>forms</td>
+  <td>o-orsellinate</td>
+  <td>The curated Rhea reaction forms o-orsellinate, which enters the OrsB/OrsC-dependent F-9775 branch.</td>
+  <td class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUX1<br>https://www.ncbi.nlm.nih.gov/protein/EAA59563.1</td>
+</tr>
+<tr>
+  <td>o-orsellinate</td>
+  <td>feeds</td>
+  <td>OrsB/OrsC F-9775 tailoring</td>
+  <td>AN7911.4 and AN7912.4 deletions still produced orsellinic acid but failed to produce F-9775 A and B, placing the genetically supported OrsB/OrsC branch downstream of the OrsA product.</td>
+  <td class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUW9<br>https://www.ncbi.nlm.nih.gov/protein/EAA59565.1<br>https://www.uniprot.org/uniprotkb/Q5AUW8<br>https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</td>
+</tr>
+<tr>
+  <td>OrsB</td>
+  <td>is required for</td>
+  <td>OrsB/OrsC F-9775 tailoring</td>
+  <td>Deleting AN7911.4/orsB abolished F-9775 A and B production while leaving orsellinic acid production intact.</td>
+  <td class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUW9<br>https://www.ncbi.nlm.nih.gov/protein/EAA59565.1<br>https://www.uniprot.org/uniprotkb/Q5AUW8<br>https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</td>
+</tr>
+<tr>
+  <td>OrsC</td>
+  <td>is required for</td>
+  <td>OrsB/OrsC F-9775 tailoring</td>
+  <td>Deleting AN7912.4/orsC abolished F-9775 A and B production while leaving orsellinic acid production intact.</td>
+  <td class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUW9<br>https://www.ncbi.nlm.nih.gov/protein/EAA59565.1<br>https://www.uniprot.org/uniprotkb/Q5AUW8<br>https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</td>
+</tr>
+<tr>
+  <td>OrsB/OrsC F-9775 tailoring</td>
+  <td>forms</td>
+  <td>F9775A</td>
+  <td>Sanchez et al. genetically delimited the F-9775 A/B branch to OrsA plus OrsB and OrsC, but the exact F-9775 A-specific sequence of tailoring reactions remains unresolved.</td>
+  <td class="mono">DOI:10.1039/b904541d<br>https://www.uniprot.org/uniprotkb/Q5AUW9<br>https://www.ncbi.nlm.nih.gov/protein/EAA59565.1<br>https://www.uniprot.org/uniprotkb/Q5AUW8<br>https://www.ncbi.nlm.nih.gov/protein/EAA59566.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
