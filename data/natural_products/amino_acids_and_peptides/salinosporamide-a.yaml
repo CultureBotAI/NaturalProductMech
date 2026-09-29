@@ -198,10 +198,11 @@ biosynthetic_pathway:
   enzyme_id: UniProtKB:A4X3Q0
   enzyme_label: SalL
   reaction_id: RHEA:28110
-  notes: This deliberately curates only the Salinispora tropica CNB-440 SalL chlorination
+  notes: This deliberately curates the Salinispora tropica CNB-440 SalL chlorination
     of S-adenosyl-L-methionine with chloride to 5'-chloro-5'-deoxyadenosine in the
-    salinosporamide A chloroethylmalonyl-CoA precursor branch; downstream conversion
-    to chloroethylmalonyl-CoA and SalA/B/C assembly remain uncurated.
+    salinosporamide A chloroethylmalonyl-CoA precursor branch. Downstream SalT/SalN
+    formation of 5-chloro-5-deoxy-D-ribose, later conversion to chloroethylmalonyl-CoA,
+    and SalA/B/C assembly remain uncurated.
   evidence:
   - reference: DOI:10.1038/nchembio.2007.56
     evidence_type: PRIMARY_EXPERIMENT
@@ -232,12 +233,43 @@ biosynthetic_pathway:
       to UniProtKB:A4X3Q0.
   substrate: CHEBI:59789
   product: CHEBI:47133
+- step_number: 40
+  enzyme_id: UniProtKB:A4X3Q1
+  enzyme_label: SalM 5-chloro-5-deoxy-D-ribose 1-dehydrogenase
+  notes: SalM oxidizes 5-chloro-5-deoxy-D-ribose to 5-chloro-5-deoxy-D-ribono-gamma-lactone
+    in the salinosporamide A chloroethylmalonyl-CoA branch. The intervening SalT/SalN
+    conversion of 5'-chloro-5'-deoxyadenosine to 5-chloro-5-deoxy-D-ribose and later
+    steps to chloroethylmalonyl-CoA remain uncurated.
+  evidence:
+  - reference: DOI:10.1073/pnas.0901237106
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: 5'-ClDA is converted to chloroethylmalonyl-CoA in a 7-step route
+    notes: Eustaquio et al. characterized the Salinispora tropica CNB-440 sal cluster
+      and placed SalM downstream of SalL, SalT, and SalN in the chloroethylmalonyl-CoA
+      branch for salinosporamide A biosynthesis.
+  - reference: DOI:10.1074/jbc.M110.153833
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: oxidation of 5-chloro-5-deoxy-D-ribose to 5-chloro-5-deoxy-D-ribono-γ-lactone
+    notes: Kale et al. amplified S. tropica CNB-440 salM/Strop_1027, heterologously
+      expressed SalM, and used real-time 13C NMR to show NAD+-dependent 5-chloro-5-deoxy-D-ribose
+      oxidation to the gamma-lactone followed by spontaneous lactone hydrolysis.
+  - reference: https://www.uniprot.org/uniprotkb/A4X3Q1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-29'
+    notes: UniProtKB:A4X3Q1 is the unreviewed 255 aa Salinispora tropica CNB-440 short-chain
+      dehydrogenase/reductase entry for ordered locus Strop_1027 and cross-references
+      EMBL CP000667 protein ABP53501.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ABP53501.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-29'
+    notes: NCBI GenPept ABP53501.1 is the 255 aa Strop_1027 coding sequence from the
+      Salinispora tropica CNB-440 CP000667.1 chromosome.
 causal_graphs:
-- graph_id: salinosporamide-a-sall-biosynthesis
+- graph_id: salinosporamide-a-sal-chloroethylmalonyl-biosynthesis
   scope: BIOSYNTHESIS
   description: Partial Salinispora tropica CNB-440 salinosporamide A biosynthesis
     graph for the SalL chlorinase reaction that initiates the chloroethylmalonyl-CoA
-    precursor branch.
+    precursor branch and the SalM oxidation step in that branch.
   nodes:
   - node_id: s_adenosyl_l_methionine
     label: S-adenosyl-L-methionine zwitterion
@@ -254,6 +286,19 @@ causal_graphs:
     node_type: PRECURSOR
     identifier: CHEBI:47133
     grounding_status: GROUNDED
+  - node_id: five_chloro_five_deoxy_d_ribose
+    label: 5-chloro-5-deoxy-D-ribose
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: salm
+    label: SalM
+    node_type: ENZYME
+    identifier: UniProtKB:A4X3Q1
+    grounding_status: GROUNDED
+  - node_id: five_chloro_five_deoxy_d_ribono_gamma_lactone
+    label: 5-chloro-5-deoxy-D-ribono-gamma-lactone
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
   edges:
   - subject: s_adenosyl_l_methionine
     predicate: is chlorinated by
@@ -321,6 +366,64 @@ causal_graphs:
       notes: NCBI GenPept ABP53500.1 is the Strop_1026 coding sequence from the Salinispora
         tropica CNB-440 CP000667.1 salinosporamide A cluster and is sequence-identical
         to UniProtKB:A4X3Q0.
+  - subject: five_chloro_five_deoxy_d_ribose
+    predicate: is oxidized by
+    object: salm
+    notes: 5-chloro-5-deoxy-D-ribose sits downstream of SalL, SalT, and SalN in the
+      proposed pathway; the SalT and SalN steps are not yet represented.
+    evidence:
+    - reference: DOI:10.1073/pnas.0901237106
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 5'-ClDA is converted to chloroethylmalonyl-CoA in a 7-step route
+      notes: Eustaquio et al. characterized the Salinispora tropica CNB-440 sal cluster
+        and placed SalM downstream of SalL, SalT, and SalN in the chloroethylmalonyl-CoA
+        branch for salinosporamide A biosynthesis.
+    - reference: DOI:10.1074/jbc.M110.153833
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: oxidation of 5-chloro-5-deoxy-D-ribose to 5-chloro-5-deoxy-D-ribono-γ-lactone
+      notes: Kale et al. amplified S. tropica CNB-440 salM/Strop_1027, heterologously
+        expressed SalM, and used real-time 13C NMR to show NAD+-dependent 5-chloro-5-deoxy-D-ribose
+        oxidation to the gamma-lactone followed by spontaneous lactone hydrolysis.
+    - reference: https://www.uniprot.org/uniprotkb/A4X3Q1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: UniProtKB:A4X3Q1 is the unreviewed 255 aa Salinispora tropica CNB-440
+        short-chain dehydrogenase/reductase entry for ordered locus Strop_1027 and
+        cross-references EMBL CP000667 protein ABP53501.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABP53501.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: NCBI GenPept ABP53501.1 is the 255 aa Strop_1027 coding sequence from
+        the Salinispora tropica CNB-440 CP000667.1 chromosome.
+  - subject: salm
+    predicate: forms
+    object: five_chloro_five_deoxy_d_ribono_gamma_lactone
+    notes: SalM forms the gamma-lactone enzymatically; Kale et al. also observed nonenzymatic
+      hydrolysis to 5-chloro-5-deoxy-D-ribonate.
+    evidence:
+    - reference: DOI:10.1073/pnas.0901237106
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 5'-ClDA is converted to chloroethylmalonyl-CoA in a 7-step route
+      notes: Eustaquio et al. characterized the Salinispora tropica CNB-440 sal cluster
+        and placed SalM downstream of SalL, SalT, and SalN in the chloroethylmalonyl-CoA
+        branch for salinosporamide A biosynthesis.
+    - reference: DOI:10.1074/jbc.M110.153833
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: oxidation of 5-chloro-5-deoxy-D-ribose to 5-chloro-5-deoxy-D-ribono-γ-lactone
+      notes: Kale et al. amplified S. tropica CNB-440 salM/Strop_1027, heterologously
+        expressed SalM, and used real-time 13C NMR to show NAD+-dependent 5-chloro-5-deoxy-D-ribose
+        oxidation to the gamma-lactone followed by spontaneous lactone hydrolysis.
+    - reference: https://www.uniprot.org/uniprotkb/A4X3Q1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: UniProtKB:A4X3Q1 is the unreviewed 255 aa Salinispora tropica CNB-440
+        short-chain dehydrogenase/reductase entry for ordered locus Strop_1027 and
+        cross-references EMBL CP000667 protein ABP53501.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABP53501.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: NCBI GenPept ABP53501.1 is the 255 aa Strop_1027 coding sequence from
+        the Salinispora tropica CNB-440 CP000667.1 chromosome.
 - graph_id: salinosporamide-a-proteasome-binding
   scope: BIOACTIVITY
   description: Salinosporamide A covalently binds the Saccharomyces cerevisiae 20S
@@ -408,4 +511,13 @@ curation_history:
   action: RECORD_CURATED
   changes: Added the Salinispora tropica CNB-440 SalL S-adenosyl-L-methionine-to-5'-chloro-5'-deoxyadenosine
     biosynthetic step and BIOSYNTHESIS causal graph grounded to UniProtKB:A4X3Q0.
+  llm_assisted: true
+- timestamp: '2026-09-29T21:54:19Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the SalM 5-chloro-5-deoxy-D-ribose oxidation step to the partial
+    Salinispora tropica CNB-440 salinosporamide A chloroethylmalonyl-CoA biosynthesis
+    graph; grounded SalM to UniProtKB:A4X3Q1 via CP000667 protein ABP53501.1; and
+    cited the Eustaquio 2009 pathway paper, the Kale 2010 SalM in vitro characterization,
+    UniProtKB, and GenPept.
   llm_assisted: true
