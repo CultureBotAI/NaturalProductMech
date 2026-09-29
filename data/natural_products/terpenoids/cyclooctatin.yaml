@@ -126,8 +126,7 @@ biosynthetic_pathway:
   enzyme_label: CotB2
   reaction_id: RHEA:41628
   notes: CotB2 cyclizes geranylgeranyl diphosphate to cyclooctat-9-en-7-ol, the first
-    committed diterpene cyclization in cyclooctatin biosynthesis; later CotB3/CotB4
-    P450 hydroxylations remain uncurated.
+    committed diterpene cyclization in cyclooctatin biosynthesis.
   evidence:
   - reference: DOI:10.1016/j.chembiol.2009.06.007
     evidence_type: PRIMARY_EXPERIMENT
@@ -149,11 +148,84 @@ biosynthetic_pathway:
       locus.
   substrate: CHEBI:57533
   product: CHEBI:78352
+- step_number: 2
+  enzyme_id: UniProtKB:C9K1X6
+  enzyme_label: CotB3 cyclooctat-9-en-7-ol 5-monooxygenase
+  reaction_id: RHEA:56820
+  substrate: CHEBI:78352
+  product: CHEBI:141020
+  notes: CotB3 performs the first P450 hydroxylation downstream of CotB2, converting
+    cyclooctat-9-en-7-ol to cyclooctat-9-en-5,7-diol.
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2009.06.007
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: complete cyclooctatin biosynthetic gene cluster consists of four genes,
+      cotB1 to cotB4
+    notes: Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin
+      locus, heterologously produced cyclooctatin in Streptomyces albus, and assigned
+      the minimal cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two
+      cytochrome P450 hydroxylations.
+  - reference: DOI:10.1186/s12934-016-0487-6
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: 100 μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)
+    notes: Gorner et al. reconstituted CotB3 and CotB4 activity with heterologous
+      redox partners in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol
+      by CotB3 and cyclooctat-9-en-5,7-diol by CotB4.
+  - reference: https://www.uniprot.org/uniprotkb/C9K1X6
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:C9K1X6 is the reviewed Streptomyces melanosporofaciens CotB3
+      entry, maps to EMBL AB448947 protein BAI44339.1, and annotates RHEA:56820 for
+      cyclooctat-9-en-7-ol 5-monooxygenase activity.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAI44339.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: product="P450"
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept BAI44339.1 is the AB448947.1 CotB3 P450 coding sequence from
+      the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.
+- step_number: 3
+  enzyme_id: UniProtKB:C9K1X7
+  enzyme_label: CotB4 cyclooctatin synthase
+  reaction_id: RHEA:56824
+  substrate: CHEBI:141020
+  product: CHEBI:78370
+  notes: CotB4 performs the terminal C-18 P450 hydroxylation from cyclooctat-9-en-5,7-diol
+    to cyclooctatin. CHEBI:78370 is the stereocomplete Rhea product; the NaturalProductRecord
+    remains grounded to the partial-stereo MIBiG structure pending a record-level
+    stereochemistry review.
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2009.06.007
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: complete cyclooctatin biosynthetic gene cluster consists of four genes,
+      cotB1 to cotB4
+    notes: Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin
+      locus, heterologously produced cyclooctatin in Streptomyces albus, and assigned
+      the minimal cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and two
+      cytochrome P450 hydroxylations.
+  - reference: DOI:10.1186/s12934-016-0487-6
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: 100 μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)
+    notes: Gorner et al. reconstituted CotB3 and CotB4 activity with heterologous
+      redox partners in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol
+      by CotB3 and cyclooctat-9-en-5,7-diol by CotB4.
+  - reference: https://www.uniprot.org/uniprotkb/C9K1X7
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:C9K1X7 is the reviewed Streptomyces melanosporofaciens CotB4
+      entry, maps to EMBL AB448947 protein BAI44340.1, and annotates RHEA:56824 for
+      cyclooctatin synthase activity.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAI44340.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: product="P450"
+    retrieved_on: '2026-09-28'
+    notes: NCBI GenPept BAI44340.1 is the AB448947.1 CotB4 P450 coding sequence from
+      the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.
 causal_graphs:
-- graph_id: cyclooctatin-cotb2-biosynthesis
+- graph_id: cyclooctatin-cotb-biosynthesis
   scope: BIOSYNTHESIS
-  description: Partial Streptomyces melanosporofaciens cyclooctatin biosynthesis graph
-    for CotB2-catalyzed formation of cyclooctat-9-en-7-ol from geranylgeranyl diphosphate.
+  description: Streptomyces melanosporofaciens cyclooctatin biosynthesis graph for
+    CotB2 cyclization of geranylgeranyl diphosphate and CotB3/CotB4 P450 hydroxylations
+    to cyclooctatin.
   nodes:
   - node_id: ggdp
     label: geranylgeranyl diphosphate(3-)
@@ -169,6 +241,26 @@ causal_graphs:
     label: cyclooctat-9-en-7-ol
     node_type: COMPOUND
     identifier: CHEBI:78352
+    grounding_status: GROUNDED
+  - node_id: cotb3
+    label: CotB3
+    node_type: ENZYME
+    identifier: UniProtKB:C9K1X6
+    grounding_status: GROUNDED
+  - node_id: cyclooctat_9_ene_5_7_diol
+    label: cyclooctat-9-en-5,7-diol
+    node_type: COMPOUND
+    identifier: CHEBI:141020
+    grounding_status: GROUNDED
+  - node_id: cotb4
+    label: CotB4
+    node_type: ENZYME
+    identifier: UniProtKB:C9K1X7
+    grounding_status: GROUNDED
+  - node_id: cyclooctatin
+    label: cyclooctatin
+    node_type: COMPOUND
+    identifier: CHEBI:78370
     grounding_status: GROUNDED
   edges:
   - subject: ggdp
@@ -196,8 +288,6 @@ causal_graphs:
   - subject: cotb2
     predicate: forms
     object: cyclooctat_9_en_7_ol
-    notes: This is the first committed cyclization step; downstream CotB3/CotB4 P450
-      reactions to cyclooctatin remain uncurated.
     evidence:
     - reference: DOI:10.1016/j.chembiol.2009.06.007
       evidence_type: PRIMARY_EXPERIMENT
@@ -217,6 +307,126 @@ causal_graphs:
       notes: NCBI GenPept BAI44338.1 is the AB448947.1 geranylgeranyl diphosphate
         cyclase coding sequence from the Streptomyces melanosporofaciens MI614-43F2
         cyclooctatin locus.
+  - subject: cyclooctat_9_en_7_ol
+    predicate: is hydroxylated by
+    object: cotb3
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2009.06.007
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: complete cyclooctatin biosynthetic gene cluster consists of four genes,
+        cotB1 to cotB4
+      notes: Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin
+        locus, heterologously produced cyclooctatin in Streptomyces albus, and assigned
+        the minimal cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and
+        two cytochrome P450 hydroxylations.
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 100 μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)
+      notes: Gorner et al. reconstituted CotB3 and CotB4 activity with heterologous
+        redox partners in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol
+        by CotB3 and cyclooctat-9-en-5,7-diol by CotB4.
+    - reference: https://www.uniprot.org/uniprotkb/C9K1X6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:C9K1X6 is the reviewed Streptomyces melanosporofaciens CotB3
+        entry, maps to EMBL AB448947 protein BAI44339.1, and annotates RHEA:56820
+        for cyclooctat-9-en-7-ol 5-monooxygenase activity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAI44339.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: product="P450"
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept BAI44339.1 is the AB448947.1 CotB3 P450 coding sequence
+        from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.
+  - subject: cotb3
+    predicate: forms
+    object: cyclooctat_9_ene_5_7_diol
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2009.06.007
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: complete cyclooctatin biosynthetic gene cluster consists of four genes,
+        cotB1 to cotB4
+      notes: Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin
+        locus, heterologously produced cyclooctatin in Streptomyces albus, and assigned
+        the minimal cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and
+        two cytochrome P450 hydroxylations.
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 100 μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)
+      notes: Gorner et al. reconstituted CotB3 and CotB4 activity with heterologous
+        redox partners in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol
+        by CotB3 and cyclooctat-9-en-5,7-diol by CotB4.
+    - reference: https://www.uniprot.org/uniprotkb/C9K1X6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:C9K1X6 is the reviewed Streptomyces melanosporofaciens CotB3
+        entry, maps to EMBL AB448947 protein BAI44339.1, and annotates RHEA:56820
+        for cyclooctat-9-en-7-ol 5-monooxygenase activity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAI44339.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: product="P450"
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept BAI44339.1 is the AB448947.1 CotB3 P450 coding sequence
+        from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.
+  - subject: cyclooctat_9_ene_5_7_diol
+    predicate: is hydroxylated by
+    object: cotb4
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2009.06.007
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: complete cyclooctatin biosynthetic gene cluster consists of four genes,
+        cotB1 to cotB4
+      notes: Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin
+        locus, heterologously produced cyclooctatin in Streptomyces albus, and assigned
+        the minimal cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and
+        two cytochrome P450 hydroxylations.
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 100 μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)
+      notes: Gorner et al. reconstituted CotB3 and CotB4 activity with heterologous
+        redox partners in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol
+        by CotB3 and cyclooctat-9-en-5,7-diol by CotB4.
+    - reference: https://www.uniprot.org/uniprotkb/C9K1X7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:C9K1X7 is the reviewed Streptomyces melanosporofaciens CotB4
+        entry, maps to EMBL AB448947 protein BAI44340.1, and annotates RHEA:56824
+        for cyclooctatin synthase activity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAI44340.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: product="P450"
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept BAI44340.1 is the AB448947.1 CotB4 P450 coding sequence
+        from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.
+  - subject: cotb4
+    predicate: forms
+    object: cyclooctatin
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2009.06.007
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: complete cyclooctatin biosynthetic gene cluster consists of four genes,
+        cotB1 to cotB4
+      notes: Kim et al. cloned the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin
+        locus, heterologously produced cyclooctatin in Streptomyces albus, and assigned
+        the minimal cotB1-cotB4 cluster to GGDP synthesis, CotB2 cyclization, and
+        two cytochrome P450 hydroxylations.
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 100 μM of cyclooctat-9-en-7-ol (CotB3) or cyclooct-9-en-5,7-diol (CotB4)
+      notes: Gorner et al. reconstituted CotB3 and CotB4 activity with heterologous
+        redox partners in Escherichia coli and measured conversion of cyclooctat-9-en-7-ol
+        by CotB3 and cyclooctat-9-en-5,7-diol by CotB4.
+    - reference: https://www.uniprot.org/uniprotkb/C9K1X7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-28'
+      notes: UniProtKB:C9K1X7 is the reviewed Streptomyces melanosporofaciens CotB4
+        entry, maps to EMBL AB448947 protein BAI44340.1, and annotates RHEA:56824
+        for cyclooctatin synthase activity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAI44340.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: product="P450"
+      retrieved_on: '2026-09-28'
+      notes: NCBI GenPept BAI44340.1 is the AB448947.1 CotB4 P450 coding sequence
+        from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -231,4 +441,11 @@ curation_history:
   action: RECORD_CURATED
   changes: Added the Streptomyces melanosporofaciens CotB2 GGDP-to-cyclooctat-9-en-7-ol
     biosynthetic step and BIOSYNTHESIS causal graph grounded to UniProtKB:C9K1X5.
+  llm_assisted: true
+- timestamp: '2026-09-28T18:50:19Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Expanded the Streptomyces melanosporofaciens cyclooctatin biosynthetic
+    pathway and BIOSYNTHESIS causal graph with CotB3 and CotB4 P450 hydroxylation
+    steps; grounded BAI44339.1 and BAI44340.1 to UniProtKB:C9K1X6 and UniProtKB:C9K1X7.
   llm_assisted: true
