@@ -155,7 +155,7 @@ biosynthetic_pathway:
   substrate: CHEBI:78352
   product: CHEBI:141020
   notes: CotB3 performs the first P450 hydroxylation downstream of CotB2, converting
-    cyclooctat-9-en-7-ol to cyclooctat-9-ene-5,7-diol.
+    cyclooctat-9-en-7-ol to cyclooctat-9-en-5,7-diol.
   evidence:
   - reference: DOI:10.1016/j.chembiol.2009.06.007
     evidence_type: PRIMARY_EXPERIMENT
@@ -189,7 +189,7 @@ biosynthetic_pathway:
   reaction_id: RHEA:56824
   substrate: CHEBI:141020
   product: CHEBI:78370
-  notes: CotB4 performs the terminal C-18 P450 hydroxylation from cyclooctat-9-ene-5,7-diol
+  notes: CotB4 performs the terminal C-18 P450 hydroxylation from cyclooctat-9-en-5,7-diol
     to cyclooctatin. CHEBI:78370 is the stereocomplete Rhea product; the NaturalProductRecord
     remains grounded to the partial-stereo MIBiG structure pending a record-level
     stereochemistry review.
@@ -248,7 +248,7 @@ causal_graphs:
     identifier: UniProtKB:C9K1X6
     grounding_status: GROUNDED
   - node_id: cyclooctat_9_ene_5_7_diol
-    label: cyclooctat-9-ene-5,7-diol
+    label: cyclooctat-9-en-5,7-diol
     node_type: COMPOUND
     identifier: CHEBI:141020
     grounding_status: GROUNDED
