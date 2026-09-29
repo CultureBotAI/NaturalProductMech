@@ -366,6 +366,33 @@ biosynthetic_pathway:
     retrieved_on: '2026-09-28'
     notes: NCBI GenPept AFM38993.1 is the JX102649.1 Psf2 coding sequence from the
       Pseudomonas syringae PB-5123 fosfomycin cluster.
+- step_number: 80
+  enzyme_id: UniProtKB:I6R485
+  enzyme_label: Psf3
+  product: CHEBI:62246
+  notes: This demonstrated Psf3 reaction is the penultimate fosfomycin biosynthetic
+    step in the assayed Pseudomonas syringae PB-5123 route. The exact 2-oxopropylphosphonate
+    substrate is not grounded to a CURIE in this record, so only the ChEBI-grounded
+    (S)-2-HPP product is populated.
+  evidence:
+  - reference: DOI:10.1021/acschembio.6b00939
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Psf3 carried out the reduction of 2-OPP
+    notes: Olivares et al. expressed and purified Pseudomonas syringae PB-5123 Psf3
+      and showed that it catalyzes the NADPH-dependent reduction of 2-oxopropylphosphonate
+      to (S)-2-hydroxypropylphosphonate.
+  - reference: https://www.uniprot.org/uniprotkb/I6R485
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-29'
+    notes: UniProtKB:I6R485 is the unreviewed 295 aa Pseudomonas syringae entry that
+      cross-references EMBL JX102649 protein AFM38992.1 and PDB 5U5G from the Psf3
+      structure.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFM38992.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: name="Psf3"
+    retrieved_on: '2026-09-29'
+    notes: NCBI GenPept AFM38992.1 is the JX102649.1 Psf3 coding sequence from the
+      Pseudomonas syringae PB-5123 fosfomycin cluster.
 - step_number: 90
   enzyme_id: UniProtKB:Q9JN69
   enzyme_label: Ps-HppE
@@ -400,11 +427,11 @@ biosynthetic_pathway:
   substrate: CHEBI:62246
   product: CHEBI:62247
 causal_graphs:
-- graph_id: fosfomycin-ps-hppe-biosynthesis
+- graph_id: fosfomycin-pseudomonas-partial-biosynthesis
   scope: BIOSYNTHESIS
   description: Partial Pseudomonas syringae fosfomycin biosynthesis graph for Psf1/Psf2
-    phosphonomethylmalate formation and the Ps-HppE-catalyzed final epoxidation of
-    (S)-2-hydroxypropylphosphonate.
+    phosphonomethylmalate formation, Psf3 reduction of 2-oxopropylphosphonate to (S)-2-hydroxypropylphosphonate,
+    and the Ps-HppE-catalyzed final epoxidation of (S)-2-hydroxypropylphosphonate.
   nodes:
   - node_id: phosphoenolpyruvate
     label: phosphoenolpyruvate
@@ -432,6 +459,15 @@ causal_graphs:
     label: phosphonomethylmalate
     node_type: PRECURSOR
     grounding_status: UNGROUNDED
+  - node_id: two_oxopropylphosphonate
+    label: 2-oxopropylphosphonate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: psf3
+    label: Psf3
+    node_type: ENZYME
+    identifier: UniProtKB:I6R485
+    grounding_status: GROUNDED
   - node_id: s_2_hydroxypropylphosphonate
     label: (S)-2-hydroxypropylphosphonate
     node_type: PRECURSOR
@@ -526,6 +562,50 @@ causal_graphs:
         fosfomycin cluster, purified His-tagged Psf1 and Psf2, and found that the
         combined PEP, acetyl-CoA, Psf1, and Psf2 assay formed phosphonomethylmalate;
         omission of either enzyme prevented new phosphonate product formation.
+  - subject: two_oxopropylphosphonate
+    predicate: is reduced by
+    object: psf3
+    evidence:
+    - reference: DOI:10.1021/acschembio.6b00939
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Psf3 carried out the reduction of 2-OPP
+      notes: Olivares et al. expressed and purified Pseudomonas syringae PB-5123 Psf3
+        and showed that it catalyzes the NADPH-dependent reduction of 2-oxopropylphosphonate
+        to (S)-2-hydroxypropylphosphonate.
+    - reference: https://www.uniprot.org/uniprotkb/I6R485
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: UniProtKB:I6R485 is the unreviewed 295 aa Pseudomonas syringae entry
+        that cross-references EMBL JX102649 protein AFM38992.1 and PDB 5U5G from the
+        Psf3 structure.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFM38992.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: name="Psf3"
+      retrieved_on: '2026-09-29'
+      notes: NCBI GenPept AFM38992.1 is the JX102649.1 Psf3 coding sequence from the
+        Pseudomonas syringae PB-5123 fosfomycin cluster.
+  - subject: psf3
+    predicate: forms
+    object: s_2_hydroxypropylphosphonate
+    evidence:
+    - reference: DOI:10.1021/acschembio.6b00939
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Psf3 carried out the reduction of 2-OPP
+      notes: Olivares et al. expressed and purified Pseudomonas syringae PB-5123 Psf3
+        and showed that it catalyzes the NADPH-dependent reduction of 2-oxopropylphosphonate
+        to (S)-2-hydroxypropylphosphonate.
+    - reference: https://www.uniprot.org/uniprotkb/I6R485
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: UniProtKB:I6R485 is the unreviewed 295 aa Pseudomonas syringae entry
+        that cross-references EMBL JX102649 protein AFM38992.1 and PDB 5U5G from the
+        Psf3 structure.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFM38992.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: name="Psf3"
+      retrieved_on: '2026-09-29'
+      notes: NCBI GenPept AFM38992.1 is the JX102649.1 Psf3 coding sequence from the
+        Pseudomonas syringae PB-5123 fosfomycin cluster.
   - subject: s_2_hydroxypropylphosphonate
     predicate: is epoxidized by
     object: ps_hppe
@@ -609,4 +689,11 @@ curation_history:
   action: RECORD_CURATED
   changes: Renumbered the partial Pseudomonas syringae fosfomycin Psf1/Psf2 and Ps-HppE
     pathway steps to preserve the uncurated phosphonomethylmalate-to-HPP interval.
+  llm_assisted: true
+- timestamp: '2026-09-29T22:28:54Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the Pseudomonas syringae Psf3 2-oxopropylphosphonate-to-(S)-2-HPP
+    biosynthetic step and expanded the BIOSYNTHESIS causal graph; grounded AFM38992.1
+    to UniProtKB:I6R485.
   llm_assisted: true
