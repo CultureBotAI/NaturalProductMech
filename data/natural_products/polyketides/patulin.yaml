@@ -341,6 +341,145 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-3f5fbf0ce5
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A075TRK9
+  enzyme_label: PatE patulin synthase
+  reaction_id: RHEA:62228
+  substrates:
+  - CHEBI:145112
+  - CHEBI:13193
+  products:
+  - CHEBI:74926
+  - CHEBI:17499
+  notes: PatE oxidizes (E)-ascladiol to patulin in the terminal step of P. expansum
+    patulin biosynthesis; RHEA:62228 grounds the generic electron-acceptor reaction.
+  evidence:
+  - reference: DOI:10.1111/1462-2920.14542
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
+      were verified in P. expansum
+    notes: Li et al. systematically dissected the Penicillium expansum patulin cluster
+      and connected PatE to the terminal conversion of (E)-ascladiol into patulin.
+  - reference: DOI:10.1111/febs.16804
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Patulin synthase (PatE) from Penicillium expansum is a flavin-dependent
+      enzyme that catalyses the last step
+    notes: Tjallinks et al. expressed P. expansum patE in Aspergillus niger, purified
+      and characterized PatE, and confirmed by HPLC that PatE uses ascladiol as its
+      preferred substrate in patulin biosynthesis.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0000120.5 maps the P. expansum KF899892 patulin biosynthetic gene
+      cluster to CDS AIG62134.1, gene patE, annotated as patulin synthase.
+  - reference: https://www.uniprot.org/uniprotkb/A0A075TRK9
+    evidence_type: DATABASE_ASSERTION
+    snippet: PatE catalyzes the last step of the pathway which is the conversion of
+      E-ascladiol to patulin
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:A0A075TRK9 is the 628 aa P. expansum Patulin synthase
+      encoded by patE/PEX2_082770, cross-references KF899892 protein AIG62134.1, and
+      annotates RHEA:62228 from PMID:30680886.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TRK9 to RHEA:62228, the
+      generalized oxidation of (E)-ascladiol to patulin.
+causal_graphs:
+- graph_id: patulin-pate-oxidation
+  scope: BIOSYNTHESIS
+  description: Partial P. expansum patulin biosynthesis graph for PatE-catalyzed terminal
+    oxidation of (E)-ascladiol.
+  nodes:
+  - node_id: e_ascladiol
+    label: (E)-ascladiol
+    node_type: PRECURSOR
+    identifier: CHEBI:145112
+    grounding_status: GROUNDED
+  - node_id: pate
+    label: PatE patulin synthase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A075TRK9
+    grounding_status: GROUNDED
+  - node_id: patulin
+    label: patulin
+    node_type: COMPOUND
+    identifier: CHEBI:74926
+    grounding_status: GROUNDED
+  edges:
+  - subject: e_ascladiol
+    predicate: is oxidized by
+    object: pate
+    notes: PatE uses (E)-ascladiol as the terminal biosynthetic precursor of patulin.
+    evidence:
+    - reference: DOI:10.1111/1462-2920.14542
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
+        were verified in P. expansum
+      notes: Li et al. systematically dissected the Penicillium expansum patulin cluster
+        and connected PatE to the terminal conversion of (E)-ascladiol into patulin.
+    - reference: DOI:10.1111/febs.16804
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Patulin synthase (PatE) from Penicillium expansum is a flavin-dependent
+        enzyme that catalyses the last step
+      notes: Tjallinks et al. expressed P. expansum patE in Aspergillus niger, purified
+        and characterized PatE, and confirmed by HPLC that PatE uses ascladiol as
+        its preferred substrate in patulin biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000120.5 maps the P. expansum KF899892 patulin biosynthetic
+        gene cluster to CDS AIG62134.1, gene patE, annotated as patulin synthase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A075TRK9
+      evidence_type: DATABASE_ASSERTION
+      snippet: PatE catalyzes the last step of the pathway which is the conversion
+        of E-ascladiol to patulin
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:A0A075TRK9 is the 628 aa P. expansum Patulin synthase
+        encoded by patE/PEX2_082770, cross-references KF899892 protein AIG62134.1,
+        and annotates RHEA:62228 from PMID:30680886.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TRK9 to RHEA:62228,
+        the generalized oxidation of (E)-ascladiol to patulin.
+  - subject: pate
+    predicate: forms
+    object: patulin
+    notes: PatE forms patulin from (E)-ascladiol.
+    evidence:
+    - reference: DOI:10.1111/1462-2920.14542
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
+        were verified in P. expansum
+      notes: Li et al. systematically dissected the Penicillium expansum patulin cluster
+        and connected PatE to the terminal conversion of (E)-ascladiol into patulin.
+    - reference: DOI:10.1111/febs.16804
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Patulin synthase (PatE) from Penicillium expansum is a flavin-dependent
+        enzyme that catalyses the last step
+      notes: Tjallinks et al. expressed P. expansum patE in Aspergillus niger, purified
+        and characterized PatE, and confirmed by HPLC that PatE uses ascladiol as
+        its preferred substrate in patulin biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000120.5 maps the P. expansum KF899892 patulin biosynthetic
+        gene cluster to CDS AIG62134.1, gene patE, annotated as patulin synthase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A075TRK9
+      evidence_type: DATABASE_ASSERTION
+      snippet: PatE catalyzes the last step of the pathway which is the conversion
+        of E-ascladiol to patulin
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:A0A075TRK9 is the 628 aa P. expansum Patulin synthase
+        encoded by patE/PEX2_082770, cross-references KF899892 protein AIG62134.1,
+        and annotates RHEA:62228 from PMID:30680886.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TRK9 to RHEA:62228,
+        the generalized oxidation of (E)-ascladiol to patulin.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -350,3 +489,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T15:41:22Z'
+  curator: codex:add-proteins-to-graphs
+  action: ADD_BIOSYNTHETIC_PROTEIN_GRAPH
+  changes: Added a PatE/UniProtKB:A0A075TRK9 terminal oxidation pathway step and biosynthesis
+    causal graph for P. expansum conversion of (E)-ascladiol to patulin, grounded
+    by DOI, MIBiG, UniProt, and Rhea evidence.
+  llm_assisted: true
