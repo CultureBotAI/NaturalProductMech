@@ -109,6 +109,123 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-bee4e2f26b
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:P59287
+  enzyme_label: Ricinus communis casbene synthase
+  reaction_id: RHEA:14901
+  substrate: CHEBI:58756
+  product: CHEBI:17695
+  products:
+  - CHEBI:17695
+  - CHEBI:33019
+  notes: Ricinus communis casbene synthase cyclizes (2E,6E,10E)-geranylgeranyl diphosphate
+    to casbene. The seeded BGC0002723 locus is from Jatropha curcas and carries NP_001292945.1
+    and XP_012066853.1, so it is not used here as exact UniProtKB:P59287 locus evidence.
+  evidence:
+  - reference: DOI:10.1006/abbi.1996.0559
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Casbene synthase catalyzes the cyclization of geranylgeranyl diphosphate
+      (2) to casbene (1)
+    notes: Hill et al. expressed Ricinus communis casbene synthase in E. coli and
+      characterized the recombinant enzyme by kinetic and product analysis.
+  - reference: DOI:10.1073/pnas.91.18.8497
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: A near-full-length casbene synthase cDNA clone, pCS7, was isolated
+    notes: Mau and West cloned the Ricinus communis casbene synthase cDNA as GenBank
+      L32134, and its open reading frame encodes the same 601 aa length as reviewed
+      UniProtKB:P59287.
+  - reference: https://www.uniprot.org/uniprotkb/P59287
+    evidence_type: DATABASE_ASSERTION
+    snippet: Catalyzes the cyclization of geranylgeranyl diphosphate to casbene
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:P59287 is the 601 aa Ricinus communis chloroplastic
+      casbene synthase, cross-references the L32134 mRNA and the EQ973781 genomic
+      protein EEF48743.1, and annotates RHEA:14901.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: The Rhea Swiss-Prot mapping links RHEA:14901 to UniProtKB:P59287.
+causal_graphs:
+- graph_id: casbene-ricinus-casbene-synthase-cyclization
+  scope: BIOSYNTHESIS
+  description: Partial Ricinus communis casbene biosynthesis graph for casbene-synthase-catalyzed
+    geranylgeranyl-diphosphate cyclization.
+  nodes:
+  - node_id: geranylgeranyl_diphosphate
+    label: (2E,6E,10E)-geranylgeranyl diphosphate
+    node_type: PRECURSOR
+    identifier: CHEBI:58756
+    grounding_status: GROUNDED
+  - node_id: casbene_synthase
+    label: Ricinus communis casbene synthase
+    node_type: ENZYME
+    identifier: UniProtKB:P59287
+    grounding_status: GROUNDED
+  - node_id: casbene
+    label: casbene
+    node_type: COMPOUND
+    identifier: CHEBI:17695
+    grounding_status: GROUNDED
+  edges:
+  - subject: geranylgeranyl_diphosphate
+    predicate: is cyclized by
+    object: casbene_synthase
+    notes: Ricinus casbene synthase cyclizes geranylgeranyl diphosphate in the committed
+      casbene-forming terpene synthase reaction.
+    evidence:
+    - reference: DOI:10.1006/abbi.1996.0559
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Casbene synthase catalyzes the cyclization of geranylgeranyl diphosphate
+        (2) to casbene (1)
+      notes: Hill et al. expressed Ricinus communis casbene synthase in E. coli and
+        characterized the recombinant enzyme by kinetic and product analysis.
+    - reference: DOI:10.1073/pnas.91.18.8497
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: A near-full-length casbene synthase cDNA clone, pCS7, was isolated
+      notes: Mau and West cloned the Ricinus communis casbene synthase cDNA as GenBank
+        L32134, and its open reading frame encodes the same 601 aa length as reviewed
+        UniProtKB:P59287.
+    - reference: https://www.uniprot.org/uniprotkb/P59287
+      evidence_type: DATABASE_ASSERTION
+      snippet: Catalyzes the cyclization of geranylgeranyl diphosphate to casbene
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:P59287 is the 601 aa Ricinus communis chloroplastic
+        casbene synthase, cross-references the L32134 mRNA and the EQ973781 genomic
+        protein EEF48743.1, and annotates RHEA:14901.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links RHEA:14901 to UniProtKB:P59287.
+  - subject: casbene_synthase
+    predicate: forms
+    object: casbene
+    notes: The Ricinus casbene synthase reaction forms the diterpene hydrocarbon casbene
+      and diphosphate from geranylgeranyl diphosphate.
+    evidence:
+    - reference: DOI:10.1006/abbi.1996.0559
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Casbene synthase catalyzes the cyclization of geranylgeranyl diphosphate
+        (2) to casbene (1)
+      notes: Hill et al. expressed Ricinus communis casbene synthase in E. coli and
+        characterized the recombinant enzyme by kinetic and product analysis.
+    - reference: DOI:10.1073/pnas.91.18.8497
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: A near-full-length casbene synthase cDNA clone, pCS7, was isolated
+      notes: Mau and West cloned the Ricinus communis casbene synthase cDNA as GenBank
+        L32134, and its open reading frame encodes the same 601 aa length as reviewed
+        UniProtKB:P59287.
+    - reference: https://www.uniprot.org/uniprotkb/P59287
+      evidence_type: DATABASE_ASSERTION
+      snippet: Catalyzes the cyclization of geranylgeranyl diphosphate to casbene
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:P59287 is the 601 aa Ricinus communis chloroplastic
+        casbene synthase, cross-references the L32134 mRNA and the EQ973781 genomic
+        protein EEF48743.1, and annotates RHEA:14901.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links RHEA:14901 to UniProtKB:P59287.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -118,3 +235,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T16:43:25Z'
+  curator: codex
+  action: ADD_BIOSYNTHETIC_PROTEIN_GRAPH
+  changes: Added exact UniProtKB:P59287 Ricinus communis casbene synthase grounding,
+    the RHEA:14901 geranylgeranyl diphosphate to casbene cyclization pathway step,
+    and a BIOSYNTHESIS causal graph linking casbene synthase to casbene formation.
+  llm_assisted: true
