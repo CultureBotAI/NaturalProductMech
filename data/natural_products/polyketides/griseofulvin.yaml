@@ -323,6 +323,33 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 biosynthetic_pathway:
 - step_number: 1
+  enzyme_id: UniProtKB:D7PI17
+  enzyme_label: GsfC O-methyltransferase
+  reaction_id: RHEA:73927
+  substrate: CHEBI:193064
+  product: CHEBI:193065
+  notes: GsfC methylates griseophenone D at 9-OH to yield griseophenone C, the immediate
+    substrate for GsfI; Rhea captures the SAM-dependent methyltransferase reaction
+    as RHEA:73927.
+  evidence:
+  - reference: DOI:10.1021/cb400541z
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: GsfC is the 9-OH MT
+    notes: Cacho et al. deleted gsfC and observed accumulation of 3-O-methylated,
+      9-OH-unmethylated intermediates including griseophenone D; coupled GsfA/GsfC
+      in vitro assays further supported GsfC 9-OH O-methyltransferase activity.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+      gene cluster CDS ADI24955.1 to GsfC.
+  - reference: https://www.uniprot.org/uniprotkb/D7PI17
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:D7PI17 is the 396 aa P. aethiopicum GsfC O-methyltransferase,
+      cross-references GU574478 protein ADI24955.1, and annotates RHEA:73927 from
+      PMID:23978092.
+- step_number: 2
   enzyme_id: UniProtKB:D7PI14
   enzyme_label: GsfI flavin-dependent halogenase
   reaction_id: RHEA:73931
@@ -349,7 +376,7 @@ biosynthetic_pathway:
     notes: Reviewed UniProtKB:D7PI14 is the 533 aa P. aethiopicum GsfI flavin-dependent
       halogenase, cross-references GU574478 protein ADI24948.1, and annotates RHEA:73931
       from PMID:23978092.
-- step_number: 2
+- step_number: 3
   enzyme_id: UniProtKB:D7PI20
   enzyme_label: GsfF cytochrome P450 monooxygenase
   reaction_id: RHEA:73935
@@ -379,6 +406,73 @@ biosynthetic_pathway:
       P450 monooxygenase, cross-references GU574478 protein ADI24958.2, and annotates
       RHEA:73935 from PMID:23978092.
 causal_graphs:
+- graph_id: griseofulvin-gsfc-methylation
+  scope: BIOSYNTHESIS
+  description: Partial P. aethiopicum griseofulvin biosynthesis graph for GsfC-catalyzed
+    griseophenone D 9-O-methylation.
+  nodes:
+  - node_id: griseophenone_d
+    label: griseophenone D
+    node_type: PRECURSOR
+    identifier: CHEBI:193064
+    grounding_status: GROUNDED
+  - node_id: gsfc
+    label: GsfC O-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:D7PI17
+    grounding_status: GROUNDED
+  - node_id: griseophenone_c
+    label: griseophenone C
+    node_type: COMPOUND
+    identifier: CHEBI:193065
+    grounding_status: GROUNDED
+  edges:
+  - subject: griseophenone_d
+    predicate: is methylated by
+    object: gsfc
+    notes: GsfC is the 9-OH O-methyltransferase that installs the methyl group yielding
+      griseophenone C.
+    evidence:
+    - reference: DOI:10.1021/cb400541z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GsfC is the 9-OH MT
+      notes: Cacho et al. deleted gsfC and observed accumulation of 3-O-methylated,
+        9-OH-unmethylated intermediates including griseophenone D; coupled GsfA/GsfC
+        in vitro assays further supported GsfC 9-OH O-methyltransferase activity.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+        gene cluster CDS ADI24955.1 to GsfC.
+    - reference: https://www.uniprot.org/uniprotkb/D7PI17
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:D7PI17 is the 396 aa P. aethiopicum GsfC O-methyltransferase,
+        cross-references GU574478 protein ADI24955.1, and annotates RHEA:73927 from
+        PMID:23978092.
+  - subject: gsfc
+    predicate: forms
+    object: griseophenone_c
+    notes: The SAM-dependent GsfC reaction converts griseophenone D into griseophenone
+      C, placing GsfC immediately upstream of GsfI-catalyzed halogenation.
+    evidence:
+    - reference: DOI:10.1021/cb400541z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GsfC is the 9-OH MT
+      notes: Cacho et al. deleted gsfC and observed accumulation of 3-O-methylated,
+        9-OH-unmethylated intermediates including griseophenone D; coupled GsfA/GsfC
+        in vitro assays further supported GsfC 9-OH O-methyltransferase activity.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+        gene cluster CDS ADI24955.1 to GsfC.
+    - reference: https://www.uniprot.org/uniprotkb/D7PI17
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:D7PI17 is the 396 aa P. aethiopicum GsfC O-methyltransferase,
+        cross-references GU574478 protein ADI24955.1, and annotates RHEA:73927 from
+        PMID:23978092.
 - graph_id: griseofulvin-gsfi-halogenation
   scope: BIOSYNTHESIS
   description: Partial P. aethiopicum griseofulvin biosynthesis graph for GsfI-catalyzed
@@ -545,4 +639,12 @@ curation_history:
     griseophenone C chlorination to griseophenone B, grounded to UniProtKB:D7PI14,
     RHEA:73931, CHEBI:193065, CHEBI:193066, MIBiG BGC0000070.5, and Cacho et al. 2013;
     renumbered the existing GsfF step after GsfI.
+  llm_assisted: true
+- timestamp: '2026-09-30T10:48:39Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a GsfC biosynthetic pathway step and BIOSYNTHESIS causal graph for
+    griseophenone D 9-O-methylation to griseophenone C, grounded to UniProtKB:D7PI17,
+    RHEA:73927, CHEBI:193064, CHEBI:193065, MIBiG BGC0000070.5, and Cacho et al. 2013;
+    renumbered the existing GsfI and GsfF curated steps after GsfC.
   llm_assisted: true
