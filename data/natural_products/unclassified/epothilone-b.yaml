@@ -524,6 +524,122 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000988, BGC0000989,
     BGC0000990, BGC0000991. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9KIZ4
+  enzyme_label: EpoK epothilone C/D epoxidase
+  reaction_id: RHEA:47808
+  substrate: CHEBI:29579
+  product: CHEBI:31550
+  notes: EpoK is the cytochrome P450 epoxidase that carries out terminal epoxidation
+    of epothilone D to epothilone B; RHEA:47808 grounds the full reduced-ferredoxin-dependent
+    monooxygenase reaction.
+  evidence:
+  - reference: DOI:10.1016/S0378-1119(00)00149-9
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: EpoK, the P450 epoxidase, catalyzed the conversion of epothilone D to
+      epothilone B
+    notes: Julien et al. isolated the S. cellulosum SMP44 epothilone biosynthetic
+      gene cluster, expressed EpoK in E. coli, and assayed purified EpoK for in vitro
+      epothilone D epoxidation.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000991.4/BGC0000991.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0000991.4 contains the AF217189 epothilone cluster and maps the
+      epoK CDS to GenPept AAF62886.1.
+  - reference: https://www.uniprot.org/uniprotkb/Q9KIZ4
+    evidence_type: DATABASE_ASSERTION
+    snippet: Catalyzes the epoxidation of epothilones C and D to epothilones A and
+      B, respectively
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:Q9KIZ4 is the 419 aa S. cellulosum epothilone C/D epoxidase,
+      carries epoK as a gene synonym, cross-references AF217189 protein AAF62886.1,
+      and annotates RHEA:47808 from PMID:10831849.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: The Rhea Swiss-Prot mapping links RHEA:47808 to UniProtKB:Q9KIZ4.
+causal_graphs:
+- graph_id: epothilone-b-epok-epoxidation
+  scope: BIOSYNTHESIS
+  description: Partial S. cellulosum epothilone B biosynthesis graph for EpoK-catalyzed
+    terminal epoxidation.
+  nodes:
+  - node_id: epothilone_d
+    label: epothilone D
+    node_type: PRECURSOR
+    identifier: CHEBI:29579
+    grounding_status: GROUNDED
+  - node_id: epok
+    label: EpoK epothilone C/D epoxidase
+    node_type: ENZYME
+    identifier: UniProtKB:Q9KIZ4
+    grounding_status: GROUNDED
+  - node_id: epothilone_b
+    label: epothilone B
+    node_type: COMPOUND
+    identifier: CHEBI:31550
+    grounding_status: GROUNDED
+  edges:
+  - subject: epothilone_d
+    predicate: is epoxidized by
+    object: epok
+    notes: EpoK epoxidizes the 12,13-alkene of epothilone D.
+    evidence:
+    - reference: DOI:10.1016/S0378-1119(00)00149-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: EpoK, the P450 epoxidase, catalyzed the conversion of epothilone D
+        to epothilone B
+      notes: Julien et al. isolated the S. cellulosum SMP44 epothilone biosynthetic
+        gene cluster, expressed EpoK in E. coli, and assayed purified EpoK for in
+        vitro epothilone D epoxidation.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000991.4/BGC0000991.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000991.4 contains the AF217189 epothilone cluster and maps
+        the epoK CDS to GenPept AAF62886.1.
+    - reference: https://www.uniprot.org/uniprotkb/Q9KIZ4
+      evidence_type: DATABASE_ASSERTION
+      snippet: Catalyzes the epoxidation of epothilones C and D to epothilones A and
+        B, respectively
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q9KIZ4 is the 419 aa S. cellulosum epothilone C/D
+        epoxidase, carries epoK as a gene synonym, cross-references AF217189 protein
+        AAF62886.1, and annotates RHEA:47808 from PMID:10831849.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links RHEA:47808 to UniProtKB:Q9KIZ4.
+  - subject: epok
+    predicate: forms
+    object: epothilone_b
+    notes: The EpoK cytochrome P450 reaction forms epothilone B as the epoxidized
+      product.
+    evidence:
+    - reference: DOI:10.1016/S0378-1119(00)00149-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: EpoK, the P450 epoxidase, catalyzed the conversion of epothilone D
+        to epothilone B
+      notes: Julien et al. isolated the S. cellulosum SMP44 epothilone biosynthetic
+        gene cluster, expressed EpoK in E. coli, and assayed purified EpoK for in
+        vitro epothilone D epoxidation.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000991.4/BGC0000991.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000991.4 contains the AF217189 epothilone cluster and maps
+        the epoK CDS to GenPept AAF62886.1.
+    - reference: https://www.uniprot.org/uniprotkb/Q9KIZ4
+      evidence_type: DATABASE_ASSERTION
+      snippet: Catalyzes the epoxidation of epothilones C and D to epothilones A and
+        B, respectively
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q9KIZ4 is the 419 aa S. cellulosum epothilone C/D
+        epoxidase, carries epoK as a gene synonym, cross-references AF217189 protein
+        AAF62886.1, and annotates RHEA:47808 from PMID:10831849.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links RHEA:47808 to UniProtKB:Q9KIZ4.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -537,3 +653,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T14:35:49Z'
+  curator: codex
+  action: ADD_BIOSYNTHETIC_PROTEIN_GRAPH
+  changes: Added exact UniProtKB:Q9KIZ4 EpoK grounding, the RHEA:47808 epothilone
+    D to epothilone B epoxidation pathway step, and a BIOSYNTHESIS causal graph linking
+    epothilone D through EpoK to epothilone B.
+  llm_assisted: true
