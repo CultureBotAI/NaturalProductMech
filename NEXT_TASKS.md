@@ -5,7 +5,8 @@ what the repository has committed to and not yet delivered. An item leaves this
 file when its issue closes, not before. The issue carries the evidence and the
 discussion; this file carries the order.
 
-Milestones are in `PLAN.md` §7. M0–M3 and M5 have landed; M4 and M6 have not.
+Milestones are in `PLAN.md` §7. M0–M5 have landed (M4, fleet admission, in
+culturebotai-claw#395); M6 has not.
 
 ## Claims the code does not yet deliver
 
@@ -23,10 +24,9 @@ pieces named as available that were never built.
 
 ## Fleet
 
-- **M4 — admission to claw.** Three PRs in claw's order (`PLAN.md` §7).
-  Until then `just vendored-sync` fails on identity, by design. No issue yet.
-- **Claw pin.** `scripts/.vendored_canon_ref` follows what the other eight
-  members pin (`eeccfebe23`, #47), not claw `main`. Re-pin when the fleet does.
+- **Claw pin.** `scripts/.vendored_canon_ref` holds the claw commit every fleet
+  member pins, not claw `main`; claw's fleet audit requires them to agree.
+  Re-pin when the fleet does.
   A re-pin advances the ref, re-snapshots `scripts/.vendored_manifest.json`,
   and re-vendors any governed artifact whose hash moved (#49 did one); the
   drift test fails until all three agree.
