@@ -91,6 +91,135 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-7822ce3c7c
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:K4MP98
+  enzyme_label: Sc-IndC indigoidine synthase
+  reaction_id: RHEA:81499
+  substrate: CHEBI:58359
+  substrates:
+  - CHEBI:58210
+  - CHEBI:58359
+  - CHEBI:30616
+  - CHEBI:15379
+  product: CHEBI:79296
+  products:
+  - CHEBI:79296
+  - CHEBI:57618
+  - CHEBI:456215
+  - CHEBI:33019
+  - CHEBI:15377
+  notes: Streptomyces chromofuscus ATCC 49982 Sc-IndC is the exact indigoidine synthase
+    encoded by the MIBiG BGC0000375 indC CDS; Sc-IndB stimulation of indigoidine yield
+    is left unexpanded because that accessory effect is not the Rhea-grounded synthase
+    reaction curated here.
+  evidence:
+  - reference: DOI:10.1007/s10295-012-1207-9
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Sc-IndC was functionally characterized as an indigoidine synthase through
+      heterologous expression
+    notes: Yu et al. located the silent Streptomyces chromofuscus ATCC 49982 cluster
+      and showed that Sc-IndC produces indigoidine in heterologous Streptomyces coelicolor
+      CH999 and Escherichia coli BAP1 hosts.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000375.5/BGC0000375.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0000375.5 places indC at 1630..5763 in the Streptomyces chromofuscus
+      ATCC 49982 JX499187.1 cluster, with protein_id AFV27434.1 and product indigoidine
+      synthase.
+  - reference: https://www.uniprot.org/uniprotkb/K4MP98
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: UniProtKB:K4MP98 is the unreviewed Streptomyces chromofuscus indC gene
+      product and cross-references EMBL JX499187 protein AFV27434.1.
+  - reference: https://www.rhea-db.org/rhea/81499
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:81499 is the overall indigoidine synthase reaction consuming FMN,
+      L-glutamine, ATP and O2 to form indigoidine, FMNH2, AMP, diphosphate and H2O;
+      RHEA:81500 is its left-to-right direction.
+causal_graphs:
+- graph_id: indigoidine-indc-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Streptomyces chromofuscus ATCC 49982 Sc-IndC converts L-glutamine to
+    the blue pigment indigoidine.
+  nodes:
+  - node_id: l_glutamine
+    label: L-glutamine
+    node_type: PRECURSOR
+    identifier: CHEBI:58359
+    grounding_status: GROUNDED
+  - node_id: sc_indc
+    label: Sc-IndC
+    node_type: ENZYME
+    identifier: UniProtKB:K4MP98
+    grounding_status: GROUNDED
+  - node_id: indigoidine
+    label: indigoidine
+    node_type: COMPOUND
+    identifier: CHEBI:79296
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_glutamine
+    predicate: is converted to indigoidine by
+    object: sc_indc
+    notes: Sc-IndC catalyzes the RHEA:81499 overall conversion from two L-glutamine
+      molecules to indigoidine.
+    evidence:
+    - reference: DOI:10.1007/s10295-012-1207-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Sc-IndC was functionally characterized as an indigoidine synthase through
+        heterologous expression
+      notes: Yu et al. located the silent Streptomyces chromofuscus ATCC 49982 cluster
+        and showed that Sc-IndC produces indigoidine in heterologous Streptomyces
+        coelicolor CH999 and Escherichia coli BAP1 hosts.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000375.5/BGC0000375.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000375.5 places indC at 1630..5763 in the Streptomyces chromofuscus
+        ATCC 49982 JX499187.1 cluster, with protein_id AFV27434.1 and product indigoidine
+        synthase.
+    - reference: https://www.uniprot.org/uniprotkb/K4MP98
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: UniProtKB:K4MP98 is the unreviewed Streptomyces chromofuscus indC gene
+        product and cross-references EMBL JX499187 protein AFV27434.1.
+    - reference: https://www.rhea-db.org/rhea/81499
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:81499 is the overall indigoidine synthase reaction consuming FMN,
+        L-glutamine, ATP and O2 to form indigoidine, FMNH2, AMP, diphosphate and H2O;
+        RHEA:81500 is its left-to-right direction.
+  - subject: sc_indc
+    predicate: forms
+    object: indigoidine
+    notes: Heterologous expression of Sc-IndC established it as the indigoidine synthase
+      in the Streptomyces chromofuscus ATCC 49982 BGC0000375 cluster.
+    evidence:
+    - reference: DOI:10.1007/s10295-012-1207-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Sc-IndC was functionally characterized as an indigoidine synthase through
+        heterologous expression
+      notes: Yu et al. located the silent Streptomyces chromofuscus ATCC 49982 cluster
+        and showed that Sc-IndC produces indigoidine in heterologous Streptomyces
+        coelicolor CH999 and Escherichia coli BAP1 hosts.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000375.5/BGC0000375.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000375.5 places indC at 1630..5763 in the Streptomyces chromofuscus
+        ATCC 49982 JX499187.1 cluster, with protein_id AFV27434.1 and product indigoidine
+        synthase.
+    - reference: https://www.uniprot.org/uniprotkb/K4MP98
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: UniProtKB:K4MP98 is the unreviewed Streptomyces chromofuscus indC gene
+        product and cross-references EMBL JX499187 protein AFV27434.1.
+    - reference: https://www.rhea-db.org/rhea/81499
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:81499 is the overall indigoidine synthase reaction consuming FMN,
+        L-glutamine, ATP and O2 to form indigoidine, FMNH2, AMP, diphosphate and H2O;
+        RHEA:81500 is its left-to-right direction.
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
   curator: seed_from_sources
@@ -100,3 +229,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T23:14:25Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the Streptomyces chromofuscus ATCC 49982 Sc-IndC biosynthetic pathway
+    step and BIOSYNTHESIS graph for the RHEA:81499 indigoidine synthase reaction,
+    grounded to exact UniProtKB:K4MP98 / GenBank AFV27434.1 with Yu et al., MIBiG,
+    UniProt and Rhea evidence.
+  llm_assisted: true

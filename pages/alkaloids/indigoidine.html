@@ -84,7 +84,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>Sc-IndC indigoidine synthase<br><span class="mono">UniProtKB:K4MP98</span></td>
+  <td class="mono">RHEA:81499</td>
+  <td class="mono">CHEBI:58210 + CHEBI:58359 + CHEBI:30616 + CHEBI:15379 &rarr; CHEBI:79296 + CHEBI:57618 + CHEBI:456215 + CHEBI:33019 + CHEBI:15377</td>
+  <td class="mono">DOI:10.1007/s10295-012-1207-9</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Streptomyces chromofuscus ATCC 49982 Sc-IndC is the exact indigoidine synthase encoded by the MIBiG BGC0000375 indC CDS; Sc-IndB stimulation of indigoidine yield is left unexpanded because that accessory effect is not the Rhea-grounded synthase reaction curated here.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Streptomyces chromofuscus ATCC 49982 Sc-IndC converts L-glutamine to the blue pigment indigoidine.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>L-glutamine</td>
+  <td>is converted to indigoidine by</td>
+  <td>Sc-IndC</td>
+  <td>Sc-IndC catalyzes the RHEA:81499 overall conversion from two L-glutamine molecules to indigoidine.</td>
+  <td class="mono">DOI:10.1007/s10295-012-1207-9<br>https://mibig.secondarymetabolites.org/repository/BGC0000375.5/BGC0000375.gbk<br>https://www.uniprot.org/uniprotkb/K4MP98<br>https://www.rhea-db.org/rhea/81499</td>
+</tr>
+<tr>
+  <td>Sc-IndC</td>
+  <td>forms</td>
+  <td>indigoidine</td>
+  <td>Heterologous expression of Sc-IndC established it as the indigoidine synthase in the Streptomyces chromofuscus ATCC 49982 BGC0000375 cluster.</td>
+  <td class="mono">DOI:10.1007/s10295-012-1207-9<br>https://mibig.secondarymetabolites.org/repository/BGC0000375.5/BGC0000375.gbk<br>https://www.uniprot.org/uniprotkb/K4MP98<br>https://www.rhea-db.org/rhea/81499</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
