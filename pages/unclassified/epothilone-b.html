@@ -168,7 +168,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>EpoK epothilone C/D epoxidase<br><span class="mono">UniProtKB:Q9KIZ4</span></td>
+  <td class="mono">RHEA:47808</td>
+  <td class="mono">CHEBI:29579 &rarr; CHEBI:31550</td>
+  <td class="mono">DOI:10.1016/S0378-1119(00)00149-9</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: EpoK is the cytochrome P450 epoxidase that carries out terminal epoxidation of epothilone D to epothilone B; RHEA:47808 grounds the full reduced-ferredoxin-dependent monooxygenase reaction.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial S. cellulosum epothilone B biosynthesis graph for EpoK-catalyzed terminal epoxidation.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>epothilone D</td>
+  <td>is epoxidized by</td>
+  <td>EpoK epothilone C/D epoxidase</td>
+  <td>EpoK epoxidizes the 12,13-alkene of epothilone D.</td>
+  <td class="mono">DOI:10.1016/S0378-1119(00)00149-9<br>https://mibig.secondarymetabolites.org/repository/BGC0000991.4/BGC0000991.gbk<br>https://www.uniprot.org/uniprotkb/Q9KIZ4<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+<tr>
+  <td>EpoK epothilone C/D epoxidase</td>
+  <td>forms</td>
+  <td>epothilone B</td>
+  <td>The EpoK cytochrome P450 reaction forms epothilone B as the epoxidized product.</td>
+  <td class="mono">DOI:10.1016/S0378-1119(00)00149-9<br>https://mibig.secondarymetabolites.org/repository/BGC0000991.4/BGC0000991.gbk<br>https://www.uniprot.org/uniprotkb/Q9KIZ4<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
