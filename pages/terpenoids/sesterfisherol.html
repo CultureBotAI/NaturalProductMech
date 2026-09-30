@@ -79,7 +79,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>NfSS sesterfisherol synthase<br><span class="mono">UniProtKB:A1DN30</span></td>
+  <td class="mono">RHEA:54068</td>
+  <td class="mono">CHEBI:57907 &rarr; CHEBI:138046</td>
+  <td class="mono">DOI:10.1021/jacs.5b08319</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: NfSS cyclizes (2E,6E,10E,14E)-geranylfarnesyl diphosphate to the tetracyclic sesterterpene alcohol sesterfisherol. This single step records the sesterfisherol-forming RHEA:54068 reaction and leaves the downstream A1DN29/NfP450 oxidation to sesterfisheric acid unexpanded.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Aspergillus fischeri NRRL 181 NfSS cyclizes (2E,6E,10E,14E)-geranylfarnesyl diphosphate to form sesterfisherol.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>(2E,6E,10E,14E)-geranylfarnesyl diphosphate</td>
+  <td>is cyclized by</td>
+  <td>NfSS</td>
+  <td>NfSS is the bifunctional terpene synthase whose cyclase domain converts geranylfarnesyl diphosphate to the 5-6-8-5 tetracyclic sesterfisherol scaffold.</td>
+  <td class="mono">DOI:10.1021/jacs.5b08319<br>https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk<br>https://www.uniprot.org/uniprotkb/A1DN30<br>https://www.rhea-db.org/rhea/54068</td>
+</tr>
+<tr>
+  <td>NfSS</td>
+  <td>forms</td>
+  <td>sesterfisherol</td>
+  <td>Heterologous NfSS expression assigned the Aspergillus fischeri / Neosartorya fischeri enzyme as the sesterfisherol synthase.</td>
+  <td class="mono">DOI:10.1021/jacs.5b08319<br>https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk<br>https://www.uniprot.org/uniprotkb/A1DN30<br>https://www.rhea-db.org/rhea/54068</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
