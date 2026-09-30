@@ -140,6 +140,136 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-ec21907a03
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q8KZ94
+  enzyme_label: RebM demethylrebeccamycin-D-glucose O-methyltransferase
+  reaction_id: RHEA:27353
+  substrates:
+  - CHEBI:595389
+  - CHEBI:59789
+  product: CHEBI:135511
+  notes: RebM transfers the SAM methyl group to 4'-demethylrebeccamycin in the terminal
+    O-methylation that forms rebeccamycin; Rhea maps this EC 2.1.1.164 reaction to
+    RHEA:27353.
+  evidence:
+  - reference: DOI:10.1074/jbc.M800503200
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: RebM catalyzes glucosyl C-4′ O-methylation as the final step in rebeccamycin
+      biosynthesis
+    notes: Singh et al. expressed Lechevalieria aerocolonigenes RebM from the pCST28aRebM
+      construct, crystallized the enzyme, and analyzed SAM-dependent O-methyltransferase
+      catalysis by the wild type enzyme and site-directed mutants.
+  - reference: DOI:10.1002/cbic.200500504
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: in vitro RebM-catalyzed 4′-O-methylation
+    notes: Zhang et al. established that rebM encodes the rebeccamycin 4'-O-methyltransferase
+      and showed in vitro RebM methylation of RebG-derived indolocarbazole glucosides.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000821.5/BGC0000821.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0000821.5 maps the L. aerocolonigenes AB090952 rebeccamycin biosynthetic
+      gene cluster CDS BAC10678.1 to rebM.
+  - reference: https://www.uniprot.org/uniprotkb/Q8KZ94
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:Q8KZ94 is the 283 aa L. aerocolonigenes RebM demethylrebeccamycin-D-glucose
+      O-methyltransferase, cross-references AB090952 protein BAC10678.1, and annotates
+      RHEA:27353 from PMID:18502766.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: The Rhea Swiss-Prot mapping links UniProtKB:Q8KZ94 to the RebM O-methyltransferase
+      reaction RHEA:27353.
+causal_graphs:
+- graph_id: rebeccamycin-rebm-methylation
+  scope: BIOSYNTHESIS
+  description: Partial L. aerocolonigenes rebeccamycin biosynthesis graph for RebM-catalyzed
+    terminal 4'-O-methylation.
+  nodes:
+  - node_id: demethylrebeccamycin
+    label: 4'-demethylrebeccamycin
+    node_type: PRECURSOR
+    identifier: CHEBI:595389
+    grounding_status: GROUNDED
+  - node_id: rebm
+    label: RebM demethylrebeccamycin-D-glucose O-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KZ94
+    grounding_status: GROUNDED
+  - node_id: rebeccamycin
+    label: rebeccamycin
+    node_type: COMPOUND
+    identifier: CHEBI:135511
+    grounding_status: GROUNDED
+  edges:
+  - subject: demethylrebeccamycin
+    predicate: is methylated by
+    object: rebm
+    notes: RebM methylates the glucosyl 4'-hydroxy group of 4'-demethylrebeccamycin.
+    evidence:
+    - reference: DOI:10.1074/jbc.M800503200
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: RebM catalyzes glucosyl C-4′ O-methylation as the final step in rebeccamycin
+        biosynthesis
+      notes: Singh et al. expressed Lechevalieria aerocolonigenes RebM from the pCST28aRebM
+        construct, crystallized the enzyme, and analyzed SAM-dependent O-methyltransferase
+        catalysis by the wild type enzyme and site-directed mutants.
+    - reference: DOI:10.1002/cbic.200500504
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: in vitro RebM-catalyzed 4′-O-methylation
+      notes: Zhang et al. established that rebM encodes the rebeccamycin 4'-O-methyltransferase
+        and showed in vitro RebM methylation of RebG-derived indolocarbazole glucosides.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000821.5/BGC0000821.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000821.5 maps the L. aerocolonigenes AB090952 rebeccamycin
+        biosynthetic gene cluster CDS BAC10678.1 to rebM.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KZ94
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q8KZ94 is the 283 aa L. aerocolonigenes RebM demethylrebeccamycin-D-glucose
+        O-methyltransferase, cross-references AB090952 protein BAC10678.1, and annotates
+        RHEA:27353 from PMID:18502766.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:Q8KZ94 to the RebM O-methyltransferase
+        reaction RHEA:27353.
+  - subject: rebm
+    predicate: forms
+    object: rebeccamycin
+    notes: The SAM-dependent RebM reaction forms the final O-methylated rebeccamycin
+      structure.
+    evidence:
+    - reference: DOI:10.1074/jbc.M800503200
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: RebM catalyzes glucosyl C-4′ O-methylation as the final step in rebeccamycin
+        biosynthesis
+      notes: Singh et al. expressed Lechevalieria aerocolonigenes RebM from the pCST28aRebM
+        construct, crystallized the enzyme, and analyzed SAM-dependent O-methyltransferase
+        catalysis by the wild type enzyme and site-directed mutants.
+    - reference: DOI:10.1002/cbic.200500504
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: in vitro RebM-catalyzed 4′-O-methylation
+      notes: Zhang et al. established that rebM encodes the rebeccamycin 4'-O-methyltransferase
+        and showed in vitro RebM methylation of RebG-derived indolocarbazole glucosides.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000821.5/BGC0000821.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000821.5 maps the L. aerocolonigenes AB090952 rebeccamycin
+        biosynthetic gene cluster CDS BAC10678.1 to rebM.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KZ94
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q8KZ94 is the 283 aa L. aerocolonigenes RebM demethylrebeccamycin-D-glucose
+        O-methyltransferase, cross-references AB090952 protein BAC10678.1, and annotates
+        RHEA:27353 from PMID:18502766.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:Q8KZ94 to the RebM O-methyltransferase
+        reaction RHEA:27353.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -149,3 +279,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T13:22:24Z'
+  curator: codex
+  action: ADD_BIOSYNTHETIC_PROTEIN_GRAPH
+  changes: Added exact UniProtKB:Q8KZ94 RebM grounding, the RHEA:27353 terminal rebeccamycin
+    O-methylation pathway step, and a BIOSYNTHESIS causal graph linking 4'-demethylrebeccamycin
+    through RebM to rebeccamycin.
+  llm_assisted: true
