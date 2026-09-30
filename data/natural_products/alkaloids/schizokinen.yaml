@@ -194,6 +194,105 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0002633, BGC0002683.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+causal_graphs:
+- graph_id: schizokinen-lid-core-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Leptolyngbya sp. PCC 7376 LidC and LidF IucA/IucC-family synthetases
+    in the heterologously expressed lidA-lidF cassette that produces schizokinen.
+  nodes:
+  - node_id: lidc
+    label: LidC IucA/IucC family protein
+    node_type: ENZYME
+    identifier: UniProtKB:K9Q581
+    grounding_status: GROUNDED
+  - node_id: lidf
+    label: LidF IucA/IucC family protein
+    node_type: ENZYME
+    identifier: UniProtKB:K9Q4J7
+    grounding_status: GROUNDED
+  - node_id: lid_core_assembly
+    label: Leptolyngbya lidA-lidF schizokinen core assembly
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: schizokinen
+    label: schizokinen
+    node_type: COMPOUND
+    identifier: CHEBI:84582
+    grounding_status: GROUNDED
+  edges:
+  - subject: lidc
+    predicate: participates in
+    object: lid_core_assembly
+    notes: LidC is one of two IucA/IucC family synthetases in the experimentally expressed
+      Leptolyngbya lidA-lidF core cassette; no exact single-enzyme reaction was assigned.
+    evidence:
+    - reference: DOI:10.1128/aem.02373-21
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: expression strains harboring the first seven genes (lidA to lidF)
+      notes: Wang et al. cloned the Leptolyngbya sp. PCC 7376 siderophore cassette,
+        expressed lidA through lidF in Escherichia coli, and identified the produced
+        siderophore as schizokinen by UPLC-MS/MS and NMR. The paper places LidC and
+        LidF in the core schizokinen cassette but does not assign their individual
+        citrate-acylation order.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002633.2/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 2 maps BGC0002633 to schizokinen biosynthesis in
+        Leptolyngbya sp. PCC 7376 and lists Lepto7376_4149 / AFY40274.1 and Lepto7376_4153
+        / AFY40278.1 as IucA/IucC family protein CDS features inside the CP003946.1
+        locus.
+    - reference: https://www.uniprot.org/uniprotkb/K9Q581
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: UniProtKB:K9Q581 is the unreviewed [Leptolyngbya] sp. PCC 7376 IucA/IucC
+        family protein entry resolved from AFY40274.1 / Lepto7376_4149.
+  - subject: lidf
+    predicate: participates in
+    object: lid_core_assembly
+    notes: LidF is one of two IucA/IucC family synthetases in the experimentally expressed
+      Leptolyngbya lidA-lidF core cassette; no exact single-enzyme reaction was assigned.
+    evidence:
+    - reference: DOI:10.1128/aem.02373-21
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Wang et al. cloned the Leptolyngbya sp. PCC 7376 siderophore cassette,
+        expressed lidA through lidF in Escherichia coli, and identified the produced
+        siderophore as schizokinen by UPLC-MS/MS and NMR. The paper places LidC and
+        LidF in the core schizokinen cassette but does not assign their individual
+        citrate-acylation order.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002633.2/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 2 maps BGC0002633 to schizokinen biosynthesis in
+        Leptolyngbya sp. PCC 7376 and lists Lepto7376_4149 / AFY40274.1 and Lepto7376_4153
+        / AFY40278.1 as IucA/IucC family protein CDS features inside the CP003946.1
+        locus.
+    - reference: https://www.uniprot.org/uniprotkb/K9Q4J7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: UniProtKB:K9Q4J7 is the unreviewed [Leptolyngbya] sp. PCC 7376 IucA/IucC
+        family protein entry resolved from AFY40278.1 / Lepto7376_4153.
+  - subject: lid_core_assembly
+    predicate: produces
+    object: schizokinen
+    notes: Heterologous expression of lidA through lidF produced a schizokinen core;
+      the downstream lidG1-lidG5 genes were not required for the schizokinen product
+      detected in Escherichia coli.
+    evidence:
+    - reference: DOI:10.1128/aem.02373-21
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: identified via UPLC-MS/MS and NMR as schizokinen
+      notes: Wang et al. cloned the Leptolyngbya sp. PCC 7376 siderophore cassette,
+        expressed lidA through lidF in Escherichia coli, and identified the produced
+        siderophore as schizokinen by UPLC-MS/MS and NMR. The paper places LidC and
+        LidF in the core schizokinen cassette but does not assign their individual
+        citrate-acylation order.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002633.2/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 2 maps BGC0002633 to schizokinen biosynthesis in
+        Leptolyngbya sp. PCC 7376 and lists Lepto7376_4149 / AFY40274.1 and Lepto7376_4153
+        / AFY40278.1 as IucA/IucC family protein CDS features inside the CP003946.1
+        locus.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -203,3 +302,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T08:21:13Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for the Leptolyngbya sp. PCC 7376 lidA-lidF
+    schizokinen core cassette with UniProtKB-grounded LidC and LidF IucA/IucC family
+    protein nodes.
+  llm_assisted: true
