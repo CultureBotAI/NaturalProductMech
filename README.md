@@ -62,24 +62,24 @@ field coverage (records carrying at least one item):
   producer_organisms                   3076
   occurrences                          2342
   biosynthetic_gene_clusters           3115
-  biosynthetic_pathway                   72
+  biosynthetic_pathway                   73
   bioactivities                         176
   bioactivity_summary                   317
   molecular_targets                      14
-  causal_graphs                         112
+  causal_graphs                         113
   related_records                       205
   discussions                           325
 
-producer claims: 3407 (806 causal, 162 correlational)
-  BGC_CHARACTERIZED                     806
+producer claims: 3407 (807 causal, 162 correlational)
+  BGC_CHARACTERIZED                     807
   BGC_CORRELATED                        162
-  SOURCE_ASSERTION                     2439
+  SOURCE_ASSERTION                     2438
 
-cluster link claims: 3449 (1355 demonstrated)
+cluster link claims: 3449 (1356 demonstrated)
   CLUSTER_CORRELATED                    110
-  CLUSTER_DEMONSTRATED                 1355
+  CLUSTER_DEMONSTRATED                 1356
   CLUSTER_PREDICTED                       2
-  CLUSTER_UNSTATED                     1982
+  CLUSTER_UNSTATED                     1981
 
 records where a producer taxon is independently corroborated by a cited occurrence: 732
 records whose only origin evidence is a gene cluster with no named host: 27
