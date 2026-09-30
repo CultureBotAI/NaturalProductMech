@@ -284,6 +284,116 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0002035, BGC0002093.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A482N8M8
+  enzyme_label: IccE NADH-dependent flavin oxidoreductase
+  reaction_id: RHEA:64564
+  substrate: CHEBI:155888
+  product: CHEBI:77772
+  notes: Talaromyces variabilis HXQ-H-1 IccE epimerizes 8-epi-ilicicolin H to ilicicolin
+    H; upstream IccA-IccD assembly is left unexpanded.
+  evidence:
+  - reference: DOI:10.1021/jacs.9b02204
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: A predicted flavoenzyme IccE was identified to epimerize the IEDDA product
+      8-epi-ilicicolin H to ilicicolin H
+    notes: Zhang et al. characterized the Penicillium variabile, synonymous with Talaromyces
+      variabilis, icc pathway and showed that IccE converts 8-epi-ilicicolin H to
+      ilicicolin H in heterologous reconstitution and in vitro epimerization experiments.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: GenBank MK539848.1 is the Talaromyces variabilis HXQ-H-1 ilicicolin H cluster
+      sequence and places iccE at protein_id QBQ83707.1.
+  - reference: https://www.uniprot.org/uniprotkb/A0A482N8M8
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:A0A482N8M8 is the Talaromyces variabilis IccE / QBQ83707.1
+      gene product and annotates the RHEA:64564 catalytic activity of 8-epi-ilicicolin
+      H epimerization.
+  - reference: https://www.rhea-db.org/rhea/64564
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:64564 is the 8-epi-ilicicolin H to ilicicolin H epimerization; the
+      left-to-right RHEA:64565 direction maps to UniProtKB:A0A482N8M8.
+causal_graphs:
+- graph_id: ilicicolin-icce-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Talaromyces variabilis HXQ-H-1 IccE epimerizes 8-epi-ilicicolin H to
+    form ilicicolin H.
+  nodes:
+  - node_id: epi_ilicicolin_h
+    label: 8-epi-ilicicolin H
+    node_type: PRECURSOR
+    identifier: CHEBI:155888
+    grounding_status: GROUNDED
+  - node_id: icce
+    label: IccE
+    node_type: ENZYME
+    identifier: UniProtKB:A0A482N8M8
+    grounding_status: GROUNDED
+  - node_id: ilicicolin_h
+    label: ilicicolin H
+    node_type: COMPOUND
+    identifier: CHEBI:77772
+    grounding_status: GROUNDED
+  edges:
+  - subject: epi_ilicicolin_h
+    predicate: is epimerized by
+    object: icce
+    notes: IccE catalyzes the RHEA:64564 epimerization from 8-epi-ilicicolin H.
+    evidence:
+    - reference: DOI:10.1021/jacs.9b02204
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Zhang et al. characterized the Penicillium variabile, synonymous with
+        Talaromyces variabilis, icc pathway and showed that IccE converts 8-epi-ilicicolin
+        H to ilicicolin H in heterologous reconstitution and in vitro epimerization
+        experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: GenBank MK539848.1 is the Talaromyces variabilis HXQ-H-1 ilicicolin H
+        cluster sequence and places iccE at protein_id QBQ83707.1.
+    - reference: https://www.uniprot.org/uniprotkb/A0A482N8M8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:A0A482N8M8 is the Talaromyces variabilis IccE / QBQ83707.1
+        gene product and annotates the RHEA:64564 catalytic activity of 8-epi-ilicicolin
+        H epimerization.
+    - reference: https://www.rhea-db.org/rhea/64564
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:64564 is the 8-epi-ilicicolin H to ilicicolin H epimerization; the
+        left-to-right RHEA:64565 direction maps to UniProtKB:A0A482N8M8.
+  - subject: icce
+    predicate: forms
+    object: ilicicolin_h
+    notes: IccE forms ilicicolin H as the final product of the Talaromyces variabilis
+      icc pathway.
+    evidence:
+    - reference: DOI:10.1021/jacs.9b02204
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Zhang et al. characterized the Penicillium variabile, synonymous with
+        Talaromyces variabilis, icc pathway and showed that IccE converts 8-epi-ilicicolin
+        H to ilicicolin H in heterologous reconstitution and in vitro epimerization
+        experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MK539848.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: GenBank MK539848.1 is the Talaromyces variabilis HXQ-H-1 ilicicolin H
+        cluster sequence and places iccE at protein_id QBQ83707.1.
+    - reference: https://www.uniprot.org/uniprotkb/A0A482N8M8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:A0A482N8M8 is the Talaromyces variabilis IccE / QBQ83707.1
+        gene product and annotates the RHEA:64564 catalytic activity of 8-epi-ilicicolin
+        H epimerization.
+    - reference: https://www.rhea-db.org/rhea/64564
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:64564 is the 8-epi-ilicicolin H to ilicicolin H epimerization; the
+        left-to-right RHEA:64565 direction maps to UniProtKB:A0A482N8M8.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -297,3 +407,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T22:41:38Z'
+  curator: codex
+  action: CURATED_BIOSYNTHESIS_GRAPH
+  changes: Added the Talaromyces variabilis IccE 8-epi-ilicicolin H epimerization
+    step and RHEA:64564 / UniProtKB:A0A482N8M8-grounded ilicicolin H BIOSYNTHESIS
+    causal graph.
+  llm_assisted: true
