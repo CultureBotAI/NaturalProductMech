@@ -143,6 +143,143 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-19e7f75fd9
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 4
+  enzyme_id: UniProtKB:Q3M6C6
+  enzyme_label: Ava_3855 NRPS-like shinorine synthase
+  notes: Trichormus variabilis ATCC 29413 Ava_3855 catalyzes the ATP-dependent terminal
+    serine incorporation step that converts mycosporine glycine to shinorine. No exact
+    Rhea reaction was available for this serine addition.
+  evidence:
+  - reference: DOI:10.1126/science.1193637
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: HPLC assays confirmed its role in converting mycosporine glycine and
+      serine to shinorine
+    notes: Balskus and Walsh showed that the complete 6.5 kb Ava_3858-Ava_3855 cluster
+      produced shinorine in Escherichia coli, that a construct truncated before Ava_3855
+      accumulated mycosporine glycine, and that purified Ava_3855 converted mycosporine
+      glycine plus serine to shinorine in an ATP-dependent HPLC assay.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000427.5/
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG entry version 5 links BGC0000427 to shinorine biosynthesis in Trichormus
+      variabilis ATCC 29413 and lists Ava_3855 / ABA23460.1 at CP000117.1:4798900-4801566
+      on the minus strand.
+  - reference: https://www.uniprot.org/uniprotkb/Q3M6C6
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Unreviewed UniProtKB:Q3M6C6 is the Trichormus variabilis ATCC 29413 / PCC
+      7937 Ava_3855 amino acid adenylation entry cross-referenced to EMBL CP000117
+      and GenPept ABA23460.1.
+  substrates:
+  - naturalproductmech:mibig-00a364fe41
+  - CHEBI:17115
+  product: CHEBI:131712
+causal_graphs:
+- graph_id: shinorine-ava3855-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Trichormus variabilis ATCC 29413 Ava_3855-catalyzed terminal attachment
+    of serine to mycosporine glycine in shinorine biosynthesis.
+  nodes:
+  - node_id: mycosporine_glycine
+    label: mycosporine glycine
+    node_type: PRECURSOR
+    identifier: naturalproductmech:mibig-00a364fe41
+    grounding_status: GROUNDED
+  - node_id: l_serine
+    label: L-serine
+    node_type: PRECURSOR
+    identifier: CHEBI:17115
+    grounding_status: GROUNDED
+  - node_id: ava3855
+    label: Ava_3855
+    node_type: ENZYME
+    identifier: UniProtKB:Q3M6C6
+    grounding_status: GROUNDED
+  - node_id: shinorine
+    label: shinorine
+    node_type: COMPOUND
+    identifier: CHEBI:131712
+    grounding_status: GROUNDED
+  edges:
+  - subject: mycosporine_glycine
+    predicate: is converted to shinorine by
+    object: ava3855
+    notes: Purified Ava_3855 uses mycosporine glycine and serine as substrates in
+      ATP-dependent shinorine formation.
+    evidence:
+    - reference: DOI:10.1126/science.1193637
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: HPLC assays confirmed its role in converting mycosporine glycine and
+        serine to shinorine
+      notes: Balskus and Walsh showed that the complete 6.5 kb Ava_3858-Ava_3855 cluster
+        produced shinorine in Escherichia coli, that a construct truncated before
+        Ava_3855 accumulated mycosporine glycine, and that purified Ava_3855 converted
+        mycosporine glycine plus serine to shinorine in an ATP-dependent HPLC assay.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000427.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 links BGC0000427 to shinorine biosynthesis in Trichormus
+        variabilis ATCC 29413 and lists Ava_3855 / ABA23460.1 at CP000117.1:4798900-4801566
+        on the minus strand.
+    - reference: https://www.uniprot.org/uniprotkb/Q3M6C6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Unreviewed UniProtKB:Q3M6C6 is the Trichormus variabilis ATCC 29413 /
+        PCC 7937 Ava_3855 amino acid adenylation entry cross-referenced to EMBL CP000117
+        and GenPept ABA23460.1.
+  - subject: l_serine
+    predicate: is attached to mycosporine glycine by
+    object: ava3855
+    notes: Ava_3855 activates serine through its adenylation domain and loads it onto
+      the enzyme thiolation domain before shinorine formation.
+    evidence:
+    - reference: DOI:10.1126/science.1193637
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: HPLC assays confirmed its role in converting mycosporine glycine and
+        serine to shinorine
+      notes: Balskus and Walsh showed that the complete 6.5 kb Ava_3858-Ava_3855 cluster
+        produced shinorine in Escherichia coli, that a construct truncated before
+        Ava_3855 accumulated mycosporine glycine, and that purified Ava_3855 converted
+        mycosporine glycine plus serine to shinorine in an ATP-dependent HPLC assay.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000427.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 links BGC0000427 to shinorine biosynthesis in Trichormus
+        variabilis ATCC 29413 and lists Ava_3855 / ABA23460.1 at CP000117.1:4798900-4801566
+        on the minus strand.
+    - reference: https://www.uniprot.org/uniprotkb/Q3M6C6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Unreviewed UniProtKB:Q3M6C6 is the Trichormus variabilis ATCC 29413 /
+        PCC 7937 Ava_3855 amino acid adenylation entry cross-referenced to EMBL CP000117
+        and GenPept ABA23460.1.
+  - subject: ava3855
+    predicate: forms
+    object: shinorine
+    notes: Full-cluster heterologous expression produced shinorine, while the Ava_3855-truncated
+      construct accumulated mycosporine glycine.
+    evidence:
+    - reference: DOI:10.1126/science.1193637
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: HPLC assays confirmed its role in converting mycosporine glycine and
+        serine to shinorine
+      notes: Balskus and Walsh showed that the complete 6.5 kb Ava_3858-Ava_3855 cluster
+        produced shinorine in Escherichia coli, that a construct truncated before
+        Ava_3855 accumulated mycosporine glycine, and that purified Ava_3855 converted
+        mycosporine glycine plus serine to shinorine in an ATP-dependent HPLC assay.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000427.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 links BGC0000427 to shinorine biosynthesis in Trichormus
+        variabilis ATCC 29413 and lists Ava_3855 / ABA23460.1 at CP000117.1:4798900-4801566
+        on the minus strand.
+    - reference: https://www.uniprot.org/uniprotkb/Q3M6C6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Unreviewed UniProtKB:Q3M6C6 is the Trichormus variabilis ATCC 29413 /
+        PCC 7937 Ava_3855 amino acid adenylation entry cross-referenced to EMBL CP000117
+        and GenPept ABA23460.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -152,3 +289,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T06:39:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added an Ava_3855-grounded biosynthetic pathway step and BIOSYNTHESIS causal
+    graph for ATP-dependent terminal serine incorporation during shinorine biosynthesis.
+  llm_assisted: true
