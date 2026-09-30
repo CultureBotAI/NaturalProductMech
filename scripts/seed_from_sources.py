@@ -61,7 +61,11 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from naturalproductmech.curate.curation_event import record_curation_event  # noqa: E402
-from naturalproductmech.grading import grade_cluster_link, load_evidence_map  # noqa: E402
+from naturalproductmech.grading import (  # noqa: E402
+    grade_cluster_link,
+    grade_production,
+    load_evidence_map,
+)
 from naturalproductmech.validation.write_validated import (  # noqa: E402
     ValidationFailedError,
     write_validated_natural_product,
@@ -379,6 +383,7 @@ def load_mibig_locus_evidence_overrides(
             )
         overrides[identifier] = {
             "locus_evidence_methods": "|".join(methods),
+            "producer_evidence_basis": grade_production(methods, evidence_map),
             "cluster_link_evidence_basis": grade_cluster_link(methods, evidence_map),
         }
     return overrides

@@ -70,10 +70,10 @@ field coverage (records carrying at least one item):
   related_records                       205
   discussions                           325
 
-producer claims: 3407 (805 causal, 162 correlational)
-  BGC_CHARACTERIZED                     805
+producer claims: 3407 (806 causal, 162 correlational)
+  BGC_CHARACTERIZED                     806
   BGC_CORRELATED                        162
-  SOURCE_ASSERTION                     2440
+  SOURCE_ASSERTION                     2439
 
 cluster link claims: 3449 (1354 demonstrated)
   CLUSTER_CORRELATED                    110

@@ -30,7 +30,7 @@ producer_taxon_groups:
 producer_organisms:
 - taxon_id: NCBITaxon:5062
   taxon_label: Aspergillus oryzae
-  evidence_basis: SOURCE_ASSERTION
+  evidence_basis: BGC_CHARACTERIZED
   biosynthetic_gene_cluster: mibig:BGC0000977
   source: MIBIG
   source_version: '4'
@@ -184,6 +184,10 @@ curation_history:
     to UniProtKB:C9K202.
   llm_assisted: true
 - timestamp: '2026-09-30T01:22:40Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-09-30T01:58:15Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.

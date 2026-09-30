@@ -276,14 +276,27 @@ def test_mibig_locus_evidence_override_updates_only_matching_compound_row():
         "compound_index": "2",
         "standard_inchi_key": "YDNKGFDKKRUKPY-UHFFFAOYSA-N",
     }
+    native_knockout = {
+        **base,
+        "compound_name": "native knockout",
+        "compound_index": "3",
+        "standard_inchi_key": "CSCPPACGZOOCGX-UHFFFAOYSA-N",
+    }
     override_key = seed.mint_identifier("MIBIG", "BGC0000004:1")
+    native_key = seed.mint_identifier("MIBIG", "BGC0000004:3")
 
     records = seed.build_records({
-        "mibig_compounds": [matching, sibling],
-        "mibig_locus_evidence_overrides": [{
-            "minted_identifier": override_key,
-            "locus_evidence_methods": "Enzymatic assays|In vitro expression",
-        }],
+        "mibig_compounds": [matching, sibling, native_knockout],
+        "mibig_locus_evidence_overrides": [
+            {
+                "minted_identifier": override_key,
+                "locus_evidence_methods": "Enzymatic assays|In vitro expression",
+            },
+            {
+                "minted_identifier": native_key,
+                "locus_evidence_methods": "Knock-out studies",
+            },
+        ],
     })
 
     by_label = {doc["label"]: doc for doc in records}
@@ -297,6 +310,13 @@ def test_mibig_locus_evidence_override_updates_only_matching_compound_row():
 
     assert by_label["override B"]["biosynthetic_gene_clusters"][0]["link_evidence_basis"] == \
         "CLUSTER_UNSTATED"
+
+    native = by_label["native knockout"]
+    assert native["producer_organisms"][0]["evidence_basis"] == "BGC_CHARACTERIZED"
+    assert native["biosynthetic_gene_clusters"][0]["locus_evidence_methods"] == [
+        "Knock-out studies"]
+    assert native["biosynthetic_gene_clusters"][0]["link_evidence_basis"] == \
+        "CLUSTER_DEMONSTRATED"
 
 
 def test_heterologous_expression_is_not_a_producer_basis_in_the_schema():
