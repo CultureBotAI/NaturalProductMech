@@ -244,6 +244,98 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000653, BGC0000678.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:E3VWI3
+  enzyme_label: Pentalenolactone synthase
+  reaction_id: RHEA:34575
+  notes: Streptomyces arenae PntM/CYP161C2 catalyzes the terminal oxidative rearrangement
+    of pentalenolactone F to pentalenolactone; upstream pentalenolactone F assembly
+    is not represented.
+  evidence:
+  - reference: DOI:10.1021/ja111279h
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: PenM and PntM both catalyzed the oxidative rearrangement of 4 to 1
+    notes: The source identifies compound 4 as pentalenolactone F and compound 1 as
+      pentalenolactone; recombinant Streptomyces arenae PntM/CYP161C2 converted pentalenolactone
+      F to pentalenolactone in vitro.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000653.5/
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG entry version 5 links BGC0000653 to pentalenolactone biosynthesis
+      in Streptomyces arenae.
+  - reference: https://www.uniprot.org/uniprotkb/E3VWI3
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: UniProtKB:E3VWI3 is the reviewed Streptomyces arenae PntM/CYP161C2 gene
+      product from HQ292065 and annotates EC:1.14.19.8/RHEA:34575 for the pentalenolactone
+      F to pentalenolactone oxidative rearrangement.
+  substrate: CHEBI:70809
+  product: CHEBI:70816
+causal_graphs:
+- graph_id: pentalenolactone-pntm-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Streptomyces arenae PntM-catalyzed terminal oxidative rearrangement
+    of pentalenolactone F to pentalenolactone.
+  nodes:
+  - node_id: pentalenolactone_f
+    label: pentalenolactone F
+    node_type: PRECURSOR
+    identifier: CHEBI:70809
+    grounding_status: GROUNDED
+  - node_id: pntm
+    label: PntM
+    node_type: ENZYME
+    identifier: UniProtKB:E3VWI3
+    grounding_status: GROUNDED
+  - node_id: pentalenolactone
+    label: pentalenolactone
+    node_type: COMPOUND
+    identifier: CHEBI:70816
+    grounding_status: GROUNDED
+  edges:
+  - subject: pentalenolactone_f
+    predicate: is oxidatively rearranged by
+    object: pntm
+    evidence:
+    - reference: DOI:10.1021/ja111279h
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: PenM and PntM both catalyzed the oxidative rearrangement of 4 to 1
+      notes: The source identifies compound 4 as pentalenolactone F and compound 1
+        as pentalenolactone; recombinant Streptomyces arenae PntM/CYP161C2 converted
+        pentalenolactone F to pentalenolactone in vitro.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000653.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 links BGC0000653 to pentalenolactone biosynthesis
+        in Streptomyces arenae.
+    - reference: https://www.uniprot.org/uniprotkb/E3VWI3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: UniProtKB:E3VWI3 is the reviewed Streptomyces arenae PntM/CYP161C2 gene
+        product from HQ292065 and annotates EC:1.14.19.8/RHEA:34575 for the pentalenolactone
+        F to pentalenolactone oxidative rearrangement.
+  - subject: pntm
+    predicate: forms
+    object: pentalenolactone
+    evidence:
+    - reference: DOI:10.1021/ja111279h
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: PenM and PntM both catalyzed the oxidative rearrangement of 4 to 1
+      notes: The source identifies compound 4 as pentalenolactone F and compound 1
+        as pentalenolactone; recombinant Streptomyces arenae PntM/CYP161C2 converted
+        pentalenolactone F to pentalenolactone in vitro.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000653.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 links BGC0000653 to pentalenolactone biosynthesis
+        in Streptomyces arenae.
+    - reference: https://www.uniprot.org/uniprotkb/E3VWI3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: UniProtKB:E3VWI3 is the reviewed Streptomyces arenae PntM/CYP161C2 gene
+        product from HQ292065 and annotates EC:1.14.19.8/RHEA:34575 for the pentalenolactone
+        F to pentalenolactone oxidative rearrangement.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -253,3 +345,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T03:56:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a terminal-step BIOSYNTHESIS pathway and causal graph for pentalenolactone
+    biosynthesis; grounded Streptomyces arenae PntM/CYP161C2 to UniProtKB:E3VWI3;
+    and cited the experimentally characterized RHEA:34575 oxidative rearrangement
+    of pentalenolactone F to pentalenolactone.
+  llm_assisted: true
