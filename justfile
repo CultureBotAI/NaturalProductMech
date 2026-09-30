@@ -279,12 +279,8 @@ lint-fix:
 qc:
     uv run python scripts/run_qc.py
 
-# Check the claw-governed vendored files against canon.
-#
-# EXPECTED TO FAIL until M4: the checker resolves this repository's identity
-# through claw's consumer registry, and NaturalProductMech is not admitted to
-# the fleet manifest yet (PLAN.md section 7). The files themselves ARE vendored
-# byte-identical at the pinned ref. Part of `just qc` since admission
-# (culturebotai-claw#395); kept as its own recipe for a quick local run.
+# Check the claw-governed vendored files against canon at the pinned claw
+# revision. Part of `just qc` since admission (culturebotai-claw#395); kept as
+# its own recipe for a quick local run.
 vendored-sync:
     bash scripts/check_vendored_sync.sh

@@ -11,11 +11,9 @@ inventories in `data/raw/` (`just verify-reproduction`). `producer_organisms` an
 listed as commands do not exist: the curation worklist (#52) and the site
 renderer (#53). They are owed in `NEXT_TASKS.md`, not named below as available.
 
-One gate is deliberately outside `just qc`: `just vendored-sync`. Its checker
-resolves this repository's identity through claw's consumer registry, and
-NaturalProductMech is not admitted to the fleet manifest until M4. The governed
-files ARE vendored byte-identical at the pinned ref, so the failure is on
-identity, not content. Admission adds it to the gate. Until then
+`just qc` includes the claw vendored-sync check (`just vendored-sync` runs it
+alone): NaturalProductMech is a governance consumer in claw's manifest, so the
+checker verifies every governed file against the pinned claw revision. Offline,
 `tests/test_vendored_artifacts.py` is the drift guard: it compares every
 fleet-wide artifact, bytes and mode, against `scripts/.vendored_manifest.json`,
 claw's manifest snapshotted at the pin. A re-pin is three things in one PR:

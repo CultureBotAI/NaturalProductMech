@@ -1,13 +1,12 @@
 """Every claw-governed artifact matches claw's manifest at the pinned ref — offline.
 
 Why this exists (#51). `just vendored-sync` resolves this repository's identity
-through claw's consumer registry *before* it compares a single byte, and
-NaturalProductMech is not registered until M4 admission. Until then that gate
-tests registration and nothing else: eleven of the thirteen fleet-wide
+through claw's consumer registry *before* it compares a single byte. Before
+NaturalProductMech was admitted (culturebotai-claw#395) that gate therefore
+tested registration and nothing else: eleven of the then thirteen fleet-wide
 artifacts had no drift guard at all, because ``tests/test_schema.py`` hash-pins
-the two schema modules only. The checker itself, its launcher, the id-label
-validator, ``chem_formula.py`` and five vendored contract tests could be edited
-on ``main`` with every gate green.
+the two schema modules only. Since admission the gate compares bytes too; these
+tests stay as the drift guard that needs no network.
 
 ``scripts/.vendored_manifest.json`` is claw's ``vendored_artifacts.json`` at the
 commit in ``scripts/.vendored_canon_ref``, committed byte-for-byte. These tests
