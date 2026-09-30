@@ -49,7 +49,7 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000683
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
     this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:20536237
@@ -70,7 +70,9 @@ biosynthetic_gene_clusters:
   locus_to: 87080
   bgc_class:
   - TERPENE
-  link_evidence_basis: CLUSTER_UNSTATED
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000683
@@ -84,6 +86,94 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-65dfe9e019
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q82RR7
+  enzyme_label: Avermitilol synthase
+  reaction_id: RHEA:32023
+  notes: Streptomyces avermitilis SAV_76/Tpc1 cyclizes (2E,6E)-farnesyl diphosphate
+    to avermitilol.
+  evidence:
+  - reference: DOI:10.1021/ja103087w
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Incubation of the recombinant protein, SAV_76, with farnesyl diphosphate
+    notes: Recombinant Streptomyces avermitilis SAV_76/Tpc1 cyclized farnesyl diphosphate
+      to avermitilol.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000683.3/
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG entry version 3 links BGC0000683 to avermitilol biosynthesis in Streptomyces
+      avermitilis MA-4680.
+  - reference: https://www.uniprot.org/uniprotkb/Q82RR7
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: UniProtKB:Q82RR7 is the reviewed Streptomyces avermitilis MA-4680 Tpc1/SAV_76
+      gene product, maps to EMBL BA000030 protein BAC67785.1, and annotates RHEA:32023
+      for cyclization of farnesyl diphosphate to avermitilol plus diphosphate.
+  substrate: CHEBI:175763
+  product: CHEBI:63702
+causal_graphs:
+- graph_id: avermitilol-tpc1-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Streptomyces avermitilis avermitilol biosynthesis graph for Tpc1-catalyzed
+    cyclization of (2E,6E)-farnesyl diphosphate to avermitilol.
+  nodes:
+  - node_id: fpp
+    label: (2E,6E)-farnesyl diphosphate
+    node_type: PRECURSOR
+    identifier: CHEBI:175763
+    grounding_status: GROUNDED
+  - node_id: tpc1
+    label: Tpc1
+    node_type: ENZYME
+    identifier: UniProtKB:Q82RR7
+    grounding_status: GROUNDED
+  - node_id: avermitilol
+    label: avermitilol
+    node_type: COMPOUND
+    identifier: CHEBI:63702
+    grounding_status: GROUNDED
+  edges:
+  - subject: fpp
+    predicate: is cyclized by
+    object: tpc1
+    evidence:
+    - reference: DOI:10.1021/ja103087w
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Incubation of the recombinant protein, SAV_76, with farnesyl diphosphate
+      notes: Recombinant Streptomyces avermitilis SAV_76/Tpc1 cyclized farnesyl diphosphate
+        to avermitilol.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000683.3/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 3 links BGC0000683 to avermitilol biosynthesis in
+        Streptomyces avermitilis MA-4680.
+    - reference: https://www.uniprot.org/uniprotkb/Q82RR7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: UniProtKB:Q82RR7 is the reviewed Streptomyces avermitilis MA-4680 Tpc1/SAV_76
+        gene product, maps to EMBL BA000030 protein BAC67785.1, and annotates RHEA:32023
+        for cyclization of farnesyl diphosphate to avermitilol plus diphosphate.
+  - subject: tpc1
+    predicate: forms
+    object: avermitilol
+    evidence:
+    - reference: DOI:10.1021/ja103087w
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Incubation of the recombinant protein, SAV_76, with farnesyl diphosphate
+      notes: Recombinant Streptomyces avermitilis SAV_76/Tpc1 cyclized farnesyl diphosphate
+        to avermitilol.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000683.3/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 3 links BGC0000683 to avermitilol biosynthesis in
+        Streptomyces avermitilis MA-4680.
+    - reference: https://www.uniprot.org/uniprotkb/Q82RR7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: UniProtKB:Q82RR7 is the reviewed Streptomyces avermitilis MA-4680 Tpc1/SAV_76
+        gene product, maps to EMBL BA000030 protein BAC67785.1, and annotates RHEA:32023
+        for cyclization of farnesyl diphosphate to avermitilol plus diphosphate.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -93,3 +183,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T03:09:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a one-step BIOSYNTHESIS pathway and causal graph for avermitilol
+    biosynthesis; grounded Streptomyces avermitilis Tpc1/SAV_76 to UniProtKB:Q82RR7;
+    and cited the experimentally characterized RHEA:32023 sesquiterpene synthase step.
+  llm_assisted: true
+- timestamp: '2026-09-30T03:09:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
