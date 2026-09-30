@@ -321,6 +321,108 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:D7PI20
+  enzyme_label: GsfF cytochrome P450 monooxygenase
+  reaction_id: RHEA:73935
+  substrate: CHEBI:193066
+  product: CHEBI:193067
+  notes: GsfF performs the late oxidative phenolic coupling that converts griseophenone
+    B into the grisan scaffold of desmethyl-dehydrogriseofulvin during griseofulvin
+    biosynthesis.
+  evidence:
+  - reference: DOI:10.1021/cb400541z
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: 90% conversion of 11 to 14
+    notes: Cacho et al. deleted gsfF in Penicillium aethiopicum, observed griseophenone
+      B accumulation, expressed GsfF with Aspergillus terreus cytochrome P450 reductase
+      in Saccharomyces cerevisiae, and confirmed that GsfF converts griseophenone
+      B, compound 11, to the grisan product desmethyl-dehydrogriseofulvin, compound
+      14.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+      gene cluster CDS ADI24958.2 to GsfF.
+  - reference: https://www.uniprot.org/uniprotkb/D7PI20
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:D7PI20 is the 504 aa P. aethiopicum GsfF cytochrome
+      P450 monooxygenase, cross-references GU574478 protein ADI24958.2, and annotates
+      RHEA:73935 from PMID:23978092.
+causal_graphs:
+- graph_id: griseofulvin-gsff-grisan-formation
+  scope: BIOSYNTHESIS
+  description: Partial P. aethiopicum griseofulvin biosynthesis graph for GsfF-catalyzed
+    grisan scaffold formation.
+  nodes:
+  - node_id: griseophenone_b
+    label: griseophenone B
+    node_type: PRECURSOR
+    identifier: CHEBI:193066
+    grounding_status: GROUNDED
+  - node_id: gsff
+    label: GsfF cytochrome P450 monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:D7PI20
+    grounding_status: GROUNDED
+  - node_id: desmethyl_dehydrogriseofulvin
+    label: desmethyl-dehydrogriseofulvin
+    node_type: COMPOUND
+    identifier: CHEBI:193067
+    grounding_status: GROUNDED
+  edges:
+  - subject: griseophenone_b
+    predicate: is oxidatively coupled by
+    object: gsff
+    notes: GsfF catalyzes oxidative coupling of the orcinol and phloroglucinol rings
+      in griseophenone B.
+    evidence:
+    - reference: DOI:10.1021/cb400541z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 90% conversion of 11 to 14
+      notes: Cacho et al. deleted gsfF in Penicillium aethiopicum, observed griseophenone
+        B accumulation, expressed GsfF with Aspergillus terreus cytochrome P450 reductase
+        in Saccharomyces cerevisiae, and confirmed that GsfF converts griseophenone
+        B, compound 11, to the grisan product desmethyl-dehydrogriseofulvin, compound
+        14.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+        gene cluster CDS ADI24958.2 to GsfF.
+    - reference: https://www.uniprot.org/uniprotkb/D7PI20
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:D7PI20 is the 504 aa P. aethiopicum GsfF cytochrome
+        P450 monooxygenase, cross-references GU574478 protein ADI24958.2, and annotates
+        RHEA:73935 from PMID:23978092.
+  - subject: gsff
+    predicate: forms
+    object: desmethyl_dehydrogriseofulvin
+    notes: The spirocyclic product is compound 14 in the primary paper and is curated
+      as desmethyl-dehydrogriseofulvin in ChEBI and Rhea.
+    evidence:
+    - reference: DOI:10.1021/cb400541z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 90% conversion of 11 to 14
+      notes: Cacho et al. deleted gsfF in Penicillium aethiopicum, observed griseophenone
+        B accumulation, expressed GsfF with Aspergillus terreus cytochrome P450 reductase
+        in Saccharomyces cerevisiae, and confirmed that GsfF converts griseophenone
+        B, compound 11, to the grisan product desmethyl-dehydrogriseofulvin, compound
+        14.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+        gene cluster CDS ADI24958.2 to GsfF.
+    - reference: https://www.uniprot.org/uniprotkb/D7PI20
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:D7PI20 is the 504 aa P. aethiopicum GsfF cytochrome
+        P450 monooxygenase, cross-references GU574478 protein ADI24958.2, and annotates
+        RHEA:73935 from PMID:23978092.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -334,3 +436,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T09:49:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a GsfF biosynthetic pathway step and BIOSYNTHESIS causal graph for
+    griseophenone B conversion to desmethyl-dehydrogriseofulvin, grounded to UniProtKB:D7PI20,
+    RHEA:73935, CHEBI:193066, CHEBI:193067, MIBiG BGC0000070.5, and Cacho et al. 2013.
+  llm_assisted: true

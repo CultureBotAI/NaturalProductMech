@@ -80,7 +80,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>GsfF cytochrome P450 monooxygenase<br><span class="mono">UniProtKB:D7PI20</span></td>
+  <td class="mono">RHEA:73935</td>
+  <td class="mono">CHEBI:193066 &rarr; CHEBI:193067</td>
+  <td class="mono">DOI:10.1021/cb400541z</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: GsfF performs the late oxidative phenolic coupling that converts griseophenone B into the grisan scaffold of desmethyl-dehydrogriseofulvin during griseofulvin biosynthesis.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial P. aethiopicum griseofulvin biosynthesis graph for GsfF-catalyzed grisan scaffold formation.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>griseophenone B</td>
+  <td>is oxidatively coupled by</td>
+  <td>GsfF cytochrome P450 monooxygenase</td>
+  <td>GsfF catalyzes oxidative coupling of the orcinol and phloroglucinol rings in griseophenone B.</td>
+  <td class="mono">DOI:10.1021/cb400541z<br>https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk<br>https://www.uniprot.org/uniprotkb/D7PI20</td>
+</tr>
+<tr>
+  <td>GsfF cytochrome P450 monooxygenase</td>
+  <td>forms</td>
+  <td>desmethyl-dehydrogriseofulvin</td>
+  <td>The spirocyclic product is compound 14 in the primary paper and is curated as desmethyl-dehydrogriseofulvin in ChEBI and Rhea.</td>
+  <td class="mono">DOI:10.1021/cb400541z<br>https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk<br>https://www.uniprot.org/uniprotkb/D7PI20</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
