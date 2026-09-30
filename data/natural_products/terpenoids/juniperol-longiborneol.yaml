@@ -81,6 +81,113 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:I1S104
+  enzyme_label: CLM1 longiborneol synthase
+  substrate: CHEBI:175763
+  product: naturalproductmech:mibig-390b0e4f55
+  notes: CLM1/FGSG_10397 cyclizes (2E,6E)-farnesyl diphosphate to the longiborneol
+    represented by this MIBiG record. RHEA:83907 is not used here because it fixes
+    (-)-longiborneol, while this record leaves several longiborneol stereocenters
+    unspecified.
+  evidence:
+  - reference: DOI:10.1128/AEM.02017-09
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: resulted in the production of a sesquiterpene alcohol, longiborneol
+    notes: McCormick et al. expressed fg10397/CLM1 in Saccharomyces cerevisiae and
+      identified longiborneol by GC-MS/NMR; disruption and add-back experiments tied
+      the gene to culmorin biosynthesis.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002176.3/
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-29'
+    notes: MIBiG BGC0002176.3 places FGSG_10397 / ESU17105.1 in the Fusarium graminearum
+      PH-1 culmorin/(+)-juniperol(longiborneol) BGC at CM000574.1:10717529-10718727.
+  - reference: https://www.uniprot.org/uniprotkb/I1S104
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-29'
+    notes: UniProtKB reviewed entry I1S104 resolves to the 339 aa Fusarium graminearum
+      PH-1 longiborneol synthase CLM1 and annotates the farnesyl-diphosphate cyclization
+      from PMID:19880637.
+  - reference: https://www.ncbi.nlm.nih.gov/gene/23557306
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-29'
+    notes: NCBI Gene resolves FGSG_10397 in Fusarium graminearum PH-1 and cross-references
+      UniProtKB/Swiss-Prot I1S104.
+causal_graphs:
+- graph_id: juniperol-clm1-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Fusarium graminearum PH-1 CLM1 cyclization of (2E,6E)-farnesyl diphosphate
+    to longiborneol.
+  nodes:
+  - node_id: farnesyl_diphosphate
+    label: (2E,6E)-farnesyl diphosphate
+    node_type: PRECURSOR
+    identifier: CHEBI:175763
+    grounding_status: GROUNDED
+  - node_id: clm1
+    label: CLM1 longiborneol synthase
+    node_type: ENZYME
+    identifier: UniProtKB:I1S104
+    grounding_status: GROUNDED
+  - node_id: juniperol_longiborneol
+    label: (+)-juniperol(longiborneol)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-390b0e4f55
+    grounding_status: GROUNDED
+  edges:
+  - subject: farnesyl_diphosphate
+    predicate: is cyclized by
+    object: clm1
+    evidence:
+    - reference: DOI:10.1128/AEM.02017-09
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: resulted in the production of a sesquiterpene alcohol, longiborneol
+      notes: McCormick et al. expressed fg10397/CLM1 in Saccharomyces cerevisiae and
+        identified longiborneol by GC-MS/NMR; disruption and add-back experiments
+        tied the gene to culmorin biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002176.3/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: MIBiG BGC0002176.3 places FGSG_10397 / ESU17105.1 in the Fusarium graminearum
+        PH-1 culmorin/(+)-juniperol(longiborneol) BGC at CM000574.1:10717529-10718727.
+    - reference: https://www.uniprot.org/uniprotkb/I1S104
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: UniProtKB reviewed entry I1S104 resolves to the 339 aa Fusarium graminearum
+        PH-1 longiborneol synthase CLM1 and annotates the farnesyl-diphosphate cyclization
+        from PMID:19880637.
+    - reference: https://www.ncbi.nlm.nih.gov/gene/23557306
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: NCBI Gene resolves FGSG_10397 in Fusarium graminearum PH-1 and cross-references
+        UniProtKB/Swiss-Prot I1S104.
+  - subject: clm1
+    predicate: forms
+    object: juniperol_longiborneol
+    evidence:
+    - reference: DOI:10.1128/AEM.02017-09
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: resulted in the production of a sesquiterpene alcohol, longiborneol
+      notes: McCormick et al. expressed fg10397/CLM1 in Saccharomyces cerevisiae and
+        identified longiborneol by GC-MS/NMR; disruption and add-back experiments
+        tied the gene to culmorin biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002176.3/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: MIBiG BGC0002176.3 places FGSG_10397 / ESU17105.1 in the Fusarium graminearum
+        PH-1 culmorin/(+)-juniperol(longiborneol) BGC at CM000574.1:10717529-10718727.
+    - reference: https://www.uniprot.org/uniprotkb/I1S104
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: UniProtKB reviewed entry I1S104 resolves to the 339 aa Fusarium graminearum
+        PH-1 longiborneol synthase CLM1 and annotates the farnesyl-diphosphate cyclization
+        from PMID:19880637.
+    - reference: https://www.ncbi.nlm.nih.gov/gene/23557306
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: NCBI Gene resolves FGSG_10397 in Fusarium graminearum PH-1 and cross-references
+        UniProtKB/Swiss-Prot I1S104.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -90,3 +197,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-29T23:49:51Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added an evidence-backed CLM1/I1S104 biosynthetic pathway step and BIOSYNTHESIS
+    causal graph for cyclization of (2E,6E)-farnesyl diphosphate to longiborneol in
+    BGC0002176.
+  llm_assisted: true
