@@ -98,6 +98,97 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-3dc773bd21
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9I0Q0
+  enzyme_label: PqsH 2-heptyl-3-hydroxy-4(1H)-quinolone synthase
+  reaction_id: RHEA:37871
+  substrate: CHEBI:62219
+  product: CHEBI:29472
+  notes: Pseudomonas aeruginosa PAO1 PqsH hydroxylates 2-heptyl-4(1H)-quinolone /
+    HHQ to the Pseudomonas quinolone signal; upstream pqsABCD formation of HHQ is
+    left unexpanded.
+  evidence:
+  - reference: DOI:10.1128/JB.184.23.6472-6480.2002
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: PA2587, had been found to be required for PQS production
+    notes: Gallagher et al. named the unlinked Pseudomonas aeruginosa PAO1 PA2587
+      gene pqsH and showed that a pqsH transposon mutant was defective in Pseudomonas
+      quinolone signal production by TLC.
+  - reference: https://www.uniprot.org/uniprotkb/Q9I0Q0
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:Q9I0Q0 is the Pseudomonas aeruginosa PAO1 pqsH / PA2587
+      gene product and annotates the RHEA:37871 catalytic activity of 2-heptyl-3-hydroxy-4(1H)-quinolone
+      synthase.
+  - reference: https://www.rhea-db.org/rhea/37871
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:37871 is the 2-heptyl-4(1H)-quinolone plus NADH plus O2 plus H(+)
+      to 2-heptyl-3-hydroxy-4(1H)-quinolone plus NAD(+) plus H2O reaction.
+causal_graphs:
+- graph_id: pqs-pqsh-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Pseudomonas aeruginosa PAO1 PqsH hydroxylates HHQ to form 2-heptyl-3-hydroxy-4-quinolone.
+  nodes:
+  - node_id: hhq
+    label: 2-heptyl-4(1H)-quinolone
+    node_type: PRECURSOR
+    identifier: CHEBI:62219
+    grounding_status: GROUNDED
+  - node_id: pqsh
+    label: PqsH
+    node_type: ENZYME
+    identifier: UniProtKB:Q9I0Q0
+    grounding_status: GROUNDED
+  - node_id: pqs
+    label: 2-heptyl-3-hydroxy-4-quinolone
+    node_type: COMPOUND
+    identifier: CHEBI:29472
+    grounding_status: GROUNDED
+  edges:
+  - subject: hhq
+    predicate: is hydroxylated by
+    object: pqsh
+    notes: PqsH uses NADH and O2 in the RHEA:37871 hydroxylation of HHQ.
+    evidence:
+    - reference: DOI:10.1128/JB.184.23.6472-6480.2002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gallagher et al. named the unlinked Pseudomonas aeruginosa PAO1 PA2587
+        gene pqsH and showed that a pqsH transposon mutant was defective in Pseudomonas
+        quinolone signal production by TLC.
+    - reference: https://www.uniprot.org/uniprotkb/Q9I0Q0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q9I0Q0 is the Pseudomonas aeruginosa PAO1 pqsH / PA2587
+        gene product and annotates the RHEA:37871 catalytic activity of 2-heptyl-3-hydroxy-4(1H)-quinolone
+        synthase.
+    - reference: https://www.rhea-db.org/rhea/37871
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:37871 is the 2-heptyl-4(1H)-quinolone plus NADH plus O2 plus H(+)
+        to 2-heptyl-3-hydroxy-4(1H)-quinolone plus NAD(+) plus H2O reaction.
+  - subject: pqsh
+    predicate: forms
+    object: pqs
+    notes: PqsH is the PA2587 flavin monooxygenase in Pseudomonas aeruginosa PAO1.
+    evidence:
+    - reference: DOI:10.1128/JB.184.23.6472-6480.2002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gallagher et al. named the unlinked Pseudomonas aeruginosa PAO1 PA2587
+        gene pqsH and showed that a pqsH transposon mutant was defective in Pseudomonas
+        quinolone signal production by TLC.
+    - reference: https://www.uniprot.org/uniprotkb/Q9I0Q0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q9I0Q0 is the Pseudomonas aeruginosa PAO1 pqsH / PA2587
+        gene product and annotates the RHEA:37871 catalytic activity of 2-heptyl-3-hydroxy-4(1H)-quinolone
+        synthase.
+    - reference: https://www.rhea-db.org/rhea/37871
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:37871 is the 2-heptyl-4(1H)-quinolone plus NADH plus O2 plus H(+)
+        to 2-heptyl-3-hydroxy-4(1H)-quinolone plus NAD(+) plus H2O reaction.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -107,3 +198,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T22:06:03Z'
+  curator: codex
+  action: CURATED_BIOSYNTHESIS_GRAPH
+  changes: Added the Pseudomonas aeruginosa PAO1 PqsH HHQ hydroxylation step and RHEA:37871
+    / UniProtKB:Q9I0Q0-grounded 2-heptyl-3-hydroxy-4-quinolone BIOSYNTHESIS causal
+    graph.
+  llm_assisted: true
