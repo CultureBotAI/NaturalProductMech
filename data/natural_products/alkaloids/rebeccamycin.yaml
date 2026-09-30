@@ -142,6 +142,44 @@ grounding_status: EXACT
 curation_status: SEEDED
 biosynthetic_pathway:
 - step_number: 1
+  enzyme_id: UniProtKB:Q8KHE4
+  enzyme_label: RebG 4'-demethylrebeccamycin synthase
+  reaction_id: RHEA:27397
+  substrates:
+  - CHEBI:330772
+  - CHEBI:15903
+  product: CHEBI:595389
+  notes: RebG N-glucosylates dichloroarcyriaflavin A to form 4'-demethylrebeccamycin
+    in the penultimate rebeccamycin biosynthetic step; Rhea maps the corresponding
+    EC 4.3.3.5 reaction to RHEA:27397.
+  evidence:
+  - reference: DOI:10.1002/cbic.200500504
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: rebG encodes for the rebeccamycin N-glucosyltransferase
+    notes: Zhang et al. used in vivo RebG biotransformation in Streptomyces lividans
+      and Escherichia coli and characterized indolocarbazole glucosylation by L. aerocolonigenes
+      RebG.
+  - reference: DOI:10.1271/bbb.67.127
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Onaka et al. characterized the L. aerocolonigenes ATCC 39243 reb cluster
+      and assigned RebG to D-glucose glycosylation of the rebeccamycin aglycon.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000821.5/BGC0000821.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0000821.5 maps the L. aerocolonigenes AB090952 rebeccamycin biosynthetic
+      gene cluster CDS BAC10673.1 to rebG and annotates the product as an N-glycosyltransferase.
+  - reference: https://www.uniprot.org/uniprotkb/Q8KHE4
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:Q8KHE4 is the 421 aa L. aerocolonigenes RebG 4'-demethylrebeccamycin
+      synthase, cross-references AB090952 protein BAC10673.1, and annotates RHEA:27397
+      from PMID:16575939.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: The Rhea Swiss-Prot mapping links UniProtKB:Q8KHE4 to RHEA:27397, the EC
+      4.3.3.5 reaction interconverting dichloroarcyriaflavin A and 4'-demethylrebeccamycin.
+- step_number: 2
   enzyme_id: UniProtKB:Q8KZ94
   enzyme_label: RebM demethylrebeccamycin-D-glucose O-methyltransferase
   reaction_id: RHEA:27353
@@ -270,6 +308,93 @@ causal_graphs:
       retrieved_on: '2026-09-30'
       notes: The Rhea Swiss-Prot mapping links UniProtKB:Q8KZ94 to the RebM O-methyltransferase
         reaction RHEA:27353.
+- graph_id: rebeccamycin-rebg-n-glycosylation
+  scope: BIOSYNTHESIS
+  description: Partial L. aerocolonigenes rebeccamycin biosynthesis graph for RebG-catalyzed
+    N-glycosylation.
+  nodes:
+  - node_id: dichloroarcyriaflavin
+    label: dichloroarcyriaflavin A
+    node_type: PRECURSOR
+    identifier: CHEBI:330772
+    grounding_status: GROUNDED
+  - node_id: rebg
+    label: RebG 4'-demethylrebeccamycin synthase
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KHE4
+    grounding_status: GROUNDED
+  - node_id: demethylrebeccamycin
+    label: 4'-demethylrebeccamycin
+    node_type: PRECURSOR
+    identifier: CHEBI:595389
+    grounding_status: GROUNDED
+  edges:
+  - subject: dichloroarcyriaflavin
+    predicate: is N-glycosylated by
+    object: rebg
+    notes: RebG N-glucosylates the indolocarbazole aglycone dichloroarcyriaflavin
+      A.
+    evidence:
+    - reference: DOI:10.1002/cbic.200500504
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: rebG encodes for the rebeccamycin N-glucosyltransferase
+      notes: Zhang et al. used in vivo RebG biotransformation in Streptomyces lividans
+        and Escherichia coli and characterized indolocarbazole glucosylation by L.
+        aerocolonigenes RebG.
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Onaka et al. characterized the L. aerocolonigenes ATCC 39243 reb cluster
+        and assigned RebG to D-glucose glycosylation of the rebeccamycin aglycon.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000821.5/BGC0000821.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000821.5 maps the L. aerocolonigenes AB090952 rebeccamycin
+        biosynthetic gene cluster CDS BAC10673.1 to rebG and annotates the product
+        as an N-glycosyltransferase.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KHE4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q8KHE4 is the 421 aa L. aerocolonigenes RebG 4'-demethylrebeccamycin
+        synthase, cross-references AB090952 protein BAC10673.1, and annotates RHEA:27397
+        from PMID:16575939.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:Q8KHE4 to RHEA:27397, the
+        EC 4.3.3.5 reaction interconverting dichloroarcyriaflavin A and 4'-demethylrebeccamycin.
+  - subject: rebg
+    predicate: forms
+    object: demethylrebeccamycin
+    notes: The RebG-catalyzed reaction yields 4'-demethylrebeccamycin for terminal
+      methylation by RebM.
+    evidence:
+    - reference: DOI:10.1002/cbic.200500504
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: rebG encodes for the rebeccamycin N-glucosyltransferase
+      notes: Zhang et al. used in vivo RebG biotransformation in Streptomyces lividans
+        and Escherichia coli and characterized indolocarbazole glucosylation by L.
+        aerocolonigenes RebG.
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Onaka et al. characterized the L. aerocolonigenes ATCC 39243 reb cluster
+        and assigned RebG to D-glucose glycosylation of the rebeccamycin aglycon.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000821.5/BGC0000821.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000821.5 maps the L. aerocolonigenes AB090952 rebeccamycin
+        biosynthetic gene cluster CDS BAC10673.1 to rebG and annotates the product
+        as an N-glycosyltransferase.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KHE4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q8KHE4 is the 421 aa L. aerocolonigenes RebG 4'-demethylrebeccamycin
+        synthase, cross-references AB090952 protein BAC10673.1, and annotates RHEA:27397
+        from PMID:16575939.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:Q8KHE4 to RHEA:27397, the
+        EC 4.3.3.5 reaction interconverting dichloroarcyriaflavin A and 4'-demethylrebeccamycin.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -285,4 +410,11 @@ curation_history:
   changes: Added exact UniProtKB:Q8KZ94 RebM grounding, the RHEA:27353 terminal rebeccamycin
     O-methylation pathway step, and a BIOSYNTHESIS causal graph linking 4'-demethylrebeccamycin
     through RebM to rebeccamycin.
+  llm_assisted: true
+- timestamp: '2026-09-30T13:46:05Z'
+  curator: codex
+  action: ADD_BIOSYNTHETIC_PROTEIN_GRAPH
+  changes: Added exact UniProtKB:Q8KHE4 RebG grounding, inserted the RHEA:27397 4'-demethylrebeccamycin
+    synthase step before the RebM terminal methylation, and added a BIOSYNTHESIS causal
+    graph linking dichloroarcyriaflavin A through RebG to 4'-demethylrebeccamycin.
   llm_assisted: true

@@ -111,13 +111,20 @@ derived from a source. This is what the rest of the record exists to support.</p
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
+  <td>RebG 4&#39;-demethylrebeccamycin synthase<br><span class="mono">UniProtKB:Q8KHE4</span></td>
+  <td class="mono">RHEA:27397</td>
+  <td class="mono">CHEBI:330772 + CHEBI:15903 &rarr; CHEBI:595389</td>
+  <td class="mono">DOI:10.1002/cbic.200500504</td>
+</tr>
+<tr>
+  <td>2</td>
   <td>RebM demethylrebeccamycin-D-glucose O-methyltransferase<br><span class="mono">UniProtKB:Q8KZ94</span></td>
   <td class="mono">RHEA:27353</td>
   <td class="mono">CHEBI:595389 + CHEBI:59789 &rarr; CHEBI:135511</td>
   <td class="mono">DOI:10.1074/jbc.M800503200</td>
 </tr>
 </table></div>
-<p class="sub">Step 1: RebM transfers the SAM methyl group to 4&#39;-demethylrebeccamycin in the terminal O-methylation that forms rebeccamycin; Rhea maps this EC 2.1.1.164 reaction to RHEA:27353.</p>
+<p class="sub">Step 1: RebG N-glucosylates dichloroarcyriaflavin A to form 4&#39;-demethylrebeccamycin in the penultimate rebeccamycin biosynthetic step; Rhea maps the corresponding EC 4.3.3.5 reaction to RHEA:27397.</p><p class="sub">Step 2: RebM transfers the SAM methyl group to 4&#39;-demethylrebeccamycin in the terminal O-methylation that forms rebeccamycin; Rhea maps this EC 2.1.1.164 reaction to RHEA:27353.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
 <p class="sub">Partial L. aerocolonigenes rebeccamycin biosynthesis graph for RebM-catalyzed terminal 4&#39;-O-methylation.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
@@ -134,6 +141,26 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>rebeccamycin</td>
   <td>The SAM-dependent RebM reaction forms the final O-methylated rebeccamycin structure.</td>
   <td class="mono">DOI:10.1074/jbc.M800503200<br>DOI:10.1002/cbic.200500504<br>https://mibig.secondarymetabolites.org/repository/BGC0000821.5/BGC0000821.gbk<br>https://www.uniprot.org/uniprotkb/Q8KZ94<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial L. aerocolonigenes rebeccamycin biosynthesis graph for RebG-catalyzed N-glycosylation.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>dichloroarcyriaflavin A</td>
+  <td>is N-glycosylated by</td>
+  <td>RebG 4&#39;-demethylrebeccamycin synthase</td>
+  <td>RebG N-glucosylates the indolocarbazole aglycone dichloroarcyriaflavin A.</td>
+  <td class="mono">DOI:10.1002/cbic.200500504<br>DOI:10.1271/bbb.67.127<br>https://mibig.secondarymetabolites.org/repository/BGC0000821.5/BGC0000821.gbk<br>https://www.uniprot.org/uniprotkb/Q8KHE4<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+<tr>
+  <td>RebG 4&#39;-demethylrebeccamycin synthase</td>
+  <td>forms</td>
+  <td>4&#39;-demethylrebeccamycin</td>
+  <td>The RebG-catalyzed reaction yields 4&#39;-demethylrebeccamycin for terminal methylation by RebM.</td>
+  <td class="mono">DOI:10.1002/cbic.200500504<br>DOI:10.1271/bbb.67.127<br>https://mibig.secondarymetabolites.org/repository/BGC0000821.5/BGC0000821.gbk<br>https://www.uniprot.org/uniprotkb/Q8KHE4<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
