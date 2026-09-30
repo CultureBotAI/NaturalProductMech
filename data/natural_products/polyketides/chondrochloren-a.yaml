@@ -105,6 +105,132 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-8e9433dc50
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:B9ZUK6
+  enzyme_label: CndG 1'-carboxy-chondrochloren decarboxylase
+  reaction_id: RHEA:81491
+  substrates:
+  - CHEBI:231889
+  - CHEBI:57692
+  product: CHEBI:132426
+  notes: CndG carries out the terminal FAD-dependent oxidative decarboxylation of
+    1'-carboxy-chondrochloren A to form mature chondrochloren A; Rhea maps the corresponding
+    EC 4.1.1.129 reaction to RHEA:81491.
+  evidence:
+  - reference: DOI:10.1074/jbc.M109.079707
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: shown to be an FAD-dependent oxidative decarboxylase
+    notes: Rachid et al. inactivated cndG in Chondromyces crocatus Cm c5, observed
+      pre-chondrochloren accumulation and loss of mature chondrochloren production,
+      then expressed CndG in E. coli and assayed oxidative decarboxylation of pre-chondrochlorens.
+  - reference: DOI:10.1016/j.chembiol.2008.11.005
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Rachid et al. sequenced the AM988861 chondrochloren biosynthetic gene cluster
+      from C. crocatus Cm c5 and nominated CndG as the candidate oxidative decarboxylase.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0000970.5 maps the C. crocatus AM988861 chondrochloren biosynthetic
+      gene cluster CDS CAQ43085.1 to cndG and cross-references UniProtKB:B9ZUK6.
+  - reference: https://www.uniprot.org/uniprotkb/B9ZUK6
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:B9ZUK6 is the 541 aa C. crocatus CndG 1'-carboxy-chondrochloren
+      decarboxylase, cross-references AM988861 protein CAQ43085.1, and annotates RHEA:81491
+      from PMID:20080978.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: The Rhea Swiss-Prot mapping links UniProtKB:B9ZUK6 to RHEA:81491, the EC
+      4.1.1.129 1'-carboxy-chondrochloren A decarboxylation reaction.
+causal_graphs:
+- graph_id: chondrochloren-a-cndg-decarboxylation
+  scope: BIOSYNTHESIS
+  description: Partial C. crocatus chondrochloren A biosynthesis graph for CndG-catalyzed
+    terminal oxidative decarboxylation.
+  nodes:
+  - node_id: carboxy_chondrochloren_a
+    label: 1'-carboxy-chondrochloren A
+    node_type: PRECURSOR
+    identifier: CHEBI:231889
+    grounding_status: GROUNDED
+  - node_id: cndg
+    label: CndG 1'-carboxy-chondrochloren decarboxylase
+    node_type: ENZYME
+    identifier: UniProtKB:B9ZUK6
+    grounding_status: GROUNDED
+  - node_id: chondrochloren_a
+    label: chondrochloren A
+    node_type: COMPOUND
+    identifier: CHEBI:132426
+    grounding_status: GROUNDED
+  edges:
+  - subject: carboxy_chondrochloren_a
+    predicate: is oxidatively decarboxylated by
+    object: cndg
+    notes: CndG oxidatively decarboxylates the carboxylated pre-chondrochloren A precursor.
+    evidence:
+    - reference: DOI:10.1074/jbc.M109.079707
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: shown to be an FAD-dependent oxidative decarboxylase
+      notes: Rachid et al. inactivated cndG in Chondromyces crocatus Cm c5, observed
+        pre-chondrochloren accumulation and loss of mature chondrochloren production,
+        then expressed CndG in E. coli and assayed oxidative decarboxylation of pre-chondrochlorens.
+    - reference: DOI:10.1016/j.chembiol.2008.11.005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Rachid et al. sequenced the AM988861 chondrochloren biosynthetic gene
+        cluster from C. crocatus Cm c5 and nominated CndG as the candidate oxidative
+        decarboxylase.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000970.5 maps the C. crocatus AM988861 chondrochloren biosynthetic
+        gene cluster CDS CAQ43085.1 to cndG and cross-references UniProtKB:B9ZUK6.
+    - reference: https://www.uniprot.org/uniprotkb/B9ZUK6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:B9ZUK6 is the 541 aa C. crocatus CndG 1'-carboxy-chondrochloren
+        decarboxylase, cross-references AM988861 protein CAQ43085.1, and annotates
+        RHEA:81491 from PMID:20080978.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:B9ZUK6 to RHEA:81491, the
+        EC 4.1.1.129 1'-carboxy-chondrochloren A decarboxylation reaction.
+  - subject: cndg
+    predicate: forms
+    object: chondrochloren_a
+    notes: The CndG reaction yields mature chondrochloren A from the inactive carboxylated
+      precursor.
+    evidence:
+    - reference: DOI:10.1074/jbc.M109.079707
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: shown to be an FAD-dependent oxidative decarboxylase
+      notes: Rachid et al. inactivated cndG in Chondromyces crocatus Cm c5, observed
+        pre-chondrochloren accumulation and loss of mature chondrochloren production,
+        then expressed CndG in E. coli and assayed oxidative decarboxylation of pre-chondrochlorens.
+    - reference: DOI:10.1016/j.chembiol.2008.11.005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Rachid et al. sequenced the AM988861 chondrochloren biosynthetic gene
+        cluster from C. crocatus Cm c5 and nominated CndG as the candidate oxidative
+        decarboxylase.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000970.5/BGC0000970.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000970.5 maps the C. crocatus AM988861 chondrochloren biosynthetic
+        gene cluster CDS CAQ43085.1 to cndG and cross-references UniProtKB:B9ZUK6.
+    - reference: https://www.uniprot.org/uniprotkb/B9ZUK6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:B9ZUK6 is the 541 aa C. crocatus CndG 1'-carboxy-chondrochloren
+        decarboxylase, cross-references AM988861 protein CAQ43085.1, and annotates
+        RHEA:81491 from PMID:20080978.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:B9ZUK6 to RHEA:81491, the
+        EC 4.1.1.129 1'-carboxy-chondrochloren A decarboxylation reaction.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -114,3 +240,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T14:09:41Z'
+  curator: codex
+  action: ADD_BIOSYNTHETIC_PROTEIN_GRAPH
+  changes: Added exact UniProtKB:B9ZUK6 CndG grounding, the RHEA:81491 terminal chondrochloren
+    A oxidative decarboxylation pathway step, and a BIOSYNTHESIS causal graph linking
+    1'-carboxy-chondrochloren A through CndG to chondrochloren A.
+  llm_assisted: true
