@@ -108,6 +108,148 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-fc49794a70
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A1L9WUX8
+  enzyme_label: AneA aculene D dioxygenase
+  reaction_id: RHEA:65112
+  substrates:
+  - CHEBI:155910
+  - CHEBI:16810
+  - CHEBI:15379
+  products:
+  - CHEBI:155912
+  - CHEBI:30031
+  - CHEBI:16526
+  - CHEBI:15377
+  notes: AneA introduces the 5,6-alkene into aculene D to form aculene C; RHEA:65112
+    grounds the full 2-oxoglutarate- and O2-dependent dioxygenase reaction.
+  evidence:
+  - reference: DOI:10.1002/anie.201910200
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: characterized the biosynthetic pathway based on gene inactivation, feeding
+      experiments, and heterologous reconstitution
+    notes: Lee et al. identified the Aspergillus aculeatus aculene biosynthetic gene
+      cluster, inactivated aneA, and used Saccharomyces cerevisiae and Aspergillus
+      oryzae heterologous reconstitution to connect AneA to 5,6-desaturation of aculene
+      D into aculene C.
+  - reference: DOI:10.1039/D1NP00074H
+    evidence_type: REVIEW
+    snippet: the unsaturation is catalyzed by AneA
+    notes: Wang et al. summarize Lee et al.'s aneA deletion phenotype and place AneA
+      after A. oryzae reconstitution of AneC/F/D/G to aculene D in the published aculene
+      A-C pathway.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002225.3/BGC0002225.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0002225.3 maps the A. aculeatus ATCC 16872 KV878977 aculene region
+      to CDS OJJ99912.1 at locus ASPACDRAFT_119783.
+  - reference: https://www.uniprot.org/uniprotkb/A0A1L9WUX8
+    evidence_type: DATABASE_ASSERTION
+    snippet: The dioxygenase aneA converts aculene D into aculene C
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:A0A1L9WUX8 is the 298 aa A. aculeatus ATCC 16872 Dioxygenase
+      aneA, cross-references KV878977 protein OJJ99912.1, and annotates RHEA:65112
+      from PMID:31618514.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A1L9WUX8 to RHEA:65112, the
+      aculene D 2-oxoglutarate-dependent desaturation reaction.
+causal_graphs:
+- graph_id: aculene-c-anea-desaturation
+  scope: BIOSYNTHESIS
+  description: Partial A. aculeatus aculene C biosynthesis graph for AneA-catalyzed
+    desaturation of aculene D.
+  nodes:
+  - node_id: aculene_d
+    label: aculene D
+    node_type: PRECURSOR
+    identifier: CHEBI:155910
+    grounding_status: GROUNDED
+  - node_id: anea
+    label: AneA aculene D dioxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A1L9WUX8
+    grounding_status: GROUNDED
+  - node_id: aculene_c
+    label: aculene C
+    node_type: COMPOUND
+    identifier: CHEBI:155912
+    grounding_status: GROUNDED
+  edges:
+  - subject: aculene_d
+    predicate: is desaturated by
+    object: anea
+    notes: AneA desaturates aculene D between C5 and C6.
+    evidence:
+    - reference: DOI:10.1002/anie.201910200
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: characterized the biosynthetic pathway based on gene inactivation,
+        feeding experiments, and heterologous reconstitution
+      notes: Lee et al. identified the Aspergillus aculeatus aculene biosynthetic
+        gene cluster, inactivated aneA, and used Saccharomyces cerevisiae and Aspergillus
+        oryzae heterologous reconstitution to connect AneA to 5,6-desaturation of
+        aculene D into aculene C.
+    - reference: DOI:10.1039/D1NP00074H
+      evidence_type: REVIEW
+      snippet: the unsaturation is catalyzed by AneA
+      notes: Wang et al. summarize Lee et al.'s aneA deletion phenotype and place
+        AneA after A. oryzae reconstitution of AneC/F/D/G to aculene D in the published
+        aculene A-C pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002225.3/BGC0002225.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0002225.3 maps the A. aculeatus ATCC 16872 KV878977 aculene
+        region to CDS OJJ99912.1 at locus ASPACDRAFT_119783.
+    - reference: https://www.uniprot.org/uniprotkb/A0A1L9WUX8
+      evidence_type: DATABASE_ASSERTION
+      snippet: The dioxygenase aneA converts aculene D into aculene C
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:A0A1L9WUX8 is the 298 aa A. aculeatus ATCC 16872 Dioxygenase
+        aneA, cross-references KV878977 protein OJJ99912.1, and annotates RHEA:65112
+        from PMID:31618514.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A1L9WUX8 to RHEA:65112,
+        the aculene D 2-oxoglutarate-dependent desaturation reaction.
+  - subject: anea
+    predicate: forms
+    object: aculene_c
+    notes: The AneA dioxygenase reaction yields aculene C from aculene D.
+    evidence:
+    - reference: DOI:10.1002/anie.201910200
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: characterized the biosynthetic pathway based on gene inactivation,
+        feeding experiments, and heterologous reconstitution
+      notes: Lee et al. identified the Aspergillus aculeatus aculene biosynthetic
+        gene cluster, inactivated aneA, and used Saccharomyces cerevisiae and Aspergillus
+        oryzae heterologous reconstitution to connect AneA to 5,6-desaturation of
+        aculene D into aculene C.
+    - reference: DOI:10.1039/D1NP00074H
+      evidence_type: REVIEW
+      snippet: the unsaturation is catalyzed by AneA
+      notes: Wang et al. summarize Lee et al.'s aneA deletion phenotype and place
+        AneA after A. oryzae reconstitution of AneC/F/D/G to aculene D in the published
+        aculene A-C pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002225.3/BGC0002225.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0002225.3 maps the A. aculeatus ATCC 16872 KV878977 aculene
+        region to CDS OJJ99912.1 at locus ASPACDRAFT_119783.
+    - reference: https://www.uniprot.org/uniprotkb/A0A1L9WUX8
+      evidence_type: DATABASE_ASSERTION
+      snippet: The dioxygenase aneA converts aculene D into aculene C
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:A0A1L9WUX8 is the 298 aa A. aculeatus ATCC 16872 Dioxygenase
+        aneA, cross-references KV878977 protein OJJ99912.1, and annotates RHEA:65112
+        from PMID:31618514.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A1L9WUX8 to RHEA:65112,
+        the aculene D 2-oxoglutarate-dependent desaturation reaction.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -117,3 +259,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T15:14:56Z'
+  curator: codex
+  action: ADD_BIOSYNTHETIC_PROTEIN_GRAPH
+  changes: Added exact UniProtKB:A0A1L9WUX8 AneA grounding, the RHEA:65112 aculene
+    D desaturation step, and a BIOSYNTHESIS causal graph for aculene C.
+  llm_assisted: true

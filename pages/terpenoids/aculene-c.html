@@ -89,7 +89,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>AneA aculene D dioxygenase<br><span class="mono">UniProtKB:A0A1L9WUX8</span></td>
+  <td class="mono">RHEA:65112</td>
+  <td class="mono">CHEBI:155910 + CHEBI:16810 + CHEBI:15379 &rarr; CHEBI:155912 + CHEBI:30031 + CHEBI:16526 + CHEBI:15377</td>
+  <td class="mono">DOI:10.1002/anie.201910200</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: AneA introduces the 5,6-alkene into aculene D to form aculene C; RHEA:65112 grounds the full 2-oxoglutarate- and O2-dependent dioxygenase reaction.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial A. aculeatus aculene C biosynthesis graph for AneA-catalyzed desaturation of aculene D.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>aculene D</td>
+  <td>is desaturated by</td>
+  <td>AneA aculene D dioxygenase</td>
+  <td>AneA desaturates aculene D between C5 and C6.</td>
+  <td class="mono">DOI:10.1002/anie.201910200<br>DOI:10.1039/D1NP00074H<br>https://mibig.secondarymetabolites.org/repository/BGC0002225.3/BGC0002225.gbk<br>https://www.uniprot.org/uniprotkb/A0A1L9WUX8<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+<tr>
+  <td>AneA aculene D dioxygenase</td>
+  <td>forms</td>
+  <td>aculene C</td>
+  <td>The AneA dioxygenase reaction yields aculene C from aculene D.</td>
+  <td class="mono">DOI:10.1002/anie.201910200<br>DOI:10.1039/D1NP00074H<br>https://mibig.secondarymetabolites.org/repository/BGC0002225.3/BGC0002225.gbk<br>https://www.uniprot.org/uniprotkb/A0A1L9WUX8<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
