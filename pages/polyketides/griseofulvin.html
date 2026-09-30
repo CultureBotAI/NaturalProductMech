@@ -87,48 +87,82 @@ derived from a source. This is what the rest of the record exists to support.</p
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
+  <td>GsfA non-reducing polyketide synthase<br><span class="mono">UniProtKB:D7PI15</span></td>
+  <td class="mono">RHEA:73915</td>
+  <td class="mono">CHEBI:57288 + CHEBI:57384 &rarr; CHEBI:193062</td>
+  <td class="mono">DOI:10.1021/cb400541z</td>
+</tr>
+<tr>
+  <td>2</td>
   <td>GsfB O-methyltransferase<br><span class="mono">UniProtKB:D7PI16</span></td>
   <td class="mono">RHEA:73923</td>
   <td class="mono">CHEBI:193062 &rarr; CHEBI:193064</td>
   <td class="mono">DOI:10.1021/cb400541z</td>
 </tr>
 <tr>
-  <td>2</td>
+  <td>3</td>
   <td>GsfC O-methyltransferase<br><span class="mono">UniProtKB:D7PI17</span></td>
   <td class="mono">RHEA:73927</td>
   <td class="mono">CHEBI:193064 &rarr; CHEBI:193065</td>
   <td class="mono">DOI:10.1021/cb400541z</td>
 </tr>
 <tr>
-  <td>3</td>
+  <td>4</td>
   <td>GsfI flavin-dependent halogenase<br><span class="mono">UniProtKB:D7PI14</span></td>
   <td class="mono">RHEA:73931</td>
   <td class="mono">CHEBI:193065 &rarr; CHEBI:193066</td>
   <td class="mono">DOI:10.1021/cb400541z</td>
 </tr>
 <tr>
-  <td>4</td>
+  <td>5</td>
   <td>GsfF cytochrome P450 monooxygenase<br><span class="mono">UniProtKB:D7PI20</span></td>
   <td class="mono">RHEA:73935</td>
   <td class="mono">CHEBI:193066 &rarr; CHEBI:193067</td>
   <td class="mono">DOI:10.1021/cb400541z</td>
 </tr>
 <tr>
-  <td>5</td>
+  <td>6</td>
   <td>GsfD O-methyltransferase<br><span class="mono">UniProtKB:D7PI18</span></td>
   <td class="mono">RHEA:73939</td>
   <td class="mono">CHEBI:193067 &rarr; CHEBI:81999</td>
   <td class="mono">DOI:10.1021/cb400541z</td>
 </tr>
 <tr>
-  <td>6</td>
+  <td>7</td>
   <td>GsfE short-chain dehydrogenase<br><span class="mono">UniProtKB:D7PI19</span></td>
   <td class="mono">RHEA:73943</td>
   <td class="mono">CHEBI:81999 &rarr; naturalproductmech:mibig-e59592cca0</td>
   <td class="mono">DOI:10.1021/cb400541z</td>
 </tr>
 </table></div>
-<p class="sub">Step 1: GsfB methylates the GsfA benzophenone product at 3-OH to yield griseophenone D, the immediate substrate for GsfC; Rhea captures the SAM-dependent methyltransferase reaction as RHEA:73923.</p><p class="sub">Step 2: GsfC methylates griseophenone D at 9-OH to yield griseophenone C, the immediate substrate for GsfI; Rhea captures the SAM-dependent methyltransferase reaction as RHEA:73927.</p><p class="sub">Step 3: GsfI chlorinates griseophenone C at C13 to form griseophenone B immediately upstream of GsfF-catalyzed grisan scaffold formation; Rhea captures the reduced-flavin chlorination as RHEA:73931.</p><p class="sub">Step 4: GsfF performs the late oxidative phenolic coupling that converts griseophenone B into the grisan scaffold of desmethyl-dehydrogriseofulvin during griseofulvin biosynthesis.</p><p class="sub">Step 5: GsfD is proposed to methylate desmethyl-dehydrogriseofulvin at 5-OH to yield dehydrogriseofulvin; Rhea maps the SAM-dependent GsfD O-methyltransferase to RHEA:73939.</p><p class="sub">Step 6: GsfE stereospecifically reduces dehydrogriseofulvin to griseofulvin with NADPH; Rhea maps this final reductase reaction to RHEA:73943.</p>
+<p class="sub">Step 1: GsfA is proposed to form the heptaketide benzophenone from acetyl-CoA and six malonyl-CoA units; Rhea captures this non-reducing polyketide synthase reaction as RHEA:73915.</p><p class="sub">Step 2: GsfB methylates the GsfA benzophenone product at 3-OH to yield griseophenone D, the immediate substrate for GsfC; Rhea captures the SAM-dependent methyltransferase reaction as RHEA:73923.</p><p class="sub">Step 3: GsfC methylates griseophenone D at 9-OH to yield griseophenone C, the immediate substrate for GsfI; Rhea captures the SAM-dependent methyltransferase reaction as RHEA:73927.</p><p class="sub">Step 4: GsfI chlorinates griseophenone C at C13 to form griseophenone B immediately upstream of GsfF-catalyzed grisan scaffold formation; Rhea captures the reduced-flavin chlorination as RHEA:73931.</p><p class="sub">Step 5: GsfF performs the late oxidative phenolic coupling that converts griseophenone B into the grisan scaffold of desmethyl-dehydrogriseofulvin during griseofulvin biosynthesis.</p><p class="sub">Step 6: GsfD is proposed to methylate desmethyl-dehydrogriseofulvin at 5-OH to yield dehydrogriseofulvin; Rhea maps the SAM-dependent GsfD O-methyltransferase to RHEA:73939.</p><p class="sub">Step 7: GsfE stereospecifically reduces dehydrogriseofulvin to griseofulvin with NADPH; Rhea maps this final reductase reaction to RHEA:73943.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial P. aethiopicum griseofulvin biosynthesis graph for proposed GsfA-catalyzed heptaketide benzophenone formation.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>acetyl-CoA(4-)</td>
+  <td>is extended by</td>
+  <td>GsfA non-reducing polyketide synthase</td>
+  <td>GsfA is proposed to prime the griseofulvin heptaketide backbone with acetyl-CoA before extension by malonyl-CoA.</td>
+  <td class="mono">DOI:10.1021/cb400541z<br>https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk<br>https://www.uniprot.org/uniprotkb/D7PI15<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+<tr>
+  <td>malonyl-CoA(5-)</td>
+  <td>is condensed by</td>
+  <td>GsfA non-reducing polyketide synthase</td>
+  <td>GsfA sequentially condenses six malonyl-CoA units while building the benzophenone precursor.</td>
+  <td class="mono">DOI:10.1021/cb400541z<br>https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk<br>https://www.uniprot.org/uniprotkb/D7PI15<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+<tr>
+  <td>GsfA non-reducing polyketide synthase</td>
+  <td>forms</td>
+  <td>2-(2,4-dihydroxy-6-oxidobenzoyl)-5-hydroxy-3-methylbenzenolate</td>
+  <td>The labile GsfA benzophenone product is inferred to be the immediate upstream substrate for GsfB; when it is not captured by GsfB, it can spontaneously dehydrate to the off-pathway shunt product norlichexanthone.</td>
+  <td class="mono">DOI:10.1021/cb400541z<br>https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk<br>https://www.uniprot.org/uniprotkb/D7PI15<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
 <p class="sub">Partial P. aethiopicum griseofulvin biosynthesis graph for GsfB-catalyzed 3-O-methylation.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>

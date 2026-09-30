@@ -323,6 +323,43 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 biosynthetic_pathway:
 - step_number: 1
+  enzyme_id: UniProtKB:D7PI15
+  enzyme_label: GsfA non-reducing polyketide synthase
+  reaction_id: RHEA:73915
+  substrates:
+  - CHEBI:57288
+  - CHEBI:57384
+  product: CHEBI:193062
+  proposed: true
+  notes: GsfA is proposed to form the heptaketide benzophenone from acetyl-CoA and
+    six malonyl-CoA units; Rhea captures this non-reducing polyketide synthase reaction
+    as RHEA:73915.
+  evidence:
+  - reference: DOI:10.1021/cb400541z
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: most likely that the true heptaketide product of GsfA is the benzophenone
+      5a
+    notes: Cacho et al. purified recombinant holo-GsfA from Saccharomyces cerevisiae
+      and observed that GsfA alone turned over malonyl-CoA to norlichexanthone; they
+      reasoned that the true heptaketide product in griseofulvin biosynthesis is the
+      benzophenone 5a that spontaneously dehydrates to norlichexanthone.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+      gene cluster CDS ADI24953.1 to GsfA.
+  - reference: https://www.uniprot.org/uniprotkb/D7PI15
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:D7PI15 is the 1790 aa P. aethiopicum GsfA non-reducing
+      polyketide synthase, cross-references GU574478 protein ADI24953.1, and annotates
+      RHEA:73915 from PMID:23978092.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI15 to the master GsfA reaction
+      RHEA:73915 and left-to-right reaction RHEA:73916.
+- step_number: 2
   enzyme_id: UniProtKB:D7PI16
   enzyme_label: GsfB O-methyltransferase
   reaction_id: RHEA:73923
@@ -349,7 +386,7 @@ biosynthetic_pathway:
     notes: Reviewed UniProtKB:D7PI16 is the 419 aa P. aethiopicum GsfB O-methyltransferase,
       cross-references GU574478 protein ADI24954.1, and annotates RHEA:73923 from
       PMID:23978092.
-- step_number: 2
+- step_number: 3
   enzyme_id: UniProtKB:D7PI17
   enzyme_label: GsfC O-methyltransferase
   reaction_id: RHEA:73927
@@ -376,7 +413,7 @@ biosynthetic_pathway:
     notes: Reviewed UniProtKB:D7PI17 is the 396 aa P. aethiopicum GsfC O-methyltransferase,
       cross-references GU574478 protein ADI24955.1, and annotates RHEA:73927 from
       PMID:23978092.
-- step_number: 3
+- step_number: 4
   enzyme_id: UniProtKB:D7PI14
   enzyme_label: GsfI flavin-dependent halogenase
   reaction_id: RHEA:73931
@@ -403,7 +440,7 @@ biosynthetic_pathway:
     notes: Reviewed UniProtKB:D7PI14 is the 533 aa P. aethiopicum GsfI flavin-dependent
       halogenase, cross-references GU574478 protein ADI24948.1, and annotates RHEA:73931
       from PMID:23978092.
-- step_number: 4
+- step_number: 5
   enzyme_id: UniProtKB:D7PI20
   enzyme_label: GsfF cytochrome P450 monooxygenase
   reaction_id: RHEA:73935
@@ -432,7 +469,7 @@ biosynthetic_pathway:
     notes: Reviewed UniProtKB:D7PI20 is the 504 aa P. aethiopicum GsfF cytochrome
       P450 monooxygenase, cross-references GU574478 protein ADI24958.2, and annotates
       RHEA:73935 from PMID:23978092.
-- step_number: 5
+- step_number: 6
   enzyme_id: UniProtKB:D7PI18
   enzyme_label: GsfD O-methyltransferase
   reaction_id: RHEA:73939
@@ -463,7 +500,7 @@ biosynthetic_pathway:
     retrieved_on: '2026-09-30'
     notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI18 to the master GsfD reaction
       RHEA:73939 and left-to-right reaction RHEA:73940.
-- step_number: 6
+- step_number: 7
   enzyme_id: UniProtKB:D7PI19
   enzyme_label: GsfE short-chain dehydrogenase
   reaction_id: RHEA:73943
@@ -494,6 +531,123 @@ biosynthetic_pathway:
     notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI19 to the master GsfE reaction
       RHEA:73943 and left-to-right reaction RHEA:73944.
 causal_graphs:
+- graph_id: griseofulvin-gsfa-benzophenone-formation
+  scope: BIOSYNTHESIS
+  description: Partial P. aethiopicum griseofulvin biosynthesis graph for proposed
+    GsfA-catalyzed heptaketide benzophenone formation.
+  nodes:
+  - node_id: acetyl_coa
+    label: acetyl-CoA(4-)
+    node_type: PRECURSOR
+    identifier: CHEBI:57288
+    grounding_status: GROUNDED
+  - node_id: malonyl_coa
+    label: malonyl-CoA(5-)
+    node_type: PRECURSOR
+    identifier: CHEBI:57384
+    grounding_status: GROUNDED
+  - node_id: gsfa
+    label: GsfA non-reducing polyketide synthase
+    node_type: ENZYME
+    identifier: UniProtKB:D7PI15
+    grounding_status: GROUNDED
+  - node_id: gsfa_benzophenone
+    label: 2-(2,4-dihydroxy-6-oxidobenzoyl)-5-hydroxy-3-methylbenzenolate
+    node_type: COMPOUND
+    identifier: CHEBI:193062
+    grounding_status: GROUNDED
+  edges:
+  - subject: acetyl_coa
+    predicate: is extended by
+    object: gsfa
+    notes: GsfA is proposed to prime the griseofulvin heptaketide backbone with acetyl-CoA
+      before extension by malonyl-CoA.
+    evidence:
+    - reference: DOI:10.1021/cb400541z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: most likely that the true heptaketide product of GsfA is the benzophenone
+        5a
+      notes: Cacho et al. purified recombinant holo-GsfA from Saccharomyces cerevisiae
+        and observed that GsfA alone turned over malonyl-CoA to norlichexanthone;
+        they reasoned that the true heptaketide product in griseofulvin biosynthesis
+        is the benzophenone 5a that spontaneously dehydrates to norlichexanthone.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+        gene cluster CDS ADI24953.1 to GsfA.
+    - reference: https://www.uniprot.org/uniprotkb/D7PI15
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:D7PI15 is the 1790 aa P. aethiopicum GsfA non-reducing
+        polyketide synthase, cross-references GU574478 protein ADI24953.1, and annotates
+        RHEA:73915 from PMID:23978092.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI15 to the master GsfA
+        reaction RHEA:73915 and left-to-right reaction RHEA:73916.
+  - subject: malonyl_coa
+    predicate: is condensed by
+    object: gsfa
+    notes: GsfA sequentially condenses six malonyl-CoA units while building the benzophenone
+      precursor.
+    evidence:
+    - reference: DOI:10.1021/cb400541z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: most likely that the true heptaketide product of GsfA is the benzophenone
+        5a
+      notes: Cacho et al. purified recombinant holo-GsfA from Saccharomyces cerevisiae
+        and observed that GsfA alone turned over malonyl-CoA to norlichexanthone;
+        they reasoned that the true heptaketide product in griseofulvin biosynthesis
+        is the benzophenone 5a that spontaneously dehydrates to norlichexanthone.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+        gene cluster CDS ADI24953.1 to GsfA.
+    - reference: https://www.uniprot.org/uniprotkb/D7PI15
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:D7PI15 is the 1790 aa P. aethiopicum GsfA non-reducing
+        polyketide synthase, cross-references GU574478 protein ADI24953.1, and annotates
+        RHEA:73915 from PMID:23978092.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI15 to the master GsfA
+        reaction RHEA:73915 and left-to-right reaction RHEA:73916.
+  - subject: gsfa
+    predicate: forms
+    object: gsfa_benzophenone
+    notes: The labile GsfA benzophenone product is inferred to be the immediate upstream
+      substrate for GsfB; when it is not captured by GsfB, it can spontaneously dehydrate
+      to the off-pathway shunt product norlichexanthone.
+    evidence:
+    - reference: DOI:10.1021/cb400541z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: most likely that the true heptaketide product of GsfA is the benzophenone
+        5a
+      notes: Cacho et al. purified recombinant holo-GsfA from Saccharomyces cerevisiae
+        and observed that GsfA alone turned over malonyl-CoA to norlichexanthone;
+        they reasoned that the true heptaketide product in griseofulvin biosynthesis
+        is the benzophenone 5a that spontaneously dehydrates to norlichexanthone.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+        gene cluster CDS ADI24953.1 to GsfA.
+    - reference: https://www.uniprot.org/uniprotkb/D7PI15
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:D7PI15 is the 1790 aa P. aethiopicum GsfA non-reducing
+        polyketide synthase, cross-references GU574478 protein ADI24953.1, and annotates
+        RHEA:73915 from PMID:23978092.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI15 to the master GsfA
+        reaction RHEA:73915 and left-to-right reaction RHEA:73916.
 - graph_id: griseofulvin-gsfb-methylation
   scope: BIOSYNTHESIS
   description: Partial P. aethiopicum griseofulvin biosynthesis graph for GsfB-catalyzed
@@ -978,4 +1132,13 @@ curation_history:
     dehydrogriseofulvin reduction to griseofulvin, grounded to UniProtKB:D7PI19, RHEA:73943,
     CHEBI:81999, naturalproductmech:mibig-e59592cca0, MIBiG BGC0000070.5, Rhea, and
     Cacho et al. 2013.
+  llm_assisted: true
+- timestamp: '2026-09-30T12:41:14Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a proposed GsfA biosynthetic pathway step and BIOSYNTHESIS causal
+    graph for heptaketide benzophenone formation from acetyl-CoA and malonyl-CoA,
+    grounded to UniProtKB:D7PI15, RHEA:73915, CHEBI:57288, CHEBI:57384, CHEBI:193062,
+    MIBiG BGC0000070.5, Rhea, and Cacho et al. 2013; renumbered the existing griseofulvin
+    curated steps after GsfA.
   llm_assisted: true
