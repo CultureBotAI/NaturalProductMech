@@ -113,6 +113,163 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-35f66360a9
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 4
+  enzyme_id: UniProtKB:Q2G1N1
+  enzyme_label: Staphyloferrin B synthase
+  reaction_id: RHEA:59132
+  notes: Staphylococcus aureus NCTC 8325 SbnC catalyzes the ATP-dependent terminal
+    condensation of the SbnF product with 2-oxoglutarate to form staphyloferrin B.
+    RHEA:59132 uses the staphyloferrin B(2-) participant CHEBI:136993; this record
+    denotes neutral CHEBI:134612 with the same stereochemistry.
+  evidence:
+  - reference: DOI:10.1111/j.1365-2958.2009.06880.x
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: SbnC activates α-KG in a reaction that completes the synthesis of staphyloferrin
+      B
+    notes: Cheung et al. reconstituted staphyloferrin B biosynthesis in vitro with
+      purified recombinant Sbn enzymes and assigned SbnC as the final synthetase that
+      condenses 2-oxoglutarate with the SbnF product.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000943.5/
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG entry version 5 links BGC0000943 to staphyloferrin B biosynthesis
+      in Staphylococcus aureus subsp. aureus NCTC 8325 and lists the LS483365.1 sbnC
+      gene as NCTC8325_00067/SQF72447.1.
+  - reference: RHEA:59132
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:59132 annotates EC:6.3.2.56 as 2-[(L-alanin-3-ylcarbamoyl)methyl]-3-(2-aminoethylcarbamoyl)-2-hydroxypropanoate,
+      2-oxoglutarate, and ATP forming staphyloferrin B, AMP, diphosphate, and a proton.
+  - reference: https://www.uniprot.org/uniprotkb/Q2G1N1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:Q2G1N1 is the Staphylococcus aureus NCTC 8325 / PS 47
+      SbnC staphyloferrin B synthase, ordered locus SAOUHSC_00077, and annotates RHEA:59132.
+  substrates:
+  - CHEBI:142971
+  - CHEBI:16810
+  product: CHEBI:134612
+causal_graphs:
+- graph_id: staphyloferrin-b-sbnc-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Staphylococcus aureus NCTC 8325 SbnC-catalyzed terminal condensation
+    of 2-oxoglutarate with the SbnF product in staphyloferrin B biosynthesis.
+  nodes:
+  - node_id: sbnc_acceptor
+    label: 2-[(L-alanin-3-ylcarbamoyl)methyl]-3-(2-aminoethylcarbamoyl)-2-hydroxypropanoate
+    node_type: PRECURSOR
+    identifier: CHEBI:142971
+    grounding_status: GROUNDED
+  - node_id: two_oxoglutarate
+    label: 2-oxoglutarate
+    node_type: PRECURSOR
+    identifier: CHEBI:16810
+    grounding_status: GROUNDED
+  - node_id: sbnc
+    label: SbnC
+    node_type: ENZYME
+    identifier: UniProtKB:Q2G1N1
+    grounding_status: GROUNDED
+  - node_id: staphyloferrin_b
+    label: staphyloferrin B
+    node_type: COMPOUND
+    identifier: CHEBI:134612
+    grounding_status: GROUNDED
+  edges:
+  - subject: sbnc_acceptor
+    predicate: is condensed with 2-oxoglutarate by
+    object: sbnc
+    notes: RHEA:59132 represents this acceptor as the CHEBI:142971 product of the
+      preceding SbnF synthetase reaction.
+    evidence:
+    - reference: DOI:10.1111/j.1365-2958.2009.06880.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SbnC activates α-KG in a reaction that completes the synthesis of staphyloferrin
+        B
+      notes: Cheung et al. reconstituted staphyloferrin B biosynthesis in vitro with
+        purified recombinant Sbn enzymes and assigned SbnC as the final synthetase
+        that condenses 2-oxoglutarate with the SbnF product.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000943.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 links BGC0000943 to staphyloferrin B biosynthesis
+        in Staphylococcus aureus subsp. aureus NCTC 8325 and lists the LS483365.1
+        sbnC gene as NCTC8325_00067/SQF72447.1.
+    - reference: RHEA:59132
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:59132 annotates EC:6.3.2.56 as 2-[(L-alanin-3-ylcarbamoyl)methyl]-3-(2-aminoethylcarbamoyl)-2-hydroxypropanoate,
+        2-oxoglutarate, and ATP forming staphyloferrin B, AMP, diphosphate, and a
+        proton.
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1N1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q2G1N1 is the Staphylococcus aureus NCTC 8325 / PS
+        47 SbnC staphyloferrin B synthase, ordered locus SAOUHSC_00077, and annotates
+        RHEA:59132.
+  - subject: two_oxoglutarate
+    predicate: is ligated to the SbnC acceptor by
+    object: sbnc
+    notes: RHEA:59132 consumes ATP and releases AMP, diphosphate, and a proton.
+    evidence:
+    - reference: DOI:10.1111/j.1365-2958.2009.06880.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SbnC activates α-KG in a reaction that completes the synthesis of staphyloferrin
+        B
+      notes: Cheung et al. reconstituted staphyloferrin B biosynthesis in vitro with
+        purified recombinant Sbn enzymes and assigned SbnC as the final synthetase
+        that condenses 2-oxoglutarate with the SbnF product.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000943.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 links BGC0000943 to staphyloferrin B biosynthesis
+        in Staphylococcus aureus subsp. aureus NCTC 8325 and lists the LS483365.1
+        sbnC gene as NCTC8325_00067/SQF72447.1.
+    - reference: RHEA:59132
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:59132 annotates EC:6.3.2.56 as 2-[(L-alanin-3-ylcarbamoyl)methyl]-3-(2-aminoethylcarbamoyl)-2-hydroxypropanoate,
+        2-oxoglutarate, and ATP forming staphyloferrin B, AMP, diphosphate, and a
+        proton.
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1N1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q2G1N1 is the Staphylococcus aureus NCTC 8325 / PS
+        47 SbnC staphyloferrin B synthase, ordered locus SAOUHSC_00077, and annotates
+        RHEA:59132.
+  - subject: sbnc
+    predicate: forms
+    object: staphyloferrin_b
+    notes: RHEA uses staphyloferrin B(2-) CHEBI:136993 as the product participant;
+      this graph points at neutral CHEBI:134612, the exact structure recorded for
+      BGC0000943.
+    evidence:
+    - reference: DOI:10.1111/j.1365-2958.2009.06880.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SbnC activates α-KG in a reaction that completes the synthesis of staphyloferrin
+        B
+      notes: Cheung et al. reconstituted staphyloferrin B biosynthesis in vitro with
+        purified recombinant Sbn enzymes and assigned SbnC as the final synthetase
+        that condenses 2-oxoglutarate with the SbnF product.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000943.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 links BGC0000943 to staphyloferrin B biosynthesis
+        in Staphylococcus aureus subsp. aureus NCTC 8325 and lists the LS483365.1
+        sbnC gene as NCTC8325_00067/SQF72447.1.
+    - reference: RHEA:59132
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:59132 annotates EC:6.3.2.56 as 2-[(L-alanin-3-ylcarbamoyl)methyl]-3-(2-aminoethylcarbamoyl)-2-hydroxypropanoate,
+        2-oxoglutarate, and ATP forming staphyloferrin B, AMP, diphosphate, and a
+        proton.
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1N1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q2G1N1 is the Staphylococcus aureus NCTC 8325 / PS
+        47 SbnC staphyloferrin B synthase, ordered locus SAOUHSC_00077, and annotates
+        RHEA:59132.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -122,3 +279,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T05:51:48Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a terminal-step BIOSYNTHESIS pathway and causal graph for staphyloferrin
+    B biosynthesis; grounded Staphylococcus aureus NCTC 8325 SbnC staphyloferrin B
+    synthase to UniProtKB:Q2G1N1 and RHEA:59132.
+  llm_assisted: true
