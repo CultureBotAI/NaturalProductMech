@@ -30,11 +30,11 @@ producer_taxon_groups:
 producer_organisms:
 - taxon_id: NCBITaxon:5062
   taxon_label: Aspergillus oryzae
-  evidence_basis: SOURCE_ASSERTION
+  evidence_basis: BGC_CHARACTERIZED
   biosynthetic_gene_cluster: mibig:BGC0000977
   source: MIBIG
   source_version: '4'
-  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
     this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: DOI:10.1002/cbic.201000672
@@ -56,7 +56,9 @@ biosynthetic_gene_clusters:
   bgc_class:
   - NRPS
   - PKS
-  link_evidence_basis: CLUSTER_UNSTATED
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000977
@@ -67,6 +69,104 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:C9K202
+  enzyme_label: CpaH cytochrome P450 monooxygenase
+  substrate: CHEBI:22450
+  product: naturalproductmech:mibig-5209b855e4
+  notes: CpaH mediates the terminal conversion of Aspergillus oryzae cyclopiazonic
+    acid into 2-oxocyclopiazonic acid. CHEBI:22450 is the exact local grounding for
+    the BGC0000977 cyclopiazonic acid substrate structure; its ChEBI preferred label
+    differs from MIBiG's cyclopiazonic acid label.
+  evidence:
+  - reference: DOI:10.1002/cbic.201000672
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: cpaH-mediates the conversion of CPA into the less toxic 2-oxocyclopiazonic
+      acid
+    notes: Kato et al. used targeted gene inactivation in Aspergillus oryzae, isolated
+      the corresponding metabolite, and assigned CpaH to the terminal conversion of
+      cyclopiazonic acid into 2-oxocyclopiazonic acid.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000977.4/
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-29'
+    notes: MIBiG BGC0000977.4 records Aspergillus oryzae AB506492.1 as the cyclopiazonic
+      acid / 2-oxocyclopiazonic acid BGC and cites DOI:10.1002/cbic.201000672 as compound
+      evidence.
+  - reference: https://www.uniprot.org/uniprotkb/C9K202
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-29'
+    notes: UniProtKB reviewed entry C9K202 resolves to the 509 aa Aspergillus oryzae
+      CpaH cytochrome P450 monooxygenase, maps AB506492 to protein BAK26559.1, and
+      annotates the CpaH function and disruption phenotype from PMID:21608094.
+causal_graphs:
+- graph_id: 2-oxocyclopiazonic-acid-cpah-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Aspergillus oryzae CpaH terminal oxidation of cyclopiazonic acid to
+    2-oxocyclopiazonic acid.
+  nodes:
+  - node_id: cyclopiazonic_acid
+    label: cyclopiazonic acid
+    node_type: PRECURSOR
+    identifier: CHEBI:22450
+    grounding_status: GROUNDED
+  - node_id: cpah
+    label: CpaH cytochrome P450 monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:C9K202
+    grounding_status: GROUNDED
+  - node_id: 2_oxocyclopiazonic_acid
+    label: 2-oxocyclopiazonic acid
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-5209b855e4
+    grounding_status: GROUNDED
+  edges:
+  - subject: cyclopiazonic_acid
+    predicate: is oxidized by
+    object: cpah
+    evidence:
+    - reference: DOI:10.1002/cbic.201000672
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: cpaH-mediates the conversion of CPA into the less toxic 2-oxocyclopiazonic
+        acid
+      notes: Kato et al. used targeted gene inactivation in Aspergillus oryzae, isolated
+        the corresponding metabolite, and assigned CpaH to the terminal conversion
+        of cyclopiazonic acid into 2-oxocyclopiazonic acid.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000977.4/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: MIBiG BGC0000977.4 records Aspergillus oryzae AB506492.1 as the cyclopiazonic
+        acid / 2-oxocyclopiazonic acid BGC and cites DOI:10.1002/cbic.201000672 as
+        compound evidence.
+    - reference: https://www.uniprot.org/uniprotkb/C9K202
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: UniProtKB reviewed entry C9K202 resolves to the 509 aa Aspergillus oryzae
+        CpaH cytochrome P450 monooxygenase, maps AB506492 to protein BAK26559.1, and
+        annotates the CpaH function and disruption phenotype from PMID:21608094.
+  - subject: cpah
+    predicate: produces
+    object: 2_oxocyclopiazonic_acid
+    evidence:
+    - reference: DOI:10.1002/cbic.201000672
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: cpaH-mediates the conversion of CPA into the less toxic 2-oxocyclopiazonic
+        acid
+      notes: Kato et al. used targeted gene inactivation in Aspergillus oryzae, isolated
+        the corresponding metabolite, and assigned CpaH to the terminal conversion
+        of cyclopiazonic acid into 2-oxocyclopiazonic acid.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000977.4/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: MIBiG BGC0000977.4 records Aspergillus oryzae AB506492.1 as the cyclopiazonic
+        acid / 2-oxocyclopiazonic acid BGC and cites DOI:10.1002/cbic.201000672 as
+        compound evidence.
+    - reference: https://www.uniprot.org/uniprotkb/C9K202
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: UniProtKB reviewed entry C9K202 resolves to the 509 aa Aspergillus oryzae
+        CpaH cytochrome P450 monooxygenase, maps AB506492 to protein BAK26559.1, and
+        annotates the CpaH function and disruption phenotype from PMID:21608094.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -76,3 +176,18 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T00:46:40Z'
+  curator: codex
+  action: ADD_BIOSYNTHETIC_PROTEIN_GRAPH
+  changes: Added the Aspergillus oryzae CpaH terminal biosynthetic step and BIOSYNTHESIS
+    causal graph for oxidation of cyclopiazonic acid to 2-oxocyclopiazonic acid, grounded
+    to UniProtKB:C9K202.
+  llm_assisted: true
+- timestamp: '2026-09-30T01:22:40Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-09-30T01:58:15Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

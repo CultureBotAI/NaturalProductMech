@@ -61,7 +61,11 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from naturalproductmech.curate.curation_event import record_curation_event  # noqa: E402
-from naturalproductmech.grading import grade_cluster_link, load_evidence_map  # noqa: E402
+from naturalproductmech.grading import (  # noqa: E402
+    grade_cluster_link,
+    grade_production,
+    load_evidence_map,
+)
 from naturalproductmech.validation.write_validated import (  # noqa: E402
     ValidationFailedError,
     write_validated_natural_product,
@@ -379,9 +383,22 @@ def load_mibig_locus_evidence_overrides(
             )
         overrides[identifier] = {
             "locus_evidence_methods": "|".join(methods),
+            "producer_evidence_basis": grade_production(methods, evidence_map),
             "cluster_link_evidence_basis": grade_cluster_link(methods, evidence_map),
         }
     return overrides
+
+
+def apply_mibig_locus_evidence_override(
+    row: dict[str, str],
+    overrides: dict[str, dict[str, str]],
+) -> dict[str, str]:
+    source_concept_identifier = mint_identifier(
+        "MIBIG", row["mibig_accession"] + ":" + row["compound_index"])
+    override = overrides.get(source_concept_identifier)
+    if not override:
+        return row
+    return {**row, **override}
 
 
 def slugify(label: str, identifier: str) -> str:
@@ -597,6 +614,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         return []
     mibig_locus_overrides = load_mibig_locus_evidence_overrides(
         inventories.get("mibig_locus_evidence_overrides") or [])
+    mibig_rows = [
+        apply_mibig_locus_evidence_override(row, mibig_locus_overrides)
+        for row in mibig_rows
+    ]
 
     classification = {
         row["standard_inchi_key"]: row
@@ -784,9 +805,6 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             accession = row["mibig_accession"]
             source_concept_identifier = mint_identifier(
                 "MIBIG", accession + ":" + row["compound_index"])
-            override = mibig_locus_overrides.get(source_concept_identifier)
-            if override:
-                row = {**row, **override}
 
             source_concepts.append({
                 "source": "MIBIG",

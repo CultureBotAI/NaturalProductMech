@@ -47,7 +47,7 @@ same claim.</p>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
   <td>Aspergillus oryzae<br><span class="mono">NCBITaxon:5062</span></td>
-  <td><span class="tag weak">SOURCE_ASSERTION</span></td>
+  <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
   <td class="mono">mibig:BGC0000977</td>
   <td><span class="mono">DOI:10.1002/cbic.201000672</span></td>
 </tr>
@@ -62,7 +62,7 @@ same claim.</p>
   <td class="mono">mibig:BGC0000977</td>
   <td>Aspergillus oryzae<br><span class="mono">NCBITaxon:5062</span>
 </td>
-  <td><span class="tag ">CLUSTER_UNSTATED</span></td>
+  <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
   <td class="mono">genbank:AB506492.1</td>
 </tr>
 </table></div>
@@ -70,7 +70,40 @@ same claim.</p>
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>CpaH cytochrome P450 monooxygenase<br><span class="mono">UniProtKB:C9K202</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:22450 &rarr; naturalproductmech:mibig-5209b855e4</td>
+  <td class="mono">DOI:10.1002/cbic.201000672</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: CpaH mediates the terminal conversion of Aspergillus oryzae cyclopiazonic acid into 2-oxocyclopiazonic acid. CHEBI:22450 is the exact local grounding for the BGC0000977 cyclopiazonic acid substrate structure; its ChEBI preferred label differs from MIBiG&#39;s cyclopiazonic acid label.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Aspergillus oryzae CpaH terminal oxidation of cyclopiazonic acid to 2-oxocyclopiazonic acid.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>cyclopiazonic acid</td>
+  <td>is oxidized by</td>
+  <td>CpaH cytochrome P450 monooxygenase</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201000672<br>https://mibig.secondarymetabolites.org/repository/BGC0000977.4/<br>https://www.uniprot.org/uniprotkb/C9K202</td>
+</tr>
+<tr>
+  <td>CpaH cytochrome P450 monooxygenase</td>
+  <td>produces</td>
+  <td>2-oxocyclopiazonic acid</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201000672<br>https://mibig.secondarymetabolites.org/repository/BGC0000977.4/<br>https://www.uniprot.org/uniprotkb/C9K202</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

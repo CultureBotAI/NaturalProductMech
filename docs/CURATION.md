@@ -22,8 +22,10 @@ Decisions apply at seed time, so a decision changes the corpus only after
 
 `curation/mibig_locus_evidence_overrides.tsv` is for a narrower correction:
 MIBiG sometimes cites a paper at entry level without migrating its experiment
-into `loci[].evidence[].method`. A row in this table upgrades only the locus
-link written to `biosynthetic_gene_clusters`, not the native
+into `loci[].evidence[].method`. A row in this table supplies those MIBiG
+method names before the seeder grades both claims: enzymatic or heterologous
+evidence upgrades only the locus link written to `biosynthetic_gene_clusters`,
+while native knock-out or correlation evidence can also upgrade the
 `producer_organisms` grade.
 
 | Column | Meaning |
