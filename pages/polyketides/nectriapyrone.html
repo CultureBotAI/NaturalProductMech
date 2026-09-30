@@ -89,7 +89,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>NEC2 O-methyltransferase<br><span class="mono">UniProtKB:G4NEA9</span></td>
+  <td class="mono">RHEA:58748</td>
+  <td class="mono">CHEBI:142640 &rarr; CHEBI:142639</td>
+  <td class="mono">DOI:10.1002/cbic.201800620</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: NEC2 methylates desmethylnectriapyrone to the 4-O-methyl 2-pyrone nectriapyrone; this single step records the NEC2/RHEA:58748 tailoring reaction and leaves upstream NEC1 polyketide assembly and downstream hydrolysis to nectriapyrone D unexpanded.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Pyricularia oryzae 70-15 NEC2 O-methylates desmethylnectriapyrone to form nectriapyrone.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>desmethylnectriapyrone</td>
+  <td>is O-methylated by</td>
+  <td>NEC2</td>
+  <td>NEC2 uses SAM to methylate the desmethylnectriapyrone oxygen and RHEA records this step as RHEA:58748.</td>
+  <td class="mono">DOI:10.1002/cbic.201800620<br>https://mibig.secondarymetabolites.org/repository/BGC0002155.3/BGC0002155.gbk<br>https://www.uniprot.org/uniprotkb/G4NEA9<br>https://www.rhea-db.org/rhea/58748</td>
+</tr>
+<tr>
+  <td>NEC2</td>
+  <td>forms</td>
+  <td>nectriapyrone</td>
+  <td>NEC2 is the MGG_14657 O-methyltransferase in the BGC0002155 Pyricularia oryzae 70-15 cluster.</td>
+  <td class="mono">DOI:10.1002/cbic.201800620<br>https://mibig.secondarymetabolites.org/repository/BGC0002155.3/BGC0002155.gbk<br>https://www.uniprot.org/uniprotkb/G4NEA9<br>https://www.rhea-db.org/rhea/58748</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
