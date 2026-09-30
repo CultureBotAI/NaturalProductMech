@@ -358,6 +358,226 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0001316, BGC0001318.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- enzyme_id: UniProtKB:G3FIN8
+  enzyme_label: UGT85K4 linamarin synthase 1
+  reaction_id: RHEA:20009
+  substrate: CHEBI:15348
+  substrates:
+  - CHEBI:15348
+  - CHEBI:58885
+  product: CHEBI:16441
+  products:
+  - CHEBI:16441
+  - CHEBI:58223
+  - CHEBI:15378
+  notes: UGT85K4 is one of two Manihot esculenta paralogs biochemically shown to glucosylate
+    acetone cyanohydrin with UDP-glucose to form linamarin. The two entries are unnumbered
+    to avoid implying an order between the UGT85K4 and UGT85K5 alternatives. Seeded
+    BGC0001318 is Manihot esculenta but has only placeholder genome coordinates, so
+    the exact grounding used here is the JF727883 cDNA characterized by Kannangara
+    et al., not a resolved MIBiG CDS.
+  evidence:
+  - reference: DOI:10.1111/j.1365-313X.2011.04695.x
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Recombinant UGT85K4 and UGT85K5 produced in Escherichia coli were able
+      to glucosylate acetone cyanohydrin
+    notes: Kannangara et al. isolated full-length Manihot esculenta UGT85K4 and UGT85K5
+      cDNAs, expressed both enzymes in E. coli, identified linamarin among the cyanogenic-glucoside
+      products of radiolabeled UDP-glucose assays, and showed that their transcripts
+      and proteins co-localize with the upstream CYP79D and CYP71E paralogs.
+  - reference: https://www.uniprot.org/uniprotkb/G3FIN8
+    evidence_type: DATABASE_ASSERTION
+    snippet: Able to glucosylate acetone cyanohydrin and 2-hydroxy-2-methylbutyronitrile,
+      forming linamarin and lotaustralin
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:G3FIN8 is the 483 aa Manihot esculenta linamarin synthase
+      1, gene UGT85K4, cross-references EMBL JF727883 protein AEO45781.1, and annotates
+      EC 2.4.1.63 and RHEA:20009 from PMID:21736650.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: The Rhea Swiss-Prot mapping links the linamarin synthase reaction RHEA:20009
+      to UniProtKB:G3FIN8 and UniProtKB:G3FIN9.
+- enzyme_id: UniProtKB:G3FIN9
+  enzyme_label: UGT85K5 linamarin synthase 2
+  reaction_id: RHEA:20009
+  substrate: CHEBI:15348
+  substrates:
+  - CHEBI:15348
+  - CHEBI:58885
+  product: CHEBI:16441
+  products:
+  - CHEBI:16441
+  - CHEBI:58223
+  - CHEBI:15378
+  notes: UGT85K5 is one of two Manihot esculenta paralogs biochemically shown to glucosylate
+    acetone cyanohydrin with UDP-glucose to form linamarin. The two entries are unnumbered
+    to avoid implying an order between the UGT85K4 and UGT85K5 alternatives. Seeded
+    BGC0001318 is Manihot esculenta but has only placeholder genome coordinates, so
+    the exact grounding used here is the JF727884 cDNA characterized by Kannangara
+    et al., not a resolved MIBiG CDS.
+  evidence:
+  - reference: DOI:10.1111/j.1365-313X.2011.04695.x
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Recombinant UGT85K4 and UGT85K5 produced in Escherichia coli were able
+      to glucosylate acetone cyanohydrin
+    notes: Kannangara et al. isolated full-length Manihot esculenta UGT85K4 and UGT85K5
+      cDNAs, expressed both enzymes in E. coli, identified linamarin among the cyanogenic-glucoside
+      products of radiolabeled UDP-glucose assays, and showed that their transcripts
+      and proteins co-localize with the upstream CYP79D and CYP71E paralogs.
+  - reference: https://www.uniprot.org/uniprotkb/G3FIN9
+    evidence_type: DATABASE_ASSERTION
+    snippet: Able to glucosylate acetone cyanohydrin and 2-hydroxy-2-methylbutyronitrile,
+      forming linamarin and lotaustralin
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:G3FIN9 is the 483 aa Manihot esculenta linamarin synthase
+      2, gene UGT85K5, cross-references EMBL JF727884 protein AEO45782.1, and annotates
+      EC 2.4.1.63 and RHEA:20009 from PMID:21736650.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: The Rhea Swiss-Prot mapping links the linamarin synthase reaction RHEA:20009
+      to UniProtKB:G3FIN8 and UniProtKB:G3FIN9.
+causal_graphs:
+- graph_id: linamarin-manihot-ugt85k-glucosylation
+  scope: BIOSYNTHESIS
+  description: Partial Manihot esculenta linamarin biosynthesis graph for the parallel
+    UGT85K4- and UGT85K5-catalyzed terminal acetone-cyanohydrin glucosylation reactions.
+  nodes:
+  - node_id: acetone_cyanohydrin
+    label: 2-hydroxy-2-methylpropanenitrile
+    node_type: PRECURSOR
+    identifier: CHEBI:15348
+    grounding_status: GROUNDED
+  - node_id: ugt85k4
+    label: UGT85K4 linamarin synthase 1
+    node_type: ENZYME
+    identifier: UniProtKB:G3FIN8
+    grounding_status: GROUNDED
+  - node_id: ugt85k5
+    label: UGT85K5 linamarin synthase 2
+    node_type: ENZYME
+    identifier: UniProtKB:G3FIN9
+    grounding_status: GROUNDED
+  - node_id: linamarin
+    label: linamarin
+    node_type: COMPOUND
+    identifier: CHEBI:16441
+    grounding_status: GROUNDED
+  edges:
+  - subject: acetone_cyanohydrin
+    predicate: is glucosylated by
+    object: ugt85k4
+    notes: UGT85K4 glucosylates acetone cyanohydrin in the Manihot linamarin-forming
+      reaction.
+    evidence:
+    - reference: DOI:10.1111/j.1365-313X.2011.04695.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Recombinant UGT85K4 and UGT85K5 produced in Escherichia coli were able
+        to glucosylate acetone cyanohydrin
+      notes: Kannangara et al. isolated full-length Manihot esculenta UGT85K4 and
+        UGT85K5 cDNAs, expressed both enzymes in E. coli, identified linamarin among
+        the cyanogenic-glucoside products of radiolabeled UDP-glucose assays, and
+        showed that their transcripts and proteins co-localize with the upstream CYP79D
+        and CYP71E paralogs.
+    - reference: https://www.uniprot.org/uniprotkb/G3FIN8
+      evidence_type: DATABASE_ASSERTION
+      snippet: Able to glucosylate acetone cyanohydrin and 2-hydroxy-2-methylbutyronitrile,
+        forming linamarin and lotaustralin
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:G3FIN8 is the 483 aa Manihot esculenta linamarin synthase
+        1, gene UGT85K4, cross-references EMBL JF727883 protein AEO45781.1, and annotates
+        EC 2.4.1.63 and RHEA:20009 from PMID:21736650.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links the linamarin synthase reaction RHEA:20009
+        to UniProtKB:G3FIN8 and UniProtKB:G3FIN9.
+  - subject: ugt85k4
+    predicate: forms
+    object: linamarin
+    notes: UGT85K4 forms linamarin by transferring glucose from UDP-glucose to acetone
+      cyanohydrin.
+    evidence:
+    - reference: DOI:10.1111/j.1365-313X.2011.04695.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Recombinant UGT85K4 and UGT85K5 produced in Escherichia coli were able
+        to glucosylate acetone cyanohydrin
+      notes: Kannangara et al. isolated full-length Manihot esculenta UGT85K4 and
+        UGT85K5 cDNAs, expressed both enzymes in E. coli, identified linamarin among
+        the cyanogenic-glucoside products of radiolabeled UDP-glucose assays, and
+        showed that their transcripts and proteins co-localize with the upstream CYP79D
+        and CYP71E paralogs.
+    - reference: https://www.uniprot.org/uniprotkb/G3FIN8
+      evidence_type: DATABASE_ASSERTION
+      snippet: Able to glucosylate acetone cyanohydrin and 2-hydroxy-2-methylbutyronitrile,
+        forming linamarin and lotaustralin
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:G3FIN8 is the 483 aa Manihot esculenta linamarin synthase
+        1, gene UGT85K4, cross-references EMBL JF727883 protein AEO45781.1, and annotates
+        EC 2.4.1.63 and RHEA:20009 from PMID:21736650.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links the linamarin synthase reaction RHEA:20009
+        to UniProtKB:G3FIN8 and UniProtKB:G3FIN9.
+  - subject: acetone_cyanohydrin
+    predicate: is glucosylated by
+    object: ugt85k5
+    notes: UGT85K5 glucosylates acetone cyanohydrin in the Manihot linamarin-forming
+      reaction.
+    evidence:
+    - reference: DOI:10.1111/j.1365-313X.2011.04695.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Recombinant UGT85K4 and UGT85K5 produced in Escherichia coli were able
+        to glucosylate acetone cyanohydrin
+      notes: Kannangara et al. isolated full-length Manihot esculenta UGT85K4 and
+        UGT85K5 cDNAs, expressed both enzymes in E. coli, identified linamarin among
+        the cyanogenic-glucoside products of radiolabeled UDP-glucose assays, and
+        showed that their transcripts and proteins co-localize with the upstream CYP79D
+        and CYP71E paralogs.
+    - reference: https://www.uniprot.org/uniprotkb/G3FIN9
+      evidence_type: DATABASE_ASSERTION
+      snippet: Able to glucosylate acetone cyanohydrin and 2-hydroxy-2-methylbutyronitrile,
+        forming linamarin and lotaustralin
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:G3FIN9 is the 483 aa Manihot esculenta linamarin synthase
+        2, gene UGT85K5, cross-references EMBL JF727884 protein AEO45782.1, and annotates
+        EC 2.4.1.63 and RHEA:20009 from PMID:21736650.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links the linamarin synthase reaction RHEA:20009
+        to UniProtKB:G3FIN8 and UniProtKB:G3FIN9.
+  - subject: ugt85k5
+    predicate: forms
+    object: linamarin
+    notes: UGT85K5 forms linamarin by transferring glucose from UDP-glucose to acetone
+      cyanohydrin.
+    evidence:
+    - reference: DOI:10.1111/j.1365-313X.2011.04695.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Recombinant UGT85K4 and UGT85K5 produced in Escherichia coli were able
+        to glucosylate acetone cyanohydrin
+      notes: Kannangara et al. isolated full-length Manihot esculenta UGT85K4 and
+        UGT85K5 cDNAs, expressed both enzymes in E. coli, identified linamarin among
+        the cyanogenic-glucoside products of radiolabeled UDP-glucose assays, and
+        showed that their transcripts and proteins co-localize with the upstream CYP79D
+        and CYP71E paralogs.
+    - reference: https://www.uniprot.org/uniprotkb/G3FIN9
+      evidence_type: DATABASE_ASSERTION
+      snippet: Able to glucosylate acetone cyanohydrin and 2-hydroxy-2-methylbutyronitrile,
+        forming linamarin and lotaustralin
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:G3FIN9 is the 483 aa Manihot esculenta linamarin synthase
+        2, gene UGT85K5, cross-references EMBL JF727884 protein AEO45782.1, and annotates
+        EC 2.4.1.63 and RHEA:20009 from PMID:21736650.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links the linamarin synthase reaction RHEA:20009
+        to UniProtKB:G3FIN8 and UniProtKB:G3FIN9.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -367,3 +587,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T17:22:51Z'
+  curator: codex
+  action: ADD_BIOSYNTHETIC_PROTEIN_GRAPH
+  changes: Added exact Manihot esculenta UGT85K4/UniProtKB:G3FIN8 and UGT85K5/UniProtKB:G3FIN9
+    linamarin synthase grounding, two unnumbered RHEA:20009 acetone cyanohydrin to
+    linamarin pathway entries, and a BIOSYNTHESIS causal graph linking both paralogs
+    to the terminal glucosylation.
+  llm_assisted: true

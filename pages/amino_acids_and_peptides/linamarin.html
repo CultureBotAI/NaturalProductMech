@@ -212,7 +212,61 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>#</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>UGT85K4 linamarin synthase 1<br><span class="mono">UniProtKB:G3FIN8</span></td>
+  <td class="mono">RHEA:20009</td>
+  <td class="mono">CHEBI:15348 + CHEBI:58885 &rarr; CHEBI:16441 + CHEBI:58223 + CHEBI:15378</td>
+  <td class="mono">DOI:10.1111/j.1365-313X.2011.04695.x</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>UGT85K5 linamarin synthase 2<br><span class="mono">UniProtKB:G3FIN9</span></td>
+  <td class="mono">RHEA:20009</td>
+  <td class="mono">CHEBI:15348 + CHEBI:58885 &rarr; CHEBI:16441 + CHEBI:58223 + CHEBI:15378</td>
+  <td class="mono">DOI:10.1111/j.1365-313X.2011.04695.x</td>
+</tr>
+</table></div>
+<p class="sub">Entry 1: UGT85K4 is one of two Manihot esculenta paralogs biochemically shown to glucosylate acetone cyanohydrin with UDP-glucose to form linamarin. The two entries are unnumbered to avoid implying an order between the UGT85K4 and UGT85K5 alternatives. Seeded BGC0001318 is Manihot esculenta but has only placeholder genome coordinates, so the exact grounding used here is the JF727883 cDNA characterized by Kannangara et al., not a resolved MIBiG CDS.</p><p class="sub">Entry 2: UGT85K5 is one of two Manihot esculenta paralogs biochemically shown to glucosylate acetone cyanohydrin with UDP-glucose to form linamarin. The two entries are unnumbered to avoid implying an order between the UGT85K4 and UGT85K5 alternatives. Seeded BGC0001318 is Manihot esculenta but has only placeholder genome coordinates, so the exact grounding used here is the JF727884 cDNA characterized by Kannangara et al., not a resolved MIBiG CDS.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 4 edges</span></h2>
+<p class="sub">Partial Manihot esculenta linamarin biosynthesis graph for the parallel UGT85K4- and UGT85K5-catalyzed terminal acetone-cyanohydrin glucosylation reactions.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2-hydroxy-2-methylpropanenitrile</td>
+  <td>is glucosylated by</td>
+  <td>UGT85K4 linamarin synthase 1</td>
+  <td>UGT85K4 glucosylates acetone cyanohydrin in the Manihot linamarin-forming reaction.</td>
+  <td class="mono">DOI:10.1111/j.1365-313X.2011.04695.x<br>https://www.uniprot.org/uniprotkb/G3FIN8<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+<tr>
+  <td>UGT85K4 linamarin synthase 1</td>
+  <td>forms</td>
+  <td>linamarin</td>
+  <td>UGT85K4 forms linamarin by transferring glucose from UDP-glucose to acetone cyanohydrin.</td>
+  <td class="mono">DOI:10.1111/j.1365-313X.2011.04695.x<br>https://www.uniprot.org/uniprotkb/G3FIN8<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+<tr>
+  <td>2-hydroxy-2-methylpropanenitrile</td>
+  <td>is glucosylated by</td>
+  <td>UGT85K5 linamarin synthase 2</td>
+  <td>UGT85K5 glucosylates acetone cyanohydrin in the Manihot linamarin-forming reaction.</td>
+  <td class="mono">DOI:10.1111/j.1365-313X.2011.04695.x<br>https://www.uniprot.org/uniprotkb/G3FIN9<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+<tr>
+  <td>UGT85K5 linamarin synthase 2</td>
+  <td>forms</td>
+  <td>linamarin</td>
+  <td>UGT85K5 forms linamarin by transferring glucose from UDP-glucose to acetone cyanohydrin.</td>
+  <td class="mono">DOI:10.1111/j.1365-313X.2011.04695.x<br>https://www.uniprot.org/uniprotkb/G3FIN9<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
