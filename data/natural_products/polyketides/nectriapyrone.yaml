@@ -113,6 +113,123 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-3146ac02c6
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:G4NEA9
+  enzyme_label: NEC2 O-methyltransferase
+  reaction_id: RHEA:58748
+  substrate: CHEBI:142640
+  product: CHEBI:142639
+  notes: NEC2 methylates desmethylnectriapyrone to the 4-O-methyl 2-pyrone nectriapyrone;
+    this single step records the NEC2/RHEA:58748 tailoring reaction and leaves upstream
+    NEC1 polyketide assembly and downstream hydrolysis to nectriapyrone D unexpanded.
+  evidence:
+  - reference: DOI:10.1002/cbic.201800620
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: The nectriapyrone biosynthetic gene cluster consists of a polyketide
+      synthase gene (NEC1) and an O-methyltransferase gene (NEC2).
+    notes: Motoyama et al. assigned the Pyricularia oryzae 70-15 nectriapyrone cluster
+      and showed that NEC1 plus NEC2 overexpression induced overproduction of nectriapyrone
+      and nectriapyrone analogues.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002155.3/BGC0002155.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0002155.3 places NEC2 locus tag MGG_14657 at GenBank CM001235.1
+      with protein_id EHA48592.1 in the Pyricularia oryzae 70-15 nectriapyrone BGC.
+  - reference: https://www.uniprot.org/uniprotkb/G4NEA9
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:G4NEA9 resolves to the 265 aa Pyricularia oryzae strain
+      70-15 O-methyltransferase NEC2 / MGG_14657 gene product, cross-references EMBL
+      CM001235 protein EHA48592.1, and annotates catalytic activity RHEA:58748.
+  - reference: https://www.rhea-db.org/rhea/58748
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:58748 is the desmethylnectriapyrone plus S-adenosyl-L-methionine to
+      nectriapyrone plus S-adenosyl-L-homocysteine plus H(+) reaction; Rhea maps the
+      master reaction to UniProtKB:G4NEA9 in Swiss-Prot.
+causal_graphs:
+- graph_id: nectriapyrone-nec2-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Pyricularia oryzae 70-15 NEC2 O-methylates desmethylnectriapyrone to
+    form nectriapyrone.
+  nodes:
+  - node_id: desmethylnectriapyrone
+    label: desmethylnectriapyrone
+    node_type: PRECURSOR
+    identifier: CHEBI:142640
+    grounding_status: GROUNDED
+  - node_id: nec2
+    label: NEC2
+    node_type: ENZYME
+    identifier: UniProtKB:G4NEA9
+    grounding_status: GROUNDED
+  - node_id: nectriapyrone
+    label: nectriapyrone
+    node_type: COMPOUND
+    identifier: CHEBI:142639
+    grounding_status: GROUNDED
+  edges:
+  - subject: desmethylnectriapyrone
+    predicate: is O-methylated by
+    object: nec2
+    notes: NEC2 uses SAM to methylate the desmethylnectriapyrone oxygen and RHEA records
+      this step as RHEA:58748.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800620
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: The nectriapyrone biosynthetic gene cluster consists of a polyketide
+        synthase gene (NEC1) and an O-methyltransferase gene (NEC2).
+      notes: Motoyama et al. assigned the Pyricularia oryzae 70-15 nectriapyrone cluster
+        and showed that NEC1 plus NEC2 overexpression induced overproduction of nectriapyrone
+        and nectriapyrone analogues.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002155.3/BGC0002155.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0002155.3 places NEC2 locus tag MGG_14657 at GenBank CM001235.1
+        with protein_id EHA48592.1 in the Pyricularia oryzae 70-15 nectriapyrone BGC.
+    - reference: https://www.uniprot.org/uniprotkb/G4NEA9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:G4NEA9 resolves to the 265 aa Pyricularia oryzae strain
+        70-15 O-methyltransferase NEC2 / MGG_14657 gene product, cross-references
+        EMBL CM001235 protein EHA48592.1, and annotates catalytic activity RHEA:58748.
+    - reference: https://www.rhea-db.org/rhea/58748
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:58748 is the desmethylnectriapyrone plus S-adenosyl-L-methionine
+        to nectriapyrone plus S-adenosyl-L-homocysteine plus H(+) reaction; Rhea maps
+        the master reaction to UniProtKB:G4NEA9 in Swiss-Prot.
+  - subject: nec2
+    predicate: forms
+    object: nectriapyrone
+    notes: NEC2 is the MGG_14657 O-methyltransferase in the BGC0002155 Pyricularia
+      oryzae 70-15 cluster.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800620
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: The nectriapyrone biosynthetic gene cluster consists of a polyketide
+        synthase gene (NEC1) and an O-methyltransferase gene (NEC2).
+      notes: Motoyama et al. assigned the Pyricularia oryzae 70-15 nectriapyrone cluster
+        and showed that NEC1 plus NEC2 overexpression induced overproduction of nectriapyrone
+        and nectriapyrone analogues.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002155.3/BGC0002155.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0002155.3 places NEC2 locus tag MGG_14657 at GenBank CM001235.1
+        with protein_id EHA48592.1 in the Pyricularia oryzae 70-15 nectriapyrone BGC.
+    - reference: https://www.uniprot.org/uniprotkb/G4NEA9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:G4NEA9 resolves to the 265 aa Pyricularia oryzae strain
+        70-15 O-methyltransferase NEC2 / MGG_14657 gene product, cross-references
+        EMBL CM001235 protein EHA48592.1, and annotates catalytic activity RHEA:58748.
+    - reference: https://www.rhea-db.org/rhea/58748
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:58748 is the desmethylnectriapyrone plus S-adenosyl-L-methionine
+        to nectriapyrone plus S-adenosyl-L-homocysteine plus H(+) reaction; Rhea maps
+        the master reaction to UniProtKB:G4NEA9 in Swiss-Prot.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -122,3 +239,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T19:26:24Z'
+  curator: codex
+  action: CURATED_BIOSYNTHESIS_GRAPH
+  changes: Added the Pyricularia oryzae NEC2 desmethylnectriapyrone O-methylation
+    step and RHEA:58748 / UniProtKB:G4NEA9-grounded nectriapyrone BIOSYNTHESIS causal
+    graph.
+  llm_assisted: true
