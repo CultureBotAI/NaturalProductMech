@@ -115,6 +115,120 @@ discussions:
   prompt: ChEBI calls this structure 'stemphyloxin I' and MIBiG calls it 'compound
     7'. They share a Standard InChIKey, so if the names denote different compounds
     then one upstream record has the wrong structure. Check which.
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q0UK51
+  enzyme_label: SthD cytochrome P450 monooxygenase
+  reaction_id: RHEA:62712
+  substrate: CHEBI:145053
+  product: CHEBI:145070
+  notes: SthD hydroxylates betaenone C at C-15 to afford compound 7 / stemphyloxin
+    I; this single curated tailoring step leaves upstream assembly from dehydroprobetaenone
+    I to betaenone C unexpanded.
+  evidence:
+  - reference: DOI:10.1002/chem.201904360
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Li et al. activated the Parastagonospora nodorum SN15 stemphyloxin II cluster
+      and used heterologous reconstruction to assign SthD C-15 hydroxylation of betaenone
+      C to compound 7 / stemphyloxin I.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0002165.3 places SNOG_07863 on GenBank CH445335.1 with protein_id
+      EAT85329.1 in the Parastagonospora nodorum SN15 stemphyloxin II BGC.
+  - reference: https://www.uniprot.org/uniprotkb/Q0UK51
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:Q0UK51 is the 475 aa Phaeosphaeria nodorum SN15, synonymous
+      with Parastagonospora nodorum SN15, cytochrome P450 monooxygenase SthD / SNOG_07863
+      gene product; it cross-references EMBL CH445335 protein EAT85329.1 and annotates
+      catalytic activity RHEA:62712 / RHEA:62713.
+  - reference: https://www.rhea-db.org/rhea/62712
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:62712 is the betaenone C plus NADPH plus O2 plus H(+) to stemphyloxin
+      I plus NADP(+) plus H2O reaction; Rhea maps the master reaction to UniProtKB:Q0UK51
+      in Swiss-Prot.
+causal_graphs:
+- graph_id: stemphyloxin-i-sthd-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Parastagonospora nodorum SN15 SthD C-15-hydroxylates betaenone C to
+    form stemphyloxin I.
+  nodes:
+  - node_id: betaenone_c
+    label: betaenone C
+    node_type: PRECURSOR
+    identifier: CHEBI:145053
+    grounding_status: GROUNDED
+  - node_id: sthd
+    label: SthD
+    node_type: ENZYME
+    identifier: UniProtKB:Q0UK51
+    grounding_status: GROUNDED
+  - node_id: stemphyloxin_i
+    label: stemphyloxin I
+    node_type: COMPOUND
+    identifier: CHEBI:145070
+    grounding_status: GROUNDED
+  edges:
+  - subject: betaenone_c
+    predicate: is hydroxylated by
+    object: sthd
+    notes: SthD uses NADPH and O2 in the RHEA:62712 C-15 hydroxylation of betaenone
+      C.
+    evidence:
+    - reference: DOI:10.1002/chem.201904360
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Li et al. activated the Parastagonospora nodorum SN15 stemphyloxin II
+        cluster and used heterologous reconstruction to assign SthD C-15 hydroxylation
+        of betaenone C to compound 7 / stemphyloxin I.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0002165.3 places SNOG_07863 on GenBank CH445335.1 with protein_id
+        EAT85329.1 in the Parastagonospora nodorum SN15 stemphyloxin II BGC.
+    - reference: https://www.uniprot.org/uniprotkb/Q0UK51
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q0UK51 is the 475 aa Phaeosphaeria nodorum SN15, synonymous
+        with Parastagonospora nodorum SN15, cytochrome P450 monooxygenase SthD / SNOG_07863
+        gene product; it cross-references EMBL CH445335 protein EAT85329.1 and annotates
+        catalytic activity RHEA:62712 / RHEA:62713.
+    - reference: https://www.rhea-db.org/rhea/62712
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:62712 is the betaenone C plus NADPH plus O2 plus H(+) to stemphyloxin
+        I plus NADP(+) plus H2O reaction; Rhea maps the master reaction to UniProtKB:Q0UK51
+        in Swiss-Prot.
+  - subject: sthd
+    predicate: forms
+    object: stemphyloxin_i
+    notes: SthD is the SNOG_07863 cytochrome P450 monooxygenase in the BGC0002165
+      Parastagonospora nodorum SN15 cluster.
+    evidence:
+    - reference: DOI:10.1002/chem.201904360
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Li et al. activated the Parastagonospora nodorum SN15 stemphyloxin II
+        cluster and used heterologous reconstruction to assign SthD C-15 hydroxylation
+        of betaenone C to compound 7 / stemphyloxin I.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0002165.3 places SNOG_07863 on GenBank CH445335.1 with protein_id
+        EAT85329.1 in the Parastagonospora nodorum SN15 stemphyloxin II BGC.
+    - reference: https://www.uniprot.org/uniprotkb/Q0UK51
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q0UK51 is the 475 aa Phaeosphaeria nodorum SN15, synonymous
+        with Parastagonospora nodorum SN15, cytochrome P450 monooxygenase SthD / SNOG_07863
+        gene product; it cross-references EMBL CH445335 protein EAT85329.1 and annotates
+        catalytic activity RHEA:62712 / RHEA:62713.
+    - reference: https://www.rhea-db.org/rhea/62712
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:62712 is the betaenone C plus NADPH plus O2 plus H(+) to stemphyloxin
+        I plus NADP(+) plus H2O reaction; Rhea maps the master reaction to UniProtKB:Q0UK51
+        in Swiss-Prot.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -124,3 +238,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T21:27:53Z'
+  curator: codex
+  action: CURATED_BIOSYNTHESIS_GRAPH
+  changes: Added the Parastagonospora nodorum SthD betaenone C C-15 hydroxylation
+    step and RHEA:62712 / UniProtKB:Q0UK51-grounded stemphyloxin I BIOSYNTHESIS causal
+    graph.
+  llm_assisted: true
