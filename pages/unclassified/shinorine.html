@@ -104,7 +104,47 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>4</td>
+  <td>Ava_3855 NRPS-like shinorine synthase<br><span class="mono">UniProtKB:Q3M6C6</span></td>
+  <td class="mono"></td>
+  <td class="mono">naturalproductmech:mibig-00a364fe41 + CHEBI:17115 &rarr; CHEBI:131712</td>
+  <td class="mono">DOI:10.1126/science.1193637</td>
+</tr>
+</table></div>
+<p class="sub">Step 4: Trichormus variabilis ATCC 29413 Ava_3855 catalyzes the ATP-dependent terminal serine incorporation step that converts mycosporine glycine to shinorine. No exact Rhea reaction was available for this serine addition.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Trichormus variabilis ATCC 29413 Ava_3855-catalyzed terminal attachment of serine to mycosporine glycine in shinorine biosynthesis.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>mycosporine glycine</td>
+  <td>is converted to shinorine by</td>
+  <td>Ava_3855</td>
+  <td>Purified Ava_3855 uses mycosporine glycine and serine as substrates in ATP-dependent shinorine formation.</td>
+  <td class="mono">DOI:10.1126/science.1193637<br>https://mibig.secondarymetabolites.org/repository/BGC0000427.5/<br>https://www.uniprot.org/uniprotkb/Q3M6C6</td>
+</tr>
+<tr>
+  <td>L-serine</td>
+  <td>is attached to mycosporine glycine by</td>
+  <td>Ava_3855</td>
+  <td>Ava_3855 activates serine through its adenylation domain and loads it onto the enzyme thiolation domain before shinorine formation.</td>
+  <td class="mono">DOI:10.1126/science.1193637<br>https://mibig.secondarymetabolites.org/repository/BGC0000427.5/<br>https://www.uniprot.org/uniprotkb/Q3M6C6</td>
+</tr>
+<tr>
+  <td>Ava_3855</td>
+  <td>forms</td>
+  <td>shinorine</td>
+  <td>Full-cluster heterologous expression produced shinorine, while the Ava_3855-truncated construct accumulated mycosporine glycine.</td>
+  <td class="mono">DOI:10.1126/science.1193637<br>https://mibig.secondarymetabolites.org/repository/BGC0000427.5/<br>https://www.uniprot.org/uniprotkb/Q3M6C6</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
