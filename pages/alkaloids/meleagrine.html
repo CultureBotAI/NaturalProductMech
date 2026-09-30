@@ -89,7 +89,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>7</td>
+  <td>RoqN glandicoline B O-methyltransferase<br><span class="mono">UniProtKB:B6HJU2</span></td>
+  <td class="mono">RHEA:51732</td>
+  <td class="mono">naturalproductmech:mibig-7a476dbad3 &rarr; CHEBI:70399</td>
+  <td class="mono">DOI:10.1039/c8ob01565a</td>
+</tr>
+</table></div>
+<p class="sub">Step 7: This curates the Penicillium rubens Wisconsin 54-1255 BGC0000420 terminal O-methylation of glandicoline B to meleagrin. RHEA:51732 uses CHEBI:134347 for glandicoline B; this corpus keeps the exact BGC0000420 glandicoline B structure as naturalproductmech:mibig-7a476dbad3 because its stereochemical representation is not an exact ChEBI match.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Penicillium rubens Wisconsin 54-1255 RoqN O-methylates glandicoline B to form meleagrin.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>glandicoline B</td>
+  <td>is O-methylated by</td>
+  <td>RoqN</td>
+  <td>RoqN uses SAM to methylate the hydroxylamine oxygen of glandicoline B in the roquefortine/meleagrin branch.</td>
+  <td class="mono">DOI:10.1039/c8ob01565a<br>DOI:10.1371/journal.pone.0065328<br>https://www.uniprot.org/uniprotkb/B6HJU2<br>https://www.rhea-db.org/rhea/51732</td>
+</tr>
+<tr>
+  <td>RoqN</td>
+  <td>forms</td>
+  <td>meleagrin</td>
+  <td>RoqN is the Pc21g15440/gmt methyltransferase that forms meleagrin from glandicoline B as the terminal BGC0000420 tailoring reaction.</td>
+  <td class="mono">DOI:10.1039/c8ob01565a<br>DOI:10.1371/journal.pone.0065328<br>https://www.uniprot.org/uniprotkb/B6HJU2<br>https://www.rhea-db.org/rhea/51732</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

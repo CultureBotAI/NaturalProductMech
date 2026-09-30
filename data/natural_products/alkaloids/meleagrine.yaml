@@ -106,6 +106,128 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-b1c43faa38
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 7
+  enzyme_id: UniProtKB:B6HJU2
+  enzyme_label: RoqN glandicoline B O-methyltransferase
+  reaction_id: RHEA:51732
+  substrate: naturalproductmech:mibig-7a476dbad3
+  product: CHEBI:70399
+  notes: This curates the Penicillium rubens Wisconsin 54-1255 BGC0000420 terminal
+    O-methylation of glandicoline B to meleagrin. RHEA:51732 uses CHEBI:134347 for
+    glandicoline B; this corpus keeps the exact BGC0000420 glandicoline B structure
+    as naturalproductmech:mibig-7a476dbad3 because its stereochemical representation
+    is not an exact ChEBI match.
+  evidence:
+  - reference: DOI:10.1039/c8ob01565a
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: The homologous enzymes OxaG and RoqN were shown to catalyze penultimate
+      hydroxylamine O-methylation to generate meleagrin in vitro.
+    notes: Murray et al. directly assayed RoqN-catalyzed O-methylation of glandicoline
+      B to meleagrin and OxaG, its Penicillium oxalicum homolog, with SAM as methyl
+      donor.
+  - reference: DOI:10.1371/journal.pone.0065328
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Eventually, meleagrin is produced from glandicoline B involving a methyltransferase
+      (RoqN).
+    notes: Ali et al. assigned roqN in Penicillium rubens / P. chrysogenum by profiling
+      BGC0000420 deletion strains in the branched roquefortine/meleagrin pathway.
+  - reference: https://www.uniprot.org/uniprotkb/B6HJU2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:B6HJU2 is the 288 aa Penicillium rubens Wisconsin 54-1255
+      RoqN/gmt/Pc21g15440 glandicoline B O-methyltransferase and cross-references
+      EMBL AM920436 protein CAP96441.1.
+  - reference: https://www.rhea-db.org/rhea/51732
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:51732 is the glandicoline B plus S-adenosyl-L-methionine to meleagrin
+      plus S-adenosyl-L-homocysteine plus proton reaction; Rhea maps the master reaction
+      to UniProtKB:B6HJU2 in Swiss-Prot.
+causal_graphs:
+- graph_id: meleagrin-roqn-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Penicillium rubens Wisconsin 54-1255 RoqN O-methylates glandicoline
+    B to form meleagrin.
+  nodes:
+  - node_id: glandicoline_b
+    label: glandicoline B
+    node_type: PRECURSOR
+    identifier: naturalproductmech:mibig-7a476dbad3
+    grounding_status: GROUNDED
+  - node_id: roqn
+    label: RoqN
+    node_type: ENZYME
+    identifier: UniProtKB:B6HJU2
+    grounding_status: GROUNDED
+  - node_id: meleagrin
+    label: meleagrin
+    node_type: COMPOUND
+    identifier: CHEBI:70399
+    grounding_status: GROUNDED
+  edges:
+  - subject: glandicoline_b
+    predicate: is O-methylated by
+    object: roqn
+    notes: RoqN uses SAM to methylate the hydroxylamine oxygen of glandicoline B in
+      the roquefortine/meleagrin branch.
+    evidence:
+    - reference: DOI:10.1039/c8ob01565a
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: The homologous enzymes OxaG and RoqN were shown to catalyze penultimate
+        hydroxylamine O-methylation to generate meleagrin in vitro.
+      notes: Murray et al. directly assayed RoqN-catalyzed O-methylation of glandicoline
+        B to meleagrin and OxaG, its Penicillium oxalicum homolog, with SAM as methyl
+        donor.
+    - reference: DOI:10.1371/journal.pone.0065328
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Eventually, meleagrin is produced from glandicoline B involving a methyltransferase
+        (RoqN).
+      notes: Ali et al. assigned roqN in Penicillium rubens / P. chrysogenum by profiling
+        BGC0000420 deletion strains in the branched roquefortine/meleagrin pathway.
+    - reference: https://www.uniprot.org/uniprotkb/B6HJU2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:B6HJU2 is the 288 aa Penicillium rubens Wisconsin
+        54-1255 RoqN/gmt/Pc21g15440 glandicoline B O-methyltransferase and cross-references
+        EMBL AM920436 protein CAP96441.1.
+    - reference: https://www.rhea-db.org/rhea/51732
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:51732 is the glandicoline B plus S-adenosyl-L-methionine to meleagrin
+        plus S-adenosyl-L-homocysteine plus proton reaction; Rhea maps the master
+        reaction to UniProtKB:B6HJU2 in Swiss-Prot.
+  - subject: roqn
+    predicate: forms
+    object: meleagrin
+    notes: RoqN is the Pc21g15440/gmt methyltransferase that forms meleagrin from
+      glandicoline B as the terminal BGC0000420 tailoring reaction.
+    evidence:
+    - reference: DOI:10.1039/c8ob01565a
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: The homologous enzymes OxaG and RoqN were shown to catalyze penultimate
+        hydroxylamine O-methylation to generate meleagrin in vitro.
+      notes: Murray et al. directly assayed RoqN-catalyzed O-methylation of glandicoline
+        B to meleagrin and OxaG, its Penicillium oxalicum homolog, with SAM as methyl
+        donor.
+    - reference: DOI:10.1371/journal.pone.0065328
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Eventually, meleagrin is produced from glandicoline B involving a methyltransferase
+        (RoqN).
+      notes: Ali et al. assigned roqN in Penicillium rubens / P. chrysogenum by profiling
+        BGC0000420 deletion strains in the branched roquefortine/meleagrin pathway.
+    - reference: https://www.uniprot.org/uniprotkb/B6HJU2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:B6HJU2 is the 288 aa Penicillium rubens Wisconsin
+        54-1255 RoqN/gmt/Pc21g15440 glandicoline B O-methyltransferase and cross-references
+        EMBL AM920436 protein CAP96441.1.
+    - reference: https://www.rhea-db.org/rhea/51732
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:51732 is the glandicoline B plus S-adenosyl-L-methionine to meleagrin
+        plus S-adenosyl-L-homocysteine plus proton reaction; Rhea maps the master
+        reaction to UniProtKB:B6HJU2 in Swiss-Prot.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -115,3 +237,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T18:02:43Z'
+  curator: codex
+  action: CURATED_BIOSYNTHESIS_GRAPH
+  changes: Added the Penicillium rubens RoqN terminal glandicoline B O-methylation
+    step and RHEA:51732 / UniProtKB:B6HJU2-grounded meleagrin BIOSYNTHESIS causal
+    graph.
+  llm_assisted: true
