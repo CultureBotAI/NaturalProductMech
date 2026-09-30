@@ -432,6 +432,37 @@ biosynthetic_pathway:
     notes: Reviewed UniProtKB:D7PI20 is the 504 aa P. aethiopicum GsfF cytochrome
       P450 monooxygenase, cross-references GU574478 protein ADI24958.2, and annotates
       RHEA:73935 from PMID:23978092.
+- step_number: 5
+  enzyme_id: UniProtKB:D7PI18
+  enzyme_label: GsfD O-methyltransferase
+  reaction_id: RHEA:73939
+  substrate: CHEBI:193067
+  product: CHEBI:81999
+  proposed: true
+  notes: GsfD is proposed to methylate desmethyl-dehydrogriseofulvin at 5-OH to yield
+    dehydrogriseofulvin; Rhea maps the SAM-dependent GsfD O-methyltransferase to RHEA:73939.
+  evidence:
+  - reference: DOI:10.1021/cb400541z
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: GsfD regioselectively targets 5-OH
+    notes: Cacho et al. deleted gsfD and observed late-stage griseofulvin intermediates
+      lacking 5-O-methylation; they proposed that GsfD methylates desmethyl-dehydrogriseofulvin,
+      compound 14, to produce dehydrogriseofulvin, compound 18.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+      gene cluster CDS ADI24956.1 to GsfD.
+  - reference: https://www.uniprot.org/uniprotkb/D7PI18
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:D7PI18 is the 378 aa P. aethiopicum GsfD O-methyltransferase
+      and cross-references GU574478 protein ADI24956.1.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI18 to the master GsfD reaction
+      RHEA:73939 and left-to-right reaction RHEA:73940.
 causal_graphs:
 - graph_id: griseofulvin-gsfb-methylation
   scope: BIOSYNTHESIS
@@ -706,6 +737,80 @@ causal_graphs:
       notes: Reviewed UniProtKB:D7PI20 is the 504 aa P. aethiopicum GsfF cytochrome
         P450 monooxygenase, cross-references GU574478 protein ADI24958.2, and annotates
         RHEA:73935 from PMID:23978092.
+- graph_id: griseofulvin-gsfd-methylation
+  scope: BIOSYNTHESIS
+  description: Partial P. aethiopicum griseofulvin biosynthesis graph for proposed
+    GsfD-catalyzed 5-O-methylation.
+  nodes:
+  - node_id: desmethyl_dehydrogriseofulvin
+    label: desmethyl-dehydrogriseofulvin
+    node_type: PRECURSOR
+    identifier: CHEBI:193067
+    grounding_status: GROUNDED
+  - node_id: gsfd
+    label: GsfD O-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:D7PI18
+    grounding_status: GROUNDED
+  - node_id: dehydrogriseofulvin
+    label: dehydrogriseofulvin
+    node_type: COMPOUND
+    identifier: CHEBI:81999
+    grounding_status: GROUNDED
+  edges:
+  - subject: desmethyl_dehydrogriseofulvin
+    predicate: is methylated by
+    object: gsfd
+    notes: GsfD is proposed to methylate the 5-OH of desmethyl-dehydrogriseofulvin.
+    evidence:
+    - reference: DOI:10.1021/cb400541z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GsfD regioselectively targets 5-OH
+      notes: Cacho et al. deleted gsfD and observed late-stage griseofulvin intermediates
+        lacking 5-O-methylation; they proposed that GsfD methylates desmethyl-dehydrogriseofulvin,
+        compound 14, to produce dehydrogriseofulvin, compound 18.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+        gene cluster CDS ADI24956.1 to GsfD.
+    - reference: https://www.uniprot.org/uniprotkb/D7PI18
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:D7PI18 is the 378 aa P. aethiopicum GsfD O-methyltransferase
+        and cross-references GU574478 protein ADI24956.1.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI18 to the master GsfD
+        reaction RHEA:73939 and left-to-right reaction RHEA:73940.
+  - subject: gsfd
+    predicate: forms
+    object: dehydrogriseofulvin
+    notes: The proposed SAM-dependent GsfD reaction converts desmethyl-dehydrogriseofulvin
+      to dehydrogriseofulvin before GsfE-catalyzed reduction.
+    evidence:
+    - reference: DOI:10.1021/cb400541z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GsfD regioselectively targets 5-OH
+      notes: Cacho et al. deleted gsfD and observed late-stage griseofulvin intermediates
+        lacking 5-O-methylation; they proposed that GsfD methylates desmethyl-dehydrogriseofulvin,
+        compound 14, to produce dehydrogriseofulvin, compound 18.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+        gene cluster CDS ADI24956.1 to GsfD.
+    - reference: https://www.uniprot.org/uniprotkb/D7PI18
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:D7PI18 is the 378 aa P. aethiopicum GsfD O-methyltransferase
+        and cross-references GU574478 protein ADI24956.1.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI18 to the master GsfD
+        reaction RHEA:73939 and left-to-right reaction RHEA:73940.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -750,4 +855,12 @@ curation_history:
     to UniProtKB:D7PI16, RHEA:73923, CHEBI:193062, CHEBI:193064, MIBiG BGC0000070.5,
     and Cacho et al. 2013; renumbered the existing GsfC, GsfI, and GsfF curated steps
     after GsfB.
+  llm_assisted: true
+- timestamp: '2026-09-30T11:51:30Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a proposed GsfD biosynthetic pathway step and BIOSYNTHESIS causal
+    graph for desmethyl-dehydrogriseofulvin 5-O-methylation to dehydrogriseofulvin,
+    grounded to UniProtKB:D7PI18, RHEA:73939, CHEBI:193067, CHEBI:81999, MIBiG BGC0000070.5,
+    Rhea, and Cacho et al. 2013.
   llm_assisted: true
