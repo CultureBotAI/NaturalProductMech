@@ -80,7 +80,47 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>3</td>
+  <td>Staphyloferrin A synthase<br><span class="mono">UniProtKB:Q2FW72</span></td>
+  <td class="mono">RHEA:59140</td>
+  <td class="mono">CHEBI:142972 + CHEBI:16947 &rarr; CHEBI:84711</td>
+  <td class="mono">DOI:10.1021/bi801844c</td>
+</tr>
+</table></div>
+<p class="sub">Step 3: Staphylococcus aureus NCTC 8325 SfnaB catalyzes the ATP-dependent terminal condensation of the SfnaD product with citrate to form staphyloferrin A. RHEA:59140 uses the stereospecified anionic staphyloferrin A participant CHEBI:142973; this record denotes neutral CHEBI:84711, whose seeded MIBiG structure leaves the citryl stereocentres unspecified.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Staphylococcus aureus NCTC 8325 SfnaB-catalyzed terminal condensation of citrate with the SfnaD product in staphyloferrin A biosynthesis.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>N(5)-[(S)-citryl]-D-ornithine</td>
+  <td>is condensed with citrate by</td>
+  <td>SfnaB</td>
+  <td>RHEA:59140 represents this acceptor as CHEBI:142972, the N(5)-citryl-D-ornithine product of the preceding SfnaD synthetase reaction.</td>
+  <td class="mono">DOI:10.1021/bi801844c<br>https://mibig.secondarymetabolites.org/repository/BGC0000944.5/<br>RHEA:59140<br>https://www.uniprot.org/uniprotkb/Q2FW72</td>
+</tr>
+<tr>
+  <td>citrate</td>
+  <td>is ligated to N(5)-citryl-D-ornithine by</td>
+  <td>SfnaB</td>
+  <td>RHEA:59140 consumes ATP and releases AMP, diphosphate, and a proton.</td>
+  <td class="mono">DOI:10.1021/bi801844c<br>https://mibig.secondarymetabolites.org/repository/BGC0000944.5/<br>RHEA:59140<br>https://www.uniprot.org/uniprotkb/Q2FW72</td>
+</tr>
+<tr>
+  <td>SfnaB</td>
+  <td>forms</td>
+  <td>staphyloferrin A</td>
+  <td>RHEA uses stereospecified anionic staphyloferrin A CHEBI:142973 as the product participant; this graph points at neutral CHEBI:84711, the exact structure recorded for BGC0000944.</td>
+  <td class="mono">DOI:10.1021/bi801844c<br>https://mibig.secondarymetabolites.org/repository/BGC0000944.5/<br>RHEA:59140<br>https://www.uniprot.org/uniprotkb/Q2FW72</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

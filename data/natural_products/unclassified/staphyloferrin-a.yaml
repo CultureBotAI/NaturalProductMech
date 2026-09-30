@@ -82,6 +82,154 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-b29ca1d358
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 3
+  enzyme_id: UniProtKB:Q2FW72
+  enzyme_label: Staphyloferrin A synthase
+  reaction_id: RHEA:59140
+  notes: Staphylococcus aureus NCTC 8325 SfnaB catalyzes the ATP-dependent terminal
+    condensation of the SfnaD product with citrate to form staphyloferrin A. RHEA:59140
+    uses the stereospecified anionic staphyloferrin A participant CHEBI:142973; this
+    record denotes neutral CHEBI:84711, whose seeded MIBiG structure leaves the citryl
+    stereocentres unspecified.
+  evidence:
+  - reference: DOI:10.1021/bi801844c
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: SfnaB utilizing the alpha-amine to complete staphyloferrin A synthesis
+    notes: Cotton et al. reconstituted staphyloferrin A biosynthesis in vitro with
+      purified recombinant SfnaD and SfnaB and assigned SfnaB as the final NIS synthetase
+      that condenses citrate with the SfnaD product.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000944.5/
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG entry version 5 links BGC0000944 to staphyloferrin A biosynthesis
+      in Staphylococcus aureus subsp. aureus NCTC 8325.
+  - reference: RHEA:59140
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:59140 annotates EC:6.3.2.57 as N(5)-[(S)-citryl]-D-ornithine, citrate,
+      and ATP forming staphyloferrin A, AMP, diphosphate, and a proton.
+  - reference: https://www.uniprot.org/uniprotkb/Q2FW72
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:Q2FW72 is the Staphylococcus aureus NCTC 8325 / PS 47
+      SfnaB staphyloferrin A synthase, ordered locus SAOUHSC_02434, and annotates
+      RHEA:59140.
+  substrates:
+  - CHEBI:142972
+  - CHEBI:16947
+  product: CHEBI:84711
+causal_graphs:
+- graph_id: staphyloferrin-a-sfnab-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Staphylococcus aureus NCTC 8325 SfnaB-catalyzed terminal condensation
+    of citrate with the SfnaD product in staphyloferrin A biosynthesis.
+  nodes:
+  - node_id: citryl_d_ornithine
+    label: N(5)-[(S)-citryl]-D-ornithine
+    node_type: PRECURSOR
+    identifier: CHEBI:142972
+    grounding_status: GROUNDED
+  - node_id: citrate
+    label: citrate
+    node_type: PRECURSOR
+    identifier: CHEBI:16947
+    grounding_status: GROUNDED
+  - node_id: sfnab
+    label: SfnaB
+    node_type: ENZYME
+    identifier: UniProtKB:Q2FW72
+    grounding_status: GROUNDED
+  - node_id: staphyloferrin_a
+    label: staphyloferrin A
+    node_type: COMPOUND
+    identifier: CHEBI:84711
+    grounding_status: GROUNDED
+  edges:
+  - subject: citryl_d_ornithine
+    predicate: is condensed with citrate by
+    object: sfnab
+    notes: RHEA:59140 represents this acceptor as CHEBI:142972, the N(5)-citryl-D-ornithine
+      product of the preceding SfnaD synthetase reaction.
+    evidence:
+    - reference: DOI:10.1021/bi801844c
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SfnaB utilizing the alpha-amine to complete staphyloferrin A synthesis
+      notes: Cotton et al. reconstituted staphyloferrin A biosynthesis in vitro with
+        purified recombinant SfnaD and SfnaB and assigned SfnaB as the final NIS synthetase
+        that condenses citrate with the SfnaD product.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000944.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 links BGC0000944 to staphyloferrin A biosynthesis
+        in Staphylococcus aureus subsp. aureus NCTC 8325.
+    - reference: RHEA:59140
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:59140 annotates EC:6.3.2.57 as N(5)-[(S)-citryl]-D-ornithine, citrate,
+        and ATP forming staphyloferrin A, AMP, diphosphate, and a proton.
+    - reference: https://www.uniprot.org/uniprotkb/Q2FW72
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q2FW72 is the Staphylococcus aureus NCTC 8325 / PS
+        47 SfnaB staphyloferrin A synthase, ordered locus SAOUHSC_02434, and annotates
+        RHEA:59140.
+  - subject: citrate
+    predicate: is ligated to N(5)-citryl-D-ornithine by
+    object: sfnab
+    notes: RHEA:59140 consumes ATP and releases AMP, diphosphate, and a proton.
+    evidence:
+    - reference: DOI:10.1021/bi801844c
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SfnaB utilizing the alpha-amine to complete staphyloferrin A synthesis
+      notes: Cotton et al. reconstituted staphyloferrin A biosynthesis in vitro with
+        purified recombinant SfnaD and SfnaB and assigned SfnaB as the final NIS synthetase
+        that condenses citrate with the SfnaD product.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000944.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 links BGC0000944 to staphyloferrin A biosynthesis
+        in Staphylococcus aureus subsp. aureus NCTC 8325.
+    - reference: RHEA:59140
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:59140 annotates EC:6.3.2.57 as N(5)-[(S)-citryl]-D-ornithine, citrate,
+        and ATP forming staphyloferrin A, AMP, diphosphate, and a proton.
+    - reference: https://www.uniprot.org/uniprotkb/Q2FW72
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q2FW72 is the Staphylococcus aureus NCTC 8325 / PS
+        47 SfnaB staphyloferrin A synthase, ordered locus SAOUHSC_02434, and annotates
+        RHEA:59140.
+  - subject: sfnab
+    predicate: forms
+    object: staphyloferrin_a
+    notes: RHEA uses stereospecified anionic staphyloferrin A CHEBI:142973 as the
+      product participant; this graph points at neutral CHEBI:84711, the exact structure
+      recorded for BGC0000944.
+    evidence:
+    - reference: DOI:10.1021/bi801844c
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SfnaB utilizing the alpha-amine to complete staphyloferrin A synthesis
+      notes: Cotton et al. reconstituted staphyloferrin A biosynthesis in vitro with
+        purified recombinant SfnaD and SfnaB and assigned SfnaB as the final NIS synthetase
+        that condenses citrate with the SfnaD product.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000944.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 links BGC0000944 to staphyloferrin A biosynthesis
+        in Staphylococcus aureus subsp. aureus NCTC 8325.
+    - reference: RHEA:59140
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:59140 annotates EC:6.3.2.57 as N(5)-[(S)-citryl]-D-ornithine, citrate,
+        and ATP forming staphyloferrin A, AMP, diphosphate, and a proton.
+    - reference: https://www.uniprot.org/uniprotkb/Q2FW72
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:Q2FW72 is the Staphylococcus aureus NCTC 8325 / PS
+        47 SfnaB staphyloferrin A synthase, ordered locus SAOUHSC_02434, and annotates
+        RHEA:59140.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -91,3 +239,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T06:22:34Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a terminal-step BIOSYNTHESIS pathway and causal graph for staphyloferrin
+    A biosynthesis; grounded Staphylococcus aureus NCTC 8325 SfnaB staphyloferrin
+    A synthase to UniProtKB:Q2FW72 and RHEA:59140.
+  llm_assisted: true
