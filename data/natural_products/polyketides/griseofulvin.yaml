@@ -463,6 +463,36 @@ biosynthetic_pathway:
     retrieved_on: '2026-09-30'
     notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI18 to the master GsfD reaction
       RHEA:73939 and left-to-right reaction RHEA:73940.
+- step_number: 6
+  enzyme_id: UniProtKB:D7PI19
+  enzyme_label: GsfE short-chain dehydrogenase
+  reaction_id: RHEA:73943
+  substrate: CHEBI:81999
+  product: naturalproductmech:mibig-e59592cca0
+  notes: GsfE stereospecifically reduces dehydrogriseofulvin to griseofulvin with
+    NADPH; Rhea maps this final reductase reaction to RHEA:73943.
+  evidence:
+  - reference: DOI:10.1021/cb400541z
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: GsfE fully converted 18 or 19 to 1 or 2
+    notes: Cacho et al. deleted gsfE and observed dehydrogriseofulvin and dechloro-dehydrogriseofulvin
+      accumulation, then purified His-tagged GsfE and showed NADPH-dependent in vitro
+      conversion of dehydrogriseofulvin, compound 18, to griseofulvin, compound 1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+      gene cluster CDS ADI24957.1 to GsfE.
+  - reference: https://www.uniprot.org/uniprotkb/D7PI19
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:D7PI19 is the 377 aa P. aethiopicum GsfE short-chain
+      dehydrogenase and cross-references GU574478 protein ADI24957.1.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI19 to the master GsfE reaction
+      RHEA:73943 and left-to-right reaction RHEA:73944.
 causal_graphs:
 - graph_id: griseofulvin-gsfb-methylation
   scope: BIOSYNTHESIS
@@ -811,6 +841,83 @@ causal_graphs:
       retrieved_on: '2026-09-30'
       notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI18 to the master GsfD
         reaction RHEA:73939 and left-to-right reaction RHEA:73940.
+- graph_id: griseofulvin-gsfe-reduction
+  scope: BIOSYNTHESIS
+  description: Partial P. aethiopicum griseofulvin biosynthesis graph for GsfE-catalyzed
+    final reduction.
+  nodes:
+  - node_id: dehydrogriseofulvin
+    label: dehydrogriseofulvin
+    node_type: PRECURSOR
+    identifier: CHEBI:81999
+    grounding_status: GROUNDED
+  - node_id: gsfe
+    label: GsfE short-chain dehydrogenase
+    node_type: ENZYME
+    identifier: UniProtKB:D7PI19
+    grounding_status: GROUNDED
+  - node_id: griseofulvin
+    label: griseofulvin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-e59592cca0
+    grounding_status: GROUNDED
+  edges:
+  - subject: dehydrogriseofulvin
+    predicate: is reduced by
+    object: gsfe
+    notes: GsfE reduces dehydrogriseofulvin with NADPH in the final step of griseofulvin
+      biosynthesis.
+    evidence:
+    - reference: DOI:10.1021/cb400541z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GsfE fully converted 18 or 19 to 1 or 2
+      notes: Cacho et al. deleted gsfE and observed dehydrogriseofulvin and dechloro-dehydrogriseofulvin
+        accumulation, then purified His-tagged GsfE and showed NADPH-dependent in
+        vitro conversion of dehydrogriseofulvin, compound 18, to griseofulvin, compound
+        1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+        gene cluster CDS ADI24957.1 to GsfE.
+    - reference: https://www.uniprot.org/uniprotkb/D7PI19
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:D7PI19 is the 377 aa P. aethiopicum GsfE short-chain
+        dehydrogenase and cross-references GU574478 protein ADI24957.1.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI19 to the master GsfE
+        reaction RHEA:73943 and left-to-right reaction RHEA:73944.
+  - subject: gsfe
+    predicate: forms
+    object: griseofulvin
+    notes: His-tagged GsfE converted dehydrogriseofulvin, compound 18, to griseofulvin,
+      compound 1, in vitro.
+    evidence:
+    - reference: DOI:10.1021/cb400541z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GsfE fully converted 18 or 19 to 1 or 2
+      notes: Cacho et al. deleted gsfE and observed dehydrogriseofulvin and dechloro-dehydrogriseofulvin
+        accumulation, then purified His-tagged GsfE and showed NADPH-dependent in
+        vitro conversion of dehydrogriseofulvin, compound 18, to griseofulvin, compound
+        1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+        gene cluster CDS ADI24957.1 to GsfE.
+    - reference: https://www.uniprot.org/uniprotkb/D7PI19
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:D7PI19 is the 377 aa P. aethiopicum GsfE short-chain
+        dehydrogenase and cross-references GU574478 protein ADI24957.1.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:D7PI19 to the master GsfE
+        reaction RHEA:73943 and left-to-right reaction RHEA:73944.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -863,4 +970,12 @@ curation_history:
     graph for desmethyl-dehydrogriseofulvin 5-O-methylation to dehydrogriseofulvin,
     grounded to UniProtKB:D7PI18, RHEA:73939, CHEBI:193067, CHEBI:81999, MIBiG BGC0000070.5,
     Rhea, and Cacho et al. 2013.
+  llm_assisted: true
+- timestamp: '2026-09-30T12:18:44Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a GsfE biosynthetic pathway step and BIOSYNTHESIS causal graph for
+    dehydrogriseofulvin reduction to griseofulvin, grounded to UniProtKB:D7PI19, RHEA:73943,
+    CHEBI:81999, naturalproductmech:mibig-e59592cca0, MIBiG BGC0000070.5, Rhea, and
+    Cacho et al. 2013.
   llm_assisted: true
