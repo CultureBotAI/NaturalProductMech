@@ -89,7 +89,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>SthD cytochrome P450 monooxygenase<br><span class="mono">UniProtKB:Q0UK51</span></td>
+  <td class="mono">RHEA:62712</td>
+  <td class="mono">CHEBI:145053 &rarr; CHEBI:145070</td>
+  <td class="mono">DOI:10.1002/chem.201904360</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: SthD hydroxylates betaenone C at C-15 to afford compound 7 / stemphyloxin I; this single curated tailoring step leaves upstream assembly from dehydroprobetaenone I to betaenone C unexpanded.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Parastagonospora nodorum SN15 SthD C-15-hydroxylates betaenone C to form stemphyloxin I.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>betaenone C</td>
+  <td>is hydroxylated by</td>
+  <td>SthD</td>
+  <td>SthD uses NADPH and O2 in the RHEA:62712 C-15 hydroxylation of betaenone C.</td>
+  <td class="mono">DOI:10.1002/chem.201904360<br>https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk<br>https://www.uniprot.org/uniprotkb/Q0UK51<br>https://www.rhea-db.org/rhea/62712</td>
+</tr>
+<tr>
+  <td>SthD</td>
+  <td>forms</td>
+  <td>stemphyloxin I</td>
+  <td>SthD is the SNOG_07863 cytochrome P450 monooxygenase in the BGC0002165 Parastagonospora nodorum SN15 cluster.</td>
+  <td class="mono">DOI:10.1002/chem.201904360<br>https://mibig.secondarymetabolites.org/repository/BGC0002165.3/BGC0002165.gbk<br>https://www.uniprot.org/uniprotkb/Q0UK51<br>https://www.rhea-db.org/rhea/62712</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
