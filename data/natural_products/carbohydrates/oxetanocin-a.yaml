@@ -103,6 +103,131 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-65802e2a72
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:O24769
+  enzyme_label: OxsA 4'-phosphooxetanocin A phosphatase
+  reaction_id: RHEA:81367
+  substrate: CHEBI:85720
+  product: CHEBI:86012
+  notes: OxsA hydrolyzes 4'-phosphooxetanocin A to oxetanocin A as the terminal dephosphorylation
+    in the Bacillus megaterium NK84-0128 oxetanocin A pathway; this single curated
+    step leaves the upstream OxsB-catalyzed radical ring contraction unexpanded.
+  evidence:
+  - reference: DOI:10.1073/pnas.1613610113
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: HD domain phosphohydrolase OxsA, involved in the biosynthesis
+    notes: Bridwell-Rabb et al. structurally and biochemically characterized the Bacillus
+      megaterium OxsA phosphohydrolase toward phosphorylated oxetanocin A substrates.
+  - reference: DOI:10.1038/nature21689
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: both the oxsA and oxsB genes are required for the production of OXT-A
+    notes: Bridwell-Rabb et al. showed that plasmid-borne Bacillus megaterium oxsA
+      and oxsB are required for oxetanocin A production.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001725.3/BGC0001725.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0001725.3 places oxsA / BAA21630.1 on the Priestia/Bacillus megaterium
+      NK84-0128 oxetanocin A plasmid pOXTB2.
+  - reference: https://www.uniprot.org/uniprotkb/O24769
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:O24769 is the 194 aa Priestia megaterium 4'-phosphooxetanocin
+      A phosphatase OxsA, cross-references EMBL AB005787 protein BAA21630.1, and annotates
+      RHEA:81367 / RHEA:81368.
+  - reference: https://www.rhea-db.org/rhea/81367
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:81367 is the 4'-phosphooxetanocin A plus H2O to oxetanocin A plus
+      phosphate reaction; Rhea maps the master reaction to UniProtKB:O24769 in Swiss-Prot.
+causal_graphs:
+- graph_id: oxetanocin-oxsa-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Bacillus megaterium NK84-0128 OxsA dephosphorylates 4'-phosphooxetanocin
+    A to form oxetanocin A.
+  nodes:
+  - node_id: phosphooxetanocin_a
+    label: 4'-phosphooxetanocin A
+    node_type: PRECURSOR
+    identifier: CHEBI:85720
+    grounding_status: GROUNDED
+  - node_id: oxsa
+    label: OxsA
+    node_type: ENZYME
+    identifier: UniProtKB:O24769
+    grounding_status: GROUNDED
+  - node_id: oxetanocin_a
+    label: oxetanocin A
+    node_type: COMPOUND
+    identifier: CHEBI:86012
+    grounding_status: GROUNDED
+  edges:
+  - subject: phosphooxetanocin_a
+    predicate: is dephosphorylated by
+    object: oxsa
+    notes: OxsA catalyzes the RHEA:81367 hydrolysis of 4'-phosphooxetanocin A to oxetanocin
+      A plus phosphate.
+    evidence:
+    - reference: DOI:10.1073/pnas.1613610113
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: HD domain phosphohydrolase OxsA, involved in the biosynthesis
+      notes: Bridwell-Rabb et al. structurally and biochemically characterized the
+        Bacillus megaterium OxsA phosphohydrolase toward phosphorylated oxetanocin
+        A substrates.
+    - reference: DOI:10.1038/nature21689
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: both the oxsA and oxsB genes are required for the production of OXT-A
+      notes: Bridwell-Rabb et al. showed that plasmid-borne Bacillus megaterium oxsA
+        and oxsB are required for oxetanocin A production.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001725.3/BGC0001725.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0001725.3 places oxsA / BAA21630.1 on the Priestia/Bacillus
+        megaterium NK84-0128 oxetanocin A plasmid pOXTB2.
+    - reference: https://www.uniprot.org/uniprotkb/O24769
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:O24769 is the 194 aa Priestia megaterium 4'-phosphooxetanocin
+        A phosphatase OxsA, cross-references EMBL AB005787 protein BAA21630.1, and
+        annotates RHEA:81367 / RHEA:81368.
+    - reference: https://www.rhea-db.org/rhea/81367
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:81367 is the 4'-phosphooxetanocin A plus H2O to oxetanocin A plus
+        phosphate reaction; Rhea maps the master reaction to UniProtKB:O24769 in Swiss-Prot.
+  - subject: oxsa
+    predicate: forms
+    object: oxetanocin_a
+    notes: OxsA is the 4'-phosphooxetanocin A phosphatase encoded by the plasmid pOXTB2
+      oxsA locus.
+    evidence:
+    - reference: DOI:10.1073/pnas.1613610113
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: HD domain phosphohydrolase OxsA, involved in the biosynthesis
+      notes: Bridwell-Rabb et al. structurally and biochemically characterized the
+        Bacillus megaterium OxsA phosphohydrolase toward phosphorylated oxetanocin
+        A substrates.
+    - reference: DOI:10.1038/nature21689
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: both the oxsA and oxsB genes are required for the production of OXT-A
+      notes: Bridwell-Rabb et al. showed that plasmid-borne Bacillus megaterium oxsA
+        and oxsB are required for oxetanocin A production.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001725.3/BGC0001725.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0001725.3 places oxsA / BAA21630.1 on the Priestia/Bacillus
+        megaterium NK84-0128 oxetanocin A plasmid pOXTB2.
+    - reference: https://www.uniprot.org/uniprotkb/O24769
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:O24769 is the 194 aa Priestia megaterium 4'-phosphooxetanocin
+        A phosphatase OxsA, cross-references EMBL AB005787 protein BAA21630.1, and
+        annotates RHEA:81367 / RHEA:81368.
+    - reference: https://www.rhea-db.org/rhea/81367
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:81367 is the 4'-phosphooxetanocin A plus H2O to oxetanocin A plus
+        phosphate reaction; Rhea maps the master reaction to UniProtKB:O24769 in Swiss-Prot.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -112,3 +237,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T20:51:27Z'
+  curator: codex
+  action: CURATED_BIOSYNTHESIS_GRAPH
+  changes: Added the Bacillus megaterium OxsA terminal dephosphorylation step and
+    RHEA:81367 / UniProtKB:O24769-grounded oxetanocin A BIOSYNTHESIS causal graph.
+  llm_assisted: true
