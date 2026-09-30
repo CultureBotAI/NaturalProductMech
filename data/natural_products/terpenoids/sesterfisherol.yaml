@@ -89,6 +89,123 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-01c1a911d9
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A1DN30
+  enzyme_label: NfSS sesterfisherol synthase
+  reaction_id: RHEA:54068
+  substrate: CHEBI:57907
+  product: CHEBI:138046
+  notes: NfSS cyclizes (2E,6E,10E,14E)-geranylfarnesyl diphosphate to the tetracyclic
+    sesterterpene alcohol sesterfisherol. This single step records the sesterfisherol-forming
+    RHEA:54068 reaction and leaves the downstream A1DN29/NfP450 oxidation to sesterfisheric
+    acid unexpanded.
+  evidence:
+  - reference: DOI:10.1021/jacs.5b08319
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: identified the sesterfisherol synthase gene (NfSS) from Neosartorya fischeri
+    notes: Ye et al. used Aspergillus oryzae heterologous expression to functionally
+      characterize NfSS and assigned its terpene cyclase product as the 5-6-8-5 tetracyclic
+      C25 alcohol sesterfisherol.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0002162.3 maps the Aspergillus fischeri NRRL 181 / Neosartorya
+      fischeri DS027698 sesterfisherol cluster CDS NFIA_055500 to GenPept EAW16201.1.
+  - reference: https://www.uniprot.org/uniprotkb/A1DN30
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:A1DN30 is the 764 aa Aspergillus fischeri NRRL 181 NfSS/NFIA_055500
+      sesterfisherol synthase, cross-references EMBL DS027698 protein EAW16201.1,
+      and cites DOI:10.1021/jacs.5b08319.
+  - reference: https://www.rhea-db.org/rhea/54068
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:54068 is the (2E,6E,10E,14E)-geranylfarnesyl diphosphate plus water
+      to sesterfisherol plus diphosphate reaction; Rhea maps the master reaction to
+      UniProtKB:A1DN30 in Swiss-Prot.
+causal_graphs:
+- graph_id: sesterfisherol-nfss-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Aspergillus fischeri NRRL 181 NfSS cyclizes (2E,6E,10E,14E)-geranylfarnesyl
+    diphosphate to form sesterfisherol.
+  nodes:
+  - node_id: geranylfarnesyl_diphosphate
+    label: (2E,6E,10E,14E)-geranylfarnesyl diphosphate
+    node_type: PRECURSOR
+    identifier: CHEBI:57907
+    grounding_status: GROUNDED
+  - node_id: nfss
+    label: NfSS
+    node_type: ENZYME
+    identifier: UniProtKB:A1DN30
+    grounding_status: GROUNDED
+  - node_id: sesterfisherol
+    label: sesterfisherol
+    node_type: COMPOUND
+    identifier: CHEBI:138046
+    grounding_status: GROUNDED
+  edges:
+  - subject: geranylfarnesyl_diphosphate
+    predicate: is cyclized by
+    object: nfss
+    notes: NfSS is the bifunctional terpene synthase whose cyclase domain converts
+      geranylfarnesyl diphosphate to the 5-6-8-5 tetracyclic sesterfisherol scaffold.
+    evidence:
+    - reference: DOI:10.1021/jacs.5b08319
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: identified the sesterfisherol synthase gene (NfSS) from Neosartorya
+        fischeri
+      notes: Ye et al. used Aspergillus oryzae heterologous expression to functionally
+        characterize NfSS and assigned its terpene cyclase product as the 5-6-8-5
+        tetracyclic C25 alcohol sesterfisherol.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0002162.3 maps the Aspergillus fischeri NRRL 181 / Neosartorya
+        fischeri DS027698 sesterfisherol cluster CDS NFIA_055500 to GenPept EAW16201.1.
+    - reference: https://www.uniprot.org/uniprotkb/A1DN30
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:A1DN30 is the 764 aa Aspergillus fischeri NRRL 181
+        NfSS/NFIA_055500 sesterfisherol synthase, cross-references EMBL DS027698 protein
+        EAW16201.1, and cites DOI:10.1021/jacs.5b08319.
+    - reference: https://www.rhea-db.org/rhea/54068
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:54068 is the (2E,6E,10E,14E)-geranylfarnesyl diphosphate plus water
+        to sesterfisherol plus diphosphate reaction; Rhea maps the master reaction
+        to UniProtKB:A1DN30 in Swiss-Prot.
+  - subject: nfss
+    predicate: forms
+    object: sesterfisherol
+    notes: Heterologous NfSS expression assigned the Aspergillus fischeri / Neosartorya
+      fischeri enzyme as the sesterfisherol synthase.
+    evidence:
+    - reference: DOI:10.1021/jacs.5b08319
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: identified the sesterfisherol synthase gene (NfSS) from Neosartorya
+        fischeri
+      notes: Ye et al. used Aspergillus oryzae heterologous expression to functionally
+        characterize NfSS and assigned its terpene cyclase product as the 5-6-8-5
+        tetracyclic C25 alcohol sesterfisherol.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0002162.3 maps the Aspergillus fischeri NRRL 181 / Neosartorya
+        fischeri DS027698 sesterfisherol cluster CDS NFIA_055500 to GenPept EAW16201.1.
+    - reference: https://www.uniprot.org/uniprotkb/A1DN30
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:A1DN30 is the 764 aa Aspergillus fischeri NRRL 181
+        NfSS/NFIA_055500 sesterfisherol synthase, cross-references EMBL DS027698 protein
+        EAW16201.1, and cites DOI:10.1021/jacs.5b08319.
+    - reference: https://www.rhea-db.org/rhea/54068
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:54068 is the (2E,6E,10E,14E)-geranylfarnesyl diphosphate plus water
+        to sesterfisherol plus diphosphate reaction; Rhea maps the master reaction
+        to UniProtKB:A1DN30 in Swiss-Prot.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -98,3 +215,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T18:47:57Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added exact UniProtKB:A1DN30 NfSS grounding, the RHEA:54068 sesterfisherol-forming
+    biosynthetic step, and a BIOSYNTHESIS causal graph for NfSS-catalyzed geranylfarnesyl
+    diphosphate cyclization to sesterfisherol.
+  llm_assisted: true
