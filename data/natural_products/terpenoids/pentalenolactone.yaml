@@ -164,12 +164,13 @@ producer_taxon_groups:
 producer_organisms:
 - taxon_id: NCBITaxon:29301
   taxon_label: Streptomyces arenae
-  evidence_basis: SOURCE_ASSERTION
+  evidence_basis: BGC_CHARACTERIZED
   biosynthetic_gene_cluster: mibig:BGC0000653
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
-    this field grades the taxon claim, which is a different question.'
+  notes: 'Locus evidence: Enzymatic assays|Knock-out studies. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
   evidence:
   - reference: DOI:10.1016/s0040-4039(01)88256-3
     evidence_type: DATABASE_ASSERTION
@@ -202,7 +203,10 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:HQ292065.1
   bgc_class:
   - TERPENE
-  link_evidence_basis: CLUSTER_UNSTATED
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0000678
   entry_version: '5'
   entry_status: active
@@ -353,3 +357,7 @@ curation_history:
     and cited the experimentally characterized RHEA:34575 oxidative rearrangement
     of pentalenolactone F to pentalenolactone.
   llm_assisted: true
+- timestamp: '2026-09-30T04:28:43Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
