@@ -672,6 +672,108 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000940, BGC0001478,
     BGC0001572. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 4
+  enzyme_id: UniProtKB:Q9L069
+  enzyme_label: DesD ATP-dependent siderophore synthetase
+  notes: Streptomyces coelicolor M145 DesD catalyzes ATP-dependent trimerization and
+    macrocyclization of three N-(3-carboxypropanoyl)-N-hydroxycadaverine molecules
+    to form desferrioxamine E. No exact Rhea reaction was available for this macrocyclization.
+  evidence:
+  - reference: DOI:10.1038/nchembio.2007.23
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: purified recombinant desferrioxamine siderophore synthetase DesD
+    notes: Kadi et al. purified recombinant Streptomyces coelicolor M145 DesD and
+      showed ATP-dependent trimerization-macrocyclization of HSC into desferrioxamine
+      E.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000940.5/
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG entry version 5 maps BGC0000940 to desferrioxamine E biosynthesis
+      in Streptomyces coelicolor A3(2), on AL645882.2 at 3033355-3040682, and lists
+      CAB87222.1 / SCO2785 as a scaffold-biosynthesis ATP-dependent siderophore synthetase
+      with knockout and activity-assay evidence.
+  - reference: https://www.uniprot.org/uniprotkb/Q9L069
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Unreviewed UniProtKB:Q9L069 is the Streptomyces coelicolor ATCC BAA-471
+      / A3(2) / M145 DesD entry with gene name desD, ordered locus SCO2785, and EMBL
+      protein CAB87222.1.
+  substrates:
+  - CHEBI:50443
+  product: CHEBI:50437
+causal_graphs:
+- graph_id: desferrioxamine-e-desd-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Streptomyces coelicolor M145 DesD-catalyzed ATP-dependent trimerization
+    and macrocyclization of HSC to desferrioxamine E.
+  nodes:
+  - node_id: hsc
+    label: N-(3-carboxypropanoyl)-N-hydroxycadaverine
+    node_type: PRECURSOR
+    identifier: CHEBI:50443
+    grounding_status: GROUNDED
+  - node_id: desd
+    label: DesD
+    node_type: ENZYME
+    identifier: UniProtKB:Q9L069
+    grounding_status: GROUNDED
+  - node_id: desferrioxamine_e
+    label: desferrioxamine E
+    node_type: COMPOUND
+    identifier: CHEBI:50437
+    grounding_status: GROUNDED
+  edges:
+  - subject: hsc
+    predicate: is trimerized and macrocyclized by
+    object: desd
+    notes: CHEBI:50443 names this succinylated hydroxamate precursor N-(3-carboxypropanoyl)-N-hydroxycadaverine;
+      the desferrioxamine literature also abbreviates it as HSC.
+    evidence:
+    - reference: DOI:10.1038/nchembio.2007.23
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: purified recombinant desferrioxamine siderophore synthetase DesD
+      notes: Kadi et al. purified recombinant Streptomyces coelicolor M145 DesD and
+        showed ATP-dependent trimerization-macrocyclization of HSC into desferrioxamine
+        E.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000940.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 maps BGC0000940 to desferrioxamine E biosynthesis
+        in Streptomyces coelicolor A3(2), on AL645882.2 at 3033355-3040682, and lists
+        CAB87222.1 / SCO2785 as a scaffold-biosynthesis ATP-dependent siderophore
+        synthetase with knockout and activity-assay evidence.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L069
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Unreviewed UniProtKB:Q9L069 is the Streptomyces coelicolor ATCC BAA-471
+        / A3(2) / M145 DesD entry with gene name desD, ordered locus SCO2785, and
+        EMBL protein CAB87222.1.
+  - subject: desd
+    predicate: forms
+    object: desferrioxamine_e
+    notes: DesD forms the cyclic trishydroxamate desferrioxamine E from three HSC
+      units through ATP-dependent condensation.
+    evidence:
+    - reference: DOI:10.1038/nchembio.2007.23
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: purified recombinant desferrioxamine siderophore synthetase DesD
+      notes: Kadi et al. purified recombinant Streptomyces coelicolor M145 DesD and
+        showed ATP-dependent trimerization-macrocyclization of HSC into desferrioxamine
+        E.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000940.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 maps BGC0000940 to desferrioxamine E biosynthesis
+        in Streptomyces coelicolor A3(2), on AL645882.2 at 3033355-3040682, and lists
+        CAB87222.1 / SCO2785 as a scaffold-biosynthesis ATP-dependent siderophore
+        synthetase with knockout and activity-assay evidence.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L069
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Unreviewed UniProtKB:Q9L069 is the Streptomyces coelicolor ATCC BAA-471
+        / A3(2) / M145 DesD entry with gene name desD, ordered locus SCO2785, and
+        EMBL protein CAB87222.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -685,3 +787,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T07:41:46Z'
+  curator: codex
+  action: CURATED_BIOSYNTHESIS_GRAPH
+  changes: Added the Streptomyces coelicolor DesD terminal biosynthesis step and UniProtKB:Q9L069-grounded
+    desferrioxamine E biosynthesis graph.
+  llm_assisted: true

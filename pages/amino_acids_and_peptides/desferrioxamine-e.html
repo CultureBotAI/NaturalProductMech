@@ -225,7 +225,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>4</td>
+  <td>DesD ATP-dependent siderophore synthetase<br><span class="mono">UniProtKB:Q9L069</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:50443 &rarr; CHEBI:50437</td>
+  <td class="mono">DOI:10.1038/nchembio.2007.23</td>
+</tr>
+</table></div>
+<p class="sub">Step 4: Streptomyces coelicolor M145 DesD catalyzes ATP-dependent trimerization and macrocyclization of three N-(3-carboxypropanoyl)-N-hydroxycadaverine molecules to form desferrioxamine E. No exact Rhea reaction was available for this macrocyclization.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Streptomyces coelicolor M145 DesD-catalyzed ATP-dependent trimerization and macrocyclization of HSC to desferrioxamine E.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>N-(3-carboxypropanoyl)-N-hydroxycadaverine</td>
+  <td>is trimerized and macrocyclized by</td>
+  <td>DesD</td>
+  <td>CHEBI:50443 names this succinylated hydroxamate precursor N-(3-carboxypropanoyl)-N-hydroxycadaverine; the desferrioxamine literature also abbreviates it as HSC.</td>
+  <td class="mono">DOI:10.1038/nchembio.2007.23<br>https://mibig.secondarymetabolites.org/repository/BGC0000940.5/<br>https://www.uniprot.org/uniprotkb/Q9L069</td>
+</tr>
+<tr>
+  <td>DesD</td>
+  <td>forms</td>
+  <td>desferrioxamine E</td>
+  <td>DesD forms the cyclic trishydroxamate desferrioxamine E from three HSC units through ATP-dependent condensation.</td>
+  <td class="mono">DOI:10.1038/nchembio.2007.23<br>https://mibig.secondarymetabolites.org/repository/BGC0000940.5/<br>https://www.uniprot.org/uniprotkb/Q9L069</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
