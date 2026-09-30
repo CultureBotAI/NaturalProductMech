@@ -159,7 +159,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>Isopenicillin N synthase<br><span class="mono">UniProtKB:B6HLU0</span></td>
+  <td class="mono">RHEA:22428</td>
+  <td class="mono">CHEBI:58572 &rarr; CHEBI:18165</td>
+  <td class="mono">DOI:10.1016/j.fgb.2007.03.008</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Penicillium rubens/Penicillium chrysogenum Wisconsin 54-1255 IpnA/PcbC oxidatively cyclizes ACV to isopenicillin N. RHEA:22428 also consumes O2 and releases water; its product participant is CHEBI:58399 isopenicillin N(1-), while this record is grounded to neutral CHEBI:18165 with the same stereochemistry.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Penicillium rubens/Penicillium chrysogenum Wisconsin 54-1255 IpnA-catalyzed oxidative cyclization of ACV to isopenicillin N in penicillin biosynthesis.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>N-[(5S)-5-ammonio-5-carboxylatopentanoyl]-L-cysteinyl-D-valinate</td>
+  <td>is oxidatively cyclized by</td>
+  <td>IpnA</td>
+  <td>RHEA:22428 represents the O2-dependent EC:1.21.3.1 reaction that consumes ACV and releases water.</td>
+  <td class="mono">DOI:10.1016/j.fgb.2007.03.008<br>DOI:10.1038/nbt0190-39<br>https://mibig.secondarymetabolites.org/repository/BGC0000405.5/<br>RHEA:22428<br>https://www.uniprot.org/uniprotkb/B6HLU0</td>
+</tr>
+<tr>
+  <td>IpnA</td>
+  <td>forms</td>
+  <td>isopenicillin N</td>
+  <td>RHEA uses the isopenicillin N conjugate base CHEBI:58399 as the product participant; this graph points at neutral CHEBI:18165, the exact structure recorded for BGC0000405 compound 2.</td>
+  <td class="mono">DOI:10.1016/j.fgb.2007.03.008<br>DOI:10.1038/nbt0190-39<br>https://mibig.secondarymetabolites.org/repository/BGC0000405.5/<br>RHEA:22428<br>https://www.uniprot.org/uniprotkb/B6HLU0</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
