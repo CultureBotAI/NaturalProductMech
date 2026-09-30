@@ -87,27 +87,54 @@ derived from a source. This is what the rest of the record exists to support.</p
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
+  <td>GsfB O-methyltransferase<br><span class="mono">UniProtKB:D7PI16</span></td>
+  <td class="mono">RHEA:73923</td>
+  <td class="mono">CHEBI:193062 &rarr; CHEBI:193064</td>
+  <td class="mono">DOI:10.1021/cb400541z</td>
+</tr>
+<tr>
+  <td>2</td>
   <td>GsfC O-methyltransferase<br><span class="mono">UniProtKB:D7PI17</span></td>
   <td class="mono">RHEA:73927</td>
   <td class="mono">CHEBI:193064 &rarr; CHEBI:193065</td>
   <td class="mono">DOI:10.1021/cb400541z</td>
 </tr>
 <tr>
-  <td>2</td>
+  <td>3</td>
   <td>GsfI flavin-dependent halogenase<br><span class="mono">UniProtKB:D7PI14</span></td>
   <td class="mono">RHEA:73931</td>
   <td class="mono">CHEBI:193065 &rarr; CHEBI:193066</td>
   <td class="mono">DOI:10.1021/cb400541z</td>
 </tr>
 <tr>
-  <td>3</td>
+  <td>4</td>
   <td>GsfF cytochrome P450 monooxygenase<br><span class="mono">UniProtKB:D7PI20</span></td>
   <td class="mono">RHEA:73935</td>
   <td class="mono">CHEBI:193066 &rarr; CHEBI:193067</td>
   <td class="mono">DOI:10.1021/cb400541z</td>
 </tr>
 </table></div>
-<p class="sub">Step 1: GsfC methylates griseophenone D at 9-OH to yield griseophenone C, the immediate substrate for GsfI; Rhea captures the SAM-dependent methyltransferase reaction as RHEA:73927.</p><p class="sub">Step 2: GsfI chlorinates griseophenone C at C13 to form griseophenone B immediately upstream of GsfF-catalyzed grisan scaffold formation; Rhea captures the reduced-flavin chlorination as RHEA:73931.</p><p class="sub">Step 3: GsfF performs the late oxidative phenolic coupling that converts griseophenone B into the grisan scaffold of desmethyl-dehydrogriseofulvin during griseofulvin biosynthesis.</p>
+<p class="sub">Step 1: GsfB methylates the GsfA benzophenone product at 3-OH to yield griseophenone D, the immediate substrate for GsfC; Rhea captures the SAM-dependent methyltransferase reaction as RHEA:73923.</p><p class="sub">Step 2: GsfC methylates griseophenone D at 9-OH to yield griseophenone C, the immediate substrate for GsfI; Rhea captures the SAM-dependent methyltransferase reaction as RHEA:73927.</p><p class="sub">Step 3: GsfI chlorinates griseophenone C at C13 to form griseophenone B immediately upstream of GsfF-catalyzed grisan scaffold formation; Rhea captures the reduced-flavin chlorination as RHEA:73931.</p><p class="sub">Step 4: GsfF performs the late oxidative phenolic coupling that converts griseophenone B into the grisan scaffold of desmethyl-dehydrogriseofulvin during griseofulvin biosynthesis.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial P. aethiopicum griseofulvin biosynthesis graph for GsfB-catalyzed 3-O-methylation.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2-(2,4-dihydroxy-6-oxidobenzoyl)-5-hydroxy-3-methylbenzenolate</td>
+  <td>is methylated by</td>
+  <td>GsfB O-methyltransferase</td>
+  <td>GsfB is the 3-OH O-methyltransferase that installs the methyl group yielding griseophenone D.</td>
+  <td class="mono">DOI:10.1021/cb400541z<br>https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk<br>https://www.uniprot.org/uniprotkb/D7PI16</td>
+</tr>
+<tr>
+  <td>GsfB O-methyltransferase</td>
+  <td>forms</td>
+  <td>griseophenone D</td>
+  <td>The SAM-dependent GsfB reaction converts the GsfA benzophenone product into griseophenone D, placing GsfB immediately upstream of GsfC-catalyzed methylation.</td>
+  <td class="mono">DOI:10.1021/cb400541z<br>https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk<br>https://www.uniprot.org/uniprotkb/D7PI16</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
 <p class="sub">Partial P. aethiopicum griseofulvin biosynthesis graph for GsfC-catalyzed griseophenone D 9-O-methylation.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>

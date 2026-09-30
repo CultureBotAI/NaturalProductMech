@@ -323,6 +323,33 @@ grounding_notes: No 3-star ChEBI entry shares this structure, so the record keep
 curation_status: SEEDED
 biosynthetic_pathway:
 - step_number: 1
+  enzyme_id: UniProtKB:D7PI16
+  enzyme_label: GsfB O-methyltransferase
+  reaction_id: RHEA:73923
+  substrate: CHEBI:193062
+  product: CHEBI:193064
+  notes: GsfB methylates the GsfA benzophenone product at 3-OH to yield griseophenone
+    D, the immediate substrate for GsfC; Rhea captures the SAM-dependent methyltransferase
+    reaction as RHEA:73923.
+  evidence:
+  - reference: DOI:10.1021/cb400541z
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: GsfB is the 3-OH MT
+    notes: Cacho et al. deleted gsfB and observed griseophenone-family intermediates
+      that lacked 3-OH methylation; a coupled GsfA/GsfB in vitro assay further supported
+      GsfB 3-OH O-methyltransferase activity and produced griseophenone D.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+      gene cluster CDS ADI24954.1 to GsfB.
+  - reference: https://www.uniprot.org/uniprotkb/D7PI16
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:D7PI16 is the 419 aa P. aethiopicum GsfB O-methyltransferase,
+      cross-references GU574478 protein ADI24954.1, and annotates RHEA:73923 from
+      PMID:23978092.
+- step_number: 2
   enzyme_id: UniProtKB:D7PI17
   enzyme_label: GsfC O-methyltransferase
   reaction_id: RHEA:73927
@@ -349,7 +376,7 @@ biosynthetic_pathway:
     notes: Reviewed UniProtKB:D7PI17 is the 396 aa P. aethiopicum GsfC O-methyltransferase,
       cross-references GU574478 protein ADI24955.1, and annotates RHEA:73927 from
       PMID:23978092.
-- step_number: 2
+- step_number: 3
   enzyme_id: UniProtKB:D7PI14
   enzyme_label: GsfI flavin-dependent halogenase
   reaction_id: RHEA:73931
@@ -376,7 +403,7 @@ biosynthetic_pathway:
     notes: Reviewed UniProtKB:D7PI14 is the 533 aa P. aethiopicum GsfI flavin-dependent
       halogenase, cross-references GU574478 protein ADI24948.1, and annotates RHEA:73931
       from PMID:23978092.
-- step_number: 3
+- step_number: 4
   enzyme_id: UniProtKB:D7PI20
   enzyme_label: GsfF cytochrome P450 monooxygenase
   reaction_id: RHEA:73935
@@ -406,6 +433,73 @@ biosynthetic_pathway:
       P450 monooxygenase, cross-references GU574478 protein ADI24958.2, and annotates
       RHEA:73935 from PMID:23978092.
 causal_graphs:
+- graph_id: griseofulvin-gsfb-methylation
+  scope: BIOSYNTHESIS
+  description: Partial P. aethiopicum griseofulvin biosynthesis graph for GsfB-catalyzed
+    3-O-methylation.
+  nodes:
+  - node_id: gsfa_benzophenone
+    label: 2-(2,4-dihydroxy-6-oxidobenzoyl)-5-hydroxy-3-methylbenzenolate
+    node_type: PRECURSOR
+    identifier: CHEBI:193062
+    grounding_status: GROUNDED
+  - node_id: gsfb
+    label: GsfB O-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:D7PI16
+    grounding_status: GROUNDED
+  - node_id: griseophenone_d
+    label: griseophenone D
+    node_type: COMPOUND
+    identifier: CHEBI:193064
+    grounding_status: GROUNDED
+  edges:
+  - subject: gsfa_benzophenone
+    predicate: is methylated by
+    object: gsfb
+    notes: GsfB is the 3-OH O-methyltransferase that installs the methyl group yielding
+      griseophenone D.
+    evidence:
+    - reference: DOI:10.1021/cb400541z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GsfB is the 3-OH MT
+      notes: Cacho et al. deleted gsfB and observed griseophenone-family intermediates
+        that lacked 3-OH methylation; a coupled GsfA/GsfB in vitro assay further supported
+        GsfB 3-OH O-methyltransferase activity and produced griseophenone D.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+        gene cluster CDS ADI24954.1 to GsfB.
+    - reference: https://www.uniprot.org/uniprotkb/D7PI16
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:D7PI16 is the 419 aa P. aethiopicum GsfB O-methyltransferase,
+        cross-references GU574478 protein ADI24954.1, and annotates RHEA:73923 from
+        PMID:23978092.
+  - subject: gsfb
+    predicate: forms
+    object: griseophenone_d
+    notes: The SAM-dependent GsfB reaction converts the GsfA benzophenone product
+      into griseophenone D, placing GsfB immediately upstream of GsfC-catalyzed methylation.
+    evidence:
+    - reference: DOI:10.1021/cb400541z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GsfB is the 3-OH MT
+      notes: Cacho et al. deleted gsfB and observed griseophenone-family intermediates
+        that lacked 3-OH methylation; a coupled GsfA/GsfB in vitro assay further supported
+        GsfB 3-OH O-methyltransferase activity and produced griseophenone D.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000070.5/BGC0000070.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0000070.5 maps the P. aethiopicum GU574478.1 griseofulvin biosynthetic
+        gene cluster CDS ADI24954.1 to GsfB.
+    - reference: https://www.uniprot.org/uniprotkb/D7PI16
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:D7PI16 is the 419 aa P. aethiopicum GsfB O-methyltransferase,
+        cross-references GU574478 protein ADI24954.1, and annotates RHEA:73923 from
+        PMID:23978092.
 - graph_id: griseofulvin-gsfc-methylation
   scope: BIOSYNTHESIS
   description: Partial P. aethiopicum griseofulvin biosynthesis graph for GsfC-catalyzed
@@ -647,4 +741,13 @@ curation_history:
     griseophenone D 9-O-methylation to griseophenone C, grounded to UniProtKB:D7PI17,
     RHEA:73927, CHEBI:193064, CHEBI:193065, MIBiG BGC0000070.5, and Cacho et al. 2013;
     renumbered the existing GsfI and GsfF curated steps after GsfC.
+  llm_assisted: true
+- timestamp: '2026-09-30T11:18:22Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a GsfB biosynthetic pathway step and BIOSYNTHESIS causal graph for
+    3-O-methylation of the GsfA benzophenone product to griseophenone D, grounded
+    to UniProtKB:D7PI16, RHEA:73923, CHEBI:193062, CHEBI:193064, MIBiG BGC0000070.5,
+    and Cacho et al. 2013; renumbered the existing GsfC, GsfI, and GsfF curated steps
+    after GsfB.
   llm_assisted: true
