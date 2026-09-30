@@ -319,6 +319,51 @@ def test_mibig_locus_evidence_override_updates_only_matching_compound_row():
         "CLUSTER_DEMONSTRATED"
 
 
+def test_mibig_locus_evidence_override_applies_before_lead_row_selection():
+    """A native override should upgrade a same-structure row before lead sort."""
+    key = "LFQSCWFLJHTTHZ-UHFFFAOYSA-N"
+    base = {
+        "entry_version": "1", "entry_status": "active",
+        "entry_quality": "high", "entry_completeness": "complete",
+        "compound_index": "1",
+        "smiles": "CCO", "standard_inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+        "standard_inchi_key": key, "stereo_complete": "true",
+        "compound_classes": "", "database_ids": "",
+        "taxon_id": "NCBITaxon:1883", "taxon_label": "Streptomyces",
+        "bgc_classes": "", "bgc_subclasses": "",
+        "genome_accession": "", "locus_from": "0", "locus_to": "0",
+        "locus_evidence_methods": "",
+        "producer_evidence_basis": "SOURCE_ASSERTION",
+        "cluster_link_evidence_basis": "CLUSTER_UNSTATED",
+        "primary_reference": "PMID:1", "reference_basis": "ENTRY",
+    }
+    weak_lead = {
+        **base,
+        "mibig_accession": "BGC0000004",
+        "compound_name": "weak lead",
+    }
+    curated_lead = {
+        **base,
+        "mibig_accession": "BGC9999999",
+        "compound_name": "curated lead",
+    }
+    override_key = seed.mint_identifier("MIBIG", "BGC9999999:1")
+
+    doc = seed.build_records({
+        "mibig_compounds": [weak_lead, curated_lead],
+        "mibig_locus_evidence_overrides": [
+            {
+                "minted_identifier": override_key,
+                "locus_evidence_methods": "Knock-out studies",
+            },
+        ],
+    })[0]
+
+    assert doc["identifier"] == seed.mint_identifier("MIBIG", "BGC9999999:1")
+    assert doc["chemical_structure"]["structure_source_id"] == "mibig:BGC9999999"
+    assert doc["producer_organisms"][0]["evidence_basis"] == "BGC_CHARACTERIZED"
+
+
 def test_heterologous_expression_is_not_a_producer_basis_in_the_schema():
     """Removing it from the seeder while the schema still offered it would have
     left a trap for the first curator who reached for it (#18)."""

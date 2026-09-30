@@ -389,6 +389,18 @@ def load_mibig_locus_evidence_overrides(
     return overrides
 
 
+def apply_mibig_locus_evidence_override(
+    row: dict[str, str],
+    overrides: dict[str, dict[str, str]],
+) -> dict[str, str]:
+    source_concept_identifier = mint_identifier(
+        "MIBIG", row["mibig_accession"] + ":" + row["compound_index"])
+    override = overrides.get(source_concept_identifier)
+    if not override:
+        return row
+    return {**row, **override}
+
+
 def slugify(label: str, identifier: str) -> str:
     """A filesystem- and URL-safe slug for a record.
 
@@ -602,6 +614,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         return []
     mibig_locus_overrides = load_mibig_locus_evidence_overrides(
         inventories.get("mibig_locus_evidence_overrides") or [])
+    mibig_rows = [
+        apply_mibig_locus_evidence_override(row, mibig_locus_overrides)
+        for row in mibig_rows
+    ]
 
     classification = {
         row["standard_inchi_key"]: row
@@ -789,9 +805,6 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             accession = row["mibig_accession"]
             source_concept_identifier = mint_identifier(
                 "MIBIG", accession + ":" + row["compound_index"])
-            override = mibig_locus_overrides.get(source_concept_identifier)
-            if override:
-                row = {**row, **override}
 
             source_concepts.append({
                 "source": "MIBIG",
