@@ -164,6 +164,170 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-cac1e8587c
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q194Q1
+  enzyme_label: MtmW ketoreductase
+  notes: MtmW reduces the MtmOIV-derived mithramycin DK side-chain keto group to iso-mithramycin.
+    Iso-mithramycin then nonenzymatically isomerizes to CHEBI:31856 mithramycin in
+    a Mg2+-catalyzed reaction, so this partial enzymatic step does not set product
+    to the final stereoisomer.
+  evidence:
+  - reference: DOI:10.1002/anie.201910241
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: MtmOIV and MtmW catalyze the final two reactions
+    notes: 'Wheeler et al. showed that MtmOIV and MtmW catalyze the final two enzymatic
+      mithramycin steps: Baeyer-Villiger opening of premithramycin B to mithramycin
+      DK followed by MtmW reduction to iso-mithramycin, which then undergoes Mg2+-catalyzed
+      nonenzymatic isomerization to mithramycin.'
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000017
+    evidence_type: DATABASE_ASSERTION
+    snippet: In vitro assay
+    retrieved_on: '2026-10-01'
+    notes: MITE0000017 is an active MtmW entry for UniProtKB:Q194Q1, GenPept CAK50787.1
+      and MIBiG BGC0000247. It records NADP-dependent side-chain reduction as a non-intermediate
+      in vitro reaction; the example product SMILES shares the CFCUWKMKBJTWLW connectivity
+      layer with CHEBI:31856.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/X89899.2
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="CAK50787.1"
+    retrieved_on: '2026-10-01'
+    notes: GenBank X89899.2 is the Streptomyces argillaceus ATCC 12956 mithramycin
+      cluster sequence and maps mtmW to CAK50787.1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="CAK50787.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000247.5 places mtmW/CAK50787.1 inside the active Streptomyces
+      argillaceus mithramycin cluster.
+  - reference: https://www.uniprot.org/uniprotkb/Q194Q1
+    evidence_type: DATABASE_ASSERTION
+    snippet: GN=mtmW
+    retrieved_on: '2026-10-01'
+    notes: Current unreviewed UniProtKB:Q194Q1 resolves as Streptomyces argillaceus
+      MtmW putative side chain reductase, cross-references EMBL X89899 protein CAK50787.1
+      and PDB structures 6OVQ, 6OVX and 6OW0, and is sequence-identical to GenPept
+      CAK50787.1.
+causal_graphs:
+- graph_id: mithramycin-mtmw-side-chain-reduction
+  scope: BIOSYNTHESIS
+  description: Late Streptomyces argillaceus mithramycin biosynthesis graph for MtmW-catalyzed
+    mithramycin DK reduction to iso-mithramycin and Mg2+-catalyzed isomerization to
+    mithramycin.
+  nodes:
+  - node_id: mtm_dk
+    label: mithramycin DK
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mtmw
+    label: MtmW ketoreductase
+    node_type: ENZYME
+    identifier: UniProtKB:Q194Q1
+    grounding_status: GROUNDED
+  - node_id: iso_mithramycin
+    label: iso-mithramycin
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mithramycin
+    label: mithramycin
+    node_type: COMPOUND
+    identifier: CHEBI:31856
+    grounding_status: GROUNDED
+  edges:
+  - subject: mtm_dk
+    predicate: is reduced by
+    object: mtmw
+    notes: MtmW reduces the distal keto group of the side chain created by MtmOIV.
+    evidence:
+    - reference: DOI:10.1002/anie.201910241
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MtmOIV and MtmW catalyze the final two reactions
+      notes: 'Wheeler et al. showed that MtmOIV and MtmW catalyze the final two enzymatic
+        mithramycin steps: Baeyer-Villiger opening of premithramycin B to mithramycin
+        DK followed by MtmW reduction to iso-mithramycin, which then undergoes Mg2+-catalyzed
+        nonenzymatic isomerization to mithramycin.'
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000017
+      evidence_type: DATABASE_ASSERTION
+      snippet: In vitro assay
+      retrieved_on: '2026-10-01'
+      notes: MITE0000017 is an active MtmW entry for UniProtKB:Q194Q1, GenPept CAK50787.1
+        and MIBiG BGC0000247. It records NADP-dependent side-chain reduction as a
+        non-intermediate in vitro reaction; the example product SMILES shares the
+        CFCUWKMKBJTWLW connectivity layer with CHEBI:31856.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/X89899.2
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="CAK50787.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank X89899.2 is the Streptomyces argillaceus ATCC 12956 mithramycin
+        cluster sequence and maps mtmW to CAK50787.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="CAK50787.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000247.5 places mtmW/CAK50787.1 inside the active Streptomyces
+        argillaceus mithramycin cluster.
+    - reference: https://www.uniprot.org/uniprotkb/Q194Q1
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mtmW
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:Q194Q1 resolves as Streptomyces argillaceus
+        MtmW putative side chain reductase, cross-references EMBL X89899 protein CAK50787.1
+        and PDB structures 6OVQ, 6OVX and 6OW0, and is sequence-identical to GenPept
+        CAK50787.1.
+  - subject: mtmw
+    predicate: forms
+    object: iso_mithramycin
+    notes: MtmW forms the C2 stereoisomer iso-mithramycin rather than mature mithramycin
+      directly.
+    evidence:
+    - reference: DOI:10.1002/anie.201910241
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MtmOIV and MtmW catalyze the final two reactions
+      notes: 'Wheeler et al. showed that MtmOIV and MtmW catalyze the final two enzymatic
+        mithramycin steps: Baeyer-Villiger opening of premithramycin B to mithramycin
+        DK followed by MtmW reduction to iso-mithramycin, which then undergoes Mg2+-catalyzed
+        nonenzymatic isomerization to mithramycin.'
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000017
+      evidence_type: DATABASE_ASSERTION
+      snippet: In vitro assay
+      retrieved_on: '2026-10-01'
+      notes: MITE0000017 is an active MtmW entry for UniProtKB:Q194Q1, GenPept CAK50787.1
+        and MIBiG BGC0000247. It records NADP-dependent side-chain reduction as a
+        non-intermediate in vitro reaction; the example product SMILES shares the
+        CFCUWKMKBJTWLW connectivity layer with CHEBI:31856.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/X89899.2
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="CAK50787.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank X89899.2 is the Streptomyces argillaceus ATCC 12956 mithramycin
+        cluster sequence and maps mtmW to CAK50787.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="CAK50787.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000247.5 places mtmW/CAK50787.1 inside the active Streptomyces
+        argillaceus mithramycin cluster.
+    - reference: https://www.uniprot.org/uniprotkb/Q194Q1
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mtmW
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:Q194Q1 resolves as Streptomyces argillaceus
+        MtmW putative side chain reductase, cross-references EMBL X89899 protein CAK50787.1
+        and PDB structures 6OVQ, 6OVX and 6OW0, and is sequence-identical to GenPept
+        CAK50787.1.
+  - subject: iso_mithramycin
+    predicate: nonenzymatically isomerizes to
+    object: mithramycin
+    notes: The final isomerization to mithramycin is Mg2+-catalyzed and is not assigned
+      to another biosynthetic protein.
+    evidence:
+    - reference: DOI:10.1002/anie.201910241
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Iso-MTM undergoes a non-enzymatic isomerization to MTM
+      notes: 'Wheeler et al. showed that MtmOIV and MtmW catalyze the final two enzymatic
+        mithramycin steps: Baeyer-Villiger opening of premithramycin B to mithramycin
+        DK followed by MtmW reduction to iso-mithramycin, which then undergoes Mg2+-catalyzed
+        nonenzymatic isomerization to mithramycin.'
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -173,3 +337,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T19:54:25Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the evidence-backed MtmW late mithramycin biosynthetic pathway step
+    and partial BIOSYNTHESIS causal graph grounded to UniProtKB:Q194Q1.
+  llm_assisted: true
