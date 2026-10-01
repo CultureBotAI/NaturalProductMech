@@ -69,7 +69,47 @@ same claim.</p>
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>MibH tryptophan-5-halogenase with MibS flavin reductase<br><span class="mono">UniProtKB:E2IHC5</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; naturalproductmech:mibig-b546b14194</td>
+  <td class="mono">DOI:10.1021/acschembio.6b01031</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: MibH catalyzes the terminal FADH2-dependent chlorination of deschloro-microbisporicin A2 to microbisporicin A2; auxiliary MibS supplies reduced flavin to MibH in the reconstituted in vitro reaction.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial Microbispora corallina microbisporicin A2 biosynthesis graph for MibH/MibS-catalyzed terminal chlorination of deschloro-microbisporicin A2.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>deschloro-microbisporicin A2</td>
+  <td>is 5-chlorinated by</td>
+  <td>MibH tryptophan-5-halogenase</td>
+  <td>MibH chlorinates the tryptophan residue embedded in deschloro-microbisporicin A2 and shows no detectable activity on free tryptophan.</td>
+  <td class="mono">DOI:10.1021/acschembio.6b01031<br>https://mite.lisc.univie.ac.at/repository/MITE0000054<br>https://www.ncbi.nlm.nih.gov/nuccore/HM536998.1<br>https://mibig.secondarymetabolites.org/repository/BGC0000529.5/BGC0000529.gbk<br>https://www.uniprot.org/uniprotkb/E2IHC5</td>
+</tr>
+<tr>
+  <td>MibS flavin reductase</td>
+  <td>provides reduced flavin to</td>
+  <td>MibH tryptophan-5-halogenase</td>
+  <td>MibS functions as the flavin reductase partner for the MibH-dependent chlorination of deschloro-microbisporicin A2.</td>
+  <td class="mono">DOI:10.1021/acschembio.6b01031<br>https://mite.lisc.univie.ac.at/repository/MITE0000054<br>https://www.ncbi.nlm.nih.gov/nuccore/HM536998.1<br>https://mibig.secondarymetabolites.org/repository/BGC0000529.5/BGC0000529.gbk<br>https://www.uniprot.org/uniprotkb/E2IHC6</td>
+</tr>
+<tr>
+  <td>MibH tryptophan-5-halogenase</td>
+  <td>forms</td>
+  <td>microbisporicin A2</td>
+  <td>MITE records MibH chlorination of deschloro-microbisporicin A2 as producing the mature microbisporicin A2 product.</td>
+  <td class="mono">DOI:10.1021/acschembio.6b01031<br>https://mite.lisc.univie.ac.at/repository/MITE0000054<br>https://www.ncbi.nlm.nih.gov/nuccore/HM536998.1<br>https://mibig.secondarymetabolites.org/repository/BGC0000529.5/BGC0000529.gbk<br>https://www.uniprot.org/uniprotkb/E2IHC5</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

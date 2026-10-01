@@ -66,6 +66,213 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:E2IHC5
+  enzyme_label: MibH tryptophan-5-halogenase with MibS flavin reductase
+  product: naturalproductmech:mibig-b546b14194
+  notes: MibH catalyzes the terminal FADH2-dependent chlorination of deschloro-microbisporicin
+    A2 to microbisporicin A2; auxiliary MibS supplies reduced flavin to MibH in the
+    reconstituted in vitro reaction.
+  evidence:
+  - reference: DOI:10.1021/acschembio.6b01031
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: MibH was only active when Trp was embedded within its cognate peptide
+      substrate deschloro NAI-107
+    notes: Ortega et al. reconstituted Microbispora corallina MibH/MibS in vitro and
+      showed LC/ESI-MS formation of a chlorinated product from deschloromicrobisporicin
+      only when both MibH and MibS were present.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000054
+    evidence_type: DATABASE_ASSERTION
+    snippet: Flavin-dependent tryptophan-5-halogenase catalyzed halogenation reaction
+      of deschloro-microbisporicin A2
+    retrieved_on: '2026-10-01'
+    notes: MITE0000054 is an active entry for Microbispora corallina MibH/E2IHC5,
+      links GenPept ADK32563.1, MIBiG BGC0000529 and auxiliary MibS/E2IHC6, and records
+      chlorination of deschloro-microbisporicin A2 to the mature product.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM536998.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="ADK32563.1"
+    retrieved_on: '2026-10-01'
+    notes: GenBank HM536998.1 is the Microbispora corallina microbisporicin cluster
+      sequence and maps mibH to ADK32563.1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000529.5/BGC0000529.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: 'MITE0000054: Halogenation (100% identity)'
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000529.5 places mibH/ADK32563.1 inside the active microbisporicin
+      A2 cluster and annotates the mibH CDS with MITE0000054.
+  - reference: https://www.uniprot.org/uniprotkb/E2IHC5
+    evidence_type: DATABASE_ASSERTION
+    snippet: GN=mibH
+    retrieved_on: '2026-10-01'
+    notes: Current unreviewed UniProtKB:E2IHC5 resolves as Microbispora corallina
+      MibH tryptophan-5-halogenase, cross-references EMBL HM536998 protein ADK32563.1,
+      and is sequence-identical to GenPept ADK32563.1.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM536998.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="ADK32564.1"
+    retrieved_on: '2026-10-01'
+    notes: GenBank HM536998.1 is the Microbispora corallina microbisporicin cluster
+      sequence and maps mibS to ADK32564.1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000529.5/BGC0000529.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="ADK32564.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000529.5 places mibS/ADK32564.1 inside the active microbisporicin
+      A2 cluster as the MibS flavin reductase CDS.
+  - reference: https://www.uniprot.org/uniprotkb/E2IHC6
+    evidence_type: DATABASE_ASSERTION
+    snippet: GN=mibS
+    retrieved_on: '2026-10-01'
+    notes: Current unreviewed UniProtKB:E2IHC6 resolves as Microbispora corallina
+      MibS flavin reductase, cross-references EMBL HM536998 protein ADK32564.1, and
+      is sequence-identical to GenPept ADK32564.1.
+causal_graphs:
+- graph_id: microbisporicin-mibh-chlorination
+  scope: BIOSYNTHESIS
+  description: Partial Microbispora corallina microbisporicin A2 biosynthesis graph
+    for MibH/MibS-catalyzed terminal chlorination of deschloro-microbisporicin A2.
+  nodes:
+  - node_id: deschloro_microbisporicin_a2
+    label: deschloro-microbisporicin A2
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mibs
+    label: MibS flavin reductase
+    node_type: ENZYME
+    identifier: UniProtKB:E2IHC6
+    grounding_status: GROUNDED
+  - node_id: mibh
+    label: MibH tryptophan-5-halogenase
+    node_type: ENZYME
+    identifier: UniProtKB:E2IHC5
+    grounding_status: GROUNDED
+  - node_id: microbisporicin_a2
+    label: microbisporicin A2
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-b546b14194
+    grounding_status: GROUNDED
+  edges:
+  - subject: deschloro_microbisporicin_a2
+    predicate: is 5-chlorinated by
+    object: mibh
+    notes: MibH chlorinates the tryptophan residue embedded in deschloro-microbisporicin
+      A2 and shows no detectable activity on free tryptophan.
+    evidence:
+    - reference: DOI:10.1021/acschembio.6b01031
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MibH was only active when Trp was embedded within its cognate peptide
+        substrate deschloro NAI-107
+      notes: Ortega et al. reconstituted Microbispora corallina MibH/MibS in vitro
+        and showed LC/ESI-MS formation of a chlorinated product from deschloromicrobisporicin
+        only when both MibH and MibS were present.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000054
+      evidence_type: DATABASE_ASSERTION
+      snippet: Flavin-dependent tryptophan-5-halogenase catalyzed halogenation reaction
+        of deschloro-microbisporicin A2
+      retrieved_on: '2026-10-01'
+      notes: MITE0000054 is an active entry for Microbispora corallina MibH/E2IHC5,
+        links GenPept ADK32563.1, MIBiG BGC0000529 and auxiliary MibS/E2IHC6, and
+        records chlorination of deschloro-microbisporicin A2 to the mature product.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM536998.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="ADK32563.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank HM536998.1 is the Microbispora corallina microbisporicin cluster
+        sequence and maps mibH to ADK32563.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000529.5/BGC0000529.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000054: Halogenation (100% identity)'
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000529.5 places mibH/ADK32563.1 inside the active microbisporicin
+        A2 cluster and annotates the mibH CDS with MITE0000054.
+    - reference: https://www.uniprot.org/uniprotkb/E2IHC5
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mibH
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:E2IHC5 resolves as Microbispora corallina
+        MibH tryptophan-5-halogenase, cross-references EMBL HM536998 protein ADK32563.1,
+        and is sequence-identical to GenPept ADK32563.1.
+  - subject: mibs
+    predicate: provides reduced flavin to
+    object: mibh
+    notes: MibS functions as the flavin reductase partner for the MibH-dependent chlorination
+      of deschloro-microbisporicin A2.
+    evidence:
+    - reference: DOI:10.1021/acschembio.6b01031
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MibH and MibS form an FAD-dependent halogenase system
+      notes: Ortega et al. reconstituted chlorination of deschloromicrobisporicin
+        with MibH, MibS, FAD, NADH and NaCl, and did not observe the chlorinated product
+        when MibS or MibH was omitted.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000054
+      evidence_type: DATABASE_ASSERTION
+      snippet: Flavin-dependent tryptophan-5-halogenase catalyzed halogenation reaction
+        of deschloro-microbisporicin A2
+      retrieved_on: '2026-10-01'
+      notes: MITE0000054 is an active entry for Microbispora corallina MibH/E2IHC5,
+        links GenPept ADK32563.1, MIBiG BGC0000529 and auxiliary MibS/E2IHC6, and
+        records chlorination of deschloro-microbisporicin A2 to the mature product.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM536998.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="ADK32564.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank HM536998.1 is the Microbispora corallina microbisporicin cluster
+        sequence and maps mibS to ADK32564.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000529.5/BGC0000529.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="ADK32564.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000529.5 places mibS/ADK32564.1 inside the active microbisporicin
+        A2 cluster as the MibS flavin reductase CDS.
+    - reference: https://www.uniprot.org/uniprotkb/E2IHC6
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mibS
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:E2IHC6 resolves as Microbispora corallina
+        MibS flavin reductase, cross-references EMBL HM536998 protein ADK32564.1,
+        and is sequence-identical to GenPept ADK32564.1.
+  - subject: mibh
+    predicate: forms
+    object: microbisporicin_a2
+    notes: MITE records MibH chlorination of deschloro-microbisporicin A2 as producing
+      the mature microbisporicin A2 product.
+    evidence:
+    - reference: DOI:10.1021/acschembio.6b01031
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MibH was only active when Trp was embedded within its cognate peptide
+        substrate deschloro NAI-107
+      notes: Ortega et al. reconstituted Microbispora corallina MibH/MibS in vitro
+        and showed LC/ESI-MS formation of a chlorinated product from deschloromicrobisporicin
+        only when both MibH and MibS were present.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000054
+      evidence_type: DATABASE_ASSERTION
+      snippet: Flavin-dependent tryptophan-5-halogenase catalyzed halogenation reaction
+        of deschloro-microbisporicin A2
+      retrieved_on: '2026-10-01'
+      notes: MITE0000054 is an active entry for Microbispora corallina MibH/E2IHC5,
+        links GenPept ADK32563.1, MIBiG BGC0000529 and auxiliary MibS/E2IHC6, and
+        records chlorination of deschloro-microbisporicin A2 to the mature product.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM536998.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="ADK32563.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank HM536998.1 is the Microbispora corallina microbisporicin cluster
+        sequence and maps mibH to ADK32563.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000529.5/BGC0000529.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000054: Halogenation (100% identity)'
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000529.5 places mibH/ADK32563.1 inside the active microbisporicin
+        A2 cluster and annotates the mibH CDS with MITE0000054.
+    - reference: https://www.uniprot.org/uniprotkb/E2IHC5
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mibH
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:E2IHC5 resolves as Microbispora corallina
+        MibH tryptophan-5-halogenase, cross-references EMBL HM536998 protein ADK32563.1,
+        and is sequence-identical to GenPept ADK32563.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -75,3 +282,15 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T17:56:12Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the evidence-backed MibH/MibS terminal chlorination biosynthetic
+    pathway step and BIOSYNTHESIS causal graph grounded to UniProtKB:E2IHC5 and UniProtKB:E2IHC6.
+  llm_assisted: true
+- timestamp: '2026-10-01T18:06:42Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Split MibH and MibS GenBank/MIBiG evidence so auxiliary MibS claims cite
+    ADK32564.1-specific snippets.
+  llm_assisted: true
