@@ -145,6 +145,249 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0002103, BGC0002321.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:O34351
+  enzyme_label: YvmC cyclodileucine synthase
+  reaction_id: RHEA:46452
+  product: CHEBI:67269
+  notes: Bacillus subtilis 168 yvmC, annotated pchC in MIBiG's NC_000964.3 GenBank
+    record, catalyzes cyclodileucine formation from two L-leucyl-tRNA(Leu) substrates.
+    The full Rhea tRNA participant RHEA-COMP:9622 is not used as a substrate CURIE
+    because RHEA-COMP is not yet a NaturalProductMech grounding prefix.
+  evidence:
+  - reference: DOI:10.1038/nchembio.175
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: also use aminoacyl-tRNAs to synthesize various cyclodipeptides
+    notes: Gondry et al. characterized several AlbC homologs, including the CAB15512
+      Bacillus subtilis 168 protein represented by UniProtKB:O34351, as tRNA-dependent
+      cyclodipeptide synthases.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002103.2/BGC0002103.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0002103.2 maps the Bacillus subtilis subsp. subtilis str. 168
+      pulcherriminic acid cluster pchC/yvmC CDS to NP_391387.1 and UniProtKB:O34351,
+      and its cypX CDS to NP_391386.1 and UniProtKB:O34926.
+  - reference: https://www.uniprot.org/uniprotkb/O34351
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:O34351 is the 248 aa Bacillus subtilis 168 yvmC/BSU35070
+      cyclo(L-leucyl-L-leucyl) synthase and annotates EC:2.3.2.22 plus RHEA:46452
+      from PMID:19430487.
+  - reference: https://www.rhea-db.org/rhea/46452
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: RHEA:46452 is the cyclo(L-leucyl-L-leucyl) synthase reaction that converts
+      two L-leucyl-tRNA(Leu) participants into cyclo(L-leucyl-L-leucyl), two tRNA(Leu),
+      and two protons.
+- step_number: 2
+  enzyme_id: UniProtKB:O34926
+  enzyme_label: CypX pulcherriminic acid synthase
+  reaction_id: RHEA:35555
+  substrate: CHEBI:67269
+  product: CHEBI:71599
+  notes: Bacillus subtilis 168 CypX/CYP134A1 oxidizes cyclo(L-leucyl-L-leucyl) toward
+    pulcherriminic acid. RHEA:35555 uses pulcherriminate(2-) CHEBI:77663 as the product
+    participant; CHEBI:71599 is the neutral acid recorded for the same BGC0002103
+    structure.
+  evidence:
+  - reference: DOI:10.1021/bi100910y
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: CYP134A1 is capable of catalyzing the in vitro oxidation of diketopiperazine
+      substrates
+    notes: Cryle et al. structurally and biochemically characterized the Bacillus
+      subtilis 168 CypX/CYP134A1 cyclo-L-leucyl-L-leucyl dipeptide oxidase.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002103.2/BGC0002103.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0002103.2 maps the Bacillus subtilis subsp. subtilis str. 168
+      pulcherriminic acid cluster pchC/yvmC CDS to NP_391387.1 and UniProtKB:O34351,
+      and its cypX CDS to NP_391386.1 and UniProtKB:O34926.
+  - reference: https://www.uniprot.org/uniprotkb/O34926
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:O34926 is the 405 aa Bacillus subtilis 168 cypX/BSU35060
+      pulcherriminic acid synthase and annotates EC:1.14.15.13 plus RHEA:35555 from
+      PMID:20690619.
+  - reference: https://www.rhea-db.org/rhea/35555
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: RHEA:35555 is the pulcherriminic acid synthase master reaction; left-to-right
+      RHEA:35556 oxidizes cyclo(L-leucyl-L-leucyl) to CHEBI:77663, the anion of this
+      record's neutral CHEBI:71599.
+causal_graphs:
+- graph_id: pulcherriminic-acid-yvmc-cypx-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Bacillus subtilis 168 pchC/yvmC and cypX encode the two enzymes that
+    convert leucyl-tRNA through cyclodileucine into pulcherriminic acid.
+  nodes:
+  - node_id: bgc0002103
+    label: BGC0002103 pulcherriminic acid biosynthetic gene cluster
+    node_type: GENE_CLUSTER
+    identifier: mibig:BGC0002103
+    grounding_status: GROUNDED
+  - node_id: leucyl_trna
+    label: L-leucyl-tRNA(Leu)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: yvmc
+    label: YvmC cyclodileucine synthase
+    node_type: ENZYME
+    identifier: UniProtKB:O34351
+    grounding_status: GROUNDED
+  - node_id: cyclodileucine
+    label: cyclo(L-leucyl-L-leucyl)
+    node_type: COMPOUND
+    identifier: CHEBI:67269
+    grounding_status: GROUNDED
+  - node_id: cypx
+    label: CypX pulcherriminic acid synthase
+    node_type: ENZYME
+    identifier: UniProtKB:O34926
+    grounding_status: GROUNDED
+  - node_id: pulcherriminic_acid
+    label: pulcherriminic acid
+    node_type: COMPOUND
+    identifier: CHEBI:71599
+    grounding_status: GROUNDED
+  edges:
+  - subject: bgc0002103
+    predicate: encodes
+    object: yvmc
+    notes: 'BGC0002103 contains the BSU35070 core CDS: pchC in the current GenBank
+      annotation, yvmC in the UniProt entry.'
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002103.2/BGC0002103.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002103.2 maps the Bacillus subtilis subsp. subtilis str. 168
+        pulcherriminic acid cluster pchC/yvmC CDS to NP_391387.1 and UniProtKB:O34351,
+        and its cypX CDS to NP_391386.1 and UniProtKB:O34926.
+    - reference: https://www.uniprot.org/uniprotkb/O34351
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:O34351 is the 248 aa Bacillus subtilis 168 yvmC/BSU35070
+        cyclo(L-leucyl-L-leucyl) synthase and annotates EC:2.3.2.22 plus RHEA:46452
+        from PMID:19430487.
+  - subject: bgc0002103
+    predicate: encodes
+    object: cypx
+    notes: BGC0002103 contains the BSU35060 cypX CDS.
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002103.2/BGC0002103.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002103.2 maps the Bacillus subtilis subsp. subtilis str. 168
+        pulcherriminic acid cluster pchC/yvmC CDS to NP_391387.1 and UniProtKB:O34351,
+        and its cypX CDS to NP_391386.1 and UniProtKB:O34926.
+    - reference: https://www.uniprot.org/uniprotkb/O34926
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:O34926 is the 405 aa Bacillus subtilis 168 cypX/BSU35060
+        pulcherriminic acid synthase and annotates EC:1.14.15.13 plus RHEA:35555 from
+        PMID:20690619.
+  - subject: leucyl_trna
+    predicate: is cyclized by
+    object: yvmc
+    notes: RHEA:46452 consumes two L-leucyl-tRNA(Leu) participants; the full tRNA
+      participant is left ungrounded locally.
+    evidence:
+    - reference: DOI:10.1038/nchembio.175
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: also use aminoacyl-tRNAs to synthesize various cyclodipeptides
+      notes: Gondry et al. characterized several AlbC homologs, including the CAB15512
+        Bacillus subtilis 168 protein represented by UniProtKB:O34351, as tRNA-dependent
+        cyclodipeptide synthases.
+    - reference: https://www.uniprot.org/uniprotkb/O34351
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:O34351 is the 248 aa Bacillus subtilis 168 yvmC/BSU35070
+        cyclo(L-leucyl-L-leucyl) synthase and annotates EC:2.3.2.22 plus RHEA:46452
+        from PMID:19430487.
+    - reference: https://www.rhea-db.org/rhea/46452
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:46452 is the cyclo(L-leucyl-L-leucyl) synthase reaction that converts
+        two L-leucyl-tRNA(Leu) participants into cyclo(L-leucyl-L-leucyl), two tRNA(Leu),
+        and two protons.
+  - subject: yvmc
+    predicate: forms
+    object: cyclodileucine
+    notes: YvmC catalyzes cyclo(L-leucyl-L-leucyl) formation as RHEA:46452.
+    evidence:
+    - reference: DOI:10.1038/nchembio.175
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: also use aminoacyl-tRNAs to synthesize various cyclodipeptides
+      notes: Gondry et al. characterized several AlbC homologs, including the CAB15512
+        Bacillus subtilis 168 protein represented by UniProtKB:O34351, as tRNA-dependent
+        cyclodipeptide synthases.
+    - reference: https://www.uniprot.org/uniprotkb/O34351
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:O34351 is the 248 aa Bacillus subtilis 168 yvmC/BSU35070
+        cyclo(L-leucyl-L-leucyl) synthase and annotates EC:2.3.2.22 plus RHEA:46452
+        from PMID:19430487.
+    - reference: https://www.rhea-db.org/rhea/46452
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:46452 is the cyclo(L-leucyl-L-leucyl) synthase reaction that converts
+        two L-leucyl-tRNA(Leu) participants into cyclo(L-leucyl-L-leucyl), two tRNA(Leu),
+        and two protons.
+  - subject: cyclodileucine
+    predicate: is oxidized by
+    object: cypx
+    notes: CypX/CYP134A1 is the cytochrome P450 that oxidizes cyclo(L-leucyl-L-leucyl)
+      in the pulcherriminic acid pathway.
+    evidence:
+    - reference: DOI:10.1021/bi100910y
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: CYP134A1 is capable of catalyzing the in vitro oxidation of diketopiperazine
+        substrates
+      notes: Cryle et al. structurally and biochemically characterized the Bacillus
+        subtilis 168 CypX/CYP134A1 cyclo-L-leucyl-L-leucyl dipeptide oxidase.
+    - reference: https://www.uniprot.org/uniprotkb/O34926
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:O34926 is the 405 aa Bacillus subtilis 168 cypX/BSU35060
+        pulcherriminic acid synthase and annotates EC:1.14.15.13 plus RHEA:35555 from
+        PMID:20690619.
+    - reference: https://www.rhea-db.org/rhea/35555
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:35555 is the pulcherriminic acid synthase master reaction; left-to-right
+        RHEA:35556 oxidizes cyclo(L-leucyl-L-leucyl) to CHEBI:77663, the anion of
+        this record's neutral CHEBI:71599.
+  - subject: cypx
+    predicate: produces
+    object: pulcherriminic_acid
+    notes: CypX produces pulcherriminate(2-) in RHEA:35555; this edge points to the
+      neutral pulcherriminic acid form that grounds the MIBiG BGC0002103 record.
+    evidence:
+    - reference: DOI:10.1089/ind.2006.2.66
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Disruption of the yvmC or cypX genes yielded strains that did not produce
+        red pigment
+      notes: Tang et al. selected yvmC and cypX as likely pulcherrimin genes, found
+        them juxtaposed on the Bacillus subtilis chromosome, and showed that disruption
+        of either gene abolished the red pulcherrimin phenotype.
+    - reference: DOI:10.1021/bi100910y
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: CYP134A1 is capable of catalyzing the in vitro oxidation of diketopiperazine
+        substrates
+      notes: Cryle et al. structurally and biochemically characterized the Bacillus
+        subtilis 168 CypX/CYP134A1 cyclo-L-leucyl-L-leucyl dipeptide oxidase.
+    - reference: https://www.uniprot.org/uniprotkb/O34926
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:O34926 is the 405 aa Bacillus subtilis 168 cypX/BSU35060
+        pulcherriminic acid synthase and annotates EC:1.14.15.13 plus RHEA:35555 from
+        PMID:20690619.
+    - reference: https://www.rhea-db.org/rhea/35555
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:35555 is the pulcherriminic acid synthase master reaction; left-to-right
+        RHEA:35556 oxidizes cyclo(L-leucyl-L-leucyl) to CHEBI:77663, the anion of
+        this record's neutral CHEBI:71599.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -154,3 +397,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T04:40:48Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the Bacillus subtilis 168 YvmC/CypX BIOSYNTHESIS pathway and causal
+    graph for pulcherriminic acid; grounded YvmC to UniProtKB:O34351 with RHEA:46452
+    and CypX to UniProtKB:O34926 with RHEA:35555.
+  llm_assisted: true
