@@ -89,6 +89,156 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9Z4X7
+  enzyme_label: HmaS 4-hydroxymandelate synthase
+  substrate: CHEBI:15999
+  product: CHEBI:17210
+  proposed: true
+  notes: SCO3229/HmaS is curated as the 4-hydroxymandelate synthase that supplies
+    the L-4-hydroxyphenylglycine branch of CDA3a biosynthesis. HmaS sits at the first
+    step of the pathway from 4-hydroxyphenylpyruvate to 4-hydroxyphenylglycine; the
+    exact SCO3229 4-hydroxyphenylpyruvate to (S)-4-hydroxymandelate reaction is inferred
+    from the HmaS assignment and therefore kept proposed.
+  evidence:
+  - reference: DOI:10.1016/S1074-5521(02)00252-1
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Deletion of SCO3229 (hmaS)
+    notes: Hojati et al. identified the Streptomyces coelicolor CDA cluster, deleted
+      hmaS/SCO3229, and restored CDA production in the mutant by feeding 4-hydroxymandelate,
+      4-hydroxyphenylglyoxylate, or 4-hydroxyphenylglycine.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000315.5/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-29'
+    notes: MIBiG BGC0000315.5 lists CDA3a as a product of the AL645882.2 Streptomyces
+      coelicolor A3(2) cluster characterized by knockout studies.
+  - reference: https://www.uniprot.org/uniprotkb/Q9Z4X7
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-29'
+    notes: Unreviewed UniProtKB:Q9Z4X7 is Streptomyces coelicolor SCO3229, a 371 aa
+      4-hydroxyphenylpyruvic acid dioxygenase entry cross-referenced to EMBL AL645882
+      protein CAB38519.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAB38519.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: putative 4-hydroxyphenylpyruvic acid dioxygenase
+    retrieved_on: '2026-09-29'
+    notes: NCBI GenPept CAB38519.1 is the SCO3229 coding sequence from Streptomyces
+      coelicolor A3(2) and cross-references UniProtKB/TrEMBL Q9Z4X7.
+causal_graphs:
+- graph_id: cda3a-hmas-hpg-precursor-supply
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces coelicolor CDA3a biosynthesis graph for HmaS-dependent
+    4-hydroxyphenylglycine precursor supply.
+  nodes:
+  - node_id: p_hydroxyphenylpyruvate
+    label: 4-hydroxyphenylpyruvic acid
+    node_type: PRECURSOR
+    identifier: CHEBI:15999
+    grounding_status: GROUNDED
+  - node_id: hmas
+    label: HmaS
+    node_type: ENZYME
+    identifier: UniProtKB:Q9Z4X7
+    grounding_status: GROUNDED
+  - node_id: s_4_hydroxymandelate
+    label: (S)-4-hydroxymandelate
+    node_type: PRECURSOR
+    identifier: CHEBI:17210
+    grounding_status: GROUNDED
+  - node_id: cda3a
+    label: CDA3a
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-5d539649c4
+    grounding_status: GROUNDED
+  edges:
+  - subject: p_hydroxyphenylpyruvate
+    predicate: is proposed to be oxidatively decarboxylated by
+    object: hmas
+    notes: The direct 4-hydroxyphenylpyruvate to (S)-4-hydroxymandelate assignment
+      is inferred for SCO3229/HmaS.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(02)00252-1
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Deletion of SCO3229 (hmaS)
+      notes: Hojati et al. identified the Streptomyces coelicolor CDA cluster, deleted
+        hmaS/SCO3229, and restored CDA production in the mutant by feeding 4-hydroxymandelate,
+        4-hydroxyphenylglyoxylate, or 4-hydroxyphenylglycine.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000315.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: MIBiG BGC0000315.5 lists CDA3a as a product of the AL645882.2 Streptomyces
+        coelicolor A3(2) cluster characterized by knockout studies.
+    - reference: https://www.uniprot.org/uniprotkb/Q9Z4X7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: Unreviewed UniProtKB:Q9Z4X7 is Streptomyces coelicolor SCO3229, a 371
+        aa 4-hydroxyphenylpyruvic acid dioxygenase entry cross-referenced to EMBL
+        AL645882 protein CAB38519.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAB38519.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: putative 4-hydroxyphenylpyruvic acid dioxygenase
+      retrieved_on: '2026-09-29'
+      notes: NCBI GenPept CAB38519.1 is the SCO3229 coding sequence from Streptomyces
+        coelicolor A3(2) and cross-references UniProtKB/TrEMBL Q9Z4X7.
+  - subject: hmas
+    predicate: is proposed to form
+    object: s_4_hydroxymandelate
+    notes: HmaS is curated as the entry enzyme for the CDA 4-hydroxyphenylglycine
+      precursor pathway.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(02)00252-1
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Deletion of SCO3229 (hmaS)
+      notes: Hojati et al. identified the Streptomyces coelicolor CDA cluster, deleted
+        hmaS/SCO3229, and restored CDA production in the mutant by feeding 4-hydroxymandelate,
+        4-hydroxyphenylglyoxylate, or 4-hydroxyphenylglycine.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000315.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: MIBiG BGC0000315.5 lists CDA3a as a product of the AL645882.2 Streptomyces
+        coelicolor A3(2) cluster characterized by knockout studies.
+    - reference: https://www.uniprot.org/uniprotkb/Q9Z4X7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: Unreviewed UniProtKB:Q9Z4X7 is Streptomyces coelicolor SCO3229, a 371
+        aa 4-hydroxyphenylpyruvic acid dioxygenase entry cross-referenced to EMBL
+        AL645882 protein CAB38519.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAB38519.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: putative 4-hydroxyphenylpyruvic acid dioxygenase
+      retrieved_on: '2026-09-29'
+      notes: NCBI GenPept CAB38519.1 is the SCO3229 coding sequence from Streptomyces
+        coelicolor A3(2) and cross-references UniProtKB/TrEMBL Q9Z4X7.
+  - subject: hmas
+    predicate: is genetically required for biosynthesis of
+    object: cda3a
+    notes: Deletion of hmaS abolished CDA production, and exogenous 4-hydroxymandelate
+      or downstream pathway intermediates restored it.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(02)00252-1
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Deletion of SCO3229 (hmaS)
+      notes: Hojati et al. identified the Streptomyces coelicolor CDA cluster, deleted
+        hmaS/SCO3229, and restored CDA production in the mutant by feeding 4-hydroxymandelate,
+        4-hydroxyphenylglyoxylate, or 4-hydroxyphenylglycine.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000315.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: MIBiG BGC0000315.5 lists CDA3a as a product of the AL645882.2 Streptomyces
+        coelicolor A3(2) cluster characterized by knockout studies.
+    - reference: https://www.uniprot.org/uniprotkb/Q9Z4X7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-29'
+      notes: Unreviewed UniProtKB:Q9Z4X7 is Streptomyces coelicolor SCO3229, a 371
+        aa 4-hydroxyphenylpyruvic acid dioxygenase entry cross-referenced to EMBL
+        AL645882 protein CAB38519.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAB38519.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: putative 4-hydroxyphenylpyruvic acid dioxygenase
+      retrieved_on: '2026-09-29'
+      notes: NCBI GenPept CAB38519.1 is the SCO3229 coding sequence from Streptomyces
+        coelicolor A3(2) and cross-references UniProtKB/TrEMBL Q9Z4X7.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -98,3 +248,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T13:19:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the proposed SCO3229/HmaS 4-hydroxyphenylpyruvate to (S)-4-hydroxymandelate
+    biosynthetic step and a partial CDA3a BIOSYNTHESIS causal graph; grounded CAB38519.1
+    to UniProtKB:Q9Z4X7.
+  llm_assisted: true
