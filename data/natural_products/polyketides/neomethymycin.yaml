@@ -220,6 +220,89 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-334bcd2078
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:O87605
+  enzyme_label: PikC cytochrome P450 monooxygenase
+  substrate: CHEBI:29706
+  product: CHEBI:29656
+  notes: PikC hydroxylates YC-17, ChEBI's 10-deoxymethymycin, at the C-12 position
+    to form neomethymycin; the same enzyme can instead hydroxylate YC-17 at C-10 to
+    form the methymycin congener.
+  evidence:
+  - reference: DOI:10.1016/S1074-5521(98)90293-9
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Purified PikC effectively converts YC-17 into methymycin and neomethymycin
+    notes: Xue et al. inactivated pikC in Streptomyces venezuelae, observed loss of
+      hydroxylated macrolides with YC-17 and narbomycin accumulation, and showed that
+      purified recombinant PikC converts YC-17 into methymycin and neomethymycin in
+      vitro.
+  - reference: https://www.uniprot.org/uniprotkb/O87605
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:O87605 is the 416 aa Streptomyces venezuelae PikC/PicK
+      cytochrome P450 monooxygenase and cross-references the AF079139 sequence submitted
+      with the PikC characterization.
+causal_graphs:
+- graph_id: neomethymycin-pikc-hydroxylation
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces venezuelae neomethymycin biosynthesis graph for
+    PikC-catalyzed YC-17 hydroxylation to neomethymycin.
+  nodes:
+  - node_id: yc_17
+    label: 10-deoxymethymycin
+    node_type: PRECURSOR
+    identifier: CHEBI:29706
+    grounding_status: GROUNDED
+  - node_id: pikc
+    label: PikC cytochrome P450 monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:O87605
+    grounding_status: GROUNDED
+  - node_id: neomethymycin
+    label: neomethymycin
+    node_type: COMPOUND
+    identifier: CHEBI:29656
+    grounding_status: GROUNDED
+  edges:
+  - subject: yc_17
+    predicate: is hydroxylated by
+    object: pikc
+    notes: The 10-deoxymethymycin node is grounded to CHEBI:29706 and represents the
+      YC-17 substrate named in the PikC hydroxylation paper.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(98)90293-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Purified PikC effectively converts YC-17 into methymycin and neomethymycin
+      notes: Xue et al. inactivated pikC in Streptomyces venezuelae, observed loss
+        of hydroxylated macrolides with YC-17 and narbomycin accumulation, and showed
+        that purified recombinant PikC converts YC-17 into methymycin and neomethymycin
+        in vitro.
+    - reference: https://www.uniprot.org/uniprotkb/O87605
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:O87605 is the 416 aa Streptomyces venezuelae PikC/PicK
+        cytochrome P450 monooxygenase and cross-references the AF079139 sequence submitted
+        with the PikC characterization.
+  - subject: pikc
+    predicate: forms
+    object: neomethymycin
+    notes: Purified PikC forms both methymycin and neomethymycin from YC-17; this
+      edge records the neomethymycin branch for this exact CHEBI:29656 record.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(98)90293-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Purified PikC effectively converts YC-17 into methymycin and neomethymycin
+      notes: Xue et al. inactivated pikC in Streptomyces venezuelae, observed loss
+        of hydroxylated macrolides with YC-17 and narbomycin accumulation, and showed
+        that purified recombinant PikC converts YC-17 into methymycin and neomethymycin
+        in vitro.
+    - reference: https://www.uniprot.org/uniprotkb/O87605
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:O87605 is the 416 aa Streptomyces venezuelae PikC/PicK
+        cytochrome P450 monooxygenase and cross-references the AF079139 sequence submitted
+        with the PikC characterization.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -229,3 +312,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T14:44:19Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS pathway step and causal graph for PikC-catalyzed YC-17
+    hydroxylation to neomethymycin, grounded to Streptomyces venezuelae UniProtKB:O87605.
+  llm_assisted: true
