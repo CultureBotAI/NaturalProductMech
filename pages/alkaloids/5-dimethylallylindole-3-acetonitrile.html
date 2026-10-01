@@ -84,7 +84,75 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>SCO7467 5-dimethylallyltryptophan synthase<br><span class="mono">UniProtKB:Q9ADJ2</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:16828 + CHEBI:16057 &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1074/jbc.M112.436451</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>SCO7468 flavin-dependent monooxygenase<br><span class="mono">UniProtKB:Q8CJJ9</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1074/jbc.M112.436451</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: SCO7467 prenylates L-tryptophan at C-5 with dimethylallyl diphosphate to form 5-dimethylallyl-L-tryptophan. The 5-DMAT product is left out of the structured product field because no exact stable chemical CURIE was selected.</p><p class="sub">Step 2: SCO7468 converts 5-DMAT into 5-dimethylallylindole-3-acetaldoxime. Both the 5-DMAT substrate and 5-DMAIAOx product are left out of the structured substrate and product fields because no exact stable chemical CURIEs were selected.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">Partial Streptomyces coelicolor A3(2) graph for SCO7467 prenylation of L-tryptophan, SCO7468 aldoxime formation, and the proposed dehydration to 5-dimethylallylindole-3-acetonitrile.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>L-tryptophan</td>
+  <td>is C-5-prenylated by</td>
+  <td>SCO7467</td>
+  <td>SCO7467 accepts L-tryptophan as the indole substrate for C-5 prenylation.</td>
+  <td class="mono">DOI:10.1074/jbc.M112.436451<br>https://mibig.secondarymetabolites.org/repository/BGC0002128.3/BGC0002128.gbk<br>https://www.uniprot.org/uniprotkb/Q9ADJ2</td>
+</tr>
+<tr>
+  <td>dimethylallyl diphosphate</td>
+  <td>donates dimethylallyl to</td>
+  <td>SCO7467</td>
+  <td>SCO7467 transfers a dimethylallyl group from DMAPP onto L-tryptophan.</td>
+  <td class="mono">DOI:10.1074/jbc.M112.436451<br>https://mibig.secondarymetabolites.org/repository/BGC0002128.3/BGC0002128.gbk<br>https://www.uniprot.org/uniprotkb/Q9ADJ2</td>
+</tr>
+<tr>
+  <td>SCO7467</td>
+  <td>forms</td>
+  <td>5-dimethylallyl-L-tryptophan</td>
+  <td>The SCO7467 prenyltransferase reaction forms the ungrounded intermediate 5-DMAT.</td>
+  <td class="mono">DOI:10.1074/jbc.M112.436451<br>https://mibig.secondarymetabolites.org/repository/BGC0002128.3/BGC0002128.gbk<br>https://www.uniprot.org/uniprotkb/Q9ADJ2</td>
+</tr>
+<tr>
+  <td>5-dimethylallyl-L-tryptophan</td>
+  <td>is converted by</td>
+  <td>SCO7468</td>
+  <td>SCO7468 accepts 5-DMAT for aldoxime formation with NADPH, FAD, and oxygen.</td>
+  <td class="mono">DOI:10.1074/jbc.M112.436451<br>https://mibig.secondarymetabolites.org/repository/BGC0002128.3/BGC0002128.gbk<br>https://www.uniprot.org/uniprotkb/Q8CJJ9</td>
+</tr>
+<tr>
+  <td>SCO7468</td>
+  <td>forms</td>
+  <td>5-dimethylallylindole-3-acetaldoxime</td>
+  <td>The SCO7468 FMO reaction forms the ungrounded aldoxime intermediate 5-DMAIAOx.</td>
+  <td class="mono">DOI:10.1074/jbc.M112.436451<br>https://mibig.secondarymetabolites.org/repository/BGC0002128.3/BGC0002128.gbk<br>https://www.uniprot.org/uniprotkb/Q8CJJ9</td>
+</tr>
+<tr>
+  <td>5-dimethylallylindole-3-acetaldoxime</td>
+  <td>is proposed to dehydrate to</td>
+  <td>5-dimethylallylindole-3-acetonitrile</td>
+  <td>Izumikawa et al. proposed dehydration of 5-DMAIAOx as the terminal unassigned conversion to 5-DMAIAN.</td>
+  <td class="mono">DOI:10.1074/jbc.M112.436451</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

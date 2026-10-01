@@ -90,6 +90,217 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9ADJ2
+  enzyme_label: SCO7467 5-dimethylallyltryptophan synthase
+  substrates:
+  - CHEBI:16828
+  - CHEBI:16057
+  notes: SCO7467 prenylates L-tryptophan at C-5 with dimethylallyl diphosphate to
+    form 5-dimethylallyl-L-tryptophan. The 5-DMAT product is left out of the structured
+    product field because no exact stable chemical CURIE was selected.
+  evidence:
+  - reference: DOI:10.1074/jbc.M112.436451
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: SCO7467 catalyzes the prenylation of L-tryptophan
+    notes: Izumikawa et al. introduced SCO7467 and SCO7468 into Streptomyces lividans,
+      overproduced 5-DMAIAN, and biochemically assigned recombinant SCO7467 to C-5
+      prenylation of L-tryptophan to 5-DMAT.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002128.3/BGC0002128.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0002128.3 places SCO7467 in the Streptomyces coelicolor A3(2)
+      locus, annotates it as the rule-based indole_PTase core biosynthetic CDS, and
+      cross-references protein CAC36059.1 and UniProtKB:Q9ADJ2.
+  - reference: https://www.uniprot.org/uniprotkb/Q9ADJ2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: UniProtKB:Q9ADJ2 is the unreviewed Streptomyces coelicolor A3(2) prenyltransferase
+      entry cross-referenced to EMBL AL645882 protein CAC36059.1.
+- step_number: 2
+  enzyme_id: UniProtKB:Q8CJJ9
+  enzyme_label: SCO7468 flavin-dependent monooxygenase
+  notes: SCO7468 converts 5-DMAT into 5-dimethylallylindole-3-acetaldoxime. Both the
+    5-DMAT substrate and 5-DMAIAOx product are left out of the structured substrate
+    and product fields because no exact stable chemical CURIEs were selected.
+  evidence:
+  - reference: DOI:10.1074/jbc.M112.436451
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: SCO7468 then catalyzes the conversion of 5-DMAT
+    notes: Izumikawa et al. biochemically assigned recombinant SCO7468 as the FMO
+      enzyme that converts 5-DMAT into the aldoxime intermediate 5-DMAIAOx.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002128.3/BGC0002128.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0002128.3 places SCO7468 next to SCO7467 in the Streptomyces coelicolor
+      A3(2) locus, annotates it as an FMO-like biosynthetic-additional CDS, and cross-references
+      protein CAD55403.1 and UniProtKB:Q8CJJ9.
+  - reference: https://www.uniprot.org/uniprotkb/Q8CJJ9
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: UniProtKB:Q8CJJ9 is the unreviewed Streptomyces coelicolor A3(2) flavin-binding
+      monooxygenase entry cross-referenced to EMBL AL645882 protein CAD55403.1.
+causal_graphs:
+- graph_id: 5-dmaian-sco7467-sco7468-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces coelicolor A3(2) graph for SCO7467 prenylation
+    of L-tryptophan, SCO7468 aldoxime formation, and the proposed dehydration to 5-dimethylallylindole-3-acetonitrile.
+  nodes:
+  - node_id: l_tryptophan
+    label: L-tryptophan
+    node_type: PRECURSOR
+    identifier: CHEBI:16828
+    grounding_status: GROUNDED
+  - node_id: dimethylallyl_diphosphate
+    label: dimethylallyl diphosphate
+    node_type: PRECURSOR
+    identifier: CHEBI:16057
+    grounding_status: GROUNDED
+  - node_id: sco7467
+    label: SCO7467
+    node_type: ENZYME
+    identifier: UniProtKB:Q9ADJ2
+    grounding_status: GROUNDED
+  - node_id: five_dmat
+    label: 5-dimethylallyl-L-tryptophan
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: sco7468
+    label: SCO7468
+    node_type: ENZYME
+    identifier: UniProtKB:Q8CJJ9
+    grounding_status: GROUNDED
+  - node_id: five_dmaiaox
+    label: 5-dimethylallylindole-3-acetaldoxime
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: five_dmaian
+    label: 5-dimethylallylindole-3-acetonitrile
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-380600c810
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_tryptophan
+    predicate: is C-5-prenylated by
+    object: sco7467
+    notes: SCO7467 accepts L-tryptophan as the indole substrate for C-5 prenylation.
+    evidence:
+    - reference: DOI:10.1074/jbc.M112.436451
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SCO7467 catalyzes the prenylation of L-tryptophan
+      notes: Izumikawa et al. introduced SCO7467 and SCO7468 into Streptomyces lividans,
+        overproduced 5-DMAIAN, and biochemically assigned recombinant SCO7467 to C-5
+        prenylation of L-tryptophan to 5-DMAT.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002128.3/BGC0002128.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002128.3 places SCO7467 in the Streptomyces coelicolor A3(2)
+        locus, annotates it as the rule-based indole_PTase core biosynthetic CDS,
+        and cross-references protein CAC36059.1 and UniProtKB:Q9ADJ2.
+    - reference: https://www.uniprot.org/uniprotkb/Q9ADJ2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:Q9ADJ2 is the unreviewed Streptomyces coelicolor A3(2) prenyltransferase
+        entry cross-referenced to EMBL AL645882 protein CAC36059.1.
+  - subject: dimethylallyl_diphosphate
+    predicate: donates dimethylallyl to
+    object: sco7467
+    notes: SCO7467 transfers a dimethylallyl group from DMAPP onto L-tryptophan.
+    evidence:
+    - reference: DOI:10.1074/jbc.M112.436451
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SCO7467 catalyzes the prenylation of L-tryptophan
+      notes: Izumikawa et al. introduced SCO7467 and SCO7468 into Streptomyces lividans,
+        overproduced 5-DMAIAN, and biochemically assigned recombinant SCO7467 to C-5
+        prenylation of L-tryptophan to 5-DMAT.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002128.3/BGC0002128.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002128.3 places SCO7467 in the Streptomyces coelicolor A3(2)
+        locus, annotates it as the rule-based indole_PTase core biosynthetic CDS,
+        and cross-references protein CAC36059.1 and UniProtKB:Q9ADJ2.
+    - reference: https://www.uniprot.org/uniprotkb/Q9ADJ2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:Q9ADJ2 is the unreviewed Streptomyces coelicolor A3(2) prenyltransferase
+        entry cross-referenced to EMBL AL645882 protein CAC36059.1.
+  - subject: sco7467
+    predicate: forms
+    object: five_dmat
+    notes: The SCO7467 prenyltransferase reaction forms the ungrounded intermediate
+      5-DMAT.
+    evidence:
+    - reference: DOI:10.1074/jbc.M112.436451
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SCO7467 catalyzes the prenylation of L-tryptophan
+      notes: Izumikawa et al. introduced SCO7467 and SCO7468 into Streptomyces lividans,
+        overproduced 5-DMAIAN, and biochemically assigned recombinant SCO7467 to C-5
+        prenylation of L-tryptophan to 5-DMAT.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002128.3/BGC0002128.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002128.3 places SCO7467 in the Streptomyces coelicolor A3(2)
+        locus, annotates it as the rule-based indole_PTase core biosynthetic CDS,
+        and cross-references protein CAC36059.1 and UniProtKB:Q9ADJ2.
+    - reference: https://www.uniprot.org/uniprotkb/Q9ADJ2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:Q9ADJ2 is the unreviewed Streptomyces coelicolor A3(2) prenyltransferase
+        entry cross-referenced to EMBL AL645882 protein CAC36059.1.
+  - subject: five_dmat
+    predicate: is converted by
+    object: sco7468
+    notes: SCO7468 accepts 5-DMAT for aldoxime formation with NADPH, FAD, and oxygen.
+    evidence:
+    - reference: DOI:10.1074/jbc.M112.436451
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SCO7468 then catalyzes the conversion of 5-DMAT
+      notes: Izumikawa et al. biochemically assigned recombinant SCO7468 as the FMO
+        enzyme that converts 5-DMAT into the aldoxime intermediate 5-DMAIAOx.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002128.3/BGC0002128.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002128.3 places SCO7468 next to SCO7467 in the Streptomyces
+        coelicolor A3(2) locus, annotates it as an FMO-like biosynthetic-additional
+        CDS, and cross-references protein CAD55403.1 and UniProtKB:Q8CJJ9.
+    - reference: https://www.uniprot.org/uniprotkb/Q8CJJ9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:Q8CJJ9 is the unreviewed Streptomyces coelicolor A3(2) flavin-binding
+        monooxygenase entry cross-referenced to EMBL AL645882 protein CAD55403.1.
+  - subject: sco7468
+    predicate: forms
+    object: five_dmaiaox
+    notes: The SCO7468 FMO reaction forms the ungrounded aldoxime intermediate 5-DMAIAOx.
+    evidence:
+    - reference: DOI:10.1074/jbc.M112.436451
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SCO7468 then catalyzes the conversion of 5-DMAT
+      notes: Izumikawa et al. biochemically assigned recombinant SCO7468 as the FMO
+        enzyme that converts 5-DMAT into the aldoxime intermediate 5-DMAIAOx.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002128.3/BGC0002128.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002128.3 places SCO7468 next to SCO7467 in the Streptomyces
+        coelicolor A3(2) locus, annotates it as an FMO-like biosynthetic-additional
+        CDS, and cross-references protein CAD55403.1 and UniProtKB:Q8CJJ9.
+    - reference: https://www.uniprot.org/uniprotkb/Q8CJJ9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:Q8CJJ9 is the unreviewed Streptomyces coelicolor A3(2) flavin-binding
+        monooxygenase entry cross-referenced to EMBL AL645882 protein CAD55403.1.
+  - subject: five_dmaiaox
+    predicate: is proposed to dehydrate to
+    object: five_dmaian
+    notes: Izumikawa et al. proposed dehydration of 5-DMAIAOx as the terminal unassigned
+      conversion to 5-DMAIAN.
+    evidence:
+    - reference: DOI:10.1074/jbc.M112.436451
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: dehydration of 5-DMAIAOx presumably occurs to yield 5-DMAIAN
+      notes: The source observed 5-DMAIAN after heterologous expression of SCO7467
+        and SCO7468 and proposed, but did not assign an enzyme for, the aldoxime dehydration.
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -99,3 +310,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T08:29:27Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added exact UniProt-grounded Streptomyces coelicolor A3(2) SCO7467 and
+    SCO7468 biosynthetic_pathway steps plus a BIOSYNTHESIS causal graph from L-tryptophan
+    and dimethylallyl diphosphate to 5-dimethylallylindole-3-acetonitrile.
+  llm_assisted: true
