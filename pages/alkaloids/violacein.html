@@ -94,7 +94,61 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>VioD protodeoxyviolaceinate monooxygenase<br><span class="mono">UniProtKB:Q9S3U8</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; CHEBI:131916</td>
+  <td class="mono">DOI:10.1021/bi061998z</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>VioC violacein synthase<br><span class="mono">UniProtKB:Q9S3U9</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:131916 &rarr; CHEBI:131914</td>
+  <td class="mono">DOI:10.1021/bi061998z</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: This partial late-pathway step follows the Chromobacterium violaceum in vitro pathway in which VioD hydroxylates the uncommitted prodeoxyviolacein intermediate to proviolacein before VioC completes violacein formation. The prodeoxyviolacein substrate is left out of the structured substrate field because no prodeoxyviolacein CURIE is committed in this corpus.</p><p class="sub">Step 2: This final Chromobacterium violaceum step connects proviolacein to exact CHEBI:131914 violacein. UniProt also annotates Q9S3U9 with RHEA:49120 and RHEA:49652 for oxidizing the carboxylate protoviolaceinate form, but those Rhea reactions do not use the same neutral pyrrolidone substrate and product captured here.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Late Chromobacterium violaceum violacein biosynthesis in which VioD hydroxylates prodeoxyviolacein to proviolacein and VioC completes violacein formation.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>prodeoxyviolacein</td>
+  <td>is hydroxylated by</td>
+  <td>VioD</td>
+  <td>VioD installs the 5-position hydroxy group before VioC acts on the second indole ring.</td>
+  <td class="mono">DOI:10.1021/bi061998z<br>https://www.uniprot.org/uniprotkb/Q9S3U8</td>
+</tr>
+<tr>
+  <td>VioD</td>
+  <td>forms</td>
+  <td>proviolacein</td>
+  <td>The immediate VioD product in the reconstituted Chromobacterium violaceum pathway is proviolacein.</td>
+  <td class="mono">DOI:10.1021/bi061998z<br>https://www.uniprot.org/uniprotkb/Q9S3U8</td>
+</tr>
+<tr>
+  <td>proviolacein</td>
+  <td>is hydroxylated by</td>
+  <td>VioC</td>
+  <td>VioC catalyzes the final oxygenation after VioD-mediated proviolacein formation.</td>
+  <td class="mono">DOI:10.1021/bi061998z<br>https://www.uniprot.org/uniprotkb/Q9S3U9</td>
+</tr>
+<tr>
+  <td>VioC</td>
+  <td>forms</td>
+  <td>violacein</td>
+  <td>VioC completes formation of the purple chromophore in the late violacein pathway.</td>
+  <td class="mono">DOI:10.1021/bi061998z<br>https://www.uniprot.org/uniprotkb/Q9S3U9</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

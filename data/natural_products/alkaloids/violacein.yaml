@@ -120,6 +120,159 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-0c549a2d5f
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9S3U8
+  enzyme_label: VioD protodeoxyviolaceinate monooxygenase
+  product: CHEBI:131916
+  notes: This partial late-pathway step follows the Chromobacterium violaceum in vitro
+    pathway in which VioD hydroxylates the uncommitted prodeoxyviolacein intermediate
+    to proviolacein before VioC completes violacein formation. The prodeoxyviolacein
+    substrate is left out of the structured substrate field because no prodeoxyviolacein
+    CURIE is committed in this corpus.
+  evidence:
+  - reference: DOI:10.1021/bi061998z
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: purified five contiguously encoded proteins VioA-E after expression in
+      Escherichia coli
+    notes: Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro
+      and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence
+      completes violacein formation from a prodeoxyviolacein intermediate.
+  - reference: https://www.uniprot.org/uniprotkb/Q9S3U8
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:Q9S3U8 is Chromobacterium violaceum strain ATCC 12472/JCM
+      1249 VioD, gene vioD/CV_3271, and cross-references EMBL AF172851 protein AAD51811.1,
+      EMBL AB032799 protein BAA84785.1, and EMBL AE016825 protein AAQ60935.1.
+- step_number: 2
+  enzyme_id: UniProtKB:Q9S3U9
+  enzyme_label: VioC violacein synthase
+  substrate: CHEBI:131916
+  product: CHEBI:131914
+  notes: This final Chromobacterium violaceum step connects proviolacein to exact
+    CHEBI:131914 violacein. UniProt also annotates Q9S3U9 with RHEA:49120 and RHEA:49652
+    for oxidizing the carboxylate protoviolaceinate form, but those Rhea reactions
+    do not use the same neutral pyrrolidone substrate and product captured here.
+  evidence:
+  - reference: DOI:10.1021/bi061998z
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: purified five contiguously encoded proteins VioA-E after expression in
+      Escherichia coli
+    notes: Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro
+      and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence
+      completes violacein formation from a prodeoxyviolacein intermediate.
+  - reference: https://www.uniprot.org/uniprotkb/Q9S3U9
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:Q9S3U9 is Chromobacterium violaceum strain ATCC 12472/JCM
+      1249 VioC, gene vioC/CV_3272, and cross-references EMBL AF172851 protein AAD51810.1,
+      EMBL AB032799 protein BAA84784.1, and EMBL AE016825 protein AAQ60936.1.
+causal_graphs:
+- graph_id: violacein-viocd-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Late Chromobacterium violaceum violacein biosynthesis in which VioD
+    hydroxylates prodeoxyviolacein to proviolacein and VioC completes violacein formation.
+  nodes:
+  - node_id: prodeoxyviolacein
+    label: prodeoxyviolacein
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: viod
+    label: VioD
+    node_type: ENZYME
+    identifier: UniProtKB:Q9S3U8
+    grounding_status: GROUNDED
+  - node_id: proviolacein
+    label: proviolacein
+    node_type: PRECURSOR
+    identifier: CHEBI:131916
+    grounding_status: GROUNDED
+  - node_id: vioc
+    label: VioC
+    node_type: ENZYME
+    identifier: UniProtKB:Q9S3U9
+    grounding_status: GROUNDED
+  - node_id: violacein
+    label: violacein
+    node_type: COMPOUND
+    identifier: CHEBI:131914
+    grounding_status: GROUNDED
+  edges:
+  - subject: prodeoxyviolacein
+    predicate: is hydroxylated by
+    object: viod
+    notes: VioD installs the 5-position hydroxy group before VioC acts on the second
+      indole ring.
+    evidence:
+    - reference: DOI:10.1021/bi061998z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: purified five contiguously encoded proteins VioA-E after expression
+        in Escherichia coli
+      notes: Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro
+        and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence
+        completes violacein formation from a prodeoxyviolacein intermediate.
+    - reference: https://www.uniprot.org/uniprotkb/Q9S3U8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:Q9S3U8 is Chromobacterium violaceum strain ATCC 12472/JCM
+        1249 VioD, gene vioD/CV_3271, and cross-references EMBL AF172851 protein AAD51811.1,
+        EMBL AB032799 protein BAA84785.1, and EMBL AE016825 protein AAQ60935.1.
+  - subject: viod
+    predicate: forms
+    object: proviolacein
+    notes: The immediate VioD product in the reconstituted Chromobacterium violaceum
+      pathway is proviolacein.
+    evidence:
+    - reference: DOI:10.1021/bi061998z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: purified five contiguously encoded proteins VioA-E after expression
+        in Escherichia coli
+      notes: Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro
+        and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence
+        completes violacein formation from a prodeoxyviolacein intermediate.
+    - reference: https://www.uniprot.org/uniprotkb/Q9S3U8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:Q9S3U8 is Chromobacterium violaceum strain ATCC 12472/JCM
+        1249 VioD, gene vioD/CV_3271, and cross-references EMBL AF172851 protein AAD51811.1,
+        EMBL AB032799 protein BAA84785.1, and EMBL AE016825 protein AAQ60935.1.
+  - subject: proviolacein
+    predicate: is hydroxylated by
+    object: vioc
+    notes: VioC catalyzes the final oxygenation after VioD-mediated proviolacein formation.
+    evidence:
+    - reference: DOI:10.1021/bi061998z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: purified five contiguously encoded proteins VioA-E after expression
+        in Escherichia coli
+      notes: Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro
+        and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence
+        completes violacein formation from a prodeoxyviolacein intermediate.
+    - reference: https://www.uniprot.org/uniprotkb/Q9S3U9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:Q9S3U9 is Chromobacterium violaceum strain ATCC 12472/JCM
+        1249 VioC, gene vioC/CV_3272, and cross-references EMBL AF172851 protein AAD51810.1,
+        EMBL AB032799 protein BAA84784.1, and EMBL AE016825 protein AAQ60936.1.
+  - subject: vioc
+    predicate: forms
+    object: violacein
+    notes: VioC completes formation of the purple chromophore in the late violacein
+      pathway.
+    evidence:
+    - reference: DOI:10.1021/bi061998z
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: purified five contiguously encoded proteins VioA-E after expression
+        in Escherichia coli
+      notes: Balibar and Walsh reconstituted Chromobacterium violaceum VioA-E in vitro
+        and demonstrated that the VioD then VioC flavin-dependent oxygenase sequence
+        completes violacein formation from a prodeoxyviolacein intermediate.
+    - reference: https://www.uniprot.org/uniprotkb/Q9S3U9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:Q9S3U9 is Chromobacterium violaceum strain ATCC 12472/JCM
+        1249 VioC, gene vioC/CV_3272, and cross-references EMBL AF172851 protein AAD51810.1,
+        EMBL AB032799 protein BAA84784.1, and EMBL AE016825 protein AAQ60936.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -129,3 +282,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T07:44:27Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added exact UniProt-grounded Chromobacterium violaceum VioD and VioC late
+    violacein biosynthetic_pathway steps and a BIOSYNTHESIS causal graph, while leaving
+    prodeoxyviolacein ungrounded because this corpus has no committed CURIE for that
+    intermediate.
+  llm_assisted: true
