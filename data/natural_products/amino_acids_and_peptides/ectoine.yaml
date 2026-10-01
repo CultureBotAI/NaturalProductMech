@@ -543,6 +543,112 @@ discussions:
     BGC0000854, BGC0000855, BGC0000856, BGC0000857, BGC0000858, BGC0000859, BGC0000860,
     BGC0002052. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q6QUY8
+  enzyme_label: ThpC ectoine synthase
+  reaction_id: RHEA:17281
+  substrate: CHEBI:58929
+  product: CHEBI:58515
+  proposed: true
+  notes: BGC0000853 thpC encodes the exact Streptomyces anulatus/Streptomyces chrysomallus
+    protein Q6QUY8; its EctC assignment and RHEA:17281 ring-closure reaction are inferred
+    from the ectoine_synt domain and UniProt family annotation rather than a direct
+    ThpC enzyme assay.
+  evidence:
+  - reference: DOI:10.1128/AEM.70.5.3130-3132.2004
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: The nucleotide sequence of the thp genes from S. chrysomallus (ATCC 11523)
+      has been deposited
+    notes: Prabhu et al. mapped the Streptomyces chrysomallus ectoine/hydroxyectoine
+      thp locus and deposited GenBank AY524544; the same entry is imported by MIBiG
+      BGC0000853 as Streptomyces anulatus.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000853.3/
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG entry version 3 links BGC0000853 to ectoine biosynthesis from GenBank
+      AY524544; the antiSMASH GenBank export annotates the AY524544 protein AAS02096.1
+      as thpC, ectoine cyclase.
+  - reference: https://www.uniprot.org/uniprotkb/Q6QUY8
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:Q6QUY8 is the Streptomyces anulatus (Streptomyces chrysomallus)
+      ectC/thpC gene product cross-referenced to EMBL AY524544 protein AAS02096.1;
+      UniProt annotates the RHEA:17281 ectoine synthase activity by homology.
+causal_graphs:
+- graph_id: ectoine-thpc-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Proposed Streptomyces anulatus/"S. chrysomallus" ThpC-catalyzed terminal
+    ring closure from N-gamma-acetyl-L-2,4-diaminobutanoate to L-ectoine.
+  nodes:
+  - node_id: n_acetyl_diaminobutanoate
+    label: (2S)-4-acetamido-2-aminobutanoate
+    node_type: PRECURSOR
+    identifier: CHEBI:58929
+    grounding_status: GROUNDED
+  - node_id: thpc
+    label: ThpC
+    node_type: ENZYME
+    identifier: UniProtKB:Q6QUY8
+    grounding_status: GROUNDED
+  - node_id: l_ectoine
+    label: L-ectoine
+    node_type: COMPOUND
+    identifier: CHEBI:58515
+    grounding_status: GROUNDED
+  edges:
+  - subject: n_acetyl_diaminobutanoate
+    predicate: is cyclized by
+    object: thpc
+    notes: The exact BGC0000853 ThpC protein is grounded to UniProtKB:Q6QUY8, while
+      the catalytic assignment is inferred from antiSMASH and UniProt family annotation.
+    evidence:
+    - reference: DOI:10.1128/AEM.70.5.3130-3132.2004
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: The nucleotide sequence of the thp genes from S. chrysomallus (ATCC
+        11523) has been deposited
+      notes: Prabhu et al. mapped the Streptomyces chrysomallus ectoine/hydroxyectoine
+        thp locus and deposited GenBank AY524544; the same entry is imported by MIBiG
+        BGC0000853 as Streptomyces anulatus.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000853.3/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG entry version 3 links BGC0000853 to ectoine biosynthesis from GenBank
+        AY524544; the antiSMASH GenBank export annotates the AY524544 protein AAS02096.1
+        as thpC, ectoine cyclase.
+    - reference: https://www.uniprot.org/uniprotkb/Q6QUY8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:Q6QUY8 is the Streptomyces anulatus (Streptomyces
+        chrysomallus) ectC/thpC gene product cross-referenced to EMBL AY524544 protein
+        AAS02096.1; UniProt annotates the RHEA:17281 ectoine synthase activity by
+        homology.
+  - subject: thpc
+    predicate: forms
+    object: l_ectoine
+    notes: RHEA:17281 forms the CHEBI:58515 zwitterion; this record keeps a minted
+      identifier because ChEBI:27592 and CHEBI:58515 intentionally share an InChIKey.
+    evidence:
+    - reference: DOI:10.1128/AEM.70.5.3130-3132.2004
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: The nucleotide sequence of the thp genes from S. chrysomallus (ATCC
+        11523) has been deposited
+      notes: Prabhu et al. mapped the Streptomyces chrysomallus ectoine/hydroxyectoine
+        thp locus and deposited GenBank AY524544; the same entry is imported by MIBiG
+        BGC0000853 as Streptomyces anulatus.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000853.3/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG entry version 3 links BGC0000853 to ectoine biosynthesis from GenBank
+        AY524544; the antiSMASH GenBank export annotates the AY524544 protein AAS02096.1
+        as thpC, ectoine cyclase.
+    - reference: https://www.uniprot.org/uniprotkb/Q6QUY8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:Q6QUY8 is the Streptomyces anulatus (Streptomyces
+        chrysomallus) ectC/thpC gene product cross-referenced to EMBL AY524544 protein
+        AAS02096.1; UniProt annotates the RHEA:17281 ectoine synthase activity by
+        homology.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -552,3 +658,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T05:42:24Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a proposed terminal Streptomyces anulatus/Streptomyces chrysomallus
+    ThpC ectoine synthase pathway step and BIOSYNTHESIS causal graph; grounded BGC0000853
+    thpC to UniProtKB:Q6QUY8 through EMBL AY524544 protein AAS02096.1; and linked
+    the inferred terminal ring-closure reaction to RHEA:17281.
+  llm_assisted: true
