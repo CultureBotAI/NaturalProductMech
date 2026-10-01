@@ -80,7 +80,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>BytO cytochrome P450<br><span class="mono">UniProtKB:A0A891LYB2</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2020.11.009</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: BytO installs the Tyr1-His3 biaryl crosslink in the MRYFH precursor peptide. Final processing from the crosslinked MRYFH precursor to mature N-acetyl-Tyr-Phe-His biarylitide YFH remains unassigned in this partial graph.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial Planomonospora sp. ID107089 biarylitide YFH biosynthesis graph for BytO-catalyzed Tyr1-His3 biaryl coupling of the MRYFH precursor.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>MRYFH precursor peptide</td>
+  <td>is Tyr1-His3 biaryl-coupled by</td>
+  <td>BytO cytochrome P450</td>
+  <td>MITE records BytO as catalyzing biaryl bond formation between Tyr1 and His3 of the MRYFH precursor peptide.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2020.11.009<br>https://mite.lisc.univie.ac.at/repository/MITE0000174<br>https://www.ncbi.nlm.nih.gov/nuccore/MW201789.1<br>https://mibig.secondarymetabolites.org/repository/BGC0002099.3/BGC0002099.gbk<br>https://www.uniprot.org/uniprotkb/A0A891LYB2</td>
+</tr>
+<tr>
+  <td>BytO cytochrome P450</td>
+  <td>forms</td>
+  <td>biaryl-linked MRYFH precursor</td>
+  <td>This single curated graph stops at the crosslinked precursor because the generic host processing reactions to mature biarylitide YFH are not assigned to a named enzyme.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2020.11.009<br>https://mite.lisc.univie.ac.at/repository/MITE0000174<br>https://www.ncbi.nlm.nih.gov/nuccore/MW201789.1<br>https://mibig.secondarymetabolites.org/repository/BGC0002099.3/BGC0002099.gbk<br>https://www.uniprot.org/uniprotkb/A0A891LYB2</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
