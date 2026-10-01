@@ -93,6 +93,96 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: PpzM phenazine N-methyltransferase
+  product: naturalproductmech:mibig-4acf6c9688
+  proposed: true
+  notes: This partial endophenazine B pathway captures the genetically implicated
+    Streptomyces anulatus 9663 PpzM N-methyltransferase. ppzM deletion abolished endophenazine
+    B production, but purified PpzM did not methylate PCA or dihydro-PCA with S-adenosylmethionine
+    in the inspected in vitro assay; the exact methyl acceptor and any partner protein
+    are unresolved. PpzM is left without enzyme_id because the exact GenPept CAX48665.1
+    sequence no longer resolves in live UniProtKB.
+  evidence:
+  - reference: DOI:10.3762/BJOC.8.57
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: production of endophenazine B had been abolished by the ppzM deletion
+    notes: Saleh et al. deleted ppzM from the Streptomyces anulatus 9663 endophenazine
+      cluster in the heterologous S. coelicolor M512 ppzOS04 production system and
+      used HPLC-ESI-MS to show that the resulting ppzOS26 strain no longer produced
+      endophenazine B.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN178498.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: gene="ppzM"
+    retrieved_on: '2026-10-01'
+    notes: GenBank FN178498.1 maps Streptomyces anulatus 9663 ppzM to the reverse-strand
+      10210..11232 CDS, assigns protein_id CAX48665.1, and carries the historical
+      UniProtKB/TrEMBL cross-reference C4PWB1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAX48665.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: putative phenazine N-methyltransferase
+    retrieved_on: '2026-10-01'
+    notes: NCBI GenPept CAX48665.1 is the 340 aa Streptomyces anulatus 9663 ppzM coding
+      sequence from FN178498.1 and is not represented by a live current UniProtKB
+      accession.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001080.5/BGC0001080.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="CAX48665.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0001080.5 places ppzM at 10210..11232 on the Streptomyces anulatus
+      endophenazine cluster and annotates the CDS as CAX48665.1 phenazine N-methyltransferase.
+causal_graphs:
+- graph_id: endophenazine-b-ppzm-n-methylation
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces anulatus 9663 endophenazine B biosynthesis graph
+    for the ppzM-dependent N-methylation branch.
+  nodes:
+  - node_id: ppzm
+    label: PpzM
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: endophenazine_b
+    label: endophenazine B
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-4acf6c9688
+    grounding_status: GROUNDED
+  edges:
+  - subject: ppzm
+    predicate: is required for formation of
+    object: endophenazine_b
+    notes: The genetic deletion identifies ppzM as required for formation of the N-methylated
+      product. Because the exact methyl acceptor and in vitro coupling partner were
+      not identified, this graph does not assert a direct isolated-substrate reaction
+      or a Rhea ID.
+    evidence:
+    - reference: DOI:10.3762/BJOC.8.57
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: production of endophenazine B had been abolished by the ppzM deletion
+      notes: Saleh et al. deleted ppzM from the Streptomyces anulatus 9663 endophenazine
+        cluster in the heterologous S. coelicolor M512 ppzOS04 production system and
+        used HPLC-ESI-MS to show that the resulting ppzOS26 strain no longer produced
+        endophenazine B.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN178498.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: gene="ppzM"
+      retrieved_on: '2026-10-01'
+      notes: GenBank FN178498.1 maps Streptomyces anulatus 9663 ppzM to the reverse-strand
+        10210..11232 CDS, assigns protein_id CAX48665.1, and carries the historical
+        UniProtKB/TrEMBL cross-reference C4PWB1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAX48665.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: putative phenazine N-methyltransferase
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept CAX48665.1 is the 340 aa Streptomyces anulatus 9663 ppzM
+        coding sequence from FN178498.1 and is not represented by a live current UniProtKB
+        accession.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001080.5/BGC0001080.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="CAX48665.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001080.5 places ppzM at 10210..11232 on the Streptomyces anulatus
+        endophenazine cluster and annotates the CDS as CAX48665.1 phenazine N-methyltransferase.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -102,3 +192,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T15:33:06Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the genetically implicated Streptomyces anulatus PpzM phenazine N-methyltransferase
+    as a proposed partial endophenazine B pathway step and a ppzM-dependent BIOSYNTHESIS
+    graph, grounding the exact protein to GenPept CAX48665.1 while leaving enzyme_id
+    empty because the historical UniProtKB/TrEMBL C4PWB1 entry is inactive.
+  llm_assisted: true
