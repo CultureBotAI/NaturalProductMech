@@ -206,28 +206,35 @@ derived from a source. This is what the rest of the record exists to support.</p
 <div class="scroll"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
-  <td>1</td>
-  <td>PatE patulin synthase<br><span class="mono">UniProtKB:A0A075TRK9</span></td>
-  <td class="mono">RHEA:62228</td>
-  <td class="mono">CHEBI:145112 + CHEBI:13193 &rarr; CHEBI:74926 + CHEBI:17499</td>
-  <td class="mono">DOI:10.1111/1462-2920.14542</td>
-</tr>
-<tr>
-  <td>2</td>
+  <td>30</td>
   <td>PatH cytochrome P450 monooxygenase<br><span class="mono">UniProtKB:A0A075TRL5</span></td>
   <td class="mono">RHEA:62209</td>
   <td class="mono">CHEBI:17231 &rarr; CHEBI:17069</td>
   <td class="mono">DOI:10.1111/1462-2920.14542</td>
 </tr>
 <tr>
-  <td>3</td>
+  <td>40</td>
   <td>PatI cytochrome P450 monooxygenase<br><span class="mono">UniProtKB:A0A075TMP8</span></td>
   <td class="mono">RHEA:62213</td>
   <td class="mono">CHEBI:17069 &rarr; CHEBI:5325</td>
   <td class="mono">DOI:10.1111/1462-2920.14542</td>
 </tr>
+<tr>
+  <td>90</td>
+  <td>PatD alcohol dehydrogenase<br><span class="mono">UniProtKB:A0A075TMP0</span></td>
+  <td class="mono">RHEA:62225</td>
+  <td class="mono">CHEBI:145111 + CHEBI:57783 + CHEBI:15378 &rarr; CHEBI:145112 + CHEBI:58349</td>
+  <td class="mono">DOI:10.1111/1462-2920.14542</td>
+</tr>
+<tr>
+  <td>100</td>
+  <td>PatE patulin synthase<br><span class="mono">UniProtKB:A0A075TRK9</span></td>
+  <td class="mono">RHEA:62228</td>
+  <td class="mono">CHEBI:145112 + CHEBI:13193 &rarr; CHEBI:74926 + CHEBI:17499</td>
+  <td class="mono">DOI:10.1111/1462-2920.14542</td>
+</tr>
 </table></div>
-<p class="sub">Step 1: PatE oxidizes (E)-ascladiol to patulin in the terminal step of P. expansum patulin biosynthesis; RHEA:62228 grounds the generic electron-acceptor reaction.</p><p class="sub">Step 2: PatH hydroxylates m-cresol to 3-hydroxybenzyl alcohol in the Penicillium expansum patulin pathway. This partial pathway step leaves upstream PatG formation of m-cresol uncurated.</p><p class="sub">Step 3: PatI hydroxylates 3-hydroxybenzyl alcohol to gentisyl alcohol in the Penicillium expansum patulin pathway. This partial pathway step leaves earlier m-cresol formation and the later PatJ/PatO/PatN/PatF/PatD steps from gentisyl alcohol to (E)-ascladiol uncurated.</p>
+<p class="sub">Step 30: PatH hydroxylates m-cresol to 3-hydroxybenzyl alcohol in the Penicillium expansum patulin pathway. This partial pathway step leaves upstream PatG formation of m-cresol uncurated.</p><p class="sub">Step 40: PatI hydroxylates 3-hydroxybenzyl alcohol to gentisyl alcohol in the Penicillium expansum patulin pathway. This partial pathway step leaves earlier m-cresol formation and the later PatJ/PatO/PatN/PatF steps from gentisyl alcohol to neopatulin uncurated.</p><p class="sub">Step 90: PatD opens and reduces neopatulin to (E)-ascladiol in the Penicillium expansum patulin pathway. This partial pathway step leaves the PatJ, PatO, PatN, and PatF conversions from gentisyl alcohol to neopatulin uncurated.</p><p class="sub">Step 100: PatE oxidizes (E)-ascladiol to patulin in the terminal step of P. expansum patulin biosynthesis; RHEA:62228 grounds the generic electron-acceptor reaction.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
 <p class="sub">Partial P. expansum patulin biosynthesis graph for PatE-catalyzed terminal oxidation of (E)-ascladiol.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
@@ -284,6 +291,26 @@ by the corpus tests.</p>
   <td>3-hydroxybenzyl alcohol</td>
   <td>This graph stops at 3-hydroxybenzyl alcohol because this curation covers the PatH reaction.</td>
   <td class="mono">DOI:10.1111/1462-2920.14542<br>https://mite.lisc.univie.ac.at/repository/MITE0000335<br>https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk<br>https://www.uniprot.org/uniprotkb/A0A075TRL5<br>https://www.ncbi.nlm.nih.gov/protein/AIG62144.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial P. expansum patulin biosynthesis graph for PatD-catalyzed ring opening and reduction of neopatulin to (E)-ascladiol.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>neopatulin</td>
+  <td>is reduced by</td>
+  <td>PatD alcohol dehydrogenase</td>
+  <td>PatD opens and reduces neopatulin in the NADPH-dependent RHEA:62225 reaction.</td>
+  <td class="mono">DOI:10.1111/1462-2920.14542<br>https://mite.lisc.univie.ac.at/repository/MITE0000365<br>https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk<br>https://www.uniprot.org/uniprotkb/A0A075TMP0<br>https://www.ncbi.nlm.nih.gov/protein/AIG62135.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+<tr>
+  <td>PatD alcohol dehydrogenase</td>
+  <td>forms</td>
+  <td>(E)-ascladiol</td>
+  <td>PatD forms (E)-ascladiol, the substrate of the terminal PatE patulin synthase reaction.</td>
+  <td class="mono">DOI:10.1111/1462-2920.14542<br>https://mite.lisc.univie.ac.at/repository/MITE0000365<br>https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk<br>https://www.uniprot.org/uniprotkb/A0A075TMP0<br>https://www.ncbi.nlm.nih.gov/protein/AIG62135.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
