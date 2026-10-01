@@ -199,7 +199,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>PsSDR1 noscapine synthase<br><span class="mono">UniProtKB:I3PLR3</span></td>
+  <td class="mono">RHEA:57404</td>
+  <td class="mono">CHEBI:141667 + CHEBI:57540 &rarr; CHEBI:73237 + CHEBI:57945 + CHEBI:15378</td>
+  <td class="mono">DOI:10.1038/ncomms12137</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Papaver somniferum PsSDR1 oxidizes narcotine hemiacetal with NAD(+) to noscapine, NADH and H(+). This terminal SDR1 step records RHEA:57404 and leaves the upstream PsMT2/PsMT3 and PsCXE1 formation of narcotine hemiacetal unexpanded.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Papaver somniferum PsSDR1 oxidizes narcotine hemiacetal to noscapine in the late noscapine biosynthetic pathway.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>narcotine hemiacetal</td>
+  <td>is dehydrogenated by</td>
+  <td>PsSDR1</td>
+  <td>RHEA:57404 places narcotine hemiacetal on the substrate side of the SDR1/NAD(+) noscapine synthase reaction.</td>
+  <td class="mono">DOI:10.1038/ncomms12137<br>https://www.uniprot.org/uniprotkb/I3PLR3<br>https://www.rhea-db.org/rhea/57404</td>
+</tr>
+<tr>
+  <td>PsSDR1</td>
+  <td>forms</td>
+  <td>noscapine</td>
+  <td>RHEA:57404 places noscapine on the product side of the SDR1/NAD(+) noscapine synthase reaction.</td>
+  <td class="mono">DOI:10.1038/ncomms12137<br>https://www.uniprot.org/uniprotkb/I3PLR3<br>https://www.rhea-db.org/rhea/57404</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
