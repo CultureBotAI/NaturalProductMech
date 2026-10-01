@@ -94,7 +94,61 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>VioD protodeoxyviolaceinate monooxygenase<br><span class="mono">UniProtKB:Q9S3U8</span></td>
+  <td class="mono">RHEA:49372</td>
+  <td class="mono">CHEBI:90907 &rarr; CHEBI:90898</td>
+  <td class="mono">DOI:10.1021/bi061998z</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>VioC violacein synthase<br><span class="mono">UniProtKB:Q9S3U9</span></td>
+  <td class="mono">RHEA:49120</td>
+  <td class="mono">CHEBI:90898 &rarr; CHEBI:90900</td>
+  <td class="mono">DOI:10.1021/bi061998z</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: This partial Chromobacterium violaceum VioD/VioC pathway follows the enzymatic carboxylate branch from protodeoxyviolaceinate to protoviolaceinate, rather than the downstream neutral proviolacein scaffold.</p><p class="sub">Step 2: This curated step stops at RHEA:49120 violaceinate. The later connection to neutral CHEBI:131914 violacein is left unexpanded because no exact enzymatic Rhea reaction connects the carboxylate and pyrrolidone forms.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Partial Chromobacterium violaceum VioD/VioC enzymatic carboxylate branch from protodeoxyviolaceinate to violaceinate.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>protodeoxyviolaceinate</td>
+  <td>is hydroxylated by</td>
+  <td>VioD</td>
+  <td>VioD catalyzes the RHEA:49372 hydroxylation of protodeoxyviolaceinate to protoviolaceinate.</td>
+  <td class="mono">DOI:10.1021/bi061998z<br>DOI:10.1039/b705358d<br>https://www.uniprot.org/uniprotkb/Q9S3U8</td>
+</tr>
+<tr>
+  <td>VioD</td>
+  <td>forms</td>
+  <td>protoviolaceinate</td>
+  <td>The VioD carboxylate product is the major pH 7.3 microspecies of protoviolaceinic acid.</td>
+  <td class="mono">DOI:10.1021/bi061998z<br>DOI:10.1039/b705358d<br>https://www.uniprot.org/uniprotkb/Q9S3U8</td>
+</tr>
+<tr>
+  <td>protoviolaceinate</td>
+  <td>is hydroxylated by</td>
+  <td>VioC</td>
+  <td>VioC catalyzes the RHEA:49120 hydroxylation of protoviolaceinate to violaceinate.</td>
+  <td class="mono">DOI:10.1021/bi061998z<br>DOI:10.1039/b705358d<br>https://www.uniprot.org/uniprotkb/Q9S3U9</td>
+</tr>
+<tr>
+  <td>VioC</td>
+  <td>forms</td>
+  <td>violaceinate</td>
+  <td>The VioC carboxylate product is violaceinate rather than neutral violacein.</td>
+  <td class="mono">DOI:10.1021/bi061998z<br>DOI:10.1039/b705358d<br>https://www.uniprot.org/uniprotkb/Q9S3U9</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
