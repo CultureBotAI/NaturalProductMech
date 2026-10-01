@@ -79,7 +79,110 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>GupB NRPS-like carboxylic acid reductase</td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:17895 &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1039/D0SC06135B</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>GupA F420H2-dependent reductase</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1039/D0SC06135B</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>GupC cytochrome P450</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1039/D0SC06135B</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>GupD cytochrome P450 guaninyl transferase</td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:15996 &rarr; naturalproductmech:mibig-bc5aed5ce5</td>
+  <td class="mono">DOI:10.1039/D0SC06135B</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: GupB activates two L-tyrosine molecules, reduces them to the corresponding amino aldehydes, and is proposed to form imine intermediate 5 after condensation and dehydration. GupB is left without enzyme_id because no UniProtKB accession resolved for exact GenPept accession QUF98525.1.</p><p class="sub">Step 2: GupA reduces proposed imine intermediate 5 to piperazine intermediate 4. Both numbered intermediates are left out of the structured substrate and product fields because no exact stable chemical CURIEs were selected. GupA is left without enzyme_id because no UniProtKB accession resolved for exact GenPept accession QUF98524.1.</p><p class="sub">Step 3: GupC oxidizes piperazine intermediate 4 to strained piperazine intermediate 6 by intramolecular C-O bond formation. Both numbered intermediates are left out of the structured substrate and product fields because no exact stable chemical CURIEs were selected. GupC is left without enzyme_id because no UniProtKB accession resolved for exact GenPept accession QUF98526.1.</p><p class="sub">Step 4: GupD uses GTP as the guanine donor and couples it to strained piperazine intermediate 6, yielding guanipiperazine A through a C-C linkage and guanipiperazine B through a C-O linkage. The intermediate is left out of the structured substrate field because no exact stable chemical CURIE was selected. GupD is left without enzyme_id because no UniProtKB accession resolved for exact GenPept accession QUF98527.1.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">10 nodes, 9 edges</span></h2>
+<p class="sub">Streptomyces chrestomyceticus GupA-D assemble guanipiperazine A from L-tyrosine through a piperazine core and a final GTP-dependent guaninylation.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>L-tyrosine</td>
+  <td>is activated and reduced by</td>
+  <td>GupB</td>
+  <td>GupB is proposed to activate and reduce two L-tyrosines to amino aldehydes that condense and dehydrate into imine intermediate 5.</td>
+  <td class="mono">DOI:10.1039/D0SC06135B<br>https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk<br>https://www.ncbi.nlm.nih.gov/protein/QUF98525.1</td>
+</tr>
+<tr>
+  <td>GupB</td>
+  <td>forms</td>
+  <td>proposed imine intermediate 5</td>
+  <td>Imine intermediate 5 is proposed; without GupA it can be spontaneously overoxidized to the observed shunt product 3.</td>
+  <td class="mono">DOI:10.1039/D0SC06135B<br>https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk<br>https://www.ncbi.nlm.nih.gov/protein/QUF98525.1</td>
+</tr>
+<tr>
+  <td>proposed imine intermediate 5</td>
+  <td>is reduced by</td>
+  <td>GupA</td>
+  <td></td>
+  <td class="mono">DOI:10.1039/D0SC06135B<br>https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk<br>https://www.ncbi.nlm.nih.gov/protein/QUF98524.1</td>
+</tr>
+<tr>
+  <td>GupA</td>
+  <td>forms</td>
+  <td>piperazine intermediate 4</td>
+  <td>Co-expression of gupB and gupA produced intermediate 4, and in vitro reconstitution observed production of 4 only after GupA, F420, and F420H2 regeneration were added.</td>
+  <td class="mono">DOI:10.1039/D0SC06135B<br>https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk<br>https://www.ncbi.nlm.nih.gov/protein/QUF98524.1</td>
+</tr>
+<tr>
+  <td>piperazine intermediate 4</td>
+  <td>is oxidized by</td>
+  <td>GupC</td>
+  <td></td>
+  <td class="mono">DOI:10.1039/D0SC06135B<br>https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk<br>https://www.ncbi.nlm.nih.gov/protein/QUF98526.1</td>
+</tr>
+<tr>
+  <td>GupC</td>
+  <td>forms</td>
+  <td>strained piperazine intermediate 6</td>
+  <td>Deleting gupD accumulated compound 6, and the in vitro GupC reaction consumed compound 4 while compound 6 appeared.</td>
+  <td class="mono">DOI:10.1039/D0SC06135B<br>https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk<br>https://www.ncbi.nlm.nih.gov/protein/QUF98526.1</td>
+</tr>
+<tr>
+  <td>strained piperazine intermediate 6</td>
+  <td>is guaninylated by</td>
+  <td>GupD</td>
+  <td></td>
+  <td class="mono">DOI:10.1039/D0SC06135B<br>https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk<br>https://www.ncbi.nlm.nih.gov/protein/QUF98527.1</td>
+</tr>
+<tr>
+  <td>GTP</td>
+  <td>is used by</td>
+  <td>GupD</td>
+  <td>GupD accepts GTP as substrate for guaninylation of compound 6.</td>
+  <td class="mono">DOI:10.1039/D0SC06135B<br>https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk<br>https://www.ncbi.nlm.nih.gov/protein/QUF98527.1</td>
+</tr>
+<tr>
+  <td>GupD</td>
+  <td>forms</td>
+  <td>guanipiperazine A</td>
+  <td>GupD couples compound 6 with GTP to form guanipiperazine A and the alternative O-linked product guanipiperazine B.</td>
+  <td class="mono">DOI:10.1039/D0SC06135B<br>https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk<br>https://www.ncbi.nlm.nih.gov/protein/QUF98527.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
