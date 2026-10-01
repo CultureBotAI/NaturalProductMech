@@ -79,6 +79,268 @@ discussions:
     and MIBiG calls it 'δ-(L-α-aminoadipyl)-L-cysteine-D-valine'. They share a Standard
     InChIKey, so if the names denote different compounds then one upstream record
     has the wrong structure. Check which.
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A6N339
+  enzyme_label: PcbAB ACV synthetase
+  reaction_id: RHEA:23196
+  substrates:
+  - CHEBI:58672
+  - CHEBI:35235
+  - CHEBI:57762
+  - CHEBI:30616
+  - CHEBI:15377
+  product: CHEBI:58572
+  products:
+  - CHEBI:58572
+  - CHEBI:456215
+  - CHEBI:33019
+  - CHEBI:15378
+  notes: Penicillium chrysogenum PcbAB condenses L-2-aminoadipate, L-cysteine, and
+    L-valine to the ACV tripeptide. RHEA:23196 also consumes three ATP and water and
+    releases three AMP, three diphosphates, and three H(+).
+  evidence:
+  - reference: DOI:10.1042/bj3270185
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: ACVS from Penicillium chrysogenum was purified to homogeneity
+    notes: Thelen et al. purified Penicillium chrysogenum ACV synthetase and characterized
+      ATP/PPi exchange and tripeptide-forming activity for the ACV building-block
+      amino acids.
+  - reference: DOI:10.1038/nbt0190-39
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: possessed delta-(L-alpha-amino-adipyl)-L-cysteinyl-D-valine synthetase
+      (ACVS), isopenicillin N synthetase
+    notes: Smith et al. heterologously expressed a Penicillium chrysogenum cosmid
+      carrying the penicillin biosynthetic cluster and detected ACVS and IPNS enzyme
+      activity in transformed fungal hosts.
+  - reference: DOI:10.1016/j.fgb.2007.03.008
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: genes encoding the three penicillin biosynthetic enzymes alone are sufficient
+      to restore full beta-lactam synthesis
+    notes: Van den Berg et al. functionally characterized the Penicillium chrysogenum
+      Wisconsin 54-1255 EF601124 penicillin cluster that carries pcbAB, pcbC, and
+      penDE.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000405.5/
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG entry version 5 links BGC0000405 to the Penicillium chrysogenum EF601124.1
+      NRPS cluster for ACV, isopenicillin N, and benzylpenicillin; the EF601124.1
+      record contains pcbAB / ABR12615.1 annotated as ACV synthetase.
+  - reference: https://www.uniprot.org/uniprotkb/A6N339
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: UniProtKB:A6N339 is the Penicillium chrysogenum pcbAB/ABR12615.1 ACV synthetase
+      from EMBL EF601124 and annotates the RHEA:23196 / left-to-right RHEA:23197 ACV
+      synthase reaction.
+  - reference: https://www.rhea-db.org/rhea/23196
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: RHEA:23196 is the ATP-dependent condensation of L-2-aminoadipate, L-cysteine,
+      and L-valine to ACV, AMP, diphosphate, and H(+).
+causal_graphs:
+- graph_id: acv-pcbab-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Penicillium chrysogenum PcbAB-catalyzed nonribosomal condensation of
+    L-2-aminoadipate, L-cysteine, and L-valine to ACV in penicillin biosynthesis.
+  nodes:
+  - node_id: l_2_aminoadipate
+    label: L-2-aminoadipate
+    node_type: PRECURSOR
+    identifier: CHEBI:58672
+    grounding_status: GROUNDED
+  - node_id: l_cysteine
+    label: L-cysteine
+    node_type: PRECURSOR
+    identifier: CHEBI:35235
+    grounding_status: GROUNDED
+  - node_id: l_valine
+    label: L-valine
+    node_type: PRECURSOR
+    identifier: CHEBI:57762
+    grounding_status: GROUNDED
+  - node_id: pcbab
+    label: PcbAB
+    node_type: ENZYME
+    identifier: UniProtKB:A6N339
+    grounding_status: GROUNDED
+  - node_id: acv
+    label: N-[(5S)-5-ammonio-5-carboxylatopentanoyl]-L-cysteinyl-D-valinate
+    node_type: COMPOUND
+    identifier: CHEBI:58572
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_2_aminoadipate
+    predicate: is condensed by
+    object: pcbab
+    notes: RHEA:23196 places L-2-aminoadipate on the substrate side of the PcbAB ATP-dependent
+      ACV synthase reaction.
+    evidence:
+    - reference: DOI:10.1042/bj3270185
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: ACVS from Penicillium chrysogenum was purified to homogeneity
+      notes: Thelen et al. purified Penicillium chrysogenum ACV synthetase and characterized
+        ATP/PPi exchange and tripeptide-forming activity for the ACV building-block
+        amino acids.
+    - reference: DOI:10.1038/nbt0190-39
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: possessed delta-(L-alpha-amino-adipyl)-L-cysteinyl-D-valine synthetase
+        (ACVS), isopenicillin N synthetase
+      notes: Smith et al. heterologously expressed a Penicillium chrysogenum cosmid
+        carrying the penicillin biosynthetic cluster and detected ACVS and IPNS enzyme
+        activity in transformed fungal hosts.
+    - reference: DOI:10.1016/j.fgb.2007.03.008
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: genes encoding the three penicillin biosynthetic enzymes alone are
+        sufficient to restore full beta-lactam synthesis
+      notes: Van den Berg et al. functionally characterized the Penicillium chrysogenum
+        Wisconsin 54-1255 EF601124 penicillin cluster that carries pcbAB, pcbC, and
+        penDE.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000405.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG entry version 5 links BGC0000405 to the Penicillium chrysogenum
+        EF601124.1 NRPS cluster for ACV, isopenicillin N, and benzylpenicillin; the
+        EF601124.1 record contains pcbAB / ABR12615.1 annotated as ACV synthetase.
+    - reference: https://www.uniprot.org/uniprotkb/A6N339
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:A6N339 is the Penicillium chrysogenum pcbAB/ABR12615.1 ACV
+        synthetase from EMBL EF601124 and annotates the RHEA:23196 / left-to-right
+        RHEA:23197 ACV synthase reaction.
+    - reference: https://www.rhea-db.org/rhea/23196
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:23196 is the ATP-dependent condensation of L-2-aminoadipate, L-cysteine,
+        and L-valine to ACV, AMP, diphosphate, and H(+).
+  - subject: l_cysteine
+    predicate: is condensed by
+    object: pcbab
+    notes: RHEA:23196 places L-cysteine on the substrate side of the PcbAB ATP-dependent
+      ACV synthase reaction.
+    evidence:
+    - reference: DOI:10.1042/bj3270185
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: ACVS from Penicillium chrysogenum was purified to homogeneity
+      notes: Thelen et al. purified Penicillium chrysogenum ACV synthetase and characterized
+        ATP/PPi exchange and tripeptide-forming activity for the ACV building-block
+        amino acids.
+    - reference: DOI:10.1038/nbt0190-39
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: possessed delta-(L-alpha-amino-adipyl)-L-cysteinyl-D-valine synthetase
+        (ACVS), isopenicillin N synthetase
+      notes: Smith et al. heterologously expressed a Penicillium chrysogenum cosmid
+        carrying the penicillin biosynthetic cluster and detected ACVS and IPNS enzyme
+        activity in transformed fungal hosts.
+    - reference: DOI:10.1016/j.fgb.2007.03.008
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: genes encoding the three penicillin biosynthetic enzymes alone are
+        sufficient to restore full beta-lactam synthesis
+      notes: Van den Berg et al. functionally characterized the Penicillium chrysogenum
+        Wisconsin 54-1255 EF601124 penicillin cluster that carries pcbAB, pcbC, and
+        penDE.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000405.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG entry version 5 links BGC0000405 to the Penicillium chrysogenum
+        EF601124.1 NRPS cluster for ACV, isopenicillin N, and benzylpenicillin; the
+        EF601124.1 record contains pcbAB / ABR12615.1 annotated as ACV synthetase.
+    - reference: https://www.uniprot.org/uniprotkb/A6N339
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:A6N339 is the Penicillium chrysogenum pcbAB/ABR12615.1 ACV
+        synthetase from EMBL EF601124 and annotates the RHEA:23196 / left-to-right
+        RHEA:23197 ACV synthase reaction.
+    - reference: https://www.rhea-db.org/rhea/23196
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:23196 is the ATP-dependent condensation of L-2-aminoadipate, L-cysteine,
+        and L-valine to ACV, AMP, diphosphate, and H(+).
+  - subject: l_valine
+    predicate: is condensed by
+    object: pcbab
+    notes: RHEA:23196 places L-valine on the substrate side of the PcbAB ATP-dependent
+      ACV synthase reaction.
+    evidence:
+    - reference: DOI:10.1042/bj3270185
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: ACVS from Penicillium chrysogenum was purified to homogeneity
+      notes: Thelen et al. purified Penicillium chrysogenum ACV synthetase and characterized
+        ATP/PPi exchange and tripeptide-forming activity for the ACV building-block
+        amino acids.
+    - reference: DOI:10.1038/nbt0190-39
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: possessed delta-(L-alpha-amino-adipyl)-L-cysteinyl-D-valine synthetase
+        (ACVS), isopenicillin N synthetase
+      notes: Smith et al. heterologously expressed a Penicillium chrysogenum cosmid
+        carrying the penicillin biosynthetic cluster and detected ACVS and IPNS enzyme
+        activity in transformed fungal hosts.
+    - reference: DOI:10.1016/j.fgb.2007.03.008
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: genes encoding the three penicillin biosynthetic enzymes alone are
+        sufficient to restore full beta-lactam synthesis
+      notes: Van den Berg et al. functionally characterized the Penicillium chrysogenum
+        Wisconsin 54-1255 EF601124 penicillin cluster that carries pcbAB, pcbC, and
+        penDE.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000405.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG entry version 5 links BGC0000405 to the Penicillium chrysogenum
+        EF601124.1 NRPS cluster for ACV, isopenicillin N, and benzylpenicillin; the
+        EF601124.1 record contains pcbAB / ABR12615.1 annotated as ACV synthetase.
+    - reference: https://www.uniprot.org/uniprotkb/A6N339
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:A6N339 is the Penicillium chrysogenum pcbAB/ABR12615.1 ACV
+        synthetase from EMBL EF601124 and annotates the RHEA:23196 / left-to-right
+        RHEA:23197 ACV synthase reaction.
+    - reference: https://www.rhea-db.org/rhea/23196
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:23196 is the ATP-dependent condensation of L-2-aminoadipate, L-cysteine,
+        and L-valine to ACV, AMP, diphosphate, and H(+).
+  - subject: pcbab
+    predicate: forms
+    object: acv
+    notes: RHEA:23196 places ACV on the product side of the PcbAB ATP-dependent ACV
+      synthase reaction.
+    evidence:
+    - reference: DOI:10.1042/bj3270185
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: ACVS from Penicillium chrysogenum was purified to homogeneity
+      notes: Thelen et al. purified Penicillium chrysogenum ACV synthetase and characterized
+        ATP/PPi exchange and tripeptide-forming activity for the ACV building-block
+        amino acids.
+    - reference: DOI:10.1038/nbt0190-39
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: possessed delta-(L-alpha-amino-adipyl)-L-cysteinyl-D-valine synthetase
+        (ACVS), isopenicillin N synthetase
+      notes: Smith et al. heterologously expressed a Penicillium chrysogenum cosmid
+        carrying the penicillin biosynthetic cluster and detected ACVS and IPNS enzyme
+        activity in transformed fungal hosts.
+    - reference: DOI:10.1016/j.fgb.2007.03.008
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: genes encoding the three penicillin biosynthetic enzymes alone are
+        sufficient to restore full beta-lactam synthesis
+      notes: Van den Berg et al. functionally characterized the Penicillium chrysogenum
+        Wisconsin 54-1255 EF601124 penicillin cluster that carries pcbAB, pcbC, and
+        penDE.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000405.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG entry version 5 links BGC0000405 to the Penicillium chrysogenum
+        EF601124.1 NRPS cluster for ACV, isopenicillin N, and benzylpenicillin; the
+        EF601124.1 record contains pcbAB / ABR12615.1 annotated as ACV synthetase.
+    - reference: https://www.uniprot.org/uniprotkb/A6N339
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:A6N339 is the Penicillium chrysogenum pcbAB/ABR12615.1 ACV
+        synthetase from EMBL EF601124 and annotates the RHEA:23196 / left-to-right
+        RHEA:23197 ACV synthase reaction.
+    - reference: https://www.rhea-db.org/rhea/23196
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:23196 is the ATP-dependent condensation of L-2-aminoadipate, L-cysteine,
+        and L-valine to ACV, AMP, diphosphate, and H(+).
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -88,3 +350,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T00:19:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a RHEA-grounded PcbAB biosynthetic pathway step and causal graph
+    for condensing L-2-aminoadipate, L-cysteine, and L-valine to ACV; grounded the
+    BGC0000405 pcbAB CDS to exact UniProtKB:A6N339.
+  llm_assisted: true
