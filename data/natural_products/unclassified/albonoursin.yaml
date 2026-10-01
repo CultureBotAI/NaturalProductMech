@@ -95,8 +95,9 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000851
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
-    this field grades the taxon claim, which is a different question.'
+  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
+    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
+    question.'
   evidence:
   - reference: PMID:12498889
     evidence_type: DATABASE_ASSERTION
@@ -114,7 +115,9 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:AY129235.1
   bgc_class:
   - OTHER
-  link_evidence_basis: CLUSTER_UNSTATED
+  locus_evidence_methods:
+  - Heterologous expression
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000851
@@ -128,6 +131,262 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-b4bf17a70e
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: AlbAB cyclodipeptide oxidase
+  reaction_id: RHEA:35531
+  substrate: CHEBI:71608
+  product: CHEBI:71609
+  notes: AlbAB catalyzes two sequential alpha,beta-dehydrogenations of cyclo(L-phenylalanyl-L-leucyl)
+    with O2 as the electron acceptor to form albonoursin and H2O2. This partial Streptomyces
+    noursei ATCC 11455 pathway records the characterized CDO tailoring step and leaves
+    AlbC-dependent cyclodipeptide precursor formation unexpanded.
+  evidence:
+  - reference: DOI:10.1038/s41467-024-48030-9
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: AlbAB showed substrate dependent enzymatic activity
+    notes: Andreas and Giessen heterologously expressed Streptomyces noursei AlbAB,
+      purified the AlbA/AlbB filament, measured activity toward cyclo(L-Phe-L-Leu),
+      and determined the AlbAB cryo-EM structure deposited as PDB:8UC3.
+  - reference: DOI:10.1016/S1074-5521(02)00285-5
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: albA and albB, necessary for CDO activity
+    notes: Lautru et al. used purified cyclic-dipeptide oxidase peptide sequence information
+      to clone the Streptomyces noursei albonoursin cluster, showed that the 3.8 kb
+      fragment directs albonoursin biosynthesis in Streptomyces lividans, and demonstrated
+      that albA and albB are both required for CDO activity.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000193
+    evidence_type: DATABASE_ASSERTION
+    snippet: Dehydrogenates cyclo(L-Phe-L-Leu)
+    retrieved_on: '2026-10-01'
+    notes: MITE0000193 annotates Streptomyces noursei AlbA/Q8GED9 as an active cyclic
+      dipeptide oxidase entry, links GenPept AAN07907.1 and MIBiG BGC0000851, and
+      maps the albonoursin dehydrogenation to RHEA:35531.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY129235.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="AAN07907.1"
+    retrieved_on: '2026-10-01'
+    notes: GenBank AY129235.1 maps Streptomyces noursei ATCC 11455 albA to the 711..1370
+      CDS and assigns protein_id AAN07907.1.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY129235.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="AAN07908.1"
+    retrieved_on: '2026-10-01'
+    notes: GenBank AY129235.1 maps Streptomyces noursei ATCC 11455 albB to the overlapping
+      1330..1647 CDS, annotates it as required for AlbA activity, and assigns protein_id
+      AAN07908.1.
+  - reference: https://www.uniprot.org/uniprotkb/Q8GED9
+    evidence_type: DATABASE_ASSERTION
+    snippet: GN=albA
+    retrieved_on: '2026-10-01'
+    notes: Current Swiss-Prot UniProtKB:Q8GED9 resolves as the 219 aa Streptomyces
+      noursei albonoursin synthase AlbA and cross-references EMBL AY129235 protein
+      AAN07907.1.
+  - reference: https://www.uniprot.org/uniprotkb/Q8GED8
+    evidence_type: DATABASE_ASSERTION
+    snippet: GN=albB
+    retrieved_on: '2026-10-01'
+    notes: Current Swiss-Prot UniProtKB:Q8GED8 resolves as the 105 aa Streptomyces
+      noursei albonoursin synthase protein AlbB and cross-references EMBL AY129235
+      protein AAN07908.1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000851.5/BGC0000851.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="AAN07907.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000851.5 places albA at 711..1370 in the Streptomyces noursei
+      albonoursin cluster and annotates the CDS as AAN07907.1 AlbA.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000851.5/BGC0000851.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="AAN07908.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000851.5 places albB at 1330..1647 in the Streptomyces noursei
+      albonoursin cluster and annotates the CDS as AAN07908.1 AlbB.
+causal_graphs:
+- graph_id: albonoursin-albab-dehydrogenation
+  scope: BIOSYNTHESIS
+  description: Streptomyces noursei ATCC 11455 AlbAB-dependent alpha,beta-dehydrogenation
+    of cyclo(L-phenylalanyl-L-leucyl) to albonoursin.
+  nodes:
+  - node_id: cyclo_l_phe_l_leu
+    label: cyclo(L-phenylalanyl-L-leucyl)
+    node_type: PRECURSOR
+    identifier: CHEBI:71608
+    grounding_status: GROUNDED
+  - node_id: alba
+    label: AlbA
+    node_type: ENZYME
+    identifier: UniProtKB:Q8GED9
+    grounding_status: GROUNDED
+  - node_id: albb
+    label: AlbB
+    node_type: PROTEIN
+    identifier: UniProtKB:Q8GED8
+    grounding_status: GROUNDED
+  - node_id: albab_cyclodipeptide_oxidase
+    label: AlbAB cyclodipeptide oxidase
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: albonoursin
+    label: albonoursin
+    node_type: COMPOUND
+    identifier: CHEBI:71609
+    grounding_status: GROUNDED
+  edges:
+  - subject: alba
+    predicate: assembles into
+    object: albab_cyclodipeptide_oxidase
+    notes: AlbA is the FMN-bearing oxidase subunit of the AlbAB filament.
+    evidence:
+    - reference: DOI:10.1038/s41467-024-48030-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: AlbAB showed substrate dependent enzymatic activity
+      notes: Andreas and Giessen heterologously expressed Streptomyces noursei AlbAB,
+        purified the AlbA/AlbB filament, measured activity toward cyclo(L-Phe-L-Leu),
+        and determined the AlbAB cryo-EM structure deposited as PDB:8UC3.
+    - reference: DOI:10.1016/S1074-5521(02)00285-5
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: albA and albB, necessary for CDO activity
+      notes: Lautru et al. used purified cyclic-dipeptide oxidase peptide sequence
+        information to clone the Streptomyces noursei albonoursin cluster, showed
+        that the 3.8 kb fragment directs albonoursin biosynthesis in Streptomyces
+        lividans, and demonstrated that albA and albB are both required for CDO activity.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY129235.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AAN07907.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank AY129235.1 maps Streptomyces noursei ATCC 11455 albA to the 711..1370
+        CDS and assigns protein_id AAN07907.1.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GED9
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=albA
+      retrieved_on: '2026-10-01'
+      notes: Current Swiss-Prot UniProtKB:Q8GED9 resolves as the 219 aa Streptomyces
+        noursei albonoursin synthase AlbA and cross-references EMBL AY129235 protein
+        AAN07907.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000851.5/BGC0000851.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AAN07907.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000851.5 places albA at 711..1370 in the Streptomyces noursei
+        albonoursin cluster and annotates the CDS as AAN07907.1 AlbA.
+  - subject: albb
+    predicate: assembles into
+    object: albab_cyclodipeptide_oxidase
+    notes: AlbB is required for AlbA activity and forms alternating dimers with AlbA
+      in the active AlbAB enzyme filament.
+    evidence:
+    - reference: DOI:10.1038/s41467-024-48030-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: AlbAB showed substrate dependent enzymatic activity
+      notes: Andreas and Giessen heterologously expressed Streptomyces noursei AlbAB,
+        purified the AlbA/AlbB filament, measured activity toward cyclo(L-Phe-L-Leu),
+        and determined the AlbAB cryo-EM structure deposited as PDB:8UC3.
+    - reference: DOI:10.1016/S1074-5521(02)00285-5
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: albA and albB, necessary for CDO activity
+      notes: Lautru et al. used purified cyclic-dipeptide oxidase peptide sequence
+        information to clone the Streptomyces noursei albonoursin cluster, showed
+        that the 3.8 kb fragment directs albonoursin biosynthesis in Streptomyces
+        lividans, and demonstrated that albA and albB are both required for CDO activity.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY129235.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AAN07908.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank AY129235.1 maps Streptomyces noursei ATCC 11455 albB to the overlapping
+        1330..1647 CDS, annotates it as required for AlbA activity, and assigns protein_id
+        AAN07908.1.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GED8
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=albB
+      retrieved_on: '2026-10-01'
+      notes: Current Swiss-Prot UniProtKB:Q8GED8 resolves as the 105 aa Streptomyces
+        noursei albonoursin synthase protein AlbB and cross-references EMBL AY129235
+        protein AAN07908.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000851.5/BGC0000851.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AAN07908.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000851.5 places albB at 1330..1647 in the Streptomyces noursei
+        albonoursin cluster and annotates the CDS as AAN07908.1 AlbB.
+  - subject: cyclo_l_phe_l_leu
+    predicate: is dehydrogenated by
+    object: albab_cyclodipeptide_oxidase
+    notes: AlbAB sequentially dehydrogenates cyclo(L-phenylalanyl-L-leucyl) to form
+      the bis-dehydro product albonoursin.
+    evidence:
+    - reference: DOI:10.1038/s41467-024-48030-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: AlbAB showed substrate dependent enzymatic activity
+      notes: Andreas and Giessen heterologously expressed Streptomyces noursei AlbAB,
+        purified the AlbA/AlbB filament, measured activity toward cyclo(L-Phe-L-Leu),
+        and determined the AlbAB cryo-EM structure deposited as PDB:8UC3.
+    - reference: DOI:10.1016/S1074-5521(02)00285-5
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: albA and albB, necessary for CDO activity
+      notes: Lautru et al. used purified cyclic-dipeptide oxidase peptide sequence
+        information to clone the Streptomyces noursei albonoursin cluster, showed
+        that the 3.8 kb fragment directs albonoursin biosynthesis in Streptomyces
+        lividans, and demonstrated that albA and albB are both required for CDO activity.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000193
+      evidence_type: DATABASE_ASSERTION
+      snippet: Dehydrogenates cyclo(L-Phe-L-Leu)
+      retrieved_on: '2026-10-01'
+      notes: MITE0000193 annotates Streptomyces noursei AlbA/Q8GED9 as an active cyclic
+        dipeptide oxidase entry, links GenPept AAN07907.1 and MIBiG BGC0000851, and
+        maps the albonoursin dehydrogenation to RHEA:35531.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY129235.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AAN07907.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank AY129235.1 maps Streptomyces noursei ATCC 11455 albA to the 711..1370
+        CDS and assigns protein_id AAN07907.1.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY129235.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AAN07908.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank AY129235.1 maps Streptomyces noursei ATCC 11455 albB to the overlapping
+        1330..1647 CDS, annotates it as required for AlbA activity, and assigns protein_id
+        AAN07908.1.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GED9
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=albA
+      retrieved_on: '2026-10-01'
+      notes: Current Swiss-Prot UniProtKB:Q8GED9 resolves as the 219 aa Streptomyces
+        noursei albonoursin synthase AlbA and cross-references EMBL AY129235 protein
+        AAN07907.1.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GED8
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=albB
+      retrieved_on: '2026-10-01'
+      notes: Current Swiss-Prot UniProtKB:Q8GED8 resolves as the 105 aa Streptomyces
+        noursei albonoursin synthase protein AlbB and cross-references EMBL AY129235
+        protein AAN07908.1.
+  - subject: albab_cyclodipeptide_oxidase
+    predicate: forms
+    object: albonoursin
+    notes: The terminal AlbAB dehydrogenation step yields albonoursin in the BGC0000851
+      biosynthetic pathway.
+    evidence:
+    - reference: DOI:10.1038/s41467-024-48030-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: AlbAB showed substrate dependent enzymatic activity
+      notes: Andreas and Giessen heterologously expressed Streptomyces noursei AlbAB,
+        purified the AlbA/AlbB filament, measured activity toward cyclo(L-Phe-L-Leu),
+        and determined the AlbAB cryo-EM structure deposited as PDB:8UC3.
+    - reference: DOI:10.1016/S1074-5521(02)00285-5
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: albA and albB, necessary for CDO activity
+      notes: Lautru et al. used purified cyclic-dipeptide oxidase peptide sequence
+        information to clone the Streptomyces noursei albonoursin cluster, showed
+        that the 3.8 kb fragment directs albonoursin biosynthesis in Streptomyces
+        lividans, and demonstrated that albA and albB are both required for CDO activity.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000193
+      evidence_type: DATABASE_ASSERTION
+      snippet: Dehydrogenates cyclo(L-Phe-L-Leu)
+      retrieved_on: '2026-10-01'
+      notes: MITE0000193 annotates Streptomyces noursei AlbA/Q8GED9 as an active cyclic
+        dipeptide oxidase entry, links GenPept AAN07907.1 and MIBiG BGC0000851, and
+        maps the albonoursin dehydrogenation to RHEA:35531.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -137,3 +396,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T16:46:11Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-01T16:47:56Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a RHEA:35531-grounded AlbAB cyclic dipeptide oxidase pathway step
+    and BIOSYNTHESIS causal graph for albonoursin, with AlbA grounded to UniProtKB:Q8GED9
+    and AlbB grounded to UniProtKB:Q8GED8.
+  llm_assisted: true
