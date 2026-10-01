@@ -53,6 +53,7 @@ ignored_prefixes:
   - InterPro             # protein families/domains; the label is the local enzyme
   - ComplexPortal        # protein-complex accessions in curated causal graphs
   - mibig                # BGC accessions; the label is the local cluster name
+  - pubchem.compound     # PubChem CIDs; no OAK adapter
 
 # A label matching an exact or related synonym is accepted: the corpus prefers
 # the name the literature uses over ChEBI's systematic primary label.

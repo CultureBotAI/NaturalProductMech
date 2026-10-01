@@ -158,7 +158,7 @@ biosynthetic_pathway:
 - step_number: 1
   enzyme_id: UniProtKB:A0A1S5NPU2
   enzyme_label: PenF arabinoside monophosphate 5'-nucleotidase
-  substrate: CHEBI:749653
+  substrate: pubchem.compound:34768
   product: CHEBI:45327
   proposed: true
   notes: PenF hydrolyzes vidarabine phosphate, also called vidarabine 5'-monophosphate
@@ -211,7 +211,7 @@ causal_graphs:
   - node_id: vidarabine_phosphate
     label: vidarabine phosphate
     node_type: PRECURSOR
-    identifier: CHEBI:749653
+    identifier: pubchem.compound:34768
     grounding_status: GROUNDED
   - node_id: penf
     label: PenF
@@ -323,4 +323,10 @@ curation_history:
     of vidarabine phosphate to adenine arabinoside, grounding the Streptomyces antibioticus
     PenF enzyme to UniProtKB:A0A1S5NPU2 by exact sequence identity to GenPept AKA87335.1
     and leaving the step without a Rhea reaction because no exact Rhea entry was found.
+  llm_assisted: true
+- timestamp: '2026-10-01T16:15:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Regrounded the vidarabine phosphate/Ara-AMP precursor to pubchem.compound:34768,
+    retaining the proposed PenF reaction and UniProtKB:A0A1S5NPU2 enzyme grounding.
   llm_assisted: true
