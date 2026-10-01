@@ -94,7 +94,61 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>PhzM<br><span class="mono">UniProtKB:Q9HWH2</span></td>
+  <td class="mono">RHEA:49112</td>
+  <td class="mono">CHEBI:62248 &rarr; CHEBI:62221</td>
+  <td class="mono">DOI:10.1128/JB.183.21.6454-6465.2001</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>PhzS<br><span class="mono">UniProtKB:Q9HWG9</span></td>
+  <td class="mono">RHEA:48976</td>
+  <td class="mono">CHEBI:62221 &rarr; CHEBI:8653</td>
+  <td class="mono">DOI:10.1128/JB.183.21.6454-6465.2001</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Pseudomonas aeruginosa PAO1 PA4209/PhzM is outside the seeded BGC0000936 phzA-G phenazine-1-carboxylate core locus. RHEA:49112 captures the first tailoring step: SAM-dependent N-methylation of phenazine-1-carboxylate to 5-methyl-phenazine-1-carboxylate.</p><p class="sub">Step 2: Pseudomonas aeruginosa PAO1 PA4217/PhzS is outside the seeded BGC0000936 phzA-G phenazine-1-carboxylate core locus. RHEA:48976 captures the second tailoring step and forms CHEBI:62220 pyocyanine(1+), the conjugate acid of the seeded CHEBI:8653 pyocyanine structure.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Partial PAO1 tailoring route from phenazine-1-carboxylate to pyocyanine through PhzM and PhzS after the BGC0000936 phzA-G core locus forms the phenazine-1-carboxylate precursor.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>phenazine-1-carboxylate</td>
+  <td>is N-methylated by</td>
+  <td>PhzM</td>
+  <td>PhzM methylates phenazine-1-carboxylate in the first step of the PhzM/PhzS coupled tailoring route to pyocyanine.</td>
+  <td class="mono">DOI:10.1128/JB.183.21.6454-6465.2001<br>https://www.uniprot.org/uniprotkb/Q9HWH2<br>https://www.rhea-db.org/rhea/49112</td>
+</tr>
+<tr>
+  <td>PhzM</td>
+  <td>forms</td>
+  <td>5-methyl-phenazine-1-carboxylate</td>
+  <td>5-methyl-phenazine-1-carboxylate is the unstable common intermediate produced by PhzM before PhzS decarboxylation.</td>
+  <td class="mono">DOI:10.1128/JB.183.21.6454-6465.2001<br>https://www.uniprot.org/uniprotkb/Q9HWH2<br>https://www.rhea-db.org/rhea/49112</td>
+</tr>
+<tr>
+  <td>5-methyl-phenazine-1-carboxylate</td>
+  <td>is hydroxylatively decarboxylated by</td>
+  <td>PhzS</td>
+  <td>PhzS consumes NADH and oxygen while decarboxylating 5-methyl-phenazine-1-carboxylate.</td>
+  <td class="mono">DOI:10.1128/JB.183.21.6454-6465.2001<br>https://www.uniprot.org/uniprotkb/Q9HWG9<br>https://www.rhea-db.org/rhea/48976</td>
+</tr>
+<tr>
+  <td>PhzS</td>
+  <td>forms</td>
+  <td>pyocyanine</td>
+  <td>RHEA:48976 represents the immediate product as the CHEBI:62220 protonation state; CHEBI:62220 is the conjugate acid of CHEBI:8653.</td>
+  <td class="mono">DOI:10.1128/JB.183.21.6454-6465.2001<br>https://www.uniprot.org/uniprotkb/Q9HWG9<br>https://www.rhea-db.org/rhea/48976</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">2</span></h2>
