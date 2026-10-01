@@ -80,7 +80,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>CmlI<br><span class="mono">UniProtKB:F2RB83</span></td>
+  <td class="mono">RHEA:58884</td>
+  <td class="mono">CHEBI:47325 &rarr; CHEBI:17698</td>
+  <td class="mono">DOI:10.1016/j.tet.2012.06.036</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: CmlI is the BGC0000893 SVEN_0924 arylamine N-oxygenase. RHEA:58884 captures the six-electron oxidation of alpha-N-dichloroacetyl-p-aminophenylserinol to exact stereochemical CHEBI:17698 chloramphenicol with AH2 and O2 as cosubstrates; the record remains minted because MIBiG BGC0000893 preserves a stereochemically incomplete chloramphenicol structure.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Terminal chloramphenicol N-oxygenation by S. venezuelae ATCC 10712 CmlI, represented with the exact ChEBI-stereochemical Rhea substrate and product although the seeded MIBiG record is stereo-incomplete.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>alpha-N-dichloroacetyl-p-aminophenylserinol</td>
+  <td>is N-oxygenated by</td>
+  <td>CmlI</td>
+  <td>The arylamine precursor, commonly abbreviated NH2-CAM, is oxidized by CmlI.</td>
+  <td class="mono">DOI:10.1016/j.tet.2012.06.036<br>DOI:10.1021/acs.biochem.7b00695</td>
+</tr>
+<tr>
+  <td>CmlI</td>
+  <td>forms</td>
+  <td>chloramphenicol</td>
+  <td>CmlI catalyzes the N-oxygenation sequence that forms the aryl-nitro group of chloramphenicol.</td>
+  <td class="mono">DOI:10.1016/j.tet.2012.06.036<br>DOI:10.1021/acs.biochem.7b00695</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>

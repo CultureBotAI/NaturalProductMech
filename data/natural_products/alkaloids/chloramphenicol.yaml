@@ -327,6 +327,102 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:F2RB83
+  enzyme_label: CmlI
+  reaction_id: RHEA:58884
+  notes: CmlI is the BGC0000893 SVEN_0924 arylamine N-oxygenase. RHEA:58884 captures
+    the six-electron oxidation of alpha-N-dichloroacetyl-p-aminophenylserinol to exact
+    stereochemical CHEBI:17698 chloramphenicol with AH2 and O2 as cosubstrates; the
+    record remains minted because MIBiG BGC0000893 preserves a stereochemically incomplete
+    chloramphenicol structure.
+  evidence:
+  - reference: DOI:10.1016/j.tet.2012.06.036
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: CmlI is an N-oxygenase in the biosynthesis of chloramphenicol
+    notes: Lu et al. cloned S. venezuelae cmlI and reconstituted N-terminal His6-CmlI
+      in vitro with NH2-CAM, phenazine methosulfate, and NADH, observing conversion
+      to chloramphenicol.
+  - reference: DOI:10.1021/acs.biochem.7b00695
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: CmlI N-oxygenase catalyzes the final three steps in chloramphenicol biosynthesis
+    notes: Komor et al. characterized CmlI kinetics with NH2-CAM, NH(OH)-CAM, and
+      NO-CAM pathway intermediates and supported an enzyme-retained six-electron oxidation
+      to chloramphenicol.
+  - reference: https://www.uniprot.org/uniprotkb/F2RB83
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:F2RB83 is Streptomyces venezuelae ATCC 10712 SVEN_0924/cmlI
+      and annotates catalytic activity RHEA:58884.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000893.5/BGC0000893.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000893.5 places SVEN_0924 in the S. venezuelae ATCC 10712 chloramphenicol
+      gene cluster and cross-references its CDS to UniProtKB/TrEMBL:F2RB83.
+  - reference: https://www.rhea-db.org/rhea/58884
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: RHEA:58884 is the alpha-N-dichloroacetyl-p-aminophenylserinol plus AH2
+      plus 2 O2 to chloramphenicol plus A plus 2 H2O reaction.
+  substrate: CHEBI:47325
+  product: CHEBI:17698
+causal_graphs:
+- graph_id: chloramphenicol-cmli-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Terminal chloramphenicol N-oxygenation by S. venezuelae ATCC 10712
+    CmlI, represented with the exact ChEBI-stereochemical Rhea substrate and product
+    although the seeded MIBiG record is stereo-incomplete.
+  nodes:
+  - node_id: amino_chloramphenicol
+    label: alpha-N-dichloroacetyl-p-aminophenylserinol
+    node_type: PRECURSOR
+    identifier: CHEBI:47325
+    grounding_status: GROUNDED
+  - node_id: cmli
+    label: CmlI
+    node_type: ENZYME
+    identifier: UniProtKB:F2RB83
+    grounding_status: GROUNDED
+  - node_id: chloramphenicol
+    label: chloramphenicol
+    node_type: COMPOUND
+    identifier: CHEBI:17698
+    grounding_status: GROUNDED
+  edges:
+  - subject: amino_chloramphenicol
+    predicate: is N-oxygenated by
+    object: cmli
+    notes: The arylamine precursor, commonly abbreviated NH2-CAM, is oxidized by CmlI.
+    evidence:
+    - reference: DOI:10.1016/j.tet.2012.06.036
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: CmlI is an N-oxygenase in the biosynthesis of chloramphenicol
+      notes: Biochemical reconstitution connected CmlI to the conversion of NH2-CAM
+        into chloramphenicol.
+    - reference: DOI:10.1021/acs.biochem.7b00695
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: CmlI N-oxygenase catalyzes the final three steps in chloramphenicol
+        biosynthesis
+      notes: Transient kinetic experiments supported CmlI retention of hydroxylamine
+        and nitroso intermediates during the six-electron oxidation.
+  - subject: cmli
+    predicate: forms
+    object: chloramphenicol
+    notes: CmlI catalyzes the N-oxygenation sequence that forms the aryl-nitro group
+      of chloramphenicol.
+    evidence:
+    - reference: DOI:10.1016/j.tet.2012.06.036
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: CmlI is an N-oxygenase in the biosynthesis of chloramphenicol
+      notes: Biochemical reconstitution connected CmlI to the conversion of NH2-CAM
+        into chloramphenicol.
+    - reference: DOI:10.1021/acs.biochem.7b00695
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: CmlI N-oxygenase catalyzes the final three steps in chloramphenicol
+        biosynthesis
+      notes: Transient kinetic experiments supported CmlI retention of hydroxylamine
+        and nitroso intermediates during the six-electron oxidation.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -340,3 +436,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T06:15:02Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a UniProt-grounded CmlI terminal biosynthetic_pathway step and BIOSYNTHESIS
+    causal graph for RHEA:58884 chloramphenicol formation; the step uses exact ChEBI
+    substrate/product identifiers while noting that the seeded MIBiG record remains
+    stereochemically incomplete.
+  llm_assisted: true
