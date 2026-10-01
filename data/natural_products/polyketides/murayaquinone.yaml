@@ -116,6 +116,146 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A1S6QMP3
+  enzyme_label: MrqO5 cofactor-independent monooxygenase
+  notes: MrqO5 decarboxylates an aromatic type II polyketide biosynthesis intermediate
+    in the murayaquinone pathway. This single-step partial pathway leaves assembly
+    of the upstream carboxylated intermediate and its later conversion to murayaquinone
+    uncurated.
+  evidence:
+  - reference: DOI:10.1021/acschembio.5c00695
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Decarboxylase Activity of an Antibiotic Biosynthesis Monooxygenase Family
+      Protein in the Biosynthesis of the Type II Polyketide Murayaquinone
+    notes: Zhou et al. characterized decarboxylase activity from a monooxygenase-family
+      protein in type II polyketide murayaquinone biosynthesis; MITE curates MrqO5
+      from this DOI as an in vitro decarboxylation reaction.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000465
+    evidence_type: DATABASE_ASSERTION
+    snippet: Decarboxylation of aromatic type II polyketide biosynthesis intermediate
+    retrieved_on: '2026-10-01'
+    notes: MITE0000465 is an active MrqO5 cofactor-independent monooxygenase entry
+      for decarboxylation of an aromatic type II polyketide murayaquinone biosynthesis
+      intermediate; it links UniProtKB:A0A1S6QMP3, GenPept AQW35073.1, MIBiG BGC0001675
+      and the Zhou et al. DOI.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001675.5/BGC0001675.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="AQW35073.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0001675.5 places AQW35073.1 inside the active Streptomyces griseoruber
+      Sgr29 murayaquinone cluster as the mrqO5 oxygenase CDS.
+  - reference: https://www.uniprot.org/uniprotkb/A0A1S6QMP3
+    evidence_type: DATABASE_ASSERTION
+    snippet: GN   Name=mrqO5
+    retrieved_on: '2026-10-01'
+    notes: Current unreviewed UniProtKB:A0A1S6QMP3 resolves as a 103 aa Streptomyces
+      griseoruber MrqO5 oxygenase and cross-references EMBL KX817190 protein AQW35073.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AQW35073.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: oxygenase [Streptomyces griseoruber]
+    retrieved_on: '2026-10-01'
+    notes: GenPept AQW35073.1 is the 103 aa Streptomyces griseoruber Sgr29 oxygenase
+      encoded by complement(KX817190.1:58328..58639) with gene qualifier mrqO5.
+causal_graphs:
+- graph_id: murayaquinone-mrqo5-decarboxylation
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces griseoruber murayaquinone biosynthesis graph for
+    MrqO5-catalyzed decarboxylation of an aromatic type II polyketide intermediate.
+  nodes:
+  - node_id: carboxylated_type_ii_polyketide
+    label: carboxylated aromatic type II polyketide intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mrqo5
+    label: MrqO5 cofactor-independent monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A1S6QMP3
+    grounding_status: GROUNDED
+  - node_id: decarboxylated_type_ii_polyketide
+    label: decarboxylated aromatic type II polyketide intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: carboxylated_type_ii_polyketide
+    predicate: is decarboxylated by
+    object: mrqo5
+    notes: MITE records MrqO5 as the cofactor-independent monooxygenase for decarboxylation
+      of an aromatic type II polyketide murayaquinone-pathway intermediate.
+    evidence:
+    - reference: DOI:10.1021/acschembio.5c00695
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Decarboxylase Activity of an Antibiotic Biosynthesis Monooxygenase
+        Family Protein in the Biosynthesis of the Type II Polyketide Murayaquinone
+      notes: Zhou et al. characterized decarboxylase activity from a monooxygenase-family
+        protein in type II polyketide murayaquinone biosynthesis; MITE curates MrqO5
+        from this DOI as an in vitro decarboxylation reaction.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000465
+      evidence_type: DATABASE_ASSERTION
+      snippet: Decarboxylation of aromatic type II polyketide biosynthesis intermediate
+      retrieved_on: '2026-10-01'
+      notes: MITE0000465 is an active MrqO5 cofactor-independent monooxygenase entry
+        for decarboxylation of an aromatic type II polyketide murayaquinone biosynthesis
+        intermediate; it links UniProtKB:A0A1S6QMP3, GenPept AQW35073.1, MIBiG BGC0001675
+        and the Zhou et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001675.5/BGC0001675.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AQW35073.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001675.5 places AQW35073.1 inside the active Streptomyces griseoruber
+        Sgr29 murayaquinone cluster as the mrqO5 oxygenase CDS.
+    - reference: https://www.uniprot.org/uniprotkb/A0A1S6QMP3
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=mrqO5
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:A0A1S6QMP3 resolves as a 103 aa Streptomyces
+        griseoruber MrqO5 oxygenase and cross-references EMBL KX817190 protein AQW35073.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AQW35073.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: oxygenase [Streptomyces griseoruber]
+      retrieved_on: '2026-10-01'
+      notes: GenPept AQW35073.1 is the 103 aa Streptomyces griseoruber Sgr29 oxygenase
+        encoded by complement(KX817190.1:58328..58639) with gene qualifier mrqO5.
+  - subject: mrqo5
+    predicate: forms
+    object: decarboxylated_type_ii_polyketide
+    notes: This graph stops at the decarboxylated intermediate because MITE0000465
+      marks the substrate and product as intermediates rather than final murayaquinone.
+    evidence:
+    - reference: DOI:10.1021/acschembio.5c00695
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Decarboxylase Activity of an Antibiotic Biosynthesis Monooxygenase
+        Family Protein in the Biosynthesis of the Type II Polyketide Murayaquinone
+      notes: Zhou et al. characterized decarboxylase activity from a monooxygenase-family
+        protein in type II polyketide murayaquinone biosynthesis; MITE curates MrqO5
+        from this DOI as an in vitro decarboxylation reaction.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000465
+      evidence_type: DATABASE_ASSERTION
+      snippet: Decarboxylation of aromatic type II polyketide biosynthesis intermediate
+      retrieved_on: '2026-10-01'
+      notes: MITE0000465 is an active MrqO5 cofactor-independent monooxygenase entry
+        for decarboxylation of an aromatic type II polyketide murayaquinone biosynthesis
+        intermediate; it links UniProtKB:A0A1S6QMP3, GenPept AQW35073.1, MIBiG BGC0001675
+        and the Zhou et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001675.5/BGC0001675.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AQW35073.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001675.5 places AQW35073.1 inside the active Streptomyces griseoruber
+        Sgr29 murayaquinone cluster as the mrqO5 oxygenase CDS.
+    - reference: https://www.uniprot.org/uniprotkb/A0A1S6QMP3
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=mrqO5
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:A0A1S6QMP3 resolves as a 103 aa Streptomyces
+        griseoruber MrqO5 oxygenase and cross-references EMBL KX817190 protein AQW35073.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AQW35073.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: oxygenase [Streptomyces griseoruber]
+      retrieved_on: '2026-10-01'
+      notes: GenPept AQW35073.1 is the 103 aa Streptomyces griseoruber Sgr29 oxygenase
+        encoded by complement(KX817190.1:58328..58639) with gene qualifier mrqO5.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -125,3 +265,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T22:23:57Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a UniProt-grounded MrqO5 decarboxylation pathway step and partial
+    BIOSYNTHESIS causal graph for murayaquinone.
+  llm_assisted: true
