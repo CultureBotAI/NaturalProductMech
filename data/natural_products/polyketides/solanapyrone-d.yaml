@@ -105,6 +105,161 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-029f6486f7
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:D7UQ40
+  enzyme_label: Sol5 bifunctional solanapyrone synthase
+  reaction_id: RHEA:75143
+  substrate: CHEBI:63164
+  product: CHEBI:38240
+  notes: Alternaria solani Sol5 catalyzes the cycloisomerization of prosolanapyrone
+    III to solanapyrone D; UniProt and Rhea ground this half-reaction as RHEA:75143.
+  evidence:
+  - reference: DOI:10.1002/cbic.201000173
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Sol5, encoding a flavin-dependent oxidase (solanapyrone synthase, SPS),
+      was expressed in Pichia pastoris and purified
+    notes: Kasahara et al. cloned the Alternaria solani solanapyrone biosynthetic
+      cluster AB514562, identified sol5 in the cluster, and expressed and purified
+      Sol5 as solanapyrone synthase.
+  - reference: DOI:10.1016/s0167-4838(98)00040-5
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: converting prosolanapyrone II to solanapyrones A and D via oxidation
+      and subsequent Diels-Alder reaction
+    notes: Katayama et al. detected Alternaria solani solanapyrone synthase activity
+      producing solanapyrone D in cell-free extracts and partially purified active
+      fractions.
+  - reference: DOI:10.1271/bbb.70600
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: identified as truncated solanapyrone synthase, and its N-terminal amino
+      acid sequence was found to be QETQNLNNFLESNAINP
+    notes: Katayama et al. purified a truncated Alternaria solani solanapyrone synthase
+      whose N terminus maps to the Sol5 sequence.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000146.3/
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG entry version 3 links BGC0000146 to the Alternaria solani AB514562
+      solanapyrone biosynthetic gene cluster; the GenBank record contains sol5 / BAJ09785.1
+      annotated as oxidase/Diels-Alderase.
+  - reference: https://www.uniprot.org/uniprotkb/D7UQ40
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: UniProtKB:D7UQ40 is the Alternaria solani sol5 / BAJ09785.1 bifunctional
+      solanapyrone synthase from EMBL AB514562 and annotates the RHEA:75143 prosolanapyrone
+      III to solanapyrone D cycloisomerase reaction.
+  - reference: https://www.rhea-db.org/rhea/75143
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: RHEA:75143 is the prosolanapyrone III to solanapyrone D reaction; RHEA:75144
+      is its left-to-right direction.
+causal_graphs:
+- graph_id: solanapyrone-d-sol5-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Alternaria solani Sol5-catalyzed conversion of prosolanapyrone III
+    to solanapyrone D.
+  nodes:
+  - node_id: prosolanapyrone_iii
+    label: prosolanapyrone III
+    node_type: PRECURSOR
+    identifier: CHEBI:63164
+    grounding_status: GROUNDED
+  - node_id: sol5
+    label: Sol5
+    node_type: ENZYME
+    identifier: UniProtKB:D7UQ40
+    grounding_status: GROUNDED
+  - node_id: solanapyrone_d
+    label: solanapyrone D
+    node_type: COMPOUND
+    identifier: CHEBI:38240
+    grounding_status: GROUNDED
+  edges:
+  - subject: prosolanapyrone_iii
+    predicate: is cyclized by
+    object: sol5
+    notes: RHEA:75143 places prosolanapyrone III on the substrate side of the Sol5-catalyzed
+      cycloisomerase reaction.
+    evidence:
+    - reference: DOI:10.1002/cbic.201000173
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Sol5, encoding a flavin-dependent oxidase (solanapyrone synthase, SPS),
+        was expressed in Pichia pastoris and purified
+      notes: Kasahara et al. cloned the Alternaria solani solanapyrone biosynthetic
+        cluster AB514562, identified sol5 in the cluster, and expressed and purified
+        Sol5 as solanapyrone synthase.
+    - reference: DOI:10.1016/s0167-4838(98)00040-5
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: converting prosolanapyrone II to solanapyrones A and D via oxidation
+        and subsequent Diels-Alder reaction
+      notes: Katayama et al. detected Alternaria solani solanapyrone synthase activity
+        producing solanapyrone D in cell-free extracts and partially purified active
+        fractions.
+    - reference: DOI:10.1271/bbb.70600
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: identified as truncated solanapyrone synthase, and its N-terminal amino
+        acid sequence was found to be QETQNLNNFLESNAINP
+      notes: Katayama et al. purified a truncated Alternaria solani solanapyrone synthase
+        whose N terminus maps to the Sol5 sequence.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000146.3/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG entry version 3 links BGC0000146 to the Alternaria solani AB514562
+        solanapyrone biosynthetic gene cluster; the GenBank record contains sol5 /
+        BAJ09785.1 annotated as oxidase/Diels-Alderase.
+    - reference: https://www.uniprot.org/uniprotkb/D7UQ40
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:D7UQ40 is the Alternaria solani sol5 / BAJ09785.1 bifunctional
+        solanapyrone synthase from EMBL AB514562 and annotates the RHEA:75143 prosolanapyrone
+        III to solanapyrone D cycloisomerase reaction.
+    - reference: https://www.rhea-db.org/rhea/75143
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:75143 is the prosolanapyrone III to solanapyrone D reaction; RHEA:75144
+        is its left-to-right direction.
+  - subject: sol5
+    predicate: forms
+    object: solanapyrone_d
+    notes: RHEA:75143 places solanapyrone D on the product side of the Sol5-catalyzed
+      cycloisomerase reaction.
+    evidence:
+    - reference: DOI:10.1002/cbic.201000173
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Sol5, encoding a flavin-dependent oxidase (solanapyrone synthase, SPS),
+        was expressed in Pichia pastoris and purified
+      notes: Kasahara et al. cloned the Alternaria solani solanapyrone biosynthetic
+        cluster AB514562, identified sol5 in the cluster, and expressed and purified
+        Sol5 as solanapyrone synthase.
+    - reference: DOI:10.1016/s0167-4838(98)00040-5
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: converting prosolanapyrone II to solanapyrones A and D via oxidation
+        and subsequent Diels-Alder reaction
+      notes: Katayama et al. detected Alternaria solani solanapyrone synthase activity
+        producing solanapyrone D in cell-free extracts and partially purified active
+        fractions.
+    - reference: DOI:10.1271/bbb.70600
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: identified as truncated solanapyrone synthase, and its N-terminal amino
+        acid sequence was found to be QETQNLNNFLESNAINP
+      notes: Katayama et al. purified a truncated Alternaria solani solanapyrone synthase
+        whose N terminus maps to the Sol5 sequence.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000146.3/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG entry version 3 links BGC0000146 to the Alternaria solani AB514562
+        solanapyrone biosynthetic gene cluster; the GenBank record contains sol5 /
+        BAJ09785.1 annotated as oxidase/Diels-Alderase.
+    - reference: https://www.uniprot.org/uniprotkb/D7UQ40
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:D7UQ40 is the Alternaria solani sol5 / BAJ09785.1 bifunctional
+        solanapyrone synthase from EMBL AB514562 and annotates the RHEA:75143 prosolanapyrone
+        III to solanapyrone D cycloisomerase reaction.
+    - reference: https://www.rhea-db.org/rhea/75143
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:75143 is the prosolanapyrone III to solanapyrone D reaction; RHEA:75144
+        is its left-to-right direction.
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
   curator: seed_from_sources
@@ -114,3 +269,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T00:59:49Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a RHEA-grounded Sol5 biosynthetic pathway step and causal graph for
+    converting prosolanapyrone III to solanapyrone D; grounded the BGC0000146 sol5
+    CDS to exact UniProtKB:D7UQ40.
+  llm_assisted: true
