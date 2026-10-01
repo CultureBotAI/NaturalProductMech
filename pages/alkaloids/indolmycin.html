@@ -46,7 +46,7 @@ same claim.</p>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
   <td>Streptomyces griseus subsp. griseus<br><span class="mono">NCBITaxon:67263</span></td>
-  <td><span class="tag weak">SOURCE_ASSERTION</span></td>
+  <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
   <td class="mono">mibig:BGC0001206</td>
   <td><span class="mono">PMID:25730866</span></td>
 </tr>
@@ -76,7 +76,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
   <td class="mono">mibig:BGC0001206</td>
   <td>Streptomyces griseus subsp. griseus<br><span class="mono">NCBITaxon:67263</span>
 </td>
-  <td><span class="tag ">CLUSTER_UNSTATED</span></td>
+  <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
   <td class="mono">genbank:KM596502.1</td>
 </tr>
 </table></div>
@@ -84,7 +84,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>Ind7 N-demethylindolmycin N-methyltransferase<br><span class="mono">UniProtKB:A0A0D4BSP3</span></td>
+  <td class="mono">RHEA:24726</td>
+  <td class="mono">ungrounded &rarr; naturalproductmech:mibig-3f4d7c9236</td>
+  <td class="mono">DOI:10.1073/pnas.1419964112</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Ind7 catalyzes the terminal SAM-dependent N-methylation of N-demethylindolmycin to indolmycin. The immediate precursor is named in the evidence-backed notes and graph because the neutral N-demethylindolmycin structure is not grounded in the local corpus.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial Streptomyces griseus subsp. griseus ATCC 12648 indolmycin biosynthesis graph for the Ind7-catalyzed terminal N-methylation.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>N-demethylindolmycin</td>
+  <td>is N-methylated by</td>
+  <td>Ind7 N-demethylindolmycin N-methyltransferase</td>
+  <td>Purified Ind7 transfers a SAM methyl group onto N-demethylindolmycin in the terminal indolmycin biosynthetic step.</td>
+  <td class="mono">DOI:10.1073/pnas.1419964112<br>https://mite.lisc.univie.ac.at/repository/MITE0000384<br>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk<br>https://www.uniprot.org/uniprotkb/A0A0D4BSP3</td>
+</tr>
+<tr>
+  <td>Ind7 N-demethylindolmycin N-methyltransferase</td>
+  <td>forms</td>
+  <td>indolmycin</td>
+  <td>The native ind7 knockout accumulates N-demethylindolmycin and cannot produce mature indolmycin.</td>
+  <td class="mono">DOI:10.1073/pnas.1419964112<br>https://mite.lisc.univie.ac.at/repository/MITE0000384<br>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk<br>https://www.uniprot.org/uniprotkb/A0A0D4BSP3</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

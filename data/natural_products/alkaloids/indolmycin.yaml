@@ -52,12 +52,13 @@ producer_taxon_groups:
 producer_organisms:
 - taxon_id: NCBITaxon:67263
   taxon_label: Streptomyces griseus subsp. griseus
-  evidence_basis: SOURCE_ASSERTION
+  evidence_basis: BGC_CHARACTERIZED
   biosynthetic_gene_cluster: mibig:BGC0001206
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
-    this field grades the taxon claim, which is a different question.'
+  notes: 'Locus evidence: Enzymatic assays|Knock-out studies. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
   evidence:
   - reference: PMID:25730866
     evidence_type: DATABASE_ASSERTION
@@ -75,7 +76,10 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:KM596502.1
   bgc_class:
   - OTHER
-  link_evidence_basis: CLUSTER_UNSTATED
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0001206
@@ -86,6 +90,146 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A0D4BSP3
+  enzyme_label: Ind7 N-demethylindolmycin N-methyltransferase
+  reaction_id: RHEA:24726
+  product: naturalproductmech:mibig-3f4d7c9236
+  notes: Ind7 catalyzes the terminal SAM-dependent N-methylation of N-demethylindolmycin
+    to indolmycin. The immediate precursor is named in the evidence-backed notes and
+    graph because the neutral N-demethylindolmycin structure is not grounded in the
+    local corpus.
+  evidence:
+  - reference: DOI:10.1073/pnas.1419964112
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: responsible for the last N-methyltransfer reaction
+    notes: Du et al. deleted ind7 in Streptomyces griseus subsp. griseus ATCC 12648
+      and observed N-demethylindolmycin accumulation, then verified in vitro that
+      Ind7 converts N-demethylindolmycin to indolmycin.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000384
+    evidence_type: DATABASE_ASSERTION
+    snippet: producing mature indolmycin
+    retrieved_on: '2026-10-01'
+    notes: MITE0000384 annotates Streptomyces griseus Ind7/A0A0D4BSP3 as a SAM-dependent
+      N-methyltransferase, links GenPept AJT38688.1 and MIBiG BGC0001206, and records
+      N-methylation of N-demethylindolmycin to indolmycin as its example reaction.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="AJT38688.1"
+    retrieved_on: '2026-10-01'
+    notes: GenBank KM596502.1 is the Streptomyces griseus subsp. griseus ATCC 12648
+      indolmycin cluster sequence and maps ind7 to AJT38688.1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="AJT38688.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0001206.5 maps the ind7 CDS to GenPept AJT38688.1 in the indolmycin
+      cluster.
+  - reference: https://www.uniprot.org/uniprotkb/A0A0D4BSP3
+    evidence_type: DATABASE_ASSERTION
+    snippet: GN=ind7
+    retrieved_on: '2026-10-01'
+    notes: Current reviewed UniProtKB:A0A0D4BSP3 resolves as the 237 aa Streptomyces
+      griseus Ind7 N-demethylindolmycin N-methyltransferase and cross-references EMBL
+      KM596502 protein AJT38688.1.
+causal_graphs:
+- graph_id: indolmycin-ind7-n-methylation
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces griseus subsp. griseus ATCC 12648 indolmycin biosynthesis
+    graph for the Ind7-catalyzed terminal N-methylation.
+  nodes:
+  - node_id: n_demethylindolmycin
+    label: N-demethylindolmycin
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: ind7
+    label: Ind7 N-demethylindolmycin N-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A0D4BSP3
+    grounding_status: GROUNDED
+  - node_id: indolmycin
+    label: indolmycin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-3f4d7c9236
+    grounding_status: GROUNDED
+  edges:
+  - subject: n_demethylindolmycin
+    predicate: is N-methylated by
+    object: ind7
+    notes: Purified Ind7 transfers a SAM methyl group onto N-demethylindolmycin in
+      the terminal indolmycin biosynthetic step.
+    evidence:
+    - reference: DOI:10.1073/pnas.1419964112
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: responsible for the last N-methyltransfer reaction
+      notes: Du et al. deleted ind7 in Streptomyces griseus subsp. griseus ATCC 12648
+        and observed N-demethylindolmycin accumulation, then verified in vitro that
+        Ind7 converts N-demethylindolmycin to indolmycin.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000384
+      evidence_type: DATABASE_ASSERTION
+      snippet: producing mature indolmycin
+      retrieved_on: '2026-10-01'
+      notes: MITE0000384 annotates Streptomyces griseus Ind7/A0A0D4BSP3 as a SAM-dependent
+        N-methyltransferase, links GenPept AJT38688.1 and MIBiG BGC0001206, and records
+        N-methylation of N-demethylindolmycin to indolmycin as its example reaction.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AJT38688.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank KM596502.1 is the Streptomyces griseus subsp. griseus ATCC 12648
+        indolmycin cluster sequence and maps ind7 to AJT38688.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AJT38688.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001206.5 maps the ind7 CDS to GenPept AJT38688.1 in the indolmycin
+        cluster.
+    - reference: https://www.uniprot.org/uniprotkb/A0A0D4BSP3
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=ind7
+      retrieved_on: '2026-10-01'
+      notes: Current reviewed UniProtKB:A0A0D4BSP3 resolves as the 237 aa Streptomyces
+        griseus Ind7 N-demethylindolmycin N-methyltransferase and cross-references
+        EMBL KM596502 protein AJT38688.1.
+  - subject: ind7
+    predicate: forms
+    object: indolmycin
+    notes: The native ind7 knockout accumulates N-demethylindolmycin and cannot produce
+      mature indolmycin.
+    evidence:
+    - reference: DOI:10.1073/pnas.1419964112
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: responsible for the last N-methyltransfer reaction
+      notes: Du et al. deleted ind7 in Streptomyces griseus subsp. griseus ATCC 12648
+        and observed N-demethylindolmycin accumulation, then verified in vitro that
+        Ind7 converts N-demethylindolmycin to indolmycin.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000384
+      evidence_type: DATABASE_ASSERTION
+      snippet: producing mature indolmycin
+      retrieved_on: '2026-10-01'
+      notes: MITE0000384 annotates Streptomyces griseus Ind7/A0A0D4BSP3 as a SAM-dependent
+        N-methyltransferase, links GenPept AJT38688.1 and MIBiG BGC0001206, and records
+        N-methylation of N-demethylindolmycin to indolmycin as its example reaction.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AJT38688.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank KM596502.1 is the Streptomyces griseus subsp. griseus ATCC 12648
+        indolmycin cluster sequence and maps ind7 to AJT38688.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001206.5/BGC0001206.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AJT38688.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001206.5 maps the ind7 CDS to GenPept AJT38688.1 in the indolmycin
+        cluster.
+    - reference: https://www.uniprot.org/uniprotkb/A0A0D4BSP3
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=ind7
+      retrieved_on: '2026-10-01'
+      notes: Current reviewed UniProtKB:A0A0D4BSP3 resolves as the 237 aa Streptomyces
+        griseus Ind7 N-demethylindolmycin N-methyltransferase and cross-references
+        EMBL KM596502 protein AJT38688.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -95,3 +239,13 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T17:19:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-01T17:21:13Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the evidence-backed Ind7 N-demethylindolmycin N-methyltransferase
+    biosynthetic pathway step and BIOSYNTHESIS causal graph grounded to UniProtKB:A0A0D4BSP3.
+  llm_assisted: true
