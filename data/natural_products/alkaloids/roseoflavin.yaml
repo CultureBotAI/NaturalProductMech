@@ -64,6 +64,76 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:K4RFM2
+  enzyme_label: RosA 8-amino-8-demethylriboflavin N,N-dimethyltransferase
+  reaction_id: RHEA:51944
+  notes: RosA is the Streptomyces davaonensis JCM 4913 BN159_8032 S-adenosyl-L-methionine-dependent
+    dimethyltransferase that performs the final AF-to-MAF-to-RoF methylations. BN159_8032
+    is outside the seeded BGC0000927 locus. RHEA:51944 captures the overall two-methylation
+    reaction to CHEBI:136521 roseoflavin(1-), the major pH 7.3 microspecies of exact
+    stereochemical CHEBI:72346 roseoflavin; the MIBiG-seeded record remains minted
+    because its roseoflavin structure is stereochemically incomplete.
+  evidence:
+  - reference: DOI:10.1074/jbc.M111.292300
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: RosA catalyzes the two terminal steps of roseoflavin biosynthesis
+    notes: Jankowitsch et al. purified N,N-8-amino-8-demethyl-D-riboflavin dimethyltransferase
+      activity from S. davawensis, matched peptides to sda77220, named the gene rosA,
+      expressed RosA in Escherichia coli, and showed that rosA inactivation produced
+      AF but not MAF or roseoflavin.
+  - reference: https://www.uniprot.org/uniprotkb/K4RFM2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:K4RFM2 is S. davaonensis JCM 4913 BN159_8032/rosA, maps
+      to EMBL HE971709 protein CCK32410.1, and annotates catalytic activity RHEA:51944.
+  substrate: CHEBI:136518
+  product: CHEBI:136521
+causal_graphs:
+- graph_id: roseoflavin-rosa-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Terminal roseoflavin N,N-dimethylation by S. davaonensis JCM 4913 RosA
+    from 8-amino-8-demethylriboflavin to roseoflavin.
+  nodes:
+  - node_id: amino_demethylriboflavin
+    label: 8-amino-8-demethylriboflavin(1-)
+    node_type: PRECURSOR
+    identifier: CHEBI:136518
+    grounding_status: GROUNDED
+  - node_id: rosa
+    label: RosA
+    node_type: ENZYME
+    identifier: UniProtKB:K4RFM2
+    grounding_status: GROUNDED
+  - node_id: roseoflavin
+    label: roseoflavin(1-)
+    node_type: COMPOUND
+    identifier: CHEBI:136521
+    grounding_status: GROUNDED
+  edges:
+  - subject: amino_demethylriboflavin
+    predicate: is N,N-dimethylated by
+    object: rosa
+    notes: RosA transfers two methyl groups from SAM to convert AF through MAF into
+      the dimethylated roseoflavin scaffold.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.292300
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: RosA catalyzes the two terminal steps of roseoflavin biosynthesis
+      notes: The same work connected purified and recombinant RosA to AF dimethylation
+        and showed rosA inactivation blocked MAF and roseoflavin formation.
+  - subject: rosa
+    predicate: forms
+    object: roseoflavin
+    notes: RosA catalyzes the final two methylations of the roseoflavin biosynthetic
+      pathway.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.292300
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: RosA catalyzes the two terminal steps of roseoflavin biosynthesis
+      notes: The same work connected purified and recombinant RosA to AF dimethylation
+        and showed rosA inactivation blocked MAF and roseoflavin formation.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -73,3 +143,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T07:05:47Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a UniProt-grounded RosA terminal biosynthetic_pathway step and BIOSYNTHESIS
+    causal graph for RHEA:51944 roseoflavin formation, while noting that RosA is outside
+    the seeded BGC0000927 slice and the seeded MIBiG structure is stereochemically
+    incomplete.
+  llm_assisted: true
