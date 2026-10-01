@@ -124,6 +124,73 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0002485, BGC0002551.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A5Q0TWZ6
+  enzyme_label: MusF1
+  proposed: true
+  notes: The Nostoc sp. UHCC-0398 MusF1 cyanobactin prenyltransferase is curated as
+    the C-terminal prenyltransferase for a muscoride A precursor. The exact carboxy-prenylated
+    intermediate is left ungrounded.
+  evidence:
+  - reference: DOI:10.1021/acschembio.9b00620
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus
+    notes: Mattila et al. identified the muscoride biosynthetic gene cluster from
+      Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical
+      assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation
+      during muscoride A/B biosynthesis.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    snippet: muscoride biosynthetic gene cluster
+    notes: GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene
+      cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360
+      BGC0002551 locus interval.
+  - reference: https://www.uniprot.org/uniprotkb/A0A5Q0TWZ6/entry
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:A0A5Q0TWZ6 is the Nostoc sp. UHCC-0398 musF1 entry cross-referenced
+      to EMBL MK806444.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QGA72595.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    snippet: muscoride prenyltransferase
+    notes: NCBI GenPept QGA72595.1 is the 300 aa MK806444.1 musF1 coding sequence
+      and matches UniProtKB:A0A5Q0TWZ6.
+- step_number: 2
+  enzyme_id: UniProtKB:A0A5Q0TX00
+  enzyme_label: MusF2
+  proposed: true
+  notes: The Nostoc sp. UHCC-0398 MusF2 cyanobactin prenyltransferase is curated as
+    the N-terminal prenyltransferase for a muscoride A precursor. The exact amine-prenylated
+    intermediate is left ungrounded.
+  evidence:
+  - reference: DOI:10.1021/acschembio.9b00620
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: MusF1 acts on the carboxy-terminus while MusF2 acts on the amino-terminus
+    notes: Mattila et al. identified the muscoride biosynthetic gene cluster from
+      Nostoc sp. UHCC-0398, described MusE precursor processing, and used biochemical
+      assays to assign MusF1 to C-terminal prenylation and MusF2 to N-terminal prenylation
+      during muscoride A/B biosynthesis.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MK806444.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    snippet: muscoride biosynthetic gene cluster
+    notes: GenBank MK806444.1 is the Nostoc sp. UHCC-0398 muscoride biosynthetic gene
+      cluster and carries the musE, musF1, and musF2 coding sequences inside the 1..13360
+      BGC0002551 locus interval.
+  - reference: https://www.uniprot.org/uniprotkb/A0A5Q0TX00/entry
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    notes: UniProtKB:A0A5Q0TX00 is the Nostoc sp. UHCC-0398 musF2 entry cross-referenced
+      to EMBL MK806444.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QGA72594.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-28'
+    snippet: muscoride prenyltransferase
+    notes: NCBI GenPept QGA72594.1 is the 300 aa MK806444.1 musF2 coding sequence
+      and matches UniProtKB:A0A5Q0TX00.
 causal_graphs:
 - graph_id: muscoride-a-musf-terminal-prenylation
   scope: BIOSYNTHESIS
@@ -403,5 +470,12 @@ curation_history:
   action: RECORD_CURATED
   changes: Added a partial Nostoc sp. UHCC-0398 MusE/MusF1/MusF2 BIOSYNTHESIS causal
     graph for muscoride A terminal prenylation, grounded to exact UniProtKB entries
+    cross-referenced to the MK806444.1 muscoride cluster.
+  llm_assisted: true
+- timestamp: '2026-10-01T10:52:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added proposed Nostoc sp. UHCC-0398 MusF1 and MusF2 biosynthetic_pathway
+    steps for muscoride A terminal prenylation, grounded to exact UniProtKB entries
     cross-referenced to the MK806444.1 muscoride cluster.
   llm_assisted: true
