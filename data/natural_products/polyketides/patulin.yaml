@@ -386,6 +386,60 @@ biosynthetic_pathway:
     retrieved_on: '2026-09-30'
     notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TRK9 to RHEA:62228, the
       generalized oxidation of (E)-ascladiol to patulin.
+- step_number: 2
+  enzyme_id: UniProtKB:A0A075TMP8
+  enzyme_label: PatI cytochrome P450 monooxygenase
+  reaction_id: RHEA:62213
+  substrates:
+  - CHEBI:17069
+  products:
+  - CHEBI:5325
+  notes: PatI hydroxylates 3-hydroxybenzyl alcohol to gentisyl alcohol in the Penicillium
+    expansum patulin pathway. This partial pathway step leaves earlier m-cresol formation
+    and the later PatJ/PatO/PatN/PatF/PatD steps from gentisyl alcohol to (E)-ascladiol
+    uncurated.
+  evidence:
+  - reference: DOI:10.1111/1462-2920.14542
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
+      were verified in P. expansum
+    notes: Li et al. systematically dissected the Penicillium expansum patulin cluster;
+      MITE and UniProt both ground PatI hydroxylation to this DOI.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000459
+    evidence_type: DATABASE_ASSERTION
+    snippet: Hydroxylation of m-hydroxybenzyl alcohol to gentysil alcohol
+    retrieved_on: '2026-10-01'
+    notes: MITE0000459 is an active PatI cytochrome P450 entry for hydroxylation of
+      m-hydroxybenzyl alcohol to gentisyl alcohol in patulin biosynthesis; it links
+      UniProtKB:A0A075TMP8, GenPept AIG62145.1, MIBiG BGC0000120 and the Li et al.
+      DOI.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="AIG62145.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000120.5 places AIG62145.1 inside the active Penicillium expansum
+      NRRL 35695 patulin cluster as the patI cytochrome P450 CDS annotated as M-hydroxybenzyl
+      alcohol hydroxylase.
+  - reference: https://www.uniprot.org/uniprotkb/A0A075TMP8
+    evidence_type: DATABASE_ASSERTION
+    snippet: PatI catalyzes the conversion of m-hydroxybenzyl alcohol into gentisyl
+      alcohol
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:A0A075TMP8 is the 526 aa P. expansum cytochrome P450
+      monooxygenase patI encoded by patI/PEX2_082860; UniProt annotates RHEA:62213
+      as its left-to-right physiological 3-hydroxybenzyl alcohol to gentisyl alcohol
+      activity from PMID:30680886.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AIG62145.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: M-hydroxybenzyl alcohol hydroxylase [Penicillium expansum]
+    retrieved_on: '2026-10-01'
+    notes: GenPept AIG62145.1 is the 526 aa Penicillium expansum NRRL 35695 CYP619C2
+      cytochrome P450 encoded by KF899892.1 in the patulin biosynthetic cluster.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TMP8 to the left-to-right
+      RHEA:62213 hydroxylation reaction.
 causal_graphs:
 - graph_id: patulin-pate-oxidation
   scope: BIOSYNTHESIS
@@ -480,6 +534,121 @@ causal_graphs:
       retrieved_on: '2026-09-30'
       notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TRK9 to RHEA:62228,
         the generalized oxidation of (E)-ascladiol to patulin.
+- graph_id: patulin-pati-hydroxylation
+  scope: BIOSYNTHESIS
+  description: Partial P. expansum patulin biosynthesis graph for PatI-catalyzed hydroxylation
+    of 3-hydroxybenzyl alcohol to gentisyl alcohol.
+  nodes:
+  - node_id: m_hydroxybenzyl_alcohol
+    label: 3-hydroxybenzyl alcohol
+    node_type: PRECURSOR
+    identifier: CHEBI:17069
+    grounding_status: GROUNDED
+  - node_id: pati
+    label: PatI cytochrome P450 monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A075TMP8
+    grounding_status: GROUNDED
+  - node_id: gentisyl_alcohol
+    label: gentisyl alcohol
+    node_type: PRECURSOR
+    identifier: CHEBI:5325
+    grounding_status: GROUNDED
+  edges:
+  - subject: m_hydroxybenzyl_alcohol
+    predicate: is hydroxylated by
+    object: pati
+    notes: PatI hydroxylates 3-hydroxybenzyl alcohol to form gentisyl alcohol in the
+      patulin biosynthetic pathway.
+    evidence:
+    - reference: DOI:10.1111/1462-2920.14542
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
+        were verified in P. expansum
+      notes: Li et al. systematically dissected the Penicillium expansum patulin cluster;
+        MITE and UniProt both ground PatI hydroxylation to this DOI.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000459
+      evidence_type: DATABASE_ASSERTION
+      snippet: Hydroxylation of m-hydroxybenzyl alcohol to gentysil alcohol
+      retrieved_on: '2026-10-01'
+      notes: MITE0000459 is an active PatI cytochrome P450 entry for hydroxylation
+        of m-hydroxybenzyl alcohol to gentisyl alcohol in patulin biosynthesis; it
+        links UniProtKB:A0A075TMP8, GenPept AIG62145.1, MIBiG BGC0000120 and the Li
+        et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AIG62145.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000120.5 places AIG62145.1 inside the active Penicillium expansum
+        NRRL 35695 patulin cluster as the patI cytochrome P450 CDS annotated as M-hydroxybenzyl
+        alcohol hydroxylase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A075TMP8
+      evidence_type: DATABASE_ASSERTION
+      snippet: PatI catalyzes the conversion of m-hydroxybenzyl alcohol into gentisyl
+        alcohol
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A075TMP8 is the 526 aa P. expansum cytochrome P450
+        monooxygenase patI encoded by patI/PEX2_082860; UniProt annotates RHEA:62213
+        as its left-to-right physiological 3-hydroxybenzyl alcohol to gentisyl alcohol
+        activity from PMID:30680886.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AIG62145.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: M-hydroxybenzyl alcohol hydroxylase [Penicillium expansum]
+      retrieved_on: '2026-10-01'
+      notes: GenPept AIG62145.1 is the 526 aa Penicillium expansum NRRL 35695 CYP619C2
+        cytochrome P450 encoded by KF899892.1 in the patulin biosynthetic cluster.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TMP8 to the left-to-right
+        RHEA:62213 hydroxylation reaction.
+  - subject: pati
+    predicate: forms
+    object: gentisyl_alcohol
+    notes: This graph stops at gentisyl alcohol because the downstream conversion
+      to (E)-ascladiol is not part of this PatI curation.
+    evidence:
+    - reference: DOI:10.1111/1462-2920.14542
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
+        were verified in P. expansum
+      notes: Li et al. systematically dissected the Penicillium expansum patulin cluster;
+        MITE and UniProt both ground PatI hydroxylation to this DOI.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000459
+      evidence_type: DATABASE_ASSERTION
+      snippet: Hydroxylation of m-hydroxybenzyl alcohol to gentysil alcohol
+      retrieved_on: '2026-10-01'
+      notes: MITE0000459 is an active PatI cytochrome P450 entry for hydroxylation
+        of m-hydroxybenzyl alcohol to gentisyl alcohol in patulin biosynthesis; it
+        links UniProtKB:A0A075TMP8, GenPept AIG62145.1, MIBiG BGC0000120 and the Li
+        et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AIG62145.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000120.5 places AIG62145.1 inside the active Penicillium expansum
+        NRRL 35695 patulin cluster as the patI cytochrome P450 CDS annotated as M-hydroxybenzyl
+        alcohol hydroxylase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A075TMP8
+      evidence_type: DATABASE_ASSERTION
+      snippet: PatI catalyzes the conversion of m-hydroxybenzyl alcohol into gentisyl
+        alcohol
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A075TMP8 is the 526 aa P. expansum cytochrome P450
+        monooxygenase patI encoded by patI/PEX2_082860; UniProt annotates RHEA:62213
+        as its left-to-right physiological 3-hydroxybenzyl alcohol to gentisyl alcohol
+        activity from PMID:30680886.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AIG62145.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: M-hydroxybenzyl alcohol hydroxylase [Penicillium expansum]
+      retrieved_on: '2026-10-01'
+      notes: GenPept AIG62145.1 is the 526 aa Penicillium expansum NRRL 35695 CYP619C2
+        cytochrome P450 encoded by KF899892.1 in the patulin biosynthetic cluster.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TMP8 to the left-to-right
+        RHEA:62213 hydroxylation reaction.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -495,4 +664,10 @@ curation_history:
   changes: Added a PatE/UniProtKB:A0A075TRK9 terminal oxidation pathway step and biosynthesis
     causal graph for P. expansum conversion of (E)-ascladiol to patulin, grounded
     by DOI, MIBiG, UniProt, and Rhea evidence.
+  llm_assisted: true
+- timestamp: '2026-10-01T22:50:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a UniProt-grounded PatI hydroxylation pathway step and partial BIOSYNTHESIS
+    causal graph for patulin.
   llm_assisted: true
