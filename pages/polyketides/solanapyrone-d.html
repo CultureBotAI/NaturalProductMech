@@ -89,7 +89,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>Sol5 bifunctional solanapyrone synthase<br><span class="mono">UniProtKB:D7UQ40</span></td>
+  <td class="mono">RHEA:75143</td>
+  <td class="mono">CHEBI:63164 &rarr; CHEBI:38240</td>
+  <td class="mono">DOI:10.1002/cbic.201000173</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Alternaria solani Sol5 catalyzes the cycloisomerization of prosolanapyrone III to solanapyrone D; UniProt and Rhea ground this half-reaction as RHEA:75143.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Alternaria solani Sol5-catalyzed conversion of prosolanapyrone III to solanapyrone D.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>prosolanapyrone III</td>
+  <td>is cyclized by</td>
+  <td>Sol5</td>
+  <td>RHEA:75143 places prosolanapyrone III on the substrate side of the Sol5-catalyzed cycloisomerase reaction.</td>
+  <td class="mono">DOI:10.1002/cbic.201000173<br>DOI:10.1016/s0167-4838(98)00040-5<br>DOI:10.1271/bbb.70600<br>https://mibig.secondarymetabolites.org/repository/BGC0000146.3/<br>https://www.uniprot.org/uniprotkb/D7UQ40<br>https://www.rhea-db.org/rhea/75143</td>
+</tr>
+<tr>
+  <td>Sol5</td>
+  <td>forms</td>
+  <td>solanapyrone D</td>
+  <td>RHEA:75143 places solanapyrone D on the product side of the Sol5-catalyzed cycloisomerase reaction.</td>
+  <td class="mono">DOI:10.1002/cbic.201000173<br>DOI:10.1016/s0167-4838(98)00040-5<br>DOI:10.1271/bbb.70600<br>https://mibig.secondarymetabolites.org/repository/BGC0000146.3/<br>https://www.uniprot.org/uniprotkb/D7UQ40<br>https://www.rhea-db.org/rhea/75143</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
