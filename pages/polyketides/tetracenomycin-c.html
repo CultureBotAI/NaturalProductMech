@@ -189,7 +189,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>2</td>
+  <td>TcmG tetracenomycin A2 monooxygenase-dioxygenase<br><span class="mono">UniProtKB:P39888</span></td>
+  <td class="mono">RHEA:42820</td>
+  <td class="mono">CHEBI:32197 &rarr; CHEBI:9470</td>
+  <td class="mono">DOI:10.1128/jb.175.12.3876-3886.1993</td>
+</tr>
+</table></div>
+<p class="sub">Step 2: This curates the final Streptomyces glaucescens TcmG-catalyzed triple hydroxylation of tetracenomycin A2 to tetracenomycin C; the preceding TcmP methylation and earlier polyketide assembly steps remain uncurated.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial Streptomyces glaucescens tetracenomycin C biosynthesis graph for TcmG-catalyzed triple hydroxylation of tetracenomycin A2.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>tetracenomycin A2</td>
+  <td>is hydroxylated by</td>
+  <td>TcmG</td>
+  <td>RHEA:42820 also consumes two NADPH and two O2 molecules in this TcmG-catalyzed terminal oxygenase step.</td>
+  <td class="mono">DOI:10.1128/jb.175.12.3876-3886.1993<br>DOI:10.1016/s0021-9258(18)43874-4<br>DOI:10.1021/ol0002267<br>https://mibig.secondarymetabolites.org/repository/BGC0000275.4/<br>https://www.uniprot.org/uniprotkb/P39888<br>https://www.rhea-db.org/rhea/42820</td>
+</tr>
+<tr>
+  <td>TcmG</td>
+  <td>forms</td>
+  <td>tetracenomycin C</td>
+  <td>RHEA:42821 is the tetracenomycin C-forming physiological direction.</td>
+  <td class="mono">DOI:10.1128/jb.175.12.3876-3886.1993<br>DOI:10.1016/s0021-9258(18)43874-4<br>DOI:10.1021/ol0002267<br>https://mibig.secondarymetabolites.org/repository/BGC0000275.4/<br>https://www.uniprot.org/uniprotkb/P39888<br>https://www.rhea-db.org/rhea/42820</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
