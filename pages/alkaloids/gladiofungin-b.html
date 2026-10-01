@@ -80,7 +80,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>LvStA_05069 AfsA-like offloading domain</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1002/anie.202005711</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: This curates the terminal AfsA-like offloading domain of the Burkholderia gladioli Lv-StA LvStA_05069/KAF1058474.1 trans-AT PKS as a required contributor to noncanonical chain release and butenolide formation in BGC0002083 gladiofungin B biosynthesis. The exact KAF1058474.1 GenPept accession did not resolve in UniProtKB accession search on 2026-09-27, so enzyme_id is left unfilled and the public GenPept sequence is cited as official NCBI grounding evidence.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial Burkholderia gladioli Lv-StA gladiofungin B biosynthesis graph for the terminal AfsA-like LvStA_05069 offloading-domain contribution to butenolide-containing chain release.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>LvStA_05069 AfsA-like offloading domain</td>
+  <td>is required for</td>
+  <td>butenolide-forming polyketide chain release</td>
+  <td>CRISPR/Cas deletion inside the AfsA-like terminal domain abolished gladiofungin A/B production without detectable polar effects on the downstream glaF and glaG genes. This edge is scoped to the terminal domain and does not assert a free substrate or the full PKS assembly order.</td>
+  <td class="mono">DOI:10.1002/anie.202005711<br>mibig:BGC0002083<br>https://www.ncbi.nlm.nih.gov/protein/KAF1058474.1<br>https://www.ncbi.nlm.nih.gov/nuccore/WITE01000004.1</td>
+</tr>
+<tr>
+  <td>butenolide-forming polyketide chain release</td>
+  <td>contributes to</td>
+  <td>gladiofungin B</td>
+  <td>The terminal AfsA-like domain is curated as a required domain for the butenolide-bearing chain-release phase of gladiofungin B biosynthesis; earlier glutarimide and polyketide-chain assembly steps remain unexpanded.</td>
+  <td class="mono">DOI:10.1002/anie.202005711<br>mibig:BGC0002083<br>https://www.ncbi.nlm.nih.gov/protein/KAF1058474.1<br>https://www.ncbi.nlm.nih.gov/nuccore/WITE01000004.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
