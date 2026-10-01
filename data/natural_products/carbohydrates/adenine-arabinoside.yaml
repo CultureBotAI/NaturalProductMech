@@ -154,6 +154,159 @@ discussions:
   prompt: ChEBI calls this structure 'adenine arabinoside' and MIBiG calls it 'vidarabine'.
     They share a Standard InChIKey, so if the names denote different compounds then
     one upstream record has the wrong structure. Check which.
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A1S5NPU2
+  enzyme_label: PenF arabinoside monophosphate 5'-nucleotidase
+  substrate: pubchem.compound:34768
+  product: CHEBI:45327
+  proposed: true
+  notes: PenF hydrolyzes vidarabine phosphate, also called vidarabine 5'-monophosphate
+    or Ara-AMP, to adenine arabinoside (Ara-A, vidarabine) in vitro. This partial
+    Streptomyces antibioticus NRRL 3238 pathway records the biochemically supported
+    conversion as a proposed vidarabine biosynthetic step and leaves the upstream
+    formation of Ara-AMP unresolved.
+  evidence:
+  - reference: DOI:10.3390/biom14111368
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: PenF catalyzed the hydrolysis of Ara-AMP into Ara-A
+    notes: Li et al. recombinantly expressed S. antibioticus NRRL 3238 PenF, identified
+      its source sequence as NCBI Protein AKA87335.1, and biochemically characterized
+      vidarabine 5'-monophosphate hydrolysis to Ara-A by HPLC and LC-MS.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: gene="penF"
+    retrieved_on: '2026-10-01'
+    notes: GenBank KJ856912.1 maps Streptomyces antibioticus NRRL 3238 penF to the
+      18484..19560 CDS and assigns protein_id AKA87335.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AKA87335.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: metal dependent phosphohydrolase
+    retrieved_on: '2026-10-01'
+    notes: NCBI GenPept AKA87335.1 is the 358 aa Streptomyces antibioticus PenF coding
+      sequence used by Li et al.; its sequence is identical to the current UniProtKB:A0A1S5NPU2
+      FASTA.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="AKA87335.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0001735.5 places penF at 18484..19560 in the Streptomyces antibioticus
+      pentostatin and vidarabine gene cluster and annotates the CDS as AKA87335.1
+      metal dependent phosphohydrolase.
+  - reference: https://www.uniprot.org/uniprotkb/A0A1S5NPU2
+    evidence_type: DATABASE_ASSERTION
+    snippet: GN=penF
+    retrieved_on: '2026-10-01'
+    notes: Current UniProtKB:A0A1S5NPU2 resolves as the unreviewed 358 aa Streptomyces
+      antibioticus metal dependent phosphohydrolase PenF; the retrieved UniProt JSON
+      had no EMBL KJ856912.1 xref, so this grounding was accepted from the resolved
+      accession, organism, gene, product, length and exact sequence identity to GenPept
+      AKA87335.1.
+causal_graphs:
+- graph_id: adenine-arabinoside-penf-dephosphorylation
+  scope: BIOSYNTHESIS
+  description: Proposed Streptomyces antibioticus NRRL 3238 PenF dephosphorylation
+    of vidarabine phosphate during adenine arabinoside biosynthesis.
+  nodes:
+  - node_id: vidarabine_phosphate
+    label: vidarabine phosphate
+    node_type: PRECURSOR
+    identifier: pubchem.compound:34768
+    grounding_status: GROUNDED
+  - node_id: penf
+    label: PenF
+    node_type: ENZYME
+    identifier: UniProtKB:A0A1S5NPU2
+    grounding_status: GROUNDED
+  - node_id: adenine_arabinoside
+    label: adenine arabinoside
+    node_type: COMPOUND
+    identifier: CHEBI:45327
+    grounding_status: GROUNDED
+  edges:
+  - subject: vidarabine_phosphate
+    predicate: is dephosphorylated by
+    object: penf
+    notes: Recombinant PenF catalyzes hydrolytic dephosphorylation of Ara-AMP to Ara-A;
+      the in-cluster step is proposed because the source did not identify the upstream
+      enzyme that forms the Ara-AMP substrate.
+    evidence:
+    - reference: DOI:10.3390/biom14111368
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: PenF catalyzed the hydrolysis of Ara-AMP into Ara-A
+      notes: Li et al. recombinantly expressed S. antibioticus NRRL 3238 PenF, identified
+        its source sequence as NCBI Protein AKA87335.1, and biochemically characterized
+        vidarabine 5'-monophosphate hydrolysis to Ara-A by HPLC and LC-MS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: gene="penF"
+      retrieved_on: '2026-10-01'
+      notes: GenBank KJ856912.1 maps Streptomyces antibioticus NRRL 3238 penF to the
+        18484..19560 CDS and assigns protein_id AKA87335.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AKA87335.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: metal dependent phosphohydrolase
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept AKA87335.1 is the 358 aa Streptomyces antibioticus PenF
+        coding sequence used by Li et al.; its sequence is identical to the current
+        UniProtKB:A0A1S5NPU2 FASTA.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AKA87335.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001735.5 places penF at 18484..19560 in the Streptomyces antibioticus
+        pentostatin and vidarabine gene cluster and annotates the CDS as AKA87335.1
+        metal dependent phosphohydrolase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A1S5NPU2
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=penF
+      retrieved_on: '2026-10-01'
+      notes: Current UniProtKB:A0A1S5NPU2 resolves as the unreviewed 358 aa Streptomyces
+        antibioticus metal dependent phosphohydrolase PenF; the retrieved UniProt
+        JSON had no EMBL KJ856912.1 xref, so this grounding was accepted from the
+        resolved accession, organism, gene, product, length and exact sequence identity
+        to GenPept AKA87335.1.
+  - subject: penf
+    predicate: forms
+    object: adenine_arabinoside
+    notes: PenF forms adenine arabinoside from the phosphorylated precursor in vitro
+      and is proposed to act as a 5'-nucleotidase in vidarabine biosynthesis.
+    evidence:
+    - reference: DOI:10.3390/biom14111368
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: PenF catalyzed the hydrolysis of Ara-AMP into Ara-A
+      notes: Li et al. recombinantly expressed S. antibioticus NRRL 3238 PenF, identified
+        its source sequence as NCBI Protein AKA87335.1, and biochemically characterized
+        vidarabine 5'-monophosphate hydrolysis to Ara-A by HPLC and LC-MS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: gene="penF"
+      retrieved_on: '2026-10-01'
+      notes: GenBank KJ856912.1 maps Streptomyces antibioticus NRRL 3238 penF to the
+        18484..19560 CDS and assigns protein_id AKA87335.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AKA87335.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: metal dependent phosphohydrolase
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept AKA87335.1 is the 358 aa Streptomyces antibioticus PenF
+        coding sequence used by Li et al.; its sequence is identical to the current
+        UniProtKB:A0A1S5NPU2 FASTA.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AKA87335.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001735.5 places penF at 18484..19560 in the Streptomyces antibioticus
+        pentostatin and vidarabine gene cluster and annotates the CDS as AKA87335.1
+        metal dependent phosphohydrolase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A1S5NPU2
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=penF
+      retrieved_on: '2026-10-01'
+      notes: Current UniProtKB:A0A1S5NPU2 resolves as the unreviewed 358 aa Streptomyces
+        antibioticus metal dependent phosphohydrolase PenF; the retrieved UniProt
+        JSON had no EMBL KJ856912.1 xref, so this grounding was accepted from the
+        resolved accession, organism, gene, product, length and exact sequence identity
+        to GenPept AKA87335.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -163,3 +316,17 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T16:00:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a proposed BIOSYNTHESIS graph and pathway step for PenF dephosphorylation
+    of vidarabine phosphate to adenine arabinoside, grounding the Streptomyces antibioticus
+    PenF enzyme to UniProtKB:A0A1S5NPU2 by exact sequence identity to GenPept AKA87335.1
+    and leaving the step without a Rhea reaction because no exact Rhea entry was found.
+  llm_assisted: true
+- timestamp: '2026-10-01T16:15:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Regrounded the vidarabine phosphate/Ara-AMP precursor to pubchem.compound:34768,
+    retaining the proposed PenF reaction and UniProtKB:A0A1S5NPU2 enzyme grounding.
+  llm_assisted: true

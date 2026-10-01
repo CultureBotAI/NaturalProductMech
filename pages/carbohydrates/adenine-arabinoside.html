@@ -104,7 +104,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>PenF arabinoside monophosphate 5&#39;-nucleotidase<br><span class="mono">UniProtKB:A0A1S5NPU2</span></td>
+  <td class="mono"></td>
+  <td class="mono">pubchem.compound:34768 &rarr; CHEBI:45327</td>
+  <td class="mono">DOI:10.3390/biom14111368</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: PenF hydrolyzes vidarabine phosphate, also called vidarabine 5&#39;-monophosphate or Ara-AMP, to adenine arabinoside (Ara-A, vidarabine) in vitro. This partial Streptomyces antibioticus NRRL 3238 pathway records the biochemically supported conversion as a proposed vidarabine biosynthetic step and leaves the upstream formation of Ara-AMP unresolved.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Proposed Streptomyces antibioticus NRRL 3238 PenF dephosphorylation of vidarabine phosphate during adenine arabinoside biosynthesis.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>vidarabine phosphate</td>
+  <td>is dephosphorylated by</td>
+  <td>PenF</td>
+  <td>Recombinant PenF catalyzes hydrolytic dephosphorylation of Ara-AMP to Ara-A; the in-cluster step is proposed because the source did not identify the upstream enzyme that forms the Ara-AMP substrate.</td>
+  <td class="mono">DOI:10.3390/biom14111368<br>https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1<br>https://www.ncbi.nlm.nih.gov/protein/AKA87335.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk<br>https://www.uniprot.org/uniprotkb/A0A1S5NPU2</td>
+</tr>
+<tr>
+  <td>PenF</td>
+  <td>forms</td>
+  <td>adenine arabinoside</td>
+  <td>PenF forms adenine arabinoside from the phosphorylated precursor in vitro and is proposed to act as a 5&#39;-nucleotidase in vidarabine biosynthesis.</td>
+  <td class="mono">DOI:10.3390/biom14111368<br>https://www.ncbi.nlm.nih.gov/nuccore/KJ856912.1<br>https://www.ncbi.nlm.nih.gov/protein/AKA87335.1<br>https://mibig.secondarymetabolites.org/repository/BGC0001735.5/BGC0001735.gbk<br>https://www.uniprot.org/uniprotkb/A0A1S5NPU2</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
