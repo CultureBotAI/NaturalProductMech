@@ -219,6 +219,147 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-7d7d091616
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A455R4X0
+  enzyme_label: AscG cytochrome P450 monooxygenase
+  reaction_id: RHEA:63100
+  product: CHEBI:156219
+  notes: AscG oxidizes AscF-derived ilicicolin C to ascochlorin in the terminal step
+    of the Acremonium egyptiacum ascochlorin branch. This single-step partial pathway
+    leaves the upstream AscA-AscF steps uncurated.
+  evidence:
+  - reference: DOI:10.1073/pnas.1819254116
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: was oxidized into 2 by the P450 monooxygenase AscG
+    notes: Araki et al. reconstituted the Acremonium egyptiacum AscE, AscF and AscG
+      reactions in vitro from ilicicolin A and identified the three-enzyme product
+      as ascochlorin by MS/MS comparison and authentic-standard coinjection.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000379
+    evidence_type: DATABASE_ASSERTION
+    snippet: Conversion of alicicolin C to ascochlorin.
+    retrieved_on: '2026-10-01'
+    notes: MITE0000379 is an active, non-intermediate AscG entry for the oxidative
+      terminal ascochlorin step. It links UniProtKB:A0A455R4X0, GenPept BBF25319.1,
+      MIBiG BGC0001923, RHEA:63100 and the Araki et al. DOI.
+  - reference: https://www.uniprot.org/uniprotkb/A0A455R4X0
+    evidence_type: DATABASE_ASSERTION
+    snippet: Cytochrome P450 monooxygenase ascG
+    retrieved_on: '2026-10-01'
+    notes: Current Swiss-Prot UniProtKB:A0A455R4X0 resolves as Acremonium egyptiacum
+      AscG, length 534 aa, gene ascG, EC 1.14.14.-. It cross-references EMBL LC406756
+      protein BBF25319.1 and annotates RHEA:63100 for AscG-catalyzed ilicicolin C
+      oxidation to ascochlorin.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BBF25319.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: cytochrome P450 [Acremonium egyptiacum]
+    retrieved_on: '2026-10-01'
+    notes: GenPept BBF25319.1 is the 534 aa Acremonium egyptiacum F-1392 ascG product
+      encoded by LC406756.1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001923.3/BGC0001923.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="BBF25319.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0001923.3 is the Acremonium egyptiacum F-1392 ascochlorin cluster
+      record and places ascG/BBF25319.1 in the cluster.
+causal_graphs:
+- graph_id: ascochlorin-ascg-oxidation
+  scope: BIOSYNTHESIS
+  description: Late Acremonium egyptiacum ascochlorin biosynthesis graph for AscG-catalyzed
+    ilicicolin C oxidation to ascochlorin.
+  nodes:
+  - node_id: ilicicolin_c
+    label: ilicicolin C
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: ascg
+    label: AscG cytochrome P450 monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A455R4X0
+    grounding_status: GROUNDED
+  - node_id: ascochlorin
+    label: ascochlorin
+    node_type: COMPOUND
+    identifier: CHEBI:156219
+    grounding_status: GROUNDED
+  edges:
+  - subject: ilicicolin_c
+    predicate: is oxidized by
+    object: ascg
+    notes: AscG oxidizes the AscF cyclization product ilicicolin C in the terminal
+      ascochlorin branch.
+    evidence:
+    - reference: DOI:10.1073/pnas.1819254116
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: was oxidized into 2 by the P450 monooxygenase AscG
+      notes: Araki et al. reconstituted the Acremonium egyptiacum AscE, AscF and AscG
+        reactions in vitro from ilicicolin A and identified the three-enzyme product
+        as ascochlorin by MS/MS comparison and authentic-standard coinjection.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000379
+      evidence_type: DATABASE_ASSERTION
+      snippet: Conversion of alicicolin C to ascochlorin.
+      retrieved_on: '2026-10-01'
+      notes: MITE0000379 is an active, non-intermediate AscG entry for the oxidative
+        terminal ascochlorin step. It links UniProtKB:A0A455R4X0, GenPept BBF25319.1,
+        MIBiG BGC0001923, RHEA:63100 and the Araki et al. DOI.
+    - reference: https://www.uniprot.org/uniprotkb/A0A455R4X0
+      evidence_type: DATABASE_ASSERTION
+      snippet: Cytochrome P450 monooxygenase ascG
+      retrieved_on: '2026-10-01'
+      notes: Current Swiss-Prot UniProtKB:A0A455R4X0 resolves as Acremonium egyptiacum
+        AscG, length 534 aa, gene ascG, EC 1.14.14.-. It cross-references EMBL LC406756
+        protein BBF25319.1 and annotates RHEA:63100 for AscG-catalyzed ilicicolin
+        C oxidation to ascochlorin.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BBF25319.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: cytochrome P450 [Acremonium egyptiacum]
+      retrieved_on: '2026-10-01'
+      notes: GenPept BBF25319.1 is the 534 aa Acremonium egyptiacum F-1392 ascG product
+        encoded by LC406756.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001923.3/BGC0001923.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="BBF25319.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001923.3 is the Acremonium egyptiacum F-1392 ascochlorin cluster
+        record and places ascG/BBF25319.1 in the cluster.
+  - subject: ascg
+    predicate: forms
+    object: ascochlorin
+    notes: AscG forms CHEBI:156219 ascochlorin from ilicicolin C.
+    evidence:
+    - reference: DOI:10.1073/pnas.1819254116
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: was oxidized into 2 by the P450 monooxygenase AscG
+      notes: Araki et al. reconstituted the Acremonium egyptiacum AscE, AscF and AscG
+        reactions in vitro from ilicicolin A and identified the three-enzyme product
+        as ascochlorin by MS/MS comparison and authentic-standard coinjection.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000379
+      evidence_type: DATABASE_ASSERTION
+      snippet: Conversion of alicicolin C to ascochlorin.
+      retrieved_on: '2026-10-01'
+      notes: MITE0000379 is an active, non-intermediate AscG entry for the oxidative
+        terminal ascochlorin step. It links UniProtKB:A0A455R4X0, GenPept BBF25319.1,
+        MIBiG BGC0001923, RHEA:63100 and the Araki et al. DOI.
+    - reference: https://www.uniprot.org/uniprotkb/A0A455R4X0
+      evidence_type: DATABASE_ASSERTION
+      snippet: Cytochrome P450 monooxygenase ascG
+      retrieved_on: '2026-10-01'
+      notes: Current Swiss-Prot UniProtKB:A0A455R4X0 resolves as Acremonium egyptiacum
+        AscG, length 534 aa, gene ascG, EC 1.14.14.-. It cross-references EMBL LC406756
+        protein BBF25319.1 and annotates RHEA:63100 for AscG-catalyzed ilicicolin
+        C oxidation to ascochlorin.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BBF25319.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: cytochrome P450 [Acremonium egyptiacum]
+      retrieved_on: '2026-10-01'
+      notes: GenPept BBF25319.1 is the 534 aa Acremonium egyptiacum F-1392 ascG product
+        encoded by LC406756.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001923.3/BGC0001923.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="BBF25319.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001923.3 is the Acremonium egyptiacum F-1392 ascochlorin cluster
+        record and places ascG/BBF25319.1 in the cluster.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -232,3 +373,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T20:18:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the evidence-backed AscG terminal ascochlorin biosynthetic pathway
+    step and BIOSYNTHESIS causal graph grounded to UniProtKB:A0A455R4X0.
+  llm_assisted: true
