@@ -355,6 +355,158 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-5698b15c08
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 2
+  enzyme_id: UniProtKB:P39888
+  enzyme_label: TcmG tetracenomycin A2 monooxygenase-dioxygenase
+  reaction_id: RHEA:42820
+  notes: This curates the final Streptomyces glaucescens TcmG-catalyzed triple hydroxylation
+    of tetracenomycin A2 to tetracenomycin C; the preceding TcmP methylation and earlier
+    polyketide assembly steps remain uncurated.
+  evidence:
+  - reference: DOI:10.1128/jb.175.12.3876-3886.1993
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: tcmG is responsible for the hydroxylation of TCM A2 at positions C-4,
+      C-4a, and C-12a to give TCM C
+    notes: Decker et al. sequenced the Streptomyces glaucescens M80674 tcmG locus
+      and used heterologous expression to place tcmG in the final tetracenomycin C
+      hydroxylation step.
+  - reference: DOI:10.1016/s0021-9258(18)43874-4
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: The heterologous expression of the tcmG gene in Streptomyces lividans
+      and the purification and characterization of TcmG protein
+    notes: Shen and Hutchinson purified TcmG/Tcm A2 oxygenase and measured NADPH-dependent
+      conversion of tetracenomycin A2 toward tetracenomycin C.
+  - reference: DOI:10.1021/ol0002267
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: The TcmG or ElmG oxygenase-catalyzed triple hydroxylation of tetracenomycin
+      (Tcm) A2 to Tcm C
+    notes: Rafanan et al. established the monooxygenase-dioxygenase stoichiometry
+      captured by RHEA:42820.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000275.4/
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000275.4 encodes tcmG as GenBank protein AAA67511.1 in the Streptomyces
+      glaucescens M80674.1 tetracenomycin C cluster.
+  - reference: https://www.uniprot.org/uniprotkb/P39888
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:P39888 is the 561 aa Streptomyces glaucescens TcmG/tetracenomycin
+      A2 monooxygenase-dioxygenase, maps to EMBL M80674 protein AAA67511.1, and annotates
+      RHEA:42820 with physiological left-to-right direction RHEA:42821.
+  - reference: https://www.rhea-db.org/rhea/42820
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: RHEA:42820 captures tetracenomycin A2 + 2 NADPH + 2 O2 + 2 H(+) = tetracenomycin
+      C + 2 NADP(+) + H2O; local Rhea directions map the left-to-right product-forming
+      reaction to RHEA:42821 and UniProtKB:P39888.
+  substrate: CHEBI:32197
+  product: CHEBI:9470
+causal_graphs:
+- graph_id: tetracenomycin-c-tcmg-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces glaucescens tetracenomycin C biosynthesis graph
+    for TcmG-catalyzed triple hydroxylation of tetracenomycin A2.
+  nodes:
+  - node_id: tetracenomycin_a2
+    label: tetracenomycin A2
+    node_type: PRECURSOR
+    identifier: CHEBI:32197
+    grounding_status: GROUNDED
+  - node_id: tcmg
+    label: TcmG
+    node_type: ENZYME
+    identifier: UniProtKB:P39888
+    grounding_status: GROUNDED
+  - node_id: tetracenomycin_c
+    label: tetracenomycin C
+    node_type: COMPOUND
+    identifier: CHEBI:9470
+    grounding_status: GROUNDED
+  edges:
+  - subject: tetracenomycin_a2
+    predicate: is hydroxylated by
+    object: tcmg
+    notes: RHEA:42820 also consumes two NADPH and two O2 molecules in this TcmG-catalyzed
+      terminal oxygenase step.
+    evidence:
+    - reference: DOI:10.1128/jb.175.12.3876-3886.1993
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: tcmG is responsible for the hydroxylation of TCM A2 at positions C-4,
+        C-4a, and C-12a to give TCM C
+      notes: Decker et al. sequenced the Streptomyces glaucescens M80674 tcmG locus
+        and used heterologous expression to place tcmG in the final tetracenomycin
+        C hydroxylation step.
+    - reference: DOI:10.1016/s0021-9258(18)43874-4
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: The heterologous expression of the tcmG gene in Streptomyces lividans
+        and the purification and characterization of TcmG protein
+      notes: Shen and Hutchinson purified TcmG/Tcm A2 oxygenase and measured NADPH-dependent
+        conversion of tetracenomycin A2 toward tetracenomycin C.
+    - reference: DOI:10.1021/ol0002267
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: The TcmG or ElmG oxygenase-catalyzed triple hydroxylation of tetracenomycin
+        (Tcm) A2 to Tcm C
+      notes: Rafanan et al. established the monooxygenase-dioxygenase stoichiometry
+        captured by RHEA:42820.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000275.4/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000275.4 encodes tcmG as GenBank protein AAA67511.1 in the
+        Streptomyces glaucescens M80674.1 tetracenomycin C cluster.
+    - reference: https://www.uniprot.org/uniprotkb/P39888
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:P39888 is the 561 aa Streptomyces glaucescens TcmG/tetracenomycin
+        A2 monooxygenase-dioxygenase, maps to EMBL M80674 protein AAA67511.1, and
+        annotates RHEA:42820 with physiological left-to-right direction RHEA:42821.
+    - reference: https://www.rhea-db.org/rhea/42820
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:42820 captures tetracenomycin A2 + 2 NADPH + 2 O2 + 2 H(+) = tetracenomycin
+        C + 2 NADP(+) + H2O; local Rhea directions map the left-to-right product-forming
+        reaction to RHEA:42821 and UniProtKB:P39888.
+  - subject: tcmg
+    predicate: forms
+    object: tetracenomycin_c
+    notes: RHEA:42821 is the tetracenomycin C-forming physiological direction.
+    evidence:
+    - reference: DOI:10.1128/jb.175.12.3876-3886.1993
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: tcmG is responsible for the hydroxylation of TCM A2 at positions C-4,
+        C-4a, and C-12a to give TCM C
+      notes: Decker et al. sequenced the Streptomyces glaucescens M80674 tcmG locus
+        and used heterologous expression to place tcmG in the final tetracenomycin
+        C hydroxylation step.
+    - reference: DOI:10.1016/s0021-9258(18)43874-4
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: The heterologous expression of the tcmG gene in Streptomyces lividans
+        and the purification and characterization of TcmG protein
+      notes: Shen and Hutchinson purified TcmG/Tcm A2 oxygenase and measured NADPH-dependent
+        conversion of tetracenomycin A2 toward tetracenomycin C.
+    - reference: DOI:10.1021/ol0002267
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: The TcmG or ElmG oxygenase-catalyzed triple hydroxylation of tetracenomycin
+        (Tcm) A2 to Tcm C
+      notes: Rafanan et al. established the monooxygenase-dioxygenase stoichiometry
+        captured by RHEA:42820.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000275.4/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000275.4 encodes tcmG as GenBank protein AAA67511.1 in the
+        Streptomyces glaucescens M80674.1 tetracenomycin C cluster.
+    - reference: https://www.uniprot.org/uniprotkb/P39888
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:P39888 is the 561 aa Streptomyces glaucescens TcmG/tetracenomycin
+        A2 monooxygenase-dioxygenase, maps to EMBL M80674 protein AAA67511.1, and
+        annotates RHEA:42820 with physiological left-to-right direction RHEA:42821.
+    - reference: https://www.rhea-db.org/rhea/42820
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:42820 captures tetracenomycin A2 + 2 NADPH + 2 O2 + 2 H(+) = tetracenomycin
+        C + 2 NADP(+) + H2O; local Rhea directions map the left-to-right product-forming
+        reaction to RHEA:42821 and UniProtKB:P39888.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -364,3 +516,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T01:45:19Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a TcmG/UniProtKB:P39888 terminal hydroxylation pathway step and RHEA:42820-grounded
+    tetracenomycin C BIOSYNTHESIS causal graph.
+  llm_assisted: true
