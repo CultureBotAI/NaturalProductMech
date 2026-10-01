@@ -60,7 +60,7 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0001746
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+  notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
     this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:27403888
@@ -81,7 +81,9 @@ biosynthetic_gene_clusters:
   locus_to: 7138013
   bgc_class:
   - TERPENE
-  link_evidence_basis: CLUSTER_UNSTATED
+  locus_evidence_methods:
+  - Enzymatic assays
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0001746
@@ -95,6 +97,131 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-56aa14617e
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:B5H7H3
+  enzyme_label: Pristinol synthase
+  reaction_id: RHEA:54372
+  substrate: CHEBI:175763
+  product: CHEBI:138165
+  notes: Streptomyces pristinaespiralis ATCC 25486 pristinol synthase cyclizes (2E,6E)-farnesyl
+    diphosphate with water to (+)-(2S,3R,9R)-pristinol and diphosphate.
+  evidence:
+  - reference: DOI:10.1002/anie.201605425
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: synthase for (+)-(2S,3S,9R)-pristinol
+    notes: Klapschinski et al. characterized the Streptomyces pristinaespiralis ATCC
+      25486 terpene cyclase for pristinol; Rhea and IUBMB normalize the enzymatic
+      product to (+)-(2S,3R,9R)-pristinol.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001746.3/BGC0001746.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0001746.3 maps the Streptomyces pristinaespiralis ATCC 25486 pristinol
+      core CDS SSDG_RS31275 to RefSeq protein WP_005320742.1.
+  - reference: https://www.uniprot.org/uniprotkb/B5H7H3
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis
+      ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1,
+      and annotates RHEA:54372 from PMID:27403888.
+  - reference: https://www.rhea-db.org/rhea/54372
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:54372 is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol
+      plus diphosphate reaction; RHEA:54373 is the left-to-right direction mapped
+      to UniProtKB:B5H7H3 in Swiss-Prot.
+causal_graphs:
+- graph_id: pristinol-synthase-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Streptomyces pristinaespiralis ATCC 25486 pristinol synthase cyclizes
+    (2E,6E)-farnesyl diphosphate to form (+)-(2S,3R,9R)-pristinol.
+  nodes:
+  - node_id: bgc0001746
+    label: BGC0001746 pristinol biosynthetic gene cluster
+    node_type: GENE_CLUSTER
+    identifier: mibig:BGC0001746
+    grounding_status: GROUNDED
+  - node_id: farnesyl_diphosphate
+    label: (2E,6E)-farnesyl diphosphate
+    node_type: PRECURSOR
+    identifier: CHEBI:175763
+    grounding_status: GROUNDED
+  - node_id: pristinol_synthase
+    label: Pristinol synthase
+    node_type: ENZYME
+    identifier: UniProtKB:B5H7H3
+    grounding_status: GROUNDED
+  - node_id: pristinol
+    label: (+)-(2S,3R,9R)-pristinol
+    node_type: COMPOUND
+    identifier: CHEBI:138165
+    grounding_status: GROUNDED
+  edges:
+  - subject: bgc0001746
+    predicate: encodes
+    object: pristinol_synthase
+    notes: BGC0001746 contains SSDG_RS31275, the WP_005320742.1-encoded pristinol
+      synthase.
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001746.3/BGC0001746.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0001746.3 maps the Streptomyces pristinaespiralis ATCC 25486
+        pristinol core CDS SSDG_RS31275 to RefSeq protein WP_005320742.1.
+    - reference: https://www.uniprot.org/uniprotkb/B5H7H3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis
+        ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1,
+        and annotates RHEA:54372 from PMID:27403888.
+  - subject: farnesyl_diphosphate
+    predicate: is cyclized by
+    object: pristinol_synthase
+    notes: Pristinol synthase abstracts diphosphate from FPP and catalyzes the rearranged
+      sesquiterpenol-forming cyclization.
+    evidence:
+    - reference: DOI:10.1002/anie.201605425
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: synthase for (+)-(2S,3S,9R)-pristinol
+      notes: Klapschinski et al. characterized the Streptomyces pristinaespiralis
+        ATCC 25486 terpene cyclase for pristinol; Rhea and IUBMB normalize the enzymatic
+        product to (+)-(2S,3R,9R)-pristinol.
+    - reference: https://www.uniprot.org/uniprotkb/B5H7H3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis
+        ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1,
+        and annotates RHEA:54372 from PMID:27403888.
+    - reference: https://www.rhea-db.org/rhea/54372
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:54372 is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol
+        plus diphosphate reaction; RHEA:54373 is the left-to-right direction mapped
+        to UniProtKB:B5H7H3 in Swiss-Prot.
+  - subject: pristinol_synthase
+    predicate: produces
+    object: pristinol
+    notes: Pristinol synthase produces (+)-(2S,3R,9R)-pristinol via the RHEA:54372
+      reaction.
+    evidence:
+    - reference: DOI:10.1002/anie.201605425
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: synthase for (+)-(2S,3S,9R)-pristinol
+      notes: Klapschinski et al. characterized the Streptomyces pristinaespiralis
+        ATCC 25486 terpene cyclase for pristinol; Rhea and IUBMB normalize the enzymatic
+        product to (+)-(2S,3R,9R)-pristinol.
+    - reference: https://www.uniprot.org/uniprotkb/B5H7H3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis
+        ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1,
+        and annotates RHEA:54372 from PMID:27403888.
+    - reference: https://www.rhea-db.org/rhea/54372
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:54372 is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol
+        plus diphosphate reaction; RHEA:54373 is the left-to-right direction mapped
+        to UniProtKB:B5H7H3 in Swiss-Prot.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -104,3 +231,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T03:15:42Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the exact Streptomyces pristinaespiralis ATCC 25486 UniProtKB:B5H7H3
+    pristinol synthase step and a BGC0001746 / RHEA:54372-grounded (+)-(2S,3R,9R)-pristinol
+    BIOSYNTHESIS causal graph.
+  llm_assisted: true
+- timestamp: '2026-10-01T03:40:11Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
