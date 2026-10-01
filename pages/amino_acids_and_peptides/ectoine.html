@@ -266,7 +266,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>ThpC ectoine synthase<br><span class="mono">UniProtKB:Q6QUY8</span></td>
+  <td class="mono">RHEA:17281</td>
+  <td class="mono">CHEBI:58929 &rarr; CHEBI:58515</td>
+  <td class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: BGC0000853 thpC encodes the exact Streptomyces anulatus/Streptomyces chrysomallus protein Q6QUY8; its EctC assignment and RHEA:17281 ring-closure reaction are inferred from the ectoine_synt domain and UniProt family annotation rather than a direct ThpC enzyme assay.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Proposed Streptomyces anulatus/&#34;S. chrysomallus&#34; ThpC-catalyzed terminal ring closure from N-gamma-acetyl-L-2,4-diaminobutanoate to L-ectoine.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>(2S)-4-acetamido-2-aminobutanoate</td>
+  <td>is cyclized by</td>
+  <td>ThpC</td>
+  <td>The exact BGC0000853 ThpC protein is grounded to UniProtKB:Q6QUY8, while the catalytic assignment is inferred from antiSMASH and UniProt family annotation.</td>
+  <td class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004<br>https://mibig.secondarymetabolites.org/repository/BGC0000853.3/<br>https://www.uniprot.org/uniprotkb/Q6QUY8</td>
+</tr>
+<tr>
+  <td>ThpC</td>
+  <td>forms</td>
+  <td>L-ectoine</td>
+  <td>RHEA:17281 forms the CHEBI:58515 zwitterion; this record keeps a minted identifier because ChEBI:27592 and CHEBI:58515 intentionally share an InChIKey.</td>
+  <td class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004<br>https://mibig.secondarymetabolites.org/repository/BGC0000853.3/<br>https://www.uniprot.org/uniprotkb/Q6QUY8</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">2</span></h2>
