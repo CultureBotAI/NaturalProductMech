@@ -593,6 +593,115 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-04b29e6381
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:I3PLR3
+  enzyme_label: PsSDR1 noscapine synthase
+  reaction_id: RHEA:57404
+  substrate: CHEBI:141667
+  substrates:
+  - CHEBI:141667
+  - CHEBI:57540
+  product: CHEBI:73237
+  products:
+  - CHEBI:73237
+  - CHEBI:57945
+  - CHEBI:15378
+  notes: Papaver somniferum PsSDR1 oxidizes narcotine hemiacetal with NAD(+) to noscapine,
+    NADH and H(+). This terminal SDR1 step records RHEA:57404 and leaves the upstream
+    PsMT2/PsMT3 and PsCXE1 formation of narcotine hemiacetal unexpanded.
+  evidence:
+  - reference: DOI:10.1038/ncomms12137
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Reconstituting PsCXE1 and PsSDR1 activities
+    notes: Li and Smolke reconstituted Papaver somniferum PsSDR1 in engineered Saccharomyces
+      cerevisiae strains that traverse the late noscapine pathway and form noscapine-pathway
+      intermediates.
+  - reference: https://www.uniprot.org/uniprotkb/I3PLR3
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:I3PLR3 is the 348 aa Papaver somniferum SDR1 noscapine
+      synthase, cross-references EMBL JQ659007 protein AFB74619.1, annotates RHEA:57404
+      / left-to-right RHEA:57405, and cites DOI:10.1038/ncomms12137 for catalytic
+      activity.
+  - reference: https://www.rhea-db.org/rhea/57404
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:57404 is the narcotine hemiacetal plus NAD(+) to noscapine plus NADH
+      plus H(+) reaction; Rhea maps this master reaction and the RHEA:57405 left-to-right
+      direction to UniProtKB:I3PLR3 in Swiss-Prot.
+causal_graphs:
+- graph_id: noscapine-sdr1-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Papaver somniferum PsSDR1 oxidizes narcotine hemiacetal to noscapine
+    in the late noscapine biosynthetic pathway.
+  nodes:
+  - node_id: narcotine_hemiacetal
+    label: narcotine hemiacetal
+    node_type: PRECURSOR
+    identifier: CHEBI:141667
+    grounding_status: GROUNDED
+  - node_id: pssdr1
+    label: PsSDR1
+    node_type: ENZYME
+    identifier: UniProtKB:I3PLR3
+    grounding_status: GROUNDED
+  - node_id: noscapine
+    label: noscapine
+    node_type: COMPOUND
+    identifier: CHEBI:73237
+    grounding_status: GROUNDED
+  edges:
+  - subject: narcotine_hemiacetal
+    predicate: is dehydrogenated by
+    object: pssdr1
+    notes: RHEA:57404 places narcotine hemiacetal on the substrate side of the SDR1/NAD(+)
+      noscapine synthase reaction.
+    evidence:
+    - reference: DOI:10.1038/ncomms12137
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Reconstituting PsCXE1 and PsSDR1 activities
+      notes: Li and Smolke reconstituted Papaver somniferum PsSDR1 in engineered Saccharomyces
+        cerevisiae strains that traverse the late noscapine pathway and form noscapine-pathway
+        intermediates.
+    - reference: https://www.uniprot.org/uniprotkb/I3PLR3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:I3PLR3 is the 348 aa Papaver somniferum SDR1 noscapine
+        synthase, cross-references EMBL JQ659007 protein AFB74619.1, annotates RHEA:57404
+        / left-to-right RHEA:57405, and cites DOI:10.1038/ncomms12137 for catalytic
+        activity.
+    - reference: https://www.rhea-db.org/rhea/57404
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:57404 is the narcotine hemiacetal plus NAD(+) to noscapine plus
+        NADH plus H(+) reaction; Rhea maps this master reaction and the RHEA:57405
+        left-to-right direction to UniProtKB:I3PLR3 in Swiss-Prot.
+  - subject: pssdr1
+    predicate: forms
+    object: noscapine
+    notes: RHEA:57404 places noscapine on the product side of the SDR1/NAD(+) noscapine
+      synthase reaction.
+    evidence:
+    - reference: DOI:10.1038/ncomms12137
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Reconstituting PsCXE1 and PsSDR1 activities
+      notes: Li and Smolke reconstituted Papaver somniferum PsSDR1 in engineered Saccharomyces
+        cerevisiae strains that traverse the late noscapine pathway and form noscapine-pathway
+        intermediates.
+    - reference: https://www.uniprot.org/uniprotkb/I3PLR3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:I3PLR3 is the 348 aa Papaver somniferum SDR1 noscapine
+        synthase, cross-references EMBL JQ659007 protein AFB74619.1, annotates RHEA:57404
+        / left-to-right RHEA:57405, and cites DOI:10.1038/ncomms12137 for catalytic
+        activity.
+    - reference: https://www.rhea-db.org/rhea/57404
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:57404 is the narcotine hemiacetal plus NAD(+) to noscapine plus
+        NADH plus H(+) reaction; Rhea maps this master reaction and the RHEA:57405
+        left-to-right direction to UniProtKB:I3PLR3 in Swiss-Prot.
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
   curator: seed_from_sources
@@ -606,3 +715,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-30T23:47:37Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a RHEA-grounded PsSDR1 biosynthetic pathway step and causal graph
+    for oxidizing narcotine hemiacetal to noscapine; grounded PsSDR1 to exact Papaver
+    somniferum UniProtKB:I3PLR3.
+  llm_assisted: true
