@@ -214,13 +214,20 @@ derived from a source. This is what the rest of the record exists to support.</p
 </tr>
 <tr>
   <td>2</td>
+  <td>PatH cytochrome P450 monooxygenase<br><span class="mono">UniProtKB:A0A075TRL5</span></td>
+  <td class="mono">RHEA:62209</td>
+  <td class="mono">CHEBI:17231 &rarr; CHEBI:17069</td>
+  <td class="mono">DOI:10.1111/1462-2920.14542</td>
+</tr>
+<tr>
+  <td>3</td>
   <td>PatI cytochrome P450 monooxygenase<br><span class="mono">UniProtKB:A0A075TMP8</span></td>
   <td class="mono">RHEA:62213</td>
   <td class="mono">CHEBI:17069 &rarr; CHEBI:5325</td>
   <td class="mono">DOI:10.1111/1462-2920.14542</td>
 </tr>
 </table></div>
-<p class="sub">Step 1: PatE oxidizes (E)-ascladiol to patulin in the terminal step of P. expansum patulin biosynthesis; RHEA:62228 grounds the generic electron-acceptor reaction.</p><p class="sub">Step 2: PatI hydroxylates 3-hydroxybenzyl alcohol to gentisyl alcohol in the Penicillium expansum patulin pathway. This partial pathway step leaves earlier m-cresol formation and the later PatJ/PatO/PatN/PatF/PatD steps from gentisyl alcohol to (E)-ascladiol uncurated.</p>
+<p class="sub">Step 1: PatE oxidizes (E)-ascladiol to patulin in the terminal step of P. expansum patulin biosynthesis; RHEA:62228 grounds the generic electron-acceptor reaction.</p><p class="sub">Step 2: PatH hydroxylates m-cresol to 3-hydroxybenzyl alcohol in the Penicillium expansum patulin pathway. This partial pathway step leaves upstream PatG formation of m-cresol uncurated.</p><p class="sub">Step 3: PatI hydroxylates 3-hydroxybenzyl alcohol to gentisyl alcohol in the Penicillium expansum patulin pathway. This partial pathway step leaves earlier m-cresol formation and the later PatJ/PatO/PatN/PatF/PatD steps from gentisyl alcohol to (E)-ascladiol uncurated.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
 <p class="sub">Partial P. expansum patulin biosynthesis graph for PatE-catalyzed terminal oxidation of (E)-ascladiol.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
@@ -257,6 +264,26 @@ by the corpus tests.</p>
   <td>gentisyl alcohol</td>
   <td>This graph stops at gentisyl alcohol because the downstream conversion to (E)-ascladiol is not part of this PatI curation.</td>
   <td class="mono">DOI:10.1111/1462-2920.14542<br>https://mite.lisc.univie.ac.at/repository/MITE0000459<br>https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk<br>https://www.uniprot.org/uniprotkb/A0A075TMP8<br>https://www.ncbi.nlm.nih.gov/protein/AIG62145.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial P. expansum patulin biosynthesis graph for PatH-catalyzed hydroxylation of m-cresol to 3-hydroxybenzyl alcohol.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>m-cresol</td>
+  <td>is hydroxylated by</td>
+  <td>PatH cytochrome P450 monooxygenase</td>
+  <td>PatH hydroxylates m-cresol to form 3-hydroxybenzyl alcohol in the patulin biosynthetic pathway.</td>
+  <td class="mono">DOI:10.1111/1462-2920.14542<br>https://mite.lisc.univie.ac.at/repository/MITE0000335<br>https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk<br>https://www.uniprot.org/uniprotkb/A0A075TRL5<br>https://www.ncbi.nlm.nih.gov/protein/AIG62144.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+<tr>
+  <td>PatH cytochrome P450 monooxygenase</td>
+  <td>forms</td>
+  <td>3-hydroxybenzyl alcohol</td>
+  <td>This graph stops at 3-hydroxybenzyl alcohol because this curation covers the PatH reaction.</td>
+  <td class="mono">DOI:10.1111/1462-2920.14542<br>https://mite.lisc.univie.ac.at/repository/MITE0000335<br>https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk<br>https://www.uniprot.org/uniprotkb/A0A075TRL5<br>https://www.ncbi.nlm.nih.gov/protein/AIG62144.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
