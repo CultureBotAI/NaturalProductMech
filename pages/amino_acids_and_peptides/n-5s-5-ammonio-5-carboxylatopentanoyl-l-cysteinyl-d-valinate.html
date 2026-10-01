@@ -69,7 +69,54 @@ same claim.</p>
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>PcbAB ACV synthetase<br><span class="mono">UniProtKB:A6N339</span></td>
+  <td class="mono">RHEA:23196</td>
+  <td class="mono">CHEBI:58672 + CHEBI:35235 + CHEBI:57762 + CHEBI:30616 + CHEBI:15377 &rarr; CHEBI:58572 + CHEBI:456215 + CHEBI:33019 + CHEBI:15378</td>
+  <td class="mono">DOI:10.1042/bj3270185</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Penicillium chrysogenum PcbAB condenses L-2-aminoadipate, L-cysteine, and L-valine to the ACV tripeptide. RHEA:23196 also consumes three ATP and water and releases three AMP, three diphosphates, and three H(+).</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Penicillium chrysogenum PcbAB-catalyzed nonribosomal condensation of L-2-aminoadipate, L-cysteine, and L-valine to ACV in penicillin biosynthesis.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>L-2-aminoadipate</td>
+  <td>is condensed by</td>
+  <td>PcbAB</td>
+  <td>RHEA:23196 places L-2-aminoadipate on the substrate side of the PcbAB ATP-dependent ACV synthase reaction.</td>
+  <td class="mono">DOI:10.1042/bj3270185<br>DOI:10.1038/nbt0190-39<br>DOI:10.1016/j.fgb.2007.03.008<br>https://mibig.secondarymetabolites.org/repository/BGC0000405.5/<br>https://www.uniprot.org/uniprotkb/A6N339<br>https://www.rhea-db.org/rhea/23196</td>
+</tr>
+<tr>
+  <td>L-cysteine</td>
+  <td>is condensed by</td>
+  <td>PcbAB</td>
+  <td>RHEA:23196 places L-cysteine on the substrate side of the PcbAB ATP-dependent ACV synthase reaction.</td>
+  <td class="mono">DOI:10.1042/bj3270185<br>DOI:10.1038/nbt0190-39<br>DOI:10.1016/j.fgb.2007.03.008<br>https://mibig.secondarymetabolites.org/repository/BGC0000405.5/<br>https://www.uniprot.org/uniprotkb/A6N339<br>https://www.rhea-db.org/rhea/23196</td>
+</tr>
+<tr>
+  <td>L-valine</td>
+  <td>is condensed by</td>
+  <td>PcbAB</td>
+  <td>RHEA:23196 places L-valine on the substrate side of the PcbAB ATP-dependent ACV synthase reaction.</td>
+  <td class="mono">DOI:10.1042/bj3270185<br>DOI:10.1038/nbt0190-39<br>DOI:10.1016/j.fgb.2007.03.008<br>https://mibig.secondarymetabolites.org/repository/BGC0000405.5/<br>https://www.uniprot.org/uniprotkb/A6N339<br>https://www.rhea-db.org/rhea/23196</td>
+</tr>
+<tr>
+  <td>PcbAB</td>
+  <td>forms</td>
+  <td>N-[(5S)-5-ammonio-5-carboxylatopentanoyl]-L-cysteinyl-D-valinate</td>
+  <td>RHEA:23196 places ACV on the product side of the PcbAB ATP-dependent ACV synthase reaction.</td>
+  <td class="mono">DOI:10.1042/bj3270185<br>DOI:10.1038/nbt0190-39<br>DOI:10.1016/j.fgb.2007.03.008<br>https://mibig.secondarymetabolites.org/repository/BGC0000405.5/<br>https://www.uniprot.org/uniprotkb/A6N339<br>https://www.rhea-db.org/rhea/23196</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
