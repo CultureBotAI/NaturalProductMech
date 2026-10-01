@@ -159,7 +159,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>FogE cytochrome P450 monooxygenase<br><span class="mono">UniProtKB:A0A017SFB8</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1021/acs.orglett.0c00440</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: FogE catalyzes aromatic C-3 hydroxylation of an alkylated salicyl alcohol intermediate in the flavoglaucin pathway. This single-step partial pathway leaves FogA-D formation of the salicyl alcohol substrate and the later FogH/FogF prenylation and reoxidation steps uncurated.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial Aspergillus ruber flavoglaucin biosynthesis graph for FogE-catalyzed C-3 hydroxylation upstream of FogH prenylation.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>alkylated salicyl alcohol flavoglaucin intermediate</td>
+  <td>is C-3-hydroxylated by</td>
+  <td>FogE cytochrome P450 monooxygenase</td>
+  <td>MITE records FogE as the cytochrome P450 for aromatic hydroxylation of a flavoglaucin biosynthetic intermediate.</td>
+  <td class="mono">DOI:10.1021/acs.orglett.0c00440<br>https://mite.lisc.univie.ac.at/repository/MITE0000457<br>https://mibig.secondarymetabolites.org/repository/BGC0002234.3/BGC0002234.gbk<br>https://www.uniprot.org/uniprotkb/A0A017SFB8<br>https://www.ncbi.nlm.nih.gov/protein/EYE95339.1</td>
+</tr>
+<tr>
+  <td>FogE cytochrome P450 monooxygenase</td>
+  <td>forms</td>
+  <td>C-3-hydroxylated salicyl alcohol intermediate</td>
+  <td>The FogE product is a hydroxylated salicyl alcohol intermediate; subsequent FogH prenylation and FogF oxidation to flavoglaucin are outside this single-step graph.</td>
+  <td class="mono">DOI:10.1021/acs.orglett.0c00440<br>https://mite.lisc.univie.ac.at/repository/MITE0000457<br>https://mibig.secondarymetabolites.org/repository/BGC0002234.3/BGC0002234.gbk<br>https://www.uniprot.org/uniprotkb/A0A017SFB8<br>https://www.ncbi.nlm.nih.gov/protein/EYE95339.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

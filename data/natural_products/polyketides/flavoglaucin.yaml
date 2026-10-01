@@ -241,6 +241,144 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A017SFB8
+  enzyme_label: FogE cytochrome P450 monooxygenase
+  notes: FogE catalyzes aromatic C-3 hydroxylation of an alkylated salicyl alcohol
+    intermediate in the flavoglaucin pathway. This single-step partial pathway leaves
+    FogA-D formation of the salicyl alcohol substrate and the later FogH/FogF prenylation
+    and reoxidation steps uncurated.
+  evidence:
+  - reference: DOI:10.1021/acs.orglett.0c00440
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: heterologous expression, precursor feeding, and biochemical characterization
+    notes: Nies et al. elucidated the Aspergillus ruber flavoglaucin and congener
+      pathway; MITE and UniProtKB curate the FogE-specific C-3 aromatic hydroxylation
+      from this same primary article.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000457
+    evidence_type: DATABASE_ASSERTION
+    snippet: aromatic hydroxylation of flavoglaucin biosynthetic intermediate
+    retrieved_on: '2026-10-01'
+    notes: MITE0000457 is an active FogE cytochrome P450 entry for hydroxylation of
+      a flavoglaucin-pathway salicyl alcohol intermediate; it links UniProtKB:A0A017SFB8,
+      GenPept EYE95339.1, MIBiG BGC0002234 and the Nies et al. DOI.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002234.3/BGC0002234.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: locus_tag="EURHEDRAFT_455792"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0002234.3 places EYE95339.1 inside the active Aspergillus ruber
+      CBS 135680 flavoglaucin cluster as the EURHEDRAFT_455792 cytochrome P450 CDS.
+  - reference: https://www.uniprot.org/uniprotkb/A0A017SFB8
+    evidence_type: DATABASE_ASSERTION
+    snippet: Cytochrome P450 monooxygenase fogE
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:A0A017SFB8 resolves as Aspergillus ruber CBS 135680
+      FogE/FOGE_ASPRC, a 538 aa cytochrome P450 monooxygenase, and cross-references
+      EMBL KK088422 protein EYE95339.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/EYE95339.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: cytochrome P450 [Aspergillus ruber CBS 135680]
+    retrieved_on: '2026-10-01'
+    notes: GenPept EYE95339.1 is the 538 aa Aspergillus ruber CBS 135680 cytochrome
+      P450 protein encoded by six exons on WGS scaffold KK088422.1.
+causal_graphs:
+- graph_id: flavoglaucin-foge-hydroxylation
+  scope: BIOSYNTHESIS
+  description: Partial Aspergillus ruber flavoglaucin biosynthesis graph for FogE-catalyzed
+    C-3 hydroxylation upstream of FogH prenylation.
+  nodes:
+  - node_id: alkyl_salicyl_alcohol
+    label: alkylated salicyl alcohol flavoglaucin intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: foge
+    label: FogE cytochrome P450 monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A017SFB8
+    grounding_status: GROUNDED
+  - node_id: c3_hydroxylated_salicyl_alcohol
+    label: C-3-hydroxylated salicyl alcohol intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: alkyl_salicyl_alcohol
+    predicate: is C-3-hydroxylated by
+    object: foge
+    notes: MITE records FogE as the cytochrome P450 for aromatic hydroxylation of
+      a flavoglaucin biosynthetic intermediate.
+    evidence:
+    - reference: DOI:10.1021/acs.orglett.0c00440
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: heterologous expression, precursor feeding, and biochemical characterization
+      notes: Nies et al. elucidated the Aspergillus ruber flavoglaucin and congener
+        pathway; MITE and UniProtKB curate the FogE-specific C-3 aromatic hydroxylation
+        from this same primary article.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000457
+      evidence_type: DATABASE_ASSERTION
+      snippet: aromatic hydroxylation of flavoglaucin biosynthetic intermediate
+      retrieved_on: '2026-10-01'
+      notes: MITE0000457 is an active FogE cytochrome P450 entry for hydroxylation
+        of a flavoglaucin-pathway salicyl alcohol intermediate; it links UniProtKB:A0A017SFB8,
+        GenPept EYE95339.1, MIBiG BGC0002234 and the Nies et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002234.3/BGC0002234.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: locus_tag="EURHEDRAFT_455792"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002234.3 places EYE95339.1 inside the active Aspergillus ruber
+        CBS 135680 flavoglaucin cluster as the EURHEDRAFT_455792 cytochrome P450 CDS.
+    - reference: https://www.uniprot.org/uniprotkb/A0A017SFB8
+      evidence_type: DATABASE_ASSERTION
+      snippet: Cytochrome P450 monooxygenase fogE
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A017SFB8 resolves as Aspergillus ruber CBS 135680
+        FogE/FOGE_ASPRC, a 538 aa cytochrome P450 monooxygenase, and cross-references
+        EMBL KK088422 protein EYE95339.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EYE95339.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: cytochrome P450 [Aspergillus ruber CBS 135680]
+      retrieved_on: '2026-10-01'
+      notes: GenPept EYE95339.1 is the 538 aa Aspergillus ruber CBS 135680 cytochrome
+        P450 protein encoded by six exons on WGS scaffold KK088422.1.
+  - subject: foge
+    predicate: forms
+    object: c3_hydroxylated_salicyl_alcohol
+    notes: The FogE product is a hydroxylated salicyl alcohol intermediate; subsequent
+      FogH prenylation and FogF oxidation to flavoglaucin are outside this single-step
+      graph.
+    evidence:
+    - reference: DOI:10.1021/acs.orglett.0c00440
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: heterologous expression, precursor feeding, and biochemical characterization
+      notes: Nies et al. elucidated the Aspergillus ruber flavoglaucin and congener
+        pathway; MITE and UniProtKB curate the FogE-specific C-3 aromatic hydroxylation
+        from this same primary article.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000457
+      evidence_type: DATABASE_ASSERTION
+      snippet: aromatic hydroxylation of flavoglaucin biosynthetic intermediate
+      retrieved_on: '2026-10-01'
+      notes: MITE0000457 is an active FogE cytochrome P450 entry for hydroxylation
+        of a flavoglaucin-pathway salicyl alcohol intermediate; it links UniProtKB:A0A017SFB8,
+        GenPept EYE95339.1, MIBiG BGC0002234 and the Nies et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002234.3/BGC0002234.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: locus_tag="EURHEDRAFT_455792"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002234.3 places EYE95339.1 inside the active Aspergillus ruber
+        CBS 135680 flavoglaucin cluster as the EURHEDRAFT_455792 cytochrome P450 CDS.
+    - reference: https://www.uniprot.org/uniprotkb/A0A017SFB8
+      evidence_type: DATABASE_ASSERTION
+      snippet: Cytochrome P450 monooxygenase fogE
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A017SFB8 resolves as Aspergillus ruber CBS 135680
+        FogE/FOGE_ASPRC, a 538 aa cytochrome P450 monooxygenase, and cross-references
+        EMBL KK088422 protein EYE95339.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EYE95339.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: cytochrome P450 [Aspergillus ruber CBS 135680]
+      retrieved_on: '2026-10-01'
+      notes: GenPept EYE95339.1 is the 538 aa Aspergillus ruber CBS 135680 cytochrome
+        P450 protein encoded by six exons on WGS scaffold KK088422.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -250,3 +388,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T21:39:20Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a UniProt-grounded FogE hydroxylation pathway step and partial BIOSYNTHESIS
+    causal graph for flavoglaucin.
+  llm_assisted: true
