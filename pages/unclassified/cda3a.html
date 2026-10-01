@@ -85,7 +85,47 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>HmaS 4-hydroxymandelate synthase<br><span class="mono">UniProtKB:Q9Z4X7</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:15999 &rarr; CHEBI:17210</td>
+  <td class="mono">DOI:10.1016/S1074-5521(02)00252-1</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: SCO3229/HmaS is curated as the 4-hydroxymandelate synthase that supplies the L-4-hydroxyphenylglycine branch of CDA3a biosynthesis. HmaS sits at the first step of the pathway from 4-hydroxyphenylpyruvate to 4-hydroxyphenylglycine; the exact SCO3229 4-hydroxyphenylpyruvate to (S)-4-hydroxymandelate reaction is inferred from the HmaS assignment and therefore kept proposed.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial Streptomyces coelicolor CDA3a biosynthesis graph for HmaS-dependent 4-hydroxyphenylglycine precursor supply.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>4-hydroxyphenylpyruvic acid</td>
+  <td>is proposed to be oxidatively decarboxylated by</td>
+  <td>HmaS</td>
+  <td>The direct 4-hydroxyphenylpyruvate to (S)-4-hydroxymandelate assignment is inferred for SCO3229/HmaS.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(02)00252-1<br>https://mibig.secondarymetabolites.org/repository/BGC0000315.5/index.html<br>https://www.uniprot.org/uniprotkb/Q9Z4X7<br>https://www.ncbi.nlm.nih.gov/protein/CAB38519.1</td>
+</tr>
+<tr>
+  <td>HmaS</td>
+  <td>is proposed to form</td>
+  <td>(S)-4-hydroxymandelate</td>
+  <td>HmaS is curated as the entry enzyme for the CDA 4-hydroxyphenylglycine precursor pathway.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(02)00252-1<br>https://mibig.secondarymetabolites.org/repository/BGC0000315.5/index.html<br>https://www.uniprot.org/uniprotkb/Q9Z4X7<br>https://www.ncbi.nlm.nih.gov/protein/CAB38519.1</td>
+</tr>
+<tr>
+  <td>HmaS</td>
+  <td>is genetically required for biosynthesis of</td>
+  <td>CDA3a</td>
+  <td>Deletion of hmaS abolished CDA production, and exogenous 4-hydroxymandelate or downstream pathway intermediates restored it.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(02)00252-1<br>https://mibig.secondarymetabolites.org/repository/BGC0000315.5/index.html<br>https://www.uniprot.org/uniprotkb/Q9Z4X7<br>https://www.ncbi.nlm.nih.gov/protein/CAB38519.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
