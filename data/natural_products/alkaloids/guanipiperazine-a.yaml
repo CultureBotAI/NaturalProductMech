@@ -83,6 +83,367 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: GupB NRPS-like carboxylic acid reductase
+  substrates:
+  - CHEBI:17895
+  proposed: true
+  notes: GupB activates two L-tyrosine molecules, reduces them to the corresponding
+    amino aldehydes, and is proposed to form imine intermediate 5 after condensation
+    and dehydration. GupB is left without enzyme_id because no UniProtKB accession
+    resolved for exact GenPept accession QUF98525.1.
+  evidence:
+  - reference: DOI:10.1039/D0SC06135B
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: GupB activates and reduces two l-tyrosine molecules
+    notes: Shi et al. showed L-tyrosine preference in vitro and proposed that the
+      NRPS-like CAR GupB activates and reduces two L-tyrosines to the amino aldehydes
+      that condense into imine intermediate 5.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0002582.3 places the Streptomyces chrestomyceticus NA04264 GupB
+      non-ribosomal peptide synthetase CDS at MW051641.1:548..3772 with protein_id
+      QUF98525.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98525.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: NCBI GenPept QUF98525.1 is the Streptomyces chrestomyceticus NA04264 MW051641.1
+      non-ribosomal peptide synthetase sequence assigned here to GupB; no UniProtKB
+      entry resolved for this accession or for MW051641.1.
+- step_number: 2
+  enzyme_label: GupA F420H2-dependent reductase
+  notes: GupA reduces proposed imine intermediate 5 to piperazine intermediate 4.
+    Both numbered intermediates are left out of the structured substrate and product
+    fields because no exact stable chemical CURIEs were selected. GupA is left without
+    enzyme_id because no UniProtKB accession resolved for exact GenPept accession
+    QUF98524.1.
+  evidence:
+  - reference: DOI:10.1039/D0SC06135B
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: GupA is required for the formation of 4
+    notes: Shi et al. used heterologous expression and in vitro reconstitution to
+      assign the F420H2-dependent reductase GupA to reduction of the proposed imine
+      intermediate 5 into piperazine intermediate 4.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0002582.3 places the Streptomyces chrestomyceticus NA04264 GupA
+      F420H2-dependent reductase CDS at MW051641.1:1..489 with protein_id QUF98524.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98524.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: NCBI GenPept QUF98524.1 is the Streptomyces chrestomyceticus NA04264 MW051641.1
+      F420H2-dependent reductase sequence assigned here to GupA; no UniProtKB entry
+      resolved for this accession or for MW051641.1.
+- step_number: 3
+  enzyme_label: GupC cytochrome P450
+  notes: GupC oxidizes piperazine intermediate 4 to strained piperazine intermediate
+    6 by intramolecular C-O bond formation. Both numbered intermediates are left out
+    of the structured substrate and product fields because no exact stable chemical
+    CURIEs were selected. GupC is left without enzyme_id because no UniProtKB accession
+    resolved for exact GenPept accession QUF98526.1.
+  evidence:
+  - reference: DOI:10.1039/D0SC06135B
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: GupC catalyzes the intramolecular C–O bond formation
+    notes: Shi et al. found that the gupC deletion strain accumulated compound 4 and
+      reconstituted GupC in vitro as the P450 that oxidizes compound 4 to strained
+      piperazine intermediate 6.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0002582.3 places the Streptomyces chrestomyceticus NA04264 GupC
+      cytochrome P450 CDS at MW051641.1:3769..5022 with protein_id QUF98526.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98526.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: NCBI GenPept QUF98526.1 is the Streptomyces chrestomyceticus NA04264 MW051641.1
+      cytochrome P450 sequence assigned here to GupC; no UniProtKB entry resolved
+      for this accession or for MW051641.1.
+- step_number: 4
+  enzyme_label: GupD cytochrome P450 guaninyl transferase
+  substrates:
+  - CHEBI:15996
+  product: naturalproductmech:mibig-bc5aed5ce5
+  notes: GupD uses GTP as the guanine donor and couples it to strained piperazine
+    intermediate 6, yielding guanipiperazine A through a C-C linkage and guanipiperazine
+    B through a C-O linkage. The intermediate is left out of the structured substrate
+    field because no exact stable chemical CURIE was selected. GupD is left without
+    enzyme_id because no UniProtKB accession resolved for exact GenPept accession
+    QUF98527.1.
+  evidence:
+  - reference: DOI:10.1039/D0SC06135B
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: GupD acts as a guaninyl transferase
+    notes: Shi et al. showed in vivo and in vitro that P450 GupD couples compound
+      6 with GTP to form guanipiperazines A and B through alternative C-C and C-O
+      linkages.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0002582.3 places the Streptomyces chrestomyceticus NA04264 GupD
+      cytochrome P450 CDS at MW051641.1:5103..6332 with protein_id QUF98527.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98527.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: NCBI GenPept QUF98527.1 is the Streptomyces chrestomyceticus NA04264 MW051641.1
+      cytochrome P450 sequence assigned here to GupD; no UniProtKB entry resolved
+      for this accession or for MW051641.1.
+causal_graphs:
+- graph_id: guanipiperazine-a-gup-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Streptomyces chrestomyceticus GupA-D assemble guanipiperazine A from
+    L-tyrosine through a piperazine core and a final GTP-dependent guaninylation.
+  nodes:
+  - node_id: l_tyrosine
+    label: L-tyrosine
+    node_type: PRECURSOR
+    identifier: CHEBI:17895
+    grounding_status: GROUNDED
+  - node_id: gupb
+    label: GupB
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: imine_intermediate_5
+    label: proposed imine intermediate 5
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: gupa
+    label: GupA
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: piperazine_intermediate_4
+    label: piperazine intermediate 4
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: gupc
+    label: GupC
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: strained_piperazine_6
+    label: strained piperazine intermediate 6
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: gtp
+    label: GTP
+    node_type: PRECURSOR
+    identifier: CHEBI:15996
+    grounding_status: GROUNDED
+  - node_id: gupd
+    label: GupD
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: guanipiperazine_a
+    label: guanipiperazine A
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-bc5aed5ce5
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_tyrosine
+    predicate: is activated and reduced by
+    object: gupb
+    notes: GupB is proposed to activate and reduce two L-tyrosines to amino aldehydes
+      that condense and dehydrate into imine intermediate 5.
+    evidence:
+    - reference: DOI:10.1039/D0SC06135B
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GupB activates and reduces two l-tyrosine molecules
+      notes: Shi et al. showed L-tyrosine preference in vitro and proposed that the
+        NRPS-like CAR GupB activates and reduces two L-tyrosines to the amino aldehydes
+        that condense into imine intermediate 5.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002582.3 places the Streptomyces chrestomyceticus NA04264 GupB
+        non-ribosomal peptide synthetase CDS at MW051641.1:548..3772 with protein_id
+        QUF98525.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98525.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept QUF98525.1 is the Streptomyces chrestomyceticus NA04264
+        MW051641.1 non-ribosomal peptide synthetase sequence assigned here to GupB;
+        no UniProtKB entry resolved for this accession or for MW051641.1.
+  - subject: gupb
+    predicate: forms
+    object: imine_intermediate_5
+    notes: Imine intermediate 5 is proposed; without GupA it can be spontaneously
+      overoxidized to the observed shunt product 3.
+    evidence:
+    - reference: DOI:10.1039/D0SC06135B
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GupB activates and reduces two l-tyrosine molecules
+      notes: Shi et al. showed L-tyrosine preference in vitro and proposed that the
+        NRPS-like CAR GupB activates and reduces two L-tyrosines to the amino aldehydes
+        that condense into imine intermediate 5.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002582.3 places the Streptomyces chrestomyceticus NA04264 GupB
+        non-ribosomal peptide synthetase CDS at MW051641.1:548..3772 with protein_id
+        QUF98525.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98525.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept QUF98525.1 is the Streptomyces chrestomyceticus NA04264
+        MW051641.1 non-ribosomal peptide synthetase sequence assigned here to GupB;
+        no UniProtKB entry resolved for this accession or for MW051641.1.
+  - subject: imine_intermediate_5
+    predicate: is reduced by
+    object: gupa
+    evidence:
+    - reference: DOI:10.1039/D0SC06135B
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GupA is required for the formation of 4
+      notes: Shi et al. used heterologous expression and in vitro reconstitution to
+        assign the F420H2-dependent reductase GupA to reduction of the proposed imine
+        intermediate 5 into piperazine intermediate 4.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002582.3 places the Streptomyces chrestomyceticus NA04264 GupA
+        F420H2-dependent reductase CDS at MW051641.1:1..489 with protein_id QUF98524.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98524.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept QUF98524.1 is the Streptomyces chrestomyceticus NA04264
+        MW051641.1 F420H2-dependent reductase sequence assigned here to GupA; no UniProtKB
+        entry resolved for this accession or for MW051641.1.
+  - subject: gupa
+    predicate: forms
+    object: piperazine_intermediate_4
+    notes: Co-expression of gupB and gupA produced intermediate 4, and in vitro reconstitution
+      observed production of 4 only after GupA, F420, and F420H2 regeneration were
+      added.
+    evidence:
+    - reference: DOI:10.1039/D0SC06135B
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GupA is required for the formation of 4
+      notes: Shi et al. used heterologous expression and in vitro reconstitution to
+        assign the F420H2-dependent reductase GupA to reduction of the proposed imine
+        intermediate 5 into piperazine intermediate 4.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002582.3 places the Streptomyces chrestomyceticus NA04264 GupA
+        F420H2-dependent reductase CDS at MW051641.1:1..489 with protein_id QUF98524.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98524.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept QUF98524.1 is the Streptomyces chrestomyceticus NA04264
+        MW051641.1 F420H2-dependent reductase sequence assigned here to GupA; no UniProtKB
+        entry resolved for this accession or for MW051641.1.
+  - subject: piperazine_intermediate_4
+    predicate: is oxidized by
+    object: gupc
+    evidence:
+    - reference: DOI:10.1039/D0SC06135B
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GupC catalyzes the intramolecular C–O bond formation
+      notes: Shi et al. found that the gupC deletion strain accumulated compound 4
+        and reconstituted GupC in vitro as the P450 that oxidizes compound 4 to strained
+        piperazine intermediate 6.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002582.3 places the Streptomyces chrestomyceticus NA04264 GupC
+        cytochrome P450 CDS at MW051641.1:3769..5022 with protein_id QUF98526.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98526.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept QUF98526.1 is the Streptomyces chrestomyceticus NA04264
+        MW051641.1 cytochrome P450 sequence assigned here to GupC; no UniProtKB entry
+        resolved for this accession or for MW051641.1.
+  - subject: gupc
+    predicate: forms
+    object: strained_piperazine_6
+    notes: Deleting gupD accumulated compound 6, and the in vitro GupC reaction consumed
+      compound 4 while compound 6 appeared.
+    evidence:
+    - reference: DOI:10.1039/D0SC06135B
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GupC catalyzes the intramolecular C–O bond formation
+      notes: Shi et al. found that the gupC deletion strain accumulated compound 4
+        and reconstituted GupC in vitro as the P450 that oxidizes compound 4 to strained
+        piperazine intermediate 6.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002582.3 places the Streptomyces chrestomyceticus NA04264 GupC
+        cytochrome P450 CDS at MW051641.1:3769..5022 with protein_id QUF98526.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98526.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept QUF98526.1 is the Streptomyces chrestomyceticus NA04264
+        MW051641.1 cytochrome P450 sequence assigned here to GupC; no UniProtKB entry
+        resolved for this accession or for MW051641.1.
+  - subject: strained_piperazine_6
+    predicate: is guaninylated by
+    object: gupd
+    evidence:
+    - reference: DOI:10.1039/D0SC06135B
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GupD acts as a guaninyl transferase
+      notes: Shi et al. showed in vivo and in vitro that P450 GupD couples compound
+        6 with GTP to form guanipiperazines A and B through alternative C-C and C-O
+        linkages.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002582.3 places the Streptomyces chrestomyceticus NA04264 GupD
+        cytochrome P450 CDS at MW051641.1:5103..6332 with protein_id QUF98527.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98527.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept QUF98527.1 is the Streptomyces chrestomyceticus NA04264
+        MW051641.1 cytochrome P450 sequence assigned here to GupD; no UniProtKB entry
+        resolved for this accession or for MW051641.1.
+  - subject: gtp
+    predicate: is used by
+    object: gupd
+    notes: GupD accepts GTP as substrate for guaninylation of compound 6.
+    evidence:
+    - reference: DOI:10.1039/D0SC06135B
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GupD acts as a guaninyl transferase
+      notes: Shi et al. showed in vivo and in vitro that P450 GupD couples compound
+        6 with GTP to form guanipiperazines A and B through alternative C-C and C-O
+        linkages.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002582.3 places the Streptomyces chrestomyceticus NA04264 GupD
+        cytochrome P450 CDS at MW051641.1:5103..6332 with protein_id QUF98527.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98527.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept QUF98527.1 is the Streptomyces chrestomyceticus NA04264
+        MW051641.1 cytochrome P450 sequence assigned here to GupD; no UniProtKB entry
+        resolved for this accession or for MW051641.1.
+  - subject: gupd
+    predicate: forms
+    object: guanipiperazine_a
+    notes: GupD couples compound 6 with GTP to form guanipiperazine A and the alternative
+      O-linked product guanipiperazine B.
+    evidence:
+    - reference: DOI:10.1039/D0SC06135B
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: GupD acts as a guaninyl transferase
+      notes: Shi et al. showed in vivo and in vitro that P450 GupD couples compound
+        6 with GTP to form guanipiperazines A and B through alternative C-C and C-O
+        linkages.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002582.3/BGC0002582.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002582.3 places the Streptomyces chrestomyceticus NA04264 GupD
+        cytochrome P450 CDS at MW051641.1:5103..6332 with protein_id QUF98527.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98527.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept QUF98527.1 is the Streptomyces chrestomyceticus NA04264
+        MW051641.1 cytochrome P450 sequence assigned here to GupD; no UniProtKB entry
+        resolved for this accession or for MW051641.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -92,3 +453,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T09:02:49Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a DOI-backed GupA-D biosynthetic pathway and BIOSYNTHESIS graph for
+    Streptomyces chrestomyceticus guanipiperazine A; left GupA-D as ungrounded GenPept-backed
+    enzymes because QUF98524.1-QUF98527.1 do not resolve to UniProtKB.
+  llm_assisted: true
