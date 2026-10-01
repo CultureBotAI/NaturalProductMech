@@ -111,6 +111,159 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-bf7ebc857f
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q2UA48
+  enzyme_label: wA naphthopyrone polyketide synthase
+  reaction_id: RHEA:62652
+  substrates:
+  - CHEBI:57288
+  - CHEBI:57384
+  product: CHEBI:133763
+  proposed: true
+  notes: The A. oryzae wA promoter-replacement experiment supports AO090102000545
+    as the exact YWA1-forming gene. The full acetyl-CoA and malonyl-CoA stoichiometry
+    is grounded by RHEA:62652 rather than by purified Q2UA48 biochemistry.
+  evidence:
+  - reference: DOI:10.1186/s12896-019-0567-x
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: production of the polyketide derived from A. oryzae wA
+    notes: Tamano et al. replaced the native wA promoter in an A. oryzae kojA disruptant
+      with the kojA promoter, confirmed recombination at the targeted wA locus, and
+      matched the accumulated compound to a YWA1 standard by UV-Vis and UPLC-MS.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002175.3/BGC0002175.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0002175.3 maps the Aspergillus oryzae RIB40 YWA1 cluster CDS AO090102000545
+      to GenPept BAE61567.1.
+  - reference: https://www.uniprot.org/uniprotkb/Q2UA48
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Unreviewed UniProtKB:Q2UA48 is the 2,141 aa Aspergillus oryzae RIB40 AO090102000545
+      entry; its canonical sequence is identical to the MIBiG BAE61567.1 translation,
+      and its RHEA:62652/RHEA:62653 annotation is computational.
+  - reference: https://www.rhea-db.org/rhea/62652
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:62652 is the acetyl-CoA plus six malonyl-CoA naphthopyrone YWA1 synthase
+      master reaction, mapped to left-to-right direction RHEA:62653 through homologous
+      Swiss-Prot fungal naphthopyrone synthases.
+causal_graphs:
+- graph_id: ywa1-wa-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Aspergillus oryzae RIB40 wA encodes a non-reducing polyketide synthase
+    that forms the naphthopyrone YWA1.
+  nodes:
+  - node_id: acetyl_coa
+    label: acetyl-CoA
+    node_type: PRECURSOR
+    identifier: CHEBI:57288
+    grounding_status: GROUNDED
+  - node_id: malonyl_coa
+    label: malonyl-CoA
+    node_type: PRECURSOR
+    identifier: CHEBI:57384
+    grounding_status: GROUNDED
+  - node_id: wa_pks
+    label: wA polyketide synthase
+    node_type: ENZYME
+    identifier: UniProtKB:Q2UA48
+    grounding_status: GROUNDED
+  - node_id: ywa1
+    label: YWA1
+    node_type: COMPOUND
+    identifier: CHEBI:133763
+    grounding_status: GROUNDED
+  edges:
+  - subject: acetyl_coa
+    predicate: is accepted by
+    object: wa_pks
+    notes: RHEA:62652 supplies acetyl-CoA as the starter in the curated naphthopyrone
+      YWA1 synthase reaction; applying that stoichiometry to Q2UA48 is proposed from
+      the database reaction annotation.
+    evidence:
+    - reference: DOI:10.1186/s12896-019-0567-x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: production of the polyketide derived from A. oryzae wA
+      notes: Tamano et al. replaced the native wA promoter in an A. oryzae kojA disruptant
+        with the kojA promoter, confirmed recombination at the targeted wA locus,
+        and matched the accumulated compound to a YWA1 standard by UV-Vis and UPLC-MS.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002175.3/BGC0002175.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0002175.3 maps the Aspergillus oryzae RIB40 YWA1 cluster CDS
+        AO090102000545 to GenPept BAE61567.1.
+    - reference: https://www.uniprot.org/uniprotkb/Q2UA48
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Unreviewed UniProtKB:Q2UA48 is the 2,141 aa Aspergillus oryzae RIB40
+        AO090102000545 entry; its canonical sequence is identical to the MIBiG BAE61567.1
+        translation, and its RHEA:62652/RHEA:62653 annotation is computational.
+    - reference: https://www.rhea-db.org/rhea/62652
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:62652 is the acetyl-CoA plus six malonyl-CoA naphthopyrone YWA1
+        synthase master reaction, mapped to left-to-right direction RHEA:62653 through
+        homologous Swiss-Prot fungal naphthopyrone synthases.
+  - subject: malonyl_coa
+    predicate: is iteratively condensed by
+    object: wa_pks
+    notes: RHEA:62652 supplies six malonyl-CoA extender units in the curated naphthopyrone
+      YWA1 synthase reaction; applying that stoichiometry to Q2UA48 is proposed from
+      the database reaction annotation.
+    evidence:
+    - reference: DOI:10.1186/s12896-019-0567-x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: production of the polyketide derived from A. oryzae wA
+      notes: Tamano et al. replaced the native wA promoter in an A. oryzae kojA disruptant
+        with the kojA promoter, confirmed recombination at the targeted wA locus,
+        and matched the accumulated compound to a YWA1 standard by UV-Vis and UPLC-MS.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002175.3/BGC0002175.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0002175.3 maps the Aspergillus oryzae RIB40 YWA1 cluster CDS
+        AO090102000545 to GenPept BAE61567.1.
+    - reference: https://www.uniprot.org/uniprotkb/Q2UA48
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Unreviewed UniProtKB:Q2UA48 is the 2,141 aa Aspergillus oryzae RIB40
+        AO090102000545 entry; its canonical sequence is identical to the MIBiG BAE61567.1
+        translation, and its RHEA:62652/RHEA:62653 annotation is computational.
+    - reference: https://www.rhea-db.org/rhea/62652
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:62652 is the acetyl-CoA plus six malonyl-CoA naphthopyrone YWA1
+        synthase master reaction, mapped to left-to-right direction RHEA:62653 through
+        homologous Swiss-Prot fungal naphthopyrone synthases.
+  - subject: wa_pks
+    predicate: forms
+    object: ywa1
+    notes: wA promoter replacement in A. oryzae produced YWA1-matching yellow pigment
+      in the kojA-disruptant PkojA::wA strain.
+    evidence:
+    - reference: DOI:10.1186/s12896-019-0567-x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: production of the polyketide derived from A. oryzae wA
+      notes: Tamano et al. replaced the native wA promoter in an A. oryzae kojA disruptant
+        with the kojA promoter, confirmed recombination at the targeted wA locus,
+        and matched the accumulated compound to a YWA1 standard by UV-Vis and UPLC-MS.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002175.3/BGC0002175.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0002175.3 maps the Aspergillus oryzae RIB40 YWA1 cluster CDS
+        AO090102000545 to GenPept BAE61567.1.
+    - reference: https://www.uniprot.org/uniprotkb/Q2UA48
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Unreviewed UniProtKB:Q2UA48 is the 2,141 aa Aspergillus oryzae RIB40
+        AO090102000545 entry; its canonical sequence is identical to the MIBiG BAE61567.1
+        translation, and its RHEA:62652/RHEA:62653 annotation is computational.
+    - reference: https://www.rhea-db.org/rhea/62652
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:62652 is the acetyl-CoA plus six malonyl-CoA naphthopyrone YWA1
+        synthase master reaction, mapped to left-to-right direction RHEA:62653 through
+        homologous Swiss-Prot fungal naphthopyrone synthases.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -120,3 +273,16 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T02:25:42Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added an exact Aspergillus oryzae RIB40 wA UniProtKB:Q2UA48 YWA1 biosynthetic
+    step, grounded it to RHEA:62652, and added a BIOSYNTHESIS causal graph for acetyl-CoA
+    and malonyl-CoA assembly of YWA1.
+  llm_assisted: true
+- timestamp: '2026-10-01T02:32:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Clarified that the acetyl-CoA and malonyl-CoA stoichiometry for Q2UA48
+    is proposed from the RHEA:62652 database reaction annotation.
+  llm_assisted: true
