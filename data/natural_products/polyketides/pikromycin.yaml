@@ -96,6 +96,108 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-b17a72ae76
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:O87605
+  enzyme_label: PikC cytochrome P450 monooxygenase
+  reaction_id: RHEA:39887
+  substrate: CHEBI:29649
+  product: CHEBI:29665
+  notes: PikC hydroxylates the 14-membered macrolide narbomycin to form pikromycin.
+    RHEA:39887 grounds the same monooxygenase reaction using the corresponding protonated
+    ChEBI species.
+  evidence:
+  - reference: DOI:10.1016/S1074-5521(98)90293-9
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Purified PikC effectively converts YC-17 into methymycin and neomethymycin
+      and narbomycin into pikromycin in vitro
+    notes: Xue et al. inactivated pikC in Streptomyces venezuelae, observed loss of
+      hydroxylated macrolides with YC-17 and narbomycin accumulation, and showed that
+      purified recombinant PikC converts narbomycin into pikromycin in vitro.
+  - reference: https://www.uniprot.org/uniprotkb/O87605
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:O87605 is the 416 aa Streptomyces venezuelae PikC/PicK
+      cytochrome P450 monooxygenase, has gene name pikC, annotates EC 1.14.15.33,
+      and cross-references the RHEA:39887 narbomycin-to-pikromycin reaction.
+  - reference: RHEA:39887
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: RHEA:39887 grounds PikC-catalyzed hydroxylation of narbomycin(1+) to pikromycin(1+)
+      through EC 1.14.15.33; this record uses neutral CHEBI:29649 and CHEBI:29665
+      for the corresponding NaturalProductMech structures.
+causal_graphs:
+- graph_id: pikromycin-pikc-hydroxylation
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces venezuelae pikromycin biosynthesis graph for PikC-catalyzed
+    narbomycin hydroxylation to pikromycin.
+  nodes:
+  - node_id: narbomycin
+    label: narbomycin
+    node_type: PRECURSOR
+    identifier: CHEBI:29649
+    grounding_status: GROUNDED
+  - node_id: pikc
+    label: PikC cytochrome P450 monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:O87605
+    grounding_status: GROUNDED
+  - node_id: pikromycin
+    label: pikromycin
+    node_type: COMPOUND
+    identifier: CHEBI:29665
+    grounding_status: GROUNDED
+  edges:
+  - subject: narbomycin
+    predicate: is hydroxylated by
+    object: pikc
+    notes: The narbomycin node is grounded to the neutral CHEBI:29649 record rather
+      than the protonated CHEBI:76801 species used in RHEA:39887.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(98)90293-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Purified PikC effectively converts YC-17 into methymycin and neomethymycin
+        and narbomycin into pikromycin in vitro
+      notes: Xue et al. inactivated pikC in Streptomyces venezuelae, observed loss
+        of hydroxylated macrolides with YC-17 and narbomycin accumulation, and showed
+        that purified recombinant PikC converts narbomycin into pikromycin in vitro.
+    - reference: https://www.uniprot.org/uniprotkb/O87605
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:O87605 is the 416 aa Streptomyces venezuelae PikC/PicK
+        cytochrome P450 monooxygenase, has gene name pikC, annotates EC 1.14.15.33,
+        and cross-references the RHEA:39887 narbomycin-to-pikromycin reaction.
+    - reference: RHEA:39887
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:39887 grounds PikC-catalyzed hydroxylation of narbomycin(1+) to
+        pikromycin(1+) through EC 1.14.15.33; this record uses neutral CHEBI:29649
+        and CHEBI:29665 for the corresponding NaturalProductMech structures.
+  - subject: pikc
+    predicate: forms
+    object: pikromycin
+    notes: Purified PikC forms pikromycin from narbomycin; this edge records the pikromycin
+      branch for this exact CHEBI:29665 record.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(98)90293-9
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Purified PikC effectively converts YC-17 into methymycin and neomethymycin
+        and narbomycin into pikromycin in vitro
+      notes: Xue et al. inactivated pikC in Streptomyces venezuelae, observed loss
+        of hydroxylated macrolides with YC-17 and narbomycin accumulation, and showed
+        that purified recombinant PikC converts narbomycin into pikromycin in vitro.
+    - reference: https://www.uniprot.org/uniprotkb/O87605
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:O87605 is the 416 aa Streptomyces venezuelae PikC/PicK
+        cytochrome P450 monooxygenase, has gene name pikC, annotates EC 1.14.15.33,
+        and cross-references the RHEA:39887 narbomycin-to-pikromycin reaction.
+    - reference: RHEA:39887
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:39887 grounds PikC-catalyzed hydroxylation of narbomycin(1+) to
+        pikromycin(1+) through EC 1.14.15.33; this record uses neutral CHEBI:29649
+        and CHEBI:29665 for the corresponding NaturalProductMech structures.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -105,3 +207,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T15:07:19Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS pathway step and causal graph for PikC-catalyzed narbomycin
+    hydroxylation to pikromycin, grounded to Streptomyces venezuelae UniProtKB:O87605
+    and RHEA:39887.
+  llm_assisted: true
