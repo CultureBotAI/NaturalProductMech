@@ -75,11 +75,11 @@ producer claims: 3407 (807 causal, 162 correlational)
   BGC_CORRELATED                        162
   SOURCE_ASSERTION                     2438
 
-cluster link claims: 3449 (1356 demonstrated)
+cluster link claims: 3449 (1357 demonstrated)
   CLUSTER_CORRELATED                    110
-  CLUSTER_DEMONSTRATED                 1356
+  CLUSTER_DEMONSTRATED                 1357
   CLUSTER_PREDICTED                       2
-  CLUSTER_UNSTATED                     1981
+  CLUSTER_UNSTATED                     1980
 
 records where a producer taxon is independently corroborated by a cited occurrence: 732
 records whose only origin evidence is a gene cluster with no named host: 27
