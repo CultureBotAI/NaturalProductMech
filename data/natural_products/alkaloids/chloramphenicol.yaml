@@ -346,7 +346,7 @@ biosynthetic_pathway:
       to chloramphenicol.
   - reference: DOI:10.1021/acs.biochem.7b00695
     evidence_type: PRIMARY_EXPERIMENT
-    snippet: CmlI N-oxygenase catalyzes the final three steps in chloramphenicol biosynthesis
+    snippet: CmlI N-Oxygenase Catalyzes the Final Three Steps in Chloramphenicol Biosynthesis
     notes: Komor et al. characterized CmlI kinetics with NH2-CAM, NH(OH)-CAM, and
       NO-CAM pathway intermediates and supported an enzyme-retained six-electron oxidation
       to chloramphenicol.
@@ -402,8 +402,8 @@ causal_graphs:
         into chloramphenicol.
     - reference: DOI:10.1021/acs.biochem.7b00695
       evidence_type: PRIMARY_EXPERIMENT
-      snippet: CmlI N-oxygenase catalyzes the final three steps in chloramphenicol
-        biosynthesis
+      snippet: CmlI N-Oxygenase Catalyzes the Final Three Steps in Chloramphenicol
+        Biosynthesis
       notes: Transient kinetic experiments supported CmlI retention of hydroxylamine
         and nitroso intermediates during the six-electron oxidation.
   - subject: cmli
@@ -419,8 +419,8 @@ causal_graphs:
         into chloramphenicol.
     - reference: DOI:10.1021/acs.biochem.7b00695
       evidence_type: PRIMARY_EXPERIMENT
-      snippet: CmlI N-oxygenase catalyzes the final three steps in chloramphenicol
-        biosynthesis
+      snippet: CmlI N-Oxygenase Catalyzes the Final Three Steps in Chloramphenicol
+        Biosynthesis
       notes: Transient kinetic experiments supported CmlI retention of hydroxylamine
         and nitroso intermediates during the six-electron oxidation.
 curation_history:
@@ -443,4 +443,10 @@ curation_history:
     causal graph for RHEA:58884 chloramphenicol formation; the step uses exact ChEBI
     substrate/product identifiers while noting that the seeded MIBiG record remains
     stereochemically incomplete.
+  llm_assisted: true
+- timestamp: '2026-10-01T06:31:55Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Corrected the 2017 CmlI evidence snippets to preserve the DOI title capitalization
+    verbatim.
   llm_assisted: true
