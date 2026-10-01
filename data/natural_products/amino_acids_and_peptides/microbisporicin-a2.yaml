@@ -95,13 +95,13 @@ biosynthetic_pathway:
     snippet: protein_id="ADK32563.1"
     retrieved_on: '2026-10-01'
     notes: GenBank HM536998.1 is the Microbispora corallina microbisporicin cluster
-      sequence and maps mibH and mibS to ADK32563.1 and ADK32564.1, respectively.
+      sequence and maps mibH to ADK32563.1.
   - reference: https://mibig.secondarymetabolites.org/repository/BGC0000529.5/BGC0000529.gbk
     evidence_type: DATABASE_ASSERTION
     snippet: 'MITE0000054: Halogenation (100% identity)'
     retrieved_on: '2026-10-01'
-    notes: MIBiG BGC0000529.5 places mibH/ADK32563.1 and mibS/ADK32564.1 inside the
-      active microbisporicin A2 cluster and annotates the mibH CDS with MITE0000054.
+    notes: MIBiG BGC0000529.5 places mibH/ADK32563.1 inside the active microbisporicin
+      A2 cluster and annotates the mibH CDS with MITE0000054.
   - reference: https://www.uniprot.org/uniprotkb/E2IHC5
     evidence_type: DATABASE_ASSERTION
     snippet: GN=mibH
@@ -109,6 +109,18 @@ biosynthetic_pathway:
     notes: Current unreviewed UniProtKB:E2IHC5 resolves as Microbispora corallina
       MibH tryptophan-5-halogenase, cross-references EMBL HM536998 protein ADK32563.1,
       and is sequence-identical to GenPept ADK32563.1.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM536998.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="ADK32564.1"
+    retrieved_on: '2026-10-01'
+    notes: GenBank HM536998.1 is the Microbispora corallina microbisporicin cluster
+      sequence and maps mibS to ADK32564.1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000529.5/BGC0000529.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="ADK32564.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000529.5 places mibS/ADK32564.1 inside the active microbisporicin
+      A2 cluster as the MibS flavin reductase CDS.
   - reference: https://www.uniprot.org/uniprotkb/E2IHC6
     evidence_type: DATABASE_ASSERTION
     snippet: GN=mibS
@@ -168,13 +180,13 @@ causal_graphs:
       snippet: protein_id="ADK32563.1"
       retrieved_on: '2026-10-01'
       notes: GenBank HM536998.1 is the Microbispora corallina microbisporicin cluster
-        sequence and maps mibH and mibS to ADK32563.1 and ADK32564.1, respectively.
+        sequence and maps mibH to ADK32563.1.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0000529.5/BGC0000529.gbk
       evidence_type: DATABASE_ASSERTION
       snippet: 'MITE0000054: Halogenation (100% identity)'
       retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0000529.5 places mibH/ADK32563.1 and mibS/ADK32564.1 inside
-        the active microbisporicin A2 cluster and annotates the mibH CDS with MITE0000054.
+      notes: MIBiG BGC0000529.5 places mibH/ADK32563.1 inside the active microbisporicin
+        A2 cluster and annotates the mibH CDS with MITE0000054.
     - reference: https://www.uniprot.org/uniprotkb/E2IHC5
       evidence_type: DATABASE_ASSERTION
       snippet: GN=mibH
@@ -204,16 +216,16 @@ causal_graphs:
         records chlorination of deschloro-microbisporicin A2 to the mature product.
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM536998.1
       evidence_type: DATABASE_ASSERTION
-      snippet: protein_id="ADK32563.1"
+      snippet: protein_id="ADK32564.1"
       retrieved_on: '2026-10-01'
       notes: GenBank HM536998.1 is the Microbispora corallina microbisporicin cluster
-        sequence and maps mibH and mibS to ADK32563.1 and ADK32564.1, respectively.
+        sequence and maps mibS to ADK32564.1.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0000529.5/BGC0000529.gbk
       evidence_type: DATABASE_ASSERTION
-      snippet: 'MITE0000054: Halogenation (100% identity)'
+      snippet: protein_id="ADK32564.1"
       retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0000529.5 places mibH/ADK32563.1 and mibS/ADK32564.1 inside
-        the active microbisporicin A2 cluster and annotates the mibH CDS with MITE0000054.
+      notes: MIBiG BGC0000529.5 places mibS/ADK32564.1 inside the active microbisporicin
+        A2 cluster as the MibS flavin reductase CDS.
     - reference: https://www.uniprot.org/uniprotkb/E2IHC6
       evidence_type: DATABASE_ASSERTION
       snippet: GN=mibS
@@ -247,13 +259,13 @@ causal_graphs:
       snippet: protein_id="ADK32563.1"
       retrieved_on: '2026-10-01'
       notes: GenBank HM536998.1 is the Microbispora corallina microbisporicin cluster
-        sequence and maps mibH and mibS to ADK32563.1 and ADK32564.1, respectively.
+        sequence and maps mibH to ADK32563.1.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0000529.5/BGC0000529.gbk
       evidence_type: DATABASE_ASSERTION
       snippet: 'MITE0000054: Halogenation (100% identity)'
       retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0000529.5 places mibH/ADK32563.1 and mibS/ADK32564.1 inside
-        the active microbisporicin A2 cluster and annotates the mibH CDS with MITE0000054.
+      notes: MIBiG BGC0000529.5 places mibH/ADK32563.1 inside the active microbisporicin
+        A2 cluster and annotates the mibH CDS with MITE0000054.
     - reference: https://www.uniprot.org/uniprotkb/E2IHC5
       evidence_type: DATABASE_ASSERTION
       snippet: GN=mibH
@@ -275,4 +287,10 @@ curation_history:
   action: RECORD_CURATED
   changes: Added the evidence-backed MibH/MibS terminal chlorination biosynthetic
     pathway step and BIOSYNTHESIS causal graph grounded to UniProtKB:E2IHC5 and UniProtKB:E2IHC6.
+  llm_assisted: true
+- timestamp: '2026-10-01T18:06:42Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Split MibH and MibS GenBank/MIBiG evidence so auxiliary MibS claims cite
+    ADK32564.1-specific snippets.
   llm_assisted: true
