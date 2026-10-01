@@ -54,12 +54,13 @@ producer_taxon_groups:
 producer_organisms:
 - taxon_id: NCBITaxon:682634
   taxon_label: Serratia plymuthica 4Rx13
-  evidence_basis: SOURCE_ASSERTION
+  evidence_basis: BGC_CHARACTERIZED
   biosynthetic_gene_cluster: mibig:BGC0001361
   source: MIBIG
   source_version: '3'
-  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
-    this field grades the taxon claim, which is a different question.'
+  notes: 'Locus evidence: Enzymatic assays|Knock-out studies. That evidence grades
+    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
+    a different question.'
   evidence:
   - reference: PMID:27231241
     evidence_type: DATABASE_ASSERTION
@@ -92,7 +93,10 @@ biosynthetic_gene_clusters:
   locus_to: 2262237
   bgc_class:
   - TERPENE
-  link_evidence_basis: CLUSTER_UNSTATED
+  locus_evidence_methods:
+  - Enzymatic assays
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
 - accession: mibig:BGC0002283
   entry_version: '2'
   entry_status: active
@@ -132,6 +136,206 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0001361, BGC0002283.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_label: SodC SAM-dependent C-methyltransferase and cyclase
+  substrates:
+  - CHEBI:175763
+  - CHEBI:59789
+  notes: SodC methylates and cyclizes (2E,6E)-farnesyl diphosphate to pre-sodorifen
+    diphosphate. The exact intermediate is left out of the structured product field
+    because no exact stable chemical CURIE was selected. SodC is left without enzyme_id
+    because no UniProtKB accession resolved for exact GenPept accession AGO55050.1.
+  evidence:
+  - reference: DOI:10.1021/jacs.8b08510
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Methylation and Cyclization of MEP-Derived Farnesyl Pyrophosphate
+    notes: von Reuss et al. reconstituted Serratia plymuthica 4Rx13 SodC in vitro
+      and placed the SAM-dependent C-methyltransferase upstream of SodD in the conversion
+      of (2E,6E)-farnesyl diphosphate toward pre-sodorifen diphosphate.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001361.3/BGC0001361.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0001361.3 places the Serratia plymuthica 4Rx13 SOD_c20760 CDS
+      at complement(11196..12173) in the BGC GenBank row with protein_id AGO55050.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AGO55050.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: NCBI GenPept AGO55050.1 is the Serratia plymuthica 4Rx13 SOD_c20760 sequence
+      assigned here to SodC; no UniProtKB entry resolved for this accession or locus.
+- step_number: 2
+  enzyme_label: SodD terpene cyclase
+  product: naturalproductmech:mibig-0ea28266f1
+  notes: SodD consumes pre-sodorifen diphosphate to form sodorifen. The intermediate
+    is left out of the structured substrate field because no exact stable chemical
+    CURIE was selected. SodD is left without enzyme_id because no UniProtKB accession
+    resolved for exact GenPept accession AGO55049.1.
+  evidence:
+  - reference: DOI:10.1021/jacs.8b08510
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Methylation and Cyclization of MEP-Derived Farnesyl Pyrophosphate
+    notes: von Reuss et al. reconstituted Serratia plymuthica 4Rx13 SodD in vitro
+      and placed the terpene cyclase downstream of SodC in the conversion of pre-sodorifen
+      diphosphate to sodorifen.
+  - reference: DOI:10.1093/femsle/fnw139
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Domik et al. assigned SOD_c20750 to the four-gene sodorifen biosynthetic
+      cluster and used knockouts in Serratia plymuthica 4Rx13 to support its role
+      in sodorifen production.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001361.3/BGC0001361.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0001361.3 places the Serratia plymuthica 4Rx13 SOD_c20750 CDS
+      at complement(10001..11155) in the BGC GenBank row with protein_id AGO55049.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AGO55049.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: NCBI GenPept AGO55049.1 is the Serratia plymuthica 4Rx13 SOD_c20750 sequence
+      assigned here to SodD; no UniProtKB entry resolved for this accession or locus.
+causal_graphs:
+- graph_id: sodorifen-sodcd-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Serratia plymuthica 4Rx13 SodC and SodD convert (2E,6E)-farnesyl diphosphate
+    and S-adenosyl-L-methionine into sodorifen through pre-sodorifen diphosphate.
+  nodes:
+  - node_id: farnesyl_diphosphate
+    label: (2E,6E)-farnesyl diphosphate
+    node_type: PRECURSOR
+    identifier: CHEBI:175763
+    grounding_status: GROUNDED
+  - node_id: s_adenosyl_l_methionine
+    label: S-adenosyl-L-methionine zwitterion
+    node_type: PRECURSOR
+    identifier: CHEBI:59789
+    grounding_status: GROUNDED
+  - node_id: sodc
+    label: SodC
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: pre_sodorifen_diphosphate
+    label: pre-sodorifen diphosphate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: sodd
+    label: SodD
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: sodorifen
+    label: sodorifen
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-0ea28266f1
+    grounding_status: GROUNDED
+  edges:
+  - subject: farnesyl_diphosphate
+    predicate: is methylated and cyclized by
+    object: sodc
+    evidence:
+    - reference: DOI:10.1021/jacs.8b08510
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Methylation and Cyclization of MEP-Derived Farnesyl Pyrophosphate
+      notes: von Reuss et al. reconstituted Serratia plymuthica 4Rx13 SodC in vitro
+        and placed the SAM-dependent C-methyltransferase upstream of SodD in the conversion
+        of (2E,6E)-farnesyl diphosphate toward pre-sodorifen diphosphate.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001361.3/BGC0001361.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001361.3 places the Serratia plymuthica 4Rx13 SOD_c20760 CDS
+        at complement(11196..12173) in the BGC GenBank row with protein_id AGO55050.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGO55050.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept AGO55050.1 is the Serratia plymuthica 4Rx13 SOD_c20760 sequence
+        assigned here to SodC; no UniProtKB entry resolved for this accession or locus.
+  - subject: s_adenosyl_l_methionine
+    predicate: is used by
+    object: sodc
+    evidence:
+    - reference: DOI:10.1021/jacs.8b08510
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Methylation and Cyclization of MEP-Derived Farnesyl Pyrophosphate
+      notes: von Reuss et al. reconstituted Serratia plymuthica 4Rx13 SodC in vitro
+        and placed the SAM-dependent C-methyltransferase upstream of SodD in the conversion
+        of (2E,6E)-farnesyl diphosphate toward pre-sodorifen diphosphate.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001361.3/BGC0001361.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001361.3 places the Serratia plymuthica 4Rx13 SOD_c20760 CDS
+        at complement(11196..12173) in the BGC GenBank row with protein_id AGO55050.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGO55050.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept AGO55050.1 is the Serratia plymuthica 4Rx13 SOD_c20760 sequence
+        assigned here to SodC; no UniProtKB entry resolved for this accession or locus.
+  - subject: sodc
+    predicate: forms
+    object: pre_sodorifen_diphosphate
+    evidence:
+    - reference: DOI:10.1021/jacs.8b08510
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Methylation and Cyclization of MEP-Derived Farnesyl Pyrophosphate
+      notes: von Reuss et al. reconstituted Serratia plymuthica 4Rx13 SodC in vitro
+        and placed the SAM-dependent C-methyltransferase upstream of SodD in the conversion
+        of (2E,6E)-farnesyl diphosphate toward pre-sodorifen diphosphate.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001361.3/BGC0001361.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001361.3 places the Serratia plymuthica 4Rx13 SOD_c20760 CDS
+        at complement(11196..12173) in the BGC GenBank row with protein_id AGO55050.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGO55050.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept AGO55050.1 is the Serratia plymuthica 4Rx13 SOD_c20760 sequence
+        assigned here to SodC; no UniProtKB entry resolved for this accession or locus.
+  - subject: pre_sodorifen_diphosphate
+    predicate: is cyclized by
+    object: sodd
+    evidence:
+    - reference: DOI:10.1021/jacs.8b08510
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Methylation and Cyclization of MEP-Derived Farnesyl Pyrophosphate
+      notes: von Reuss et al. reconstituted Serratia plymuthica 4Rx13 SodD in vitro
+        and placed the terpene cyclase downstream of SodC in the conversion of pre-sodorifen
+        diphosphate to sodorifen.
+    - reference: DOI:10.1093/femsle/fnw139
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Domik et al. assigned SOD_c20750 to the four-gene sodorifen biosynthetic
+        cluster and used knockouts in Serratia plymuthica 4Rx13 to support its role
+        in sodorifen production.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001361.3/BGC0001361.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001361.3 places the Serratia plymuthica 4Rx13 SOD_c20750 CDS
+        at complement(10001..11155) in the BGC GenBank row with protein_id AGO55049.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGO55049.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept AGO55049.1 is the Serratia plymuthica 4Rx13 SOD_c20750 sequence
+        assigned here to SodD; no UniProtKB entry resolved for this accession or locus.
+  - subject: sodd
+    predicate: forms
+    object: sodorifen
+    evidence:
+    - reference: DOI:10.1021/jacs.8b08510
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Methylation and Cyclization of MEP-Derived Farnesyl Pyrophosphate
+      notes: von Reuss et al. reconstituted Serratia plymuthica 4Rx13 SodD in vitro
+        and placed the terpene cyclase downstream of SodC in the conversion of pre-sodorifen
+        diphosphate to sodorifen.
+    - reference: DOI:10.1093/femsle/fnw139
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Domik et al. assigned SOD_c20750 to the four-gene sodorifen biosynthetic
+        cluster and used knockouts in Serratia plymuthica 4Rx13 to support its role
+        in sodorifen production.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001361.3/BGC0001361.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001361.3 places the Serratia plymuthica 4Rx13 SOD_c20750 CDS
+        at complement(10001..11155) in the BGC GenBank row with protein_id AGO55049.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGO55049.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept AGO55049.1 is the Serratia plymuthica 4Rx13 SOD_c20750 sequence
+        assigned here to SodD; no UniProtKB entry resolved for this accession or locus.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -141,3 +345,13 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T09:38:11Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a Serratia plymuthica 4Rx13 SodC/SodD biosynthetic pathway and BIOSYNTHESIS
+    causal graph for sodorifen.
+  llm_assisted: true
+- timestamp: '2026-10-01T09:59:12Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -47,7 +47,7 @@ same claim.</p>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
   <td>Serratia plymuthica 4Rx13<br><span class="mono">NCBITaxon:682634</span></td>
-  <td><span class="tag weak">SOURCE_ASSERTION</span></td>
+  <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
   <td class="mono">mibig:BGC0001361</td>
   <td><span class="mono">PMID:27231241</span></td>
 </tr>
@@ -83,7 +83,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
   <td class="mono">mibig:BGC0001361</td>
   <td>Serratia plymuthica 4Rx13<br><span class="mono">NCBITaxon:682634</span>
 </td>
-  <td><span class="tag ">CLUSTER_UNSTATED</span></td>
+  <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
   <td class="mono">genbank:CP006250.1</td>
 </tr>
 <tr>
@@ -98,7 +98,68 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>SodC SAM-dependent C-methyltransferase and cyclase</td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:175763 + CHEBI:59789 &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1021/jacs.8b08510</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>SodD terpene cyclase</td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; naturalproductmech:mibig-0ea28266f1</td>
+  <td class="mono">DOI:10.1021/jacs.8b08510</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: SodC methylates and cyclizes (2E,6E)-farnesyl diphosphate to pre-sodorifen diphosphate. The exact intermediate is left out of the structured product field because no exact stable chemical CURIE was selected. SodC is left without enzyme_id because no UniProtKB accession resolved for exact GenPept accession AGO55050.1.</p><p class="sub">Step 2: SodD consumes pre-sodorifen diphosphate to form sodorifen. The intermediate is left out of the structured substrate field because no exact stable chemical CURIE was selected. SodD is left without enzyme_id because no UniProtKB accession resolved for exact GenPept accession AGO55049.1.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
+<p class="sub">Serratia plymuthica 4Rx13 SodC and SodD convert (2E,6E)-farnesyl diphosphate and S-adenosyl-L-methionine into sodorifen through pre-sodorifen diphosphate.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>(2E,6E)-farnesyl diphosphate</td>
+  <td>is methylated and cyclized by</td>
+  <td>SodC</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.8b08510<br>https://mibig.secondarymetabolites.org/repository/BGC0001361.3/BGC0001361.gbk<br>https://www.ncbi.nlm.nih.gov/protein/AGO55050.1</td>
+</tr>
+<tr>
+  <td>S-adenosyl-L-methionine zwitterion</td>
+  <td>is used by</td>
+  <td>SodC</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.8b08510<br>https://mibig.secondarymetabolites.org/repository/BGC0001361.3/BGC0001361.gbk<br>https://www.ncbi.nlm.nih.gov/protein/AGO55050.1</td>
+</tr>
+<tr>
+  <td>SodC</td>
+  <td>forms</td>
+  <td>pre-sodorifen diphosphate</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.8b08510<br>https://mibig.secondarymetabolites.org/repository/BGC0001361.3/BGC0001361.gbk<br>https://www.ncbi.nlm.nih.gov/protein/AGO55050.1</td>
+</tr>
+<tr>
+  <td>pre-sodorifen diphosphate</td>
+  <td>is cyclized by</td>
+  <td>SodD</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.8b08510<br>DOI:10.1093/femsle/fnw139<br>https://mibig.secondarymetabolites.org/repository/BGC0001361.3/BGC0001361.gbk<br>https://www.ncbi.nlm.nih.gov/protein/AGO55049.1</td>
+</tr>
+<tr>
+  <td>SodD</td>
+  <td>forms</td>
+  <td>sodorifen</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.8b08510<br>DOI:10.1093/femsle/fnw139<br>https://mibig.secondarymetabolites.org/repository/BGC0001361.3/BGC0001361.gbk<br>https://www.ncbi.nlm.nih.gov/protein/AGO55049.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
