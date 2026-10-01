@@ -387,6 +387,57 @@ biosynthetic_pathway:
     notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TRK9 to RHEA:62228, the
       generalized oxidation of (E)-ascladiol to patulin.
 - step_number: 2
+  enzyme_id: UniProtKB:A0A075TRL5
+  enzyme_label: PatH cytochrome P450 monooxygenase
+  reaction_id: RHEA:62209
+  substrates:
+  - CHEBI:17231
+  products:
+  - CHEBI:17069
+  notes: PatH hydroxylates m-cresol to 3-hydroxybenzyl alcohol in the Penicillium
+    expansum patulin pathway. This partial pathway step leaves upstream PatG formation
+    of m-cresol uncurated.
+  evidence:
+  - reference: DOI:10.1111/1462-2920.14542
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
+      were verified in P. expansum
+    notes: Li et al. dissected the Penicillium expansum patulin cluster; MITE and
+      UniProt ground PatH m-cresol hydroxylation to this DOI.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000335
+    evidence_type: DATABASE_ASSERTION
+    snippet: Hydroxylation of m-cresol in patulin biosynthetic pathway.
+    retrieved_on: '2026-10-01'
+    notes: MITE0000335 is an active PatH cytochrome P450 entry for hydroxylation of
+      m-cresol to 3-hydroxybenzyl alcohol in patulin biosynthesis; it links UniProtKB:A0A075TRL5,
+      GenPept AIG62144.1, MIBiG BGC0000120 and the Li et al. DOI.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="AIG62144.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000120.5 places AIG62144.1 inside the active Penicillium expansum
+      NRRL 35695 patulin cluster as the patH cytochrome P450 CDS annotated as M-cresol
+      hydroxylase.
+  - reference: https://www.uniprot.org/uniprotkb/A0A075TRL5
+    evidence_type: DATABASE_ASSERTION
+    snippet: PatH catalyzes the conversion of m-cresol into m-hydroxybenzyl alcohol
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:A0A075TRL5 is the 524 aa P. expansum cytochrome P450
+      monooxygenase patH encoded by patH/PEX2_082740; UniProt annotates RHEA:62209
+      as the left-to-right physiological 3-methylphenol to 3-hydroxybenzyl alcohol
+      activity from PMID:30680886.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AIG62144.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: M-cresol hydroxylase [Penicillium expansum]
+    retrieved_on: '2026-10-01'
+    notes: GenPept AIG62144.1 is the 524 aa Penicillium expansum NRRL 35695 CYP619C3
+      cytochrome P450 encoded by KF899892.1 in the patulin biosynthetic cluster.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TRL5 to the left-to-right
+      RHEA:62209 hydroxylation reaction.
+- step_number: 3
   enzyme_id: UniProtKB:A0A075TMP8
   enzyme_label: PatI cytochrome P450 monooxygenase
   reaction_id: RHEA:62213
@@ -649,6 +700,117 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TMP8 to the left-to-right
         RHEA:62213 hydroxylation reaction.
+- graph_id: patulin-path-hydroxylation
+  scope: BIOSYNTHESIS
+  description: Partial P. expansum patulin biosynthesis graph for PatH-catalyzed hydroxylation
+    of m-cresol to 3-hydroxybenzyl alcohol.
+  nodes:
+  - node_id: m_cresol
+    label: m-cresol
+    node_type: PRECURSOR
+    identifier: CHEBI:17231
+    grounding_status: GROUNDED
+  - node_id: path
+    label: PatH cytochrome P450 monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A075TRL5
+    grounding_status: GROUNDED
+  - node_id: m_hydroxybenzyl_alcohol
+    label: 3-hydroxybenzyl alcohol
+    node_type: PRECURSOR
+    identifier: CHEBI:17069
+    grounding_status: GROUNDED
+  edges:
+  - subject: m_cresol
+    predicate: is hydroxylated by
+    object: path
+    notes: PatH hydroxylates m-cresol to form 3-hydroxybenzyl alcohol in the patulin
+      biosynthetic pathway.
+    evidence:
+    - reference: DOI:10.1111/1462-2920.14542
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
+        were verified in P. expansum
+      notes: Li et al. dissected the Penicillium expansum patulin cluster; MITE and
+        UniProt ground PatH m-cresol hydroxylation to this DOI.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000335
+      evidence_type: DATABASE_ASSERTION
+      snippet: Hydroxylation of m-cresol in patulin biosynthetic pathway.
+      retrieved_on: '2026-10-01'
+      notes: MITE0000335 is an active PatH cytochrome P450 entry for hydroxylation
+        of m-cresol to 3-hydroxybenzyl alcohol in patulin biosynthesis; it links UniProtKB:A0A075TRL5,
+        GenPept AIG62144.1, MIBiG BGC0000120 and the Li et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AIG62144.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000120.5 places AIG62144.1 inside the active Penicillium expansum
+        NRRL 35695 patulin cluster as the patH cytochrome P450 CDS annotated as M-cresol
+        hydroxylase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A075TRL5
+      evidence_type: DATABASE_ASSERTION
+      snippet: PatH catalyzes the conversion of m-cresol into m-hydroxybenzyl alcohol
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A075TRL5 is the 524 aa P. expansum cytochrome P450
+        monooxygenase patH encoded by patH/PEX2_082740; UniProt annotates RHEA:62209
+        as the left-to-right physiological 3-methylphenol to 3-hydroxybenzyl alcohol
+        activity from PMID:30680886.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AIG62144.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: M-cresol hydroxylase [Penicillium expansum]
+      retrieved_on: '2026-10-01'
+      notes: GenPept AIG62144.1 is the 524 aa Penicillium expansum NRRL 35695 CYP619C3
+        cytochrome P450 encoded by KF899892.1 in the patulin biosynthetic cluster.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TRL5 to the left-to-right
+        RHEA:62209 hydroxylation reaction.
+  - subject: path
+    predicate: forms
+    object: m_hydroxybenzyl_alcohol
+    notes: This graph stops at 3-hydroxybenzyl alcohol because this curation covers
+      the PatH reaction.
+    evidence:
+    - reference: DOI:10.1111/1462-2920.14542
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
+        were verified in P. expansum
+      notes: Li et al. dissected the Penicillium expansum patulin cluster; MITE and
+        UniProt ground PatH m-cresol hydroxylation to this DOI.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000335
+      evidence_type: DATABASE_ASSERTION
+      snippet: Hydroxylation of m-cresol in patulin biosynthetic pathway.
+      retrieved_on: '2026-10-01'
+      notes: MITE0000335 is an active PatH cytochrome P450 entry for hydroxylation
+        of m-cresol to 3-hydroxybenzyl alcohol in patulin biosynthesis; it links UniProtKB:A0A075TRL5,
+        GenPept AIG62144.1, MIBiG BGC0000120 and the Li et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AIG62144.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000120.5 places AIG62144.1 inside the active Penicillium expansum
+        NRRL 35695 patulin cluster as the patH cytochrome P450 CDS annotated as M-cresol
+        hydroxylase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A075TRL5
+      evidence_type: DATABASE_ASSERTION
+      snippet: PatH catalyzes the conversion of m-cresol into m-hydroxybenzyl alcohol
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A075TRL5 is the 524 aa P. expansum cytochrome P450
+        monooxygenase patH encoded by patH/PEX2_082740; UniProt annotates RHEA:62209
+        as the left-to-right physiological 3-methylphenol to 3-hydroxybenzyl alcohol
+        activity from PMID:30680886.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AIG62144.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: M-cresol hydroxylase [Penicillium expansum]
+      retrieved_on: '2026-10-01'
+      notes: GenPept AIG62144.1 is the 524 aa Penicillium expansum NRRL 35695 CYP619C3
+        cytochrome P450 encoded by KF899892.1 in the patulin biosynthetic cluster.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TRL5 to the left-to-right
+        RHEA:62209 hydroxylation reaction.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -670,4 +832,16 @@ curation_history:
   action: RECORD_CURATED
   changes: Added a UniProt-grounded PatI hydroxylation pathway step and partial BIOSYNTHESIS
     causal graph for patulin.
+  llm_assisted: true
+- timestamp: '2026-10-01T23:19:21Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a UniProt-grounded PatH hydroxylation pathway step and partial BIOSYNTHESIS
+    causal graph for patulin.
+  llm_assisted: true
+- timestamp: '2026-10-01T23:20:38Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Renumbered the PatH and PatI pathway steps to preserve the PatE-PatH-PatI
+    substrate/product order.
   llm_assisted: true
