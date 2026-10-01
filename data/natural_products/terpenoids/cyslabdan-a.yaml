@@ -101,6 +101,150 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A0H5B8U5
+  enzyme_label: Mca amidase
+  product: naturalproductmech:mibig-f3cb15d2b6
+  notes: Mca hydrolyzes the glycosylated mycothiol S-conjugate made from the CldC
+    product in the terminal cyslabdan A step. This single-step partial pathway leaves
+    the upstream CldA-CldD enzymatic steps and the nonenzymatic mycothiol addition
+    uncurated.
+  evidence:
+  - reference: DOI:10.1007/s10295-015-1694-6
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: failed to produce 1, but accumulated 4
+    notes: Ikeda et al. number cyslabdan A as compound 1 and (7S,8S,12E)-8,17-epoxy-7-hydroxylabda-12,14-diene
+      as compound 4. Their Streptomyces avermitilis SUKA22 mca-deletion experiment
+      carrying the Streptomyces cyslabdanicus cld cluster showed that a mycothiol
+      S-conjugate amidase is required downstream of nonenzymatic mycothiol addition
+      to form cyslabdan A.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000107
+    evidence_type: DATABASE_ASSERTION
+    snippet: Hydrolysis
+    retrieved_on: '2026-10-01'
+    notes: MITE0000107 is an active Mca amidase entry for the terminal hydrolysis
+      of the glycosylated mycothiol S-conjugate in cyslabdan A biosynthesis. It links
+      UniProtKB:A0A0H5B8U5, GenPept BAR97454.1, MIBiG BGC0001910 and the Ikeda et
+      al. DOI.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001910.4/index.html
+    evidence_type: DATABASE_ASSERTION
+    snippet: MITE0000107
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0001910.4 places BAR97454.1 inside the active Streptomyces cyslabdanicus
+      cyslabdan A/B/C cluster as an amidase CDS and annotates the CDS with MITE0000107.
+  - reference: https://www.uniprot.org/uniprotkb/A0A0H5B8U5
+    evidence_type: DATABASE_ASSERTION
+    snippet: A0A0H5B8U5_STRCP
+    retrieved_on: '2026-10-01'
+    notes: Current unreviewed UniProtKB:A0A0H5B8U5 resolves as a Streptomyces cyslabdanicus
+      379 aa protein and cross-references EMBL LC064028 protein BAR97454.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAR97454.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: amidase [Streptomyces cyslabdanicus]
+    retrieved_on: '2026-10-01'
+    notes: GenPept BAR97454.1 is the 379 aa Streptomyces cyslabdanicus K04-0144 amidase
+      encoded by complement(LC064028.1:10784..11923).
+causal_graphs:
+- graph_id: cyslabdan-a-mca-hydrolysis
+  scope: BIOSYNTHESIS
+  description: Terminal Streptomyces cyslabdanicus cyslabdan A biosynthesis graph
+    for Mca-associated hydrolysis of a mycothiol S-conjugate.
+  nodes:
+  - node_id: cyslabdan_mycothiol_s_conjugate
+    label: cyslabdan mycothiol S-conjugate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mca
+    label: Mca amidase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A0H5B8U5
+    grounding_status: GROUNDED
+  - node_id: cyslabdan_a
+    label: cyslabdan A
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-f3cb15d2b6
+    grounding_status: GROUNDED
+  edges:
+  - subject: cyslabdan_mycothiol_s_conjugate
+    predicate: is hydrolyzed by
+    object: mca
+    notes: Mca is associated with hydrolysis of the mycothiol S-conjugate amide upstream
+      of cyslabdan A formation.
+    evidence:
+    - reference: DOI:10.1007/s10295-015-1694-6
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: failed to produce 1, but accumulated 4
+      notes: Ikeda et al. number cyslabdan A as compound 1 and (7S,8S,12E)-8,17-epoxy-7-hydroxylabda-12,14-diene
+        as compound 4. Their Streptomyces avermitilis SUKA22 mca-deletion experiment
+        carrying the Streptomyces cyslabdanicus cld cluster showed that a mycothiol
+        S-conjugate amidase is required downstream of nonenzymatic mycothiol addition
+        to form cyslabdan A.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000107
+      evidence_type: DATABASE_ASSERTION
+      snippet: Hydrolysis
+      retrieved_on: '2026-10-01'
+      notes: MITE0000107 is an active Mca amidase entry for the terminal hydrolysis
+        of the glycosylated mycothiol S-conjugate in cyslabdan A biosynthesis. It
+        links UniProtKB:A0A0H5B8U5, GenPept BAR97454.1, MIBiG BGC0001910 and the Ikeda
+        et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001910.4/index.html
+      evidence_type: DATABASE_ASSERTION
+      snippet: MITE0000107
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001910.4 places BAR97454.1 inside the active Streptomyces cyslabdanicus
+        cyslabdan A/B/C cluster as an amidase CDS and annotates the CDS with MITE0000107.
+    - reference: https://www.uniprot.org/uniprotkb/A0A0H5B8U5
+      evidence_type: DATABASE_ASSERTION
+      snippet: A0A0H5B8U5_STRCP
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:A0A0H5B8U5 resolves as a Streptomyces cyslabdanicus
+        379 aa protein and cross-references EMBL LC064028 protein BAR97454.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAR97454.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: amidase [Streptomyces cyslabdanicus]
+      retrieved_on: '2026-10-01'
+      notes: GenPept BAR97454.1 is the 379 aa Streptomyces cyslabdanicus K04-0144
+        amidase encoded by complement(LC064028.1:10784..11923).
+  - subject: mca
+    predicate: forms
+    object: cyslabdan_a
+    notes: MITE records Mca hydrolysis as forming cyslabdan A.
+    evidence:
+    - reference: DOI:10.1007/s10295-015-1694-6
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: failed to produce 1, but accumulated 4
+      notes: Ikeda et al. number cyslabdan A as compound 1 and (7S,8S,12E)-8,17-epoxy-7-hydroxylabda-12,14-diene
+        as compound 4. Their Streptomyces avermitilis SUKA22 mca-deletion experiment
+        carrying the Streptomyces cyslabdanicus cld cluster showed that a mycothiol
+        S-conjugate amidase is required downstream of nonenzymatic mycothiol addition
+        to form cyslabdan A.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000107
+      evidence_type: DATABASE_ASSERTION
+      snippet: Hydrolysis
+      retrieved_on: '2026-10-01'
+      notes: MITE0000107 is an active Mca amidase entry for the terminal hydrolysis
+        of the glycosylated mycothiol S-conjugate in cyslabdan A biosynthesis. It
+        links UniProtKB:A0A0H5B8U5, GenPept BAR97454.1, MIBiG BGC0001910 and the Ikeda
+        et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001910.4/index.html
+      evidence_type: DATABASE_ASSERTION
+      snippet: MITE0000107
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001910.4 places BAR97454.1 inside the active Streptomyces cyslabdanicus
+        cyslabdan A/B/C cluster as an amidase CDS and annotates the CDS with MITE0000107.
+    - reference: https://www.uniprot.org/uniprotkb/A0A0H5B8U5
+      evidence_type: DATABASE_ASSERTION
+      snippet: A0A0H5B8U5_STRCP
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:A0A0H5B8U5 resolves as a Streptomyces cyslabdanicus
+        379 aa protein and cross-references EMBL LC064028 protein BAR97454.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAR97454.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: amidase [Streptomyces cyslabdanicus]
+      retrieved_on: '2026-10-01'
+      notes: GenPept BAR97454.1 is the 379 aa Streptomyces cyslabdanicus K04-0144
+        amidase encoded by complement(LC064028.1:10784..11923).
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -110,3 +254,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T21:07:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a terminal Mca/UniProtKB:A0A0H5B8U5 hydrolysis pathway step and BIOSYNTHESIS
+    causal graph for cyslabdan A.
+  llm_assisted: true
