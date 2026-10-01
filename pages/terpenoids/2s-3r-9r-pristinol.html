@@ -84,7 +84,47 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>Pristinol synthase<br><span class="mono">UniProtKB:B5H7H3</span></td>
+  <td class="mono">RHEA:54372</td>
+  <td class="mono">CHEBI:175763 &rarr; CHEBI:138165</td>
+  <td class="mono">DOI:10.1002/anie.201605425</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Streptomyces pristinaespiralis ATCC 25486 pristinol synthase cyclizes (2E,6E)-farnesyl diphosphate with water to (+)-(2S,3R,9R)-pristinol and diphosphate.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Streptomyces pristinaespiralis ATCC 25486 pristinol synthase cyclizes (2E,6E)-farnesyl diphosphate to form (+)-(2S,3R,9R)-pristinol.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>BGC0001746 pristinol biosynthetic gene cluster</td>
+  <td>encodes</td>
+  <td>Pristinol synthase</td>
+  <td>BGC0001746 contains SSDG_RS31275, the WP_005320742.1-encoded pristinol synthase.</td>
+  <td class="mono">https://mibig.secondarymetabolites.org/repository/BGC0001746.3/BGC0001746.gbk<br>https://www.uniprot.org/uniprotkb/B5H7H3</td>
+</tr>
+<tr>
+  <td>(2E,6E)-farnesyl diphosphate</td>
+  <td>is cyclized by</td>
+  <td>Pristinol synthase</td>
+  <td>Pristinol synthase abstracts diphosphate from FPP and catalyzes the rearranged sesquiterpenol-forming cyclization.</td>
+  <td class="mono">DOI:10.1002/anie.201605425<br>https://www.uniprot.org/uniprotkb/B5H7H3<br>https://www.rhea-db.org/rhea/54372</td>
+</tr>
+<tr>
+  <td>Pristinol synthase</td>
+  <td>produces</td>
+  <td>(+)-(2S,3R,9R)-pristinol</td>
+  <td>Pristinol synthase produces (+)-(2S,3R,9R)-pristinol via the RHEA:54372 reaction.</td>
+  <td class="mono">DOI:10.1002/anie.201605425<br>https://www.uniprot.org/uniprotkb/B5H7H3<br>https://www.rhea-db.org/rhea/54372</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
