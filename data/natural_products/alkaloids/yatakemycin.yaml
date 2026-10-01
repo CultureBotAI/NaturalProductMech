@@ -76,6 +76,139 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:I3NN71
+  enzyme_label: YtkW SAM-dependent methyltransferase
+  notes: YtkW S-methylates the thiocarboxylic acid moiety of a yatakemycin subunit
+    A intermediate. This single-step partial pathway leaves YtkG/YtkF sulfur transfer
+    and the remaining assembly of the YTM scaffold uncurated.
+  evidence:
+  - reference: DOI:10.1002/anie.202522109
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: catalytic mechanism of YtkW
+    notes: Feng et al. functionally characterized ytkG/F/W in yatakemycin biosynthesis;
+      MITE curates the YtkW S-methyltransferase reaction as an in vitro assay from
+      this primary article.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000458
+    evidence_type: DATABASE_ASSERTION
+    snippet: S-methylation on thiocarboxylic acid moiety of subunit A of yatakemycin
+    retrieved_on: '2026-10-01'
+    notes: MITE0000458 is an active YtkW entry for S-methylation of a thiocarboxylic
+      acid on yatakemycin subunit A; it links UniProtKB:I3NN71, GenPept ADZ13559.1,
+      MIBiG BGC0000466 and the Feng et al. DOI.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000466.5/BGC0000466.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="ADZ13559.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000466.5 places ADZ13559.1 in the active Streptomyces sp. TP-A2060
+      yatakemycin cluster as the YtkW methyltransferase CDS.
+  - reference: https://www.uniprot.org/uniprotkb/I3NN71
+    evidence_type: DATABASE_ASSERTION
+    snippet: 'SubName: Full=YtkW'
+    retrieved_on: '2026-10-01'
+    notes: Current unreviewed UniProtKB:I3NN71 resolves as a 209 aa Streptomyces sp.
+      TP-A2060 YtkW protein and cross-references EMBL JF429418 protein ADZ13559.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ADZ13559.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: YtkW [Streptomyces sp. TP-A2060]
+    retrieved_on: '2026-10-01'
+    notes: GenPept ADZ13559.1 is the 209 aa Streptomyces sp. TP-A2060 YtkW protein
+      encoded by JF429418.1:29692..30321.
+causal_graphs:
+- graph_id: yatakemycin-ytkw-s-methylation
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces sp. TP-A2060 yatakemycin biosynthesis graph for
+    YtkW S-methylation of a thiocarboxylic-acid-bearing subunit A intermediate.
+  nodes:
+  - node_id: thiocarboxylated_subunit_a
+    label: thiocarboxylated yatakemycin subunit A intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: ytkw
+    label: YtkW SAM-dependent methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:I3NN71
+    grounding_status: GROUNDED
+  - node_id: s_methyl_thioester_subunit_a
+    label: S-methyl thioester yatakemycin subunit A intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: thiocarboxylated_subunit_a
+    predicate: is S-methylated by
+    object: ytkw
+    notes: MITE records YtkW as the SAM-dependent enzyme for S-methylation of a thiocarboxylic
+      acid moiety in yatakemycin subunit A.
+    evidence:
+    - reference: DOI:10.1002/anie.202522109
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: catalytic mechanism of YtkW
+      notes: Feng et al. functionally characterized ytkG/F/W in yatakemycin biosynthesis;
+        MITE curates the YtkW S-methyltransferase reaction as an in vitro assay from
+        this primary article.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000458
+      evidence_type: DATABASE_ASSERTION
+      snippet: S-methylation on thiocarboxylic acid moiety of subunit A of yatakemycin
+      retrieved_on: '2026-10-01'
+      notes: MITE0000458 is an active YtkW entry for S-methylation of a thiocarboxylic
+        acid on yatakemycin subunit A; it links UniProtKB:I3NN71, GenPept ADZ13559.1,
+        MIBiG BGC0000466 and the Feng et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000466.5/BGC0000466.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="ADZ13559.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000466.5 places ADZ13559.1 in the active Streptomyces sp. TP-A2060
+        yatakemycin cluster as the YtkW methyltransferase CDS.
+    - reference: https://www.uniprot.org/uniprotkb/I3NN71
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'SubName: Full=YtkW'
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:I3NN71 resolves as a 209 aa Streptomyces
+        sp. TP-A2060 YtkW protein and cross-references EMBL JF429418 protein ADZ13559.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADZ13559.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: YtkW [Streptomyces sp. TP-A2060]
+      retrieved_on: '2026-10-01'
+      notes: GenPept ADZ13559.1 is the 209 aa Streptomyces sp. TP-A2060 YtkW protein
+        encoded by JF429418.1:29692..30321.
+  - subject: ytkw
+    predicate: forms
+    object: s_methyl_thioester_subunit_a
+    notes: This graph stops at the S-methyl thioester subunit A intermediate because
+      later yatakemycin scaffold assembly steps are not curated here.
+    evidence:
+    - reference: DOI:10.1002/anie.202522109
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: catalytic mechanism of YtkW
+      notes: Feng et al. functionally characterized ytkG/F/W in yatakemycin biosynthesis;
+        MITE curates the YtkW S-methyltransferase reaction as an in vitro assay from
+        this primary article.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000458
+      evidence_type: DATABASE_ASSERTION
+      snippet: S-methylation on thiocarboxylic acid moiety of subunit A of yatakemycin
+      retrieved_on: '2026-10-01'
+      notes: MITE0000458 is an active YtkW entry for S-methylation of a thiocarboxylic
+        acid on yatakemycin subunit A; it links UniProtKB:I3NN71, GenPept ADZ13559.1,
+        MIBiG BGC0000466 and the Feng et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000466.5/BGC0000466.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="ADZ13559.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000466.5 places ADZ13559.1 in the active Streptomyces sp. TP-A2060
+        yatakemycin cluster as the YtkW methyltransferase CDS.
+    - reference: https://www.uniprot.org/uniprotkb/I3NN71
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'SubName: Full=YtkW'
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:I3NN71 resolves as a 209 aa Streptomyces
+        sp. TP-A2060 YtkW protein and cross-references EMBL JF429418 protein ADZ13559.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADZ13559.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: YtkW [Streptomyces sp. TP-A2060]
+      retrieved_on: '2026-10-01'
+      notes: GenPept ADZ13559.1 is the 209 aa Streptomyces sp. TP-A2060 YtkW protein
+        encoded by JF429418.1:29692..30321.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -85,3 +218,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T22:01:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a UniProt-grounded YtkW S-methylation pathway step and partial BIOSYNTHESIS
+    causal graph for yatakemycin.
+  llm_assisted: true

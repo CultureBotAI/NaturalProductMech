@@ -80,7 +80,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>YtkW SAM-dependent methyltransferase<br><span class="mono">UniProtKB:I3NN71</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1002/anie.202522109</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: YtkW S-methylates the thiocarboxylic acid moiety of a yatakemycin subunit A intermediate. This single-step partial pathway leaves YtkG/YtkF sulfur transfer and the remaining assembly of the YTM scaffold uncurated.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial Streptomyces sp. TP-A2060 yatakemycin biosynthesis graph for YtkW S-methylation of a thiocarboxylic-acid-bearing subunit A intermediate.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>thiocarboxylated yatakemycin subunit A intermediate</td>
+  <td>is S-methylated by</td>
+  <td>YtkW SAM-dependent methyltransferase</td>
+  <td>MITE records YtkW as the SAM-dependent enzyme for S-methylation of a thiocarboxylic acid moiety in yatakemycin subunit A.</td>
+  <td class="mono">DOI:10.1002/anie.202522109<br>https://mite.lisc.univie.ac.at/repository/MITE0000458<br>https://mibig.secondarymetabolites.org/repository/BGC0000466.5/BGC0000466.gbk<br>https://www.uniprot.org/uniprotkb/I3NN71<br>https://www.ncbi.nlm.nih.gov/protein/ADZ13559.1</td>
+</tr>
+<tr>
+  <td>YtkW SAM-dependent methyltransferase</td>
+  <td>forms</td>
+  <td>S-methyl thioester yatakemycin subunit A intermediate</td>
+  <td>This graph stops at the S-methyl thioester subunit A intermediate because later yatakemycin scaffold assembly steps are not curated here.</td>
+  <td class="mono">DOI:10.1002/anie.202522109<br>https://mite.lisc.univie.ac.at/repository/MITE0000458<br>https://mibig.secondarymetabolites.org/repository/BGC0000466.5/BGC0000466.gbk<br>https://www.uniprot.org/uniprotkb/I3NN71<br>https://www.ncbi.nlm.nih.gov/protein/ADZ13559.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
