@@ -95,7 +95,47 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>wA naphthopyrone polyketide synthase<br><span class="mono">UniProtKB:Q2UA48</span></td>
+  <td class="mono">RHEA:62652</td>
+  <td class="mono">CHEBI:57288 + CHEBI:57384 &rarr; CHEBI:133763</td>
+  <td class="mono">DOI:10.1186/s12896-019-0567-x</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: The A. oryzae wA promoter-replacement experiment supports AO090102000545 as the exact YWA1-forming gene. The full acetyl-CoA and malonyl-CoA stoichiometry is grounded by RHEA:62652 rather than by purified Q2UA48 biochemistry.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Aspergillus oryzae RIB40 wA encodes a non-reducing polyketide synthase that forms the naphthopyrone YWA1.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>acetyl-CoA</td>
+  <td>is accepted by</td>
+  <td>wA polyketide synthase</td>
+  <td>RHEA:62652 supplies acetyl-CoA as the starter in the curated naphthopyrone YWA1 synthase reaction; applying that stoichiometry to Q2UA48 is proposed from the database reaction annotation.</td>
+  <td class="mono">DOI:10.1186/s12896-019-0567-x<br>https://mibig.secondarymetabolites.org/repository/BGC0002175.3/BGC0002175.gbk<br>https://www.uniprot.org/uniprotkb/Q2UA48<br>https://www.rhea-db.org/rhea/62652</td>
+</tr>
+<tr>
+  <td>malonyl-CoA</td>
+  <td>is iteratively condensed by</td>
+  <td>wA polyketide synthase</td>
+  <td>RHEA:62652 supplies six malonyl-CoA extender units in the curated naphthopyrone YWA1 synthase reaction; applying that stoichiometry to Q2UA48 is proposed from the database reaction annotation.</td>
+  <td class="mono">DOI:10.1186/s12896-019-0567-x<br>https://mibig.secondarymetabolites.org/repository/BGC0002175.3/BGC0002175.gbk<br>https://www.uniprot.org/uniprotkb/Q2UA48<br>https://www.rhea-db.org/rhea/62652</td>
+</tr>
+<tr>
+  <td>wA polyketide synthase</td>
+  <td>forms</td>
+  <td>YWA1</td>
+  <td>wA promoter replacement in A. oryzae produced YWA1-matching yellow pigment in the kojA-disruptant PkojA::wA strain.</td>
+  <td class="mono">DOI:10.1186/s12896-019-0567-x<br>https://mibig.secondarymetabolites.org/repository/BGC0002175.3/BGC0002175.gbk<br>https://www.uniprot.org/uniprotkb/Q2UA48<br>https://www.rhea-db.org/rhea/62652</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
