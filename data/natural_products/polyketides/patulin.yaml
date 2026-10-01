@@ -342,51 +342,7 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 biosynthetic_pathway:
-- step_number: 1
-  enzyme_id: UniProtKB:A0A075TRK9
-  enzyme_label: PatE patulin synthase
-  reaction_id: RHEA:62228
-  substrates:
-  - CHEBI:145112
-  - CHEBI:13193
-  products:
-  - CHEBI:74926
-  - CHEBI:17499
-  notes: PatE oxidizes (E)-ascladiol to patulin in the terminal step of P. expansum
-    patulin biosynthesis; RHEA:62228 grounds the generic electron-acceptor reaction.
-  evidence:
-  - reference: DOI:10.1111/1462-2920.14542
-    evidence_type: PRIMARY_EXPERIMENT
-    snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
-      were verified in P. expansum
-    notes: Li et al. systematically dissected the Penicillium expansum patulin cluster
-      and connected PatE to the terminal conversion of (E)-ascladiol into patulin.
-  - reference: DOI:10.1111/febs.16804
-    evidence_type: PRIMARY_EXPERIMENT
-    snippet: Patulin synthase (PatE) from Penicillium expansum is a flavin-dependent
-      enzyme that catalyses the last step
-    notes: Tjallinks et al. expressed P. expansum patE in Aspergillus niger, purified
-      and characterized PatE, and confirmed by HPLC that PatE uses ascladiol as its
-      preferred substrate in patulin biosynthesis.
-  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
-    evidence_type: DATABASE_ASSERTION
-    retrieved_on: '2026-09-30'
-    notes: MIBiG BGC0000120.5 maps the P. expansum KF899892 patulin biosynthetic gene
-      cluster to CDS AIG62134.1, gene patE, annotated as patulin synthase.
-  - reference: https://www.uniprot.org/uniprotkb/A0A075TRK9
-    evidence_type: DATABASE_ASSERTION
-    snippet: PatE catalyzes the last step of the pathway which is the conversion of
-      E-ascladiol to patulin
-    retrieved_on: '2026-09-30'
-    notes: Reviewed UniProtKB:A0A075TRK9 is the 628 aa P. expansum Patulin synthase
-      encoded by patE/PEX2_082770, cross-references KF899892 protein AIG62134.1, and
-      annotates RHEA:62228 from PMID:30680886.
-  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
-    evidence_type: DATABASE_ASSERTION
-    retrieved_on: '2026-09-30'
-    notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TRK9 to RHEA:62228, the
-      generalized oxidation of (E)-ascladiol to patulin.
-- step_number: 2
+- step_number: 30
   enzyme_id: UniProtKB:A0A075TRL5
   enzyme_label: PatH cytochrome P450 monooxygenase
   reaction_id: RHEA:62209
@@ -437,7 +393,7 @@ biosynthetic_pathway:
     retrieved_on: '2026-10-01'
     notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TRL5 to the left-to-right
       RHEA:62209 hydroxylation reaction.
-- step_number: 3
+- step_number: 40
   enzyme_id: UniProtKB:A0A075TMP8
   enzyme_label: PatI cytochrome P450 monooxygenase
   reaction_id: RHEA:62213
@@ -447,8 +403,7 @@ biosynthetic_pathway:
   - CHEBI:5325
   notes: PatI hydroxylates 3-hydroxybenzyl alcohol to gentisyl alcohol in the Penicillium
     expansum patulin pathway. This partial pathway step leaves earlier m-cresol formation
-    and the later PatJ/PatO/PatN/PatF/PatD steps from gentisyl alcohol to (E)-ascladiol
-    uncurated.
+    and the later PatJ/PatO/PatN/PatF steps from gentisyl alcohol to neopatulin uncurated.
   evidence:
   - reference: DOI:10.1111/1462-2920.14542
     evidence_type: PRIMARY_EXPERIMENT
@@ -491,6 +446,103 @@ biosynthetic_pathway:
     retrieved_on: '2026-10-01'
     notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TMP8 to the left-to-right
       RHEA:62213 hydroxylation reaction.
+- step_number: 90
+  enzyme_id: UniProtKB:A0A075TMP0
+  enzyme_label: PatD alcohol dehydrogenase
+  reaction_id: RHEA:62225
+  substrates:
+  - CHEBI:145111
+  - CHEBI:57783
+  - CHEBI:15378
+  products:
+  - CHEBI:145112
+  - CHEBI:58349
+  notes: PatD opens and reduces neopatulin to (E)-ascladiol in the Penicillium expansum
+    patulin pathway. This partial pathway step leaves the PatJ, PatO, PatN, and PatF
+    conversions from gentisyl alcohol to neopatulin uncurated.
+  evidence:
+  - reference: DOI:10.1111/1462-2920.14542
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
+      were verified in P. expansum
+    notes: Li et al. dissected the Penicillium expansum patulin cluster; MITE and
+      UniProt ground PatD neopatulin reduction to this DOI.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000365
+    evidence_type: DATABASE_ASSERTION
+    snippet: ring opening and reduction of neopatulin to E-ascladiol
+    retrieved_on: '2026-10-01'
+    notes: MITE0000365 is an active PatD alcohol dehydrogenase entry for neopatulin
+      ring opening and reduction to (E)-ascladiol in patulin biosynthesis; it links
+      UniProtKB:A0A075TMP0, GenPept AIG62135.1 and the Li et al. DOI.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="AIG62135.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000120.5 places AIG62135.1 inside the active Penicillium expansum
+      NRRL 35695 patulin cluster as the patD CDS with medium-chain reductase/dehydrogenase
+      domains.
+  - reference: https://www.uniprot.org/uniprotkb/A0A075TMP0
+    evidence_type: DATABASE_ASSERTION
+    snippet: PatD catalyzes the conversion of neopatulin into E-ascladiol
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:A0A075TMP0 is the 340 aa P. expansum alcohol dehydrogenase
+      patD encoded by patD/PEX2_082780; UniProt annotates RHEA:62225 as the left-to-right
+      physiological neopatulin to (E)-ascladiol reduction from PMID:30680886.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AIG62135.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: <GBQualifier_value>patD</GBQualifier_value>
+    retrieved_on: '2026-10-01'
+    notes: GenPept AIG62135.1 is the 340 aa Penicillium expansum NRRL 35695 KF899892.1
+      coding sequence annotated with gene patD in the patulin biosynthetic cluster.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TMP0 to the left-to-right
+      RHEA:62225 neopatulin reduction reaction.
+- step_number: 100
+  enzyme_id: UniProtKB:A0A075TRK9
+  enzyme_label: PatE patulin synthase
+  reaction_id: RHEA:62228
+  substrates:
+  - CHEBI:145112
+  - CHEBI:13193
+  products:
+  - CHEBI:74926
+  - CHEBI:17499
+  notes: PatE oxidizes (E)-ascladiol to patulin in the terminal step of P. expansum
+    patulin biosynthesis; RHEA:62228 grounds the generic electron-acceptor reaction.
+  evidence:
+  - reference: DOI:10.1111/1462-2920.14542
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
+      were verified in P. expansum
+    notes: Li et al. systematically dissected the Penicillium expansum patulin cluster
+      and connected PatE to the terminal conversion of (E)-ascladiol into patulin.
+  - reference: DOI:10.1111/febs.16804
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Patulin synthase (PatE) from Penicillium expansum is a flavin-dependent
+      enzyme that catalyses the last step
+    notes: Tjallinks et al. expressed P. expansum patE in Aspergillus niger, purified
+      and characterized PatE, and confirmed by HPLC that PatE uses ascladiol as its
+      preferred substrate in patulin biosynthesis.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0000120.5 maps the P. expansum KF899892 patulin biosynthetic gene
+      cluster to CDS AIG62134.1, gene patE, annotated as patulin synthase.
+  - reference: https://www.uniprot.org/uniprotkb/A0A075TRK9
+    evidence_type: DATABASE_ASSERTION
+    snippet: PatE catalyzes the last step of the pathway which is the conversion of
+      E-ascladiol to patulin
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:A0A075TRK9 is the 628 aa P. expansum Patulin synthase
+      encoded by patE/PEX2_082770, cross-references KF899892 protein AIG62134.1, and
+      annotates RHEA:62228 from PMID:30680886.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TRK9 to RHEA:62228, the
+      generalized oxidation of (E)-ascladiol to patulin.
 causal_graphs:
 - graph_id: patulin-pate-oxidation
   scope: BIOSYNTHESIS
@@ -811,6 +863,114 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TRL5 to the left-to-right
         RHEA:62209 hydroxylation reaction.
+- graph_id: patulin-patd-reduction
+  scope: BIOSYNTHESIS
+  description: Partial P. expansum patulin biosynthesis graph for PatD-catalyzed ring
+    opening and reduction of neopatulin to (E)-ascladiol.
+  nodes:
+  - node_id: neopatulin
+    label: neopatulin
+    node_type: PRECURSOR
+    identifier: CHEBI:145111
+    grounding_status: GROUNDED
+  - node_id: patd
+    label: PatD alcohol dehydrogenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A075TMP0
+    grounding_status: GROUNDED
+  - node_id: e_ascladiol
+    label: (E)-ascladiol
+    node_type: PRECURSOR
+    identifier: CHEBI:145112
+    grounding_status: GROUNDED
+  edges:
+  - subject: neopatulin
+    predicate: is reduced by
+    object: patd
+    notes: PatD opens and reduces neopatulin in the NADPH-dependent RHEA:62225 reaction.
+    evidence:
+    - reference: DOI:10.1111/1462-2920.14542
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
+        were verified in P. expansum
+      notes: Li et al. dissected the Penicillium expansum patulin cluster; MITE and
+        UniProt ground PatD neopatulin reduction to this DOI.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000365
+      evidence_type: DATABASE_ASSERTION
+      snippet: ring opening and reduction of neopatulin to E-ascladiol
+      retrieved_on: '2026-10-01'
+      notes: MITE0000365 is an active PatD alcohol dehydrogenase entry for neopatulin
+        ring opening and reduction to (E)-ascladiol in patulin biosynthesis; it links
+        UniProtKB:A0A075TMP0, GenPept AIG62135.1 and the Li et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AIG62135.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000120.5 places AIG62135.1 inside the active Penicillium expansum
+        NRRL 35695 patulin cluster as the patD CDS with medium-chain reductase/dehydrogenase
+        domains.
+    - reference: https://www.uniprot.org/uniprotkb/A0A075TMP0
+      evidence_type: DATABASE_ASSERTION
+      snippet: PatD catalyzes the conversion of neopatulin into E-ascladiol
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A075TMP0 is the 340 aa P. expansum alcohol dehydrogenase
+        patD encoded by patD/PEX2_082780; UniProt annotates RHEA:62225 as the left-to-right
+        physiological neopatulin to (E)-ascladiol reduction from PMID:30680886.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AIG62135.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: <GBQualifier_value>patD</GBQualifier_value>
+      retrieved_on: '2026-10-01'
+      notes: GenPept AIG62135.1 is the 340 aa Penicillium expansum NRRL 35695 KF899892.1
+        coding sequence annotated with gene patD in the patulin biosynthetic cluster.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TMP0 to the left-to-right
+        RHEA:62225 neopatulin reduction reaction.
+  - subject: patd
+    predicate: forms
+    object: e_ascladiol
+    notes: PatD forms (E)-ascladiol, the substrate of the terminal PatE patulin synthase
+      reaction.
+    evidence:
+    - reference: DOI:10.1111/1462-2920.14542
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: functions of eight enzymes in the 10-step patulin biosynthetic pathway
+        were verified in P. expansum
+      notes: Li et al. dissected the Penicillium expansum patulin cluster; MITE and
+        UniProt ground PatD neopatulin reduction to this DOI.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000365
+      evidence_type: DATABASE_ASSERTION
+      snippet: ring opening and reduction of neopatulin to E-ascladiol
+      retrieved_on: '2026-10-01'
+      notes: MITE0000365 is an active PatD alcohol dehydrogenase entry for neopatulin
+        ring opening and reduction to (E)-ascladiol in patulin biosynthesis; it links
+        UniProtKB:A0A075TMP0, GenPept AIG62135.1 and the Li et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000120.5/BGC0000120.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="AIG62135.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000120.5 places AIG62135.1 inside the active Penicillium expansum
+        NRRL 35695 patulin cluster as the patD CDS with medium-chain reductase/dehydrogenase
+        domains.
+    - reference: https://www.uniprot.org/uniprotkb/A0A075TMP0
+      evidence_type: DATABASE_ASSERTION
+      snippet: PatD catalyzes the conversion of neopatulin into E-ascladiol
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A075TMP0 is the 340 aa P. expansum alcohol dehydrogenase
+        patD encoded by patD/PEX2_082780; UniProt annotates RHEA:62225 as the left-to-right
+        physiological neopatulin to (E)-ascladiol reduction from PMID:30680886.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AIG62135.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: <GBQualifier_value>patD</GBQualifier_value>
+      retrieved_on: '2026-10-01'
+      notes: GenPept AIG62135.1 is the 340 aa Penicillium expansum NRRL 35695 KF899892.1
+        coding sequence annotated with gene patD in the patulin biosynthetic cluster.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TMP0 to the left-to-right
+        RHEA:62225 neopatulin reduction reaction.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -844,4 +1004,11 @@ curation_history:
   action: RECORD_CURATED
   changes: Renumbered the PatH and PatI pathway steps to preserve the PatE-PatH-PatI
     substrate/product order.
+  llm_assisted: true
+- timestamp: '2026-10-01T23:42:41Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a UniProt-grounded PatD reduction pathway step and partial BIOSYNTHESIS
+    causal graph for patulin; renumbered curated patulin steps to sparse source-pathway
+    order.
   llm_assisted: true
