@@ -179,6 +179,149 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-3a216b5512
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A455R5K2
+  enzyme_label: AscJ short-chain dehydrogenase/reductase
+  reaction_id: RHEA:63112
+  substrate: CHEBI:146279
+  product: CHEBI:156148
+  notes: AscJ oxidizes AscI-derived ascofuranol to ascofuranone in the terminal step
+    of the Acremonium egyptiacum ascofuranone branch. This single-step partial pathway
+    leaves the upstream AscA-AscI steps uncurated.
+  evidence:
+  - reference: DOI:10.1073/pnas.1819254116
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: which is oxidized into 1 by AscJ
+    notes: Araki et al. number ascofuranone as compound 1 and ascofuranol as compound
+      10. Their in vitro assay showed that cell-free Aspergillus sojae homogenate
+      expressing ascJ oxidized ascofuranol into ascofuranone.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000382
+    evidence_type: DATABASE_ASSERTION
+    snippet: Converts Ascofuranol to Ascofuranone by oxidation.
+    retrieved_on: '2026-10-01'
+    notes: MITE0000382 is an active, non-intermediate AscJ entry for the oxidative
+      terminal ascofuranone step. It links UniProtKB:A0A455R5K2, GenPept BBF25320.1,
+      MIBiG BGC0001924, RHEA:63112 and the Araki et al. DOI.
+  - reference: https://www.uniprot.org/uniprotkb/A0A455R5K2
+    evidence_type: DATABASE_ASSERTION
+    snippet: Short-chain dehydrogenase/reductase ascJ
+    retrieved_on: '2026-10-01'
+    notes: Current Swiss-Prot UniProtKB:A0A455R5K2 resolves as Acremonium egyptiacum
+      AscJ, length 296 aa, gene ascJ, EC 1.1.99.-. It cross-references EMBL LC406757
+      protein BBF25320.1 and annotates RHEA:63112 for AscJ-catalyzed ascofuranol oxidation
+      to ascofuranone.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BBF25320.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: dehydrogenase [Acremonium egyptiacum]
+    retrieved_on: '2026-10-01'
+    notes: GenPept BBF25320.1 is the 296 aa Acremonium egyptiacum F-1392 ascJ product
+      encoded by LC406757.1.
+  - reference: https://www.rhea-db.org/rhea/63112
+    evidence_type: DATABASE_ASSERTION
+    snippet: ascofuranol + A = ascofuranone + AH2
+    retrieved_on: '2026-10-01'
+    notes: RHEA:63112 is the curated ascofuranol oxidation reaction linked to Araki
+      et al.; RHEA:63113 is its left-to-right physiological reaction.
+causal_graphs:
+- graph_id: ascofuranone-ascj-oxidation
+  scope: BIOSYNTHESIS
+  description: Late Acremonium egyptiacum ascofuranone biosynthesis graph for AscJ-catalyzed
+    ascofuranol oxidation to ascofuranone.
+  nodes:
+  - node_id: ascofuranol
+    label: ascofuranol
+    node_type: PRECURSOR
+    identifier: CHEBI:146279
+    grounding_status: GROUNDED
+  - node_id: ascj
+    label: AscJ short-chain dehydrogenase/reductase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A455R5K2
+    grounding_status: GROUNDED
+  - node_id: ascofuranone
+    label: ascofuranone
+    node_type: COMPOUND
+    identifier: CHEBI:156148
+    grounding_status: GROUNDED
+  edges:
+  - subject: ascofuranol
+    predicate: is oxidized by
+    object: ascj
+    notes: AscJ oxidizes the AscI cyclization product ascofuranol in the terminal
+      ascofuranone branch.
+    evidence:
+    - reference: DOI:10.1073/pnas.1819254116
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: which is oxidized into 1 by AscJ
+      notes: Araki et al. number ascofuranone as compound 1 and ascofuranol as compound
+        10. Their in vitro assay showed that cell-free Aspergillus sojae homogenate
+        expressing ascJ oxidized ascofuranol into ascofuranone.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000382
+      evidence_type: DATABASE_ASSERTION
+      snippet: Converts Ascofuranol to Ascofuranone by oxidation.
+      retrieved_on: '2026-10-01'
+      notes: MITE0000382 is an active, non-intermediate AscJ entry for the oxidative
+        terminal ascofuranone step. It links UniProtKB:A0A455R5K2, GenPept BBF25320.1,
+        MIBiG BGC0001924, RHEA:63112 and the Araki et al. DOI.
+    - reference: https://www.uniprot.org/uniprotkb/A0A455R5K2
+      evidence_type: DATABASE_ASSERTION
+      snippet: Short-chain dehydrogenase/reductase ascJ
+      retrieved_on: '2026-10-01'
+      notes: Current Swiss-Prot UniProtKB:A0A455R5K2 resolves as Acremonium egyptiacum
+        AscJ, length 296 aa, gene ascJ, EC 1.1.99.-. It cross-references EMBL LC406757
+        protein BBF25320.1 and annotates RHEA:63112 for AscJ-catalyzed ascofuranol
+        oxidation to ascofuranone.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BBF25320.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: dehydrogenase [Acremonium egyptiacum]
+      retrieved_on: '2026-10-01'
+      notes: GenPept BBF25320.1 is the 296 aa Acremonium egyptiacum F-1392 ascJ product
+        encoded by LC406757.1.
+    - reference: https://www.rhea-db.org/rhea/63112
+      evidence_type: DATABASE_ASSERTION
+      snippet: ascofuranol + A = ascofuranone + AH2
+      retrieved_on: '2026-10-01'
+      notes: RHEA:63112 is the curated ascofuranol oxidation reaction linked to Araki
+        et al.; RHEA:63113 is its left-to-right physiological reaction.
+  - subject: ascj
+    predicate: forms
+    object: ascofuranone
+    notes: AscJ forms CHEBI:156148 ascofuranone from ascofuranol.
+    evidence:
+    - reference: DOI:10.1073/pnas.1819254116
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: which is oxidized into 1 by AscJ
+      notes: Araki et al. number ascofuranone as compound 1 and ascofuranol as compound
+        10. Their in vitro assay showed that cell-free Aspergillus sojae homogenate
+        expressing ascJ oxidized ascofuranol into ascofuranone.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000382
+      evidence_type: DATABASE_ASSERTION
+      snippet: Converts Ascofuranol to Ascofuranone by oxidation.
+      retrieved_on: '2026-10-01'
+      notes: MITE0000382 is an active, non-intermediate AscJ entry for the oxidative
+        terminal ascofuranone step. It links UniProtKB:A0A455R5K2, GenPept BBF25320.1,
+        MIBiG BGC0001924, RHEA:63112 and the Araki et al. DOI.
+    - reference: https://www.uniprot.org/uniprotkb/A0A455R5K2
+      evidence_type: DATABASE_ASSERTION
+      snippet: Short-chain dehydrogenase/reductase ascJ
+      retrieved_on: '2026-10-01'
+      notes: Current Swiss-Prot UniProtKB:A0A455R5K2 resolves as Acremonium egyptiacum
+        AscJ, length 296 aa, gene ascJ, EC 1.1.99.-. It cross-references EMBL LC406757
+        protein BBF25320.1 and annotates RHEA:63112 for AscJ-catalyzed ascofuranol
+        oxidation to ascofuranone.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BBF25320.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: dehydrogenase [Acremonium egyptiacum]
+      retrieved_on: '2026-10-01'
+      notes: GenPept BBF25320.1 is the 296 aa Acremonium egyptiacum F-1392 ascJ product
+        encoded by LC406757.1.
+    - reference: https://www.rhea-db.org/rhea/63112
+      evidence_type: DATABASE_ASSERTION
+      snippet: ascofuranol + A = ascofuranone + AH2
+      retrieved_on: '2026-10-01'
+      notes: RHEA:63112 is the curated ascofuranol oxidation reaction linked to Araki
+        et al.; RHEA:63113 is its left-to-right physiological reaction.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -188,3 +331,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T20:40:58Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the evidence-backed AscJ terminal ascofuranone biosynthetic pathway
+    step and BIOSYNTHESIS causal graph grounded to UniProtKB:A0A455R5K2.
+  llm_assisted: true

@@ -109,7 +109,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>AscJ short-chain dehydrogenase/reductase<br><span class="mono">UniProtKB:A0A455R5K2</span></td>
+  <td class="mono">RHEA:63112</td>
+  <td class="mono">CHEBI:146279 &rarr; CHEBI:156148</td>
+  <td class="mono">DOI:10.1073/pnas.1819254116</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: AscJ oxidizes AscI-derived ascofuranol to ascofuranone in the terminal step of the Acremonium egyptiacum ascofuranone branch. This single-step partial pathway leaves the upstream AscA-AscI steps uncurated.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Late Acremonium egyptiacum ascofuranone biosynthesis graph for AscJ-catalyzed ascofuranol oxidation to ascofuranone.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>ascofuranol</td>
+  <td>is oxidized by</td>
+  <td>AscJ short-chain dehydrogenase/reductase</td>
+  <td>AscJ oxidizes the AscI cyclization product ascofuranol in the terminal ascofuranone branch.</td>
+  <td class="mono">DOI:10.1073/pnas.1819254116<br>https://mite.lisc.univie.ac.at/repository/MITE0000382<br>https://www.uniprot.org/uniprotkb/A0A455R5K2<br>https://www.ncbi.nlm.nih.gov/protein/BBF25320.1<br>https://www.rhea-db.org/rhea/63112</td>
+</tr>
+<tr>
+  <td>AscJ short-chain dehydrogenase/reductase</td>
+  <td>forms</td>
+  <td>ascofuranone</td>
+  <td>AscJ forms CHEBI:156148 ascofuranone from ascofuranol.</td>
+  <td class="mono">DOI:10.1073/pnas.1819254116<br>https://mite.lisc.univie.ac.at/repository/MITE0000382<br>https://www.uniprot.org/uniprotkb/A0A455R5K2<br>https://www.ncbi.nlm.nih.gov/protein/BBF25320.1<br>https://www.rhea-db.org/rhea/63112</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">2</span></h2>
