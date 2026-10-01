@@ -136,6 +136,210 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-bbf446709c
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9HWH2
+  enzyme_label: PhzM
+  reaction_id: RHEA:49112
+  notes: 'Pseudomonas aeruginosa PAO1 PA4209/PhzM is outside the seeded BGC0000936
+    phzA-G phenazine-1-carboxylate core locus. RHEA:49112 captures the first tailoring
+    step: SAM-dependent N-methylation of phenazine-1-carboxylate to 5-methyl-phenazine-1-carboxylate.'
+  evidence:
+  - reference: DOI:10.1128/JB.183.21.6454-6465.2001
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: SAM-dependent methyltransferase PhzM, PCA is converted to 5-methylphenazine-1-carboxylic
+      acid betaine.
+    notes: Mavrodi et al. identified PA4209/phzM in Pseudomonas aeruginosa PAO1, inactivated
+      phzM, restored pyocyanin production by complementation, reconstituted PCA to
+      pyocyanin conversion with PAO1 phzM plus phzS, and ordered PhzM before PhzS
+      by cross-feeding.
+  - reference: DOI:10.1021/bi6024403
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Pyocyanin formation required PhzM, PhzS, PCA, SAM, oxygen, and NADH
+    notes: Parsons et al. expressed Pseudomonas aeruginosa PhzM and PhzS, showed PCA-to-pyocyanin
+      conversion required PhzM, PhzS, PCA, SAM, oxygen, and NADH, and found that PhzM
+      required PhzS for coupled in vitro activity.
+  - reference: https://www.uniprot.org/uniprotkb/Q9HWH2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:Q9HWH2 is the Pseudomonas aeruginosa PAO1 PA4209/phzM
+      phenazine-1-carboxylate N-methyltransferase and annotates catalytic activity
+      RHEA:49112.
+  - reference: https://www.rhea-db.org/rhea/49112
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: RHEA:49112 is the phenazine-1-carboxylate plus S-adenosyl-L-methionine
+      to 5-methyl-phenazine-1-carboxylate plus S-adenosyl-L-homocysteine reaction.
+  substrate: CHEBI:62248
+  product: CHEBI:62221
+- step_number: 2
+  enzyme_id: UniProtKB:Q9HWG9
+  enzyme_label: PhzS
+  reaction_id: RHEA:48976
+  notes: Pseudomonas aeruginosa PAO1 PA4217/PhzS is outside the seeded BGC0000936
+    phzA-G phenazine-1-carboxylate core locus. RHEA:48976 captures the second tailoring
+    step and forms CHEBI:62220 pyocyanine(1+), the conjugate acid of the seeded CHEBI:8653
+    pyocyanine structure.
+  evidence:
+  - reference: DOI:10.1128/JB.183.21.6454-6465.2001
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: catalyzed by the NADH (or NADPH)-dependent flavoprotein monooxygenase
+      PhzS
+    notes: Mavrodi et al. identified PA4217/phzS in Pseudomonas aeruginosa PAO1, inactivated
+      phzS, restored pyocyanin production by complementation, and reconstituted PCA
+      to pyocyanin conversion with PAO1 phzM plus phzS.
+  - reference: DOI:10.1021/bi6024403
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Pyocyanin formation required PhzM, PhzS, PCA, SAM, oxygen, and NADH
+    notes: Parsons et al. expressed Pseudomonas aeruginosa PhzM and PhzS, showed PCA-to-pyocyanin
+      conversion required PhzM, PhzS, PCA, SAM, oxygen, and NADH, and found that PhzM
+      required PhzS for coupled in vitro activity.
+  - reference: https://www.uniprot.org/uniprotkb/Q9HWG9
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:Q9HWG9 is the Pseudomonas aeruginosa PAO1 PA4217/phzS
+      5-methylphenazine-1-carboxylate 1-monooxygenase and annotates catalytic activity
+      RHEA:48976.
+  - reference: https://www.rhea-db.org/rhea/48976
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: RHEA:48976 is the 5-methyl-phenazine-1-carboxylate plus NADH plus O2 to
+      pyocyanin, CO2, NAD(+), and H2O reaction; its CHEBI:62220 pyocyanine(1+) product
+      is the conjugate acid of this record's CHEBI:8653 pyocyanine.
+  substrate: CHEBI:62221
+  product: CHEBI:8653
+causal_graphs:
+- graph_id: pyocyanine-phzm-phzs-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial PAO1 tailoring route from phenazine-1-carboxylate to pyocyanine
+    through PhzM and PhzS after the BGC0000936 phzA-G core locus forms the phenazine-1-carboxylate
+    precursor.
+  nodes:
+  - node_id: phenazine_1_carboxylate
+    label: phenazine-1-carboxylate
+    node_type: PRECURSOR
+    identifier: CHEBI:62248
+    grounding_status: GROUNDED
+  - node_id: phzm
+    label: PhzM
+    node_type: ENZYME
+    identifier: UniProtKB:Q9HWH2
+    grounding_status: GROUNDED
+  - node_id: methyl_phenazine_1_carboxylate
+    label: 5-methyl-phenazine-1-carboxylate
+    node_type: PRECURSOR
+    identifier: CHEBI:62221
+    grounding_status: GROUNDED
+  - node_id: phzs
+    label: PhzS
+    node_type: ENZYME
+    identifier: UniProtKB:Q9HWG9
+    grounding_status: GROUNDED
+  - node_id: pyocyanine
+    label: pyocyanine
+    node_type: COMPOUND
+    identifier: CHEBI:8653
+    grounding_status: GROUNDED
+  edges:
+  - subject: phenazine_1_carboxylate
+    predicate: is N-methylated by
+    object: phzm
+    notes: PhzM methylates phenazine-1-carboxylate in the first step of the PhzM/PhzS
+      coupled tailoring route to pyocyanine.
+    evidence:
+    - reference: DOI:10.1128/JB.183.21.6454-6465.2001
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SAM-dependent methyltransferase PhzM, PCA is converted to 5-methylphenazine-1-carboxylic
+        acid betaine.
+      notes: Mavrodi et al. identified PA4209/phzM in Pseudomonas aeruginosa PAO1,
+        inactivated phzM, restored pyocyanin production by complementation, reconstituted
+        PCA to pyocyanin conversion with PAO1 phzM plus phzS, and ordered PhzM before
+        PhzS by cross-feeding.
+    - reference: https://www.uniprot.org/uniprotkb/Q9HWH2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:Q9HWH2 is the Pseudomonas aeruginosa PAO1 PA4209/phzM
+        phenazine-1-carboxylate N-methyltransferase and annotates catalytic activity
+        RHEA:49112.
+    - reference: https://www.rhea-db.org/rhea/49112
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:49112 is the phenazine-1-carboxylate plus S-adenosyl-L-methionine
+        to 5-methyl-phenazine-1-carboxylate plus S-adenosyl-L-homocysteine reaction.
+  - subject: phzm
+    predicate: forms
+    object: methyl_phenazine_1_carboxylate
+    notes: 5-methyl-phenazine-1-carboxylate is the unstable common intermediate produced
+      by PhzM before PhzS decarboxylation.
+    evidence:
+    - reference: DOI:10.1128/JB.183.21.6454-6465.2001
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SAM-dependent methyltransferase PhzM, PCA is converted to 5-methylphenazine-1-carboxylic
+        acid betaine.
+      notes: Mavrodi et al. identified PA4209/phzM in Pseudomonas aeruginosa PAO1,
+        inactivated phzM, restored pyocyanin production by complementation, reconstituted
+        PCA to pyocyanin conversion with PAO1 phzM plus phzS, and ordered PhzM before
+        PhzS by cross-feeding.
+    - reference: https://www.uniprot.org/uniprotkb/Q9HWH2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:Q9HWH2 is the Pseudomonas aeruginosa PAO1 PA4209/phzM
+        phenazine-1-carboxylate N-methyltransferase and annotates catalytic activity
+        RHEA:49112.
+    - reference: https://www.rhea-db.org/rhea/49112
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:49112 is the phenazine-1-carboxylate plus S-adenosyl-L-methionine
+        to 5-methyl-phenazine-1-carboxylate plus S-adenosyl-L-homocysteine reaction.
+  - subject: methyl_phenazine_1_carboxylate
+    predicate: is hydroxylatively decarboxylated by
+    object: phzs
+    notes: PhzS consumes NADH and oxygen while decarboxylating 5-methyl-phenazine-1-carboxylate.
+    evidence:
+    - reference: DOI:10.1128/JB.183.21.6454-6465.2001
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: catalyzed by the NADH (or NADPH)-dependent flavoprotein monooxygenase
+        PhzS
+      notes: Mavrodi et al. identified PA4217/phzS in Pseudomonas aeruginosa PAO1,
+        inactivated phzS, restored pyocyanin production by complementation, and reconstituted
+        PCA to pyocyanin conversion with PAO1 phzM plus phzS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9HWG9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:Q9HWG9 is the Pseudomonas aeruginosa PAO1 PA4217/phzS
+        5-methylphenazine-1-carboxylate 1-monooxygenase and annotates catalytic activity
+        RHEA:48976.
+    - reference: https://www.rhea-db.org/rhea/48976
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:48976 is the 5-methyl-phenazine-1-carboxylate plus NADH plus O2
+        to pyocyanin, CO2, NAD(+), and H2O reaction; its CHEBI:62220 pyocyanine(1+)
+        product is the conjugate acid of this record's CHEBI:8653 pyocyanine.
+  - subject: phzs
+    predicate: forms
+    object: pyocyanine
+    notes: RHEA:48976 represents the immediate product as the CHEBI:62220 protonation
+      state; CHEBI:62220 is the conjugate acid of CHEBI:8653.
+    evidence:
+    - reference: DOI:10.1128/JB.183.21.6454-6465.2001
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: catalyzed by the NADH (or NADPH)-dependent flavoprotein monooxygenase
+        PhzS
+      notes: Mavrodi et al. identified PA4217/phzS in Pseudomonas aeruginosa PAO1,
+        inactivated phzS, restored pyocyanin production by complementation, and reconstituted
+        PCA to pyocyanin conversion with PAO1 phzM plus phzS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9HWG9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:Q9HWG9 is the Pseudomonas aeruginosa PAO1 PA4217/phzS
+        5-methylphenazine-1-carboxylate 1-monooxygenase and annotates catalytic activity
+        RHEA:48976.
+    - reference: https://www.rhea-db.org/rhea/48976
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:48976 is the 5-methyl-phenazine-1-carboxylate plus NADH plus O2
+        to pyocyanin, CO2, NAD(+), and H2O reaction; its CHEBI:62220 pyocyanine(1+)
+        product is the conjugate acid of this record's CHEBI:8653 pyocyanine.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -145,3 +349,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T05:15:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the exact Pseudomonas aeruginosa PAO1 PhzM/UniProtKB:Q9HWH2 and PhzS/UniProtKB:Q9HWG9
+    final pyocyanine tailoring pathway, grounded the two steps to RHEA:49112 and RHEA:48976,
+    and added a partial BIOSYNTHESIS causal graph for conversion of phenazine-1-carboxylate
+    to pyocyanine.
+  llm_assisted: true
