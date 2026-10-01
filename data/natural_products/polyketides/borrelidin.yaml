@@ -204,6 +204,159 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000031, BGC0001533.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- step_number: 5
+  enzyme_id: UniProtKB:Q70HZ6
+  enzyme_label: BorI cytochrome P450
+  product: naturalproductmech:mibig-af79f8ac64
+  proposed: true
+  notes: MITE assigns the final aldoxime-to-nitrile dehydration in the proposed BorI/BorJ/BorK
+    nitrile-forming pathway to BorI. The ungrounded aldoxime pre-borrelidin substrate
+    is the immediate precursor in MITE0000188; earlier oxidation and amination chemistry
+    are outside this single terminal-step graph.
+  evidence:
+  - reference: DOI:10.1111/j.1365-2958.2004.04090.x
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: co-expressing borI and borJ in Streptomyces albus J1074
+    notes: Olano et al. showed that borI and borJ insertional mutants no longer produced
+      borrelidin, that a borI-minus mutant accumulated 12-desnitrile-12-methyl-borrelidin,
+      and that heterologous S. albus co-expressing borI and borJ converted 12-desnitrile-12-methyl-borrelidin
+      into borrelidin more efficiently when borK was also expressed. These experiments
+      support BorI participation in the proposed nitrile-forming pathway; MITE assigns
+      the terminal aldoxime dehydration specifically to BorI.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000188
+    evidence_type: DATABASE_ASSERTION
+    snippet: Nitrile-formation via dehydation aldoxime
+    retrieved_on: '2026-10-01'
+    notes: MITE0000188 is an active BorI entry for UniProtKB:Q70HZ6, GenPept CAE45673.1
+      and MIBiG BGC0000031. It marks aldoxime-to-nitrile dehydration as the non-intermediate
+      BorI reaction; the MITE product SMILES shares the OJCKRNPLOZHAOU connectivity
+      layer with this borrelidin record but omits alkene stereochemistry.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ580915.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="CAE45673.1"
+    retrieved_on: '2026-10-01'
+    notes: GenBank AJ580915.1 is the Streptomyces parvulus Tu4055 borrelidin cluster
+      sequence and maps borI to CAE45673.1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000031.5/BGC0000031.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="CAE45673.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000031.5 places borI/CAE45673.1 inside the active Streptomyces
+      parvulus borrelidin cluster.
+  - reference: https://www.uniprot.org/uniprotkb/Q70HZ6
+    evidence_type: DATABASE_ASSERTION
+    snippet: GN=borI
+    retrieved_on: '2026-10-01'
+    notes: Current unreviewed UniProtKB:Q70HZ6 resolves as Streptomyces parvulus BorI
+      putative cytochrome P450, cross-references EMBL AJ580915 protein CAE45673.1,
+      and is sequence-identical to GenPept CAE45673.1.
+causal_graphs:
+- graph_id: borrelidin-bori-nitrile-formation
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces parvulus borrelidin biosynthesis graph for the
+    MITE-assigned BorI aldoxime dehydration that forms the C12 nitrile.
+  nodes:
+  - node_id: aldoxime_pre_borrelidin
+    label: C12 aldoxime pre-borrelidin
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: bori
+    label: BorI cytochrome P450
+    node_type: ENZYME
+    identifier: UniProtKB:Q70HZ6
+    grounding_status: GROUNDED
+  - node_id: borrelidin
+    label: borrelidin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-af79f8ac64
+    grounding_status: GROUNDED
+  edges:
+  - subject: aldoxime_pre_borrelidin
+    predicate: is dehydrated by
+    object: bori
+    notes: MITE records the final BorI tailoring reaction as dehydration of the C12
+      aldoxime pre-borrelidin intermediate.
+    evidence:
+    - reference: DOI:10.1111/j.1365-2958.2004.04090.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: co-expressing borI and borJ in Streptomyces albus J1074
+      notes: Olano et al. showed that borI and borJ insertional mutants no longer
+        produced borrelidin, that a borI-minus mutant accumulated 12-desnitrile-12-methyl-borrelidin,
+        and that heterologous S. albus co-expressing borI and borJ converted 12-desnitrile-12-methyl-borrelidin
+        into borrelidin more efficiently when borK was also expressed. These experiments
+        support BorI participation in the proposed nitrile-forming pathway; MITE assigns
+        the terminal aldoxime dehydration specifically to BorI.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000188
+      evidence_type: DATABASE_ASSERTION
+      snippet: Nitrile-formation via dehydation aldoxime
+      retrieved_on: '2026-10-01'
+      notes: MITE0000188 is an active BorI entry for UniProtKB:Q70HZ6, GenPept CAE45673.1
+        and MIBiG BGC0000031. It marks aldoxime-to-nitrile dehydration as the non-intermediate
+        BorI reaction; the MITE product SMILES shares the OJCKRNPLOZHAOU connectivity
+        layer with this borrelidin record but omits alkene stereochemistry.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ580915.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="CAE45673.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank AJ580915.1 is the Streptomyces parvulus Tu4055 borrelidin cluster
+        sequence and maps borI to CAE45673.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000031.5/BGC0000031.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="CAE45673.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000031.5 places borI/CAE45673.1 inside the active Streptomyces
+        parvulus borrelidin cluster.
+    - reference: https://www.uniprot.org/uniprotkb/Q70HZ6
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=borI
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:Q70HZ6 resolves as Streptomyces parvulus
+        BorI putative cytochrome P450, cross-references EMBL AJ580915 protein CAE45673.1,
+        and is sequence-identical to GenPept CAE45673.1.
+  - subject: bori
+    predicate: forms
+    object: borrelidin
+    notes: This edge is scoped to C12 nitrile formation and does not assert that BorI
+      alone performs the upstream amination or all earlier oxidations in the proposed
+      BorI/BorJ/BorK pathway.
+    evidence:
+    - reference: DOI:10.1111/j.1365-2958.2004.04090.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: co-expressing borI and borJ in Streptomyces albus J1074
+      notes: Olano et al. showed that borI and borJ insertional mutants no longer
+        produced borrelidin, that a borI-minus mutant accumulated 12-desnitrile-12-methyl-borrelidin,
+        and that heterologous S. albus co-expressing borI and borJ converted 12-desnitrile-12-methyl-borrelidin
+        into borrelidin more efficiently when borK was also expressed. These experiments
+        support BorI participation in the proposed nitrile-forming pathway; MITE assigns
+        the terminal aldoxime dehydration specifically to BorI.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000188
+      evidence_type: DATABASE_ASSERTION
+      snippet: Nitrile-formation via dehydation aldoxime
+      retrieved_on: '2026-10-01'
+      notes: MITE0000188 is an active BorI entry for UniProtKB:Q70HZ6, GenPept CAE45673.1
+        and MIBiG BGC0000031. It marks aldoxime-to-nitrile dehydration as the non-intermediate
+        BorI reaction; the MITE product SMILES shares the OJCKRNPLOZHAOU connectivity
+        layer with this borrelidin record but omits alkene stereochemistry.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ580915.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="CAE45673.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank AJ580915.1 is the Streptomyces parvulus Tu4055 borrelidin cluster
+        sequence and maps borI to CAE45673.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000031.5/BGC0000031.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="CAE45673.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000031.5 places borI/CAE45673.1 inside the active Streptomyces
+        parvulus borrelidin cluster.
+    - reference: https://www.uniprot.org/uniprotkb/Q70HZ6
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=borI
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:Q70HZ6 resolves as Streptomyces parvulus
+        BorI putative cytochrome P450, cross-references EMBL AJ580915 protein CAE45673.1,
+        and is sequence-identical to GenPept CAE45673.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -213,3 +366,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T19:07:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the proposed BorI aldoxime-to-nitrile biosynthetic pathway step and
+    partial BIOSYNTHESIS causal graph for borrelidin, grounded BorI to UniProtKB:Q70HZ6
+    via GenPept CAE45673.1 and BGC0000031.
+  llm_assisted: true
