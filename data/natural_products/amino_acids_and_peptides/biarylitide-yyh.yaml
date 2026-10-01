@@ -80,6 +80,146 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A0A891LWT6
+  enzyme_label: BytO cytochrome P450
+  notes: BytO installs the Tyr1-His3 biaryl crosslink in the MRYYH precursor peptide.
+    Final processing from the crosslinked MRYYH precursor to mature N-acetyl-Tyr-Tyr-His
+    biarylitide YYH remains unassigned in this partial graph.
+  evidence:
+  - reference: DOI:10.1016/j.chembiol.2020.11.009
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: the bytAO segment was sufficient to direct production of the crosslinked
+      N-acetylated Tyr-Tyr-His tripeptide
+    notes: Zdouc et al. linked Planomonospora sp. ID82291 bytA/bytO to biarylitide
+      YYH biosynthesis by heterologous production in Streptomyces; the paper describes
+      bytO as the cytochrome P450 expected to install the Tyr-His biaryl crosslink.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000175
+    evidence_type: DATABASE_ASSERTION
+    snippet: Biaryl formation between Y1 and H3
+    retrieved_on: '2026-10-01'
+    notes: MITE0000175 is an active entry for Planomonospora sp. ID82291 BytO/A0A891LWT6,
+      links GenPept QRM13814.1 and MIBiG BGC0002084, and records biaryl formation
+      in the biarylitide YYH MRYYH precursor.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/MW201788.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="QRM13814.1"
+    retrieved_on: '2026-10-01'
+    notes: GenBank MW201788.1 is the Planomonospora sp. ID82291 biarylitide YYH cluster
+      sequence and maps bytO to QRM13814.1.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002084.4/BGC0002084.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: protein_id="QRM13814.1"
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0002084.4 places bytO/QRM13814.1 inside the active biarylitide
+      YYH cluster.
+  - reference: https://www.uniprot.org/uniprotkb/A0A891LWT6
+    evidence_type: DATABASE_ASSERTION
+    snippet: GN=bytO
+    retrieved_on: '2026-10-01'
+    notes: Current unreviewed UniProtKB:A0A891LWT6 resolves as Planomonospora sp.
+      BytO putative cytochrome P450, cross-references EMBL MW201788 protein QRM13814.1,
+      and is sequence-identical to GenPept QRM13814.1.
+causal_graphs:
+- graph_id: biarylitide-yyh-byto-biaryl-coupling
+  scope: BIOSYNTHESIS
+  description: Partial Planomonospora sp. ID82291 biarylitide YYH biosynthesis graph
+    for BytO-catalyzed Tyr1-His3 biaryl coupling of the MRYYH precursor.
+  nodes:
+  - node_id: mryyh_precursor
+    label: MRYYH precursor peptide
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: byto
+    label: BytO cytochrome P450
+    node_type: ENZYME
+    identifier: UniProtKB:A0A891LWT6
+    grounding_status: GROUNDED
+  - node_id: biaryl_linked_mryyh
+    label: biaryl-linked MRYYH precursor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mryyh_precursor
+    predicate: is Tyr1-His3 biaryl-coupled by
+    object: byto
+    notes: MITE records BytO as catalyzing biaryl bond formation between Tyr1 and
+      His3 of the MRYYH precursor peptide.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2020.11.009
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the bytAO segment was sufficient to direct production of the crosslinked
+        N-acetylated Tyr-Tyr-His tripeptide
+      notes: Zdouc et al. linked Planomonospora sp. ID82291 bytA/bytO to biarylitide
+        YYH biosynthesis by heterologous production in Streptomyces; the paper describes
+        bytO as the cytochrome P450 expected to install the Tyr-His biaryl crosslink.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000175
+      evidence_type: DATABASE_ASSERTION
+      snippet: Biaryl formation between Y1 and H3
+      retrieved_on: '2026-10-01'
+      notes: MITE0000175 is an active entry for Planomonospora sp. ID82291 BytO/A0A891LWT6,
+        links GenPept QRM13814.1 and MIBiG BGC0002084, and records biaryl formation
+        in the biarylitide YYH MRYYH precursor.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MW201788.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="QRM13814.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank MW201788.1 is the Planomonospora sp. ID82291 biarylitide YYH
+        cluster sequence and maps bytO to QRM13814.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002084.4/BGC0002084.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="QRM13814.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002084.4 places bytO/QRM13814.1 inside the active biarylitide
+        YYH cluster.
+    - reference: https://www.uniprot.org/uniprotkb/A0A891LWT6
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=bytO
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:A0A891LWT6 resolves as Planomonospora sp.
+        BytO putative cytochrome P450, cross-references EMBL MW201788 protein QRM13814.1,
+        and is sequence-identical to GenPept QRM13814.1.
+  - subject: byto
+    predicate: forms
+    object: biaryl_linked_mryyh
+    notes: This single curated graph stops at the crosslinked precursor because the
+      generic host processing reactions to mature biarylitide YYH are not assigned
+      to a named enzyme.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2020.11.009
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the bytAO segment was sufficient to direct production of the crosslinked
+        N-acetylated Tyr-Tyr-His tripeptide
+      notes: Zdouc et al. linked Planomonospora sp. ID82291 bytA/bytO to biarylitide
+        YYH biosynthesis by heterologous production in Streptomyces; the paper describes
+        bytO as the cytochrome P450 expected to install the Tyr-His biaryl crosslink.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000175
+      evidence_type: DATABASE_ASSERTION
+      snippet: Biaryl formation between Y1 and H3
+      retrieved_on: '2026-10-01'
+      notes: MITE0000175 is an active entry for Planomonospora sp. ID82291 BytO/A0A891LWT6,
+        links GenPept QRM13814.1 and MIBiG BGC0002084, and records biaryl formation
+        in the biarylitide YYH MRYYH precursor.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MW201788.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="QRM13814.1"
+      retrieved_on: '2026-10-01'
+      notes: GenBank MW201788.1 is the Planomonospora sp. ID82291 biarylitide YYH
+        cluster sequence and maps bytO to QRM13814.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002084.4/BGC0002084.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: protein_id="QRM13814.1"
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002084.4 places bytO/QRM13814.1 inside the active biarylitide
+        YYH cluster.
+    - reference: https://www.uniprot.org/uniprotkb/A0A891LWT6
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=bytO
+      retrieved_on: '2026-10-01'
+      notes: Current unreviewed UniProtKB:A0A891LWT6 resolves as Planomonospora sp.
+        BytO putative cytochrome P450, cross-references EMBL MW201788 protein QRM13814.1,
+        and is sequence-identical to GenPept QRM13814.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -89,3 +229,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-01T18:35:25Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the evidence-backed BytO Tyr1-His3 biaryl-coupling biosynthetic pathway
+    step and partial BIOSYNTHESIS causal graph grounded to UniProtKB:A0A891LWT6.
+  llm_assisted: true
