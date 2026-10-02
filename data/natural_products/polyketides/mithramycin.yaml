@@ -960,6 +960,103 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein CAK50789.1 is the 396 aa Streptomyces argillaceus glycosyltransferase
         encoded by mtmGIII and cross-referenced to UniProtKB:Q194P9.
+- graph_id: mithramycin-mtmgii-glycosylation
+  scope: BIOSYNTHESIS
+  description: Streptomyces argillaceus MtmGII-catalyzed glycosylation in mithramycin
+    deoxysugar assembly.
+  nodes:
+  - node_id: mtmgii_glycosylation_substrate
+    label: MtmGII glycosylation substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mtmgii
+    label: MtmGII glycosyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:Q194P6
+    grounding_status: GROUNDED
+  - node_id: mtmgii_glycosylated_intermediate
+    label: MtmGII-glycosylated mithramycin intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mtmgii_glycosylation_substrate
+    predicate: is glycosylated by
+    object: mtmgii
+    notes: MITE represents MtmGII as a glycosyltransferase for a mithramycin intermediate;
+      an exact local record is absent for the submitted substrate structure.
+    evidence:
+    - reference: DOI:10.1002/cbic.200400309
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 3A-deolivosylpremithramycin B and its conversion to premithramycin
+        B by glycosyltransferase MtmGII
+      notes: Nur-e-Alam et al. elucidated a late Streptomyces argillaceus mithramycin
+        glycosylation step mediated by MtmGII; MITE cites this paper for the knock-out-supported
+        MtmGII glycosylation reaction.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000020
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000020 is active, links MtmGII to UniProtKB:Q194P6, GenPept CAK50792.1
+        and MIBiG BGC0000247, and represents a knock-out-supported MtmGII glycosylation
+        reaction in the mithramycin biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000020: Glycosylation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000247.5 places mtmGII/CAK50792.1 inside the active Streptomyces
+        argillaceus mithramycin biosynthetic gene cluster as a glycosyltransferase
+        locus with a 100% identity MITE0000020 glycosylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q194P6
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mtmGII
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194P6 resolves as a 379 aa Streptomyces argillaceus
+        mtmGII glycosyltransferase entry and cross-references EMBL X89899 protein
+        CAK50792.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAK50792.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: UniProtKB/TrEMBL:Q194P6
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAK50792.1 is the 379 aa Streptomyces argillaceus glycosyltransferase
+        encoded by mtmGII and cross-referenced to UniProtKB:Q194P6.
+  - subject: mtmgii
+    predicate: forms
+    object: mtmgii_glycosylated_intermediate
+    notes: The MITE MtmGII reaction adds a deoxysugar moiety to a mithramycin-pathway
+      acceptor structure.
+    evidence:
+    - reference: DOI:10.1002/cbic.200400309
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 3A-deolivosylpremithramycin B and its conversion to premithramycin
+        B by glycosyltransferase MtmGII
+      notes: Nur-e-Alam et al. elucidated a late Streptomyces argillaceus mithramycin
+        glycosylation step mediated by MtmGII; MITE cites this paper for the knock-out-supported
+        MtmGII glycosylation reaction.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000020
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000020 is active, links MtmGII to UniProtKB:Q194P6, GenPept CAK50792.1
+        and MIBiG BGC0000247, and represents a knock-out-supported MtmGII glycosylation
+        reaction in the mithramycin biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000020: Glycosylation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000247.5 places mtmGII/CAK50792.1 inside the active Streptomyces
+        argillaceus mithramycin biosynthetic gene cluster as a glycosyltransferase
+        locus with a 100% identity MITE0000020 glycosylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q194P6
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mtmGII
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194P6 resolves as a 379 aa Streptomyces argillaceus
+        mtmGII glycosyltransferase entry and cross-references EMBL X89899 protein
+        CAK50792.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAK50792.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: UniProtKB/TrEMBL:Q194P6
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAK50792.1 is the 379 aa Streptomyces argillaceus glycosyltransferase
+        encoded by mtmGII and cross-referenced to UniProtKB:Q194P6.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -1010,4 +1107,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Streptomyces argillaceus MtmGIII
     glycosylation in mithramycin biosynthesis; grounded MtmGIII to UniProtKB:Q194P9
     and left the MITE substrate and product structures ungrounded.
+  llm_assisted: true
+- timestamp: '2026-10-02T16:35:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Streptomyces argillaceus MtmGII glycosylation
+    in mithramycin biosynthesis; grounded MtmGII to UniProtKB:Q194P6 and left the
+    MITE substrate and product structures ungrounded.
   llm_assisted: true
