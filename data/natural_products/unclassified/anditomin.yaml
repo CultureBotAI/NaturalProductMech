@@ -449,6 +449,99 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept BAP81861.1 is the Aspergillus stellatus AndG protein encoded
         on complement(AB981314.1:10918..12363).
+- graph_id: anditomin-andj-baeyer-villiger-oxidation
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndJ-catalyzed Baeyer-Villiger oxidation of andiconin
+    to andilesin D.
+  nodes:
+  - node_id: andiconin
+    label: andiconin
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91820403
+    grounding_status: GROUNDED
+  - node_id: andj
+    label: AndJ FAD-binding monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPG2
+    grounding_status: GROUNDED
+  - node_id: andilesin_d
+    label: andilesin D
+    node_type: PRECURSOR
+    identifier: CHEBI:232444
+    grounding_status: GROUNDED
+  edges:
+  - subject: andiconin
+    predicate: is Baeyer-Villiger oxidized by
+    object: andj
+    notes: AndJ oxidizes the meroterpenoid intermediate andiconin in the andilesin
+      branch of the anditomin pathway.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000357
+        and UniProtKB:A0A097ZPG2 both cite this paper for the AndJ Baeyer-Villiger
+        oxidation step in the andilesin branch.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000357
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Conversion of andiconin to andilesin D by introduction of a lacton
+        ring..
+      notes: MITE0000357 is active and links AndJ to UniProtKB:A0A097ZPG2, GenPept
+        BAP81864.1 and MIBiG BGC0002612 for Baeyer-Villiger oxidation of andiconin
+        to andilesin D.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81864.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndJ FAD-dependent monooxygenase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPG2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPG2 is the 633 aa Emericella variicolor, also
+        Aspergillus stellatus, FAD-binding monooxygenase AndJ entry and cross-references
+        EMBL AB981314 protein BAP81864.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81864.1 is the Aspergillus stellatus AndJ protein encoded
+        on complement(AB981314.1:15881..17782).
+  - subject: andj
+    predicate: forms
+    object: andilesin_d
+    notes: MITE0000357 describes AndJ-dependent Baeyer-Villiger oxidation of andiconin
+      to andilesin D.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000357
+        and UniProtKB:A0A097ZPG2 both cite this paper for the AndJ Baeyer-Villiger
+        oxidation step in the andilesin branch.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000357
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Conversion of andiconin to andilesin D by introduction of a lacton
+        ring..
+      notes: MITE0000357 is active and links AndJ to UniProtKB:A0A097ZPG2, GenPept
+        BAP81864.1 and MIBiG BGC0002612 for Baeyer-Villiger oxidation of andiconin
+        to andilesin D.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81864.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndJ FAD-dependent monooxygenase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPG2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPG2 is the 633 aa Emericella variicolor, also
+        Aspergillus stellatus, FAD-binding monooxygenase AndJ entry and cross-references
+        EMBL AB981314 protein BAP81864.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81864.1 is the Aspergillus stellatus AndJ protein encoded
+        on complement(AB981314.1:15881..17782).
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -485,4 +578,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndG O-acetylation
     of andilesin A to O-acetylandilesin A; grounded AndG to UniProtKB:A0A097ZPE2,
     andilesin A to CHEBI:177859 and O-acetylandilesin A to CHEBI:232445.
+  llm_assisted: true
+- timestamp: '2026-10-02T04:40:06Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndJ Baeyer-Villiger
+    oxidation of andiconin to andilesin D; grounded AndJ to UniProtKB:A0A097ZPG2,
+    andiconin to pubchem.compound:91820403 and andilesin D to CHEBI:232444.
   llm_assisted: true
