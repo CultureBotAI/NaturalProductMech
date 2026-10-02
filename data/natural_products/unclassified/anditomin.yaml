@@ -269,6 +269,95 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept BAP81862.1 is the Aspergillus stellatus AndH protein encoded
         on AB981314.1:12753..13104 and AB981314.1:13154..13815.
+- graph_id: anditomin-andi-reduction
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndI-catalyzed reduction of andilesin D to andilesin
+    A.
+  nodes:
+  - node_id: andilesin_d
+    label: andilesin D
+    node_type: PRECURSOR
+    identifier: CHEBI:232444
+    grounding_status: GROUNDED
+  - node_id: andi
+    label: AndI short-chain dehydrogenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPE8
+    grounding_status: GROUNDED
+  - node_id: andilesin_a
+    label: andilesin A
+    node_type: PRECURSOR
+    identifier: CHEBI:177859
+    grounding_status: GROUNDED
+  edges:
+  - subject: andilesin_d
+    predicate: is reduced by
+    object: andi
+    notes: AndI reduces the meroterpenoid intermediate andilesin D in the andilesin
+      branch of the anditomin pathway.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000358
+        and UniProtKB:A0A097ZPE8 both cite this paper for the AndI reduction step
+        in the andilesin branch.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000358
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000358 is active and links AndI to UniProtKB:A0A097ZPE8, GenPept
+        BAP81863.1 and MIBiG BGC0002612 for heterologous-expression evidence of the
+        conversion of andilesin D to andilesin A.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81863.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndI short-chain dehydrogenase/reductase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPE8 is the 290 aa Emericella variicolor, also
+        Aspergillus stellatus, short-chain dehydrogenase AndI entry and cross-references
+        EMBL AB981314 protein BAP81863.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81863.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81863.1 is the Aspergillus stellatus AndI protein encoded
+        on AB981314.1:14876..14897 and AB981314.1:14946..15796.
+  - subject: andi
+    predicate: forms
+    object: andilesin_a
+    notes: MITE0000358 describes AndI-dependent conversion of andilesin D to andilesin
+      A.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000358
+        and UniProtKB:A0A097ZPE8 both cite this paper for the AndI reduction step
+        in the andilesin branch.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000358
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000358 is active and links AndI to UniProtKB:A0A097ZPE8, GenPept
+        BAP81863.1 and MIBiG BGC0002612 for heterologous-expression evidence of the
+        conversion of andilesin D to andilesin A.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81863.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndI short-chain dehydrogenase/reductase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPE8 is the 290 aa Emericella variicolor, also
+        Aspergillus stellatus, short-chain dehydrogenase AndI entry and cross-references
+        EMBL AB981314 protein BAP81863.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81863.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81863.1 is the Aspergillus stellatus AndI protein encoded
+        on AB981314.1:14876..14897 and AB981314.1:14946..15796.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -291,4 +380,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndH reduction
     of andilesin B to andilesin C; grounded AndH to UniProtKB:A0A097ZPD4 and the andilesin
     B precursor to CHEBI:223328.
+  llm_assisted: true
+- timestamp: '2026-10-02T03:44:22Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndI reduction
+    of andilesin D to andilesin A; grounded AndI to UniProtKB:A0A097ZPE8, andilesin
+    D to CHEBI:232444 and andilesin A to CHEBI:177859.
   llm_assisted: true
