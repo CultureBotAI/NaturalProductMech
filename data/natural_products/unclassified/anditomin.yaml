@@ -722,6 +722,60 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept BAP81865.1 is the Aspergillus stellatus AndK protein encoded
         on AB981314.1 exons 18286..21221.
+- graph_id: anditomin-andk-cyclization
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndK-catalyzed cyclization of hydroxymethylated
+    DMOA to DHDMP.
+  nodes:
+  - node_id: hydroxymethyl_dmoa
+    label: 2,4-dihydroxy-6-(hydroxymethyl)-3,5-dimethylbenzoic acid
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91820253
+    grounding_status: GROUNDED
+  - node_id: andk
+    label: AndK cytochrome P450
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPE4
+    grounding_status: GROUNDED
+  - node_id: dhdmp
+    label: 5,7-dihydroxy-4,6-dimethylphthalide
+    node_type: PRECURSOR
+    identifier: pubchem.compound:86136221
+    grounding_status: GROUNDED
+  edges:
+  - subject: hydroxymethyl_dmoa
+    predicate: is cyclized by
+    object: andk
+    notes: AndK catalyzes cyclization of hydroxymethylated DMOA to DHDMP as the second
+      AndK-dependent step of anditomin biosynthesis.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. assigned AndK as the Aspergillus stellatus enzyme converting
+        DMOA through hydroxymethylated DMOA to DHDMP.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000351
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Cyclization as second step in the anditomin biosynthetic pathway.
+      notes: MITE0000351 links A0A097ZPE4, BAP81865.1 and BGC0002612 to the second
+        AndK cyclization.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81865.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+  - subject: andk
+    predicate: forms
+    object: dhdmp
+    notes: MITE0000351 describes AndK-dependent cyclization of the hydroxymethylated
+      DMOA intermediate to form the phthalide DHDMP before AndD prenylation.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
 - graph_id: anditomin-andd-prenylation
   scope: BIOSYNTHESIS
   description: Aspergillus stellatus AndD-catalyzed prenylation of DHDMP in the anditomin
@@ -1271,4 +1325,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndA dehydrogenation
     of preandiloid B to preandiloid C; grounded AndA to UniProtKB:A0A097ZPD5, preandiloid
     B to pubchem.compound:91819922 and preandiloid C to pubchem.compound:91820040.
+  llm_assisted: true
+- timestamp: '2026-10-02T08:45:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndK cyclization
+    of hydroxymethylated DMOA to DHDMP; grounded AndK to UniProtKB:A0A097ZPE4, hydroxymethylated
+    DMOA to pubchem.compound:91820253 and DHDMP to pubchem.compound:86136221.
   llm_assisted: true
