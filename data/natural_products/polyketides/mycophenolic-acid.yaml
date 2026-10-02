@@ -580,6 +580,109 @@ causal_graphs:
       notes: RCSB PDB identifies 1JR1 as an IMPDH2 crystal structure with MOA mycophenolic
         acid ligands and maps entity 1 to the Cricetulus griseus IMPDH2 sequence in
         UniProtKB:P12269.
+- graph_id: mycophenolic-acid-mpag-o-methylation
+  scope: BIOSYNTHESIS
+  description: Penicillium brevicompactum MpaG'-catalyzed O-methylation in mycophenolic
+    acid biosynthesis.
+  nodes:
+  - node_id: demethylmycophenolic_acid
+    label: demethylmycophenolic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mpag_prime
+    label: MpaG' O-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A0B5L781
+    grounding_status: GROUNDED
+  - node_id: mycophenolic_acid
+    label: mycophenolic acid
+    node_type: COMPOUND
+    identifier: CHEBI:168396
+    grounding_status: GROUNDED
+  edges:
+  - subject: demethylmycophenolic_acid
+    predicate: is O-methylated by
+    object: mpag_prime
+    notes: Zhang et al. assayed MpaG' against demethylmycophenolic acid from the same
+      Penicillium brevicompactum NRRL 864 mpa' cluster carried by BGC0002619. MITE
+      maps this terminal O-methylation to RHEA:81843, and UniProt now annotates that
+      reaction on A0A0B5L781, but the local ChEBI inventory has mycophenolate and
+      not CHEBI:231832 for 6-O-desmethylmycophenolate, so the substrate remains ungrounded.
+    evidence:
+    - reference: DOI:10.1002/cbic.201402600
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MpaG' catalyzes the methylation of demethylmycophenolic acid (DMMPA,
+        6) to form 1.
+      notes: Zhang et al. identified the Penicillium brevicompactum NRRL 864 mpa'
+        cluster and functionally and kinetically characterized its SAM-dependent MpaG'
+        O-methyltransferase in vitro against demethylmycophenolic acid.
+    - reference: DOI:10.1002/pro.5144
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MpaG' catalyzes the 5-O-methylation of three precursors in MPA biosynthesis
+        including demethylmycophenolic acid (DMMPA), 4-farnesyl-3,5-dihydroxy-6-methylphthalide
+        (FDHMP), and an intermediate containing three fewer carbon atoms compared
+        to FDHMP (FDHMP-3C) with different catalytic efficiencies.
+      notes: You et al. solved substrate-bound MpaG' crystal structures and confirmed
+        DMMPA, FDHMP and FDHMP-3C activity with the same Penicillium brevicompactum
+        NRRL 864 enzyme.
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5L781
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:A0A0B5L781 is the reviewed 398 aa Penicillium brevicompactum
+        MpaG' entry, cross-links KM595305/AJG44384.1, and annotates RHEA:81843 for
+        6-O-desmethylmycophenolate O-methylation to mycophenolate.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KM595305.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: GenBank KM595305.1 is the Penicillium brevicompactum NRRL 864 mpa' cluster
+        reported by Zhang et al. and encodes MpaG' as protein AJG44384.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002619.2/BGC0002619.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002619.2 places AJG44384.1 in the active KM595305.1 mycophenolic
+        acid biosynthetic gene cluster as MpaG' with a MITE0000011 99% identity methylation
+        annotation.
+  - subject: mpag_prime
+    predicate: forms
+    object: mycophenolic_acid
+    notes: MpaG' can methylate three mycophenolic acid precursors; the direct demethylmycophenolic
+      acid reaction forms mycophenolic acid and is represented here as the terminal
+      product-forming branch without asserting that this branch is the sole physiological
+      route through the compartmentalized pathway.
+    evidence:
+    - reference: DOI:10.1002/cbic.201402600
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MpaG' catalyzes the methylation of demethylmycophenolic acid (DMMPA,
+        6) to form 1.
+      notes: Zhang et al. identified the Penicillium brevicompactum NRRL 864 mpa'
+        cluster and functionally and kinetically characterized its SAM-dependent MpaG'
+        O-methyltransferase in vitro against demethylmycophenolic acid.
+    - reference: DOI:10.1002/pro.5144
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MpaG' catalyzes the 5-O-methylation of three precursors in MPA biosynthesis
+        including demethylmycophenolic acid (DMMPA), 4-farnesyl-3,5-dihydroxy-6-methylphthalide
+        (FDHMP), and an intermediate containing three fewer carbon atoms compared
+        to FDHMP (FDHMP-3C) with different catalytic efficiencies.
+      notes: You et al. solved substrate-bound MpaG' crystal structures and confirmed
+        DMMPA, FDHMP and FDHMP-3C activity with the same Penicillium brevicompactum
+        NRRL 864 enzyme.
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5L781
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:A0A0B5L781 is the reviewed 398 aa Penicillium brevicompactum
+        MpaG' entry, cross-links KM595305/AJG44384.1, and annotates RHEA:81843 for
+        6-O-desmethylmycophenolate O-methylation to mycophenolate.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KM595305.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: GenBank KM595305.1 is the Penicillium brevicompactum NRRL 864 mpa' cluster
+        reported by Zhang et al. and encodes MpaG' as protein AJG44384.1.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002619.2/BGC0002619.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002619.2 places AJG44384.1 in the active KM595305.1 mycophenolic
+        acid biosynthetic gene cluster as MpaG' with a MITE0000011 99% identity methylation
+        annotation.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -609,3 +712,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-02T01:07:23Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Penicillium brevicompactum NRRL 864
+    MpaG' O-methylation in mycophenolic acid biosynthesis; grounded the assayed enzyme
+    node to UniProtKB:A0A0B5L781 and kept demethylmycophenolic acid ungrounded because
+    the local ChEBI inventory lacks CHEBI:231832.
+  llm_assisted: true
