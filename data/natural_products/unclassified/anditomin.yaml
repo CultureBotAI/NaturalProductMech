@@ -812,6 +812,98 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept BAP81858.1 is the Aspergillus stellatus AndD protein encoded
         on complement(AB981314.1:4149..5132).
+- graph_id: anditomin-ande-epoxidation
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndE-catalyzed epoxidation of farnesyl-DHDMP
+    in the anditomin biosynthetic pathway.
+  nodes:
+  - node_id: farnesyl_dhdmp
+    label: farnesyl-DHDMP
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91819848
+    grounding_status: GROUNDED
+  - node_id: ande
+    label: AndE FAD-dependent monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPF7
+    grounding_status: GROUNDED
+  - node_id: epoxyfarnesyl_dhdmp
+    label: epoxyfarnesyl-DHDMP
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91820106
+    grounding_status: GROUNDED
+  edges:
+  - subject: farnesyl_dhdmp
+    predicate: is epoxidized by
+    object: ande
+    notes: AndE epoxidizes farnesyl-DHDMP in the anditomin pathway before AndB cyclization
+      of the epoxidized product.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000353
+        and UniProtKB:A0A097ZPF7 both cite this paper for AndE epoxidation of farnesyl-DHDMP
+        to epoxyfarnesyl-DHDMP.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000353
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Epoxidation of farnesyl-DHDMP to give epoxyfarnesyl-DHDMP in the anditomin
+        biosynthetic pathway.
+      notes: MITE0000353 is active and links AndE to UniProtKB:A0A097ZPF7, GenPept
+        BAP81859.1 and MIBiG BGC0002612 for heterologous-expression evidence of farnesyl-DHDMP
+        epoxidation to epoxyfarnesyl-DHDMP.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81859.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndE FAD-dependent monooxygenase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPF7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPF7 is the 471 aa Emericella variicolor, also
+        Aspergillus stellatus, FAD-dependent monooxygenase AndE entry and cross-references
+        EMBL AB981314 protein BAP81859.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81859.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81859.1 is the Aspergillus stellatus AndE protein encoded
+        on complement(AB981314.1:5331..6894).
+  - subject: ande
+    predicate: forms
+    object: epoxyfarnesyl_dhdmp
+    notes: MITE0000353 describes AndE-dependent conversion of farnesyl-DHDMP to epoxyfarnesyl-DHDMP.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000353
+        and UniProtKB:A0A097ZPF7 both cite this paper for AndE epoxidation of farnesyl-DHDMP
+        to epoxyfarnesyl-DHDMP.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000353
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Epoxidation of farnesyl-DHDMP to give epoxyfarnesyl-DHDMP in the anditomin
+        biosynthetic pathway.
+      notes: MITE0000353 is active and links AndE to UniProtKB:A0A097ZPF7, GenPept
+        BAP81859.1 and MIBiG BGC0002612 for heterologous-expression evidence of farnesyl-DHDMP
+        epoxidation to epoxyfarnesyl-DHDMP.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81859.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndE FAD-dependent monooxygenase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPF7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPF7 is the 471 aa Emericella variicolor, also
+        Aspergillus stellatus, FAD-dependent monooxygenase AndE entry and cross-references
+        EMBL AB981314 protein BAP81859.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81859.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81859.1 is the Aspergillus stellatus AndE protein encoded
+        on complement(AB981314.1:5331..6894).
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -876,4 +968,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndD prenylation
     of DHDMP to farnesyl-DHDMP; grounded AndD to UniProtKB:A0A097ZPE3, DHDMP to pubchem.compound:86136221
     and farnesyl-DHDMP to pubchem.compound:91819848.
+  llm_assisted: true
+- timestamp: '2026-10-02T06:42:47Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndE epoxidation
+    of farnesyl-DHDMP to epoxyfarnesyl-DHDMP; grounded AndE to UniProtKB:A0A097ZPF7,
+    farnesyl-DHDMP to pubchem.compound:91819848 and epoxyfarnesyl-DHDMP to pubchem.compound:91820106.
   llm_assisted: true
