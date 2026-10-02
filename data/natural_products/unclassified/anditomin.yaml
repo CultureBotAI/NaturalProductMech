@@ -358,6 +358,97 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept BAP81863.1 is the Aspergillus stellatus AndI protein encoded
         on AB981314.1:14876..14897 and AB981314.1:14946..15796.
+- graph_id: anditomin-andg-acetylation
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndG-catalyzed O-acetylation of andilesin A to
+    O-acetylandilesin A.
+  nodes:
+  - node_id: andilesin_a
+    label: andilesin A
+    node_type: PRECURSOR
+    identifier: CHEBI:177859
+    grounding_status: GROUNDED
+  - node_id: andg
+    label: AndG O-acetyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPE2
+    grounding_status: GROUNDED
+  - node_id: o_acetylandilesin_a
+    label: O-acetylandilesin A
+    node_type: PRECURSOR
+    identifier: CHEBI:232445
+    grounding_status: GROUNDED
+  edges:
+  - subject: andilesin_a
+    predicate: is O-acetylated by
+    object: andg
+    notes: AndG O-acetylates andilesin A in the andilesin branch of the anditomin
+      pathway.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000359
+        and UniProtKB:A0A097ZPE2 both cite this paper for the AndG O-acetylation step
+        in the andilesin branch.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000359
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Acetylates andilesin A at the C-6' hydroxyl group position, leading
+        to an instable intermediate that eventually results in andilesin B.
+      notes: MITE0000359 is active and links AndG to UniProtKB:A0A097ZPE2, GenPept
+        BAP81861.1 and MIBiG BGC0002612 for O-acetylation of andilesin A.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81861.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndG acetyltransferase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPE2 is the 481 aa Emericella variicolor, also
+        Aspergillus stellatus, O-acetyltransferase AndG entry and cross-references
+        EMBL AB981314 protein BAP81861.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81861.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81861.1 is the Aspergillus stellatus AndG protein encoded
+        on complement(AB981314.1:10918..12363).
+  - subject: andg
+    predicate: forms
+    object: o_acetylandilesin_a
+    notes: MITE0000359 describes AndG-dependent acetylation of andilesin A to an unstable
+      O-acetylated intermediate.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000359
+        and UniProtKB:A0A097ZPE2 both cite this paper for the AndG O-acetylation step
+        in the andilesin branch.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000359
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Acetylates andilesin A at the C-6' hydroxyl group position, leading
+        to an instable intermediate that eventually results in andilesin B.
+      notes: MITE0000359 is active and links AndG to UniProtKB:A0A097ZPE2, GenPept
+        BAP81861.1 and MIBiG BGC0002612 for O-acetylation of andilesin A.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81861.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndG acetyltransferase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPE2 is the 481 aa Emericella variicolor, also
+        Aspergillus stellatus, O-acetyltransferase AndG entry and cross-references
+        EMBL AB981314 protein BAP81861.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81861.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81861.1 is the Aspergillus stellatus AndG protein encoded
+        on complement(AB981314.1:10918..12363).
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -387,4 +478,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndI reduction
     of andilesin D to andilesin A; grounded AndI to UniProtKB:A0A097ZPE8, andilesin
     D to CHEBI:232444 and andilesin A to CHEBI:177859.
+  llm_assisted: true
+- timestamp: '2026-10-02T04:11:54Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndG O-acetylation
+    of andilesin A to O-acetylandilesin A; grounded AndG to UniProtKB:A0A097ZPE2,
+    andilesin A to CHEBI:177859 and O-acetylandilesin A to CHEBI:232445.
   llm_assisted: true
