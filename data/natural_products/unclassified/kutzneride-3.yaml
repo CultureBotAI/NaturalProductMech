@@ -89,6 +89,166 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A8CF75
+  enzyme_label: KtzQ tryptophan 7-halogenase
+  reaction_id: RHEA:26494
+  substrate: CHEBI:57912
+  substrates:
+  - CHEBI:57912
+  - CHEBI:58307
+  - CHEBI:17996
+  - CHEBI:15379
+  product: CHEBI:58713
+  products:
+  - CHEBI:58713
+  - CHEBI:57692
+  - CHEBI:15377
+  notes: KtzQ catalyzes the first tandem halogenase step in the kutzneride pathway,
+    forming 7-chloro-L-tryptophan from free L-tryptophan before KtzR installs the
+    6-chlorine in a separate downstream step.
+  evidence:
+  - reference: DOI:10.1021/ja806467a
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: KtzQ (along with the flavin reductase KtzS) acts first to chlorinate
+      at the 7-position of L-tryptophan
+    notes: Heemstra and Walsh identified KtzQ as the first tryptophan halogenase in
+      kutzneride biosynthesis, assayed the purified enzyme with KtzS, and showed that
+      it forms 7-chloro-L-tryptophan from free L-tryptophan.
+  - reference: https://mite.bioinformatics.nl/repository/MITE0000029
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-02'
+    notes: MITE0000029 is active, assigns KtzQ to the in vitro-supported C7 chlorination
+      of L-tryptophan to 7-chlorotryptophan, records RHEA:26494 and EC:1.14.19.9 for
+      the reaction, and links KtzQ to UniProtKB:A8CF75, GenPept ABV56597.1 and MIBiG
+      BGC0000378.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000378.5/BGC0000378.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: 'MITE0000029: Halogenation (100% identity)'
+    retrieved_on: '2026-10-02'
+    notes: MIBiG BGC0000378.5 places ktzQ/ABV56597.1 inside the active Kutzneria sp.
+      744 kutzneride biosynthetic gene cluster as a Trp_halogenase locus with a MITE0000029
+      halogenation annotation.
+  - reference: https://www.uniprot.org/uniprotkb/A8CF75
+    evidence_type: DATABASE_ASSERTION
+    snippet: GN   Name=ktzQ
+    retrieved_on: '2026-10-02'
+    notes: Current reviewed UniProtKB:A8CF75 resolves as the Kutzneria sp. strain
+      744 Tryptophan 7-halogenase KtzQ entry, cross-references EMBL EU074211 protein
+      ABV56597.1, and annotates the RHEA:26494 / EC:1.14.19.9 L-tryptophan 7-halogenase
+      catalytic activity.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ABV56597.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: KtzQ [Kutzneria sp. 744]
+    retrieved_on: '2026-10-02'
+    notes: NCBI Protein ABV56597.1 is the 533 aa Kutzneria sp. 744 KtzQ protein encoded
+      by ktzQ at EU074211.1:11603..13204.
+causal_graphs:
+- graph_id: kutzneride-ktzq-7-chlorination
+  scope: BIOSYNTHESIS
+  description: Kutzneria sp. 744 KtzQ-catalyzed 7-chlorination of L-tryptophan in
+    the early kutzneride dichlorotryptophan biosynthetic pathway.
+  nodes:
+  - node_id: l_tryptophan
+    label: L-tryptophan
+    node_type: PRECURSOR
+    identifier: CHEBI:16828
+    grounding_status: GROUNDED
+  - node_id: ktzq
+    label: KtzQ tryptophan 7-halogenase
+    node_type: ENZYME
+    identifier: UniProtKB:A8CF75
+    grounding_status: GROUNDED
+  - node_id: 7_chloro_l_tryptophan
+    label: 7-chloro-L-tryptophan
+    node_type: PRECURSOR
+    identifier: CHEBI:47356
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_tryptophan
+    predicate: is 7-chlorinated by
+    object: ktzq
+    notes: KtzQ accepts free L-tryptophan as its first substrate in the tandem KtzQ/KtzR
+      halogenation sequence. KtzS supplies reduced flavin for catalysis; that partner
+      is outside this KtzQ-specific graph.
+    evidence:
+    - reference: DOI:10.1021/ja806467a
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: KtzQ (along with the flavin reductase KtzS) acts first to chlorinate
+        at the 7-position of L-tryptophan
+      notes: Heemstra and Walsh identified KtzQ as the first tryptophan halogenase
+        in kutzneride biosynthesis, assayed the purified enzyme with KtzS, and showed
+        that it forms 7-chloro-L-tryptophan from free L-tryptophan.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000029
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000029 is active, assigns KtzQ to the in vitro-supported C7 chlorination
+        of L-tryptophan to 7-chlorotryptophan, records RHEA:26494 and EC:1.14.19.9
+        for the reaction, and links KtzQ to UniProtKB:A8CF75, GenPept ABV56597.1 and
+        MIBiG BGC0000378.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000378.5/BGC0000378.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000029: Halogenation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000378.5 places ktzQ/ABV56597.1 inside the active Kutzneria
+        sp. 744 kutzneride biosynthetic gene cluster as a Trp_halogenase locus with
+        a MITE0000029 halogenation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/A8CF75
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=ktzQ
+      retrieved_on: '2026-10-02'
+      notes: Current reviewed UniProtKB:A8CF75 resolves as the Kutzneria sp. strain
+        744 Tryptophan 7-halogenase KtzQ entry, cross-references EMBL EU074211 protein
+        ABV56597.1, and annotates the RHEA:26494 / EC:1.14.19.9 L-tryptophan 7-halogenase
+        catalytic activity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABV56597.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: KtzQ [Kutzneria sp. 744]
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein ABV56597.1 is the 533 aa Kutzneria sp. 744 KtzQ protein
+        encoded by ktzQ at EU074211.1:11603..13204.
+  - subject: ktzq
+    predicate: forms
+    object: 7_chloro_l_tryptophan
+    notes: KtzQ produces 7-chloro-L-tryptophan for the downstream KtzR 6-chlorination
+      step toward 6,7-dichloro-L-tryptophan.
+    evidence:
+    - reference: DOI:10.1021/ja806467a
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: KtzQ (along with the flavin reductase KtzS) acts first to chlorinate
+        at the 7-position of L-tryptophan
+      notes: Heemstra and Walsh identified KtzQ as the first tryptophan halogenase
+        in kutzneride biosynthesis, assayed the purified enzyme with KtzS, and showed
+        that it forms 7-chloro-L-tryptophan from free L-tryptophan.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000029
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000029 is active, assigns KtzQ to the in vitro-supported C7 chlorination
+        of L-tryptophan to 7-chlorotryptophan, records RHEA:26494 and EC:1.14.19.9
+        for the reaction, and links KtzQ to UniProtKB:A8CF75, GenPept ABV56597.1 and
+        MIBiG BGC0000378.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000378.5/BGC0000378.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000029: Halogenation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000378.5 places ktzQ/ABV56597.1 inside the active Kutzneria
+        sp. 744 kutzneride biosynthetic gene cluster as a Trp_halogenase locus with
+        a MITE0000029 halogenation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/A8CF75
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=ktzQ
+      retrieved_on: '2026-10-02'
+      notes: Current reviewed UniProtKB:A8CF75 resolves as the Kutzneria sp. strain
+        744 Tryptophan 7-halogenase KtzQ entry, cross-references EMBL EU074211 protein
+        ABV56597.1, and annotates the RHEA:26494 / EC:1.14.19.9 L-tryptophan 7-halogenase
+        catalytic activity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABV56597.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: KtzQ [Kutzneria sp. 744]
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein ABV56597.1 is the 533 aa Kutzneria sp. 744 KtzQ protein
+        encoded by ktzQ at EU074211.1:11603..13204.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -98,3 +258,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-02T23:11:21Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a RHEA:26494 / UniProtKB:A8CF75-grounded KtzQ biosynthetic_pathway
+    step and a BIOSYNTHESIS causal graph for Kutzneria sp. 744 KtzQ 7-chlorination
+    of L-tryptophan to 7-chloro-L-tryptophan in the kutzneride precursor pathway.
+  llm_assisted: true
