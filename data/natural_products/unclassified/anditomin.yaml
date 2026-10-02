@@ -180,6 +180,95 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept BAP81860.1 is the Aspergillus stellatus AndF protein encoded
         on AB981314.1:9234..10091.
+- graph_id: anditomin-andh-reduction
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndH-catalyzed reduction of andilesin B to andilesin
+    C.
+  nodes:
+  - node_id: andilesin_b
+    label: andilesin B
+    node_type: PRECURSOR
+    identifier: CHEBI:223328
+    grounding_status: GROUNDED
+  - node_id: andh
+    label: AndH short-chain dehydrogenase/reductase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPD4
+    grounding_status: GROUNDED
+  - node_id: andilesin_c
+    label: andilesin C
+    node_type: PRECURSOR
+    identifier: CHEBI:223334
+    grounding_status: GROUNDED
+  edges:
+  - subject: andilesin_b
+    predicate: is reduced by
+    object: andh
+    notes: AndH reduces the meroterpenoid intermediate andilesin B in the andilesin
+      branch of the anditomin pathway.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000360
+        and UniProtKB:A0A097ZPD4 both cite this paper for the AndH reduction step
+        in the andilesin branch.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000360
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000360 is active and links AndH to UniProtKB:A0A097ZPD4, GenPept
+        BAP81862.1 and MIBiG BGC0002612 for heterologous-expression evidence of the
+        conversion of andilesin B to andilesin C.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81862.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndH short-chain dehydrogenase/reductase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPD4 is the 337 aa Emericella variicolor, also
+        Aspergillus stellatus, oxidoreductase AndH entry and cross-references EMBL
+        AB981314 protein BAP81862.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81862.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81862.1 is the Aspergillus stellatus AndH protein encoded
+        on AB981314.1:12753..13104 and AB981314.1:13154..13815.
+  - subject: andh
+    predicate: forms
+    object: andilesin_c
+    notes: MITE0000360 describes AndH-dependent conversion of andilesin B to andilesin
+      C.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000360
+        and UniProtKB:A0A097ZPD4 both cite this paper for the AndH reduction step
+        in the andilesin branch.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000360
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000360 is active and links AndH to UniProtKB:A0A097ZPD4, GenPept
+        BAP81862.1 and MIBiG BGC0002612 for heterologous-expression evidence of the
+        conversion of andilesin B to andilesin C.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81862.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndH short-chain dehydrogenase/reductase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPD4 is the 337 aa Emericella variicolor, also
+        Aspergillus stellatus, oxidoreductase AndH entry and cross-references EMBL
+        AB981314 protein BAP81862.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81862.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81862.1 is the Aspergillus stellatus AndH protein encoded
+        on AB981314.1:12753..13104 and AB981314.1:13154..13815.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -195,4 +284,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndF oxidative
     rearrangement of andilesin C to anditomin; grounded AndF to UniProtKB:A0A097ZPD9
     and the andilesin C precursor to CHEBI:223334.
+  llm_assisted: true
+- timestamp: '2026-10-02T03:18:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndH reduction
+    of andilesin B to andilesin C; grounded AndH to UniProtKB:A0A097ZPD4 and the andilesin
+    B precursor to CHEBI:223328.
   llm_assisted: true
