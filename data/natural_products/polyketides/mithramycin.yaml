@@ -460,6 +460,153 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein CAK50791.1 is the Streptomyces argillaceus O-methyltransferase
         encoded by mtmMI and cross-referenced to UniProtKB:Q194P7.
+- graph_id: mithramycin-mtmmii-c-methylation
+  scope: BIOSYNTHESIS
+  description: Streptomyces argillaceus MtmMII-catalyzed SAM-dependent C-methylation
+    of a glycosylated mithramycin intermediate.
+  nodes:
+  - node_id: mtmmii_c_methylation_substrate
+    label: MtmMII C-methylation substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: sam
+    label: S-adenosyl-L-methionine
+    node_type: PRECURSOR
+    identifier: CHEBI:59789
+    grounding_status: GROUNDED
+  - node_id: iron_sulfur_cluster
+    label: iron-sulfur cluster
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mtmmii
+    label: MtmMII C-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:Q194P8
+    grounding_status: GROUNDED
+  - node_id: mtmmii_c_methylated_intermediate
+    label: MtmMII C-methylated mithramycin intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mtmmii_c_methylation_substrate
+    predicate: is C-methylated by
+    object: mtmmii
+    notes: MITE represents the MtmMII reaction as C-methylation of a glycosylated
+      mithramycin intermediate; exact local records are absent for the substrate and
+      product structures.
+    evidence:
+    - reference: DOI:10.1074/jbc.275.5.3065
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Characterization of two polyketide methyltransferases involved in the
+        biosynthesis of the antitumor drug mithramycin
+      notes: Lozano et al. characterized Streptomyces argillaceus MtmMI and MtmMII
+        as mithramycin-pathway polyketide methyltransferases; MITE cites this paper
+        for MtmMII in vitro and knock-out support.
+    - reference: DOI:10.1074/jbc.M312351200
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MtmMII-mediated C-methylation during biosynthesis of the antitumor
+        drug mithramycin
+      notes: Rodriguez et al. analyzed the MtmMII-mediated C-methylation step in mithramycin
+        biosynthesis and its contribution to mithramycin activity and DNA-drug interaction.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000015
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000015 is active, links MtmMII to UniProtKB:Q194P8, GenPept CAK50790.1
+        and MIBiG BGC0000247, lists SAM and FeS as cofactors, and represents the reaction
+        as an in vitro- and knock-out-supported C-methylation in the mithramycin biosynthetic
+        pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000247.5 places mtmMII/CAK50790.1 inside the active Streptomyces
+        argillaceus mithramycin biosynthetic gene cluster as a C-methyltransferase
+        locus with a 100% identity MITE0000015 methylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q194P8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194P8 resolves as a 326 aa Streptomyces argillaceus
+        mtmMII C-methyltransferase entry and cross-references EMBL X89899 protein
+        CAK50790.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAK50790.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAK50790.1 is the Streptomyces argillaceus C-methyltransferase
+        encoded by mtmMII and cross-referenced to UniProtKB:Q194P8.
+  - subject: sam
+    predicate: supplies a methyl group to
+    object: mtmmii
+    notes: MITE lists SAM as an MtmMII organic cofactor and UniProt annotates Q194P8
+      as a SAM-binding methyltransferase.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000015
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000015 is active, links MtmMII to UniProtKB:Q194P8, GenPept CAK50790.1
+        and MIBiG BGC0000247, lists SAM and FeS as cofactors, and represents the reaction
+        as an in vitro- and knock-out-supported C-methylation in the mithramycin biosynthetic
+        pathway.
+    - reference: https://www.uniprot.org/uniprotkb/Q194P8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194P8 resolves as a 326 aa Streptomyces argillaceus
+        mtmMII C-methyltransferase entry and cross-references EMBL X89899 protein
+        CAK50790.1.
+  - subject: iron_sulfur_cluster
+    predicate: serves as cofactor for
+    object: mtmmii
+    notes: MITE lists FeS as an MtmMII inorganic cofactor without specifying the iron-sulfur
+      cluster geometry.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000015
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000015 is active, links MtmMII to UniProtKB:Q194P8, GenPept CAK50790.1
+        and MIBiG BGC0000247, lists SAM and FeS as cofactors, and represents the reaction
+        as an in vitro- and knock-out-supported C-methylation in the mithramycin biosynthetic
+        pathway.
+  - subject: mtmmii
+    predicate: forms
+    object: mtmmii_c_methylated_intermediate
+    notes: The MITE reaction product adds an aromatic C-methyl substituent to the
+      submitted mithramycin-pathway substrate structure.
+    evidence:
+    - reference: DOI:10.1074/jbc.275.5.3065
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Characterization of two polyketide methyltransferases involved in the
+        biosynthesis of the antitumor drug mithramycin
+      notes: Lozano et al. characterized Streptomyces argillaceus MtmMI and MtmMII
+        as mithramycin-pathway polyketide methyltransferases; MITE cites this paper
+        for MtmMII in vitro and knock-out support.
+    - reference: DOI:10.1074/jbc.M312351200
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MtmMII-mediated C-methylation during biosynthesis of the antitumor
+        drug mithramycin
+      notes: Rodriguez et al. analyzed the MtmMII-mediated C-methylation step in mithramycin
+        biosynthesis and its contribution to mithramycin activity and DNA-drug interaction.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000015
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000015 is active, links MtmMII to UniProtKB:Q194P8, GenPept CAK50790.1
+        and MIBiG BGC0000247, lists SAM and FeS as cofactors, and represents the reaction
+        as an in vitro- and knock-out-supported C-methylation in the mithramycin biosynthetic
+        pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000247.5 places mtmMII/CAK50790.1 inside the active Streptomyces
+        argillaceus mithramycin biosynthetic gene cluster as a C-methyltransferase
+        locus with a 100% identity MITE0000015 methylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q194P8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194P8 resolves as a 326 aa Streptomyces argillaceus
+        mtmMII C-methyltransferase entry and cross-references EMBL X89899 protein
+        CAK50790.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAK50790.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAK50790.1 is the Streptomyces argillaceus C-methyltransferase
+        encoded by mtmMII and cross-referenced to UniProtKB:Q194P8.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -481,4 +628,12 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Streptomyces argillaceus MtmMI 4-O-methylation
     in mithramycin biosynthesis; grounded MtmMI to UniProtKB:Q194P7 and left 4-DPMC
     and premithramycinone ungrounded because exact local corpus records are absent.
+  llm_assisted: true
+- timestamp: '2026-10-02T14:41:24Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Streptomyces argillaceus MtmMII C-methylation
+    in mithramycin biosynthesis; grounded MtmMII to UniProtKB:Q194P8 and SAM to CHEBI:59789
+    and left the generic FeS cofactor plus the MITE substrate and product structures
+    ungrounded.
   llm_assisted: true
