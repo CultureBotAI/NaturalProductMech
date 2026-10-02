@@ -199,6 +199,305 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein ADC45587.1 is the Streptomyces nanchangensis MeiD C5-O-methyltransferase
         encoded by meiD at FJ952082.1:167087..167947.
+- graph_id: meilingmycin-meie-p450-oxidations
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces nanchangensis meilingmycin biosynthesis graph
+    for MeiE-catalyzed heme-dependent hydroxylation and heterocyclization of milbemycin-like
+    meilingmycin intermediates.
+  nodes:
+  - node_id: c5_o_methyl_meilingmycin_intermediate
+    label: C5-O-methyl meilingmycin intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: hydroxymethyl_c5_o_methyl_meilingmycin_intermediate
+    label: hydroxymethylated C5-O-methyl meilingmycin intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: oxidized_minor_meilingmycin_component
+    label: oxidized minor meilingmycin component
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: c5_hydroxy_meilingmycin_intermediate
+    label: C5-hydroxy meilingmycin intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: heterocyclized_meilingmycin_intermediate
+    label: heterocyclized meilingmycin intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: heme
+    label: heme
+    node_type: PRECURSOR
+    identifier: CHEBI:30413
+    grounding_status: GROUNDED
+  - node_id: meie
+    label: MeiE cytochrome P450
+    node_type: ENZYME
+    identifier: UniProtKB:Q6YL50
+    grounding_status: GROUNDED
+  edges:
+  - subject: c5_o_methyl_meilingmycin_intermediate
+    predicate: is hydroxylated by
+    object: meie
+    notes: MITE reaction 2 represents MeiE hydroxylation of the C5-O-methylated meilingmycin/milbemycin
+      scaffold. The exact substrate and product are left as local intermediates because
+      MITE supplies reaction structures but no stable names for them.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000010
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Heterocyclization, Hydroxylation
+      notes: MITE0000010 is active, lists three knock-out-supported MeiE reaction
+        rows on meilingmycin/milbemycin scaffolds, assigns two rows to hydroxylation
+        and one row to heterocyclization, lists heme and iron as cofactors, links
+        each reaction row to DOI:10.1128/AEM.02262-09, and links MeiE to UniProtKB:Q6YL50,
+        GenPept AAM97314.1, and MIBiG BGC0000093.
+    - reference: DOI:10.1128/AEM.02262-09
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: He et al. identified meiE as an aveE homolog in the meilingmycin gene
+        cluster, annotated MeiE as a cytochrome P450 hydroxylase, and proposed that
+        MeiE oxidizes the TE-released, cyclized polyketide to generate a C8-C6 furan
+        ring, a C8 hydroxyl group, or C8 and C6 hydroxyl groups.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000093.5/BGC0000093.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000093.5 places meiE/AAM97314.1 inside the active Streptomyces
+        nanchangensis meilingmycin biosynthetic gene cluster and links the CDS to
+        MITE0000010 at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q6YL50
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q6YL50 resolves as a 459 aa Streptomyces nanchangensis meiE
+        cytochrome P450 hydroxylase TrEMBL entry, cross-references EMBL FJ952082 protein
+        AAM97314.1, annotates heme as a cofactor, and carries heme-binding and monooxygenase
+        cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM97314.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM97314.1 is the Streptomyces nanchangensis MeiE cytochrome
+        P450 hydroxylase encoded by meiE at complement(FJ952082.1:58480..59859).
+  - subject: meie
+    predicate: forms
+    object: hydroxymethyl_c5_o_methyl_meilingmycin_intermediate
+    notes: This product corresponds to MITE reaction 2's hydroxylated minor-component
+      structure.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000010
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Heterocyclization, Hydroxylation
+      notes: MITE0000010 is active, lists three knock-out-supported MeiE reaction
+        rows on meilingmycin/milbemycin scaffolds, assigns two rows to hydroxylation
+        and one row to heterocyclization, lists heme and iron as cofactors, links
+        each reaction row to DOI:10.1128/AEM.02262-09, and links MeiE to UniProtKB:Q6YL50,
+        GenPept AAM97314.1, and MIBiG BGC0000093.
+    - reference: DOI:10.1128/AEM.02262-09
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: He et al. identified meiE as an aveE homolog in the meilingmycin gene
+        cluster, annotated MeiE as a cytochrome P450 hydroxylase, and proposed that
+        MeiE oxidizes the TE-released, cyclized polyketide to generate a C8-C6 furan
+        ring, a C8 hydroxyl group, or C8 and C6 hydroxyl groups.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000093.5/BGC0000093.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000093.5 places meiE/AAM97314.1 inside the active Streptomyces
+        nanchangensis meilingmycin biosynthetic gene cluster and links the CDS to
+        MITE0000010 at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q6YL50
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q6YL50 resolves as a 459 aa Streptomyces nanchangensis meiE
+        cytochrome P450 hydroxylase TrEMBL entry, cross-references EMBL FJ952082 protein
+        AAM97314.1, annotates heme as a cofactor, and carries heme-binding and monooxygenase
+        cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM97314.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM97314.1 is the Streptomyces nanchangensis MeiE cytochrome
+        P450 hydroxylase encoded by meiE at complement(FJ952082.1:58480..59859).
+  - subject: hydroxymethyl_c5_o_methyl_meilingmycin_intermediate
+    predicate: is hydroxylated by
+    object: meie
+    notes: MITE reaction 1 represents a second MeiE hydroxylation of a C5-O-methylated
+      meilingmycin/milbemycin minor component.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000010
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Heterocyclization, Hydroxylation
+      notes: MITE0000010 is active, lists three knock-out-supported MeiE reaction
+        rows on meilingmycin/milbemycin scaffolds, assigns two rows to hydroxylation
+        and one row to heterocyclization, lists heme and iron as cofactors, links
+        each reaction row to DOI:10.1128/AEM.02262-09, and links MeiE to UniProtKB:Q6YL50,
+        GenPept AAM97314.1, and MIBiG BGC0000093.
+    - reference: DOI:10.1128/AEM.02262-09
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: He et al. identified meiE as an aveE homolog in the meilingmycin gene
+        cluster, annotated MeiE as a cytochrome P450 hydroxylase, and proposed that
+        MeiE oxidizes the TE-released, cyclized polyketide to generate a C8-C6 furan
+        ring, a C8 hydroxyl group, or C8 and C6 hydroxyl groups.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000093.5/BGC0000093.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000093.5 places meiE/AAM97314.1 inside the active Streptomyces
+        nanchangensis meilingmycin biosynthetic gene cluster and links the CDS to
+        MITE0000010 at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q6YL50
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q6YL50 resolves as a 459 aa Streptomyces nanchangensis meiE
+        cytochrome P450 hydroxylase TrEMBL entry, cross-references EMBL FJ952082 protein
+        AAM97314.1, annotates heme as a cofactor, and carries heme-binding and monooxygenase
+        cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM97314.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM97314.1 is the Streptomyces nanchangensis MeiE cytochrome
+        P450 hydroxylase encoded by meiE at complement(FJ952082.1:58480..59859).
+  - subject: meie
+    predicate: forms
+    object: oxidized_minor_meilingmycin_component
+    notes: This product corresponds to MITE reaction 1's further oxidized minor-component
+      structure.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000010
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Heterocyclization, Hydroxylation
+      notes: MITE0000010 is active, lists three knock-out-supported MeiE reaction
+        rows on meilingmycin/milbemycin scaffolds, assigns two rows to hydroxylation
+        and one row to heterocyclization, lists heme and iron as cofactors, links
+        each reaction row to DOI:10.1128/AEM.02262-09, and links MeiE to UniProtKB:Q6YL50,
+        GenPept AAM97314.1, and MIBiG BGC0000093.
+    - reference: DOI:10.1128/AEM.02262-09
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: He et al. identified meiE as an aveE homolog in the meilingmycin gene
+        cluster, annotated MeiE as a cytochrome P450 hydroxylase, and proposed that
+        MeiE oxidizes the TE-released, cyclized polyketide to generate a C8-C6 furan
+        ring, a C8 hydroxyl group, or C8 and C6 hydroxyl groups.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000093.5/BGC0000093.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000093.5 places meiE/AAM97314.1 inside the active Streptomyces
+        nanchangensis meilingmycin biosynthetic gene cluster and links the CDS to
+        MITE0000010 at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q6YL50
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q6YL50 resolves as a 459 aa Streptomyces nanchangensis meiE
+        cytochrome P450 hydroxylase TrEMBL entry, cross-references EMBL FJ952082 protein
+        AAM97314.1, annotates heme as a cofactor, and carries heme-binding and monooxygenase
+        cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM97314.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM97314.1 is the Streptomyces nanchangensis MeiE cytochrome
+        P450 hydroxylase encoded by meiE at complement(FJ952082.1:58480..59859).
+  - subject: c5_hydroxy_meilingmycin_intermediate
+    predicate: is heterocyclized by
+    object: meie
+    notes: MITE reaction 3 represents MeiE heterocyclization on an unmethylated meilingmycin/milbemycin
+      intermediate.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000010
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Heterocyclization, Hydroxylation
+      notes: MITE0000010 is active, lists three knock-out-supported MeiE reaction
+        rows on meilingmycin/milbemycin scaffolds, assigns two rows to hydroxylation
+        and one row to heterocyclization, lists heme and iron as cofactors, links
+        each reaction row to DOI:10.1128/AEM.02262-09, and links MeiE to UniProtKB:Q6YL50,
+        GenPept AAM97314.1, and MIBiG BGC0000093.
+    - reference: DOI:10.1128/AEM.02262-09
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: He et al. identified meiE as an aveE homolog in the meilingmycin gene
+        cluster, annotated MeiE as a cytochrome P450 hydroxylase, and proposed that
+        MeiE oxidizes the TE-released, cyclized polyketide to generate a C8-C6 furan
+        ring, a C8 hydroxyl group, or C8 and C6 hydroxyl groups.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000093.5/BGC0000093.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000093.5 places meiE/AAM97314.1 inside the active Streptomyces
+        nanchangensis meilingmycin biosynthetic gene cluster and links the CDS to
+        MITE0000010 at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q6YL50
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q6YL50 resolves as a 459 aa Streptomyces nanchangensis meiE
+        cytochrome P450 hydroxylase TrEMBL entry, cross-references EMBL FJ952082 protein
+        AAM97314.1, annotates heme as a cofactor, and carries heme-binding and monooxygenase
+        cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM97314.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM97314.1 is the Streptomyces nanchangensis MeiE cytochrome
+        P450 hydroxylase encoded by meiE at complement(FJ952082.1:58480..59859).
+  - subject: meie
+    predicate: forms
+    object: heterocyclized_meilingmycin_intermediate
+    notes: This product corresponds to MITE reaction 3's heterocyclized meilingmycin
+      intermediate structure.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000010
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Heterocyclization, Hydroxylation
+      notes: MITE0000010 is active, lists three knock-out-supported MeiE reaction
+        rows on meilingmycin/milbemycin scaffolds, assigns two rows to hydroxylation
+        and one row to heterocyclization, lists heme and iron as cofactors, links
+        each reaction row to DOI:10.1128/AEM.02262-09, and links MeiE to UniProtKB:Q6YL50,
+        GenPept AAM97314.1, and MIBiG BGC0000093.
+    - reference: DOI:10.1128/AEM.02262-09
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: He et al. identified meiE as an aveE homolog in the meilingmycin gene
+        cluster, annotated MeiE as a cytochrome P450 hydroxylase, and proposed that
+        MeiE oxidizes the TE-released, cyclized polyketide to generate a C8-C6 furan
+        ring, a C8 hydroxyl group, or C8 and C6 hydroxyl groups.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000093.5/BGC0000093.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000093.5 places meiE/AAM97314.1 inside the active Streptomyces
+        nanchangensis meilingmycin biosynthetic gene cluster and links the CDS to
+        MITE0000010 at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q6YL50
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q6YL50 resolves as a 459 aa Streptomyces nanchangensis meiE
+        cytochrome P450 hydroxylase TrEMBL entry, cross-references EMBL FJ952082 protein
+        AAM97314.1, annotates heme as a cofactor, and carries heme-binding and monooxygenase
+        cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM97314.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM97314.1 is the Streptomyces nanchangensis MeiE cytochrome
+        P450 hydroxylase encoded by meiE at complement(FJ952082.1:58480..59859).
+  - subject: heme
+    predicate: serves as cofactor for
+    object: meie
+    notes: MITE lists heme as MeiE's organic cofactor and UniProt annotates heme binding
+      for Q6YL50.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000010
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Heterocyclization, Hydroxylation
+      notes: MITE0000010 is active, lists three knock-out-supported MeiE reaction
+        rows on meilingmycin/milbemycin scaffolds, assigns two rows to hydroxylation
+        and one row to heterocyclization, lists heme and iron as cofactors, links
+        each reaction row to DOI:10.1128/AEM.02262-09, and links MeiE to UniProtKB:Q6YL50,
+        GenPept AAM97314.1, and MIBiG BGC0000093.
+    - reference: https://www.uniprot.org/uniprotkb/Q6YL50
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q6YL50 resolves as a 459 aa Streptomyces nanchangensis meiE
+        cytochrome P450 hydroxylase TrEMBL entry, cross-references EMBL FJ952082 protein
+        AAM97314.1, annotates heme as a cofactor, and carries heme-binding and monooxygenase
+        cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM97314.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM97314.1 is the Streptomyces nanchangensis MeiE cytochrome
+        P450 hydroxylase encoded by meiE at complement(FJ952082.1:58480..59859).
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -216,4 +515,13 @@ curation_history:
     to UniProtKB:D6C4C6, grounded SAM to CHEBI:59789, and left the substrate and product
     ungrounded because MITE supplies reaction structures but no stable intermediate
     names.
+  llm_assisted: true
+- timestamp: '2026-10-02T14:17:21Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a partial BIOSYNTHESIS causal graph for MeiE-catalyzed heme-dependent
+    hydroxylation and heterocyclization of milbemycin-like meilingmycin intermediates;
+    grounded MeiE to UniProtKB:Q6YL50, grounded heme to CHEBI:30413, and left the
+    MITE-only substrates and products ungrounded because MITE supplies reaction structures
+    but no stable intermediate names.
   llm_assisted: true
