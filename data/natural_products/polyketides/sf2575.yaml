@@ -329,6 +329,142 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein ADE34484.1 is the 343 aa Streptomyces sp. SF2575 SsfM4 C-methyltransferase
         encoded by ssfM4 at GQ409537.1:4053..5084.
+- graph_id: sf2575-ssfm1-o-methylation
+  scope: BIOSYNTHESIS
+  description: Streptomyces sp. SF2575 SsfM1-catalyzed SAM-dependent C12a O-methylation
+    in SF2575 biosynthesis.
+  nodes:
+  - node_id: ssfm1_o_methylation_substrate
+    label: SsfM1 O-methylation substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: sam
+    label: S-adenosyl-L-methionine
+    node_type: PRECURSOR
+    identifier: CHEBI:59789
+    grounding_status: GROUNDED
+  - node_id: iron_sulfur_cluster
+    label: iron-sulfur cluster
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: ssfm1
+    label: SsfM1 O-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:D6MSX0
+    grounding_status: GROUNDED
+  - node_id: ssfm1_o_methylated_intermediate
+    label: SsfM1 O-methylated SF2575 intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: ssfm1_o_methylation_substrate
+    predicate: is O-methylated by
+    object: ssfm1
+    notes: MITE represents SsfM1 as the O-methyltransferase for a C12a hydroxyl group
+      on an SF2575-pathway tetracycline intermediate; exact local records are absent
+      for the submitted substrate and product structures.
+    evidence:
+    - reference: DOI:10.1002/anie.201205426
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Complementation of ΔssfM1 and ΔssfM2 strains with plasmid-borne copies
+        of ssfM1 and ssfM2, respectively, each restored the production of 2
+      notes: Wang et al. inactivated ssfM1 in a Streptomyces lividans K4-114 heterologous
+        host carrying the SF2575 ssf cluster, isolated the C12a-hydroxyl analog TAN-1518A
+        among three desmethyl products, restored SF2575 production by complementation
+        with ssfM1, and assigned SsfM1 as the C12a O-methyltransferase.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000023
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000023 is active, links SsfM1 to UniProtKB:D6MSX0, GenPept ADE34508.1
+        and MIBiG BGC0000269, lists SAM and FeS as cofactors, and represents a knock-out-supported
+        O-methylation reaction in the SF2575 biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000269.5/BGC0000269.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000023: Methylation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000269.5 places ssfM1/ADE34508.1 inside the active Streptomyces
+        sp. SF2575 biosynthetic gene cluster as a biosynthetic-additional locus with
+        a 100% identity MITE0000023 methylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/D6MSX0
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=ssfM1
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:D6MSX0 resolves as a 332 aa Streptomyces sp. SF2575
+        SsfM1 entry and cross-references EMBL GQ409537 protein ADE34508.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADE34508.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: O-methyltransferase
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein ADE34508.1 is the 332 aa Streptomyces sp. SF2575 SsfM1 O-methyltransferase
+        encoded by ssfM1 at complement(GQ409537.1:31776..32774).
+  - subject: sam
+    predicate: supplies a methyl group to
+    object: ssfm1
+    notes: MITE lists SAM as an SsfM1 organic cofactor and UniProt annotates D6MSX0
+      as a SAM-binding methyltransferase-family protein.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000023
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000023 is active, links SsfM1 to UniProtKB:D6MSX0, GenPept ADE34508.1
+        and MIBiG BGC0000269, lists SAM and FeS as cofactors, and represents a knock-out-supported
+        O-methylation reaction in the SF2575 biosynthetic pathway.
+    - reference: https://www.uniprot.org/uniprotkb/D6MSX0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:D6MSX0 contains class I-like SAM-binding methyltransferase
+        family annotations on the current Streptomyces sp. SF2575 SsfM1 entry.
+  - subject: iron_sulfur_cluster
+    predicate: serves as cofactor for
+    object: ssfm1
+    notes: MITE lists FeS as an SsfM1 inorganic cofactor without specifying the iron-sulfur
+      cluster geometry.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000023
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000023 is active, links SsfM1 to UniProtKB:D6MSX0, GenPept ADE34508.1
+        and MIBiG BGC0000269, lists SAM and FeS as cofactors, and represents a knock-out-supported
+        O-methylation reaction in the SF2575 biosynthetic pathway.
+  - subject: ssfm1
+    predicate: forms
+    object: ssfm1_o_methylated_intermediate
+    notes: The MITE reaction product methylates an oxygen atom of the submitted SF2575-pathway
+      tetracycline substrate structure.
+    evidence:
+    - reference: DOI:10.1002/anie.201205426
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Complementation of ΔssfM1 and ΔssfM2 strains with plasmid-borne copies
+        of ssfM1 and ssfM2, respectively, each restored the production of 2
+      notes: Wang et al. inactivated ssfM1 in a Streptomyces lividans K4-114 heterologous
+        host carrying the SF2575 ssf cluster, isolated the C12a-hydroxyl analog TAN-1518A
+        among three desmethyl products, restored SF2575 production by complementation
+        with ssfM1, and assigned SsfM1 as the C12a O-methyltransferase.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000023
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000023 is active, links SsfM1 to UniProtKB:D6MSX0, GenPept ADE34508.1
+        and MIBiG BGC0000269, lists SAM and FeS as cofactors, and represents a knock-out-supported
+        O-methylation reaction in the SF2575 biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000269.5/BGC0000269.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000023: Methylation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000269.5 places ssfM1/ADE34508.1 inside the active Streptomyces
+        sp. SF2575 biosynthetic gene cluster as a biosynthetic-additional locus with
+        a 100% identity MITE0000023 methylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/D6MSX0
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=ssfM1
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:D6MSX0 resolves as a 332 aa Streptomyces sp. SF2575
+        SsfM1 entry and cross-references EMBL GQ409537 protein ADE34508.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADE34508.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: O-methyltransferase
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein ADE34508.1 is the 332 aa Streptomyces sp. SF2575 SsfM1 O-methyltransferase
+        encoded by ssfM1 at complement(GQ409537.1:31776..32774).
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -352,4 +488,12 @@ curation_history:
     C-methylation toward 6-methylpretetramide in SF2575 biosynthesis; grounded SsfM4
     to UniProtKB:D6MSU6, SAM to CHEBI:59789 and 6-methylpretetramide to CHEBI:27879,
     and left the generic FeS cofactor and the MITE substrate structure ungrounded.
+  llm_assisted: true
+- timestamp: '2026-10-02T18:00:17Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Streptomyces sp. SF2575 SsfM1 SAM-dependent
+    C12a O-methylation in SF2575 biosynthesis; grounded SsfM1 to UniProtKB:D6MSX0
+    and SAM to CHEBI:59789, and left the generic FeS cofactor plus the MITE substrate
+    and product structures ungrounded.
   llm_assisted: true
