@@ -218,7 +218,8 @@ causal_graphs:
   - node_id: mtm_dk
     label: mithramycin DK
     node_type: PRECURSOR
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: CHEBI:81906
   - node_id: mtmw
     label: MtmW ketoreductase
     node_type: ENZYME
@@ -607,6 +608,148 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein CAK50790.1 is the Streptomyces argillaceus C-methyltransferase
         encoded by mtmMII and cross-referenced to UniProtKB:Q194P8.
+- graph_id: mithramycin-mtmoiv-baeyer-villiger-oxidation
+  scope: BIOSYNTHESIS
+  description: Streptomyces argillaceus MtmOIV-catalyzed FAD-dependent oxidative opening
+    and decarboxylation of premithramycin B toward mithramycin DK.
+  nodes:
+  - node_id: premithramycin_b
+    label: premithramycin B
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: fad
+    label: FAD
+    node_type: PRECURSOR
+    identifier: CHEBI:16238
+    grounding_status: GROUNDED
+  - node_id: mtmoiv
+    label: MtmOIV Baeyer-Villiger monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:Q194P4
+    grounding_status: GROUNDED
+  - node_id: mtm_dk
+    label: mithramycin DK
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:81906
+  edges:
+  - subject: premithramycin_b
+    predicate: is oxidatively opened and decarboxylated by
+    object: mtmoiv
+    notes: Purified MtmOIV uses premithramycin B as a late-pathway substrate and MITE
+      represents the entry as sequential oxidation and decarboxylation reactions.
+    evidence:
+    - reference: DOI:10.1021/ja055750t
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Characterization of kinetics and products of the Baeyer-Villiger oxygenase
+        MtmOIV
+      notes: Gibson et al. assayed purified His6-tagged MtmOIV with premithramycin
+        B, characterized the resulting intermediates and products, and showed that
+        the Streptomyces argillaceus enzyme initiates late mithramycin oxidative ring
+        cleavage as a Baeyer-Villiger monooxygenase.
+    - reference: DOI:10.1002/anie.201910241
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MtmOIV and MtmW catalyze the final two reactions
+      notes: Wheeler et al. resolved the late handoff in which MtmOIV performs Baeyer-Villiger
+        opening of premithramycin B to mithramycin DK before MtmW reduces that side
+        chain to iso-mithramycin.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000016
+      evidence_type: DATABASE_ASSERTION
+      snippet: In vitro assay
+      retrieved_on: '2026-10-02'
+      notes: MITE0000016 is active, links MtmOIV to UniProtKB:Q194P4, GenPept CAK50794.2
+        and MIBiG BGC0000247, lists FAD as an organic cofactor, and represents three
+        in vitro-supported MtmOIV oxidation and decarboxylation reactions in the mithramycin
+        biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000016: Decarboxylation, Oxidation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000247.5 places mtmOIV/CAK50794.2 inside the active Streptomyces
+        argillaceus mithramycin biosynthetic gene cluster as an oxygenase locus with
+        a 100% identity MITE0000016 decarboxylation/oxidation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q194P4
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mtmOIV
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194P4 resolves as a 533 aa Streptomyces argillaceus
+        mtmOIV oxygenase entry, cross-references EMBL X89899 protein CAK50794.2 and
+        FAD-bound PDB structures, and is sequence-identical to GenPept CAK50794.2.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAK50794.2
+      evidence_type: DATABASE_ASSERTION
+      snippet: UniProtKB/TrEMBL:Q194P4
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAK50794.2 is the 533 aa Streptomyces argillaceus protein
+        encoded by mtmOIV and cross-referenced to UniProtKB:Q194P4.
+  - subject: fad
+    predicate: serves as cofactor for
+    object: mtmoiv
+    notes: MITE lists FAD as an MtmOIV organic cofactor and UniProt maps Q194P4 to
+      FAD-bound PDB structures.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000016
+      evidence_type: DATABASE_ASSERTION
+      snippet: In vitro assay
+      retrieved_on: '2026-10-02'
+      notes: MITE0000016 is active, links MtmOIV to UniProtKB:Q194P4, GenPept CAK50794.2
+        and MIBiG BGC0000247, lists FAD as an organic cofactor, and represents three
+        in vitro-supported MtmOIV oxidation and decarboxylation reactions in the mithramycin
+        biosynthetic pathway.
+    - reference: https://www.uniprot.org/uniprotkb/Q194P4
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mtmOIV
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194P4 resolves as a 533 aa Streptomyces argillaceus
+        mtmOIV oxygenase entry, cross-references EMBL X89899 protein CAK50794.2 and
+        FAD-bound PDB structures, and is sequence-identical to GenPept CAK50794.2.
+  - subject: mtmoiv
+    predicate: forms
+    object: mtm_dk
+    notes: MtmOIV generates the mithramycin DK side chain that is subsequently reduced
+      by MtmW in the final enzymatic mithramycin step.
+    evidence:
+    - reference: DOI:10.1021/ja055750t
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Characterization of kinetics and products of the Baeyer-Villiger oxygenase
+        MtmOIV
+      notes: Gibson et al. assayed purified His6-tagged MtmOIV with premithramycin
+        B, characterized the resulting intermediates and products, and showed that
+        the Streptomyces argillaceus enzyme initiates late mithramycin oxidative ring
+        cleavage as a Baeyer-Villiger monooxygenase.
+    - reference: DOI:10.1002/anie.201910241
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MtmOIV and MtmW catalyze the final two reactions
+      notes: Wheeler et al. resolved the late handoff in which MtmOIV performs Baeyer-Villiger
+        opening of premithramycin B to mithramycin DK before MtmW reduces that side
+        chain to iso-mithramycin.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000016
+      evidence_type: DATABASE_ASSERTION
+      snippet: In vitro assay
+      retrieved_on: '2026-10-02'
+      notes: MITE0000016 is active, links MtmOIV to UniProtKB:Q194P4, GenPept CAK50794.2
+        and MIBiG BGC0000247, lists FAD as an organic cofactor, and represents three
+        in vitro-supported MtmOIV oxidation and decarboxylation reactions in the mithramycin
+        biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000016: Decarboxylation, Oxidation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000247.5 places mtmOIV/CAK50794.2 inside the active Streptomyces
+        argillaceus mithramycin biosynthetic gene cluster as an oxygenase locus with
+        a 100% identity MITE0000016 decarboxylation/oxidation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q194P4
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mtmOIV
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194P4 resolves as a 533 aa Streptomyces argillaceus
+        mtmOIV oxygenase entry, cross-references EMBL X89899 protein CAK50794.2 and
+        FAD-bound PDB structures, and is sequence-identical to GenPept CAK50794.2.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAK50794.2
+      evidence_type: DATABASE_ASSERTION
+      snippet: UniProtKB/TrEMBL:Q194P4
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAK50794.2 is the 533 aa Streptomyces argillaceus protein
+        encoded by mtmOIV and cross-referenced to UniProtKB:Q194P4.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -636,4 +779,11 @@ curation_history:
     in mithramycin biosynthesis; grounded MtmMII to UniProtKB:Q194P8 and SAM to CHEBI:59789
     and left the generic FeS cofactor plus the MITE substrate and product structures
     ungrounded.
+  llm_assisted: true
+- timestamp: '2026-10-02T15:09:02Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Streptomyces argillaceus MtmOIV Baeyer-Villiger
+    oxidation in mithramycin biosynthesis; grounded MtmOIV to UniProtKB:Q194P4, FAD
+    to CHEBI:16238 and mithramycin DK to CHEBI:81906 and left premithramycin B ungrounded.
   llm_assisted: true
