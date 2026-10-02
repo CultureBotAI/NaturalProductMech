@@ -155,6 +155,13 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td class="mono">DOI:10.1021/bi1019786</td>
 </tr>
 <tr>
+  <td>20</td>
+  <td>Pentalenolactone F synthase<br><span class="mono">UniProtKB:E3VWI8</span></td>
+  <td class="mono">RHEA:34579</td>
+  <td class="mono">CHEBI:70787 + CHEBI:16810 + CHEBI:15379 &rarr; CHEBI:70789 + CHEBI:30031 + CHEBI:16526 + CHEBI:15377</td>
+  <td class="mono">DOI:10.1021/bi1019786</td>
+</tr>
+<tr>
   <td>30</td>
   <td>Pentalenolactone synthase<br><span class="mono">UniProtKB:E3VWI3</span></td>
   <td class="mono">RHEA:34575</td>
@@ -162,7 +169,7 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td class="mono">DOI:10.1021/ja111279h</td>
 </tr>
 </table></div>
-<p class="sub">Step 10: Streptomyces arenae PntE catalyzes the flavin-dependent Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenate to pentalenolactone D; the intervening PntD conversion from pentalenolactone D to pentalenolactone F remains uncurated.</p><p class="sub">Step 30: Streptomyces arenae PntM/CYP161C2 catalyzes the terminal oxidative rearrangement of pentalenolactone F to pentalenolactone; upstream PntE-catalyzed pentalenolactone D formation is represented separately, but the intervening PntD conversion from pentalenolactone D to pentalenolactone F remains uncurated.</p>
+<p class="sub">Step 10: Streptomyces arenae PntE catalyzes the flavin-dependent Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenate to pentalenolactone D; PntD-catalyzed formation of pentalenolactone F is represented separately.</p><p class="sub">Step 20: Streptomyces arenae PntD catalyzes 2-oxoglutarate- and Fe(2+)-dependent oxidation of pentalenolactone D to pentalenolactone F; RHEA:34579 grounds the full net reaction to the pH 7.3 pentalenolactone F conjugate base with two 2-oxoglutarate/O2 equivalents per pentalenolactone F.</p><p class="sub">Step 30: Streptomyces arenae PntM/CYP161C2 catalyzes the terminal oxidative rearrangement of pentalenolactone F to pentalenolactone; upstream PntE and PntD steps are represented separately.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
 <p class="sub">Streptomyces arenae PntM-catalyzed terminal oxidative rearrangement of pentalenolactone F to pentalenolactone.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
@@ -199,6 +206,26 @@ by the corpus tests.</p>
   <td>pentalenolactone D</td>
   <td></td>
   <td class="mono">DOI:10.1021/bi1019786<br>https://mite.lisc.univie.ac.at/repository/MITE0000057<br>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk<br>https://www.uniprot.org/uniprotkb/E3VWI7<br>https://www.ncbi.nlm.nih.gov/protein/ADO85575.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Streptomyces arenae PntD-catalyzed oxidation of pentalenolactone D to pentalenolactone F.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>pentalenolactone D</td>
+  <td>is oxidized by</td>
+  <td>PntD</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/bi1019786<br>https://mite.lisc.univie.ac.at/repository/MITE0000058<br>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk<br>https://www.uniprot.org/uniprotkb/E3VWI8<br>https://www.ncbi.nlm.nih.gov/protein/ADO85576.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+<tr>
+  <td>PntD</td>
+  <td>forms</td>
+  <td>pentalenolactone F(1-)</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/bi1019786<br>https://mite.lisc.univie.ac.at/repository/MITE0000058<br>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk<br>https://www.uniprot.org/uniprotkb/E3VWI8<br>https://www.ncbi.nlm.nih.gov/protein/ADO85576.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
