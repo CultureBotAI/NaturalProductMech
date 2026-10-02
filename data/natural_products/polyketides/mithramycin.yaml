@@ -328,6 +328,138 @@ causal_graphs:
         mithramycin steps: Baeyer-Villiger opening of premithramycin B to mithramycin
         DK followed by MtmW reduction to iso-mithramycin, which then undergoes Mg2+-catalyzed
         nonenzymatic isomerization to mithramycin.'
+- graph_id: mithramycin-mtmmi-o-methylation
+  scope: BIOSYNTHESIS
+  description: Streptomyces argillaceus MtmMI-catalyzed SAM-dependent 4-O-methylation
+    of 4-DPMC to premithramycinone in mithramycin biosynthesis.
+  nodes:
+  - node_id: 4_dpmc
+    label: 4-demethylpremithramycinone
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: sam
+    label: S-adenosyl-L-methionine
+    node_type: PRECURSOR
+    identifier: CHEBI:59789
+    grounding_status: GROUNDED
+  - node_id: mtmmi
+    label: MtmMI O-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:Q194P7
+    grounding_status: GROUNDED
+  - node_id: premithramycinone
+    label: premithramycinone
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: 4_dpmc
+    predicate: is 4-O-methylated by
+    object: mtmmi
+    notes: MtmMI transfers a SAM-derived methyl group to the C-4 hydroxyl of 4-DPMC
+      in the mithramycin polyketide pathway.
+    evidence:
+    - reference: DOI:10.1074/jbc.275.5.3065
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: transfer of tritium from [(3)H]S-adenosylmethionine into 4-DPMC
+      notes: Lozano et al. insertionally inactivated mtmMI and mtmMII and assayed
+        Streptomyces lividans extracts expressing each gene. Extracts from MJM1 expressing
+        mtmMI transferred tritium from [(3)H]S-adenosylmethionine into 4-DPMC, supporting
+        MtmMI as the SAM-dependent 4-O-methyltransferase that converts 4-DPMC toward
+        premithramycinone.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000014
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000014 is active and links MtmMI to UniProtKB:Q194P7, GenPept CAK50791.1,
+        MIBiG BGC0000247, SAM and C-4-O methylation of 4-DPMC to PMC in the mithramycin
+        pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000247.5 places mtmMI/CAK50791.1 inside the active Streptomyces
+        argillaceus mithramycin biosynthetic gene cluster as an O-methyltransferase
+        locus.
+    - reference: https://www.uniprot.org/uniprotkb/Q194P7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194P7 resolves as a 345 aa Streptomyces argillaceus
+        mtmMI O-methyltransferase entry and cross-references EMBL X89899 protein CAK50791.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAK50791.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAK50791.1 is the Streptomyces argillaceus O-methyltransferase
+        encoded by mtmMI and cross-referenced to UniProtKB:Q194P7.
+  - subject: sam
+    predicate: supplies a methyl group to
+    object: mtmmi
+    notes: The mtmMI heterologous extract assay transferred tritium from radiolabeled
+      S-adenosylmethionine into 4-DPMC.
+    evidence:
+    - reference: DOI:10.1074/jbc.275.5.3065
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: transfer of tritium from [(3)H]S-adenosylmethionine into 4-DPMC
+      notes: Lozano et al. insertionally inactivated mtmMI and mtmMII and assayed
+        Streptomyces lividans extracts expressing each gene. Extracts from MJM1 expressing
+        mtmMI transferred tritium from [(3)H]S-adenosylmethionine into 4-DPMC, supporting
+        MtmMI as the SAM-dependent 4-O-methyltransferase that converts 4-DPMC toward
+        premithramycinone.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000014
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000014 is active and links MtmMI to UniProtKB:Q194P7, GenPept CAK50791.1,
+        MIBiG BGC0000247, SAM and C-4-O methylation of 4-DPMC to PMC in the mithramycin
+        pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000247.5 places mtmMI/CAK50791.1 inside the active Streptomyces
+        argillaceus mithramycin biosynthetic gene cluster as an O-methyltransferase
+        locus.
+    - reference: https://www.uniprot.org/uniprotkb/Q194P7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194P7 resolves as a 345 aa Streptomyces argillaceus
+        mtmMI O-methyltransferase entry and cross-references EMBL X89899 protein CAK50791.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAK50791.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAK50791.1 is the Streptomyces argillaceus O-methyltransferase
+        encoded by mtmMI and cross-referenced to UniProtKB:Q194P7.
+  - subject: mtmmi
+    predicate: forms
+    object: premithramycinone
+    notes: MITE represents the MtmMI O-methylation as the conversion of 4-DPMC into
+      PMC.
+    evidence:
+    - reference: DOI:10.1074/jbc.275.5.3065
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: transfer of tritium from [(3)H]S-adenosylmethionine into 4-DPMC
+      notes: Lozano et al. insertionally inactivated mtmMI and mtmMII and assayed
+        Streptomyces lividans extracts expressing each gene. Extracts from MJM1 expressing
+        mtmMI transferred tritium from [(3)H]S-adenosylmethionine into 4-DPMC, supporting
+        MtmMI as the SAM-dependent 4-O-methyltransferase that converts 4-DPMC toward
+        premithramycinone.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000014
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000014 is active and links MtmMI to UniProtKB:Q194P7, GenPept CAK50791.1,
+        MIBiG BGC0000247, SAM and C-4-O methylation of 4-DPMC to PMC in the mithramycin
+        pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000247.5 places mtmMI/CAK50791.1 inside the active Streptomyces
+        argillaceus mithramycin biosynthetic gene cluster as an O-methyltransferase
+        locus.
+    - reference: https://www.uniprot.org/uniprotkb/Q194P7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194P7 resolves as a 345 aa Streptomyces argillaceus
+        mtmMI O-methyltransferase entry and cross-references EMBL X89899 protein CAK50791.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAK50791.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAK50791.1 is the Streptomyces argillaceus O-methyltransferase
+        encoded by mtmMI and cross-referenced to UniProtKB:Q194P7.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -342,4 +474,11 @@ curation_history:
   action: RECORD_CURATED
   changes: Added the evidence-backed MtmW late mithramycin biosynthetic pathway step
     and partial BIOSYNTHESIS causal graph grounded to UniProtKB:Q194Q1.
+  llm_assisted: true
+- timestamp: '2026-10-02T10:15:34Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Streptomyces argillaceus MtmMI 4-O-methylation
+    in mithramycin biosynthesis; grounded MtmMI to UniProtKB:Q194P7 and left 4-DPMC
+    and premithramycinone ungrounded because exact local corpus records are absent.
   llm_assisted: true
