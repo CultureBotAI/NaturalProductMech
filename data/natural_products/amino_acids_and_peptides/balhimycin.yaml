@@ -212,6 +212,252 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein CAA76549.1 is the Amycolatopsis balhimycina DSM 5908 oxyC
         P450 monooxygenase linked to UniProtKB/TrEMBL O87675.
+- graph_id: balhimycin-bhaa-chlorination
+  scope: BIOSYNTHESIS
+  description: Partial Amycolatopsis balhimycina balhimycin biosynthesis graph for
+    BhaA-catalyzed FAD-dependent beta-hydroxytyrosine chlorination during nonribosomal
+    peptide assembly.
+  nodes:
+  - node_id: module2_bht_substrate
+    label: module 2 beta-hydroxytyrosine substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: module2_chlorinated_bht_intermediate
+    label: module 2 chlorinated beta-hydroxytyrosine intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: module6_bht_substrate
+    label: module 6 beta-hydroxytyrosine substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: module6_chlorinated_bht_intermediate
+    label: module 6 chlorinated beta-hydroxytyrosine intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: fad
+    label: FAD
+    node_type: PRECURSOR
+    identifier: CHEBI:16238
+    grounding_status: GROUNDED
+  - node_id: bhaa
+    label: BhaA FAD-dependent halogenase
+    node_type: ENZYME
+    identifier: UniProtKB:O87676
+    grounding_status: GROUNDED
+  edges:
+  - subject: module2_bht_substrate
+    predicate: is chlorinated by
+    object: bhaa
+    notes: MITE represents BhaA as chlorinating the beta-hydroxytyrosine residue of
+      a balhimycin precursor, probably while the substrate is bound to the module
+      2 PCP domain of the NRPS.
+    evidence:
+    - reference: DOI:10.1016/s1074-5521(02)00101-1
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: accumulated glycosylated but nonchlorinated balhimycin variants
+      notes: Puk et al. constructed an in-frame bhaA deletion mutant in the balhimycin
+        producer and showed that deleting BhaA blocks chlorination while retaining
+        production of nonchlorinated glycosylated balhimycin variants.
+    - reference: DOI:10.1128/JB.186.18.6093-6100.2004
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Puk et al. showed by precursor feeding to an oxyD mutant that balhimycin
+        chlorination occurs after free beta-hydroxytyrosine, most likely during heptapeptide
+        assembly.
+    - reference: DOI:10.1039/C7SC00460E
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Kittila et al. combined in vivo and in vitro assays of glycopeptide antibiotic
+        halogenases and showed that halogenation acts on amino acid residues bound
+        to nonribosomal peptide synthetase PCP domains rather than on free amino acids
+        or PCP-bound peptides.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000028
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000028 is active, assigns BhaA to two knock-out-supported halogenation
+        rows for balhimycin-precursor beta-hydroxytyrosine chlorination at NRPS modules
+        2 and 6, lists FAD as an organic cofactor, and links BhaA to UniProtKB:O87676,
+        GenPept CAA76550.1 and MIBiG BGC0000311.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000311.6/BGC0000311.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000028: Halogenation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000311.6 places bhaA/CAA76550.1 inside the active Amycolatopsis
+        balhimycina DSM 5908 balhimycin biosynthetic gene cluster as a flavin-dependent
+        tyrosine-like Hpg halogenase locus with a MITE0000028 halogenation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/O87676
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=bhaA
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:O87676 resolves as a 491 aa Amycolatopsis balhimycina
+        bhaA halogenase entry, cross-references EMBL Y16952 protein CAA76550.1, and
+        carries flavin halogenase domain cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAA76550.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: GOA:O87676
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAA76550.1 is the Amycolatopsis balhimycina DSM 5908 bhaA
+        halogenase encoded by Y16952.3:38634..40109 and linked to GOA:O87676.
+  - subject: bhaa
+    predicate: forms
+    object: module2_chlorinated_bht_intermediate
+    notes: The MITE module 2 product adds chlorine to the beta-hydroxytyrosine aryl
+      group of a balhimycin-pathway precursor; the exact substrate and product structures
+      are absent from local records.
+    evidence:
+    - reference: DOI:10.1016/s1074-5521(02)00101-1
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: accumulated glycosylated but nonchlorinated balhimycin variants
+      notes: Puk et al. constructed an in-frame bhaA deletion mutant in the balhimycin
+        producer and showed that deleting BhaA blocks chlorination while retaining
+        production of nonchlorinated glycosylated balhimycin variants.
+    - reference: DOI:10.1128/JB.186.18.6093-6100.2004
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Puk et al. showed by precursor feeding to an oxyD mutant that balhimycin
+        chlorination occurs after free beta-hydroxytyrosine, most likely during heptapeptide
+        assembly.
+    - reference: DOI:10.1039/C7SC00460E
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Kittila et al. combined in vivo and in vitro assays of glycopeptide antibiotic
+        halogenases and showed that halogenation acts on amino acid residues bound
+        to nonribosomal peptide synthetase PCP domains rather than on free amino acids
+        or PCP-bound peptides.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000028
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000028 is active, assigns BhaA to two knock-out-supported halogenation
+        rows for balhimycin-precursor beta-hydroxytyrosine chlorination at NRPS modules
+        2 and 6, lists FAD as an organic cofactor, and links BhaA to UniProtKB:O87676,
+        GenPept CAA76550.1 and MIBiG BGC0000311.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000311.6/BGC0000311.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000028: Halogenation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000311.6 places bhaA/CAA76550.1 inside the active Amycolatopsis
+        balhimycina DSM 5908 balhimycin biosynthetic gene cluster as a flavin-dependent
+        tyrosine-like Hpg halogenase locus with a MITE0000028 halogenation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/O87676
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=bhaA
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:O87676 resolves as a 491 aa Amycolatopsis balhimycina
+        bhaA halogenase entry, cross-references EMBL Y16952 protein CAA76550.1, and
+        carries flavin halogenase domain cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAA76550.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: GOA:O87676
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAA76550.1 is the Amycolatopsis balhimycina DSM 5908 bhaA
+        halogenase encoded by Y16952.3:38634..40109 and linked to GOA:O87676.
+  - subject: module6_bht_substrate
+    predicate: is chlorinated by
+    object: bhaa
+    notes: MITE represents a second BhaA reaction that chlorinates the beta-hydroxytyrosine
+      residue of a balhimycin precursor, probably while the substrate is bound to
+      the module 6 PCP domain.
+    evidence:
+    - reference: DOI:10.1016/s1074-5521(02)00101-1
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: accumulated glycosylated but nonchlorinated balhimycin variants
+      notes: Puk et al. constructed an in-frame bhaA deletion mutant in the balhimycin
+        producer and showed that deleting BhaA blocks chlorination while retaining
+        production of nonchlorinated glycosylated balhimycin variants.
+    - reference: DOI:10.1128/JB.186.18.6093-6100.2004
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Puk et al. showed by precursor feeding to an oxyD mutant that balhimycin
+        chlorination occurs after free beta-hydroxytyrosine, most likely during heptapeptide
+        assembly.
+    - reference: DOI:10.1039/C7SC00460E
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Kittila et al. combined in vivo and in vitro assays of glycopeptide antibiotic
+        halogenases and showed that halogenation acts on amino acid residues bound
+        to nonribosomal peptide synthetase PCP domains rather than on free amino acids
+        or PCP-bound peptides.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000028
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000028 is active, assigns BhaA to two knock-out-supported halogenation
+        rows for balhimycin-precursor beta-hydroxytyrosine chlorination at NRPS modules
+        2 and 6, lists FAD as an organic cofactor, and links BhaA to UniProtKB:O87676,
+        GenPept CAA76550.1 and MIBiG BGC0000311.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000311.6/BGC0000311.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000028: Halogenation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000311.6 places bhaA/CAA76550.1 inside the active Amycolatopsis
+        balhimycina DSM 5908 balhimycin biosynthetic gene cluster as a flavin-dependent
+        tyrosine-like Hpg halogenase locus with a MITE0000028 halogenation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/O87676
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=bhaA
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:O87676 resolves as a 491 aa Amycolatopsis balhimycina
+        bhaA halogenase entry, cross-references EMBL Y16952 protein CAA76550.1, and
+        carries flavin halogenase domain cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAA76550.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: GOA:O87676
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAA76550.1 is the Amycolatopsis balhimycina DSM 5908 bhaA
+        halogenase encoded by Y16952.3:38634..40109 and linked to GOA:O87676.
+  - subject: bhaa
+    predicate: forms
+    object: module6_chlorinated_bht_intermediate
+    notes: The MITE module 6 product adds the second chlorine atom to a balhimycin-pathway
+      precursor; the exact substrate and product structures are absent from local
+      records.
+    evidence:
+    - reference: DOI:10.1016/s1074-5521(02)00101-1
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: accumulated glycosylated but nonchlorinated balhimycin variants
+      notes: Puk et al. constructed an in-frame bhaA deletion mutant in the balhimycin
+        producer and showed that deleting BhaA blocks chlorination while retaining
+        production of nonchlorinated glycosylated balhimycin variants.
+    - reference: DOI:10.1128/JB.186.18.6093-6100.2004
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Puk et al. showed by precursor feeding to an oxyD mutant that balhimycin
+        chlorination occurs after free beta-hydroxytyrosine, most likely during heptapeptide
+        assembly.
+    - reference: DOI:10.1039/C7SC00460E
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Kittila et al. combined in vivo and in vitro assays of glycopeptide antibiotic
+        halogenases and showed that halogenation acts on amino acid residues bound
+        to nonribosomal peptide synthetase PCP domains rather than on free amino acids
+        or PCP-bound peptides.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000028
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000028 is active, assigns BhaA to two knock-out-supported halogenation
+        rows for balhimycin-precursor beta-hydroxytyrosine chlorination at NRPS modules
+        2 and 6, lists FAD as an organic cofactor, and links BhaA to UniProtKB:O87676,
+        GenPept CAA76550.1 and MIBiG BGC0000311.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000311.6/BGC0000311.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000028: Halogenation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000311.6 places bhaA/CAA76550.1 inside the active Amycolatopsis
+        balhimycina DSM 5908 balhimycin biosynthetic gene cluster as a flavin-dependent
+        tyrosine-like Hpg halogenase locus with a MITE0000028 halogenation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/O87676
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=bhaA
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:O87676 resolves as a 491 aa Amycolatopsis balhimycina
+        bhaA halogenase entry, cross-references EMBL Y16952 protein CAA76550.1, and
+        carries flavin halogenase domain cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAA76550.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: GOA:O87676
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAA76550.1 is the Amycolatopsis balhimycina DSM 5908 bhaA
+        halogenase encoded by Y16952.3:38634..40109 and linked to GOA:O87676.
+  - subject: fad
+    predicate: serves as cofactor for
+    object: bhaa
+    notes: MITE lists FAD as BhaA's organic cofactor.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000028
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000028 lists FAD as BhaA's organic cofactor.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -227,4 +473,12 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Amycolatopsis balhimycina OxyC cytochrome
     P450 oxidative cyclization in balhimycin biosynthesis; grounded OxyC to UniProtKB:O87675
     and heme to CHEBI:30413, and left the MITE substrate and product structures ungrounded.
+  llm_assisted: true
+- timestamp: '2026-10-02T19:17:12Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Amycolatopsis balhimycina BhaA FAD-dependent
+    beta-hydroxytyrosine chlorination in balhimycin biosynthesis; grounded BhaA to
+    UniProtKB:O87676 and FAD to CHEBI:16238, and left the MITE module 2 and module
+    6 substrate and product structures ungrounded.
   llm_assisted: true
