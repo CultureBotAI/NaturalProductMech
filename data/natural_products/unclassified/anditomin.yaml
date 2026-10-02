@@ -904,6 +904,97 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept BAP81859.1 is the Aspergillus stellatus AndE protein encoded
         on complement(AB981314.1:5331..6894).
+- graph_id: anditomin-andb-cyclization
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndB-catalyzed cyclization of epoxyfarnesyl-DHDMP
+    to preandiloid A.
+  nodes:
+  - node_id: epoxyfarnesyl_dhdmp
+    label: epoxyfarnesyl-DHDMP
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91820106
+    grounding_status: GROUNDED
+  - node_id: andb
+    label: AndB terpene cyclase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPD8
+    grounding_status: GROUNDED
+  - node_id: preandiloid_a
+    label: preandiloid A
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91819981
+    grounding_status: GROUNDED
+  edges:
+  - subject: epoxyfarnesyl_dhdmp
+    predicate: is cyclized by
+    object: andb
+    notes: AndB opens the epoxide ring and cyclizes the farnesyl moiety of epoxyfarnesyl-DHDMP
+      to form preandiloid A before AndC oxidation.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000354
+        and UniProtKB:A0A097ZPD8 both cite this paper for AndB cyclization of epoxyfarnesyl-DHDMP
+        to preandiloid A.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000354
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Converts epoxyfarnesyl-DHDMP to preandiloid A.
+      notes: MITE0000354 is active and links AndB to UniProtKB:A0A097ZPD8, GenPept
+        BAP81856.1 and MIBiG BGC0002612 for heterologous-expression evidence of epoxyfarnesyl-DHDMP
+        cyclization to preandiloid A.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0002612.3 places BAP81856.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndB terpene cyclase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Reviewed UniProtKB:A0A097ZPD8 is the 236 aa Emericella variicolor, also
+        Aspergillus stellatus, terpene cyclase AndB entry and cross-references EMBL
+        AB981314 protein BAP81856.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81856.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI GenPept BAP81856.1 is the Aspergillus stellatus AndB protein encoded
+        on AB981314.1:1720..2222 and AB981314.1:2294..2501.
+  - subject: andb
+    predicate: forms
+    object: preandiloid_a
+    notes: MITE0000354 describes AndB-dependent conversion of epoxyfarnesyl-DHDMP
+      to preandiloid A.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000354
+        and UniProtKB:A0A097ZPD8 both cite this paper for AndB cyclization of epoxyfarnesyl-DHDMP
+        to preandiloid A.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000354
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Converts epoxyfarnesyl-DHDMP to preandiloid A.
+      notes: MITE0000354 is active and links AndB to UniProtKB:A0A097ZPD8, GenPept
+        BAP81856.1 and MIBiG BGC0002612 for heterologous-expression evidence of epoxyfarnesyl-DHDMP
+        cyclization to preandiloid A.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0002612.3 places BAP81856.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndB terpene cyclase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Reviewed UniProtKB:A0A097ZPD8 is the 236 aa Emericella variicolor, also
+        Aspergillus stellatus, terpene cyclase AndB entry and cross-references EMBL
+        AB981314 protein BAP81856.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81856.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI GenPept BAP81856.1 is the Aspergillus stellatus AndB protein encoded
+        on AB981314.1:1720..2222 and AB981314.1:2294..2501.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -975,4 +1066,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndE epoxidation
     of farnesyl-DHDMP to epoxyfarnesyl-DHDMP; grounded AndE to UniProtKB:A0A097ZPF7,
     farnesyl-DHDMP to pubchem.compound:91819848 and epoxyfarnesyl-DHDMP to pubchem.compound:91820106.
+  llm_assisted: true
+- timestamp: '2026-10-02T07:11:39Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndB cyclization
+    of epoxyfarnesyl-DHDMP to preandiloid A; grounded AndB to UniProtKB:A0A097ZPD8,
+    epoxyfarnesyl-DHDMP to pubchem.compound:91820106 and preandiloid A to pubchem.compound:91819981.
   llm_assisted: true
