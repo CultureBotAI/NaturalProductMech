@@ -88,6 +88,98 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-a29508a138
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: anditomin-andf-oxidative-rearrangement
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndF-catalyzed oxidative rearrangement of andilesin
+    C to anditomin.
+  nodes:
+  - node_id: andilesin_c
+    label: andilesin C
+    node_type: PRECURSOR
+    identifier: CHEBI:223334
+    grounding_status: GROUNDED
+  - node_id: andf
+    label: AndF dioxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPD9
+    grounding_status: GROUNDED
+  - node_id: anditomin
+    label: anditomin
+    node_type: COMPOUND
+    identifier: CHEBI:219836
+    grounding_status: GROUNDED
+  edges:
+  - subject: andilesin_c
+    predicate: is oxidatively rearranged by
+    object: andf
+    notes: AndF performs the terminal oxidative rearrangement that converts andilesin
+      C into anditomin.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Another dioxygenase, AndF, is also responsible for the structural complexification,
+        generating the end product anditomin by an oxidative rearrangement.
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and assigned AndF as the dioxygenase that oxidatively rearranges
+        the terminal andilesin intermediate to anditomin.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000361
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000361 is active and links AndF to UniProtKB:A0A097ZPD9, GenPept
+        BAP81860.1, MIBiG BGC0002612 and the in vitro conversion of andilesin C into
+        final anditomin by oxidative rearrangement.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81860.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndF 2OG-Fe(II)-dependent dioxygenase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPD9 is the 285 aa Emericella variicolor, also
+        Aspergillus stellatus, dioxygenase AndF entry and cross-references EMBL AB981314
+        protein BAP81860.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81860.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81860.1 is the Aspergillus stellatus AndF protein encoded
+        on AB981314.1:9234..10091.
+  - subject: andf
+    predicate: forms
+    object: anditomin
+    notes: The MITE reaction and PubMed abstract both describe anditomin as the final
+      product of the AndF-dependent oxidative rearrangement.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Another dioxygenase, AndF, is also responsible for the structural complexification,
+        generating the end product anditomin by an oxidative rearrangement.
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and assigned AndF as the dioxygenase that oxidatively rearranges
+        the terminal andilesin intermediate to anditomin.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000361
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000361 is active and links AndF to UniProtKB:A0A097ZPD9, GenPept
+        BAP81860.1, MIBiG BGC0002612 and the in vitro conversion of andilesin C into
+        final anditomin by oxidative rearrangement.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81860.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndF 2OG-Fe(II)-dependent dioxygenase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPD9 is the 285 aa Emericella variicolor, also
+        Aspergillus stellatus, dioxygenase AndF entry and cross-references EMBL AB981314
+        protein BAP81860.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81860.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81860.1 is the Aspergillus stellatus AndF protein encoded
+        on AB981314.1:9234..10091.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -97,3 +189,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-02T02:51:56Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndF oxidative
+    rearrangement of andilesin C to anditomin; grounded AndF to UniProtKB:A0A097ZPD9
+    and the andilesin C precursor to CHEBI:223334.
+  llm_assisted: true
