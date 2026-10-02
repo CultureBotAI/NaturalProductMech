@@ -331,6 +331,97 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept EED49872.1 is the Aspergillus flavus NRRL3357 putative O-methyltransferase
         encoded by AFLA_066940 on EQ963479.1.
+- graph_id: leporin-b-lepf-reduction
+  scope: BIOSYNTHESIS
+  description: Aspergillus flavus LepF-catalyzed reduction of ketone 3 to leporin
+    alcohol 4.
+  nodes:
+  - node_id: ketone_3
+    label: leporin ketone 3
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: lepf
+    label: LepF short-chain dehydrogenase/reductase
+    node_type: ENZYME
+    identifier: UniProtKB:B8NJH0
+    grounding_status: GROUNDED
+  - node_id: alcohol_4
+    label: leporin alcohol 4
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: ketone_3
+    predicate: is reduced by
+    object: lepf
+    notes: LepF reduces the ketone 3 intermediate formed by LepA, LepG and LepH to
+      the alcohol 4 intermediate that feeds the downstream LepI reaction.
+    evidence:
+    - reference: DOI:10.1038/nature23882
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: assayed in the presence of 3 and NADPH, which yielded a single product
+        4 corresponding to the reduced compound
+      notes: Ohashi et al. heterologously coexpressed LepF with LepA, LepG and LepH
+        in Aspergillus nidulans and assayed recombinant LepF from Saccharomyces cerevisiae
+        in vitro with ketone 3 plus NADPH; both experiments support LepF reducing
+        ketone 3 to alcohol 4.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000294
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000294 is active and links LepF to UniProtKB:B8NJH0, GenPept EED49869.1,
+        MIBiG BGC0001445, NADP and reduction of a ketone intermediate to a secondary
+        alcohol in the leporin biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001445.5/BGC0001445.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0001445.5 places EED49869.1 in the active Aspergillus flavus
+        NRRL3357 leporin B biosynthetic gene cluster as the AFLA_066910 conserved
+        hypothetical protein locus.
+    - reference: https://www.uniprot.org/uniprotkb/B8NJH0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Reviewed UniProtKB:B8NJH0 is the 361 aa Aspergillus flavus NRRL3357 oxidoreductase
+        LepF entry and cross-references EMBL EQ963479 protein EED49869.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EED49869.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI GenPept EED49869.1 is the Aspergillus flavus NRRL3357 conserved
+        hypothetical protein encoded by AFLA_066910 on EQ963479.1.
+  - subject: lepf
+    predicate: forms
+    object: alcohol_4
+    notes: MITE represents the LepF reduction as conversion of the leporin ketone
+      intermediate into the secondary alcohol.
+    evidence:
+    - reference: DOI:10.1038/nature23882
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: assayed in the presence of 3 and NADPH, which yielded a single product
+        4 corresponding to the reduced compound
+      notes: Ohashi et al. heterologously coexpressed LepF with LepA, LepG and LepH
+        in Aspergillus nidulans and assayed recombinant LepF from Saccharomyces cerevisiae
+        in vitro with ketone 3 plus NADPH; both experiments support LepF reducing
+        ketone 3 to alcohol 4.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000294
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000294 is active and links LepF to UniProtKB:B8NJH0, GenPept EED49869.1,
+        MIBiG BGC0001445, NADP and reduction of a ketone intermediate to a secondary
+        alcohol in the leporin biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001445.5/BGC0001445.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0001445.5 places EED49869.1 in the active Aspergillus flavus
+        NRRL3357 leporin B biosynthetic gene cluster as the AFLA_066910 conserved
+        hypothetical protein locus.
+    - reference: https://www.uniprot.org/uniprotkb/B8NJH0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Reviewed UniProtKB:B8NJH0 is the 361 aa Aspergillus flavus NRRL3357 oxidoreductase
+        LepF entry and cross-references EMBL EQ963479 protein EED49869.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EED49869.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI GenPept EED49869.1 is the Aspergillus flavus NRRL3357 conserved
+        hypothetical protein encoded by AFLA_066910 on EQ963479.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -354,4 +445,11 @@ curation_history:
     dehydration and hetero-Diels-Alder cyclization in leporin B biosynthesis; grounded
     LepI to UniProtKB:B8NJH3 and left alcohol 4, o-quinone methide 5 and leporin C
     ungrounded because exact local corpus records are absent.
+  llm_assisted: true
+- timestamp: '2026-10-02T09:47:27Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus flavus LepF reduction
+    in leporin B biosynthesis; grounded LepF to UniProtKB:B8NJH0 and left ketone 3
+    and alcohol 4 ungrounded because exact local corpus records are absent.
   llm_assisted: true
