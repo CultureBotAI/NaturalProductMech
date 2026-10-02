@@ -87,6 +87,128 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: xantholipin-xanh-chlorination
+  scope: BIOSYNTHESIS
+  description: Streptomyces flavogriseus XanH-catalyzed FAD-dependent chlorination
+    in xantholipin biosynthesis.
+  nodes:
+  - node_id: xanh_chlorination_substrate
+    label: XanH chlorination substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: fad
+    label: FAD
+    node_type: PRECURSOR
+    identifier: CHEBI:16238
+    grounding_status: GROUNDED
+  - node_id: xanh
+    label: XanH FAD-dependent halogenase
+    node_type: ENZYME
+    identifier: UniProtKB:I1SKW0
+    grounding_status: GROUNDED
+  - node_id: xanh_chlorinated_intermediate
+    label: XanH-chlorinated xantholipin intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: xanh_chlorination_substrate
+    predicate: is chlorinated by
+    object: xanh
+    notes: MITE represents XanH as the FAD halogenase for an in vitro chlorination
+      of a xantholipin-pathway intermediate; exact local records are absent for the
+      submitted substrate and product structures.
+    evidence:
+    - reference: DOI:10.1128/AEM.01225-20
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: a new peak could be detected in the reaction system of XanH
+      notes: Kong et al. purified recombinant XanH, assayed in vitro halogenation
+        with FAD, NADH and the compound 5 free-standing xantholipin intermediate,
+        and detected chlorinated product formation.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000024
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000024 is active, links XanH to UniProtKB:I1SKW0, GenPept ADE22292.1
+        and MIBiG BGC0000279, lists FAD as an organic cofactor, and represents an
+        in vitro-supported chlorination reaction in the xantholipin biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000279.5/BGC0000279.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000024: Halogenation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000279.5 places xanH/ADE22292.1 inside the active Streptomyces
+        flavogriseus xantholipin biosynthetic gene cluster as a biosynthetic-additional
+        flavin-dependent halogenase locus with a 100% identity MITE0000024 halogenation
+        annotation.
+    - reference: https://www.uniprot.org/uniprotkb/I1SKW0
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=xanH
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:I1SKW0 resolves as a 471 aa Streptomyces flavogriseus
+        xanH entry and cross-references EMBL GQ421798 protein ADE22292.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADE22292.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: putative non-heme halogenase
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein ADE22292.1 is the Streptomyces flavogriseus xanH putative
+        non-heme halogenase encoded at GQ421798.1:22057..23472.
+  - subject: fad
+    predicate: serves as cofactor for
+    object: xanh
+    notes: MITE lists FAD as an organic cofactor for XanH, and Kong et al. detected
+      FAD in denatured recombinant XanH.
+    evidence:
+    - reference: DOI:10.1128/AEM.01225-20
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: confirmed the prosthetic group as FAD
+      notes: Kong et al. heat denatured purified XanH and matched the released cofactor
+        to an FAD standard by LC-MS.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000024
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000024 lists FAD as the organic cofactor for XanH.
+    - reference: https://www.uniprot.org/uniprotkb/I1SKW0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:I1SKW0 contains flavin-dependent halogenase family annotations
+        on the current Streptomyces flavogriseus xanH entry.
+  - subject: xanh
+    predicate: forms
+    object: xanh_chlorinated_intermediate
+    notes: The MITE reaction product chlorinates the aromatic system of the submitted
+      xantholipin-pathway substrate structure.
+    evidence:
+    - reference: DOI:10.1128/AEM.01225-20
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: a new peak could be detected in the reaction system of XanH
+      notes: Kong et al. purified recombinant XanH, assayed in vitro halogenation
+        with FAD, NADH and the compound 5 free-standing xantholipin intermediate,
+        and detected chlorinated product formation.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000024
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000024 is active, links XanH to UniProtKB:I1SKW0, GenPept ADE22292.1
+        and MIBiG BGC0000279, lists FAD as an organic cofactor, and represents an
+        in vitro-supported chlorination reaction in the xantholipin biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000279.5/BGC0000279.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000024: Halogenation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000279.5 places xanH/ADE22292.1 inside the active Streptomyces
+        flavogriseus xantholipin biosynthetic gene cluster as a biosynthetic-additional
+        flavin-dependent halogenase locus with a 100% identity MITE0000024 halogenation
+        annotation.
+    - reference: https://www.uniprot.org/uniprotkb/I1SKW0
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=xanH
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:I1SKW0 resolves as a 471 aa Streptomyces flavogriseus
+        xanH entry and cross-references EMBL GQ421798 protein ADE22292.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADE22292.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: putative non-heme halogenase
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein ADE22292.1 is the Streptomyces flavogriseus xanH putative
+        non-heme halogenase encoded at GQ421798.1:22057..23472.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -96,3 +218,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-02T18:26:49Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Streptomyces flavogriseus XanH FAD-dependent
+    chlorination in xantholipin biosynthesis; grounded XanH to UniProtKB:I1SKW0 and
+    FAD to CHEBI:16238, and left the MITE substrate and product structures ungrounded.
+  llm_assisted: true
