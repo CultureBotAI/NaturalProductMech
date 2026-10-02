@@ -454,6 +454,141 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein AAM70343.1 is the Micromonospora echinospora CalO1 translation
         encoded by calO1 at AF497482.1:60938..61975 on the reverse strand.
+- graph_id: calicheamicin-calo2-iodinated-orsellinic-acid-hydroxylation
+  scope: BIOSYNTHESIS
+  description: Partial Micromonospora echinospora calicheamicin biosynthesis graph
+    for CalO2-catalyzed heme-dependent hydroxylation of an iodinated orsellinic acid-derived
+    carrier thioester.
+  nodes:
+  - node_id: iodinated_orsellinic_acid_thioester
+    label: iodinated orsellinic acid-derived carrier thioester
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: heme_b
+    label: heme b
+    node_type: PRECURSOR
+    identifier: CHEBI:60344
+    grounding_status: GROUNDED
+  - node_id: calo2
+    label: CalO2 cytochrome P450
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KND6
+    grounding_status: GROUNDED
+  - node_id: hydroxy_iodinated_orsellinic_acid_thioester
+    label: hydroxylated iodinated orsellinic acid-derived carrier thioester
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: iodinated_orsellinic_acid_thioester
+    predicate: is hydroxylated by
+    object: calo2
+    notes: MITE represents CalO2 hydroxylation for either a CoA-bound or 4'-phosphopantetheine-bound
+      iodinated orsellinic acid derivative; the exact carrier form is not distinguished
+      here.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000008
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Hydroxylation of iodinated orsellenic acid derivate, assumed to be
+        bound to coenzyme A
+      notes: MITE0000008 is active, lists an in-vitro assay evidence code, assigns
+        CoA- and 4'-phosphopantetheine-bound iodinated orsellinic acid derivative
+        hydroxylation reactions to CalO2, lists heme as an organic cofactor, links
+        the reaction rows to DOI:10.1002/prot.22131, and links CalO2 to UniProtKB:Q8KND6,
+        GenPept AAM94799.1, and MIBiG BGC0000033.
+    - reference: DOI:10.1002/prot.22131
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: McCoy et al. structurally characterized heme-bound CalO2, performed ligand-binding
+        studies with iodinated orsellinic acid thioester mimics, and proposed that
+        the CalO2-catalyzed step may occur after CalO3-catalyzed iodination on a CoA-
+        or ACP-bound substrate.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000033.5/BGC0000033.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000033.5 places calO2/AAM94799.1 inside the active Micromonospora
+        echinospora calicheamicin biosynthetic gene cluster and links the CDS to MITE0000008
+        at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KND6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q8KND6 resolves as a 397 aa Micromonospora echinospora calO2/CalO2
+        TrEMBL entry, cross-references EMBL AF497482 protein AAM94799.1 and PDB 3BUJ,
+        carries cytochrome P450 domain cross-references, and annotates heme b binding
+        sites from the 3BUJ structure.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM94799.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM94799.1 is the Micromonospora echinospora CalO2 translation
+        encoded by calO2 at AF497482.1:72606..73799 on the forward strand.
+  - subject: heme_b
+    predicate: serves as prosthetic group for
+    object: calo2
+    notes: MITE lists heme as CalO2's organic cofactor, and the CalO2 crystal structure
+      contains heme b.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000008
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Hydroxylation of iodinated orsellenic acid derivate, assumed to be
+        bound to coenzyme A
+      notes: MITE0000008 is active, lists an in-vitro assay evidence code, assigns
+        CoA- and 4'-phosphopantetheine-bound iodinated orsellinic acid derivative
+        hydroxylation reactions to CalO2, lists heme as an organic cofactor, links
+        the reaction rows to DOI:10.1002/prot.22131, and links CalO2 to UniProtKB:Q8KND6,
+        GenPept AAM94799.1, and MIBiG BGC0000033.
+    - reference: DOI:10.1002/prot.22131
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: McCoy et al. structurally characterized heme-bound CalO2, performed ligand-binding
+        studies with iodinated orsellinic acid thioester mimics, and proposed that
+        the CalO2-catalyzed step may occur after CalO3-catalyzed iodination on a CoA-
+        or ACP-bound substrate.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KND6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q8KND6 resolves as a 397 aa Micromonospora echinospora calO2/CalO2
+        TrEMBL entry, cross-references EMBL AF497482 protein AAM94799.1 and PDB 3BUJ,
+        carries cytochrome P450 domain cross-references, and annotates heme b binding
+        sites from the 3BUJ structure.
+  - subject: calo2
+    predicate: forms
+    object: hydroxy_iodinated_orsellinic_acid_thioester
+    notes: MITE's CalO2 reaction SMARTS hydroxylate the carrier-tethered iodinated
+      orsellinic acid derivative; both represented products remain pathway intermediates.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000008
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Hydroxylation of iodinated orsellenic acid derivate, assumed to be
+        bound to coenzyme A
+      notes: MITE0000008 is active, lists an in-vitro assay evidence code, assigns
+        CoA- and 4'-phosphopantetheine-bound iodinated orsellinic acid derivative
+        hydroxylation reactions to CalO2, lists heme as an organic cofactor, links
+        the reaction rows to DOI:10.1002/prot.22131, and links CalO2 to UniProtKB:Q8KND6,
+        GenPept AAM94799.1, and MIBiG BGC0000033.
+    - reference: DOI:10.1002/prot.22131
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: McCoy et al. structurally characterized heme-bound CalO2, performed ligand-binding
+        studies with iodinated orsellinic acid thioester mimics, and proposed that
+        the CalO2-catalyzed step may occur after CalO3-catalyzed iodination on a CoA-
+        or ACP-bound substrate.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000033.5/BGC0000033.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000033.5 places calO2/AAM94799.1 inside the active Micromonospora
+        echinospora calicheamicin biosynthetic gene cluster and links the CDS to MITE0000008
+        at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KND6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q8KND6 resolves as a 397 aa Micromonospora echinospora calO2/CalO2
+        TrEMBL entry, cross-references EMBL AF497482 protein AAM94799.1 and PDB 3BUJ,
+        carries cytochrome P450 domain cross-references, and annotates heme b binding
+        sites from the 3BUJ structure.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM94799.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM94799.1 is the Micromonospora echinospora CalO2 translation
+        encoded by calO2 at AF497482.1:72606..73799 on the forward strand.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -487,6 +622,15 @@ curation_history:
   changes: Added a partial BIOSYNTHESIS causal graph for CalO1-catalyzed SAM-dependent
     O-methylation of an iodinated orsellinic acid-derived carrier thioester in calicheamicin
     biosynthesis; grounded CalO1 to UniProtKB:Q8KNE5, grounded SAM to CHEBI:59789,
+    and left the CoA- or 4'-phosphopantetheine-bound iodinated orsellinic acid derivatives
+    ungrounded because MITE does not distinguish an exact native carrier form.
+  llm_assisted: true
+- timestamp: '2026-10-02T13:28:25Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a partial BIOSYNTHESIS causal graph for CalO2-catalyzed heme-dependent
+    hydroxylation of an iodinated orsellinic acid-derived carrier thioester in calicheamicin
+    biosynthesis; grounded CalO2 to UniProtKB:Q8KND6, grounded heme b to CHEBI:60344,
     and left the CoA- or 4'-phosphopantetheine-bound iodinated orsellinic acid derivatives
     ungrounded because MITE does not distinguish an exact native carrier form.
   llm_assisted: true
