@@ -79,6 +79,95 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: leporin-b-lepd-n-hydroxylation
+  scope: BIOSYNTHESIS
+  description: Aspergillus flavus LepD-catalyzed N-hydroxylation of leporin C to leporin
+    B.
+  nodes:
+  - node_id: leporin_c
+    label: leporin C
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: lepd
+    label: LepD cytochrome P450 monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:B8NJG8
+    grounding_status: GROUNDED
+  - node_id: leporin_b
+    label: leporin B
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-6752ae6cca
+    grounding_status: GROUNDED
+  edges:
+  - subject: leporin_c
+    predicate: is N-hydroxylated by
+    object: lepd
+    notes: LepD adds the N-hydroxy group that distinguishes the final hydroxamic-acid
+      product leporin B from the 2-pyridone precursor leporin C.
+    evidence:
+    - reference: DOI:10.1038/nature23882
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Further addition of the P450 lepD yielded the final product 1, thereby
+        completing heterologous pathway reconstitution.
+      notes: Ohashi et al. heterologously reconstituted leporin B biosynthesis in
+        Aspergillus nidulans; after LepA/LepG/LepH/LepF/LepI formed leporin C as the
+        desired pyran product, further addition of LepD yielded leporin B.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000321
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000321 is active and links LepD to UniProtKB:B8NJG8, GenPept EED49867.1,
+        MIBiG BGC0001445 and the N-hydroxylation of leporin C to leporin B.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001445.5/BGC0001445.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001445.5 places EED49867.1 in the active Aspergillus flavus
+        NRRL3357 leporin B biosynthetic gene cluster as the AFLA_066890 cytochrome
+        P450 locus.
+    - reference: https://www.uniprot.org/uniprotkb/B8NJG8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:B8NJG8 is the 508 aa Aspergillus flavus NRRL3357 cytochrome
+        P450 monooxygenase LepD entry and cross-references EMBL EQ963479 protein EED49867.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EED49867.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept EED49867.1 is the Aspergillus flavus NRRL3357 cytochrome
+        P450 protein encoded by AFLA_066890 on EQ963479.1.
+  - subject: lepd
+    predicate: forms
+    object: leporin_b
+    notes: The heterologously reconstituted leporin pathway yielded leporin B after
+      the P450 LepD was added downstream of the LepI-dependent leporin C step.
+    evidence:
+    - reference: DOI:10.1038/nature23882
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Further addition of the P450 lepD yielded the final product 1, thereby
+        completing heterologous pathway reconstitution.
+      notes: Ohashi et al. heterologously reconstituted leporin B biosynthesis in
+        Aspergillus nidulans; after LepA/LepG/LepH/LepF/LepI formed leporin C as the
+        desired pyran product, further addition of LepD yielded leporin B.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000321
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000321 is active and links LepD to UniProtKB:B8NJG8, GenPept EED49867.1,
+        MIBiG BGC0001445 and the N-hydroxylation of leporin C to leporin B.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001445.5/BGC0001445.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001445.5 places EED49867.1 in the active Aspergillus flavus
+        NRRL3357 leporin B biosynthetic gene cluster as the AFLA_066890 cytochrome
+        P450 locus.
+    - reference: https://www.uniprot.org/uniprotkb/B8NJG8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:B8NJG8 is the 508 aa Aspergillus flavus NRRL3357 cytochrome
+        P450 monooxygenase LepD entry and cross-references EMBL EQ963479 protein EED49867.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EED49867.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept EED49867.1 is the Aspergillus flavus NRRL3357 cytochrome
+        P450 protein encoded by AFLA_066890 on EQ963479.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -88,3 +177,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-02T01:55:21Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus flavus LepD N-hydroxylation
+    in leporin B biosynthesis; grounded LepD to UniProtKB:B8NJG8 and left leporin
+    C ungrounded because it is absent from the local corpus.
+  llm_assisted: true
