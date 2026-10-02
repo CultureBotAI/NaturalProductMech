@@ -79,6 +79,126 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: avilamycin-a-avig2-mannose-o-methylation
+  scope: BIOSYNTHESIS
+  description: Streptomyces viridochromogenes Tue57 AviG2-catalyzed SAM-dependent
+    6-O-methylation of the D-mannose moiety forms avilamycin A.
+  nodes:
+  - node_id: c6_demethyl_avilamycin_a
+    label: 6-O-demethylavilamycin A intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: sam
+    label: S-adenosyl-L-methionine
+    node_type: PRECURSOR
+    identifier: CHEBI:59789
+    grounding_status: GROUNDED
+  - node_id: avig2
+    label: AviG2 O-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:Q93KW1
+    grounding_status: GROUNDED
+  - node_id: avilamycin_a
+    label: avilamycin A
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-69e644c0de
+    grounding_status: GROUNDED
+  edges:
+  - subject: c6_demethyl_avilamycin_a
+    predicate: is 6-O-methylated by
+    object: avig2
+    notes: MITE represents AviG2 as the O-methyltransferase that methylates the C6
+      hydroxyl of the D-mannose moiety in the avilamycin A scaffold.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2004.08.016
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: exact function of three methyltransferases, AviG2, AviG5, and AviG6,
+        involved in avilamycin biosynthesis could be assigned
+      notes: Weitnauer et al. generated avilamycin methyltransferase mutants and assigned
+        AviG2 among the avilamycin O-methyltransferases.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000001
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: methylation of the hydroxyl group at position 6 of the D-mannose moiety
+      notes: MITE0000001 is active, lists SAM as the organic cofactor, and links AviG2
+        to UniProtKB:Q93KW1, GenPept AAK83184.1, MIBiG BGC0000026, and C6 O-methylation
+        of the D-mannose moiety in avilamycin biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000026.5 places aviG2/AAK83184.1 inside the active Streptomyces
+        viridochromogenes Tue57 avilamycin biosynthetic gene cluster and links the
+        CDS to MITE0000001 at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KW1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q93KW1 resolves as a 240 aa Streptomyces viridochromogenes
+        Tue57 aviG2 putative methyltransferase entry, cross-references EMBL AF333038
+        protein AAK83184.1, and carries GO:0008757 S-adenosylmethionine-dependent
+        methyltransferase activity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK83184.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAK83184.1 is the Streptomyces viridochromogenes Tue57 putative
+        methyltransferase encoded by aviG2 at AF333038.2:28789..29511.
+  - subject: sam
+    predicate: supplies a methyl group to
+    object: avig2
+    notes: MITE lists SAM as AviG2's organic cofactor for this D-mannose 6-O-methylation
+      reaction.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000001
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: methylation of the hydroxyl group at position 6 of the D-mannose moiety
+      notes: MITE0000001 is active, lists SAM as the organic cofactor, and links AviG2
+        to UniProtKB:Q93KW1, GenPept AAK83184.1, MIBiG BGC0000026, and C6 O-methylation
+        of the D-mannose moiety in avilamycin biosynthesis.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KW1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q93KW1 resolves as a 240 aa Streptomyces viridochromogenes
+        Tue57 aviG2 putative methyltransferase entry, cross-references EMBL AF333038
+        protein AAK83184.1, and carries GO:0008757 S-adenosylmethionine-dependent
+        methyltransferase activity.
+  - subject: avig2
+    predicate: forms
+    object: avilamycin_a
+    notes: Open Babel assigned the same Standard InChIKey, XIRGHRXBGGPPKY-RTWAPUGOSA-N,
+      to the MITE reaction product SMILES and the avilamycin A record SMILES.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2004.08.016
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: exact function of three methyltransferases, AviG2, AviG5, and AviG6,
+        involved in avilamycin biosynthesis could be assigned
+      notes: Weitnauer et al. generated avilamycin methyltransferase mutants and assigned
+        AviG2 among the avilamycin O-methyltransferases.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000001
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: methylation of the hydroxyl group at position 6 of the D-mannose moiety
+      notes: MITE0000001 is active, lists SAM as the organic cofactor, and links AviG2
+        to UniProtKB:Q93KW1, GenPept AAK83184.1, MIBiG BGC0000026, and C6 O-methylation
+        of the D-mannose moiety in avilamycin biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000026.5 places aviG2/AAK83184.1 inside the active Streptomyces
+        viridochromogenes Tue57 avilamycin biosynthetic gene cluster and links the
+        CDS to MITE0000001 at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KW1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q93KW1 resolves as a 240 aa Streptomyces viridochromogenes
+        Tue57 aviG2 putative methyltransferase entry, cross-references EMBL AF333038
+        protein AAK83184.1, and carries GO:0008757 S-adenosylmethionine-dependent
+        methyltransferase activity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK83184.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAK83184.1 is the Streptomyces viridochromogenes Tue57 putative
+        methyltransferase encoded by aviG2 at AF333038.2:28789..29511.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -88,3 +208,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-02T10:46:04Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for AviG2-catalyzed 6-O-methylation of
+    the avilamycin A D-mannose moiety; grounded AviG2 to UniProtKB:Q93KW1, grounded
+    SAM to CHEBI:59789, linked the product to the avilamycin A record identifier,
+    and left the demethylated avilamycin A precursor ungrounded because an exact local
+    corpus record was absent.
+  llm_assisted: true
