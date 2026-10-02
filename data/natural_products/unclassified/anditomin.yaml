@@ -995,6 +995,99 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI GenPept BAP81856.1 is the Aspergillus stellatus AndB protein encoded
         on AB981314.1:1720..2222 and AB981314.1:2294..2501.
+- graph_id: anditomin-andc-oxidation
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndC-catalyzed oxidation of preandiloid A to
+    preandiloid B.
+  nodes:
+  - node_id: preandiloid_a
+    label: preandiloid A
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91819981
+    grounding_status: GROUNDED
+  - node_id: andc
+    label: AndC short-chain dehydrogenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPC9
+    grounding_status: GROUNDED
+  - node_id: preandiloid_b
+    label: preandiloid B
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91819922
+    grounding_status: GROUNDED
+  edges:
+  - subject: preandiloid_a
+    predicate: is oxidized by
+    object: andc
+    notes: AndC oxidizes the C-3 hydroxyl of preandiloid A to form preandiloid B before
+      separate AndA-catalyzed dehydrogenation.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000355
+        and UniProtKB:A0A097ZPC9 both cite this paper for AndC oxidation of preandiloid
+        A to preandiloid B.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000355
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Conversion of preandiloid A at C-3 hydroxyl to give preandiloid B.
+      notes: MITE0000355 is active and links AndC to UniProtKB:A0A097ZPC9, GenPept
+        BAP81857.1 and MIBiG BGC0002612 for heterologous-expression evidence of C-3
+        hydroxyl oxidation of preandiloid A to preandiloid B.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0002612.3 places BAP81857.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndC short-chain dehydrogenase/reductase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPC9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Reviewed UniProtKB:A0A097ZPC9 is the 252 aa Emericella variicolor, also
+        Aspergillus stellatus, short-chain dehydrogenase AndC entry and cross-references
+        EMBL AB981314 protein BAP81857.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81857.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI GenPept BAP81857.1 is the Aspergillus stellatus AndC protein encoded
+        on AB981314.1:3007..3027, AB981314.1:3087..3525, AB981314.1:3581..3658 and
+        AB981314.1:3726..3946.
+  - subject: andc
+    predicate: forms
+    object: preandiloid_b
+    notes: MITE0000355 describes AndC-dependent conversion of preandiloid A to preandiloid
+      B.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000355
+        and UniProtKB:A0A097ZPC9 both cite this paper for AndC oxidation of preandiloid
+        A to preandiloid B.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000355
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Conversion of preandiloid A at C-3 hydroxyl to give preandiloid B.
+      notes: MITE0000355 is active and links AndC to UniProtKB:A0A097ZPC9, GenPept
+        BAP81857.1 and MIBiG BGC0002612 for heterologous-expression evidence of C-3
+        hydroxyl oxidation of preandiloid A to preandiloid B.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0002612.3 places BAP81857.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndC short-chain dehydrogenase/reductase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPC9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Reviewed UniProtKB:A0A097ZPC9 is the 252 aa Emericella variicolor, also
+        Aspergillus stellatus, short-chain dehydrogenase AndC entry and cross-references
+        EMBL AB981314 protein BAP81857.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81857.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI GenPept BAP81857.1 is the Aspergillus stellatus AndC protein encoded
+        on AB981314.1:3007..3027, AB981314.1:3087..3525, AB981314.1:3581..3658 and
+        AB981314.1:3726..3946.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1073,4 +1166,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndB cyclization
     of epoxyfarnesyl-DHDMP to preandiloid A; grounded AndB to UniProtKB:A0A097ZPD8,
     epoxyfarnesyl-DHDMP to pubchem.compound:91820106 and preandiloid A to pubchem.compound:91819981.
+  llm_assisted: true
+- timestamp: '2026-10-02T07:48:27Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndC oxidation
+    of preandiloid A to preandiloid B; grounded AndC to UniProtKB:A0A097ZPC9, preandiloid
+    A to pubchem.compound:91819981 and preandiloid B to pubchem.compound:91819922.
   llm_assisted: true
