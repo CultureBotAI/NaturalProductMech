@@ -188,6 +188,130 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein AAM70353.1 is the Micromonospora echinospora CalO3 translation
         encoded by calO3 at AF497482.1:73840..75102.
+- graph_id: calicheamicin-calo6-orsellinic-acid-o-methylation
+  scope: BIOSYNTHESIS
+  description: Partial Micromonospora echinospora calicheamicin biosynthesis graph
+    for CalO6-catalyzed SAM-dependent C2-O-methylation of an orsellinic acid-derived
+    carrier thioester.
+  nodes:
+  - node_id: orsellinic_acid_thioester
+    label: orsellinic acid-derived carrier thioester
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: sam
+    label: S-adenosyl-L-methionine
+    node_type: PRECURSOR
+    identifier: CHEBI:59789
+    grounding_status: GROUNDED
+  - node_id: calo6
+    label: CalO6 O-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KND2
+    grounding_status: GROUNDED
+  - node_id: c2_o_methyl_orsellinic_acid_thioester
+    label: C2-O-methylated orsellinic acid-derived carrier thioester
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: orsellinic_acid_thioester
+    predicate: is C2-O-methylated by
+    object: calo6
+    notes: MITE represents CalO6 O-methylation for either a CoA-bound or 4'-phosphopantetheine-bound
+      orsellinic acid derivative; the exact carrier form is not distinguished here.
+    evidence:
+    - reference: DOI:10.1002/cbic.201402119
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Singh et al. functionally characterized CalO6 as the calicheamicin orsellinate
+        C2-O-methyltransferase and supported a CoA- or ACP-bound substrate for the
+        O-methylation reaction.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000006
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: O-methylation of orsellenic acid, assumed to be bound to coenzyme A
+        cofactor
+      notes: MITE0000006 is active, lists an in-vitro assay evidence code, assigns
+        CoA- and 4'-phosphopantetheine-bound orsellinic acid O-methylation reactions
+        to CalO6, lists SAM as an organic cofactor, and links CalO6 to UniProtKB:Q8KND2,
+        GenPept AAM70356.1, and MIBiG BGC0000033.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000033.5/BGC0000033.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000033.5 places calO6/AAM70356.1 inside the active Micromonospora
+        echinospora calicheamicin biosynthetic gene cluster and links the CDS to MITE0000006
+        at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KND2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q8KND2 resolves as a 356 aa Micromonospora echinospora calO6/CalO6
+        TrEMBL entry, cross-references EMBL AF497482 protein AAM70356.1 and PDB 4Z2Y,
+        and carries SAM-dependent methyltransferase domain cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM70356.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM70356.1 is the Micromonospora echinospora CalO6 translation
+        encoded by calO6 at AF497482.1:80077..81147.
+  - subject: sam
+    predicate: supplies a methyl group to
+    object: calo6
+    notes: MITE lists SAM as CalO6's organic cofactor for this O-methylation reaction.
+    evidence:
+    - reference: DOI:10.1002/cbic.201402119
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Singh et al. functionally characterized CalO6 as the calicheamicin orsellinate
+        C2-O-methyltransferase and supported a CoA- or ACP-bound substrate for the
+        O-methylation reaction.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000006
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: O-methylation of orsellenic acid, assumed to be bound to coenzyme A
+        cofactor
+      notes: MITE0000006 is active, lists an in-vitro assay evidence code, assigns
+        CoA- and 4'-phosphopantetheine-bound orsellinic acid O-methylation reactions
+        to CalO6, lists SAM as an organic cofactor, and links CalO6 to UniProtKB:Q8KND2,
+        GenPept AAM70356.1, and MIBiG BGC0000033.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KND2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q8KND2 resolves as a 356 aa Micromonospora echinospora calO6/CalO6
+        TrEMBL entry, cross-references EMBL AF497482 protein AAM70356.1 and PDB 4Z2Y,
+        and carries SAM-dependent methyltransferase domain cross-references.
+  - subject: calo6
+    predicate: forms
+    object: c2_o_methyl_orsellinic_acid_thioester
+    notes: MITE's CalO6 reaction SMARTS add a methoxy group to the carrier-tethered
+      orsellinic acid derivative; both represented products remain pathway intermediates.
+    evidence:
+    - reference: DOI:10.1002/cbic.201402119
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Singh et al. functionally characterized CalO6 as the calicheamicin orsellinate
+        C2-O-methyltransferase and supported a CoA- or ACP-bound substrate for the
+        O-methylation reaction.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000006
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: O-methylation of orsellenic acid, assumed to be bound to coenzyme A
+        cofactor
+      notes: MITE0000006 is active, lists an in-vitro assay evidence code, assigns
+        CoA- and 4'-phosphopantetheine-bound orsellinic acid O-methylation reactions
+        to CalO6, lists SAM as an organic cofactor, and links CalO6 to UniProtKB:Q8KND2,
+        GenPept AAM70356.1, and MIBiG BGC0000033.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000033.5/BGC0000033.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000033.5 places calO6/AAM70356.1 inside the active Micromonospora
+        echinospora calicheamicin biosynthetic gene cluster and links the CDS to MITE0000006
+        at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KND2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q8KND2 resolves as a 356 aa Micromonospora echinospora calO6/CalO6
+        TrEMBL entry, cross-references EMBL AF497482 protein AAM70356.1 and PDB 4Z2Y,
+        and carries SAM-dependent methyltransferase domain cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM70356.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM70356.1 is the Micromonospora echinospora CalO6 translation
+        encoded by calO6 at AF497482.1:80077..81147.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -203,6 +327,15 @@ curation_history:
   changes: Added a partial BIOSYNTHESIS causal graph for inferred CalO3-catalyzed
     iodination of an orsellinic acid-derived carrier thioester in calicheamicin biosynthesis;
     grounded CalO3 to UniProtKB:Q8KND5, grounded flavin mononucleotide to CHEBI:17621,
+    and left the CoA- or 4'-phosphopantetheine-bound orsellinic acid derivatives ungrounded
+    because MITE does not distinguish an exact native carrier form.
+  llm_assisted: true
+- timestamp: '2026-10-02T12:35:41Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a partial BIOSYNTHESIS causal graph for CalO6-catalyzed SAM-dependent
+    C2-O-methylation of an orsellinic acid-derived carrier thioester in calicheamicin
+    biosynthesis; grounded CalO6 to UniProtKB:Q8KND2, grounded SAM to CHEBI:59789,
     and left the CoA- or 4'-phosphopantetheine-bound orsellinic acid derivatives ungrounded
     because MITE does not distinguish an exact native carrier form.
   llm_assisted: true
