@@ -861,6 +861,105 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein CAK50788.1 is the 407 aa Streptomyces argillaceus glycosyltransferase
         encoded by mtmGIV and cross-referenced to UniProtKB:Q194Q0.
+- graph_id: mithramycin-mtmgiii-glycosylation
+  scope: BIOSYNTHESIS
+  description: Streptomyces argillaceus MtmGIII-catalyzed glycosylation in mithramycin
+    deoxysugar assembly.
+  nodes:
+  - node_id: mtmgiii_glycosylation_substrate
+    label: MtmGIII glycosylation substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mtmgiii
+    label: MtmGIII glycosyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:Q194P9
+    grounding_status: GROUNDED
+  - node_id: mtmgiii_glycosylated_intermediate
+    label: MtmGIII-glycosylated mithramycin intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mtmgiii_glycosylation_substrate
+    predicate: is glycosylated by
+    object: mtmgiii
+    notes: MITE represents MtmGIII as a glycosyltransferase for a mithramycin intermediate;
+      an exact local record is absent for the submitted substrate structure.
+    evidence:
+    - reference: DOI:10.1007/PL00008667
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MtmGIV and MtmGIII catalyze the first two glycosylation steps in mithramycin
+        biosynthesis
+      notes: Blanco et al. used independent insertional inactivation of mtmGIII and
+        mtmGIV to demonstrate early Streptomyces argillaceus mithramycin glycosylation
+        roles; MITE cites this paper for the knock-out-supported MtmGIII glycosylation
+        reaction.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000019
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000019 is active, links MtmGIII to UniProtKB:Q194P9, GenPept CAK50789.1
+        and MIBiG BGC0000247, and represents a knock-out-supported MtmGIII glycosylation
+        reaction in the mithramycin biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000019: Glycosylation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000247.5 places mtmGIII/CAK50789.1 inside the active Streptomyces
+        argillaceus mithramycin biosynthetic gene cluster as a glycosyltransferase
+        locus with a 100% identity MITE0000019 glycosylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q194P9
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mtmGIII
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194P9 resolves as a 396 aa Streptomyces argillaceus
+        mtmGIII glycosyltransferase entry and cross-references EMBL X89899 protein
+        CAK50789.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAK50789.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: UniProtKB/TrEMBL:Q194P9
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAK50789.1 is the 396 aa Streptomyces argillaceus glycosyltransferase
+        encoded by mtmGIII and cross-referenced to UniProtKB:Q194P9.
+  - subject: mtmgiii
+    predicate: forms
+    object: mtmgiii_glycosylated_intermediate
+    notes: The MITE MtmGIII reaction adds a deoxysugar moiety to a mithramycin-pathway
+      acceptor structure.
+    evidence:
+    - reference: DOI:10.1007/PL00008667
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: MtmGIV and MtmGIII catalyze the first two glycosylation steps in mithramycin
+        biosynthesis
+      notes: Blanco et al. used independent insertional inactivation of mtmGIII and
+        mtmGIV to demonstrate early Streptomyces argillaceus mithramycin glycosylation
+        roles; MITE cites this paper for the knock-out-supported MtmGIII glycosylation
+        reaction.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000019
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000019 is active, links MtmGIII to UniProtKB:Q194P9, GenPept CAK50789.1
+        and MIBiG BGC0000247, and represents a knock-out-supported MtmGIII glycosylation
+        reaction in the mithramycin biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000019: Glycosylation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000247.5 places mtmGIII/CAK50789.1 inside the active Streptomyces
+        argillaceus mithramycin biosynthetic gene cluster as a glycosyltransferase
+        locus with a 100% identity MITE0000019 glycosylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q194P9
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mtmGIII
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194P9 resolves as a 396 aa Streptomyces argillaceus
+        mtmGIII glycosyltransferase entry and cross-references EMBL X89899 protein
+        CAK50789.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAK50789.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: UniProtKB/TrEMBL:Q194P9
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAK50789.1 is the 396 aa Streptomyces argillaceus glycosyltransferase
+        encoded by mtmGIII and cross-referenced to UniProtKB:Q194P9.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -904,4 +1003,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Streptomyces argillaceus MtmGIV glycosylation
     in mithramycin biosynthesis; grounded MtmGIV to UniProtKB:Q194Q0 and left the
     MITE substrate and product structures ungrounded.
+  llm_assisted: true
+- timestamp: '2026-10-02T16:10:18Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Streptomyces argillaceus MtmGIII
+    glycosylation in mithramycin biosynthesis; grounded MtmGIII to UniProtKB:Q194P9
+    and left the MITE substrate and product structures ungrounded.
   llm_assisted: true
