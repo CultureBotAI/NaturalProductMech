@@ -750,6 +750,117 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein CAK50794.2 is the 533 aa Streptomyces argillaceus protein
         encoded by mtmOIV and cross-referenced to UniProtKB:Q194P4.
+- graph_id: mithramycin-mtmgiv-glycosylation
+  scope: BIOSYNTHESIS
+  description: Streptomyces argillaceus MtmGIV-catalyzed glycosylation reactions in
+    mithramycin deoxysugar assembly.
+  nodes:
+  - node_id: mtmgiv_glycosylation_substrate
+    label: MtmGIV glycosylation substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mtmgiv
+    label: MtmGIV glycosyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:Q194Q0
+    grounding_status: GROUNDED
+  - node_id: mtmgiv_glycosylated_intermediate
+    label: MtmGIV-glycosylated mithramycin intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mtmgiv_glycosylation_substrate
+    predicate: is glycosylated by
+    object: mtmgiv
+    notes: MITE represents MtmGIV as a glycosyltransferase for two mithramycin intermediates;
+      exact local records are absent for the submitted substrate and product structures.
+    evidence:
+    - reference: DOI:10.1007/PL00008667
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Characterization of two glycosyltransferases involved in early glycosylation
+        steps
+      notes: Blanco et al. characterized Streptomyces argillaceus glycosyltransferases
+        involved in early mithramycin glycosylation; MITE cites this paper for the
+        knock-out-supported MtmGIV glycosylation reaction.
+    - reference: DOI:10.1002/anie.201205414
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Cooperation of Two Bifunctional Enzymes in the Biosynthesis and Attachment
+        of Deoxysugars
+      notes: Wang et al. assayed mithramycin deoxysugar biosynthesis and attachment
+        by bifunctional enzymes; MITE cites this paper for an in vitro MtmGIV glycosylation
+        reaction.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000018
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000018 is active, links MtmGIV to UniProtKB:Q194Q0, GenPept CAK50788.1
+        and MIBiG BGC0000247, and represents one in vitro-supported and one knock-out-supported
+        MtmGIV glycosylation reaction in the mithramycin biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000018: Glycosylation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000247.5 places mtmGIV/CAK50788.1 inside the active Streptomyces
+        argillaceus mithramycin biosynthetic gene cluster as a glycosyltransferase
+        locus with a 100% identity MITE0000018 glycosylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q194Q0
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mtmGIV
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194Q0 resolves as a 407 aa Streptomyces argillaceus
+        mtmGIV glycosyltransferase entry and cross-references EMBL X89899 protein
+        CAK50788.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAK50788.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: UniProtKB/TrEMBL:Q194Q0
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAK50788.1 is the 407 aa Streptomyces argillaceus glycosyltransferase
+        encoded by mtmGIV and cross-referenced to UniProtKB:Q194Q0.
+  - subject: mtmgiv
+    predicate: forms
+    object: mtmgiv_glycosylated_intermediate
+    notes: The MITE MtmGIV reactions add deoxysugar moieties to mithramycin-pathway
+      acceptor structures.
+    evidence:
+    - reference: DOI:10.1007/PL00008667
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Characterization of two glycosyltransferases involved in early glycosylation
+        steps
+      notes: Blanco et al. characterized Streptomyces argillaceus glycosyltransferases
+        involved in early mithramycin glycosylation; MITE cites this paper for the
+        knock-out-supported MtmGIV glycosylation reaction.
+    - reference: DOI:10.1002/anie.201205414
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Cooperation of Two Bifunctional Enzymes in the Biosynthesis and Attachment
+        of Deoxysugars
+      notes: Wang et al. assayed mithramycin deoxysugar biosynthesis and attachment
+        by bifunctional enzymes; MITE cites this paper for an in vitro MtmGIV glycosylation
+        reaction.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000018
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000018 is active, links MtmGIV to UniProtKB:Q194Q0, GenPept CAK50788.1
+        and MIBiG BGC0000247, and represents one in vitro-supported and one knock-out-supported
+        MtmGIV glycosylation reaction in the mithramycin biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000247.5/BGC0000247.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000018: Glycosylation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000247.5 places mtmGIV/CAK50788.1 inside the active Streptomyces
+        argillaceus mithramycin biosynthetic gene cluster as a glycosyltransferase
+        locus with a 100% identity MITE0000018 glycosylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q194Q0
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN=mtmGIV
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q194Q0 resolves as a 407 aa Streptomyces argillaceus
+        mtmGIV glycosyltransferase entry and cross-references EMBL X89899 protein
+        CAK50788.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAK50788.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: UniProtKB/TrEMBL:Q194Q0
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAK50788.1 is the 407 aa Streptomyces argillaceus glycosyltransferase
+        encoded by mtmGIV and cross-referenced to UniProtKB:Q194Q0.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -786,4 +897,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Streptomyces argillaceus MtmOIV Baeyer-Villiger
     oxidation in mithramycin biosynthesis; grounded MtmOIV to UniProtKB:Q194P4, FAD
     to CHEBI:16238 and mithramycin DK to CHEBI:81906 and left premithramycin B ungrounded.
+  llm_assisted: true
+- timestamp: '2026-10-02T15:44:48Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Streptomyces argillaceus MtmGIV glycosylation
+    in mithramycin biosynthesis; grounded MtmGIV to UniProtKB:Q194Q0 and left the
+    MITE substrate and product structures ungrounded.
   llm_assisted: true
