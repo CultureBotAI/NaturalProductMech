@@ -314,6 +314,131 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein AAK83186.1 is the Streptomyces viridochromogenes Tue57 putative
         methyltransferase encoded by aviG6 at AF333038.2:30514..31233.
+- graph_id: avilamycin-c-avig5-fucose-o-methylation
+  scope: BIOSYNTHESIS
+  description: Streptomyces viridochromogenes Tue57 AviG5-catalyzed SAM-dependent
+    4-O-methylation of the D-fucose moiety contributes the shared O-methyl group in
+    avilamycin C biosynthesis.
+  nodes:
+  - node_id: c4_demethyl_avilamycin_c
+    label: 4-O-demethyl avilamycin C-pathway intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: sam
+    label: S-adenosyl-L-methionine
+    node_type: PRECURSOR
+    identifier: CHEBI:59789
+    grounding_status: GROUNDED
+  - node_id: avig5
+    label: AviG5 O-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:Q93KW5
+    grounding_status: GROUNDED
+  - node_id: avilamycin_c
+    label: avilamycin C
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-9a5b28276d
+    grounding_status: GROUNDED
+  edges:
+  - subject: c4_demethyl_avilamycin_c
+    predicate: is 4-O-methylated by
+    object: avig5
+    notes: MITE represents AviG5 as the O-methyltransferase that methylates the C4
+      hydroxyl of the D-fucose moiety in avilamycin biosynthesis. The MITE product
+      structure canonicalizes to avilamycin A, so the analogous avilamycin C precursor
+      remains ungrounded here.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2004.08.016
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: exact function of three methyltransferases, AviG2, AviG5, and AviG6,
+        involved in avilamycin biosynthesis could be assigned
+      notes: Weitnauer et al. generated avilamycin methyltransferase mutants from
+        the Streptomyces viridochromogenes Tue57 producer of avilamycins A and C and
+        assigned AviG5 among the avilamycin O-methyltransferases.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000004
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: methylation of the hydroxyl group at position 4 of the D-fucose moiety
+      notes: MITE0000004 is active, lists SAM as the organic cofactor, and links AviG5
+        to UniProtKB:Q93KW5, GenPept AAK83180.1, MIBiG BGC0000026, and C4 O-methylation
+        of the D-fucose moiety in avilamycin biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000026.5 places aviG5/AAK83180.1 inside the active Streptomyces
+        viridochromogenes Tue57 avilamycin biosynthetic gene cluster and links the
+        CDS to MITE0000004 at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KW5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q93KW5 resolves as a 199 aa Streptomyces viridochromogenes
+        Tue57 aviG5 putative methyltransferase entry, cross-references EMBL AF333038
+        protein AAK83180.1, and carries SAM-dependent methyltransferase family/domain
+        cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK83180.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAK83180.1 is the Streptomyces viridochromogenes Tue57 putative
+        methyltransferase encoded by aviG5 at AF333038.2:25011..25610.
+  - subject: sam
+    predicate: supplies a methyl group to
+    object: avig5
+    notes: MITE lists SAM as AviG5's organic cofactor for this D-fucose 4-O-methylation
+      reaction.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000004
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: methylation of the hydroxyl group at position 4 of the D-fucose moiety
+      notes: MITE0000004 is active, lists SAM as the organic cofactor, and links AviG5
+        to UniProtKB:Q93KW5, GenPept AAK83180.1, MIBiG BGC0000026, and C4 O-methylation
+        of the D-fucose moiety in avilamycin biosynthesis.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KW5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q93KW5 resolves as a 199 aa Streptomyces viridochromogenes
+        Tue57 aviG5 putative methyltransferase entry, cross-references EMBL AF333038
+        protein AAK83180.1, and carries SAM-dependent methyltransferase family/domain
+        cross-references.
+  - subject: avig5
+    predicate: contributes C4 D-fucose O-methylation to
+    object: avilamycin_c
+    notes: Avilamycin C is the second BGC0000026 compound in the committed MIBiG source
+      inventory; this edge records the shared D-fucose C4 O-methylation rather than
+      asserting that MITE's avilamycin A product is the exact avilamycin C final structure.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2004.08.016
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: exact function of three methyltransferases, AviG2, AviG5, and AviG6,
+        involved in avilamycin biosynthesis could be assigned
+      notes: Weitnauer et al. generated avilamycin methyltransferase mutants from
+        the Streptomyces viridochromogenes Tue57 producer of avilamycins A and C and
+        assigned AviG5 among the avilamycin O-methyltransferases.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000004
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: methylation of the hydroxyl group at position 4 of the D-fucose moiety
+      notes: MITE0000004 is active, lists SAM as the organic cofactor, and links AviG5
+        to UniProtKB:Q93KW5, GenPept AAK83180.1, MIBiG BGC0000026, and C4 O-methylation
+        of the D-fucose moiety in avilamycin biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000026.5 places aviG5/AAK83180.1 inside the active Streptomyces
+        viridochromogenes Tue57 avilamycin biosynthetic gene cluster and links the
+        CDS to MITE0000004 at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KW5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:Q93KW5 resolves as a 199 aa Streptomyces viridochromogenes
+        Tue57 aviG5 putative methyltransferase entry, cross-references EMBL AF333038
+        protein AAK83180.1, and carries SAM-dependent methyltransferase family/domain
+        cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK83180.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAK83180.1 is the Streptomyces viridochromogenes Tue57 putative
+        methyltransferase encoded by aviG5 at AF333038.2:25011..25610.
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
   curator: seed_from_sources
@@ -339,5 +464,14 @@ curation_history:
     the avilamycin C D-mannose moiety; grounded AviG6 to UniProtKB:Q93KV9, grounded
     SAM to CHEBI:59789, linked the shared O-methylation to avilamycin C, and left
     the C2-demethylated avilamycin C-pathway precursor ungrounded because the exact
+    MITE product structure corresponds to avilamycin A.
+  llm_assisted: true
+- timestamp: '2026-10-02T21:56:22Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for AviG5-catalyzed 4-O-methylation of
+    the avilamycin C D-fucose moiety; grounded AviG5 to UniProtKB:Q93KW5, grounded
+    SAM to CHEBI:59789, linked the shared O-methylation to avilamycin C, and left
+    the C4-demethylated avilamycin C-pathway precursor ungrounded because the exact
     MITE product structure corresponds to avilamycin A.
   llm_assisted: true
