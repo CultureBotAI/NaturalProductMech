@@ -249,13 +249,64 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 biosynthetic_pathway:
-- step_number: 1
+- step_number: 10
+  enzyme_id: UniProtKB:E3VWI7
+  enzyme_label: Pentalenolactone D synthase
+  reaction_id: RHEA:34635
+  notes: Streptomyces arenae PntE catalyzes the flavin-dependent Baeyer-Villiger oxidation
+    of 1-deoxy-11-oxopentalenate to pentalenolactone D; the intervening PntD conversion
+    from pentalenolactone D to pentalenolactone F remains uncurated.
+  evidence:
+  - reference: DOI:10.1021/bi1019786
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Recombinant enzymes PenE and PntE, from S. exfoliatus and S. arenae,
+      respectively, catalyze the flavin-dependent Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenic
+      acid (7) to pentalenolactone D (8)
+    notes: Seo et al. biochemically tested the Streptomyces arenae Tu469 PntE enzyme
+      and placed the Baeyer-Villiger oxidation upstream of the PntD and PntM steps
+      toward pentalenolactone.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000057
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MITE0000057 is active and links PntE to UniProtKB:E3VWI7, GenPept ADO85575.1,
+      MIBiG BGC0000653, RHEA:34635 and the Seo et al. DOI.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000653.5 places ADO85575.1 in the active Streptomyces arenae
+      pentalenolactone biosynthetic gene cluster as pntE/PntE with a MITE0000057 100%
+      identity gene-function annotation.
+  - reference: https://www.uniprot.org/uniprotkb/E3VWI7
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: UniProtKB:E3VWI7 is reviewed Streptomyces arenae PntE and annotates RHEA:34635
+      for 1-deoxy-11-oxopentalenate conversion to pentalenolactone D.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ADO85575.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: NCBI Protein ADO85575.1 is a 589 aa Streptomyces arenae PntE Baeyer-Villiger
+      monooxygenase.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34635 to UniProtKB:E3VWI7.
+  substrates:
+  - CHEBI:70780
+  - CHEBI:57783
+  - CHEBI:15379
+  - CHEBI:15378
+  products:
+  - CHEBI:70787
+  - CHEBI:58349
+  - CHEBI:15377
+- step_number: 30
   enzyme_id: UniProtKB:E3VWI3
   enzyme_label: Pentalenolactone synthase
   reaction_id: RHEA:34575
   notes: Streptomyces arenae PntM/CYP161C2 catalyzes the terminal oxidative rearrangement
-    of pentalenolactone F to pentalenolactone; upstream pentalenolactone F assembly
-    is not represented.
+    of pentalenolactone F to pentalenolactone; upstream PntE-catalyzed pentalenolactone
+    D formation is represented separately, but the intervening PntD conversion from
+    pentalenolactone D to pentalenolactone F remains uncurated.
   evidence:
   - reference: DOI:10.1021/ja111279h
     evidence_type: PRIMARY_EXPERIMENT
@@ -340,6 +391,101 @@ causal_graphs:
       notes: UniProtKB:E3VWI3 is the reviewed Streptomyces arenae PntM/CYP161C2 gene
         product from HQ292065 and annotates EC:1.14.19.8/RHEA:34575 for the pentalenolactone
         F to pentalenolactone oxidative rearrangement.
+- graph_id: pentalenolactone-pnte-oxidation
+  scope: BIOSYNTHESIS
+  description: Streptomyces arenae PntE-catalyzed Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenate
+    to pentalenolactone D.
+  nodes:
+  - node_id: deoxy_oxopentalenate
+    label: 1-deoxy-11-oxopentalenate
+    node_type: PRECURSOR
+    identifier: CHEBI:70780
+    grounding_status: GROUNDED
+  - node_id: pnte
+    label: PntE
+    node_type: ENZYME
+    identifier: UniProtKB:E3VWI7
+    grounding_status: GROUNDED
+  - node_id: pentalenolactone_d
+    label: pentalenolactone D
+    node_type: PRECURSOR
+    identifier: CHEBI:70787
+    grounding_status: GROUNDED
+  edges:
+  - subject: deoxy_oxopentalenate
+    predicate: is oxidized by
+    object: pnte
+    evidence:
+    - reference: DOI:10.1021/bi1019786
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Recombinant enzymes PenE and PntE, from S. exfoliatus and S. arenae,
+        respectively, catalyze the flavin-dependent Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenic
+        acid (7) to pentalenolactone D (8)
+      notes: Seo et al. biochemically tested the Streptomyces arenae Tu469 PntE enzyme
+        and placed the Baeyer-Villiger oxidation upstream of the PntD and PntM steps
+        toward pentalenolactone.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000057
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000057 is active and links PntE to UniProtKB:E3VWI7, GenPept ADO85575.1,
+        MIBiG BGC0000653, RHEA:34635 and the Seo et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000653.5 places ADO85575.1 in the active Streptomyces arenae
+        pentalenolactone biosynthetic gene cluster as pntE/PntE with a MITE0000057
+        100% identity gene-function annotation.
+    - reference: https://www.uniprot.org/uniprotkb/E3VWI7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:E3VWI7 is reviewed Streptomyces arenae PntE and annotates RHEA:34635
+        for 1-deoxy-11-oxopentalenate conversion to pentalenolactone D.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADO85575.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI Protein ADO85575.1 is a 589 aa Streptomyces arenae PntE Baeyer-Villiger
+        monooxygenase.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34635 to UniProtKB:E3VWI7.
+  - subject: pnte
+    predicate: forms
+    object: pentalenolactone_d
+    evidence:
+    - reference: DOI:10.1021/bi1019786
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Recombinant enzymes PenE and PntE, from S. exfoliatus and S. arenae,
+        respectively, catalyze the flavin-dependent Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenic
+        acid (7) to pentalenolactone D (8)
+      notes: Seo et al. biochemically tested the Streptomyces arenae Tu469 PntE enzyme
+        and placed the Baeyer-Villiger oxidation upstream of the PntD and PntM steps
+        toward pentalenolactone.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000057
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000057 is active and links PntE to UniProtKB:E3VWI7, GenPept ADO85575.1,
+        MIBiG BGC0000653, RHEA:34635 and the Seo et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000653.5 places ADO85575.1 in the active Streptomyces arenae
+        pentalenolactone biosynthetic gene cluster as pntE/PntE with a MITE0000057
+        100% identity gene-function annotation.
+    - reference: https://www.uniprot.org/uniprotkb/E3VWI7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:E3VWI7 is reviewed Streptomyces arenae PntE and annotates RHEA:34635
+        for 1-deoxy-11-oxopentalenate conversion to pentalenolactone D.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADO85575.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI Protein ADO85575.1 is a 589 aa Streptomyces arenae PntE Baeyer-Villiger
+        monooxygenase.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34635 to UniProtKB:E3VWI7.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -361,3 +507,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-02T00:08:14Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added an upstream PntE BIOSYNTHESIS pathway step and causal graph for pentalenolactone;
+    grounded Streptomyces arenae PntE to UniProtKB:E3VWI7; cited MITE0000057, MIBiG
+    BGC0000653, GenPept ADO85575.1, and the RHEA:34635 Baeyer-Villiger oxidation from
+    1-deoxy-11-oxopentalenate to pentalenolactone D; and renumbered the terminal PntM
+    step.
+  llm_assisted: true
