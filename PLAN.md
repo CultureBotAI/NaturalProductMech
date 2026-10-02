@@ -441,7 +441,7 @@ checker) already know it.
 ```
 NaturalProductMech/
   CLAUDE.md  README.md  PLAN.md  NEXT_TASKS.md
-  ATTRIBUTION.md  CITATION.cff  LICENSE (CC0)  LICENSE-DATA (CC BY 4.0)
+  ATTRIBUTION.md  CITATION.cff  LICENSE (scope)  LICENSE-CODE (BSD-3-Clause)  LICENSE-DATA (CC BY 4.0)
   justfile  pyproject.toml  uv.lock
   conf/sources.yaml            # sources, producer_scope taxon filter, class priority
   conf/np_roles.tsv            # ChEBI roles that admit a compound (allow list)

@@ -52,7 +52,7 @@ source is. In order:
    must never be seeded. This is a hard gate, not a weighting.
 
    The corpus's record content is **CC BY 4.0** (`LICENSE-DATA`), inherited
-   from the fleet decision in AntibioticMech #27; the code is CC0. Judge a
+   from the fleet decision in AntibioticMech #27; the code is BSD-3-Clause. Judge a
    candidate against that:
 
    - **CC0 / public domain** — acceptable. Wikidata (and therefore LOTUS's

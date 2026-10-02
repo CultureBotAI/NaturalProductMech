@@ -116,8 +116,9 @@ doi:10.1093/database/baaa062
 inventory that computes cross-corpus links.
 <https://github.com/CultureBotAI/AntibioticMech>
 
-## What is CC0
+## Project-authored material
 
-Everything that is this repository's own work rather than an upstream source's:
-the code, the schema, the tests, the configuration, the documentation, the
-research reports, and the curation decisions. See [LICENSE](LICENSE).
+Project-authored data and narrative documentation are [CC BY 4.0](LICENSE-DATA).
+Project-authored code, schemas, scripts, tests and website templates are
+[BSD-3-Clause](LICENSE-CODE). Source material retains its applicable terms and
+attributions. See [LICENSE](LICENSE) for the complete scope.
