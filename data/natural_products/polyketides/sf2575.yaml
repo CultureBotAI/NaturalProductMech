@@ -181,6 +181,154 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein ADE34498.1 is the 331 aa Streptomyces sp. SF2575 SsfM2 O-methyltransferase
         encoded by ssfM2 at complement(GQ409537.1:19848..20843).
+- graph_id: sf2575-ssfm4-c-methylation
+  scope: BIOSYNTHESIS
+  description: Streptomyces sp. SF2575 SsfM4-catalyzed SAM-dependent C-methylation
+    toward 6-methylpretetramide in SF2575 biosynthesis.
+  nodes:
+  - node_id: ssfm4_c_methylation_substrate
+    label: SsfM4 C-methylation substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: sam
+    label: S-adenosyl-L-methionine
+    node_type: PRECURSOR
+    identifier: CHEBI:59789
+    grounding_status: GROUNDED
+  - node_id: iron_sulfur_cluster
+    label: iron-sulfur cluster
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: ssfm4
+    label: SsfM4 C-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:D6MSU6
+    grounding_status: GROUNDED
+  - node_id: six_methylpretetramide
+    label: 6-methylpretetramide
+    node_type: PRECURSOR
+    identifier: CHEBI:27879
+    grounding_status: GROUNDED
+  edges:
+  - subject: ssfm4_c_methylation_substrate
+    predicate: is C-methylated by
+    object: ssfm4
+    notes: MITE represents SsfM4 as the C-methyltransferase for an SF2575-pathway
+      tetracycline intermediate; an exact local record or ChEBI grounding is absent
+      for the submitted substrate structure.
+    evidence:
+    - reference: DOI:10.1002/anie.201205426
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SsfM4 was identified to catalyze C6 C-methylation by heterologous reconstitution
+        in CH999.
+      notes: Wang et al. inactivated ssfM4 in a Streptomyces lividans K4-114 heterologous
+        host carrying the SF2575 ssf cluster, observed products lacking C6 methylation,
+        and concluded that the C6 methyl transfer occurs early to generate 6-methylpretetramide.
+    - reference: DOI:10.1021/ja907852c
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: C-6 methylation of 47, which is catalyzed by the OxyF homolog SsfM4.
+      notes: Pickens et al. placed ssfM4 in the 40-ORF SF2575 biosynthetic gene cluster
+        and heterologously reconstituted production of the oxidized 6-methylpretetramide
+        product WJ119 after adding ssfL2 to ssfY1Y2M4.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000022
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000022 is active, links SsfM4 to UniProtKB:D6MSU6, GenPept ADE34484.1
+        and MIBiG BGC0000269, lists SAM and FeS as cofactors, and represents a knock-out-supported
+        C-methylation reaction in the SF2575 biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000269.5/BGC0000269.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000022: Methylation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000269.5 places ssfM4/ADE34484.1 inside the active Streptomyces
+        sp. SF2575 biosynthetic gene cluster as a biosynthetic-additional locus with
+        a 100% identity MITE0000022 methylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/D6MSU6
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=ssfM4
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:D6MSU6 resolves as a 343 aa Streptomyces sp. SF2575
+        SsfM4 entry and cross-references EMBL GQ409537 protein ADE34484.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADE34484.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: C-methyltransferase
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein ADE34484.1 is the 343 aa Streptomyces sp. SF2575 SsfM4 C-methyltransferase
+        encoded by ssfM4 at GQ409537.1:4053..5084.
+  - subject: sam
+    predicate: supplies a methyl group to
+    object: ssfm4
+    notes: MITE lists SAM as an SsfM4 organic cofactor and UniProt annotates D6MSU6
+      as a SAM-binding methyltransferase-family protein.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000022
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000022 is active, links SsfM4 to UniProtKB:D6MSU6, GenPept ADE34484.1
+        and MIBiG BGC0000269, lists SAM and FeS as cofactors, and represents a knock-out-supported
+        C-methylation reaction in the SF2575 biosynthetic pathway.
+    - reference: https://www.uniprot.org/uniprotkb/D6MSU6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:D6MSU6 contains class I-like SAM-binding methyltransferase
+        family annotations on the current Streptomyces sp. SF2575 SsfM4 entry.
+  - subject: iron_sulfur_cluster
+    predicate: serves as cofactor for
+    object: ssfm4
+    notes: MITE lists FeS as an SsfM4 inorganic cofactor without specifying the iron-sulfur
+      cluster geometry.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000022
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000022 is active, links SsfM4 to UniProtKB:D6MSU6, GenPept ADE34484.1
+        and MIBiG BGC0000269, lists SAM and FeS as cofactors, and represents a knock-out-supported
+        C-methylation reaction in the SF2575 biosynthetic pathway.
+  - subject: ssfm4
+    predicate: forms
+    object: six_methylpretetramide
+    notes: The MITE reaction product matches the CHEBI:27879 SMILES for 6-methylpretetramide,
+      a locally inventoried ChEBI intermediate that does not have a NaturalProductRecord
+      in this corpus.
+    evidence:
+    - reference: DOI:10.1002/anie.201205426
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: SsfM4 was identified to catalyze C6 C-methylation by heterologous reconstitution
+        in CH999.
+      notes: Wang et al. inactivated ssfM4 in a Streptomyces lividans K4-114 heterologous
+        host carrying the SF2575 ssf cluster, observed products lacking C6 methylation,
+        and concluded that the C6 methyl transfer occurs early to generate 6-methylpretetramide.
+    - reference: DOI:10.1021/ja907852c
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: C-6 methylation of 47, which is catalyzed by the OxyF homolog SsfM4.
+      notes: Pickens et al. placed ssfM4 in the 40-ORF SF2575 biosynthetic gene cluster
+        and heterologously reconstituted production of the oxidized 6-methylpretetramide
+        product WJ119 after adding ssfL2 to ssfY1Y2M4.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000022
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000022 is active, links SsfM4 to UniProtKB:D6MSU6, GenPept ADE34484.1
+        and MIBiG BGC0000269, lists SAM and FeS as cofactors, and represents a knock-out-supported
+        C-methylation reaction in the SF2575 biosynthetic pathway.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000269.5/BGC0000269.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000022: Methylation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000269.5 places ssfM4/ADE34484.1 inside the active Streptomyces
+        sp. SF2575 biosynthetic gene cluster as a biosynthetic-additional locus with
+        a 100% identity MITE0000022 methylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/D6MSU6
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=ssfM4
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:D6MSU6 resolves as a 343 aa Streptomyces sp. SF2575
+        SsfM4 entry and cross-references EMBL GQ409537 protein ADE34484.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADE34484.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: C-methyltransferase
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein ADE34484.1 is the 343 aa Streptomyces sp. SF2575 SsfM4 C-methyltransferase
+        encoded by ssfM4 at GQ409537.1:4053..5084.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -196,4 +344,12 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Streptomyces sp. SF2575 SsfM2 O-methylation
     in SF2575 biosynthesis; grounded SsfM2 to UniProtKB:D6MSW0 and left the MITE substrate
     and product structures ungrounded.
+  llm_assisted: true
+- timestamp: '2026-10-02T17:30:16Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Streptomyces sp. SF2575 SsfM4 SAM-dependent
+    C-methylation toward 6-methylpretetramide in SF2575 biosynthesis; grounded SsfM4
+    to UniProtKB:D6MSU6, SAM to CHEBI:59789 and 6-methylpretetramide to CHEBI:27879,
+    and left the generic FeS cofactor and the MITE substrate structure ungrounded.
   llm_assisted: true
