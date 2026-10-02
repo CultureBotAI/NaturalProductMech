@@ -158,28 +158,6 @@ causal_graphs:
       notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
         gene cluster and assigned AndF as the dioxygenase that oxidatively rearranges
         the terminal andilesin intermediate to anditomin.
-    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000361
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: MITE0000361 is active and links AndF to UniProtKB:A0A097ZPD9, GenPept
-        BAP81860.1, MIBiG BGC0002612 and the in vitro conversion of andilesin C into
-        final anditomin by oxidative rearrangement.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0002612.3 places BAP81860.1 in the active Aspergillus stellatus
-        anditomin biosynthetic gene cluster as the AndF 2OG-Fe(II)-dependent dioxygenase.
-    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD9
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: Reviewed UniProtKB:A0A097ZPD9 is the 285 aa Emericella variicolor, also
-        Aspergillus stellatus, dioxygenase AndF entry and cross-references EMBL AB981314
-        protein BAP81860.1.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81860.1
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: NCBI GenPept BAP81860.1 is the Aspergillus stellatus AndF protein encoded
-        on AB981314.1:9234..10091.
 - graph_id: anditomin-andh-reduction
   scope: BIOSYNTHESIS
   description: Aspergillus stellatus AndH-catalyzed reduction of andilesin B to andilesin
@@ -247,28 +225,6 @@ causal_graphs:
         gene cluster and experimentally assigned its dedicated enzymes; MITE0000360
         and UniProtKB:A0A097ZPD4 both cite this paper for the AndH reduction step
         in the andilesin branch.
-    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000360
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: MITE0000360 is active and links AndH to UniProtKB:A0A097ZPD4, GenPept
-        BAP81862.1 and MIBiG BGC0002612 for heterologous-expression evidence of the
-        conversion of andilesin B to andilesin C.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0002612.3 places BAP81862.1 in the active Aspergillus stellatus
-        anditomin biosynthetic gene cluster as the AndH short-chain dehydrogenase/reductase.
-    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD4
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: Reviewed UniProtKB:A0A097ZPD4 is the 337 aa Emericella variicolor, also
-        Aspergillus stellatus, oxidoreductase AndH entry and cross-references EMBL
-        AB981314 protein BAP81862.1.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81862.1
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: NCBI GenPept BAP81862.1 is the Aspergillus stellatus AndH protein encoded
-        on AB981314.1:12753..13104 and AB981314.1:13154..13815.
 - graph_id: anditomin-andi-reduction
   scope: BIOSYNTHESIS
   description: Aspergillus stellatus AndI-catalyzed reduction of andilesin D to andilesin
@@ -336,28 +292,6 @@ causal_graphs:
         gene cluster and experimentally assigned its dedicated enzymes; MITE0000358
         and UniProtKB:A0A097ZPE8 both cite this paper for the AndI reduction step
         in the andilesin branch.
-    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000358
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: MITE0000358 is active and links AndI to UniProtKB:A0A097ZPE8, GenPept
-        BAP81863.1 and MIBiG BGC0002612 for heterologous-expression evidence of the
-        conversion of andilesin D to andilesin A.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0002612.3 places BAP81863.1 in the active Aspergillus stellatus
-        anditomin biosynthetic gene cluster as the AndI short-chain dehydrogenase/reductase.
-    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE8
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: Reviewed UniProtKB:A0A097ZPE8 is the 290 aa Emericella variicolor, also
-        Aspergillus stellatus, short-chain dehydrogenase AndI entry and cross-references
-        EMBL AB981314 protein BAP81863.1.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81863.1
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: NCBI GenPept BAP81863.1 is the Aspergillus stellatus AndI protein encoded
-        on AB981314.1:14876..14897 and AB981314.1:14946..15796.
 - graph_id: anditomin-andg-acetylation
   scope: BIOSYNTHESIS
   description: Aspergillus stellatus AndG-catalyzed O-acetylation of andilesin A to
@@ -426,29 +360,6 @@ causal_graphs:
         gene cluster and experimentally assigned its dedicated enzymes; MITE0000359
         and UniProtKB:A0A097ZPE2 both cite this paper for the AndG O-acetylation step
         in the andilesin branch.
-    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000359
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      snippet: Acetylates andilesin A at the C-6' hydroxyl group position, leading
-        to an instable intermediate that eventually results in andilesin B.
-      notes: MITE0000359 is active and links AndG to UniProtKB:A0A097ZPE2, GenPept
-        BAP81861.1 and MIBiG BGC0002612 for O-acetylation of andilesin A.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0002612.3 places BAP81861.1 in the active Aspergillus stellatus
-        anditomin biosynthetic gene cluster as the AndG acetyltransferase.
-    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE2
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: Reviewed UniProtKB:A0A097ZPE2 is the 481 aa Emericella variicolor, also
-        Aspergillus stellatus, O-acetyltransferase AndG entry and cross-references
-        EMBL AB981314 protein BAP81861.1.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81861.1
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: NCBI GenPept BAP81861.1 is the Aspergillus stellatus AndG protein encoded
-        on complement(AB981314.1:10918..12363).
 - graph_id: anditomin-andj-baeyer-villiger-oxidation
   scope: BIOSYNTHESIS
   description: Aspergillus stellatus AndJ-catalyzed Baeyer-Villiger oxidation of andiconin
@@ -518,30 +429,6 @@ causal_graphs:
         gene cluster and experimentally assigned its dedicated enzymes; MITE0000357
         and UniProtKB:A0A097ZPG2 both cite this paper for the AndJ Baeyer-Villiger
         oxidation step in the andilesin branch.
-    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000357
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      snippet: Conversion of andiconin to andilesin D by introduction of a lacton
-        ring..
-      notes: MITE0000357 is active and links AndJ to UniProtKB:A0A097ZPG2, GenPept
-        BAP81864.1 and MIBiG BGC0002612 for Baeyer-Villiger oxidation of andiconin
-        to andilesin D.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0002612.3 places BAP81864.1 in the active Aspergillus stellatus
-        anditomin biosynthetic gene cluster as the AndJ FAD-dependent monooxygenase.
-    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPG2
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: Reviewed UniProtKB:A0A097ZPG2 is the 633 aa Emericella variicolor, also
-        Aspergillus stellatus, FAD-binding monooxygenase AndJ entry and cross-references
-        EMBL AB981314 protein BAP81864.1.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81864.1
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: NCBI GenPept BAP81864.1 is the Aspergillus stellatus AndJ protein encoded
-        on complement(AB981314.1:15881..17782).
 - graph_id: anditomin-anda-structural-rearrangement
   scope: BIOSYNTHESIS
   description: Aspergillus stellatus AndA-catalyzed structural rearrangement of preandiloid
@@ -609,29 +496,6 @@ causal_graphs:
         gene cluster and experimentally assigned its dedicated enzymes; MITE0000356
         and UniProtKB:A0A097ZPD5 both cite this paper for the AndA structural rearrangement
         of preandiloid C to andiconin.
-    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000356
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      snippet: Conversion of preandiloid C to andiconin.
-      notes: MITE0000356 is active and links AndA to UniProtKB:A0A097ZPD5, GenPept
-        BAP81855.1 and MIBiG BGC0002612 for in vitro and heterologous-expression evidence
-        of structural rearrangement from preandiloid C to andiconin.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0002612.3 places BAP81855.1 in the active Aspergillus stellatus
-        anditomin biosynthetic gene cluster as the AndA 2OG-Fe(II)-dependent dioxygenase.
-    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD5
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: Reviewed UniProtKB:A0A097ZPD5 is the 293 aa Emericella variicolor, also
-        Aspergillus stellatus, dioxygenase AndA entry and cross-references EMBL AB981314
-        protein BAP81855.1.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81855.1
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: NCBI GenPept BAP81855.1 is the Aspergillus stellatus AndA protein encoded
-        on complement(AB981314.1:101..982).
 - graph_id: anditomin-andk-hydroxylation
   scope: BIOSYNTHESIS
   description: Aspergillus stellatus AndK-catalyzed hydroxylation of DMOA in the anditomin
@@ -699,29 +563,6 @@ causal_graphs:
         gene cluster and experimentally assigned its dedicated enzymes; MITE0000351
         and UniProtKB:A0A097ZPE4 both cite this paper for AndK conversion of DMOA
         toward DHDMP.
-    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000351
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      snippet: Hydroxylation as the first step in the anditomin biosynthetic pathway.
-      notes: MITE0000351 is active and links AndK to UniProtKB:A0A097ZPE4, GenPept
-        BAP81865.1 and MIBiG BGC0002612 for heterologous-expression evidence of the
-        first AndK hydroxylation reaction from DMOA to hydroxymethylated DMOA.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0002612.3 places BAP81865.1 in the active Aspergillus stellatus
-        anditomin biosynthetic gene cluster as the AndK cytochrome P450 monooxygenase/hydrolase.
-    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE4
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: Reviewed UniProtKB:A0A097ZPE4 is the 865 aa Emericella variicolor, also
-        Aspergillus stellatus, cytochrome P450 monooxygenase AndK entry and cross-references
-        EMBL AB981314 protein BAP81865.1.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81865.1
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: NCBI GenPept BAP81865.1 is the Aspergillus stellatus AndK protein encoded
-        on AB981314.1 exons 18286..21221.
 - graph_id: anditomin-andk-cyclization
   scope: BIOSYNTHESIS
   description: Aspergillus stellatus AndK-catalyzed cyclization of hydroxymethylated
@@ -843,29 +684,6 @@ causal_graphs:
         gene cluster and experimentally assigned its dedicated enzymes; MITE0000352
         and UniProtKB:A0A097ZPE3 both cite this paper for AndD prenylation of DHDMP
         to farnesyl-DHDMP.
-    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000352
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      snippet: Prenylation as the third step in the anditomin biosynthetic pathway.
-      notes: MITE0000352 is active and links AndD to UniProtKB:A0A097ZPE3, GenPept
-        BAP81858.1 and MIBiG BGC0002612 for heterologous-expression evidence of DHDMP
-        prenylation to farnesyl-DHDMP.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0002612.3 places BAP81858.1 in the active Aspergillus stellatus
-        anditomin biosynthetic gene cluster as the AndD prenyltransferase.
-    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE3
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: Reviewed UniProtKB:A0A097ZPE3 is the 327 aa Emericella variicolor, also
-        Aspergillus stellatus, polyprenyl transferase AndD entry and cross-references
-        EMBL AB981314 protein BAP81858.1.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81858.1
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: NCBI GenPept BAP81858.1 is the Aspergillus stellatus AndD protein encoded
-        on complement(AB981314.1:4149..5132).
 - graph_id: anditomin-ande-epoxidation
   scope: BIOSYNTHESIS
   description: Aspergillus stellatus AndE-catalyzed epoxidation of farnesyl-DHDMP
@@ -934,30 +752,6 @@ causal_graphs:
         gene cluster and experimentally assigned its dedicated enzymes; MITE0000353
         and UniProtKB:A0A097ZPF7 both cite this paper for AndE epoxidation of farnesyl-DHDMP
         to epoxyfarnesyl-DHDMP.
-    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000353
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      snippet: Epoxidation of farnesyl-DHDMP to give epoxyfarnesyl-DHDMP in the anditomin
-        biosynthetic pathway.
-      notes: MITE0000353 is active and links AndE to UniProtKB:A0A097ZPF7, GenPept
-        BAP81859.1 and MIBiG BGC0002612 for heterologous-expression evidence of farnesyl-DHDMP
-        epoxidation to epoxyfarnesyl-DHDMP.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0002612.3 places BAP81859.1 in the active Aspergillus stellatus
-        anditomin biosynthetic gene cluster as the AndE FAD-dependent monooxygenase.
-    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPF7
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: Reviewed UniProtKB:A0A097ZPF7 is the 471 aa Emericella variicolor, also
-        Aspergillus stellatus, FAD-dependent monooxygenase AndE entry and cross-references
-        EMBL AB981314 protein BAP81859.1.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81859.1
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: NCBI GenPept BAP81859.1 is the Aspergillus stellatus AndE protein encoded
-        on complement(AB981314.1:5331..6894).
 - graph_id: anditomin-andb-cyclization
   scope: BIOSYNTHESIS
   description: Aspergillus stellatus AndB-catalyzed cyclization of epoxyfarnesyl-DHDMP
@@ -1026,29 +820,6 @@ causal_graphs:
         gene cluster and experimentally assigned its dedicated enzymes; MITE0000354
         and UniProtKB:A0A097ZPD8 both cite this paper for AndB cyclization of epoxyfarnesyl-DHDMP
         to preandiloid A.
-    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000354
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-02'
-      snippet: Converts epoxyfarnesyl-DHDMP to preandiloid A.
-      notes: MITE0000354 is active and links AndB to UniProtKB:A0A097ZPD8, GenPept
-        BAP81856.1 and MIBiG BGC0002612 for heterologous-expression evidence of epoxyfarnesyl-DHDMP
-        cyclization to preandiloid A.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-02'
-      notes: MIBiG BGC0002612.3 places BAP81856.1 in the active Aspergillus stellatus
-        anditomin biosynthetic gene cluster as the AndB terpene cyclase.
-    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD8
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-02'
-      notes: Reviewed UniProtKB:A0A097ZPD8 is the 236 aa Emericella variicolor, also
-        Aspergillus stellatus, terpene cyclase AndB entry and cross-references EMBL
-        AB981314 protein BAP81856.1.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81856.1
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-02'
-      notes: NCBI GenPept BAP81856.1 is the Aspergillus stellatus AndB protein encoded
-        on AB981314.1:1720..2222 and AB981314.1:2294..2501.
 - graph_id: anditomin-andc-oxidation
   scope: BIOSYNTHESIS
   description: Aspergillus stellatus AndC-catalyzed oxidation of preandiloid A to
@@ -1118,30 +889,6 @@ causal_graphs:
         gene cluster and experimentally assigned its dedicated enzymes; MITE0000355
         and UniProtKB:A0A097ZPC9 both cite this paper for AndC oxidation of preandiloid
         A to preandiloid B.
-    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000355
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-02'
-      snippet: Conversion of preandiloid A at C-3 hydroxyl to give preandiloid B.
-      notes: MITE0000355 is active and links AndC to UniProtKB:A0A097ZPC9, GenPept
-        BAP81857.1 and MIBiG BGC0002612 for heterologous-expression evidence of C-3
-        hydroxyl oxidation of preandiloid A to preandiloid B.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-02'
-      notes: MIBiG BGC0002612.3 places BAP81857.1 in the active Aspergillus stellatus
-        anditomin biosynthetic gene cluster as the AndC short-chain dehydrogenase/reductase.
-    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPC9
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-02'
-      notes: Reviewed UniProtKB:A0A097ZPC9 is the 252 aa Emericella variicolor, also
-        Aspergillus stellatus, short-chain dehydrogenase AndC entry and cross-references
-        EMBL AB981314 protein BAP81857.1.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81857.1
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-02'
-      notes: NCBI GenPept BAP81857.1 is the Aspergillus stellatus AndC protein encoded
-        on AB981314.1:3007..3027, AB981314.1:3087..3525, AB981314.1:3581..3658 and
-        AB981314.1:3726..3946.
 - graph_id: anditomin-anda-dehydrogenation
   scope: BIOSYNTHESIS
   description: Aspergillus stellatus AndA-catalyzed dehydrogenation of preandiloid
@@ -1210,29 +957,132 @@ causal_graphs:
         gene cluster and experimentally assigned its dedicated enzymes; MITE0000356
         and UniProtKB:A0A097ZPD5 both cite this paper for AndA dehydrogenation of
         preandiloid B to preandiloid C.
-    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000356
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      snippet: Conversion of preandiloid B yielding the enone preandiloid C.
-      notes: MITE0000356 is active and links AndA to UniProtKB:A0A097ZPD5, GenPept
-        BAP81855.1 and MIBiG BGC0002612 for in vitro and heterologous-expression evidence
-        of dehydrogenation from preandiloid B to preandiloid C.
+- graph_id: anditomin-andm-polyketide-synthesis
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndM-catalyzed polyketide synthesis of DMOA in
+    the anditomin biosynthetic pathway.
+  nodes:
+  - node_id: acetyl_coa
+    label: acetyl-CoA
+    node_type: PRECURSOR
+    identifier: CHEBI:57288
+    grounding_status: GROUNDED
+  - node_id: malonyl_coa
+    label: malonyl-CoA
+    node_type: PRECURSOR
+    identifier: CHEBI:57384
+    grounding_status: GROUNDED
+  - node_id: sam
+    label: S-adenosyl-L-methionine
+    node_type: PRECURSOR
+    identifier: CHEBI:59789
+    grounding_status: GROUNDED
+  - node_id: andm
+    label: AndM non-reducing polyketide synthase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPE0
+    grounding_status: GROUNDED
+  - node_id: dmoa
+    label: 3,5-dimethylorsellinic acid
+    node_type: PRECURSOR
+    identifier: CHEBI:132131
+    grounding_status: GROUNDED
+  edges:
+  - subject: acetyl_coa
+    predicate: supplies the starter unit to
+    object: andm
+    notes: RHEA:49628 consumes one acetyl-CoA as the starter unit for AndM-catalyzed
+      3,5-dimethylorsellinate synthesis.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster; UniProtKB:A0A097ZPE0 cites this paper for the first pathway
+        step, AndM synthesis of 3,5-dimethylorsellinic acid.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0002612.3 places BAP81855.1 in the active Aspergillus stellatus
-        anditomin biosynthetic gene cluster as the AndA 2OG-Fe(II)-dependent dioxygenase.
-    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD5
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0002612.3 places BAP81867.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndM polyketide synthase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE0
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: Reviewed UniProtKB:A0A097ZPD5 is the 293 aa Emericella variicolor, also
-        Aspergillus stellatus, dioxygenase AndA entry and cross-references EMBL AB981314
-        protein BAP81855.1.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81855.1
+      retrieved_on: '2026-10-02'
+      notes: Reviewed UniProtKB:A0A097ZPE0 is the 2,430 aa Emericella variicolor,
+        also Aspergillus stellatus, non-reducing polyketide synthase AndM entry; it
+        cross-references EMBL AB981314 protein BAP81867.1 and assigns the RHEA:49628
+        3,5-dimethylorsellinate-forming reaction to AndM.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-01'
-      notes: NCBI GenPept BAP81855.1 is the Aspergillus stellatus AndA protein encoded
-        on complement(AB981314.1:101..982).
+      retrieved_on: '2026-10-02'
+      notes: The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:49628, the 3,5-dimethylorsellinate-forming
+        reaction from malonyl-CoA, acetyl-CoA and S-adenosyl-L-methionine, to UniProtKB:A0A097ZPE0.
+  - subject: malonyl_coa
+    predicate: supplies extender units to
+    object: andm
+    notes: RHEA:49628 consumes three malonyl-CoA units for AndM-catalyzed 3,5-dimethylorsellinate
+      synthesis.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster; UniProtKB:A0A097ZPE0 cites this paper for the first pathway
+        step, AndM synthesis of 3,5-dimethylorsellinic acid.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0002612.3 places BAP81867.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndM polyketide synthase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Reviewed UniProtKB:A0A097ZPE0 is the 2,430 aa Emericella variicolor,
+        also Aspergillus stellatus, non-reducing polyketide synthase AndM entry; it
+        cross-references EMBL AB981314 protein BAP81867.1 and assigns the RHEA:49628
+        3,5-dimethylorsellinate-forming reaction to AndM.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:49628, the 3,5-dimethylorsellinate-forming
+        reaction from malonyl-CoA, acetyl-CoA and S-adenosyl-L-methionine, to UniProtKB:A0A097ZPE0.
+  - subject: sam
+    predicate: supplies methyl groups to
+    object: andm
+    notes: RHEA:49628 consumes two S-adenosyl-L-methionine molecules for AndM-catalyzed
+      methylation during 3,5-dimethylorsellinate synthesis.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster; UniProtKB:A0A097ZPE0 cites this paper for the first pathway
+        step, AndM synthesis of 3,5-dimethylorsellinic acid.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0002612.3 places BAP81867.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndM polyketide synthase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: Reviewed UniProtKB:A0A097ZPE0 is the 2,430 aa Emericella variicolor,
+        also Aspergillus stellatus, non-reducing polyketide synthase AndM entry; it
+        cross-references EMBL AB981314 protein BAP81867.1 and assigns the RHEA:49628
+        3,5-dimethylorsellinate-forming reaction to AndM.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:49628, the 3,5-dimethylorsellinate-forming
+        reaction from malonyl-CoA, acetyl-CoA and S-adenosyl-L-methionine, to UniProtKB:A0A097ZPE0.
+  - subject: andm
+    predicate: forms
+    object: dmoa
+    notes: AndM catalyzes the first anditomin pathway step, producing the DMOA scaffold
+      later hydroxylated and cyclized by AndK.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster; UniProtKB:A0A097ZPE0 cites this paper for the first pathway
+        step, AndM synthesis of 3,5-dimethylorsellinic acid.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1332,4 +1182,12 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndK cyclization
     of hydroxymethylated DMOA to DHDMP; grounded AndK to UniProtKB:A0A097ZPE4, hydroxymethylated
     DMOA to pubchem.compound:91820253 and DHDMP to pubchem.compound:86136221.
+  llm_assisted: true
+- timestamp: '2026-10-02T09:17:49Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndM polyketide
+    synthesis of DMOA in the anditomin pathway; grounded AndM to UniProtKB:A0A097ZPE0
+    and compacted duplicated secondary-edge anditomin evidence blocks without changing
+    graph claims.
   llm_assisted: true
