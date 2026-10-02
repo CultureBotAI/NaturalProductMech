@@ -336,6 +336,95 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-63c98789be
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: nystatin-a1-nysl-c10-hydroxylation
+  scope: BIOSYNTHESIS
+  description: Streptomyces noursei NysL-catalyzed C-10 hydroxylation in the last
+    step of nystatin A1 biosynthesis.
+  nodes:
+  - node_id: ten_deoxynystatin
+    label: 10-deoxynystatin
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: nysl
+    label: NysL cytochrome P450 monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:Q9L4X0
+    grounding_status: GROUNDED
+  - node_id: nystatin_a1
+    label: nystatin A1
+    node_type: COMPOUND
+    identifier: CHEBI:473992
+    grounding_status: GROUNDED
+  edges:
+  - subject: ten_deoxynystatin
+    predicate: is C-10 hydroxylated by
+    object: nysl
+    notes: Genetic replacement of nysL caused Streptomyces noursei to accumulate 10-deoxynystatin,
+      and purified recombinant NysL used 10-deoxynystatin as an in vitro substrate.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.4.2514-2519.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: NysL is a hydroxylase responsible for the post-polyketide synthase
+        modification of 10-deoxynystatin at position C-10.
+      notes: Volokhan et al. replaced nysL in Streptomyces noursei, observed 10-deoxynystatin
+        accumulation, heterologously expressed His-tagged NysL in Escherichia coli
+        and assayed the purified enzyme with 10-deoxynystatin as substrate.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000322
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000322 is active and links NysL to UniProtKB:Q9L4X0, GenPept AAF71769.1,
+        MIBiG BGC0000115 and an in vitro C10-hydroxylation reaction in nystatin A1
+        biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000115.5 places AAF71769.1 in the active Streptomyces noursei
+        ATCC 11455 nystatin biosynthetic gene cluster as nysL/NysL.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L4X0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:Q9L4X0 is the unreviewed 394 aa Streptomyces noursei NysL entry
+        and cross-references GenBank AF263912 protein AAF71769.1.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: GenBank AF263912.1 is the Streptomyces noursei ATCC 11455 nystatin biosynthetic
+        gene cluster sequence and maps nysL to the NysL protein accession AAF71769.1.
+  - subject: nysl
+    predicate: forms
+    object: nystatin_a1
+    notes: NysL installs the C-10 hydroxyl group during the last tailoring step from
+      10-deoxynystatin toward the final BGC0000115 nystatin A1 product.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.4.2514-2519.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: NysL is a hydroxylase responsible for the post-polyketide synthase
+        modification of 10-deoxynystatin at position C-10.
+      notes: Volokhan et al. replaced nysL in Streptomyces noursei, observed 10-deoxynystatin
+        accumulation, heterologously expressed His-tagged NysL in Escherichia coli
+        and assayed the purified enzyme with 10-deoxynystatin as substrate.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000322
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000322 is active and links NysL to UniProtKB:Q9L4X0, GenPept AAF71769.1,
+        MIBiG BGC0000115 and an in vitro C10-hydroxylation reaction in nystatin A1
+        biosynthesis.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000115.5/BGC0000115.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000115.5 places AAF71769.1 in the active Streptomyces noursei
+        ATCC 11455 nystatin biosynthetic gene cluster as nysL/NysL.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L4X0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:Q9L4X0 is the unreviewed 394 aa Streptomyces noursei NysL entry
+        and cross-references GenBank AF263912 protein AAF71769.1.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: GenBank AF263912.1 is the Streptomyces noursei ATCC 11455 nystatin biosynthetic
+        gene cluster sequence and maps nysL to the NysL protein accession AAF71769.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -345,3 +434,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-02T01:31:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Streptomyces noursei NysL C-10 hydroxylation
+    in the final nystatin A1 tailoring step; grounded NysL to UniProtKB:Q9L4X0 and
+    left 10-deoxynystatin ungrounded because it is absent from the local corpus.
+  llm_assisted: true
