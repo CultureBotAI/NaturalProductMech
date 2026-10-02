@@ -722,6 +722,96 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept BAP81865.1 is the Aspergillus stellatus AndK protein encoded
         on AB981314.1 exons 18286..21221.
+- graph_id: anditomin-andd-prenylation
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndD-catalyzed prenylation of DHDMP in the anditomin
+    biosynthetic pathway.
+  nodes:
+  - node_id: dhdmp
+    label: 5,7-dihydroxy-4,6-dimethylphthalide
+    node_type: PRECURSOR
+    identifier: pubchem.compound:86136221
+    grounding_status: GROUNDED
+  - node_id: andd
+    label: AndD prenyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPE3
+    grounding_status: GROUNDED
+  - node_id: farnesyl_dhdmp
+    label: farnesyl-DHDMP
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91819848
+    grounding_status: GROUNDED
+  edges:
+  - subject: dhdmp
+    predicate: is prenylated by
+    object: andd
+    notes: AndD prenylates DHDMP in the anditomin pathway before AndE epoxidation
+      of the farnesylated product.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000352
+        and UniProtKB:A0A097ZPE3 both cite this paper for AndD prenylation of DHDMP
+        to farnesyl-DHDMP.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000352
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Prenylation as the third step in the anditomin biosynthetic pathway.
+      notes: MITE0000352 is active and links AndD to UniProtKB:A0A097ZPE3, GenPept
+        BAP81858.1 and MIBiG BGC0002612 for heterologous-expression evidence of DHDMP
+        prenylation to farnesyl-DHDMP.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81858.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndD prenyltransferase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPE3 is the 327 aa Emericella variicolor, also
+        Aspergillus stellatus, polyprenyl transferase AndD entry and cross-references
+        EMBL AB981314 protein BAP81858.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81858.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81858.1 is the Aspergillus stellatus AndD protein encoded
+        on complement(AB981314.1:4149..5132).
+  - subject: andd
+    predicate: forms
+    object: farnesyl_dhdmp
+    notes: MITE0000352 describes AndD-dependent prenylation of DHDMP to generate farnesyl-DHDMP.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000352
+        and UniProtKB:A0A097ZPE3 both cite this paper for AndD prenylation of DHDMP
+        to farnesyl-DHDMP.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000352
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Prenylation as the third step in the anditomin biosynthetic pathway.
+      notes: MITE0000352 is active and links AndD to UniProtKB:A0A097ZPE3, GenPept
+        BAP81858.1 and MIBiG BGC0002612 for heterologous-expression evidence of DHDMP
+        prenylation to farnesyl-DHDMP.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81858.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndD prenyltransferase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPE3 is the 327 aa Emericella variicolor, also
+        Aspergillus stellatus, polyprenyl transferase AndD entry and cross-references
+        EMBL AB981314 protein BAP81858.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81858.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81858.1 is the Aspergillus stellatus AndD protein encoded
+        on complement(AB981314.1:4149..5132).
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -779,4 +869,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndK hydroxylation
     of DMOA to hydroxymethylated DMOA; grounded AndK to UniProtKB:A0A097ZPE4, DMOA
     to CHEBI:132131 and the product to pubchem.compound:91820253.
+  llm_assisted: true
+- timestamp: '2026-10-02T06:13:17Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndD prenylation
+    of DHDMP to farnesyl-DHDMP; grounded AndD to UniProtKB:A0A097ZPE3, DHDMP to pubchem.compound:86136221
+    and farnesyl-DHDMP to pubchem.compound:91819848.
   llm_assisted: true
