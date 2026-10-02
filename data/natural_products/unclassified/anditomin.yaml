@@ -1088,6 +1088,97 @@ causal_graphs:
       notes: NCBI GenPept BAP81857.1 is the Aspergillus stellatus AndC protein encoded
         on AB981314.1:3007..3027, AB981314.1:3087..3525, AB981314.1:3581..3658 and
         AB981314.1:3726..3946.
+- graph_id: anditomin-anda-dehydrogenation
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndA-catalyzed dehydrogenation of preandiloid
+    B to preandiloid C.
+  nodes:
+  - node_id: preandiloid_b
+    label: preandiloid B
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91819922
+    grounding_status: GROUNDED
+  - node_id: anda
+    label: AndA dioxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPD5
+    grounding_status: GROUNDED
+  - node_id: preandiloid_c
+    label: preandiloid C
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91820040
+    grounding_status: GROUNDED
+  edges:
+  - subject: preandiloid_b
+    predicate: is dehydrogenated by
+    object: anda
+    notes: AndA dehydrogenates preandiloid B to yield the enone preandiloid C before
+      its separate AndA-catalyzed structural rearrangement.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000356
+        and UniProtKB:A0A097ZPD5 both cite this paper for AndA dehydrogenation of
+        preandiloid B to preandiloid C.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000356
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Conversion of preandiloid B yielding the enone preandiloid C.
+      notes: MITE0000356 is active and links AndA to UniProtKB:A0A097ZPD5, GenPept
+        BAP81855.1 and MIBiG BGC0002612 for in vitro and heterologous-expression evidence
+        of dehydrogenation from preandiloid B to preandiloid C.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81855.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndA 2OG-Fe(II)-dependent dioxygenase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPD5 is the 293 aa Emericella variicolor, also
+        Aspergillus stellatus, dioxygenase AndA entry and cross-references EMBL AB981314
+        protein BAP81855.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81855.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81855.1 is the Aspergillus stellatus AndA protein encoded
+        on complement(AB981314.1:101..982).
+  - subject: anda
+    predicate: forms
+    object: preandiloid_c
+    notes: MITE0000356 describes AndA-dependent dehydrogenation of preandiloid B to
+      preandiloid C.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000356
+        and UniProtKB:A0A097ZPD5 both cite this paper for AndA dehydrogenation of
+        preandiloid B to preandiloid C.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000356
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Conversion of preandiloid B yielding the enone preandiloid C.
+      notes: MITE0000356 is active and links AndA to UniProtKB:A0A097ZPD5, GenPept
+        BAP81855.1 and MIBiG BGC0002612 for in vitro and heterologous-expression evidence
+        of dehydrogenation from preandiloid B to preandiloid C.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81855.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndA 2OG-Fe(II)-dependent dioxygenase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPD5 is the 293 aa Emericella variicolor, also
+        Aspergillus stellatus, dioxygenase AndA entry and cross-references EMBL AB981314
+        protein BAP81855.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81855.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81855.1 is the Aspergillus stellatus AndA protein encoded
+        on complement(AB981314.1:101..982).
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1173,4 +1264,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndC oxidation
     of preandiloid A to preandiloid B; grounded AndC to UniProtKB:A0A097ZPC9, preandiloid
     A to pubchem.compound:91819981 and preandiloid B to pubchem.compound:91819922.
+  llm_assisted: true
+- timestamp: '2026-10-02T08:16:23Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndA dehydrogenation
+    of preandiloid B to preandiloid C; grounded AndA to UniProtKB:A0A097ZPD5, preandiloid
+    B to pubchem.compound:91819922 and preandiloid C to pubchem.compound:91820040.
   llm_assisted: true
