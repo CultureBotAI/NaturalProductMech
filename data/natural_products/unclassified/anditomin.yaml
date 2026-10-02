@@ -632,6 +632,96 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept BAP81855.1 is the Aspergillus stellatus AndA protein encoded
         on complement(AB981314.1:101..982).
+- graph_id: anditomin-andk-hydroxylation
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndK-catalyzed hydroxylation of DMOA in the anditomin
+    biosynthetic pathway.
+  nodes:
+  - node_id: dmoa
+    label: 3,5-dimethylorsellinic acid
+    node_type: PRECURSOR
+    identifier: CHEBI:132131
+    grounding_status: GROUNDED
+  - node_id: andk
+    label: AndK cytochrome P450
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPE4
+    grounding_status: GROUNDED
+  - node_id: hydroxymethyl_dmoa
+    label: 2,4-dihydroxy-6-(hydroxymethyl)-3,5-dimethylbenzoic acid
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91820253
+    grounding_status: GROUNDED
+  edges:
+  - subject: dmoa
+    predicate: is hydroxylated by
+    object: andk
+    notes: AndK catalyzes the first hydroxylation of DMOA in the anditomin pathway.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000351
+        and UniProtKB:A0A097ZPE4 both cite this paper for AndK conversion of DMOA
+        toward DHDMP.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000351
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Hydroxylation as the first step in the anditomin biosynthetic pathway.
+      notes: MITE0000351 is active and links AndK to UniProtKB:A0A097ZPE4, GenPept
+        BAP81865.1 and MIBiG BGC0002612 for heterologous-expression evidence of the
+        first AndK hydroxylation reaction from DMOA to hydroxymethylated DMOA.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81865.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndK cytochrome P450 monooxygenase/hydrolase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPE4 is the 865 aa Emericella variicolor, also
+        Aspergillus stellatus, cytochrome P450 monooxygenase AndK entry and cross-references
+        EMBL AB981314 protein BAP81865.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81865.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81865.1 is the Aspergillus stellatus AndK protein encoded
+        on AB981314.1 exons 18286..21221.
+  - subject: andk
+    predicate: forms
+    object: hydroxymethyl_dmoa
+    notes: MITE0000351 describes AndK-dependent hydroxylation of DMOA to hydroxymethylated
+      DMOA before AndK-dependent cyclization to DHDMP.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000351
+        and UniProtKB:A0A097ZPE4 both cite this paper for AndK conversion of DMOA
+        toward DHDMP.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000351
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Hydroxylation as the first step in the anditomin biosynthetic pathway.
+      notes: MITE0000351 is active and links AndK to UniProtKB:A0A097ZPE4, GenPept
+        BAP81865.1 and MIBiG BGC0002612 for heterologous-expression evidence of the
+        first AndK hydroxylation reaction from DMOA to hydroxymethylated DMOA.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81865.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndK cytochrome P450 monooxygenase/hydrolase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPE4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPE4 is the 865 aa Emericella variicolor, also
+        Aspergillus stellatus, cytochrome P450 monooxygenase AndK entry and cross-references
+        EMBL AB981314 protein BAP81865.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81865.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81865.1 is the Aspergillus stellatus AndK protein encoded
+        on AB981314.1 exons 18286..21221.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -682,4 +772,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndA structural
     rearrangement of preandiloid C to andiconin; grounded AndA to UniProtKB:A0A097ZPD5,
     preandiloid C to pubchem.compound:91820040 and andiconin to pubchem.compound:91820403.
+  llm_assisted: true
+- timestamp: '2026-10-02T05:42:26Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndK hydroxylation
+    of DMOA to hydroxymethylated DMOA; grounded AndK to UniProtKB:A0A097ZPE4, DMOA
+    to CHEBI:132131 and the product to pubchem.compound:91820253.
   llm_assisted: true
