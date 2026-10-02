@@ -168,6 +168,169 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept EED49867.1 is the Aspergillus flavus NRRL3357 cytochrome
         P450 protein encoded by AFLA_066890 on EQ963479.1.
+- graph_id: leporin-b-lepi-dehydration-cyclization
+  scope: BIOSYNTHESIS
+  description: Aspergillus flavus LepI-catalyzed stereoselective dehydration and hetero-Diels-Alder
+    cyclization en route to leporin C.
+  nodes:
+  - node_id: alcohol_4
+    label: leporin alcohol 4
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: lepi
+    label: LepI SAM-dependent pericyclase
+    node_type: ENZYME
+    identifier: UniProtKB:B8NJH3
+    grounding_status: GROUNDED
+  - node_id: quinone_methide_5
+    label: (E)-o-quinone methide 5
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: leporin_c
+    label: leporin C
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: alcohol_4
+    predicate: is stereoselectively dehydrated by
+    object: lepi
+    notes: LepI dehydrates alcohol intermediate 4 to the (E)-5 o-quinone methide species
+      that enters the pericyclic branch toward leporin C.
+    evidence:
+    - reference: DOI:10.1038/nature23882
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: which requires stereoselective dehydration to yield (E)-5 and subsequent
+        HDA reaction to 2
+      notes: Ohashi et al. heterologously expressed lepI in Aspergillus nidulans and
+        purified LepI from Escherichia coli; both assays supported LepI stereoselectively
+        dehydrating alcohol 4 and controlling the pericyclic reactions that produce
+        leporin C.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000316
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000316 is active and links LepI to UniProtKB:B8NJH3, GenPept EED49872.1,
+        MIBiG BGC0001445, stereoselective dehydration and a hetero-Diels-Alder reaction.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001445.5/BGC0001445.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001445.5 places EED49872.1 in the active Aspergillus flavus
+        NRRL3357 leporin B biosynthetic gene cluster as the AFLA_066940 O-methyltransferase
+        locus.
+    - reference: https://www.uniprot.org/uniprotkb/B8NJH3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:B8NJH3 is the 387 aa Aspergillus flavus NRRL3357 O-methyltransferase
+        LepI entry and cross-references EMBL EQ963479 protein EED49872.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EED49872.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept EED49872.1 is the Aspergillus flavus NRRL3357 putative O-methyltransferase
+        encoded by AFLA_066940 on EQ963479.1.
+  - subject: lepi
+    predicate: forms
+    object: quinone_methide_5
+    notes: MITE represents LepI stereoselective dehydration as the conversion of alcohol
+      4 into the (E)-o-quinone methide intermediate in the leporin pathway.
+    evidence:
+    - reference: DOI:10.1038/nature23882
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: which requires stereoselective dehydration to yield (E)-5 and subsequent
+        HDA reaction to 2
+      notes: Ohashi et al. heterologously expressed lepI in Aspergillus nidulans and
+        purified LepI from Escherichia coli; both assays supported LepI stereoselectively
+        dehydrating alcohol 4 and controlling the pericyclic reactions that produce
+        leporin C.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000316
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000316 is active and links LepI to UniProtKB:B8NJH3, GenPept EED49872.1,
+        MIBiG BGC0001445, stereoselective dehydration and a hetero-Diels-Alder reaction.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001445.5/BGC0001445.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001445.5 places EED49872.1 in the active Aspergillus flavus
+        NRRL3357 leporin B biosynthetic gene cluster as the AFLA_066940 O-methyltransferase
+        locus.
+    - reference: https://www.uniprot.org/uniprotkb/B8NJH3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:B8NJH3 is the 387 aa Aspergillus flavus NRRL3357 O-methyltransferase
+        LepI entry and cross-references EMBL EQ963479 protein EED49872.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EED49872.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept EED49872.1 is the Aspergillus flavus NRRL3357 putative O-methyltransferase
+        encoded by AFLA_066940 on EQ963479.1.
+  - subject: quinone_methide_5
+    predicate: is cyclized by
+    object: lepi
+    notes: The LepI-controlled hetero-Diels-Alder reaction converts the quinone methide
+      intermediate into leporin C.
+    evidence:
+    - reference: DOI:10.1038/nature23882
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: which requires stereoselective dehydration to yield (E)-5 and subsequent
+        HDA reaction to 2
+      notes: Ohashi et al. heterologously expressed lepI in Aspergillus nidulans and
+        purified LepI from Escherichia coli; both assays supported LepI stereoselectively
+        dehydrating alcohol 4 and controlling the pericyclic reactions that produce
+        leporin C.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000316
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000316 is active and links LepI to UniProtKB:B8NJH3, GenPept EED49872.1,
+        MIBiG BGC0001445, stereoselective dehydration and a hetero-Diels-Alder reaction.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001445.5/BGC0001445.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001445.5 places EED49872.1 in the active Aspergillus flavus
+        NRRL3357 leporin B biosynthetic gene cluster as the AFLA_066940 O-methyltransferase
+        locus.
+    - reference: https://www.uniprot.org/uniprotkb/B8NJH3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:B8NJH3 is the 387 aa Aspergillus flavus NRRL3357 O-methyltransferase
+        LepI entry and cross-references EMBL EQ963479 protein EED49872.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EED49872.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept EED49872.1 is the Aspergillus flavus NRRL3357 putative O-methyltransferase
+        encoded by AFLA_066940 on EQ963479.1.
+  - subject: lepi
+    predicate: forms
+    object: leporin_c
+    notes: LepI forms leporin C, the direct LepD substrate for the final N-hydroxylation
+      to leporin B.
+    evidence:
+    - reference: DOI:10.1038/nature23882
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: which requires stereoselective dehydration to yield (E)-5 and subsequent
+        HDA reaction to 2
+      notes: Ohashi et al. heterologously expressed lepI in Aspergillus nidulans and
+        purified LepI from Escherichia coli; both assays supported LepI stereoselectively
+        dehydrating alcohol 4 and controlling the pericyclic reactions that produce
+        leporin C.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000316
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000316 is active and links LepI to UniProtKB:B8NJH3, GenPept EED49872.1,
+        MIBiG BGC0001445, stereoselective dehydration and a hetero-Diels-Alder reaction.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001445.5/BGC0001445.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0001445.5 places EED49872.1 in the active Aspergillus flavus
+        NRRL3357 leporin B biosynthetic gene cluster as the AFLA_066940 O-methyltransferase
+        locus.
+    - reference: https://www.uniprot.org/uniprotkb/B8NJH3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:B8NJH3 is the 387 aa Aspergillus flavus NRRL3357 O-methyltransferase
+        LepI entry and cross-references EMBL EQ963479 protein EED49872.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EED49872.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept EED49872.1 is the Aspergillus flavus NRRL3357 putative O-methyltransferase
+        encoded by AFLA_066940 on EQ963479.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -183,4 +346,12 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus flavus LepD N-hydroxylation
     in leporin B biosynthesis; grounded LepD to UniProtKB:B8NJG8 and left leporin
     C ungrounded because it is absent from the local corpus.
+  llm_assisted: true
+- timestamp: '2026-10-02T02:25:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus flavus LepI stereoselective
+    dehydration and hetero-Diels-Alder cyclization in leporin B biosynthesis; grounded
+    LepI to UniProtKB:B8NJH3 and left alcohol 4, o-quinone methide 5 and leporin C
+    ungrounded because exact local corpus records are absent.
   llm_assisted: true
