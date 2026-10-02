@@ -312,6 +312,148 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein AAM70356.1 is the Micromonospora echinospora CalO6 translation
         encoded by calO6 at AF497482.1:80077..81147.
+- graph_id: calicheamicin-calo1-iodinated-orsellinic-acid-o-methylation
+  scope: BIOSYNTHESIS
+  description: Partial Micromonospora echinospora calicheamicin biosynthesis graph
+    for CalO1-catalyzed SAM-dependent O-methylation of an iodinated orsellinic acid-derived
+    carrier thioester.
+  nodes:
+  - node_id: iodinated_orsellinic_acid_thioester
+    label: iodinated orsellinic acid-derived carrier thioester
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: sam
+    label: S-adenosyl-L-methionine
+    node_type: PRECURSOR
+    identifier: CHEBI:59789
+    grounding_status: GROUNDED
+  - node_id: calo1
+    label: CalO1 O-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KNE5
+    grounding_status: GROUNDED
+  - node_id: o_methyl_iodinated_orsellinic_acid_thioester
+    label: O-methylated iodinated orsellinic acid-derived carrier thioester
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: iodinated_orsellinic_acid_thioester
+    predicate: is O-methylated by
+    object: calo1
+    notes: MITE represents CalO1 O-methylation for either a CoA-bound or 4'-phosphopantetheine-bound
+      iodinated orsellinic acid derivative; the exact carrier form is not distinguished
+      here.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000007
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: O-methylation of iodinated orsellenic acid derivate, assumed to be
+        bound to coenzyme A cofactor
+      notes: MITE0000007 is active, lists an in-vitro assay evidence code, assigns
+        CoA- and 4'-phosphopantetheine-bound iodinated orsellinic acid derivative
+        O-methylation reactions to CalO1, lists SAM as an organic cofactor, links
+        the reaction rows to DOI:10.1002/cbic.201402119, and links CalO1 to UniProtKB:Q8KNE5,
+        GenPept AAM70343.1, and MIBiG BGC0000033.
+    - reference: DOI:10.1002/cbic.201402119
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Singh et al. functionally characterized the upstream CalO6 O-methyltransferase
+        and integrated earlier CalO1 and CalO2 structural studies into a proposed
+        calicheamicin orsellinate tailoring sequence involving CoA- or ACP-bound substrates.
+    - reference: DOI:10.1107/S090744491100360X
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chang et al. reported the CalO1 crystal structure, described CalO1 as
+        a putative calicheamicin orsellinic acid O-methyltransferase, and observed
+        structural determinants consistent with accommodation of an acyl-carrier-protein-bound
+        substrate.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000033.5/BGC0000033.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000033.5 places calO1/AAM70343.1 inside the active Micromonospora
+        echinospora calicheamicin biosynthetic gene cluster and links the CDS to MITE0000007
+        at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KNE5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q8KNE5 resolves as a 345 aa Micromonospora echinospora calO1/CalO1
+        TrEMBL entry, cross-references EMBL AF497482 protein AAM70343.1 and PDB 3LST,
+        and carries SAM-dependent methyltransferase domain cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM70343.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM70343.1 is the Micromonospora echinospora CalO1 translation
+        encoded by calO1 at AF497482.1:60938..61975 on the reverse strand.
+  - subject: sam
+    predicate: supplies a methyl group to
+    object: calo1
+    notes: MITE lists SAM as CalO1's organic cofactor for this O-methylation reaction.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000007
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: O-methylation of iodinated orsellenic acid derivate, assumed to be
+        bound to coenzyme A cofactor
+      notes: MITE0000007 is active, lists an in-vitro assay evidence code, assigns
+        CoA- and 4'-phosphopantetheine-bound iodinated orsellinic acid derivative
+        O-methylation reactions to CalO1, lists SAM as an organic cofactor, links
+        the reaction rows to DOI:10.1002/cbic.201402119, and links CalO1 to UniProtKB:Q8KNE5,
+        GenPept AAM70343.1, and MIBiG BGC0000033.
+    - reference: DOI:10.1107/S090744491100360X
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chang et al. reported the CalO1 crystal structure, described CalO1 as
+        a putative calicheamicin orsellinic acid O-methyltransferase, and observed
+        structural determinants consistent with accommodation of an acyl-carrier-protein-bound
+        substrate.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KNE5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q8KNE5 resolves as a 345 aa Micromonospora echinospora calO1/CalO1
+        TrEMBL entry, cross-references EMBL AF497482 protein AAM70343.1 and PDB 3LST,
+        and carries SAM-dependent methyltransferase domain cross-references.
+  - subject: calo1
+    predicate: forms
+    object: o_methyl_iodinated_orsellinic_acid_thioester
+    notes: MITE's CalO1 reaction SMARTS add a methoxy group to the carrier-tethered
+      iodinated orsellinic acid derivative; both represented products remain pathway
+      intermediates.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000007
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: O-methylation of iodinated orsellenic acid derivate, assumed to be
+        bound to coenzyme A cofactor
+      notes: MITE0000007 is active, lists an in-vitro assay evidence code, assigns
+        CoA- and 4'-phosphopantetheine-bound iodinated orsellinic acid derivative
+        O-methylation reactions to CalO1, lists SAM as an organic cofactor, links
+        the reaction rows to DOI:10.1002/cbic.201402119, and links CalO1 to UniProtKB:Q8KNE5,
+        GenPept AAM70343.1, and MIBiG BGC0000033.
+    - reference: DOI:10.1002/cbic.201402119
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Singh et al. functionally characterized the upstream CalO6 O-methyltransferase
+        and integrated earlier CalO1 and CalO2 structural studies into a proposed
+        calicheamicin orsellinate tailoring sequence involving CoA- or ACP-bound substrates.
+    - reference: DOI:10.1107/S090744491100360X
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chang et al. reported the CalO1 crystal structure, described CalO1 as
+        a putative calicheamicin orsellinic acid O-methyltransferase, and observed
+        structural determinants consistent with accommodation of an acyl-carrier-protein-bound
+        substrate.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000033.5/BGC0000033.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000033.5 places calO1/AAM70343.1 inside the active Micromonospora
+        echinospora calicheamicin biosynthetic gene cluster and links the CDS to MITE0000007
+        at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KNE5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q8KNE5 resolves as a 345 aa Micromonospora echinospora calO1/CalO1
+        TrEMBL entry, cross-references EMBL AF497482 protein AAM70343.1 and PDB 3LST,
+        and carries SAM-dependent methyltransferase domain cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM70343.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM70343.1 is the Micromonospora echinospora CalO1 translation
+        encoded by calO1 at AF497482.1:60938..61975 on the reverse strand.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -338,4 +480,13 @@ curation_history:
     biosynthesis; grounded CalO6 to UniProtKB:Q8KND2, grounded SAM to CHEBI:59789,
     and left the CoA- or 4'-phosphopantetheine-bound orsellinic acid derivatives ungrounded
     because MITE does not distinguish an exact native carrier form.
+  llm_assisted: true
+- timestamp: '2026-10-02T13:00:15Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a partial BIOSYNTHESIS causal graph for CalO1-catalyzed SAM-dependent
+    O-methylation of an iodinated orsellinic acid-derived carrier thioester in calicheamicin
+    biosynthesis; grounded CalO1 to UniProtKB:Q8KNE5, grounded SAM to CHEBI:59789,
+    and left the CoA- or 4'-phosphopantetheine-bound iodinated orsellinic acid derivatives
+    ungrounded because MITE does not distinguish an exact native carrier form.
   llm_assisted: true
