@@ -82,6 +82,136 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: balhimycin-oxyc-cyclization
+  scope: BIOSYNTHESIS
+  description: Partial Amycolatopsis balhimycina balhimycin biosynthesis graph for
+    OxyC-catalyzed cytochrome P450 oxidative cyclization.
+  nodes:
+  - node_id: oxyc_cyclization_substrate
+    label: OxyC cyclization substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: heme
+    label: heme
+    node_type: PRECURSOR
+    identifier: CHEBI:30413
+    grounding_status: GROUNDED
+  - node_id: oxyc
+    label: OxyC cytochrome P450
+    node_type: ENZYME
+    identifier: UniProtKB:O87675
+    grounding_status: GROUNDED
+  - node_id: oxyc_cyclized_intermediate
+    label: OxyC-cyclized balhimycin intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: oxyc_cyclization_substrate
+    predicate: is cyclized by
+    object: oxyc
+    notes: MITE represents OxyC as installing a biaryl ether crosslink in a balhimycin-pathway
+      intermediate; the exact submitted substrate and product structures are absent
+      from local records.
+    evidence:
+    - reference: DOI:10.1016/j.jbiotec.2006.04.009
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: The mutant NPoxyA produces mainly monocyclic, the mutant DeltaoxyB
+        linear and the mutant DeltaoxyC bicyclic peptides
+      notes: Stegmann et al. constructed non-polar oxyA, oxyB and oxyC mutants in
+        Amycolatopsis balhimycina, assayed their glycopeptide products by HPLC-ESI-MS,
+        and established OxyC as the final enzyme in the OxyB-OxyA-OxyC oxidative ring-closing
+        sequence.
+    - reference: DOI:10.1002/1521-3773(20011217)40:24<4688::AID-ANIE4688>3.0.CO;2-M
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Bischoff et al. analyzed balhimycin oxygenase mutants to establish the
+        order of oxidative cyclization steps in vancomycin-type glycopeptide biosynthesis.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000027
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000027 is active, assigns OxyC to a knock-out-supported cyclization
+        that installs the second biaryl ether crosslink between hpg5 and dhpg7 of
+        a balhimycin precursor, lists heme and Fe as cofactors, and links the enzyme
+        to UniProtKB:O87675, GenPept CAA76549.1 and MIBiG BGC0000311.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000311.6/BGC0000311.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000027: Cyclization (89% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000311.6 places oxyC/CAA76549.1 inside the active Amycolatopsis
+        balhimycina DSM 5908 balhimycin biosynthetic gene cluster as a P450 monooxygenase
+        locus with a MITE0000027 cyclization annotation.
+    - reference: https://www.uniprot.org/uniprotkb/O87675
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=oxyC
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:O87675 resolves as a 406 aa Amycolatopsis balhimycina
+        oxyC p450 monooxygenase entry and cross-references EMBL Y16952 protein CAA76549.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAA76549.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: P450 monooxygenase
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAA76549.1 is the Amycolatopsis balhimycina DSM 5908 oxyC
+        P450 monooxygenase linked to UniProtKB/TrEMBL O87675.
+  - subject: heme
+    predicate: serves as cofactor for
+    object: oxyc
+    notes: MITE lists heme as OxyC's organic cofactor and UniProt annotates the O87675
+      entry with cytochrome P450, heme and iron features.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000027
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000027 lists heme as OxyC's organic cofactor and Fe as its inorganic
+        cofactor.
+    - reference: https://www.uniprot.org/uniprotkb/O87675
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:O87675 carries heme and iron ligand keywords and cytochrome
+        P450 domain cross-references.
+  - subject: oxyc
+    predicate: forms
+    object: oxyc_cyclized_intermediate
+    notes: The MITE product corresponds to the balhimycin precursor after OxyC introduces
+      the second biaryl ether crosslink between hpg5 and dhpg7.
+    evidence:
+    - reference: DOI:10.1016/j.jbiotec.2006.04.009
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: The mutant NPoxyA produces mainly monocyclic, the mutant DeltaoxyB
+        linear and the mutant DeltaoxyC bicyclic peptides
+      notes: Stegmann et al. constructed non-polar oxyA, oxyB and oxyC mutants in
+        Amycolatopsis balhimycina, assayed their glycopeptide products by HPLC-ESI-MS,
+        and established OxyC as the final enzyme in the OxyB-OxyA-OxyC oxidative ring-closing
+        sequence.
+    - reference: DOI:10.1002/1521-3773(20011217)40:24<4688::AID-ANIE4688>3.0.CO;2-M
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Bischoff et al. analyzed balhimycin oxygenase mutants to establish the
+        order of oxidative cyclization steps in vancomycin-type glycopeptide biosynthesis.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000027
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000027 is active, assigns OxyC to a knock-out-supported cyclization
+        that installs the second biaryl ether crosslink between hpg5 and dhpg7 of
+        a balhimycin precursor, lists heme and Fe as cofactors, and links the enzyme
+        to UniProtKB:O87675, GenPept CAA76549.1 and MIBiG BGC0000311.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000311.6/BGC0000311.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000027: Cyclization (89% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000311.6 places oxyC/CAA76549.1 inside the active Amycolatopsis
+        balhimycina DSM 5908 balhimycin biosynthetic gene cluster as a P450 monooxygenase
+        locus with a MITE0000027 cyclization annotation.
+    - reference: https://www.uniprot.org/uniprotkb/O87675
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=oxyC
+      retrieved_on: '2026-10-02'
+      notes: Current UniProtKB:O87675 resolves as a 406 aa Amycolatopsis balhimycina
+        oxyC p450 monooxygenase entry and cross-references EMBL Y16952 protein CAA76549.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAA76549.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: P450 monooxygenase
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein CAA76549.1 is the Amycolatopsis balhimycina DSM 5908 oxyC
+        P450 monooxygenase linked to UniProtKB/TrEMBL O87675.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -91,3 +221,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-02T18:52:56Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Amycolatopsis balhimycina OxyC cytochrome
+    P450 oxidative cyclization in balhimycin biosynthesis; grounded OxyC to UniProtKB:O87675
+    and heme to CHEBI:30413, and left the MITE substrate and product structures ungrounded.
+  llm_assisted: true
