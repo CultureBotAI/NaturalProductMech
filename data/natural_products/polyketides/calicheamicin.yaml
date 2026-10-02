@@ -64,6 +64,130 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: calicheamicin-calo3-orsellinic-acid-iodination
+  scope: BIOSYNTHESIS
+  description: Partial Micromonospora echinospora calicheamicin biosynthesis graph
+    for inferred CalO3-catalyzed iodination of an orsellinic acid-derived carrier
+    thioester.
+  nodes:
+  - node_id: orsellinic_acid_thioester
+    label: orsellinic acid-derived carrier thioester
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: fmn
+    label: flavin mononucleotide
+    node_type: PRECURSOR
+    identifier: CHEBI:17621
+    grounding_status: GROUNDED
+  - node_id: calo3
+    label: CalO3 flavin-dependent halogenase
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KND5
+    grounding_status: GROUNDED
+  - node_id: iodinated_orsellinic_acid_thioester
+    label: iodinated orsellinic acid-derived carrier thioester
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: orsellinic_acid_thioester
+    predicate: is iodinated by
+    object: calo3
+    notes: MITE represents CalO3 iodination as an inferred reaction for either a CoA-bound
+      or 4'-phosphopantetheine-bound orsellinic acid derivative; the exact carrier
+      form is not distinguished here.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000005
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Iodination of orsellenic acid derivate, assumed to be bound to coenzyme
+        A co-factor
+      notes: MITE0000005 is active, assigns inferred CoA- and 4'-phosphopantetheine-bound
+        orsellinic acid derivative iodination reactions to CalO3, lists flavin mononucleotide
+        as the organic cofactor, and links CalO3 to UniProtKB:Q8KND5, GenPept AAM70353.1,
+        and MIBiG BGC0000033.
+    - reference: DOI:10.1002/prot.22131
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: McCoy et al. structurally characterized the downstream CalO2 P450 and
+        proposed that CalO3-catalyzed iodination may precede the CalO2 step on a CoA-
+        or ACP-bound substrate; this supports the reaction placement as an inference,
+        not a direct CalO3 assay.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000033.5/BGC0000033.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000033.5 places calO3/AAM70353.1 inside the active Micromonospora
+        echinospora calicheamicin biosynthetic gene cluster and links the CDS to MITE0000005
+        at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KND5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q8KND5 resolves as a 420 aa Micromonospora echinospora calO3/CalO3
+        TrEMBL entry, cross-references EMBL AF497482 protein AAM70353.1, and carries
+        flavin-dependent halogenase domain cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM70353.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM70353.1 is the Micromonospora echinospora CalO3 translation
+        encoded by calO3 at AF497482.1:73840..75102.
+  - subject: fmn
+    predicate: serves as organic cofactor for
+    object: calo3
+    notes: MITE lists flavin mononucleotide as CalO3's organic cofactor for the inferred
+      iodination reaction.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000005
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Iodination of orsellenic acid derivate, assumed to be bound to coenzyme
+        A co-factor
+      notes: MITE0000005 is active, assigns inferred CoA- and 4'-phosphopantetheine-bound
+        orsellinic acid derivative iodination reactions to CalO3, lists flavin mononucleotide
+        as the organic cofactor, and links CalO3 to UniProtKB:Q8KND5, GenPept AAM70353.1,
+        and MIBiG BGC0000033.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KND5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q8KND5 resolves as a 420 aa Micromonospora echinospora calO3/CalO3
+        TrEMBL entry, cross-references EMBL AF497482 protein AAM70353.1, and carries
+        flavin-dependent halogenase domain cross-references.
+  - subject: calo3
+    predicate: forms
+    object: iodinated_orsellinic_acid_thioester
+    notes: MITE's CalO3 reaction SMARTS add iodine to the aromatic ring of the carrier-tethered
+      orsellinic acid derivative; both represented products remain pathway intermediates.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000005
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      snippet: Iodination of orsellenic acid derivate, assumed to be bound to coenzyme
+        A co-factor
+      notes: MITE0000005 is active, assigns inferred CoA- and 4'-phosphopantetheine-bound
+        orsellinic acid derivative iodination reactions to CalO3, lists flavin mononucleotide
+        as the organic cofactor, and links CalO3 to UniProtKB:Q8KND5, GenPept AAM70353.1,
+        and MIBiG BGC0000033.
+    - reference: DOI:10.1002/prot.22131
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: McCoy et al. structurally characterized the downstream CalO2 P450 and
+        proposed that CalO3-catalyzed iodination may precede the CalO2 step on a CoA-
+        or ACP-bound substrate; this supports the reaction placement as an inference,
+        not a direct CalO3 assay.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000033.5/BGC0000033.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000033.5 places calO3/AAM70353.1 inside the active Micromonospora
+        echinospora calicheamicin biosynthetic gene cluster and links the CDS to MITE0000005
+        at 100% identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KND5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q8KND5 resolves as a 420 aa Micromonospora echinospora calO3/CalO3
+        TrEMBL entry, cross-references EMBL AF497482 protein AAM70353.1, and carries
+        flavin-dependent halogenase domain cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM70353.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAM70353.1 is the Micromonospora echinospora CalO3 translation
+        encoded by calO3 at AF497482.1:73840..75102.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -73,3 +197,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-02T12:07:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a partial BIOSYNTHESIS causal graph for inferred CalO3-catalyzed
+    iodination of an orsellinic acid-derived carrier thioester in calicheamicin biosynthesis;
+    grounded CalO3 to UniProtKB:Q8KND5, grounded flavin mononucleotide to CHEBI:17621,
+    and left the CoA- or 4'-phosphopantetheine-bound orsellinic acid derivatives ungrounded
+    because MITE does not distinguish an exact native carrier form.
+  llm_assisted: true
