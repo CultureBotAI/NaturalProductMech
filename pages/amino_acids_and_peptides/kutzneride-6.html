@@ -82,8 +82,15 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td class="mono">CHEBI:57912 + CHEBI:58307 + CHEBI:17996 + CHEBI:15379 &rarr; CHEBI:58713 + CHEBI:57692 + CHEBI:15377</td>
   <td class="mono">DOI:10.1021/ja806467a</td>
 </tr>
+<tr>
+  <td>2</td>
+  <td>KtzR 7-chloro-L-tryptophan 6-halogenase<br><span class="mono">UniProtKB:A8CF74</span></td>
+  <td class="mono">RHEA:55904</td>
+  <td class="mono">CHEBI:58713 + CHEBI:58307 + CHEBI:17996 + CHEBI:15379 &rarr; CHEBI:139336 + CHEBI:57692 + CHEBI:15377</td>
+  <td class="mono">DOI:10.1021/ja806467a</td>
+</tr>
 </table></div>
-<p class="sub">Step 1: KtzQ catalyzes the first tandem halogenase step in the kutzneride pathway, forming 7-chloro-L-tryptophan from free L-tryptophan before KtzR installs the 6-chlorine in a separate downstream step.</p>
+<p class="sub">Step 1: KtzQ catalyzes the first tandem halogenase step in the kutzneride pathway, forming 7-chloro-L-tryptophan from free L-tryptophan before KtzR installs the 6-chlorine in a separate downstream step.</p><p class="sub">Step 2: KtzR catalyzes the second tandem halogenase step in the kutzneride pathway, installing the 6-chlorine on 7-chloro-L-tryptophan to form 6,7-dichloro-L-tryptophan.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
 <p class="sub">Kutzneria sp. 744 KtzQ-catalyzed 7-chlorination of L-tryptophan in the early kutzneride dichlorotryptophan biosynthetic pathway.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
@@ -100,6 +107,26 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>7-chloro-L-tryptophan</td>
   <td>KtzQ produces 7-chloro-L-tryptophan for the downstream KtzR 6-chlorination step toward 6,7-dichloro-L-tryptophan.</td>
   <td class="mono">DOI:10.1021/ja806467a<br>https://mite.bioinformatics.nl/repository/MITE0000029<br>https://mibig.secondarymetabolites.org/repository/BGC0000378.5/BGC0000378.gbk<br>https://www.uniprot.org/uniprotkb/A8CF75<br>https://www.ncbi.nlm.nih.gov/protein/ABV56597.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Kutzneria sp. 744 KtzR-catalyzed 6-chlorination of 7-chloro-L-tryptophan in the early kutzneride dichlorotryptophan biosynthetic pathway.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>7-chloro-L-tryptophan</td>
+  <td>is 6-chlorinated by</td>
+  <td>KtzR 7-chloro-L-tryptophan 6-halogenase</td>
+  <td>KtzR uses the KtzQ product 7-chloro-L-tryptophan as its preferred substrate in the tandem KtzQ/KtzR halogenation sequence.</td>
+  <td class="mono">DOI:10.1021/ja806467a<br>https://mite.bioinformatics.nl/repository/MITE0000030<br>https://mibig.secondarymetabolites.org/repository/BGC0000378.5/BGC0000378.gbk<br>https://www.uniprot.org/uniprotkb/A8CF74<br>https://www.ncbi.nlm.nih.gov/protein/ABV56598.1</td>
+</tr>
+<tr>
+  <td>KtzR 7-chloro-L-tryptophan 6-halogenase</td>
+  <td>forms</td>
+  <td>6,7-dichloro-L-tryptophan</td>
+  <td>KtzR installs the second chlorine at the 6-position, forming the dichlorinated tryptophan precursor for kutzneride assembly.</td>
+  <td class="mono">DOI:10.1021/ja806467a<br>https://mite.bioinformatics.nl/repository/MITE0000030<br>https://mibig.secondarymetabolites.org/repository/BGC0000378.5/BGC0000378.gbk<br>https://www.uniprot.org/uniprotkb/A8CF74<br>https://www.ncbi.nlm.nih.gov/protein/ABV56598.1</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
