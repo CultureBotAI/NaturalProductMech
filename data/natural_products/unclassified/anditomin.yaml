@@ -542,6 +542,96 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept BAP81864.1 is the Aspergillus stellatus AndJ protein encoded
         on complement(AB981314.1:15881..17782).
+- graph_id: anditomin-anda-structural-rearrangement
+  scope: BIOSYNTHESIS
+  description: Aspergillus stellatus AndA-catalyzed structural rearrangement of preandiloid
+    C to andiconin.
+  nodes:
+  - node_id: preandiloid_c
+    label: preandiloid C
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91820040
+    grounding_status: GROUNDED
+  - node_id: anda
+    label: AndA dioxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:A0A097ZPD5
+    grounding_status: GROUNDED
+  - node_id: andiconin
+    label: andiconin
+    node_type: PRECURSOR
+    identifier: pubchem.compound:91820403
+    grounding_status: GROUNDED
+  edges:
+  - subject: preandiloid_c
+    predicate: is structurally rearranged by
+    object: anda
+    notes: AndA catalyzes the structural rearrangement of preandiloid C to generate
+      the bicyclo[2.2.2]octane core in the anditomin pathway.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000356
+        and UniProtKB:A0A097ZPD5 both cite this paper for the AndA structural rearrangement
+        of preandiloid C to andiconin.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000356
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Conversion of preandiloid C to andiconin.
+      notes: MITE0000356 is active and links AndA to UniProtKB:A0A097ZPD5, GenPept
+        BAP81855.1 and MIBiG BGC0002612 for in vitro and heterologous-expression evidence
+        of structural rearrangement from preandiloid C to andiconin.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81855.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndA 2OG-Fe(II)-dependent dioxygenase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPD5 is the 293 aa Emericella variicolor, also
+        Aspergillus stellatus, dioxygenase AndA entry and cross-references EMBL AB981314
+        protein BAP81855.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81855.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81855.1 is the Aspergillus stellatus AndA protein encoded
+        on complement(AB981314.1:101..982).
+  - subject: anda
+    predicate: forms
+    object: andiconin
+    notes: MITE0000356 describes AndA-dependent cyclization of preandiloid C to andiconin.
+    evidence:
+    - reference: DOI:10.1021/ja508127q
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Matsuda et al. identified the Aspergillus stellatus anditomin biosynthetic
+        gene cluster and experimentally assigned its dedicated enzymes; MITE0000356
+        and UniProtKB:A0A097ZPD5 both cite this paper for the AndA structural rearrangement
+        of preandiloid C to andiconin.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000356
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      snippet: Conversion of preandiloid C to andiconin.
+      notes: MITE0000356 is active and links AndA to UniProtKB:A0A097ZPD5, GenPept
+        BAP81855.1 and MIBiG BGC0002612 for in vitro and heterologous-expression evidence
+        of structural rearrangement from preandiloid C to andiconin.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002612.3/BGC0002612.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0002612.3 places BAP81855.1 in the active Aspergillus stellatus
+        anditomin biosynthetic gene cluster as the AndA 2OG-Fe(II)-dependent dioxygenase.
+    - reference: https://www.uniprot.org/uniprotkb/A0A097ZPD5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A0A097ZPD5 is the 293 aa Emericella variicolor, also
+        Aspergillus stellatus, dioxygenase AndA entry and cross-references EMBL AB981314
+        protein BAP81855.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAP81855.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI GenPept BAP81855.1 is the Aspergillus stellatus AndA protein encoded
+        on complement(AB981314.1:101..982).
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -585,4 +675,11 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndJ Baeyer-Villiger
     oxidation of andiconin to andilesin D; grounded AndJ to UniProtKB:A0A097ZPG2,
     andiconin to pubchem.compound:91820403 and andilesin D to CHEBI:232444.
+  llm_assisted: true
+- timestamp: '2026-10-02T05:09:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a BIOSYNTHESIS causal graph for Aspergillus stellatus AndA structural
+    rearrangement of preandiloid C to andiconin; grounded AndA to UniProtKB:A0A097ZPD5,
+    preandiloid C to pubchem.compound:91820040 and andiconin to pubchem.compound:91820403.
   llm_assisted: true
