@@ -193,14 +193,11 @@ queue validation, and recovery when a queued change fails.
 
 ## Licence
 
-Two licences, because the repository will hold two different things.
+Project-authored data, records, annotations, mappings, data exports and narrative
+documentation are licensed under [CC BY 4.0](LICENSE-DATA). Project-authored
+code, scripts, tests, schemas and website templates are licensed under
+[BSD-3-Clause](LICENSE-CODE). See [LICENSE](LICENSE) for scope and attribution.
 
-**Code, schema, tests, configuration, documentation and curation decisions:
-[CC0 1.0](LICENSE).** This repository's own work, dedicated to the public
-domain.
-
-**Record content, once it exists: [CC BY 4.0](LICENSE-DATA).** It will derive
-from CC BY sources whose attribution cannot be stripped, so the corpus is
-redistributable — freely, commercially, modified — provided the attribution
-rides along. Attribution will be per-record and machine-readable through each
-record's `source_concepts` block.
+Third-party material retains its own licenses and notices. Preserve upstream
+attribution and source-specific terms when redistributing a record or subset.
+Previously released material remains available under its original license.
