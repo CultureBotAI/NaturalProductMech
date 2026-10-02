@@ -254,8 +254,8 @@ biosynthetic_pathway:
   enzyme_label: Pentalenolactone D synthase
   reaction_id: RHEA:34635
   notes: Streptomyces arenae PntE catalyzes the flavin-dependent Baeyer-Villiger oxidation
-    of 1-deoxy-11-oxopentalenate to pentalenolactone D; the intervening PntD conversion
-    from pentalenolactone D to pentalenolactone F remains uncurated.
+    of 1-deoxy-11-oxopentalenate to pentalenolactone D; PntD-catalyzed formation of
+    pentalenolactone F is represented separately.
   evidence:
   - reference: DOI:10.1021/bi1019786
     evidence_type: PRIMARY_EXPERIMENT
@@ -299,14 +299,64 @@ biosynthetic_pathway:
   - CHEBI:70787
   - CHEBI:58349
   - CHEBI:15377
+- step_number: 20
+  enzyme_id: UniProtKB:E3VWI8
+  enzyme_label: Pentalenolactone F synthase
+  reaction_id: RHEA:34579
+  notes: Streptomyces arenae PntD catalyzes 2-oxoglutarate- and Fe(2+)-dependent oxidation
+    of pentalenolactone D to pentalenolactone F; RHEA:34579 grounds the full net reaction
+    to the pH 7.3 pentalenolactone F conjugate base with two 2-oxoglutarate/O2 equivalents
+    per pentalenolactone F.
+  evidence:
+  - reference: DOI:10.1021/bi1019786
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: pentalenolactone D (8) to pentalenolactone E (15) and pentalenolactone
+      F (16)
+    notes: Seo et al. biochemically tested recombinant Streptomyces arenae Tu469 PntD
+      and reported 2-oxoglutarate- and Fe(2+)-dependent oxidation of pentalenolactone
+      D to pentalenolactones E and F; native pntD mutants accumulated pentalenolactone
+      D and lost pentalenolactone, pentalenolactone E and pentalenolactone F.
+  - reference: https://mite.lisc.univie.ac.at/repository/MITE0000058
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MITE0000058 is active and links PntD to UniProtKB:E3VWI8, GenPept ADO85576.1,
+      MIBiG BGC0000653, RHEA:34579, EC:1.14.11.36 and the Seo et al. DOI.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000653.5 places ADO85576.1 in the active Streptomyces arenae
+      pentalenolactone biosynthetic gene cluster as pntD/PntD with a MITE0000058 100%
+      identity gene-function annotation.
+  - reference: https://www.uniprot.org/uniprotkb/E3VWI8
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: UniProtKB:E3VWI8 is reviewed Streptomyces arenae PntD, cross-links GenPept
+      ADO85576.1, and annotates RHEA:34579 for the net 2-oxoglutarate- and O2-dependent
+      conversion of pentalenolactone D to pentalenolactone F.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ADO85576.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: NCBI Protein ADO85576.1 is a 299 aa Streptomyces arenae PntD.
+  - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34579 to UniProtKB:E3VWI8.
+  substrates:
+  - CHEBI:70787
+  - CHEBI:16810
+  - CHEBI:15379
+  products:
+  - CHEBI:70789
+  - CHEBI:30031
+  - CHEBI:16526
+  - CHEBI:15377
 - step_number: 30
   enzyme_id: UniProtKB:E3VWI3
   enzyme_label: Pentalenolactone synthase
   reaction_id: RHEA:34575
   notes: Streptomyces arenae PntM/CYP161C2 catalyzes the terminal oxidative rearrangement
-    of pentalenolactone F to pentalenolactone; upstream PntE-catalyzed pentalenolactone
-    D formation is represented separately, but the intervening PntD conversion from
-    pentalenolactone D to pentalenolactone F remains uncurated.
+    of pentalenolactone F to pentalenolactone; upstream PntE and PntD steps are represented
+    separately.
   evidence:
   - reference: DOI:10.1021/ja111279h
     evidence_type: PRIMARY_EXPERIMENT
@@ -486,6 +536,101 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-01'
       notes: The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34635 to UniProtKB:E3VWI7.
+- graph_id: pentalenolactone-pntd-f-synthesis
+  scope: BIOSYNTHESIS
+  description: Streptomyces arenae PntD-catalyzed oxidation of pentalenolactone D
+    to pentalenolactone F.
+  nodes:
+  - node_id: pentalenolactone_d
+    label: pentalenolactone D
+    node_type: PRECURSOR
+    identifier: CHEBI:70787
+    grounding_status: GROUNDED
+  - node_id: pntd
+    label: PntD
+    node_type: ENZYME
+    identifier: UniProtKB:E3VWI8
+    grounding_status: GROUNDED
+  - node_id: pentalenolactone_f
+    label: pentalenolactone F(1-)
+    node_type: PRECURSOR
+    identifier: CHEBI:70789
+    grounding_status: GROUNDED
+  edges:
+  - subject: pentalenolactone_d
+    predicate: is oxidized by
+    object: pntd
+    evidence:
+    - reference: DOI:10.1021/bi1019786
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: pentalenolactone D (8) to pentalenolactone E (15) and pentalenolactone
+        F (16)
+      notes: Seo et al. biochemically tested recombinant Streptomyces arenae Tu469
+        PntD and reported 2-oxoglutarate- and Fe(2+)-dependent oxidation of pentalenolactone
+        D to pentalenolactones E and F; native pntD mutants accumulated pentalenolactone
+        D and lost pentalenolactone, pentalenolactone E and pentalenolactone F.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000058
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000058 is active and links PntD to UniProtKB:E3VWI8, GenPept ADO85576.1,
+        MIBiG BGC0000653, RHEA:34579, EC:1.14.11.36 and the Seo et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000653.5 places ADO85576.1 in the active Streptomyces arenae
+        pentalenolactone biosynthetic gene cluster as pntD/PntD with a MITE0000058
+        100% identity gene-function annotation.
+    - reference: https://www.uniprot.org/uniprotkb/E3VWI8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:E3VWI8 is reviewed Streptomyces arenae PntD, cross-links GenPept
+        ADO85576.1, and annotates RHEA:34579 for the net 2-oxoglutarate- and O2-dependent
+        conversion of pentalenolactone D to pentalenolactone F.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADO85576.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI Protein ADO85576.1 is a 299 aa Streptomyces arenae PntD.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34579 to UniProtKB:E3VWI8.
+  - subject: pntd
+    predicate: forms
+    object: pentalenolactone_f
+    evidence:
+    - reference: DOI:10.1021/bi1019786
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: pentalenolactone D (8) to pentalenolactone E (15) and pentalenolactone
+        F (16)
+      notes: Seo et al. biochemically tested recombinant Streptomyces arenae Tu469
+        PntD and reported 2-oxoglutarate- and Fe(2+)-dependent oxidation of pentalenolactone
+        D to pentalenolactones E and F; native pntD mutants accumulated pentalenolactone
+        D and lost pentalenolactone, pentalenolactone E and pentalenolactone F.
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000058
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MITE0000058 is active and links PntD to UniProtKB:E3VWI8, GenPept ADO85576.1,
+        MIBiG BGC0000653, RHEA:34579, EC:1.14.11.36 and the Seo et al. DOI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000653.5 places ADO85576.1 in the active Streptomyces arenae
+        pentalenolactone biosynthetic gene cluster as pntD/PntD with a MITE0000058
+        100% identity gene-function annotation.
+    - reference: https://www.uniprot.org/uniprotkb/E3VWI8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: UniProtKB:E3VWI8 is reviewed Streptomyces arenae PntD, cross-links GenPept
+        ADO85576.1, and annotates RHEA:34579 for the net 2-oxoglutarate- and O2-dependent
+        conversion of pentalenolactone D to pentalenolactone F.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADO85576.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: NCBI Protein ADO85576.1 is a 299 aa Streptomyces arenae PntD.
+    - reference: https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34579 to UniProtKB:E3VWI8.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -515,4 +660,20 @@ curation_history:
     BGC0000653, GenPept ADO85575.1, and the RHEA:34635 Baeyer-Villiger oxidation from
     1-deoxy-11-oxopentalenate to pentalenolactone D; and renumbered the terminal PntM
     step.
+  llm_assisted: true
+- timestamp: '2026-10-02T00:34:31Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the intervening PntD BIOSYNTHESIS pathway step and causal graph for
+    pentalenolactone; grounded Streptomyces arenae PntD to UniProtKB:E3VWI8; cited
+    MITE0000058, MIBiG BGC0000653, GenPept ADO85576.1, and the RHEA:34579 2-oxoglutarate-dependent
+    oxidation from pentalenolactone D to pentalenolactone F; and linked the curated
+    PntE, PntD and PntM steps.
+  llm_assisted: true
+- timestamp: '2026-10-02T00:43:28Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Corrected the PntD pathway product and BIOSYNTHESIS graph product node
+    from neutral pentalenolactone F to the pH 7.3 pentalenolactone F conjugate base
+    used by RHEA:34579.
   llm_assisted: true
