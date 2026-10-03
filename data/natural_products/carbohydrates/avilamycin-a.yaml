@@ -434,6 +434,298 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein AAK83180.1 is the Streptomyces viridochromogenes Tue57 putative
         methyltransferase encoded by aviG5 at AF333038.2:25011..25610.
+- graph_id: avilamycin-a-avio1-avio3-inactivation-and-rescue
+  scope: BIOSYNTHESIS
+  description: AviO1/AviO3 genetic requirements in Streptomyces viridochromogenes
+    Tue57. Frameshift alleles and complementation are separate from protein nodes.
+    These results do not assign specific ring closures or purified-enzyme reactions.
+  nodes:
+  - node_id: avio1
+    label: Native AviO1 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93KW4
+  - node_id: avio3
+    label: Native AviO3 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93KV8
+  - node_id: ito1
+    label: aviO1 frameshift in ITO1
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: ito3
+    label: aviO3 frameshift in ITO3
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: o1_rescue
+    label: O1pSET complementation of ITO1
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: o3_rescue
+    label: O3pSET complementation of ITO3
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: production
+    label: Detectable avilamycin A/C production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: ito1
+    predicate: inactivates_encoding_gene_of
+    object: avio1
+    notes: NcoI fill-in frameshift, not whole-gene deletion. The native 223-aa parent
+      exactly matches AAK83181.1 and independently translated AF333038.2:25761..26432;
+      UniProt names the same Tue57 strain.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene-inactivation, complementation and culture-extract results.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KW4/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviO1, STVIR_2892, AAK83181.1; 223 aa; taxon 1160705.
+      retrieved_on: '2026-10-03'
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk
+      evidence_type: DATABASE_ASSERTION
+      notes: Pinned avilamycin cluster sequence and named CDS translations.
+      retrieved_on: '2026-10-03'
+  - subject: ito1
+    predicate: abolishes_detectable
+    object: production
+    notes: Culture-supernatant TLC/HPLC-UV/HPLC-ESI-MS found no avilamycin derivatives.
+      This is a production phenotype, not direct enzyme catalysis.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Culture-extract analysis of ITO1 and ITO3.
+      snippet: No avilamycin derivative could be detected
+  - subject: o1_rescue
+    predicate: expresses
+    object: avio1
+    notes: The corresponding native gene was supplied behind ermE in a pSET152 derivative
+      to its matching frameshift mutant.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene-inactivation, complementation and culture-extract results.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KW4/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviO1, STVIR_2892, AAK83181.1; 223 aa; taxon 1160705.
+      retrieved_on: '2026-10-03'
+  - subject: o1_rescue
+    predicate: restores_detectable
+    object: production
+    notes: HPLC-ESI-MS confirmed restored avilamycin A and C production.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene-inactivation, complementation and culture-extract results.
+  - subject: ito3
+    predicate: inactivates_encoding_gene_of
+    object: avio3
+    notes: NcoI fill-in frameshift, not whole-gene deletion. The native 314-aa parent
+      exactly matches AAK83187.1 and independently translated AF333038.2:31230..32174;
+      UniProt names the same Tue57 strain.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene-inactivation, complementation and culture-extract results.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KV8/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviO3, STVIR_2886, AAK83187.1; 314 aa; taxon 1160705.
+      retrieved_on: '2026-10-03'
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk
+      evidence_type: DATABASE_ASSERTION
+      notes: Pinned avilamycin cluster sequence and named CDS translations.
+      retrieved_on: '2026-10-03'
+  - subject: ito3
+    predicate: abolishes_detectable
+    object: production
+    notes: Culture-supernatant TLC/HPLC-UV/HPLC-ESI-MS found no avilamycin derivatives.
+      This is a production phenotype, not direct enzyme catalysis.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Culture-extract analysis of ITO1 and ITO3.
+  - subject: o3_rescue
+    predicate: expresses
+    object: avio3
+    notes: The corresponding native gene was supplied behind ermE in a pSET152 derivative
+      to its matching frameshift mutant.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene-inactivation, complementation and culture-extract results.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KV8/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviO3, STVIR_2886, AAK83187.1; 314 aa; taxon 1160705.
+      retrieved_on: '2026-10-03'
+  - subject: o3_rescue
+    predicate: restores_detectable
+    object: production
+    notes: HPLC-ESI-MS confirmed restored avilamycin A and C production.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene-inactivation, complementation and culture-extract results.
+- graph_id: avilamycin-a-avio1-structural-metal-observation
+  scope: BIOSYNTHESIS
+  description: Structural evidence for recombinant AviO1, not an oxygenation assay.
+  nodes:
+  - node_id: avio1
+    label: Crystallized AviO1
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93KW4
+  - node_id: nickel
+    label: Substituting nickel(II)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: avio1
+    predicate: contains_observed_bound_metal
+    object: nickel
+    notes: 4XAA is a monomeric 2.30 A structure containing NI and water, not modeled
+      AKG or carbohydrate. Its deposited 223-aa polymer equals Q93KW4 and native AAK83181.1
+      exactly; this does not verify tag-processing details in the inaccessible supplement.
+      The paper used inactive Ni-substituted preparations, not native iron turnover.
+      Docking does not establish substrate binding or a particular ring-closure assignment.
+    evidence:
+    - reference: DOI:10.1073/pnas.1500964112
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Oxygenase structures and active-site metal substitution.
+      snippet: catalytically inactive
+    - reference: https://www.rcsb.org/structure/4XAA
+      evidence_type: DATABASE_ASSERTION
+      notes: AviO1 sequence, 2.30 A model, monomeric assembly and NI/HOH ligands.
+      retrieved_on: '2026-10-03'
+    - reference: https://www.uniprot.org/uniprotkb/Q93KW4/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviO1, STVIR_2892, AAK83181.1; 223 aa; taxon 1160705.
+      retrieved_on: '2026-10-03'
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk
+      evidence_type: DATABASE_ASSERTION
+      notes: Pinned avilamycin cluster sequence and named CDS translations.
+      retrieved_on: '2026-10-03'
+- graph_id: avilamycin-a-avix12-engineered-background-genetics
+  scope: BIOSYNTHESIS
+  description: AviX12 evidence from the aviG4-defective GW4 background. Gavibamycins
+    are distinct congeners, not this avilamycin A structure.
+  nodes:
+  - node_id: avix12
+    label: Native AviX12 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93KV6
+  - node_id: gw4_x12
+    label: aviX12 frameshift in GW4-X12
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: n1
+    label: Gavibamycin N1 accumulation in GW4-X12
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: pSETerm-aviX12 complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: gavibamycin_production
+    label: Restored GW4 gavibamycin production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: epimerization
+    label: Proposed scaffold ring-F C2 epimerization
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gw4_x12
+    predicate: inactivates_encoding_gene_of
+    object: avix12
+    notes: A 2-bp SacII frameshift, not complete gene deletion. Q93KV6 equals the
+      paper's AAK83189.1 and independently translated AF333038.2:33001..34191 (396
+      aa, Tue57).
+    evidence:
+    - reference: DOI:10.1074/jbc.M601508200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: GW4-X12 genetic experiments and metabolite analysis, Figures 1-3.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KV6/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviX12, AAK83189.1; 396 aa; taxon 1160705.
+      retrieved_on: '2026-10-03'
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk
+      evidence_type: DATABASE_ASSERTION
+      notes: Pinned avilamycin cluster sequence and named CDS translations.
+      retrieved_on: '2026-10-03'
+  - subject: gw4_x12
+    predicate: causes_accumulation_of
+    object: n1
+    notes: MS/NMR identified N1 with glucose instead of mannose at ring F and absent
+      ring-F 2-O-methylation. The parent GW4 already lacks orsellinic O-methylation.
+      N1 is not avilamycin A.
+    evidence:
+    - reference: DOI:10.1074/jbc.M601508200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: GW4-X12 genetic experiments and metabolite analysis, Figures 1-3.
+  - subject: rescue
+    predicate: expresses
+    object: avix12
+    notes: Native aviX12 under ermE* in the matching GW4-X12 mutant.
+    evidence:
+    - reference: DOI:10.1074/jbc.M601508200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: GW4-X12 genetic experiments and metabolite analysis, Figures 1-3.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KV6/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviX12, AAK83189.1; 396 aa; taxon 1160705.
+      retrieved_on: '2026-10-03'
+  - subject: rescue
+    predicate: restores_detectable
+    object: gavibamycin_production
+    notes: Rescue restored gavibamycins, not wild-type avilamycin A.
+    evidence:
+    - reference: DOI:10.1074/jbc.M601508200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: GW4-X12 genetic experiments and metabolite analysis, Figures 1-3.
+  - subject: avix12
+    predicate: is_proposed_to_catalyze
+    object: epimerization
+    notes: Inferred from genetics and NMR, not demonstrated turnover. Neither direct
+      N1-to-avilamycin A conversion nor SAM cleavage was established.
+    evidence:
+    - reference: DOI:10.1074/jbc.M601508200
+      evidence_type: CURATOR_INFERENCE
+      notes: Genetic/metabolite evidence motivates the proposed reaction.
+- graph_id: avilamycin-a-avix12-recombinant-cluster-observation
+  scope: BIOSYNTHESIS
+  description: Iron-sulfur spectroscopy on recombinant AviX12; no active reconstitution.
+  nodes:
+  - node_id: avix12
+    label: N-terminal His6-AviX12 preparation
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93KV6
+  - node_id: cluster
+    label: Observed [3Fe-4S] cluster
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: avix12
+    predicate: contains_spectroscopically_observed
+    object: cluster
+    notes: pRSETb/BL21(DE3)pLysS expression; UniProt denotes the native parent, not
+      the full tagged construct. UV-visible/EPR supported approximately one [3Fe-4S]
+      cluster per protein. Functional [4Fe-4S] reconstitution failed and the preparation
+      lacked enzymatic activity. No native cofactor-state or catalytic-assembly claim
+      is made.
+    evidence:
+    - reference: DOI:10.1074/jbc.M601508200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Spectroscopic results, Figure 5 and Discussion.
+      snippet: no enzymatic activity
+    - reference: https://www.uniprot.org/uniprotkb/Q93KV6/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviX12, AAK83189.1; 396 aa; taxon 1160705.
+      retrieved_on: '2026-10-03'
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -469,4 +761,16 @@ curation_history:
     SAM to CHEBI:59789, linked the product to the avilamycin A record identifier,
     and left the demethylated avilamycin A precursor ungrounded because an exact local
     corpus record was absent.
+  llm_assisted: true
+- timestamp: '2026-10-03T20:55:12Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added four BIOSYNTHESIS graphs for sequence-verified AviO1 (Q93KW4), AviO3
+    (Q93KV8) and AviX12 (Q93KV6): inactivation/complementation, AviO1 structural metal
+    binding, AviX12 engineered-background genetics and proposed epimerization, and
+    recombinant [3Fe-4S] spectroscopy. All 15 new edges cite primary-study DOIs, with
+    three short verbatim snippets. Separated genetic readouts from enzyme turnover,
+    gavibamycins from avilamycin A, inactive substituted metal from native catalysis,
+    and native accessions from tagged constructs. Preserved the three methyltransferase
+    graphs, all source-owned fields and SEEDED status.'
   llm_assisted: true
