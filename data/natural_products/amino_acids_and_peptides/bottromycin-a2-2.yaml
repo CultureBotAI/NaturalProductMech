@@ -1155,6 +1155,278 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
     notes: Condition-specific lack of macroamidine reopening after follower removal;
       not proof of universal chemical irreversibility.
+- graph_id: bottromycin-a2-bmb-parallel-cyclodehydration
+  scope: BIOSYNTHESIS
+  description: Parallel in-vitro processing of unmethylated BmbC by MBP-BmbD or MBP-BmbE
+    without partners; no native order, joint product or mature bottromycin A2 is asserted.
+    SI Table S1 accessions identify S. bottropensis DSM 40262 proteins on HE983629.1,
+    not BC16019 homologs.
+  nodes:
+  - node_id: bmbc
+    label: S. bottropensis BmbC (44 aa)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CCM09443.1
+    grounding_status: GROUNDED
+  - node_id: assay_precursor
+    label: 'BmbC: initiator Met removed (43 aa)'
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: bmbd
+    label: MBP-BmbD
+    node_type: ENZYME
+    identifier: UniProtKB:K0P4N8
+    grounding_status: GROUNDED
+  - node_id: bmbe
+    label: MBP-BmbE
+    node_type: ENZYME
+    identifier: UniProtKB:K0NZY4
+    grounding_status: GROUNDED
+  - node_id: thiazoline_formation
+    label: In-vitro thiazoline formation
+    node_type: PROCESS
+  - node_id: macroamidine_formation
+    label: In-vitro macrolactamidine formation
+    node_type: PROCESS
+  - node_id: thiazoline_precursor
+    label: BmbC thiazoline intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: macroamidine_precursor
+    label: BmbC macrolactamidine intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: bmbc
+    predicate: provides sequence for
+    object: assay_precursor
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09443.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: 44-aa precursor; SI Table S4 wild-type assay peptide exactly matches
+        residues 2-44.
+    notes: TEV-released recombinant substrate lacks initiator Met; native removal
+      enzyme not asserted.
+  - subject: assay_precursor
+    predicate: is substrate for
+    object: thiazoline_formation
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Figure 2; SI pp. S4-S5: 50 uM precursor, 10 uM MBP enzyme, 5 mM ATP, 20
+      mM MgCl2, pH 8.5, 25 C, 5 h.'
+  - subject: bmbd
+    predicate: catalyzes
+    object: thiazoline_formation
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: thiazoline formation to BmbD
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.uniprot.org/uniprotkb/K0P4N8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+    notes: SI Table S3 codon-optimized BmbD translates exactly to CCM09444.1 and K0P4N8
+      (410 aa). MBP fusion expressed in E. coli; tag retained.
+  - subject: thiazoline_formation
+    predicate: produces
+    object: thiazoline_precursor
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Labelling/MS/MS locate Cys8 cyclodehydration; supporting NMR used trypsin-treated
+      BmbC-N15K.
+  - subject: assay_precursor
+    predicate: is substrate for
+    object: macroamidine_formation
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Same standard conditions; no prior BmbD step.
+  - subject: bmbe
+    predicate: catalyzes
+    object: macroamidine_formation
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: macrolactamidine formation to BmbE
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.uniprot.org/uniprotkb/K0NZY4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+    notes: SI Table S3 BmbE translates exactly to CCM09445.1 and K0NZY4 (463 aa).
+      MBP fusion retained; ATP-dependent Gly1-Val4 macrocyclization.
+  - subject: macroamidine_formation
+    predicate: produces
+    object: macroamidine_precursor
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Figures S6-S8 distinguish this isobaric -18 Da product from the thiazoline
+      product; NMR used trypsin-treated BmbC-N15K.
+- graph_id: bottromycin-a2-bmb-follower-binding-assays
+  scope: BIOSYNTHESIS
+  description: 'Fluorescence-polarization binding to engineered BmbC-C8S/S43C with
+    a C-terminal His-tag extension and 6-(iodoacetamido)fluorescein label (SI Figure
+    S12). All binding proteins remain MBP-tagged. BmbB/F nodes represent excised RRE
+    domains, not assayed full-length methyltransferases; no methylation or native-substrate
+    affinity is inferred. SI p. S7: 25 nM tracer, serial protein dilution, 50 mM HEPES
+    pH 7.5, 300 mM NaCl, 2.5% glycerol, 0.5 mM TCEP, 30 min at 25 C, three independent
+    titrations.'
+  nodes:
+  - node_id: bmbc
+    label: S. bottropensis BmbC (44 aa)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CCM09443.1
+    grounding_status: GROUNDED
+  - node_id: fluorescent_precursor
+    label: BmbC-C8S/S43C-His fluorescent tracer
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: bmbb_rre
+    label: MBP-BmbB RRE (492-593)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CCM09442.1
+    grounding_status: GROUNDED
+  - node_id: bmbf_rre
+    label: MBP-BmbF RRE (526-670)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CCM09446.1
+    grounding_status: GROUNDED
+  - node_id: bmbd
+    label: MBP-BmbD
+    node_type: ENZYME
+    identifier: UniProtKB:K0P4N8
+    grounding_status: GROUNDED
+  - node_id: bmbe
+    label: MBP-BmbE
+    node_type: ENZYME
+    identifier: UniProtKB:K0NZY4
+    grounding_status: GROUNDED
+  edges:
+  - subject: bmbc
+    predicate: provides sequence for
+    object: fluorescent_precursor
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Engineered construct, not a biological conversion: native Met absent;
+      C8S/S43C use 43-aa assay numbering (C9S/S44C in CCM09443.1). His-tag extension
+      and fluorophore are absent from the canonical accession.'
+  - subject: bmbb_rre
+    predicate: binds
+    object: fluorescent_precursor
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09442.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: Canonical BmbB RRE parent.
+    notes: 'Figure S13C: Kd 876 +/- 67 nM by fluorescence polarization. SI Table S3
+      domain sequence exactly matches residues 492-593 of the 630-aa canonical protein.'
+  - subject: bmbf_rre
+    predicate: binds
+    object: fluorescent_precursor
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09446.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: Canonical BmbF RRE parent.
+    notes: 'Figure S13D: Kd 597 +/- 25 nM by fluorescence polarization. SI Table S3
+      domain sequence exactly matches residues 526-670 of the 670-aa canonical protein.'
+  - subject: bmbd
+    predicate: shows weak binding to
+    object: fluorescent_precursor
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Main text estimates Kd >50 uM; Figure S13A labels >=50 uM. This is a lower
+      bound, not an exact 50 uM affinity.
+  - subject: bmbe
+    predicate: shows weak binding to
+    object: fluorescent_precursor
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Main text estimates Kd >50 uM; Figure S13B labels >=50 uM. This is a lower
+      bound, not a no-binding claim.
+- graph_id: bottromycin-a2-bmb-supplementation-assays
+  scope: BIOSYNTHESIS
+  description: 'BmbG or BmbH individually supplemented MBP-BmbD/K0P4N8 or MBP-BmbE/K0NZY4
+    reactions on Met-deleted BmbC. SI Figure S9: 16-h endpoint MALDI-TOF-MS, no enhanced
+    cyclodehydration. This does not exclude native functions or establish inactivity,
+    inhibition, or a joint G+H test. Figure S3 documents MBP-fused S. bottropensis
+    proteins; G/H are not BC16019 BotH/BotAH.'
+  nodes:
+  - node_id: bmbg
+    label: MBP-BmbG
+    node_type: PROTEIN
+    identifier: NCBIProtein:CCM09447.1
+    grounding_status: GROUNDED
+  - node_id: bmbh
+    label: MBP-BmbH
+    node_type: PROTEIN
+    identifier: NCBIProtein:CCM09448.1
+    grounding_status: GROUNDED
+  - node_id: bmbd_assay
+    label: BmbD 16-h cyclodehydration assay
+    node_type: PROCESS
+  - node_id: bmbe_assay
+    label: BmbE 16-h cyclodehydration assay
+    node_type: PROCESS
+  edges:
+  - subject: bmbg
+    predicate: was reported not to enhance
+    object: bmbd_assay
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09447.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: 333-aa BmbG; identity from SI Table S1, purified protein in Figure S3.
+    notes: BmbG supplied alone as supplement; comparison is endpoint conversion to
+      the -18 Da species.
+  - subject: bmbh
+    predicate: was reported not to enhance
+    object: bmbd_assay
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09448.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: 415-aa BmbH; identity from SI Table S1, purified protein in Figure S3.
+    notes: BmbH supplied alone as supplement; no claim of statistical equivalence
+      or universal lack of effect.
+  - subject: bmbg
+    predicate: was reported not to enhance
+    object: bmbe_assay
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Neither addition of BmbH or BmbG resulted in more product formation
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: BmbG individually added to the BmbE reaction.
+  - subject: bmbh
+    predicate: was reported not to enhance
+    object: bmbe_assay
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: BmbH individually added to the BmbE reaction.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -1198,4 +1470,12 @@ curation_history:
     negative reopening. Removed 91 exact duplicate evidence notes while retaining
     every old citation, snippet, distinct note, graph assertion and seeder-owned field.
     SEEDED retained.
+  llm_assisted: true
+- timestamp: '2026-10-03T14:28:17Z'
+  curator: codex
+  action: ADDED_BMB_CONSTRUCT_SPECIFIC_ASSAY_GRAPHS
+  changes: 'Added seven BmbB-H proteins and 16 edges: parallel BmbD/E catalysis, engineered-tracer
+    binding and individual BmbG/H supplementation tests. Exact D/E UniProt matches,
+    versioned NCBI IDs otherwise; primary DOI/SI and identity URLs. Construct/negative-assay
+    limits explicit; old content and SEEDED unchanged.'
   llm_assisted: true

@@ -407,6 +407,136 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
+<p class="sub">Parallel in-vitro processing of unmethylated BmbC by MBP-BmbD or MBP-BmbE without partners; no native order, joint product or mature bottromycin A2 is asserted. SI Table S1 accessions identify S. bottropensis DSM 40262 proteins on HE983629.1, not BC16019 homologs.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>S. bottropensis BmbC (44 aa)</td>
+  <td>provides sequence for</td>
+  <td>BmbC: initiator Met removed (43 aa)</td>
+  <td>TEV-released recombinant substrate lacks initiator Met; native removal enzyme not asserted.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899.s001<br>https://www.ncbi.nlm.nih.gov/protein/CCM09443.1</td>
+</tr>
+<tr>
+  <td>BmbC: initiator Met removed (43 aa)</td>
+  <td>is substrate for</td>
+  <td>In-vitro thiazoline formation</td>
+  <td>Figure 2; SI pp. S4-S5: 50 uM precursor, 10 uM MBP enzyme, 5 mM ATP, 20 mM MgCl2, pH 8.5, 25 C, 5 h.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899</td>
+</tr>
+<tr>
+  <td>MBP-BmbD</td>
+  <td>catalyzes</td>
+  <td>In-vitro thiazoline formation</td>
+  <td>SI Table S3 codon-optimized BmbD translates exactly to CCM09444.1 and K0P4N8 (410 aa). MBP fusion expressed in E. coli; tag retained.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899<br>DOI:10.1021/jacs.7b09899.s001<br>https://www.uniprot.org/uniprotkb/K0P4N8</td>
+</tr>
+<tr>
+  <td>In-vitro thiazoline formation</td>
+  <td>produces</td>
+  <td>BmbC thiazoline intermediate</td>
+  <td>Labelling/MS/MS locate Cys8 cyclodehydration; supporting NMR used trypsin-treated BmbC-N15K.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899</td>
+</tr>
+<tr>
+  <td>BmbC: initiator Met removed (43 aa)</td>
+  <td>is substrate for</td>
+  <td>In-vitro macrolactamidine formation</td>
+  <td>Same standard conditions; no prior BmbD step.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899</td>
+</tr>
+<tr>
+  <td>MBP-BmbE</td>
+  <td>catalyzes</td>
+  <td>In-vitro macrolactamidine formation</td>
+  <td>SI Table S3 BmbE translates exactly to CCM09445.1 and K0NZY4 (463 aa). MBP fusion retained; ATP-dependent Gly1-Val4 macrocyclization.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899<br>DOI:10.1021/jacs.7b09899.s001<br>https://www.uniprot.org/uniprotkb/K0NZY4</td>
+</tr>
+<tr>
+  <td>In-vitro macrolactamidine formation</td>
+  <td>produces</td>
+  <td>BmbC macrolactamidine intermediate</td>
+  <td>Figures S6-S8 distinguish this isobaric -18 Da product from the thiazoline product; NMR used trypsin-treated BmbC-N15K.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
+<p class="sub">Fluorescence-polarization binding to engineered BmbC-C8S/S43C with a C-terminal His-tag extension and 6-(iodoacetamido)fluorescein label (SI Figure S12). All binding proteins remain MBP-tagged. BmbB/F nodes represent excised RRE domains, not assayed full-length methyltransferases; no methylation or native-substrate affinity is inferred. SI p. S7: 25 nM tracer, serial protein dilution, 50 mM HEPES pH 7.5, 300 mM NaCl, 2.5% glycerol, 0.5 mM TCEP, 30 min at 25 C, three independent titrations.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>S. bottropensis BmbC (44 aa)</td>
+  <td>provides sequence for</td>
+  <td>BmbC-C8S/S43C-His fluorescent tracer</td>
+  <td>Engineered construct, not a biological conversion: native Met absent; C8S/S43C use 43-aa assay numbering (C9S/S44C in CCM09443.1). His-tag extension and fluorophore are absent from the canonical accession.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899.s001</td>
+</tr>
+<tr>
+  <td>MBP-BmbB RRE (492-593)</td>
+  <td>binds</td>
+  <td>BmbC-C8S/S43C-His fluorescent tracer</td>
+  <td>Figure S13C: Kd 876 +/- 67 nM by fluorescence polarization. SI Table S3 domain sequence exactly matches residues 492-593 of the 630-aa canonical protein.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899.s001<br>https://www.ncbi.nlm.nih.gov/protein/CCM09442.1</td>
+</tr>
+<tr>
+  <td>MBP-BmbF RRE (526-670)</td>
+  <td>binds</td>
+  <td>BmbC-C8S/S43C-His fluorescent tracer</td>
+  <td>Figure S13D: Kd 597 +/- 25 nM by fluorescence polarization. SI Table S3 domain sequence exactly matches residues 526-670 of the 670-aa canonical protein.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899.s001<br>https://www.ncbi.nlm.nih.gov/protein/CCM09446.1</td>
+</tr>
+<tr>
+  <td>MBP-BmbD</td>
+  <td>shows weak binding to</td>
+  <td>BmbC-C8S/S43C-His fluorescent tracer</td>
+  <td>Main text estimates Kd &gt;50 uM; Figure S13A labels &gt;=50 uM. This is a lower bound, not an exact 50 uM affinity.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899<br>DOI:10.1021/jacs.7b09899.s001</td>
+</tr>
+<tr>
+  <td>MBP-BmbE</td>
+  <td>shows weak binding to</td>
+  <td>BmbC-C8S/S43C-His fluorescent tracer</td>
+  <td>Main text estimates Kd &gt;50 uM; Figure S13B labels &gt;=50 uM. This is a lower bound, not a no-binding claim.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899<br>DOI:10.1021/jacs.7b09899.s001</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 4 edges</span></h2>
+<p class="sub">BmbG or BmbH individually supplemented MBP-BmbD/K0P4N8 or MBP-BmbE/K0NZY4 reactions on Met-deleted BmbC. SI Figure S9: 16-h endpoint MALDI-TOF-MS, no enhanced cyclodehydration. This does not exclude native functions or establish inactivity, inhibition, or a joint G+H test. Figure S3 documents MBP-fused S. bottropensis proteins; G/H are not BC16019 BotH/BotAH.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>MBP-BmbG</td>
+  <td>was reported not to enhance</td>
+  <td>BmbD 16-h cyclodehydration assay</td>
+  <td>BmbG supplied alone as supplement; comparison is endpoint conversion to the -18 Da species.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899.s001<br>https://www.ncbi.nlm.nih.gov/protein/CCM09447.1</td>
+</tr>
+<tr>
+  <td>MBP-BmbH</td>
+  <td>was reported not to enhance</td>
+  <td>BmbD 16-h cyclodehydration assay</td>
+  <td>BmbH supplied alone as supplement; no claim of statistical equivalence or universal lack of effect.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899.s001<br>https://www.ncbi.nlm.nih.gov/protein/CCM09448.1</td>
+</tr>
+<tr>
+  <td>MBP-BmbG</td>
+  <td>was reported not to enhance</td>
+  <td>BmbE 16-h cyclodehydration assay</td>
+  <td>BmbG individually added to the BmbE reaction.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899<br>DOI:10.1021/jacs.7b09899.s001</td>
+</tr>
+<tr>
+  <td>MBP-BmbH</td>
+  <td>was reported not to enhance</td>
+  <td>BmbE 16-h cyclodehydration assay</td>
+  <td>BmbH individually added to the BmbE reaction.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09899.s001</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
