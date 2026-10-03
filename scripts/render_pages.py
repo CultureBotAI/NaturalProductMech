@@ -177,6 +177,7 @@ def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
         "label": doc.get("label", ""),
         "identifier": doc["identifier"],
         "slug": slug_of(path),
+        "synonyms": [s["value"] for s in doc.get("synonyms") or []],
         "definition": doc.get("definition"),
         "grounding_status": doc.get("grounding_status", ""),
         "curation_status": doc.get("curation_status", ""),
