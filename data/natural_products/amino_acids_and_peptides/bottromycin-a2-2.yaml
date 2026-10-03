@@ -315,6 +315,47 @@ biosynthetic_pathway:
     notes: UniProtKB:K4MJU2 is the 408 aa Streptomyces sp. BC16019 botCYP entry cross-referenced
       to EMBL JX235926 with ProteinId AFV25487.2; its sequence matches NCBI Protein
       AFV25487.2 and the BotCYP translation in MIBiG BGC0000469.6.
+- enzyme_id: UniProtKB:K4MHW2
+  enzyme_label: BotP
+  proposed: false
+  notes: BC16019 BotP/AFV25490.1 is curated as the exact peptidase that removes the
+    N-terminal methionine from a bottromycin precursor peptide, exposing an N-terminal
+    glycine. The exact modified precursor substrate and product are not represented
+    in the record.
+  evidence:
+  - reference: DOI:10.1002/cbic.201600406
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: responsible for the removal of the N-terminal methionine
+    notes: Mann et al. biochemically and structurally characterized Streptomyces sp.
+      BC16019 BotP and showed that this leucyl-aminopeptidase-like enzyme removes
+      the N-terminal methionine from the bottromycin precursor peptide.
+  - reference: https://mite.bioinformatics.nl/repository/MITE0000048
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    snippet: Cleavage of N-terminal Met from a NH2-Met-Gly-Pro-Xn chain, exposing
+      a N-terminal Gly
+    notes: MITE MITE0000048 is an active BotP entry that maps the enzyme to UniProtKB:K4MHW2,
+      GenPept AFV25490.1, and MIBiG BGC0000469, and curates the N-terminal Met hydrolysis
+      reaction with in vitro evidence from DOI:10.1002/cbic.201600406.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    snippet: 'MITE0000048: Hydrolysis'
+    notes: MIBiG BGC0000469.6 places a botP CDS in the Streptomyces sp. BC16019 bottromycin
+      A2 locus, gives protein_id AFV25490.1, and annotates that feature with MITE0000048
+      at 100% identity.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25490.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    snippet: BotP [Streptomyces sp. BC16019]
+    notes: NCBI Protein AFV25490.1 is the 504 aa Streptomyces sp. BC16019 botP coding
+      sequence from GenBank JX235926.1 at 32408..33922.
+  - reference: https://www.uniprot.org/uniprotkb/K4MHW2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: UniProtKB:K4MHW2 is the 504 aa Streptomyces sp. BC16019 botP entry cross-referenced
+      to EMBL JX235926 with ProteinId AFV25490.1; its sequence matches NCBI Protein
+      AFV25490.1 and the BotP translation in MIBiG BGC0000469.6.
 causal_graphs:
 - graph_id: bottromycin-a2-bot-methylation-biosynthesis
   scope: BIOSYNTHESIS
@@ -727,6 +768,192 @@ causal_graphs:
       notes: UniProtKB:K4MJU2 is the 408 aa Streptomyces sp. BC16019 botCYP entry
         cross-referenced to EMBL JX235926 with ProteinId AFV25487.2; its sequence
         matches NCBI Protein AFV25487.2 and the BotCYP translation in MIBiG BGC0000469.6.
+- graph_id: bottromycin-a2-botp-n-terminal-methionine-cleavage
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces sp. BC16019 Bot RiPP graph for BotP-catalyzed
+    N-terminal methionine cleavage in a bottromycin precursor.
+  nodes:
+  - node_id: n_terminal_met_precursor
+    label: N-terminal Met bottromycin precursor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: botp
+    label: BotP peptidase
+    node_type: ENZYME
+    identifier: UniProtKB:K4MHW2
+    grounding_status: GROUNDED
+  - node_id: n_terminal_methionine_cleavage
+    label: N-terminal methionine cleavage
+    node_type: PROCESS
+  - node_id: gly_precursor
+    label: N-terminal Gly bottromycin precursor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: bottromycin_a2
+    label: bottromycin A2
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-d717cc8774
+    grounding_status: GROUNDED
+  edges:
+  - subject: n_terminal_met_precursor
+    predicate: is substrate for
+    object: n_terminal_methionine_cleavage
+    notes: MITE represents the BotP substrate as a short N-terminal Met-Gly-Pro-Xn
+      bottromycin precursor; the complete BotP peptide substrate remains ungrounded
+      until it has a stable chemical identifier.
+    evidence:
+    - reference: DOI:10.1002/cbic.201600406
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: responsible for the removal of the N-terminal methionine
+      notes: Mann et al. biochemically and structurally characterized Streptomyces
+        sp. BC16019 BotP and showed that this leucyl-aminopeptidase-like enzyme removes
+        the N-terminal methionine from the bottromycin precursor peptide.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000048
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: Cleavage of N-terminal Met from a NH2-Met-Gly-Pro-Xn chain, exposing
+        a N-terminal Gly
+      notes: MITE MITE0000048 is an active BotP entry that maps the enzyme to UniProtKB:K4MHW2,
+        GenPept AFV25490.1, and MIBiG BGC0000469, and curates the N-terminal Met hydrolysis
+        reaction with in vitro evidence from DOI:10.1002/cbic.201600406.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'MITE0000048: Hydrolysis'
+      notes: MIBiG BGC0000469.6 places a botP CDS in the Streptomyces sp. BC16019
+        bottromycin A2 locus, gives protein_id AFV25490.1, and annotates that feature
+        with MITE0000048 at 100% identity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25490.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: BotP [Streptomyces sp. BC16019]
+      notes: NCBI Protein AFV25490.1 is the 504 aa Streptomyces sp. BC16019 botP coding
+        sequence from GenBank JX235926.1 at 32408..33922.
+    - reference: https://www.uniprot.org/uniprotkb/K4MHW2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: UniProtKB:K4MHW2 is the 504 aa Streptomyces sp. BC16019 botP entry cross-referenced
+        to EMBL JX235926 with ProteinId AFV25490.1; its sequence matches NCBI Protein
+        AFV25490.1 and the BotP translation in MIBiG BGC0000469.6.
+  - subject: botp
+    predicate: catalyzes
+    object: n_terminal_methionine_cleavage
+    notes: The BotP protein is grounded to the BC16019 GenPept AFV25490.1 sequence,
+      its UniProtKB:K4MHW2 cross-reference, and the 100% identical BotP feature in
+      MIBiG BGC0000469.6.
+    evidence:
+    - reference: DOI:10.1002/cbic.201600406
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: responsible for the removal of the N-terminal methionine
+      notes: Mann et al. biochemically and structurally characterized Streptomyces
+        sp. BC16019 BotP and showed that this leucyl-aminopeptidase-like enzyme removes
+        the N-terminal methionine from the bottromycin precursor peptide.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000048
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: Cleavage of N-terminal Met from a NH2-Met-Gly-Pro-Xn chain, exposing
+        a N-terminal Gly
+      notes: MITE MITE0000048 is an active BotP entry that maps the enzyme to UniProtKB:K4MHW2,
+        GenPept AFV25490.1, and MIBiG BGC0000469, and curates the N-terminal Met hydrolysis
+        reaction with in vitro evidence from DOI:10.1002/cbic.201600406.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'MITE0000048: Hydrolysis'
+      notes: MIBiG BGC0000469.6 places a botP CDS in the Streptomyces sp. BC16019
+        bottromycin A2 locus, gives protein_id AFV25490.1, and annotates that feature
+        with MITE0000048 at 100% identity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25490.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: BotP [Streptomyces sp. BC16019]
+      notes: NCBI Protein AFV25490.1 is the 504 aa Streptomyces sp. BC16019 botP coding
+        sequence from GenBank JX235926.1 at 32408..33922.
+    - reference: https://www.uniprot.org/uniprotkb/K4MHW2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: UniProtKB:K4MHW2 is the 504 aa Streptomyces sp. BC16019 botP entry cross-referenced
+        to EMBL JX235926 with ProteinId AFV25490.1; its sequence matches NCBI Protein
+        AFV25490.1 and the BotP translation in MIBiG BGC0000469.6.
+  - subject: n_terminal_methionine_cleavage
+    predicate: produces
+    object: gly_precursor
+    notes: The in vitro reaction removes the N-terminal methionine and exposes the
+      N-terminal glycine of the bottromycin precursor.
+    evidence:
+    - reference: DOI:10.1002/cbic.201600406
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: responsible for the removal of the N-terminal methionine
+      notes: Mann et al. biochemically and structurally characterized Streptomyces
+        sp. BC16019 BotP and showed that this leucyl-aminopeptidase-like enzyme removes
+        the N-terminal methionine from the bottromycin precursor peptide.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000048
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: Cleavage of N-terminal Met from a NH2-Met-Gly-Pro-Xn chain, exposing
+        a N-terminal Gly
+      notes: MITE MITE0000048 is an active BotP entry that maps the enzyme to UniProtKB:K4MHW2,
+        GenPept AFV25490.1, and MIBiG BGC0000469, and curates the N-terminal Met hydrolysis
+        reaction with in vitro evidence from DOI:10.1002/cbic.201600406.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'MITE0000048: Hydrolysis'
+      notes: MIBiG BGC0000469.6 places a botP CDS in the Streptomyces sp. BC16019
+        bottromycin A2 locus, gives protein_id AFV25490.1, and annotates that feature
+        with MITE0000048 at 100% identity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25490.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: BotP [Streptomyces sp. BC16019]
+      notes: NCBI Protein AFV25490.1 is the 504 aa Streptomyces sp. BC16019 botP coding
+        sequence from GenBank JX235926.1 at 32408..33922.
+    - reference: https://www.uniprot.org/uniprotkb/K4MHW2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: UniProtKB:K4MHW2 is the 504 aa Streptomyces sp. BC16019 botP entry cross-referenced
+        to EMBL JX235926 with ProteinId AFV25490.1; its sequence matches NCBI Protein
+        AFV25490.1 and the BotP translation in MIBiG BGC0000469.6.
+  - subject: n_terminal_methionine_cleavage
+    predicate: contributes to
+    object: bottromycin_a2
+    notes: This edge records BotP-catalyzed precursor processing as one bottromycin
+      maturation reaction upstream of the final Streptomyces sp. BC16019 bottromycin
+      A2 scaffold.
+    evidence:
+    - reference: DOI:10.1002/cbic.201600406
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: responsible for the removal of the N-terminal methionine
+      notes: Mann et al. biochemically and structurally characterized Streptomyces
+        sp. BC16019 BotP and showed that this leucyl-aminopeptidase-like enzyme removes
+        the N-terminal methionine from the bottromycin precursor peptide.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000048
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: Cleavage of N-terminal Met from a NH2-Met-Gly-Pro-Xn chain, exposing
+        a N-terminal Gly
+      notes: MITE MITE0000048 is an active BotP entry that maps the enzyme to UniProtKB:K4MHW2,
+        GenPept AFV25490.1, and MIBiG BGC0000469, and curates the N-terminal Met hydrolysis
+        reaction with in vitro evidence from DOI:10.1002/cbic.201600406.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'MITE0000048: Hydrolysis'
+      notes: MIBiG BGC0000469.6 places a botP CDS in the Streptomyces sp. BC16019
+        bottromycin A2 locus, gives protein_id AFV25490.1, and annotates that feature
+        with MITE0000048 at 100% identity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25490.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: BotP [Streptomyces sp. BC16019]
+      notes: NCBI Protein AFV25490.1 is the 504 aa Streptomyces sp. BC16019 botP coding
+        sequence from GenBank JX235926.1 at 32408..33922.
+    - reference: https://www.uniprot.org/uniprotkb/K4MHW2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: UniProtKB:K4MHW2 is the 504 aa Streptomyces sp. BC16019 botP entry cross-referenced
+        to EMBL JX235926 with ProteinId AFV25490.1; its sequence matches NCBI Protein
+        AFV25490.1 and the BotP translation in MIBiG BGC0000469.6.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -748,4 +975,10 @@ curation_history:
   action: ADDED_BOTCYP_BIOSYNTHESIS_GRAPH
   changes: Added exact Streptomyces sp. BC16019 BotCYP/UniProtKB:K4MJU2 grounding
     and a BotCYP oxidative-decarboxylation biosynthesis graph for bottromycin A2.
+  llm_assisted: true
+- timestamp: '2026-10-03T10:07:43Z'
+  curator: codex
+  action: ADDED_BOTP_BIOSYNTHESIS_GRAPH
+  changes: Added exact Streptomyces sp. BC16019 BotP/UniProtKB:K4MHW2 grounding and
+    a BotP N-terminal methionine-cleavage biosynthesis graph for bottromycin A2.
   llm_assisted: true
