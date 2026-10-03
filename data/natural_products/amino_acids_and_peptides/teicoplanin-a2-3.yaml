@@ -108,6 +108,253 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-87ddd52a21
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q6ZZI3
+  enzyme_label: GtfB teicoplanin aglycone glycosyltransferase
+  notes: GtfB/tcp23 transfers N-acetylglucosamine from UDP-N-acetyl-alpha-D-glucosamine
+    to Hpg4 of the teicoplanin aglycone. That Hpg4 glycosylation precedes downstream
+    deacetylation, acylation and tailoring toward teicoplanin A2-3, so the immediate
+    pseudoaglycone product is left ungrounded.
+  evidence:
+  - reference: DOI:10.1099/mic.0.26507-0
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: tGtfB can only glycosylate the teicoplanin aglycon
+    notes: Sosio et al. isolated the Actinoplanes teichomyceticus ATCC 31131 tcp cluster
+      on AJ605139, assigned tcp23 as a GtfB glycosyltransferase, and characterized
+      teicoplanin aglycone glycosylation in vitro.
+  - reference: DOI:10.1016/s1074-5521(04)00002-x
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: 4-hydroxyphenylglycine-4 (4Hpg) of the teicoplanin heptapeptide aglycone
+    notes: Li et al. cloned the 89 kbp teicoplanin biosynthetic locus and heterologously
+      assayed its glycosyltransferases, including the enzyme that modifies Hpg4 of
+      the teicoplanin aglycone.
+  - reference: DOI:10.1021/ja0735857
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Howard-Jones et al. kinetically analyzed the teicoplanin glycosyltransferases
+      and acyltransferase, supporting ordered tailoring of the aglycone scaffold during
+      mature teicoplanin reconstitution.
+  - reference: https://mite.bioinformatics.nl/repository/MITE0000033
+    evidence_type: DATABASE_ASSERTION
+    snippet: Adds N-acetylglucosamine or N-acylglucosamine to Hpg4 of the teicoplanin
+      aglycone
+    retrieved_on: '2026-10-03'
+    notes: MITE0000033 is active, records GtfB as a glycosyltransferase that modifies
+      Hpg4 of the teicoplanin aglycone, and links GtfB to UniProtKB:Q6ZZI3, GenPept
+      CAE53364.1 and MIBiG BGC0000440.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: 'MITE0000033: Glycosylation (100% identity)'
+    retrieved_on: '2026-10-03'
+    notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp23 CDS at
+      AJ605139.1:60486..61712 with GenPept protein_id CAE53364.1, UniProtKB/TrEMBL
+      Q6ZZI3, and a 100% identity MITE0000033 glycosylation annotation.
+  - reference: https://www.uniprot.org/uniprotkb/Q6ZZI3
+    evidence_type: DATABASE_ASSERTION
+    snippet: AC   Q6ZZI3;
+    retrieved_on: '2026-10-03'
+    notes: Current UniProtKB:Q6ZZI3 resolves to a 408 aa Actinoplanes teichomyceticus
+      glycosyltransferase sequence whose sequence is identical to CAE53364.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53364.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: /product="GtfB protein"
+    retrieved_on: '2026-10-03'
+    notes: NCBI Protein CAE53364.1 is the 408 aa Actinoplanes teichomyceticus ATCC
+      31131 tcp23/GtfB protein translated from AJ605139.1:60486..61712 and cross-referenced
+      to UniProtKB/TrEMBL Q6ZZI3.
+  - reference: CHEBI:16264
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: ChEBI:16264 is the 3-star ChEBI entry for UDP-N-acetyl-alpha-D-glucosamine,
+      the UDP-amino-sugar donor used for GtfB-catalyzed N-acetylglucosamine transfer.
+causal_graphs:
+- graph_id: teicoplanin-a2-3-gtfb-hpg4-glycosylation
+  scope: BIOSYNTHESIS
+  description: Actinoplanes teichomyceticus ATCC 31131 GtfB glycosylates Hpg4 of the
+    teicoplanin aglycone with UDP-N-acetyl-alpha-D-glucosamine during teicoplanin
+    A2 pseudoaglycone biosynthesis.
+  nodes:
+  - node_id: teicoplanin_aglycone
+    label: teicoplanin aglycone
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: udp_n_acetyl_alpha_d_glucosamine
+    label: UDP-N-acetyl-alpha-D-glucosamine
+    node_type: PRECURSOR
+    identifier: CHEBI:16264
+    grounding_status: GROUNDED
+  - node_id: gtfb
+    label: GtfB
+    node_type: ENZYME
+    identifier: UniProtKB:Q6ZZI3
+    grounding_status: GROUNDED
+  - node_id: hpg4_n_acetylglucosaminyl_aglycone
+    label: Hpg4 N-acetylglucosaminyl teicoplanin pseudoaglycone
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: teicoplanin_aglycone
+    predicate: is Hpg4-glycosylated by
+    object: gtfb
+    evidence:
+    - reference: DOI:10.1099/mic.0.26507-0
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: tGtfB can only glycosylate the teicoplanin aglycon
+      notes: Sosio et al. isolated the Actinoplanes teichomyceticus ATCC 31131 tcp
+        cluster on AJ605139, assigned tcp23 as a GtfB glycosyltransferase, and characterized
+        teicoplanin aglycone glycosylation in vitro.
+    - reference: DOI:10.1016/s1074-5521(04)00002-x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 4-hydroxyphenylglycine-4 (4Hpg) of the teicoplanin heptapeptide aglycone
+      notes: Li et al. cloned the 89 kbp teicoplanin biosynthetic locus and heterologously
+        assayed its glycosyltransferases, including the enzyme that modifies Hpg4
+        of the teicoplanin aglycone.
+    - reference: DOI:10.1021/ja0735857
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Howard-Jones et al. kinetically analyzed the teicoplanin glycosyltransferases
+        and acyltransferase, supporting ordered tailoring of the aglycone scaffold
+        during mature teicoplanin reconstitution.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000033
+      evidence_type: DATABASE_ASSERTION
+      snippet: Adds N-acetylglucosamine or N-acylglucosamine to Hpg4 of the teicoplanin
+        aglycone
+      retrieved_on: '2026-10-03'
+      notes: MITE0000033 is active, records GtfB as a glycosyltransferase that modifies
+        Hpg4 of the teicoplanin aglycone, and links GtfB to UniProtKB:Q6ZZI3, GenPept
+        CAE53364.1 and MIBiG BGC0000440.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000033: Glycosylation (100% identity)'
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp23 CDS
+        at AJ605139.1:60486..61712 with GenPept protein_id CAE53364.1, UniProtKB/TrEMBL
+        Q6ZZI3, and a 100% identity MITE0000033 glycosylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q6ZZI3
+      evidence_type: DATABASE_ASSERTION
+      snippet: AC   Q6ZZI3;
+      retrieved_on: '2026-10-03'
+      notes: Current UniProtKB:Q6ZZI3 resolves to a 408 aa Actinoplanes teichomyceticus
+        glycosyltransferase sequence whose sequence is identical to CAE53364.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53364.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /product="GtfB protein"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein CAE53364.1 is the 408 aa Actinoplanes teichomyceticus ATCC
+        31131 tcp23/GtfB protein translated from AJ605139.1:60486..61712 and cross-referenced
+        to UniProtKB/TrEMBL Q6ZZI3.
+    - reference: CHEBI:16264
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: ChEBI:16264 is the 3-star ChEBI entry for UDP-N-acetyl-alpha-D-glucosamine,
+        the UDP-amino-sugar donor used for GtfB-catalyzed N-acetylglucosamine transfer.
+  - subject: udp_n_acetyl_alpha_d_glucosamine
+    predicate: donates N-acetylglucosamine via
+    object: gtfb
+    evidence:
+    - reference: DOI:10.1099/mic.0.26507-0
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: tGtfB can only glycosylate the teicoplanin aglycon
+      notes: Sosio et al. isolated the Actinoplanes teichomyceticus ATCC 31131 tcp
+        cluster on AJ605139, assigned tcp23 as a GtfB glycosyltransferase, and characterized
+        teicoplanin aglycone glycosylation in vitro.
+    - reference: DOI:10.1016/s1074-5521(04)00002-x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 4-hydroxyphenylglycine-4 (4Hpg) of the teicoplanin heptapeptide aglycone
+      notes: Li et al. cloned the 89 kbp teicoplanin biosynthetic locus and heterologously
+        assayed its glycosyltransferases, including the enzyme that modifies Hpg4
+        of the teicoplanin aglycone.
+    - reference: DOI:10.1021/ja0735857
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Howard-Jones et al. kinetically analyzed the teicoplanin glycosyltransferases
+        and acyltransferase, supporting ordered tailoring of the aglycone scaffold
+        during mature teicoplanin reconstitution.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000033
+      evidence_type: DATABASE_ASSERTION
+      snippet: Adds N-acetylglucosamine or N-acylglucosamine to Hpg4 of the teicoplanin
+        aglycone
+      retrieved_on: '2026-10-03'
+      notes: MITE0000033 is active, records GtfB as a glycosyltransferase that modifies
+        Hpg4 of the teicoplanin aglycone, and links GtfB to UniProtKB:Q6ZZI3, GenPept
+        CAE53364.1 and MIBiG BGC0000440.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000033: Glycosylation (100% identity)'
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp23 CDS
+        at AJ605139.1:60486..61712 with GenPept protein_id CAE53364.1, UniProtKB/TrEMBL
+        Q6ZZI3, and a 100% identity MITE0000033 glycosylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q6ZZI3
+      evidence_type: DATABASE_ASSERTION
+      snippet: AC   Q6ZZI3;
+      retrieved_on: '2026-10-03'
+      notes: Current UniProtKB:Q6ZZI3 resolves to a 408 aa Actinoplanes teichomyceticus
+        glycosyltransferase sequence whose sequence is identical to CAE53364.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53364.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /product="GtfB protein"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein CAE53364.1 is the 408 aa Actinoplanes teichomyceticus ATCC
+        31131 tcp23/GtfB protein translated from AJ605139.1:60486..61712 and cross-referenced
+        to UniProtKB/TrEMBL Q6ZZI3.
+    - reference: CHEBI:16264
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: ChEBI:16264 is the 3-star ChEBI entry for UDP-N-acetyl-alpha-D-glucosamine,
+        the UDP-amino-sugar donor used for GtfB-catalyzed N-acetylglucosamine transfer.
+  - subject: gtfb
+    predicate: forms
+    object: hpg4_n_acetylglucosaminyl_aglycone
+    evidence:
+    - reference: DOI:10.1099/mic.0.26507-0
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: tGtfB can only glycosylate the teicoplanin aglycon
+      notes: Sosio et al. isolated the Actinoplanes teichomyceticus ATCC 31131 tcp
+        cluster on AJ605139, assigned tcp23 as a GtfB glycosyltransferase, and characterized
+        teicoplanin aglycone glycosylation in vitro.
+    - reference: DOI:10.1016/s1074-5521(04)00002-x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 4-hydroxyphenylglycine-4 (4Hpg) of the teicoplanin heptapeptide aglycone
+      notes: Li et al. cloned the 89 kbp teicoplanin biosynthetic locus and heterologously
+        assayed its glycosyltransferases, including the enzyme that modifies Hpg4
+        of the teicoplanin aglycone.
+    - reference: DOI:10.1021/ja0735857
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Howard-Jones et al. kinetically analyzed the teicoplanin glycosyltransferases
+        and acyltransferase, supporting ordered tailoring of the aglycone scaffold
+        during mature teicoplanin reconstitution.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000033
+      evidence_type: DATABASE_ASSERTION
+      snippet: Adds N-acetylglucosamine or N-acylglucosamine to Hpg4 of the teicoplanin
+        aglycone
+      retrieved_on: '2026-10-03'
+      notes: MITE0000033 is active, records GtfB as a glycosyltransferase that modifies
+        Hpg4 of the teicoplanin aglycone, and links GtfB to UniProtKB:Q6ZZI3, GenPept
+        CAE53364.1 and MIBiG BGC0000440.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000033: Glycosylation (100% identity)'
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp23 CDS
+        at AJ605139.1:60486..61712 with GenPept protein_id CAE53364.1, UniProtKB/TrEMBL
+        Q6ZZI3, and a 100% identity MITE0000033 glycosylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q6ZZI3
+      evidence_type: DATABASE_ASSERTION
+      snippet: AC   Q6ZZI3;
+      retrieved_on: '2026-10-03'
+      notes: Current UniProtKB:Q6ZZI3 resolves to a 408 aa Actinoplanes teichomyceticus
+        glycosyltransferase sequence whose sequence is identical to CAE53364.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53364.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /product="GtfB protein"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein CAE53364.1 is the 408 aa Actinoplanes teichomyceticus ATCC
+        31131 tcp23/GtfB protein translated from AJ605139.1:60486..61712 and cross-referenced
+        to UniProtKB/TrEMBL Q6ZZI3.
+    - reference: CHEBI:16264
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: ChEBI:16264 is the 3-star ChEBI entry for UDP-N-acetyl-alpha-D-glucosamine,
+        the UDP-amino-sugar donor used for GtfB-catalyzed N-acetylglucosamine transfer.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -117,3 +364,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-03T05:03:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the UniProtKB:Q6ZZI3-grounded GtfB biosynthetic_pathway step and
+    a BIOSYNTHESIS causal graph for Hpg4 N-acetylglucosamine transfer onto the teicoplanin
+    aglycone during teicoplanin A2-3 precursor biosynthesis.
+  llm_assisted: true
