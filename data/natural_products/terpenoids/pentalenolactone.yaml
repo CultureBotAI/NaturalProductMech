@@ -841,8 +841,8 @@ causal_graphs:
     evidence:
     - reference: DOI:10.1016/j.engmic.2025.100206
       evidence_type: PRIMARY_EXPERIMENT
-      notes: 'Figure 5: the pair improved yield relative to PenA/PntI alone; individual
-        additions did not.'
+      notes: 'Figure 5: the pair improved yield relative to PenA/PntI alone; the authors
+        reported no significant change for individual additions.'
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -897,4 +897,12 @@ curation_history:
     XNR_4478/AGI90801.1. Grounded whole-cell evidence to Li et al. 2025 and preserved
     the distinction between paired coexpression, native partners and purified-enzyme
     assays.
+  llm_assisted: true
+- timestamp: '2026-10-03T12:20:17Z'
+  curator: codex
+  action: CLARIFIED_REDOX_SINGLE_GENE_EVIDENCE
+  changes: 'Addressed review issue #489: preserved the author-reported lack of a significant
+    yield change for individual redox-gene additions, rather than implying identical
+    measured yields or proven absence of an effect. The paired-expression increase
+    is unchanged.'
   llm_assisted: true
