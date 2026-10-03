@@ -4,7 +4,7 @@
 {% block head %}<script defer src="chemical-map.js"></script>{% endblock %}
 {% block wrapclass %} map-page-wrap{% endblock %}
 {% block content %}
-<main id="chemical-map" data-source="data/chemical-structure-map.json">
+<section id="chemical-map" data-source="data/chemical-structure-map.json">
   <h1>Chemical structure map</h1>
   <p class="lede">
     This view places {{ total }} records using <strong>chemical structure
@@ -107,5 +107,5 @@
       point.
     </p>
   </details>
-</main>
+</section>
 {% endblock %}

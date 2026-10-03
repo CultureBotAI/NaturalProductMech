@@ -5,6 +5,8 @@
   --causal: #1a6b3c; --causal-bg: #e8f4ec;
   --weak: #8a5a00; --weak-bg: #fdf3e0;
   --link: #0b5fa5;
+  --fg: var(--ink); --line: var(--rule); --accent: var(--link);
+  --danger: var(--weak); --tooltip-bg: var(--ink); --tooltip-fg: var(--bg);
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -207,3 +209,14 @@ figure { margin: 0; }
                      border: 1px solid var(--rule); border-radius: .5rem;
                      background: var(--panel); touch-action: none; }
 #map-hover { min-height: 1.4em; }
+
+.browse-controls { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .4rem; }
+.browse-controls input { flex: 1; min-width: 0; }
+.browse-controls input, .browse-controls button { font: inherit; padding: .5rem; color: var(--ink); background: var(--bg); border: 1px solid var(--muted); border-radius: .3rem; }
+.browse-controls button { cursor: pointer; }
+.chemical-map-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 1rem; }
+.map-controls > *, .map-controls input, .map-controls select { min-width: 0; max-width: 100%; }
+@media (max-width: 850px) { .chemical-map-layout { grid-template-columns: 1fr; } }
+@media (max-width: 40rem) { .map-controls { grid-template-columns: minmax(0, 1fr); } }
+
+a.mono { overflow-wrap: anywhere; }

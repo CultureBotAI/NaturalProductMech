@@ -3,12 +3,51 @@
 {% block content %}
 <h1>Browse</h1>
 <p class="sub">{{ total }} records across {{ pathways|length }} filing pathways.</p>
+<form id="browse-search" hidden>
+  <label for="browse-query">Search compounds by name, identifier, synonym or filing pathway</label>
+  <div class="browse-controls"><input id="browse-query" type="search" autocomplete="off"><button type="reset">Reset</button></div>
+</form>
+<p id="browse-status" role="status" aria-live="polite"></p>
+<p id="browse-empty" hidden>No compounds match. Try another term or reset the search.</p>
 {% for pathway in pathways %}
+<section class="browse-group">
 <h2>{{ pathway.title }} <span class="tag">{{ pathway.count }}</span></h2>
 <ul class="records">
 {% for record in pathway.records %}
-  <li><a href="{{ pathway.slug }}/{{ record.slug }}.html">{{ record.label }}</a></li>
+  <li data-search="{{ record.label }} {{ record.identifier }} {{ record.synonyms|join(' ') }} {{ pathway.title }}"><a href="{{ pathway.slug }}/{{ record.slug }}.html">{{ record.label }}</a></li>
 {% endfor %}
 </ul>
+</section>
 {% endfor %}
+<script>
+(function () {
+  'use strict';
+  var form = document.getElementById('browse-search');
+  var query = document.getElementById('browse-query');
+  var status = document.getElementById('browse-status');
+  var empty = document.getElementById('browse-empty');
+  var groups = Array.from(document.querySelectorAll('.browse-group'));
+  var rows = Array.from(document.querySelectorAll('li[data-search]'));
+  function filter() {
+    var term = query.value.trim().toLocaleLowerCase();
+    var count = 0;
+    rows.forEach(function (row) {
+      row.hidden = !row.dataset.search.toLocaleLowerCase().includes(term);
+      if (!row.hidden) count += 1;
+    });
+    groups.forEach(function (group) {
+      group.hidden = !Array.from(group.querySelectorAll('li')).some(function (row) { return !row.hidden; });
+    });
+    status.textContent = count + ' of ' + rows.length + ' compounds match';
+    empty.hidden = count !== 0;
+  }
+  query.addEventListener('input', filter);
+  form.addEventListener('submit', function (event) { event.preventDefault(); filter(); });
+  form.addEventListener('reset', function (event) {
+    event.preventDefault(); query.value = ''; filter(); query.focus();
+  });
+  form.hidden = false;
+  filter();
+})();
+</script>
 {% endblock %}
