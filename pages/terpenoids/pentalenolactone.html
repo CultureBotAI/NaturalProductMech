@@ -279,8 +279,8 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
-<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
-<p class="sub">Engineered E. coli BL21(DE3) with PenA/PntI: paired J1074 redox-gene expression enhanced intermediate production. Neither native partnership, physical complex, nor increased final pentalenolactone yield is asserted.</p><div class="scroll"><table>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 8 edges</span></h2>
+<p class="sub">Engineered E. coli BL21(DE3) with PenA/PntI: paired J1074 redox-gene expression enhanced intermediate production. Neither native partnership, physical complex, nor increased final pentalenolactone yield is asserted. The 4478/5179 and 4772/5179 pairs are alternative experimental conditions.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>PntI</td>
@@ -307,6 +307,137 @@ by the corpus tests.</p>
   <td>Joint expression of XNR_5179 and XNR_4478</td>
   <td>increases</td>
   <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+<tr>
+  <td>PenA</td>
+  <td>supplies pentalenene for</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/Q55012</td>
+</tr>
+<tr>
+  <td>XNR_4772 predicted ferredoxin reductase</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_5179 and XNR_4772</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</td>
+</tr>
+<tr>
+  <td>XNR_5179 ferredoxin</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_5179 and XNR_4772</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</td>
+</tr>
+<tr>
+  <td>Joint expression of XNR_5179 and XNR_4772</td>
+  <td>increases</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
+<p class="sub">UC5319 PenA cyclization and the native penI deletion phenotype. Purified PenA evidence and genetic PenI evidence are distinct; the deletion does not establish an isolated PenI reaction or exclude indirect effects.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2-trans,6-trans-farnesyl diphosphate(3-)</td>
+  <td>is cyclized by</td>
+  <td>PenA</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/bi00185a024<br>https://www.uniprot.org/uniprotkb/Q55012</td>
+</tr>
+<tr>
+  <td>PenA</td>
+  <td>forms</td>
+  <td>pentalenene</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/bi00185a024</td>
+</tr>
+<tr>
+  <td>PenI</td>
+  <td>encoding gene is disrupted in</td>
+  <td>In-frame penI deletion in S. exfoliatus UC5319</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/E3VWK7</td>
+</tr>
+<tr>
+  <td>In-frame penI deletion in S. exfoliatus UC5319</td>
+  <td>abolishes detectable production of</td>
+  <td>pentalenolactone</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+<tr>
+  <td>In-frame penI deletion in S. exfoliatus UC5319</td>
+  <td>causes accumulation of</td>
+  <td>pentalenene</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">9 nodes, 8 edges</span></h2>
+<p class="sub">PtlI from the S. avermitilis neopentalenolactone pathway acts on shared early precursors. The 2006 purified assay and 2025 engineered PenA/PtlI E. coli experiment are separate contexts. Neither establishes native S. avermitilis production of pentalenolactone.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PtlI</td>
+  <td>catalyzes</td>
+  <td>Purified PtlI oxidation with E. coli Fld/Fdr</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja0639214<br>https://www.uniprot.org/uniprotkb/Q82IY3</td>
+</tr>
+<tr>
+  <td>Racemic pentalenene assay substrate</td>
+  <td>is substrate for</td>
+  <td>Purified PtlI oxidation with E. coli Fld/Fdr</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja0639214</td>
+</tr>
+<tr>
+  <td>Purified PtlI oxidation with E. coli Fld/Fdr</td>
+  <td>forms</td>
+  <td>pentalen-13-ol</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja0639214<br>https://pubchem.ncbi.nlm.nih.gov/compound/56927746</td>
+</tr>
+<tr>
+  <td>Purified PtlI oxidation with E. coli Fld/Fdr</td>
+  <td>forms</td>
+  <td>pentalen-13-al</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja0639214<br>https://www.rhea-db.org/rhea/31699</td>
+</tr>
+<tr>
+  <td>PenA</td>
+  <td>forms</td>
+  <td>pentalenene</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/Q55012</td>
+</tr>
+<tr>
+  <td>pentalenene</td>
+  <td>is substrate for</td>
+  <td>PenA/PtlI oxidation in engineered E. coli</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+<tr>
+  <td>PtlI</td>
+  <td>supports</td>
+  <td>PenA/PtlI oxidation in engineered E. coli</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/Q82IY3</td>
+</tr>
+<tr>
+  <td>PenA/PtlI oxidation in engineered E. coli</td>
+  <td>forms</td>
+  <td>1-deoxypentalenic acid</td>
   <td></td>
   <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
 </tr>
