@@ -289,6 +289,124 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 16 edges</span></h2>
+<p class="sub">In-vitro processing of the BC16019 BotA bottromycin A2 precursor by S. ipomoeae IpoC and S. purpureus PurCD/PurAH. These are the assayed homologs, not BC16019 BotC/BotCD/BotAH. The recombinant substrates lack native C-methylations; products are intermediates, not mature bottromycin A2. No native production by the enzyme-source species is asserted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>BotA(P): N-terminal Met removed</td>
+  <td>is substrate for</td>
+  <td>In-vitro thiazoline formation</td>
+  <td>BotP-processed wild-type precursor; ATP/Mg2+ supplied. Figure 1 and SI Figures S4-S6.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09898</td>
+</tr>
+<tr>
+  <td>S. ipomoeae IpoC</td>
+  <td>catalyzes</td>
+  <td>In-vitro thiazoline formation</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.7b09898<br>DOI:10.1021/jacs.7b09898.s001<br>https://www.ncbi.nlm.nih.gov/protein/WP_048819674.1</td>
+</tr>
+<tr>
+  <td>In-vitro thiazoline formation</td>
+  <td>produces</td>
+  <td>BotA(PC): thiazoline, follower retained</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.7b09898</td>
+</tr>
+<tr>
+  <td>BotA(PC): thiazoline, follower retained</td>
+  <td>is substrate for</td>
+  <td>In-vitro macroamidine formation</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.7b09898</td>
+</tr>
+<tr>
+  <td>S. purpureus PurCD</td>
+  <td>catalyzes</td>
+  <td>In-vitro macroamidine formation</td>
+  <td>ATP/Mg2+-dependent reaction without PurAH; not an obligate two-protein complex.</td>
+  <td class="mono">DOI:10.1021/jacs.7b09898<br>DOI:10.1021/jacs.7b09898.s001<br>https://www.ncbi.nlm.nih.gov/protein/WP_019887079.1</td>
+</tr>
+<tr>
+  <td>In-vitro macroamidine formation</td>
+  <td>produces</td>
+  <td>BotA(PCCD): thiazoline and macroamidine</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.7b09898</td>
+</tr>
+<tr>
+  <td>BotA(PCCD): thiazoline and macroamidine</td>
+  <td>is substrate for</td>
+  <td>Follower-retaining macroamidine reopening</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.8b12231</td>
+</tr>
+<tr>
+  <td>S. purpureus PurCD</td>
+  <td>catalyzes</td>
+  <td>Follower-retaining macroamidine reopening</td>
+  <td>Purified follower-retaining BotA(PCCD), PurCD and ATP/MgCl2; Figure S4.</td>
+  <td class="mono">DOI:10.1021/jacs.8b12231</td>
+</tr>
+<tr>
+  <td>Follower-retaining macroamidine reopening</td>
+  <td>produces</td>
+  <td>BotA(PC): thiazoline, follower retained</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.8b12231</td>
+</tr>
+<tr>
+  <td>BotA(PCCD): thiazoline and macroamidine</td>
+  <td>is substrate for</td>
+  <td>Thiazoline-adjacent follower cleavage</td>
+  <td>Preferred substrate, not exclusive: BotA(PC) also undergoes slower cleavage in Figure 1a.</td>
+  <td class="mono">DOI:10.1021/jacs.8b12231</td>
+</tr>
+<tr>
+  <td>S. purpureus PurAH</td>
+  <td>catalyzes</td>
+  <td>Thiazoline-adjacent follower cleavage</td>
+  <td>Cleavage follows the thiazoline, not a thiazole; Figure 1 and SI Figures S1-S2.</td>
+  <td class="mono">DOI:10.1021/jacs.8b12231<br>DOI:10.1021/jacs.8b12231.s001<br>https://www.ncbi.nlm.nih.gov/protein/WP_019887083.1<br>https://www.uniprot.org/uniprotkb/A0A5S8WF49<br>https://www.rcsb.org/structure/6I5S</td>
+</tr>
+<tr>
+  <td>Thiazoline-adjacent follower cleavage</td>
+  <td>produces</td>
+  <td>Core 2: macroamidine, follower removed</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.8b12231</td>
+</tr>
+<tr>
+  <td>Thiazoline-adjacent follower cleavage</td>
+  <td>releases</td>
+  <td>Released BotA follower peptide</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.8b12231</td>
+</tr>
+<tr>
+  <td>Core 2: macroamidine, follower removed</td>
+  <td>is tested in</td>
+  <td>PurCD test on follower-free core 2</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.8b12231<br>DOI:10.1021/jacs.8b12231.s001</td>
+</tr>
+<tr>
+  <td>S. purpureus PurCD</td>
+  <td>is supplied in</td>
+  <td>PurCD test on follower-free core 2</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/jacs.8b12231</td>
+</tr>
+<tr>
+  <td>PurCD test on follower-free core 2</td>
+  <td>has no reported detectable formation of</td>
+  <td>Core 1: no macroamidine, follower removed</td>
+  <td>Condition-specific lack of macroamidine reopening after follower removal; not proof of universal chemical irreversibility.</td>
+  <td class="mono">DOI:10.1021/jacs.8b12231</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
