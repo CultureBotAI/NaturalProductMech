@@ -85,7 +85,47 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>GtfB teicoplanin aglycone glycosyltransferase<br><span class="mono">UniProtKB:Q6ZZI3</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1099/mic.0.26507-0</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: GtfB/tcp23 transfers N-acetylglucosamine from UDP-N-acetyl-alpha-D-glucosamine to Hpg4 of the teicoplanin aglycone. That Hpg4 glycosylation precedes downstream deacetylation, acylation and tailoring toward teicoplanin A2-4, so the immediate pseudoaglycone product is left ungrounded.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Actinoplanes teichomyceticus ATCC 31131 GtfB glycosylates Hpg4 of the teicoplanin aglycone with UDP-N-acetyl-alpha-D-glucosamine during teicoplanin A2 pseudoaglycone biosynthesis.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>teicoplanin aglycone</td>
+  <td>is Hpg4-glycosylated by</td>
+  <td>GtfB</td>
+  <td></td>
+  <td class="mono">DOI:10.1099/mic.0.26507-0<br>DOI:10.1016/s1074-5521(04)00002-x<br>DOI:10.1021/ja0735857<br>https://mite.bioinformatics.nl/repository/MITE0000033<br>https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk<br>https://www.uniprot.org/uniprotkb/Q6ZZI3<br>https://www.ncbi.nlm.nih.gov/protein/CAE53364.1<br>CHEBI:16264</td>
+</tr>
+<tr>
+  <td>UDP-N-acetyl-alpha-D-glucosamine</td>
+  <td>donates N-acetylglucosamine via</td>
+  <td>GtfB</td>
+  <td></td>
+  <td class="mono">DOI:10.1099/mic.0.26507-0<br>DOI:10.1016/s1074-5521(04)00002-x<br>DOI:10.1021/ja0735857<br>https://mite.bioinformatics.nl/repository/MITE0000033<br>https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk<br>https://www.uniprot.org/uniprotkb/Q6ZZI3<br>https://www.ncbi.nlm.nih.gov/protein/CAE53364.1<br>CHEBI:16264</td>
+</tr>
+<tr>
+  <td>GtfB</td>
+  <td>forms</td>
+  <td>Hpg4 N-acetylglucosaminyl teicoplanin pseudoaglycone</td>
+  <td></td>
+  <td class="mono">DOI:10.1099/mic.0.26507-0<br>DOI:10.1016/s1074-5521(04)00002-x<br>DOI:10.1021/ja0735857<br>https://mite.bioinformatics.nl/repository/MITE0000033<br>https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk<br>https://www.uniprot.org/uniprotkb/Q6ZZI3<br>https://www.ncbi.nlm.nih.gov/protein/CAE53364.1<br>CHEBI:16264</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
