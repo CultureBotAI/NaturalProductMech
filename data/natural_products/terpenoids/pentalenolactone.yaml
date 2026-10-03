@@ -768,10 +768,10 @@ causal_graphs:
       notes: Product 6; methylation is analytical derivatization.
 - graph_id: pentalenolactone-pnti-engineered-redox-support
   scope: BIOSYNTHESIS
-  description: 'Engineered E. coli BL21(DE3) with PenA/PntI: paired J1074 redox-gene
-    expression enhanced intermediate production. Neither native partnership, physical
-    complex, nor increased final pentalenolactone yield is asserted. The 4478/5179
-    and 4772/5179 pairs are alternative experimental conditions.'
+  description: Engineered E. coli BL21(DE3) with PenA/PntI and alternative J1074 redox-gene
+    expression conditions. XNR_5179-containing pairs increased intermediate production;
+    XNR_1673 conditions are represented only as tested conditions. Neither native
+    partnership, physical complex, nor increased final pentalenolactone yield is asserted.
   nodes:
   - node_id: pnti
     label: PntI
@@ -806,6 +806,20 @@ causal_graphs:
     grounding_status: GROUNDED
   - node_id: paired_expression_4772
     label: Joint expression of XNR_5179 and XNR_4772
+    node_type: PROCESS
+  - node_id: xnr_1673
+    label: XNR_1673 ferredoxin
+    node_type: PROTEIN
+    identifier: NCBIProtein:AGI88059.1
+    grounding_status: GROUNDED
+  - node_id: expression_1673
+    label: XNR_1673 addition to PenA/PntI
+    node_type: PROCESS
+  - node_id: paired_expression_1673_4478
+    label: Joint expression of XNR_1673 and XNR_4478
+    node_type: PROCESS
+  - node_id: paired_expression_1673_4772
+    label: Joint expression of XNR_1673 and XNR_4772
     node_type: PROCESS
   edges:
   - subject: pnti
@@ -911,6 +925,78 @@ causal_graphs:
       notes: Figure 5 compares pLJ64 with PenA/PntI-only pLJ9. The paired condition
         increased acid production; the authors reported no significant change for
         individual additions. No physical complex or native partnership is demonstrated.
+  - subject: xnr_1673
+    predicate: is expressed in
+    object: expression_1673
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table S2 traces J1074 XNR_1673 from pLJ53 to pLJ56; the host contains
+        pMH1, pFZ81 and PenA/PntI.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI88059.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: J1074 XNR_1673, 106 aa, complement(CP004370.1:1979389..1979709). NCBI
+        uses S. albidoflavus; the paper uses S. albus. UniProt query (AGI88059 OR
+        gene:XNR_1673) returned no results; the versioned NCBI accession avoids substituting
+        a homolog.
+  - subject: expression_1673
+    predicate: was tested for effects on
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Figure 5, pLJ56 versus pLJ9: the authors reported no significant change
+        for individual additions. This is not evidence of zero effect or intrinsic
+        inactivity.'
+      snippet: no significant change in the yield of 6
+  - subject: xnr_1673
+    predicate: is coexpressed in
+    object: paired_expression_1673_4478
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Table S2: pLJ61 adds XNR_1673 from pLJ53 to pLJ10.'
+  - subject: xnr_4478
+    predicate: is coexpressed in
+    object: paired_expression_1673_4478
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: pLJ10 supplies XNR_4478 to the pLJ61 paired condition.
+  - subject: xnr_1673
+    predicate: is coexpressed in
+    object: paired_expression_1673_4772
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Table S2: pLJ63 adds XNR_1673 from pLJ53 to pLJ55.'
+  - subject: xnr_4772
+    predicate: is coexpressed in
+    object: paired_expression_1673_4772
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: pLJ55 supplies XNR_4772 to the pLJ63 paired condition.
+  - subject: paired_expression_1673_4478
+    predicate: was tested for effects on
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'pLJ61 versus pLJ9: main text reports unchanged yield, but Figure 5 plots
+        a higher mean. No causal null or statistical significance is inferred from
+        this discrepancy.'
+      snippet: the yield of 6 did not change
+  - subject: paired_expression_1673_4772
+    predicate: was tested for effects on
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'pLJ63 versus pLJ9: main text reports unchanged yield, but Figure 5 plots
+        a higher mean. This edge records testing, not a demonstrated absence of an
+        effect.'
 - graph_id: pentalenolactone-uc5319-pena-peni
   scope: BIOSYNTHESIS
   description: UC5319 PenA cyclization and the native penI deletion phenotype. Purified
@@ -1007,7 +1093,8 @@ causal_graphs:
   description: PtlI from the S. avermitilis neopentalenolactone pathway acts on shared
     early precursors. The 2006 purified assay and 2025 engineered PenA/PtlI E. coli
     experiment are separate contexts. Neither establishes native S. avermitilis production
-    of pentalenolactone.
+    of pentalenolactone. E. coli FldA/Fdr reconstitution is distinct from the FdxD/FprD
+    test that reported no detectable acid; the latter is not a native-partner assignment.
   nodes:
   - node_id: ptli
     label: PtlI
@@ -1049,6 +1136,29 @@ causal_graphs:
     node_type: PRECURSOR
     identifier: CHEBI:68832
     grounding_status: GROUNDED
+  - node_id: ecoli_flda
+    label: E. coli FldA
+    node_type: PROTEIN
+    identifier: UniProtKB:P61949
+    grounding_status: GROUNDED
+  - node_id: ecoli_fdr
+    label: E. coli Fdr
+    node_type: ENZYME
+    identifier: UniProtKB:P28861
+    grounding_status: GROUNDED
+  - node_id: fdxd
+    label: S. avermitilis FdxD
+    node_type: PROTEIN
+    identifier: UniProtKB:Q82IK4
+    grounding_status: GROUNDED
+  - node_id: fprd
+    label: S. avermitilis FprD
+    node_type: PROTEIN
+    identifier: UniProtKB:Q82BM9
+    grounding_status: GROUNDED
+  - node_id: fdxd_fprd_assay
+    label: In-vitro PtlI test with FdxD/FprD
+    node_type: PROCESS
   edges:
   - subject: ptli
     predicate: catalyzes
@@ -1147,6 +1257,78 @@ causal_graphs:
       notes: Compound 6 was detected as 6-Me after acidification and methylation.
         This is an intermediate endpoint, not production of final pentalenolactone.
       snippet: 6 was detected (Fig. 4B and C)
+  - subject: ecoli_flda
+    predicate: is supplied in
+    object: purified_oxidation
+    evidence:
+    - reference: DOI:10.1021/ja0639214
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Reference 15a identifies the assay flavodoxin by accession; this supplied
+        redox protein is not a native S. avermitilis partner.
+      snippet: FldA, Swissprot P61949
+    - reference: https://www.uniprot.org/uniprotkb/P61949
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: E. coli K12 fldA, 176 aa; exact match to NP_415210.1/b0684. The accession
+        is explicitly named in the PtlI paper, not inferred from the BL21(DE3) expression
+        host.
+  - subject: ecoli_fdr
+    predicate: is supplied in
+    object: purified_oxidation
+    evidence:
+    - reference: DOI:10.1021/ja0639214
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Reference 15b identifies Fdr. Supplied with FldA and NADPH in the purified
+        PtlI assay, not a demonstrated physical complex.
+      snippet: Fdr, Swissprot P28861
+    - reference: https://www.uniprot.org/uniprotkb/P28861
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: E. coli K12 fpr, 248 aa; exact match to NP_418359.1/b3924. Fdr is the
+        paper's label for NADPH-flavodoxin reductase; it is distinct from S. avermitilis
+        FprD.
+  - subject: fdxd
+    predicate: is supplied in
+    object: fdxd_fprd_assay
+    evidence:
+    - reference: DOI:10.1021/ja0639214
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Note 17 names SAV3129 in this separate redox-pair test.
+    - reference: https://www.uniprot.org/uniprotkb/Q82IK4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: MA-4680 FdxD, 106 aa; exact match to BAC70840.1, SAVERM_3129 (old SAV_3129),
+        complement(BA000030.4:3901642..3901962). Identity grounding is not a productive-partner
+        assignment.
+  - subject: fprd
+    predicate: is supplied in
+    object: fdxd_fprd_assay
+    evidence:
+    - reference: DOI:10.1021/ja0639214
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Note 17 names SAV5675 with FdxD, not the E. coli Fdr protein.
+    - reference: https://www.uniprot.org/uniprotkb/Q82BM9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: MA-4680 FprD, 421 aa; exact match to BAC73387.1, SAVERM_5675 (old SAV_5675),
+        BA000030.4:6862850..6864115. The unreviewed annotation supplies sequence identity.
+  - subject: ptli
+    predicate: is assayed in
+    object: fdxd_fprd_assay
+    evidence:
+    - reference: DOI:10.1021/ja0639214
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Note 17 reports no enhancement of pentalenene oxidation; the comparison
+        and quantitative detection limit are not specified.
+  - subject: fdxd_fprd_assay
+    predicate: has no reported detectable formation of
+    object: deoxypentalenic_acid
+    evidence:
+    - reference: DOI:10.1021/ja0639214
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Note 17's condition-specific result does not erase trace acid reported
+        elsewhere or prove incapacity under other conditions.
+      snippet: no detectable formation
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -1225,4 +1407,13 @@ curation_history:
   changes: 'Addressed review issue #491: replaced the unsupported Section 2.1 locator
     with the unnumbered main-text deletion paragraph and Figure S1. Protein identities,
     biological claims and the Table S1 discrepancy are unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-03T13:25:35Z'
+  curator: codex
+  action: ADDED_REDOX_ASSAY_PARTICIPANTS
+  changes: 'Added five exact redox-protein identities and 14 DOI-cited edges: E. coli
+    FldA/P61949 and Fdr/P28861 supplied to PtlI reconstitution; S. avermitilis FdxD/Q82IK4
+    and FprD/Q82BM9 in a separate negative acid detection test; and J1074 XNR_1673/AGI88059.1
+    in single and paired whole-cell tests. Kept uncertainty in the XNR_1673 yield
+    comparison explicit; no native-partner assignment or record-status promotion.'
   llm_assisted: true

@@ -279,8 +279,8 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
-<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 8 edges</span></h2>
-<p class="sub">Engineered E. coli BL21(DE3) with PenA/PntI: paired J1074 redox-gene expression enhanced intermediate production. Neither native partnership, physical complex, nor increased final pentalenolactone yield is asserted. The 4478/5179 and 4772/5179 pairs are alternative experimental conditions.</p><div class="scroll"><table>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 16 edges</span></h2>
+<p class="sub">Engineered E. coli BL21(DE3) with PenA/PntI and alternative J1074 redox-gene expression conditions. XNR_5179-containing pairs increased intermediate production; XNR_1673 conditions are represented only as tested conditions. Neither native partnership, physical complex, nor increased final pentalenolactone yield is asserted.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>PntI</td>
@@ -338,6 +338,62 @@ by the corpus tests.</p>
   <td></td>
   <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
 </tr>
+<tr>
+  <td>XNR_1673 ferredoxin</td>
+  <td>is expressed in</td>
+  <td>XNR_1673 addition to PenA/PntI</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</td>
+</tr>
+<tr>
+  <td>XNR_1673 addition to PenA/PntI</td>
+  <td>was tested for effects on</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+<tr>
+  <td>XNR_1673 ferredoxin</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_1673 and XNR_4478</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+<tr>
+  <td>XNR_4478 ferredoxin reductase</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_1673 and XNR_4478</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+<tr>
+  <td>XNR_1673 ferredoxin</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_1673 and XNR_4772</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+<tr>
+  <td>XNR_4772 predicted ferredoxin reductase</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_1673 and XNR_4772</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+<tr>
+  <td>Joint expression of XNR_1673 and XNR_4478</td>
+  <td>was tested for effects on</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+<tr>
+  <td>Joint expression of XNR_1673 and XNR_4772</td>
+  <td>was tested for effects on</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
@@ -382,8 +438,8 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
-<h2>Causal graph &mdash; biosynthesis <span class="tag">9 nodes, 8 edges</span></h2>
-<p class="sub">PtlI from the S. avermitilis neopentalenolactone pathway acts on shared early precursors. The 2006 purified assay and 2025 engineered PenA/PtlI E. coli experiment are separate contexts. Neither establishes native S. avermitilis production of pentalenolactone.</p><div class="scroll"><table>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 14 edges</span></h2>
+<p class="sub">PtlI from the S. avermitilis neopentalenolactone pathway acts on shared early precursors. The 2006 purified assay and 2025 engineered PenA/PtlI E. coli experiment are separate contexts. Neither establishes native S. avermitilis production of pentalenolactone. E. coli FldA/Fdr reconstitution is distinct from the FdxD/FprD test that reported no detectable acid; the latter is not a native-partner assignment.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>PtlI</td>
@@ -440,6 +496,48 @@ by the corpus tests.</p>
   <td>1-deoxypentalenic acid</td>
   <td></td>
   <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+<tr>
+  <td>E. coli FldA</td>
+  <td>is supplied in</td>
+  <td>Purified PtlI oxidation with E. coli Fld/Fdr</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja0639214<br>https://www.uniprot.org/uniprotkb/P61949</td>
+</tr>
+<tr>
+  <td>E. coli Fdr</td>
+  <td>is supplied in</td>
+  <td>Purified PtlI oxidation with E. coli Fld/Fdr</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja0639214<br>https://www.uniprot.org/uniprotkb/P28861</td>
+</tr>
+<tr>
+  <td>S. avermitilis FdxD</td>
+  <td>is supplied in</td>
+  <td>In-vitro PtlI test with FdxD/FprD</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja0639214<br>https://www.uniprot.org/uniprotkb/Q82IK4</td>
+</tr>
+<tr>
+  <td>S. avermitilis FprD</td>
+  <td>is supplied in</td>
+  <td>In-vitro PtlI test with FdxD/FprD</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja0639214<br>https://www.uniprot.org/uniprotkb/Q82BM9</td>
+</tr>
+<tr>
+  <td>PtlI</td>
+  <td>is assayed in</td>
+  <td>In-vitro PtlI test with FdxD/FprD</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja0639214</td>
+</tr>
+<tr>
+  <td>In-vitro PtlI test with FdxD/FprD</td>
+  <td>has no reported detectable formation of</td>
+  <td>1-deoxypentalenic acid</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja0639214</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
