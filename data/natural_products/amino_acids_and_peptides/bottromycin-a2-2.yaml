@@ -274,6 +274,47 @@ biosynthetic_pathway:
     notes: UniProtKB:K4MHG1 is the 681 aa Streptomyces sp. BC16019 botRMT3 entry cross-referenced
       to EMBL JX235926; an exact GenPept accession search for AFV25488.1 resolved
       to this UniProtKB entry on 2026-09-27.
+- enzyme_id: UniProtKB:K4MJU2
+  enzyme_label: BotCYP
+  proposed: false
+  notes: BC16019 BotCYP/AFV25487.2 is curated as the exact cytochrome P450 that oxidatively
+    decarboxylates the terminal thiazoline of a bottromycin precursor. The exact free
+    substrate/product pair for this RiPP tailoring reaction is not represented in
+    the record.
+  evidence:
+  - reference: DOI:10.1021/jacs.0c10361
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: converts a C-terminal thiazoline to a thiazole
+    notes: Adam et al. characterized BotCYP from a bottromycin biosynthetic gene cluster
+      and showed that the P450 oxidatively decarboxylates the terminal thiazoline
+      of the bottromycin precursor.
+  - reference: https://mite.bioinformatics.nl/repository/MITE0000044
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    snippet: P450-catalyzed oxidative decarboxylation of terminal thiazoline
+    notes: MITE MITE0000044 is an active BotCYP entry that maps the enzyme to UniProtKB:K4MJU2,
+      GenPept AFV25487.2, and MIBiG BGC0000469, and curates the reaction as decarboxylation
+      plus oxidation with heterologous-expression evidence from DOI:10.1021/jacs.0c10361.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    snippet: 'MITE0000044: Decarboxylation, Oxidation'
+    notes: MIBiG BGC0000469.6 places a botCYP CDS in the Streptomyces sp. BC16019
+      bottromycin A2 locus, gives protein_id AFV25487.2, and annotates that feature
+      with MITE0000044 at 100% identity.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25487.2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    snippet: BotCYP [Streptomyces sp. BC16019]
+    notes: NCBI Protein AFV25487.2 is the 408 aa Streptomyces sp. BC16019 botCYP coding
+      sequence from GenBank JX235926.1 at 28405..29631.
+  - reference: https://www.uniprot.org/uniprotkb/K4MJU2
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    snippet: 'SubName: Full=BotCYP'
+    notes: UniProtKB:K4MJU2 is the 408 aa Streptomyces sp. BC16019 botCYP entry cross-referenced
+      to EMBL JX235926 with ProteinId AFV25487.2; its sequence matches NCBI Protein
+      AFV25487.2 and the BotCYP translation in MIBiG BGC0000469.6.
 causal_graphs:
 - graph_id: bottromycin-a2-bot-methylation-biosynthesis
   scope: BIOSYNTHESIS
@@ -543,6 +584,149 @@ causal_graphs:
       notes: MIBiG BGC0000469.6 names bottromycin A2 as a product of the Streptomyces
         sp. BC16019 JX235926.1 locus and records heterologous expression support for
         the cluster.
+- graph_id: bottromycin-a2-botcyp-oxidative-decarboxylation
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces sp. BC16019 Bot RiPP graph for BotCYP-catalyzed
+    oxidative decarboxylation of the terminal thiazoline in a bottromycin precursor.
+  nodes:
+  - node_id: terminal_thiazoline_precursor
+    label: terminal-thiazoline bottromycin precursor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: botcyp
+    label: BotCYP cytochrome P450
+    node_type: ENZYME
+    identifier: UniProtKB:K4MJU2
+    grounding_status: GROUNDED
+  - node_id: oxidative_decarboxylation
+    label: terminal thiazoline oxidative decarboxylation
+    node_type: PROCESS
+  - node_id: bottromycin_a2
+    label: bottromycin A2
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-d717cc8774
+    grounding_status: GROUNDED
+  edges:
+  - subject: terminal_thiazoline_precursor
+    predicate: is substrate for
+    object: oxidative_decarboxylation
+    notes: MITE represents the BotCYP substrate as a bottromycin intermediate whose
+      terminal thiazoline is consumed by this reaction; that precursor remains ungrounded
+      until it has a stable chemical identifier.
+    evidence:
+    - reference: DOI:10.1021/jacs.0c10361
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: converts a C-terminal thiazoline to a thiazole
+      notes: Adam et al. characterized BotCYP from a bottromycin biosynthetic gene
+        cluster and showed that the P450 oxidatively decarboxylates the terminal thiazoline
+        of the bottromycin precursor.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000044
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: P450-catalyzed oxidative decarboxylation of terminal thiazoline
+      notes: MITE MITE0000044 is an active BotCYP entry that maps the enzyme to UniProtKB:K4MJU2,
+        GenPept AFV25487.2, and MIBiG BGC0000469, and curates the reaction as decarboxylation
+        plus oxidation with heterologous-expression evidence from DOI:10.1021/jacs.0c10361.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'MITE0000044: Decarboxylation, Oxidation'
+      notes: MIBiG BGC0000469.6 places a botCYP CDS in the Streptomyces sp. BC16019
+        bottromycin A2 locus, gives protein_id AFV25487.2, and annotates that feature
+        with MITE0000044 at 100% identity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25487.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: BotCYP [Streptomyces sp. BC16019]
+      notes: NCBI Protein AFV25487.2 is the 408 aa Streptomyces sp. BC16019 botCYP
+        coding sequence from GenBank JX235926.1 at 28405..29631.
+    - reference: https://www.uniprot.org/uniprotkb/K4MJU2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'SubName: Full=BotCYP'
+      notes: UniProtKB:K4MJU2 is the 408 aa Streptomyces sp. BC16019 botCYP entry
+        cross-referenced to EMBL JX235926 with ProteinId AFV25487.2; its sequence
+        matches NCBI Protein AFV25487.2 and the BotCYP translation in MIBiG BGC0000469.6.
+  - subject: botcyp
+    predicate: catalyzes
+    object: oxidative_decarboxylation
+    notes: The BotCYP protein is grounded to the BC16019 GenPept AFV25487.2 sequence,
+      its UniProtKB:K4MJU2 cross-reference, and the 100% identical BotCYP feature
+      in MIBiG BGC0000469.6.
+    evidence:
+    - reference: DOI:10.1021/jacs.0c10361
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: converts a C-terminal thiazoline to a thiazole
+      notes: Adam et al. characterized BotCYP from a bottromycin biosynthetic gene
+        cluster and showed that the P450 oxidatively decarboxylates the terminal thiazoline
+        of the bottromycin precursor.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000044
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: P450-catalyzed oxidative decarboxylation of terminal thiazoline
+      notes: MITE MITE0000044 is an active BotCYP entry that maps the enzyme to UniProtKB:K4MJU2,
+        GenPept AFV25487.2, and MIBiG BGC0000469, and curates the reaction as decarboxylation
+        plus oxidation with heterologous-expression evidence from DOI:10.1021/jacs.0c10361.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'MITE0000044: Decarboxylation, Oxidation'
+      notes: MIBiG BGC0000469.6 places a botCYP CDS in the Streptomyces sp. BC16019
+        bottromycin A2 locus, gives protein_id AFV25487.2, and annotates that feature
+        with MITE0000044 at 100% identity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25487.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: BotCYP [Streptomyces sp. BC16019]
+      notes: NCBI Protein AFV25487.2 is the 408 aa Streptomyces sp. BC16019 botCYP
+        coding sequence from GenBank JX235926.1 at 28405..29631.
+    - reference: https://www.uniprot.org/uniprotkb/K4MJU2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'SubName: Full=BotCYP'
+      notes: UniProtKB:K4MJU2 is the 408 aa Streptomyces sp. BC16019 botCYP entry
+        cross-referenced to EMBL JX235926 with ProteinId AFV25487.2; its sequence
+        matches NCBI Protein AFV25487.2 and the BotCYP translation in MIBiG BGC0000469.6.
+  - subject: oxidative_decarboxylation
+    predicate: contributes to
+    object: bottromycin_a2
+    notes: This edge records the BotCYP oxidative decarboxylation as a BC16019 bottromycin
+      A2 tailoring reaction; methyl-ester formation and radical-SAM C-methylations
+      are modeled in a separate partial graph.
+    evidence:
+    - reference: DOI:10.1021/jacs.0c10361
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: converts a C-terminal thiazoline to a thiazole
+      notes: Adam et al. characterized BotCYP from a bottromycin biosynthetic gene
+        cluster and showed that the P450 oxidatively decarboxylates the terminal thiazoline
+        of the bottromycin precursor.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000044
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: P450-catalyzed oxidative decarboxylation of terminal thiazoline
+      notes: MITE MITE0000044 is an active BotCYP entry that maps the enzyme to UniProtKB:K4MJU2,
+        GenPept AFV25487.2, and MIBiG BGC0000469, and curates the reaction as decarboxylation
+        plus oxidation with heterologous-expression evidence from DOI:10.1021/jacs.0c10361.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'MITE0000044: Decarboxylation, Oxidation'
+      notes: MIBiG BGC0000469.6 places a botCYP CDS in the Streptomyces sp. BC16019
+        bottromycin A2 locus, gives protein_id AFV25487.2, and annotates that feature
+        with MITE0000044 at 100% identity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25487.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: BotCYP [Streptomyces sp. BC16019]
+      notes: NCBI Protein AFV25487.2 is the 408 aa Streptomyces sp. BC16019 botCYP
+        coding sequence from GenBank JX235926.1 at 28405..29631.
+    - reference: https://www.uniprot.org/uniprotkb/K4MJU2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'SubName: Full=BotCYP'
+      notes: UniProtKB:K4MJU2 is the 408 aa Streptomyces sp. BC16019 botCYP entry
+        cross-referenced to EMBL JX235926 with ProteinId AFV25487.2; its sequence
+        matches NCBI Protein AFV25487.2 and the BotCYP translation in MIBiG BGC0000469.6.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -558,4 +742,10 @@ curation_history:
   changes: Added exact Streptomyces sp. BC16019 BotA, BotOMT, and BotRMT1/2/3 UniProtKB
     proteins to a bottromycin A2 biosynthesis pathway and causal graph, and resolved
     the BGC0000468/BGC0000469 shared-structure discussion.
+  llm_assisted: true
+- timestamp: '2026-10-03T08:51:10Z'
+  curator: codex
+  action: ADDED_BOTCYP_BIOSYNTHESIS_GRAPH
+  changes: Added exact Streptomyces sp. BC16019 BotCYP/UniProtKB:K4MJU2 grounding
+    and a BotCYP oxidative-decarboxylation biosynthesis graph for bottromycin A2.
   llm_assisted: true

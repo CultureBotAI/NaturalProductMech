@@ -116,8 +116,15 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td class="mono">ungrounded &rarr; ungrounded</td>
   <td class="mono">DOI:10.1016/j.chembiol.2012.08.013</td>
 </tr>
+<tr>
+  <td>5</td>
+  <td>BotCYP<br><span class="mono">UniProtKB:K4MJU2</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1021/jacs.0c10361</td>
+</tr>
 </table></div>
-<p class="sub">Entry 1: BC16019 botOMT/AFV25479.1 is curated as an exact aspartate methyl ester formation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 2: BC16019 botRMT1/AFV25480.1 is curated as an exact radical-SAM C-methylation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 3: BC16019 botRMT2/AFV25484.1 is curated as an exact radical-SAM C-methylation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 4: BC16019 botRMT3/AFV25488.1 is curated as an exact radical-SAM C-methylation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p>
+<p class="sub">Entry 1: BC16019 botOMT/AFV25479.1 is curated as an exact aspartate methyl ester formation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 2: BC16019 botRMT1/AFV25480.1 is curated as an exact radical-SAM C-methylation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 3: BC16019 botRMT2/AFV25484.1 is curated as an exact radical-SAM C-methylation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 4: BC16019 botRMT3/AFV25488.1 is curated as an exact radical-SAM C-methylation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 5: BC16019 BotCYP/AFV25487.2 is curated as the exact cytochrome P450 that oxidatively decarboxylates the terminal thiazoline of a bottromycin precursor. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
 <p class="sub">Partial Streptomyces sp. BC16019 Bot RiPP graph for the precursor peptide, the three radical-SAM C-methyltransferases, and BotOMT that contribute methylations to bottromycin A2 maturation.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
@@ -169,6 +176,33 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>bottromycin A2</td>
   <td></td>
   <td class="mono">DOI:10.1016/j.chembiol.2012.08.013<br>https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial Streptomyces sp. BC16019 Bot RiPP graph for BotCYP-catalyzed oxidative decarboxylation of the terminal thiazoline in a bottromycin precursor.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>terminal-thiazoline bottromycin precursor</td>
+  <td>is substrate for</td>
+  <td>terminal thiazoline oxidative decarboxylation</td>
+  <td>MITE represents the BotCYP substrate as a bottromycin intermediate whose terminal thiazoline is consumed by this reaction; that precursor remains ungrounded until it has a stable chemical identifier.</td>
+  <td class="mono">DOI:10.1021/jacs.0c10361<br>https://mite.bioinformatics.nl/repository/MITE0000044<br>https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html<br>https://www.ncbi.nlm.nih.gov/protein/AFV25487.2<br>https://www.uniprot.org/uniprotkb/K4MJU2</td>
+</tr>
+<tr>
+  <td>BotCYP cytochrome P450</td>
+  <td>catalyzes</td>
+  <td>terminal thiazoline oxidative decarboxylation</td>
+  <td>The BotCYP protein is grounded to the BC16019 GenPept AFV25487.2 sequence, its UniProtKB:K4MJU2 cross-reference, and the 100% identical BotCYP feature in MIBiG BGC0000469.6.</td>
+  <td class="mono">DOI:10.1021/jacs.0c10361<br>https://mite.bioinformatics.nl/repository/MITE0000044<br>https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html<br>https://www.ncbi.nlm.nih.gov/protein/AFV25487.2<br>https://www.uniprot.org/uniprotkb/K4MJU2</td>
+</tr>
+<tr>
+  <td>terminal thiazoline oxidative decarboxylation</td>
+  <td>contributes to</td>
+  <td>bottromycin A2</td>
+  <td>This edge records the BotCYP oxidative decarboxylation as a BC16019 bottromycin A2 tailoring reaction; methyl-ester formation and radical-SAM C-methylations are modeled in a separate partial graph.</td>
+  <td class="mono">DOI:10.1021/jacs.0c10361<br>https://mite.bioinformatics.nl/repository/MITE0000044<br>https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html<br>https://www.ncbi.nlm.nih.gov/protein/AFV25487.2<br>https://www.uniprot.org/uniprotkb/K4MJU2</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
