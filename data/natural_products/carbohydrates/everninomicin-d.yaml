@@ -85,6 +85,364 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: everninomicin-d-evds6-udp-sugar-assay
+  scope: BIOSYNTHESIS
+  description: 'Partial precursor chemistry for everninomicin D: purified, N-terminal
+    His6-tagged EvdS6 expressed from pET28a(+) in E. coli Tuner(DE3) was assayed with
+    UDP-GlcA. UDP-4-keto-D-xylose and UDP-D-xylose are candidate precursors of the
+    H- and G-rings, respectively. Their downstream incorporation, the native UDP-versus-TDP
+    donor preference, and complete everninomicin D biosynthesis were not demonstrated.'
+  nodes:
+  - node_id: evds6
+    label: EvdS6 N-terminal His6 construct
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:QLD23489.2
+  - node_id: udp_glca
+    label: UDP-D-glucuronic acid (assayed substrate)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: udp_ketoxylose
+    label: UDP-4-keto-D-xylose
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: udp_xylose
+    label: UDP-D-xylose
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: nad
+    label: NAD+
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: udp_glca
+    predicate: is_assayed_substrate_of
+    object: evds6
+    notes: 'The identifier denotes the native 329-aa parent QLD23489.2, not the affinity
+      tag. It is HXZ27_04045 at CP058322.1:898338..899327, called evdS5 in GenBank
+      and MIBiG BGC0002085.3 but EvdS6 in this paper. The CDS translation and GenPept
+      sequence match both PDB constructs after accounting for the 19-aa MGSSHHHHHHSSGLVPRGS
+      tag and the initiating GTG codon: native initiator M is V when internal to the
+      fusion. Table S1 cloning-primer termini match this CDS. Do not substitute the
+      adjacent evdS6-labelled HXZ27_04050/QLD23490.1. The PDB-linked UniProt A0A1C5ADV9
+      was rejected as an exact parent: it is 324 aa and has two internal sequence
+      conflicts with the assayed protein, in addition to the N-terminal difference.
+      Exact-locus/accession and taxon-lineage length-329 UniProt searches found no
+      exact match; this is a bounded search, not a claim of global absence. Current
+      GenPept assigns M. carbonacea subsp. aurantiaca, NRRL 2997, NCBITaxon:3454472;
+      its parent is NCBITaxon:47853, the species in the pinned MIBiG record.'
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results, Figure 3 and cloning methods; Table S1.
+      snippet: all studies herein used the UDP-GlcA
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLD23489.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact native-parent sequence and locus; functional evidence comes from
+        the paper.
+      retrieved_on: '2026-10-03'
+    - reference: https://ars.els-cdn.com/content/image/1-s2.0-S002192582301921X-mmc1.docx
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Tables S1/S2: genomic cloning primers and producer/host context.'
+  - subject: evds6
+    predicate: produces_in_vitro
+    object: udp_ketoxylose
+    notes: HPLC-MS, 2-bromophenylhydrazine derivatization and reaction-mixture NMR
+      establish the keto product and its D-xylose configuration; the keto group is
+      predominantly hydrated in aqueous solution. Products were absent in the boiled-enzyme
+      control. Standard turnover assays used 1 mM UDP-GlcA, 1 mM NAD+, 0.5 mg/ml enzyme,
+      50 mM HEPES pH 8.5 at 30 C for 1 h. NMR used an extended incubation and the
+      filtered reaction mixture because purified products were unstable; no isolated-product
+      yield is asserted.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figures 3/4; Tables S3 and Figures S5-S19; turnover/NMR methods.
+  - subject: evds6
+    predicate: produces_in_vitro
+    object: udp_xylose
+    notes: HPLC-MS and multidimensional NMR identify the reduced D-xylose product.
+      The Figure 3 time course used 1 mM UDP-GlcA, 0.1 mM NAD+, 0.42 mg/ml enzyme
+      and 50 mM HEPES pH 8.5, distinct from the standard assay. Both products are
+      seen early, whereas UDP-D-xylose predominates after overnight incubation. This
+      is not direct production of L-lyxose or of the final antibiotic.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figures 3C/4 and S4C; NMR product-configuration analysis.
+  - subject: nad
+    predicate: supports_assayed_turnover_of
+    object: evds6
+    notes: Figure S4A compares added NAD+, NADP+ and no exogenous cofactor at 1 mM
+      UDP-GlcA, 0.35 mg/ml enzyme and 50 mM HEPES pH 8.5. NAD+ gives substantially
+      greater turnover; the other conditions retain low activity. Copurified NAD+
+      precludes interpreting the no-added-cofactor condition as a cofactor-free enzyme.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S4A and the turnover-optimization results.
+- graph_id: everninomicin-d-evds6-observed-homodimer
+  scope: BIOSYNTHESIS
+  description: Structural assembly of the recombinant EvdS6 precursor enzyme, not
+    a demonstrated in-vivo complex. PDB 8SHH (1.93 A) contains copurified NAD+ without
+    added substrate ligand; PDB 8SK0 (1.51 A) contains NAD+ and TDP after crystallization
+    with commercial UDP-GlcA. A PDB deposition is structural evidence, not a protein
+    accession.
+  nodes:
+  - node_id: evds6
+    label: EvdS6 N-terminal His6 construct
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:QLD23489.2
+  - node_id: evds6_dimer
+    label: Observed recombinant EvdS6 homodimer
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: nad
+    label: Copurified NAD+
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: tdp
+    label: Bound TDP (thymidine diphosphate)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: evds6
+    predicate: forms_observed_homodimer
+    object: evds6_dimer
+    notes: Two copies of the sequence-verified parent form the crystallized dimer.
+      Both deposits have the same tagged 348-aa sequence described in the assay graph.
+      RCSB assembly 1 is an author/PISA homodimer with gel-filtration support; no
+      native-cell assembly measurement or distinct complex accession is asserted.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 5A/B, Figures S20/S21 and Table S4.
+      snippet: two protein chains in the asymmetric unit
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLD23489.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact native-parent sequence and locus; functional evidence comes from
+        the paper.
+      retrieved_on: '2026-10-03'
+    - reference: https://www.rcsb.org/structure/8SK0
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Biological assembly 1: A2, author/PISA assignment, gel-filtration evidence.'
+      retrieved_on: '2026-10-03'
+    - reference: https://www.rcsb.org/structure/8SHH
+      evidence_type: DATABASE_ASSERTION
+      notes: Companion structure without added substrate ligand; NAD+ retained.
+      retrieved_on: '2026-10-03'
+  - subject: evds6_dimer
+    predicate: contains_bound_cofactor
+    object: nad
+    notes: NAD+ is noncovalently bound in each protomer in both structures. Thus the
+      paper's ligand-free state must not be interpreted as wholly apo or NAD-free.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 5D and Figures S20/S26; active-site analysis.
+  - subject: evds6_dimer
+    predicate: contains_observed_bound_ligand
+    object: tdp
+    notes: In 8SK0, TDP is resolved in one protomer with no attached glucuronic acid.
+      The other active site has partial citrate occupancy and unresolved mixed density.
+      The source of TDP is uncertain; a minor substrate-stock contaminant was suggested
+      but not detected by HPLC-MS. This structure does not establish TDP-sugar catalysis,
+      nucleotide preference, or an unambiguous bound UDP-GlcA catalytic intermediate.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 5E and Figures S27/S28; active-site analysis.
+    - reference: https://www.rcsb.org/structure/8SK0
+      evidence_type: DATABASE_ASSERTION
+      notes: TYD ligand in author chain A; citrate in author chain B.
+      retrieved_on: '2026-10-03'
+- graph_id: everninomicin-d-evds6-reported-alanine-variant-assays
+  scope: BIOSYNTHESIS
+  description: Figure 7A reports six EvdS6 alanine variants relative to wild type,
+    at 30 min with 1 mM UDP-GlcA, 1 mM NAD+ and 50 mM HEPES pH 8.5. Relative turnover
+    is based on HPLC-MS extracted-ion peak areas, not kinetic constants; six measurements
+    comprise three biological replicates with two technical replicates each. Residue
+    numbering matches native parent QLD23489.2. No mutant-specific accession is assigned
+    here; these constructs are not equated to the native sequence. The R278A and R279A
+    construct identities need review because of a Table S1 primer-label discrepancy;
+    their edges preserve reported results.
+  nodes:
+  - node_id: h87a
+    label: Reported EvdS6 H87A construct
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: t126a
+    label: Reported EvdS6 T126A construct
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: e128a
+    label: Reported EvdS6 E128A construct
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: n179a
+    label: Reported EvdS6 N179A construct
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r278a
+    label: Reported EvdS6 R278A construct
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: r279a
+    label: Reported EvdS6 R279A construct
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: keto_readout
+    label: UDP-4-keto-D-xylose formation at 30 min
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: xylose_readout
+    label: UDP-D-xylose formation at 30 min
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: h87a
+    predicate: reported_decreased
+    object: keto_readout
+    notes: The paper reports decreased formation of both products, with no reported
+      alteration of their ratio. This does not establish a direct chemical role for
+      H87; structural explanations remain hypotheses.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and active-site mutant results; comparisons to wild type.
+  - subject: h87a
+    predicate: reported_decreased
+    object: xylose_readout
+    notes: The paper reports decreased formation of both products, with no reported
+      alteration of their ratio. This does not establish a direct chemical role for
+      H87; structural explanations remain hypotheses.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and active-site mutant results; comparisons to wild type.
+  - subject: t126a
+    predicate: reported_no_significant_change_in
+    object: keto_readout
+    notes: The reduced product is minimally detectable while the keto-product readout
+      is not significantly different from wild type. This supports a role in reduction
+      without proving a specific hydride-transfer mechanism. The Table S1 primer pair
+      matches T126A when its orientation is accounted for.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and active-site mutant results; comparisons to wild type.
+  - subject: t126a
+    predicate: reported_minimal
+    object: xylose_readout
+    notes: The reduced product is minimally detectable while the keto-product readout
+      is not significantly different from wild type. This supports a role in reduction
+      without proving a specific hydride-transfer mechanism. The Table S1 primer pair
+      matches T126A when its orientation is accounted for.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and active-site mutant results; comparisons to wild type.
+      snippet: minimally detectable formation of the reduced product
+  - subject: e128a
+    predicate: reported_no_significant_change_in
+    object: keto_readout
+    notes: Neither product readout differs significantly from wild type in this assay.
+      This is not proof that E128 lacks a catalytic contribution, nor evidence for
+      the proposed compensatory role of D127.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and active-site mutant results; comparisons to wild type.
+  - subject: e128a
+    predicate: reported_no_significant_change_in
+    object: xylose_readout
+    notes: Neither product readout differs significantly from wild type in this assay.
+      This is not proof that E128 lacks a catalytic contribution, nor evidence for
+      the proposed compensatory role of D127.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and active-site mutant results; comparisons to wild type.
+  - subject: n179a
+    predicate: reported_decreased
+    object: keto_readout
+    notes: Keto-product formation decreases and reduced-product formation is minimal.
+      N179 is asparagine, as shown in the sequence, results and Figure 7, despite
+      the abstract's reference to aspartate.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and active-site mutant results; comparisons to wild type.
+  - subject: n179a
+    predicate: reported_minimal
+    object: xylose_readout
+    notes: Keto-product formation decreases and reduced-product formation is minimal.
+      N179 is asparagine, as shown in the sequence, results and Figure 7, despite
+      the abstract's reference to aspartate.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and active-site mutant results; comparisons to wild type.
+  - subject: r278a
+    predicate: reported_no_significant_change_in
+    object: keto_readout
+    notes: Figure 7 assigns this result to R278A. However, the Table S1 pair labelled
+      R278A introduces R279A, not R278A, when aligned in the correct orientation to
+      CP058322.1/QLD23489.2. Exact construct identity is unresolved; this edge records
+      the authors' result label, not an independently sequence-verified R278A perturbation.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and active-site mutant results; comparisons to wild type.
+    - reference: https://ars.els-cdn.com/content/image/1-s2.0-S002192582301921X-mmc1.docx
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table S1; primer labels disagree with the sequence-derived residue assignment.
+  - subject: r278a
+    predicate: reported_decreased
+    object: xylose_readout
+    notes: Figure 7 assigns this result to R278A. However, the Table S1 pair labelled
+      R278A introduces R279A, not R278A, when aligned in the correct orientation to
+      CP058322.1/QLD23489.2. Exact construct identity is unresolved; this edge records
+      the authors' result label, not an independently sequence-verified R278A perturbation.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and active-site mutant results; comparisons to wild type.
+    - reference: https://ars.els-cdn.com/content/image/1-s2.0-S002192582301921X-mmc1.docx
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table S1; primer labels disagree with the sequence-derived residue assignment.
+  - subject: r279a
+    predicate: reported_no_significant_change_in
+    object: keto_readout
+    notes: Figure 7 assigns this result to R279A. Table S1 has no separately labelled
+      R279A primer pair; the pair labelled R278A encodes R279A against QLD23489.2.
+      The study reports sequencing mutant plasmids, but does not deposit those sequences
+      here. Identity remains review-needed; a changed loop-release mechanism is proposed,
+      not directly measured.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and active-site mutant results; comparisons to wild type.
+    - reference: https://ars.els-cdn.com/content/image/1-s2.0-S002192582301921X-mmc1.docx
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table S1; primer labels disagree with the sequence-derived residue assignment.
+  - subject: r279a
+    predicate: reported_decreased
+    object: xylose_readout
+    notes: Figure 7 assigns this result to R279A. Table S1 has no separately labelled
+      R279A primer pair; the pair labelled R278A encodes R279A against QLD23489.2.
+      The study reports sequencing mutant plasmids, but does not deposit those sequences
+      here. Identity remains review-needed; a changed loop-release mechanism is proposed,
+      not directly measured.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and active-site mutant results; comparisons to wild type.
+    - reference: https://ars.els-cdn.com/content/image/1-s2.0-S002192582301921X-mmc1.docx
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table S1; primer labels disagree with the sequence-derived residue assignment.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -94,3 +452,23 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-03T19:23:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added EvdS6 UDP-sugar assay, observed homodimer/ligand and six reported
+    alanine-variant graphs from DOI:10.1016/j.jbc.2023.104893. Grounded the native
+    parent to NCBIProtein:QLD23489.2 using CDS, cloning-primer and PDB-sequence checks;
+    rejected the mismatched UniProt mapping and adjacent same-name locus. Flagged
+    R278A/R279A construct identities for review because Table S1's R278A primers encode
+    R279A. Added three short verbatim snippets; all 19 edges cite the primary DOI.
+    Kept candidate G/H-ring roles separate from demonstrated assays and retained SEEDED
+    and all imported fields.
+  llm_assisted: true
+- timestamp: '2026-10-03T19:27:15Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Adversarial review: replaced the unproven global assertion that EvdS6
+    mutants have no exact accessions with the local decision not to assign mutant-specific
+    accessions here. Preserved the reported assay results, native-parent grounding
+    and R278A/R279A identity warnings.'
+  llm_assisted: true
