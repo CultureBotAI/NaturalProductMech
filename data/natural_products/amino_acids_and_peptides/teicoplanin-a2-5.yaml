@@ -148,6 +148,67 @@ biosynthetic_pathway:
     retrieved_on: '2026-10-03'
     notes: ChEBI:16264 is the 3-star ChEBI entry for UDP-N-acetyl-alpha-D-glucosamine,
       the UDP-amino-sugar donor used for GtfB-catalyzed N-acetylglucosamine transfer.
+- step_number: 2
+  enzyme_id: UniProtKB:Q6ZZJ7
+  enzyme_label: GtfA teicoplanin Bht6 glycosyltransferase
+  notes: GtfA/tcp8 transfers N-acetylglucosamine from UDP-N-acetyl-alpha-D-glucosamine
+    to Bht6/3-Cl-6betaHty of a GtfB-primed teicoplanin pseudoaglycone. GtfA can also
+    glycosylate the unmodified teicoplanin aglycone less efficiently, but Bht6 glycosylation
+    is ordered here after Hpg4 glycosylation toward Teicoplanin A2-5, so the immediate
+    bis-glycosylated product is left ungrounded.
+  evidence:
+  - reference: DOI:10.1099/mic.0.26507-0
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: tGtfA can add a sugar residue in the presence or absence of N-acetylglucosamine
+      at amino acid 4
+    notes: Sosio et al. isolated the Actinoplanes teichomyceticus ATCC 31131 tcp cluster
+      on AJ605139, assigned tcp8 as a GtfA glycosyltransferase, and characterized
+      teicoplanin amino-sugar transfer in vitro.
+  - reference: DOI:10.1016/s1074-5521(04)00002-x
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: 3-chloro-beta-hydroxytyrosine-6 (3-Cl-6betaHty) and 4-hydroxyphenylglycine-4
+      (4Hpg)
+    notes: Li et al. cloned the 89 kbp teicoplanin biosynthetic locus and heterologously
+      assayed its glycosyltransferases, including the enzyme that modifies 3-Cl-6betaHty/Bht6
+      of the teicoplanin aglycone.
+  - reference: DOI:10.1021/ja0735857
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Howard-Jones et al. kinetically analyzed the teicoplanin glycosyltransferases
+      and acyltransferase, supporting ordered tailoring of the aglycone scaffold during
+      mature teicoplanin reconstitution.
+  - reference: https://mite.bioinformatics.nl/repository/MITE0000034
+    evidence_type: DATABASE_ASSERTION
+    snippet: Glycosyltransferase adds N-acetylglucosamine to Bht6 of the teicoplanin
+      precursor
+    retrieved_on: '2026-10-03'
+    notes: MITE0000034 is active, records GtfA as a glycosyltransferase that modifies
+      Bht6 of the teicoplanin precursor, and links GtfA to UniProtKB:Q6ZZJ7, GenPept
+      CAE53349.1 and MIBiG BGC0000440.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: 'MITE0000034: Glycosylation (100% identity)'
+    retrieved_on: '2026-10-03'
+    notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp8 CDS at
+      AJ605139.1:18949..20130 with GenPept protein_id CAE53349.1, UniProtKB/TrEMBL
+      Q6ZZJ7, and a 100% identity MITE0000034 glycosylation annotation.
+  - reference: https://www.uniprot.org/uniprotkb/Q6ZZJ7
+    evidence_type: DATABASE_ASSERTION
+    snippet: AC   Q6ZZJ7;
+    retrieved_on: '2026-10-03'
+    notes: Current UniProtKB:Q6ZZJ7 resolves to a 393 aa Actinoplanes teichomyceticus
+      GtfA sequence whose sequence is identical to CAE53349.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53349.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: /product="GtfA protein"
+    retrieved_on: '2026-10-03'
+    notes: NCBI Protein CAE53349.1 is the 393 aa Actinoplanes teichomyceticus tcp8/GtfA
+      protein translated from AJ605139.1:18949..20130 and cross-referenced to UniProtKB/TrEMBL
+      Q6ZZJ7.
+  - reference: CHEBI:16264
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: ChEBI:16264 is the 3-star ChEBI entry for UDP-N-acetyl-alpha-D-glucosamine,
+      the UDP-amino-sugar donor used for GtfA-catalyzed N-acetylglucosamine transfer.
 causal_graphs:
 - graph_id: teicoplanin-a2-5-gtfb-hpg4-glycosylation
   scope: BIOSYNTHESIS
@@ -336,6 +397,199 @@ causal_graphs:
       retrieved_on: '2026-10-03'
       notes: ChEBI:16264 is the 3-star ChEBI entry for UDP-N-acetyl-alpha-D-glucosamine,
         the UDP-amino-sugar donor used for GtfB-catalyzed N-acetylglucosamine transfer.
+- graph_id: teicoplanin-a2-5-gtfa-bht6-glycosylation
+  scope: BIOSYNTHESIS
+  description: Actinoplanes teichomyceticus ATCC 31131 GtfA glycosylates Bht6 of a
+    GtfB-primed teicoplanin pseudoaglycone with UDP-N-acetyl-alpha-D-glucosamine during
+    teicoplanin A2 pseudoaglycone biosynthesis.
+  nodes:
+  - node_id: hpg4_n_acetylglucosaminyl_aglycone
+    label: Hpg4 N-acetylglucosaminyl teicoplanin pseudoaglycone
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: udp_n_acetyl_alpha_d_glucosamine
+    label: UDP-N-acetyl-alpha-D-glucosamine
+    node_type: PRECURSOR
+    identifier: CHEBI:16264
+    grounding_status: GROUNDED
+  - node_id: gtfa
+    label: GtfA
+    node_type: ENZYME
+    identifier: UniProtKB:Q6ZZJ7
+    grounding_status: GROUNDED
+  - node_id: hpg4_bht6_bis_n_acetylglucosaminyl_aglycone
+    label: Hpg4/Bht6 bis-N-acetylglucosaminyl teicoplanin pseudoaglycone
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: hpg4_n_acetylglucosaminyl_aglycone
+    predicate: is Bht6-glycosylated by
+    object: gtfa
+    evidence:
+    - reference: DOI:10.1099/mic.0.26507-0
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: tGtfA can add a sugar residue in the presence or absence of N-acetylglucosamine
+        at amino acid 4
+      notes: Sosio et al. isolated the Actinoplanes teichomyceticus ATCC 31131 tcp
+        cluster on AJ605139, assigned tcp8 as a GtfA glycosyltransferase, and characterized
+        teicoplanin amino-sugar transfer in vitro.
+    - reference: DOI:10.1016/s1074-5521(04)00002-x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 3-chloro-beta-hydroxytyrosine-6 (3-Cl-6betaHty) and 4-hydroxyphenylglycine-4
+        (4Hpg)
+      notes: Li et al. cloned the 89 kbp teicoplanin biosynthetic locus and heterologously
+        assayed its glycosyltransferases, including the enzyme that modifies 3-Cl-6betaHty/Bht6
+        of the teicoplanin aglycone.
+    - reference: DOI:10.1021/ja0735857
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Howard-Jones et al. kinetically analyzed the teicoplanin glycosyltransferases
+        and acyltransferase, supporting ordered tailoring of the aglycone scaffold
+        during mature teicoplanin reconstitution.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000034
+      evidence_type: DATABASE_ASSERTION
+      snippet: Glycosyltransferase adds N-acetylglucosamine to Bht6 of the teicoplanin
+        precursor
+      retrieved_on: '2026-10-03'
+      notes: MITE0000034 is active, records GtfA as a glycosyltransferase that modifies
+        Bht6 of the teicoplanin precursor, and links GtfA to UniProtKB:Q6ZZJ7, GenPept
+        CAE53349.1 and MIBiG BGC0000440.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000034: Glycosylation (100% identity)'
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp8 CDS at
+        AJ605139.1:18949..20130 with GenPept protein_id CAE53349.1, UniProtKB/TrEMBL
+        Q6ZZJ7, and a 100% identity MITE0000034 glycosylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q6ZZJ7
+      evidence_type: DATABASE_ASSERTION
+      snippet: AC   Q6ZZJ7;
+      retrieved_on: '2026-10-03'
+      notes: Current UniProtKB:Q6ZZJ7 resolves to a 393 aa Actinoplanes teichomyceticus
+        GtfA sequence whose sequence is identical to CAE53349.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53349.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /product="GtfA protein"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein CAE53349.1 is the 393 aa Actinoplanes teichomyceticus tcp8/GtfA
+        protein translated from AJ605139.1:18949..20130 and cross-referenced to UniProtKB/TrEMBL
+        Q6ZZJ7.
+    - reference: CHEBI:16264
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: ChEBI:16264 is the 3-star ChEBI entry for UDP-N-acetyl-alpha-D-glucosamine,
+        the UDP-amino-sugar donor used for GtfA-catalyzed N-acetylglucosamine transfer.
+  - subject: udp_n_acetyl_alpha_d_glucosamine
+    predicate: donates N-acetylglucosamine via
+    object: gtfa
+    evidence:
+    - reference: DOI:10.1099/mic.0.26507-0
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: tGtfA can add a sugar residue in the presence or absence of N-acetylglucosamine
+        at amino acid 4
+      notes: Sosio et al. isolated the Actinoplanes teichomyceticus ATCC 31131 tcp
+        cluster on AJ605139, assigned tcp8 as a GtfA glycosyltransferase, and characterized
+        teicoplanin amino-sugar transfer in vitro.
+    - reference: DOI:10.1016/s1074-5521(04)00002-x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 3-chloro-beta-hydroxytyrosine-6 (3-Cl-6betaHty) and 4-hydroxyphenylglycine-4
+        (4Hpg)
+      notes: Li et al. cloned the 89 kbp teicoplanin biosynthetic locus and heterologously
+        assayed its glycosyltransferases, including the enzyme that modifies 3-Cl-6betaHty/Bht6
+        of the teicoplanin aglycone.
+    - reference: DOI:10.1021/ja0735857
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Howard-Jones et al. kinetically analyzed the teicoplanin glycosyltransferases
+        and acyltransferase, supporting ordered tailoring of the aglycone scaffold
+        during mature teicoplanin reconstitution.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000034
+      evidence_type: DATABASE_ASSERTION
+      snippet: Glycosyltransferase adds N-acetylglucosamine to Bht6 of the teicoplanin
+        precursor
+      retrieved_on: '2026-10-03'
+      notes: MITE0000034 is active, records GtfA as a glycosyltransferase that modifies
+        Bht6 of the teicoplanin precursor, and links GtfA to UniProtKB:Q6ZZJ7, GenPept
+        CAE53349.1 and MIBiG BGC0000440.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000034: Glycosylation (100% identity)'
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp8 CDS at
+        AJ605139.1:18949..20130 with GenPept protein_id CAE53349.1, UniProtKB/TrEMBL
+        Q6ZZJ7, and a 100% identity MITE0000034 glycosylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q6ZZJ7
+      evidence_type: DATABASE_ASSERTION
+      snippet: AC   Q6ZZJ7;
+      retrieved_on: '2026-10-03'
+      notes: Current UniProtKB:Q6ZZJ7 resolves to a 393 aa Actinoplanes teichomyceticus
+        GtfA sequence whose sequence is identical to CAE53349.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53349.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /product="GtfA protein"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein CAE53349.1 is the 393 aa Actinoplanes teichomyceticus tcp8/GtfA
+        protein translated from AJ605139.1:18949..20130 and cross-referenced to UniProtKB/TrEMBL
+        Q6ZZJ7.
+    - reference: CHEBI:16264
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: ChEBI:16264 is the 3-star ChEBI entry for UDP-N-acetyl-alpha-D-glucosamine,
+        the UDP-amino-sugar donor used for GtfA-catalyzed N-acetylglucosamine transfer.
+  - subject: gtfa
+    predicate: forms
+    object: hpg4_bht6_bis_n_acetylglucosaminyl_aglycone
+    evidence:
+    - reference: DOI:10.1099/mic.0.26507-0
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: tGtfA can add a sugar residue in the presence or absence of N-acetylglucosamine
+        at amino acid 4
+      notes: Sosio et al. isolated the Actinoplanes teichomyceticus ATCC 31131 tcp
+        cluster on AJ605139, assigned tcp8 as a GtfA glycosyltransferase, and characterized
+        teicoplanin amino-sugar transfer in vitro.
+    - reference: DOI:10.1016/s1074-5521(04)00002-x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: 3-chloro-beta-hydroxytyrosine-6 (3-Cl-6betaHty) and 4-hydroxyphenylglycine-4
+        (4Hpg)
+      notes: Li et al. cloned the 89 kbp teicoplanin biosynthetic locus and heterologously
+        assayed its glycosyltransferases, including the enzyme that modifies 3-Cl-6betaHty/Bht6
+        of the teicoplanin aglycone.
+    - reference: DOI:10.1021/ja0735857
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Howard-Jones et al. kinetically analyzed the teicoplanin glycosyltransferases
+        and acyltransferase, supporting ordered tailoring of the aglycone scaffold
+        during mature teicoplanin reconstitution.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000034
+      evidence_type: DATABASE_ASSERTION
+      snippet: Glycosyltransferase adds N-acetylglucosamine to Bht6 of the teicoplanin
+        precursor
+      retrieved_on: '2026-10-03'
+      notes: MITE0000034 is active, records GtfA as a glycosyltransferase that modifies
+        Bht6 of the teicoplanin precursor, and links GtfA to UniProtKB:Q6ZZJ7, GenPept
+        CAE53349.1 and MIBiG BGC0000440.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000034: Glycosylation (100% identity)'
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp8 CDS at
+        AJ605139.1:18949..20130 with GenPept protein_id CAE53349.1, UniProtKB/TrEMBL
+        Q6ZZJ7, and a 100% identity MITE0000034 glycosylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q6ZZJ7
+      evidence_type: DATABASE_ASSERTION
+      snippet: AC   Q6ZZJ7;
+      retrieved_on: '2026-10-03'
+      notes: Current UniProtKB:Q6ZZJ7 resolves to a 393 aa Actinoplanes teichomyceticus
+        GtfA sequence whose sequence is identical to CAE53349.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53349.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /product="GtfA protein"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein CAE53349.1 is the 393 aa Actinoplanes teichomyceticus tcp8/GtfA
+        protein translated from AJ605139.1:18949..20130 and cross-referenced to UniProtKB/TrEMBL
+        Q6ZZJ7.
+    - reference: CHEBI:16264
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: ChEBI:16264 is the 3-star ChEBI entry for UDP-N-acetyl-alpha-D-glucosamine,
+        the UDP-amino-sugar donor used for GtfA-catalyzed N-acetylglucosamine transfer.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -351,4 +605,11 @@ curation_history:
   changes: Added the UniProtKB:Q6ZZI3-grounded GtfB biosynthetic_pathway step and
     a BIOSYNTHESIS causal graph for Hpg4 N-acetylglucosamine transfer onto the teicoplanin
     aglycone during Teicoplanin A2-5 precursor biosynthesis.
+  llm_assisted: true
+- timestamp: '2026-10-03T05:37:01Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the UniProtKB:Q6ZZJ7-grounded GtfA biosynthetic_pathway step and
+    a BIOSYNTHESIS causal graph for Bht6 N-acetylglucosamine transfer onto the teicoplanin
+    pseudoaglycone during Teicoplanin A2-5 precursor biosynthesis.
   llm_assisted: true
