@@ -770,7 +770,8 @@ causal_graphs:
   scope: BIOSYNTHESIS
   description: 'Engineered E. coli BL21(DE3) with PenA/PntI: paired J1074 redox-gene
     expression enhanced intermediate production. Neither native partnership, physical
-    complex, nor increased final pentalenolactone yield is asserted.'
+    complex, nor increased final pentalenolactone yield is asserted. The 4478/5179
+    and 4772/5179 pairs are alternative experimental conditions.'
   nodes:
   - node_id: pnti
     label: PntI
@@ -792,6 +793,19 @@ causal_graphs:
     node_type: PROCESS
   - node_id: acid_production
     label: 1-deoxypentalenic acid production in engineered E. coli
+    node_type: PROCESS
+  - node_id: pena
+    label: PenA
+    node_type: ENZYME
+    identifier: UniProtKB:Q55012
+    grounding_status: GROUNDED
+  - node_id: xnr_4772
+    label: XNR_4772 predicted ferredoxin reductase
+    node_type: PROTEIN
+    identifier: NCBIProtein:AGI91094.1
+    grounding_status: GROUNDED
+  - node_id: paired_expression_4772
+    label: Joint expression of XNR_5179 and XNR_4772
     node_type: PROCESS
   edges:
   - subject: pnti
@@ -843,6 +857,296 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: 'Figure 5: the pair improved yield relative to PenA/PntI alone; the authors
         reported no significant change for individual additions.'
+  - subject: pena
+    predicate: supplies pentalenene for
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Figures 4A and 5: the E. coli strains carry UC5319 penA; PenA is not
+        the TU469 PntA used in the Streptomyces experiment.'
+    - reference: https://www.uniprot.org/uniprotkb/Q55012
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: UC5319 PenA, 337 aa; exact sequence match to both original clone AAA19131.1/U05213.1
+        and ADO85594.1/HQ292066.1. The 1994 source names Streptomyces UC5319; the
+        cluster and 2025 paper name S. exfoliatus.
+  - subject: xnr_4772
+    predicate: is coexpressed in
+    object: paired_expression_4772
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Table S2: pLJ52 carries J1074 XNR_4772, transferred via pLJ55 to pLJ64.
+        Figure 5 and Tables S2-S4 use XNR_4772; an earlier main-text occurrence of
+        XNR_4722 is inconsistent.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI91094.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: 395-aa XNR_4772 at CP004370.1:5424795..5425982, strain J1074. NCBI calls
+        this S. albidoflavus; the paper calls it S. albus. Exact-locus and GenPept-cross-reference
+        UniProt searches did not resolve an accession; no homolog was substituted.
+        NCBI labels it oxidoreductase; the paper selects it as a predicted FDR.
+  - subject: xnr_5179
+    predicate: is coexpressed in
+    object: paired_expression_4772
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Table S2: XNR_5179 from pLJ54 is added to pLJ55 to make pLJ64, jointly
+        expressing the two J1074 redox proteins.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI91495.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: XNR_5179 encodes a 100-aa ferredoxin at complement(CP004370.1:5881185..5881487),
+        strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper
+        uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did
+        not resolve an accession; no homolog was substituted.
+  - subject: paired_expression_4772
+    predicate: increases
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 5 compares pLJ64 with PenA/PntI-only pLJ9. The paired condition
+        increased acid production; the authors reported no significant change for
+        individual additions. No physical complex or native partnership is demonstrated.
+- graph_id: pentalenolactone-uc5319-pena-peni
+  scope: BIOSYNTHESIS
+  description: UC5319 PenA cyclization and the native penI deletion phenotype. Purified
+    PenA evidence and genetic PenI evidence are distinct; the deletion does not establish
+    an isolated PenI reaction or exclude indirect effects.
+  nodes:
+  - node_id: fpp
+    label: 2-trans,6-trans-farnesyl diphosphate(3-)
+    node_type: PRECURSOR
+    identifier: CHEBI:175763
+    grounding_status: GROUNDED
+  - node_id: pena
+    label: PenA
+    node_type: ENZYME
+    identifier: UniProtKB:Q55012
+    grounding_status: GROUNDED
+  - node_id: pentalenene
+    label: pentalenene
+    node_type: PRECURSOR
+    identifier: CHEBI:17251
+    grounding_status: GROUNDED
+  - node_id: peni
+    label: PenI
+    node_type: PROTEIN
+    identifier: UniProtKB:E3VWK7
+    grounding_status: GROUNDED
+  - node_id: peni_deletion
+    label: In-frame penI deletion in S. exfoliatus UC5319
+    node_type: PROCESS
+  - node_id: pentalenolactone
+    label: pentalenolactone
+    node_type: COMPOUND
+    identifier: CHEBI:70816
+    grounding_status: GROUNDED
+  edges:
+  - subject: fpp
+    predicate: is cyclized by
+    object: pena
+    evidence:
+    - reference: DOI:10.1021/bi00185a024
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Abstract: purified native and recombinant UC5319 synthase; both require
+        Mg2+.'
+      snippet: catalyzes the cyclization of farnesyl diphosphate
+    - reference: https://www.uniprot.org/uniprotkb/Q55012
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: UC5319 PenA, 337 aa; exact sequence match to both original clone AAA19131.1/U05213.1
+        and ADO85594.1/HQ292066.1. The 1994 source names Streptomyces UC5319; the
+        cluster and 2025 paper name S. exfoliatus.
+  - subject: pena
+    predicate: forms
+    object: pentalenene
+    evidence:
+    - reference: DOI:10.1021/bi00185a024
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Purified UC5319 pentalenene synthase converts FPP to pentalenene.
+  - subject: peni
+    predicate: encoding gene is disrupted in
+    object: peni_deletion
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Main-text deletion paragraph and Figure S1: CD2 replaces an internal
+        1194-bp penI fragment with an NdeI site. Table S1''s pntI label for CD2 conflicts
+        with the main text and pWHU1708 construct in Table S2; the latter identify
+        penI.'
+      snippet: an internal 1194-bp fragment
+    - reference: https://www.uniprot.org/uniprotkb/E3VWK7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: UC5319 PenI, 463 aa; exact match to ADO85595.1 at HQ292066.1:11705..13096.
+        Identifier denotes the native protein, not the in-frame deletion construct.
+        Sequence grounding alone does not establish a specific oxidation reaction.
+  - subject: peni_deletion
+    predicate: abolishes detectable production of
+    object: pentalenolactone
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Figure 2A-C: wild-type UC5319 produces 1, but CD2 lacks detectable 1.
+        Acidified extracts were methylated before GC-MS; 1-Me is the analytical derivative,
+        not the biosynthetic product.'
+  - subject: peni_deletion
+    predicate: causes accumulation of
+    object: pentalenene
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 2C-D identifies accumulated compound 3 in CD2. This genetic observation
+        does not by itself prove PenI catalyzes all three oxidation steps to the acid.
+- graph_id: pentalenolactone-ptli-assay-contexts
+  scope: BIOSYNTHESIS
+  description: PtlI from the S. avermitilis neopentalenolactone pathway acts on shared
+    early precursors. The 2006 purified assay and 2025 engineered PenA/PtlI E. coli
+    experiment are separate contexts. Neither establishes native S. avermitilis production
+    of pentalenolactone.
+  nodes:
+  - node_id: ptli
+    label: PtlI
+    node_type: ENZYME
+    identifier: UniProtKB:Q82IY3
+    grounding_status: GROUNDED
+  - node_id: racemic_pentalenene
+    label: Racemic pentalenene assay substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: purified_oxidation
+    label: Purified PtlI oxidation with E. coli Fld/Fdr
+    node_type: PROCESS
+  - node_id: pentalenol
+    label: pentalen-13-ol
+    node_type: PRECURSOR
+    identifier: CHEBI:63243
+    grounding_status: GROUNDED
+  - node_id: pentalenal
+    label: pentalen-13-al
+    node_type: PRECURSOR
+    identifier: CHEBI:63244
+    grounding_status: GROUNDED
+  - node_id: pena
+    label: PenA
+    node_type: ENZYME
+    identifier: UniProtKB:Q55012
+    grounding_status: GROUNDED
+  - node_id: pentalenene
+    label: pentalenene
+    node_type: PRECURSOR
+    identifier: CHEBI:17251
+    grounding_status: GROUNDED
+  - node_id: whole_cell_oxidation
+    label: PenA/PtlI oxidation in engineered E. coli
+    node_type: PROCESS
+  - node_id: deoxypentalenic_acid
+    label: 1-deoxypentalenic acid
+    node_type: PRECURSOR
+    identifier: CHEBI:68832
+    grounding_status: GROUNDED
+  edges:
+  - subject: ptli
+    predicate: catalyzes
+    object: purified_oxidation
+    evidence:
+    - reference: DOI:10.1021/ja0639214
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Recombinant His6-tagged PtlI was assayed with E. coli flavodoxin/flavodoxin
+        reductase and NADPH, not native redox partners.
+    - reference: https://www.uniprot.org/uniprotkb/Q82IY3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: PtlI/SAV_2999, 449 aa, exact match to BAC70710.1. NRRL 8165 and MA-4680
+        are aliases of the same S. avermitilis strain. Canonical accession excludes
+        the 2006 C-terminal His6 tag. UniProt annotates the native pathway as neopentalenolactone,
+        not pentalenolactone production in vivo.
+  - subject: racemic_pentalenene
+    predicate: is substrate for
+    object: purified_oxidation
+    evidence:
+    - reference: DOI:10.1021/ja0639214
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The 2006 substrate was synthetic racemic pentalenene; the mixture is
+        not assigned the enantiopure CHEBI:17251 identifier.
+  - subject: purified_oxidation
+    predicate: forms
+    object: pentalenol
+    evidence:
+    - reference: DOI:10.1021/ja0639214
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chiral GC-MS identified a single alcohol enantiomer from racemic pentalenene;
+        the separate alcohol-feeding assay also had background oxidation.
+      snippet: by stepwise allylic oxidation via pentalen-13-ol
+    - reference: https://pubchem.ncbi.nlm.nih.gov/compound/56927746
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: ChEBI-sourced structure cross-reference CHEBI:63243; natural pentalen-13-ol,
+        UUWZJPBRBCIXLA-IKVITTDRSA-N.
+  - subject: purified_oxidation
+    predicate: forms
+    object: pentalenal
+    evidence:
+    - reference: DOI:10.1021/ja0639214
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chiral GC-MS identified a single aldehyde enantiomer. The original report
+        detected only trace acid under varied conditions and left efficient aldehyde-to-acid
+        conversion unresolved.
+    - reference: https://www.rhea-db.org/rhea/31699
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: Rhea grounds the natural pentalen-13-al product to CHEBI:63244, JWMGZDVPJPOYGL-IKVITTDRSA-N;
+        the reaction ID is not a protein ID.
+  - subject: pena
+    predicate: forms
+    object: pentalenene
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4A penA-only control produces pentalenene; Table S2 traces pLJ5
+        to UC5319 penA in pLJ1.
+    - reference: https://www.uniprot.org/uniprotkb/Q55012
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: UC5319 PenA, 337 aa; exact sequence match to both original clone AAA19131.1/U05213.1
+        and ADO85594.1/HQ292066.1. The 1994 source names Streptomyces UC5319; the
+        cluster and 2025 paper name S. exfoliatus.
+  - subject: pentalenene
+    predicate: is substrate for
+    object: whole_cell_oxidation
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Figure 4B and Table S2: pLJ80 adds NRRL 8165 ptlI from pWHU1607 to the
+        PenA host BL21(DE3) carrying pMH1/pFZ81.'
+  - subject: ptli
+    predicate: supports
+    object: whole_cell_oxidation
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4B is a whole-cell experiment, not a purified three-step reconstitution.
+        Host redox metabolism may contribute.
+    - reference: https://www.uniprot.org/uniprotkb/Q82IY3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: PtlI/SAV_2999, 449 aa, exact match to BAC70710.1. NRRL 8165 and MA-4680
+        are aliases of the same S. avermitilis strain. Canonical accession excludes
+        the 2006 C-terminal His6 tag. UniProt annotates the native pathway as neopentalenolactone,
+        not pentalenolactone production in vivo.
+  - subject: whole_cell_oxidation
+    predicate: forms
+    object: deoxypentalenic_acid
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Compound 6 was detected as 6-Me after acidification and methylation.
+        This is an intermediate endpoint, not production of final pentalenolactone.
+      snippet: 6 was detected (Fig. 4B and C)
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -905,4 +1209,20 @@ curation_history:
     yield change for individual redox-gene additions, rather than implying identical
     measured yields or proven absence of an effect. The paired-expression increase
     is unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-03T12:47:34Z'
+  curator: codex
+  action: ADDED_PENA_PENI_PTLI_AND_ALTERNATIVE_REDOX_GRAPHS
+  changes: Added UC5319 PenA/Q55012 and PenI/E3VWK7, S. avermitilis PtlI/Q82IY3 and
+    J1074 XNR_4772/AGI91094.1 across two new BIOSYNTHESIS graphs and the existing
+    PntI redox graph (17 new cited edges). Separated native deletion, purified racemate
+    oxidation, and engineered whole-cell evidence, preserved the trace-acid observation,
+    and retained SEEDED with imported claims unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-03T13:00:16Z'
+  curator: codex
+  action: CORRECTED_PENI_EVIDENCE_LOCATOR
+  changes: 'Addressed review issue #491: replaced the unsupported Section 2.1 locator
+    with the unnumbered main-text deletion paragraph and Figure S1. Protein identities,
+    biological claims and the Table S1 discrepancy are unchanged.'
   llm_assisted: true
