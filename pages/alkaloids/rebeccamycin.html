@@ -166,6 +166,240 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 10 edges</span></h2>
+<p class="sub">ATCC 39243 RebF/RebH reconstitution, not a demonstrated physical complex. Canonical parent IDs are retained with REVIEW_NEEDED for recombinant termini: printed reverse primers do not exactly match AB090952.1, AJ414559.1, AF534707.1 or AB071405.1. Neither a cloning mutation nor a paper typo is resolved.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>FAD</td>
+  <td>is substrate for</td>
+  <td>NADH-dependent FAD reduction</td>
+  <td></td>
+  <td class="mono">DOI:10.1073/pnas.0500755102</td>
+</tr>
+<tr>
+  <td>NADH</td>
+  <td>supplies reducing equivalents to</td>
+  <td>NADH-dependent FAD reduction</td>
+  <td></td>
+  <td class="mono">DOI:10.1073/pnas.0500755102</td>
+</tr>
+<tr>
+  <td>N-His-RebF assay construct</td>
+  <td>catalyzes</td>
+  <td>NADH-dependent FAD reduction</td>
+  <td>N-His pET28a construct from ATCC 39243 genomic DNA, expressed in E. coli BL21(DE3). Assayed by NADH absorbance loss at 340 nm; NADPH was not accepted under tested conditions.</td>
+  <td class="mono">DOI:10.1073/pnas.0500755102<br>https://www.uniprot.org/uniprotkb/Q8KI76</td>
+</tr>
+<tr>
+  <td>NADH-dependent FAD reduction</td>
+  <td>produces</td>
+  <td>Reduced FAD</td>
+  <td></td>
+  <td class="mono">DOI:10.1073/pnas.0500755102</td>
+</tr>
+<tr>
+  <td>Reduced FAD</td>
+  <td>supports</td>
+  <td>In-vitro tryptophan 7-chlorination</td>
+  <td>FMN supported isolated RebF activity but not coupled chlorination; no direct protein interaction inferred.</td>
+  <td class="mono">DOI:10.1073/pnas.0500755102</td>
+</tr>
+<tr>
+  <td>L-tryptophan</td>
+  <td>is substrate for</td>
+  <td>In-vitro tryptophan 7-chlorination</td>
+  <td></td>
+  <td class="mono">DOI:10.1073/pnas.0500755102</td>
+</tr>
+<tr>
+  <td>Molecular oxygen</td>
+  <td>is required in</td>
+  <td>In-vitro tryptophan 7-chlorination</td>
+  <td></td>
+  <td class="mono">DOI:10.1073/pnas.0500755102</td>
+</tr>
+<tr>
+  <td>Chloride</td>
+  <td>is incorporated during</td>
+  <td>In-vitro tryptophan 7-chlorination</td>
+  <td></td>
+  <td class="mono">DOI:10.1073/pnas.0500755102</td>
+</tr>
+<tr>
+  <td>N-His-RebH assay construct</td>
+  <td>catalyzes</td>
+  <td>In-vitro tryptophan 7-chlorination</td>
+  <td>N-His pET28a/BL21(DE3) construct. Radio-TLC assays used 1 uM RebH, 3 uM RebF, 100 uM FAD, 10 mM NADH and 10 mM NaCl. Ratio is an assay optimum, not complex stoichiometry.</td>
+  <td class="mono">DOI:10.1073/pnas.0500755102<br>https://www.uniprot.org/uniprotkb/Q8KHZ8</td>
+</tr>
+<tr>
+  <td>In-vitro tryptophan 7-chlorination</td>
+  <td>produces</td>
+  <td>7-chloro-L-tryptophan</td>
+  <td>Radio-HPLC, isotope incorporation, MALDI-MS and NMR versus authentic standard support the product.</td>
+  <td class="mono">DOI:10.1073/pnas.0500755102</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 8 edges</span></h2>
+<p class="sub">RebO endpoint assays distinguish chlorinated and unchlorinated substrates. Keto acids are recovered assay products, not assertions that native RebD receives free keto acid instead of the imine intermediate. The enzyme carries noncovalently bound FAD, not the FMN/iron combination in the MITE lead.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>L-tryptophan</td>
+  <td>is substrate for</td>
+  <td>RebO unchlorinated-substrate assay</td>
+  <td></td>
+  <td class="mono">DOI:10.1128/JB.187.6.2084-2092.2005</td>
+</tr>
+<tr>
+  <td>C-His-RebO assay construct</td>
+  <td>catalyzes</td>
+  <td>RebO unchlorinated-substrate assay</td>
+  <td>pDHS5514/pET24b from CLA14 cosmid, ATCC 39243. C-terminal KLAAALEHHHHHH extension retained; chaperone-assisted E. coli expression. Published primer target regions match AB090952.1.</td>
+  <td class="mono">DOI:10.1128/JB.187.6.2084-2092.2005<br>https://www.uniprot.org/uniprotkb/Q8KHS0</td>
+</tr>
+<tr>
+  <td>RebO unchlorinated-substrate assay</td>
+  <td>yields recovered</td>
+  <td>Indole-3-pyruvic acid</td>
+  <td>HPLC/co-injection and UV comparison. 0.2 mM L-Trp, 100 U catalase, pH 8.0, 28 C, 4-5 h; Figure 5 uses 1 uM RebO.</td>
+  <td class="mono">DOI:10.1128/JB.187.6.2084-2092.2005</td>
+</tr>
+<tr>
+  <td>7-chloro-L-tryptophan</td>
+  <td>is substrate for</td>
+  <td>RebO chlorinated-substrate assay</td>
+  <td></td>
+  <td class="mono">DOI:10.1128/JB.187.6.2084-2092.2005</td>
+</tr>
+<tr>
+  <td>C-His-RebO assay construct</td>
+  <td>catalyzes</td>
+  <td>RebO chlorinated-substrate assay</td>
+  <td>Table 1: 57-fold higher kcat/Km than L-Trp in the peroxide-coupled spectrophotometric assay; not exclusive specificity.</td>
+  <td class="mono">DOI:10.1128/JB.187.6.2084-2092.2005</td>
+</tr>
+<tr>
+  <td>RebO chlorinated-substrate assay</td>
+  <td>yields recovered</td>
+  <td>7-chloro-indole-3-pyruvic acid</td>
+  <td>HPLC/LC-MS versus standard after 3-4 h at 28 C, pH 8.0, 100 U catalase. RebO oxidation precedes imine hydrolysis; this is an endpoint observation.</td>
+  <td class="mono">DOI:10.1128/JB.187.6.2084-2092.2005</td>
+</tr>
+<tr>
+  <td>RebO unchlorinated-substrate assay</td>
+  <td>generates</td>
+  <td>Hydrogen peroxide</td>
+  <td>Separate kinetic assay detects peroxide via horseradish peroxidase/o-dianisidine at 440 nm; catalase is included in product-isolation assays.</td>
+  <td class="mono">DOI:10.1128/JB.187.6.2084-2092.2005</td>
+</tr>
+<tr>
+  <td>RebO chlorinated-substrate assay</td>
+  <td>generates</td>
+  <td>Hydrogen peroxide</td>
+  <td></td>
+  <td class="mono">DOI:10.1128/JB.187.6.2084-2092.2005</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 8 edges</span></h2>
+<p class="sub">Separate RebO/RebD coupled reconstitutions from 7-chloro-L-tryptophan or L-tryptophan, not direct RebD turnover of an amino acid. SI pp. S4-S5: 0.5 uM RebO, 1 uM RebD, 100 U catalase, phosphate pH 7.6, 28.5 C, 6-15 h. Unchlorinated chromopyrrolic acid is an assay alternative, not the chlorinated precursor of this exact record.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>L-tryptophan</td>
+  <td>is supplied to</td>
+  <td>Unchlorinated RebO/RebD assay</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja056749x.s001</td>
+</tr>
+<tr>
+  <td>C-His-RebO assay construct</td>
+  <td>contributes to</td>
+  <td>Unchlorinated RebO/RebD assay</td>
+  <td>RebO prepared as in the 2005 oxidase study; no obligate physical RebO/RebD complex asserted.</td>
+  <td class="mono">DOI:10.1021/ja056749x.s001</td>
+</tr>
+<tr>
+  <td>His-tagged RebD assay construct</td>
+  <td>contributes to</td>
+  <td>Unchlorinated RebO/RebD assay</td>
+  <td>SI pp. S1-S3: pDHS5525/pET24b from ATCC 39243 CLA14; His-tagged protein. Published primer target regions match the 1013-aa AB090952.1 RebD parent.</td>
+  <td class="mono">DOI:10.1021/ja056749x.s001<br>https://www.uniprot.org/uniprotkb/Q8KHV6</td>
+</tr>
+<tr>
+  <td>Unchlorinated RebO/RebD assay</td>
+  <td>produces</td>
+  <td>Chromopyrrolic acid (8a)</td>
+  <td>SI Figures 6-7: HPLC and MS/MS, [M-H]- 384.1.</td>
+  <td class="mono">DOI:10.1021/ja056749x.s001</td>
+</tr>
+<tr>
+  <td>7-chloro-L-tryptophan</td>
+  <td>is supplied to</td>
+  <td>Chlorinated RebO/RebD assay</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja056749x.s001</td>
+</tr>
+<tr>
+  <td>C-His-RebO assay construct</td>
+  <td>contributes to</td>
+  <td>Chlorinated RebO/RebD assay</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja056749x.s001</td>
+</tr>
+<tr>
+  <td>His-tagged RebD assay construct</td>
+  <td>contributes to</td>
+  <td>Chlorinated RebO/RebD assay</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja056749x.s001</td>
+</tr>
+<tr>
+  <td>Chlorinated RebO/RebD assay</td>
+  <td>produces</td>
+  <td>11,11&#39;-dichlorochromopyrrolic acid (8b)</td>
+  <td>SI Figures 4-5 call this chlorochromopyrrolic acid 8b; [M-H]- 452.0 and chlorine isotope pattern support the dichlorinated product from two chlorinated monomers.</td>
+  <td class="mono">DOI:10.1021/ja056749x.s001<br>DOI:10.1128/JB.187.6.2084-2092.2005</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">RebD assay supplied with indolepyruvic acid and ammonium, explicitly separated from a native substrate assignment. The tandem-study abstract favors the imine as substrate; this assay does not establish that free keto acid is directly cyclized without imine formation. No conversion of the chlorinated keto acid is inferred from this unchlorinated assay.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Indole-3-pyruvic acid</td>
+  <td>is supplied to</td>
+  <td>Ammonium-supplemented RebD assay</td>
+  <td>SI pp. S4-S5 and Figures 8-9; IPA dissolved in DMSO, ammonium sulfate 2.0-7.4 mM, pH 7.5.</td>
+  <td class="mono">DOI:10.1021/ja056749x.s001</td>
+</tr>
+<tr>
+  <td>Ammonium</td>
+  <td>is supplied to</td>
+  <td>Ammonium-supplemented RebD assay</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja056749x.s001</td>
+</tr>
+<tr>
+  <td>His-tagged RebD assay construct</td>
+  <td>catalyzes product formation in</td>
+  <td>Ammonium-supplemented RebD assay</td>
+  <td></td>
+  <td class="mono">DOI:10.1021/ja056749x.s001<br>DOI:10.1021/bi051706e</td>
+</tr>
+<tr>
+  <td>Ammonium-supplemented RebD assay</td>
+  <td>produces</td>
+  <td>Chromopyrrolic acid (8a)</td>
+  <td>Figures 8-9: HPLC plus MS/MS with [M-H]- 384.1; this is a supplemented in-vitro result.</td>
+  <td class="mono">DOI:10.1021/ja056749x.s001</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

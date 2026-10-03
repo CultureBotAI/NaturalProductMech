@@ -395,6 +395,415 @@ causal_graphs:
       retrieved_on: '2026-09-30'
       notes: The Rhea Swiss-Prot mapping links UniProtKB:Q8KHE4 to RHEA:27397, the
         EC 4.3.3.5 reaction interconverting dichloroarcyriaflavin A and 4'-demethylrebeccamycin.
+- graph_id: rebeccamycin-rebf-rebh-in-vitro-chlorination
+  scope: BIOSYNTHESIS
+  description: 'ATCC 39243 RebF/RebH reconstitution, not a demonstrated physical complex.
+    Canonical parent IDs are retained with REVIEW_NEEDED for recombinant termini:
+    printed reverse primers do not exactly match AB090952.1, AJ414559.1, AF534707.1
+    or AB071405.1. Neither a cloning mutation nor a paper typo is resolved.'
+  nodes:
+  - node_id: rebf
+    label: N-His-RebF assay construct
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KI76
+    grounding_status: REVIEW_NEEDED
+  - node_id: rebh
+    label: N-His-RebH assay construct
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KHZ8
+    grounding_status: REVIEW_NEEDED
+  - node_id: fad
+    label: FAD
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: fadh2
+    label: Reduced FAD
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: nadh
+    label: NADH
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: oxygen
+    label: Molecular oxygen
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: chloride
+    label: Chloride
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: tryptophan
+    label: L-tryptophan
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: chlorotryptophan
+    label: 7-chloro-L-tryptophan
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: flavin_reduction
+    label: NADH-dependent FAD reduction
+    node_type: PROCESS
+  - node_id: chlorination
+    label: In-vitro tryptophan 7-chlorination
+    node_type: PROCESS
+  edges:
+  - subject: fad
+    predicate: is substrate for
+    object: flavin_reduction
+    evidence:
+    - reference: DOI:10.1073/pnas.0500755102
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: nadh
+    predicate: supplies reducing equivalents to
+    object: flavin_reduction
+    evidence:
+    - reference: DOI:10.1073/pnas.0500755102
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: rebf
+    predicate: catalyzes
+    object: flavin_reduction
+    evidence:
+    - reference: DOI:10.1073/pnas.0500755102
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: NADPH was not accepted for oxidation by RebF.
+    - reference: https://www.uniprot.org/uniprotkb/Q8KI76
+      evidence_type: DATABASE_ASSERTION
+      notes: 170-aa canonical rebF parent exactly matches AB090952.1 CDS BAC10680.1;
+        taxon 68170 (Lentzea, formerly Lechevalieria/Saccharothrix aerocolonigenes).
+        Canonical accession excludes purification tags.
+      retrieved_on: '2026-10-03'
+    notes: N-His pET28a construct from ATCC 39243 genomic DNA, expressed in E. coli
+      BL21(DE3). Assayed by NADH absorbance loss at 340 nm; NADPH was not accepted
+      under tested conditions.
+  - subject: flavin_reduction
+    predicate: produces
+    object: fadh2
+    evidence:
+    - reference: DOI:10.1073/pnas.0500755102
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: fadh2
+    predicate: supports
+    object: chlorination
+    evidence:
+    - reference: DOI:10.1073/pnas.0500755102
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: FMN supported isolated RebF activity but not coupled chlorination; no direct
+      protein interaction inferred.
+  - subject: tryptophan
+    predicate: is substrate for
+    object: chlorination
+    evidence:
+    - reference: DOI:10.1073/pnas.0500755102
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: oxygen
+    predicate: is required in
+    object: chlorination
+    evidence:
+    - reference: DOI:10.1073/pnas.0500755102
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: chloride
+    predicate: is incorporated during
+    object: chlorination
+    evidence:
+    - reference: DOI:10.1073/pnas.0500755102
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: rebh
+    predicate: catalyzes
+    object: chlorination
+    evidence:
+    - reference: DOI:10.1073/pnas.0500755102
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.uniprot.org/uniprotkb/Q8KHZ8
+      evidence_type: DATABASE_ASSERTION
+      notes: 530-aa canonical rebH parent exactly matches AB090952.1 CDS BAC10682.1;
+        taxon 68170 (Lentzea, formerly Lechevalieria/Saccharothrix aerocolonigenes).
+        Canonical accession excludes purification tags.
+      retrieved_on: '2026-10-03'
+    notes: N-His pET28a/BL21(DE3) construct. Radio-TLC assays used 1 uM RebH, 3 uM
+      RebF, 100 uM FAD, 10 mM NADH and 10 mM NaCl. Ratio is an assay optimum, not
+      complex stoichiometry.
+  - subject: chlorination
+    predicate: produces
+    object: chlorotryptophan
+    evidence:
+    - reference: DOI:10.1073/pnas.0500755102
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Radio-HPLC, isotope incorporation, MALDI-MS and NMR versus authentic standard
+      support the product.
+- graph_id: rebeccamycin-rebo-oxidase-assays
+  scope: BIOSYNTHESIS
+  description: RebO endpoint assays distinguish chlorinated and unchlorinated substrates.
+    Keto acids are recovered assay products, not assertions that native RebD receives
+    free keto acid instead of the imine intermediate. The enzyme carries noncovalently
+    bound FAD, not the FMN/iron combination in the MITE lead.
+  nodes:
+  - node_id: rebo
+    label: C-His-RebO assay construct
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KHS0
+    grounding_status: GROUNDED
+  - node_id: tryptophan
+    label: L-tryptophan
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: chlorotryptophan
+    label: 7-chloro-L-tryptophan
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: ipa
+    label: Indole-3-pyruvic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: chloroipa
+    label: 7-chloro-indole-3-pyruvic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: peroxide
+    label: Hydrogen peroxide
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: trp_oxidation
+    label: RebO unchlorinated-substrate assay
+    node_type: PROCESS
+  - node_id: cltrp_oxidation
+    label: RebO chlorinated-substrate assay
+    node_type: PROCESS
+  edges:
+  - subject: tryptophan
+    predicate: is substrate for
+    object: trp_oxidation
+    evidence:
+    - reference: DOI:10.1128/JB.187.6.2084-2092.2005
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: rebo
+    predicate: catalyzes
+    object: trp_oxidation
+    evidence:
+    - reference: DOI:10.1128/JB.187.6.2084-2092.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: contains a noncovalently bound FAD cofactor
+    - reference: https://www.uniprot.org/uniprotkb/Q8KHS0
+      evidence_type: DATABASE_ASSERTION
+      notes: 473-aa canonical rebO parent exactly matches AB090952.1 CDS BAC10674.1;
+        taxon 68170 (Lentzea, formerly Lechevalieria/Saccharothrix aerocolonigenes).
+        Canonical accession excludes purification tags.
+      retrieved_on: '2026-10-03'
+    notes: pDHS5514/pET24b from CLA14 cosmid, ATCC 39243. C-terminal KLAAALEHHHHHH
+      extension retained; chaperone-assisted E. coli expression. Published primer
+      target regions match AB090952.1.
+  - subject: trp_oxidation
+    predicate: yields recovered
+    object: ipa
+    evidence:
+    - reference: DOI:10.1128/JB.187.6.2084-2092.2005
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: HPLC/co-injection and UV comparison. 0.2 mM L-Trp, 100 U catalase, pH 8.0,
+      28 C, 4-5 h; Figure 5 uses 1 uM RebO.
+  - subject: chlorotryptophan
+    predicate: is substrate for
+    object: cltrp_oxidation
+    evidence:
+    - reference: DOI:10.1128/JB.187.6.2084-2092.2005
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: rebo
+    predicate: catalyzes
+    object: cltrp_oxidation
+    evidence:
+    - reference: DOI:10.1128/JB.187.6.2084-2092.2005
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Table 1: 57-fold higher kcat/Km than L-Trp in the peroxide-coupled spectrophotometric
+      assay; not exclusive specificity.'
+  - subject: cltrp_oxidation
+    predicate: yields recovered
+    object: chloroipa
+    evidence:
+    - reference: DOI:10.1128/JB.187.6.2084-2092.2005
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: HPLC/LC-MS versus standard after 3-4 h at 28 C, pH 8.0, 100 U catalase.
+      RebO oxidation precedes imine hydrolysis; this is an endpoint observation.
+  - subject: trp_oxidation
+    predicate: generates
+    object: peroxide
+    evidence:
+    - reference: DOI:10.1128/JB.187.6.2084-2092.2005
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Separate kinetic assay detects peroxide via horseradish peroxidase/o-dianisidine
+      at 440 nm; catalase is included in product-isolation assays.
+  - subject: cltrp_oxidation
+    predicate: generates
+    object: peroxide
+    evidence:
+    - reference: DOI:10.1128/JB.187.6.2084-2092.2005
+      evidence_type: PRIMARY_EXPERIMENT
+- graph_id: rebeccamycin-rebo-rebd-coupled-assays
+  scope: BIOSYNTHESIS
+  description: 'Separate RebO/RebD coupled reconstitutions from 7-chloro-L-tryptophan
+    or L-tryptophan, not direct RebD turnover of an amino acid. SI pp. S4-S5: 0.5
+    uM RebO, 1 uM RebD, 100 U catalase, phosphate pH 7.6, 28.5 C, 6-15 h. Unchlorinated
+    chromopyrrolic acid is an assay alternative, not the chlorinated precursor of
+    this exact record.'
+  nodes:
+  - node_id: rebo
+    label: C-His-RebO assay construct
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KHS0
+    grounding_status: GROUNDED
+  - node_id: rebd
+    label: His-tagged RebD assay construct
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KHV6
+    grounding_status: GROUNDED
+  - node_id: tryptophan
+    label: L-tryptophan
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: chlorotryptophan
+    label: 7-chloro-L-tryptophan
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: cpa
+    label: Chromopyrrolic acid (8a)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: cca
+    label: 11,11'-dichlorochromopyrrolic acid (8b)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: trp_coupling
+    label: Unchlorinated RebO/RebD assay
+    node_type: PROCESS
+  - node_id: cltrp_coupling
+    label: Chlorinated RebO/RebD assay
+    node_type: PROCESS
+  edges:
+  - subject: tryptophan
+    predicate: is supplied to
+    object: trp_coupling
+    evidence:
+    - reference: DOI:10.1021/ja056749x.s001
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: rebo
+    predicate: contributes to
+    object: trp_coupling
+    evidence:
+    - reference: DOI:10.1021/ja056749x.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: RebO prepared as in the 2005 oxidase study; no obligate physical RebO/RebD
+      complex asserted.
+  - subject: rebd
+    predicate: contributes to
+    object: trp_coupling
+    evidence:
+    - reference: DOI:10.1021/ja056749x.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.uniprot.org/uniprotkb/Q8KHV6
+      evidence_type: DATABASE_ASSERTION
+      notes: 1013-aa canonical rebD parent exactly matches AB090952.1 CDS BAC10675.1;
+        taxon 68170 (Lentzea, formerly Lechevalieria/Saccharothrix aerocolonigenes).
+        Canonical accession excludes purification tags.
+      retrieved_on: '2026-10-03'
+    notes: 'SI pp. S1-S3: pDHS5525/pET24b from ATCC 39243 CLA14; His-tagged protein.
+      Published primer target regions match the 1013-aa AB090952.1 RebD parent.'
+  - subject: trp_coupling
+    predicate: produces
+    object: cpa
+    evidence:
+    - reference: DOI:10.1021/ja056749x.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'SI Figures 6-7: HPLC and MS/MS, [M-H]- 384.1.'
+  - subject: chlorotryptophan
+    predicate: is supplied to
+    object: cltrp_coupling
+    evidence:
+    - reference: DOI:10.1021/ja056749x.s001
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: rebo
+    predicate: contributes to
+    object: cltrp_coupling
+    evidence:
+    - reference: DOI:10.1021/ja056749x.s001
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: rebd
+    predicate: contributes to
+    object: cltrp_coupling
+    evidence:
+    - reference: DOI:10.1021/ja056749x.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: in the presence of catalase
+  - subject: cltrp_coupling
+    predicate: produces
+    object: cca
+    evidence:
+    - reference: DOI:10.1021/ja056749x.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: DOI:10.1128/JB.187.6.2084-2092.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 2 identifies the chlorinated dimer as 11,11'-dichlorochromopyrrolic
+        acid.
+    notes: SI Figures 4-5 call this chlorochromopyrrolic acid 8b; [M-H]- 452.0 and
+      chlorine isotope pattern support the dichlorinated product from two chlorinated
+      monomers.
+- graph_id: rebeccamycin-rebd-ammonium-supplemented-assay
+  scope: BIOSYNTHESIS
+  description: RebD assay supplied with indolepyruvic acid and ammonium, explicitly
+    separated from a native substrate assignment. The tandem-study abstract favors
+    the imine as substrate; this assay does not establish that free keto acid is directly
+    cyclized without imine formation. No conversion of the chlorinated keto acid is
+    inferred from this unchlorinated assay.
+  nodes:
+  - node_id: rebd
+    label: His-tagged RebD assay construct
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KHV6
+    grounding_status: GROUNDED
+  - node_id: ipa
+    label: Indole-3-pyruvic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: ammonium
+    label: Ammonium
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: cpa
+    label: Chromopyrrolic acid (8a)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: ammonium_assay
+    label: Ammonium-supplemented RebD assay
+    node_type: PROCESS
+  edges:
+  - subject: ipa
+    predicate: is supplied to
+    object: ammonium_assay
+    evidence:
+    - reference: DOI:10.1021/ja056749x.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: SI pp. S4-S5 and Figures 8-9; IPA dissolved in DMSO, ammonium sulfate 2.0-7.4
+      mM, pH 7.5.
+  - subject: ammonium
+    predicate: is supplied to
+    object: ammonium_assay
+    evidence:
+    - reference: DOI:10.1021/ja056749x.s001
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: rebd
+    predicate: catalyzes product formation in
+    object: ammonium_assay
+    evidence:
+    - reference: DOI:10.1021/ja056749x.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: DOI:10.1021/bi051706e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract specifies imino-indolepyruvate as the preferred RebD
+        substrate; not evidence for direct keto-acid cyclization.
+  - subject: ammonium_assay
+    predicate: produces
+    object: cpa
+    evidence:
+    - reference: DOI:10.1021/ja056749x.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Figures 8-9: HPLC plus MS/MS with [M-H]- 384.1; this is a supplemented
+      in-vitro result.'
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -417,4 +826,12 @@ curation_history:
   changes: Added exact UniProtKB:Q8KHE4 RebG grounding, inserted the RHEA:27397 4'-demethylrebeccamycin
     synthase step before the RebM terminal methylation, and added a BIOSYNTHESIS causal
     graph linking dichloroarcyriaflavin A through RebG to 4'-demethylrebeccamycin.
+  llm_assisted: true
+- timestamp: '2026-10-03T15:12:14Z'
+  curator: codex
+  action: ADDED_REBECCAMYCIN_EARLY_ASSAY_GRAPHS
+  changes: Added RebF, RebH, RebO and RebD canonical-parent mappings in four assay-specific
+    BIOSYNTHESIS graphs with 30 cited edges. Preserved RebF/H printed-primer uncertainty
+    as REVIEW_NEEDED, separated recovered keto acids from imine substrate assignments
+    and ammonium-supplemented assays, and retained all old content and SEEDED status.
   llm_assisted: true
