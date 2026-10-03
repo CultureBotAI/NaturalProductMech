@@ -1221,8 +1221,8 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: csf1r
-    notes: 'BindingDB exact InChIKey: IC50 49, 57 nM, residues 538-678/753-922, pH
-      7.5, 22 C; UniProt parent P07333 = human CSF1R.'
+    notes: 'BindingDB exact InChIKey: IC50 49, 57 nM, one construct covering residues
+      538-678 and 753-922, pH 7.5, 22 C; UniProt parent P07333 = human CSF1R.'
     evidence:
     - reference: DOI:10.1074/jbc.M608182200
       evidence_type: PRIMARY_EXPERIMENT
@@ -1744,4 +1744,10 @@ curation_history:
   changes: Added TP-A0274 StaP, StaC and StaJ in a DOI-backed partial aglycone graph.
     Compacted old graph prose, preserving measurements, constructs, methods and citations
     within 64 KiB. Identity, seeder fields, prior history and SEEDED status unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-03T17:11:11Z'
+  curator: codex
+  action: CLARIFIED_CONSTRUCT
+  changes: Restored explicit single CSF1R construct context after prose compaction;
+    measurements unchanged.
   llm_assisted: true
