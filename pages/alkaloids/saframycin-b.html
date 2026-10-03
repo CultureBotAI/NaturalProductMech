@@ -89,7 +89,47 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>SfmM2 L-tyrosine C(3)-methyltransferase<br><span class="mono">UniProtKB:B0CN31</span></td>
+  <td class="mono">RHEA:41428</td>
+  <td class="mono">CHEBI:17895 + CHEBI:59789 &rarr; CHEBI:79076 + CHEBI:57856</td>
+  <td class="mono">DOI:10.1074/jbc.M111.306316</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: SfmM2 catalyzes L-tyrosine C-methylation to 3-methyl-L-tyrosine, an intermediate toward the 3-hydroxy-5-methyl-O-methyltyrosine residue of saframycin B.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Streptomyces lavendulae NRRL 11002 SfmM2 C-methylates L-tyrosine with S-adenosyl-L-methionine to form 3-methyl-L-tyrosine during saframycin B precursor biosynthesis.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>L-tyrosine</td>
+  <td>is C-methylated by</td>
+  <td>SfmM2</td>
+  <td></td>
+  <td class="mono">DOI:10.1074/jbc.M111.306316<br>DOI:10.1128/JB.00826-07<br>https://mite.bioinformatics.nl/repository/MITE0000032<br>https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk<br>https://www.uniprot.org/uniprotkb/B0CN31<br>https://www.ncbi.nlm.nih.gov/protein/ABI22137.1<br>https://www.rhea-db.org/rhea/41428</td>
+</tr>
+<tr>
+  <td>S-adenosyl-L-methionine</td>
+  <td>is used by</td>
+  <td>SfmM2</td>
+  <td></td>
+  <td class="mono">DOI:10.1074/jbc.M111.306316<br>DOI:10.1128/JB.00826-07<br>https://mite.bioinformatics.nl/repository/MITE0000032<br>https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk<br>https://www.uniprot.org/uniprotkb/B0CN31<br>https://www.ncbi.nlm.nih.gov/protein/ABI22137.1<br>https://www.rhea-db.org/rhea/41428</td>
+</tr>
+<tr>
+  <td>SfmM2</td>
+  <td>forms</td>
+  <td>3-methyl-L-tyrosine</td>
+  <td></td>
+  <td class="mono">DOI:10.1074/jbc.M111.306316<br>DOI:10.1128/JB.00826-07<br>https://mite.bioinformatics.nl/repository/MITE0000032<br>https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk<br>https://www.uniprot.org/uniprotkb/B0CN31<br>https://www.ncbi.nlm.nih.gov/protein/ABI22137.1<br>https://www.rhea-db.org/rhea/41428</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

@@ -114,6 +114,239 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:B0CN31
+  enzyme_label: SfmM2 L-tyrosine C(3)-methyltransferase
+  reaction_id: RHEA:41428
+  substrates:
+  - CHEBI:17895
+  - CHEBI:59789
+  products:
+  - CHEBI:79076
+  - CHEBI:57856
+  notes: SfmM2 catalyzes L-tyrosine C-methylation to 3-methyl-L-tyrosine, an intermediate
+    toward the 3-hydroxy-5-methyl-O-methyltyrosine residue of saframycin A.
+  evidence:
+  - reference: DOI:10.1074/jbc.M111.306316
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: we elucidated the biosynthetic pathway of 3-OH-5-Me-OMe-Tyr by kinetic
+      studies of SfmD in combination with biochemical assays of SfmM2, a methyltransferase
+      within the same pathway
+    notes: Tang, Fu and Tang biochemically assayed SfmM2 while resolving the 3-hydroxy-5-methyl-O-methyltyrosine
+      branch of saframycin A biosynthesis.
+  - reference: DOI:10.1128/JB.00826-07
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: the biosynthetic gene cluster for SFM-A was cloned and localized to a
+      62-kb contiguous DNA region
+    notes: Li et al. cloned and sequenced the Streptomyces lavendulae NRRL 11002 saframycin
+      A cluster, deposited DQ838002, and provided the genomic locus that encodes sfmM2.
+  - reference: https://mite.bioinformatics.nl/repository/MITE0000032
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: MITE0000032 is active, assigns SfmM2 to the C-methylation of L-tyrosine
+      to 3-methyl-L-tyrosine, records RHEA:41428 and EC:2.1.1.304 for the reaction,
+      and links SfmM2 to UniProtKB:B0CN31, GenPept ABI22137.1 and MIBiG BGC0000422.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: 'MITE0000032: Methylation (100% identity)'
+    retrieved_on: '2026-10-03'
+    notes: MIBiG BGC0000422.5 places the Streptomyces lavendulae NRRL 11002 sfmM2
+      CDS at DQ838002.1:41474..42574 with GenPept protein_id ABI22137.1 and a MITE0000032
+      100% identity methylation annotation.
+  - reference: https://www.uniprot.org/uniprotkb/B0CN31
+    evidence_type: DATABASE_ASSERTION
+    snippet: GN   Name=sfmM2
+    retrieved_on: '2026-10-03'
+    notes: Reviewed UniProtKB:B0CN31 resolves to the Streptomyces lavendulae L-tyrosine
+      C(3)-methyltransferase SfmM2 entry, cross-references EMBL DQ838002 protein ABI22137.1,
+      and annotates the RHEA:41428 / EC:2.1.1.304 catalytic activity.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ABI22137.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: /gene="sfmM2"
+    retrieved_on: '2026-10-03'
+    notes: NCBI Protein ABI22137.1 is the 366 aa Streptomyces lavendulae NRRL 11002
+      SfmM2 protein translated from DQ838002.1:41474..42574.
+  - reference: https://www.rhea-db.org/rhea/41428
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding
+      3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).
+causal_graphs:
+- graph_id: saframycin-a-sfmm2-c-methylation
+  scope: BIOSYNTHESIS
+  description: Streptomyces lavendulae NRRL 11002 SfmM2 C-methylates L-tyrosine with
+    S-adenosyl-L-methionine to form 3-methyl-L-tyrosine during saframycin A precursor
+    biosynthesis.
+  nodes:
+  - node_id: l_tyrosine
+    label: L-tyrosine
+    node_type: PRECURSOR
+    identifier: CHEBI:17895
+    grounding_status: GROUNDED
+  - node_id: s_adenosyl_l_methionine
+    label: S-adenosyl-L-methionine
+    node_type: PRECURSOR
+    identifier: CHEBI:59789
+    grounding_status: GROUNDED
+  - node_id: sfmm2
+    label: SfmM2
+    node_type: ENZYME
+    identifier: UniProtKB:B0CN31
+    grounding_status: GROUNDED
+  - node_id: three_methyl_l_tyrosine
+    label: 3-methyl-L-tyrosine
+    node_type: PRECURSOR
+    identifier: CHEBI:79076
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_tyrosine
+    predicate: is C-methylated by
+    object: sfmm2
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.306316
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: we elucidated the biosynthetic pathway of 3-OH-5-Me-OMe-Tyr by kinetic
+        studies of SfmD in combination with biochemical assays of SfmM2, a methyltransferase
+        within the same pathway
+      notes: Tang, Fu and Tang biochemically assayed SfmM2 while resolving the 3-hydroxy-5-methyl-O-methyltyrosine
+        branch of saframycin A biosynthesis.
+    - reference: DOI:10.1128/JB.00826-07
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the biosynthetic gene cluster for SFM-A was cloned and localized to
+        a 62-kb contiguous DNA region
+      notes: Li et al. cloned and sequenced the Streptomyces lavendulae NRRL 11002
+        saframycin A cluster, deposited DQ838002, and provided the genomic locus that
+        encodes sfmM2.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000032
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: MITE0000032 is active, assigns SfmM2 to the C-methylation of L-tyrosine
+        to 3-methyl-L-tyrosine, records RHEA:41428 and EC:2.1.1.304 for the reaction,
+        and links SfmM2 to UniProtKB:B0CN31, GenPept ABI22137.1 and MIBiG BGC0000422.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000032: Methylation (100% identity)'
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000422.5 places the Streptomyces lavendulae NRRL 11002 sfmM2
+        CDS at DQ838002.1:41474..42574 with GenPept protein_id ABI22137.1 and a MITE0000032
+        100% identity methylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/B0CN31
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=sfmM2
+      retrieved_on: '2026-10-03'
+      notes: Reviewed UniProtKB:B0CN31 resolves to the Streptomyces lavendulae L-tyrosine
+        C(3)-methyltransferase SfmM2 entry, cross-references EMBL DQ838002 protein
+        ABI22137.1, and annotates the RHEA:41428 / EC:2.1.1.304 catalytic activity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABI22137.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /gene="sfmM2"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein ABI22137.1 is the 366 aa Streptomyces lavendulae NRRL 11002
+        SfmM2 protein translated from DQ838002.1:41474..42574.
+    - reference: https://www.rhea-db.org/rhea/41428
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding
+        3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).
+  - subject: s_adenosyl_l_methionine
+    predicate: is used by
+    object: sfmm2
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.306316
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: we elucidated the biosynthetic pathway of 3-OH-5-Me-OMe-Tyr by kinetic
+        studies of SfmD in combination with biochemical assays of SfmM2, a methyltransferase
+        within the same pathway
+      notes: Tang, Fu and Tang biochemically assayed SfmM2 while resolving the 3-hydroxy-5-methyl-O-methyltyrosine
+        branch of saframycin A biosynthesis.
+    - reference: DOI:10.1128/JB.00826-07
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the biosynthetic gene cluster for SFM-A was cloned and localized to
+        a 62-kb contiguous DNA region
+      notes: Li et al. cloned and sequenced the Streptomyces lavendulae NRRL 11002
+        saframycin A cluster, deposited DQ838002, and provided the genomic locus that
+        encodes sfmM2.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000032
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: MITE0000032 is active, assigns SfmM2 to the C-methylation of L-tyrosine
+        to 3-methyl-L-tyrosine, records RHEA:41428 and EC:2.1.1.304 for the reaction,
+        and links SfmM2 to UniProtKB:B0CN31, GenPept ABI22137.1 and MIBiG BGC0000422.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000032: Methylation (100% identity)'
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000422.5 places the Streptomyces lavendulae NRRL 11002 sfmM2
+        CDS at DQ838002.1:41474..42574 with GenPept protein_id ABI22137.1 and a MITE0000032
+        100% identity methylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/B0CN31
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=sfmM2
+      retrieved_on: '2026-10-03'
+      notes: Reviewed UniProtKB:B0CN31 resolves to the Streptomyces lavendulae L-tyrosine
+        C(3)-methyltransferase SfmM2 entry, cross-references EMBL DQ838002 protein
+        ABI22137.1, and annotates the RHEA:41428 / EC:2.1.1.304 catalytic activity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABI22137.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /gene="sfmM2"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein ABI22137.1 is the 366 aa Streptomyces lavendulae NRRL 11002
+        SfmM2 protein translated from DQ838002.1:41474..42574.
+    - reference: https://www.rhea-db.org/rhea/41428
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding
+        3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).
+  - subject: sfmm2
+    predicate: forms
+    object: three_methyl_l_tyrosine
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.306316
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: we elucidated the biosynthetic pathway of 3-OH-5-Me-OMe-Tyr by kinetic
+        studies of SfmD in combination with biochemical assays of SfmM2, a methyltransferase
+        within the same pathway
+      notes: Tang, Fu and Tang biochemically assayed SfmM2 while resolving the 3-hydroxy-5-methyl-O-methyltyrosine
+        branch of saframycin A biosynthesis.
+    - reference: DOI:10.1128/JB.00826-07
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the biosynthetic gene cluster for SFM-A was cloned and localized to
+        a 62-kb contiguous DNA region
+      notes: Li et al. cloned and sequenced the Streptomyces lavendulae NRRL 11002
+        saframycin A cluster, deposited DQ838002, and provided the genomic locus that
+        encodes sfmM2.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000032
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: MITE0000032 is active, assigns SfmM2 to the C-methylation of L-tyrosine
+        to 3-methyl-L-tyrosine, records RHEA:41428 and EC:2.1.1.304 for the reaction,
+        and links SfmM2 to UniProtKB:B0CN31, GenPept ABI22137.1 and MIBiG BGC0000422.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000422.5/BGC0000422.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000032: Methylation (100% identity)'
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000422.5 places the Streptomyces lavendulae NRRL 11002 sfmM2
+        CDS at DQ838002.1:41474..42574 with GenPept protein_id ABI22137.1 and a MITE0000032
+        100% identity methylation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/B0CN31
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=sfmM2
+      retrieved_on: '2026-10-03'
+      notes: Reviewed UniProtKB:B0CN31 resolves to the Streptomyces lavendulae L-tyrosine
+        C(3)-methyltransferase SfmM2 entry, cross-references EMBL DQ838002 protein
+        ABI22137.1, and annotates the RHEA:41428 / EC:2.1.1.304 catalytic activity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABI22137.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /gene="sfmM2"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein ABI22137.1 is the 366 aa Streptomyces lavendulae NRRL 11002
+        SfmM2 protein translated from DQ838002.1:41474..42574.
+    - reference: https://www.rhea-db.org/rhea/41428
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding
+        3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -123,3 +356,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-03T04:36:01Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the RHEA:41428 / UniProtKB:B0CN31-grounded SfmM2 biosynthetic_pathway
+    step and a BIOSYNTHESIS causal graph for Streptomyces lavendulae NRRL 11002 SfmM2
+    C-methylation of L-tyrosine to 3-methyl-L-tyrosine in saframycin A precursor biosynthesis.
+  llm_assisted: true
