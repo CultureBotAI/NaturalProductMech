@@ -163,6 +163,151 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       notes: RCSB PDB identifies 1R0P as a human c-Met tyrosine kinase domain structure
         in complex with KSA K-252A and maps entity 1 chain A to UniProtKB:P08581.
+- graph_id: k-252a-nok-precursor-and-flavin-assays
+  scope: BIOSYNTHESIS
+  description: 'Partial K-252a biosynthesis evidence anchored to the record''s FJ031030.1
+    nok cluster: crude-extract precursor production and a separate InkE/NokD FAD-binding
+    assay. These experiments do not establish complete K-252a synthesis, sugar stereochemistry,
+    or individual NokC/NokD turnover.'
+  nodes:
+  - node_id: noka
+    label: NokA
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q27IF4
+  - node_id: nokb
+    label: NokB
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q27IF3
+  - node_id: nokc
+    label: NokC
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:C9W353
+  - node_id: nokd
+    label: NokD / InkE
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q27IF2
+  - node_id: tryptophan
+    label: L-tryptophan
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: nokabcd_assay
+    label: NokABCD-expressing E. coli crude-extract reaction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: cpa
+    label: Chromopyrrolic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: fad
+    label: FAD
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: noka
+    predicate: contributes to
+    object: nokabcd_assay
+    evidence:
+    - reference: DOI:10.1039/b905293c
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.uniprot.org/uniprotkb/Q27IF4
+      evidence_type: DATABASE_ASSERTION
+      notes: Canonical 486-aa sequence exactly matches FJ031030.1 CDS ACN29719.1 (nokA),
+        Nonomuraea longicatena taxon 83682, strain NRRL 15532/K-252. Current UniProt
+        locus annotations differ from the original gene names; grounding uses the
+        entire translated sequence, not label similarity.
+      retrieved_on: '2026-10-03'
+    notes: pCY20 expresses untagged NokABCD with native stops; pG-KJE7 supplies folding
+      chaperones in E. coli BL21(DE3). Not a purified two-enzyme assay or demonstrated
+      stable complex (Methods; Figs. 6-8).
+  - subject: nokb
+    predicate: contributes to
+    object: nokabcd_assay
+    evidence:
+    - reference: DOI:10.1039/b905293c
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.uniprot.org/uniprotkb/Q27IF3
+      evidence_type: DATABASE_ASSERTION
+      notes: Canonical 1031-aa sequence exactly matches FJ031030.1 CDS ACN29720.1
+        (nokB), Nonomuraea longicatena taxon 83682, strain NRRL 15532/K-252. Current
+        UniProt locus annotations differ from the original gene names; grounding uses
+        the entire translated sequence, not label similarity.
+      retrieved_on: '2026-10-03'
+  - subject: nokc
+    predicate: was coexpressed for
+    object: nokabcd_assay
+    evidence:
+    - reference: DOI:10.1039/b905293c
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.uniprot.org/uniprotkb/C9W353
+      evidence_type: DATABASE_ASSERTION
+      notes: Canonical 409-aa sequence exactly matches FJ031030.1 CDS ACN29722.1 (nokC),
+        Nonomuraea longicatena taxon 83682, strain NRRL 15532/K-252. Current UniProt
+        locus annotations differ from the original gene names; grounding uses the
+        entire translated sequence, not label similarity.
+      retrieved_on: '2026-10-03'
+    notes: 'Assay participant only: soluble expression does not demonstrate NokC catalysis;
+      the measured product was CPA, not K-252c.'
+  - subject: nokd
+    predicate: was coexpressed for
+    object: nokabcd_assay
+    evidence:
+    - reference: DOI:10.1039/b905293c
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.uniprot.org/uniprotkb/Q27IF2
+      evidence_type: DATABASE_ASSERTION
+      notes: Canonical 525-aa sequence exactly matches FJ031030.1 CDS ACN29721.1 (nokD),
+        Nonomuraea longicatena taxon 83682, strain NRRL 15532/K-252. Current UniProt
+        locus annotations differ from the original gene names; grounding uses the
+        entire translated sequence, not label similarity.
+      retrieved_on: '2026-10-03'
+    notes: Assay participant only; no individual NokD turnover is established.
+  - subject: tryptophan
+    predicate: is supplied to
+    object: nokabcd_assay
+    evidence:
+    - reference: DOI:10.1039/b905293c
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Methods: 2 mM L-tryptophan, 40 uL extract in 52 uL, 80 mM Tris-HCl pH
+      7.8, 7.6% glycerol; 30 C for 24 h.'
+  - subject: nokabcd_assay
+    predicate: produces
+    object: cpa
+    evidence:
+    - reference: DOI:10.1039/b905293c
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the cell-free crude extract of the NokABCD proteins
+      notes: 'Figs. 8-9 and product-characterization methods: HPLC time-zero comparison
+        and isolated-product NMR support CPA formation. The printed exact-mass values
+        disagree with the calculated masses; they are not used as confirming exact-mass
+        evidence.'
+  - subject: nokd
+    predicate: binds
+    object: fad
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2012.05.016
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: purifies without bound FAD
+      notes: 'Table 2: reported uncertainty retained without assigning an unstated
+        SD/SEM statistic.'
+    - reference: https://ars.els-cdn.com/content/image/1-s2.0-S1074552112001809-mmc1.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Fig. S2C and caption: ITC at 25 C. SI pp. 18-19: pET28a InkE recombinant
+        construct; canonical identifier excludes its affinity tag.'
+    - reference: https://rest.uniprot.org/uniparc/UPI00006CA182
+      evidence_type: DATABASE_ASSERTION
+      notes: Active cross-references link Q27IF2, InkE ABD59214.1 (DQ399653.1), and
+        NokD ACN29721.1 (FJ031030.1). All three 525-aa sequences and SI Fig. S1 InkE
+        agree exactly; the published InkE primer target regions also match.
+      retrieved_on: '2026-10-03'
+    notes: 'Table 2: InkE ITC Kd = 59 +/- 48 uM, four experiments. Separate Ni-affinity-purified
+      InkE preparation from Rosetta 2(DE3) pLysS, not the untagged pCY20 extract.
+      As-isolated apo protein was titrated with FAD in 150 mM NaCl, 25 mM HEPES pH
+      7.5, 10% glycerol. Binding alone does not demonstrate monooxygenation or product
+      turnover.'
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -178,4 +323,21 @@ curation_history:
   changes: Added a BIOACTIVITY causal graph for K-252a binding an engineered human
     MET receptor tyrosine kinase-domain construct, grounded the protein node to UniProtKB:P08581
     via PDB 1R0P chain A, and cited DOI:10.1073/pnas.1734128100 and DOI:10.2210/pdb1r0p/pdb.
+  llm_assisted: true
+- timestamp: '2026-10-03T17:57:34Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a partial BIOSYNTHESIS graph for NokABCD crude-extract CPA production
+    and separate InkE/NokD FAD binding. Grounded NokA Q27IF4, NokB Q27IF3, NokC C9W353
+    and NokD/InkE Q27IF2 to exact FJ031030.1 CDS sequences; distinguished NokC/D coexpression
+    from catalytic proof and assay-dependent constructs. Every edge cites DOI:10.1039/b905293c
+    or DOI:10.1016/j.chembiol.2012.05.016. Retained SEEDED; no complete pathway or
+    sugar stereochemistry claim.
+  llm_assisted: true
+- timestamp: '2026-10-03T18:06:27Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Addressed adversarial review issue #502: moved the ITC Kd and experiment
+    count into visible edge notes so the generated page exposes the measurement. Preserved
+    DOI evidence, uncertainty, assay context and all other graph content.'
   llm_assisted: true
