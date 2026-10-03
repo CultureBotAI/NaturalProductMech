@@ -87,6 +87,157 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 6 edges</span></h2>
+<p class="sub">PlaM1 evidence in Streptomyces sp. Tu6071 from the Duerr 2005 thesis. Native protein identity is separate from the mutant and rescue constructs; culture phenotypes are distinct from inferred chemistry. Cultures were grown in NL111V at 28 C; analytical harvests were after 6-7 days.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Internal plaM1 deletion in Tu6071-derived K1/1</td>
+  <td>inactivates_encoding_gene_of</td>
+  <td>Native PlaM1 parent</td>
+  <td>The double-crossover K1/1 mutant carries a 414-bp internal PstI deletion, not whole-gene removal; colony PCR and loss of apramycin resistance support allelic replacement. Native PstI sites are 414 bp apart, consistent with the reported in-frame deletion. The single-crossover SCplaM1 phenotype has possible polar effects and is not attributed to PlaM1 alone. Curator sequence comparison: Appendix printed page 126 has C at genomic position 13742 versus T in DQ230532.1; the terminal Arg codon is CGG versus CGA. The substitution is synonymous, not byte-identical DNA. GenPept, native GenBank, MIBiG and translated thesis target proteins agree. No UniProt mapping was verified after service failures; no homolog was substituted.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280<br>https://www.ncbi.nlm.nih.gov/protein/ABB69739.1<br>https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>Internal plaM1 deletion in Tu6071-derived K1/1</td>
+  <td>disrupts_normal</td>
+  <td>Detectable phenalinolactone A and D production</td>
+  <td>HPLC/ESI-MS of mutant culture extracts showed a changed profile dominated by PL CD1 instead of parental phenalinolactones A and D. This is not loss of all natural-product production or a quantitative detection limit.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>Internal plaM1 deletion in Tu6071-derived K1/1</td>
+  <td>causes_accumulation_of</td>
+  <td>PL CD1 and related mutant-congener accumulation</td>
+  <td>PL CD1 gave m/z 684 [M-H]- and was identified by comparative NMR as 4&#39;&#39;-O-demethylphenalinolactone D, not phenalinolactone A. Missing sugar methoxy signals and shifted sugar C-4/H-4 signals locate demethylation. Other congeners include PL CD2 and PL X3/X4; the minor proposed demethylated A analog PL X5 was assigned from MS, not complete NMR.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>pSET-plaM1 genomic-fragment complementation</td>
+  <td>supplies_wild_type_encoding_gene_for</td>
+  <td>Native PlaM1 parent</td>
+  <td>pSET-plaM1 places a genomic fragment behind ermE* in a pSET152-derived vector. The 22c_F/22c_R primer changes map outside the PlaM1 CDS, but the fragment includes partial plaA4/plaP6 sequence; it is not an isolated-CDS or purified-protein experiment. Methods differ in naming cosmid 1O12 versus 4D08; exact clone provenance is not resolved here.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>pSET-plaM1 genomic-fragment complementation</td>
+  <td>restores_detectable</td>
+  <td>Detectable phenalinolactone A and D production</td>
+  <td>All six tested complemented-conjugant cultures recovered the wild-type metabolite profile by HPLC/ESI-MS. This supports the genetic assignment but does not measure PlaM1 turnover or prove an isolated protein is sufficient.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>Native PlaM1 parent</td>
+  <td>is_proposed_to_catalyze</td>
+  <td>Proposed late 4&#39;&#39;-O-methylation of attached L-amicetose</td>
+  <td>The demethylated glycoside, rescue and whole-cell feeding evidence support assignment of PlaM1 to late sugar methylation, including proposed PL CD1-to-phenalinolactone D conversion. This thesis does not demonstrate that conversion with purified PlaM1, establish a methyl donor experimentally, or show direct PL CD1-to-A turnover by PlaM1.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 6 edges</span></h2>
+<p class="sub">PlaO4 evidence in Streptomyces sp. Tu6071 from the Duerr 2005 thesis. Native protein identity is separate from the mutant and rescue constructs; culture phenotypes are distinct from inferred chemistry. Cultures were grown in NL111V at 28 C; analytical harvests were after 6-7 days.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Internal plaO4 disruption in Tu6071-derived 42.A.35</td>
+  <td>inactivates_encoding_gene_of</td>
+  <td>Native PlaO4 parent</td>
+  <td>Double-crossover 42.A.35 was selected by loss of apramycin resistance and confirmed by colony PCR. The thesis reports an 880-bp RsrII frameshifting deletion, not whole-gene removal. The two native DQ230532.1 RsrII sites are 884 bp apart; exact mutant-junction sequence is not verified. A short-only PCR product in the preceding single crossover does not prove absence of its wild-type allele. Curator sequence comparison: Appendix printed pages 138-139 match the complete PlaO4 CDS. The nearby thesis G versus deposited A at position 38851 is outside PlaO4, in plaA5; it is not a PlaO4 amino-acid substitution. GenPept, native GenBank, MIBiG and translated thesis target proteins agree. No UniProt mapping was verified after service failures; no homolog was substituted.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280<br>https://www.ncbi.nlm.nih.gov/protein/ABB69759.1<br>https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>Internal plaO4 disruption in Tu6071-derived 42.A.35</td>
+  <td>disrupts_normal</td>
+  <td>Detectable phenalinolactone A and D production</td>
+  <td>Mutant extracts showed the PL CD8-CD11 profile, which reverted after complementation. The observation concerns culture-level production, not direct enzyme activity or absence of all metabolites.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>Internal plaO4 disruption in Tu6071-derived 42.A.35</td>
+  <td>causes_accumulation_of</td>
+  <td>PL CD8-CD11 mutant-congener accumulation</td>
+  <td>PL CD8 was isolated from preparative cultures; PL CD9, not CD8, was the largest analytical-culture peak in Table 5. NMR of CD8 showed loss of sugar and O-3 acetyl signals and replacement of the C-21 methylene by a methyl group connected to C-4 through HMBC. Its gamma-butyrolactone is retained. The other congeners were analyzed by HPLC/ESI-MS and UV, not all fully elucidated by NMR.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>pSET-plaO4 genomic-fragment complementation</td>
+  <td>supplies_wild_type_encoding_gene_for</td>
+  <td>Native PlaO4 parent</td>
+  <td>pSET-plaO4 is a genomic-fragment complementation construct behind ermE*. The 42c_F/42c_R changes lie outside the native PlaO4 CDS; partial plaV/plaA5 sequence is also included. This is not an isolated-CDS construct or a reconstituted monooxygenase system.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>pSET-plaO4 genomic-fragment complementation</td>
+  <td>restores_detectable</td>
+  <td>Detectable phenalinolactone A and D production</td>
+  <td>All three tested complemented-conjugant cultures recovered the wild-type production profile by HPLC/ESI-MS. This is genetic rescue, not purified PlaO4-catalyzed substrate conversion.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>Native PlaO4 parent</td>
+  <td>is_proposed_to_catalyze</td>
+  <td>Proposed C-21 hydroxylation of the axial C-4 methyl group</td>
+  <td>Deletion, rescue and CD8 structure support the C-21 hydroxylase assignment, replacing the initial homology-based C-19 hypothesis. CD8 also lacks C-1 hydroxylation; the thesis argues against assigning both positions to PlaO4, but that argument is not a direct exclusion assay. Exact substrate, redox partners and reaction order are not established by these experiments.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 7 edges</span></h2>
+<p class="sub">PlaO1 evidence in Streptomyces sp. Tu6071 from the Duerr 2005 thesis. Native protein identity is separate from the mutant and rescue constructs; culture phenotypes are distinct from inferred chemistry. Cultures were grown in NL111V at 28 C; analytical harvests were after 6-7 days.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Internal plaO1 deletion in Tu6071-derived 24.4.3</td>
+  <td>inactivates_encoding_gene_of</td>
+  <td>Native PlaO1 parent</td>
+  <td>The double-crossover 24.4.3 mutant carries an internal 264-bp PstI deletion; colony PCR distinguishes it from the single-crossover parent. Results section 3.4.3 calls it in-frame, whereas methods 5.9.3 says frameshift. Native PstI sites are 264 bp apart, supporting an in-frame deletion; no exact sequenced mutant junction is claimed. Curator sequence comparison: Appendix printed page 127 has C at genomic position 16420 versus T in DQ230532.1, giving a GTG versus ATG initiator. Bacterial code 11 with initiator-Met translation yields the same complete protein, not byte-identical DNA. GenPept, native GenBank, MIBiG and translated thesis target proteins agree. No UniProt mapping was verified after service failures; no homolog was substituted.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280<br>https://www.ncbi.nlm.nih.gov/protein/ABB69741.1<br>https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>Internal plaO1 deletion in Tu6071-derived 24.4.3</td>
+  <td>abolishes_detectable</td>
+  <td>Detectable phenalinolactone A and D production</td>
+  <td>HPLC/ESI-MS screening found no wild-type phenalinolactones in mutant extracts. Detection at 235 nm revealed different metabolites that were poorly represented by the 280-nm trace; the mutation does not abolish all secondary metabolism.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>Internal plaO1 deletion in Tu6071-derived 24.4.3</td>
+  <td>causes_accumulation_of</td>
+  <td>PL CD6 and PL CD7 accumulation</td>
+  <td>Negative ions were m/z 373 and 371 [M-H]-. HR-ESI-MS and NMR identified the C23 terpene PL CD6 with a beta,gamma-unsaturated alpha-ketoacid side chain at C-14, without the gamma-butyrolactone; CD7 has a C-3 ketone instead of the CD6 alcohol. Table 7 formulas denote deprotonated ions, not neutral molecular formulas. These products are not phenalinolactone A.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>pSET-plaO1 genomic-fragment complementation</td>
+  <td>supplies_wild_type_encoding_gene_for</td>
+  <td>Native PlaO1 parent</td>
+  <td>pSET-plaO1 places a genomic fragment behind ermE*. The 24c_F/24c_R changes lie outside the native PlaO1 CDS, but the fragment includes partial plaP6/plaT1 DNA. Native accession grounding does not identify the deleted mutant protein with a full-length active enzyme.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>pSET-plaO1 genomic-fragment complementation</td>
+  <td>restores_detectable</td>
+  <td>Detectable phenalinolactone A and D production</td>
+  <td>All three tested complemented-conjugant cultures recovered phenalinolactones A and D by HPLC/MS. The rescue supports the gene assignment but does not establish a purified-enzyme reaction.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>Native PlaO1 parent</td>
+  <td>is_proposed_to_catalyze</td>
+  <td>Proposed oxidative contribution to gamma-butyrolactone formation</td>
+  <td>The blocked mutant and precursor structures support participation in lactone biosynthesis. This thesis proposes C-16 hydroxylation and subsequent rearrangement from genetic and isotope evidence, not purified PlaO1 turnover. The graph does not assert the proposed cyclopropanone intermediate, enzyme-specific ring closure, a measured cofactor requirement, or a proven reaction sequence.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+<tr>
+  <td>PL CD1 feeding to delta-plaO1 cultures</td>
+  <td>restores_detectable</td>
+  <td>Detectable phenalinolactone A and D production</td>
+  <td>Adding 1 mg PL CD1 to 20 ml mutant culture after 28 h of growth yielded A, D and their methylated A-2/D-2 derivatives after 63 h of feeding, along with CD1-2. This whole-cell bypass supports biosynthetic competence of PL CD1; it is neither PlaO1 turnover nor isolated PlaM1 activity. Methods specify a medium-only feeding control, without reporting its outcome here as a separate negative result.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/2280</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
