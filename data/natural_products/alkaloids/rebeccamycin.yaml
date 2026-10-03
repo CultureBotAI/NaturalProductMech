@@ -804,6 +804,389 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
     notes: 'Figures 8-9: HPLC plus MS/MS with [M-H]- 384.1; this is a supplemented
       in-vitro result.'
+- graph_id: rebeccamycin-rebp-native-disruption
+  scope: BIOSYNTHESIS
+  description: ATCC 39243 genetic and feeding experiments. A disruption phenotype
+    is not purified-RebP catalysis; the protein ID denotes the wild-type reference.
+  nodes:
+  - node_id: rebp
+    label: RebP wild-type protein
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KIC8
+    grounding_status: GROUNDED
+  - node_id: rebp_mutant
+    label: ATCC 39243 rebP::kmr mutant
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: cca
+    label: 11,11'-dichlorochromopyrrolic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: cca_feeding
+    label: CCA feeding to the rebH::kmr culture
+    node_type: PROCESS
+  - node_id: rebeccamycin
+    label: rebeccamycin
+    node_type: COMPOUND
+    identifier: CHEBI:135511
+    grounding_status: GROUNDED
+  edges:
+  - subject: rebp_mutant
+    predicate: has insertion disrupting the gene encoding
+    object: rebp
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.uniprot.org/uniprotkb/Q8KIC8
+      evidence_type: DATABASE_ASSERTION
+      notes: 397-aa canonical wild-type parent matches AB071405.1/BAC15753.1 exactly;
+        taxon 68170. This ID does not denote a disrupted allele or a purification
+        tag.
+      retrieved_on: '2026-10-03'
+    notes: Single crossover, Southern-verified; both internal primer targets match
+      AB071405.1 and AB090952.1.
+  - subject: rebp_mutant
+    predicate: accumulates
+    object: cca
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Figure 4D and Table 3; HPLC, NMR and MS support compound 4.
+  - subject: cca
+    predicate: is supplied to
+    object: cca_feeding
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: cca_feeding
+    predicate: yields detected
+    object: rebeccamycin
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Figure 6: HPLC/UV detection after seven days; whole-cell conversion, not
+      a single-enzyme assay.'
+- graph_id: rebeccamycin-rebc-native-truncation
+  scope: BIOSYNTHESIS
+  description: ATCC 39243 mutant profiles, not a RebC substrate/product assignment.
+    Protein IDs denote wild-type references. Products 6/7 are unresolved N-glycoside
+    mixtures; 8/9 are not established pathway intermediates.
+  nodes:
+  - node_id: rebc
+    label: RebC wild-type protein
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KI25
+    grounding_status: GROUNDED
+  - node_id: rebg
+    label: RebG wild-type protein
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KHE4
+    grounding_status: GROUNDED
+  - node_id: rebc_mutant
+    label: ATCC 39243 in-frame rebC truncation
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: double_mutant
+    label: ATCC 39243 rebC truncation plus rebG::kmr
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: glycoside_mixtures
+    label: Shunt glycoside mixtures 6 and 7
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: aglycone
+    label: dichloroarcyriaflavin A
+    node_type: PRECURSOR
+    identifier: CHEBI:330772
+    grounding_status: GROUNDED
+  - node_id: hydroxy_aglycone
+    label: 7-deoxo-7-hydroxyrebeccamycin aglycone (8)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: deoxo_aglycone
+    label: 7-deoxorebeccamycin aglycone (9)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: rebc_mutant
+    predicate: has in-frame truncation of the gene encoding
+    object: rebc
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.uniprot.org/uniprotkb/Q8KI25
+      evidence_type: DATABASE_ASSERTION
+      notes: 529-aa canonical wild-type parent matches AB071405.1/BAC15752.1 exactly;
+        taxon 68170. This ID does not denote a disrupted allele or a purification
+        tag.
+      retrieved_on: '2026-10-03'
+  - subject: rebc_mutant
+    predicate: accumulates
+    object: glycoside_mixtures
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Figure 4E: unresolved 12-N/13-N glycosylation; no exact structure IDs
+      assigned.'
+  - subject: double_mutant
+    predicate: has in-frame truncation of the gene encoding
+    object: rebc
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: double_mutant
+    predicate: has insertion disrupting the gene encoding
+    object: rebg
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: double_mutant
+    predicate: accumulates
+    object: aglycone
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Figure 4F, compound 5; aglycone remains detectable without intact rebC.
+  - subject: double_mutant
+    predicate: accumulates
+    object: hydroxy_aglycone
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: neither compound was converted to rebeccamycin
+    notes: NMR-assigned; feeding 8 or 9 did not yield rebeccamycin.
+  - subject: double_mutant
+    predicate: accumulates
+    object: deoxo_aglycone
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+- graph_id: rebeccamycin-rebr-native-truncation
+  scope: BIOSYNTHESIS
+  description: Native-host requirement evidence for RebR. No promoter binding or direct
+    transcriptional target was measured here.
+  nodes:
+  - node_id: rebr
+    label: RebR wild-type protein
+    node_type: PROTEIN
+    identifier: UniProtKB:Q8KHD3
+    grounding_status: GROUNDED
+  - node_id: rebr_mutant
+    label: ATCC 39243 in-frame rebR truncation
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: no_products
+    label: Rebeccamycin-related products undetected
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: rebr_mutant
+    predicate: has in-frame truncation of the gene encoding
+    object: rebr
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.uniprot.org/uniprotkb/Q8KHD3
+      evidence_type: DATABASE_ASSERTION
+      notes: 923-aa canonical wild-type parent matches AB071405.1/BAC15755.1 exactly;
+        taxon 68170. This ID does not denote a disrupted allele or a purification
+        tag.
+      retrieved_on: '2026-10-03'
+  - subject: rebr_mutant
+    predicate: shows
+    object: no_products
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Figure 4I, HPLC/UV; G134 medium, 30 C, 11-day fermentation.
+- graph_id: rebeccamycin-rebt-host-context
+  scope: BIOSYNTHESIS
+  description: RebT has contrasting native-production and engineered-host phenotypes.
+    Neither experiment directly measures transport; no universal production requirement,
+    secretion mechanism or purified-protein activity is asserted.
+  nodes:
+  - node_id: rebt
+    label: RebT wild-type protein
+    node_type: PROTEIN
+    identifier: UniProtKB:Q8KHB7
+    grounding_status: GROUNDED
+  - node_id: rebt_mutant
+    label: ATCC 39243 rebT::kmr mutant
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: native_production
+    label: Native-host production assay
+    node_type: PROCESS
+  - node_id: without_rebt
+    label: rebODCPGMH construct in S. albus J1074
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: with_rebt
+    label: rebODCPGMH plus rebT construct in S. albus J1074
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: no_transformants
+    label: No transformants recovered
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rebeccamycin
+    label: rebeccamycin
+    node_type: COMPOUND
+    identifier: CHEBI:135511
+    grounding_status: GROUNDED
+  edges:
+  - subject: rebt_mutant
+    predicate: has insertion disrupting the gene encoding
+    object: rebt
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.uniprot.org/uniprotkb/Q8KHB7
+      evidence_type: DATABASE_ASSERTION
+      notes: 473-aa canonical wild-type parent matches AB090952.1/BAC10683.1 exactly;
+        taxon 68170. This ID does not denote a disrupted allele or a purification
+        tag.
+      retrieved_on: '2026-10-03'
+    notes: Internal primers match AB090952.1 rebT; AB071405.1 does not contain this
+      CDS.
+  - subject: rebt_mutant
+    predicate: retains
+    object: native_production
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'HPLC: mutant 52.6 +/- 1 versus wild type 52.5 +/- 7 mg/L at nine days,
+      as reported.'
+  - subject: native_production
+    predicate: produces
+    object: rebeccamycin
+    evidence:
+    - reference: DOI:10.1271/bbb.67.127
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: without_rebt
+    predicate: yielded
+    object: no_transformants
+    evidence:
+    - reference: DOI:10.1073/pnas.0407809102
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Failure to recover transformants, not a measured killing rate or direct
+      transport assay.
+  - subject: with_rebt
+    predicate: includes a gene encoding
+    object: rebt
+    evidence:
+    - reference: DOI:10.1073/pnas.0407809102
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: ATCC 39243 gene donor; canonical parent ID, not a verified full recombinant
+      construct sequence.
+  - subject: with_rebt
+    predicate: yields transformants producing
+    object: rebeccamycin
+    evidence:
+    - reference: DOI:10.1073/pnas.0407809102
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: only when rebT was also added to the gene combinations
+    notes: R5A medium; HPLC-MS, Table 2 compound 12. The genotype includes the biosynthetic
+      enzymes.
+- graph_id: rebeccamycin-rebcp-whole-cell-feeding
+  scope: BIOSYNTHESIS
+  description: S. albus J1074 coexpressing ATCC 39243 rebCP converts fed, unchlorinated
+    chromopyrrolic acid. This is a surrogate whole-cell assay, not formation of the
+    chlorinated native aglycone by isolated proteins.
+  nodes:
+  - node_id: rebc
+    label: RebC wild-type protein
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KI25
+    grounding_status: GROUNDED
+  - node_id: rebp
+    label: RebP wild-type protein
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KIC8
+    grounding_status: GROUNDED
+  - node_id: cpa
+    label: Unchlorinated chromopyrrolic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: cp_feeding
+    label: rebCP whole-cell feeding assay
+    node_type: PROCESS
+  - node_id: arcyriaflavin
+    label: Unchlorinated arcyriaflavin A
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: rebc
+    predicate: contributes in the expressed gene combination to
+    object: cp_feeding
+    evidence:
+    - reference: DOI:10.1073/pnas.0407809102
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Canonical gene-product reference; not a claim of a purified RebC/RebP complex.
+  - subject: rebp
+    predicate: contributes in the expressed gene combination to
+    object: cp_feeding
+    evidence:
+    - reference: DOI:10.1073/pnas.0407809102
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: cpa
+    predicate: is fed to
+    object: cp_feeding
+    evidence:
+    - reference: DOI:10.1073/pnas.0407809102
+      evidence_type: PRIMARY_EXPERIMENT
+  - subject: cp_feeding
+    predicate: produces
+    object: arcyriaflavin
+    evidence:
+    - reference: DOI:10.1073/pnas.0407809102
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: We also produced arcyriaflavin by feeding chromopyrrolic acid
+    notes: Product assignment by HPLC retention, UV and MS; Table 2 compound 2.
+- graph_id: rebeccamycin-rebc-crystal-trapping
+  scope: BIOSYNTHESIS
+  description: RebC structural binding evidence with unchlorinated ligands. The captured
+    ligand was modeled as 7-carboxy-K252c, potentially a tautomer mixture; direct
+    substrate turnover was not established.
+  nodes:
+  - node_id: rebc
+    label: N-His-RebC crystallization construct
+    node_type: ENZYME
+    identifier: UniProtKB:Q8KI25
+    grounding_status: GROUNDED
+  - node_id: fad
+    label: FAD
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: putative_substrate
+    label: Ligand modeled as 7-carboxy-K252c
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: rebc
+    predicate: contains bound
+    object: fad
+    evidence:
+    - reference: DOI:10.1073/pnas.0707190104
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.rcsb.org/structure/2R0G
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited polymer sequence exactly matches the canonical parent after
+        its 20-aa tag.
+      retrieved_on: '2026-10-03'
+    notes: 'PDB 2R0G chains A/B: 529-aa canonical Q8KI25 plus N-terminal MGSSHHHHHHSSGLVPRGSH,
+      549 aa total; tag disordered. Two chains in the asymmetric unit do not imply
+      an obligate dimer.'
+  - subject: rebc
+    predicate: binds ligand modeled as
+    object: putative_substrate
+    evidence:
+    - reference: DOI:10.1073/pnas.0707190104
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the spontaneous decomposition of 7-carboxy-K252c has precluded direct
+        testing
+    notes: Week-long chromopyrrolic-acid soak; density fits the degradation intermediate,
+      not supplied CPA. FAD is IN in this structure. Binding is not proof of hydroxylation.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -834,4 +1217,19 @@ curation_history:
     BIOSYNTHESIS graphs with 30 cited edges. Preserved RebF/H printed-primer uncertainty
     as REVIEW_NEEDED, separated recovered keto acids from imine substrate assignments
     and ammonium-supplemented assays, and retained all old content and SEEDED status.
+  llm_assisted: true
+- timestamp: '2026-10-03T15:53:40Z'
+  curator: codex
+  action: ADDED_REBECCAMYCIN_GENETIC_PROTEIN_GRAPHS
+  changes: Added RebP, RebC, RebR and RebT canonical-parent groundings in six BIOSYNTHESIS
+    graphs with 25 DOI-backed edges. Kept native mutant phenotypes, whole-cell reconstitution
+    and RebC structural binding separate; retained host-specific RebT limits and putative-substrate
+    uncertainty. Existing content and SEEDED status preserved.
+  llm_assisted: true
+- timestamp: '2026-10-03T15:59:19Z'
+  curator: codex
+  action: FIXED_GRAPH_ONTOLOGY_LABEL
+  changes: 'Adversarial review: restored the canonical dichloroarcyriaflavin A label
+    for CHEBI:330772 and moved the paper-local compound 5 locator into evidence notes.
+    Identifier and experimental claim unchanged.'
   llm_assisted: true
