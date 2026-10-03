@@ -931,14 +931,13 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: pdk1
-    notes: BindingDB maps this exact Standard InChIKey to a 6.5 nM IC50 measurement
-      against human PDK1 residues 51-359, and O15530 resolves in UniProtKB to the
-      human PDPK1 gene product.
+    notes: 'BindingDB exact InChIKey: IC50 6.5 nM, residues 51-359; UniProt O15530
+      = human PDPK1.'
     evidence:
     - reference: DOI:10.1042/BJ20031119
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1797581 was deposited by BindingDB for PMID 12892559
-        and reports active staurosporine inhibition in a PDK1 kinase activity assay.
+      notes: 'PubChem AID 1797581 (BindingDB deposit, PMID 12892559): active; PDK1
+        kinase activity assay.'
 - graph_id: staurosporine-akt-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits human AKT1, AKT2, and AKT3.
@@ -967,39 +966,31 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: akt1
-    notes: BindingDB maps this exact Standard InChIKey to a 1.5 nM IC50 measurement
-      against the engineered human AKT1 139-480 S378A/S381A/T450D/S473D construct,
-      and P31749 resolves in UniProtKB to the human AKT1 gene product.
+    notes: 'BindingDB exact InChIKey: engineered human AKT1 139-480 S378A/S381A/T450D/S473D,
+      IC50 1.5 nM; UniProt parent P31749.'
     evidence:
     - reference: DOI:10.1016/j.bmcl.2005.12.065
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1797336 was deposited by BindingDB for PMID 16413780
-        and reports active staurosporine inhibition of human AKT1 in an Akt kinase
-        assay.
+      notes: 'PubChem AID 1797336 (BindingDB deposit, PMID 16413780): active; AKT1
+        kinase assay.'
   - subject: staurosporine
     predicate: inhibits
     object: akt2
-    notes: BindingDB maps this exact Standard InChIKey to a 6.5 nM IC50 measurement
-      against human AKT2, and P31751 resolves in UniProtKB to the human AKT2 gene
-      product.
+    notes: 'BindingDB exact InChIKey: IC50 6.5 nM; UniProt P31751 = human AKT2.'
     evidence:
     - reference: DOI:10.1016/j.bmcl.2005.12.065
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1797336 was deposited by BindingDB for PMID 16413780
-        and reports active staurosporine inhibition of human AKT2 in an Akt kinase
-        assay.
+      notes: 'PubChem AID 1797336 (BindingDB deposit, PMID 16413780): active; AKT2
+        kinase assay.'
   - subject: staurosporine
     predicate: inhibits
     object: akt3
-    notes: BindingDB maps this exact Standard InChIKey to a 10 nM IC50 measurement
-      against human AKT3, and Q9Y243 resolves in UniProtKB to the human AKT3 gene
-      product.
+    notes: 'BindingDB exact InChIKey: IC50 10 nM; UniProt Q9Y243 = human AKT3.'
     evidence:
     - reference: DOI:10.1016/j.bmcl.2005.12.065
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1797336 was deposited by BindingDB for PMID 16413780
-        and reports active staurosporine inhibition of human AKT3 in an Akt kinase
-        assay.
+      notes: 'PubChem AID 1797336 (BindingDB deposit, PMID 16413780): active; AKT3
+        kinase assay.'
 - graph_id: staurosporine-plk-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits human PLK1, PLK2, PLK3, and PLK4.
@@ -1033,51 +1024,39 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: plk1
-    notes: BindingDB maps this exact Standard InChIKey to a 790 nM Ki measurement
-      against human PLK1, and P53350 resolves in UniProtKB to the human PLK1 gene
-      product.
+    notes: 'BindingDB exact InChIKey: Ki 790 nM; UniProt P53350 = human PLK1.'
     evidence:
     - reference: DOI:10.1021/bi7008745
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1798514 was deposited by BindingDB for PMID 17655330
-        and reports active staurosporine inhibition of human PLK1 in a PLK kinase
-        assay.
+      notes: 'PubChem AID 1798514 (BindingDB deposit, PMID 17655330): active; PLK1
+        kinase assay.'
   - subject: staurosporine
     predicate: inhibits
     object: plk2
-    notes: BindingDB maps this exact Standard InChIKey to a 150 nM Ki measurement
-      against human PLK2, and Q9NYY3 resolves in UniProtKB to the human PLK2 gene
-      product.
+    notes: 'BindingDB exact InChIKey: Ki 150 nM; UniProt Q9NYY3 = human PLK2.'
     evidence:
     - reference: DOI:10.1021/bi7008745
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1798514 was deposited by BindingDB for PMID 17655330
-        and reports active staurosporine inhibition of human PLK2 in a PLK kinase
-        assay.
+      notes: 'PubChem AID 1798514 (BindingDB deposit, PMID 17655330): active; PLK2
+        kinase assay.'
   - subject: staurosporine
     predicate: inhibits
     object: plk3
-    notes: BindingDB maps this exact Standard InChIKey to a 1200 nM Ki measurement
-      against human PLK3, and Q9H4B4 resolves in UniProtKB to the human PLK3 gene
-      product.
+    notes: 'BindingDB exact InChIKey: Ki 1200 nM; UniProt Q9H4B4 = human PLK3.'
     evidence:
     - reference: DOI:10.1021/bi7008745
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1798514 was deposited by BindingDB for PMID 17655330
-        and reports active staurosporine inhibition of human PLK3 in a PLK kinase
-        assay.
+      notes: 'PubChem AID 1798514 (BindingDB deposit, PMID 17655330): active; PLK3
+        kinase assay.'
   - subject: staurosporine
     predicate: inhibits
     object: plk4
-    notes: BindingDB maps this exact Standard InChIKey to a 2.6 nM Ki measurement
-      against human PLK4, and O00444 resolves in UniProtKB to the human PLK4 gene
-      product.
+    notes: 'BindingDB exact InChIKey: Ki 2.6 nM; UniProt O00444 = human PLK4.'
     evidence:
     - reference: DOI:10.1021/bi7008745
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1798514 was deposited by BindingDB for PMID 17655330
-        and reports active staurosporine inhibition of human PLK4 in a PLK kinase
-        assay.
+      notes: 'PubChem AID 1798514 (BindingDB deposit, PMID 17655330): active; PLK4
+        kinase assay.'
 - graph_id: staurosporine-pim1-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits human PIM1.
@@ -1096,14 +1075,13 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: pim1
-    notes: BindingDB maps this exact Standard InChIKey to a 10 nM IC50 measurement
-      against human PIM1 at pH 7.6000 and 30.00 C, and P11309 resolves in UniProtKB
-      to the human PIM1 gene product.
+    notes: 'BindingDB exact InChIKey: IC50 10 nM, pH 7.6, 30 C; UniProt P11309 = human
+      PIM1.'
     evidence:
     - reference: DOI:10.1074/jbc.M413155200
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1796959 was deposited by BindingDB for PMID 15657054
-        and reports active staurosporine inhibition of human PIM1 in a kinase assay.
+      notes: 'PubChem AID 1796959 (BindingDB deposit, PMID 15657054): active; PIM1
+        kinase assay.'
 - graph_id: staurosporine-pdgfrb-vegfr2-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits human PDGFRB and VEGFR2 receptor tyrosine kinases.
@@ -1127,27 +1105,21 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: pdgfrb
-    notes: BindingDB maps this exact Standard InChIKey to a 6.14 nM IC50 measurement
-      against human PDGFRB, and P09619 resolves in UniProtKB to the human PDGFRB gene
-      product.
+    notes: 'BindingDB exact InChIKey: IC50 6.14 nM; UniProt P09619 = human PDGFRB.'
     evidence:
     - reference: DOI:10.1021/cb9002865
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1799383 was deposited by BindingDB for PMID 20020776
-        and reports active staurosporine inhibition of human PDGFRB in an in vitro
-        kinase assay.
+      notes: 'PubChem AID 1799383 (BindingDB deposit, PMID 20020776): active; PDGFRB
+        in-vitro kinase assay.'
   - subject: staurosporine
     predicate: inhibits
     object: vegfr2
-    notes: BindingDB maps this exact Standard InChIKey to a 3.29 nM IC50 measurement
-      against human VEGFR2, and P35968 resolves in UniProtKB to the human KDR gene
-      product.
+    notes: 'BindingDB exact InChIKey: IC50 3.29 nM; UniProt P35968 = human KDR.'
     evidence:
     - reference: DOI:10.1021/cb9002865
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1799383 was deposited by BindingDB for PMID 20020776
-        and reports active staurosporine inhibition of human VEGFR2 in an in vitro
-        kinase assay.
+      notes: 'PubChem AID 1799383 (BindingDB deposit, PMID 20020776): active; VEGFR2
+        in-vitro kinase assay.'
 - graph_id: staurosporine-src-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits chicken c-Src.
@@ -1166,15 +1138,12 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: src
-    notes: BindingDB maps this exact Standard InChIKey to an 8 nM KD measurement against
-      chicken c-Src, and P00523 resolves in UniProtKB to the Gallus gallus SRC gene
-      product.
+    notes: 'BindingDB exact InChIKey: KD 8 nM; UniProt P00523 = Gallus gallus SRC.'
     evidence:
     - reference: DOI:10.1038/nchembio.162
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1799403 was deposited by BindingDB for PMID 19396179
-        and reports active staurosporine inhibition of wild-type cSrc in a tyrosine
-        kinase inhibition assay.
+      notes: 'PubChem AID 1799403 (BindingDB deposit, PMID 19396179): active; wild-type
+        cSrc tyrosine kinase inhibition assay.'
 - graph_id: staurosporine-cdpk1-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits Plasmodium falciparum K1 calcium-dependent protein
@@ -1194,15 +1163,13 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: cdpk1
-    notes: BindingDB maps this exact Standard InChIKey to a 240 nM IC50 measurement
-      against Plasmodium falciparum isolate K1 CDPK1 at pH 7.5000 and 24.00 C, and
-      P62343 resolves in UniProtKB to that parasite kinase.
+    notes: 'BindingDB exact InChIKey: IC50 240 nM, pH 7.5, 24 C; UniProt P62343 =
+      P. falciparum K1 CDPK1.'
     evidence:
     - reference: DOI:10.1038/nchembio.87
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1799368 was deposited by BindingDB for PMID 18454143
-        and reports active staurosporine inhibition of Plasmodium falciparum CDPK1
-        in a scintillation proximity assay.
+      notes: 'PubChem AID 1799368 (BindingDB deposit, PMID 18454143): active; P. falciparum
+        CDPK1 scintillation-proximity assay.'
 - graph_id: staurosporine-gsk3b-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits human GSK3B.
@@ -1221,22 +1188,21 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: gsk3b
-    notes: BindingDB maps this exact Standard InChIKey to 38, 60, and 54 nM IC50 measurements
-      against human GSK3B, and P49841 resolves in UniProtKB to the human GSK3B gene
-      product.
+    notes: 'BindingDB exact InChIKey: IC50 38, 60 and 54 nM; UniProt P49841 = human
+      GSK3B.'
     evidence:
     - reference: DOI:10.1111/cbdd.12546
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1801382 was deposited by BindingDB for PMID 25711384
-        and reports active staurosporine inhibition in a GSK-3 beta kinase assay.
+      notes: 'PubChem AID 1801382 (BindingDB deposit, PMID 25711384): active; GSK-3
+        beta kinase assay.'
     - reference: DOI:10.1111/cbdd.12724
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1801812 was deposited by BindingDB for PMID 26804375
-        and reports active staurosporine inhibition in a Kinase-Glo assay.
+      notes: 'PubChem AID 1801812 (BindingDB deposit, PMID 26804375): active; Kinase-Glo
+        assay.'
     - reference: DOI:10.1016/j.bioorg.2016.07.007
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1801940 was deposited by BindingDB for PMID 27454617
-        and reports active staurosporine inhibition in a GSK-3 beta activity assay.
+      notes: 'PubChem AID 1801940 (BindingDB deposit, PMID 27454617): active; GSK-3
+        beta activity assay.'
 - graph_id: staurosporine-csf1r-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits human CSF1R.
@@ -1255,16 +1221,13 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: csf1r
-    notes: BindingDB maps this exact Standard InChIKey to 49 and 57 nM IC50 measurements
-      against a human CSF1R construct covering residues 538-678 and 753-922 at pH
-      7.5000 and 22.00 C, and P07333 resolves in UniProtKB to the human CSF1R gene
-      product.
+    notes: 'BindingDB exact InChIKey: IC50 49, 57 nM, one construct covering residues
+      538-678 and 753-922, pH 7.5, 22 C; UniProt parent P07333 = human CSF1R.'
     evidence:
     - reference: DOI:10.1074/jbc.M608182200
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1797654 was deposited by BindingDB for PMID 17132625
-        and reports active staurosporine inhibition in the cFMS autophosphorylation
-        fluorescence-polarization endpoint assay.
+      notes: 'PubChem AID 1797654 (BindingDB deposit, PMID 17132625): active; cFMS
+        autophosphorylation fluorescence-polarization endpoint assay.'
 - graph_id: staurosporine-pka-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits bovine cAMP-dependent protein kinase catalytic
@@ -1284,20 +1247,17 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: prkaca
-    notes: BindingDB maps this exact stereo-incomplete Standard InChIKey to 40 and
-      3.6 nM IC50 measurements against bovine cAMP-dependent protein kinase catalytic
-      subunit alpha, and P00517 resolves in UniProtKB to the Bos taurus PRKACA gene
-      product.
+    notes: 'BindingDB exact stereo-incomplete InChIKey: IC50 40, 3.6 nM; UniProt P00517
+      = Bos taurus PRKACA.'
     evidence:
     - reference: DOI:10.1016/0960-894X(94)00458-R
       evidence_type: PRIMARY_EXPERIMENT
-      notes: BindingDB reports a 40 nM IC50 measurement for this staurosporine structure
-        against bovine PKA C-alpha.
+      notes: 'BindingDB: this staurosporine structure, bovine PKA C-alpha, IC50 40
+        nM.'
     - reference: DOI:10.1016/j.bmcl.2005.12.065
       evidence_type: PRIMARY_EXPERIMENT
-      notes: PubChem BioAssay AID 1797337 was deposited by BindingDB for PMID 16413780
-        and reports active staurosporine inhibition of bovine PKA C-alpha in a PKA/PKC
-        kinase assay.
+      notes: 'PubChem AID 1797337 (BindingDB deposit, PMID 16413780): active; PKA
+        C-alpha PKA/PKC kinase assay.'
 - graph_id: staurosporine-itk-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits human ITK/TSK.
@@ -1316,15 +1276,13 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: itk
-    notes: BindingDB rows 60-61 and BindingDB-deposited PubChem BioAssay AID 1798742
-      map this exact stereo-incomplete Standard InChIKey to active 2.2 and <10 nM
-      Ki measurements against human ITK/TSK at pH 8.0000 and 25.00 C, and Q08881 resolves
-      in UniProtKB to the human ITK gene product.
+    notes: 'BindingDB rows 60-61, exact stereo-incomplete InChIKey: active, Ki 2.2
+      and <10 nM, pH 8, 25 C; UniProt Q08881 = human ITK.'
     evidence:
     - reference: DOI:10.1074/jbc.M400031200
       evidence_type: PRIMARY_EXPERIMENT
-      notes: BindingDB and PubChem BioAssay AID 1798742 cite PMID:14766749 for staurosporine
-        radiometric kinase Ki measurements against human ITK/TSK.
+      notes: 'BindingDB-deposited PubChem AID 1798742, PMID 14766749: staurosporine,
+        human ITK/TSK radiometric kinase Ki assay.'
 - graph_id: staurosporine-pkc-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits human PKC gamma and PKC zeta.
@@ -1348,29 +1306,23 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: pkc_gamma
-    notes: BindingDB row 44 and BindingDB-deposited PubChem BioAssay AID 1797337 map
-      this exact stereo-incomplete Standard InChIKey to a 6.6 nM IC50 measurement
-      against human PKC gamma at pH 7.4000 and 22.00 C, and P05129 resolves in UniProtKB
-      to the human PRKCG gene product.
+    notes: 'BindingDB exact stereo-incomplete InChIKey: IC50 6.6 nM, pH 7.4, 22 C;
+      UniProt P05129 = human PRKCG.'
     evidence:
     - reference: DOI:10.1016/j.bmcl.2005.12.065
       evidence_type: PRIMARY_EXPERIMENT
-      notes: BindingDB row 44 and PubChem BioAssay row 2326 both cite PMID 16413780
-        for active staurosporine inhibition of human PKC gamma in a PKA/PKC kinase
-        assay.
+      notes: 'BindingDB row 44; its PubChem AID 1797337, row 2326; PMID 16413780:
+        active; PKC gamma PKA/PKC kinase assay.'
   - subject: staurosporine
     predicate: inhibits
     object: pkc_zeta
-    notes: BindingDB row 45 and BindingDB-deposited PubChem BioAssay AID 1797337 map
-      this exact stereo-incomplete Standard InChIKey to a 570 nM IC50 measurement
-      against human PKC zeta at pH 7.4000 and 22.00 C, and Q05513 resolves in UniProtKB
-      to the human PRKCZ gene product.
+    notes: 'BindingDB exact stereo-incomplete InChIKey: IC50 570 nM, pH 7.4, 22 C;
+      UniProt Q05513 = human PRKCZ.'
     evidence:
     - reference: DOI:10.1016/j.bmcl.2005.12.065
       evidence_type: PRIMARY_EXPERIMENT
-      notes: BindingDB row 45 and PubChem BioAssay row 2327 both cite PMID 16413780
-        for active staurosporine inhibition of human PKC zeta in a PKA/PKC kinase
-        assay.
+      notes: 'BindingDB row 45; its PubChem AID 1797337, row 2327; PMID 16413780:
+        active; PKC zeta PKA/PKC kinase assay.'
 - graph_id: staurosporine-rock2-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits bovine ROCK2.
@@ -1389,16 +1341,13 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: rock2
-    notes: BindingDB row 50 and BindingDB-deposited PubChem BioAssay AID 1797135 map
-      this exact stereo-incomplete Standard InChIKey to a 1.2 nM IC50 measurement
-      against bovine ROCK2, and Q28021 resolves in UniProtKB to the Bos taurus ROCK2
-      gene product.
+    notes: 'BindingDB exact stereo-incomplete InChIKey: IC50 1.2 nM; UniProt Q28021
+      = Bos taurus ROCK2.'
     evidence:
     - reference: DOI:10.1074/jbc.M512374200
       evidence_type: PRIMARY_EXPERIMENT
-      notes: BindingDB row 50 and PubChem BioAssay row 2321 both cite PMID 16699172
-        for active staurosporine inhibition of bovine ROCK2 in a kinase inhibition
-        assay.
+      notes: 'BindingDB row 50; its PubChem AID 1797135, row 2321; PMID 16699172:
+        active; ROCK2 kinase inhibition assay.'
 - graph_id: staurosporine-chk1-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits human Chk1 and Chk2.
@@ -1422,15 +1371,13 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: chk1
-    notes: BindingDB row 51 and BindingDB-deposited PubChem BioAssay AID 1797591 map
-      this exact stereo-incomplete Standard InChIKey to a 7.8 nM Ki measurement against
-      human Chk1 at pH 7.4000 and 37.00 C, and O14757 resolves in UniProtKB to the
-      human CHEK1 gene product.
+    notes: 'BindingDB exact stereo-incomplete InChIKey: Ki 7.8 nM, pH 7.4, 37 C; UniProt
+      O14757 = human CHEK1.'
     evidence:
     - reference: DOI:10.1074/jbc.M201233200
       evidence_type: PRIMARY_EXPERIMENT
-      notes: BindingDB row 51 and PubChem BioAssay row 2330 both cite PMID 12244092
-        for active staurosporine inhibition of human Chk1 in a Chk1 enzymatic assay.
+      notes: 'BindingDB row 51; its PubChem AID 1797591, row 2330; PMID 12244092:
+        active; Chk1 enzymatic assay.'
   - subject: staurosporine
     predicate: inhibits
     object: chk2
@@ -1458,15 +1405,13 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: mlck
-    notes: BindingDB row 37 and BindingDB-deposited PubChem BioAssay AID 1795448 map
-      this exact stereo-incomplete Standard InChIKey to a 10 nM IC50 measurement against
-      Gallus gallus smooth-muscle MLCK at pH 7.2000 and 30.00 C, and P11799 resolves
-      in UniProtKB to the Gallus gallus Mylk gene product.
+    notes: 'BindingDB exact stereo-incomplete InChIKey: IC50 10 nM, pH 7.2, 30 C;
+      UniProt P11799 = Gallus gallus Mylk.'
     evidence:
     - reference: DOI:10.1016/0960-894X(94)00458-R
       evidence_type: PRIMARY_EXPERIMENT
-      notes: BindingDB row 37 and PubChem BioAssay row 2308 both report active staurosporine
-        inhibition of chicken smooth-muscle MLCK in an MLCK assay.
+      notes: 'BindingDB row 37; its PubChem AID 1795448, row 2308: active; chicken
+        smooth-muscle MLCK assay.'
 - graph_id: staurosporine-pkg1-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits bovine cGMP-dependent protein kinase 1.
@@ -1485,15 +1430,13 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: prkg1
-    notes: BindingDB row 78 and BindingDB-deposited PubChem BioAssay AID 1795450 map
-      this exact stereo-incomplete Standard InChIKey to an 18 nM IC50 measurement
-      against bovine PKG1, and P00516 resolves in UniProtKB to the Bos taurus PRKG1
-      gene product.
+    notes: 'BindingDB exact stereo-incomplete InChIKey: IC50 18 nM; UniProt P00516
+      = Bos taurus PRKG1.'
     evidence:
     - reference: DOI:10.1016/0960-894X(94)00458-R
       evidence_type: PRIMARY_EXPERIMENT
-      notes: BindingDB row 78 and PubChem BioAssay row 2311 both report active staurosporine
-        inhibition of bovine cGMP-dependent protein kinase 1 in a cGPK assay.
+      notes: 'BindingDB row 78; its PubChem AID 1795450, row 2311: active; cGMP-dependent
+        protein kinase 1 cGPK assay.'
 - graph_id: staurosporine-pkc-beta-inhibition
   scope: BIOACTIVITY
   description: Staurosporine inhibits rat PKC beta.
@@ -1512,26 +1455,135 @@ causal_graphs:
   - subject: staurosporine
     predicate: inhibits
     object: pkc_beta
-    notes: BindingDB rows 40-43 map this exact stereo-incomplete Standard InChIKey
-      to 9 nM IC50 and 19 nM Ki measurements against rat PKC beta, and P68403 resolves
-      in UniProtKB to the Rattus norvegicus Prkcb gene product.
+    notes: 'BindingDB exact stereo-incomplete InChIKey: IC50 9 nM, Ki 19 nM; UniProt
+      P68403 = Rattus norvegicus Prkcb.'
     evidence:
     - reference: DOI:10.1016/0960-894X(94)00458-R
       evidence_type: PRIMARY_EXPERIMENT
-      notes: BindingDB row 40 reports a 9 nM IC50 measurement for staurosporine against
-        rat PKC beta.
+      notes: 'BindingDB row 40: staurosporine, rat PKC beta, IC50 9 nM.'
     - reference: DOI:10.1021/jm00079a024
       evidence_type: PRIMARY_EXPERIMENT
-      notes: BindingDB row 41 and PubChem BioAssay row 2305 both cite PMID 1732526
-        for active staurosporine inhibition of rat PKC beta in a PKC assay.
+      notes: 'BindingDB row 41, PubChem row 2305, PMID 1732526: active; rat PKC beta
+        PKC assay.'
     - reference: DOI:10.1021/jm00053a003
       evidence_type: PRIMARY_EXPERIMENT
-      notes: BindingDB row 42 and PubChem BioAssay row 2306 both cite PMID 8421286
-        for active staurosporine inhibition of rat PKC beta in a PKC assay.
+      notes: 'BindingDB row 42, PubChem row 2306, PMID 8421286: active; rat PKC beta
+        PKC assay.'
     - reference: DOI:10.1016/1074-5521(95)90124-8
       evidence_type: PRIMARY_EXPERIMENT
-      notes: BindingDB row 43 and PubChem BioAssay row 2355 both cite PMID 9383464
-        for active staurosporine inhibition of rat PKC beta in an inhibition assay.
+      notes: 'BindingDB row 43, PubChem row 2355, PMID 9383464: active; rat PKC beta
+        inhibition assay.'
+- graph_id: staurosporine-aglycone-assays
+  scope: BIOSYNTHESIS
+  description: 'Partial TP-A0274 aglycone evidence: C-His StaP crystallography, separately
+    purified C-His StaP/StaC tandem assays, and staJ-deletion cultures. IDs denote
+    canonical parents, not constructs. No stable complex, direct StaC substrate, radical
+    mechanism or sugar stereochemistry inferred.'
+  nodes:
+  - node_id: stap
+    label: TP-A0274 StaP canonical protein
+    node_type: ENZYME
+    identifier: UniProtKB:Q83WG3
+    grounding_status: GROUNDED
+  - node_id: cpa
+    label: Chromopyrrolic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: stac
+    label: TP-A0274 StaC canonical protein
+    node_type: ENZYME
+    identifier: UniProtKB:A3KBE8
+    grounding_status: GROUNDED
+  - node_id: fad
+    label: Added FAD
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: StaP/StaC tandem reaction
+    node_type: PROCESS
+  - node_id: k252c
+    label: K252c (staurosporine aglycone)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: staj
+    label: TP-A0274 StaJ wild-type protein
+    node_type: PROTEIN
+    identifier: UniProtKB:Q83WG1
+    grounding_status: GROUNDED
+  - node_id: mutant
+    label: TP-A0274 staJ in-frame deletion strain
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: stap
+    predicate: binds at its active site
+    object: cpa
+    evidence:
+    - reference: DOI:10.1073/pnas.0702946104
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the functional significance of the latter two molecules is unclear
+    - reference: https://www.rcsb.org/structure/2Z3U
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+    notes: '2Z3U (2.4 A): Q83WG3 (417 aa) plus LEHHHHHH, 425 aa total. Only active-site
+      CPA interpreted; two other sites may be packing artifacts.'
+  - subject: stap
+    predicate: participates in
+    object: assay
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 417-aa canonical parent = AB088119.1/BAC55212.1; preparation as in the
+      2007 StaP study.
+  - subject: stac
+    predicate: contributes to K252c formation in
+    object: assay
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 545-aa canonical parent = AB088119.1/BAF47693.1; both cloning-primer targets
+      match. C-His tag is not part of UniProt.
+  - subject: cpa
+    predicate: is supplied to
+    object: assay
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Fig. 4A: 1 uM StaP, 5 uM StaC, 65 uM CPA; 75 mM HEPES pH 8, 30 C, 5 min;
+      spinach ferredoxin/reductase and NADH.'
+  - subject: fad
+    predicate: enhances K252c output in
+    object: assay
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Exogenous FAD increased K252c production
+    notes: 'Fig. 4A: output rises up to 0.5 uM added FAD, then falls. Tandem response,
+      not a direct FAD-binding measurement.'
+  - subject: assay
+    predicate: produces predominantly
+    object: k252c
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Fig. 4A; HPLC against NMR/LC-MS-verified standards. No stable StaC substrate
+      or elementary mechanism assigned.
+  - subject: mutant
+    predicate: has in-frame deletion in the gene encoding
+    object: staj
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 472-aa parent = AB088119.1/BAC55214.1, not the mutant allele. All four
+      deletion-primer targets match.
+  - subject: mutant
+    predicate: yielded isolated
+    object: k252c
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Methods: 5 days, 30 C; 128 mg purified from 4 L by extraction/HPLC, not
+      a fermentation titer. NMR/LC-MS identity, [M+H]+ 312.'
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1685,4 +1737,17 @@ curation_history:
   action: RECORD_CURATED
   changes: Added human Chk2 to the staurosporine checkpoint graph, grounded to UniProtKB:O96017
     and cited DOI:10.1124/mol.107.035832.
+  llm_assisted: true
+- timestamp: '2026-10-03T17:00:04Z'
+  curator: codex
+  action: ADDED_STAUROSPORINE_BIOSYNTHETIC_PROTEINS
+  changes: Added TP-A0274 StaP, StaC and StaJ in a DOI-backed partial aglycone graph.
+    Compacted old graph prose, preserving measurements, constructs, methods and citations
+    within 64 KiB. Identity, seeder fields, prior history and SEEDED status unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-03T17:11:11Z'
+  curator: codex
+  action: CLARIFIED_CONSTRUCT
+  changes: Restored explicit single CSF1R construct context after prose compaction;
+    measurements unchanged.
   llm_assisted: true
