@@ -81,6 +81,157 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Partial precursor chemistry for everninomicin D: purified, N-terminal His6-tagged EvdS6 expressed from pET28a(+) in E. coli Tuner(DE3) was assayed with UDP-GlcA. UDP-4-keto-D-xylose and UDP-D-xylose are candidate precursors of the H- and G-rings, respectively. Their downstream incorporation, the native UDP-versus-TDP donor preference, and complete everninomicin D biosynthesis were not demonstrated.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>UDP-D-glucuronic acid (assayed substrate)</td>
+  <td>is_assayed_substrate_of</td>
+  <td>EvdS6 N-terminal His6 construct</td>
+  <td>The identifier denotes the native 329-aa parent QLD23489.2, not the affinity tag. It is HXZ27_04045 at CP058322.1:898338..899327, called evdS5 in GenBank and MIBiG BGC0002085.3 but EvdS6 in this paper. The CDS translation and GenPept sequence match both PDB constructs after accounting for the 19-aa MGSSHHHHHHSSGLVPRGS tag and the initiating GTG codon: native initiator M is V when internal to the fusion. Table S1 cloning-primer termini match this CDS. Do not substitute the adjacent evdS6-labelled HXZ27_04050/QLD23490.1. The PDB-linked UniProt A0A1C5ADV9 was rejected as an exact parent: it is 324 aa and has two internal sequence conflicts with the assayed protein, in addition to the N-terminal difference. Exact-locus/accession and taxon-lineage length-329 UniProt searches found no exact match; this is a bounded search, not a claim of global absence. Current GenPept assigns M. carbonacea subsp. aurantiaca, NRRL 2997, NCBITaxon:3454472; its parent is NCBITaxon:47853, the species in the pinned MIBiG record.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893<br>https://www.ncbi.nlm.nih.gov/protein/QLD23489.2<br>https://ars.els-cdn.com/content/image/1-s2.0-S002192582301921X-mmc1.docx</td>
+</tr>
+<tr>
+  <td>EvdS6 N-terminal His6 construct</td>
+  <td>produces_in_vitro</td>
+  <td>UDP-4-keto-D-xylose</td>
+  <td>HPLC-MS, 2-bromophenylhydrazine derivatization and reaction-mixture NMR establish the keto product and its D-xylose configuration; the keto group is predominantly hydrated in aqueous solution. Products were absent in the boiled-enzyme control. Standard turnover assays used 1 mM UDP-GlcA, 1 mM NAD+, 0.5 mg/ml enzyme, 50 mM HEPES pH 8.5 at 30 C for 1 h. NMR used an extended incubation and the filtered reaction mixture because purified products were unstable; no isolated-product yield is asserted.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893</td>
+</tr>
+<tr>
+  <td>EvdS6 N-terminal His6 construct</td>
+  <td>produces_in_vitro</td>
+  <td>UDP-D-xylose</td>
+  <td>HPLC-MS and multidimensional NMR identify the reduced D-xylose product. The Figure 3 time course used 1 mM UDP-GlcA, 0.1 mM NAD+, 0.42 mg/ml enzyme and 50 mM HEPES pH 8.5, distinct from the standard assay. Both products are seen early, whereas UDP-D-xylose predominates after overnight incubation. This is not direct production of L-lyxose or of the final antibiotic.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893</td>
+</tr>
+<tr>
+  <td>NAD+</td>
+  <td>supports_assayed_turnover_of</td>
+  <td>EvdS6 N-terminal His6 construct</td>
+  <td>Figure S4A compares added NAD+, NADP+ and no exogenous cofactor at 1 mM UDP-GlcA, 0.35 mg/ml enzyme and 50 mM HEPES pH 8.5. NAD+ gives substantially greater turnover; the other conditions retain low activity. Copurified NAD+ precludes interpreting the no-added-cofactor condition as a cofactor-free enzyme.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Structural assembly of the recombinant EvdS6 precursor enzyme, not a demonstrated in-vivo complex. PDB 8SHH (1.93 A) contains copurified NAD+ without added substrate ligand; PDB 8SK0 (1.51 A) contains NAD+ and TDP after crystallization with commercial UDP-GlcA. A PDB deposition is structural evidence, not a protein accession.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>EvdS6 N-terminal His6 construct</td>
+  <td>forms_observed_homodimer</td>
+  <td>Observed recombinant EvdS6 homodimer</td>
+  <td>Two copies of the sequence-verified parent form the crystallized dimer. Both deposits have the same tagged 348-aa sequence described in the assay graph. RCSB assembly 1 is an author/PISA homodimer with gel-filtration support; no native-cell assembly measurement or distinct complex accession is asserted.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893<br>https://www.ncbi.nlm.nih.gov/protein/QLD23489.2<br>https://www.rcsb.org/structure/8SK0<br>https://www.rcsb.org/structure/8SHH</td>
+</tr>
+<tr>
+  <td>Observed recombinant EvdS6 homodimer</td>
+  <td>contains_bound_cofactor</td>
+  <td>Copurified NAD+</td>
+  <td>NAD+ is noncovalently bound in each protomer in both structures. Thus the paper&#39;s ligand-free state must not be interpreted as wholly apo or NAD-free.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893</td>
+</tr>
+<tr>
+  <td>Observed recombinant EvdS6 homodimer</td>
+  <td>contains_observed_bound_ligand</td>
+  <td>Bound TDP (thymidine diphosphate)</td>
+  <td>In 8SK0, TDP is resolved in one protomer with no attached glucuronic acid. The other active site has partial citrate occupancy and unresolved mixed density. The source of TDP is uncertain; a minor substrate-stock contaminant was suggested but not detected by HPLC-MS. This structure does not establish TDP-sugar catalysis, nucleotide preference, or an unambiguous bound UDP-GlcA catalytic intermediate.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893<br>https://www.rcsb.org/structure/8SK0</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 12 edges</span></h2>
+<p class="sub">Figure 7A reports six EvdS6 alanine variants relative to wild type, at 30 min with 1 mM UDP-GlcA, 1 mM NAD+ and 50 mM HEPES pH 8.5. Relative turnover is based on HPLC-MS extracted-ion peak areas, not kinetic constants; six measurements comprise three biological replicates with two technical replicates each. Residue numbering matches native parent QLD23489.2. No mutant-specific accession is assigned here; these constructs are not equated to the native sequence. The R278A and R279A construct identities need review because of a Table S1 primer-label discrepancy; their edges preserve reported results.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Reported EvdS6 H87A construct</td>
+  <td>reported_decreased</td>
+  <td>UDP-4-keto-D-xylose formation at 30 min</td>
+  <td>The paper reports decreased formation of both products, with no reported alteration of their ratio. This does not establish a direct chemical role for H87; structural explanations remain hypotheses.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893</td>
+</tr>
+<tr>
+  <td>Reported EvdS6 H87A construct</td>
+  <td>reported_decreased</td>
+  <td>UDP-D-xylose formation at 30 min</td>
+  <td>The paper reports decreased formation of both products, with no reported alteration of their ratio. This does not establish a direct chemical role for H87; structural explanations remain hypotheses.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893</td>
+</tr>
+<tr>
+  <td>Reported EvdS6 T126A construct</td>
+  <td>reported_no_significant_change_in</td>
+  <td>UDP-4-keto-D-xylose formation at 30 min</td>
+  <td>The reduced product is minimally detectable while the keto-product readout is not significantly different from wild type. This supports a role in reduction without proving a specific hydride-transfer mechanism. The Table S1 primer pair matches T126A when its orientation is accounted for.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893</td>
+</tr>
+<tr>
+  <td>Reported EvdS6 T126A construct</td>
+  <td>reported_minimal</td>
+  <td>UDP-D-xylose formation at 30 min</td>
+  <td>The reduced product is minimally detectable while the keto-product readout is not significantly different from wild type. This supports a role in reduction without proving a specific hydride-transfer mechanism. The Table S1 primer pair matches T126A when its orientation is accounted for.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893</td>
+</tr>
+<tr>
+  <td>Reported EvdS6 E128A construct</td>
+  <td>reported_no_significant_change_in</td>
+  <td>UDP-4-keto-D-xylose formation at 30 min</td>
+  <td>Neither product readout differs significantly from wild type in this assay. This is not proof that E128 lacks a catalytic contribution, nor evidence for the proposed compensatory role of D127.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893</td>
+</tr>
+<tr>
+  <td>Reported EvdS6 E128A construct</td>
+  <td>reported_no_significant_change_in</td>
+  <td>UDP-D-xylose formation at 30 min</td>
+  <td>Neither product readout differs significantly from wild type in this assay. This is not proof that E128 lacks a catalytic contribution, nor evidence for the proposed compensatory role of D127.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893</td>
+</tr>
+<tr>
+  <td>Reported EvdS6 N179A construct</td>
+  <td>reported_decreased</td>
+  <td>UDP-4-keto-D-xylose formation at 30 min</td>
+  <td>Keto-product formation decreases and reduced-product formation is minimal. N179 is asparagine, as shown in the sequence, results and Figure 7, despite the abstract&#39;s reference to aspartate.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893</td>
+</tr>
+<tr>
+  <td>Reported EvdS6 N179A construct</td>
+  <td>reported_minimal</td>
+  <td>UDP-D-xylose formation at 30 min</td>
+  <td>Keto-product formation decreases and reduced-product formation is minimal. N179 is asparagine, as shown in the sequence, results and Figure 7, despite the abstract&#39;s reference to aspartate.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893</td>
+</tr>
+<tr>
+  <td>Reported EvdS6 R278A construct</td>
+  <td>reported_no_significant_change_in</td>
+  <td>UDP-4-keto-D-xylose formation at 30 min</td>
+  <td>Figure 7 assigns this result to R278A. However, the Table S1 pair labelled R278A introduces R279A, not R278A, when aligned in the correct orientation to CP058322.1/QLD23489.2. Exact construct identity is unresolved; this edge records the authors&#39; result label, not an independently sequence-verified R278A perturbation.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893<br>https://ars.els-cdn.com/content/image/1-s2.0-S002192582301921X-mmc1.docx</td>
+</tr>
+<tr>
+  <td>Reported EvdS6 R278A construct</td>
+  <td>reported_decreased</td>
+  <td>UDP-D-xylose formation at 30 min</td>
+  <td>Figure 7 assigns this result to R278A. However, the Table S1 pair labelled R278A introduces R279A, not R278A, when aligned in the correct orientation to CP058322.1/QLD23489.2. Exact construct identity is unresolved; this edge records the authors&#39; result label, not an independently sequence-verified R278A perturbation.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893<br>https://ars.els-cdn.com/content/image/1-s2.0-S002192582301921X-mmc1.docx</td>
+</tr>
+<tr>
+  <td>Reported EvdS6 R279A construct</td>
+  <td>reported_no_significant_change_in</td>
+  <td>UDP-4-keto-D-xylose formation at 30 min</td>
+  <td>Figure 7 assigns this result to R279A. Table S1 has no separately labelled R279A primer pair; the pair labelled R278A encodes R279A against QLD23489.2. The study reports sequencing mutant plasmids, but does not deposit those sequences here. Identity remains review-needed; a changed loop-release mechanism is proposed, not directly measured.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893<br>https://ars.els-cdn.com/content/image/1-s2.0-S002192582301921X-mmc1.docx</td>
+</tr>
+<tr>
+  <td>Reported EvdS6 R279A construct</td>
+  <td>reported_decreased</td>
+  <td>UDP-D-xylose formation at 30 min</td>
+  <td>Figure 7 assigns this result to R279A. Table S1 has no separately labelled R279A primer pair; the pair labelled R278A encodes R279A against QLD23489.2. The study reports sequencing mutant plasmids, but does not deposit those sequences here. Identity remains review-needed; a changed loop-release mechanism is proposed, not directly measured.</td>
+  <td class="mono">DOI:10.1016/j.jbc.2023.104893<br>https://ars.els-cdn.com/content/image/1-s2.0-S002192582301921X-mmc1.docx</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
