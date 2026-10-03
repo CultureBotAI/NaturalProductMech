@@ -387,6 +387,122 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 5 edges</span></h2>
+<p class="sub">AviB1 genetic evidence in aviG4-defective GW4. Gavibamycin A1/A3 and the GW4-ITB1 product are distinct from wild-type avilamycin A.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>aviB1 NcoI-fill-in frameshift in GW4-ITB1</td>
+  <td>inactivates_encoding_gene_of</td>
+  <td>Native AviB1 parent</td>
+  <td>NcoI fill-in frameshift, not whole-gene deletion; confirmed by PCR/restriction and Southern analysis. Q93KV5 matches thesis AAK83190 and AF333038.2:35950..36954 (334 aa). The printed S3B primer does not map exactly and is not exact sequence evidence.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005<br>https://www.uniprot.org/uniprotkb/Q93KV5/entry<br>https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk<br>https://freidok.uni-freiburg.de/data/1551</td>
+</tr>
+<tr>
+  <td>aviB1 NcoI-fill-in frameshift in GW4-ITB1</td>
+  <td>abolishes_detectable</td>
+  <td>Detectable gavibamycin A1/A3 production</td>
+  <td>Mutant NMR spectra showed only nonacetylated congeners, not parental A1/A3. This is not loss of all natural-product production.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005</td>
+</tr>
+<tr>
+  <td>aviB1 NcoI-fill-in frameshift in GW4-ITB1</td>
+  <td>causes_accumulation_of</td>
+  <td>Nonacetylated GW4-ITB1 congener accumulation</td>
+  <td>Negative-ion HPLC-ESI-MS: m/z 1345 versus A1/A3 1387/1389. NMR: ring-H C4 branch loss (whole-molecule C56), retaining GW4 orsellinic demethylation; distinct from ITO2 product and avilamycin A. Reference extracts also contained minor nonacetylated congeners.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005<br>https://freidok.uni-freiburg.de/data/1551</td>
+</tr>
+<tr>
+  <td>B1pKC genomic-fragment complementation</td>
+  <td>supplies_wild_type_encoding_gene_for</td>
+  <td>Native AviB1 parent</td>
+  <td>B1pKC/B1pKCerm supplies an H4S112 fragment behind ermE in pKC1218. H4S112 includes partial aviB2 DNA: not a verified isolated-CDS construct. PvuI/PvuII source wording differs; precise rescue endpoints and AviB1-alone sufficiency are not asserted.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005<br>https://freidok.uni-freiburg.de/data/1551</td>
+</tr>
+<tr>
+  <td>B1pKC genomic-fragment complementation</td>
+  <td>restores_detectable</td>
+  <td>Detectable gavibamycin A1/A3 production</td>
+  <td>HPLC-ESI-MS confirmed restored A1/A3 in GW4-ITB1, not wild-type avilamycin A. Genetic rescue is not purified-protein turnover.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 5 edges</span></h2>
+<p class="sub">AviO2 genetics in Tue57-derived ITO2. The experimental protein remains ungrounded because an exact public protein accession has not been verified.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>aviO2 NdeI-fill-in frameshift in ITO2</td>
+  <td>inactivates_encoding_gene_of</td>
+  <td>Native experimental AviO2 parent</td>
+  <td>NdeI fill-in frameshift in Tue57, not GW4 or whole-gene deletion. PCR/restriction/sequencing, not Southern, confirmed ITO2. Candidate AF333038.2 complement(40047..40823) encodes 258 aa, matching thesis length and flanking primers. ELS56119.1 (244 aa) lacks 14 N-terminal residues and differs at its initial residue and C145W. Locus mapping is inferred; no exact protein accession is verified.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005<br>https://freidok.uni-freiburg.de/data/1551<br>https://www.ncbi.nlm.nih.gov/nuccore/AF333038.2<br>https://www.ncbi.nlm.nih.gov/protein/ELS56119.1</td>
+</tr>
+<tr>
+  <td>aviO2 NdeI-fill-in frameshift in ITO2</td>
+  <td>abolishes_detectable</td>
+  <td>Detectable avilamycin A/C production</td>
+  <td>Mutant NMR spectra showed only nonacetylated products, not parental A/C. Avilamycin-family metabolite production persisted.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005</td>
+</tr>
+<tr>
+  <td>aviO2 NdeI-fill-in frameshift in ITO2</td>
+  <td>causes_accumulation_of</td>
+  <td>Nonacetylated ITO2 congener accumulation</td>
+  <td>Negative-ion HPLC-ESI-MS: m/z 1359 versus A/C 1401/1403. NMR: ring-H C4 branch loss (whole-molecule C56), retaining orsellinic methylation unlike GW4-ITB1. Reference extracts also contained minor nonacetylated congeners. This is not an enzyme-turnover assay.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005<br>https://freidok.uni-freiburg.de/data/1551</td>
+</tr>
+<tr>
+  <td>O2pSET complementation</td>
+  <td>supplies_wild_type_encoding_gene_for</td>
+  <td>Native experimental AviO2 parent</td>
+  <td>Genomic aviO2 behind ermE in O2pSET (pSET152 derivative). Cloning primers flank the candidate ORF; introduced changes are outside it. The amplicon includes flanking DNA, not a verified isolated-CDS or GST construct.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005<br>https://freidok.uni-freiburg.de/data/1551</td>
+</tr>
+<tr>
+  <td>O2pSET complementation</td>
+  <td>restores_detectable</td>
+  <td>Detectable avilamycin A/C production</td>
+  <td>HPLC-ESI-MS confirmed restored A/C in ITO2. Rescue does not identify AviO2&#39;s individual catalytic reaction.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 4 edges</span></h2>
+<p class="sub">Proposed AviB1/AviB2 assembly and two-carbon branch chemistry. Every edge is an inference, not a demonstrated assembly or turnover assay.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native AviB1 parent</td>
+  <td>is_proposed_subunit_of</td>
+  <td>Proposed AviB1/AviB2 alpha2beta2 complex</td>
+  <td>Alpha assignment and alpha2beta2 stoichiometry are sequence inferences, not observed assembly or a complete PDH complex.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005<br>https://www.uniprot.org/uniprotkb/Q93KV5/entry</td>
+</tr>
+<tr>
+  <td>Native AviB2 parent</td>
+  <td>is_proposed_subunit_of</td>
+  <td>Proposed AviB1/AviB2 alpha2beta2 complex</td>
+  <td>Beta assignment is inferred. Q93KV4 matches AAK83191.1 and AF333038.2:36954..37916 (320 aa). No aviB2 disruption, measured stoichiometry, physical interaction or turnover in this study.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005<br>https://www.uniprot.org/uniprotkb/Q93KV4/entry<br>https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk</td>
+</tr>
+<tr>
+  <td>Proposed AviB1/AviB2 alpha2beta2 complex</td>
+  <td>is_proposed_to_catalyze</td>
+  <td>Proposed ThDP-dependent pyruvate activation</td>
+  <td>Genetics/homology motivate ThDP-dependent pyruvate activation to a bound two-carbon nucleophile. No measured intermediate, cofactor requirement, CO2 release or reconstituted reaction. Thesis expression experiments are not activity assays.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005<br>https://freidok.uni-freiburg.de/data/1551</td>
+</tr>
+<tr>
+  <td>Native experimental AviO2 parent</td>
+  <td>is_proposed_to_participate_in</td>
+  <td>Unresolved role in ring-H two-carbon branch formation</td>
+  <td>Unresolved alternatives: branch attachment or C4-OH oxidation before AviB1/AviB2-mediated condensation. No demonstrated ITO2-product-to-avilamycin A conversion, metal dependence, reaction order or ring-closure assignment.</td>
+  <td class="mono">DOI:10.1128/AEM.71.1.400-406.2005<br>https://freidok.uni-freiburg.de/data/1551</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

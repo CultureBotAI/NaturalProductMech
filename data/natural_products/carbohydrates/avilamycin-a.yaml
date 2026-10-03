@@ -973,6 +973,297 @@ causal_graphs:
       notes: Deposited 342-aa polymer, UDP ligands and two author/PQS-assigned dimeric
         biological assemblies; 2.30 A diffraction model.
       retrieved_on: '2026-10-03'
+- graph_id: avilamycin-a-avib1-engineered-background-genetics
+  scope: BIOSYNTHESIS
+  description: AviB1 genetic evidence in aviG4-defective GW4. Gavibamycin A1/A3 and
+    the GW4-ITB1 product are distinct from wild-type avilamycin A.
+  nodes:
+  - node_id: avib1
+    label: Native AviB1 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93KV5
+  - node_id: itb1
+    label: aviB1 NcoI-fill-in frameshift in GW4-ITB1
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: production
+    label: Detectable gavibamycin A1/A3 production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: congener
+    label: Nonacetylated GW4-ITB1 congener accumulation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: B1pKC genomic-fragment complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: itb1
+    predicate: inactivates_encoding_gene_of
+    object: avib1
+    notes: NcoI fill-in frameshift, not whole-gene deletion; confirmed by PCR/restriction
+      and Southern analysis. Q93KV5 matches thesis AAK83190 and AF333038.2:35950..36954
+      (334 aa). The printed S3B primer does not map exactly and is not exact sequence
+      evidence.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene replacement, complementation, and culture-extract results.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KV5/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviB1/STVIR_2881; 334 aa; AAK83190.1; Tue57, taxon 1160705.
+      retrieved_on: '2026-10-03'
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk
+      evidence_type: DATABASE_ASSERTION
+      notes: Named CDS translations match independently translated AF333038.2.
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/1551
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 2.8.1, 2.9.4 and 3.2.2.1-3.2.2.3; printed pages 40, 43, 71-74;
+        Figures 10-13.
+  - subject: itb1
+    predicate: abolishes_detectable
+    object: production
+    notes: Mutant NMR spectra showed only nonacetylated congeners, not parental A1/A3.
+      This is not loss of all natural-product production.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: NMR results and characterization of mutant products; Figure 4.
+  - subject: itb1
+    predicate: causes_accumulation_of
+    object: congener
+    notes: 'Negative-ion HPLC-ESI-MS: m/z 1345 versus A1/A3 1387/1389. NMR: ring-H
+      C4 branch loss (whole-molecule C56), retaining GW4 orsellinic demethylation;
+      distinct from ITO2 product and avilamycin A. Reference extracts also contained
+      minor nonacetylated congeners.'
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Metabolite results, Figure 4, and Discussion.
+    - reference: https://freidok.uni-freiburg.de/data/1551
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.2.4-3.2.2.6; printed pages 74-79, Figures 14-18. Raw ions
+        retained; inconsistent 42-Da prose is not adopted.
+  - subject: rescue
+    predicate: supplies_wild_type_encoding_gene_for
+    object: avib1
+    notes: 'B1pKC/B1pKCerm supplies an H4S112 fragment behind ermE in pKC1218. H4S112
+      includes partial aviB2 DNA: not a verified isolated-CDS construct. PvuI/PvuII
+      source wording differs; precise rescue endpoints and AviB1-alone sufficiency
+      are not asserted.'
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene replacement, complementation, and culture-extract results.
+    - reference: https://freidok.uni-freiburg.de/data/1551
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 2.10.4, printed page 44; H4S112b map, Figure 43 on printed page
+        120.
+  - subject: rescue
+    predicate: restores_detectable
+    object: production
+    notes: HPLC-ESI-MS confirmed restored A1/A3 in GW4-ITB1, not wild-type avilamycin
+      A. Genetic rescue is not purified-protein turnover.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene replacement, complementation, and culture-extract results.
+- graph_id: avilamycin-a-avio2-native-background-genetics
+  scope: BIOSYNTHESIS
+  description: AviO2 genetics in Tue57-derived ITO2. The experimental protein remains
+    ungrounded because an exact public protein accession has not been verified.
+  nodes:
+  - node_id: avio2
+    label: Native experimental AviO2 parent
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: ito2
+    label: aviO2 NdeI-fill-in frameshift in ITO2
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: production
+    label: Detectable avilamycin A/C production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: congener
+    label: Nonacetylated ITO2 congener accumulation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: O2pSET complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: ito2
+    predicate: inactivates_encoding_gene_of
+    object: avio2
+    notes: NdeI fill-in frameshift in Tue57, not GW4 or whole-gene deletion. PCR/restriction/sequencing,
+      not Southern, confirmed ITO2. Candidate AF333038.2 complement(40047..40823)
+      encodes 258 aa, matching thesis length and flanking primers. ELS56119.1 (244
+      aa) lacks 14 N-terminal residues and differs at its initial residue and C145W.
+      Locus mapping is inferred; no exact protein accession is verified.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene replacement, complementation, and culture-extract results.
+    - reference: https://freidok.uni-freiburg.de/data/1551
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 2.8.3, 2.13, 3.2.4.1-3.2.4.2 and 3.3.1; printed pages 40-41,
+        51, 84-85 and 90. Table 1 of the paper mislabels ITO2 as aviO3; its methods
+        and results identify aviO2.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF333038.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Candidate reverse ORF independently translated with code 11; cloning
+        primers flank it. The annotated CDS list ends at 39999.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ELS56119.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 244-aa STVIR_2877 sequence compared and rejected as exact grounding.
+      retrieved_on: '2026-10-03'
+  - subject: ito2
+    predicate: abolishes_detectable
+    object: production
+    notes: Mutant NMR spectra showed only nonacetylated products, not parental A/C.
+      Avilamycin-family metabolite production persisted.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: NMR results, Figure 3, and Discussion.
+      snippet: only nonacetylated avilamycin derivatives
+  - subject: ito2
+    predicate: causes_accumulation_of
+    object: congener
+    notes: 'Negative-ion HPLC-ESI-MS: m/z 1359 versus A/C 1401/1403. NMR: ring-H C4
+      branch loss (whole-molecule C56), retaining orsellinic methylation unlike GW4-ITB1.
+      Reference extracts also contained minor nonacetylated congeners. This is not
+      an enzyme-turnover assay.'
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Metabolite results, Figure 3, and Discussion.
+    - reference: https://freidok.uni-freiburg.de/data/1551
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.2.4.3-3.2.4.4; printed pages 86-89, Figures 24-26. Raw ions
+        retained; inconsistent mass-difference prose omitted.
+  - subject: rescue
+    predicate: supplies_wild_type_encoding_gene_for
+    object: avio2
+    notes: Genomic aviO2 behind ermE in O2pSET (pSET152 derivative). Cloning primers
+      flank the candidate ORF; introduced changes are outside it. The amplicon includes
+      flanking DNA, not a verified isolated-CDS or GST construct.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene replacement, complementation, and culture-extract results.
+    - reference: https://freidok.uni-freiburg.de/data/1551
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 2.10.2 and primer table; printed pages 43-44 and 51.
+  - subject: rescue
+    predicate: restores_detectable
+    object: production
+    notes: HPLC-ESI-MS confirmed restored A/C in ITO2. Rescue does not identify AviO2's
+      individual catalytic reaction.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene replacement, complementation, and culture-extract results.
+- graph_id: avilamycin-a-avib1-avib2-avio2-proposed-branch-model
+  scope: BIOSYNTHESIS
+  description: Proposed AviB1/AviB2 assembly and two-carbon branch chemistry. Every
+    edge is an inference, not a demonstrated assembly or turnover assay.
+  nodes:
+  - node_id: avib1
+    label: Native AviB1 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93KV5
+  - node_id: avib2
+    label: Native AviB2 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93KV4
+  - node_id: avio2
+    label: Native experimental AviO2 parent
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: complex
+    label: Proposed AviB1/AviB2 alpha2beta2 complex
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: activation
+    label: Proposed ThDP-dependent pyruvate activation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: branch
+    label: Unresolved role in ring-H two-carbon branch formation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: avib1
+    predicate: is_proposed_subunit_of
+    object: complex
+    notes: Alpha assignment and alpha2beta2 stoichiometry are sequence inferences,
+      not observed assembly or a complete PDH complex.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Discussion and Figure 5: sequence/genetic inference, not biochemical
+        turnover.'
+    - reference: https://www.uniprot.org/uniprotkb/Q93KV5/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviB1/STVIR_2881; 334 aa; AAK83190.1; Tue57, taxon 1160705.
+      retrieved_on: '2026-10-03'
+  - subject: avib2
+    predicate: is_proposed_subunit_of
+    object: complex
+    notes: Beta assignment is inferred. Q93KV4 matches AAK83191.1 and AF333038.2:36954..37916
+      (320 aa). No aviB2 disruption, measured stoichiometry, physical interaction
+      or turnover in this study.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Discussion and Figure 5: sequence/genetic inference, not biochemical
+        turnover.'
+    - reference: https://www.uniprot.org/uniprotkb/Q93KV4/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviB2/STVIR_2880; 320 aa; AAK83191.1; Tue57, taxon 1160705.
+      retrieved_on: '2026-10-03'
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk
+      evidence_type: DATABASE_ASSERTION
+      notes: Named CDS translations match independently translated AF333038.2.
+      retrieved_on: '2026-10-03'
+  - subject: complex
+    predicate: is_proposed_to_catalyze
+    object: activation
+    notes: Genetics/homology motivate ThDP-dependent pyruvate activation to a bound
+      two-carbon nucleophile. No measured intermediate, cofactor requirement, CO2
+      release or reconstituted reaction. Thesis expression experiments are not activity
+      assays.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Discussion and Figure 5: sequence/genetic inference, not biochemical
+        turnover.'
+    - reference: https://freidok.uni-freiburg.de/data/1551
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion 4.2.2, printed pages 111-113; Figure 38.
+      snippet: weitere biochemische Experimente notwendig
+  - subject: avio2
+    predicate: is_proposed_to_participate_in
+    object: branch
+    notes: 'Unresolved alternatives: branch attachment or C4-OH oxidation before AviB1/AviB2-mediated
+      condensation. No demonstrated ITO2-product-to-avilamycin A conversion, metal
+      dependence, reaction order or ring-closure assignment.'
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Discussion and Figure 5: sequence/genetic inference, not biochemical
+        turnover.'
+    - reference: https://freidok.uni-freiburg.de/data/1551
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion 4.2.3, printed pages 113-115.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -1032,4 +1323,14 @@ curation_history:
     AviGT4 multigene-fragment rescue, inferred metabolite/transfer claims and limits
     of assembly assignments explicit. Preserved existing graphs, source-owned fields,
     old history and SEEDED status.'
+  llm_assisted: true
+- timestamp: '2026-10-03T22:15:06Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added three BIOSYNTHESIS graphs: AviB1 (Q93KV5) GW4 genetics, ungrounded
+    AviO2 Tue57 genetics, and inferred AviB1/AviB2 (Q93KV4) assembly/branch chemistry.
+    All 14 edges cite the primary DOI; thesis and sequence URLs support qualifications,
+    with two short snippets. Rejected ELS56119.1 as exact AviO2. Kept congener, frameshift,
+    rescue fragment and inference limits explicit. Preserved ten old graphs, source-owned
+    fields, history and SEEDED status.'
   llm_assisted: true
