@@ -726,6 +726,253 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       notes: aviX12, AAK83189.1; 396 aa; taxon 1160705.
       retrieved_on: '2026-10-03'
+- graph_id: avilamycin-a-avie2-udp-xylose-assay
+  scope: BIOSYNTHESIS
+  description: Purified recombinant AviE2 converts UDP-glucuronic acid to UDP-D-xylose,
+    a proposed precursor of avilamycin's L-lyxose. This assay does not demonstrate
+    the subsequent epimerizations or full avilamycin A synthesis.
+  nodes:
+  - node_id: avie2_parent
+    label: Native AviE2 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93KW2
+  - node_id: his_avie2
+    label: Assayed N-terminal His6-AviE2 preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: udp_glca
+    label: UDP-alpha-D-glucuronic acid
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:17200
+  - node_id: udp_xylose
+    label: UDP-alpha-D-xylose
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:16082
+  edges:
+  - subject: his_avie2
+    predicate: is_recombinant_preparation_of
+    object: avie2_parent
+    notes: Ni-NTA-purified E. coli N-terminal His6 preparation. The native 337-aa
+      parent matches AAK83183.1 and AF333038.2:27779..28792. Thesis Table 51 agrees
+      at residues 2-337 but prints V1 instead of the accession's M1; the native CDS
+      begins GTG. The accession identifies the parent, not a verified complete fusion
+      sequence.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/1891
+      evidence_type: CURATOR_INFERENCE
+      notes: Hofmann dissertation, printed pages 72 and 119 (Table 51); parent mapping
+        from sequence comparison.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KW2/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviE2/STVIR_2890; 337 aa; AAK83183.1; Tue57, taxon 1160705. The legacy
+        dehydratase annotation is not the experimental function evidence.
+      retrieved_on: '2026-10-03'
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk
+      evidence_type: DATABASE_ASSERTION
+      notes: Pinned cluster CDS sequences independently translated with code 11.
+      retrieved_on: '2026-10-03'
+  - subject: udp_glca
+    predicate: is_decarboxylated_by
+    object: his_avie2
+    notes: The 60-minute room-temperature assay included NAD+. Vector-only Ni-NTA
+      and no-protein controls lacked the product peak. Substitution with NADP+ or
+      UDP-glucose gave no detected conversion under the reported conditions. Conflicting
+      protein-concentration units in the thesis are not adopted. ChEBI denotes the
+      acid-normalized substrate, not a measured solution protonation state.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/1891
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 2.13.3-2.13.6 and 3.1.8.2; printed pages 41-43 and 71-73; Figure
+        12.
+      snippet: nur im Assay mit intaktem Enzym
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:17200
+      evidence_type: DATABASE_ASSERTION
+      notes: UDP-alpha-D-glucuronic acid identity.
+      retrieved_on: '2026-10-03'
+  - subject: his_avie2
+    predicate: forms_in_vitro
+    object: udp_xylose
+    notes: HPLC/negative-ion MS showed a 44-Da mass difference; NMR and coupling analysis
+      assigned UDP-alpha-D-xylose, not UDP-L-lyxose. The node uses the acid-normalized
+      chemical identity. No direct AviE2-to-avilamycin A conversion or measured CO2
+      release is asserted.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/1891
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.1.8.2-3.1.8.3; printed pages 72-74; Figure 13 and NMR assignment.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:16082
+      evidence_type: DATABASE_ASSERTION
+      notes: UDP-alpha-D-xylose identity, neutral mass approximately 536 Da.
+      retrieved_on: '2026-10-03'
+- graph_id: avilamycin-a-avigt4-engineered-background-genetics
+  scope: BIOSYNTHESIS
+  description: AviGT4 evidence in the aviG4-defective GW4 background, not wild-type
+    avilamycin A production. Gavibamycins A1 and P1 are distinct congeners.
+  nodes:
+  - node_id: avigt4
+    label: Native AviGT4 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93KV2
+  - node_id: gt4_frameshift
+    label: aviGT4 NotI-fill-in frameshift in GW4
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: a1_production
+    label: Detectable gavibamycin A1 production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: p1_accumulation
+    label: Gavibamycin P1 accumulation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: pSET-aviGT4 genomic-fragment complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: transfer
+    label: Proposed eurekanate-precursor transfer to L-lyxose
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gt4_frameshift
+    predicate: inactivates_encoding_gene_of
+    object: avigt4
+    notes: NotI fill-in frameshift confirmed through double-crossover PCR and restriction
+      analysis, not a whole-gene deletion despite the source's delta notation. Q93KV2
+      exactly matches AAK83193.1 and AF333038.2:38971..39999. The thesis used Tue57
+      genomic DNA; the screening primers map inside this CDS.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Duerr dissertation, sections 3.6, 5.9.1 and 5.12.2; printed pages 67-72,
+        109 and 112-113; Figures 43-46.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KV2/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviGT4; 342 aa; AAK83193.1; Tue57, taxon 1160705.
+      retrieved_on: '2026-10-03'
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk
+      evidence_type: DATABASE_ASSERTION
+      notes: Pinned cluster CDS sequences independently translated with code 11.
+      retrieved_on: '2026-10-03'
+  - subject: gt4_frameshift
+    predicate: abolishes_detectable
+    object: a1_production
+    notes: HPLC/ESI-MS of GW4 mutant culture extracts lacked the parental gavibamycin
+      A1 signal. This is a genetic production phenotype, not a purified-protein assay.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Duerr dissertation, sections 3.6, 5.9.1 and 5.12.2; printed pages 67-72,
+        109 and 112-113; Figures 43-46.
+  - subject: gt4_frameshift
+    predicate: causes_accumulation_of
+    object: p1_accumulation
+    notes: P1 gave m/z 1189 [M-H]- versus 1387 for A1. Comparative APCI-MS fragments
+      support proposed loss of the terminal eurekanate unit; this thesis does not
+      establish P1's complete structure by NMR. Neither metabolite is avilamycin A.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.6.2, printed pages 69-71; Table 8, Figures 44-45 and appendix
+        Figure A1 (printed page 157).
+  - subject: rescue
+    predicate: supplies_wild_type_encoding_gene_for
+    object: avigt4
+    notes: The pSET complementation insert contains aviGT4 plus flanking aviGT3/aviO2-region
+      DNA, not an isolated single-gene construct. The source describes a 2.8-kb amplicon
+      behind ermE*; its cloning primer changes are outside the aviGT4 CDS.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid table, printed page 94; sections 5.11.1 and 5.12.2.1, printed
+        pages 111-112.
+    - reference: https://www.uniprot.org/uniprotkb/Q93KV2/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviGT4; 342 aa; AAK83193.1; Tue57, taxon 1160705.
+      retrieved_on: '2026-10-03'
+  - subject: rescue
+    predicate: restores_detectable
+    object: a1_production
+    notes: Complemented GW4 mutant extracts recovered the m/z 1387 A1 signal. This
+      is not restoration of wild-type avilamycin A or evidence that AviGT4 alone is
+      sufficient for turnover.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.6.3, printed pages 71-72; Figure 46.
+      snippet: Produktion von Gavibamycin A1 wiederhergestellt
+  - subject: avigt4
+    predicate: is_proposed_to_catalyze
+    object: transfer
+    notes: Genetic/metabolite evidence plus glycosyltransferase homology supports
+      the assignment. The exact sugar donor and AviGT4's ability to form the second
+      orthoester linkage were unresolved; no direct P1-to-avilamycin A conversion
+      is demonstrated.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion section 4.5, printed pages 87-88; Figure 56.
+- graph_id: avilamycin-a-avigt4-deposited-structure
+  scope: BIOSYNTHESIS
+  description: AviGT4 UDP binding and deposited assembly, distinct from catalytic
+    evidence.
+  nodes:
+  - node_id: avigt4
+    label: Deposited AviGT4 polymer (2IV3)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93KV2
+  - node_id: udp
+    label: Observed bound UDP
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: dimer
+    label: Author/PQS-assigned AviGT4 dimer
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: avigt4
+    predicate: contains_observed_bound
+    object: udp
+    notes: The 2.30 A 2IV3 model contains UDP, glycerol and water, not a modeled donor
+      sugar or avilamycin acceptor. Its 342-aa polymer equals Q93KV2 and native AAK83193.1
+      exactly. DSMZ identifies the deposited producer DSM 40721 as Tue57. Sequence
+      agreement does not verify expression-tag processing in the inaccessible paper.
+    evidence:
+    - reference: https://www.rcsb.org/structure/2IV3
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited 342-aa polymer, UDP ligands and two author/PQS-assigned dimeric
+        biological assemblies; 2.30 A diffraction model.
+      retrieved_on: '2026-10-03'
+    - reference: https://www.uniprot.org/uniprotkb/Q93KV2/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: aviGT4; 342 aa; AAK83193.1; Tue57, taxon 1160705.
+      retrieved_on: '2026-10-03'
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000026.5/BGC0000026.gbk
+      evidence_type: DATABASE_ASSERTION
+      notes: Pinned cluster CDS sequences independently translated with code 11.
+      retrieved_on: '2026-10-03'
+    - reference: https://bacdive.dsmz.de/strain/16111
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Culture collection cross-reference: DSM 40721 and Tue57.'
+      retrieved_on: '2026-10-03'
+  - subject: avigt4
+    predicate: is_subunit_of_deposited_assembly
+    object: dimer
+    notes: 2IV3 has four protein chains in its asymmetric unit and two author/PQS-assigned
+      biological dimers (A/B and C/D), not a tetrameric functional complex. This database
+      assembly assignment does not by itself demonstrate native solution oligomerization
+      or a catalytically required dimer.
+    evidence:
+    - reference: https://www.rcsb.org/structure/2IV3
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited 342-aa polymer, UDP ligands and two author/PQS-assigned dimeric
+        biological assemblies; 2.30 A diffraction model.
+      retrieved_on: '2026-10-03'
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -773,4 +1020,16 @@ curation_history:
     gavibamycins from avilamycin A, inactive substituted metal from native catalysis,
     and native accessions from tagged constructs. Preserved the three methyltransferase
     graphs, all source-owned fields and SEEDED status.'
+  llm_assisted: true
+- timestamp: '2026-10-03T21:36:00Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added three BIOSYNTHESIS graphs for AviE2 (native parent Q93KW2) and AviGT4
+    (Q93KV2): UDP-xylose formation by recombinant AviE2, AviGT4 GW4-background frameshift/complementation
+    and proposed sugar transfer, and 2IV3 UDP binding/deposited dimer assignment.
+    All 11 new edges have stable primary-source or deposition URLs; two short verbatim
+    snippets are included. Kept AviE2 construct sequence and concentration caveats,
+    AviGT4 multigene-fragment rescue, inferred metabolite/transfer claims and limits
+    of assembly assignments explicit. Preserved existing graphs, source-owned fields,
+    old history and SEEDED status.'
   llm_assisted: true
