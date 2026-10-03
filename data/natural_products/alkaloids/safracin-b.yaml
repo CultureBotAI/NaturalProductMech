@@ -60,6 +60,200 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q5JCL5
+  enzyme_label: SacF/SfcF C-methyltransferase
+  reaction_id: RHEA:41428
+  substrates:
+  - CHEBI:17895
+  - CHEBI:59789
+  products:
+  - CHEBI:79076
+  - CHEBI:57856
+  notes: MITE records SacF from BGC0000421 as the SAM-dependent C-methyltransferase
+    that methylates L-tyrosine to 3-methyl-L-tyrosine, an intermediate toward the
+    3-hydroxy-5-methyl-O-methyltyrosine residues of safracin B.
+  evidence:
+  - reference: DOI:10.1111/j.1365-2958.2004.04433.x
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Cross-feeding experiments have confirmed that 3-hydroxy-5-methyl-O-methyltyrosine
+      is the precursor of two amino acids of the molecule.
+    notes: Velasco et al. cloned and sequenced the Pseudomonas fluorescens A2-2 safracin
+      cluster; MITE cites this paper for the SacF C-methylation entry with in vitro
+      and knockout evidence.
+  - reference: https://mite.bioinformatics.nl/repository/MITE0000031
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-02'
+    notes: MITE0000031 is active and links SacF to UniProtKB:Q5JCL5, GenPept AAL33761.1,
+      MIBiG BGC0000421, the Velasco et al. DOI, and the L-tyrosine to 3-methyl-L-tyrosine
+      methylation reaction.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000421.5/BGC0000421.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-02'
+    notes: MIBiG BGC0000421.5 places the Pseudomonas fluorescens A2-2 sfcF CDS at
+      14780..15847 with GenPept protein_id AAL33761.1 and a MITE0000031 100% identity
+      gene-function annotation.
+  - reference: https://www.uniprot.org/uniprotkb/Q5JCL5
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-02'
+    notes: UniProtKB:Q5JCL5 resolves to the 355 aa Pseudomonas fluorescens sfcF putative
+      methyltransferase from EMBL AY061859 / GenPept AAL33761.1 and cites DOI:10.1111/j.1365-2958.2004.04433.x.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAL33761.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-02'
+    notes: NCBI Protein AAL33761.1 is the Pseudomonas fluorescens A2-2 sfcF putative
+      methyltransferase translated from AY061859.1:14780..15847.
+  - reference: https://www.rhea-db.org/rhea/41428
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-02'
+    notes: RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding
+      3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).
+causal_graphs:
+- graph_id: safracin-b-sacf-c-methylation
+  scope: BIOSYNTHESIS
+  description: Pseudomonas fluorescens A2-2 SacF/SfcF C-methylates L-tyrosine with
+    S-adenosyl-L-methionine to form 3-methyl-L-tyrosine during safracin B precursor
+    biosynthesis.
+  nodes:
+  - node_id: l_tyrosine
+    label: L-tyrosine
+    node_type: PRECURSOR
+    identifier: CHEBI:17895
+    grounding_status: GROUNDED
+  - node_id: s_adenosyl_l_methionine
+    label: S-adenosyl-L-methionine
+    node_type: PRECURSOR
+    identifier: CHEBI:59789
+    grounding_status: GROUNDED
+  - node_id: sacf
+    label: SacF/SfcF
+    node_type: ENZYME
+    identifier: UniProtKB:Q5JCL5
+    grounding_status: GROUNDED
+  - node_id: three_methyl_l_tyrosine
+    label: 3-methyl-L-tyrosine
+    node_type: PRECURSOR
+    identifier: CHEBI:79076
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_tyrosine
+    predicate: is C-methylated by
+    object: sacf
+    evidence:
+    - reference: DOI:10.1111/j.1365-2958.2004.04433.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Cross-feeding experiments have confirmed that 3-hydroxy-5-methyl-O-methyltyrosine
+        is the precursor of two amino acids of the molecule.
+      notes: Velasco et al. cloned and sequenced the Pseudomonas fluorescens A2-2
+        safracin cluster; MITE cites this paper for the SacF C-methylation entry with
+        in vitro and knockout evidence.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000031
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000031 is active and links SacF to UniProtKB:Q5JCL5, GenPept AAL33761.1,
+        MIBiG BGC0000421, the Velasco et al. DOI, and the L-tyrosine to 3-methyl-L-tyrosine
+        methylation reaction.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000421.5/BGC0000421.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000421.5 places the Pseudomonas fluorescens A2-2 sfcF CDS at
+        14780..15847 with GenPept protein_id AAL33761.1 and a MITE0000031 100% identity
+        gene-function annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q5JCL5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q5JCL5 resolves to the 355 aa Pseudomonas fluorescens sfcF
+        putative methyltransferase from EMBL AY061859 / GenPept AAL33761.1 and cites
+        DOI:10.1111/j.1365-2958.2004.04433.x.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAL33761.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAL33761.1 is the Pseudomonas fluorescens A2-2 sfcF putative
+        methyltransferase translated from AY061859.1:14780..15847.
+    - reference: https://www.rhea-db.org/rhea/41428
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding
+        3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).
+  - subject: s_adenosyl_l_methionine
+    predicate: is used by
+    object: sacf
+    evidence:
+    - reference: DOI:10.1111/j.1365-2958.2004.04433.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Cross-feeding experiments have confirmed that 3-hydroxy-5-methyl-O-methyltyrosine
+        is the precursor of two amino acids of the molecule.
+      notes: Velasco et al. cloned and sequenced the Pseudomonas fluorescens A2-2
+        safracin cluster; MITE cites this paper for the SacF C-methylation entry with
+        in vitro and knockout evidence.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000031
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000031 is active and links SacF to UniProtKB:Q5JCL5, GenPept AAL33761.1,
+        MIBiG BGC0000421, the Velasco et al. DOI, and the L-tyrosine to 3-methyl-L-tyrosine
+        methylation reaction.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000421.5/BGC0000421.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000421.5 places the Pseudomonas fluorescens A2-2 sfcF CDS at
+        14780..15847 with GenPept protein_id AAL33761.1 and a MITE0000031 100% identity
+        gene-function annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q5JCL5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q5JCL5 resolves to the 355 aa Pseudomonas fluorescens sfcF
+        putative methyltransferase from EMBL AY061859 / GenPept AAL33761.1 and cites
+        DOI:10.1111/j.1365-2958.2004.04433.x.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAL33761.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAL33761.1 is the Pseudomonas fluorescens A2-2 sfcF putative
+        methyltransferase translated from AY061859.1:14780..15847.
+    - reference: https://www.rhea-db.org/rhea/41428
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding
+        3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).
+  - subject: sacf
+    predicate: forms
+    object: three_methyl_l_tyrosine
+    evidence:
+    - reference: DOI:10.1111/j.1365-2958.2004.04433.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Cross-feeding experiments have confirmed that 3-hydroxy-5-methyl-O-methyltyrosine
+        is the precursor of two amino acids of the molecule.
+      notes: Velasco et al. cloned and sequenced the Pseudomonas fluorescens A2-2
+        safracin cluster; MITE cites this paper for the SacF C-methylation entry with
+        in vitro and knockout evidence.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000031
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000031 is active and links SacF to UniProtKB:Q5JCL5, GenPept AAL33761.1,
+        MIBiG BGC0000421, the Velasco et al. DOI, and the L-tyrosine to 3-methyl-L-tyrosine
+        methylation reaction.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000421.5/BGC0000421.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000421.5 places the Pseudomonas fluorescens A2-2 sfcF CDS at
+        14780..15847 with GenPept protein_id AAL33761.1 and a MITE0000031 100% identity
+        gene-function annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q5JCL5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: UniProtKB:Q5JCL5 resolves to the 355 aa Pseudomonas fluorescens sfcF
+        putative methyltransferase from EMBL AY061859 / GenPept AAL33761.1 and cites
+        DOI:10.1111/j.1365-2958.2004.04433.x.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAL33761.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein AAL33761.1 is the Pseudomonas fluorescens A2-2 sfcF putative
+        methyltransferase translated from AY061859.1:14780..15847.
+    - reference: https://www.rhea-db.org/rhea/41428
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: RHEA:41428 represents L-tyrosine plus S-adenosyl-L-methionine yielding
+        3-methyl-L-tyrosine, S-adenosyl-L-homocysteine and H(+).
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -69,3 +263,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-03T04:10:38Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the RHEA:41428 SacF/SfcF C-methyltransferase step and BIOSYNTHESIS
+    causal graph that ground BGC0000421 protein AAL33761.1 to UniProtKB:Q5JCL5 using
+    MITE0000031, MIBiG BGC0000421.5, UniProt, NCBI Protein, Rhea and Velasco et al.
+    evidence.
+  llm_assisted: true
