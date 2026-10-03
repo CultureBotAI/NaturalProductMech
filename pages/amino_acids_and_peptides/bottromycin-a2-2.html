@@ -130,8 +130,15 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td class="mono">ungrounded &rarr; ungrounded</td>
   <td class="mono">DOI:10.1002/cbic.201600406</td>
 </tr>
+<tr>
+  <td>7</td>
+  <td>BotH<br><span class="mono">UniProtKB:K4MHV9</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1038/s41589-020-0569-y</td>
+</tr>
 </table></div>
-<p class="sub">Entry 1: BC16019 botOMT/AFV25479.1 is curated as an exact aspartate methyl ester formation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 2: BC16019 botRMT1/AFV25480.1 is curated as an exact radical-SAM C-methylation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 3: BC16019 botRMT2/AFV25484.1 is curated as an exact radical-SAM C-methylation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 4: BC16019 botRMT3/AFV25488.1 is curated as an exact radical-SAM C-methylation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 5: BC16019 BotCYP/AFV25487.2 is curated as the exact cytochrome P450 that oxidatively decarboxylates the terminal thiazoline of a bottromycin precursor. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 6: BC16019 BotP/AFV25490.1 is curated as the exact peptidase that removes the N-terminal methionine from a bottromycin precursor peptide, exposing an N-terminal glycine. The exact modified precursor substrate and product are not represented in the record.</p>
+<p class="sub">Entry 1: BC16019 botOMT/AFV25479.1 is curated as an exact aspartate methyl ester formation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 2: BC16019 botRMT1/AFV25480.1 is curated as an exact radical-SAM C-methylation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 3: BC16019 botRMT2/AFV25484.1 is curated as an exact radical-SAM C-methylation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 4: BC16019 botRMT3/AFV25488.1 is curated as an exact radical-SAM C-methylation contributor to bottromycin A2 maturation. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 5: BC16019 BotCYP/AFV25487.2 is curated as the exact cytochrome P450 that oxidatively decarboxylates the terminal thiazoline of a bottromycin precursor. The exact free substrate/product pair for this RiPP tailoring reaction is not represented in the record.</p><p class="sub">Entry 6: BC16019 BotP/AFV25490.1 is curated as the exact peptidase that removes the N-terminal methionine from a bottromycin precursor peptide, exposing an N-terminal glycine. The exact modified precursor substrate and product are not represented in the record.</p><p class="sub">Entry 7: BC16019 BotH/AFV25485.1 epimerizes L-Asp7 to D-Asp7 in a post-follower-cleavage bottromycin precursor; that exact substrate/product pair is not represented.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
 <p class="sub">Partial Streptomyces sp. BC16019 Bot RiPP graph for the precursor peptide, the three radical-SAM C-methyltransferases, and BotOMT that contribute methylations to bottromycin A2 maturation.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
@@ -244,6 +251,40 @@ by the corpus tests.</p>
   <td>bottromycin A2</td>
   <td>This edge records BotP-catalyzed precursor processing as one bottromycin maturation reaction upstream of the final Streptomyces sp. BC16019 bottromycin A2 scaffold.</td>
   <td class="mono">DOI:10.1002/cbic.201600406<br>https://mite.bioinformatics.nl/repository/MITE0000048<br>https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html<br>https://www.ncbi.nlm.nih.gov/protein/AFV25490.1<br>https://www.uniprot.org/uniprotkb/K4MHW2</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Partial Streptomyces sp. BC16019 Bot RiPP graph for BotH Asp7 epimerization in a bottromycin precursor.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>L-Asp7 bottromycin precursor</td>
+  <td>is substrate for</td>
+  <td>Asp7 epimerization</td>
+  <td>MITE represents the BotH substrate as the post-follower-cleavage L-Asp7 bottromycin precursor; that intermediate remains ungrounded.</td>
+  <td class="mono">DOI:10.1038/s41589-020-0569-y<br>https://mite.bioinformatics.nl/repository/MITE0000051<br>https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html<br>https://www.ncbi.nlm.nih.gov/protein/AFV25485.1<br>https://www.uniprot.org/uniprotkb/K4MHV9<br>https://www.rcsb.org/structure/6T6X</td>
+</tr>
+<tr>
+  <td>BotH epimerase</td>
+  <td>catalyzes</td>
+  <td>Asp7 epimerization</td>
+  <td>BotH is grounded to BC16019 GenPept AFV25485.1, UniProtKB:K4MHV9, MIBiG BGC0000469.6, and BotH PDB structures.</td>
+  <td class="mono">DOI:10.1038/s41589-020-0569-y<br>https://mite.bioinformatics.nl/repository/MITE0000051<br>https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html<br>https://www.ncbi.nlm.nih.gov/protein/AFV25485.1<br>https://www.uniprot.org/uniprotkb/K4MHV9<br>https://www.rcsb.org/structure/6T6X</td>
+</tr>
+<tr>
+  <td>Asp7 epimerization</td>
+  <td>produces</td>
+  <td>D-Asp7 bottromycin precursor</td>
+  <td>BotH epimerizes Asp7 in the bottromycin precursor from L to D.</td>
+  <td class="mono">DOI:10.1038/s41589-020-0569-y<br>https://mite.bioinformatics.nl/repository/MITE0000051<br>https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html<br>https://www.ncbi.nlm.nih.gov/protein/AFV25485.1<br>https://www.uniprot.org/uniprotkb/K4MHV9<br>https://www.rcsb.org/structure/6T6X</td>
+</tr>
+<tr>
+  <td>Asp7 epimerization</td>
+  <td>contributes to</td>
+  <td>bottromycin A2</td>
+  <td>BotH-catalyzed Asp7 epimerization is one bottromycin A2 maturation reaction in the BC16019 pathway.</td>
+  <td class="mono">DOI:10.1038/s41589-020-0569-y<br>https://mite.bioinformatics.nl/repository/MITE0000051<br>https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html<br>https://www.ncbi.nlm.nih.gov/protein/AFV25485.1<br>https://www.uniprot.org/uniprotkb/K4MHV9<br>https://www.rcsb.org/structure/6T6X</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused

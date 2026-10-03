@@ -356,6 +356,47 @@ biosynthetic_pathway:
     notes: UniProtKB:K4MHW2 is the 504 aa Streptomyces sp. BC16019 botP entry cross-referenced
       to EMBL JX235926 with ProteinId AFV25490.1; its sequence matches NCBI Protein
       AFV25490.1 and the BotP translation in MIBiG BGC0000469.6.
+- enzyme_id: UniProtKB:K4MHV9
+  enzyme_label: BotH
+  proposed: false
+  notes: BC16019 BotH/AFV25485.1 epimerizes L-Asp7 to D-Asp7 in a post-follower-cleavage
+    bottromycin precursor; that exact substrate/product pair is not represented.
+  evidence:
+  - reference: DOI:10.1038/s41589-020-0569-y
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: epimerization of L-Asp to D-Asp
+    notes: Sikandar et al. identified BC16019 BotH as the alpha/beta-hydrolase-fold
+      epimerase that converts L-Asp to D-Asp in bottromycin biosynthesis and reported
+      BotH-substrate structures.
+  - reference: https://mite.bioinformatics.nl/repository/MITE0000051
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    snippet: epimerization of L-Asp7 to D-Asp7 of modified bottromycin precursor peptide
+    notes: MITE MITE0000051 maps BotH to UniProtKB:K4MHV9, GenPept AFV25485.1, and
+      MIBiG BGC0000469 and curates L-Asp7/D-Asp7 precursor epimerization.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    snippet: 'MITE0000051: Epimerization'
+    notes: MIBiG BGC0000469.6 places botH/AFV25485.1 in the BC16019 bottromycin A2
+      locus and annotates MITE0000051 at 100% identity.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25485.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    snippet: BotH [Streptomyces sp. BC16019]
+    notes: AFV25485.1 is the 293 aa BC16019 botH coding sequence from GenBank JX235926.1
+      at 26119..27000.
+  - reference: https://www.uniprot.org/uniprotkb/K4MHV9
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: UniProtKB:K4MHV9 is BC16019 BotH and cross-references EMBL JX235926/AFV25485.1;
+      its sequence matches AFV25485.1 and MIBiG BGC0000469.6.
+  - reference: https://www.rcsb.org/structure/6T6X
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    snippet: Structure of the Bottromycin epimerase BotH in complex with substrate
+    notes: RCSB PDB 6T6X is a 1.25 A BotH-substrate X-ray structure and maps the BotH
+      polymer to UniProtKB:K4MHV9.
 causal_graphs:
 - graph_id: bottromycin-a2-bot-methylation-biosynthesis
   scope: BIOSYNTHESIS
@@ -954,6 +995,200 @@ causal_graphs:
       notes: UniProtKB:K4MHW2 is the 504 aa Streptomyces sp. BC16019 botP entry cross-referenced
         to EMBL JX235926 with ProteinId AFV25490.1; its sequence matches NCBI Protein
         AFV25490.1 and the BotP translation in MIBiG BGC0000469.6.
+- graph_id: bottromycin-a2-bot-h-asp7-epimerization
+  scope: BIOSYNTHESIS
+  description: Partial Streptomyces sp. BC16019 Bot RiPP graph for BotH Asp7 epimerization
+    in a bottromycin precursor.
+  nodes:
+  - node_id: l_asp7_precursor
+    label: L-Asp7 bottromycin precursor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: bot_h
+    label: BotH epimerase
+    node_type: ENZYME
+    identifier: UniProtKB:K4MHV9
+    grounding_status: GROUNDED
+  - node_id: asp7_epimerization
+    label: Asp7 epimerization
+    node_type: PROCESS
+  - node_id: d_asp7_precursor
+    label: D-Asp7 bottromycin precursor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: bottromycin_a2
+    label: bottromycin A2
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-d717cc8774
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_asp7_precursor
+    predicate: is substrate for
+    object: asp7_epimerization
+    notes: MITE represents the BotH substrate as the post-follower-cleavage L-Asp7
+      bottromycin precursor; that intermediate remains ungrounded.
+    evidence:
+    - reference: DOI:10.1038/s41589-020-0569-y
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: epimerization of L-Asp to D-Asp
+      notes: Sikandar et al. identified BC16019 BotH as the alpha/beta-hydrolase-fold
+        epimerase that converts L-Asp to D-Asp in bottromycin biosynthesis and reported
+        BotH-substrate structures.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000051
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: epimerization of L-Asp7 to D-Asp7 of modified bottromycin precursor
+        peptide
+      notes: MITE MITE0000051 maps BotH to UniProtKB:K4MHV9, GenPept AFV25485.1, and
+        MIBiG BGC0000469 and curates L-Asp7/D-Asp7 precursor epimerization.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'MITE0000051: Epimerization'
+      notes: MIBiG BGC0000469.6 places botH/AFV25485.1 in the BC16019 bottromycin
+        A2 locus and annotates MITE0000051 at 100% identity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25485.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: BotH [Streptomyces sp. BC16019]
+      notes: AFV25485.1 is the 293 aa BC16019 botH coding sequence from GenBank JX235926.1
+        at 26119..27000.
+    - reference: https://www.uniprot.org/uniprotkb/K4MHV9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: UniProtKB:K4MHV9 is BC16019 BotH and cross-references EMBL JX235926/AFV25485.1;
+        its sequence matches AFV25485.1 and MIBiG BGC0000469.6.
+    - reference: https://www.rcsb.org/structure/6T6X
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: Structure of the Bottromycin epimerase BotH in complex with substrate
+      notes: RCSB PDB 6T6X is a 1.25 A BotH-substrate X-ray structure and maps the
+        BotH polymer to UniProtKB:K4MHV9.
+  - subject: bot_h
+    predicate: catalyzes
+    object: asp7_epimerization
+    notes: BotH is grounded to BC16019 GenPept AFV25485.1, UniProtKB:K4MHV9, MIBiG
+      BGC0000469.6, and BotH PDB structures.
+    evidence:
+    - reference: DOI:10.1038/s41589-020-0569-y
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: epimerization of L-Asp to D-Asp
+      notes: Sikandar et al. identified BC16019 BotH as the alpha/beta-hydrolase-fold
+        epimerase that converts L-Asp to D-Asp in bottromycin biosynthesis and reported
+        BotH-substrate structures.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000051
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: epimerization of L-Asp7 to D-Asp7 of modified bottromycin precursor
+        peptide
+      notes: MITE MITE0000051 maps BotH to UniProtKB:K4MHV9, GenPept AFV25485.1, and
+        MIBiG BGC0000469 and curates L-Asp7/D-Asp7 precursor epimerization.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'MITE0000051: Epimerization'
+      notes: MIBiG BGC0000469.6 places botH/AFV25485.1 in the BC16019 bottromycin
+        A2 locus and annotates MITE0000051 at 100% identity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25485.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: BotH [Streptomyces sp. BC16019]
+      notes: AFV25485.1 is the 293 aa BC16019 botH coding sequence from GenBank JX235926.1
+        at 26119..27000.
+    - reference: https://www.uniprot.org/uniprotkb/K4MHV9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: UniProtKB:K4MHV9 is BC16019 BotH and cross-references EMBL JX235926/AFV25485.1;
+        its sequence matches AFV25485.1 and MIBiG BGC0000469.6.
+    - reference: https://www.rcsb.org/structure/6T6X
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: Structure of the Bottromycin epimerase BotH in complex with substrate
+      notes: RCSB PDB 6T6X is a 1.25 A BotH-substrate X-ray structure and maps the
+        BotH polymer to UniProtKB:K4MHV9.
+  - subject: asp7_epimerization
+    predicate: produces
+    object: d_asp7_precursor
+    notes: BotH epimerizes Asp7 in the bottromycin precursor from L to D.
+    evidence:
+    - reference: DOI:10.1038/s41589-020-0569-y
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: epimerization of L-Asp to D-Asp
+      notes: Sikandar et al. identified BC16019 BotH as the alpha/beta-hydrolase-fold
+        epimerase that converts L-Asp to D-Asp in bottromycin biosynthesis and reported
+        BotH-substrate structures.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000051
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: epimerization of L-Asp7 to D-Asp7 of modified bottromycin precursor
+        peptide
+      notes: MITE MITE0000051 maps BotH to UniProtKB:K4MHV9, GenPept AFV25485.1, and
+        MIBiG BGC0000469 and curates L-Asp7/D-Asp7 precursor epimerization.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'MITE0000051: Epimerization'
+      notes: MIBiG BGC0000469.6 places botH/AFV25485.1 in the BC16019 bottromycin
+        A2 locus and annotates MITE0000051 at 100% identity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25485.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: BotH [Streptomyces sp. BC16019]
+      notes: AFV25485.1 is the 293 aa BC16019 botH coding sequence from GenBank JX235926.1
+        at 26119..27000.
+    - reference: https://www.uniprot.org/uniprotkb/K4MHV9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: UniProtKB:K4MHV9 is BC16019 BotH and cross-references EMBL JX235926/AFV25485.1;
+        its sequence matches AFV25485.1 and MIBiG BGC0000469.6.
+    - reference: https://www.rcsb.org/structure/6T6X
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: Structure of the Bottromycin epimerase BotH in complex with substrate
+      notes: RCSB PDB 6T6X is a 1.25 A BotH-substrate X-ray structure and maps the
+        BotH polymer to UniProtKB:K4MHV9.
+  - subject: asp7_epimerization
+    predicate: contributes to
+    object: bottromycin_a2
+    notes: BotH-catalyzed Asp7 epimerization is one bottromycin A2 maturation reaction
+      in the BC16019 pathway.
+    evidence:
+    - reference: DOI:10.1038/s41589-020-0569-y
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: epimerization of L-Asp to D-Asp
+      notes: Sikandar et al. identified BC16019 BotH as the alpha/beta-hydrolase-fold
+        epimerase that converts L-Asp to D-Asp in bottromycin biosynthesis and reported
+        BotH-substrate structures.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000051
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: epimerization of L-Asp7 to D-Asp7 of modified bottromycin precursor
+        peptide
+      notes: MITE MITE0000051 maps BotH to UniProtKB:K4MHV9, GenPept AFV25485.1, and
+        MIBiG BGC0000469 and curates L-Asp7/D-Asp7 precursor epimerization.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000469.6/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: 'MITE0000051: Epimerization'
+      notes: MIBiG BGC0000469.6 places botH/AFV25485.1 in the BC16019 bottromycin
+        A2 locus and annotates MITE0000051 at 100% identity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFV25485.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: BotH [Streptomyces sp. BC16019]
+      notes: AFV25485.1 is the 293 aa BC16019 botH coding sequence from GenBank JX235926.1
+        at 26119..27000.
+    - reference: https://www.uniprot.org/uniprotkb/K4MHV9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: UniProtKB:K4MHV9 is BC16019 BotH and cross-references EMBL JX235926/AFV25485.1;
+        its sequence matches AFV25485.1 and MIBiG BGC0000469.6.
+    - reference: https://www.rcsb.org/structure/6T6X
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      snippet: Structure of the Bottromycin epimerase BotH in complex with substrate
+      notes: RCSB PDB 6T6X is a 1.25 A BotH-substrate X-ray structure and maps the
+        BotH polymer to UniProtKB:K4MHV9.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -981,4 +1216,10 @@ curation_history:
   action: ADDED_BOTP_BIOSYNTHESIS_GRAPH
   changes: Added exact Streptomyces sp. BC16019 BotP/UniProtKB:K4MHW2 grounding and
     a BotP N-terminal methionine-cleavage biosynthesis graph for bottromycin A2.
+  llm_assisted: true
+- timestamp: '2026-10-03T10:32:36Z'
+  curator: codex
+  action: ADDED_BOTH_BIOSYNTHESIS_GRAPH
+  changes: Added exact Streptomyces sp. BC16019 BotH/UniProtKB:K4MHV9 grounding and
+    a BotH Asp7-epimerization biosynthesis graph for bottromycin A2.
   llm_assisted: true
