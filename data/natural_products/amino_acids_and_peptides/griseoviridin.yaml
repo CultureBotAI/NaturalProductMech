@@ -85,6 +85,158 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:R9USI6
+  enzyme_label: SgvP griseoviridin C-S bond-forming cytochrome P450
+  notes: SgvP catalyzes heterocyclization of the thiol-containing linear griseoviridin-pathway
+    intermediate to install the griseoviridin C-S bond. The MITE substrate and product
+    are left out of the pathway step because no stable CURIEs identify those exact
+    intermediate structures.
+  evidence:
+  - reference: DOI:10.1002/cbic.201400062
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: we inactivated the sgvP gene.
+    notes: Xie et al. deleted sgvP from the Streptomyces griseoviridis griseoviridin/viridogrisein
+      cluster, observed griseoviridin-pathway products lacking the C-S bridge, and
+      partially restored griseoviridin production by complementing sgvP in trans.
+  - reference: https://mite.bioinformatics.nl/repository/MITE0000043
+    evidence_type: DATABASE_ASSERTION
+    snippet: Heterocyclization
+    retrieved_on: '2026-10-03'
+    notes: MITE0000043 is active and links SgvP heterocyclization to UniProtKB:R9USI6,
+      GenPept AGN74891.1, MIBiG BGC0000459, heme, Fe, and Xie et al. 2014 as the experimental
+      griseoviridin C-S-bond reference.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000459.5/BGC0000459.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: 'MITE0000043: Heterocyclization (100% identity)'
+    retrieved_on: '2026-10-03'
+    notes: MIBiG BGC0000459.5 places the Streptomyces griseoviridis SgvP CDS at JX508597.1:62773..63963
+      on the reverse strand with GenPept protein_id AGN74891.1 and a 100% identity
+      MITE0000043 annotation.
+  - reference: https://www.uniprot.org/uniprotkb/R9USI6
+    evidence_type: DATABASE_ASSERTION
+    snippet: AC   R9USI6;
+    retrieved_on: '2026-10-03'
+    notes: Current UniProtKB:R9USI6 resolves to a 396 aa Streptomyces griseoviridis
+      P450-like monooxygenase sequence that cross-references EMBL JX508597 / AGN74891.1
+      and is sequence-identical to GenPept AGN74891.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AGN74891.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: /note="SgvP"
+    retrieved_on: '2026-10-03'
+    notes: NCBI Protein AGN74891.1 is the 396 aa Streptomyces griseoviridis NRRL 2427
+      SgvP P450-like monooxygenase translated from JX508597.1:62773..63963.
+causal_graphs:
+- graph_id: griseoviridin-sgvp-c-s-bond-formation
+  scope: BIOSYNTHESIS
+  description: Streptomyces griseoviridis SgvP heterocyclizes the thiol-containing
+    griseoviridin-pathway intermediate to form the C-S-bridged griseoviridin scaffold.
+  nodes:
+  - node_id: thiol_griseoviridin_precursor
+    label: thiol-containing griseoviridin precursor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: heme_b
+    label: heme b
+    node_type: COMPOUND
+    identifier: CHEBI:60344
+    grounding_status: GROUNDED
+  - node_id: sgvp
+    label: SgvP cytochrome P450
+    node_type: ENZYME
+    identifier: UniProtKB:R9USI6
+    grounding_status: GROUNDED
+  - node_id: griseoviridin
+    label: griseoviridin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-8b2fab44e2
+    grounding_status: GROUNDED
+  edges:
+  - subject: thiol_griseoviridin_precursor
+    predicate: is heterocyclized by
+    object: sgvp
+    notes: The exact MITE substrate is left ungrounded because it has no stable identifier
+      in the committed corpus; the MITE reaction shows SgvP heterocyclization installing
+      the C-S bond in the griseoviridin scaffold.
+    evidence:
+    - reference: DOI:10.1002/cbic.201400062
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: we inactivated the sgvP gene.
+      notes: Xie et al. deleted sgvP from the Streptomyces griseoviridis griseoviridin/viridogrisein
+        cluster, observed griseoviridin-pathway products lacking the C-S bridge, and
+        partially restored griseoviridin production by complementing sgvP in trans.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000043
+      evidence_type: DATABASE_ASSERTION
+      snippet: Heterocyclization
+      retrieved_on: '2026-10-03'
+      notes: MITE0000043 is active and links SgvP heterocyclization to UniProtKB:R9USI6,
+        GenPept AGN74891.1, MIBiG BGC0000459, heme, Fe, and Xie et al. 2014 as the
+        experimental griseoviridin C-S-bond reference.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000459.5/BGC0000459.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000043: Heterocyclization (100% identity)'
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000459.5 places the Streptomyces griseoviridis SgvP CDS at
+        JX508597.1:62773..63963 on the reverse strand with GenPept protein_id AGN74891.1
+        and a 100% identity MITE0000043 annotation.
+    - reference: https://www.uniprot.org/uniprotkb/R9USI6
+      evidence_type: DATABASE_ASSERTION
+      snippet: AC   R9USI6;
+      retrieved_on: '2026-10-03'
+      notes: Current UniProtKB:R9USI6 resolves to a 396 aa Streptomyces griseoviridis
+        P450-like monooxygenase sequence that cross-references EMBL JX508597 / AGN74891.1
+        and is sequence-identical to GenPept AGN74891.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGN74891.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /note="SgvP"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein AGN74891.1 is the 396 aa Streptomyces griseoviridis NRRL
+        2427 SgvP P450-like monooxygenase translated from JX508597.1:62773..63963.
+  - subject: heme_b
+    predicate: is organic cofactor for
+    object: sgvp
+    notes: MITE lists heme as SgvP's organic cofactor and Fe as its inorganic cofactor.
+    evidence:
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000043
+      evidence_type: DATABASE_ASSERTION
+      snippet: Heterocyclization
+      retrieved_on: '2026-10-03'
+      notes: MITE0000043 is active and links SgvP heterocyclization to UniProtKB:R9USI6,
+        GenPept AGN74891.1, MIBiG BGC0000459, heme, Fe, and Xie et al. 2014 as the
+        experimental griseoviridin C-S-bond reference.
+    - reference: https://www.uniprot.org/uniprotkb/R9USI6
+      evidence_type: DATABASE_ASSERTION
+      snippet: AC   R9USI6;
+      retrieved_on: '2026-10-03'
+      notes: Current UniProtKB:R9USI6 resolves to a 396 aa Streptomyces griseoviridis
+        P450-like monooxygenase sequence that cross-references EMBL JX508597 / AGN74891.1
+        and is sequence-identical to GenPept AGN74891.1.
+    - reference: CHEBI:60344
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: ChEBI:60344 is the ChEBI entry for heme b, the organic cofactor MITE
+        lists for SgvP.
+  - subject: sgvp
+    predicate: forms the C-S bridge in
+    object: griseoviridin
+    notes: The sgvP deletion accumulated GV-1 and GV-2 products lacking the C-S bridge,
+      so SgvP is required for griseoviridin C-S-bond formation rather than for the
+      other BGC0000459 compound represented in this corpus.
+    evidence:
+    - reference: DOI:10.1002/cbic.201400062
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: we inactivated the sgvP gene.
+      notes: Xie et al. deleted sgvP from the Streptomyces griseoviridis griseoviridin/viridogrisein
+        cluster, observed griseoviridin-pathway products lacking the C-S bridge, and
+        partially restored griseoviridin production by complementing sgvP in trans.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000043
+      evidence_type: DATABASE_ASSERTION
+      snippet: Heterocyclization
+      retrieved_on: '2026-10-03'
+      notes: MITE0000043 is active and links SgvP heterocyclization to UniProtKB:R9USI6,
+        GenPept AGN74891.1, MIBiG BGC0000459, heme, Fe, and Xie et al. 2014 as the
+        experimental griseoviridin C-S-bond reference.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -94,3 +246,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-03T07:20:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added an SgvP-catalyzed griseoviridin C-S-bond heterocyclization biosynthetic_pathway
+    step and BIOSYNTHESIS graph; grounded SgvP to UniProtKB:R9USI6 via GenPept AGN74891.1
+    and MIBiG BGC0000459; grounded heme b to CHEBI:60344; and left the exact thiol-containing
+    MITE substrate ungrounded.
+  llm_assisted: true
