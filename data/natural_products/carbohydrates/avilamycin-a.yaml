@@ -1197,7 +1197,7 @@ causal_graphs:
     node_type: PROCESS
     grounding_status: UNGROUNDED
   - node_id: branch
-    label: Unresolved role in ring-H two-carbon branch formation
+    label: Proposed ring-H two-carbon branch formation
     node_type: PROCESS
     grounding_status: UNGROUNDED
   edges:
@@ -1264,6 +1264,19 @@ causal_graphs:
     - reference: https://freidok.uni-freiburg.de/data/1551
       evidence_type: CURATOR_INFERENCE
       notes: Discussion 4.2.3, printed pages 113-115.
+  - subject: activation
+    predicate: is_proposed_to_supply_two_carbon_unit_for
+    object: branch
+    notes: The model links pyruvate activation to branch formation through a ThDP-bound
+      two-carbon unit. This is not measured flux or turnover and does not distinguish
+      AviO2-mediated condensation from prior sugar oxidation.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.1.400-406.2005
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion and Figure 5.
+    - reference: https://freidok.uni-freiburg.de/data/1551
+      evidence_type: CURATOR_INFERENCE
+      notes: Printed pages 111-115; Figure 38.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -1333,4 +1346,12 @@ curation_history:
     with two short snippets. Rejected ELS56119.1 as exact AviO2. Kept congener, frameshift,
     rescue fragment and inference limits explicit. Preserved ten old graphs, source-owned
     fields, history and SEEDED status.'
+  llm_assisted: true
+- timestamp: '2026-10-03T22:25:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Connected the proposed AviB1/AviB2 activation process to branch formation
+    with a primary-source-cited CURATOR_INFERENCE edge, correcting the disconnected
+    model caught by QC. Kept both AviO2 alternatives and all existing evidence; renamed
+    the branch process for clarity.
   llm_assisted: true
