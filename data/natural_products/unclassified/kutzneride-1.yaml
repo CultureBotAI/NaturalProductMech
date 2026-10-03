@@ -144,6 +144,59 @@ biosynthetic_pathway:
     retrieved_on: '2026-10-02'
     notes: NCBI Protein ABV56597.1 is the 533 aa Kutzneria sp. 744 KtzQ protein encoded
       by ktzQ at EU074211.1:11603..13204.
+- step_number: 2
+  enzyme_id: UniProtKB:A8CF74
+  enzyme_label: KtzR 7-chloro-L-tryptophan 6-halogenase
+  reaction_id: RHEA:55904
+  substrate: CHEBI:58713
+  substrates:
+  - CHEBI:58713
+  - CHEBI:58307
+  - CHEBI:17996
+  - CHEBI:15379
+  product: CHEBI:139336
+  products:
+  - CHEBI:139336
+  - CHEBI:57692
+  - CHEBI:15377
+  notes: KtzR catalyzes the second tandem halogenase step in the kutzneride pathway,
+    installing the 6-chlorine on 7-chloro-L-tryptophan to form 6,7-dichloro-L-tryptophan.
+  evidence:
+  - reference: DOI:10.1021/ja806467a
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: KtzR, with a 120 fold preference for 7-chloro-L-tryptophan over L-tryptophan,
+      then installs the second chlorine at the 6-position
+    notes: Heemstra and Walsh identified KtzR as the second tandem tryptophan halogenase
+      in kutzneride biosynthesis, assayed the purified enzyme with KtzS, and showed
+      that the enzyme 6-chlorinates 7-chloro-L-tryptophan.
+  - reference: https://mite.bioinformatics.nl/repository/MITE0000030
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-02'
+    notes: MITE0000030 is active, assigns KtzR to the in vitro-supported C6 chlorination
+      of 7-Cl-L-tryptophan to 6,7-diCl-L-Trp, records RHEA:55904 and EC:1.14.19.60
+      for the reaction, and links KtzR to UniProtKB:A8CF74, GenPept ABV56598.1 and
+      MIBiG BGC0000378.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000378.5/BGC0000378.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: 'MITE0000030: Halogenation (100% identity)'
+    retrieved_on: '2026-10-02'
+    notes: MIBiG BGC0000378.5 places ktzR/ABV56598.1 inside the active Kutzneria sp.
+      744 kutzneride biosynthetic gene cluster as a Trp_halogenase locus with a MITE0000030
+      halogenation annotation.
+  - reference: https://www.uniprot.org/uniprotkb/A8CF74
+    evidence_type: DATABASE_ASSERTION
+    snippet: GN   Name=ktzR
+    retrieved_on: '2026-10-02'
+    notes: Current reviewed UniProtKB:A8CF74 resolves as the Kutzneria sp. strain
+      744 7-chloro-L-tryptophan 6-halogenase KtzR entry, cross-references EMBL EU074211
+      protein ABV56598.1, and annotates the RHEA:55904 / EC:1.14.19.60 7-chloro-L-tryptophan
+      6-halogenase catalytic activity.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ABV56598.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: KtzR [Kutzneria sp. 744]
+    retrieved_on: '2026-10-02'
+    notes: NCBI Protein ABV56598.1 is the Kutzneria sp. 744 KtzR protein encoded by
+      ktzR at EU074211.1:9791..11308.
 causal_graphs:
 - graph_id: kutzneride-ktzq-7-chlorination
   scope: BIOSYNTHESIS
@@ -249,6 +302,109 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein ABV56597.1 is the 533 aa Kutzneria sp. 744 KtzQ protein
         encoded by ktzQ at EU074211.1:11603..13204.
+- graph_id: kutzneride-ktzr-6-chlorination
+  scope: BIOSYNTHESIS
+  description: Kutzneria sp. 744 KtzR-catalyzed 6-chlorination of 7-chloro-L-tryptophan
+    in the early kutzneride dichlorotryptophan biosynthetic pathway.
+  nodes:
+  - node_id: 7_chloro_l_tryptophan
+    label: 7-chloro-L-tryptophan
+    node_type: PRECURSOR
+    identifier: CHEBI:47356
+    grounding_status: GROUNDED
+  - node_id: ktzr
+    label: KtzR 7-chloro-L-tryptophan 6-halogenase
+    node_type: ENZYME
+    identifier: UniProtKB:A8CF74
+    grounding_status: GROUNDED
+  - node_id: 6_7_dichloro_l_tryptophan
+    label: 6,7-dichloro-L-tryptophan
+    node_type: PRECURSOR
+    identifier: CHEBI:140086
+    grounding_status: GROUNDED
+  edges:
+  - subject: 7_chloro_l_tryptophan
+    predicate: is 6-chlorinated by
+    object: ktzr
+    notes: KtzR uses the KtzQ product 7-chloro-L-tryptophan as its preferred substrate
+      in the tandem KtzQ/KtzR halogenation sequence.
+    evidence:
+    - reference: DOI:10.1021/ja806467a
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: KtzR, with a 120 fold preference for 7-chloro-L-tryptophan over L-tryptophan,
+        then installs the second chlorine at the 6-position
+      notes: Heemstra and Walsh identified KtzR as the second tandem tryptophan halogenase
+        in kutzneride biosynthesis, assayed the purified enzyme with KtzS, and showed
+        that the enzyme 6-chlorinates 7-chloro-L-tryptophan.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000030
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000030 is active, assigns KtzR to the in vitro-supported C6 chlorination
+        of 7-Cl-L-tryptophan to 6,7-diCl-L-Trp, records RHEA:55904 and EC:1.14.19.60
+        for the reaction, and links KtzR to UniProtKB:A8CF74, GenPept ABV56598.1 and
+        MIBiG BGC0000378.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000378.5/BGC0000378.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000030: Halogenation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000378.5 places ktzR/ABV56598.1 inside the active Kutzneria
+        sp. 744 kutzneride biosynthetic gene cluster as a Trp_halogenase locus with
+        a MITE0000030 halogenation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/A8CF74
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=ktzR
+      retrieved_on: '2026-10-02'
+      notes: Current reviewed UniProtKB:A8CF74 resolves as the Kutzneria sp. strain
+        744 7-chloro-L-tryptophan 6-halogenase KtzR entry, cross-references EMBL EU074211
+        protein ABV56598.1, and annotates the RHEA:55904 / EC:1.14.19.60 7-chloro-L-tryptophan
+        6-halogenase catalytic activity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABV56598.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: KtzR [Kutzneria sp. 744]
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein ABV56598.1 is the Kutzneria sp. 744 KtzR protein encoded
+        by ktzR at EU074211.1:9791..11308.
+  - subject: ktzr
+    predicate: forms
+    object: 6_7_dichloro_l_tryptophan
+    notes: KtzR installs the second chlorine at the 6-position, forming the dichlorinated
+      tryptophan precursor for kutzneride assembly.
+    evidence:
+    - reference: DOI:10.1021/ja806467a
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: KtzR, with a 120 fold preference for 7-chloro-L-tryptophan over L-tryptophan,
+        then installs the second chlorine at the 6-position
+      notes: Heemstra and Walsh identified KtzR as the second tandem tryptophan halogenase
+        in kutzneride biosynthesis, assayed the purified enzyme with KtzS, and showed
+        that the enzyme 6-chlorinates 7-chloro-L-tryptophan.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000030
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-02'
+      notes: MITE0000030 is active, assigns KtzR to the in vitro-supported C6 chlorination
+        of 7-Cl-L-tryptophan to 6,7-diCl-L-Trp, records RHEA:55904 and EC:1.14.19.60
+        for the reaction, and links KtzR to UniProtKB:A8CF74, GenPept ABV56598.1 and
+        MIBiG BGC0000378.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000378.5/BGC0000378.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000030: Halogenation (100% identity)'
+      retrieved_on: '2026-10-02'
+      notes: MIBiG BGC0000378.5 places ktzR/ABV56598.1 inside the active Kutzneria
+        sp. 744 kutzneride biosynthetic gene cluster as a Trp_halogenase locus with
+        a MITE0000030 halogenation annotation.
+    - reference: https://www.uniprot.org/uniprotkb/A8CF74
+      evidence_type: DATABASE_ASSERTION
+      snippet: GN   Name=ktzR
+      retrieved_on: '2026-10-02'
+      notes: Current reviewed UniProtKB:A8CF74 resolves as the Kutzneria sp. strain
+        744 7-chloro-L-tryptophan 6-halogenase KtzR entry, cross-references EMBL EU074211
+        protein ABV56598.1, and annotates the RHEA:55904 / EC:1.14.19.60 7-chloro-L-tryptophan
+        6-halogenase catalytic activity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABV56598.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: KtzR [Kutzneria sp. 744]
+      retrieved_on: '2026-10-02'
+      notes: NCBI Protein ABV56598.1 is the Kutzneria sp. 744 KtzR protein encoded
+        by ktzR at EU074211.1:9791..11308.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -264,4 +420,12 @@ curation_history:
   changes: Added a RHEA:26494 / UniProtKB:A8CF75-grounded KtzQ biosynthetic_pathway
     step and a BIOSYNTHESIS causal graph for Kutzneria sp. 744 KtzQ 7-chlorination
     of L-tryptophan to 7-chloro-L-tryptophan in the kutzneride precursor pathway.
+  llm_assisted: true
+- timestamp: '2026-10-03T01:15:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a RHEA:55904 / UniProtKB:A8CF74-grounded KtzR biosynthetic_pathway
+    step and a BIOSYNTHESIS causal graph for Kutzneria sp. 744 KtzR 6-chlorination
+    of 7-chloro-L-tryptophan to 6,7-dichloro-L-tryptophan in the kutzneride precursor
+    pathway.
   llm_assisted: true
