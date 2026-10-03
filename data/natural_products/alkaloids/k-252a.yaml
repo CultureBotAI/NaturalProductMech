@@ -291,8 +291,8 @@ causal_graphs:
     - reference: DOI:10.1016/j.chembiol.2012.05.016
       evidence_type: PRIMARY_EXPERIMENT
       snippet: purifies without bound FAD
-      notes: 'Table 2: InkE ITC Kd = 59 +/- 48 uM, four experiments. The reported
-        uncertainty is retained without assigning an unstated error statistic.'
+      notes: 'Table 2: reported uncertainty retained without assigning an unstated
+        SD/SEM statistic.'
     - reference: https://ars.els-cdn.com/content/image/1-s2.0-S1074552112001809-mmc1.pdf
       evidence_type: PRIMARY_EXPERIMENT
       notes: 'Fig. S2C and caption: ITC at 25 C. SI pp. 18-19: pET28a InkE recombinant
@@ -303,10 +303,11 @@ causal_graphs:
         NokD ACN29721.1 (FJ031030.1). All three 525-aa sequences and SI Fig. S1 InkE
         agree exactly; the published InkE primer target regions also match.
       retrieved_on: '2026-10-03'
-    notes: Separate Ni-affinity-purified InkE preparation from Rosetta 2(DE3) pLysS,
-      not the untagged pCY20 extract. As-isolated apo protein was titrated with FAD
-      in 150 mM NaCl, 25 mM HEPES pH 7.5, 10% glycerol. Binding alone does not demonstrate
-      monooxygenation or product turnover.
+    notes: 'Table 2: InkE ITC Kd = 59 +/- 48 uM, four experiments. Separate Ni-affinity-purified
+      InkE preparation from Rosetta 2(DE3) pLysS, not the untagged pCY20 extract.
+      As-isolated apo protein was titrated with FAD in 150 mM NaCl, 25 mM HEPES pH
+      7.5, 10% glycerol. Binding alone does not demonstrate monooxygenation or product
+      turnover.'
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -332,4 +333,11 @@ curation_history:
     from catalytic proof and assay-dependent constructs. Every edge cites DOI:10.1039/b905293c
     or DOI:10.1016/j.chembiol.2012.05.016. Retained SEEDED; no complete pathway or
     sugar stereochemistry claim.
+  llm_assisted: true
+- timestamp: '2026-10-03T18:06:27Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Addressed adversarial review issue #502: moved the ITC Kd and experiment
+    count into visible edge notes so the generated page exposes the measurement. Preserved
+    DOI evidence, uncertainty, assay context and all other graph content.'
   llm_assisted: true

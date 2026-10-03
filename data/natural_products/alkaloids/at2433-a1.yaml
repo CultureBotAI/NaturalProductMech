@@ -113,8 +113,8 @@ causal_graphs:
     - reference: DOI:10.1016/j.chembiol.2012.05.016
       evidence_type: PRIMARY_EXPERIMENT
       snippet: purifies with bound FAD
-      notes: 'Table 2: AtmC ITC Kd = 73 +/- 28 nM, five experiments; the paper does
-        not identify the uncertainty statistic.'
+      notes: 'Table 2: reported uncertainty retained without assigning an unstated
+        SD/SEM statistic.'
     - reference: https://ars.els-cdn.com/content/image/1-s2.0-S1074552112001809-mmc1.pdf
       evidence_type: PRIMARY_EXPERIMENT
       notes: 'Fig. S2D and caption: ITC at 25 C. SI p. 19: Actinomadura melliaura
@@ -127,10 +127,11 @@ causal_graphs:
         sequence, retaining the native stop. This is the record's BGC0000809 locus,
         not an unrelated fungal atmC homolog.
       retrieved_on: '2026-10-03'
-    notes: Rosetta 2(DE3) pLysS expression, Ni-affinity purification and deflavination
-      with 2 M KBr/2 M urea preceded ITC in 150 mM NaCl, 25 mM HEPES pH 7.5, 10% glycerol.
-      Cofactor binding does not establish the substrate, elementary chemistry, or
-      AT2433-A1 formation.
+    notes: 'Table 2: AtmC ITC Kd = 73 +/- 28 nM, five experiments. Rosetta 2(DE3)
+      pLysS expression, Ni-affinity purification and deflavination with 2 M KBr/2
+      M urea preceded ITC in 150 mM NaCl, 25 mM HEPES pH 7.5, 10% glycerol. Cofactor
+      binding does not establish the substrate, elementary chemistry, or AT2433-A1
+      formation.'
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -148,4 +149,11 @@ curation_history:
     to the exact DQ297453.1 ABC02791.1 sequence and published alignment; documented
     recombinant construct, deflavination, assay conditions and limitations. Retained
     SEEDED; no product-turnover claim.
+  llm_assisted: true
+- timestamp: '2026-10-03T18:06:27Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Addressed adversarial review issue #502: moved the ITC Kd and experiment
+    count into visible edge notes so the generated page exposes the measurement. Preserved
+    DOI evidence, uncertainty, assay context and all other graph content.'
   llm_assisted: true
