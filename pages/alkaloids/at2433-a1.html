@@ -99,6 +99,102 @@ isolation report left it.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 10 edges</span></h2>
+<p class="sub">Sequential in-vitro assays of three AT2433-cluster sugar enzymes; partial aminopentose-precursor evidence shared by AT2433 congeners, including AT2433-A1. Neither a finished aminopentose donor nor AT2433-A1 was made in these assays.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>TDP-alpha-D-glucose (2-T)</td>
+  <td>is_substrate_for</td>
+  <td>AtmS8 glucose oxidation assay</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201500365</td>
+</tr>
+<tr>
+  <td>AtmS8 N-terminal His6 construct</td>
+  <td>catalyzes</td>
+  <td>AtmS8 glucose oxidation assay</td>
+  <td>Genomic PCR; pET28a, E. coli BL21(DE3), N-terminal His6. 10 uM AtmS8, 2 mM TDP-glucose and 6 mM NAD+ at 30 C; pyruvate/LDH NAD+ regeneration. NMR/HPLC reported about 97% conversion after 16 h; enzyme-omission controls showed no reaction.</td>
+  <td class="mono">DOI:10.1002/cbic.201500365<br>https://www.uniprot.org/uniprotkb/Q0H2W3</td>
+</tr>
+<tr>
+  <td>AtmS8 glucose oxidation assay</td>
+  <td>produces</td>
+  <td>TDP-alpha-D-glucuronic acid (3-T)</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201500365</td>
+</tr>
+<tr>
+  <td>TDP-alpha-D-glucuronic acid (3-T)</td>
+  <td>is_substrate_for</td>
+  <td>AtmS9 glucuronate decarboxylation assay</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201500365</td>
+</tr>
+<tr>
+  <td>AtmS9 N-terminal His6 construct</td>
+  <td>catalyzes</td>
+  <td>AtmS9 glucuronate decarboxylation assay</td>
+  <td>Same genomic-PCR expression strategy as AtmS8. Adding 15 uM AtmS9 after AtmS8 completion gave quantitative 4-T formation in 15 h at 30 C (NMR/HPLC); enzyme-omission controls showed no reaction. The paper also reports reduced xylose nucleotide after longer incubations (&gt;24 h, 37 C), so 4-T is not an exclusive product under all conditions.</td>
+  <td class="mono">DOI:10.1002/cbic.201500365<br>https://www.uniprot.org/uniprotkb/Q0H2W2</td>
+</tr>
+<tr>
+  <td>AtmS9 glucuronate decarboxylation assay</td>
+  <td>produces</td>
+  <td>TDP-4-keto-alpha-D-xylose (4-T)</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201500365</td>
+</tr>
+<tr>
+  <td>TDP-4-keto-alpha-D-xylose (4-T)</td>
+  <td>is_substrate_for</td>
+  <td>AtmS14 addition to 4-T: degradation readout</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201500365</td>
+</tr>
+<tr>
+  <td>AtmS14 synthetic-gene His6 construct</td>
+  <td>enables_observed_degradation_in</td>
+  <td>AtmS14 addition to 4-T: degradation readout</td>
+  <td>pUC57 codon-optimized synthetic gene subcloned into pET28a; N-terminal His6, E. coli BL21(DE3). The main paper identifies the parent; the supplemental synthetic sequence was not retrievable and was not independently verified. Adding 14 uM AtmS14 after AtmS9 completion yielded 6 and TDP within 6 h at 30 C (NMR/HPLC). Proposed 2,3-dehydration intermediate TDP-2-deoxy-4-keto-alpha-D-pentos-2-ene (5-T) was not isolated; these are degradation products, not a demonstrated finished sugar donor or direct two-product enzymatic reaction.</td>
+  <td class="mono">DOI:10.1002/cbic.201500365<br>https://www.uniprot.org/uniprotkb/Q0H2W5</td>
+</tr>
+<tr>
+  <td>AtmS14 addition to 4-T: degradation readout</td>
+  <td>yields_observed_product</td>
+  <td>3-hydroxy-4H-pyran-4-one (6; pyromicomic acid)</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201500365</td>
+</tr>
+<tr>
+  <td>AtmS14 addition to 4-T: degradation readout</td>
+  <td>yields_observed_product</td>
+  <td>TDP</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201500365</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Structural evidence for the AT2433-cluster putative sugar aminotransferase AtmS13. Dimer and PLP-adduct observations do not establish native-substrate turnover, substrate stereochemistry, or completed AT2433-A1 biosynthesis.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>AtmS13 SeMet construct (4ZWV; cleaved tag)</td>
+  <td>is_subunit_of</td>
+  <td>AtmS13 homodimer in 4ZWV</td>
+  <td>1.50-A X-ray structure of SeMet protein expressed from pMCSG68 in E. coli BL21(DE3)-Gold. TEV removal of the StrepII/His6 tag leaves SNA before the native parent. The two-subunit crystal assembly is structural evidence, not an in-vivo assembly assay. The separate 3.00-A structure 4XAU used non-SeMet, pET28a N-His6 protein with a different 20-residue N-terminal extension.</td>
+  <td class="mono">DOI:10.1002/prot.24844<br>https://www.uniprot.org/uniprotkb/Q0H2X1<br>https://www.rcsb.org/structure/4ZWV</td>
+</tr>
+<tr>
+  <td>AtmS13 SeMet construct (4ZWV; cleaved tag)</td>
+  <td>forms_covalent_internal_aldimine_with</td>
+  <td>Pyridoxal 5-phosphate (PLP)</td>
+  <td>Crystallized with 1 mM PLP. The 4ZWV Lys187-PLP adduct occurs in both subunits, with two alternate PLP orientations refined at 0.50 occupancy each. This is cofactor-adduct evidence, not an aminopentose transamination assay.</td>
+  <td class="mono">DOI:10.1002/prot.24844<br>https://files.rcsb.org/download/4ZWV.cif</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
