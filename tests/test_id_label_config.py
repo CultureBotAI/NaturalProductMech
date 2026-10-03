@@ -42,6 +42,25 @@ def test_config_passes_the_validators_strict_key_check():
     assert cfg["targets"], "no targets configured"
 
 
+def test_ncbi_protein_namespace_is_explicit_and_typos_still_fail(schema, tmp_path, monkeypatch):
+    assert schema["prefixes"]["NCBIProtein"] == "https://www.ncbi.nlm.nih.gov/protein/"
+    cfg = validator.load_config(CONFIG)
+    assert "NCBIProtein" in cfg["ignored_prefixes"]
+    cfg["adapters"] = {}
+    cfg["targets"] = [{
+        "name": "protein", "kind": "yaml", "glob": "protein.yaml",
+        "required": True, "pairs": [["identifier", "label"]],
+    }]
+    config = tmp_path / "config.yaml"
+    config.write_text(yaml.safe_dump(cfg), encoding="utf-8")
+    monkeypatch.setattr(validator, "REPO_ROOT", tmp_path)
+    record = tmp_path / "protein.yaml"
+    record.write_text("identifier: NCBIProtein:AGI91495.1\nlabel: XNR_5179 ferredoxin\n")
+    assert validator.run(config, report_path=None) == 0
+    record.write_text("identifier: NCBIProtien:AGI91495.1\nlabel: XNR_5179 ferredoxin\n")
+    assert validator.run(config, report_path=None) == 2
+
+
 def test_every_target_glob_matches_at_least_one_file():
     cfg = yaml.safe_load(CONFIG.read_text(encoding="utf-8"))
     for target in cfg["targets"]:

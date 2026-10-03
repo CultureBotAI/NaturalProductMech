@@ -249,6 +249,69 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:E3VWJ0
+  enzyme_label: PntA
+  reaction_id: RHEA:18081
+  substrate: CHEBI:175763
+  products:
+  - CHEBI:17251
+  - CHEBI:33019
+  proposed: false
+  notes: Early cyclization step; the reaction identifier grounds chemistry, not protein
+    identity.
+  evidence:
+  - reference: DOI:10.1016/j.engmic.2025.100206
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Figure 3: TU469 pntA alone in S. albus J1074 produced pentalenene; Table
+      S2 identifies pWHU1703.'
+    snippet: the product of FPP catalyzed by PntA
+  - reference: https://www.uniprot.org/uniprotkb/E3VWJ0
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: S. arenae Tu469 PntA, 337 aa; exact sequence match to ADO85578.1 from HQ292065.1:13164..14177.
+      UniProt assigns RHEA:18081; protein grounding denotes the native gene product,
+      not an affinity-tagged construct.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: BGC0000653.5 places pntA/ADO85578.1 and pntI/ADO85579.1 in the S. arenae
+      pentalenolactone cluster. These are distinct from S. avermitilis ptl genes.
+  - reference: https://www.rhea-db.org/rhea/18081
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: Farnesyl diphosphate cyclization yields pentalenene and diphosphate; participants
+      use CHEBI:175763, CHEBI:17251 and CHEBI:33019.
+- step_number: 2
+  enzyme_id: UniProtKB:E3VWJ1
+  enzyme_label: PntI
+  substrate: CHEBI:17251
+  product: CHEBI:68832
+  proposed: false
+  notes: Net oxidation, not carbon-addition chemistry. The intervening hydroxylation
+    and dehydrogenation before the existing PntE step remain unrepresented.
+  evidence:
+  - reference: DOI:10.1016/j.engmic.2025.100206
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Figures 3-4: heterologous TU469 pntI supports acid formation, assayed
+      as its methyl ester after derivatization; no purified-enzyme reconstitution.'
+    snippet: PntI catalyzed 3 to 6 efficiently in Streptomyces hosts
+  - reference: https://www.uniprot.org/uniprotkb/E3VWJ1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: S. arenae TU469 PntI, 457 aa; exact sequence match to ADO85579.1 from HQ292065.1:14292..15665.
+      This unreviewed entry supplies sequence identity, not the experimental activity
+      assignment from the newer paper.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: BGC0000653.5 places pntA/ADO85578.1 and pntI/ADO85579.1 in the S. arenae
+      pentalenolactone cluster. These are distinct from S. avermitilis ptl genes.
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:68832
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: Neutral 1-deoxypentalenic acid, DCFDRCCHOOORSB-DSKWVYQCSA-N; not its methyl
+      ester, conjugate base, or hydroxylated pentalenic acid.
 - step_number: 10
   enzyme_id: UniProtKB:E3VWI7
   enzyme_label: Pentalenolactone D synthase
@@ -631,6 +694,155 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-01'
       notes: The Rhea-to-UniProtKB Swiss-Prot mapping links RHEA:34579 to UniProtKB:E3VWI8.
+- graph_id: pentalenolactone-pnta-pnti-early-biosynthesis
+  scope: BIOSYNTHESIS
+  description: S. arenae TU469 early biosynthesis, supported by heterologous expression.
+    The acid endpoint is upstream of the separately curated late reactions, not pentalenolactone
+    itself.
+  nodes:
+  - node_id: fpp
+    label: 2-trans,6-trans-farnesyl diphosphate(3-)
+    node_type: PRECURSOR
+    identifier: CHEBI:175763
+    grounding_status: GROUNDED
+  - node_id: pnta
+    label: PntA
+    node_type: ENZYME
+    identifier: UniProtKB:E3VWJ0
+    grounding_status: GROUNDED
+  - node_id: pentalenene
+    label: pentalenene
+    node_type: PRECURSOR
+    identifier: CHEBI:17251
+    grounding_status: GROUNDED
+  - node_id: pnti
+    label: PntI
+    node_type: ENZYME
+    identifier: UniProtKB:E3VWJ1
+    grounding_status: GROUNDED
+  - node_id: deoxypentalenic_acid
+    label: 1-deoxypentalenic acid
+    node_type: PRECURSOR
+    identifier: CHEBI:68832
+    grounding_status: GROUNDED
+  edges:
+  - subject: fpp
+    predicate: is cyclized by
+    object: pnta
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3, pntA-only control.
+    - reference: https://www.uniprot.org/uniprotkb/E3VWJ0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: S. arenae Tu469 PntA, 337 aa; exact sequence match to ADO85578.1 from
+        HQ292065.1:13164..14177. UniProt assigns RHEA:18081; protein grounding denotes
+        the native gene product, not an affinity-tagged construct.
+  - subject: pnta
+    predicate: forms
+    object: pentalenene
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: GC-MS identification in the pntA-only expression strain.
+  - subject: pentalenene
+    predicate: is oxidized by
+    object: pnti
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Net allylic oxidation in heterologous hosts.
+    - reference: https://www.uniprot.org/uniprotkb/E3VWJ1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: S. arenae TU469 PntI, 457 aa; exact sequence match to ADO85579.1 from
+        HQ292065.1:14292..15665. This unreviewed entry supplies sequence identity,
+        not the experimental activity assignment from the newer paper.
+  - subject: pnti
+    predicate: forms
+    object: deoxypentalenic_acid
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Product 6; methylation is analytical derivatization.
+- graph_id: pentalenolactone-pnti-engineered-redox-support
+  scope: BIOSYNTHESIS
+  description: 'Engineered E. coli BL21(DE3) with PenA/PntI: paired J1074 redox-gene
+    expression enhanced intermediate production. Neither native partnership, physical
+    complex, nor increased final pentalenolactone yield is asserted.'
+  nodes:
+  - node_id: pnti
+    label: PntI
+    node_type: ENZYME
+    identifier: UniProtKB:E3VWJ1
+    grounding_status: GROUNDED
+  - node_id: xnr_5179
+    label: XNR_5179 ferredoxin
+    node_type: PROTEIN
+    identifier: NCBIProtein:AGI91495.1
+    grounding_status: GROUNDED
+  - node_id: xnr_4478
+    label: XNR_4478 ferredoxin reductase
+    node_type: ENZYME
+    identifier: NCBIProtein:AGI90801.1
+    grounding_status: GROUNDED
+  - node_id: paired_expression
+    label: Joint expression of XNR_5179 and XNR_4478
+    node_type: PROCESS
+  - node_id: acid_production
+    label: 1-deoxypentalenic acid production in engineered E. coli
+    node_type: PROCESS
+  edges:
+  - subject: pnti
+    predicate: supports
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4C, PenA/PntI host.
+    - reference: https://www.uniprot.org/uniprotkb/E3VWJ1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: S. arenae TU469 PntI, 457 aa; exact sequence match to ADO85579.1 from
+        HQ292065.1:14292..15665. This unreviewed entry supplies sequence identity,
+        not the experimental activity assignment from the newer paper.
+  - subject: xnr_5179
+    predicate: is coexpressed in
+    object: paired_expression
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Table S2: J1074 gene in pLJ62.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI91495.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: XNR_5179 encodes a 100-aa ferredoxin at complement(CP004370.1:5881185..5881487),
+        strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper
+        uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did
+        not resolve an accession; no homolog was substituted.
+  - subject: xnr_4478
+    predicate: is coexpressed in
+    object: paired_expression
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Table S2: J1074 gene in pLJ62.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI90801.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: XNR_4478 encodes a 420-aa ferredoxin reductase at complement(CP004370.1:5093104..5094366),
+        strain J1074, currently S. albidoflavus in NCBI and S. albus in the paper.
+        Retained the versioned NCBI Protein accession after exact-locus and GenPept-cross-reference
+        UniProt queries returned no match.
+  - subject: paired_expression
+    predicate: increases
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Figure 5: the pair improved yield relative to PenA/PntI alone; the authors
+        reported no significant change for individual additions.'
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -676,4 +888,21 @@ curation_history:
   changes: Corrected the PntD pathway product and BIOSYNTHESIS graph product node
     from neutral pentalenolactone F to the pH 7.3 pentalenolactone F conjugate base
     used by RHEA:34579.
+  llm_assisted: true
+- timestamp: '2026-10-03T12:02:50Z'
+  curator: codex
+  action: ADDED_PNTA_PNTI_AND_ENGINEERED_REDOX_GRAPHS
+  changes: Added TU469 PntA/E3VWJ0 and PntI/E3VWJ1 early pathway steps and a BIOSYNTHESIS
+    graph, plus a separate engineered-redox graph for J1074 XNR_5179/AGI91495.1 and
+    XNR_4478/AGI90801.1. Grounded whole-cell evidence to Li et al. 2025 and preserved
+    the distinction between paired coexpression, native partners and purified-enzyme
+    assays.
+  llm_assisted: true
+- timestamp: '2026-10-03T12:20:17Z'
+  curator: codex
+  action: CLARIFIED_REDOX_SINGLE_GENE_EVIDENCE
+  changes: 'Addressed review issue #489: preserved the author-reported lack of a significant
+    yield change for individual redox-gene additions, rather than implying identical
+    measured yields or proven absence of an effect. The paired-expression increase
+    is unchanged.'
   llm_assisted: true

@@ -149,6 +149,20 @@ derived from a source. This is what the rest of the record exists to support.</p
 <div class="scroll"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
+  <td>1</td>
+  <td>PntA<br><span class="mono">UniProtKB:E3VWJ0</span></td>
+  <td class="mono">RHEA:18081</td>
+  <td class="mono">CHEBI:175763 &rarr; CHEBI:17251 + CHEBI:33019</td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>PntI<br><span class="mono">UniProtKB:E3VWJ1</span></td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:17251 &rarr; CHEBI:68832</td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+<tr>
   <td>10</td>
   <td>Pentalenolactone D synthase<br><span class="mono">UniProtKB:E3VWI7</span></td>
   <td class="mono">RHEA:34635</td>
@@ -170,7 +184,7 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td class="mono">DOI:10.1021/ja111279h</td>
 </tr>
 </table></div>
-<p class="sub">Step 10: Streptomyces arenae PntE catalyzes the flavin-dependent Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenate to pentalenolactone D; PntD-catalyzed formation of pentalenolactone F is represented separately.</p><p class="sub">Step 20: Streptomyces arenae PntD catalyzes 2-oxoglutarate- and Fe(2+)-dependent oxidation of pentalenolactone D to pentalenolactone F; RHEA:34579 grounds the full net reaction to the pH 7.3 pentalenolactone F conjugate base with two 2-oxoglutarate/O2 equivalents per pentalenolactone F.</p><p class="sub">Step 30: Streptomyces arenae PntM/CYP161C2 catalyzes the terminal oxidative rearrangement of pentalenolactone F to pentalenolactone; upstream PntE and PntD steps are represented separately.</p>
+<p class="sub">Step 1: Early cyclization step; the reaction identifier grounds chemistry, not protein identity.</p><p class="sub">Step 2: Net oxidation, not carbon-addition chemistry. The intervening hydroxylation and dehydrogenation before the existing PntE step remain unrepresented.</p><p class="sub">Step 10: Streptomyces arenae PntE catalyzes the flavin-dependent Baeyer-Villiger oxidation of 1-deoxy-11-oxopentalenate to pentalenolactone D; PntD-catalyzed formation of pentalenolactone F is represented separately.</p><p class="sub">Step 20: Streptomyces arenae PntD catalyzes 2-oxoglutarate- and Fe(2+)-dependent oxidation of pentalenolactone D to pentalenolactone F; RHEA:34579 grounds the full net reaction to the pH 7.3 pentalenolactone F conjugate base with two 2-oxoglutarate/O2 equivalents per pentalenolactone F.</p><p class="sub">Step 30: Streptomyces arenae PntM/CYP161C2 catalyzes the terminal oxidative rearrangement of pentalenolactone F to pentalenolactone; upstream PntE and PntD steps are represented separately.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
 <p class="sub">Streptomyces arenae PntM-catalyzed terminal oxidative rearrangement of pentalenolactone F to pentalenolactone.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
@@ -227,6 +241,74 @@ by the corpus tests.</p>
   <td>pentalenolactone F(1-)</td>
   <td></td>
   <td class="mono">DOI:10.1021/bi1019786<br>https://mite.lisc.univie.ac.at/repository/MITE0000058<br>https://mibig.secondarymetabolites.org/repository/BGC0000653.5/BGC0000653.gbk<br>https://www.uniprot.org/uniprotkb/E3VWI8<br>https://www.ncbi.nlm.nih.gov/protein/ADO85576.1<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">S. arenae TU469 early biosynthesis, supported by heterologous expression. The acid endpoint is upstream of the separately curated late reactions, not pentalenolactone itself.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2-trans,6-trans-farnesyl diphosphate(3-)</td>
+  <td>is cyclized by</td>
+  <td>PntA</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/E3VWJ0</td>
+</tr>
+<tr>
+  <td>PntA</td>
+  <td>forms</td>
+  <td>pentalenene</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+<tr>
+  <td>pentalenene</td>
+  <td>is oxidized by</td>
+  <td>PntI</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/E3VWJ1</td>
+</tr>
+<tr>
+  <td>PntI</td>
+  <td>forms</td>
+  <td>1-deoxypentalenic acid</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Engineered E. coli BL21(DE3) with PenA/PntI: paired J1074 redox-gene expression enhanced intermediate production. Neither native partnership, physical complex, nor increased final pentalenolactone yield is asserted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PntI</td>
+  <td>supports</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/E3VWJ1</td>
+</tr>
+<tr>
+  <td>XNR_5179 ferredoxin</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_5179 and XNR_4478</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</td>
+</tr>
+<tr>
+  <td>XNR_4478 ferredoxin reductase</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_5179 and XNR_4478</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</td>
+</tr>
+<tr>
+  <td>Joint expression of XNR_5179 and XNR_4478</td>
+  <td>increases</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td class="mono">DOI:10.1016/j.engmic.2025.100206</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
