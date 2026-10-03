@@ -232,6 +232,108 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Native gene-disruption evidence for EvdO1 and EvdMO1 in everninomicin D production. Perturbations, parent proteins and the metabolite readout are separate nodes. No exact reaction order or enzyme-to-ring assignment is inferred from loss of the final products.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Reported evdO1 gene disruption</td>
+  <td>disrupts_encoding_gene_of</td>
+  <td>Native EvdO1 parent</td>
+  <td>The native parent is the 313-aa translation of evdO1/HXZ27_03990, CP058322.1:886309..887250. The deposited 4XBZ construct has this exact core plus a 21-aa N-terminal extension. Gene-name and sequence mapping identifies the parent, not a sequenced deletion allele; the disruption boundaries were not independently checked.</td>
+  <td class="mono">DOI:10.1073/pnas.1500964112<br>https://www.ncbi.nlm.nih.gov/protein/QLD23479.1<br>https://www.rcsb.org/structure/4XBZ</td>
+</tr>
+<tr>
+  <td>Reported evdO1 gene disruption</td>
+  <td>abolishes_detectable</td>
+  <td>Detectable everninomicin D in culture extracts</td>
+  <td>LC/MS of crude extracts from M. carbonacea var. aurantiaca deletion strains lost detectable everninomicins D-G relative to wild type. Figure 3A includes the D ion at m/z 1534.5 [M-H]-. This is a production readout, not an assay of antibiotic activity or purified-enzyme turnover. No measurable pathway intermediates were identified; the experiment does not assign a particular orthoester linkage or methylenedioxy bridge to this protein. The main text reports PCR/Southern confirmation of double crossovers; the 2015 supplement was not accessible for independent deletion-primer inspection.</td>
+  <td class="mono">DOI:10.1073/pnas.1500964112</td>
+</tr>
+<tr>
+  <td>Reported evdMO1 gene disruption</td>
+  <td>disrupts_encoding_gene_of</td>
+  <td>Native EvdMO1 parent</td>
+  <td>The native parent is the 450-aa evdMO1/HXZ27_04060 translation at CP058322.1:900465..901817. This is a gene-level perturbation of a fused methyltransferase/oxygenase, not a selective knockout of oxygenase catalysis. It cannot distinguish the two domain functions or exclude indirect/polar effects. The separate 2018 recombinant construct discrepancy does not alter this native reference sequence.</td>
+  <td class="mono">DOI:10.1073/pnas.1500964112<br>https://www.ncbi.nlm.nih.gov/protein/QLD28329.2</td>
+</tr>
+<tr>
+  <td>Reported evdMO1 gene disruption</td>
+  <td>abolishes_detectable</td>
+  <td>Detectable everninomicin D in culture extracts</td>
+  <td>LC/MS of crude extracts from M. carbonacea var. aurantiaca deletion strains lost detectable everninomicins D-G relative to wild type. Figure 3A includes the D ion at m/z 1534.5 [M-H]-. This is a production readout, not an assay of antibiotic activity or purified-enzyme turnover. No measurable pathway intermediates were identified; the experiment does not assign a particular orthoester linkage or methylenedioxy bridge to this protein. The main text reports PCR/Southern confirmation of double crossovers; the 2015 supplement was not accessible for independent deletion-primer inspection.</td>
+  <td class="mono">DOI:10.1073/pnas.1500964112</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Recombinant EvdO1/EvdO2 structural observations from catalytically inactive nickel-substituted preparations. EvdO1 is dimeric and EvdO2 monomeric; these are not measurements of native-cell assemblies. Disaccharide docking in the paper is computational, not observed binding or demonstrated biosynthetic turnover.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Crystallized EvdO1 construct</td>
+  <td>forms_observed_homodimer</td>
+  <td>Observed recombinant EvdO1 homodimer</td>
+  <td>4XBZ contains four dimers in its asymmetric unit, not an octameric biological assembly. UniProt A0A0M3KL03 is a PDB-derived 314-aa sequence: one extra N-terminal methionine followed by native QLD23479.1 (313 aa). It matches the crystallized core including that cloning residue, not an unqualified native sequence. The full deposited 334-aa construct adds the 20-aa MGSSHHHHHHSSGLVPRGSH before the UniProt sequence. No internal mismatch was found.</td>
+  <td class="mono">DOI:10.1073/pnas.1500964112<br>https://www.rcsb.org/structure/4XBZ<br>https://www.ncbi.nlm.nih.gov/protein/QLD23479.1<br>https://www.uniprot.org/uniprotkb/A0A0M3KL03/entry</td>
+</tr>
+<tr>
+  <td>Observed recombinant EvdO1 homodimer</td>
+  <td>contains_observed_bound_metal</td>
+  <td>Substituting nickel(II)</td>
+  <td>The facial-triad sites contain substituted Ni2+ in 4XBZ. This does not establish nickel as a native cofactor or demonstrate oxygenation activity.</td>
+  <td class="mono">DOI:10.1073/pnas.1500964112<br>https://www.rcsb.org/structure/4XBZ</td>
+</tr>
+<tr>
+  <td>Crystallized EvdO2</td>
+  <td>contains_observed_bound_ligand</td>
+  <td>Bound alpha-ketoglutarate</td>
+  <td>4XAC contains bound alpha-ketoglutarate in the nickel-substituted active site. UniProt A0A0M3KL01, the 252-aa QLD23486.1 translation (HXZ27_04030, CP058322.1:895031..895789), and both deposited 4XAB/4XAC polymer sequences are identical. The source organism is M. carbonacea, not the heterologous expression host. Exact native and deposited sequence identity does not establish tag-processing details, which were not independently checked in the inaccessible supplement. Ligand binding does not prove AKG turnover or an exact carbohydrate substrate.</td>
+  <td class="mono">DOI:10.1073/pnas.1500964112<br>https://www.uniprot.org/uniprotkb/A0A0M3KL01/entry<br>https://www.rcsb.org/structure/4XAC</td>
+</tr>
+<tr>
+  <td>Crystallized EvdO2</td>
+  <td>contains_observed_bound_metal</td>
+  <td>Substituting nickel(II)</td>
+  <td>4XAC models Ni2+ rather than Fe2+; the paper deliberately used inactive metal-substituted enzymes for structural work. EvdO2 is monomeric, so no multimeric complex node is assigned.</td>
+  <td class="mono">DOI:10.1073/pnas.1500964112<br>https://www.rcsb.org/structure/4XAC</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Structural evidence for full-length EvdMO1 and its isolated N-terminal domain EvdMdeltaO1, not a reconstituted methylation/oxygenation pathway. 6EC3 has three molecules in the asymmetric unit but is assigned as monomeric; its affinity-tag contacts are crystal contacts, not a native multienzyme complex. Separate outward-facing active sites suggest independent functions without demonstrating kinetic independence.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Reported full-length EvdMO1 His6 construct</td>
+  <td>has_experimentally_isolated_n_terminal_domain</td>
+  <td>Isolated EvdMO1 residues 1-233 His6 construct</td>
+  <td>QLD28329.2 denotes the native 450-aa parent, HXZ27_04060 at CP058322.1:900465..901817. Its CDS translation matches the deposited 6EC3 core after the 21-aa MGSSHHHHHHSSGLVPRGSHM extension. However, the published reverse primer GCGAAGCTTTCAGGACGGGAGCGTC would encode S447T against this CDS, whereas the deposited sequence retains S447. The unresolved C-terminal model cannot adjudicate this discrepancy; the full-length experimental construct remains REVIEW_NEEDED. The paper names ATCC 27115 genomic DNA and pET28a(+)/E. coli BL21(DE3) expression. PDB-linked UniProt A0A1C5AE13 was not used as an exact parent because it differs at H100N, T219K, A232T and S444A (native-to-UniProt). Exact-locus/accession and taxonomy-lineage length-450 UniProt searches found no exact parent; this is a bounded result. The domain is a separately expressed truncation, not a demonstrated proteolytic product. Both 5T38 and 5T39 deposit the same 21-aa extension plus native residues 1-233. The published truncation primer inserts TGA after R233, consistent with that endpoint; the residue-447 discrepancy is outside this domain.</td>
+  <td class="mono">DOI:10.1021/acs.biochem.8b00836<br>https://www.ncbi.nlm.nih.gov/protein/QLD28329.2<br>https://www.rcsb.org/structure/6EC3<br>https://www.rcsb.org/structure/5T38</td>
+</tr>
+<tr>
+  <td>Reported full-length EvdMO1 His6 construct</td>
+  <td>contains_observed_bound_metal</td>
+  <td>Observed nickel(II)</td>
+  <td>6EC3 models nickel acquired during affinity purification, coordinated by H349, D351 and H420; it is not a structure demonstrating native iron catalysis. A histidine from the affinity tag of a crystallographically related molecule also contacts the metal. This crystal contact does not establish a functional protein complex. The full-length construct identity caveat on the domain edge also applies here.</td>
+  <td class="mono">DOI:10.1021/acs.biochem.8b00836<br>https://www.rcsb.org/structure/6EC3</td>
+</tr>
+<tr>
+  <td>Reported full-length EvdMO1 His6 construct</td>
+  <td>contains_observed_bound_buffer_ligand</td>
+  <td>Crystallization-buffer Bis-Tris</td>
+  <td>Electron density at the expected AKG site in 6EC3 was modeled as Bis-Tris (BTB), a crystallization-buffer component. AKG and an orthosomycin substrate were not modeled there. Do not interpret this observation as an AKG-dependent turnover assay.</td>
+  <td class="mono">DOI:10.1021/acs.biochem.8b00836<br>https://www.rcsb.org/structure/6EC3</td>
+</tr>
+<tr>
+  <td>Isolated EvdMO1 residues 1-233 His6 construct</td>
+  <td>contains_observed_bound_ligand</td>
+  <td>S-adenosylhomocysteine (SAH)</td>
+  <td>The identifier names the native parent, not the tagged 1-233 fragment. 5T38 was crystallized with 2 mM SAH and resolves bound SAH; the deposited nonpolymer model contains SAH and water, not AKG. The companion 5T39 experiment with 10 mM D-fucose did not resolve fucose density, so no fucose-binding claim is made. Full-length 6EC3 lacks bound SAM/SAH. The proposed E-ring O-methylation assignment is based on AviG5 homology, not demonstrated EvdMO1 turnover.</td>
+  <td class="mono">DOI:10.1021/acs.biochem.8b00836<br>https://www.rcsb.org/structure/5T38<br>https://www.rcsb.org/structure/5T39</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
