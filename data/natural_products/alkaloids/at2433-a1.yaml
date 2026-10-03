@@ -89,6 +89,48 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: at2433-a1-atmc-flavin-binding
+  scope: BIOSYNTHESIS
+  description: Cofactor binding by the AT2433-cluster protein AtmC; partial biochemical
+    evidence, not a demonstrated complete AT2433-A1 pathway or an assay of the finished
+    compound's bioactivity.
+  nodes:
+  - node_id: atmc
+    label: AtmC recombinant assay construct
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q0H2X3
+  - node_id: fad
+    label: FAD
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: atmc
+    predicate: binds
+    object: fad
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2012.05.016
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: purifies with bound FAD
+      notes: 'Table 2: AtmC ITC Kd = 73 +/- 28 nM, five experiments; the paper does
+        not identify the uncertainty statistic.'
+    - reference: https://ars.els-cdn.com/content/image/1-s2.0-S1074552112001809-mmc1.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Fig. S2D and caption: ITC at 25 C. SI p. 19: Actinomadura melliaura
+        atmC cloned into pET28a; canonical identifier excludes its affinity tag.'
+    - reference: https://www.uniprot.org/uniprotkb/Q0H2X3
+      evidence_type: DATABASE_ASSERTION
+      notes: The 534-aa canonical atC sequence, taxon 360723, exactly matches DQ297453.1
+        CDS ABC02791.1 from A. melliaura SCC 1655 and SI Fig. S1 AtmC. The forward
+        primer targets the CDS start; the reverse primer targets downstream genomic
+        sequence, retaining the native stop. This is the record's BGC0000809 locus,
+        not an unrelated fungal atmC homolog.
+      retrieved_on: '2026-10-03'
+    notes: Rosetta 2(DE3) pLysS expression, Ni-affinity purification and deflavination
+      with 2 M KBr/2 M urea preceded ITC in 150 mM NaCl, 25 mM HEPES pH 7.5, 10% glycerol.
+      Cofactor binding does not establish the substrate, elementary chemistry, or
+      AT2433-A1 formation.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -98,3 +140,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-03T17:57:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a partial BIOSYNTHESIS graph for AtmC FAD binding by ITC, citing
+    DOI:10.1016/j.chembiol.2012.05.016 and its supporting information. Grounded Q0H2X3
+    to the exact DQ297453.1 ABC02791.1 sequence and published alignment; documented
+    recombinant construct, deflavination, assay conditions and limitations. Retained
+    SEEDED; no product-turnover claim.
+  llm_assisted: true
