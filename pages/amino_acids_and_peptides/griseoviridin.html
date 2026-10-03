@@ -80,7 +80,47 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>SgvP griseoviridin C-S bond-forming cytochrome P450<br><span class="mono">UniProtKB:R9USI6</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1002/cbic.201400062</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: SgvP catalyzes heterocyclization of the thiol-containing linear griseoviridin-pathway intermediate to install the griseoviridin C-S bond. The MITE substrate and product are left out of the pathway step because no stable CURIEs identify those exact intermediate structures.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Streptomyces griseoviridis SgvP heterocyclizes the thiol-containing griseoviridin-pathway intermediate to form the C-S-bridged griseoviridin scaffold.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>thiol-containing griseoviridin precursor</td>
+  <td>is heterocyclized by</td>
+  <td>SgvP cytochrome P450</td>
+  <td>The exact MITE substrate is left ungrounded because it has no stable identifier in the committed corpus; the MITE reaction shows SgvP heterocyclization installing the C-S bond in the griseoviridin scaffold.</td>
+  <td class="mono">DOI:10.1002/cbic.201400062<br>https://mite.bioinformatics.nl/repository/MITE0000043<br>https://mibig.secondarymetabolites.org/repository/BGC0000459.5/BGC0000459.gbk<br>https://www.uniprot.org/uniprotkb/R9USI6<br>https://www.ncbi.nlm.nih.gov/protein/AGN74891.1</td>
+</tr>
+<tr>
+  <td>heme b</td>
+  <td>is organic cofactor for</td>
+  <td>SgvP cytochrome P450</td>
+  <td>MITE lists heme as SgvP&#39;s organic cofactor and Fe as its inorganic cofactor.</td>
+  <td class="mono">https://mite.bioinformatics.nl/repository/MITE0000043<br>https://www.uniprot.org/uniprotkb/R9USI6<br>CHEBI:60344</td>
+</tr>
+<tr>
+  <td>SgvP cytochrome P450</td>
+  <td>forms the C-S bridge in</td>
+  <td>griseoviridin</td>
+  <td>The sgvP deletion accumulated GV-1 and GV-2 products lacking the C-S bridge, so SgvP is required for griseoviridin C-S-bond formation rather than for the other BGC0000459 compound represented in this corpus.</td>
+  <td class="mono">DOI:10.1002/cbic.201400062<br>https://mite.bioinformatics.nl/repository/MITE0000043</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
