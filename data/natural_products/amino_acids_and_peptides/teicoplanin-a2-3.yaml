@@ -228,6 +228,103 @@ biosynthetic_pathway:
     retrieved_on: '2026-10-03'
     notes: ChEBI:16264 is the 3-star ChEBI entry for UDP-N-acetyl-alpha-D-glucosamine,
       the UDP-amino-sugar donor used for GtfA-catalyzed N-acetylglucosamine transfer.
+- step_number: 3
+  enzyme_id: UniProtKB:Q6ZZJ1
+  enzyme_label: Orf2* teicoplanin Hpg4 N-acetylglucosaminyl deacetylase
+  notes: Orf2*/tcp14 deacetylates the Hpg4 N-acetylglucosaminyl group of the teicoplanin
+    pseudoaglycone, exposing the Hpg4 glucosamine for downstream N-acylation toward
+    teicoplanin A2-3.
+  evidence:
+  - reference: DOI:10.1021/ja0644834
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Orf2* catalyze the deacetylation reaction
+    notes: Ho et al. biochemically assigned Actinoplanes teichomyceticus Orf2* as
+      the N-acetylglucosaminyl-teicoplanin pseudoaglycone deacetylase that prepares
+      the Hpg4 sugar for downstream N-acylation.
+  - reference: DOI:10.1002/cbic.200600308
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Truman et al. independently identified Orf2* as a teicoplanin maturation
+      deacetylase and amplified the orf2* gene from the T4B2 cosmid of the cloned
+      teicoplanin cluster for in vitro expression.
+  - reference: DOI:10.1016/j.chembiol.2008.05.009
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: pseudoaglycone deacetylases from the biosynthetic pathways of teicoplanin
+      and A40926
+    notes: Zou et al. solved crystal structures of the Actinoplanes teichomyceticus
+      teicoplanin pseudoaglycone deacetylase, supporting the Orf2*/tcp14 protein-level
+      assignment.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: /db_xref="UniProtKB/TrEMBL:Q6ZZJ1"
+    retrieved_on: '2026-10-03'
+    notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp14 CDS at
+      AJ605139.1:48426..49247 with GenPept protein_id CAE53355.1 and UniProtKB/TrEMBL
+      Q6ZZJ1.
+  - reference: https://www.uniprot.org/uniprotkb/Q6ZZJ1
+    evidence_type: DATABASE_ASSERTION
+    snippet: AC   Q6ZZJ1;
+    retrieved_on: '2026-10-03'
+    notes: Current UniProtKB:Q6ZZJ1 resolves to a 273 aa Actinoplanes teichomyceticus
+      tcp14 sequence whose sequence is identical to CAE53355.1 and whose PDB mappings
+      cover Orf2* deacetylase structures.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53355.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: /gene="tcp14"
+    retrieved_on: '2026-10-03'
+    notes: NCBI Protein CAE53355.1 is the 273 aa Actinoplanes teichomyceticus ATCC
+      31131 tcp14 protein translated from AJ605139.1:48426..49247 and cross-referenced
+      to UniProtKB/TrEMBL Q6ZZJ1.
+- step_number: 4
+  enzyme_id: UniProtKB:Q70AY4
+  enzyme_label: Tcp24 teicoplanin Hpg4 N-acyltransferase
+  notes: Tcp24/tAtf transfers a fatty acyl group from an acyl-CoA donor to the Orf2*-exposed
+    Hpg4 glucosamine of the teicoplanin pseudoaglycone. The immediate N-acylated bis-glycosylated
+    product is left ungrounded because the record-specific A2 lipid donor is not grounded
+    here.
+  evidence:
+  - reference: DOI:10.1016/s1074-5521(04)00002-x
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Li et al. cloned the 89 kbp teicoplanin biosynthetic locus and heterologously
+      assayed the key tAtf acyltransferase that acylates the Hpg4 glucosaminyl group.
+  - reference: DOI:10.1016/j.chembiol.2004.12.005
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: responsible for N-acylation of the glucosamine moiety
+    notes: Kruger et al. evaluated purified teicoplanin acyltransferase tAtf with
+      glycopeptide scaffolds and acyl-CoA donors, supporting direct Tcp24/tAtf N-acyl
+      transfer.
+  - reference: DOI:10.1021/ja0735857
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Howard-Jones et al. kinetically showed that tAtf strongly prefers aglycone-tethered
+      4-(2-aminoglucosyl)-teicoplanin over free UDP-2-aminoglucose for N-acylation.
+  - reference: https://mite.bioinformatics.nl/repository/MITE0000035
+    evidence_type: DATABASE_ASSERTION
+    snippet: The highest catalytic efficiency of the enzyme is achieved with the glucosaminyl-teicoplanin
+      pseudoaglycone as substrate.
+    retrieved_on: '2026-10-03'
+    notes: MITE0000035 is active and links Tcp24/tAtf to UniProtKB:Q70AY4, GenPept
+      CAE53365.1 and MIBiG BGC0000440. The entry also includes Orf2* deacetylation
+      reactions merged from retired MITE0000036, so only its acylation reaction is
+      used for Tcp24/tAtf.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+    evidence_type: DATABASE_ASSERTION
+    snippet: 'MITE0000035: Acylation, Hydrolysis (100% identity)'
+    retrieved_on: '2026-10-03'
+    notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp24 CDS at
+      AJ605139.1:61858..62829 with GenPept protein_id CAE53365.1, UniProtKB/TrEMBL
+      Q70AY4, and a 100% identity MITE0000035 annotation.
+  - reference: https://www.uniprot.org/uniprotkb/Q70AY4
+    evidence_type: DATABASE_ASSERTION
+    snippet: AC   Q70AY4;
+    retrieved_on: '2026-10-03'
+    notes: Current UniProtKB:Q70AY4 resolves to a 323 aa Actinoplanes teichomyceticus
+      tcp24 sequence whose sequence is identical to CAE53365.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53365.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: /gene="tcp24"
+    retrieved_on: '2026-10-03'
+    notes: NCBI Protein CAE53365.1 is the 323 aa Actinoplanes teichomyceticus ATCC
+      31131 tcp24 protein translated from AJ605139.1:61858..62829 and cross-referenced
+      to UniProtKB/TrEMBL Q70AY4.
 causal_graphs:
 - graph_id: teicoplanin-a2-3-gtfb-hpg4-glycosylation
   scope: BIOSYNTHESIS
@@ -609,6 +706,277 @@ causal_graphs:
       retrieved_on: '2026-10-03'
       notes: ChEBI:16264 is the 3-star ChEBI entry for UDP-N-acetyl-alpha-D-glucosamine,
         the UDP-amino-sugar donor used for GtfA-catalyzed N-acetylglucosamine transfer.
+- graph_id: teicoplanin-a2-3-orf2-hpg4-deacetylation
+  scope: BIOSYNTHESIS
+  description: Actinoplanes teichomyceticus ATCC 31131 Orf2*/tcp14 deacetylates the
+    Hpg4 N-acetylglucosaminyl group of the bis-glycosylated teicoplanin pseudoaglycone
+    during teicoplanin A2 maturation.
+  nodes:
+  - node_id: hpg4_bht6_bis_n_acetylglucosaminyl_aglycone
+    label: Hpg4/Bht6 bis-N-acetylglucosaminyl teicoplanin pseudoaglycone
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: orf2
+    label: Orf2*
+    node_type: ENZYME
+    identifier: UniProtKB:Q6ZZJ1
+    grounding_status: GROUNDED
+  - node_id: hpg4_glucosaminyl_bht6_n_acetylglucosaminyl_aglycone
+    label: Hpg4 glucosaminyl/Bht6 N-acetylglucosaminyl teicoplanin pseudoaglycone
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: hpg4_bht6_bis_n_acetylglucosaminyl_aglycone
+    predicate: is Hpg4-deacetylated by
+    object: orf2
+    evidence:
+    - reference: DOI:10.1021/ja0644834
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Orf2* catalyze the deacetylation reaction
+      notes: Ho et al. biochemically assigned Actinoplanes teichomyceticus Orf2* as
+        the N-acetylglucosaminyl-teicoplanin pseudoaglycone deacetylase that prepares
+        the Hpg4 sugar for downstream N-acylation.
+    - reference: DOI:10.1002/cbic.200600308
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Truman et al. independently identified Orf2* as a teicoplanin maturation
+        deacetylase and amplified the orf2* gene from the T4B2 cosmid of the cloned
+        teicoplanin cluster for in vitro expression.
+    - reference: DOI:10.1016/j.chembiol.2008.05.009
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: pseudoaglycone deacetylases from the biosynthetic pathways of teicoplanin
+        and A40926
+      notes: Zou et al. solved crystal structures of the Actinoplanes teichomyceticus
+        teicoplanin pseudoaglycone deacetylase, supporting the Orf2*/tcp14 protein-level
+        assignment.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: /db_xref="UniProtKB/TrEMBL:Q6ZZJ1"
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp14 CDS
+        at AJ605139.1:48426..49247 with GenPept protein_id CAE53355.1 and UniProtKB/TrEMBL
+        Q6ZZJ1.
+    - reference: https://www.uniprot.org/uniprotkb/Q6ZZJ1
+      evidence_type: DATABASE_ASSERTION
+      snippet: AC   Q6ZZJ1;
+      retrieved_on: '2026-10-03'
+      notes: Current UniProtKB:Q6ZZJ1 resolves to a 273 aa Actinoplanes teichomyceticus
+        tcp14 sequence whose sequence is identical to CAE53355.1 and whose PDB mappings
+        cover Orf2* deacetylase structures.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53355.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /gene="tcp14"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein CAE53355.1 is the 273 aa Actinoplanes teichomyceticus ATCC
+        31131 tcp14 protein translated from AJ605139.1:48426..49247 and cross-referenced
+        to UniProtKB/TrEMBL Q6ZZJ1.
+  - subject: orf2
+    predicate: forms
+    object: hpg4_glucosaminyl_bht6_n_acetylglucosaminyl_aglycone
+    evidence:
+    - reference: DOI:10.1021/ja0644834
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Orf2* catalyze the deacetylation reaction
+      notes: Ho et al. biochemically assigned Actinoplanes teichomyceticus Orf2* as
+        the N-acetylglucosaminyl-teicoplanin pseudoaglycone deacetylase that prepares
+        the Hpg4 sugar for downstream N-acylation.
+    - reference: DOI:10.1002/cbic.200600308
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Truman et al. independently identified Orf2* as a teicoplanin maturation
+        deacetylase and amplified the orf2* gene from the T4B2 cosmid of the cloned
+        teicoplanin cluster for in vitro expression.
+    - reference: DOI:10.1016/j.chembiol.2008.05.009
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: pseudoaglycone deacetylases from the biosynthetic pathways of teicoplanin
+        and A40926
+      notes: Zou et al. solved crystal structures of the Actinoplanes teichomyceticus
+        teicoplanin pseudoaglycone deacetylase, supporting the Orf2*/tcp14 protein-level
+        assignment.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: /db_xref="UniProtKB/TrEMBL:Q6ZZJ1"
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp14 CDS
+        at AJ605139.1:48426..49247 with GenPept protein_id CAE53355.1 and UniProtKB/TrEMBL
+        Q6ZZJ1.
+    - reference: https://www.uniprot.org/uniprotkb/Q6ZZJ1
+      evidence_type: DATABASE_ASSERTION
+      snippet: AC   Q6ZZJ1;
+      retrieved_on: '2026-10-03'
+      notes: Current UniProtKB:Q6ZZJ1 resolves to a 273 aa Actinoplanes teichomyceticus
+        tcp14 sequence whose sequence is identical to CAE53355.1 and whose PDB mappings
+        cover Orf2* deacetylase structures.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53355.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /gene="tcp14"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein CAE53355.1 is the 273 aa Actinoplanes teichomyceticus ATCC
+        31131 tcp14 protein translated from AJ605139.1:48426..49247 and cross-referenced
+        to UniProtKB/TrEMBL Q6ZZJ1.
+- graph_id: teicoplanin-a2-3-tcp24-hpg4-acylation
+  scope: BIOSYNTHESIS
+  description: Actinoplanes teichomyceticus ATCC 31131 Tcp24/tAtf N-acylates the Hpg4
+    glucosamine of the deacetylated teicoplanin pseudoaglycone during teicoplanin
+    A2 maturation.
+  nodes:
+  - node_id: hpg4_glucosaminyl_bht6_n_acetylglucosaminyl_aglycone
+    label: Hpg4 glucosaminyl/Bht6 N-acetylglucosaminyl teicoplanin pseudoaglycone
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: fatty_acyl_coa
+    label: fatty acyl-CoA donor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: tcp24
+    label: Tcp24
+    node_type: ENZYME
+    identifier: UniProtKB:Q70AY4
+    grounding_status: GROUNDED
+  - node_id: hpg4_n_acylglucosaminyl_bht6_n_acetylglucosaminyl_aglycone
+    label: Hpg4 N-acylglucosaminyl/Bht6 N-acetylglucosaminyl teicoplanin pseudoaglycone
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: hpg4_glucosaminyl_bht6_n_acetylglucosaminyl_aglycone
+    predicate: is Hpg4-N-acylated by
+    object: tcp24
+    evidence:
+    - reference: DOI:10.1016/s1074-5521(04)00002-x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Li et al. cloned the 89 kbp teicoplanin biosynthetic locus and heterologously
+        assayed the key tAtf acyltransferase that acylates the Hpg4 glucosaminyl group.
+    - reference: DOI:10.1016/j.chembiol.2004.12.005
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: responsible for N-acylation of the glucosamine moiety
+      notes: Kruger et al. evaluated purified teicoplanin acyltransferase tAtf with
+        glycopeptide scaffolds and acyl-CoA donors, supporting direct Tcp24/tAtf N-acyl
+        transfer.
+    - reference: DOI:10.1021/ja0735857
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Howard-Jones et al. kinetically showed that tAtf strongly prefers aglycone-tethered
+        4-(2-aminoglucosyl)-teicoplanin over free UDP-2-aminoglucose for N-acylation.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000035
+      evidence_type: DATABASE_ASSERTION
+      snippet: The highest catalytic efficiency of the enzyme is achieved with the
+        glucosaminyl-teicoplanin pseudoaglycone as substrate.
+      retrieved_on: '2026-10-03'
+      notes: MITE0000035 is active and links Tcp24/tAtf to UniProtKB:Q70AY4, GenPept
+        CAE53365.1 and MIBiG BGC0000440. The entry also includes Orf2* deacetylation
+        reactions merged from retired MITE0000036, so only its acylation reaction
+        is used for Tcp24/tAtf.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000035: Acylation, Hydrolysis (100% identity)'
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp24 CDS
+        at AJ605139.1:61858..62829 with GenPept protein_id CAE53365.1, UniProtKB/TrEMBL
+        Q70AY4, and a 100% identity MITE0000035 annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q70AY4
+      evidence_type: DATABASE_ASSERTION
+      snippet: AC   Q70AY4;
+      retrieved_on: '2026-10-03'
+      notes: Current UniProtKB:Q70AY4 resolves to a 323 aa Actinoplanes teichomyceticus
+        tcp24 sequence whose sequence is identical to CAE53365.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53365.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /gene="tcp24"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein CAE53365.1 is the 323 aa Actinoplanes teichomyceticus ATCC
+        31131 tcp24 protein translated from AJ605139.1:61858..62829 and cross-referenced
+        to UniProtKB/TrEMBL Q70AY4.
+  - subject: fatty_acyl_coa
+    predicate: donates fatty acyl group via
+    object: tcp24
+    evidence:
+    - reference: DOI:10.1016/s1074-5521(04)00002-x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Li et al. cloned the 89 kbp teicoplanin biosynthetic locus and heterologously
+        assayed the key tAtf acyltransferase that acylates the Hpg4 glucosaminyl group.
+    - reference: DOI:10.1016/j.chembiol.2004.12.005
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: responsible for N-acylation of the glucosamine moiety
+      notes: Kruger et al. evaluated purified teicoplanin acyltransferase tAtf with
+        glycopeptide scaffolds and acyl-CoA donors, supporting direct Tcp24/tAtf N-acyl
+        transfer.
+    - reference: DOI:10.1021/ja0735857
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Howard-Jones et al. kinetically showed that tAtf strongly prefers aglycone-tethered
+        4-(2-aminoglucosyl)-teicoplanin over free UDP-2-aminoglucose for N-acylation.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000035
+      evidence_type: DATABASE_ASSERTION
+      snippet: The highest catalytic efficiency of the enzyme is achieved with the
+        glucosaminyl-teicoplanin pseudoaglycone as substrate.
+      retrieved_on: '2026-10-03'
+      notes: MITE0000035 is active and links Tcp24/tAtf to UniProtKB:Q70AY4, GenPept
+        CAE53365.1 and MIBiG BGC0000440. The entry also includes Orf2* deacetylation
+        reactions merged from retired MITE0000036, so only its acylation reaction
+        is used for Tcp24/tAtf.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000035: Acylation, Hydrolysis (100% identity)'
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp24 CDS
+        at AJ605139.1:61858..62829 with GenPept protein_id CAE53365.1, UniProtKB/TrEMBL
+        Q70AY4, and a 100% identity MITE0000035 annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q70AY4
+      evidence_type: DATABASE_ASSERTION
+      snippet: AC   Q70AY4;
+      retrieved_on: '2026-10-03'
+      notes: Current UniProtKB:Q70AY4 resolves to a 323 aa Actinoplanes teichomyceticus
+        tcp24 sequence whose sequence is identical to CAE53365.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53365.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /gene="tcp24"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein CAE53365.1 is the 323 aa Actinoplanes teichomyceticus ATCC
+        31131 tcp24 protein translated from AJ605139.1:61858..62829 and cross-referenced
+        to UniProtKB/TrEMBL Q70AY4.
+  - subject: tcp24
+    predicate: forms
+    object: hpg4_n_acylglucosaminyl_bht6_n_acetylglucosaminyl_aglycone
+    evidence:
+    - reference: DOI:10.1016/s1074-5521(04)00002-x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Li et al. cloned the 89 kbp teicoplanin biosynthetic locus and heterologously
+        assayed the key tAtf acyltransferase that acylates the Hpg4 glucosaminyl group.
+    - reference: DOI:10.1016/j.chembiol.2004.12.005
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: responsible for N-acylation of the glucosamine moiety
+      notes: Kruger et al. evaluated purified teicoplanin acyltransferase tAtf with
+        glycopeptide scaffolds and acyl-CoA donors, supporting direct Tcp24/tAtf N-acyl
+        transfer.
+    - reference: DOI:10.1021/ja0735857
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Howard-Jones et al. kinetically showed that tAtf strongly prefers aglycone-tethered
+        4-(2-aminoglucosyl)-teicoplanin over free UDP-2-aminoglucose for N-acylation.
+    - reference: https://mite.bioinformatics.nl/repository/MITE0000035
+      evidence_type: DATABASE_ASSERTION
+      snippet: The highest catalytic efficiency of the enzyme is achieved with the
+        glucosaminyl-teicoplanin pseudoaglycone as substrate.
+      retrieved_on: '2026-10-03'
+      notes: MITE0000035 is active and links Tcp24/tAtf to UniProtKB:Q70AY4, GenPept
+        CAE53365.1 and MIBiG BGC0000440. The entry also includes Orf2* deacetylation
+        reactions merged from retired MITE0000036, so only its acylation reaction
+        is used for Tcp24/tAtf.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000440.5/BGC0000440.gbk
+      evidence_type: DATABASE_ASSERTION
+      snippet: 'MITE0000035: Acylation, Hydrolysis (100% identity)'
+      retrieved_on: '2026-10-03'
+      notes: MIBiG BGC0000440.5 places the Actinoplanes teichomyceticus tcp24 CDS
+        at AJ605139.1:61858..62829 with GenPept protein_id CAE53365.1, UniProtKB/TrEMBL
+        Q70AY4, and a 100% identity MITE0000035 annotation.
+    - reference: https://www.uniprot.org/uniprotkb/Q70AY4
+      evidence_type: DATABASE_ASSERTION
+      snippet: AC   Q70AY4;
+      retrieved_on: '2026-10-03'
+      notes: Current UniProtKB:Q70AY4 resolves to a 323 aa Actinoplanes teichomyceticus
+        tcp24 sequence whose sequence is identical to CAE53365.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAE53365.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: /gene="tcp24"
+      retrieved_on: '2026-10-03'
+      notes: NCBI Protein CAE53365.1 is the 323 aa Actinoplanes teichomyceticus ATCC
+        31131 tcp24 protein translated from AJ605139.1:61858..62829 and cross-referenced
+        to UniProtKB/TrEMBL Q70AY4.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -631,4 +999,12 @@ curation_history:
   changes: Added the UniProtKB:Q6ZZJ7-grounded GtfA biosynthetic_pathway step and
     a BIOSYNTHESIS causal graph for Bht6 N-acetylglucosamine transfer onto the teicoplanin
     pseudoaglycone during teicoplanin A2-3 precursor biosynthesis.
+  llm_assisted: true
+- timestamp: '2026-10-03T06:03:31Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the UniProtKB:Q6ZZJ1-grounded Orf2* deacetylase and UniProtKB:Q70AY4-grounded
+    Tcp24/tAtf N-acyltransferase biosynthetic_pathway steps plus BIOSYNTHESIS causal
+    graphs for Hpg4 glucosamine deacetylation and N-acylation during teicoplanin A2-3
+    precursor biosynthesis.
   llm_assisted: true
