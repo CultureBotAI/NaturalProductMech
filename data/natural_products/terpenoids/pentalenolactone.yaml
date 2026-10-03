@@ -974,9 +974,10 @@ causal_graphs:
     evidence:
     - reference: DOI:10.1016/j.engmic.2025.100206
       evidence_type: PRIMARY_EXPERIMENT
-      notes: 'Section 2.1 and Figure S1: CD2 replaces an internal 1194-bp penI fragment
-        with an NdeI site. Table S1''s pntI label for CD2 conflicts with the main
-        text and pWHU1708 construct in Table S2; the latter identify penI.'
+      notes: 'Main-text deletion paragraph and Figure S1: CD2 replaces an internal
+        1194-bp penI fragment with an NdeI site. Table S1''s pntI label for CD2 conflicts
+        with the main text and pWHU1708 construct in Table S2; the latter identify
+        penI.'
       snippet: an internal 1194-bp fragment
     - reference: https://www.uniprot.org/uniprotkb/E3VWK7
       evidence_type: DATABASE_ASSERTION
@@ -1217,4 +1218,11 @@ curation_history:
     PntI redox graph (17 new cited edges). Separated native deletion, purified racemate
     oxidation, and engineered whole-cell evidence, preserved the trace-acid observation,
     and retained SEEDED with imported claims unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-03T13:00:16Z'
+  curator: codex
+  action: CORRECTED_PENI_EVIDENCE_LOCATOR
+  changes: 'Addressed review issue #491: replaced the unsupported Section 2.1 locator
+    with the unnumbered main-text deletion paragraph and Figure S1. Protein identities,
+    biological claims and the Table S1 discrepancy are unchanged.'
   llm_assisted: true
