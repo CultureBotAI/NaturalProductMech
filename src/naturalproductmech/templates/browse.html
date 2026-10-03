@@ -29,10 +29,10 @@
   var groups = Array.from(document.querySelectorAll('.browse-group'));
   var rows = Array.from(document.querySelectorAll('li[data-search]'));
   function filter() {
-    var term = query.value.trim().toLocaleLowerCase();
+    var term = query.value.trim().toLowerCase();
     var count = 0;
     rows.forEach(function (row) {
-      row.hidden = !row.dataset.search.toLocaleLowerCase().includes(term);
+      row.hidden = !row.dataset.search.toLowerCase().includes(term);
       if (!row.hidden) count += 1;
     });
     groups.forEach(function (group) {
