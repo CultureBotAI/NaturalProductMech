@@ -69,6 +69,211 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q9X2V8
+  enzyme_label: McjB
+  substrate: UniProtKB:Q9X2V7
+  proposed: false
+  notes: Leader cleavage in coupled McjB/McjC maturation of microcin J25. McjB removes
+    the 37-residue McjA leader in the ATP-dependent reaction system. McjC is also
+    required; the core intermediate is not assigned a chemical identifier.
+  evidence:
+  - reference: DOI:10.1002/cbic.201200016
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Yan et al. assigned McjB the proteolytic function using in vitro maturation
+      and reaction-intermediate detection; the enzymes were functionally interdependent.
+    snippet: a new ATP-dependent cysteine protease
+  - reference: https://www.uniprot.org/uniprotkb/Q9X2V7
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: The 58-residue E. coli AY25 McjA precursor matches GenPept AAD28494.1.
+      Residues 1-37 form the leader and 38-58 the 21-residue core. The mature Gly1-Glu8
+      cross-link corresponds to precursor residues 38 and 45; the full-length UniProt
+      accession here denotes the precursor, not the mature compound.
+  - reference: https://www.uniprot.org/uniprotkb/Q9X2V8
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: E. coli AY25 mcjB; its 208-residue sequence exactly matches GenPept AAD28495.1
+      from AF061787.1, the sequence underlying MIBiG BGC0000581.
+  - reference: https://mite.bioinformatics.nl/repository/MITE0000056
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: MITE identifies McjB/Q9X2V8 in BGC0000581 and curates leader cleavage,
+      with McjC as an auxiliary enzyme.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000581.6/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: Active E. coli AY25 microcin J25 cluster with mcjA, mcjB and mcjC. The
+      McjC feature uses the legacy AAD28496.1 sequence; corrected protein grounding
+      is documented separately in the McjC step.
+- step_number: 2
+  enzyme_id: UniProtKB:Q9X2V9
+  enzyme_label: McjC
+  product: naturalproductmech:mibig-c68748ca1b
+  proposed: false
+  notes: ATP-dependent macrolactam formation links the core N-terminal Gly1 amine
+    to the Glu8 side-chain carboxyl group during lasso maturation. McjB is also required.
+    The two numbered steps describe processing chemistry, not independently reconstituted
+    enzymes or a freely released core intermediate. Protein grounding uses corrected
+    CAJ40934.1, not the discrepant AAD28496.1 sequence.
+  evidence:
+  - reference: DOI:10.1002/cbic.201200016
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Yan et al. confirmed McjC's lactam-synthetase function in coupled maturation
+      assays and detected intermediates.
+    snippet: McjC was confirmed to be a lactam synthetase
+  - reference: DOI:10.1016/j.chembiol.2007.06.004
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: Duquesne et al. reconstituted McjA maturation with both recombinant enzymes
+      and linked McjC to the Gly1-Glu8 amide bond.
+  - reference: https://www.uniprot.org/uniprotkb/Q9X2V9
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: E. coli AY25 McjC is represented by the corrected 513-residue sequence,
+      exactly matching CAJ40934.1 from AM116873.1/pTUC202. UniProt links this sequence
+      to Duquesne et al. (PMID:17656316). Its sequence caution identifies the legacy
+      442-residue AAD28496.1 in AF061787.1/MIBiG BGC0000581 as discrepant; these two
+      protein sequences are not treated as identical.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAJ40934.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: Corrected 513-residue mcjC coding sequence from AM116873.1:7..1548 on pTUC202;
+      exact sequence match to UniProtKB:Q9X2V9.
+  - reference: https://mite.bioinformatics.nl/repository/MITE0000055
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: MITE curates McjC/Q9X2V9 macrolactam formation with McjB as an auxiliary
+      enzyme and explicitly flags the UniProt/GenPept sequence mismatch.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000581.6/index.html
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-03'
+    notes: Active E. coli AY25 microcin J25 cluster with mcjA, mcjB and mcjC. The
+      McjC feature uses the legacy AAD28496.1 sequence; corrected protein grounding
+      is documented separately in the McjC step.
+causal_graphs:
+- graph_id: microcin-j25-mcjbc-lasso-maturation
+  scope: BIOSYNTHESIS
+  description: Coupled E. coli AY25 McjA precursor processing by McjB and McjC. Both
+    enzymes are required for maturation; a physical complex is suggested, not asserted
+    as established. The product is the seeded microcin J25 structure with stereochemistry
+    incompletely specified in its source SMILES.
+  nodes:
+  - node_id: mcja
+    label: McjA full-length precursor
+    node_type: PRECURSOR
+    identifier: UniProtKB:Q9X2V7
+    grounding_status: GROUNDED
+  - node_id: mcjb
+    label: McjB leader peptidase
+    node_type: ENZYME
+    identifier: UniProtKB:Q9X2V8
+    grounding_status: GROUNDED
+  - node_id: mcjc
+    label: McjC lactam synthetase
+    node_type: ENZYME
+    identifier: UniProtKB:Q9X2V9
+    grounding_status: GROUNDED
+  - node_id: leader_cleavage
+    label: McjA leader cleavage
+    node_type: PROCESS
+  - node_id: core_intermediate
+    label: Cleaved McjA core intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: lasso_maturation
+    label: Gly1-Glu8 macrolactam formation
+    node_type: PROCESS
+  - node_id: microcin_j25
+    label: microcin J25
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-c68748ca1b
+    grounding_status: GROUNDED
+  edges:
+  - subject: mcja
+    predicate: is substrate for
+    object: leader_cleavage
+    evidence:
+    - reference: DOI:10.1002/cbic.201200016
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The McjA precursor undergoes proteolytic processing during McjB/McjC
+        maturation.
+    - reference: https://www.uniprot.org/uniprotkb/Q9X2V7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: The 58-residue E. coli AY25 McjA precursor matches GenPept AAD28494.1.
+        Residues 1-37 form the leader and 38-58 the 21-residue core. The mature Gly1-Glu8
+        cross-link corresponds to precursor residues 38 and 45; the full-length UniProt
+        accession here denotes the precursor, not the mature compound.
+  - subject: mcjb
+    predicate: catalyzes
+    object: leader_cleavage
+    evidence:
+    - reference: DOI:10.1002/cbic.201200016
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: McjB provides the proteolytic activity in the coupled maturation assay;
+        this does not assert McjB acts alone.
+    - reference: https://www.uniprot.org/uniprotkb/Q9X2V8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: E. coli AY25 mcjB; its 208-residue sequence exactly matches GenPept AAD28495.1
+        from AF061787.1, the sequence underlying MIBiG BGC0000581.
+  - subject: mcjc
+    predicate: is required for
+    object: leader_cleavage
+    evidence:
+    - reference: DOI:10.1002/cbic.201200016
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: McjC is required for McjB-dependent processing under the reported assay
+        conditions; this edge denotes functional dependence, not cleavage by McjC.
+      snippet: The two enzymes were functionally interdependent
+  - subject: leader_cleavage
+    predicate: produces
+    object: core_intermediate
+    evidence:
+    - reference: DOI:10.1002/cbic.201200016
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Intermediate detection assigns leader removal before ring closure. The
+        node does not assert release of a freely diffusible core peptide.
+  - subject: core_intermediate
+    predicate: is substrate for
+    object: lasso_maturation
+    evidence:
+    - reference: DOI:10.1002/cbic.201200016
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Ring closure follows precursor cleavage within the coupled maturation
+        system.
+  - subject: mcjc
+    predicate: catalyzes
+    object: lasso_maturation
+    evidence:
+    - reference: DOI:10.1002/cbic.201200016
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: McjC supplies lactam-synthetase activity in the presence of McjB.
+    - reference: https://www.uniprot.org/uniprotkb/Q9X2V9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: E. coli AY25 McjC is represented by the corrected 513-residue sequence,
+        exactly matching CAJ40934.1 from AM116873.1/pTUC202. UniProt links this sequence
+        to Duquesne et al. (PMID:17656316). Its sequence caution identifies the legacy
+        442-residue AAD28496.1 in AF061787.1/MIBiG BGC0000581 as discrepant; these
+        two protein sequences are not treated as identical.
+  - subject: mcjb
+    predicate: is required for
+    object: lasso_maturation
+    evidence:
+    - reference: DOI:10.1002/cbic.201200016
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: McjB and McjC are functionally interdependent in the reported assays;
+        this edge does not assign the amide-bond-forming chemistry to McjB.
+  - subject: lasso_maturation
+    predicate: produces
+    object: microcin_j25
+    evidence:
+    - reference: DOI:10.1002/cbic.201200016
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The wild-type precursor yields mature microcin J25. Branched-cyclic variants
+        from mutated precursors are not equated to this compound.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -78,3 +283,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-03T11:21:31Z'
+  curator: codex
+  action: ADDED_MCJABC_BIOSYNTHESIS_GRAPH
+  changes: Added McjA/Q9X2V7, McjB/Q9X2V8 and corrected McjC/Q9X2V9 to two microcin
+    J25 maturation steps and a BIOSYNTHESIS graph with claim-level citations. Recorded
+    McjB/McjC interdependence and the legacy McjC sequence discrepancy.
+  llm_assisted: true

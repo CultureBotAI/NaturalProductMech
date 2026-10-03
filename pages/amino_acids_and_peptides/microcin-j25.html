@@ -71,7 +71,89 @@ same claim.</p>
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>McjB<br><span class="mono">UniProtKB:Q9X2V8</span></td>
+  <td class="mono"></td>
+  <td class="mono">UniProtKB:Q9X2V7 &rarr; ungrounded</td>
+  <td class="mono">DOI:10.1002/cbic.201200016</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>McjC<br><span class="mono">UniProtKB:Q9X2V9</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; naturalproductmech:mibig-c68748ca1b</td>
+  <td class="mono">DOI:10.1002/cbic.201200016</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: Leader cleavage in coupled McjB/McjC maturation of microcin J25. McjB removes the 37-residue McjA leader in the ATP-dependent reaction system. McjC is also required; the core intermediate is not assigned a chemical identifier.</p><p class="sub">Step 2: ATP-dependent macrolactam formation links the core N-terminal Gly1 amine to the Glu8 side-chain carboxyl group during lasso maturation. McjB is also required. The two numbered steps describe processing chemistry, not independently reconstituted enzymes or a freely released core intermediate. Protein grounding uses corrected CAJ40934.1, not the discrepant AAD28496.1 sequence.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 8 edges</span></h2>
+<p class="sub">Coupled E. coli AY25 McjA precursor processing by McjB and McjC. Both enzymes are required for maturation; a physical complex is suggested, not asserted as established. The product is the seeded microcin J25 structure with stereochemistry incompletely specified in its source SMILES.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>McjA full-length precursor</td>
+  <td>is substrate for</td>
+  <td>McjA leader cleavage</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201200016<br>https://www.uniprot.org/uniprotkb/Q9X2V7</td>
+</tr>
+<tr>
+  <td>McjB leader peptidase</td>
+  <td>catalyzes</td>
+  <td>McjA leader cleavage</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201200016<br>https://www.uniprot.org/uniprotkb/Q9X2V8</td>
+</tr>
+<tr>
+  <td>McjC lactam synthetase</td>
+  <td>is required for</td>
+  <td>McjA leader cleavage</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201200016</td>
+</tr>
+<tr>
+  <td>McjA leader cleavage</td>
+  <td>produces</td>
+  <td>Cleaved McjA core intermediate</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201200016</td>
+</tr>
+<tr>
+  <td>Cleaved McjA core intermediate</td>
+  <td>is substrate for</td>
+  <td>Gly1-Glu8 macrolactam formation</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201200016</td>
+</tr>
+<tr>
+  <td>McjC lactam synthetase</td>
+  <td>catalyzes</td>
+  <td>Gly1-Glu8 macrolactam formation</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201200016<br>https://www.uniprot.org/uniprotkb/Q9X2V9</td>
+</tr>
+<tr>
+  <td>McjB leader peptidase</td>
+  <td>is required for</td>
+  <td>Gly1-Glu8 macrolactam formation</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201200016</td>
+</tr>
+<tr>
+  <td>Gly1-Glu8 macrolactam formation</td>
+  <td>produces</td>
+  <td>microcin J25</td>
+  <td></td>
+  <td class="mono">DOI:10.1002/cbic.201200016</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
