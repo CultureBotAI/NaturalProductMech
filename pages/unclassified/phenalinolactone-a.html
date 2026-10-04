@@ -238,6 +238,235 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">10 nodes, 12 edges</span></h2>
+<p class="sub">Native Tu6071 disruption and rescue evidence for PlaT1-PlaT3 from Schnell 2007. Analytical cultures used NL111 medium at 28 C, with standard harvest near 168 h and HPLC/ESI-MS. These experiments establish production phenotypes, not isolated enzyme reactions or a reaction order.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Tu6071-derived XT1 internal PlaT1 gene lesion</td>
+  <td>inactivates_encoding_gene_of</td>
+  <td>Native PlaT1 parent</td>
+  <td>BamHI-site fill-in frameshift, not gene deletion. The mutagenesis plasmid was sequence-checked; loss of apramycin resistance and PCR/BamHI tests identified double-crossover clones 7 and 8. No complete mutant-genome sequence is asserted.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/protein/ABB69742.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071-derived XT1 internal PlaT1 gene lesion</td>
+  <td>abolishes_detectable</td>
+  <td>Detectable phenalinolactone A and D production</td>
+  <td>Both double-crossover clones lacked detectable A/D and recognizable intermediates; parallel wild-type cultures produced A/D. Extra samples at 96, 120 and 144 h and chloroform extraction did not reveal intermediates.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>pS-25co genomic-fragment complementation</td>
+  <td>supplies_wild_type_encoding_gene_for</td>
+  <td>Native PlaT1 parent</td>
+  <td>pS-25co is an ermE*-driven pSET152-derived genomic-fragment rescue. Curator alignment of Co25-F/R to DQ230532.1 gives 16385..17855; primer changes lie outside the target CDS, but partial plaO1/plaT2 sequence is included. This is not an isolated-CDS construct.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>pS-25co genomic-fragment complementation</td>
+  <td>restores_detectable</td>
+  <td>Detectable phenalinolactone A and D production</td>
+  <td>All three tested complemented cultures recovered A and D; PCR/restriction analysis also supported the rescue construct. This does not exclude every possible off-target change or prove purified-enzyme sufficiency.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071-derived XT2 internal PlaT2 gene lesion</td>
+  <td>inactivates_encoding_gene_of</td>
+  <td>Native PlaT2 parent</td>
+  <td>EcoNI-site fill-in frameshift, not whole-gene removal. The mutagenesis plasmid was sequence-checked; double-crossover clones 3, 4 and 5 were identified by apramycin sensitivity and PCR/EcoNI tests. A mutant-only amplicon in the preceding single crossover is not evidence that its wild-type allele was absent.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/protein/ABB69743.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071-derived XT2 internal PlaT2 gene lesion</td>
+  <td>abolishes_detectable</td>
+  <td>Detectable phenalinolactone A and D production</td>
+  <td>Double-crossover clones 3 and 5 lacked detectable A/D or recognizable intermediates, unlike the parallel wild type. The single-crossover CD6/CD7 phenotype was attributed to possible polarity on plaO1, not PlaT2 chemistry.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>pS-26co genomic-fragment complementation</td>
+  <td>supplies_wild_type_encoding_gene_for</td>
+  <td>Native PlaT2 parent</td>
+  <td>pS-26co is an ermE*-driven pSET152-derived genomic-fragment rescue. Curator alignment of 26co-F/R to DQ230532.1 gives 17732..19513; primer changes lie outside the target CDS, but partial plaT1/plaT3 sequence is included. This is not an isolated-CDS construct.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>pS-26co genomic-fragment complementation</td>
+  <td>restores_detectable</td>
+  <td>Detectable phenalinolactone A and D production</td>
+  <td>All four tested complemented cultures recovered detectable A and D. This is genetic rescue, not a purified cyclase assay.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071-derived XT3 internal PlaT3 gene lesion</td>
+  <td>inactivates_encoding_gene_of</td>
+  <td>Native PlaT3 parent</td>
+  <td>Internal 223-bp BstEII deletion with a downstream frameshift, not whole-gene removal. Native BstEII cuts are 223 bp apart. The reported double crossover was distinguished by apramycin sensitivity and a shorter PCR amplicon relative to the cosmid control. The earlier single-crossover control PCR failed.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/protein/ABB69744.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071-derived XT3 internal PlaT3 gene lesion</td>
+  <td>abolishes_detectable</td>
+  <td>Detectable phenalinolactone A and D production</td>
+  <td>The double-crossover strain lacked detectable A/D or recognizable intermediates after ethyl-acetate or chloroform extraction, whereas the single crossover retained low A/D production. These are detection-limited culture observations.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>pS-27co genomic-fragment complementation</td>
+  <td>supplies_wild_type_encoding_gene_for</td>
+  <td>Native PlaT3 parent</td>
+  <td>pS-27co is an ermE*-driven pSET152-derived genomic-fragment rescue. Curator alignment of Co27-F/R to DQ230532.1 gives 19411..20594; primer changes lie outside the target CDS, but partial plaT2/plaH sequence is included. This is not an isolated-CDS construct.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>pS-27co genomic-fragment complementation</td>
+  <td>restores_detectable</td>
+  <td>Detectable phenalinolactone A and D production</td>
+  <td>All three tested complemented clones recovered A/D production, reported as slightly higher than wild type without a numerical fold change. PCR supported the introduced intact gene; recovery is not a direct prenyltransferase assay.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 19 edges</span></h2>
+<p class="sub">Alsup et al. 2024 heterologous backbone reconstitution with native Tu6071 genes. Hosts were S. albus J1074 and S. venezuelae ATCC 10712; HA cultures were screened after 7 days at 28 C by LC-MS against empty-vector controls. The four-gene cassette makes scaffold analogs, not phenalinolactone A. Enzyme roles and order below are inferences from gene combinations, not purified-protein turnover.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>pJR3008 plaT4321 heterologous cultures</td>
+  <td>supplies_wild_type_encoding_gene_for</td>
+  <td>Native PlaT1 parent</td>
+  <td>Genomic PCR and TEDA assembled PlaT1 in the sp44-promoter/sr40-RBS cassette. The authors report sequence-confirming assembled plasmids; curator primer mapping supports the native CDS boundaries, not independent full-plasmid sequencing. Candidate UniProt mapping was not verified because official services failed; the exact native GenPept accession is used instead.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A<br>https://www.ncbi.nlm.nih.gov/protein/ABB69742.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>pJR3008 plaT4321 heterologous cultures</td>
+  <td>supplies_wild_type_encoding_gene_for</td>
+  <td>Native PlaT2 parent</td>
+  <td>Genomic PCR and TEDA assembled PlaT2 in the sp44-promoter/sr40-RBS cassette. The authors report sequence-confirming assembled plasmids; curator primer mapping supports the native CDS boundaries, not independent full-plasmid sequencing. Candidate UniProt mapping was not verified because official services failed; the exact native GenPept accession is used instead.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A<br>https://www.ncbi.nlm.nih.gov/protein/ABB69743.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>pJR3008 plaT4321 heterologous cultures</td>
+  <td>supplies_wild_type_encoding_gene_for</td>
+  <td>Native PlaT3 parent</td>
+  <td>Genomic PCR and TEDA assembled PlaT3 in the sp44-promoter/sr40-RBS cassette. The authors report sequence-confirming assembled plasmids; curator primer mapping supports the native CDS boundaries, not independent full-plasmid sequencing. Candidate UniProt mapping was not verified because official services failed; the exact native GenPept accession is used instead.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A<br>https://www.ncbi.nlm.nih.gov/protein/ABB69744.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>pJR3008 plaT4321 heterologous cultures</td>
+  <td>supplies_wild_type_encoding_gene_for</td>
+  <td>Native PlaT4 parent</td>
+  <td>Genomic PCR and TEDA assembled PlaT4 in the sp44-promoter/sr40-RBS cassette. The authors report sequence-confirming assembled plasmids; curator primer mapping supports the native CDS boundaries, not independent full-plasmid sequencing. Candidate UniProt mapping was not verified because official services failed; the exact native GenPept accession is used instead.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A<br>https://www.ncbi.nlm.nih.gov/protein/ABB69754.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>pJR3008 plaT4321 heterologous cultures</td>
+  <td>produces_detectable</td>
+  <td>Cyclized amino-acid-tail products 1 and 2</td>
+  <td>S. albus produced 1 and 2; S. venezuelae produced only 1. Isolated S. albus products were characterized by HRMS and NMR: 1 has a C-3 ketone, 2 a C-3 hydroxyl. Both have an amino-acid tail and lack the CD6/CD7 C-15/C-16 olefin. They are neither CD6/CD7 nor mature phenalinolactone A. C-17 absolute configuration remains unresolved; host amination and 2-to-1 oxidation were not directly established.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>pJR3007 plaT431 cultures lacking plaT2</td>
+  <td>omits_encoding_gene_of</td>
+  <td>Native PlaT2 parent</td>
+  <td>pJR3007 contains plaT4, plaT3 and plaT1, not plaT2. This is cassette omission in heterologous hosts, not a native-producer deletion.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>pJR3007 plaT431 cultures lacking plaT2</td>
+  <td>abolishes_detectable</td>
+  <td>Cyclized amino-acid-tail products 1 and 2</td>
+  <td>Removing plaT2 abolished detectable 1/2 and other tricyclic products in both hosts under the reported screening conditions.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>pJR3007 plaT431 cultures lacking plaT2</td>
+  <td>produces_detectable</td>
+  <td>Metabolites 3-10 lacking the tricyclic diterpene core</td>
+  <td>S. venezuelae::plaT431 showed 3-10; S. albus::plaT431 showed 8-10. Compounds 3-7 and 10 were isolated and structurally characterized; 8/9 are MS-based proposals. These host metabolites lack the tricyclic diterpene core, but 6/7 contain tetrahydrofuran rings; they are not all acyclic, native on-pathway intermediates or direct PlaT1 products.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>plaT4, plaT41 and plaT421 host cultures lacking plaT3</td>
+  <td>omits_encoding_gene_of</td>
+  <td>Native PlaT3 parent</td>
+  <td>pJR3001, pJR3002 and pJR3005 encode plaT4, plaT41 and plaT421 respectively.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>plaT4, plaT41 and plaT421 host cultures lacking plaT3</td>
+  <td>fails_to_produce_detectable</td>
+  <td>Metabolites 3-10 lacking the tricyclic diterpene core</td>
+  <td>Constructs without plaT3 did not yield the monitored diterpenoids. Metabolites 11-13, proposed to have unoxidized prenyl tails, likewise required plaT3; their structures remained MS-based proposals because isolation for NMR was unsuccessful. The source assigns inconsistent negative-ion masses to compound 11 between the nominal Figure 3D assignment and HRESIMS text/Figure S54; no corrected exact identity or mass is selected here.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>pJR3004 plaT43(D67A) heterologous cultures</td>
+  <td>tests_substitution_in</td>
+  <td>Native PlaT3 parent</td>
+  <td>The reference accession denotes wild-type PlaT3, not the D67A variant. Curator alignment of SI mutagenic primers changes the native GAC codon at residue 67 to GCC (D67A). F1 maps to upstream plaT4 in the coupled construct; no independent mutant-plasmid deposit was inspected.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A<br>DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>pJR3004 plaT43(D67A) heterologous cultures</td>
+  <td>fails_to_produce_detectable</td>
+  <td>Metabolites 3-10 lacking the tricyclic diterpene core</td>
+  <td>The plaT43(D67A) cultures did not produce 3-10 in either host; the S. albus traces also lacked 11-13. This supports a PlaT3-dependent step but is not an isolated-protein activity or abundance/stability assay.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>Native PlaT4 parent</td>
+  <td>is_proposed_to_catalyze</td>
+  <td>Proposed geranylgeranyl diphosphate supply</td>
+  <td>PlaT4 is assigned GGPP synthesis in the model. All tested gene combinations include plaT4; this study does not independently test its necessity by omission or demonstrate purified PlaT4 turnover.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>Native PlaT3 parent</td>
+  <td>is_proposed_to_catalyze</td>
+  <td>Proposed prenylation of a three-carbon acceptor</td>
+  <td>Gene-combination and D67A results support prenylation before oxidation and cyclization. GGPP plus a three-carbon alpha-keto-acid acceptor is the proposed reaction; the acceptor identity/origin is unresolved, and an amino-acid acceptor was not excluded.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>Native PlaT1 parent</td>
+  <td>is_proposed_to_catalyze</td>
+  <td>Proposed terminal epoxidation of the prenylated intermediate</td>
+  <td>The revised model places terminal epoxidation after prenylation. No purified PlaT1 turnover or isolated epoxy intermediate is shown. Oxidized 3-10 can also appear without plaT1, with strong host-specific differences; their oxidation must not all be assigned to PlaT1.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>Native PlaT2 parent</td>
+  <td>is_proposed_to_catalyze</td>
+  <td>Proposed epoxide-initiated tricyclic-core formation</td>
+  <td>Cassette omission and product structures support epoxide-initiated cyclization to the anti/anti/syn core with the observed C-3 hydroxyl orientation. The study does not provide isolated-enzyme kinetics or establish the complete absolute configuration of products 1/2.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>Proposed geranylgeranyl diphosphate supply</td>
+  <td>is_proposed_to_supply_substrate_for</td>
+  <td>Proposed prenylation of a three-carbon acceptor</td>
+  <td>GGPP supply precedes the inferred prenylation step; this is not the physical gene order or an observed purified-enzyme cascade.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>Proposed prenylation of a three-carbon acceptor</td>
+  <td>is_inferred_to_precede</td>
+  <td>Proposed terminal epoxidation of the prenylated intermediate</td>
+  <td>The 2024 reconstitution revises the early epoxidation-first proposal; the older native knockouts alone did not resolve this order.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+<tr>
+  <td>Proposed terminal epoxidation of the prenylated intermediate</td>
+  <td>is_inferred_to_precede</td>
+  <td>Proposed epoxide-initiated tricyclic-core formation</td>
+  <td>The order applies to productive backbone formation, not every host oxidation or degradation reaction observed in the extracts.</td>
+  <td class="mono">DOI:10.1039/D4CB00138A</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
