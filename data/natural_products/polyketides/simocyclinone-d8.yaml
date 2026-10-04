@@ -790,6 +790,7 @@ causal_graph_refs:
 - simocyclinone-d8-simx-simex2-resistance-and-export
 - simocyclinone-d8-simc7-heterologous-genetics
 - simocyclinone-d8-simc7-ketoreduction-and-assay-limits
+- simocyclinone-d8-simc7-mutant-activities-and-cd-controls
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -839,4 +840,13 @@ curation_history:
     G9VYV4 without conflating the engineered protein; retained review #538 construct,
     promoter, concentration, yield and physiological-substrate limits. Preserved all
     seven older graphs, source fields, history and SEEDED status.'
+  llm_assisted: true
+- timestamp: '2026-10-04T10:40:26Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added the 2016 SimC7 mutant-activity and CD-control graph with six engineered
+    variants, native G9VYV4 parent, tagged comparator, nine-primer audit and individually
+    cited measurements. Retained review #539 uncertainty conflicts, residual activity
+    and limited CD interpretation. Preserved all nine earlier graphs, source fields,
+    history, incomplete stereochemistry and SEEDED status.'
   llm_assisted: true
