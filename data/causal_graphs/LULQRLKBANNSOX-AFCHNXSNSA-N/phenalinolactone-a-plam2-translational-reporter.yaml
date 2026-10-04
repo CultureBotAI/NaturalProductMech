@@ -1,0 +1,150 @@
+record_id: naturalproductmech:mibig-e29f83c77b
+standard_inchi_key: LULQRLKBANNSOX-AFCHNXSNSA-N
+graph:
+  graph_id: phenalinolactone-a-plam2-translational-reporter
+  scope: BIOSYNTHESIS
+  description: Myronovskyi et al. 2011 PlaM2-HL4-GusA reporter in native Tu6071. The
+    exact native PlaM2 parent is not the engineered fusion. GusA signal tracks a translational-reporter
+    construct, not native methyltransferase turnover or an absolute protein concentration.
+    Reporter and six-day phenalinolactone productivity rank media differently. Congener-specific
+    titers and native methylation chemistry are not assigned. Numerical values are
+    reported text values; Figure 8 was not independently digitized or visually verified.
+  nodes:
+  - node_id: plam2
+    label: Native PlaM2 parent (putative methyltransferase)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69747.1
+  - node_id: fusion
+    label: Engineered PlaM2-HL4-GusA fusion
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: strain
+    label: Tu6071 pGUSHL4plaM2aadA reporter strain
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: control
+    label: Promoterless plaM2 fusion control construct
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reporter_profile
+    label: Medium- and time-dependent PlaM2-GusA reporter signal
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: production_profile
+    label: Six-day medium-dependent phenalinolactone output
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: fusion
+    predicate: uses_native_parent_sequence_from
+    object: plam2
+    notes: PlaM2 native parent ABB69747.1 is 281 aa, DQ230532.1:22884..23729 (+),
+      Tu6071 taxon 355249; GenPept, GenBank and MIBiG translations match. The forward
+      primer includes the upstream region and the M2gusfus reverse homology ends at
+      23726, before the native stop codon. The gene was fused through HL4 to GusA
+      lacking its own start codon. The parent accession is not an identifier for this
+      fusion or its complete junction. GenPept retains a putative rRNA-methyltransferase
+      name; this reporter study does not demonstrate an rRNA or natural-product substrate.
+      No active exact UniProtKB mapping was found in the bounded official gene/taxon
+      and EMBL-xref query.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Translational-fusion methods p. 5373; Results pp. 5376-5377; Discussion
+        p. 5381.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69747.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PlaM2, 281 aa, DQ230532.1:22884..23729 (+); putative annotation,
+        not a purified activity measurement.
+      retrieved_on: '2026-10-04'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator native sequence comparison and Table 2 primer homology alignment:
+        forward span 22371..22390; reverse 23707..23726. No complete fusion sequence
+        is claimed.'
+  - subject: strain
+    predicate: carries_expression_construct_for
+    object: fusion
+    notes: The pTESa-based integrative pGUSHL4aadA vector contains an HL4 linker and
+      start-codon-free gusA. PlaM2 without its stop codon was inserted through XbaI/EcoRV
+      to produce pGUSHL4plaM2aadA, transferred into Tu6071. The upstream aadA cassette
+      with T4 terminators limits readthrough by design. Construct carriage and GusA
+      activity do not establish native PlaM2 catalytic competence or a measured copy
+      number.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 1 p. 5371; translational-fusion methods p. 5373; Results p. 5376
+        and Figure 7 caption p. 5378.
+  - subject: control
+    predicate: is_promoterless_comparator_for
+    object: strain
+    notes: The source constructed pGUSHL4plaM2aadAcontr with a promoterless plaM2
+      PCR fragment as control. The m2fuscontrxba forward homology starts at 22852,
+      rather than the experimental upstream 22371 region. This identifies the described
+      control design, not a quantified zero background signal or a complete sequenced
+      plasmid.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 1 and Table 2, pp. 5371-5372; control construction p. 5373.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator primer homology comparison against DQ230532.1: control forward
+        22852..22873 versus experimental 22371..22390; shared reverse before the PlaM2
+        stop.'
+  - subject: strain
+    predicate: has_measured_reporter_profile
+    object: reporter_profile
+    notes: Text reports 24-h GusA activities of 0.3, 0.07, 0.0065 and 0.047 mU/mg
+      in SG, TSB, NL111 and HA, respectively. Follow-up in SG/NL111 gave 0.49/0.27
+      mU/mg on day 3 and 0.44/0.27 mU/mg on day 5. Units are retained as reported;
+      these are not molar PlaM2 abundance or methyl-transfer rates. Lysate p-nitrophenyl-glucuronide
+      hydrolysis was read at OD415 after 20 min at 37 C; the paper specifies three
+      independent experiments with means and standard errors. Mass-normalization details
+      and Figure 8 error bars are not re-established from the inspected text. Lower
+      day-5 SG activity was attributed speculatively to autolysis, not supported here
+      by a separate lysis measurement.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Spectrophotometric and statistical methods pp. 5372-5373; translational-fusion
+        results pp. 5376-5377; Figure 8 caption p. 5378.
+  - subject: strain
+    predicate: has_reported_medium_productivity_profile
+    object: production_profile
+    notes: Six-day extracts from SG, HA, TSB and NL111 were compared by LC-MS. The
+      text reports no detected phenalinolactone in TSB, about four times the SG amount
+      in HA and about five times in NL111, recalculated to equal wet biomass. These
+      are relative phenalinolactone outputs, not absolute congener-specific titers
+      or equivalence of culture growth. The production sampling time differs from
+      the reporter time course.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Translational-fusion/medium-comparison results p. 5377.
+  - subject: reporter_profile
+    predicate: does_not_rank_media_like
+    object: production_profile
+    notes: SG gives the larger PlaM2-GusA signals, while NL111 gives the largest reported
+      six-day product output. Reporter expression therefore does not identify the
+      highest-productivity medium in this experiment. Precursor/cofactor limitation
+      is the authors' proposed explanation, not a direct measurement of limiting metabolites
+      or a PlaM2 reaction.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Medium-comparison results p. 5377.
+      snippet: the highest level of structural gene expression does not reflect the
+        highest productivity
+curation_history:
+- timestamp: '2026-10-04T04:13:55Z'
+  curator: codex
+  action: GRAPH_CURATED
+  changes: 'Added primary-cited regulator or PlaM2 reporter evidence, exact native
+    parents and explicit engineered contexts. Addressed #528: trace-versus-cessation
+    and plaM1/plaM2 discrepancies, internal disruption/construct limits, inference
+    versus measured reporter output, and rejected inactive UniProt identities. Figure
+    bars not independently inspected or digitized.'
+  llm_assisted: true

@@ -102,6 +102,8 @@ causal_graph_refs:
 - phenalinolactone-a-plao2-bounded-genetics
 - phenalinolactone-a-plao3-genetics-and-inferred-function
 - phenalinolactone-a-plat5-plat6-joint-constructs
+- phenalinolactone-a-plar-genetics-and-promoter-reporters
+- phenalinolactone-a-plam2-translational-reporter
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -209,4 +211,13 @@ curation_history:
     parent identities and primary-source controls. Preserved all ten previous graphs,
     source-owned fields, history, SEEDED status and incomplete stereochemistry; addressed
     source-review #527 without claiming individual enzyme effects or rate limitation.'
+  llm_assisted: true
+- timestamp: '2026-10-04T04:13:55Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added native PlaR1 ABB69733.1, PlaR2 ABB69734.1, PlaR3 ABB69766.1 and
+    PlaM2 ABB69747.1 in two reporter-context components, with a separate ungrounded
+    PlaM2-HL4-GusA fusion: 20 nodes, 27 primary-cited edges and two verified short
+    snippets. Addressed review #528. Preserved all 11 earlier graphs, source fields,
+    history, SEEDED status and incomplete stereochemistry.'
   llm_assisted: true
