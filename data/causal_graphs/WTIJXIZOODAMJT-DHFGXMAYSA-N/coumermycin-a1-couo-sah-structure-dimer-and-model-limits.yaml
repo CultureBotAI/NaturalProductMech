@@ -226,7 +226,7 @@ graph:
       evidence_type: COMPUTATIONAL_PREDICTION
       notes: Pavkov-Keller 2017; Figure 5 and homology-model discussion, PDF pp.8-9.
     - reference: DOI:10.1371/journal.pone.0171056.s004
-      evidence_type: PRIMARY_EXPERIMENT
+      evidence_type: COMPUTATIONAL_PREDICTION
       notes: S4 Figure; CouO-template NovO model.
   - subject: novomodel
     predicate: supports_proposed_shared_mechanism
@@ -244,4 +244,11 @@ curation_history:
   action: RECORD_CURATED
   changes: 'Add coumermycin-a1-couo-sah-structure-dimer-and-model-limits with bounded
     primary CouO evidence and review #556 limits.'
+  llm_assisted: true
+- timestamp: '2026-10-04T20:14:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Classify S4 CouO-template NovO homology-model evidence as COMPUTATIONAL_PREDICTION,
+    not PRIMARY_EXPERIMENT. Preserve graph topology, citations, prose and all other
+    evidence (review #557).'
   llm_assisted: true
