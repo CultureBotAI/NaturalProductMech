@@ -15,6 +15,12 @@ metadata:
 - Records: `data/natural_products/**/*.yaml`
 - Schema: `src/naturalproductmech/schema/naturalproductmech.yaml`
 
+The complete mechanism includes every `causal_graph_refs` component under
+`data/causal_graphs/`. Read those files and their audit trails along with the
+owner; `read_natural_product` provides the resolved analysis view. See
+`docs/CURATION.md` for exact ownership and validation rules. Components are
+maintained curation inputs, not generated-page content or separate compounds.
+
 ## The Contract
 
 <!-- canonical:begin the-contract -->

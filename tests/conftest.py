@@ -8,6 +8,8 @@ from typing import Any
 import pytest
 import yaml
 
+from naturalproductmech.graph_components import read_natural_product
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_PATH = REPO_ROOT / "src" / "naturalproductmech" / "schema" / "naturalproductmech.yaml"
 CORPUS_DIR = REPO_ROOT / "data" / "natural_products"
@@ -27,7 +29,7 @@ def record_paths() -> list[Path]:
 def records(record_paths: list[Path]) -> list[dict[str, Any]]:
     docs = []
     for path in record_paths:
-        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
+        doc = read_natural_product(path)
         if isinstance(doc, dict) and "identifier" in doc:
             docs.append(doc)
     return docs

@@ -20,11 +20,14 @@ re-seed surfaced it.
 
 What it deliberately does not compare
 -------------------------------------
-`biosynthetic_pathway`, `causal_graphs` and `curation_history` are
+`biosynthetic_pathway`, `causal_graphs`, `causal_graph_refs` and `curation_history` are
 curator-owned: the seeder carries them across a re-seed rather than producing
 them, so comparing them against a rebuild would make this check permanently red
 the first time anyone curated anything. They are taken from the file, exactly as
 the writer takes them.
+
+Referenced components are curator-owned too: audited for complete ownership,
+schema, topology and reviewability, not reconstructed from imported inventories.
 
 And it still cannot catch a FABRICATED claim. A hand-added producer citing an
 invented PMID reproduces perfectly, because the inventory says so. That is what
@@ -41,6 +44,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
+from naturalproductmech.graph_components import audit_graph_components  # noqa: E402
 from naturalproductmech.validation.write_validated import (  # noqa: E402
     emit_natural_product_yaml,
 )
@@ -77,6 +81,7 @@ def main() -> int:
     args = parser.parse_args()
 
     seed = load_seeder()
+    audit_graph_components(seed.CORPUS_DIR)
     inventories = seed.read_inventories()
     if not inventories:
         print("no inventories in data/raw/, so there is nothing to reproduce from.",

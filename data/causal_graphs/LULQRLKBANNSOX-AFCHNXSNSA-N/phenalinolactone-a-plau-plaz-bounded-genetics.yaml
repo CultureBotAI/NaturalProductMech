@@ -1,0 +1,146 @@
+record_id: naturalproductmech:mibig-e29f83c77b
+standard_inchi_key: LULQRLKBANNSOX-AFCHNXSNSA-N
+graph:
+  graph_id: phenalinolactone-a-plau-plaz-bounded-genetics
+  scope: BIOSYNTHESIS
+  description: 'Partial native Tu6071 genetics from Daum 2009: disruption of the putative
+    SDR genes plaU and plaZ did not abolish detectable PL-A/PL-D under the tested
+    conditions. Native protein parents are distinct from mutant alleles. The PlaU
+    deletion-junction discrepancy is unresolved; the combined mutant has a PlaZ single-crossover
+    insertion, not two clean deletions. No purified PlaU/PlaZ catalysis, measured
+    cofactor preference, or universal biosynthetic dispensability is demonstrated.
+    PlaU C-3 oxidation, minor/shunt product roles, extracluster compensation and silence
+    remain hypotheses.'
+  nodes:
+  - node_id: plau
+    label: Native PlaU parent (putative SDR)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69757.1
+  - node_id: plaz
+    label: Native PlaZ parent (putative SDR)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69767.1
+  - node_id: plau_lesion
+    label: Tu6071 reported delta-plaU internal deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: double_lesion
+    label: Tu6071 delta-plaU with plaZ insertion (SCZ)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: production
+    label: Detectable PL-A/PL-D under tested conditions
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: plau_lesion
+    predicate: disrupts_encoding_gene_of
+    object: plau
+    notes: The thesis reports a 156-bp in-frame deletion made by NheI/SfiI restriction
+      and blunting of pBSK-12-P, transferred as pKC1132-Udel. DC4/DC15 colony PCR
+      gives about 0.8 kb versus 0.95 kb in wild type; revertants DC17/DC27 and plasmid
+      controls are shown. DC4 PstI/NheI Southern has about 8.3 kb versus wild-type
+      5.4/3.0 kb; the single crossover retains both patterns. These support disruption,
+      not an independently sequenced junction. Native DQ230532.1 has intragenic SfiI/NheI
+      top-strand cuts after 35490/35630; standard blunting predicts 143 bp, not 156
+      bp or an in-frame lesion. This curator reconstruction does not establish the
+      actual mutant sequence and does not silently correct the thesis. Native GenPept/MIBiG
+      and the printed 244-aa PlaU alignment agree. Gene/taxon and exact EMBL-xref
+      UniProt queries returned no rows; no homolog substituted.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.4.1-3.4.2, 5.6.1.4, 5.7.2.2; printed pp. 55-58, 143, 156,
+        162-163; Figures 3-21 to 3-23 and Table 5-32.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69757.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-04'
+      notes: Native PlaU, 244 aa; DQ230532.1:35268..36002, positive strand; Streptomyces
+        sp. Tu6071, taxon 355249.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Native GenBank, MIBiG BGC0000654.4 and GenPept translations compared;
+        printed PlaU alignment matches. Native standard-blunting reconstruction deletes
+        35488..35630 inclusive (143 bp), inconsistent with reported 156 bp. Full mutant-junction
+        sequence not available in inspected evidence.
+    - reference: https://enzymefinder.neb.com/
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Restriction geometry used for the native-sequence calculation: SfiI
+        has a three-base 3-prime overhang; NheI a four-base 5-prime overhang. This
+        calculation is not experimental mutant sequencing.'
+  - subject: plau_lesion
+    predicate: retains_detectable_profile_of
+    object: production
+    notes: HPLC/ESI-MS (plaESI) of the mutant crude extract was reported unchanged
+      from wild type; discussion identifies retained PL-A/PL-D. The standard production
+      method uses NL111 for 7-8 days and ethyl-acetate extraction of supernatant.
+      This is an assay-bounded negative phenotype, not quantified equivalence, a detection-limit
+      measurement, or exclusion of minor/shunt products and redundancy.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.4.3, printed p. 58; discussion 4.2.2, pp. 102-103; methods
+        5.10.2.1, 5.10.3.1, 5.10.4.1, pp. 189-190, 195-196.
+      snippet: Das Chromatogramm war zu dem des Wildtyps unverändert.
+  - subject: plau_lesion
+    predicate: provides_genetic_background_for
+    object: double_lesion
+    notes: pKC1132-SCZ was introduced into the delta-plaU strain to test possible
+      PlaU/PlaZ compensation. The internal plaZ PCR fragment is about 0.52 kb (SCZ-F/SCZ-R,
+      HindIII/XbaI), not the full CDS. A single-crossover insertion was used after
+      attempts at a second recombination yielded revertants. No two-clean-deletion
+      genotype or complete mutant-genome sequence is asserted.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.4.4, 5.7.2.4, 5.7.4; printed pp. 59-60, 163, 167; Figure 3-24;
+        primer Table 5-32, p. 156.
+  - subject: double_lesion
+    predicate: disrupts_encoding_gene_of
+    object: plaz
+    notes: Vector/genomic junction PCR (aac-F/C-SCZ-R) yields about 2.2 kb in three
+      single-crossover clones. The delta-plaU parent is the negative control; plasmid
+      positive control uses SCZ-R instead of C-SCZ-R. Native 237-aa ABB69767.1 matches
+      GenBank/MIBiG translation, not an assayed purified protein or a mutant protein
+      sequence. Successful bounded UniProt gene/taxon and exact EMBL-xref queries
+      found no entry; no exact UniProt mapping claimed.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.4.4, pp. 59-60, Figure 3-24; methods 5.7.4, p. 167 and primer
+        Table 5-32, p. 156.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69767.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-04'
+      notes: Native PlaZ, 237 aa; DQ230532.1:47763..48476, positive strand; Streptomyces
+        sp. Tu6071, taxon 355249.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator comparison verifies exact native GenBank/MIBiG/GenPept PlaZ translation.
+        This does not identify the translated insertion allele or measure SDR activity.
+  - subject: double_lesion
+    predicate: retains_detectable
+    object: production
+    notes: PL-A and PL-D were detected in combined-mutant crude extract by HPLC/ESI-MS
+      (plaESI). Exconjugants were cultured with 35 ug/mL apramycin because single-crossover
+      integration can revert; the methods compare with wild type and the single mutant.
+      The result does not prove identical yields, exclude residual gene activity or
+      extracluster compensation, or establish no function in any condition. Proposed
+      C-3 oxidation and minor-product roles remain untested here; no necessity/catalysis
+      edge is inferred.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.4.5, printed p. 59; methods 5.7.4.2, p. 167; discussion 4.2.2,
+        pp. 102-103.
+curation_history:
+- timestamp: '2026-10-04T02:25:24Z'
+  curator: codex
+  action: GRAPH_CURATED
+  changes: 'Added exact native PlaU ABB69757.1 and PlaZ ABB69767.1 with five primary-cited
+    genetic edges and one verified snippet. Addressed #524: reported versus reconstructed
+    PlaU deletion remains unresolved; PlaZ insertion and selection context explicit.
+    Retained-production evidence is bounded, not direct catalysis or universal dispensability.'
+  llm_assisted: true

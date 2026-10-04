@@ -19,6 +19,8 @@ from pathlib import Path
 import pytest
 import yaml
 
+from naturalproductmech.graph_components import read_natural_product
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CONFIG = REPO_ROOT / "conf" / "id_label_targets.yaml"
 
@@ -71,7 +73,7 @@ def test_every_target_glob_matches_at_least_one_file():
 def _corpus_pairs(pairs: list[list[str]]) -> set[tuple[str, str]]:
     found: set[tuple[str, str]] = set()
     for path in (REPO_ROOT / "data" / "natural_products").rglob("*.yaml"):
-        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
+        doc = read_natural_product(path)
         for _locator, curie, label, _waived, _override in validator._walk_yaml(
                 doc, [(a, b) for a, b in pairs], path.name):
             found.add((curie, label))

@@ -1,0 +1,127 @@
+record_id: naturalproductmech:mibig-e29f83c77b
+standard_inchi_key: LULQRLKBANNSOX-AFCHNXSNSA-N
+graph:
+  graph_id: phenalinolactone-a-plao4-genetics-and-inferred-function
+  scope: BIOSYNTHESIS
+  description: PlaO4 evidence in Streptomyces sp. Tu6071 from the Duerr 2005 thesis.
+    Native protein identity is separate from the mutant and rescue constructs; culture
+    phenotypes are distinct from inferred chemistry. Cultures were grown in NL111V
+    at 28 C; analytical harvests were after 6-7 days.
+  nodes:
+  - node_id: plao4
+    label: Native PlaO4 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69759.1
+  - node_id: mutation
+    label: Internal plaO4 disruption in Tu6071-derived 42.A.35
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: production
+    label: Detectable phenalinolactone A and D production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: products
+    label: PL CD8-CD11 mutant-congener accumulation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: pSET-plaO4 genomic-fragment complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: function
+    label: Proposed C-21 hydroxylation of the axial C-4 methyl group
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mutation
+    predicate: inactivates_encoding_gene_of
+    object: plao4
+    notes: 'Double-crossover 42.A.35 was selected by apramycin-resistance loss and
+      colony PCR. The reported internal RsrII frameshifting deletion is 880 bp; native
+      sites are 884 bp apart. Exact mutant junction is unverified. The preceding single
+      crossover''s short-only PCR does not exclude its wild-type allele. Curator comparison:
+      appendix pages 138-139 match PlaO4 CDS; thesis G versus deposited A at 38851
+      lies in plaA5, not a PlaO4 substitution. GenPept/GenBank/MIBiG and translated
+      thesis proteins agree. UniProt mapping failed; no homolog substituted.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.4.2.1, 5.9.4 and 5.12.5; printed pages 53-54, 110, 114-115;
+        Figure 31.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69759.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 391 aa; DQ230532.1 complement(37551..38726). GenPept identifies the named
+        native protein from taxon 355249.
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator thesis/DQ230532.1/GenPept/MIBiG comparison; nucleotide versus
+        protein agreement detailed on edge.
+  - subject: mutation
+    predicate: disrupts_normal
+    object: production
+    notes: Mutant extracts showed PL CD8-CD11; complementation reverted this culture-production
+      phenotype, not a direct activity assay or loss of all metabolites.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.4.2.2 and 3.4.2.4; printed pages 54-57; Table 5, Figures 32-33.
+  - subject: mutation
+    predicate: causes_accumulation_of
+    object: products
+    notes: Preparative cultures yielded PL CD8; CD9 was the largest analytical peak
+      (Table 5). CD8 NMR lacks sugar/O-3 acetyl signals; C-21 methylene becomes a
+      methyl linked to C-4 by HMBC. Its gamma-butyrolactone remains. Other congeners
+      have HPLC/ESI-MS/UV evidence, not all complete NMR.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.4.2.2 and 3.4.2.4; printed pages 54-57; Table 5, Figures 32-33.
+  - subject: rescue
+    predicate: supplies_wild_type_encoding_gene_for
+    object: plao4
+    notes: 'ermE*-driven pSET-plaO4 carries a genomic fragment. Curator mapping places
+      42c_F/42c_R changes outside PlaO4 but includes partial plaV/plaA5: neither isolated
+      CDS nor reconstituted monooxygenase system.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 5.11.2 and 5.12.5.2; printed pages 111, 114-115.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: DATABASE_ASSERTION
+      notes: DQ230532.1 provides the native target CDS and neighboring gene coordinates.
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator section 5.12 primer/DQ230532.1 comparison: changes outside CDS,
+        partial neighboring genes included; not separate rescue-plasmid sequencing.'
+  - subject: rescue
+    predicate: restores_detectable
+    object: production
+    notes: 'All three complemented-conjugant cultures recovered the wild-type HPLC/ESI-MS
+      profile: genetic rescue, not purified PlaO4 substrate conversion.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.4.2.3; printed pages 55-56.
+  - subject: plao4
+    predicate: is_proposed_to_catalyze
+    object: function
+    notes: Deletion, rescue and CD8 structure support C-21 hydroxylation, replacing
+      the homology-based C-19 hypothesis. CD8 also lacks C-1 hydroxylation; the thesis
+      argues against dual PlaO4 specificity without a direct exclusion assay. Substrate,
+      redox partners and order remain unresolved.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: CURATOR_INFERENCE
+      notes: Sections 3.4.2.4, 4.2 and 4.3(B); printed pages 56-57, 74, 77-78.
+curation_history:
+- timestamp: '2026-10-04T02:16:47Z'
+  curator: codex
+  action: GRAPH_COMPONENT_MIGRATED
+  changes: Lossless migration of graph phenalinolactone-a-plao4-genetics-and-inferred-function
+    from data/natural_products/unclassified/phenalinolactone-a.yaml at aa0e38c4ac899ca5534b4ce02318c019fc44db29.
+    Prior claim curation history remains on the owning record; graph content and evidence
+    are unchanged.
+  llm_assisted: true

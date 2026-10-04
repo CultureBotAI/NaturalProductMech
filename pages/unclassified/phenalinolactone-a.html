@@ -605,6 +605,47 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 5 edges</span></h2>
+<p class="sub">Partial native Tu6071 genetics from Daum 2009: disruption of the putative SDR genes plaU and plaZ did not abolish detectable PL-A/PL-D under the tested conditions. Native protein parents are distinct from mutant alleles. The PlaU deletion-junction discrepancy is unresolved; the combined mutant has a PlaZ single-crossover insertion, not two clean deletions. No purified PlaU/PlaZ catalysis, measured cofactor preference, or universal biosynthetic dispensability is demonstrated. PlaU C-3 oxidation, minor/shunt product roles, extracluster compensation and silence remain hypotheses.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Tu6071 reported delta-plaU internal deletion</td>
+  <td>disrupts_encoding_gene_of</td>
+  <td>Native PlaU parent (putative SDR)</td>
+  <td>The thesis reports a 156-bp in-frame deletion made by NheI/SfiI restriction and blunting of pBSK-12-P, transferred as pKC1132-Udel. DC4/DC15 colony PCR gives about 0.8 kb versus 0.95 kb in wild type; revertants DC17/DC27 and plasmid controls are shown. DC4 PstI/NheI Southern has about 8.3 kb versus wild-type 5.4/3.0 kb; the single crossover retains both patterns. These support disruption, not an independently sequenced junction. Native DQ230532.1 has intragenic SfiI/NheI top-strand cuts after 35490/35630; standard blunting predicts 143 bp, not 156 bp or an in-frame lesion. This curator reconstruction does not establish the actual mutant sequence and does not silently correct the thesis. Native GenPept/MIBiG and the printed 244-aa PlaU alignment agree. Gene/taxon and exact EMBL-xref UniProt queries returned no rows; no homolog substituted.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815<br>https://www.ncbi.nlm.nih.gov/protein/ABB69757.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>https://enzymefinder.neb.com/</td>
+</tr>
+<tr>
+  <td>Tu6071 reported delta-plaU internal deletion</td>
+  <td>retains_detectable_profile_of</td>
+  <td>Detectable PL-A/PL-D under tested conditions</td>
+  <td>HPLC/ESI-MS (plaESI) of the mutant crude extract was reported unchanged from wild type; discussion identifies retained PL-A/PL-D. The standard production method uses NL111 for 7-8 days and ethyl-acetate extraction of supernatant. This is an assay-bounded negative phenotype, not quantified equivalence, a detection-limit measurement, or exclusion of minor/shunt products and redundancy.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+<tr>
+  <td>Tu6071 reported delta-plaU internal deletion</td>
+  <td>provides_genetic_background_for</td>
+  <td>Tu6071 delta-plaU with plaZ insertion (SCZ)</td>
+  <td>pKC1132-SCZ was introduced into the delta-plaU strain to test possible PlaU/PlaZ compensation. The internal plaZ PCR fragment is about 0.52 kb (SCZ-F/SCZ-R, HindIII/XbaI), not the full CDS. A single-crossover insertion was used after attempts at a second recombination yielded revertants. No two-clean-deletion genotype or complete mutant-genome sequence is asserted.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+<tr>
+  <td>Tu6071 delta-plaU with plaZ insertion (SCZ)</td>
+  <td>disrupts_encoding_gene_of</td>
+  <td>Native PlaZ parent (putative SDR)</td>
+  <td>Vector/genomic junction PCR (aac-F/C-SCZ-R) yields about 2.2 kb in three single-crossover clones. The delta-plaU parent is the negative control; plasmid positive control uses SCZ-R instead of C-SCZ-R. Native 237-aa ABB69767.1 matches GenBank/MIBiG translation, not an assayed purified protein or a mutant protein sequence. Successful bounded UniProt gene/taxon and exact EMBL-xref queries found no entry; no exact UniProt mapping claimed.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815<br>https://www.ncbi.nlm.nih.gov/protein/ABB69767.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 delta-plaU with plaZ insertion (SCZ)</td>
+  <td>retains_detectable</td>
+  <td>Detectable PL-A/PL-D under tested conditions</td>
+  <td>PL-A and PL-D were detected in combined-mutant crude extract by HPLC/ESI-MS (plaESI). Exconjugants were cultured with 35 ug/mL apramycin because single-crossover integration can revert; the methods compare with wild type and the single mutant. The result does not prove identical yields, exclude residual gene activity or extracluster compensation, or establish no function in any condition. Proposed C-3 oxidation and minor-product roles remain untested here; no necessity/catalysis edge is inferred.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

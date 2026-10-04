@@ -331,6 +331,13 @@ classes:
         range: CausalGraph
         multivalued: true
         inlined_as_list: true
+      causal_graph_refs:
+        description: >-
+          Ordered graph IDs in data/causal_graphs/<StandardInChIKey>/<graph_id>.yaml.
+          Components belong to this exact record and are appended to inline graphs
+          by the resolving reader. IDs must be unique across both representations.
+        multivalued: true
+        pattern: "^[A-Za-z0-9][A-Za-z0-9_-]{0,199}$"
       curation_status:
         range: CurationStatusEnum
         required: true
@@ -741,6 +748,27 @@ classes:
         description: The curator's interpretation, limitations, or model system.
       retrieved_on:
         range: date
+
+  CausalGraphDocument:
+    description: >-
+      One curator-owned graph component, with exact compound ownership and its
+      own append-only audit trail. The owning record explicitly references it.
+    attributes:
+      record_id:
+        range: curie
+        required: true
+      standard_inchi_key:
+        required: true
+        pattern: "^[A-Z]{14}-[A-Z]{10}-[A-Z]$"
+      graph:
+        range: CausalGraph
+        inlined: true
+        required: true
+      curation_history:
+        range: CurationEvent
+        multivalued: true
+        inlined_as_list: true
+        required: true
 
   CausalGraph:
     attributes:

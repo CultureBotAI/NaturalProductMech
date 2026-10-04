@@ -129,5 +129,16 @@ def write_validated_natural_product(
     errors = validate_natural_product(doc, target_class=target_class, schema_path=schema_path)
     if errors:
         raise ValidationFailedError(path, errors)
+    from naturalproductmech.graph_components import (
+        check_size,
+        prevent_detached_components,
+        resolve_graphs,
+    )
+
+    if target_class == DEFAULT_TARGET_CLASS:
+        resolve_graphs(doc, path)
+        prevent_detached_components(doc, path)
+    content = emit_natural_product_yaml(doc, yaml_kwargs)
+    check_size(content, path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(emit_natural_product_yaml(doc, yaml_kwargs), encoding="utf-8")
+    path.write_text(content, encoding="utf-8")

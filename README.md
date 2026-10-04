@@ -30,6 +30,10 @@ identity, structure, filing class, and producer claims; partial
 `biosynthetic_pathway` and `causal_graphs` curation is now underway. Owed work
 is in [NEXT_TASKS.md](NEXT_TASKS.md).
 
+Curated mechanisms can use inline graphs or exact-owner components referenced
+by `causal_graph_refs`. Use the resolving reader for the complete mechanism;
+see [curation](docs/CURATION.md#complete-mechanism-reads) for the data contract.
+
 <!-- BEGIN GENERATED CORPUS STATS -->
 
 ```
