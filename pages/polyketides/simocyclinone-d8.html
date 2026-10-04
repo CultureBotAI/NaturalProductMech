@@ -670,6 +670,208 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">22 nodes, 28 edges</span></h2>
+<p class="sub">Producer-cluster SimX/SimEx2 resistance genetics and the proposed SD8 export role. The two deposited SimX variants remain distinct, and the tested residue-126 allele is unresolved. Native simX::apr genetics, heterologous expression, MIC and disk readouts are separate; no direct transport flux or SimEx2 functional-null claim is inferred (review #537). Existing owner stereochemistry and mechanism are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Assayed SimX protein, residue-126 allele unresolved</td>
+  <td>has_candidate_native_sequence</td>
+  <td>Deposited native SimX / SimEx with Ala126</td>
+  <td>This 534-aa deposited SimX has Ala at residue 126. Both deposited candidates fit the expression primers, but their internal CDS nucleotide 377 and protein residue 126 differ. The thesis identifies native Tu6040 and the cloning primers without depositing the assayed expression allele. Do not assign either accession as uniquely identical to the assayed protein, treat them as two demonstrated paralogs, or assume one is a sequencing error. Canonical nodes denote the individual deposited sequences.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/<br>https://www.ncbi.nlm.nih.gov/protein/AAK06799.1<br>https://www.uniprot.org/uniprotkb/Q9AMH8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2</td>
+</tr>
+<tr>
+  <td>Assayed SimX protein, residue-126 allele unresolved</td>
+  <td>has_candidate_native_sequence</td>
+  <td>Deposited native SimX / Sim17 with Gly126</td>
+  <td>This 534-aa deposited SimX has Gly at residue 126. Both deposited candidates fit the expression primers, but their internal CDS nucleotide 377 and protein residue 126 differ. The thesis identifies native Tu6040 and the cloning primers without depositing the assayed expression allele. Do not assign either accession as uniquely identical to the assayed protein, treat them as two demonstrated paralogs, or assume one is a sequencing error. Canonical nodes denote the individual deposited sequences.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/<br>https://www.ncbi.nlm.nih.gov/protein/AAL15595.1<br>https://www.uniprot.org/uniprotkb/Q93FA2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1</td>
+</tr>
+<tr>
+  <td>Deposited native SimX / SimEx with Ala126</td>
+  <td>differs_at_one_residue_from</td>
+  <td>Deposited native SimX / Sim17 with Gly126</td>
+  <td>Direct sequence comparison: Ala126 versus Gly126; coding nucleotide 377 C versus G. All other aligned coding nucleotides and protein residues agree. This is a deposited-sequence comparison, not a mutation experiment, an activity comparison or a demonstrated evolutionary event.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1</td>
+</tr>
+<tr>
+  <td>pIJ10480 ermEp*-simX expression construct</td>
+  <td>is_reported_to_express</td>
+  <td>Assayed SimX protein, residue-126 allele unresolved</td>
+  <td>simEX1-F-NdeI/simEX1-R-HindIII PCR product was cloned into NdeI/HindIII-cut integrative pIJ10257 under ermEp*, yielding pIJ10480. Literal reconstruction against either native sequence predicts the full 1605-bp CDS (534 aa plus stop), 1620 bp including primer tails, without an encoded terminal tag. Matching terminal primers does not resolve Ala/Gly126 or prove the full plasmid sequence, expression level or membrane localization.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1</td>
+</tr>
+<tr>
+  <td>pIJ10481 ermEp*-simEX2 expression construct</td>
+  <td>is_reported_to_express</td>
+  <td>Intended SimEx2 product of pIJ10481</td>
+  <td>simEX2-F-NdeI/simEX2-R-HindIII PCR product was inserted into NdeI/HindIII-cut pIJ10257 under ermEp* as pIJ10481. This denotes the intended expression construct; the resistance experiment does not separately quantify its protein abundance, folding or localization, so a negative phenotype cannot establish a native transport-function null.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>Intended SimEx2 product of pIJ10481</td>
+  <td>has_predicted_native_protein_sequence</td>
+  <td>Deposited native SimEx2 protein</td>
+  <td>Literal primer reconstruction changes native GTG to ATG but preserves the 1242-bp coding span including its stop, predicting the same 413-aa CDS-aware translated protein. The 1298-bp tailed amplicon includes sequence beyond the stop; its maximal matching native suffix is 12946..14227, not evidence for a one-base gene truncation. This is a primer-derived intended product, not an independently sequenced whole plasmid or an experimentally verified mature protein. The native Na/H-antiporter annotation is a prediction, not a measured ion-transport mechanism.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/<br>https://www.ncbi.nlm.nih.gov/protein/AEU17895.1<br>https://www.uniprot.org/uniprotkb/G9VYV7<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2</td>
+</tr>
+<tr>
+  <td>Reported native-promoter simX construct without simR</td>
+  <td>is_reported_to_express</td>
+  <td>Assayed SimX protein, residue-126 allele unresolved</td>
+  <td>The source reports integrative simX under its native promoter with simR absent. No construct identifier or complete insert sequence is established for this paragraph; do not substitute pIJ10480 (ermEp*) or a simXp-luxAB reporter. The result is a heterologous expression phenotype, not native-promoter activity measured in Tu6040.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>S. lividans 1326 carrying pIJ10480</td>
+  <td>carries</td>
+  <td>pIJ10480 ermEp*-simX expression construct</td>
+  <td>S. lividans 1326 is the heterologous host, not the native SD8 producer. Transfer of this expression construct does not establish heterologous SD8 biosynthesis.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>S. lividans 1326 carrying pIJ10481</td>
+  <td>carries</td>
+  <td>pIJ10481 ermEp*-simEX2 expression construct</td>
+  <td>S. lividans 1326 is the heterologous host, not the native SD8 producer. Transfer of this expression construct does not establish heterologous SD8 biosynthesis.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>S. lividans 1326 carrying native-promoter simX</td>
+  <td>carries</td>
+  <td>Reported native-promoter simX construct without simR</td>
+  <td>S. lividans 1326 is the heterologous host, not the native SD8 producer. Transfer of this expression construct does not establish heterologous SD8 biosynthesis.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>S. lividans 1326 carrying pIJ10480</td>
+  <td>has_assay_phenotype</td>
+  <td>Reported SD8 MIC of 65 ug/mL</td>
+  <td>MIC assay: approximately 5e4 spores per well in a 96-well plate, two-fold SD8 dilutions in SMMS, scored daily for five days; endpoint is the lowest concentration without observed growth. DMSO is at most 1% v/v. Methods name medium and subsequently agar, so this is not relabelled broth microdilution. No replicate count or uncertainty is given for these MIC values; they are not ug-per-disk measurements. The ermEp*-simX strain is reported at 65 ug/mL, compared with 2 ug/mL controls.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>S. lividans 1326 carrying pIJ10481</td>
+  <td>has_assay_phenotype</td>
+  <td>Reported SD8 MIC of 2 ug/mL</td>
+  <td>MIC assay: approximately 5e4 spores per well in a 96-well plate, two-fold SD8 dilutions in SMMS, scored daily for five days; endpoint is the lowest concentration without observed growth. DMSO is at most 1% v/v. Methods name medium and subsequently agar, so this is not relabelled broth microdilution. No replicate count or uncertainty is given for these MIC values; they are not ug-per-disk measurements. The ermEp*-simEX2 strain is reported at 2 ug/mL, matching host-only and empty-vector controls. This is not proof that SimEx2 cannot transport any substrate.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>S. lividans 1326 host-only and pIJ10257 controls</td>
+  <td>has_assay_phenotype</td>
+  <td>Reported SD8 MIC of 2 ug/mL</td>
+  <td>MIC assay: approximately 5e4 spores per well in a 96-well plate, two-fold SD8 dilutions in SMMS, scored daily for five days; endpoint is the lowest concentration without observed growth. DMSO is at most 1% v/v. Methods name medium and subsequently agar, so this is not relabelled broth microdilution. No replicate count or uncertainty is given for these MIC values; they are not ug-per-disk measurements. Both the host-only strain and the pIJ10257 empty-vector strain are reported at 2 ug/mL.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>S. lividans 1326 carrying native-promoter simX</td>
+  <td>has_assay_phenotype</td>
+  <td>Reported SD8 MIC of 4 ug/mL</td>
+  <td>MIC assay: approximately 5e4 spores per well in a 96-well plate, two-fold SD8 dilutions in SMMS, scored daily for five days; endpoint is the lowest concentration without observed growth. DMSO is at most 1% v/v. Methods name medium and subsequently agar, so this is not relabelled broth microdilution. No replicate count or uncertainty is given for these MIC values; they are not ug-per-disk measurements. The source reports 4 ug/mL for native-promoter simX without simR, a modest change rather than the ermEp* result.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>Reported SD8 MIC of 65 ug/mL</td>
+  <td>is_measured_against</td>
+  <td>Source-assigned simocyclinone D8 used in sensitivity assays</td>
+  <td>The assay compound is source-assigned SD8, distinct from SC4 in Figure 4.1. No complete stereochemical identity is reconstructed from the drawing or MIC. The owner remains PLEGMCYXNQPJNV-TYXWGSLYSA-N with unresolved stereocentres; this assay node does not resolve the shared-MIBiG discussion or merge it with a fully specified structural deposition.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>Reported SD8 MIC of 2 ug/mL</td>
+  <td>is_measured_against</td>
+  <td>Source-assigned simocyclinone D8 used in sensitivity assays</td>
+  <td>The assay compound is source-assigned SD8, distinct from SC4 in Figure 4.1. No complete stereochemical identity is reconstructed from the drawing or MIC. The owner remains PLEGMCYXNQPJNV-TYXWGSLYSA-N with unresolved stereocentres; this assay node does not resolve the shared-MIBiG discussion or merge it with a fully specified structural deposition.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>Reported SD8 MIC of 4 ug/mL</td>
+  <td>is_measured_against</td>
+  <td>Source-assigned simocyclinone D8 used in sensitivity assays</td>
+  <td>The assay compound is source-assigned SD8, distinct from SC4 in Figure 4.1. No complete stereochemical identity is reconstructed from the drawing or MIC. The owner remains PLEGMCYXNQPJNV-TYXWGSLYSA-N with unresolved stereocentres; this assay node does not resolve the shared-MIBiG discussion or merge it with a fully specified structural deposition.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>S. lividans 1326 host-only and pIJ10257 controls</td>
+  <td>provides_controls_for</td>
+  <td>Reported SD8 MIC of 65 ug/mL</td>
+  <td>Host-only and empty-vector MIC values provide the comparison for the ermEp*-simX result. Figure 4.2 separately displays empty vector, ermEp*-simX and ermEp*-simEX2 disk assays: approximately 5e4 spores on R2 agar, 0/0.2/0.5/1/10 ug SD8 per disk, 30 C for four days. The plate images support the qualitative resistance contrast, not the numerical MIC or a transport rate; no zone diameters are extracted.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>S. lividans 1326 host-only and pIJ10257 controls</td>
+  <td>provides_controls_for</td>
+  <td>Reported SD8 MIC of 4 ug/mL</td>
+  <td>The native-promoter simX MIC is compared with the text-reported host-only/parent-vector baseline. No separately identified matched native-promoter empty construct is supplied in this result; do not infer equal copy number, expression or vector context solely from the word integrative.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>S. lividans 1326 carrying pIJ10480</td>
+  <td>has_text_reported_assay_phenotype</td>
+  <td>No reported extra resistance to selected other antibiotics</td>
+  <td>The source states that ermEp*-simX did not add resistance to novobiocin, erythromycin, lincomycin, rifampicin, bacitracin or nisin. The inspected paragraph does not provide their doses, individual MICs or a displayed panel. Keep this as a limited source-reported negative comparison, not demonstrated exclusive substrate specificity under all conditions.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>simX locus of the assayed native stock</td>
+  <td>encodes</td>
+  <td>Assayed SimX protein, residue-126 allele unresolved</td>
+  <td>The study names the native producer-cluster gene simEX1/simX. Its allele in the assayed stock is not resolved to either deposited residue-126 variant. The gene and canonical protein sequences are distinct identity levels.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>S. antibioticus Tu6040 simX::apr mutant</td>
+  <td>disrupts</td>
+  <td>simX locus of the assayed native stock</td>
+  <td>The strain table specifies simX::apr. PCR targeting used the pIJ773 apr/oriT cassette with 39-nt homologous arms and lambda RED/pIJ790 in the Galm et al. VII-8g cosmid; transfer was into native Tu6040. Literal arms map to AF324838.2 58144..58182(+) and 59782..59820(-), retaining ATG and TAG while replacing 58183..59781 (1599 bp) in the model. This is not a demonstrated marker-free allele, observed mutant sequence, or proof of no polar effects. Cosmid provenance alone does not resolve the assayed wild-type or expression-plasmid Ala/Gly126 identity.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2</td>
+</tr>
+<tr>
+  <td>S. antibioticus Tu6040 wild-type comparator</td>
+  <td>retains_native_locus</td>
+  <td>simX locus of the assayed native stock</td>
+  <td>The native comparator is S. antibioticus Tu6040, distinct from the heterologous S. lividans strains. The wild-type label does not independently identify its deposited SimX sequence variant.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>S. antibioticus Tu6040 simX::apr mutant</td>
+  <td>has_assay_phenotype</td>
+  <td>Increased native-mutant SD8 disk sensitivity</td>
+  <td>Relative to wild type, simX::apr is more sensitive to exogenous SD8 in the displayed disk assay: approximately 5e4 spores on SMMS agar, 0/1/10/100 ug SD8 per disk, 30 C for four days. This is not the heterologous R2 plate or the five-day MIC assay. No native-mutant MIC, quantified zone diameter, statistical effect size or displayed complementation experiment is supplied by these inspected results.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>S. antibioticus Tu6040 wild-type comparator</td>
+  <td>provides_native_comparator_for</td>
+  <td>Increased native-mutant SD8 disk sensitivity</td>
+  <td>Figure 4.3 displays wild-type and simX::apr plates at the same listed disk doses. The images are a qualitative comparison; differences in lawn growth and photography are not normalized into a quantitative resistance ratio. No rescue or independent replicate panel is inferred.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>Increased native-mutant SD8 disk sensitivity</td>
+  <td>is_measured_against</td>
+  <td>Source-assigned simocyclinone D8 used in sensitivity assays</td>
+  <td>Exogenous SD8 is the applied compound. The source does not measure native SD8 production yield or intracellular/extracellular concentration in this disk experiment.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>Assayed SimX protein, residue-126 allele unresolved</td>
+  <td>is_proposed_to_mediate</td>
+  <td>Proposed SimX-mediated SD8 export</td>
+  <td>The author interprets pump-like sequence context, heterologous resistance and native disruption sensitivity as support for SD8 efflux. This graph retains that mechanism as an inference: these experiments do not directly measure transport, membrane localization, proton coupling, kinetics or intracellular drug depletion. There is no independent transport comparison between the two deposited SimX variants.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+<tr>
+  <td>Proposed SimX-mediated SD8 export</td>
+  <td>has_proposed_substrate</td>
+  <td>Source-assigned simocyclinone D8 used in sensitivity assays</td>
+  <td>SD8 is the proposed exported product. This is not an experimentally demonstrated exclusive substrate list, direct SimX-SD8 binding measurement or demonstrated SC4 transport. Other regulatory experiments do not by themselves prove either transport claim.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/35207/</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

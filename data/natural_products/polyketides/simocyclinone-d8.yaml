@@ -787,6 +787,7 @@ causal_graph_refs:
 - simocyclinone-d8-simr-binding-and-footprints
 - simocyclinone-d8-simr-dna-length-and-proteolysis
 - simocyclinone-d8-simr-structural-contacts-and-states
+- simocyclinone-d8-simx-simex2-resistance-and-export
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -819,4 +820,12 @@ curation_history:
     and structural contacts/states. Grounded native Q9AMH9 with +2 paper-residue offset;
     preserved #536 construct, operator and chemical-identity limits. Existing SimReg1
     graphs, source fields, shared-structure discussion and SEEDED status unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-04T09:18:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added SimX/SimEx2 resistance/export graph reference with native Q9AMH8,
+    Q93FA2 and G9VYV7 sequences, unresolved assayed SimX allele, bounded resistance
+    phenotypes and inferred export. Preserved review #537 limits, all six existing
+    graphs, source fields, shared-structure discussion and SEEDED status.'
   llm_assisted: true
