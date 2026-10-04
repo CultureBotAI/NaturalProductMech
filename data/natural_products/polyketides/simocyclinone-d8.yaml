@@ -791,6 +791,8 @@ causal_graph_refs:
 - simocyclinone-d8-simc7-heterologous-genetics
 - simocyclinone-d8-simc7-ketoreduction-and-assay-limits
 - simocyclinone-d8-simc7-mutant-activities-and-cd-controls
+- simocyclinone-d8-siml-amide-ligation-and-substrate-scope
+- simocyclinone-d8-siml-recombinant-scar-and-surrogate-activity
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -849,4 +851,14 @@ curation_history:
     cited measurements. Retained review #539 uncertainty conflicts, residual activity
     and limited CD interpretation. Preserved all nine earlier graphs, source fields,
     history, incomplete stereochemistry and SEEDED status.'
+  llm_assisted: true
+- timestamp: '2026-10-04T11:17:15Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added two SimL/SimD5 protein graphs, grounding native Q9F5J5 through three
+    exact CDS translations while separating the 2005 recombinant preparations and
+    the later His8-tagged/thrombin-cleaved states. Preserved abstract-only limits,
+    literal primer/synonymous codon audit, cloning scar and surrogate-specific activity
+    (review #540). All ten previous graphs, source fields, history, incomplete stereochemistry
+    and SEEDED status remain unchanged.'
   llm_assisted: true
