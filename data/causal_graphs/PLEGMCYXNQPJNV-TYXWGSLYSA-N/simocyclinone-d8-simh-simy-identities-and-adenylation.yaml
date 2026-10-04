@@ -1,0 +1,344 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-simh-simy-identities-and-adenylation
+  scope: BIOSYNTHESIS
+  description: 'SimH/SimY tyrosine-adenylation evidence for the simocyclinone D8 aminocoumarin
+    branch, from Boll et al. 2011. Native Q9F5J4 and Q9F5J2, alternate Q9AMH5, recombinant
+    preparations and assay readouts remain distinct (review #543). The source length
+    and tag-state limits are preserved. ATP-PPi exchange is not direct PCP loading,
+    complete D8 production or proof of physiological flux. The inspected primary text
+    is the author-reproduced manuscript and supplement in the public thesis, not independently
+    retrieved final journal full text.'
+  nodes:
+  - node_id: simh
+    label: Native SimH tyrosine-adenylating enzyme
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F5J4
+  - node_id: alternate_simd6
+    label: Alternate deposited SimD6 sequence
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AMH5
+  - node_id: simy
+    label: Native SimY MbtH-like protein
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F5J2
+  - node_id: his_simh
+    label: Purified His6-SimH from the ybdZ-deletion expression host
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: prepared_simy
+    label: Purified recombinant SimY with reported tag removal
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: his_simh_ybdz_plus
+    label: Purified His6-SimH from the ybdZ+ expression host
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mixture
+    label: Reconstituted His6-SimH plus prepared SimY reaction
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: simh_alone
+    label: SimH-alone activity at most 0.03 nkat/mg protein
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: simy_alone
+    label: No activity reported for MbtH-only controls
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: exchange
+    label: L-tyrosine-dependent ATP-PPi exchange
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: kinetics
+    label: SimH plus SimY L-tyrosine kinetic parameters
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: his_simh
+    predicate: was_prepared_from_native_sequence_named_as
+    object: simh
+    notes: The paper explicitly identifies AAL15600 (997 aa). AAL15600.1 from AF322256.1:19223..22216(+)
+      and AAG34184.1 from AF321122.1:2435..5428(+) both translate exactly to Q9F5J4
+      using CDS-aware table 11. The producer is S. antibioticus Tu6040, taxon 1890.
+      pBB25 expresses an N-terminal His6 fusion in E. coli BL21(DE3) with a ybdZ deletion
+      and pSU20_sfp (B. subtilis Sfp). Sfp is preparation context, not a measured
+      PCP-loading fraction. The N-terminal tag was retained. No native accession is
+      assigned to the full recombinant protein, whose vector junctions were not independently
+      sequenced. Literal primers GGGAATTCCATATGGCCATGCCATCCGGCA and GCCCTCGAGTCACTTCACGGCCGTTGTGG
+      predict a 3014-nt amplicon containing the 2994-nt CDS with its stop; this is
+      a reconstruction, not a measured complete plasmid. The source reports checking
+      entire gene sequences. Induction was 0.4 mM IPTG for 14 h at 20 C after OD600
+      0.6. Ni-affinity and gel filtration gave 9.4 mg SimH per liter culture from
+      the deletion host; this is not assay loading or a reported ybdZ+ yield. The
+      source assigns no established biosynthetic function to the additional N-terminal
+      condensation-like region.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and results, thesis PDF pp.91-96. Inspected in the author-reproduced
+        manuscript, marked publication ahead of print; final journal full text not
+        independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and results, thesis PDF pp.91-96. Public primary thesis, Chapter
+        7; PDF page numbers are five greater than the printed page numbers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native AAL15600.1 CDS and deposited translation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent AAG34184.1 deposit with identical 997-aa translation.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F5J4
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed SimH Q9F5J4, taxon 1890; entry 118, sequence version 1, annotation
+        2026-09-02; inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS/UniProt comparison and literal-primer amplicon model; complete
+        experimental vector and tag junctions not inspected.
+  - subject: alternate_simd6
+    predicate: differs_in_deposited_sequence_from
+    object: simh
+    notes: 'Q9AMH5 exactly matches the 1010-aa AAK06804.1 translation of AF324838.2:63978..67010(+),
+      gene simD6. Compared with paper-linked Q9F5J4, it contains the 13-aa N-terminal
+      extension MANESPVMTLENN and two aligned differences: His274 versus Tyr287 and
+      Asp396 versus His409 (short/long numbering). The cause of these deposited differences
+      is unresolved. The SimH forward primer also matches internally at 64017 of AF324838.2;
+      that predicted 997-aa product retains both residue differences. Primers alone
+      do not choose the assay allele. The paper explicitly names AAL15600; its measured
+      kinetics are not transferred to alternate Q9AMH5.'
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native simD6/AAK06804.1 CDS and translation.
+    - reference: https://www.uniprot.org/uniprotkb/Q9AMH5
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q9AMH5, taxon 1890; entry 112, sequence version 1, annotation
+        2026-09-02; inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact deposited-sequence comparison and literal-primer mapping; variant
+        origin unresolved.
+  - subject: prepared_simy
+    predicate: was_prepared_from_native_sequence_named_as
+    object: simy
+    notes: The paper names AAG34186 but reports 69 aa. AAG34186.1 at AF321122.1:6727..6939(+),
+      AAL15602.1 at AF322256.1:23515..23727(+) and AAK06806.1 at AF324838.2:68309..68521(+)
+      all have 213-nt CDSs including stop and translate exactly to the 70-aa Q9F5J2
+      sequence. The 69/70-aa discrepancy is unresolved; initiator removal or an error
+      is not assumed. pBB28 in E. coli Rosetta2(DE3) initially produced N-His6-SimY.
+      General methods and results report MbtH-tag removal with 0.4 units thrombin/mg
+      protein for 8 h at 4 C before gel filtration, yet Figure S2 labels N-His6-SimY
+      and a calculated 9.4-kDa mass. The gel may depict a different purification stage;
+      it does not identify the functional-assay tag state. No exact cleavage scar
+      or complete assay sequence is independently verified. Primers GGGAATTCCATATGGCCAACCCGTTTGACGA
+      and GCCCTCGAGTCAGCTGGGGTCCGTCG predict a 233-nt amplicon retaining the native
+      coding start and stop; this is not a sequenced plasmid. The reported yield is
+      27 mg/liter culture, not an assay concentration. The native accession is not
+      assigned to the recombinant preparation.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods/results, thesis PDF pp.92-96; Figure S2, PDF p.109. Inspected
+        in the author-reproduced manuscript, marked publication ahead of print; final
+        journal full text not independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods/results, thesis PDF pp.92-96; Figure S2, PDF p.109. Public primary
+        thesis, Chapter 7; PDF page numbers are five greater than the printed page
+        numbers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Paper-named AAG34186.1 native CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native AAL15602.1 CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native AAK06806.1 CDS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F5J2
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q9F5J2, SimY/simX1, taxon 1890; entry 45, sequence version
+        1, annotation 2025-02-05; inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Three exact native translations and the primer-derived coding region
+        agree at 70 aa; source length remains discrepant.
+  - subject: mixture
+    predicate: contains_prepared_enzyme
+    object: his_simh
+    notes: Standard 100-uL reactions contained 1 uM tyrosine-activating enzyme, 95
+      mM Tris-HCl pH 8, 5 mM MgCl2, 5 mM TCEP, 2 mM ATP, 1.5 mM L-tyrosine and 1 mM
+      [32P]PPi. These are assay conditions, not protein-expression concentrations.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: ATP-[32P]PPi exchange methods, thesis PDF pp.94-95. Inspected in the
+        author-reproduced manuscript, marked publication ahead of print; final journal
+        full text not independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: ATP-[32P]PPi exchange methods, thesis PDF pp.94-95. Public primary thesis,
+        Chapter 7; PDF page numbers are five greater than the printed page numbers.
+  - subject: mixture
+    predicate: contains_prepared_helper
+    object: prepared_simy
+    notes: SimY was added at 1.2 uM in the standard assay, giving SimH:SimY 1:1.2.
+      Figure 4 instead varies the helper amount; the standard ratio is not imposed
+      on its titration or on the analytical gel-filtration load.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Figure 3 caption and Table 1; thesis PDF pp.94-99. Inspected
+        in the author-reproduced manuscript, marked publication ahead of print; final
+        journal full text not independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Figure 3 caption and Table 1; thesis PDF pp.94-99. Public primary
+        thesis, Chapter 7; PDF page numbers are five greater than the printed page
+        numbers.
+  - subject: his_simh
+    predicate: has_low_unassisted_assay_readout
+    object: simh_alone
+    notes: Figure 3 explicitly labels SimH-alone <=0.03 nkat/mg protein. This bound
+      is neither zero nor an exact 0.03 measurement. The caption reports means of
+      two independent reactions for SimH; the six-reaction exception concerns CloH.
+      No precise SimH-plus-SimY specific activity is digitized from the bar height.
+      The pooled 99.0-99.8% discussion range is not assigned specifically to SimH.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3 and results, thesis PDF p.97. Inspected in the author-reproduced
+        manuscript, marked publication ahead of print; final journal full text not
+        independently retrieved.
+      snippet: showed a very low activity
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3 and results, thesis PDF p.97. Public primary thesis, Chapter
+        7; PDF page numbers are five greater than the printed page numbers.
+  - subject: prepared_simy
+    predicate: has_helper_only_control_readout
+    object: simy_alone
+    notes: The results report no activity in the controls containing MbtH-like proteins
+      alone. No numerical detection limit or SimY-alone kinetic fit is supplied; this
+      is an assay control, not proof that SimY has no function.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results accompanying Figure 3, thesis PDF p.97. Inspected in the author-reproduced
+        manuscript, marked publication ahead of print; final journal full text not
+        independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results accompanying Figure 3, thesis PDF p.97. Public primary thesis,
+        Chapter 7; PDF page numbers are five greater than the printed page numbers.
+  - subject: mixture
+    predicate: supports_measured_adenylation_assay
+    object: exchange
+    notes: Adding SimY made the SimH adenylation signal readily detectable. Reactions
+      ran for 5 min at 30 C, initiated by enzyme addition; charcoal isolation and
+      scintillation measured radiolabel exchange. The assay supports the adenylation
+      step, not direct covalent tyrosyl-PCP loading or synthesis of a complete aminocoumarin
+      or D8 molecule.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Exchange methods and Figure 3 results, thesis PDF pp.94-97. Inspected
+        in the author-reproduced manuscript, marked publication ahead of print; final
+        journal full text not independently retrieved.
+      snippet: adenylating activity was readily detectable
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Exchange methods and Figure 3 results, thesis PDF pp.94-97. Public primary
+        thesis, Chapter 7; PDF page numbers are five greater than the printed page
+        numbers.
+  - subject: mixture
+    predicate: has_reported_kinetic_readout
+    object: kinetics
+    notes: At SimH:SimY 1:1.2, varying L-tyrosine and nonlinear regression in Prism
+      5 gave Km 164 uM in Table 1 (rounded), kcat 1.01 s^-1 and kcat/Km 6180 M^-1
+      s^-1. Figure S3 prints Km 163.5 +/- 2.6 uM; the inspected text/caption does
+      not define that uncertainty as SD or SE. These are reported parameters for the
+      prepared mixture under the exchange-assay conditions, not intrinsic constants
+      of free native SimH or a D8 pathway flux. No kcat uncertainty is invented. Very
+      low unassisted activity prevented a SimH-alone kinetic investigation.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 1, methods/results and visually inspected Figure S3; thesis PDF
+        pp.95,98,110. Inspected in the author-reproduced manuscript, marked publication
+        ahead of print; final journal full text not independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 1, methods/results and visually inspected Figure S3; thesis PDF
+        pp.95,98,110. Public primary thesis, Chapter 7; PDF page numbers are five
+        greater than the printed page numbers.
+  - subject: his_simh_ybdz_plus
+    predicate: was_prepared_from_native_sequence_named_as
+    object: simh
+    notes: The same pBB25 construct and pSU20_sfp were used in BL21(DE3) with intact
+      ybdZ for a separate preparation. It is not the deletion-host preparation and
+      is not assigned the native accession. No exact sequence of a copurifying helper
+      or quantitative SimH ybdZ+ purification yield is provided by the inspected results.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Expression methods and host comparison, thesis PDF pp.92-97. Inspected
+        in the author-reproduced manuscript, marked publication ahead of print; final
+        journal full text not independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Expression methods and host comparison, thesis PDF pp.92-97. Public primary
+        thesis, Chapter 7; PDF page numbers are five greater than the printed page
+        numbers.
+  - subject: his_simh_ybdz_plus
+    predicate: did_not_show_more_unassisted_activity_than
+    object: his_simh
+    notes: The reported host comparison found no increase in SimH activity from intact-ybdZ
+      hosts. It does not prove that YbdZ cannot bind SimH or quantify its occupancy.
+      The 20-30% unassisted activity and suggested copurification for CloH/Pcza361.18
+      are not SimH measurements.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results accompanying Figure 3, thesis PDF p.97. Inspected in the author-reproduced
+        manuscript, marked publication ahead of print; final journal full text not
+        independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results accompanying Figure 3, thesis PDF p.97. Public primary thesis,
+        Chapter 7; PDF page numbers are five greater than the printed page numbers.
+  - subject: prepared_simy
+    predicate: stimulates_in_vitro_adenylation_by
+    object: his_simh
+    notes: The paired absence/presence comparison supports stimulation by prepared
+      SimY. This functional comparison alone does not prove a physical interface,
+      absolute in-vivo requirement or unique specificity for SimY. The separate cross-activation
+      experiment reports other MbtH-like proteins can stimulate SimH; those heterologous
+      helpers are not asserted here as native D8 biosynthetic partners.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3 and cross-activation results, thesis PDF pp.97,101,104. Inspected
+        in the author-reproduced manuscript, marked publication ahead of print; final
+        journal full text not independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3 and cross-activation results, thesis PDF pp.97,101,104. Public
+        primary thesis, Chapter 7; PDF page numbers are five greater than the printed
+        page numbers.
+curation_history:
+- timestamp: '2026-10-04T13:15:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added 11 nodes and 12 individually DOI/stable-URL-cited edges. Native sequence,
+    69/70-aa SimY discrepancy, preparation tags, experimental controls and measurement-versus-inference
+    boundaries are explicit. Four exact primary snippets across the two new graphs
+    total nineteen words. Author manuscript and supplement were inspected; final journal
+    full text and complete experimental constructs were not independently obtained.
+  llm_assisted: true

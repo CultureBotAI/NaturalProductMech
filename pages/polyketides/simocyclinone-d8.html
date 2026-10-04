@@ -1635,6 +1635,179 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 12 edges</span></h2>
+<p class="sub">SimH/SimY tyrosine-adenylation evidence for the simocyclinone D8 aminocoumarin branch, from Boll et al. 2011. Native Q9F5J4 and Q9F5J2, alternate Q9AMH5, recombinant preparations and assay readouts remain distinct (review #543). The source length and tag-state limits are preserved. ATP-PPi exchange is not direct PCP loading, complete D8 production or proof of physiological flux. The inspected primary text is the author-reproduced manuscript and supplement in the public thesis, not independently retrieved final journal full text.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Purified His6-SimH from the ybdZ-deletion expression host</td>
+  <td>was_prepared_from_native_sequence_named_as</td>
+  <td>Native SimH tyrosine-adenylating enzyme</td>
+  <td>The paper explicitly identifies AAL15600 (997 aa). AAL15600.1 from AF322256.1:19223..22216(+) and AAG34184.1 from AF321122.1:2435..5428(+) both translate exactly to Q9F5J4 using CDS-aware table 11. The producer is S. antibioticus Tu6040, taxon 1890. pBB25 expresses an N-terminal His6 fusion in E. coli BL21(DE3) with a ybdZ deletion and pSU20_sfp (B. subtilis Sfp). Sfp is preparation context, not a measured PCP-loading fraction. The N-terminal tag was retained. No native accession is assigned to the full recombinant protein, whose vector junctions were not independently sequenced. Literal primers GGGAATTCCATATGGCCATGCCATCCGGCA and GCCCTCGAGTCACTTCACGGCCGTTGTGG predict a 3014-nt amplicon containing the 2994-nt CDS with its stop; this is a reconstruction, not a measured complete plasmid. The source reports checking entire gene sequences. Induction was 0.4 mM IPTG for 14 h at 20 C after OD600 0.6. Ni-affinity and gel filtration gave 9.4 mg SimH per liter culture from the deletion host; this is not assay loading or a reported ybdZ+ yield. The source assigns no established biosynthetic function to the additional N-terminal condensation-like region.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1<br>https://www.uniprot.org/uniprotkb/Q9F5J4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1</td>
+</tr>
+<tr>
+  <td>Alternate deposited SimD6 sequence</td>
+  <td>differs_in_deposited_sequence_from</td>
+  <td>Native SimH tyrosine-adenylating enzyme</td>
+  <td>Q9AMH5 exactly matches the 1010-aa AAK06804.1 translation of AF324838.2:63978..67010(+), gene simD6. Compared with paper-linked Q9F5J4, it contains the 13-aa N-terminal extension MANESPVMTLENN and two aligned differences: His274 versus Tyr287 and Asp396 versus His409 (short/long numbering). The cause of these deposited differences is unresolved. The SimH forward primer also matches internally at 64017 of AF324838.2; that predicted 997-aa product retains both residue differences. Primers alone do not choose the assay allele. The paper explicitly names AAL15600; its measured kinetics are not transferred to alternate Q9AMH5.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2<br>https://www.uniprot.org/uniprotkb/Q9AMH5<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2</td>
+</tr>
+<tr>
+  <td>Purified recombinant SimY with reported tag removal</td>
+  <td>was_prepared_from_native_sequence_named_as</td>
+  <td>Native SimY MbtH-like protein</td>
+  <td>The paper names AAG34186 but reports 69 aa. AAG34186.1 at AF321122.1:6727..6939(+), AAL15602.1 at AF322256.1:23515..23727(+) and AAK06806.1 at AF324838.2:68309..68521(+) all have 213-nt CDSs including stop and translate exactly to the 70-aa Q9F5J2 sequence. The 69/70-aa discrepancy is unresolved; initiator removal or an error is not assumed. pBB28 in E. coli Rosetta2(DE3) initially produced N-His6-SimY. General methods and results report MbtH-tag removal with 0.4 units thrombin/mg protein for 8 h at 4 C before gel filtration, yet Figure S2 labels N-His6-SimY and a calculated 9.4-kDa mass. The gel may depict a different purification stage; it does not identify the functional-assay tag state. No exact cleavage scar or complete assay sequence is independently verified. Primers GGGAATTCCATATGGCCAACCCGTTTGACGA and GCCCTCGAGTCAGCTGGGGTCCGTCG predict a 233-nt amplicon retaining the native coding start and stop; this is not a sequenced plasmid. The reported yield is 27 mg/liter culture, not an assay concentration. The native accession is not assigned to the recombinant preparation.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2<br>https://www.uniprot.org/uniprotkb/Q9F5J2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1</td>
+</tr>
+<tr>
+  <td>Reconstituted His6-SimH plus prepared SimY reaction</td>
+  <td>contains_prepared_enzyme</td>
+  <td>Purified His6-SimH from the ybdZ-deletion expression host</td>
+  <td>Standard 100-uL reactions contained 1 uM tyrosine-activating enzyme, 95 mM Tris-HCl pH 8, 5 mM MgCl2, 5 mM TCEP, 2 mM ATP, 1.5 mM L-tyrosine and 1 mM [32P]PPi. These are assay conditions, not protein-expression concentrations.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Reconstituted His6-SimH plus prepared SimY reaction</td>
+  <td>contains_prepared_helper</td>
+  <td>Purified recombinant SimY with reported tag removal</td>
+  <td>SimY was added at 1.2 uM in the standard assay, giving SimH:SimY 1:1.2. Figure 4 instead varies the helper amount; the standard ratio is not imposed on its titration or on the analytical gel-filtration load.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Purified His6-SimH from the ybdZ-deletion expression host</td>
+  <td>has_low_unassisted_assay_readout</td>
+  <td>SimH-alone activity at most 0.03 nkat/mg protein</td>
+  <td>Figure 3 explicitly labels SimH-alone &lt;=0.03 nkat/mg protein. This bound is neither zero nor an exact 0.03 measurement. The caption reports means of two independent reactions for SimH; the six-reaction exception concerns CloH. No precise SimH-plus-SimY specific activity is digitized from the bar height. The pooled 99.0-99.8% discussion range is not assigned specifically to SimH.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Purified recombinant SimY with reported tag removal</td>
+  <td>has_helper_only_control_readout</td>
+  <td>No activity reported for MbtH-only controls</td>
+  <td>The results report no activity in the controls containing MbtH-like proteins alone. No numerical detection limit or SimY-alone kinetic fit is supplied; this is an assay control, not proof that SimY has no function.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Reconstituted His6-SimH plus prepared SimY reaction</td>
+  <td>supports_measured_adenylation_assay</td>
+  <td>L-tyrosine-dependent ATP-PPi exchange</td>
+  <td>Adding SimY made the SimH adenylation signal readily detectable. Reactions ran for 5 min at 30 C, initiated by enzyme addition; charcoal isolation and scintillation measured radiolabel exchange. The assay supports the adenylation step, not direct covalent tyrosyl-PCP loading or synthesis of a complete aminocoumarin or D8 molecule.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Reconstituted His6-SimH plus prepared SimY reaction</td>
+  <td>has_reported_kinetic_readout</td>
+  <td>SimH plus SimY L-tyrosine kinetic parameters</td>
+  <td>At SimH:SimY 1:1.2, varying L-tyrosine and nonlinear regression in Prism 5 gave Km 164 uM in Table 1 (rounded), kcat 1.01 s^-1 and kcat/Km 6180 M^-1 s^-1. Figure S3 prints Km 163.5 +/- 2.6 uM; the inspected text/caption does not define that uncertainty as SD or SE. These are reported parameters for the prepared mixture under the exchange-assay conditions, not intrinsic constants of free native SimH or a D8 pathway flux. No kcat uncertainty is invented. Very low unassisted activity prevented a SimH-alone kinetic investigation.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Purified His6-SimH from the ybdZ+ expression host</td>
+  <td>was_prepared_from_native_sequence_named_as</td>
+  <td>Native SimH tyrosine-adenylating enzyme</td>
+  <td>The same pBB25 construct and pSU20_sfp were used in BL21(DE3) with intact ybdZ for a separate preparation. It is not the deletion-host preparation and is not assigned the native accession. No exact sequence of a copurifying helper or quantitative SimH ybdZ+ purification yield is provided by the inspected results.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Purified His6-SimH from the ybdZ+ expression host</td>
+  <td>did_not_show_more_unassisted_activity_than</td>
+  <td>Purified His6-SimH from the ybdZ-deletion expression host</td>
+  <td>The reported host comparison found no increase in SimH activity from intact-ybdZ hosts. It does not prove that YbdZ cannot bind SimH or quantify its occupancy. The 20-30% unassisted activity and suggested copurification for CloH/Pcza361.18 are not SimH measurements.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Purified recombinant SimY with reported tag removal</td>
+  <td>stimulates_in_vitro_adenylation_by</td>
+  <td>Purified His6-SimH from the ybdZ-deletion expression host</td>
+  <td>The paired absence/presence comparison supports stimulation by prepared SimY. This functional comparison alone does not prove a physical interface, absolute in-vivo requirement or unique specificity for SimY. The separate cross-activation experiment reports other MbtH-like proteins can stimulate SimH; those heterologous helpers are not asserted here as native D8 biosynthetic partners.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">10 nodes, 11 edges</span></h2>
+<p class="sub">Association of separately prepared recombinant SimH and SimY, with apparent gel-filtration masses and an activity titration supporting a proposed heterotetramer (review #543). The observed co-eluting complex is not assigned a subunit accession or a verified native in-vivo stoichiometry. Source-reported tag removal and the different Figure S2 label remain explicit. The public primary author manuscript and supplement were inspected; final journal full text was not independently retrieved.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Purified His6-SimH used in association experiments</td>
+  <td>was_prepared_from_native_sequence_named_as</td>
+  <td>Native SimH tyrosine-adenylating enzyme</td>
+  <td>The source links SimH to AAL15600, whose 997-aa native sequence matches Q9F5J4 and the independent AAG34184.1 deposit. The protein used in association experiments is a recombinant N-His6 preparation, not the accession-defined native sequence. General methods describe pBB25 in BL21(DE3) with or without ybdZ deletion and with pSU20_sfp; the analytical SEC section does not separately identify which host preparation supplied that experiment. It is not silently assigned the deletion-host provenance of Figure 3. Entire gene sequences were reported checked by the authors, but complete experimental vector and tag junctions were not independently obtained. The literal primers cannot distinguish paper-linked SimH from the two-residue-different shortened product of alternate simD6/AAK06804.1. The explicit paper accession supports the selected native grounding, not a claim to have sequenced the complete assayed protein.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1<br>https://www.uniprot.org/uniprotkb/Q9F5J4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1</td>
+</tr>
+<tr>
+  <td>Purified recombinant SimY with reported tag removal</td>
+  <td>was_prepared_from_native_sequence_named_as</td>
+  <td>Native SimY MbtH-like protein</td>
+  <td>The paper names AAG34186 but reports 69 aa. AAG34186.1 at AF321122.1:6727..6939(+), AAL15602.1 at AF322256.1:23515..23727(+) and AAK06806.1 at AF324838.2:68309..68521(+) all have 213-nt CDSs including stop and translate exactly to the 70-aa Q9F5J2 sequence. The 69/70-aa discrepancy is unresolved; initiator removal or an error is not assumed. pBB28 in E. coli Rosetta2(DE3) initially produced N-His6-SimY. General methods and results report MbtH-tag removal with 0.4 units thrombin/mg protein for 8 h at 4 C before gel filtration, yet Figure S2 labels N-His6-SimY and a calculated 9.4-kDa mass. The gel may depict a different purification stage; it does not identify the functional-assay tag state. No exact cleavage scar or complete assay sequence is independently verified. Primers GGGAATTCCATATGGCCAACCCGTTTGACGA and GCCCTCGAGTCAGCTGGGGTCCGTCG predict a 233-nt amplicon retaining the native coding start and stop; this is not a sequenced plasmid. The reported yield is 27 mg/liter culture, not an assay concentration. The native accession is not assigned to the recombinant preparation.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2<br>https://www.uniprot.org/uniprotkb/Q9F5J2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1</td>
+</tr>
+<tr>
+  <td>Purified His6-SimH used in association experiments</td>
+  <td>is_a_component_of_observed_fraction</td>
+  <td>Observed co-eluting recombinant SimH/SimY complex</td>
+  <td>Analytical gel filtration of a mixture and SDS-PAGE of the isolated approximately 208-kDa fraction support association of the recombinant proteins. This is not a structure-based interface determination or native-cell oligomer measurement. The SimH native accession is not an identifier for the whole complex.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Purified recombinant SimY with reported tag removal</td>
+  <td>is_a_component_of_observed_fraction</td>
+  <td>Observed co-eluting recombinant SimH/SimY complex</td>
+  <td>A SimY band accompanies SimH in the isolated fraction. General methods report tag cleavage; the N-His6-SimY label in Figure S2 does not independently establish the exact SimY sequence used in this fraction. The protein complex is left ungrounded rather than assigned a subunit accession or an unverified ComplexPortal record.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Purified His6-SimH used in association experiments</td>
+  <td>has_analytical_gel_filtration_readout</td>
+  <td>Dominant apparent 650-kDa SimH-alone aggregate peak</td>
+  <td>SimH alone eluted predominantly near an apparent mass of 650 kDa, interpreted by the source as aggregation. The source gives 107.3 kDa as the calculated tagged monomer mass; neither value is a measured native monomer mass or an exact number of aggregate subunits. Analytical SEC used a Superdex 200 10/300 GL, 24-mL bed, 20 mM Tris-HCl pH 8 and 150 mM NaCl with log-mass/Kav calibration standards.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Observed co-eluting recombinant SimH/SimY complex</td>
+  <td>has_mixture_gel_filtration_readout</td>
+  <td>Dominant apparent 208-kDa SimH/SimY mixture peak</td>
+  <td>The SimH/SimY mixture has a dominant approximately 208-kDa peak by calibrated SEC. Figure 5A also shows residual approximately 650-kDa and &lt;=15-kDa signals; not all material became one homogeneous complex. These are hydrodynamic apparent masses. The inspected SEC method does not specify the sample loading concentration, injection volume or mixture ratio; the separate 1:1.2 activity-assay ratio is not substituted for a missing SEC loading ratio.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Observed co-eluting recombinant SimH/SimY complex</td>
+  <td>has_isolated_fraction_SDS_PAGE_readout</td>
+  <td>SimH and SimY bands in the isolated 208-kDa fraction</td>
+  <td>SDS-PAGE of the isolated 208-kDa peak shows bands assigned to SimH and SimY. Band presence supports composition and co-elution, not an exact molar ratio from staining intensity, a unique oligomer size or a mapped binding interface.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Purified His6-SimH used in association experiments</td>
+  <td>has_helper_titration_response</td>
+  <td>Activity plateau at a 1:1 SimY:SimH molar ratio</td>
+  <td>The L-tyrosine adenylation activity increased as SimY was added and plateaued at approximately equimolar SimY:SimH. Figure 4 measures activity, not directly bound subunits. No dissociation constant, Hill coefficient or binding occupancy is inferred from this curve.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Purified recombinant SimY with reported tag removal</td>
+  <td>was_varied_in_activity_titration</td>
+  <td>Activity plateau at a 1:1 SimY:SimH molar ratio</td>
+  <td>Different SimY amounts were assayed with SimH. Further helper beyond the approximately 1:1 ratio did not increase activity in the displayed experiment. This does not prove a heterodimer, and it is not the distinct CloH/CloY pETDUET coexpression experiment.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Dominant apparent 208-kDa SimH/SimY mixture peak</td>
+  <td>is_consistent_with_source_proposed_model</td>
+  <td>Source-proposed (SimH)2(SimY)2 heterotetramer</td>
+  <td>The authors compare the apparent 208-kDa complex with a calculated 229-kDa (SimH)2(SimY)2 assembly. The 229-kDa value is the source calculation, not independently verified from complete assayed tag/cleavage sequences. SEC alone does not directly count subunits or exclude alternative shapes or oligomers. This remains the source-supported model, not an experimentally solved native structure.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Activity plateau at a 1:1 SimY:SimH molar ratio</td>
+  <td>supports_relative_composition_in_proposed_model</td>
+  <td>Source-proposed (SimH)2(SimY)2 heterotetramer</td>
+  <td>The activity plateau is compatible with equal relative amounts of helper and adenylating enzyme. Combined with SEC it motivated the 2:2 proposal; it does not uniquely determine that stoichiometry or establish which oligomer exists in the native producer.</td>
+  <td class="mono">DOI:10.1074/jbc.M111.288092<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

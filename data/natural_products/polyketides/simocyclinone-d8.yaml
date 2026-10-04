@@ -795,6 +795,8 @@ causal_graph_refs:
 - simocyclinone-d8-siml-recombinant-scar-and-surrogate-activity
 - simocyclinone-d8-simb3-insertion-genetics-and-sequence-limits
 - simocyclinone-d8-simc1b-ks-replacement-and-retained-production
+- simocyclinone-d8-simh-simy-identities-and-adenylation
+- simocyclinone-d8-simh-simy-association-and-stoichiometry-limits
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -880,4 +882,13 @@ curation_history:
     discrepancy, genotyping and retained D8/D6 signal evidence (review #542). All
     thirteen previous graphs, source fields, history, incomplete stereochemistry and
     SEEDED status remain unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-04T13:15:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added SimH Q9F5J4 and SimY Q9F5J2 with alternate SimD6 Q9AMH5 identity
+    limits, bounded adenylation and association evidence (review #543). Native proteins,
+    recombinant preparations, assay readouts and proposed 2:2 complex remain distinct.
+    All fourteen earlier graphs, source-owned fields, prior history, SEEDED status
+    and unresolved stereochemistry are preserved.'
   llm_assisted: true
