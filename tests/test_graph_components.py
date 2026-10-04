@@ -224,6 +224,66 @@ def test_changed_component_requires_append_only_history(bundle):
     assert read_natural_product(path)["causal_graphs"][0] == doc["graph"]
 
 
+@pytest.mark.parametrize("owner_exists", [False, True])
+def test_existing_component_cannot_be_reassigned_to_another_owner(bundle, owner_exists):
+    path, owner, doc = bundle
+    write_validated_graph_bundle(owner, path, [doc])
+    graph_path = component_path(owner, path, "test-graph")
+    original = (path.read_bytes(), graph_path.read_bytes())
+    second_path = path.with_name("second-owner.yaml")
+    second = deepcopy(owner)
+    second["identifier"] = "naturalproductmech:second-owner"
+    second["causal_graph_refs"] = []
+    event(second)
+    if owner_exists:
+        write_validated_graph_bundle(second, second_path, [])
+    second_before = second_path.read_bytes() if owner_exists else None
+
+    replacement = deepcopy(doc)
+    replacement["record_id"] = second["identifier"]
+    event(replacement)
+    extra = deepcopy(replacement)
+    extra["graph"]["graph_id"] = "new-graph"
+    extra["curation_history"] = []
+    event(extra)
+    second["causal_graph_refs"] = ["new-graph", "test-graph"]
+    event(second)
+    with pytest.raises(GraphComponentError, match="changing component ownership"):
+        write_validated_graph_bundle(second, second_path, [extra, replacement])
+
+    assert original == (path.read_bytes(), graph_path.read_bytes())
+    assert not component_path(second, second_path, "new-graph").exists()
+    if owner_exists:
+        assert second_path.read_bytes() == second_before
+    else:
+        assert not second_path.exists()
+    assert read_natural_product(path)["causal_graphs"] == [doc["graph"]]
+    assert audit_graph_components(path.parent.parent) == [graph_path]
+
+
+def test_shared_key_owners_can_use_distinct_components(bundle):
+    path, owner, doc = bundle
+    write_validated_graph_bundle(owner, path, [doc])
+    graph_path = component_path(owner, path, "test-graph")
+    original = (path.read_bytes(), graph_path.read_bytes())
+    second_path = path.with_name("second-owner.yaml")
+    second = deepcopy(owner)
+    second["identifier"] = "naturalproductmech:second-owner"
+    second["causal_graph_refs"] = ["other-graph"]
+    event(second)
+    other = deepcopy(doc)
+    other["record_id"] = second["identifier"]
+    other["graph"]["graph_id"] = "other-graph"
+    event(other)
+    write_validated_graph_bundle(second, second_path, [other])
+    assert original == (path.read_bytes(), graph_path.read_bytes())
+    assert read_natural_product(path)["causal_graphs"] == [doc["graph"]]
+    assert read_natural_product(second_path)["causal_graphs"] == [other["graph"]]
+    assert set(audit_graph_components(path.parent.parent)) == {
+        graph_path, component_path(second, second_path, "other-graph")
+    }
+
+
 def test_write_failure_restores_all_artifacts(bundle, monkeypatch):
     path, owner, doc = bundle
     from naturalproductmech.validation import write_validated

@@ -176,6 +176,9 @@ ownership, topology, sizes and append-only events before writes; ordinary write
 failures roll back. It does not provide a multi-file filesystem transaction:
 after interruption or power loss, inspect the worktree and run the complete
 audit before retrying. Do not delete or detach components implicitly.
+Preflight also rejects reassignment of an existing component to another owner,
+even with an appended event. Distinct records sharing an InChIKey must use
+distinct component graph IDs; an ownership transfer needs an explicit migration.
 
 `just validate-strict <owner-path>` checks the owner and all its components.
 Full `just validate-all`, `just verify-corpus`, and `just verify-reproduction`

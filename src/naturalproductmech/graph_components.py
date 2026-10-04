@@ -237,6 +237,15 @@ def write_validated_graph_bundle(owner: dict, record_path: Path, components: lis
     writes = [(component_path(owner, record_path, ref), doc) for ref, doc in staged.items()]
     writes.append((record_path, owner))
     for path, doc in writes:
+        # Distinct records may share an InChIKey, but cannot take each other's components.
+        if path != record_path and path.exists():
+            previous = yaml.safe_load(path.read_text(encoding="utf-8"))
+            if not isinstance(previous, dict) or any(
+                previous.get(field) != doc[field] for field in ("record_id", "standard_inchi_key")
+            ):
+                raise GraphComponentError(
+                    f"{path}: changing component ownership requires an explicit migration"
+                )
         _require_event(doc, path)
     backups = {path: path.read_bytes() if path.exists() else None for path, _ in writes}
     try:
