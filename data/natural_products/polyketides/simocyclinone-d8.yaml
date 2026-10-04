@@ -794,6 +794,7 @@ causal_graph_refs:
 - simocyclinone-d8-siml-amide-ligation-and-substrate-scope
 - simocyclinone-d8-siml-recombinant-scar-and-surrogate-activity
 - simocyclinone-d8-simb3-insertion-genetics-and-sequence-limits
+- simocyclinone-d8-simc1b-ks-replacement-and-retained-production
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -871,4 +872,12 @@ curation_history:
     HPLC phenotypes and inferred sugar-pathway role (review #541). All twelve prior
     graphs, source fields, history, incomplete stereochemistry and SEEDED status remain
     unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-04T12:33:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added native SimC1B G9VYV9 with bounded KS-region replacement, source/primer-site
+    discrepancy, genotyping and retained D8/D6 signal evidence (review #542). All
+    thirteen previous graphs, source fields, history, incomplete stereochemistry and
+    SEEDED status remain unchanged.'
   llm_assisted: true

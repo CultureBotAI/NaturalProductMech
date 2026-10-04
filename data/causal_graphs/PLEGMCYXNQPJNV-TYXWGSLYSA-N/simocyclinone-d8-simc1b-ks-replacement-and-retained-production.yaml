@@ -1,0 +1,195 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-simc1b-ks-replacement-and-retained-production
+  scope: BIOSYNTHESIS
+  description: 'Native S. antibioticus Tu6040 SimC1B KS-region replacement and retained
+    source-assigned D8 production, from the Bilyk et al. primary supporting information.
+    G9VYV9 denotes the native protein, not the engineered allele. The primer-site/prose
+    conflict and qualitative genotype and metabolite readouts are explicit (review
+    #542). This is not a clean whole-gene deletion, purified catalysis or proof that
+    every SimC1B domain is dispensable under all conditions. The historical type-I-PKS
+    tetraene-assembly assignment is not adopted as an established function. The full
+    main article was not obtained.'
+  nodes:
+  - node_id: simc1b
+    label: Native SimC1B modular polyketide synthase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G9VYV9
+  - node_id: gene
+    label: Native simC1B locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: construct
+    label: pKGKSdelta KS-region replacement construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: S. antibioticus Tu6040 deltaKS mutant
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: wildtype
+    label: S. antibioticus Tu6040 wild-type Southern comparator
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: southern
+    label: Mutant hph hybridization near the predicted 5.9-kb position
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: sd8
+    label: Source-assigned SD8 signal in deltaKS crude extract
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: sd6
+    label: Source-assigned SD6 signal in deltaKS crude extract
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gene
+    predicate: encodes_native_protein
+    object: simc1b
+    notes: The 6597-nt CDS including stop at AF324838.2:15910..22506(+) encodes AEU17897.1.
+      Its CDS-aware table-11 translation and deposited translation exactly match the
+      2198-aa G9VYV9 sequence. The native producer is S. antibioticus Tu6040 (Tue6040
+      in the deposit), taxon 1890. This grounding does not identify the sequence or
+      expression state of any engineered protein.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native sequence and simC1B annotation.
+    - reference: https://www.uniprot.org/uniprotkb/G9VYV9
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed G9VYV9, gene simC1B, taxon 1890; entry version 62, sequence
+        version 1, annotation updated 2026-09-02; inspected 2026-10-04. An automatic
+        enzyme name is not a catalytic assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS-aware translation and exact native protein comparison.
+  - subject: construct
+    predicate: was_designed_to_replace_KS_encoding_region_of
+    object: gene
+    notes: Methods p.33 describe two 2.5-kb homology arms fused by overlap PCR in
+      pJET1.2, an hph cassette flanked by loxP, and transfer to pKG1139. They call
+      the central site SspI and external sites StuI. The literal primer table on p.41
+      instead labels and contains central EcoRV (GATATC) and external SspI (AATATT),
+      with no StuI (AGGCCT) site in these four primers. The table is headed S5 but
+      listed as S6 in the contents. Neither the source text nor primers are silently
+      corrected. No complete plasmid or inserted hph/loxP sequence was independently
+      audited.
+    evidence:
+    - reference: DOI:10.1021/acschembio.5b00669.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chapter S2 pp.32-33, Figure S8a and literal primer table p.41. The two
+        source descriptions conflict.
+  - subject: mutant
+    predicate: was_generated_using
+    object: construct
+    notes: The supplement reports screening for loss of vector resistance after double
+      crossover and confirmation of intragenic deletions by PCR. Figure S8a specifically
+      maps the Tu6040 deltaKS replacement. The hph/loxP cassette remains shown; no
+      Cre-excised scar-only allele or complete experimental mutant sequence is asserted.
+      The inspected supplement does not show SimC1B complementation or exclude all
+      secondary genomic effects. The nearby smcKSII complementation experiments are
+      in a different producer and are not SimC1B rescue tests.
+    evidence:
+    - reference: DOI:10.1021/acschembio.5b00669.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chapter S2 p.33 and Figure S8a; genotype evidence, not a protein-expression
+        measurement.
+      snippet: Deletions within the genes were confirmed by PCR.
+  - subject: mutant
+    predicate: has_reported_KS_region_replacement_in
+    object: gene
+    notes: Figure S8a replaces the KS-encoding segment with hph/loxP while retaining
+      the region labelled AT, DH, ER and KR; this is not deletion of the full simC1B
+      gene. Literal primers are KS_R_fus-f TTCGGCAGTATCTGAAGAAGGATATCGCGCAGCCCGACGCACCGGG;
+      KS_F_fus-r CCCGGTGCGTCGGGCTGCGCGATATCCTTCTTCAGATACTGCCGAA; KS_R-SspI-r ACTAATATTCCGCCCCATGGGTCAGGACGA;
+      and KS_F-SspI-f ACTAATATTGGTCTGGCCGGGACGACGCTC. Separating their artificial
+      sites gives native arms 13410..15909 and 17410..19909 of AF324838.2, each 2500
+      nt, surrounding 15910..17409 (the first 1500 CDS nt / 500 aa). This is a primer-derived
+      model, not a sequenced allele or a measured domain boundary. The reverse inner
+      primer has an incidental 21-nt native suffix crossing its artificial-site boundary;
+      that match does not change the 20-nt designed arm. No exact mutant protein,
+      folding state or residual catalytic activity is inferred from the replacement
+      diagram.
+    evidence:
+    - reference: DOI:10.1021/acschembio.5b00669.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S8a and primer table p.41 support the reported intervention.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Native-arm and removed-region reconstruction from the four literal primers.
+        Site/prose conflict remains unresolved.
+  - subject: wildtype
+    predicate: is_hybridization_comparator_for
+    object: mutant
+    notes: Figure S8aB compares wild-type and deltaKS chromosomal DNA with an hph
+      probe, alongside a DNA ladder and the pKGKSdelta cassette control. No corresponding
+      hph band is visible in the wild-type lane. This comparator concerns hybridization,
+      not matched fermentation yield or protein abundance; it does not establish absence
+      of every unintended mutation.
+    evidence:
+    - reference: DOI:10.1021/acschembio.5b00669.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Visually inspected Figure S8aB and its caption, p.37.
+  - subject: mutant
+    predicate: has_genotyping_readout
+    object: southern
+    notes: The source marks the mutant hph-hybridizing band near a predicted 5.9-kb
+      fragment position. The value is reported from the figure/caption, not independently
+      reconstructed from a specified restriction digest or fully sequenced junctions.
+      Band appearance is not an absolute copy-number measurement or proof of whole-genome
+      specificity.
+    evidence:
+    - reference: DOI:10.1021/acschembio.5b00669.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S8aB and caption, p.37; source-labelled predicted fragment size,
+        visually checked.
+  - subject: mutant
+    predicate: retains_source_assigned_product_signal
+    object: sd8
+    notes: Figure S8b shows the mutant crude-extract HPLC-ESI/MS chromatogram, with
+      SD8 labelled m/z 930.65 [M-H]-. The displayed trace has an mAU intensity axis;
+      the source ion assignment is retained without silently converting the number
+      to an accurate-mass measurement. D8 detection after this intervention argues
+      against a strict requirement for the targeted intact KS region under the assayed
+      conditions. It does not establish unchanged wild-type yield, absence of all
+      SimC1B functions, or the alternative enzymatic route. No absolute titer, replicate
+      count, uncertainty or exact retention time is supplied. Main-article fermentation
+      conditions were not obtained; Kitasatospora culture conditions and the supplement's
+      printed mg/mL conjugation selection values are not turned into a validated Tu6040
+      production protocol. The owner's six unspecified stereocentres remain unresolved.
+    evidence:
+    - reference: DOI:10.1021/acschembio.5b00669.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Visually inspected Figure S8b, p.38, and contents p.3 identifying this
+        as the S. antibioticus deltaKS experiment.
+      snippet: Arrows indicate ions corresponding to simocyclinones.
+    - reference: DOI:10.1021/acschembio.5b00669.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Bounded inference from retained source-assigned D8 after the reported
+        domain-region intervention; not a purified enzyme test or proof of global
+        dispensability.
+  - subject: mutant
+    predicate: has_source_assigned_product_signal
+    object: sd6
+    notes: The same Figure S8b labels a second signal as SD6, m/z 890.37 [M+H]+. Its
+      positive-ion annotation is kept distinct from the negative-ion SD8 annotation.
+      This is a source assignment in a crude extract, not a new exact chemical record,
+      independently confirmed stereochemistry, absolute yield or measured SD6-to-SD8
+      conversion. Relative peak heights do not establish molar product ratios.
+    evidence:
+    - reference: DOI:10.1021/acschembio.5b00669.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Visually inspected Figure S8b label and caption, p.38.
+curation_history:
+- timestamp: '2026-10-04T12:33:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added eight nodes and eight DOI/stable-URL-cited edges for native SimC1B
+    identity and KS-region genetics. Preserved domain-versus-gene, literal-primer/prose,
+    reported-versus-reconstructed and retained-signal limits. Two verified primary
+    snippets total fourteen words; full main article and complete experimental allele
+    remain uninspected.
+  llm_assisted: true
