@@ -323,6 +323,488 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-87867fe10f
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: coumermycin-a1-coul-recombinant-amide-formation
+  scope: BIOSYNTHESIS
+  description: 'CouL native sequence versions and recombinant amide formation (review
+    #549), from Schmutz 2003 and the corresponding primary paper. Current Q9F8U8 is
+    not assigned as the uniquely identified 2003 assay sequence. Native deposits,
+    the printed historical alignment and the His6 preparation remain distinct. Measured
+    monoamide/diamide formation is not mature glycosylated coumermycin A1 synthesis.
+    Conditional kinetics, conflicting assay units, unresolved monoamide regiochemistry
+    and inferred adenylate/amide order are explicit. Schmutz PDF pages exceed printed
+    pages by ten.'
+  nodes:
+  - node_id: gene
+    label: Native couL locus from S. rishiriensis DSM 40489
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: current
+    label: Current deposited native CouL sequence
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U8
+  - node_id: historical
+    label: Historical deposited CouL sequence
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AAG29784.1
+  - node_id: prep
+    label: pMS90-derived C-terminal His6 CouL preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: E. coli XL1 Blue MRF' expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: purification
+    label: CouL Ni-NTA purification and protein-yield readouts
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: sec
+    label: Active CouL size-exclusion fraction near 59-60 kDa
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: monomer
+    label: Inferred monomeric recombinant CouL under SEC conditions
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: CouL pyrrole-acid and ring-B ligation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acid
+    label: 3-Methylpyrrole-2,4-dicarboxylic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: amine
+    label: 3-Amino-4,7-dihydroxy-8-methylcoumarin (ring B)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: heat
+    label: Heat-denatured CouL negative control
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: monoamide
+    label: CouL monoamide with unresolved amidated carboxyl position
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: diamide
+    label: CouL diamide of pyrrole acid and two ring-B units
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: refeeding
+    label: Isolated-monoamide refeeding assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: cofactor
+    label: CouL nucleotide, metal and CoA assay comparisons
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: kinetics
+    label: Conditional apparent monoamide-formation kinetics
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: substrate_inhibition
+    label: Ring-B substrate inhibition at high concentrations
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: substrate_panel
+    label: Relative CouL acid-substrate panel
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: novobiocic_acid
+    label: Novobiocic acid from the DMAHB surrogate assay
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: adenylate_model
+    label: Proposed CouL adenylate intermediate
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: regio_model
+    label: Proposed pyrrole 2-first then 4 amidation order
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gene
+    predicate: has_current_deposited_translation
+    object: current
+    notes: AF235050.4 couL/AAG29784.2 at 10634..12223(+) is a 1590-nt CDS including
+      stop. CDS-aware table-11 translation exactly matches deposited protein and 529-aa
+      Q9F8U8. The strain is DSM 40489, S. rishiriensis taxon 68264. Other gene-name
+      search hits from Rhodococcus are not selected.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current native CDS and strain.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U8
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 59, sequence 2; sequence date 2011-11-16, annotation
+        2026-09-02, retrieved 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware/deposited/UniProt sequence agreement.
+  - subject: gene
+    predicate: has_historical_deposited_translation
+    object: historical
+    notes: AF235050.3 couL/AAG29784.1 at 10632..12221(+) is also 1590 nt including
+      stop. Its CDS-aware translation, historical GenPept record and complete 529-aa
+      CouL alignment in Figure III-16 agree. A printed alignment is reported sequence
+      evidence, not sequencing of the experimental pMS90 sample.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical native CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAG29784.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical protein record, replaced by version 2 on 2011-09-21.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Complete printed alignment, Figure III-16, PDF p.103.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact historical CDS/protein/printed alignment comparison.
+  - subject: historical
+    predicate: differs_in_deposit_version_from
+    object: current
+    notes: Historical residues Arg384/Ala385 are Glu384/Gly385 in the current deposit;
+      the remaining 527 residues agree. These are deposit-version differences, not
+      proof of two biological alleles or identification of the internal sequence of
+      the measured recombinant protein.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical sequence in version comparison.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact 529-aa comparison gives R384E and A385G only.
+  - subject: prep
+    predicate: was_constructed_from
+    object: gene
+    notes: The pZW11 subclone of cosmid 4-2H supplied couL for SphI/BglII cloning
+      into pQE70 to make pMS90 (5010 bp in the thesis map), with a reported C-terminal
+      His6 tag. Literal primers are couL-1 TAGTCACTGCATGCCGAACAGGGAC and couL-2 TGACTCAGATCTCCTGTCCACCAG.
+      Their unique 3-prime matches extrapolate to 10622..10646(+) and 12230..12207(-)
+      on AF235050.3, shifted +2 nt on AF235050.4. Both 1609-nt literal-primer models
+      predict GTG-to-ATG start recoding, Ala2Pro in the native-length core, and TGA-to-AGA
+      stop replacement. These models do not sequence the full fusion or select which
+      internal 384/385 version was present in the experimental sample.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Cloning and expression of CouL.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primers and Figure III-17, PDF p.104.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3
+      evidence_type: CURATOR_INFERENCE
+      notes: Historical literal-primer reconstruction.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Current literal-primer reconstruction.
+  - subject: host
+    predicate: expressed
+    object: prep
+    notes: The thesis describes 100 mL LB, 50 ug/mL carbenicillin, 30 C and 170 rpm,
+      induction at OD600 0.7-0.8 with 0.5 mM IPTG and three hours expression. This
+      host prepares a biosynthetic protein; it is not reported as producing mature
+      coumermycin A1 in this experiment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Expression method, PDF p.61.
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Cloning, overexpression and purification.
+  - subject: prep
+    predicate: has_purification_readouts
+    object: purification
+    notes: Ni-NTA yielded a near-homogeneous band near 60 kDa (calculated tagged mass
+      58.9 kDa). The paper reports 8-9% of total soluble protein, whereas the thesis
+      reports 10-11% and 21 mg/L culture. These remain source-specific yield statements,
+      not harmonized purity percentages, assay concentrations or native abundance.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Overexpression and purification results.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure III-18 and mass comparison, PDF pp.105,108.
+  - subject: prep
+    predicate: has_size_exclusion_readout
+    object: sec
+    notes: HiLoad 26/60 Superdex 200 in 150 mM NaCl, 50 mM Tris-HCl pH 8 at 1 mL/min
+      gave a thesis elution volume of 204 mL and apparent mass near 59-60 kDa. The
+      eluate retained enzyme activity. This is an apparent hydrodynamic mass for the
+      recombinant preparation.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table II-11, gel filtration methods/results, PDF pp.41,63,108.
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Size-exclusion chromatography and monomer interpretation.
+  - subject: sec
+    predicate: supports_interpretation
+    object: monomer
+    notes: The apparent SEC mass is near the tagged monomer mass and supports the
+      authors' monomer interpretation under these conditions. It does not directly
+      establish native-cell oligomeric stoichiometry or exclude condition-dependent
+      assemblies.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: CURATOR_INFERENCE
+      notes: Interpretation of SEC mass.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: PDF p.108, SEC interpretation.
+  - subject: prep
+    predicate: catalysed_in
+    object: assay
+    notes: The paper describes 100 uL, 1 mM each pyrrole acid and ring B, 5 mM MnCl2,
+      50 mM Tris-HCl pH 8, 4 ug protein and 5-10 min at 30 C. Its Methods specify
+      1 mM ATP but Results 5 mM. The thesis method uses 5 mM ATP, one minute preincubation
+      without ring B, ring-B initiation, 5-7 min reaction and 5 uL 1.5 M TCA stop.
+      The ATP discrepancy is not silently resolved.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Enzyme assay Methods versus product-formation Results.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Ligase method, PDF pp.64-65.
+  - subject: acid
+    predicate: was_acyl_substrate_in
+    object: assay
+    notes: The 3-methylpyrrole-2,4-dicarboxylic acid substrate provides the central
+      dicarboxylate scaffold. Its two carboxyl groups allow one- and two-amide products;
+      use in vitro does not measure cellular concentration.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Coumermycin biosynthetic amide formation.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Product structures and assays, PDF pp.106-109.
+  - subject: amine
+    predicate: was_amine_substrate_in
+    object: assay
+    notes: The supplied ring B is 3-amino-4,7-dihydroxy-8-methylcoumarin, not a glycosylated
+      mature antibiotic. One ring-B unit enters the monoamide and two enter the diamide.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Substrates and product analysis.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure III-19 and product analysis, PDF pp.106-107.
+  - subject: heat
+    predicate: was_negative_control_for
+    object: assay
+    notes: Figure III-19 curve b uses heat-denatured enzyme and provides the displayed
+      negative comparator to active CouL. No numerical zero background, replicate
+      count or uncertainty is inferred from this chromatogram.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure III-19, PDF p.106.
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Heat-denatured control in product analysis.
+  - subject: assay
+    predicate: formed_assigned_product
+    object: monoamide
+    notes: HPLC detects the monoamide at about 15 min (15.1 min in the thesis); positive
+      SRM 359-to-152 and negative 357-to-206 support the assignment. The 1H-NMR sample
+      contained impurities and did not distinguish amidation at pyrrole carboxyl position
+      2 versus 4. Thesis HMBC/NOESY follow-up did not resolve that position. The displayed
+      regioisomer is not a secured structure. Quantification used substrate depletion
+      versus heat controls at 260 nm with product detection at 340 nm, not a weighed
+      authentic monoamide standard.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: HPLC, NMR and mass spectrometry; depletion calibration is from the thesis.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PDF pp.70-71,105-107,124.
+      snippet: Die gezeigte Strukturformel ist nicht gesichert.
+  - subject: assay
+    predicate: formed_assigned_product
+    object: diamide
+    notes: HPLC detects the diamide at about 20 min (19.6 min in the thesis), with
+      positive SRM 548-to-341 and negative 546-to-206. This is the pyrrole dicarboxylate
+      amide of two unglycosylated ring-B units, not mature coumermycin A1. Product
+      quantification is based on the source's depletion calibration rather than an
+      independently weighed diamide standard.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Product analysis; depletion calibration is from the thesis.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PDF pp.70-71,105-108.
+  - subject: monoamide
+    predicate: was_substrate_in
+    object: refeeding
+    notes: Isolated monoamide was supplied with ring B, ATP and Mn2+ to CouL. Its
+      unresolved initial amide position is retained rather than assigned by the fact
+      that a second amide can form.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Conversion of isolated monoamide.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sequential product experiments, PDF pp.107-108.
+  - subject: prep
+    predicate: catalysed_in
+    object: refeeding
+    notes: The second amide-forming reaction is reported at about 43% of the first
+      reaction's velocity under the comparison conditions. This is not a universal
+      turnover ratio or a separately established native flux.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Monoamide conversion assay.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PDF p.107.
+  - subject: refeeding
+    predicate: formed_assigned_product
+    object: diamide
+    notes: Isolated-monoamide refeeding gave the diamide by HPLC. Separately, the
+      starting-substrate assay with 1 mM ring B and 0.1 mM pyrrole acid for one hour
+      lost the monoamide peak, described as complete conversion by the authors. Peak
+      disappearance is not an independent mass balance or exact isolated yield.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sequential amide formation.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: HPLC conversion experiment, PDF p.107.
+  - subject: prep
+    predicate: was_tested_in
+    object: cofactor
+    notes: The source reports a requirement for Mg2+ or Mn2+ and inhibition by 0.5
+      mM EDTA. Relative to ATP at 100%, GTP gave about 5% activity; CTP/TTP gave no
+      reported product in the 5 mM nucleotide comparison. Thus absolute ATP-only specificity
+      is not asserted. Adding 0.5 mM CoA did not increase activity; this does not
+      directly identify an intermediate.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Properties of CouL.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Cofactor comparisons, PDF pp.108-109,127.
+  - subject: prep
+    predicate: has_conditional_kinetics
+    object: kinetics
+    notes: Monoamide formation, with no detectable diamide in these kinetic conditions,
+      gave apparent Km 26 uM for acid and 44 uM for ring B in the paper. Thesis Figure
+      III-22 gives 26.4 and 44.2 uM, with Vmax 0.34 and 7.4 nkat/mg for the respective
+      titrations. The other substrate was fixed at 1 mM with 5 mM ATP/Mn in the thesis.
+      Acid titration used 10 ug/mL protein and six minutes. For ring-B titration the
+      thesis says 1 mg/mL despite calling it reduced; the paper says 1 ug/mL, with
+      five minutes. The unit discrepancy is preserved. The paper associates 7.4 nkat/mg
+      with turnover 0.4 s^-1; neither is a universal native rate. Error bars are shown
+      but replicate counts and SD/SE assignment are not supplied in the inspected
+      sections. Apparent Km is not binding Kd.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Kinetic constants and Figure 5.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure III-22 and text, PDF pp.109-110.
+  - subject: amine
+    predicate: showed_substrate_inhibition
+    object: substrate_inhibition
+    notes: Ring B above 100 uM inhibited activity. The thesis reports about 6% of
+      maximal activity at 1 mM ring B in the comparison with 5 ug/mL enzyme, 1 mM
+      acid and five minutes incubation. This is a conditional substrate-inhibition
+      readout, not cellular toxicity.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Substrate inhibition.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure III-23 and text, PDF pp.110-111.
+  - subject: substrate_inhibition
+    predicate: limits_interpretation_of
+    object: kinetics
+    notes: The thesis explicitly attributes the lower 0.34 nkat/mg acid-titration
+      Vmax to the inhibitory fixed 1 mM ring-B concentration. The two conditional
+      Vmax values are not conflicting measurements of one universal rate and are not
+      silently collapsed.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Explanation following Figure III-22, PDF pp.110-111.
+  - subject: prep
+    predicate: was_tested_in
+    object: substrate_panel
+    notes: 'Table III-8 tests acids at 1 mM and reports relative activity, not absolute
+      conversion. The first three starred entries concern monoamide formation: genuine
+      acid 100%, 4-methylpyrrole-2,3-dicarboxylic acid 94%, and 3,5-dimethylpyrrole-2,4-dicarboxylic
+      acid 110%. The latter''s 2-ethyl ester is <0.05% and 4-ethyl ester 7.7%. Its
+      diamide-forming activity is about 17% of the genuine-acid comparator, distinct
+      from 110% monoamide activity. Source-labelled other pyrrole mono/tricarboxylates
+      and four tested pyridines are <0.05%; differing positional names in table/prose
+      are not converted here to exact chemical identifiers.'
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Substrate specificity and Table 1.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table III-8 and discussion, PDF pp.111-113,124-125.
+  - subject: substrate_panel
+    predicate: formed_surrogate_product
+    object: novobiocic_acid
+    notes: DMAHB is accepted at 36% of the reference relative activity. Novobiocic
+      acid was assigned by HPLC comparison with authentic standard at 305 nm. This
+      is a surrogate aromatic-acid reaction, not mature coumermycin or native pathway
+      substrate preference.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Alternative substrate DMAHB.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: HPLC method and substrate panel, PDF pp.71,112-113.
+  - subject: cofactor
+    predicate: is_consistent_with_proposed_model
+    object: adenylate_model
+    notes: A CouL adenylate intermediate was proposed by analogy to NovL. The thesis
+      explicitly says the ATP-PPi exchange experiment was not repeated for CouL. Nucleotide
+      requirements and lack of CoA stimulation are not direct observation of a CouL-bound
+      adenylate.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Discussion: proposed adenylation mechanism.'
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Mechanism discussion, PDF p.127.
+      snippet: auf eine Wiederholung dieses Versuches verzichtet wurde.
+  - subject: substrate_panel
+    predicate: supports_proposed_order
+    object: regio_model
+    notes: Acceptance of the 4-ethyl ester but not the 2-ethyl ester, and the weaker
+      second reaction of the 3,5-dimethyl acid, support a proposed position-2 first,
+      position-4 second order. This is inference from surrogate substrates, not direct
+      resolution of the monoamide regiochemistry or native-cell order.
+    evidence:
+    - reference: DOI:10.1046/j.1432-1033.2003.03830.x
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Discussion: proposed regioselectivity.'
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Regiochemical discussion, PDF pp.124-125.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -332,3 +814,27 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-04T15:25:44Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added 22 nodes and 25 cited edges for native identity and bounded recombinant
+    ligase assays (review #549). Exact CDS/printed-sequence and literal-primer audits
+    preserve native versus engineered identities; measured products, assay limits
+    and mechanistic inference remain distinct. Two exact primary snippets were verified.
+    Existing graphs, source-owned fields, history and SEEDED status are unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-04T15:33:06Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Final author-agent review corrected primary PDF page locators for CouL
+    buffer/SEC, assay, product/refeeding and cofactor evidence. Scientific claims,
+    topology, measured values and all prior history are unchanged (review #549).'
+  llm_assisted: true
+- timestamp: '2026-10-04T15:35:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Final publisher-HTML check corrected the CouL kinetics citation to Figure
+    5 and explicitly attributed depletion calibration to the inspected thesis, not
+    the paper. Only three evidence-note locators changed; biological claims and graph
+    topology are unchanged (review #549).'
+  llm_assisted: true

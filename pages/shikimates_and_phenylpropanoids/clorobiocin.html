@@ -114,6 +114,103 @@ derived from a source. This is what the rest of the record exists to support.</p
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 13 edges</span></h2>
+<p class="sub">Native CloL identity and recombinant ligation experiments from Galm 2003 (review #548). The assayed C-terminal His6 preparation is distinct from native Q8GHC3; literal primers predict a substitution and conflict with a printed coordinate and construct-map stop label. Experiments use novobiocin ring B, not the chlorinated clorobiocin acceptor. Formation of novobiocic acid and selected analogues is not synthesis of mature clorobiocin. Existing CloQ evidence is unchanged. Galm PDF page numbers exceed printed pages by four; Schmutz PDF numbers exceed them by ten.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native cloL locus</td>
+  <td>encodes_native_protein</td>
+  <td>Native CloL ligase</td>
+  <td>AF329398.1 cloL/AAN65228.1 occupies 18090..19673(+) and has a 1584-nt CDS including stop. CDS-aware table-11 translation yields 527 aa exactly matching deposited protein, Q8GHC3 and the complete printed Schmutz alignment. The native GTG initiates methionine. UniProt subspecies taxon 149682 and the locus strain taxon 1352936 (DS 12.976) have different taxonomic resolution, not conflicting protein identities. This accession does not denote the tagged preparation.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://www.uniprot.org/uniprotkb/Q8GHC3<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>pUG018-derived C-terminal His6 CloL preparation</td>
+  <td>was_constructed_from</td>
+  <td>Native cloL locus</td>
+  <td>The cloL/cloM subclone pCloLM, supplied by F. Pojer, provided the template for SphI/BglII cloning into pQE70, yielding reported 5.0-kb pUG018. Literal primers are cloL_P03f TCACGCATGCCGAACAAGGACCAC and cloL_P02r CTCAGATCTCCTGTCCACCAGCAC. The forward span is 18084..18107(+); the reverse exact 15-nt 3-prime match extrapolates to 19679..19656(-), versus the printed 19680..19657(-). A minimal 1596-nt literal-primer model predicts GTG-to-ATG start recoding, Ala2Pro in the native-length core, and TGA-to-AGA stop replacement. These are reconstructions, not sequenced experimental plasmid or fusion-protein properties. Methods remove the stop for the His6 fusion, but Figure 11 still labels TGA before His6; the conflict is retained.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>E. coli XL1 Blue MRF&#39; expression host</td>
+  <td>expressed</td>
+  <td>pUG018-derived C-terminal His6 CloL preparation</td>
+  <td>The source describes 100 mL LB with 50 ug/mL carbenicillin, 30 C and 180 rpm, induction at OD600 0.7-0.8 with 0.5 mM IPTG, then three hours of expression. This is heterologous preparation of CloL, not native Streptomyces protein abundance or clorobiocin titer.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pUG018-derived C-terminal His6 CloL preparation</td>
+  <td>has_purification_readout</td>
+  <td>CloL induction and Ni-NTA purification SDS-PAGE readout</td>
+  <td>Ni-NTA purification and Sephadex G-25 buffer exchange supplied the preparation. Figure 12 displays CloL lanes in order 2,3,4,1,5: before induction, after induction, soluble fraction, marker, and eluate. The source describes near homogeneity; no exact purity percentage is inferred. Protein was quantified by Bradford against BSA. NovL and CouL panels are separate preparations.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pUG018-derived C-terminal His6 CloL preparation</td>
+  <td>catalysed_in</td>
+  <td>Recombinant CloL ligation assay with novobiocin ring B</td>
+  <td>The 100-uL assay supplied 1 mM aromatic acid, 1 mM novobiocin ring B, 5 mM ATP, 5 mM MnCl2, 50 mM Tris-HCl pH 8 and 0.5-2.0 ug protein for 30 min at 30 C; 5 uL 1.5 M TCA stopped the reaction. ATP is supplied here, not independently shown essential by these CloL measurements.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>3-Dimethylallyl-4-hydroxybenzoic acid (DMAHB)</td>
+  <td>was_acyl_substrate_in</td>
+  <td>Recombinant CloL ligation assay with novobiocin ring B</td>
+  <td>DMAHB is the reference aromatic acid for the CloL assay and its normalization in the analogue panel. CouL instead uses its genuine pyrrole acid as the 100% reference. Its use is not a measurement of cellular precursor concentration.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>C-8-methylated novobiocin ring B</td>
+  <td>was_amine_substrate_in</td>
+  <td>Recombinant CloL ligation assay with novobiocin ring B</td>
+  <td>The acceptor is novobiocin ring B, methylated at C-8, not the chlorinated acceptor of mature clorobiocin. Assay activity is therefore not reported as a native clorobiocin-pathway turnover rate.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Heat-denatured CloL assay control</td>
+  <td>was_control_for</td>
+  <td>Recombinant CloL ligation assay with novobiocin ring B</td>
+  <td>The methods specify enzyme heated for 30 min at 100 C with the other assay constituents retained. This is the reported control design, not an invented quantitative zero-background trace.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Recombinant CloL ligation assay with novobiocin ring B</td>
+  <td>formed_assigned_product</td>
+  <td>Assay-assigned novobiocic acid</td>
+  <td>Products were extracted twice with 500 uL ethyl acetate; 900 uL pooled organic phase was dried at 30 C, dissolved in 105 uL methanol and 80 uL injected. HPLC detection was at 305 nm with novobiocic acid calibration, not the separate 340-nm clorobiocin culture assay. The assigned amide is novobiocic acid, not glycosylated mature clorobiocin.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Recombinant CloL ligation assay with novobiocin ring B</td>
+  <td>has_reported_specific_activity</td>
+  <td>CloL specific activity with DMAHB and novobiocin ring B</td>
+  <td>CloL is reported at 4.2 nkat/mg protein with DMAHB and novobiocin ring B. This is specific activity, not kcat, kcat/Km, or native-cell flux. The adjacent NovL 14.5 and CouL 7.4 nkat/mg values are not CloL measurements. Replicate counts and uncertainty definitions are not supplied for this value.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pUG018-derived C-terminal His6 CloL preparation</td>
+  <td>was_tested_in</td>
+  <td>Relative aromatic-acid substrate panel</td>
+  <td>Figure 13 compares the reference acid, 22 synthetic analogues and the genuine CouL pyrrole acid with the same methylated ring-B acceptor. Each enzyme is normalized to its own genuine substrate at 100%: DMAHB for CloL/NovL, but 3-methylpyrrole-2,4-dicarboxylic acid for CouL. Bars are not absolute conversions or cross-enzyme activities. No exact bar heights, replicate count or error-bar definition are invented. Selected products have LC-MS/LC-MS-MS data in Table 20, not full NMR proof of every analogue.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Relative aromatic-acid substrate panel</td>
+  <td>showed_selected_acceptance</td>
+  <td>Selected acid analogues accepted under the tested conditions</td>
+  <td>The source reports CloL acceptance of 4-hydroxybenzoic acid (RAA500), the 3-chloro and 3-bromo derivatives RAA270/280, and side-chain amide analogues RAA240/250/260. These are selected qualitative positive observations under the panel conditions; they do not establish natural occurrence of the products.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Relative aromatic-acid substrate panel</td>
+  <td>showed_selected_nonacceptance</td>
+  <td>Selected acid analogues not accepted under the tested conditions</td>
+  <td>The genuine CouL 3-methylpyrrole-2,4-dicarboxylic acid (RAA400), 3-cyclohexyl-4-hydroxybenzoic acid (RAA520), and 3,5-dibromo-4-hydroxybenzoic acid (RAA290) were not accepted in this CloL panel. This is conditional nonacceptance, not universal inactivity, a measured binding constant, or an assigned quantitative detection threshold.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">2</span></h2>

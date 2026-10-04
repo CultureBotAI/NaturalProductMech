@@ -186,6 +186,187 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">22 nodes, 25 edges</span></h2>
+<p class="sub">CouL native sequence versions and recombinant amide formation (review #549), from Schmutz 2003 and the corresponding primary paper. Current Q9F8U8 is not assigned as the uniquely identified 2003 assay sequence. Native deposits, the printed historical alignment and the His6 preparation remain distinct. Measured monoamide/diamide formation is not mature glycosylated coumermycin A1 synthesis. Conditional kinetics, conflicting assay units, unresolved monoamide regiochemistry and inferred adenylate/amide order are explicit. Schmutz PDF pages exceed printed pages by ten.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native couL locus from S. rishiriensis DSM 40489</td>
+  <td>has_current_deposited_translation</td>
+  <td>Current deposited native CouL sequence</td>
+  <td>AF235050.4 couL/AAG29784.2 at 10634..12223(+) is a 1590-nt CDS including stop. CDS-aware table-11 translation exactly matches deposited protein and 529-aa Q9F8U8. The strain is DSM 40489, S. rishiriensis taxon 68264. Other gene-name search hits from Rhodococcus are not selected.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4<br>https://www.uniprot.org/uniprotkb/Q9F8U8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native couL locus from S. rishiriensis DSM 40489</td>
+  <td>has_historical_deposited_translation</td>
+  <td>Historical deposited CouL sequence</td>
+  <td>AF235050.3 couL/AAG29784.1 at 10632..12221(+) is also 1590 nt including stop. Its CDS-aware translation, historical GenPept record and complete 529-aa CouL alignment in Figure III-16 agree. A printed alignment is reported sequence evidence, not sequencing of the experimental pMS90 sample.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3<br>https://www.ncbi.nlm.nih.gov/protein/AAG29784.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3</td>
+</tr>
+<tr>
+  <td>Historical deposited CouL sequence</td>
+  <td>differs_in_deposit_version_from</td>
+  <td>Current deposited native CouL sequence</td>
+  <td>Historical residues Arg384/Ala385 are Glu384/Gly385 in the current deposit; the remaining 527 residues agree. These are deposit-version differences, not proof of two biological alleles or identification of the internal sequence of the measured recombinant protein.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>was_constructed_from</td>
+  <td>Native couL locus from S. rishiriensis DSM 40489</td>
+  <td>The pZW11 subclone of cosmid 4-2H supplied couL for SphI/BglII cloning into pQE70 to make pMS90 (5010 bp in the thesis map), with a reported C-terminal His6 tag. Literal primers are couL-1 TAGTCACTGCATGCCGAACAGGGAC and couL-2 TGACTCAGATCTCCTGTCCACCAG. Their unique 3-prime matches extrapolate to 10622..10646(+) and 12230..12207(-) on AF235050.3, shifted +2 nt on AF235050.4. Both 1609-nt literal-primer models predict GTG-to-ATG start recoding, Ala2Pro in the native-length core, and TGA-to-AGA stop replacement. These models do not sequence the full fusion or select which internal 384/385 version was present in the experimental sample.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>E. coli XL1 Blue MRF&#39; expression host</td>
+  <td>expressed</td>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>The thesis describes 100 mL LB, 50 ug/mL carbenicillin, 30 C and 170 rpm, induction at OD600 0.7-0.8 with 0.5 mM IPTG and three hours expression. This host prepares a biosynthetic protein; it is not reported as producing mature coumermycin A1 in this experiment.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1<br>DOI:10.1046/j.1432-1033.2003.03830.x</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>has_purification_readouts</td>
+  <td>CouL Ni-NTA purification and protein-yield readouts</td>
+  <td>Ni-NTA yielded a near-homogeneous band near 60 kDa (calculated tagged mass 58.9 kDa). The paper reports 8-9% of total soluble protein, whereas the thesis reports 10-11% and 21 mg/L culture. These remain source-specific yield statements, not harmonized purity percentages, assay concentrations or native abundance.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>has_size_exclusion_readout</td>
+  <td>Active CouL size-exclusion fraction near 59-60 kDa</td>
+  <td>HiLoad 26/60 Superdex 200 in 150 mM NaCl, 50 mM Tris-HCl pH 8 at 1 mL/min gave a thesis elution volume of 204 mL and apparent mass near 59-60 kDa. The eluate retained enzyme activity. This is an apparent hydrodynamic mass for the recombinant preparation.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1<br>DOI:10.1046/j.1432-1033.2003.03830.x</td>
+</tr>
+<tr>
+  <td>Active CouL size-exclusion fraction near 59-60 kDa</td>
+  <td>supports_interpretation</td>
+  <td>Inferred monomeric recombinant CouL under SEC conditions</td>
+  <td>The apparent SEC mass is near the tagged monomer mass and supports the authors&#39; monomer interpretation under these conditions. It does not directly establish native-cell oligomeric stoichiometry or exclude condition-dependent assemblies.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>catalysed_in</td>
+  <td>CouL pyrrole-acid and ring-B ligation assay</td>
+  <td>The paper describes 100 uL, 1 mM each pyrrole acid and ring B, 5 mM MnCl2, 50 mM Tris-HCl pH 8, 4 ug protein and 5-10 min at 30 C. Its Methods specify 1 mM ATP but Results 5 mM. The thesis method uses 5 mM ATP, one minute preincubation without ring B, ring-B initiation, 5-7 min reaction and 5 uL 1.5 M TCA stop. The ATP discrepancy is not silently resolved.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>3-Methylpyrrole-2,4-dicarboxylic acid</td>
+  <td>was_acyl_substrate_in</td>
+  <td>CouL pyrrole-acid and ring-B ligation assay</td>
+  <td>The 3-methylpyrrole-2,4-dicarboxylic acid substrate provides the central dicarboxylate scaffold. Its two carboxyl groups allow one- and two-amide products; use in vitro does not measure cellular concentration.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>3-Amino-4,7-dihydroxy-8-methylcoumarin (ring B)</td>
+  <td>was_amine_substrate_in</td>
+  <td>CouL pyrrole-acid and ring-B ligation assay</td>
+  <td>The supplied ring B is 3-amino-4,7-dihydroxy-8-methylcoumarin, not a glycosylated mature antibiotic. One ring-B unit enters the monoamide and two enter the diamide.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Heat-denatured CouL negative control</td>
+  <td>was_negative_control_for</td>
+  <td>CouL pyrrole-acid and ring-B ligation assay</td>
+  <td>Figure III-19 curve b uses heat-denatured enzyme and provides the displayed negative comparator to active CouL. No numerical zero background, replicate count or uncertainty is inferred from this chromatogram.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1<br>DOI:10.1046/j.1432-1033.2003.03830.x</td>
+</tr>
+<tr>
+  <td>CouL pyrrole-acid and ring-B ligation assay</td>
+  <td>formed_assigned_product</td>
+  <td>CouL monoamide with unresolved amidated carboxyl position</td>
+  <td>HPLC detects the monoamide at about 15 min (15.1 min in the thesis); positive SRM 359-to-152 and negative 357-to-206 support the assignment. The 1H-NMR sample contained impurities and did not distinguish amidation at pyrrole carboxyl position 2 versus 4. Thesis HMBC/NOESY follow-up did not resolve that position. The displayed regioisomer is not a secured structure. Quantification used substrate depletion versus heat controls at 260 nm with product detection at 340 nm, not a weighed authentic monoamide standard.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CouL pyrrole-acid and ring-B ligation assay</td>
+  <td>formed_assigned_product</td>
+  <td>CouL diamide of pyrrole acid and two ring-B units</td>
+  <td>HPLC detects the diamide at about 20 min (19.6 min in the thesis), with positive SRM 548-to-341 and negative 546-to-206. This is the pyrrole dicarboxylate amide of two unglycosylated ring-B units, not mature coumermycin A1. Product quantification is based on the source&#39;s depletion calibration rather than an independently weighed diamide standard.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CouL monoamide with unresolved amidated carboxyl position</td>
+  <td>was_substrate_in</td>
+  <td>Isolated-monoamide refeeding assay</td>
+  <td>Isolated monoamide was supplied with ring B, ATP and Mn2+ to CouL. Its unresolved initial amide position is retained rather than assigned by the fact that a second amide can form.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>catalysed_in</td>
+  <td>Isolated-monoamide refeeding assay</td>
+  <td>The second amide-forming reaction is reported at about 43% of the first reaction&#39;s velocity under the comparison conditions. This is not a universal turnover ratio or a separately established native flux.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Isolated-monoamide refeeding assay</td>
+  <td>formed_assigned_product</td>
+  <td>CouL diamide of pyrrole acid and two ring-B units</td>
+  <td>Isolated-monoamide refeeding gave the diamide by HPLC. Separately, the starting-substrate assay with 1 mM ring B and 0.1 mM pyrrole acid for one hour lost the monoamide peak, described as complete conversion by the authors. Peak disappearance is not an independent mass balance or exact isolated yield.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>was_tested_in</td>
+  <td>CouL nucleotide, metal and CoA assay comparisons</td>
+  <td>The source reports a requirement for Mg2+ or Mn2+ and inhibition by 0.5 mM EDTA. Relative to ATP at 100%, GTP gave about 5% activity; CTP/TTP gave no reported product in the 5 mM nucleotide comparison. Thus absolute ATP-only specificity is not asserted. Adding 0.5 mM CoA did not increase activity; this does not directly identify an intermediate.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>has_conditional_kinetics</td>
+  <td>Conditional apparent monoamide-formation kinetics</td>
+  <td>Monoamide formation, with no detectable diamide in these kinetic conditions, gave apparent Km 26 uM for acid and 44 uM for ring B in the paper. Thesis Figure III-22 gives 26.4 and 44.2 uM, with Vmax 0.34 and 7.4 nkat/mg for the respective titrations. The other substrate was fixed at 1 mM with 5 mM ATP/Mn in the thesis. Acid titration used 10 ug/mL protein and six minutes. For ring-B titration the thesis says 1 mg/mL despite calling it reduced; the paper says 1 ug/mL, with five minutes. The unit discrepancy is preserved. The paper associates 7.4 nkat/mg with turnover 0.4 s^-1; neither is a universal native rate. Error bars are shown but replicate counts and SD/SE assignment are not supplied in the inspected sections. Apparent Km is not binding Kd.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>3-Amino-4,7-dihydroxy-8-methylcoumarin (ring B)</td>
+  <td>showed_substrate_inhibition</td>
+  <td>Ring-B substrate inhibition at high concentrations</td>
+  <td>Ring B above 100 uM inhibited activity. The thesis reports about 6% of maximal activity at 1 mM ring B in the comparison with 5 ug/mL enzyme, 1 mM acid and five minutes incubation. This is a conditional substrate-inhibition readout, not cellular toxicity.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Ring-B substrate inhibition at high concentrations</td>
+  <td>limits_interpretation_of</td>
+  <td>Conditional apparent monoamide-formation kinetics</td>
+  <td>The thesis explicitly attributes the lower 0.34 nkat/mg acid-titration Vmax to the inhibitory fixed 1 mM ring-B concentration. The two conditional Vmax values are not conflicting measurements of one universal rate and are not silently collapsed.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>was_tested_in</td>
+  <td>Relative CouL acid-substrate panel</td>
+  <td>Table III-8 tests acids at 1 mM and reports relative activity, not absolute conversion. The first three starred entries concern monoamide formation: genuine acid 100%, 4-methylpyrrole-2,3-dicarboxylic acid 94%, and 3,5-dimethylpyrrole-2,4-dicarboxylic acid 110%. The latter&#39;s 2-ethyl ester is &lt;0.05% and 4-ethyl ester 7.7%. Its diamide-forming activity is about 17% of the genuine-acid comparator, distinct from 110% monoamide activity. Source-labelled other pyrrole mono/tricarboxylates and four tested pyridines are &lt;0.05%; differing positional names in table/prose are not converted here to exact chemical identifiers.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Relative CouL acid-substrate panel</td>
+  <td>formed_surrogate_product</td>
+  <td>Novobiocic acid from the DMAHB surrogate assay</td>
+  <td>DMAHB is accepted at 36% of the reference relative activity. Novobiocic acid was assigned by HPLC comparison with authentic standard at 305 nm. This is a surrogate aromatic-acid reaction, not mature coumermycin or native pathway substrate preference.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CouL nucleotide, metal and CoA assay comparisons</td>
+  <td>is_consistent_with_proposed_model</td>
+  <td>Proposed CouL adenylate intermediate</td>
+  <td>A CouL adenylate intermediate was proposed by analogy to NovL. The thesis explicitly says the ATP-PPi exchange experiment was not repeated for CouL. Nucleotide requirements and lack of CoA stimulation are not direct observation of a CouL-bound adenylate.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Relative CouL acid-substrate panel</td>
+  <td>supports_proposed_order</td>
+  <td>Proposed pyrrole 2-first then 4 amidation order</td>
+  <td>Acceptance of the 4-ethyl ester but not the 2-ethyl ester, and the weaker second reaction of the 3,5-dimethyl acid, support a proposed position-2 first, position-4 second order. This is inference from surrogate substrates, not direct resolution of the monoamide regiochemistry or native-cell order.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

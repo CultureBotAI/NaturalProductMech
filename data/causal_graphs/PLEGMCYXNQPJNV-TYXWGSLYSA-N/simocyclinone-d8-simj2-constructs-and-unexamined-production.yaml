@@ -33,7 +33,7 @@ graph:
     node_type: OTHER
     grounding_status: UNGROUNDED
   - node_id: sc_clones
-    label: Three unnamed S. antibioticus simJ2 single-crossover clones
+    label: Source-listed S. antibioticus simJ2 single-crossover clone set
     node_type: ORGANISM
     grounding_status: UNGROUNDED
   - node_id: wildtype
@@ -121,15 +121,17 @@ graph:
     predicate: were_generated_with
     object: pug015
     notes: PEG-mediated protoplast transformation of native S. antibioticus Tu6040
-      and apramycin selection yielded the three examined clones. The source supplies
-      no individual clone identifiers here. The pUG014/thiostrepton route instead
-      gave many spontaneous-resistant colonies, so resistance alone is not equated
-      with targeted integration. The three genotyped clones are not three production-assay
+      and apramycin selection yielded the three examined clones. Table 16 lists UG
+      J2-7, UG J2-8 and UG J2-10 as pUG015-containing simJ2 single-crossover mutants.
+      The results describe three clones collectively, without pictured individual
+      Southern lanes or clone-specific production measurements. The pUG014/thiostrepton
+      route instead gave many spontaneous-resistant colonies, so resistance alone
+      is not equated with targeted integration. These are not three production-assay
       replicates.
     evidence:
     - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
       evidence_type: PRIMARY_EXPERIMENT
-      notes: Sections 1.4.1 and follow-up genotyping, Galm PDF pp.85-86.
+      notes: Table 16 and sections 1.4.1/follow-up genotyping, Galm PDF pp.42,85-86.
   - subject: sc_clones
     predicate: have_reported_genotyping_readout
     object: southern
@@ -242,4 +244,12 @@ curation_history:
     establish identity and intended loci. Source versus reconstructed deletion/frame
     and Southern sizes remain explicit; no production phenotype or catalytic activity
     is invented from genotyping, unshown bands or an unpublished construct listing.
+  llm_assisted: true
+- timestamp: '2026-10-04T15:25:44Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Corrected the unnamed-clone claim using Galm Table 16: UG J2-7, UG J2-8
+    and UG J2-10 are source-listed pUG015 simJ2 single crossovers (review #547). Retained
+    graph IDs/topology, unpictured Southern limitations, explicitly unexamined production
+    and all prior evidence/history.'
   llm_assisted: true
