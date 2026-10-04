@@ -797,6 +797,7 @@ causal_graph_refs:
 - simocyclinone-d8-simc1b-ks-replacement-and-retained-production
 - simocyclinone-d8-simh-simy-identities-and-adenylation
 - simocyclinone-d8-simh-simy-association-and-stoichiometry-limits
+- simocyclinone-d8-simj1-crossover-genetics-and-feeding-limits
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -891,4 +892,12 @@ curation_history:
     recombinant preparations, assay readouts and proposed 2:2 complex remain distinct.
     All fourteen earlier graphs, source-owned fields, prior history, SEEDED status
     and unresolved stereochemistry are preserved.'
+  llm_assisted: true
+- timestamp: '2026-10-04T13:50:58Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added native SimJ1/SimD2 Q9F5J1 with bounded crossover genetics, methyl-aminocoumarin
+    feeding and shared double-crossover/revertant production-loss confound (review
+    #544). All sixteen previous graphs, source fields, prior history, SEEDED status
+    and unresolved stereochemistry remain unchanged; oxidation is explicit inference.'
   llm_assisted: true

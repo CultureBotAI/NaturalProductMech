@@ -1,0 +1,456 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-simj1-crossover-genetics-and-feeding-limits
+  scope: BIOSYNTHESIS
+  description: 'SimJ1/SimD2 native genetics, methyl-aminocoumarin feeding and the
+    confounded double-crossover follow-up from Ute Galm''s 2003 primary thesis (review
+    #544). Native Q9F5J1 is distinct from engineered alleles; single crossovers retain
+    differently arranged intact and deleted copies. D-met feeding rescue is not restored
+    chlorinated D8. Qualitative product assignments, the restriction-size and culture-fraction
+    discrepancies, and source-inferred catalysis remain explicit. The related 2002
+    journal paper was not independently obtained in full; thesis-only results are
+    cited to the thesis. PDF page numbers are four greater than printed page numbers.'
+  nodes:
+  - node_id: gene
+    label: Native simJ1 locus, also named simD2
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: simj1
+    label: Native SimJ1 (SimD2) protein
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F5J1
+  - node_id: construct
+    label: pUG013 internal simJ1-deletion construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: wildtype
+    label: Original S. antibioticus Tu6040 wild type
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: sc15
+    label: S. antibioticus UG J1-15 single-crossover strain
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: sc21
+    label: S. antibioticus UG J1-21 single-crossover strain
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: dc293
+    label: Source-assigned UG J1-293 double-crossover strain
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: dc692
+    label: Source-assigned UG J1-692 double-crossover strain
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: revertant
+    label: WT-genotype revertant recovered after passage
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: sc_genotyping
+    label: Southern discrimination of single-crossover arrangements
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: dc_genotyping
+    label: Source-reported double-crossover and revertant Southern genotypes
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: d_profile
+    label: Source-assigned D4/D8 chromatographic profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: c4
+    label: Source-assigned C4 accumulation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: c4a
+    label: Unresolved same-mass C4a product signal
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: fed
+    label: UG J1-21 methyl-aminocoumarin feeding condition
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: methyl_adhc
+    label: Novobiocin-derived 3-amino-4,7-dihydroxy-8-methylcoumarin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: solvent_controls
+    label: Parallel methanol-only control conditions
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: dmet
+    label: Source-assigned methylated D-met product signal
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: production_loss
+    label: Shared loss of all detected simocyclinones after passage
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: oxidation
+    label: Proposed beta-hydroxytyrosyl oxidation step
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gene
+    predicate: encodes_native_protein
+    object: simj1
+    notes: AAL15603.1 at AF322256.1:23738..24559(+), AAG34187.1 at AF321122.1:6950..7771(+)
+      and AAK06807.1 at AF324838.2:68532..69353(+) each have an 822-nt CDS including
+      stop and translate exactly to the 273-aa Q9F5J1 sequence using CDS-aware table
+      11. The last deposit calls the gene simD2; all name S. antibioticus Tu6040/Tue6040,
+      taxon 1890. This is not the distinct 246-aa SimJ2/SimC6 protein, and the native
+      accession does not identify an engineered allele. Earlier SimReg1 graphs mention
+      partial simD2 flanks in constructs, not an independently assayed SimJ1 protein.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native simJ1/AAL15603.1 CDS and strain annotation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native simJ1/AAG34187.1 CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native simD2/AAK06807.1 CDS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F5J1
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q9F5J1, simJ1/simD2, taxon 1890, entry 87, sequence version
+        1, annotation 2026-09-02; inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native translations and protein-sequence comparisons.
+  - subject: construct
+    predicate: was_designed_for_internal_deletion_of
+    object: gene
+    notes: Cosmid VII-8g arms were cloned XbaI/BamHI then BamHI/EcoRI into pBSKT to
+      form pUG012; its approximately 2.8-kb XbaI/EcoRI insert was transferred to pKC1132,
+      yielding pUG013 with apramycin selection. The source reports an internal in-frame
+      756-bp deletion, not whole-gene removal. Literal primers are P01f GTACGGCGGTCTAGAAGGAC,
+      P01r CATTCGGGATCCTTCCCTGC, P02f CGACGGCGGATCCCAGTGAA and P02r GGCCACCGAATTCGGCCACA.
+      Their declared native coordinates and introduced sites reproduce 1392- and 1434-nt
+      PCR products. A BamHI fusion model loses 756 nt net and leaves a 66-nt CDS including
+      stop, predicting a 21-aa remnant (MNQPWPATRADRPNICREGSQ). This model is not
+      a sequenced experimental allele, verified expression product or full plasmid.
+      The single-crossover strains retain both copies in different arrangements.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables 14/15 and section 7.5.1, thesis PDF pp.39-40,49-50.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer amplicons and intended BamHI-fusion reconstruction, not
+        complete experimental junction sequencing.
+  - subject: sc15
+    predicate: was_generated_with
+    object: construct
+    notes: PEG-mediated protoplast transformation and apramycin selection yielded
+      UG J1-15 as a single-crossover isolate. The source reports pUG013 integration
+      by homologous recombination; pUG012/thiostrepton selection instead gave many
+      spontaneous-resistant colonies and is not equivalent evidence of integration.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.1 and Figure 5, thesis PDF pp.80-81.
+  - subject: sc21
+    predicate: was_generated_with
+    object: construct
+    notes: UG J1-21 is another pUG013 single-crossover arrangement, not a clean simJ1
+      deletion. The source map retains an intact copy separated from the putative
+      native transcriptional unit by vector and resistance-gene DNA. Its inferred
+      transcriptional silencing is not a measured RNA or protein abundance.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 5A and sections 1.3.1-1.3.2, thesis PDF pp.80-82.
+  - subject: sc15
+    predicate: has_reported_genotyping_readout
+    object: sc_genotyping
+    notes: Figure 5 places the intact copy at the end of the proposed simKLHIYJ1 unit
+      in UG J1-15. BglII/NotI and PvuII/EcoRI Southern patterns support the source-assigned
+      arrangement. Native AF322256.1 fragment lengths 3788 and 3893 bp agree with
+      the displayed WT 3.79/3.89-kb rounding. The source reports a 1242-bp downstream
+      probe (1.2 kb in methods), consistent with the primer-derived BamHI/EcoRV interval.
+      No complete single-crossover vector junction was sequenced in this independent
+      audit.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Southern methods and Figure 5, thesis PDF pp.57-58,80-81.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Native restriction geometry and primer-derived 1242-bp probe.
+  - subject: sc21
+    predicate: has_reported_genotyping_readout
+    object: sc_genotyping
+    notes: Figure 5 instead places the deleted copy adjacent to the putative native
+      transcriptional unit in UG J1-21. The results report BglII/EcoRV bands at 2.77
+      and 1.97 kb (not pictured there). The deposited native interval is 2729 bp,
+      not 2770 bp; the intended 756-nt deletion model gives 1973 bp. This source-versus-native
+      discrepancy is unresolved. Figure 7 later uses coarse 2.8/2.0-kb labels. Reported
+      bands, reconstructed lengths and exact experimental allele sequences are not
+      interchangeable.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results for the single crossovers and Figure 7, thesis PDF pp.80,84.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Native BglII/EcoRV cuts 23062 and 25791 (one-based cut positions); intended-deletion
+        model loses 756 nt.
+  - subject: wildtype
+    predicate: has_source_assigned_product_profile
+    object: d_profile
+    notes: Figure 6A shows D4 and D8 signals in the original WT; Figure 6B labels
+      [M-H]- assignments of 896.2 and 930.4, respectively. These are source assignments,
+      not independently verified accurate masses or complete stereochemical determinations.
+      Section 9.1.2 specifies acidifying 50 mL whole culture to pH 4, extracting twice
+      with 50 mL ethyl acetate and reconstituting in 5 mL methanol. The results call
+      the analyzed material culture filtrate; this fraction discrepancy remains unresolved.
+      The specific simocyclinone HPLC used a 0.1% phosphoric acid/acetonitrile gradient
+      at 2 mL/min, not the preceding generic 1 mL/min RP-18 method. No absolute yield,
+      detection threshold or replicate count is invented.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Specific analytical method and Figure 6, thesis PDF pp.66,82-83.
+  - subject: sc15
+    predicate: retains_source_assigned_product_profile
+    object: d_profile
+    notes: UG J1-15 produces the same source-assigned D-series identities as WT, D4
+      and D8. Figure 6 uses different intensity scales across panels; this is not
+      proof of identical molar productivity, unchanged protein expression or a purified
+      reaction rate.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 6B and section 1.3.2, thesis PDF pp.82-83.
+  - subject: sc21
+    predicate: lacks_detected_D_series_profile
+    object: d_profile
+    notes: The source reports complete loss of D4/D8 production in UG J1-21, with
+      no corresponding assigned peaks in Figure 6C. The graph records a qualitative
+      nondetection phenotype, not a numerical zero or a universal detection limit.
+      It supports a role for the manipulated region in aminocoumarin-containing product
+      formation but does not isolate a biochemical catalytic step or exclude all polar
+      and insertion effects.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.2 and Figure 6C, thesis PDF pp.82-83.
+      snippet: die Produktion von Simocyclinon D4 und D8
+  - subject: sc21
+    predicate: accumulates_source_assigned_signal
+    object: c4
+    notes: The mutant accumulates assigned C4, described as retaining the two polyketide
+      units and sugar but lacking the aminocoumarin moiety. Figure 6 gives [M-H]-
+      721.0. HPLC and HPLC-MS support the source assignment; no new exact chemical
+      record, absolute C4 titer or independently verified stereochemical structure
+      is asserted here.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.2 and Figure 6C, thesis PDF pp.82-83.
+  - subject: sc21
+    predicate: has_unresolved_product_signal
+    object: c4a
+    notes: A second same-mass signal is called C4a by the source. Its structure was
+      not established in the inspected experiment. It is not merged with C4 or assigned
+      a particular isomer identity from mass alone.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.2 and Figure 6C, thesis PDF pp.82-83.
+      snippet: ein Isomer mit identischer Masse
+  - subject: fed
+    predicate: uses_mutant_background
+    object: sc21
+    notes: The feeding experiment used UG J1-21 in 50 mL complex production medium
+      1 at 28 C and 120 rpm. Section 4.1.3 defines that medium as glycerol 20 g/L
+      and full-fat soy flour 20 g/L in tap water, pH 7.5. These feeding-specific conditions
+      are not replaced by the broader temperature and shaking ranges in the general
+      culture section, and are not assumed for every unrelated experiment.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 4.1.3 and 8.5.1, thesis PDF pp.30,63-64.
+  - subject: fed
+    predicate: was_supplied_with
+    object: methyl_adhc
+    notes: At 42 h after inoculation and again 5 h later, 1 mg novobiocin-derived
+      8-methyl-aminocoumarin in 10 uL methanol was added. Cultures continued for another
+      43 h before extraction/HPLC. This substrate differs from the native 8-chloro
+      aminocoumarin of D8; no exact compound accession is chosen from a similar name.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 8.5.1 and discussion, thesis PDF pp.63-64,115.
+  - subject: fed
+    predicate: has_source_assigned_analogue_readout
+    object: dmet
+    notes: Figure 6D reports D-met, [M-H]- 910.2, with a methyl substituent in place
+      of the D8 chlorine. Feeding restores formation of an aminocoumarin-containing
+      D-series analogue, not native chlorinated D8. Residual C4/C4a signals are visible;
+      complete conversion or full WT yield is not claimed. This is metabolic bypass
+      feeding, not simJ1 gene complementation, direct SimJ1 catalysis or a separately
+      measured purified SimL reaction.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.3, Figure 6D and discussion, thesis PDF pp.82-83,115.
+  - subject: solvent_controls
+    predicate: were_reported_as_parallel_controls_for
+    object: fed
+    notes: Methods specify parallel original WT and mutant cultures without the aminocoumarin
+      feed but with 10-uL methanol additions, extracted and analyzed likewise. This
+      records the control design; it does not invent a numerical solvent effect or
+      silently identify every displayed WT trace as that particular solvent-control
+      culture.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 8.5.1, thesis PDF p.64.
+  - subject: dc293
+    predicate: was_recovered_after_passage_of_integrants_generated_with
+    object: construct
+    notes: After repeated antibiotic-free YMG passages, apramycin-sensitive isolates
+      were examined for a second crossover. The source calls UG J1-293 a double-crossover
+      genotype. Its specific single-crossover ancestor and whole experimental genome
+      are not independently identified here.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.4 and Figure 7, thesis PDF pp.84-85.
+  - subject: dc692
+    predicate: was_recovered_after_passage_of_integrants_generated_with
+    object: construct
+    notes: UG J1-692 is the second source-assigned double-crossover isolate from that
+      selection. Selection phenotype alone does not establish its allele or loss of
+      every vector sequence; the source used Southern analysis to classify it.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.4 and Figure 7, thesis PDF pp.84-85.
+  - subject: revertant
+    predicate: was_recovered_after_passage_of_integrants_generated_with
+    object: construct
+    notes: A separate apramycin-sensitive isolate was classified as reverted to the
+      WT simJ1 genotype. It is distinct from the original unpassaged WT comparator
+      and is not assumed to be wild type across its entire genome or physiology.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.4 and Figure 7, thesis PDF pp.84-85.
+  - subject: dc293
+    predicate: has_source_assigned_genotyping_result
+    object: dc_genotyping
+    notes: The source assigns UG J1-293 to one of the two isolates with the approximately
+      2.0-kb BglII/EcoRV deletion-band classification. Figure 7 and its caption are
+      the genotype evidence, not complete allele sequencing or proof of an otherwise
+      isogenic genome.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.4 and Figure 7, thesis PDF p.84.
+  - subject: dc692
+    predicate: has_source_assigned_genotyping_result
+    object: dc_genotyping
+    notes: The second source-classified deletion isolate is UG J1-692. The caption
+      assigns lanes 1 and 4 to the two double crossovers. Coarse 2.0-kb labelling
+      is kept distinct from the independently reconstructed 1973-bp intended allele
+      fragment and from an actual sequenced genome.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.4 and Figure 7, thesis PDF p.84.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Intended internal-deletion fragment model.
+  - subject: revertant
+    predicate: has_source_assigned_genotyping_result
+    object: dc_genotyping
+    notes: The source calls the approximately 2.8-kb-only isolate a WT-genotype revertant.
+      Another apramycin-sensitive clone retained both bands and was still classified
+      as a single crossover; resistance loss alone therefore did not establish a second
+      crossover. The 2729-bp native reconstruction and source 2.77/2.8-kb descriptions
+      remain separately attributed.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.4 and Figure 7, thesis PDF p.84.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Native BglII/EcoRV fragment length; no correction of the source labels
+        is implied.
+  - subject: dc293
+    predicate: has_shared_followup_production_loss
+    object: production_loss
+    notes: Repeated cultivation of UG J1-293 yielded no simocyclinones according to
+      the source, rather than the expected C-series-only phenotype. No exact replicate
+      count, detection limit or titer is given for this follow-up.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.4, thesis PDF pp.84-85.
+  - subject: dc692
+    predicate: has_shared_followup_production_loss
+    object: production_loss
+    notes: UG J1-692 likewise lost all reported simocyclinone production. This broader
+      loss is not interpreted as specific proof of the proposed SimJ1 oxidation reaction.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.4, thesis PDF pp.84-85.
+  - subject: revertant
+    predicate: also_has_followup_production_loss
+    object: production_loss
+    notes: 'The WT-genotype revertant also produced no simocyclinones in the repeated
+      cultures. This shared loss is a confound for interpreting the double crossovers:
+      it cannot be attributed specifically to absence of simJ1. The cause was not
+      resolved and the source stopped this follow-up; no particular secondary mutation
+      is invented.'
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.4, thesis PDF pp.84-85.
+      snippet: sowohl der zum Wildtyp revertierte Stamm als auch die beiden Defektmutanten
+  - subject: wildtype
+    predicate: is_parallel_positive_production_comparator_for
+    object: production_loss
+    notes: The original WT cultured in parallel still produced D8 while both deletion-classified
+      isolates and the revertant lost all reported simocyclinones. This is a positive
+      production comparator, not a purified-enzyme control or proof that the passaged
+      strains differ only at simJ1.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 1.3.4, thesis PDF pp.84-85.
+  - subject: simj1
+    predicate: is_proposed_to_contribute_to
+    object: oxidation
+    notes: The thesis proposes oxidation of a beta-hydroxytyrosyl intermediate to
+      a beta-ketotyrosyl intermediate, based on sequence similarity and pathway reasoning.
+      These experiments show genetics and feeding, not purified SimJ1 turnover or
+      a directly determined substrate. The source argues against polarity from 170/322-bp
+      intergenic distances but could not unambiguously identify the downstream -10/-35
+      promoter regions. The simKLHIYJ1 transcriptional unit is also proposed from
+      spacing, not mapped transcripts. Lack of rescue by endogenous SimJ2 in this
+      context is not a universal inactivity claim; the separate SimJ2 mutant production
+      profiles were explicitly not examined in the thesis.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion and hypothetical Figure 18, thesis PDF pp.112,114-115; unexamined
+        SimJ2 phenotypes stated on PDF p.86.
+curation_history:
+- timestamp: '2026-10-04T13:50:58Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added twenty nodes and twenty-six stable-URL-cited edges from Galm 2003
+    primary thesis and native sequence deposits. Preserved single-crossover copy arrangements,
+    source-versus-native restriction size, culture fraction, analogue feeding and
+    shared production-loss limits. Three exact primary snippets total twenty-three
+    words. Full experimental alleles and related journal full text were not independently
+    obtained; native oxidation remains proposed.
+  llm_assisted: true
