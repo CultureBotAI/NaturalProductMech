@@ -805,6 +805,11 @@ causal_graphs:
     - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&sequence=1
       evidence_type: CURATOR_INFERENCE
       notes: Regiochemical discussion, PDF pp.124-125.
+causal_graph_refs:
+- coumermycin-a1-couo-native-identity-and-precursor-evidence
+- coumermycin-a1-couo-constructs-and-soluble-protein-preparations
+- coumermycin-a1-couo-lysate-normalization-and-mutant-endpoint-limits
+- coumermycin-a1-couo-sah-structure-dimer-and-model-limits
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -837,4 +842,12 @@ curation_history:
     5 and explicitly attributed depletion calibration to the inspected thesis, not
     the paper. Only three evidence-note locators changed; biological claims and graph
     topology are unchanged (review #549).'
+  llm_assisted: true
+- timestamp: '2026-10-04T19:54:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add four CouO components: exact native identity, precursor chemistry,
+    ten mutant constructs, lysate-normalized endpoint comparisons and SAH/SEC structural
+    evidence versus models. Preserve source-label conflicts, previous CouL graph,
+    chemical identity, source fields, history and SEEDED status (#556).'
   llm_assisted: true

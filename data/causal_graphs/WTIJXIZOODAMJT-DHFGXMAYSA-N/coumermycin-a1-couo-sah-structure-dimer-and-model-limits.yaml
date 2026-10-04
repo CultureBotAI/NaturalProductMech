@@ -1,0 +1,247 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-couo-sah-structure-dimer-and-model-limits
+  scope: BIOSYNTHESIS
+  description: 'CouO-SAH coordinates, chain-B terminal omission, Glu4/Glu6 disagreement
+    and bounded SEC/PISA dimer evidence, distinct from docking and catalytic interpretations.
+    Author-agent review #556. Native identity, engineered preparations and measured
+    or inferred outcomes remain distinct; these precursor/surrogate studies do not
+    demonstrate synthesis of mature coumermycin A1.'
+  nodes:
+  - node_id: native
+    label: Deposited native CouO sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T9
+  - node_id: crystal_prep
+    label: Purified CouO crystallization preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: structure
+    label: Deposited 5M58 CouO-SAH structural model
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: sah
+    label: S-Adenosyl-L-homocysteine in 5M58
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: contacts
+    label: Observed Glu4/Asp70-SAH polar geometry
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: label_conflict
+    label: Main-text Glu4 versus supplement Glu6 label
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: sec
+    label: CouO SEC peak B with apparent mass 52.4 kDa
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: dimer
+    label: PISA-assigned and SEC-supported CouO homodimer
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: docking
+    label: VINA coumarin docking models
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: substrates
+    label: Three modeled coumarin scaffolds
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: model
+    label: Proposed His120/Arg121-assisted C8 methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: novomodel
+    label: CouO-template NovO homology model
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native
+    predicate: is_deposited_sequence_reference_for
+    object: crystal_prep
+    notes: 5M58 deposits a 230-aa entity exactly matching Q9F8T9 with no encoded extension
+      in the entity sequence. The 2012 primary abstract identifies recombinant CouO
+      Q9F8T9, cloning, expression, purification and crystallization. Its full paper
+      was not obtained here, so no uninspected tag-removal or expression protocol
+      is assigned. Native sequence equality does not make this a native-cell protein
+      sample.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T9
+      evidence_type: DATABASE_ASSERTION
+      notes: Native sequence.
+    - reference: https://files.rcsb.org/download/5M58.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Entity sequence and UniProt mapping.
+    - reference: DOI:10.1107/S1744309112017137
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; PMID 22684074.
+  - subject: crystal_prep
+    predicate: was_used_for_structure_determination
+    object: structure
+    notes: The 2017 study reports molecular replacement and refinement at 2.05 A,
+      with two CouO chains in the asymmetric unit. Although prose says both molecules
+      were completely modeled, current coordinates model A1-230 and B1-229; chain-B
+      Ala230 is explicitly unobserved. No tag cleavage or truncation is inferred from
+      missing density.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Structure determination and Results, PDF pp.3,5-6.
+    - reference: https://files.rcsb.org/download/5M58.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Entry 1.3; atom-site/unobserved-residue audit, retrieved 2026-10-04.
+  - subject: structure
+    predicate: contains_observed_ligand
+    object: sah
+    notes: Each chain has one SAH with 26 heavy atoms. The only other nonprotein species
+      in the coordinate model is water. S1 Figure shows an SAH omit map at 3 sigma.
+      Neither SAM nor coumarin is deposited as an observed bound ligand.
+    evidence:
+    - reference: https://files.rcsb.org/download/5M58.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Complete coordinate ligand inventory.
+    - reference: DOI:10.1371/journal.pone.0171056.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Figure and caption.
+  - subject: sah
+    predicate: has_observed_polar_contacts
+    object: contacts
+    notes: Independent chain-A/B distances are 4-OE1 to SAH-N6 2.652/2.858 A; 70-OD1
+      to SAH-O2' 2.648/2.700 A; 70-OD2 to SAH-O3' 2.669/2.642 A. These are polar-contact
+      geometries, not measured proton transfer or ligand binding constants. The N-terminal
+      access/flexibility explanation in the paper remains a structural interpretation,
+      not a measured trajectory.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cofactor-binding discussion, PDF p.7.
+    - reference: https://files.rcsb.org/download/5M58.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent coordinate-distance calculations.
+  - subject: contacts
+    predicate: has_conflicting_residue_label
+    object: label_conflict
+    notes: The main text names Glu4; S3 Figure and its caption label Glu6. Both native
+      sequence and 5M58 identify residue 4 as Glu and residue 6 as Ile. The source
+      discrepancy is retained; a nonexistent native Glu6 is not assigned as the measured
+      contact.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Main text PDF p.7 versus S3 caption PDF p.11.
+    - reference: DOI:10.1371/journal.pone.0171056.s003
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S3 Figure label Glu6.
+    - reference: https://files.rcsb.org/download/5M58.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Sequence-aware contact/residue audit.
+  - subject: crystal_prep
+    predicate: has_size_exclusion_readout
+    object: sec
+    notes: S2 reports HiLoad 16/60 Superdex 200 pg, 1 mL/min, Hepes pH 7 and 100 mM
+      NaCl. A standard-based log-mass/elution-volume fit gave apparent mass 52.4 kDa
+      for peak B, whose material was used for crystallization. Peak A is labelled
+      aggregates. A prominent later peak is not assigned in the caption; it is not
+      silently identified as CouO or omitted from interpretation of the trace.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Figure, panel B and complete caption.
+  - subject: sec
+    predicate: supports_assembly_interpretation
+    object: dimer
+    notes: The apparent mass is near twice the roughly 26-kDa subunit mass, supporting
+      a solution-dimer interpretation for the selected fraction. SEC hydrodynamic
+      mass does not uniquely establish native-cell stoichiometry or the identity of
+      every peak.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Figure; calibrated peak-B interpretation.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: CURATOR_INFERENCE
+      notes: Pavkov-Keller 2017; Dimer discussion, PDF p.6.
+  - subject: structure
+    predicate: has_software_assigned_assembly
+    object: dimer
+    notes: 5M58 biological assembly 1 is PISA-defined and dimeric. The paper describes
+      a mainly hydrophobic cap-helix interface. This is a structural assembly model,
+      not a direct in-vivo oligomer count.
+    evidence:
+    - reference: https://files.rcsb.org/download/5M58.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: PISA assembly 1 and identity-operation chains.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Dimer interface discussion, PDF p.6.
+    - reference: DOI:10.1371/journal.pone.0171056.s002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Figure, panel A.
+  - subject: structure
+    predicate: served_as_template_for
+    object: docking
+    notes: VINA in YASARA used AMBER03 charges and 25 runs per ligand without water
+      during docking; water was added during energy minimization. SAH/SAM-containing
+      models and protonated or unprotonated substrates were tested. The roughly 3-A
+      H120/R121 to substrate-7-OH geometry is modeled, not observed in 5M58.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Pavkov-Keller 2017; Structure analysis/docking and Figure 3B, PDF pp.4,7-8.
+  - subject: substrates
+    predicate: were_modelled_in
+    object: docking
+    notes: The modeled scaffolds are the benzamide assay substrate, 3-amino-4,7-dihydroxycoumarin
+      and 4,7-dihydroxycoumarin. Docking a scaffold is not evidence that it was converted
+      in the 2017 variant assay or crystallized as a bound substrate.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Pavkov-Keller 2017; Structure analysis and docking calculations, PDF
+        p.4.
+  - subject: docking
+    predicate: supports_proposed_catalytic_model
+    object: model
+    notes: The authors propose His120-assisted 7-OH deprotonation, Arg121 stabilization
+      and C8 attack on SAM, followed by rearomatization. H120/Phe147 stacking and
+      H117/Arg116 positioning are mechanistic interpretations. Variant effects and
+      residual activity at pH 7 do not directly observe proton transfer or uniquely
+      exclude folding/binding contributions.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: CURATOR_INFERENCE
+      notes: Pavkov-Keller 2017; Figures 3-4,6-7 and discussion, PDF pp.7-10.
+  - subject: structure
+    predicate: was_template_for_homology_model
+    object: novomodel
+    notes: This paper generated a NovO homology model from CouO and compared H117/N117
+      and V145/C145. It is not a deposited experimental NovO complex in this source,
+      nor an additional assayed CouO variant. Other structural homologs are not promoted
+      to coumermycin biosynthetic participants.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Pavkov-Keller 2017; Figure 5 and homology-model discussion, PDF pp.8-9.
+    - reference: DOI:10.1371/journal.pone.0171056.s004
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S4 Figure; CouO-template NovO model.
+  - subject: novomodel
+    predicate: supports_proposed_shared_mechanism
+    object: model
+    notes: Active-site similarity motivates a shared-mechanism hypothesis. It does
+      not replace enzyme-specific assays, make all substrate preferences identical
+      or turn suggested future mutations into measured protein preparations.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: CURATOR_INFERENCE
+      notes: Pavkov-Keller 2017; Model comparison and conclusions, PDF pp.8-11.
+curation_history:
+- timestamp: '2026-10-04T19:54:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add coumermycin-a1-couo-sah-structure-dimer-and-model-limits with bounded
+    primary CouO evidence and review #556 limits.'
+  llm_assisted: true
