@@ -654,6 +654,356 @@ causal_graphs:
     - reference: DOI:10.1021/acs.biochem.7b01219.s001
       evidence_type: PRIMARY_EXPERIMENT
       notes: Figs. S1-S2 and S6 establish the small precursor, not the entire product.
+- graph_id: polyketomycin-pokmt2-genetics-and-c6-methylation-inference
+  scope: BIOSYNTHESIS
+  description: 'Native Tu6028 PokMT2 frameshift and rescue, with purified POK-MD3
+    structural evidence supporting C-6 methylation. The native parent is exactly grounded,
+    but no purified-enzyme reaction, immediate substrate or absolute biosynthetic
+    timing is claimed. POK-MD3 is a distinct congener, not the parent or POK-MD2.
+    The owner remains at its existing unresolved stereochemical resolution. Source-review
+    issue #530 preserves normalized-profile, allele and inferred-substrate limitations.'
+  nodes:
+  - node_id: pokmt2
+    label: Native PokMT2 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:C0JWC3
+  - node_id: frameshift
+    label: Tu6028 pokMT2 internal AscI-site frameshift, DC12
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: loss
+    label: Polyketomycin replaced by POK-MD3 in the tested culture
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: md3
+    label: POK-MD3, assigned 6-desmethyl polyketomycin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: Tu6028 pokMT2 mutant carrying pSET-pokMT2
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: restored
+    label: Restored detectable polyketomycin production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: c6_methylation
+    label: Genetically inferred polyketide C-6 methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: early_step
+    label: Proposed methylation after cyclization and before C-6 oxidation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: frameshift
+    predicate: targets_gene_encoding
+    object: pokmt2
+    notes: 'pKC1132-MT2del was made by disrupting an internal AscI site in the pUC-9-B
+      subclone, not by removing the whole CDS. Four passages yielded 14% apramycin-sensitive
+      clones among 88 tested. PCR/AscI analysis compared four mutant clones (DC11-DC14)
+      with wild type and the inactivation-plasmid control: reported 1.2-kb mutant
+      amplicons resisted cleavage, whereas wild type gave approximately 1.0/0.2-kb
+      fragments. DC12 was used subsequently. Figure 3-33 uses a deletion label, but
+      the methods specify a frameshift; no complete mutant protein sequence is established.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.6.1-3.6.2 pp. 75-76, Fig. 3-33; construction 5.7.2.6 p. 164;
+        Table 5-28 p. 137.
+    - reference: https://www.uniprot.org/uniprotkb/C0JWC3
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed native PokMT2, 345 aa, taxon 42236; EMBL FJ483966/ACN64843.1.
+        Inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACN64843.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PokMT2 from Streptomyces diastatochromogenes Tu6028; 345 aa; FJ483966.1:complement(35677..36714).
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison: target CDS translations agree exactly across native
+        GenBank, GenPept, MIBiG BGC0001061.4 and UniProt. Whole-locus ambiguity substitutions
+        at 47, 289, 46665 and 46736 are outside these CDSs; no claim of whole-locus
+        identity.'
+  - subject: frameshift
+    predicate: has_reported_production_phenotype
+    object: loss
+    notes: HPLC/APCI-MS (pokAPCI2, 450-nm chromatograms) of six-day HA-medium production
+      extracts showed POK-MD3 in place of the wild-type polyketomycin peak. Production
+      followed a 72-h preculture. No calibrated detection limit or exact zero titer
+      was reported; this result is restricted to the tested strain and culture conditions.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.6.3 pp. 76-77, Fig. 3-34; methods 5.10.2.2 p. 189 and Table
+        5-48 p. 196.
+  - subject: frameshift
+    predicate: accumulates_reported_metabolite
+    object: md3
+    notes: Table 3-11 reports nominal mass 850 Da and retention 18.8 min for POK-MD3
+      versus 864 Da/19.2 min for polyketomycin. Each profile is independently normalized
+      to its largest 450-nm POK-family signal; the two values of 100 are not equal
+      absolute titers. MD3 is also distinct from the 850-Da, 16.8-min MD2 of the pokMT1
+      mutant. A blue-shifted long-wavelength UV maximum and the 14-Da shift of aglycone-containing
+      APCI fragments localize the change to the polyketide portion, not by mass alone
+      to one methyl position.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.6.3, Table 3-11 and Fig. 3-34 pp. 76-77; section 3.6.4.1 and
+        Fig. 3-35 pp. 78-79; compare Table 3-7 p. 62.
+  - subject: rescue
+    predicate: introduces_gene_encoding
+    object: pokmt2
+    notes: pSET-pokMT2 places the native gene behind ermE-up in pSET-1cerm. Curator
+      alignment of MT2-F/MT2-R gives a 1203-bp native span 35578..36780 containing
+      the entire 1038-bp CDS and no neighboring complete or partial CDS. The engineered
+      restriction-site substitutions are outside pokMT2. This supports native parent
+      identity, not a fully sequenced integrated plasmid. Table 5-28 gives an approximate
+      1.1-kb insert; the primary primer span is reported separately rather than silently
+      substituted.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 5-35 p. 158, Table 5-28 p. 139, methods 5.8.2.1/5.8.2.5 pp. 168-169;
+        map 7.3.2.4 p. 239.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator MT2 primer alignment and native CDS/neighborhood comparison;
+        primary primers inspected visually.
+  - subject: rescue
+    predicate: restores_reported_production
+    object: restored
+    notes: The complemented mutant again has the polyketomycin production peak. Methods
+      describe comparisons of three complemented clones with wild type and the corresponding
+      mutant carrying empty pSET-1cerm. The displayed trace establishes restoration
+      of detectable production, not an independently calibrated wild-type yield, quantified
+      uncertainty, or universal exclusion of polar effects.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.6.3 and Fig. 3-34 p. 77; complementation comparisons 5.8.3
+        p. 169.
+  - subject: md3
+    predicate: supports_genetic_assignment_of
+    object: c6_methylation
+    notes: The authors isolated 7.5 mg MD3 from a 3-L mutant production culture by
+      fractionation and preparative HPLC, then acquired 1H/13C and COSY/HSQC/HMBC
+      spectra in CDCl3 (400/100 MHz). Unlike labelled MD2, this was an isolated compound.
+      Neutral formula C43H46O18 and HR-ESI-MS [M+H]+ m/z 851.27507 (calculated 851.27569)
+      support one fewer methyl equivalent. The C-15 methyl signals are absent; C-6
+      moves from 132.7 to 119.9 ppm and couples to a new 7.54-ppm proton, whose HMBC
+      correlations establish its location. This supports 6-desmethyl polyketomycin,
+      not an independently resolved absolute stereochemistry or exact parent identity.
+      Appendix assignments at C-1/C-12 remain mutually exchangeable.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.6.4.1-3.6.4.2 pp. 78-81, Figs. 3-35 to 3-38; Table 7-6 pp.
+        232-233 and Fig. 7-5 p. 234.
+      snippet: es sich bei POK-MD3 um das 6-Desmethyl-Polyketomycin
+  - subject: pokmt2
+    predicate: has_genetically_inferred_biosynthetic_role
+    object: c6_methylation
+    notes: The inactivation, purified congener assignment and complementation support
+      attribution of C-6 methylation to PokMT2. The experiment is genetic inference,
+      not purified native PokMT2 conversion of MD3 or an isolated early intermediate.
+      Similarity to OxyF/BenF supplies context but those proteins are not substituted
+      as exact polyketomycin enzymes. MD3 diffusion-assay results concern the congener,
+      not a bioactivity-target role for PokMT2.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: CURATOR_INFERENCE
+      notes: Sections 3.6 pp. 75-81 and 4.3.2 pp. 110-112; inference from native genetics,
+        metabolite analysis and rescue.
+  - subject: c6_methylation
+    predicate: has_proposed_pathway_timing
+    object: early_step
+    notes: The thesis proposes C-methylation after formation of the tetracycle and
+      before oxidation at C-6, based on previously reported shunts and analogy with
+      oxytetracycline biosynthesis. Figure 4-10 explicitly treats POK-IP3 as a shunt,
+      not the direct substrate; the proposed substrate was modeled on pretetramid.
+      This is not an experimentally measured reaction order, demonstrated substrate
+      specificity or evidence that complete MD3 is methylated as the last step. The
+      reported ability to form MD3 shows downstream biosynthesis can proceed without
+      this methyl group in the tested mutant.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion 4.3.2 pp. 110-112 and Fig. 4-10 p. 111; summary 4.3.4 pp.
+        115-116. Prior shunt work is attributed by the thesis, not newly assayed here.
+- graph_id: polyketomycin-pokmt3-bounded-genetics-and-proposed-functions
+  scope: BIOSYNTHESIS
+  description: 'Native Tu6028 PokMT3 inactivation eliminates detectable polyketomycin
+    under the tested conditions, with partial rescue. C-8 O-methylation and an early
+    structural contribution remain proposed; the evidence does not establish direct
+    turnover, a physical complex or a PokMT3 cyclase. The reported 600-bp deletion
+    and primer-derived 660-bp reconstruction are distinct, and the possible pokC2
+    polar effect remains unresolved (source-review issue #530). Product stereochemical
+    identity is unchanged.'
+  nodes:
+  - node_id: pokmt3
+    label: Native PokMT3 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:C0JWC7
+  - node_id: deletion
+    label: Tu6028 pokMT3 reported internal in-frame deletion, DC50
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: loss
+    label: No detected polyketomycin-family product in the tested mutant culture
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: ip4_signal
+    label: Mutant extract signal assigned as IP4 by its UV profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: Tu6028 pokMT3 mutant carrying pSET-pokMT3
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: partial_restoration
+    label: Partially restored polyketomycin production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: c8_methylation
+    label: Proposed O-methylation of the C-8 hydroxyl group
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: early_support
+    label: Hypothesized structural contribution to early polyketide biosynthesis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: deletion
+    predicate: targets_gene_encoding
+    object: pokmt3
+    notes: The source reports a 600-bp in-frame internal deletion made with JG1/JG2
+      PCR fragments and an EcoRI junction, not removal of the entire gene. After eight
+      passages, 3% of 88 clones were apramycin-sensitive. PCR detected approximately
+      0.5-kb mutant versus 1.1-kb native products, with wild-type, plasmid, single-crossover
+      and reverted-wild-type controls. DC50 was used because its genotype result was
+      clearer than DC12. Curator reconstruction of the published primers against FJ483966.1
+      yields cut boundaries 40161/40821 and a 660-bp in-frame reduction. Both values
+      are preserved; the reconstruction is not an observed mutant sequence and does
+      not replace the reported allele. Printed PokMT3 alignment residues 52-371 match
+      the exact native parent.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.7.2 pp. 83-84 and Fig. 3-40; Table 5-35 p. 158, construction
+        5.7.2.7 p. 164; native alignment Fig. 4-12 p. 114.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator-only JG1/JG2 primer/EcoRI reconstruction differs from the reported
+        600-bp deletion; neither provides a sequenced mutant allele.
+    - reference: https://www.uniprot.org/uniprotkb/C0JWC7
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed native PokMT3, 371 aa, taxon 42236; EMBL FJ483966/ACN64847.1.
+        Inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACN64847.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PokMT3 from Streptomyces diastatochromogenes Tu6028; 371 aa; FJ483966.1:39977..41092.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison: target CDS translations agree exactly across native
+        GenBank, GenPept, MIBiG BGC0001061.4 and UniProt. Whole-locus ambiguity substitutions
+        at 47, 289, 46665 and 46736 are outside these CDSs; no claim of whole-locus
+        identity.'
+  - subject: deletion
+    predicate: has_reported_production_phenotype
+    object: loss
+    notes: HPLC/APCI-MS of six-day HA-medium production extracts did not reveal a
+      polyketomycin-like UV profile or the 14-Da-lower congener anticipated for loss
+      of a methyl group. The thesis calls this a production-null mutant. No exact
+      zero concentration, detection limit or all-condition essentiality is established.
+      Loss of production does not by itself distinguish methylation, structural support
+      or an indirect polar effect.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.7.3 pp. 84-85 and Fig. 3-41; methods 5.10.2.2 p. 189 and Table
+        5-48 p. 196.
+  - subject: deletion
+    predicate: has_reported_metabolite_signal
+    object: ip4_signal
+    notes: The six-day mutant trace contains a 24.0-min signal assigned as IP4 by
+      comparison with the UV profile previously reported by Peintner. The displayed
+      mutant chromatogram uses a different vertical scale from the wild-type/rescue
+      traces. This is an extract-level signal assignment, not a newly purified or
+      completely structure-resolved IP4 molecule. Earlier-culture IP1/IP2 observations
+      are attributed to prior work by the thesis and are not promoted here to newly
+      inspected experiments or exact polyketomycin congeners.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.7.3 pp. 84-85 and Fig. 3-41, chromatograms and UV trace visually
+        inspected.
+  - subject: rescue
+    predicate: introduces_gene_encoding
+    object: pokmt3
+    notes: pSET-pokMT3 places the gene behind ermE-up in pSET-1cerm. MT3-F/MT3-R align
+      to a 1203-bp native PCR span 39940..41142 containing the complete 1116-bp pokMT3
+      CDS and only 32 terminal bases of upstream pokC2, not a second complete enzyme.
+      Engineered restriction-site substitutions lie outside pokMT3. The map marks
+      a partial C2 segment. The pre-digestion PCR span is not asserted to be the complete
+      final integrated construct sequence.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 5-35 p. 158, Table 5-28 p. 139, methods 5.8.2.1/5.8.2.5 pp. 168-169;
+        map 7.3.2.5 p. 240.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator MT3 primer alignment: full native pokMT3 plus short pokC2 flank.
+        All primary primer bases and native coordinates checked.'
+  - subject: rescue
+    predicate: partially_restores_reported_production
+    object: partial_restoration
+    notes: The thesis reports restored polyketomycin production at approximately 20%
+      of wild type. Methods compare three complemented clones with wild type and mutant
+      plus empty pSET-1cerm. No calibrated titer, replicate-level distribution or
+      uncertainty is given with the percentage, and the plotted traces must not be
+      compared without their different scales. Discussion explicitly retains a possible
+      polar effect on upstream pokC2; partial rescue is not full causal isolation
+      of PokMT3 function.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.7.3 and Fig. 3-41 p. 85; complementation 5.8.3 p. 169; polar-effect
+        qualification 4.3.3 p. 115.
+      snippet: im Vergleich zur Produktion im Wildtyp auf etwa 20 % beschränkt
+  - subject: pokmt3
+    predicate: has_proposed_biosynthetic_role
+    object: c8_methylation
+    notes: O-methylation at C-8 is the authors' assignment from sequence similarity
+      to aromatic O-methyltransferases and pathway chemistry. The pokMT3 mutant did
+      not yield the corresponding desmethyl polyketomycin, and the inspected work
+      does not show purified PokMT3 conversion of a defined substrate. A late methylation
+      step after cyclization is proposed, not measured. The native accession is grounded
+      independently of the confidence in this reaction assignment.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: CURATOR_INFERENCE
+      notes: Section 3.7.1 pp. 82-83; discussion 4.3.3 pp. 112-115 and Figs. 3-39/4-11/4-12;
+        proposed interpretation, not direct enzyme assay.
+  - subject: pokmt3
+    predicate: has_hypothesized_non_catalytic_role
+    object: early_support
+    notes: The authors speculate that PokMT3 helps organize early polyketide biosynthesis
+      because inactivation blocks production before the proposed methylation stage.
+      No protein interaction, stoichiometry or physical assembly was measured. TcmN
+      is longer and its N-terminal cyclase/dehydrogenase region is not the region
+      similar to PokMT3; TcmN bifunctionality therefore is not evidence for PokMT3
+      cyclase activity. Sequence comparison alone also is not a direct negative cyclase
+      assay. The possible pokC2 polar effect remains an alternative to the structural-role
+      hypothesis, and no ComplexPortal identity is assigned.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion 4.3.3 pp. 112-115; Figs. 4-11/4-12; structural role is explicitly
+        speculative and polar effects are not excluded.
 curation_history:
 - timestamp: '2026-09-10T06:18:46Z'
   curator: seed_from_sources
@@ -671,4 +1021,13 @@ curation_history:
     negative assays and CoA-before-methylation evidence. Addressed #529 source/construct/NMR
     limits and annotated the open stereochemistry discussion without changing source-owned
     identity or SEEDED status.'
+  llm_assisted: true
+- timestamp: '2026-10-04T05:34:18Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added exact native PokMT2 UniProtKB:C0JWC3 and PokMT3 UniProtKB:C0JWC7
+    in two primary-cited genetics graphs. Preserved #530 reported-versus-reconstructed
+    allele differences, normalized metabolite profiles, partial rescue and possible
+    polar effects; catalytic timing and structural roles remain inference. Prior graphs,
+    source-owned identity, open stereochemistry discussion and SEEDED status unchanged.'
   llm_assisted: true

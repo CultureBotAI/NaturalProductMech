@@ -283,6 +283,123 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 8 edges</span></h2>
+<p class="sub">Native Tu6028 PokMT2 frameshift and rescue, with purified POK-MD3 structural evidence supporting C-6 methylation. The native parent is exactly grounded, but no purified-enzyme reaction, immediate substrate or absolute biosynthetic timing is claimed. POK-MD3 is a distinct congener, not the parent or POK-MD2. The owner remains at its existing unresolved stereochemical resolution. Source-review issue #530 preserves normalized-profile, allele and inferred-substrate limitations.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Tu6028 pokMT2 internal AscI-site frameshift, DC12</td>
+  <td>targets_gene_encoding</td>
+  <td>Native PokMT2 parent</td>
+  <td>pKC1132-MT2del was made by disrupting an internal AscI site in the pUC-9-B subclone, not by removing the whole CDS. Four passages yielded 14% apramycin-sensitive clones among 88 tested. PCR/AscI analysis compared four mutant clones (DC11-DC14) with wild type and the inactivation-plasmid control: reported 1.2-kb mutant amplicons resisted cleavage, whereas wild type gave approximately 1.0/0.2-kb fragments. DC12 was used subsequently. Figure 3-33 uses a deletion label, but the methods specify a frameshift; no complete mutant protein sequence is established.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815<br>https://www.uniprot.org/uniprotkb/C0JWC3<br>https://www.ncbi.nlm.nih.gov/protein/ACN64843.1<br>https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1</td>
+</tr>
+<tr>
+  <td>Tu6028 pokMT2 internal AscI-site frameshift, DC12</td>
+  <td>has_reported_production_phenotype</td>
+  <td>Polyketomycin replaced by POK-MD3 in the tested culture</td>
+  <td>HPLC/APCI-MS (pokAPCI2, 450-nm chromatograms) of six-day HA-medium production extracts showed POK-MD3 in place of the wild-type polyketomycin peak. Production followed a 72-h preculture. No calibrated detection limit or exact zero titer was reported; this result is restricted to the tested strain and culture conditions.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+<tr>
+  <td>Tu6028 pokMT2 internal AscI-site frameshift, DC12</td>
+  <td>accumulates_reported_metabolite</td>
+  <td>POK-MD3, assigned 6-desmethyl polyketomycin</td>
+  <td>Table 3-11 reports nominal mass 850 Da and retention 18.8 min for POK-MD3 versus 864 Da/19.2 min for polyketomycin. Each profile is independently normalized to its largest 450-nm POK-family signal; the two values of 100 are not equal absolute titers. MD3 is also distinct from the 850-Da, 16.8-min MD2 of the pokMT1 mutant. A blue-shifted long-wavelength UV maximum and the 14-Da shift of aglycone-containing APCI fragments localize the change to the polyketide portion, not by mass alone to one methyl position.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+<tr>
+  <td>Tu6028 pokMT2 mutant carrying pSET-pokMT2</td>
+  <td>introduces_gene_encoding</td>
+  <td>Native PokMT2 parent</td>
+  <td>pSET-pokMT2 places the native gene behind ermE-up in pSET-1cerm. Curator alignment of MT2-F/MT2-R gives a 1203-bp native span 35578..36780 containing the entire 1038-bp CDS and no neighboring complete or partial CDS. The engineered restriction-site substitutions are outside pokMT2. This supports native parent identity, not a fully sequenced integrated plasmid. Table 5-28 gives an approximate 1.1-kb insert; the primary primer span is reported separately rather than silently substituted.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815<br>https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1</td>
+</tr>
+<tr>
+  <td>Tu6028 pokMT2 mutant carrying pSET-pokMT2</td>
+  <td>restores_reported_production</td>
+  <td>Restored detectable polyketomycin production</td>
+  <td>The complemented mutant again has the polyketomycin production peak. Methods describe comparisons of three complemented clones with wild type and the corresponding mutant carrying empty pSET-1cerm. The displayed trace establishes restoration of detectable production, not an independently calibrated wild-type yield, quantified uncertainty, or universal exclusion of polar effects.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+<tr>
+  <td>POK-MD3, assigned 6-desmethyl polyketomycin</td>
+  <td>supports_genetic_assignment_of</td>
+  <td>Genetically inferred polyketide C-6 methylation</td>
+  <td>The authors isolated 7.5 mg MD3 from a 3-L mutant production culture by fractionation and preparative HPLC, then acquired 1H/13C and COSY/HSQC/HMBC spectra in CDCl3 (400/100 MHz). Unlike labelled MD2, this was an isolated compound. Neutral formula C43H46O18 and HR-ESI-MS [M+H]+ m/z 851.27507 (calculated 851.27569) support one fewer methyl equivalent. The C-15 methyl signals are absent; C-6 moves from 132.7 to 119.9 ppm and couples to a new 7.54-ppm proton, whose HMBC correlations establish its location. This supports 6-desmethyl polyketomycin, not an independently resolved absolute stereochemistry or exact parent identity. Appendix assignments at C-1/C-12 remain mutually exchangeable.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+<tr>
+  <td>Native PokMT2 parent</td>
+  <td>has_genetically_inferred_biosynthetic_role</td>
+  <td>Genetically inferred polyketide C-6 methylation</td>
+  <td>The inactivation, purified congener assignment and complementation support attribution of C-6 methylation to PokMT2. The experiment is genetic inference, not purified native PokMT2 conversion of MD3 or an isolated early intermediate. Similarity to OxyF/BenF supplies context but those proteins are not substituted as exact polyketomycin enzymes. MD3 diffusion-assay results concern the congener, not a bioactivity-target role for PokMT2.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+<tr>
+  <td>Genetically inferred polyketide C-6 methylation</td>
+  <td>has_proposed_pathway_timing</td>
+  <td>Proposed methylation after cyclization and before C-6 oxidation</td>
+  <td>The thesis proposes C-methylation after formation of the tetracycle and before oxidation at C-6, based on previously reported shunts and analogy with oxytetracycline biosynthesis. Figure 4-10 explicitly treats POK-IP3 as a shunt, not the direct substrate; the proposed substrate was modeled on pretetramid. This is not an experimentally measured reaction order, demonstrated substrate specificity or evidence that complete MD3 is methylated as the last step. The reported ability to form MD3 shows downstream biosynthesis can proceed without this methyl group in the tested mutant.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
+<p class="sub">Native Tu6028 PokMT3 inactivation eliminates detectable polyketomycin under the tested conditions, with partial rescue. C-8 O-methylation and an early structural contribution remain proposed; the evidence does not establish direct turnover, a physical complex or a PokMT3 cyclase. The reported 600-bp deletion and primer-derived 660-bp reconstruction are distinct, and the possible pokC2 polar effect remains unresolved (source-review issue #530). Product stereochemical identity is unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Tu6028 pokMT3 reported internal in-frame deletion, DC50</td>
+  <td>targets_gene_encoding</td>
+  <td>Native PokMT3 parent</td>
+  <td>The source reports a 600-bp in-frame internal deletion made with JG1/JG2 PCR fragments and an EcoRI junction, not removal of the entire gene. After eight passages, 3% of 88 clones were apramycin-sensitive. PCR detected approximately 0.5-kb mutant versus 1.1-kb native products, with wild-type, plasmid, single-crossover and reverted-wild-type controls. DC50 was used because its genotype result was clearer than DC12. Curator reconstruction of the published primers against FJ483966.1 yields cut boundaries 40161/40821 and a 660-bp in-frame reduction. Both values are preserved; the reconstruction is not an observed mutant sequence and does not replace the reported allele. Printed PokMT3 alignment residues 52-371 match the exact native parent.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815<br>https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1<br>https://www.uniprot.org/uniprotkb/C0JWC7<br>https://www.ncbi.nlm.nih.gov/protein/ACN64847.1<br>https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1</td>
+</tr>
+<tr>
+  <td>Tu6028 pokMT3 reported internal in-frame deletion, DC50</td>
+  <td>has_reported_production_phenotype</td>
+  <td>No detected polyketomycin-family product in the tested mutant culture</td>
+  <td>HPLC/APCI-MS of six-day HA-medium production extracts did not reveal a polyketomycin-like UV profile or the 14-Da-lower congener anticipated for loss of a methyl group. The thesis calls this a production-null mutant. No exact zero concentration, detection limit or all-condition essentiality is established. Loss of production does not by itself distinguish methylation, structural support or an indirect polar effect.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+<tr>
+  <td>Tu6028 pokMT3 reported internal in-frame deletion, DC50</td>
+  <td>has_reported_metabolite_signal</td>
+  <td>Mutant extract signal assigned as IP4 by its UV profile</td>
+  <td>The six-day mutant trace contains a 24.0-min signal assigned as IP4 by comparison with the UV profile previously reported by Peintner. The displayed mutant chromatogram uses a different vertical scale from the wild-type/rescue traces. This is an extract-level signal assignment, not a newly purified or completely structure-resolved IP4 molecule. Earlier-culture IP1/IP2 observations are attributed to prior work by the thesis and are not promoted here to newly inspected experiments or exact polyketomycin congeners.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+<tr>
+  <td>Tu6028 pokMT3 mutant carrying pSET-pokMT3</td>
+  <td>introduces_gene_encoding</td>
+  <td>Native PokMT3 parent</td>
+  <td>pSET-pokMT3 places the gene behind ermE-up in pSET-1cerm. MT3-F/MT3-R align to a 1203-bp native PCR span 39940..41142 containing the complete 1116-bp pokMT3 CDS and only 32 terminal bases of upstream pokC2, not a second complete enzyme. Engineered restriction-site substitutions lie outside pokMT3. The map marks a partial C2 segment. The pre-digestion PCR span is not asserted to be the complete final integrated construct sequence.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815<br>https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1</td>
+</tr>
+<tr>
+  <td>Tu6028 pokMT3 mutant carrying pSET-pokMT3</td>
+  <td>partially_restores_reported_production</td>
+  <td>Partially restored polyketomycin production</td>
+  <td>The thesis reports restored polyketomycin production at approximately 20% of wild type. Methods compare three complemented clones with wild type and mutant plus empty pSET-1cerm. No calibrated titer, replicate-level distribution or uncertainty is given with the percentage, and the plotted traces must not be compared without their different scales. Discussion explicitly retains a possible polar effect on upstream pokC2; partial rescue is not full causal isolation of PokMT3 function.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+<tr>
+  <td>Native PokMT3 parent</td>
+  <td>has_proposed_biosynthetic_role</td>
+  <td>Proposed O-methylation of the C-8 hydroxyl group</td>
+  <td>O-methylation at C-8 is the authors&#39; assignment from sequence similarity to aromatic O-methyltransferases and pathway chemistry. The pokMT3 mutant did not yield the corresponding desmethyl polyketomycin, and the inspected work does not show purified PokMT3 conversion of a defined substrate. A late methylation step after cyclization is proposed, not measured. The native accession is grounded independently of the confidence in this reaction assignment.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+<tr>
+  <td>Native PokMT3 parent</td>
+  <td>has_hypothesized_non_catalytic_role</td>
+  <td>Hypothesized structural contribution to early polyketide biosynthesis</td>
+  <td>The authors speculate that PokMT3 helps organize early polyketide biosynthesis because inactivation blocks production before the proposed methylation stage. No protein interaction, stoichiometry or physical assembly was measured. TcmN is longer and its N-terminal cyclase/dehydrogenase region is not the region similar to PokMT3; TcmN bifunctionality therefore is not evidence for PokMT3 cyclase activity. Sequence comparison alone also is not a direct negative cyclase assay. The possible pokC2 polar effect remains an alternative to the structural-role hypothesis, and no ComplexPortal identity is assigned.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
