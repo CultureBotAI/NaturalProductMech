@@ -680,6 +680,10 @@ causal_graph_refs:
 - cathomycin-novq-native-identity-and-precursor-evidence
 - cathomycin-novq-fusion-expression-and-processing-limits
 - cathomycin-novq-e281-variants-and-surrogate-assay-limits
+- cathomycin-novo-native-identity-and-engineered-preparations
+- cathomycin-novo-mutant-endpoints-and-loading-conflict
+- cathomycin-novo-sah-structure-and-mechanistic-model-limits
+- cathomycin-novo-ph-isotope-assays-and-kinetic-conflicts
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -711,4 +715,12 @@ curation_history:
     fusion expression and nine E281 variants. Keep engineered proteins ungrounded
     and preserve abstract/supplement access limits, earlier NovL/chimera evidence,
     chemical identity, source fields and SEEDED status (#554).
+  llm_assisted: true
+- timestamp: '2026-10-04T19:05:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add four NovO components: exact native sequence, separate engineered preparations,
+    eleven endpoint and two pH variants, SAH structure versus docking, and coupled
+    isotope assays. Preserve taxonomy/primer/loading/turnover conflicts, previous
+    graphs, source fields, chemical identity and SEEDED status (#555).'
   llm_assisted: true

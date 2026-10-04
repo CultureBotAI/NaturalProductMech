@@ -1,0 +1,329 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novo-native-identity-and-engineered-preparations
+  scope: BIOSYNTHESIS
+  description: 'NovO native sequence, historical taxonomy, abstract-limited 2005 precursor
+    chemistry and separate Sadler 2017 preparations. Native Q9L9F3 is a deposited
+    sequence reference, not an engineered assay protein. Review #555. PDF locators
+    refer to the 60-page accepted manuscript/SI, not final journal pagination; SI
+    printed pages are seven lower. The cathomycin owner retains its unspecified sugar
+    stereocentre.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: gene
+    label: Deposited novO locus from NCIMB 9219
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: native
+    label: Deposited native NovO sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F3
+  - node_id: deposit40292
+    label: NovO deposit from strain 40292
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: taxonomy
+    label: NovO source-taxon and historical strain disagreement
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: prep2005
+    label: Pacholec 2005 recombinant NovO preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: reaction
+    label: Abstract-reported NovO precursor C-methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: precursor
+    label: Unmethylated ligated aminocoumarin precursor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: C8-methylated novobiocic-acid precursor
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: early
+    label: Reported nonacceptance of earlier pathway intermediates
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: order
+    label: Source-supported methylation before glycosylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: construct
+    label: Sadler codon-optimized pET26b(+)-NovO-His6 DNA construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: wt
+    label: Sadler C-terminal His6 NovO WT preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: E. coli BL21(DE3) NovO expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: semet
+    label: Sadler SeMet-labelled NovO-His6 preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: gel
+    label: Sadler NovO purification gels
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: r24m_design
+    label: R24M primer design without an endpoint row
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: h120f_design
+    label: H120F primer design without an endpoint row
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: gene
+    notes: The owner links BGC0000834.5 and AF170880.4. novO is 17538..18230(+) with
+      a 693-nt CDS including stop. This is a locus association, not a new equivalence
+      to fully specified novobiocin.
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/go/BGC0000834.5
+      evidence_type: DATABASE_ASSERTION
+      notes: Owner/locus association.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited novO CDS.
+  - subject: gene
+    predicate: encodes_native_protein
+    object: native
+    notes: Table-11 CDS-aware translation matches AAF67508.2 and all 230 residues
+      of Q9L9F3. Current GenBank source is S. niveus NCIMB 9219, taxon 193462. The
+      native accession is not assigned to tagged or mutant samples.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: CDS and source qualifiers.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F3
+      evidence_type: DATABASE_ASSERTION
+      notes: Entry 79, sequence 2; annotation 2026-09-02; retrieved 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent native/CDS/UniProt sequence comparison.
+  - subject: native
+    predicate: has_identical_deposited_sequence_to
+    object: deposit40292
+    notes: JN606326.1/AEP25522.1 has a 1..693(+) CDS whose translated 230-aa protein
+      is identical. Protein-sequence equality does not establish strain synonymy or
+      the provenance of any assayed aliquot.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JN606326.1
+      evidence_type: DATABASE_ASSERTION
+      notes: CDS and source qualifiers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent comparison of both CDS translations.
+  - subject: deposit40292
+    predicate: has_unresolved_source_taxonomy
+    object: taxonomy
+    notes: JN606326.1 names Actinoalloteichus caeruleus taxon 2893586, strain 40292,
+      while its definition retains Streptomyces caeruleus. UniProt uses S. niveus
+      and historical DSM 40292/NCIMB 11891 reference metadata. These labels are not
+      silently reconciled with AF170880.4 NCIMB 9219 and do not change the owner producer.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JN606326.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Current source versus definition.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F3
+      evidence_type: DATABASE_ASSERTION
+      notes: Organism and reference strain metadata.
+  - subject: native
+    predicate: is_database_reference_for_studied_enzyme
+    object: prep2005
+    notes: UniProt links NovO function to Pacholec 2005. Its primary abstract reports
+      E. coli expression and purification, but full construct sequence and methods
+      were not obtained; no native accession is assigned as the exact recombinant
+      preparation identity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F3
+      evidence_type: DATABASE_ASSERTION
+      notes: Function and PubMed 16274243 annotation.
+    - reference: DOI:10.1021/bi051599o
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: prep2005
+    predicate: catalyzes_reported_methylation
+    object: reaction
+    notes: The abstract reports SAM-dependent aminocoumarin C-methylation after ring
+      construction and amide ligation. No numerical kinetic constant, loading or tag
+      state is inferred from the 2017 study.
+    evidence:
+    - reference: DOI:10.1021/bi051599o
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: precursor
+    predicate: is_reported_acceptor_for
+    object: reaction
+    notes: UniProt calls the substrate 8-desmethylnovobiocic acid (RHEA:36651); the
+      2005 abstract describes the NovL-ligated product as novobiocic acid. Both concern
+      an unglycosylated precursor, not the 2017 benzamide surrogate or mature owner
+      structure.
+    evidence:
+    - reference: DOI:10.1021/bi051599o
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F3
+      evidence_type: DATABASE_ASSERTION
+      notes: Catalytic-activity annotation.
+  - subject: reaction
+    predicate: forms_reported_precursor
+    object: product
+    notes: The source places a C-methyl adjacent to the phenolic oxygen. This does
+      not demonstrate mature cathomycin synthesis or resolve the owner sugar stereocentre.
+    evidence:
+    - reference: DOI:10.1021/bi051599o
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: prep2005
+    predicate: has_reported_negative_substrate_results
+    object: early
+    notes: The abstract reports nonacceptance of NovH-tethered tyrosyl-derived S-pantetheinyl
+      intermediates and subsequently released free aminocoumarin. Assay-specific detection
+      limits were not supplied.
+    evidence:
+    - reference: DOI:10.1021/bi051599o
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: reaction
+    predicate: precedes_reported_glycosylation
+    object: order
+    notes: The reported NovO step precedes NovM O-glycosylation. This is the source
+      pathway interpretation, not native-cell flux measurement or evidence that every
+      accepted analogue follows this order.
+    evidence:
+    - reference: DOI:10.1021/bi051599o
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+      snippet: before it is O-glycosylated
+  - subject: native
+    predicate: is_sequence_reference_for
+    object: construct
+    notes: The 2017 gene was synthesized by GenScript with codon optimization and
+      a C-terminal His6, then cloned into pET26b(+) via NdeI/XhoI. The native DNA
+      is not its actual template. The PDB construct core matches the native protein,
+      but the complete synthetic DNA and individual mutant plasmid sequences were
+      not independently obtained.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 15, PDF
+        pp.33-34.
+      snippet: with codon optimization
+    - reference: https://files.rcsb.org/download/5MGZ.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited protein entity compared to Q9L9F3.
+  - subject: construct
+    predicate: encodes_engineered_protein
+    object: wt
+    notes: The reported C-terminal His6 makes this distinct from native NovO. 5MGZ
+      deposits a 230-aa native core plus six histidines (236 aa); that structural
+      deposit does not sequence every assay preparation.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 15, PDF
+        p.34.
+    - reference: https://files.rcsb.org/download/5MGZ.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Entity sequence and tag annotations.
+  - subject: host
+    predicate: expressed
+    object: wt
+    notes: The standard protocol uses BL21(DE3), Magic Media autoinduction, 50 ug/mL
+      kanamycin, growth at 30 C to OD about 2, then 18 C overnight. TOP10 was used
+      for cloning, not identified as the production host.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 15, PDF
+        pp.34-35.
+  - subject: construct
+    predicate: was_used_for_labelled_preparation
+    object: semet
+    notes: BL21(DE3) expression for SeMet labelling used a distinct minimal-medium
+      protocol, 50 ug/mL selenomethionine and 100 uM IPTG at 18 C. This is a chemically
+      labelled tagged preparation, not a new native allele.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 16, PDF
+        p.35.
+  - subject: wt
+    predicate: has_reported_purification_readout
+    object: gel
+    notes: HisTrap affinity purification is described for WT and mutants. The mutant
+      gel on PDF p.36 labels F14M/F14L/R24F/R116K/R116L/N117A/H120N/R121L/R121Q/Y216F/WT.
+      H120A is absent; R121Q is an abbreviated lane label, not evidence against the
+      activity table double-mutant label. Bands do not establish complete sequence,
+      exact purity or equal active fraction.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 17 and upper
+        Figure S7, PDF pp.35-36.
+  - subject: semet
+    predicate: has_reported_purification_readout
+    object: gel
+    notes: SeMet material received additional Superdex 75 SEC after HisTrap; the lower
+      gel labels affinity and SEC pools/concentrates. This purification SEC is not
+      a calibrated solution-stoichiometry assay.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 17 and lower
+        Figure S9, PDF p.36.
+  - subject: construct
+    predicate: has_listed_primer_design
+    object: r24m_design
+    notes: Listed forward 5-prime GGCTCGCAAGCATCGCACATGTATGACGAATTTGTT; reverse 5-prime
+      AACAAATTCGTCATACATGTGCGATGCTTGCGAGCC. The pair is reverse-complementary and
+      its local translated peptide matches the named substitution. This name occurs
+      only in the primer list in the inspected manuscript/SI text and is not an endpoint-table
+      or displayed purification-gel entry; no activity or purified-protein outcome
+      is invented.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 15, PDF
+        p.33.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F3
+      evidence_type: CURATOR_INFERENCE
+      notes: Local peptide comparison, not full synthetic-template reconstruction.
+  - subject: construct
+    predicate: has_listed_primer_design
+    object: h120f_design
+    notes: Listed forward 5-prime GTGAGTCGTAATGCCTTTTTCCGTCTGACCCGCCTG; reverse 5-prime
+      CAGGCGGGTCAGACGGAAAAAGGCATTACGACTCAC. The pair is reverse-complementary and
+      its local translated peptide matches the named substitution. This name occurs
+      only in the primer list in the inspected manuscript/SI text and is not an endpoint-table
+      or displayed purification-gel entry; no activity or purified-protein outcome
+      is invented.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 15, PDF
+        p.33.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F3
+      evidence_type: CURATOR_INFERENCE
+      notes: Local peptide comparison, not full synthetic-template reconstruction.
+curation_history:
+- timestamp: '2026-10-04T19:05:51Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-novo-native-identity-and-engineered-preparations with bounded
+    primary protein evidence and source conflicts (#555).
+  llm_assisted: true

@@ -1136,6 +1136,541 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">18 nodes, 18 edges</span></h2>
+<p class="sub">NovO native sequence, historical taxonomy, abstract-limited 2005 precursor chemistry and separate Sadler 2017 preparations. Native Q9L9F3 is a deposited sequence reference, not an engineered assay protein. Review #555. PDF locators refer to the 60-page accepted manuscript/SI, not final journal pagination; SI printed pages are seven lower. The cathomycin owner retains its unspecified sugar stereocentre.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited novobiocin cluster underlying the cathomycin owner</td>
+  <td>contains</td>
+  <td>Deposited novO locus from NCIMB 9219</td>
+  <td>The owner links BGC0000834.5 and AF170880.4. novO is 17538..18230(+) with a 693-nt CDS including stop. This is a locus association, not a new equivalence to fully specified novobiocin.</td>
+  <td class="mono">https://mibig.secondarymetabolites.org/go/BGC0000834.5<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novO locus from NCIMB 9219</td>
+  <td>encodes_native_protein</td>
+  <td>Deposited native NovO sequence reference</td>
+  <td>Table-11 CDS-aware translation matches AAF67508.2 and all 230 residues of Q9L9F3. Current GenBank source is S. niveus NCIMB 9219, taxon 193462. The native accession is not assigned to tagged or mutant samples.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.uniprot.org/uniprotkb/Q9L9F3<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited native NovO sequence reference</td>
+  <td>has_identical_deposited_sequence_to</td>
+  <td>NovO deposit from strain 40292</td>
+  <td>JN606326.1/AEP25522.1 has a 1..693(+) CDS whose translated 230-aa protein is identical. Protein-sequence equality does not establish strain synonymy or the provenance of any assayed aliquot.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/JN606326.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>NovO deposit from strain 40292</td>
+  <td>has_unresolved_source_taxonomy</td>
+  <td>NovO source-taxon and historical strain disagreement</td>
+  <td>JN606326.1 names Actinoalloteichus caeruleus taxon 2893586, strain 40292, while its definition retains Streptomyces caeruleus. UniProt uses S. niveus and historical DSM 40292/NCIMB 11891 reference metadata. These labels are not silently reconciled with AF170880.4 NCIMB 9219 and do not change the owner producer.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/JN606326.1<br>https://www.uniprot.org/uniprotkb/Q9L9F3</td>
+</tr>
+<tr>
+  <td>Deposited native NovO sequence reference</td>
+  <td>is_database_reference_for_studied_enzyme</td>
+  <td>Pacholec 2005 recombinant NovO preparation</td>
+  <td>UniProt links NovO function to Pacholec 2005. Its primary abstract reports E. coli expression and purification, but full construct sequence and methods were not obtained; no native accession is assigned as the exact recombinant preparation identity.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F3<br>DOI:10.1021/bi051599o</td>
+</tr>
+<tr>
+  <td>Pacholec 2005 recombinant NovO preparation</td>
+  <td>catalyzes_reported_methylation</td>
+  <td>Abstract-reported NovO precursor C-methylation</td>
+  <td>The abstract reports SAM-dependent aminocoumarin C-methylation after ring construction and amide ligation. No numerical kinetic constant, loading or tag state is inferred from the 2017 study.</td>
+  <td class="mono">DOI:10.1021/bi051599o</td>
+</tr>
+<tr>
+  <td>Unmethylated ligated aminocoumarin precursor</td>
+  <td>is_reported_acceptor_for</td>
+  <td>Abstract-reported NovO precursor C-methylation</td>
+  <td>UniProt calls the substrate 8-desmethylnovobiocic acid (RHEA:36651); the 2005 abstract describes the NovL-ligated product as novobiocic acid. Both concern an unglycosylated precursor, not the 2017 benzamide surrogate or mature owner structure.</td>
+  <td class="mono">DOI:10.1021/bi051599o<br>https://www.uniprot.org/uniprotkb/Q9L9F3</td>
+</tr>
+<tr>
+  <td>Abstract-reported NovO precursor C-methylation</td>
+  <td>forms_reported_precursor</td>
+  <td>C8-methylated novobiocic-acid precursor</td>
+  <td>The source places a C-methyl adjacent to the phenolic oxygen. This does not demonstrate mature cathomycin synthesis or resolve the owner sugar stereocentre.</td>
+  <td class="mono">DOI:10.1021/bi051599o</td>
+</tr>
+<tr>
+  <td>Pacholec 2005 recombinant NovO preparation</td>
+  <td>has_reported_negative_substrate_results</td>
+  <td>Reported nonacceptance of earlier pathway intermediates</td>
+  <td>The abstract reports nonacceptance of NovH-tethered tyrosyl-derived S-pantetheinyl intermediates and subsequently released free aminocoumarin. Assay-specific detection limits were not supplied.</td>
+  <td class="mono">DOI:10.1021/bi051599o</td>
+</tr>
+<tr>
+  <td>Abstract-reported NovO precursor C-methylation</td>
+  <td>precedes_reported_glycosylation</td>
+  <td>Source-supported methylation before glycosylation</td>
+  <td>The reported NovO step precedes NovM O-glycosylation. This is the source pathway interpretation, not native-cell flux measurement or evidence that every accepted analogue follows this order.</td>
+  <td class="mono">DOI:10.1021/bi051599o</td>
+</tr>
+<tr>
+  <td>Deposited native NovO sequence reference</td>
+  <td>is_sequence_reference_for</td>
+  <td>Sadler codon-optimized pET26b(+)-NovO-His6 DNA construct</td>
+  <td>The 2017 gene was synthesized by GenScript with codon optimization and a C-terminal His6, then cloned into pET26b(+) via NdeI/XhoI. The native DNA is not its actual template. The PDB construct core matches the native protein, but the complete synthetic DNA and individual mutant plasmid sequences were not independently obtained.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf<br>https://files.rcsb.org/download/5MGZ.cif</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized pET26b(+)-NovO-His6 DNA construct</td>
+  <td>encodes_engineered_protein</td>
+  <td>Sadler C-terminal His6 NovO WT preparation</td>
+  <td>The reported C-terminal His6 makes this distinct from native NovO. 5MGZ deposits a 230-aa native core plus six histidines (236 aa); that structural deposit does not sequence every assay preparation.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf<br>https://files.rcsb.org/download/5MGZ.cif</td>
+</tr>
+<tr>
+  <td>E. coli BL21(DE3) NovO expression host</td>
+  <td>expressed</td>
+  <td>Sadler C-terminal His6 NovO WT preparation</td>
+  <td>The standard protocol uses BL21(DE3), Magic Media autoinduction, 50 ug/mL kanamycin, growth at 30 C to OD about 2, then 18 C overnight. TOP10 was used for cloning, not identified as the production host.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized pET26b(+)-NovO-His6 DNA construct</td>
+  <td>was_used_for_labelled_preparation</td>
+  <td>Sadler SeMet-labelled NovO-His6 preparation</td>
+  <td>BL21(DE3) expression for SeMet labelling used a distinct minimal-medium protocol, 50 ug/mL selenomethionine and 100 uM IPTG at 18 C. This is a chemically labelled tagged preparation, not a new native allele.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler C-terminal His6 NovO WT preparation</td>
+  <td>has_reported_purification_readout</td>
+  <td>Sadler NovO purification gels</td>
+  <td>HisTrap affinity purification is described for WT and mutants. The mutant gel on PDF p.36 labels F14M/F14L/R24F/R116K/R116L/N117A/H120N/R121L/R121Q/Y216F/WT. H120A is absent; R121Q is an abbreviated lane label, not evidence against the activity table double-mutant label. Bands do not establish complete sequence, exact purity or equal active fraction.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler SeMet-labelled NovO-His6 preparation</td>
+  <td>has_reported_purification_readout</td>
+  <td>Sadler NovO purification gels</td>
+  <td>SeMet material received additional Superdex 75 SEC after HisTrap; the lower gel labels affinity and SEC pools/concentrates. This purification SEC is not a calibrated solution-stoichiometry assay.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized pET26b(+)-NovO-His6 DNA construct</td>
+  <td>has_listed_primer_design</td>
+  <td>R24M primer design without an endpoint row</td>
+  <td>Listed forward 5-prime GGCTCGCAAGCATCGCACATGTATGACGAATTTGTT; reverse 5-prime AACAAATTCGTCATACATGTGCGATGCTTGCGAGCC. The pair is reverse-complementary and its local translated peptide matches the named substitution. This name occurs only in the primer list in the inspected manuscript/SI text and is not an endpoint-table or displayed purification-gel entry; no activity or purified-protein outcome is invented.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf<br>https://www.uniprot.org/uniprotkb/Q9L9F3</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized pET26b(+)-NovO-His6 DNA construct</td>
+  <td>has_listed_primer_design</td>
+  <td>H120F primer design without an endpoint row</td>
+  <td>Listed forward 5-prime GTGAGTCGTAATGCCTTTTTCCGTCTGACCCGCCTG; reverse 5-prime CAGGCGGGTCAGACGGAAAAAGGCATTACGACTCAC. The pair is reverse-complementary and its local translated peptide matches the named substitution. This name occurs only in the primer list in the inspected manuscript/SI text and is not an endpoint-table or displayed purification-gel entry; no activity or purified-protein outcome is invented.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf<br>https://www.uniprot.org/uniprotkb/Q9L9F3</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">21 nodes, 32 edges</span></h2>
+<p class="sub">Eleven NovO engineered variants in the Sadler 2017 24-hour benzamide-surrogate assay, with WT and no-MT controls. Lysate, double-mutant identity, censored values, loading conflict and preparative recovery remain explicit. Review #555. PDF locators refer to the 60-page accepted manuscript/SI, not final journal pagination; SI printed pages are seven lower. The cathomycin owner retains its unspecified sugar stereocentre.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Sadler codon-optimized NovO-His6 parent construct</td>
+  <td>encodes_engineered_preparation</td>
+  <td>Sadler NovO-His6 WT assay preparation</td>
+  <td>The source uses a codon-optimized pET26b(+) gene with C-terminal His6. WT means this recombinant assay comparator, not untagged native NovO.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-His6 WT assay preparation</td>
+  <td>has_measured_endpoint_in</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>Table 2 reports WT 98% conversion after 24 h. This is HPLC area/area% at 320 nm, not 98% relative to a 100%-normalized WT, an initial turnover rate or independently calibrated molar conversion. No replicate count or uncertainty accompanies the endpoint table.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>N-(4,7-Dihydroxy-2-oxo-2H-chromen-3-yl)benzamide</td>
+  <td>is_acceptor_for</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>Substrate 6 is the synthetic benzamide coumarin, not native 8-desmethylnovobiocic acid or mature cathomycin. The assay lists 100 uM acceptor, 2 mM SAM, 0.1 mg/mL BSA, 50 mM sodium phosphate pH 6.5, total 0.5 mL, 35 C and 1000 rpm for 24 h, followed by 80 C for 15 min to quench.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>S-Adenosyl-L-methionine donor</td>
+  <td>is_donor_for</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>SAM is directly supplied at a stated 2 mM in this endpoint assay. Do not transfer SalL-mediated donor-supply methods from the separate KIE assay.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>forms_source_assigned_product</td>
+  <td>C8-methylated benzamide surrogate product</td>
+  <td>The HPLC product is assigned as N-(4,7-dihydroxy-8-methyl-2-oxo-2H-chromen-3-yl)benzamide (4a). Preparative characterization supports the source assignment but is not a separate structural determination of every mutant endpoint.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>No-methyltransferase negative control</td>
+  <td>has_measured_endpoint_in</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>The no-MT control is reported as 0% area conversion. This is the source endpoint, not a measured absolute zero or a stated detection limit.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>has_unresolved_loading_description</td>
+  <td>Unresolved enzyme-loading units</td>
+  <td>Section 12 reports 250 ug purified enzyme in 0.5 mL and a final 1.9 uM concentration. With the source 26.23-kDa theoretical mass (PDF p.36), the mass/volume implies about 19.06 uM, roughly tenfold higher. Neither value is silently selected as actual loading; no new enzyme-normalized rate is calculated.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf<br>https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized NovO-His6 parent construct</td>
+  <td>was_expressed_for_lysate_preparation</td>
+  <td>Preparative NovO-expressing cell lysate</td>
+  <td>The preparative experiment uses E. coli lysate from NovO overexpression, distinct from purified WT in the endpoint comparison.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Preparative NovO-expressing cell lysate</td>
+  <td>was_used_in</td>
+  <td>Preparative surrogate methylation and isolated recovery</td>
+  <td>The procedure starts with 40 mL lysate, 20 mg substrate and 72 mg SAM, then adds another 72 mg SAM after 24 h and incubates for a further 16 h. It reports 90% HPLC conversion and 14 mg isolated product (67% yield). Conversion and isolated recovery are different readouts, not native antibiotic titers or a WT-versus-mutant comparison.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Preparative surrogate methylation and isolated recovery</td>
+  <td>yielded_characterized_product</td>
+  <td>C8-methylated benzamide surrogate product</td>
+  <td>The source provides proton/carbon NMR and HRMS (calculated [M+H]+ 312.0868, found 312.0866) for the isolated surrogate. No new exact-structure record or independent full spectral assignment is made.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized NovO-His6 parent construct</td>
+  <td>is_reported_parent_for</td>
+  <td>Sadler NovO-F14M assay preparation</td>
+  <td>Literal forward 5-prime GGTTCCGAAGCAGAAGCAATGCACCGCATGGGCTCG; reverse 5-prime CGAGCCCATGCGGTGCATTGCTTCTGCTTCGGAACC. The reverse-complement pair encodes the named local peptide change. The authors report sequencing mutant genes. Full experimental plasmids were not independently obtained; short peptide models do not establish complete sequence identity. No native accession is assigned.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-F14M assay preparation</td>
+  <td>has_measured_endpoint_in</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>Table 2 reports 19% HPLC area conversion at the stated 24-hour endpoint. No replicate count or uncertainty is supplied; this is not kcat, binding affinity or native precursor turnover. </td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized NovO-His6 parent construct</td>
+  <td>is_reported_parent_for</td>
+  <td>Sadler NovO-F14L assay preparation</td>
+  <td>Literal forward 5-prime GGTTCCGAAGCAGAAGCACTCCACCGCATGGGCTCG; reverse 5-prime CGAGCCCATGCGGTGGAGTGCTTCTGCTTCGGAACC. The reverse-complement pair encodes the named local peptide change. The authors report sequencing mutant genes. Full experimental plasmids were not independently obtained; short peptide models do not establish complete sequence identity. No native accession is assigned.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-F14L assay preparation</td>
+  <td>has_measured_endpoint_in</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>Table 2 reports 30% HPLC area conversion at the stated 24-hour endpoint. No replicate count or uncertainty is supplied; this is not kcat, binding affinity or native precursor turnover. </td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized NovO-His6 parent construct</td>
+  <td>is_reported_parent_for</td>
+  <td>Sadler NovO-R24F assay preparation</td>
+  <td>Literal forward 5-prime GGCTCGCAAGCATCGCACUTCTATGACGAATTTGTT; reverse 5-prime AACAAATTCGTCATAGAAGTGCGATGCTTGCGAGCC. The forward primer contains U as printed; it is not silently rewritten as DNA T. The authors report sequencing mutant genes. Full experimental plasmids were not independently obtained; short peptide models do not establish complete sequence identity. No native accession is assigned.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-R24F assay preparation</td>
+  <td>has_measured_endpoint_in</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>Table 2 reports 15% HPLC area conversion at the stated 24-hour endpoint. No replicate count or uncertainty is supplied; this is not kcat, binding affinity or native precursor turnover. </td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized NovO-His6 parent construct</td>
+  <td>is_reported_parent_for</td>
+  <td>Sadler NovO-R116L assay preparation</td>
+  <td>The activity table and gel name this mutant, but the inspected SDM primer list does not give its pair. The authors report sequencing mutant genes. Full experimental plasmids were not independently obtained; short peptide models do not establish complete sequence identity. No native accession is assigned.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-R116L assay preparation</td>
+  <td>has_measured_endpoint_in</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>Table 2 reports 1% HPLC area conversion at the stated 24-hour endpoint. No replicate count or uncertainty is supplied; this is not kcat, binding affinity or native precursor turnover. Retain this numeric/censored value despite main prose describing complete loss for this position; &lt;1% is not a measured zero.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized NovO-His6 parent construct</td>
+  <td>is_reported_parent_for</td>
+  <td>Sadler NovO-R116K assay preparation</td>
+  <td>The activity table and gel name this mutant, but the inspected SDM primer list does not give its pair. The authors report sequencing mutant genes. Full experimental plasmids were not independently obtained; short peptide models do not establish complete sequence identity. No native accession is assigned.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-R116K assay preparation</td>
+  <td>has_measured_endpoint_in</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>Table 2 reports &lt;1% HPLC area conversion at the stated 24-hour endpoint. No replicate count or uncertainty is supplied; this is not kcat, binding affinity or native precursor turnover. Retain this numeric/censored value despite main prose describing complete loss for this position; &lt;1% is not a measured zero.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized NovO-His6 parent construct</td>
+  <td>is_reported_parent_for</td>
+  <td>Sadler NovO-N117A assay preparation</td>
+  <td>Literal forward 5-prime CTGGTCGTGAGTCGTGCTGCCTTTCACCGTCTGACC; reverse 5-prime GGTCAGACGGTGAAAGGCAGCACGACTCACGACCAG. The reverse-complement pair encodes the named local peptide change. The authors report sequencing mutant genes. Full experimental plasmids were not independently obtained; short peptide models do not establish complete sequence identity. No native accession is assigned.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-N117A assay preparation</td>
+  <td>has_measured_endpoint_in</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>Table 2 reports &lt;1% HPLC area conversion at the stated 24-hour endpoint. No replicate count or uncertainty is supplied; this is not kcat, binding affinity or native precursor turnover. Retain this numeric/censored value despite main prose describing complete loss for this position; &lt;1% is not a measured zero.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized NovO-His6 parent construct</td>
+  <td>is_reported_parent_for</td>
+  <td>Sadler NovO-H120A assayed in cell lysate</td>
+  <td>Literal forward 5-prime GTGAGTCGTAATGCCTTTGCCCGTCTGACCCGCCTG; reverse 5-prime CAGGCGGGTCAGACGGGCAAAGGCATTACGACTCAC. The reverse-complement pair encodes the named local peptide change. The authors report sequencing mutant genes. Full experimental plasmids were not independently obtained; short peptide models do not establish complete sequence identity. No native accession is assigned.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-H120A assayed in cell lysate</td>
+  <td>has_measured_endpoint_in</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>Table 2 reports 0% HPLC area conversion at the stated 24-hour endpoint. No replicate count or uncertainty is supplied; this is not kcat, binding affinity or native precursor turnover. Cell lysate was used because of poor soluble expression, so the 0% result does not isolate catalytic impairment from protein abundance/folding. The purified-enzyme loading cannot be assumed for this lysate.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf<br>https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized NovO-His6 parent construct</td>
+  <td>is_reported_parent_for</td>
+  <td>Sadler NovO-H120N assay preparation</td>
+  <td>Literal forward 5-prime GTGAGTCGTAATGCCTTTAACCGTCTGACCCGCCTG; reverse 5-prime CAGGCGGGTCAGACGGTTAAAGGCATTACGACTCAC. The reverse-complement pair encodes the named local peptide change. The authors report sequencing mutant genes. Full experimental plasmids were not independently obtained; short peptide models do not establish complete sequence identity. No native accession is assigned.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-H120N assay preparation</td>
+  <td>has_measured_endpoint_in</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>Table 2 reports &lt;1% HPLC area conversion at the stated 24-hour endpoint. No replicate count or uncertainty is supplied; this is not kcat, binding affinity or native precursor turnover. Retain this numeric/censored value despite main prose describing complete loss for this position; &lt;1% is not a measured zero.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized NovO-His6 parent construct</td>
+  <td>is_reported_parent_for</td>
+  <td>Sadler NovO-R121L assay preparation</td>
+  <td>Literal forward 5-prime CGTAATGCCTTTCACCTTCTGACCCGCCTGCCG; reverse 5-prime CGGCAGGCGGGTCAGAAGGTGAAAGGCATTACG. The reverse-complement pair encodes the named local peptide change. The authors report sequencing mutant genes. Full experimental plasmids were not independently obtained; short peptide models do not establish complete sequence identity. No native accession is assigned.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-R121L assay preparation</td>
+  <td>has_measured_endpoint_in</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>Table 2 reports &lt;1% HPLC area conversion at the stated 24-hour endpoint. No replicate count or uncertainty is supplied; this is not kcat, binding affinity or native precursor turnover. Retain this numeric/censored value despite main prose describing complete loss for this position; &lt;1% is not a measured zero.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized NovO-His6 parent construct</td>
+  <td>is_reported_parent_for</td>
+  <td>Sadler NovO-R121Q/G108D assay preparation</td>
+  <td>Literal forward 5-prime CGTAATGCCTTTCACCAGCTGACCCGCCTGCCG; reverse 5-prime CGGCAGGCGGGTCAGCTGGTGAAAGGCATTACG. The reverse-complement pair encodes the named local peptide change. The measured row is R121Q/G108D, not a clean R121Q single mutant. The R121Q primer does not encode the remote G108D change; the gel abbreviates the lane R121Q. The actual double mutant is retained as reported. The authors report sequencing mutant genes. Full experimental plasmids were not independently obtained; short peptide models do not establish complete sequence identity. No native accession is assigned.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-R121Q/G108D assay preparation</td>
+  <td>has_measured_endpoint_in</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>Table 2 reports &lt;1% HPLC area conversion at the stated 24-hour endpoint. No replicate count or uncertainty is supplied; this is not kcat, binding affinity or native precursor turnover. Retain this numeric/censored value despite main prose describing complete loss for this position; &lt;1% is not a measured zero.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler codon-optimized NovO-His6 parent construct</td>
+  <td>is_reported_parent_for</td>
+  <td>Sadler NovO-Y216F assay preparation</td>
+  <td>Literal forward 5-prime GTGTGGATCGATGACCAAGGCTTCGGTGTGCCGACGGTT; reverse 5-prime AACCGTCGGCACACCGAAGCCTTGGTCATCGATCCACAC. The reverse-complement pair encodes the named local peptide change. The authors report sequencing mutant genes. Full experimental plasmids were not independently obtained; short peptide models do not establish complete sequence identity. No native accession is assigned.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-Y216F assay preparation</td>
+  <td>has_measured_endpoint_in</td>
+  <td>Twenty-four-hour surrogate methylation assay</td>
+  <td>Table 2 reports 20% HPLC area conversion at the stated 24-hour endpoint. No replicate count or uncertainty is supplied; this is not kcat, binding affinity or native precursor turnover. </td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 10 edges</span></h2>
+<p class="sub">Observed NovO-SAH structure and deposited homodimer are kept distinct from coumarin/SAM docking, substrate-entry and catalytic hypotheses in Sadler 2017. Review #555. PDF locators refer to the 60-page accepted manuscript/SI, not final journal pagination; SI printed pages are seven lower. The cathomycin owner retains its unspecified sugar stereocentre.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited native NovO sequence reference</td>
+  <td>is_core_sequence_reference_for</td>
+  <td>Sadler SeMet-labelled NovO-His6 crystallization preparation</td>
+  <td>The deposited construct is exactly Q9L9F3 residues 1-230 plus C-terminal HHHHHH. The source describes SeMet labelling for phasing; native Q9L9F3 is not the full labelled/tagged preparation.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F3<br>https://files.rcsb.org/download/5MGZ.cif<br>https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler SeMet-labelled NovO-His6 crystallization preparation</td>
+  <td>was_used_for_structure_determination</td>
+  <td>Deposited 5MGZ NovO-SAH structural model</td>
+  <td>The source reports single-wavelength anomalous dispersion with 12 SeMet sites, two protein molecules in the asymmetric unit and 1.9-A resolution. The current 5MGZ coordinate model uses ordinary MET/S atoms and contains no Se atoms. Coordinate atom naming does not negate source-described SeMet phasing or measure labelling occupancy. Both chains model residues 1-230; all six tag residues per chain are unmodeled, not shown to have been cleaved.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf<br>https://files.rcsb.org/download/5MGZ.cif</td>
+</tr>
+<tr>
+  <td>Deposited 5MGZ NovO-SAH structural model</td>
+  <td>has_assigned_biological_assembly</td>
+  <td>Author/PISA-assigned NovO homodimer</td>
+  <td>5MGZ assembly 1 is dimeric, assigned by authors and PISA, with identity-operation chains A/B. This supports the deposited assembly model, not direct native-cell stoichiometry or a newly measured solution equilibrium. The manuscript cites an earlier solution-dimer study; that separate full study was not inspected here.</td>
+  <td class="mono">https://www.rcsb.org/structure/5MGZ<br>https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Deposited 5MGZ NovO-SAH structural model</td>
+  <td>contains_observed_ligand</td>
+  <td>S-Adenosyl-L-homocysteine in 5MGZ</td>
+  <td>Each chain contains one 26-heavy-atom SAH. The deposit also contains glycerol, acetate and water, not a bound coumarin or SAM. SI omit maps describe defined SAH conformations in both chains. The source used 12 mg/mL protein preincubated with 2 mM SAH; soaking/solution concentrations are not binding constants.</td>
+  <td class="mono">https://files.rcsb.org/download/5MGZ.cif<br>https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>S-Adenosyl-L-homocysteine in 5MGZ</td>
+  <td>has_observed_polar_contacts</td>
+  <td>Observed NovO-SAH polar contact geometry</td>
+  <td>Independent coordinate distances in chains A/B are E4-OE1 to SAH-N6 2.978/2.994 A, D96-OD1 to N6 2.832/2.812 A, D70-OD1 to O2-prime 2.688/2.639 A, and R116-NH1 to O 2.782/2.810 A. These support the polar geometry described by Figure 1 and SI Figure S4, not observed proton transfer, SAM chemistry or a coumarin contact.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf<br>https://files.rcsb.org/download/5MGZ.cif</td>
+</tr>
+<tr>
+  <td>Deposited 5MGZ NovO-SAH structural model</td>
+  <td>shows_local_alternate_conformations</td>
+  <td>Chain-A R24 alternate conformations</td>
+  <td>The source emphasizes flexible R24 and illustrates chain A. The deposit has A/B alternate atom locations for chain-A R24 only; chain B has no alternate R24 locations. Alternate locations and B-factors are not direct measurements of a substrate-entry trajectory.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf<br>https://files.rcsb.org/download/5MGZ.cif</td>
+</tr>
+<tr>
+  <td>Chain-A R24 alternate conformations</td>
+  <td>motivates_proposed_gatekeeping</td>
+  <td>Proposed R24 substrate-entry role</td>
+  <td>A substrate-entry role is inferred from location, flexibility and mutagenesis, not directly observed transport through a gate. R24F endpoint impairment does not uniquely establish the route.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Deposited 5MGZ NovO-SAH structural model</td>
+  <td>served_as_template_for</td>
+  <td>MOE-derived coumarin and SAM binding hypothesis</td>
+  <td>Attempts to obtain a coumarin-bound crystal failed. MOE retained SAH, used Protonate3D at pH 7 and selected a docking model partly by coumarin C8 proximity to SAH sulfur. Adding a modeled methyl gave a reported 2.59-A C8 distance and 109-degree orientation. These are modeled values, not contacts measured in 5MGZ.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Synthetic coumarin benzamide docking substrate</td>
+  <td>was_modelled_in</td>
+  <td>MOE-derived coumarin and SAM binding hypothesis</td>
+  <td>The main text and SI model methods name substrate 6, while the SI Figure S7 caption calls it 4a. Preserve that caption-label difference; neither establishes an observed enzyme-substrate or enzyme-product complex. No exact ligand identifier is assigned from the docking picture.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>MOE-derived coumarin and SAM binding hypothesis</td>
+  <td>supports_proposed_catalytic_model</td>
+  <td>Proposed H120/R121-assisted C8 methylation mechanism</td>
+  <td>The authors propose H120 deprotonation of the substrate 7-OH, R121-assisted stabilization/positioning and C8 methyl transfer from SAM. R116/N117, F14 and Y216 roles also derive from docking and mutational effects. These data do not directly observe a proton trajectory or uniquely separate binding, folding and chemistry; the source also allows R116/N117 to stabilize the phenoxide.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 13 edges</span></h2>
+<p class="sub">Two additional NovO lysine variants, the WT comparator and auxiliary SalL in Sadler 2017 pH, substrate-analogue and coupled isotope experiments. Reported measurements remain separate from uncertain scale, substrate-axis identity and mechanistic inference. Review #555. PDF locators refer to the 60-page accepted manuscript/SI, not final journal pagination; SI printed pages are seven lower. The cathomycin owner retains its unspecified sugar stereocentre.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Sadler NovO-His6 WT kinetic comparator</td>
+  <td>was_comparator_in</td>
+  <td>NovO WT and lysine-variant pH comparison</td>
+  <td>Figure 3b compares WT, H120K and R121K over pH 5-8 using benzamide substrate 6. The y-axis is percent conversion, not initial turnover or binding affinity. No per-point numerical table, uncertainty or replicate count is supplied; exact points are not digitized.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-H120K assay preparation</td>
+  <td>has_displayed_pH_response_in</td>
+  <td>NovO WT and lysine-variant pH comparison</td>
+  <td>H120K is a separately named lysine mutant, not H120A or H120N. The source text reports inactivity over pH 5-7; the displayed curve remains near baseline through pH 8. This is an assay-bound result, not a proven functional-null enzyme. The inspected SDM list does not provide H120K primers or an individual preparation gel.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-R121K assay preparation</td>
+  <td>has_displayed_pH_response_in</td>
+  <td>NovO WT and lysine-variant pH comparison</td>
+  <td>The source describes R121K as retaining approximately 20% of WT activity above pH 6.5. This approximation is not a precise kinetic constant or a fitted catalytic pKa. The inspected SDM list does not provide R121K primers or an individual preparation gel.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-His6 WT kinetic comparator</td>
+  <td>was_tested_against</td>
+  <td>Four 7-position substrate-analogue comparisons</td>
+  <td>Replacing the 7-OH of substrate 6 with Cl, NO2, NH2 or OMe (S1-S4) yielded 0% reported conversion in SI Scheme S1 under the 24-h endpoint conditions, versus 98% for substrate 6. These are condition-specific HPLC negatives with no stated detection limit, not universal exclusion of all related substrates.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Sadler NovO-His6 WT kinetic comparator</td>
+  <td>was_used_in</td>
+  <td>SalL-assisted isotope donor-supply assay</td>
+  <td>KIE reactions were run in triplicate at 200 uL: the general recipe lists 0.5 mM substrate 6, 2 mM ClDA, 2.5 mM methionine or isotopic methionine and 0.1 mg/mL SalL in 50 mM phosphate pH 6.5, incubated 2 h at 37 C and 750 rpm. Addition of NovO to 0.5 mg/mL began the methylation phase; aliquots were quenched after 3 min at 97 C for 10 min, then analyzed by HPLC at 320 nm.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>SalL preparation used for coupled donor supply</td>
+  <td>was_used_for_donor_supply_in</td>
+  <td>SalL-assisted isotope donor-supply assay</td>
+  <td>SalL is the named enzyme in the ClDA/methionine preincubation. It is an auxiliary assay protein, not assigned as a native novobiocin BGC component. This source does not supply a full SalL construct sequence; no convenient native accession is substituted for it.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Me-SAM, carbon-13 SAM and deuterated SAM assay conditions</td>
+  <td>define_isotopic_conditions_for</td>
+  <td>SalL-assisted isotope donor-supply assay</td>
+  <td>Methionine, methionine-13C and methionine-d3 supply the three conditions labelled Me-SAM, 13CH3-SAM and CD3-SAM. The supplied precursor concentration is not a direct measurement of generated SAM concentration, purity or stereoisomer composition.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>SalL-assisted isotope donor-supply assay</td>
+  <td>yielded_reported_kinetic_fits</td>
+  <td>Reported apparent kinetic fits with unresolved scale conflict</td>
+  <td>Table 1 gives Km values 43.7 +/- 2.8, 41.6 +/- 5.1 and 52.8 +/- 5.3 uM for Me-SAM/13CH3-SAM/CD3-SAM-labelled conditions, with kcat 2.1e-3 +/- 0.0004, 1.7e-3 +/- 0.0008 and 2.0e-3 +/- 0.0009 s^-1. Nearby prose instead states 20.1e-3, 17.0e-3 and 20.1e-3 s^-1, approximately tenfold higher. Both are preserved as an accepted-manuscript conflict. SI Figure S10 plots initial velocity in nmol/min versus generic substrate concentration in mM; the fixed general recipe does not explain which species was varied. No unique acceptor/donor Km, binding affinity, corrected turnover or uncertainty type is inferred.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Reported apparent kinetic fits with unresolved scale conflict</td>
+  <td>has_reported_primary_isotope_comparison</td>
+  <td>Reported primary carbon-13 kinetic isotope effect</td>
+  <td>The source reports a primary KIE of 1.22 +/- 0.04. It is retained as reported, not recomputed from rounded and inconsistent turnover entries or promoted to a directly observed transition-state structure.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Reported apparent kinetic fits with unresolved scale conflict</td>
+  <td>has_reported_secondary_isotope_comparison</td>
+  <td>Reported nonsignificant secondary isotope effect</td>
+  <td>The reported secondary KIE is 1.03 +/- 0.03 and is explicitly described as not statistically significant. No significance or new confidence interval is manufactured from the rounded table.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Reported primary carbon-13 kinetic isotope effect</td>
+  <td>supports_proposed_rate_limitation</td>
+  <td>Proposed substrate activation and methyl-transfer limitation</td>
+  <td>The authors interpret the primary effect as consistent with rate-limiting methyl transfer and an SN2-like transition state. This is a mechanistic inference from a coupled assay, not direct observation or a uniquely proven microscopic rate-limiting step.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>NovO WT and lysine-variant pH comparison</td>
+  <td>supports_proposed_substrate_activation</td>
+  <td>Proposed substrate activation and methyl-transfer limitation</td>
+  <td>The pH and lysine-substitution patterns are used to propose an H120 base and R121 stabilization role. They do not independently measure residue-specific protonation or eliminate local folding and binding effects.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+<tr>
+  <td>Four 7-position substrate-analogue comparisons</td>
+  <td>supports_proposed_substrate_activation</td>
+  <td>Proposed substrate activation and methyl-transfer limitation</td>
+  <td>The four negative 7-position analogues support the source 7-OH-dependent activation model under these conditions; they do not establish the same chemistry for mature antibiotic or every NovO substrate.</td>
+  <td class="mono">https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

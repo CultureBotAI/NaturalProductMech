@@ -1,0 +1,497 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novo-mutant-endpoints-and-loading-conflict
+  scope: BIOSYNTHESIS
+  description: 'Eleven NovO engineered variants in the Sadler 2017 24-hour benzamide-surrogate
+    assay, with WT and no-MT controls. Lysate, double-mutant identity, censored values,
+    loading conflict and preparative recovery remain explicit. Review #555. PDF locators
+    refer to the 60-page accepted manuscript/SI, not final journal pagination; SI
+    printed pages are seven lower. The cathomycin owner retains its unspecified sugar
+    stereocentre.'
+  nodes:
+  - node_id: construct
+    label: Sadler codon-optimized NovO-His6 parent construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: wt
+    label: Sadler NovO-His6 WT assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Twenty-four-hour surrogate methylation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: substrate
+    label: N-(4,7-Dihydroxy-2-oxo-2H-chromen-3-yl)benzamide
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: C8-methylated benzamide surrogate product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: sam
+    label: S-Adenosyl-L-methionine donor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: control
+    label: No-methyltransferase negative control
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: loading
+    label: Unresolved enzyme-loading units
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: lysate
+    label: Preparative NovO-expressing cell lysate
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: preparative
+    label: Preparative surrogate methylation and isolated recovery
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: f14m
+    label: Sadler NovO-F14M assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: f14l
+    label: Sadler NovO-F14L assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r24f
+    label: Sadler NovO-R24F assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r116l
+    label: Sadler NovO-R116L assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r116k
+    label: Sadler NovO-R116K assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: n117a
+    label: Sadler NovO-N117A assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h120a
+    label: Sadler NovO-H120A assayed in cell lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h120n
+    label: Sadler NovO-H120N assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r121l
+    label: Sadler NovO-R121L assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r121q_g108d
+    label: Sadler NovO-R121Q/G108D assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: y216f
+    label: Sadler NovO-Y216F assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: construct
+    predicate: encodes_engineered_preparation
+    object: wt
+    notes: The source uses a codon-optimized pET26b(+) gene with C-terminal His6.
+      WT means this recombinant assay comparator, not untagged native NovO.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 15, PDF
+        p.34.
+  - subject: wt
+    predicate: has_measured_endpoint_in
+    object: assay
+    notes: Table 2 reports WT 98% conversion after 24 h. This is HPLC area/area% at
+      320 nm, not 98% relative to a 100%-normalized WT, an initial turnover rate or
+      independently calibrated molar conversion. No replicate count or uncertainty
+      accompanies the endpoint table.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 12-13,
+        PDF pp.30-32; main Figure 3a, PDF p.3.
+  - subject: substrate
+    predicate: is_acceptor_for
+    object: assay
+    notes: Substrate 6 is the synthetic benzamide coumarin, not native 8-desmethylnovobiocic
+      acid or mature cathomycin. The assay lists 100 uM acceptor, 2 mM SAM, 0.1 mg/mL
+      BSA, 50 mM sodium phosphate pH 6.5, total 0.5 mL, 35 C and 1000 rpm for 24 h,
+      followed by 80 C for 15 min to quench.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 11-13,
+        PDF pp.30-32.
+  - subject: sam
+    predicate: is_donor_for
+    object: assay
+    notes: SAM is directly supplied at a stated 2 mM in this endpoint assay. Do not
+      transfer SalL-mediated donor-supply methods from the separate KIE assay.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 12, PDF
+        pp.30-31.
+  - subject: assay
+    predicate: forms_source_assigned_product
+    object: product
+    notes: The HPLC product is assigned as N-(4,7-dihydroxy-8-methyl-2-oxo-2H-chromen-3-yl)benzamide
+      (4a). Preparative characterization supports the source assignment but is not
+      a separate structural determination of every mutant endpoint.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 12-14,
+        PDF pp.31-33.
+  - subject: control
+    predicate: has_measured_endpoint_in
+    object: assay
+    notes: The no-MT control is reported as 0% area conversion. This is the source
+      endpoint, not a measured absolute zero or a stated detection limit.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2 and footnote,
+        PDF p.32.
+  - subject: assay
+    predicate: has_unresolved_loading_description
+    object: loading
+    notes: Section 12 reports 250 ug purified enzyme in 0.5 mL and a final 1.9 uM
+      concentration. With the source 26.23-kDa theoretical mass (PDF p.36), the mass/volume
+      implies about 19.06 uM, roughly tenfold higher. Neither value is silently selected
+      as actual loading; no new enzyme-normalized rate is calculated.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 12/17,
+        PDF pp.30-31,36.
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Sadler 2017 accepted manuscript with appended SI; Dimensional mass/volume
+        calculation, not a corrected experiment.
+  - subject: construct
+    predicate: was_expressed_for_lysate_preparation
+    object: lysate
+    notes: The preparative experiment uses E. coli lysate from NovO overexpression,
+      distinct from purified WT in the endpoint comparison.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 14, PDF
+        pp.32-33.
+  - subject: lysate
+    predicate: was_used_in
+    object: preparative
+    notes: The procedure starts with 40 mL lysate, 20 mg substrate and 72 mg SAM,
+      then adds another 72 mg SAM after 24 h and incubates for a further 16 h. It
+      reports 90% HPLC conversion and 14 mg isolated product (67% yield). Conversion
+      and isolated recovery are different readouts, not native antibiotic titers or
+      a WT-versus-mutant comparison.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 14, PDF
+        pp.32-33.
+  - subject: preparative
+    predicate: yielded_characterized_product
+    object: product
+    notes: The source provides proton/carbon NMR and HRMS (calculated [M+H]+ 312.0868,
+      found 312.0866) for the isolated surrogate. No new exact-structure record or
+      independent full spectral assignment is made.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 14, PDF
+        p.33.
+  - subject: construct
+    predicate: is_reported_parent_for
+    object: f14m
+    notes: Literal forward 5-prime GGTTCCGAAGCAGAAGCAATGCACCGCATGGGCTCG; reverse 5-prime
+      CGAGCCCATGCGGTGCATTGCTTCTGCTTCGGAACC. The reverse-complement pair encodes the
+      named local peptide change. The authors report sequencing mutant genes. Full
+      experimental plasmids were not independently obtained; short peptide models
+      do not establish complete sequence identity. No native accession is assigned.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 13/15/17,
+        PDF pp.32-36.
+  - subject: f14m
+    predicate: has_measured_endpoint_in
+    object: assay
+    notes: 'Table 2 reports 19% HPLC area conversion at the stated 24-hour endpoint.
+      No replicate count or uncertainty is supplied; this is not kcat, binding affinity
+      or native precursor turnover. '
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2, PDF p.32;
+        main Figure 3a, PDF p.3.
+  - subject: construct
+    predicate: is_reported_parent_for
+    object: f14l
+    notes: Literal forward 5-prime GGTTCCGAAGCAGAAGCACTCCACCGCATGGGCTCG; reverse 5-prime
+      CGAGCCCATGCGGTGGAGTGCTTCTGCTTCGGAACC. The reverse-complement pair encodes the
+      named local peptide change. The authors report sequencing mutant genes. Full
+      experimental plasmids were not independently obtained; short peptide models
+      do not establish complete sequence identity. No native accession is assigned.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 13/15/17,
+        PDF pp.32-36.
+  - subject: f14l
+    predicate: has_measured_endpoint_in
+    object: assay
+    notes: 'Table 2 reports 30% HPLC area conversion at the stated 24-hour endpoint.
+      No replicate count or uncertainty is supplied; this is not kcat, binding affinity
+      or native precursor turnover. '
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2, PDF p.32;
+        main Figure 3a, PDF p.3.
+  - subject: construct
+    predicate: is_reported_parent_for
+    object: r24f
+    notes: Literal forward 5-prime GGCTCGCAAGCATCGCACUTCTATGACGAATTTGTT; reverse 5-prime
+      AACAAATTCGTCATAGAAGTGCGATGCTTGCGAGCC. The forward primer contains U as printed;
+      it is not silently rewritten as DNA T. The authors report sequencing mutant
+      genes. Full experimental plasmids were not independently obtained; short peptide
+      models do not establish complete sequence identity. No native accession is assigned.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 13/15/17,
+        PDF pp.32-36.
+  - subject: r24f
+    predicate: has_measured_endpoint_in
+    object: assay
+    notes: 'Table 2 reports 15% HPLC area conversion at the stated 24-hour endpoint.
+      No replicate count or uncertainty is supplied; this is not kcat, binding affinity
+      or native precursor turnover. '
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2, PDF p.32;
+        main Figure 3a, PDF p.3.
+  - subject: construct
+    predicate: is_reported_parent_for
+    object: r116l
+    notes: The activity table and gel name this mutant, but the inspected SDM primer
+      list does not give its pair. The authors report sequencing mutant genes. Full
+      experimental plasmids were not independently obtained; short peptide models
+      do not establish complete sequence identity. No native accession is assigned.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 13/15/17,
+        PDF pp.32-36.
+  - subject: r116l
+    predicate: has_measured_endpoint_in
+    object: assay
+    notes: Table 2 reports 1% HPLC area conversion at the stated 24-hour endpoint.
+      No replicate count or uncertainty is supplied; this is not kcat, binding affinity
+      or native precursor turnover. Retain this numeric/censored value despite main
+      prose describing complete loss for this position; <1% is not a measured zero.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2, PDF p.32;
+        main Figure 3a, PDF p.3.
+  - subject: construct
+    predicate: is_reported_parent_for
+    object: r116k
+    notes: The activity table and gel name this mutant, but the inspected SDM primer
+      list does not give its pair. The authors report sequencing mutant genes. Full
+      experimental plasmids were not independently obtained; short peptide models
+      do not establish complete sequence identity. No native accession is assigned.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 13/15/17,
+        PDF pp.32-36.
+  - subject: r116k
+    predicate: has_measured_endpoint_in
+    object: assay
+    notes: Table 2 reports <1% HPLC area conversion at the stated 24-hour endpoint.
+      No replicate count or uncertainty is supplied; this is not kcat, binding affinity
+      or native precursor turnover. Retain this numeric/censored value despite main
+      prose describing complete loss for this position; <1% is not a measured zero.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2, PDF p.32;
+        main Figure 3a, PDF p.3.
+  - subject: construct
+    predicate: is_reported_parent_for
+    object: n117a
+    notes: Literal forward 5-prime CTGGTCGTGAGTCGTGCTGCCTTTCACCGTCTGACC; reverse 5-prime
+      GGTCAGACGGTGAAAGGCAGCACGACTCACGACCAG. The reverse-complement pair encodes the
+      named local peptide change. The authors report sequencing mutant genes. Full
+      experimental plasmids were not independently obtained; short peptide models
+      do not establish complete sequence identity. No native accession is assigned.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 13/15/17,
+        PDF pp.32-36.
+  - subject: n117a
+    predicate: has_measured_endpoint_in
+    object: assay
+    notes: Table 2 reports <1% HPLC area conversion at the stated 24-hour endpoint.
+      No replicate count or uncertainty is supplied; this is not kcat, binding affinity
+      or native precursor turnover. Retain this numeric/censored value despite main
+      prose describing complete loss for this position; <1% is not a measured zero.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2, PDF p.32;
+        main Figure 3a, PDF p.3.
+  - subject: construct
+    predicate: is_reported_parent_for
+    object: h120a
+    notes: Literal forward 5-prime GTGAGTCGTAATGCCTTTGCCCGTCTGACCCGCCTG; reverse 5-prime
+      CAGGCGGGTCAGACGGGCAAAGGCATTACGACTCAC. The reverse-complement pair encodes the
+      named local peptide change. The authors report sequencing mutant genes. Full
+      experimental plasmids were not independently obtained; short peptide models
+      do not establish complete sequence identity. No native accession is assigned.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 13/15/17,
+        PDF pp.32-36.
+  - subject: h120a
+    predicate: has_measured_endpoint_in
+    object: assay
+    notes: Table 2 reports 0% HPLC area conversion at the stated 24-hour endpoint.
+      No replicate count or uncertainty is supplied; this is not kcat, binding affinity
+      or native precursor turnover. Cell lysate was used because of poor soluble expression,
+      so the 0% result does not isolate catalytic impairment from protein abundance/folding.
+      The purified-enzyme loading cannot be assumed for this lysate.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2, PDF p.32;
+        main Figure 3a, PDF p.3.
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2 footnote,
+        PDF p.32.
+      snippet: Cell lysate used
+  - subject: construct
+    predicate: is_reported_parent_for
+    object: h120n
+    notes: Literal forward 5-prime GTGAGTCGTAATGCCTTTAACCGTCTGACCCGCCTG; reverse 5-prime
+      CAGGCGGGTCAGACGGTTAAAGGCATTACGACTCAC. The reverse-complement pair encodes the
+      named local peptide change. The authors report sequencing mutant genes. Full
+      experimental plasmids were not independently obtained; short peptide models
+      do not establish complete sequence identity. No native accession is assigned.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 13/15/17,
+        PDF pp.32-36.
+  - subject: h120n
+    predicate: has_measured_endpoint_in
+    object: assay
+    notes: Table 2 reports <1% HPLC area conversion at the stated 24-hour endpoint.
+      No replicate count or uncertainty is supplied; this is not kcat, binding affinity
+      or native precursor turnover. Retain this numeric/censored value despite main
+      prose describing complete loss for this position; <1% is not a measured zero.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2, PDF p.32;
+        main Figure 3a, PDF p.3.
+  - subject: construct
+    predicate: is_reported_parent_for
+    object: r121l
+    notes: Literal forward 5-prime CGTAATGCCTTTCACCTTCTGACCCGCCTGCCG; reverse 5-prime
+      CGGCAGGCGGGTCAGAAGGTGAAAGGCATTACG. The reverse-complement pair encodes the named
+      local peptide change. The authors report sequencing mutant genes. Full experimental
+      plasmids were not independently obtained; short peptide models do not establish
+      complete sequence identity. No native accession is assigned.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 13/15/17,
+        PDF pp.32-36.
+  - subject: r121l
+    predicate: has_measured_endpoint_in
+    object: assay
+    notes: Table 2 reports <1% HPLC area conversion at the stated 24-hour endpoint.
+      No replicate count or uncertainty is supplied; this is not kcat, binding affinity
+      or native precursor turnover. Retain this numeric/censored value despite main
+      prose describing complete loss for this position; <1% is not a measured zero.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2, PDF p.32;
+        main Figure 3a, PDF p.3.
+  - subject: construct
+    predicate: is_reported_parent_for
+    object: r121q_g108d
+    notes: Literal forward 5-prime CGTAATGCCTTTCACCAGCTGACCCGCCTGCCG; reverse 5-prime
+      CGGCAGGCGGGTCAGCTGGTGAAAGGCATTACG. The reverse-complement pair encodes the named
+      local peptide change. The measured row is R121Q/G108D, not a clean R121Q single
+      mutant. The R121Q primer does not encode the remote G108D change; the gel abbreviates
+      the lane R121Q. The actual double mutant is retained as reported. The authors
+      report sequencing mutant genes. Full experimental plasmids were not independently
+      obtained; short peptide models do not establish complete sequence identity.
+      No native accession is assigned.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 13/15/17,
+        PDF pp.32-36.
+  - subject: r121q_g108d
+    predicate: has_measured_endpoint_in
+    object: assay
+    notes: Table 2 reports <1% HPLC area conversion at the stated 24-hour endpoint.
+      No replicate count or uncertainty is supplied; this is not kcat, binding affinity
+      or native precursor turnover. Retain this numeric/censored value despite main
+      prose describing complete loss for this position; <1% is not a measured zero.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2, PDF p.32;
+        main Figure 3a, PDF p.3.
+  - subject: construct
+    predicate: is_reported_parent_for
+    object: y216f
+    notes: Literal forward 5-prime GTGTGGATCGATGACCAAGGCTTCGGTGTGCCGACGGTT; reverse
+      5-prime AACCGTCGGCACACCGAAGCCTTGGTCATCGATCCACAC. The reverse-complement pair
+      encodes the named local peptide change. The authors report sequencing mutant
+      genes. Full experimental plasmids were not independently obtained; short peptide
+      models do not establish complete sequence identity. No native accession is assigned.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI sections 13/15/17,
+        PDF pp.32-36.
+  - subject: y216f
+    predicate: has_measured_endpoint_in
+    object: assay
+    notes: 'Table 2 reports 20% HPLC area conversion at the stated 24-hour endpoint.
+      No replicate count or uncertainty is supplied; this is not kcat, binding affinity
+      or native precursor turnover. '
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2, PDF p.32;
+        main Figure 3a, PDF p.3.
+curation_history:
+- timestamp: '2026-10-04T19:05:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-novo-mutant-endpoints-and-loading-conflict with bounded
+    primary protein evidence and source conflicts (#555).
+  llm_assisted: true
