@@ -1,0 +1,360 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novjk-native-identities-and-tethered-precursor-oxidation
+  scope: BIOSYNTHESIS
+  description: 'Exact native NovJ/NovK identities and bounded primary evidence for
+    tethered precursor oxidation. Review #562. The cathomycin/BGC0000834 owner retains
+    its unspecified sugar stereocentre and SEEDED status. Precursor and recombinant
+    protein evidence does not resolve that stereocentre or establish an exact-key
+    merge with fully specified novobiocin. Main-paper evidence is abstract-only; the
+    official four-page supplement and native deposits were inspected directly.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: j_gene
+    label: Deposited novJ locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: k_gene
+    label: Deposited novK locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: j_native
+    label: Deposited native NovJ sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F8
+  - node_id: k_native
+    label: Deposited native NovK sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F7
+  - node_id: strain
+    label: Unresolved historical versus experimental strain labels
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: host
+    label: E. coli host reported for the NovJ/NovK preparation
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: j_prep
+    label: Recombinant NovJ constituent of the reported complex
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: k_prep
+    label: Recombinant NovK constituent of the reported complex
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: complex
+    label: Abstract-reported recombinant NovJ2K2 heterotetramer
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: oxidation
+    label: Benzylic oxidation of NovH-tethered beta-hydroxytyrosine
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: substrate
+    label: Beta-hydroxytyrosyl-S-NovH substrate
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: nadp
+    label: NADP electron acceptor
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: tethered
+    label: Beta-ketotyrosyl-S-NovH product
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: release
+    label: Hydrolytic release from the NovH carrier
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: released
+    label: Released labile beta-ketotyrosine analyte
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: identification
+    label: Mass analysis and synthetic-comparator identification
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: conflict
+    label: Conflicting UniProt reaction-direction wording
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: j_gene
+    notes: BGC0000834.5 links this owner to AF170880.4. The novJ CDS is 10983..11771(+),
+      789 nt including stop.
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/go/BGC0000834.5
+      evidence_type: DATABASE_ASSERTION
+      notes: Owner/locus association.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: novJ CDS and source qualifiers.
+  - subject: cluster
+    predicate: contains
+    object: k_gene
+    notes: The novK CDS is 11768..12502(+), 735 nt including stop, in the same deposit.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: novK CDS.
+  - subject: j_gene
+    predicate: encodes_native_reference
+    object: j_native
+    notes: All 262 residues of AAF67503.1 match Q9L9F8 and CDS-aware table-11 translations
+      of AF170880.2/.3/.4. Earlier coordinates are 10931..11719(+). This establishes
+      deposited native sequence identity, not an engineered sample sequence.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current native translation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Intermediate CDS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F8
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2026-01-28, sequence date 2000-10-01;
+        retrieved 2026-10-04. Native sequence and gene annotation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent three-version CDS/deposited/UniProt comparison.
+  - subject: k_gene
+    predicate: encodes_native_reference
+    object: k_native
+    notes: All 244 residues of AAF67504.1 match Q9L9F7 and all three native CDS translations.
+      Earlier coordinates are 11716..12450(+). No tag or engineered sequence is included
+      in this native accession.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current native translation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Intermediate CDS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F7
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2025-04-09, sequence date 2000-10-01;
+        retrieved 2026-10-04. Native sequence and gene annotation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent three-version CDS/deposited/UniProt comparison.
+  - subject: j_native
+    predicate: has_provenance_limit
+    object: strain
+    notes: Current AF170880.4 identifies S. niveus NCIMB 9219. UniProt uses S. niveus/common
+      S. spheroides, taxon 193462, but retains historical reference strain comments
+      including ATCC 23965 and NCIMB 11891. SI p.3 instead prints ATCC26935. No synonymy,
+      typographical repair or uniquely identified experimental isolate is inferred.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current source strain.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F8
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2026-01-28, sequence date 2000-10-01;
+        retrieved 2026-10-04. Organism and reference strain comments.
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, genomic-DNA source label.
+  - subject: k_native
+    predicate: shares_provenance_limit
+    object: strain
+    notes: NovK has the same current-versus-historical metadata boundary. The matching
+      native sequences do not resolve which complete engineered preparation was used
+      for each published experiment.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current source strain.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F7
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2025-04-09, sequence date 2000-10-01;
+        retrieved 2026-10-04. Organism/reference strain comments.
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, source and individual constructs.
+  - subject: j_gene
+    predicate: is_named_source_of
+    object: j_prep
+    notes: The abstract identifies recombinant NovJ in the purified joint preparation;
+      it does not establish separate soluble purification, tag, full fusion sequence
+      or exact isolate for this constituent.
+    evidence:
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Reaction and preparation
+        report. Main article methods/results were not obtained; the four-page SI was
+        inspected separately.
+  - subject: k_gene
+    predicate: is_named_source_of
+    object: k_prep
+    notes: Recombinant NovK is the other named constituent. Individual-construct SI
+      tag labels are not transferred to the main preparation.
+    evidence:
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Reaction and preparation
+        report. Main article methods/results were not obtained; the four-page SI was
+        inspected separately.
+  - subject: host
+    predicate: was_expression_host_for
+    object: complex
+    notes: The joint preparation was expressed in and purified from E. coli. The inspected
+      abstract does not supply host strain, yield or purity.
+    evidence:
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Reaction and preparation
+        report. Main article methods/results were not obtained; the four-page SI was
+        inspected separately.
+  - subject: j_prep
+    predicate: is_reported_constituent_of
+    object: complex
+    notes: The paper reports J2K2, hence two NovJ subunits in its assigned assembly.
+      This is source-reported stoichiometry, not an independent mass or interface
+      determination.
+    evidence:
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Reaction and preparation
+        report. Main article methods/results were not obtained; the four-page SI was
+        inspected separately.
+  - subject: k_prep
+    predicate: is_reported_constituent_of
+    object: complex
+    notes: The same reported assembly contains two NovK subunits. The native UniProt
+      accession is not an identifier for the whole complex.
+    evidence:
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Reaction and preparation
+        report. Main article methods/results were not obtained; the four-page SI was
+        inspected separately.
+  - subject: complex
+    predicate: catalyzes
+    object: oxidation
+    notes: The reaction oxidizes the tethered tyrosyl beta-alcohol. It is not demonstration
+      of free-tyrosine oxidation, spontaneous ring closure or mature natural-product
+      synthesis.
+    evidence:
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Reaction and preparation
+        report. Main article methods/results were not obtained; the four-page SI was
+        inspected separately.
+  - subject: substrate
+    predicate: is_substrate_for
+    object: oxidation
+    notes: The substrate remains a phosphopantetheinyl thioester on NovH. No exact
+      NovH tag, sequence version or preparation is inferred here.
+    evidence:
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Reaction and preparation
+        report. Main article methods/results were not obtained; the four-page SI was
+        inspected separately.
+  - subject: nadp
+    predicate: is_electron_acceptor_for
+    object: oxidation
+    notes: The primary source specifies oxidized NADP as electron acceptor, not NADPH
+      as reducing cosubstrate. Concentrations and cofactor specificity panels were
+      not obtained.
+    evidence:
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Reaction direction
+        and cofactor. Main article methods/results were not obtained; the four-page
+        SI was inspected separately.
+      snippet: NADP as an electron acceptor
+  - subject: oxidation
+    predicate: forms
+    object: tethered
+    notes: The assigned product is beta-ketotyrosyl-S-NovH; no separate experimentally
+      established cyclase is added from this abstract.
+    evidence:
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Reaction and preparation
+        report. Main article methods/results were not obtained; the four-page SI was
+        inspected separately.
+  - subject: tethered
+    predicate: was_subject_to
+    object: release
+    notes: The source reports hydrolysis to analyze the carrier-bound moiety. Hydrolysis
+      conditions and recovery yield remain uninspected.
+    evidence:
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Reaction and preparation
+        report. Main article methods/results were not obtained; the four-page SI was
+        inspected separately.
+  - subject: release
+    predicate: released
+    object: released
+    notes: The analyte is labile beta-ketotyrosine, not an independently grounded
+      mature aminocoumarin structure.
+    evidence:
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Reaction and preparation
+        report. Main article methods/results were not obtained; the four-page SI was
+        inspected separately.
+  - subject: released
+    predicate: was_identified_by
+    object: identification
+    notes: Mass spectroscopy and a synthetic comparator support the product assignment.
+      No uninspected m/z, chromatographic trace or uncertainty is newly asserted.
+    evidence:
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Product identification.
+        Main article methods/results were not obtained; the four-page SI was inspected
+        separately.
+      snippet: comparison with a synthetic sample
+  - subject: conflict
+    predicate: must_not_reverse
+    object: oxidation
+    notes: Both inspected UniProt function paragraphs describe NADPH-dependent reduction
+      while naming a beta-keto product. The directly inspected primary abstract instead
+      reports NADP-dependent oxidation. Preserve the discrepancy; do not create a
+      second demonstrated reverse reaction.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F8
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2026-01-28, sequence date 2000-10-01;
+        retrieved 2026-10-04. Conflicting FUNCTION wording.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F7
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2025-04-09, sequence date 2000-10-01;
+        retrieved 2026-10-04. Conflicting FUNCTION wording.
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Explicit oxidation/electron-acceptor
+        statement. Main article methods/results were not obtained; the four-page SI
+        was inspected separately.
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: CURATOR_INFERENCE
+      notes: Comparison of primary wording with current database annotations.
+curation_history:
+- timestamp: '2026-10-04T23:33:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novjk-native-identities-and-tethered-precursor-oxidation
+    with bounded NovJ/NovK evidence and #562 review findings.'
+  llm_assisted: true

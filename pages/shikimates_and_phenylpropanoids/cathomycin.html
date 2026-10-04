@@ -3085,6 +3085,429 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">18 nodes, 19 edges</span></h2>
+<p class="sub">Exact native NovJ/NovK identities and bounded primary evidence for tethered precursor oxidation. Review #562. The cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre and SEEDED status. Precursor and recombinant protein evidence does not resolve that stereocentre or establish an exact-key merge with fully specified novobiocin. Main-paper evidence is abstract-only; the official four-page supplement and native deposits were inspected directly.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited novobiocin cluster underlying the cathomycin owner</td>
+  <td>contains</td>
+  <td>Deposited novJ locus</td>
+  <td>BGC0000834.5 links this owner to AF170880.4. The novJ CDS is 10983..11771(+), 789 nt including stop.</td>
+  <td class="mono">https://mibig.secondarymetabolites.org/go/BGC0000834.5<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novobiocin cluster underlying the cathomycin owner</td>
+  <td>contains</td>
+  <td>Deposited novK locus</td>
+  <td>The novK CDS is 11768..12502(+), 735 nt including stop, in the same deposit.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novJ locus</td>
+  <td>encodes_native_reference</td>
+  <td>Deposited native NovJ sequence reference</td>
+  <td>All 262 residues of AAF67503.1 match Q9L9F8 and CDS-aware table-11 translations of AF170880.2/.3/.4. Earlier coordinates are 10931..11719(+). This establishes deposited native sequence identity, not an engineered sample sequence.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3<br>https://www.uniprot.org/uniprotkb/Q9L9F8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novK locus</td>
+  <td>encodes_native_reference</td>
+  <td>Deposited native NovK sequence reference</td>
+  <td>All 244 residues of AAF67504.1 match Q9L9F7 and all three native CDS translations. Earlier coordinates are 11716..12450(+). No tag or engineered sequence is included in this native accession.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3<br>https://www.uniprot.org/uniprotkb/Q9L9F7<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited native NovJ sequence reference</td>
+  <td>has_provenance_limit</td>
+  <td>Unresolved historical versus experimental strain labels</td>
+  <td>Current AF170880.4 identifies S. niveus NCIMB 9219. UniProt uses S. niveus/common S. spheroides, taxon 193462, but retains historical reference strain comments including ATCC 23965 and NCIMB 11891. SI p.3 instead prints ATCC26935. No synonymy, typographical repair or uniquely identified experimental isolate is inferred.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.uniprot.org/uniprotkb/Q9L9F8<br>DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>Deposited native NovK sequence reference</td>
+  <td>shares_provenance_limit</td>
+  <td>Unresolved historical versus experimental strain labels</td>
+  <td>NovK has the same current-versus-historical metadata boundary. The matching native sequences do not resolve which complete engineered preparation was used for each published experiment.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.uniprot.org/uniprotkb/Q9L9F7<br>DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>Deposited novJ locus</td>
+  <td>is_named_source_of</td>
+  <td>Recombinant NovJ constituent of the reported complex</td>
+  <td>The abstract identifies recombinant NovJ in the purified joint preparation; it does not establish separate soluble purification, tag, full fusion sequence or exact isolate for this constituent.</td>
+  <td class="mono">DOI:10.1021/bi051297m</td>
+</tr>
+<tr>
+  <td>Deposited novK locus</td>
+  <td>is_named_source_of</td>
+  <td>Recombinant NovK constituent of the reported complex</td>
+  <td>Recombinant NovK is the other named constituent. Individual-construct SI tag labels are not transferred to the main preparation.</td>
+  <td class="mono">DOI:10.1021/bi051297m</td>
+</tr>
+<tr>
+  <td>E. coli host reported for the NovJ/NovK preparation</td>
+  <td>was_expression_host_for</td>
+  <td>Abstract-reported recombinant NovJ2K2 heterotetramer</td>
+  <td>The joint preparation was expressed in and purified from E. coli. The inspected abstract does not supply host strain, yield or purity.</td>
+  <td class="mono">DOI:10.1021/bi051297m</td>
+</tr>
+<tr>
+  <td>Recombinant NovJ constituent of the reported complex</td>
+  <td>is_reported_constituent_of</td>
+  <td>Abstract-reported recombinant NovJ2K2 heterotetramer</td>
+  <td>The paper reports J2K2, hence two NovJ subunits in its assigned assembly. This is source-reported stoichiometry, not an independent mass or interface determination.</td>
+  <td class="mono">DOI:10.1021/bi051297m</td>
+</tr>
+<tr>
+  <td>Recombinant NovK constituent of the reported complex</td>
+  <td>is_reported_constituent_of</td>
+  <td>Abstract-reported recombinant NovJ2K2 heterotetramer</td>
+  <td>The same reported assembly contains two NovK subunits. The native UniProt accession is not an identifier for the whole complex.</td>
+  <td class="mono">DOI:10.1021/bi051297m</td>
+</tr>
+<tr>
+  <td>Abstract-reported recombinant NovJ2K2 heterotetramer</td>
+  <td>catalyzes</td>
+  <td>Benzylic oxidation of NovH-tethered beta-hydroxytyrosine</td>
+  <td>The reaction oxidizes the tethered tyrosyl beta-alcohol. It is not demonstration of free-tyrosine oxidation, spontaneous ring closure or mature natural-product synthesis.</td>
+  <td class="mono">DOI:10.1021/bi051297m</td>
+</tr>
+<tr>
+  <td>Beta-hydroxytyrosyl-S-NovH substrate</td>
+  <td>is_substrate_for</td>
+  <td>Benzylic oxidation of NovH-tethered beta-hydroxytyrosine</td>
+  <td>The substrate remains a phosphopantetheinyl thioester on NovH. No exact NovH tag, sequence version or preparation is inferred here.</td>
+  <td class="mono">DOI:10.1021/bi051297m</td>
+</tr>
+<tr>
+  <td>NADP electron acceptor</td>
+  <td>is_electron_acceptor_for</td>
+  <td>Benzylic oxidation of NovH-tethered beta-hydroxytyrosine</td>
+  <td>The primary source specifies oxidized NADP as electron acceptor, not NADPH as reducing cosubstrate. Concentrations and cofactor specificity panels were not obtained.</td>
+  <td class="mono">DOI:10.1021/bi051297m</td>
+</tr>
+<tr>
+  <td>Benzylic oxidation of NovH-tethered beta-hydroxytyrosine</td>
+  <td>forms</td>
+  <td>Beta-ketotyrosyl-S-NovH product</td>
+  <td>The assigned product is beta-ketotyrosyl-S-NovH; no separate experimentally established cyclase is added from this abstract.</td>
+  <td class="mono">DOI:10.1021/bi051297m</td>
+</tr>
+<tr>
+  <td>Beta-ketotyrosyl-S-NovH product</td>
+  <td>was_subject_to</td>
+  <td>Hydrolytic release from the NovH carrier</td>
+  <td>The source reports hydrolysis to analyze the carrier-bound moiety. Hydrolysis conditions and recovery yield remain uninspected.</td>
+  <td class="mono">DOI:10.1021/bi051297m</td>
+</tr>
+<tr>
+  <td>Hydrolytic release from the NovH carrier</td>
+  <td>released</td>
+  <td>Released labile beta-ketotyrosine analyte</td>
+  <td>The analyte is labile beta-ketotyrosine, not an independently grounded mature aminocoumarin structure.</td>
+  <td class="mono">DOI:10.1021/bi051297m</td>
+</tr>
+<tr>
+  <td>Released labile beta-ketotyrosine analyte</td>
+  <td>was_identified_by</td>
+  <td>Mass analysis and synthetic-comparator identification</td>
+  <td>Mass spectroscopy and a synthetic comparator support the product assignment. No uninspected m/z, chromatographic trace or uncertainty is newly asserted.</td>
+  <td class="mono">DOI:10.1021/bi051297m</td>
+</tr>
+<tr>
+  <td>Conflicting UniProt reaction-direction wording</td>
+  <td>must_not_reverse</td>
+  <td>Benzylic oxidation of NovH-tethered beta-hydroxytyrosine</td>
+  <td>Both inspected UniProt function paragraphs describe NADPH-dependent reduction while naming a beta-keto product. The directly inspected primary abstract instead reports NADP-dependent oxidation. Preserve the discrepancy; do not create a second demonstrated reverse reaction.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F8<br>https://www.uniprot.org/uniprotkb/Q9L9F7<br>DOI:10.1021/bi051297m<br>DOI:10.1021/bi051297m</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 20 edges</span></h2>
+<p class="sub">Four reported individual NovJ/NovK constructs, intended tagged products and bounded primer/solubility evidence. Review #562. The cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre and SEEDED status. Precursor and recombinant protein evidence does not resolve that stereocentre or establish an exact-key merge with fully specified novobiocin. Main-paper evidence is abstract-only; the official four-page supplement and native deposits were inspected directly.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>SI-labeled S. spheroides ATCC26935 DNA source</td>
+  <td>was_reported_dna_source_for</td>
+  <td>pNovJ-N-pET16b DNA construct</td>
+  <td>The SI reports genomic PCR with Pfu Turbo for pNovJ-N-pET16b. ATCC26935 is retained literally, without silently changing it to ATCC 23965 or NCIMB 9219.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>pNovJ-N-pET16b DNA construct</td>
+  <td>specifies_intended_tagged_product</td>
+  <td>Intended N-terminal His10 NovJ product</td>
+  <td>The reported N-terminal His10 architecture is a construct description, not a fully sequenced fusion or proof of successful soluble protein recovery. No native UniProt accession is assigned to it.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>pNovJ-N-pET16b DNA construct</td>
+  <td>was_screened_in</td>
+  <td>Individual-construct solubility screening</td>
+  <td>This is one of the four individually expressed constructs named in the small-scale solubility screen, not necessarily the construct used for the reported joint complex.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>Deposited native NovJ sequence reference</td>
+  <td>is_sequence_reference_for</td>
+  <td>pNovJ-N-pET16b DNA construct</td>
+  <td>The literal novJ-1/novJ-2 model against AF170880.2/.3/.4 gives an 816-nt PCR product including a 12-nt forward tail, preserves the stop codon, and preserves the 262-aa native core. No corrected restriction site, complete vector junction or experimental fusion sequence is invented.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.uniprot.org/uniprotkb/Q9L9F8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>NovJ primer versus restriction-method discrepancy</td>
+  <td>limits_reconstruction_of</td>
+  <td>pNovJ-N-pET16b DNA construct</td>
+  <td>The printed NovJ reverse primer contains TTCGAA (BstBI), not AAGCTT (HindIII). Its complete literal PCR model lacks HindIII although the prose reports NdeI/HindIII digestion. This is a source inconsistency, not evidence that the reported construct never existed.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>SI-labeled S. spheroides ATCC26935 DNA source</td>
+  <td>was_reported_dna_source_for</td>
+  <td>pNovJ-C-pET37b DNA construct</td>
+  <td>The SI reports genomic PCR with Pfu Turbo for pNovJ-C-pET37b. ATCC26935 is retained literally, without silently changing it to ATCC 23965 or NCIMB 9219.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>pNovJ-C-pET37b DNA construct</td>
+  <td>specifies_intended_tagged_product</td>
+  <td>Intended C-terminal His8 NovJ product</td>
+  <td>The reported C-terminal His8 architecture is a construct description, not a fully sequenced fusion or proof of successful soluble protein recovery. No native UniProt accession is assigned to it.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>pNovJ-C-pET37b DNA construct</td>
+  <td>was_screened_in</td>
+  <td>Individual-construct solubility screening</td>
+  <td>This is one of the four individually expressed constructs named in the small-scale solubility screen, not necessarily the construct used for the reported joint complex.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>Deposited native NovJ sequence reference</td>
+  <td>is_sequence_reference_for</td>
+  <td>pNovJ-C-pET37b DNA construct</td>
+  <td>The literal novJ-1/novJ-3 model against AF170880.2/.3/.4 gives an 816-nt PCR product including a 12-nt forward tail, omits the native stop codon, and preserves the 262-aa native core. No corrected restriction site, complete vector junction or experimental fusion sequence is invented.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.uniprot.org/uniprotkb/Q9L9F8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>NovJ primer versus restriction-method discrepancy</td>
+  <td>limits_reconstruction_of</td>
+  <td>pNovJ-C-pET37b DNA construct</td>
+  <td>The printed NovJ reverse primer contains TTCGAA (BstBI), not AAGCTT (HindIII). Its complete literal PCR model lacks HindIII although the prose reports NdeI/HindIII digestion. This is a source inconsistency, not evidence that the reported construct never existed.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>SI-labeled S. spheroides ATCC26935 DNA source</td>
+  <td>was_reported_dna_source_for</td>
+  <td>pNovK-N-pET16b DNA construct</td>
+  <td>The SI reports genomic PCR with Pfu Turbo for pNovK-N-pET16b. ATCC26935 is retained literally, without silently changing it to ATCC 23965 or NCIMB 9219.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>pNovK-N-pET16b DNA construct</td>
+  <td>specifies_intended_tagged_product</td>
+  <td>Intended N-terminal His10 NovK product</td>
+  <td>The reported N-terminal His10 architecture is a construct description, not a fully sequenced fusion or proof of successful soluble protein recovery. No native UniProt accession is assigned to it.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>pNovK-N-pET16b DNA construct</td>
+  <td>was_screened_in</td>
+  <td>Individual-construct solubility screening</td>
+  <td>This is one of the four individually expressed constructs named in the small-scale solubility screen, not necessarily the construct used for the reported joint complex.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>Deposited native NovK sequence reference</td>
+  <td>is_sequence_reference_for</td>
+  <td>pNovK-N-pET16b DNA construct</td>
+  <td>The literal novK-1/novK-2 model gives 759 nt including the 15-nt forward tail and retains the native stop. Both reverse primers change CDS nucleotide 726 C to T, recoding Arg242 CGC to CGT without changing the 244-aa protein core. NdeI/HindIII sites are present; a complete vector fusion or processed terminus is not established.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.uniprot.org/uniprotkb/Q9L9F7<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>SI-labeled S. spheroides ATCC26935 DNA source</td>
+  <td>was_reported_dna_source_for</td>
+  <td>pNovK-C-pET37b DNA construct</td>
+  <td>The SI reports genomic PCR with Pfu Turbo for pNovK-C-pET37b. ATCC26935 is retained literally, without silently changing it to ATCC 23965 or NCIMB 9219.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>pNovK-C-pET37b DNA construct</td>
+  <td>specifies_intended_tagged_product</td>
+  <td>Intended C-terminal His8 NovK product</td>
+  <td>The reported C-terminal His8 architecture is a construct description, not a fully sequenced fusion or proof of successful soluble protein recovery. No native UniProt accession is assigned to it.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>pNovK-C-pET37b DNA construct</td>
+  <td>was_screened_in</td>
+  <td>Individual-construct solubility screening</td>
+  <td>This is one of the four individually expressed constructs named in the small-scale solubility screen, not necessarily the construct used for the reported joint complex.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>Deposited native NovK sequence reference</td>
+  <td>is_sequence_reference_for</td>
+  <td>pNovK-C-pET37b DNA construct</td>
+  <td>The literal novK-1/novK-3 model gives 756 nt including the 15-nt forward tail and omits the native stop. Both reverse primers change CDS nucleotide 726 C to T, recoding Arg242 CGC to CGT without changing the 244-aa protein core. NdeI/HindIII sites are present; a complete vector fusion or processed terminus is not established.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.uniprot.org/uniprotkb/Q9L9F7<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>E. coli BL21(DE3) expression-screen host</td>
+  <td>was_used_for</td>
+  <td>Individual-construct solubility screening</td>
+  <td>The SI reports BL21(DE3), LB with 50 ug/mL kanamycin for pET37b and pET28b or 100 ug/mL ampicillin for pET16b. The four named individual constructs were screened at 37, 30, 25 and 16 C with and without IPTG. Mention of pET28b does not supply an additional fully described individual construct here.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>Individual-construct solubility screening</td>
+  <td>does_not_establish</td>
+  <td>Unresolved fusion sequence and positive-expression outcomes</td>
+  <td>The stated aim is to find soluble-expression conditions; the inspected SI does not report a successful condition, yield, purity or activity for each individual construct. Induction dose/time and complete plasmid sequences also remain uninspected. A screening design is not a positive protein-production measurement.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 8 edges</span></h2>
+<p class="sub">Source-reported J2K2 assembly and three directly inspected concentration-labeled SEC traces. Review #562. The cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre and SEEDED status. Precursor and recombinant protein evidence does not resolve that stereocentre or establish an exact-key merge with fully specified novobiocin. Main-paper evidence is abstract-only; the official four-page supplement and native deposits were inspected directly.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>NovJ/NovK sample used for supporting gel-filtration traces</td>
+  <td>was_analyzed_by</td>
+  <td>Analytical gel filtration of NovJ/NovK samples</td>
+  <td>Supporting Figures 1-3 plot analytical gel-filtration absorbance against retention volume. The four SI pages do not identify a complete sample sequence, unique tag combination, buffer, column or mass-calibration method for these traces.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>NovJ/NovK sample used for supporting gel-filtration traces</td>
+  <td>has_study_level_assembly_context</td>
+  <td>Separately reported J2K2 assembly assignment</td>
+  <td>The main abstract separately reports purification as a J2K2 heterotetramer. This does not identify every SEC peak or establish that the individual SI constructs are the same assayed preparation.</td>
+  <td class="mono">DOI:10.1021/bi051297m<br>DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>Analytical gel filtration of NovJ/NovK samples</td>
+  <td>has_concentration_labeled_trace</td>
+  <td>Trace labeled [J], [K] = 155 uM</td>
+  <td>Figure 1 labels both [J] and [K] as 155 uM, not total tetramer concentration. The plot has early and later absorbance peaks; the red pseudo-Gaussian overlay fits the later peak rather than the entire trace. No exact peak area or fitted retention volume is extracted from the raster.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>Trace labeled [J], [K] = 155 uM</td>
+  <td>constrains_assembly_interpretation</td>
+  <td>Limits of independent assembly inference</td>
+  <td>The panels use different plotting scales and provide no fit parameter table, uncertainty or replicate information. These plots alone do not establish a binding constant, unique molecular mass, monomer-versus-aggregate assignment or native in-cell stoichiometry.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>Analytical gel filtration of NovJ/NovK samples</td>
+  <td>has_concentration_labeled_trace</td>
+  <td>Trace labeled [J], [K] = 22.5 uM</td>
+  <td>Figure 2 labels both [J] and [K] as 22.5 uM, not total tetramer concentration. The plot has early and later absorbance peaks; the red pseudo-Gaussian overlay fits the later peak rather than the entire trace. No exact peak area or fitted retention volume is extracted from the raster.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>Trace labeled [J], [K] = 22.5 uM</td>
+  <td>constrains_assembly_interpretation</td>
+  <td>Limits of independent assembly inference</td>
+  <td>The panels use different plotting scales and provide no fit parameter table, uncertainty or replicate information. These plots alone do not establish a binding constant, unique molecular mass, monomer-versus-aggregate assignment or native in-cell stoichiometry.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>Analytical gel filtration of NovJ/NovK samples</td>
+  <td>has_concentration_labeled_trace</td>
+  <td>Trace labeled [J], [K] = 2.5 uM</td>
+  <td>Figure 3 labels both [J] and [K] as 2.5 uM, not total tetramer concentration. The plot has early and later absorbance peaks; the red pseudo-Gaussian overlay fits the later peak rather than the entire trace. No exact peak area or fitted retention volume is extracted from the raster.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+<tr>
+  <td>Trace labeled [J], [K] = 2.5 uM</td>
+  <td>constrains_assembly_interpretation</td>
+  <td>Limits of independent assembly inference</td>
+  <td>The panels use different plotting scales and provide no fit parameter table, uncertainty or replicate information. These plots alone do not establish a binding constant, unique molecular mass, monomer-versus-aggregate assignment or native in-cell stoichiometry.</td>
+  <td class="mono">DOI:10.1021/bi051297m.s001</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">10 nodes, 10 edges</span></h2>
+<p class="sub">Three database-described engineered NovJ variants and subunit/residue annotations, explicitly not primary-panel reanalysis. Review #562. The cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre and SEEDED status. Precursor and recombinant protein evidence does not resolve that stereocentre or establish an exact-key merge with fully specified novobiocin. Main-paper evidence is abstract-only; the official four-page supplement and native deposits were inspected directly.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native NovJ reference for database annotations</td>
+  <td>is_annotated_catalytic_subunit_of</td>
+  <td>Database-annotated NovJ2K2 complex</td>
+  <td>UniProt assigns NovJ the catalytic-subunit role in the heterotetramer. This edge cites the database as such; it does not claim a newly inspected isolated-subunit activity assay.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F8</td>
+</tr>
+<tr>
+  <td>Native NovK reference for database annotations</td>
+  <td>is_annotated_noncatalytic_subunit_of</td>
+  <td>Database-annotated NovJ2K2 complex</td>
+  <td>UniProt assigns NovK the non-catalytic-subunit role. That annotation does not mean the protein is dispensable, or establish inactivity in every untested condition.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F7</td>
+</tr>
+<tr>
+  <td>Native NovJ reference for database annotations</td>
+  <td>is_sequence_reference_for_variant</td>
+  <td>Database-described engineered NovJ S152A</td>
+  <td>The Q9L9F8 mutagenesis feature specifies S152A and cites PMID 16171397. The indicated original residue agrees with the 262-aa deposited sequence. Native Q9L9F8 is not assigned as the engineered protein identifier; tag, partner preparation and complete construct remain unresolved.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Database-described engineered NovJ S152A</td>
+  <td>has_database_reported_outcome</td>
+  <td>Database-reported lower beta-ketotyrosine product formation</td>
+  <td>The database describes a 2-3-fold decrease in beta-ketotyrosine product formation, not a directly re-extracted kcat or binding affinity. Quantitative assay conditions, loading, replicate count and uncertainty were not independently obtained.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F8</td>
+</tr>
+<tr>
+  <td>Native NovJ reference for database annotations</td>
+  <td>is_sequence_reference_for_variant</td>
+  <td>Database-described engineered NovJ Y164F</td>
+  <td>The Q9L9F8 mutagenesis feature specifies Y164F and cites PMID 16171397. The indicated original residue agrees with the 262-aa deposited sequence. Native Q9L9F8 is not assigned as the engineered protein identifier; tag, partner preparation and complete construct remain unresolved.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Database-described engineered NovJ Y164F</td>
+  <td>has_database_reported_outcome</td>
+  <td>Database-reported lower catalytic activity</td>
+  <td>The database describes a 50-fold activity reduction. The primary abstract also mentions a 50-fold effect but does not name the residue, so the Y164F identity remains a database assertion, not an independently read primary panel. Quantitative assay conditions, loading, replicate count and uncertainty were not independently obtained.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F8</td>
+</tr>
+<tr>
+  <td>Native NovJ reference for database annotations</td>
+  <td>is_sequence_reference_for_variant</td>
+  <td>Database-described engineered NovJ K168I</td>
+  <td>The Q9L9F8 mutagenesis feature specifies K168I and cites PMID 16171397. The indicated original residue agrees with the 262-aa deposited sequence. Native Q9L9F8 is not assigned as the engineered protein identifier; tag, partner preparation and complete construct remain unresolved.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Database-described engineered NovJ K168I</td>
+  <td>has_database_reported_outcome</td>
+  <td>Database-reported unchanged catalytic turnover</td>
+  <td>The database describes no alteration of catalytic turnover. Without the full primary panel this is not a demonstrated equivalence bound, unchanged substrate affinity or universal absence of a phenotype. Quantitative assay conditions, loading, replicate count and uncertainty were not independently obtained.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F8</td>
+</tr>
+<tr>
+  <td>Native NovJ reference for database annotations</td>
+  <td>has_annotation_evidence_limits</td>
+  <td>Database residue annotations without independently inspected primary panels</td>
+  <td>NovJ Tyr164 proton-acceptor and Ser152 substrate-binding annotations use ECO:0000305; NADP-binding positions 23-26, 73-74 and 164-168 use ECO:0000250. These are not newly observed atomic contacts. The primary mutant panel and a relevant experimental structure were not inspected.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F8</td>
+</tr>
+<tr>
+  <td>Native NovK reference for database annotations</td>
+  <td>has_annotation_evidence_limits</td>
+  <td>Database residue annotations without independently inspected primary panels</td>
+  <td>NovK NADP-binding positions 9-12, 59-60 and 154-158 carry ECO:0000250 similarity evidence. Do not convert them into measured binding constants or structural contacts.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F7</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

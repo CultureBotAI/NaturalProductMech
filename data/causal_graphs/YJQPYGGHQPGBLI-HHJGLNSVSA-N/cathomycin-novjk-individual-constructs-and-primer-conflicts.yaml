@@ -1,0 +1,356 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novjk-individual-constructs-and-primer-conflicts
+  scope: BIOSYNTHESIS
+  description: 'Four reported individual NovJ/NovK constructs, intended tagged products
+    and bounded primer/solubility evidence. Review #562. The cathomycin/BGC0000834
+    owner retains its unspecified sugar stereocentre and SEEDED status. Precursor
+    and recombinant protein evidence does not resolve that stereocentre or establish
+    an exact-key merge with fully specified novobiocin. Main-paper evidence is abstract-only;
+    the official four-page supplement and native deposits were inspected directly.'
+  nodes:
+  - node_id: source
+    label: SI-labeled S. spheroides ATCC26935 DNA source
+    node_type: ORGANISM
+    grounding_status: REVIEW_NEEDED
+  - node_id: j_native
+    label: Deposited native NovJ sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F8
+  - node_id: k_native
+    label: Deposited native NovK sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F7
+  - node_id: host
+    label: E. coli BL21(DE3) expression-screen host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: screen
+    label: Individual-construct solubility screening
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: restriction
+    label: NovJ primer versus restriction-method discrepancy
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: limits
+    label: Unresolved fusion sequence and positive-expression outcomes
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: jn
+    label: pNovJ-N-pET16b DNA construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: jn_protein
+    label: Intended N-terminal His10 NovJ product
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: jc
+    label: pNovJ-C-pET37b DNA construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: jc_protein
+    label: Intended C-terminal His8 NovJ product
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: kn
+    label: pNovK-N-pET16b DNA construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: kn_protein
+    label: Intended N-terminal His10 NovK product
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: kc
+    label: pNovK-C-pET37b DNA construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: kc_protein
+    label: Intended C-terminal His8 NovK product
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: source
+    predicate: was_reported_dna_source_for
+    object: jn
+    notes: The SI reports genomic PCR with Pfu Turbo for pNovJ-N-pET16b. ATCC26935
+      is retained literally, without silently changing it to ATCC 23965 or NCIMB 9219.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, cloning methods.
+  - subject: jn
+    predicate: specifies_intended_tagged_product
+    object: jn_protein
+    notes: The reported N-terminal His10 architecture is a construct description,
+      not a fully sequenced fusion or proof of successful soluble protein recovery.
+      No native UniProt accession is assigned to it.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, vector and tag assignments.
+  - subject: jn
+    predicate: was_screened_in
+    object: screen
+    notes: This is one of the four individually expressed constructs named in the
+      small-scale solubility screen, not necessarily the construct used for the reported
+      joint complex.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. pp.3-4, individual-construct overexpression.
+  - subject: j_native
+    predicate: is_sequence_reference_for
+    object: jn
+    notes: The literal novJ-1/novJ-2 model against AF170880.2/.3/.4 gives an 816-nt
+      PCR product including a 12-nt forward tail, preserves the stop codon, and preserves
+      the 262-aa native core. No corrected restriction site, complete vector junction
+      or experimental fusion sequence is invented.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, visually checked literal primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Native novJ CDS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F8
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2026-01-28, sequence date 2000-10-01;
+        retrieved 2026-10-04. Native sequence reference only.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer/CDS model.
+  - subject: restriction
+    predicate: limits_reconstruction_of
+    object: jn
+    notes: The printed NovJ reverse primer contains TTCGAA (BstBI), not AAGCTT (HindIII).
+      Its complete literal PCR model lacks HindIII although the prose reports NdeI/HindIII
+      digestion. This is a source inconsistency, not evidence that the reported construct
+      never existed.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, underlined sites and digestion methods.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal restriction-site scan; no corrected vector is inferred.
+  - subject: source
+    predicate: was_reported_dna_source_for
+    object: jc
+    notes: The SI reports genomic PCR with Pfu Turbo for pNovJ-C-pET37b. ATCC26935
+      is retained literally, without silently changing it to ATCC 23965 or NCIMB 9219.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, cloning methods.
+  - subject: jc
+    predicate: specifies_intended_tagged_product
+    object: jc_protein
+    notes: The reported C-terminal His8 architecture is a construct description, not
+      a fully sequenced fusion or proof of successful soluble protein recovery. No
+      native UniProt accession is assigned to it.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, vector and tag assignments.
+  - subject: jc
+    predicate: was_screened_in
+    object: screen
+    notes: This is one of the four individually expressed constructs named in the
+      small-scale solubility screen, not necessarily the construct used for the reported
+      joint complex.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. pp.3-4, individual-construct overexpression.
+  - subject: j_native
+    predicate: is_sequence_reference_for
+    object: jc
+    notes: The literal novJ-1/novJ-3 model against AF170880.2/.3/.4 gives an 816-nt
+      PCR product including a 12-nt forward tail, omits the native stop codon, and
+      preserves the 262-aa native core. No corrected restriction site, complete vector
+      junction or experimental fusion sequence is invented.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, visually checked literal primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Native novJ CDS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F8
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2026-01-28, sequence date 2000-10-01;
+        retrieved 2026-10-04. Native sequence reference only.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer/CDS model.
+  - subject: restriction
+    predicate: limits_reconstruction_of
+    object: jc
+    notes: The printed NovJ reverse primer contains TTCGAA (BstBI), not AAGCTT (HindIII).
+      Its complete literal PCR model lacks HindIII although the prose reports NdeI/HindIII
+      digestion. This is a source inconsistency, not evidence that the reported construct
+      never existed.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, underlined sites and digestion methods.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal restriction-site scan; no corrected vector is inferred.
+  - subject: source
+    predicate: was_reported_dna_source_for
+    object: kn
+    notes: The SI reports genomic PCR with Pfu Turbo for pNovK-N-pET16b. ATCC26935
+      is retained literally, without silently changing it to ATCC 23965 or NCIMB 9219.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, cloning methods.
+  - subject: kn
+    predicate: specifies_intended_tagged_product
+    object: kn_protein
+    notes: The reported N-terminal His10 architecture is a construct description,
+      not a fully sequenced fusion or proof of successful soluble protein recovery.
+      No native UniProt accession is assigned to it.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, vector and tag assignments.
+  - subject: kn
+    predicate: was_screened_in
+    object: screen
+    notes: This is one of the four individually expressed constructs named in the
+      small-scale solubility screen, not necessarily the construct used for the reported
+      joint complex.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. pp.3-4, individual-construct overexpression.
+  - subject: k_native
+    predicate: is_sequence_reference_for
+    object: kn
+    notes: The literal novK-1/novK-2 model gives 759 nt including the 15-nt forward
+      tail and retains the native stop. Both reverse primers change CDS nucleotide
+      726 C to T, recoding Arg242 CGC to CGT without changing the 244-aa protein core.
+      NdeI/HindIII sites are present; a complete vector fusion or processed terminus
+      is not established.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, visually checked literal primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Native novK CDS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F7
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2025-04-09, sequence date 2000-10-01;
+        retrieved 2026-10-04. Native sequence reference only.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Three-version primer/restriction/translation model.
+  - subject: source
+    predicate: was_reported_dna_source_for
+    object: kc
+    notes: The SI reports genomic PCR with Pfu Turbo for pNovK-C-pET37b. ATCC26935
+      is retained literally, without silently changing it to ATCC 23965 or NCIMB 9219.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, cloning methods.
+  - subject: kc
+    predicate: specifies_intended_tagged_product
+    object: kc_protein
+    notes: The reported C-terminal His8 architecture is a construct description, not
+      a fully sequenced fusion or proof of successful soluble protein recovery. No
+      native UniProt accession is assigned to it.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, vector and tag assignments.
+  - subject: kc
+    predicate: was_screened_in
+    object: screen
+    notes: This is one of the four individually expressed constructs named in the
+      small-scale solubility screen, not necessarily the construct used for the reported
+      joint complex.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. pp.3-4, individual-construct overexpression.
+  - subject: k_native
+    predicate: is_sequence_reference_for
+    object: kc
+    notes: The literal novK-1/novK-3 model gives 756 nt including the 15-nt forward
+      tail and omits the native stop. Both reverse primers change CDS nucleotide 726
+      C to T, recoding Arg242 CGC to CGT without changing the 244-aa protein core.
+      NdeI/HindIII sites are present; a complete vector fusion or processed terminus
+      is not established.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.3, visually checked literal primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Native novK CDS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F7
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2025-04-09, sequence date 2000-10-01;
+        retrieved 2026-10-04. Native sequence reference only.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Three-version primer/restriction/translation model.
+  - subject: host
+    predicate: was_used_for
+    object: screen
+    notes: The SI reports BL21(DE3), LB with 50 ug/mL kanamycin for pET37b and pET28b
+      or 100 ug/mL ampicillin for pET16b. The four named individual constructs were
+      screened at 37, 30, 25 and 16 C with and without IPTG. Mention of pET28b does
+      not supply an additional fully described individual construct here.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. pp.3-4, expression-screen methods.
+  - subject: screen
+    predicate: does_not_establish
+    object: limits
+    notes: The stated aim is to find soluble-expression conditions; the inspected
+      SI does not report a successful condition, yield, purity or activity for each
+      individual construct. Induction dose/time and complete plasmid sequences also
+      remain uninspected. A screening design is not a positive protein-production
+      measurement.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.4, aim of the expression screen.
+      snippet: in order to find suitable conditions
+curation_history:
+- timestamp: '2026-10-04T23:33:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novjk-individual-constructs-and-primer-conflicts with bounded
+    NovJ/NovK evidence and #562 review findings.'
+  llm_assisted: true

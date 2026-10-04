@@ -698,6 +698,10 @@ causal_graph_refs:
 - cathomycin-novhi-2011-novh-construct-and-host-preparations
 - cathomycin-novhi-novh-kinetics-and-model-limits
 - cathomycin-novhi-mbth-partner-identities-and-cross-activation
+- cathomycin-novjk-native-identities-and-tethered-precursor-oxidation
+- cathomycin-novjk-individual-constructs-and-primer-conflicts
+- cathomycin-novjk-reported-assembly-and-sec-interpretation-limits
+- cathomycin-novjk-database-mutants-and-residue-evidence-limits
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -763,4 +767,13 @@ curation_history:
     and computational models; four heterologous MbtH partners. Preserve length/tag/strain
     ambiguities, prior graphs, source fields, chemical identity and SEEDED status
     (#561).'
+  llm_assisted: true
+- timestamp: '2026-10-04T23:33:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add four NovJ/NovK components: native identities and tethered-precursor
+    oxidation; four individual constructs and primer conflicts; reported assembly
+    and SEC limits; three database-described NovJ variants. Preserve reaction/strain
+    conflicts, primary-versus-database evidence, prior graphs, source fields, chemical
+    identity, histories and SEEDED status (#562).'
   llm_assisted: true
