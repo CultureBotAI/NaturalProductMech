@@ -407,6 +407,10 @@ causal_graphs:
     - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
       evidence_type: PRIMARY_EXPERIMENT
       notes: Panel text and Figure 13, PDF pp.91-93.
+causal_graph_refs:
+- clorobiocin-cloq-variant-constructs-and-preparations
+- clorobiocin-cloq-mutant-activities-and-substrate-kinetics
+- clorobiocin-cloq-structures-and-mechanistic-limits
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -456,4 +460,13 @@ curation_history:
     DMAHB is 100% for CloL/NovL, while CouL uses its genuine pyrrole acid. Tightened
     the construct-method page locators; no topology or activity value changed (review
     #548).'
+  llm_assisted: true
+- timestamp: '2026-10-04T17:51:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add three exact-owner CloQ components for eleven engineered variants, preparation/CD
+    limits, mutant activities, WT substrate-conditioned fits and four structural states.
+    Preserve literal-primer/source discrepancies, conditional inactivity, thiohemiketal
+    context, hypothetical donor/base roles and alternative assembly assignments. Earlier
+    native pathway/CloL graphs, source fields and SEEDED status remain unchanged (#553).
   llm_assisted: true

@@ -211,6 +211,577 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">20 nodes, 37 edges</span></h2>
+<p class="sub">Eleven CloQ engineered proteins from Metzger 2010, with native identity, literal-primer reconstructions, preparation measurements and limited folding controls (review #553). The native reaction is already curated and is not duplicated. Q8GHB2 denotes the native 324-aa protein, not a mutant, tag-bearing precursor or GSH-scar preparation. The thesis reports sequencing, but complete experimental plasmids were not independently obtained. All thesis page locators are PDF pages, twelve above printed pages.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native cloQ locus</td>
+  <td>encodes_native_protein</td>
+  <td>Native CloQ sequence reference</td>
+  <td>AF329398.1 cloQ/AAN65239.1 is CDS 31832..32806(+), 975 nt including stop. CDS-aware table-11 translation exactly matches the deposited protein and Q8GHB2, 324 aa. UniProt taxon 149682 is subspecies-level; the owner/BGC strain taxon 1352936 is DS 12.976, a resolution difference rather than a sequence mismatch.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://www.uniprot.org/uniprotkb/Q8GHB2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Native CloQ sequence reference</td>
+  <td>is_core_sequence_reference_for</td>
+  <td>pET28_CloQ-derived WT comparator</td>
+  <td>The native protein is distinct from the recombinant WT comparator. The crystallized WT deposit contains GSH before the 324-aa native core after thrombin cleavage; this is not a native N terminus. The precise experimental aliquot used for each kinetic determination was not independently sequenced.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://files.rcsb.org/download/2XLQ.cif</td>
+</tr>
+<tr>
+  <td>pET28_CloQ parental DNA construct</td>
+  <td>was_expression_construct_for</td>
+  <td>pET28_CloQ-derived WT comparator</td>
+  <td>The source uses the Keller pET28_CloQ construct, also written pET28a_CloQ in the plasmid table. His-tag removal is demonstrated for the crystallization preparation; neither construct spelling identifies a separate native protein.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>pET28_CloQ parental DNA construct</td>
+  <td>was_reported_template_for</td>
+  <td>CloQ site-directed construct preparation</td>
+  <td>QuikChange-style PCR followed by DpnI digestion, E. coli transformation and reported plasmid sequencing generated the panel. Most constructs use pET28_CloQ; pUM34 has conflicting pUM32/pUM33 template descriptions, retained on its own edge. Literal-primer models are reconstructed native cores, not verified complete experimental plasmids.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ site-directed construct preparation</td>
+  <td>generated_expression_construct_for</td>
+  <td>CloQ-C215S engineered protein (pUM28)</td>
+  <td>pUM28 is the reported C215S expression construct. Forward primer 5-prime ATGCCCGAGGACTACTCCGTCGCCATCACCCTC; reverse primer 5-prime GAGGGTGATGGCGACGGAGTAGTCCTCGGGCAT. The pair is exactly reverse-complementary and has a unique near-match at the expected native-CDS position. The literal native-CDS primer model gives the intended C215S change and otherwise preserves the native core.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloQ-C215S engineered protein (pUM28)</td>
+  <td>has_reported_preparation_in</td>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>Table 3.2 reports 5.0 mg purified protein per L culture and final concentration 11.3 mg/mL for pUM28. A280 quantification used 1.3 L/g/cm. These are recovered-protein measurements, not cellular expression rates or clorobiocin yields.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ site-directed construct preparation</td>
+  <td>generated_expression_construct_for</td>
+  <td>CloQ-C215A engineered protein (pUM29)</td>
+  <td>pUM29 is the reported C215A expression construct. Forward primer 5-prime ATGCCCGAGGACTACGCCGTCGCCATCACCCTC; reverse primer 5-prime GAGGGTGATGGCGACGGCGTAGTCCTCGGGCAT. The pair is exactly reverse-complementary and has a unique near-match at the expected native-CDS position. The literal native-CDS primer model gives the intended C215A change and otherwise preserves the native core.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloQ-C215A engineered protein (pUM29)</td>
+  <td>has_reported_preparation_in</td>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>Table 3.2 reports 3.0 mg purified protein per L culture and final concentration 6.7 mg/mL for pUM29. A280 quantification used 1.3 L/g/cm. These are recovered-protein measurements, not cellular expression rates or clorobiocin yields.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ site-directed construct preparation</td>
+  <td>generated_expression_construct_for</td>
+  <td>CloQ-E281G engineered protein (pUM32)</td>
+  <td>pUM32 is the reported E281G expression construct. Forward primer 5-prime GACTACGTCAAGGCCGGCCGCAGCTACACCGGC; reverse primer 5-prime GCCGGTGTAGCTGCGGCCGGCCTTGACGTAGTC. The pair is exactly reverse-complementary and has a unique near-match at the expected native-CDS position. The literal native-CDS primer model gives the intended E281G change and otherwise preserves the native core.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloQ-E281G engineered protein (pUM32)</td>
+  <td>has_reported_preparation_in</td>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>Table 3.2 reports 3.7 mg purified protein per L culture and final concentration 12.2 mg/mL for pUM32. A280 quantification used 1.3 L/g/cm. These are recovered-protein measurements, not cellular expression rates or clorobiocin yields.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ site-directed construct preparation</td>
+  <td>generated_expression_construct_for</td>
+  <td>CloQ-R160A engineered protein (pUM35)</td>
+  <td>pUM35 is the reported R160A expression construct. Forward primer 5-prime GGCCTGGCACACGTCGCGTTCGCAGCGGTGGATTGG; reverse primer 5-prime CCAATCCACCGCTGCGAACGCGACGTGTGCCAGGCC. The pair is exactly reverse-complementary and has a unique near-match at the expected native-CDS position. The literal native-CDS primer model gives the intended R160A change and otherwise preserves the native core.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloQ-R160A engineered protein (pUM35)</td>
+  <td>has_reported_preparation_in</td>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>Table 3.2 reports 54 mg purified protein per L culture and final concentration 9.1 mg/mL for pUM35. A280 quantification used 1.3 L/g/cm. These are recovered-protein measurements, not cellular expression rates or clorobiocin yields. This row used purchased competent cells, unlike the in-house competent cells used for the other variants; the larger recovery cannot be attributed to the substitution alone.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ site-directed construct preparation</td>
+  <td>generated_expression_construct_for</td>
+  <td>CloQ-R160Q engineered protein (pUM36)</td>
+  <td>pUM36 is the reported R160Q expression construct. Forward primer 5-prime GGCCTGGCACACGTCCAGTTCGCAGCGGTGGATTGG; reverse primer 5-prime CCAATCCACCGCTGCGAACTGGACGTGTGCCAGGCC. The pair is exactly reverse-complementary and has a unique near-match at the expected native-CDS position. The literal native-CDS primer model gives the intended R160Q change and otherwise preserves the native core.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloQ-R160Q engineered protein (pUM36)</td>
+  <td>has_reported_preparation_in</td>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>Table 3.2 reports 7.0 mg purified protein per L culture and final concentration 3.5 mg/mL for pUM36. A280 quantification used 1.3 L/g/cm. These are recovered-protein measurements, not cellular expression rates or clorobiocin yields.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ site-directed construct preparation</td>
+  <td>generated_expression_construct_for</td>
+  <td>CloQ-R66S engineered protein (pUM31)</td>
+  <td>pUM31 is the reported R66S expression construct. Forward primer 5-prime GATCAACTGTCGTACTCGTTCTTCTCCCGCCTC; reverse primer 5-prime GAGGCGGGAGAAGAACGAGTACGACAGTTGATC. The pair is exactly reverse-complementary and has a unique near-match at the expected native-CDS position. The literal native-CDS primer model gives the intended R66S change and otherwise preserves the native core.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloQ-R66S engineered protein (pUM31)</td>
+  <td>has_reported_preparation_in</td>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>Table 3.2 reports 3.3 mg purified protein per L culture and final concentration 7.5 mg/mL for pUM31. A280 quantification used 1.3 L/g/cm. These are recovered-protein measurements, not cellular expression rates or clorobiocin yields.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ site-directed construct preparation</td>
+  <td>generated_expression_construct_for</td>
+  <td>CloQ-K54S engineered protein (pUM37)</td>
+  <td>pUM37 is the reported K54S expression construct. Forward primer 5-prime GGCGCCACCTTATGGAGCACCACCAGTCAGCCTGG; reverse primer 5-prime CCAGGCTGACTGGTGGTGCTCCATAAGGTGGCGCC. The pair is exactly reverse-complementary and has a unique near-match at the expected native-CDS position. The literal native-CDS primer model gives the intended K54S change and otherwise preserves the native core.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloQ-K54S engineered protein (pUM37)</td>
+  <td>has_reported_preparation_in</td>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>Table 3.2 reports 40 mg purified protein per L culture and final concentration 3.5 mg/mL for pUM37. A280 quantification used 1.3 L/g/cm. These are recovered-protein measurements, not cellular expression rates or clorobiocin yields. This row used purchased competent cells, unlike the in-house competent cells used for the other variants; the larger recovery cannot be attributed to the substitution alone.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ site-directed construct preparation</td>
+  <td>generated_expression_construct_for</td>
+  <td>CloQ-E290stop engineered protein (pUM44)</td>
+  <td>pUM44 is the reported E290stop expression construct. Forward primer 5-prime CCGGCAACATGGCCTGAATCCTGGCCGGCTGG; reverse primer 5-prime CCAGCCGGCCAGGATTCAGGCCATGTTGCCGG. The pair is exactly reverse-complementary and has a unique near-match at the expected native-CDS position. The literal primer introduces a stop at native codon 290, predicting residues 1-289 and loss of 35 of the 324 native residues. Results prose instead reports removal of 37 residues. This conflict is not resolved by assuming the actual sample sequence equals the model; tag/scar residues are separate.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloQ-E290stop engineered protein (pUM44)</td>
+  <td>has_reported_preparation_in</td>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>Table 3.2 reports 0.2 mg purified protein per L culture and final concentration 2.0 mg/mL for pUM44. A280 quantification used 1.3 L/g/cm. These are recovered-protein measurements, not cellular expression rates or clorobiocin yields. Expression and purification were impaired. Additional anion-exchange chromatography was required and residual contamination was accepted; inactivity is not an isolated test of substrate access through the barrel end.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ site-directed construct preparation</td>
+  <td>generated_expression_construct_for</td>
+  <td>CloQ-F68S engineered protein (pUM30)</td>
+  <td>pUM30 is the reported F68S expression construct. Forward primer 5-prime CTGTCGTACCGGTTCTCCTCCCGCCTCAAGATG; reverse primer 5-prime CATCTTGAGGCGGGAGGAGAACCGGTACGACAG. The pair is exactly reverse-complementary and has a unique near-match at the expected native-CDS position. The literal native-CDS primer model gives the intended F68S change and otherwise preserves the native core.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloQ-F68S engineered protein (pUM30)</td>
+  <td>has_reported_preparation_in</td>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>Table 3.2 reports 5.0 mg purified protein per L culture and final concentration 8.3 mg/mL for pUM30. A280 quantification used 1.3 L/g/cm. These are recovered-protein measurements, not cellular expression rates or clorobiocin yields.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ site-directed construct preparation</td>
+  <td>generated_expression_construct_for</td>
+  <td>CloQ-R66S+F68S engineered protein (pUM33)</td>
+  <td>pUM33 is the reported R66S+F68S expression construct. Forward primer 5-prime GATCAACTGTCGTACTCGTTCTCCTCCCGCCTC; reverse primer 5-prime GAGGCGGGAGGAGAACGAGTACGACAGTTGATC. The pair is exactly reverse-complementary and has a unique near-match at the expected native-CDS position. The literal native-CDS primer model gives the intended R66S+F68S change and otherwise preserves the native core.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloQ-R66S+F68S engineered protein (pUM33)</td>
+  <td>has_reported_preparation_in</td>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>Table 3.2 reports 4.5 mg purified protein per L culture and final concentration 7.2 mg/mL for pUM33. A280 quantification used 1.3 L/g/cm. These are recovered-protein measurements, not cellular expression rates or clorobiocin yields.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ site-directed construct preparation</td>
+  <td>generated_expression_construct_for</td>
+  <td>CloQ-R66S+F68S+E281G engineered protein (pUM34)</td>
+  <td>pUM34 is the reported R66S+F68S+E281G expression construct. Forward primer 5-prime GATCAACTGTCGTACTCGTTCTCCTCCCGCCTC; reverse primer 5-prime GAGGCGGGAGGAGAACGAGTACGACAGTTGATC. The pair is exactly reverse-complementary and has a unique near-match at the expected native-CDS position. The plasmid table states pUM32 (E281G) with the R66S/F68S primers; results prose instead states pUM33. Applying these primers to the pUM32 native-core model yields R66S/F68S/E281G; applying them alone to the pUM33 double model does not introduce E281G. The source names a triple mutant, but its complete experimental construction remains unresolved.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloQ-R66S+F68S+E281G engineered protein (pUM34)</td>
+  <td>has_reported_preparation_in</td>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>Table 3.2 reports 10.0 mg purified protein per L culture and final concentration 10.7 mg/mL for pUM34. A280 quantification used 1.3 L/g/cm. These are recovered-protein measurements, not cellular expression rates or clorobiocin yields.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>pET28_CloQ-derived WT comparator</td>
+  <td>has_reported_preparation_in</td>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>WT crystallization preparation yielded 8.3 mg/L culture at 8.3 mg/mL. SDS-PAGE shows induction, soluble protein, tag cleavage and final material (Figure 3.10, including a 15-ug final lane). A280 coefficients were 1.2 L/g/cm with His tag and 1.3 without it. Trace impurities are described, not a quantified purity percentage.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>E. coli BL21(DE3)pLysS expression host</td>
+  <td>was_used_in</td>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>The 1-L TB culture was grown to OD600 0.6, cooled to 20 C, induced with 1 mM IPTG for the CloQ enzymes, and incubated six hours at 20 C/250 rpm. IMAC was followed by 0.1 U thrombin per mg protein during 15 h dialysis at 4 C, benzamidine/Ni-NTA removal of thrombin/tag, and Superdex 200. Final NaCl was adjusted to 50 mM and aliquots stored at -70 C. These are the crystallization/all-CloQ-mutant methods, not the separate tag-retaining NovL/CouL-chimera workflow.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ expression, tag cleavage and purification workflow</td>
+  <td>has_reported_solution_check</td>
+  <td>Reported solution homogeneity and monomer interpretation</td>
+  <td>The source interprets the WT and mutant preparations as homogeneous monomeric enzymes from dynamic light scattering, with E290stop explicitly exceptional for impaired preparation and contamination. Methods use filtered samples and at least 15 readings; full per-variant size distributions and independent biological replicates are not supplied here. This is not proof of native cellular stoichiometry, particularly not a purity certification of E290stop.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>pET28_CloQ-derived WT comparator</td>
+  <td>was_in_displayed_cd_comparison</td>
+  <td>Displayed CD comparison for WT and seven CloQ mutants</td>
+  <td>Figure 3.12 displays WT, R66S, F68S, C215S, C215A, E281G, R66S/F68S and R66S/F68S/E281G. Similar spectral shape supports a limited secondary-structure comparison, not identical folding at every site. R160A, R160Q, K54S and E290stop are not displayed. Methods specify 0.5 mg/mL protein in 20 mM phosphate pH 8 and a 190-260 nm scan; the caption says 250-190 nm. No unmeasured variant receives a CD folding control.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-C215S engineered protein (pUM28)</td>
+  <td>was_in_displayed_cd_comparison</td>
+  <td>Displayed CD comparison for WT and seven CloQ mutants</td>
+  <td>Figure 3.12 displays WT, R66S, F68S, C215S, C215A, E281G, R66S/F68S and R66S/F68S/E281G. Similar spectral shape supports a limited secondary-structure comparison, not identical folding at every site. R160A, R160Q, K54S and E290stop are not displayed. Methods specify 0.5 mg/mL protein in 20 mM phosphate pH 8 and a 190-260 nm scan; the caption says 250-190 nm. No unmeasured variant receives a CD folding control.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-C215A engineered protein (pUM29)</td>
+  <td>was_in_displayed_cd_comparison</td>
+  <td>Displayed CD comparison for WT and seven CloQ mutants</td>
+  <td>Figure 3.12 displays WT, R66S, F68S, C215S, C215A, E281G, R66S/F68S and R66S/F68S/E281G. Similar spectral shape supports a limited secondary-structure comparison, not identical folding at every site. R160A, R160Q, K54S and E290stop are not displayed. Methods specify 0.5 mg/mL protein in 20 mM phosphate pH 8 and a 190-260 nm scan; the caption says 250-190 nm. No unmeasured variant receives a CD folding control.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-E281G engineered protein (pUM32)</td>
+  <td>was_in_displayed_cd_comparison</td>
+  <td>Displayed CD comparison for WT and seven CloQ mutants</td>
+  <td>Figure 3.12 displays WT, R66S, F68S, C215S, C215A, E281G, R66S/F68S and R66S/F68S/E281G. Similar spectral shape supports a limited secondary-structure comparison, not identical folding at every site. R160A, R160Q, K54S and E290stop are not displayed. Methods specify 0.5 mg/mL protein in 20 mM phosphate pH 8 and a 190-260 nm scan; the caption says 250-190 nm. No unmeasured variant receives a CD folding control.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-R66S engineered protein (pUM31)</td>
+  <td>was_in_displayed_cd_comparison</td>
+  <td>Displayed CD comparison for WT and seven CloQ mutants</td>
+  <td>Figure 3.12 displays WT, R66S, F68S, C215S, C215A, E281G, R66S/F68S and R66S/F68S/E281G. Similar spectral shape supports a limited secondary-structure comparison, not identical folding at every site. R160A, R160Q, K54S and E290stop are not displayed. Methods specify 0.5 mg/mL protein in 20 mM phosphate pH 8 and a 190-260 nm scan; the caption says 250-190 nm. No unmeasured variant receives a CD folding control.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-F68S engineered protein (pUM30)</td>
+  <td>was_in_displayed_cd_comparison</td>
+  <td>Displayed CD comparison for WT and seven CloQ mutants</td>
+  <td>Figure 3.12 displays WT, R66S, F68S, C215S, C215A, E281G, R66S/F68S and R66S/F68S/E281G. Similar spectral shape supports a limited secondary-structure comparison, not identical folding at every site. R160A, R160Q, K54S and E290stop are not displayed. Methods specify 0.5 mg/mL protein in 20 mM phosphate pH 8 and a 190-260 nm scan; the caption says 250-190 nm. No unmeasured variant receives a CD folding control.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-R66S+F68S engineered protein (pUM33)</td>
+  <td>was_in_displayed_cd_comparison</td>
+  <td>Displayed CD comparison for WT and seven CloQ mutants</td>
+  <td>Figure 3.12 displays WT, R66S, F68S, C215S, C215A, E281G, R66S/F68S and R66S/F68S/E281G. Similar spectral shape supports a limited secondary-structure comparison, not identical folding at every site. R160A, R160Q, K54S and E290stop are not displayed. Methods specify 0.5 mg/mL protein in 20 mM phosphate pH 8 and a 190-260 nm scan; the caption says 250-190 nm. No unmeasured variant receives a CD folding control.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-R66S+F68S+E281G engineered protein (pUM34)</td>
+  <td>was_in_displayed_cd_comparison</td>
+  <td>Displayed CD comparison for WT and seven CloQ mutants</td>
+  <td>Figure 3.12 displays WT, R66S, F68S, C215S, C215A, E281G, R66S/F68S and R66S/F68S/E281G. Similar spectral shape supports a limited secondary-structure comparison, not identical folding at every site. R160A, R160Q, K54S and E290stop are not displayed. Methods specify 0.5 mg/mL protein in 20 mM phosphate pH 8 and a 190-260 nm scan; the caption says 250-190 nm. No unmeasured variant receives a CD folding control.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">24 nodes, 24 edges</span></h2>
+<p class="sub">CloQ WT and eleven mutant activity comparisons, with separate WT substrate-conditioned kinetic fits and endpoint product checks from Metzger 2010 (review #553). All measurements concern recombinant enzyme assays, not native clorobiocin production or each mutant binding a donor in a crystal. WT/variant preparations remain distinct from native Q8GHB2. PDF pages are twelve above printed pages.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>pET28_CloQ-derived WT comparator</td>
+  <td>was_reference_preparation_in</td>
+  <td>CloQ mutant PPi-coupled specific-activity panel</td>
+  <td>The coupled assay used 200 uL, 75 mM Tris-HCl pH 7.5, 2.5 mM MgCl2, 0.5 mM 4-HPP and 0.5 mM DMAPP or GPP, plus 66.7 uL PPi reagent prepared in 4 mL water. Following five minutes preincubation at 30 C, enzyme started a 15-minute NADH trace at 340 nm. Four coupling reactions oxidize two mol NADH per mol PPi, with extinction coefficient 6.22 mM^-1 cm^-1. The reported mutant loads vary from 5 to 50 ug according to activity; individual loads and an exact WT panel load are not assigned here. PPi-coupled rates are not direct structural identification of every product. MgCl2 was supplied despite CloQ being characterized as Mg-independent elsewhere.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-C215S engineered protein (pUM28)</td>
+  <td>has_reported_activity_in</td>
+  <td>CloQ mutant PPi-coupled specific-activity panel</td>
+  <td>Source text reports 36% increased activity over WT with 4-HPP/DMAPP; the bar plot is consistent with retained or increased activity. GPP was not separately tested for this mutant in Figure 3.20. Figure 3.20 has no supplied error-bar definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-C215A engineered protein (pUM29)</td>
+  <td>has_reported_activity_in</td>
+  <td>CloQ mutant PPi-coupled specific-activity panel</td>
+  <td>Source text reports 13% increased activity over WT with 4-HPP/DMAPP; the bar plot is consistent with retained or increased activity. GPP was not separately tested for this mutant in Figure 3.20. Figure 3.20 has no supplied error-bar definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-E281G engineered protein (pUM32)</td>
+  <td>has_reported_activity_in</td>
+  <td>CloQ mutant PPi-coupled specific-activity panel</td>
+  <td>The source describes almost no activity with 4-HPP/DMAPP. The small plotted signal is not replaced by an exact zero. GPP was not separately tested for this mutant in Figure 3.20. Figure 3.20 has no supplied error-bar definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-R160A engineered protein (pUM35)</td>
+  <td>has_reported_activity_in</td>
+  <td>CloQ mutant PPi-coupled specific-activity panel</td>
+  <td>The source reports approximately 20% residual WT activity with 4-HPP/DMAPP. GPP was not separately tested for this mutant in Figure 3.20. Figure 3.20 has no supplied error-bar definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-R160Q engineered protein (pUM36)</td>
+  <td>has_reported_activity_in</td>
+  <td>CloQ mutant PPi-coupled specific-activity panel</td>
+  <td>The source reports approximately 20% residual WT activity with 4-HPP/DMAPP. GPP was not separately tested for this mutant in Figure 3.20. Figure 3.20 has no supplied error-bar definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-R66S engineered protein (pUM31)</td>
+  <td>has_reported_activity_in</td>
+  <td>CloQ mutant PPi-coupled specific-activity panel</td>
+  <td>The source reports a 98% decrease relative to WT with 4-HPP/DMAPP. This is not a 98% loss of measured DMAPP binding affinity. GPP was not separately tested for this mutant in Figure 3.20. Figure 3.20 has no supplied error-bar definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-K54S engineered protein (pUM37)</td>
+  <td>has_reported_activity_in</td>
+  <td>CloQ mutant PPi-coupled specific-activity panel</td>
+  <td>Source-described loss of activity applies to the supplied 4-HPP/DMAPP conditions. There is no stated quantitative detection threshold or displayed K54S CD spectrum. GPP was not separately tested for this mutant in Figure 3.20. Figure 3.20 has no supplied error-bar definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-E290stop engineered protein (pUM44)</td>
+  <td>has_reported_activity_in</td>
+  <td>CloQ mutant PPi-coupled specific-activity panel</td>
+  <td>The truncated preparation is source-described as inactive with 4-HPP/DMAPP. Its recovery, purity, absent displayed CD and 35-versus-37-residue truncation discrepancy prevent attributing this solely to a barrel-access effect. GPP was not separately tested for this mutant in Figure 3.20. Figure 3.20 has no supplied error-bar definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-F68S engineered protein (pUM30)</td>
+  <td>has_reported_activity_in</td>
+  <td>CloQ mutant PPi-coupled specific-activity panel</td>
+  <td>The approximately 50% WT activity statement refers to GPP turnover with 4-HPP, not DMAPP. Figure 3.20 also shows strongly reduced DMAPP activity, without an exact numerical bar table. Removing F68 did not improve GPP turnover in this experiment. Figure 3.20 has no supplied error-bar definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-R66S+F68S engineered protein (pUM33)</td>
+  <td>has_reported_activity_in</td>
+  <td>CloQ mutant PPi-coupled specific-activity panel</td>
+  <td>The source describes the double mutant as inactive. Figure 3.20 includes both DMAPP and GPP conditions; inactivity is conditional, with no stated quantitative detection threshold. Figure 3.20 has no supplied error-bar definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-R66S+F68S+E281G engineered protein (pUM34)</td>
+  <td>has_reported_activity_in</td>
+  <td>CloQ mutant PPi-coupled specific-activity panel</td>
+  <td>The source describes the named triple mutant as inactive and Figure 3.20 includes DMAPP and GPP. The conflicting pUM34 template descriptions remain unresolved; actual full-sample sequence is not established by a literal-primer model. Figure 3.20 has no supplied error-bar definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>CloQ-C215S engineered protein (pUM28)</td>
+  <td>supports_bounded_covalent_link_interpretation</td>
+  <td>Cys215 covalent tether is dispensable in the tested assay</td>
+  <td>Retained activity despite replacing the cysteine supports dispensability of the Cys215-substrate covalent tether in these in-vitro conditions. It does not measure the reversibility/rate of thiohemiketal formation in native cells or establish that the adduct never contributes physiologically.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>DOI:10.1016/j.jmb.2010.09.067</td>
+</tr>
+<tr>
+  <td>CloQ-C215A engineered protein (pUM29)</td>
+  <td>supports_bounded_covalent_link_interpretation</td>
+  <td>Cys215 covalent tether is dispensable in the tested assay</td>
+  <td>Retained activity despite replacing the cysteine supports dispensability of the Cys215-substrate covalent tether in these in-vitro conditions. It does not measure the reversibility/rate of thiohemiketal formation in native cells or establish that the adduct never contributes physiologically.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>DOI:10.1016/j.jmb.2010.09.067</td>
+</tr>
+<tr>
+  <td>pET28_CloQ-derived WT comparator</td>
+  <td>was_measured_in</td>
+  <td>WT substrate-conditioned PPi-coupled kinetic fits</td>
+  <td>The same PPi/NADH method, with 2.5 mM MgCl2 at 30 C, was used for WT kinetic fits after checking enzyme-dose linearity. Aromatic-substrate series held DMAPP at 0.5 mM; donor series held 4-HPP at 0.5 mM. Table 3.4/Figure 3.21 give fitted Km, turnover and efficiencies, using GraphPad Prism 5.01. The printed +/- values lack a stated error definition in the inspected relevant methods/results, and no replicate count is assigned. Fits at a fixed cosubstrate concentration are not independent binding constants or kinetic measurements for every mutant.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>WT substrate-conditioned PPi-coupled kinetic fits</td>
+  <td>has_substrate_conditioned_fit_for</td>
+  <td>4-HPP</td>
+  <td>For 4-HPP, reported Km is 16 +/- 3.9 uM, kcat 0.159 s^-1 and kcat/Km 10000 M^-1 s^-1. The fixed cosubstrate is DMAPP at 0.5 mM; enzyme load is 2 ug in 200 uL. Values are transcribed from Table 3.4, including its rounding; uncertainty type and independent replication are unspecified. They are WT-preparation values, not intrinsic constants assigned to every engineered protein.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>WT substrate-conditioned PPi-coupled kinetic fits</td>
+  <td>has_substrate_conditioned_fit_for</td>
+  <td>L-Tyrosine</td>
+  <td>For L-Tyrosine, reported Km is 680 +/- 129 uM, kcat 0.0083 s^-1 and kcat/Km 12 M^-1 s^-1. The fixed cosubstrate is DMAPP at 0.5 mM; enzyme load is 16 ug in 200 uL. Values are transcribed from Table 3.4, including its rounding; uncertainty type and independent replication are unspecified. They are WT-preparation values, not intrinsic constants assigned to every engineered protein.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>WT substrate-conditioned PPi-coupled kinetic fits</td>
+  <td>has_substrate_conditioned_fit_for</td>
+  <td>p-Coumaric acid</td>
+  <td>For p-Coumaric acid, reported Km is 874 +/- 227 uM, kcat 0.0138 s^-1 and kcat/Km 16 M^-1 s^-1. The fixed cosubstrate is DMAPP at 0.5 mM; enzyme load is 16 ug in 200 uL. Values are transcribed from Table 3.4, including its rounding; uncertainty type and independent replication are unspecified. They are WT-preparation values, not intrinsic constants assigned to every engineered protein.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>WT substrate-conditioned PPi-coupled kinetic fits</td>
+  <td>has_substrate_conditioned_fit_for</td>
+  <td>DMAPP</td>
+  <td>For DMAPP, reported Km is 25 +/- 4.0 uM, kcat 0.253 s^-1 and kcat/Km 10000 M^-1 s^-1. The fixed cosubstrate is 4-HPP at 0.5 mM; enzyme load is 2 ug in 200 uL. Values are transcribed from Table 3.4, including its rounding; uncertainty type and independent replication are unspecified. They are WT-preparation values, not intrinsic constants assigned to every engineered protein.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>WT substrate-conditioned PPi-coupled kinetic fits</td>
+  <td>has_substrate_conditioned_fit_for</td>
+  <td>GPP</td>
+  <td>For GPP, reported Km is 307 +/- 55 uM, kcat 0.0291 s^-1 and kcat/Km 95 M^-1 s^-1. The fixed cosubstrate is 4-HPP at 0.5 mM; enzyme load is 16 ug in 200 uL. Values are transcribed from Table 3.4, including its rounding; uncertainty type and independent replication are unspecified. They are WT-preparation values, not intrinsic constants assigned to every engineered protein.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>pET28_CloQ-derived WT comparator</td>
+  <td>was_tested_in</td>
+  <td>WT endpoint HPLC product check</td>
+  <td>Separate endpoint assays used 100 uL, 75 mM Tris-HCl pH 7.5, 2.5 mM MgCl2, 0.5 mM aromatic acceptor and 0.5 mM donor, 2 or 16 ug enzyme, ten minutes at 30 C, then 2 uL formic acid. Products were extracted with 500 uL ethyl acetate. HPLC monitored 275 nm for keto-4-HPP/tyrosine and 300 nm for enol-4-HPP/p-coumarate. Tautomerism complicated HPLC quantitation, motivating the separate coupled kinetic assay. Methods do not establish an identical product-validation panel for each mutant.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>WT endpoint HPLC product check</td>
+  <td>formed_source_assigned_product</td>
+  <td>Assay-assigned dimethylallyl-tyrosine</td>
+  <td>Dimethylallyl-tyrosine from L-tyrosine and DMAPP was additionally examined by LC-MS (performed by Stefanie Siebenberg). These source-assigned products are not mature clorobiocin, and LC-MS alone is not an independent full NMR/regiochemical/stereochemical reconstruction. No natural occurrence or new product record is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>WT endpoint HPLC product check</td>
+  <td>formed_source_assigned_product</td>
+  <td>Assay-assigned geranyl-4-HPP</td>
+  <td>Geranyl-4-HPP from 4-HPP and GPP was additionally examined by LC-MS (performed by Stefanie Siebenberg). These source-assigned products are not mature clorobiocin, and LC-MS alone is not an independent full NMR/regiochemical/stereochemical reconstruction. No natural occurrence or new product record is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>WT substrate-conditioned PPi-coupled kinetic fits</td>
+  <td>does_not_resolve</td>
+  <td>Unresolved physiological keto-versus-enol substrate choice</td>
+  <td>L-tyrosine and p-coumarate were used as analogues of keto- and enol-like acceptors. Their low but nonzero efficiencies do not identify the physiological 4-HPP tautomer used by CloQ. The source concludes this comparison did not establish a preference. Relative alternative-substrate efficiencies also do not measure intracellular substrate availability or flux.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 18 edges</span></h2>
+<p class="sub">Four deposited CloQ structural states, exact scar/native sequence mappings, the Cys215 thiohemiketal and bounded mechanistic hypotheses (review #553). Direct coordinate observations, source interpretations and proposed donor contacts are separate. Detailed methods are from the inspected Metzger thesis; only the journal abstract was obtained. PDF pages are twelve above printed pages.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native CloQ sequence reference</td>
+  <td>is_core_reference_for</td>
+  <td>pET28_CloQ-derived WT comparator</td>
+  <td>All four deposited polymer sequences are 327 aa: GSH plus the native 324-aa Q8GHB2 sequence, except the intended C215S in 2XM5 and R66S in 2XM7. Author residue numbers equal native numbers; label_seq_id is author number plus three. The sequence-difference positions 218 and 69 are label numbering, not native C215S/R66S positions.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://files.rcsb.org/download/2XLQ.cif<br>https://files.rcsb.org/download/2XLY.cif<br>https://files.rcsb.org/download/2XM5.cif<br>https://files.rcsb.org/download/2XM7.cif</td>
+</tr>
+<tr>
+  <td>pET28_CloQ-derived WT comparator</td>
+  <td>has_deposited_structural_state</td>
+  <td>PDB 2XLQ deposited CloQ structural state</td>
+  <td>2XLQ: X-ray diffraction, 2.22 A; 316 modeled polymer residues versus 327 deposited. Revision history 2010-10-27 through 2024-11-13, version 1.5; coordinates inspected 2026-10-04. This WT-4HPP state came from preparation/crystallization with 2 mM 4-HPP in the buffers. Thesis Table 3.3 lists a 2.21-A high-resolution data limit, while the current deposited refinement resolution is 2.22 A. Modeled residues are native 1-313 plus GSH, not all 327 deposited residues. The I4122 crystal state is not a direct measurement of cellular flux or a solved donor-bound ternary complex.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://files.rcsb.org/download/2XLQ.cif</td>
+</tr>
+<tr>
+  <td>pET28_CloQ-derived WT comparator</td>
+  <td>has_deposited_structural_state</td>
+  <td>PDB 2XLY deposited CloQ structural state</td>
+  <td>2XLY: X-ray diffraction, 3.10 A; 307 modeled polymer residues versus 327 deposited. Revision history 2010-10-27 through 2023-12-20, version 1.5; coordinates inspected 2026-10-04. The apo state was prepared and crystallized without 4-HPP. No non-polymer ligand atoms are deposited. Lower resolution limits fine comparison; the source notes a W122 side-chain displacement. The I4122 crystal state is not a direct measurement of cellular flux or a solved donor-bound ternary complex.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://files.rcsb.org/download/2XLY.cif</td>
+</tr>
+<tr>
+  <td>CloQ-C215S engineered protein (pUM28)</td>
+  <td>has_deposited_structural_state</td>
+  <td>PDB 2XM5 deposited CloQ structural state</td>
+  <td>2XM5: X-ray diffraction, 1.85 A; 311 modeled polymer residues versus 327 deposited. Revision history 2010-10-27 through 2023-12-20, version 1.4; coordinates inspected 2026-10-04. The C215S crystals were soaked with 5 mM 4-HPP, but 4-HPP was not assigned in the density or deposited. EDO, formate and waters are present; these are not a bound prenyl donor. The I4122 crystal state is not a direct measurement of cellular flux or a solved donor-bound ternary complex.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://files.rcsb.org/download/2XM5.cif</td>
+</tr>
+<tr>
+  <td>CloQ-R66S engineered protein (pUM31)</td>
+  <td>has_deposited_structural_state</td>
+  <td>PDB 2XM7 deposited CloQ structural state</td>
+  <td>2XM7: X-ray diffraction, 2.22 A; 307 modeled polymer residues versus 327 deposited. Revision history 2010-10-27 through 2024-11-06, version 1.5; coordinates inspected 2026-10-04. The R66S crystals were soaked with 5 mM 4-HPP and contain the covalent acceptor adduct. EDO, formate and waters are also deposited. The source notes F68 moving into space left by the smaller Ser66 side chain. The I4122 crystal state is not a direct measurement of cellular flux or a solved donor-bound ternary complex.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://files.rcsb.org/download/2XM7.cif</td>
+</tr>
+<tr>
+  <td>PDB 2XLQ deposited CloQ structural state</td>
+  <td>contains_reported_covalent_adduct</td>
+  <td>Crystal Cys215-linked 4-HPP thiohemiketal</td>
+  <td>The deposited covale record links CYS author215 SG to ligand 34H C2. Direct Euclidean coordinate distance is 1.883 A, matching the deposited link distance. All 13 ligand heavy atoms have modeled occupancy 1.00; that is a refinement assignment, not a solution binding fraction. The source interprets continuous density and tetrahedral geometry as a 4-HPP thiohemiketal.</td>
+  <td class="mono">https://files.rcsb.org/download/2XLQ.cif<br>https://files.rcsb.org/download/2XLQ.cif<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>DOI:10.1016/j.jmb.2010.09.067</td>
+</tr>
+<tr>
+  <td>PDB 2XLQ deposited CloQ structural state</td>
+  <td>has_observed_acceptor_contacts</td>
+  <td>Observed aromatic-acceptor contact environment</td>
+  <td>Using the CCD atom map, E281 OE1 to phenolic 34H O3 is 2.574 A; the shortest R160 guanidinium/carboxyl oxygen pair is NH2-O1 at 3.101 A. These are curator-calculated heavy-atom distances, not experimentally located hydrogens. The source interprets E281 hydrogen bonding and an R160 carboxyl interaction, with a surrounding hydrophobic environment including F68, W122, Y174, Y233 and L235. Contact geometry does not by itself establish proton-transfer direction, affinity or the essentiality of a residue.</td>
+  <td class="mono">https://files.rcsb.org/download/2XLQ.cif<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>PDB 2XM7 deposited CloQ structural state</td>
+  <td>contains_reported_covalent_adduct</td>
+  <td>Crystal Cys215-linked 4-HPP thiohemiketal</td>
+  <td>The deposited covale record links CYS author215 SG to ligand 34H C2. Direct Euclidean coordinate distance is 1.895 A, matching the deposited link distance. All 13 ligand heavy atoms have modeled occupancy 1.00; that is a refinement assignment, not a solution binding fraction. The source interprets continuous density and tetrahedral geometry as a 4-HPP thiohemiketal.</td>
+  <td class="mono">https://files.rcsb.org/download/2XM7.cif<br>https://files.rcsb.org/download/2XM7.cif<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>DOI:10.1016/j.jmb.2010.09.067</td>
+</tr>
+<tr>
+  <td>PDB 2XM7 deposited CloQ structural state</td>
+  <td>has_observed_acceptor_contacts</td>
+  <td>Observed aromatic-acceptor contact environment</td>
+  <td>Using the CCD atom map, E281 OE1 to phenolic 34H O3 is 2.665 A; the shortest R160 guanidinium/carboxyl oxygen pair is NH2-O1 at 3.064 A. These are curator-calculated heavy-atom distances, not experimentally located hydrogens. The source interprets E281 hydrogen bonding and an R160 carboxyl interaction, with a surrounding hydrophobic environment including F68, W122, Y174, Y233 and L235. Contact geometry does not by itself establish proton-transfer direction, affinity or the essentiality of a residue.</td>
+  <td class="mono">https://files.rcsb.org/download/2XM7.cif<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>Crystal Cys215-linked 4-HPP thiohemiketal</td>
+  <td>has_covalent_context_in</td>
+  <td>Observed aromatic-acceptor contact environment</td>
+  <td>Standalone CCD 34H is named (2R)-2-hydroxy-3-(4-hydroxyphenyl)propanoic acid. Its bond table maps C2-O4 as the alpha hydroxyl and C7-O3 as the phenolic hydroxyl; a CCD covalent-modification annotation links C2 to CYS SG. The full crystal includes that protein-ligand covalent connection. The component name or isolated CCD formula is not evidence that CloQ makes free phenyllactate, and it is not equated with the unmodified CHEBI:36242 substrate.</td>
+  <td class="mono">https://files.rcsb.org/ligands/download/34H.cif<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>PDB 2XM5 deposited CloQ structural state</td>
+  <td>has_unassigned_density</td>
+  <td>Unassigned acceptor-region density in C215S</td>
+  <td>Despite a 5 mM 4-HPP soak, the source does not assign the acceptor-region density to 4-HPP or another ligand. Disorder/keto-enol exchange is suggested, not demonstrated. The observed Y233 displacement and R66 rotation do not locate the missing ligand or prove a different bound substrate pose. Absence of an assigned ligand is not absence of binding in solution.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>https://files.rcsb.org/download/2XM5.cif</td>
+</tr>
+<tr>
+  <td>PDB 2XLQ deposited CloQ structural state</td>
+  <td>shows</td>
+  <td>CloQ PT-barrel architecture</td>
+  <td>Five repeated alpha-alpha-beta-beta units produce a ten-stranded antiparallel beta barrel surrounded by helices. The central cavity has polar and hydrophobic regions; the C-terminal region including helix 11 closes the lower end in the observed structure. This is not a TIM barrel or evidence that every substrate must use one experimentally tracked entry route.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf<br>DOI:10.1016/j.jmb.2010.09.067</td>
+</tr>
+<tr>
+  <td>CloQ PT-barrel architecture</td>
+  <td>motivates_hypothesis</td>
+  <td>Hypothesized DMAPP coordination and cation shielding</td>
+  <td>No DMAPP, GPP or nonhydrolysable donor analogue was observed bound in these four deposits despite soaking/cocrystallization trials. The source schematic proposes K54, R66, K120, R229 and K279 as a positive diphosphate-binding region, with N172 and surrounding aromatic side chains contributing contacts/shielding. The putative K54 substitution for a metal charge and cation-pi shielding are hypotheses informed by homolog structures and mutagenesis, not observed CloQ donor contacts. Figure 3.19 is schematic, not a refined bound-donor model.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>Observed aromatic-acceptor contact environment</td>
+  <td>motivates_hypothesis</td>
+  <td>Proposed dual catalytic-base roles of E281</td>
+  <td>The source proposes E281 both activating the phenolic group and removing the proton from the aromatic sigma-complex. It explicitly treats the dual role as hypothetical because exact substrate positions are not secured. Severe E281G activity loss supports functional importance but does not independently prove either proton-transfer step or observe a carbocation intermediate.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>PDB 2XLQ deposited CloQ structural state</td>
+  <td>has_bounded_assembly_assignment</td>
+  <td>Condition-dependent oligomeric-state interpretation</td>
+  <td>2XLQ assembly 1 is author-assigned monomeric; assembly 2 is a PISA-generated tetramer. Both assignments remain visible and are not collapsed into a proven biological tetramer. The thesis DLS interpretation concerns prepared protein in solution; crystallographic packing and software assemblies answer different questions.</td>
+  <td class="mono">https://files.rcsb.org/download/2XLQ.cif<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>PDB 2XLY deposited CloQ structural state</td>
+  <td>has_bounded_assembly_assignment</td>
+  <td>Condition-dependent oligomeric-state interpretation</td>
+  <td>2XLY lists an author-and-software-assigned monomeric assembly. This assignment is not an independent physiological stoichiometry experiment. The thesis DLS interpretation concerns prepared protein in solution; crystallographic packing and software assemblies answer different questions.</td>
+  <td class="mono">https://files.rcsb.org/download/2XLY.cif<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>PDB 2XM5 deposited CloQ structural state</td>
+  <td>has_bounded_assembly_assignment</td>
+  <td>Condition-dependent oligomeric-state interpretation</td>
+  <td>2XM5 lists an author-and-software-assigned monomeric assembly. This assignment is not an independent physiological stoichiometry experiment. The thesis DLS interpretation concerns prepared protein in solution; crystallographic packing and software assemblies answer different questions.</td>
+  <td class="mono">https://files.rcsb.org/download/2XM5.cif<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+<tr>
+  <td>PDB 2XM7 deposited CloQ structural state</td>
+  <td>has_bounded_assembly_assignment</td>
+  <td>Condition-dependent oligomeric-state interpretation</td>
+  <td>2XM7 lists an author-and-software-assigned monomeric assembly. This assignment is not an independent physiological stoichiometry experiment. The thesis DLS interpretation concerns prepared protein in solution; crystallographic packing and software assemblies answer different questions.</td>
+  <td class="mono">https://files.rcsb.org/download/2XM7.cif<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">2</span></h2>
