@@ -1,0 +1,253 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-simr-structural-contacts-and-states
+  scope: BIOSYNTHESIS
+  description: 'SimR operator contacts and static DNA/ligand/apo structure comparisons
+    in producer-cluster regulation. Crystal packing, paper-to-native residue offsets
+    and unresolved owner stereochemistry constrain interpretation (review #536). This
+    is not a drug-target graph or an observed kinetic transition pathway.'
+  nodes:
+  - node_id: simr
+    label: Native SimR / SimReg2 protein
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AMH9
+  - node_id: tagged
+    label: Assayed codon-optimized C-terminally tagged SimR
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: dna_state
+    label: 3ZQL tagged SimR dimer-DNA structural complex
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: dna
+    label: 3ZQL engineered OX 17-bp duplex
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: neighbor
+    label: Symmetry-related neighboring crystal DNA duplex
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: arm
+    label: TFR arm of the assayed SimR construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: hth
+    label: HTH region of the assayed SimR construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: sd8_state
+    label: 2Y30 tagged SimR-SD8 structural complex
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: sd8
+    label: Source-assigned SD8 ligand, CCD SM8
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: apo_state
+    label: 2Y2Z tagged apo SimR structural state
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: tagged
+    predicate: has_native_sequence_parent
+    object: simr
+    notes: The paper calls its parent 259 aa. Supplement S2 exactly matches native
+      Q9AMH9 residues 3..261, omitting the native MW start; deposited protein is those
+      259 residues plus LEHHHHHH (267 aa). Paper positions map to UniProt with +2.
+      Synthetic codon-optimized simR, pIJ10499, was expressed in E. coli and purified
+      by nickel affinity. This edge does not assert native N-terminal processing,
+      a corrected native annotation, or equivalence of tagged and native proteins.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and Supplement S2; C-terminal tag construction.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK06798.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native AAK06798.1, simReg2, S. antibioticus Tue6040, 261 aa; AF324838.2
+        complement(57298..58083).
+    - reference: https://www.uniprot.org/uniprotkb/Q9AMH9
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed Q9AMH9, taxon 1890, entry version 132, sequence version
+        1; inspected 2026-10-04. The simReg2 gene and EMBL AAK06798.1 cross-reference
+        identify this native entry, not a convenient homolog.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Native GenPept, GenBank CDS-aware table-11 translation, MIBiG BGC0001072.5
+        and UniProt sequences agree exactly. Supplement S2/deposited entity comparison
+        establishes the two-residue offset; no claim of identity to the alternate
+        AF322256.1 cluster or all engineered nucleotide sequences.
+    - reference: https://www.rcsb.org/structure/3ZQL
+      evidence_type: DATABASE_ASSERTION
+      notes: PDB sequence mapping 1..259 to Q9AMH9 3..261; tag is outside this alignment.
+        The deposited entity sequence is not a claim that every residue is modeled.
+  - subject: dna_state
+    predicate: contains_protein_construct
+    object: tagged
+    notes: 3ZQL is a 2.99-A crystal structure. Its asymmetric unit contains two dimer-DNA
+      complexes, not an established physiological tetramer. Modeled paper-numbered
+      ranges are A7..241, C7..242, and B/D7..15 plus 26..242; missing residues must
+      not be treated as resolved atoms merely because the entity sequence includes
+      them.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 1 and Figures 4/7.
+    - reference: https://www.rcsb.org/structure/3ZQL
+      evidence_type: DATABASE_ASSERTION
+      notes: Sequence, coordinates and resolution.
+  - subject: dna_state
+    predicate: contains_engineered_duplex
+    object: dna
+    notes: Deposited strands TTCGTACGGCGTACGAA and TTCGTACGCCGTACGAA are reverse complements.
+      The former differs from native OX at positions 10/14 and from S5B left-repeat
+      at position 10. This structure demonstrates the deposited complex, not an affinity
+      measurement for the S5B oligo or a native unmodified operator structure.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Crystal methods/results and Supplement S5B.
+    - reference: https://www.rcsb.org/structure/3ZQL
+      evidence_type: DATABASE_ASSERTION
+      notes: DNA entities in 3ZQL.
+  - subject: tagged
+    predicate: contains_n_terminal_region
+    object: arm
+    notes: The paper defines a 28-aa TFR arm (native Q9AMH9 residues 3..30), including
+      paper R18/R19/R22/R25 (native R20/R21/R24/R27). Paper residues 8..10 are a proposed
+      anchor; the Figure 4 caption instead labels 8..11. Do not silently turn either
+      annotation into an independently isolated protein.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 1, Figure 4 caption and TFR-arm results.
+  - subject: tagged
+    predicate: contains_dna_recognition_region
+    object: hth
+    notes: Paper alpha2 49..58 and alpha3 61..67 form the HTH within core DBD29..67;
+      add 2 for native Q9AMH9 numbering. Domains are regions of the engineered protein,
+      not distinct UniProt proteins or separate gene products.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: HTH results and Figures 1/4/5.
+  - subject: hth
+    predicate: makes_structural_major_groove_contacts_with
+    object: dna
+    notes: Paper M62 and Y66 contribute base contacts; R51 recognizes G11. Reported
+      backbone contacts include S49/M50/G60/S63/Y65/Y67 and K71 just outside the core
+      HTH. Native positions are all +2. Figure 5 distinguishes base versus phosphate
+      contacts; not every contact is independently tested by a mutant or quantified
+      energetically. Alpha3 is described as 3_10-helical in this DNA complex rather
+      than the alpha-helical ligand/apo models.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: HTH results and Figure 5; atom-level interpretation of the crystal model.
+  - subject: arm
+    predicate: contacts_minor_groove_of_crystal_neighbor
+    object: neighbor
+    notes: The ordered arm contacts the adjacent symmetry-related duplex, not the
+      same 17mer bound by its own HTH. Paper R18 (native R20) contacts C3/T2 and R22
+      (native R24) the C3/G4 phosphates. Paper R19 (native R21) makes no DNA contact
+      in this model; that is not universal dispensability. The other arm is disordered
+      in this dimer. No cooperative adjacent-native-operator binding is inferred from
+      the crystal neighbor.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figures 4-7 and Supplement S6.
+      snippet: does not contact DNA
+  - subject: dna
+    predicate: stacks_with_in_crystal
+    object: neighbor
+    notes: Duplex ends form a pseudo-continuous filament through the crystal. Unequal
+      end stacking gives different minor-groove geometries. Curves+ reports about
+      15-degree bending for the modeled DNA; this is not native DNA bending measured
+      in solution or proof that the crystallographic neighbor is a second genomic
+      operator.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figures 4/7 and Supplements S6/S10.
+  - subject: sd8_state
+    predicate: contains_protein_construct
+    object: tagged
+    notes: 2Y30 is a 2.30-A SD8-bound deposition with the same native3..261-plus-LEHHHHHH
+      protein sequence as 3ZQL. This public coordinate/sequence record and the NAR
+      comparison were inspected; full text of the separate JMB ligand paper was not
+      available here, so no uninspected ligand-assay detail is imported.
+    evidence:
+    - reference: https://www.rcsb.org/structure/2Y30
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited sequence and structure.
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 9 comparison.
+  - subject: sd8_state
+    predicate: contains_deposited_ligand
+    object: sd8
+    notes: 2Y30 names simocyclinone D8 as CCD SM8. SM8 has fully specified InChIKey
+      PLEGMCYXNQPJNV-VHSVXIAXSA-N, whereas this owner retains incomplete PLEGMCYXNQPJNV-TYXWGSLYSA-N.
+      Connectivity and already assigned centers agree, but six owner stereocentres
+      remain unspecified. The ligand node is not grounded as exact identity to the
+      owner and does not replace its structure or resolve the shared-MIBiG discussion.
+      It is not C4 in 2Y31.
+    evidence:
+    - reference: https://www.rcsb.org/structure/2Y30
+      evidence_type: DATABASE_ASSERTION
+      notes: 2Y30 nonpolymer entity SM8.
+    - reference: https://www.rcsb.org/ligand/SM8
+      evidence_type: DATABASE_ASSERTION
+      notes: SM8 chemical identity and complete InChI.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0001072/
+      evidence_type: CURATOR_INFERENCE
+      notes: Comparison with retained MIBiG source structure; no exact identity merge.
+  - subject: apo_state
+    predicate: contains_protein_construct
+    object: tagged
+    notes: 2Y2Z is the 1.95-A apo deposition with native3..261-plus-LEHHHHHH sequence.
+      An ordered TFR arm in this crystal is stabilized by symmetry-related arms (Supplement
+      S3); this does not prove that the arm is rigid in solution.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S3 and apo comparison.
+    - reference: https://www.rcsb.org/structure/2Y2Z
+      evidence_type: DATABASE_ASSERTION
+      notes: Apo deposition metadata/sequence.
+  - subject: sd8_state
+    predicate: has_static_conformational_difference_from
+    object: dna_state
+    notes: 'NAR Figure 9/S11/S12 compare static models: about 16-degree relative subunit
+      rotation; recognition-helix separation 41.7 A for SD8 versus 36.8 A for DNA,
+      assessed at paper Tyr65 (native Tyr67) C-alpha atoms and averaged for the DNA
+      complexes. This is not a measured binding trajectory, rotation rate or direct
+      kinetic proof of ligand-induced derepression. Cores largely superpose; the paper
+      distinguishes wrapping-arm/alpha8 movement from whole DBD pendulum motion.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 9 and Supplements S11/S12; static-state comparison.
+      snippet: do not convey the dynamic behaviour
+  - subject: apo_state
+    predicate: has_static_conformational_difference_from
+    object: dna_state
+    notes: The reported recognition-helix spacing is 42.3 A for the apo crystal versus
+      36.8 A for DNA. The discussion explicitly allows flexible apo protein to sample
+      DNA-compatible states. Do not infer that apo SimR cannot bind DNA under any
+      conditions or that the crystallographic conformation is the only solution state.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Final structural-comparison discussion.
+curation_history:
+- timestamp: '2026-10-04T08:38:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added source-checked SimR evidence for naturalproductmech:mibig-e03313fa44
+    from owner base 55a50439cce011731f550baf85b25aa2c47ac43e; DOI:10.1093/nar/gkr640,
+    native sequence and public depositions. Native/engineered identities and review
+    #536 limits retained; no changes to prior SimReg1 evidence.'
+  llm_assisted: true

@@ -783,6 +783,10 @@ causal_graphs:
     - reference: DOI:10.1186/2191-0855-2-1
       evidence_type: PRIMARY_EXPERIMENT
       notes: Reporter methods/results, Table 1 and Figure 9.
+causal_graph_refs:
+- simocyclinone-d8-simr-binding-and-footprints
+- simocyclinone-d8-simr-dna-length-and-proteolysis
+- simocyclinone-d8-simr-structural-contacts-and-states
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -807,4 +811,12 @@ curation_history:
     cited experimental-comparison edge, addressing review #535. All three SimReg1
     graphs are connected; now 30 nodes and 28 edges. Preserved all prior claims, qualifiers
     and history.'
+  llm_assisted: true
+- timestamp: '2026-10-04T08:38:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added three SimR graph references covering binding/footprints, DNA-length/proteolysis
+    and structural contacts/states. Grounded native Q9AMH9 with +2 paper-residue offset;
+    preserved #536 construct, operator and chemical-identity limits. Existing SimReg1
+    graphs, source fields, shared-structure discussion and SEEDED status unchanged.'
   llm_assisted: true

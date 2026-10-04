@@ -1,0 +1,436 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-simr-binding-and-footprints
+  scope: BIOSYNTHESIS
+  description: 'SimR DNA binding, engineered truncations and point mutants in producer-cluster
+    regulation. Native Q9AMH9 is distinct from the 259-aa paper parent and tagged
+    assay constructs; source residue numbering and assay boundaries are retained (review
+    #536). This graph does not assert SimR catalysis or remeasure native export.'
+  nodes:
+  - node_id: simr
+    label: Native SimR / SimReg2 protein
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AMH9
+  - node_id: tagged
+    label: Assayed codon-optimized C-terminally tagged SimR
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: probe
+    label: 138-bp simR-simX-region probe with OR and OX
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: delta10
+    label: His-tagged SimR Delta10 (paper numbering)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: delta15
+    label: His-tagged SimR Delta15 (paper numbering)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: delta22
+    label: His-tagged SimR Delta22 (paper numbering)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: delta25
+    label: His-tagged SimR Delta25 (paper numbering)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: r18a
+    label: His-tagged SimR R18A (paper numbering)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: r19a
+    label: His-tagged SimR R19A (paper numbering)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: r22a
+    label: His-tagged SimR R22A (paper numbering)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: y67a
+    label: His-tagged SimR Y67A (paper numbering)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: tagged
+    predicate: has_native_sequence_parent
+    object: simr
+    notes: The paper calls its parent 259 aa. Supplement S2 exactly matches native
+      Q9AMH9 residues 3..261, omitting the native MW start; deposited protein is those
+      259 residues plus LEHHHHHH (267 aa). Paper positions map to UniProt with +2.
+      Synthetic codon-optimized simR, pIJ10499, was expressed in E. coli and purified
+      by nickel affinity. This edge does not assert native N-terminal processing,
+      a corrected native annotation, or equivalence of tagged and native proteins.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and Supplement S2; C-terminal tag construction.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK06798.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native AAK06798.1, simReg2, S. antibioticus Tue6040, 261 aa; AF324838.2
+        complement(57298..58083).
+    - reference: https://www.uniprot.org/uniprotkb/Q9AMH9
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed Q9AMH9, taxon 1890, entry version 132, sequence version
+        1; inspected 2026-10-04. The simReg2 gene and EMBL AAK06798.1 cross-reference
+        identify this native entry, not a convenient homolog.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Native GenPept, GenBank CDS-aware table-11 translation, MIBiG BGC0001072.5
+        and UniProt sequences agree exactly. Supplement S2/deposited entity comparison
+        establishes the two-residue offset; no claim of identity to the alternate
+        AF322256.1 cluster or all engineered nucleotide sequences.
+    - reference: https://www.rcsb.org/structure/3ZQL
+      evidence_type: DATABASE_ASSERTION
+      notes: PDB sequence mapping 1..259 to Q9AMH9 3..261; tag is outside this alignment.
+        The deposited entity sequence is not a claim that every residue is modeled.
+  - subject: tagged
+    predicate: shifts_in_emsa
+    object: probe
+    notes: 'The 138-bp simR-simX-region probe contains OR and OX; this is not either
+      short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in
+      20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C
+      for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200
+      nM. Fold changes are the authors'' gel-based binding comparisons, not fitted
+      Kd values or native transcription/production measurements. The source assigns
+      lower and upper shifted complexes to occupancy of one and both sites; the gel
+      alone is not a determination of a physiological tetramer.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and Figure 2 WT lanes; site-occupancy interpretation refers to
+        earlier work.
+  - subject: tagged
+    predicate: protects_regions_from_dnase_i
+    object: probe
+    notes: Figure 8 uses 200 nM tagged WT as the full-footprint reference at both
+      OR and OX. The readout is DNase I protection, not gene expression or a measured
+      equilibrium constant.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: DNase I methods, Figure 8A/B.
+  - subject: delta10
+    predicate: is_engineered_derivative_of
+    object: tagged
+    notes: 'pIJ10500: NdeI/XhoI cloning into pET20b through sequence-verified pUC18
+      intermediates; source reports deletion of 10 N-terminal paper residues, retaining
+      paper 11..259 (native Q9AMH9 13..261) and a C-terminal tag. Literal upstream
+      primer translation includes an added initiator M before that retained segment
+      (Delta10 begins MM). This is a primer-derived reading-frame model, not an experimentally
+      determined mature N-terminus or a deposited complete plasmid sequence. The downstream
+      primer is consistent with the ERPALA parent tail. Supplement S1 shows purified
+      bands, not proof of identical folding or absolute purity.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Expression methods: four literal NdeI primers, shared XhoI primer, Supplement
+        S1.'
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer translation and Supplement S2/native sequence alignment;
+        no guessed full synthetic nucleotide sequence.
+  - subject: delta10
+    predicate: shows_reduced_emsa_binding_to
+    object: probe
+    notes: 'The 138-bp simR-simX-region probe contains OR and OX; this is not either
+      short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in
+      20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C
+      for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200
+      nM. Fold changes are the authors'' gel-based binding comparisons, not fitted
+      Kd values or native transcription/production measurements. Reported approximately
+      30-fold reduction relative to tagged WT. This is not complete loss of all binding,
+      nor proof that only the deleted residues directly contact DNA; truncation can
+      also alter arm positioning.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 2 and N-terminal-truncation results.
+  - subject: delta10
+    predicate: produces_retracted_dnase_i_footprint_on
+    object: probe
+    notes: 'DNase I protection of the simR-simX-region probe, upper/lower strand separately
+      labelled, 40 uL EMSA buffer, 22 C for 10 min, 10 U DNase I for 60 s; G+A ladder
+      and no-protein controls. Compared with tagged WT, each truncation has the same
+      reported retraction: OR upper strand 2 bp left and 1 bp right, OR lower unchanged;
+      OX upper 1 bp left/right unchanged; OX lower 1 bp at each end. Boundaries are
+      source figure orientations, not independent genomic-coordinate assignments.
+      This derivative was assayed at 200 nM, versus 200 nM WT. The authors use saturating
+      doses; differing doses must not be represented as equal-dose occupancy or as
+      quantitative affinity measurements.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 8 and footprint results.
+  - subject: delta15
+    predicate: is_engineered_derivative_of
+    object: tagged
+    notes: 'pIJ10501: NdeI/XhoI cloning into pET20b through sequence-verified pUC18
+      intermediates; source reports deletion of 15 N-terminal paper residues, retaining
+      paper 16..259 (native Q9AMH9 18..261) and a C-terminal tag. Literal upstream
+      primer translation includes an added initiator M before that retained segment
+      (Delta10 begins MM). This is a primer-derived reading-frame model, not an experimentally
+      determined mature N-terminus or a deposited complete plasmid sequence. The downstream
+      primer is consistent with the ERPALA parent tail. Supplement S1 shows purified
+      bands, not proof of identical folding or absolute purity.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Expression methods: four literal NdeI primers, shared XhoI primer, Supplement
+        S1.'
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer translation and Supplement S2/native sequence alignment;
+        no guessed full synthetic nucleotide sequence.
+  - subject: delta15
+    predicate: shows_reduced_emsa_binding_to
+    object: probe
+    notes: 'The 138-bp simR-simX-region probe contains OR and OX; this is not either
+      short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in
+      20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C
+      for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200
+      nM. Fold changes are the authors'' gel-based binding comparisons, not fitted
+      Kd values or native transcription/production measurements. Reported approximately
+      30-fold reduction relative to tagged WT. This is not complete loss of all binding,
+      nor proof that only the deleted residues directly contact DNA; truncation can
+      also alter arm positioning.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 2 and N-terminal-truncation results.
+  - subject: delta15
+    predicate: produces_retracted_dnase_i_footprint_on
+    object: probe
+    notes: 'DNase I protection of the simR-simX-region probe, upper/lower strand separately
+      labelled, 40 uL EMSA buffer, 22 C for 10 min, 10 U DNase I for 60 s; G+A ladder
+      and no-protein controls. Compared with tagged WT, each truncation has the same
+      reported retraction: OR upper strand 2 bp left and 1 bp right, OR lower unchanged;
+      OX upper 1 bp left/right unchanged; OX lower 1 bp at each end. Boundaries are
+      source figure orientations, not independent genomic-coordinate assignments.
+      This derivative was assayed at 200 nM, versus 200 nM WT. The authors use saturating
+      doses; differing doses must not be represented as equal-dose occupancy or as
+      quantitative affinity measurements.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 8 and footprint results.
+  - subject: delta22
+    predicate: is_engineered_derivative_of
+    object: tagged
+    notes: 'pIJ10502: NdeI/XhoI cloning into pET20b through sequence-verified pUC18
+      intermediates; source reports deletion of 22 N-terminal paper residues, retaining
+      paper 23..259 (native Q9AMH9 25..261) and a C-terminal tag. Literal upstream
+      primer translation includes an added initiator M before that retained segment
+      (Delta10 begins MM). This is a primer-derived reading-frame model, not an experimentally
+      determined mature N-terminus or a deposited complete plasmid sequence. The downstream
+      primer is consistent with the ERPALA parent tail. Supplement S1 shows purified
+      bands, not proof of identical folding or absolute purity.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Expression methods: four literal NdeI primers, shared XhoI primer, Supplement
+        S1.'
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer translation and Supplement S2/native sequence alignment;
+        no guessed full synthetic nucleotide sequence.
+  - subject: delta22
+    predicate: shows_reduced_emsa_binding_to
+    object: probe
+    notes: 'The 138-bp simR-simX-region probe contains OR and OX; this is not either
+      short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in
+      20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C
+      for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200
+      nM. Fold changes are the authors'' gel-based binding comparisons, not fitted
+      Kd values or native transcription/production measurements. Reported at least
+      120-fold reduction relative to tagged WT. This is not complete loss of all binding,
+      nor proof that only the deleted residues directly contact DNA; truncation can
+      also alter arm positioning.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 2 and N-terminal-truncation results.
+      snippet: reduced by at least
+  - subject: delta22
+    predicate: produces_retracted_dnase_i_footprint_on
+    object: probe
+    notes: 'DNase I protection of the simR-simX-region probe, upper/lower strand separately
+      labelled, 40 uL EMSA buffer, 22 C for 10 min, 10 U DNase I for 60 s; G+A ladder
+      and no-protein controls. Compared with tagged WT, each truncation has the same
+      reported retraction: OR upper strand 2 bp left and 1 bp right, OR lower unchanged;
+      OX upper 1 bp left/right unchanged; OX lower 1 bp at each end. Boundaries are
+      source figure orientations, not independent genomic-coordinate assignments.
+      This derivative was assayed at 400 nM, versus 200 nM WT. The authors use saturating
+      doses; differing doses must not be represented as equal-dose occupancy or as
+      quantitative affinity measurements.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 8 and footprint results.
+  - subject: delta25
+    predicate: is_engineered_derivative_of
+    object: tagged
+    notes: 'pIJ10503: NdeI/XhoI cloning into pET20b through sequence-verified pUC18
+      intermediates; source reports deletion of 25 N-terminal paper residues, retaining
+      paper 26..259 (native Q9AMH9 28..261) and a C-terminal tag. Literal upstream
+      primer translation includes an added initiator M before that retained segment
+      (Delta10 begins MM). This is a primer-derived reading-frame model, not an experimentally
+      determined mature N-terminus or a deposited complete plasmid sequence. The downstream
+      primer is consistent with the ERPALA parent tail. Supplement S1 shows purified
+      bands, not proof of identical folding or absolute purity.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Expression methods: four literal NdeI primers, shared XhoI primer, Supplement
+        S1.'
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer translation and Supplement S2/native sequence alignment;
+        no guessed full synthetic nucleotide sequence.
+  - subject: delta25
+    predicate: shows_reduced_emsa_binding_to
+    object: probe
+    notes: 'The 138-bp simR-simX-region probe contains OR and OX; this is not either
+      short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in
+      20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C
+      for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200
+      nM. Fold changes are the authors'' gel-based binding comparisons, not fitted
+      Kd values or native transcription/production measurements. Reported at least
+      120-fold reduction relative to tagged WT. This is not complete loss of all binding,
+      nor proof that only the deleted residues directly contact DNA; truncation can
+      also alter arm positioning.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 2 and N-terminal-truncation results.
+  - subject: delta25
+    predicate: produces_retracted_dnase_i_footprint_on
+    object: probe
+    notes: 'DNase I protection of the simR-simX-region probe, upper/lower strand separately
+      labelled, 40 uL EMSA buffer, 22 C for 10 min, 10 U DNase I for 60 s; G+A ladder
+      and no-protein controls. Compared with tagged WT, each truncation has the same
+      reported retraction: OR upper strand 2 bp left and 1 bp right, OR lower unchanged;
+      OX upper 1 bp left/right unchanged; OX lower 1 bp at each end. Boundaries are
+      source figure orientations, not independent genomic-coordinate assignments.
+      This derivative was assayed at 400 nM, versus 200 nM WT. The authors use saturating
+      doses; differing doses must not be represented as equal-dose occupancy or as
+      quantitative affinity measurements.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 8 and footprint results.
+  - subject: r18a
+    predicate: is_engineered_derivative_of
+    object: tagged
+    notes: Modified QuikChange substitution R18A in paper numbering corresponds to
+      native Q9AMH9 R20A; all native residue identities were checked. Supplement S7
+      identifies the variant, but does not deposit its complete nucleotide sequence
+      here. The Y67A HTH mutant is a control outside the N-terminal arm.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S7 caption; Supplement S2 and native/deposited sequence alignment.
+  - subject: r18a
+    predicate: has_reported_emsa_binding_to
+    object: probe
+    notes: 'The 138-bp simR-simX-region probe contains OR and OX; this is not either
+      short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in
+      20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C
+      for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200
+      nM. Fold changes are the authors'' gel-based binding comparisons, not fitted
+      Kd values or native transcription/production measurements. R18A is approximately
+      15-fold reduced. This finding is limited to this construct, probe and assay;
+      no universal residue dispensability is inferred.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S7; main results describe R18A, R19A and R22A comparisons.
+  - subject: r19a
+    predicate: is_engineered_derivative_of
+    object: tagged
+    notes: Modified QuikChange substitution R19A in paper numbering corresponds to
+      native Q9AMH9 R21A; all native residue identities were checked. Supplement S7
+      identifies the variant, but does not deposit its complete nucleotide sequence
+      here. The Y67A HTH mutant is a control outside the N-terminal arm.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S7 caption; Supplement S2 and native/deposited sequence alignment.
+  - subject: r19a
+    predicate: has_reported_emsa_binding_to
+    object: probe
+    notes: 'The 138-bp simR-simX-region probe contains OR and OX; this is not either
+      short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in
+      20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C
+      for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200
+      nM. Fold changes are the authors'' gel-based binding comparisons, not fitted
+      Kd values or native transcription/production measurements. R19A is similar to
+      tagged WT. This finding is limited to this construct, probe and assay; no universal
+      residue dispensability is inferred.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S7; main results describe R18A, R19A and R22A comparisons.
+  - subject: r22a
+    predicate: is_engineered_derivative_of
+    object: tagged
+    notes: Modified QuikChange substitution R22A in paper numbering corresponds to
+      native Q9AMH9 R24A; all native residue identities were checked. Supplement S7
+      identifies the variant, but does not deposit its complete nucleotide sequence
+      here. The Y67A HTH mutant is a control outside the N-terminal arm.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S7 caption; Supplement S2 and native/deposited sequence alignment.
+  - subject: r22a
+    predicate: has_reported_emsa_binding_to
+    object: probe
+    notes: 'The 138-bp simR-simX-region probe contains OR and OX; this is not either
+      short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in
+      20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C
+      for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200
+      nM. Fold changes are the authors'' gel-based binding comparisons, not fitted
+      Kd values or native transcription/production measurements. R22A is approximately
+      15-fold reduced. This finding is limited to this construct, probe and assay;
+      no universal residue dispensability is inferred.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S7; main results describe R18A, R19A and R22A comparisons.
+  - subject: y67a
+    predicate: is_engineered_derivative_of
+    object: tagged
+    notes: Modified QuikChange substitution Y67A in paper numbering corresponds to
+      native Q9AMH9 Y69A; all native residue identities were checked. Supplement S7
+      identifies the variant, but does not deposit its complete nucleotide sequence
+      here. The Y67A HTH mutant is a control outside the N-terminal arm.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S7 caption; Supplement S2 and native/deposited sequence alignment.
+  - subject: y67a
+    predicate: has_reported_emsa_binding_to
+    object: probe
+    notes: 'The 138-bp simR-simX-region probe contains OR and OX; this is not either
+      short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in
+      20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C
+      for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200
+      nM. Fold changes are the authors'' gel-based binding comparisons, not fitted
+      Kd values or native transcription/production measurements. Y67A is strongly
+      impaired in the displayed lanes. No numerical fold reduction or fitted Kd is
+      inferred for Y67A.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S7; main results describe R18A, R19A and R22A comparisons.
+curation_history:
+- timestamp: '2026-10-04T08:38:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added source-checked SimR evidence for naturalproductmech:mibig-e03313fa44
+    from owner base 55a50439cce011731f550baf85b25aa2c47ac43e; DOI:10.1093/nar/gkr640,
+    native sequence and public depositions. Native/engineered identities and review
+    #536 limits retained; no changes to prior SimReg1 evidence.'
+  llm_assisted: true

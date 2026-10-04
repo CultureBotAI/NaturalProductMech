@@ -309,6 +309,367 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 23 edges</span></h2>
+<p class="sub">SimR DNA binding, engineered truncations and point mutants in producer-cluster regulation. Native Q9AMH9 is distinct from the 259-aa paper parent and tagged assay constructs; source residue numbering and assay boundaries are retained (review #536). This graph does not assert SimR catalysis or remeasure native export.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>has_native_sequence_parent</td>
+  <td>Native SimR / SimReg2 protein</td>
+  <td>The paper calls its parent 259 aa. Supplement S2 exactly matches native Q9AMH9 residues 3..261, omitting the native MW start; deposited protein is those 259 residues plus LEHHHHHH (267 aa). Paper positions map to UniProt with +2. Synthetic codon-optimized simR, pIJ10499, was expressed in E. coli and purified by nickel affinity. This edge does not assert native N-terminal processing, a corrected native annotation, or equivalence of tagged and native proteins.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640<br>https://www.ncbi.nlm.nih.gov/protein/AAK06798.1<br>https://www.uniprot.org/uniprotkb/Q9AMH9<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2<br>https://www.rcsb.org/structure/3ZQL</td>
+</tr>
+<tr>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>shifts_in_emsa</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>The 138-bp simR-simX-region probe contains OR and OX; this is not either short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in 20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200 nM. Fold changes are the authors&#39; gel-based binding comparisons, not fitted Kd values or native transcription/production measurements. The source assigns lower and upper shifted complexes to occupancy of one and both sites; the gel alone is not a determination of a physiological tetramer.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>protects_regions_from_dnase_i</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>Figure 8 uses 200 nM tagged WT as the full-footprint reference at both OR and OX. The readout is DNase I protection, not gene expression or a measured equilibrium constant.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Delta10 (paper numbering)</td>
+  <td>is_engineered_derivative_of</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>pIJ10500: NdeI/XhoI cloning into pET20b through sequence-verified pUC18 intermediates; source reports deletion of 10 N-terminal paper residues, retaining paper 11..259 (native Q9AMH9 13..261) and a C-terminal tag. Literal upstream primer translation includes an added initiator M before that retained segment (Delta10 begins MM). This is a primer-derived reading-frame model, not an experimentally determined mature N-terminus or a deposited complete plasmid sequence. The downstream primer is consistent with the ERPALA parent tail. Supplement S1 shows purified bands, not proof of identical folding or absolute purity.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640<br>DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Delta10 (paper numbering)</td>
+  <td>shows_reduced_emsa_binding_to</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>The 138-bp simR-simX-region probe contains OR and OX; this is not either short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in 20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200 nM. Fold changes are the authors&#39; gel-based binding comparisons, not fitted Kd values or native transcription/production measurements. Reported approximately 30-fold reduction relative to tagged WT. This is not complete loss of all binding, nor proof that only the deleted residues directly contact DNA; truncation can also alter arm positioning.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Delta10 (paper numbering)</td>
+  <td>produces_retracted_dnase_i_footprint_on</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>DNase I protection of the simR-simX-region probe, upper/lower strand separately labelled, 40 uL EMSA buffer, 22 C for 10 min, 10 U DNase I for 60 s; G+A ladder and no-protein controls. Compared with tagged WT, each truncation has the same reported retraction: OR upper strand 2 bp left and 1 bp right, OR lower unchanged; OX upper 1 bp left/right unchanged; OX lower 1 bp at each end. Boundaries are source figure orientations, not independent genomic-coordinate assignments. This derivative was assayed at 200 nM, versus 200 nM WT. The authors use saturating doses; differing doses must not be represented as equal-dose occupancy or as quantitative affinity measurements.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Delta15 (paper numbering)</td>
+  <td>is_engineered_derivative_of</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>pIJ10501: NdeI/XhoI cloning into pET20b through sequence-verified pUC18 intermediates; source reports deletion of 15 N-terminal paper residues, retaining paper 16..259 (native Q9AMH9 18..261) and a C-terminal tag. Literal upstream primer translation includes an added initiator M before that retained segment (Delta10 begins MM). This is a primer-derived reading-frame model, not an experimentally determined mature N-terminus or a deposited complete plasmid sequence. The downstream primer is consistent with the ERPALA parent tail. Supplement S1 shows purified bands, not proof of identical folding or absolute purity.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640<br>DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Delta15 (paper numbering)</td>
+  <td>shows_reduced_emsa_binding_to</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>The 138-bp simR-simX-region probe contains OR and OX; this is not either short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in 20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200 nM. Fold changes are the authors&#39; gel-based binding comparisons, not fitted Kd values or native transcription/production measurements. Reported approximately 30-fold reduction relative to tagged WT. This is not complete loss of all binding, nor proof that only the deleted residues directly contact DNA; truncation can also alter arm positioning.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Delta15 (paper numbering)</td>
+  <td>produces_retracted_dnase_i_footprint_on</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>DNase I protection of the simR-simX-region probe, upper/lower strand separately labelled, 40 uL EMSA buffer, 22 C for 10 min, 10 U DNase I for 60 s; G+A ladder and no-protein controls. Compared with tagged WT, each truncation has the same reported retraction: OR upper strand 2 bp left and 1 bp right, OR lower unchanged; OX upper 1 bp left/right unchanged; OX lower 1 bp at each end. Boundaries are source figure orientations, not independent genomic-coordinate assignments. This derivative was assayed at 200 nM, versus 200 nM WT. The authors use saturating doses; differing doses must not be represented as equal-dose occupancy or as quantitative affinity measurements.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Delta22 (paper numbering)</td>
+  <td>is_engineered_derivative_of</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>pIJ10502: NdeI/XhoI cloning into pET20b through sequence-verified pUC18 intermediates; source reports deletion of 22 N-terminal paper residues, retaining paper 23..259 (native Q9AMH9 25..261) and a C-terminal tag. Literal upstream primer translation includes an added initiator M before that retained segment (Delta10 begins MM). This is a primer-derived reading-frame model, not an experimentally determined mature N-terminus or a deposited complete plasmid sequence. The downstream primer is consistent with the ERPALA parent tail. Supplement S1 shows purified bands, not proof of identical folding or absolute purity.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640<br>DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Delta22 (paper numbering)</td>
+  <td>shows_reduced_emsa_binding_to</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>The 138-bp simR-simX-region probe contains OR and OX; this is not either short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in 20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200 nM. Fold changes are the authors&#39; gel-based binding comparisons, not fitted Kd values or native transcription/production measurements. Reported at least 120-fold reduction relative to tagged WT. This is not complete loss of all binding, nor proof that only the deleted residues directly contact DNA; truncation can also alter arm positioning.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Delta22 (paper numbering)</td>
+  <td>produces_retracted_dnase_i_footprint_on</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>DNase I protection of the simR-simX-region probe, upper/lower strand separately labelled, 40 uL EMSA buffer, 22 C for 10 min, 10 U DNase I for 60 s; G+A ladder and no-protein controls. Compared with tagged WT, each truncation has the same reported retraction: OR upper strand 2 bp left and 1 bp right, OR lower unchanged; OX upper 1 bp left/right unchanged; OX lower 1 bp at each end. Boundaries are source figure orientations, not independent genomic-coordinate assignments. This derivative was assayed at 400 nM, versus 200 nM WT. The authors use saturating doses; differing doses must not be represented as equal-dose occupancy or as quantitative affinity measurements.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Delta25 (paper numbering)</td>
+  <td>is_engineered_derivative_of</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>pIJ10503: NdeI/XhoI cloning into pET20b through sequence-verified pUC18 intermediates; source reports deletion of 25 N-terminal paper residues, retaining paper 26..259 (native Q9AMH9 28..261) and a C-terminal tag. Literal upstream primer translation includes an added initiator M before that retained segment (Delta10 begins MM). This is a primer-derived reading-frame model, not an experimentally determined mature N-terminus or a deposited complete plasmid sequence. The downstream primer is consistent with the ERPALA parent tail. Supplement S1 shows purified bands, not proof of identical folding or absolute purity.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640<br>DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Delta25 (paper numbering)</td>
+  <td>shows_reduced_emsa_binding_to</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>The 138-bp simR-simX-region probe contains OR and OX; this is not either short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in 20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200 nM. Fold changes are the authors&#39; gel-based binding comparisons, not fitted Kd values or native transcription/production measurements. Reported at least 120-fold reduction relative to tagged WT. This is not complete loss of all binding, nor proof that only the deleted residues directly contact DNA; truncation can also alter arm positioning.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Delta25 (paper numbering)</td>
+  <td>produces_retracted_dnase_i_footprint_on</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>DNase I protection of the simR-simX-region probe, upper/lower strand separately labelled, 40 uL EMSA buffer, 22 C for 10 min, 10 U DNase I for 60 s; G+A ladder and no-protein controls. Compared with tagged WT, each truncation has the same reported retraction: OR upper strand 2 bp left and 1 bp right, OR lower unchanged; OX upper 1 bp left/right unchanged; OX lower 1 bp at each end. Boundaries are source figure orientations, not independent genomic-coordinate assignments. This derivative was assayed at 400 nM, versus 200 nM WT. The authors use saturating doses; differing doses must not be represented as equal-dose occupancy or as quantitative affinity measurements.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR R18A (paper numbering)</td>
+  <td>is_engineered_derivative_of</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>Modified QuikChange substitution R18A in paper numbering corresponds to native Q9AMH9 R20A; all native residue identities were checked. Supplement S7 identifies the variant, but does not deposit its complete nucleotide sequence here. The Y67A HTH mutant is a control outside the N-terminal arm.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR R18A (paper numbering)</td>
+  <td>has_reported_emsa_binding_to</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>The 138-bp simR-simX-region probe contains OR and OX; this is not either short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in 20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200 nM. Fold changes are the authors&#39; gel-based binding comparisons, not fitted Kd values or native transcription/production measurements. R18A is approximately 15-fold reduced. This finding is limited to this construct, probe and assay; no universal residue dispensability is inferred.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR R19A (paper numbering)</td>
+  <td>is_engineered_derivative_of</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>Modified QuikChange substitution R19A in paper numbering corresponds to native Q9AMH9 R21A; all native residue identities were checked. Supplement S7 identifies the variant, but does not deposit its complete nucleotide sequence here. The Y67A HTH mutant is a control outside the N-terminal arm.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR R19A (paper numbering)</td>
+  <td>has_reported_emsa_binding_to</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>The 138-bp simR-simX-region probe contains OR and OX; this is not either short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in 20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200 nM. Fold changes are the authors&#39; gel-based binding comparisons, not fitted Kd values or native transcription/production measurements. R19A is similar to tagged WT. This finding is limited to this construct, probe and assay; no universal residue dispensability is inferred.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR R22A (paper numbering)</td>
+  <td>is_engineered_derivative_of</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>Modified QuikChange substitution R22A in paper numbering corresponds to native Q9AMH9 R24A; all native residue identities were checked. Supplement S7 identifies the variant, but does not deposit its complete nucleotide sequence here. The Y67A HTH mutant is a control outside the N-terminal arm.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR R22A (paper numbering)</td>
+  <td>has_reported_emsa_binding_to</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>The 138-bp simR-simX-region probe contains OR and OX; this is not either short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in 20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200 nM. Fold changes are the authors&#39; gel-based binding comparisons, not fitted Kd values or native transcription/production measurements. R22A is approximately 15-fold reduced. This finding is limited to this construct, probe and assay; no universal residue dispensability is inferred.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Y67A (paper numbering)</td>
+  <td>is_engineered_derivative_of</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>Modified QuikChange substitution Y67A in paper numbering corresponds to native Q9AMH9 Y69A; all native residue identities were checked. Supplement S7 identifies the variant, but does not deposit its complete nucleotide sequence here. The Y67A HTH mutant is a control outside the N-terminal arm.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>His-tagged SimR Y67A (paper numbering)</td>
+  <td>has_reported_emsa_binding_to</td>
+  <td>138-bp simR-simX-region probe with OR and OX</td>
+  <td>The 138-bp simR-simX-region probe contains OR and OX; this is not either short isolated operator or a whole gene. EMSA: 0.1 nM radiolabelled probe in 20 uL, 20 mM Tris pH 8, 1 ug calf-thymus DNA, 100 mM NaCl, 8% glycerol, 22 C for 10 min, 5% native PAGE. Plotted protein series 0/0.8/1.6/3.1/12.5/25/50/200 nM. Fold changes are the authors&#39; gel-based binding comparisons, not fitted Kd values or native transcription/production measurements. Y67A is strongly impaired in the displayed lanes. No numerical fold reduction or fitted Kd is inferred for Y67A.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 13 edges</span></h2>
+<p class="sub">DNA-length and sequence dependence of tagged SimR binding and trypsin protection. Distinct oligonucleotides, mixed proteolysis products and the S5B-versus-crystal sequence discrepancy remain explicit (review #536); no universal no-binding or native protein-processing claim.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>has_native_sequence_parent</td>
+  <td>Native SimR / SimReg2 protein</td>
+  <td>The paper calls its parent 259 aa. Supplement S2 exactly matches native Q9AMH9 residues 3..261, omitting the native MW start; deposited protein is those 259 residues plus LEHHHHHH (267 aa). Paper positions map to UniProt with +2. Synthetic codon-optimized simR, pIJ10499, was expressed in E. coli and purified by nickel affinity. This edge does not assert native N-terminal processing, a corrected native annotation, or equivalence of tagged and native proteins.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640<br>https://www.ncbi.nlm.nih.gov/protein/AAK06798.1<br>https://www.uniprot.org/uniprotkb/Q9AMH9<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2<br>https://www.rcsb.org/structure/3ZQL</td>
+</tr>
+<tr>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>yields_tryptic_products</td>
+  <td>Co-migrating tryptic SimR fragments</td>
+  <td>Trypsin assay: 1 nmol tagged SimR with 1 pmol bovine trypsin in 100 uL, 50 mM Tris pH 8, 20 mM CaCl2, 150 mM NaCl at 4 C. DNA preincubation is equimolar for 5 min; SDS-PAGE samples at 0/5/10/15 min. Band persistence is not a measured protease-rate constant or an in vivo half-life. Without operator DNA, the dominant band contains two Edman-identified species: paper Ser23 start (4 pmol) and Ser20 start (2-3 pmol), mapping to native Ser25 and Ser22. Supplement S4 also shows 30/60-min lanes. Do not represent this as one homogeneous product or physiological proteolytic activation.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>no_shift_detected_in_emsa</td>
+  <td>Wild-type OX-region 15-bp duplex</td>
+  <td>Supplement S5 uses radiolabelled duplex and 8% native PAGE, not the 5% gel for the 138-bp probe. Displayed SimR series is 0/1.5/3.1/6.2/12.5/25/50 nM. No binding detected for the displayed 15mer through 50 nM. This is a bounded negative result, not absence at every concentration or for every 15-bp sequence.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>shifts_in_emsa</td>
+  <td>Wild-type OX-region 17-bp duplex</td>
+  <td>Supplement S5 uses radiolabelled duplex and 8% native PAGE, not the 5% gel for the 138-bp probe. Displayed SimR series is 0/1.5/3.1/6.2/12.5/25/50 nM. The native OX core sequence is TTCGTACGGTGTATGAA, matching AF324838.2 58132..58148(+). This is not the mutated crystallization duplex.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2</td>
+</tr>
+<tr>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>shows_stronger_emsa_binding_to</td>
+  <td>Wild-type OX-region 23-bp duplex</td>
+  <td>Supplement S5 uses radiolabelled duplex and 8% native PAGE, not the 5% gel for the 138-bp probe. Displayed SimR series is 0/1.5/3.1/6.2/12.5/25/50 nM. Relative to the nested 17mer, the 23mer gives stronger binding in this comparison. Do not assign a fitted Kd or a numerical fold change from the picture.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>Wild-type OX-region 15-bp duplex</td>
+  <td>does_not_detectably_protect_from_trypsin</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>Trypsin assay: 1 nmol tagged SimR with 1 pmol bovine trypsin in 100 uL, 50 mM Tris pH 8, 20 mM CaCl2, 150 mM NaCl at 4 C. DNA preincubation is equimolar for 5 min; SDS-PAGE samples at 0/5/10/15 min. Band persistence is not a measured protease-rate constant or an in vivo half-life. Figure 3 compares the 15mer condition with no-DNA protein and longer DNA conditions. Lack of protection is not itself an independent thermodynamic binding assay.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>Wild-type OX-region 17-bp duplex</td>
+  <td>protects_less_well_from_trypsin</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>Trypsin assay: 1 nmol tagged SimR with 1 pmol bovine trypsin in 100 uL, 50 mM Tris pH 8, 20 mM CaCl2, 150 mM NaCl at 4 C. DNA preincubation is equimolar for 5 min; SDS-PAGE samples at 0/5/10/15 min. Band persistence is not a measured protease-rate constant or an in vivo half-life. Supplement S8 compares the binding 17mer with the 23mer. Its caption says the 17mer does not protect as well, while the main text uses stronger wording. Retain the observed comparison, not an absolute claim of zero protection.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>shifts_in_emsa</td>
+  <td>Supplement S5B left-repeat 17-bp duplex</td>
+  <td>Supplement S5 uses radiolabelled duplex and 8% native PAGE, not the 5% gel for the 138-bp probe. Displayed SimR series is 0/1.5/3.1/6.2/12.5/25/50 nM. S5B prints TTCGTACGGTGTACGAA, changing native position 14 T to C. Binding is shown for this sequence; its label is not proof that it is identical to the crystallized DNA.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>no_shift_detected_in_emsa</td>
+  <td>Supplement S5B right-repeat 17-bp duplex</td>
+  <td>Supplement S5 uses radiolabelled duplex and 8% native PAGE, not the 5% gel for the 138-bp probe. Displayed SimR series is 0/1.5/3.1/6.2/12.5/25/50 nM. S5B prints TTCATACGGTGTATGAA (native position 4 G to A); no evident shifted band is displayed through 50 nM. Do not generalize this to all symmetric repeats.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>Supplement S5B left-repeat 17-bp duplex</td>
+  <td>differs_in_sequence_from</td>
+  <td>Deposited 3ZQL engineered 17-bp duplex</td>
+  <td>Deposited 3ZQL/main-text TTCGTACGGCGTACGAA has native positions 10 and 14 changed T to C. S5B left-repeat TTCGTACGGTGTACGAA has only position 14 changed; the sequences differ at position 10. The main text cites S5B for the crystal oligo&#39;s affinity, but the literal panel does not establish that comparison for the exact deposited sequence. This is an evidence-identity comparison, not a biochemical causal edge or a source correction.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640<br>https://www.rcsb.org/structure/3ZQL</td>
+</tr>
+<tr>
+  <td>Wild-type OX-region 23-bp duplex</td>
+  <td>slows_observed_tryptic_digestion_of</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>Trypsin assay: 1 nmol tagged SimR with 1 pmol bovine trypsin in 100 uL, 50 mM Tris pH 8, 20 mM CaCl2, 150 mM NaCl at 4 C. DNA preincubation is equimolar for 5 min; SDS-PAGE samples at 0/5/10/15 min. Band persistence is not a measured protease-rate constant or an in vivo half-life. The 23mer retains more full-length band than its relevant shorter/no-DNA comparison. This supports protection in the reconstituted assay, not absolute protease resistance or independent measurement of a disorder-to-order transition.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>Wild-type OX-region 25-bp duplex</td>
+  <td>slows_observed_tryptic_digestion_of</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>Trypsin assay: 1 nmol tagged SimR with 1 pmol bovine trypsin in 100 uL, 50 mM Tris pH 8, 20 mM CaCl2, 150 mM NaCl at 4 C. DNA preincubation is equimolar for 5 min; SDS-PAGE samples at 0/5/10/15 min. Band persistence is not a measured protease-rate constant or an in vivo half-life. The 25mer retains more full-length band than its relevant shorter/no-DNA comparison. This supports protection in the reconstituted assay, not absolute protease resistance or independent measurement of a disorder-to-order transition.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>Wild-type OX-region 31-bp duplex</td>
+  <td>slows_observed_tryptic_digestion_of</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>Trypsin assay: 1 nmol tagged SimR with 1 pmol bovine trypsin in 100 uL, 50 mM Tris pH 8, 20 mM CaCl2, 150 mM NaCl at 4 C. DNA preincubation is equimolar for 5 min; SDS-PAGE samples at 0/5/10/15 min. Band persistence is not a measured protease-rate constant or an in vivo half-life. The 31mer retains more full-length band than its relevant shorter/no-DNA comparison. This supports protection in the reconstituted assay, not absolute protease resistance or independent measurement of a disorder-to-order transition.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">10 nodes, 13 edges</span></h2>
+<p class="sub">SimR operator contacts and static DNA/ligand/apo structure comparisons in producer-cluster regulation. Crystal packing, paper-to-native residue offsets and unresolved owner stereochemistry constrain interpretation (review #536). This is not a drug-target graph or an observed kinetic transition pathway.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>has_native_sequence_parent</td>
+  <td>Native SimR / SimReg2 protein</td>
+  <td>The paper calls its parent 259 aa. Supplement S2 exactly matches native Q9AMH9 residues 3..261, omitting the native MW start; deposited protein is those 259 residues plus LEHHHHHH (267 aa). Paper positions map to UniProt with +2. Synthetic codon-optimized simR, pIJ10499, was expressed in E. coli and purified by nickel affinity. This edge does not assert native N-terminal processing, a corrected native annotation, or equivalence of tagged and native proteins.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640<br>https://www.ncbi.nlm.nih.gov/protein/AAK06798.1<br>https://www.uniprot.org/uniprotkb/Q9AMH9<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2<br>https://www.rcsb.org/structure/3ZQL</td>
+</tr>
+<tr>
+  <td>3ZQL tagged SimR dimer-DNA structural complex</td>
+  <td>contains_protein_construct</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>3ZQL is a 2.99-A crystal structure. Its asymmetric unit contains two dimer-DNA complexes, not an established physiological tetramer. Modeled paper-numbered ranges are A7..241, C7..242, and B/D7..15 plus 26..242; missing residues must not be treated as resolved atoms merely because the entity sequence includes them.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640<br>https://www.rcsb.org/structure/3ZQL</td>
+</tr>
+<tr>
+  <td>3ZQL tagged SimR dimer-DNA structural complex</td>
+  <td>contains_engineered_duplex</td>
+  <td>3ZQL engineered OX 17-bp duplex</td>
+  <td>Deposited strands TTCGTACGGCGTACGAA and TTCGTACGCCGTACGAA are reverse complements. The former differs from native OX at positions 10/14 and from S5B left-repeat at position 10. This structure demonstrates the deposited complex, not an affinity measurement for the S5B oligo or a native unmodified operator structure.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640<br>https://www.rcsb.org/structure/3ZQL</td>
+</tr>
+<tr>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>contains_n_terminal_region</td>
+  <td>TFR arm of the assayed SimR construct</td>
+  <td>The paper defines a 28-aa TFR arm (native Q9AMH9 residues 3..30), including paper R18/R19/R22/R25 (native R20/R21/R24/R27). Paper residues 8..10 are a proposed anchor; the Figure 4 caption instead labels 8..11. Do not silently turn either annotation into an independently isolated protein.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>contains_dna_recognition_region</td>
+  <td>HTH region of the assayed SimR construct</td>
+  <td>Paper alpha2 49..58 and alpha3 61..67 form the HTH within core DBD29..67; add 2 for native Q9AMH9 numbering. Domains are regions of the engineered protein, not distinct UniProt proteins or separate gene products.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>HTH region of the assayed SimR construct</td>
+  <td>makes_structural_major_groove_contacts_with</td>
+  <td>3ZQL engineered OX 17-bp duplex</td>
+  <td>Paper M62 and Y66 contribute base contacts; R51 recognizes G11. Reported backbone contacts include S49/M50/G60/S63/Y65/Y67 and K71 just outside the core HTH. Native positions are all +2. Figure 5 distinguishes base versus phosphate contacts; not every contact is independently tested by a mutant or quantified energetically. Alpha3 is described as 3_10-helical in this DNA complex rather than the alpha-helical ligand/apo models.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>TFR arm of the assayed SimR construct</td>
+  <td>contacts_minor_groove_of_crystal_neighbor</td>
+  <td>Symmetry-related neighboring crystal DNA duplex</td>
+  <td>The ordered arm contacts the adjacent symmetry-related duplex, not the same 17mer bound by its own HTH. Paper R18 (native R20) contacts C3/T2 and R22 (native R24) the C3/G4 phosphates. Paper R19 (native R21) makes no DNA contact in this model; that is not universal dispensability. The other arm is disordered in this dimer. No cooperative adjacent-native-operator binding is inferred from the crystal neighbor.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>3ZQL engineered OX 17-bp duplex</td>
+  <td>stacks_with_in_crystal</td>
+  <td>Symmetry-related neighboring crystal DNA duplex</td>
+  <td>Duplex ends form a pseudo-continuous filament through the crystal. Unequal end stacking gives different minor-groove geometries. Curves+ reports about 15-degree bending for the modeled DNA; this is not native DNA bending measured in solution or proof that the crystallographic neighbor is a second genomic operator.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>2Y30 tagged SimR-SD8 structural complex</td>
+  <td>contains_protein_construct</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>2Y30 is a 2.30-A SD8-bound deposition with the same native3..261-plus-LEHHHHHH protein sequence as 3ZQL. This public coordinate/sequence record and the NAR comparison were inspected; full text of the separate JMB ligand paper was not available here, so no uninspected ligand-assay detail is imported.</td>
+  <td class="mono">https://www.rcsb.org/structure/2Y30<br>DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>2Y30 tagged SimR-SD8 structural complex</td>
+  <td>contains_deposited_ligand</td>
+  <td>Source-assigned SD8 ligand, CCD SM8</td>
+  <td>2Y30 names simocyclinone D8 as CCD SM8. SM8 has fully specified InChIKey PLEGMCYXNQPJNV-VHSVXIAXSA-N, whereas this owner retains incomplete PLEGMCYXNQPJNV-TYXWGSLYSA-N. Connectivity and already assigned centers agree, but six owner stereocentres remain unspecified. The ligand node is not grounded as exact identity to the owner and does not replace its structure or resolve the shared-MIBiG discussion. It is not C4 in 2Y31.</td>
+  <td class="mono">https://www.rcsb.org/structure/2Y30<br>https://www.rcsb.org/ligand/SM8<br>https://mibig.secondarymetabolites.org/repository/BGC0001072/</td>
+</tr>
+<tr>
+  <td>2Y2Z tagged apo SimR structural state</td>
+  <td>contains_protein_construct</td>
+  <td>Assayed codon-optimized C-terminally tagged SimR</td>
+  <td>2Y2Z is the 1.95-A apo deposition with native3..261-plus-LEHHHHHH sequence. An ordered TFR arm in this crystal is stabilized by symmetry-related arms (Supplement S3); this does not prove that the arm is rigid in solution.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640<br>https://www.rcsb.org/structure/2Y2Z</td>
+</tr>
+<tr>
+  <td>2Y30 tagged SimR-SD8 structural complex</td>
+  <td>has_static_conformational_difference_from</td>
+  <td>3ZQL tagged SimR dimer-DNA structural complex</td>
+  <td>NAR Figure 9/S11/S12 compare static models: about 16-degree relative subunit rotation; recognition-helix separation 41.7 A for SD8 versus 36.8 A for DNA, assessed at paper Tyr65 (native Tyr67) C-alpha atoms and averaged for the DNA complexes. This is not a measured binding trajectory, rotation rate or direct kinetic proof of ligand-induced derepression. Cores largely superpose; the paper distinguishes wrapping-arm/alpha8 movement from whole DBD pendulum motion.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+<tr>
+  <td>2Y2Z tagged apo SimR structural state</td>
+  <td>has_static_conformational_difference_from</td>
+  <td>3ZQL tagged SimR dimer-DNA structural complex</td>
+  <td>The reported recognition-helix spacing is 42.3 A for the apo crystal versus 36.8 A for DNA. The discussion explicitly allows flexible apo protein to sample DNA-compatible states. Do not infer that apo SimR cannot bind DNA under any conditions or that the crystallographic conformation is the only solution state.</td>
+  <td class="mono">DOI:10.1093/nar/gkr640</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
