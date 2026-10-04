@@ -674,6 +674,9 @@ causal_graphs:
     - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
       evidence_type: PRIMARY_EXPERIMENT
       notes: Results 3.3.4, PDF p.88.
+causal_graph_refs:
+- cathomycin-novl-coul-chimera-constructs-and-preparations
+- cathomycin-novl-coul-chimera-substrate-panel-and-limits
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -689,4 +692,12 @@ curation_history:
   changes: 'Add two cited NovL graphs: exact native Q9L9F6 identity, historical strain
     correction, bounded precursor ligation, distinct engineered preparations and unsolved-crystal
     limits; preserve owner stereochemistry, source metadata and SEEDED status (#550).'
+  llm_assisted: true
+- timestamp: '2026-10-04T17:07:55Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add two exact-owner components for ten NovL/CouL chimeras, their preparation
+    evidence and six-column substrate panel; preserve native-versus-engineered identity,
+    parent ambiguity, loading/normalization limits, earlier graphs and SEEDED status
+    (#551).
   llm_assisted: true
