@@ -1,0 +1,255 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novhi-2011-novh-construct-and-host-preparations
+  scope: BIOSYNTHESIS
+  description: 'NovH sequence-version limits, literal primers and the two 2011 host-conditioned
+    preparations. Review #561. The cathomycin/BGC0000834 owner retains its unspecified
+    sugar stereocentre and SEEDED status; these precursor assays do not establish
+    an exact-structure merge with fully specified novobiocin. Boll page locators are
+    PDF pages, five above printed pages. Native references, DNA constructs and engineered
+    preparations are distinct.'
+  nodes:
+  - node_id: native
+    label: Current deposited native NovH reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9G0
+  - node_id: old
+    label: Historical NovH sequence named by the 2011 study
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AAF67501.1
+  - node_id: alignment
+    label: Selected printed NovH alignment window
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: construct
+    label: pBB44 pET28a NovH expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: primers
+    label: Literal 2011 NovH primer model
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: delta_host
+    label: BL21(DE3) ybdZ-deletion expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: intact_host
+    label: BL21(DE3) intact-ybdZ expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: sfp
+    label: B. subtilis Sfp supplied by pSU20_sfp
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: delta
+    label: pBB44 His6-NovH preparation from deletion host
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: intact
+    label: pBB44 His6-NovH preparation from intact-ybdZ host
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: purification
+    label: Ni-NTA and preparative Superdex purification
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: yields
+    label: NovH preparation yields and concentration method
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: gel
+    label: Figure S2 NovH SDS-PAGE readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native
+    predicate: has_historical_reference_version
+    object: old
+    notes: Current 600-aa Q9L9G0/AAF67501.2 differs at four residues from the AAF67501.1
+      version. Both are sequence references, not identities for the His6 fusion.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current translation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical translation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent version comparison.
+  - subject: old
+    predicate: matches_selected_window_in
+    object: alignment
+    notes: Figure S1 NovH residues 261..280 read GRVSHAVLRPRRSATMSPDA, matching the
+      historical sequence rather than current GRVSHAVLPPAAVATMSPDA. Met383 is retained
+      in both. This is a checked 20-residue window, not a claim to have transcribed
+      the entire 600-aa printed alignment or sequenced pBB44.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Figure S1, PDF p.108.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent selected-window comparison.
+  - subject: old
+    predicate: is_sequence_reference_for
+    object: construct
+    notes: The study names NovH accession AAF67501, amplifies novH from a cluster-containing
+      cosmid and clones via NdeI/XhoI into pET28a as pBB44. Entire-gene sequencing
+      is reported, but its complete experimental plasmid sequence was not independently
+      obtained.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Cloning/results, PDF pp.91-92,96.
+  - subject: construct
+    predicate: has_checked_primer_model
+    object: primers
+    notes: Literal forward GGGAATTCCATATGTTCAACACACGTGCGAAC and reverse GCCCTCGAGTCACTCCTCCAGGGTCGCTA
+      give a modeled 1823-nt PCR product including 11-nt and 9-nt tails around the
+      1803-nt CDS. They recode the native TTG start to ATG and CDS nucleotide 1794
+      from C to G (Leu598 CTC to CTG). Table-11 translation preserves each version-specific
+      600-aa core; no missense mutation, complete vector-derived tag or scar is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Literal primer sequences, PDF p.91.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent primer reconstruction in AF170880.2/.3/.4.
+  - subject: construct
+    predicate: encodes_engineered_preparation
+    object: delta
+    notes: The pET28a construct supplies N-terminal His6-NovH. Unlike the MbtH partners,
+      the adenylating enzymes retain their tags. This sample is not native Q9L9G0.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Cloning and purification, PDF pp.92,94.
+  - subject: construct
+    predicate: encodes_engineered_preparation
+    object: intact
+    notes: The same reported construct was expressed in the intact-ybdZ host. Shared
+      construct design does not make this preparation compositionally identical to
+      protein purified from the deletion host.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. PDF pp.92,94-98.
+  - subject: delta_host
+    predicate: expressed
+    object: delta
+    notes: The ybdZ::acc(3)IV host was made by Red/ET recombination with an apramycin
+      cassette and PCR-confirmed genotype. Expression used 35 mL LB inoculum into
+      1 L TB, 50 ug/mL kanamycin and 25 ug/mL chloramphenicol, growth at 37 C to OD600
+      0.6, then 0.4 mM IPTG for 14 h at 20 C. These are protein-production conditions,
+      not a native antibiotic-production intervention.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Host construction and protein expression, PDF pp.93-94.
+  - subject: intact_host
+    predicate: expressed
+    object: intact
+    notes: NovH was also purified from the unmodified BL21(DE3) host using the reported
+      expression workflow; endogenous YbdZ availability is a preparation variable,
+      not evidence of its stoichiometric presence in the eluate.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. PDF pp.92-95,98.
+  - subject: sfp
+    predicate: was_coexpressed_for_holoenzyme_preparation
+    object: delta
+    notes: Both host backgrounds carry pSU20_sfp encoding B. subtilis Sfp phosphopantetheinyl
+      transferase. The stated purpose is holoenzyme expression; no site-occupancy
+      percentage or exact assayed Sfp accession is supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. PDF p.92.
+  - subject: sfp
+    predicate: was_coexpressed_for_holoenzyme_preparation
+    object: intact
+    notes: Sfp coexpression also applies to the intact-ybdZ preparation. It is not
+      an endogenous novobiocin-cluster protein or a measured mature-product assay.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. PDF p.92.
+  - subject: delta
+    predicate: was_isolated_by
+    object: purification
+    notes: Ni-NTA purification was followed by HiLoad 26/60 Superdex 200 in 20 mM
+      Tris-HCl pH 8, 150 mM NaCl and 2 mM DTT. Protein was concentrated with a 10,000-MWCO
+      filter and stored at -80 C; the His6 tag was retained.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Purification methods, PDF p.94.
+  - subject: intact
+    predicate: was_isolated_by
+    object: purification
+    notes: The same stated purification workflow applies to the intact-host NovH preparation;
+      it does not independently exclude copurifying proteins.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. PDF pp.94,98.
+  - subject: purification
+    predicate: gave_reported_yields
+    object: yields
+    notes: NovH yield was 38.6 mg/L culture from the deletion host and 64 mg/L from
+      the intact-ybdZ host. Concentration was estimated at A280 using calculated extinction
+      coefficients. These are not active-protein fractions, enzyme specific activities
+      or natural-product titers.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. PDF p.94.
+  - subject: delta
+    predicate: has_displayed_gel_readout
+    object: gel
+    notes: Figure S2 shows NovH purified from the deletion host, stained with Coomassie
+      Brilliant Blue R-250; its caption gives 65.7 kDa as the calculated tagged mass.
+      A gel band does not establish a native oligomer or a measured purity percentage.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Results and Figure S2, PDF pp.96,109.
+curation_history:
+- timestamp: '2026-10-04T22:55:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novhi-2011-novh-construct-and-host-preparations with source-checked
+    NovH/NovI evidence and #561 boundaries.'
+  llm_assisted: true

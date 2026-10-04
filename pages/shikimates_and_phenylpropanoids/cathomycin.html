@@ -2592,6 +2592,499 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">19 nodes, 22 edges</span></h2>
+<p class="sub">NovH/NovI deposited identities and bounded 2001 activation, loading and hydroxylation evidence. Review #561. The cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre and SEEDED status; these precursor assays do not establish an exact-structure merge with fully specified novobiocin. Boll page locators are PDF pages, five above printed pages. Native references, DNA constructs and engineered preparations are distinct.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited novobiocin cluster underlying the cathomycin owner</td>
+  <td>contains</td>
+  <td>Deposited novH locus</td>
+  <td>BGC0000834.5 is the owner-linked locus. Current novH is 7934..9736(+), 1803 nt including stop; cluster membership does not determine the owner sugar stereochemistry.</td>
+  <td class="mono">https://mibig.secondarymetabolites.org/go/BGC0000834.5<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novobiocin cluster underlying the cathomycin owner</td>
+  <td>contains</td>
+  <td>Deposited novI locus</td>
+  <td>Current novI is 9740..10963(+), 1224 nt including stop, in the same deposited locus.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novH locus</td>
+  <td>encodes_native_reference</td>
+  <td>Current deposited native NovH sequence</td>
+  <td>CDS-aware table-11 translation, including the alternative TTG initiation codon, matches all 600 residues of AAF67501.2 and reviewed Q9L9G0. GenBank identifies S. niveus NCIMB 9219; UniProt uses S. niveus/common S. spheroides, taxon 193462.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.uniprot.org/uniprotkb/Q9L9G0<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novH locus</td>
+  <td>has_earlier_deposited_translation</td>
+  <td>Historical deposited NovH sequence</td>
+  <td>AF170880.2 and .3 encode 600-aa AAF67501.1 at 7882..9684(+). Relative to that version, current NovH has R269P, R271A, R272A and S273V. These are deposit revisions, not independently demonstrated biological alleles.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novI locus</td>
+  <td>encodes_native_reference</td>
+  <td>Deposited native NovI cytochrome P450 sequence</td>
+  <td>All 407 residues of AAF67502.1 in AF170880.2/.3/.4 match reviewed Q9L9F9 exactly. The earlier CDS coordinates are 9688..10911(+); .4 shifts them by 52 nt without changing this protein. This is native reference identity, not a tagged sample sequence.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3<br>https://www.uniprot.org/uniprotkb/Q9L9F9<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Historical deposited NovH sequence</td>
+  <td>constrains_experimental_identity</td>
+  <td>Historical strain and experimental sequence limits</td>
+  <td>Both UniProt entries retain reference strain comments including NCIMB 11891/DSM 40292, whereas the current locus identifies NCIMB 9219. The primary strain correction distinguishes those strains. Neither current sequence nor historical source labels retrospectively sequence the complete 2001 or 2011 preparations.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9G0<br>https://www.uniprot.org/uniprotkb/Q9L9F9<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>DOI:10.1128/genomeA.01146-13<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novH locus</td>
+  <td>is_reported_source_of</td>
+  <td>Chen 2001 recombinant NovH preparation</td>
+  <td>The primary abstract reports E. coli expression, purification and characterization of approximately 65-kDa NovH with predicted A and PCP domains. It does not supply a complete construct or detailed preparation protocol in the inspected text.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+<tr>
+  <td>Deposited novI locus</td>
+  <td>is_reported_source_of</td>
+  <td>Chen 2001 recombinant NovI preparation</td>
+  <td>The same abstract reports recombinant approximately 45-kDa NovI as a heme protein functioning as a P450-type monooxygenase. The native accession is not assigned to this incompletely specified preparation.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+<tr>
+  <td>Historical strain and experimental sequence limits</td>
+  <td>limits_accession_assignment_to</td>
+  <td>Chen 2001 recombinant NovH preparation</td>
+  <td>Keep the 2001 NovH preparation separate from both native sequence versions and from the later pBB44 His6 preparation. Do not transfer the 2011 host, tag or buffers.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Historical strain and experimental sequence limits</td>
+  <td>limits_accession_assignment_to</td>
+  <td>Chen 2001 recombinant NovI preparation</td>
+  <td>Do not infer a particular tag, reductase partner or full construct from the abstract or the matching native NovI reference.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Chen 2001 recombinant NovH preparation</td>
+  <td>catalyzes</td>
+  <td>Abstract-reported NovH tyrosine adenylation</td>
+  <td>Purified NovH catalyzes L-tyrosyl-AMP formation through its adenylation domain. No detailed kinetic condition or negative substrate panel is extracted from the abstract.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+<tr>
+  <td>L-Tyrosine supplied for NovH activation</td>
+  <td>is_substrate_for</td>
+  <td>Abstract-reported NovH tyrosine adenylation</td>
+  <td>L-Tyrosine is the named activation substrate, not free beta-hydroxytyrosine.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+<tr>
+  <td>Abstract-reported NovH tyrosine adenylation</td>
+  <td>forms</td>
+  <td>L-Tyrosyl-AMP intermediate</td>
+  <td>The reported activated intermediate is L-tyrosyl-AMP. This precursor activation does not establish mature antibiotic formation.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+<tr>
+  <td>Chen 2001 recombinant NovH preparation</td>
+  <td>can_be_phosphopantetheinylated_to</td>
+  <td>Phosphopantetheinylated NovH PCP state</td>
+  <td>The abstract reports posttranslational phosphopantetheinylation on the PCP domain. The modifying enzyme and conditions are not supplied here; the later Sfp coexpression protocol is not silently substituted.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+<tr>
+  <td>Phosphopantetheinylated NovH PCP state</td>
+  <td>accumulates_covalently_loaded_state</td>
+  <td>Covalently loaded L-tyrosyl-S-NovH</td>
+  <td>The reported L-tyrosyl-S-enzyme intermediate is covalently attached to the holo PCP domain. It is not a free tyrosine product or an assembly stoichiometry measurement.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+<tr>
+  <td>L-Tyrosyl-AMP intermediate</td>
+  <td>is_activation_intermediate_for</td>
+  <td>Covalently loaded L-tyrosyl-S-NovH</td>
+  <td>The abstract connects NovH adenylation with accumulation of the covalently loaded holo-PCP intermediate; no additional rate or independently resolved coupling stoichiometry is asserted.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+<tr>
+  <td>Chen 2001 recombinant NovI preparation</td>
+  <td>catalyzes</td>
+  <td>NovI-catalyzed tethered-tyrosine hydroxylation</td>
+  <td>NovI acts as the reported P450 monooxygenase on the NovH-tethered tyrosyl acyl enzyme.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+<tr>
+  <td>Covalently loaded L-tyrosyl-S-NovH</td>
+  <td>is_substrate_for</td>
+  <td>NovI-catalyzed tethered-tyrosine hydroxylation</td>
+  <td>The abstract specifies tyrosyl-S-NovH as the substrate. This statement is not expanded into an uninspected quantitative free-amino-acid rejection panel.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+<tr>
+  <td>NovI-catalyzed tethered-tyrosine hydroxylation</td>
+  <td>forms</td>
+  <td>Beta-hydroxytyrosyl-S-NovH</td>
+  <td>The reported product remains attached to NovH as beta-hydroxytyrosyl-S-NovH.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+<tr>
+  <td>Beta-hydroxytyrosyl-S-NovH</td>
+  <td>was_examined_by</td>
+  <td>Alkaline release and product analysis</td>
+  <td>Alkaline release, HPLC analysis of radioactive [3H]beta-hydroxytyrosine and mass spectrometry support the abstract-reported product assignment.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+<tr>
+  <td>Alkaline release and product analysis</td>
+  <td>supports_stereochemical_assignment_of</td>
+  <td>Released (3R,2S)-3-hydroxytyrosine</td>
+  <td>Comparison with authentic standards assigns the released amino acid as (3R,2S)-3-hydroxytyrosine. This assignment concerns the released precursor, not the owner sugar stereocentre.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+<tr>
+  <td>Alkaline release and product analysis</td>
+  <td>also_detected</td>
+  <td>Detected 4-hydroxybenzaldehyde breakdown product</td>
+  <td>The abstract reports 4-hydroxybenzaldehyde as a retro-aldol breakdown product of beta-hydroxytyrosine, not a second direct NovI-catalyzed product.</td>
+  <td class="mono">DOI:10.1016/S1074-5521(01)00009-6</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 14 edges</span></h2>
+<p class="sub">NovH sequence-version limits, literal primers and the two 2011 host-conditioned preparations. Review #561. The cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre and SEEDED status; these precursor assays do not establish an exact-structure merge with fully specified novobiocin. Boll page locators are PDF pages, five above printed pages. Native references, DNA constructs and engineered preparations are distinct.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Current deposited native NovH reference</td>
+  <td>has_historical_reference_version</td>
+  <td>Historical NovH sequence named by the 2011 study</td>
+  <td>Current 600-aa Q9L9G0/AAF67501.2 differs at four residues from the AAF67501.1 version. Both are sequence references, not identities for the His6 fusion.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Historical NovH sequence named by the 2011 study</td>
+  <td>matches_selected_window_in</td>
+  <td>Selected printed NovH alignment window</td>
+  <td>Figure S1 NovH residues 261..280 read GRVSHAVLRPRRSATMSPDA, matching the historical sequence rather than current GRVSHAVLPPAAVATMSPDA. Met383 is retained in both. This is a checked 20-residue window, not a claim to have transcribed the entire 600-aa printed alignment or sequenced pBB44.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2</td>
+</tr>
+<tr>
+  <td>Historical NovH sequence named by the 2011 study</td>
+  <td>is_sequence_reference_for</td>
+  <td>pBB44 pET28a NovH expression construct</td>
+  <td>The study names NovH accession AAF67501, amplifies novH from a cluster-containing cosmid and clones via NdeI/XhoI into pET28a as pBB44. Entire-gene sequencing is reported, but its complete experimental plasmid sequence was not independently obtained.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB44 pET28a NovH expression construct</td>
+  <td>has_checked_primer_model</td>
+  <td>Literal 2011 NovH primer model</td>
+  <td>Literal forward GGGAATTCCATATGTTCAACACACGTGCGAAC and reverse GCCCTCGAGTCACTCCTCCAGGGTCGCTA give a modeled 1823-nt PCR product including 11-nt and 9-nt tails around the 1803-nt CDS. They recode the native TTG start to ATG and CDS nucleotide 1794 from C to G (Leu598 CTC to CTG). Table-11 translation preserves each version-specific 600-aa core; no missense mutation, complete vector-derived tag or scar is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>pBB44 pET28a NovH expression construct</td>
+  <td>encodes_engineered_preparation</td>
+  <td>pBB44 His6-NovH preparation from deletion host</td>
+  <td>The pET28a construct supplies N-terminal His6-NovH. Unlike the MbtH partners, the adenylating enzymes retain their tags. This sample is not native Q9L9G0.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB44 pET28a NovH expression construct</td>
+  <td>encodes_engineered_preparation</td>
+  <td>pBB44 His6-NovH preparation from intact-ybdZ host</td>
+  <td>The same reported construct was expressed in the intact-ybdZ host. Shared construct design does not make this preparation compositionally identical to protein purified from the deletion host.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>BL21(DE3) ybdZ-deletion expression host</td>
+  <td>expressed</td>
+  <td>pBB44 His6-NovH preparation from deletion host</td>
+  <td>The ybdZ::acc(3)IV host was made by Red/ET recombination with an apramycin cassette and PCR-confirmed genotype. Expression used 35 mL LB inoculum into 1 L TB, 50 ug/mL kanamycin and 25 ug/mL chloramphenicol, growth at 37 C to OD600 0.6, then 0.4 mM IPTG for 14 h at 20 C. These are protein-production conditions, not a native antibiotic-production intervention.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>BL21(DE3) intact-ybdZ expression host</td>
+  <td>expressed</td>
+  <td>pBB44 His6-NovH preparation from intact-ybdZ host</td>
+  <td>NovH was also purified from the unmodified BL21(DE3) host using the reported expression workflow; endogenous YbdZ availability is a preparation variable, not evidence of its stoichiometric presence in the eluate.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>B. subtilis Sfp supplied by pSU20_sfp</td>
+  <td>was_coexpressed_for_holoenzyme_preparation</td>
+  <td>pBB44 His6-NovH preparation from deletion host</td>
+  <td>Both host backgrounds carry pSU20_sfp encoding B. subtilis Sfp phosphopantetheinyl transferase. The stated purpose is holoenzyme expression; no site-occupancy percentage or exact assayed Sfp accession is supplied.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>B. subtilis Sfp supplied by pSU20_sfp</td>
+  <td>was_coexpressed_for_holoenzyme_preparation</td>
+  <td>pBB44 His6-NovH preparation from intact-ybdZ host</td>
+  <td>Sfp coexpression also applies to the intact-ybdZ preparation. It is not an endogenous novobiocin-cluster protein or a measured mature-product assay.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB44 His6-NovH preparation from deletion host</td>
+  <td>was_isolated_by</td>
+  <td>Ni-NTA and preparative Superdex purification</td>
+  <td>Ni-NTA purification was followed by HiLoad 26/60 Superdex 200 in 20 mM Tris-HCl pH 8, 150 mM NaCl and 2 mM DTT. Protein was concentrated with a 10,000-MWCO filter and stored at -80 C; the His6 tag was retained.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB44 His6-NovH preparation from intact-ybdZ host</td>
+  <td>was_isolated_by</td>
+  <td>Ni-NTA and preparative Superdex purification</td>
+  <td>The same stated purification workflow applies to the intact-host NovH preparation; it does not independently exclude copurifying proteins.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Ni-NTA and preparative Superdex purification</td>
+  <td>gave_reported_yields</td>
+  <td>NovH preparation yields and concentration method</td>
+  <td>NovH yield was 38.6 mg/L culture from the deletion host and 64 mg/L from the intact-ybdZ host. Concentration was estimated at A280 using calculated extinction coefficients. These are not active-protein fractions, enzyme specific activities or natural-product titers.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB44 His6-NovH preparation from deletion host</td>
+  <td>has_displayed_gel_readout</td>
+  <td>Figure S2 NovH SDS-PAGE readout</td>
+  <td>Figure S2 shows NovH purified from the deletion host, stained with Coomassie Brilliant Blue R-250; its caption gives 65.7 kDa as the calculated tagged mass. A gel band does not establish a native oligomer or a measured purity percentage.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 12 edges</span></h2>
+<p class="sub">Three preparation-conditioned NovH kinetic fits, inferred YbdZ carryover and bounded homology models. Review #561. The cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre and SEEDED status; these precursor assays do not establish an exact-structure merge with fully specified novobiocin. Boll page locators are PDF pages, five above printed pages. Native references, DNA constructs and engineered preparations are distinct.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2011 His6-NovH from deletion host</td>
+  <td>was_assayed_by</td>
+  <td>ATP-[32P]PPi exchange assay</td>
+  <td>The default 100-uL exchange assay contains 95 mM Tris-HCl pH 8, 5 mM MgCl2, 5 mM TCEP, 2 mM ATP, 1.5 mM L-tyrosine, 1 uM adenylating enzyme and 1 mM [32P]pyrophosphate, with 1.2 uM MbtH partner when included. Incubation is 5 min at 30 C; charcoal capture and scintillation measure exchanged label. This is not a direct PCP-loading or mature-product flux assay.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>2011 His6-NovH from intact-ybdZ host</td>
+  <td>was_assayed_by</td>
+  <td>ATP-[32P]PPi exchange assay</td>
+  <td>The intact-host preparation was compared by the same exchange method, not a separate native producer experiment.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>2011 processed CloY preparation</td>
+  <td>was_added_in</td>
+  <td>ATP-[32P]PPi exchange assay</td>
+  <td>The NovH/CloY kinetic comparison used the reported 1:1.2 enzyme:partner molar ratio. Addition does not itself measure binding affinity or complex stoichiometry.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>ATP-[32P]PPi exchange assay</td>
+  <td>gave_deletion_host_fit</td>
+  <td>NovH-alone deletion-host kinetic fit</td>
+  <td>NovH alone from the deletion host has Figure S3 Km 274.5 +/- 39.5 uM for L-tyrosine, kcat 0.079 s^-1 and kcat/Km 290 s^-1 M^-1. Table 1 rounds Km to 275 uM. Nonlinear fits used Prism 5.0 and the method reports means of two independent reactions. The displayed plus/minus statistic is not defined in the inspected methods/caption; do not relabel it SD or SEM.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>2011 His6-NovH from deletion host</td>
+  <td>retains_activity_in</td>
+  <td>NovH-alone deletion-host kinetic fit</td>
+  <td>Deletion-host NovH is active without added MbtH protein, as also shown in Figure 3. This is a positive result in this preparation, not proof that every NovH preparation or native-cell pathway is MbtH-independent.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>ATP-[32P]PPi exchange assay</td>
+  <td>gave_intact_host_fit</td>
+  <td>NovH-alone intact-host kinetic fit</td>
+  <td>NovH alone from intact-ybdZ E. coli has Km 1278 +/- 106 uM, kcat 0.120 s^-1 and kcat/Km 94 s^-1 M^-1. Figure S3 prints kcat as 0.12. The same uncertainty-definition limitation applies. These values are not assigned to the deletion-host protein.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>ATP-[32P]PPi exchange assay</td>
+  <td>gave_cloy_supplemented_fit</td>
+  <td>NovH plus CloY kinetic fit</td>
+  <td>Deletion-host NovH plus CloY has Figure S3 Km 276.5 +/- 20.5 uM, kcat 0.438 s^-1 and kcat/Km 1580 s^-1 M^-1; Table 1 rounds Km to 277 uM. The close Km values and increased turnover are source-reported assay comparisons, not a direct observation of a catalytic conformational change.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>NovH-alone intact-host kinetic fit</td>
+  <td>motivates_source_hypothesis</td>
+  <td>Inferred YbdZ explanation for host-dependent kinetics</td>
+  <td>The authors infer YbdZ copurification from the host-dependent NovH kinetics. They compare the intact-host Km with the 1390-uM value cited from Chen 2001; that historical value is not independently re-extracted from the unobtained full 2001 methods. Higher kcat coincides with lower reported catalytic efficiency because Km also rises.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Endogenous E. coli YbdZ candidate copurifying partner</td>
+  <td>is_proposed_copurifying_factor_in</td>
+  <td>Inferred YbdZ explanation for host-dependent kinetics</td>
+  <td>YbdZ is the named endogenous host MbtH-like protein. The NovH comparison does not directly identify or quantify a copurifying YbdZ band or supply a NovH-YbdZ binding constant. No convenient K-12 accession is substituted for the incompletely sequenced BL21(DE3) experimental preparation.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>NovH-alone deletion-host kinetic fit</td>
+  <td>motivated_computational_comparison</td>
+  <td>PheA-based NovH/CloH homology models</td>
+  <td>The 2011 authors modeled NovH and CloH after the PheA adenylation domain of GrsA, naming PDB 1AMU. Their statement that no experimental NovH/CloH structure was available is historical, not a current exhaustive structure search.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>PheA-based NovH/CloH homology models</td>
+  <td>supports_source_hypothesis</td>
+  <td>Proposed Met383-linked active-site conformation</td>
+  <td>The model compares NovH Met383, CloH Leu383 and PheA Lys396, proposing effects on Tyr397/Glu316 positioning near the Mg site. These are modeled positions, not experimentally observed NovH contacts. The reported L383M intervention was in CloH, not a NovH mutant. No CloH mutant activity is reassigned to a NovH sequence or to this compound owner.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Inferred YbdZ explanation for host-dependent kinetics</td>
+  <td>does_not_resolve</td>
+  <td>Unresolved NovH partner binding and complex stoichiometry</td>
+  <td>Activity stimulation and inferred copurification do not determine NovH oligomer stoichiometry. The analytical SEC mass and proposed 2:2 complex in this study concern SimH/SimY; the CloH/CloY coexpression experiments also remain separate. Neither is transferred as a measured NovH assembly.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">16 nodes, 19 edges</span></h2>
+<p class="sub">Four heterologous MbtH partners, exact native reference boundaries and complete NovH cross-activation scope. Review #561. The cathomycin/BGC0000834 owner retains its unspecified sugar stereocentre and SEEDED status; these precursor assays do not establish an exact-structure merge with fully specified novobiocin. Boll page locators are PDF pages, five above printed pages. Native references, DNA constructs and engineered preparations are distinct.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2011 deletion-host His6-NovH preparation</td>
+  <td>was_tested_in</td>
+  <td>Four-partner NovH cross-activation assay</td>
+  <td>Figure 6 tests deletion-host NovH with CloY, CdaX, SimY or Orf1van at enzyme:partner 1:1.2 by the 5-min, 30-C ATP-PPi exchange assay. The panel is heterologous functional stimulation, not four endogenous novobiocin-cluster partners or direct physical binding measurements.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Deposited CloY sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>pBB37-derived processed CloY preparation</td>
+  <td>CloY is 71 aa: AF329398.1 positions 12920..13135(+), AAN65223.1 and Q8GHC8 match exactly. The GenBank source is S. roseochromogenus subsp. oscitans DS 12.976 (strain taxon 1352936); UniProt uses subspecies taxon 149682. The paper amplifies cloY from a cluster-containing cosmid for pBB37.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://www.uniprot.org/uniprotkb/Q8GHC8<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Deposited SimY sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>pBB28-derived SimY preparation with tag-stage limitation</td>
+  <td>SimY Q9F5J2 exactly matches the 70-aa AAL15602.1 translation in AF322256.1 and the previously checked AAG34186.1/AAK06806.1 deposits. The paper names AAG34186 and uses a sim-cluster cosmid for pBB28; the native accession does not denote the processed fusion.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1<br>https://www.uniprot.org/uniprotkb/Q9F5J2<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1</td>
+</tr>
+<tr>
+  <td>Deposited CdaX SCO3218 sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>pBB32-derived processed CdaX preparation</td>
+  <td>CdaX is the source-named CAB38589.1/SCO3218, 71 aa, exactly matching Q9Z388 and CDS-aware translation of AL939115.1:183050..183265(-). The genomic GTG start translates as initiator methionine. UniProt names S. coelicolor A3(2)/M145, taxon 100226, whereas the paper amplified cdaX from M512 to make pBB32. The reference match is not independent sequencing of the complete M512-derived experimental construct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/protein/CAB38589.1<br>https://www.uniprot.org/uniprotkb/Q9Z388<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/protein/CAB38589.1</td>
+</tr>
+<tr>
+  <td>Deposited Orf1van sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>pBB34-derived processed synthetic Orf1van preparation</td>
+  <td>The source-named AAL90876.1 is a 69-aa conceptual translation from Amycolatopsis orientalis, taxon 31958, at AF486630.1:720..929(+). The 210-nt CDS including stop matches the protein deposit. The paper used a commercially synthesized, E. coli-codon-optimized orf1van in pET28a/pBB34, not a directly assayed native preparation. No full synthetic construct sequence or defensible exact UniProt mapping was obtained in the bounded accession queries; the named NCBI accession is retained.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/protein/AAL90876.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF486630.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF486630.1</td>
+</tr>
+<tr>
+  <td>Deposited SimY sequence reference</td>
+  <td>exposes_reported_length_difference</td>
+  <td>SimY and Orf1van reported-length discrepancies</td>
+  <td>The paper lists SimY as 69 aa and Orf1van as 70 aa, whereas the named native deposits give SimY 70 aa and Orf1van 69 aa. No initiator-removal, swapped-label correction or altered experimental sequence is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/protein/AAG34186.1<br>https://www.ncbi.nlm.nih.gov/protein/AAL90876.1</td>
+</tr>
+<tr>
+  <td>Deposited Orf1van sequence reference</td>
+  <td>also_exposes_reported_length_difference</td>
+  <td>SimY and Orf1van reported-length discrepancies</td>
+  <td>The Orf1van discrepancy concerns the native accession versus the source description; it does not establish the length of an independently sequenced thrombin-processed synthetic protein.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/protein/AAL90876.1</td>
+</tr>
+<tr>
+  <td>MbtH partner expression and thrombin-processing workflow</td>
+  <td>has_checked_primer_models</td>
+  <td>Literal CloY, SimY and CdaX primer models</td>
+  <td>The six printed CloY/SimY/CdaX primers were visually checked and modeled against their native CDSs. PCR lengths including 11-nt forward and 9-nt reverse tails are 236, 233 and 236 nt, respectively. CloY and SimY cores are unchanged; CdaX GTG is recoded to ATG without changing its CDS-aware protein translation. These models do not establish complete vector junctions or post-thrombin scars.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AL939115.1?from=183000&amp;to=183300</td>
+</tr>
+<tr>
+  <td>MbtH partner expression and thrombin-processing workflow</td>
+  <td>produced</td>
+  <td>pBB37-derived processed CloY preparation</td>
+  <td>This partner was expressed in E. coli Rosetta2(DE3) as an N-terminal His6 fusion. Methods report thrombin removal of MbtH tags (0.4 U/mg, 8 h at 4 C) before gel filtration, with Ni-NTA and Superdex purification. The reported preparation yield is 6.9 mg/L culture. A280-derived concentration and tag removal do not establish active fraction or restoration of the exact native N terminus.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB37-derived processed CloY preparation</td>
+  <td>stimulated_novh_in</td>
+  <td>Four-partner NovH cross-activation assay</td>
+  <td>Figure 6 shows higher NovH exchange activity with this partner than without added MbtH. The NovH panel normalizes its CloY condition to 100%; the other enzyme panels have their own denominators. No precise percentage is newly estimated from the bars, and stimulation alone is not direct binding or native pathway flux.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>MbtH partner expression and thrombin-processing workflow</td>
+  <td>produced</td>
+  <td>pBB28-derived SimY preparation with tag-stage limitation</td>
+  <td>This partner was expressed in E. coli Rosetta2(DE3) as an N-terminal His6 fusion. Methods report thrombin removal of MbtH tags (0.4 U/mg, 8 h at 4 C) before gel filtration, with Ni-NTA and Superdex purification. The reported preparation yield is 27 mg/L culture. A280-derived concentration and tag removal do not establish active fraction or restoration of the exact native N terminus.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB28-derived SimY preparation with tag-stage limitation</td>
+  <td>stimulated_novh_in</td>
+  <td>Four-partner NovH cross-activation assay</td>
+  <td>Figure 6 shows higher NovH exchange activity with this partner than without added MbtH. The NovH panel normalizes its CloY condition to 100%; the other enzyme panels have their own denominators. No precise percentage is newly estimated from the bars, and stimulation alone is not direct binding or native pathway flux.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>MbtH partner expression and thrombin-processing workflow</td>
+  <td>produced</td>
+  <td>pBB32-derived processed CdaX preparation</td>
+  <td>This partner was expressed in E. coli Rosetta2(DE3) as an N-terminal His6 fusion. Methods report thrombin removal of MbtH tags (0.4 U/mg, 8 h at 4 C) before gel filtration, with Ni-NTA and Superdex purification. The reported preparation yield is 23.8 mg/L culture. A280-derived concentration and tag removal do not establish active fraction or restoration of the exact native N terminus.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB32-derived processed CdaX preparation</td>
+  <td>stimulated_novh_in</td>
+  <td>Four-partner NovH cross-activation assay</td>
+  <td>Figure 6 shows higher NovH exchange activity with this partner than without added MbtH. The NovH panel normalizes its CloY condition to 100%; the other enzyme panels have their own denominators. No precise percentage is newly estimated from the bars, and stimulation alone is not direct binding or native pathway flux.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>MbtH partner expression and thrombin-processing workflow</td>
+  <td>produced</td>
+  <td>pBB34-derived processed synthetic Orf1van preparation</td>
+  <td>This partner was expressed in E. coli Rosetta2(DE3) as an N-terminal His6 fusion. Methods report thrombin removal of MbtH tags (0.4 U/mg, 8 h at 4 C) before gel filtration, with Ni-NTA and Superdex purification. The reported preparation yield is 30.2 mg/L culture. A280-derived concentration and tag removal do not establish active fraction or restoration of the exact native N terminus.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB34-derived processed synthetic Orf1van preparation</td>
+  <td>stimulated_novh_in</td>
+  <td>Four-partner NovH cross-activation assay</td>
+  <td>Figure 6 shows higher NovH exchange activity with this partner than without added MbtH. The NovH panel normalizes its CloY condition to 100%; the other enzyme panels have their own denominators. No precise percentage is newly estimated from the bars, and stimulation alone is not direct binding or native pathway flux.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB28-derived SimY preparation with tag-stage limitation</td>
+  <td>has_tag_stage_ambiguity</td>
+  <td>Figure S2 SimY tag-stage ambiguity</td>
+  <td>Methods report cleavage of MbtH tags, but Figure S2 explicitly labels N-His6-SimY and gives 9.4 kDa. These may represent different preparation stages; the figure does not independently prove that the activation assays used retained-tag SimY or that cleavage restored an exact native sequence.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>MbtH-only assay control</td>
+  <td>constrains_interpretation_of</td>
+  <td>Four-partner NovH cross-activation assay</td>
+  <td>The results report no activity from MbtH-like proteins alone. This is the study-level control for exchange activity, not a separately quantified zero with a supplied detection limit for every Figure 6 pair.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Four-partner NovH cross-activation assay</td>
+  <td>supports_limited_partner_scope</td>
+  <td>Bounded heterologous activation without native-partner assignment</td>
+  <td>All four partners stimulated NovH and CloY gave the highest displayed activity. The 2011 partial-genome discussion reports no mbtH-like gene in the nov cluster/immediate vicinity but at least two distant orthologs. That historical, strain-label-qualified observation is not a present-day genome-wide absence claim or assignment of the tested heterologous partners as native NovH cofactors.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>DOI:10.1128/genomeA.01146-13</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

@@ -694,6 +694,10 @@ causal_graph_refs:
 - cathomycin-novn-heterologous-production-and-cloning-conflict
 - cathomycin-novn-assembly-disagreement-and-unsolved-crystal-forms
 - cathomycin-novn-9s2t-structure-and-partial-metal-limits
+- cathomycin-novhi-native-identities-and-early-precursor-reactions
+- cathomycin-novhi-2011-novh-construct-and-host-preparations
+- cathomycin-novhi-novh-kinetics-and-model-limits
+- cathomycin-novhi-mbth-partner-identities-and-cross-activation
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -750,4 +754,13 @@ curation_history:
     preparation-specific assembly and unsolved crystals; 9S2T sequence, coordinates
     and partial-metal limits. Preserve source conflicts, previous graphs, chemical
     identity, source fields, history and SEEDED status (#560).'
+  llm_assisted: true
+- timestamp: '2026-10-04T22:55:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add four NovH/NovI components: native sequence versions and bounded early
+    precursor reactions; NovH engineered preparations; host/partner-conditioned kinetics
+    and computational models; four heterologous MbtH partners. Preserve length/tag/strain
+    ambiguities, prior graphs, source fields, chemical identity and SEEDED status
+    (#561).'
   llm_assisted: true
