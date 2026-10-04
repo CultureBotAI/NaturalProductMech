@@ -71,6 +71,609 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: cathomycin-novl-identity-and-precursor-ligation
+  scope: BIOSYNTHESIS
+  description: 'Deposited NovL identity and bounded novobiocic-acid precursor ligation
+    (review #550). The MIBiG BGC0000834 cathomycin owner has one unspecified sugar
+    stereocentre: its InChI /t23-,25+,26-,29? differs from the fully specified novobiocin
+    CID 54675769 /t23-,25+,26-,29-. Their exact InChIKeys differ. Unglycosylated precursor
+    assays neither resolve this centre nor establish synthesis of mature cathomycin/novobiocin.
+    Q9L9F6 denotes the deposited native sequence, not a tagged preparation or a retrospectively
+    identified historical sample. Galm 2003 direct experiments are distinct from the
+    abstract-only 2000 paper. Galm PDF pages exceed printed pages by four; Metzger
+    2010 PDF pages by twelve.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: gene
+    label: Deposited novL locus from NCIMB 9219
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: native
+    label: Deposited native NovL ligase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F6
+  - node_id: prep
+    label: Galm pMS80-derived C-terminal His6 NovL preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: E. coli XL1 Blue MRF' expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: sds
+    label: NovL induction and Ni-NTA purification readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Galm NovL ligation assay with methylated ring B
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acid
+    label: 3-Dimethylallyl-4-hydroxybenzoic acid (DMAHB)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: amine
+    label: 3-Amino-4,7-dihydroxy-8-methylcoumarin
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Assay-assigned novobiocic acid
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: activity
+    label: NovL specific activity in the Galm preparation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: heat
+    label: Heat-inactivated NovL assay comparator
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: panel
+    label: Galm NovL aromatic-acid substrate panel
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: scope
+    label: Condition-specific acceptance of selected acid analogues
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: paper_prep
+    label: His6 NovL preparation reported in the 2000 paper
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: activation
+    label: Reported ATP-PPi exchange and acyl activation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: paper_properties
+    label: Abstract-reported NovL biochemical properties
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: gene
+    notes: The owner is the MIBiG v5 cathomycin structure concept, not an exact-key
+      merge with fully specified novobiocin. Its deposited cluster contains novL at
+      12509..14092(+).
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/go/BGC0000834.5
+      evidence_type: DATABASE_ASSERTION
+      notes: MIBiG v5 compound/locus association, cited as a database assertion.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited novL CDS.
+    - reference: https://pubchem.ncbi.nlm.nih.gov/compound/54675769
+      evidence_type: DATABASE_ASSERTION
+      notes: CID 54675769 InChI and InChIKey retrieved 2026-10-04; literal InChI comparison
+        only, not independent stereochemical determination.
+  - subject: gene
+    predicate: encodes_native_protein
+    object: native
+    notes: AF170880.4/AAF67505.1 has a 1584-nt CDS including stop. CDS-aware table-11
+      translation gives 527 aa exactly matching Q9L9F6 and the complete printed NovL
+      alignment in Metzger Figure 3.27. Current GenBank source is S. niveus NCIMB
+      9219. Flinspach et al. retested DSM 40088 (=9219) and DSM 40292 (=11891), then
+      corrected the historical AF170880 strain attribution to 9219. The strains are
+      not synonyms. The 2000 abstract names S. spheroides NCIMB 11891; this historical
+      label does not uniquely establish the internal sequence or provenance of each
+      recombinant sample.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Native deposited CDS and corrected source strain.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F6
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9F6, entry 67, sequence 1, taxon 193462; annotation 2026-09-02;
+        retrieved 2026-10-04.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.27, PDF p.91, all 527 NovL residues.
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Genome announcement: indexed primary main text inspected; direct PMC/publisher
+        retrieval was restricted.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS/deposited/UniProt/printed-sequence comparison.
+  - subject: prep
+    predicate: was_constructed_from_novl
+    object: gene
+    notes: Galm reused pMS80, a reported 5.0-kb pQE70 construct. Table 13 describes
+      a 1.6-kb SphI/BamHI insert, whereas the results say the existing pMS80/pMS90
+      constructs were cloned in the same manner as the described SphI/BglII CloL construct.
+      Preserve this source difference; no pMS80 junction sequence or primer-derived
+      A2P substitution is asserted from the CloL/CouL constructs.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 13 and results section 2.3.1, PDF pp.39,90.
+  - subject: host
+    predicate: expressed
+    object: prep
+    notes: The source used 100 mL LB with 50 ug/mL carbenicillin, 30 C, 180 rpm, OD600
+      0.7-0.8 at induction and 0.5 mM IPTG for three hours. These are heterologous
+      protein-preparation conditions, not native antibiotic production measurements.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 8.1.1, PDF pp.60-61.
+  - subject: prep
+    predicate: has_purification_readout
+    object: sds
+    notes: Ni-NTA purification followed by Sephadex G-25 buffer exchange yielded the
+      preparation. Figure 12 NovL lanes 1-5 show marker, pre-induction, post-induction,
+      soluble protein and eluate. Near homogeneity is the source description, not
+      a measured purity percentage or a native assembly determination.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 8.1.2 and Figure 12, PDF pp.61,91.
+  - subject: prep
+    predicate: catalyzes
+    object: assay
+    notes: Galm assays used 100 uL, 1 mM acid, 1 mM C-8-methylated ring B, 5 mM ATP,
+      5 mM MnCl2, 50 mM Tris-HCl pH 8.0 and 0.5-2.0 ug enzyme for 30 min at 30 C,
+      stopped with 5 uL 1.5 M trichloroacetic acid. UniProt RHEA:36699 describes unmethylated
+      ring B and 8-desmethylnovobiocic acid; that reaction identifier is deliberately
+      not assigned to this assay.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 8.4.1, PDF p.63.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F6
+      evidence_type: DATABASE_ASSERTION
+      notes: Catalytic-activity annotation inspected separately from the experimental
+        substrate identity.
+  - subject: acid
+    predicate: is_acyl_substrate_for
+    object: assay
+    notes: DMAHB is the genuine acid substrate used for the NovL specific-activity
+      measurement and its 100% panel reference.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 2.3.2-2.4 and Figure 13, PDF pp.90-93.
+  - subject: amine
+    predicate: is_amino_substrate_for
+    object: assay
+    notes: The supplied aminocoumarin bears the C-8 methyl group. This in-vitro acceptance
+      does not by itself establish the order of methylation and ligation in the native
+      producer.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 8.4.1, PDF p.63.
+  - subject: assay
+    predicate: forms
+    object: product
+    notes: Products were extracted twice with ethyl acetate and analyzed by HPLC at
+      305 nm. Quantitation used a novobiocic-acid standard calibration. The product
+      is an unglycosylated precursor, not mature cathomycin/novobiocin.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 9.1.3 and results 2.3.2, PDF pp.67,90.
+  - subject: assay
+    predicate: has_reported_specific_activity
+    object: activity
+    notes: The preparation gave 14.5 nkat/mg protein with DMAHB and methylated ring
+      B. Protein was quantified by Bradford with BSA calibration. The source does
+      not provide a replicate count or uncertainty for this value; it is not kcat
+      or native flux.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 8.2 and results 2.3.2, PDF pp.62,90.
+      snippet: von 14,5 nkat/mg Protein
+  - subject: heat
+    predicate: is_reported_control_for
+    object: assay
+    notes: Methods specify protein heated for 30 min at 100 C with all other components
+      present. This records the control design, not an independently quantified zero-product
+      measurement.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 8.4.1, PDF p.63.
+  - subject: prep
+    predicate: was_tested_in
+    object: panel
+    notes: The HPLC panel compares the genuine acids and 22 synthetic ring-A analogues.
+      NovL and CloL normalize to DMAHB, but CouL normalizes to its pyrrole dicarboxylic
+      acid. Relative activities therefore do not share an absolute cross-enzyme denominator.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 19 and Figure 13, PDF pp.91-93.
+  - subject: panel
+    predicate: supports_bounded_substrate_scope
+    object: scope
+    notes: NovL weakly accepts 4-hydroxybenzoic acid and accepts the 3-chloro/3-bromo
+      analogues; the displayed assay does not accept the pyrrole dicarboxylic acid,
+      the cyclohexyl analogue or 3,5-dibromo-4-hydroxybenzoic acid. These negatives
+      apply to this preparation and assay, not every enzyme loading. Figure 13 shows
+      no NovL bar for RAA380, whereas the 2000 abstract reports low acceptance of
+      3-methyl-4-aminobenzoate. Preserve that difference without inventing a reconciled
+      detection limit. LC-MS/MS supports the panel products collectively; it is not
+      a separate enzyme-specific structural proof for every signal.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 2.4, Table 19, Figure 13 and Table 20, PDF pp.91-94.
+    - reference: DOI:10.1074/jbc.M003066200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; reported analogue acceptance.
+  - subject: paper_prep
+    predicate: was_reported_as_novl_product
+    object: gene
+    notes: The 2000 abstract reports His6 NovL expressed in E. coli and purified by
+      affinity and gel chromatography. Full primary methods were not obtained; do
+      not transfer Galm host, buffer or construct-junction details to this preparation.
+    evidence:
+    - reference: DOI:10.1074/jbc.M003066200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; publisher full-text route returned 403.
+  - subject: paper_prep
+    predicate: catalyzes_reported_ligation
+    object: product
+    notes: The primary abstract reports ATP-dependent amide formation from DMAHB and
+      3-amino-4,7-dihydroxy-8-methylcoumarin.
+    evidence:
+    - reference: DOI:10.1074/jbc.M003066200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: paper_prep
+    predicate: shows_reported_activation
+    object: activation
+    notes: ATP-PPi exchange supports the reported acyl-adenylate activation step.
+      This is not a directly visualized catalytic intermediate or an independently
+      measured native-cell flux.
+    evidence:
+    - reference: DOI:10.1074/jbc.M003066200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: paper_prep
+    predicate: has_reported_biochemical_properties
+    object: paper_properties
+    notes: The abstract reports a gel-filtration-active monomer, ATP specificity,
+      Mg2+ or Mn2+ dependence and apparent Km values of 19 uM for DMAHB and 131 uM
+      for methylated ring B. These are source-reported values; their detailed assay
+      and uncertainty were not independently recovered.
+    evidence:
+    - reference: DOI:10.1074/jbc.M003066200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+- graph_id: cathomycin-novl-recombinant-preparations-and-crystal-limits
+  scope: BIOSYNTHESIS
+  description: 'Metzger 2010 NovL preparations, precursor activity and unsuccessful
+    structure determination (review #550). Native Q9L9F6 is a sequence reference,
+    not the identity of the His8 fusion, thrombin-cleaved scar protein, SeMet derivative
+    or chemically methylated sample. Specific activities refer to methylated-ring-B
+    precursor assays, not mature product synthesis. A diffraction dataset without
+    solved phases does not establish residue contacts or biological oligomer stoichiometry.
+    All page numbers below are PDF pages, twelve higher than printed pages. The later
+    NovL/CouL chimera study is a separate lead.'
+  nodes:
+  - node_id: native
+    label: Deposited native NovL sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F6
+  - node_id: construct
+    label: pUM07 NovL expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: E. coli BL21(DE3)pLysS expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: tagged
+    label: pUM07 N-terminal His8 NovL fusion
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: cleaved
+    label: Thrombin-cleaved NovL with reported GSHGGS scar
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: semet_host
+    label: E. coli B834(DE3)pLysS SeMet expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: semet
+    label: NovL SeMet preparation for crystallization
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Metzger NovL precursor-ligation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acid
+    label: 3-Dimethylallyl-4-hydroxybenzoic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: amine
+    label: 3-Amino-4,7-dihydroxy-8-methylcoumarin
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: HPLC-assigned novobiocic acid
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: activity
+    label: Specific activity of the cleaved NovL preparation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: semet_activity
+    label: Specific activity of the NovL SeMet preparation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: crystals
+    label: NovL crystals from the initial screen
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: semet_crystals
+    label: Twinned NovL SeMet crystals
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: dataset
+    label: Reported unphased 2.6-A NovL diffraction dataset
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: methylated
+    label: Chemically methylated NovL preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: methylated_crystals
+    label: Small crystals of chemically methylated NovL
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native
+    predicate: is_native_sequence_reference_for
+    object: construct
+    notes: The source amplified novL from nov-BG1 into pGEM-T (pUM03), then pHis8
+      (pUM07); it reports sequence verification. The full printed 527-aa NovL sequence
+      matches deposited AAF67505.1 and Q9L9F6 exactly. The current deposit identifies
+      NCIMB 9219, following the historical strain correction. No complete experimental
+      vector sequence was independently inspected.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Construct tables and results, PDF pp.28-29,85,91.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact native CDS reference.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F6
+      evidence_type: DATABASE_ASSERTION
+      notes: Q9L9F6 entry 67, sequence 1, retrieved 2026-10-04.
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Indexed primary strain-correction text.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact printed/native sequence comparison.
+  - subject: construct
+    predicate: encodes_engineered_fusion
+    object: tagged
+    notes: Literal novLHis8_f TGGGATCCAACAAGGATCACGCACC and novLHis8_r TCGAATTCCCCACCTCACCTGTCCA
+      reconstruct a 1600-nt PCR product and 1590-nt BamHI/EcoRI restriction fragment,
+      as reported. Their unique 17-nt 3-prime matches extrapolate to 12507..12531(+)
+      and 14106..14082(-). The model retains native residues 3-527 and the stop, replacing
+      the native N terminus with vector-derived sequence. No native accession is assigned
+      to this engineered protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid/primer tables and cloning methods, PDF pp.29,31,39,85.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer model and CDS comparison; not a sequenced experimental
+        fusion.
+  - subject: host
+    predicate: expressed
+    object: tagged
+    notes: The described preparation used 1 L TB medium, induction at OD600 0.6 with
+      0.5 mM IPTG after cooling to 20 C, and six hours at 250 rpm. IMAC preceded further
+      purification. A separate retained-His-tag preparation is reported at 40 mg/L
+      culture and final 18 mg/mL, with a 59-kDa SDS-PAGE assignment; those values
+      are not the cleaved-protein concentration.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.6 and Figure 3.25, PDF pp.43-45,88.
+  - subject: tagged
+    predicate: was_thrombin_processed_to
+    object: cleaved
+    notes: Thrombin treatment (0.1 U/mg, 15 h at 4 C), removal of tag and thrombin,
+      and Superdex 200 purification yielded the crystallization preparation. The reported
+      post-cleavage N terminus is GSHGGSNK..., with GSHGGS replacing native MA; cleavage
+      therefore does not restore native Q9L9F6. Figure 3.22 shows induction, soluble
+      fraction, affinity eluate, cleavage and final material. Table 3.5 gives 40 mg/L
+      culture and final 19.5 mg/mL, not assay loading or antibiotic titer.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.6.2, results 3.3.1-2, Table 3.5 and Figure 3.22, PDF pp.45,85-86.
+  - subject: construct
+    predicate: was_used_for
+    object: semet
+    notes: The same pUM07 construct supplied the SeMet preparation; this is incorporation
+      during heterologous expression, not a native NovL isoform or a genetically encoded
+      methionine substitution. The source gives 15 mg/L culture and final 19 mg/mL
+      after the crystallization-purification workflow. It does not quantify site-by-site
+      SeMet occupancy.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.6 and results 3.3.2, PDF pp.44-45,86.
+  - subject: semet_host
+    predicate: expressed
+    object: semet
+    notes: B834(DE3)pLysS was grown in SeMet medium after washing the methionine-grown
+      inoculum; production medium contained 0.04 mg/mL L-selenomethionine. Methods
+      specify 1 mM IPTG after cooling to 20 C, distinct from the ordinary expression
+      protocol. SeMet occupancy and full sample sequence were not independently measured
+      here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: SeMet expression methods, PDF p.44.
+  - subject: cleaved
+    predicate: catalyzes
+    object: assay
+    notes: Methods use 100 uL with 50 mM Tris-HCl pH 8.0, 5 mM MgCl2, 1 mM ATP and
+      1 mM of each substrate, incubated 15 min at 30 C before acid quench. Enzyme
+      loading for the Table 3.5 value is not specified separately; do not borrow the
+      later chimera study loading or Galm Mn2+/5-mM-ATP protocol.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Amide-synthetase assay methods and Table 3.5, PDF pp.49,85-86.
+  - subject: acid
+    predicate: is_acyl_substrate_for
+    object: assay
+    notes: DMAHB is explicitly the acid used for the reported NovL and NovL-SeMet
+      activity measurements.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 3.3.2, PDF pp.85-86.
+  - subject: amine
+    predicate: is_amino_substrate_for
+    object: assay
+    notes: The methods identify the C-8-methylated aminocoumarin. No unmethylated-ring-B
+      reaction identifier or in-vivo methylation order is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Assay methods, PDF p.49.
+  - subject: assay
+    predicate: forms
+    object: product
+    notes: Ethyl-acetate extraction and HPLC at 330 nm with a 1-mM novobiocic-acid
+      standard support the source-assigned product. This is not an assay of glycosylation
+      or mature antibiotic synthesis.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Assay methods and Table 2.7, PDF p.49.
+  - subject: cleaved
+    predicate: has_reported_specific_activity
+    object: activity
+    notes: Table 3.5 reports 13.0 nkat/mg with DMAHB. Purified-protein concentration
+      methods use A280 and sequence-derived extinction coefficients; the NovL table
+      gives 0.75 with tag and 0.77 without tag in L/g/cm. No uncertainty or replicate
+      count accompanies this activity. Difference from Galm 14.5 nkat/mg is not a
+      controlled test of tag position or cleavage effects.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.1 and Table 3.5, PDF pp.46,86.
+      snippet: 13,0 nkat/mg
+  - subject: semet
+    predicate: catalyzes
+    object: assay
+    notes: The source directly reports an activity assay with DMAHB and subsequent
+      HPLC for the SeMet preparation; activity is not inferred solely from the SDS-PAGE
+      band.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 3.3.2 and Figure 3.23, PDF p.86.
+  - subject: semet
+    predicate: has_reported_specific_activity
+    object: semet_activity
+    notes: The source reports 8.4 nkat/mg. This preparation-level measurement, without
+      stated uncertainty, does not establish the effect of each SeMet replacement
+      on kcat or binding.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 3.3.2, PDF p.86.
+      snippet: 8,4 nkat/mg
+  - subject: cleaved
+    predicate: formed
+    object: crystals
+    notes: An initial screen of 2712 conditions at 4 C found a NovL condition; crystals
+      reached about 100 x 100 x 50 um after two weeks. Many were twinned. Heavy-metal
+      soaking and co-crystallization trials did not solve the phase problem; added
+      ATP/analogues/substrates are not observed bound ligands.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.8 and Figure 3.24/results 3.3.3-4, PDF pp.50-51,87.
+  - subject: semet
+    predicate: formed
+    object: semet_crystals
+    notes: The SeMet preparation formed approximately 50 x 50 x 20 um crystals under
+      similar conditions, but at least 20% twinning prevented their use for phase
+      determination. This is not a solved SeMet structure or evidence of a biological
+      complex.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 3.3.4, PDF p.87.
+  - subject: crystals
+    predicate: had_reported_diffraction_follow_up
+    object: dataset
+    notes: The thesis reports a dataset from one untwinned NovL crystal to 2.6 A at
+      ESRF ID14-2, but explicitly says the structure was not solved. The reported
+      two molecules per asymmetric unit do not establish a native dimer. The dataset
+      paragraph does not uniquely identify a sequenced preparation or a ligand-bound
+      state; no PDB accession is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 3.3.4 and Table 3.6, PDF p.88.
+      snippet: die Struktur von NovL nicht gelöst werden.
+  - subject: cleaved
+    predicate: was_chemically_modified_for_crystallization
+    object: methylated
+    notes: Methods describe reductive methylation with DMAB/formaldehyde and subsequent
+      size-exclusion purification, intended to modify lysines and the N terminus.
+      The NovL result reports 19% protein recovery relative to input and final 14
+      mg/mL. Recovery is not methylation occupancy or residual enzyme activity; site-specific
+      modification was not established.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.8.4 and Figure 3.25/results 3.3.4, PDF pp.51,87-88.
+  - subject: methylated
+    predicate: formed
+    object: methylated_crystals
+    notes: One tested condition yielded small crystals still being optimized at thesis
+      completion. No solved structure or activity value is supplied for this chemically
+      modified preparation.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 3.3.4, PDF p.88.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -80,3 +683,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-04T16:20:18Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add two cited NovL graphs: exact native Q9L9F6 identity, historical strain
+    correction, bounded precursor ligation, distinct engineered preparations and unsolved-crystal
+    limits; preserve owner stereochemistry, source metadata and SEEDED status (#550).'
+  llm_assisted: true
