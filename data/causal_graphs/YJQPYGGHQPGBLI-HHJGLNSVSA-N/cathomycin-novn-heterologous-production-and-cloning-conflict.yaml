@@ -1,0 +1,185 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novn-heterologous-production-and-cloning-conflict
+  scope: BIOSYNTHESIS
+  description: 'pXHN construct evidence and source-assigned heterologous coumermycin
+    analogue production. Review #560. Xu locators are PDF pages, nineteen higher than
+    printed main-text pages. The owner retains its unspecified sugar stereocentre
+    and SEEDED status; source-assigned novobiocin is not an exact structure-key merge
+    with cathomycin. Native reference, engineered protein and DNA construct are separate
+    entities.'
+  nodes:
+  - node_id: gene
+    label: novN DNA insert used for heterologous expression
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: construct
+    label: Xu pXHN ermE-star novN DNA construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: genotyping
+    label: pXHN transformant restriction analysis
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: S. rishiriensis couN3-mutant production host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: protein
+    label: pXHN-expressed NovN in the couN3-mutant host
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: experiment
+    label: Heterologous NovN coumermycin-analogue experiment
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: precursor
+    label: Source-assigned coumermycin D precursor signal
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Source-assigned bis-carbamoylated coumermycin D signal
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: controls
+    label: Wild-type and untransformed-mutant comparators
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: supplement
+    label: Nitrogen or carbamoyl-phosphate supplementation readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: clo
+    label: Reported clorobiocin-mutant negative with data not shown
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gene
+    predicate: was_cloned_into
+    object: construct
+    notes: Table 14 reports a 2499-bp AF170880 fragment (15066..17564) from p9-6GE9
+      inserted into pEM4 BamHI/EcoRI. The table visibly prints BacI-EcoRI for the
+      source fragment, whereas Methods 8.4 says BclI-EcoRI. Preserve the disagreement;
+      a complete experimental junction sequence was not obtained. pEM4 supplies pIJ101
+      origin, tsr and the ermE* promoter. This is not pXHNEG.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Table 14, Methods 8.4 and results, PDF
+        pp.43,59,81.
+  - subject: construct
+    predicate: had_reported_transformant_check
+    object: genotyping
+    notes: Figure 13 shows restriction analysis for two transformants, with expected
+      8.3/2.5-kb EcoRI/PstI fragments and a 10.8-kb SphI band. This is restriction-pattern
+      evidence, not full plasmid sequencing; the subsequent LC-MS experiment is not
+      assigned to a uniquely identified XH12, XH13 or XH14 clone here.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Figure 13 and results, PDF pp.81-82.
+  - subject: construct
+    predicate: was_introduced_into
+    object: host
+    notes: The source introduces pXHN into the S. rishiriensis couN3 mutant by protoplast
+      transformation. This heterologous host is separate from the S. lividans protein-purification
+      host and native novobiocin producer.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Methods 8.4 and results, PDF pp.59,81-82.
+  - subject: construct
+    predicate: is_reported_expression_construct_for
+    object: protein
+    notes: NovN expression is the source intervention. No exact UniProt accession
+      is assigned to this unsequenced expressed product, and the His6 tag of pXHNEG
+      is not transferred to pXHN. Neither expression abundance nor a purified activity
+      measurement is supplied for this host preparation.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Methods/results, PDF pp.59,81-85.
+  - subject: host
+    predicate: was_used_in
+    object: experiment
+    notes: Culture extracts were examined by positive ESI selected-reaction monitoring.
+      The coumermycin A1 comparator uses 1110->282/622; coumermycin D uses 896->175/515;
+      the assigned bis-carbamoylated product uses 982->218/558. These transitions
+      support source assignments, not an independently isolated exact structure.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; LC-MS methods, Figure 14 and results, PDF
+        pp.61-62,82-84.
+  - subject: protein
+    predicate: is_intervention_in
+    object: experiment
+    notes: The comparison tests heterologous novN expression in the mutant background.
+      It is not direct measurement of native novobiocin biosynthetic flux or a purified
+      turnover constant.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Heterologous production results, PDF pp.81-83.
+  - subject: experiment
+    predicate: retains_dominant_precursor_signal
+    object: precursor
+    notes: Coumermycin D remains the dominant source-assigned metabolite; the carbamoylated
+      species is minor. No absolute pure-product titer or comprehensive conversion
+      percentage is inferred.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Heterologous production results, PDF p.85.
+  - subject: experiment
+    predicate: has_source_assigned_product_signal
+    object: product
+    notes: The bis-carbamoylated D signal is reported only in the NovN-expressing
+      mutant. Coumermycin D and its carbamoylated product were not chromatographically
+      separated; SRM distinguishes their assigned ions. Do not represent this as isolation
+      of pure product or two independently measured sequential carbamoylation reactions.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Heterologous production results, PDF pp.82-85.
+      snippet: a chromatographic separation was not achieved.
+  - subject: controls
+    predicate: constrain
+    object: experiment
+    notes: The assigned carbamoylated signal was not reported for wild type or the
+      untransformed couN3 mutant. These comparator results do not establish the exact
+      intracellular abundance or sequence of NovN.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Heterologous production results, PDF pp.82-83.
+  - subject: experiment
+    predicate: has_reported_supplementation_test
+    object: supplement
+    notes: Adding 12 mM ammonium nitrate or 4 mM carbamoyl phosphate did not increase
+      the product-to-precursor ratio. The discussion of intracellular cofactor availability
+      is a hypothesis, not a measured limiting pool or demonstrated explanation for
+      low yield.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Results and discussion, PDF pp.85,98-102.
+  - subject: construct
+    predicate: has_separate_reported_host_test
+    object: clo
+    notes: The source reports no corresponding product from a cloN2 mutant of S. roseochromogenes
+      expressing NovN, explicitly with data not shown. This limited report is not
+      universal NovN nonacceptance of clorobiocin precursors, and the five positive
+      purified-analogue assays remain separate evidence.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Results/discussion, PDF pp.85,98-102.
+curation_history:
+- timestamp: '2026-10-04T22:05:23Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novn-heterologous-production-and-cloning-conflict with
+    source-checked NovN evidence and review #560 limits.'
+  llm_assisted: true

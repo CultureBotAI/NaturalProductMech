@@ -1,0 +1,272 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novn-analogue-products-and-substrate-conditioned-kinetics
+  scope: BIOSYNTHESIS
+  description: 'Five source-assigned NovN analogue products and two separate analogue
+    kinetic fits. Review #560. Xu locators are PDF pages, nineteen higher than printed
+    main-text pages. The owner retains its unspecified sugar stereocentre and SEEDED
+    status; source-assigned novobiocin is not an exact structure-key merge with cathomycin.
+    Native reference, engineered protein and DNA construct are separate entities.'
+  nodes:
+  - node_id: wt
+    label: Xu N-terminal His6 NovN preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: panel
+    label: Five-analogue NovN overnight carbamoylation panel
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: average
+    label: Mean conversion for four non-104 acceptors
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: kinetics
+    label: Xu five-minute analogue kinetic comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: a104
+    label: Novclobiocin 104 acceptor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: p114
+    label: Source-assigned novclobiocin 114
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: a105
+    label: Novclobiocin 105 acceptor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: p115
+    label: Source-assigned novclobiocin 115
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: a107
+    label: Novclobiocin 107 acceptor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: p117
+    label: Source-assigned novclobiocin 117
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: a108
+    label: Novclobiocin 108 acceptor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: p118
+    label: Source-assigned novclobiocin 118
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: a283
+    label: Novclobiocin 283 acceptor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: p284
+    label: Source-assigned novclobiocin 284
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: fit104
+    label: Novclobiocin 104-conditioned NovN kinetic fit
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: fit105
+    label: Novclobiocin 105-conditioned NovN kinetic fit
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: wt
+    predicate: catalyzes
+    object: panel
+    notes: The five analogue acceptors 104, 105, 107, 108 and 283 were incubated overnight
+      with carbamoyl phosphate under the endpoint protocol (1 mM acceptor, 5 mM donor,
+      2 mM ATP/Mg, 0.4 uM enzyme, 30 C). Product assignments use HPLC, NMR and negative
+      FAB-MS. These are source structural assignments, not new independent reassignments.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Methods, Figure 19 and Tables 21-22, PDF
+        pp.57,60-61,89-91; appendices pp.112-126.
+  - subject: panel
+    predicate: has_reported_aggregate_conversion
+    object: average
+    notes: The source gives 87% overnight conversion for 104 and about 54% as the
+      average for the other four acceptors. The latter is not four individual measurements,
+      a rate or a common uncertainty estimate.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Analogue results, PDF pp.89-90.
+  - subject: wt
+    predicate: was_measured_in
+    object: kinetics
+    notes: The separate kinetic comparison uses 37.5 nM NovN, 5 mM donor, 2.5-40 uM
+      acceptor and five-minute incubations, duplicate assays and Lineweaver-Burk analysis.
+      It is not the overnight conversion panel.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Kinetic methods and Figure 20, PDF pp.57,91.
+  - subject: a104
+    predicate: is_tested_acceptor_for
+    object: panel
+    notes: The source names novclobiocin 104 as this panel acceptor; no exact chemical
+      CURIE or equivalence to the owner is assigned.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Materials, Figure 19 and Table 21, PDF
+        pp.30,89-90.
+  - subject: panel
+    predicate: forms_source_assigned_product
+    object: p114
+    notes: For the 104->114 reaction, the source assigns 3-double-prime carbamoylation
+      from H-3 double-prime shifting 4.18->5.37 ppm and a +43-Da mass change. Product
+      negative FAB [M-H]- is reported as m/z 631, a source integer assignment rather
+      than an exact mass. This is the 87% overnight conversion row; no error estimate
+      is given.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Tables 21-22, Appendix I and product spectra
+        in Appendix II, PDF pp.90-91,112-126.
+  - subject: a105
+    predicate: is_tested_acceptor_for
+    object: panel
+    notes: The source names novclobiocin 105 as this panel acceptor; no exact chemical
+      CURIE or equivalence to the owner is assigned.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Materials, Figure 19 and Table 21, PDF
+        pp.30,89-90.
+  - subject: panel
+    predicate: forms_source_assigned_product
+    object: p115
+    notes: For the 105->115 reaction, the source assigns 3-double-prime carbamoylation
+      from H-3 double-prime shifting 4.12->5.27 ppm and a +43-Da mass change. Product
+      negative FAB [M-H]- is reported as m/z 617, a source integer assignment rather
+      than an exact mass. Table 22 gives the acceptor H-3'' coupling as 3.1 Hz but
+      Appendix I gives 3.3 Hz; Appendix I also lists C-8'' at 62.3 ppm then calls
+      it undetectable. These conflicts are retained, not used to invent a revised
+      structure.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Tables 21-22, Appendix I and product spectra
+        in Appendix II, PDF pp.90-91,112-126.
+  - subject: a107
+    predicate: is_tested_acceptor_for
+    object: panel
+    notes: The source names novclobiocin 107 as this panel acceptor; no exact chemical
+      CURIE or equivalence to the owner is assigned.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Materials, Figure 19 and Table 21, PDF
+        pp.30,89-90.
+  - subject: panel
+    predicate: forms_source_assigned_product
+    object: p117
+    notes: For the 107->117 reaction, the source assigns 3-double-prime carbamoylation
+      from H-3 double-prime shifting 4.09->5.25 ppm and a +43-Da mass change. Product
+      negative FAB [M-H]- is reported as m/z 597, a source integer assignment rather
+      than an exact mass.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Tables 21-22, Appendix I and product spectra
+        in Appendix II, PDF pp.90-91,112-126.
+  - subject: a108
+    predicate: is_tested_acceptor_for
+    object: panel
+    notes: The source names novclobiocin 108 as this panel acceptor; no exact chemical
+      CURIE or equivalence to the owner is assigned. Figure 19 panel D labels 108
+      although the caption omits its number.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Materials, Figure 19 and Table 21, PDF
+        pp.30,89-90.
+  - subject: panel
+    predicate: forms_source_assigned_product
+    object: p118
+    notes: For the 108->118 reaction, the source assigns 3-double-prime carbamoylation
+      from H-3 double-prime shifting 4.03->5.15 ppm and a +43-Da mass change. Product
+      negative FAB [M-H]- is reported as m/z 583, a source integer assignment rather
+      than an exact mass.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Tables 21-22, Appendix I and product spectra
+        in Appendix II, PDF pp.90-91,112-126.
+  - subject: a283
+    predicate: is_tested_acceptor_for
+    object: panel
+    notes: The source names novclobiocin 283 as this panel acceptor; no exact chemical
+      CURIE or equivalence to the owner is assigned. The source attributes 283 supply
+      to an earlier 3-bromo-4-hydroxybenzoic-acid feeding experiment; this is not
+      a new feeding experiment in the NovN assay.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Materials, Figure 19 and Table 21, PDF
+        pp.30,89-90.
+  - subject: panel
+    predicate: forms_source_assigned_product
+    object: p284
+    notes: For the 283->284 reaction, the source assigns 3-double-prime carbamoylation
+      from H-3 double-prime shifting 4.19->5.37 ppm and a +43-Da mass change. Product
+      negative FAB [M-H]- is reported as m/z 643, a source integer assignment rather
+      than an exact mass. Product H-4'' is 3.56 ppm in Table 22 and 3.55 in Appendix
+      I; the table contains the 283 precursor H-3 value but Appendix I lists only
+      284.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Tables 21-22, Appendix I and product spectra
+        in Appendix II, PDF pp.90-91,112-126.
+  - subject: a104
+    predicate: conditions
+    object: fit104
+    notes: The source reports Km 1.9 uM and kcat 1.32 min^-1 for novclobiocin 104;
+      no uncertainty interval is stated.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Figure 20 and results, PDF p.91.
+  - subject: kinetics
+    predicate: yields_reported_fit
+    object: fit104
+    notes: The value is a preparation-specific kinetic fit, not the overnight endpoint
+      percentage or a native-pathway flux.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Kinetic methods and Figure 20, PDF pp.57,91.
+  - subject: a105
+    predicate: conditions
+    object: fit105
+    notes: The source reports Km 14.3 uM and kcat 1.53 min^-1 for novclobiocin 105;
+      no uncertainty interval is stated. The source calls 14.3 versus the genuine
+      acceptor 2.4 uM a fivefold difference; the literal ratio is approximately 5.96.
+      Preserve the reported values and distinguish the source wording.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Figure 20 and results, PDF p.91.
+  - subject: kinetics
+    predicate: yields_reported_fit
+    object: fit105
+    notes: The value is a preparation-specific kinetic fit, not the overnight endpoint
+      percentage or a native-pathway flux.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Kinetic methods and Figure 20, PDF pp.57,91.
+curation_history:
+- timestamp: '2026-10-04T22:05:23Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novn-analogue-products-and-substrate-conditioned-kinetics
+    with source-checked NovN evidence and review #560 limits.'
+  llm_assisted: true

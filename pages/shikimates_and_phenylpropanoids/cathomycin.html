@@ -2031,6 +2031,567 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 11 edges</span></h2>
+<p class="sub">NovN deposited sequence versions, literal primers and the Xu His6 preparation. Review #560. Xu locators are PDF pages, nineteen higher than printed main-text pages. The owner retains its unspecified sugar stereocentre and SEEDED status; source-assigned novobiocin is not an exact structure-key merge with cathomycin. Native reference, engineered protein and DNA construct are separate entities.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited novobiocin cluster underlying the cathomycin owner</td>
+  <td>contains</td>
+  <td>Deposited novN locus from NCIMB 9219</td>
+  <td>The owner links BGC0000834.5 and AF170880.4. The current novN CDS is 15274..17307(+), 2034 nt including stop. This is a locus association, not independent proof of the owner sugar stereochemistry.</td>
+  <td class="mono">https://mibig.secondarymetabolites.org/go/BGC0000834.5<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novN locus from NCIMB 9219</td>
+  <td>encodes_native_reference</td>
+  <td>Current deposited native NovN sequence reference</td>
+  <td>CDS-aware table-11 translation exactly matches AAF67507.2 and all 677 residues of reviewed Q9L9F4. GenBank names S. niveus NCIMB 9219; UniProt names S. niveus with common name S. spheroides, taxon 193462. The accession is not assigned to an unsequenced engineered preparation.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.uniprot.org/uniprotkb/Q9L9F4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novN locus from NCIMB 9219</td>
+  <td>has_earlier_deposited_translation</td>
+  <td>Historical deposited NovN sequence version</td>
+  <td>AF170880.2 has AAF67507.1, also 677 aa, with LRRN at residues 123..126 where current AAF67507.2/Q9L9F4 has APPD. AF170880.3 already matches the current protein. In .2/.3 novN is 15222..17255; .4 coordinates are shifted +52. Deposit revisions are not independently proven biological alleles.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Historical deposited NovN sequence version</td>
+  <td>constrains_sample_identification</td>
+  <td>NovN historical sample and sequence-version limits</td>
+  <td>The thesis names S. spheroides and an AF170880-derived cloning source, but no complete experimental pXHNEG sequence was obtained. Current database identity does not establish which deposited 123..126 sequence was present in that assayed sample or resolve historical strain labels.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2</td>
+</tr>
+<tr>
+  <td>Deposited novN locus from NCIMB 9219</td>
+  <td>is_reported_insert_source_for</td>
+  <td>Xu pXHNEG N-terminal His6 NovN DNA construct</td>
+  <td>Xu cloned the PCR product through pGEM-T (pXHNET) and pRSET-B (pXHNER; BclI/BamHI-compatible plus HindIII ends), then fused pXHNER and pGM9 at HindIII to make pXHNEG. Figure 15 gives 11298 bp. The Table 14 2.1-kb fragment label accompanies 2034-nt CDS coordinates; CDS length is not the complete cloning-fragment length.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu pXHNEG N-terminal His6 NovN DNA construct</td>
+  <td>has_independently_checked_primer_model</td>
+  <td>Literal novN primer model and coordinate discrepancy</td>
+  <td>Literal primers GTGCTCGCTGATCAGAACGACATG and AAGGGAAGCTTTACGGCCGAC have unique best full-length genomic matches with three mismatches each. The forward span is 15201..15224 in .2/.3, not printed 15198..15221; reverse-complement span 17285..17307 agrees. Current coordinates shift +52, which does not explain the separate three-base discrepancy. The modeled PCR is 2107 bp; BclI/HindIII cut coordinates differ by 2088 nt. Native core is retained in each version-specific model. This is not a sequenced full plasmid or independently determined tag junction.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Xu pXHNEG N-terminal His6 NovN DNA construct</td>
+  <td>encodes_engineered_protein</td>
+  <td>Xu N-terminal His6 NovN preparation</td>
+  <td>Xu reports N-terminal His6 NovN, separate from the later C-terminal LE-His8 protein. The native accession and historical deposited variant are not identities for this fusion. No complete vector-derived amino-acid sequence or active-protein fraction is inferred.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. lividans T7 NovN expression host</td>
+  <td>expressed</td>
+  <td>Xu N-terminal His6 NovN preparation</td>
+  <td>The TK23-derived S. lividans T7 host supplies thiostrepton-induced T7 polymerase. YEME with 10 ug/mL kanamycin was grown at 28 C and 180 rpm for 48 h; 1 mL inoculated 100 mL fresh medium, with 25 ug/mL thiostrepton for 24 h. Lowering growth to 20 C did not substantially improve soluble NovN. These are heterologous protein-preparation conditions.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu N-terminal His6 NovN preparation</td>
+  <td>has_reported_preparation_yield</td>
+  <td>Xu NovN protein yield and solubility readout</td>
+  <td>The source estimates 6.7 mg NovN/g fresh cells before purification, much insoluble, and about 16 ug purified NovN/g fresh cells from SDS-PAGE. Ni-NTA purification and NAP-10 desalting into 0.2 M Tris-HCl pH 8 precede assays. Bradford/BSA is the general protein concentration method. These mass-per-biomass yields are not mg/L culture, active-enzyme concentrations or antibiotic titers.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu N-terminal His6 NovN preparation</td>
+  <td>has_reported_gel_profile</td>
+  <td>Xu NovN SDS-PAGE bands and proposed degradation</td>
+  <td>Figure 16 distinguishes pre/post induction, soluble fraction and affinity eluate. A roughly 78-kDa band agrees with the source-calculated 78.5 kDa; an additional 76-kDa band is proposed to reflect degradation. No cleavage site, fragment sequence or activity of that band was established.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>NovN historical sample and sequence-version limits</td>
+  <td>limits_native_accession_assignment_to</td>
+  <td>Xu N-terminal His6 NovN preparation</td>
+  <td>Keep this experimentally active preparation ungrounded as an exact protein entity. A supported novN gene assignment is retained without inventing a verified native core, complete N-terminal tag or historical sample identity.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 15 edges</span></h2>
+<p class="sub">Xu purified NovN carbamoylation, conditional kinetics and bounded negative tests. Review #560. Xu locators are PDF pages, nineteen higher than printed main-text pages. The owner retains its unspecified sugar stereocentre and SEEDED status; source-assigned novobiocin is not an exact structure-key merge with cathomycin. Native reference, engineered protein and DNA construct are separate entities.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Xu N-terminal His6 NovN preparation</td>
+  <td>catalyzes</td>
+  <td>Xu NovN carbamoylation endpoint assay</td>
+  <td>The standard assay uses 100 uL, 0.2 M Tris-HCl pH 8, 1 mM acceptor, 5 mM carbamoyl-phosphate dilithium, 2 mM ATP, 2 mM Mg and 0.4 uM NovN at 30 C, quenched with 5 uL 1.5 M trichloroacetic acid. Overnight endpoint/preparative incubations are not the five-minute kinetic assay.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Descarbamoylnovobiocin acceptor</td>
+  <td>is_substrate_for</td>
+  <td>Xu NovN carbamoylation endpoint assay</td>
+  <td>Descarbamoylnovobiocin is the genuine acceptor named by the source. Materials identify Pharmacia &amp; Upjohn as supplier. No exact chemical CURIE or new resolution of the owner sugar stereochemistry is inferred.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Carbamoyl-phosphate dilithium donor</td>
+  <td>is_carbamoyl_donor_for</td>
+  <td>Xu NovN carbamoylation endpoint assay</td>
+  <td>Carbamoyl phosphate is supplied at 5 mM. The experiment supports carbamoyl transfer under the stated conditions, not independent quantitation of phosphate release or donor binding.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu NovN carbamoylation endpoint assay</td>
+  <td>forms_source_assigned_product</td>
+  <td>HPLC-assigned novobiocin assay product</td>
+  <td>Figure 17 shows the source-assigned novobiocin signal. Products were extracted twice with 500 uL ethyl acetate and separated on Nucleosil RP120-5 with 70-100% methanol in 1% formic acid over 25 min, detected at 325 nm. The methods name clorobiocin and descarbamoylnovobiocin standards; this edge does not invent an independently inspected novobiocin standard or establish exact-key equivalence to the owner.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Heat-denatured NovN control</td>
+  <td>is_negative_control_for</td>
+  <td>Xu NovN carbamoylation endpoint assay</td>
+  <td>The methods specify heat-denatured enzyme as a negative control. This is the stated control design, not a separately quantified detection limit or a measured fraction of active enzyme.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu NovN carbamoylation endpoint assay</td>
+  <td>has_reported_atp_dependence</td>
+  <td>ATP omission and supplementation readout</td>
+  <td>ATP omission is reported to eliminate detectable enzymatic activity; no numerical detection threshold is supplied. The stated optimum is 2 mM ATP. This does not establish stoichiometric ATP consumption or an ATP-binding constant.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu NovN carbamoylation endpoint assay</td>
+  <td>has_reported_metal_dependence</td>
+  <td>Added Mg/Mn dependence and residual activity</td>
+  <td>With ATP but without added Mg2+ or Mn2+, the source reports 1% activity, not zero. The stated optimum Mg2+ concentration is 2 mM. This is not an exhaustive metal-specificity panel or evidence that the later deposited Fe is a physiological cofactor.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu N-terminal His6 NovN preparation</td>
+  <td>was_measured_in</td>
+  <td>Xu five-minute NovN kinetic experiment</td>
+  <td>Kinetics used 37.5 nM NovN, 5 mM carbamoyl phosphate, 2.5-40 uM acceptor and five-minute incubations under the reported assay protocol. Assays were duplicate and evaluated by Lineweaver-Burk plots. Figure error bars are not defined as SD or SE. The source reports linear product formation up to 0.5 uM enzyme and 90 min in preliminary tests.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Descarbamoylnovobiocin acceptor</td>
+  <td>conditions</td>
+  <td>Descarbamoylnovobiocin-conditioned NovN kinetic fit</td>
+  <td>For descarbamoylnovobiocin the thesis reports Km 2.4 uM and kcat 2.4 min^-1. These preparation- and condition-specific values are not binding affinity, native flux or the separate Freel Meyers values of 4.6 uM and 4.1 min^-1 relayed by UniProt.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1<br>https://www.uniprot.org/uniprotkb/Q9L9F4</td>
+</tr>
+<tr>
+  <td>Xu five-minute NovN kinetic experiment</td>
+  <td>yields_reported_fit</td>
+  <td>Descarbamoylnovobiocin-conditioned NovN kinetic fit</td>
+  <td>The reported Lineweaver-Burk fit applies to the genuine acceptor; no uncertainty interval or active-fraction correction is supplied. Do not transfer the 0.4-uM overnight enzyme loading to this fit.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>ATP omission and supplementation readout</td>
+  <td>motivates_source_hypothesis</td>
+  <td>Proposed Mg-ATP allosteric activation</td>
+  <td>The discussion proposes Mg-ATP as an allosteric activator. This is a source hypothesis, not a measured allosteric site, ATP occupancy, proton-transfer mechanism or a solved catalytic intermediate.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu N-terminal His6 NovN preparation</td>
+  <td>was_tested_in</td>
+  <td>Crude coumermycin D extract test</td>
+  <td>Coumermycin D was supplied as crude mutant extract, not pure compound. Its nominal 0.1 mM concentration was calculated as coumermycin A1. The overnight in-vitro test therefore has matrix and concentration limits not shared by the purified acceptor assays.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Crude coumermycin D extract test</td>
+  <td>gave_bounded_negative_readout</td>
+  <td>No expected in-vitro coumermycin D product detected</td>
+  <td>The expected carbamoylated product was not detected in this in-vitro extract assay. Do not encode universal nonacceptance of pure coumermycin D: the separate heterologous experiment reports a minor bis-carbamoylated product.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu N-terminal His6 NovN preparation</td>
+  <td>was_tested_in</td>
+  <td>Acetyl-phosphate donor substitution test</td>
+  <td>The alternative-donor experiment supplied 5 mM acetyl phosphate instead of carbamoyl phosphate with the genuine acceptor overnight. A carbamoyl-phosphate positive and acceptor-only negative control bound interpretation of this particular substitution.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Acetyl-phosphate donor substitution test</td>
+  <td>gave_bounded_negative_readout</td>
+  <td>No expected acetyl-phosphate-derived product detected</td>
+  <td>No expected acetyl-phosphate-derived product was detected under these conditions. This does not exclude all alternative donors, all enzyme loadings or activity below an unspecified detection threshold.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">16 nodes, 17 edges</span></h2>
+<p class="sub">Five source-assigned NovN analogue products and two separate analogue kinetic fits. Review #560. Xu locators are PDF pages, nineteen higher than printed main-text pages. The owner retains its unspecified sugar stereocentre and SEEDED status; source-assigned novobiocin is not an exact structure-key merge with cathomycin. Native reference, engineered protein and DNA construct are separate entities.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Xu N-terminal His6 NovN preparation</td>
+  <td>catalyzes</td>
+  <td>Five-analogue NovN overnight carbamoylation panel</td>
+  <td>The five analogue acceptors 104, 105, 107, 108 and 283 were incubated overnight with carbamoyl phosphate under the endpoint protocol (1 mM acceptor, 5 mM donor, 2 mM ATP/Mg, 0.4 uM enzyme, 30 C). Product assignments use HPLC, NMR and negative FAB-MS. These are source structural assignments, not new independent reassignments.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Five-analogue NovN overnight carbamoylation panel</td>
+  <td>has_reported_aggregate_conversion</td>
+  <td>Mean conversion for four non-104 acceptors</td>
+  <td>The source gives 87% overnight conversion for 104 and about 54% as the average for the other four acceptors. The latter is not four individual measurements, a rate or a common uncertainty estimate.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu N-terminal His6 NovN preparation</td>
+  <td>was_measured_in</td>
+  <td>Xu five-minute analogue kinetic comparison</td>
+  <td>The separate kinetic comparison uses 37.5 nM NovN, 5 mM donor, 2.5-40 uM acceptor and five-minute incubations, duplicate assays and Lineweaver-Burk analysis. It is not the overnight conversion panel.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Novclobiocin 104 acceptor</td>
+  <td>is_tested_acceptor_for</td>
+  <td>Five-analogue NovN overnight carbamoylation panel</td>
+  <td>The source names novclobiocin 104 as this panel acceptor; no exact chemical CURIE or equivalence to the owner is assigned.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Five-analogue NovN overnight carbamoylation panel</td>
+  <td>forms_source_assigned_product</td>
+  <td>Source-assigned novclobiocin 114</td>
+  <td>For the 104-&gt;114 reaction, the source assigns 3-double-prime carbamoylation from H-3 double-prime shifting 4.18-&gt;5.37 ppm and a +43-Da mass change. Product negative FAB [M-H]- is reported as m/z 631, a source integer assignment rather than an exact mass. This is the 87% overnight conversion row; no error estimate is given.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Novclobiocin 105 acceptor</td>
+  <td>is_tested_acceptor_for</td>
+  <td>Five-analogue NovN overnight carbamoylation panel</td>
+  <td>The source names novclobiocin 105 as this panel acceptor; no exact chemical CURIE or equivalence to the owner is assigned.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Five-analogue NovN overnight carbamoylation panel</td>
+  <td>forms_source_assigned_product</td>
+  <td>Source-assigned novclobiocin 115</td>
+  <td>For the 105-&gt;115 reaction, the source assigns 3-double-prime carbamoylation from H-3 double-prime shifting 4.12-&gt;5.27 ppm and a +43-Da mass change. Product negative FAB [M-H]- is reported as m/z 617, a source integer assignment rather than an exact mass. Table 22 gives the acceptor H-3&#39;&#39; coupling as 3.1 Hz but Appendix I gives 3.3 Hz; Appendix I also lists C-8&#39;&#39; at 62.3 ppm then calls it undetectable. These conflicts are retained, not used to invent a revised structure.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Novclobiocin 107 acceptor</td>
+  <td>is_tested_acceptor_for</td>
+  <td>Five-analogue NovN overnight carbamoylation panel</td>
+  <td>The source names novclobiocin 107 as this panel acceptor; no exact chemical CURIE or equivalence to the owner is assigned.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Five-analogue NovN overnight carbamoylation panel</td>
+  <td>forms_source_assigned_product</td>
+  <td>Source-assigned novclobiocin 117</td>
+  <td>For the 107-&gt;117 reaction, the source assigns 3-double-prime carbamoylation from H-3 double-prime shifting 4.09-&gt;5.25 ppm and a +43-Da mass change. Product negative FAB [M-H]- is reported as m/z 597, a source integer assignment rather than an exact mass.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Novclobiocin 108 acceptor</td>
+  <td>is_tested_acceptor_for</td>
+  <td>Five-analogue NovN overnight carbamoylation panel</td>
+  <td>The source names novclobiocin 108 as this panel acceptor; no exact chemical CURIE or equivalence to the owner is assigned. Figure 19 panel D labels 108 although the caption omits its number.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Five-analogue NovN overnight carbamoylation panel</td>
+  <td>forms_source_assigned_product</td>
+  <td>Source-assigned novclobiocin 118</td>
+  <td>For the 108-&gt;118 reaction, the source assigns 3-double-prime carbamoylation from H-3 double-prime shifting 4.03-&gt;5.15 ppm and a +43-Da mass change. Product negative FAB [M-H]- is reported as m/z 583, a source integer assignment rather than an exact mass.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Novclobiocin 283 acceptor</td>
+  <td>is_tested_acceptor_for</td>
+  <td>Five-analogue NovN overnight carbamoylation panel</td>
+  <td>The source names novclobiocin 283 as this panel acceptor; no exact chemical CURIE or equivalence to the owner is assigned. The source attributes 283 supply to an earlier 3-bromo-4-hydroxybenzoic-acid feeding experiment; this is not a new feeding experiment in the NovN assay.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Five-analogue NovN overnight carbamoylation panel</td>
+  <td>forms_source_assigned_product</td>
+  <td>Source-assigned novclobiocin 284</td>
+  <td>For the 283-&gt;284 reaction, the source assigns 3-double-prime carbamoylation from H-3 double-prime shifting 4.19-&gt;5.37 ppm and a +43-Da mass change. Product negative FAB [M-H]- is reported as m/z 643, a source integer assignment rather than an exact mass. Product H-4&#39;&#39; is 3.56 ppm in Table 22 and 3.55 in Appendix I; the table contains the 283 precursor H-3 value but Appendix I lists only 284.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Novclobiocin 104 acceptor</td>
+  <td>conditions</td>
+  <td>Novclobiocin 104-conditioned NovN kinetic fit</td>
+  <td>The source reports Km 1.9 uM and kcat 1.32 min^-1 for novclobiocin 104; no uncertainty interval is stated.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu five-minute analogue kinetic comparison</td>
+  <td>yields_reported_fit</td>
+  <td>Novclobiocin 104-conditioned NovN kinetic fit</td>
+  <td>The value is a preparation-specific kinetic fit, not the overnight endpoint percentage or a native-pathway flux.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Novclobiocin 105 acceptor</td>
+  <td>conditions</td>
+  <td>Novclobiocin 105-conditioned NovN kinetic fit</td>
+  <td>The source reports Km 14.3 uM and kcat 1.53 min^-1 for novclobiocin 105; no uncertainty interval is stated. The source calls 14.3 versus the genuine acceptor 2.4 uM a fivefold difference; the literal ratio is approximately 5.96. Preserve the reported values and distinguish the source wording.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu five-minute analogue kinetic comparison</td>
+  <td>yields_reported_fit</td>
+  <td>Novclobiocin 105-conditioned NovN kinetic fit</td>
+  <td>The value is a preparation-specific kinetic fit, not the overnight endpoint percentage or a native-pathway flux.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 11 edges</span></h2>
+<p class="sub">pXHN construct evidence and source-assigned heterologous coumermycin analogue production. Review #560. Xu locators are PDF pages, nineteen higher than printed main-text pages. The owner retains its unspecified sugar stereocentre and SEEDED status; source-assigned novobiocin is not an exact structure-key merge with cathomycin. Native reference, engineered protein and DNA construct are separate entities.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>novN DNA insert used for heterologous expression</td>
+  <td>was_cloned_into</td>
+  <td>Xu pXHN ermE-star novN DNA construct</td>
+  <td>Table 14 reports a 2499-bp AF170880 fragment (15066..17564) from p9-6GE9 inserted into pEM4 BamHI/EcoRI. The table visibly prints BacI-EcoRI for the source fragment, whereas Methods 8.4 says BclI-EcoRI. Preserve the disagreement; a complete experimental junction sequence was not obtained. pEM4 supplies pIJ101 origin, tsr and the ermE* promoter. This is not pXHNEG.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu pXHN ermE-star novN DNA construct</td>
+  <td>had_reported_transformant_check</td>
+  <td>pXHN transformant restriction analysis</td>
+  <td>Figure 13 shows restriction analysis for two transformants, with expected 8.3/2.5-kb EcoRI/PstI fragments and a 10.8-kb SphI band. This is restriction-pattern evidence, not full plasmid sequencing; the subsequent LC-MS experiment is not assigned to a uniquely identified XH12, XH13 or XH14 clone here.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu pXHN ermE-star novN DNA construct</td>
+  <td>was_introduced_into</td>
+  <td>S. rishiriensis couN3-mutant production host</td>
+  <td>The source introduces pXHN into the S. rishiriensis couN3 mutant by protoplast transformation. This heterologous host is separate from the S. lividans protein-purification host and native novobiocin producer.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu pXHN ermE-star novN DNA construct</td>
+  <td>is_reported_expression_construct_for</td>
+  <td>pXHN-expressed NovN in the couN3-mutant host</td>
+  <td>NovN expression is the source intervention. No exact UniProt accession is assigned to this unsequenced expressed product, and the His6 tag of pXHNEG is not transferred to pXHN. Neither expression abundance nor a purified activity measurement is supplied for this host preparation.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. rishiriensis couN3-mutant production host</td>
+  <td>was_used_in</td>
+  <td>Heterologous NovN coumermycin-analogue experiment</td>
+  <td>Culture extracts were examined by positive ESI selected-reaction monitoring. The coumermycin A1 comparator uses 1110-&gt;282/622; coumermycin D uses 896-&gt;175/515; the assigned bis-carbamoylated product uses 982-&gt;218/558. These transitions support source assignments, not an independently isolated exact structure.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pXHN-expressed NovN in the couN3-mutant host</td>
+  <td>is_intervention_in</td>
+  <td>Heterologous NovN coumermycin-analogue experiment</td>
+  <td>The comparison tests heterologous novN expression in the mutant background. It is not direct measurement of native novobiocin biosynthetic flux or a purified turnover constant.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Heterologous NovN coumermycin-analogue experiment</td>
+  <td>retains_dominant_precursor_signal</td>
+  <td>Source-assigned coumermycin D precursor signal</td>
+  <td>Coumermycin D remains the dominant source-assigned metabolite; the carbamoylated species is minor. No absolute pure-product titer or comprehensive conversion percentage is inferred.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Heterologous NovN coumermycin-analogue experiment</td>
+  <td>has_source_assigned_product_signal</td>
+  <td>Source-assigned bis-carbamoylated coumermycin D signal</td>
+  <td>The bis-carbamoylated D signal is reported only in the NovN-expressing mutant. Coumermycin D and its carbamoylated product were not chromatographically separated; SRM distinguishes their assigned ions. Do not represent this as isolation of pure product or two independently measured sequential carbamoylation reactions.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Wild-type and untransformed-mutant comparators</td>
+  <td>constrain</td>
+  <td>Heterologous NovN coumermycin-analogue experiment</td>
+  <td>The assigned carbamoylated signal was not reported for wild type or the untransformed couN3 mutant. These comparator results do not establish the exact intracellular abundance or sequence of NovN.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Heterologous NovN coumermycin-analogue experiment</td>
+  <td>has_reported_supplementation_test</td>
+  <td>Nitrogen or carbamoyl-phosphate supplementation readout</td>
+  <td>Adding 12 mM ammonium nitrate or 4 mM carbamoyl phosphate did not increase the product-to-precursor ratio. The discussion of intracellular cofactor availability is a hypothesis, not a measured limiting pool or demonstrated explanation for low yield.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu pXHN ermE-star novN DNA construct</td>
+  <td>has_separate_reported_host_test</td>
+  <td>Reported clorobiocin-mutant negative with data not shown</td>
+  <td>The source reports no corresponding product from a cloN2 mutant of S. roseochromogenes expressing NovN, explicitly with data not shown. This limited report is not universal NovN nonacceptance of clorobiocin precursors, and the five positive purified-analogue assays remain separate evidence.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 11 edges</span></h2>
+<p class="sub">Distinct NovN preparation sizes and the explicitly unsolved 2008 crystal forms. Review #560. Xu locators are PDF pages, nineteen higher than printed main-text pages. The owner retains its unspecified sugar stereocentre and SEEDED status; source-assigned novobiocin is not an exact structure-key merge with cathomycin. Native reference, engineered protein and DNA construct are separate entities.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Current deposited native NovN sequence reference</td>
+  <td>is_gene_product_reference_for</td>
+  <td>Xu N-terminal His6 NovN preparation</td>
+  <td>The thesis identifies the protein as novN-derived; current Q9L9F4 is the native reference, not a verified full sequence for the N-terminal His6 sample. Historical sequence-version ambiguity remains.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1<br>https://www.uniprot.org/uniprotkb/Q9L9F4</td>
+</tr>
+<tr>
+  <td>Xu N-terminal His6 NovN preparation</td>
+  <td>was_measured_by</td>
+  <td>Xu calibrated NovN size-exclusion result</td>
+  <td>The methods name Hiload 26/60 Superdex 200 at 1 mL/min and 4 C; Table 19 instead heads the column Sephadex 200. Standards used G1 (50 mM Tris-HCl pH 8, 5 mM DTT, 50 uM PMSF), sample G2 with additional 150 mM NaCl. NovN eluted at 182 mL. Preserve the column-name and sample-versus-standard buffer differences.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Xu calibrated NovN size-exclusion result</td>
+  <td>supports_source_interpretation</td>
+  <td>Xu preparation monomer-like hydrodynamic interpretation</td>
+  <td>The source assigns an apparent 79 kDa, near its 78.5-kDa calculated tagged monomer. Standards were blue dextran 2000 kDa/107.9 mL, aldolase 158/158.6, albumin 66/178.4, ovalbumin 45/212.4 and ribonuclease 13.7/252.4; acetone gave total volume 294 mL. This is preparation-specific hydrodynamic inference, not native in-cell stoichiometry. The reported 79 kDa is not independently recalibrated here: 182 mL lies between the 66- and 45-kDa standard elutions, which were measured in a different buffer from the NovN sample. Preserve that numerical and protocol context rather than silently replacing the reported mass.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Current deposited native NovN sequence reference</td>
+  <td>is_native_core_reference_for</td>
+  <td>2008 NovN pET37b expression construct</td>
+  <td>The 2008 source describes novN in pET37b with a C-terminal LEHHHHHHHH extension. Its stated 677-residue native protein plus ten-residue extension gives 687 residues and 75839 Da. No complete experimental vector sequence was independently inspected.</td>
+  <td class="mono">DOI:10.1107/S1744309108030145<br>https://www.uniprot.org/uniprotkb/Q9L9F4</td>
+</tr>
+<tr>
+  <td>2008 NovN pET37b expression construct</td>
+  <td>encodes_engineered_protein</td>
+  <td>2008 C-terminal LE-His8 NovN preparation</td>
+  <td>The C-terminal LE-His8 preparation is not the Xu N-terminal His6 fusion. Expression used E. coli BL21(DE3), 1 L LB with 50 mg kanamycin, growth at 310 K to OD600 0.4, 0.1 mM IPTG and overnight expression at 288 K. Nickel affinity and Superdex 200 purification gave about 10 mg/L culture, &gt;95% SDS-PAGE purity and final 10 mg/mL. These are protein yields, not catalytic rates.</td>
+  <td class="mono">DOI:10.1107/S1744309108030145</td>
+</tr>
+<tr>
+  <td>2008 C-terminal LE-His8 NovN preparation</td>
+  <td>was_measured_by</td>
+  <td>2008 NovN dynamic-light-scattering result</td>
+  <td>DLS at 293 K with at least 15 measurements gave 19% polydispersity and apparent mass 160 kDa. These are not the Xu SEC data, and no equilibrium association constant was reported.</td>
+  <td class="mono">DOI:10.1107/S1744309108030145</td>
+</tr>
+<tr>
+  <td>2008 NovN dynamic-light-scattering result</td>
+  <td>supports_source_interpretation</td>
+  <td>2008 preparation dimer-like hydrodynamic interpretation</td>
+  <td>The source compares 160 kDa with the calculated tagged dimer 151.7 kDa. This supports a dimer-like preparation under the reported conditions, not a uniquely established physiological oligomer.</td>
+  <td class="mono">DOI:10.1107/S1744309108030145</td>
+</tr>
+<tr>
+  <td>Xu preparation monomer-like hydrodynamic interpretation</td>
+  <td>contributes_to</td>
+  <td>NovN preparation-specific assembly and tag-attribution limits</td>
+  <td>The SEC estimate is retained rather than replaced by the later DLS or deposited assembly. Different tags, methods, buffers and sample histories prevent assigning the disagreement to one tested cause.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>2008 preparation dimer-like hydrodynamic interpretation</td>
+  <td>contributes_to</td>
+  <td>NovN preparation-specific assembly and tag-attribution limits</td>
+  <td>The later dimer-like estimate does not invalidate the earlier preparation result. Xu PDF p.85 calls the Freel Meyers 2004 preparation N-terminal His8, while the 2008 methods specify C-terminal LE-His8. The complete earlier paper was not inspected; this is an attributed source difference, not a reconstructed 2004 sequence.</td>
+  <td class="mono">DOI:10.1107/S1744309108030145<br>https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>2008 C-terminal LE-His8 NovN preparation</td>
+  <td>formed</td>
+  <td>2008 ATP-supplemented unsolved NovN crystal form I</td>
+  <td>With 1 mM added ATP, form I is reported as C2 with 2.9-A diffraction. Matthews analysis suggests two protomers/asymmetric unit and 52.7% solvent; the self-rotation twofold is 24% of the origin peak. These are crystallographic inferences from an unsolved form, not observed ATP density or an atomic dimer structure. Crystallization methods say 291 K whereas the results say 293 K.</td>
+  <td class="mono">DOI:10.1107/S1744309108030145</td>
+</tr>
+<tr>
+  <td>2008 C-terminal LE-His8 NovN preparation</td>
+  <td>formed</td>
+  <td>2008 novobiocin-supplemented unsolved NovN crystal form II</td>
+  <td>With 1 mM added novobiocin, form II is reported as I222 or I212121, about 2.3-A diffraction (Table 1: 2.29 A), one inferred asymmetric-unit protomer and 62.9% solvent. The paper explicitly plans future phasing. No bound novobiocin, catalytic contacts or identity with the later 9S2T diffraction dataset is asserted.</td>
+  <td class="mono">DOI:10.1107/S1744309108030145</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 10 edges</span></h2>
+<p class="sub">The 2025 NovN deposit, engineered sequence, coordinate coverage and bounded local geometry. Review #560. Xu locators are PDF pages, nineteen higher than printed main-text pages. The owner retains its unspecified sugar stereocentre and SEEDED status; source-assigned novobiocin is not an exact structure-key merge with cathomycin. Native reference, engineered protein and DNA construct are separate entities.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Current deposited native NovN sequence reference</td>
+  <td>is_exact_native_core_of</td>
+  <td>9S2T deposited C-terminal LE-His8 NovN entity</td>
+  <td>The 687-residue deposited entity is exactly the 677-aa Q9L9F4 sequence plus LEHHHHHHHH. Its source is S. niveus, taxon 193462, and expression host E. coli BL21(DE3); source strain and vector are unspecified. The native accession is not assigned to the fusion and sequence agreement does not prove it is the exact 2008 sample.</td>
+  <td class="mono">https://files.rcsb.org/download/9S2T.cif<br>https://www.uniprot.org/uniprotkb/Q9L9F4</td>
+</tr>
+<tr>
+  <td>9S2T deposited C-terminal LE-His8 NovN entity</td>
+  <td>is_deposited_entity_in</td>
+  <td>9S2T NovN crystallographic model</td>
+  <td>9S2T was released 2025-07-30 with primary citation To Be Published; the 2008 paper is a secondary citation. The I222 model has 2.240-A resolution, Rwork 0.1599 and Rfree 0.2000. This is a public structural deposit, not a claimed new peer-reviewed paper or a retrospective assertion that the 2008 structure was solved.</td>
+  <td class="mono">DOI:10.2210/pdb9S2T/pdb<br>https://files.rcsb.org/download/9S2T.cif</td>
+</tr>
+<tr>
+  <td>9S2T NovN crystallographic model</td>
+  <td>has_coordinate_coverage</td>
+  <td>9S2T observed and missing protein coordinates</td>
+  <td>One asymmetric-unit chain models native residues 1..669 with 5275 protein atom records. Native 670..677 and the ten-residue tag are unmodeled, eighteen residues total; missing tag density is not proof of tag cleavage. Lys444 lacks CD/CE/NZ; Arg601 lacks CG/CD/NE/CZ/NH1/NH2. Eleven protein residues have alternatives: 63,86,116,148,246,315,418,468,501,592,629.</td>
+  <td class="mono">https://files.rcsb.org/download/9S2T.cif</td>
+</tr>
+<tr>
+  <td>9S2T NovN crystallographic model</td>
+  <td>has_author_assigned_assembly</td>
+  <td>9S2T author-defined symmetry-generated NovN dimer</td>
+  <td>Assembly 1 is author-defined with operations x,y,z and -x,-y,z, generating a dimer from one asymmetric-unit chain. Light scattering is the deposited support annotation, not an independently supplied new raw solution dataset or direct native-cell stoichiometry measurement.</td>
+  <td class="mono">https://files.rcsb.org/download/9S2T.cif</td>
+</tr>
+<tr>
+  <td>9S2T NovN crystallographic model</td>
+  <td>contains_deposited_ion</td>
+  <td>9S2T partially occupied deposited Fe(III) ion</td>
+  <td>The single FE residue, author number 706, is modeled at occupancy 0.25. FE(III) is the deposited chemical identity, not an independent determination of oxidation state or evidence that NovN physiologically requires iron. No modeled ATP, Mg or carbamoyl phosphate is present.</td>
+  <td class="mono">https://files.rcsb.org/download/9S2T.cif</td>
+</tr>
+<tr>
+  <td>9S2T partially occupied deposited Fe(III) ion</td>
+  <td>has_selected_coordinate_neighbors</td>
+  <td>Selected 9S2T Fe-neighbor coordinate distances</td>
+  <td>Independent Euclidean distances from Fe706 are Asp333 OD1 1.970 A, water842 O 2.190 A, His133 NE2 2.251 A, Asp156 OD1 2.291 A, His137 NE2 2.325 A and water1083 O 2.467 A. The six deposited metalc connections agree. These are coordinate-derived geometry, not metal-binding affinity, catalytic necessity or measured turnover.</td>
+  <td class="mono">https://files.rcsb.org/download/9S2T.cif</td>
+</tr>
+<tr>
+  <td>9S2T partially occupied deposited Fe(III) ion</td>
+  <td>has_validation_context</td>
+  <td>9S2T local metal-site validation context</td>
+  <td>The 2026-03-08 validation report gives Fe706 RSCC 0.98, RSR 0.06 and B 27 A^2 with one atom below 0.9 occupancy, consistent with the CIF 0.25. Its displayed density contours are 0.7 rmsd 2mFo-DFc and 3 rmsd difference density. Asp156 has a CA-CB-CG angle outlier Z 5.44. These quality observations do not independently identify the element, oxidation state or catalytic role.</td>
+  <td class="mono">https://files.rcsb.org/validation/view/9s2t_full_validation.pdf</td>
+</tr>
+<tr>
+  <td>9S2T NovN crystallographic model</td>
+  <td>contains_deposited_ions</td>
+  <td>Six deposited 9S2T phosphate ions</td>
+  <td>Six phosphate ions comprise thirty atom records. Validation gives phosphate705 RSCC 0.73, RSR 0.22, B 116-134 A^2, and phosphate707 RSCC 0.80/RSR 0.16. The phosphates are not equally well fitted catalytic groups or evidence for bound carbamoyl phosphate.</td>
+  <td class="mono">https://files.rcsb.org/download/9S2T.cif<br>https://files.rcsb.org/validation/view/9s2t_full_validation.pdf</td>
+</tr>
+<tr>
+  <td>9S2T NovN crystallographic model</td>
+  <td>has_solvent_inventory</td>
+  <td>9S2T water-residue and alternate-atom inventory</td>
+  <td>There are 434 distinct water residues represented by 441 atom records: seven waters have alternate positions. Neither count should be substituted for the other or interpreted as catalytic-water occupancy.</td>
+  <td class="mono">https://files.rcsb.org/download/9S2T.cif<br>https://files.rcsb.org/validation/view/9s2t_full_validation.pdf</td>
+</tr>
+<tr>
+  <td>9S2T NovN crystallographic model</td>
+  <td>constrains_mechanistic_interpretation</td>
+  <td>Unestablished NovN catalytic-complex and metal requirements</td>
+  <td>The only modeled nonprotein species are phosphate, Fe and water. No ATP, Mg, carbamoyl phosphate, organic acceptor or novobiocin product is modeled. This deposit therefore does not supply a catalytic substrate complex or establish an iron requirement. The absence of modeled species is not evidence that the enzyme cannot bind them in other conditions.</td>
+  <td class="mono">https://files.rcsb.org/download/9S2T.cif<br>https://files.rcsb.org/download/9S2T.cif</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

@@ -1,0 +1,224 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novn-native-identity-and-his6-preparation
+  scope: BIOSYNTHESIS
+  description: 'NovN deposited sequence versions, literal primers and the Xu His6
+    preparation. Review #560. Xu locators are PDF pages, nineteen higher than printed
+    main-text pages. The owner retains its unspecified sugar stereocentre and SEEDED
+    status; source-assigned novobiocin is not an exact structure-key merge with cathomycin.
+    Native reference, engineered protein and DNA construct are separate entities.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: gene
+    label: Deposited novN locus from NCIMB 9219
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: native
+    label: Current deposited native NovN sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F4
+  - node_id: old
+    label: Historical deposited NovN sequence version
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AAF67507.1
+  - node_id: ambiguity
+    label: NovN historical sample and sequence-version limits
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: construct
+    label: Xu pXHNEG N-terminal His6 NovN DNA construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: primer
+    label: Literal novN primer model and coordinate discrepancy
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: wt
+    label: Xu N-terminal His6 NovN preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: S. lividans T7 NovN expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: yield
+    label: Xu NovN protein yield and solubility readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: gel
+    label: Xu NovN SDS-PAGE bands and proposed degradation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: gene
+    notes: The owner links BGC0000834.5 and AF170880.4. The current novN CDS is 15274..17307(+),
+      2034 nt including stop. This is a locus association, not independent proof of
+      the owner sugar stereochemistry.
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/go/BGC0000834.5
+      evidence_type: DATABASE_ASSERTION
+      notes: Owner/locus association.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: novN CDS/source qualifiers.
+  - subject: gene
+    predicate: encodes_native_reference
+    object: native
+    notes: CDS-aware table-11 translation exactly matches AAF67507.2 and all 677 residues
+      of reviewed Q9L9F4. GenBank names S. niveus NCIMB 9219; UniProt names S. niveus
+      with common name S. spheroides, taxon 193462. The accession is not assigned
+      to an unsequenced engineered preparation.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current deposited CDS and protein translation.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F4
+      evidence_type: DATABASE_ASSERTION
+      notes: Entry 61, sequence 2; annotation 2026-09-02, sequence date 2003-10-01;
+        retrieved 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS/GenPept/UniProt exact sequence comparison.
+  - subject: gene
+    predicate: has_earlier_deposited_translation
+    object: old
+    notes: AF170880.2 has AAF67507.1, also 677 aa, with LRRN at residues 123..126
+      where current AAF67507.2/Q9L9F4 has APPD. AF170880.3 already matches the current
+      protein. In .2/.3 novN is 15222..17255; .4 coordinates are shifted +52. Deposit
+      revisions are not independently proven biological alleles.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical novN CDS/translation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Intermediate novN CDS/translation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent three-version comparison.
+  - subject: old
+    predicate: constrains_sample_identification
+    object: ambiguity
+    notes: The thesis names S. spheroides and an AF170880-derived cloning source,
+      but no complete experimental pXHNEG sequence was obtained. Current database
+      identity does not establish which deposited 123..126 sequence was present in
+      that assayed sample or resolve historical strain labels.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Tables 14/16, PDF pp.43,45; methods/results,
+        pp.59,85-86.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Sequence-version comparison is a curation boundary.
+  - subject: gene
+    predicate: is_reported_insert_source_for
+    object: construct
+    notes: Xu cloned the PCR product through pGEM-T (pXHNET) and pRSET-B (pXHNER;
+      BclI/BamHI-compatible plus HindIII ends), then fused pXHNER and pGM9 at HindIII
+      to make pXHNEG. Figure 15 gives 11298 bp. The Table 14 2.1-kb fragment label
+      accompanies 2034-nt CDS coordinates; CDS length is not the complete cloning-fragment
+      length.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Tables 14/16, cloning methods and Figure
+        15, PDF pp.43,45,59,86.
+  - subject: construct
+    predicate: has_independently_checked_primer_model
+    object: primer
+    notes: Literal primers GTGCTCGCTGATCAGAACGACATG and AAGGGAAGCTTTACGGCCGAC have
+      unique best full-length genomic matches with three mismatches each. The forward
+      span is 15201..15224 in .2/.3, not printed 15198..15221; reverse-complement
+      span 17285..17307 agrees. Current coordinates shift +52, which does not explain
+      the separate three-base discrepancy. The modeled PCR is 2107 bp; BclI/HindIII
+      cut coordinates differ by 2088 nt. Native core is retained in each version-specific
+      model. This is not a sequenced full plasmid or independently determined tag
+      junction.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Table 16, PDF p.45; methods p.59.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer/restriction model across .2/.3/.4.
+  - subject: construct
+    predicate: encodes_engineered_protein
+    object: wt
+    notes: Xu reports N-terminal His6 NovN, separate from the later C-terminal LE-His8
+      protein. The native accession and historical deposited variant are not identities
+      for this fusion. No complete vector-derived amino-acid sequence or active-protein
+      fraction is inferred.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Cloning methods and expression results,
+        PDF pp.59,85-86.
+  - subject: host
+    predicate: expressed
+    object: wt
+    notes: The TK23-derived S. lividans T7 host supplies thiostrepton-induced T7 polymerase.
+      YEME with 10 ug/mL kanamycin was grown at 28 C and 180 rpm for 48 h; 1 mL inoculated
+      100 mL fresh medium, with 25 ug/mL thiostrepton for 24 h. Lowering growth to
+      20 C did not substantially improve soluble NovN. These are heterologous protein-preparation
+      conditions.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Table 15 and expression methods/results,
+        PDF pp.44,56,85-86.
+  - subject: wt
+    predicate: has_reported_preparation_yield
+    object: yield
+    notes: The source estimates 6.7 mg NovN/g fresh cells before purification, much
+      insoluble, and about 16 ug purified NovN/g fresh cells from SDS-PAGE. Ni-NTA
+      purification and NAP-10 desalting into 0.2 M Tris-HCl pH 8 precede assays. Bradford/BSA
+      is the general protein concentration method. These mass-per-biomass yields are
+      not mg/L culture, active-enzyme concentrations or antibiotic titers.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Methods/results, PDF pp.54,56-57,85-86.
+      snippet: much of it was insoluble.
+  - subject: wt
+    predicate: has_reported_gel_profile
+    object: gel
+    notes: Figure 16 distinguishes pre/post induction, soluble fraction and affinity
+      eluate. A roughly 78-kDa band agrees with the source-calculated 78.5 kDa; an
+      additional 76-kDa band is proposed to reflect degradation. No cleavage site,
+      fragment sequence or activity of that band was established.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Figure 16 and accompanying results, PDF
+        pp.86-87.
+  - subject: ambiguity
+    predicate: limits_native_accession_assignment_to
+    object: wt
+    notes: Keep this experimentally active preparation ungrounded as an exact protein
+      entity. A supported novN gene assignment is retained without inventing a verified
+      native core, complete N-terminal tag or historical sample identity.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary dissertation; Construct/preparation descriptions, PDF
+        pp.59,85-86.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Current reference is not retrospective sample sequencing.
+curation_history:
+- timestamp: '2026-10-04T22:05:23Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novn-native-identity-and-his6-preparation with source-checked
+    NovN evidence and review #560 limits.'
+  llm_assisted: true

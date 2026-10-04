@@ -688,6 +688,12 @@ causal_graph_refs:
 - cathomycin-novp-assembly-evidence-and-solution-size-disagreement
 - cathomycin-novp-sah-structure-contacts-and-residue-label-conflict
 - cathomycin-novp-docking-and-untested-mechanistic-proposals
+- cathomycin-novn-native-identity-and-his6-preparation
+- cathomycin-novn-carbamoylation-cofactors-and-kinetic-limits
+- cathomycin-novn-analogue-products-and-substrate-conditioned-kinetics
+- cathomycin-novn-heterologous-production-and-cloning-conflict
+- cathomycin-novn-assembly-disagreement-and-unsolved-crystal-forms
+- cathomycin-novn-9s2t-structure-and-partial-metal-limits
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -735,4 +741,13 @@ curation_history:
     bounded DLS/SEC/PISA assembly evidence; observed SAH contacts and residue-label
     conflict; docking and untested mechanistic proposals. Preserve prior graphs, chemical
     identity, source fields, history and SEEDED status (#558).'
+  llm_assisted: true
+- timestamp: '2026-10-04T22:05:24Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add six NovN components: native/historical identities and His6 preparation;
+    carbamoylation, cofactors and kinetics; five analogue products; heterologous production;
+    preparation-specific assembly and unsolved crystals; 9S2T sequence, coordinates
+    and partial-metal limits. Preserve source conflicts, previous graphs, chemical
+    identity, source fields, history and SEEDED status (#560).'
   llm_assisted: true
