@@ -1007,6 +1007,7 @@ causal_graphs:
 causal_graph_refs:
 - polyketomycin-poko4-bounded-genetics-and-rescue-cocarriage
 - polyketomycin-poko1-poko2-genetics-and-functional-compensation
+- polyketomycin-poko3-sequence-based-quinone-hypothesis
 curation_history:
 - timestamp: '2026-09-10T06:18:46Z'
   curator: seed_from_sources
@@ -1049,4 +1050,10 @@ curation_history:
     cited edges. Preserved #532 source discrepancies and inference limits. All prior
     graphs, source-owned fields, history, open stereochemistry discussion and SEEDED
     status are unchanged; complete inline evidence would exceed 64 KiB.'
+  llm_assisted: true
+- timestamp: '2026-10-04T07:20:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a PokO3 hypothesis component. Prior graphs, source-owned fields,
+    unresolved discussion and SEEDED status unchanged; #533 evidence boundary retained.'
   llm_assisted: true
