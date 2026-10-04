@@ -1,0 +1,286 @@
+record_id: naturalproductmech:mibig-e29f83c77b
+standard_inchi_key: LULQRLKBANNSOX-AFCHNXSNSA-N
+graph:
+  graph_id: phenalinolactone-a-plao3-genetics-and-inferred-function
+  scope: BIOSYNTHESIS
+  description: Native Tu6071 PlaO3 internal-deletion, untagged and His6-tagged complementation
+    evidence from Schnell 2007. XO3 accumulated the NMR-characterized PL HS6/HS7 pair
+    in place of the wild-type major product profile. C-20 hydroxylation of HS6 is
+    inferred from genetics and metabolite structures; the proposed immediate product
+    was not isolated here. Recombinant expression, partial peptide identification
+    and whole-cell tagged rescue do not establish purified turnover, unchanged kinetics,
+    or native electron-transfer partners. HS6/HS7 are distinct mutant products, not
+    phenalinolactone A identifiers.
+  nodes:
+  - node_id: plao3
+    label: Native PlaO3 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69748.1
+  - node_id: single_crossover
+    label: Tu6071-scO3 single-crossover clone 7
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: lesion
+    label: Tu6071-XO3 internal plaO3 deletion (clone 92)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: production
+    label: Native PL-A/PL-D major-product profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: hs6
+    label: PL HS6 (C-3 alcohol; C-20 methyl)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: hs7
+    label: PL HS7 (C-3 ketone analog of HS6)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: pS-O3co genomic-fragment complementation of XO3
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: his_plao3
+    label: Recombinant N-terminal His6-PlaO3 construct
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: tag_rescue
+    label: pSET-O3NTag complementation of XO3
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydroxylation
+    label: Inferred C-20 hydroxylation of PL HS6
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: putative_product
+    label: Proposed C-20-hydroxylated HS6 intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: lesion
+    predicate: disrupts_encoding_gene_of
+    object: plao3
+    notes: XO3 is apramycin-sensitive double-crossover clone 92 with the shorter O3co-F/R
+      PCR product. The source reports a 246-bp in-frame SphI/PflMI deletion, not whole-gene
+      removal; expected amplicons are 1277/1031 bp. Native sequence has two intragenic
+      PflMI sites (top cuts after 24382/24424) and SphI after 24625. Complete digestion
+      and standard blunting predict deletion 24380..24625 (246 bp), consistent with
+      the report. PflMI has a 3-base 3-prime overhang, not the 4 bases stated for
+      both enzymes on p. 153. Figure 3.18(b) calls its plasmid control pKC-O2del,
+      while the accompanying text says pKC-O3del. These source discrepancies remain
+      explicit; native reconstruction is not an independently sequenced XO3 allele.
+      The native 401-aa GenPept/GenBank/MIBiG and complete printed parent sequence
+      match. Official UniProt gene/taxon and exact EMBL-xref queries returned no rows;
+      no homolog used.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.2.5-3.2.5.1, pp. 59-61, Figure 3.18; methods 5.9.5/5.14.8,
+        pp. 152-153, 162-163; printed protein p. 92.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69748.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-04'
+      notes: Native PlaO3, 401 aa; DQ230532.1:23753..24958, positive strand; Streptomyces
+        sp. Tu6071, taxon 355249.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator exact translation and printed-sequence comparison; native restriction/blunting
+        reconstruction predicts net 246-bp in-frame deletion. These calculations do
+        not assign the actual mutant sequence.
+    - reference: https://www.neb.com/en-us/products/r0509-pflmi
+      evidence_type: CURATOR_INFERENCE
+      notes: PflMI recognition/cut geometry yields a three-base 3-prime overhang;
+        SphI contributes the downstream cut. The thesis prose calling both overhangs
+        four-base is not used to reconstruct the allele.
+  - subject: single_crossover
+    predicate: contains_recombined_alleles_of
+    object: plao3
+    notes: All ten tested exconjugants showed intact and deleted PCR products; clone
+      7 became scO3. Four passages followed by screening 128 colonies yielded 38 apparently
+      sensitive clones, many still showing both bands; clone 92 had the desired shorter
+      product. Do not interpret scO3 itself as a clean knockout.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.5.1, pp. 60-61; Figure 3.18; methods 5.14.8.4, p. 163.
+  - subject: single_crossover
+    predicate: retains_detectable_profile_of
+    object: production
+    notes: At 72, 96, 121, 138, 168 and 192 h, ethyl-acetate extracts of scO3 were
+      compared by HPLC/ESI-MS with parallel wild-type cultures. PL A was clearly detected,
+      with no conspicuous new peaks or changed profile reported. This bounds the source
+      claim of no polar effect to that assay; an intact copy remains.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.5.2, p. 61; culture/analysis methods 5.5.2/5.7, pp. 133,
+        140-141.
+  - subject: lesion
+    predicate: replaces_major_product_profile_of
+    object: production
+    notes: XO3 instead showed HS6/HS7-dominated culture-extract chromatograms, compared
+      with PL A/D in wild type. Figures 3.19 and 3.44 support loss of the wild-type
+      major-product pattern, not an absolute zero concentration or quantified detection
+      limit for every mature congener.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.5.2, pp. 61-62, Figure 3.19/Table 3.2; Figure 3.44, p. 93.
+  - subject: lesion
+    predicate: accumulates
+    object: hs6
+    notes: PL HS6 was isolated from a 3-L NL111 XO3 culture. 1D/2D NMR in methanol-d4
+      assigns the cyclized diterpene core, gamma-butyrolactone and C-3 alcohol (H-3
+      3.13 ppm; C-3 79.6 ppm); both C-20/C-21 remain methyl groups. UV maximum 244
+      nm and retention 17.5 min were reported. The text calls 390 an m/z value while
+      Table 3.2 calls it mass in Da; the ion/adduct is not assigned here. The missing
+      pyrrole chromophore distinguishes it from mature PL A.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.2.5.2/3.2.5.4, pp. 61-64, Figures 3.19-3.20, Table 3.2; NMR
+        appendix 6.1.3, p. 181.
+  - subject: lesion
+    predicate: accumulates
+    object: hs7
+    notes: 'PL HS7 was isolated alongside HS6 and NMR-characterized as its C-3 ketone
+      analog: C-3 220.8 ppm with no attached H-3/HSQC signal. It retains the gamma-butyrolactone
+      and C-20/C-21 methyl groups. Retention 19.9 min, UV maximum 244 nm, and source
+      m/z/mass value 388 are reported without an ion/adduct assignment here. The redox-pair
+      structure does not identify the enzyme responsible for C-3 oxidation or prove
+      HS7 is a productive pathway intermediate.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.2.5.2/3.2.5.5, pp. 61-64; Table 3.2; NMR appendix 6.1.4, p.
+        182.
+  - subject: rescue
+    predicate: reintroduces_encoding_sequence_for
+    object: plao3
+    notes: pS-O3co carries a cosmid-derived O3co-F/R fragment in pSET-1cermE (EcoRI/XbaI
+      insert, MunI/XbaI-opened vector). Native primer alignment spans 23700..24976
+      (1277 bp), including the final 30 bp of neighboring plaM2, complete plaO3 and
+      downstream noncoding sequence. It is not an isolated-ORF-only experiment or
+      expression of full PlaM2.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.5.3, p. 63; construction/primers 5.12.1/5.14.8.2, pp. 155,
+        163.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator primer alignment and CDS-coordinate intersection: O3co-F 23700..23721,
+        O3co-R reverse strand 24954..24976; plaM2 ends at 23729, PlaO3 CDS 23753..24958.'
+  - subject: rescue
+    predicate: restores_detectable
+    object: production
+    notes: After conjugation, six clones were selected and three were cultured analytically;
+      all three produced clearly detectable PL A and D. Figure 3.44 shows untagged
+      rescue alongside wild type, XO3 and tagged rescue. This supports pathway function,
+      not wild-type titer equivalence or a purified substrate-to-product assay.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.5.3, p. 63 and Figure 3.44, p. 93.
+      snippet: PL A und D deutlich nachweisbar waren.
+  - subject: his_plao3
+    predicate: engineered_version_of
+    object: plao3
+    notes: The reported 421-aa N-terminal His6 fusion was expressed from pET15-O3
+      in E. coli BL21(DE3)pLysS and purified by Ni-NTA. Insert sequence checking is
+      reported; the entire printed 401-aa parent matches native ABB69748.1, not the
+      full fusion. MALDI peptide fingerprinting assigned the approximately 45-kDa
+      band to PlaO3 with reported 35% coverage; the nearby 46-kDa band was an E. coli
+      protein. No claim of homogeneous preparation or complete experimental sequence
+      coverage is made. Figure 3.43(b) says PlaT3, but the adjacent PlaO3 text and
+      MALDI analysis identify the preparation reviewed here.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.3.2-3.3.2.2, pp. 90-92, Figure 3.43/Table 3.4; methods 5.13.5/5.14.8.5/5.15.2/5.15.5,
+        pp. 156, 163, 168-170.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator comparison of the full printed 401-aa parent sequence on p. 92
+        against GenPept, native GenBank and MIBiG matches exactly; no native accession
+        assigned to the tagged construct.
+  - subject: tag_rescue
+    predicate: expresses
+    object: his_plao3
+    notes: The tagged coding sequence was amplified from pET-O3 using Co-XO3his-F/R
+      and transferred into pSET-1cermE as pSET-O3NTag. Sequencing is reported to show
+      no mutations or frameshifts in the insert. This is expression in the producer
+      mutant, not extracellular purified-enzyme feeding.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.3.2.3, pp. 92-93; methods 5.12.2/5.14.8.3, pp. 155, 163; construct
+        map 6.2.8, p. 186.
+  - subject: tag_rescue
+    predicate: restores_detectable
+    object: production
+    notes: pSET-O3NTag restored detectable PL A/D production in XO3. The differently
+      scaled HPLC traces in Figure 3.44 do not establish unchanged yields, kinetics,
+      or total product profiles. The rescue shows that the fusion retains pathway
+      function in this host context; it does not prove the tag has no effect in all
+      conditions or demonstrate purified turnover.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.3.2.3 and Figure 3.44, pp. 92-93.
+  - subject: plao3
+    predicate: is_inferred_to_catalyze
+    object: hydroxylation
+    notes: The thesis assigns PlaO3 to C-20 hydroxylation from the deletion, complementation
+      and accumulated-metabolite structures. Its discussion explicitly proposes future
+      in-vitro verification of PlaO3/PlaO4 selectivity. This is not the purified PlaO5
+      assay, does not assign C-3 oxidation to PlaO3, and does not identify native
+      electron-transfer partners.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Genetic/metabolite observations, sections 3.2.5 and 3.3.2.3, pp. 59-64,
+        92-93.
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: CURATOR_INFERENCE
+      notes: Source interpretation in section 4.2, pp. 112-113/Figure 4.5; discussion
+        of future in-vitro proof, p. 118.
+  - subject: hs6
+    predicate: is_proposed_substrate_for
+    object: hydroxylation
+    notes: HS6 is the proposed acceptor in Figure 4.5; the assignment is inferred,
+      not a direct substrate-scope assay. Its C-20 methyl is distinguished from the
+      C-21 methyl assigned to PlaO4 in the downstream proposal.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'HS6 structure: sections 3.2.5.4/6.1.3, pp. 63-64, 181.'
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: CURATOR_INFERENCE
+      notes: Proposed step/order in section 4.2, pp. 112-113, Figure 4.5.
+  - subject: hydroxylation
+    predicate: is_proposed_to_form
+    object: putative_product
+    notes: The immediate C-20-hydroxylated intermediate is explicitly not detected
+      in this study. Pyrrole attachment and later tailoring separate this proposal
+      from mature PL A; neither the native PlaO3 protein nor its tagged rescue is
+      claimed to make mature PL A in one catalytic step.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Observed mutant products and genetic rescue, sections 3.2.5.2-3.2.5.5,
+        pp. 61-64.
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: CURATOR_INFERENCE
+      notes: Section 4.2, p. 112 explicitly calls the next intermediate undetected;
+        Figure 4.5, p. 113 labels it putative.
+curation_history:
+- timestamp: '2026-10-04T03:05:43Z'
+  curator: codex
+  action: GRAPH_CURATED
+  changes: 'Added primary-backed phenalinolactone-a-plao3-genetics-and-inferred-function.
+    Addressed review #526: retained source/sequence and construct qualifications;
+    separated observed genetics from inferred chemistry, with exact native parent
+    grounding and a verified snippet.'
+  llm_assisted: true

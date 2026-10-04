@@ -99,6 +99,8 @@ causal_graph_refs:
 - phenalinolactone-a-plao5-genetics-and-biochemistry
 - phenalinolactone-a-plav-genetics-and-inferred-acetylation
 - phenalinolactone-a-plau-plaz-bounded-genetics
+- phenalinolactone-a-plao2-bounded-genetics
+- phenalinolactone-a-plao3-genetics-and-inferred-function
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -190,4 +192,12 @@ curation_history:
   changes: Referenced the new PlaU/PlaZ bounded-genetics component. Preserved all
     seven earlier graphs and existing source fields, history, SEEDED status and unresolved
     stereochemistry.
+  llm_assisted: true
+- timestamp: '2026-10-04T03:05:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added PlaO2 ABB69746.1 and PlaO3 ABB69748.1 in two components, with distinct
+    ungrounded His6-PlaO3 construct: 15 nodes, 18 primary-cited edges and two snippets.
+    Addressed review #526. Preserved all eight previous graphs, source-owned fields,
+    history, SEEDED status and incomplete stereochemistry.'
   llm_assisted: true
