@@ -1671,6 +1671,366 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 14 edges</span></h2>
+<p class="sub">Native NovP identity, recombinant preparation and explicitly database-annotated precursor methylation. Native sequence, DNA construct and tagged protein remain distinct. Review #558. The 2010 page locators refer to the 30-page author manuscript, not journal pagination. The cathomycin owner retains its unspecified sugar stereocentre; no exact merge with fully specified novobiocin or new mature-product synthesis claim is made.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited novobiocin cluster underlying the cathomycin owner</td>
+  <td>contains</td>
+  <td>Deposited novP locus from NCIMB 9219</td>
+  <td>The owner links BGC0000834.5 and AF170880.4. novP is 18275..19063(+) with a 789-nt CDS including the stop codon. This is a locus association, not independent proof of the owner sugar stereochemistry.</td>
+  <td class="mono">https://mibig.secondarymetabolites.org/go/BGC0000834.5<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novP locus from NCIMB 9219</td>
+  <td>encodes_native_protein</td>
+  <td>Deposited native NovP sequence reference</td>
+  <td>Table-11 CDS-aware translation matches AAF67509.1 and all 262 residues of Q9L9F2. Current GenBank source is S. niveus NCIMB 9219, taxon 193462. This accession identifies the native sequence reference, not tagged protein.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.uniprot.org/uniprotkb/Q9L9F2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited native NovP sequence reference</td>
+  <td>has_unresolved_sample_attribution</td>
+  <td>NovP source-taxon and historical strain disagreement</td>
+  <td>UniProt names S. niveus with S. spheroides as common name. The 2010 paper names S. spheroides; 2WK1 mmCIF retains common S. spheroides, scientific S. caeruleus, taxon 195949 and NCIB 11891. The current RCSB summary renders Actinoalloteichus caeruleus. Identical sequence does not resolve historical sample provenance or identify NCIB 11891 as NCIMB 9219; no owner producer field is changed.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F2<br>https://files.rcsb.org/download/2WK1.cif<br>https://www.rcsb.org/structure/2WK1<br>DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>Deposited native NovP sequence reference</td>
+  <td>is_sequence_reference_for</td>
+  <td>pET28a NovP N-terminal His-tag DNA construct</td>
+  <td>The 2007 methods report genomic PCR and cloning into pET28a. The exact deposited protein core matches Q9L9F2; this comparison does not independently sequence the full experimental plasmid or settle the source-strain conflict.</td>
+  <td class="mono">DOI:10.1107/S1744309107008287<br>https://files.rcsb.org/download/2WK1.cif</td>
+</tr>
+<tr>
+  <td>pET28a NovP N-terminal His-tag DNA construct</td>
+  <td>encodes_engineered_protein</td>
+  <td>Gomez Garcia N-terminally tagged NovP preparation</td>
+  <td>The 282-aa deposited construct consists of MGSSHHHHHHSSGLVPRGSH (20 residues) followed by the exact 262-aa native core. The N-terminal tag was not cleaved before crystallization. Unmodeled tag coordinates are not evidence for proteolytic removal, and no native accession is assigned to this engineered preparation.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045<br>https://files.rcsb.org/download/2WK1.cif</td>
+</tr>
+<tr>
+  <td>E. coli BL21(DE3) NovP expression host</td>
+  <td>expressed</td>
+  <td>Gomez Garcia N-terminally tagged NovP preparation</td>
+  <td>The 2007 protocol uses BL21(DE3), 1 L LB with 50 mg kanamycin, 24 h at 298 K without IPTG induction, French-press lysis and nickel affinity purification. This is recombinant production, not native abundance.</td>
+  <td class="mono">DOI:10.1107/S1744309107008287</td>
+</tr>
+<tr>
+  <td>Gomez Garcia N-terminally tagged NovP preparation</td>
+  <td>has_reported_preparation_readout</td>
+  <td>Reported NovP purification yield and purity</td>
+  <td>The 2007 source reports about 20 mg purified NovP per L culture and &gt;95% purity by SDS-PAGE. Yield and gel purity are not an activity measurement, an active-fraction estimate or a natural-product titer.</td>
+  <td class="mono">DOI:10.1107/S1744309107008287</td>
+</tr>
+<tr>
+  <td>Gomez Garcia N-terminally tagged NovP preparation</td>
+  <td>was_used_in</td>
+  <td>SAH-containing NovP crystallization experiment</td>
+  <td>The 2007 source reports approximately 10 mg/mL protein, 1 mM SAH, 291 K and optimized 2 M ammonium sulfate/100 mM HEPES pH 7 precipitant. No apo conditions were found in that screen; this does not establish that apo protein cannot crystallize under other conditions.</td>
+  <td class="mono">DOI:10.1107/S1744309107008287<br>DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>S-Adenosyl-L-homocysteine coproduct and crystallization ligand</td>
+  <td>was_supplied_to</td>
+  <td>SAH-containing NovP crystallization experiment</td>
+  <td>SAH was supplied as a ligand; the crystals are not evidence that the crystallization sample catalyzed methylation or produced SAH in situ.</td>
+  <td class="mono">DOI:10.1107/S1744309107008287<br>DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>Deposited native NovP sequence reference</td>
+  <td>has_database_annotated_function</td>
+  <td>Database-annotated noviose 4-O-methylation</td>
+  <td>UniProt annotates SAM-dependent noviose 4-O-methylation as the penultimate novobiocin step, citing the 2004 biochemical studies. Those complete primary assays were not inspected here; this edge remains a database assertion. Introductory kinetic constants in the 2010 paper are not curated as newly measured experiments.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F2</td>
+</tr>
+<tr>
+  <td>Desmethyldescarbamoylnovobiocin acceptor</td>
+  <td>is_annotated_acceptor_for</td>
+  <td>Database-annotated noviose 4-O-methylation</td>
+  <td>The database reaction names desmethyldescarbamoylnovobiocin, not mature cathomycin, as methyl acceptor. No uninspected exact substrate CURIE is assigned.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F2</td>
+</tr>
+<tr>
+  <td>S-Adenosyl-L-methionine donor</td>
+  <td>is_annotated_donor_for</td>
+  <td>Database-annotated noviose 4-O-methylation</td>
+  <td>SAM supplies the methyl group in the annotated reaction; this is not a donor-loading measurement from the crystallization study.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F2</td>
+</tr>
+<tr>
+  <td>Database-annotated noviose 4-O-methylation</td>
+  <td>has_annotated_product</td>
+  <td>Descarbamoylnovobiocin precursor product</td>
+  <td>The methylated product still lacks the later carbamoyl substituent. This edge does not assert mature antibiotic synthesis by NovP alone.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F2</td>
+</tr>
+<tr>
+  <td>Database-annotated noviose 4-O-methylation</td>
+  <td>has_annotated_coproduct</td>
+  <td>S-Adenosyl-L-homocysteine coproduct and crystallization ligand</td>
+  <td>The annotated balanced reaction also releases SAH and H+. No stoichiometric assay or direct proton-transfer observation is inferred.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F2</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 8 edges</span></h2>
+<p class="sub">Separate author/PISA dimer, dimer-like 2010 SEC and monomer-like 2007 DLS evidence. None uniquely establishes native-cell stoichiometry. Review #558. The 2010 page locators refer to the 30-page author manuscript, not journal pagination. The cathomycin owner retains its unspecified sugar stereocentre; no exact merge with fully specified novobiocin or new mature-product synthesis claim is made.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Gomez Garcia N-terminally tagged NovP preparation</td>
+  <td>was_crystallized_for</td>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>2WK1 has one protein chain in the asymmetric unit. A two-chain biological assembly is not two independently observed asymmetric-unit chains.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045<br>https://files.rcsb.org/download/2WK1.cif</td>
+</tr>
+<tr>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>supports_proposed_assembly</td>
+  <td>Author/PISA symmetry-generated NovP dimer</td>
+  <td>The authors and PISA assign a dimer generated by operations x,y,z and -x,y,-z+1. The paper reports approximately 856 A^2 buried surface per subunit, about 8%, mainly involving helices alpha1 and alpha7. This is crystal-interface analysis, not direct native-cell assembly measurement.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045<br>https://files.rcsb.org/download/2WK1.cif</td>
+</tr>
+<tr>
+  <td>Gomez Garcia N-terminally tagged NovP preparation</td>
+  <td>has_measured_solution_size_in</td>
+  <td>2010 NovP calibrated size-exclusion result</td>
+  <td>After nickel affinity and buffer exchange, approximately 2 mL at 10 mg/mL was loaded on Superdex 75 16/60 in 50 mM Tris-HCl, 200 mM NaCl pH 8.0, at 1 mL/min. Standards were albumin 67, ovalbumin 43, chymotrypsinogen A 25, ribonuclease A 13.7 and dextran blue 2000 kDa. The main fraction had apparent size about 66 kDa; no monomer peak was reported. The manuscript does not display a SEC chromatogram.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>2010 NovP calibrated size-exclusion result</td>
+  <td>supports_dimer_like_size_for</td>
+  <td>Author/PISA symmetry-generated NovP dimer</td>
+  <td>The reported approximately 66-kDa apparent mass is near the source 64.2-kDa expected tagged dimer. SEC is hydrodynamic evidence for that preparation, not a measured association constant or native in-cell stoichiometry.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>Gomez Garcia N-terminally tagged NovP preparation</td>
+  <td>has_earlier_solution_size_estimate</td>
+  <td>2007 NovP dynamic-light-scattering result</td>
+  <td>The 2007 DLS experiment at 293 K used at least 15 measurements, giving a monomodal distribution, 17.1% polydispersity and apparent mass 32.8 kDa, compared with calculated 32.1-kDa His-tagged monomer. It is a different method/preparation context from the later SEC result.</td>
+  <td class="mono">DOI:10.1107/S1744309107008287</td>
+</tr>
+<tr>
+  <td>2007 NovP dynamic-light-scattering result</td>
+  <td>limits_unique_stoichiometry_claim</td>
+  <td>Preparation-specific NovP stoichiometry limits</td>
+  <td>Retain the monomer-like DLS estimate rather than silently converting it to the later dimer assignment. These data do not by themselves resolve concentration dependence, shape effects or a monomer-dimer equilibrium.</td>
+  <td class="mono">DOI:10.1107/S1744309107008287<br>DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>Author/PISA symmetry-generated NovP dimer</td>
+  <td>has_context_limit</td>
+  <td>Preparation-specific NovP stoichiometry limits</td>
+  <td>The structural/PISA model and SEC support a tagged-protein dimer under the studied conditions; the earlier DLS estimate remains distinct. No unique native-cell stoichiometry is asserted.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045<br>DOI:10.1107/S1744309107008287</td>
+</tr>
+<tr>
+  <td>Author/PISA symmetry-generated NovP dimer</td>
+  <td>does_not_establish_assembly_of</td>
+  <td>Unverified transfer of NovP interface to homologs</td>
+  <td>The paper predicts related CouP/CloP interfaces from conservation and is less certain about TylF. NovP coordinates do not experimentally demonstrate an identical dimer interface in these other proteins.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">10 nodes, 9 edges</span></h2>
+<p class="sub">Observed SAH contacts and structural limits, with independent coordinate checks kept separate from the printed Asp128 label and from functional inference. Review #558. The 2010 page locators refer to the 30-page author manuscript, not journal pagination. The cathomycin owner retains its unspecified sugar stereocentre; no exact merge with fully specified novobiocin or new mature-product synthesis claim is made.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Gomez Garcia N-terminally tagged NovP preparation</td>
+  <td>was_crystallized_for</td>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>The 1.4-A SAH-bound structure represents the tagged recombinant protein, not untagged native NovP or a substrate-containing catalytic intermediate.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045<br>https://files.rcsb.org/download/2WK1.cif</td>
+</tr>
+<tr>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>contains_observed_ligand</td>
+  <td>Observed S-adenosyl-L-homocysteine ligand</td>
+  <td>The deposited SAH has 26 heavy atoms. Figure 6 shows its simulated-annealing omit map at 6 sigma and describes Phe178/adenine stacking. Occupancy and packing do not provide a dissociation constant or prove tight binding in solution.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045<br>https://files.rcsb.org/download/2WK1.cif</td>
+</tr>
+<tr>
+  <td>Observed S-adenosyl-L-homocysteine ligand</td>
+  <td>has_independently_checked_contacts</td>
+  <td>Observed SAH polar-contact geometry</td>
+  <td>native 64 OG1--SAH OXT 2.593 A; native 65 N--SAH O 2.855 A; native 92 OE2--SAH N 2.721 A; native 94 O--SAH N 2.901 A; native 96 N--SAH O3&#39; 3.120 A; native 122 OD1--SAH O2&#39; 2.752 A; native 122 OD2--SAH O3&#39; 2.643 A; native 196 OD2--SAH N 2.755 A; native 202 OG--SAH N7 2.843 A; native 202 OG--SAH N6 2.964 A. These ten selected coordinate distances support geometrical contacts, not hydrogen-bond energies or proton transfer. Residue numbers are native/auth_seq_id, not label_seq_id (which includes the +20 tag offset).</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045<br>https://files.rcsb.org/download/2WK1.cif</td>
+</tr>
+<tr>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>has_unresolved_regions</td>
+  <td>Unresolved NovP residues and illustrative loop model</td>
+  <td>242 residues are modeled: native 14..38 and 46..262. The missing 40 comprise tag positions -19..0, native 1..13 and 39..45. The cyan loop 39..45 in Figure 2 is an energetically favorable illustrative model, not experimentally resolved coordinates. Asp14/Arg159/Lys241/Arg262 lack side-chain atoms; alternate conformations occur at Met22, Asp165, Thr189, Met226, Glu237, Ile249 and Arg260.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045<br>https://files.rcsb.org/download/2WK1.cif</td>
+</tr>
+<tr>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>has_source_specific_quality_values</td>
+  <td>Source-specific NovP refinement statistics</td>
+  <td>The author manuscript reports Rwork 14.5% and Rfree 16.2%; current deposited refinement values are 0.145 and 0.163. Preserve the source-specific difference rather than silently harmonizing it. The 2007 maximum 1.35-A collection and reprocessed 1.40-A dataset are different reports, not two resolutions for the final atomic model.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045<br>DOI:10.1107/S1744309107008287<br>https://files.rcsb.org/download/2WK1.cif</td>
+</tr>
+<tr>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>contains_observed_region</td>
+  <td>NovP residues 126-151 lid region</td>
+  <td>Residues 126..151 form the helical lid over mostly buried SAH. The paper gives lid main/side-chain B factors 20.5/24.7 A^2 versus 14.0/17.7 for the rest of the protein. Table 2 whole-protein values 14.6/18.1 use another denominator. Static B factors are not direct measurements of gating trajectories, exchange rates or rate-limiting lid motion.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>NovP residues 126-151 lid region</td>
+  <td>has_unresolved_source_residue_label</td>
+  <td>Printed Asp128 versus native Pro128 and Asp138 geometry</td>
+  <td>Page 5 first names Gly126/Pro128 and later prints Asp128 as contacting Tyr200/Glu201. Native 128 is Pro, whereas 138 is Asp. Independent 2WK1 distances are Asp138 OD1--Tyr200 N 2.763 A and Asp138 OD2--Glu201 N 3.000 A. These support a possible residue-number error, not an authorized correction of the source or direct proof of a lid-locking mechanism.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045<br>https://files.rcsb.org/download/2WK1.cif<br>https://www.uniprot.org/uniprotkb/Q9L9F2</td>
+</tr>
+<tr>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>contains_observed_disulfide</td>
+  <td>Observed Cys228-Cys231 disulfide geometry</td>
+  <td>Cys228 and Cys231 have deposited SG separation 2.167 A and an explicit disulfide record. The authors consider prolonged aerobic exposure during up-to-one-month crystal growth as a possible artifact. No physiological redox role, obligatory catalytic function or experimentally demonstrated activity loss caused by this bond is inferred.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045<br>https://files.rcsb.org/download/2WK1.cif</td>
+</tr>
+<tr>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>has_observed_coordinate_inventory</td>
+  <td>Observed ligands and absent modeled catalytic partners</td>
+  <td>The asymmetric unit contains 1965 protein atoms, 26 SAH atoms, two sulfates, two ethylene glycol molecules and 242 waters. Deposited coordinates contain no metal, SAM or DDN. Reported MgCl2 soaking and co-crystallization also gave no metal density, but those trials are data-not-shown and are not separately displayed structures.</td>
+  <td class="mono">https://files.rcsb.org/download/2WK1.cif<br>DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">18 nodes, 17 edges</span></h2>
+<p class="sub">NovP substrate docking and structural hypotheses are explicitly computational, not observed catalytic complexes, engineered-mutant results or protein interactions. Review #558. The 2010 page locators refer to the 30-page author manuscript, not journal pagination. The cathomycin owner retains its unspecified sugar stereocentre; no exact merge with fully specified novobiocin or new mature-product synthesis claim is made.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>was_template_for_docking_receptor</td>
+  <td>Manually prepared NovP-SAM-Mg docking receptor</td>
+  <td>The authors removed solvent, replaced SAH with SAM, inserted Mg2+ using homolog structures and manually adjusted Asp196/Asp223/Asp224. They performed 300 CNS maximum-likelihood minimization cycles with Wa set to zero. This is an engineered computational receptor, not an experimentally observed NovP-SAM-Mg complex.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>Modeled S-adenosyl-L-methionine donor</td>
+  <td>was_modeled_into</td>
+  <td>Manually prepared NovP-SAM-Mg docking receptor</td>
+  <td>SAM replaces the observed SAH before docking; no experimental SAM electron density is supplied by 2WK1.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>Modeled magnesium ion</td>
+  <td>was_modeled_into</td>
+  <td>Manually prepared NovP-SAM-Mg docking receptor</td>
+  <td>Metal placement and Asp conformations are assumptions guided by homologs, not an observed catalytic metal or measured metal affinity.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>Manually prepared NovP-SAM-Mg docking receptor</td>
+  <td>was_used_in</td>
+  <td>AutoDock4 NovP substrate-pose search</td>
+  <td>AutoDock4 treated the receptor as rigid except Asp198/Trp58 side chains. The search used a 26-A cube, 0.375-A grid, 100 runs, population 150, 25000000 energy evaluations, 27000 generations, one surviving conformation per generation, 300 local iterations and 2-A clustering tolerance.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>Docked desmethyldescarbamoylnovobiocin</td>
+  <td>was_flexible_ligand_in</td>
+  <td>AutoDock4 NovP substrate-pose search</td>
+  <td>DDN had a random starting position and rotatable single bonds. The authors defined a productive pose as placing noviose 4-OH within 4 A of the SAM methyl group. This geometric filter does not demonstrate catalysis.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>AutoDock4 NovP substrate-pose search</td>
+  <td>has_pre_deprotonation_result</td>
+  <td>Pre-deprotonation docking scenario</td>
+  <td>With protonated noviose 4-OH and deprotonated Asp198, 3 of 100 poses passed the geometric filter; best docking energy was printed as -8.68 kJ/mol. These are source model units/counts, not measured turnover, a 3% chemical conversion or experimental binding free energy.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>AutoDock4 NovP substrate-pose search</td>
+  <td>has_post_deprotonation_result</td>
+  <td>Post-deprotonation docking scenario</td>
+  <td>With deprotonated noviose 4-OH and protonated Asp198, 98 of 100 poses passed the filter; best docking energy was printed as -15.88 kJ/mol. Proton transfer is assumed in this scenario, not observed by the simulation or an assay.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>Post-deprotonation docking scenario</td>
+  <td>was_clustered_into</td>
+  <td>Twelve retained post-deprotonation pose clusters</td>
+  <td>The 98 retained poses formed 12 clusters. Their lowest-energy representatives place ring C similarly, ring B in roughly four orientational groups and ring A more variably outside the channel. This is not a new experimental substrate-tolerance panel. The lid is removed graphically in Figure 9, not deleted from an assayed protein.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>Manually prepared NovP-SAM-Mg docking receptor</td>
+  <td>assumes_metal_binding_by</td>
+  <td>Proposed Asp196/Asp223/Asp224 metal-binding roles</td>
+  <td>Asp196/Asp223/Asp224 are proposed ligands from geometry/conservation and homolog comparisons. No catalytic metal is observed in 2WK1 and no metal-site mutant panel is reported in this paper.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>Manually prepared NovP-SAM-Mg docking receptor</td>
+  <td>assumes_general_base_role_for</td>
+  <td>Proposed Asp198 general-base role</td>
+  <td>Asp198 is proposed to deprotonate noviose 4-OH. Its orientation and homolog comparisons motivate the model, but there is no reported D198 mutant assay or directly measured proton-transfer step here.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>Twelve retained post-deprotonation pose clusters</td>
+  <td>suggest_contact_with</td>
+  <td>Proposed Trp58 sugar-ring contact</td>
+  <td>The Trp58 side chain was flexible in the docking and is proposed to contact the noviose ring oxygen. No substrate-bound experimental NovP structure establishes this contact.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>Twelve retained post-deprotonation pose clusters</td>
+  <td>suggest_contact_with</td>
+  <td>Proposed Arg146 aminocoumarin contact</td>
+  <td>Arg146 points toward ring B in the models and is proposed to recognize its C8 substituent. This is neither a demonstrated residue-specific binding energy nor an assayed R146 mutant.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>motivates_binding_order_hypothesis</td>
+  <td>Proposed SAM-first and SAH-last binding order</td>
+  <td>Buried SAH/lid geometry and comparison to TylF motivate SAM binding before DDN and SAH leaving last. This is not a directly measured NovP ordered Bi Bi mechanism or a kinetic inhibition experiment.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>is_discussed_with_undisplayed_assay_report</td>
+  <td>Undisplayed personal-communication metal tests</td>
+  <td>The paper relays Freel Meyers personal communication: 10 mM MgCl2 or MnCl2 had no measurable effect, and 10 mM CaCl2 reduced product. No underlying data, quantitative effect size, replication or assay recipe is displayed. The source proposes competition with trace preferred metals, but this is not an independently inspected metal-dependence or inhibition experiment.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>motivates_unverified_interaction_hypothesis</td>
+  <td>Untested NovP-NovM/NovN interaction proposal</td>
+  <td>The authors speculate that NovM or NovN interactions could assist lid opening or channel intermediates, explicitly stating that there is no evidence either way. No binding edge, observed complex, stoichiometry or functional interaction is asserted here.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>motivates_untested_deletion_proposal</td>
+  <td>Suggested untested deletion of lid residues 126-151</td>
+  <td>Complete removal of residues 126..151 is proposed for future engineering. The paper does not report constructing, purifying or assaying this deletion; graphical lid omission does not create a tested mutant protein entry.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+<tr>
+  <td>2WK1 NovP-SAH crystallographic model</td>
+  <td>has_reported_unsuccessful_extension</td>
+  <td>Unsuccessful reported additional ligand-complex trials</td>
+  <td>Trials used descarbamoylnovobiocin or methylrhamnoside, with SAM/SAH and with/without MgCl2, but yielded no successful complexes and are data-not-shown. DDN was insufficient for these experiments. Failure to obtain crystals is not evidence that the enzyme cannot bind these molecules in solution.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2009.10.045</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

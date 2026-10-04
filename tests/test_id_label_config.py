@@ -63,6 +63,40 @@ def test_ncbi_protein_namespace_is_explicit_and_typos_still_fail(schema, tmp_pat
     assert validator.run(config, report_path=None) == 2
 
 
+@pytest.mark.parametrize("target_name", ["record_identity", "graph_component_nodes"])
+def test_pdb_nodes_are_explicit_skips_and_typos_still_fail(
+        schema, tmp_path, monkeypatch, capsys, target_name):
+    assert schema["prefixes"]["PDB"] == "https://www.rcsb.org/structure/"
+    cfg = validator.load_config(CONFIG)
+    target = next(t for t in cfg["targets"] if t["name"] == target_name)
+    cfg["adapters"] = {}
+    cfg["targets"] = [target]
+    config = tmp_path / "config.yaml"
+    config.write_text(yaml.safe_dump(cfg), encoding="utf-8")
+    monkeypatch.setattr(validator, "REPO_ROOT", tmp_path)
+    node = {"identifier": "PDB:2WK1", "label": "2WK1 NovP-SAH crystallographic model"}
+    graph = {"nodes": [node]}
+    if target_name == "record_identity":
+        record = tmp_path / "data/natural_products/test/example.yaml"
+        document = {"causal_graphs": [graph]}
+    else:
+        record = tmp_path / "data/causal_graphs/test/example.yaml"
+        document = {"graph": graph}
+    record.parent.mkdir(parents=True)
+    record.write_text(yaml.safe_dump(document), encoding="utf-8")
+    assert validator.run(config, report_path=None) == 0
+    output = capsys.readouterr().out
+    assert "SKIPPED_NO_ADAPTER" in output
+    assert "UNKNOWN_PREFIX" not in output
+
+    node["identifier"] = "PBD:2WK1"
+    record.write_text(yaml.safe_dump(document), encoding="utf-8")
+    assert validator.run(config, report_path=None) == 2
+    output = capsys.readouterr().out
+    assert "UNKNOWN_PREFIX" in output
+    assert "PBD:2WK1" in output
+
+
 def test_every_target_glob_matches_at_least_one_file():
     cfg = yaml.safe_load(CONFIG.read_text(encoding="utf-8"))
     for target in cfg["targets"]:
