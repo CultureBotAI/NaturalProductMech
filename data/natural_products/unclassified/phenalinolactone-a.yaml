@@ -1053,6 +1053,223 @@ causal_graphs:
     - reference: DOI:10.1039/D4CB00138A
       evidence_type: CURATOR_INFERENCE
       notes: Figures 3-4 and Conclusions.
+- graph_id: phenalinolactone-a-plao5-genetics-and-biochemistry
+  scope: BIOSYNTHESIS
+  description: PlaO5 C-1 hydroxylation evidence from Schnell 2007. Native Tu6071 production
+    phenotypes are separate from complementation with untagged or His6-tagged constructs
+    and the purified-protein assay. Spinach electron-transfer proteins are assay substitutes,
+    not identified native pathway partners.
+  nodes:
+  - node_id: plao5
+    label: Native PlaO5 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69764.1
+  - node_id: lesion
+    label: Tu6071-XO5 internal plaO5 deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: production
+    label: Detectable native phenalinolactone A production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: congeners
+    label: PL D, PL X1 and mutant-congener profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: pS-O5co genomic-fragment complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: his_plao5
+    label: Recombinant N-terminal His6-PlaO5 preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: tag_rescue
+    label: pSET-O5NTag complementation of Tu6071-XO5
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydroxylation
+    label: Assayed C-1 hydroxylation of phenalinolactone D to A
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pl_d
+    label: Phenalinolactone D supplied in the assay preparation
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: pl_a
+    label: Phenalinolactone A assigned in the assay
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-e29f83c77b
+  - node_id: no_enzyme
+    label: Matched assay without His6-PlaO5
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: lesion
+    predicate: inactivates_encoding_gene_of
+    object: plao5
+    notes: XO5 is double-crossover clone 83, selected by apramycin sensitivity and
+      the shorter colony-PCR product. The reported lesion is an internal 363-bp in-frame
+      deletion, not whole-gene removal. Curator reconstruction of the published PCR/PstI
+      junction predicts the same net deletion; no independently sequenced mutant genome
+      or junction is asserted.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.2.6.1 and 5.9.6; pages 65-66, 153, 164-165; Figures 3.21-3.22.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69764.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Native plaO5: 409 aa; DQ230532.1:44294..45523; Streptomyces sp. Tu6071,
+        taxon 355249.'
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator alignment of O5-A2/O5-B primers and reconstruction of their PstI
+        ligation against DQ230532.1.
+  - subject: lesion
+    predicate: abolishes_detectable
+    object: production
+    notes: The XO5 culture extract lacked the PL A signal seen in parallel wild type;
+      the preceding single crossover retained it. Analytical cultures used NL111 at
+      28 C, with harvest near 168 h and HPLC/UV/MS. This is detection-limited loss
+      of A, not loss of all phenalinolactones.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.2.6.2, 5.5.2 and 5.7; pages 66-68, 133, 140-141; Figure 3.24.
+  - subject: lesion
+    predicate: changes_production_profile_to
+    object: congeners
+    notes: PL D and PL X1 remained detectable alongside additional congeners. PL HS2
+      was characterized by NMR as a D-related pyrrole-tail methoxy derivative; the
+      other proposed HS-series assignments were not all established by NMR. No quantitative
+      fold increase or direct synthesis of those congeners by PlaO5 is inferred.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.2.6.2 and 3.2.6.4; pages 67-77; Table 3.3 and Figures 3.24-3.32.
+  - subject: rescue
+    predicate: supplies_wild_type_encoding_gene_for
+    object: plao5
+    notes: pS-O5co is an ermE*-driven pSET152-derived rescue. Curator mapping of O5co2-F/O5co-R
+      gives the 1312-bp genomic fragment 44241..45552. Its primer changes lie outside
+      plaO5, and it includes no neighboring CDS; flanking noncoding sequence remains.
+      This is not a separately deposited rescue-plasmid sequence.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 5.12.1 and 5.14.10.2; pages 154-155 and 165.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native target and flanking CDS coordinates.
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator primer/native-locus comparison, including neighboring plaA8 and
+        plaM3 boundaries.
+  - subject: rescue
+    predicate: restores_detectable
+    object: production
+    notes: All three tested complemented cultures recovered detectable A and D. Genetic
+      rescue supports the assignment but does not prove every possible off-target
+      effect absent or quantify protein turnover.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.6.3; page 75.
+  - subject: his_plao5
+    predicate: is_engineered_derivative_of
+    object: plao5
+    notes: pRSET-O5 was expressed in E. coli BL21(DE3)pLysS and Ni-NTA purified. The
+      thesis reports a 446-aa N-terminal His6 fusion, sequence-checked insert and
+      MALDI peptide-mass fingerprint with 43% coverage; this is not complete experimental
+      protein sequencing. The native accession is not the tagged construct. Curator
+      comparison matches the printed 409-aa parent to GenPept/GenBank/MIBiG and maps
+      expression-primer changes outside its CDS. UniProt mapping was not verified
+      after an official-service error.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.3.4.1-3.3.4.2, 5.13.7 and 5.14.10.5; pages 96-98, 156, 166;
+        Table 3.6; Figure 3.47.
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator comparison of the printed page-98 sequence and Ox5-F/R primers
+        to DQ230532.1 and matching GenPept/MIBiG translations; the complete fusion
+        sequence was not independently reconstructed.
+  - subject: tag_rescue
+    predicate: expresses
+    object: his_plao5
+    notes: The tagged coding insert was transferred from pRSET-O5 into an ermE*-driven
+      integrating vector. The authors report sequence checking; Co-XO5his primers
+      target the engineered template, not only native DNA.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.3.4.3, 5.12.2 and 5.14.10.3; pages 99, 155 and 165.
+  - subject: tag_rescue
+    predicate: restores_detectable
+    object: production
+    notes: Tagged complementation restored the reported A/D production profile. It
+      demonstrates retained function in this context, not identical kinetics or complete
+      functional neutrality of the tag.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.3.4.3; page 99; Figure 3.48.
+  - subject: his_plao5
+    predicate: catalyzes
+    object: hydroxylation
+    notes: Purified tagged PlaO5 supported PL D-to-A conversion in a coupled assay
+      at pH 7.5 and 37 C for 120 min. Recombinant His-tagged spinach ferredoxin, commercial
+      spinach ferredoxin reductase, NADPH/NADP+ and a glucose-6-phosphate/dehydrogenase
+      regeneration system were included. No native electron-transfer partner, separate
+      cofactor necessity test, kinetic constant or conversion yield is established.
+      The 2010 abstract citation is not an independently verified replication.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.4-3.4.2 and 5.15.7; pages 100-103 and 172; Figures 3.50-3.51.
+    - reference: DOI:10.1002/cbic.201000117
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: The inspected publication abstract also states the PlaO5 C-1 hydroxylation
+        assignment; it is not counted as an independent experimental replication.
+        Assay details come from the primary thesis, not an uninspected article full
+        text.
+      snippet: catalyses the 1-C-hydroxylation of phenalinolactone D
+  - subject: hydroxylation
+    predicate: has_substrate
+    object: pl_d
+    notes: PL D was supplied, but Figure 3.51 also contains PL D2 and the reported
+      PL A2 product. The preparation is not described here as chemically homogeneous,
+      and the additional conversion does not establish broad substrate scope.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.4.2 and 5.15.7; pages 102-103 and 172; Figure 3.51.
+  - subject: hydroxylation
+    predicate: produces
+    object: pl_a
+    notes: The new product was assigned as PL A from retention at 21.4 min under the
+      reported gradient, UV maxima near 276/244 nm and m/z 714 [M-H]-. This comparison
+      is not fresh product NMR, a co-injection claim or a complete absolute-stereochemistry
+      determination.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.4.2; pages 102-103; Figure 3.51.
+  - subject: no_enzyme
+    predicate: fails_to_form_detectable
+    object: pl_a
+    notes: The matched control lacking His6-PlaO5 lacked the new A peak. This supports
+      PlaO5-dependent conversion in the supplied system; it is not an individual omission
+      test for each redox component.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.4.2; pages 102-103; Figure 3.51.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -1106,4 +1323,12 @@ curation_history:
   changes: 'Addressed review #516: products 3-10 lack the tricyclic diterpene core,
     not all rings. Explicitly retained tetrahydrofuran rings in 6/7, with stable node
     IDs, evidence and graph topology; regenerated the page.'
+  llm_assisted: true
+- timestamp: '2026-10-04T00:46:52Z'
+  curator: OpenAI Codex
+  action: RECORD_CURATED
+  changes: 'Added native PlaO5 and its His6 construct: 11 nodes, 12 cited edges covering
+    native genetics and coupled in-vitro D-to-A conversion. Review #518 distinguishes
+    abstract support from independent replication. Preserved source fields, existing
+    graphs, status and prior history.'
   llm_assisted: true

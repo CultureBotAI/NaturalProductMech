@@ -467,6 +467,96 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 12 edges</span></h2>
+<p class="sub">PlaO5 C-1 hydroxylation evidence from Schnell 2007. Native Tu6071 production phenotypes are separate from complementation with untagged or His6-tagged constructs and the purified-protein assay. Spinach electron-transfer proteins are assay substitutes, not identified native pathway partners.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Tu6071-XO5 internal plaO5 deletion</td>
+  <td>inactivates_encoding_gene_of</td>
+  <td>Native PlaO5 parent</td>
+  <td>XO5 is double-crossover clone 83, selected by apramycin sensitivity and the shorter colony-PCR product. The reported lesion is an internal 363-bp in-frame deletion, not whole-gene removal. Curator reconstruction of the published PCR/PstI junction predicts the same net deletion; no independently sequenced mutant genome or junction is asserted.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/protein/ABB69764.1<br>https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071-XO5 internal plaO5 deletion</td>
+  <td>abolishes_detectable</td>
+  <td>Detectable native phenalinolactone A production</td>
+  <td>The XO5 culture extract lacked the PL A signal seen in parallel wild type; the preceding single crossover retained it. Analytical cultures used NL111 at 28 C, with harvest near 168 h and HPLC/UV/MS. This is detection-limited loss of A, not loss of all phenalinolactones.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071-XO5 internal plaO5 deletion</td>
+  <td>changes_production_profile_to</td>
+  <td>PL D, PL X1 and mutant-congener profile</td>
+  <td>PL D and PL X1 remained detectable alongside additional congeners. PL HS2 was characterized by NMR as a D-related pyrrole-tail methoxy derivative; the other proposed HS-series assignments were not all established by NMR. No quantitative fold increase or direct synthesis of those congeners by PlaO5 is inferred.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>pS-O5co genomic-fragment complementation</td>
+  <td>supplies_wild_type_encoding_gene_for</td>
+  <td>Native PlaO5 parent</td>
+  <td>pS-O5co is an ermE*-driven pSET152-derived rescue. Curator mapping of O5co2-F/O5co-R gives the 1312-bp genomic fragment 44241..45552. Its primer changes lie outside plaO5, and it includes no neighboring CDS; flanking noncoding sequence remains. This is not a separately deposited rescue-plasmid sequence.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>pS-O5co genomic-fragment complementation</td>
+  <td>restores_detectable</td>
+  <td>Detectable native phenalinolactone A production</td>
+  <td>All three tested complemented cultures recovered detectable A and D. Genetic rescue supports the assignment but does not prove every possible off-target effect absent or quantify protein turnover.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Recombinant N-terminal His6-PlaO5 preparation</td>
+  <td>is_engineered_derivative_of</td>
+  <td>Native PlaO5 parent</td>
+  <td>pRSET-O5 was expressed in E. coli BL21(DE3)pLysS and Ni-NTA purified. The thesis reports a 446-aa N-terminal His6 fusion, sequence-checked insert and MALDI peptide-mass fingerprint with 43% coverage; this is not complete experimental protein sequencing. The native accession is not the tagged construct. Curator comparison matches the printed 409-aa parent to GenPept/GenBank/MIBiG and maps expression-primer changes outside its CDS. UniProt mapping was not verified after an official-service error.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>pSET-O5NTag complementation of Tu6071-XO5</td>
+  <td>expresses</td>
+  <td>Recombinant N-terminal His6-PlaO5 preparation</td>
+  <td>The tagged coding insert was transferred from pRSET-O5 into an ermE*-driven integrating vector. The authors report sequence checking; Co-XO5his primers target the engineered template, not only native DNA.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>pSET-O5NTag complementation of Tu6071-XO5</td>
+  <td>restores_detectable</td>
+  <td>Detectable native phenalinolactone A production</td>
+  <td>Tagged complementation restored the reported A/D production profile. It demonstrates retained function in this context, not identical kinetics or complete functional neutrality of the tag.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Recombinant N-terminal His6-PlaO5 preparation</td>
+  <td>catalyzes</td>
+  <td>Assayed C-1 hydroxylation of phenalinolactone D to A</td>
+  <td>Purified tagged PlaO5 supported PL D-to-A conversion in a coupled assay at pH 7.5 and 37 C for 120 min. Recombinant His-tagged spinach ferredoxin, commercial spinach ferredoxin reductase, NADPH/NADP+ and a glucose-6-phosphate/dehydrogenase regeneration system were included. No native electron-transfer partner, separate cofactor necessity test, kinetic constant or conversion yield is established. The 2010 abstract citation is not an independently verified replication.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>DOI:10.1002/cbic.201000117</td>
+</tr>
+<tr>
+  <td>Assayed C-1 hydroxylation of phenalinolactone D to A</td>
+  <td>has_substrate</td>
+  <td>Phenalinolactone D supplied in the assay preparation</td>
+  <td>PL D was supplied, but Figure 3.51 also contains PL D2 and the reported PL A2 product. The preparation is not described here as chemically homogeneous, and the additional conversion does not establish broad substrate scope.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Assayed C-1 hydroxylation of phenalinolactone D to A</td>
+  <td>produces</td>
+  <td>Phenalinolactone A assigned in the assay</td>
+  <td>The new product was assigned as PL A from retention at 21.4 min under the reported gradient, UV maxima near 276/244 nm and m/z 714 [M-H]-. This comparison is not fresh product NMR, a co-injection claim or a complete absolute-stereochemistry determination.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Matched assay without His6-PlaO5</td>
+  <td>fails_to_form_detectable</td>
+  <td>Phenalinolactone A assigned in the assay</td>
+  <td>The matched control lacking His6-PlaO5 lacked the new A peak. This supports PlaO5-dependent conversion in the supplied system; it is not an individual omission test for each redox component.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
