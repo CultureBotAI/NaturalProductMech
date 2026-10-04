@@ -1,0 +1,207 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novq-fusion-expression-and-processing-limits
+  scope: BIOSYNTHESIS
+  description: 'NovQ fusion/preparation evidence from Ni 2019 (review #554), associated
+    with the deposited NovQ precursor mechanism rather than new native proteins. The
+    primary abstract, public figure previews and two supplementary gels were inspected;
+    subscription main methods were not obtained. No complete construct, native strain
+    or catalytic identity is inferred from soluble expression, SDS-PAGE or TEV processing.'
+  nodes:
+  - node_id: panel
+    label: Ni 2019 NovQ fusion and co-expression study
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: his
+    label: Ni 2019 His6-NovQ preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: trx
+    label: Ni 2019 TrxA-NovQ fusion preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: gst
+    label: Ni 2019 GST-NovQ fusion preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mbp
+    label: Ni 2019 MBP-NovQ fusion preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: cleaved
+    label: Ni 2019 TEV-processed MBP-NovQ material
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: bl21
+    label: E. coli BL21(DE3) expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: rosetta
+    label: E. coli Rosetta(DE3) expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: insoluble
+    label: Reported NovQ inclusion-body accumulation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: solubility
+    label: Abstract-reported MBP-associated solubility increase
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: purification
+    label: Reported Ni-NTA purification outcome
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: trna
+    label: Reported rare-tRNA-associated expression change
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: supp1
+    label: Supplementary molecular-partner comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: supp2
+    label: Supplementary IPTG and temperature comparisons
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: his
+    predicate: was_tested_in
+    object: panel
+    notes: The primary abstract identifies this partner in the NovQ expression study.
+      Complete fusion sequence and preparation-specific strain provenance were not
+      obtained; no native UniProt accession is assigned.
+    evidence:
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract; public figure previews inspected, not full main text.
+  - subject: trx
+    predicate: was_tested_in
+    object: panel
+    notes: The primary abstract identifies this partner in the NovQ expression study.
+      Complete fusion sequence and preparation-specific strain provenance were not
+      obtained; no native UniProt accession is assigned.
+    evidence:
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract; public figure previews inspected, not full main text.
+  - subject: gst
+    predicate: was_tested_in
+    object: panel
+    notes: The primary abstract identifies this partner in the NovQ expression study.
+      Complete fusion sequence and preparation-specific strain provenance were not
+      obtained; no native UniProt accession is assigned.
+    evidence:
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract; public figure previews inspected, not full main text.
+  - subject: mbp
+    predicate: was_tested_in
+    object: panel
+    notes: The primary abstract identifies this partner in the NovQ expression study.
+      Complete fusion sequence and preparation-specific strain provenance were not
+      obtained; no native UniProt accession is assigned.
+    evidence:
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract; public figure previews inspected, not full main text.
+  - subject: bl21
+    predicate: was_used_in
+    object: panel
+    notes: The study names this host. Host identity does not establish a native producer
+      or the sequence of every fusion aliquot.
+    evidence:
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract.
+  - subject: rosetta
+    predicate: was_used_in
+    object: panel
+    notes: The study names this host. Host identity does not establish a native producer
+      or the sequence of every fusion aliquot.
+    evidence:
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract.
+  - subject: panel
+    predicate: reports
+    object: insoluble
+    notes: The abstract reports predominantly insoluble NovQ in the pET28a system.
+      This is condition-specific expression behavior, not loss of native catalytic
+      function.
+    evidence:
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract.
+  - subject: mbp
+    predicate: has_reported_solubility_outcome
+    object: solubility
+    notes: The abstract describes soluble protein as approximately 70% of total cellular
+      proteins. Retain that stated denominator; do not reinterpret it as 70% of NovQ,
+      absolute yield, purity or catalytic conversion. The full quantitative methods
+      were not obtained.
+    evidence:
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract; denominator retained literally.
+  - subject: panel
+    predicate: has_reported_expression_association
+    object: trna
+    notes: The abstract associates greater rare-tRNA abundance with higher total and
+      soluble recombinant protein. This does not demonstrate a particular translation
+      bottleneck or supply a quantitative comparison for every construct.
+    evidence:
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract.
+  - subject: panel
+    predicate: has_reported_purification_outcome
+    object: purification
+    notes: The source reports greater than 90% recombinant-protein purity after Ni-NTA.
+      Purity is distinct from soluble fraction, recovery and catalytic activity; it
+      is not assigned to every fusion or lane.
+    evidence:
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract.
+  - subject: mbp
+    predicate: was_reportedly_processed_to
+    object: cleaved
+    notes: In-vitro TEV cleavage is reported. Complete processed termini, residual
+      tags, cleavage efficiency and activity recovery are not established by the inspected
+      abstract. Processing is not assumed to regenerate native Q9L9F1.
+    evidence:
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract.
+      snippet: cleaved using TEV protease
+  - subject: panel
+    predicate: includes_supplementary_comparison
+    object: supp1
+    notes: Figure S1 labels control, NovQ and molecular-partner groups with S/P lanes
+      and NovQ arrows near 40 kDa. The caption does not identify the molecular partners
+      or provide lane-normalization, replication or exact soluble percentages; the
+      gel is not an enzyme-activity assay.
+    evidence:
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00449-018-2050-9/MediaObjects/449_2018_2050_MOESM1_ESM.doc
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S1 and caption; both embedded images inspected.
+  - subject: panel
+    predicate: includes_supplementary_comparison
+    object: supp2
+    notes: Figure S2 names BL21(DE3). Its IPTG series is 0.1, 0.3, 0.5, 0.7 and 0.9
+      mM; temperature series is 20, 22, 24, 26 and 28 C. S/P lanes retain prominent
+      arrowed bands near 40 kDa in P. These gel comparisons do not supply exact activity,
+      a uniquely defined optimum or a complete factorial experiment.
+    evidence:
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00449-018-2050-9/MediaObjects/449_2018_2050_MOESM1_ESM.doc
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S2 panels a/b and caption.
+curation_history:
+- timestamp: '2026-10-04T18:21:51Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-novq-fusion-expression-and-processing-limits with native
+    identity, source conflicts and bounded engineered-preparation evidence (#554).
+  llm_assisted: true

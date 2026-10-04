@@ -684,6 +684,458 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 12 edges</span></h2>
+<p class="sub">NovQ native sequence, source-taxonomy conflict and bounded Ozaki 2009 precursor evidence (review #554). The BGC0000834 owner is not merged with fully specified novobiocin. The deposited NCIMB 9219 sequence is grounded; the strain-16259 source and recombinant sample retain identity uncertainty. Only the primary abstract was obtained for biochemical claims.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited novobiocin cluster underlying the cathomycin owner</td>
+  <td>contains</td>
+  <td>Deposited novQ locus from NCIMB 9219</td>
+  <td>The BGC0000834.5 cathomycin owner links AF170880.4, whose novQ CDS is 19093..20064(+). The owner retains its unspecified sugar stereocentre; this locus association is not a new exact-structure equivalence assertion.</td>
+  <td class="mono">https://mibig.secondarymetabolites.org/go/BGC0000834.5<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novQ locus from NCIMB 9219</td>
+  <td>encodes_native_protein</td>
+  <td>Deposited native NovQ sequence reference</td>
+  <td>AF170880.4/AAF67510.2 has 972 coding nt including stop. CDS-aware table-11 translation exactly matches deposited AAF67510.2 and all 323 residues of Q9L9F1. Current GenBank source is S. niveus NCIMB 9219 (taxon 193462). UniProt reference 1 still lists the historical NCIMB 11891 strain group; that metadata does not override the corrected current nucleotide deposit or identify every historical assay sample.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.uniprot.org/uniprotkb/Q9L9F1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited native NovQ sequence reference</td>
+  <td>has_identical_deposited_sequence_to</td>
+  <td>NovQ deposit from strain 16259 with conflicting taxon labels</td>
+  <td>AB496950.1/BAI44329.1 novQ is 81..1052(+), also 972 nt including stop and 323 aa. Its CDS-aware translation matches Q9L9F1 and AAF67510.2 exactly. This equality concerns protein sequences, not strain or taxon synonymy and not the complete sequence of a recombinant construct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AB496950.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.uniprot.org/uniprotkb/Q9L9F1</td>
+</tr>
+<tr>
+  <td>NovQ deposit from strain 16259 with conflicting taxon labels</td>
+  <td>has_unresolved_source_taxonomy</td>
+  <td>Strain 16259 source-taxonomy disagreement</td>
+  <td>The AB496950.1 record dated 2023-01-05 names Actinoalloteichus caeruleus, taxon 2893586, strain 16259, with Streptomyces caeruleus/niveus synonym notes. UniProt uses S. niveus taxon 193462 and links strain 16259 to Ozaki 2009; the primary abstract also names S. niveus. These source labels are preserved without changing the owner producer or asserting that strain 16259 is NCIMB 9219 or NCIMB 11891.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AB496950.1<br>https://www.uniprot.org/uniprotkb/Q9L9F1<br>DOI:10.1038/ja.2009.48</td>
+</tr>
+<tr>
+  <td>NovQ deposit from strain 16259 with conflicting taxon labels</td>
+  <td>is_database_linked_to_study_preparation</td>
+  <td>Ozaki 2009 recombinant NovQ preparation</td>
+  <td>UniProt associates the Ozaki study with strain 16259 and AB496950. The full paper and complete experimental construct sequence were not obtained. The deposited native sequence is not assigned as the exact identity of a tag-bearing, processed or otherwise engineered sample.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F1<br>https://www.ncbi.nlm.nih.gov/nuccore/AB496950.1</td>
+</tr>
+<tr>
+  <td>Ozaki E. coli expression host</td>
+  <td>expressed</td>
+  <td>Ozaki 2009 recombinant NovQ preparation</td>
+  <td>The abstract reports E. coli expression and purification to homogeneity. Host strain, fusion junctions and detailed purification conditions are not supplied by the inspected abstract.</td>
+  <td class="mono">DOI:10.1038/ja.2009.48</td>
+</tr>
+<tr>
+  <td>Ozaki 2009 recombinant NovQ preparation</td>
+  <td>has_reported_preparation_properties</td>
+  <td>Reported soluble monomeric recombinant preparation</td>
+  <td>The source describes soluble monomeric protein of about 40 kDa. This is a recombinant-preparation observation, not an exact native mass or cellular stoichiometry measurement.</td>
+  <td class="mono">DOI:10.1038/ja.2009.48</td>
+</tr>
+<tr>
+  <td>Ozaki 2009 recombinant NovQ preparation</td>
+  <td>catalyzes_reported_prenylation</td>
+  <td>Abstract-reported NovQ precursor prenylation</td>
+  <td>The abstract reports divalent-cation-independent dimethylallylation. It mentions kinetic analysis but supplies no constants, assay recipe or uncertainty; none is reconstructed here.</td>
+  <td class="mono">DOI:10.1038/ja.2009.48</td>
+</tr>
+<tr>
+  <td>4-Hydroxyphenylpyruvate</td>
+  <td>is_reported_acceptor_for</td>
+  <td>Abstract-reported NovQ precursor prenylation</td>
+  <td>4-HPP is the reported aromatic acceptor, not mature cathomycin.</td>
+  <td class="mono">DOI:10.1038/ja.2009.48</td>
+</tr>
+<tr>
+  <td>Dimethylallyl diphosphate</td>
+  <td>is_reported_donor_for</td>
+  <td>Abstract-reported NovQ precursor prenylation</td>
+  <td>DMAPP is the reported prenyl donor.</td>
+  <td class="mono">DOI:10.1038/ja.2009.48</td>
+</tr>
+<tr>
+  <td>Abstract-reported NovQ precursor prenylation</td>
+  <td>forms_source_assigned_product</td>
+  <td>Source-assigned 3-dimethylallyl-4-hydroxyphenylpyruvate</td>
+  <td>The assigned product is an unglycosylated novobiocin precursor. This does not demonstrate mature owner synthesis or resolve its sugar stereochemistry.</td>
+  <td class="mono">DOI:10.1038/ja.2009.48</td>
+</tr>
+<tr>
+  <td>Ozaki 2009 recombinant NovQ preparation</td>
+  <td>has_reported_alternative_substrate_scope</td>
+  <td>Abstract-reported alternative aromatic substrate scope</td>
+  <td>Reported C-C and C-O prenylations include phenylpropanoids, flavonoids and dihydroxynaphthalenes; examples include p-coumarate, caffeate and flavonoid B-ring substitution. Detailed yields and positional panels require the full primary results.</td>
+  <td class="mono">DOI:10.1038/ja.2009.48</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 13 edges</span></h2>
+<p class="sub">NovQ fusion/preparation evidence from Ni 2019 (review #554), associated with the deposited NovQ precursor mechanism rather than new native proteins. The primary abstract, public figure previews and two supplementary gels were inspected; subscription main methods were not obtained. No complete construct, native strain or catalytic identity is inferred from soluble expression, SDS-PAGE or TEV processing.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Ni 2019 His6-NovQ preparation</td>
+  <td>was_tested_in</td>
+  <td>Ni 2019 NovQ fusion and co-expression study</td>
+  <td>The primary abstract identifies this partner in the NovQ expression study. Complete fusion sequence and preparation-specific strain provenance were not obtained; no native UniProt accession is assigned.</td>
+  <td class="mono">DOI:10.1007/s00449-018-2050-9</td>
+</tr>
+<tr>
+  <td>Ni 2019 TrxA-NovQ fusion preparation</td>
+  <td>was_tested_in</td>
+  <td>Ni 2019 NovQ fusion and co-expression study</td>
+  <td>The primary abstract identifies this partner in the NovQ expression study. Complete fusion sequence and preparation-specific strain provenance were not obtained; no native UniProt accession is assigned.</td>
+  <td class="mono">DOI:10.1007/s00449-018-2050-9</td>
+</tr>
+<tr>
+  <td>Ni 2019 GST-NovQ fusion preparation</td>
+  <td>was_tested_in</td>
+  <td>Ni 2019 NovQ fusion and co-expression study</td>
+  <td>The primary abstract identifies this partner in the NovQ expression study. Complete fusion sequence and preparation-specific strain provenance were not obtained; no native UniProt accession is assigned.</td>
+  <td class="mono">DOI:10.1007/s00449-018-2050-9</td>
+</tr>
+<tr>
+  <td>Ni 2019 MBP-NovQ fusion preparation</td>
+  <td>was_tested_in</td>
+  <td>Ni 2019 NovQ fusion and co-expression study</td>
+  <td>The primary abstract identifies this partner in the NovQ expression study. Complete fusion sequence and preparation-specific strain provenance were not obtained; no native UniProt accession is assigned.</td>
+  <td class="mono">DOI:10.1007/s00449-018-2050-9</td>
+</tr>
+<tr>
+  <td>E. coli BL21(DE3) expression host</td>
+  <td>was_used_in</td>
+  <td>Ni 2019 NovQ fusion and co-expression study</td>
+  <td>The study names this host. Host identity does not establish a native producer or the sequence of every fusion aliquot.</td>
+  <td class="mono">DOI:10.1007/s00449-018-2050-9</td>
+</tr>
+<tr>
+  <td>E. coli Rosetta(DE3) expression host</td>
+  <td>was_used_in</td>
+  <td>Ni 2019 NovQ fusion and co-expression study</td>
+  <td>The study names this host. Host identity does not establish a native producer or the sequence of every fusion aliquot.</td>
+  <td class="mono">DOI:10.1007/s00449-018-2050-9</td>
+</tr>
+<tr>
+  <td>Ni 2019 NovQ fusion and co-expression study</td>
+  <td>reports</td>
+  <td>Reported NovQ inclusion-body accumulation</td>
+  <td>The abstract reports predominantly insoluble NovQ in the pET28a system. This is condition-specific expression behavior, not loss of native catalytic function.</td>
+  <td class="mono">DOI:10.1007/s00449-018-2050-9</td>
+</tr>
+<tr>
+  <td>Ni 2019 MBP-NovQ fusion preparation</td>
+  <td>has_reported_solubility_outcome</td>
+  <td>Abstract-reported MBP-associated solubility increase</td>
+  <td>The abstract describes soluble protein as approximately 70% of total cellular proteins. Retain that stated denominator; do not reinterpret it as 70% of NovQ, absolute yield, purity or catalytic conversion. The full quantitative methods were not obtained.</td>
+  <td class="mono">DOI:10.1007/s00449-018-2050-9</td>
+</tr>
+<tr>
+  <td>Ni 2019 NovQ fusion and co-expression study</td>
+  <td>has_reported_expression_association</td>
+  <td>Reported rare-tRNA-associated expression change</td>
+  <td>The abstract associates greater rare-tRNA abundance with higher total and soluble recombinant protein. This does not demonstrate a particular translation bottleneck or supply a quantitative comparison for every construct.</td>
+  <td class="mono">DOI:10.1007/s00449-018-2050-9</td>
+</tr>
+<tr>
+  <td>Ni 2019 NovQ fusion and co-expression study</td>
+  <td>has_reported_purification_outcome</td>
+  <td>Reported Ni-NTA purification outcome</td>
+  <td>The source reports greater than 90% recombinant-protein purity after Ni-NTA. Purity is distinct from soluble fraction, recovery and catalytic activity; it is not assigned to every fusion or lane.</td>
+  <td class="mono">DOI:10.1007/s00449-018-2050-9</td>
+</tr>
+<tr>
+  <td>Ni 2019 MBP-NovQ fusion preparation</td>
+  <td>was_reportedly_processed_to</td>
+  <td>Ni 2019 TEV-processed MBP-NovQ material</td>
+  <td>In-vitro TEV cleavage is reported. Complete processed termini, residual tags, cleavage efficiency and activity recovery are not established by the inspected abstract. Processing is not assumed to regenerate native Q9L9F1.</td>
+  <td class="mono">DOI:10.1007/s00449-018-2050-9</td>
+</tr>
+<tr>
+  <td>Ni 2019 NovQ fusion and co-expression study</td>
+  <td>includes_supplementary_comparison</td>
+  <td>Supplementary molecular-partner comparison</td>
+  <td>Figure S1 labels control, NovQ and molecular-partner groups with S/P lanes and NovQ arrows near 40 kDa. The caption does not identify the molecular partners or provide lane-normalization, replication or exact soluble percentages; the gel is not an enzyme-activity assay.</td>
+  <td class="mono">https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00449-018-2050-9/MediaObjects/449_2018_2050_MOESM1_ESM.doc</td>
+</tr>
+<tr>
+  <td>Ni 2019 NovQ fusion and co-expression study</td>
+  <td>includes_supplementary_comparison</td>
+  <td>Supplementary IPTG and temperature comparisons</td>
+  <td>Figure S2 names BL21(DE3). Its IPTG series is 0.1, 0.3, 0.5, 0.7 and 0.9 mM; temperature series is 20, 22, 24, 26 and 28 C. S/P lanes retain prominent arrowed bands near 40 kDa in P. These gel comparisons do not supply exact activity, a uniquely defined optimum or a complete factorial experiment.</td>
+  <td class="mono">https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00449-018-2050-9/MediaObjects/449_2018_2050_MOESM1_ESM.doc</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">28 nodes, 37 edges</span></h2>
+<p class="sub">Nine NovQ E281 variants and bounded menadione-hydroquinol assays from Ni 2020 (review #554), linked to the NovQ precursor mechanism as engineered substrate-scope evidence. The full public ten-page supplement was inspected; main-article and correction access was limited to abstracts/metadata. Native sequence references, literal-primer models, actual preparations, docking and engineered-host product measurements are distinct. No native-product identity or full experimental sequence is inferred.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited native NovQ sequence reference</td>
+  <td>is_sequence_reference_for_primer_model</td>
+  <td>pMBPtev-NovQ parental DNA construct</td>
+  <td>The 323-aa native sequence supplies an explicit reconstruction reference, not proof of the full experimental construct. Table S2 names S. niveus for gene amplification without a strain number; the 16259 taxonomy conflict is not resolved or transferred to this sample by matching short primers.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F1<br>https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>pMBPtev expression-vector design</td>
+  <td>is_reported_backbone_for</td>
+  <td>pMBPtev-NovQ parental DNA construct</td>
+  <td>Table S2 describes pMBPtev as pET30a-derived with MBP and a TEV site before the cloning site. Figure S1 shows the 6.4-kbp vector and NotI position. This schematic does not provide a complete plasmid sequence or every processed terminus.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>pMBPtev-NovQ parental DNA construct</td>
+  <td>encodes_engineered_preparation</td>
+  <td>Ni 2020 pMBPtev-NovQ-derived WT assay preparation</td>
+  <td>Table S1 gives WT-F ATAAGAATGCGGCCGCAATGCCCGCACTCCCGATG and WT-R ATAAGAATGCGGCCGCTCAGTGGTGGTGGTGGTGGTGTCGGGCACCTCCGGTGAT (both 5-prime). Their native ends match the first and last 18 coding nt in both AF170880.4 and AB496950.1. The reverse-primer extension encodes six C-terminal histidines followed by stop: the reconstructed native-core-plus-His6 segment is 329 aa. This excludes unknown N-terminal vector/fusion sequence. The TEV site does not demonstrate tag cleavage in every kinetic aliquot, and cleavage would not by itself remove this C-terminal extension.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.ncbi.nlm.nih.gov/nuccore/AB496950.1</td>
+</tr>
+<tr>
+  <td>pMBPtev-NovQ parental DNA construct</td>
+  <td>is_parental_reference_for</td>
+  <td>Ni 2020 NovQ point-mutant construct panel</td>
+  <td>The source names nine E281 substitutions in pMBPtev-derived constructs. All nine literal forward/reverse pairs are exact reverse complements and uniquely match native CDS nt826..858 with the designed mismatches. Models change only residue 281 in the native core; full plasmids and individual assayed aliquots were not independently sequenced.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.ncbi.nlm.nih.gov/nuccore/AB496950.1</td>
+</tr>
+<tr>
+  <td>E. coli BL21(DE3) mutant expression host</td>
+  <td>was_expression_host_for</td>
+  <td>Ni 2020 NovQ point-mutant construct panel</td>
+  <td>Table S2 lists a BL21(DE3) strain for each pMBPtev mutant. The same table separately lists Rosetta(DE3)/pET28a-NovQ; do not assign that construct or host to all mutant preparations.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Ni 2020 pMBPtev-NovQ-derived WT assay preparation</td>
+  <td>was_compared_in</td>
+  <td>Supplementary menadione-hydroquinol rate series</td>
+  <td>Figure S5 shows a menadione-hydroquinol concentration series through 500 uM, with rate in nM/min, alongside the stated DMAPP cosubstrate. The supplement does not provide the complete assay recipe, protein loading, fixed DMAPP concentration or a fitted-parameter table. No exact Km/kcat or detection limit is digitized from the curve.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Menadione hydroquinol</td>
+  <td>was_varied_in</td>
+  <td>Supplementary menadione-hydroquinol rate series</td>
+  <td>The horizontal axis names the reduced aromatic substrate. It is not 4-HPP or an assay of the mature cathomycin structure.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Dimethylallyl diphosphate</td>
+  <td>was_reported_cosubstrate_in</td>
+  <td>Supplementary menadione-hydroquinol rate series</td>
+  <td>DMAPP is named in the captions. The displayed x-axis varies menadione hydroquinol, not DMAPP; a separate donor concentration series is not invented from those figures.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ-E281Q assay preparation</td>
+  <td>has_reported_activity_summary</td>
+  <td>Abstract-reported E281Q activity comparison</td>
+  <td>The primary abstract reports 2.05-fold activity and an aggregate 8.4-88.6% of WT range for the other variants. Without the full kinetic table, this is not assigned as a specific kcat/Km ratio, separate substrate-dependent constants or a value for any particular other mutant.</td>
+  <td class="mono">DOI:10.1007/s00253-020-10470-w</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ point-mutant construct panel</td>
+  <td>tests_functional_consequences_near_hypothesis</td>
+  <td>Docking-based NovQ substrate-contact hypothesis</td>
+  <td>The study motivates E281 substitutions using substrate docking; Figure S2 is a docking-energy distribution. This is computational contact evidence, not a solved NovQ-substrate complex or direct proton-transfer observation. The publisher records a Figure 1 correction dated 2020-04-14; its full correction and main article were not obtained. No uninspected atom-level contact map or corrected Figure 1 geometry is asserted.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf<br>DOI:10.1007/s00253-020-10470-w<br>DOI:10.1007/s00253-020-10557-4</td>
+</tr>
+<tr>
+  <td>Supplementary menadione-hydroquinol rate series</td>
+  <td>has_study_product_assignment</td>
+  <td>Source-assigned C3-prenylated menadione product</td>
+  <td>The study assigns C3-prenylated menadione. This is a surrogate-product claim; it does not establish synthesis of mature novobiocin/cathomycin or the redox state/order of every catalytic intermediate.</td>
+  <td class="mono">DOI:10.1007/s00253-020-10470-w</td>
+</tr>
+<tr>
+  <td>Supplementary product MS, UV and proton-NMR evidence</td>
+  <td>supports_source_product_assignment</td>
+  <td>Source-assigned C3-prenylated menadione product</td>
+  <td>Figure S3 shows an MS peak labelled m/z 241.1222 and UV markers at 244, 248, 261 and 269 nm. Figure S4 supplies a proton-NMR spectrum in CDCl3 with TMS. These are the source product-characterization figures, not separate structural determinations for each mutant or fermentation sample. No independent full spectral assignment or exact chemical record is constructed here.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>pMVA engineered precursor-supply construct</td>
+  <td>was_present_in</td>
+  <td>Ni 2020 S1 host: pMVA only</td>
+  <td>Table S2 identifies S1 as BL21(DE3) with pMVA alone. pMVA lists atoB-HMGS-HMGR-ERG12-ERG8-MVD1-idi on pCDFDuet-1. The gene list does not establish exact protein accessions, expression stoichiometry or a measured intracellular donor concentration.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>pMVA engineered precursor-supply construct</td>
+  <td>was_present_in</td>
+  <td>Ni 2020 S2 host: pMVA plus pMBPtevQ</td>
+  <td>Table S2 identifies S2 as BL21(DE3) carrying pMVA plus pMBPtevQ. This is an engineered precursor-supply context, not the native BGC.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ-E281Q assay preparation</td>
+  <td>was_construct_encoded_in</td>
+  <td>Ni 2020 S2 host: pMVA plus pMBPtevQ</td>
+  <td>pMBPtevQ is the E281Q expression construct in S2. This associates the engineered sequence design with the host; it does not measure protein abundance or show in-vivo TEV processing.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ-E281Q assay preparation</td>
+  <td>was_construct_encoded_in</td>
+  <td>Ni 2020 S3 host: pMBPtevQ only</td>
+  <td>S3 carries pMBPtevQ without pMVA. Its definition is distinct from the S2 coexpression strain; the supplement alone does not supply a quantitative product titer for S3.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>pMBPtev expression-vector design</td>
+  <td>was_present_in</td>
+  <td>Ni 2020 S4 host: pMBPtev vector</td>
+  <td>S4 carries the pMBPtev vector. This records the source comparator design, not a measured zero-product result.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Ni 2020 S2 host: pMVA plus pMBPtevQ</td>
+  <td>matches_reported_production_configuration</td>
+  <td>Reported engineered-host prenylated-menadione output</td>
+  <td>The abstract reports up to 4.7 mg/L C3-prenylated menadione for E281Q expression plus engineered MVA supply and exogenous aromatic substrate. S2 matches that listed configuration. This is an author-reported engineered-host titer, not enzyme specific activity, native antibiotic flux or a de-novo-from-glucose yield; detailed culture and uncertainty were not obtained.</td>
+  <td class="mono">DOI:10.1007/s00253-020-10470-w<br>https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Reported engineered-host prenylated-menadione output</td>
+  <td>concerns_source_assigned_product</td>
+  <td>Source-assigned C3-prenylated menadione product</td>
+  <td>The fermentation claim concerns a fed-substrate prenylation product, not the complete cathomycin molecule or its unresolved sugar stereocentre.</td>
+  <td class="mono">DOI:10.1007/s00253-020-10470-w</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ point-mutant construct panel</td>
+  <td>generated_expression_construct_for</td>
+  <td>Ni 2020 NovQ-E281Q assay preparation</td>
+  <td>Table S2 names BL21-MBP-NovQ-E281Q with pMBPtevQ. Forward primer 5-prime GACTACGTCAAGGCCCAACGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGTTGGGCCTTGACGTAGTC. The deposited-template model changes only native E281 to Q. Tag, junction and cleavage state are not fully specified for the assayed protein; no native accession is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ-E281Q assay preparation</td>
+  <td>has_displayed_rate_series_in</td>
+  <td>Supplementary menadione-hydroquinol rate series</td>
+  <td>Figure S6 panel a is labelled NovQ E281Q and plots rate against menadione hydroquinol through 500 uM. Panels have different vertical scales. The caption does not define error bars or replicate count; no exact digitized rate, mutant kinetic constant, binding affinity or universal activity ranking is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ point-mutant construct panel</td>
+  <td>generated_expression_construct_for</td>
+  <td>Ni 2020 NovQ-E281D assay preparation</td>
+  <td>Table S2 names BL21-MBP-NovQ-E281D with pMBPtevD. Forward primer 5-prime GACTACGTCAAGGCCGACCGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGGTCGGCCTTGACGTAGTC. The deposited-template model changes only native E281 to D. Tag, junction and cleavage state are not fully specified for the assayed protein; no native accession is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ-E281D assay preparation</td>
+  <td>has_displayed_rate_series_in</td>
+  <td>Supplementary menadione-hydroquinol rate series</td>
+  <td>Figure S6 panel b is labelled NovQ E281D and plots rate against menadione hydroquinol through 500 uM. Panels have different vertical scales. The caption does not define error bars or replicate count; no exact digitized rate, mutant kinetic constant, binding affinity or universal activity ranking is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ point-mutant construct panel</td>
+  <td>generated_expression_construct_for</td>
+  <td>Ni 2020 NovQ-E281T assay preparation</td>
+  <td>Table S2 names BL21-MBP-NovQ-E281T with pMBPtevT. Forward primer 5-prime GACTACGTCAAGGCCACACGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGTGTGGCCTTGACGTAGTC. The deposited-template model changes only native E281 to T. Tag, junction and cleavage state are not fully specified for the assayed protein; no native accession is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ-E281T assay preparation</td>
+  <td>has_displayed_rate_series_in</td>
+  <td>Supplementary menadione-hydroquinol rate series</td>
+  <td>Figure S6 panel c is labelled NovQ E281T and plots rate against menadione hydroquinol through 500 uM. Panels have different vertical scales. The caption does not define error bars or replicate count; no exact digitized rate, mutant kinetic constant, binding affinity or universal activity ranking is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ point-mutant construct panel</td>
+  <td>generated_expression_construct_for</td>
+  <td>Ni 2020 NovQ-E281S assay preparation</td>
+  <td>Table S2 names BL21-MBP-NovQ-E281S with pMBPtevS. Forward primer 5-prime GACTACGTCAAGGCCAGCCGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGGCTGGCCTTGACGTAGTC. The deposited-template model changes only native E281 to S. Tag, junction and cleavage state are not fully specified for the assayed protein; no native accession is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ-E281S assay preparation</td>
+  <td>has_displayed_rate_series_in</td>
+  <td>Supplementary menadione-hydroquinol rate series</td>
+  <td>Figure S6 panel d is labelled NovQ E281S and plots rate against menadione hydroquinol through 500 uM. Panels have different vertical scales. The caption does not define error bars or replicate count; no exact digitized rate, mutant kinetic constant, binding affinity or universal activity ranking is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ point-mutant construct panel</td>
+  <td>generated_expression_construct_for</td>
+  <td>Ni 2020 NovQ-E281A assay preparation</td>
+  <td>Table S2 names BL21-MBP-NovQ-E281A with pMBPtevA. Forward primer 5-prime GACTACGTCAAGGCCGCACGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGTGCGGCCTTGACGTAGTC. The deposited-template model changes only native E281 to A. Tag, junction and cleavage state are not fully specified for the assayed protein; no native accession is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ-E281A assay preparation</td>
+  <td>has_displayed_rate_series_in</td>
+  <td>Supplementary menadione-hydroquinol rate series</td>
+  <td>Figure S6 panel e is labelled NovQ E281A and plots rate against menadione hydroquinol through 500 uM. Panels have different vertical scales. The caption does not define error bars or replicate count; no exact digitized rate, mutant kinetic constant, binding affinity or universal activity ranking is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ point-mutant construct panel</td>
+  <td>generated_expression_construct_for</td>
+  <td>Ni 2020 NovQ-E281V assay preparation</td>
+  <td>Table S2 names BL21-MBP-NovQ-E281V with pMBPtevV. Forward primer 5-prime GACTACGTCAAGGCCGTACGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGTACGGCCTTGACGTAGTC. The deposited-template model changes only native E281 to V. Tag, junction and cleavage state are not fully specified for the assayed protein; no native accession is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ-E281V assay preparation</td>
+  <td>has_displayed_rate_series_in</td>
+  <td>Supplementary menadione-hydroquinol rate series</td>
+  <td>Figure S6 panel f is labelled NovQ E281V and plots rate against menadione hydroquinol through 500 uM. Panels have different vertical scales. The caption does not define error bars or replicate count; no exact digitized rate, mutant kinetic constant, binding affinity or universal activity ranking is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ point-mutant construct panel</td>
+  <td>generated_expression_construct_for</td>
+  <td>Ni 2020 NovQ-E281M assay preparation</td>
+  <td>Table S2 names BL21-MBP-NovQ-E281M with pMBPtevM. Forward primer 5-prime GACTACGTCAAGGCCATGCGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGCATGGCCTTGACGTAGTC. The deposited-template model changes only native E281 to M. Tag, junction and cleavage state are not fully specified for the assayed protein; no native accession is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ-E281M assay preparation</td>
+  <td>has_displayed_rate_series_in</td>
+  <td>Supplementary menadione-hydroquinol rate series</td>
+  <td>Figure S6 panel g is labelled NovQ E281M and plots rate against menadione hydroquinol through 500 uM. Panels have different vertical scales. The caption does not define error bars or replicate count; no exact digitized rate, mutant kinetic constant, binding affinity or universal activity ranking is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ point-mutant construct panel</td>
+  <td>generated_expression_construct_for</td>
+  <td>Ni 2020 NovQ-E281R assay preparation</td>
+  <td>Table S2 names BL21-MBP-NovQ-E281R with pMBPtevR. Forward primer 5-prime GACTACGTCAAGGCCCGACGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGTCGGGCCTTGACGTAGTC. The deposited-template model changes only native E281 to R. Tag, junction and cleavage state are not fully specified for the assayed protein; no native accession is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ-E281R assay preparation</td>
+  <td>has_displayed_rate_series_in</td>
+  <td>Supplementary menadione-hydroquinol rate series</td>
+  <td>Figure S6 panel h is labelled NovQ E281R and plots rate against menadione hydroquinol through 500 uM. Panels have different vertical scales. The caption does not define error bars or replicate count; no exact digitized rate, mutant kinetic constant, binding affinity or universal activity ranking is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ point-mutant construct panel</td>
+  <td>generated_expression_construct_for</td>
+  <td>Ni 2020 NovQ-E281K assay preparation</td>
+  <td>Table S2 names BL21-MBP-NovQ-E281K with pMBPtevK. Forward primer 5-prime GACTACGTCAAGGCCAAACGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGTTTGGCCTTGACGTAGTC. The deposited-template model changes only native E281 to K. Tag, junction and cleavage state are not fully specified for the assayed protein; no native accession is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Ni 2020 NovQ-E281K assay preparation</td>
+  <td>has_displayed_rate_series_in</td>
+  <td>Supplementary menadione-hydroquinol rate series</td>
+  <td>Figure S6 panel i is labelled NovQ E281K and plots rate against menadione hydroquinol through 500 uM. Panels have different vertical scales. The caption does not define error bars or replicate count; no exact digitized rate, mutant kinetic constant, binding affinity or universal activity ranking is assigned.</td>
+  <td class="mono">https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

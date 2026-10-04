@@ -677,6 +677,9 @@ causal_graphs:
 causal_graph_refs:
 - cathomycin-novl-coul-chimera-constructs-and-preparations
 - cathomycin-novl-coul-chimera-substrate-panel-and-limits
+- cathomycin-novq-native-identity-and-precursor-evidence
+- cathomycin-novq-fusion-expression-and-processing-limits
+- cathomycin-novq-e281-variants-and-surrogate-assay-limits
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -700,4 +703,12 @@ curation_history:
     evidence and six-column substrate panel; preserve native-versus-engineered identity,
     parent ambiguity, loading/normalization limits, earlier graphs and SEEDED status
     (#551).
+  llm_assisted: true
+- timestamp: '2026-10-04T18:21:51Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add three exact-owner NovQ components for native sequence/taxonomy limits,
+    fusion expression and nine E281 variants. Keep engineered proteins ungrounded
+    and preserve abstract/supplement access limits, earlier NovL/chimera evidence,
+    chemical identity, source fields and SEEDED status (#554).
   llm_assisted: true
