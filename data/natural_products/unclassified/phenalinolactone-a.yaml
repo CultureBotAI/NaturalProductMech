@@ -101,6 +101,7 @@ causal_graph_refs:
 - phenalinolactone-a-plau-plaz-bounded-genetics
 - phenalinolactone-a-plao2-bounded-genetics
 - phenalinolactone-a-plao3-genetics-and-inferred-function
+- phenalinolactone-a-plat5-plat6-joint-constructs
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -200,4 +201,12 @@ curation_history:
     ungrounded His6-PlaO3 construct: 15 nodes, 18 primary-cited edges and two snippets.
     Addressed review #526. Preserved all eight previous graphs, source-owned fields,
     history, SEEDED status and incomplete stereochemistry.'
+  llm_assisted: true
+- timestamp: '2026-10-04T03:41:19Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Referenced the PlaT5/PlaT6 joint-construct component with exact native
+    parent identities and primary-source controls. Preserved all ten previous graphs,
+    source-owned fields, history, SEEDED status and incomplete stereochemistry; addressed
+    source-review #527 without claiming individual enzyme effects or rate limitation.'
   llm_assisted: true
