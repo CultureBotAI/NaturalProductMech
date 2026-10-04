@@ -1996,6 +1996,89 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">10 nodes, 11 edges</span></h2>
+<p class="sub">Native SimJ2/SimD4 Q9F5I9 and genetically targeted constructs from the Galm 2003 and Schafer 2016 primary theses (review #546). Historical SimC6 maps this protein by literal primers, not by the current GenBank gene name alone. The Galm single-crossover clones were genotyped, but their metabolite production was explicitly not examined. Reported deletion/frame and fragment sizes remain separate from native and literal-primer reconstructions. The later PAC construct is a source-listed resource, not a measured catalytic or production outcome. No purified SimJ2 reaction, functional-null allele or established modular-PKS tetraene role is asserted. Existing simD4-region DNA assays and promoter reporters are preserved without promotion to protein activity. Galm PDF page numbers exceed printed pages by four; Schafer numbers coincide.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native simJ2 locus, also named simD4</td>
+  <td>encodes_native_protein</td>
+  <td>Native SimJ2 (SimD4; historical SimC6) protein</td>
+  <td>Three 741-nt CDSs including stop translate exactly to the 246-aa native Q9F5I9 sequence using CDS-aware table 11: AAL15605.1 at AF322256.1:25806..26546(+), AAG34189.1 at AF321122.1:9018..9758(+) and AAK06809.1 at AF324838.2:70601..71341(+). The first two deposits call the gene simJ2; the third calls it simD4. All identify S. antibioticus Tu6040/Tue6040, taxon 1890. This native protein is distinct from 273-aa SimJ1 and the 487-aa AEU17894.1 putative halogenase currently named simC6 in AF324838.2. It does not identify either engineered allele. Database oxidoreductase annotations do not constitute purified native activity measurements.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2<br>https://www.uniprot.org/uniprotkb/Q9F5I9<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1</td>
+</tr>
+<tr>
+  <td>pUG014 source-reported internal simJ2-deletion construct</td>
+  <td>was_designed_for_internal_deletion_of</td>
+  <td>Native simJ2 locus, also named simD4</td>
+  <td>The source describes pUG010 then pUG014 assembly in pBSKT from cosmid VII-8g upstream XbaI/EcoRI and downstream EcoRI/HindIII PCR fragments, and calls the resulting deletion 639 bp and in frame. Literal primers are P01f CAGACGATCTAGATCGACGG, P01r CCACATCGAATTCCTCGCGA, P02f TCGACGGCGGAATTCCGATCTGAC and P02r CTCCTCGCCAAGCTTGATGATCTG. Their printed coordinates reproduce the reported 1379/1409-nt amplicons, but EcoRI fusion gives a 640-nt net deletion and a 101-nt residual coding span, which is not divisible by three. This is an unresolved source-versus-primer-model discrepancy, not proof of the actual allele or its expression. No primer is silently repaired and no residual protein is assigned.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1</td>
+</tr>
+<tr>
+  <td>pUG015 apramycin-selectable simJ2 targeting construct</td>
+  <td>derives_targeting_insert_from</td>
+  <td>pUG014 source-reported internal simJ2-deletion construct</td>
+  <td>The reported approximately 2.8-kb XbaI/HindIII insert was transferred from pUG014 to the apramycin-selectable suicide vector pKC1132. Table 14 lists pUG014 at 7.2 kb and pUG015 at 6.3 kb. These are source-reported sizes, not independently sequenced full plasmids or evidence that the actual deletion resolves the 639/640-nt conflict.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Three unnamed S. antibioticus simJ2 single-crossover clones</td>
+  <td>were_generated_with</td>
+  <td>pUG015 apramycin-selectable simJ2 targeting construct</td>
+  <td>PEG-mediated protoplast transformation of native S. antibioticus Tu6040 and apramycin selection yielded the three examined clones. The source supplies no individual clone identifiers here. The pUG014/thiostrepton route instead gave many spontaneous-resistant colonies, so resistance alone is not equated with targeted integration. The three genotyped clones are not three production-assay replicates.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Three unnamed S. antibioticus simJ2 single-crossover clones</td>
+  <td>have_reported_genotyping_readout</td>
+  <td>Reported EcoRV/PvuII Southern genotyping profiles</td>
+  <td>After EcoRV/PvuII digestion and S-simJ2 hybridization, all three examined clones reportedly had both the 1.9-kb WT-associated and 1.2-kb construct-associated bands. The Southern is explicitly not pictured. These source-assigned single crossovers are not clean double-crossover replacements or proof of protein abundance, intact-copy expression or complete junction sequences. Their secondary-metabolite production was explicitly not examined. No D8 loss, retained production, dispensability or catalytic rate is inferred. The thesis stopped this follow-up based on its separate SimJ1 observations; those do not supply a SimJ2-mutant outcome.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. antibioticus Tu6040 wild-type Southern comparator</td>
+  <td>provides_genomic_DNA_control_for</td>
+  <td>Reported EcoRV/PvuII Southern genotyping profiles</td>
+  <td>The source reports only a 1.9-kb hybridizing band for WT genomic DNA. Native AF322256.1 has a probe-containing EcoRV/PvuII interval of 1826 bp, between cut positions 25791 and 27617. The source band label and native reconstruction remain separately attributed; no unshown gel is remeasured or assigned greater precision. This control concerns genotyping, not a simultaneous product titer.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1</td>
+</tr>
+<tr>
+  <td>pUG015 apramycin-selectable simJ2 targeting construct</td>
+  <td>provides_plasmid_DNA_control_for</td>
+  <td>Reported EcoRV/PvuII Southern genotyping profiles</td>
+  <td>The source reports only a 1.2-kb hybridizing band for pUG015 DNA. The literal-primer deletion model yields a 1186-bp EcoRV/PvuII interval, consistent with that coarse label. This does not verify the complete experimental plasmid or make the source-reported in-frame allele consistent with the printed primers.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1</td>
+</tr>
+<tr>
+  <td>S-simJ2 DIG-labelled downstream DNA probe</td>
+  <td>was_generated_from</td>
+  <td>pUG014 source-reported internal simJ2-deletion construct</td>
+  <td>Methods describe a 1.1-kb EcoRI/PvuII fragment from pUG014, gel isolation and DIG labelling. The introduced EcoRI cut maps to 26534 in the primer-derived model; the downstream native PvuII cut is 27617, giving 1083 bp. This supports the reported approximate probe size, not a deposited sequence of the experimental probe.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1</td>
+</tr>
+<tr>
+  <td>S-simJ2 DIG-labelled downstream DNA probe</td>
+  <td>was_used_in</td>
+  <td>Reported EcoRV/PvuII Southern genotyping profiles</td>
+  <td>S-simJ2 hybridization is the locus-probing readout for the three selected clones and the WT/plasmid controls. Band presence is not a measurement of SimJ2 RNA, protein or biosynthetic catalytic function.</td>
+  <td class="mono">https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Source-listed PAC-12I-deltaC6 construct</td>
+  <td>is_listed_as_derivative_of</td>
+  <td>PAC-12I sim-cluster parent construct</td>
+  <td>The Schafer vector table lists PAC-12I-deltaC6 as an in-frame simC6 deletion and attributes it to T. Le and O. Shorinola, unpublished. This is a later cluster construct, not one of the Galm native single-crossover clones. The inspected listing and primer tables do not supply a SimC6-specific production or activity outcome. Separate SimC7 experiments and historical pathway drawings are not substituted for such an outcome.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>Source-listed PAC-12I-deltaC6 construct</td>
+  <td>targets_same_native_locus</td>
+  <td>Native simJ2 locus, also named simD4</td>
+  <td>The later del_simC6-F and del_simC6-R native arms are ggatcgaccgggaatgacgatatccggagttgcgtgatg and tgaacaggtcggcccgcggcaggccgggtcagaccgtca. Both 39-nt arms match AF324838.2 exactly and uniquely: 70565..70603(+) and 71339..71377(-), retaining native start/stop boundaries around AAK06809.1/simD4. The appended cassette tails are ATTCCGGGGATCCGTCGACC and TGTAGGCTGGAGCTGCTTC. The 24-nt check primers caggcctgtccactggaaccttgc and gagggacgccgacctcgtgaagcg map 70446..70469(+) and 71471..71494(-). Thus this historical SimC6 denotes SimJ2/SimD4, not AEU17894.1. These mappings identify the intended target; the complete experimental cassette, scar and expressed allele are not independently sequenced.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/61276/<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

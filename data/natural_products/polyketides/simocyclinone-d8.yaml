@@ -798,6 +798,7 @@ causal_graph_refs:
 - simocyclinone-d8-simh-simy-identities-and-adenylation
 - simocyclinone-d8-simh-simy-association-and-stoichiometry-limits
 - simocyclinone-d8-simj1-crossover-genetics-and-feeding-limits
+- simocyclinone-d8-simj2-constructs-and-unexamined-production
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -900,4 +901,13 @@ curation_history:
     feeding and shared double-crossover/revertant production-loss confound (review
     #544). All sixteen previous graphs, source fields, prior history, SEEDED status
     and unresolved stereochemistry remain unchanged; oxidation is explicit inference.'
+  llm_assisted: true
+- timestamp: '2026-10-04T14:38:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added native SimJ2/SimD4 Q9F5I9, bounded Galm single-crossover genotyping
+    and the later source-listed SimC6 construct (review #546). Preserved the 639/640-nt
+    frame discrepancy and explicitly unexamined metabolite production. All seventeen
+    earlier graphs, source-owned fields, prior history, SEEDED status and stereo limits
+    are unchanged.'
   llm_assisted: true
