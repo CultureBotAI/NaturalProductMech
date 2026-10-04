@@ -1,0 +1,540 @@
+record_id: naturalproductmech:mibig-96ff336a6a
+standard_inchi_key: OWRCRVABZYJUES-AWECJWJISA-N
+graph:
+  graph_id: polyketomycin-poko1-poko2-genetics-and-functional-compensation
+  scope: BIOSYNTHESIS
+  description: 'Native Tu6028 PokO1/PokO2 single- and double-mutant genetics, metabolite
+    profiles and PokO2-fragment rescue. Restoration supports genetic compensation,
+    not purified enzyme substitution or a physical complex. IP3 is a characterized
+    shunt; IP5/IP6 remain incompletely identified, and proposed hydroxylation chemistry
+    is kept distinct from measured production. Source-review issue #532 preserves
+    allele-size, culture, probe and labeling discrepancies. All product observations
+    retain the owner record''s unresolved stereochemical resolution.'
+  nodes:
+  - node_id: poko1
+    label: Native PokO1 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:C0JWC5
+  - node_id: poko2
+    label: Native PokO2 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:C0JWD3
+  - node_id: d1
+    label: Tu6028 pokO1 internal deletion, clone II-26
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: d2
+    label: Tu6028 pokO2 internal deletion, clone 82
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: double
+    label: Tu6028 pokO1/pokO2 double mutant, clone II-27
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: r2
+    label: Tu6028 pokO2 mutant carrying pSET-pok28
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: rd
+    label: Tu6028 pokO1/pokO2 double mutant carrying pSET-pok28
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: retained
+    label: Retained detectable polyketomycin in the tested pokO1 mutant
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: loss
+    label: No detected polyketomycin in the tested mutant culture
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: restored
+    label: Restored detectable polyketomycin in complemented clones
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: ip3
+    label: IP3, assigned polyketomycin shunt distinct from the parent
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: ip5
+    label: IP5 signal with unresolved exact structure
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: ip6
+    label: IP6 signal with unresolved identity and mass discrepancy
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: early
+    label: Early IP1/IP2/IP4 extract signals also reported in wild type
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: medium
+    label: Reported yeast-extract-dependent IP5 versus IP3 profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: compensation
+    label: Genetically inferred PokO2 compensation in the absence of intact pokO1
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: c4
+    label: Proposed early aglycone C-4 hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: diol
+    label: Proposed aglycone C-4a/C-12a hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: epoxide
+    label: Speculative epoxidation and cis-opening mechanism
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: d1
+    predicate: targets_gene_encoding
+    object: poko1
+    notes: The source describes replacement of approximately 94% of pokOI by an apramycin/oriT
+      cassette through Red/ET, then NheI excision and transfer to pKC1132 as pKC-pok20del.
+      After seven selection-free passages, PCR distinguished reverted wild type, single
+      crossovers and deletion clones; II-26 was selected. Results report 1882/731-bp
+      PCR and 2531/1375-bp KpnI Southern fragments, but methods give 1388 bp for the
+      latter. Literal primer/native-locus reconstruction instead predicts a 1143-bp
+      in-frame net deletion, 739-bp PCR and 1388-bp Southern. These are curator calculations,
+      not an observed mutant sequence or replacement of the reported allele. The inactivation
+      plasmid was reportedly sequence-checked. Figure 3.11 calls one single-crossover
+      clone 76 in text but 79 in its caption; II-26 is unambiguous. The native accession
+      denotes the full parent, not the residual deletion protein.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.1.6.2-3.1.6.3 pp. 38-40, Figs. 3.11-3.12; Table 5.21 p. 123;
+        methods 5.6.5.1 p. 127, Table 5.25 p. 133 and Southern pp. 138-139; Fig. 7.2
+        p. 169.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: F/R-pok20komp map 37492..39373; F/R-pok20Red plus NheI scar predict 1143
+        bp net deletion. F-pok20komp/R-SBpok20Kpn span 269 bp, matching methods rather
+        than results 270 bp. Expected band labels are not exact measurements from
+        the gel.
+    - reference: https://www.uniprot.org/uniprotkb/C0JWC5
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed native PokO1, 409 aa, taxon 42236; EMBL FJ483966/ACN64845.1.
+        Inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACN64845.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PokO1 of Streptomyces diastatochromogenes Tu6028; FJ483966.1:37950..39179,
+        positive strand.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison: native GenBank, MIBiG BGC0001061.4, GenPept and
+        UniProt translations agree exactly. MIBiG substitutes ambiguity codes at four
+        locus positions; two lie within pokO2 but do not change its translation. Whole-DNA
+        identity is not asserted.'
+  - subject: d1
+    predicate: has_reported_production_phenotype
+    object: retained
+    notes: 'HPLC and LC/MS of HA production extracts retained a peak assigned as polyketomycin
+      by retention, UV and [M-H]- m/z 863.3. Other confirmed mutant clones also retained
+      product. This is not equal wild-type titer or all-condition dispensability:
+      Fig. 3.13 uses different vertical scales. Results say six-day cultures while
+      the caption says four days; its mutant trace label says pokOII although the
+      section, caption and Table 3.6 identify pokOI. No PokO1 complementation was
+      performed because production was retained. The genotype PCR contains partial
+      pokT1/pokC2 sequences and is not evidence for a performed rescue construct.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.1.6.4 pp. 40-42, Fig. 3.13 and Table 3.6; general HA cultivation
+        5.4.2.3 p. 108, 28 C/180 rpm. Culture duration conflict is retained.
+      snippet: die Polyketomycin-Produktion nicht unterbrochen wurde
+  - subject: d1
+    predicate: accumulates_reported_metabolite
+    object: ip3
+    notes: The pokOI mutant additionally showed IP3 at LC/MS 24.59 min or HPLC 16.82
+      min, with [M-H]- m/z 395.2 and a distinct UV profile. These methods are not
+      conflated. Polyketomycin retention was 27.52 min in the mutant versus 27.43
+      min in wild type by LC/MS. IP3 was subsequently purified from the double mutant;
+      the single-mutant signal is not an independently purified structure or a parent-compound
+      identity.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.6.4 and Table 3.6 pp. 40-42; subsequent double-mutant IP3
+        work 3.1.8 pp. 46-49.
+  - subject: d2
+    predicate: targets_gene_encoding
+    object: poko2
+    notes: pKC-pok28del was made by Red/ET cassette replacement and NheI/SpeI excision,
+      reported as approximately 95% internal deletion with 80 native bases remaining.
+      Clone 82 lacked the 612-bp internal PCR product and showed a short external-primer
+      product; intact genomic PCR was unreliable, so absence alone was not the genotype
+      proof. Southern supported deletion. Results report external PCR 1995/465 bp,
+      whereas methods report 1996/460 bp. Literal native-primer reconstruction gives
+      1995/459 bp and a 1536-bp in-frame net deletion; BamHI 3265/1729 bp agrees with
+      the reported Southern. These calculations are not the actual sequenced mutant.
+      The 801-bp probe spans parts of pokC3 and pokT2 plus their intergenic region,
+      although methods describe it as pokT2. Figure 3.7 reverses left/right in part
+      of its caption. Method 5.6.5.2 first says pokOI next to pokOIV, but heading/primers/maps
+      target pokOII. Discussion p. 81 gives 451 aa instead of the verified native
+      541 aa.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.1.4.2-3.1.4.3 pp. 32-34, Figs. 3.7-3.8; Table 5.21 pp. 123-124;
+        construction 5.6.5.2/Table 5.23 p. 128; PCR p. 134 and Southern pp. 137-138;
+        map p. 170.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator mapping: external primers 45115..47109; internal 45941..46552;
+        probe 44150..44950 spans 348 bp of pokC3 and 404 bp of pokT2. Reported primer
+        sequences and restriction geometry checked; no complete mutant sequence asserted.'
+    - reference: https://www.uniprot.org/uniprotkb/C0JWD3
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed native PokO2, 541 aa, taxon 42236; EMBL FJ483966/ACN64853.1.
+        Inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACN64853.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PokO2 of Streptomyces diastatochromogenes Tu6028; FJ483966.1:complement(45312..46937).
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison: native GenBank, MIBiG BGC0001061.4, GenPept and
+        UniProt translations agree exactly. MIBiG substitutes ambiguity codes at four
+        locus positions; two lie within pokO2 but do not change its translation. Whole-DNA
+        identity is not asserted.'
+  - subject: d2
+    predicate: has_reported_production_phenotype
+    object: loss
+    notes: Matched four-day HA cultures were extracted and analyzed by HPLC/LC-MS.
+      The mutant lacked the wild-type polyketomycin signal at 27.20 min, [M-H]- m/z
+      863.3. Figure 3.9 four-day traces use 430 nm, while the two-day mutant trace
+      uses 320 nm. This is no detected product under the tested conditions, not a
+      calibrated zero titer, stated detection limit or universal essentiality.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.4.4 pp. 34-36, Fig. 3.9 and Table 3.5; Pok_APCI_1.m.
+  - subject: d2
+    predicate: has_reported_metabolite_signal
+    object: ip5
+    notes: The main new signal is IP5 at 24.25 min, [M-H]- m/z 451.2. Isolation from
+      15 L cultures was difficult and the available NMR data were not interpretable.
+      The results describe complete degradation after three weeks at 4 C, discussion
+      after two weeks, with greater stability at -20 C. Similarity to premithramycinone
+      G in mass, UV and instability does not establish exact chemical identity, an
+      additional three-carbon extension, or an enzyme substrate. Figure 4.3 is a structural
+      proposal.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.1.4.4-3.1.5 pp. 35-37, Table 3.5/Fig. 3.10; discussion 4.1.3
+        pp. 78-79.
+  - subject: d2
+    predicate: has_reported_metabolite_signal
+    object: ip6
+    notes: The minor IP6 signal has LC/MS retention 28.96 min and a distinct UV profile.
+      Text reports [M-H]- m/z 683.2 while Table 3.5 gives 682.2. Neither is silently
+      selected as an exact mass. IP6 was not isolated because too little material
+      was available; no formula, structure, precursor assignment or parent identity
+      is adopted from this signal.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.4.4 pp. 35-36, Fig. 3.9 and Table 3.5.
+  - subject: d2
+    predicate: has_reported_medium_dependent_profile
+    object: medium
+    notes: The discussion reports IP5 in the pokOII mutant with Difco yeast extract
+      but IP3 with Roth yeast extract. This shows culture-context dependence in the
+      reported profiles, not direct measurement of PokO1 activity, expression or a
+      particular medium constituent. The authors' interpretation that PokO1 only functions
+      with the Difco preparation is not promoted to an enzyme-assay result. No quantitative
+      media comparison or calibrated productivity ratio is given.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Discussion 4.1.3 p. 78; yeast-extract source context 5.1.1.
+  - subject: r2
+    predicate: introduces_gene_encoding
+    object: poko2
+    notes: Pfu amplification with F/R-pok28komp produced the native pokOII-containing
+      fragment, cloned via EcoRI/XbaI into pUWLoriT and then via ClaI/XbaI into integrative
+      pSET-1cerm under ermE-up. pUWL work was abandoned for unreliable thiostrepton
+      selection, not a controlled inactivity result. Native primer mapping gives 1995
+      bp at 45115..47109, containing full pokO2 plus 188 bp of pokT2 and no second
+      complete CDS. Engineered restriction substitutions lie outside pokO2; the amplified
+      sequence has no internal ClaI site. The pre-digestion PCR span is not the complete
+      final integrated plasmid. Partial pokT2 carriage does not establish expression
+      of functional PokT2.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.4.5 p. 36; Table 5.21 pp. 123-124; methods 5.6.5.3 pp. 128-129.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator F/R-pok28komp alignment and CDS overlap; EcoRI/XbaI engineered
+        sites and ClaI absence checked on the PCR model. This is reconstructed native
+        coverage, not a deposited full plasmid sequence.
+  - subject: r2
+    predicate: restores_reported_production
+    object: restored
+    notes: All ten tested exconjugants resumed detectable polyketomycin production
+      by chromatographic analysis. The source concludes that polar effects are excluded.
+      The result supports rescue in this expression context, but no calibrated recovery
+      to wild-type yield or universal exclusion of neighboring-gene effects is asserted.
+      The inspected rescue section does not show a matched empty-pSET production control;
+      generic conjugation controls are not the same comparison.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.4.5 p. 36; pSET-pok28 construction 5.6.5.3 pp. 128-129.
+  - subject: double
+    predicate: targets_gene_encoding
+    object: poko1
+    notes: The second knockout was introduced into the already verified pokOI mutant.
+      Clone II-27 retained the pokOI deletion by KpnI Southern, with the results again
+      labeling wild-type 2531 bp and mutant 1375 bp. The pre-existing O1 result versus
+      method/reconstruction discrepancy remains unresolved; the two loci were tested
+      in one double-mutant clone, not inferred from separate strains.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.1.7.1-3.1.7.2 pp. 42-44, Figs. 3.14-3.15.
+  - subject: double
+    predicate: targets_gene_encoding
+    object: poko2
+    notes: pKC-pok28del was conjugated into the pokOI mutant, followed by seven passages
+      and selection of apramycin-sensitive clones. Clone II-27 gave the reported 465-bp
+      external PCR product and 1729-bp BamHI Southern fragment rather than the native
+      3265-bp fragment. Clone I-26 also showed the short PCR product; I-31/II-5 did
+      not yield a product. This is targeted genotype evidence, not a complete double-mutant
+      genome sequence. The single-mutant primer-derived 459-bp expectation remains
+      distinct from the reported 465-bp label.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.1.7.1-3.1.7.2 pp. 42-44, Figs. 3.14-3.15; same construct/primers
+        as 5.6.5.2/Table 5.21.
+  - subject: double
+    predicate: has_reported_production_phenotype
+    object: loss
+    notes: No polyketomycin signal was detected in clone II-27 extracts, compared
+      with simultaneously inoculated wild type. Results text says six-day harvest;
+      Fig. 3.16 caption says four-day cultures and 430-nm LC/MS traces. These descriptions
+      are not collapsed into a single certain duration. Different vertical scales
+      do not establish quantitative titer differences, and no detection limit is supplied.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.7.3 pp. 44-45, Table 3.7 and Fig. 3.16.
+  - subject: double
+    predicate: has_no_detected_metabolite_signal
+    object: ip5
+    notes: The double mutant did not show the IP5 signal reported in the pokOII single
+      mutant. This comparative profile is consistent with a changed pathway block,
+      but IP5 structure remains unresolved and yeast-extract effects are reported
+      elsewhere. No direct PokO1-to-IP5 reaction or concentration of exactly zero
+      is inferred from this absence.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.7.3 pp. 44-45, Table 3.7/Fig. 3.16; medium context 4.1.3
+        p. 78.
+  - subject: double
+    predicate: accumulates_reported_metabolite
+    object: ip3
+    notes: IP3 is the major reported double-mutant signal at 24.44 min, [M-H]- m/z
+      395.2. The authors recovered 5 mg from 20 L of four-day cultures, a 0.25 mg/L
+      isolation yield, not calibrated biosynthetic titer. Acidified supernatant was
+      fractionated; a co-eluting impurity in the 95% MeOH fraction required preparative
+      TLC. Fractions were checked by HPLC before pooling. High-resolution negative-mode
+      ESI-MS gave 395.07731 versus calculated 395.076695 for [M-H]-, supporting C21H16O8.
+      Discussion p. 82 instead says EIMS; the method-specific results are retained
+      without treating that label as a second experiment.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 3.7 p. 45; sections 3.1.8.1-3.1.8.3 pp. 46-47 and Fig. 3.17; compare
+        discussion 4.1.4 p. 82.
+  - subject: rd
+    predicate: introduces_gene_encoding
+    object: poko2
+    notes: The same pSET-pok28 construct was introduced into the pokOI/pokOII double
+      mutant to restore the pokOII function while pokOI remained disrupted. This is
+      one-locus complementation of a double mutant, not reconstruction of both native
+      loci, or evidence that the O1 deletion protein is equivalent to native PokO1.
+      The primer-defined full O2/partial T2 coverage and absence of a complete final
+      plasmid sequence apply to this context too.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.7.4 p. 45; shared construct 5.6.5.3 pp. 128-129.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: F/R-pok28komp native coverage 45115..47109 contains complete pokO2, 188
+        bp of pokT2, and no second complete CDS.
+  - subject: rd
+    predicate: restores_reported_production
+    object: restored
+    notes: All seven transformed double-mutant clones again synthesized detectable
+      polyketomycin after addition of pSET-pok28. The section calls this partial complementation
+      because only one of two deleted loci is supplied; it gives no numerical fraction
+      of wild-type yield. Do not reinterpret partial as a measured low production
+      percentage. A matched empty-vector production trace is not shown in this inspected
+      section.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.7.4 p. 45.
+      snippet: Die sieben transformierten Klone waren wieder in der Lage Polyketomycin
+        zu synthetisieren.
+  - subject: d1
+    predicate: has_reported_early_metabolite_profile
+    object: early
+    notes: After two days, IP1/IP2/IP4 signals were also found in the pokOI-mutant
+      extract, as in wild type and the other mutants. Their occurrence is not evidence
+      that PokO1 directly makes them or that they are polyketomycin shunts. Historical
+      signal labels are not silently equated with later named foxicins.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.6.4 p. 42; historical assignments 3.1.2.4/3.1.3 pp. 23-31.
+  - subject: d2
+    predicate: has_reported_early_metabolite_profile
+    object: early
+    notes: Two-day pokOII-mutant extract contained IP1/IP2/IP4. Figure 3.9 uses 320
+      nm for this early trace versus 430 nm for the four-day profiles, so signal heights
+      are not directly comparable titers. Wild-type occurrence and the historical
+      assignment limits preclude treating these as demonstrated PokO2 substrates or
+      products.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.4.4 p. 35 and Fig. 3.9; historical evidence 3.1.2.4/3.1.3.
+  - subject: double
+    predicate: has_reported_early_metabolite_profile
+    object: early
+    notes: The double mutant also showed IP1/IP2/IP4 after two days, as did the other
+      mutants and wild type. This is an extract-profile observation, not a proven
+      link from either oxygenase to the biosynthesis of these compounds.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.7.3 p. 44.
+  - subject: rd
+    predicate: supports_genetic_inference
+    object: compensation
+    notes: Retained product in the pokOI single mutant, loss in the double mutant
+      and restoration upon adding the pokOII-containing construct support functional
+      compensation at the genetic/production level. This is not purified PokO2 turnover
+      of the native PokO1 substrate, a demonstrated binding interaction, or proof
+      of an evolved substrate-flexibility mechanism. Media effects, expression context
+      and unresolved mutant sequence details bound the inference.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: CURATOR_INFERENCE
+      notes: Inference from 3.1.6-3.1.7 pp. 38-45 and discussion 4.1.4 pp. 81-84.
+  - subject: poko2
+    predicate: has_inferred_compensatory_role
+    object: compensation
+    notes: The source assigns PokO2 the capacity to compensate for loss of intact
+      pokOI in this native producer and pSET rescue context. No oligomer, protein
+      complex, stoichiometry or enzyme kinetic equivalence was tested in the inspected
+      experiments. The native accession is exact; the mechanistic interpretation remains
+      genetic inference.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion 4.1.3-4.1.4 pp. 80-84, grounded in double-mutant/rescue results.
+  - subject: poko1
+    predicate: has_proposed_biosynthetic_role
+    object: c4
+    notes: The authors propose early hydroxylation at aglycone C-4, based on the mutant
+      shunt profile, structural analysis and analogy with OxyE/CmmOI/MtmOI. No purified
+      native PokO1 assay, exact immediate substrate, cofactor requirement measurement
+      or reaction rate is provided here. Retained production does not make PokO1 irrelevant,
+      and similarity to other pathways is not a native enzyme experiment. Numbering
+      follows the thesis polyketomycin aglycone.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: CURATOR_INFERENCE
+      notes: Sections 3.1.6.1 p. 38 and 3.1.8.4 pp. 47-49; discussion 4.1.4 pp. 81-84.
+  - subject: poko2
+    predicate: has_proposed_biosynthetic_role
+    object: diol
+    notes: The proposed role is hydroxylation at C-4a and C-12a of the aglycone, inferred
+      from native genetics, the IP3 structural assignment and analogy to related FAD
+      oxygenases. IP5 was not resolved by NMR, so its proposed absence of these groups
+      is not independent structural proof. No purified PokO2 reaction, exact native
+      substrate or oxygen-source experiment is asserted. The owner stereochemical
+      disagreement is unchanged.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: CURATOR_INFERENCE
+      notes: Sections 3.1.4.1 p. 32, 3.1.5.2 p. 37 and 3.1.8.4 p. 49; discussion 4.1.3
+        pp. 78-80.
+  - subject: poko2
+    predicate: has_proposed_compensatory_reaction
+    object: c4
+    notes: The C-4 hydroxylation assignment in the absence of intact pokOI is the
+      authors' chemical interpretation of genetic compensation. Restoration of the
+      final product does not on its own measure this particular bond change or rule
+      out all indirect effects. It is not a direct substrate-to-product reaction edge
+      and does not use IP3 as a demonstrated substrate.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion 4.1.3 p. 80 and 4.1.4 pp. 81-84; results 3.1.7.4 p. 45.
+  - subject: diol
+    predicate: has_speculative_mechanism
+    object: epoxide
+    notes: Figure 4.4 depicts TcmG chemistry and proposes transfer of an epoxide/cis-opening
+      model to the polyketomycin oxygenases. The cited isotope assay belongs to TcmG,
+      not PokO1 or PokO2. No native epoxide intermediate, oxygen provenance or isotope
+      incorporation was measured in this work. The drawing is not adopted as a demonstrated
+      PokO2 catalytic mechanism.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion 4.1.3 pp. 79-80 and Fig. 4.4.
+  - subject: ip3
+    predicate: supports_genetic_assignment_of
+    object: c4
+    notes: Isolated double-mutant IP3 was examined by 1H/13C, COSY, HSQC and HMBC
+      NMR in DMSO-d6 at 35 C. Figure 3.18/Table 3.8 assign a partially aromatic tetracycle
+      lacking the parent C-4/C-4a/C-12a hydroxyl groups and its quinone arrangement,
+      with an additional hydroxyl group at C-6. Discussion p. 82 says C-6a instead;
+      the detailed assignment uses C-6. IP3 is interpreted as a shunt, possibly formed
+      by spontaneous oxidation during isolation. It is not the measured PokO1 substrate,
+      the parent compound, WJ119 or saintopin E. The structural result informs a genetic
+      assignment; it does not resolve native catalytic order, the parent absolute
+      stereochemistry or an IP3 protein target.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary IP3 analysis 3.1.8.3-3.1.8.4 pp. 47-49, Fig. 3.18/Table 3.8.
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: CURATOR_INFERENCE
+      notes: Interpretation 4.1.4 pp. 82-84; spontaneous oxidation and exact substrate
+        remain hypotheses.
+  - subject: ip5
+    predicate: contributes_to_unresolved_reaction_hypothesis
+    object: diol
+    notes: The thesis uses the hypothetical resemblance to premithramycinone G to
+      discuss missing vicinal hydroxylation and possible chain-length effects. Because
+      the IP5 NMR was not interpretable, its exact structure and the extra-carbon
+      origin remain unresolved. This is a weak, explicitly conditional contribution
+      to a model, not independent proof that PokO2 controls chain length or that the
+      depicted IP5 structure is correct.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: CURATOR_INFERENCE
+      notes: Section 3.1.5.2 p. 37 and discussion 4.1.3 pp. 78-80, Fig. 4.3.
+curation_history:
+- timestamp: '2026-10-04T06:48:17Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added native PokO1 C0JWC5 and PokO2 C0JWD3 in one primary-cited genetic
+    compensation graph. Addressed #532 allele, rescue, probe, culture and metabolite
+    limits; direct enzyme chemistry, exact IP5/IP6 identity and physical complexes
+    are not asserted. Two primary snippets verified.'
+  llm_assisted: true
