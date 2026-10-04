@@ -1004,6 +1004,8 @@ causal_graphs:
       evidence_type: CURATOR_INFERENCE
       notes: Discussion 4.3.3 pp. 112-115; Figs. 4-11/4-12; structural role is explicitly
         speculative and polar effects are not excluded.
+causal_graph_refs:
+- polyketomycin-poko4-bounded-genetics-and-rescue-cocarriage
 curation_history:
 - timestamp: '2026-09-10T06:18:46Z'
   curator: seed_from_sources
@@ -1030,4 +1032,12 @@ curation_history:
     allele differences, normalized metabolite profiles, partial rescue and possible
     polar effects; catalytic timing and structural roles remain inference. Prior graphs,
     source-owned identity, open stereochemistry discussion and SEEDED status unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-04T06:07:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added one exact-owner PokO4/PokS7 graph component because complete evidence
+    would exceed the 64-KiB owner limit. All four inline graphs, source-owned identity,
+    open discussion, prior history and SEEDED status are unchanged; new evidence preserves
+    source-review issue #531 limits.'
   llm_assisted: true

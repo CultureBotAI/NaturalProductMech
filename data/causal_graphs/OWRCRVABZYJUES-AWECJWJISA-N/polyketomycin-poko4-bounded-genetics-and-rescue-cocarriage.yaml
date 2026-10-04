@@ -1,0 +1,302 @@
+record_id: naturalproductmech:mibig-96ff336a6a
+standard_inchi_key: OWRCRVABZYJUES-AWECJWJISA-N
+graph:
+  graph_id: polyketomycin-poko4-bounded-genetics-and-rescue-cocarriage
+  scope: BIOSYNTHESIS
+  description: 'Native Tu6028 PokO4 deletion and rescue implicate the locus in polyketomycin
+    production, without establishing purified enzyme chemistry. The rescue fragment
+    is inferred to carry native PokS7 as well as PokO4; PokS7 has no individually
+    assigned activity here. Historical IP1/IP2/IP4 signals, later foxicin observations
+    and early-PKS hypotheses remain distinct. Source-review issue #531 preserves construct,
+    time-course, structure and numbering limits. The owner remains at its original
+    unresolved stereochemical resolution.'
+  nodes:
+  - node_id: poko4
+    label: Native PokO4 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:C0JWD4
+  - node_id: poks7
+    label: Native PokS7 parent, rescue co-carriage inferred
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:C0JWD5
+  - node_id: deletion
+    label: Tu6028 pokO4 internal deletion, clone 87
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: loss
+    label: No detected polyketomycin in the tested mutant culture
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: Tu6028 pokO4 mutant with pSET-pokOIV/pSET-pok29
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: restored
+    label: Restored detectable polyketomycin in ten rescue clones
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: ip_signals
+    label: Historical mutant extract signals IP1, IP2 and IP4
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: foxicin_profile
+    label: Later foxicin profile of the pokOIV mutant
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: morphology
+    label: Reported reduction in spores and melanin-like pigmentation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: biosynthetic_role
+    label: Genetically inferred contribution to polyketomycin production
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: early_role
+    label: Hypothesized early polyketide assembly contribution
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: chain_cleavage
+    label: Speculative early Baeyer-Villiger chain-length control
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: deletion
+    predicate: targets_gene_encoding
+    object: poko4
+    notes: pKC-pok29del was made by Red/ET replacement of most pokOIV with an apramycin/oriT
+      cassette, followed by NheI/SpeI cassette excision and transfer into pKC1132.
+      The source calls this an approximately 95% deletion, not loss of the entire
+      CDS. After six selection-free passages, 6% of 176 clones were apramycin-sensitive;
+      sensitivity alone did not distinguish a mutant from a reverted wild type. Clone
+      87 was confirmed by PCR and Southern analysis. The construction plasmid was
+      reportedly sequence-checked, but no deposited complete mutant genome or protein
+      sequence is asserted. Methods 5.6.5.2 initially say pokOI next to pokOIV, whereas
+      its heading, primers and maps identify the neighboring target as pokOII. The
+      exact native PokO4 identity does not depend on that inconsistent label.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.1.2.2-3.1.2.3 pp. 21-22; methods 5.6.4.6/5.6.5.2 pp. 125-128;
+        Table 5.19 p. 111 and Fig. 7.4 p. 170.
+    - reference: https://www.uniprot.org/uniprotkb/C0JWD4
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed native PokO4, 506 aa, taxon 42236; EMBL FJ483966/ACN64854.1.
+        Inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACN64854.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PokO4 of Streptomyces diastatochromogenes Tu6028; FJ483966.1:47306..48826,
+        positive strand.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison: PokO4 agrees exactly across GenPept, UniProt and
+        native GenBank/MIBiG BGC0001061.4 translations. Whole-locus ambiguity substitutions
+        at 47, 289, 46665 and 46736 are outside PokO4 and PokS7.'
+  - subject: deletion
+    predicate: has_reported_production_phenotype
+    object: loss
+    notes: Matched wild-type and mutant six-day HA cultures were extracted and examined
+      by LC/APCI-MS (POK_APCI_1.m) and HPLC (IP_Polyketo_0607_Meth). General cultivation
+      was 28 C and 180 rpm; HA contains 4 g/L yeast extract, 10 g/L malt extract and
+      4 g/L glucose at initial pH 7.3. The wild-type polyketomycin peak was at 27.20
+      min by LC/MS, with [M-H]- m/z 863.3; the mutant lacked it. Figure 3.4 shows
+      254-nm traces. This is no detected production under those conditions, not an
+      exact zero titer, a stated detection limit or universal essentiality. PCR gave
+      the expected 1786-bp intact and 355-bp deleted amplicons, with plasmid/single-crossover
+      controls; wild-type mycelial PCR sometimes failed. One Fig. 3.2 caption sentence
+      says 335 bp instead of 355 bp. The SacI Southern with a 479-bp pokS7 probe showed
+      2035-bp wild-type versus 5012-bp mutant fragments. Curator reconstruction from
+      six primary primers and the native locus predicts a 1431-bp net deletion and
+      355-bp PCR product, consistent with the main result but not an observed mutant
+      sequence.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 3.1.2.3-3.1.2.4 pp. 21-24, Figs. 3.2-3.4/Table 3.2; Table 5.14
+        p. 104, cultivation p. 108, primers p. 124, PCR/Southern pp. 134/137-138 and
+        extraction/analytics pp. 140-144.
+      snippet: Die Mutante dagegen produzierte kein Polyketomycin mehr.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator primer/restriction reconstruction: F/R-pok29komp span 47092..48877
+        (1786 bp); probe span 48856..49334 (479 bp); NheI/SpeI scar model reduces
+        length by 1431 bp and preserves the frame. PCR primers are not the rescue-fragment
+        boundaries.'
+  - subject: deletion
+    predicate: has_reported_metabolite_profile
+    object: ip_signals
+    notes: 'The thesis labels three extract peaks IP1, IP2 and IP4: LC/MS retention
+      times 21.96/23.16/29.48 min with [M-H]- m/z 345.2/345.2/453.3, respectively.
+      It reports appearance between 24-48 h, maxima at 48-62 h and subsequent signal
+      loss; the wild type also showed these peaks at two days. IP1 was isolated (5
+      mg from 15 L; a recovered isolation yield, not calibrated biosynthetic titer)
+      and historically assigned formula C18H22N2O5 and an ortho-quinone from HRMS
+      and 1D/2D NMR. IP2 NMR was inconclusive and IP4 was not isolated. The authors
+      infer a separate metabolite origin, not a polyketomycin shunt; no PokO4-to-IP1
+      synthesis edge is supported. The historical structural assignment is not adopted
+      as a settled identity or silently mapped to later named foxicins.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.1.2.4 and 3.1.3 pp. 23-31; Table 3.2, Fig. 3.6/Table 3.3;
+        discussion 4.1.2 pp. 75-77. Primary chromatograms and structure table viewed.
+  - subject: rescue
+    predicate: introduces_gene_encoding
+    object: poko4
+    notes: Results call the construct pSET-pokOIV; Table 5.19 and methods call it
+      pSET-pok29. The reported route transfers an approximately 3-kb BamHI fragment
+      from pLit-pok29/28 through pUWL-pok29, then ClaI/XbaI into integrative pSET-1cerm
+      with ermE-up. pUWL-based complementation was abandoned because thiostrepton
+      selection was unreliable, not because a controlled assay proved PokO4 inactive.
+      Final exconjugants were selected with apramycin and checked by colony PCR. Native
+      BamHI cut coordinates 47235/50270 delimit a 3035-bp candidate fragment including
+      full pokO4; this is curator reconstruction, not a deposited complete integrated
+      plasmid.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.2.5 p. 25; Table 5.19 p. 111; construction 5.6.5.4 p. 129.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator restriction audit of FJ483966.1 maps the reported approximately
+        3-kb BamHI fragment; no internal ClaI, XbaI or PvuI sites occur within it.
+  - subject: rescue
+    predicate: is_inferred_to_carry_gene_encoding
+    object: poks7
+    notes: The reconstructed 3035-bp BamHI fragment also includes the complete pokS7
+      CDS at 48823..49437 (615 bp) and 836 bp of downstream pokS9, not a full PokS9
+      coding sequence. No internal ClaI/XbaI/PvuI site in that native span supports
+      removing pokS7 during the described transfer. This bounds the rescue as inferred
+      co-carriage, not verified expression or biochemical activity of PokS7. The native
+      204-aa PokS7 accession is grounded independently; the thesis describes a putative
+      sugar epimerase, while the native annotation calls it putative NDP-hexose 3,5-epimerase.
+      Neither label establishes an assayed substrate or individual role in restoring
+      production. No exact full rescue-plasmid sequence is asserted.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: CURATOR_INFERENCE
+      notes: Construction 5.6.5.4 p. 129 and neighborhood discussion 4.1.2 p. 73;
+        co-carriage is curator inference from the described restriction fragment,
+        not an individually tested PokS7 result.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator native CDS/restriction comparison: full PokO4/PokS7 and partial
+        PokS9 on the candidate fragment. PokS7 sequence agrees exactly across GenBank,
+        MIBiG, GenPept and UniProt.'
+    - reference: https://www.uniprot.org/uniprotkb/C0JWD5
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed native PokS7, 204 aa, taxon 42236, EMBL FJ483966/ACN64855.1;
+        inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACN64855.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PokS7, positive-strand FJ483966.1:48823..49437; putative NDP-hexose
+        3,5-epimerase annotation.
+  - subject: rescue
+    predicate: restores_reported_production
+    object: restored
+    notes: All ten tested exconjugants again showed a peak with the polyketomycin
+      UV/MS properties. The result establishes detectable restoration, not quantified
+      wild-type yield. The thesis interprets rescue as assigning loss solely to pokOIV;
+      the inferred full pokS7 co-carriage and proposed pokO4/pokS7/pokS9 operon prevent
+      treating this as proof that all neighboring-gene or polar effects were excluded.
+      No matched empty-pSET-1cerm production result is given in the inspected rescue
+      section; generic conjugation controls are not a production rescue control. The
+      section calls the restored 27.2-min peak HPLC, but Table 3.2 assigns 27.20 min
+      to LC/MS and 24.38 min to analytical HPLC; retention methods are not conflated.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.1.2.5 p. 25; compare Table 3.2 p. 24, conjugation controls
+        p. 117, construction p. 129 and possible operon p. 73.
+  - subject: poko4
+    predicate: has_genetically_inferred_biosynthetic_role
+    object: biosynthetic_role
+    notes: The verified internal deletion, loss of detected product and fragment-based
+      rescue implicate the pokO4 region in native polyketomycin production. They do
+      not independently resolve PokO4 catalytic chemistry from expression-context
+      or neighboring-gene effects. Native accession identity is exact, while the role
+      remains a bounded genetic inference. The unchanged owner stereochemistry is
+      not resolved by these experiments.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: CURATOR_INFERENCE
+      notes: Inference from section 3.1.2 pp. 20-25 and discussion 4.1.2 pp. 73-77,
+        qualified by the rescue-fragment reconstruction.
+  - subject: poko4
+    predicate: has_hypothesized_assembly_role
+    object: early_role
+    notes: Because no polyketomycin-like intermediate was detected, the thesis proposes
+      an early contribution during chain construction or cyclization, possibly affecting
+      minimal-PKS organization or chain length. No direct PokO4-PKS binding, physical
+      complex, stoichiometry or purified reconstitution was measured in the inspected
+      work. OxyS/OtcC analogy is not a substitute for a native PokO4 experiment. The
+      absence of a detected shunt alone cannot locate the blocked step, especially
+      with the unresolved rescue co-carriage and possible polar effects.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion 4.1.2 p. 77 and summary 4.1.5 pp. 85-86; proposed interpretation
+        of negative metabolite detection, not direct assembly evidence.
+  - subject: poko4
+    predicate: has_speculative_reaction_role
+    object: chain_cleavage
+    notes: The thesis compares PokO4 with FAD-dependent oxygenases and Baeyer-Villiger
+      monooxygenases, but does not demonstrate a PokO4 oxidation. Its final proposal
+      is an early oxidative chain-cleavage contribution to decaketide length, not
+      the late tetracycle ring opening catalyzed by MtmOIV in another pathway. Earlier
+      discussion also considers hydroxylation; the source does not supply a defined
+      native substrate or product to decide between models. Table 4.1 motif strings
+      match native PokO4, but its first printed 4-17 interval actually spans residues
+      4-18; the second 150-166 interval matches. Motif similarity is not an enzyme
+      assay, and no Rhea reaction or catalyzes edge is assigned.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: CURATOR_INFERENCE
+      notes: Sections 3.1.2.1 p. 20 and 4.1.2 pp. 73-77, Table 4.1 p. 74; hypotheses
+        are retained as such.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator comparison of the two printed Table 4.1 strings to the verified
+        native sequence; first endpoint differs by one residue.
+  - subject: deletion
+    predicate: has_later_reported_metabolite_profile
+    object: foxicin_profile
+    notes: Greule et al. report foxicins A-D in the pokOIV mutant and lower production
+      in wild type. Their mutant maximum is six days, versus the thesis early IP peaks;
+      analyte identities and culture contexts are not assumed equivalent. Figure 2A
+      uses 430 nm for wild type and 320 nm for mutant, so peak heights are not comparable
+      titers. Six-day HA cultures followed a 48-h preculture at 28 C/180 rpm. Foxicin
+      A is assigned a para-quinone by NMR/IR/VCD, and the separate fox cluster is
+      tested genetically. No one-to-one IP1/IP2/IP4-to-foxicin mapping or PokO4 biosynthetic
+      reaction on these compounds is asserted.
+    evidence:
+    - reference: DOI:10.3389/fmicb.2017.00221
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods p. 3; results pp. 5-6, Figs. 2-4 visually inspected. Later observations
+        remain separate from the thesis.
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Historical IP1/IP2/IP4 assignments and time course, sections 3.1.2.4/3.1.3
+        pp. 23-31 and discussion pp. 75-77.
+  - subject: deletion
+    predicate: has_reported_morphological_phenotype
+    object: morphology
+    notes: The later paper reports fewer spores and reduced dark pigmentation in the
+      pokOIV mutant. Figure 2C supports the visible phenotype, not a quantified melanin
+      assay, a direct PokO4 regulatory function or proof that polyketomycin alone
+      causes differentiation. No complemented morphology control is shown there.
+    evidence:
+    - reference: DOI:10.3389/fmicb.2017.00221
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results p. 5 and Fig. 2C; phenotype, not causal isolation of differentiation.
+      snippet: The mutant also produces fewer spores
+curation_history:
+- timestamp: '2026-10-04T06:07:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added native PokO4 C0JWD4 and inferred co-carried PokS7 C0JWD5 in a primary-cited
+    genetics graph. Preserved #531 rescue, historical metabolite, later foxicin, allele
+    and hypothesis limits; no individual PokS7 function or purified PokO4 reaction
+    is claimed.'
+  llm_assisted: true

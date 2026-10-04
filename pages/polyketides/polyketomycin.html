@@ -400,6 +400,89 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 11 edges</span></h2>
+<p class="sub">Native Tu6028 PokO4 deletion and rescue implicate the locus in polyketomycin production, without establishing purified enzyme chemistry. The rescue fragment is inferred to carry native PokS7 as well as PokO4; PokS7 has no individually assigned activity here. Historical IP1/IP2/IP4 signals, later foxicin observations and early-PKS hypotheses remain distinct. Source-review issue #531 preserves construct, time-course, structure and numbering limits. The owner remains at its original unresolved stereochemical resolution.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Tu6028 pokO4 internal deletion, clone 87</td>
+  <td>targets_gene_encoding</td>
+  <td>Native PokO4 parent</td>
+  <td>pKC-pok29del was made by Red/ET replacement of most pokOIV with an apramycin/oriT cassette, followed by NheI/SpeI cassette excision and transfer into pKC1132. The source calls this an approximately 95% deletion, not loss of the entire CDS. After six selection-free passages, 6% of 176 clones were apramycin-sensitive; sensitivity alone did not distinguish a mutant from a reverted wild type. Clone 87 was confirmed by PCR and Southern analysis. The construction plasmid was reportedly sequence-checked, but no deposited complete mutant genome or protein sequence is asserted. Methods 5.6.5.2 initially say pokOI next to pokOIV, whereas its heading, primers and maps identify the neighboring target as pokOII. The exact native PokO4 identity does not depend on that inconsistent label.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/5426<br>https://www.uniprot.org/uniprotkb/C0JWD4<br>https://www.ncbi.nlm.nih.gov/protein/ACN64854.1<br>https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1</td>
+</tr>
+<tr>
+  <td>Tu6028 pokO4 internal deletion, clone 87</td>
+  <td>has_reported_production_phenotype</td>
+  <td>No detected polyketomycin in the tested mutant culture</td>
+  <td>Matched wild-type and mutant six-day HA cultures were extracted and examined by LC/APCI-MS (POK_APCI_1.m) and HPLC (IP_Polyketo_0607_Meth). General cultivation was 28 C and 180 rpm; HA contains 4 g/L yeast extract, 10 g/L malt extract and 4 g/L glucose at initial pH 7.3. The wild-type polyketomycin peak was at 27.20 min by LC/MS, with [M-H]- m/z 863.3; the mutant lacked it. Figure 3.4 shows 254-nm traces. This is no detected production under those conditions, not an exact zero titer, a stated detection limit or universal essentiality. PCR gave the expected 1786-bp intact and 355-bp deleted amplicons, with plasmid/single-crossover controls; wild-type mycelial PCR sometimes failed. One Fig. 3.2 caption sentence says 335 bp instead of 355 bp. The SacI Southern with a 479-bp pokS7 probe showed 2035-bp wild-type versus 5012-bp mutant fragments. Curator reconstruction from six primary primers and the native locus predicts a 1431-bp net deletion and 355-bp PCR product, consistent with the main result but not an observed mutant sequence.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/5426<br>https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1</td>
+</tr>
+<tr>
+  <td>Tu6028 pokO4 internal deletion, clone 87</td>
+  <td>has_reported_metabolite_profile</td>
+  <td>Historical mutant extract signals IP1, IP2 and IP4</td>
+  <td>The thesis labels three extract peaks IP1, IP2 and IP4: LC/MS retention times 21.96/23.16/29.48 min with [M-H]- m/z 345.2/345.2/453.3, respectively. It reports appearance between 24-48 h, maxima at 48-62 h and subsequent signal loss; the wild type also showed these peaks at two days. IP1 was isolated (5 mg from 15 L; a recovered isolation yield, not calibrated biosynthetic titer) and historically assigned formula C18H22N2O5 and an ortho-quinone from HRMS and 1D/2D NMR. IP2 NMR was inconclusive and IP4 was not isolated. The authors infer a separate metabolite origin, not a polyketomycin shunt; no PokO4-to-IP1 synthesis edge is supported. The historical structural assignment is not adopted as a settled identity or silently mapped to later named foxicins.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/5426</td>
+</tr>
+<tr>
+  <td>Tu6028 pokO4 mutant with pSET-pokOIV/pSET-pok29</td>
+  <td>introduces_gene_encoding</td>
+  <td>Native PokO4 parent</td>
+  <td>Results call the construct pSET-pokOIV; Table 5.19 and methods call it pSET-pok29. The reported route transfers an approximately 3-kb BamHI fragment from pLit-pok29/28 through pUWL-pok29, then ClaI/XbaI into integrative pSET-1cerm with ermE-up. pUWL-based complementation was abandoned because thiostrepton selection was unreliable, not because a controlled assay proved PokO4 inactive. Final exconjugants were selected with apramycin and checked by colony PCR. Native BamHI cut coordinates 47235/50270 delimit a 3035-bp candidate fragment including full pokO4; this is curator reconstruction, not a deposited complete integrated plasmid.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/5426<br>https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1</td>
+</tr>
+<tr>
+  <td>Tu6028 pokO4 mutant with pSET-pokOIV/pSET-pok29</td>
+  <td>is_inferred_to_carry_gene_encoding</td>
+  <td>Native PokS7 parent, rescue co-carriage inferred</td>
+  <td>The reconstructed 3035-bp BamHI fragment also includes the complete pokS7 CDS at 48823..49437 (615 bp) and 836 bp of downstream pokS9, not a full PokS9 coding sequence. No internal ClaI/XbaI/PvuI site in that native span supports removing pokS7 during the described transfer. This bounds the rescue as inferred co-carriage, not verified expression or biochemical activity of PokS7. The native 204-aa PokS7 accession is grounded independently; the thesis describes a putative sugar epimerase, while the native annotation calls it putative NDP-hexose 3,5-epimerase. Neither label establishes an assayed substrate or individual role in restoring production. No exact full rescue-plasmid sequence is asserted.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/5426<br>https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1<br>https://www.uniprot.org/uniprotkb/C0JWD5<br>https://www.ncbi.nlm.nih.gov/protein/ACN64855.1</td>
+</tr>
+<tr>
+  <td>Tu6028 pokO4 mutant with pSET-pokOIV/pSET-pok29</td>
+  <td>restores_reported_production</td>
+  <td>Restored detectable polyketomycin in ten rescue clones</td>
+  <td>All ten tested exconjugants again showed a peak with the polyketomycin UV/MS properties. The result establishes detectable restoration, not quantified wild-type yield. The thesis interprets rescue as assigning loss solely to pokOIV; the inferred full pokS7 co-carriage and proposed pokO4/pokS7/pokS9 operon prevent treating this as proof that all neighboring-gene or polar effects were excluded. No matched empty-pSET-1cerm production result is given in the inspected rescue section; generic conjugation controls are not a production rescue control. The section calls the restored 27.2-min peak HPLC, but Table 3.2 assigns 27.20 min to LC/MS and 24.38 min to analytical HPLC; retention methods are not conflated.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/5426</td>
+</tr>
+<tr>
+  <td>Native PokO4 parent</td>
+  <td>has_genetically_inferred_biosynthetic_role</td>
+  <td>Genetically inferred contribution to polyketomycin production</td>
+  <td>The verified internal deletion, loss of detected product and fragment-based rescue implicate the pokO4 region in native polyketomycin production. They do not independently resolve PokO4 catalytic chemistry from expression-context or neighboring-gene effects. Native accession identity is exact, while the role remains a bounded genetic inference. The unchanged owner stereochemistry is not resolved by these experiments.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/5426</td>
+</tr>
+<tr>
+  <td>Native PokO4 parent</td>
+  <td>has_hypothesized_assembly_role</td>
+  <td>Hypothesized early polyketide assembly contribution</td>
+  <td>Because no polyketomycin-like intermediate was detected, the thesis proposes an early contribution during chain construction or cyclization, possibly affecting minimal-PKS organization or chain length. No direct PokO4-PKS binding, physical complex, stoichiometry or purified reconstitution was measured in the inspected work. OxyS/OtcC analogy is not a substitute for a native PokO4 experiment. The absence of a detected shunt alone cannot locate the blocked step, especially with the unresolved rescue co-carriage and possible polar effects.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/5426</td>
+</tr>
+<tr>
+  <td>Native PokO4 parent</td>
+  <td>has_speculative_reaction_role</td>
+  <td>Speculative early Baeyer-Villiger chain-length control</td>
+  <td>The thesis compares PokO4 with FAD-dependent oxygenases and Baeyer-Villiger monooxygenases, but does not demonstrate a PokO4 oxidation. Its final proposal is an early oxidative chain-cleavage contribution to decaketide length, not the late tetracycle ring opening catalyzed by MtmOIV in another pathway. Earlier discussion also considers hydroxylation; the source does not supply a defined native substrate or product to decide between models. Table 4.1 motif strings match native PokO4, but its first printed 4-17 interval actually spans residues 4-18; the second 150-166 interval matches. Motif similarity is not an enzyme assay, and no Rhea reaction or catalyzes edge is assigned.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/5426<br>https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1</td>
+</tr>
+<tr>
+  <td>Tu6028 pokO4 internal deletion, clone 87</td>
+  <td>has_later_reported_metabolite_profile</td>
+  <td>Later foxicin profile of the pokOIV mutant</td>
+  <td>Greule et al. report foxicins A-D in the pokOIV mutant and lower production in wild type. Their mutant maximum is six days, versus the thesis early IP peaks; analyte identities and culture contexts are not assumed equivalent. Figure 2A uses 430 nm for wild type and 320 nm for mutant, so peak heights are not comparable titers. Six-day HA cultures followed a 48-h preculture at 28 C/180 rpm. Foxicin A is assigned a para-quinone by NMR/IR/VCD, and the separate fox cluster is tested genetically. No one-to-one IP1/IP2/IP4-to-foxicin mapping or PokO4 biosynthetic reaction on these compounds is asserted.</td>
+  <td class="mono">DOI:10.3389/fmicb.2017.00221<br>https://freidok.uni-freiburg.de/data/5426</td>
+</tr>
+<tr>
+  <td>Tu6028 pokO4 internal deletion, clone 87</td>
+  <td>has_reported_morphological_phenotype</td>
+  <td>Reported reduction in spores and melanin-like pigmentation</td>
+  <td>The later paper reports fewer spores and reduced dark pigmentation in the pokOIV mutant. Figure 2C supports the visible phenotype, not a quantified melanin assay, a direct PokO4 regulatory function or proof that polyketomycin alone causes differentiation. No complemented morphology control is shown there.</td>
+  <td class="mono">DOI:10.3389/fmicb.2017.00221</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
