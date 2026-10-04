@@ -788,6 +788,8 @@ causal_graph_refs:
 - simocyclinone-d8-simr-dna-length-and-proteolysis
 - simocyclinone-d8-simr-structural-contacts-and-states
 - simocyclinone-d8-simx-simex2-resistance-and-export
+- simocyclinone-d8-simc7-heterologous-genetics
+- simocyclinone-d8-simc7-ketoreduction-and-assay-limits
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -828,4 +830,13 @@ curation_history:
     Q93FA2 and G9VYV7 sequences, unresolved assayed SimX allele, bounded resistance
     phenotypes and inferred export. Preserved review #537 limits, all six existing
     graphs, source fields, shared-structure discussion and SEEDED status.'
+  llm_assisted: true
+- timestamp: '2026-10-04T10:00:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added two primary-backed SimC7 graphs: heterologous scar genetics and
+    complementation, plus purified tagged-protein reduction/oxidation. Grounded native
+    G9VYV4 without conflating the engineered protein; retained review #538 construct,
+    promoter, concentration, yield and physiological-substrate limits. Preserved all
+    seven older graphs, source fields, history and SEEDED status.'
   llm_assisted: true

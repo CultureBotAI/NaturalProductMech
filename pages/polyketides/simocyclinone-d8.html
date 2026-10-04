@@ -872,6 +872,291 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">16 nodes, 23 edges</span></h2>
+<p class="sub">SimC7 deletion and complementation in the heterologous sim cluster, including the engineered SimX-expressing host background and chemical assignment of 7-oxo-SD8. Native sequence identity, intended alleles, source-reported rescue and conflicting construct/yield descriptions remain distinct (review #538). The 2015 main article and relevant primary thesis sections were inspected; the journal supplementary file was not obtained. Neither native-producer deletion nor complete owner stereochemistry is established by these experiments.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native simC7 locus</td>
+  <td>encodes</td>
+  <td>Deposited native SimC7 ketoreductase</td>
+  <td>This node denotes the deposited native protein. The scar mutant, tagged enzyme and complementation plasmids are separate entities; none is assigned the native accession as an exact engineered-sequence identifier.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/protein/AEU17892.1<br>https://www.uniprot.org/uniprotkb/G9VYV4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2</td>
+</tr>
+<tr>
+  <td>PAC-12I containing the sim biosynthetic cluster</td>
+  <td>contains</td>
+  <td>Native simC7 locus</td>
+  <td>The paper reports PAC-12I with a roughly 95-kb insert containing the approximately 72-kb, 49-gene cluster and about 19-kb/4-kb flanks. Thesis Table 2.4 instead describes an 85-kb BamHI genomic fragment; the whole insert and restriction fragment are not assumed identical measurements. PAC sequencing was reported, but a complete public experimental insert was not independently compared base-for-base here.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>PAC-12I delta-simC7 scar construct</td>
+  <td>is_derived_from</td>
+  <td>PAC-12I containing the sim biosynthetic cluster</td>
+  <td>PCR targeting in E. coli used lambda RED and an apramycin cassette amplified from pIJ773_del_oriT; FLP excision removed the marker and reportedly left an 81-bp in-frame scar. PCR and EcoRI digestion verified the construct. This is not a scarless deletion, the earlier native simX::apr allele, or a sequenced final junction.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>PAC-12I delta-simC7 scar construct</td>
+  <td>disrupts</td>
+  <td>Native simC7 locus</td>
+  <td>Literal 39-nt deletion arms map to AF324838.2:9308..9346(+) and 10196..10234(-), retaining native ATG/TAG and replacing the intervening 849 bp. An 81-bp scar would give an 87-bp start-to-stop allele. Check primers span 9192..10350, predicting 1159 bp natively versus 391 bp for that scar model. These are curator reconstructions, not measured mutant sequence or observed gel sizes; possible local regulatory effects are not excluded by calling the scar in-frame.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/61276/<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2</td>
+</tr>
+<tr>
+  <td>S. coelicolor M1152ex1 SimX-expressing host</td>
+  <td>carries</td>
+  <td>pIJ10480 ermEp*-simEx1 expression construct</td>
+  <td>M1152ex1 was created by introducing the integrative pIJ10480 construct into S. coelicolor M1152. All subsequent SimC7 cluster experiments use this engineered background; the native producer S. antibioticus Tu6040 was not deleted in this study.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>pIJ10480 ermEp*-simEx1 expression construct</td>
+  <td>is_reported_to_express</td>
+  <td>Assayed SimX / SimEx1 protein, allele unresolved</td>
+  <td>The construct drives simEx1/SimX from ermEp*. This experiment does not resolve the native Ala/Gly126 SimX ambiguity documented in the existing resistance graph (review #537), nor does enhanced resistance directly measure transport flux.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>S. coelicolor M1152ex1 SimX-expressing host</td>
+  <td>has_reported_resistance_relative_to</td>
+  <td>S. coelicolor M1152 heterologous host</td>
+  <td>Reported SD8 MIC changes from 1 to 100 ug/mL after introduction of pIJ10480. This is the M1152 comparison, not the earlier S. lividans 2-to-65 ug/mL result. The thesis specifies 200-uL 96-well SMMS assays, 1e5 spores per well, 30 C for six days and a growth-inhibition endpoint; no flux, energy coupling or quantitative MIC uncertainty is measured here.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>M1152ex1 carrying intact PAC-12I</td>
+  <td>has_engineered_host_background</td>
+  <td>S. coelicolor M1152ex1 SimX-expressing host</td>
+  <td>This experimental strain retains the SimX-expressing M1152ex1 background. The genomic source of the PAC is native Tu6040, but its assay host is S. coelicolor.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>M1152ex1 carrying intact PAC-12I</td>
+  <td>carries</td>
+  <td>PAC-12I containing the sim biosynthetic cluster</td>
+  <td>The indicated PAC was mobilized into the heterologous host; the intact-cluster and scar-mutant strains are compared without conflating their construct identities.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>M1152ex1 carrying PAC-12I delta-simC7</td>
+  <td>has_engineered_host_background</td>
+  <td>S. coelicolor M1152ex1 SimX-expressing host</td>
+  <td>This experimental strain retains the SimX-expressing M1152ex1 background. The genomic source of the PAC is native Tu6040, but its assay host is S. coelicolor.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>M1152ex1 carrying PAC-12I delta-simC7</td>
+  <td>carries</td>
+  <td>PAC-12I delta-simC7 scar construct</td>
+  <td>The indicated PAC was mobilized into the heterologous host; the intact-cluster and scar-mutant strains are compared without conflating their construct identities.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>M1152ex1 carrying intact PAC-12I</td>
+  <td>produces</td>
+  <td>Source-assigned simocyclinone D8</td>
+  <td>Culture extracts match source-assigned SD8 by LC-MS-UV, against an isolated standard. Production conditions were six days at 30 C and 250 rpm in defined medium with glutamine 5.84 g/L and glycerol 20 mL/L. The article reports 24-56 mg/L versus 9-14 mg/L for native Tu6040. Thesis p.115 instead prints 24-56 mg/mL, while Figure 3.3 uses an mg/L axis; the conflict is preserved, not silently corrected. That thesis growth curve also used 1e8 spores for the cluster strain versus 1e7 for host-only controls. It is not an equal-inoculum growth-rate experiment. Figure 3.2 qualitatively shows partial alleviation of cluster-associated growth/sporulation impairment by SimX on SFM agar after nine days at 30 C.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>S. coelicolor M1152ex1 SimX-expressing host</td>
+  <td>has_no_detected_production_of</td>
+  <td>Source-assigned simocyclinone D8</td>
+  <td>The M1152ex1 control without the sim cluster produced no detected simocyclinones under the reported production conditions. This is a negative assay control, not proof of absence under every culture condition or a numerical zero yield.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>M1152ex1 carrying PAC-12I delta-simC7</td>
+  <td>produces</td>
+  <td>Source-assigned 7-oxo-simocyclinone D8</td>
+  <td>The principal mutant product is assigned as 7-oxo-SD8, not failure of all simocyclinone synthesis. Figure 2 compares mutant, intact-cluster and SD8-standard extracts after six days; their displayed retention times are 20.65, 19.53 and 19.48 min. Approximately 63 mg was purified from 4 L with reported &gt;98% purity and 27% recovery. Retention time alone is not the structural proof: HRMS, fragmentation and NMR supply the assignment.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>Source-assigned 7-oxo-simocyclinone D8</td>
+  <td>has_source_assigned_structural_difference_from</td>
+  <td>Source-assigned simocyclinone D8</td>
+  <td>The reported difference is a C-7 carbonyl instead of the C-7 hydroxyl on the angucyclinone, with the tetraene linker retained. Two-Da lower parent mass, polyketide-localized MS/MS differences, missing H-7, shifted H-6, and carbonyl/HMBC NMR evidence support this assignment. These source-assigned assay compounds are distinct from MGD8N2A and other congeners. No uninspected complete chemical identifier is invented; the owner retains six unspecified stereocentres and its open shared-MIBiG discussion remain unresolved.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>Delta-simC7 host carrying pGM1190-NB-C7</td>
+  <td>is_complemented_derivative_of</td>
+  <td>M1152ex1 carrying PAC-12I delta-simC7</td>
+  <td>Complementation was performed in the M1152ex1/PAC-12I delta-simC7 background, not in native Tu6040. The genotype is not silently replaced by the intact-PAC control.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>Delta-simC7 host carrying pGM1190-NB-C7</td>
+  <td>carries</td>
+  <td>pGM1190-NB-C7, promoter description disputed</td>
+  <td>The named pGM1190 derivative provides an in-trans simC7 copy. The source does not establish equal expression, copy number or promoter activity between the rescue constructs.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>Delta-simC7 host carrying pGM1190-pB7-NB-C7</td>
+  <td>is_complemented_derivative_of</td>
+  <td>M1152ex1 carrying PAC-12I delta-simC7</td>
+  <td>Complementation was performed in the M1152ex1/PAC-12I delta-simC7 background, not in native Tu6040. The genotype is not silently replaced by the intact-PAC control.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>Delta-simC7 host carrying pGM1190-pB7-NB-C7</td>
+  <td>carries</td>
+  <td>pGM1190-pB7-NB-C7 complementation construct</td>
+  <td>The named pGM1190 derivative provides an in-trans simC7 copy. The source does not establish equal expression, copy number or promoter activity between the rescue constructs.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>pGM1190-NB-C7, promoter description disputed</td>
+  <td>provides_reported_intact_copy_of</td>
+  <td>Native simC7 locus</td>
+  <td>Methods p.85, Table 2.4 and Figure 4.16 describe pGM1190-NB-C7 as ptipA::simC7. Results p.146 instead explain its low yield by a missing promoter. This unresolved source conflict is not repaired or used to assign a demonstrated promoter mechanism. The reverse-primer name/site discrepancy in Table 2.5 also prevents literal reconstruction of the final cloning junction from names alone.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>pGM1190-pB7-NB-C7 complementation construct</td>
+  <td>provides_reported_intact_copy_of</td>
+  <td>Native simC7 locus</td>
+  <td>The second rescue fuses simC7 to the approximately 400-bp region upstream of simB7 in pGM1190. Literal 20-nt promoter-primer arms map to 3812..3831(+) and 4189..4208(-), predicting a 397-bp native segment and 415-bp tailed PCR product. This reconstruction does not establish an experimental plasmid junction or directly map a promoter. The proposed simB7-to-simC7 seven-gene operon remains putative.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2</td>
+</tr>
+<tr>
+  <td>Delta-simC7 host carrying pGM1190-NB-C7</td>
+  <td>has_reported_low_production_of</td>
+  <td>Source-assigned simocyclinone D8</td>
+  <td>The thesis reports low SD8 yield from the first rescue and shows a source-assigned SD8 peak in Figure 4.16. The promoter explanation is disputed within the source. Panel-normalized intensity is not an absolute yield or a quantified fraction of wild-type rescue; a matched empty-rescue-vector comparison is not shown in this panel.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>Delta-simC7 host carrying pGM1190-pB7-NB-C7</td>
+  <td>restores_detectable_production_of</td>
+  <td>Source-assigned simocyclinone D8</td>
+  <td>The article reports complementation with the simB7-upstream fusion as data not shown. The thesis Figure 4.16 displays LC-MS-UV chromatograms at 200-700 nm after six days at 30 C and reports HRMS confirmation without displaying those spectra. The normalized traces and SD8/7-oxo standards support product rescue, not an absolute wild-type-equivalent yield or exclusion of all polar effects.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 16 edges</span></h2>
+<p class="sub">Purified N-terminally His-tagged SimC7 converts source-assigned 7-oxo-SD8 to SD8 with NADH or NADPH and supports the slower reverse reaction with NAD+. Controls, construct discrepancies and concentration conflicts remain explicit (review #538). The earlier physiological substrate is a hypothesis, so no terminal in-vivo pathway order or kinetic constants are invented. This graph does not duplicate gyrase-target bioactivity mechanisms.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Reported pET15b-NB-C7 expression construct</td>
+  <td>is_reported_to_express</td>
+  <td>Assayed N-terminally His-tagged SimC7</td>
+  <td>The article describes PCR from PAC-12I, pJET1.2/blunt cloning, NdeI/BamHI subcloning into pET15b and sequencing for errors. Protein was expressed in E. coli Rosetta (DE3)pLysS at 25 C, induced near OD600 0.4 with 0.5 mM IPTG for 16 h, purified on Ni-NTA and quantified by Bradford assay. The thesis also describes later altered temperature/salt protocols; those are not substituted for the 2015 method. Table 2.4 p.53 labels the pET15b insert ptipA::simC7 despite its parent-vector T7 description; retain the discrepancy.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>Assayed N-terminally His-tagged SimC7</td>
+  <td>has_native_parent_sequence</td>
+  <td>Deposited native SimC7 ketoreductase</td>
+  <td>The intended recombinant product adds MGSSHHHHHHSSGLVPRGSH at the N terminus (304 aa total), without claiming tag removal. Native CDS translation agrees with G9VYV4. Both printed reverse primers share the native stop-region suffix and predict the full 855-nt CDS and 870-bp tailed amplicon with the NdeI forward primer. However, the primer named simC7-HindIII-R contains GGATCC, while simC7-BamHI-R contains AGGCTT and neither a BamHI nor HindIII site. The paper reports sequence checking, but its complete plasmid sequence was not inspected here; literal primer names do not prove the final junction or expressed sequence.</td>
+  <td class="mono">https://ueaeprints.uea.ac.uk/id/eprint/61276/<br>DOI:10.1016/j.jmb.2015.03.019<br>https://www.ncbi.nlm.nih.gov/protein/AEU17892.1<br>https://www.uniprot.org/uniprotkb/G9VYV4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2</td>
+</tr>
+<tr>
+  <td>Assayed N-terminally His-tagged SimC7</td>
+  <td>catalyzes</td>
+  <td>Assayed C-7 ketoreduction</td>
+  <td>Purified tagged SimC7 converts 7-oxo-SD8 to SD8 in the Figure 6b assay. Main methods report 25-200 uM substrate, 0.3 mM NAD(P)H, 50 mM HEPES pH 7.2 and 500 nM enzyme; Figure 6 incubates for one hour at room temperature. The thesis Figure 4.17 specifies 100 uM substrate and 250 uL reactions. Thesis p.99 also equates 500 nM with 24.18 ug/mL, inconsistent with its reported 32,235-Da tagged mass (500 nM implies about 16.12 ug/mL). Neither concentration is silently corrected or used to calculate catalytic efficiency. This direct enzyme experiment, not the knockout alone, establishes ketoreduction.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>Assayed C-7 ketoreduction</td>
+  <td>uses_substrate</td>
+  <td>Source-assigned 7-oxo-simocyclinone D8</td>
+  <td>Purified, source-assigned 7-oxo-SD8 is the tested substrate. Its use does not establish that complete 7-oxo-SD8 is the physiological substrate or that SimC7 acts after attachment of every other SD8 moiety.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>Assayed C-7 ketoreduction</td>
+  <td>forms_product</td>
+  <td>Source-assigned simocyclinone D8</td>
+  <td>Product is assigned as SD8 by HPLC against a standard, with tandem-MS confirmation reported. Equal-volume methanol quenching, 100 C for ten minutes and centrifugation stop the assay. Main quantification uses reversed-phase HPLC at 360 nm, 25-95% methanol over 20 min then five minutes at 95%, against 0.1% formic acid in water; standards span 7.5-2100 pmol. The journal supplemental standard curve was not inspected. Thesis methods report duplicate sample analyses and triplicate standards, not a reported number of independent biological enzyme preparations.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>NADH in the reduction assay</td>
+  <td>supports</td>
+  <td>Assayed C-7 ketoreduction</td>
+  <td>Figure 6b shows SD8 product with SimC7 and this reduced cofactor; the main method reports 0.3 mM NAD(P)H. This establishes activity under the assayed conditions, not an in-vivo cofactor preference or measured Km.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>NADPH in the reduction assay</td>
+  <td>supports</td>
+  <td>Assayed C-7 ketoreduction</td>
+  <td>Figure 6b shows SD8 product with SimC7 and this reduced cofactor; the main method reports 0.3 mM NAD(P)H. This establishes activity under the assayed conditions, not an in-vivo cofactor preference or measured Km.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>NADH/NADPH reduction controls without SimC7</td>
+  <td>provides_omission_controls_for</td>
+  <td>Assayed C-7 ketoreduction</td>
+  <td>Separate minus-SimC7 traces containing NADH or NADPH retain the 7-oxo-SD8 peak instead of the SD8 product peak. These are assay controls for the displayed conditions, not numerical upper bounds on spontaneous conversion.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>SimC7 reduction control without reduced cofactor</td>
+  <td>provides_omission_control_for</td>
+  <td>Assayed C-7 ketoreduction</td>
+  <td>The plus-SimC7/minus-NAD(P)H trace retains 7-oxo-SD8. It constrains the cofactor requirement in this assay without establishing all possible electron donors or excluding every trace side reaction.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>Assayed N-terminally His-tagged SimC7</td>
+  <td>catalyzes</td>
+  <td>Assayed reverse C-7 oxidation</td>
+  <td>The reverse experiment converts some SD8 to 7-oxo-SD8 and is reported as much slower. Residual SD8 is visible in Figure 6c. This is not an equilibrium constant, a quantitative rate comparison or evidence that reverse oxidation is the physiological direction.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>Assayed reverse C-7 oxidation</td>
+  <td>uses_substrate</td>
+  <td>Source-assigned simocyclinone D8</td>
+  <td>In the reverse experiment the input is SD8, despite the general method and thesis Figure 4.17 caption describing 7-oxo-SD8 as substrate. The panel and results define the reversed substrate/product direction.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>Assayed reverse C-7 oxidation</td>
+  <td>forms_product</td>
+  <td>Source-assigned 7-oxo-simocyclinone D8</td>
+  <td>The new reverse-reaction peak is assigned as 7-oxo-SD8; tandem-MS confirmation is reported. This does not revise the owner structure or merge 7-oxo-SD8 into the SD8 record as an equivalent compound.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>NAD+ in the reverse assay</td>
+  <td>supports</td>
+  <td>Assayed reverse C-7 oxidation</td>
+  <td>The displayed and described reverse assay uses 300 mM NAD+. The scheme and caption say NAD(P)+, but direct reverse activity with NADP+ is not demonstrated in the inspected panel. The very high oxidized-cofactor concentration must not be relabelled 0.3 mM or physiological.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>NAD+ oxidation control without SimC7</td>
+  <td>provides_omission_control_for</td>
+  <td>Assayed reverse C-7 oxidation</td>
+  <td>The minus-SimC7/plus-NAD+ trace retains the SD8 peak without the displayed 7-oxo-SD8 product peak. This is the relevant reverse-assay control, distinct from the NADH/NADPH reduction controls.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+<tr>
+  <td>Assayed N-terminally His-tagged SimC7</td>
+  <td>has_text_reported_assay_phenotype</td>
+  <td>Text-reported NADPH preference without kinetic constants</td>
+  <td>Both sources report NADPH preference but mark the comparison data not shown. The thesis says conversion was nearly complete by 30 seconds and attempts at lower enzyme concentration did not yield sufficient kinetic data; below 10 nM the reaction was too slow. Do not derive kcat, Km, cofactor specificity ratios or a quantitative initial rate from endpoint chromatograms or the unshown comparison. Absorbance overlap prevented a simple NAD(P)H spectrophotometric assay.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019<br>https://ueaeprints.uea.ac.uk/id/eprint/61276/</td>
+</tr>
+<tr>
+  <td>Deposited native SimC7 ketoreductase</td>
+  <td>has_proposed_physiological_substrate</td>
+  <td>Proposed earlier 7-oxo A-group angucyclinone substrate</td>
+  <td>The authors infer that SimC7 normally reduces an earlier angucyclinone intermediate, before glycosylation and attachment of the tetraene and aminocoumarin. Appropriate-mass A-group species in the mutant are supporting observations, not a purified assay of a fully resolved earlier substrate. The exact physiological substrate and pathway position are therefore not encoded as a demonstrated ordered step.</td>
+  <td class="mono">DOI:10.1016/j.jmb.2015.03.019</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
