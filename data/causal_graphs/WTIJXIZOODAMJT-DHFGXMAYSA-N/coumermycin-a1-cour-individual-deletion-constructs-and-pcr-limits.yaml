@@ -1,0 +1,458 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-cour-individual-deletion-constructs-and-pcr-limits
+  scope: BIOSYNTHESIS
+  description: 'Five individual heterologous deletion constructs with explicit coordinate
+    and PCR boundaries. Partial curation; author-agent review #571. Native sequences,
+    engineered samples, host-conditioned findings and hypotheses remain distinct;
+    source-owned fields and SEEDED status are unchanged.'
+  nodes:
+  - node_id: cosmid
+    label: Intact couMW16 cluster cosmid
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: S. coelicolor M1146 expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Deletion-coordinate and allele-verification limits
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: couR1
+    label: Native CouR1 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T7
+  - node_id: couAK06
+    label: couAK06 deletion construct
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: couAK06_pcr
+    label: couAK06 genotype PCR
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: couR2a
+    label: Native CouR2a sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G1XVC1
+  - node_id: couAK07
+    label: couAK07 deletion construct
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: couAK07_pcr
+    label: couAK07 genotype PCR
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: couR2b
+    label: Native CouR2b sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G1XVC2
+  - node_id: couAK08
+    label: couAK08 deletion construct
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: couAK08_pcr
+    label: couAK08 genotype PCR
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: couR3
+    label: Native CouR3 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T5
+  - node_id: couAK09
+    label: couAK09 deletion construct
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: couAK09_pcr
+    label: couAK09 genotype PCR
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: couR4
+    label: Native CouR4 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T4
+  - node_id: couAK10
+    label: couAK10 deletion construct
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: couAK10_pcr
+    label: couAK10 genotype PCR
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cosmid
+    predicate: was_integrated_in
+    object: host
+    notes: PhiC31 attP/int construct. M1146 is an M145 derivative lacking act/red/cda/cpk,
+      SCP1 and SCP2.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 40-42 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: cosmid
+    predicate: was_modified_to_make
+    object: couAK06
+    notes: Reported deletion of internal sequence of approximately half the gene;
+      RED/ET aac(3)IV cassette from pIJ773, removed by XbaI/SpeI and religation to
+      leave a 6-bp scar. Table II.9 gives unversioned AF235050 coordinates 21980-22753;
+      these are not current CDS coordinates. Original Knuplesch 2008 construct thesis
+      not obtained.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 40-41,49,68 (printed Arabic
+        page offset +18). Selected text and relevant page images inspected; not all
+        appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK06
+    predicate: targets_coding_locus_of
+    object: couR1
+    notes: Targets the named gene, not a sequenced full mutant-protein preparation.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 68 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T7
+      evidence_type: DATABASE_ASSERTION
+      notes: Native reference only.
+      retrieved_on: '2026-10-05'
+  - subject: couAK06
+    predicate: was_introduced_into
+    object: host
+    notes: Conjugation via E. coli ET12567/pUB307; 3 independent clones were reported.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 49-50,68 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK06
+    predicate: was_checked_by
+    object: couAK06_pcr
+    notes: 'Table II.11 literal kont_couR1_f / _r primers: CGGGTATGTGGACCACCCGG /
+      CGACCGGTCGTCAGGATCCG. They each match AF235050.4, bracketing a native 1570-bp
+      interval 22836..24405. Native amplicon geometry is not a measured mutant band
+      length or full allele sequence.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 42-43,50 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal forward/reverse-complement matching to the deposited native locus.
+      retrieved_on: '2026-10-05'
+  - subject: couAK06_pcr
+    predicate: has_verification_limit
+    object: limits
+    notes: PCR genotype checking does not rule out every polar effect or identify
+      a complete resequenced mutant allele.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 50,68 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: cosmid
+    predicate: was_modified_to_make
+    object: couAK07
+    notes: Reported deletion of internal sequence of approximately half the gene;
+      RED/ET aac(3)IV cassette from pIJ773, removed by XbaI/SpeI and religation to
+      leave a 6-bp scar. Table II.9 gives unversioned AF235050 coordinates 23206-23472;
+      these are not current CDS coordinates. Original Knuplesch 2008 construct thesis
+      not obtained.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 40-41,49,68 (printed Arabic
+        page offset +18). Selected text and relevant page images inspected; not all
+        appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK07
+    predicate: targets_coding_locus_of
+    object: couR2a
+    notes: Targets the named gene, not a sequenced full mutant-protein preparation.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 68 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/G1XVC1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native reference only.
+      retrieved_on: '2026-10-05'
+  - subject: couAK07
+    predicate: was_introduced_into
+    object: host
+    notes: Conjugation via E. coli ET12567/pUB307; 2 independent clones were reported.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 49-50,68 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK07
+    predicate: was_checked_by
+    object: couAK07_pcr
+    notes: 'Table II.11 literal kont_couR2a_f / _r primers: CTGTTGCGCGGCGCCGACTT /
+      ACTCGGCGGCCAGCAACAGC. They each match AF235050.4, bracketing a native 1070-bp
+      interval 24066..25135. Native amplicon geometry is not a measured mutant band
+      length or full allele sequence.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 42-43,50 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal forward/reverse-complement matching to the deposited native locus.
+      retrieved_on: '2026-10-05'
+  - subject: couAK07_pcr
+    predicate: has_verification_limit
+    object: limits
+    notes: PCR genotype checking does not rule out every polar effect or identify
+      a complete resequenced mutant allele.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 50,68 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: cosmid
+    predicate: was_modified_to_make
+    object: couAK08
+    notes: Reported deletion of internal sequence of approximately half the gene;
+      RED/ET aac(3)IV cassette from pIJ773, removed by XbaI/SpeI and religation to
+      leave a 6-bp scar. Table II.9 gives unversioned AF235050 coordinates 23752-24056;
+      these are not current CDS coordinates. Original Knuplesch 2008 construct thesis
+      not obtained.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 40-41,49,68 (printed Arabic
+        page offset +18). Selected text and relevant page images inspected; not all
+        appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK08
+    predicate: targets_coding_locus_of
+    object: couR2b
+    notes: Targets the named gene, not a sequenced full mutant-protein preparation.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 68 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/G1XVC2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native reference only.
+      retrieved_on: '2026-10-05'
+  - subject: couAK08
+    predicate: was_introduced_into
+    object: host
+    notes: Conjugation via E. coli ET12567/pUB307; 3 independent clones were reported.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 49-50,68 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK08
+    predicate: was_checked_by
+    object: couAK08_pcr
+    notes: 'Table II.11 literal kont_couR2b_f / _r primers: ACGGTCATCAGCGTCCGGGG /
+      CATCGCACATCCGGCGGACC. They each match AF235050.4, bracketing a native 1061-bp
+      interval 24635..25695. Native amplicon geometry is not a measured mutant band
+      length or full allele sequence.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 42-43,50 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal forward/reverse-complement matching to the deposited native locus.
+      retrieved_on: '2026-10-05'
+  - subject: couAK08_pcr
+    predicate: has_verification_limit
+    object: limits
+    notes: PCR genotype checking does not rule out every polar effect or identify
+      a complete resequenced mutant allele.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 50,68 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: cosmid
+    predicate: was_modified_to_make
+    object: couAK09
+    notes: Reported deletion of coding region except start and stop codons; RED/ET
+      aac(3)IV cassette from pIJ773, removed by XbaI/SpeI and religation to leave
+      a 6-bp scar. Table II.9 gives unversioned AF235050 coordinates 24248-25150;
+      these are not current CDS coordinates. Original Knuplesch 2008 construct thesis
+      not obtained.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 40-41,49,68 (printed Arabic
+        page offset +18). Selected text and relevant page images inspected; not all
+        appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK09
+    predicate: targets_coding_locus_of
+    object: couR3
+    notes: Targets the named gene, not a sequenced full mutant-protein preparation.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 68 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T5
+      evidence_type: DATABASE_ASSERTION
+      notes: Native reference only.
+      retrieved_on: '2026-10-05'
+  - subject: couAK09
+    predicate: was_introduced_into
+    object: host
+    notes: Conjugation via E. coli ET12567/pUB307; 3 independent clones were reported.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 49-50,68 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK09
+    predicate: was_checked_by
+    object: couAK09_pcr
+    notes: 'Table II.11 literal kont_couR3_f / _r primers: GCCGCCGAGTTCACCGGGTT /
+      CGATCCTGCTACCGGCTGCG. They each match AF235050.4, bracketing a native 1680-bp
+      interval 25126..26805. Native amplicon geometry is not a measured mutant band
+      length or full allele sequence.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 42-43,50 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal forward/reverse-complement matching to the deposited native locus.
+      retrieved_on: '2026-10-05'
+  - subject: couAK09_pcr
+    predicate: has_verification_limit
+    object: limits
+    notes: PCR genotype checking does not rule out every polar effect or identify
+      a complete resequenced mutant allele.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 50,68 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: cosmid
+    predicate: was_modified_to_make
+    object: couAK10
+    notes: Reported deletion of coding region except start and stop codons; RED/ET
+      aac(3)IV cassette from pIJ773, removed by XbaI/SpeI and religation to leave
+      a 6-bp scar. Table II.9 gives unversioned AF235050 coordinates 25211-26374;
+      these are not current CDS coordinates. Original Knuplesch 2008 construct thesis
+      not obtained.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 40-41,49,68 (printed Arabic
+        page offset +18). Selected text and relevant page images inspected; not all
+        appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK10
+    predicate: targets_coding_locus_of
+    object: couR4
+    notes: Targets the named gene, not a sequenced full mutant-protein preparation.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 68 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T4
+      evidence_type: DATABASE_ASSERTION
+      notes: Native reference only.
+      retrieved_on: '2026-10-05'
+  - subject: couAK10
+    predicate: was_introduced_into
+    object: host
+    notes: Conjugation via E. coli ET12567/pUB307; 3 independent clones were reported.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 49-50,68 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK10
+    predicate: was_checked_by
+    object: couAK10_pcr
+    notes: 'Table II.11 literal kont_couR4_f / _r primers: TGGACCGGGGATTCCGGCTG /
+      AGCGGGCTGGTGATCGGACC. They each match AF235050.4, bracketing a native 1924-bp
+      interval 26086..28009. Native amplicon geometry is not a measured mutant band
+      length or full allele sequence.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 42-43,50 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal forward/reverse-complement matching to the deposited native locus.
+      retrieved_on: '2026-10-05'
+  - subject: couAK10_pcr
+    predicate: has_verification_limit
+    object: limits
+    notes: PCR genotype checking does not rule out every polar effect or identify
+      a complete resequenced mutant allele.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 50,68 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+curation_history:
+- timestamp: '2026-10-05T06:43:02Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-cour-individual-deletion-constructs-and-pcr-limits;
+    preserve sequence, host, construct, assay, inference and source-access limits
+    (#571).
+  llm_assisted: true

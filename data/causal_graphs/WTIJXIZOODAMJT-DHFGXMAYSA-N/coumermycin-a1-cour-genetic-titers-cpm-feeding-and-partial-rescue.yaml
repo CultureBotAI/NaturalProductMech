@@ -1,0 +1,372 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-cour-genetic-titers-cpm-feeding-and-partial-rescue
+  scope: BIOSYNTHESIS
+  description: 'Individual production phenotypes, chemical feeding and partial genetic
+    rescue. Partial curation; author-agent review #571. Native sequences, engineered
+    samples, host-conditioned findings and hypotheses remain distinct; source-owned
+    fields and SEEDED status are unchanged.'
+  nodes:
+  - node_id: control
+    label: M1146 with intact couMW16
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: coumermycin A1
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:3907
+  - node_id: assay
+    label: Seven-day coumermycin HPLC analysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: cpm
+    label: Fed 3-methylpyrrole-2,4-dicarboxylic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: scope
+    label: Host-conditioned central-pyrrole involvement
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Residual production and rescue limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: couR1
+    label: Native CouR1 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T7
+  - node_id: couAK06
+    label: M1146(couAK06) deletion strain
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: couR2a
+    label: Native CouR2a sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G1XVC1
+  - node_id: couAK07
+    label: M1146(couAK07) deletion strain
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: couR2b
+    label: Native CouR2b sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G1XVC2
+  - node_id: couAK08
+    label: M1146(couAK08) deletion strain
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: couR3
+    label: Native CouR3 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T5
+  - node_id: couAK09
+    label: M1146(couAK09) deletion strain
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: couR4
+    label: Native CouR4 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T4
+  - node_id: couAK10
+    label: M1146(couAK10) deletion strain
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: pAK06
+    label: pAK06 genetic-complementation plasmid
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: pAK10
+    label: pAK10 genetic-complementation plasmid
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: control
+    predicate: produced_in
+    object: assay
+    notes: 'Table III.1 intact-cluster reference: 10.20 mg/L; CPM-fed control not
+      determined.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 68-69 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: assay
+    predicate: measured
+    object: product
+    notes: HPLC-UV/MS; authentic coumermycin A1 standard. Coumermycin production medium
+      2; harvest after seven days. HPLC-UV 345 nm, 0.6 mL/min, 40 C, water/acetonitrile
+      each with 1% formic acid, 70-100% acetonitrile from 2-22 min.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 50-54,68-69 (printed Arabic
+        page offset +18). Selected text and relevant page images inspected; not all
+        appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: cpm
+    predicate: was_supplied_for
+    object: assay
+    notes: Two equal feeds after 24 and 48 h; final 0.1 mmol/L (16.9 mg/L). Chemical
+      rescue is not gene complementation.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 50-51,69 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK06
+    predicate: has_deleted_locus_for
+    object: couR1
+    notes: Named heterologous deletion; not a native S. rishiriensis knockout.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 68 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK06
+    predicate: had_reported_titers_in
+    object: assay
+    notes: Table III.1 without CPM <0.01 mg/L; with CPM 3.8 mg/L. No SD supplied in
+      this table; values below detection are not zero.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 69 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK06
+    predicate: supports_pathway_involvement
+    object: scope
+    notes: Chemical rescue supports central-pyrrole involvement, not a specific catalytic
+      reaction or physical assembly.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 68-69 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK07
+    predicate: has_deleted_locus_for
+    object: couR2a
+    notes: Named heterologous deletion; not a native S. rishiriensis knockout.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 68 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK07
+    predicate: had_reported_titers_in
+    object: assay
+    notes: Table III.1 without CPM 0.02 mg/L; with CPM 0.2 mg/L. No SD supplied in
+      this table; values below detection are not zero.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 69 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK07
+    predicate: supports_pathway_involvement
+    object: scope
+    notes: Chemical rescue supports central-pyrrole involvement, not a specific catalytic
+      reaction or physical assembly. Only two clones, few integration colonies and
+      slow growth limit the R2a interpretation; thesis calls its involvement probable.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 68-69 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK08
+    predicate: has_deleted_locus_for
+    object: couR2b
+    notes: Named heterologous deletion; not a native S. rishiriensis knockout.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 68 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK08
+    predicate: had_reported_titers_in
+    object: assay
+    notes: Table III.1 without CPM 0.80 mg/L; with CPM 5.1 mg/L. No SD supplied in
+      this table; values below detection are not zero.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 69 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK08
+    predicate: supports_pathway_involvement
+    object: scope
+    notes: Chemical rescue supports central-pyrrole involvement, not a specific catalytic
+      reaction or physical assembly.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 68-69 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK09
+    predicate: has_deleted_locus_for
+    object: couR3
+    notes: Named heterologous deletion; not a native S. rishiriensis knockout.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 68 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK09
+    predicate: had_reported_titers_in
+    object: assay
+    notes: Table III.1 without CPM 0.10 mg/L; with CPM 6.6 mg/L. No SD supplied in
+      this table; values below detection are not zero.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 69 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK09
+    predicate: supports_pathway_involvement
+    object: scope
+    notes: Chemical rescue supports central-pyrrole involvement, not a specific catalytic
+      reaction or physical assembly.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 68-69 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK10
+    predicate: has_deleted_locus_for
+    object: couR4
+    notes: Named heterologous deletion; not a native S. rishiriensis knockout.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 68 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK10
+    predicate: had_reported_titers_in
+    object: assay
+    notes: Table III.1 without CPM <0.01 mg/L; with CPM 5.0 mg/L. No SD supplied in
+      this table; values below detection are not zero.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 69 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couAK10
+    predicate: supports_pathway_involvement
+    object: scope
+    notes: Chemical rescue supports central-pyrrole involvement, not a specific catalytic
+      reaction or physical assembly.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 68-69 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: pAK06
+    predicate: was_introduced_into
+    object: couAK06
+    notes: 1.4-kb HindIII/SpeI insert in pUWL-Apra-oriT under ermE*; gene amplified
+      via pGEM-T intermediate. Five named clones 1.1-1.5. Vector is ApraR; methods
+      state kanamycin selection without documenting a full dual-drug selection protocol.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 40-42,50 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: pAK06
+    predicate: partially_restored_production_in
+    object: assay
+    notes: Reported genetic rescue reached only 2-3% of the intact-cluster reference.
+      Only R1/R4 were complemented in the inspected thesis; the broader wording in
+      the 2013 introduction is not adopted as evidence for all five.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 69 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, introduction. Primary indexed text inspected; journal
+        PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: pAK10
+    predicate: was_introduced_into
+    object: couAK10
+    notes: 1.2-kb HindIII/SpeI insert in pUWL-Apra-oriT under ermE*; gene amplified
+      via pGEM-T intermediate. Five named clones 1.1-1.5. Vector is ApraR; methods
+      state kanamycin selection without documenting a full dual-drug selection protocol.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 40-42,50 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: pAK10
+    predicate: partially_restored_production_in
+    object: assay
+    notes: Reported genetic rescue reached only 2-3% of the intact-cluster reference.
+      Only R1/R4 were complemented in the inspected thesis; the broader wording in
+      the 2013 introduction is not adopted as evidence for all five.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 69 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, introduction. Primary indexed text inspected; journal
+        PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: scope
+    predicate: has_interpretation_limit
+    object: limits
+    notes: SCO6824/NP_733715 and SCO0991/NP_625287 were proposed host compensators
+      by similarity; no measured rescue by these genes is established. Low complementation
+      hypotheses about regulation, folding and interactions remain hypotheses.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 69 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+curation_history:
+- timestamp: '2026-10-05T06:43:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-cour-genetic-titers-cpm-feeding-and-partial-rescue;
+    preserve sequence, host, construct, assay, inference and source-access limits
+    (#571).
+  llm_assisted: true

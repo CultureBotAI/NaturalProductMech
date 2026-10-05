@@ -814,6 +814,14 @@ causal_graph_refs:
 - coumermycin-a1-coun17-carrier-loading-and-terminal-transfer
 - coumermycin-a1-coun17-reversible-shuttling-and-covalent-intermediate
 - coumermycin-a1-coun17-engineered-substrate-panel-and-supporting-material-limits
+- coumermycin-a1-cour-native-identities-and-sequence-revisions
+- coumermycin-a1-cour-individual-deletion-constructs-and-pcr-limits
+- coumermycin-a1-cour-genetic-titers-cpm-feeding-and-partial-rescue
+- coumermycin-a1-cour-phosphothreonine-feeding-and-strain-label-conflict
+- coumermycin-a1-cour-isotope-precursor-evidence-and-historical-pathway-model
+- coumermycin-a1-cour-minimal-expression-constructs-and-coordinate-limits
+- coumermycin-a1-cour-heterologous-cpm-production-and-unit-limits
+- coumermycin-a1-cour-cour3-preparation-atpase-and-unconfirmed-kinase
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -862,4 +870,14 @@ curation_history:
     and reversible transfer, and engineered-substrate breadth. Preserve abstract-only
     limits, donor-label conflicts, prior graphs, source fields, chemical identity,
     histories and SEEDED status (#570).
+  llm_assisted: true
+- timestamp: '2026-10-05T06:43:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add eight CouR components: seven native references and revisions; five
+    individual deletion constructs, production and rescue; weak phosphothreonine feeding;
+    isotope precursor tracing versus historical proposals; minimal-expression constructs/production;
+    CouR3 ATP-dependent ADP formation without confirmed threonine phosphorylation.
+    Preserve conflicting labels/units, prior graphs, source fields, identity, histories
+    and SEEDED status (#571).'
   llm_assisted: true

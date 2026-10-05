@@ -1,0 +1,325 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-cour-minimal-expression-constructs-and-coordinate-limits
+  scope: BIOSYNTHESIS
+  description: 'Five- and seven-gene expression constructs and bounded native sequence
+    mapping. Partial curation; author-agent review #571. Native sequences, engineered
+    samples, host-conditioned findings and hypotheses remain distinct; source-owned
+    fields and SEEDED status are unchanged.'
+  nodes:
+  - node_id: cosmid
+    label: Intact couMW16 cosmid
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: delta5
+    label: couMW16/deltaR5-parY
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: deltaS
+    label: couMW16/deltaS-parY
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: double5
+    label: couMW16/deltaR5-parYdeltaE-P
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: doubleS
+    label: couMW16/deltaS-parYdeltaE-P
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: plasmid5
+    label: pUWL201/couR1-4 expression construct
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: plasmid7
+    label: pUWL201/couR1-6 expression construct
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: S. coelicolor M1146
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Construct-label and sequence-coverage limits
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: couR1
+    label: Native CouR1 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T7
+  - node_id: couR2a
+    label: Native CouR2a sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G1XVC1
+  - node_id: couR2b
+    label: Native CouR2b sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G1XVC2
+  - node_id: couR3
+    label: Native CouR3 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T5
+  - node_id: couR4
+    label: Native CouR4 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T4
+  - node_id: couR5
+    label: Native CouR5 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T3
+  - node_id: couR6
+    label: Native CouR6 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T2
+  edges:
+  - subject: cosmid
+    predicate: was_modified_to_make
+    object: delta5
+    notes: Reported 14.5-kb R5-parY region replaced by aac(3)IV/oriT cassette from
+      pIJ773 using RED/ET.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct methods/results. Primary indexed text
+        inspected; journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: cosmid
+    predicate: was_modified_to_make
+    object: deltaS
+    notes: Reported 12-kb S-parY region replaced; retains R5/R6 unlike the other deletion.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct methods/results. Primary indexed text
+        inspected; journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: delta5
+    predicate: was_modified_to_make
+    object: double5
+    notes: 21.4-kb couE-couP region replaced by aadA spectinomycin cassette from pIJ778.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct methods/results. Primary indexed text
+        inspected; journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: deltaS
+    predicate: was_modified_to_make
+    object: doubleS
+    notes: Methods distinguish this lineage, but the results paragraph duplicates
+      deltaR5-parY where it describes both starting constructs. The discrepancy is
+      retained; this lineage follows the explicit methods description.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, construct methods/results. Primary indexed text
+        inspected; journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: double5
+    predicate: provided_fragment_for
+    object: plasmid5
+    notes: 6144-bp SpeI fragment includes five couR genes plus aac(3)IV/oriT; inserted
+      into SpeI site of pUWL201 under ermE*. Correct orientation was checked by restriction
+      analysis, not a deposited complete insert sequence.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: doubleS
+    predicate: provided_fragment_for
+    object: plasmid7
+    notes: 8683-bp SpeI fragment includes R1/R2a/R2b/R3/R4/R5/R6. Construct reported;
+      no separate verified CPM yield assigned here.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: plasmid5
+    predicate: was_introduced_into
+    object: host
+    notes: E. coli ET12567/pUZ8002 conjugation and apramycin selection. Cosmid integrations
+      used ET12567/pUB307 and apramycin/kanamycin.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: plasmid5
+    predicate: has_sequence_verification_limit
+    object: limits
+    notes: 'Four literal 40-nt Table 1 homology arms match AF235050.4: R5rightend_F27593..27632(+),
+      Srightend_F30132..30171(+), leftendR1_F1476..1515(+), leftendR1_R22911..22950(-).
+      Published coordinates refer to couMW16, not AF235050.4; these four hits differ
+      by +1255. R5rightend_R has no exact match in AF235050.1-.4. Extending that offset
+      would place it beyond the 40210-bp current deposit; absence is not proof of
+      a faulty primer, and the distal cosmid junction is not reconstructed.'
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, Table 1. Primary indexed text inspected; journal
+        PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal homology-arm comparison with both strands and all four retained
+        versions.
+      retrieved_on: '2026-10-05'
+  - subject: doubleS
+    predicate: has_source_label_conflict
+    object: limits
+    notes: Duplicated results-line construct name is not silently repaired; full experimental
+      cosmid sequences were not obtained.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, construct results. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: plasmid5
+    predicate: contains_gene_for_native_reference
+    object: couR1
+    notes: Named native protein reference, not proof of complete experimental sequence
+      identity.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T7
+      evidence_type: DATABASE_ASSERTION
+      notes: Native sequence reference.
+      retrieved_on: '2026-10-05'
+  - subject: plasmid5
+    predicate: contains_gene_for_native_reference
+    object: couR2a
+    notes: Named native protein reference, not proof of complete experimental sequence
+      identity.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/G1XVC1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native sequence reference.
+      retrieved_on: '2026-10-05'
+  - subject: plasmid5
+    predicate: contains_gene_for_native_reference
+    object: couR2b
+    notes: Named native protein reference, not proof of complete experimental sequence
+      identity.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/G1XVC2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native sequence reference.
+      retrieved_on: '2026-10-05'
+  - subject: plasmid5
+    predicate: contains_gene_for_native_reference
+    object: couR3
+    notes: Named native protein reference, not proof of complete experimental sequence
+      identity.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T5
+      evidence_type: DATABASE_ASSERTION
+      notes: Native sequence reference.
+      retrieved_on: '2026-10-05'
+  - subject: plasmid5
+    predicate: contains_gene_for_native_reference
+    object: couR4
+    notes: Named native protein reference, not proof of complete experimental sequence
+      identity.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T4
+      evidence_type: DATABASE_ASSERTION
+      notes: Native sequence reference.
+      retrieved_on: '2026-10-05'
+  - subject: plasmid7
+    predicate: contains_gene_for_native_reference
+    object: couR5
+    notes: Adjacently encoded reference, not an experimentally established enzyme/complex
+      component.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native sequence reference.
+      retrieved_on: '2026-10-05'
+  - subject: delta5
+    predicate: deletes_coding_region_for
+    object: couR5
+    notes: Joint downstream-region deletion; not an isolated single-gene functional
+      test.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct results. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: plasmid7
+    predicate: contains_gene_for_native_reference
+    object: couR6
+    notes: Adjacently encoded reference, not an experimentally established enzyme/complex
+      component.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native sequence reference.
+      retrieved_on: '2026-10-05'
+  - subject: delta5
+    predicate: deletes_coding_region_for
+    object: couR6
+    notes: Joint downstream-region deletion; not an isolated single-gene functional
+      test.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, construct results. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+curation_history:
+- timestamp: '2026-10-05T06:43:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-cour-minimal-expression-constructs-and-coordinate-limits;
+    preserve sequence, host, construct, assay, inference and source-access limits
+    (#571).
+  llm_assisted: true

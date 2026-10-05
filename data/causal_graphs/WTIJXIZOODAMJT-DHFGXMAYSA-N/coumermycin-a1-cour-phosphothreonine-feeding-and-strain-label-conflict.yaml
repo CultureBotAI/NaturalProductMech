@@ -1,0 +1,149 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-cour-phosphothreonine-feeding-and-strain-label-conflict
+  scope: BIOSYNTHESIS
+  description: 'Bounded feeding evidence distinct from direct enzyme activity. Partial
+    curation; author-agent review #571. Native sequences, engineered samples, host-conditioned
+    findings and hypotheses remain distinct; source-owned fields and SEEDED status
+    are unchanged.'
+  nodes:
+  - node_id: couR3
+    label: Native CouR3 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T5
+  - node_id: mutant
+    label: Reported M1146 delta-couR3 strain
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: thr
+    label: L-threonine feed
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: thrp
+    label: O-phospho-L-threonine feed
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Three-clone feeding experiment
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: coumermycin A1
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:3907
+  - node_id: identity
+    label: R3 strain-label conflict
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: limits
+    label: Weak feeding-effect interpretation
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mutant
+    predicate: has_deleted_locus_for
+    object: couR3
+    notes: Thesis methods map R3 to couAK09; no reconstructed mutant protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 41,68,70 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: mutant
+    predicate: was_used_in
+    object: assay
+    notes: Three independently generated clones; four independent feeding experiments
+      per clone; seven-day HPLC readout.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 50-54,70 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: thr
+    predicate: was_fed_in
+    object: assay
+    notes: Two equal aliquots after 24/48 h; final 0.1 mmol/L.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 50-51,70 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: thrp
+    predicate: was_fed_in
+    object: assay
+    notes: Same timing and final 0.1 mmol/L concentration.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 50-51,70 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: assay
+    predicate: measured
+    object: product
+    notes: 'Table III.2 mean +/- SD, mg/L, columns no feed / Thr / Thr-P: clone1 0.14+/-0.05
+      / 0.16+/-0.03 / 0.24+/-0.08; clone2 0.15+/-0.07 / 0.14+/-0.03 / 0.17+/-0.05;
+      clone3 0.12+/-0.01 / 0.13+/-0.01 / 0.18+/-0.02. Source averages 0.137 / 0.143
+      / 0.197; aggregate SD not supplied.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 70 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: assay
+    predicate: has_source_identity_conflict
+    object: identity
+    notes: Table III.2 footnote says M1146(couAK08); methods assign couAK08 to R2b
+      and couAK09 to R3. Retain the conflict instead of silently correcting the tested
+      strain.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 41,70 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: assay
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Thr-P increased the source average by 44%; this small increase does not
+      demonstrate a CouR3 threonine-kinase reaction. The source reports no significant
+      Thr effect but supplies no statistical test or p-value here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 70 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+      snippet: not fully conclusive
+  - subject: identity
+    predicate: limits_construct_specificity
+    object: limits
+    notes: Treat the assay as source-reported delta-couR3 evidence, not an independently
+      verified allele.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 41,70 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+curation_history:
+- timestamp: '2026-10-05T06:43:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-cour-phosphothreonine-feeding-and-strain-label-conflict;
+    preserve sequence, host, construct, assay, inference and source-access limits
+    (#571).
+  llm_assisted: true
