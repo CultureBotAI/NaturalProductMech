@@ -3508,6 +3508,513 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 12 edges</span></h2>
+<p class="sub">Native NovM identity, a distinct His8 preparation and bounded primary glycosylation evidence. Review #563. The BGC0000834 cathomycin owner retains its unspecified sugar stereocentre and SEEDED status. These precursor and recombinant assays do not resolve that stereocentre or justify an exact-key merge with fully specified novobiocin.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited novobiocin cluster underlying the cathomycin owner</td>
+  <td>contains</td>
+  <td>Deposited novM locus</td>
+  <td>AF170880.4 novM spans 14106..15245(+), 1140 nt including stop.</td>
+  <td class="mono">https://mibig.secondarymetabolites.org/go/BGC0000834.5<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited novM locus</td>
+  <td>encodes_native_reference</td>
+  <td>Deposited native NovM sequence reference</td>
+  <td>All 379 aa of AAF67506.1 match Q9L9F5 and CDS-aware table-11 translations of AF170880.2/.3/.4. Earlier coordinates are 14054..15193(+).</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3<br>https://www.uniprot.org/uniprotkb/Q9L9F5<br>https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4</td>
+</tr>
+<tr>
+  <td>Deposited native NovM sequence reference</td>
+  <td>has_identity_boundary</td>
+  <td>Historical strain and engineered-sequence limits</td>
+  <td>The current deposit names S. niveus NCIMB 9219; UniProt taxon 193462 retains historical reference comments including ATCC 23965/NCIMB 11891. These labels do not prove strain synonymy or identify a complete historical fusion.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4<br>https://www.uniprot.org/uniprotkb/Q9L9F5</td>
+</tr>
+<tr>
+  <td>Deposited novM locus</td>
+  <td>is_named_source_of</td>
+  <td>Freel Meyers 2003 C-terminal His8 NovM preparation</td>
+  <td>The abstract reports soluble expression and purification to homogeneity of a C-terminal His8 fusion from S. spheroides. No full fusion sequence or quantitative purity is assigned.</td>
+  <td class="mono">DOI:10.1021/bi0340088</td>
+</tr>
+<tr>
+  <td>Reported E. coli NovM expression host</td>
+  <td>expressed</td>
+  <td>Freel Meyers 2003 C-terminal His8 NovM preparation</td>
+  <td>The abstract identifies E. coli, not a host strain, vector, yield or induction protocol.</td>
+  <td class="mono">DOI:10.1021/bi0340088</td>
+</tr>
+<tr>
+  <td>Freel Meyers 2003 C-terminal His8 NovM preparation</td>
+  <td>catalyzes</td>
+  <td>NovM precursor noviosylation</td>
+  <td>Reported turnover exceeds 300 min^-1. Detailed kinetic conditions and uncertainty are outside the inspected abstract.</td>
+  <td class="mono">DOI:10.1021/bi0340088</td>
+</tr>
+<tr>
+  <td>Novobiocic acid acceptor</td>
+  <td>is_acceptor_for</td>
+  <td>NovM precursor noviosylation</td>
+  <td>The study obtained this aglycon by selective novobiocin degradation.</td>
+  <td class="mono">DOI:10.1021/bi0340088</td>
+</tr>
+<tr>
+  <td>TDP-L-noviose donor, historical assay label</td>
+  <td>is_donor_for</td>
+  <td>NovM precursor noviosylation</td>
+  <td>The donor came from an eleven-step chemical synthesis beginning with L-rhamnose; this is not an enzymatic sugar-biosynthesis assay.</td>
+  <td class="mono">DOI:10.1021/bi0340088</td>
+</tr>
+<tr>
+  <td>NovM precursor noviosylation</td>
+  <td>forms</td>
+  <td>Desmethyldescarbamoylnovobiocin precursor</td>
+  <td>The source assigns the glycosylated precursor, not fully tailored novobiocin.</td>
+  <td class="mono">DOI:10.1021/bi0340088</td>
+</tr>
+<tr>
+  <td>Deposited native NovM sequence reference</td>
+  <td>has_database_reaction_annotation</td>
+  <td>Database reaction annotation and donor nomenclature</td>
+  <td>UniProt gives EC 2.4.1.302 and RHEA:36695: dTDP-4-O-demethyl-beta-L-noviose plus novobiocic acid yields desmethyldescarbamoylnovobiocin, dTDP and H(+). The historical TDP-L-noviose label must not imply an already 4-O-methylated donor. The reaction identifier is not a protein identifier.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F5</td>
+</tr>
+<tr>
+  <td>Database reaction annotation and donor nomenclature</td>
+  <td>clarifies_historical_label</td>
+  <td>TDP-L-noviose donor, historical assay label</td>
+  <td>Retain the source label alongside the database naming; no donor stereochemistry or final-product identity is inferred from the abbreviated name alone.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F5<br>DOI:10.1021/bi0340088</td>
+</tr>
+<tr>
+  <td>Deposited native NovM sequence reference</td>
+  <td>has_database_kinetic_annotation</td>
+  <td>Database-reported NovM kinetic values</td>
+  <td>UniProt reports Km 32 uM and kcat 313 min^-1 with novobiocic acid. These exact values are database assertions; the primary table and assay conditions were not recovered, and Km is not a measured binding Kd.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9L9F5</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 15 edges</span></h2>
+<p class="sub">Separate NovM donor/acceptor evidence and abstract-level tandem incubations, without physical-complex claims. Review #563. The BGC0000834 cathomycin owner retains its unspecified sugar stereocentre and SEEDED status. These precursor and recombinant assays do not resolve that stereocentre or justify an exact-key merge with fully specified novobiocin.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Freel Meyers 2003 C-terminal His8 NovM preparation</td>
+  <td>has_bounded_negative_result</td>
+  <td>Reported lack of rhamnosyl-transfer activity</td>
+  <td>The abstract reports no activity with TDP-L-rhamnose; no detection limit or universal rejection of every rhamnose donor is inferred.</td>
+  <td class="mono">DOI:10.1021/bi0340088</td>
+</tr>
+<tr>
+  <td>TDP-L-rhamnose donor analogue</td>
+  <td>was_tested_in</td>
+  <td>Reported lack of rhamnosyl-transfer activity</td>
+  <td>This donor analogue is distinct from the synthetic TDP-L-noviose used for positive turnover.</td>
+  <td class="mono">DOI:10.1021/bi0340088</td>
+</tr>
+<tr>
+  <td>TDP-L-rhamnose donor analogue</td>
+  <td>has_reported_inhibitory_effect</td>
+  <td>Reported TDP-L-rhamnose inhibition</td>
+  <td>Reported Ki is 83.5 +/- 5.5 uM. The abstract does not define the uncertainty, replicate count or inhibition model.</td>
+  <td class="mono">DOI:10.1021/bi0340088</td>
+</tr>
+<tr>
+  <td>Reported TDP-L-rhamnose inhibition</td>
+  <td>was_measured_with</td>
+  <td>Freel Meyers 2003 C-terminal His8 NovM preparation</td>
+  <td>This value belongs to the reported NovM preparation, not native-cell inhibition or antibacterial potency.</td>
+  <td class="mono">DOI:10.1021/bi0340088</td>
+</tr>
+<tr>
+  <td>Freel Meyers 2003 C-terminal His8 NovM preparation</td>
+  <td>accepts_reported_alternative_aglycons</td>
+  <td>Reported alternative coumarin aglycon acceptance</td>
+  <td>Some coumarin acceptor variants support activity. No uninspected compound list or quantitative ranking is reconstructed.</td>
+  <td class="mono">DOI:10.1021/bi0340088</td>
+</tr>
+<tr>
+  <td>Albermann 2003 NovM assay preparation</td>
+  <td>was_tested_in</td>
+  <td>Albermann aglycon and nucleotide-sugar panel</td>
+  <td>The primary abstract describes four aglycon analogues and over forty nucleotide sugars; complete construct and individual assay rows remain uninspected.</td>
+  <td class="mono">DOI:10.1021/ol0341086</td>
+</tr>
+<tr>
+  <td>Albermann aglycon and nucleotide-sugar panel</td>
+  <td>yielded_reported_products</td>
+  <td>Three reported new glycosylation products</td>
+  <td>Three new products are reported. The abstract alone does not establish their exact structures or yields.</td>
+  <td class="mono">DOI:10.1021/ol0341086</td>
+</tr>
+<tr>
+  <td>Reported alternative coumarin aglycon acceptance</td>
+  <td>must_be_interpreted_with</td>
+  <td>Donor-versus-acceptor specificity and preparation limits</td>
+  <td>Acceptance of selected aglycons does not establish broad sugar-donor promiscuity.</td>
+  <td class="mono">DOI:10.1021/bi0340088</td>
+</tr>
+<tr>
+  <td>Three reported new glycosylation products</td>
+  <td>must_be_interpreted_with</td>
+  <td>Donor-versus-acceptor specificity and preparation limits</td>
+  <td>Stringency in another panel does not by itself contradict selected aglycon acceptance. No identity between the two engineered preparations is assumed.</td>
+  <td class="mono">DOI:10.1021/ol0341086</td>
+</tr>
+<tr>
+  <td>Pi 2004 NovL assay preparation</td>
+  <td>was_used_in</td>
+  <td>NovL/NovM tandem-incubation assay</td>
+  <td>NovL and NovM were co-incubated for pathway assembly.</td>
+  <td class="mono">DOI:10.1073/pnas.0403526101</td>
+</tr>
+<tr>
+  <td>Pi 2004 NovM assay preparation</td>
+  <td>was_used_in</td>
+  <td>NovL/NovM tandem-incubation assay</td>
+  <td>The preparation is study-specific; neither its tag nor full sequence is supplied by the inspected abstract.</td>
+  <td class="mono">DOI:10.1073/pnas.0403526101</td>
+</tr>
+<tr>
+  <td>NovL/NovM tandem-incubation assay</td>
+  <td>has_three_enzyme_extension</td>
+  <td>NovL/NovM/NovP tandem-incubation assay</td>
+  <td>The reported extension also includes NovP. Co-incubation is not evidence of a stable physical complex.</td>
+  <td class="mono">DOI:10.1073/pnas.0403526101</td>
+</tr>
+<tr>
+  <td>Pi 2004 NovP assay preparation</td>
+  <td>was_used_in</td>
+  <td>NovL/NovM/NovP tandem-incubation assay</td>
+  <td>NovP is the additional tailoring enzyme, not a demonstrated structural subunit of a NovL-NovM assembly.</td>
+  <td class="mono">DOI:10.1073/pnas.0403526101</td>
+</tr>
+<tr>
+  <td>NovL/NovM/NovP tandem-incubation assay</td>
+  <td>was_monitored_by</td>
+  <td>Time-dependent intermediate and product MS readout</td>
+  <td>The abstract reports time-dependent MS detection of intermediates and products. New kinetic values, ion assignments and product yields are not asserted from unverified tables or figures.</td>
+  <td class="mono">DOI:10.1073/pnas.0403526101</td>
+</tr>
+<tr>
+  <td>Time-dependent intermediate and product MS readout</td>
+  <td>has_evidence_boundary</td>
+  <td>Donor-versus-acceptor specificity and preparation limits</td>
+  <td>The 2004 quantitative full-text leads remain uncurated; they must not be silently transferred to either 2003 preparation.</td>
+  <td class="mono">DOI:10.1073/pnas.0403526101</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">21 nodes, 26 edges</span></h2>
+<p class="sub">New commercial redox-support proteins and directly inspected early-stage NovO/CouO tests. The supplement does not establish complete sequences/tags for its recombinant preparations. Review #563. The BGC0000834 cathomycin owner retains its unspecified sugar stereocentre and SEEDED status. These precursor and recombinant assays do not resolve that stereocentre or justify an exact-key merge with fully specified novobiocin.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2005 supplement holo-NovH preparation</td>
+  <td>was_used_in</td>
+  <td>NovH tyrosyl-loading stage</td>
+  <td>Holo-NovH 30 uM; 75 mM Tris-HCl pH 7.5, ATP 5 mM, MgCl2 10 mM, L-tyrosine 0.5 mM plus [3H]-L-tyrosine 1.8 uM; two hours at room temperature.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>NovH tyrosyl-loading stage</td>
+  <td>prepared_assay_stage</td>
+  <td>L-Tyrosyl-S-NovH assay intermediate</td>
+  <td>Carrier-bound precursor, not free tyrosine.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>L-Tyrosyl-S-NovH assay intermediate</td>
+  <td>was_used_in</td>
+  <td>NovI hydroxylation-stage reconstitution</td>
+  <td>This stage followed the NovH incubation.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>2005 supplement NovI preparation</td>
+  <td>was_used_in</td>
+  <td>NovI hydroxylation-stage reconstitution</td>
+  <td>NovI 10 uM and NADPH 2 mM; one hour.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Sigma spinach ferredoxin assay reagent</td>
+  <td>was_supplied_in</td>
+  <td>NovI hydroxylation-stage reconstitution</td>
+  <td>Commercial ferredoxin: 10 uM; the source explicitly specifies spinach.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Sigma ferredoxin reductase assay reagent</td>
+  <td>was_supplied_in</td>
+  <td>NovI hydroxylation-stage reconstitution</td>
+  <td>Commercial reductase: 0.1 U. The source does not specify its species, sequence or catalogue number.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>NovI hydroxylation-stage reconstitution</td>
+  <td>prepared_assay_stage</td>
+  <td>Beta-hydroxytyrosyl-S-NovH assay intermediate</td>
+  <td>The named stage is beta-hydroxytyrosyl-NovH; no new stereochemical assignment is made.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Beta-hydroxytyrosyl-S-NovH assay intermediate</td>
+  <td>was_used_in</td>
+  <td>NovJ/NovK oxidation-stage reconstitution</td>
+  <td>The NovJ/NovK step followed the NovI incubation.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>2005 supplement NovJ/NovK preparation</td>
+  <td>was_used_in</td>
+  <td>NovJ/NovK oxidation-stage reconstitution</td>
+  <td>NovJ/NovK 10 uM plus NADP(+) 1 mM; one hour. The concentration basis is not specified as subunits or complex.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>NovJ/NovK oxidation-stage reconstitution</td>
+  <td>prepared_assay_stage</td>
+  <td>Beta-keto-S-NovH assay intermediate</td>
+  <td>The product-stage label is retained without assuming a complete engineered sequence for its NovH carrier.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>2005 supplement NovO assay preparation</td>
+  <td>was_tested_in</td>
+  <td>Stage-specific tethered-precursor methylation tests</td>
+  <td>NovO 5 uM with SAM 2 mM; one to five hours.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>2005 supplement CouO assay preparation</td>
+  <td>was_tested_in</td>
+  <td>Stage-specific tethered-precursor methylation tests</td>
+  <td>CouO was an alternative methyltransferase at the same reported loading, not an asserted native novobiocin enzyme.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>L-Tyrosyl-S-NovH assay intermediate</td>
+  <td>was_test_substrate_in</td>
+  <td>Stage-specific tethered-precursor methylation tests</td>
+  <td>Methyltransferase added after NovH.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Beta-hydroxytyrosyl-S-NovH assay intermediate</td>
+  <td>was_test_substrate_in</td>
+  <td>Stage-specific tethered-precursor methylation tests</td>
+  <td>Methyltransferase added after NovH/NovI.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Beta-keto-S-NovH assay intermediate</td>
+  <td>was_test_substrate_in</td>
+  <td>Stage-specific tethered-precursor methylation tests</td>
+  <td>Methyltransferase added after NovH/NovI/NovJ/NovK.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Stage-specific tethered-precursor methylation tests</td>
+  <td>was_evaluated_by</td>
+  <td>Released-analyte RP-HPLC/scintillation readout</td>
+  <td>Alkaline release from precipitated protein (0.1 M KOH, 60 C, five minutes), followed by RP-HPLC and scintillation counting.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Stage-specific tethered-precursor methylation tests</td>
+  <td>had_additional_readout</td>
+  <td>NovH-bound radiolabel autoradiography readout</td>
+  <td>The autoradiography paragraph names NovO with SAM 1 mM and [3H]-SAM 0.7 uM; SDS gels retained protein-associated label.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>ATP-omitted autoradiography comparator</td>
+  <td>was_compared_in</td>
+  <td>NovH-bound radiolabel autoradiography readout</td>
+  <td>The source reports no difference from the otherwise equivalent ATP-omitted reactions.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Released-analyte RP-HPLC/scintillation readout</td>
+  <td>supports_reported_negative</td>
+  <td>Reported absence of tethered-precursor methylation</td>
+  <td>The summary reports no methylation by NovO or CouO at the three tethered stages.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>NovH-bound radiolabel autoradiography readout</td>
+  <td>has_method_scope_limit</td>
+  <td>Commercial-reagent and method-scope limits</td>
+  <td>The summary includes both enzymes, but the autoradiography methods specifically name NovO. Do not infer every CouO control or universal substrate impossibility; no detection limit is supplied.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Reported absence of tethered-precursor methylation</td>
+  <td>has_interpretation_limit</td>
+  <td>Commercial-reagent and method-scope limits</td>
+  <td>No new direct-binding, native-flux or structure claim follows from this assay-bounded negative.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Sigma spinach ferredoxin assay reagent</td>
+  <td>has_identity_and_role_limit</td>
+  <td>Commercial-reagent and method-scope limits</td>
+  <td>A supplied reagent is not proof of native partnership, direct binding or omission-tested necessity. No unique UniProt accession is justified.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Sigma ferredoxin reductase assay reagent</td>
+  <td>has_identity_and_role_limit</td>
+  <td>Commercial-reagent and method-scope limits</td>
+  <td>No spinach identity is transferred from the adjacent ferredoxin label to the reductase. Sequence-specific grounding remains unavailable.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>2005 supplement NovO assay preparation</td>
+  <td>was_tested_in</td>
+  <td>Free desmethyl-aminocoumarin methylation test</td>
+  <td>NovO or CouO 20 uM; desmethyl-aminocoumarin 1 mM, Tris-HCl 75 mM pH 8.5, SAM 2 mM, BSA 1 mg/mL, DMSO 10%; overnight.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>2005 supplement CouO assay preparation</td>
+  <td>was_tested_in</td>
+  <td>Free desmethyl-aminocoumarin methylation test</td>
+  <td>CouO was tested as the alternative enzyme, not as a mixed NovO/CouO complex.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Free desmethyl-aminocoumarin methylation test</td>
+  <td>gave_bounded_negative</td>
+  <td>No free-aminocoumarin product detected by RP-HPLC</td>
+  <td>RP-HPLC with authentic 8-methyl-aminocoumarin standard detected no product; no quantified limit of detection is asserted.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 16 edges</span></h2>
+<p class="sub">Direct 2005 supplement evidence for staged NovM/NovP/NovN assays around NovO, with unresolved product mass and sequence boundaries. Review #563. The BGC0000834 cathomycin owner retains its unspecified sugar stereocentre and SEEDED status. These precursor and recombinant assays do not resolve that stereocentre or justify an exact-key merge with fully specified novobiocin.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2005 supplement NovM preparation</td>
+  <td>was_supplied_in</td>
+  <td>Ring-C-desmethyl precursor tailoring experiment</td>
+  <td>NovM 1 uM with TDP-L-noviose 200 uM.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>2005 supplement NovP preparation</td>
+  <td>was_supplied_in</td>
+  <td>Ring-C-desmethyl precursor tailoring experiment</td>
+  <td>NovP 1 uM with SAM 1 mM.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>2005 supplement NovN preparation</td>
+  <td>was_supplied_in</td>
+  <td>Ring-C-desmethyl precursor tailoring experiment</td>
+  <td>NovN 1 uM with ATP 4 mM and carbamoyl phosphate. Separate donor concentration is not unambiguously stated.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>2005 supplement NovO preparation</td>
+  <td>was_tested_in</td>
+  <td>Ring-C-desmethyl precursor tailoring experiment</td>
+  <td>NovO was inserted at the listed stages. Its loading is unspecified here and is not borrowed from the earlier tests.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Ring-C-desmethyl precursor tailoring experiment</td>
+  <td>has_staged_order</td>
+  <td>NovM-NovO-NovP-NovN staged incubation</td>
+  <td>Each enzyme was incubated for twelve hours. Starting mixture: desmethyl-novobiocic acid 6 at 1 mM, Tris 75 mM pH 7.5, SAM 2 mM, BSA 1 mg/mL, DMSO 10%.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>NovM-NovO-NovP-NovN staged incubation</td>
+  <td>contributes_to_study_level_result</td>
+  <td>No detected C8 methylation after glycosylation</td>
+  <td>LC-MS evaluation reported no C8 methylation in the glycosylated derivatives. No order-specific numerical conversion is supplied.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Ring-C-desmethyl precursor tailoring experiment</td>
+  <td>has_staged_order</td>
+  <td>NovM-NovP-NovO-NovN staged incubation</td>
+  <td>Each enzyme was incubated for twelve hours. Starting mixture: desmethyl-novobiocic acid 6 at 1 mM, Tris 75 mM pH 7.5, SAM 2 mM, BSA 1 mg/mL, DMSO 10%.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>NovM-NovP-NovO-NovN staged incubation</td>
+  <td>contributes_to_study_level_result</td>
+  <td>No detected C8 methylation after glycosylation</td>
+  <td>LC-MS evaluation reported no C8 methylation in the glycosylated derivatives. No order-specific numerical conversion is supplied.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Ring-C-desmethyl precursor tailoring experiment</td>
+  <td>has_staged_order</td>
+  <td>NovM-NovP-NovN-NovO staged incubation</td>
+  <td>Each enzyme was incubated for twelve hours. Starting mixture: desmethyl-novobiocic acid 6 at 1 mM, Tris 75 mM pH 7.5, SAM 2 mM, BSA 1 mg/mL, DMSO 10%.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>NovM-NovP-NovN-NovO staged incubation</td>
+  <td>contributes_to_study_level_result</td>
+  <td>No detected C8 methylation after glycosylation</td>
+  <td>LC-MS evaluation reported no C8 methylation in the glycosylated derivatives. No order-specific numerical conversion is supplied.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Ring-C-desmethyl precursor tailoring experiment</td>
+  <td>has_source_reported_product</td>
+  <td>Source-labeled NovM,P product</td>
+  <td>Printed formula C29H33NO10; calculated neutral mass 555.2, observed m/z 554.1 [M-H]-. The product list is study-level, not uniquely assigned to one incubation order.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Ring-C-desmethyl precursor tailoring experiment</td>
+  <td>has_source_reported_product</td>
+  <td>Source-labeled NovM,N product</td>
+  <td>Printed formula C29H32N2O11; calculated neutral mass 580.2, observed m/z 579.2 [M-H]-. The product list is study-level, not uniquely assigned to one incubation order.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Ring-C-desmethyl precursor tailoring experiment</td>
+  <td>has_source_reported_product</td>
+  <td>Source-labeled NovM,P,N product</td>
+  <td>Printed formula C30H34N2O11; calculated neutral mass 598.2, observed m/z 597.2 [M-H]-. The product list is study-level, not uniquely assigned to one incubation order.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>Source-labeled NovM,N product</td>
+  <td>has_identity_conflict</td>
+  <td>NovM,N formula versus mass discrepancy</td>
+  <td>Parsing C29H32N2O11 gives nominal neutral mass 584, inconsistent with printed 580.2 and observed 579.2 [M-H]-. Retain all printed values without silently correcting the formula or assigning an exact structure identifier.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>No detected C8 methylation after glycosylation</td>
+  <td>has_interpretation_limit</td>
+  <td>Staged-assay assignment and construct limits</td>
+  <td>Ring-C desmethylation is distinct from sugar-O demethylation. These staged experiments neither prove a stable protein complex nor identify a unique physiological enzyme order, final compound stereochemistry or every assay construct.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+<tr>
+  <td>NovM,N formula versus mass discrepancy</td>
+  <td>limits_product_assignment</td>
+  <td>Staged-assay assignment and construct limits</td>
+  <td>The presence of a NovM,N product in the list does not prove an unlisted NovP-omitted order or failure of NovP in a particular listed incubation.</td>
+  <td class="mono">DOI:10.1021/bi051599o.s001</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

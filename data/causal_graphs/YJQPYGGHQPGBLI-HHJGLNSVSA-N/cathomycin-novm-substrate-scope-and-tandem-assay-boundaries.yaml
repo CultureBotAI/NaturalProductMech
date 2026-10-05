@@ -1,0 +1,226 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novm-substrate-scope-and-tandem-assay-boundaries
+  scope: BIOSYNTHESIS
+  description: 'Separate NovM donor/acceptor evidence and abstract-level tandem incubations,
+    without physical-complex claims. Review #563. The BGC0000834 cathomycin owner
+    retains its unspecified sugar stereocentre and SEEDED status. These precursor
+    and recombinant assays do not resolve that stereocentre or justify an exact-key
+    merge with fully specified novobiocin.'
+  nodes:
+  - node_id: prep
+    label: Freel Meyers 2003 C-terminal His8 NovM preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: rhamnose
+    label: TDP-L-rhamnose donor analogue
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: negative
+    label: Reported lack of rhamnosyl-transfer activity
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: inhibition
+    label: Reported TDP-L-rhamnose inhibition
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: aglycons
+    label: Reported alternative coumarin aglycon acceptance
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: other_prep
+    label: Albermann 2003 NovM assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: panel
+    label: Albermann aglycon and nucleotide-sugar panel
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: products
+    label: Three reported new glycosylation products
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Donor-versus-acceptor specificity and preparation limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: l
+    label: Pi 2004 NovL assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: m
+    label: Pi 2004 NovM assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: p
+    label: Pi 2004 NovP assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: two
+    label: NovL/NovM tandem-incubation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: three
+    label: NovL/NovM/NovP tandem-incubation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: ms
+    label: Time-dependent intermediate and product MS readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: prep
+    predicate: has_bounded_negative_result
+    object: negative
+    notes: The abstract reports no activity with TDP-L-rhamnose; no detection limit
+      or universal rejection of every rhamnose donor is inferred.
+    evidence:
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: rhamnose
+    predicate: was_tested_in
+    object: negative
+    notes: This donor analogue is distinct from the synthetic TDP-L-noviose used for
+      positive turnover.
+    evidence:
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: rhamnose
+    predicate: has_reported_inhibitory_effect
+    object: inhibition
+    notes: Reported Ki is 83.5 +/- 5.5 uM. The abstract does not define the uncertainty,
+      replicate count or inhibition model.
+    evidence:
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: inhibition
+    predicate: was_measured_with
+    object: prep
+    notes: This value belongs to the reported NovM preparation, not native-cell inhibition
+      or antibacterial potency.
+    evidence:
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: prep
+    predicate: accepts_reported_alternative_aglycons
+    object: aglycons
+    notes: Some coumarin acceptor variants support activity. No uninspected compound
+      list or quantitative ranking is reconstructed.
+    evidence:
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+      snippet: variant coumarin aglycones
+  - subject: other_prep
+    predicate: was_tested_in
+    object: panel
+    notes: The primary abstract describes four aglycon analogues and over forty nucleotide
+      sugars; complete construct and individual assay rows remain uninspected.
+    evidence:
+    - reference: DOI:10.1021/ol0341086
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: panel
+    predicate: yielded_reported_products
+    object: products
+    notes: Three new products are reported. The abstract alone does not establish
+      their exact structures or yields.
+    evidence:
+    - reference: DOI:10.1021/ol0341086
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: aglycons
+    predicate: must_be_interpreted_with
+    object: limits
+    notes: Acceptance of selected aglycons does not establish broad sugar-donor promiscuity.
+    evidence:
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: CURATOR_INFERENCE
+      notes: Separate donor and acceptor axes; bounded cross-study comparison.
+  - subject: products
+    predicate: must_be_interpreted_with
+    object: limits
+    notes: Stringency in another panel does not by itself contradict selected aglycon
+      acceptance. No identity between the two engineered preparations is assumed.
+    evidence:
+    - reference: DOI:10.1021/ol0341086
+      evidence_type: CURATOR_INFERENCE
+      notes: Abstract-level comparison, not a reconciled full substrate panel.
+  - subject: l
+    predicate: was_used_in
+    object: two
+    notes: NovL and NovM were co-incubated for pathway assembly.
+    evidence:
+    - reference: DOI:10.1073/pnas.0403526101
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: m
+    predicate: was_used_in
+    object: two
+    notes: The preparation is study-specific; neither its tag nor full sequence is
+      supplied by the inspected abstract.
+    evidence:
+    - reference: DOI:10.1073/pnas.0403526101
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: two
+    predicate: has_three_enzyme_extension
+    object: three
+    notes: The reported extension also includes NovP. Co-incubation is not evidence
+      of a stable physical complex.
+    evidence:
+    - reference: DOI:10.1073/pnas.0403526101
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: p
+    predicate: was_used_in
+    object: three
+    notes: NovP is the additional tailoring enzyme, not a demonstrated structural
+      subunit of a NovL-NovM assembly.
+    evidence:
+    - reference: DOI:10.1073/pnas.0403526101
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: three
+    predicate: was_monitored_by
+    object: ms
+    notes: The abstract reports time-dependent MS detection of intermediates and products.
+      New kinetic values, ion assignments and product yields are not asserted from
+      unverified tables or figures.
+    evidence:
+    - reference: DOI:10.1073/pnas.0403526101
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: ms
+    predicate: has_evidence_boundary
+    object: limits
+    notes: The 2004 quantitative full-text leads remain uncurated; they must not be
+      silently transferred to either 2003 preparation.
+    evidence:
+    - reference: DOI:10.1073/pnas.0403526101
+      evidence_type: CURATOR_INFERENCE
+      notes: Scope of inspected primary abstract.
+curation_history:
+- timestamp: '2026-10-05T00:15:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novm-substrate-scope-and-tandem-assay-boundaries with source-bounded
+    NovM/redox evidence and #563 findings.'
+  llm_assisted: true

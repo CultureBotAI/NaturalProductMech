@@ -702,6 +702,10 @@ causal_graph_refs:
 - cathomycin-novjk-individual-constructs-and-primer-conflicts
 - cathomycin-novjk-reported-assembly-and-sec-interpretation-limits
 - cathomycin-novjk-database-mutants-and-residue-evidence-limits
+- cathomycin-novm-native-identity-and-precursor-glycosylation
+- cathomycin-novm-substrate-scope-and-tandem-assay-boundaries
+- cathomycin-novm-redox-reagents-and-early-methylation-tests
+- cathomycin-novm-staged-tailoring-and-product-mass-conflict
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -776,4 +780,13 @@ curation_history:
     and SEC limits; three database-described NovJ variants. Preserve reaction/strain
     conflicts, primary-versus-database evidence, prior graphs, source fields, chemical
     identity, histories and SEEDED status (#562).'
+  llm_assisted: true
+- timestamp: '2026-10-05T00:15:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add four NovM/redox components: exact native identity and precursor glycosylation;
+    bounded donor/acceptor and tandem assays; commercial redox reagents and early
+    methylation tests; staged tailoring with a product formula/mass conflict. Preserve
+    preparation/method limits, previous graphs, source fields, chemical identity,
+    histories and SEEDED status (#563).'
   llm_assisted: true
