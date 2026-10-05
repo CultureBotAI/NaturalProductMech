@@ -1,0 +1,532 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clon3456-expression-attempts-and-host-limits
+  scope: BIOSYNTHESIS
+  description: 'Host- and construct-specific expression outcomes, without invented
+    purified catalysis. Review #569. Native identity, experimental preparations, observations
+    and inferred mechanisms remain distinct. This partial curation does not change
+    compound identity, source-owned fields, earlier graphs or SEEDED status.'
+  nodes:
+  - node_id: cloN6
+    label: Native cloN6 protein reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB6
+  - node_id: conditions
+    label: Shared expression-method ranges
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: supplement
+    label: pSH1 cobalt, trace-element and methylcobalamin trials
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Expression-outcome and activity limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pca5
+    label: pCA5 C-terminal His6 CloN6 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pca5_prep
+    label: pCA5 C-terminal His6 CloN6 construct expression attempt
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pca5_outcome
+    label: pca5 reported expression outcome
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: psh1
+    label: pSH1 N-terminal His6 CloN6 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: psh1_prep
+    label: pSH1 N-terminal His6 CloN6 construct expression attempt
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: psh1_outcome
+    label: psh1 reported expression outcome
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: pca7
+    label: pCA7 N-terminal His6 CloN6 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pca7_prep
+    label: pCA7 N-terminal His6 CloN6 construct expression attempt
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pca7_outcome
+    label: pca7 reported expression outcome
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: pca11
+    label: pCA11 N-terminal His8 CloN6 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pca11_prep
+    label: pCA11 N-terminal His8 CloN6 construct expression attempt
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pca11_outcome
+    label: pca11 reported expression outcome
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: pca4
+    label: pCA4 N-terminal GST CloN6 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pca4_prep
+    label: pCA4 N-terminal GST CloN6 construct expression attempt
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pca4_outcome
+    label: pca4 reported expression outcome
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: trx
+    label: Reported pET32a N-terminal Trx-His6 CloN6 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: trx_prep
+    label: Reported pET32a N-terminal Trx-His6 CloN6 construct expression attempt
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: trx_outcome
+    label: trx reported expression outcome
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: pca2
+    label: pCA2 pGM9/pSH1 fusion construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pca2_prep
+    label: pCA2 pGM9/pSH1 fusion construct expression attempt
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pca2_outcome
+    label: pca2 reported expression outcome
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: pca8
+    label: pCA8 yeast CloN6 expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pca8_prep
+    label: pCA8 yeast CloN6 expression construct expression attempt
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pca8_outcome
+    label: pca8 reported expression outcome
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cloN6
+    predicate: is_native_reference_for
+    object: pca5_prep
+    notes: Native sequence reference for the intended engineered construct; this does
+      not assert that full-length protein was obtained or assign the fusion a native
+      accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.83; PDF pages are twelve above printed
+        pages.
+  - subject: pca5
+    predicate: was_used_for
+    object: pca5_prep
+    notes: pQE70, T5 promoter; two-step SphI/BglII assembly via pCA5/1 and pCA6.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.83; PDF pages are twelve above printed
+        pages.
+  - subject: pca5_prep
+    predicate: had_reported_outcome
+    object: pca5_outcome
+    notes: E. coli XL1Blue MRF' and BL21(DE3)/pLysS; no overexpression detected and
+      purification unsuccessful (data not shown).
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.83; PDF pages are twelve above printed
+        pages.
+  - subject: pca5_outcome
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Gel size and failed expression do not measure purified activity, native
+      abundance or universal inactivity. An unshown result is not a displayed quantitative
+      assay.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.83; PDF pages are twelve above printed
+        pages.
+  - subject: cloN6
+    predicate: is_native_reference_for
+    object: psh1_prep
+    notes: Native sequence reference for the intended engineered construct; this does
+      not assert that full-length protein was obtained or assign the fusion a native
+      accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.83-84; PDF pages are twelve above
+        printed pages.
+  - subject: psh1
+    predicate: was_used_for
+    object: psh1_prep
+    notes: pRSETB, T7 promoter; BamHI/HindIII insert from pCA1.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.83-84; PDF pages are twelve above
+        printed pages.
+  - subject: psh1_prep
+    predicate: had_reported_outcome
+    object: psh1_outcome
+    notes: Both E. coli XL1Blue MRF' and BL21(DE3)/pLysS showed an approximately60-kDa
+      band instead of expected67.9kDa. FigureIII.1 displays BL21(DE3)/pLysS with2mM
+      IPTG. Purification unsuccessful.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.83-84; PDF pages are twelve above
+        printed pages.
+  - subject: psh1_outcome
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Gel size and failed expression do not measure purified activity, native
+      abundance or universal inactivity. An unshown result is not a displayed quantitative
+      assay.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.83-84; PDF pages are twelve above
+        printed pages.
+  - subject: cloN6
+    predicate: is_native_reference_for
+    object: pca7_prep
+    notes: Native sequence reference for the intended engineered construct; this does
+      not assert that full-length protein was obtained or assign the fusion a native
+      accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.84; PDF pages are twelve above printed
+        pages.
+  - subject: pca7
+    predicate: was_used_for
+    object: pca7_prep
+    notes: pQE31, T5 promoter; BamHI/HindIII subclone of pSH1.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.84; PDF pages are twelve above printed
+        pages.
+  - subject: pca7_prep
+    predicate: had_reported_outcome
+    object: pca7_outcome
+    notes: Tested in XL1Blue MRF' and BL21(DE3)/pLysS; FigureIII.2 specifically shows
+      XL1Blue MRF',1mM IPTG,37C, approximately60kDa instead of65.7kDa; purification
+      unsuccessful in this LB experiment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.84; PDF pages are twelve above printed
+        pages.
+  - subject: pca7_outcome
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Gel size and failed expression do not measure purified activity, native
+      abundance or universal inactivity. An unshown result is not a displayed quantitative
+      assay.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.84; PDF pages are twelve above printed
+        pages.
+  - subject: cloN6
+    predicate: is_native_reference_for
+    object: pca11_prep
+    notes: Native sequence reference for the intended engineered construct; this does
+      not assert that full-length protein was obtained or assign the fusion a native
+      accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.84; PDF pages are twelve above printed
+        pages.
+  - subject: pca11
+    predicate: was_used_for
+    object: pca11_prep
+    notes: pHis8, T7 promoter; BamHI/HindIII insert from pCA9.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.84; PDF pages are twelve above printed
+        pages.
+  - subject: pca11_prep
+    predicate: had_reported_outcome
+    object: pca11_outcome
+    notes: E. coli BL21(DE3)/pLysS; FigureIII.2 at0.5mM IPTG,20C shows approximately60kDa
+      instead of66.7kDa. Purification unsuccessful in this LB experiment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.84; PDF pages are twelve above printed
+        pages.
+  - subject: pca11_outcome
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Gel size and failed expression do not measure purified activity, native
+      abundance or universal inactivity. An unshown result is not a displayed quantitative
+      assay.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.84; PDF pages are twelve above printed
+        pages.
+  - subject: cloN6
+    predicate: is_native_reference_for
+    object: pca4_prep
+    notes: Native sequence reference for the intended engineered construct; this does
+      not assert that full-length protein was obtained or assign the fusion a native
+      accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.86-87; PDF pages are twelve above
+        printed pages.
+  - subject: pca4
+    predicate: was_used_for
+    object: pca4_prep
+    notes: pGEX-4T-1, Tac promoter; Q_f/G_r PCR of pCA3, BamHI/NotI cloning.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.86-87; PDF pages are twelve above
+        printed pages.
+  - subject: pca4_prep
+    predicate: had_reported_outcome
+    object: pca4_outcome
+    notes: E. coli BL21(DE3)/pLysS; FigureIII.5 uses1mM IPTG. Approximately70-kDa
+      band instead of expected91.2kDa; purification unsuccessful.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.86-87; PDF pages are twelve above
+        printed pages.
+  - subject: pca4_outcome
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Gel size and failed expression do not measure purified activity, native
+      abundance or universal inactivity. An unshown result is not a displayed quantitative
+      assay.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.86-87; PDF pages are twelve above
+        printed pages.
+  - subject: cloN6
+    predicate: is_native_reference_for
+    object: trx_prep
+    notes: Native sequence reference for the intended engineered construct; this does
+      not assert that full-length protein was obtained or assign the fusion a native
+      accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.87; PDF pages are twelve above printed
+        pages.
+  - subject: trx
+    predicate: was_used_for
+    object: trx_prep
+    notes: Construction relayed as personal communication from S. Keller and D. Lawson;
+      no independently obtained construct sequence or unique plasmid name.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.87; PDF pages are twelve above printed
+        pages.
+  - subject: trx_prep
+    predicate: had_reported_outcome
+    object: trx_outcome
+    notes: E. coli BL21(DE3); shortened product reported instead of full-length CloN6,
+      data not shown.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.87; PDF pages are twelve above printed
+        pages.
+  - subject: trx_outcome
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Gel size and failed expression do not measure purified activity, native
+      abundance or universal inactivity. An unshown result is not a displayed quantitative
+      assay.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF p.87; PDF pages are twelve above printed
+        pages.
+  - subject: cloN6
+    predicate: is_native_reference_for
+    object: pca2_prep
+    notes: Native sequence reference for the intended engineered construct; this does
+      not assert that full-length protein was obtained or assign the fusion a native
+      accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.87; PDF pages are twelve above printed
+        pages.
+  - subject: pca2
+    predicate: was_used_for
+    object: pca2_prep
+    notes: HindIII fusion of pSH1 with pGM9 for Streptomyces expression.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.87; PDF pages are twelve above printed
+        pages.
+  - subject: pca2_prep
+    predicate: had_reported_outcome
+    object: pca2_outcome
+    notes: S. lividans T7; no overexpression under tested conditions, data not shown.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.87; PDF pages are twelve above printed
+        pages.
+  - subject: pca2_outcome
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Gel size and failed expression do not measure purified activity, native
+      abundance or universal inactivity. An unshown result is not a displayed quantitative
+      assay.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF p.87; PDF pages are twelve above printed
+        pages.
+  - subject: cloN6
+    predicate: is_native_reference_for
+    object: pca8_prep
+    notes: Native sequence reference for the intended engineered construct; this does
+      not assert that full-length protein was obtained or assign the fusion a native
+      accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.67,87; PDF pages are twelve above
+        printed pages.
+  - subject: pca8
+    predicate: was_used_for
+    object: pca8_prep
+    notes: BamHI/NotI fragment from pCA4 transferred into pYES2/NT-C.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.67,87; PDF pages are twelve above
+        printed pages.
+  - subject: pca8_prep
+    predicate: had_reported_outcome
+    object: pca8_outcome
+    notes: S. cerevisiae INVSc1 in the methods; expected71.8-kDa protein not overexpressed,
+      and no other induced protein reported; data not shown.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.67,87; PDF pages are twelve above
+        printed pages.
+  - subject: pca8_outcome
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Gel size and failed expression do not measure purified activity, native
+      abundance or universal inactivity. An unshown result is not a displayed quantitative
+      assay.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.67,87; PDF pages are twelve above
+        printed pages.
+  - subject: conditions
+    predicate: describes_methods_for
+    object: cloN6
+    notes: Shared E. coli methods use100mL LB,OD600 0.5-0.7,16/30/37C,170rpm, IPTG0.1/0.5/1/1.5/2mM
+      and6or20h. This is not a fully crossed matrix for every construct; figure-specific20C
+      conditions are reported separately.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.66,84; PDF pages are twelve above
+        printed pages.
+  - subject: psh1_prep
+    predicate: was_tested_in
+    object: supplement
+    notes: BL21(DE3)/pLysS in LB with1uM cobalt chloride and/or1uM methylcobalamin
+      and/or100uL trace-element solution per100mL. Source reports persistence of the
+      approximately60-kDa product, not restoration of expected67.9-kDa protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.66,83; PDF pages are twelve above
+        printed pages.
+  - subject: supplement
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Unsuccessful supplementation does not establish cofactor independence or
+      identify a degradation mechanism.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.83,91; PDF pages are twelve above
+        printed pages.
+curation_history:
+- timestamp: '2026-10-05T05:03:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-clon3456-expression-attempts-and-host-limits; preserve
+    source, identity, construct and causal limits (#569).
+  llm_assisted: true
+- timestamp: '2026-10-05T05:07:49Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Final author-agent review separates the coexpression gel observation from
+    the excised MS-band observation and types expression attempts as processes, without
+    claiming an isolated protein. Preserve source evidence and owner bytes (#569).
+  llm_assisted: true

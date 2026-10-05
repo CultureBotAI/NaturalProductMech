@@ -1,0 +1,299 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clon3456-constructs-and-literal-primer-conflicts
+  scope: BIOSYNTHESIS
+  description: 'Eight expression constructs, their intermediates and bounded literal-primer
+    models. Review #569. Native identity, experimental preparations, observations
+    and inferred mechanisms remain distinct. This partial curation does not change
+    compound identity, source-owned fields, earlier graphs or SEEDED status.'
+  nodes:
+  - node_id: cloN6
+    label: Native cloN6 protein reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB6
+  - node_id: templates
+    label: clo-BG1 and D1A8 native-cluster PCR templates
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: intermediates
+    label: pCA1, pCA3 and pCA9 PCR cloning intermediates
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: restriction
+    label: pCA5/1 and pCA6 restriction-fragment discrepancies
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: junction
+    label: Literal-primer native-coordinate models
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: limit
+    label: Reported sequencing versus unavailable construct sequence files
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pca5
+    label: pCA5 C-terminal His6 CloN6 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: psh1
+    label: pSH1 N-terminal His6 CloN6 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pca7
+    label: pCA7 N-terminal His6 CloN6 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pca11
+    label: pCA11 N-terminal His8 CloN6 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pca4
+    label: pCA4 N-terminal GST CloN6 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: trx
+    label: Reported pET32a N-terminal Trx-His6 CloN6 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pca2
+    label: pCA2 pGM9/pSH1 fusion construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pca8
+    label: pCA8 yeast CloN6 expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cloN6
+    predicate: is_native_reference_for
+    object: templates
+    notes: Native CDS identity only; plasmid names identify experimental templates,
+      not alternative UniProt entries.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.44,58-59; PDF pages are twelve above
+        printed pages.
+  - subject: templates
+    predicate: were_pcr_templates_for
+    object: intermediates
+    notes: 'pCA1 uses D1A8 and f/r; pCA3 uses clo-BG1 and Q_f/Q_r; pCA9 uses clo-BG1
+      and the forward primer called QE_f in methods but Q_f in the table. pCA3 remained
+      a pGEM-T intermediate: further pQE60 cloning was not performed.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.44,47,58-59; PDF pages are twelve
+        above printed pages.
+  - subject: intermediates
+    predicate: have_literal_primer_models
+    object: junction
+    notes: 'Literal primers: cloN6_f AATTGAACGCGGATCCGTTCCTGCTA; cloN6_r CCGTCTCCGAAGCTTCACGGGGTCA;
+      cloN6Q_f AAATTGAACGGATCCATGTTCC; cloN6Q_r CTCCGTGAGATCTCGGGGTCA; cloN6G_r TCTCCGTGCGGCCGCGGGGTCAT;
+      cloN6SQ_f AACGCGGGCATGCTCCTGCTA. Forward f model25278..25303 and reverse r26991..26967
+      differ from printed ends25304 and26992. Q_f models25277..25298; Q_r26987..26967,
+      not the printed12-nt26976..26987 interval. G_r models26988..26966 versus printed
+      end26989; SQ_f25283..25303. Some8-9nt suffixes are unique only within the source-named
+      locus. Minimal amplicons: pCA1 1714nt, pCA3 1711nt, pCA4 1712nt, pCA5 1705nt,
+      conditional pCA9 1715nt. At native coordinates pCA1 changes the initial ATG
+      to a proline codon, pCA5 predicts F2L and stop-to-Arg, pCA3/pCA4 replace the
+      stop with Arg, and conditional pCA9 preserves the native core. These are primer
+      models, not complete fusion sequences or independent plasmid resequencing.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.44,47,59; PDF pages are twelve above
+        printed pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer alignment and table-11 native-coordinate translation.
+  - subject: junction
+    predicate: reveals_source_conflict
+    object: restriction
+    notes: 'The SphI/BglII pCA5 model has cut positions13,1114 and1694: upstream SphI/SphI
+      interval1101nt and downstream SphI/BglII interval580nt. Methods instead call
+      these0.6kb and1.1kb respectively. The table assigns25283..26391 to C-terminal
+      pCA5/1 and26391..26987 to N-terminal pCA6, conflicting with native orientation
+      and the literal restriction model. These disagreements are retained rather than
+      choosing an unverified corrected construct.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.44,59; PDF pages are twelve above
+        printed pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent restriction geometry of the literal-primer model.
+  - subject: intermediates
+    predicate: have_sequence_evidence_limit
+    object: limit
+    notes: The thesis reports PCR-product sequencing, but actual sequence files were
+      not obtained. The Q_f/QE_f name ambiguity makes pCA9/pCA11 primer reconstruction
+      conditional.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.47,59,83; PDF pages are twelve above
+        printed pages.
+  - subject: cloN6
+    predicate: is_native_reference_for_construct
+    object: pca5
+    notes: pQE70, T5 promoter; two-step SphI/BglII assembly via pCA5/1 and pCA6. The
+      engineered protein is not assigned Q8GHB6.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.44,59,83-87; PDF pages are twelve
+        above printed pages.
+  - subject: cloN6
+    predicate: is_native_reference_for_construct
+    object: psh1
+    notes: pRSETB, T7 promoter; BamHI/HindIII insert from pCA1. The engineered protein
+      is not assigned Q8GHB6.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.44,59,83-87; PDF pages are twelve
+        above printed pages.
+  - subject: cloN6
+    predicate: is_native_reference_for_construct
+    object: pca7
+    notes: pQE31, T5 promoter; BamHI/HindIII subclone of pSH1. The engineered protein
+      is not assigned Q8GHB6.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.44,59,83-87; PDF pages are twelve
+        above printed pages.
+  - subject: cloN6
+    predicate: is_native_reference_for_construct
+    object: pca11
+    notes: pHis8, T7 promoter; BamHI/HindIII insert from pCA9. The engineered protein
+      is not assigned Q8GHB6.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.44,59,83-87; PDF pages are twelve
+        above printed pages.
+  - subject: cloN6
+    predicate: is_native_reference_for_construct
+    object: pca4
+    notes: pGEX-4T-1, Tac promoter; Q_f/G_r PCR of pCA3, BamHI/NotI cloning. The engineered
+      protein is not assigned Q8GHB6.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.44,59,83-87; PDF pages are twelve
+        above printed pages.
+  - subject: cloN6
+    predicate: is_native_reference_for_construct
+    object: trx
+    notes: Construction relayed as personal communication from S. Keller and D. Lawson;
+      no independently obtained construct sequence or unique plasmid name. The engineered
+      protein is not assigned Q8GHB6.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.44,59,83-87; PDF pages are twelve
+        above printed pages.
+  - subject: cloN6
+    predicate: is_native_reference_for_construct
+    object: pca2
+    notes: HindIII fusion of pSH1 with pGM9 for Streptomyces expression. The engineered
+      protein is not assigned Q8GHB6.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.44,59,83-87; PDF pages are twelve
+        above printed pages.
+  - subject: cloN6
+    predicate: is_native_reference_for_construct
+    object: pca8
+    notes: BamHI/NotI fragment from pCA4 transferred into pYES2/NT-C. The engineered
+      protein is not assigned Q8GHB6.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.44,59,83-87; PDF pages are twelve
+        above printed pages.
+  - subject: psh1
+    predicate: was_subcloned_into
+    object: pca7
+    notes: BamHI/HindIII fragment transfer.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.44,84,87; PDF pages are twelve above
+        printed pages.
+  - subject: psh1
+    predicate: was_subcloned_into
+    object: pca2
+    notes: HindIII vector fusion.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.44,84,87; PDF pages are twelve above
+        printed pages.
+  - subject: pca4
+    predicate: was_subcloned_into
+    object: pca8
+    notes: BamHI/NotI transfer into pYES2/NT-C.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.44,84,87; PDF pages are twelve above
+        printed pages.
+  - subject: restriction
+    predicate: qualifies_reconstruction_of
+    object: pca5
+    notes: Source assembly route retained with unresolved size/orientation labels.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.44,59; PDF pages are twelve above
+        printed pages.
+curation_history:
+- timestamp: '2026-10-05T05:03:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-clon3456-constructs-and-literal-primer-conflicts; preserve
+    source, identity, construct and causal limits (#569).
+  llm_assisted: true

@@ -1,0 +1,356 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clon3456-genetics-titers-and-cassette-limits
+  scope: BIOSYNTHESIS
+  description: 'Native deletion and cassette-retaining tag insertion, with six host-specific
+    titers. Review #569. Native identity, experimental preparations, observations
+    and inferred mechanisms remain distinct. This partial curation does not change
+    compound identity, source-owned fields, earlier graphs or SEEDED status.'
+  nodes:
+  - node_id: cloN6
+    label: Native cloN6 protein reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB6
+  - node_id: deleted
+    label: Native-producer delta-cloN6-67 mutant
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: parent
+    label: clo-BG1 intact-cluster cosmid
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: tagged
+    label: clo-CA7 cassette-retaining N-His6 insertion cosmid
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: S. coelicolor M512 with integrated clo-CA7
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: primers
+    label: Tag-insertion primer-table/method disagreement
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: southern
+    label: clo-CA7 integration Southern readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: culture
+    label: Production-culture extraction and HPLC analysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: standard
+    label: Clorobiocin chemical standard in FigureIII.7A
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: n104
+    label: Source-assigned novclobiocin104
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: n109
+    label: Source-assigned novclobiocin109
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: n110
+    label: Source-assigned novclobiocin110
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: cloro
+    label: Source-assigned clorobiocin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: methyl
+    label: Genetically supported pyrrole-methylation involvement
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: proposal
+    label: Proposed coordinated CloN1/CloN6/CloN7 process
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Cassette, host and causal-interpretation limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cloN6
+    predicate: is_native_reference_for_targeted_locus_in
+    object: deleted
+    notes: Native DS12.976 gene inactivation is distinct from the heterologous tag-insertion
+      experiment. Westrich2003 primary abstract supports PCR targeting and product
+      structures; the later thesis names the delta-cloN6-67 culture. Exact deletion
+      endpoints are not invented.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: DOI:10.1002/cbic.200300609
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.90-91; PDF pages are twelve above
+        printed pages.
+  - subject: parent
+    predicate: was_modified_to_make
+    object: tagged
+    notes: Double-joint PCR and lambda-RED recombination insert an N-terminal His6
+      tag with aac(3)IV from pUG019. This cassette lacks FRT sites and oriT and was
+      retained for selection, not excised. The source reports sequencing confirmation,
+      but sequence files were not obtained.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.45,57-58,75,88; PDF pages are twelve
+        above printed pages.
+  - subject: cloN6
+    predicate: is_native_reference_for_targeted_locus_in
+    object: tagged
+    notes: The modified construct is not native Q8GHB6.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.75,88; PDF pages are twelve above
+        printed pages.
+  - subject: tagged
+    predicate: has_literal_primer_conflict
+    object: primers
+    notes: Table forward CAACAAATAGTTTGGATGTCCCAGTGAAATTGAACGCGGAGGTCTAGAGCAGTACCAGCGTACGGCCC;
+      methods forward CAACAAATAGTTTGGATGTCCCAGTGAAATTGAAGCGGAGGTCTAGAGCAGTACCAGCGTACGGCCC;
+      middle TCGATTGGCTGAGCTCATAAACTAGTATGCGGGGTTCTCATCATCATCATCATCATTTC; reverse
+      GTCCCGGAAGTCGTACACGCTGGGCGCATGTAGCAGGAAATGATGATGATGATGATGAGA. The table36-nt
+      arm matches25251..25286; methods lack one C and call the arm35nt. The reverse39-nt
+      arm matches25295..25333 on the opposite strand. No complete cassette/fusion
+      sequence is reconstructed without an inspected sequenced vector.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.47,75,88; PDF pages are twelve above
+        printed pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal homology-arm comparison.
+  - subject: tagged
+    predicate: was_integrated_in
+    object: host
+    notes: PEG-mediated protoplast transformation; apramycin and kanamycin selection.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.75,88-89; PDF pages are twelve above
+        printed pages.
+  - subject: host
+    predicate: has_genotyping_readout
+    object: southern
+    notes: FigureIII.6-2C XhoI pattern contrasts the parent6.6-kb fragment with5.2and2.4kb
+      for the insertion. One integration-mutant lane is displayed, not four displayed
+      replicate genotypes.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.88-89; PDF pages are twelve above
+        printed pages.
+  - subject: deleted
+    predicate: was_cultured_for
+    object: culture
+    notes: Native mutant experiment. YMG preculture2days30C180rpm, cornstarch2-3days33C210rpm,
+      then80mL distillers-solubles medium7-10days33C210rpm are the cited production
+      method.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.51,91; PDF pages are twelve above
+        printed pages.
+  - subject: host
+    predicate: was_cultured_for
+    object: culture
+    notes: Four integration mutants were cultivated; the text does not specify four
+      quantitative replicates per reported titer or how they were summarized.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.91; PDF pages are twelve above printed
+        pages.
+  - subject: standard
+    predicate: was_analytical_reference_in
+    object: culture
+    notes: FigureIII.7A is clorobiocin standard, not a wild-type culture. PanelB is
+      M512/clo-CA7 and panelC is native delta-cloN6-67. Extraction:1mL culture acidified
+      to pH4, twice1mL ethyl acetate,100-300uL methanol and50-100uL injection; RP18
+      HPLC at340nm. Individual-congener response factors, uncertainty and quantitative
+      detection limits are not supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.78,90-91; PDF pages are twelve above
+        printed pages.
+  - subject: deleted
+    predicate: accumulated_structurally_assigned_product
+    object: n109
+    notes: Westrich2003 reports loss of the pyrrole5-methyl group; NMR/MS confirm
+      metabolite structures. No exact chemical identifier is assigned from this abstract.
+    evidence:
+    - reference: DOI:10.1002/cbic.200300609
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+      snippet: NMR and MS analysis
+  - subject: deleted
+    predicate: accumulated_structurally_assigned_product
+    object: n110
+    notes: Reported isomer has pyrrole-2-carboxyl at sugar2-OH instead of3-OH; not
+      an independently grounded complete stereostructure here.
+    evidence:
+    - reference: DOI:10.1002/cbic.200300609
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+  - subject: deleted
+    predicate: accumulated_structurally_assigned_product
+    object: n104
+    notes: Reported derivative lacks the whole pyrrole unit. Antibacterial activity
+      and target mechanisms are not copied into this biosynthesis graph.
+    evidence:
+    - reference: DOI:10.1002/cbic.200300609
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+  - subject: host
+    predicate: did_not_show_detectable_production_of
+    object: cloro
+    notes: Under the reported culture/extraction/HPLC conditions, not a universal
+      absence or a quantitative zero.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.90-91; PDF pages are twelve above
+        printed pages.
+  - subject: deleted
+    predicate: supports_genetic_involvement_in
+    object: methyl
+    notes: Loss of methylated product and altered congener profile support involvement
+      in methylation but not purified CloN6 catalysis, cofactor dependence or reaction
+      timing.
+    evidence:
+    - reference: DOI:10.1002/cbic.200300609
+      evidence_type: CURATOR_INFERENCE
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.82,91; PDF pages are twelve above
+        printed pages.
+  - subject: host
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Retained aac(3)IV, altered expression and host differences prevent attributing
+      the profile solely to direct His-tag inactivation. The source interpretation
+      of impaired CloN7 acyl transfer is not an isolated-enzyme rate or exclusion
+      of polar effects.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.75,91; PDF pages are twelve above
+        printed pages.
+  - subject: methyl
+    predicate: has_unresolved_order_and_assembly
+    object: proposal
+    notes: The early late-methylation interpretation and later proposed pyrrolyl-2-carboxy-S-CloN1
+      substrate/order are not settled by this deletion. The thesis proposes coordinated
+      CloN1/N6/N7 action, not a directly observed physical complex or measured stoichiometry.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.82,91,135-136; PDF pages are twelve
+        above printed pages.
+  - subject: proposal
+    predicate: has_evidence_limit
+    object: limits
+    notes: No activity-tested pure CloN6 preparation or demonstrated stable assembly
+      is supplied by these experiments. CouN7 studies are not silently relabeled as
+      native CloN7 biochemistry.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.91,135-136; PDF pages are twelve
+        above printed pages.
+  - subject: deleted
+    predicate: had_reported_hplc_titer_for
+    object: n104
+    notes: 61.2 ug/mL under the cited culture/extraction/HPLC method. No quantitative
+      replicate count, uncertainty, detection limit or statistical ratio equivalence
+      supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.78,90-91; PDF pages are twelve above
+        printed pages.
+  - subject: deleted
+    predicate: had_reported_hplc_titer_for
+    object: n109
+    notes: 11.1 ug/mL under the cited culture/extraction/HPLC method. No quantitative
+      replicate count, uncertainty, detection limit or statistical ratio equivalence
+      supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.78,90-91; PDF pages are twelve above
+        printed pages.
+  - subject: deleted
+    predicate: had_reported_hplc_titer_for
+    object: n110
+    notes: 3.45 ug/mL under the cited culture/extraction/HPLC method. No quantitative
+      replicate count, uncertainty, detection limit or statistical ratio equivalence
+      supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.78,90-91; PDF pages are twelve above
+        printed pages.
+  - subject: host
+    predicate: had_reported_hplc_titer_for
+    object: n104
+    notes: 24.2 ug/mL under the cited culture/extraction/HPLC method. No quantitative
+      replicate count, uncertainty, detection limit or statistical ratio equivalence
+      supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.78,90-91; PDF pages are twelve above
+        printed pages.
+  - subject: host
+    predicate: had_reported_hplc_titer_for
+    object: n109
+    notes: 3.9 ug/mL under the cited culture/extraction/HPLC method. No quantitative
+      replicate count, uncertainty, detection limit or statistical ratio equivalence
+      supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.78,90-91; PDF pages are twelve above
+        printed pages.
+  - subject: host
+    predicate: had_reported_hplc_titer_for
+    object: n110
+    notes: 0.86 ug/mL under the cited culture/extraction/HPLC method. No quantitative
+      replicate count, uncertainty, detection limit or statistical ratio equivalence
+      supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.78,90-91; PDF pages are twelve above
+        printed pages.
+curation_history:
+- timestamp: '2026-10-05T05:03:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-clon3456-genetics-titers-and-cassette-limits; preserve
+    source, identity, construct and causal limits (#569).
+  llm_assisted: true

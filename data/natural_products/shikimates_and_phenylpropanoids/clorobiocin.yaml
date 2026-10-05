@@ -423,6 +423,12 @@ causal_graph_refs:
 - clorobiocin-clon-heterologous-genetics-products-and-partial-rescue
 - clorobiocin-clon-recombinant-constructs-and-expression-limits
 - clorobiocin-clon-native-clon2-genetics-and-bounded-feeding-evidence
+- clorobiocin-clon3456-native-identities-and-motif-limits
+- clorobiocin-clon3456-bounded-pyrrole-precursor-reactions
+- clorobiocin-clon3456-constructs-and-literal-primer-conflicts
+- clorobiocin-clon3456-expression-attempts-and-host-limits
+- clorobiocin-clon3456-peptide-identification-and-purification-limits
+- clorobiocin-clon3456-genetics-titers-and-cassette-limits
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -513,4 +519,12 @@ curation_history:
     expression and feeding evidence. Preserve primer/motif/mass conflicts, partial
     rescue and unproven ordering/assembly. Preserve previous graphs, source fields,
     identity, histories and SEEDED status (#568).
+  llm_assisted: true
+- timestamp: '2026-10-05T05:03:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add native CloN3-CloN6 references, bounded precursor chemistry and separate
+    CloN6 construct, expression, peptide and genetic evidence. Preserve source conflicts,
+    cassette effects, six host-specific titers, earlier graphs, source fields, identity,
+    histories and SEEDED status (#569).
   llm_assisted: true
