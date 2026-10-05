@@ -24,6 +24,10 @@
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antibacterial</span><span class="tag">cytotoxic</span><span class="tag">enzyme inhibitor</span></p>
+<div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/fervenulin.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -53,7 +57,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">3</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">3</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -75,7 +79,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -94,25 +98,77 @@ isolation report left it.</p>
 
 
 <h2>Bioactivities <span class="tag">17</span></h2>
+<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
 <div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
-<tr><td>A screen for compounds that inhibit replication of Vibrio cholerae chromosome II</td><td>ACTIVE</td><td class="mono">pubchem.aid:504770</td></tr>
-<tr><td>A screen for compounds that inhibit the activity of LtaS in Staphylococcus aureus</td><td>ACTIVE</td><td class="mono">pubchem.aid:720641</td></tr>
-<tr><td>A screen for compounds that inhibit viral RNA polymerase binding and polymerization activities</td><td>ACTIVE</td><td class="mono">PMID:21722674</td></tr>
-<tr><td>High-throughput screen for inhibitors of the GIV GBA-motif interaction with Galpha-i G protein subunits</td><td>ACTIVE</td><td class="mono">pubchem.aid:1224905</td></tr>
-<tr><td>High-throughput screen for inhibitors of the GIV GBA-motif interaction with Galpha-i G protein subunits</td><td>ACTIVE</td><td class="mono">pubchem.aid:1224905</td></tr>
-<tr><td>High-throughput screen for inhibitors of the GIV GBA-motif interaction with Galpha-i G protein subunits, FP Hit Confirmation</td><td>ACTIVE</td><td class="mono">pubchem.aid:1259350</td></tr>
-<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal) in B6D2F1 (BDF1) mice</td><td>ACTIVE</td><td class="mono">pubchem.aid:328</td></tr>
-<tr><td>OTUD3 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">pubchem.aid:1645858</td></tr>
-<tr><td>UCHL1 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">pubchem.aid:1645867</td></tr>
-<tr><td>UCHL1 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">pubchem.aid:1645859</td></tr>
-<tr><td>USP10 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">pubchem.aid:1645863</td></tr>
-<tr><td>USP10 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">pubchem.aid:1645856</td></tr>
-<tr><td>USP17 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">pubchem.aid:1645855</td></tr>
-<tr><td>USP28 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">pubchem.aid:1645857</td></tr>
-<tr><td>USP30 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">pubchem.aid:1645860</td></tr>
-<tr><td>USP8 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">pubchem.aid:1645862</td></tr>
-<tr><td>USP8 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">pubchem.aid:1645853</td></tr>
+<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
+<tr><td>A screen for compounds that inhibit replication of Vibrio cholerae chromosome II</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504770</summary><dl><dt>assay</dt><dd>A screen for compounds that inhibit replication of Vibrio cholerae chromosome II</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504770</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504770, deposited by ICCB-Longwood/NSRB Screening Facility, Harvard Medical School; assay type Other. Target accession AAF95916 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd></dl>
+</details></td></tr>
+<tr><td>A screen for compounds that inhibit the activity of LtaS in Staphylococcus aureus</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:720641</summary><dl><dt>assay</dt><dd>A screen for compounds that inhibit the activity of LtaS in Staphylococcus aureus</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:720641</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 720641, deposited by ICCB-Longwood/NSRB Screening Facility, Harvard Medical School; assay type Other. Target accession NP_371243 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ANTIBACTERIAL</dd></dl>
+</details></td></tr>
+<tr><td>A screen for compounds that inhibit viral RNA polymerase binding and polymerization activities</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:21722674</summary><dl><dt>assay</dt><dd>A screen for compounds that inhibit viral RNA polymerase binding and polymerization activities</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:21722674</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 588519, deposited by ICCB-Longwood/NSRB Screening Facility, Harvard Medical School; assay type Other. Target accession 1RA7_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>High-throughput screen for inhibitors of the GIV GBA-motif interaction with Galpha-i G protein subunits</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1224905</summary><dl><dt>assay</dt><dd>High-throughput screen for inhibitors of the GIV GBA-motif interaction with Galpha-i G protein subunits</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1224905</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1224905, deposited by ICCB-Longwood/NSRB Screening Facility, Harvard Medical School; assay type Screening. Target accession BAE44387 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>High-throughput screen for inhibitors of the GIV GBA-motif interaction with Galpha-i G protein subunits</td><td>ACTIVE</td><td class="mono">UniProtKB:P08753</td><td><details><summary>pubchem.aid:1224905</summary><dl><dt>assay</dt><dd>High-throughput screen for inhibitors of the GIV GBA-motif interaction with Galpha-i G protein subunits</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1224905</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1224905, deposited by ICCB-Longwood/NSRB Screening Facility, Harvard Medical School; assay type Screening.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:P08753</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>High-throughput screen for inhibitors of the GIV GBA-motif interaction with Galpha-i G protein subunits, FP Hit Confirmation</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1259350</summary><dl><dt>assay</dt><dd>High-throughput screen for inhibitors of the GIV GBA-motif interaction with Galpha-i G protein subunits, FP Hit Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1259350</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1259350, deposited by ICCB-Longwood/NSRB Screening Facility, Harvard Medical School; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal) in B6D2F1 (BDF1) mice</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:328</summary><dl><dt>assay</dt><dd>NCI In Vivo Anticancer Drug Screen. Data for tumor model P388 Leukemia (intraperitoneal) in B6D2F1 (BDF1) mice</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:328</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 328, deposited by DTP/NCI; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>OTUD3 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645858</summary><dl><dt>assay</dt><dd>OTUD3 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645858</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645858, deposited by 24642; assay type Other. Target accession NP_056022 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd></dl>
+</details></td></tr>
+<tr><td>UCHL1 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">UniProtKB:P09936</td><td><details><summary>pubchem.aid:1645867</summary><dl><dt>assay</dt><dd>UCHL1 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645867</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645867, deposited by 24642; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:P09936</dd></dl>
+</details></td></tr>
+<tr><td>UCHL1 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:P09936</td><td><details><summary>pubchem.aid:1645859</summary><dl><dt>assay</dt><dd>UCHL1 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645859</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645859, deposited by 24642; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:P09936</dd></dl>
+</details></td></tr>
+<tr><td>USP10 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">UniProtKB:Q14694</td><td><details><summary>pubchem.aid:1645863</summary><dl><dt>assay</dt><dd>USP10 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645863</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645863, deposited by 24642; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:Q14694</dd></dl>
+</details></td></tr>
+<tr><td>USP10 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:Q14694</td><td><details><summary>pubchem.aid:1645856</summary><dl><dt>assay</dt><dd>USP10 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645856</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645856, deposited by 24642; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:Q14694</dd></dl>
+</details></td></tr>
+<tr><td>USP17 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:A8MUK1</td><td><details><summary>pubchem.aid:1645855</summary><dl><dt>assay</dt><dd>USP17 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645855</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645855, deposited by 24642; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:A8MUK1</dd></dl>
+</details></td></tr>
+<tr><td>USP28 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:Q96RU2</td><td><details><summary>pubchem.aid:1645857</summary><dl><dt>assay</dt><dd>USP28 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645857</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645857, deposited by 24642; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:Q96RU2</dd></dl>
+</details></td></tr>
+<tr><td>USP30 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:Q70CQ3</td><td><details><summary>pubchem.aid:1645860</summary><dl><dt>assay</dt><dd>USP30 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645860</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645860, deposited by 24642; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:Q70CQ3</dd></dl>
+</details></td></tr>
+<tr><td>USP8 deubiquitinase inhibition: Dose-response Confirmation</td><td>ACTIVE</td><td class="mono">UniProtKB:P40818</td><td><details><summary>pubchem.aid:1645862</summary><dl><dt>assay</dt><dd>USP8 deubiquitinase inhibition: Dose-response Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645862</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645862, deposited by 24642; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:P40818</dd></dl>
+</details></td></tr>
+<tr><td>USP8 deubiquitinase inhibition: Primary qHTS</td><td>ACTIVE</td><td class="mono">UniProtKB:P40818</td><td><details><summary>pubchem.aid:1645853</summary><dl><dt>assay</dt><dd>USP8 deubiquitinase inhibition: Primary qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645853</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645853, deposited by 24642; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:P40818</dd></dl>
+</details></td></tr>
 </table></div>
 
 

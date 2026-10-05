@@ -24,6 +24,10 @@
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 <span class="tag">cytotoxic</span><span class="tag">enzyme inhibitor</span></p>
+<div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/chlortetracycline.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -54,9 +58,9 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">0</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -75,20 +79,57 @@ isolation report left it.</p>
 
 
 <h2>Bioactivities <span class="tag">12</span></h2>
+<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
 <div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
-<tr><td>Primary fluorescence-based thiol-reactive (MSTI) qHTS assay for identification of artifact compounds.</td><td>1.6834 uM</td><td class="mono">pubchem.aid:1845221</td></tr>
-<tr><td>Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo Assay</td><td>28.1838 uM</td><td class="mono">pubchem.aid:1645870</td></tr>
-<tr><td>Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo Assay</td><td>28.1838 uM</td><td class="mono">pubchem.aid:1645870</td></tr>
-<tr><td>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</td><td>23.9341 uM</td><td class="mono">pubchem.aid:2060322</td></tr>
-<tr><td>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</td><td>23.9341 uM</td><td class="mono">pubchem.aid:2060322</td></tr>
-<tr><td>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</td><td>15.8489 uM</td><td class="mono">pubchem.aid:2202548</td></tr>
-<tr><td>Primary redox qHTS assay for identification of artifact compounds.</td><td>29.9349 uM</td><td class="mono">pubchem.aid:1845223</td></tr>
-<tr><td>qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH1A2) Primary screen</td><td>1.5849 uM</td><td class="mono">pubchem.aid:2202376</td></tr>
-<tr><td>High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis H37Rv</td><td>ACTIVE</td><td class="mono">pubchem.aid:1332</td></tr>
-<tr><td>qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH1A2) Confirmation screens</td><td>ACTIVE</td><td class="mono">pubchem.aid:2061314</td></tr>
-<tr><td>qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH1A2) Confirmation screens</td><td>ACTIVE</td><td class="mono">pubchem.aid:2061314</td></tr>
-<tr><td>qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH3A1) Primary screen</td><td>ACTIVE</td><td class="mono">pubchem.aid:2202377</td></tr>
+<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
+<tr><td>Primary fluorescence-based thiol-reactive (MSTI) qHTS assay for identification of artifact compounds.</td><td>1.6834 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1845221</summary><dl><dt>assay</dt><dd>Primary fluorescence-based thiol-reactive (MSTI) qHTS assay for identification of artifact compounds.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1845221</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845221, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>1.6834</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo Assay</td><td>28.1838 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645870</summary><dl><dt>assay</dt><dd>Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo Assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645870</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>28.1838</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo Assay</td><td>28.1838 uM</td><td class="mono">UniProtKB:Q9BV86</td><td><details><summary>pubchem.aid:1645870</summary><dl><dt>assay</dt><dd>Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo Assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645870</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>28.1838</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q9BV86</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</td><td>23.9341 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2060322</summary><dl><dt>assay</dt><dd>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2060322</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2060322, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>23.9341</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</td><td>23.9341 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2060322</summary><dl><dt>assay</dt><dd>Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha (in N-terminal) cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2060322</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2060322, deposited by NCGC; assay type Confirmatory. Target accession NP_001119587 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>23.9341</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</td><td>15.8489 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202548</summary><dl><dt>assay</dt><dd>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202548</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>15.8489</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>Primary redox qHTS assay for identification of artifact compounds.</td><td>29.9349 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1845223</summary><dl><dt>assay</dt><dd>Primary redox qHTS assay for identification of artifact compounds.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1845223</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845223, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>29.9349</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH1A2) Primary screen</td><td>1.5849 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202376</summary><dl><dt>assay</dt><dd>qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH1A2) Primary screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202376</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202376, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>1.5849</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis H37Rv</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1332</summary><dl><dt>assay</dt><dd>High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis H37Rv</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1332</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1332, deposited by Southern Research Institute; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH1A2) Confirmation screens</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2061314</summary><dl><dt>assay</dt><dd>qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH1A2) Confirmation screens</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2061314</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2061314, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH1A2) Confirmation screens</td><td>ACTIVE</td><td class="mono">UniProtKB:O60503</td><td><details><summary>pubchem.aid:2061314</summary><dl><dt>assay</dt><dd>qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH1A2) Confirmation screens</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2061314</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2061314, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>target enzyme</dt><dd>UniProtKB:O60503</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH3A1) Primary screen</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202377</summary><dl><dt>assay</dt><dd>qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH3A1) Primary screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202377</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202377, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
 </table></div>
 
 

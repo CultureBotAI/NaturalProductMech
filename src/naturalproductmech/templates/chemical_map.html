@@ -4,7 +4,7 @@
 {% block head %}<script defer src="chemical-map.js"></script>{% endblock %}
 {% block wrapclass %} map-page-wrap{% endblock %}
 {% block content %}
-<section id="chemical-map" data-source="data/chemical-structure-map.json">
+<section id="chemical-map" data-source="data/chemical-structure-map.json" data-identifiers="data/chemical-search.json">
   <h1>Chemical structure map</h1>
   <p class="lede">
     This view places {{ total }} records using <strong>chemical structure
@@ -71,9 +71,11 @@
       </div>
       <div>
         <h2>Search results</h2>
+        <p id="map-search-count" role="status" aria-live="polite"></p>
         <ol id="map-results" class="map-results">
           <li>Enter a name, synonym, or identifier.</li>
         </ol>
+        <button id="map-show-more" type="button" hidden>Show more results</button>
       </div>
     </aside>
   </div>

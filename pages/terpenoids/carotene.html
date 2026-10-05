@@ -24,6 +24,10 @@
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antiviral</span><span class="tag">cytotoxic</span><span class="tag">enzyme inhibitor</span></p>
+<details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/carotene.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 <p>A cyclic carotene obtained by dimerisation of all-trans-retinol. A strongly-coloured red-orange pigment abundant in plants and fruit and the most active and important provitamin A carotenoid.</p>
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -44,7 +48,7 @@ terpene, from MIBiG.</p>
 cluster whose host NCBI does not name, which for an uncultured symbiont is the
 honest state — see the discussion below.</p>
 
-<h2>Occurrences <span class="tag">25</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">25</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -176,7 +180,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -194,33 +198,109 @@ isolation report left it.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
+<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
 <div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>2.6609 uM</td><td class="mono">pubchem.aid:624297</td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</td><td>37.1975 uM</td><td class="mono">pubchem.aid:2202234</td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: MV-4-11 cell line</td><td>23.47 uM</td><td class="mono">pubchem.aid:2202233</td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</td><td>18.6429 uM</td><td class="mono">pubchem.aid:2202232</td></tr>
-<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T</td><td>5.5059 uM</td><td class="mono">pubchem.aid:2202551</td></tr>
-<tr><td>Confirmatory qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</td><td>8.9552 uM</td><td class="mono">pubchem.aid:1964105</td></tr>
-<tr><td>High Throughput Screening for Foot and Mouth Disease Virus Antivirals</td><td>5.0119 uM</td><td class="mono">pubchem.aid:1159524</td></tr>
-<tr><td>Late stage assay provider counterscreen results for the probe development effort to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization: Absorbance-based cell-based assay to identify compounds that are cytotoxic to Huh-7.5 cells</td><td>24.7 uM</td><td class="mono">pubchem.aid:485280</td></tr>
-<tr><td>Late stage assay provider counterscreen results for the probe development effort to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization: Luminescence-based biochemical AlphaScreen assay to identify inhibitors of HCV core dimerization</td><td>IC50 34.8 uM</td><td class="mono">pubchem.aid:463085</td></tr>
-<tr><td>Late stage results for the probe development effort to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization: TR-FRET-based biochemical dose response assay for HCV core inhibitors</td><td>IC50 49.751 uM</td><td class="mono">pubchem.aid:2488</td></tr>
-<tr><td>Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</td><td>6.2365 uM</td><td class="mono">pubchem.aid:1964107</td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>18.6429 uM</td><td class="mono">pubchem.aid:1645877</td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>18.6429 uM</td><td class="mono">pubchem.aid:1645877</td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>23.47 uM</td><td class="mono">pubchem.aid:1645876</td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>23.47 uM</td><td class="mono">pubchem.aid:1645876</td></tr>
-<tr><td>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</td><td>35.4813 uM</td><td class="mono">pubchem.aid:2202548</td></tr>
-<tr><td>S16 Schwann cell PMP22 intronic element beta-lactamase assay</td><td>12.5797 uM</td><td class="mono">pubchem.aid:624044</td></tr>
-<tr><td>Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV): Full length NSP2 enzyme counterscreen (CHIKV-NSP2)</td><td>18.3362 uM</td><td class="mono">pubchem.aid:1964101</td></tr>
-<tr><td>Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV): Papain Counterscreen</td><td>18.3362 uM</td><td class="mono">pubchem.aid:1964104</td></tr>
-<tr><td>TR-FRET-based biochemical high-throughput dose response assay to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization.</td><td>IC50 29.693 uM</td><td class="mono">pubchem.aid:2159</td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>18.6429 uM</td><td class="mono">pubchem.aid:1963824</td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>18.6429 uM</td><td class="mono">pubchem.aid:1963824</td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>23.47 uM</td><td class="mono">pubchem.aid:1963823</td></tr>
-<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>23.47 uM</td><td class="mono">pubchem.aid:1963823</td></tr>
-<tr><td>qHTS Assay for Inhibitors of Aldehyde Dehydrogenase 1 (ALDH1A1)</td><td>35.4813 uM</td><td class="mono">pubchem.aid:1030</td></tr>
+<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>2.6609 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624297</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624297</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>2.6609</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</td><td>37.1975 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202234</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202234</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>37.1975</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: MV-4-11 cell line</td><td>23.47 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202233</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: MV-4-11 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202233</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202233, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>23.47</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</td><td>18.6429 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202232</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202232</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>18.6429</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T</td><td>5.5059 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202551</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202551</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202551, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>5.5059</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>Confirmatory qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</td><td>8.9552 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1964105</summary><dl><dt>assay</dt><dd>Confirmatory qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1964105</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>8.9552</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>High Throughput Screening for Foot and Mouth Disease Virus Antivirals</td><td>5.0119 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1159524</summary><dl><dt>assay</dt><dd>High Throughput Screening for Foot and Mouth Disease Virus Antivirals</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1159524</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1159524, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>5.0119</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ANTIVIRAL</dd></dl>
+</details></td></tr>
+<tr><td>Late stage assay provider counterscreen results for the probe development effort to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization: Absorbance-based cell-based assay to identify compounds that are cytotoxic to Huh-7.5 cells</td><td>24.7 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:485280</summary><dl><dt>assay</dt><dd>Late stage assay provider counterscreen results for the probe development effort to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization: Absorbance-based cell-based assay to identify compounds that are cytotoxic to Huh-7.5 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:485280</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 485280, deposited by The Scripps Research Institute Molecular Screening Center; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>24.7</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>Late stage assay provider counterscreen results for the probe development effort to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization: Luminescence-based biochemical AlphaScreen assay to identify inhibitors of HCV core dimerization</td><td>IC50 34.8 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:463085</summary><dl><dt>assay</dt><dd>Late stage assay provider counterscreen results for the probe development effort to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization: Luminescence-based biochemical AlphaScreen assay to identify inhibitors of HCV core dimerization</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:463085</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 463085, deposited by The Scripps Research Institute Molecular Screening Center; assay type Confirmatory. Target accession ABC47431 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>34.8</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Late stage results for the probe development effort to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization: TR-FRET-based biochemical dose response assay for HCV core inhibitors</td><td>IC50 49.751 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2488</summary><dl><dt>assay</dt><dd>Late stage results for the probe development effort to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization: TR-FRET-based biochemical dose response assay for HCV core inhibitors</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2488</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2488, deposited by The Scripps Research Institute Molecular Screening Center; assay type Confirmatory. Target accession ABC47431 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>49.751</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</td><td>6.2365 uM</td><td class="mono">UniProtKB:Q8JUX6</td><td><details><summary>pubchem.aid:1964107</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1964107</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>6.2365</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q8JUX6</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>18.6429 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645877</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645877</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>18.6429</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>18.6429 uM</td><td class="mono">UniProtKB:O96028</td><td><details><summary>pubchem.aid:1645877</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645877</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>18.6429</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O96028</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>23.47 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645876</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645876</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>23.47</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>23.47 uM</td><td class="mono">UniProtKB:O96028</td><td><details><summary>pubchem.aid:1645876</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645876</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>23.47</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O96028</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</td><td>35.4813 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202548</summary><dl><dt>assay</dt><dd>Primary qHTS to identify anti-liver cancer compounds using libraries of approved drugs and bioactive compounds</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202548</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>35.4813</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>S16 Schwann cell PMP22 intronic element beta-lactamase assay</td><td>12.5797 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624044</summary><dl><dt>assay</dt><dd>S16 Schwann cell PMP22 intronic element beta-lactamase assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624044</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624044, deposited by NCGC; assay type Confirmatory. Target accession NP_058733 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>12.5797</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV): Full length NSP2 enzyme counterscreen (CHIKV-NSP2)</td><td>18.3362 uM</td><td class="mono">UniProtKB:Q8JUX6</td><td><details><summary>pubchem.aid:1964101</summary><dl><dt>assay</dt><dd>Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV): Full length NSP2 enzyme counterscreen (CHIKV-NSP2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1964101</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964101, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>18.3362</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q8JUX6</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV): Papain Counterscreen</td><td>18.3362 uM</td><td class="mono">UniProtKB:P00784</td><td><details><summary>pubchem.aid:1964104</summary><dl><dt>assay</dt><dd>Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV): Papain Counterscreen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1964104</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964104, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>18.3362</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P00784</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>TR-FRET-based biochemical high-throughput dose response assay to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization.</td><td>IC50 29.693 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2159</summary><dl><dt>assay</dt><dd>TR-FRET-based biochemical high-throughput dose response assay to identify inhibitors of Hepatitis C Virus (HCV) core protein dimerization.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2159</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2159, deposited by The Scripps Research Institute Molecular Screening Center; assay type Confirmatory. Target accession ABC47431 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>29.693</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>18.6429 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963824</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963824</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>18.6429</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</td><td>18.6429 uM</td><td class="mono">UniProtKB:P43405</td><td><details><summary>pubchem.aid:1963824</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug resistant MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963824</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>18.6429</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P43405</dd></dl>
+</details></td></tr>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>23.47 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963823</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963823</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>23.47</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</td><td>23.47 uM</td><td class="mono">UniProtKB:P43405</td><td><details><summary>pubchem.aid:1963823</summary><dl><dt>assay</dt><dd>Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive MV4-11 cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963823</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>23.47</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P43405</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Inhibitors of Aldehyde Dehydrogenase 1 (ALDH1A1)</td><td>35.4813 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1030</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Aldehyde Dehydrogenase 1 (ALDH1A1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1030</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1030, deposited by NCGC; assay type Confirmatory. Target accession AAP35567 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>35.4813</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd><dt>notes</dt><dd>14 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
+</details></td></tr>
 </table></div>
 
 
