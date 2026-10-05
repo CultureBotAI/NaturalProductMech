@@ -419,6 +419,10 @@ causal_graph_refs:
 - clorobiocin-sugar-elmgt-reporter-and-sugar-supply-limits
 - clorobiocin-clop-native-identity-and-bounded-deletion-evidence
 - clorobiocin-clop-natural-producer-observations-and-unproven-order
+- clorobiocin-clon-native-identities-and-deletion-constructs
+- clorobiocin-clon-heterologous-genetics-products-and-partial-rescue
+- clorobiocin-clon-recombinant-constructs-and-expression-limits
+- clorobiocin-clon-native-clon2-genetics-and-bounded-feeding-evidence
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -501,4 +505,12 @@ curation_history:
     natural-producer metabolomics hypotheses. Retain source-access and method provenance
     limits, untested substrate order and source wording conflict. Preserve previous
     graphs, source fields, identity and SEEDED status (#567).
+  llm_assisted: true
+- timestamp: '2026-10-05T04:01:54Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add native CloN1/CloN2/CloN7 references and separate construct, genetic,
+    expression and feeding evidence. Preserve primer/motif/mass conflicts, partial
+    rescue and unproven ordering/assembly. Preserve previous graphs, source fields,
+    identity, histories and SEEDED status (#568).
   llm_assisted: true

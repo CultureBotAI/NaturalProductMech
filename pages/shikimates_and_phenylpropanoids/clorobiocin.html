@@ -1775,6 +1775,541 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 17 edges</span></h2>
+<p class="sub">Exact native references and bounded deletion construction. Review #568. Native references, constructs and source-assigned products remain distinct; owner identity and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited clorobiocin cluster</td>
+  <td>contains</td>
+  <td>Native cloN1 locus</td>
+  <td>AF329398.1:20853..21140(+), AAN65230.1.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Native cloN1 locus</td>
+  <td>encodes_native_reference</td>
+  <td>CloN1 native reference</td>
+  <td>95 aa; CDS-aware table11 translation exactly matches deposited protein and Q8GHC1. DS 12.976 strain taxon1352936 versus subspecies taxon149682. This is not a resequenced engineered sample.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://www.uniprot.org/uniprotkb/Q8GHC1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Deposited clorobiocin cluster</td>
+  <td>contains</td>
+  <td>Native cloN2 locus</td>
+  <td>AF329398.1:21150..22217(+), AAN65231.1.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Native cloN2 locus</td>
+  <td>encodes_native_reference</td>
+  <td>CloN2 native reference</td>
+  <td>355 aa; CDS-aware table11 translation exactly matches deposited protein and Q8GHC0. DS 12.976 strain taxon1352936 versus subspecies taxon149682. This is not a resequenced engineered sample.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://www.uniprot.org/uniprotkb/Q8GHC0<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Deposited clorobiocin cluster</td>
+  <td>contains</td>
+  <td>Native cloN7 locus</td>
+  <td>AF329398.1:27026..27862(+), AAN65236.1.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Native cloN7 locus</td>
+  <td>encodes_native_reference</td>
+  <td>CloN7 native reference</td>
+  <td>278 aa; CDS-aware table11 translation exactly matches deposited protein and Q8GHB5. DS 12.976 strain taxon1352936 versus subspecies taxon149682. This is not a resequenced engineered sample.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://www.uniprot.org/uniprotkb/Q8GHB5<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Deposited clorobiocin cluster</td>
+  <td>was_carried_by</td>
+  <td>clo-BG1 cluster cosmid</td>
+  <td>Intact cluster with phiC31 integration functions.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>clo-BG1 cluster cosmid</td>
+  <td>was_targeting_template_for</td>
+  <td>clo-AF5 cloN1 replacement cosmid</td>
+  <td>aac(3)IV cassette from pUG019 replaces the cloN1 coding interior.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native cloN1 locus</td>
+  <td>was_targeted_in</td>
+  <td>clo-AF5 cloN1 replacement cosmid</td>
+  <td>Table forward primer CACAGTGCAACACAATCGATGGGGGAATTACGCGAGATGATTCCGGGGATCTCTAGATC; methods instead CACAGTGGAACACAATCGATGGGGGAATTACGCGAGATGATTCCGGGGATCTCTAGATC. Reverse GGCCACGTATATACCTGATGTCCGCATCTGTTGCGCCTAACTAGTCTGGAGCTGCTTC. Method39-nt arms match20817..20855(+) and21176..21138(-); table forward has one upstream base mismatch. The actual experimental primer is not independently established.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>clo-AF5 cloN1 replacement cosmid</td>
+  <td>was_excised_to_form</td>
+  <td>clo-AF6 cassette-excised cloN1 cosmid</td>
+  <td>XbaI/SpeI digestion and compatible-end religation; apramycin-sensitive selection.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>clo-AF6 cassette-excised cloN1 cosmid</td>
+  <td>has_reconstructed_junction</td>
+  <td>Reconstructed cloN1 coding remnant</td>
+  <td>ATGATTCCGGGGATCTCTAGTTAG is24nt including start/stop, with an18-nt internal scar; predicts MIPGISS. The native288-nt CDS is shortened by264nt. This is a model, not a sequenced mutant or observed peptide.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>clo-BG1 cluster cosmid</td>
+  <td>was_targeting_template_for</td>
+  <td>clo-AF3 cassette-retaining cloN7 cosmid</td>
+  <td>The tested cloN7 construct retains aac(3)IV. Listed clo-AF4 is not the plotted mutant.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native cloN7 locus</td>
+  <td>was_targeted_in</td>
+  <td>clo-AF3 cassette-retaining cloN7 cosmid</td>
+  <td>Forward GGCAGACTCCCCAACAGCAGAGAGGACCAACTGAGCATGATTCCGGGGATCTCTAGATC; reverse AGTGTGCGTGGTGCGCCAGCACTCCGACAAGCACCGTTAACTAGTCTGGAGCTGCTTC. Unique39-nt arms match26990..27028(+) and27898..27860(-). TableII.15 instead prints26990..27027 and the reverse interval in ascending order.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>clo-AF3 cassette-retaining cloN7 cosmid</td>
+  <td>has_polar_effect_limit</td>
+  <td>Construct and polar-effect limits</td>
+  <td>Cassette retention relies on a presumed transcription-unit end, not measured absence of downstream effects.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>clo-AF6 cassette-excised cloN1 cosmid</td>
+  <td>has_construct_limit</td>
+  <td>Construct and polar-effect limits</td>
+  <td>Cassette excision is not complete sequence verification or proof excluding every polar effect.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CloN1 native reference</td>
+  <td>has_sequence_based_motif_interpretation</td>
+  <td>CloN1 motif interpretation and wording conflict</td>
+  <td>Native41-46=LGVDSL and44-46=Asp-Ser-Leu. Thesis prose says Asn-Ser-Leu but prints LGVDSL. Carrier-protein/4-prime-phosphopantetheine-site assignment is a sequence inference, not measured loading.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloN1 motif interpretation and wording conflict</td>
+  <td>has_interpretation_limit</td>
+  <td>Construct and polar-effect limits</td>
+  <td>No purified carrier loading, stable complex or catalytic rate follows from motif similarity.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 23 edges</span></h2>
+<p class="sub">Separate mutant genotypes, product readouts and partial rescue. Review #568. Native references, constructs and source-assigned products remain distinct; owner identity and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CloN1 native reference</td>
+  <td>is_native_reference_for_disrupted_locus_in</td>
+  <td>S. coelicolor M512 clo-AF6 mutant</td>
+  <td>clo-AF6, not a native producer or an expressed native-protein measurement.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CloN7 native reference</td>
+  <td>is_native_reference_for_disrupted_locus_in</td>
+  <td>S. coelicolor M512 clo-AF3 mutant</td>
+  <td>clo-AF3, not the cassette-excised clo-AF4.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHB5<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF6 mutant</td>
+  <td>has_reported_genotyping_context</td>
+  <td>Genetics and product-assignment limits</td>
+  <td>Five integrants selected; FigureIII.1D shows two. EcoRI2.4/4.6-kb bands replaced by6.8kb. Selection count is not the number of quantitative titer replicates.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF3 mutant</td>
+  <td>has_reported_genotyping_context</td>
+  <td>Genetics and product-assignment limits</td>
+  <td>Ten integrants selected; FigureIII.2D shows one. BamHI7.2/2.4-kb bands replaced by9.8kb. No full integrated-genome sequence or quantitative replicate count is supplied.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-BG1 comparator</td>
+  <td>was_studied_in</td>
+  <td>Culture-extract HPLC and product assignment</td>
+  <td>Nine-day production at33C/210rpm after YMG and corn-starch precultures; pH4 ethyl-acetate extraction. RP18 HPLC at340nm with clorobiocin reference; separate pyrrole analysis at262nm. No titer uncertainty or congener-specific response factors are supplied.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF6 mutant</td>
+  <td>was_studied_in</td>
+  <td>Culture-extract HPLC and product assignment</td>
+  <td>Nine-day production at33C/210rpm after YMG and corn-starch precultures; pH4 ethyl-acetate extraction. RP18 HPLC at340nm with clorobiocin reference; separate pyrrole analysis at262nm. No titer uncertainty or congener-specific response factors are supplied.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF3 mutant</td>
+  <td>was_studied_in</td>
+  <td>Culture-extract HPLC and product assignment</td>
+  <td>Nine-day production at33C/210rpm after YMG and corn-starch precultures; pH4 ethyl-acetate extraction. RP18 HPLC at340nm with clorobiocin reference; separate pyrrole analysis at262nm. No titer uncertainty or congener-specific response factors are supplied.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-BG1 comparator</td>
+  <td>had_reported_main_product</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>FigureIII.3A also identifies isoclorobiocin and novclobiocin101.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF6 mutant</td>
+  <td>had_reported_titer_for</td>
+  <td>Source-assigned novclobiocin104</td>
+  <td>35mg/L; FigureIII.3B. Congener lacking the acyl substituent, not the owner structure.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF3 mutant</td>
+  <td>had_reported_titer_for</td>
+  <td>Source-assigned novclobiocin104</td>
+  <td>10mg/L; FigureIII.3C. Different mutant, not a replicate of the35mg/L result.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF6 mutant</td>
+  <td>had_reported_product</td>
+  <td>Source-assigned novclobiocin107</td>
+  <td>Additional18-min product, source assigned by FAB-MS/1H-NMR comparison.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF3 mutant</td>
+  <td>had_reported_minor_product</td>
+  <td>Source-assigned novclobiocin107</td>
+  <td>Reported in much smaller amounts; no exact titer supplied.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Culture-extract HPLC and product assignment</td>
+  <td>has_product_structure_limit</td>
+  <td>Genetics and product-assignment limits</td>
+  <td>Negative FAB ions588 for104 and554 for107 differ by34; prose says35Da. TableIII.1 (250MHz,methanol) lacks pyrrole signals for both. No new exact chemical identifier is assigned.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF6 mutant</td>
+  <td>had_reported_nondetection_for</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Under the tested conditions; no quantitative detection threshold.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF3 mutant</td>
+  <td>had_reported_nondetection_for</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Under the tested conditions; not universal zero production.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF6 mutant</td>
+  <td>had_reported_product</td>
+  <td>Source-assigned free pyrrole-2-carboxylic acid</td>
+  <td>HPLC/authentic reference and1H-NMR comparison.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF3 mutant</td>
+  <td>had_reported_product</td>
+  <td>Source-assigned free pyrrole-2-carboxylic acid</td>
+  <td>Same study-level assignment; separate mutant culture.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF6 mutant</td>
+  <td>was_complemented_to_form</td>
+  <td>clo-AF6 plus pAF30 complementation host</td>
+  <td>pAF30 carries cloN1 under constitutive ermE in pUWL201, via pGEM-T/pAF29. Literal primers ACGACACACTGGATCCCAATCGA and TCCCGGCCACGTCTAGACCTGATGTCCGCATCTGTTGCG model368nt and341nt between BamHI/XbaI cuts, preserving the native CDS. The39-nt reverse primer maps21180..21142, not printed21170..21149; plasmid-table coordinates also need caution. Complete experimental plasmid sequence was not obtained.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>clo-AF6 plus pAF30 complementation host</td>
+  <td>partially_restored_production_of</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Approximately60% of pre-inactivation productivity by HPLC, not complete rescue or a purified-enzyme rate.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>clo-AF6 plus pAF30 complementation host</td>
+  <td>supports_assignment_of</td>
+  <td>Genetically supported pyrrolyl-transfer involvement</td>
+  <td>Partial genetic rescue supports cloN1 contribution but does not measure cloN2 expression or exclude every polar effect.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CloN1 native reference</td>
+  <td>has_genetically_supported_involvement_in</td>
+  <td>Genetically supported pyrrolyl-transfer involvement</td>
+  <td>Loss-of-function/product evidence, not individually reconstituted transfer chemistry.</td>
+  <td class="mono">DOI:10.1002/cbic.200500252</td>
+</tr>
+<tr>
+  <td>CloN7 native reference</td>
+  <td>has_genetically_supported_involvement_in</td>
+  <td>Genetically supported pyrrolyl-transfer involvement</td>
+  <td>CloN7 involvement in pyrrolyl attachment; no purified turnover inferred.</td>
+  <td class="mono">DOI:10.1002/cbic.200500252</td>
+</tr>
+<tr>
+  <td>Genetically supported pyrrolyl-transfer involvement</td>
+  <td>has_interpretation_limit</td>
+  <td>Genetics and product-assignment limits</td>
+  <td>No inferred physical assembly, direct carrier-to-carrier transfer or congener antibacterial activity is added.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 18 edges</span></h2>
+<p class="sub">Four recombinant constructs and unsuccessful soluble-enzyme preparation. Review #568. Native references, constructs and source-assigned products remain distinct; owner identity and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>E. coli XL1 Blue MRF- expression host</td>
+  <td>was_used_in</td>
+  <td>IPTG induction and SDS-PAGE comparison</td>
+  <td>Four constructs were tested; FigureIII.4 shows pAF21 at1.5-3.0mM IPTG, not all preparations.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>clo-BG1 PCR template</td>
+  <td>was_pcr_template_for</td>
+  <td>pAF27 C-His6 CloN1 construct</td>
+  <td>pGEM-T/pAF26 then NcoI/BglII into pQE60. Literal310-nt amplicon retains the95-aa core but replaces stop by Arg. Forward20841..20864 and reverse21150..21124 differ from printed endpoints. Full fusion sequence is unverified. Primers GAATTACGCGCCATGGTAAGTGGG and CTGTTGCAGATCTGGCCTCGGCAGCGG.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>pAF27 C-His6 CloN1 construct</td>
+  <td>was_expression_construct_for</td>
+  <td>pAF27-derived CloN1 expression attempt</td>
+  <td>Separate engineered preparation, not the native UniProt reference.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CloN1 native reference</td>
+  <td>is_native_reference_for</td>
+  <td>pAF27-derived CloN1 expression attempt</td>
+  <td>Reference only; tag and primer-dependent changes are not assigned the native accession.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pAF27-derived CloN1 expression attempt</td>
+  <td>has_reported_outcome_in</td>
+  <td>IPTG induction and SDS-PAGE comparison</td>
+  <td>Expected10-kDa overexpression not detected; source says not shown. This does not establish native absence or inactivity.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>clo-BG1 PCR template</td>
+  <td>was_pcr_template_for</td>
+  <td>pAF21 C-His6 CloN2 construct</td>
+  <td>pLitmus28/pAF17 then NcoI/BglII into pQE60. Literal1092-nt amplicon predicts Arg2Gly in the native-length core and stop replacement by Arg; not a sequenced experimental protein. Primers AGGCGCAACCCATGGGGACATCAGGT and CTGTGGGCTGAGATCTAAGTCCATCG.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>pAF21 C-His6 CloN2 construct</td>
+  <td>was_expression_construct_for</td>
+  <td>pAF21-derived insoluble CloN2 preparation</td>
+  <td>Separate engineered preparation, not the native UniProt reference.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CloN2 native reference</td>
+  <td>is_native_reference_for</td>
+  <td>pAF21-derived insoluble CloN2 preparation</td>
+  <td>Reference only; tag and primer-dependent changes are not assigned the native accession.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC0<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pAF21-derived insoluble CloN2 preparation</td>
+  <td>has_reported_outcome_in</td>
+  <td>IPTG induction and SDS-PAGE comparison</td>
+  <td>Source-assigned38.1-kDa band; insoluble under tested conditions and not cleanly purified. No activity assay established.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>clo-BG1 PCR template</td>
+  <td>was_pcr_template_for</td>
+  <td>pAF20 N-His6 CloN2 construct</td>
+  <td>pLitmus28/pAF19 then BamHI/PstI into pRSETB. Literal1094-nt amplicon changes the native-start region; forward span21137..21163 differs from the printed start21136. Full vector-fusion sequence is unverified. Primers CATAGGCGCAACGGATCCGACATCAGG and CTGTGGGCTGCAGTCAAAGTCCATCG.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>pAF20 N-His6 CloN2 construct</td>
+  <td>was_expression_construct_for</td>
+  <td>pAF20-derived CloN2 expression attempt</td>
+  <td>Separate engineered preparation, not the native UniProt reference.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CloN2 native reference</td>
+  <td>is_native_reference_for</td>
+  <td>pAF20-derived CloN2 expression attempt</td>
+  <td>Reference only; tag and primer-dependent changes are not assigned the native accession.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC0<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pAF20-derived CloN2 expression attempt</td>
+  <td>has_reported_outcome_in</td>
+  <td>IPTG induction and SDS-PAGE comparison</td>
+  <td>CloN2 detected only with pAF21 in the reported comparison; no successful pAF20 purification is established.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>clo-BG1 PCR template</td>
+  <td>was_pcr_template_for</td>
+  <td>pAF23 N-His6 CloN7 construct</td>
+  <td>pLitmus28/pAF22 then PstI/HindIII into pRSETB. Literal861-nt amplicon alters the native-start region; forward span27014..27040 differs from printed27013..27040. The fusion is not unmodified native278-aa CloN7. Primers GGACCAACTGAGCCTGCAGATGACAAA and CGACAAGAAGCTTTATGCGGGACGTG.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>pAF23 N-His6 CloN7 construct</td>
+  <td>was_expression_construct_for</td>
+  <td>pAF23-derived CloN7 expression attempt</td>
+  <td>Separate engineered preparation, not the native UniProt reference.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CloN7 native reference</td>
+  <td>is_native_reference_for</td>
+  <td>pAF23-derived CloN7 expression attempt</td>
+  <td>Reference only; tag and primer-dependent changes are not assigned the native accession.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHB5<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pAF23-derived CloN7 expression attempt</td>
+  <td>has_reported_outcome_in</td>
+  <td>IPTG induction and SDS-PAGE comparison</td>
+  <td>Expected34.4-kDa overexpression not detected; source says not shown. No purified CloN7 measurement follows.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>IPTG induction and SDS-PAGE comparison</td>
+  <td>has_interpretation_limit</td>
+  <td>Expression and preparation limits</td>
+  <td>Changes to IPTG, temperature and other hosts did not improve the reported results. FigureIII.4 is a whole-expression comparison, not a purity, solubility or kinetic panel by itself. No native-protein abundance, universal inactivity or stable CloN complex is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 15 edges</span></h2>
+<p class="sub">Native-producer genetics and later feeding challenge a historical pathway-order proposal. Review #568. Native references, constructs and source-assigned products remain distinct; owner identity and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CloN2 native reference</td>
+  <td>is_native_reference_for_disrupted_locus_in</td>
+  <td>Native-producer cloN2 deletion mutant</td>
+  <td>DS12.976; in-frame deletion, not the M512 experiment.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC0<br>DOI:10.1099/mic.0.26314-0</td>
+</tr>
+<tr>
+  <td>Native-producer cloN2 deletion mutant</td>
+  <td>accumulated_source_assigned_product</td>
+  <td>Source-assigned novclobiocin104</td>
+  <td>NMR/LC-MS-supported assignment lacking the sugar acyl substituent.</td>
+  <td class="mono">DOI:10.1099/mic.0.26314-0</td>
+</tr>
+<tr>
+  <td>Native-producer cloN2 deletion mutant</td>
+  <td>accumulated_source_assigned_product</td>
+  <td>Source-assigned free pyrrole-2-carboxylic acid</td>
+  <td>Free acid observed in culture extract.</td>
+  <td class="mono">DOI:10.1099/mic.0.26314-0</td>
+</tr>
+<tr>
+  <td>Native-producer cloN2 deletion mutant</td>
+  <td>was_complemented_to_form</td>
+  <td>cloN2 plasmid-complemented native producer</td>
+  <td>Replicative plasmid carrying cloN2.</td>
+  <td class="mono">DOI:10.1099/mic.0.26314-0</td>
+</tr>
+<tr>
+  <td>cloN2 plasmid-complemented native producer</td>
+  <td>restored_production_of</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Restoration reported; no quantitative degree invented.</td>
+  <td class="mono">DOI:10.1099/mic.0.26314-0</td>
+</tr>
+<tr>
+  <td>Native-producer cloN2 deletion mutant</td>
+  <td>motivated_historical_interpretation</td>
+  <td>Conflicting historical methylation-order interpretations</td>
+  <td>2003 proposed methylation after transfer; this is not established ordering.</td>
+  <td class="mono">DOI:10.1099/mic.0.26314-0</td>
+</tr>
+<tr>
+  <td>CloN2 native reference</td>
+  <td>is_native_reference_for_targeted_locus_in</td>
+  <td>Later pyrrolyl-SNAC feeding study</td>
+  <td>Distinct later mutant-feeding study.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC0<br>DOI:10.1007/s00203-006-0190-9</td>
+</tr>
+<tr>
+  <td>CloN7 native reference</td>
+  <td>is_native_reference_for_targeted_locus_in</td>
+  <td>Later pyrrolyl-SNAC feeding study</td>
+  <td>No assumption of identical earlier constructs.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHB5<br>DOI:10.1007/s00203-006-0190-9</td>
+</tr>
+<tr>
+  <td>Later pyrrolyl-SNAC feeding study</td>
+  <td>reported</td>
+  <td>Fed cloN1/cloN2 mutant observations</td>
+  <td>HPLC/HPLC-MS after pyrrolyl-2-carboxyl-N-acetylcysteamine thioester feeding.</td>
+  <td class="mono">DOI:10.1007/s00203-006-0190-9</td>
+</tr>
+<tr>
+  <td>Fed cloN1/cloN2 mutant observations</td>
+  <td>includes_source_assigned_product</td>
+  <td>Source-assigned novclobiocin109</td>
+  <td>Pyrrolyl transfer observed in cloN1 and cloN2 mutants.</td>
+  <td class="mono">DOI:10.1007/s00203-006-0190-9</td>
+</tr>
+<tr>
+  <td>Later pyrrolyl-SNAC feeding study</td>
+  <td>reported</td>
+  <td>Fed cloN7 mutant observation</td>
+  <td>Transfer not observed in cloN7 mutant; no detection limit supplied.</td>
+  <td class="mono">DOI:10.1007/s00203-006-0190-9</td>
+</tr>
+<tr>
+  <td>Source-assigned novclobiocin109</td>
+  <td>challenged_historical_interpretation</td>
+  <td>Conflicting historical methylation-order interpretations</td>
+  <td>No further methylation to clorobiocin reported; contrasts with2003 proposal.</td>
+  <td class="mono">DOI:10.1007/s00203-006-0190-9</td>
+</tr>
+<tr>
+  <td>Later pyrrolyl-SNAC feeding study</td>
+  <td>motivated</td>
+  <td>Proposed coordinated CloN6/CloN7 process</td>
+  <td>Additional mutant/acid observations support a coordinated-process proposal.</td>
+  <td class="mono">DOI:10.1007/s00203-006-0190-9</td>
+</tr>
+<tr>
+  <td>Proposed coordinated CloN6/CloN7 process</td>
+  <td>has_assembly_evidence_limit</td>
+  <td>Abstract-access and mechanistic limits</td>
+  <td>Not direct physical-complex or stoichiometry evidence.</td>
+  <td class="mono">DOI:10.1007/s00203-006-0190-9</td>
+</tr>
+<tr>
+  <td>Conflicting historical methylation-order interpretations</td>
+  <td>has_access_limit</td>
+  <td>Abstract-access and mechanistic limits</td>
+  <td>Uninspected doses, titers, construct endpoints and isolated-enzyme kinetics are not supplied.</td>
+  <td class="mono">DOI:10.1099/mic.0.26314-0<br>DOI:10.1007/s00203-006-0190-9</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">2</span></h2>

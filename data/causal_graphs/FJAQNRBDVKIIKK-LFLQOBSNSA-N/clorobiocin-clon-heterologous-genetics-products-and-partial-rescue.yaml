@@ -1,0 +1,288 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clon-heterologous-genetics-products-and-partial-rescue
+  scope: BIOSYNTHESIS
+  description: 'Separate mutant genotypes, product readouts and partial rescue. Review
+    #568. Native references, constructs and source-assigned products remain distinct;
+    owner identity and SEEDED status are unchanged.'
+  nodes:
+  - node_id: cloN1
+    label: CloN1 native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC1
+  - node_id: cloN7
+    label: CloN7 native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB5
+  - node_id: wt
+    label: S. coelicolor M512 clo-BG1 comparator
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: n1
+    label: S. coelicolor M512 clo-AF6 mutant
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: n7
+    label: S. coelicolor M512 clo-AF3 mutant
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Culture-extract HPLC and product assignment
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: cloro
+    label: Source-assigned clorobiocin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: n104
+    label: Source-assigned novclobiocin104
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: n107
+    label: Source-assigned novclobiocin107
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: pyrrole
+    label: Source-assigned free pyrrole-2-carboxylic acid
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: clo-AF6 plus pAF30 complementation host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: role
+    label: Genetically supported pyrrolyl-transfer involvement
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Genetics and product-assignment limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cloN1
+    predicate: is_native_reference_for_disrupted_locus_in
+    object: n1
+    notes: clo-AF6, not a native producer or an expressed native-protein measurement.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC1
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 68, sequence 1, taxon149682; retrieved2026-10-05.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.85-87; printed pagination is ten lower.
+  - subject: cloN7
+    predicate: is_native_reference_for_disrupted_locus_in
+    object: n7
+    notes: clo-AF3, not the cassette-excised clo-AF4.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB5
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 51, sequence 1, taxon149682; retrieved2026-10-05.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.85-88; printed pagination is ten lower.
+  - subject: n1
+    predicate: has_reported_genotyping_context
+    object: limits
+    notes: Five integrants selected; FigureIII.1D shows two. EcoRI2.4/4.6-kb bands
+      replaced by6.8kb. Selection count is not the number of quantitative titer replicates.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.86-87; printed pagination is ten lower.
+  - subject: n7
+    predicate: has_reported_genotyping_context
+    object: limits
+    notes: Ten integrants selected; FigureIII.2D shows one. BamHI7.2/2.4-kb bands
+      replaced by9.8kb. No full integrated-genome sequence or quantitative replicate
+      count is supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.86,88; printed pagination is ten lower.
+  - subject: wt
+    predicate: was_studied_in
+    object: assay
+    notes: Nine-day production at33C/210rpm after YMG and corn-starch precultures;
+      pH4 ethyl-acetate extraction. RP18 HPLC at340nm with clorobiocin reference;
+      separate pyrrole analysis at262nm. No titer uncertainty or congener-specific
+      response factors are supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.58,78-79,89-92; printed pagination is ten lower.
+  - subject: n1
+    predicate: was_studied_in
+    object: assay
+    notes: Nine-day production at33C/210rpm after YMG and corn-starch precultures;
+      pH4 ethyl-acetate extraction. RP18 HPLC at340nm with clorobiocin reference;
+      separate pyrrole analysis at262nm. No titer uncertainty or congener-specific
+      response factors are supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.58,78-79,89-92; printed pagination is ten lower.
+  - subject: n7
+    predicate: was_studied_in
+    object: assay
+    notes: Nine-day production at33C/210rpm after YMG and corn-starch precultures;
+      pH4 ethyl-acetate extraction. RP18 HPLC at340nm with clorobiocin reference;
+      separate pyrrole analysis at262nm. No titer uncertainty or congener-specific
+      response factors are supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.58,78-79,89-92; printed pagination is ten lower.
+  - subject: wt
+    predicate: had_reported_main_product
+    object: cloro
+    notes: FigureIII.3A also identifies isoclorobiocin and novclobiocin101.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.89-90; printed pagination is ten lower.
+  - subject: n1
+    predicate: had_reported_titer_for
+    object: n104
+    notes: 35mg/L; FigureIII.3B. Congener lacking the acyl substituent, not the owner
+      structure.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.89-91; printed pagination is ten lower.
+  - subject: n7
+    predicate: had_reported_titer_for
+    object: n104
+    notes: 10mg/L; FigureIII.3C. Different mutant, not a replicate of the35mg/L result.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.89-91; printed pagination is ten lower.
+  - subject: n1
+    predicate: had_reported_product
+    object: n107
+    notes: Additional18-min product, source assigned by FAB-MS/1H-NMR comparison.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.89-91; printed pagination is ten lower.
+  - subject: n7
+    predicate: had_reported_minor_product
+    object: n107
+    notes: Reported in much smaller amounts; no exact titer supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF p.89; printed pagination is ten lower.
+  - subject: assay
+    predicate: has_product_structure_limit
+    object: limits
+    notes: Negative FAB ions588 for104 and554 for107 differ by34; prose says35Da.
+      TableIII.1 (250MHz,methanol) lacks pyrrole signals for both. No new exact chemical
+      identifier is assigned.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.89,91; printed pagination is ten lower.
+  - subject: n1
+    predicate: had_reported_nondetection_for
+    object: cloro
+    notes: Under the tested conditions; no quantitative detection threshold.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF p.89; printed pagination is ten lower.
+  - subject: n7
+    predicate: had_reported_nondetection_for
+    object: cloro
+    notes: Under the tested conditions; not universal zero production.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF p.89; printed pagination is ten lower.
+  - subject: n1
+    predicate: had_reported_product
+    object: pyrrole
+    notes: HPLC/authentic reference and1H-NMR comparison.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.79,91-92; printed pagination is ten lower.
+  - subject: n7
+    predicate: had_reported_product
+    object: pyrrole
+    notes: Same study-level assignment; separate mutant culture.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.79,91-92; printed pagination is ten lower.
+  - subject: n1
+    predicate: was_complemented_to_form
+    object: rescue
+    notes: pAF30 carries cloN1 under constitutive ermE in pUWL201, via pGEM-T/pAF29.
+      Literal primers ACGACACACTGGATCCCAATCGA and TCCCGGCCACGTCTAGACCTGATGTCCGCATCTGTTGCG
+      model368nt and341nt between BamHI/XbaI cuts, preserving the native CDS. The39-nt
+      reverse primer maps21180..21142, not printed21170..21149; plasmid-table coordinates
+      also need caution. Complete experimental plasmid sequence was not obtained.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.53,55,65-66,92; printed pagination is ten lower.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal rescue-amplicon model.
+  - subject: rescue
+    predicate: partially_restored_production_of
+    object: cloro
+    notes: Approximately60% of pre-inactivation productivity by HPLC, not complete
+      rescue or a purified-enzyme rate.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF p.92; printed pagination is ten lower.
+  - subject: rescue
+    predicate: supports_assignment_of
+    object: role
+    notes: Partial genetic rescue supports cloN1 contribution but does not measure
+      cloN2 expression or exclude every polar effect.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF p.92; printed pagination is ten lower.
+  - subject: cloN1
+    predicate: has_genetically_supported_involvement_in
+    object: role
+    notes: Loss-of-function/product evidence, not individually reconstituted transfer
+      chemistry.
+    evidence:
+    - reference: DOI:10.1002/cbic.200500252
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher abstract only; primary genetic result.
+      snippet: deleted separately
+  - subject: cloN7
+    predicate: has_genetically_supported_involvement_in
+    object: role
+    notes: CloN7 involvement in pyrrolyl attachment; no purified turnover inferred.
+    evidence:
+    - reference: DOI:10.1002/cbic.200500252
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher abstract only; primary genetic result.
+  - subject: role
+    predicate: has_interpretation_limit
+    object: limits
+    notes: No inferred physical assembly, direct carrier-to-carrier transfer or congener
+      antibacterial activity is added.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.92-94; printed pagination is ten lower.
+curation_history:
+- timestamp: '2026-10-05T04:01:54Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-clon-heterologous-genetics-products-and-partial-rescue;
+    preserve native, construct, assay and inference limits (#568).
+  llm_assisted: true
