@@ -1,5 +1,37 @@
 # Harmonization: how sources become records
 
+## PathwayMech product links
+
+`related_records` uses the claw-governed `CrossCorpusLink` shape through a local
+subclass with the NaturalProductMech relation vocabulary. Existing
+`SAME_STRUCTURE` links to AntibioticMech keep their original meaning.
+`BIOSYNTHESIZED_BY` links to PathwayMech identify a pathway producing this
+structure; they do not establish pathway use by every `producer_organisms` taxon.
+
+`conf/pathwaymech_links.yaml` is the reviewed join allow-list. The extractor
+reads PathwayMech records at the full hash in `conf/sibling_pins.yaml`, never
+from its working tree. It currently admits linearmycin A/B/C only when their
+MIBiG accession, exact named product and source taxon match the cluster record.
+Ectoine joins through terminal product CHEBI:58515 and the Standard InChIKey in
+the existing pinned ChEBI inventory. Its basis explicitly records the
+Halomonas elongata pathway scope; other producers are unchanged.
+
+```bash
+just extract-pathwaymech-dry --checkout <PathwayMech checkout>
+just extract-pathwaymech --checkout <PathwayMech checkout>
+just extract-pathwaymech --checkout <PathwayMech checkout> --check
+just seed
+just seed-canary naturalproductmech:mibig-54d0e249da
+# Read the canary, then:
+just seed-apply
+```
+
+The manifested `data/raw/pathwaymech_products.tsv` is the offline seeder input.
+Changing a pin or adding a join requires review of that inventory diff.
+The seeder never derives bioactivity classes or producer evidence from these
+links. Generic EC, orthology, family membership and substrate participation
+are not accepted product joins.
+
 Read this before changing `scripts/seed_from_sources.py` or any extractor.
 
 ## The unit of the corpus is a structure

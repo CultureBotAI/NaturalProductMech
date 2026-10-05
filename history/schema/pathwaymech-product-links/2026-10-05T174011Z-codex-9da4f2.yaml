@@ -1,0 +1,26 @@
+history_version: 1
+target:
+  kind: schema
+  path: pathwaymech-product-links.yaml
+  slug: pathwaymech-product-links
+session:
+  id: 2026-10-05T174011Z-codex-9da4f2
+  timestamp: '2026-10-05T17:40:11Z'
+  actors:
+  - type: ai_agent
+    name: Codex
+    model: GPT-6
+    agent_tool: Codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Adopt the governed cross-corpus link shape and reproducible product-to-pathway
+    links
+  details: 'Re-pin claw to 34fa72446c7c8cbcdf0ac084d604d4c8ea0e2c5d and specialize CrossCorpusLink
+    with the existing NaturalProductMech relation enum plus BIOSYNTHESIZED_BY. Extract four
+    reviewed product links from PathwayMech aa305727458c44ab05614901334540e2c87a9f3a: exact
+    MIBiG product and taxon joins for linearmycins A/B/C, and terminal-product InChIKey identity
+    for ectoine. The ectoine basis preserves Halomonas elongata scope and does not add producer
+    or bioactivity claims. Records remain generated from manifested inventories through the
+    validated seeder. The claw revision is prepared locally and requires publication before
+    public vendored-sync can resolve it.'

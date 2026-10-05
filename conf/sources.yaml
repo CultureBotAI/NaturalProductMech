@@ -80,6 +80,16 @@ antibioticmech:
   license: CC BY 4.0
   fills: related_records
 
+pathwaymech:
+  name: PathwayMech
+  description: >-
+    Reviewed product-to-pathway links, extracted at an explicit commit from
+    conf/sibling_pins.yaml. Exact cluster products or terminal-product InChIKeys
+    establish product identity; the links do not add producer or activity claims.
+  homepage: https://github.com/CultureBotAI/PathwayMech
+  license: CC BY 4.0
+  fills: related_records
+
 lotus:
   name: LOTUS
   description: >-

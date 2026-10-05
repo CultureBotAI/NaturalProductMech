@@ -68,6 +68,14 @@ extract-antibioticmech-dry *args:
 extract-antibioticmech *args:
     uv run python scripts/extract_antibioticmech.py {{args}}
 
+# Inspect reviewed product joins at the committed PathwayMech pin, without writing.
+extract-pathwaymech-dry *args:
+    uv run python scripts/extract_pathwaymech.py --dry-run {{args}}
+
+# Rebuild the small product inventory from pinned sibling records and local structures.
+extract-pathwaymech *args:
+    uv run python scripts/extract_pathwaymech.py {{args}}
+
 # Free check once cached: how many LOTUS triples touch corpus structures.
 extract-lotus-dry *args:
     uv run python scripts/extract_lotus.py --dry-run {{args}}

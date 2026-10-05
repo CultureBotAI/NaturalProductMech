@@ -118,6 +118,14 @@ inventory that computes cross-corpus links.
 
 ## Project-authored material
 
+**PathwayMech** — CultureBotAI and contributors. Project-authored records and
+mappings are CC BY 4.0. The product-link inventory records the exact commit in
+`conf/sibling_pins.yaml`. It derives four links from two curated records,
+using MIBiG cluster products and the existing ChEBI structure inventory;
+upstream attributions remain those stated above. No pathway narrative or
+upstream database dump is copied.
+<https://github.com/CultureBotAI/PathwayMech>
+
 Project-authored data and narrative documentation are [CC BY 4.0](LICENSE-DATA).
 Project-authored code, schemas, scripts, tests and website templates are
 [BSD-3-Clause](LICENSE-CODE). Source material retains its applicable terms and

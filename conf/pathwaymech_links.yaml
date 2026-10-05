@@ -1,0 +1,9 @@
+# Reviewed joins. Adding another pathway is an explicit curation change.
+pathways:
+  - file: data/pathways/linearmycin-biosynthetic-gene-cluster.yaml
+    identifier: MIBiG:BGC0002072
+    join: SAME_MIBIG_PRODUCT
+  - file: data/pathways/ectoine-biosynthesis.yaml
+    identifier: MetaCyc:P101-PWY
+    join: SAME_TERMINAL_PRODUCT_INCHIKEY
+    product: CHEBI:58515

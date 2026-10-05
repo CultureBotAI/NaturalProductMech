@@ -208,6 +208,14 @@ bioactivities:
   value: 10.0
   units: uM
   target_enzyme: UniProtKB:P08684
+related_records:
+- corpus: PathwayMech
+  identifier: MetaCyc:P101-PWY
+  relation: BIOSYNTHESIZED_BY
+  basis: 'SAME_TERMINAL_PRODUCT_INCHIKEY: CHEBI:58515 in the pinned ChEBI inventory;
+    pathway taxon NCBITaxon:2746. Product identity only; no assertion that this record''s
+    other producer taxa use this pathway.'
+  source_version: aa305727458c44ab05614901334540e2c87a9f3a
 bgc_class:
 - OTHER
 xrefs:
@@ -666,3 +674,7 @@ curation_history:
     thpC to UniProtKB:Q6QUY8 through EMBL AY524544 protein AAS02096.1; and linked
     the inferred terminal ring-closure reaction to RHEA:17281.
   llm_assisted: true
+- timestamp: '2026-10-05T17:41:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
