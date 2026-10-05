@@ -810,6 +810,10 @@ causal_graph_refs:
 - coumermycin-a1-couo-constructs-and-soluble-protein-preparations
 - coumermycin-a1-couo-lysate-normalization-and-mutant-endpoint-limits
 - coumermycin-a1-couo-sah-structure-dimer-and-model-limits
+- coumermycin-a1-coun17-native-identities-and-annotation-limits
+- coumermycin-a1-coun17-carrier-loading-and-terminal-transfer
+- coumermycin-a1-coun17-reversible-shuttling-and-covalent-intermediate
+- coumermycin-a1-coun17-engineered-substrate-panel-and-supporting-material-limits
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -850,4 +854,12 @@ curation_history:
     ten mutant constructs, lysate-normalized endpoint comparisons and SAH/SEC structural
     evidence versus models. Preserve source-label conflicts, previous CouL graph,
     chemical identity, source fields, history and SEEDED status (#556).'
+  llm_assisted: true
+- timestamp: '2026-10-05T05:40:41Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add four CouN1/CouN7 components for exact native identities, bounded forward
+    and reversible transfer, and engineered-substrate breadth. Preserve abstract-only
+    limits, donor-label conflicts, prior graphs, source fields, chemical identity,
+    histories and SEEDED status (#570).
   llm_assisted: true

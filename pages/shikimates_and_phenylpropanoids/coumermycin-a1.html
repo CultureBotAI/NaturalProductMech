@@ -1077,6 +1077,408 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">9 nodes, 10 edges</span></h2>
+<p class="sub">Native CouN1/CouN7 identities and database-versus-assay boundaries. Partial curation; review #570. Native references, experimental preparations and inferred states remain distinct. Source fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited coumermycin cluster locus</td>
+  <td>contains</td>
+  <td>Native couN1 locus</td>
+  <td>AF235050.4 plus-strand CDS 13526..13813, 1-based inclusive. Source: S. rishiriensis DSM 40489, taxon 68264.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native couN1 locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouN1 sequence reference</td>
+  <td>Table-11 CDS-aware translation equals AAG29786.1 and all 95 UniProt residues. Historical name cumI in .1; AF235050.1/.2:9413..9700; .3:13524..13811. All four deposited protein sequences agree.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U6<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>CouN1 database annotation</td>
+  <td>does_not_identify_experimental_sample</td>
+  <td>Native reference versus assay identity limits</td>
+  <td>Native sequence agreement does not identify a complete recombinant fusion, expression strain or experimental aliquot.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U6</td>
+</tr>
+<tr>
+  <td>Deposited coumermycin cluster locus</td>
+  <td>contains</td>
+  <td>Native couN7 locus</td>
+  <td>AF235050.4 plus-strand CDS 19697..20542, 1-based inclusive. Source: S. rishiriensis DSM 40489, taxon 68264.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native couN7 locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouN7 sequence reference</td>
+  <td>Table-11 CDS-aware translation equals AAG29792.1 and all 281 UniProt residues. Historical name cumL in .1; AF235050.1:15099..15944; .2:15582..16427; .3:19693..20538. All four deposited protein sequences agree.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>CouN7 database annotation</td>
+  <td>does_not_identify_experimental_sample</td>
+  <td>Native reference versus assay identity limits</td>
+  <td>Native sequence agreement does not identify a complete recombinant fusion, expression strain or experimental aliquot.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0</td>
+</tr>
+<tr>
+  <td>Native CouN1 sequence reference</td>
+  <td>has_database_annotation</td>
+  <td>CouN1 database annotation</td>
+  <td>UniProt calls this an uncharacterized protein, with an inferred carrier domain at residues 32-81. Its automated phosphopantetheine annotation does not measure modification occupancy.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U6</td>
+</tr>
+<tr>
+  <td>Native CouN7 sequence reference</td>
+  <td>has_database_annotation</td>
+  <td>CouN7 database annotation</td>
+  <td>The submitted name is putative hydrolase. GO:0004806 triacylglycerol lipase activity is IEA:TreeGrafter, not a measured coumermycin-pathway reaction; it is not adopted as such.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0</td>
+</tr>
+<tr>
+  <td>Native CouN7 sequence reference</td>
+  <td>contains_reference_residue</td>
+  <td>Native CouN7 Ser101</td>
+  <td>Positions 96-106 are YLFASSGGGVT; residue 101 is Ser in all four deposits. This does not independently establish experimental construct numbering or a complete S101A sequence.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0</td>
+</tr>
+<tr>
+  <td>Native CouN7 Ser101</td>
+  <td>has_construct_mapping_limit</td>
+  <td>Native reference versus assay identity limits</td>
+  <td>No experimental plasmid sequence or tag-junction reconstruction was obtained for the abstract-level study.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 16 edges</span></h2>
+<p class="sub">Abstract-bounded 2006 loading and transfer evidence. Partial curation; review #570. Native references, experimental preparations and inferred states remain distinct. Source fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native CouN1 sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>Experimental apo-CouN1</td>
+  <td>Reported E. coli-purified protein; tags unspecified.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U6<br>DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Native CouN7 sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>Experimental CouN7</td>
+  <td>Reported E. coli-purified enzyme; exact fusion unspecified.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0<br>DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Assay Sfp reagent</td>
+  <td>catalyzed</td>
+  <td>Carrier loading</td>
+  <td>Sfp installs the supplied acyl-pantetheinyl moieties.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Experimental apo-CouN1</td>
+  <td>was_substrate_in</td>
+  <td>Carrier loading</td>
+  <td>Apo carrier, not already loaded donor.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Synthetic pyrrolyl and methylpyrrolyl CoAs</td>
+  <td>provided_donors_for</td>
+  <td>Carrier loading</td>
+  <td>Chemically supplied substrates, not native precursor flux.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Carrier loading</td>
+  <td>formed</td>
+  <td>Acyl-holo CouN1 donor forms</td>
+  <td>Carrier-linked thioesters.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Acyl-holo CouN1 donor forms</td>
+  <td>was_donor_in</td>
+  <td>Surrogate transfer assay</td>
+  <td>Carrier-tethered acyl transfer.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Descarbamoylnovobiocin acceptor</td>
+  <td>was_acceptor_in</td>
+  <td>Surrogate transfer assay</td>
+  <td>Noviose-sugar acceptor.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>catalyzed</td>
+  <td>Surrogate transfer assay</td>
+  <td>Acyltransferase activity.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Surrogate transfer assay</td>
+  <td>formed_reported_product</td>
+  <td>Methylpyrrolyl surrogate product</td>
+  <td>With methylpyrrolyl donor, the product has CH3 instead of clorobiocin ring Cl; not clorobiocin.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Acyl-holo CouN1 donor forms</td>
+  <td>provided_methylpyrrolyl_donor_for</td>
+  <td>Double-transfer assay</td>
+  <td>This result concerns the methylated donor form.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Coumermycin penultimate precursor</td>
+  <td>was_acceptor_in</td>
+  <td>Double-transfer assay</td>
+  <td>Distinct from the monomeric surrogate.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>catalyzed</td>
+  <td>Double-transfer assay</td>
+  <td>Two acyl transfers.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Double-transfer assay</td>
+  <td>formed_reported_product</td>
+  <td>coumermycin A1</td>
+  <td>Source-reported pathway completion in vitro.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Surrogate transfer assay</td>
+  <td>has_evidence_limit</td>
+  <td>Abstract-access limits</td>
+  <td>No assay concentrations, kinetics, yields or exact Sfp accession inferred.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Double-transfer assay</td>
+  <td>has_evidence_limit</td>
+  <td>Abstract-access limits</td>
+  <td>No native-cell flux, microscopic site order or stable protein complex established here.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 13 edges</span></h2>
+<p class="sub">Abstract-bounded 2007 reversible transfer and intermediate evidence. Partial curation; review #570. Native references, experimental preparations and inferred states remain distinct. Source fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native CouN7 sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>Experimental CouN7</td>
+  <td>Reference identity is not complete assay-construct identity.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0<br>DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>has_reported_engineered_variant</td>
+  <td>Reported CouN7 S101A preparation</td>
+  <td>S101A is not assigned the native accession; primers and complete sequence were not obtained.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Radiolabeled acetyl-S-CouN1 donor</td>
+  <td>was_used_in</td>
+  <td>Transient enzyme labeling</td>
+  <td>The donor carried carbon-14-labeled acetyl.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>was_transiently_labeled_in</td>
+  <td>Transient enzyme labeling</td>
+  <td>Covalent-label evidence, not an atomic structure.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Transient enzyme labeling</td>
+  <td>supports_reported_intermediate</td>
+  <td>Reported O-acyl-Ser101-CouN7 intermediate</td>
+  <td>Combined labeling and mutational evidence supports the reported intermediate assignment.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Reported CouN7 S101A preparation</td>
+  <td>had_reported_activity_loss</td>
+  <td>Reported S101A activity loss</td>
+  <td>The source calls the substitution inactivating; no quantitative residual activity is supplied here.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Reported S101A activity loss</td>
+  <td>supports_reported_intermediate</td>
+  <td>Reported O-acyl-Ser101-CouN7 intermediate</td>
+  <td>Mutation supports but does not independently image the acylated serine.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>catalyzed</td>
+  <td>Bidirectional coumermycin-arm transfer</td>
+  <td>Both directions on both coumermycin arms.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>catalyzed</td>
+  <td>Inter-scaffold acyl shuttling</td>
+  <td>Net acyl exchange between scaffolds, including surrogate groups.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Descarbamoylnovobiocin scaffold</td>
+  <td>participated_in</td>
+  <td>Inter-scaffold acyl shuttling</td>
+  <td>Source-named scaffold; no universal substrate preference inferred.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>coumermycin A1</td>
+  <td>participated_in</td>
+  <td>Inter-scaffold acyl shuttling</td>
+  <td>Transfer reported in both directions.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Reported O-acyl-Ser101-CouN7 intermediate</td>
+  <td>has_interpretation_limit</td>
+  <td>Mechanistic and construct limits</td>
+  <td>No independently reconstructed mutant, folding control, equilibrium constant or catalytic rate is supplied by the inspected abstract.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Bidirectional coumermycin-arm transfer</td>
+  <td>has_interpretation_limit</td>
+  <td>Mechanistic and construct limits</td>
+  <td>No stable assembly or native-cell reverse flux follows from this in-vitro result.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 15 edges</span></h2>
+<p class="sub">Abstract-level substrate breadth with separately inspected chemical supporting material. Partial curation; review #570. Native references, experimental preparations and inferred states remain distinct. Source fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native CouN1 sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>Experimental CouN1</td>
+  <td>Native reference, not an experimental fusion sequence.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U6<br>DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Native CouN7 sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>Experimental CouN7</td>
+  <td>Native reference, not an experimental fusion sequence.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0<br>DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Experimental CouN1</td>
+  <td>was_substrate_in</td>
+  <td>Carrier-loading panel</td>
+  <td>Purified carrier tested for priming.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Assay Sfp reagent</td>
+  <td>catalyzed</td>
+  <td>Carrier-loading panel</td>
+  <td>Assay reagent, not a proven native cluster partner; accession unresolved.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Synthetic CoA donor panel</td>
+  <td>were_tested_in</td>
+  <td>Carrier-loading panel</td>
+  <td>Synthetic acyl-CoA analogues.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Carrier-loading panel</td>
+  <td>formed_loaded_carrier_forms</td>
+  <td>Acyl-S-CouN1 panel</td>
+  <td>Acyl-carrier thioesters used in the transfer tests.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Acyl-S-CouN1 panel</td>
+  <td>were_donors_in</td>
+  <td>Acyl-transfer panel</td>
+  <td>Carrier-linked substrates.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>catalyzed</td>
+  <td>Acyl-transfer panel</td>
+  <td>Acyltransferase tested on the supplied panel.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Descarbamoylnovobiocin</td>
+  <td>was_acceptor_in</td>
+  <td>Acyl-transfer panel</td>
+  <td>Transfer to the noviosyl 3-prime hydroxyl.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Acyl-transfer panel</td>
+  <td>yielded_reported_panel</td>
+  <td>Reported 21 engineered variants</td>
+  <td>Aggregate reported count, not individually resolved product identities or coumermycin congeners.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Supporting chemical-donor synthesis</td>
+  <td>prepared_reagents_for</td>
+  <td>Synthetic CoA donor panel</td>
+  <td>The sixteen-page supplement describes chemical synthesis and NMR/MS characterization of donors numbered 5-prime through 27-prime. These are precursor-reagent preparations, not protein purification or an enzyme-activity table.</td>
+  <td class="mono">DOI:10.1021/bi700433v.s002</td>
+</tr>
+<tr>
+  <td>Synthetic CoA donor panel</td>
+  <td>have_source_label_conflicts</td>
+  <td>Supplement name and drawing conflicts</td>
+  <td>For 9-prime, the heading says Thiaoxazole while the reagent text names thiazole and the drawing has N/S. For 17-prime, the heading says 2,5-dimethylisooxazole while reagent text says 3,5-dimethyl. The discrepancies remain unresolved; no exact chemical identifiers are assigned from these headings.</td>
+  <td class="mono">DOI:10.1021/bi700433v.s002</td>
+</tr>
+<tr>
+  <td>Supplement name and drawing conflicts</td>
+  <td>constrain_exact_identity</td>
+  <td>Individual acceptance and identity limits</td>
+  <td>No complete chemical reconstruction or silent correction is asserted.</td>
+  <td class="mono">DOI:10.1021/bi700433v.s002</td>
+</tr>
+<tr>
+  <td>Reported 21 engineered variants</td>
+  <td>have_evidence_limit</td>
+  <td>Individual acceptance and identity limits</td>
+  <td>Do not assign individual yields, rates, stereochemical structures or antibacterial observations from the abstract-level count.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Supporting chemical-donor synthesis</td>
+  <td>does_not_establish_individual_conversion</td>
+  <td>Individual acceptance and identity limits</td>
+  <td>Twenty-three donor headings (5-prime through 27-prime) are not a one-to-one list of the twenty-one reported products. The inspected supplement cannot establish which two donors failed, or whether that is the explanation for the differing counts.</td>
+  <td class="mono">DOI:10.1021/bi700433v.s002<br>DOI:10.1021/bi700433v</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
