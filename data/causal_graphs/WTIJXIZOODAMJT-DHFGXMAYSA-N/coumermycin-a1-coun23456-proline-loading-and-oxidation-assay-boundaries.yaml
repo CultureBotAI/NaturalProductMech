@@ -1,0 +1,214 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-coun23456-proline-loading-and-oxidation-assay-boundaries
+  scope: BIOSYNTHESIS
+  description: 'Primary CouN4/CouN5 activation and carrier loading, without transferring
+    the CloN3 oxidation assay. Partial curation; author-agent review #572. Native
+    references, engineered alleles, genetic phenotypes and direct biochemical evidence
+    are distinct; prior graphs and SEEDED status are preserved.'
+  nodes:
+  - node_id: couN4
+    label: Native CouN4 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U3
+  - node_id: couN5
+    label: Native CouN5 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U2
+  - node_id: couN3
+    label: Native CouN3 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U4
+  - node_id: n4prep
+    label: Reported experimental CouN4 preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: n5prep
+    label: Reported holo-CouN5 preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: proline
+    label: L-proline substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: activation
+    label: Reported proline activation and carrier loading
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: amp
+    label: Reported L-prolyl-AMP intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: loaded
+    label: Reported prolyl-S-CouN5
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: oxidation
+    label: CloN3 rapid-quench oxidation experiment
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Abstract-only construct, specificity and assembly limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: n4prep
+    predicate: has_native_sequence_reference
+    object: couN4
+    notes: Native 501-aa reference is grounded independently to the producer deposit.
+      The primary abstract names CouN4 but does not identify the complete tagged construct,
+      strain-specific sample sequence or purity.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Garneau et al. 2005 primary abstract, PMID:15723521. Full paper, assay
+        methods and supplement not obtained.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native reference, not full assay-fusion identity.
+      retrieved_on: '2026-10-05'
+  - subject: n5prep
+    predicate: has_native_sequence_reference
+    object: couN5
+    notes: Native 89-aa reference is grounded independently. Holo status denotes phosphopantetheinylation,
+      not a separately sequenced UniProt isoform; the abstract does not specify complete
+      experimental fusion or modified-residue evidence.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Garneau et al. 2005 primary abstract, PMID:15723521. Full paper, assay
+        methods and supplement not obtained.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native reference only.
+      retrieved_on: '2026-10-05'
+  - subject: n4prep
+    predicate: catalyzed_reported_activation_in
+    object: activation
+    notes: The 2005 primary abstract explicitly includes CouN4 in L-proline selection
+      and activation as L-prolyl-AMP. No quantitative specificity panel, ATP-exchange
+      rate or reaction concentration is available from this abstract.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Garneau et al. 2005 primary abstract, PMID:15723521. Full paper, assay
+        methods and supplement not obtained.
+      retrieved_on: '2026-10-05'
+  - subject: proline
+    predicate: was_selected_substrate_in
+    object: activation
+    notes: Adenylate activation precedes carrier loading in the reported biochemical
+      scheme, not inferred from gene order.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Garneau et al. 2005 primary abstract, PMID:15723521. Full paper, assay
+        methods and supplement not obtained.
+      retrieved_on: '2026-10-05'
+  - subject: activation
+    predicate: formed_reported_intermediate
+    object: amp
+    notes: L-prolyl-AMP is explicitly named; no raw intermediate spectrum or detailed
+      assay method was inspected.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Garneau et al. 2005 primary abstract, PMID:15723521. Full paper, assay
+        methods and supplement not obtained.
+      retrieved_on: '2026-10-05'
+  - subject: n5prep
+    predicate: was_carrier_in
+    object: activation
+    notes: The abstract explicitly includes the holo form of CouN5 among the peptidyl
+      carrier proteins loaded as a phosphopantetheinyl thioester.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Garneau et al. 2005 primary abstract, PMID:15723521. Full paper, assay
+        methods and supplement not obtained.
+      retrieved_on: '2026-10-05'
+      snippet: holo form
+  - subject: activation
+    predicate: produced_reported_carrier_state
+    object: loaded
+    notes: Prolyl thioester on holo-CouN5 is the reported carrier-bound state; no
+      residue-specific site, stoichiometric loading fraction or physical CouN4-CouN5
+      complex is inferred.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Garneau et al. 2005 primary abstract, PMID:15723521. Full paper, assay
+        methods and supplement not obtained.
+      retrieved_on: '2026-10-05'
+  - subject: loaded
+    predicate: has_downstream_assay_identity_limit
+    object: oxidation
+    notes: The next rapid-quench/ESI-FTMS result in the abstract names flavoprotein
+      CloN3, not CouN3. The abstract alone does not unambiguously identify which PCP
+      sample was used in that oxidation experiment.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: CURATOR_INFERENCE
+      notes: Garneau et al. 2005 primary abstract, PMID:15723521. Full paper, assay
+        methods and supplement not obtained.
+      retrieved_on: '2026-10-05'
+  - subject: oxidation
+    predicate: does_not_directly_measure
+    object: couN3
+    notes: Do not transfer the CloN3 oxidation experiment, transient pyrrolinyl state
+      or four-electron endpoint to purified CouN3. CouN3 has native genetic evidence
+      and a homolog-based dehydrogenase proposal, not that exact assay identity.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: CURATOR_INFERENCE
+      notes: Garneau et al. 2005 primary abstract, PMID:15723521. Full paper, assay
+        methods and supplement not obtained.
+      retrieved_on: '2026-10-05'
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary thesis, PDF pages 65-70 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: activation
+    predicate: has_source_access_limit
+    object: limits
+    notes: Full 2005 paper and supporting methods were not obtained. Constructs, concentrations,
+      kinetic values, carrier specificity and sample-level sequence agreement remain
+      unresolved.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: CURATOR_INFERENCE
+      notes: Garneau et al. 2005 primary abstract, PMID:15723521. Full paper, assay
+        methods and supplement not obtained.
+      retrieved_on: '2026-10-05'
+  - subject: couN3
+    predicate: has_reaction_assignment_limit
+    object: limits
+    notes: The 2004 homology-based proposal is not promoted to an experimentally measured
+      CouN3 reaction. No ordered native seven-protein reconstitution or physical complex
+      is established by these sources.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary thesis, PDF pages 65 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: CURATOR_INFERENCE
+      notes: Garneau et al. 2005 primary abstract, PMID:15723521. Full paper, assay
+        methods and supplement not obtained.
+      retrieved_on: '2026-10-05'
+curation_history:
+- timestamp: '2026-10-05T19:13:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-coun23456-proline-loading-and-oxidation-assay-boundaries;
+    retain native/historical/engineered identities, genetic and biochemical limits,
+    and source conflicts (#572).
+  llm_assisted: true

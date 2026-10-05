@@ -822,6 +822,11 @@ causal_graph_refs:
 - coumermycin-a1-cour-minimal-expression-constructs-and-coordinate-limits
 - coumermycin-a1-cour-heterologous-cpm-production-and-unit-limits
 - coumermycin-a1-cour-cour3-preparation-atpase-and-unconfirmed-kinase
+- coumermycin-a1-coun23456-native-identities-and-version-conflicts
+- coumermycin-a1-coun23456-coun3-deletion-and-historical-allele-limits
+- coumermycin-a1-coun23456-coun4-insertion-and-source-conflicts
+- coumermycin-a1-coun23456-native-genetic-phenotypes-and-product-boundaries
+- coumermycin-a1-coun23456-proline-loading-and-oxidation-assay-boundaries
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -880,4 +885,13 @@ curation_history:
     CouR3 ATP-dependent ADP formation without confirmed threonine phosphorylation.
     Preserve conflicting labels/units, prior graphs, source fields, identity, histories
     and SEEDED status (#571).'
+  llm_assisted: true
+- timestamp: '2026-10-05T19:13:44Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add five CouN2-CouN6 components for five native references and sequence
+    revisions; native couN3 deletion and couN4 insertion; bounded culture/product
+    phenotypes; and CouN4/CouN5 proline activation/loading without transferring the
+    CloN3 oxidation assay. Preserve source conflicts, prior graphs, source fields,
+    chemical identity, history and SEEDED status (#572).
   llm_assisted: true

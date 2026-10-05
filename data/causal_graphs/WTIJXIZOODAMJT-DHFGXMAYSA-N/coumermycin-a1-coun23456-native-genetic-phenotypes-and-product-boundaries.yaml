@@ -1,0 +1,284 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-coun23456-native-genetic-phenotypes-and-product-boundaries
+  scope: BIOSYNTHESIS
+  description: 'Native culture phenotypes distinguish terminal-pyrrole involvement
+    from central-pyrrole biosynthesis. Partial curation; author-agent review #572.
+    Native references, engineered alleles, genetic phenotypes and direct biochemical
+    evidence are distinct; prior graphs and SEEDED status are preserved.'
+  nodes:
+  - node_id: couN3
+    label: Native CouN3 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U4
+  - node_id: couN4
+    label: Native CouN4 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U3
+  - node_id: wt
+    label: S. rishiriensis DSM 40489 wild type
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: n3
+    label: Native couN3 deletion strains
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: n4
+    label: Native couN4 insertion strains
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Native-culture extraction and HPLC analysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: a1
+    label: coumermycin A1
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:3907
+  - node_id: d
+    label: Source-assigned coumermycin D
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: terminal
+    label: Terminal-pyrrole pathway involvement
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: central
+    label: Distinct central-pyrrole pathway inference
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Detection, calibration and genetic-causality limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: n3
+    predicate: has_disrupted_locus_for
+    object: couN3
+    notes: Native deletion series XH12/XH13/XH14; Figure 6 shows XH13, not separate
+      chromatograms for every clone.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 44,66-69 (printed page offset +19).
+        Relevant text and selected figures/tables inspected; not a complete thesis
+        review.
+      retrieved_on: '2026-10-05'
+  - subject: n4
+    predicate: has_disrupted_locus_for
+    object: couN4
+    notes: Native insertion series ZW20/ZW21; Figure 6 shows ZW20, not separate chromatograms
+      for both clones.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 44,67,69-70 (printed page offset +19).
+        Relevant text and selected figures/tables inspected; not a complete thesis
+        review.
+      retrieved_on: '2026-10-05'
+  - subject: wt
+    predicate: was_cultured_for
+    object: assay
+    notes: 'Wild type and mutants: 50 mL HA preculture, 28 C, 180 rpm, 2 days; 2 mL
+      into 100 mL SK in 500-mL baffled flask, 28 C, 180 rpm, 7-10 days.'
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 46 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: n3
+    predicate: was_analyzed_by
+    object: assay
+    notes: 6 mL whole culture, acidified to pH 6, washed twice with 6 mL petroleum
+      ether, extracted twice with 6 mL ethyl acetate; dried residue in 0.6 mL ethanol.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 59-60 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: n4
+    predicate: was_analyzed_by
+    object: assay
+    notes: Same coumermycin extraction method. HPLC Nucleosil RP 120-5, 5 um, 250x2
+      mm, 30-100% acetonitrile in 0.1% aqueous phosphoric acid, 0.2 mL/min, UV 345
+      nm.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 59-60 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: wt
+    predicate: produced_identified_product
+    object: a1
+    notes: Dominant WT product matched authentic coumermycin A1 by HPLC; LC/MS [M-H]-=1108.
+      Source reports approximately 2.7 umol/L.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 60,67,70 (printed page offset +19).
+        Relevant text and selected figures/tables inspected; not a complete thesis
+        review.
+      retrieved_on: '2026-10-05'
+  - subject: wt
+    predicate: also_contained_minor_product
+    object: d
+    notes: The discussion reports minor wild-type coumermycin D, confirmed by LC/MS
+      [M-H]-=894. D is enriched in the mutants, not uniquely present there.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 96 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: n3
+    predicate: lost_detectable_reported_production_of
+    object: a1
+    notes: Source reports complete abolishment under these culture/HPLC conditions;
+      no numerical detection limit or zero absolute production is supplied.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 68 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+      snippet: completely abolished
+  - subject: n4
+    predicate: lost_detectable_reported_production_of
+    object: a1
+    notes: Source reports complete abolishment under the same analysis; no numerical
+      detection limit or universal essentiality across hosts is inferred.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 70 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: n3
+    predicate: accumulated_assigned_product
+    object: d
+    notes: Dominant product assigned by LC/MS [M-H]-=894; UV lacks the 275-nm maximum
+      observed for A1. No fresh raw-spectrum reprocessing or independent full structure
+      determination is claimed.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 68-69 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: n4
+    predicate: accumulated_assigned_product
+    object: d
+    notes: Assignment by HPLC and UV spectroscopy; this result paragraph does not
+      independently report N4-mutant LC/MS. Do not transfer the N3 mass measurement
+      to a separately characterized N4 sample.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 70 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: d
+    predicate: has_reported_mutant_titer_in
+    object: assay
+    notes: Reported mutant range 12-17 umol/L, without clone-specific values, replicate
+      count or uncertainty. Methods name authentic A1 as standard but no D-specific
+      calibration/response factor; retain the source-reported D titers with this limitation.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 60,70 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: n3
+    predicate: supports_pathway_involvement
+    object: terminal
+    notes: Accumulation of D without the two terminal pyrrole units supports CouN3
+      involvement in terminal-pyrrole biosynthesis, not its purified-protein mechanism.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary thesis, PDF pages 68 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+    - reference: DOI:10.1007/s00438-002-0759-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu et al. 2002 primary abstract, PMID:12436260; journal full text not
+        obtained.
+      retrieved_on: '2026-10-05'
+  - subject: n4
+    predicate: supports_pathway_involvement
+    object: terminal
+    notes: Native insertion phenotype supports CouN4 involvement; specific proline
+      activation/loading is supported separately by the 2005 biochemical abstract.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary thesis, PDF pages 70 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: d
+    predicate: supports_distinct_biosynthetic_route
+    object: central
+    notes: The central pyrrole remains in D from both mutants despite loss of terminal
+      units. This supports different biosynthetic requirements, not precursor atom
+      identities, every central-pathway enzyme or a physical CouN assembly.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary thesis, PDF pages 68-70 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: assay
+    predicate: has_comparison_limit
+    object: limits
+    notes: The 12-17 umol/L D range and approximately 2.7 umol/L WT A1 value concern
+      different compounds; they do not demonstrate a fivefold increase in A1 production.
+      No replicate statistics, exact D recovery or independent D response calibration
+      are inferred.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary thesis, PDF pages 60,70 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: terminal
+    predicate: has_causal_specificity_limit
+    object: limits
+    notes: Native genetics do not by themselves identify the acyl carrier, oxidized
+      intermediates, direct catalytic rate, or absence of polar effects. No gene complementation
+      is supplied in the inspected relevant result sections.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary thesis, PDF pages 66-70 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: central
+    predicate: has_precursor_attribution_limit
+    object: limits
+    notes: Historical proline feeding discussed in the thesis did not distinguish
+      terminal and central pyrroles. Do not assign all three pyrroles to proline from
+      that older experiment; later central-pyrrole evidence is preserved in separate
+      CouR components.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary thesis, PDF pages 64,96-98 (printed page offset +19).
+        Relevant text and selected figures/tables inspected; not a complete thesis
+        review.
+      retrieved_on: '2026-10-05'
+curation_history:
+- timestamp: '2026-10-05T19:13:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-coun23456-native-genetic-phenotypes-and-product-boundaries;
+    retain native/historical/engineered identities, genetic and biochemical limits,
+    and source conflicts (#572).
+  llm_assisted: true

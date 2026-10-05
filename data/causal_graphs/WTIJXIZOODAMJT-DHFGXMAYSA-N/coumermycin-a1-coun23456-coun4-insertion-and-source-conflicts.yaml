@@ -1,0 +1,174 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-coun23456-coun4-insertion-and-source-conflicts
+  scope: BIOSYNTHESIS
+  description: 'Native couN4 insertion with Southern/PCR support and unrepaired source
+    conflicts. Partial curation; author-agent review #572. Native references, engineered
+    alleles, genetic phenotypes and direct biochemical evidence are distinct; prior
+    graphs and SEEDED status are preserved.'
+  nodes:
+  - node_id: couN4
+    label: Native CouN4 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U3
+  - node_id: wt
+    label: S. rishiriensis DSM 40489 wild type
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: vector
+    label: pN4 aphII insertion vector
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: mutants
+    label: ZW20 and ZW21 insertion strains
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: southern
+    label: couN4 Southern genotype analysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pcr
+    label: Reported two-pair couN4 genotype PCR
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: conflict
+    label: pN4 naming and probe-coordinate conflicts
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: limits
+    label: Insertion-allele verification limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: vector
+    predicate: targets_coding_locus_of
+    object: couN4
+    notes: A 0.99-kb aphII cassette interrupts the EcoRI site in the same orientation
+      as couN4. The disrupted 2.65-kb PstI fragment is in pBluescript SK(-); intermediates
+      pZW331/pZW32/pZW2/pZW3 are source-described.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 43,58,67,70 (printed page offset +19).
+        Relevant text and selected figures/tables inspected; not a complete thesis
+        review.
+      retrieved_on: '2026-10-05'
+  - subject: vector
+    predicate: was_introduced_into
+    object: wt
+    notes: Native protoplast transformation and neomycin selection, not heterologous
+      M1146 expression.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 52-53,70 (printed page offset +19).
+        Relevant text and selected figures/tables inspected; not a complete thesis
+        review.
+      retrieved_on: '2026-10-05'
+  - subject: wt
+    predicate: yielded_gene_replacement_strains
+    object: mutants
+    notes: Two double-crossovers, ZW20/ZW21, carried disrupted rather than intact
+      couN4 by the reported genotype analyses.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 44,67,70 (printed page offset +19).
+        Relevant text and selected figures/tables inspected; not a complete thesis
+        review.
+      retrieved_on: '2026-10-05'
+  - subject: mutants
+    predicate: were_checked_by
+    object: southern
+    notes: 'Figure 5D PstI digest: wild type 1.66 kb, mutants 2.65 kb; lanes 1 WT,
+      2 ZW20, 3 ZW21. Historical AF235050.1/.2 PstI cuts 11818/13484 give 1666 bp;
+      adding approximately 0.99 kb is consistent with the rounded mutant size, not
+      a fully sequenced construct.'
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 67 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Native restriction geometry versus rounded source bands.
+      retrieved_on: '2026-10-05'
+  - subject: mutants
+    predicate: were_checked_by
+    object: pcr
+    notes: Source reports two primer pairs confirming absence of the intact gene and
+      presence of the disrupted gene. Inspected Table 16 contains no corresponding
+      couN4 primer sequences, so no literal-primer match or complete allele sequence
+      is asserted.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 45,70 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: vector
+    predicate: has_source_naming_conflict
+    object: conflict
+    notes: Methods 8.1 twice call the pN4 3-prime/disrupted fragments couN3; Table
+      14, Figure 5C/D and the results identify couN4. Preserve the inconsistency rather
+      than silently changing the source labels.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 43,58,67,70 (printed page offset +19).
+        Relevant text and selected figures/tables inspected; not a complete thesis
+        review.
+      retrieved_on: '2026-10-05'
+  - subject: southern
+    predicate: has_source_probe_conflict
+    object: conflict
+    notes: Table 17 reports an 870-bp PstI-EcoRI probe at 11338-12688. The AF235050.1/.2
+      cut interval is 1350 bp; the distinct PstI site 11818 to EcoRI 12688 gives 870
+      bp and fits the downstream schematic. This is a possible explanation, not proof
+      of which probe was actually used or an authorized correction.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 45,67 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Both literal site intervals evaluated; stated length and interval remain
+        in conflict.
+      retrieved_on: '2026-10-05'
+  - subject: pcr
+    predicate: has_verification_limit
+    object: limits
+    notes: Genotype PCR without inspected oligonucleotides or full allele sequencing
+      does not establish complete mutant identity or eliminate polar effects.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary thesis, PDF pages 70 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: conflict
+    predicate: limits_construct_reconstruction
+    object: limits
+    notes: Do not assign the current full-length native UniProt sequence to this aphII-disrupted
+      allele. No couN4 genetic complementation was identified in the inspected relevant
+      thesis sections; no exhaustive absence is claimed.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary thesis, PDF pages 57-58,66-70 (printed page offset +19).
+        Relevant text and selected figures/tables inspected; not a complete thesis
+        review.
+      retrieved_on: '2026-10-05'
+curation_history:
+- timestamp: '2026-10-05T19:13:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-coun23456-coun4-insertion-and-source-conflicts; retain
+    native/historical/engineered identities, genetic and biochemical limits, and source
+    conflicts (#572).
+  llm_assisted: true
