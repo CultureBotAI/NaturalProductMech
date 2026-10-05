@@ -1,0 +1,171 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clop-native-identity-and-bounded-deletion-evidence
+  scope: BIOSYNTHESIS
+  description: 'Native identity, heterologous genetics and three published congener
+    yields. Review #567. Exact owner identity and SEEDED status are unchanged.'
+  nodes:
+  - node_id: clop
+    label: CloP native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB3
+  - node_id: gene
+    label: Native cloP locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: cluster
+    label: cloP-inactivated cluster
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: S. coelicolor M512 engineered producer
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: products
+    label: Deletion-study product characterization
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: n112
+    label: Source-assigned novclobiocin112
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: n113
+    label: Source-assigned novclobiocin113
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: n120
+    label: Source-assigned novclobiocin120
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: role
+    label: Genetically supported noviose4-O-methylation role
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Deletion-study interpretation limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gene
+    predicate: encodes_native_protein
+    object: clop
+    notes: AF329398.1:29998..30831(+),AAN65238.1,277aa. Native DS12.976; subspecies
+      taxon149682 versus strain1352936. Neither the engineered allele nor a purified
+      preparation is assigned this accession.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native cloP CDS/strain and AAN65238.1 translation.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB3
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry45,sequence1,taxon149682; retrieved2026-10-05.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS-aware table11 translation exactly matches UniProt.
+  - subject: gene
+    predicate: was_inactivated_in
+    object: cluster
+    notes: 2005 deletion report; exact engineered boundaries unavailable.
+    evidence:
+    - reference: DOI:10.1002/cbic.200500019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag2005 publisher abstract/graphical-abstract text only; full article
+        not obtained.
+  - subject: cluster
+    predicate: was_expressed_in
+    object: host
+    notes: Heterologous host, not the natural producer.
+    evidence:
+    - reference: DOI:10.1002/cbic.200500019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag2005 publisher abstract/graphical-abstract text only; full article
+        not obtained.
+  - subject: host
+    predicate: yielded_products_characterized_in
+    object: products
+    notes: 2005 MS and1H-NMR assignments; this is not a purified CloP activity assay.
+    evidence:
+    - reference: DOI:10.1002/cbic.200500019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag2005 publisher abstract/graphical-abstract text only; full article
+        not obtained.
+      snippet: three new aminocoumarin antibiotics
+  - subject: products
+    predicate: has_reported_product
+    object: n112
+    notes: 2006 reported yield=13mg/L; lacks noviose4-O-methyl and carries MePC at3-OH.
+      Source-assigned congener, not the clorobiocin owner.
+    evidence:
+    - reference: DOI:10.1128/AAC.50.4.1136-1142.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Flatman2006, Generation and isolation methods and Generation of analogs
+        results; publisher text.
+      snippet: at a yield of 13 mg/liter
+  - subject: products
+    predicate: has_reported_product
+    object: n113
+    notes: 2006 reported yield=6mg/L; lacks noviose4-O-methyl and carries MePC at2-OH.
+      Source-assigned congener, not the clorobiocin owner.
+    evidence:
+    - reference: DOI:10.1128/AAC.50.4.1136-1142.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Flatman2006, Generation and isolation methods and Generation of analogs
+        results; publisher text.
+  - subject: products
+    predicate: has_reported_product
+    object: n120
+    notes: 2006 reported yield=4mg/L; lacks noviose4-O-methyl and carries MePC at4-OH.
+      Source-assigned congener, not the clorobiocin owner.
+    evidence:
+    - reference: DOI:10.1128/AAC.50.4.1136-1142.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Flatman2006, Generation and isolation methods and Generation of analogs
+        results; publisher text.
+  - subject: products
+    predicate: supports_assignment_of
+    object: role
+    notes: Genetic product pattern supports function, not catalytic constants.
+    evidence:
+    - reference: DOI:10.1002/cbic.200500019
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag2005 publisher abstract/graphical-abstract text only; full article
+        not obtained.
+  - subject: clop
+    predicate: has_genetically_supported_role
+    object: role
+    notes: Noviose O-methylation assignment; no isolated turnover inferred.
+    evidence:
+    - reference: DOI:10.1002/cbic.200500019
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag2005 publisher abstract/graphical-abstract text only; full article
+        not obtained.
+  - subject: products
+    predicate: has_method_provenance_limit
+    object: limits
+    notes: 2006 delegates these production methods to earlier studies. Do not transfer
+      its detailed novclobiocin103 extraction protocol or topoisomerase-assay replicates
+      to these yields. No independent replication or uncertainty is established here.
+    evidence:
+    - reference: DOI:10.1128/AAC.50.4.1136-1142.2006
+      evidence_type: CURATOR_INFERENCE
+      notes: Flatman2006, Generation and isolation methods and Generation of analogs
+        results; publisher text.
+  - subject: cluster
+    predicate: has_construct_evidence_limit
+    object: limits
+    notes: Abstract-only access does not establish a deletion scar, primer sequence,
+      rescue outcome, polar-effect exclusion or unique reaction order.
+    evidence:
+    - reference: DOI:10.1002/cbic.200500019
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag2005 publisher abstract/graphical-abstract text only; full article
+        not obtained.
+curation_history:
+- timestamp: '2026-10-05T03:24:51Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-clop-native-identity-and-bounded-deletion-evidence; preserve
+    source access, identity and inference limits (#567).
+  llm_assisted: true
