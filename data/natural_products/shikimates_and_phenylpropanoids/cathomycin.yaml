@@ -706,6 +706,10 @@ causal_graph_refs:
 - cathomycin-novm-substrate-scope-and-tandem-assay-boundaries
 - cathomycin-novm-redox-reagents-and-early-methylation-tests
 - cathomycin-novm-staged-tailoring-and-product-mass-conflict
+- cathomycin-novwus-native-identities-and-sequence-boundaries
+- cathomycin-novwus-joint-reactions-and-product-annotation-conflict
+- cathomycin-novwus-novw-preparation-support-proteins-and-functional-revision
+- cathomycin-novwus-novw-structure-assembly-and-missing-atom-limits
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -789,4 +793,12 @@ curation_history:
     methylation tests; staged tailoring with a product formula/mass conflict. Preserve
     preparation/method limits, previous graphs, source fields, chemical identity,
     histories and SEEDED status (#563).'
+  llm_assisted: true
+- timestamp: '2026-10-05T00:49:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add four NovW/NovU/NovS components: native sequence versions; bounded
+    joint and NovS reactions; NovW preparation, support proteins and functional revision;
+    2C0Z structure/assembly/missing-atom limits. Preserve source conflicts, earlier
+    graphs, source fields, chemical identity, histories and SEEDED status (#564).'
   llm_assisted: true
