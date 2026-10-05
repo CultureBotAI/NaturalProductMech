@@ -782,6 +782,444 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">17 nodes, 20 edges</span></h2>
+<p class="sub">Native CloU/CloW references, heterologous DNA constructs and reconstructed junction/restriction limits; no purified CloU or CloW assay. Review #565. Host-conditioned genetic and source-assigned product evidence does not change the owner identity, source fields, previous graphs or SEEDED status.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited clorobiocin cluster</td>
+  <td>contains</td>
+  <td>Native cloU locus</td>
+  <td>AF329398.1 CDS 36602..37864(+), AAN65243.1.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Native cloU locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native cloU sequence reference</td>
+  <td>CDS-aware table-11 translation gives 420 aa exactly matching AAN65243.1 and Q8GHA8. UniProt subspecies taxon149682 and deposited DS 12.976 strain taxon1352936 differ in taxonomic resolution, not native sequence. No engineered sample is assigned this accession.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://www.uniprot.org/uniprotkb/Q8GHA8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Deposited clorobiocin cluster</td>
+  <td>contains</td>
+  <td>Native cloW locus</td>
+  <td>AF329398.1 CDS 38863..39459(+), AAN65245.1.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Native cloW locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native cloW sequence reference</td>
+  <td>CDS-aware table-11 translation gives 198 aa exactly matching AAN65245.1 and Q8GHA6. UniProt subspecies taxon149682 and deposited DS 12.976 strain taxon1352936 differ in taxonomic resolution, not native sequence. No engineered sample is assigned this accession.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://www.uniprot.org/uniprotkb/Q8GHA6<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Native cloU sequence reference</td>
+  <td>contains_proposed_motif</td>
+  <td>Proposed CloU SAM-associated sequence motif</td>
+  <td>Native residues108-116 are VVEFGSNTG, as printed in the thesis. The proposed SAM-binding association is sequence-based; no CloU-bound SAM structure, affinity or residue-mutagenesis assay is shown here.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Deposited clorobiocin cluster</td>
+  <td>was_carried_by</td>
+  <td>clo-BG1 intact-cluster cosmid</td>
+  <td>clo-BG1 carries the complete cluster and phiC31 integration functions. This is a DNA construct, not a protein complex.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>clo-BG1 intact-cluster cosmid</td>
+  <td>was_replacement_template_for</td>
+  <td>clo-AF1 cassette-replacement cosmid</td>
+  <td>PCR-targeted lambda-RED replacement used the aac(3)IV cassette from pUG019. The source reports restriction screening, not independently supplied complete experimental plasmid sequences.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native cloU locus</td>
+  <td>was_targeted_in</td>
+  <td>clo-AF1 cassette-replacement cosmid</td>
+  <td>Literal deletion primers: cloU-f GACCGGCGGTTTGCATCCCGTGAGGGGGAGGAAGAGTTGATTCCGGGGATCTCTAGATC; cloU-r TGGAACGGGATCACCGCAGCCGACACCGTGGCCACGTCAACTAGTCTGGAGCTGCTTC. Their unique39-nt native arms map36566..36604(+) and37900..37862(-), including the TTG start and TGA stop. These primers replace the intervening coding segment; the source shorthand entire ORF must not erase the retained ends.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>clo-AF1 cassette-replacement cosmid</td>
+  <td>was_excised_to_form</td>
+  <td>clo-AF2 cassette-excised cosmid</td>
+  <td>XbaI/SpeI digestion and ligation removed the cassette. Apramycin-sensitive, kanamycin-resistant clones were screened. Removal was intended to avoid polar effects; intent alone is not measured downstream expression.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>clo-AF2 cassette-excised cosmid</td>
+  <td>has_reconstructed_junction</td>
+  <td>Literal-primer coding-remnant model</td>
+  <td>The literal-primer/XbaI-SpeI model retains TTGATTCCGGGGATCTCTAGTTGA:24 nt including start/stop, predicting MIPGISS with CDS-aware initiation and a net1239-nt deletion from the1263-nt native CDS. This is a reconstructed in-frame remnant, not a sequenced mutant or observed seven-residue protein.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>clo-BG1 intact-cluster cosmid</td>
+  <td>was_integrated_in</td>
+  <td>S. coelicolor M512 with integrated clo-BG1</td>
+  <td>Intact-cluster heterologous comparator, not the native DS 12.976 producer.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>clo-AF2 cassette-excised cosmid</td>
+  <td>was_integrated_in</td>
+  <td>S. coelicolor M512 with integrated clo-AF2</td>
+  <td>PEG-mediated protoplast transformation and kanamycin selection generated phiC31-site integration strains. This is heterologous cluster deletion, not deletion in the native producer.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 with integrated clo-AF2</td>
+  <td>had_reported_genotyping</td>
+  <td>Reported Southern genotyping</td>
+  <td>Five independent deletion isolates were reported to have the same genotype; FigureIII.6D displays one mutant lane against clo-BG1. The lost approximate1.0-kb band and4.1/3.9-kb signals are genotyping evidence, not an independently measured complete junction or copy number.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Reported Southern genotyping</td>
+  <td>has_restriction_label_conflict</td>
+  <td>BamHI versus BglII source-label conflict</td>
+  <td>Prose p.96 says BglII; FigureIII.6 caption defines B as BamHI and says genomic/cosmid DNA were BamHI-digested. The conflict is retained, not silently corrected.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Literal-primer coding-remnant model</td>
+  <td>provides_restriction_comparison_for</td>
+  <td>BamHI versus BglII source-label conflict</td>
+  <td>Native BglII cuts give 1077- and4115-bp adjacent fragments; the scar model joins them into3953bp. Native BamHI instead gives a5455-bp fragment spanning cloU. This supports the BglII interpretation of the local approximate1.0/4.1/3.9-kb sizes but does not prove the actual digest or reconstruct cosmid/host integration-junction bands.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>clo-BG1 intact-cluster cosmid</td>
+  <td>was_pcr_template_for</td>
+  <td>pAF16 cloU complementation construct</td>
+  <td>Literal k-cloU-f GACCGGCGGTTTGGATCCCGTGA; k-cloU-r TTCGGACCTTCTAGACACGTGG. The1354-nt PCR model has BamHI/XbaI top-strand cuts1327nt apart, consistent with the reported approximate1.3-kb insert. It was cloned through pBluescript SK(-) pAF15 into pUWL201 pAF16 under constitutive ermE. Primer-introduced changes lie outside the CDS; complete experimental plasmids were not obtained.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>pAF16 cloU complementation construct</td>
+  <td>was_expression_construct_for</td>
+  <td>pAF16-derived CloU expression product</td>
+  <td>The source names an intact cloU copy. No protein abundance, purified sample, tag sequence or complete experimental protein sequence is established by the rescue.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native cloU sequence reference</td>
+  <td>is_native_core_reference_for</td>
+  <td>pAF16-derived CloU expression product</td>
+  <td>The complete native CDS including TTG initiation and TGA stop is unchanged in the literal rescue-amplicon model. That model is not direct resequencing of the experimental expressed protein.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://www.uniprot.org/uniprotkb/Q8GHA8</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 with integrated clo-AF2</td>
+  <td>was_complemented_to_form</td>
+  <td>S. coelicolor M512 clo-AF2 plus pAF16</td>
+  <td>The clo-AF2 strain received pAF16; the strain table reports kanamycin and thiostrepton resistance.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pAF16 cloU complementation construct</td>
+  <td>was_introduced_into</td>
+  <td>S. coelicolor M512 clo-AF2 plus pAF16</td>
+  <td>The rescue construct is separate from the integrated deletion cosmid and the native accession.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 20 edges</span></h2>
+<p class="sub">Eight reported titers and bounded nondetection under a shared culture/HPLC protocol; deletion, intact-cluster and complemented hosts remain separate. Review #565. Host-conditioned genetic and source-assigned product evidence does not change the owner identity, source fields, previous graphs or SEEDED status.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>S. coelicolor M512 clo-BG1 comparator</td>
+  <td>was_cultured_and_extracted_in</td>
+  <td>Culture-extract HPLC-UV production workflow</td>
+  <td>Source methods use a two-day YMG preculture at30 C/210rpm, two days in corn-starch medium at33 C/210rpm, then5mL into50mL distillers-solubles production medium in a500-mL flask for nine days at33 C/210rpm. The same protocol is specified for S. coelicolor cluster strains; these are not native-producer titers.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-BG1 comparator</td>
+  <td>had_reported_profile</td>
+  <td>Intact-cluster production profile</td>
+  <td>One intact-cluster comparator and five independent deletion isolates were reported as cultured. The printed titers lack clone-specific replicate values and uncertainty estimates; five genotyped isolates do not become five quantitative replicates for every value.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Culture-extract HPLC-UV production workflow</td>
+  <td>measured</td>
+  <td>Intact-cluster production profile</td>
+  <td>One-mL culture aliquots were acidified to pH4 and extracted twice with1mL ethyl acetate. Dried extracts were dissolved in200-500uL methanol;50-100uL was injected on RP18 at1mL/min with340-nm detection. Authentic clorobiocin was the stated standard. Distinct congener response factors and detection thresholds are not supplied.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF2 deletion host</td>
+  <td>was_cultured_and_extracted_in</td>
+  <td>Culture-extract HPLC-UV production workflow</td>
+  <td>Source methods use a two-day YMG preculture at30 C/210rpm, two days in corn-starch medium at33 C/210rpm, then5mL into50mL distillers-solubles production medium in a500-mL flask for nine days at33 C/210rpm. The same protocol is specified for S. coelicolor cluster strains; these are not native-producer titers.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF2 deletion host</td>
+  <td>had_reported_profile</td>
+  <td>Deletion-host production profile</td>
+  <td>One intact-cluster comparator and five independent deletion isolates were reported as cultured. The printed titers lack clone-specific replicate values and uncertainty estimates; five genotyped isolates do not become five quantitative replicates for every value.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Culture-extract HPLC-UV production workflow</td>
+  <td>measured</td>
+  <td>Deletion-host production profile</td>
+  <td>One-mL culture aliquots were acidified to pH4 and extracted twice with1mL ethyl acetate. Dried extracts were dissolved in200-500uL methanol;50-100uL was injected on RP18 at1mL/min with340-nm detection. Authentic clorobiocin was the stated standard. Distinct congener response factors and detection thresholds are not supplied.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF2 plus pAF16</td>
+  <td>was_cultured_and_extracted_in</td>
+  <td>Culture-extract HPLC-UV production workflow</td>
+  <td>Source methods use a two-day YMG preculture at30 C/210rpm, two days in corn-starch medium at33 C/210rpm, then5mL into50mL distillers-solubles production medium in a500-mL flask for nine days at33 C/210rpm. The same protocol is specified for S. coelicolor cluster strains; these are not native-producer titers.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF2 plus pAF16</td>
+  <td>had_reported_profile</td>
+  <td>Complemented-host production profile</td>
+  <td>One intact-cluster comparator and five independent deletion isolates were reported as cultured. The printed titers lack clone-specific replicate values and uncertainty estimates; five genotyped isolates do not become five quantitative replicates for every value.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Culture-extract HPLC-UV production workflow</td>
+  <td>measured</td>
+  <td>Complemented-host production profile</td>
+  <td>One-mL culture aliquots were acidified to pH4 and extracted twice with1mL ethyl acetate. Dried extracts were dissolved in200-500uL methanol;50-100uL was injected on RP18 at1mL/min with340-nm detection. Authentic clorobiocin was the stated standard. Distinct congener response factors and detection thresholds are not supplied.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Intact-cluster production profile</td>
+  <td>has_reported_titer_for</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Reported 9.0 mg/L by culture-extract HPLC. This is a source production estimate, not purified enzyme activity, an error-bounded mean or evidence that this congener is the exact parent structure.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Intact-cluster production profile</td>
+  <td>has_reported_titer_for</td>
+  <td>Source-assigned isoclorobiocin</td>
+  <td>Reported 2.8 mg/L by culture-extract HPLC. This is a source production estimate, not purified enzyme activity, an error-bounded mean or evidence that this congener is the exact parent structure.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Intact-cluster production profile</td>
+  <td>has_reported_titer_for</td>
+  <td>Source-assigned novclobiocin101</td>
+  <td>Reported 5.3 mg/L by culture-extract HPLC. This is a source production estimate, not purified enzyme activity, an error-bounded mean or evidence that this congener is the exact parent structure.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Deletion-host production profile</td>
+  <td>has_reported_titer_for</td>
+  <td>Source-assigned clorobiocic acid</td>
+  <td>Reported 20 mg/L by culture-extract HPLC. This is a source production estimate, not purified enzyme activity, an error-bounded mean or evidence that this congener is the exact parent structure.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Deletion-host production profile</td>
+  <td>has_reported_titer_for</td>
+  <td>Source-assigned novclobiocic acid106</td>
+  <td>Reported 39 mg/L by culture-extract HPLC. This is a source production estimate, not purified enzyme activity, an error-bounded mean or evidence that this congener is the exact parent structure.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Deletion-host production profile</td>
+  <td>has_reported_titer_for</td>
+  <td>Source-assigned novclobiocin122</td>
+  <td>Reported 1.5 mg/L by culture-extract HPLC. This is a source production estimate, not purified enzyme activity, an error-bounded mean or evidence that this congener is the exact parent structure.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Deletion-host production profile</td>
+  <td>has_reported_titer_for</td>
+  <td>Source-assigned novclobiocin123</td>
+  <td>Reported 0.4 mg/L by culture-extract HPLC. This is a source production estimate, not purified enzyme activity, an error-bounded mean or evidence that this congener is the exact parent structure.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Deletion-host production profile</td>
+  <td>has_reported_nondetection_for</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Clorobiocin was not detected under the reported conditions; no numerical detection limit or universal zero-production claim is supplied.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Complemented-host production profile</td>
+  <td>has_reported_titer_for</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Reported10 mg/L clorobiocin versus9.0 mg/L in the intact-cluster comparator. The source calls the amounts comparable; no statistical equivalence test or confidence interval is supplied.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Complemented-host production profile</td>
+  <td>has_interpretation_limit</td>
+  <td>Host, quantitation and rescue interpretation limits</td>
+  <td>Genetic complementation supports a cloU-specific contribution. No direct cloV/cloW transcript or protein measurement is supplied; a rescue does not exclude every possible polar effect or establish isolated catalytic parameters. The displayed CloU rescue comparison has no separate empty-pUWL201 production panel.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Deletion-host production profile</td>
+  <td>has_interpretation_limit</td>
+  <td>Host, quantitation and rescue interpretation limits</td>
+  <td>Most reported mutant products are aglycones. Later pRHAM/pMPU sugar-supply engineering is a distinct experiment, not interchangeable with these baseline1.5/0.4-mg/L congeners or the pAF16 complementation measurement.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">16 nodes, 20 edges</span></h2>
+<p class="sub">Primary product structures, nominal ions, solvent conflicts and explicitly inferred CloU/CloW roles; no transfer of congener antibacterial assays. Review #565. Host-conditioned genetic and source-assigned product evidence does not change the owner identity, source fields, previous graphs or SEEDED status.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>S. coelicolor M512 clo-AF2 deletion host</td>
+  <td>supplied_culture_for</td>
+  <td>Preparative isolation and structure assignment</td>
+  <td>A deletion host was grown in5L for preparative ethyl-acetate extraction and HPLC isolation. The general methods describe pH4 extraction, petroleum-ether pretreatment, Sephadex LH20 and preparative RP18 purification. Spectra concern isolated products, not direct purified CloU catalysis.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Preparative isolation and structure assignment</td>
+  <td>provided_congener_data_for</td>
+  <td>Study product-assignment evidence</td>
+  <td>The stated 5-L preparation targets novclobiocin 122 and 123. Aglycone assignments are also discussed and appendix spectra are supplied, but their exact aliquots are not identified as this same 5-L culture.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Study product-assignment evidence</td>
+  <td>documents_source_assigned_product</td>
+  <td>Source-assigned clorobiocic acid</td>
+  <td>Product assignment follows the thesis MS/NMR results and depicted structures. No new exact-structure record or parent-identity equivalence is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Study product-assignment evidence</td>
+  <td>documents_source_assigned_product</td>
+  <td>Source-assigned novclobiocic acid106</td>
+  <td>Product assignment follows the thesis MS/NMR results and depicted structures. No new exact-structure record or parent-identity equivalence is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Study product-assignment evidence</td>
+  <td>documents_source_assigned_product</td>
+  <td>Source-assigned novclobiocin122</td>
+  <td>Product assignment follows the thesis MS/NMR results and depicted structures. No new exact-structure record or parent-identity equivalence is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Study product-assignment evidence</td>
+  <td>documents_source_assigned_product</td>
+  <td>Source-assigned novclobiocin123</td>
+  <td>Product assignment follows the thesis MS/NMR results and depicted structures. No new exact-structure record or parent-identity equivalence is inferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Source-assigned novclobiocin122</td>
+  <td>has_reported_nmr_assignment</td>
+  <td>Novclobiocin122 sugar NMR assignment</td>
+  <td>In DMSO, TableIII.2 reports 4&#39;&#39;-H3.44ppm triplet(J9.6Hz),5&#39;&#39;-H3.71ppm dq(J6.4,9.2Hz), and a single 5-position methyl signal7&#39;&#39;-H3 at1.18ppm doublet(J6.4Hz). The6&#39;&#39; methyl signal is absent. The source assigns an L-rhamnose-derived sugar with the axial5-methyl group replaced by H; this is the source structural interpretation, not an independently solved absolute structure.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Source-assigned novclobiocin123</td>
+  <td>has_reported_nmr_assignment</td>
+  <td>Novclobiocin123 acyl-position NMR assignment</td>
+  <td>TableIII.2 gives2&#39;&#39;-H5.36ppm triplet(overlap,Jundetermined),3&#39;&#39;-H4.29ppm dd(J2.8,9.0Hz),4&#39;&#39;-H3.38ppm triplet(J9.0Hz), and7&#39;&#39;-H3 at1.19ppm doublet(J6.4Hz). The source places the5-methylpyrrole-2-carbonyl substituent at2&#39;&#39;-O rather than3&#39;&#39;-O. The two desmethyl products are positional congeners, not interchangeable parent identities.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Source-assigned novclobiocin122</td>
+  <td>has_reported_ion_in</td>
+  <td>Negative FAB-MS product readouts</td>
+  <td>Results text assigns nominal m/z681 [M-H]- and a14-mass-unit decrease relative to clorobiocin. The negative FAB appendix labels681.0; this is not a high-resolution neutral exact mass.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Source-assigned novclobiocin123</td>
+  <td>has_reported_ion_in</td>
+  <td>Negative FAB-MS product readouts</td>
+  <td>Results describe the same nominal negative ion as122; the appendix labels681.3. Preserve the displayed value without calling the two decimal values identical exact-mass measurements.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Source-assigned clorobiocic acid</td>
+  <td>has_reported_ion_in</td>
+  <td>Negative FAB-MS product readouts</td>
+  <td>Prose p.99 calls415 a molecular weight, whereas the negative FAB appendix labels414.1. Retain this distinction; do not silently turn either into a neutral monoisotopic mass.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Source-assigned novclobiocic acid106</td>
+  <td>has_reported_ion_in</td>
+  <td>Negative FAB-MS product readouts</td>
+  <td>Prose reports380 and the negative FAB appendix labels379.9. The nonchlorinated aglycone assignment also uses an8&#39;-H signal at6.66ppm; the source&#39;s stated35-Da comparison is not an independently reconciled exact-mass difference.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Source-assigned clorobiocic acid</td>
+  <td>has_nmr_source_discrepancy</td>
+  <td>Acid NMR solvent-label discrepancy</td>
+  <td>TableIII.2 and the appendix heading specify methanol/CD3OD for the acids, but the acquisition text on the appendix acid spectra reads DMSO. Methods also use the unusual word Dimethylsulfonamid, while TableIII.2 names Dimethylsulfoxid for122/123. No harmonized acid solvent is asserted.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Novclobiocin122 sugar NMR assignment</td>
+  <td>supports_genetic_role_assignment</td>
+  <td>Genetically supported axial5-C-methylation role</td>
+  <td>The source combines loss of the axial5-methyl group in the cloU mutant with complementation to assign a5-C-methylation role. It does not supply a purified CloU substrate panel, SAM stoichiometry or a kinetic constant.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>DOI:10.1099/mic.0.28931-0</td>
+</tr>
+<tr>
+  <td>Native CloU sequence reference</td>
+  <td>has_genetically_supported_role</td>
+  <td>Genetically supported axial5-C-methylation role</td>
+  <td>This assignment concerns CloU in clorobiocin biosynthesis. Homology to NovU/CouU is not a substitute for experiments on those proteins.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.uniprot.org/uniprotkb/Q8GHA8</td>
+</tr>
+<tr>
+  <td>Novclobiocin122 sugar NMR assignment</td>
+  <td>motivates_pathway_inference</td>
+  <td>Source-inferred sugar3,5-epimerization</td>
+  <td>Source-assigned L-rhamnose-derived stereochemistry supports3,5-epimerization somewhere in the sugar pathway. End-product genetics is not direct observation of each nucleotide-sugar intermediate or a uniquely assigned epimerase reaction.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>DOI:10.1099/mic.0.28931-0</td>
+</tr>
+<tr>
+  <td>Native CloW reference for the proposed epimerase</td>
+  <td>is_proposed_to_mediate</td>
+  <td>Source-inferred sugar3,5-epimerization</td>
+  <td>The thesis proposes CloW as the3,5-epimerase, informed by sequence similarity and the CloU-mutant products. No CloW deletion, purified CloW turnover or exclusion of heterologous host-enzyme contributions is shown in this experiment.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1<br>https://www.uniprot.org/uniprotkb/Q8GHA6</td>
+</tr>
+<tr>
+  <td>Source-inferred sugar3,5-epimerization</td>
+  <td>has_attribution_limit</td>
+  <td>Genetic inference versus purified catalysis boundary</td>
+  <td>Do not transfer this CloU-deletion interpretation into direct in-vivo NovW or CouW evidence. The separately curated NovW in-vitro isotope/kinetic study and this heterologous clorobiocin genetic experiment answer different questions.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Genetically supported axial5-C-methylation role</td>
+  <td>has_assay_limit</td>
+  <td>Genetic inference versus purified catalysis boundary</td>
+  <td>These data support a genetic biosynthetic role, not observed physical assembly, purified catalysis or proof of a unique native intermediate order.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Acid NMR solvent-label discrepancy</td>
+  <td>limits_comparison</td>
+  <td>Genetic inference versus purified catalysis boundary</td>
+  <td>Clorobiocin and the acids are listed in methanol whereas122/123 are listed in DMSO. Cross-solvent chemical shifts cannot be treated as isolated effects of methyl removal; the conflicting acid acquisition labels remain unresolved.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">2</span></h2>

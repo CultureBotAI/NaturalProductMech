@@ -411,6 +411,9 @@ causal_graph_refs:
 - clorobiocin-cloq-variant-constructs-and-preparations
 - clorobiocin-cloq-mutant-activities-and-substrate-kinetics
 - clorobiocin-cloq-structures-and-mechanistic-limits
+- clorobiocin-clou-native-identities-and-literal-construct-boundaries
+- clorobiocin-clou-heterologous-production-and-rescue-limits
+- clorobiocin-clou-product-structures-and-inferred-enzyme-roles
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -469,4 +472,12 @@ curation_history:
     Preserve literal-primer/source discrepancies, conditional inactivity, thiohemiketal
     context, hypothetical donor/base roles and alternative assembly assignments. Earlier
     native pathway/CloL graphs, source fields and SEEDED status remain unchanged (#553).
+  llm_assisted: true
+- timestamp: '2026-10-05T01:31:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add three CloU components covering native CloU/CloW identities, literal
+    construct and restriction conflicts, heterologous deletion/rescue production,
+    product structures and bounded inferred enzyme roles. Preserve previous graphs,
+    source fields, exact chemical identity, histories and SEEDED status (#565).
   llm_assisted: true
