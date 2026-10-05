@@ -1,0 +1,247 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-sugar-prham-pmpu-production-and-inferred-roles
+  scope: BIOSYNTHESIS
+  description: 'A distinct three-host engineering comparison; all twelve titers retain
+    their experimental context. Review #566. Constructs, source-assigned congeners
+    and inferred roles do not change the exact owner identity or SEEDED status.'
+  nodes:
+  - node_id: parent
+    label: clo-AF2 baseline host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: prham
+    label: clo-AF2 plus pRHAM host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: pmpu
+    label: clo-AF2 plus pMPU host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Culture-extract HPLC-UV comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: baseline
+    label: FigureIII.10A profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rham
+    label: FigureIII.10B profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: mpu
+    label: FigureIII.10C profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: encoded
+    label: pMPU-encoded OleU protein
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: reduction
+    label: Inferred CloS sugar-discrimination step
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: transfer
+    label: Inferred CloM L-rhamnosyl transfer
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Production-to-enzyme inference limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: cloM
+    label: CloM native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC2
+  - node_id: cloS
+    label: CloS native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB0
+  - node_id: oleU
+    label: OleU native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9RR27
+  edges:
+  - subject: parent
+    predicate: was_compared_in
+    object: assay
+    notes: S. coelicolor M512 background.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.56,106 (printed pagination is ten lower).
+  - subject: prham
+    predicate: was_compared_in
+    object: assay
+    notes: S. coelicolor M512 background.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.56,106 (printed pagination is ten lower).
+  - subject: pmpu
+    predicate: was_compared_in
+    object: assay
+    notes: S. coelicolor M512 background.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.56,106 (printed pagination is ten lower).
+  - subject: assay
+    predicate: yielded_profile
+    object: baseline
+    notes: 'mg/L: novclobiocic acid106=49; clorobiocic acid=23; novclobiocin122=1.3;
+      novclobiocin123=0.4.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF p.106, FigureIII.10A (printed pagination is ten lower).
+  - subject: assay
+    predicate: yielded_profile
+    object: rham
+    notes: 'mg/L: novclobiocic acid106=18; clorobiocic acid=7.5; novclobiocin122=30;
+      novclobiocin123=10.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF p.106, FigureIII.10B (printed pagination is ten lower).
+  - subject: assay
+    predicate: yielded_profile
+    object: mpu
+    notes: 'mg/L: novclobiocic acid106=25; clorobiocic acid=35; novclobiocin122=11;
+      novclobiocin123=2.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF p.106, FigureIII.10C (printed pagination is ten lower).
+  - subject: parent
+    predicate: has_own_control_profile
+    object: baseline
+    notes: Not the earlier CloU baseline.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.96,106 (printed pagination is ten lower).
+  - subject: prham
+    predicate: has_own_product_profile
+    object: rham
+    notes: Products122/123 assigned by MS/NMR.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.105-107 (printed pagination is ten lower).
+  - subject: pmpu
+    predicate: has_own_product_profile
+    object: mpu
+    notes: Not purified enzyme activity.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.106,108 (printed pagination is ten lower).
+  - subject: pmpu
+    predicate: carried_construct_encoding
+    object: encoded
+    notes: Protein abundance was not measured.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF p.108 (printed pagination is ten lower).
+  - subject: oleU
+    predicate: is_native_reference_for
+    object: encoded
+    notes: Canonical donor sequence, not a resequenced pMPU protein.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9RR27
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 73, sequence 1; taxon 1890; retrieved
+        2026-10-05. Native reference only.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF055579.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited sequence and feature table.
+  - subject: mpu
+    predicate: motivates
+    object: reduction
+    notes: Genetic rescue supports a reduction bottleneck.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.108,128 (printed pagination is ten lower).
+  - subject: cloS
+    predicate: has_inferred_substrate_preference_in
+    object: reduction
+    notes: Proposed preference for 5-C-methylated sugar; no purified CloS kinetics.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.108,128-129 (printed pagination is ten lower).
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB0
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB unreviewed (TrEMBL); entry 67, sequence 1; taxon 149682; retrieved
+        2026-10-05. Native reference only.
+  - subject: rham
+    predicate: motivates
+    object: transfer
+    notes: Sugar supply permits glycoside formation.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.107,128 (printed pagination is ten lower).
+  - subject: cloM
+    predicate: has_inferred_donor_acceptance_in
+    object: transfer
+    notes: Host transferases remain possible; NovM kinetics are not CloM measurements.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.103,107,129 (printed pagination is ten lower).
+      snippet: nicht gänzlich ausgeschlossen werden
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC2
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB unreviewed (TrEMBL); entry 71, sequence 1; taxon 149682; retrieved
+        2026-10-05. Native reference only.
+  - subject: assay
+    predicate: has_method_and_comparison_limits
+    object: limits
+    notes: Nine-day production:33C,210rpm; pH4 extraction, RP18/340nm, clorobiocin
+      standard. No stated uncertainty or matched empty-vector panels.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.58,78-79,106 (printed pagination is ten lower).
+  - subject: reduction
+    predicate: has_annotation_limit
+    object: limits
+    notes: Q8GHB0 automatically annotates unmethylated dTDP-L-rhamnose formation;
+      that rule-based assignment is not a measured kinetic result.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB0
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB unreviewed (TrEMBL); entry 67, sequence 1; taxon 149682; retrieved
+        2026-10-05. Native reference only.
+  - subject: rham
+    predicate: has_fold_summary_limit
+    object: limits
+    notes: Reported8/26-fold summaries are not exact ratios of these rounded profiles.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.108,128 (printed pagination is ten lower).
+  - subject: transfer
+    predicate: has_attribution_limit
+    object: limits
+    notes: Specificity and expression effects are not independently separated.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.107-108 (printed pagination is ten lower).
+curation_history:
+- timestamp: '2026-10-05T02:17:56Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-sugar-prham-pmpu-production-and-inferred-roles; native
+    references and source-bounded sugar-engineering evidence (#566).
+  llm_assisted: true

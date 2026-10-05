@@ -1,0 +1,368 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-sugar-native-references-and-construct-boundaries
+  scope: BIOSYNTHESIS
+  description: 'Seven source-matched native references, qualified database roles,
+    separate transformation branches and historical sequence limits. Review #566.
+    Constructs, source-assigned congeners and inferred roles do not change the exact
+    owner identity or SEEDED status.'
+  nodes:
+  - node_id: parent
+    label: S. coelicolor M512 clo-AF2 experimental parent
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: prham
+    label: pRHAM sugar-pathway construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pmpu
+    label: pMPU oleU construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: cosmid
+    label: cos16F4 reporter construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: fragment
+    label: Co-carried oleNI DNA prefix
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: historical
+    label: Historical ElmGT CAC16413.1 translation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: cloM
+    label: CloM native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC2
+  - node_id: cloS
+    label: CloS native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB0
+  - node_id: oleL
+    label: OleL native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9RR30
+  - node_id: oleS
+    label: OleS native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9RR29
+  - node_id: oleE
+    label: OleE native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9RR28
+  - node_id: oleU
+    label: OleU native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9RR27
+  - node_id: elmGT
+    label: ElmGT native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F2F9
+  - node_id: oleL_role
+    label: Proposed OleL nucleotide-sugar epimerization
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: oleS_role
+    label: Annotated dTDP-glucose synthesis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: oleE_role
+    label: Annotated dTDP-glucose dehydration
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: oleU_role
+    label: Proposed OleU nucleotide-sugar reduction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: elmGT_role
+    label: Annotated ElmGT glycosyl transfer
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: parent
+    predicate: was_separately_transformed_with
+    object: prham
+    notes: Separate experimental strains.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.104-108 (printed pagination is ten lower).
+  - subject: parent
+    predicate: was_separately_transformed_with
+    object: pmpu
+    notes: Separate experimental strains.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.104-108 (printed pagination is ten lower).
+  - subject: parent
+    predicate: was_separately_transformed_with
+    object: cosmid
+    notes: Separate experimental strains.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.104-108 (printed pagination is ten lower).
+  - subject: cloM
+    predicate: is_native_sequence_reference_for
+    object: parent
+    notes: AF329398.1:19687..20859(+), AAN65229.1, 390 aa. CDS-aware translation,
+      deposited protein and UniProt match exactly. This reference does not identify
+      a resequenced experimental protein. Native DS 12.976; strain taxon1352936 versus
+      subspecies taxon149682.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited sequence and feature table.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC2
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB unreviewed (TrEMBL); entry 71, sequence 1; taxon 149682; retrieved
+        2026-10-05. Native reference only.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent native sequence comparison.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.103,107-108 (printed pagination is ten lower).
+  - subject: cloS
+    predicate: is_native_sequence_reference_for
+    object: parent
+    notes: AF329398.1:34466..35332(+), AAN65241.1, 288 aa. CDS-aware translation,
+      deposited protein and UniProt match exactly. This reference does not identify
+      a resequenced experimental protein. Native DS 12.976; strain taxon1352936 versus
+      subspecies taxon149682.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited sequence and feature table.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB0
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB unreviewed (TrEMBL); entry 67, sequence 1; taxon 149682; retrieved
+        2026-10-05. Native reference only.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent native sequence comparison.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.103,107-108 (printed pagination is ten lower).
+  - subject: oleL
+    predicate: is_native_sequence_reference_for
+    object: prham
+    notes: AF055579.2:3356..3970(+), AAD55452.1, 204 aa. CDS-aware translation, deposited
+      protein and UniProt match exactly. This reference does not identify a resequenced
+      experimental protein. Native S. antibioticus ATCC11891; AF055579.1 lacks this
+      region.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF055579.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited sequence and feature table.
+    - reference: https://www.uniprot.org/uniprotkb/Q9RR30
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 67, sequence 1; taxon 1890; retrieved
+        2026-10-05. Native reference only.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF055579.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent native sequence comparison.
+    - reference: https://www.caister.com/backlist/jmmb/v/v2/v2n3/04.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Rodriguez 2000, printed pp.274-275; donor-gene membership.
+  - subject: oleS
+    predicate: is_native_sequence_reference_for
+    object: prham
+    notes: AF055579.2:3967..5037(+), AAD55453.1, 356 aa. CDS-aware translation, deposited
+      protein and UniProt match exactly. This reference does not identify a resequenced
+      experimental protein. Native S. antibioticus ATCC11891; AF055579.1 lacks this
+      region.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF055579.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited sequence and feature table.
+    - reference: https://www.uniprot.org/uniprotkb/Q9RR29
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 65, sequence 1; taxon 1890; retrieved
+        2026-10-05. Native reference only.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF055579.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent native sequence comparison.
+    - reference: https://www.caister.com/backlist/jmmb/v/v2/v2n3/04.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Rodriguez 2000, printed pp.274-275; donor-gene membership.
+  - subject: oleE
+    predicate: is_native_sequence_reference_for
+    object: prham
+    notes: AF055579.2:5034..6041(+), AAD55454.1, 335 aa. CDS-aware translation, deposited
+      protein and UniProt match exactly. This reference does not identify a resequenced
+      experimental protein. Native S. antibioticus ATCC11891; AF055579.1 lacks this
+      region.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF055579.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited sequence and feature table.
+    - reference: https://www.uniprot.org/uniprotkb/Q9RR28
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 100, sequence 1; taxon 1890; retrieved
+        2026-10-05. Native reference only.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF055579.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent native sequence comparison.
+    - reference: https://www.caister.com/backlist/jmmb/v/v2/v2n3/04.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Rodriguez 2000, printed pp.274-275; donor-gene membership.
+  - subject: oleU
+    predicate: is_native_sequence_reference_for
+    object: prham
+    notes: AF055579.2:6038..6925(+), AAD55455.1, 295 aa. CDS-aware translation, deposited
+      protein and UniProt match exactly. This reference does not identify a resequenced
+      experimental protein. Native S. antibioticus ATCC11891; AF055579.1 lacks this
+      region.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF055579.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited sequence and feature table.
+    - reference: https://www.uniprot.org/uniprotkb/Q9RR27
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 73, sequence 1; taxon 1890; retrieved
+        2026-10-05. Native reference only.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF055579.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent native sequence comparison.
+    - reference: https://www.caister.com/backlist/jmmb/v/v2/v2n3/04.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Rodriguez 2000, printed pp.274-275; donor-gene membership.
+  - subject: elmGT
+    predicate: is_native_sequence_reference_for
+    object: cosmid
+    notes: AM900040.1:15166..16314(+), CAP12607.1, 382 aa. CDS-aware translation,
+      deposited protein and UniProt match exactly. This reference does not identify
+      a resequenced experimental protein. Tu2353 cos16F4 deposit; AJ300305.2/CAC16413.2
+      also matches.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AM900040.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited sequence and feature table.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F2F9
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 79, sequence 2; taxon 47716; retrieved
+        2026-10-05. Native reference only.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AM900040.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent native sequence comparison.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ300305.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited sequence and feature table.
+  - subject: oleU
+    predicate: is_native_sequence_reference_for
+    object: pmpu
+    notes: pWHM3-based, ermE*-driven oleU; full experimental plasmid sequence unavailable.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.50,108 (printed pagination is ten lower).
+    - reference: https://www.uniprot.org/uniprotkb/Q9RR27
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 73, sequence 1; taxon 1890; retrieved
+        2026-10-05. Native reference only.
+  - subject: fragment
+    predicate: was_co_carried_in
+    object: prham
+    notes: 'pEM4-based construct. Native SphI/XmnI top-strand cuts3288/7424 model4136nt:
+      complete oleL/S/E/U and502nt of oleNI, not a full-length OleNI protein. Restriction
+      geometry is a reconstruction, not plasmid resequencing.'
+    evidence:
+    - reference: https://www.caister.com/backlist/jmmb/v/v2/v2n3/04.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Printed pp.274-275, Figure2.
+      snippet: 5'-end of oleNI
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF055579.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent restriction and CDS-boundary comparison.
+  - subject: historical
+    predicate: differs_from_current_reference
+    object: elmGT
+    notes: AJ300305.1/CAC16413.1 translates to384aa, not current382aa; differences
+      extend beyond terminal length. A revised deposit is not proof that experimental
+      aliquots had different proteins. Do not assign Q9F2F9 to the historical sequence.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ300305.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited sequence and feature table.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ300305.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited sequence and feature table.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F2F9
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 79, sequence 2; taxon 47716; retrieved
+        2026-10-05. Native reference only.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ300305.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS-aware historical/current comparison.
+  - subject: oleL
+    predicate: has_database_assigned_role
+    object: oleL_role
+    notes: UniProt proposes conversion of the D-configured 4-keto-2,6-dideoxysugar
+      to its L-configured product; the reaction assignment is probable, not a purified
+      pRHAM-protein measurement.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9RR30
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 67, sequence 1; taxon 1890; retrieved
+        2026-10-05. Native reference only.
+  - subject: oleS
+    predicate: has_database_assigned_role
+    object: oleS_role
+    notes: Formation from dTTP and glucose1-phosphate is annotated by similarity.
+      Do not treat the pRHAM experiment as isolated OleS turnover.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9RR29
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 65, sequence 1; taxon 1890; retrieved
+        2026-10-05. Native reference only.
+  - subject: oleE
+    predicate: has_database_assigned_role
+    object: oleE_role
+    notes: Formation of dTDP-4-dehydro-6-deoxy-D-glucose is annotated by similarity;
+      cofactor binding and individual catalytic rates were not measured in the pRHAM
+      comparison.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9RR28
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 100, sequence 1; taxon 1890; retrieved
+        2026-10-05. Native reference only.
+  - subject: oleU
+    predicate: has_database_assigned_role
+    object: oleU_role
+    notes: UniProt proposes reduction of the4-keto-2,6-dideoxy substrate to dTDP-L-olivose.
+      This probable native reaction is distinct from the genetically supported rhamnose-supply
+      use.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9RR27
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 73, sequence 1; taxon 1890; retrieved
+        2026-10-05. Native reference only.
+  - subject: elmGT
+    predicate: has_database_assigned_role
+    object: elmGT_role
+    notes: UniProt assigns dTDP-L-rhamnose transfer to8-demethyltetracenomycin C.
+      This produces the rhamnosyl intermediate, not directly the fully methylated
+      elloramycin reporter.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F2F9
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 79, sequence 2; taxon 47716; retrieved
+        2026-10-05. Native reference only.
+curation_history:
+- timestamp: '2026-10-05T02:17:56Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-sugar-native-references-and-construct-boundaries; native
+    references and source-bounded sugar-engineering evidence (#566).
+  llm_assisted: true

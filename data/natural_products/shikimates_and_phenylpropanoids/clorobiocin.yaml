@@ -414,6 +414,9 @@ causal_graph_refs:
 - clorobiocin-clou-native-identities-and-literal-construct-boundaries
 - clorobiocin-clou-heterologous-production-and-rescue-limits
 - clorobiocin-clou-product-structures-and-inferred-enzyme-roles
+- clorobiocin-sugar-native-references-and-construct-boundaries
+- clorobiocin-sugar-prham-pmpu-production-and-inferred-roles
+- clorobiocin-sugar-elmgt-reporter-and-sugar-supply-limits
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -480,4 +483,12 @@ curation_history:
     construct and restriction conflicts, heterologous deletion/rescue production,
     product structures and bounded inferred enzyme roles. Preserve previous graphs,
     source fields, exact chemical identity, histories and SEEDED status (#565).
+  llm_assisted: true
+- timestamp: '2026-10-05T02:17:56Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add native CloM/CloS, OleL/OleS/OleE/OleU and ElmGT references; separate
+    constructs, historical ElmGT sequence, twelve engineering titers, inferred enzyme
+    roles and reporter limits. Preserve all previous graphs, source fields, identity,
+    histories and SEEDED status (#566).
   llm_assisted: true
