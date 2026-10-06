@@ -138,6 +138,61 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 7 edges</span></h2>
+<p class="sub">Native pyoluteorin-pathway protein references and engineered participants in the deposited 6O6E inhibitor-trapped assembly. Current model3.2, not an unmodified native complex, full assay stock, physiological stoichiometry, kinetic measurement or complete pyoluteorin synthesis. No antimicrobial-target assertion or source-producer upgrade. Associated paper/SI unread; evidence here is the independently inspected structural dataset and native sequence records. Not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference</td>
+  <td>PltF native sequence reference (Pf-5)</td>
+  <td>AF081920.3 CDS 20417..21913(+), 1-based inclusive; AAD24881.1, 498 aa. CDS-aware table-11 translation exactly matches independently retrieved GenPept and current UniProt sequence version 1. Native source Pf-5/taxon220664, not the distinct M18 BGC0000128 source. These are native references, not the full engineered chains or complete assay stocks.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24881.1<br>https://www.uniprot.org/uniprotkb/Q4KCY5</td>
+</tr>
+<tr>
+  <td>Engineered PltF construct in 6O6E author chain B</td>
+  <td>has_native_sequence_reference</td>
+  <td>PltF native sequence reference (Pf-5)</td>
+  <td>Author chain B / label chain A contains all 498 native PltF residues followed by KLAAALEHHHHHHHH, giving a 513-residue deposited sequence. The 15-residue extension is C-terminal, not N-terminal.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/1</td>
+</tr>
+<tr>
+  <td>Engineered PltF construct in 6O6E author chain B</td>
+  <td>is_member_of_deposited_trapped_assembly</td>
+  <td>6O6E engineered inhibitor-trapped PltF/PltL assembly</td>
+  <td>Assembly1 is author/PISA-defined and contains one PltF and one PltL polymer instance. Source Pf-5/taxon220664; expression host E. coli BL21/taxon511693. Expression is not evidence that BL21 produces pyoluteorin. Deposited engineered 1:1 assembly is not a physiological stoichiometry or native stable-complex claim.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/assembly/6O6E/1<br>https://data.rcsb.org/rest/v1/core/entry/6O6E</td>
+</tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference</td>
+  <td>PltL native sequence reference (Pf-5)</td>
+  <td>AF081920.3 CDS 3180..3446(+), 1-based inclusive; AAD24885.1, 88 aa. CDS-aware table-11 translation exactly matches independently retrieved GenPept and current UniProt sequence version 2. Native source Pf-5/taxon220664, not the distinct M18 BGC0000128 source. These are native references, not the full engineered chains or complete assay stocks.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24885.1<br>https://www.uniprot.org/uniprotkb/Q4KCZ1</td>
+</tr>
+<tr>
+  <td>Engineered PltL construct in 6O6E author chain E</td>
+  <td>has_native_sequence_reference</td>
+  <td>PltL native sequence reference (Pf-5)</td>
+  <td>Author chain E / label chain B contains native PltL residues 1-86 followed by SALEHHHHHH, giving a 96-residue deposited sequence. Native residues 87-88 (CA) are not retained. Do not infer an intentional C87S mutation or a complete native 88-residue protein from the database mutation-count field. Native sequence version2 was updated in 2011; historical 2002/2005 assay stocks were not identified.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/2</td>
+</tr>
+<tr>
+  <td>Engineered PltL construct in 6O6E author chain E</td>
+  <td>is_member_of_deposited_trapped_assembly</td>
+  <td>6O6E engineered inhibitor-trapped PltF/PltL assembly</td>
+  <td>Assembly1 is author/PISA-defined and contains one PltF and one PltL polymer instance. Source Pf-5/taxon220664; expression host E. coli BL21/taxon511693. Expression is not evidence that BL21 produces pyoluteorin. Deposited engineered 1:1 assembly is not a physiological stoichiometry or native stable-complex claim.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/assembly/6O6E/1<br>https://data.rcsb.org/rest/v1/core/entry/6O6E</td>
+</tr>
+<tr>
+  <td>Current deposited I5M phosphopantetheine-inhibitor component</td>
+  <td>is_deposited_covalently_attached_to</td>
+  <td>Engineered PltL construct in 6O6E author chain E</td>
+  <td>The sole mmCIF struct_conn covalent row joins PltL Ser42 OG (label chain B, author chain E) to I5M phosphorus P (label chain S, author chain E residue801). The reported 1.533-A model distance agrees with coordinates. It is not a direct PltF-PltL covalent bond. I5M is an experimental probe component, not pyoluteorin or a native intermediate.</td>
+  <td class="mono">https://files.rcsb.org/download/6O6E.cif<br>https://data.rcsb.org/rest/v1/core/chemcomp/I5M</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

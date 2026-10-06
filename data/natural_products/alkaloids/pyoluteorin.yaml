@@ -207,6 +207,197 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000127, BGC0000128.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+causal_graphs:
+- graph_id: pyoluteorin-pltf-pltl-6o6e-trapped-assembly
+  scope: BIOSYNTHESIS
+  description: Native pyoluteorin-pathway protein references and engineered participants
+    in the deposited 6O6E inhibitor-trapped assembly. Current model3.2, not an unmodified
+    native complex, full assay stock, physiological stoichiometry, kinetic measurement
+    or complete pyoluteorin synthesis. No antimicrobial-target assertion or source-producer
+    upgrade. Associated paper/SI unread; evidence here is the independently inspected
+    structural dataset and native sequence records. Not full-record sign-off.
+  nodes:
+  - node_id: cluster
+    label: Pf-5 reference pyoluteorin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000127
+  - node_id: assembly
+    label: 6O6E engineered inhibitor-trapped PltF/PltL assembly
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: probe
+    label: Current deposited I5M phosphopantetheine-inhibitor component
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: native_pltF
+    label: PltF native sequence reference (Pf-5)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCY5
+  - node_id: deposited_pltF
+    label: Engineered PltF construct in 6O6E author chain B
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: native_pltL
+    label: PltL native sequence reference (Pf-5)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCZ1
+  - node_id: deposited_pltL
+    label: Engineered PltL construct in 6O6E author chain E
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: native_pltF
+    notes: AF081920.3 CDS 20417..21913(+), 1-based inclusive; AAD24881.1, 498 aa.
+      CDS-aware table-11 translation exactly matches independently retrieved GenPept
+      and current UniProt sequence version 1. Native source Pf-5/taxon220664, not
+      the distinct M18 BGC0000128 source. These are native references, not the full
+      engineered chains or complete assay stocks.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS features inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAD24881.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned native translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCY5
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/GenPept/current UniProt comparison; gene, taxon and
+        strain matched.
+      retrieved_on: '2026-10-06'
+  - subject: deposited_pltF
+    predicate: has_native_sequence_reference
+    object: native_pltF
+    notes: Author chain B / label chain A contains all 498 native PltF residues followed
+      by KLAAALEHHHHHHHH, giving a 513-residue deposited sequence. The 15-residue
+      extension is C-terminal, not N-terminal.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/1
+      evidence_type: CURATOR_INFERENCE
+      notes: Explicit deposited-sequence comparison, not equality with the unmodified
+        native protein. Current deposited model 3.2, revision 2024-10-23, inspected
+        through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A
+        and SI were not read. Tag-residue identities were corrected in 2020; ligand
+        stereochemistry was corrected in 2022. This is not an assertion about the
+        uncorrected original model.
+      retrieved_on: '2026-10-06'
+  - subject: deposited_pltF
+    predicate: is_member_of_deposited_trapped_assembly
+    object: assembly
+    notes: Assembly1 is author/PISA-defined and contains one PltF and one PltL polymer
+      instance. Source Pf-5/taxon220664; expression host E. coli BL21/taxon511693.
+      Expression is not evidence that BL21 produces pyoluteorin. Deposited engineered
+      1:1 assembly is not a physiological stoichiometry or native stable-complex claim.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/assembly/6O6E/1
+      evidence_type: DATABASE_ASSERTION
+      notes: Current deposited model 3.2, revision 2024-10-23, inspected through pinned
+        RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not
+        read. Tag-residue identities were corrected in 2020; ligand stereochemistry
+        was corrected in 2022. This is not an assertion about the uncorrected original
+        model.
+      retrieved_on: '2026-10-06'
+    - reference: https://data.rcsb.org/rest/v1/core/entry/6O6E
+      evidence_type: DATABASE_ASSERTION
+      notes: 2.14-A X-ray deposition with an inhibitor-trapped pair. Current deposited
+        model 3.2, revision 2024-10-23, inspected through pinned RCSB records and
+        mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue
+        identities were corrected in 2020; ligand stereochemistry was corrected in
+        2022. This is not an assertion about the uncorrected original model.
+      retrieved_on: '2026-10-06'
+      snippet: trapped with PltL
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: native_pltL
+    notes: AF081920.3 CDS 3180..3446(+), 1-based inclusive; AAD24885.1, 88 aa. CDS-aware
+      table-11 translation exactly matches independently retrieved GenPept and current
+      UniProt sequence version 2. Native source Pf-5/taxon220664, not the distinct
+      M18 BGC0000128 source. These are native references, not the full engineered
+      chains or complete assay stocks.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS features inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAD24885.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned native translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCZ1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/GenPept/current UniProt comparison; gene, taxon and
+        strain matched.
+      retrieved_on: '2026-10-06'
+  - subject: deposited_pltL
+    predicate: has_native_sequence_reference
+    object: native_pltL
+    notes: Author chain E / label chain B contains native PltL residues 1-86 followed
+      by SALEHHHHHH, giving a 96-residue deposited sequence. Native residues 87-88
+      (CA) are not retained. Do not infer an intentional C87S mutation or a complete
+      native 88-residue protein from the database mutation-count field. Native sequence
+      version2 was updated in 2011; historical 2002/2005 assay stocks were not identified.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/2
+      evidence_type: CURATOR_INFERENCE
+      notes: Explicit deposited-sequence comparison, not equality with the unmodified
+        native protein. Current deposited model 3.2, revision 2024-10-23, inspected
+        through pinned RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A
+        and SI were not read. Tag-residue identities were corrected in 2020; ligand
+        stereochemistry was corrected in 2022. This is not an assertion about the
+        uncorrected original model.
+      retrieved_on: '2026-10-06'
+  - subject: deposited_pltL
+    predicate: is_member_of_deposited_trapped_assembly
+    object: assembly
+    notes: Assembly1 is author/PISA-defined and contains one PltF and one PltL polymer
+      instance. Source Pf-5/taxon220664; expression host E. coli BL21/taxon511693.
+      Expression is not evidence that BL21 produces pyoluteorin. Deposited engineered
+      1:1 assembly is not a physiological stoichiometry or native stable-complex claim.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/assembly/6O6E/1
+      evidence_type: DATABASE_ASSERTION
+      notes: Current deposited model 3.2, revision 2024-10-23, inspected through pinned
+        RCSB records and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not
+        read. Tag-residue identities were corrected in 2020; ligand stereochemistry
+        was corrected in 2022. This is not an assertion about the uncorrected original
+        model.
+      retrieved_on: '2026-10-06'
+    - reference: https://data.rcsb.org/rest/v1/core/entry/6O6E
+      evidence_type: DATABASE_ASSERTION
+      notes: 2.14-A X-ray deposition with an inhibitor-trapped pair. Current deposited
+        model 3.2, revision 2024-10-23, inspected through pinned RCSB records and
+        mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue
+        identities were corrected in 2020; ligand stereochemistry was corrected in
+        2022. This is not an assertion about the uncorrected original model.
+      retrieved_on: '2026-10-06'
+  - subject: probe
+    predicate: is_deposited_covalently_attached_to
+    object: deposited_pltL
+    notes: The sole mmCIF struct_conn covalent row joins PltL Ser42 OG (label chain
+      B, author chain E) to I5M phosphorus P (label chain S, author chain E residue801).
+      The reported 1.533-A model distance agrees with coordinates. It is not a direct
+      PltF-PltL covalent bond. I5M is an experimental probe component, not pyoluteorin
+      or a native intermediate.
+    evidence:
+    - reference: https://files.rcsb.org/download/6O6E.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Complete struct_conn table and linked atom coordinates inspected. Current
+        deposited model 3.2, revision 2024-10-23, inspected through pinned RCSB records
+        and mmCIF. The 2020 paper DOI10.1039/C9CB00015A and SI were not read. Tag-residue
+        identities were corrected in 2020; ligand stereochemistry was corrected in
+        2022. This is not an assertion about the uncorrected original model.
+      retrieved_on: '2026-10-06'
+    - reference: https://data.rcsb.org/rest/v1/core/chemcomp/I5M
+      evidence_type: DATABASE_ASSERTION
+      notes: Current chemical-component definition inspected; I5M first released2022-07-20,
+        after the associated2020paper.
+      retrieved_on: '2026-10-06'
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -216,3 +407,21 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-06T10:54:02Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one inline BIOSYNTHESIS graph, 7 nodes and 7 stable-URL-cited edges,
+    for native PltF/Q4KCY5 and PltL/Q4KCZ1 references and the distinct engineered
+    PDB6O6E inhibitor-trapped assembly. Native AF081920.3 CDS-aware table-11 translations
+    exactly match independent GenPept and current UniProt; source Pf-5/taxon220664,
+    not M18. Current deposited model3.2 and corrected construct/ligand metadata audited
+    independently of the unread associated paper/SI. PltF contains native498aa plus15
+    C-terminal residues; PltL contains native1-86 plus10 residues, not complete native88aa.
+    Assembly1 contains one of each engineered chain, not proof of native stable complex
+    or physiological stoichiometry. Sole deposited covalent linkage is PltLSer42OG
+    to I5M phosphorusP, coordinate distance1.533A, not a direct PltF-PltL bond. Three-word
+    exact deposition-title snippet verified. No complete biosynthesis, kinetics, BL21
+    production, antimicrobial target or source-producer upgrade asserted. Preserved
+    source fields, stereochemistry, SEEDED status, shared-structure discussion, AntibioticMech
+    link and previous history. No full-record sign-off.
+  llm_assisted: true
