@@ -302,6 +302,147 @@ causal_graphs:
       notes: Retained main PDF and Figures 1-5 inspected; detailed SI methods unread.
         Main page3 and Figure4C trace b.
       retrieved_on: '2026-10-06'
+- graph_id: caryoynencin-2022-cayk-heterologous-comparison
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: cayg
+    label: CayG component encoded in the heterologous experiment
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: cayk
+    label: CayK component encoded in the heterologous experiment
+    node_type: PROTEIN
+    grounding_status: REVIEW_NEEDED
+  - node_id: g_culture
+    label: P. protegens Pf-5 carrying the cayG construct
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: kg_culture
+    label: P. protegens Pf-5 carrying the cayKG construct
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: comparison
+    label: Reported culture-extract product-profile comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: products
+    label: Source-assigned caryoynencin isomer mixture
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: ee_product
+    label: Source-assigned E,E-caryoynencin component
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: ze_product
+    label: Source-assigned Z,E-caryoynencin component
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cayg
+    predicate: was_encoded_by_reported_construct_in
+    object: g_culture
+    notes: Main text describes cayG in pJB861 downstream of Pm and induction with
+      m-toluic acid. This is a genetic expression assignment, not a protein abundance
+      measurement or exact sequence/allele verification.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figure2 inspected; detailed SI methods unread.
+        Main page2 and Figure2B trace b.
+      retrieved_on: '2026-10-06'
+  - subject: cayg
+    predicate: was_encoded_by_reported_construct_in
+    object: kg_culture
+    notes: Figure2B trace c depicts the KG construct; main page3 explicitly reports
+      cayKG co-expression. Detailed insert boundaries and laboratory stock sequence
+      remain unverified; no tagged in-vitro preparation is identified here.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figure2 inspected; detailed SI methods unread.
+        Main page3 and Figure2B trace c.
+      retrieved_on: '2026-10-06'
+  - subject: cayk
+    predicate: was_encoded_by_reported_construct_in
+    object: kg_culture
+    notes: The paper calls CayK ferritin-like; that assignment is not a solved fold
+      or a measured electron-transfer rate. No exact CayK UniProt example selected.
+      A neighboring AurF-annotated protein is not sufficient identity evidence.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figure2 inspected; detailed SI methods unread.
+        Abstract, main pages2-3 and Figure2B trace c.
+      retrieved_on: '2026-10-06'
+      snippet: ferritin-like protein (CayK)
+  - subject: g_culture
+    predicate: was_profiled_in
+    object: comparison
+    notes: The cayG-only transformant did not show the caryoynencin product peaks
+      seen with KG and was reported unchanged from the empty-vector profile. This
+      condition-specific result does not prove universal CayG inactivity.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figure2 inspected; detailed SI methods unread.
+        Main page2 and Figure2B traces a-b.
+      retrieved_on: '2026-10-06'
+  - subject: kg_culture
+    predicate: was_profiled_in
+    object: comparison
+    notes: HPLC-DAD culture-extract profiling shows source-assigned caryoynencin peaks
+      with KG. No exact-isomer yield, protein abundance, direct binding or native
+      T. caryophylli production rate is inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figure2 inspected; detailed SI methods unread.
+        Main page3 and Figure2B trace c.
+      retrieved_on: '2026-10-06'
+  - subject: comparison
+    predicate: supports_cayk_associated_product_gain
+    object: products
+    notes: The G versus KG contrast supports a CayK-associated genetic contribution
+      in this host. Host factors remain present; this is not purified CayK turnover,
+      a unique native redox partnership or a physical protein complex. GL and KLG
+      also produced the reported peaks; K and KL controls did not show them. The separately
+      described soluble N-MalE-CayK reconstitution was unsuccessful, so in-vivo support
+      is not in-vitro success.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figure2 inspected; detailed SI methods unread.
+        Main page3 and Figure2B traces b-g; Figure2 caption lists b-f although the
+        displayed panel additionally contains trace g.
+      retrieved_on: '2026-10-06'
+  - subject: products
+    predicate: included_source_assigned_component
+    object: ee_product
+    notes: Figure2B trace c labels an E,E peak of compound1. This component relates
+      to the owner's alkene geometry; mixture-level evidence is not an exact structure
+      yield or an independently validated alcohol stereochemistry.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figure2 inspected; detailed SI methods unread.
+        Main page3 and visually inspected Figure2B trace c.
+      retrieved_on: '2026-10-06'
+  - subject: products
+    predicate: included_source_assigned_component
+    object: ze_product
+    notes: Figure2B trace c separately labels a Z,E peak of compound1. This isomer
+      is not the owner's E,E structure and receives no owner identifier.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figure2 inspected; detailed SI methods unread.
+        Main page3 and visually inspected Figure2B trace c.
+      retrieved_on: '2026-10-06'
+  description: CayK-associated product-profile change in a P. protegens Pf-5 heterologous
+    expression comparison. Genetic constructs, unresolved protein identities and isomer-containing
+    products are distinct. No purified CayK catalysis, exact stock identity, direct
+    protein association or detailed reaction sequence is asserted. This does not validate
+    the imported BSR3 attribution tracked in issue622 or confer full-record sign-off.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -334,3 +475,20 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-06T22:16:14Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the separate CayK-associated heterologous comparison graph, 8 nodes
+    and 8 individually DOI-cited edges. DOI:10.1002/anie.202203264 retained main text
+    and Figure2 support the Pf-5 G versus KG culture-profile comparison, not purified
+    CayK catalysis, a unique native electron partner or direct protein association.
+    CayG/CayK construct identities remain REVIEW_NEEDED without protein identifiers;
+    no native CayK sequence example was justified. The E,E and Z,E product components
+    remain distinct from the mixture and from this stereo-incomplete owner. Three
+    new quoted words; the corpus-wide source quote-budget audit passed. Figure2 caption
+    trace-label discrepancy and unsuccessful N-MalE-CayK biochemical attempt retained;
+    detailed SI methods remain unread after the recorded access stop. Preserved the
+    prior CayG/CayL graph, corrected BSR3 source-only evidence grades and qualification,
+    source fields, SEEDED status, stereochemistry and all prior history. No new producer
+    claim or full-record sign-off.
+  llm_assisted: true
