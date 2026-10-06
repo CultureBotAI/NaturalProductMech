@@ -1401,6 +1401,8 @@ causal_graphs:
       notes: Main text and Figure 2 inspected; supplement unread. Historical constructs
         unverified.
       retrieved_on: '2026-10-06'
+causal_graph_refs:
+- pyrrolnitrin-2005-ssue-assisted-oxygenation
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -1475,4 +1477,19 @@ curation_history:
     or physiological flux. Preserved all PA23 pathway/graph, PrnF and BL915 graphs,
     source fields/grades, stereochemistry, SEEDED status, AntibioticMech link and
     prior history. No antimicrobial mechanism or full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-06T18:02:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one exact-owner BIOSYNTHESIS component with 7 nodes and 6 cited edges
+    for in-vitro aminopyrrolnitrin oxidation by reconstituted PrnD and heterologous
+    SsuE, DOI:10.1074/jbc.M505334200. Main Methods/Results and Figure3 inspected;
+    supplement unread. Six quoted words. Both historical preparations remain REVIEW_NEEDED
+    without protein identifiers. Modern XL1-Blue CP132550.1 primer-bounded191aa inference
+    equals K12 P80644 but does not identify the historical stock; reported672bp PCR
+    length and PrnD Pf-5/BL915 primer discrepancy retained. Exact product supported
+    by HPLC/NMR/high-resolution EI-MS; assay composition is not complex stoichiometry.
+    No endogenous partner, native-cell flux, binding, antimicrobial mechanism or full-record
+    sign-off. All four prior graphs, four pathway steps, source fields/grades, stereochemistry,
+    SEEDED status, AntibioticMech link and history preserved.
   llm_assisted: true
