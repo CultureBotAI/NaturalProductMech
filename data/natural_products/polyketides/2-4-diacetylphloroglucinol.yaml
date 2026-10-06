@@ -705,6 +705,298 @@ causal_graphs:
       notes: Bangera and Thomashow sequenced the Pseudomonas fluorescens Q2-87 U41818
         phlACBD operon and assigned PhlD and PhlA/PhlC/PhlB from heterologous expression
         of individual and combined phl genes.
+- graph_id: phlh-pltz-2024-pyoluteorin-binding
+  scope: BIOSYNTHESIS
+  description: In-vitro ligand binding in a 2,4-DAPG regulatory study, separated from
+    cellular repression, pathway flux and antimicrobial action. Native references
+    do not identify complete recombinant stocks. Supplement unread; no full-record
+    sign-off.
+  nodes:
+  - node_id: pf5
+    label: Pseudomonas protegens Pf-5
+    node_type: ORGANISM
+    grounding_status: GROUNDED
+    identifier: NCBITaxon:220664
+  - node_id: pyoluteorin
+    label: Pyoluteorin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:156453
+  - node_id: native_phlh
+    label: PhlH native sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4K424
+  - node_id: prepared_phlh
+    label: PhlH study preparation (complete sequence unverified)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: native_pltz
+    label: PltZ native sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCY3
+  - node_id: prepared_pltz
+    label: PltZ study preparation (complete sequence unverified)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: pf5
+    predicate: encodes_native_reference
+    object: native_phlh
+    notes: CP000076.1 CDS 6763622..6764293(-), 1-based inclusive; AAY95141.1, 223
+      aa. CDS-aware table-11 translation equals independent GenPept and current UniProt.
+      Pf-5/taxon220664, unreviewed sequence version1; not Q2-87 or a complete study
+      stock.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY95141.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned reference inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4K424
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact sequence, gene, strain and taxon comparison.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_phlh
+    predicate: has_native_sequence_reference
+    object: native_phlh
+    notes: Pf-5 gene amplified into a pET-28b-derived vector; BL21(DE3) expression.
+      Reference correspondence, not full construct equality.
+    evidence:
+    - reference: DOI:10.1128/aem.01743-23
+      evidence_type: CURATOR_INFERENCE
+      notes: Main text and Figure 5 inspected; supplemental construct details inaccessible.
+        No exact tag sequence or native-preparation equivalence adopted.
+      retrieved_on: '2026-10-06'
+  - subject: pyoluteorin
+    predicate: bound_in_itc_to
+    object: prepared_phlh
+    notes: 'Figure5A: Kd1.1uM. ITC,25C,triplicates,independent binding model,blank-heat
+      correction. No cellular occupancy or repression inferred.'
+    evidence:
+    - reference: DOI:10.1128/aem.01743-23
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main text and Figure 5 inspected; supplemental construct details inaccessible.
+        No exact tag sequence or native-preparation equivalence adopted.
+      retrieved_on: '2026-10-06'
+  - subject: pf5
+    predicate: encodes_native_reference
+    object: native_pltz
+    notes: AF081920.3 CDS 22705..23376(-), 1-based inclusive; AAV66097.1, 223 aa.
+      CDS-aware table-11 translation equals independent GenPept and current UniProt.
+      Pf-5/taxon220664, unreviewed sequence version1; not Q2-87 or a complete study
+      stock.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAV66097.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned reference inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCY3
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact sequence, gene, strain and taxon comparison.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_pltz
+    predicate: has_native_sequence_reference
+    object: native_pltz
+    notes: Pf-5 gene amplified into a pET-28b-derived vector; BL21(DE3) expression.
+      Reference correspondence, not full construct equality.
+    evidence:
+    - reference: DOI:10.1128/aem.01743-23
+      evidence_type: CURATOR_INFERENCE
+      notes: Main text and Figure 5 inspected; supplemental construct details inaccessible.
+        No exact tag sequence or native-preparation equivalence adopted.
+      retrieved_on: '2026-10-06'
+  - subject: pyoluteorin
+    predicate: bound_in_itc_to
+    object: prepared_pltz
+    notes: 'Figure5B: Kd79.2nM. ITC,25C,triplicates,independent binding model,blank-heat
+      correction. No cellular occupancy or repression inferred.'
+    evidence:
+    - reference: DOI:10.1128/aem.01743-23
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main text and Figure 5 inspected; supplemental construct details inaccessible.
+        No exact tag sequence or native-preparation equivalence adopted.
+      retrieved_on: '2026-10-06'
+- graph_id: phlg-3hwp-tagged-semet-assembly
+  scope: BIOSYNTHESIS
+  description: Pf-5 PhlG structural subgraph for 2,4-DAPG pathway homeostasis. Native
+    reference, engineered SeMet/tagged chains and deposited assembly remain distinct.
+    No new synthetic pathway step, kinetic constant, bound substrate or antimicrobial-resistance
+    claim. Current structural dataset independently inspected; no full-record sign-off.
+  nodes:
+  - node_id: pf5
+    label: Pseudomonas protegens Pf-5
+    node_type: ORGANISM
+    grounding_status: GROUNDED
+    identifier: NCBITaxon:220664
+  - node_id: native_phlg
+    label: Native PhlG sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4K423
+  - node_id: assembly
+    label: 3HWP deposited engineered PhlG dimer
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: chain_A
+    label: 3HWP tagged SeMet PhlG chain A
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: zinc_A
+    label: 3HWP zinc in author chain A residue295
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: water_A
+    label: 3HWP water in author chain A residue307
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: chain_B
+    label: 3HWP tagged SeMet PhlG chain B
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: zinc_B
+    label: 3HWP zinc in author chain B residue295
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: water_B
+    label: 3HWP water in author chain B residue297
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: pf5
+    predicate: encodes_native_reference
+    object: native_phlg
+    notes: CP000076.1 CDS 6764435..6765319(+), 1-based inclusive; AAY95142.1,294aa.
+      CDS-aware table-11 translation equals independent GenPept and current UniProt
+      reviewed sequence version1, Pf-5/taxon220664. Not Q2-87 or a complete study
+      stock.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY95142.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned native reference inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4K423
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS/GenPept/UniProt sequence and identity comparison.
+      retrieved_on: '2026-10-06'
+  - subject: chain_A
+    predicate: has_native_sequence_reference
+    object: native_phlg
+    notes: Canonical302aa=MGHHHHHH+native294aa only after MSE-to-M normalization;
+      the deposited chain is tagged and selenium-substituted, not unmodified native
+      PhlG. No complete kinetic-stock equivalence; expression metadata do not establish
+      the full crystallization stock.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/polymer_entity/3HWP/1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact deposited/native sequence comparison; source Pf-5, expression E.coli.
+      retrieved_on: '2026-10-06'
+    - reference: https://files.rcsb.org/download/3HWP.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Coordinate metadata records Rosseta(DE3); this source spelling is retained.
+      retrieved_on: '2026-10-06'
+  - subject: chain_A
+    predicate: is_member_of_deposited_assembly
+    object: assembly
+    notes: Assembly1 contains chainsA/B under identity operation, author/PISA-defined.
+      Deposited dimer membership is not universal physiological stoichiometry.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/assembly/3HWP/1
+      evidence_type: DATABASE_ASSERTION
+      notes: Complete assembly definition inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://data.rcsb.org/rest/v1/core/entry/3HWP
+      evidence_type: DATABASE_ASSERTION
+      notes: Current model1.4, revised2024-11-06,2.0A; entry metadata inspected.
+      retrieved_on: '2026-10-06'
+  - subject: zinc_A
+    predicate: is_deposited_coordinated_by
+    object: chain_A
+    notes: 'Four protein ligands in author numbering: H129NE2,E160OE1,H270NE2,E274OE1.
+      Coordinates and all metal links checked. Not direct evidence of a catalytic
+      transition state.'
+    evidence:
+    - reference: https://files.rcsb.org/download/3HWP.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Zn label chainC;10total metal links include one water per site. The48covalent
+        rows are same-chain peptide links adjacent to MSE,not interchain crosslinks.
+      retrieved_on: '2026-10-06'
+  - subject: water_A
+    predicate: is_deposited_coordinated_to
+    object: zinc_A
+    notes: A modeled water contact, not an observed nucleophilic attack or bound DAPG/MAPG
+      intermediate.
+    evidence:
+    - reference: https://files.rcsb.org/download/3HWP.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: AuthorchainA water307 andZn295 matched to coordinates. Other deposited
+        nonpolymers includeNi andCl;not a claim that zinc is the sole metal.
+      retrieved_on: '2026-10-06'
+  - subject: chain_B
+    predicate: has_native_sequence_reference
+    object: native_phlg
+    notes: Canonical302aa=MGHHHHHH+native294aa only after MSE-to-M normalization;
+      the deposited chain is tagged and selenium-substituted, not unmodified native
+      PhlG. No complete kinetic-stock equivalence; expression metadata do not establish
+      the full crystallization stock.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/polymer_entity/3HWP/1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact deposited/native sequence comparison; source Pf-5, expression E.coli.
+      retrieved_on: '2026-10-06'
+    - reference: https://files.rcsb.org/download/3HWP.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Coordinate metadata records Rosseta(DE3); this source spelling is retained.
+      retrieved_on: '2026-10-06'
+  - subject: chain_B
+    predicate: is_member_of_deposited_assembly
+    object: assembly
+    notes: Assembly1 contains chainsA/B under identity operation, author/PISA-defined.
+      Deposited dimer membership is not universal physiological stoichiometry.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/assembly/3HWP/1
+      evidence_type: DATABASE_ASSERTION
+      notes: Complete assembly definition inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://data.rcsb.org/rest/v1/core/entry/3HWP
+      evidence_type: DATABASE_ASSERTION
+      notes: Current model1.4, revised2024-11-06,2.0A; entry metadata inspected.
+      retrieved_on: '2026-10-06'
+  - subject: zinc_B
+    predicate: is_deposited_coordinated_by
+    object: chain_B
+    notes: 'Four protein ligands in author numbering: H129NE2,E160OE1,H270NE2,E274OE1.
+      Coordinates and all metal links checked. Not direct evidence of a catalytic
+      transition state.'
+    evidence:
+    - reference: https://files.rcsb.org/download/3HWP.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Zn label chainF;10total metal links include one water per site. The48covalent
+        rows are same-chain peptide links adjacent to MSE,not interchain crosslinks.
+      retrieved_on: '2026-10-06'
+  - subject: water_B
+    predicate: is_deposited_coordinated_to
+    object: zinc_B
+    notes: A modeled water contact, not an observed nucleophilic attack or bound DAPG/MAPG
+      intermediate.
+    evidence:
+    - reference: https://files.rcsb.org/download/3HWP.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: AuthorchainB water297 andZn295 matched to coordinates. Other deposited
+        nonpolymers includeNi andCl;not a claim that zinc is the sole metal.
+      retrieved_on: '2026-10-06'
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -731,4 +1023,31 @@ curation_history:
   changes: Added exact PhlD biochemical evidence for RHEA:50380 and grounded the monoacetylphloroglucinol/MAPG
     precursor in the 2,4-diacetylphloroglucinol PhlA/PhlC/PhlB step and BIOSYNTHESIS
     causal graph to CHEBI:64344.
+  llm_assisted: true
+- timestamp: '2026-10-06T12:51:16Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added two bounded BIOSYNTHESIS subgraphs with 15 nodes and 15 DOI-or-stable-URL-cited
+    edges for native Pf-5 references PhlH/Q4K424, PltZ/Q4KCY3 and PhlG/Q4K423. Native
+    CDS-aware table-11 translations match independent GenPept and current UniProt;
+    these references are not complete engineered preparations or the existing Q2-87
+    proteins. Primary DOI:10.1128/aem.01743-23 supports the separate recombinant PhlH/PltZ
+    ITC observations, not equivalent cellular repression; main text and Figure5 read,
+    supplement inaccessible. Independent current RCSB3HWP model1.4 supports distinct
+    tagged/SeMet chains, deposited dimer membership and zinc/water coordination. Canonical
+    sequence equality requires MSE normalization and does not identify the kinetic
+    stock. No new synthetic reaction, bound DAPG/MAPG, transition state, cellular
+    flux, universal physiological stoichiometry or antimicrobial resistance asserted.
+    No new source quotations. Preserved the full existing Q2-87 graph and two pathway
+    steps, source-owned fields, BGC claims, stereochemistry, SEEDED status, discussion,
+    AntibioticMech link and prior history. No full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-06T13:10:39Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Corrected the two new Pf-5 organism-node labels to Pseudomonas protegens
+    Pf-5 for NCBITaxon:220664 after ontology-backed label validation found descriptive-label
+    mismatches (GitHub issue616). Retained taxon and protein identifiers, all graph
+    nodes/edges/evidence, original curation event, existing Q2-87 biology, source
+    fields and SEEDED status. No biological claim or evidence-grade change.
   llm_assisted: true

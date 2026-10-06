@@ -206,6 +206,123 @@ derived from a source. This is what the rest of the record exists to support.</p
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 6 edges</span></h2>
+<p class="sub">In-vitro ligand binding in a 2,4-DAPG regulatory study, separated from cellular repression, pathway flux and antimicrobial action. Native references do not identify complete recombinant stocks. Supplement unread; no full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Pseudomonas protegens Pf-5</td>
+  <td>encodes_native_reference</td>
+  <td>PhlH native sequence reference</td>
+  <td>CP000076.1 CDS 6763622..6764293(-), 1-based inclusive; AAY95141.1, 223 aa. CDS-aware table-11 translation equals independent GenPept and current UniProt. Pf-5/taxon220664, unreviewed sequence version1; not Q2-87 or a complete study stock.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1<br>https://www.ncbi.nlm.nih.gov/protein/AAY95141.1<br>https://www.uniprot.org/uniprotkb/Q4K424</td>
+</tr>
+<tr>
+  <td>PhlH study preparation (complete sequence unverified)</td>
+  <td>has_native_sequence_reference</td>
+  <td>PhlH native sequence reference</td>
+  <td>Pf-5 gene amplified into a pET-28b-derived vector; BL21(DE3) expression. Reference correspondence, not full construct equality.</td>
+  <td class="mono">DOI:10.1128/aem.01743-23</td>
+</tr>
+<tr>
+  <td>Pyoluteorin</td>
+  <td>bound_in_itc_to</td>
+  <td>PhlH study preparation (complete sequence unverified)</td>
+  <td>Figure5A: Kd1.1uM. ITC,25C,triplicates,independent binding model,blank-heat correction. No cellular occupancy or repression inferred.</td>
+  <td class="mono">DOI:10.1128/aem.01743-23</td>
+</tr>
+<tr>
+  <td>Pseudomonas protegens Pf-5</td>
+  <td>encodes_native_reference</td>
+  <td>PltZ native sequence reference</td>
+  <td>AF081920.3 CDS 22705..23376(-), 1-based inclusive; AAV66097.1, 223 aa. CDS-aware table-11 translation equals independent GenPept and current UniProt. Pf-5/taxon220664, unreviewed sequence version1; not Q2-87 or a complete study stock.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAV66097.1<br>https://www.uniprot.org/uniprotkb/Q4KCY3</td>
+</tr>
+<tr>
+  <td>PltZ study preparation (complete sequence unverified)</td>
+  <td>has_native_sequence_reference</td>
+  <td>PltZ native sequence reference</td>
+  <td>Pf-5 gene amplified into a pET-28b-derived vector; BL21(DE3) expression. Reference correspondence, not full construct equality.</td>
+  <td class="mono">DOI:10.1128/aem.01743-23</td>
+</tr>
+<tr>
+  <td>Pyoluteorin</td>
+  <td>bound_in_itc_to</td>
+  <td>PltZ study preparation (complete sequence unverified)</td>
+  <td>Figure5B: Kd79.2nM. ITC,25C,triplicates,independent binding model,blank-heat correction. No cellular occupancy or repression inferred.</td>
+  <td class="mono">DOI:10.1128/aem.01743-23</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">9 nodes, 9 edges</span></h2>
+<p class="sub">Pf-5 PhlG structural subgraph for 2,4-DAPG pathway homeostasis. Native reference, engineered SeMet/tagged chains and deposited assembly remain distinct. No new synthetic pathway step, kinetic constant, bound substrate or antimicrobial-resistance claim. Current structural dataset independently inspected; no full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Pseudomonas protegens Pf-5</td>
+  <td>encodes_native_reference</td>
+  <td>Native PhlG sequence reference</td>
+  <td>CP000076.1 CDS 6764435..6765319(+), 1-based inclusive; AAY95142.1,294aa. CDS-aware table-11 translation equals independent GenPept and current UniProt reviewed sequence version1, Pf-5/taxon220664. Not Q2-87 or a complete study stock.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1<br>https://www.ncbi.nlm.nih.gov/protein/AAY95142.1<br>https://www.uniprot.org/uniprotkb/Q4K423</td>
+</tr>
+<tr>
+  <td>3HWP tagged SeMet PhlG chain A</td>
+  <td>has_native_sequence_reference</td>
+  <td>Native PhlG sequence reference</td>
+  <td>Canonical302aa=MGHHHHHH+native294aa only after MSE-to-M normalization; the deposited chain is tagged and selenium-substituted, not unmodified native PhlG. No complete kinetic-stock equivalence; expression metadata do not establish the full crystallization stock.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/polymer_entity/3HWP/1<br>https://files.rcsb.org/download/3HWP.cif</td>
+</tr>
+<tr>
+  <td>3HWP tagged SeMet PhlG chain A</td>
+  <td>is_member_of_deposited_assembly</td>
+  <td>3HWP deposited engineered PhlG dimer</td>
+  <td>Assembly1 contains chainsA/B under identity operation, author/PISA-defined. Deposited dimer membership is not universal physiological stoichiometry.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/assembly/3HWP/1<br>https://data.rcsb.org/rest/v1/core/entry/3HWP</td>
+</tr>
+<tr>
+  <td>3HWP zinc in author chain A residue295</td>
+  <td>is_deposited_coordinated_by</td>
+  <td>3HWP tagged SeMet PhlG chain A</td>
+  <td>Four protein ligands in author numbering: H129NE2,E160OE1,H270NE2,E274OE1. Coordinates and all metal links checked. Not direct evidence of a catalytic transition state.</td>
+  <td class="mono">https://files.rcsb.org/download/3HWP.cif</td>
+</tr>
+<tr>
+  <td>3HWP water in author chain A residue307</td>
+  <td>is_deposited_coordinated_to</td>
+  <td>3HWP zinc in author chain A residue295</td>
+  <td>A modeled water contact, not an observed nucleophilic attack or bound DAPG/MAPG intermediate.</td>
+  <td class="mono">https://files.rcsb.org/download/3HWP.cif</td>
+</tr>
+<tr>
+  <td>3HWP tagged SeMet PhlG chain B</td>
+  <td>has_native_sequence_reference</td>
+  <td>Native PhlG sequence reference</td>
+  <td>Canonical302aa=MGHHHHHH+native294aa only after MSE-to-M normalization; the deposited chain is tagged and selenium-substituted, not unmodified native PhlG. No complete kinetic-stock equivalence; expression metadata do not establish the full crystallization stock.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/polymer_entity/3HWP/1<br>https://files.rcsb.org/download/3HWP.cif</td>
+</tr>
+<tr>
+  <td>3HWP tagged SeMet PhlG chain B</td>
+  <td>is_member_of_deposited_assembly</td>
+  <td>3HWP deposited engineered PhlG dimer</td>
+  <td>Assembly1 contains chainsA/B under identity operation, author/PISA-defined. Deposited dimer membership is not universal physiological stoichiometry.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/assembly/3HWP/1<br>https://data.rcsb.org/rest/v1/core/entry/3HWP</td>
+</tr>
+<tr>
+  <td>3HWP zinc in author chain B residue295</td>
+  <td>is_deposited_coordinated_by</td>
+  <td>3HWP tagged SeMet PhlG chain B</td>
+  <td>Four protein ligands in author numbering: H129NE2,E160OE1,H270NE2,E274OE1. Coordinates and all metal links checked. Not direct evidence of a catalytic transition state.</td>
+  <td class="mono">https://files.rcsb.org/download/3HWP.cif</td>
+</tr>
+<tr>
+  <td>3HWP water in author chain B residue297</td>
+  <td>is_deposited_coordinated_to</td>
+  <td>3HWP zinc in author chain B residue295</td>
+  <td>A modeled water contact, not an observed nucleophilic attack or bound DAPG/MAPG intermediate.</td>
+  <td class="mono">https://files.rcsb.org/download/3HWP.cif</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
