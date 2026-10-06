@@ -1344,6 +1344,8 @@ causal_graphs:
         constructs, host strain, tags, assay conditions and historical protein sequences
         unverified. No kinetic values or reaction stoichiometry adopted.
       retrieved_on: '2026-10-06'
+causal_graph_refs:
+- dapg-2025-gaca-reporter-genetics
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -1414,4 +1416,18 @@ curation_history:
     graphs, source-owned fields/evidence grades, stereochemistry, SEEDEDstatus, discussion,
     AntibioticMech link and priorhistory. No producer-grade upgrade, antimicrobial
     target or full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-06T15:57:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one exact-owner BIOSYNTHESIS component with 7 nodes and 8 cited edges
+    for native Pf-5 GacA/Q4KAR8 and bounded phlD reporter genetics. CP000076.1 CDS-aware
+    table-11 translation matches AAY92829.1 and UniProt. DOI:10.1128/aem.01546-25
+    main, Table1 and Figure3A inspected; three quoted words. Native reference, JL4975/LK099-derived
+    reporter cultures and normalized GFP readouts stay distinct. No exact deletion
+    junction, complete plasmid, direct DNA binding, isolated translation rate, DAPG
+    flux, 10h significance or RsmE independence asserted. Ambiguous RNA-probe mapping
+    excluded. All four inline graphs, two pathway steps, source fields/grades, stereochemistry,
+    SEEDED status, discussion, AntibioticMech link and history retained. No antimicrobial
+    mechanism or full-record sign-off.
   llm_assisted: true

@@ -455,6 +455,68 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 8 edges</span></h2>
+<p class="sub">Bounded Pf-5 GacA genetics in a DAPG regulatory study. Native references, reporter-bearing cultures and GFP readouts remain distinct. RNA-probe assignments, antimicrobial phenotypes and full-record sign-off are excluded.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Pseudomonas protegens Pf-5</td>
+  <td>encodes_native_reference</td>
+  <td>Native GacA sequence reference</td>
+  <td>CP000076.1 CDS4110513..4111154(-), 1-based inclusive; PFL_3563, AAY92829.1,213aa. CDS-aware table11 translation equals GenPept and UniProt sequence version1, unreviewed, taxon220664. Historical P.fluorescens display name retains the exact Pf-5 strain. Not a complete engineered stock or a protein asserted present in the mutant.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1<br>https://www.ncbi.nlm.nih.gov/protein/AAY92829.1<br>https://www.uniprot.org/uniprotkb/Q4KAR8</td>
+</tr>
+<tr>
+  <td>JL4975-derived reporter culture</td>
+  <td>has_reported_deletion_of_coding_locus_for</td>
+  <td>Native GacA sequence reference</td>
+  <td>Unmarked in-frame gacA deletion; exact junctions and residual product unverified.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25</td>
+</tr>
+<tr>
+  <td>LK099-derived reporter culture</td>
+  <td>has_native_background_reference</td>
+  <td>Pseudomonas protegens Pf-5</td>
+  <td>LK099 background with reporter, not an unmodified genome-equivalent stock.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25</td>
+</tr>
+<tr>
+  <td>JL4975-derived reporter culture</td>
+  <td>carries_reporter</td>
+  <td>Study phlD translation GFP reporter</td>
+  <td>pPROBE-NT derivative; full plasmid sequence unverified.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25</td>
+</tr>
+<tr>
+  <td>LK099-derived reporter culture</td>
+  <td>carries_reporter</td>
+  <td>Study phlD translation GFP reporter</td>
+  <td>Promoter and six phlD codons fused to GFP; no native protein abundance measurement.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25</td>
+</tr>
+<tr>
+  <td>JL4975-derived reporter culture</td>
+  <td>yielded</td>
+  <td>Mutant normalized GFP readout</td>
+  <td>PDB,28C; fluorescence normalized to OD600 after empty-vector correction.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25</td>
+</tr>
+<tr>
+  <td>LK099-derived reporter culture</td>
+  <td>yielded</td>
+  <td>Control normalized GFP readout</td>
+  <td>Matched reporter comparison at10,16,24h; Figure3A mean and SE, n=3.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25</td>
+</tr>
+<tr>
+  <td>Mutant normalized GFP readout</td>
+  <td>was_lower_than</td>
+  <td>Control normalized GFP readout</td>
+  <td>Clear separation at16/24h; no numerical fold change or significance at10h asserted. Not direct DNA binding, isolated translation rate, DAPG flux or RsmE independence.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
