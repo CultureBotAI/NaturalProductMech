@@ -168,6 +168,10 @@ causal_graph_refs:
 - mupirocin-2022-mmpb-ks-self-loading
 - mupirocin-2022-mmpb-ks-third-extension
 - mupirocin-2022-bounded-dh-domain-tests
+- mupirocin-2020-priming-coupled-starter-assays
+- mupirocin-2020-priming-cross-origin-loading
+- mupirocin-2020-priming-cross-origin-reduction
+- mupirocin-2020-priming-a-carrier-substitution-controls
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -198,4 +202,26 @@ curation_history:
     Owner is exact pseudomonic acid A,not clinical mupirocin mixture. Preserved source
     fields,stereochemistry,SEEDED status,discussion,AntibioticMech link and prior
     history.
+  llm_assisted: true
+- timestamp: '2026-10-06T06:29:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added four exact-owner BIOSYNTHESIS components,74nodes/93DOI-or-URL-cited
+    edges, for supplement-bounded priming-cassette assays. Native MupQ/Q8RL54 and
+    MupS/Q8RL53 CDS/GenPept/current UniProt matches supplement reused MacpA/Q8RL70
+    and MacpD/Q8RL52. Mixed-origin TacpA/CBK62742.1,TacpD/CBK62719.1,TmlQ/CBK62721.1,TmlS/CBK62720.1
+    use exact native CDS/GenPept/UniParc matches; deleted UniProt entries are not
+    selected. DOI10.1021/acschembio.9b00969.s001 supports coupled starter/boiled-control,swapped
+    carrier-loading,mixed-origin reduction and A-carrier substitution graphs. Publisher
+    supplement text and relevant rendered figures/tables inspected; main article inaccessible
+    and unread. TableS1/native comparisons distinguish tagged constructs,MacpD C80A
+    and TmlQ initiator-M omission; no assay-by-assay stock identity asserted. Joint
+    boiled Q/S control is not individual omission; partial intact mass is not decisive
+    without Ppant; bis-thioesters are not reduced endpoints; high-energy-MS decarboxylation
+    is not a biosynthetic enzyme. One exact three-word snippet qualifies an unshown
+    MupS substitution. Addressed author-agent issue#601; not independent approval
+    or full-record sign-off. No complete native reconstitution,uninspected recipes
+    or numerical kinetics inferred. Preserved all eight older graphs/component bytes,source
+    fields,stereochemistry,SEEDED status,name discussion,AntibioticMech link and prior
+    owner history. Exact PAA owner, not the clinical mupirocin mixture.
   llm_assisted: true
