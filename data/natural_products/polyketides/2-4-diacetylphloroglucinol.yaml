@@ -1001,6 +1001,11 @@ causal_graph_refs:
 - dapg-pf5-2005-phld-phlacb-assays
 - dapg-2025-gaca-reporter-genetics
 - phlh-2p24-reference-7e1l-apo-assembly
+- dapg-pf5-2025-rsme-alphascreen
+- dapg-f113-2004-phle-production-genetics
+- dapg-phlabc-5m3k-deposited-assembly
+- dapg-cha0-2006-phlg-degradation
+- dapg-cha0-2006-phlf-phlh-reporter-regulation
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -1101,4 +1106,17 @@ curation_history:
     pre-existing expanded graphs in their original order. Retained both pathway steps,
     source fields/grades, stereochemistry, SEEDED status, discussion, AntibioticMech
     link and all prior history. No antimicrobial target or full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-06T18:41:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added five separate exact-owner BIOSYNTHESIS graph components with 47
+    nodes and 45 DOI-or-stable-URL-cited edges. Added six native UniProt references:
+    RsmE Q4KEY0,PhlE Q845L9,PhlA Q9TP23,PhlG A0A2C9EVE6,PhlF Q9RF02 and PhlH Q9RF00;
+    existing Pf-5 PhlB/C references are reused. Each mechanism retains its independently
+    checked evidence,construct ambiguity and source access limits. Thirteen new quoted
+    words across three papers. Preserved all six previous expanded graphs and their
+    order,two pathway steps,source fields/grades,stereochemistry,SEEDED status,discussion,AntibioticMech
+    link and prior history. No antimicrobial mechanism,producer-grade upgrade or full-record
+    sign-off. Component events describe the separate additions.'
   llm_assisted: true

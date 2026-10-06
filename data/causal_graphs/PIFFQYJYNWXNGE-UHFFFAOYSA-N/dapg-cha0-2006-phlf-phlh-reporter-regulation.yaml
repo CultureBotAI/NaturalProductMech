@@ -1,0 +1,261 @@
+record_id: CHEBI:78688
+standard_inchi_key: PIFFQYJYNWXNGE-UHFFFAOYSA-N
+graph:
+  graph_id: dapg-cha0-2006-phlf-phlh-reporter-regulation
+  scope: BIOSYNTHESIS
+  description: Separate CHA0 reporter comparisons for PhlF and PhlH, not direct DNA
+    binding or enzyme assays. Native references retain REVIEW_NEEDED species-label
+    and revised-genome sequence discrepancies; unresolved alleles and study backgrounds
+    remain distinct. No exact lesion, quantitative fold change, GacS/GacA protein
+    assignment or producer-grade upgrade. Main/images/tables/SI unread; no full-record
+    sign-off.
+  nodes:
+  - node_id: cha0
+    label: Native CHA0 source (species annotation discrepancy)
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: reference
+    label: Study CHA0 reference reporter background
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: comparison
+    label: Separate phlF and phlH reporter comparisons
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reporter
+    label: pME8030 phlG-lacZ translational-fusion readout
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: native_phlf
+    label: PhlF AF207529.2 CHA0 sequence reference (variant unresolved)
+    node_type: PROTEIN
+    grounding_status: REVIEW_NEEDED
+    identifier: UniProtKB:Q9RF02
+  - node_id: allele_phlf
+    label: Study phlF mutant allele (lesion unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: context_phlf
+    label: Study CHA638 phlF reporter background
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: control_phlf
+    label: Authors' inferred phlF-associated negative control
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: native_phlh
+    label: PhlH AF207529.2 CHA0 sequence reference (variant unresolved)
+    node_type: PROTEIN
+    grounding_status: REVIEW_NEEDED
+    identifier: UniProtKB:Q9RF00
+  - node_id: allele_phlh
+    label: Study phlH mutant allele (lesion unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: context_phlh
+    label: Study CHA630 phlH reporter background
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: control_phlh
+    label: Authors' inferred phlH-associated negative control
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: reference
+    predicate: is_reference_background_for
+    object: comparison
+    notes: Figure7 caption identifies wild-typeCHA0 as the reference. Separate mutant
+      comparisons, not one culture carrying both mutations.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+  - subject: comparison
+    predicate: uses_reporter_readout
+    object: reporter
+    notes: Figure7 caption reports beta-galactosidase activity from pME8030 in OSGly-grown
+      cultures. A translational-fusion signal is not direct promoter occupancy, isolated
+      transcription rate or purified PhlG activity.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+  - subject: cha0
+    predicate: encodes_native_reference
+    object: native_phlf
+    notes: 'AF207529.2 CDS1580..2182(+),1-based inclusive; AAF20928.1,200aa. CDS-aware
+      table11 translation equals independent GenPept and current UniProt. Native sourceCHA0,not
+      Pf-5 or Q2-87; no complete historical assay-stock sequence inferred. GenBank/GenPept
+      label CHA0 P.protegens/taxon380021; UniProt labels P.fluorescens/taxon294. Revised
+      CHA0 genome LS999205.1 CDS6559308..6559910(-), VAV72159.1, differs at188: this
+      referenceF versus genomeS. REVIEW_NEEDED retains reference-version/strain-stock
+      ambiguity. No source is silently replaced; no engineered mutation or biological
+      cause of these sequence differences is inferred.'
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF207529.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAF20928.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent native translation and source inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9RF02
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact AF207529.2/GenPept/UniProt correspondence; differing genome reference
+        and historical-stock ambiguity retained.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LS999205.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Revised CHA0/taxon1124983 genome source and CDS-aware table11 translation
+        inspected and compared exactly; not an independent historical assay-stock
+        sequence.
+      retrieved_on: '2026-10-06'
+  - subject: allele_phlf
+    predicate: affects_coding_locus_of
+    object: native_phlf
+    notes: Gene-name correspondence only, not a resolved allele, intact mutant protein,
+      in-frame deletion or proof excluding polar effects.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+  - subject: allele_phlf
+    predicate: was_present_in
+    object: context_phlf
+    notes: Figure7 caption identifies the named mutant background; exact lesion and
+      complete stock unresolved.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+  - subject: context_phlf
+    predicate: is_perturbed_background_for
+    object: comparison
+    notes: Reported mutant reporter context, kept separate from the native reference
+      sequence and the purified-enzyme experiment.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+  - subject: comparison
+    predicate: supports_proposed
+    object: control_phlf
+    notes: Abstract reports negative control by this pathway-specific regulator; Figure7
+      caption identifies the reporter comparison. No fold change, direct DNA binding,
+      promoter site, effector ligand or isolated regulatory complex.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+      snippet: negative control
+  - subject: cha0
+    predicate: encodes_native_reference
+    object: native_phlh
+    notes: 'AF207529.2 CDS3260..3931(+),1-based inclusive; AAF20930.1,223aa. CDS-aware
+      table11 translation equals independent GenPept and current UniProt. Native sourceCHA0,not
+      Pf-5 or Q2-87; no complete historical assay-stock sequence inferred. GenBank/GenPept
+      label CHA0 P.protegens/taxon380021; UniProt labels P.fluorescens/taxon294. Revised
+      CHA0 genome LS999205.1 CDS6557559..6558230(-), VAV72157.1, differs at215 and217:
+      this referenceS/M versus genomeA/V. REVIEW_NEEDED retains reference-version/strain-stock
+      ambiguity. No source is silently replaced; no engineered mutation or biological
+      cause of these sequence differences is inferred.'
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF207529.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAF20930.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent native translation and source inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9RF00
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact AF207529.2/GenPept/UniProt correspondence; differing genome reference
+        and historical-stock ambiguity retained.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LS999205.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Revised CHA0/taxon1124983 genome source and CDS-aware table11 translation
+        inspected and compared exactly; not an independent historical assay-stock
+        sequence.
+      retrieved_on: '2026-10-06'
+  - subject: allele_phlh
+    predicate: affects_coding_locus_of
+    object: native_phlh
+    notes: Gene-name correspondence only, not a resolved allele, intact mutant protein,
+      in-frame deletion or proof excluding polar effects.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+  - subject: allele_phlh
+    predicate: was_present_in
+    object: context_phlh
+    notes: Figure7 caption identifies the named mutant background; exact lesion and
+      complete stock unresolved.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+  - subject: context_phlh
+    predicate: is_perturbed_background_for
+    object: comparison
+    notes: Reported mutant reporter context, kept separate from the native reference
+      sequence and the purified-enzyme experiment.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+  - subject: comparison
+    predicate: supports_proposed
+    object: control_phlh
+    notes: Abstract reports negative control by this pathway-specific regulator; Figure7
+      caption identifies the reporter comparison. No fold change, direct DNA binding,
+      promoter site, effector ligand or isolated regulatory complex.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T18:41:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component; reviewed baseline 869c40b7a4b573d9b7e6b29fde10dc62339f189e.
+    Separate CHA0 PhlF/PhlH reporter comparisons,12nodes12edges. Q9RF02 and Q9RF00
+    AF207529.2 references retain REVIEW_NEEDED for taxonomy and LS999205.1 sequence
+    differences; no cause of those differences inferred. DOI:10.1128/AEM.72.1.418-427.2006
+    abstract and captions only; two quoted words. CHA638/CHA630 allele contexts and
+    pME8030 reporter remain distinct from native references; negative control is inferred,not
+    direct DNA binding, a resolved lesion or purified-enzyme evidence.
+  llm_assisted: true
