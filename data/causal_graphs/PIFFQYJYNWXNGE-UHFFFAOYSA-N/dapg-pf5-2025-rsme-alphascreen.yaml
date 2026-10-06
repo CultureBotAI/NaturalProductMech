@@ -1,0 +1,182 @@
+record_id: CHEBI:78688
+standard_inchi_key: PIFFQYJYNWXNGE-UHFFFAOYSA-N
+graph:
+  graph_id: dapg-pf5-2025-rsme-alphascreen
+  scope: BIOSYNTHESIS
+  description: Bounded RsmE assay evidence in a Pf-5 DAPG regulatory study. Native
+    reference, tagged preparation, author-labelled probes and signals remain separate.
+    Probe identities require review; no exact native RNA binding edge, antimicrobial
+    mechanism or full-record sign-off.
+  nodes:
+  - node_id: pf5
+    label: Pseudomonas protegens Pf-5
+    node_type: ORGANISM
+    grounding_status: GROUNDED
+    identifier: NCBITaxon:220664
+  - node_id: rsme
+    label: Native RsmE sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KEY0
+  - node_id: preparation
+    label: Study His-RsmE preparation
+    node_type: PROTEIN
+    grounding_status: REVIEW_NEEDED
+  - node_id: phlA_probe
+    label: Author-labelled phlA leader mRNA probe
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: phlA_assay
+    label: phlA-labelled probe AlphaScreen assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: phlA_signal
+    label: phlA-labelled probe AlphaScreen signal
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: phlD_probe
+    label: Author-labelled phlD leader mRNA probe
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: phlD_assay
+    label: phlD-labelled probe AlphaScreen assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: phlD_signal
+    label: phlD-labelled probe AlphaScreen signal
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: pf5
+    predicate: encodes_native_reference
+    object: rsme
+    notes: CP000076.1 CDS2317318..2317512(-),1-based inclusive;PFL_2095, AAY91370.1,64aa.
+      CDS-aware table11=GenPept=UniProt,unreviewed sequencev1,taxon220664. Generic
+      UniProt CsrA protein name does not override the rsmE gene/locus/exact sequence
+      mapping.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source/CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY91370.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned protein inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KEY0
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and accession comparison.
+      retrieved_on: '2026-10-06'
+  - subject: preparation
+    predicate: has_native_sequence_reference
+    object: rsme
+    notes: Gene-matched native reference, not complete tagged-stock identity. Full
+      expression construct and exact tag junction remain unverified.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: CURATOR_INFERENCE
+      notes: Abstract/Main/Methods inspected before the subsequent PMC access stop.
+      retrieved_on: '2026-10-06'
+      snippet: RNA-binding protein RsmE
+  - subject: preparation
+    predicate: was_tested_in
+    object: phlA_assay
+    notes: Figure3B:RsmE5nM;probe1,5,10,50nM. Assay concentrations are not binding
+      stoichiometry. No affinity or fitted Kd asserted.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure3B/Methods inspected before the subsequent PMC access stop.
+      retrieved_on: '2026-10-06'
+  - subject: phlA_probe
+    predicate: was_tested_in
+    object: phlA_assay
+    notes: Author assay label, not verified native RNA identity. Table1 primer comparison
+      with CP000076.1 places the longest exact 3prime suffix of KpnI-phlA_F (21nt,6769410..6769430+)
+      and PhlA_UTRT7_R (20nt,6769421..6769440-) at phlD, not phlA. Two other reported
+      primers lack an exact terminal match of at least15nt. This is a documentation/construct
+      ambiguity, not proof that the actual reagent was wrong; full plasmids and probes
+      remain unverified.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: CURATOR_INFERENCE
+      notes: Figure3B/Table1 inspected before the subsequent PMC access stop.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Reported primer suffixes compared with versioned genome; no full probe
+        reconstruction.
+      retrieved_on: '2026-10-06'
+  - subject: phlA_assay
+    predicate: yielded
+    object: phlA_signal
+    notes: Retained Figure3B readout only; no digitized numeric count, replicate estimate
+      or downstream translation effect adopted.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure3B inspected before the subsequent PMC access stop.
+      retrieved_on: '2026-10-06'
+  - subject: preparation
+    predicate: was_tested_in
+    object: phlD_assay
+    notes: Figure3B:RsmE5nM;probe1,5,10,50nM. Assay concentrations are not binding
+      stoichiometry. No affinity or fitted Kd asserted.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure3B/Methods inspected before the subsequent PMC access stop.
+      retrieved_on: '2026-10-06'
+  - subject: phlD_probe
+    predicate: was_tested_in
+    object: phlD_assay
+    notes: Author assay label, not verified native RNA identity. Table1 primer comparison
+      with CP000076.1 places the longest exact 3prime suffix of KpnI-phlA_F (21nt,6769410..6769430+)
+      and PhlA_UTRT7_R (20nt,6769421..6769440-) at phlD, not phlA. Two other reported
+      primers lack an exact terminal match of at least15nt. This is a documentation/construct
+      ambiguity, not proof that the actual reagent was wrong; full plasmids and probes
+      remain unverified.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: CURATOR_INFERENCE
+      notes: Figure3B/Table1 inspected before the subsequent PMC access stop.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Reported primer suffixes compared with versioned genome; no full probe
+        reconstruction.
+      retrieved_on: '2026-10-06'
+  - subject: phlD_assay
+    predicate: yielded
+    object: phlD_signal
+    notes: Retained Figure3B readout only; no digitized numeric count, replicate estimate
+      or downstream translation effect adopted.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure3B inspected before the subsequent PMC access stop.
+      retrieved_on: '2026-10-06'
+  - subject: phlA_signal
+    predicate: was_higher_than
+    object: phlD_signal
+    notes: Qualitative separation at5/10nM author-labelled probes; phlD-labelled trace
+      remains low. No exact native RNA binding, universal nonbinding, physiological
+      repression, DAPG flux or GacA-RsmE causal chain asserted. Lower signals at50nM
+      are not interpreted as a change in affinity.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure3B inspected before the subsequent PMC access stop.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T18:41:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component; reviewed baseline 869c40b7a4b573d9b7e6b29fde10dc62339f189e.
+    Native Pf-5 RsmE/Q4KEY0 and bounded AlphaScreen signals,9nodes9edges. CDS-aware
+    CP000076.1 translation equals AAY91370.1 and UniProt. DOI:10.1128/aem.01546-25
+    main,Methods,Table1 and Figure3 previously inspected; later CAPTCHA stop respected.
+    Three quoted words. Tagged preparation and author-labelled probes remain REVIEW_NEEDED;
+    primer mapping discrepancy does not establish actual reagent identity. No exact
+    native RNA binding,Kd, translational repression or inferred GacA-RsmE causal chain.
+  llm_assisted: true

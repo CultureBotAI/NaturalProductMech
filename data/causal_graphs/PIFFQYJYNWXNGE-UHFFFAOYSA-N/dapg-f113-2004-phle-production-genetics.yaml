@@ -1,0 +1,125 @@
+record_id: CHEBI:78688
+standard_inchi_key: PIFFQYJYNWXNGE-UHFFFAOYSA-N
+graph:
+  graph_id: dapg-f113-2004-phle-production-genetics
+  scope: BIOSYNTHESIS
+  description: F113 phlE-associated production genetics only. The reported cell-associated/free-PHL
+    ratio did not differ significantly; direct or exclusive export is not established.
+    No resistance, stress-tolerance or antimicrobial mechanism copied from the paper.
+    Native reference, mutant allele and study cultures remain distinct; no producer
+    upgrade or full-record sign-off.
+  nodes:
+  - node_id: native_source
+    label: F113 native sequence source
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: phle
+    label: PhlE native F113 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q845L9
+  - node_id: allele
+    label: Study phlE null allele (lesion unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: reference
+    label: Study F113 reference culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: Study F113-D3 phlE mutant culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: comparison
+    label: Reported F113-D3 versus F113 production comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: dapg
+    label: 2,4-diacetylphloroglucinol
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:78688
+  edges:
+  - subject: native_source
+    predicate: encodes_native_reference
+    object: phle
+    notes: AJ542662.1 CDS1..1272(+),1-based inclusive,CAD65845.1,423aa. CDS-aware
+      table11=GenPept=UniProt Q845L9,unreviewed entry57/sequence1. Native strain F113
+      from GenBank/GenPept; species-level taxon294,not a strain taxid. Not Pf-5,CHA0,Q2-87
+      or an intact protein in F113-D3.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ542662.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source/CDS and primary-paper cross-reference inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAD65845.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned protein source inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q845L9
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact gene, accession and sequence comparison; not complete study-stock
+        identity.
+      retrieved_on: '2026-10-06'
+  - subject: allele
+    predicate: affects_coding_locus_of
+    object: phle
+    notes: Gene/strain correspondence, not resolved mutation boundaries or proof excluding
+      polar effects.
+    evidence:
+    - reference: DOI:10.1099/mic.0.27033-0
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; main, figures, tables and SI unread.
+      retrieved_on: '2026-10-06'
+  - subject: allele
+    predicate: was_present_in
+    object: mutant
+    notes: Abstract names the phlE null mutant F113-D3; no intact mutant PhlE sequence
+      inferred.
+    evidence:
+    - reference: DOI:10.1099/mic.0.27033-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main, figures, tables and SI unread.
+      retrieved_on: '2026-10-06'
+  - subject: reference
+    predicate: is_reference_background_for
+    object: comparison
+    notes: Named comparator; full culture protocol and historical stock unverified.
+    evidence:
+    - reference: DOI:10.1099/mic.0.27033-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main, figures, tables and SI unread.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: showed_lower_production_in
+    object: comparison
+    notes: Qualitative production phenotype, not a transport-rate, growth-normalized
+      flux or direct catalytic assignment.
+    evidence:
+    - reference: DOI:10.1099/mic.0.27033-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main, figures, tables and SI unread.
+      retrieved_on: '2026-10-06'
+      snippet: produced less PHL than F113
+  - subject: comparison
+    predicate: measured_reported_product
+    object: dapg
+    notes: PHL denotes 2,4-DAPG in the abstract. No quantitative titer, extraction
+      procedure or reaction step adopted.
+    evidence:
+    - reference: DOI:10.1099/mic.0.27033-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main, figures, tables and SI unread.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T18:41:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component; reviewed baseline 869c40b7a4b573d9b7e6b29fde10dc62339f189e.
+    Native F113 PhlE/Q845L9 and bounded production genetics,7nodes6edges. AJ542662.1
+    CDS-aware translation equals CAD65845.1 and UniProt. DOI:10.1099/mic.0.27033-0
+    abstract only; publisher403 stop respected. Five quoted words. F113-D3 lower reported
+    production does not establish direct export,catalysis,physiological flux or exclusion
+    of polar effects. Nonsignificant cell-associated/free ratio retained; no resistance
+    mechanism.
+  llm_assisted: true

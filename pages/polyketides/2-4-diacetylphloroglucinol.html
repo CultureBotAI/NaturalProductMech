@@ -558,6 +558,351 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">9 nodes, 9 edges</span></h2>
+<p class="sub">Bounded RsmE assay evidence in a Pf-5 DAPG regulatory study. Native reference, tagged preparation, author-labelled probes and signals remain separate. Probe identities require review; no exact native RNA binding edge, antimicrobial mechanism or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Pseudomonas protegens Pf-5</td>
+  <td>encodes_native_reference</td>
+  <td>Native RsmE sequence reference</td>
+  <td>CP000076.1 CDS2317318..2317512(-),1-based inclusive;PFL_2095, AAY91370.1,64aa. CDS-aware table11=GenPept=UniProt,unreviewed sequencev1,taxon220664. Generic UniProt CsrA protein name does not override the rsmE gene/locus/exact sequence mapping.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1<br>https://www.ncbi.nlm.nih.gov/protein/AAY91370.1<br>https://www.uniprot.org/uniprotkb/Q4KEY0</td>
+</tr>
+<tr>
+  <td>Study His-RsmE preparation</td>
+  <td>has_native_sequence_reference</td>
+  <td>Native RsmE sequence reference</td>
+  <td>Gene-matched native reference, not complete tagged-stock identity. Full expression construct and exact tag junction remain unverified.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25</td>
+</tr>
+<tr>
+  <td>Study His-RsmE preparation</td>
+  <td>was_tested_in</td>
+  <td>phlA-labelled probe AlphaScreen assay</td>
+  <td>Figure3B:RsmE5nM;probe1,5,10,50nM. Assay concentrations are not binding stoichiometry. No affinity or fitted Kd asserted.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25</td>
+</tr>
+<tr>
+  <td>Author-labelled phlA leader mRNA probe</td>
+  <td>was_tested_in</td>
+  <td>phlA-labelled probe AlphaScreen assay</td>
+  <td>Author assay label, not verified native RNA identity. Table1 primer comparison with CP000076.1 places the longest exact 3prime suffix of KpnI-phlA_F (21nt,6769410..6769430+) and PhlA_UTRT7_R (20nt,6769421..6769440-) at phlD, not phlA. Two other reported primers lack an exact terminal match of at least15nt. This is a documentation/construct ambiguity, not proof that the actual reagent was wrong; full plasmids and probes remain unverified.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25<br>https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1</td>
+</tr>
+<tr>
+  <td>phlA-labelled probe AlphaScreen assay</td>
+  <td>yielded</td>
+  <td>phlA-labelled probe AlphaScreen signal</td>
+  <td>Retained Figure3B readout only; no digitized numeric count, replicate estimate or downstream translation effect adopted.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25</td>
+</tr>
+<tr>
+  <td>Study His-RsmE preparation</td>
+  <td>was_tested_in</td>
+  <td>phlD-labelled probe AlphaScreen assay</td>
+  <td>Figure3B:RsmE5nM;probe1,5,10,50nM. Assay concentrations are not binding stoichiometry. No affinity or fitted Kd asserted.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25</td>
+</tr>
+<tr>
+  <td>Author-labelled phlD leader mRNA probe</td>
+  <td>was_tested_in</td>
+  <td>phlD-labelled probe AlphaScreen assay</td>
+  <td>Author assay label, not verified native RNA identity. Table1 primer comparison with CP000076.1 places the longest exact 3prime suffix of KpnI-phlA_F (21nt,6769410..6769430+) and PhlA_UTRT7_R (20nt,6769421..6769440-) at phlD, not phlA. Two other reported primers lack an exact terminal match of at least15nt. This is a documentation/construct ambiguity, not proof that the actual reagent was wrong; full plasmids and probes remain unverified.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25<br>https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1</td>
+</tr>
+<tr>
+  <td>phlD-labelled probe AlphaScreen assay</td>
+  <td>yielded</td>
+  <td>phlD-labelled probe AlphaScreen signal</td>
+  <td>Retained Figure3B readout only; no digitized numeric count, replicate estimate or downstream translation effect adopted.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25</td>
+</tr>
+<tr>
+  <td>phlA-labelled probe AlphaScreen signal</td>
+  <td>was_higher_than</td>
+  <td>phlD-labelled probe AlphaScreen signal</td>
+  <td>Qualitative separation at5/10nM author-labelled probes; phlD-labelled trace remains low. No exact native RNA binding, universal nonbinding, physiological repression, DAPG flux or GacA-RsmE causal chain asserted. Lower signals at50nM are not interpreted as a change in affinity.</td>
+  <td class="mono">DOI:10.1128/aem.01546-25</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">F113 phlE-associated production genetics only. The reported cell-associated/free-PHL ratio did not differ significantly; direct or exclusive export is not established. No resistance, stress-tolerance or antimicrobial mechanism copied from the paper. Native reference, mutant allele and study cultures remain distinct; no producer upgrade or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>F113 native sequence source</td>
+  <td>encodes_native_reference</td>
+  <td>PhlE native F113 sequence reference</td>
+  <td>AJ542662.1 CDS1..1272(+),1-based inclusive,CAD65845.1,423aa. CDS-aware table11=GenPept=UniProt Q845L9,unreviewed entry57/sequence1. Native strain F113 from GenBank/GenPept; species-level taxon294,not a strain taxid. Not Pf-5,CHA0,Q2-87 or an intact protein in F113-D3.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AJ542662.1<br>https://www.ncbi.nlm.nih.gov/protein/CAD65845.1<br>https://www.uniprot.org/uniprotkb/Q845L9</td>
+</tr>
+<tr>
+  <td>Study phlE null allele (lesion unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PhlE native F113 sequence reference</td>
+  <td>Gene/strain correspondence, not resolved mutation boundaries or proof excluding polar effects.</td>
+  <td class="mono">DOI:10.1099/mic.0.27033-0</td>
+</tr>
+<tr>
+  <td>Study phlE null allele (lesion unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study F113-D3 phlE mutant culture</td>
+  <td>Abstract names the phlE null mutant F113-D3; no intact mutant PhlE sequence inferred.</td>
+  <td class="mono">DOI:10.1099/mic.0.27033-0</td>
+</tr>
+<tr>
+  <td>Study F113 reference culture</td>
+  <td>is_reference_background_for</td>
+  <td>Reported F113-D3 versus F113 production comparison</td>
+  <td>Named comparator; full culture protocol and historical stock unverified.</td>
+  <td class="mono">DOI:10.1099/mic.0.27033-0</td>
+</tr>
+<tr>
+  <td>Study F113-D3 phlE mutant culture</td>
+  <td>showed_lower_production_in</td>
+  <td>Reported F113-D3 versus F113 production comparison</td>
+  <td>Qualitative production phenotype, not a transport-rate, growth-normalized flux or direct catalytic assignment.</td>
+  <td class="mono">DOI:10.1099/mic.0.27033-0</td>
+</tr>
+<tr>
+  <td>Reported F113-D3 versus F113 production comparison</td>
+  <td>measured_reported_product</td>
+  <td>2,4-diacetylphloroglucinol</td>
+  <td>PHL denotes 2,4-DAPG in the abstract. No quantitative titer, extraction procedure or reaction step adopted.</td>
+  <td class="mono">DOI:10.1099/mic.0.27033-0</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 11 edges</span></h2>
+<p class="sub">Independent structural dataset for DAPG-biosynthesis-associated PhlABC. Deposited participants are separate from native CHA0/Pf-5 sequence references; PhlA source-taxonomy disagreement remains REVIEW_NEEDED. Assembly multiplicity, PhlB zinc contacts and PhlC SCY88 are structural observations, not turnover, native mixed-strain complex or physiological stoichiometry. No bound DAPG/MAPG, complete biosynthesis, producer-grade upgrade or antimicrobial-target claim. Associated paper/abstract/figures/SI unread; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native CHA0 source (conflicting species annotations)</td>
+  <td>encodes_native_sequence_reference</td>
+  <td>PhlA CHA0 sequence reference (taxonomy discrepancy)</td>
+  <td>AF207529.2 CDS30..1118(-),1-based inclusive; AAF20927.1,362aa. CDS-aware table11 translation equals independent GenPept and UniProtQ9TP23 sequencev1. GenBank/GenPept identify CHA0 as P.protegens/taxon380021; UniProt and the deposit use P.fluorescens/taxon294. Taxonomy discrepancy is explicit, not silently reconciled. Q9TP23 has CHA0 reference metadata; the deposit lacks a PhlA strain qualifier. This does not establish exact cloning source. PhlA remains REVIEW_NEEDED for the conflicting organism annotations.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF207529.2<br>https://www.ncbi.nlm.nih.gov/protein/AAF20927.1<br>https://www.uniprot.org/uniprotkb/Q9TP23</td>
+</tr>
+<tr>
+  <td>Pseudomonas protegens Pf-5</td>
+  <td>encodes_native_sequence_reference</td>
+  <td>PhlB native Pf-5 reference</td>
+  <td>CP000076.1 CDS6768762..6769202(+),1-based inclusive; AAY95146.1,146aa. CDS-aware table11 translation equals independent GenPept and current UniProt. Native Pf-5/taxon220664 reference, not the complete engineered stock, a Q2-87 protein or proof of the PhlA cloning source.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1<br>https://www.ncbi.nlm.nih.gov/protein/AAY95146.1<br>https://www.uniprot.org/uniprotkb/Q4K419</td>
+</tr>
+<tr>
+  <td>Pseudomonas protegens Pf-5</td>
+  <td>encodes_native_sequence_reference</td>
+  <td>PhlC native Pf-5 reference</td>
+  <td>CP000076.1 CDS6767553..6768749(+),1-based inclusive; AAY95145.1,398aa. CDS-aware table11 translation equals independent GenPept and current UniProt. Native Pf-5/taxon220664 reference, not the complete engineered stock, a Q2-87 protein or proof of the PhlA cloning source.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1<br>https://www.ncbi.nlm.nih.gov/protein/AAY95145.1<br>https://www.uniprot.org/uniprotkb/Q4K420</td>
+</tr>
+<tr>
+  <td>5M3K deposited phla participant, chains A/D</td>
+  <td>has_native_sequence_reference</td>
+  <td>PhlA CHA0 sequence reference (taxonomy discrepancy)</td>
+  <td>The deposited362aa sequence equals CHA0 referenceQ9TP23, not Pf-5Q4K421/360aa. Source metadata give P.fluorescens/taxon294 but no strain; exact clone source and complete stock unverified.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/polymer_entity/5M3K/1<br>https://www.uniprot.org/uniprotkb/Q9TP23<br>https://www.uniprot.org/uniprotkb/Q4K421</td>
+</tr>
+<tr>
+  <td>5M3K deposited phla participant, chains A/D</td>
+  <td>is_member_of_deposited_assembly</td>
+  <td>5M3K deposited author/PISA assembly1</td>
+  <td>Assembly1 uses operations1,2 on the six ASU polymer chains A-F, giving 12 polymer instances, four of each PhlA/PhlB/PhlC. The six-chain ASU is not the deposited assembly. Genetically engineered sources and E.coli/taxon562 expression host do not establish native assembly or host DAPG production.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/assembly/5M3K/1<br>https://data.rcsb.org/rest/v1/core/polymer_entity/5M3K/1</td>
+</tr>
+<tr>
+  <td>5M3K deposited phlb participant, chains B/E</td>
+  <td>has_native_sequence_reference</td>
+  <td>PhlB native Pf-5 reference</td>
+  <td>Deposited146aa sequence equals nativePf-5Q4K419. Deposit sourcePf-5/taxon220664; sequence equality does not establish the complete recombinant preparation.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/polymer_entity/5M3K/2<br>https://www.uniprot.org/uniprotkb/Q4K419</td>
+</tr>
+<tr>
+  <td>5M3K deposited phlb participant, chains B/E</td>
+  <td>is_member_of_deposited_assembly</td>
+  <td>5M3K deposited author/PISA assembly1</td>
+  <td>Assembly1 uses operations1,2 on the six ASU polymer chains A-F, giving 12 polymer instances, four of each PhlA/PhlB/PhlC. The six-chain ASU is not the deposited assembly. Genetically engineered sources and E.coli/taxon562 expression host do not establish native assembly or host DAPG production.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/assembly/5M3K/1<br>https://data.rcsb.org/rest/v1/core/polymer_entity/5M3K/2</td>
+</tr>
+<tr>
+  <td>5M3K deposited phlc participant, chains C/F</td>
+  <td>has_native_sequence_reference</td>
+  <td>PhlC native Pf-5 reference</td>
+  <td>Canonical398aa sequence equals nativePf-5Q4K420 only after SCY88-to-C normalization. Raw deposited sequence contains S-acetyl-cysteine at88, not an unmodified native cysteine. Deposit sourcePf-5/taxon220664.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/polymer_entity/5M3K/3<br>https://www.uniprot.org/uniprotkb/Q4K420</td>
+</tr>
+<tr>
+  <td>5M3K deposited phlc participant, chains C/F</td>
+  <td>is_member_of_deposited_assembly</td>
+  <td>5M3K deposited author/PISA assembly1</td>
+  <td>Assembly1 uses operations1,2 on the six ASU polymer chains A-F, giving 12 polymer instances, four of each PhlA/PhlB/PhlC. The six-chain ASU is not the deposited assembly. Genetically engineered sources and E.coli/taxon562 expression host do not establish native assembly or host DAPG production.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/assembly/5M3K/1<br>https://data.rcsb.org/rest/v1/core/polymer_entity/5M3K/3</td>
+</tr>
+<tr>
+  <td>Deposited zinc sites adjacent to PhlB chains B/E</td>
+  <td>has_deposited_coordination_contacts_to</td>
+  <td>5M3K deposited phlb participant, chains B/E</td>
+  <td>Eight metal-contact rows: PhlB Cys34/37/48/51 SG in chainB contacts Zn labelG/authorB200; the corresponding four cysteines in chainE contact Zn labelH/authorE200. All deposited distances agree with atom coordinates within0.002A. These are model coordination contacts, not a kinetic metal requirement.</td>
+  <td class="mono">https://files.rcsb.org/download/5M3K.cif</td>
+</tr>
+<tr>
+  <td>Deposited S-acetyl-cysteine88 in PhlC chains C/F</td>
+  <td>is_deposited_modified_residue_in</td>
+  <td>5M3K deposited phlc participant, chains C/F</td>
+  <td>SCY88 is present in both PhlC chainsC/F with CYS as parent component. The four covalent rows are same-chain adjacent peptide87-88 and88-89 links, not protein-protein crosslinks. Modification alone does not prove an on-pathway physiological intermediate, acetyl donor or catalytic mechanism.</td>
+  <td class="mono">https://files.rcsb.org/download/5M3K.cif</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
+<p class="sub">CHA0 pathway-associated DAPG turnover, not a synthesis step: a native PhlG reference is distinct from the tagged E.coli-expressed preparation. REVIEW_NEEDED retains differing307aa and294aa native reference annotations. Evidence is bounded to the primary abstract and captions. No whole-cell flux, universal specificity, pyoluteorin binding mechanism or antimicrobial target asserted. Main/images/tables/SI unread; no producer-grade upgrade or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native CHA0 reference source</td>
+  <td>encodes_native_reference</td>
+  <td>PhlG AF207529.2 CHA0 sequence reference (variant unresolved)</td>
+  <td>AF207529.2 CDS2234..3157(-),1-based inclusive; AAF20929.2,307aa. CDS-aware table11 translation equals independent GenPept and current UniProt. Native sourceCHA0,not Pf-5 or Q2-87; no complete historical assay-stock sequence inferred. UniProt primaryA0A2C9EVE6 has secondaryQ9RF01 and strain taxon1124983; GenBank/GenPept use species taxon380021. Sequencev1 updated2017-12-20 does not establish the complete2006 preparation or tag sequence. Revised CHA0 genome LS999205.1 CDS6558372..6559256(+), VAV72158.1, encodes294aa, exactly residues14..307 of this307aa reference; the13aa N-terminal difference does not identify the historical assay start site. REVIEW_NEEDED retains reference-version/strain-stock ambiguity. No source is silently replaced; no engineered mutation or biological cause of these sequence differences is inferred.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF207529.2<br>https://www.ncbi.nlm.nih.gov/protein/AAF20929.2<br>https://www.uniprot.org/uniprotkb/A0A2C9EVE6<br>https://www.ncbi.nlm.nih.gov/nuccore/LS999205.1</td>
+</tr>
+<tr>
+  <td>Study purified PhlG-His6 (complete construct unresolved)</td>
+  <td>has_native_sequence_reference</td>
+  <td>PhlG AF207529.2 CHA0 sequence reference (variant unresolved)</td>
+  <td>The paper names CHA0 PhlG; AF207529.2 reference selected by gene/strain. Full recombinant sequence, tag terminus/linker and exact historical stock not established. The307aa AF207529.2/UniProt reference differs from the294aa revised-genome annotation; neither is established as the complete His-tagged preparation.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006<br>https://www.ncbi.nlm.nih.gov/nuccore/AF207529.2<br>https://www.ncbi.nlm.nih.gov/nuccore/LS999205.1</td>
+</tr>
+<tr>
+  <td>Study E. coli BL21(DE3)/pME8032 expression context</td>
+  <td>was_expression_context_for</td>
+  <td>Study purified PhlG-His6 (complete construct unresolved)</td>
+  <td>Figure4 caption identifies BL21(DE3)/pME8032 and the purified His6-labeled preparation. Expression host is not a native DAPG producer assertion.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+<tr>
+  <td>Study purified PhlG-His6 (complete construct unresolved)</td>
+  <td>catalyzes_reported_degradation</td>
+  <td>Reported PhlG-His6 DAPG degradation assay</td>
+  <td>Purified tagged-enzyme conversion reported in the abstract; Figure5 caption describes an HPLC time course. No kinetic constants or complete buffer composition imported from the abstract or caption alone.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+<tr>
+  <td>2,4-diacetylphloroglucinol</td>
+  <td>is_reported_substrate_of</td>
+  <td>Reported PhlG-His6 DAPG degradation assay</td>
+  <td>Exact named assay substrate; not a claim about every DAPG protonation state, intracellular concentration, native flux or biosynthetic direction.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+<tr>
+  <td>Reported PhlG-His6 DAPG degradation assay</td>
+  <td>yields_reported_product</td>
+  <td>monoacetylphloroglucinol</td>
+  <td>MAPG is the reported degradation product, not phloroglucinol. No further MAPG turnover or universal substrate specificity inferred.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+<tr>
+  <td>Reported PhlG-His6 DAPG degradation assay</td>
+  <td>yields_reported_product</td>
+  <td>Source-assigned acetate product</td>
+  <td>Acetate is reported with MAPG in the primary abstract. No independent analytical identity procedure or balanced reaction is reconstructed here.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 12 edges</span></h2>
+<p class="sub">Separate CHA0 reporter comparisons for PhlF and PhlH, not direct DNA binding or enzyme assays. Native references retain REVIEW_NEEDED species-label and revised-genome sequence discrepancies; unresolved alleles and study backgrounds remain distinct. No exact lesion, quantitative fold change, GacS/GacA protein assignment or producer-grade upgrade. Main/images/tables/SI unread; no full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Study CHA0 reference reporter background</td>
+  <td>is_reference_background_for</td>
+  <td>Separate phlF and phlH reporter comparisons</td>
+  <td>Figure7 caption identifies wild-typeCHA0 as the reference. Separate mutant comparisons, not one culture carrying both mutations.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+<tr>
+  <td>Separate phlF and phlH reporter comparisons</td>
+  <td>uses_reporter_readout</td>
+  <td>pME8030 phlG-lacZ translational-fusion readout</td>
+  <td>Figure7 caption reports beta-galactosidase activity from pME8030 in OSGly-grown cultures. A translational-fusion signal is not direct promoter occupancy, isolated transcription rate or purified PhlG activity.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+<tr>
+  <td>Native CHA0 source (species annotation discrepancy)</td>
+  <td>encodes_native_reference</td>
+  <td>PhlF AF207529.2 CHA0 sequence reference (variant unresolved)</td>
+  <td>AF207529.2 CDS1580..2182(+),1-based inclusive; AAF20928.1,200aa. CDS-aware table11 translation equals independent GenPept and current UniProt. Native sourceCHA0,not Pf-5 or Q2-87; no complete historical assay-stock sequence inferred. GenBank/GenPept label CHA0 P.protegens/taxon380021; UniProt labels P.fluorescens/taxon294. Revised CHA0 genome LS999205.1 CDS6559308..6559910(-), VAV72159.1, differs at188: this referenceF versus genomeS. REVIEW_NEEDED retains reference-version/strain-stock ambiguity. No source is silently replaced; no engineered mutation or biological cause of these sequence differences is inferred.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF207529.2<br>https://www.ncbi.nlm.nih.gov/protein/AAF20928.1<br>https://www.uniprot.org/uniprotkb/Q9RF02<br>https://www.ncbi.nlm.nih.gov/nuccore/LS999205.1</td>
+</tr>
+<tr>
+  <td>Study phlF mutant allele (lesion unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PhlF AF207529.2 CHA0 sequence reference (variant unresolved)</td>
+  <td>Gene-name correspondence only, not a resolved allele, intact mutant protein, in-frame deletion or proof excluding polar effects.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+<tr>
+  <td>Study phlF mutant allele (lesion unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study CHA638 phlF reporter background</td>
+  <td>Figure7 caption identifies the named mutant background; exact lesion and complete stock unresolved.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+<tr>
+  <td>Study CHA638 phlF reporter background</td>
+  <td>is_perturbed_background_for</td>
+  <td>Separate phlF and phlH reporter comparisons</td>
+  <td>Reported mutant reporter context, kept separate from the native reference sequence and the purified-enzyme experiment.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+<tr>
+  <td>Separate phlF and phlH reporter comparisons</td>
+  <td>supports_proposed</td>
+  <td>Authors&#39; inferred phlF-associated negative control</td>
+  <td>Abstract reports negative control by this pathway-specific regulator; Figure7 caption identifies the reporter comparison. No fold change, direct DNA binding, promoter site, effector ligand or isolated regulatory complex.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+<tr>
+  <td>Native CHA0 source (species annotation discrepancy)</td>
+  <td>encodes_native_reference</td>
+  <td>PhlH AF207529.2 CHA0 sequence reference (variant unresolved)</td>
+  <td>AF207529.2 CDS3260..3931(+),1-based inclusive; AAF20930.1,223aa. CDS-aware table11 translation equals independent GenPept and current UniProt. Native sourceCHA0,not Pf-5 or Q2-87; no complete historical assay-stock sequence inferred. GenBank/GenPept label CHA0 P.protegens/taxon380021; UniProt labels P.fluorescens/taxon294. Revised CHA0 genome LS999205.1 CDS6557559..6558230(-), VAV72157.1, differs at215 and217: this referenceS/M versus genomeA/V. REVIEW_NEEDED retains reference-version/strain-stock ambiguity. No source is silently replaced; no engineered mutation or biological cause of these sequence differences is inferred.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF207529.2<br>https://www.ncbi.nlm.nih.gov/protein/AAF20930.1<br>https://www.uniprot.org/uniprotkb/Q9RF00<br>https://www.ncbi.nlm.nih.gov/nuccore/LS999205.1</td>
+</tr>
+<tr>
+  <td>Study phlH mutant allele (lesion unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PhlH AF207529.2 CHA0 sequence reference (variant unresolved)</td>
+  <td>Gene-name correspondence only, not a resolved allele, intact mutant protein, in-frame deletion or proof excluding polar effects.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+<tr>
+  <td>Study phlH mutant allele (lesion unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study CHA630 phlH reporter background</td>
+  <td>Figure7 caption identifies the named mutant background; exact lesion and complete stock unresolved.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+<tr>
+  <td>Study CHA630 phlH reporter background</td>
+  <td>is_perturbed_background_for</td>
+  <td>Separate phlF and phlH reporter comparisons</td>
+  <td>Reported mutant reporter context, kept separate from the native reference sequence and the purified-enzyme experiment.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+<tr>
+  <td>Separate phlF and phlH reporter comparisons</td>
+  <td>supports_proposed</td>
+  <td>Authors&#39; inferred phlH-associated negative control</td>
+  <td>Abstract reports negative control by this pathway-specific regulator; Figure7 caption identifies the reporter comparison. No fold change, direct DNA binding, promoter site, effector ligand or isolated regulatory complex.</td>
+  <td class="mono">DOI:10.1128/AEM.72.1.418-427.2006</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
