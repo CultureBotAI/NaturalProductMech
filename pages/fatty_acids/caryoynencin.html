@@ -86,6 +86,82 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 10 edges</span></h2>
+<p class="sub">Caryoynencin-related CayG/CayL assay evidence, not an exact-isomer yield or native complex. Current CayG sequence example, tagged preparations and isomer-containing products remain distinct. No CayK biochemical success, catalytic channeling or detailed reaction sequence asserted. The later DOI:10.1021/acs.joc.3c01789 abstract reports a different sequence in a Cab57 context; its full methods are unread. Imported BSR3 attribution remains a separate issue622, not validated by this graph. No antimicrobial-target claim or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Ballard 720 reference locus on FXAH01000012.1</td>
+  <td>encodes_native_reference</td>
+  <td>Native CayG sequence reference</td>
+  <td>FXAH01000012.1 CDS65666..66862(-),1-based inclusive; SMF59989.1,398aa. CDS-aware table11=GenPept=UniProt sequencev1,unreviewed entry40. Also equals the historical DSM50341 CayG/AIG53832.1 translation in partial KJ815057.1; the historical nucleotide sequence lacks the complete CDS stop codon. CCUG20834 lists Ballard720 and DSM50341 as collection designations. Neither the strain lineage nor sequence equality identifies a tagged assay stock.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/FXAH01000012.1<br>https://www.ncbi.nlm.nih.gov/protein/SMF59989.1<br>https://www.ncbi.nlm.nih.gov/nuccore/KJ815057.1<br>https://www.ccug.se/strain?id=20834<br>https://www.uniprot.org/uniprotkb/A0A075T858</td>
+</tr>
+<tr>
+  <td>Study N-His6 CayG preparation</td>
+  <td>has_native_sequence_example</td>
+  <td>Native CayG sequence reference</td>
+  <td>An explicitly selected same-species/gene reference, not verified study-strain, allele or full construct identity. Main text names T.caryophylli; detailed construct methods remain unread. Do not assign UniProt directly to the tagged preparation.</td>
+  <td class="mono">DOI:10.1002/anie.202203264<br>https://www.ncbi.nlm.nih.gov/nuccore/KJ815057.1<br>https://www.uniprot.org/uniprotkb/A0A075T858</td>
+</tr>
+<tr>
+  <td>Study N-His6 CayG preparation</td>
+  <td>was_included_in</td>
+  <td>Reported CayG/CayL in-vitro assay</td>
+  <td>Soluble N-terminal His6 preparation expressed in BL21(DE3); exact vector, linker and full stock sequence unverified. No direct protein association asserted.</td>
+  <td class="mono">DOI:10.1002/anie.202203264</td>
+</tr>
+<tr>
+  <td>Study N-His6 CayL preparation</td>
+  <td>was_included_in</td>
+  <td>Reported CayG/CayL in-vitro assay</td>
+  <td>Soluble tagged CayL expressed in BL21(DE3). No exact native CayL accession selected; a neighboring rubredoxin or FDR homolog must not substitute for the tested reagent.</td>
+  <td class="mono">DOI:10.1002/anie.202203264</td>
+</tr>
+<tr>
+  <td>Study E. coli flavodoxin reductase reagent</td>
+  <td>was_included_in</td>
+  <td>Reported CayG/CayL in-vitro assay</td>
+  <td>E.coli flavodoxin reductase is a supplied reagent, not a verified native CayG partner or a fully identified stock. Other reported reagents: Tris buffer,NADPH,glucose-6-phosphate and baker&#39;s yeast glucose-6-phosphate dehydrogenase. No concentrations or kinetic constants adopted.</td>
+  <td class="mono">DOI:10.1002/anie.202203264</td>
+</tr>
+<tr>
+  <td>Source-assigned protegencin substrate 2</td>
+  <td>was_supplied_to</td>
+  <td>Reported CayG/CayL in-vitro assay</td>
+  <td>Compound2 follows Figure1, main text and Figure3 structures. Figure3&#39;s caption reverses the names for compounds1/2; that discrepancy is not silently propagated.</td>
+  <td class="mono">DOI:10.1002/anie.202203264</td>
+</tr>
+<tr>
+  <td>Reported CayG/CayL in-vitro assay</td>
+  <td>yielded_reported_mixture</td>
+  <td>Source-assigned assay product mixture</td>
+  <td>HPLC retention,UV and mass comparisons support source product assignments. No yield,concentration,absolute stereochemistry,physiological flux or complete pathway asserted. CayG-only control yielded small amounts of3; CayL-only control yielded no additional product under the reported conditions, not universal inactivity.</td>
+  <td class="mono">DOI:10.1002/anie.202203264</td>
+</tr>
+<tr>
+  <td>Source-assigned assay product mixture</td>
+  <td>included_source_assigned_component</td>
+  <td>Source-assigned E,E-caryoynencin component</td>
+  <td>Figure3A distinguishes E,E and Z,E peaks of1. Only the E,E component relates to this owner&#39;s alkene geometry; the mixture is not the exact owner structure. No absolute alcohol stereochemistry or mixture-level quantity assigned to the stereo-incomplete owner.</td>
+  <td class="mono">DOI:10.1002/anie.202203264</td>
+</tr>
+<tr>
+  <td>Source-assigned assay product mixture</td>
+  <td>included_source_assigned_component</td>
+  <td>Source-assigned deoxycaryoynencin component 3</td>
+  <td>Time-course rise then decline supports an intermediate hypothesis, not direct proof of a bound intermediate. Isolated3 was not converted when re-added in a fresh assay.</td>
+  <td class="mono">DOI:10.1002/anie.202203264</td>
+</tr>
+<tr>
+  <td>Source-assigned assay product mixture</td>
+  <td>included_source_assigned_component</td>
+  <td>Source-assigned 8-hydroxyprotegencin component 4</td>
+  <td>A source-assigned coproduct, not caryoynencin. Isolated4 was not further converted in the reported assay; no universal substrate exclusion inferred.</td>
+  <td class="mono">DOI:10.1002/anie.202203264</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
