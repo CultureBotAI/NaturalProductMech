@@ -1,0 +1,377 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2007-tailoring-ouve-single-mutant-phenotypes
+  scope: BIOSYNTHESIS
+  description: Four single-mutant contexts preserve PA-B versus PA-A outcomes. Native
+    sequence examples and reported genetic interventions are distinct. Abstract-bounded
+    evidence does not establish exact historical stocks, purified-enzyme sufficiency,
+    quantitative flux or a stable complex. Owner CHEBI:7025 denotes PA-A, not the
+    clinical mixture; other source-assigned metabolites remain distinct. Not full-record
+    sign-off.
+  nodes:
+  - node_id: cluster
+    label: NCIMB 10586 reference mupirocin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: mupO
+    label: MupO native sequence example (NCIMB 10586)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL56
+  - node_id: mupU
+    label: MupU native sequence example (NCIMB 10586)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL48
+  - node_id: mupV
+    label: MupV native sequence example (NCIMB 10586)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL47
+  - node_id: macpE
+    label: MacpE native sequence example (NCIMB 10586)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL50
+  - node_id: pab
+    label: Source-assigned pseudomonic acid B
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: paa
+    label: Source-assigned pseudomonic acid A
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: mupO_culture
+    label: Study P. fluorescens mupO mutant culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: del_mupO
+    label: mupO in-frame deletion (single-mutant context)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mupU_culture
+    label: Study P. fluorescens mupU mutant culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: del_mupU
+    label: mupU in-frame deletion (single-mutant context)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mupV_culture
+    label: Study P. fluorescens mupV mutant culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: del_mupV
+    label: mupV in-frame deletion (single-mutant context)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: macpE_culture
+    label: Study P. fluorescens macpE mutant culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: del_macpE
+    label: macpE in-frame deletion (single-mutant context)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: mupO
+    notes: AF318063.3 CDS 58574..59938(+), 1-based inclusive; AAM12929.2, 454 aa.
+      Native deposit strain NCIMB 10586, taxon 294. CDS-aware table-11 translation
+      exactly matches GenPept and UniProt; unreviewed sequence version 2. Deliberately
+      selected gene-matched pathway reference, not confirmed identity with the historical
+      experimental strain, intact protein or deletion allele. AAM12929.2 replaced
+      version1 in 2014, after the cited experiment.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12929.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native reference, not experimental stock.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL56
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/GenPept/UniProt comparison.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: mupU
+    notes: AF318063.3 CDS 66415..67992(+), 1-based inclusive; AAM12937.1, 525 aa.
+      Native deposit strain NCIMB 10586, taxon 294. CDS-aware table-11 translation
+      exactly matches GenPept and UniProt; unreviewed sequence version 1. Deliberately
+      selected gene-matched pathway reference, not confirmed identity with the historical
+      experimental strain, intact protein or deletion allele.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12937.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native reference, not experimental stock.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL48
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/GenPept/UniProt comparison.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: mupV
+    notes: AF318063.3 CDS 68027..70015(+), 1-based inclusive; AAM12938.1, 662 aa.
+      Native deposit strain NCIMB 10586, taxon 294. CDS-aware table-11 translation
+      exactly matches GenPept and UniProt; unreviewed sequence version 1. Deliberately
+      selected gene-matched pathway reference, not confirmed identity with the historical
+      experimental strain, intact protein or deletion allele.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12938.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native reference, not experimental stock.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL47
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/GenPept/UniProt comparison.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: macpE
+    notes: AF318063.3 CDS 65730..65972(+), 1-based inclusive; AAM12935.1, 80 aa. Native
+      deposit strain NCIMB 10586, taxon 294. CDS-aware table-11 translation exactly
+      matches GenPept and UniProt; unreviewed sequence version 1. Deliberately selected
+      gene-matched pathway reference, not confirmed identity with the historical experimental
+      strain, intact protein or deletion allele.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12935.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native reference, not experimental stock.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL50
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/GenPept/UniProt comparison.
+      retrieved_on: '2026-10-06'
+  - subject: del_mupO
+    predicate: has_gene_matched_native_reference_example
+    object: mupO
+    notes: Locus-name correspondence only; no equality of stock sequences or retained
+      intact protein asserted.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: del_mupO
+    predicate: was_present_in
+    object: mupO_culture
+    notes: Reported mutant context; deletion junctions and polar effects unverified.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: mupO_culture
+    predicate: retained_reported_production_of
+    object: pab
+    notes: Bounded culture-product report.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: mupO_culture
+    predicate: lacked_reported_production_of
+    object: paa
+    notes: Reported absence, not a measured zero or universal inability to produce
+      PA-A.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: del_mupU
+    predicate: has_gene_matched_native_reference_example
+    object: mupU
+    notes: Locus-name correspondence only; no equality of stock sequences or retained
+      intact protein asserted.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: del_mupU
+    predicate: was_present_in
+    object: mupU_culture
+    notes: Reported mutant context; deletion junctions and polar effects unverified.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: mupU_culture
+    predicate: retained_reported_production_of
+    object: pab
+    notes: Bounded culture-product report.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: mupU_culture
+    predicate: lacked_reported_production_of
+    object: paa
+    notes: Reported absence, not a measured zero or universal inability to produce
+      PA-A.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: del_mupV
+    predicate: has_gene_matched_native_reference_example
+    object: mupV
+    notes: Locus-name correspondence only; no equality of stock sequences or retained
+      intact protein asserted.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: del_mupV
+    predicate: was_present_in
+    object: mupV_culture
+    notes: Reported mutant context; deletion junctions and polar effects unverified.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: mupV_culture
+    predicate: retained_reported_production_of
+    object: pab
+    notes: Bounded culture-product report.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: mupV_culture
+    predicate: lacked_reported_production_of
+    object: paa
+    notes: Reported absence, not a measured zero or universal inability to produce
+      PA-A.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: del_macpE
+    predicate: has_gene_matched_native_reference_example
+    object: macpE
+    notes: Locus-name correspondence only; no equality of stock sequences or retained
+      intact protein asserted.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: del_macpE
+    predicate: was_present_in
+    object: macpE_culture
+    notes: Reported mutant context; deletion junctions and polar effects unverified.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: macpE_culture
+    predicate: retained_reported_production_of
+    object: pab
+    notes: Bounded culture-product report.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: macpE_culture
+    predicate: lacked_reported_production_of
+    object: paa
+    notes: Reported absence, not a measured zero or universal inability to produce
+      PA-A.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T08:50:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025; reviewed owner baseline 9fde718a25c3636ad61406359c163fab08ec2603.
+    Four single-mutant contexts preserve PA-B versus PA-A outcomes. Native sequence
+    examples and reported genetic interventions are distinct. Abstract-bounded evidence
+    does not establish exact historical stocks, purified-enzyme sufficiency, quantitative
+    flux or a stable complex. Owner CHEBI:7025 denotes PA-A, not the clinical mixture;
+    other source-assigned metabolites remain distinct. Not full-record sign-off. Each
+    edge cites the inspected primary abstract DOI10.1074/jbc.M701490200 or official
+    sequence records. Full main text, figures and supporting information unread. No
+    prior component migration or independent approval.
+  llm_assisted: true
