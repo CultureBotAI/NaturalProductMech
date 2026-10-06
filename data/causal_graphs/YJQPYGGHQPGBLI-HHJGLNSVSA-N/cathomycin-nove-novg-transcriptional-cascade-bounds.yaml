@@ -1,0 +1,234 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-nove-novg-transcriptional-cascade-bounds
+  scope: BIOSYNTHESIS
+  description: 'Later qPCR evidence supports a quantitative, condition-specific regulatory
+    model, not a demonstrated direct NovE-NovG interaction. Partial biosynthesis curation
+    (review #589), not full-record sign-off. The cathomycin owner retains its unspecified
+    sugar stereocentre; source-assigned novobiocin products remain ungrounded, not
+    exact-key merged with CID 54675769. Native deposited sequences do not retrospectively
+    identify every historical strain stock, complete preparation or engineered allele.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: NovE
+    label: Native deposited NovE regulatory-protein reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9G3
+  - node_id: NovG
+    label: Native deposited NovG regulatory-protein reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9G1
+  - node_id: deltaE
+    label: M512 nov-VD2 48-hour qPCR condition
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: deltaG
+    label: M512 NovG-deficient 48-hour qPCR condition
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: novG_transcripts
+    label: Reduced but nonzero normalized novG transcripts
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: biosynthesis_transcripts
+    label: Reduced novH, novO, novP, novQ transcript readouts
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: model
+    label: Bounded NovE-NovG regulatory cascade model
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: NovE
+    notes: AF170880.4 CDS 4859..5512(+), 1-based inclusive, encodes AAF67498.1, 217
+      aa. CDS-aware table-11 translations across AF170880.2/.3/.4 exactly match the
+      selected UniProt sequence. Old .2/.3 qualifiers are S. caeruleus, taxon 195949,
+      NCIB 11891; .4 is S. niveus, taxon 193462, NCIMB 9219. The published correction
+      assigns the deposit to 9219, not 11891. The thesis additionally prints 11897
+      in its strain table versus 11891 in results. These are retained source conflicts,
+      not proof that all experimental stocks were identical.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current native deposit, compared with pinned .2 and .3 records.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9G3
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Reviewed entry 35, sequence 1; annotation 2026-09-02, sequence 2000-10-01;
+        protein existence 4: Predicted. Reviewed status does not identify a complete
+        experimental preparation.'
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware sequence audit; alternate NovE A0ABZ2ADU8 is not an exact
+        historical reference because of N14S,T38P,G40A,E179Q differences.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Indexed primary text reporting PCR/sequencing-based deposit-strain correction
+        inspected; direct full-text retrieval unavailable.
+      retrieved_on: '2026-10-06'
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 62,135; PDF numbering is printed plus ten. Separate
+        primary source, not a claim to have inspected the complete final paper or
+        supplements.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: NovG
+    notes: AF170880.4 CDS 6782..7738(+), 1-based inclusive, encodes AAF67500.1, 318
+      aa. CDS-aware table-11 translations across AF170880.2/.3/.4 exactly match the
+      selected UniProt sequence. Old .2/.3 qualifiers are S. caeruleus, taxon 195949,
+      NCIB 11891; .4 is S. niveus, taxon 193462, NCIMB 9219. The published correction
+      assigns the deposit to 9219, not 11891. The thesis additionally prints 11897
+      in its strain table versus 11891 in results. These are retained source conflicts,
+      not proof that all experimental stocks were identical.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current native deposit, compared with pinned .2 and .3 records.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9G1
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Reviewed entry 55, sequence 1; annotation 2026-09-02, sequence 2000-10-01;
+        protein existence 1: Evidence at protein level. Reviewed status does not identify
+        a complete experimental preparation.'
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware sequence audit; alternate NovE A0ABZ2ADU8 is not an exact
+        historical reference because of N14S,T38P,G40A,E179Q differences.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Indexed primary text reporting PCR/sequencing-based deposit-strain correction
+        inspected; direct full-text retrieval unavailable.
+      retrieved_on: '2026-10-06'
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 62,135; PDF numbering is printed plus ten. Separate
+        primary source, not a claim to have inspected the complete final paper or
+        supplements.
+      retrieved_on: '2026-10-06'
+  - subject: NovE
+    predicate: is_coding_locus_reference_for_deletion_in
+    object: deltaE
+    notes: Gene-matched native reference, not the sequence of an intact protein in
+      this deletion. Later qPCR context, not the earlier native experiment.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Dangel primary thesis PDF pages 69-75,81-85; PDF numbering is printed
+        plus nine. This is not a claim to have read the complete final journal paper
+        or its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: NovG
+    predicate: is_coding_locus_reference_for_deletion_in
+    object: deltaG
+    notes: Gene-matched native reference, not the sequence of an intact protein in
+      this deletion. Figure III.5 heading says nov-AE12, while caption/methods say
+      nov-AE10. Retain this source conflict; pAE12 is separately a NovG expression
+      plasmid.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Dangel primary thesis PDF pages 69-75,81-85; PDF numbering is printed
+        plus nine. This is not a claim to have read the complete final journal paper
+        or its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: deltaE
+    predicate: showed_reduced_transcript_abundance
+    object: novG_transcripts
+    notes: novG signal was about 5% of the intact-cluster comparator, not zero. LightCycler
+      SYBR qPCR with 10 ng RNA, normalized to hrdB, shown at 48 h. Deep-well culture
+      context is distinct from the flask RT-PCR time course. Figure III.5 does not
+      define replicate counts or uncertainty; no protein abundance inferred.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 64-65,81-85; PDF numbering is printed
+        plus nine. This is not a claim to have read the complete final journal paper
+        or its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: deltaG
+    predicate: showed_reduced_biosynthetic_transcription
+    object: biosynthesis_transcripts
+    notes: The measured biosynthetic loci here were novH, novO, novP and novQ, not
+      every gene through novW. Strongly reduced readouts support NovG-dependent expression.
+      The novH..novW operon is an inferred model, not directly sequenced full-length
+      18 kb RNA. Internal promoters remain condition-specific, not universally inactive.
+      LightCycler SYBR qPCR with 10 ng RNA, normalized to hrdB, shown at 48 h. Deep-well
+      culture context is distinct from the flask RT-PCR time course. Figure III.5
+      does not define replicate counts or uncertainty; no protein abundance inferred.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 81-87; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1099/mic.0.032649-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: novG_transcripts
+    predicate: supports_quantitative_regulatory_model
+    object: model
+    notes: Reduced abundance is compatible with the earlier detectable basal novG
+      transcript. It supports a regulatory dependence without an absolute on/off gate
+      or direct NovE binding mechanism.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Dangel primary thesis PDF pages 82-85,98-103; PDF numbering is printed
+        plus nine. This is not a claim to have read the complete final journal paper
+        or its supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1099/mic.0.032649-0
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+      snippet: cascade-like mechanism
+  - subject: biosynthesis_transcripts
+    predicate: supports_downstream_regulatory_model
+    object: model
+    notes: NovG DNA-fragment binding is separate direct evidence. NovE phosphorylation,
+      unknown partners or repression-release are proposed possibilities, not observed
+      edges or new protein identities. Resistance-gene mechanism claims are not duplicated
+      from AntibioticMech.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Dangel primary thesis PDF pages 98-103; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1099/mic.0.032649-0
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T02:51:18Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-nove-novg-transcriptional-cascade-bounds; retain native/preparation/strain
+    distinctions, primary-source access limits and experimental versus inferred regulation
+    (#589).
+  llm_assisted: true
+- timestamp: '2026-10-06T02:54:49Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Extend two qPCR-condition evidence locators to include PDF pages 81-85,
+    including the Figure III.5 strain-label conflict. Preserve all biological claims,
+    citations, nodes and edges (#589).
+  llm_assisted: true

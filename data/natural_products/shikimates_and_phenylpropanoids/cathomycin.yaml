@@ -710,6 +710,12 @@ causal_graph_refs:
 - cathomycin-novwus-joint-reactions-and-product-annotation-conflict
 - cathomycin-novwus-novw-preparation-support-proteins-and-functional-revision
 - cathomycin-novwus-novw-structure-assembly-and-missing-atom-limits
+- cathomycin-nove-native-cassette-phenotype
+- cathomycin-novg-heterologous-deletion-and-rescue
+- cathomycin-novg-preparation-and-fragment-binding
+- cathomycin-nove-heterologous-deletion-and-regulator-rescue
+- cathomycin-nove-binding-limits-and-basal-transcription
+- cathomycin-nove-novg-transcriptional-cascade-bounds
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -801,4 +807,13 @@ curation_history:
     joint and NovS reactions; NovW preparation, support proteins and functional revision;
     2C0Z structure/assembly/missing-atom limits. Preserve source conflicts, earlier
     graphs, source fields, chemical identity, histories and SEEDED status (#564).'
+  llm_assisted: true
+- timestamp: '2026-10-06T02:51:19Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add six NovE/NovG regulatory components: native references, separate native
+    and heterologous genetics, bounded fragment-binding evidence, basal transcription
+    and quantitative cascade inference. Preserve strain/construct/source conflicts,
+    unspecified stereochemistry, all prior graphs, source-owned fields, history and
+    SEEDED status (#589).'
   llm_assisted: true

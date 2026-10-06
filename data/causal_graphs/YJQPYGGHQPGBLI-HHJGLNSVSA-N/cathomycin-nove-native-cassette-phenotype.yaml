@@ -1,0 +1,210 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-nove-native-cassette-phenotype
+  scope: BIOSYNTHESIS
+  description: 'Native novE cassette genetics, residual product and unresolved polarity/rescue
+    limits. Partial biosynthesis curation (review #589), not full-record sign-off.
+    The cathomycin owner retains its unspecified sugar stereocentre; source-assigned
+    novobiocin products remain ungrounded, not exact-key merged with CID 54675769.
+    Native deposited sequences do not retrospectively identify every historical strain
+    stock, complete preparation or engineered allele.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: NovE
+    label: Native deposited NovE regulatory-protein reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9G3
+  - node_id: cassette
+    label: Native novE replacement in cosmid 10-9C-E-773
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mutants
+    label: Historical S. spheroides AE-E2, AE-E3, AE-E4 mutants
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: wild
+    label: Historical S. spheroides wild-type comparator
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Source-assigned residual novobiocin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: comparison
+    label: Native mutant and wild-type HPLC production comparison
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: Attempted pAE-E4 native-mutant complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: regulation
+    label: Proposed positive regulatory role of NovE
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: NovE
+    notes: AF170880.4 CDS 4859..5512(+), 1-based inclusive, encodes AAF67498.1, 217
+      aa. CDS-aware table-11 translations across AF170880.2/.3/.4 exactly match the
+      selected UniProt sequence. Old .2/.3 qualifiers are S. caeruleus, taxon 195949,
+      NCIB 11891; .4 is S. niveus, taxon 193462, NCIMB 9219. The published correction
+      assigns the deposit to 9219, not 11891. The thesis additionally prints 11897
+      in its strain table versus 11891 in results. These are retained source conflicts,
+      not proof that all experimental stocks were identical.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current native deposit, compared with pinned .2 and .3 records.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9G3
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Reviewed entry 35, sequence 1; annotation 2026-09-02, sequence 2000-10-01;
+        protein existence 4: Predicted. Reviewed status does not identify a complete
+        experimental preparation.'
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware sequence audit; alternate NovE A0ABZ2ADU8 is not an exact
+        historical reference because of N14S,T38P,G40A,E179Q differences.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Indexed primary text reporting PCR/sequencing-based deposit-strain correction
+        inspected; direct full-text retrieval unavailable.
+      retrieved_on: '2026-10-06'
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 62,135; PDF numbering is printed plus ten. Separate
+        primary source, not a claim to have inspected the complete final paper or
+        supplements.
+      retrieved_on: '2026-10-06'
+  - subject: cassette
+    predicate: replaces_coding_locus_of
+    object: NovE
+    notes: Gene-matched native reference only, not the sequence of an intact mutant
+      protein. The ApraR/oriT cassette replacement is distinct from the later heterologous
+      81-nt-scar deletion.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 135-136; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1007/s00203-003-0555-2
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: cassette
+    predicate: was_introduced_in
+    object: mutants
+    notes: Apramycin-resistant, kanamycin-sensitive double-crossover clones; Southern
+      BamHI comparison 962 versus 2296 bp. Three independent mutants were analyzed.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 135-137; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: mutants
+    predicate: retained_reported_production_of
+    object: product
+    notes: All three mutants retained product assigned using HPLC and comparison with
+      an authentic standard by 1H NMR and negative-ion FAB MS. Not absolute zero or
+      a new complete stereochemical determination.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 137; PDF numbering is printed plus ten. Separate
+        primary source, not a claim to have inspected the complete final paper or
+        supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1007/s00203-003-0555-2
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: mutants
+    predicate: has_production_observation
+    object: comparison
+    notes: Source average 1.5 mg/L in the three mutants; the passage does not give
+      per-clone titers, uncertainty or a detection limit. HPLC methods are in PDF
+      pages 63-64.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 63-64,137; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: wild
+    predicate: provides_production_comparator
+    object: comparison
+    notes: Source wild-type 37 mg/L; same native-study comparison, not the heterologous
+      M512 20 mg/L baseline.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 137; PDF numbering is printed plus ten. Separate
+        primary source, not a claim to have inspected the complete final paper or
+        supplements.
+      retrieved_on: '2026-10-06'
+  - subject: comparison
+    predicate: supports_regulatory_interpretation
+    object: regulation
+    notes: Retained product argues against an essential catalytic step under these
+      conditions. Possible cassette polar effects remain; no direct binding or NovE
+      catalytic reaction is established.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary thesis PDF pages 137,149; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1007/s00203-003-0555-2
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+      snippet: regulatory function
+  - subject: NovE
+    predicate: has_proposed_pathway_role
+    object: regulation
+    notes: Regulatory inference is bounded by the native-mutant experiment, not a
+      physical NovE-NovG interaction.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary thesis PDF pages 149-150; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: mutants
+    predicate: was_subject_of_attempted_rescue
+    object: rescue
+    notes: pAE-E4 plasmid presence could not be demonstrated. This technical failure
+      is not biological non-rescue, and later heterologous complementation does not
+      retrospectively resolve it.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 150; PDF numbering is printed plus ten. Separate
+        primary source, not a claim to have inspected the complete final paper or
+        supplements.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T02:51:18Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-nove-native-cassette-phenotype; retain native/preparation/strain
+    distinctions, primary-source access limits and experimental versus inferred regulation
+    (#589).
+  llm_assisted: true

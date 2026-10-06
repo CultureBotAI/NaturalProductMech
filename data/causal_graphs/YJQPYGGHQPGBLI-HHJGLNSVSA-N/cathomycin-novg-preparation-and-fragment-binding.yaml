@@ -1,0 +1,238 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novg-preparation-and-fragment-binding
+  scope: BIOSYNTHESIS
+  description: 'Purified NovG fragment-binding evidence, separated from genetic regulation
+    and motif prediction. Partial biosynthesis curation (review #589), not full-record
+    sign-off. The cathomycin owner retains its unspecified sugar stereocentre; source-assigned
+    novobiocin products remain ungrounded, not exact-key merged with CID 54675769.
+    Native deposited sequences do not retrospectively identify every historical strain
+    stock, complete preparation or engineered allele.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: NovG
+    label: Native deposited NovG regulatory-protein reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9G1
+  - node_id: prep
+    label: pAE-G5-derived N-terminal His6 NovG preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: E. coli BL21(DE3)pLysS expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: purification
+    label: Nickel-affinity eluate and SDS-PAGE observation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: His6 NovG gel mobility-shift assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: nov_fragment
+    label: Tested novG-novH DNA fragment 6
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: clo_fragment
+    label: Tested cloG-cloY DNA fragment 1
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: negative_panel
+    label: Other tested nov and clo DNA fragments
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: competition
+    label: Specific plasmid versus empty-vector competition
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: motif
+    label: Sequence-inferred candidate NovG recognition motif
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: NovG
+    notes: AF170880.4 CDS 6782..7738(+), 1-based inclusive, encodes AAF67500.1, 318
+      aa. CDS-aware table-11 translations across AF170880.2/.3/.4 exactly match the
+      selected UniProt sequence. Old .2/.3 qualifiers are S. caeruleus, taxon 195949,
+      NCIB 11891; .4 is S. niveus, taxon 193462, NCIMB 9219. The published correction
+      assigns the deposit to 9219, not 11891. The thesis additionally prints 11897
+      in its strain table versus 11891 in results. These are retained source conflicts,
+      not proof that all experimental stocks were identical.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current native deposit, compared with pinned .2 and .3 records.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9G1
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Reviewed entry 55, sequence 1; annotation 2026-09-02, sequence 2000-10-01;
+        protein existence 1: Evidence at protein level. Reviewed status does not identify
+        a complete experimental preparation.'
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware sequence audit; alternate NovE A0ABZ2ADU8 is not an exact
+        historical reference because of N14S,T38P,G40A,E179Q differences.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Indexed primary text reporting PCR/sequencing-based deposit-strain correction
+        inspected; direct full-text retrieval unavailable.
+      retrieved_on: '2026-10-06'
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 62,135; PDF numbering is printed plus ten. Separate
+        primary source, not a claim to have inspected the complete final paper or
+        supplements.
+      retrieved_on: '2026-10-06'
+  - subject: NovG
+    predicate: is_native_sequence_reference_for
+    object: prep
+    notes: Gene-matched native reference, not an exact full His6 fusion, independently
+      sequenced plasmid or sample identity. The pAE-G5 insert was prepared through
+      pAE-G4 from nov-BG1; full vector junction reconstruction was not performed.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary thesis PDF pages 57-59,79-80,129-130; PDF numbering is printed
+        plus ten. Separate primary source, not a claim to have inspected the complete
+        final paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: host
+    predicate: produced_tagged_preparation
+    object: prep
+    notes: pRSET B expression construct pAE-G5; soluble preparation obtained with
+      0.5 mM IPTG at 30 C for 1.5 h. Longer-induction insolubility does not establish
+      a universal expression limit.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 79-80,129-130; PDF numbering is printed plus
+        ten. Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: prep
+    predicate: has_purification_readout
+    object: purification
+    notes: Nickel-affinity eluate gives an approximately 40 kDa SDS-PAGE band versus
+      calculated 38.1 kDa. About 15 ug/g fresh cells is an SDS-based recovery estimate,
+      not purity percent or catalytic activity.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 129-130; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: prep
+    predicate: was_tested_in
+    object: assay
+    notes: About 4 ng DIG-end-labelled DNA and 0.5 ug protein in a 20 uL assay, 25
+      C for 15 min, followed by native gel analysis. These are the older thesis conditions,
+      not the later NovE/NovG protein-load comparison.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 87-88,130-134; PDF numbering is printed plus
+        ten. Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1099/mic.0.27669-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+      snippet: specific DNA-binding activity
+  - subject: assay
+    predicate: showed_mobility_shift_for
+    object: nov_fragment
+    notes: Fragment 6 in Figure III.17, reported 209 bp. No Kd, kinetic constant or
+      binding stoichiometry is inferred from the gel.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 87-88,131-132; PDF numbering is printed plus
+        ten. Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: assay
+    predicate: showed_mobility_shift_for
+    object: clo_fragment
+    notes: Fragment 1 in Figure III.18, reported 235 bp. This is NovG binding heterologous
+      clo DNA, not identification of a clorobiocin regulator protein.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 87-88,132-133; PDF numbering is printed plus
+        ten. Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: assay
+    predicate: did_not_show_shift_for
+    object: negative_panel
+    notes: Other Figure III.17 nov fragments, including the second tested novG-novH-region
+      fragment, and the two Figure III.18 cloH-upstream fragments did not shift under
+      tested conditions. This is not universal nonbinding or a genome-wide specificity
+      result.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 131-133; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: competition
+    predicate: reduced_observed_shift_in
+    object: assay
+    notes: Approximately 125-fold molar excess of pAE7 or pAE9 strongly reduced the
+      corresponding shift; matched empty pBluescript SK(-) or pSPORT1 controls did
+      not significantly change it. No quantified occupancy or affinity ratio was reported
+      here.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 133-134; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: nov_fragment
+    predicate: contributed_to_predicted_motif
+    object: motif
+    notes: Sequence comparison with the clo fragment and established StrR sites suggested
+      conserved inverted repeats. This is in silico motif inference, not a NovG DNase
+      I footprint.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Primary thesis PDF pages 134-135; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: clo_fragment
+    predicate: contributed_to_predicted_motif
+    object: motif
+    notes: The cited footprinting experiment was for StrR, not this NovG preparation.
+      No experimentally tested couG-couY binding or physical protein complex follows.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Primary thesis PDF pages 134-135; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T02:51:18Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-novg-preparation-and-fragment-binding; retain native/preparation/strain
+    distinctions, primary-source access limits and experimental versus inferred regulation
+    (#589).
+  llm_assisted: true
