@@ -1679,6 +1679,681 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">19 nodes, 29 edges</span></h2>
+<p class="sub">Coupled MupQ/MupS starter assay, joint boiled control and lower-NADH partial-turnover readout. Candidate owner CHEBI:7025 denotes exact pseudomonic acid A, not the clinical mixture. Mixed-origin carrier/enzyme tests are methodological cross-compatibility evidence, not native thiomarinol or complete mupirocin biosynthesis. Supplement-only partial curation,not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MacpD sequence reference</td>
+  <td>AF318063.3 CDS63031..63351(+),1-based inclusive; AAM12933.1,106aa; native NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt match; current entry unreviewed,sequenceversion1. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12933.1<br>https://www.uniprot.org/uniprotkb/Q8RL52</td>
+</tr>
+<tr>
+  <td>Native MacpD sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study holo-MacpD preparation</td>
+  <td>TableS1 body: C80A; full-length native reference does not identify this variant. Reported N-terminal extension: MHHHHHHGKPIPNPLLGLDSTENLYFQGIDPFT. FigureS10 associates C80A with structural studies. Do not infer the allele of every S5/S6 assay stock solely from the table; the graph uses the study preparation label. Apo characterization and holo/acylated reaction states are distinct. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MupQ sequence reference</td>
+  <td>AF318063.3 CDS60912..62267(+),1-based inclusive; AAM12931.1,451aa; native NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt match; current entry unreviewed,sequenceversion1. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12931.1<br>https://www.uniprot.org/uniprotkb/Q8RL54</td>
+</tr>
+<tr>
+  <td>Native MupQ sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study MupQ preparation</td>
+  <td>TableS1 body: native body matches exactly; N-terminal tag remains engineered. Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MupS sequence reference</td>
+  <td>AF318063.3 CDS62264..63037(+),1-based inclusive; AAM12932.1,257aa; native NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt match; current entry unreviewed,sequenceversion1. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12932.1<br>https://www.uniprot.org/uniprotkb/Q8RL53</td>
+</tr>
+<tr>
+  <td>Native MupS sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study MupS preparation</td>
+  <td>TableS1 body: native body matches exactly; N-terminal tag remains engineered. Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study holo-MacpD preparation</td>
+  <td>was_component_in</td>
+  <td>S5A coupled starter-unit assay</td>
+  <td>S5A specifies holo-MacpD100uM,MupQ5uM,MupS5uM,malonyl-CoA1mM,ATP1mM,NADH1mM. These are assay concentrations,not kinetic constants; no unreported incubation details imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study MupQ preparation</td>
+  <td>was_component_in</td>
+  <td>S5A coupled starter-unit assay</td>
+  <td>S5A specifies holo-MacpD100uM,MupQ5uM,MupS5uM,malonyl-CoA1mM,ATP1mM,NADH1mM. These are assay concentrations,not kinetic constants; no unreported incubation details imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study MupS preparation</td>
+  <td>was_component_in</td>
+  <td>S5A coupled starter-unit assay</td>
+  <td>S5A specifies holo-MacpD100uM,MupQ5uM,MupS5uM,malonyl-CoA1mM,ATP1mM,NADH1mM. These are assay concentrations,not kinetic constants; no unreported incubation details imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied malonyl-CoA</td>
+  <td>was_component_in</td>
+  <td>S5A coupled starter-unit assay</td>
+  <td>S5A specifies holo-MacpD100uM,MupQ5uM,MupS5uM,malonyl-CoA1mM,ATP1mM,NADH1mM. These are assay concentrations,not kinetic constants; no unreported incubation details imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied ATP</td>
+  <td>was_component_in</td>
+  <td>S5A coupled starter-unit assay</td>
+  <td>S5A specifies holo-MacpD100uM,MupQ5uM,MupS5uM,malonyl-CoA1mM,ATP1mM,NADH1mM. These are assay concentrations,not kinetic constants; no unreported incubation details imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied NADH</td>
+  <td>was_component_in</td>
+  <td>S5A coupled starter-unit assay</td>
+  <td>S5A specifies holo-MacpD100uM,MupQ5uM,MupS5uM,malonyl-CoA1mM,ATP1mM,NADH1mM. These are assay concentrations,not kinetic constants; no unreported incubation details imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>S5A coupled starter-unit assay</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned 3-hydroxypropionyl-MacpD</td>
+  <td>Ppant-ejection mass spectrum supports the source&#39;s 3HP-MacpD assignment in the coupled mixture. This does not independently resolve every catalytic substep or establish native full-pathway flux.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study MupQ preparation</td>
+  <td>was_heat_treated_for</td>
+  <td>Boiled MupQ preparation</td>
+  <td>Both proteins were boiled in the same control; heat-treatment duration/temperature not adopted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study MupS preparation</td>
+  <td>was_heat_treated_for</td>
+  <td>Boiled MupS preparation</td>
+  <td>Both proteins were boiled in the same control; heat-treatment duration/temperature not adopted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study holo-MacpD preparation</td>
+  <td>was_component_in</td>
+  <td>S5B joint boiled-protein control</td>
+  <td>S5B repeats S5A with both MupQ and MupS boiled; not a separate single-protein omission test.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Boiled MupQ preparation</td>
+  <td>was_component_in</td>
+  <td>S5B joint boiled-protein control</td>
+  <td>S5B repeats S5A with both MupQ and MupS boiled; not a separate single-protein omission test.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Boiled MupS preparation</td>
+  <td>was_component_in</td>
+  <td>S5B joint boiled-protein control</td>
+  <td>S5B repeats S5A with both MupQ and MupS boiled; not a separate single-protein omission test.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied malonyl-CoA</td>
+  <td>was_component_in</td>
+  <td>S5B joint boiled-protein control</td>
+  <td>S5B repeats S5A with both MupQ and MupS boiled; not a separate single-protein omission test.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied ATP</td>
+  <td>was_component_in</td>
+  <td>S5B joint boiled-protein control</td>
+  <td>S5B repeats S5A with both MupQ and MupS boiled; not a separate single-protein omission test.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied NADH</td>
+  <td>was_component_in</td>
+  <td>S5B joint boiled-protein control</td>
+  <td>S5B repeats S5A with both MupQ and MupS boiled; not a separate single-protein omission test.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>S5B joint boiled-protein control</td>
+  <td>yielded_reported_readout</td>
+  <td>Holo-MacpD Ppant ion in boiled control</td>
+  <td>The ejected ion was assigned to unmodified holo-MacpD. No universal zero-activity or numerical detection limit inferred.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study holo-MacpD preparation</td>
+  <td>was_component_in</td>
+  <td>S5C-E lower-NADH assay</td>
+  <td>S5C lists MupQ5uM,MupS5uM and NADH100uM, sampled at60min. It does not restate all S5A components/concentrations; no complete ATP/ACP/malonyl-CoA recipe inferred for this condition.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study MupQ preparation</td>
+  <td>was_component_in</td>
+  <td>S5C-E lower-NADH assay</td>
+  <td>S5C lists MupQ5uM,MupS5uM and NADH100uM, sampled at60min. It does not restate all S5A components/concentrations; no complete ATP/ACP/malonyl-CoA recipe inferred for this condition.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study MupS preparation</td>
+  <td>was_component_in</td>
+  <td>S5C-E lower-NADH assay</td>
+  <td>S5C lists MupQ5uM,MupS5uM and NADH100uM, sampled at60min. It does not restate all S5A components/concentrations; no complete ATP/ACP/malonyl-CoA recipe inferred for this condition.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied malonyl-CoA</td>
+  <td>was_component_in</td>
+  <td>S5C-E lower-NADH assay</td>
+  <td>S5C lists MupQ5uM,MupS5uM and NADH100uM, sampled at60min. It does not restate all S5A components/concentrations; no complete ATP/ACP/malonyl-CoA recipe inferred for this condition.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied NADH</td>
+  <td>was_component_in</td>
+  <td>S5C-E lower-NADH assay</td>
+  <td>S5C lists MupQ5uM,MupS5uM and NADH100uM, sampled at60min. It does not restate all S5A components/concentrations; no complete ATP/ACP/malonyl-CoA recipe inferred for this condition.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>S5C-E lower-NADH assay</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned MacpD/CoA bis-thioester</td>
+  <td>S5D deconvolved mass was assigned to the unreduced MacpD/CoA bis-thioester. No numerical conversion yield adopted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>S5C-E lower-NADH assay</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned MacpD malonic-semialdehyde species</td>
+  <td>S5D intact mass alone lacked resolution to distinguish partial from full reduction; S5E Ppant ejection supports the reported semialdehyde assignment. Do not present intact mass alone as decisive or claim purity.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">17 nodes, 18 edges</span></h2>
+<p class="sub">Separate swapped-carrier adenylation/loading assays with enzyme-matched C3/C4 inputs. Candidate owner CHEBI:7025 denotes exact pseudomonic acid A, not the clinical mixture. Mixed-origin carrier/enzyme tests are methodological cross-compatibility evidence, not native thiomarinol or complete mupirocin biosynthesis. Supplement-only partial curation,not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MacpD sequence reference</td>
+  <td>AF318063.3 CDS63031..63351(+),1-based inclusive; AAM12933.1,106aa; native NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt match; current entry unreviewed,sequenceversion1. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12933.1<br>https://www.uniprot.org/uniprotkb/Q8RL52</td>
+</tr>
+<tr>
+  <td>Native MacpD sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study holo-MacpD preparation</td>
+  <td>TableS1 body: C80A; full-length native reference does not identify this variant. Reported N-terminal extension: MHHHHHHGKPIPNPLLGLDSTENLYFQGIDPFT. FigureS10 associates C80A with structural studies. Do not infer the allele of every S5/S6 assay stock solely from the table; the graph uses the study preparation label. Apo characterization and holo/acylated reaction states are distinct. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Native SANK 73390 thiomarinol locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native TacpD sequence reference</td>
+  <td>FN689524.1 CDS13493..13828(-),1-based inclusive; CBK62719.1,111aa; native SANK 73390,taxon747457,plasmid pTML1. Exact CDS-aware table11 translation/GenPept/UniParc sequence match. Legacy UniProt accession is deleted and not selected. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62719.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62719.1</td>
+</tr>
+<tr>
+  <td>Native TacpD sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study holo-TacpD preparation</td>
+  <td>TableS1 body: native body matches exactly; N-terminal tag remains engineered. Reported N-terminal extension: AHHHHHHSSGLEVLFQGP. Apo characterization and holo/acylated reaction states are distinct. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MupQ sequence reference</td>
+  <td>AF318063.3 CDS60912..62267(+),1-based inclusive; AAM12931.1,451aa; native NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt match; current entry unreviewed,sequenceversion1. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12931.1<br>https://www.uniprot.org/uniprotkb/Q8RL54</td>
+</tr>
+<tr>
+  <td>Native MupQ sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study MupQ preparation</td>
+  <td>TableS1 body: native body matches exactly; N-terminal tag remains engineered. Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Native SANK 73390 thiomarinol locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native TmlQ sequence reference</td>
+  <td>FN689524.1 CDS14561..15898(-),1-based inclusive; CBK62721.1,445aa; native SANK 73390,taxon747457,plasmid pTML1. Exact CDS-aware table11 translation/GenPept/UniParc sequence match. Legacy UniProt accession is deleted and not selected. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62721.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62721.1</td>
+</tr>
+<tr>
+  <td>Native TmlQ sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study TmlQ preparation</td>
+  <td>TableS1 body: native initiator M omitted from Table S1 body; Table S2 forward primer starts AAT. Reported N-terminal extension: AHHHHHHSSGLEVLFQGP. FigureS4 reports poor-quality MS with an 11Da error; it is not exact mass confirmation. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study holo-MacpD preparation</td>
+  <td>was_component_in</td>
+  <td>MacpD/TmlQ mixed-origin assay</td>
+  <td>Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate. ATP is shown in the reaction scheme; complete concentrations/time and assay-stock variant are not independently verified.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study TmlQ preparation</td>
+  <td>was_component_in</td>
+  <td>MacpD/TmlQ mixed-origin assay</td>
+  <td>Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate. ATP is shown in the reaction scheme; complete concentrations/time and assay-stock variant are not independently verified.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied succinyl-CoA</td>
+  <td>was_component_in</td>
+  <td>MacpD/TmlQ mixed-origin assay</td>
+  <td>Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate. ATP is shown in the reaction scheme; complete concentrations/time and assay-stock variant are not independently verified.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>ATP in S6 reaction scheme</td>
+  <td>was_component_in</td>
+  <td>MacpD/TmlQ mixed-origin assay</td>
+  <td>Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate. ATP is shown in the reaction scheme; complete concentrations/time and assay-stock variant are not independently verified.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>MacpD/TmlQ mixed-origin assay</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned 4-carbon MacpD/CoA bis-thioester</td>
+  <td>ESMS envelope/deconvolved mass and the product schematic support the source bis-thioester assignment. This is not the reduced hydroxyacyl endpoint,ordinary ACP acylation,or native pathway reconstitution.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study holo-TacpD preparation</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ mixed-origin assay</td>
+  <td>Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate. ATP is shown in the reaction scheme; complete concentrations/time and assay-stock variant are not independently verified.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study MupQ preparation</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ mixed-origin assay</td>
+  <td>Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate. ATP is shown in the reaction scheme; complete concentrations/time and assay-stock variant are not independently verified.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied malonyl-CoA</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ mixed-origin assay</td>
+  <td>Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate. ATP is shown in the reaction scheme; complete concentrations/time and assay-stock variant are not independently verified.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>ATP in S6 reaction scheme</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ mixed-origin assay</td>
+  <td>Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate. ATP is shown in the reaction scheme; complete concentrations/time and assay-stock variant are not independently verified.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>TacpD/MupQ mixed-origin assay</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned 3-carbon TacpD/CoA bis-thioester</td>
+  <td>ESMS envelope/deconvolved mass and the product schematic support the source bis-thioester assignment. This is not the reduced hydroxyacyl endpoint,ordinary ACP acylation,or native pathway reconstitution.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">16 nodes, 20 edges</span></h2>
+<p class="sub">TacpD-bound C3 reduction with TmlS and separately reported MupS substitution. Candidate owner CHEBI:7025 denotes exact pseudomonic acid A, not the clinical mixture. Mixed-origin carrier/enzyme tests are methodological cross-compatibility evidence, not native thiomarinol or complete mupirocin biosynthesis. Supplement-only partial curation,not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native SANK 73390 thiomarinol locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native TacpD sequence reference</td>
+  <td>FN689524.1 CDS13493..13828(-),1-based inclusive; CBK62719.1,111aa; native SANK 73390,taxon747457,plasmid pTML1. Exact CDS-aware table11 translation/GenPept/UniParc sequence match. Legacy UniProt accession is deleted and not selected. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62719.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62719.1</td>
+</tr>
+<tr>
+  <td>Native TacpD sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study holo-TacpD preparation</td>
+  <td>TableS1 body: native body matches exactly; N-terminal tag remains engineered. Reported N-terminal extension: AHHHHHHSSGLEVLFQGP. Apo characterization and holo/acylated reaction states are distinct. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MupQ sequence reference</td>
+  <td>AF318063.3 CDS60912..62267(+),1-based inclusive; AAM12931.1,451aa; native NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt match; current entry unreviewed,sequenceversion1. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12931.1<br>https://www.uniprot.org/uniprotkb/Q8RL54</td>
+</tr>
+<tr>
+  <td>Native MupQ sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study MupQ preparation</td>
+  <td>TableS1 body: native body matches exactly; N-terminal tag remains engineered. Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MupS sequence reference</td>
+  <td>AF318063.3 CDS62264..63037(+),1-based inclusive; AAM12932.1,257aa; native NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt match; current entry unreviewed,sequenceversion1. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12932.1<br>https://www.uniprot.org/uniprotkb/Q8RL53</td>
+</tr>
+<tr>
+  <td>Native MupS sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study MupS preparation</td>
+  <td>TableS1 body: native body matches exactly; N-terminal tag remains engineered. Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Native SANK 73390 thiomarinol locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native TmlS sequence reference</td>
+  <td>FN689524.1 CDS13822..14547(-),1-based inclusive; CBK62720.1,241aa; native SANK 73390,taxon747457,plasmid pTML1. Exact CDS-aware table11 translation/GenPept/UniParc sequence match. Legacy UniProt accession is deleted and not selected. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62720.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62720.1</td>
+</tr>
+<tr>
+  <td>Native TmlS sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study TmlS preparation</td>
+  <td>TableS1 body: native body matches exactly; N-terminal tag remains engineered. Reported N-terminal extension: AHHHHHHSSGLEVLFQGP. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study holo-TacpD preparation</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ assay with TmlS</td>
+  <td>S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete ATP/concentration/time recipe is not supplied here and is not imported from another assay.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study MupQ preparation</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ assay with TmlS</td>
+  <td>S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete ATP/concentration/time recipe is not supplied here and is not imported from another assay.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study TmlS preparation</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ assay with TmlS</td>
+  <td>S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete ATP/concentration/time recipe is not supplied here and is not imported from another assay.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied malonyl-CoA</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ assay with TmlS</td>
+  <td>S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete ATP/concentration/time recipe is not supplied here and is not imported from another assay.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied NADH</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ assay with TmlS</td>
+  <td>S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete ATP/concentration/time recipe is not supplied here and is not imported from another assay.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>TacpD/MupQ assay with TmlS</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned 3-hydroxypropionyl-TacpD with TmlS</td>
+  <td>Displayed ESMS/deconvolved mass and Ppant-ejection spectrum support the 3HP-TacpD assignment. Mixed MupQ/TmlS combination does not establish native thiomarinol C4 starter synthesis.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study holo-TacpD preparation</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ assay with MupS</td>
+  <td>S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete ATP/concentration/time recipe is not supplied here and is not imported from another assay.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study MupQ preparation</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ assay with MupS</td>
+  <td>S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete ATP/concentration/time recipe is not supplied here and is not imported from another assay.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study MupS preparation</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ assay with MupS</td>
+  <td>S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete ATP/concentration/time recipe is not supplied here and is not imported from another assay.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied malonyl-CoA</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ assay with MupS</td>
+  <td>S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete ATP/concentration/time recipe is not supplied here and is not imported from another assay.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied NADH</td>
+  <td>was_component_in</td>
+  <td>TacpD/MupQ assay with MupS</td>
+  <td>S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete ATP/concentration/time recipe is not supplied here and is not imported from another assay.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>TacpD/MupQ assay with MupS</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned 3-hydroxypropionyl-TacpD with MupS</td>
+  <td>Caption reports the same result after MupS substitution,but those data are not shown; no separately inspected MupS spectrum or quantitative enzyme equivalence claimed.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">22 nodes, 26 edges</span></h2>
+<p class="sub">Ordinary acyl transfer in A-carrier substitutions is distinct from productive D-carrier priming. Candidate owner CHEBI:7025 denotes exact pseudomonic acid A, not the clinical mixture. Mixed-origin carrier/enzyme tests are methodological cross-compatibility evidence, not native thiomarinol or complete mupirocin biosynthesis. Supplement-only partial curation,not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MacpA sequence reference</td>
+  <td>AF318063.3 CDS41870..42175(+),1-based inclusive; AAM12915.1,101aa; native NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt match; current entry unreviewed,sequenceversion1. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12915.1<br>https://www.uniprot.org/uniprotkb/Q8RL70</td>
+</tr>
+<tr>
+  <td>Native MacpA sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study holo-MacpA preparation</td>
+  <td>TableS1 body: native body matches exactly; N-terminal tag remains engineered. Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. Apo characterization and holo/acylated reaction states are distinct. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Native SANK 73390 thiomarinol locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native TacpA sequence reference</td>
+  <td>FN689524.1 CDS81681..81962(+),1-based inclusive; CBK62742.1,93aa; native SANK 73390,taxon747457,plasmid pTML1. Exact CDS-aware table11 translation/GenPept/UniParc sequence match. Legacy UniProt accession is deleted and not selected. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62742.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62742.1</td>
+</tr>
+<tr>
+  <td>Native TacpA sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study holo-TacpA preparation</td>
+  <td>TableS1 body: native body matches exactly; N-terminal tag remains engineered. Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. Apo characterization and holo/acylated reaction states are distinct. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MupQ sequence reference</td>
+  <td>AF318063.3 CDS60912..62267(+),1-based inclusive; AAM12931.1,451aa; native NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt match; current entry unreviewed,sequenceversion1. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12931.1<br>https://www.uniprot.org/uniprotkb/Q8RL54</td>
+</tr>
+<tr>
+  <td>Native MupQ sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study MupQ preparation</td>
+  <td>TableS1 body: native body matches exactly; N-terminal tag remains engineered. Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Native SANK 73390 thiomarinol locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native TmlQ sequence reference</td>
+  <td>FN689524.1 CDS14561..15898(-),1-based inclusive; CBK62721.1,445aa; native SANK 73390,taxon747457,plasmid pTML1. Exact CDS-aware table11 translation/GenPept/UniParc sequence match. Legacy UniProt accession is deleted and not selected. Native identity is not complete engineered assay-preparation identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62721.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62721.1</td>
+</tr>
+<tr>
+  <td>Native TmlQ sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study TmlQ preparation</td>
+  <td>TableS1 body: native initiator M omitted from Table S1 body; Table S2 forward primer starts AAT. Reported N-terminal extension: AHHHHHHSSGLEVLFQGP. FigureS4 reports poor-quality MS with an 11Da error; it is not exact mass confirmation. No native untagged proteoform asserted.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study holo-MacpA preparation</td>
+  <td>was_component_in</td>
+  <td>MacpA/MupQ carrier-substitution assay</td>
+  <td>The named ACP replaces the D-type carrier; complete ATP/concentration/time recipe not imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study MupQ preparation</td>
+  <td>was_component_in</td>
+  <td>MacpA/MupQ carrier-substitution assay</td>
+  <td>The named ACP replaces the D-type carrier; complete ATP/concentration/time recipe not imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied malonyl-CoA</td>
+  <td>was_component_in</td>
+  <td>MacpA/MupQ carrier-substitution assay</td>
+  <td>The named ACP replaces the D-type carrier; complete ATP/concentration/time recipe not imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>MacpA/MupQ carrier-substitution assay</td>
+  <td>yielded_reported_readout</td>
+  <td>Ppant readout assigned to malonyl-MacpA</td>
+  <td>Ppant ejection supports the ordinary acylated ACP assignment,not the D-carrier/CoA bis-thioester. The authors interpret trans-thioesterification rather than productive adenylation. No enzymatic catalysis by the added Q protein is established solely from coexistence in this reaction.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>MacpA/MupQ carrier-substitution assay</td>
+  <td>yielded_reported_readout</td>
+  <td>Acetyl-Ppant ion in MacpA malonyl assay</td>
+  <td>The source attributes this ion to decarboxylation during high-energy MS and notes enzyme-free observations not shown. It is not evidence for a biosynthetic decarboxylase reaction.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study holo-MacpA preparation</td>
+  <td>was_component_in</td>
+  <td>MacpA/TmlQ carrier-substitution assay</td>
+  <td>The named ACP replaces the D-type carrier; complete ATP/concentration/time recipe not imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study TmlQ preparation</td>
+  <td>was_component_in</td>
+  <td>MacpA/TmlQ carrier-substitution assay</td>
+  <td>The named ACP replaces the D-type carrier; complete ATP/concentration/time recipe not imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied succinyl-CoA</td>
+  <td>was_component_in</td>
+  <td>MacpA/TmlQ carrier-substitution assay</td>
+  <td>The named ACP replaces the D-type carrier; complete ATP/concentration/time recipe not imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>MacpA/TmlQ carrier-substitution assay</td>
+  <td>yielded_reported_readout</td>
+  <td>Ppant readout assigned to succinyl-MacpA</td>
+  <td>Ppant ejection supports the ordinary acylated ACP assignment,not the D-carrier/CoA bis-thioester. The authors interpret trans-thioesterification rather than productive adenylation. No enzymatic catalysis by the added Q protein is established solely from coexistence in this reaction.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study holo-TacpA preparation</td>
+  <td>was_component_in</td>
+  <td>TacpA/MupQ carrier-substitution assay</td>
+  <td>The named ACP replaces the D-type carrier; complete ATP/concentration/time recipe not imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study MupQ preparation</td>
+  <td>was_component_in</td>
+  <td>TacpA/MupQ carrier-substitution assay</td>
+  <td>The named ACP replaces the D-type carrier; complete ATP/concentration/time recipe not imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied malonyl-CoA</td>
+  <td>was_component_in</td>
+  <td>TacpA/MupQ carrier-substitution assay</td>
+  <td>The named ACP replaces the D-type carrier; complete ATP/concentration/time recipe not imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>TacpA/MupQ carrier-substitution assay</td>
+  <td>yielded_reported_readout</td>
+  <td>Ppant readout assigned to malonyl-TacpA</td>
+  <td>Ppant ejection supports the ordinary acylated ACP assignment,not the D-carrier/CoA bis-thioester. The authors interpret trans-thioesterification rather than productive adenylation. No enzymatic catalysis by the added Q protein is established solely from coexistence in this reaction.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>TacpA/MupQ carrier-substitution assay</td>
+  <td>yielded_reported_readout</td>
+  <td>Acetyl-Ppant ion in TacpA malonyl assay</td>
+  <td>The source attributes this ion to decarboxylation during high-energy MS and notes enzyme-free observations not shown. It is not evidence for a biosynthetic decarboxylase reaction.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study holo-TacpA preparation</td>
+  <td>was_component_in</td>
+  <td>TacpA/TmlQ carrier-substitution assay</td>
+  <td>The named ACP replaces the D-type carrier; complete ATP/concentration/time recipe not imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Study TmlQ preparation</td>
+  <td>was_component_in</td>
+  <td>TacpA/TmlQ carrier-substitution assay</td>
+  <td>The named ACP replaces the D-type carrier; complete ATP/concentration/time recipe not imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>Supplied succinyl-CoA</td>
+  <td>was_component_in</td>
+  <td>TacpA/TmlQ carrier-substitution assay</td>
+  <td>The named ACP replaces the D-type carrier; complete ATP/concentration/time recipe not imported.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+<tr>
+  <td>TacpA/TmlQ carrier-substitution assay</td>
+  <td>yielded_reported_readout</td>
+  <td>Ppant readout assigned to succinyl-TacpA</td>
+  <td>Ppant ejection supports the ordinary acylated ACP assignment,not the D-carrier/CoA bis-thioester. The authors interpret trans-thioesterification rather than productive adenylation. No enzymatic catalysis by the added Q protein is established solely from coexistence in this reaction.</td>
+  <td class="mono">DOI:10.1021/acschembio.9b00969.s001</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

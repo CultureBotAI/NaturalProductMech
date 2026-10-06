@@ -1,0 +1,403 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2020-priming-cross-origin-reduction
+  scope: BIOSYNTHESIS
+  description: TacpD-bound C3 reduction with TmlS and separately reported MupS substitution.
+    Candidate owner CHEBI:7025 denotes exact pseudomonic acid A, not the clinical
+    mixture. Mixed-origin carrier/enzyme tests are methodological cross-compatibility
+    evidence, not native thiomarinol or complete mupirocin biosynthesis. Supplement-only
+    partial curation,not full-record sign-off.
+  nodes:
+  - node_id: mup_cluster
+    label: Native NCIMB 10586 mupirocin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: tml_cluster
+    label: Native SANK 73390 thiomarinol locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0001115
+  - node_id: TacpD
+    label: Native TacpD sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CBK62719.1
+  - node_id: TacpD_prep
+    label: Study holo-TacpD preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: MupQ
+    label: Native MupQ sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL54
+  - node_id: MupQ_prep
+    label: Study MupQ preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: MupS
+    label: Native MupS sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL53
+  - node_id: MupS_prep
+    label: Study MupS preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: TmlS
+    label: Native TmlS sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CBK62720.1
+  - node_id: TmlS_prep
+    label: Study TmlS preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: malonyl
+    label: Supplied malonyl-CoA
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: nadh
+    label: Supplied NADH
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: TmlS_exchange
+    label: TacpD/MupQ assay with TmlS
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: TmlS_3hp
+    label: Source-assigned 3-hydroxypropionyl-TacpD with TmlS
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: MupS_exchange
+    label: TacpD/MupQ assay with MupS
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: MupS_3hp
+    label: Source-assigned 3-hydroxypropionyl-TacpD with MupS
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: tml_cluster
+    predicate: encodes_native_reference
+    object: TacpD
+    notes: FN689524.1 CDS13493..13828(-),1-based inclusive; CBK62719.1,111aa; native
+      SANK 73390,taxon747457,plasmid pTML1. Exact CDS-aware table11 translation/GenPept/UniParc
+      sequence match. Legacy UniProt accession is deleted and not selected. Native
+      identity is not complete engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62719.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62719.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: TacpD
+    predicate: is_native_sequence_reference_for
+    object: TacpD_prep
+    notes: 'TableS1 body: native body matches exactly; N-terminal tag remains engineered.
+      Reported N-terminal extension: AHHHHHHSSGLEVLFQGP. Apo characterization and
+      holo/acylated reaction states are distinct. No native untagged proteoform asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7,
+        text and rendered page inspected. Main article was inaccessible; no complete
+        main-method or laboratory-stock identity claim. No numerical kinetics or native
+        full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: mup_cluster
+    predicate: encodes_native_reference
+    object: MupQ
+    notes: AF318063.3 CDS60912..62267(+),1-based inclusive; AAM12931.1,451aa; native
+      NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt
+      match; current entry unreviewed,sequenceversion1. Native identity is not complete
+      engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12931.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL54
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: MupQ
+    predicate: is_native_sequence_reference_for
+    object: MupQ_prep
+    notes: 'TableS1 body: native body matches exactly; N-terminal tag remains engineered.
+      Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. No native untagged proteoform
+      asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7,
+        text and rendered page inspected. Main article was inaccessible; no complete
+        main-method or laboratory-stock identity claim. No numerical kinetics or native
+        full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: mup_cluster
+    predicate: encodes_native_reference
+    object: MupS
+    notes: AF318063.3 CDS62264..63037(+),1-based inclusive; AAM12932.1,257aa; native
+      NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt
+      match; current entry unreviewed,sequenceversion1. Native identity is not complete
+      engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12932.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL53
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: MupS
+    predicate: is_native_sequence_reference_for
+    object: MupS_prep
+    notes: 'TableS1 body: native body matches exactly; N-terminal tag remains engineered.
+      Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. No native untagged proteoform
+      asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7,
+        text and rendered page inspected. Main article was inaccessible; no complete
+        main-method or laboratory-stock identity claim. No numerical kinetics or native
+        full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: tml_cluster
+    predicate: encodes_native_reference
+    object: TmlS
+    notes: FN689524.1 CDS13822..14547(-),1-based inclusive; CBK62720.1,241aa; native
+      SANK 73390,taxon747457,plasmid pTML1. Exact CDS-aware table11 translation/GenPept/UniParc
+      sequence match. Legacy UniProt accession is deleted and not selected. Native
+      identity is not complete engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62720.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62720.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: TmlS
+    predicate: is_native_sequence_reference_for
+    object: TmlS_prep
+    notes: 'TableS1 body: native body matches exactly; N-terminal tag remains engineered.
+      Reported N-terminal extension: AHHHHHHSSGLEVLFQGP. No native untagged proteoform
+      asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7,
+        text and rendered page inspected. Main article was inaccessible; no complete
+        main-method or laboratory-stock identity claim. No numerical kinetics or native
+        full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TacpD_prep
+    predicate: was_component_in
+    object: TmlS_exchange
+    notes: S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete
+      ATP/concentration/time recipe is not supplied here and is not imported from
+      another assay.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS8,page11, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MupQ_prep
+    predicate: was_component_in
+    object: TmlS_exchange
+    notes: S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete
+      ATP/concentration/time recipe is not supplied here and is not imported from
+      another assay.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS8,page11, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TmlS_prep
+    predicate: was_component_in
+    object: TmlS_exchange
+    notes: S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete
+      ATP/concentration/time recipe is not supplied here and is not imported from
+      another assay.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS8,page11, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: malonyl
+    predicate: was_component_in
+    object: TmlS_exchange
+    notes: S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete
+      ATP/concentration/time recipe is not supplied here and is not imported from
+      another assay.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS8,page11, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: nadh
+    predicate: was_component_in
+    object: TmlS_exchange
+    notes: S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete
+      ATP/concentration/time recipe is not supplied here and is not imported from
+      another assay.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS8,page11, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TmlS_exchange
+    predicate: yielded_source_assigned_product
+    object: TmlS_3hp
+    notes: Displayed ESMS/deconvolved mass and Ppant-ejection spectrum support the
+      3HP-TacpD assignment. Mixed MupQ/TmlS combination does not establish native
+      thiomarinol C4 starter synthesis.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS8,page11, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TacpD_prep
+    predicate: was_component_in
+    object: MupS_exchange
+    notes: S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete
+      ATP/concentration/time recipe is not supplied here and is not imported from
+      another assay.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS8,page11, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MupQ_prep
+    predicate: was_component_in
+    object: MupS_exchange
+    notes: S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete
+      ATP/concentration/time recipe is not supplied here and is not imported from
+      another assay.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS8,page11, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MupS_prep
+    predicate: was_component_in
+    object: MupS_exchange
+    notes: S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete
+      ATP/concentration/time recipe is not supplied here and is not imported from
+      another assay.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS8,page11, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: malonyl
+    predicate: was_component_in
+    object: MupS_exchange
+    notes: S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete
+      ATP/concentration/time recipe is not supplied here and is not imported from
+      another assay.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS8,page11, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: nadh
+    predicate: was_component_in
+    object: MupS_exchange
+    notes: S8 caption lists TacpD,MupQ,malonyl-CoA,the named reductase and NADH. Complete
+      ATP/concentration/time recipe is not supplied here and is not imported from
+      another assay.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS8,page11, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MupS_exchange
+    predicate: yielded_source_assigned_product
+    object: MupS_3hp
+    notes: Caption reports the same result after MupS substitution,but those data
+      are not shown; no separately inspected MupS spectrum or quantitative enzyme
+      equivalence claimed.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS8,page11, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+      snippet: data not shown
+curation_history:
+- timestamp: '2026-10-06T06:29:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit afe1136aab9e132b8440579b27f44e19b9f79fc9;
+    no migration or alteration of prior components. TacpD-bound C3 reduction with
+    TmlS and separately reported MupS substitution. Candidate owner CHEBI:7025 denotes
+    exact pseudomonic acid A, not the clinical mixture. Mixed-origin carrier/enzyme
+    tests are methodological cross-compatibility evidence, not native thiomarinol
+    or complete mupirocin biosynthesis. Supplement-only partial curation,not full-record
+    sign-off. Every edge cites the publisher supplement DOI10.1021/acschembio.9b00969.s001
+    or official native-sequence URLs. Relevant rendered supplement pages inspected;
+    main article inaccessible/unread. Native references do not identify complete assay
+    stocks. Author-agent issue#601 addressed,not independent approval or full-record
+    sign-off.
+  llm_assisted: true
