@@ -320,6 +320,109 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
+<p class="sub">PatL-associated production genetics, not a direct DNA-binding or catalytic assay. Native sequence, deletion allele and study cultures remain distinct. No pathogenicity, toxin-target or antimicrobial mechanism; source grades and stereochemical limits unchanged. Main/figures/SI unread; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native Penicillium expansum NRRL 35695 source</td>
+  <td>encodes_native_reference</td>
+  <td>PatL NRRL 35695 native sequence reference</td>
+  <td>KF899892.1 complement(join(26056..28216,28273..28511)), 1-based inclusive; table-1 spliced CDS translation equals AIG62143.1 and A0A075TXZ8, 799 aa. GenBank, GenPept and UniProt reference metadata identify NRRL 35695; taxon 27334 is species-level. Reviewed UniProt entry 48, sequence 1. Primary accession selected instead of secondary A0A0A2J7W4. Alternative KGO52638.1 carries an erroneous-initiation/truncated-N-terminus caution; it is not substituted for the inspected reference.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/KF899892.1<br>https://www.ncbi.nlm.nih.gov/protein/AIG62143.1<br>https://www.uniprot.org/uniprotkb/A0A075TXZ8</td>
+</tr>
+<tr>
+  <td>Study patL deletion allele (lesion unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PatL NRRL 35695 native sequence reference</td>
+  <td>Gene/strain correspondence, not resolved mutation boundaries, an intact mutant protein or proof excluding polar effects.</td>
+  <td class="mono">DOI:10.1111/mpp.12338</td>
+</tr>
+<tr>
+  <td>Study patL deletion allele (lesion unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study patL-deletion culture</td>
+  <td>Reported deletion background; complete historical genotype unverified.</td>
+  <td class="mono">DOI:10.1111/mpp.12338</td>
+</tr>
+<tr>
+  <td>Study NRRL 35695 reference culture</td>
+  <td>is_reference_background_for</td>
+  <td>Reported patL deletion and complementation comparison</td>
+  <td>Named parental comparator, not proof of a complete historical stock sequence.</td>
+  <td class="mono">DOI:10.1111/mpp.12338</td>
+</tr>
+<tr>
+  <td>Study patL-deletion culture</td>
+  <td>had_undetected_reported_product_in</td>
+  <td>Reported patL deletion and complementation comparison</td>
+  <td>No detected patulin in the reported comparison, not universal absence across conditions or a reconstructed detection limit.</td>
+  <td class="mono">DOI:10.1111/mpp.12338</td>
+</tr>
+<tr>
+  <td>Study complemented patL-deletion culture</td>
+  <td>showed_restored_reported_production_in</td>
+  <td>Reported patL deletion and complementation comparison</td>
+  <td>Reported complementation outcome; exact vector, insertion site, copy number and complete protein sequence unresolved.</td>
+  <td class="mono">DOI:10.1111/mpp.12338</td>
+</tr>
+<tr>
+  <td>Reported patL deletion and complementation comparison</td>
+  <td>measured_reported_product</td>
+  <td>patulin</td>
+  <td>Captions identify HPLC-DAD product measurements. No titer, normalized flux, purified-enzyme activity or direct promoter binding adopted.</td>
+  <td class="mono">DOI:10.1111/mpp.12338</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">Patulin-pathway-associated PatG bioconversion, bounded to the primary abstract. Paper-linked NRRL1980 sequence and NRRL1 locus reference differ; the study preparation remains REVIEW_NEEDED. No P.expansum enzyme substitution, kinetic mechanism, producer upgrade or antimicrobial target. Main/figures/SI unread; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native Aspergillus clavatus NRRL1980 source</td>
+  <td>encodes_native_reference</td>
+  <td>PatG NRRL1980 native sequence reference</td>
+  <td>JN698985.1 join(42..93,175..1100),plus strand,1-based inclusive; table1 CDS translation equals AFQ22736.1 and T1PRE6,325aa. GenBank/GenPept and UniProt reference metadata identify NRRL1980; taxon5057 is species-level. UniProt unreviewed entry30/sequence1. NRRL1 A1CFL4/ACLA_093620 is a distinct325aa comparator: NRRL1980 V143/L244 versus NRRL1 I143/F244. A Swiss-Prot label does not make the comparator an exact sequence match.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/JN698985.1<br>https://www.ncbi.nlm.nih.gov/protein/AFQ22736.1<br>https://www.uniprot.org/uniprotkb/T1PRE6<br>https://www.uniprot.org/uniprotkb/A1CFL4</td>
+</tr>
+<tr>
+  <td>Study expressed PatG preparation (sequence unresolved)</td>
+  <td>has_candidate_native_reference</td>
+  <td>PatG NRRL1980 native sequence reference</td>
+  <td>JN698985 is paper-linked, but the abstract names ACLA_093620. The two native references differ. Historical construct/strain identity remains unresolved.</td>
+  <td class="mono">DOI:10.1016/j.ijfoodmicro.2013.11.020<br>https://www.uniprot.org/uniprotkb/T1PRE6</td>
+</tr>
+<tr>
+  <td>Study Saccharomyces cerevisiae expression context</td>
+  <td>was_expression_context_for</td>
+  <td>Study expressed PatG preparation (sequence unresolved)</td>
+  <td>Host species reported; strain, vector and complete construct not adopted.</td>
+  <td class="mono">DOI:10.1016/j.ijfoodmicro.2013.11.020</td>
+</tr>
+<tr>
+  <td>Study expressed PatG preparation (sequence unresolved)</td>
+  <td>was_tested_in</td>
+  <td>Reported PatG-associated bioconversion</td>
+  <td>Reported bioconversion,not a reconstructed purified-enzyme assay or native flux.</td>
+  <td class="mono">DOI:10.1016/j.ijfoodmicro.2013.11.020</td>
+</tr>
+<tr>
+  <td>Source-assigned 6-methylsalicylic acid</td>
+  <td>is_reported_substrate_of</td>
+  <td>Reported PatG-associated bioconversion</td>
+  <td>Named source substrate; no quantitative kinetics or general specificity.</td>
+  <td class="mono">DOI:10.1016/j.ijfoodmicro.2013.11.020</td>
+</tr>
+<tr>
+  <td>Reported PatG-associated bioconversion</td>
+  <td>yielded_reported_product</td>
+  <td>Source-assigned m-cresol</td>
+  <td>Reported product only,not complete patulin synthesis or producer-grade evidence.</td>
+  <td class="mono">DOI:10.1016/j.ijfoodmicro.2013.11.020</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
