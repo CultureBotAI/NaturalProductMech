@@ -1,0 +1,509 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2023-mupa-isotope-nmr-ms-readouts
+  scope: BIOSYNTHESIS
+  description: Isotope NMR depletion and parallel MS evidence retain the missing transient-product
+    resonance. Exact-owner candidate CHEBI:7025 denotes pseudomonic acid A,not the
+    clinical mixture. Native references,experimental preparations and source-assigned
+    readouts are distinct. Substrate9 labels follow the beta-keto assay context; one
+    synthesis sentence instead calls9 beta-hydroxy. That source inconsistency is retained,not
+    a new chemical grounding. Partial main-text curation,not native pathway reconstitution,an
+    established docking complex or full-record sign-off.
+  nodes:
+  - node_id: cluster
+    label: Native NCIMB 10586 mupirocin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: MupA
+    label: Native MupA sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AH80
+  - node_id: MmpD
+    label: Native MmpD sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL72
+  - node_id: Fre
+    label: E. coli K-12 Fre native sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P0AEN1
+  - node_id: Fre_prep
+    label: Study surrogate Fre preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: MupA_prep
+    label: Study purified MupA preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: fmn
+    label: Supplied FMN
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: nadh
+    label: Supplied NADH
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: loaded
+    label: Study alpha-13C substrate9-ACP_D4
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: control
+    label: Labelled-substrate NMR control without MupA
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: active
+    label: Labelled-substrate NMR mixture with MupA
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: baseline
+    label: Control bound-substrate and hydrolysed-substrate resonances
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: depletion
+    label: Loss of bound-substrate alpha-carbon signal with MupA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: hydrolysed
+    label: Hydrolysed-substrate signal intensity remained unchanged
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: redox
+    label: Reported NADH-to-NAD+ NMR change
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: undetected
+    label: Transient hydroxylated alpha-13C signal not detected
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: parallel
+    label: Parallel labelled-substrate ESMS assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: ms_result
+    label: Parallel MS/Ppant readout assigned to hydroxylation
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: MupA
+    notes: AF318063.3 CDS600..1709(+),1-based inclusive; AAK28503.1,369aa. CDS-aware
+      table11 translation matches original versioned GenPept and current UniProt.
+      NCIMB10586,taxon294; unreviewed UniProt sequenceversion1. Native parent identity
+      does not identify an engineered preparation or an excised domain.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK28503.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native parent sequence.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9AH80
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS/GenPept/UniProt sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: MmpD
+    notes: AF318063.3 CDS20958..40526(+),1-based inclusive; AAM12913.2,6522aa. CDS-aware
+      table11 translation matches original versioned GenPept and current UniProt.
+      NCIMB10586,taxon294; unreviewed UniProt sequenceversion2. Native parent identity
+      does not identify an engineered preparation or an excised domain.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12913.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native parent sequence.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL72
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS/GenPept/UniProt sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: Fre
+    predicate: is_sequence_reference_for_surrogate
+    object: Fre_prep
+    notes: Paper explicitly selects GenBank M61182 as a surrogate reductase. M61182.1
+      CDS121..822(+), AAA23806.1,233aa; CDS-aware table11 translation/GenPept/current
+      UniProt match. Deposit taxon562 has a K-12 strain qualifier; UniProt taxon83333
+      denotes K12,not the same taxon ID. Reviewed UniProt sequenceversion2. Not a
+      native mupirocin-cluster reductase,complete tagged stock,or automatic identity
+      with preparations in other publications.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/M61182.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Paper-named sequence deposit; native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAA23806.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact native Fre reference.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/P0AEN1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native-sequence/source audit; not native pathway membership.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Publisher main scientific HTML and figure captions inspected: Synthesis
+        and Biotransformation Studies. Primary figure images were not visually inspected;
+        supporting information was inaccessible and unread. No complete engineered
+        sequences,assay-stock identity,unreported recipes, replicate-level data or
+        numerical kinetic/binding constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: MupA
+    predicate: is_native_parent_sequence_reference_for
+    object: MupA_prep
+    notes: Gene-matched reference,not a complete tagged construct or native-cell proteoform.
+      Concentration-dependent SEC observations do not establish native oligomer stoichiometry
+      here.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Publisher main scientific HTML and figure captions inspected: Synthesis
+        and Biotransformation Studies. Primary figure images were not visually inspected;
+        supporting information was inaccessible and unread. No complete engineered
+        sequences,assay-stock identity,unreported recipes, replicate-level data or
+        numerical kinetic/binding constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: MmpD
+    predicate: is_native_carrier_parent_reference_for
+    object: loaded
+    notes: Excised ACP_D4 with isotope-labelled tethered substrate,not isotope incorporation
+      into the native parent sequence or a complete engineered-stock identity.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: loaded
+    predicate: was_component_in
+    object: control
+    notes: Figure4 control lacks MupA. Reported recipe is distinct from unspecified
+      controls in other assays.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: Fre_prep
+    predicate: was_component_in
+    object: control
+    notes: Figure4 control lacks MupA. Reported recipe is distinct from unspecified
+      controls in other assays.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: fmn
+    predicate: was_component_in
+    object: control
+    notes: Figure4 control lacks MupA. Reported recipe is distinct from unspecified
+      controls in other assays.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: nadh
+    predicate: was_component_in
+    object: control
+    notes: Figure4 control lacks MupA. Reported recipe is distinct from unspecified
+      controls in other assays.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: loaded
+    predicate: was_component_in
+    object: active
+    notes: Reported SO-FAST HSQC mixture; no numerical kinetics or individual Fre
+      sufficiency claimed.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: Fre_prep
+    predicate: was_component_in
+    object: active
+    notes: Reported SO-FAST HSQC mixture; no numerical kinetics or individual Fre
+      sufficiency claimed.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: fmn
+    predicate: was_component_in
+    object: active
+    notes: Reported SO-FAST HSQC mixture; no numerical kinetics or individual Fre
+      sufficiency claimed.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: nadh
+    predicate: was_component_in
+    object: active
+    notes: Reported SO-FAST HSQC mixture; no numerical kinetics or individual Fre
+      sufficiency claimed.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: MupA_prep
+    predicate: was_component_in
+    object: active
+    notes: Reported SO-FAST HSQC mixture; no numerical kinetics or individual Fre
+      sufficiency claimed.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: loaded
+    predicate: was_component_in
+    object: parallel
+    notes: Parallel mass-spectrometric measurement reported alongside NMR,not identity
+      of individual molecules or aliquots across detection methods.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: Fre_prep
+    predicate: was_component_in
+    object: parallel
+    notes: Parallel mass-spectrometric measurement reported alongside NMR,not identity
+      of individual molecules or aliquots across detection methods.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: fmn
+    predicate: was_component_in
+    object: parallel
+    notes: Parallel mass-spectrometric measurement reported alongside NMR,not identity
+      of individual molecules or aliquots across detection methods.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: nadh
+    predicate: was_component_in
+    object: parallel
+    notes: Parallel mass-spectrometric measurement reported alongside NMR,not identity
+      of individual molecules or aliquots across detection methods.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: MupA_prep
+    predicate: was_component_in
+    object: parallel
+    notes: Parallel mass-spectrometric measurement reported alongside NMR,not identity
+      of individual molecules or aliquots across detection methods.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: control
+    predicate: yielded_reported_readout
+    object: baseline
+    notes: Source assigns separate resonances to ACP-bound and hydrolysed labelled
+      substrate. No exact integration ratio or quantitative flux adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: active
+    predicate: yielded_reported_readout
+    object: depletion
+    notes: Addition of MupA depleted the labelled bound-substrate signal; signal loss
+      alone is not a directly resolved hydroxylated-carbon resonance.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: active
+    predicate: yielded_reported_readout
+    object: hydrolysed
+    notes: No corresponding depletion of the source-assigned free hydrolysed moiety
+      was reported; bounded comparison,not universal nonreactivity.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: active
+    predicate: yielded_reported_readout
+    object: redox
+    notes: Cofactor conversion was followed in the coupled mixture; no separate enzyme-specific
+      redox stoichiometry or turnover rate inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: active
+    predicate: yielded_reported_readout
+    object: undetected
+    notes: The predicted hydroxylated-carbon resonance was not directly observed.
+      Masking by water was an explanation,not a measured alternative peak.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+      snippet: could not be detected
+  - subject: parallel
+    predicate: yielded_reported_readout
+    object: ms_result
+    notes: Parallel ESMS/Ppant supported hydroxylation while NMR tracked substrate
+      depletion; the convergent interpretation must not be rewritten as direct detection
+      of the transient hydroxylated-carbon NMR signal.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure4 caption and associated main text.
+        Primary figure images were not visually inspected; supporting information
+        was inaccessible and unread. No complete engineered sequences,assay-stock
+        identity,unreported recipes, replicate-level data or numerical kinetic/binding
+        constants adopted.'
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T07:10:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit b16dd7932b373fbf5502fbcb626a37f954744ae9;
+    no migration or alteration of prior components. Isotope NMR depletion and parallel
+    MS evidence retain the missing transient-product resonance. Exact-owner candidate
+    CHEBI:7025 denotes pseudomonic acid A,not the clinical mixture. Native references,experimental
+    preparations and source-assigned readouts are distinct. Substrate9 labels follow
+    the beta-keto assay context; one synthesis sentence instead calls9 beta-hydroxy.
+    That source inconsistency is retained,not a new chemical grounding. Partial main-text
+    curation,not native pathway reconstitution,an established docking complex or full-record
+    sign-off. Every edge cites DOI10.1002/anie.202312514 or inspected official native-sequence
+    URLs. Main text/captions inspected; figure images not visually inspected and SI
+    inaccessible/unread. Native references do not identify complete experimental stocks.
+    Author-agent issue#606 addressed,not independent approval.
+  llm_assisted: true
