@@ -398,6 +398,821 @@ causal_graphs:
       notes: Current chemical-component definition inspected; I5M first released2022-07-20,
         after the associated2020paper.
       retrieved_on: '2026-10-06'
+- graph_id: pyoluteorin-1999-insertion-production-phenotypes
+  scope: BIOSYNTHESIS
+  description: Eight named locus-disruption contexts from the inspected 1999 primary
+    abstract, not eight purified enzyme assignments. Current native proteins and historical
+    insertion backgrounds remain separate. Insertion type and complete stocks unresolved;
+    polar effects not excluded. PltD is retained as a protein reference, not assigned
+    demonstrated halogenation. No inferred pathway order, complete synthesis or source-producer
+    grade upgrade. Full main text, figure images, tables and SI unread; no full-record
+    sign-off.
+  nodes:
+  - node_id: cluster
+    label: Pf-5 reference pyoluteorin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000127
+  - node_id: production
+    label: Study pyoluteorin production readout
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: native_pltA
+    label: PltA native sequence example (Pf-5)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCZ0
+  - node_id: insertion_pltA
+    label: Study pltA insertional disruption (lesion unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: pltA_culture
+    label: Study Pf-5 pltA insertion-mutant context
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: native_pltB
+    label: PltB native sequence example (Pf-5)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCY9
+  - node_id: insertion_pltB
+    label: Study pltB insertional disruption (lesion unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: pltB_culture
+    label: Study Pf-5 pltB insertion-mutant context
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: native_pltC
+    label: PltC native sequence example (Pf-5)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCY8
+  - node_id: insertion_pltC
+    label: Study pltC insertional disruption (lesion unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: pltC_culture
+    label: Study Pf-5 pltC insertion-mutant context
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: native_pltD
+    label: PltD native sequence example (Pf-5)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCY7
+  - node_id: insertion_pltD
+    label: Study pltD insertional disruption (lesion unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: pltD_culture
+    label: Study Pf-5 pltD insertion-mutant context
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: native_pltE
+    label: PltE native sequence example (Pf-5)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCY6
+  - node_id: insertion_pltE
+    label: Study pltE insertional disruption (lesion unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: pltE_culture
+    label: Study Pf-5 pltE insertion-mutant context
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: native_pltF
+    label: PltF native sequence example (Pf-5)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCY5
+  - node_id: insertion_pltF
+    label: Study pltF insertional disruption (lesion unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: pltF_culture
+    label: Study Pf-5 pltF insertion-mutant context
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: native_pltG
+    label: PltG native sequence example (Pf-5)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCY4
+  - node_id: insertion_pltG
+    label: Study pltG insertional disruption (lesion unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: pltG_culture
+    label: Study Pf-5 pltG insertion-mutant context
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: native_pltM
+    label: PltM native sequence example (Pf-5)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCZ3
+  - node_id: insertion_pltM
+    label: Study pltM insertional disruption (lesion unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: pltM_culture
+    label: Study Pf-5 pltM insertion-mutant context
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_pltA
+    notes: AF081920.3 CDS 3460..4809(+), 1-based inclusive; AAD24884.1, 449 aa. CDS-aware
+      table-11 translation matches independently retrieved GenPept and current UniProt.
+      Native Pf-5/taxon220664 reference, not a verified historical experimental stock
+      or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAD24884.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned native translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCZ0
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and strain correspondence; not historical assay-stock
+        identity.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltA
+    predicate: affects_coding_locus_of
+    object: native_pltA
+    notes: Gene-name correspondence only; native reference sequence is not the mutant
+      genotype. An insertion phenotype does not establish isolated protein catalysis
+      or exclude downstream polar effects.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltA
+    predicate: was_present_in
+    object: pltA_culture
+    notes: The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions;
+      no element, insertion position, orientation, strain number or number of alleles
+      is assigned to this locus here.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: pltA_culture
+    predicate: was_reported_to_lose
+    object: production
+    notes: Bounded reported production loss, not a measured zero or a universal gene
+      requirement. No direct substrate-to-product step, rescue, stoichiometry or functional
+      PltD halogenase inferred.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+      snippet: abolished pyoluteorin production
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_pltB
+    notes: AF081920.3 CDS 4842..12218(+), 1-based inclusive; AAC38075.1, 2458 aa.
+      CDS-aware table-11 translation matches independently retrieved GenPept and current
+      UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental
+      stock or an intact protein asserted present in a study mutant. M18 BGC0000128
+      is distinct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAC38075.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned native translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCY9
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and strain correspondence; not historical assay-stock
+        identity.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltB
+    predicate: affects_coding_locus_of
+    object: native_pltB
+    notes: Gene-name correspondence only; native reference sequence is not the mutant
+      genotype. An insertion phenotype does not establish isolated protein catalysis
+      or exclude downstream polar effects.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltB
+    predicate: was_present_in
+    object: pltB_culture
+    notes: The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions;
+      no element, insertion position, orientation, strain number or number of alleles
+      is assigned to this locus here.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: pltB_culture
+    predicate: was_reported_to_lose
+    object: production
+    notes: Bounded reported production loss, not a measured zero or a universal gene
+      requirement. No direct substrate-to-product step, rescue, stoichiometry or functional
+      PltD halogenase inferred.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_pltC
+    notes: AF081920.3 CDS 12267..17591(+), 1-based inclusive; AAC38076.1, 1774 aa.
+      CDS-aware table-11 translation matches independently retrieved GenPept and current
+      UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental
+      stock or an intact protein asserted present in a study mutant. M18 BGC0000128
+      is distinct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAC38076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned native translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCY8
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and strain correspondence; not historical assay-stock
+        identity.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltC
+    predicate: affects_coding_locus_of
+    object: native_pltC
+    notes: Gene-name correspondence only; native reference sequence is not the mutant
+      genotype. An insertion phenotype does not establish isolated protein catalysis
+      or exclude downstream polar effects.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltC
+    predicate: was_present_in
+    object: pltC_culture
+    notes: The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions;
+      no element, insertion position, orientation, strain number or number of alleles
+      is assigned to this locus here.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: pltC_culture
+    predicate: was_reported_to_lose
+    object: production
+    notes: Bounded reported production loss, not a measured zero or a universal gene
+      requirement. No direct substrate-to-product step, rescue, stoichiometry or functional
+      PltD halogenase inferred.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_pltD
+    notes: AF081920.3 CDS 17642..19276(+), 1-based inclusive; AAD24878.1, 544 aa.
+      CDS-aware table-11 translation matches independently retrieved GenPept and current
+      UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental
+      stock or an intact protein asserted present in a study mutant. M18 BGC0000128
+      is distinct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAD24878.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned native translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCY7
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and strain correspondence; not historical assay-stock
+        identity.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltD
+    predicate: affects_coding_locus_of
+    object: native_pltD
+    notes: Gene-name correspondence only; native reference sequence is not the mutant
+      genotype. An insertion phenotype does not establish isolated protein catalysis
+      or exclude downstream polar effects.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltD
+    predicate: was_present_in
+    object: pltD_culture
+    notes: The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions;
+      no element, insertion position, orientation, strain number or number of alleles
+      is assigned to this locus here.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: pltD_culture
+    predicate: was_reported_to_lose
+    object: production
+    notes: Bounded reported production loss, not a measured zero or a universal gene
+      requirement. No direct substrate-to-product step, rescue, stoichiometry or functional
+      PltD halogenase inferred.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_pltE
+    notes: AF081920.3 CDS 19278..20420(+), 1-based inclusive; AAD24879.1, 380 aa.
+      CDS-aware table-11 translation matches independently retrieved GenPept and current
+      UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental
+      stock or an intact protein asserted present in a study mutant. M18 BGC0000128
+      is distinct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAD24879.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned native translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCY6
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and strain correspondence; not historical assay-stock
+        identity.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltE
+    predicate: affects_coding_locus_of
+    object: native_pltE
+    notes: Gene-name correspondence only; native reference sequence is not the mutant
+      genotype. An insertion phenotype does not establish isolated protein catalysis
+      or exclude downstream polar effects.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltE
+    predicate: was_present_in
+    object: pltE_culture
+    notes: The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions;
+      no element, insertion position, orientation, strain number or number of alleles
+      is assigned to this locus here.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: pltE_culture
+    predicate: was_reported_to_lose
+    object: production
+    notes: Bounded reported production loss, not a measured zero or a universal gene
+      requirement. No direct substrate-to-product step, rescue, stoichiometry or functional
+      PltD halogenase inferred.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_pltF
+    notes: AF081920.3 CDS 20417..21913(+), 1-based inclusive; AAD24881.1, 498 aa.
+      CDS-aware table-11 translation matches independently retrieved GenPept and current
+      UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental
+      stock or an intact protein asserted present in a study mutant. M18 BGC0000128
+      is distinct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAD24881.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned native translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCY5
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and strain correspondence; not historical assay-stock
+        identity.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltF
+    predicate: affects_coding_locus_of
+    object: native_pltF
+    notes: Gene-name correspondence only; native reference sequence is not the mutant
+      genotype. An insertion phenotype does not establish isolated protein catalysis
+      or exclude downstream polar effects.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltF
+    predicate: was_present_in
+    object: pltF_culture
+    notes: The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions;
+      no element, insertion position, orientation, strain number or number of alleles
+      is assigned to this locus here.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: pltF_culture
+    predicate: was_reported_to_lose
+    object: production
+    notes: Bounded reported production loss, not a measured zero or a universal gene
+      requirement. No direct substrate-to-product step, rescue, stoichiometry or functional
+      PltD halogenase inferred.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_pltG
+    notes: AF081920.3 CDS 21917..22699(+), 1-based inclusive; AAD24880.1, 260 aa.
+      CDS-aware table-11 translation matches independently retrieved GenPept and current
+      UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental
+      stock or an intact protein asserted present in a study mutant. M18 BGC0000128
+      is distinct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAD24880.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned native translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCY4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and strain correspondence; not historical assay-stock
+        identity.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltG
+    predicate: affects_coding_locus_of
+    object: native_pltG
+    notes: Gene-name correspondence only; native reference sequence is not the mutant
+      genotype. An insertion phenotype does not establish isolated protein catalysis
+      or exclude downstream polar effects.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltG
+    predicate: was_present_in
+    object: pltG_culture
+    notes: The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions;
+      no element, insertion position, orientation, strain number or number of alleles
+      is assigned to this locus here.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: pltG_culture
+    predicate: was_reported_to_lose
+    object: production
+    notes: Bounded reported production loss, not a measured zero or a universal gene
+      requirement. No direct substrate-to-product step, rescue, stoichiometry or functional
+      PltD halogenase inferred.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_pltM
+    notes: AF081920.3 CDS 158..1666(-), 1-based inclusive; AAD24882.1, 502 aa. CDS-aware
+      table-11 translation matches independently retrieved GenPept and current UniProt.
+      Native Pf-5/taxon220664 reference, not a verified historical experimental stock
+      or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAD24882.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned native translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCZ3
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and strain correspondence; not historical assay-stock
+        identity.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltM
+    predicate: affects_coding_locus_of
+    object: native_pltM
+    notes: Gene-name correspondence only; native reference sequence is not the mutant
+      genotype. An insertion phenotype does not establish isolated protein catalysis
+      or exclude downstream polar effects.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltM
+    predicate: was_present_in
+    object: pltM_culture
+    notes: The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions;
+      no element, insertion position, orientation, strain number or number of alleles
+      is assigned to this locus here.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: pltM_culture
+    predicate: was_reported_to_lose
+    object: production
+    notes: Bounded reported production loss, not a measured zero or a universal gene
+      requirement. No direct substrate-to-product step, rescue, stoichiometry or functional
+      PltD halogenase inferred.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+- graph_id: pyoluteorin-1999-pltr-reporter-comparisons
+  scope: BIOSYNTHESIS
+  description: Three reporter-fusion comparisons and the authors' proposed regulatory
+    interpretation from the inspected 1999 abstract. Native PltR, unresolved mutant
+    allele and study backgrounds are distinct. Reporter readouts are not activities
+    of the encoded biosynthetic enzymes. No direct DNA binding, signal identity, exact
+    reporter stocks or quantitative fold change. Source-owned producer claims unchanged.
+    Full main text, figure images, tables and SI unread; no full-record sign-off.
+  nodes:
+  - node_id: cluster
+    label: Pf-5 reference pyoluteorin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000127
+  - node_id: native_pltR
+    label: PltR native sequence example (Pf-5)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCZ2
+  - node_id: lesion
+    label: Study pltR mutant allele (lesion unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: Study Pf-5 pltR-mutant reporter background
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: reference
+    label: Study Pf-5 reference reporter background
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: comparison
+    label: Reported ice-nucleation reporter comparisons
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: activation
+    label: Authors' proposed PltR transcriptional activation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reporter_pltB
+    label: pltB transcriptional-fusion ice-nucleation readout
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reporter_pltE
+    label: pltE transcriptional-fusion ice-nucleation readout
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reporter_pltF
+    label: pltF transcriptional-fusion ice-nucleation readout
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_pltR
+    notes: AF081920.3 CDS 1663..2694(-), 1-based inclusive; AAD24883.1, 343 aa. CDS-aware
+      table-11 translation matches independently retrieved GenPept and current UniProt.
+      Native Pf-5/taxon220664 reference, not a verified historical experimental stock
+      or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAD24883.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned native translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCZ2
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and strain correspondence; not historical assay-stock
+        identity.
+      retrieved_on: '2026-10-06'
+  - subject: lesion
+    predicate: affects_coding_locus_of
+    object: native_pltR
+    notes: Gene-name correspondence, not a sequence-resolved lesion, intact mutant
+      protein or isolated-protein assay.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: lesion
+    predicate: was_present_in
+    object: mutant
+    notes: A pltR-mutant Pf-5 background is reported; exact stock and lesion unresolved.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: reference
+    predicate: is_reference_background_for
+    object: comparison
+    notes: Reference background for separate reporter-fusion comparisons, not a claim
+      that one stock carries all three reporters.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: is_perturbed_background_for
+    object: comparison
+    notes: Perturbed background for the reported comparisons; no lesion-specific complementation
+      or growth correction imported.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: comparison
+    predicate: reported_lower_activity_in_pltR_mutant_for
+    object: reporter_pltB
+    notes: Reporter-assessed transcriptional contrast relative to the Pf-5 reference
+      background. No fold change, direct mRNA measurement, purified enzyme activity
+      or direct PltR-DNA binding asserted.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+      snippet: significantly greater in Pf-5
+  - subject: comparison
+    predicate: reported_lower_activity_in_pltR_mutant_for
+    object: reporter_pltE
+    notes: Reporter-assessed transcriptional contrast relative to the Pf-5 reference
+      background. No fold change, direct mRNA measurement, purified enzyme activity
+      or direct PltR-DNA binding asserted.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: comparison
+    predicate: reported_lower_activity_in_pltR_mutant_for
+    object: reporter_pltF
+    notes: Reporter-assessed transcriptional contrast relative to the Pf-5 reference
+      background. No fold change, direct mRNA measurement, purified enzyme activity
+      or direct PltR-DNA binding asserted.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
+  - subject: comparison
+    predicate: supports_proposed
+    object: activation
+    notes: Author interpretation from genetics/reporters, not direct promoter occupancy,
+      effector binding or a defined regulatory complex.
+    evidence:
+    - reference: DOI:10.1128/JB.181.7.2166-2174.1999
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract PMID10094695 inspected and retained as NCBI XML. Full
+        main text, figure images, tables and SI not inspected. Historical assay stocks,
+        exact lesions, culture endpoints, detection thresholds and isolated activities
+        not established here.
+      retrieved_on: '2026-10-06'
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -424,4 +1239,23 @@ curation_history:
     production, antimicrobial target or source-producer upgrade asserted. Preserved
     source fields, stereochemistry, SEEDED status, shared-structure discussion, AntibioticMech
     link and previous history. No full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-06T11:31:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added two BIOSYNTHESIS graphs, 36 nodes and 41 DOI-or-URL-cited edges,
+    bounded to the inspected primary abstract DOI10.1128/JB.181.7.2166-2174.1999/PMID10094695.
+    Nine native Pf-5 references PltA/B/C/D/E/F/G/M/R match CDS-aware table-11 AF081920.3
+    translations, independently retrieved GenPept and current UniProt. Eight new native
+    references beyond previously retained PltF/PltL structural graph. Native proteins,
+    unresolved insertion alleles and historical study backgrounds remain distinct.
+    Production-loss observations do not establish measured zeros, isolated catalysis,
+    exclusion of polar effects or pathway order. PltD is a protein reference, not
+    assigned demonstrated halogenation. PltR reporter comparisons remain distinct
+    from the authors' inferred transcriptional activation, direct DNA binding and
+    enzyme activity. Exact PltR lesion type unresolved. Seven total quoted words checked
+    against retained PubMed XML. Main text, figure images, tables and SI unread. Preserved
+    the complete prior 6O6E graph, source fields, stereochemistry, SEEDED status,
+    shared-structure discussion, AntibioticMech link and prior history. No producer-grade
+    upgrade or full-record sign-off.
   llm_assisted: true
