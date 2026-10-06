@@ -1,0 +1,190 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2001-mupri-regulatory-deletions
+  scope: BIOSYNTHESIS
+  description: MupR/MupI regulatory gene deletion observations, bounded to the inspected
+    2001 primary abstract. Native reference proteins and engineered alleles remain
+    distinct. No direct DNA binding, purified signal synthesis, exact signal identity
+    or complete regulatory circuit is asserted. CHEBI:7025 denotes PA-A; the source's
+    unresolved mupirocin readout is not silently recast as congener-specific PA-A
+    production. Main text, figures and SI unread; no full-record sign-off.
+  nodes:
+  - node_id: cluster
+    label: Native NCIMB 10586 mupirocin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: biosynthesis
+    label: Reported mupirocin biosynthesis (congeners unresolved)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: mupR
+    label: Native MupR sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AH79
+  - node_id: del_mupR
+    label: Study mupR deletion (junctions unverified)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mupR_culture
+    label: Study NCIMB 10586 mupR deletion culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: mupI
+    label: Native MupI sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AH78
+  - node_id: del_mupI
+    label: Study mupI deletion (junctions unverified)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mupI_culture
+    label: Study NCIMB 10586 mupI deletion culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mupR
+    notes: AF318063.3 CDS 71638..72342(+), 1-based inclusive; AAK28504.1, 234 aa.
+      CDS-aware table-11 translation matches independently retrieved GenPept and current
+      UniProt, unreviewed sequence version 1, taxon 294, native deposit strain NCIMB
+      10586. Native reference, not a complete deletion stock or retained intact protein
+      in that stock.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Inspected native CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK28504.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Inspected versioned native reference; not a complete assay stock.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9AH79
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/current UniProt sequence and deposit comparison.
+      retrieved_on: '2026-10-06'
+  - subject: del_mupR
+    predicate: affects_coding_locus_of
+    object: mupR
+    notes: Gene-name correspondence to the native coding locus; not a claim of intact
+      protein expression in the deletion strain.
+    evidence:
+    - reference: DOI:10.1099/00221287-147-8-2127
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract fully read at PMID11495990 and retained NCBI
+        XML, explicitly naming NCIMB 10586. Publisher full text was inaccessible;
+        main text, figures and supporting information were not inspected. No exact
+        deletion junctions, complete assay-stock sequences, quantitative yields, congener-resolved
+        measurements or direct protein assay adopted.
+      retrieved_on: '2026-10-06'
+  - subject: del_mupR
+    predicate: was_present_in
+    object: mupR_culture
+    notes: The abstract reports deletion inactivation using a suicide-vector strategy.
+      No in-frame status or exact residual sequence inferred.
+    evidence:
+    - reference: DOI:10.1099/00221287-147-8-2127
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract fully read at PMID11495990 and retained NCBI
+        XML, explicitly naming NCIMB 10586. Publisher full text was inaccessible;
+        main text, figures and supporting information were not inspected. No exact
+        deletion junctions, complete assay-stock sequences, quantitative yields, congener-resolved
+        measurements or direct protein assay adopted.
+      retrieved_on: '2026-10-06'
+  - subject: mupR_culture
+    predicate: was_reported_defective_for
+    object: biosynthesis
+    notes: Abstract-level requirement for the gene under the study conditions. Not
+      a measured zero, a congener-specific PA-A yield or universal sufficiency claim.
+    evidence:
+    - reference: DOI:10.1099/00221287-147-8-2127
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract fully read at PMID11495990 and retained NCBI
+        XML, explicitly naming NCIMB 10586. Publisher full text was inaccessible;
+        main text, figures and supporting information were not inspected. No exact
+        deletion junctions, complete assay-stock sequences, quantitative yields, congener-resolved
+        measurements or direct protein assay adopted.
+      retrieved_on: '2026-10-06'
+      snippet: requirement for both genes
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mupI
+    notes: AF318063.3 CDS 73911..74486(-), 1-based inclusive; AAK28505.1, 191 aa.
+      CDS-aware table-11 translation matches independently retrieved GenPept and current
+      UniProt, unreviewed sequence version 1, taxon 294, native deposit strain NCIMB
+      10586. Native reference, not a complete deletion stock or retained intact protein
+      in that stock.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Inspected native CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK28505.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Inspected versioned native reference; not a complete assay stock.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9AH78
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/current UniProt sequence and deposit comparison.
+      retrieved_on: '2026-10-06'
+  - subject: del_mupI
+    predicate: affects_coding_locus_of
+    object: mupI
+    notes: Gene-name correspondence to the native coding locus; not a claim of intact
+      protein expression in the deletion strain.
+    evidence:
+    - reference: DOI:10.1099/00221287-147-8-2127
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract fully read at PMID11495990 and retained NCBI
+        XML, explicitly naming NCIMB 10586. Publisher full text was inaccessible;
+        main text, figures and supporting information were not inspected. No exact
+        deletion junctions, complete assay-stock sequences, quantitative yields, congener-resolved
+        measurements or direct protein assay adopted.
+      retrieved_on: '2026-10-06'
+  - subject: del_mupI
+    predicate: was_present_in
+    object: mupI_culture
+    notes: The abstract reports deletion inactivation using a suicide-vector strategy.
+      No in-frame status or exact residual sequence inferred.
+    evidence:
+    - reference: DOI:10.1099/00221287-147-8-2127
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract fully read at PMID11495990 and retained NCBI
+        XML, explicitly naming NCIMB 10586. Publisher full text was inaccessible;
+        main text, figures and supporting information were not inspected. No exact
+        deletion junctions, complete assay-stock sequences, quantitative yields, congener-resolved
+        measurements or direct protein assay adopted.
+      retrieved_on: '2026-10-06'
+  - subject: mupI_culture
+    predicate: was_reported_defective_for
+    object: biosynthesis
+    notes: Abstract-level requirement for the gene under the study conditions. Not
+      a measured zero, a congener-specific PA-A yield or universal sufficiency claim.
+    evidence:
+    - reference: DOI:10.1099/00221287-147-8-2127
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract fully read at PMID11495990 and retained NCBI
+        XML, explicitly naming NCIMB 10586. Publisher full text was inaccessible;
+        main text, figures and supporting information were not inspected. No exact
+        deletion junctions, complete assay-stock sequences, quantitative yields, congener-resolved
+        measurements or direct protein assay adopted.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T10:13:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025; reviewed owner baseline ade2650dd666fcab4a41ad3d7db1a9c0e8e95af4.
+    MupR/MupI regulatory gene deletion observations, bounded to the inspected 2001
+    primary abstract. Native reference proteins and engineered alleles remain distinct.
+    No direct DNA binding, purified signal synthesis, exact signal identity or complete
+    regulatory circuit is asserted. CHEBI:7025 denotes PA-A; the source's unresolved
+    mupirocin readout is not silently recast as congener-specific PA-A production.
+    Main text, figures and SI unread; no full-record sign-off. Every edge cites the
+    inspected primary abstract DOI10.1099/00221287-147-8-2127 or official sequence
+    records. Four-word exact snippet verified in retained PubMed XML. No prior component
+    migration or independent approval.
+  llm_assisted: true

@@ -185,6 +185,7 @@ causal_graph_refs:
 - mupirocin-2007-tailoring-ouve-single-mutant-phenotypes
 - mupirocin-2007-tailoring-c-double-mutants-and-order
 - mupirocin-2007-muphjk-bounded-genetic-proposals
+- mupirocin-2001-mupri-regulatory-deletions
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -318,4 +319,21 @@ curation_history:
     stoichiometry or direct PA-A formation asserted. Preserved all24 prior graph objects/component
     bytes, source fields, stereochemistry, SEEDED status, name discussion, AntibioticMech
     link and prior history. No full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-06T10:13:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one exact-owner BIOSYNTHESIS component, 8 nodes and 8 DOI-or-URL-cited
+    edges, bounded to the inspected primary abstract DOI10.1099/00221287-147-8-2127/PMID11495990.
+    Two native NCIMB10586 references MupR/Q9AH79 and MupI/Q9AH78 match AF318063.3
+    CDS-aware table-11 translations, independently retrieved GenPept and current UniProt.
+    Native proteins, ungrounded deletion alleles and deletion cultures remain distinct;
+    no exact mutant junctions or complete historical stock sequences asserted. Generic
+    mupirocin biosynthesis readout remains congener-unresolved, not a PA-A-specific
+    yield or measured zero. No direct DNA binding, purified signal synthesis, exact
+    signal identity or complete regulatory circuit inferred. Four-word exact snippet
+    verified in retained PubMed XML. Full main text, figures and SI unread. Preserved
+    all25 prior graph objects/component bytes, source fields, stereochemistry, SEEDED
+    status, name discussion, AntibioticMech link and prior history. No full-record
+    sign-off.
   llm_assisted: true
