@@ -35,6 +35,30 @@ while native knock-out or correlation evidence can also upgrade the
 | `locus_evidence_methods` | Pipe-separated MIBiG method names from `conf/producer_evidence.tsv`. |
 | `curator` / `date` / `rationale` | Who decided, when, and why. |
 
+The explicit `action` is `REPLACE` for these method corrections. Legacy callers
+without an `action` key retain that behavior; an explicitly blank or unknown
+action is rejected.
+
+Use `WITHDRAW` only when source evidence is inapplicable to the named
+taxon/locus, not merely because a method is missing. Replacement methods must
+be empty. The row must carry a stable DOI, PMID or HTTPS `reference`, a
+`rationale`, `curator`, `date`, `source: MIBIG` and `source_id`. It also pins
+`expected_entry_version`, `expected_taxon_id`, `expected_genome_accession`,
+`expected_locus_from`, `expected_locus_to`, `expected_standard_inchi_key` and
+`expected_locus_evidence_methods` to the exact raw values. Missing/duplicate
+targets or any source-context drift fail for inspection, including method
+order changes. An upstream refresh must not silently inherit a stale exclusion.
+
+Withdrawal is applied before lead-record selection. An empty applicable method
+set grades the producer as `SOURCE_ASSERTION` and the cluster link as
+`CLUSTER_UNSTATED`, not `CLUSTER_PREDICTED`. The original inventory remains
+untouched; the original method names, qualification and curator attribution
+travel in separate claim-level `CURATOR_INFERENCE` evidence for both producer
+and cluster. The database's original citation stays `DATABASE_ASSERTION`.
+This corrects BGC0000892 version 4: its experiments concern DSM50341, not the
+BSR3 genome it lists. It does not relabel either strain or prove a native
+protein mapping.
+
 ## What a re-seed keeps, and what it overwrites
 
 The corpus is generated, so a re-seed rebuilds every record. What it does *not*
