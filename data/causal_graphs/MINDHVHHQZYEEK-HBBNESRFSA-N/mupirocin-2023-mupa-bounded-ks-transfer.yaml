@@ -1,0 +1,287 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2023-mupa-bounded-ks-transfer
+  scope: BIOSYNTHESIS
+  description: KS0 loading with two oxidation states of the beta carbon; transfer
+    of an alpha-hydroxylated intermediate remains unresolved. Exact-owner candidate
+    CHEBI:7025 denotes pseudomonic acid A,not the clinical mixture. Native references,experimental
+    preparations and source-assigned readouts are distinct. Substrate9 labels follow
+    the beta-keto assay context; one synthesis sentence instead calls9 beta-hydroxy.
+    That source inconsistency is retained,not a new chemical grounding. Partial main-text
+    curation,not native pathway reconstitution,an established docking complex or full-record
+    sign-off.
+  nodes:
+  - node_id: cluster
+    label: Native NCIMB 10586 mupirocin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: MmpD
+    label: Native MmpD sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL72
+  - node_id: MmpA
+    label: Native MmpA sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL76
+  - node_id: KS0
+    label: Study excised MmpA KS0 preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: donor9
+    label: Study beta-keto substrate9-ACP_D4 donor
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: transfer9
+    label: Excised MmpA-KS0 substrate9 transfer assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: loaded_ks9
+    label: Source-assigned substrate9-loaded MmpA-KS0
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: donor12
+    label: Study beta-hydroxy substrate12-ACP_D4 donor
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: transfer12
+    label: Excised MmpA-KS0 substrate12 transfer assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: loaded_ks12
+    label: Source-assigned substrate12-loaded MmpA-KS0
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: MmpD
+    notes: AF318063.3 CDS20958..40526(+),1-based inclusive; AAM12913.2,6522aa. CDS-aware
+      table11 translation matches original versioned GenPept and current UniProt.
+      NCIMB10586,taxon294; unreviewed UniProt sequenceversion2. Native parent identity
+      does not identify an engineered preparation or an excised domain.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12913.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native parent sequence.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL72
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS/GenPept/UniProt sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: MmpA
+    notes: AF318063.3 CDS1706..10243(+),1-based inclusive; AAM12909.2,2845aa. CDS-aware
+      table11 translation matches original versioned GenPept and current UniProt.
+      NCIMB10586,taxon294; unreviewed UniProt sequenceversion2. Native parent identity
+      does not identify an engineered preparation or an excised domain.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12909.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native parent sequence.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL76
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS/GenPept/UniProt sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: MmpA
+    predicate: is_native_parent_sequence_reference_for
+    object: KS0
+    notes: Main text specifies native residues28..570,including a docking flank. This543aa
+      native segment is identical in AAM12909.1 and AAM12909.2,although the full parent
+      sequences differ. Not full-length MmpA or complete engineered/tagged stock identity;
+      supporting sequence details and exact structural domain boundaries were not
+      inspected.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure6. Primary figure images were not
+        visually inspected; supporting information was inaccessible and unread. No
+        complete engineered sequences,assay-stock identity,unreported recipes, replicate-level
+        data or numerical kinetic/binding constants adopted.'
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12909.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Exact comparison of versioned native parent sequences: residues28..570
+        match AAM12909.2,543aa. This is a curator sequence audit,not a paper assertion.'
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12909.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Current native parent; residues28..570 match AAM12909.1. The complete
+        parents differ,so this does not establish full-length or tagged-stock identity.
+      retrieved_on: '2026-10-06'
+  - subject: MmpD
+    predicate: is_native_carrier_parent_reference_for
+    object: donor9
+    notes: Acyl-loaded excised ACP_D4,not the full native parent or a free pantetheine
+      substrate.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure6 and Conclusion. Primary figure
+        images were not visually inspected; supporting information was inaccessible
+        and unread. No complete engineered sequences,assay-stock identity,unreported
+        recipes, replicate-level data or numerical kinetic/binding constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: MmpA
+    predicate: is_native_parent_sequence_reference_for
+    object: loaded_ks9
+    notes: Source-assigned acylated excised KS0 preparation,not full-length MmpA or
+      native in-cell occupancy.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure6 and Conclusion. Primary figure
+        images were not visually inspected; supporting information was inaccessible
+        and unread. No complete engineered sequences,assay-stock identity,unreported
+        recipes, replicate-level data or numerical kinetic/binding constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: donor9
+    predicate: was_component_in
+    object: transfer9
+    notes: Purified-domain transfer assay; no downstream ACP loading,chain extension
+      or native full-pathway flux inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure6 and Conclusion. Primary figure
+        images were not visually inspected; supporting information was inaccessible
+        and unread. No complete engineered sequences,assay-stock identity,unreported
+        recipes, replicate-level data or numerical kinetic/binding constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: KS0
+    predicate: was_component_in
+    object: transfer9
+    notes: Purified-domain transfer assay; no downstream ACP loading,chain extension
+      or native full-pathway flux inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure6 and Conclusion. Primary figure
+        images were not visually inspected; supporting information was inaccessible
+        and unread. No complete engineered sequences,assay-stock identity,unreported
+        recipes, replicate-level data or numerical kinetic/binding constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: transfer9
+    predicate: yielded_source_assigned_product
+    object: loaded_ks9
+    notes: The authors assign an ESMS species to acyl transfer. Reported observed
+      mass increments do not exactly match calculated increments; no exact-mass confirmation
+      or numerical conversion/rate adopted. This tests a non-alpha-hydroxylated substrate,not
+      the unstable alpha-hydroxylated intermediate.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure6 and Conclusion. Primary figure
+        images were not visually inspected; supporting information was inaccessible
+        and unread. No complete engineered sequences,assay-stock identity,unreported
+        recipes, replicate-level data or numerical kinetic/binding constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: MmpD
+    predicate: is_native_carrier_parent_reference_for
+    object: donor12
+    notes: Acyl-loaded excised ACP_D4,not the full native parent or a free pantetheine
+      substrate.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure6 and Conclusion. Primary figure
+        images were not visually inspected; supporting information was inaccessible
+        and unread. No complete engineered sequences,assay-stock identity,unreported
+        recipes, replicate-level data or numerical kinetic/binding constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: MmpA
+    predicate: is_native_parent_sequence_reference_for
+    object: loaded_ks12
+    notes: Source-assigned acylated excised KS0 preparation,not full-length MmpA or
+      native in-cell occupancy.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure6 and Conclusion. Primary figure
+        images were not visually inspected; supporting information was inaccessible
+        and unread. No complete engineered sequences,assay-stock identity,unreported
+        recipes, replicate-level data or numerical kinetic/binding constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: donor12
+    predicate: was_component_in
+    object: transfer12
+    notes: Purified-domain transfer assay; no downstream ACP loading,chain extension
+      or native full-pathway flux inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure6 and Conclusion. Primary figure
+        images were not visually inspected; supporting information was inaccessible
+        and unread. No complete engineered sequences,assay-stock identity,unreported
+        recipes, replicate-level data or numerical kinetic/binding constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: KS0
+    predicate: was_component_in
+    object: transfer12
+    notes: Purified-domain transfer assay; no downstream ACP loading,chain extension
+      or native full-pathway flux inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure6 and Conclusion. Primary figure
+        images were not visually inspected; supporting information was inaccessible
+        and unread. No complete engineered sequences,assay-stock identity,unreported
+        recipes, replicate-level data or numerical kinetic/binding constants adopted.'
+      retrieved_on: '2026-10-06'
+  - subject: transfer12
+    predicate: yielded_source_assigned_product
+    object: loaded_ks12
+    notes: The authors assign an ESMS species to acyl transfer. Reported observed
+      mass increments do not exactly match calculated increments; no exact-mass confirmation
+      or numerical conversion/rate adopted. This tests a non-alpha-hydroxylated substrate,not
+      the unstable alpha-hydroxylated intermediate.
+    evidence:
+    - reference: DOI:10.1002/anie.202312514
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Publisher main scientific HTML and figure captions inspected: MupA MS
+        and NMR Alpha-Hydroxylation Assays; Figure6 and Conclusion. Primary figure
+        images were not visually inspected; supporting information was inaccessible
+        and unread. No complete engineered sequences,assay-stock identity,unreported
+        recipes, replicate-level data or numerical kinetic/binding constants adopted.'
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T07:10:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit b16dd7932b373fbf5502fbcb626a37f954744ae9;
+    no migration or alteration of prior components. KS0 loading with two oxidation
+    states of the beta carbon; transfer of an alpha-hydroxylated intermediate remains
+    unresolved. Exact-owner candidate CHEBI:7025 denotes pseudomonic acid A,not the
+    clinical mixture. Native references,experimental preparations and source-assigned
+    readouts are distinct. Substrate9 labels follow the beta-keto assay context; one
+    synthesis sentence instead calls9 beta-hydroxy. That source inconsistency is retained,not
+    a new chemical grounding. Partial main-text curation,not native pathway reconstitution,an
+    established docking complex or full-record sign-off. Every edge cites DOI10.1002/anie.202312514
+    or inspected official native-sequence URLs. Main text/captions inspected; figure
+    images not visually inspected and SI inaccessible/unread. Native references do
+    not identify complete experimental stocks. Author-agent issue#606 addressed,not
+    independent approval.
+  llm_assisted: true

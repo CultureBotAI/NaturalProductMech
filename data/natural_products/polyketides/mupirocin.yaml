@@ -172,6 +172,12 @@ causal_graph_refs:
 - mupirocin-2020-priming-cross-origin-loading
 - mupirocin-2020-priming-cross-origin-reduction
 - mupirocin-2020-priming-a-carrier-substitution-controls
+- mupirocin-2023-mupa-native-deletion-phenotypes
+- mupirocin-2023-mupa-bounded-nmr-partner-tests
+- mupirocin-2023-mupa-carrier-dependent-ms-assays
+- mupirocin-2023-mupa-free-substrate-negative-controls
+- mupirocin-2023-mupa-isotope-nmr-ms-readouts
+- mupirocin-2023-mupa-bounded-ks-transfer
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -224,4 +230,29 @@ curation_history:
     or numerical kinetics inferred. Preserved all eight older graphs/component bytes,source
     fields,stereochemistry,SEEDED status,name discussion,AntibioticMech link and prior
     owner history. Exact PAA owner, not the clinical mupirocin mixture.
+  llm_assisted: true
+- timestamp: '2026-10-06T07:10:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added six exact-owner BIOSYNTHESIS components,101nodes/130DOI-or-URL-cited
+    edges, for main-text-bounded MupA deletion,NMR,carrier-assay,free-substrate,isotope-readout
+    and KS-transfer evidence in DOI10.1002/anie.202312514. Exact CDS/table11/GenPept/UniProt
+    audits ground native MupA/Q9AH80,MmpA/Q8RL76 and reused MmpD/Q8RL72 from NCIMB10586;
+    Fre/P0AEN1 matches the paper-named M61182 deposit but remains an E.coli K12 surrogate,
+    not a native cluster reductase. Full native parents and ungrounded excised,tagged,
+    acylated or isotope-labelled preparations remain distinct. KS0 native28..570 matches
+    both versioned MmpA parents,which differ outside that segment; exact-version citations
+    support the curator comparison. Residual PAA,source10585/10586 strain discrepancy,
+    substrate9 wording inconsistency,three separate NMR pairs and assay-specific negative
+    recipes are retained. Coupled MS/Ppant and isotope-substrate depletion do not
+    establish a directly observed transient hydroxylated-carbon NMR peak. KS transfer
+    assignments retain observed/calculated mass disagreement and unresolved alpha-hydroxylated
+    transfer. Two exact snippets,total7words,manually rechecked in publisher HTML
+    and audited across corpus DOI/PMID/PMC aliases. Main scientific text/captions
+    inspected; figure images not visually inspected and SI inaccessible/unread. No
+    complete assay-stock,quantitative kinetic,stable-complex,native pathway-reconstitution
+    or full-record sign-off claim. Addressed author-agent issue#606,not independent
+    approval. Preserved all12older graph objects/component bytes,source fields,stereochemistry,SEEDED
+    status,name discussion, AntibioticMech link and prior history. Exact PAA owner,not
+    clinical mupirocin mixture.
   llm_assisted: true
