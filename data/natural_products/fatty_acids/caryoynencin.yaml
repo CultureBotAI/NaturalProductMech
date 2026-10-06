@@ -81,6 +81,211 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: caryoynencin-2022-cayg-cayl-assay
+  scope: BIOSYNTHESIS
+  description: Caryoynencin-related CayG/CayL assay evidence, not an exact-isomer
+    yield or native complex. Current CayG sequence example, tagged preparations and
+    isomer-containing products remain distinct. No CayK biochemical success, catalytic
+    channeling or detailed reaction sequence asserted. The later DOI:10.1021/acs.joc.3c01789
+    abstract reports a different sequence in a Cab57 context; its full methods are
+    unread. Imported BSR3 attribution remains a separate issue622, not validated by
+    this graph. No antimicrobial-target claim or full-record sign-off.
+  nodes:
+  - node_id: locus
+    label: Ballard 720 reference locus on FXAH01000012.1
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: native_g
+    label: Native CayG sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A075T858
+  - node_id: study_g
+    label: Study N-His6 CayG preparation
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: study_l
+    label: Study N-His6 CayL preparation
+    node_type: PROTEIN
+    grounding_status: REVIEW_NEEDED
+  - node_id: fdr
+    label: Study E. coli flavodoxin reductase reagent
+    node_type: PROTEIN
+    grounding_status: REVIEW_NEEDED
+  - node_id: reaction
+    label: Reported CayG/CayL in-vitro assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: substrate
+    label: Source-assigned protegencin substrate 2
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: products
+    label: Source-assigned assay product mixture
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: ee_product
+    label: Source-assigned E,E-caryoynencin component
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: compound3
+    label: Source-assigned deoxycaryoynencin component 3
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: compound4
+    label: Source-assigned 8-hydroxyprotegencin component 4
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: locus
+    predicate: encodes_native_reference
+    object: native_g
+    notes: FXAH01000012.1 CDS65666..66862(-),1-based inclusive; SMF59989.1,398aa.
+      CDS-aware table11=GenPept=UniProt sequencev1,unreviewed entry40. Also equals
+      the historical DSM50341 CayG/AIG53832.1 translation in partial KJ815057.1; the
+      historical nucleotide sequence lacks the complete CDS stop codon. CCUG20834
+      lists Ballard720 and DSM50341 as collection designations. Neither the strain
+      lineage nor sequence equality identifies a tagged assay stock.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FXAH01000012.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Source and complete native CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SMF59989.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned GenPept inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KJ815057.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical cayG gene/DSM50341 and partial annotation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ccug.se/strain?id=20834
+      evidence_type: DATABASE_ASSERTION
+      notes: Culture collection designations inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/A0A075T858
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact four-way sequence comparison; reference only.
+      retrieved_on: '2026-10-06'
+  - subject: study_g
+    predicate: has_native_sequence_example
+    object: native_g
+    notes: An explicitly selected same-species/gene reference, not verified study-strain,
+      allele or full construct identity. Main text names T.caryophylli; detailed construct
+      methods remain unread. Do not assign UniProt directly to the tagged preparation.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained main PDF and Figures 1-5 inspected; detailed SI methods unread.
+        Native gene/species context only.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KJ815057.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native DSM50341 cayG reference.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/A0A075T858
+      evidence_type: CURATOR_INFERENCE
+      notes: Deliberate native sequence example, not assay-stock grounding.
+      retrieved_on: '2026-10-06'
+  - subject: study_g
+    predicate: was_included_in
+    object: reaction
+    notes: Soluble N-terminal His6 preparation expressed in BL21(DE3); exact vector,
+      linker and full stock sequence unverified. No direct protein association asserted.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figures 1-5 inspected; detailed SI methods unread.
+        Main page3 and Figure3A trace a.
+      retrieved_on: '2026-10-06'
+  - subject: study_l
+    predicate: was_included_in
+    object: reaction
+    notes: Soluble tagged CayL expressed in BL21(DE3). No exact native CayL accession
+      selected; a neighboring rubredoxin or FDR homolog must not substitute for the
+      tested reagent.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figures 1-5 inspected; detailed SI methods unread.
+        Main page3 and Figure3A trace a.
+      retrieved_on: '2026-10-06'
+      snippet: N-His6-tagged CayL
+  - subject: fdr
+    predicate: was_included_in
+    object: reaction
+    notes: 'E.coli flavodoxin reductase is a supplied reagent, not a verified native
+      CayG partner or a fully identified stock. Other reported reagents: Tris buffer,NADPH,glucose-6-phosphate
+      and baker''s yeast glucose-6-phosphate dehydrogenase. No concentrations or kinetic
+      constants adopted.'
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figures 1-5 inspected; detailed SI methods unread.
+        Main page3 assay-reconstitution paragraph.
+      retrieved_on: '2026-10-06'
+  - subject: substrate
+    predicate: was_supplied_to
+    object: reaction
+    notes: Compound2 follows Figure1, main text and Figure3 structures. Figure3's
+      caption reverses the names for compounds1/2; that discrepancy is not silently
+      propagated.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figures 1-5 inspected; detailed SI methods unread.
+        Figures1 and3 visually inspected alongside main page3.
+      retrieved_on: '2026-10-06'
+  - subject: reaction
+    predicate: yielded_reported_mixture
+    object: products
+    notes: HPLC retention,UV and mass comparisons support source product assignments.
+      No yield,concentration,absolute stereochemistry,physiological flux or complete
+      pathway asserted. CayG-only control yielded small amounts of3; CayL-only control
+      yielded no additional product under the reported conditions, not universal inactivity.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figures 1-5 inspected; detailed SI methods unread.
+        Main page3 and Figure3A; the full reaction differs from omission controls.
+      retrieved_on: '2026-10-06'
+  - subject: products
+    predicate: included_source_assigned_component
+    object: ee_product
+    notes: Figure3A distinguishes E,E and Z,E peaks of1. Only the E,E component relates
+      to this owner's alkene geometry; the mixture is not the exact owner structure.
+      No absolute alcohol stereochemistry or mixture-level quantity assigned to the
+      stereo-incomplete owner.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figures 1-5 inspected; detailed SI methods unread.
+        Figure3A visually inspected; caption numbering conflict retained.
+      retrieved_on: '2026-10-06'
+  - subject: products
+    predicate: included_source_assigned_component
+    object: compound3
+    notes: Time-course rise then decline supports an intermediate hypothesis, not
+      direct proof of a bound intermediate. Isolated3 was not converted when re-added
+      in a fresh assay.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figures 1-5 inspected; detailed SI methods unread.
+        Main page3,Figure3C and Figure4C trace a; proposed mechanism is not asserted.
+      retrieved_on: '2026-10-06'
+  - subject: products
+    predicate: included_source_assigned_component
+    object: compound4
+    notes: A source-assigned coproduct, not caryoynencin. Isolated4 was not further
+      converted in the reported assay; no universal substrate exclusion inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202203264
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained main PDF and Figures 1-5 inspected; detailed SI methods unread.
+        Main page3 and Figure4C trace b.
+      retrieved_on: '2026-10-06'
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -90,3 +295,22 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-06T19:40:01Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one BIOSYNTHESIS graph with 11 nodes and 10 DOI-or-stable-URL-cited
+    edges for the 2022 CayG/CayL assay. Native CayG/A0A075T858 is a deliberately selected
+    reference example, verified by complete-CDS table-11 translation, GenPept SMF59989.1,
+    UniProt and historical KJ815057.1/AIG53832.1 comparison. Ballard720/DSM50341 collection
+    lineage does not establish the study stock. Tagged CayG, CayL and E.coli FDR preparations
+    remain REVIEW_NEEDED without protein identifiers. Retained DOI:10.1002/anie.202203264
+    main PDF and figures inspected; detailed SI unread; two quoted words. The reported
+    product mixture is not the exact E,E owner, absolute alcohol stereochemistry remains
+    unresolved, and the Figure3 caption numbering conflict is retained. No exact-isomer
+    yield, native complex, catalytic channeling, detailed reaction sequence, physiological
+    flux or CayK biochemical success asserted. Later Cab57 mechanistic disagreement
+    not resolved from its abstract. Imported BSR3 source claims remain unchanged and
+    separately tracked in issue622, not validated by this graph. Preserved all source
+    fields/grades, stereochemistry, SEEDED status and prior history. No antimicrobial-target
+    claim or full-record sign-off.
+  llm_assisted: true
