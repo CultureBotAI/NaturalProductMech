@@ -1,0 +1,360 @@
+record_id: CHEBI:78688
+standard_inchi_key: PIFFQYJYNWXNGE-UHFFFAOYSA-N
+graph:
+  graph_id: dapg-pf5-2005-phld-phlacb-assays
+  scope: BIOSYNTHESIS
+  description: Pf-5 PhlD purified-enzyme and combined phlACB expression observations
+    from the2005 primary abstract, with four current native sequence references. Native
+    references, unresolved historical constructs and study preparations remain distinct.
+    Existing Q2-87 pathway not reassigned. No complete biosynthetic sequence, individual
+    PhlA/B/C catalysis, native complex, producer-grade upgrade or antimicrobial-target
+    assertion. Main/figures/SI unread; no full-record sign-off.
+  nodes:
+  - node_id: pf5
+    label: Pseudomonas protegens Pf-5
+    node_type: ORGANISM
+    grounding_status: GROUNDED
+    identifier: NCBITaxon:220664
+  - node_id: prepared_phld
+    label: Purified study PhlD (complete preparation unverified)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: phld_reaction
+    label: Reported PhlD conversion of malonyl-CoA to phloroglucinol
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: malonyl_coa
+    label: Source-assigned malonyl-CoA substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: pg
+    label: Source-assigned phloroglucinol
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: phlacb_culture
+    label: Study E. coli expressing Pf-5 phlACB
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: interconversions
+    label: Reported phlACB-associated PG/MAPG/DAPG interconversions
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: mapg
+    label: monoacetylphloroglucinol
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:64344
+  - node_id: dapg
+    label: 2,4-Diacetylphloroglucinol
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:78688
+  - node_id: native_phla
+    label: PhlA native Pf-5 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4K421
+  - node_id: reported_phla
+    label: Study phlA expression construct (sequence unverified)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: native_phlb
+    label: PhlB native Pf-5 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4K419
+  - node_id: reported_phlb
+    label: Study phlB expression construct (sequence unverified)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: native_phlc
+    label: PhlC native Pf-5 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4K420
+  - node_id: reported_phlc
+    label: Study phlC expression construct (sequence unverified)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: native_phld
+    label: PhlD native Pf-5 sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4K418
+  edges:
+  - subject: pf5
+    predicate: encodes_native_reference
+    object: native_phla
+    notes: CP000076.1 CDS 6766441..6767523(+),1-based inclusive; AAY95144.2/PFL_5954,360aa.
+      CDS-aware table11 translation equals independent GenPept and current UniProt
+      sequencev2. Pf-5/taxon220664, not the existing Q2-87 pathway proteins. Current
+      native reference, not full historical construct identity. PhlA sequencev2 was
+      revised2011-10-19, after the2005 study.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS features inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY95144.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned GenPept reference inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4K421
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native gene/strain/taxon/sequence comparison; no historical preparation
+        equality.
+      retrieved_on: '2026-10-06'
+  - subject: reported_phla
+    predicate: has_native_coding_locus_reference
+    object: native_phla
+    notes: Reported Pf-5 gene name maps to the current native reference; exact study
+      allele, full construct and translated stock sequence are not established. Current
+      PhlA sequence revision postdates the study.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+  - subject: phlacb_culture
+    predicate: expresses_reported_gene_construct
+    object: reported_phla
+    notes: The abstract reports phlACB expression together in E. coli; this identifies
+      the experimental context, not individual protein detection, purified subunit
+      activity, necessity, complex membership or subunit stoichiometry.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+  - subject: pf5
+    predicate: encodes_native_reference
+    object: native_phlb
+    notes: CP000076.1 CDS 6768762..6769202(+),1-based inclusive; AAY95146.1/PFL_5956,146aa.
+      CDS-aware table11 translation equals independent GenPept and current UniProt
+      sequencev1. Pf-5/taxon220664, not the existing Q2-87 pathway proteins. Current
+      native reference, not full historical construct identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS features inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY95146.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned GenPept reference inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4K419
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native gene/strain/taxon/sequence comparison; no historical preparation
+        equality.
+      retrieved_on: '2026-10-06'
+  - subject: reported_phlb
+    predicate: has_native_coding_locus_reference
+    object: native_phlb
+    notes: Reported Pf-5 gene name maps to the current native reference; exact study
+      allele, full construct and translated stock sequence are not established. Not
+      a Q2-87 protein.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+  - subject: phlacb_culture
+    predicate: expresses_reported_gene_construct
+    object: reported_phlb
+    notes: The abstract reports phlACB expression together in E. coli; this identifies
+      the experimental context, not individual protein detection, purified subunit
+      activity, necessity, complex membership or subunit stoichiometry.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+  - subject: pf5
+    predicate: encodes_native_reference
+    object: native_phlc
+    notes: CP000076.1 CDS 6767553..6768749(+),1-based inclusive; AAY95145.1/PFL_5955,398aa.
+      CDS-aware table11 translation equals independent GenPept and current UniProt
+      sequencev1. Pf-5/taxon220664, not the existing Q2-87 pathway proteins. Current
+      native reference, not full historical construct identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS features inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY95145.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned GenPept reference inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4K420
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native gene/strain/taxon/sequence comparison; no historical preparation
+        equality.
+      retrieved_on: '2026-10-06'
+  - subject: reported_phlc
+    predicate: has_native_coding_locus_reference
+    object: native_phlc
+    notes: Reported Pf-5 gene name maps to the current native reference; exact study
+      allele, full construct and translated stock sequence are not established. Not
+      a Q2-87 protein.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+  - subject: phlacb_culture
+    predicate: expresses_reported_gene_construct
+    object: reported_phlc
+    notes: The abstract reports phlACB expression together in E. coli; this identifies
+      the experimental context, not individual protein detection, purified subunit
+      activity, necessity, complex membership or subunit stoichiometry.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+  - subject: pf5
+    predicate: encodes_native_reference
+    object: native_phld
+    notes: CP000076.1 CDS 6769411..6770460(+),1-based inclusive; AAY95147.1/PFL_5957,349aa.
+      CDS-aware table11 translation equals independent GenPept and current UniProt
+      sequencev1. Pf-5/taxon220664, not the existing Q2-87 pathway proteins. Current
+      native reference, not full historical construct identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS features inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY95147.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned GenPept reference inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4K418
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native gene/strain/taxon/sequence comparison; no historical preparation
+        equality.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_phld
+    predicate: has_native_sequence_reference
+    object: native_phld
+    notes: The abstract names Pf-5 PhlD. Mapping to the current Pf-5 reference is
+      an explicit gene/strain inference, not a reconstructed purification stock or
+      complete engineered sequence.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_phld
+    predicate: catalyzes_reported_conversion
+    object: phld_reaction
+    notes: Purification to homogeneity and substrate-to-product conversion are reported
+      in the primary abstract. Kinetic numbers are omitted because complete assay
+      conditions were not inspected. This is not direct DAPG synthesis or a claim
+      about the Q2-87 ortholog.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+  - subject: malonyl_coa
+    predicate: is_reported_substrate_of
+    object: phld_reaction
+    notes: Substrate identity as reported; no molar stoichiometry, intermediates,
+      cofactors or reaction balance inferred from the abstract.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+  - subject: phld_reaction
+    predicate: yields_reported_product
+    object: pg
+    notes: Phloroglucinol is the reported purified-enzyme product; it is not MAPG
+      or DAPG.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+  - subject: phlacb_culture
+    predicate: supports_reported_interconversions
+    object: interconversions
+    notes: Acetylating and deacetylating activities were reported with phlACB expressed
+      in E. coli. The abstract does not resolve individual subunit catalysis, preparation
+      format, physiological direction, quantitative flux or a complete native complex.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+  - subject: pg
+    predicate: participates_in_reported_interconversions
+    object: interconversions
+    notes: One of the three source-assigned compounds in the combined phlACB expression
+      result. The abstract does not establish each pairwise direct reaction, equilibrium,
+      stoichiometry or a native whole-cell production rate.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+  - subject: mapg
+    predicate: participates_in_reported_interconversions
+    object: interconversions
+    notes: One of the three source-assigned compounds in the combined phlACB expression
+      result. The abstract does not establish each pairwise direct reaction, equilibrium,
+      stoichiometry or a native whole-cell production rate.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+  - subject: dapg
+    predicate: participates_in_reported_interconversions
+    object: interconversions
+    notes: One of the three source-assigned compounds in the combined phlACB expression
+      result. The abstract does not establish each pairwise direct reaction, equilibrium,
+      stoichiometry or a native whole-cell production rate.
+    evidence:
+    - reference: DOI:10.1021/ja042340g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; main text, figures and SI unread. Complete
+        constructs, host strain, tags, assay conditions and historical protein sequences
+        unverified. No kinetic values or reaction stoichiometry adopted.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T16:37:14Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Moved unchanged graph dapg-pf5-2005-phld-phlacb-assays from exact owner
+    CHEBI:78688, reviewed baseline 9708752de031f85368e95b7316e7a3fd0e6b771f, to retain
+    the 64-KiB owner limit. Original curation history remains in the owner. All nodes,
+    edges, evidence, snippets and qualifications retained; expanded graph order and
+    biological claims unchanged.
+  llm_assisted: true

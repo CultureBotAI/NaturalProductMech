@@ -1,0 +1,147 @@
+record_id: CHEBI:78688
+standard_inchi_key: PIFFQYJYNWXNGE-UHFFFAOYSA-N
+graph:
+  graph_id: phlh-2p24-reference-7e1l-apo-assembly
+  scope: BIOSYNTHESIS
+  description: Independent apo PhlH structural subgraph from the DAPG regulatory study
+    associated with DOI:10.1016/j.jbc.2022.102027. No bound DAPG or DNA in this model.
+    The companion7E1N ligand-identity disagreement is not resolved or adopted here.
+    Versioned nucleotide accession is cited as sequence evidence, not assigned as
+    a BGC identifier. Primary abstract only; main text, images and SI unread. No full-record
+    sign-off.
+  nodes:
+  - node_id: locus
+    label: Native 2P24 phl locus (sequence DQ083928.1)
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: phlh
+    label: Native 2P24 PhlH sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4JIX5
+  - node_id: assembly
+    label: 7E1L deposited tagged SeMet PhlH dimer
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: chain_A
+    label: 7E1L tagged SeMet PhlH chain A
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: chain_B
+    label: 7E1L tagged SeMet PhlH chain B
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: locus
+    predicate: encodes_native_reference
+    object: phlh
+    notes: DQ083928.1 CDS1..678(-),1-based inclusive,AAY86545.1,225aa. CDS-aware table11=GenPept=UniProt
+      sequencev1. Native strain2P24/taxon294 comes from GenBank/GenPept; UniProt is
+      species-level and unreviewed. Not Pf-5 or CHA0 PhlH.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ083928.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Source and native CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY86545.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent native sequence and strain inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4JIX5
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact gene/sequence comparison; not whole assay-stock identity.
+      retrieved_on: '2026-10-06'
+  - subject: chain_A
+    predicate: has_native_sequence_reference
+    object: phlh
+    notes: Canonical234aa=MGHHHHHHH+native225aa only after MSE-to-M normalization.
+      Crystal source strain unrecorded; complete stock and vector unverified. Reference
+      correspondence is not unmodified native-protein identity.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/polymer_entity/7E1L/1
+      evidence_type: CURATOR_INFERENCE
+      notes: Deposited/native sequence comparison.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4JIX5
+      evidence_type: CURATOR_INFERENCE
+      notes: Native sequence comparator.
+      retrieved_on: '2026-10-06'
+    - reference: https://files.rcsb.org/download/7E1L.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Tagged SeMet sequence and source metadata inspected.
+      retrieved_on: '2026-10-06'
+  - subject: chain_A
+    predicate: is_member_of_deposited_assembly
+    object: assembly
+    notes: Author/PISA assembly1:chainsA/B under identity operation; depositor reports
+      gel filtration. Model1.2 revised2024-11-13,2.4A. No universal physiological
+      stoichiometry, ligand-triggered movement or DNA-binding activity inferred.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/assembly/7E1L/1
+      evidence_type: DATABASE_ASSERTION
+      notes: Complete assembly definition and transform inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://data.rcsb.org/rest/v1/core/entry/7E1L
+      evidence_type: DATABASE_ASSERTION
+      notes: Revision and resolution inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://files.rcsb.org/download/7E1L.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Depositor assembly-evidence metadata inspected.
+      retrieved_on: '2026-10-06'
+  - subject: chain_B
+    predicate: has_native_sequence_reference
+    object: phlh
+    notes: Canonical234aa=MGHHHHHHH+native225aa only after MSE-to-M normalization.
+      Crystal source strain unrecorded; complete stock and vector unverified. Reference
+      correspondence is not unmodified native-protein identity.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/polymer_entity/7E1L/1
+      evidence_type: CURATOR_INFERENCE
+      notes: Deposited/native sequence comparison.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4JIX5
+      evidence_type: CURATOR_INFERENCE
+      notes: Native sequence comparator.
+      retrieved_on: '2026-10-06'
+    - reference: https://files.rcsb.org/download/7E1L.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Tagged SeMet sequence and source metadata inspected.
+      retrieved_on: '2026-10-06'
+  - subject: chain_B
+    predicate: is_member_of_deposited_assembly
+    object: assembly
+    notes: Author/PISA assembly1:chainsA/B under identity operation; depositor reports
+      gel filtration. Model1.2 revised2024-11-13,2.4A. No universal physiological
+      stoichiometry, ligand-triggered movement or DNA-binding activity inferred.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/assembly/7E1L/1
+      evidence_type: DATABASE_ASSERTION
+      notes: Complete assembly definition and transform inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://data.rcsb.org/rest/v1/core/entry/7E1L
+      evidence_type: DATABASE_ASSERTION
+      notes: Revision and resolution inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://files.rcsb.org/download/7E1L.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Depositor assembly-evidence metadata inspected.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T16:37:14Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component; reviewed baseline 9708752de031f85368e95b7316e7a3fd0e6b771f.
+    Added an exact-owner BIOSYNTHESIS component with 5 nodes and 5 cited edges for
+    native 2P24 PhlH/Q4JIX5 and the independently inspected apo 7E1L structure. DQ083928.1
+    CDS-aware table-11 translation matches AAY86545.1 and UniProt; 234-residue deposited
+    chains match the 225-residue native reference only after explicit N-tag removal
+    and MSE normalization. Crystal source strain and complete stock remain unverified;
+    author/PISA dimer membership is not universal native stoichiometry. No ligand-triggered
+    motion, DNA-binding mechanism or acceptance of the companion 7E1N ligand identity.
+    Zero new quotes. Moved the complete unchanged PhlACBD2005 inline graph into a
+    component to retain the 64-KiB limit, preserving all five pre-existing expanded
+    graphs in their original order. Retained both pathway steps, source fields/grades,
+    stereochemistry, SEEDED status, discussion, AntibioticMech link and all prior
+    history. No antimicrobial target or full-record sign-off.
+  llm_assisted: true
