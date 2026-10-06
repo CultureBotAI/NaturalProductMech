@@ -1,0 +1,148 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-coump-coup-deletion-and-demethyl-product-boundaries
+  scope: BIOSYNTHESIS
+  description: 'Abstract-supported native couP genetics, distinct from direct enzyme
+    activity. The native reference is not an experimentally sequenced deletion allele;
+    full culture and analytical methods remain uninspected. Author-agent review #587;
+    partial curation, not full-record sign-off.'
+  nodes:
+  - node_id: CouP
+    label: Native CouP sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T8
+  - node_id: deletion
+    label: Reported couP in-frame deletion
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: Reported S. rishiriensis couP mutant
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: a1
+    label: coumermycin A1
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:3907
+  - node_id: demethyl
+    label: Reported sugar-demethylated coumermycin derivative
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: analysis
+    label: HPLC-ESI-MS selected-reaction monitoring
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: role
+    label: Genetically supported sugar 4-O methylation role
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: amount
+    label: Source-reported mutant-versus-wild-type product amount
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: deletion
+    predicate: affects_coding_locus_of
+    object: CouP
+    notes: Native accession is a locus reference, not the deleted protein sequence.
+      Exact allele, strain stock and construct were not inspected.
+    evidence:
+    - reference: DOI:10.1099/00221287-148-10-3317
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+      snippet: in-frame deletion
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T8
+      evidence_type: DATABASE_ASSERTION
+      notes: Native gene/protein reference only.
+      retrieved_on: '2026-10-05'
+  - subject: deletion
+    predicate: was_introduced_in
+    object: mutant
+    notes: Native gene-inactivation context; clone counts, rescue and possible polar
+      effects remain unassessed.
+    evidence:
+    - reference: DOI:10.1099/00221287-148-10-3317
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: lost_reported_production_of
+    object: a1
+    notes: Abstract reports abolished production, not a numerical zero or a defined
+      detection limit.
+    evidence:
+    - reference: DOI:10.1099/00221287-148-10-3317
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: accumulated_assigned_product
+    object: demethyl
+    notes: Assigned derivative lacks both deoxysugar 4-O methyl groups; no exact chemical
+      identifier is selected.
+    evidence:
+    - reference: DOI:10.1099/00221287-148-10-3317
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: demethyl
+    predicate: was_assigned_by
+    object: analysis
+    notes: Source analytical assignment, not independently reprocessed spectra or
+      new structural determination.
+    evidence:
+    - reference: DOI:10.1099/00221287-148-10-3317
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: demethyl
+    predicate: supports_pathway_role
+    object: role
+    notes: Genetic product evidence supports CouP involvement; it is not purified-protein
+      turnover or native reaction-order measurement.
+    evidence:
+    - reference: DOI:10.1099/00221287-148-10-3317
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: CouP
+    predicate: has_genetically_supported_role
+    object: role
+    notes: The biochemical evidence is recorded separately; no universal essentiality
+      follows from this phenotype.
+    evidence:
+    - reference: DOI:10.1099/00221287-148-10-3317
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: has_qualitative_product_comparison
+    object: amount
+    notes: The abstract collectively reports demethylated metabolites at least as
+      abundant as wild-type A1, not a clone-specific CouP titer. This compares different
+      compounds, not improved A1 yield; units, calibration, replicates and uncertainty
+      are unresolved.
+    evidence:
+    - reference: DOI:10.1099/00221287-148-10-3317
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T01:54:12Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-coump-coup-deletion-and-demethyl-product-boundaries;
+    preserve native/preparation identity, abstract-only evidence and engineered-product
+    limits (#587).
+  llm_assisted: true
