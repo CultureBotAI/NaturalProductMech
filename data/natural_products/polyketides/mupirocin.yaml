@@ -181,6 +181,9 @@ causal_graph_refs:
 - mupirocin-2017-muppv-native-deletion-metabolites
 - mupirocin-2017-muppv-desepoxy-feeding
 - mupirocin-2017-muppv-bounded-functional-proposals
+- mupirocin-2007-tailoring-cf-single-mutant-phenotypes
+- mupirocin-2007-tailoring-ouve-single-mutant-phenotypes
+- mupirocin-2007-tailoring-c-double-mutants-and-order
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -277,4 +280,23 @@ curation_history:
     older graphs/component bytes, source fields, stereochemistry, SEEDED status, name
     discussion, AntibioticMech link and previous history. Exact PA-A owner, not the
     mixture.
+  llm_assisted: true
+- timestamp: '2026-10-06T08:50:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added three exact-owner BIOSYNTHESIS components, 46 nodes and 62 DOI-or-URL-cited
+    edges, bounded by the inspected primary abstract DOI10.1074/jbc.M701490200/PMID17383964.
+    Five additional native sequence examples (MupC/Q8RL71, MupF/Q8RL66, MupO/Q8RL56,
+    MacpE/Q8RL50 and MupU/Q8RL48) plus reused MupV/Q8RL47 match AF318063.3 CDS-aware
+    table-11 translations, versioned GenPept and current UniProt. NCIMB10586 native
+    references are deliberately selected gene-matched examples, not confirmed historical
+    experimental stocks; the abstract does not specify strain and MupO version2 postdates
+    the experiment. Full text, figures and supporting information unread. Distinct
+    single/double-mutant alleles, source-assigned metabolites, eight bounded PA-A-negative
+    culture reports and three inferred ordering edges; no silent MacpE ordering. One
+    exact five-word snippet verified in retained primary PubMed XML; source DOI/PMID/PII
+    aliases checked. No measured-zero yield, purified-enzyme sufficiency, stable complex
+    or full-record sign-off. Preserved all21 previous graph objects/component bytes,
+    source fields, stereochemistry, SEEDED status, name discussion, AntibioticMech
+    link and prior history. Exact PA-A owner, not the clinical mixture.
   llm_assisted: true
