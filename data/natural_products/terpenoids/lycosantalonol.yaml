@@ -289,6 +289,294 @@ causal_graphs:
     assay-stock assignment. No TPS21/CYP71BN1 reaction, physical complex, exact final-product
     stereochemistry or producer-grade upgrade is asserted. SEEDED status and source-owned
     classifications remain unchanged; this is not full-record sign-off.
+- graph_id: lycosantalonol-2015-transcript-context
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: cpt2_reference
+    label: Current tomato CPT2 native protein example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:K7WQ45
+  - node_id: cpt2_gene
+    label: Study CPT2 gene assayed by transcript measurement
+    node_type: GENE
+    grounding_status: REVIEW_NEEDED
+  - node_id: tps21_reference
+    label: Current tomato TPS21 native protein example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:R9R6P6
+  - node_id: tps21_gene
+    label: Study TPS21 gene assayed by transcript measurement
+    node_type: GENE
+    grounding_status: REVIEW_NEEDED
+  - node_id: cyp71bn1_reference
+    label: Current tomato CYP71BN1 native protein example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:K4CI56
+  - node_id: cyp71bn1_gene
+    label: Study CYP71BN1 gene assayed by transcript measurement
+    node_type: GENE
+    grounding_status: REVIEW_NEEDED
+  - node_id: tissue_comparison
+    label: Study tissue and developmental-stage qRT-PCR comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: fraction_comparison
+    label: Study whole-petiolule and trichome-fraction qRT-PCR comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: transcript_pattern
+    label: Reported overlapping petiolule transcript distributions
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: pathway_context
+    label: Source-discussed lycosantalonol biosynthesis context
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cpt2_reference
+    predicate: is_gene_product_example_for
+    object: cpt2_gene
+    notes: Deliberately selected species-matched native example, not the historical
+      tissue allele. Complete spliced CDS translation equals AGK82801.1 and the 314-residue
+      UniProt sequence. The S1 qRT-PCR primer pair has one correctly oriented exact
+      match at spliced-CDS positions54..261, 1-based inclusive, among the11 annotated
+      CDSs of KC807995.1. This bounded match is not genome-wide primer specificity,
+      full experimental transcript sequencing or a measurement of protein abundance.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/K7WQ45
+      evidence_type: DATABASE_ASSERTION
+      notes: Solanum lycopersicum taxon4081; reviewed entry51/sequence1, 314 residues;
+        last annotation2026-09-02. Native reference only.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KC807995.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete spliced-CDS/table1 translation independently equals GenPept
+        and UniProt; genomic source qualifiers establish species but not cultivar.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302.s006
+      evidence_type: CURATOR_INFERENCE
+      notes: Official one-page S1 table visually read; forward/reverse primer rows
+        checked verbatim and compared with spliced reference CDSs. No assay-stock
+        identity inferred.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Gene-named
+        qRT-PCR methods page4 and results pages6-7.
+      retrieved_on: '2026-10-06'
+  - subject: tps21_reference
+    predicate: is_gene_product_example_for
+    object: tps21_gene
+    notes: Deliberately selected species-matched native example, not the historical
+      tissue allele. Complete spliced CDS translation equals AGK82800.1 and the 792-residue
+      UniProt sequence. The S1 qRT-PCR primer pair has one correctly oriented exact
+      match at spliced-CDS positions1454..1560, 1-based inclusive, among the11 annotated
+      CDSs of KC807995.1. This bounded match is not genome-wide primer specificity,
+      full experimental transcript sequencing or a measurement of protein abundance.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/R9R6P6
+      evidence_type: DATABASE_ASSERTION
+      notes: Solanum lycopersicum taxon4081; unreviewed entry53/sequence1, 792 residues;
+        last annotation2026-06-10. Native reference only.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KC807995.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete spliced-CDS/table1 translation independently equals GenPept
+        and UniProt; genomic source qualifiers establish species but not cultivar.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302.s006
+      evidence_type: CURATOR_INFERENCE
+      notes: Official one-page S1 table visually read; forward/reverse primer rows
+        checked verbatim and compared with spliced reference CDSs. No assay-stock
+        identity inferred.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Gene-named
+        qRT-PCR methods page4 and results pages6-7.
+      retrieved_on: '2026-10-06'
+  - subject: cyp71bn1_reference
+    predicate: is_gene_product_example_for
+    object: cyp71bn1_gene
+    notes: Deliberately selected species-matched native example, not the historical
+      tissue allele. Complete spliced CDS translation equals AGK82807.1 and the 506-residue
+      UniProt sequence. The S1 qRT-PCR primer pair has one correctly oriented exact
+      match at spliced-CDS positions752..909, 1-based inclusive, among the11 annotated
+      CDSs of KC807995.1. This bounded match is not genome-wide primer specificity,
+      full experimental transcript sequencing or a measurement of protein abundance.
+      K4CI56 is an unreviewed reference with Heinz1706 source metadata and generic
+      Cytochrome P450-1/LOC101251011 annotation; exact CDS and primer correspondence,
+      not the generic name, supports the CYP71BN1 example. No MP1 stock assignment.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/K4CI56
+      evidence_type: DATABASE_ASSERTION
+      notes: Solanum lycopersicum taxon4081; unreviewed entry71/sequence1, 506 residues;
+        last annotation2026-09-02. Native reference only.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KC807995.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete spliced-CDS/table1 translation independently equals GenPept
+        and UniProt; genomic source qualifiers establish species but not cultivar.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302.s006
+      evidence_type: CURATOR_INFERENCE
+      notes: Official one-page S1 table visually read; forward/reverse primer rows
+        checked verbatim and compared with spliced reference CDSs. No assay-stock
+        identity inferred.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Gene-named
+        qRT-PCR methods page4 and results pages6-7.
+      retrieved_on: '2026-10-06'
+  - subject: cpt2_gene
+    predicate: had_transcripts_measured_in
+    object: tissue_comparison
+    notes: qRT-PCR measured RNA across the study's tissue and developmental-stage
+      panel. Methods describe EF-1a normalization and a standard-curve approach for
+      cross-gene comparison; Figure2 has three biological replicates and three technical
+      replicates. This does not identify a historical full-length allele or measure
+      the corresponding protein, catalytic flux or cell-specific localization.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Methods
+        page4; results page6 and Figure2.
+      retrieved_on: '2026-10-06'
+  - subject: cpt2_gene
+    predicate: had_transcripts_measured_in
+    object: fraction_comparison
+    notes: RNA was compared between whole petiolules, trichome-depleted petiolules
+      and isolated trichomes. Figure3 has four biological replicates with three technical
+      replicates each. These tissue fractions are not single-cell measurements, proof
+      of fraction purity or direct evidence of a protein's location.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Fraction
+        preparation pages3-4; results pages6-7 and Figure3.
+      retrieved_on: '2026-10-06'
+  - subject: tps21_gene
+    predicate: had_transcripts_measured_in
+    object: tissue_comparison
+    notes: qRT-PCR measured RNA across the study's tissue and developmental-stage
+      panel. Methods describe EF-1a normalization and a standard-curve approach for
+      cross-gene comparison; Figure2 has three biological replicates and three technical
+      replicates. This does not identify a historical full-length allele or measure
+      the corresponding protein, catalytic flux or cell-specific localization.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Methods
+        page4; results page6 and Figure2.
+      retrieved_on: '2026-10-06'
+  - subject: tps21_gene
+    predicate: had_transcripts_measured_in
+    object: fraction_comparison
+    notes: RNA was compared between whole petiolules, trichome-depleted petiolules
+      and isolated trichomes. Figure3 has four biological replicates with three technical
+      replicates each. These tissue fractions are not single-cell measurements, proof
+      of fraction purity or direct evidence of a protein's location.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Fraction
+        preparation pages3-4; results pages6-7 and Figure3.
+      retrieved_on: '2026-10-06'
+  - subject: cyp71bn1_gene
+    predicate: had_transcripts_measured_in
+    object: tissue_comparison
+    notes: qRT-PCR measured RNA across the study's tissue and developmental-stage
+      panel. Methods describe EF-1a normalization and a standard-curve approach for
+      cross-gene comparison; Figure2 has three biological replicates and three technical
+      replicates. This does not identify a historical full-length allele or measure
+      the corresponding protein, catalytic flux or cell-specific localization.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Methods
+        page4; results page6 and Figure2.
+      retrieved_on: '2026-10-06'
+  - subject: cyp71bn1_gene
+    predicate: had_transcripts_measured_in
+    object: fraction_comparison
+    notes: RNA was compared between whole petiolules, trichome-depleted petiolules
+      and isolated trichomes. Figure3 has four biological replicates with three technical
+      replicates each. These tissue fractions are not single-cell measurements, proof
+      of fraction purity or direct evidence of a protein's location.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Fraction
+        preparation pages3-4; results pages6-7 and Figure3.
+      retrieved_on: '2026-10-06'
+  - subject: tissue_comparison
+    predicate: supports_reported_transcript_pattern
+    object: transcript_pattern
+    notes: The authors report the highest transcript levels for all three genes in
+      young petiolules within the examined panel. TPS21 is broadly expressed across
+      several tissues, unlike the more pronounced CPT2/CYP71BN1 petiolule pattern.
+      Figure2 error bars overlap for some comparisons; no new significance test or
+      exclusive tissue expression is asserted.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Results
+        page6 and Figure2; source interpretation, not re-estimated bar values.
+      retrieved_on: '2026-10-06'
+  - subject: fraction_comparison
+    predicate: supports_reported_transcript_pattern
+    object: transcript_pattern
+    notes: Normalized transcript levels are higher in trichome-depleted petiolules
+      than in whole petiolules and lower in isolated trichomes. This supports the
+      source's predominantly non-trichome transcript interpretation, not an absence
+      from every trichome cell, protein localization, or evidence that one of the
+      three genes regulates another.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Results
+        pages6-7 and Figure3.
+      retrieved_on: '2026-10-06'
+      snippet: mostly in non-trichome cells
+  - subject: transcript_pattern
+    predicate: provides_correlative_expression_context_for
+    object: pathway_context
+    notes: The transcript distributions provide context for the lycosantalonol pathway
+      discussed in this paper. They do not establish direct TPS21/CYP71BN1 reactions,
+      coordinated protein abundance, a physical complex, wild-type product detection,
+      unique rate limitation or the owner's exact stereochemistry. This graph does
+      not borrow reaction claims from earlier papers whose full evidence remains uninspected.
+      The separate CPT2 intervention graph retains the engineered-product comparison;
+      no cross-graph node edge is asserted.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Results
+        pages6-11 and discussion pages11-13.
+      retrieved_on: '2026-10-06'
+  description: Transcript-level context for CPT2, TPS21 and CYP71BN1 in the lycosantalonol
+    study, with native protein examples explicitly distinct from gene assays and historical
+    alleles. Adds TPS21 and CYP71BN1 reference examples without asserting their reaction
+    chemistry from incompletely inspected earlier work. Tissue-level RNA distributions
+    are not protein abundance, single-cell localization, direct regulation or a physical
+    complex. No source-grade, origin, stereochemistry or SEEDED-status upgrade; not
+    full-record sign-off.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -316,4 +604,21 @@ curation_history:
     unread, and TPS21/CYP71BN1 reactions from earlier incompletely inspected papers
     are not added. Preserved all source fields, computed classification, SOURCE_ASSERTION/CLUSTER_UNSTATED
     grades, SEEDED status, incomplete stereo and prior history. No full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-06T23:35:24Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the separate 2015 transcript-context graph, 10 nodes and 12 individually
+    DOI-cited edges. TPS21 R9R6P6 and CYP71BN1 K4CI56 are deliberate current native
+    protein examples, with CPT2 K7WQ45 retained as context. Complete spliced-CDS translations
+    equal GenPept and UniProt; all three S1 qRT-PCR primer pairs map to their expected
+    CDSs among the 11 annotated KC807995.1 CDSs. This bounded reference check does
+    not prove genome-wide primer specificity, historical alleles or the MP1 cultivar.
+    K4CI56's Heinz1706 source is explicit. Main Figures2-3 and S1 table support transcript
+    measurements, not protein abundance, single-cell localization, direct gene regulation,
+    physical assembly or TPS21/CYP71BN1 reaction chemistry from incompletely inspected
+    earlier papers. Four-word verbatim snippet; source quote-budget audit passed.
+    Preserved the prior CPT2 assay/intervention graph exactly, all source fields,
+    evidence grades, computed classification, SEEDED status, incomplete stereo and
+    prior history. No origin or producer upgrade and no full-record sign-off.
   llm_assisted: true
