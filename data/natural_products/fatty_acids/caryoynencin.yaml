@@ -41,17 +41,27 @@ producer_taxon_groups:
 producer_organisms:
 - taxon_id: NCBITaxon:999541
   taxon_label: Burkholderia gladioli BSR3
-  evidence_basis: BGC_CHARACTERIZED
+  evidence_basis: SOURCE_ASSERTION
   biosynthetic_gene_cluster: mibig:BGC0000892
   source: MIBIG
   source_version: '4'
-  notes: 'Locus evidence: Knock-out studies|Gene expression correlated with compound
-    production. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field
-    grades the taxon claim, which is a different question.'
+  notes: 'Source locus methods excluded as inapplicable: Knock-out studies|Gene expression
+    correlated with compound production. No applicable locus methods remain. That
+    evidence grades the LOCUS as CLUSTER_UNSTATED; this field grades the taxon claim,
+    which is a different question.'
   evidence:
   - reference: PMID:24898429
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000892 entry version 4; citation taken from the entry level
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000892.4/index.html
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Curated exclusion of source locus methods from this taxon/locus claim:
+      Knock-out studies|Gene expression correlated with compound production. MIBiG
+      BGC0000892 version 4 assigns the experiments to Burkholderia caryophylli DSM50341
+      (KJ815051-KJ815060), not Burkholderia gladioli BSR3. Those experiments do not
+      support experimental grades for the BSR3 CP002599.1 locus or its producer claim.
+      Retain the original BSR3 source assertion without inferring homology-based prediction.
+      Curator: codex; date: 2026-10-06.'
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000892
   entry_version: '4'
@@ -62,15 +72,21 @@ biosynthetic_gene_clusters:
   - reference: PMID:24898429
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000892 entry version 4; citation taken from the entry level
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000892.4/index.html
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Curated exclusion of source locus methods from this taxon/locus claim:
+      Knock-out studies|Gene expression correlated with compound production. MIBiG
+      BGC0000892 version 4 assigns the experiments to Burkholderia caryophylli DSM50341
+      (KJ815051-KJ815060), not Burkholderia gladioli BSR3. Those experiments do not
+      support experimental grades for the BSR3 CP002599.1 locus or its producer claim.
+      Retain the original BSR3 source assertion without inferring homology-based prediction.
+      Curator: codex; date: 2026-10-06.'
   genome_accession: genbank:CP002599.1
   locus_from: 2260844
   locus_to: 2274030
   bgc_class:
   - OTHER
-  locus_evidence_methods:
-  - Knock-out studies
-  - Gene expression correlated with compound production
-  link_evidence_basis: CLUSTER_DEMONSTRATED
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000892
@@ -314,3 +330,7 @@ curation_history:
     fields/grades, stereochemistry, SEEDED status and prior history. No antimicrobial-target
     claim or full-record sign-off.
   llm_assisted: true
+- timestamp: '2026-10-06T20:27:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

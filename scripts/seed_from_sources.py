@@ -55,6 +55,7 @@ import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlsplit
 
 import yaml
 
@@ -363,6 +364,12 @@ def read_inventories() -> dict[str, list[dict[str, str]]]:
     return inventories
 
 
+MIBIG_WITHDRAWAL_CONTEXT = (
+    "entry_version", "taxon_id", "genome_accession", "locus_from", "locus_to",
+    "standard_inchi_key", "locus_evidence_methods",
+)
+
+
 def load_mibig_locus_evidence_overrides(
     rows: list[dict[str, str]],
 ) -> dict[str, dict[str, str]]:
@@ -372,8 +379,11 @@ def load_mibig_locus_evidence_overrides(
         identifier = row["minted_identifier"]
         if identifier in overrides:
             raise ValueError(f"duplicate MIBiG locus evidence override for {identifier}")
+        action = row.get("action", "REPLACE")
+        if action not in {"REPLACE", "WITHDRAW"}:
+            raise ValueError(f"{identifier} has invalid MIBiG evidence action {action!r}")
         methods = [m for m in row["locus_evidence_methods"].split("|") if m]
-        if not methods:
+        if action == "REPLACE" and not methods:
             raise ValueError(
                 f"{identifier} has a MIBiG locus evidence override with no methods")
         unknown = [m for m in methods if m not in evidence_map]
@@ -382,11 +392,44 @@ def load_mibig_locus_evidence_overrides(
                 f"{identifier} has unknown MIBiG locus evidence method(s): "
                 + ", ".join(unknown)
             )
-        overrides[identifier] = {
+        override = {
             "locus_evidence_methods": "|".join(methods),
             "producer_evidence_basis": grade_production(methods, evidence_map),
             "cluster_link_evidence_basis": grade_cluster_link(methods, evidence_map),
         }
+        if action == "WITHDRAW":
+            if row["locus_evidence_methods"]:
+                raise ValueError(f"{identifier} WITHDRAW must have empty replacement methods")
+            required = ("source_id", "reference", "rationale", "curator", "date") + tuple(
+                "expected_" + field for field in MIBIG_WITHDRAWAL_CONTEXT)
+            if row.get("source") != "MIBIG" or any(
+                not isinstance(row.get(field), str) or not row[field].strip()
+                for field in required
+            ):
+                raise ValueError(
+                    f"{identifier} WITHDRAW requires source, citation, rationale and pinned context")
+            reference = row["reference"]
+            url = urlsplit(reference)
+            if not (re.fullmatch(r"(?:DOI:10\.\d{4,9}/\S+|PMID:\d+)", reference) or (
+                url.scheme == "https" and url.hostname and not re.search(r"\s", reference)
+            )):
+                raise ValueError(f"{identifier} WITHDRAW requires a stable DOI, PMID or HTTPS reference")
+            original_methods = row["expected_locus_evidence_methods"].split("|")
+            if any(method not in evidence_map for method in original_methods):
+                raise ValueError(f"{identifier} WITHDRAW has unknown expected source methods")
+            override.update({
+                "action": action,
+                "source_id": row["source_id"],
+                "qualification_reference": reference,
+                "qualification_note": (
+                    f"Curated exclusion of source locus methods from this taxon/locus claim: "
+                    f"{row['expected_locus_evidence_methods']}. {row['rationale']} "
+                    f"Curator: {row['curator']}; date: {row['date']}."
+                ),
+                **{"expected_" + field: row["expected_" + field]
+                   for field in MIBIG_WITHDRAWAL_CONTEXT},
+            })
+        overrides[identifier] = override
     return overrides
 
 
@@ -399,6 +442,22 @@ def apply_mibig_locus_evidence_override(
     override = overrides.get(source_concept_identifier)
     if not override:
         return row
+    if override.get("action") == "WITHDRAW":
+        expected = {field: override["expected_" + field]
+                    for field in MIBIG_WITHDRAWAL_CONTEXT}
+        expected["mibig_accession"] = override["source_id"]
+        for field, value in expected.items():
+            if row.get(field) != value:
+                raise ValueError(
+                    f"{source_concept_identifier} WITHDRAW source context changed: {field}")
+        return {
+            **row,
+            **{field: override[field] for field in (
+                "locus_evidence_methods", "producer_evidence_basis", "cluster_link_evidence_basis")},
+            "locus_evidence_qualification": override["qualification_note"],
+            "locus_evidence_qualification_reference": override["qualification_reference"],
+            "excluded_locus_evidence_methods": row["locus_evidence_methods"],
+        }
     return {**row, **override}
 
 
@@ -523,10 +582,12 @@ def names_disagree(label: str, other: str) -> bool:
 def mibig_evidence(row: dict[str, str]) -> list[dict[str, str]]:
     """Claim-level evidence for one MIBiG row.
 
-    Always a DATABASE_ASSERTION, whatever the reference points at. The corpus
+    Original source evidence is always DATABASE_ASSERTION, whatever the reference
+    points at. The corpus
     relays what MIBiG asserts; nobody here has read the paper, and
     docs/CURATION.md is explicit that a database assertion does not become the
-    primary report merely because the database cites one. The level the
+    primary report merely because the database cites one. A separately cited
+    curator exclusion is CURATOR_INFERENCE, not a primary experiment. The level the
     citation came from travels in the note, so a curator can tell a
     compound-specific structure report from the entry's general reference.
 
@@ -535,12 +596,19 @@ def mibig_evidence(row: dict[str, str]) -> list[dict[str, str]]:
     record should have to resolve.
     """
     level = row["reference_basis"].lower().replace("_", " ")
-    return [{
+    evidence = [{
         "reference": row["primary_reference"],
         "evidence_type": "DATABASE_ASSERTION",
         "notes": (f"MIBiG {row['mibig_accession']} entry version "
                   f"{row['entry_version']}; citation taken from the {level} level"),
     }]
+    if row.get("locus_evidence_qualification"):
+        evidence.append({
+            "reference": row["locus_evidence_qualification_reference"],
+            "evidence_type": "CURATOR_INFERENCE",
+            "notes": row["locus_evidence_qualification"],
+        })
+    return evidence
 
 
 def group_by_structure(rows: list[dict[str, str]]) -> dict[str, list[dict[str, str]]]:
@@ -611,10 +679,15 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     `just worklist` ranks them.
     """
     mibig_rows = inventories.get("mibig_compounds") or []
-    if not mibig_rows:
-        return []
     mibig_locus_overrides = load_mibig_locus_evidence_overrides(
         inventories.get("mibig_locus_evidence_overrides") or [])
+    source_counts = Counter(mint_identifier("MIBIG", row["mibig_accession"] + ":" + row["compound_index"])
+                            for row in mibig_rows)
+    for identifier, override in mibig_locus_overrides.items():
+        if override.get("action") == "WITHDRAW" and source_counts[identifier] != 1:
+            raise ValueError(f"{identifier} WITHDRAW requires exactly one matching source row")
+    if not mibig_rows:
+        return []
     mibig_rows = [
         apply_mibig_locus_evidence_override(row, mibig_locus_overrides)
         for row in mibig_rows
@@ -859,7 +932,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                     "source": "MIBIG",
                     "source_version": row["entry_version"],
                     "notes": (
-                        f"Locus evidence: {row['locus_evidence_methods'] or 'none stated'}. "
+                        (f"Source locus methods excluded as inapplicable: "
+                         f"{row['excluded_locus_evidence_methods']}. No applicable locus methods remain. "
+                         if row.get("locus_evidence_qualification") else
+                         f"Locus evidence: {row['locus_evidence_methods'] or 'none stated'}. ") +
                         f"That evidence grades the LOCUS as "
                         f"{row.get('cluster_link_evidence_basis', 'CLUSTER_UNSTATED')}; this "
                         f"field grades the taxon claim, which is a different question."
