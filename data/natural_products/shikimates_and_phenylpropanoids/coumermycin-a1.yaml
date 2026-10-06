@@ -827,6 +827,8 @@ causal_graph_refs:
 - coumermycin-a1-coun23456-coun4-insertion-and-source-conflicts
 - coumermycin-a1-coun23456-native-genetic-phenotypes-and-product-boundaries
 - coumermycin-a1-coun23456-proline-loading-and-oxidation-assay-boundaries
+- coumermycin-a1-coump-native-references-and-bounded-tandem-reactions
+- coumermycin-a1-coump-coup-deletion-and-demethyl-product-boundaries
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -894,4 +896,12 @@ curation_history:
     phenotypes; and CouN4/CouN5 proline activation/loading without transferring the
     CloN3 oxidation assay. Preserve source conflicts, prior graphs, source fields,
     chemical identity, history and SEEDED status (#572).
+  llm_assisted: true
+- timestamp: '2026-10-06T01:54:13Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add two CouM/CouP components for exact native references, bounded precursor
+    tailoring and engineered tandem products, plus native couP deletion/product evidence.
+    Preserve source-access limits, all previous graphs, source-owned fields, chemical
+    identity, history and SEEDED status (#587).
   llm_assisted: true

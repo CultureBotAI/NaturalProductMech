@@ -3003,6 +3003,158 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 12 edges</span></h2>
+<p class="sub">Two native protein references accompany abstract-supported precursor tailoring. The reported tandem reactions do not establish a physical complex or complete native-A1 synthesis. Preparations and precursor/engineered products remain separately ungrounded; assay conditions were not obtained. Author-agent review #587; partial curation, not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited coumermycin biosynthetic cluster</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouM sequence reference</td>
+  <td>AF235050.4 couM at 12237..13445(+), 1-based inclusive; S. rishiriensis DSM 40489, taxon 68264. All 402 residues match AAG29785.1 and UniProt. Table-11 CDS-aware translations agree across AF235050.1-.4; AF235050.1 uses cumH.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4<br>https://www.uniprot.org/uniprotkb/Q9F8U7<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouM sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study CouM preparation</td>
+  <td>Gene-matched native reference, not complete sample identity. Experimental tags, insert sequence, expression host, strain stock and purity were not verified; no full-preparation sequence equivalence is asserted.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U7<br>DOI:10.1021/bi048457z</td>
+</tr>
+<tr>
+  <td>Deposited coumermycin biosynthetic cluster</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouP sequence reference</td>
+  <td>AF235050.4 couP at 21984..22814(+), 1-based inclusive; S. rishiriensis DSM 40489, taxon 68264. All 276 residues match AAG29794.1 and UniProt. Table-11 CDS-aware translations agree across AF235050.1-.4; AF235050.1 uses cumN.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4<br>https://www.uniprot.org/uniprotkb/Q9F8T8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouP sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study CouP preparation</td>
+  <td>Gene-matched native reference, not complete sample identity. Experimental tags, insert sequence, expression host, strain stock and purity were not verified; no full-preparation sequence equivalence is asserted.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8T8<br>DOI:10.1021/bi048457z</td>
+</tr>
+<tr>
+  <td>Study CouL preparation</td>
+  <td>provides_acceptors</td>
+  <td>CouL monoamide and bisamide acceptors</td>
+  <td>CouL forms one or two amides from the central pyrrole dicarboxylate and aminocoumarins.</td>
+  <td class="mono">DOI:10.1021/bi048457z</td>
+</tr>
+<tr>
+  <td>CouL monoamide and bisamide acceptors</td>
+  <td>are_acceptors_for</td>
+  <td>Study CouM preparation</td>
+  <td>Reported precursor substrates, not mature antibiotic.</td>
+  <td class="mono">DOI:10.1021/bi048457z</td>
+</tr>
+<tr>
+  <td>Study CouM preparation</td>
+  <td>forms</td>
+  <td>CouM noviosylated products</td>
+  <td>CouM adds one or two noviose units.</td>
+  <td class="mono">DOI:10.1021/bi048457z</td>
+</tr>
+<tr>
+  <td>CouM noviosylated products</td>
+  <td>are_acceptors_for</td>
+  <td>Study CouP preparation</td>
+  <td>CouP acts on products from tandem CouL/CouM assays.</td>
+  <td class="mono">DOI:10.1021/bi048457z</td>
+</tr>
+<tr>
+  <td>Study CouP preparation</td>
+  <td>forms</td>
+  <td>CouP O-methylated products</td>
+  <td>Reported sugar 4-O methylation; no kinetic constants or site-specific rates are supplied here.</td>
+  <td class="mono">DOI:10.1021/bi048457z</td>
+</tr>
+<tr>
+  <td>CouP O-methylated products</td>
+  <td>are_acceptors_for</td>
+  <td>Added NovN preparation</td>
+  <td>NovN is added from the novobiocin pathway, not assigned as a native coumermycin-cluster protein.</td>
+  <td class="mono">DOI:10.1021/bi048457z</td>
+</tr>
+<tr>
+  <td>Added NovN preparation</td>
+  <td>forms_engineered_products</td>
+  <td>Engineered carbamoylated coumermycin analogue</td>
+  <td>Carbamoylation of either or both arms includes a biscarbamoylated analogue. This is not terminal-pyrrole-bearing native A1.</td>
+  <td class="mono">DOI:10.1021/bi048457z</td>
+</tr>
+<tr>
+  <td>Alternative dicarboxylate scaffolds</td>
+  <td>enter_reported_tandem_sequence_via</td>
+  <td>Study CouL preparation</td>
+  <td>Alternative scaffolds yield additional variants; exact identities, yields and breadth are unresolved here.</td>
+  <td class="mono">DOI:10.1021/bi048457z</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 8 edges</span></h2>
+<p class="sub">Abstract-supported native couP genetics, distinct from direct enzyme activity. The native reference is not an experimentally sequenced deletion allele; full culture and analytical methods remain uninspected. Author-agent review #587; partial curation, not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Reported couP in-frame deletion</td>
+  <td>affects_coding_locus_of</td>
+  <td>Native CouP sequence reference</td>
+  <td>Native accession is a locus reference, not the deleted protein sequence. Exact allele, strain stock and construct were not inspected.</td>
+  <td class="mono">DOI:10.1099/00221287-148-10-3317<br>https://www.uniprot.org/uniprotkb/Q9F8T8</td>
+</tr>
+<tr>
+  <td>Reported couP in-frame deletion</td>
+  <td>was_introduced_in</td>
+  <td>Reported S. rishiriensis couP mutant</td>
+  <td>Native gene-inactivation context; clone counts, rescue and possible polar effects remain unassessed.</td>
+  <td class="mono">DOI:10.1099/00221287-148-10-3317</td>
+</tr>
+<tr>
+  <td>Reported S. rishiriensis couP mutant</td>
+  <td>lost_reported_production_of</td>
+  <td>coumermycin A1</td>
+  <td>Abstract reports abolished production, not a numerical zero or a defined detection limit.</td>
+  <td class="mono">DOI:10.1099/00221287-148-10-3317</td>
+</tr>
+<tr>
+  <td>Reported S. rishiriensis couP mutant</td>
+  <td>accumulated_assigned_product</td>
+  <td>Reported sugar-demethylated coumermycin derivative</td>
+  <td>Assigned derivative lacks both deoxysugar 4-O methyl groups; no exact chemical identifier is selected.</td>
+  <td class="mono">DOI:10.1099/00221287-148-10-3317</td>
+</tr>
+<tr>
+  <td>Reported sugar-demethylated coumermycin derivative</td>
+  <td>was_assigned_by</td>
+  <td>HPLC-ESI-MS selected-reaction monitoring</td>
+  <td>Source analytical assignment, not independently reprocessed spectra or new structural determination.</td>
+  <td class="mono">DOI:10.1099/00221287-148-10-3317</td>
+</tr>
+<tr>
+  <td>Reported sugar-demethylated coumermycin derivative</td>
+  <td>supports_pathway_role</td>
+  <td>Genetically supported sugar 4-O methylation role</td>
+  <td>Genetic product evidence supports CouP involvement; it is not purified-protein turnover or native reaction-order measurement.</td>
+  <td class="mono">DOI:10.1099/00221287-148-10-3317</td>
+</tr>
+<tr>
+  <td>Native CouP sequence reference</td>
+  <td>has_genetically_supported_role</td>
+  <td>Genetically supported sugar 4-O methylation role</td>
+  <td>The biochemical evidence is recorded separately; no universal essentiality follows from this phenotype.</td>
+  <td class="mono">DOI:10.1099/00221287-148-10-3317</td>
+</tr>
+<tr>
+  <td>Reported S. rishiriensis couP mutant</td>
+  <td>has_qualitative_product_comparison</td>
+  <td>Source-reported mutant-versus-wild-type product amount</td>
+  <td>The abstract collectively reports demethylated metabolites at least as abundant as wild-type A1, not a clone-specific CouP titer. This compares different compounds, not improved A1 yield; units, calibration, replicates and uncertainty are unresolved.</td>
+  <td class="mono">DOI:10.1099/00221287-148-10-3317</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
