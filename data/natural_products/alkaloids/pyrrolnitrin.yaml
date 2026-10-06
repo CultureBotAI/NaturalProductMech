@@ -787,6 +787,188 @@ causal_graphs:
       snippet: catalyzes the oxidation of aminopyrrolnitrin to form pyrrolnitrin
       retrieved_on: '2026-09-28'
       notes: GenBank EU188755.1 assigns prnD/ABW69177.1 to pyrrolnitrin formation.
+- graph_id: pyrrolnitrin-prnf-2007-reductase-and-surrogate-assays
+  scope: BIOSYNTHESIS
+  description: Biochemical subexperiments for candidate pyrrolnitrin reductase PrnF.
+    Native reference, processed proteins and surrogate reaction remain distinct. No
+    new pyrrolnitrin synthesis step, antimicrobial mechanism or full-record sign-off.
+  nodes:
+  - node_id: pf5
+    label: Pseudomonas protegens Pf-5
+    node_type: ORGANISM
+    grounding_status: GROUNDED
+    identifier: NCBITaxon:220664
+  - node_id: native_prnf
+    label: PrnF native sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KAM2
+  - node_id: prepared_prnf
+    label: Study PrnF preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: prepared_prnd
+    label: Study PrnD preparation (sequence unresolved)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: fad
+    label: FAD assay substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: nadh
+    label: NADH assay electron donor
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: reduced_fad
+    label: Reduced FAD assay product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: flavin_reduction
+    label: PrnF-catalyzed flavin reduction assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: paba
+    label: p-Aminobenzylamine surrogate substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: pnba
+    label: p-Nitrobenzylamine assay product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: coupled_oxidation
+    label: PrnD/PrnF surrogate oxidation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: pf5
+    predicate: encodes_native_reference
+    object: native_prnf
+    notes: CP000076.1 CDS4164049..4164609(+), 1-based inclusive; PFL_3609, AAY92875.1,186aa.
+      CDS-aware table11=GenPept=UniProt unreviewed sequencev1; Pf-5/taxon220664. Deposit
+      uses locus tag, not a prnF gene qualifier.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Source/CDS qualifiers inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY92875.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native sequence inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KAM2
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and identity comparison.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_prnf
+    predicate: has_native_sequence_reference
+    object: native_prnf
+    notes: Published primer cores match native CDS ends. Figure2/native186aa conflict
+      with prose160aa; BAA-447 versus databaseBAA-477 unresolved. pQE30Xa/BL21(DE3),factor-Xa
+      processed; full stock unverified.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: CURATOR_INFERENCE
+      notes: Methods/Figure2 inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_prnf
+    predicate: catalyzed_in_assay
+    object: flavin_reduction
+    notes: NADH absorbance340nm,30C,pH7.0. Table1:FAD Km3.2+/-0.6uM,kcat65.0+/-8.2s^-1;
+      not in-vivo flux.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods/Table1 inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: fad
+    predicate: was_substrate_for
+    object: flavin_reduction
+    notes: Not a permanently bound prosthetic group; protonation unspecified.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+      snippet: FAD is a true substrate
+  - subject: nadh
+    predicate: was_electron_donor_for
+    object: flavin_reduction
+    notes: No universal exclusion of alternative donors inferred.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods/Table1 inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: flavin_reduction
+    predicate: yielded
+    object: reduced_fad
+    notes: Anaerobic reduction and absorbance450nm recovery after oxygen readmission.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: reduced_fad
+    predicate: was_inferred_to_support
+    object: coupled_oxidation
+    notes: Coupling interpretation, not direct visualization of flavin transfer.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: CURATOR_INFERENCE
+      notes: Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_prnf
+    predicate: supported_in_assay
+    object: coupled_oxidation
+    notes: Added PrnF enhanced the coupled reaction.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_prnd
+    predicate: catalyzed_in_assay
+    object: coupled_oxidation
+    notes: Prior-method primers disagree with Pf-5 Q4KAM4 termini; no exact native
+      mapping adopted.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods/Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: CURATOR_INFERENCE
+      notes: Published primers compared with CP000076.1; full preparation remains
+        unresolved.
+      retrieved_on: '2026-10-06'
+  - subject: paba
+    predicate: was_substrate_for
+    object: coupled_oxidation
+    notes: Not aminopyrrolnitrin.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: coupled_oxidation
+    predicate: yielded
+    object: pnba
+    notes: HPLC standard coelution and high-resolution MS; not pyrrolnitrin.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_prnf
+    predicate: interacted_in_study_with
+    object: prepared_prnd
+    notes: Fluorescence of FAD-bound PrnF,membrane separation,gel filtration. No universal
+      monomer stoichiometry or exclusive endogenous partner asserted.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure4/Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -806,4 +988,25 @@ curation_history:
   changes: Added a proposed Pseudomonas chlororaphis PA23 PrnA-PrnD pyrrolnitrin biosynthetic
     pathway and BIOSYNTHESIS causal graph grounded to UniProtKB:A8W2Z0, UniProtKB:A8W2Z1,
     UniProtKB:A8W2Z2, and UniProtKB:A8W2Z3.
+  llm_assisted: true
+- timestamp: '2026-10-06T14:39:32Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added one bounded BIOSYNTHESIS graph with 11 nodes and 12 DOI-or-stable-URL-cited
+    edges for PrnF reductase and coupled surrogate-substrate experiments. Native Pf-5
+    PrnF/Q4KAM2 corresponds to PFL_3609/AAY92875.1 by exact CP000076.1 CDS-aware table-11
+    translation, GenPept and UniProt comparison; published primer cores match native
+    CDS ends. The native reference is not the complete processed study stock. Paper
+    prose160aa versus Figure2/native186aa and BAA-447 versus database BAA-477 remain
+    unresolved. Primary DOI:10.1128/JB.01050-07 main, Figures2-4 and Table1 inspected;
+    supplement unread. Five quoted words adopted. PrnD preparation remains REVIEW_NEEDED
+    without a UniProt identifier: prior-method DOI:10.1074/jbc.M505334200 primers
+    disagree with Pf-5 reference termini and match the older BL915 locus, which does
+    not identify the historical stock. Separated FAD reduction, inferred coupling,
+    surrogate p-aminobenzylamine oxidation and prepared-protein interaction. No new
+    pyrrolnitrin synthesis step, exclusive endogenous reductase, universal complex
+    stoichiometry, physiological flux or antimicrobial mechanism asserted. Preserved
+    complete PA23 graph and four proposed pathway steps, source fields and evidence
+    grades, stereochemistry, SEEDED status, AntibioticMech link and prior history.
+    No full-record sign-off.'
   llm_assisted: true

@@ -294,6 +294,96 @@ derived from a source. This is what the rest of the record exists to support.</p
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 12 edges</span></h2>
+<p class="sub">Biochemical subexperiments for candidate pyrrolnitrin reductase PrnF. Native reference, processed proteins and surrogate reaction remain distinct. No new pyrrolnitrin synthesis step, antimicrobial mechanism or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Pseudomonas protegens Pf-5</td>
+  <td>encodes_native_reference</td>
+  <td>PrnF native sequence reference</td>
+  <td>CP000076.1 CDS4164049..4164609(+), 1-based inclusive; PFL_3609, AAY92875.1,186aa. CDS-aware table11=GenPept=UniProt unreviewed sequencev1; Pf-5/taxon220664. Deposit uses locus tag, not a prnF gene qualifier.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1<br>https://www.ncbi.nlm.nih.gov/protein/AAY92875.1<br>https://www.uniprot.org/uniprotkb/Q4KAM2</td>
+</tr>
+<tr>
+  <td>Study PrnF preparation</td>
+  <td>has_native_sequence_reference</td>
+  <td>PrnF native sequence reference</td>
+  <td>Published primer cores match native CDS ends. Figure2/native186aa conflict with prose160aa; BAA-447 versus databaseBAA-477 unresolved. pQE30Xa/BL21(DE3),factor-Xa processed; full stock unverified.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>Study PrnF preparation</td>
+  <td>catalyzed_in_assay</td>
+  <td>PrnF-catalyzed flavin reduction assay</td>
+  <td>NADH absorbance340nm,30C,pH7.0. Table1:FAD Km3.2+/-0.6uM,kcat65.0+/-8.2s^-1; not in-vivo flux.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>FAD assay substrate</td>
+  <td>was_substrate_for</td>
+  <td>PrnF-catalyzed flavin reduction assay</td>
+  <td>Not a permanently bound prosthetic group; protonation unspecified.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>NADH assay electron donor</td>
+  <td>was_electron_donor_for</td>
+  <td>PrnF-catalyzed flavin reduction assay</td>
+  <td>No universal exclusion of alternative donors inferred.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>PrnF-catalyzed flavin reduction assay</td>
+  <td>yielded</td>
+  <td>Reduced FAD assay product</td>
+  <td>Anaerobic reduction and absorbance450nm recovery after oxygen readmission.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>Reduced FAD assay product</td>
+  <td>was_inferred_to_support</td>
+  <td>PrnD/PrnF surrogate oxidation assay</td>
+  <td>Coupling interpretation, not direct visualization of flavin transfer.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>Study PrnF preparation</td>
+  <td>supported_in_assay</td>
+  <td>PrnD/PrnF surrogate oxidation assay</td>
+  <td>Added PrnF enhanced the coupled reaction.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>Study PrnD preparation (sequence unresolved)</td>
+  <td>catalyzed_in_assay</td>
+  <td>PrnD/PrnF surrogate oxidation assay</td>
+  <td>Prior-method primers disagree with Pf-5 Q4KAM4 termini; no exact native mapping adopted.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07<br>DOI:10.1074/jbc.M505334200</td>
+</tr>
+<tr>
+  <td>p-Aminobenzylamine surrogate substrate</td>
+  <td>was_substrate_for</td>
+  <td>PrnD/PrnF surrogate oxidation assay</td>
+  <td>Not aminopyrrolnitrin.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>PrnD/PrnF surrogate oxidation assay</td>
+  <td>yielded</td>
+  <td>p-Nitrobenzylamine assay product</td>
+  <td>HPLC standard coelution and high-resolution MS; not pyrrolnitrin.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>Study PrnF preparation</td>
+  <td>interacted_in_study_with</td>
+  <td>Study PrnD preparation (sequence unresolved)</td>
+  <td>Fluorescence of FAD-bound PrnF,membrane separation,gel filtration. No universal monomer stoichiometry or exclusive endogenous partner asserted.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
