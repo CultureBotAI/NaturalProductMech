@@ -1072,6 +1072,9 @@ causal_graphs:
 causal_graph_refs:
 - thiomarinol-tmub-native-i109n-genetics
 - thiomarinol-tmub-bounded-purified-preparation-biochemistry
+- thiomarinol-tmlwz-tmlw-resting-cell-assay
+- thiomarinol-tmlwz-mixed-mupw-tmlz-cell-assay
+- thiomarinol-tmlwz-tmlw-heterologous-genetic-rescue
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -1112,4 +1115,20 @@ curation_history:
     kinetics. TmlF SI was not inspected. Addressed author-agent review issues #594/#595,
     not independent approval or full-record sign-off. Source-owned fields, prior history,
     SEEDED status and incomplete stereochemistry remain unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-06T04:51:34Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added three exact-owner BIOSYNTHESIS components with24nodes/23DOI-or-URL-cited
+    edges for native TmlW CBK62744.1 and TmlZ CBK62745.1. Preserved four inline and
+    two prior component graphs without migration. Native FN689524.1 CDS/GenPept/RefSeq/UniParc
+    sequence audits support these references; deleted F8J3E2/F8J3H0 were not selected.
+    DOI10.1039/C9SC06192D main text supports TmlW whole-cell activity, the distinct
+    mixed MupW/TmlZ whole-cell experiment and TmlW knockin rescue in two mupirocin-host
+    backgrounds. One exact two-word HTML snippet manually source-checked. Preserved
+    cellular redox context, surrogate products, genotype distinctions and native-versus-engineered
+    identity. SI/figure routes were inaccessible; no full-method, isolated-enzyme,
+    kinetic or native full-reconstitution claim. Addressed author-agent review issue#597,
+    not independent approval or full-record sign-off. Retained all source-owned fields,
+    prior history, SEEDED status and incomplete stereochemistry.
   llm_assisted: true

@@ -644,6 +644,185 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">TmlW whole-cell activity on a mupirocin surrogate, with cellular redox context retained. Source-assigned surrogate products remain ungrounded. Native sequence references do not establish complete engineered proteoforms, native pathway timing or full thiomarinol reconstitution. Main-text-bounded curation, not full-method or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Thiomarinol locus on native pTML1</td>
+  <td>encodes_native_reference</td>
+  <td>Native deposited TmlW sequence reference</td>
+  <td>FN689524.1 CDS 83143..84546(+),1-based inclusive; CBK62744.1,467 aa. CDS-aware table-11 translation matches original GenPept,WP_013933296.1 and UPI00021172A4. Native source is Pseudoalteromonas sp. SANK 73390,taxon747457,pTML1. This identifies the native reference, not a complete engineered construct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62744.1<br>https://www.ncbi.nlm.nih.gov/protein/WP_013933296.1<br>https://www.uniprot.org/uniprotkb/F8J3E2</td>
+</tr>
+<tr>
+  <td>Native deposited TmlW sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study heterologously expressed TmlW</td>
+  <td>Gene-matched reference only; complete insert, fusion and mature sequence remain unverified.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Study heterologously expressed TmlW</td>
+  <td>was_heterologously_expressed_in</td>
+  <td>Study TmlW-overexpressing resting E. coli cells</td>
+  <td>Main-text expression context; no exact host-strain identifier, vector or tag is selected here.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Study TmlW-overexpressing resting E. coli cells</td>
+  <td>were_used_in</td>
+  <td>TmlW whole-cell biotransformation</td>
+  <td>Whole-cell experiment with glucose and endogenous redox support, not isolated TmlW catalysis.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Supplied mupirocin W5</td>
+  <td>was_supplied_in</td>
+  <td>TmlW whole-cell biotransformation</td>
+  <td>Surrogate substrate; no native marinolic-acid identity or quantitative input measurement adopted.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>TmlW whole-cell biotransformation</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned mupirocin Z2</td>
+  <td>Main text reports LC-MS followed by product isolation/NMR assignment. No kinetic rate, replicate count, isolated epoxide intermediate or purified-enzyme sufficiency inferred.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
+<p class="sub">Mixed MupW/TmlZ whole-cell activity. Do not turn this experiment into a TmlW/TmlZ purified pair. Source-assigned surrogate products remain ungrounded. Native sequence references do not establish complete engineered proteoforms, native pathway timing or full thiomarinol reconstitution. Main-text-bounded curation, not full-method or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Thiomarinol locus on native pTML1</td>
+  <td>encodes_native_reference</td>
+  <td>Native deposited TmlZ sequence reference</td>
+  <td>FN689524.1 CDS 84558..84941(+),1-based inclusive; CBK62745.1,127 aa. CDS-aware table-11 translation matches original GenPept,WP_013933297.1 and UPI00021172A5. Native source is Pseudoalteromonas sp. SANK 73390,taxon747457,pTML1. This identifies the native reference, not a complete engineered construct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62745.1<br>https://www.ncbi.nlm.nih.gov/protein/WP_013933297.1<br>https://www.uniprot.org/uniprotkb/F8J3H0</td>
+</tr>
+<tr>
+  <td>Native deposited TmlZ sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study heterologously expressed TmlZ</td>
+  <td>Gene-matched native reference; complete fusion identity is not established.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Study heterologously expressed TmlZ</td>
+  <td>was_heterologously_expressed_in</td>
+  <td>Study MupW-and-TmlZ-coexpressing E. coli cells</td>
+  <td>TmlZ is the thiomarinol-derived partner; this is not a purified preparation assay.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Study coexpressed MupW</td>
+  <td>was_coexpressed_in</td>
+  <td>Study MupW-and-TmlZ-coexpressing E. coli cells</td>
+  <td>Keep the named mupirocin MupW partner, not TmlW. No convenient ortholog or exact MupW accession is substituted for an unverified study construct.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Study MupW-and-TmlZ-coexpressing E. coli cells</td>
+  <td>were_used_in</td>
+  <td>Mixed-origin whole-cell biotransformation</td>
+  <td>Coexpression does not establish a physical complex, substrate channeling or TmlZ-alone sufficiency.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Supplied mupirocin W4</td>
+  <td>was_supplied_in</td>
+  <td>Mixed-origin whole-cell biotransformation</td>
+  <td>Distinct surrogate experiment from the TmlW/W5 condition; no cross-condition rate comparison.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Mixed-origin whole-cell biotransformation</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned desepoxy-pseudomonic acid B</td>
+  <td>Main-text product assignment; not exact native thiomarinol identity or direct observation of the proposed epoxide intermediate.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">9 nodes, 10 edges</span></h2>
+<p class="sub">TmlW knockin rescue in two separate mupirocin-host backgrounds, without converting culture endpoints into enzyme kinetics. Source-assigned surrogate products remain ungrounded. Native sequence references do not establish complete engineered proteoforms, native pathway timing or full thiomarinol reconstitution. Main-text-bounded curation, not full-method or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Thiomarinol locus on native pTML1</td>
+  <td>encodes_native_reference</td>
+  <td>Native deposited TmlW sequence reference</td>
+  <td>FN689524.1 CDS 83143..84546(+),1-based inclusive; CBK62744.1,467 aa. CDS-aware table-11 translation matches original GenPept,WP_013933296.1 and UPI00021172A4. Native source is Pseudoalteromonas sp. SANK 73390,taxon747457,pTML1. This identifies the native reference, not a complete engineered construct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62744.1<br>https://www.ncbi.nlm.nih.gov/protein/WP_013933296.1<br>https://www.uniprot.org/uniprotkb/F8J3E2</td>
+</tr>
+<tr>
+  <td>Reported tmlW knockin coding insert</td>
+  <td>encodes_a_study_counterpart_of</td>
+  <td>Native deposited TmlW sequence reference</td>
+  <td>Native protein reference anchors the introduced gene, not the complete promoter/junction sequence or a fully verified engineered proteoform.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Reported tmlW knockin coding insert</td>
+  <td>was_introduced_in</td>
+  <td>Study mupW-deleted tmlW-knockin culture</td>
+  <td>Main text reports tmlW replacement at the removed mupW locus by two-step allelic exchange. Native thiomarinol locus ownership is not transferred to this heterologous host.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>P. fluorescens NCIMB 10586 mupW-deleted culture</td>
+  <td>was_genetic_background_for</td>
+  <td>Study mupW-deleted tmlW-knockin culture</td>
+  <td>This is the mupW-only deletion background, without the reported mmpE-OR mutation used in the other experiment. Full edited-stock sequence is not established.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>P. fluorescens NCIMB 10586 mupW-deleted culture</td>
+  <td>lacked_detected_production_of</td>
+  <td>Source-assigned pseudomonic acid A</td>
+  <td>Bounded reported culture phenotype; no universal or numerical zero, detection limit or replicate-level estimate adopted.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Study mupW-deleted tmlW-knockin culture</td>
+  <td>restored_reported_production_of</td>
+  <td>Source-assigned pseudomonic acid A</td>
+  <td>Heterologous culture rescue, not native thiomarinol synthesis or isolated TmlW turnover. No equality of quantitative titres, substrate preference or rate-limiting assignment inferred.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Reported tmlW knockin coding insert</td>
+  <td>was_introduced_in</td>
+  <td>Study mmpE-OR-domain/mupW mutant with tmlW knockin</td>
+  <td>Main text reports tmlW replacement at the removed mupW locus by two-step allelic exchange. Native thiomarinol locus ownership is not transferred to this heterologous host.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Study mmpE-OR-domain and mupW double-mutant culture</td>
+  <td>was_genetic_background_for</td>
+  <td>Study mmpE-OR-domain/mupW mutant with tmlW knockin</td>
+  <td>This is the double-mutant background. mmpE-OR denotes the epoxidase domain, not deletion of the entire mmpE gene. Full edited-stock sequence is not established.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Study mmpE-OR-domain and mupW double-mutant culture</td>
+  <td>lacked_detected_production_of</td>
+  <td>Source-assigned pseudomonic acid C</td>
+  <td>Bounded reported culture phenotype; no universal or numerical zero, detection limit or replicate-level estimate adopted.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+<tr>
+  <td>Study mmpE-OR-domain/mupW mutant with tmlW knockin</td>
+  <td>restored_reported_production_of</td>
+  <td>Source-assigned pseudomonic acid C</td>
+  <td>Heterologous culture rescue, not native thiomarinol synthesis or isolated TmlW turnover. No equality of quantitative titres, substrate preference or rate-limiting assignment inferred.</td>
+  <td class="mono">DOI:10.1039/C9SC06192D</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
