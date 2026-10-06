@@ -64,6 +64,231 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: lycosantalonol-cpt2-2015-assay-and-transgenic-comparison
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: cpt2_reference
+    label: Current tomato CPT2 native sequence example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:K7WQ45
+  - node_id: cpt2_preparation
+    label: Study recombinant CPT2 preparation lacking the first 51 residues
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: ipp
+    label: Assayed isopentenyl diphosphate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: zzfpp
+    label: Assayed Z,Z-farnesyl diphosphate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Recombinant CPT2 radiolabeled substrate-condensation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: nnpp
+    label: Source-assigned nerylneryl diphosphate product
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: cpt2_construct
+    label: CPT2 gene in the study 35S overexpression construct
+    node_type: GENE
+    grounding_status: REVIEW_NEEDED
+  - node_id: transgenic
+    label: Selected CPT2-overexpressing tomato plants
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: wild_type
+    label: Non-transformed tomato comparator
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: comparison
+    label: Petiolule-extract GC-MS comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: lycosantalonol
+    label: Source-assigned lycosantalonol in transgenic petiolules
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cpt2_reference
+    predicate: is_native_sequence_example_for
+    object: cpt2_preparation
+    notes: The full native reference is not the truncated, affinity-purified preparation.
+      Spliced CDS translations from JX943884.1/AFW98426.1 and KC807995.1/AGK82801.1
+      independently equal the 314-residue UniProt sequence. Nucleotide source qualifiers
+      establish species but not cultivar. The study describes deletion of residues1-51,
+      not UniProt's predicted transit-peptide boundary1-61; exact insert, tag and
+      experimental stock sequence remain unverified.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/K7WQ45
+      evidence_type: DATABASE_ASSERTION
+      notes: K7WQ45, reviewed entry51/sequence1, 314 residues; annotation2026-09-02.
+        Species Solanum lycopersicum, taxon4081. Current reference, not the complete
+        historical experimental construct or MP1 allele.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JX943884.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete spliced-CDS/table1 translation equals GenPept and UniProt; reference
+        equivalence does not establish historical preparation identity.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KC807995.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent genomic CPT2 reference encodes AGK82801.1; complete CDS within
+        a partial genomic locus.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods page5; deliberately selected gene-matched
+        example only.
+      retrieved_on: '2026-10-06'
+  - subject: cpt2_preparation
+    predicate: was_tested_as_catalyst_in
+    object: assay
+    notes: The recombinant protein was produced in E. coli and purified by nickel
+      affinity. This is an in-vitro substrate-condensation experiment, not direct
+      synthesis of lycosantalonol by CPT2 or a native plant multi-enzyme complex.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods page5; results page9 and Table2
+        page10.
+      retrieved_on: '2026-10-06'
+  - subject: ipp
+    predicate: was_substrate_in
+    object: assay
+    notes: Radiolabeled IPP was used with zzFPP for the reported kinetic assessment.
+      No binding constant, native cellular rate or exact-isomer yield is inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods page5; results page9 and Table2
+        page10.
+      retrieved_on: '2026-10-06'
+  - subject: zzfpp
+    predicate: was_cosubstrate_in
+    object: assay
+    notes: The tested acceptor is Z,Z-farnesyl diphosphate, not E,E-farnesyl diphosphate.
+      This supports the last condensation attributed to NNPP synthesis, not all earlier
+      substrate preferences described from previous studies.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods page5; results page9 and Table2
+        page10.
+      retrieved_on: '2026-10-06'
+  - subject: assay
+    predicate: supported_source_assigned_formation_of
+    object: nnpp
+    notes: The authors assign the zzFPP-plus-IPP step to NNPP formation. The reported
+      readout hydrolyzes diphosphate groups and counts extracted radiolabel; this
+      kinetic assay alone is not independent structural or stereochemical proof. No
+      direct CPT2-to-lycosantalonol catalytic edge is asserted.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods page5; results page9 and Table2
+        page10.
+      retrieved_on: '2026-10-06'
+  - subject: cpt2_reference
+    predicate: is_gene_product_example_for
+    object: cpt2_construct
+    notes: The selected full-length native protein exemplifies the named CPT2 gene
+      product. It is not an identifier for the gene construct, promoter, insertion
+      site or cultivar-specific allele. Transgenic plants are explicitly MP1 in the
+      study; that does not establish a cultivar for the native sequence deposit.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/K7WQ45
+      evidence_type: DATABASE_ASSERTION
+      notes: K7WQ45, reviewed entry51/sequence1, 314 residues; annotation2026-09-02.
+        Species Solanum lycopersicum, taxon4081. Current reference, not the complete
+        historical experimental construct or MP1 allele.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Transgenic-plant methods page4.
+      retrieved_on: '2026-10-06'
+  - subject: cpt2_construct
+    predicate: was_used_for_overexpression_in
+    object: transgenic
+    notes: The study uses first-generation 35S-CPT2 transgenic tomato plants. Three
+      plants selected for high leaflet lycosantalene were examined by petiolule GC-MS;
+      they are selected individuals, not an unbiased yield estimate for all lines
+      or evidence that all plants accumulate the product.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods page4; results pages8-9 and Figure4B-D.
+      retrieved_on: '2026-10-06'
+      snippet: three individual transgenic tomato lines
+  - subject: transgenic
+    predicate: was_profiled_in
+    object: comparison
+    notes: Hexane extracts of whole petiolules from all three selected plants had
+      source-assigned lycosantalonol peaks. Figure4 displays selected-ion traces and
+      a standard comparison. In S2, peak4 from chromatogramD has a dominant m/z69
+      signal rather than the dominant m/z109 in B, C and standardE; the cause of that
+      relative-pattern difference is unresolved. The source's three-plant assignment
+      is retained, not independently confirmed for each plant or used as exact stereochemical
+      proof. The tissue-ratio experiment in Table1 measured lycosantalene, not lycosantalonol.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods pages4-5; results pages8-9 and
+        Figure4B-E.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302.s002
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete official supplementary TIFF and enlarged peak4 panels visually
+        inspected. Relative spectral-pattern discrepancy not assigned to contamination,
+        coelution, annotation error or another cause.
+      retrieved_on: '2026-10-06'
+  - subject: wild_type
+    predicate: was_profiled_in
+    object: comparison
+    notes: The study did not detect lycosantalonol in non-transformed samples with
+      the reported methods. This is bounded non-detection, not a demonstrated absence
+      of natural synthesis or of undetected downstream derivatives.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Results pages8-9, Figure4A and discussion
+        pages10-11.
+      retrieved_on: '2026-10-06'
+  - subject: comparison
+    predicate: supports_cpt2_associated_detection_of
+    object: lycosantalonol
+    notes: CPT2 overexpression is associated with detection of source-assigned lycosantalonol
+      in the engineered context. This does not establish CPT2 as its direct final-step
+      catalyst, a unique rate-limiting step, an exact stereochemical assignment to
+      this owner, or native wild-type production. TPS21 and CYP71BN1 chemistry is
+      described partly from earlier work whose full evidence was not inspected; those
+      reactions are not added here.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Results pages8-9, Figure4 and discussion
+        pages10-11.
+      retrieved_on: '2026-10-06'
+  description: CPT2 evidence from a recombinant precursor-condensation assay and an
+    engineered tomato comparison, kept distinct from native sequence identity and
+    wild-type occurrence. K7WQ45 is a deliberate current native example, not an exact
+    assay-stock assignment. No TPS21/CYP71BN1 reaction, physical complex, exact final-product
+    stereochemistry or producer-grade upgrade is asserted. SEEDED status and source-owned
+    classifications remain unchanged; this is not full-record sign-off.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -73,3 +298,22 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-06T22:54:56Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a separate CPT2 BIOSYNTHESIS graph, 11 nodes and 10 individually
+    cited edges, from retained DOI:10.1371/journal.pone.0119302 main text, figures
+    and tables. K7WQ45 is a deliberate current native sequence example, verified against
+    two independently deposited complete spliced CDSs, not a historical assay-stock
+    or MP1 allele assignment. Truncated recombinant preparation and 35S gene construct
+    remain REVIEW_NEEDED without identifiers. Precursor condensation and transgenic
+    petiolule detection are separate observations; no direct CPT2-to-lycosantalonol
+    catalysis, unique rate limitation, native wild-type production or exact owner
+    stereochemistry inferred. Five-word snippet verified with the source quote-budget
+    audit. S2 mass-spectrum figure inspected; peak4 chromatogramD has a different
+    dominant-ion pattern from B, C and standardE, with cause unresolved and source
+    assignments not independently confirmed for every plant. Other SI assets remain
+    unread, and TPS21/CYP71BN1 reactions from earlier incompletely inspected papers
+    are not added. Preserved all source fields, computed classification, SOURCE_ASSERTION/CLUSTER_UNSTATED
+    grades, SEEDED status, incomplete stereo and prior history. No full-record sign-off.
+  llm_assisted: true
